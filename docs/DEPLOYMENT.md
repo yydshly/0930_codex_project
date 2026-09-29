@@ -1,6 +1,27 @@
 # 多个 Web 演示的部署方案
 
-当前仅完成研究仓库初始化，尚未创建或发布站点，也未配置 Pages 发布工作流。
+当前已创建 `001-witr` 静态 Web 演示与统一打包脚本，尚未公开发布，也未启用 Pages 发布工作流。
+
+## 当前演示与打包
+
+在仓库根目录运行：
+
+```powershell
+python -m http.server 8937 --bind 127.0.0.1 --directory projects/001-witr/web
+```
+
+本地访问 `http://127.0.0.1:8937/`。全部交互在浏览器内处理，不查询本机进程。
+
+打包静态演示：
+
+```powershell
+python scripts/build_site.py
+python -m http.server 8938 --bind 127.0.0.1 --directory _site
+```
+
+打包后总入口为 `http://127.0.0.1:8938/`，witr 入口为 `/projects/001-witr/`。脚本读取项目清单，复制有 `web/index.html` 的项目中的公共静态资源，不复制研究笔记和配置文件。输出位于已忽略的 `_site/`。目前为无依赖静态页面，没有需要锁定的第三方包。
+
+发布到 GitHub Pages 时，工作流可先运行 `python scripts/projects.py check` 与 `python scripts/build_site.py`，再统一上传 `_site/`。本轮未修改远端 Pages 设置或发布公网地址；验证公开 URL 后才填写清单中的 `demo`。
 
 ## GitHub Pages 的组织方式
 

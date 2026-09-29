@@ -36,6 +36,8 @@ class CatalogTests(unittest.TestCase):
         readme = catalog.render_readme(self.root, list(reversed(projects)))
         self.assertLess(readme.index("| 001 |"), readme.index("| 002 |"))
         self.assertIn(r"示例 \| 项目", readme)
+        self.assertIn('[owner/repo](https://github.com/owner/repo)', readme)
+        self.assertNotIn('[GitHub](https://github.com/owner/repo)', readme)
         self.assertNotIn("{{", (self.root / "projects/001-example/README.md").read_text(encoding="utf-8"))
         catalog.run(argparse.Namespace(command="check"), self.root)
 

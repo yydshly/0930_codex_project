@@ -87,7 +87,7 @@ def link(label, target):
 
 
 def render_readme(root, projects):
-    rows = ["| 编号 | 项目 / 研究文档 | 摘要 | 状态 | 上游仓库 | 演示 |",
+    rows = ["| 编号 | 项目 / 研究文档 | 能力、原理与使用摘要 | 状态 | 源库 | 演示 |",
             "| --- | --- | --- | --- | --- | --- |"]
     previews = []
     for project in sorted(projects, key=lambda item: item["id"]):
@@ -95,11 +95,13 @@ def render_readme(root, projects):
         entry = link(project["name"], f"{path}/README.md")
         demo = link("在线演示", project["demo"]) if project["demo"] else "—"
         rows.append(f"| {project['id']:03d} | {entry} | {markdown(project['summary'])} | "
-                    f"{project['status']} | {link('GitHub', project['repo'])} | {demo} |")
+                    f"{project['status']} | {link(urlsplit(project['repo']).path.strip('/'), project['repo'])} | {demo} |")
         if project["cover"]:
             previews.append(f"### {project['id']:03d} · {markdown(project['name'])}\n\n"
-                            f"!{link(project['name'] + ' 项目预览', path + '/' + project['cover'])}\n\n"
-                            f"{markdown(project['summary'])}\n\n{link('研究详情', path + '/README.md')}"
+                            f"{markdown(project['summary'])}\n\n"
+                            f"源库：{link(urlsplit(project['repo']).path.strip('/'), project['repo'])}。先阅读下方引导图，再进入研究文档与交互演示。\n\n"
+                            f"!{link(project['name'] + ' 项目引导图', path + '/' + project['cover'])}\n\n"
+                            f"{link('研究详情', path + '/README.md')}"
                             + (f" · {demo}" if project["demo"] else ""))
     index = "\n".join(rows) if projects else "暂无研究项目。添加第一个项目后，这里会自动生成有序索引。"
     content = (root / "README.md").read_text(encoding="utf-8")
