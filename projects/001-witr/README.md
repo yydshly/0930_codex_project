@@ -10,7 +10,7 @@
 | 研究日期 | 2026-09-29 |
 | 上游许可证 | [Apache-2.0](https://github.com/pranshuparmar/witr/blob/dc4fa1da82d3e266fcbd928641b4f30b3077c64f/LICENSE) |
 | Web 演示 | [演示源码与运行说明](web/README.md)；本地启动后访问 http://127.0.0.1:8937/ |
-| 在线部署 | 尚未发布；`projects.json` 的 `demo` 保持为空 |
+| 在线部署 | [witr 研究与交互演示](https://yydshly.github.io/0930_codex_project/projects/001-witr/) · [研究集首页](https://yydshly.github.io/0930_codex_project/) |
 
 ## 核心结论
 

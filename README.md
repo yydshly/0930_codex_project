@@ -14,7 +14,7 @@
 
 | 编号 | 项目 / 研究文档 | 能力、原理与使用摘要 | 状态 | 源库 | 演示 |
 | --- | --- | --- | --- | --- | --- |
-| 001 | [witr · 运行来源诊断](projects/001-witr/README.md) | 能力：追溯进程、端口、文件与容器来源；原理：系统数据/API/命令采集，加父进程链与来源规则；运行：CLI、TUI、JSON；平台：Linux、Windows、macOS、FreeBSD；场景：端口冲突、残留服务、文件占用；价值：减少手工关联，新增底层能力有限；扩展：JSON 集成、本地 Web/MCP、定制规则与独立历史采集。 | 已完成 | [pranshuparmar/witr](https://github.com/pranshuparmar/witr) | — |
+| 001 | [witr · 运行来源诊断](projects/001-witr/README.md) | 能力：追溯进程、端口、文件与容器来源；原理：系统数据/API/命令采集，加父进程链与来源规则；运行：CLI、TUI、JSON；平台：Linux、Windows、macOS、FreeBSD；场景：端口冲突、残留服务、文件占用；价值：减少手工关联，新增底层能力有限；扩展：JSON 集成、本地 Web/MCP、定制规则与独立历史采集。 | 已完成 | [pranshuparmar/witr](https://github.com/pranshuparmar/witr) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/001-witr/) |
 
 <!-- PROJECT_INDEX:END -->
 
@@ -32,7 +32,7 @@
 
 ![witr · 运行来源诊断 项目引导图](projects/001-witr/assets/witr-understanding-map.png)
 
-[研究详情](projects/001-witr/README.md)
+[研究详情](projects/001-witr/README.md) · [在线演示](https://yydshly.github.io/0930_codex_project/projects/001-witr/)
 
 <!-- PROJECT_PREVIEWS:END -->
 

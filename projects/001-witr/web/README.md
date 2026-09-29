@@ -2,6 +2,8 @@
 
 静态 HTML / CSS / JavaScript，无第三方运行依赖。所有资源相对引用，可放在任意静态子路径。
 
+在线地址：[witr 研究与交互演示](https://yydshly.github.io/0930_codex_project/projects/001-witr/)。首页先展示全景引导图与采用判断，再进入模拟实验台。
+
 ## 启动
 
 在仓库根目录执行：
@@ -34,4 +36,4 @@ python scripts/projects.py check
 python scripts/build_site.py
 ```
 
-最后一条生成忽略追踪的 `_site/`，包含总入口和 `/projects/001-witr/`。部署说明见 [docs/DEPLOYMENT.md](../../../docs/DEPLOYMENT.md)。没有启用公开发布或填写未经验证的线上 URL。
+最后一条生成忽略追踪的 `_site/`，包含总入口和 `/projects/001-witr/`。推送 main 后由统一 Pages 工作流发布。部署说明见 [docs/DEPLOYMENT.md](../../../docs/DEPLOYMENT.md)。
