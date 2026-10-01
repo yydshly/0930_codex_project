@@ -23,12 +23,6 @@ class StaticSiteTests(unittest.TestCase):
             (web / "README.md").write_text("Not a public asset", encoding="utf-8")
             (web / "node_modules").mkdir()
             (web / "node_modules/unused.js").write_text("private", encoding="utf-8")
-            downloads = web / "cases/example/downloads"
-            downloads.mkdir(parents=True)
-            for extension in ["pdf", "pptx", "mp4"]:
-                (downloads / f"demo.{extension}").write_bytes(b"exported artifact")
-            (web / "cases/example/validation.json").write_text("{}", encoding="utf-8")
-            (web / "cases/example/config.json").write_text("{}", encoding="utf-8")
             (root / "projects.json").write_text(json.dumps([dict(id=1, slug="demo", name="A & B", repo="https://github.com/example/demo", summary="A < B", status="已完成", demo="", cover="")]), encoding="utf-8")
             build(root)
             output = root / "_site"
@@ -37,10 +31,6 @@ class StaticSiteTests(unittest.TestCase):
             self.assertFalse((output / "projects/001-demo/.env").exists())
             self.assertFalse((output / "projects/001-demo/README.md").exists())
             self.assertFalse((output / "projects/001-demo/node_modules").exists())
-            for extension in ["pdf", "pptx", "mp4"]:
-                self.assertTrue((output / f"projects/001-demo/cases/example/downloads/demo.{extension}").is_file())
-            self.assertTrue((output / "projects/001-demo/cases/example/validation.json").is_file())
-            self.assertFalse((output / "projects/001-demo/cases/example/config.json").exists())
             index = (output / "index.html").read_text(encoding="utf-8")
             self.assertIn('./projects/001-demo/', index)
             self.assertIn('A &amp; B', index)

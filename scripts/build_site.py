@@ -23,15 +23,10 @@ def build(root=ROOT):
         destination.mkdir(parents=True, exist_ok=True)
         # Ship public assets only, never configuration, notes or dependencies.
         for asset in source.rglob("*"):
-            # Case studies can carry actual exported artifacts and public evidence.
-            relative_asset = asset.relative_to(source)
-            case_export = (relative_asset.parts[0] == "cases" and
-                           (("downloads" in relative_asset.parts and asset.suffix.lower() in {".pdf", ".pptx", ".mp4"}) or
-                            asset.name in {"validation.json", "adaptations.json", "HUASHU-LICENSE.txt", "react-LICENSE.txt", "react-dom-LICENSE.txt"}))
             if (asset.is_file() and not asset.is_symlink()
                     and not any(part.startswith(".") or part == "node_modules"
                                 for part in asset.relative_to(source).parts)
-                    and (case_export or asset.suffix.lower() in {".html", ".css", ".js", ".svg", ".png", ".jpg", ".webp", ".woff2"})):
+                    and asset.suffix.lower() in {".html", ".css", ".js", ".svg", ".png", ".jpg", ".webp", ".woff2"}):
                 target = destination / asset.relative_to(source)
                 target.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(asset, target)
