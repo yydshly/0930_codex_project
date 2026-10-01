@@ -1,5 +1,7 @@
 # 004 · Rhythm Drop · 音乐型声音与视听体验研究
 
+[公开研究摘要与实验演示](https://yydshly.github.io/0930_codex_project/projects/004-rhythm-drop/) · [线上验证记录](notes/deployment-checks.json)
+
 **初始目标是研究音乐型声音**：音乐如何驱动视觉节奏、角色动作与空间变化，怎样进一步与具体场合、故事和交互结合。来源是 [Gorden Sun 在 X 的音乐动画效果展示](https://x.com/Gorden_Sun/status/2105302007896797351)，其中的 3D 弹跳、随音乐发光与场景变化构成最早的研究引导。参考帖的工具说明是作者自述；本项目没有检查其源码，也不据此评价模型能力。
 
 ![原网页效果截图 · Gorden Sun](assets/source-effect.jpg)

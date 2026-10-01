@@ -17,7 +17,7 @@
 | 001 | [witr · 运行来源诊断](projects/001-witr/README.md) | **能力：** 追溯进程、端口、文件与容器来源<br>**原理：** 系统数据/API/命令采集，加父进程链与来源规则<br>**运行：** CLI、TUI、JSON<br>**平台：** Linux、Windows、macOS、FreeBSD<br>**场景：** 端口冲突、残留服务、文件占用<br>**价值：** 减少手工关联，新增底层能力有限<br>**扩展：** JSON 集成、本地 Web/MCP、定制规则与独立历史采集。 | 已完成 | [pranshuparmar/witr](https://github.com/pranshuparmar/witr) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/001-witr/) |
 | 002 | [Huashu Design · 设计能力研究](projects/002-huashu-design/README.md) | **能力：** 设计探索、原型、幻灯片、信息图、动画、声音与检查<br>**产物：** HTML、PDF、可编辑 PPTX、MP4 等<br>**原理：** Skill 与参考指导模型，浏览器渲染，组件/脚本执行<br>**场景：** 研究、评审、汇报、培训与传播<br>**价值：** 复用制作经验<br>**扩展：** 品牌、模板、数据、导出和验收。 | 已完成 | [alchaincyf/huashu-design](https://github.com/alchaincyf/huashu-design) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/002-huashu-design/) |
 | 003 | [Learn Harness Engineering · AI 工作流程研究](projects/003-learn-harness-engineering/README.md) | **定位：** 学习 AI Agent 工作流程的课程与实践资料<br>**内容：** 14 讲课程、8 项练习说明、规则/任务/进度/验收模板，附 1 个 Skill、生成与检查脚本和教学示例<br>**用途：** 理解 Agent、组织持续开发与跨会话任务<br>**价值：** 少重复解释、少返工、凭证据验收<br>**扩展：** 领域模板、真实测试、状态恢复及自动循环/多 Agent，需自行接入执行环境。 | 已完成 | [walkinglabs/learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/003-learn-harness-engineering/) |
-| 004 | [Rhythm Drop · 音乐型声音与视听体验研究](projects/004-rhythm-drop/README.md) | **目标：** 研究音乐型声音如何驱动视觉、故事与互动<br>**来源：** Gorden Sun 的 X 音乐动画展示<br>**实验：** 场景叙事、声音身份、种植、成长合成与真实声音漂流<br>**结论：** 声音主导，视觉配合，功能闭环不等于情绪体验<br>**状态：** 研究归档，产品价值尚未验证。 | 已归档 | [Gorden Sun · 原网页音乐效果](https://x.com/Gorden_Sun/status/2105302007896797351)<br>技术：[mrdoob/three.js](https://github.com/mrdoob/three.js) | — |
+| 004 | [Rhythm Drop · 音乐型声音与视听体验研究](projects/004-rhythm-drop/README.md) | **目标：** 研究音乐型声音如何驱动视觉、故事与互动<br>**来源：** Gorden Sun 的 X 音乐动画展示<br>**实验：** 场景叙事、声音身份、种植、成长合成与真实声音漂流<br>**结论：** 声音主导，视觉配合，功能闭环不等于情绪体验<br>**状态：** 研究归档，产品价值尚未验证。 | 已归档 | [Gorden Sun · 原网页音乐效果](https://x.com/Gorden_Sun/status/2105302007896797351)<br>技术：[mrdoob/three.js](https://github.com/mrdoob/three.js) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/004-rhythm-drop/) |
 
 <!-- PROJECT_INDEX:END -->
 
@@ -84,7 +84,7 @@
 
 ![Rhythm Drop · 音乐型声音与视听体验研究 项目引导图](projects/004-rhythm-drop/assets/source-effect.jpg)
 
-[研究详情](projects/004-rhythm-drop/README.md)
+[研究详情](projects/004-rhythm-drop/README.md) · [在线演示](https://yydshly.github.io/0930_codex_project/projects/004-rhythm-drop/)
 
 <!-- PROJECT_PREVIEWS:END -->
 

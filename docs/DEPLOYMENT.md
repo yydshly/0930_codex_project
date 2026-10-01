@@ -19,12 +19,20 @@
 
 2026-10-01：Huashu Design 公开网页、全景引导图、六类成果、12 张 PDF/PPT 逐页预览与下载通过 40 项检查。PDF/PPTX/MP4 的 SHA-256 与本地实测原件一致；检查与 Pages 发布成功。记录见 [部署检查](../projects/002-huashu-design/notes/deployment-checks.json)。
 
-## 自动发布
+## 音乐型声音与视听体验研究
+
+2026-10-01：[Rhythm Drop 公开研究摘要](https://yydshly.github.io/0930_codex_project/projects/004-rhythm-drop/)已发布。首页说明最初研究音乐型声音，效果来源为 Gorden Sun 的 X 演示，以注明作者的原网页截图做引导图；源码、v0.1–v0.11 研究沿革与冻结实验一并提交。产品价值尚未验证的结论保留在摘要中。
+
+音乐剧场、声音身份、团队场景、声音种植、成长合成及 42 秒原创声景可以在线体验。Python / SQLite 的真实录音社区仍为本机服务，未在 Pages 开放真人录音、漂流与回应。
+
+GitHub Actions 的构建、47 项检查与部署成功；45 个在线资源返回 HTTP 200。图片二进制哈希精确一致，文本内容按 Linux 发布换行核对一致；已有 001–003 入口也已检查。详见 [线上校验记录](../projects/004-rhythm-drop/notes/deployment-checks.json)。
+
+## 自动发布流程
 
 工作流为 `.github/workflows/pages.yml`，推送 `main` 或手动运行时：
 
 1. 检查项目清单与首页一致性。
-2. 运行 Python 测试与 witr JavaScript 语法检查。
+2. 运行 Python 清单、打包与声音社区测试，witr / Rhythm Drop 的 JavaScript 语法及声音机制测试。
 3. 执行 `python scripts/build_site.py`，汇总已登记项目中的静态演示。
 4. 上传 `_site/` 并部署到 GitHub Pages。
 
