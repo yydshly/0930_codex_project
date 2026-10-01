@@ -69,6 +69,20 @@ class CatalogTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             catalog.run(argparse.Namespace(command="check"), self.root)
 
+    def test_effect_reference_is_distinct_from_library_and_requires_valid_pair(self):
+        projects = self.add()
+        projects[0].update(reference="https://x.com/creator/status/123", reference_name="原效果")
+        catalog.validate(projects, self.root)
+        readme = catalog.render_readme(self.root, projects)
+        self.assertIn('[原效果](https://x.com/creator/status/123)', readme)
+        self.assertIn('技术：[owner/repo]', readme)
+        projects[0]['reference'] = 'javascript:alert(1)'
+        with self.assertRaises(ValueError):
+            catalog.validate(projects, self.root)
+        del projects[0]['reference_name']
+        with self.assertRaises(ValueError):
+            catalog.validate(projects, self.root)
+
     def test_duplicate_id_and_unregistered_directory(self):
         projects = self.add()
         with self.assertRaises(ValueError):

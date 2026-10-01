@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0e2527"><title>声音花园 · 把此刻种下来</title><link rel="stylesheet" href="./style.css"></head>
+<body>
+<header><a class="wordmark" href="./"><span class="mark">✳</span> 声音花园 <small>SOUND GARDEN</small></a><a class="back" href="../?story=team">回到故事剧场 ↗</a></header>
+<main>
+<section class="intro"><div><p class="eyebrow">A LITTLE PLACE TO LISTEN.</p><h1>把此刻，<em>种成一座花园。</em></h1></div><p class="intro-copy">按住，留下一束声音。<br>松开，让它慢慢生长。</p></section>
+<section class="garden" aria-label="可以演奏的声音花园">
+<canvas id="garden" tabindex="0" role="application" aria-label="声音花园。方向键移动种植位置，按住空格种植，松开完成。点击已有植物可重听旋律。"></canvas>
+<div class="scene-top"><span><i></i> <span id="scene-name">水边 / WATER</span></span><button id="sound" aria-pressed="false" aria-label="静音">♫ 有声</button></div>
+<div class="welcome" id="welcome"><span class="welcome-symbol">✳</span><p>先听见，再看见。</p><button id="enter">进入花园 · 打开声音 <span>↗</span></button><small>建议戴耳机，给自己留一小会儿。</small></div>
+<div class="scene-bottom"><span id="gesture-hint">在水面或草地上，留下你的第一束声音。</span><span id="plant-count">0 株声音</span></div>
+<div id="seed-cursor" class="seed-cursor" hidden aria-hidden="true"></div>
+</section>
+<section class="palette" aria-label="选择一种声音"><p class="palette-label">此刻，想留什么声音？<small>三种音色，都有自己的生长方式。</small></p><div class="sound-choices"><button data-kind="water" aria-pressed="true"><span class="kind-icon water">◌</span><span><b>在水边</b><small>水滴钟琴 · 涟漪与莲</small></span><i>01</i></button><button data-kind="meadow" aria-pressed="false"><span class="kind-icon meadow">✳</span><span><b>在草地</b><small>柔和琴音 · 舒展与花</small></span><i>02</i></button><button data-kind="air" aria-pressed="false"><span class="kind-icon air">⌁</span><span><b>听风铃</b><small>透亮泛音 · 轻盈与光</small></span><i>03</i></button></div></section>
+<section class="garden-actions" aria-label="花园操作"><div><button id="plant-button">＋ 种一束声音</button><button id="listen">▷ 听听这座花园</button><button id="undo" disabled>撤回上一株</button><button id="redo" hidden>恢复上一株</button></div><div><button id="export">保存花园文件 ↗</button><span id="save-state">自动保存在此浏览器</span></div></section>
+<p id="status" role="status" aria-live="polite">每一株植物，都会记得你留下的旋律。</p>
+<div class="instructions"><p><span>01</span> 点击或按住空白处种植，停留越久，乐句越长。</p><p><span>02</span> 触碰一株植物，再听一次它的声音。</p><p><span>03</span> 听听整座花园，让不同声音依次相遇。</p></div>
+<details class="archive"><summary>打开之前的花园 <span>本机档案 / 导入文件 ＋</span></summary><div><label>本机花园<select id="saved-gardens"><option value="">选择一个保存时间…</option></select></label><button id="new-garden">保留这页，开始新花园</button><label class="import-label">导入花园文件<input id="import" type="file" accept="application/json,.json"></label></div><p>花园文件保存位置、音色与乐句，可在这里重新打开。</p></details>
+<div id="export-panel" hidden><a id="download" download>↓ 下载花园 JSON</a><label>也可以复制下面的内容，保存为 .json 文件<textarea id="export-text" readonly rows="5"></textarea></label></div>
+<footer><span>让每一次触碰，都有一点回声。</span><span>RHYTHM DROP / EXPERIMENT 08</span></footer>
+</main><script type="module">import('./app.js').catch(()=>{document.querySelector('#status').textContent='花园暂时没有加载完成，请刷新再试。';});</script>
+</body></html>

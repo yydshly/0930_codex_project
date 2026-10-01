@@ -11,6 +11,7 @@ from urllib.parse import quote, urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 STATUSES = {"待研究", "研究中", "已完成", "已归档"}
 FIELDS = {"id", "slug", "name", "repo", "summary", "status", "demo", "cover"}
+REFERENCE_FIELDS = {"reference", "reference_name"}
 
 
 def project_path(project):
@@ -33,13 +34,15 @@ def validate(projects, root, check_files=True):
         raise ValueError("projects.json 必须是数组。")
     ids, slugs = set(), set()
     for project in projects:
-        if not isinstance(project, dict) or set(project) != FIELDS:
+        if not isinstance(project, dict) or set(project) - REFERENCE_FIELDS != FIELDS:
             raise ValueError("项目字段必须与 docs/CONVENTIONS.md 的清单字段一致。")
+        if bool(REFERENCE_FIELDS & set(project)) and not REFERENCE_FIELDS <= set(project):
+            raise ValueError("效果参考必须同时提供 reference 与 reference_name。")
         number = project["id"]
         if type(number) is not int or number < 1 or number in ids:
             raise ValueError(f"编号必须是唯一正整数：{number}")
         ids.add(number)
-        for field in FIELDS - {"id"}:
+        for field in set(project) - {"id"}:
             if not isinstance(project[field], str) or any(
                 ord(char) < 32 for char in project[field]
             ):
@@ -54,6 +57,8 @@ def validate(projects, root, check_files=True):
             raise ValueError(f"{number}: 未知研究状态。")
         if not valid_url(project["repo"], github=True):
             raise ValueError(f"{number}: repo 必须是 GitHub 仓库的 HTTPS 地址。")
+        if "reference" in project and (not valid_url(project["reference"]) or not project["reference_name"].strip()):
+            raise ValueError(f"{number}: 效果参考需要 HTTPS 地址与来源名称。")
         if project["demo"] and not valid_url(project["demo"]):
             raise ValueError(f"{number}: demo 必须是 HTTPS 地址或空字符串。")
         folder = root / project_path(project)
@@ -104,19 +109,23 @@ def summary_markdown(value, table=False):
 
 
 def render_readme(root, projects):
-    rows = ["| 编号 | 项目 / 研究文档 | 能力、原理与使用摘要 | 状态 | 源库 | 演示 |",
+    rows = ["| 编号 | 项目 / 研究文档 | 能力、原理与使用摘要 | 状态 | 来源 / 技术 | 演示 |",
             "| --- | --- | --- | --- | --- | --- |"]
     previews = []
     for project in sorted(projects, key=lambda item: item["id"]):
         path = project_path(project)
         entry = link(project["name"], f"{path}/README.md")
         demo = link("在线演示", project["demo"]) if project["demo"] else "—"
+        code = link(urlsplit(project['repo']).path.strip('/'), project['repo'])
+        source = (link(project['reference_name'], project['reference']) + '<br>技术：' + code) if 'reference' in project else code
         rows.append(f"| {project['id']:03d} | {entry} | {summary_markdown(project['summary'], table=True)} | "
-                    f"{project['status']} | {link(urlsplit(project['repo']).path.strip('/'), project['repo'])} | {demo} |")
+                    f"{project['status']} | {source} | {demo} |")
         if project["cover"]:
+            source_note = (f"效果来源：{link(project['reference_name'], project['reference'])}。技术基础：{code}。" if 'reference' in project
+                           else f"源库：{code}。")
             previews.append(f"### {project['id']:03d} · {markdown(project['name'])}\n\n"
                             f"{summary_markdown(project['summary'])}\n\n"
-                            f"源库：{link(urlsplit(project['repo']).path.strip('/'), project['repo'])}。先阅读下方引导图，再进入研究文档与交互演示。\n\n"
+                            f"{source_note}先阅读下方引导图，再进入研究文档与交互演示。\n\n"
                             f"!{link(project['name'] + ' 项目引导图', path + '/' + project['cover'])}\n\n"
                             f"{link('研究详情', path + '/README.md')}"
                             + (f" · {demo}" if project["demo"] else ""))

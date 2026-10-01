@@ -31,6 +31,20 @@ jobs:
           python -m unittest discover -s tests -v
           node --check projects/001-witr/web/app.js
           node --check projects/001-witr/web/data.js
+          node --check projects/004-rhythm-drop/web/app.js
+          node --check projects/004-rhythm-drop/web/garden/app.js
+          node --check projects/004-rhythm-drop/web/garden/ecosystem/app.js
+          node --check projects/004-rhythm-drop/web/garden/drift/app.js
+          node --test projects/004-rhythm-drop/tests/timeline.test.mjs
+          node --test projects/004-rhythm-drop/tests/stories.test.mjs
+          node --test projects/004-rhythm-drop/tests/direction.test.mjs
+          node --test projects/004-rhythm-drop/tests/rain.test.mjs
+          node --test projects/004-rhythm-drop/tests/works.test.mjs
+          node --test projects/004-rhythm-drop/tests/identity.test.mjs
+          node --test projects/004-rhythm-drop/tests/team.test.mjs
+          node --test projects/004-rhythm-drop/tests/garden.test.mjs
+          node --test projects/004-rhythm-drop/tests/ecosystem.test.mjs
+          python -m unittest discover -s projects/004-rhythm-drop/tests -p test_drift.py -v
       - name: Build all static demos
         run: python scripts/build_site.py
       - uses: actions/configure-pages@v5

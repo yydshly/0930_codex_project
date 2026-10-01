@@ -1,0 +1,191 @@
+{
+  "format": "sound-garden-ecosystem",
+  "version": 1,
+  "bpm": 84,
+  "plants": [
+    {
+      "id": "2edadbd6-952c-411c-abd6-d2831c339dc4",
+      "kind": "air",
+      "x": 0.58,
+      "y": 0.65,
+      "held": 1.5,
+      "notes": [
+        69,
+        76,
+        76,
+        67
+      ],
+      "mix": [
+        {
+          "kind": "air",
+          "weight": 1
+        }
+      ],
+      "mass": 1,
+      "growth": 5,
+      "generation": 0,
+      "lineage": [],
+      "part": "harmony",
+      "gain": 0.69,
+      "pattern": [
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "id": "24cbfc43-04aa-41ab-9a94-51d00e339b8d",
+      "kind": "water",
+      "x": 0.6500000000000001,
+      "y": 0.68,
+      "held": 0.006300000004470349,
+      "notes": [
+        65,
+        69
+      ],
+      "mix": [
+        {
+          "kind": "water",
+          "weight": 1
+        }
+      ],
+      "mass": 1,
+      "growth": 0,
+      "generation": 0,
+      "lineage": [],
+      "part": "melody",
+      "gain": 0.7,
+      "pattern": [
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false
+      ]
+    },
+    {
+      "id": "06009ee2-6f89-484b-8f8d-4b86bfff5a8a",
+      "kind": "water",
+      "x": 0.22,
+      "y": 0.72,
+      "held": 1.5,
+      "notes": [
+        65,
+        69,
+        72,
+        74
+      ],
+      "mix": [
+        {
+          "kind": "water",
+          "weight": 1
+        }
+      ],
+      "mass": 1,
+      "growth": 0,
+      "generation": 0,
+      "lineage": [],
+      "part": "melody",
+      "gain": 0.7,
+      "pattern": [
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false
+      ]
+    },
+    {
+      "id": "b0ea0909-5cfc-4e7b-ad1f-5a2b8c489362",
+      "kind": "air",
+      "x": 0.4,
+      "y": 0.72,
+      "held": 1.5,
+      "notes": [
+        69,
+        76,
+        76,
+        67
+      ],
+      "mix": [
+        {
+          "kind": "air",
+          "weight": 1
+        }
+      ],
+      "mass": 1,
+      "growth": 0,
+      "generation": 0,
+      "lineage": [],
+      "part": "pulse",
+      "gain": 0.7,
+      "pattern": [
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "id": "2bce6b31-47dc-4b0c-b22b-4b6dfbddbc22",
+      "kind": "water",
+      "x": 0.31,
+      "y": 0.65,
+      "held": 1.5,
+      "notes": [
+        65,
+        64,
+        69,
+        67,
+        72,
+        69,
+        74,
+        72
+      ],
+      "mix": [
+        {
+          "kind": "water",
+          "weight": 0.5
+        },
+        {
+          "kind": "meadow",
+          "weight": 0.5
+        }
+      ],
+      "mass": 2,
+      "growth": 7,
+      "generation": 1,
+      "lineage": [
+        "莲 · 水滴钟琴",
+        "花 · 柔和琴音"
+      ],
+      "part": "melody",
+      "gain": 0.7,
+      "pattern": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false
+      ]
+    }
+  ]
+}

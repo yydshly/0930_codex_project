@@ -1,0 +1,10 @@
+import { build } from 'esbuild';
+import { copyFile } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+const root = fileURLToPath(new URL('../', import.meta.url));
+await build({ entryPoints: [root + 'src/app.js'], bundle: true, minify: true, legalComments: 'linked', outfile: root + 'web/app.js', nodePaths: [root + 'tooling/node_modules'], target: ['es2022'] });
+await copyFile(root + 'tooling/node_modules/three/LICENSE', root + 'web/THREE-LICENSE.txt');
+await build({entryPoints:[root+'src/garden.js'],bundle:true,minify:true,outfile:root+'web/garden/app.js',target:['es2022']});
+await build({entryPoints:[root+'src/ecosystem.js'],bundle:true,minify:true,outfile:root+'web/garden/ecosystem/app.js',target:['es2022']});
+await build({entryPoints:[root+'src/drift.js'],bundle:true,minify:true,outfile:root+'web/garden/drift/app.js',target:['es2022']});
+console.log('Built self-contained web/app.js');
