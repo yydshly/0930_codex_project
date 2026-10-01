@@ -1,0 +1,387 @@
+{
+  "date": "2026-09-30T00:18:47.388173+08:00",
+  "upstream_commit": "0830494ecb1c117e25b313a8114fe55a6bf2b125",
+  "scope": "原创研选场景，真实复用指定上游组件及经显式适配的 PDF/PPTX/MP4 导出脚本；非完整 Skill 或全部后端验收",
+  "browser": "153.0.8010.53",
+  "checks": [
+    {
+      "name": "原型展示两个真实项目",
+      "passed": true
+    },
+    {
+      "name": "按真实用途搜索",
+      "passed": true
+    },
+    {
+      "name": "组合筛选空态",
+      "passed": true
+    },
+    {
+      "name": "进入项目详情",
+      "passed": true
+    },
+    {
+      "name": "四条固定版本源码证据",
+      "passed": true
+    },
+    {
+      "name": "使用边界内容可见",
+      "passed": true
+    },
+    {
+      "name": "收藏刷新持久化",
+      "passed": true
+    },
+    {
+      "name": "判断刷新持久化",
+      "passed": true
+    },
+    {
+      "name": "下载的 Markdown 包含用户输入",
+      "passed": true
+    },
+    {
+      "name": "用途对照完整",
+      "passed": true
+    },
+    {
+      "name": "手机原型无整页横向溢出：library",
+      "passed": true
+    },
+    {
+      "name": "手机原型无整页横向溢出：detail",
+      "passed": true
+    },
+    {
+      "name": "手机原型无整页横向溢出：compare",
+      "passed": true
+    },
+    {
+      "name": "手机原型无整页横向溢出：decision",
+      "passed": true
+    },
+    {
+      "name": "手机原型无整页横向溢出：witr",
+      "passed": true
+    },
+    {
+      "name": "上游 IosFrame 内部可操作",
+      "passed": true
+    },
+    {
+      "name": "手机设备框无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "真实 deck-stage 六页",
+      "passed": true
+    },
+    {
+      "name": "方向键翻页",
+      "passed": true
+    },
+    {
+      "name": "End 跳末页",
+      "passed": true
+    },
+    {
+      "name": "Home 跳首页",
+      "passed": true
+    },
+    {
+      "name": "Stage 暂停停止时间推进",
+      "passed": true
+    },
+    {
+      "name": "Stage 播放推进",
+      "passed": true
+    },
+    {
+      "name": "真实 Stage seek 时间 0",
+      "passed": true
+    },
+    {
+      "name": "真实 Stage seek 时间 1",
+      "passed": true
+    },
+    {
+      "name": "真实 Stage seek 时间 6",
+      "passed": true
+    },
+    {
+      "name": "真实 Stage seek 时间 11",
+      "passed": true
+    },
+    {
+      "name": "真实 Stage seek 时间 18",
+      "passed": true
+    },
+    {
+      "name": "真实 Stage seek 时间 19.9",
+      "passed": true
+    },
+    {
+      "name": "同一时间重返画面一致",
+      "passed": true
+    },
+    {
+      "name": "展厅无横向溢出 1440",
+      "passed": true
+    },
+    {
+      "name": "展厅无横向溢出 390",
+      "passed": true
+    },
+    {
+      "name": "展厅真实预览切换：deck",
+      "passed": true
+    },
+    {
+      "name": "展厅真实预览切换：mobile",
+      "passed": true
+    },
+    {
+      "name": "展厅真实预览切换：animation",
+      "passed": true
+    },
+    {
+      "name": "展厅真实预览切换：prototype",
+      "passed": true
+    },
+    {
+      "name": "浏览器识别成片时长",
+      "passed": true
+    },
+    {
+      "name": "MP4 实际可以播放",
+      "passed": true
+    },
+    {
+      "name": "展厅链接目标存在：../../index.html",
+      "passed": true
+    },
+    {
+      "name": "展厅链接目标存在：../../index.html",
+      "passed": true
+    },
+    {
+      "name": "展厅链接目标存在：../../reference.html",
+      "passed": true
+    },
+    {
+      "name": "展厅链接目标存在：animation.html",
+      "passed": true
+    },
+    {
+      "name": "展厅链接目标存在：assets/pptx-1.png",
+      "passed": true
+    },
+    {
+      "name": "展厅链接目标存在：assets/pptx-2.png",
+      "passed": true
+    },
+    {
+      "name": "展厅链接目标存在：assets/pptx-3.png",
+      "passed": true
+    },
+    {
+      "name": "展厅链接目标存在：assets/pptx-4.png",
+      "passed": true
+    },
+    {
+      "name": "展厅链接目标存在：assets/pptx-5.png",
+      "passed": true
+    },
+    {
+      "name": "展厅链接目标存在：assets/pptx-6.png",
+      "passed": true
+    },
+    {
+      "name": "展厅链接目标存在：deck.html",
+      "passed": true
+    },
+    {
+      "name": "展厅链接目标存在：downloads/research-desk.mp4",
+      "passed": true
+    },
+    {
+      "name": "展厅链接目标存在：downloads/research-desk.pdf",
+      "passed": true
+    },
+    {
+      "name": "展厅链接目标存在：downloads/research-desk.pptx",
+      "passed": true
+    },
+    {
+      "name": "展厅链接目标存在：mobile.html",
+      "passed": true
+    },
+    {
+      "name": "展厅链接目标存在：prototype.html",
+      "passed": true
+    },
+    {
+      "name": "展厅链接目标存在：vendor/HUASHU-LICENSE.txt",
+      "passed": true
+    },
+    {
+      "name": "展厅链接目标存在：vendor/adaptations.json",
+      "passed": true
+    },
+    {
+      "name": "所有浏览器流程无 JavaScript 异常",
+      "passed": true
+    },
+    {
+      "name": "PDF 完整六页",
+      "passed": true
+    },
+    {
+      "name": "PDF 第 1 页中文可提取",
+      "passed": true
+    },
+    {
+      "name": "PDF 第 1 页 16:9",
+      "passed": true
+    },
+    {
+      "name": "PDF 第 2 页中文可提取",
+      "passed": true
+    },
+    {
+      "name": "PDF 第 2 页 16:9",
+      "passed": true
+    },
+    {
+      "name": "PDF 第 3 页中文可提取",
+      "passed": true
+    },
+    {
+      "name": "PDF 第 3 页 16:9",
+      "passed": true
+    },
+    {
+      "name": "PDF 第 4 页中文可提取",
+      "passed": true
+    },
+    {
+      "name": "PDF 第 4 页 16:9",
+      "passed": true
+    },
+    {
+      "name": "PDF 第 5 页中文可提取",
+      "passed": true
+    },
+    {
+      "name": "PDF 第 5 页 16:9",
+      "passed": true
+    },
+    {
+      "name": "PDF 第 6 页中文可提取",
+      "passed": true
+    },
+    {
+      "name": "PDF 第 6 页 16:9",
+      "passed": true
+    },
+    {
+      "name": "PPTX 完整六页",
+      "passed": true
+    },
+    {
+      "name": "每页有原生可编辑文本",
+      "passed": true
+    },
+    {
+      "name": "PPTX 六页讲者备注",
+      "passed": true
+    },
+    {
+      "name": "备注中包含来源",
+      "passed": true
+    },
+    {
+      "name": "所有内容类型声明都有目标",
+      "passed": true
+    },
+    {
+      "name": "PPT 修复未改变任何页面内容",
+      "passed": true
+    },
+    {
+      "name": "PPT 结构与几何检查通过",
+      "passed": true
+    },
+    {
+      "name": "PPT 独立导入验证通过",
+      "passed": true
+    },
+    {
+      "name": "MP4 H.264 / 1280×720",
+      "passed": true
+    },
+    {
+      "name": "MP4 30 fps / 600 帧 / 20 秒",
+      "passed": true
+    },
+    {
+      "name": "无音轨说明与文件一致",
+      "passed": true
+    },
+    {
+      "name": "完整视频解码无错误",
+      "passed": true
+    },
+    {
+      "name": "未发现超过 0.1 秒黑屏",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "pptx_native_text_objects_per_slide": [
+    6,
+    10,
+    5,
+    5,
+    5,
+    8
+  ],
+  "pdf_pages": 6,
+  "mp4": {
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "frames": 600,
+    "duration": 20,
+    "audio": false
+  },
+  "artifacts": [
+    {
+      "file": "downloads/research-desk.mp4",
+      "bytes": 1017398,
+      "sha256": "35e312dade8abbebe85812161b2cada7e14c82ded11b3a2e173a5f3fdf5df4d0"
+    },
+    {
+      "file": "downloads/research-desk.pdf",
+      "bytes": 403411,
+      "sha256": "bce14c19c5d96416c8332498653e70b9dcadaffff8dab66f05a6c4dd48bcf10f"
+    },
+    {
+      "file": "downloads/research-desk.pptx",
+      "bytes": 311987,
+      "sha256": "4ef7a1e2cb6b0e5a3f36668926e7c97736f98409c5915aa57e75e57bbeb5b77d"
+    }
+  ],
+  "visual_review": "PDF 与重新导入的 PPTX 六页逐页检查；视频四段关键帧检查。未在 Microsoft PowerPoint 实机检查。",
+  "package_normalization": {
+    "reason": "Export package declared absent slide masters. Cause was not isolated to upstream versus bundled pptxgenjs.",
+    "removed_content_type_overrides": [
+      "/ppt/slideMasters/slideMaster2.xml",
+      "/ppt/slideMasters/slideMaster3.xml",
+      "/ppt/slideMasters/slideMaster4.xml",
+      "/ppt/slideMasters/slideMaster5.xml",
+      "/ppt/slideMasters/slideMaster6.xml"
+    ],
+    "slide_and_notes_xml_changed": false
+  }
+}

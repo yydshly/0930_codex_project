@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Huashu Design 能力研究：16 项能力、交互实验、上游样例、架构与导出路线、扩展指南和固定版本证据。">
+  <title>Huashu Design · 能力研究室</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23284be6'/%3E%3Cpath d='M8 8v16M24 8v16M8 16h16' stroke='white' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="map-entry.css">
+  <script defer src="inventory.js"></script><script defer src="data.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到内容</a>
+<aside class="sidebar">
+  <a class="brand" href="#overview"><span class="brand-mark">H</span><span>HUASHU DESIGN<small>开源项目研究集 / 002</small></span></a>
+  <div class="nav-label">研究导航</div>
+  <nav aria-label="研究章节">
+    <a href="capability-map.html"><span>全图</span>能力、场景与扩展 ↗</a>
+    <a href="cases/research-desk/index.html"><span>实测</span>真实场景 · 六种交付 ↗</a>
+    <a href="#overview"><span>01</span>总览与判断</a><a href="#capabilities"><span>02</span>能力全景</a><a href="#lab"><span>03</span>交互实验</a><a href="#gallery"><span>04</span>案例与风格库</a><a href="#architecture"><span>05</span>底层原理</a><a href="#exports"><span>06</span>交付与导出</a><a href="#extensions"><span>07</span>扩展与使用</a><a href="#boundaries"><span>08</span>边界与核验</a><a href="#sources"><span>09</span>来源与资料</a>
+  </nav>
+  <div class="sidebar-foot"><span class="pill">固定版本研究</span><p>研究日期 2026.09.29<br>上游提交 <code>0830494</code></p><a href="https://github.com/alchaincyf/huashu-design" target="_blank" rel="noopener">查看上游仓库 ↗</a></div>
+</aside>
+<div class="workspace">
+  <header class="topbar"><span>RESEARCH / <b id="current-section">总览与判断</b></span><span class="edition">文档 · 源码 · 演示</span></header>
+  <main id="main" tabindex="-1">
+    <section id="overview" class="view">
+      <div class="eyebrow">HTML-NATIVE DESIGN / 研究档案 002</div>
+      <h1>把设计制作，<br>组织成可复用的流程。</h1>
+      <p class="lead">Huashu Design 是以 Skill 为入口的设计流程与工具包：规范和参考指导模型，组件承载交互与排版，脚本完成导出和检查。它管理从素材、方向选择到制作、修改与交付的过程。</p>
+      <div class="overview-actions"><a class="primary button" href="cases/research-desk/index.html#understanding">查看理解与实际成果 ↗</a><a class="button" href="#capabilities">浏览全部能力</a></div>
+      <aside class="map-entry"><a href="capability-map.html" aria-label="放大阅读能力全景图"><img src="images/huashu-capability-map.svg" alt="能力全景图缩略图" loading="lazy"></a><div><p class="map-kicker">ONE MAP / 全景理解</p><h2>一张图，串起能力、原理与未来用途。</h2><p>16 项能力、六类交付、六类使用场景、七层扩展。分别标记实际验证与尚未运行的路线。</p><a href="capability-map.html">放大阅读全景图 ↗</a> · <a href="images/huashu-capability-map.png" download>下载高清图片 ↓</a></div></aside>
+      <div class="section-title"><h2>六个问题，建立整体理解</h2><a href="reference.html#understanding">阅读完整汇总 ↗</a></div>
+      <div class="understanding-summary">
+        <article class="panel"><span class="eyebrow">01 / 能力是什么</span><h3>组织视觉制作的全过程</h3><p>设计探索、品牌与事实资料、风格参考、实时调参、原型、幻灯片、信息图、动画、导出、声音制作与质量评审。本站归纳为 16 项能力。</p><a href="#capabilities">查看能力与证据</a></article>
+        <article class="panel"><span class="eyebrow">02 / 目标产物是什么</span><h3>交互页面与可交付物料</h3><p>已展示原型、HTML 演讲稿、PDF、可编辑 PPTX、时间轴动画和 MP4。其他路线涉及信息图、GIF、透明视频、带配音字幕的解说；具体支持与验证范围各不相同。</p><a href="#exports">选择交付路线</a></article>
+        <article class="panel"><span class="eyebrow">03 / 用于什么场景</span><h3>研究、评审、汇报与传播</h3><p>把开源研究做成可讨论成果，用原型评审产品流程，把真实数据做成汇报，制作课程、培训、产品介绍及品牌物料。同类任务可沉淀内容模板。</p><a href="capability-map.html">查看六类使用场景</a></article>
+        <article class="panel"><span class="eyebrow">04 / 底层怎样工作</span><h3>规则指导，浏览器与工具执行</h3><p>宿主模型理解资料并编写 HTML/CSS/JavaScript；浏览器呈现画面与状态。PDF 通过打印，PPT 通过对象转换，视频通过时间驱动渲染和编码生成。</p><a href="#architecture">理解实现链路</a></article>
+        <article class="panel"><span class="eyebrow">05 / 如何继续扩展</span><h3>从复用资产到业务系统</h3><p>增加任务模板、品牌规范、页面与镜头组件，再接真实数据、企业 PPT 母版、新导出器和验收检查。账户、权限、存储、队列与协作按需另建。</p><a href="#extensions">查看扩展方向</a></article>
+        <article class="panel"><span class="eyebrow">06 / 对你的意义</span><h3>把研究结论变成可用成果</h3><p>让已有资料便于展示、讨论、修改和归档；反复使用时积累个人规范与制作经验。长期价值取决于任务频率、返工与维护成本，本轮尚未量化效率提升。</p><a href="cases/research-desk/index.html#adoption">查看采用顺序</a></article>
+      </div>
+      <div class="notice"><b>怎样理解“Skill 的控制合集”？</b><p>Skill 控制任务步骤、内容与设计要求；这些指令由模型理解和遵守。设备框、幻灯片、时间轴及导出脚本则把部分要求写成程序行为。它的复用资产同时包含指令、参考、组件和执行工具，完整效果仍需逐项验收。</p></div>
+      <div class="stats"><div><strong>16</strong><span>整理后的能力条目</span></div><div><strong>60</strong><span>上游风格配方</span></div><div><strong>24</strong><span>上游预制样例</span></div><div><strong>06</strong><span>本站教学实验</span></div></div>
+      <div class="split-panels"><article class="panel blue-panel"><span class="eyebrow">它的主要价值</span><h2>让设计经验成为<br>可以反复执行的流程。</h2><p>从真实素材出发，生成多个方向，转成 HTML，检查之后再交付。积累的是规范、组件、案例和修改经验。</p></article><article class="panel"><span class="eyebrow">先区分目标</span><h2>对软件是原型，<br>对物料可能就是成品。</h2><p>网页原型用于验证操作与表达；幻灯片、信息图和视频可以成为最终交付物。业务后台、权限、交易和运维仍需要另外建设。</p></article></div>
+      <div class="panel"><h2>实测之后，我们的判断</h2><p>它主要组织设计规范、参考、组件和导出步骤。对软件，帮助验证前端流程；对演讲、归档和传播，PDF、PPT 与视频本身可以作为交付物。</p><p>本次确实复用了指定组件和导出工具，但没有跑完完整 Skill，也没有证明通用的质量或效率提升。长期价值要结合你的任务频率、修改成本与实际验收结果判断。</p><a href="reference.html#understanding">阅读完整理解笔记 ↗</a> · <a href="cases/research-desk/reader.html?format=pdf">直接阅读 PDF</a> · <a href="cases/research-desk/reader.html?format=pptx">直接阅读 PPT</a></div>
+      <div class="section-title"><h2>一条贯穿所有媒介的主线</h2><a href="#architecture">展开实现原理</a></div><div id="workflow-mini" class="workflow-mini"></div>
+      <div class="notice"><b>如何阅读本研究</b><p>“源码/文档核对”表示存在对应实现或指令；“上游样例复现”表示渲染了固定版本样例；“本站教学演示”用于解释原理。新增“真实场景展厅”实际运行指定上游组件与 PDF、PPTX、MP4 导出链路，适配和结果均有记录。完整 Skill 生成流程与云能力未测试。</p></div>
+    </section>
+    <section id="capabilities" class="view" hidden>
+      <div class="eyebrow">CAPABILITY ATLAS</div><h1>能力全景</h1><p class="lead">按输入、产物、实现方式、边界与验收方法，拆解 16 项能力。点开卡片查看证据。</p>
+      <div class="notice"><b>先看真正做出来的成果</b><p>用“开源项目研究与选型”同一场景，体验可点击原型、六页演讲稿、PDF、可编辑 PPT、时间轴动画与 20 秒 MP4。<a href="cases/research-desk/index.html">进入真实场景展厅 ↗</a></p></div>
+      <div class="toolbar"><label class="search"><span>搜索能力</span><input id="cap-search" type="search" placeholder="例如：母版、字幕、数据库"></label><label>能力分组<select id="cap-filter"><option>全部</option><option>视觉产出</option><option>设计流程</option><option>导出与交付</option><option>检查与评审</option></select></label></div>
+      <p id="cap-count" class="muted" aria-live="polite"></p><div id="cap-grid" class="card-grid"></div>
+    </section>
+    <section id="lab" class="view" hidden>
+      <div class="eyebrow">INTERACTIVE EXPLAINERS</div><h1>把原理，动手试一次。</h1><p class="lead">六个独立小实验，分别解释状态、页面、时间、参数、数据和评审。全部为本站原创教学演示，不调用模型、不生成上游成品。</p>
+      <div id="lab-tabs" class="pills" aria-label="选择实验"></div><div id="lab-stage" class="lab-stage"></div>
+    </section>
+    <section id="gallery" class="view" hidden>
+      <div class="eyebrow">UPSTREAM WORK / STYLE REFERENCE</div><h1>案例与风格库</h1><p class="lead">先看有出处的效果，再理解配方。作品展示不等于质量基准，风格名称也不代表相关设计师本人参与。</p>
+      <div class="section-title"><h2>同一主题，三份上游封面</h2><span class="pill">固定源码 · 本地渲染</span></div>
+      <p>以下截图来自仓库内三份预制 HTML 的本地渲染。样例没有为本研究重新设计；离线渲染使用本机字体回退，字形可能与作者原图不同。</p><div id="upstream-gallery" class="gallery-grid"></div>
+      <div class="section-title"><h2>更多作者公开案例</h2></div><div class="link-grid"><a href="https://www.huasheng.ai/parrots/" target="_blank" rel="noopener"><b>鹦鹉演化史</b><span>专题叙事 · 外部在线案例 ↗</span></a><a href="https://skill-huasheng.vercel.app/" target="_blank" rel="noopener"><b>聊聊 Skill</b><span>浏览器演讲稿 · 外部在线案例 ↗</span></a><a id="all-demos" target="_blank" rel="noopener"><b>上游 Demo 目录</b><span>原型、动画、调参、评审与流程 ↗</span></a></div>
+      <div class="section-title"><h2>60 种风格配方索引</h2></div><p>网页、PPT、信息图各 20 种。这里保留名称、媒介和表达气质；上游“还原度”是作者估计，未作为本研究评分。</p>
+      <div class="toolbar"><label class="search">搜索风格<input id="style-search" type="search" placeholder="例如：瑞士、数据、Editorial"></label><label>媒介<select id="style-filter"><option>全部</option><option>网页</option><option>PPT</option><option>信息图</option></select></label><label>气质<select id="tone-filter"><option>全部</option><option>大胆</option><option>中性</option><option>安静</option></select></label></div><p id="style-count" class="muted" aria-live="polite"></p><div id="styles-list" class="style-list"></div>
+    </section>
+    <section id="architecture" class="view" hidden>
+      <div class="eyebrow">HOW IT WORKS</div><h1>浏览器，是共同的画布。</h1><p class="lead">规则让 Agent 决定怎么做，代码把设计表达出来，浏览器生成可见结果，转换工具负责交付。这里没有新的模型训练过程。</p>
+      <div id="layers" class="layers"></div><div class="section-title"><h2>完整工作流与中间产物</h2></div><div id="workflow-full" class="workflow-full"></div>
+      <div class="split-panels"><article class="panel"><h3>动画为什么可以逐帧渲染？</h3><p>把画面表示为 <code>frame = render(time)</code>。渲染器依次传入 0、1/60、2/60 秒，取得每帧画面。位置、大小、透明度必须由这个时间决定，独立运行的动画需要适配。</p><a href="#lab" data-lab="motion">拖动时间轴体验</a></article><article class="panel"><h3>PPT 为什么不能无损转换？</h3><p>网页使用流式布局，PPT 使用固定坐标对象。转换器可以测出当前页面的位置，但必须重新表达字体、段落和形状。SVG 或复杂视觉可能成为图片，交互也不会随之保留。</p><a href="#exports">比较交付路线</a></article></div>
+      <div class="notice"><b>文档约束与程序约束不同</b><p>“先确认方向”“不要使用某种视觉套路”主要由模型执行。截图脚本、错误退出、可选渲染 hook 等才是程序层检查。存在指令，不等于每次执行都能遵守。</p></div>
+    </section>
+    <section id="exports" class="view" hidden>
+      <div class="eyebrow">DELIVERY ROUTES</div><h1>先确定交付，再选择路线。</h1><p class="lead">浏览器演讲、可编辑 PPT、定稿 PDF 和成片视频解决不同问题。可编辑程度与视觉保真需要分别验收。</p>
+      <div class="panel chooser"><h2>你的交付目的是什么？</h2><label>选择用途<select id="route-select"><option value="prototype">让人点击体验产品</option><option value="present">浏览器演讲或定稿阅读</option><option value="newppt">从零做可编辑 PPT</option><option value="template">已有 HTML 或要继承企业模板</option><option value="video">新建产品动画视频</option><option value="narration">带配音的长解说</option><option value="overlay">透明字幕条或剪辑贴片</option></select></label><div id="route-result" aria-live="polite"></div></div>
+      <div class="table-wrap"><table><caption>输出格式与转换边界</caption><thead><tr><th>格式</th><th>典型用途</th><th>交互保留</th><th>编辑能力</th><th>依赖与前提</th><th>主要边界</th></tr></thead><tbody id="export-table"></tbody></table></div>
+      <div class="notice"><b>已经完成的实际导出</b><p>真实场景已产出六页 PDF、六页可编辑 PPTX 与 20 秒 MP4，并记录 Windows 适配和文件检查。GIF、透明视频、云配音及企业模板继承未测试。<a href="cases/research-desk/index.html">查看成品与下载文件 ↗</a></p></div>
+    </section>
+    <section id="extensions" class="view" hidden>
+      <div class="eyebrow">MAKE IT USEFUL</div><h1>把你的经验，沉淀进去。</h1><p class="lead">最值得复用的往往是品牌资料、内容结构、组件和验收标准。以下是基于仓库结构提出的扩展建议，不是上游全部开箱即用的功能。</p>
+      <div id="extension-grid" class="card-grid"></div><div class="section-title"><h2>五类可复用任务说明</h2><span class="muted">按实际素材修改后使用</span></div><div id="prompts"></div>
+      <div class="panel"><h2>一次有意义的试用</h2><ol><li>选一份你已完成过、能够判断好坏的真实材料。</li><li>固定模型、素材与任务范围，记录初稿和修改过程。</li><li>分别统计准备、生成、修改、导出和验收耗时。</li><li>检查内容错误、返工次数、编辑能力和目标格式兼容性。</li><li>把你认可的规范保存下来，再换一项任务测试是否有效。</li></ol><p>需要用户反馈、服务接口、多人协作或长期上线时，把这些工作作为独立工程评估。</p></div>
+    </section>
+    <section id="boundaries" class="view" hidden>
+      <div class="eyebrow">LIMITS / EVIDENCE</div><h1>能力要和边界一起看。</h1><p class="lead">把实现事实、作者主张和研究判断分开，才能判断是否适合你的工作。</p><div id="limits" class="card-grid"></div>
+      <div class="section-title"><h2>文档与实现之间的差异</h2></div><div class="table-wrap"><table><thead><tr><th>主题</th><th>容易得到的印象</th><th>本次核对结果</th><th>证据</th></tr></thead><tbody id="discrepancy-table"></tbody></table></div>
+      <div class="section-title"><h2>数据流与成本</h2></div><div class="split-panels"><article class="panel"><h3>本地部分</h3><p>已准备好的 HTML 可本地渲染；格式转换、音频混合与技术校验主要依赖本地工具。若页面引用远程字体或脚本，仍会请求网络。</p></article><article class="panel"><h3>外部部分</h3><p>宿主模型的推理、素材查找、依赖下载及可选 TTS/AI 看片涉及外部服务。后两者在脚本里有显式同意门，分别上传文本与视频片段。</p></article></div>
+      <p>成本应计入模型调用、并行方向探索、素材服务、配音/评审、渲染资源以及人工修改。MIT 许可不等于外部 API 或所有素材免费。</p>
+    </section>
+    <section id="sources" class="view" hidden>
+      <div class="eyebrow">TRACEABLE RESEARCH</div><h1>每个结论，都能回到来源。</h1><p class="lead">固定到上游提交 <code>0830494ecb1c117e25b313a8114fe55a6bf2b125</code>（2026.09.22），研究日期 2026.09.29。索引存在不代表逐文件审计。</p>
+      <div class="link-grid"><a href="reference.html"><b>完整研究手册</b><span>全部资料 · 可离线阅读与打印</span></a><a href="reference.html#research"><b>详细研究报告</b><span>原理、价值、局限与证据</span></a><a href="reference.html#reproduction"><b>运行与核验记录</b><span>实测范围、环境和复现方法</span></a><a href="reference.html#extension-guide"><b>扩展实践指南</b><span>品牌、模板、数据和工程</span></a><a href="reference.html#capability-matrix"><b>完整能力矩阵</b><span>便于离线阅读的详细清单</span></a><a href="reference.html#source-map"><b>源码导航</b><span>脚本、资料、素材与阅读建议</span></a></div>
+      <div class="toolbar"><label class="search">查找上游文件<input id="source-search" type="search" placeholder="例如：pptx、voiceover、assets/"></label><label>范围<select id="source-filter"><option value="all">全部文件</option><option value="reviewed">本次已阅读文件/片段</option><option value="references/">专项文档</option><option value="scripts/">工具脚本</option><option value="assets/">素材与组件</option><option value="demos/">演示源码</option></select></label></div><p id="source-count" class="muted" aria-live="polite"></p><div id="source-list" class="source-list"></div>
+      <div class="notice"><b>许可与归属</b><p>Huashu Design 上游采用 MIT；三个预制封面源码及其 LICENSE 随附于 upstream/，<a href="reference.html#license">手册也保留许可全文</a>。研究文字与教学实验为本子项目整理；截图为本地渲染记录。品牌名、第三方字体与素材各自受其相关规则约束。</p></div>
+    </section>
+  </main>
+  <footer>002 / Huashu Design 研究档案 <span>本地展示 · 未连接模型或付费服务</span></footer>
+</div>
+<dialog id="detail-dialog"><button id="close-detail" class="close" aria-label="关闭详情">×</button><div id="detail-content"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

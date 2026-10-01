@@ -1,0 +1,103 @@
+Create ONE polished, high-resolution Chinese educational infographic, a single complete image, ideally 3200×2400 landscape 4:3. It is the cover and one-page understanding map for a repository research project. Audience: a non-expert user who needs to know EXACTLY what this GitHub repo provides, what it does not yet implement, how it helps design reliable AI agents, and why it matters to their own projects. This is an information-rich editorial infographic, NOT a website screenshot or a decorative poster.
+
+Visual style: precise Swiss editorial grid, warm ivory background, deep forest-green typography, muted sage panels, restrained terracotta accents, thin connectors, minimal line icons only when meaningful. Use extremely crisp, readable Simplified Chinese typesetting, generous spacing, strong hierarchy and perfect alignment. No mascots, no robots, no gradients, no 3D, no clutter. All main and fine text must be legible at full resolution. Use the exact facts/text supplied below; do not invent product capabilities. Allocate enough space and choose concise line wrapping. No extra explanatory English except actual product/file names. Main font clean modern Chinese sans serif.
+
+Top header:
+English overline: "LEARN HARNESS ENGINEERING"
+Large Chinese title: "一张图看懂：这个库能帮你做什么"
+Strong one-line definition: "主体是课程与实践资料，附带 1 个 Skill、工具脚本和教学项目。"
+Subline: "核心目标：学会为 Agent 配置规则、状态、工具与验证，让任务可执行、可检查、可接续。"
+
+Then a large SIX-PANEL capacity map in a balanced 3-column × 2-row grid. Number panels 01–06. Use clearly distinguished text badges: "学习资料", "可用工具", "教学实现", "需外部接入". These are nature labels, not scores.
+
+PANEL 01 — title "课程：14 讲，理解工作原理" / badge "学习资料"
+7 well-spaced rows covering all 14 lecture topics:
+"L01–02  模型为何失败 · Harness 是什么"
+"L03–04  仓库保存知识 · 指令按需读取"
+"L05–06  跨会话接续 · 启动与环境检查"
+"L07–08  控制任务范围 · 功能清单与验收"
+"L09–10  防止假完成 · 完整链路验证"
+"L11–12  日志与反馈 · 清理与交接"
+"L13–14  自动循环 · 图式流程编排"
+Small footer: "8 项练习说明；完整工程目录为 P01–P06。"
+
+PANEL 02 — title "资料：把方法变成项目约定" / badge "学习资料"
+"基础模板：规则、任务、进度、初始化、交接"
+"质量资料：验收清单、评审量表、质量记录"
+"进阶模板：架构、产品、计划、可靠性与安全"
+"参考模式：记忆、上下文、Skill、权限、协作、生命周期、常见陷阱"
+"4 份 SOP：架构、知识沉淀、可观测性、浏览器验证"
+"4 篇产品拆解：Pi / Claude Code / Codex / DeepSeek"
+Small footer: "提供设计参考；不会自动安装这些系统。"
+
+PANEL 03 — title "Skill 与脚本：直接辅助你的项目" / badge "可用工具"
+"Skill：harness-creator"
+"指导宿主 AI 检查项目、选用模板、生成规则、解释审计结果。"
+"4 个 Node 工具：生成文件 / 结构评分 / HTML 报告 / 结构 Benchmark"
+"另有 1 个 Bash 仓库审计工具"
+"生成 5 类文件："
+"AGENTS.md · feature_list.json · progress.md"
+"session-handoff.md · init.sh"
+"支持基础技术栈与包管理器识别；可自定义验证命令。"
+Strong footer: "评分检查结构；满分不等于业务功能通过。"
+
+PANEL 04 — title "教学应用：观察流程如何落地" / badge "教学实现"
+"Electron 本地知识库示例"
+"文档导入与管理 → 段落分块与索引 → 问答与引用"
+"配有历史记录、反馈、本地保存、结构化日志"
+"辅助示例：架构检查、数据扫描、性能模拟"
+"练习同一任务的单角色、生成＋评审、规划＋生成＋评审"
+Strong boundary line: "问答是关键词匹配与预设答案，没有真实 LLM。"
+Small footer: "用于学习和对照，不能直接当成成熟知识库产品。"
+
+PANEL 05 — title "循环与协作：设计更复杂的执行" / badge "需外部接入"
+"目标循环：执行 → 验证 → 修正 → 达成或停止"
+"定时循环：定期检查 → 处理异常 → 必要时叫人"
+"Maker–Checker：实现者与检查者分工"
+"图式编排：节点、分支、共享状态、回退与人工节点"
+"记忆、工具权限、并行隔离、预算与恢复需要接入执行环境。"
+Strong boundary line: "图代码含占位；P07/P08 没有完整工程目录。"
+
+PANEL 06 — title "课程维护：阅读、发布与导出" / badge "维护工具"
+"VitePress 课程网站 · 15 种语言资料"
+"课程 PDF 导出与合并（当前 en / zh）"
+"README 截图 · 课程路径与产物检查"
+"GitHub Pages / Release 发布工作流"
+"翻译文本修正与素材辅助脚本"
+Small footer: "这些工具维护课程内容，不会替你生成业务产品。"
+
+Below six panels, a wide section heading:
+"把知识用起来：理解 Agent 的组成，逐步构建可靠工作流程"
+
+Draw a left-to-right explanatory architecture with 5 connected labeled stages. Keep the model layer distinct from repository-provided methods:
+"你定义目标与验收" → "Agent：模型理解＋工具执行" → "项目规则与任务状态" → "实际测试与运行反馈" → "记录结果并交接"
+Add a thin feedback arrow returning from actual tests to Agent, labelled "失败就修正".
+Under the diagram include this crucial explanatory sentence:
+"这个库提供组织方法与辅助文件；模型、宿主工具和真实业务验收由你的工作环境提供。"
+
+Below it, a simple 4-stage build roadmap, horizontally arranged, differentiated from the feedback loop:
+"① Agent 可读的项目" → "② 有证据的单任务执行" → "③ 可跨会话接续的长任务" → "④ 有边界的自动循环与多 Agent"
+Caption: "先做好验收与状态，再增加自动化与并行。"
+
+Bottom two equal columns, larger text and concise bullets:
+Left title "对你的意义"
+"少重复解释：项目背景与决策留在文件中"
+"少返工：把“完成”绑定到实际验证"
+"能接着做：新会话知道做到哪里"
+"可复用：把成功做法沉淀成项目流程"
+Specific highlighted line: "对你的研究集：统一版本、能力、证据、边界和交付检查。"
+
+Right title "适合的使用场景"
+"多天持续开发 · 修复与重构 · 批量迁移"
+"补测试与规范化 · 多角色评审 · 项目研究"
+"简单问答或一次性小任务，可只取轻量模板。"
+"本地 Windows：Node 工具可用；Bash 入口需对应环境。"
+
+Bottom boundary strip with clear but small readable text:
+"能力边界：不是独立 Agent 平台｜不训练模型｜不自带完整自动调度｜结构评分不等于真实成功率"
+Footer metadata:
+"本图归纳 38 项研究能力 · 固定版本 77e7a3e · 2026-09-30"
+"来源：github.com/walkinglabs/learn-harness-engineering"
+"独立研究整理；六个板块为本图的归纳分类。"
+
+Ensure the final image is ONE comprehensive infographic, contains all six panels, agent feedback diagram, four build goals, personal value and scenarios. Preserve correct distinctions and all counts. No clipped or overlapping text, no invented claims of autonomy or guaranteed quality.

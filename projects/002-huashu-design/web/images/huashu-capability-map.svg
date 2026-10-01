@@ -1,0 +1,269 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="3700" viewBox="0 0 2400 3700" role="img" aria-labelledby="map-title map-desc"><title id="map-title">Huashu Design 能力、原理、场景与扩展全景图</title><desc id="map-desc">基于固定提交 0830494。归纳十六项能力、六类实测交付、实现原理、六类未来场景、七层扩展与验证边界。实测与文档核对分开标记。</desc><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1d6246"/></marker></defs><g font-family="Microsoft YaHei,Segoe UI,sans-serif">
+<rect x="0" y="0" width="2400" height="3700" rx="0" fill="#f5f7ef" stroke="none"/>
+<rect x="0" y="0" width="2400" height="238" rx="0" fill="#173b30" stroke="none"/>
+<text x="70" y="70" font-size="28" fill="#c5e5ac" font-weight="600" data-width="1000">HUASHU DESIGN</text>
+<text x="70" y="145" font-size="62" fill="#f6faee" font-weight="700" data-width="2230">一张图，看清能力、原理与使用方向</text>
+<text x="74" y="200" font-size="28" fill="#c6d8c2" font-weight="400" data-width="2220">Skill 作为入口，规范与参考指导 Agent，组件与脚本支撑视觉成果的制作、交付和检查。</text>
+<text x="70" y="302" font-size="27" fill="#1d6246" font-weight="700" data-width="70">01</text>
+<text x="138" y="302" font-size="39" fill="#173b30" font-weight="700" data-width="1400">它怎样工作</text>
+<text x="138" y="345" font-size="25" fill="#506b56" font-weight="400" data-width="2130">Skill 指导步骤；模型完成理解与代码生成；浏览器和外部工具执行。库本身没有训练新模型。</text>
+<rect x="70" y="381" width="410" height="154" rx="12" fill="#ffffff" stroke="#ccdac5"/>
+<text x="94" y="426" font-size="30" fill="#173b30" font-weight="700" data-width="360">真实资料</text>
+<text x="94" y="468" font-size="24" fill="#506b56" font-weight="400" data-width="364">需求 / 受众 / 数据</text>
+<text x="94" y="503" font-size="24" fill="#506b56" font-weight="400" data-width="364">品牌素材 / 交付要求</text>
+<path d="M489 458L523 458" fill="none" stroke="#1d6246" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="533" y="381" width="410" height="154" rx="12" fill="#ffffff" stroke="#ccdac5"/>
+<text x="557" y="426" font-size="30" fill="#173b30" font-weight="700" data-width="360">Skill + 参考</text>
+<text x="557" y="468" font-size="24" fill="#506b56" font-weight="400" data-width="364">任务路由 / 设计规范</text>
+<text x="557" y="503" font-size="24" fill="#506b56" font-weight="400" data-width="364">风格配方 / 评审方法</text>
+<path d="M952 458L986 458" fill="none" stroke="#1d6246" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="996" y="381" width="410" height="154" rx="12" fill="#1d6246" stroke="#ccdac5"/>
+<text x="1020" y="426" font-size="30" fill="#fff" font-weight="700" data-width="360">宿主 Agent</text>
+<text x="1020" y="468" font-size="24" fill="#dbe9d2" font-weight="400" data-width="364">理解材料 / 提出方向</text>
+<text x="1020" y="503" font-size="24" fill="#dbe9d2" font-weight="400" data-width="364">编写与修改页面代码</text>
+<path d="M1415 458L1449 458" fill="none" stroke="#1d6246" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1459" y="381" width="410" height="154" rx="12" fill="#ffffff" stroke="#ccdac5"/>
+<text x="1483" y="426" font-size="30" fill="#173b30" font-weight="700" data-width="360">浏览器画布</text>
+<text x="1483" y="468" font-size="24" fill="#506b56" font-weight="400" data-width="364">HTML / CSS / JavaScript</text>
+<text x="1483" y="503" font-size="24" fill="#506b56" font-weight="400" data-width="364">界面状态 / 排版 / 时间</text>
+<path d="M1878 458L1912 458" fill="none" stroke="#1d6246" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1922" y="381" width="410" height="154" rx="12" fill="#ffffff" stroke="#ccdac5"/>
+<text x="1946" y="426" font-size="30" fill="#173b30" font-weight="700" data-width="360">组件与导出工具</text>
+<text x="1946" y="468" font-size="24" fill="#506b56" font-weight="400" data-width="364">设备框 / 幻灯片 / 时间轴</text>
+<text x="1946" y="503" font-size="24" fill="#506b56" font-weight="400" data-width="364">打印 / 对象转换 / 编码</text>
+<path d="M2140 548L2140 585" fill="none" stroke="#1d6246" stroke-width="2"/>
+<path d="M2140 585L1100 585" fill="none" stroke="#1d6246" stroke-width="2"/>
+<path d="M1100 585L1100 548" fill="none" stroke="#1d6246" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1200" y="625" font-size="24" fill="#506b56" font-weight="400" data-width="1110">截图 / 文件 / 媒体检查 → 修改 → 重新生成；流程规则不等于每次都能自动遵守</text>
+<text x="72" y="595" font-size="27" fill="#1d6246" font-weight="600" data-width="1060">交付目标先确定：交互、可编辑排版、确定性动画有不同实现约束。</text>
+<text x="70" y="710" font-size="27" fill="#1d6246" font-weight="700" data-width="70">02</text>
+<text x="138" y="710" font-size="39" fill="#173b30" font-weight="700" data-width="1400">能力全景：4 组、16 项</text>
+<text x="138" y="753" font-size="25" fill="#506b56" font-weight="400" data-width="2130">编号是本研究的归纳。● 本次相关组件或产物实测   ○ 源码 / 文档核对，未跑完整流程   ↗ 需要额外扩展</text>
+<rect x="70" y="792" width="544" height="1025" rx="12" fill="#ffffff" stroke="#ccdac5"/>
+<rect x="70" y="792" width="544" height="109" rx="12" fill="#e7eedc" stroke="none"/>
+<text x="93" y="836" font-size="31" fill="#173b30" font-weight="700" data-width="500">A / 设计准备与迭代</text>
+<text x="93" y="876" font-size="23" fill="#506b56" font-weight="400" data-width="500">确定内容、方向和可调参数</text>
+<text x="93" y="929" font-size="28" fill="#173b30" font-weight="700" data-width="500">01  多方向设计探索</text>
+<text x="93" y="964" font-size="22" fill="#8d6122" font-weight="600" data-width="500">○ 流程核对</text>
+<text x="93" y="999" font-size="23" fill="#506b56" font-weight="400" data-width="500">同一材料生成不同视觉初稿</text>
+<text x="93" y="1029" font-size="23" fill="#506b56" font-weight="400" data-width="500">选定方向后继续深化</text>
+<text x="93" y="1059" font-size="23" fill="#506b56" font-weight="400" data-width="500">原理：任务规范 + 模型执行</text>
+<path d="M93 1073L591 1073" fill="none" stroke="#ccdac5" stroke-width="2"/>
+<text x="93" y="1103" font-size="28" fill="#173b30" font-weight="700" data-width="500">02  品牌资产与事实</text>
+<text x="93" y="1138" font-size="22" fill="#8d6122" font-weight="600" data-width="500">○ 规范核对</text>
+<text x="93" y="1173" font-size="23" fill="#506b56" font-weight="400" data-width="500">整理 Logo、色彩、字体和截图</text>
+<text x="93" y="1203" font-size="23" fill="#506b56" font-weight="400" data-width="500">保存品牌规范与事实来源</text>
+<text x="93" y="1233" font-size="23" fill="#506b56" font-weight="400" data-width="500">原理：素材协议 + 上下文复用</text>
+<path d="M93 1247L591 1247" fill="none" stroke="#ccdac5" stroke-width="2"/>
+<text x="93" y="1277" font-size="28" fill="#173b30" font-weight="700" data-width="500">03  风格、组件与案例</text>
+<text x="93" y="1312" font-size="22" fill="#8d6122" font-weight="600" data-width="500">○ 资料 / 样例</text>
+<text x="93" y="1347" font-size="23" fill="#506b56" font-weight="400" data-width="500">60 种风格配方、24 份预制样例</text>
+<text x="93" y="1377" font-size="23" fill="#506b56" font-weight="400" data-width="500">提供起手布局和展示组件</text>
+<text x="93" y="1407" font-size="23" fill="#506b56" font-weight="400" data-width="500">原理：按任务加载参考与代码</text>
+<path d="M93 1421L591 1421" fill="none" stroke="#ccdac5" stroke-width="2"/>
+<text x="93" y="1451" font-size="28" fill="#173b30" font-weight="700" data-width="500">04  Tweaks 实时调参</text>
+<text x="93" y="1486" font-size="22" fill="#8d6122" font-weight="600" data-width="500">○ 文档 / 教学演示</text>
+<text x="93" y="1521" font-size="23" fill="#506b56" font-weight="400" data-width="500">调整预设颜色、字号、密度</text>
+<text x="93" y="1551" font-size="23" fill="#506b56" font-weight="400" data-width="500">浏览器可保存参数偏好</text>
+<text x="93" y="1581" font-size="23" fill="#506b56" font-weight="400" data-width="500">原理：前端状态 + localStorage</text>
+<rect x="90" y="1636" width="504" height="152" rx="7" fill="#e7eedc" stroke="none"/>
+<text x="108" y="1680" font-size="23" fill="#506b56" font-weight="400" data-width="468">规则需要模型执行，效果会波动。</text>
+<text x="108" y="1716" font-size="23" fill="#506b56" font-weight="400" data-width="468">多方向探索增加调用与修改成本。</text>
+<text x="108" y="1752" font-size="23" fill="#506b56" font-weight="400" data-width="468">预设参数调整不等于自动改回源码。</text>
+<rect x="642" y="792" width="544" height="1025" rx="12" fill="#ffffff" stroke="#ccdac5"/>
+<rect x="642" y="792" width="544" height="109" rx="12" fill="#e7eedc" stroke="none"/>
+<text x="665" y="836" font-size="31" fill="#173b30" font-weight="700" data-width="500">B / 视觉内容制作</text>
+<text x="665" y="876" font-size="23" fill="#506b56" font-weight="400" data-width="500">把材料组织成可见、可操作的内容</text>
+<text x="665" y="929" font-size="28" fill="#173b30" font-weight="700" data-width="500">05  交互原型</text>
+<text x="665" y="964" font-size="22" fill="#1d6246" font-weight="600" data-width="500">● 场景 / 手机框</text>
+<text x="665" y="999" font-size="23" fill="#506b56" font-weight="400" data-width="500">多屏界面、点击流程与状态</text>
+<text x="665" y="1029" font-size="23" fill="#506b56" font-weight="400" data-width="500">本次业务前端由任务编写</text>
+<text x="665" y="1059" font-size="23" fill="#506b56" font-weight="400" data-width="500">原理：HTML/React + 设备外框</text>
+<path d="M665 1073L1163 1073" fill="none" stroke="#ccdac5" stroke-width="2"/>
+<text x="665" y="1103" font-size="28" fill="#173b30" font-weight="700" data-width="500">06  浏览器幻灯片</text>
+<text x="665" y="1138" font-size="22" fill="#1d6246" font-weight="600" data-width="500">● deck-stage</text>
+<text x="665" y="1173" font-size="23" fill="#506b56" font-weight="400" data-width="500">多页讲解、键盘翻页与缩放</text>
+<text x="665" y="1203" font-size="23" fill="#506b56" font-weight="400" data-width="500">本次已有 6 页方案演讲稿</text>
+<text x="665" y="1233" font-size="23" fill="#506b56" font-weight="400" data-width="500">原理：页面内容 + 演讲外壳</text>
+<path d="M665 1247L1163 1247" fill="none" stroke="#ccdac5" stroke-width="2"/>
+<text x="665" y="1277" font-size="28" fill="#173b30" font-weight="700" data-width="500">07  信息图与数据可视化</text>
+<text x="665" y="1312" font-size="22" fill="#8d6122" font-weight="600" data-width="500">○ 文档 / 样例</text>
+<text x="665" y="1347" font-size="23" fill="#506b56" font-weight="400" data-width="500">图表、关系、概念与数据排版</text>
+<text x="665" y="1377" font-size="23" fill="#506b56" font-weight="400" data-width="500">可交付网页、静态图或 PDF</text>
+<text x="665" y="1407" font-size="23" fill="#506b56" font-weight="400" data-width="500">原理：HTML/CSS/SVG 或绘图库</text>
+<path d="M665 1421L1163 1421" fill="none" stroke="#ccdac5" stroke-width="2"/>
+<text x="665" y="1451" font-size="28" fill="#173b30" font-weight="700" data-width="500">08  时间轴动画</text>
+<text x="665" y="1486" font-size="22" fill="#1d6246" font-weight="600" data-width="500">● Stage / Sprite</text>
+<text x="665" y="1521" font-size="23" fill="#506b56" font-weight="400" data-width="500">按镜头组织进入、移动与转场</text>
+<text x="665" y="1551" font-size="23" fill="#506b56" font-weight="400" data-width="500">播放、暂停、任意时间定位</text>
+<text x="665" y="1581" font-size="23" fill="#506b56" font-weight="400" data-width="500">原理：画面 = 时间函数 render(t)</text>
+<rect x="662" y="1636" width="504" height="152" rx="7" fill="#e7eedc" stroke="none"/>
+<text x="680" y="1680" font-size="23" fill="#506b56" font-weight="400" data-width="468">软件界面可以成为可用的原型；</text>
+<text x="680" y="1716" font-size="23" fill="#506b56" font-weight="400" data-width="468">信息图、演讲内容可成为最终物料。</text>
+<text x="680" y="1752" font-size="23" fill="#506b56" font-weight="400" data-width="468">数据与统计正确性仍要单独核对。</text>
+<rect x="1214" y="792" width="544" height="1025" rx="12" fill="#ffffff" stroke="#ccdac5"/>
+<rect x="1214" y="792" width="544" height="109" rx="12" fill="#edf3fa" stroke="none"/>
+<text x="1237" y="836" font-size="31" fill="#173b30" font-weight="700" data-width="500">C / 导出、声音与媒体</text>
+<text x="1237" y="876" font-size="23" fill="#506b56" font-weight="400" data-width="500">按交付要求转换、配音和混音</text>
+<text x="1237" y="929" font-size="28" fill="#173b30" font-weight="700" data-width="500">09  PDF 定稿</text>
+<text x="1237" y="964" font-size="22" fill="#1d6246" font-weight="600" data-width="500">● 六页文件</text>
+<text x="1237" y="999" font-size="23" fill="#506b56" font-weight="400" data-width="500">浏览器打印并合并页面</text>
+<text x="1237" y="1029" font-size="23" fill="#506b56" font-weight="400" data-width="500">主体文字通常可提取</text>
+<text x="1237" y="1059" font-size="23" fill="#506b56" font-weight="400" data-width="500">原理：Playwright + pdf-lib</text>
+<path d="M1237 1073L1735 1073" fill="none" stroke="#ccdac5" stroke-width="2"/>
+<text x="1237" y="1103" font-size="28" fill="#173b30" font-weight="700" data-width="500">10  可编辑 PPTX</text>
+<text x="1237" y="1138" font-size="22" fill="#1d6246" font-weight="600" data-width="500">● 路线 A；B 未测</text>
+<text x="1237" y="1173" font-size="23" fill="#506b56" font-weight="400" data-width="500">A：DOM 测量后转原生对象</text>
+<text x="1237" y="1203" font-size="23" fill="#506b56" font-weight="400" data-width="500">B：渲染元素接企业模板</text>
+<text x="1237" y="1233" font-size="23" fill="#506b56" font-weight="400" data-width="500">原理：pptxgenjs / python-pptx</text>
+<path d="M1237 1247L1735 1247" fill="none" stroke="#ccdac5" stroke-width="2"/>
+<text x="1237" y="1277" font-size="28" fill="#173b30" font-weight="700" data-width="500">11  视频与其他格式</text>
+<text x="1237" y="1312" font-size="22" fill="#1d6246" font-weight="600" data-width="500">● MP4；其他未测</text>
+<text x="1237" y="1347" font-size="23" fill="#506b56" font-weight="400" data-width="500">MP4 / GIF；外部后端透明输出</text>
+<text x="1237" y="1377" font-size="23" fill="#506b56" font-weight="400" data-width="500">本次逐帧渲染 600 帧成片</text>
+<text x="1237" y="1407" font-size="23" fill="#506b56" font-weight="400" data-width="500">原理：seek 截图 / 录制 + 编码</text>
+<path d="M1237 1421L1735 1421" fill="none" stroke="#ccdac5" stroke-width="2"/>
+<text x="1237" y="1451" font-size="28" fill="#173b30" font-weight="700" data-width="500">12  配音、字幕与长解说</text>
+<text x="1237" y="1486" font-size="22" fill="#8d6122" font-weight="600" data-width="500">○ 未调用云服务</text>
+<text x="1237" y="1521" font-size="23" fill="#506b56" font-weight="400" data-width="500">解说稿分段配音、测量时长</text>
+<text x="1237" y="1551" font-size="23" fill="#506b56" font-weight="400" data-width="500">以音频时长安排画面与字幕</text>
+<text x="1237" y="1581" font-size="23" fill="#506b56" font-weight="400" data-width="500">原理：TTS + cue + 统一时间轴</text>
+<path d="M1237 1595L1735 1595" fill="none" stroke="#ccdac5" stroke-width="2"/>
+<text x="1237" y="1625" font-size="28" fill="#173b30" font-weight="700" data-width="500">13  背景音乐与动作音效</text>
+<text x="1237" y="1660" font-size="22" fill="#8d6122" font-weight="600" data-width="500">○ 脚本核对</text>
+<text x="1237" y="1695" font-size="23" fill="#506b56" font-weight="400" data-width="500">加入配乐、点击及转场音效</text>
+<text x="1237" y="1725" font-size="23" fill="#506b56" font-weight="400" data-width="500">混合旁白、配乐与音效</text>
+<text x="1237" y="1755" font-size="23" fill="#506b56" font-weight="400" data-width="500">原理：FFmpeg 裁切 / 音量 / 混音</text>
+<rect x="1786" y="792" width="544" height="1025" rx="12" fill="#ffffff" stroke="#ccdac5"/>
+<rect x="1786" y="792" width="544" height="109" rx="12" fill="#f8f0df" stroke="none"/>
+<text x="1809" y="836" font-size="31" fill="#173b30" font-weight="700" data-width="500">D / 评审与质量检查</text>
+<text x="1809" y="876" font-size="23" fill="#506b56" font-weight="400" data-width="500">发现问题，给出修改依据</text>
+<text x="1809" y="929" font-size="28" fill="#173b30" font-weight="700" data-width="500">14  设计评审</text>
+<text x="1809" y="964" font-size="22" fill="#8d6122" font-weight="600" data-width="500">○ 方法核对</text>
+<text x="1809" y="999" font-size="23" fill="#506b56" font-weight="400" data-width="500">判断概念与多维执行质量</text>
+<text x="1809" y="1029" font-size="23" fill="#506b56" font-weight="400" data-width="500">输出保留项、问题和修改建议</text>
+<text x="1809" y="1059" font-size="23" fill="#506b56" font-weight="400" data-width="500">原理：评审准则 + 模型判断</text>
+<path d="M1809 1073L2307 1073" fill="none" stroke="#ccdac5" stroke-width="2"/>
+<text x="1809" y="1103" font-size="28" fill="#173b30" font-weight="700" data-width="500">15  HTML 与媒体验证</text>
+<text x="1809" y="1138" font-size="22" fill="#8d6122" font-weight="600" data-width="500">○ 上游脚本核对</text>
+<text x="1809" y="1173" font-size="23" fill="#506b56" font-weight="400" data-width="500">截图、运行错误与媒体参数</text>
+<text x="1809" y="1203" font-size="23" fill="#506b56" font-weight="400" data-width="500">检查尺寸、时长、黑帧与音轨</text>
+<text x="1809" y="1233" font-size="23" fill="#506b56" font-weight="400" data-width="500">原理：浏览器自动化 + 媒体工具</text>
+<path d="M1809 1247L2307 1247" fill="none" stroke="#ccdac5" stroke-width="2"/>
+<text x="1809" y="1277" font-size="28" fill="#173b30" font-weight="700" data-width="500">16  AI 看片评审</text>
+<text x="1809" y="1312" font-size="22" fill="#8d6122" font-weight="600" data-width="500">○ 未调用云服务</text>
+<text x="1809" y="1347" font-size="23" fill="#506b56" font-weight="400" data-width="500">视频模型辅助看叙事与异常</text>
+<text x="1809" y="1377" font-size="23" fill="#506b56" font-weight="400" data-width="500">报告仍需对照片段人工复核</text>
+<text x="1809" y="1407" font-size="23" fill="#506b56" font-weight="400" data-width="500">原理：压缩 / 分段 + 外部模型</text>
+<rect x="1806" y="1487" width="504" height="302" rx="7" fill="#f8f0df" stroke="none"/>
+<text x="1824" y="1534" font-size="26" fill="#173b30" font-weight="700" data-width="466">检查成功 ≠ 全面质量保证</text>
+<text x="1824" y="1580" font-size="23" fill="#506b56" font-weight="400" data-width="466">模型评分不等于客观审美。</text>
+<text x="1824" y="1614" font-size="23" fill="#506b56" font-weight="400" data-width="466">脚本退出成功不代表内容完整。</text>
+<text x="1824" y="1648" font-size="23" fill="#506b56" font-weight="400" data-width="466">本次另做了独立文件与交互检查，</text>
+<text x="1824" y="1682" font-size="23" fill="#506b56" font-weight="400" data-width="466">不能据此声称上游检查器已实测。</text>
+<text x="1824" y="1716" font-size="23" fill="#506b56" font-weight="400" data-width="466">云服务需配置、授权和费用评估。</text>
+<text x="1824" y="1750" font-size="23" fill="#506b56" font-weight="400" data-width="466">3D / shader 属外部后端适配。</text>
+<text x="70" y="1890" font-size="27" fill="#1d6246" font-weight="700" data-width="70">03</text>
+<text x="138" y="1890" font-size="39" fill="#173b30" font-weight="700" data-width="1400">六类交付，来自不同路线</text>
+<text x="138" y="1933" font-size="25" fill="#506b56" font-weight="400" data-width="2130">六种是本轮成果，不是六个独立模型，也不是全部输出范围；交互与可编辑能力不会自动随转换保留。</text>
+<rect x="70" y="1968" width="2260" height="74" rx="8" fill="#e7eedc" stroke="none"/>
+<text x="91" y="2014" font-size="27" fill="#173b30" font-weight="700" data-width="220">原型路线</text>
+<text x="325" y="2014" font-size="25" fill="#506b56" font-weight="400" data-width="425">页面 + 事件 + 状态</text>
+<path d="M730 2004L780 2004" fill="none" stroke="#1d6246" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="812" y="2014" font-size="28" fill="#173b30" font-weight="600" data-width="710">① 桌面 / 手机交互原型</text>
+<text x="1550" y="2014" font-size="23" fill="#506b56" font-weight="400" data-width="744">关键流程真实可点；业务后端另建</text>
+<rect x="70" y="2054" width="2260" height="74" rx="8" fill="#edf3fa" stroke="none"/>
+<text x="91" y="2100" font-size="27" fill="#173b30" font-weight="700" data-width="220">汇报路线</text>
+<text x="325" y="2100" font-size="25" fill="#506b56" font-weight="400" data-width="425">受约束的幻灯片页面</text>
+<path d="M730 2090L780 2090" fill="none" stroke="#1d6246" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="812" y="2100" font-size="28" fill="#173b30" font-weight="600" data-width="710">② HTML 演讲稿 → ③ PDF / ④ PPTX</text>
+<text x="1550" y="2100" font-size="23" fill="#506b56" font-weight="400" data-width="744">PDF 固定版式；PPT 文字可改，截图仍是图片</text>
+<rect x="70" y="2140" width="2260" height="74" rx="8" fill="#e7eedc" stroke="none"/>
+<text x="91" y="2186" font-size="27" fill="#173b30" font-weight="700" data-width="220">动画路线</text>
+<text x="325" y="2186" font-size="25" fill="#506b56" font-weight="400" data-width="425">统一时间轴 + 镜头逻辑</text>
+<path d="M730 2176L780 2176" fill="none" stroke="#1d6246" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="812" y="2186" font-size="28" fill="#173b30" font-weight="600" data-width="710">⑤ 时间轴动画 → ⑥ MP4 成片</text>
+<text x="1550" y="2186" font-size="23" fill="#506b56" font-weight="400" data-width="744">动画可定位；成片便于播放，不保留交互</text>
+<text x="70" y="2308" font-size="27" fill="#1d6246" font-weight="700" data-width="70">04</text>
+<text x="138" y="2308" font-size="39" fill="#173b30" font-weight="700" data-width="1400">后期使用场景：从你的工作出发</text>
+<text x="138" y="2351" font-size="25" fill="#506b56" font-weight="400" data-width="2130">以下为建议用途，不代表这些业务系统或全部制作路线已经实现。</text>
+<rect x="70" y="2383" width="730" height="129" rx="9" fill="#ffffff" stroke="#ccdac5"/>
+<text x="93" y="2422" font-size="28" fill="#173b30" font-weight="700" data-width="680">开源项目研究与选型</text>
+<text x="93" y="2461" font-size="25" fill="#1d6246" font-weight="500" data-width="680">仓库资料 → 能力图 / 原型 / 汇报</text>
+<text x="93" y="2494" font-size="23" fill="#506b56" font-weight="400" data-width="680">用于讲解能力、比较用途、记录采用理由</text>
+<rect x="835" y="2383" width="730" height="129" rx="9" fill="#ffffff" stroke="#ccdac5"/>
+<text x="858" y="2422" font-size="28" fill="#173b30" font-weight="700" data-width="680">产品需求与方案评审</text>
+<text x="858" y="2461" font-size="25" fill="#1d6246" font-weight="500" data-width="680">需求、截图 → 点击原型 / 流程视频</text>
+<text x="858" y="2494" font-size="23" fill="#506b56" font-weight="400" data-width="680">先讨论操作与信息结构，再进入工程开发</text>
+<rect x="1600" y="2383" width="730" height="129" rx="9" fill="#ffffff" stroke="#ccdac5"/>
+<text x="1623" y="2422" font-size="28" fill="#173b30" font-weight="700" data-width="680">业务汇报与数据说明</text>
+<text x="1623" y="2461" font-size="25" fill="#1d6246" font-weight="500" data-width="680">真实数据 → 信息图 / PPT / PDF</text>
+<text x="1623" y="2494" font-size="23" fill="#506b56" font-weight="400" data-width="680">用于阶段汇报、复盘和可编辑说明材料</text>
+<rect x="70" y="2534" width="730" height="129" rx="9" fill="#ffffff" stroke="#ccdac5"/>
+<text x="93" y="2573" font-size="28" fill="#173b30" font-weight="700" data-width="680">课程、培训与知识讲解</text>
+<text x="93" y="2612" font-size="25" fill="#1d6246" font-weight="500" data-width="680">讲稿 → 演讲稿 / 解说与字幕视频</text>
+<text x="93" y="2645" font-size="23" fill="#506b56" font-weight="400" data-width="680">配音、字幕路线需额外配置和实际验证</text>
+<rect x="835" y="2534" width="730" height="129" rx="9" fill="#ffffff" stroke="#ccdac5"/>
+<text x="858" y="2573" font-size="28" fill="#173b30" font-weight="700" data-width="680">产品发布与品牌传播</text>
+<text x="858" y="2612" font-size="25" fill="#1d6246" font-weight="500" data-width="680">品牌素材 → 介绍页面 / 视觉图 / 短片</text>
+<text x="858" y="2645" font-size="23" fill="#506b56" font-weight="400" data-width="680">按渠道调整版式、镜头、音乐与字幕</text>
+<rect x="1600" y="2534" width="730" height="129" rx="9" fill="#ffffff" stroke="#ccdac5"/>
+<text x="1623" y="2573" font-size="28" fill="#173b30" font-weight="700" data-width="680">团队重复内容生产</text>
+<text x="1623" y="2612" font-size="25" fill="#1d6246" font-weight="500" data-width="680">模板、资料、验收 → 同类成果复用</text>
+<text x="1623" y="2645" font-size="23" fill="#506b56" font-weight="400" data-width="680">批量队列、协作、版本与权限需另外建设</text>
+<text x="70" y="2750" font-size="27" fill="#1d6246" font-weight="700" data-width="70">05</text>
+<text x="138" y="2750" font-size="39" fill="#173b30" font-weight="700" data-width="1400">可扩展方向：先沉淀复用资产，再接工具和系统</text>
+<text x="138" y="2793" font-size="25" fill="#506b56" font-weight="400" data-width="2130">扩展是继续开发与验证的方向，不应当作仓库已提供的完整平台功能。</text>
+<rect x="70" y="2825" width="730" height="112" rx="8" fill="#e7eedc" stroke="none"/>
+<text x="91" y="2860" font-size="28" fill="#173b30" font-weight="700" data-width="687">↗ 内容与任务</text>
+<text x="91" y="2894" font-size="24" fill="#1d6246" font-weight="500" data-width="687">研究报告 / 周报 / 课件</text>
+<text x="91" y="2923" font-size="22" fill="#506b56" font-weight="400" data-width="687">改任务路由、章节模板与 references</text>
+<rect x="835" y="2825" width="730" height="112" rx="8" fill="#e7eedc" stroke="none"/>
+<text x="856" y="2860" font-size="28" fill="#173b30" font-weight="700" data-width="687">↗ 品牌与资产</text>
+<text x="856" y="2894" font-size="24" fill="#1d6246" font-weight="500" data-width="687">Logo / 色板 / 字体 / 素材</text>
+<text x="856" y="2923" font-size="22" fill="#506b56" font-weight="400" data-width="687">建立 brand-spec 与事实来源约束</text>
+<rect x="1600" y="2825" width="730" height="112" rx="8" fill="#e7eedc" stroke="none"/>
+<text x="1621" y="2860" font-size="28" fill="#173b30" font-weight="700" data-width="687">↗ 页面与镜头组件</text>
+<text x="1621" y="2894" font-size="24" fill="#1d6246" font-weight="500" data-width="687">封面 / 图表 / 设备框 / 动画</text>
+<text x="1621" y="2923" font-size="22" fill="#506b56" font-weight="400" data-width="687">在 assets 中复用并测试组合行为</text>
+<rect x="70" y="2955" width="730" height="112" rx="8" fill="#e7eedc" stroke="none"/>
+<text x="91" y="2990" font-size="28" fill="#173b30" font-weight="700" data-width="687">↗ 真实数据接入</text>
+<text x="91" y="3024" font-size="24" fill="#1d6246" font-weight="500" data-width="687">CSV / JSON / 业务 API</text>
+<text x="91" y="3053" font-size="22" fill="#506b56" font-weight="400" data-width="687">增加数据适配、单位与空值校验</text>
+<rect x="835" y="2955" width="730" height="112" rx="8" fill="#e7eedc" stroke="none"/>
+<text x="856" y="2990" font-size="28" fill="#173b30" font-weight="700" data-width="687">↗ 导出与服务适配</text>
+<text x="856" y="3024" font-size="24" fill="#1d6246" font-weight="500" data-width="687">企业母版 / 新格式 / TTS 后端</text>
+<text x="856" y="3053" font-size="22" fill="#506b56" font-weight="400" data-width="687">约定对象、时间轴、返回值与降级</text>
+<rect x="1600" y="2955" width="730" height="112" rx="8" fill="#e7eedc" stroke="none"/>
+<text x="1621" y="2990" font-size="28" fill="#173b30" font-weight="700" data-width="687">↗ 验收与质量基准</text>
+<text x="1621" y="3024" font-size="24" fill="#1d6246" font-weight="500" data-width="687">文本 / 点击 / 图像 / 视频</text>
+<text x="1621" y="3053" font-size="22" fill="#506b56" font-weight="400" data-width="687">加入失败样例、回归检查与人工复核</text>
+<rect x="70" y="3095" width="2260" height="74" rx="9" fill="#173b30" stroke="none"/>
+<text x="94" y="3141" font-size="28" fill="#eff7e4" font-weight="700" data-width="520">第 7 层：业务平台另建</text>
+<text x="641" y="3141" font-size="26" fill="#d2e3c8" font-weight="400" data-width="1645">账户 / 权限 / 数据库 / 素材存储 / 任务队列 / 费用管理 / 协作与版本 / 部署运维</text>
+<text x="70" y="3245" font-size="27" fill="#1d6246" font-weight="700" data-width="70">06</text>
+<text x="138" y="3245" font-size="39" fill="#173b30" font-weight="700" data-width="1400">我们现在能确认什么</text>
+<text x="138" y="3288" font-size="25" fill="#506b56" font-weight="400" data-width="2130">只对固定版本与具体任务下结论，区分已有成果、未验证路线和未来工程。</text>
+<rect x="70" y="3320" width="730" height="225" rx="10" fill="#e7eedc" stroke="none"/>
+<text x="93" y="3365" font-size="29" fill="#173b30" font-weight="700" data-width="684">已实测的组件与产物</text>
+<text x="93" y="3407" font-size="24" fill="#506b56" font-weight="400" data-width="684">IosFrame、deck-stage、Stage/Sprite；</text>
+<text x="93" y="3443" font-size="24" fill="#506b56" font-weight="400" data-width="684">经明确适配的 PDF / PPTX / MP4 导出。</text>
+<text x="93" y="3479" font-size="24" fill="#506b56" font-weight="400" data-width="684">6 页汇报，39 个 PPT 文字对象，20 秒 MP4。</text>
+<text x="93" y="3515" font-size="24" fill="#506b56" font-weight="400" data-width="684">研选业务页面由本次任务编写。</text>
+<rect x="835" y="3320" width="730" height="225" rx="10" fill="#f8f0df" stroke="none"/>
+<text x="858" y="3365" font-size="29" fill="#173b30" font-weight="700" data-width="684">尚未实际运行的路线</text>
+<text x="858" y="3407" font-size="24" fill="#506b56" font-weight="400" data-width="684">完整 Skill 自动设计 / 评审闭环；</text>
+<text x="858" y="3443" font-size="24" fill="#506b56" font-weight="400" data-width="684">企业模板、TTS、字幕、混音、AI 看片；</text>
+<text x="858" y="3479" font-size="24" fill="#506b56" font-weight="400" data-width="684">HyperFrames、GIF、透明视频、3D/shader。</text>
+<text x="858" y="3515" font-size="24" fill="#506b56" font-weight="400" data-width="684">存在源码或文档，不等于本次已跑通。</text>
+<rect x="1600" y="3320" width="730" height="225" rx="10" fill="#edf3fa" stroke="none"/>
+<text x="1623" y="3365" font-size="29" fill="#173b30" font-weight="700" data-width="684">采用时重点判断</text>
+<text x="1623" y="3407" font-size="24" fill="#506b56" font-weight="400" data-width="684">材料是否真实，内容是否准确；</text>
+<text x="1623" y="3443" font-size="24" fill="#506b56" font-weight="400" data-width="684">是否便于修改，目标软件是否正常；</text>
+<text x="1623" y="3479" font-size="24" fill="#506b56" font-weight="400" data-width="684">返工、接入和维护成本是否值得；</text>
+<text x="1623" y="3515" font-size="24" fill="#506b56" font-weight="400" data-width="684">本轮未证明普遍的质量 / 效率提升。</text>
+<path d="M70 3577L2330 3577" fill="none" stroke="#ccdac5" stroke-width="2"/>
+<text x="70" y="3622" font-size="28" fill="#173b30" font-weight="600" data-width="2260">价值：把设计经验、内容结构和交付步骤积累下来；是否长期采用，要由真实任务与验收结果决定。</text>
+<text x="70" y="3667" font-size="22" fill="#506b56" font-weight="400" data-width="1900">来源：alchaincyf/huashu-design · 固定提交 0830494 · 本项目研究与实测记录 · 整理 2026-09-30</text>
+<text x="1960" y="3667" font-size="21" fill="#506b56" font-weight="400" data-width="370">放大阅读 / SVG 可选取文字</text>
+</g></svg>

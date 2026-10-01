@@ -1,0 +1,216 @@
+{
+  "revision": "77e7a3e21469dcbece2558086c8d91657abeaa40",
+  "file_count": 2478,
+  "bytes": 13433691,
+  "top_level": {
+    ".github": 2,
+    ".gitignore": 1,
+    "CLAUDE.md": 1,
+    "LICENSE": 1,
+    "README.md": 1,
+    "docs-readme": 15,
+    "docs": 1913,
+    "get_anthropic_logo.js": 1,
+    "package-lock.json": 1,
+    "package.json": 1,
+    "projects": 495,
+    "scripts": 6,
+    "skills": 39,
+    "tools": 1
+  },
+  "locales": [
+    "ar",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "pt-BR",
+    "ru",
+    "tr",
+    "uk",
+    "uz",
+    "vi",
+    "zh",
+    "zh-TW"
+  ],
+  "lectures": [
+    {
+      "number": 1,
+      "title": "强模型为什么仍会失败",
+      "purpose": "区分能力与执行可靠性；观察漏步骤、范围漂移、错误完成",
+      "path": "docs/en/lectures/lecture-01-why-capable-agents-still-fail/index.md",
+      "zh_path": "docs/zh/lectures/lecture-01-why-capable-agents-still-fail/index.md"
+    },
+    {
+      "number": 2,
+      "title": "Harness 到底是什么",
+      "purpose": "识别工作环境、状态与反馈；理解模型之外的执行条件",
+      "path": "docs/en/lectures/lecture-02-what-a-harness-actually-is/index.md",
+      "zh_path": "docs/zh/lectures/lecture-02-what-a-harness-actually-is/index.md"
+    },
+    {
+      "number": 3,
+      "title": "仓库作为事实记录",
+      "purpose": "把需求、决策和约束写进可读文件；减少会话外隐含知识",
+      "path": "docs/en/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/index.md",
+      "zh_path": "docs/zh/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/index.md"
+    },
+    {
+      "number": 4,
+      "title": "指令拆分与按需读取",
+      "purpose": "短入口指向专题文档，避免把所有内容塞进一个文件",
+      "path": "docs/en/lectures/lecture-04-why-one-giant-instruction-file-fails/index.md",
+      "zh_path": "docs/zh/lectures/lecture-04-why-one-giant-instruction-file-fails/index.md"
+    },
+    {
+      "number": 5,
+      "title": "跨会话连续性",
+      "purpose": "保存进度、未完成项和下一步，下一轮主动恢复",
+      "path": "docs/en/lectures/lecture-05-why-long-running-tasks-lose-continuity/index.md",
+      "zh_path": "docs/zh/lectures/lecture-05-why-long-running-tasks-lose-continuity/index.md"
+    },
+    {
+      "number": 6,
+      "title": "独立初始化阶段",
+      "purpose": "修改前确认环境和基线健康，明确启动与验证入口",
+      "path": "docs/en/lectures/lecture-06-why-initialization-needs-its-own-phase/index.md",
+      "zh_path": "docs/zh/lectures/lecture-06-why-initialization-needs-its-own-phase/index.md"
+    },
+    {
+      "number": 7,
+      "title": "控制任务范围",
+      "purpose": "一个明确任务、完成定义、影响范围与后续任务",
+      "path": "docs/en/lectures/lecture-07-why-agents-overreach-and-under-finish/index.md",
+      "zh_path": "docs/zh/lectures/lecture-07-why-agents-overreach-and-under-finish/index.md"
+    },
+    {
+      "number": 8,
+      "title": "功能清单与完成证据",
+      "purpose": "把验收要求结构化，避免只凭叙述修改完成状态",
+      "path": "docs/en/lectures/lecture-08-why-feature-lists-are-harness-primitives/index.md",
+      "zh_path": "docs/zh/lectures/lecture-08-why-feature-lists-are-harness-primitives/index.md"
+    },
+    {
+      "number": 9,
+      "title": "避免过早宣布完成",
+      "purpose": "核对可运行证据与清理状态，不以自信代替结果",
+      "path": "docs/en/lectures/lecture-09-why-agents-declare-victory-too-early/index.md",
+      "zh_path": "docs/zh/lectures/lecture-09-why-agents-declare-victory-too-early/index.md"
+    },
+    {
+      "number": 10,
+      "title": "完整链路与架构边界",
+      "purpose": "贯穿真实用户路径验证，避免只测局部成功",
+      "path": "docs/en/lectures/lecture-10-why-end-to-end-testing-changes-results/index.md",
+      "zh_path": "docs/zh/lectures/lecture-10-why-end-to-end-testing-changes-results/index.md"
+    },
+    {
+      "number": 11,
+      "title": "可观测性与评审反馈",
+      "purpose": "结构化日志、可重放场景、评审标准和任务契约",
+      "path": "docs/en/lectures/lecture-11-why-observability-belongs-inside-the-harness/index.md",
+      "zh_path": "docs/zh/lectures/lecture-11-why-observability-belongs-inside-the-harness/index.md"
+    },
+    {
+      "number": 12,
+      "title": "干净状态与持续维护",
+      "purpose": "结束检查、可恢复交接、清理和对照评估",
+      "path": "docs/en/lectures/lecture-12-why-every-session-must-leave-a-clean-state/index.md",
+      "zh_path": "docs/zh/lectures/lecture-12-why-every-session-must-leave-a-clean-state/index.md"
+    },
+    {
+      "number": 13,
+      "title": "目标循环、定时循环和独立检查",
+      "purpose": "把驱动步骤显式化，加入状态、停止条件和预算",
+      "path": "docs/en/lectures/lecture-13-loop-engineering/index.md",
+      "zh_path": "docs/zh/lectures/lecture-13-loop-engineering/index.md"
+    },
+    {
+      "number": 14,
+      "title": "从循环到图编排",
+      "purpose": "节点、边、共享状态、条件路由、并行与恢复设计",
+      "path": "docs/en/lectures/lecture-14-graph-engineering/index.md",
+      "zh_path": "docs/zh/lectures/lecture-14-graph-engineering/index.md"
+    }
+  ],
+  "projects": [
+    {
+      "number": 1,
+      "title": "提示驱动与最小规则对照",
+      "purpose": "对同一任务比较纯提示和规则环境",
+      "delivery": "starter / solution 完整目录",
+      "path": "docs/en/projects/project-01-baseline-vs-minimal-harness/index.md"
+    },
+    {
+      "number": 2,
+      "title": "Agent 可读工作区",
+      "purpose": "整理入口、架构/产品文档与状态文件",
+      "delivery": "starter / solution 完整目录",
+      "path": "docs/en/projects/project-02-agent-readable-workspace/index.md"
+    },
+    {
+      "number": 3,
+      "title": "多会话接续",
+      "purpose": "通过进度和交接恢复未完成任务",
+      "delivery": "starter / solution 完整目录",
+      "path": "docs/en/projects/project-03-multi-session-continuity/index.md"
+    },
+    {
+      "number": 4,
+      "title": "增量索引与范围反馈",
+      "purpose": "实现增量索引并检查架构边界",
+      "delivery": "starter / solution 完整目录",
+      "path": "docs/en/projects/project-04-incremental-indexing/index.md"
+    },
+    {
+      "number": 5,
+      "title": "评审角色对照",
+      "purpose": "同一 ConversationHistory 功能的单角色、生成+评审、规划+生成+评审对照",
+      "delivery": "starter + 三个独立 solution 变体",
+      "path": "docs/en/projects/project-05-grounded-qa-verification/index.md"
+    },
+    {
+      "number": 6,
+      "title": "完整 Harness 综合练习",
+      "purpose": "已有产品上对比弱/完整规则，观察日志和维护能力",
+      "delivery": "starter / solution 完整目录",
+      "path": "docs/en/projects/project-06-runtime-observability-and-debugging/index.md"
+    },
+    {
+      "number": 7,
+      "title": "自动循环练习",
+      "purpose": "目标循环、定时检查、实现者与检查者分离",
+      "delivery": "只有课程说明；projects/project-07 不存在",
+      "path": "docs/en/projects/project-07-loop-engineering-first-loop/index.md"
+    },
+    {
+      "number": 8,
+      "title": "工作流程图练习",
+      "purpose": "显式图、并行汇合、回退与人工节点",
+      "delivery": "只有课程说明与 L14 骨架；projects/project-08 不存在",
+      "path": "docs/en/projects/project-08-graph-engineering-first-graph/index.md"
+    }
+  ],
+  "lecture_code": [
+    "docs/en/lectures/lecture-01-why-capable-agents-still-fail/code/failure-pattern-demo.ts",
+    "docs/en/lectures/lecture-02-what-a-harness-actually-is/code/harness-vs-no-harness.ts",
+    "docs/en/lectures/lecture-02-what-a-harness-actually-is/code/minimal-harness-loop.ts",
+    "docs/en/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/code/repo-reader.ts",
+    "docs/en/lectures/lecture-04-why-one-giant-instruction-file-fails/code/split-vs-monolithic.ts",
+    "docs/en/lectures/lecture-05-why-long-running-tasks-lose-continuity/code/session-simulator.ts",
+    "docs/en/lectures/lecture-06-why-initialization-needs-its-own-phase/code/init-check.ts",
+    "docs/en/lectures/lecture-06-why-initialization-needs-its-own-phase/code/init.sh",
+    "docs/en/lectures/lecture-07-why-agents-overreach-and-under-finish/code/scope-tracker.ts",
+    "docs/en/lectures/lecture-08-why-feature-lists-are-harness-primitives/code/feature-list-validator.ts",
+    "docs/en/lectures/lecture-09-why-agents-declare-victory-too-early/code/victory-detector.ts",
+    "docs/en/lectures/lecture-10-why-end-to-end-testing-changes-results/code/e2e-runner.ts",
+    "docs/en/lectures/lecture-11-why-observability-belongs-inside-the-harness/code/runtime-logger.ts",
+    "docs/en/lectures/lecture-12-why-every-session-must-leave-a-clean-state/code/benchmark-runner.ts",
+    "docs/en/lectures/lecture-12-why-every-session-must-leave-a-clean-state/code/cleanup-scanner.ts",
+    "docs/en/lectures/lecture-14-graph-engineering/code/maker_checker_graph.py"
+  ],
+  "capability_count": 38,
+  "reading_scope": "全部路径/字节/Git blob SHA 核对；独立功能分类、核心代码和中英文内容核对；非所有翻译逐句审校。"
+}

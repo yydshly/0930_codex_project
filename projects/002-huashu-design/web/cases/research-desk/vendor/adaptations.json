@@ -1,0 +1,86 @@
+[
+  {
+    "file": "scripts/export_deck_pdf.mjs",
+    "from": "import path from 'path';",
+    "to": "import path from 'path';\nimport { pathToFileURL } from 'url';",
+    "reason": "Use Windows-safe file URLs"
+  },
+  {
+    "file": "scripts/export_deck_pdf.mjs",
+    "from": "chromium.launch()",
+    "to": "chromium.launch({ executablePath: process.env.HUASHU_CHROME || 'C:/Program Files/Google/Chrome/Application/chrome.exe' })",
+    "reason": "Use installed Chromium"
+  },
+  {
+    "file": "scripts/export_deck_pdf.mjs",
+    "from": "'file://' + path.join(slidesDir, f)",
+    "to": "pathToFileURL(path.join(slidesDir, f)).href",
+    "reason": "Encode paths correctly"
+  },
+  {
+    "file": "scripts/html2pptx.js",
+    "from": "const path = require('path');",
+    "to": "const path = require('path');\nconst { pathToFileURL, fileURLToPath } = require('url');",
+    "reason": "Windows file URL helpers"
+  },
+  {
+    "file": "scripts/html2pptx.js",
+    "from": "chromium.launch(launchOptions)",
+    "to": "chromium.launch({...launchOptions, ...{ executablePath: process.env.HUASHU_CHROME || 'C:/Program Files/Google/Chrome/Application/chrome.exe' }})",
+    "reason": "Use installed Chromium"
+  },
+  {
+    "file": "scripts/html2pptx.js",
+    "from": "return p.replace(/^file:\\/\\//, '');",
+    "to": "return p.startsWith('file:') ? fileURLToPath(p) : p;",
+    "reason": "Decode Windows image URLs without leaving a leading slash"
+  },
+  {
+    "file": "scripts/html2pptx.js",
+    "from": "'file://' + absHtmlPath",
+    "to": "pathToFileURL(absHtmlPath).href",
+    "reason": "Encode paths correctly"
+  },
+  {
+    "file": "scripts/export_deck_pptx.mjs",
+    "from": "await html2pptx(fullPath, pres);",
+    "to": "const { slide } = await html2pptx(fullPath, pres);\n      const notesFile=fullPath.replace(/\\.html$/,'.notes.txt');\n      try { slide.addNotes(await fs.readFile(notesFile,'utf8')); } catch(e) { if(e.code!=='ENOENT')throw e; }",
+    "reason": "Attach authored speaker notes and source citations"
+  },
+  {
+    "file": "scripts/export_deck_pptx.mjs",
+    "from": "if (errors.length === files.length) {",
+    "to": "if (errors.length > 0) {",
+    "reason": "Fail if any slide is missing instead of delivering an incomplete deck"
+  },
+  {
+    "file": "scripts/render-video-seek.js",
+    "from": "const path = require('path');",
+    "to": "const path = require('path');\nconst { pathToFileURL } = require('url');",
+    "reason": "Windows file URL helpers"
+  },
+  {
+    "file": "scripts/render-video-seek.js",
+    "from": "chromium.launch()",
+    "to": "chromium.launch({ executablePath: process.env.HUASHU_CHROME || 'C:/Program Files/Google/Chrome/Application/chrome.exe' })",
+    "reason": "Use installed Chromium"
+  },
+  {
+    "file": "scripts/render-video-seek.js",
+    "from": "'file://' + HTML_ABS",
+    "to": "pathToFileURL(HTML_ABS).href",
+    "reason": "Encode paths correctly"
+  },
+  {
+    "file": "scripts/render-video-seek.js",
+    "from": "const MP4_OUT  =",
+    "to": "if (path.dirname(path.resolve(TMP_DIR)) !== path.resolve(DIR) || !path.basename(TMP_DIR).startsWith('.seek-tmp-')) throw Error('Unsafe temporary directory');\nconst MP4_OUT  =",
+    "reason": "Verify recursive cleanup remains in its intended directory"
+  },
+  {
+    "file": "assets/animations.jsx",
+    "from": "window.innerHeight - 56",
+    "to": "window.innerHeight - (window.__recording ? 0 : 56)",
+    "reason": "During video capture the hidden control bar must not reserve 56px, avoiding black borders. Normal interactive playback is unchanged."
+  }
+]
