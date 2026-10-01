@@ -34,4 +34,4 @@ python projects/003-learn-harness-engineering/scripts/build_research.py
 
 ## 部署状态
 
-通过研究集现有 GitHub Pages 流程发布，公开地址验证后登记到 projects.json。网页使用相对静态路径，由统一打包流程收集；源码和文档维护在本子项目中，完整上游源代码只位于忽略缓存。
+2026-10-01 已通过研究集 GitHub Pages 流程发布：[公开阅读网页](https://yydshly.github.io/0930_codex_project/projects/003-learn-harness-engineering/)。网页与引导图等 8 个资源均返回 HTTP 200，内容与已发布 Git 文件逐字节一致，另核对了研究集首页摘要与封面；共 9 项线上检查。公开地址已登记到 projects.json。网页使用相对静态路径，由统一打包流程收集；源码和文档维护在本子项目中，完整上游源代码只位于忽略缓存。

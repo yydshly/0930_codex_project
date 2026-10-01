@@ -11,7 +11,7 @@
 | 上游许可 | [MIT，Copyright (c) 2025 WalkingLab](https://github.com/walkinglabs/learn-harness-engineering/blob/77e7a3e21469dcbece2558086c8d91657abeaa40/LICENSE) |
 | 研究状态 | 本轮能力全量分类、源码核查及限定范围实测已完成 |
 | 阅读网页 | [本地能力手册](web/index.html)，支持能力搜索、筛选、课程导航、阅读全部笔记和打印 |
-| 在线部署 | 已接入研究集 GitHub Pages 发布流程；本次部署验证完成后登记公开入口 |
+| 在线部署 | [公开阅读网页](https://yydshly.github.io/0930_codex_project/projects/003-learn-harness-engineering/) · [一图总览](https://yydshly.github.io/0930_codex_project/projects/003-learn-harness-engineering/#map)，2026-10-01 已验证 |
 | 核查边界 | 2,478 个文件完整索引与哈希校验；按独立功能研究，未逐句审校全部翻译 |
 
 ## 我们的理解

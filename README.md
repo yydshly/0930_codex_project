@@ -16,7 +16,7 @@
 | --- | --- | --- | --- | --- | --- |
 | 001 | [witr · 运行来源诊断](projects/001-witr/README.md) | 能力：追溯进程、端口、文件与容器来源；原理：系统数据/API/命令采集，加父进程链与来源规则；运行：CLI、TUI、JSON；平台：Linux、Windows、macOS、FreeBSD；场景：端口冲突、残留服务、文件占用；价值：减少手工关联，新增底层能力有限；扩展：JSON 集成、本地 Web/MCP、定制规则与独立历史采集。 | 已完成 | [pranshuparmar/witr](https://github.com/pranshuparmar/witr) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/001-witr/) |
 | 002 | [Huashu Design · 设计能力研究](projects/002-huashu-design/README.md) | 能力：设计探索、原型、幻灯片、信息图、动画、声音与检查；产物：HTML、PDF、可编辑 PPTX、MP4 等；原理：Skill 与参考指导模型，浏览器渲染，组件/脚本执行；场景：研究、评审、汇报、培训与传播；价值：复用制作经验；扩展：品牌、模板、数据、导出和验收。 | 已完成 | [alchaincyf/huashu-design](https://github.com/alchaincyf/huashu-design) | — |
-| 003 | [Learn Harness Engineering · AI 工作流程研究](projects/003-learn-harness-engineering/README.md) | 定位：学习 AI Agent 工作流程的课程与实践资料；内容：14 讲课程、8 项练习说明、规则/任务/进度/验收模板，附 1 个 Skill、生成与检查脚本和教学示例；用途：理解 Agent、组织持续开发与跨会话任务；价值：少重复解释、少返工、凭证据验收；扩展：领域模板、真实测试、状态恢复及自动循环/多 Agent，需自行接入执行环境。 | 已完成 | [walkinglabs/learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | — |
+| 003 | [Learn Harness Engineering · AI 工作流程研究](projects/003-learn-harness-engineering/README.md) | 定位：学习 AI Agent 工作流程的课程与实践资料；内容：14 讲课程、8 项练习说明、规则/任务/进度/验收模板，附 1 个 Skill、生成与检查脚本和教学示例；用途：理解 Agent、组织持续开发与跨会话任务；价值：少重复解释、少返工、凭证据验收；扩展：领域模板、真实测试、状态恢复及自动循环/多 Agent，需自行接入执行环境。 | 已完成 | [walkinglabs/learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/003-learn-harness-engineering/) |
 
 <!-- PROJECT_INDEX:END -->
 
@@ -54,7 +54,7 @@
 
 ![Learn Harness Engineering · AI 工作流程研究 项目引导图](projects/003-learn-harness-engineering/assets/harness-capability-map.png)
 
-[研究详情](projects/003-learn-harness-engineering/README.md)
+[研究详情](projects/003-learn-harness-engineering/README.md) · [在线演示](https://yydshly.github.io/0930_codex_project/projects/003-learn-harness-engineering/)
 
 <!-- PROJECT_PREVIEWS:END -->
 
