@@ -1,0 +1,252 @@
+{
+  "scope": "本地研究展示与三个上游预制封面；非上游完整生成/导出验收",
+  "checks": [
+    {
+      "name": "上游 pentagram HTML 可渲染",
+      "passed": true
+    },
+    {
+      "name": "上游 build HTML 可渲染",
+      "passed": true
+    },
+    {
+      "name": "上游 takram HTML 可渲染",
+      "passed": true
+    },
+    {
+      "name": "概览有真实内容",
+      "passed": true
+    },
+    {
+      "name": "overview 导航与章节",
+      "passed": true
+    },
+    {
+      "name": "overview 桌面无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "capabilities 导航与章节",
+      "passed": true
+    },
+    {
+      "name": "capabilities 桌面无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "lab 导航与章节",
+      "passed": true
+    },
+    {
+      "name": "lab 桌面无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "gallery 导航与章节",
+      "passed": true
+    },
+    {
+      "name": "gallery 桌面无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "architecture 导航与章节",
+      "passed": true
+    },
+    {
+      "name": "architecture 桌面无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "exports 导航与章节",
+      "passed": true
+    },
+    {
+      "name": "exports 桌面无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "extensions 导航与章节",
+      "passed": true
+    },
+    {
+      "name": "extensions 桌面无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "boundaries 导航与章节",
+      "passed": true
+    },
+    {
+      "name": "boundaries 桌面无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "sources 导航与章节",
+      "passed": true
+    },
+    {
+      "name": "sources 桌面无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "16 项能力",
+      "passed": true
+    },
+    {
+      "name": "能力搜索命中",
+      "passed": true
+    },
+    {
+      "name": "搜索空态",
+      "passed": true
+    },
+    {
+      "name": "详情对话框",
+      "passed": true
+    },
+    {
+      "name": "Esc 关闭详情",
+      "passed": true
+    },
+    {
+      "name": "原型收藏状态",
+      "passed": true
+    },
+    {
+      "name": "第一页不能向前",
+      "passed": true
+    },
+    {
+      "name": "幻灯片翻页",
+      "passed": true
+    },
+    {
+      "name": "键盘翻页与尾页边界",
+      "passed": true
+    },
+    {
+      "name": "时间轴可定位",
+      "passed": true
+    },
+    {
+      "name": "播放推进时间",
+      "passed": true
+    },
+    {
+      "name": "时间轴归零",
+      "passed": true
+    },
+    {
+      "name": "调参刷新持久化",
+      "passed": true
+    },
+    {
+      "name": "调参可重置",
+      "passed": true
+    },
+    {
+      "name": "零值图形长度正确",
+      "passed": true
+    },
+    {
+      "name": "概念不足总评封顶",
+      "passed": true
+    },
+    {
+      "name": "概念通过解除封顶",
+      "passed": true
+    },
+    {
+      "name": "60 项风格索引",
+      "passed": true
+    },
+    {
+      "name": "按媒介筛选风格",
+      "passed": true
+    },
+    {
+      "name": "三张上游截图加载",
+      "passed": true
+    },
+    {
+      "name": "导出路线选择",
+      "passed": true
+    },
+    {
+      "name": "脚本索引数量",
+      "passed": true
+    },
+    {
+      "name": "overview 手机无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "capabilities 手机无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "lab 手机无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "gallery 手机无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "architecture 手机无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "exports 手机无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "extensions 手机无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "boundaries 手机无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "sources 手机无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "prototype 手机实验无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "slides 手机实验无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "motion 手机实验无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "tweaks 手机实验无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "infographic 手机实验无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "review 手机实验无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "200% 基准字体无页面溢出",
+      "passed": true
+    },
+    {
+      "name": "无页面 JavaScript 异常",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "browser": "154.0.8037.58",
+  "font_mode": "离线字体回退；外部请求均阻止"
+}

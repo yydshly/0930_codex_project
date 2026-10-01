@@ -1,0 +1,70 @@
+{
+  "checks": [
+    {
+      "check": "viewer loads",
+      "pass": true
+    },
+    {
+      "check": "image loads",
+      "pass": true
+    },
+    {
+      "check": "zoom in",
+      "pass": true
+    },
+    {
+      "check": "original size",
+      "pass": true
+    },
+    {
+      "check": "fit width",
+      "pass": true
+    },
+    {
+      "check": "chapter navigation",
+      "pass": true,
+      "detail": {
+        "actual": 1892,
+        "expected": 1892
+      }
+    },
+    {
+      "check": "map entry index.html",
+      "pass": true
+    },
+    {
+      "check": "map entry cases/research-desk/index.html#understanding",
+      "pass": true
+    },
+    {
+      "check": "mobile no page overflow",
+      "pass": true
+    },
+    {
+      "check": "mobile can pan enlarged map",
+      "pass": true
+    },
+    {
+      "check": "linked asset images/huashu-capability-map.svg",
+      "pass": true
+    },
+    {
+      "check": "linked asset images/huashu-capability-map.png",
+      "pass": true
+    },
+    {
+      "check": "linked asset reference.html",
+      "pass": true
+    },
+    {
+      "check": "no browser errors",
+      "pass": true
+    },
+    {
+      "check": "SVG labels fit allotted width and canvas",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": []
+}
