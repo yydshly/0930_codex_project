@@ -86,6 +86,23 @@ def link(label, target):
     return f"[{markdown(label)}]({quote(target, safe='/:#?=&%+@~-')})"
 
 
+def summary_markdown(value, table=False):
+    # Only split before a labelled module; semicolons within prose stay intact.
+    modules = re.split(r"；\s*(?=[\u4e00-\u9fff]{2,8}：)", value)
+    formatted = []
+    for module in modules:
+        match = re.match(r"^([\u4e00-\u9fff]{2,8})：(.*)$", module.strip())
+        if match:
+            formatted.append(f"**{match[1]}：** {markdown(match[2])}")
+        else:
+            formatted.append(markdown(module.strip()))
+    if table:
+        return "<br>".join(formatted)
+    if len(formatted) == 1 and not formatted[0].startswith("**"):
+        return formatted[0]
+    return "\n".join(f"- {module}" for module in formatted)
+
+
 def render_readme(root, projects):
     rows = ["| 编号 | 项目 / 研究文档 | 能力、原理与使用摘要 | 状态 | 源库 | 演示 |",
             "| --- | --- | --- | --- | --- | --- |"]
@@ -94,11 +111,11 @@ def render_readme(root, projects):
         path = project_path(project)
         entry = link(project["name"], f"{path}/README.md")
         demo = link("在线演示", project["demo"]) if project["demo"] else "—"
-        rows.append(f"| {project['id']:03d} | {entry} | {markdown(project['summary'])} | "
+        rows.append(f"| {project['id']:03d} | {entry} | {summary_markdown(project['summary'], table=True)} | "
                     f"{project['status']} | {link(urlsplit(project['repo']).path.strip('/'), project['repo'])} | {demo} |")
         if project["cover"]:
             previews.append(f"### {project['id']:03d} · {markdown(project['name'])}\n\n"
-                            f"{markdown(project['summary'])}\n\n"
+                            f"{summary_markdown(project['summary'])}\n\n"
                             f"源库：{link(urlsplit(project['repo']).path.strip('/'), project['repo'])}。先阅读下方引导图，再进入研究文档与交互演示。\n\n"
                             f"!{link(project['name'] + ' 项目引导图', path + '/' + project['cover'])}\n\n"
                             f"{link('研究详情', path + '/README.md')}"
