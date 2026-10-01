@@ -54,8 +54,10 @@ python -m http.server 8766 --bind 127.0.0.1 --directory projects/002-huashu-desi
 
 从仓库根运行 python projects/002-huashu-design/scripts/check_demo.py。环境要求及结果见 [复现记录](../notes/reproduction.md)。
 
-## 将来部署
+## 在线部署
 
-当前未发布。页面使用相对资源与 hash 章节，可适配子路径。reference.html 已汇总 Markdown 资料并改写内部链接，web/ 可以单独携带；部署时保留 images/、upstream/ 和 reference.html。检查结果与许可全文均嵌入 reference.html，verification.json 是额外的机器可读副本。不要将尚未验证的公网地址写入 projects.json。
+已发布至 [GitHub Pages](https://yydshly.github.io/0930_codex_project/projects/002-huashu-design/)，使用仓库统一的 Pages 工作流。2026-10-01 公网 40 项检查通过：主页面、全景图、全部 PDF/PPT 预览页、成果下载、手机布局和图像缩放；PDF/PPTX/MP4 与本地原件的 SHA-256 一致。
+
+页面使用相对资源与 hash 章节，可适配子路径。部署保留 images/、upstream/、reference.html 和 cases/ 下的预览、下载文件、组件及许可证。检查与上游许可全文包含在 reference.html。
 
 [返回研究入口](../README.md)

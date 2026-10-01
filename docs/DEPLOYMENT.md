@@ -6,6 +6,8 @@
 
 - [研究集首页](https://yydshly.github.io/0930_codex_project/)
 - [witr 研究与交互演示](https://yydshly.github.io/0930_codex_project/projects/001-witr/)
+- [Huashu Design 能力研究与真实成果](https://yydshly.github.io/0930_codex_project/projects/002-huashu-design/)
+- [Huashu Design 能力、原理、场景与扩展全景图](https://yydshly.github.io/0930_codex_project/projects/002-huashu-design/capability-map.html)
 
 2026-09-29：witr 首页、子页面、全景引导图、脚本和样式均已验证 HTTP 200；GitHub Actions 的检查与部署成功。网页为模拟教学，不扫描访客电脑。
 
@@ -14,6 +16,8 @@
 2026-10-01：[Learn Harness Engineering 阅读网页](https://yydshly.github.io/0930_codex_project/projects/003-learn-harness-engineering/)已发布，[能力引导图](https://yydshly.github.io/0930_codex_project/projects/003-learn-harness-engineering/#map)可在线查看和下载。内容定位为学习 AI Agent 工作流程的课程与实践资料，附 Skill、模板及辅助工具；网页说明何时使用、采用价值、能力边界和扩展方向。
 
 本地阅读页面 52 项检查通过；公开网页、脚本、样式、索引、记录、PNG/SVG 共 8 个资源返回 HTTP 200 并与发布文件一致，研究集首页摘要与封面也已核对。详见 [线上验证记录](../projects/003-learn-harness-engineering/notes/deployment-checks.json)。
+
+2026-10-01：Huashu Design 公开网页、全景引导图、六类成果、12 张 PDF/PPT 逐页预览与下载通过 40 项检查。PDF/PPTX/MP4 的 SHA-256 与本地实测原件一致；检查与 Pages 发布成功。记录见 [部署检查](../projects/002-huashu-design/notes/deployment-checks.json)。
 
 ## 自动发布
 

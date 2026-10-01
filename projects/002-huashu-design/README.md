@@ -4,7 +4,7 @@
 
 ![Huashu Design 能力、原理、场景与扩展引导图](assets/huashu-capability-map.png)
 
-[放大阅读全景图](web/capability-map.html) · [矢量 SVG](web/images/huashu-capability-map.svg) · [六类真实成果](web/cases/research-desk/index.html)
+[在线放大阅读全景图](https://yydshly.github.io/0930_codex_project/projects/002-huashu-design/capability-map.html) · [矢量 SVG](web/images/huashu-capability-map.svg) · [六类真实成果](web/cases/research-desk/index.html)
 
 ## 我们的理解汇总
 
@@ -36,7 +36,7 @@
 | 本地展示 | [能力研究室](web/index.html) |
 | 真实场景 | [研选展厅](web/cases/research-desk/index.html)：可点击原型、六页幻灯片、PDF、PPTX、时间轴与 MP4 |
 | 可浏览资料 | [完整研究手册](web/reference.html)，汇总十份资料并支持打印 |
-| 在线部署 | 未部署；清单 demo 保持空值 |
+| 在线部署 | [能力研究室](https://yydshly.github.io/0930_codex_project/projects/002-huashu-design/) · [六类真实成果](https://yydshly.github.io/0930_codex_project/projects/002-huashu-design/cases/research-desk/)；2026-10-01 公网 40 项检查通过 |
 
 ## 阅读入口
 
@@ -52,6 +52,7 @@
 | 品牌、模板、组件、数据与平台扩展 | [扩展实践指南](notes/extension-guide.md) |
 | 如何表达真实任务 | [任务说明示例](notes/task-examples.md) |
 | 实测范围、环境与可复现步骤 | [复现与验证记录](notes/reproduction.md) |
+| 公网发布与原件一致性 | [部署检查记录](notes/deployment-checks.json) |
 | 展示的运行与维护 | [Web 说明](web/README.md) |
 
 ## 核心结论
