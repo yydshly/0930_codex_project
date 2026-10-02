@@ -1,6 +1,8 @@
 # 004 · Rhythm Drop · 音乐型声音与视听体验研究
 
-[公开研究摘要与实验演示](https://yydshly.github.io/0930_codex_project/projects/004-rhythm-drop/) · [线上验证记录](notes/deployment-checks.json)
+[公开研究摘要与实验演示](https://yydshly.github.io/0930_codex_project/projects/004-rhythm-drop/) · [本次线上验证记录](notes/deployment-checks-20261002.json) · [首次发布记录](notes/deployment-checks.json)
+
+2026-10-02 发布提交 `4224ea0`，GitHub Pages 部署成功，52 个线上页面与资源均返回 200 并与提交字节一致。
 
 本次整理补充了从孩子与音乐游戏，到原创角色系列和复杂情绪故事的研究转向。完整见 [最新理解汇总](notes/research-synthesis.md)；旧版本和原始反馈继续保留。
 
