@@ -49,3 +49,14 @@ v0.9 声音生态修改前保存 `research-20261001-154352-571028.zip`（323 文
 v0.10 回声花园修改前保存 `research-20261001-161451-322682.zip`（339 文件，校验通过）。新产品入口在 8941 的 `/garden/drift/`，源码、服务端、测试、产品说明和截图随完成后快照保存。业务数据库在被忽略的 `projects/004-rhythm-drop/build/drift/`，不进入研究 ZIP，也没有把私人录音或身份凭据并入研究材料；其保存与恢复规则见 [回声花园说明](../projects/004-rhythm-drop/notes/echo-garden.md)。
 
 v0.11 体验重做前保存 `research-20261001-171624-115497.zip`（363 文件，校验通过）。完整 v0.10 的三个运行文件冻结在 `projects/004-rhythm-drop/web/garden/drift/versions/v0.10/`，源码冻结在 `projects/004-rhythm-drop/versions/v0.10/`。本轮审视截图、原创音乐、湖岸素材及生成提示随研究保存；社区身份与私人音频仍留在原本机服务，没有并入研究 ZIP。
+
+
+## 补充研究与发布 · 2026-10-02
+
+004 继续从小孩子的社会映射与音乐操场，推进到原创“回声小队”、固定角色系列及复杂情绪表演。[最新理解汇总](../projects/004-rhythm-drop/notes/research-synthesis.md)保留目标、反馈、研究转向和制作边界；[研究沿革](../projects/004-rhythm-drop/notes/research-map.md)追加新阶段，没有覆盖旧结论。
+
+新增公开入口：[52 秒《那句没说完的问候》与角色／互动](https://yydshly.github.io/0930_codex_project/projects/004-rhythm-drop/echo/)、[冻结的 20 秒初稿](https://yydshly.github.io/0930_codex_project/projects/004-rhythm-drop/echo/versions/v2/)、[50 秒儿童故事](https://yydshly.github.io/0930_codex_project/projects/004-rhythm-drop/children/)、[音乐操场](https://yydshly.github.io/0930_codex_project/projects/004-rhythm-drop/children/game/)。配乐 WAV、角色参考图、生成提示词、源码和测试一并保留；第一季第二至五集只是规划。
+
+此前本机快照包括 `build/echo-crew-20261002-024627.zip`、`build/echo-crew-v2-20261002-110206.zip` 与 `build/echo-crew-v3-20261002-113743.zip`，最后一份包含 223 个 004 文件，CRC 与逐文件 SHA-256 已核对。ZIP 留在本机，公开 Git 保存研究文件和各版静态演示；不包含浏览器存储或私人社区数据。
+
+最新实现为角色参考图、程序化模型、原创合成配乐与实时浏览器动画，没有完成的视频文件或真人配音。58 项 Node 测试和 9870 项原生投影检查对应时序、声音与构图；浏览器实际视听与触摸验收尚未完成，角色记忆、儿童适用性和产品价值均待观众验证。发布继续沿用 GitHub Pages，真人声音社区仍在本机服务。

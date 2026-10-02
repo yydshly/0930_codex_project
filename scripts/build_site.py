@@ -32,6 +32,9 @@ def build(root=ROOT):
                     and not any(part.startswith(".") or part == "node_modules"
                                 for part in asset.relative_to(source).parts)
                     and (case_export or asset.suffix.lower() in {".html", ".css", ".js", ".svg", ".png", ".jpg", ".webp", ".woff2"}
+                         or (project["slug"] == "rhythm-drop"
+                             and relative_asset.parts[0] == "echo"
+                             and asset.suffix.lower() == ".wav")
                          or asset.name in {"THREE-LICENSE.txt", "app.js.LEGAL.txt"})):
                 target = destination / asset.relative_to(source)
                 target.parent.mkdir(parents=True, exist_ok=True)

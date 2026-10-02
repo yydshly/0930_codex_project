@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f4efdf"><title>一起跳 · 小小音乐操场</title><link rel="stylesheet" href="./style.css"></head>
+<body><div class="shell">
+<header><a class="logo" href="../"><span>♪</span> 小小音乐操场<small>一起跳</small></a><div class="tools"><button id="restart" title="从头玩" aria-label="从头开始游戏">↻ 重来</button><button id="mute" aria-pressed="false" aria-label="关闭声音">♫ 声音开</button></div></header>
+<main>
+<div class="journey" aria-label="故事进度"><span data-chapter="0" aria-current="step"><i>1</i>我会跳</span><b>· · ·</b><span data-chapter="1"><i>2</i>你一句，我一句</span><b>· · ·</b><span data-chapter="2"><i>3</i>一起跳</span></div>
+<section class="playground" aria-label="音乐操场"><div id="stage" role="img" aria-label="四个小伙伴与五块彩色音乐地砖"></div>
+<div class="scene-caption"><span id="scene-label">给每个小伙伴，留一个位置</span><span id="who">木木 · 钢琴</span></div>
+<div id="intro" class="intro"><div><p>小小的脚步，也能唱歌。</p><h1>一起跳！</h1><span>你跳一个音，朋友就接住它。</span><button id="start" disabled>正在准备操场…</button><small>点地砖就能玩 · 声音由你开启</small></div></div>
+<div id="pause-screen" class="intro" hidden><div><h2>我们在这里等你</h2><button id="resume">继续一起跳</button></div></div>
+<div id="celebration" class="celebration" hidden><span>♪</span><span>♫</span><span>♪</span><span>✦</span></div>
+</section>
+<section class="coach" aria-label="小伙伴的提示"><span id="speaker" class="speaker">小禾</span><div><h2 id="message">你好，木木！想一起玩吗？</h2><p id="instruction">先点「一起玩」，再踩下面的彩色地砖。</p></div><span id="counter" class="counter" aria-label="本段完成进度">♪</span></section>
+<div id="phrase" class="phrase" aria-label="正在演奏的旋律"></div>
+<div class="sound-tiles" aria-label="五块音乐地砖"><button data-tile="0" style="--tile:#dea37c" disabled aria-label="橙色地砖，哆"><span>♪</span><b>哆</b><small>1</small></button><button data-tile="1" style="--tile:#b2c49c" disabled aria-label="绿色地砖，来"><span>♪</span><b>来</b><small>2</small></button><button data-tile="2" style="--tile:#a9bfcd" disabled aria-label="蓝色地砖，咪"><span>♪</span><b>咪</b><small>3</small></button><button data-tile="3" style="--tile:#d4a5b0" disabled aria-label="粉色地砖，嗦"><span>♪</span><b>嗦</b><small>4</small></button><button data-tile="4" style="--tile:#d7c284" disabled aria-label="黄色地砖，啦"><span>♪</span><b>啦</b><small>5</small></button></div>
+<section id="keepsake" class="keepsake" hidden><div><span class="mini-label">我们的第一首小曲</span><p id="melody-name">木木与朋友们</p><small id="save-state">这段旋律留在这台设备上。</small></div><div class="keep-actions"><button id="listen">♫ 听听我们的歌</button><button id="free">再编一首</button></div></section>
+<p id="status" class="status" role="status" aria-live="polite">正在准备小伙伴与声音…</p>
+<div id="last-song" class="last-song" hidden><span>上次的小曲，还在这里。</span><button id="listen-saved">♫ 听一听</button></div>
+</main><footer><span>没有倒计时，慢慢来。<span class="keyboard">也可以按 1—5 跳跃。</span></span><a href="../../echo/">原创角色《回声小队》 ↗</a><a href="../">看《借一个节拍给你》 ↗</a></footer>
+</div><script type="module">import('./app.js').catch(error=>{document.querySelector('#status').textContent='操场加载失败，请刷新后再试。';console.error(error);});</script></body></html>

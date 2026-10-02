@@ -2,7 +2,7 @@
   "name": "rhythm-drop-tooling",
   "private": true,
   "type": "module",
-  "scripts": { "build": "node build.mjs", "test": "node --test ../tests/*.test.mjs" },
+  "scripts": { "build": "node build.mjs", "test": "node --test ../tests/*.test.mjs", "check:echo-scene": "node check-echo-scene.mjs" },
   "dependencies": { "three": "0.180.0" },
   "devDependencies": { "esbuild": "0.25.10" }
 }

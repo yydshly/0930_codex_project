@@ -10,6 +10,29 @@ from build_site import build
 
 
 class StaticSiteTests(unittest.TestCase):
+    def test_echo_public_soundtracks_ship_and_private_audio_stays_excluded(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            project = root / "projects/004-rhythm-drop"
+            web = project / "web"
+            (web / "echo/versions/v2").mkdir(parents=True)
+            (web / "echo/.private").mkdir()
+            (web / "garden/drift").mkdir(parents=True)
+            (project / "README.md").write_text("Research", encoding="utf-8")
+            (web / "index.html").write_text("Research", encoding="utf-8")
+            for relative in ["echo/unfinished-greeting.wav", "echo/versions/v2/kongkong-story.wav",
+                             "echo/.private/voice.wav", "garden/drift/private-recording.wav"]:
+                (web / relative).write_bytes(b"soundtrack")
+            (root / "projects.json").write_text(json.dumps([dict(
+                id=4, slug="rhythm-drop", name="Rhythm Drop", repo="https://github.com/mrdoob/three.js",
+                summary="Music research", status="已归档", demo="", cover="")]), encoding="utf-8")
+            build(root)
+            output = root / "_site/projects/004-rhythm-drop"
+            self.assertEqual((output / "echo/unfinished-greeting.wav").read_bytes(), b"soundtrack")
+            self.assertTrue((output / "echo/versions/v2/kongkong-story.wav").is_file())
+            self.assertFalse((output / "echo/.private/voice.wav").exists())
+            self.assertFalse((output / "garden/drift/private-recording.wav").exists())
+
     def test_bundle_has_subpath_entry_and_excludes_private_files(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

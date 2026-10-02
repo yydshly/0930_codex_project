@@ -35,6 +35,16 @@ jobs:
           node --check projects/004-rhythm-drop/web/garden/app.js
           node --check projects/004-rhythm-drop/web/garden/ecosystem/app.js
           node --check projects/004-rhythm-drop/web/garden/drift/app.js
+          node --check projects/004-rhythm-drop/web/children/app.js
+          node --check projects/004-rhythm-drop/web/children/game/app.js
+          node --check projects/004-rhythm-drop/web/echo/app.js
+          node --test projects/004-rhythm-drop/tests/children.test.mjs
+          node --test projects/004-rhythm-drop/tests/playground.test.mjs
+          node --test projects/004-rhythm-drop/tests/playground-runtime.test.mjs
+          node --test projects/004-rhythm-drop/tests/echo.test.mjs
+          node --test projects/004-rhythm-drop/tests/echo-direction.test.mjs
+          node --test projects/004-rhythm-drop/tests/echo-emotion.test.mjs
+          node --test projects/004-rhythm-drop/tests/echo-runtime.test.mjs
           node --test projects/004-rhythm-drop/tests/timeline.test.mjs
           node --test projects/004-rhythm-drop/tests/stories.test.mjs
           node --test projects/004-rhythm-drop/tests/direction.test.mjs
