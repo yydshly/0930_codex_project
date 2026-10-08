@@ -128,3 +128,14 @@ GitHub Pages 不运行 Python、Node.js 等后端，也不能从浏览器直接�
 深蓝议会提供场景预览；月湾接力支持真实路线制图。房间同步、投票和异步接棒仍依赖本机后端，公开页不调用访客本机服务。原作与官方参考继续使用外部链接；浏览器原有本机存档不会自动跨域迁移。源码、网页、研究说明、验收材料和 108 份引用或回归所需原素材已提交；未引用的原始下载、模型与制作中间文件留在本机，并记录路径、大小和哈希，不影响公开网页资源完整性。
 
 详情：[发布记录](../projects/010-dumpling-style-lab/notes/deployment-summary.json)、[全量文件核对](../projects/010-dumpling-style-lab/notes/publication-online-checks-20261008.json)、[浏览器检查](../projects/010-dumpling-style-lab/notes/publication-online-browser-20261008.json)与[原素材范围](../projects/010-dumpling-style-lab/notes/publication-source-scope-20261008.json)。
+
+
+## 网页破坏交互研究完整发布
+
+2026-10-08：[完整研究与全部演示入口](https://yydshly.github.io/0930_codex_project/projects/009-sprite-destruction-lab/#entries)已发布。研究集首页按定位、能力、产物、原理、场景、价值、扩展和边界显示摘要，沿用已有 3600 × 3800 [完整研究图](https://yydshly.github.io/0930_codex_project/projects/009-sprite-destruction-lab/research/overview.png)，图像内容与 SHA-256 均不变。
+
+九个页面完整发布：总览、六效果 / 三场景、头像出逃、跨站实录、本页无引擎样本、六类产品原型、独立工具箱、安装说明与许可。入口前置六组实际预览，逐个提供六项产品、四项工具、两个扩展包、录像、原作、源码和完整研究文档。原作游戏、本地独立引擎、角色 / 浏览器适配与另建工具分别说明；原作公开破坏 SDK 未确认。
+
+`scripts/sprite_publish.py`保留全部运行资源、实际 GitHub 录像和两个审阅过的扩展包，生成公开文件清单。Pages 检查、构建与部署成功；62 个公开文件 HTTP 200，大小及 SHA-256 与构建结果一致。22 项公网研究页检查、11 项实际体验检查及 15 项总入口 / 既有页面检查通过，包括录像播放、实时碎片与复原、PNG 下载、表格读取、所有工具路由和手机布局。详见[发布记录](../projects/009-sprite-destruction-lab/notes/publication-20261008.md)。
+
+头像身体与动作预设，截图仅当前视口；旧 GitHub 视频由真实浏览器运行和脚本操作产生，测试临时放开截图权限，正式包的人工授权手势未在录像验证。翻译依赖外部服务且可能限流；本机和公开网站的浏览器存储互不迁移。App、联机、营销核销和整页采集后端仍未实现。
