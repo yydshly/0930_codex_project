@@ -96,5 +96,12 @@
   ],
   "case10ExperienceDownload": "C:\\Users\\yun68\\Downloads\\case-10-体验记录 (4).json",
   "guideDownload": "C:\\Users\\yun68\\Downloads\\creative-products-capability-overview-v16.png",
-  "scope": "All ten prototypes ready, actual case10 start/jump and JSON, original PNG download, 390/320 page layouts. Does not repeat full gameplay/quality validation or prove real device performance."
+  "scope": "All ten prototypes ready, actual case10 start/jump and JSON, original PNG download, 390/320 page layouts. Does not repeat full gameplay/quality validation or prove real device performance.",
+  "navigation": {
+    "case01DeepLink": true,
+    "overviewToCase03AndBack": true,
+    "entryReturnsToVisibleOverview": true,
+    "case06UnderstandingDeepLink": true,
+    "note": "View changes and corresponding content verified through browser DOM; lazy screenshots can settle after initial loading."
+  }
 }

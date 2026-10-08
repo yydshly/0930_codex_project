@@ -114,7 +114,7 @@
     mediaSlowTimer=setTimeout(()=>{if(!connected()||video.currentTime>0)return;status.hidden=false;status.innerHTML=`<span>仍在等待媒体，可稍候或重新加载。</span><div class="media-actions"><button type="button" id="play-original">重试</button><a href="${escape(item.url)}" target="_blank" rel="noreferrer">原帖 ↗</a></div>`;},12000);
     video.play().catch(()=>{if(connected()&&!video.error){clearTimeout(mediaSlowTimer);waiting('请点击播放器的播放键继续。');stage.setAttribute('aria-busy','false');}});
   }
-  function scrollRoute(){const hash=location.hash.slice(1);const target=hash.startsWith('demo-')?'#demo-stage':hash.startsWith('case-')?'#view-cases':['effects','cases','capabilities','products','demo'].includes(hash)?'#view-'+hash:null;if(target)$(target)?.scrollIntoView({block:'start',behavior:'instant'});}
+  function scrollRoute(){const hash=location.hash.slice(1);const target=hash.startsWith('demo-')?'#demo-stage':hash.startsWith('case-')?'#view-cases':['effects','cases','capabilities','products','demo'].includes(hash)?'#view-'+hash:['overview','entries'].includes(hash)?'#'+hash:null;if(target)$(target)?.scrollIntoView({block:'start',behavior:'instant'});}
   document.addEventListener('click',event=>{const link=event.target.closest('a');if(!link)return;const hash=link.getAttribute('href');if(!/^#(effects|cases|capabilities|products|demo|demo-\d+|case-\d+)$/.test(hash||''))return;event.preventDefault();navigate(hash);requestAnimationFrame(scrollRoute);});
   document.addEventListener('click',event=>{const button=event.target.closest('button');if(!button)return;
     if(button.dataset.demoId){navigate('#demo-'+number(button.dataset.demoId));$('#demo-stage').scrollIntoView({block:'start'});return;}
