@@ -4,6 +4,8 @@
 
 **网页入口：** [总览与全部展示](web/index.html) · [完整理解](web/understanding.html) · [放大原有全景图](web/map.html) · [原理与向量教学示意](web/mechanisms.html) · [14 组来源与研究记录](web/sources.html)。原站与源库的链接在网页首屏及参考区分别展示。
 
+**已验证公开入口：** [完整研究网页](https://yydshly.github.io/0930_codex_project/projects/013-insightface-retrieval/) · [原图放大与下载](https://yydshly.github.io/0930_codex_project/projects/013-insightface-retrieval/map.html) · [原理示意](https://yydshly.github.io/0930_codex_project/projects/013-insightface-retrieval/mechanisms.html)。2026-10-08 初次发布的九个正式文件哈希与 63 项公网浏览器检查通过，详见 [发布记录](notes/publication.md)。
+
 | 信息 | 内容 |
 | --- | --- |
 | 主要源库 | [deepinsight/insightface](https://github.com/deepinsight/insightface) |

@@ -139,3 +139,14 @@ GitHub Pages 不运行 Python、Node.js 等后端，也不能从浏览器直接�
 `scripts/sprite_publish.py`保留全部运行资源、实际 GitHub 录像和两个审阅过的扩展包，生成公开文件清单。Pages 检查、构建与部署成功；62 个公开文件 HTTP 200，大小及 SHA-256 与构建结果一致。22 项公网研究页检查、11 项实际体验检查及 15 项总入口 / 既有页面检查通过，包括录像播放、实时碎片与复原、PNG 下载、表格读取、所有工具路由和手机布局。详见[发布记录](../projects/009-sprite-destruction-lab/notes/publication-20261008.md)。
 
 头像身体与动作预设，截图仅当前视口；旧 GitHub 视频由真实浏览器运行和脚本操作产生，测试临时放开截图权限，正式包的人工授权手势未在录像验证。翻译依赖外部服务且可能限流；本机和公开网站的浏览器存储互不迁移。App、联机、营销核销和整页采集后端仍未实现。
+
+
+## InsightFace 与视觉检索完整理解发布
+
+2026-10-08：[完整研究入口](https://yydshly.github.io/0930_codex_project/projects/013-insightface-retrieval/) · [原有全景图](https://yydshly.github.io/0930_codex_project/projects/013-insightface-retrieval/map.html) · [原理教学示意](https://yydshly.github.io/0930_codex_project/projects/013-insightface-retrieval/mechanisms.html)。总首页分项说明定位、能力、原理、展示、场景、价值、参考、扩展与边界，显著提供全文、图像、教学和全部来源入口。
+
+完整发布五个页面：总览、全文理解、全景图、原理示意、来源与讨论 / 制作 / 发布记录。引导使用 2026-10-02 的原有 2400 × 3620 PNG / SVG，内容及 SHA-256 保持不变；不使用原站截图冒充自产效果。原理页使用人工设定向量解释余弦排序、阈值和库外目标拒识，没有运行实际人脸模型或上传照片。AVScan 为需求参考，其后台与 InsightFace 的关联未确认。
+
+`scripts/insightface_publish.py` 发布九个正式运行文件并生成清单，全文由项目 `scripts/build_web.py` 从 README 与笔记生成；原站、六种产品 / 开源方案和全部十四组来源均有明确入口。首次内容提交 `95d0d3e458362b64d72f66b2589c6f1889ac10a4` 的 [Pages 检查、构建与部署](https://github.com/yydshly/0930_codex_project/actions/runs/37768632806)成功。九个文件 HTTP 200、大小及哈希与本地构建一致，十三个总首页 / 既有项目 / 新入口可访问，63 项公网浏览器检查全部通过。
+
+详情：[发布范围](../projects/013-insightface-retrieval/notes/publication.md)、[文件核对](../projects/013-insightface-retrieval/notes/deployment-checks.json)、[线上浏览器检查](../projects/013-insightface-retrieval/notes/publication-browser-online.json)和[发布摘要](../projects/013-insightface-retrieval/notes/deployment-summary.json)。检查的是资料完整性与页面交互，真实识别效果和商业收益仍未实测。

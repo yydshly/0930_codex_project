@@ -103,7 +103,9 @@ function sha(bytes) {return crypto.createHash('sha256').update(bytes).digest('he
     check('public asset HTTP errors',failedResponses.length===0,{failedResponses});
     check('no visitor-local model requests',unexpectedLocalRequests.length===0,{unexpectedLocalRequests});
     const result={date:'2026-10-08',base:base.href,phase,realRecognitionTest:false,checks,passed:checks.filter(item=>item.pass).length,total:checks.length};
-    fs.writeFileSync(path.join(project,'notes',`publication-browser-${phase}.json`),JSON.stringify(result,null,2)+'\n');
+    const report=process.argv[4] ? path.resolve(process.argv[4]) : path.join(project,'notes',`publication-browser-${phase}.json`);
+    fs.mkdirSync(path.dirname(report),{recursive:true});
+    fs.writeFileSync(report,JSON.stringify(result,null,2)+'\n');
     console.log(JSON.stringify({phase,passed:result.passed,total:result.total,failures:checks.filter(item=>!item.pass)},null,2));
     if(result.passed!==result.total) process.exitCode=1;
   } finally {await browser.close();}

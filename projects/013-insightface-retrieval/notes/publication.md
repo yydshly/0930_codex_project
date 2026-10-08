@@ -6,11 +6,11 @@
 
 | 页面 | 内容 |
 | --- | --- |
-| [总览与全部入口](web/index.html) | 显著显示原有图、完整理解、教学示意、实际价值与六种相关产品 / 开源参考 |
-| [完整理解](web/understanding.html) | 研究 README 的所有章节，保留能力、原理、场景、可参考价值、个人可行性与边界 |
-| [全景图](web/map.html) | 原有图的适应宽度、原尺寸、缩放与 PNG / SVG 下载 |
-| [原理示意](web/mechanisms.html) | 三任务路线、离线建库 / 在线查询、特征训练、人工向量余弦排序、阈值与库外目标拒识 |
-| [来源与记录](web/sources.html) | 14 组一手来源、全部讨论脉络、原图制作记录与网页发布范围 |
+| [总览与全部入口](../web/index.html) | 显著显示原有图、完整理解、教学示意、实际价值与六种相关产品 / 开源参考 |
+| [完整理解](../web/understanding.html) | 研究 README 的所有章节，保留能力、原理、场景、可参考价值、个人可行性与边界 |
+| [全景图](../web/map.html) | 原有图的适应宽度、原尺寸、缩放与 PNG / SVG 下载 |
+| [原理示意](../web/mechanisms.html) | 三任务路线、离线建库 / 在线查询、特征训练、人工向量余弦排序、阈值与库外目标拒识 |
+| [来源与记录](../web/sources.html) | 14 组一手来源、全部讨论脉络、原图制作记录与网页发布范围 |
 
 数值教学的向量由人工设置，身份标签是假定示例。此处可操作的展示不是 InsightFace 推理结果，不证明真实人物检索精度。AVScan 的后台实现、速度与收入没有测试，也未确认其使用 InsightFace。
 
@@ -21,7 +21,7 @@
 - PNG SHA-256：`791356db37e49495938f32bc80efe785b13016f24050a59191aeb110e6bd02d6`
 - SVG SHA-256：`29501b30789718dc17944fcf754f139f9ad64d0f7b8c371e9b8d6c5072ac4ec4`
 
-发布器只打包五个 HTML、CSS、JS 与两张原图，共九个正式文件，另生成 [公开文件清单](publication-manifest.json)。全部运行资源在本站托管，无需调用上游服务即可阅读与操作示意；原站和源库通过明显的外部链接访问。
+发布器只打包五个 HTML、CSS、JS 与两张原图，共九个正式文件，另生成 [公开文件清单](https://yydshly.github.io/0930_codex_project/projects/013-insightface-retrieval/publication-manifest.json)。全部运行资源在本站托管，无需调用上游服务即可阅读与操作示意；原站和源库通过明显的外部链接访问。
 
 ## 检查方式与范围
 
@@ -30,3 +30,11 @@
 浏览器检查覆盖桌面 / 手机排版、页面与图像、内部链接、原尺寸与键盘缩放、真实 PNG / SVG 下载及哈希、三种任务切换、候选排序与阈值、移除目标后的无匹配结果、运行错误和访客本机服务请求。材料保存在 `notes/publication-browser-local.json` 和部署后的在线检查记录中。
 
 没有运行真实人脸模型或处理真人图库。检索精度、吞吐、覆盖范围、授权适用性及商业收益仍需具体采用时另行核对和验证。
+
+## 已验证的公开发布
+
+2026-10-08：[完整公开入口](https://yydshly.github.io/0930_codex_project/projects/013-insightface-retrieval/)已经验证。首次内容提交 `95d0d3e458362b64d72f66b2589c6f1889ac10a4` 的 [Pages 检查、构建与部署](https://github.com/yydshly/0930_codex_project/actions/runs/37768632806)和目录检查成功。
+
+九个正式文件 HTTP 200，大小与 SHA-256 均与本地构建一致；PNG / SVG 下载与原图哈希相同。研究集首页、001–011 既有项目及 013 共十三个入口可访问；总首页的分项摘要、全景图和四个阅读 / 展示入口已核对。公网浏览器检查 63 项全部通过，含五页桌面 / 手机阅读、所有内部链接和锚点、真实下载及教学交互。
+
+[线上文件核对](deployment-checks.json) · [线上浏览器检查](publication-browser-online.json) · [发布摘要](deployment-summary.json)。上述验收对应完整资料与教学网页，不是识别效果验收。

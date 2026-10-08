@@ -14,4 +14,4 @@ python -m http.server 8939 --bind 127.0.0.1 --directory _site
 
 打开 `http://127.0.0.1:8939/projects/013-insightface-retrieval/`。网页生成和打包只依赖 Python 标准库，阅读不需要外部运行服务。不要仅独立复制 `web/`，因为原图由发布器从项目 `assets/` 一起打包。
 
-共享 GitHub Pages 工作流发布后，核对全部公开文件、原图哈希、链接锚点、桌面 / 手机阅读、PNG / SVG 下载与教学交互，再更新项目清单中的公开地址。验证材料存于项目 `notes/`。
+2026-10-08 已通过共享 GitHub Pages 工作流发布。九个正式文件的 HTTP 200、大小与 SHA-256 及 63 项公网浏览器检查通过；项目清单回填已验证地址。验证材料存于项目 `notes/`，原图未改变，识别效果没有实测。

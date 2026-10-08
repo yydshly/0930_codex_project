@@ -1,5 +1,7 @@
 # GitHub 项目研究集
 
+[013 完整检索理解与全部入口](https://yydshly.github.io/0930_codex_project/projects/013-insightface-retrieval/) · [原有全景图放大](https://yydshly.github.io/0930_codex_project/projects/013-insightface-retrieval/map.html) · [原理教学示意](https://yydshly.github.io/0930_codex_project/projects/013-insightface-retrieval/mechanisms.html)：区分找人、找出处与语义检索，保留源库能力、完整说明、实际价值与 14 组来源。
+
 [011 完整交互研究与产品展示](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/) · [全景理解图](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/understanding-map.html) · [文字理解汇总](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/understanding.html)：原站效果、技能、业务场景、马桶与耳机、制作及交付工作台共用完整入口。
 
 持续收录值得研究的开源项目，记录它们解决的问题、核心设计、运行过程和可复用的经验。每个子项目独立整理研究笔记、界面截图与演示，首页只保留摘要和入口。
@@ -27,7 +29,7 @@
 | 009 | [Sprite Destruction Lab · 网页破坏交互研究](projects/009-sprite-destruction-lab/README.md) | **定位：** 从 Destroy Any Website 游戏出发研究网页内容互动，原作公开破坏 SDK 未确认<br>**能力：** 六种效果、三个场景、头像出逃与可安装跨站扩展，保留真实 GitHub 录像<br>**产物：** 动效 PNG/WebM、对比报告、维护记录、CSV 故事、品牌作品册、嵌入组件，以及独立翻译/摘录/表格工具<br>**原理：** DOM 重建或视口截图、纹理切片、二维刚体/粒子/遮罩、角色编排与事件<br>**场景：** 内容制作、品牌角色、可玩展示、碰撞教学和网页效率<br>**价值：** 复用现有内容与交互接口，明确区分效果能力、产品任务和另建工具<br>**扩展：** 角色素材、时间线、组件化、自有 WebView 与业务接入<br>**边界：** 身体动作预设，仅当前视口；App、多人和营销后端待开发，翻译依赖外部服务，尚无商业收益验证。 | 已完成 | [Destroy Any Website · 原作游戏](https://destroy.spritefusion.com/)<br>技术：[liabru/matter-js](https://github.com/liabru/matter-js) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/009-sprite-destruction-lab/) |
 | 010 | [Dumpling Style Lab · 游戏方向与参与形式研究](projects/010-dumpling-style-lab/README.md) | **定位：** 从 Dumpling Dell 出发，研究让玩家愿意参与的游戏方向、视角、操作与展现形式<br>**能力：** 107 种形式样例与原有九款短篇，共 116 个展示入口，15 个独立方向另列<br>**展示：** 六类主入口、代表性实机截图、原作体验、20 种早期材质、3 段小体验和历史画风版本<br>**原理：** Canvas 2D、Three.js 真实三维、规则与状态机、碰撞与车辆物理、浏览器独立存档<br>**参考：** 开源游戏分类目录与官方作品体验，用于发现方向、比较质量和筛选可复用源码<br>**价值：** 积累可运行样例、参与方式对照、素材与技术路径，帮助后续选题和原型验证<br>**扩展：** 12 项后续方向已记录，当前暂停新增试玩<br>**边界：** 现有内容为研究样例，画面质量和游戏深度不等于商业成品，多人房间与异步接力仍需本机后端，存档不会自动迁移到公网。 | 已归档 | [Dumpling Dell · 原作网页](https://dumpling-dell.pages.dev/)<br>公开仓库未确认 | [在线演示](https://yydshly.github.io/0930_codex_project/projects/010-dumpling-style-lab/) |
 | 011 | [Combination Soup Studio · 交互展示与业务价值](projects/011-combination-soup-studio/README.md) | **定位：** 以交互官网为参考，拆解效果并沉淀可复用的产品体验与交付方法<br>**能力：** 五项效果、四类技能、三类业务场景，马桶与耳机完整产品页、目标及交付工作台<br>**原理：** 素材与浏览器事件驱动画面和状态，Canvas与Three.js/WebGL承担二维及三维，配置贯穿PNG、JSON、简报和ZIP<br>**场景：** 品牌活动、产品解释与选配、区域服务查询、庭院方案评审<br>**价值：** 帮助理解、比较和保留选择，便于团队复用与继续制作<br>**扩展：** 按新品类补齐事实、视觉标杆、资产、交互和验收，逐步建立质量修正闭环<br>**边界：** 原站开源许可未确认，当前为概念原型，在线模型与任意产品自动交付未验收，商业收益未实测。 | 已完成 | [Combination Soup Studio · 官网案例](https://combinationsoupstudio.com.au/)<br>公开仓库未确认 | [在线演示](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/) |
-| 013 | [InsightFace · 人脸与视频截图检索理解](projects/013-insightface-retrieval/README.md) | **定位：** 人脸身份检索与视频截图出处查找的完整理解<br>**能力：** InsightFace 检测、对齐、身份向量、训练与评测<br>**原理：** ArcFace 等方法训练网络，目标库保存特征与来源，索引排序后校准阈值并拒识<br>**展示：** 原有全景图、全文说明、三任务路线及人工向量排序示意，14 组来源与记录<br>**场景：** 图库找人、素材归组、已收录视频画面定位与内容检索<br>**价值：** 复用现成模型与检索技术，减少人工翻找，判断个人原型可行性<br>**参考：** AVScan、SSCD、Faiss、trace.moe、TwelveLabs 的分工<br>**扩展：** 代表性样本验证、质量过滤、索引更新与候选复核<br>**边界：** 识人不等于找出处，公开成绩不等于实际效果，未确认 AVScan 使用 InsightFace；未做真实识别，官方权重非商业研究条件需另核。 | 已完成 | [AVScan · 需求参考，后台实现未确认](https://avscan.cc/)<br>能力参考：[deepinsight/insightface](https://github.com/deepinsight/insightface)<br>后台关联未确认 | — |
+| 013 | [InsightFace · 人脸与视频截图检索理解](projects/013-insightface-retrieval/README.md) | **定位：** 人脸身份检索与视频截图出处查找的完整理解<br>**能力：** InsightFace 检测、对齐、身份向量、训练与评测<br>**原理：** ArcFace 等方法训练网络，目标库保存特征与来源，索引排序后校准阈值并拒识<br>**展示：** 原有全景图、全文说明、三任务路线及人工向量排序示意，14 组来源与记录<br>**场景：** 图库找人、素材归组、已收录视频画面定位与内容检索<br>**价值：** 复用现成模型与检索技术，减少人工翻找，判断个人原型可行性<br>**参考：** AVScan、SSCD、Faiss、trace.moe、TwelveLabs 的分工<br>**扩展：** 代表性样本验证、质量过滤、索引更新与候选复核<br>**边界：** 识人不等于找出处，公开成绩不等于实际效果，未确认 AVScan 使用 InsightFace；未做真实识别，官方权重非商业研究条件需另核。 | 已完成 | [AVScan · 需求参考，后台实现未确认](https://avscan.cc/)<br>能力参考：[deepinsight/insightface](https://github.com/deepinsight/insightface)<br>后台关联未确认 | [在线演示](https://yydshly.github.io/0930_codex_project/projects/013-insightface-retrieval/) |
 
 <!-- PROJECT_INDEX:END -->
 
@@ -226,7 +228,7 @@
 
 ![InsightFace · 人脸与视频截图检索理解 项目引导图](projects/013-insightface-retrieval/assets/understanding-map.png)
 
-[研究详情](projects/013-insightface-retrieval/README.md)
+[研究详情](projects/013-insightface-retrieval/README.md) · [在线演示](https://yydshly.github.io/0930_codex_project/projects/013-insightface-retrieval/)
 
 <!-- PROJECT_PREVIEWS:END -->
 
