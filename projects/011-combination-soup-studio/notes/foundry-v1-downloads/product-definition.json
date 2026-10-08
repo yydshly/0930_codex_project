@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "1.0",
+  "product": {
+    "schemaVersion": "1.0",
+    "template": "product",
+    "name": "LUMA · 桌灯配置",
+    "idea": "让购买桌灯的人自己比较配色和表面，确认一套配置后交给销售。",
+    "audience": "准备购买桌灯的顾客",
+    "problem": "照片难以说明不同配色和结构，沟通时容易记错所选配置。",
+    "input": "产品选项、颜色和结构说明",
+    "outcome": "一份准确保留选择的产品配置单",
+    "useAI": false,
+    "branding": {
+      "title": "先看清，再选定。",
+      "tagline": "选择、比较，把确定的结果带走。",
+      "accent": "#356873"
+    },
+    "product": {
+      "kind": "lamp",
+      "name": "LUMA 弧线桌灯",
+      "colors": [
+        {
+          "label": "海湾蓝",
+          "value": "#356873"
+        },
+        {
+          "label": "陶土橙",
+          "value": "#bb633f"
+        },
+        {
+          "label": "松石绿",
+          "value": "#4d6b58"
+        }
+      ],
+      "features": {
+        "finish": true,
+        "light": true,
+        "structure": true
+      },
+      "initial": {
+        "color": "#bb633f",
+        "finish": "gloss",
+        "light": 37,
+        "explode": 78
+      }
+    },
+    "toilet": {
+      "catalog": [
+        {
+          "id": "compact",
+          "name": "C1 紧凑款",
+          "description": "为紧凑空间保留更短的投影长度。",
+          "width": 365,
+          "depth": 650,
+          "height": 735,
+          "seatHeight": 420,
+          "price": 2190,
+          "tank": true,
+          "requiresPower": false,
+          "roughIns": [
+            305,
+            400
+          ]
+        },
+        {
+          "id": "comfort",
+          "name": "C2 舒适款",
+          "description": "较高坐面与较长便圈，比较坐姿与空间取舍。",
+          "width": 390,
+          "depth": 700,
+          "height": 760,
+          "seatHeight": 440,
+          "price": 3490,
+          "tank": true,
+          "requiresPower": false,
+          "roughIns": [
+            305,
+            400
+          ]
+        },
+        {
+          "id": "smart",
+          "name": "S1 智能概念款",
+          "description": "无外置水箱的整洁形体；电子功能需真实型号确认。",
+          "width": 390,
+          "depth": 690,
+          "height": 485,
+          "seatHeight": 425,
+          "price": 5790,
+          "tank": false,
+          "requiresPower": true,
+          "roughIns": [
+            305,
+            400
+          ]
+        }
+      ],
+      "rules": {
+        "frontClearance": 300,
+        "sideClearance": 80,
+        "installationPrice": 690
+      },
+      "initial": {
+        "modelId": "smart",
+        "roughIn": 305,
+        "lid": 0,
+        "explode": 0,
+        "view": "hero",
+        "setting": "interior",
+        "dimensions": false,
+        "includeInstallation": false,
+        "site": {
+          "drain": "floor",
+          "roughIn": null,
+          "width": null,
+          "depth": null,
+          "power": "unknown",
+          "notes": ""
+        }
+      }
+    },
+    "headphones": {
+      "initial": {
+        "fold": 0,
+        "view": "hero",
+        "environment": "warm",
+        "camera": null
+      }
+    },
+    "coverage": {
+      "serviceName": "灯具安装",
+      "regions": [
+        {
+          "id": "region-0",
+          "name": "杭州",
+          "available": true,
+          "detail": "示例规则：提供灯具安装，请补充安装位置与数量。"
+        },
+        {
+          "id": "region-1",
+          "name": "宁波",
+          "available": true,
+          "detail": "示例规则：提供安装服务，具体地址需要人工确认。"
+        },
+        {
+          "id": "region-2",
+          "name": "上海",
+          "available": false,
+          "detail": "示例规则：目前未覆盖，先记录需求供后续讨论。"
+        }
+      ]
+    }
+  },
+  "construction": {
+    "mode": "local-template",
+    "modelConnected": false
+  },
+  "userFlow": [
+    "查看产品",
+    "选择配色",
+    "比较表面",
+    "调整灯光",
+    "检查结构",
+    "导出所选配置"
+  ],
+  "implemented": [
+    "参数化产品预览",
+    "选项与状态同步",
+    "配置导出"
+  ],
+  "pending": [
+    "真实产品模型与尺寸",
+    "库存、报价或订单接口"
+  ],
+  "acceptance": [
+    "用户完成完整任务",
+    "结果与输入规则一致",
+    "导出与屏幕一致",
+    "手机和键盘可操作"
+  ],
+  "valueMeasures": [
+    "首次使用者能否独立完成选配",
+    "配置导出是否准确",
+    "选配耗时与重复询问次数"
+  ]
+}

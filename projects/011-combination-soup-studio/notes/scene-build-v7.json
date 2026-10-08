@@ -1,0 +1,45 @@
+{
+  "revision": "20261002-7",
+  "projectCount": 15,
+  "checks": [
+    {
+      "url": "http://127.0.0.1:8951/projects/011-combination-soup-studio/?effect=broth&scene=product&revision=20261002-7",
+      "status": 200,
+      "bytes": 36001
+    },
+    {
+      "url": "http://127.0.0.1:8951/projects/011-combination-soup-studio/?effect=broth&scene=garden&revision=20261002-7",
+      "status": 200,
+      "bytes": 36001
+    },
+    {
+      "url": "http://127.0.0.1:8951/projects/011-combination-soup-studio/app.js?v=20261002-7",
+      "status": 200,
+      "bytes": 27350
+    },
+    {
+      "url": "http://127.0.0.1:8951/projects/011-combination-soup-studio/product-renderer.js?v=20261002-7",
+      "status": 200,
+      "bytes": 27067
+    },
+    {
+      "url": "http://127.0.0.1:8951/projects/011-combination-soup-studio/garden-renderer.js?v=20261002-7",
+      "status": 200,
+      "bytes": 24018
+    },
+    {
+      "url": "http://127.0.0.1:8951/projects/011-combination-soup-studio/assets/scene-polish-v7.mp4",
+      "status": 200,
+      "bytes": 3840086,
+      "matchesLocal": true,
+      "sha256": "168943355c2889a048a8c5ba85a99f2cdf1e0501d35f2e4f031f7070e9ed3e38"
+    },
+    {
+      "url": "http://127.0.0.1:8951/projects/011-combination-soup-studio/assets/scene-polish-v7-gallery.png",
+      "status": 200,
+      "bytes": 1601171,
+      "matchesLocal": true,
+      "sha256": "aa23ab156ae80ae2e8eebb5db6ddb416636c6bf78c9c723c6c0f3240a3652118"
+    }
+  ]
+}

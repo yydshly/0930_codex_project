@@ -1,0 +1,173 @@
+{
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "enum": [
+        "1.0"
+      ]
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "headphones",
+        "toilet",
+        "lamp",
+        "other"
+      ]
+    },
+    "product": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "headline": {
+      "type": "string"
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "userFlow": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 2,
+      "maxItems": 8
+    },
+    "visual": {
+      "type": "object",
+      "properties": {
+        "direction": {
+          "type": "string"
+        },
+        "composition": {
+          "type": "string"
+        },
+        "materials": {
+          "type": "string"
+        },
+        "mobile": {
+          "type": "string"
+        },
+        "palette": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^#[0-9a-fA-F]{6}$"
+          },
+          "minItems": 2,
+          "maxItems": 5
+        }
+      },
+      "required": [
+        "direction",
+        "composition",
+        "materials",
+        "mobile",
+        "palette"
+      ],
+      "additionalProperties": false
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "area": {
+            "type": "string"
+          },
+          "requirement": {
+            "type": "string"
+          },
+          "verify": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "area",
+          "requirement",
+          "verify"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 20
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "role",
+          "status"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 20
+    },
+    "interactions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "maxItems": 12
+    },
+    "missing": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 0,
+      "maxItems": 12
+    },
+    "acceptance": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 2,
+      "maxItems": 12
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 0,
+      "maxItems": 12
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "category",
+    "product",
+    "summary",
+    "headline",
+    "tagline",
+    "userFlow",
+    "visual",
+    "requirements",
+    "assets",
+    "interactions",
+    "missing",
+    "acceptance",
+    "assumptions"
+  ],
+  "additionalProperties": false
+}

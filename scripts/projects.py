@@ -55,8 +55,11 @@ def validate(projects, root, check_files=True):
             raise ValueError(f"{number}: 名称和摘要不能为空。")
         if project["status"] not in STATUSES:
             raise ValueError(f"{number}: 未知研究状态。")
-        if not valid_url(project["repo"], github=True):
-            raise ValueError(f"{number}: repo 必须是 GitHub 仓库的 HTTPS 地址。")
+        if project["repo"]:
+            if not valid_url(project["repo"], github=True):
+                raise ValueError(f"{number}: repo 必须是 GitHub 仓库的 HTTPS 地址。")
+        elif not REFERENCE_FIELDS <= set(project):
+            raise ValueError(f"{number}: 没有公开仓库时，必须提供网页来源 reference 与 reference_name。")
         if "reference" in project and (not valid_url(project["reference"]) or not project["reference_name"].strip()):
             raise ValueError(f"{number}: 效果参考需要 HTTPS 地址与来源名称。")
         if project["demo"] and not valid_url(project["demo"]):
@@ -116,8 +119,8 @@ def render_readme(root, projects):
         path = project_path(project)
         entry = link(project["name"], f"{path}/README.md")
         demo = link("在线演示", project["demo"]) if project["demo"] else "—"
-        code = link(urlsplit(project['repo']).path.strip('/'), project['repo'])
-        source = (link(project['reference_name'], project['reference']) + '<br>技术：' + code) if 'reference' in project else code
+        code = link(urlsplit(project['repo']).path.strip('/'), project['repo']) if project['repo'] else ''
+        source = (link(project['reference_name'], project['reference']) + ('<br>技术：' + code if code else '<br>公开仓库未确认')) if 'reference' in project else code
         atlas = project["id"] == 6 and project["slug"] == "ai-visual-atlas"
         if atlas:
             source_list = link("十项目源库列表", f"{path}/publication/index.html#library")
@@ -126,7 +129,7 @@ def render_readme(root, projects):
         rows.append(f"| {project['id']:03d} | {entry} | {summary_markdown(project['summary'], table=True)} | "
                     f"{project['status']} | {source} | {demo} |")
         if project["cover"]:
-            source_note = (f"效果来源：{link(project['reference_name'], project['reference'])}。技术基础：{code}。" if 'reference' in project
+            source_note = (f"效果来源：{link(project['reference_name'], project['reference'])}。" + (f"技术基础：{code}。" if code else "公开仓库未确认，按公开网页进行研究。") if 'reference' in project
                            else f"源库：{code}。")
             if atlas:
                 source_note = (f"最初来源：{link(project['reference_name'], project['reference'])}。资料索引："
@@ -162,6 +165,8 @@ def run(args, root=ROOT):
         project = dict(id=max((p["id"] for p in projects), default=0) + 1,
                        slug=args.slug, name=args.name, repo=args.repo, summary=args.summary,
                        status="待研究", demo="", cover="")
+        if getattr(args, 'reference', None):
+            project.update(reference=args.reference, reference_name=args.reference_name)
         updated = projects + [project]
         validate(updated, root, check_files=False)
         content = render_readme(root, updated)
@@ -195,6 +200,8 @@ def main():
     add = commands.add_parser("add", help="创建下一个编号的研究项目")
     for field in ("slug", "name", "repo", "summary"):
         add.add_argument(f"--{field}", required=True)
+    add.add_argument("--reference", help="效果来源网页；没有已确认公开仓库时必填")
+    add.add_argument("--reference-name", help="效果来源名称")
     commands.add_parser("render", help="同步主 README 的索引和预览")
     commands.add_parser("check", help="检查目录、清单与首页一致性")
     try:

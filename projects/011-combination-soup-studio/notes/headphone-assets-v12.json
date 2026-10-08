@@ -1,0 +1,49 @@
+{
+  "generatedAt": "2026-10-03",
+  "assets": [
+    {
+      "source": "D:/codex/home/generated_images/01a0f823-f312-7c12-a852-2166150da1b2/exec-70c7d9d2-4f74-4cba-a9c5-9631f02e46a6.png",
+      "file": "web/foundry/assets/headphone-hero-v12.webp",
+      "role": "横版品牌影像",
+      "width": 1661,
+      "height": 947,
+      "method": "built-in ImageGen",
+      "reference": null
+    },
+    {
+      "source": "D:/codex/home/generated_images/01a0f823-f312-7c12-a852-2166150da1b2/exec-4e1d3145-8128-4ab8-b84b-69fd3a3a10d3.png",
+      "file": "web/foundry/assets/headphone-mobile-v12.webp",
+      "role": "手机独立竖版",
+      "width": 941,
+      "height": 1672,
+      "method": "built-in ImageGen",
+      "reference": "D:/codex/home/generated_images/01a0f823-f312-7c12-a852-2166150da1b2/exec-70c7d9d2-4f74-4cba-a9c5-9631f02e46a6.png"
+    },
+    {
+      "source": "D:/codex/home/generated_images/01a0f823-f312-7c12-a852-2166150da1b2/exec-6b7a181c-f257-4bba-ad1c-9ca165574c50.png",
+      "file": "web/foundry/assets/headphone-detail-v12.webp",
+      "role": "同系列材质特写",
+      "width": 1122,
+      "height": 1402,
+      "method": "built-in ImageGen",
+      "reference": "D:/codex/home/generated_images/01a0f823-f312-7c12-a852-2166150da1b2/exec-70c7d9d2-4f74-4cba-a9c5-9631f02e46a6.png"
+    }
+  ],
+  "design": "原创银色椭圆铝壳、深色皮革耳垫、连续头梁、金属旋钮与 USB-C 形体；暖色摄影空间。横版留左侧文字空间，竖版留上方文字空间，近景保持同一设计。",
+  "rights": "项目生成概念；非厂商实拍。原图保留在生成目录。",
+  "promptSetSummary": [
+    {
+      "asset": "headphone-hero-v12.webp",
+      "request": "原创高质感头戴耳机品牌摄影：银色缎面椭圆铝壳，深色皮革耳垫与连续头梁，细金属支架、旋钮与 USB-C 形体。暖象牙色空间与石材展示台，主体在右，左侧留标题和行动空间；柔和自然光，清晰高光与接地阴影。无文字、标志或 UI。"
+    },
+    {
+      "asset": "headphone-mobile-v12.webp",
+      "request": "以横版已生成耳机为设计参考，保留同一金属壳、耳垫、头梁和细节，改为手机竖版摄影。完整产品在中下部，上方留文案空间；暖色背景与柔光，不能只裁切横版或改变产品设计。"
+    },
+    {
+      "asset": "headphone-detail-v12.webp",
+      "request": "以已生成耳机为参考制作同系列材质近景，清楚显示铝壳、旋钮、接口、深色耳垫和接缝，温暖柔和的摄影光，金属高光细腻，无文字和 UI。"
+    }
+  ],
+  "promptRecordNote": "生成提示词的制作要点摘要，非逐字工具请求日志。三项均使用内置 ImageGen；两项编辑以横版原图为参考。"
+}

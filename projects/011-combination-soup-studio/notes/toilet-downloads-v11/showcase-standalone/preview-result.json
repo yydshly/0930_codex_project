@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1.0",
+  "product": "形卫 · 马桶选型",
+  "item": "S1 智能概念款",
+  "dataMode": "illustrative-catalog",
+  "selection": {
+    "kind": "toilet",
+    "modelId": "smart",
+    "modelName": "S1 智能概念款",
+    "color": "#f5f1e7",
+    "colorName": "暖瓷白",
+    "roughIn": 305,
+    "lidPercent": 0,
+    "structurePercent": 0,
+    "view": "hero",
+    "setting": "interior",
+    "dimensions": false,
+    "includeInstallation": false
+  },
+  "specification": {
+    "widthMm": 390,
+    "depthMm": 690,
+    "heightMm": 485,
+    "seatHeightMm": 425,
+    "requiresPower": true
+  },
+  "site": {
+    "drain": "floor",
+    "roughIn": null,
+    "width": null,
+    "depth": null,
+    "power": "unknown",
+    "notes": ""
+  },
+  "fit": {
+    "status": "incomplete",
+    "title": "4 项现场信息待补充",
+    "checks": [
+      {
+        "key": "drain",
+        "label": "排水方式",
+        "status": "match",
+        "detail": "与示例落地下排水类型一致。"
+      },
+      {
+        "key": "roughIn",
+        "label": "现场坑距",
+        "status": "missing",
+        "detail": "填写完成墙面至排污口中心的实测距离。"
+      },
+      {
+        "key": "width",
+        "label": "可用宽度",
+        "status": "missing",
+        "detail": "待测量；示例规划需至少 550 mm。"
+      },
+      {
+        "key": "depth",
+        "label": "可用进深",
+        "status": "missing",
+        "detail": "待测量；示例规划需至少 990 mm。"
+      },
+      {
+        "key": "power",
+        "label": "电源条件",
+        "status": "missing",
+        "detail": "请确认所选电子款的电源条件。"
+      }
+    ],
+    "requiredWidth": 550,
+    "requiredDepth": 990,
+    "notice": "这是示例参数的初步核对，前方和单侧预留是可编辑的规划值。安装可行性仍需产品图纸、供水条件与现场复核。"
+  },
+  "estimate": {
+    "mode": "demonstration-only",
+    "currency": "CNY",
+    "product": 5790,
+    "installation": 0,
+    "total": 5790
+  },
+  "observation": {
+    "renderer": "webgl",
+    "kind": "toilet",
+    "modelId": "smart",
+    "view": "hero",
+    "zoom": 1,
+    "yaw": 0.72,
+    "pitch": 0.25,
+    "backgroundSource": "procedural-bathroom",
+    "visualRevision": "20261002-11",
+    "materialsReady": true,
+    "dimensions": false
+  },
+  "submitted": false,
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}

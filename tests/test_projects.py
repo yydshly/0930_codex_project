@@ -91,6 +91,21 @@ class CatalogTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             catalog.validate(projects, self.root)
 
+    def test_reference_only_project_preserves_source_without_inventing_repository(self):
+        catalog.run(argparse.Namespace(command="add", slug="web-study", name="网页研究",
+                    repo="", summary="原生浏览器交互", reference="https://example.com/game/",
+                    reference_name="游戏原作"), self.root)
+        projects = json.loads((self.root / "projects.json").read_text(encoding="utf-8"))
+        catalog.validate(projects, self.root)
+        readme = catalog.render_readme(self.root, projects)
+        self.assertIn('[游戏原作](https://example.com/game/)', readme)
+        self.assertIn('公开仓库未确认', readme)
+        self.assertNotIn('技术：[]', readme)
+        projects[0].pop('reference')
+        projects[0].pop('reference_name')
+        with self.assertRaises(ValueError):
+            catalog.validate(projects, self.root)
+
 
 if __name__ == "__main__":
     unittest.main()

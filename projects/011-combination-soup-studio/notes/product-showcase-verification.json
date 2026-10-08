@@ -1,0 +1,208 @@
+{
+  "date": "2026-10-02",
+  "revision": "20261002-7",
+  "checks": [
+    {
+      "name": "直接入口显示产品场景和真实WebGL",
+      "passed": true
+    },
+    {
+      "name": "夜景确实改变像素",
+      "passed": true
+    },
+    {
+      "name": "夜景整体照度低于棚拍",
+      "passed": true
+    },
+    {
+      "name": "灯关闭改变实际发光",
+      "passed": true
+    },
+    {
+      "name": "明亮预设改变实际发光",
+      "passed": true
+    },
+    {
+      "name": "日落橙真实改变模型",
+      "passed": true
+    },
+    {
+      "name": "哑光与亮面真实改变材质",
+      "passed": true
+    },
+    {
+      "name": "正面视角真实改变画面",
+      "passed": true
+    },
+    {
+      "name": "细节视角真实改变画面",
+      "passed": true
+    },
+    {
+      "name": "结构解析真实展开零件",
+      "passed": true
+    },
+    {
+      "name": "结构视角同步参数并停止自动旋转",
+      "passed": true
+    },
+    {
+      "name": "零件聚焦与说明 shade",
+      "passed": true
+    },
+    {
+      "name": "零件说明不遮模型 shade",
+      "passed": true
+    },
+    {
+      "name": "零件聚焦与说明 diffuser",
+      "passed": true
+    },
+    {
+      "name": "零件说明不遮模型 diffuser",
+      "passed": true
+    },
+    {
+      "name": "零件聚焦与说明 stem",
+      "passed": true
+    },
+    {
+      "name": "零件说明不遮模型 stem",
+      "passed": true
+    },
+    {
+      "name": "零件聚焦与说明 base",
+      "passed": true
+    },
+    {
+      "name": "零件说明不遮模型 base",
+      "passed": true
+    },
+    {
+      "name": "键盘旋转真实改变画面",
+      "passed": true
+    },
+    {
+      "name": "拖动实际改变横向与俯仰视角",
+      "passed": true
+    },
+    {
+      "name": "缩放按钮实际改变画面",
+      "passed": true
+    },
+    {
+      "name": "最新缩放观察状态同步事实",
+      "passed": true
+    },
+    {
+      "name": "重置恢复环境视角与全部配置",
+      "passed": true
+    },
+    {
+      "name": "实际PNG保留WebGL画面",
+      "passed": true
+    },
+    {
+      "name": "需求单保留新材质环境与结构",
+      "passed": true
+    },
+    {
+      "name": "技能计划接住真实三维配置",
+      "passed": true
+    },
+    {
+      "name": "产品无横向溢出 390",
+      "passed": true
+    },
+    {
+      "name": "窄屏配置紧邻舞台且先于交付说明 390",
+      "passed": true
+    },
+    {
+      "name": "热点在舞台内 shade 390",
+      "passed": true
+    },
+    {
+      "name": "热点在舞台内 diffuser 390",
+      "passed": true
+    },
+    {
+      "name": "热点在舞台内 stem 390",
+      "passed": true
+    },
+    {
+      "name": "热点在舞台内 base 390",
+      "passed": true
+    },
+    {
+      "name": "产品无横向溢出 768",
+      "passed": true
+    },
+    {
+      "name": "窄屏配置紧邻舞台且先于交付说明 768",
+      "passed": true
+    },
+    {
+      "name": "热点在舞台内 shade 768",
+      "passed": true
+    },
+    {
+      "name": "热点在舞台内 diffuser 768",
+      "passed": true
+    },
+    {
+      "name": "热点在舞台内 stem 768",
+      "passed": true
+    },
+    {
+      "name": "热点在舞台内 base 768",
+      "passed": true
+    },
+    {
+      "name": "产品无横向溢出 1440",
+      "passed": true
+    },
+    {
+      "name": "热点在舞台内 shade 1440",
+      "passed": true
+    },
+    {
+      "name": "热点在舞台内 diffuser 1440",
+      "passed": true
+    },
+    {
+      "name": "热点在舞台内 stem 1440",
+      "passed": true
+    },
+    {
+      "name": "热点在舞台内 base 1440",
+      "passed": true
+    },
+    {
+      "name": "无WebGL设备明确显示兼容预览",
+      "passed": true
+    },
+    {
+      "name": "兼容预览停用不支持的旋转缩放",
+      "passed": true
+    },
+    {
+      "name": "兼容预览配色仍改变实际画面",
+      "passed": true
+    },
+    {
+      "name": "兼容重置不会错误记录自动旋转",
+      "passed": true
+    },
+    {
+      "name": "兼容PNG正常导出",
+      "passed": true
+    },
+    {
+      "name": "无未处理浏览器错误",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "scope": "Actual WebGL images, controls, exports and 390/768/1440 viewport checks; functionality does not establish subjective texture quality, physical product calibration or phone hardware performance."
+}

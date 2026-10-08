@@ -1,0 +1,179 @@
+{
+  "schemaVersion": "1.0",
+  "product": {
+    "schemaVersion": "1.0",
+    "template": "product",
+    "name": "形卫 · 马桶选型",
+    "idea": "让装修用户比较马桶形体、尺寸与配置，核对现场条件后，把完整选型交给销售或安装人员。",
+    "audience": "正在装修或更换马桶的家庭",
+    "problem": "只看图片容易忽略坑距、占用空间和电源条件，选型与安装沟通需要反复确认。",
+    "input": "产品目录、所选坑距、现场尺寸与电源条件",
+    "outcome": "包含产品配置、现场核对、示例报价和待确认项的选型单",
+    "useAI": false,
+    "branding": {
+      "title": "选得喜欢，也要放得合适。",
+      "tagline": "三款概念形体，先比较，再把现场条件核对清楚。",
+      "accent": "#566c65"
+    },
+    "product": {
+      "kind": "toilet",
+      "name": "FORM 形卫 · 坐便器系列",
+      "colors": [
+        {
+          "label": "暖瓷白",
+          "value": "#f5f1e7"
+        },
+        {
+          "label": "纯净白",
+          "value": "#f9fbfc"
+        },
+        {
+          "label": "石墨灰",
+          "value": "#5e6665"
+        }
+      ],
+      "features": {
+        "finish": false,
+        "light": false,
+        "structure": true
+      },
+      "initial": {
+        "color": "#f5f1e7",
+        "finish": "matte",
+        "light": 70,
+        "explode": 0
+      }
+    },
+    "toilet": {
+      "catalog": [
+        {
+          "id": "compact",
+          "name": "C1 紧凑款",
+          "description": "为紧凑空间保留更短的投影长度。",
+          "width": 365,
+          "depth": 650,
+          "height": 735,
+          "seatHeight": 420,
+          "price": 2190,
+          "tank": true,
+          "requiresPower": false,
+          "roughIns": [
+            305,
+            400
+          ]
+        },
+        {
+          "id": "comfort",
+          "name": "C2 舒适款",
+          "description": "较高坐面与较长便圈，比较坐姿与空间取舍。",
+          "width": 390,
+          "depth": 700,
+          "height": 760,
+          "seatHeight": 440,
+          "price": 3490,
+          "tank": true,
+          "requiresPower": false,
+          "roughIns": [
+            305,
+            400
+          ]
+        },
+        {
+          "id": "smart",
+          "name": "S1 智能概念款",
+          "description": "无外置水箱的整洁形体；电子功能需真实型号确认。",
+          "width": 390,
+          "depth": 690,
+          "height": 485,
+          "seatHeight": 425,
+          "price": 5790,
+          "tank": false,
+          "requiresPower": true,
+          "roughIns": [
+            305,
+            400
+          ]
+        }
+      ],
+      "rules": {
+        "frontClearance": 300,
+        "sideClearance": 80,
+        "installationPrice": 690
+      },
+      "initial": {
+        "modelId": "compact",
+        "roughIn": 305,
+        "lid": 0,
+        "explode": 0,
+        "view": "hero",
+        "dimensions": true,
+        "includeInstallation": true,
+        "site": {
+          "drain": "floor",
+          "roughIn": 305,
+          "width": 900,
+          "depth": 1200,
+          "power": "yes",
+          "notes": "请复核门扇开启范围和进水位置。"
+        }
+      }
+    },
+    "coverage": {
+      "serviceName": "灯具安装",
+      "regions": [
+        {
+          "id": "region-0",
+          "name": "杭州",
+          "available": true,
+          "detail": "示例规则：提供灯具安装，请补充安装位置与数量。"
+        },
+        {
+          "id": "region-1",
+          "name": "宁波",
+          "available": true,
+          "detail": "示例规则：提供安装服务，具体地址需要人工确认。"
+        },
+        {
+          "id": "region-2",
+          "name": "上海",
+          "available": false,
+          "detail": "示例规则：目前未覆盖，先记录需求供后续讨论。"
+        }
+      ]
+    }
+  },
+  "construction": {
+    "mode": "local-template",
+    "modelConnected": false
+  },
+  "userFlow": [
+    "比较马桶型号与尺寸",
+    "选择配色和坑距",
+    "观察盖板与部件",
+    "核对现场尺寸和电源",
+    "记录示例报价",
+    "导出选型交接单"
+  ],
+  "implemented": [
+    "参数化马桶与卫浴场景",
+    "型号/尺寸/坑距与配色同步",
+    "盖板开合与部件观察",
+    "现场条件初步核对",
+    "示例报价与完整选型单"
+  ],
+  "pending": [
+    "厂商真实 SKU、图纸与供水要求",
+    "库存、正式报价与订单/安装接口"
+  ],
+  "acceptance": [
+    "用户完成完整任务",
+    "结果与输入规则一致",
+    "导出与屏幕一致",
+    "手机和键盘可操作"
+  ],
+  "valueMeasures": [
+    "现场条件缺失或冲突是否被正确记录",
+    "客户是否能区分三款形体与尺寸",
+    "销售与安装人员是否能依据选型单继续沟通"
+  ]
+}

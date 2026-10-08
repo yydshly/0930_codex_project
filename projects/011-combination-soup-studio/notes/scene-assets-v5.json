@@ -1,0 +1,76 @@
+{
+  "revision": "20261002-5",
+  "date": "2026-10-02",
+  "mode": "Built-in image_gen; no API/CLI fallback",
+  "prompt_set": "Final production briefs for the three generated assets",
+  "original_website_assets": "Not included in these three business scene assets; selected upstream effects remain separately attributed",
+  "items": [
+    {
+      "file": "tea-editorial-v5.webp",
+      "type": "photorealistic-natural",
+      "generator": "built-in image_gen",
+      "source_output": "D:/codex/home/generated_images/01a0f823-f312-7c12-a852-2166150da1b2/exec-4a1acd7d-9d54-425b-a29a-0501ead9704e.png",
+      "reference": "assets/qa/v5/reference-source.png; mood and tactile contrast only, not an edit target or a source-layout clone",
+      "prompt": "Create a premium editorial tea campaign photograph. Wide horizontal composition, left 35 percent deep forest-green negative space for live HTML copy. Right 60 percent: dark forest-green cylindrical tea canister with blank textured paper label, celadon ceramic tea bowl containing amber tea with delicate steam, loose tea buds, walnut table and natural linen. Warm directional sunlight, realistic ceramic pores, paper fibres, wood grain and layered shadows. Refined contemporary Chinese tea lifestyle atmosphere. No logos, no letters, no UI, no source-site food or brand. Original fictional concept. Use reference solely for tactile richness and contrast.",
+      "processing": "WebP quality 91; live brand label remains HTML",
+      "saved_path": "F:\\codex_project\\0930_codex_project\\projects\\011-combination-soup-studio\\web\\assets\\tea-editorial-v5.webp",
+      "sha256": "d953c5f35a36cb5c8444c8add1cb9c3232d91b605b0419a46b814140568008d1",
+      "bytes": 181132
+    },
+    {
+      "file": "studio-environment-v5.webp",
+      "type": "product-mockup",
+      "generator": "built-in image_gen",
+      "source_output": "D:/codex/home/generated_images/01a0f823-f312-7c12-a852-2166150da1b2/exec-e5888d7f-0ccd-48b8-8f70-9b452421b719.png",
+      "prompt": "Generate an empty photorealistic 360-degree equirectangular studio panorama, exact 2:1 layout for a real-time 3D material environment. Warm walnut floor, beige plaster, bright large window at the left, tall diffused white softbox at the right, darker panels for distinct reflections. Continuous room geometry across the seam. No product, people, text or UI. Natural light, subtle real surface texture, restrained warm editorial studio.",
+      "processing": "WebP quality 91; LDR image used by PMREM, not a measured HDR light probe",
+      "saved_path": "F:\\codex_project\\0930_codex_project\\projects\\011-combination-soup-studio\\web\\assets\\studio-environment-v5.webp",
+      "sha256": "9573f33a0fcfb0b283b0df65f903f8b25c4871a030bcfe79af22dc44b4e30573",
+      "bytes": 183034
+    },
+    {
+      "file": "maple-leaf-v5.webp",
+      "type": "photorealistic-natural",
+      "generator": "built-in image_gen",
+      "source_output": "D:/codex/home/generated_images/01a0f823-f312-7c12-a852-2166150da1b2/exec-767169c7-bc28-47a9-a15c-691aee0504f1.png",
+      "prompt": "One single natural green maple leaf photographed straight from above. Five to seven pointed lobes, jade green colour, real veins and slight variation in surface tone. Leaf fills roughly 80 percent of frame, tiny stem pointing down. Genuine transparent alpha background, no baked shadow, no text, no collage, no border. Suitable for an alpha-tested 3D foliage texture.",
+      "processing": "Resize to width 512 and WebP quality 91 with alphaQuality 100; transparency preserved",
+      "saved_path": "F:\\codex_project\\0930_codex_project\\projects\\011-combination-soup-studio\\web\\assets\\maple-leaf-v5.webp",
+      "sha256": "0cd95cc54768003f22bf561ad05254cff993ffb3f20286e9aa3278782204b235",
+      "bytes": 79992
+    },
+    {
+      "file": "wood-v5.webp",
+      "type": "selected-local-material-reuse",
+      "generator": "existing project 007 original image_gen material",
+      "source_output": "projects/007-koi-scene-lab/web/assets/wood-albedo.png",
+      "prompt_source": "projects/007-koi-scene-lab/README.md and its asset records",
+      "processing": "Resize to width 1024 without enlargement, WebP quality 86; no 007 geometry or entire application copied",
+      "saved_path": "F:\\codex_project\\0930_codex_project\\projects\\011-combination-soup-studio\\web\\assets\\wood-v5.webp",
+      "sha256": "4b171a91004afd993b42c95d495739e7acb409652b05e1e80aa8439185c4bc65",
+      "bytes": 255986
+    },
+    {
+      "file": "stone-v5.webp",
+      "type": "selected-local-material-reuse",
+      "generator": "existing project 007 original image_gen material",
+      "source_output": "projects/007-koi-scene-lab/web/assets/stone-albedo.png",
+      "prompt_source": "projects/007-koi-scene-lab/README.md and its asset records",
+      "processing": "Resize to width 1024 without enlargement, WebP quality 86; no 007 geometry or entire application copied",
+      "saved_path": "F:\\codex_project\\0930_codex_project\\projects\\011-combination-soup-studio\\web\\assets\\stone-v5.webp",
+      "sha256": "add0183475a695ddbf0abd5a268d73c47fe122eadebdba063dc078acc4312985",
+      "bytes": 438930
+    },
+    {
+      "file": "gravel-v5.webp",
+      "type": "selected-local-material-reuse",
+      "generator": "existing project 007 original image_gen material",
+      "source_output": "projects/007-koi-scene-lab/web/assets/gravel-albedo.png",
+      "prompt_source": "projects/007-koi-scene-lab/README.md and its asset records",
+      "processing": "Resize to width 1024 without enlargement, WebP quality 86; no 007 geometry or entire application copied",
+      "saved_path": "F:\\codex_project\\0930_codex_project\\projects\\011-combination-soup-studio\\web\\assets\\gravel-v5.webp",
+      "sha256": "c9df823c9b927ac969fd36baf1377edb50caad0c599d6c4f0ab4b5389d368eec",
+      "bytes": 388334
+    }
+  ]
+}

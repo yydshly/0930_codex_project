@@ -1,0 +1,107 @@
+{
+  "completed": true,
+  "date": "2026-10-03",
+  "scope": "Homepage and case navigation, explicit preset routing and responsive containment. Does not rerun product visual/material acceptance.",
+  "checks": [
+    "catalog links directly to toilet",
+    "catalog desktop contains content",
+    "desktop main homepage has two product cases",
+    "desktop homepage contains content",
+    "desktop homepage cases align to main content",
+    "desktop target homepage has toilet card",
+    "desktop header toilet link visible",
+    "desktop target homepage contains content",
+    "desktop toilet explicit case loaded",
+    "desktop toilet current navigation marked",
+    "desktop toilet editor retains explicit example",
+    "desktop toilet page contains content",
+    "desktop earphones current navigation marked",
+    "desktop headphone page contains content",
+    "desktop return to homepage works",
+    "mobile main homepage has two product cases",
+    "mobile homepage contains content",
+    "mobile homepage cases align to main content",
+    "mobile target homepage has toilet card",
+    "mobile header toilet link visible",
+    "mobile target homepage contains content",
+    "mobile toilet explicit case loaded",
+    "mobile toilet current navigation marked",
+    "mobile toilet editor retains explicit example",
+    "mobile toilet page contains content",
+    "mobile earphones current navigation marked",
+    "mobile headphone page contains content",
+    "mobile return to homepage works",
+    "headphone draft explicitly saved",
+    "toilet workbench ignores prior headphone draft",
+    "toilet workbench preview renders matching product",
+    "toilet workbench desktop contains content",
+    "embedded preview omits research site navigation",
+    "toilet full page ignores saved earphone showcase",
+    "summary has visible toilet entry",
+    "catalog mobile contains content",
+    "toilet workbench mobile contains content",
+    "linked route reachable /projects/011-combination-soup-studio/understanding.html",
+    "linked route reachable /projects/011-combination-soup-studio/foundry/studio.html",
+    "linked route reachable /projects/011-combination-soup-studio/foundry/showroom.html",
+    "linked route reachable /projects/011-combination-soup-studio/foundry/showroom.html",
+    "linked route reachable /projects/011-combination-soup-studio/foundry/",
+    "linked route reachable /projects/011-combination-soup-studio/foundry/",
+    "linked route reachable /projects/011-combination-soup-studio/",
+    "linked route reachable /projects/011-combination-soup-studio/foundry/",
+    "linked route reachable /projects/011-combination-soup-studio/understanding.html",
+    "linked route reachable /projects/011-combination-soup-studio/foundry/studio.html",
+    "linked route reachable /projects/011-combination-soup-studio/foundry/showroom.html",
+    "no unhandled browser errors",
+    "final toilet workbench label and layout at 1440",
+    "final toilet workbench label and layout at 390"
+  ],
+  "routes": [
+    {
+      "url": "http://127.0.0.1:8951/projects/011-combination-soup-studio/understanding.html",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8951/projects/011-combination-soup-studio/foundry/studio.html?revision=20261003-16",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8951/projects/011-combination-soup-studio/foundry/showroom.html?example=toilet&revision=20261003-16",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8951/projects/011-combination-soup-studio/foundry/showroom.html?example=headphones&revision=20261003-16",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8951/projects/011-combination-soup-studio/foundry/?example=toilet&step=preview&revision=20261003-16",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8951/projects/011-combination-soup-studio/foundry/?example=headphones&step=preview&revision=20261003-16",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8951/projects/011-combination-soup-studio/",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8951/projects/011-combination-soup-studio/foundry/?revision=20261003-16",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8951/projects/011-combination-soup-studio/understanding.html#current",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8951/projects/011-combination-soup-studio/foundry/studio.html?example=headphones&revision=20261003-16",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8951/projects/011-combination-soup-studio/foundry/showroom.html?example=headphones&revision=20261003-16#aura-configure",
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "siteChecks": 6,
+  "buildProjects": 17
+}

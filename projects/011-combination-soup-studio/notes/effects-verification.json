@@ -1,0 +1,183 @@
+{
+  "date": "2026-10-02",
+  "url": "http://127.0.0.1:8951/projects/011-combination-soup-studio/",
+  "checks": [
+    {
+      "name": "原站汤碗视频实际解码并推进",
+      "passed": true
+    },
+    {
+      "name": "视频默认无声播放",
+      "passed": true
+    },
+    {
+      "name": "用户可暂停原站视频",
+      "passed": true
+    },
+    {
+      "name": "模块切换卸载上一项视频",
+      "passed": true
+    },
+    {
+      "name": "旋转套餐同步标题与当前项",
+      "passed": true
+    },
+    {
+      "name": "实际滚动驱动套餐旋转",
+      "passed": true
+    },
+    {
+      "name": "绕圈拖动累加实际搅动圈数",
+      "passed": true
+    },
+    {
+      "name": "搅汤和倾斜改变实际 Canvas 画面",
+      "passed": true
+    },
+    {
+      "name": "按钮可以替代拖动搅汤",
+      "passed": true
+    },
+    {
+      "name": "倾斜使汤量下降并触发真实溢出状态",
+      "passed": true
+    },
+    {
+      "name": "城市操作启动投送动画",
+      "passed": true
+    },
+    {
+      "name": "投送完成后同步真实落点",
+      "passed": true
+    },
+    {
+      "name": "点击地图也能选择落点投送",
+      "passed": true
+    },
+    {
+      "name": "饼干开裂并展开真实提示",
+      "passed": true
+    },
+    {
+      "name": "洗牌后的提示不立即重复",
+      "passed": true
+    },
+    {
+      "name": "本机记录可跨刷新保留",
+      "passed": true
+    },
+    {
+      "name": "重置会取消待揭晓动作并清除本机记录",
+      "passed": true
+    },
+    {
+      "name": "效果页签支持键盘操作",
+      "passed": true
+    },
+    {
+      "name": "地图模块可进入区域服务技能",
+      "passed": true
+    },
+    {
+      "name": "每个模块有可直接访问的入口",
+      "passed": true
+    },
+    {
+      "name": "390px / hero 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "390px / menu 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "390px / broth 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "390px / delivery 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "390px / fortune 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "768px / hero 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "768px / menu 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "768px / broth 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "768px / delivery 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "768px / fortune 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "1280px / hero 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "1280px / menu 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "1280px / broth 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "1280px / delivery 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "1280px / fortune 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "减少动态偏好时汤碗不会持续动画",
+      "passed": true
+    },
+    {
+      "name": "减少动态偏好仍可操作搅汤",
+      "passed": true
+    },
+    {
+      "name": "减少动态偏好即时显示投送结果",
+      "passed": true
+    },
+    {
+      "name": "浏览器没有未处理运行错误",
+      "passed": true
+    },
+    {
+      "name": "仅加载明确标示的原站视频",
+      "passed": true
+    },
+    {
+      "name": "未提交原站咨询、留言或统计",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "externalRequests": [
+    {
+      "url": "https://combinationsoupstudio.com.au/assets/previews/soup-v-soup-s.mp4",
+      "method": "GET"
+    },
+    {
+      "url": "https://combinationsoupstudio.com.au/assets/previews/soup-v-soup-s.mp4",
+      "method": "GET"
+    }
+  ],
+  "failedRequests": [],
+  "scope": "五个拆分模块的浏览器功能与布局；视频直连原站，四项采用选定原站素材与组件的本地适配。视觉对照另见 design-qa.md。未验收真实手机陀螺仪、订单、原站后端或业务转化。"
+}

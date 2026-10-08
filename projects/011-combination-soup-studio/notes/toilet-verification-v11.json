@@ -1,0 +1,209 @@
+{
+  "completed": true,
+  "failure": null,
+  "checks": [
+    {
+      "name": "正式主视觉与材质特写实际加载",
+      "passed": true
+    },
+    {
+      "name": "马桶案例直接进入独立产品模块",
+      "passed": true
+    },
+    {
+      "name": "默认保留未测量项而非安装成功",
+      "passed": true
+    },
+    {
+      "name": "盖板开合实际改变三维画面",
+      "passed": true
+    },
+    {
+      "name": "陶瓷配色实际改变像素",
+      "passed": true
+    },
+    {
+      "name": "切换型号实际改变水箱与形体",
+      "passed": true
+    },
+    {
+      "name": "摄影棚与卫浴空间实际改变画面",
+      "passed": true
+    },
+    {
+      "name": "环境选择同步交接数据",
+      "passed": true
+    },
+    {
+      "name": "型号切换同步尺寸/电源/示例价",
+      "passed": true
+    },
+    {
+      "name": "侧面与尺寸标注改变画面",
+      "passed": true
+    },
+    {
+      "name": "侧面视角同步尺寸开关",
+      "passed": true
+    },
+    {
+      "name": "部件视角实际展开组件",
+      "passed": true
+    },
+    {
+      "name": "部件展开值同步交接数据",
+      "passed": true
+    },
+    {
+      "name": "完整示例现场可初步匹配",
+      "passed": true
+    },
+    {
+      "name": "示例合计由产品与安装需求驱动",
+      "passed": true
+    },
+    {
+      "name": "坑距改变后原匹配结果失效",
+      "passed": true
+    },
+    {
+      "name": "电子款缺少电源形成冲突",
+      "passed": true
+    },
+    {
+      "name": "无电源款恢复正确规则",
+      "passed": true
+    },
+    {
+      "name": "空间宽度不足形成明确冲突",
+      "passed": true
+    },
+    {
+      "name": "空间进深不足形成明确冲突",
+      "passed": true
+    },
+    {
+      "name": "后排水不会误判为当前目录适用",
+      "passed": true
+    },
+    {
+      "name": "清空已填测量值重新回到待确认",
+      "passed": true
+    },
+    {
+      "name": "异常现场数值禁止导出选型单",
+      "passed": true
+    },
+    {
+      "name": "异常现场数值禁止导出错误项目包",
+      "passed": true
+    },
+    {
+      "name": "选型单准确记录型号/坑距/现场/示例合计",
+      "passed": true
+    },
+    {
+      "name": "交接说明包含尺寸与待复核边界",
+      "passed": true
+    },
+    {
+      "name": "真实画面可下载 PNG",
+      "passed": true
+    },
+    {
+      "name": "马桶作为独立产品保存",
+      "passed": true
+    },
+    {
+      "name": "产品定义保留马桶配置与现场条件",
+      "passed": true
+    },
+    {
+      "name": "正式展示资产完整进入交付包",
+      "passed": true
+    },
+    {
+      "name": "马桶 ZIP 完整且仅含所需模块",
+      "passed": true
+    },
+    {
+      "name": "独立包的正式影像和三维材质实际加载",
+      "passed": true
+    },
+    {
+      "name": "独立包恢复所选型号/现场/安装需求",
+      "passed": true
+    },
+    {
+      "name": "独立包继续按业务规则核对",
+      "passed": true
+    },
+    {
+      "name": "离开工作台仍可完整操作与导出",
+      "passed": true
+    },
+    {
+      "name": "完整产品页使用当前型号与现场条件",
+      "passed": true
+    },
+    {
+      "name": "刷新保留马桶产品身份",
+      "passed": true
+    },
+    {
+      "name": "商家修改目录尺寸后实际运行页更新",
+      "passed": true
+    },
+    {
+      "name": "商家修改规划值影响实际核对结果",
+      "passed": true
+    },
+    {
+      "name": "不合理总高/坐高关系阻止构建",
+      "passed": true
+    },
+    {
+      "name": "768 马桶定义页无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "768 马桶预览可布局与滚动",
+      "passed": true
+    },
+    {
+      "name": "390 马桶定义页无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "390 马桶预览可布局与滚动",
+      "passed": true
+    },
+    {
+      "name": "1440 完整产品页无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "768 完整产品页无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "390 完整产品页无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "手机加载专门的竖版主视觉",
+      "passed": true
+    },
+    {
+      "name": "马桶运行无未处理浏览器错误",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "概念形体与虚构目录，未作实物尺寸或材质标定",
+    "空间预留为商家规划值；实际安装需厂商图纸及现场复核",
+    "未接入在线模型、真实报价或订单",
+    "模拟手机视口，不代表真机性能"
+  ]
+}

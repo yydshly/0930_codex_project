@@ -1,5 +1,7 @@
 # GitHub 项目研究集
 
+[011 完整交互研究与产品展示](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/) · [全景理解图](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/understanding-map.html) · [文字理解汇总](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/understanding.html)：原站效果、技能、业务场景、马桶与耳机、制作及交付工作台共用完整入口。
+
 持续收录值得研究的开源项目，记录它们解决的问题、核心设计、运行过程和可复用的经验。每个子项目独立整理研究笔记、界面截图与演示，首页只保留摘要和入口。
 
 这里的研究关注七个问题：**能做什么、底层怎么做、如何运行、支持什么系统、适合哪些场景、对我们有何价值、后续怎样扩展**。索引中的“源库”使用原仓库名称，研究文档与教学网页则由本项目整理。先看引导图建立整体理解，再用网页验证自己的理解；模拟演示不等于上游程序的实机测试。
@@ -21,6 +23,7 @@
 | 005 | [Plush Lab · 毛绒实验室](projects/005-plush-lab/README.md) | **背景：** 从舒适自然的毛绒质感出发，积累创作、互动与研究<br>**能力：** 绒毛剪染卷梳、随机搭配、小世界、陪伴笔记、页面提醒、固定任务及完整原作高斯展示<br>**原理：** Three.js 程序纤维与表面场、Spark 高斯渲染、状态机与本机存储<br>**场景：** 自由设计、网页角色、技术学习与生活记录<br>**价值：** 保留你的作品和方法积累，为陪伴与 Agent 可视化提供基础<br>**边界：** 研究原型，真实 AI 与后台提醒待接入，自制质感尚未达到参考。 | 研究中 | [mrdoob/three.js](https://github.com/mrdoob/three.js) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/005-plush-lab/) |
 | 006 | [AI Visual Atlas · 视觉创作能力图谱](projects/006-ai-visual-atlas/README.md) | **范围：** 研究十个视觉创作链接，区分作品源码、风格 Skill、游戏成品、生成工具与资料索引<br>**原理：** 模型理解与创作，代码逐帧渲染、实时游戏，以及生成素材和合成，各项目分别核对<br>**场景：** 音乐 MV、产品宣传、角色动画、游戏体验与风格研究<br>**实测：** 整曲图片 MV、5 秒 H3 演唱与绿幕合成、24 秒六幕网页宣传片<br>**意义：** 理解可复用的时间线、模型调度、素材一致性、检查与交付<br>**边界：** 全曲真实演唱、逐字口型验收和任意 URL 自动服务未完成，部分原作仅本地研究，完整游戏游玩未验收。 | 已完成 | [鸟哥 · 十个视觉创作项目汇总](https://x.com/NFTCPS/status/2105493719931826452)<br>资料索引：[yihui-dev/awesome-opus5-5-videos](https://github.com/yihui-dev/awesome-opus5-5-videos)<br>[十项目源库列表](projects/006-ai-visual-atlas/publication/index.html#library) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/006-ai-visual-atlas/) |
 | 007 | [Koi Scene Lab · 庭院效果与实景构造](projects/007-koi-scene-lab/README.md) | **能力：** 原作体验、按图三维庭院、投喂与惊散、生态动物、GLB 导入与尺寸校准<br>**原理：** 程序化建模、GPU 水波与反射折射、Boids 群游、骨骼动画与状态机<br>**场景：** 互动展示、庭院预演、已有模型核对与技术学习<br>**价值：** 保存场景体验和可复用方法，为数字老家与个性化作品建立基础<br>**扩展：** 照片参数化、纪念摆件、实物交付与一致性核验，均需继续建设<br>**边界：** 研究原型，未做现场测绘，尚无照片自动建模和制造输出。 | 研究中 | [souranyp-stack/koi-pond-garden](https://github.com/souranyp-stack/koi-pond-garden) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/007-koi-scene-lab/) |
+| 011 | [Combination Soup Studio · 交互展示与业务价值](projects/011-combination-soup-studio/README.md) | **定位：** 以交互官网为参考，拆解效果并沉淀可复用的产品体验与交付方法<br>**能力：** 五项效果、四类技能、三类业务场景，马桶与耳机完整产品页、目标及交付工作台<br>**原理：** 素材与浏览器事件驱动画面和状态，Canvas与Three.js/WebGL承担二维及三维，配置贯穿PNG、JSON、简报和ZIP<br>**场景：** 品牌活动、产品解释与选配、区域服务查询、庭院方案评审<br>**价值：** 帮助理解、比较和保留选择，便于团队复用与继续制作<br>**扩展：** 按新品类补齐事实、视觉标杆、资产、交互和验收，逐步建立质量修正闭环<br>**边界：** 原站开源许可未确认，当前为概念原型，在线模型与任意产品自动交付未验收，商业收益未实测。 | 已完成 | [Combination Soup Studio · 官网案例](https://combinationsoupstudio.com.au/)<br>公开仓库未确认 | — |
 
 <!-- PROJECT_INDEX:END -->
 
@@ -134,6 +137,22 @@
 ![Koi Scene Lab · 庭院效果与实景构造 项目引导图](projects/007-koi-scene-lab/assets/library-value-map-v21.png)
 
 [研究详情](projects/007-koi-scene-lab/README.md) · [在线演示](https://yydshly.github.io/0930_codex_project/projects/007-koi-scene-lab/)
+
+### 011 · Combination Soup Studio · 交互展示与业务价值
+
+- **定位：** 以交互官网为参考，拆解效果并沉淀可复用的产品体验与交付方法
+- **能力：** 五项效果、四类技能、三类业务场景，马桶与耳机完整产品页、目标及交付工作台
+- **原理：** 素材与浏览器事件驱动画面和状态，Canvas与Three.js/WebGL承担二维及三维，配置贯穿PNG、JSON、简报和ZIP
+- **场景：** 品牌活动、产品解释与选配、区域服务查询、庭院方案评审
+- **价值：** 帮助理解、比较和保留选择，便于团队复用与继续制作
+- **扩展：** 按新品类补齐事实、视觉标杆、资产、交互和验收，逐步建立质量修正闭环
+- **边界：** 原站开源许可未确认，当前为概念原型，在线模型与任意产品自动交付未验收，商业收益未实测。
+
+效果来源：[Combination Soup Studio · 官网案例](https://combinationsoupstudio.com.au/)。公开仓库未确认，按公开网页进行研究。先阅读下方引导图，再进入研究文档与交互演示。
+
+![Combination Soup Studio · 交互展示与业务价值 项目引导图](projects/011-combination-soup-studio/assets/understanding-map.png)
+
+[研究详情](projects/011-combination-soup-studio/README.md)
 
 <!-- PROJECT_PREVIEWS:END -->
 

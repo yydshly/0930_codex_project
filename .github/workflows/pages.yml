@@ -31,6 +31,10 @@ jobs:
           python -m unittest discover -s tests -v
           node --check projects/001-witr/web/app.js
           node --check projects/001-witr/web/data.js
+          node --check projects/011-combination-soup-studio/web/app.js
+          node --check projects/011-combination-soup-studio/web/foundry/app.js
+          node --check projects/011-combination-soup-studio/web/foundry/planner.js
+          node --check projects/011-combination-soup-studio/web/foundry/studio.js
           node --check projects/004-rhythm-drop/web/app.js
           node --check projects/004-rhythm-drop/web/garden/app.js
           node --check projects/004-rhythm-drop/web/garden/ecosystem/app.js

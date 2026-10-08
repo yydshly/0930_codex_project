@@ -1,0 +1,173 @@
+{
+  "date": "2026-10-02",
+  "revision": "20261002-7",
+  "checks": [
+    {
+      "name": "品牌使用实际解码的原创照片",
+      "passed": true
+    },
+    {
+      "name": "摄影标签和正文仍同步客户内容",
+      "passed": true
+    },
+    {
+      "name": "品牌行动入口导出的内容保持当前选择",
+      "passed": true
+    },
+    {
+      "name": "长文案未越出画面或覆盖底部 1440",
+      "passed": true
+    },
+    {
+      "name": "品牌无横向溢出 1440",
+      "passed": true
+    },
+    {
+      "name": "长文案未越出画面或覆盖底部 768",
+      "passed": true
+    },
+    {
+      "name": "品牌无横向溢出 768",
+      "passed": true
+    },
+    {
+      "name": "长文案未越出画面或覆盖底部 390",
+      "passed": true
+    },
+    {
+      "name": "品牌无横向溢出 390",
+      "passed": true
+    },
+    {
+      "name": "庭院实际使用WebGL并保留面积数据",
+      "passed": true
+    },
+    {
+      "name": "减少动态偏好默认暂停水面",
+      "passed": true
+    },
+    {
+      "name": "暂停后实际Canvas画面保持静止",
+      "passed": true
+    },
+    {
+      "name": "夜色实际改变庭院灯光像素",
+      "passed": true
+    },
+    {
+      "name": "主动启用水面后实际画面变化",
+      "passed": true
+    },
+    {
+      "name": "水面持续产生实时变化",
+      "passed": true
+    },
+    {
+      "name": "总览平面使用不同的真实投影",
+      "passed": true
+    },
+    {
+      "name": "平面视角记录在结果中",
+      "passed": true
+    },
+    {
+      "name": "复位恢复三维观察",
+      "passed": true
+    },
+    {
+      "name": "键盘旋转确实改变三维庭院",
+      "passed": true
+    },
+    {
+      "name": "拖动确实改变三维庭院",
+      "passed": true
+    },
+    {
+      "name": "滚轮实际缩放庭院",
+      "passed": true
+    },
+    {
+      "name": "缩放状态随实际视图记录",
+      "passed": true
+    },
+    {
+      "name": "尺度变更实际重建空间",
+      "passed": true
+    },
+    {
+      "name": "方案A还原实际空间和面积",
+      "passed": true
+    },
+    {
+      "name": "比较未覆盖当前输入",
+      "passed": true
+    },
+    {
+      "name": "比较导出记录的是查看中的方案A",
+      "passed": true
+    },
+    {
+      "name": "方案A导出包含真实三维像素",
+      "passed": true
+    },
+    {
+      "name": "返回后保留最新真实画面与参数",
+      "passed": true
+    },
+    {
+      "name": "庭院平面标题和工具栏位于画面内 1440",
+      "passed": true
+    },
+    {
+      "name": "庭院无横向溢出 1440",
+      "passed": true
+    },
+    {
+      "name": "庭院平面标题和工具栏位于画面内 768",
+      "passed": true
+    },
+    {
+      "name": "庭院无横向溢出 768",
+      "passed": true
+    },
+    {
+      "name": "庭院平面标题和工具栏位于画面内 390",
+      "passed": true
+    },
+    {
+      "name": "庭院无横向溢出 390",
+      "passed": true
+    },
+    {
+      "name": "极端尺度面积完整 8x6",
+      "passed": true
+    },
+    {
+      "name": "极端尺度面积完整 18x14",
+      "passed": true
+    },
+    {
+      "name": "无WebGL时庭院明确标记二维兼容",
+      "passed": true
+    },
+    {
+      "name": "兼容模式停用不支持的三维与水面功能",
+      "passed": true
+    },
+    {
+      "name": "兼容平面仍可变更参数",
+      "passed": true
+    },
+    {
+      "name": "本地素材没有加载失败",
+      "passed": true
+    },
+    {
+      "name": "没有未处理浏览器错误",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "failedAssets": [],
+  "scope": "Actual pixels, observations, areas, exports and desktop/tablet/phone layout. No claim of subjective parity with source, physical calibration or mobile hardware performance."
+}

@@ -1,0 +1,43 @@
+{
+  "createdAt": "2026-10-08T05:14:06.611Z",
+  "mode": "Actual HTTP server with public hostname mapped to local loopback and repository subpath preserved; no virtual fulfillment. Chromium treats this origin as secure to match the deployed HTTPS runtime (crypto.randomUUID).",
+  "base": "http://soup-preview.test:8963/0930_codex_project/projects/011-combination-soup-studio/",
+  "checks": [
+    {
+      "name": "1440/PNG-native-actual-download",
+      "passed": true,
+      "detail": {
+        "name": "combination-soup-understanding-map.png",
+        "bytes": 4983755,
+        "width": 2800,
+        "height": 9581,
+        "sha256": "2712f080d304a1e3ac1704d237648a13a0f51a7f5e55f32a044865cf5e05fc3d"
+      }
+    },
+    {
+      "name": "1440/garden-stable-deeplink",
+      "passed": true
+    },
+    {
+      "name": "fatal",
+      "passed": false,
+      "detail": "page.waitForFunction: Timeout 20000ms exceeded.\n    at D:\\codex\\home\\worktrees\\soup-publication\\0930_codex_project\\projects\\011-combination-soup-studio\\notes\\publication-browser-recheck.mjs:16:67"
+    }
+  ],
+  "passed": 2,
+  "failed": [
+    {
+      "name": "fatal",
+      "passed": false,
+      "detail": "page.waitForFunction: Timeout 20000ms exceeded.\n    at D:\\codex\\home\\worktrees\\soup-publication\\0930_codex_project\\projects\\011-combination-soup-studio\\notes\\publication-browser-recheck.mjs:16:67"
+    }
+  ],
+  "errors": [],
+  "bad": [],
+  "requestCount": 50,
+  "corrects": [
+    "Virtual HTTPS PNG downloads were canceled by the test routing environment; native HTTP verifies real file downloads and exact PNG bytes.",
+    "Initial mobile garden request read _site while it was being rebuilt and received ENOENT; stable rebuild is retested."
+  ],
+  "initialRecord": "publication-browser-check.json"
+}

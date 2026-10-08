@@ -1,0 +1,95 @@
+{
+  "completed": true,
+  "failure": null,
+  "checks": [
+    {
+      "name": "铝壳观察切换实际焦点与画面",
+      "passed": true
+    },
+    {
+      "name": "耳垫观察实际改变观察方向",
+      "passed": true
+    },
+    {
+      "name": "旋转近景保持耳罩焦点而非跳回整机",
+      "passed": true
+    },
+    {
+      "name": "放大画面后隐去旁栏并保留观察范围",
+      "passed": true
+    },
+    {
+      "name": "收起画面恢复操作栏",
+      "passed": true
+    },
+    {
+      "name": "实际 JSON 保留近景观察字段",
+      "passed": true
+    },
+    {
+      "name": "实际简报说明耳罩观察范围",
+      "passed": true
+    },
+    {
+      "name": "工作台刷新后近景焦点与自定义角度恢复",
+      "passed": true
+    },
+    {
+      "name": "完整产品接收真实近景范围与角度",
+      "passed": true
+    },
+    {
+      "name": "近景 PNG 与当前实际画布完全相同",
+      "passed": true
+    },
+    {
+      "name": "交付定义保留耳罩相机范围",
+      "passed": true
+    },
+    {
+      "name": "阻断包外请求后仍恢复同一近景范围与角度",
+      "passed": true
+    },
+    {
+      "name": "独立包可从近景回到整机",
+      "passed": true
+    },
+    {
+      "name": "1440 / 六个视角按钮无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "1440 / 放大预览无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "768 / 六个视角按钮无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "768 / 放大预览无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "390 / 六个视角按钮无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "390 / 放大预览无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "重置恢复整机观察范围",
+      "passed": true
+    },
+    {
+      "name": "无未处理浏览器错误",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "真实本地概念模型，非在线生成或实物标定",
+    "手机视口模拟，未测真机性能或商业效果"
+  ]
+}

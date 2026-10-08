@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="一张全景图展示 Combination Soup Studio 的目标、效果、原理、技能、产品场景、价值与质量交付规划。">
+  <title>Combination Soup Studio · 一图全景</title>
+  <link rel="icon" href="favicon.svg">
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#e9ecdf;color:#294235;font:14px/1.7 system-ui,"Microsoft YaHei",sans-serif}a{color:#355a3e;text-underline-offset:4px}a:focus-visible,button:focus-visible{outline:3px solid #967344;outline-offset:3px}.bar{position:sticky;top:0;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 26px;background:#faf9f0f5;border-bottom:1px solid #d2daca;backdrop-filter:blur(8px)}.bar>div{display:flex;align-items:center;gap:22px;flex-wrap:wrap}.bar strong{font-size:15px;font-weight:600}.bar nav{display:flex;gap:18px;flex-wrap:wrap;font-size:12px}.tools{display:flex;align-items:center;gap:9px}.tools button,.tools a{border:1px solid #bccab1;background:#f2f5e8;color:#3b5836;font-family:inherit;font-size:12px;line-height:1.5;padding:8px 11px;min-height:38px;text-decoration:none;white-space:nowrap;border-radius:3px}.tools button{cursor:pointer}.tools button[aria-pressed=true]{background:#35543c;color:#fffdf0}.intro{max-width:1280px;margin:18px auto;padding:0 20px;display:flex;gap:20px;justify-content:space-between;font-size:12px;color:#62735b}.viewer{overflow:auto;max-width:100%;padding:0 20px 28px;scrollbar-width:thin}.viewer img{display:block;max-width:1280px;width:100%;height:auto;margin:auto;background:#f5f2e9;box-shadow:0 3px 22px #344b3320}.viewer[data-size=original] img{width:2800px;max-width:none;margin:0}.footer{max-width:1280px;margin:0 auto;padding:0 20px 24px;font-size:11px;color:#6a7d60}@media(max-width:700px){.bar{padding:12px 16px;flex-direction:column;align-items:stretch;gap:10px}.bar>div{gap:9px 16px}.bar nav{gap:13px;font-size:11px}.bar strong{font-size:14px}.tools{gap:7px}.tools button,.tools a{font-size:11px;padding:8px 10px}.intro{display:block;line-height:1.9}.intro span{display:block}.viewer{padding:0 8px 20px}}
+  </style>
+</head>
+<body>
+  <header class="bar"><div><strong>Combination Soup Studio · 一图全景</strong><nav aria-label="相关入口"><a href="./#product-cases">实验室首页</a><a href="understanding.html">文字汇总</a><a href="foundry/showroom.html?example=toilet&revision=20261003-16">马桶</a><a href="foundry/showroom.html?example=headphones&revision=20261003-16">耳机</a></nav></div><div class="tools" aria-label="图片显示"><button type="button" data-size="fit" aria-pressed="true">适合宽度</button><button type="button" data-size="original" aria-pressed="false">原始尺寸</button><a href="assets/understanding-map.png" download="combination-soup-understanding-map.png">下载高清 PNG</a></div></header>
+  <main><div class="intro"><span>11 个板块 · 16 张实际画面 · 目标、效果、原理、技能、场景、价值与扩展</span><span>可切换原始尺寸查看细节，手机也可双指缩放。</span></div><div class="viewer" id="viewer" data-size="fit"><img src="assets/understanding-map.png" width="2800" height="9581" alt="Combination Soup Studio 全景理解图：原站目标、五种效果、实现原理、四类技能、三个业务场景、马桶和耳机案例、Foundry流程、模型与质量共识、对我们的意义、质量交付规划、当前边界及18项研究关系。"></div></main>
+  <footer class="footer">图中分别标明固定系列影像、实际模型与待建设流程；完整的自动质量闭环仍待实现。整理于 2026-10-03。</footer>
+  <script>
+    const viewer=document.querySelector('#viewer'),buttons=[...document.querySelectorAll('button[data-size]')];
+    for(const button of buttons)button.addEventListener('click',()=>{viewer.dataset.size=button.dataset.size;for(const peer of buttons)peer.setAttribute('aria-pressed',String(peer===button));viewer.scrollLeft=0;});
+  </script>
+</body>
+</html>

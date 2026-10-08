@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="FORM 形卫：产品设计、三维选配与卫浴空间核对。"><title>FORM 形卫 · 产品体验</title><link rel="icon" href="../favicon.svg"><link rel="stylesheet" href="prototype.css?v=20261002-11"><link rel="stylesheet" href="../product-entry.css?v=20261003-17"></head><body><nav class="foundry-site-nav" aria-label="相关页面"><span>IDEA FOUNDRY / 产品案例</span><div><a href="../">实验室首页</a><a href="studio.html?revision=20261003-16">目标工作台</a><a href="showroom.html?example=toilet&revision=20261003-16" data-case="toilet">马桶产品页</a><a href="showroom.html?example=headphones&revision=20261003-16" data-case="headphones">耳机产品页</a><a id="showroom-workbench" href="./?revision=20261003-16">编辑当前产品</a><a href="../understanding.html">理解汇总</a></div></nav><div id="app"></div><script type="application/json" id="prototype-config"></script><script type="module">
+import {presets,normalize} from './core.js?v=20261003-16';
+const example=new URLSearchParams(location.search).get('example');let config=example==='headphones'?presets.headphones:presets.toilet;
+if(!['toilet','headphones'].includes(example)){
+  try{config=normalize(JSON.parse(localStorage.getItem('011.foundry.showcase.v1'))||presets.toilet);}catch{}
+}
+document.querySelector('#prototype-config').textContent=JSON.stringify({...config,_instanceId:'showcase'});
+const kind=config.template==='product'?config.product.kind:null;
+if(['toilet','headphones'].includes(kind)){
+  document.querySelector(`[data-case="${kind}"]`).setAttribute('aria-current','page');
+  document.querySelector('#showroom-workbench').href=`./?example=${kind}&step=preview&revision=20261003-16`;
+  document.querySelector('#showroom-workbench').textContent=kind==='toilet'?'马桶选型工作台':'耳机选配工作台';
+}
+document.title=config.name+' · 产品体验';
+await import('./prototype.js?v=20261003-16');
+</script></body></html>

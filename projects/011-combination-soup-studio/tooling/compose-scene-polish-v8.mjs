@@ -1,0 +1,10 @@
+import {createRequire} from 'node:module';import {fileURLToPath} from 'node:url';
+const require=createRequire('C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/package.json'),sharp=require('sharp'),root=fileURLToPath(new URL('../',import.meta.url)),qa=root+'assets/qa/v8/';
+const label=(w,h,title)=>Buffer.from(`<svg width="${w}" height="${h}"><rect width="${w}" height="${h}" fill="#f4f1e8"/><text x="24" y="34" font-family="Arial" font-size="20" fill="#344731">${title}</text></svg>`);
+const pairs=[['garden-water','garden-water'],['garden-plant','garden-plant'],['product','product']],layers=[];
+for(let row=0;row<pairs.length;row++)for(let col=0;col<2;col++){const name=col?'final-'+pairs[row][1]+'-1440.png':'before-'+pairs[row][0]+'-1440.png',input=await sharp(qa+name).resize({width:640,height:490,fit:'contain',background:'#f4f1e8'}).png().toBuffer();layers.push({input,left:12+col*658,top:60+row*504});}
+layers.push({input:label(658,60,'REVISION 7'),left:0,top:0},{input:label(670,60,'REVISION 8 / Actual browser capture'),left:658,top:0});
+await sharp({create:{width:1328,height:1580,channels:4,background:'#f4f1e8'}}).composite(layers).png().toFile(root+'assets/scene-polish-v8-comparison.png');
+const water=await sharp(qa+'final-garden-water-1440.png').resize({width:920}).png().toBuffer(),plant=await sharp(qa+'final-garden-plant-1440.png').resize({width:654}).png().toBuffer(),product=await sharp(qa+'final-product-1440.png').resize({width:654}).png().toBuffer(),decision=await sharp(qa+'final-decision-garden.png').resize({width:920}).png().toBuffer();
+await sharp({create:{width:1600,height:1045,channels:4,background:'#f4f1e8'}}).composite([{input:label(1600,60,'011 / Revision 8 · Scene quality and selection results'),left:0,top:0},{input:water,left:12,top:60},{input:decision,left:12,top:665},{input:plant,left:942,top:60},{input:product,left:942,top:495}]).png().toFile(root+'assets/scene-polish-v8-gallery.png');
+console.log('Composed current screenshots and matched revision comparison.');

@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="整理网页研究、产品化理解、当前能力、演示入口与质量交付规划。区分已实现能力和待建设流程。">
+  <title>网页能力研究与产品化理解汇总 · 研究汇总</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="understanding.css">
+</head>
+<body>
+  <a class="skip" href="#content">跳到汇总正文</a>
+  <header class="site-header">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">CS＋</span><span>研究与产品化<small>COMBINATION SOUP / 011</small></span></a>
+    <nav aria-label="快捷入口"><a href="./">能力实验室</a><a href="foundry/studio.html?example=headphones&amp;revision=20261003-16">目标工作台</a><a href="foundry/showroom.html?example=toilet&amp;revision=20261003-16">查看马桶</a><a href="foundry/showroom.html?example=headphones&amp;revision=20261003-16#aura-configure">查看耳机</a></nav>
+  </header>
+  <main id="content">
+    <div class="hero">
+      <p class="eyebrow">FIELD NOTES · 2026 / 10 / 03</p>
+      <h1>网页能力研究与产品化理解汇总</h1>
+      <p class="hero-intro">把讨论形成的理解、现有实现和下一步验证放在同一个入口。</p>
+      <div class="hero-meta"><span><b>18</b> 项研究快照</span><span><b>8</b> 个整理章节</span><span><b>V1.7</b> 耳机验证案例</span></div>
+      <a class="hero-action" href="understanding-map.html">查看全景理解图 <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="reading-layout">
+      <aside class="contents"><p>阅读目录</p><nav aria-label="汇总章节"><a href="#consensus"><span>01</span>我们的理解</a><a href="#source"><span>02</span>原站与技能</a><a href="#requirements"><span>03</span>随机产品要求</a><a href="#current"><span>04</span>实际能力</a><a href="#pages"><span>05</span>当前页面</a><a href="#research"><span>06</span>网页研究索引</a><a href="#quality"><span>07</span>质量与交付</a><a href="#evidence"><span>08</span>依据与维护</a></nav><div class="contents-note">先确认目标与边界，<br>再选择能力与验证方法。</div></aside>
+      <article class="document" aria-label="理解与网页研究汇总"><p>理解快照：2026-10-03；公开整理：2026-10-08。当前验证案例：Idea Foundry 耳机 V1.7，revision <code>20261003-16</code>。本页整理讨论共识与仓库现有资料；新增整理不等于新增能力，也不代表重新运行全部项目。</p>
+<blockquote>
+<p>我们要做的是：用户提出产品目标，系统补齐制作要求，模型完成制作、检查、修正和交付。用户一次提交，系统内部可以多轮工作。当前已有研究资产、展示模块和交付原型，完整的自动质量闭环仍待建设。</p>
+</blockquote>
+<p>公开版保留全部011页面和演示，相关研究只对已发布项目提供可访问网页；本机研究以文字保留，明确标注待发布。静态工作台可使用预置方案与本地规则，在线模型服务尚未部署。</p>
+<section id="consensus" aria-labelledby="heading-consensus"><h2 id="heading-consensus">01 · 我们已经形成的理解</h2>
+<p><strong>核心不是让用户写出所有技术约束，而是让产品把目标转成可执行、可验证的制作要求。</strong> 模型负责理解、创作和判断；参考、工具、素材与流程决定它能否把判断落实为可靠结果。</p>
+<div class="table-scroll" role="region" aria-label="对照表 1，可横向滚动" tabindex="0"><table>
+<thead>
+<tr>
+<th>问题</th>
+<th>已形成的理解</th>
+<th>对产品设计的影响</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>给一个网页链接就能生成吗？</td>
+<td>链接提供参考与信息。还需要明确任务、拆解效果、制作资产、编写实现并实际运行。</td>
+<td>把参考接入、制作和验证连成流程，不能把“读了网页”当成交付完成。</td>
+</tr>
+<tr>
+<td>最终是否依赖模型？</td>
+<td>是。技能组织模型的工作，已有代码、资产与工具也提供可直接执行的能力。</td>
+<td>沉淀可复用流程和模块，并记录模型、资产与执行条件。</td>
+</tr>
+<tr>
+<td>是否都是模型自由发挥？</td>
+<td>模型做具体创作判断；产品目标、视觉标杆、事实资料和验收要求约束方向。</td>
+<td>给出可观察的目标，允许创造适合该产品的表达。</td>
+</tr>
+<tr>
+<td>为什么最初效果简单？</td>
+<td>制作路径偏向快速功能原型，视觉标杆、资产质量和实际画面对照不足。</td>
+<td>一开始就制定视觉目标，运行后按真实画面发现差距。</td>
+</tr>
+<tr>
+<td>能不能一次达标？</td>
+<td>一次提交是用户体验目标；单次模型输出无法保证全部达标。</td>
+<td>把内部检查与修正交给系统，减少用户反复说“继续优化”。</td>
+</tr>
+<tr>
+<td>质量和交付也交给模型？</td>
+<td>模型应承担审查、修正和交付组织；程序负责实际运行与取证，用户判断是否符合业务目标与偏好。</td>
+<td>制作完成、检查通过、交付完成分别记录，保留真实证据。</td>
+</tr>
+<tr>
+<td>技能的价值是什么？</td>
+<td>复用工作方法、减少遗漏和重复解释，让结果可以检查、继续修改和交接。</td>
+<td>价值需要用任务成功率、返工、交付可用性及成本验证。</td>
+</tr>
+</tbody></table></div>
+<p>三方职责：</p>
+<ul>
+<li><strong>用户</strong>：说明产品、受众、希望访客完成的任务，以及重要偏好和现有资料；确认最终结果。</li>
+<li><strong>模型</strong>：补齐制作要求，选择合适的实现，生成或修改作品，审查实际结果，定位缺陷并修正。</li>
+<li><strong>执行系统</strong>：运行项目、获取截图、执行操作与测试、保存版本、导出文件、记录时间与成本。</li>
+</ul>
+<p>“模型说通过”不足以证明完成。视觉质量需要实际画面，功能需要实际操作，交付需要下载包独立运行，业务价值需要真实使用数据。</p>
+</section><section id="source" aria-labelledby="heading-source"><h2 id="heading-source">02 · 从原网站到我们的技能</h2>
+<p><a href="https://combinationsoupstudio.com.au/" target="_blank" rel="noopener noreferrer">Combination Soup Studio 原网站</a> 是交互官网与视觉表达案例。当前未确认其公开源码仓库或开源许可证，不能把它当成已确认可调用的开源库。</p>
+<p>我们研究的可迁移内容包括构图、材质、布光、运动节奏、交互反馈，以及“用操作帮助访客理解和选择”的方式。接入采用分项拆解：汤碗使用原站视频 URL；旋转菜单和幸运饼干使用注明来源的选定素材；搅汤和地图采用选定绘制核心的模块适配。来源说明保留在项目中。</p>
+<p>这五个效果给我们提供视觉参照与交互机制。用于自己的业务时，还要改变内容、任务、状态和输出，例如：</p>
+<div class="table-scroll" role="region" aria-label="对照表 2，可横向滚动" tabindex="0"><table>
+<thead>
+<tr>
+<th>可迁移方法</th>
+<th>我们的任务表达</th>
+<th>访客得到什么</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>有节奏的画面与内容切换</td>
+<td>品牌叙事、系列选型</td>
+<td>理解品牌，找到感兴趣的方案</td>
+</tr>
+<tr>
+<td>操作导致可见变化</td>
+<td>产品解释、配色与结构探索</td>
+<td>理解区别，作出选择</td>
+</tr>
+<tr>
+<td>地图、区域状态与反馈</td>
+<td>服务覆盖和资格查询</td>
+<td>知道当前地区能否使用服务</td>
+</tr>
+<tr>
+<td>揭晓、展开与结果反馈</td>
+<td>内容领取、任务结果展示</td>
+<td>看见结果，留下可保存的记录</td>
+</tr>
+</tbody></table></div>
+<p>项目内的 <code>interactive-business-experience</code> 技能包组织输入、参考、制作、检查与输出。它目前保存在本项目中，未安装为全局技能。原站没有赋予模型新的生成能力；我们的价值在于把参考方法与已有实现组织成可重复执行的工作。</p>
+<p>原站的统计、咨询提交和优惠业务未接入我们的演示。独立产品交付包使用本项目产品模块和资产，不携带原站整页与素材。后续正式采用来源素材或代码时，需要按对应许可核对。</p>
+</section><section id="requirements" aria-labelledby="heading-requirements"><h2 id="heading-requirements">03 · 随机产品如何补齐要求</h2>
+<p>用户后续可能提出耳机、马桶、灯具或陌生产品。共同流程可以复用，制作要求需要随产品和任务改变。</p>
+<p>建议的输入是：<strong>产品是什么 → 给谁看 → 希望对方完成什么 → 重要偏好 → 已有资料或参考</strong>。系统先从这些信息生成要求草案，缺少会影响事实或效果的资料时再补问；用户不需要自己规定三维结构、光照参数和技术检查。</p>
+<div class="table-scroll" role="region" aria-label="对照表 3，可横向滚动" tabindex="0"><table>
+<thead>
+<tr>
+<th>层次</th>
+<th>如何确定要求</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>通用交付要求</td>
+<td>每个任务都需要</td>
+<td>内容完整、关键操作可用、手机布局、状态保存、导出一致、来源可追溯</td>
+</tr>
+<tr>
+<td>产品与任务要求</td>
+<td>根据产品和使用任务生成</td>
+<td>耳机关注佩戴结构、耳垫与选配；马桶关注尺寸、坑距和安装条件</td>
+</tr>
+<tr>
+<td>视觉要求</td>
+<td>结合参考画面、产品定位和资料生成</td>
+<td>形体比例、材质、布光、镜头、文字层级、操作节奏</td>
+</tr>
+<tr>
+<td>事实要求</td>
+<td>使用提供或核实的产品资料</td>
+<td>尺寸、型号、性能、价格与库存；缺资料时注明缺口</td>
+</tr>
+<tr>
+<td>实现要求</td>
+<td>结合已有模块和资源判断</td>
+<td>可复用模块、需新增模型或图片、运行方式与降级方案</td>
+</tr>
+<tr>
+<td>验收要求</td>
+<td>每条重要要求配实际观察方法</td>
+<td>同视角对照、操作后像素与状态变化、文件往返、独立包运行</td>
+</tr>
+</tbody></table></div>
+<p><strong>耳机验证</strong>：保持主视觉与实时模型的产品身份一致；检查头梁、耳罩、连接杆、耳垫、金属反射及接触阴影；让配色和表面选择立即可见，当前状态进入 PNG、配置与独立包。</p>
+<p><strong>马桶验证</strong>：让尺寸、坑距、电源和现场条件进入选型结果；展示与定义中的型号保持一致。当前目录与报价是示例，正式交付需要厂商资料和真实规则。</p>
+<p><strong>陌生产品验证</strong>：重新生成适合该产品的展示与验收要求，判断是否需要新增运行模块和资产。当前输入咖啡机等新类别，只能得到制作清单与模块缺口，不会自动生成新的完整三维产品。</p>
+<p>后续应积累“产品类型 × 访客任务 × 视觉参考 × 验收方法”的可复用案例。模板提供起点，模型根据当前目标调整；不能仅替换已有页面的产品名称。</p>
+</section><section id="current" aria-labelledby="heading-current"><h2 id="heading-current">04 · 当前项目实际做到哪里</h2>
+<h3>能力分层</h3>
+<div class="table-scroll" role="region" aria-label="对照表 4，可横向滚动" tabindex="0"><table>
+<thead>
+<tr>
+<th>层级</th>
+<th>数量</th>
+<th>当前内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>效果模块</td>
+<td>5</td>
+<td>汤碗与蒸汽、旋转菜单、搅汤、投送地图、幸运饼干</td>
+</tr>
+<tr>
+<td>技能方向</td>
+<td>4</td>
+<td>品牌叙事与选型、产品解释、区域查询、内容揭晓与反馈</td>
+</tr>
+<tr>
+<td>业务场景</td>
+<td>3</td>
+<td>品牌活动、ARC 桌灯选配、庭院方案评审</td>
+</tr>
+<tr>
+<td>Foundry 任务模板</td>
+<td>2</td>
+<td>产品选配 <code>product</code>、服务资格查询 <code>coverage</code></td>
+</tr>
+<tr>
+<td>产品运行模块</td>
+<td>3</td>
+<td>桌灯、马桶、头戴式耳机</td>
+</tr>
+</tbody></table></div>
+<p>以上是不同层次，不能把五个效果理解为五种自动生成产品的模板。</p>
+<h3>制作要求的三种来源</h3>
+<div class="table-scroll" role="region" aria-label="对照表 5，可横向滚动" tabindex="0"><table>
+<thead>
+<tr>
+<th>来源</th>
+<th>当前行为</th>
+<th>证据边界</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>预置示例 <code>demo</code></td>
+<td>开发时由代理模型写好耳机方案，保存在页面代码中</td>
+<td>点击时没有新的在线生成</td>
+</tr>
+<tr>
+<td>本地规则 <code>local-rules</code></td>
+<td>按有限分类和当前目标、受众、偏好整理草案</td>
+<td>不保证理解任意自然语言</td>
+</tr>
+<tr>
+<td>在线模型 <code>model</code></td>
+<td>可选本机 8952 服务生成限定结构的 JSON 制作要求</td>
+<td>只生成要求；真实在线调用未验收，已有接口测试使用模拟传输</td>
+</tr>
+</tbody></table></div>
+<h3>已实现与待实现</h3>
+<div class="table-scroll" role="region" aria-label="对照表 6，可横向滚动" tabindex="0"><table>
+<thead>
+<tr>
+<th>状态</th>
+<th>能力</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>已实现</strong></td>
+<td>目标输入、可编辑制作方案、已有模块预览、文案和操作范围调整、本机保存与 JSON 恢复</td>
+</tr>
+<tr>
+<td><strong>已实现</strong></td>
+<td>耳机换色、表面、旋转、六视角、近景、折叠、部件与环境选择；马桶安装条件核对和示例选型</td>
+</tr>
+<tr>
+<td><strong>已实现</strong></td>
+<td>当前状态导出为简报、JSON、PNG 和独立 ZIP；独立包包含页面、必要模块、资产、定义、说明和许可</td>
+</tr>
+<tr>
+<td><strong>部分实现</strong></td>
+<td>已有类别可以复用模块；新要求作为制作清单保存，不会自动生成任意产品形体和素材</td>
+</tr>
+<tr>
+<td><strong>待建设</strong></td>
+<td>参考 URL 自动采集、生成新的页面和资产、自动视觉审查、自动代码修正及再次验收的完整闭环</td>
+</tr>
+<tr>
+<td><strong>待验证或接入</strong></td>
+<td>真实在线模型调用、真机性能、完整辅助技术检查、实物或 CAD 标定，以及订单、支付、库存、咨询和商业效果</td>
+</tr>
+</tbody></table></div>
+<p>独立包需要本地静态 HTTP 服务运行。方案里的 <code>acceptance</code> 是待执行检查清单，<code>revisions</code> 是用户调整记录，当前都不是自动验收或自动修复的历史。</p>
+<p>耳机 V1.7 已改进实际形体、连接结构、材质、近景和选配层级。现有记录包含 21 项近景与交付、43 项回归、5 项兼容，以及 38 张实际捕获；本次汇总核对这些记录，没有重跑。功能证据不能证明摄影质感。皮革褶皱、软垫受力、微表面和光学反射仍有差距，未按实物或 CAD 标定。</p>
+</section><section id="pages" aria-labelledby="heading-pages"><h2 id="heading-pages">05 · 当前网页入口</h2>
+<p>按“理解能力 → 提目标 → 看实际产品 → 留下结果”的顺序体验。以下均为本机静态站入口，服务运行时可访问。</p>
+<div class="table-scroll" role="region" aria-label="对照表 7，可横向滚动" tabindex="0"><table>
+<thead>
+<tr>
+<th>网页</th>
+<th>可以查看什么</th>
+<th>入口</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>011 能力与价值实验室</td>
+<td>五项效果、四类技能、三个业务场景、原理和价值</td>
+<td><a href="./?effect=broth&skill=explain&scene=product#skills">进入总览</a></td>
+</tr>
+<tr>
+<td>Foundry 目标工作台</td>
+<td>产品目标、制作方案、资料缺口、操作范围、实时预览与交付</td>
+<td><a href="foundry/studio.html?example=headphones&revision=20261003-16">打开耳机工作台</a></td>
+</tr>
+<tr>
+<td>耳机完整产品页</td>
+<td>系列主视觉、细节叙事、实时三维模型选配和当前结果导出</td>
+<td><a href="foundry/showroom.html?example=headphones&revision=20261003-16#aura-configure">查看耳机</a></td>
+</tr>
+<tr>
+<td>马桶完整产品页</td>
+<td>产品表达、型号与安装条件、示例选型结果</td>
+<td><a href="foundry/showroom.html?example=toilet&revision=20261003-16">查看马桶</a></td>
+</tr>
+<tr>
+<td>马桶制作流程</td>
+<td>从定义到预览，修改选择并导出项目</td>
+<td><a href="foundry/?example=toilet&step=preview&revision=20261003-16">进入马桶预览</a></td>
+</tr>
+<tr>
+<td>服务资格模板</td>
+<td>按本地地区规则生成服务查询原型</td>
+<td><a href="foundry/?example=coverage&template=coverage&revision=20261003-16">查看服务模板</a></td>
+</tr>
+</tbody></table></div>
+<p>这些入口展示已有实现。参考页面、计划和预览都不能单独证明“任意目标自动生成高质量产品页”已经完成。</p>
+<p>研究集首页与 011 首页已关联目标工作台、马桶和耳机；011 首页和目标工作台提供两类产品的“完整产品页 / 选型工作台”入口。完整产品页可以返回首页、切换案例并进入对应选型工作台。固定案例保留 <code>example</code> 参数，避免被最近浏览器配置覆盖；网站导航不进入独立产品交付包。</p>
+</section><section id="research" aria-labelledby="heading-research"><h2 id="heading-research">06 · 已整理的网页研究</h2>
+<p>2026-10-03 快照中登记 <strong>18 个研究项目</strong>。下列按对当前产品化目标的贡献组织，其中 13 项构成主要参考，另外 5 项保留为相邻方向。它们目前是研究资产和局部实现集合，还没有整合成一个自动生产平台。</p>
+<h3>工作方法：如何组织模型制作</h3>
+<div class="table-scroll" role="region" aria-label="对照表 8，可横向滚动" tabindex="0"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>已有内容与可复用价值</th>
+<th>当前边界</th>
+<th>网页入口</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>002 · Huashu Design</strong></td>
+<td>技能、参考、组件与转换脚本；已有六类成果。可复用设计探索、品牌规则和多格式交付方法。</td>
+<td>技能不含新模型，普遍提质与效率收益未证明。</td>
+<td><a href="../002-huashu-design/">研究总览</a> · <a href="../002-huashu-design/cases/research-desk/">研究桌案例</a></td>
+</tr>
+<tr>
+<td><strong>003 · Learn Harness Engineering</strong></td>
+<td>规则、任务、进度、交接和验收模板；工作文件生成与结构审计。可用于持续制作和跨会话恢复。</td>
+<td>课程与模板，自动循环及多代理需要执行环境；结构通过不等于业务通过。</td>
+<td><a href="../003-learn-harness-engineering/">工作流程研究</a></td>
+</tr>
+</tbody></table></div>
+<h3>视觉与交互：可选择的实现能力</h3>
+<div class="table-scroll" role="region" aria-label="对照表 9，可横向滚动" tabindex="0"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>已有内容与可复用价值</th>
+<th>当前边界</th>
+<th>网页入口</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>005 · Plush Lab</strong></td>
+<td>实时毛绒、局部修剪染色梳理、配方、PNG/PLY；另有程序化高斯和 Blender 毛丝样片。帮助选择材质与资产路线。</td>
+<td>高斯不是照片训练；网页与离线母版分别验收，外观仍有参考差距。</td>
+<td><a href="../005-plush-lab/">毛绒工作室</a> · <a href="../005-plush-lab/splat.html">高斯实验</a></td>
+</tr>
+<tr>
+<td><strong>007 · Koi Scene Lab</strong></td>
+<td>原作体验、按图构建庭院、GPU 水波、鱼群、手部与动物互动、GLB 校准和绑定。可用于空间提案与模型展示。</td>
+<td>按图人工分解建模，未实地测绘，照片级外观与部分物理仍有差距。</td>
+<td><a href="../007-koi-scene-lab/#scene">场景</a> · <a href="../007-koi-scene-lab/#tech">技术拆解</a></td>
+</tr>
+<tr>
+<td><strong>008 · CellMotion</strong></td>
+<td>37 个原作动效与作者媒体；四种本地 Canvas 实验、配方、PNG/JSON。可复用文字与标题运动规则。</td>
+<td>本地实验不是原库渲染；未接自动日报或视频编码；原库许可含非商业限制。</td>
+<td><a href="../008-cellmotion/summary.html">理解汇总</a> · <a href="../008-cellmotion/workshop.html">动效工作台</a></td>
+</tr>
+<tr>
+<td><strong>009 · Sprite Destruction Lab</strong></td>
+<td>六种网页纹理动效、刚体/粒子/遮罩、角色层、跨站扩展与业务事件；另有六工具工作台。适合可玩入口与反馈。</td>
+<td>原作公开 SDK 未确认；多人、真实券核销与采集后端未接。工具箱是另建能力。</td>
+<td><a href="../009-sprite-destruction-lab/">总览</a> · <a href="../009-sprite-destruction-lab/lab.html">效果</a> · <a href="../009-sprite-destruction-lab/products/">业务原型</a> · <a href="../009-sprite-destruction-lab/toolbox/">工具箱</a></td>
+</tr>
+<tr>
+<td><strong>016 · Chippytea Lab</strong></td>
+<td>三个原创手绘世界、角色关系、四幕动画、拖动与收藏反馈；花园和影子配乐已生成。可用于品牌故事与音画体验。</td>
+<td>没有移植 Mac 清理引擎；当前网页播放、同步与听感待验收，月亮配乐未生成。</td>
+<td><a href="../016-chippytea-lab/?view=experience&scene=gravity&v=10">引力花园</a> · <a href="../016-chippytea-lab/?view=experience&scene=moon&v=10">月亮</a> · <a href="../016-chippytea-lab/?view=experience&scene=shadow&v=10">影子</a></td>
+</tr>
+<tr>
+<td><strong>017 · Waterfalls Lab</strong></td>
+<td>WebGPU 流体、多水源、体素造景、对象编辑、镜头、作品导入导出和 GPU PNG；已有 V9 本机操作证据。</td>
+<td>固定山谷与 0.24 m 体素，泡沫近似，无自由刚体和工程精度；手机 GPU 未实测。</td>
+<td><a href="../017-waterfalls-lab/">三维造景工作室</a></td>
+</tr>
+<tr>
+<td><strong>018 · Ridge Atmosphere Lab</strong></td>
+<td>三维山脊、体积谷雾、风草和骑手跟随镜头；用于动态空间与沉浸风景表达。</td>
+<td>独立视觉原型，原游戏实现未核实，气象与光影为近似；马模型限非商业研究，实体手机未实测。</td>
+<td><a href="../018-ridge-atmosphere-lab/">云海山脊实验</a></td>
+</tr>
+</tbody></table></div>
+<h3>产品验证与多形态交付</h3>
+<div class="table-scroll" role="region" aria-label="对照表 10，可横向滚动" tabindex="0"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>已有内容与可复用价值</th>
+<th>当前边界</th>
+<th>网页入口</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>011 · Combination Soup Studio</strong></td>
+<td>效果拆分、技能、场景和 Foundry；目标、计划、产品配置与独立包。是当前产品化验证台。</td>
+<td>尚无完整自动视觉审查与修正闭环，摄影级与商业效果未达成。</td>
+<td><a href="./">能力实验室</a> · <a href="foundry/studio.html?example=headphones&revision=20261003-16">目标工作台</a></td>
+</tr>
+<tr>
+<td><strong>006 · AI Visual Atlas</strong></td>
+<td>十项目能力图谱、网页到宣传片与 MV 的技术拆解；已有本机 24 秒代码宣传片。可研究动态交付路线。</td>
+<td>未接任意 URL 自动制作服务；MV 表演仅局部验证，口型待验收；部分研究媒体不随共享站分发。</td>
+<td><a href="../006-ai-visual-atlas/understanding.html">理解汇总</a> · <a href="../006-ai-visual-atlas/launch-architecture.html">制作架构</a></td>
+</tr>
+<tr>
+<td><strong>015 · AI Creative Products</strong></td>
+<td>十个独立案例，含空间、任务、叙事、角色、音乐、游戏和各自状态/导出。可比较如何保留关键能力再形成产品。</td>
+<td>没有模型后端，部分离线制作未验证；局部原型不是十个商业产品。</td>
+<td><a href="../015-ai-creative-products/">十案例总览</a> · <a href="../015-ai-creative-products/labs/?id=1">案例工作室</a></td>
+</tr>
+</tbody></table></div>
+<h3>平台规划：多人使用与商业服务</h3>
+<div class="table-scroll" role="region" aria-label="对照表 11，可横向滚动" tabindex="0"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>已有内容与可复用价值</th>
+<th>当前边界</th>
+<th>网页入口</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>014 · TanStarter</strong></td>
+<td>登录、支付、数据、存储、后台和部署的公开资料研究；任务队列、项目资产与用量的自建判断。</td>
+<td>付费模板未审源码，公开仓库是 CLI；我们尚未据此建成商业底座或验证容量。</td>
+<td><a href="../014-tanstarter-foundation/">底座与自建判断</a></td>
+</tr>
+</tbody></table></div>
+<h3>相邻方向：按需求查找</h3>
+<div class="table-scroll" role="region" aria-label="对照表 12，可横向滚动" tabindex="0"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>可以提供的参考</th>
+<th>当前边界</th>
+<th>网页入口</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>001 · witr</strong></td>
+<td>运行来源诊断与四平台教学页，帮助排查端口、进程和残留服务。</td>
+<td>教学演示不是四平台二进制实测；不是网页生成工具。</td>
+<td><a href="../001-witr/">运行来源理解</a></td>
+</tr>
+<tr>
+<td><strong>004 · Rhythm Drop</strong></td>
+<td>声音主导的角色、故事和互动实验，保留视听编排经验。</td>
+<td>已归档的研究原型，产品价值未验证。</td>
+<td><a href="../004-rhythm-drop/">视听体验研究</a></td>
+</tr>
+<tr>
+<td><strong>010 · Dumpling Style Lab</strong></td>
+<td>21 个可玩短篇，含 AI 美术、CC0 模型、骨骼与本地状态；适合互动叙事和游戏扩展。</td>
+<td>长篇内容与真实用户体验待验证。</td>
+<td><a href="../010-dumpling-style-lab/showcase.html">小世界与新故事</a></td>
+</tr>
+<tr>
+<td><strong>012 · Black Hole Lab</strong></td>
+<td>机制图解、逐像素成像、10 章 30 段旁白与完整理解总结；适合复杂概念讲解。</td>
+<td>教学演示需要遵守科学模型边界，不能当作完整数值模拟。</td>
+<td><a href="../012-black-hole-lab/#understanding">原理与理解总结</a></td>
+</tr>
+<tr>
+<td><strong>013 · InsightFace</strong></td>
+<td>识别、向量、目标数据库和来源检索的关系；适合判断检索型产品的技术组成。</td>
+<td>上游效果未实测，AVScan 后台未确认，模型授权与库代码需分别核对。</td>
+<td><a href="../013-insightface-retrieval/">检索理解图</a></td>
+</tr>
+</tbody></table></div>
+<p>后续产品按任务选能力：<strong>产品选配优先 011；空间提案参考 007/017/018；标题与反馈参考 008/009；角色故事参考 016；动态传播参考 006/015；制作组织参考 002/003；多人服务规划参考 014。</strong> 一次任务只接入需要的能力。</p>
+</section><section id="quality" aria-labelledby="heading-quality"><h2 id="heading-quality">07 · 如何把质量和交付产品化</h2>
+<h3>目标流程：当前仍是建设方案</h3>
+<ol>
+<li><strong>理解目标：</strong> 提取产品、受众、访客任务、偏好与资料缺口。</li>
+<li><strong>形成制作要求：</strong> 选择参考，生成通用、产品、视觉和事实要求，明确资产与模块缺口。</li>
+<li><strong>完成制作：</strong> 模型生成或修改页面、素材与交互，复用适合当前任务的模块。</li>
+<li><strong>运行与审查：</strong> 系统取得真实页面、操作与文件证据，模型对照要求审查。</li>
+<li><strong>修正与复核：</strong> 把缺陷转成具体修改，再以同视角或同操作验证；记录版本和未解决问题。</li>
+<li><strong>交付与说明：</strong> 导出可独立运行的作品、必要资产、配置和证据，说明事实与质量的剩余缺口。</li>
+</ol>
+<p>修正过程应有次数、时间与成本上限，具体预算由任务规模决定。到达上限仍有重要缺口时，交付明确的问题记录与后续资产需求，不能靠自评分宣布达标。需要实物资料、CAD、三维资产或摄影时，应识别资产缺口。</p>
+<h3>质量记录至少包含什么</h3>
+<div class="table-scroll" role="region" aria-label="对照表 13，可横向滚动" tabindex="0"><table>
+<thead>
+<tr>
+<th>检查面</th>
+<th>要回答的问题</th>
+<th>可保留的证据</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>任务与事实</td>
+<td>页面是否帮助访客完成目标？事实有没有依据？</td>
+<td>关键任务操作、产品资料与来源、缺失项</td>
+</tr>
+<tr>
+<td>视觉</td>
+<td>比例、结构、材质、光影和排版是否达到当前参考？各画面是否一致？</td>
+<td>同尺寸/同视角截图、具体缺陷、修改前后对照</td>
+</tr>
+<tr>
+<td>功能</td>
+<td>实际选择和状态是否正确？错误与降级是否可理解？</td>
+<td>操作结果、状态恢复、运行记录</td>
+</tr>
+<tr>
+<td>交付</td>
+<td>下载内容是否对应当前版本和选择？能否独立运行？</td>
+<td>实际 ZIP、隔离运行、PNG/配置一致性</td>
+</tr>
+<tr>
+<td>使用条件</td>
+<td>手机、性能与可访问性检查覆盖到哪一层？</td>
+<td>视口或真机标识、运行环境、未覆盖项目</td>
+</tr>
+</tbody></table></div>
+<p>这些是拟建设的交付要求。当前耳机项目已有部分人工审视、实际运行和交付证据，尚未成为应用内部自动执行的流程。</p>
+<h3>建议推进顺序</h3>
+<div class="table-scroll" role="region" aria-label="对照表 14，可横向滚动" tabindex="0"><table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>重点</th>
+<th>可以判断完成的条件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>先固定耳机质量基线</strong></td>
+<td>把实际画面与参考的差距转成具体缺陷、资产需求和验收方法</td>
+<td>同视角记录能说明哪里通过、哪里还有差距</td>
+</tr>
+<tr>
+<td><strong>再验证一个内部闭环</strong></td>
+<td>系统自行发现一个真实缺陷，模型修改，系统重新运行并复核</td>
+<td>保留要求、缺陷、修改前后和实际交付的一致证据</td>
+</tr>
+<tr>
+<td><strong>再验证跨品类</strong></td>
+<td>用马桶、灯具和一个陌生产品生成不同要求与实现选择</td>
+<td>不是仅换名称；能识别需新增的资产和模块</td>
+</tr>
+<tr>
+<td><strong>最后建设平台</strong></td>
+<td>项目历史、任务执行、版本比较、素材库、预算和用量</td>
+<td>多任务可恢复、成本可追踪、交付可复现，再接商业服务</td>
+</tr>
+</tbody></table></div>
+<p>现阶段最有价值的下一步，是验证一个真正由系统驱动的质量修正闭环；继续扩充演示数量不能替代这个验证。</p>
+</section><section id="evidence" aria-labelledby="heading-evidence"><h2 id="heading-evidence">08 · 依据与后续维护</h2>
+<p>这份汇总以讨论共识、仓库代码、项目 README 和现有验证记录为依据。网页入口可访问只证明路由可达，不证明全部交互、音画或设备质量通过。</p>
+<ul>
+<li><strong>统一项目清单</strong>：<span class="source-ref">projects.json<code>projects.json</code></span>。编号和源网页/技术库保持各项目既有划分。</li>
+<li><strong>011 当前总览</strong>：<span class="source-ref">README<code>projects/011-combination-soup-studio/README.md</code></span>、<span class="source-ref">网页运行说明<code>projects/011-combination-soup-studio/web/README.md</code></span>。</li>
+<li><strong>来源与接入</strong>：<span class="source-ref">原站研究<code>projects/011-combination-soup-studio/notes/research.md</code></span>、<span class="source-ref">当前效果接入说明<code>projects/011-combination-soup-studio/notes/effect-correction.md</code></span>。早期效果拆解属于历史记录，以当前接入说明为准。</li>
+<li><strong>技能与制作契约</strong>：<span class="source-ref">项目技能<code>projects/011-combination-soup-studio/skills/interactive-business-experience/SKILL.md</code></span>、<span class="source-ref">制作要求<code>projects/011-combination-soup-studio/skills/interactive-business-experience/references/product-planning.md</code></span>、<span class="source-ref">独立产品交付<code>projects/011-combination-soup-studio/skills/interactive-business-experience/references/product-foundry.md</code></span>。</li>
+<li><strong>当前耳机证据</strong>：<span class="source-ref">V1.7 实际审视与修改<code>projects/011-combination-soup-studio/notes/headphone-art-direction-v16.md</code></span>、<span class="source-ref">近景与交付检查<code>projects/011-combination-soup-studio/notes/headphone-focus-v16.json</code></span>、<span class="source-ref">回归<code>projects/011-combination-soup-studio/notes/headphone-regression-v16.json</code></span>、<span class="source-ref">兼容<code>projects/011-combination-soup-studio/notes/studio-compatibility-v16.json</code></span>、<span class="source-ref">实际捕获<code>projects/011-combination-soup-studio/notes/headphone-capture-v16-after.json</code></span>。这些是已有记录，本次未重跑。</li>
+<li><strong>其他网页依据</strong>：各项目的 README、研究笔记、运行说明和来源记录；本汇总保留各自限制，不合并为统一验收结果。</li>
+<li><strong>此前汇总网页检查</strong>：<span class="source-ref">检查记录<code>projects/011-combination-soup-studio/notes/understanding-summary-check.json</code></span>。在 17 项研究快照上，34 个本机链接可达，1440/768/390 像素布局、表格容器、键盘章节导航和主页面入口已检查；静态站 6 项检查通过。截图保存在 <code>assets/qa/summary/</code>，未重跑其他项目的交互或视觉验收。</li>
+</ul>
+<p>后续有新能力时，更新“已实现/部分实现/待建设”、对应入口和证据；质量变化时更新实际截图与剩余差距；阶段完成时用执行记录替换规划。Markdown 是内容源，网页由同一内容生成，避免两份结论逐渐不一致。</p>
+</section></article>
+    </div>
+  </main>
+  <footer><span>内容源：notes/understanding-summary.md</span><a href="#content">回到顶部 ↑</a></footer>
+</body>
+</html>

@@ -1,0 +1,210 @@
+{
+  "date": "2026-10-02",
+  "url": "http://127.0.0.1:8951/projects/011-combination-soup-studio/",
+  "checks": [
+    {
+      "name": "业务场景与研究来源入口可访问",
+      "passed": true
+    },
+    {
+      "name": "品牌输入与画面实时同步",
+      "passed": true
+    },
+    {
+      "name": "配色切换与事实同步",
+      "passed": true
+    },
+    {
+      "name": "输入按文字显示，没有 HTML 执行",
+      "passed": true
+    },
+    {
+      "name": "动效可停用",
+      "passed": true
+    },
+    {
+      "name": "行动入口生成需求单，没有外部发送",
+      "passed": true
+    },
+    {
+      "name": "下载 brand-brief.md",
+      "passed": true
+    },
+    {
+      "name": "需求单保存当前业务选择",
+      "passed": true
+    },
+    {
+      "name": "需求单 Escape 可关闭",
+      "passed": true
+    },
+    {
+      "name": "场景页签支持键盘切换",
+      "passed": true
+    },
+    {
+      "name": "产品配色、展开与表面改变实际画面",
+      "passed": true
+    },
+    {
+      "name": "键盘可以旋转产品",
+      "passed": true
+    },
+    {
+      "name": "拖动可以旋转产品",
+      "passed": true
+    },
+    {
+      "name": "下载 product.png",
+      "passed": true
+    },
+    {
+      "name": "产品重置恢复所有选项",
+      "passed": true
+    },
+    {
+      "name": "默认庭院面积正确",
+      "passed": true
+    },
+    {
+      "name": "区域面积守恒且留有通行空间",
+      "passed": true
+    },
+    {
+      "name": "自动约束有明确说明",
+      "passed": true
+    },
+    {
+      "name": "方案 A 比较保留当前输入",
+      "passed": true
+    },
+    {
+      "name": "返回当前方案没有覆盖参数",
+      "passed": true
+    },
+    {
+      "name": "时段改变实际方案画面",
+      "passed": true
+    },
+    {
+      "name": "下载 garden.png",
+      "passed": true
+    },
+    {
+      "name": "下载 garden-facts.json",
+      "passed": true
+    },
+    {
+      "name": "事实导出与当前方案一致",
+      "passed": true
+    },
+    {
+      "name": "下载 garden-brief.md",
+      "passed": true
+    },
+    {
+      "name": "庭院需求单包含面积与采用边界",
+      "passed": true
+    },
+    {
+      "name": "390px / brand 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "390px / brand 主操作可见",
+      "passed": true
+    },
+    {
+      "name": "390px / product 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "390px / product 主操作可见",
+      "passed": true
+    },
+    {
+      "name": "390px / garden 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "390px / garden 主操作可见",
+      "passed": true
+    },
+    {
+      "name": "768px / brand 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "768px / brand 主操作可见",
+      "passed": true
+    },
+    {
+      "name": "768px / product 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "768px / product 主操作可见",
+      "passed": true
+    },
+    {
+      "name": "768px / garden 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "768px / garden 主操作可见",
+      "passed": true
+    },
+    {
+      "name": "1280px / brand 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "1280px / brand 主操作可见",
+      "passed": true
+    },
+    {
+      "name": "1280px / product 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "1280px / product 主操作可见",
+      "passed": true
+    },
+    {
+      "name": "1280px / garden 没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "1280px / garden 主操作可见",
+      "passed": true
+    },
+    {
+      "name": "减少动态偏好默认停用标题动效",
+      "passed": true
+    },
+    {
+      "name": "减少动态偏好默认停用自动旋转",
+      "passed": true
+    },
+    {
+      "name": "场景运行没有额外外部请求，原站视频为明确依赖",
+      "passed": true
+    },
+    {
+      "name": "没有浏览器运行错误",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "externalMediaAborts": [
+    {
+      "url": "https://combinationsoupstudio.com.au/assets/previews/soup-v-soup-s.mp4",
+      "failure": "net::ERR_ABORTED"
+    }
+  ],
+  "allowedExternalMedia": [
+    "https://combinationsoupstudio.com.au/assets/previews/soup-v-soup-s.mp4"
+  ],
+  "scope": "浏览器桌面与窄屏视口验证；没有真实客户转化、手机硬件性能、原站后端或交易验收。"
+}

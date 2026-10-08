@@ -1,0 +1,1075 @@
+[
+  {
+    "source": [
+      {
+        "s": "#menu",
+        "exists": true,
+        "rect": {
+          "x": 0,
+          "y": 951.609375,
+          "width": 1440,
+          "height": 3536,
+          "top": 951.609375,
+          "right": 1440,
+          "bottom": 4487.609375,
+          "left": 0
+        }
+      },
+      {
+        "s": "#stir",
+        "exists": true,
+        "rect": {
+          "x": 0,
+          "y": 5790.671875,
+          "width": 1440,
+          "height": 908.4375,
+          "top": 5790.671875,
+          "right": 1440,
+          "bottom": 6699.109375,
+          "left": 0
+        }
+      },
+      {
+        "s": "#delivery",
+        "exists": true,
+        "rect": {
+          "x": 0,
+          "y": 7971.171875,
+          "width": 1440,
+          "height": 821.359375,
+          "top": 7971.171875,
+          "right": 1440,
+          "bottom": 8792.53125,
+          "left": 0
+        }
+      },
+      {
+        "s": "#order",
+        "exists": true,
+        "rect": {
+          "x": 0,
+          "y": 8792.53125,
+          "width": 1440,
+          "height": 982.46875,
+          "top": 8792.53125,
+          "right": 1440,
+          "bottom": 9775,
+          "left": 0
+        }
+      },
+      {
+        "s": ".engine",
+        "exists": true,
+        "rect": {
+          "x": 170,
+          "y": 6010.34375,
+          "width": 469.078125,
+          "height": 469.078125,
+          "top": 6010.34375,
+          "right": 639.078125,
+          "bottom": 6479.421875,
+          "left": 170
+        }
+      },
+      {
+        "s": ".dotmap",
+        "exists": true,
+        "rect": {
+          "x": 640,
+          "y": 8143.0625,
+          "width": 630,
+          "height": 477.578125,
+          "top": 8143.0625,
+          "right": 1270,
+          "bottom": 8620.640625,
+          "left": 640
+        }
+      },
+      {
+        "s": ".fortune-cookie",
+        "exists": false,
+        "rect": null
+      },
+      {
+        "s": ".ck-col",
+        "exists": true,
+        "rect": {
+          "x": 170,
+          "y": 8912.53125,
+          "width": 515,
+          "height": 742.46875,
+          "top": 8912.53125,
+          "right": 685,
+          "bottom": 9655,
+          "left": 170
+        }
+      }
+    ]
+  },
+  {
+    "sourceCookie": "\n      <p class=\"eyebrow\">Your fortune</p>\n      <h2>Crack it<br><span class=\"gold\">open.</span></h2>\n      <button class=\"cookie\" id=\"cookie\" type=\"button\" aria-label=\"Crack the fortune cookie\">\n        <span class=\"halo\" aria-hidden=\"true\"></span>\n        <span class=\"half l\" style=\"background-image:url(data:image/webp;base64,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"
+  },
+  {
+    "key": "menu",
+    "width": 1440,
+    "geometry": [
+      {
+        "s": "#effect-stage",
+        "rect": {
+          "x": 81,
+          "y": 280.09375,
+          "width": 984,
+          "height": 760,
+          "top": 280.09375,
+          "right": 1065,
+          "bottom": 1040.09375,
+          "left": 81
+        },
+        "text": "02 / THE MENU\nPick your soup.\n\n在演示区域滚动，转动原站的餐桌菜单。\n\nNO. 1\n\nPlain Combination\n\n$1,490\nfrom / AUD\n\n基础企业网站\n\n手机适配、服务介绍与明确的咨询入口，帮助小型业务建立完整的网站。\n\n最多 6 页\n手机优先布"
+      },
+      {
+        "s": ".native-heading",
+        "rect": {
+          "x": 113,
+          "y": 305.09375,
+          "width": 928,
+          "height": 120.125,
+          "top": 305.09375,
+          "right": 1041,
+          "bottom": 425.21875,
+          "left": 113
+        },
+        "text": "02 / THE MENU\nPick your soup.\n\n在演示区域滚动，转动原站的餐桌菜单。"
+      },
+      {
+        "s": ".native-service-card",
+        "rect": {
+          "x": 103.32867431640625,
+          "y": 481.83587646484375,
+          "width": 368.6551513671875,
+          "height": 447.1876220703125,
+          "top": 481.83587646484375,
+          "right": 471.98382568359375,
+          "bottom": 929.0234985351562,
+          "left": 103.32867431640625
+        },
+        "text": "NO. 1\n\nPlain Combination\n\n$1,490\nfrom / AUD\n\n基础企业网站\n\n手机适配、服务介绍与明确的咨询入口，帮助小型业务建立完整的网站。\n\n最多 6 页\n手机优先布局\n联系表单与点击拨号\n基础搜索优化\nMILD\n查看原站套餐 →\n1\n2\n3"
+      },
+      {
+        "s": ".native-susan",
+        "rect": {
+          "x": 492.3125,
+          "y": 433.09375,
+          "width": 544.6875,
+          "height": 544.6875,
+          "top": 433.09375,
+          "right": 1037,
+          "bottom": 977.78125,
+          "left": 492.3125
+        },
+        "text": "EVERY SITE IS A BOWL OF THE SAME GOOD STOCK · WHAT CHANGES IS HOW MUCH GOES IN IT ·"
+      },
+      {
+        "s": ".native-engine"
+      },
+      {
+        "s": ".native-dotmap"
+      },
+      {
+        "s": ".native-map-status"
+      },
+      {
+        "s": ".fortune-cookie"
+      },
+      {
+        "s": ".fortune-slip"
+      },
+      {
+        "s": ".native-cookie-foot"
+      }
+    ]
+  },
+  {
+    "key": "broth",
+    "width": 1440,
+    "geometry": [
+      {
+        "s": "#effect-stage",
+        "rect": {
+          "x": 81,
+          "y": 280.09375,
+          "width": 984,
+          "height": 760,
+          "top": 280.09375,
+          "right": 1065,
+          "bottom": 1040.09375,
+          "left": 81
+        },
+        "text": "03 / THE BROTH ENGINE\nStir the stock.\n\n绕圈搅动，倾斜汤面。观察原站的粒子与食材落下。\n\nBROTH ENGINE\nSIM. RPM 120\nSIM. TEMP 97.4°\nFILL 100%\nYOUR LAPS\n0.0\nFULL · TILT TO SPILL"
+      },
+      {
+        "s": ".native-heading",
+        "rect": {
+          "x": 113,
+          "y": 305.09375,
+          "width": 928,
+          "height": 118.078125,
+          "top": 305.09375,
+          "right": 1041,
+          "bottom": 423.171875,
+          "left": 113
+        },
+        "text": "03 / THE BROTH ENGINE\nStir the stock.\n\n绕圈搅动，倾斜汤面。观察原站的粒子与食材落下。"
+      },
+      {
+        "s": ".native-service-card"
+      },
+      {
+        "s": ".native-susan"
+      },
+      {
+        "s": ".native-engine",
+        "rect": {
+          "x": 308,
+          "y": 405.09375,
+          "width": 530,
+          "height": 530,
+          "top": 405.09375,
+          "right": 838,
+          "bottom": 935.09375,
+          "left": 308
+        },
+        "text": "BROTH ENGINE\nSIM. RPM 120\nSIM. TEMP 97.4°\nFILL 100%\nYOUR LAPS\n0.0\nFULL · TILT TO SPILL\nSPILL / 汤面溢出"
+      },
+      {
+        "s": ".native-dotmap"
+      },
+      {
+        "s": ".native-map-status"
+      },
+      {
+        "s": ".fortune-cookie"
+      },
+      {
+        "s": ".fortune-slip"
+      },
+      {
+        "s": ".native-cookie-foot"
+      }
+    ]
+  },
+  {
+    "key": "delivery",
+    "width": 1440,
+    "geometry": [
+      {
+        "s": "#effect-stage",
+        "rect": {
+          "x": 81,
+          "y": 280.09375,
+          "width": 984,
+          "height": 760,
+          "top": 280.09375,
+          "right": 1065,
+          "bottom": 1040.09375,
+          "left": 81
+        },
+        "text": "04 / FROM THE KITCHEN\nTo all of Australia.\n\n点一下地图，让厨房用筷子把外卖盒送过去。\n\nLAST DROP / 最近落点\nAustralia\nDEMO DELIVERIES 2\nSydney\nPerth\nHobart\n自动投送"
+      },
+      {
+        "s": ".native-heading",
+        "rect": {
+          "x": 113,
+          "y": 305.09375,
+          "width": 928,
+          "height": 116.015625,
+          "top": 305.09375,
+          "right": 1041,
+          "bottom": 421.109375,
+          "left": 113
+        },
+        "text": "04 / FROM THE KITCHEN\nTo all of Australia.\n\n点一下地图，让厨房用筷子把外卖盒送过去。"
+      },
+      {
+        "s": ".native-service-card"
+      },
+      {
+        "s": ".native-susan"
+      },
+      {
+        "s": ".native-engine"
+      },
+      {
+        "s": ".native-dotmap",
+        "rect": {
+          "x": 213,
+          "y": 433.09375,
+          "width": 720,
+          "height": 545.796875,
+          "top": 433.09375,
+          "right": 933,
+          "bottom": 978.890625,
+          "left": 213
+        },
+        "text": ""
+      },
+      {
+        "s": ".native-map-status",
+        "rect": {
+          "x": 877.5443725585938,
+          "y": 312.37384033203125,
+          "width": 161.22369384765625,
+          "height": 109.5179443359375,
+          "top": 312.37384033203125,
+          "right": 1038.76806640625,
+          "bottom": 421.89178466796875,
+          "left": 877.5443725585938
+        },
+        "text": "LAST DROP / 最近落点\nAustralia\nDEMO DELIVERIES 2"
+      },
+      {
+        "s": ".fortune-cookie"
+      },
+      {
+        "s": ".fortune-slip"
+      },
+      {
+        "s": ".native-cookie-foot"
+      }
+    ]
+  },
+  {
+    "key": "fortune",
+    "width": 1440,
+    "geometry": [
+      {
+        "s": "#effect-stage",
+        "rect": {
+          "x": 81,
+          "y": 280.09375,
+          "width": 984,
+          "height": 760,
+          "top": 280.09375,
+          "right": 1065,
+          "bottom": 1040.09375,
+          "left": 81
+        },
+        "text": "05 / YOUR FORTUNE\nCrack it open.\n\n点击原站的幸运饼干，揭晓今天的灵感。\n\nMake your service easy to understand.\n先让人理解你的服务，再邀请他咨询。\nLUCKY NUMBERS 11 · 26 · 26\nOPENED HERE 1"
+      },
+      {
+        "s": ".native-heading",
+        "rect": {
+          "x": 113,
+          "y": 305.09375,
+          "width": 928,
+          "height": 126.3125,
+          "top": 305.09375,
+          "right": 1041,
+          "bottom": 431.40625,
+          "left": 113
+        },
+        "text": "05 / YOUR FORTUNE\nCrack it open.\n\n点击原站的幸运饼干，揭晓今天的灵感。"
+      },
+      {
+        "s": ".native-service-card"
+      },
+      {
+        "s": ".native-susan"
+      },
+      {
+        "s": ".native-engine"
+      },
+      {
+        "s": ".native-dotmap"
+      },
+      {
+        "s": ".native-map-status"
+      },
+      {
+        "s": ".fortune-cookie",
+        "rect": {
+          "x": 383,
+          "y": 473.171875,
+          "width": 380,
+          "height": 380,
+          "top": 473.171875,
+          "right": 763,
+          "bottom": 853.171875,
+          "left": 383
+        },
+        "text": ""
+      },
+      {
+        "s": ".fortune-slip",
+        "rect": {
+          "x": 360.230712890625,
+          "y": 795.2633056640625,
+          "width": 424.9630126953125,
+          "height": 127.6641845703125,
+          "top": 795.2633056640625,
+          "right": 785.1937255859375,
+          "bottom": 922.927490234375,
+          "left": 360.230712890625
+        },
+        "text": "Make your service easy to understand.\n先让人理解你的服务，再邀请他咨询。\nLUCKY NUMBERS 11 · 26 · 26"
+      },
+      {
+        "s": ".native-cookie-foot",
+        "rect": {
+          "x": 113,
+          "y": 982.09375,
+          "width": 920,
+          "height": 34,
+          "top": 982.09375,
+          "right": 1033,
+          "bottom": 1016.09375,
+          "left": 113
+        },
+        "text": "OPENED HERE 1\n重置本机记录"
+      }
+    ]
+  },
+  {
+    "key": "menu",
+    "width": 768,
+    "geometry": [
+      {
+        "s": "#effect-stage",
+        "rect": {
+          "x": 37,
+          "y": 280.09375,
+          "width": 434,
+          "height": 760,
+          "top": 280.09375,
+          "right": 471,
+          "bottom": 1040.09375,
+          "left": 37
+        },
+        "text": "02 / THE MENU\nPick your soup.\n\n在演示区域滚动，转动原站的餐桌菜单。\n\nNO. 1\n\nPlain Combination\n\n$1,490\nfrom / AUD\n\n基础企业网站\n\n手机适配、服务介绍与明确的咨询入口，帮助小型业务建立完整的网站。\n\n最多 6 页\n手机优先布"
+      },
+      {
+        "s": ".native-heading",
+        "rect": {
+          "x": 69,
+          "y": 305.09375,
+          "width": 378,
+          "height": 120.125,
+          "top": 305.09375,
+          "right": 447,
+          "bottom": 425.21875,
+          "left": 69
+        },
+        "text": "02 / THE MENU\nPick your soup.\n\n在演示区域滚动，转动原站的餐桌菜单。"
+      },
+      {
+        "s": ".native-service-card",
+        "rect": {
+          "x": 58.88020706176758,
+          "y": 464.9804382324219,
+          "width": 262.23956298828125,
+          "height": 477.2265930175781,
+          "top": 464.9804382324219,
+          "right": 321.1197700500488,
+          "bottom": 942.20703125,
+          "left": 58.88020706176758
+        },
+        "text": "NO. 1\n\nPlain Combination\n\n$1,490\nfrom / AUD\n\n基础企业网站\n\n手机适配、服务介绍与明确的咨询入口，帮助小型业务建立完整的网站。\n\n最多 6 页\n手机优先布局\n联系表单与点击拨号\n基础搜索优化\nMILD\n查看原站套餐 →\n1\n2\n3"
+      },
+      {
+        "s": ".native-susan",
+        "rect": {
+          "x": 341,
+          "y": 652.59375,
+          "width": 102,
+          "height": 102,
+          "top": 652.59375,
+          "right": 443,
+          "bottom": 754.59375,
+          "left": 341
+        },
+        "text": "EVERY SITE IS A BOWL OF THE SAME GOOD STOCK · WHAT CHANGES IS HOW MUCH GOES IN IT ·"
+      },
+      {
+        "s": ".native-engine"
+      },
+      {
+        "s": ".native-dotmap"
+      },
+      {
+        "s": ".native-map-status"
+      },
+      {
+        "s": ".fortune-cookie"
+      },
+      {
+        "s": ".fortune-slip"
+      },
+      {
+        "s": ".native-cookie-foot"
+      }
+    ]
+  },
+  {
+    "key": "broth",
+    "width": 768,
+    "geometry": [
+      {
+        "s": "#effect-stage",
+        "rect": {
+          "x": 37,
+          "y": 280.09375,
+          "width": 434,
+          "height": 760,
+          "top": 280.09375,
+          "right": 471,
+          "bottom": 1040.09375,
+          "left": 37
+        },
+        "text": "03 / THE BROTH ENGINE\nStir the stock.\n\n绕圈搅动，倾斜汤面。观察原站的粒子与食材落下。\n\nBROTH ENGINE\nSIM. RPM 120\nSIM. TEMP 97.5°\nFILL 100%\nYOUR LAPS\n0.0\nFULL · TILT TO SPILL"
+      },
+      {
+        "s": ".native-heading",
+        "rect": {
+          "x": 69,
+          "y": 305.09375,
+          "width": 378,
+          "height": 118.078125,
+          "top": 305.09375,
+          "right": 447,
+          "bottom": 423.171875,
+          "left": 69
+        },
+        "text": "03 / THE BROTH ENGINE\nStir the stock.\n\n绕圈搅动，倾斜汤面。观察原站的粒子与食材落下。"
+      },
+      {
+        "s": ".native-service-card"
+      },
+      {
+        "s": ".native-susan"
+      },
+      {
+        "s": ".native-engine",
+        "rect": {
+          "x": 102.1015625,
+          "y": 405.09375,
+          "width": 303.796875,
+          "height": 303.796875,
+          "top": 405.09375,
+          "right": 405.8984375,
+          "bottom": 708.890625,
+          "left": 102.1015625
+        },
+        "text": "BROTH ENGINE\nSIM. RPM 120\nSIM. TEMP 97.5°\nFILL 100%\nYOUR LAPS\n0.0\nFULL · TILT TO SPILL\nSPILL / 汤面溢出"
+      },
+      {
+        "s": ".native-dotmap"
+      },
+      {
+        "s": ".native-map-status"
+      },
+      {
+        "s": ".fortune-cookie"
+      },
+      {
+        "s": ".fortune-slip"
+      },
+      {
+        "s": ".native-cookie-foot"
+      }
+    ]
+  },
+  {
+    "key": "delivery",
+    "width": 768,
+    "geometry": [
+      {
+        "s": "#effect-stage",
+        "rect": {
+          "x": 37,
+          "y": 280.09375,
+          "width": 434,
+          "height": 760,
+          "top": 280.09375,
+          "right": 471,
+          "bottom": 1040.09375,
+          "left": 37
+        },
+        "text": "04 / FROM THE KITCHEN\nTo all of Australia.\n\n点一下地图，让厨房用筷子把外卖盒送过去。\n\nLAST DROP / 最近落点\nAustralia\nDEMO DELIVERIES 2\nSydney\nPerth\nHobart\n自动投送"
+      },
+      {
+        "s": ".native-heading",
+        "rect": {
+          "x": 69,
+          "y": 305.09375,
+          "width": 378,
+          "height": 116.015625,
+          "top": 305.09375,
+          "right": 447,
+          "bottom": 421.109375,
+          "left": 69
+        },
+        "text": "04 / FROM THE KITCHEN\nTo all of Australia.\n\n点一下地图，让厨房用筷子把外卖盒送过去。"
+      },
+      {
+        "s": ".native-service-card"
+      },
+      {
+        "s": ".native-susan"
+      },
+      {
+        "s": ".native-engine"
+      },
+      {
+        "s": ".native-dotmap",
+        "rect": {
+          "x": 76.0625,
+          "y": 433.09375,
+          "width": 355.875,
+          "height": 269.765625,
+          "top": 433.09375,
+          "right": 431.9375,
+          "bottom": 702.859375,
+          "left": 76.0625
+        },
+        "text": ""
+      },
+      {
+        "s": ".native-map-status",
+        "rect": {
+          "x": 283.54437255859375,
+          "y": 312.37384033203125,
+          "width": 161.22372436523438,
+          "height": 109.5179443359375,
+          "top": 312.37384033203125,
+          "right": 444.7680969238281,
+          "bottom": 421.89178466796875,
+          "left": 283.54437255859375
+        },
+        "text": "LAST DROP / 最近落点\nAustralia\nDEMO DELIVERIES 2"
+      },
+      {
+        "s": ".fortune-cookie"
+      },
+      {
+        "s": ".fortune-slip"
+      },
+      {
+        "s": ".native-cookie-foot"
+      }
+    ]
+  },
+  {
+    "key": "fortune",
+    "width": 768,
+    "geometry": [
+      {
+        "s": "#effect-stage",
+        "rect": {
+          "x": 37,
+          "y": 280.09375,
+          "width": 434,
+          "height": 760,
+          "top": 280.09375,
+          "right": 471,
+          "bottom": 1040.09375,
+          "left": 37
+        },
+        "text": "05 / YOUR FORTUNE\nCrack it open.\n\n点击原站的幸运饼干，揭晓今天的灵感。\n\nShow what changes, and why.\n让交互讲清参数改变了什么。\nLUCKY NUMBERS 11 · 22 · 27\nOPENED HERE 1\n重置本机记录"
+      },
+      {
+        "s": ".native-heading",
+        "rect": {
+          "x": 69,
+          "y": 305.09375,
+          "width": 378,
+          "height": 126.3125,
+          "top": 305.09375,
+          "right": 447,
+          "bottom": 431.40625,
+          "left": 69
+        },
+        "text": "05 / YOUR FORTUNE\nCrack it open.\n\n点击原站的幸运饼干，揭晓今天的灵感。"
+      },
+      {
+        "s": ".native-service-card"
+      },
+      {
+        "s": ".native-susan"
+      },
+      {
+        "s": ".native-engine"
+      },
+      {
+        "s": ".native-dotmap"
+      },
+      {
+        "s": ".native-map-status"
+      },
+      {
+        "s": ".fortune-cookie",
+        "rect": {
+          "x": 69,
+          "y": 478.171875,
+          "width": 370,
+          "height": 370,
+          "top": 478.171875,
+          "right": 439,
+          "bottom": 848.171875,
+          "left": 69
+        },
+        "text": ""
+      },
+      {
+        "s": ".fortune-slip",
+        "rect": {
+          "x": 66.2306900024414,
+          "y": 792.880126953125,
+          "width": 375.03155517578125,
+          "height": 125.04736328125,
+          "top": 792.880126953125,
+          "right": 441.26224517822266,
+          "bottom": 917.927490234375,
+          "left": 66.2306900024414
+        },
+        "text": "Show what changes, and why.\n让交互讲清参数改变了什么。\nLUCKY NUMBERS 11 · 22 · 27"
+      },
+      {
+        "s": ".native-cookie-foot",
+        "rect": {
+          "x": 69,
+          "y": 982.09375,
+          "width": 370,
+          "height": 34,
+          "top": 982.09375,
+          "right": 439,
+          "bottom": 1016.09375,
+          "left": 69
+        },
+        "text": "OPENED HERE 1\n重置本机记录"
+      }
+    ]
+  },
+  {
+    "key": "menu",
+    "width": 390,
+    "geometry": [
+      {
+        "s": "#effect-stage",
+        "rect": {
+          "x": 17,
+          "y": 75.125,
+          "width": 356,
+          "height": 795,
+          "top": 75.125,
+          "right": 373,
+          "bottom": 870.125,
+          "left": 17
+        },
+        "text": "02 / THE MENU\nPick your soup.\n\n在演示区域滚动，转动原站的餐桌菜单。\n\nNO. 1\n\nPlain Combination\n\n$1,490\nfrom / AUD\n\n基础企业网站\n\n手机适配、服务介绍与明确的咨询入口，帮助小型业务建立完整的网站。\n\n最多 6 页\n手机优先布"
+      },
+      {
+        "s": ".native-heading",
+        "rect": {
+          "x": 38,
+          "y": 98.125,
+          "width": 314,
+          "height": 104,
+          "top": 98.125,
+          "right": 352,
+          "bottom": 202.125,
+          "left": 38
+        },
+        "text": "02 / THE MENU\nPick your soup.\n\n在演示区域滚动，转动原站的餐桌菜单。"
+      },
+      {
+        "s": ".native-service-card",
+        "rect": {
+          "x": 29.510173797607422,
+          "y": 196.9307403564453,
+          "width": 330.97967529296875,
+          "height": 279.26348876953125,
+          "top": 196.9307403564453,
+          "right": 360.4898490905762,
+          "bottom": 476.19422912597656,
+          "left": 29.510173797607422
+        },
+        "text": "NO. 1\n\nPlain Combination\n\n$1,490\nfrom / AUD\n\n基础企业网站\n\n手机适配、服务介绍与明确的咨询入口，帮助小型业务建立完整的网站。\n\n最多 6 页\n手机优先布局\n联系表单与点击拨号\n基础搜索优化\nMILD\n查看原站套餐 →\n1\n2\n3"
+      },
+      {
+        "s": ".native-susan",
+        "rect": {
+          "x": 42.71875,
+          "y": 484,
+          "width": 304.546875,
+          "height": 304.546875,
+          "top": 484,
+          "right": 347.265625,
+          "bottom": 788.546875,
+          "left": 42.71875
+        },
+        "text": "EVERY SITE IS A BOWL OF THE SAME GOOD STOCK · WHAT CHANGES IS HOW MUCH GOES IN IT ·"
+      },
+      {
+        "s": ".native-engine"
+      },
+      {
+        "s": ".native-dotmap"
+      },
+      {
+        "s": ".native-map-status"
+      },
+      {
+        "s": ".fortune-cookie"
+      },
+      {
+        "s": ".fortune-slip"
+      },
+      {
+        "s": ".native-cookie-foot"
+      }
+    ]
+  },
+  {
+    "key": "broth",
+    "width": 390,
+    "geometry": [
+      {
+        "s": "#effect-stage",
+        "rect": {
+          "x": 17,
+          "y": 224.125,
+          "width": 356,
+          "height": 620,
+          "top": 224.125,
+          "right": 373,
+          "bottom": 844.125,
+          "left": 17
+        },
+        "text": "03 / THE BROTH ENGINE\nStir the stock.\n\n绕圈搅动，倾斜汤面。观察原站的粒子与食材落下。\n\nBROTH ENGINE\nSIM. RPM 120\nSIM. TEMP 97.5°\nFILL 100%\nYOUR LAPS\n0.0\nFULL · TILT TO SPILL"
+      },
+      {
+        "s": ".native-heading",
+        "rect": {
+          "x": 38,
+          "y": 247.125,
+          "width": 314,
+          "height": 104,
+          "top": 247.125,
+          "right": 352,
+          "bottom": 351.125,
+          "left": 38
+        },
+        "text": "03 / THE BROTH ENGINE\nStir the stock.\n\n绕圈搅动，倾斜汤面。观察原站的粒子与食材落下。"
+      },
+      {
+        "s": ".native-service-card"
+      },
+      {
+        "s": ".native-susan"
+      },
+      {
+        "s": ".native-engine",
+        "rect": {
+          "x": 25.90625,
+          "y": 372.125,
+          "width": 338.1875,
+          "height": 338.1875,
+          "top": 372.125,
+          "right": 364.09375,
+          "bottom": 710.3125,
+          "left": 25.90625
+        },
+        "text": "BROTH ENGINE\nSIM. RPM 120\nSIM. TEMP 97.5°\nFILL 100%\nYOUR LAPS\n0.0\nFULL · TILT TO SPILL\nSPILL / 汤面溢出"
+      },
+      {
+        "s": ".native-dotmap"
+      },
+      {
+        "s": ".native-map-status"
+      },
+      {
+        "s": ".fortune-cookie"
+      },
+      {
+        "s": ".fortune-slip"
+      },
+      {
+        "s": ".native-cookie-foot"
+      }
+    ]
+  },
+  {
+    "key": "delivery",
+    "width": 390,
+    "geometry": [
+      {
+        "s": "#effect-stage",
+        "rect": {
+          "x": 17,
+          "y": 194.125,
+          "width": 356,
+          "height": 650,
+          "top": 194.125,
+          "right": 373,
+          "bottom": 844.125,
+          "left": 17
+        },
+        "text": "04 / FROM THE KITCHEN\nTo all of Australia.\n\n点一下地图，让厨房用筷子把外卖盒送过去。\n\nLAST DROP / 最近落点\nAustralia\nDEMO DELIVERIES 2\nSydney\nPerth\nHobart\n自动投送"
+      },
+      {
+        "s": ".native-heading",
+        "rect": {
+          "x": 38,
+          "y": 217.125,
+          "width": 314,
+          "height": 139.03125,
+          "top": 217.125,
+          "right": 352,
+          "bottom": 356.15625,
+          "left": 38
+        },
+        "text": "04 / FROM THE KITCHEN\nTo all of Australia.\n\n点一下地图，让厨房用筷子把外卖盒送过去。"
+      },
+      {
+        "s": ".native-service-card"
+      },
+      {
+        "s": ".native-susan"
+      },
+      {
+        "s": ".native-engine"
+      },
+      {
+        "s": ".native-dotmap",
+        "rect": {
+          "x": 20.5625,
+          "y": 424.125,
+          "width": 348.875,
+          "height": 264.46875,
+          "top": 424.125,
+          "right": 369.4375,
+          "bottom": 688.59375,
+          "left": 20.5625
+        },
+        "text": ""
+      },
+      {
+        "s": ".native-map-status",
+        "rect": {
+          "x": 36.420387268066406,
+          "y": 336.09979248046875,
+          "width": 178.15921020507812,
+          "height": 99.6285400390625,
+          "top": 336.09979248046875,
+          "right": 214.57959747314453,
+          "bottom": 435.72833251953125,
+          "left": 36.420387268066406
+        },
+        "text": "LAST DROP / 最近落点\nAustralia\nDEMO DELIVERIES 2"
+      },
+      {
+        "s": ".fortune-cookie"
+      },
+      {
+        "s": ".fortune-slip"
+      },
+      {
+        "s": ".native-cookie-foot"
+      }
+    ]
+  },
+  {
+    "key": "fortune",
+    "width": 390,
+    "geometry": [
+      {
+        "s": "#effect-stage",
+        "rect": {
+          "x": 17,
+          "y": 282.125,
+          "width": 356,
+          "height": 520,
+          "top": 282.125,
+          "right": 373,
+          "bottom": 802.125,
+          "left": 17
+        },
+        "text": "05 / YOUR FORTUNE\nCrack it open.\n\n点击原站的幸运饼干，揭晓今天的灵感。\n\nCompare the choices, then choose.\n看清差异之后，再做选择。\nLUCKY NUMBERS 11 · 64 · 47\nOPENED HERE 1\n重置本机记录"
+      },
+      {
+        "s": ".native-heading",
+        "rect": {
+          "x": 38,
+          "y": 305.125,
+          "width": 314,
+          "height": 104,
+          "top": 305.125,
+          "right": 352,
+          "bottom": 409.125,
+          "left": 38
+        },
+        "text": "05 / YOUR FORTUNE\nCrack it open.\n\n点击原站的幸运饼干，揭晓今天的灵感。"
+      },
+      {
+        "s": ".native-service-card"
+      },
+      {
+        "s": ".native-susan"
+      },
+      {
+        "s": ".native-engine"
+      },
+      {
+        "s": ".native-dotmap"
+      },
+      {
+        "s": ".native-map-status"
+      },
+      {
+        "s": ".fortune-cookie",
+        "rect": {
+          "x": 37.5,
+          "y": 368.25,
+          "width": 315,
+          "height": 315,
+          "top": 368.25,
+          "right": 352.5,
+          "bottom": 683.25,
+          "left": 37.5
+        },
+        "text": ""
+      },
+      {
+        "s": ".fortune-slip",
+        "rect": {
+          "x": 37.76171112060547,
+          "y": 637.21533203125,
+          "width": 314.0544738769531,
+          "height": 139.6998291015625,
+          "top": 637.21533203125,
+          "right": 351.8161849975586,
+          "bottom": 776.9151611328125,
+          "left": 37.76171112060547
+        },
+        "text": "Compare the choices, then choose.\n看清差异之后，再做选择。\nLUCKY NUMBERS 11 · 64 · 47"
+      },
+      {
+        "s": ".native-cookie-foot",
+        "rect": {
+          "x": 38,
+          "y": 748.125,
+          "width": 314,
+          "height": 30,
+          "top": 748.125,
+          "right": 352,
+          "bottom": 778.125,
+          "left": 38
+        },
+        "text": "OPENED HERE 1\n重置本机记录"
+      }
+    ]
+  },
+  {
+    "localErrors": []
+  }
+]

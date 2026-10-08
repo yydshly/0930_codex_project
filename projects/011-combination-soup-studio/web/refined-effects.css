@@ -1,0 +1,85 @@
+/* Composition and motion controls for the selected component adaptations. */
+.effect-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 2px;color:#69788b;font-size:11px}
+.effect-toolbar>div{display:flex;gap:8px}.effect-toolbar button{border:1px solid #ccd4df;border-radius:99px;background:white;padding:7px 13px;color:#324969;font-size:11px}
+.effect-focus .effect-workspace{grid-template-columns:1fr}.effect-focus .effect-inspector{display:none}
+.native-effect{background:radial-gradient(ellipse at 42% 50%,#4a1009,#220403 85%)}
+.native-heading>p{font-size:14px;line-height:1.8;color:#e2c9b8}
+.native-broth .native-heading{left:54%;top:80px;right:auto;width:42%}
+.native-broth .native-heading h3{font-size:72px;line-height:1.08}
+.native-broth .native-heading h3 em{display:block}
+.native-broth .native-engine{left:26%;top:105px;width:min(46%,570px)}
+.native-broth-recipe{position:absolute;left:54%;top:460px;width:42%;display:grid;gap:10px}
+.native-recipe-layer{display:flex;gap:18px;align-items:center;padding:16px 18px;border-radius:10px;background:#f4b73a;color:#220403}
+.native-recipe-layer b{font:400 24px SoupDisplay;min-width:100px}.native-recipe-layer span{font:12px/1.6 var(--font)}
+.native-recipe-layer.flavour{background:#ff5c8a}.native-recipe-layer.garnish{background:#2fa37c;color:#f6ecd6}
+.native-broth .native-heading>.native-broth-hint{position:static;margin-top:13px;color:#c4dadd;font:11px/1.8 var(--font);text-align:left}
+.native-broth-status{position:absolute;left:54%;top:700px;width:42%;font:11px/1.7 SoupMono,var(--font);color:#f4b73a}
+.native-broth-status [data-demo-step]{display:block;color:#d4bdb2;font:11px/1.8 var(--font)}
+.native-broth .native-broth-controls{left:28px;right:51%;gap:8px;flex-wrap:wrap}.native-broth-controls button{padding:9px 12px;font-size:11px}
+.native-broth-controls [data-demo][aria-pressed=true]{background:#8fe9ff;color:#220403}
+@media(hover:hover) and (pointer:fine){.native-motion-optional{display:none}}
+.native-engine .hud-laps progress{display:block;width:82px;height:5px;margin:7px 0 0 auto;accent-color:#f4b73a}
+.native-engine .hud-laps small{display:block;max-width:145px;margin-top:7px;font:10px/1.5 var(--font);color:#a0e6ed;text-shadow:none}
+.native-engine .hud-laps.done{color:#f4b73a}.native-broth.done .native-engine{box-shadow:0 0 60px #f4b73a22}
+.native-map .native-heading{left:32px;top:85px;right:auto;width:35%}.native-map .native-heading h3{font-size:72px;line-height:1.1}
+.native-map .native-heading h3 em{display:block}
+.native-map .native-dotmap{left:auto;right:24px;top:115px;transform:none;width:56%;max-width:735px}
+.native-map .native-map-status{left:32px;right:auto;top:370px;width:29%;max-width:none;padding:18px 21px}
+.native-map-status strong{font-size:34px;overflow-wrap:anywhere}
+.native-map-target{position:absolute;left:32px;top:520px;width:29%;border:1px solid #f4b73a55;border-radius:9px;padding:15px 18px;color:#f6ecd6;background:#3b090666}
+.native-map-target>span{font:10px SoupMono;color:#f4b73a}.native-map-target strong{display:block;font:400 28px/1.2 SoupDisplay;margin:5px 0}
+.native-map-target small{display:block;font:11px/1.6 var(--font);color:#d4bdb2}
+.native-map .native-map-controls{left:42%;right:24px;bottom:30px}.native-map-controls button{font-size:11px;padding:11px 16px}.native-map-controls label{font-size:11px}
+.native-cookie .native-heading{left:38px;top:90px;right:auto;width:41%}.native-cookie .native-heading h3{font-size:88px;line-height:1.08}
+.native-cookie .native-heading h3 em{display:block}.native-cookie .native-heading>p{max-width:340px;font-size:15px}
+.native-cookie-body{inset:45px 20px 75px 46%}.native-cookie .fortune-cookie{width:min(100%,440px)}
+.native-cookie .fortune-slip{width:min(100%,440px);max-width:440px}
+.native-cookie-invite{position:absolute;left:38px;top:420px;width:36%;display:grid;gap:18px;justify-items:start}
+.native-cookie-invite>span{font:10px SoupMono;color:#f4b73a;letter-spacing:.12em}.native-cookie-invite button{border:1px solid #f4b73a;border-radius:99px;color:#220403;background:#f4b73a;padding:14px 24px;font:14px var(--font)}
+.native-cookie-invite small{font:11px/1.8 var(--font);color:#c9a58b;max-width:260px}
+.native-cookie .fortune-cookie:not(.cracked):hover .l{transform:translateX(-1.5%) rotate(-2deg)}.native-cookie .fortune-cookie:not(.cracked):hover .r{transform:translateX(1.5%) rotate(2deg)}
+html.effects-motion-off .native-effect *,html.effects-motion-off .native-effect *::before,html.effects-motion-off .native-effect *::after{animation:none!important;transition:none!important}
+@media(max-width:1000px) and (min-width:761px){
+ .native-broth .native-heading{left:26px;right:26px;top:26px;width:auto}.native-broth .native-heading h3{font-size:44px}
+ .native-broth .native-heading h3 em{display:inline}
+ .native-broth .native-engine{left:38%;top:215px;width:66%;max-width:470px}
+ .native-broth-recipe{left:auto;right:24px;top:290px;width:23%}.native-recipe-layer{display:block;padding:15px}.native-recipe-layer b{font-size:21px}.native-recipe-layer span{display:block;font-size:11px;margin-top:6px}
+ .native-broth-status{left:auto;right:24px;top:590px;width:23%;font-size:9px}.native-broth .native-broth-controls{left:24px;right:24px}
+ .native-map .native-heading{top:35px;width:42%}.native-map .native-heading h3{font-size:52px}
+ .native-map .native-dotmap{top:225px;width:56%;right:16px}.native-map .native-map-status{top:335px;width:33%}.native-map-target{top:495px;width:33%}
+ .native-map .native-map-controls{left:24px;right:24px}
+ .native-cookie .native-heading{top:105px;width:42%;left:26px}.native-cookie .native-heading h3{font-size:65px}.native-cookie-invite{left:26px;top:410px;width:37%}
+ .native-cookie-body{inset:85px 12px 90px 45%}.native-cookie .fortune-cookie{width:100%}.native-cookie [data-fortune]{font-size:25px}
+}
+@media(max-width:760px){
+ .effect-toolbar{font-size:9px}.effect-toolbar button{font-size:10px;padding:7px 10px}
+ .native-heading>p{font-size:11px}
+ .native-broth .native-heading{left:21px;right:21px;top:24px;width:auto}.native-broth .native-heading h3{font-size:40px;line-height:1.03}
+ .native-broth .native-heading h3 em{display:inline}
+ .effect-stage[data-effect=broth]{height:860px;min-height:860px}
+ .native-broth .native-engine{left:50%;top:235px;width:100%;max-width:400px}
+ .native-engine .hud-tl,.native-engine .hud-bl{left:5%}.native-engine .hud-tr,.native-engine .hud-laps{right:5%}
+ .native-broth-recipe{left:17px;right:17px;top:610px;width:auto;grid-template-columns:repeat(3,1fr);gap:7px}
+ .native-recipe-layer{display:block;padding:11px 10px}.native-recipe-layer b{font-size:19px;min-width:0}.native-recipe-layer span{display:block;font-size:9px;line-height:1.65;margin-top:5px}
+ .native-broth-status{left:20px;right:20px;top:711px;width:auto;font-size:10px;text-align:center}.native-broth-status [data-demo-step]{font-size:10px}
+ .native-broth .native-heading>.native-broth-hint{font-size:10px;max-width:95%}
+ .native-broth .native-broth-controls{left:15px;right:15px;bottom:17px;gap:7px}.native-broth-controls button{font-size:10px;padding:9px 12px}.native-broth-controls label{font-size:9px}
+ .native-map .native-heading{left:21px;right:21px;top:24px;width:auto}.native-map .native-heading h3{font-size:36px;max-width:none}.native-map .native-heading h3 em{display:inline}
+ .effect-stage[data-effect=delivery]{height:580px;min-height:580px}
+ .native-map .native-map-status{left:17px;right:auto;top:145px;width:44%;padding:11px 13px;min-height:88px}.native-map-status strong{font-size:22px}
+ .native-map-target{left:auto;right:17px;top:145px;width:44%;padding:11px 12px;min-height:88px}.native-map-target>span{font-size:8px}.native-map-target strong{font-size:20px}.native-map-target small{font-size:9px}
+ .native-map .native-dotmap{left:50%;right:auto;top:246px;transform:translateX(-50%);width:100%;max-width:440px}
+ .native-map .native-map-controls{left:12px;right:12px;bottom:18px;gap:6px;flex-wrap:wrap}.native-map-controls button{font-size:9px;padding:9px 11px}.native-map-controls label{font-size:9px}
+ .native-cookie .native-heading{left:21px;right:21px;top:24px;width:auto}.native-cookie .native-heading h3{font-size:50px}.native-cookie .native-heading>p{font-size:11px}
+ .effect-stage[data-effect=fortune]{height:740px;min-height:740px}
+ .native-cookie-body{inset:202px 18px 76px}.native-cookie .fortune-cookie{width:min(100%,335px)}
+ .native-cookie .fortune-slip{width:100%;margin-top:-29px}.native-cookie [data-fortune]{font-size:25px}
+ .native-cookie-invite{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+ html.effects-motion-enabled .native-cookie .fortune-cookie:not(.cracked){animation:nativeShake 2.4s ease-in-out infinite!important}
+ html.effects-motion-enabled .native-cookie-halo{animation:nativePulse 2.4s ease-in-out infinite!important}
+ html.effects-motion-enabled .native-cookie .cookie-crumbs i{animation:nativeCrumb .9s cubic-bezier(.2,.7,.4,1) forwards!important}
+ html.effects-motion-enabled .native-cookie .fortune-cookie>.half{transition:transform 1s cubic-bezier(.2,.8,.2,1)!important}
+ html.effects-motion-enabled .native-cookie .fortune-slip{transition:transform .7s cubic-bezier(.3,1.4,.5,1),opacity .3s!important}
+}

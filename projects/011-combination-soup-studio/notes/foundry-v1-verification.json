@@ -1,0 +1,190 @@
+{
+  "version": "1.0",
+  "checkedAt": "2026-10-02T16:34:48.869Z",
+  "completed": true,
+  "failure": null,
+  "checks": [
+    {
+      "name": "定义页从完整示例开始",
+      "passed": true
+    },
+    {
+      "name": "自定义名称和标题进入运行原型",
+      "passed": true
+    },
+    {
+      "name": "配色改变实际 WebGL 像素",
+      "passed": true
+    },
+    {
+      "name": "选配导出准确保留名称/材质/亮度/结构",
+      "passed": true
+    },
+    {
+      "name": "当前画面实际导出 PNG",
+      "passed": true
+    },
+    {
+      "name": "产品可保存继续",
+      "passed": true
+    },
+    {
+      "name": "product ZIP 校验和与路径合法",
+      "passed": true
+    },
+    {
+      "name": "product 按需携带依赖",
+      "passed": true
+    },
+    {
+      "name": "product 包内名称与定义一致",
+      "passed": true
+    },
+    {
+      "name": "独立产品包恢复当前颜色与亮度",
+      "passed": true
+    },
+    {
+      "name": "独立产品包完成选配与导出",
+      "passed": true
+    },
+    {
+      "name": "product 包离开演示站可运行",
+      "passed": true
+    },
+    {
+      "name": "product README 有真实换行",
+      "passed": true
+    },
+    {
+      "name": "包的启动配置与当前试用一致",
+      "passed": true
+    },
+    {
+      "name": "产品定义明确记录模型未接入",
+      "passed": true
+    },
+    {
+      "name": "修改定义后阻止导出过期运行包",
+      "passed": true
+    },
+    {
+      "name": "JSON 导入还原产品和当前配置",
+      "passed": true
+    },
+    {
+      "name": "功能开关改变真实页面",
+      "passed": true
+    },
+    {
+      "name": "AI 需求作为待接能力展示",
+      "passed": true
+    },
+    {
+      "name": "新规则形成实际查询结果",
+      "passed": true
+    },
+    {
+      "name": "服务摘要保留地区/需求且没有虚假提交",
+      "passed": true
+    },
+    {
+      "name": "切换地区清除过期查询",
+      "passed": true
+    },
+    {
+      "name": "未覆盖规则反馈正确",
+      "passed": true
+    },
+    {
+      "name": "两种产品定义独立保存",
+      "passed": true
+    },
+    {
+      "name": "coverage ZIP 校验和与路径合法",
+      "passed": true
+    },
+    {
+      "name": "coverage 按需携带依赖",
+      "passed": true
+    },
+    {
+      "name": "coverage 包内名称与定义一致",
+      "passed": true
+    },
+    {
+      "name": "独立服务包按实际配置查询",
+      "passed": true
+    },
+    {
+      "name": "coverage 包离开演示站可运行",
+      "passed": true
+    },
+    {
+      "name": "coverage README 有真实换行",
+      "passed": true
+    },
+    {
+      "name": "刷新保留两个产品",
+      "passed": true
+    },
+    {
+      "name": "刷新继续编辑不会重复创建产品",
+      "passed": true
+    },
+    {
+      "name": "保存后恢复选配结果",
+      "passed": true
+    },
+    {
+      "name": "用户内容作为文本显示",
+      "passed": true
+    },
+    {
+      "name": "必填定义缺失阻止构建",
+      "passed": true
+    },
+    {
+      "name": "无效 JSON 有明确反馈",
+      "passed": true
+    },
+    {
+      "name": "未知定义版本被拒绝",
+      "passed": true
+    },
+    {
+      "name": "重复配色阻止构建",
+      "passed": true
+    },
+    {
+      "name": "同类新想法创建独立产品",
+      "passed": true
+    },
+    {
+      "name": "768 定义页无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "768 原型与工作台无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "390 定义页无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "390 原型与工作台无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "运行过程无未处理浏览器错误",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "浏览器使用桌面 Chromium；手机宽度验证不代表真实手机硬件性能",
+    "未接入在线模型、真实产品数据或业务提交",
+    "价值指标尚未经过真实用户测量"
+  ]
+}

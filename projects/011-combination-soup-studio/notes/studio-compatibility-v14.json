@@ -1,0 +1,27 @@
+{
+  "completed": true,
+  "failure": null,
+  "checks": [
+    {
+      "name": "实际 WebGL 上下文失效后停用模型操作并保留说明",
+      "passed": true
+    },
+    {
+      "name": "失效后改变窗口尺寸不会误报恢复",
+      "passed": true
+    },
+    {
+      "name": "无 WebGL 时保留明确兼容提示且停用三维控制",
+      "passed": true
+    },
+    {
+      "name": "兼容状态允许记录配置但不伪造三维观察",
+      "passed": true
+    },
+    {
+      "name": "兼容检查无未处理浏览器错误",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

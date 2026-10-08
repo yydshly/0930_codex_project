@@ -1,0 +1,196 @@
+{
+  "date": "2026-10-02",
+  "revision": "20261002-8",
+  "checks": [
+    {
+      "name": "默认展示实际解码的室内全景",
+      "passed": true
+    },
+    {
+      "name": "棚拍与室内切换改变真实画面",
+      "passed": true
+    },
+    {
+      "name": "棚拍的状态和选择同步",
+      "passed": true
+    },
+    {
+      "name": "选择框可恢复室内",
+      "passed": true
+    },
+    {
+      "name": "恢复室内还原相同像素",
+      "passed": true
+    },
+    {
+      "name": "反射开关实际改变材质",
+      "passed": true
+    },
+    {
+      "name": "反射关闭的事实同步",
+      "passed": true
+    },
+    {
+      "name": "反射开关保持全景背景像素",
+      "passed": true
+    },
+    {
+      "name": "需求单记录室内与关闭反射",
+      "passed": true
+    },
+    {
+      "name": "导出保存实际背景状态",
+      "passed": true
+    },
+    {
+      "name": "PNG包含实际模型和全景像素",
+      "passed": true
+    },
+    {
+      "name": "室内原图可展开查看",
+      "passed": true
+    },
+    {
+      "name": "原图展开未改变模型画布高度",
+      "passed": true
+    },
+    {
+      "name": "产品工具栏和页面无溢出 1440",
+      "passed": true
+    },
+    {
+      "name": "产品工具栏和页面无溢出 768",
+      "passed": true
+    },
+    {
+      "name": "产品工具栏和页面无溢出 390",
+      "passed": true
+    },
+    {
+      "name": "近景实际改变三维相机 water 1440",
+      "passed": true
+    },
+    {
+      "name": "近景状态记录正确 water 1440",
+      "passed": true
+    },
+    {
+      "name": "近景工具栏和页面无溢出 water 1440",
+      "passed": true
+    },
+    {
+      "name": "近景实际改变三维相机 plant 1440",
+      "passed": true
+    },
+    {
+      "name": "近景状态记录正确 plant 1440",
+      "passed": true
+    },
+    {
+      "name": "近景工具栏和页面无溢出 plant 1440",
+      "passed": true
+    },
+    {
+      "name": "近景实际改变三维相机 water 768",
+      "passed": true
+    },
+    {
+      "name": "近景状态记录正确 water 768",
+      "passed": true
+    },
+    {
+      "name": "近景工具栏和页面无溢出 water 768",
+      "passed": true
+    },
+    {
+      "name": "近景实际改变三维相机 plant 768",
+      "passed": true
+    },
+    {
+      "name": "近景状态记录正确 plant 768",
+      "passed": true
+    },
+    {
+      "name": "近景工具栏和页面无溢出 plant 768",
+      "passed": true
+    },
+    {
+      "name": "近景实际改变三维相机 water 390",
+      "passed": true
+    },
+    {
+      "name": "近景状态记录正确 water 390",
+      "passed": true
+    },
+    {
+      "name": "近景工具栏和页面无溢出 water 390",
+      "passed": true
+    },
+    {
+      "name": "近景实际改变三维相机 plant 390",
+      "passed": true
+    },
+    {
+      "name": "近景状态记录正确 plant 390",
+      "passed": true
+    },
+    {
+      "name": "近景工具栏和页面无溢出 plant 390",
+      "passed": true
+    },
+    {
+      "name": "近景复位恢复原来的三维空间",
+      "passed": true
+    },
+    {
+      "name": "庭院离开视口的检查条件成立",
+      "passed": true
+    },
+    {
+      "name": "离开视口后庭院参数仍刷新画面",
+      "passed": true
+    },
+    {
+      "name": "庭院离开视口时导出最新画面",
+      "passed": true
+    },
+    {
+      "name": "产品离开视口的检查条件成立",
+      "passed": true
+    },
+    {
+      "name": "离开视口后产品材质仍刷新画面",
+      "passed": true
+    },
+    {
+      "name": "产品离开视口时导出最新画面",
+      "passed": true
+    },
+    {
+      "name": "透明叶片原图可直接查看",
+      "passed": true
+    },
+    {
+      "name": "兼容模式关闭不支持的室内和反射",
+      "passed": true
+    },
+    {
+      "name": "兼容模式关闭水景和植物相机",
+      "passed": true
+    },
+    {
+      "name": "全景失败明确回退棚拍",
+      "passed": true
+    },
+    {
+      "name": "全景失败后配置仍可用",
+      "passed": true
+    },
+    {
+      "name": "正常路径无浏览器错误",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "scope": "Actual decoded assets, canvas changes, exports, cameras, responsive layout and explicit failure/compatibility states. Visual quality requires screenshot review."
+}

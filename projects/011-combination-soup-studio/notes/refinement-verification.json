@@ -1,0 +1,147 @@
+{
+  "date": "2026-10-02",
+  "checks": [
+    {
+      "name": "搅汤默认放大展示且显示真实自动体验状态",
+      "passed": true
+    },
+    {
+      "name": "自动体验真的驱动汤面溢出，未伪造用户圈数",
+      "passed": true
+    },
+    {
+      "name": "用户操作立即接管自动体验",
+      "passed": true
+    },
+    {
+      "name": "搅满8圈给出进度与可见奖励",
+      "passed": true
+    },
+    {
+      "name": "可主动暂停实际Canvas动画",
+      "passed": true
+    },
+    {
+      "name": "开启动态后Canvas重新实时变化",
+      "passed": true
+    },
+    {
+      "name": "手动投送立即显示正确目标且不伪造落点",
+      "passed": true
+    },
+    {
+      "name": "追踪手动包裹时暂停新的自动发射",
+      "passed": true
+    },
+    {
+      "name": "实际到达后才同步目标卡与落点",
+      "passed": true
+    },
+    {
+      "name": "纸条有实时开裂后展开与完整文字",
+      "passed": true
+    },
+    {
+      "name": "饼干不会自动合拢打断效果观察",
+      "passed": true
+    },
+    {
+      "name": "明显的再开一个按钮真实打开下一次",
+      "passed": true
+    },
+    {
+      "name": "说明可按需展开",
+      "passed": true
+    },
+    {
+      "name": "390px broth 页面无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "390px 配方卡与标题不互相遮挡",
+      "passed": true
+    },
+    {
+      "name": "390px 状态与控件不互相遮挡",
+      "passed": true
+    },
+    {
+      "name": "390px delivery 页面无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "390px fortune 页面无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "390px 饼干纸条不挡底部控件",
+      "passed": true
+    },
+    {
+      "name": "768px broth 页面无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "768px 配方卡与标题不互相遮挡",
+      "passed": true
+    },
+    {
+      "name": "768px 状态与控件不互相遮挡",
+      "passed": true
+    },
+    {
+      "name": "768px delivery 页面无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "768px fortune 页面无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "768px 饼干纸条不挡底部控件",
+      "passed": true
+    },
+    {
+      "name": "1440px broth 页面无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "1440px 配方卡与标题不互相遮挡",
+      "passed": true
+    },
+    {
+      "name": "1440px 状态与控件不互相遮挡",
+      "passed": true
+    },
+    {
+      "name": "1440px delivery 页面无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "1440px fortune 页面无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "1440px 饼干纸条不挡底部控件",
+      "passed": true
+    },
+    {
+      "name": "系统减少动态偏好仍默认静态",
+      "passed": true
+    },
+    {
+      "name": "用户可明确选择开启实时体验",
+      "passed": true
+    },
+    {
+      "name": "明确开启后开裂过渡没有被系统CSS意外关闭",
+      "passed": true
+    },
+    {
+      "name": "新交互无未处理运行错误",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "scope": "动态真实性、用户接管、运动偏好与局部构图；不证明主观观感或硬件倾斜可靠性"
+}

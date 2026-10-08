@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "1.0",
+  "product": "形卫 · 马桶选型",
+  "item": "S1 智能概念款",
+  "dataMode": "illustrative-catalog",
+  "selection": {
+    "kind": "toilet",
+    "modelId": "smart",
+    "modelName": "S1 智能概念款",
+    "color": "#f5f1e7",
+    "colorName": "暖瓷白",
+    "roughIn": 305,
+    "lidPercent": 0,
+    "structurePercent": 0,
+    "view": "hero",
+    "dimensions": true,
+    "includeInstallation": true
+  },
+  "specification": {
+    "widthMm": 390,
+    "depthMm": 690,
+    "heightMm": 485,
+    "seatHeightMm": 425,
+    "requiresPower": true
+  },
+  "site": {
+    "drain": "floor",
+    "roughIn": 305,
+    "width": 900,
+    "depth": 1200,
+    "power": "yes",
+    "notes": "请复核门扇开启范围和进水位置。"
+  },
+  "fit": {
+    "status": "preliminary-match",
+    "title": "输入参数与示例规则一致",
+    "checks": [
+      {
+        "key": "drain",
+        "label": "排水方式",
+        "status": "match",
+        "detail": "与示例落地下排水类型一致。"
+      },
+      {
+        "key": "roughIn",
+        "label": "现场坑距",
+        "status": "match",
+        "detail": "现场 305 mm / 所选 305 mm，输入参数一致。"
+      },
+      {
+        "key": "width",
+        "label": "可用宽度",
+        "status": "match",
+        "detail": "可用 900 mm / 示例规划 550 mm。"
+      },
+      {
+        "key": "depth",
+        "label": "可用进深",
+        "status": "match",
+        "detail": "可用 1200 mm / 示例规划 990 mm。"
+      },
+      {
+        "key": "power",
+        "label": "电源条件",
+        "status": "match",
+        "detail": "已记录有电源；位置、防护与规格需现场确认。"
+      }
+    ],
+    "requiredWidth": 550,
+    "requiredDepth": 990,
+    "notice": "这是示例参数的初步核对，前方和单侧预留是可编辑的规划值。安装可行性仍需产品图纸、供水条件与现场复核。"
+  },
+  "estimate": {
+    "mode": "demonstration-only",
+    "currency": "CNY",
+    "product": 5790,
+    "installation": 690,
+    "total": 6480
+  },
+  "observation": {
+    "renderer": "webgl",
+    "kind": "toilet",
+    "modelId": "smart",
+    "view": "hero",
+    "zoom": 1,
+    "yaw": 0.72,
+    "pitch": 0.25,
+    "backgroundSource": "procedural-bathroom",
+    "dimensions": true
+  },
+  "submitted": false,
+  "validation": {
+    "valid": true,
+    "errors": []
+  }
+}
