@@ -10,6 +10,7 @@ from plush_publish import publish_plush
 from atlas_publish import publish_atlas
 from soup_publish import publish_soup
 from dumpling_publish import publish_dumpling
+from insightface_publish import publish_insightface
 from sprite_publish import publish_sprite
 
 
@@ -40,12 +41,15 @@ def build(root=ROOT):
             publish_dumpling(root / relative, destination)
         if project["id"] == 9 and project["slug"] == "sprite-destruction-lab":
             publish_sprite(root / relative, destination)
+        if project["id"] == 13 and project["slug"] == "insightface-retrieval":
+            publish_insightface(root / relative, destination)
         # Other demos retain their established, flattened web publication.
         specialized_publication = ((project["id"] == 5 and project["slug"] == "plush-lab")
                                    or (project["id"] == 6 and project["slug"] == "ai-visual-atlas")
                                    or (project["id"] == 10 and project["slug"] == "dumpling-style-lab")
                                    or (project["id"] == 9 and project["slug"] == "sprite-destruction-lab")
-                                   or (project["id"] == 11 and project["slug"] == "combination-soup-studio"))
+                                   or (project["id"] == 11 and project["slug"] == "combination-soup-studio")
+                                   or (project["id"] == 13 and project["slug"] == "insightface-retrieval"))
         for asset in (() if specialized_publication else source.rglob("*")):
             # Case studies can carry actual exported artifacts and public evidence.
             relative_asset = asset.relative_to(source)
@@ -67,7 +71,7 @@ def build(root=ROOT):
                 target.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(asset, target)
         name, summary = html.escape(project['name']), html.escape(project['summary'])
-        if project['slug'] in {'combination-soup-studio', 'cellmotion', 'dumpling-style-lab', 'sprite-destruction-lab'}:
+        if project['slug'] in {'combination-soup-studio', 'cellmotion', 'dumpling-style-lab', 'sprite-destruction-lab', 'insightface-retrieval'}:
             modules = re.split(r'；\s*(?=[\u4e00-\u9fff]{2,8}：)', project['summary'])
             summary = ''.join('<span style="display:block;margin:0 0 7px">' +
                               ('<b>' + html.escape(label) + '：</b>' + html.escape(body) if separator else html.escape(label)) + '</span>'
@@ -131,6 +135,17 @@ def build(root=ROOT):
                           f'<a href="./{relative}/#experience-directory">全部效果入口</a> · '
                           f'<a href="./{relative}/foundry/showroom.html?example=toilet">马桶</a> · '
                           f'<a href="./{relative}/foundry/showroom.html?example=headphones">耳机</a>')
+        insightface_entry = ''
+        if project["id"] == 13 and project["slug"] == "insightface-retrieval":
+            guide_caption = '<p class="guide-caption">沿用我们的 2026-10-02 全景理解图 · 任务、特征学习、源库、参考价值与验收。原图保持不变，非原站截图；未运行真实识别。</p>'
+            source_link = f'<a href="{reference}">AVScan · 需求参考</a><br>能力参考：<a href="{repo}">{repo_name}</a><br>两者后台关联未确认'
+            source_note = f'需求参考：<a href="{reference}">AVScan</a>。能力参考：<a href="{repo}">{repo_name}</a>。未确认 AVScan 使用 InsightFace。'
+            insightface_entry = (f' <a class="button" href="./{relative}/map.html">放大全景图</a>'
+                                 f' <a class="button" href="./{relative}/mechanisms.html">原理示意</a>'
+                                 f'<p><a href="./{relative}/understanding.html">完整理解</a> · '
+                                 f'<a href="./{relative}/#entries">全部入口与展示</a> · '
+                                 f'<a href="./{relative}/#references">相关产品与开源方案</a> · '
+                                 f'<a href="./{relative}/sources.html">14 组来源与记录</a></p>')
         entries.append(f'<tr><td>{project["id"]:03d}</td><th scope="row"><a href="./{relative}/">{name}</a></th>'
                        f'<td>{summary}</td><td>{source_link}</td><td><a href="./{relative}/">网页演示</a></td></tr>')
         guide = ''
@@ -141,9 +156,11 @@ def build(root=ROOT):
             shutil.copy2(cover, cover_target)
             guide = f'<figure><a href="./{relative}/{project["cover"]}"><img src="./{relative}/{project["cover"]}" alt="{name} 引导图" loading="lazy"></a>{guide_caption}</figure>'
         entry_label = '原作展厅与完整入口' if project['slug'] == 'cellmotion' else '进入研究演示'
+        if project['slug'] == 'insightface-retrieval':
+            entry_label = '完整理解与展示入口'
         introductions.append(f'<article><div><p class="eyebrow">PROJECT {project["id"]:03d}</p><h2>{name}</h2><p>{summary}</p>'
                              f'<p>{source_note}先看引导图，再进入网页探索具体机制和场景。</p>'
-                             f'<a class="button" href="./{relative}/">{entry_label}</a>{cellmotion_entry}{sprite_entry}{soup_entry}{dumpling_entry}</div>{guide}</article>')
+                             f'<a class="button" href="./{relative}/">{entry_label}</a>{cellmotion_entry}{sprite_entry}{soup_entry}{dumpling_entry}{insightface_entry}</div>{guide}</article>')
     index = '''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>GitHub 项目研究集</title>
 <style>body{max-width:1180px;margin:45px auto;padding:0 24px;font:16px/1.85 system-ui;color:#172b38;background:#f4f7fa}a{color:#006d58;text-underline-offset:4px}h1{font-size:36px;margin-bottom:12px}h2{font-size:25px}p{color:#596b76}.eyebrow{font:13px monospace;color:#006d58;letter-spacing:2px}.intro{max-width:850px}.table-wrap{overflow-x:auto;background:#fff;border:1px solid #dce4e9;border-radius:10px}table{border-collapse:collapse;width:100%;min-width:750px;font-size:14px}td,th{padding:18px;text-align:left;border-bottom:1px solid #dce4e9;vertical-align:top}thead{background:#e6eef3}td:nth-child(3){min-width:310px}th[scope=row]{min-width:125px}article{display:grid;grid-template-columns:1fr 340px;gap:40px;margin:35px 0;padding:32px;background:#fff;border:1px solid #dce4e9;border-radius:12px}figure{margin:0}.guide-caption{font-size:12px;line-height:1.6}article img{width:100%;height:auto;display:block}.button{display:inline-block;padding:9px 18px;background:#006d58;color:white;border-radius:6px;text-decoration:none}footer{font-size:13px;margin:40px 0;color:#596b76}@media(max-width:700px){h1{font-size:28px}article{grid-template-columns:1fr;padding:22px}article img{max-width:340px;margin:auto}}</style></head><body>
 <p class="eyebrow">OPEN SOURCE FIELD NOTES</p><h1>GitHub 项目研究集</h1><div class="intro"><p>从能力到原理，从使用场景到采用判断：把开源项目整理成可阅读、可比较、可交互的研究记录。</p><p>每项研究围绕七个问题展开：能做什么、底层怎么做、如何运行、支持什么系统、用于哪些场景、对我们有何价值、未来怎样扩展。源库链接使用原仓库名；本站演示与上游产品明确区分。</p><p>witr 是运行来源诊断工具，主要价值是整合已有系统能力、减少人工关联。已有成熟采集工具链时，可把它作为便利工具与适配样本，而不必视作新的底层技术。</p></div><h2>项目索引</h2><div class="table-wrap"><table><thead><tr><th>编号</th><th>研究项目</th><th>能力、原理与使用摘要</th><th>来源 / 技术</th><th>入口</th></tr></thead><tbody>''' + ''.join(entries) + '</tbody></table></div><h2>项目介绍与引导图</h2>' + ''.join(introductions) + '<footer>引导图与网页属于独立研究材料；模拟数据不代表实机测量。各源库遵循各自许可证。</footer></body></html>'

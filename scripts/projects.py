@@ -121,6 +121,8 @@ def render_readme(root, projects):
         demo = link("在线演示", project["demo"]) if project["demo"] else "—"
         code = link(urlsplit(project['repo']).path.strip('/'), project['repo']) if project['repo'] else ''
         source = (link(project['reference_name'], project['reference']) + ('<br>技术：' + code if code else '<br>公开仓库未确认')) if 'reference' in project else code
+        if project['slug'] == 'insightface-retrieval':
+            source = link(project['reference_name'], project['reference']) + '<br>能力参考：' + code + '<br>后台关联未确认'
         atlas = project["id"] == 6 and project["slug"] == "ai-visual-atlas"
         if atlas:
             source_list = link("十项目源库列表", f"{path}/publication/index.html#library")
@@ -131,6 +133,8 @@ def render_readme(root, projects):
         if project["cover"]:
             source_note = (f"效果来源：{link(project['reference_name'], project['reference'])}。" + (f"技术基础：{code}。" if code else "公开仓库未确认，按公开网页进行研究。") if 'reference' in project
                            else f"源库：{code}。")
+            if project['slug'] == 'insightface-retrieval':
+                source_note = f"需求参考：{link(project['reference_name'], project['reference'])}。能力参考：{code}。未确认 AVScan 使用 InsightFace；下图为我们的原创理解汇总。"
             if atlas:
                 source_note = (f"最初来源：{link(project['reference_name'], project['reference'])}。资料索引："
                                f"{code}（其中一个资料项目）。{source_list}。我们的十项目能力与技术总览。")

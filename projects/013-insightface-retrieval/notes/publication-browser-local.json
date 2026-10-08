@@ -1,0 +1,321 @@
+{
+  "date": "2026-10-08",
+  "base": "http://127.0.0.1:8939/projects/013-insightface-retrieval/",
+  "phase": "local",
+  "realRecognitionTest": false,
+  "checks": [
+    {
+      "name": "desktop index.html: loads",
+      "pass": true
+    },
+    {
+      "name": "desktop index.html: layout and images",
+      "pass": true,
+      "overflow": false,
+      "missingImages": 0
+    },
+    {
+      "name": "homepage: original guide and four entry cards",
+      "pass": true
+    },
+    {
+      "name": "homepage: six reference products and libraries",
+      "pass": true
+    },
+    {
+      "name": "mobile index.html: layout and images",
+      "pass": true,
+      "overflow": false,
+      "missingImages": 0
+    },
+    {
+      "name": "desktop understanding.html: loads",
+      "pass": true
+    },
+    {
+      "name": "desktop understanding.html: layout and images",
+      "pass": true,
+      "overflow": false,
+      "missingImages": 0
+    },
+    {
+      "name": "mobile understanding.html: layout and images",
+      "pass": true,
+      "overflow": false,
+      "missingImages": 0
+    },
+    {
+      "name": "desktop map.html: loads",
+      "pass": true
+    },
+    {
+      "name": "desktop map.html: layout and images",
+      "pass": true,
+      "overflow": false,
+      "missingImages": 0
+    },
+    {
+      "name": "mobile map.html: layout and images",
+      "pass": true,
+      "overflow": false,
+      "missingImages": 0
+    },
+    {
+      "name": "desktop mechanisms.html: loads",
+      "pass": true
+    },
+    {
+      "name": "desktop mechanisms.html: layout and images",
+      "pass": true,
+      "overflow": false,
+      "missingImages": 0
+    },
+    {
+      "name": "mobile mechanisms.html: layout and images",
+      "pass": true,
+      "overflow": false,
+      "missingImages": 0
+    },
+    {
+      "name": "desktop sources.html: loads",
+      "pass": true
+    },
+    {
+      "name": "desktop sources.html: layout and images",
+      "pass": true,
+      "overflow": false,
+      "missingImages": 0
+    },
+    {
+      "name": "mobile sources.html: layout and images",
+      "pass": true,
+      "overflow": false,
+      "missingImages": 0
+    },
+    {
+      "name": "internal link index.html#main",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link index.html",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link understanding.html",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link map.html",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link mechanisms.html",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link sources.html",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link mechanisms.html#tasks",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link understanding.html#research-6",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link mechanisms.html#learning",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link mechanisms.html#pipeline",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link understanding.html#research-8",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link understanding.html#research-4",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link understanding.html#research-10",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link sources.html#sources",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link understanding.html#main",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link understanding.html#research-1",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link understanding.html#research-2",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link understanding.html#research-3",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link understanding.html#research-5",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link understanding.html#research-7",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link understanding.html#research-9",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link understanding.html#research-11",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link understanding-map.png",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link understanding-map.svg",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link sources.html#production",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link sources.html#publication",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link map.html#main",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link mechanisms.html#main",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link sources.html#main",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link sources.html#discussion",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "internal link publication-manifest.json",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "name": "map: original size mode",
+      "pass": true,
+      "width": 2400
+    },
+    {
+      "name": "map: keyboard zoom to 200%",
+      "pass": true
+    },
+    {
+      "name": "map: fit mode",
+      "pass": true
+    },
+    {
+      "name": "download png: identical original",
+      "pass": true,
+      "bytes": 1122333,
+      "sha256": "791356db37e49495938f32bc80efe785b13016f24050a59191aeb110e6bd02d6"
+    },
+    {
+      "name": "download svg: identical original",
+      "pass": true,
+      "bytes": 27428,
+      "sha256": "29501b30789718dc17944fcf754f139f9ad64d0f7b8c371e9b8d6c5072ac4ec4"
+    },
+    {
+      "name": "task switch frame",
+      "pass": true
+    },
+    {
+      "name": "task switch semantic",
+      "pass": true
+    },
+    {
+      "name": "task switch identity",
+      "pass": true
+    },
+    {
+      "name": "vectors: two candidates at teaching threshold 0.90",
+      "pass": true
+    },
+    {
+      "name": "vectors: reject when target samples absent",
+      "pass": true
+    },
+    {
+      "name": "vectors: lowering threshold shows wrong association",
+      "pass": true
+    },
+    {
+      "name": "vectors: strict threshold restores no match",
+      "pass": true
+    },
+    {
+      "name": "page JavaScript errors",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "public asset HTTP errors",
+      "pass": true,
+      "failedResponses": []
+    },
+    {
+      "name": "no visitor-local model requests",
+      "pass": true,
+      "unexpectedLocalRequests": []
+    }
+  ],
+  "passed": 63,
+  "total": 63
+}

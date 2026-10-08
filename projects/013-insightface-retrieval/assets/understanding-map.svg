@@ -1,0 +1,258 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="3620" viewBox="0 0 2400 3620" role="img" aria-labelledby="title desc">
+<title id="title">图片如何找到人，截图如何找到视频：InsightFace 与视觉检索全景理解</title>
+<desc id="desc">区分身份检索、同源画面检索与语义检索；说明离线建库、在线查询、InsightFace 的检测与识别网络、ArcFace 训练、模型与向量库的分工、可参考产品、实际价值、成熟程度、验收与授权。</desc>
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC","PingFang SC",Arial,sans-serif}</style>
+<defs><marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" stroke="#2464a0" stroke-width="2"/></marker></defs>
+<rect x="0" y="0" width="2400" height="3620" rx="0" fill="#f3f1eb" stroke="none" />
+<text x="80" y="72" font-size="22" font-weight="600" fill="#536379" >013 / INSIGHTFACE &amp; VISUAL RETRIEVAL</text>
+<text x="80" y="156" font-size="66" font-weight="700" fill="#182b43" >图片如何找到人，截图如何找到视频</text>
+<text x="80" y="210" font-size="31" font-weight="400" fill="#536379" >从 AVScan 到 InsightFace：我们的完整理解与采用判断</text>
+<rect x="80" y="252" width="2240" height="88" rx="16" fill="#182b43" stroke="none" />
+<text x="120" y="307" font-size="34" font-weight="600" fill="#ffffff" >模型提特征  →  目标库建索引  →  搜索返回候选  →  元数据回答来源</text>
+<text x="80" y="393" font-size="30" font-weight="600" fill="#182b43" >01  先区分目标：找人、找原画面、找相似内容</text>
+<g data-panel="1" data-x="80" data-y="420" data-width="728" data-height="330" aria-label="找同一个人">
+<rect x="80" y="420" width="728" height="330" rx="20" fill="#ffffff" stroke="#dbe2e9" />
+<rect x="108" y="448" width="6" height="36" rx="3" fill="#287465" stroke="none" />
+<text x="130" y="477" font-size="33" font-weight="600" fill="#182b43" >找同一个人</text>
+<text x="780" y="474" font-size="18" font-weight="500" fill="#536379" text-anchor="end">身份检索</text>
+<text x="112" y="518" font-size="26" font-weight="400" fill="#182b43" >输入：目标人物的一张或多张参考照。</text>
+<text x="112" y="556" font-size="26" font-weight="400" fill="#182b43" >关注：稳定身份特征，减少表情、光线、背景变化的</text>
+<text x="112" y="594" font-size="26" font-weight="400" fill="#182b43" >干扰。</text>
+<text x="112" y="632" font-size="26" font-weight="400" fill="#182b43" >输出：疑似同人的照片或人物出现候选。</text>
+<text x="112" y="670" font-size="26" font-weight="400" fill="#182b43" >姓名需要另有登记映射。</text>
+</g>
+<g data-panel="2" data-x="836" data-y="420" data-width="728" data-height="330" aria-label="找同一画面的出处">
+<rect x="836" y="420" width="728" height="330" rx="20" fill="#ffffff" stroke="#dbe2e9" />
+<rect x="864" y="448" width="6" height="36" rx="3" fill="#2464a0" stroke="none" />
+<text x="886" y="477" font-size="33" font-weight="600" fill="#182b43" >找同一画面的出处</text>
+<text x="1536" y="474" font-size="18" font-weight="500" fill="#536379" text-anchor="end">同源匹配</text>
+<text x="868" y="518" font-size="26" font-weight="400" fill="#182b43" >输入：视频某一帧的截图或修改版本。</text>
+<text x="868" y="556" font-size="26" font-weight="400" fill="#182b43" >关注：姿态、纹理、光影、构图和局部对应关系。</text>
+<text x="868" y="594" font-size="26" font-weight="400" fill="#182b43" >输出：已收录视频 + 对应位置。</text>
+<text x="868" y="632" font-size="26" font-weight="400" fill="#182b43" >认出演员仍不能确定作品和时间。</text>
+</g>
+<g data-panel="3" data-x="1592" data-y="420" data-width="728" data-height="330" aria-label="找内容相似的素材">
+<rect x="1592" y="420" width="728" height="330" rx="20" fill="#ffffff" stroke="#dbe2e9" />
+<rect x="1620" y="448" width="6" height="36" rx="3" fill="#7358a2" stroke="none" />
+<text x="1642" y="477" font-size="33" font-weight="600" fill="#182b43" >找内容相似的素材</text>
+<text x="2292" y="474" font-size="18" font-weight="500" fill="#536379" text-anchor="end">语义检索</text>
+<text x="1624" y="518" font-size="26" font-weight="400" fill="#182b43" >输入：参考场景、物体或动作的图片。</text>
+<text x="1624" y="556" font-size="26" font-weight="400" fill="#182b43" >关注：画面内容是否相似或相关。</text>
+<text x="1624" y="594" font-size="26" font-weight="400" fill="#182b43" >输出：类似素材与视频片段。</text>
+<text x="1624" y="632" font-size="26" font-weight="400" fill="#182b43" >相关片段不等于原始截图出处。</text>
+</g>
+<text x="80" y="805" font-size="30" font-weight="600" fill="#182b43" >02  共同架构：提前处理素材，再在目标索引中搜索</text>
+<g data-panel="4" data-x="80" data-y="835" data-width="2240" data-height="440" aria-label="目标库决定能搜什么，模型决定能区分什么">
+<rect x="80" y="835" width="2240" height="440" rx="20" fill="#ffffff" stroke="#dbe2e9" />
+<rect x="108" y="863" width="6" height="36" rx="3" fill="#2464a0" stroke="none" />
+<text x="130" y="892" font-size="33" font-weight="600" fill="#182b43" >目标库决定能搜什么，模型决定能区分什么</text>
+<text x="2292" y="889" font-size="18" font-weight="500" fill="#536379" text-anchor="end">通用架构理解</text>
+<text x="114" y="925" font-size="23" font-weight="600" fill="#2464a0" >离线建库</text>
+<rect x="114" y="949" width="406" height="104" rx="13" fill="#edf4fb" stroke="none" />
+<text x="317.0" y="988" font-size="28" font-weight="600" fill="#182b43" text-anchor="middle">目标素材</text>
+<text x="317.0" y="1026" font-size="23" font-weight="400" fill="#536379" text-anchor="middle">图库 / 视频库</text>
+<path d="M526 1001 H543" fill="none" stroke="#2464a0" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="549" y="949" width="406" height="104" rx="13" fill="#edf4fb" stroke="none" />
+<text x="752.0" y="988" font-size="28" font-weight="600" fill="#182b43" text-anchor="middle">检测 / 抽帧</text>
+<text x="752.0" y="1026" font-size="23" font-weight="400" fill="#536379" text-anchor="middle">按任务提取脸或帧</text>
+<path d="M961 1001 H978" fill="none" stroke="#2464a0" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="984" y="949" width="406" height="104" rx="13" fill="#edf4fb" stroke="none" />
+<text x="1187.0" y="988" font-size="28" font-weight="600" fill="#182b43" text-anchor="middle">提取向量</text>
+<text x="1187.0" y="1026" font-size="23" font-weight="400" fill="#536379" text-anchor="middle">选择合适的特征模型</text>
+<path d="M1396 1001 H1413" fill="none" stroke="#2464a0" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1419" y="949" width="406" height="104" rx="13" fill="#edf4fb" stroke="none" />
+<text x="1622.0" y="988" font-size="28" font-weight="600" fill="#182b43" text-anchor="middle">建立索引</text>
+<text x="1622.0" y="1026" font-size="23" font-weight="400" fill="#536379" text-anchor="middle">存储与相似度检索</text>
+<path d="M1831 1001 H1848" fill="none" stroke="#2464a0" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1854" y="949" width="406" height="104" rx="13" fill="#edf4fb" stroke="none" />
+<text x="2057.0" y="988" font-size="28" font-weight="600" fill="#182b43" text-anchor="middle">保存来源映射</text>
+<text x="2057.0" y="1026" font-size="23" font-weight="400" fill="#536379" text-anchor="middle">图片路径 / 视频 + 时间</text>
+<text x="114" y="1094" font-size="23" font-weight="600" fill="#287465" >在线查询</text>
+<rect x="114" y="1118" width="406" height="104" rx="13" fill="#edf6f1" stroke="none" />
+<text x="317.0" y="1157" font-size="28" font-weight="600" fill="#182b43" text-anchor="middle">参考图 / 截图</text>
+<text x="317.0" y="1195" font-size="23" font-weight="400" fill="#536379" text-anchor="middle">裁切与质量处理</text>
+<path d="M526 1170 H543" fill="none" stroke="#287465" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="549" y="1118" width="406" height="104" rx="13" fill="#edf6f1" stroke="none" />
+<text x="752.0" y="1157" font-size="28" font-weight="600" fill="#182b43" text-anchor="middle">同样的预处理</text>
+<text x="752.0" y="1195" font-size="23" font-weight="400" fill="#536379" text-anchor="middle">人脸对齐或画面处理</text>
+<path d="M961 1170 H978" fill="none" stroke="#287465" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="984" y="1118" width="406" height="104" rx="13" fill="#edf6f1" stroke="none" />
+<text x="1187.0" y="1157" font-size="28" font-weight="600" fill="#182b43" text-anchor="middle">调用相同模型</text>
+<text x="1187.0" y="1195" font-size="23" font-weight="400" fill="#536379" text-anchor="middle">形成可比较的向量</text>
+<path d="M1396 1170 H1413" fill="none" stroke="#287465" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1419" y="1118" width="406" height="104" rx="13" fill="#edf6f1" stroke="none" />
+<text x="1622.0" y="1157" font-size="28" font-weight="600" fill="#182b43" text-anchor="middle">检索目标索引</text>
+<text x="1622.0" y="1195" font-size="23" font-weight="400" fill="#536379" text-anchor="middle">相似度排序 + 阈值</text>
+<path d="M1831 1170 H1848" fill="none" stroke="#287465" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1854" y="1118" width="406" height="104" rx="13" fill="#edf6f1" stroke="none" />
+<text x="2057.0" y="1157" font-size="28" font-weight="600" fill="#182b43" text-anchor="middle">候选 + 来源</text>
+<text x="2057.0" y="1195" font-size="23" font-weight="400" fill="#536379" text-anchor="middle">允许没有可靠匹配</text>
+<text x="114" y="1251" font-size="25" font-weight="400" fill="#536379" >向量 + 原图/视频 ID + 时间戳 + 模型版本；不同模型向量不直接混用，更换模型通常需重建特征。</text>
+</g>
+<text x="80" y="1335" font-size="30" font-weight="600" fill="#182b43" >03  InsightFace 源库做什么，身份特征怎样学出来</text>
+<g data-panel="5" data-x="80" data-y="1365" data-width="1440" data-height="600" aria-label="InsightFace：把检测、对齐、识别与运行接起来">
+<rect x="80" y="1365" width="1440" height="600" rx="20" fill="#ffffff" stroke="#dbe2e9" />
+<rect x="108" y="1393" width="6" height="36" rx="3" fill="#2464a0" stroke="none" />
+<text x="130" y="1422" font-size="33" font-weight="600" fill="#182b43" >InsightFace：把检测、对齐、识别与运行接起来</text>
+<text x="1492" y="1419" font-size="18" font-weight="500" fill="#536379" text-anchor="end">S2 · S3 · S5</text>
+<text x="114" y="1470" font-size="29" font-weight="600" fill="#182b43" >检测：SCRFD / RetinaFace</text>
+<text x="114" y="1508" font-size="25" font-weight="400" fill="#536379" >找到脸框和关键点；检测到人脸不等于识别出身份。</text>
+<text x="114" y="1554" font-size="29" font-weight="600" fill="#182b43" >对齐：关键点 + 几何变换</text>
+<text x="114" y="1592" font-size="25" font-weight="400" fill="#536379" >裁切并规范人脸，让输入更容易比较。</text>
+<text x="114" y="1638" font-size="29" font-weight="600" fill="#182b43" >识别：ResNet 等网络 + 训练权重</text>
+<text x="114" y="1676" font-size="25" font-weight="400" fill="#536379" >把人脸像素转换成身份特征；依模型可输出几百维向量。</text>
+<text x="114" y="1722" font-size="29" font-weight="600" fill="#182b43" >执行：ONNX Runtime</text>
+<text x="114" y="1760" font-size="25" font-weight="400" fill="#536379" >本地 CPU / GPU 推理，具体运行条件依模型与环境而异。</text>
+<text x="114" y="1806" font-size="29" font-weight="600" fill="#182b43" >比较：归一化向量 + 余弦相似度</text>
+<text x="114" y="1844" font-size="25" font-weight="400" fill="#536379" >返回匹配候选；特征本身不包含姓名、影片编号或时间。</text>
+<text x="114" y="1907" font-size="25" font-weight="500" fill="#2464a0" >模型包示例：buffalo_l = SCRFD-10GF + ResNet50@WebFace600K</text>
+<text x="114" y="1945" font-size="24" font-weight="400" fill="#536379" >ArcFace 是训练方法；例示 112×112 输入与 512 维输出不是所有模型的固定规定。</text>
+</g>
+<g data-panel="6" data-x="1550" data-y="1365" data-width="770" data-height="600" aria-label="特征来自训练反馈">
+<rect x="1550" y="1365" width="770" height="600" rx="20" fill="#ffffff" stroke="#dbe2e9" />
+<rect x="1578" y="1393" width="6" height="36" rx="3" fill="#287465" stroke="none" />
+<text x="1600" y="1422" font-size="33" font-weight="600" fill="#182b43" >特征来自训练反馈</text>
+<text x="2292" y="1419" font-size="18" font-weight="500" fill="#536379" text-anchor="end">S4 · S5</text>
+<text x="1582" y="1471" font-size="25" font-weight="400" fill="#182b43" >像素 → 多层计算 → 特征向量</text>
+<text x="1582" y="1509" font-size="25" font-weight="400" fill="#182b43" >身份标签 → 计算损失 → 反向传播更新参数</text>
+<text x="1582" y="1547" font-size="25" font-weight="400" fill="#182b43" >目标：同人特征趋近，异人更易分开。</text>
+<ellipse cx="1690" cy="1685" rx="92" ry="66" fill="#edf4fb"/>
+<ellipse cx="1926" cy="1670" rx="86" ry="63" fill="#edf6f1"/>
+<ellipse cx="2160" cy="1720" rx="87" ry="64" fill="#f3eef8"/>
+<circle cx="1654" cy="1668" r="9" fill="#2464a0"/>
+<circle cx="1685" cy="1707" r="9" fill="#2464a0"/>
+<circle cx="1724" cy="1674" r="9" fill="#2464a0"/>
+<circle cx="1699" cy="1650" r="9" fill="#2464a0"/>
+<rect x="1886" y="1647" width="16" height="16" rx="3" fill="#287465"/>
+<rect x="1920" y="1685" width="16" height="16" rx="3" fill="#287465"/>
+<rect x="1948" y="1655" width="16" height="16" rx="3" fill="#287465"/>
+<rect x="1926" y="1630" width="16" height="16" rx="3" fill="#287465"/>
+<path d="M2129 1700 L2139 1718 L2119 1718Z" fill="#7358a2"/>
+<path d="M2164 1735 L2174 1753 L2154 1753Z" fill="#7358a2"/>
+<path d="M2191 1702 L2201 1720 L2181 1720Z" fill="#7358a2"/>
+<path d="M2161 1679 L2171 1697 L2151 1697Z" fill="#7358a2"/>
+<text x="1635" y="1784" font-size="23" font-weight="500" fill="#182b43" >人物 A</text>
+<text x="1870" y="1770" font-size="23" font-weight="500" fill="#182b43" >人物 B</text>
+<text x="2104" y="1820" font-size="23" font-weight="500" fill="#182b43" >人物 C</text>
+<text x="1582" y="1858" font-size="22" font-weight="400" fill="#536379" >二维教学示意，非真实模型输出或测试成绩。</text>
+<text x="1582" y="1898" font-size="23" font-weight="400" fill="#182b43" >ArcFace 在训练损失中加入角度间隔。</text>
+<text x="1582" y="1932" font-size="23" font-weight="400" fill="#182b43" >向量各维不固定对应某个五官；团簇不保证完全分开。</text>
+</g>
+<text x="80" y="2019" font-size="30" font-weight="600" fill="#182b43" >04  四个概念分工：工具库、算法、模型、特征库</text>
+<g data-panel="7" data-x="80" data-y="2049" data-width="542" data-height="300" aria-label="软件工具库">
+<rect x="80" y="2049" width="542" height="300" rx="20" fill="#ffffff" stroke="#dbe2e9" />
+<rect x="108" y="2077" width="6" height="36" rx="3" fill="#2464a0" stroke="none" />
+<text x="130" y="2106" font-size="33" font-weight="600" fill="#182b43" >软件工具库</text>
+<text x="110" y="2148" font-size="25" font-weight="400" fill="#182b43" >InsightFace 组织检测、对齐、推理和评</text>
+<text x="110" y="2185" font-size="25" font-weight="400" fill="#182b43" >测流程。</text>
+<text x="110" y="2222" font-size="25" font-weight="400" fill="#182b43" >它是调用入口；能力依所选模型与版本</text>
+<text x="110" y="2259" font-size="25" font-weight="400" fill="#182b43" >而异。</text>
+</g>
+<g data-panel="8" data-x="646" data-y="2049" data-width="542" data-height="300" aria-label="训练算法">
+<rect x="646" y="2049" width="542" height="300" rx="20" fill="#ffffff" stroke="#dbe2e9" />
+<rect x="674" y="2077" width="6" height="36" rx="3" fill="#287465" stroke="none" />
+<text x="696" y="2106" font-size="33" font-weight="600" fill="#182b43" >训练算法</text>
+<text x="676" y="2148" font-size="25" font-weight="400" fill="#182b43" >ArcFace 等方法规定训练损失与优化</text>
+<text x="676" y="2185" font-size="25" font-weight="400" fill="#182b43" >目标。</text>
+<text x="676" y="2222" font-size="25" font-weight="400" fill="#182b43" >训练让网络学会保留身份差异，减少拍摄条</text>
+<text x="676" y="2259" font-size="25" font-weight="400" fill="#182b43" >件干扰。</text>
+</g>
+<g data-panel="9" data-x="1212" data-y="2049" data-width="542" data-height="300" aria-label="模型 / 权重">
+<rect x="1212" y="2049" width="542" height="300" rx="20" fill="#ffffff" stroke="#dbe2e9" />
+<rect x="1240" y="2077" width="6" height="36" rx="3" fill="#7358a2" stroke="none" />
+<text x="1262" y="2106" font-size="33" font-weight="600" fill="#182b43" >模型 / 权重</text>
+<text x="1242" y="2148" font-size="25" font-weight="400" fill="#182b43" >网络结构 + 训练学到的参数。</text>
+<text x="1242" y="2185" font-size="25" font-weight="400" fill="#182b43" >运行模型生成特征；建库通常不需要重新训</text>
+<text x="1242" y="2222" font-size="25" font-weight="400" fill="#182b43" >练每个人。</text>
+</g>
+<g data-panel="10" data-x="1778" data-y="2049" data-width="542" data-height="300" aria-label="特征数据库">
+<rect x="1778" y="2049" width="542" height="300" rx="20" fill="#ffffff" stroke="#dbe2e9" />
+<rect x="1806" y="2077" width="6" height="36" rx="3" fill="#9b6426" stroke="none" />
+<text x="1828" y="2106" font-size="33" font-weight="600" fill="#182b43" >特征数据库</text>
+<text x="1808" y="2148" font-size="25" font-weight="400" fill="#182b43" >向量 + 图片路径 / 视频 ID + 时间戳等</text>
+<text x="1808" y="2185" font-size="25" font-weight="400" fill="#182b43" >映射。</text>
+<text x="1808" y="2222" font-size="25" font-weight="400" fill="#182b43" >保存目标素材；索引提升检索效率，不自动</text>
+<text x="1808" y="2259" font-size="25" font-weight="400" fill="#182b43" >提升辨别力。</text>
+</g>
+<text x="80" y="2406" font-size="30" font-weight="600" fill="#182b43" >05  产品与开源参考：现成技术怎样变成用户价值</text>
+<g data-panel="11" data-x="80" data-y="2436" data-width="728" data-height="370" aria-label="AVScan：具体需求的产品化">
+<rect x="80" y="2436" width="728" height="370" rx="20" fill="#ffffff" stroke="#dbe2e9" />
+<rect x="108" y="2464" width="6" height="36" rx="3" fill="#2464a0" stroke="none" />
+<text x="130" y="2493" font-size="33" font-weight="600" fill="#182b43" >AVScan：具体需求的产品化</text>
+<text x="780" y="2490" font-size="18" font-weight="500" fill="#536379" text-anchor="end">S1</text>
+<text x="112" y="2536" font-size="25" font-weight="400" fill="#182b43" >提供入口：上传、粘贴、裁切截图。</text>
+<text x="112" y="2573" font-size="25" font-weight="400" fill="#182b43" >宣称能力：查作品番号与对应时间。</text>
+<text x="112" y="2610" font-size="25" font-weight="400" fill="#182b43" >卖点：免费、免注册、低操作门槛。</text>
+<text x="112" y="2647" font-size="25" font-weight="400" fill="#182b43" >价值：减少拿着截图手工寻找出处。</text>
+<text x="112" y="2684" font-size="25" font-weight="400" fill="#182b43" >可能壁垒：覆盖、质量、速度与成本。</text>
+<text x="112" y="2721" font-size="25" font-weight="400" fill="#182b43" >ViT / 精度 / 速度为网站宣称；后台与收入没有验证。</text>
+</g>
+<g data-panel="12" data-x="836" data-y="2436" data-width="728" data-height="370" aria-label="其他方案各有分工">
+<rect x="836" y="2436" width="728" height="370" rx="20" fill="#ffffff" stroke="#dbe2e9" />
+<rect x="864" y="2464" width="6" height="36" rx="3" fill="#7358a2" stroke="none" />
+<text x="886" y="2493" font-size="33" font-weight="600" fill="#182b43" >其他方案各有分工</text>
+<text x="1536" y="2490" font-size="18" font-weight="500" fill="#536379" text-anchor="end">S7—S10</text>
+<text x="868" y="2536" font-size="25" font-weight="400" fill="#182b43" >trace.moe：动画截图查集数与时间。</text>
+<text x="868" y="2573" font-size="25" font-weight="400" fill="#182b43" >TwelveLabs：图片查询指定视频索引。</text>
+<text x="868" y="2610" font-size="25" font-weight="400" fill="#182b43" >SSCD：同源图片及修改版本的特征。</text>
+<text x="868" y="2647" font-size="25" font-weight="400" fill="#182b43" >Faiss：大量向量的相似度搜索。</text>
+<text x="868" y="2684" font-size="25" font-weight="400" fill="#182b43" >身份检索与画面检索已有技术基础；范围依目标库。</text>
+<text x="868" y="2721" font-size="25" font-weight="400" fill="#182b43" >未确认 AVScan 使用上述任何组合。</text>
+</g>
+<g data-panel="13" data-x="1592" data-y="2436" data-width="728" data-height="370" aria-label="实际识别的可用价值">
+<rect x="1592" y="2436" width="728" height="370" rx="20" fill="#ffffff" stroke="#dbe2e9" />
+<rect x="1620" y="2464" width="6" height="36" rx="3" fill="#287465" stroke="none" />
+<text x="1642" y="2493" font-size="33" font-weight="600" fill="#182b43" >实际识别的可用价值</text>
+<text x="2292" y="2490" font-size="18" font-weight="500" fill="#536379" text-anchor="end">用途判断</text>
+<text x="1624" y="2536" font-size="25" font-weight="400" fill="#182b43" >相册 / 活动照片：减少人工翻找。</text>
+<text x="1624" y="2573" font-size="25" font-weight="400" fill="#182b43" >素材库：同人归组与候选检索。</text>
+<text x="1624" y="2610" font-size="25" font-weight="400" fill="#182b43" >视频素材：人物出现位置的线索。</text>
+<text x="1624" y="2647" font-size="25" font-weight="400" fill="#182b43" >截图反查：找到收录作品与位置。</text>
+<text x="1624" y="2684" font-size="25" font-weight="400" fill="#182b43" >需要参考照或登记目标；没有目标可聚类，但不能知道想</text>
+<text x="1624" y="2721" font-size="25" font-weight="400" fill="#182b43" >找谁。</text>
+<text x="1624" y="2758" font-size="25" font-weight="400" fill="#182b43" >人物身份只能辅助，不能独立确定具体镜头出处。</text>
+</g>
+<text x="80" y="2864" font-size="30" font-weight="600" fill="#182b43" >06  成熟程度、效果验收与个人可行性</text>
+<g data-panel="14" data-x="80" data-y="2894" data-width="728" data-height="420" aria-label="技术可用，实际效果需验收">
+<rect x="80" y="2894" width="728" height="420" rx="20" fill="#ffffff" stroke="#dbe2e9" />
+<rect x="108" y="2922" width="6" height="36" rx="3" fill="#2464a0" stroke="none" />
+<text x="130" y="2951" font-size="33" font-weight="600" fill="#182b43" >技术可用，实际效果需验收</text>
+<text x="780" y="2948" font-size="18" font-weight="500" fill="#536379" text-anchor="end">S3 · S6 · S11</text>
+<text x="112" y="2994" font-size="25" font-weight="400" fill="#182b43" >已有论文、源码、预训练模型与持续评测。</text>
+<text x="112" y="3031" font-size="25" font-weight="400" fill="#182b43" >清晰人脸图库可工程使用；侧脸、遮挡、低清仍需代表性样</text>
+<text x="112" y="3068" font-size="25" font-weight="400" fill="#182b43" >本验证。</text>
+<text x="112" y="3105" font-size="25" font-weight="400" fill="#182b43" >官方 LFW 99.83% 是特定协议成绩，不等于自己的 1:N 检</text>
+<text x="112" y="3142" font-size="25" font-weight="400" fill="#182b43" >索准确率。</text>
+<text x="112" y="3179" font-size="25" font-weight="400" fill="#182b43" >NIST 的误认 / 漏认评测，不是对本项目或默认模型包的</text>
+<text x="112" y="3216" font-size="25" font-weight="400" fill="#182b43" >认证。</text>
+</g>
+<g data-panel="15" data-x="836" data-y="2894" data-width="728" data-height="420" aria-label="用什么判断“靠谱”">
+<rect x="836" y="2894" width="728" height="420" rx="20" fill="#ffffff" stroke="#dbe2e9" />
+<rect x="864" y="2922" width="6" height="36" rx="3" fill="#287465" stroke="none" />
+<text x="886" y="2951" font-size="33" font-weight="600" fill="#182b43" >用什么判断“靠谱”</text>
+<text x="1536" y="2948" font-size="18" font-weight="500" fill="#536379" text-anchor="end">实际验收</text>
+<text x="868" y="2994" font-size="25" font-weight="400" fill="#182b43" >看误认、漏认和正确候选的排名。</text>
+<text x="868" y="3031" font-size="25" font-weight="400" fill="#182b43" >测试目标不在库时能否拒绝匹配。</text>
+<text x="868" y="3068" font-size="25" font-weight="400" fill="#182b43" >分开记录人脸漏检与特征匹配失败。</text>
+<text x="868" y="3105" font-size="25" font-weight="400" fill="#182b43" >在实际规模下测耗时、存储与维护。</text>
+<text x="868" y="3142" font-size="25" font-weight="400" fill="#182b43" >相似度不是身份概率；阈值要校准。</text>
+<text x="868" y="3179" font-size="25" font-weight="400" fill="#182b43" >视频还受抽帧间隔、重复片段、编辑版本和覆盖范围影响。</text>
+</g>
+<g data-panel="16" data-x="1592" data-y="2894" data-width="728" data-height="420" aria-label="个人可以复用，先做小图库">
+<rect x="1592" y="2894" width="728" height="420" rx="20" fill="#ffffff" stroke="#dbe2e9" />
+<rect x="1620" y="2922" width="6" height="36" rx="3" fill="#9b6426" stroke="none" />
+<text x="1642" y="2951" font-size="33" font-weight="600" fill="#182b43" >个人可以复用，先做小图库</text>
+<text x="2292" y="2948" font-size="18" font-weight="500" fill="#536379" text-anchor="end">采用判断</text>
+<text x="1624" y="2994" font-size="25" font-weight="400" fill="#182b43" >原型：现成模型 + 参考照 + 本地图库 + 向量匹配。</text>
+<text x="1624" y="3031" font-size="25" font-weight="400" fill="#182b43" >优化：质量过滤、阈值验证、候选复核与索引更新。</text>
+<text x="1624" y="3068" font-size="25" font-weight="400" fill="#182b43" >大工作量：从零训练领先模型，或维护海量视频与并发</text>
+<text x="1624" y="3105" font-size="25" font-weight="400" fill="#182b43" >服务。</text>
+<text x="1624" y="3142" font-size="25" font-weight="400" fill="#182b43" >许可分开：库代码 MIT；官方预训练权重限定非商业研究</text>
+<text x="1624" y="3179" font-size="25" font-weight="400" fill="#182b43" >用途。</text>
+</g>
+<rect x="80" y="3354" width="2240" height="134" rx="17" fill="#182b43" stroke="none" />
+<text x="114" y="3402" font-size="25" font-weight="500" fill="#b9cadd" >始终保留这些边界</text>
+<text x="114" y="3450" font-size="31" font-weight="600" fill="#ffffff" >识人 ≠ 找原画面    ｜    相似 ≠ 同一人    ｜    向量 ≠ 姓名    ｜    库外目标可无匹配</text>
+<text x="80" y="3533" font-size="22" font-weight="400" fill="#536379" >资料核对：2026-10-02 · 原创理解汇总 · 未运行识别模型 / 未实测 AVScan · 特征空间为教学示意</text>
+<text x="80" y="3574" font-size="22" font-weight="400" fill="#536379" >来源 S1—S14 的完整链接与事实边界见 notes/sources.md；本图不确认 AVScan 使用 InsightFace。</text>
+</svg>

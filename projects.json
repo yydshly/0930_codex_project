@@ -118,5 +118,17 @@
     "cover": "assets/understanding-map.png",
     "reference": "https://combinationsoupstudio.com.au/",
     "reference_name": "Combination Soup Studio · 官网案例"
+  },
+  {
+    "id": 13,
+    "slug": "insightface-retrieval",
+    "name": "InsightFace · 人脸与视频截图检索理解",
+    "repo": "https://github.com/deepinsight/insightface",
+    "summary": "定位：人脸身份检索与视频截图出处查找的完整理解；能力：InsightFace 检测、对齐、身份向量、训练与评测；原理：ArcFace 等方法训练网络，目标库保存特征与来源，索引排序后校准阈值并拒识；展示：原有全景图、全文说明、三任务路线及人工向量排序示意，14 组来源与记录；场景：图库找人、素材归组、已收录视频画面定位与内容检索；价值：复用现成模型与检索技术，减少人工翻找，判断个人原型可行性；参考：AVScan、SSCD、Faiss、trace.moe、TwelveLabs 的分工；扩展：代表性样本验证、质量过滤、索引更新与候选复核；边界：识人不等于找出处，公开成绩不等于实际效果，未确认 AVScan 使用 InsightFace；未做真实识别，官方权重非商业研究条件需另核。",
+    "status": "已完成",
+    "demo": "",
+    "cover": "assets/understanding-map.png",
+    "reference": "https://avscan.cc/",
+    "reference_name": "AVScan · 需求参考，后台实现未确认"
   }
 ]
