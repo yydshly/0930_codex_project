@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-02T15:15:20.686596+00:00",
+  "version": 13,
+  "preview": "http://127.0.0.1:8947/?v=eb7ddb57#scene",
+  "bundleSha256": "eb7ddb5748595c54513cdf8db725cddff3f11d3024109d80397ebd7976c9ef72",
+  "scope": "Topic-specific application value, actual verification instructions and control navigation. Real-scene input explicitly optional. Simulation algorithms and asset quality unchanged.",
+  "numerical": {
+    "passed": 135,
+    "failed": 0,
+    "record": "notes/numerical-v13.tap"
+  },
+  "browser": {
+    "passed": 21,
+    "failed": 0,
+    "record": "notes/browser-v13-validation.json",
+    "resolvedInitialFailure": "Mobile action buttons measured 38px due to older higher-specificity CSS; repaired and remeasured 44px. Original failure retained in notes/browser-v13-first-pass.json.",
+    "historicalCasesCountedAsRerun": false
+  },
+  "guidedExperiment": {
+    "topic": "fish",
+    "changedParameter": "separation disabled only",
+    "durationSeconds": 1,
+    "referenceSignature": "7b8d5d3c",
+    "currentSignature": "2bae0a06",
+    "displayedMeanPositionDifferenceSceneUnits": 0.0071,
+    "displayedMaxPositionDifferenceSceneUnits": 0.0193,
+    "actualRenderedComparison": true,
+    "resetAfterQA": true
+  },
+  "captures": {
+    "count": 3,
+    "record": "notes/v13-capture-manifest.json"
+  },
+  "package": {
+    "upstreamSnapshotsUnchanged": 9,
+    "publicFilesMatched": 22,
+    "localReferences": 14,
+    "record": "notes/algorithm-v13-package-validation.json"
+  },
+  "collection": {
+    "testsPassed": 14,
+    "staticDemosBuilt": 17
+  },
+  "sourceHashes": {
+    "src/principle-learning.js": "2c4e4a30bbba1a4d17c2da5b3bc83ba94f2d8e06f1e3318eabad7576b72f9f91",
+    "src/principles.js": "d31360cb198a061db7c9d602025f4ce4d346762916dbebe6dda104cd8178e4cc",
+    "web/index.html": "e3c70ad008d6c5c1b4cea87b2a53152dba1bcac29c67c4bbcfc311afd988cde5",
+    "web/style.css": "fe6d2a5419f87c68b60bcb8eb91fd084f8a123ac7798e8269e44e32e6cdd0de6"
+  },
+  "limitations": [
+    "No new real-location model or measured dimensions.",
+    "Native JSON file input roundtrip remains unverified; successful v12 text input verification is historical evidence.",
+    "Mobile QA uses temporary IAB viewport, not real phone performance or complete screen-reader testing."
+  ],
+  "passedWithinScope": true
+}

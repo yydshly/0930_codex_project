@@ -1,0 +1,117 @@
+// Run only after explicit user authorization for isolated local-browser QA.
+import {createRequire} from 'node:module';
+import {readFile,writeFile} from 'node:fs/promises';
+import {writeFileSync} from 'node:fs';
+import {fileURLToPath} from 'node:url';
+import {createHash} from 'node:crypto';
+import assert from 'node:assert/strict';
+
+if(!process.argv.includes('--approved-local-browser'))throw new Error('Explicit approval required before launching isolated browser QA.');
+const root=fileURLToPath(new URL('../',import.meta.url));
+const expected='13f5604427c0d4d6942055c8339707df58d2106551854d03eeac36ab3cfea335';
+const bundle=createHash('sha256').update(await readFile(root+'web/app.js')).digest('hex');
+assert.equal(bundle,expected,'QA target is the reviewed final build');
+const scriptSha256=createHash('sha256').update(await readFile(fileURLToPath(import.meta.url))).digest('hex');
+const require=createRequire('C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/package.json');
+const {chromium}=require('playwright');
+const checks=[],captures=[],errors=[],consoleErrors=[],warnings=[],externalRequests=[];let contextEvents=[];
+let browser,page;
+const checkpoint=()=>writeFileSync(root+'notes/browser-v17-progress.json',JSON.stringify({date:new Date().toISOString(),status:'running_not_final_acceptance',bundleSha256:bundle,scriptSha256,checks,passed:checks.filter(check=>check.passed).length,failed:checks.filter(check=>!check.passed).length,captures,errors,consoleErrors,warnings,externalRequests},null,2)+'\n');
+const check=(name,condition,evidence)=>{checks.push({name,passed:!!condition,...evidence?{evidence}:{}});checkpoint();assert.ok(condition,name);console.log('PASS '+name);};
+const readText=(page,id)=>page.locator('#'+id).innerText();
+async function capture(page,name){await page.screenshot({path:root+'assets/'+name,type:'jpeg',quality:90});captures.push('assets/'+name);checkpoint();}
+async function pausedWaterBaseline(page){return page.evaluate(async()=>{const start=performance.now(),samples=[];let last=null,stable=0;while(performance.now()-start<120000){await new Promise(resolve=>setTimeout(resolve,1000));await new Promise(requestAnimationFrame);const match=/水面离屏更新 (\d+) 次/.exec(document.getElementById('principle-metrics')?.textContent??''),value=match?Number(match[1]):null;samples.push(value);stable=value>0&&value===last?stable+1:0;last=value;if(stable>=3)return {settled:true,value,samples,elapsedMs:performance.now()-start};}return {settled:false,value:last,samples,elapsedMs:performance.now()-start};});}
+try{
+ browser=await chromium.launch({headless:true,args:['--enable-webgl','--ignore-gpu-blocklist']});
+ page=await browser.newPage({viewport:{width:1280,height:960},deviceScaleFactor:1});
+ // A ~5-second software-WebGL frame needs up to 14 frames for camera return, then stable samples.
+ page.setDefaultTimeout(120000);
+ // Observe native canvas events without accessing or changing application state.
+ await page.addInitScript(()=>{window.__localQaContextEvents=[];for(const type of ['webglcontextlost','webglcontextrestored'])window.addEventListener(type,()=>window.__localQaContextEvents.push({type,time:performance.now()}),true);});
+ page.on('pageerror',e=>errors.push(e.message));
+ page.on('console',m=>{if(m.type()==='warning')warnings.push(m.text());if(m.type()==='error')consoleErrors.push(m.text());});
+ await page.route('**/*',route=>{const url=new URL(route.request().url());if(['data:','blob:'].includes(url.protocol)||url.origin==='http://127.0.0.1:8947')return route.continue();externalRequests.push(url.href);return route.abort();});
+ await page.goto('http://127.0.0.1:8947/?v=13f56044#scene',{waitUntil:'domcontentloaded',timeout:90000});
+ await page.waitForFunction(()=>document.getElementById('scene-loader')?.hidden,null,{timeout:120000});
+ check('new scene initializes and feeding feedback is initially hidden',!await page.locator('#feeding-feedback').isVisible());
+ await page.locator('#setting-fishCount').press('Home');
+ check('fish-count control can select zero',await page.locator('#setting-fishCount').inputValue()==='0');
+ await page.locator('#feed').click();
+ await page.locator('#feeding-feedback').waitFor({state:'visible'});
+ check('zero-fish main feed keeps zero and explains observation-only behavior',await page.locator('#setting-fishCount').inputValue()==='0'&&/当前无鱼/.test(await readText(page,'feeding-status')));
+ await page.waitForFunction(()=>document.getElementById('feeding-counts')?.textContent.includes('本轮释放 6/6 粒'),null,{timeout:120000});
+ await page.waitForFunction(()=>document.getElementById('feeding-counts')?.textContent.includes('实际落水 6 粒'),null,{timeout:60000});
+ await page.locator('#feeding-pause').click();
+ const frozen=await readText(page,'feeding-counts');
+ check('actual six-pellet release and landing have a separate zero swallow count',/本轮释放 6\/6 粒/.test(frozen)&&/实际落水 6 粒/.test(frozen)&&/吞食 0 粒/.test(frozen),frozen);
+ check('pause has a truthful pressed state and status',await page.locator('#feeding-pause').getAttribute('aria-pressed')==='true'&&/模拟已暂停/.test(await readText(page,'feeding-status')));
+ await page.keyboard.press('Tab');
+ check('keyboard can move from pause to a feedback action',['feeding-stop','feeding-again'].includes(await page.evaluate(()=>document.activeElement?.id)));
+ await page.locator('#feeding-feedback').scrollIntoViewIfNeeded();
+ await capture(page,'feeding-desktop-v17.jpg');
+ if(await page.locator('#feeding-stop').isVisible())await page.locator('#feeding-stop').click();
+ check('hand withdrawal preserves the frozen batch',await readText(page,'feeding-counts')===frozen);
+ await page.locator('#principle-select').selectOption('performance');
+ await page.waitForFunction(()=>/水面离屏更新 (\d+) 次/.test(document.getElementById('principle-metrics')?.textContent??''));
+ const staticBaseline=await pausedWaterBaseline(page);
+ check('paused static water passes stay cached after the returning camera settles',staticBaseline.settled,staticBaseline);
+ await page.locator('#viewport').scrollIntoViewIfNeeded();
+ const canvasBox=await page.locator('#viewport canvas').first().boundingBox();
+ assert.ok(canvasBox,'scene canvas is available for native orbit drag');
+ const dragX=canvasBox.x+canvasBox.width*.55,dragY=canvasBox.y+canvasBox.height*.45;
+ await page.mouse.move(dragX,dragY);await page.mouse.down();await page.mouse.move(dragX+45,dragY-25,{steps:5});await page.mouse.up();
+ await page.waitForFunction(previous=>Number(/水面离屏更新 (\d+) 次/.exec(document.getElementById('principle-metrics')?.textContent??'')?.[1])>previous,staticBaseline.value);
+ const orbitText=await readText(page,'principle-metrics');
+ check('orbit camera movement refreshes paused water passes',Number(/水面离屏更新 (\d+) 次/.exec(orbitText)?.[1])>staticBaseline.value,orbitText);
+ const orbitBaseline=await pausedWaterBaseline(page);
+ check('orbit damping eventually returns to static water reuse',orbitBaseline.settled,orbitBaseline);
+ const beforeLight=orbitBaseline.value;
+ await page.locator('#setting-hour').press('ArrowRight');
+ await page.waitForFunction(previous=>Number(/水面离屏更新 (\d+) 次/.exec(document.getElementById('principle-metrics')?.textContent??'')?.[1])>previous,beforeLight);
+ check('daylight adjustment invalidates the paused water cache',Number(/水面离屏更新 (\d+) 次/.exec(await readText(page,'principle-metrics'))?.[1])>beforeLight);
+ await page.locator('.principle-panel').scrollIntoViewIfNeeded();
+ await capture(page,'water-cache-v17.jpg');
+ if(!await page.locator('#glb-panel').evaluate(el=>el.open))await page.locator('#glb-panel > summary').click();
+ await page.locator('#model-file').setInputFiles({name:'invalid.glb',mimeType:'model/gltf-binary',buffer:Buffer.from('invalid')});
+ await page.waitForFunction(()=>document.getElementById('scene-toast')?.textContent.startsWith('模型导入失败'));
+ check('rejected GLB retains the previous feed record',await page.locator('#feeding-feedback').isVisible()&&await readText(page,'feeding-counts')===frozen);
+ await page.locator('#model-file').setInputFiles(root+'web/assets/binding-example.glb');
+ await page.waitForFunction(()=>document.getElementById('model-status')?.textContent.includes('binding-example.glb'),null,{timeout:90000});
+ check('accepted unbound model clears feeding feedback and disables feeding',!await page.locator('#feeding-feedback').isVisible()&&!await page.locator('#feed').isEnabled());
+ await page.locator('#clear-model').click();
+ await page.waitForFunction(()=>document.getElementById('model-status')?.textContent==='尚未导入模型');
+ check('returning to courtyard does not revive the previous round',!await page.locator('#feeding-feedback').isVisible()&&await page.locator('#feed').isEnabled());
+ await page.locator('#feed').click();await page.locator('#feeding-pause').click();
+ const freshCounts=await readText(page,'feeding-counts'),freshRelease=/本轮释放 (\d+)\/6 粒/.exec(freshCounts),freshCumulative=/场景累计吞食 (\d+) 粒/.exec(freshCounts);
+ check('new courtyard feed restores a six-pellet round without inventing swallowed food',freshRelease&&freshCumulative&&Number(freshRelease[1])<=6&&freshCumulative[1]==='0',freshCounts);
+ await page.locator('#feeding-stop').click();
+ const stoppedStatus=await readText(page,'feeding-status'),stoppedCounts=await readText(page,'feeding-counts');
+ check('manual withdrawal identifies the stopped hand without inventing swallowed pellets',/手部动作已结束|本轮已结束/.test(stoppedStatus)&&(Number(freshRelease[1])===6||/提前停止/.test(stoppedStatus))&&/吞食 0 粒/.test(stoppedCounts),{releasedBeforeStop:Number(freshRelease[1]),status:stoppedStatus,counts:stoppedCounts});
+ await page.setViewportSize({width:390,height:844});
+ await page.locator('#feeding-feedback').scrollIntoViewIfNeeded();
+ const mobile=await page.locator('#feeding-feedback').evaluate(el=>({pageWidth:document.documentElement.scrollWidth,clientWidth:document.documentElement.clientWidth,buttons:[...el.querySelectorAll('button')].map(b=>{const r=b.getBoundingClientRect();return {id:b.id,height:r.height,width:r.width};}).filter(b=>b.height>0&&b.width>0)}));
+ check('mobile page has no horizontal overflow and feedback action targets are at least 44px',mobile.pageWidth<=mobile.clientWidth&&['feeding-pause','feeding-again'].every(id=>mobile.buttons.some(b=>b.id===id))&&mobile.buttons.every(b=>b.height>=44&&b.width>=44),mobile);
+ await capture(page,'feeding-mobile-v17.jpg');
+ await page.locator('#feeding-again').click();
+ await page.locator('#feeding-pause').click();
+ check('mobile repeat-feed keeps zero fish and can pause the new hand',await page.locator('#setting-fishCount').inputValue()==='0'&&/当前无鱼/.test(await readText(page,'feeding-status'))&&await page.locator('#feeding-stop').isVisible()&&await page.locator('#feeding-pause').getAttribute('aria-pressed')==='true');
+ const activeMobile=await page.locator('#feeding-feedback').evaluate(el=>[...el.querySelectorAll('button')].map(b=>{const r=b.getBoundingClientRect();return {id:b.id,height:r.height,width:r.width};}).filter(b=>b.height>0&&b.width>0));
+ check('mobile paused active feed retains all three accessible action targets',['feeding-pause','feeding-stop','feeding-again'].every(id=>activeMobile.some(b=>b.id===id))&&activeMobile.every(b=>b.height>=44&&b.width>=44),activeMobile);
+ await capture(page,'feeding-mobile-active-v17.jpg');
+ const mobileContext=await page.evaluate(()=>({loaderHidden:document.getElementById('scene-loader')?.hidden,events:window.__localQaContextEvents}));
+ check('mobile repeated feeding retains an active WebGL scene',mobileContext.loaderHidden&&mobileContext.events.length===0,mobileContext);
+ await page.locator('#reset').click();
+ check('reset clears the feeding panel and restores seven fish',!await page.locator('#feeding-feedback').isVisible()&&await page.locator('#setting-fishCount').inputValue()==='7');
+ await page.setViewportSize({width:1280,height:960});await page.locator('#pause-toggle').click();await page.locator('#viewport').scrollIntoViewIfNeeded();
+ const resetBaseline=await pausedWaterBaseline(page);
+ check('reset reference camera settles before final courtyard capture',resetBaseline.settled,resetBaseline);
+ await capture(page,'courtyard-desktop-v17.jpg');
+ const finalContext=await page.evaluate(()=>({loaderHidden:document.getElementById('scene-loader')?.hidden,events:window.__localQaContextEvents}));
+ check('final courtyard capture retains an active WebGL scene',finalContext.loaderHidden&&finalContext.events.length===0,finalContext);
+ check('no page or shader-console errors or external requests',errors.length===0&&consoleErrors.length===0&&externalRequests.length===0,{errors,consoleErrors,externalRequests});
+}catch(error){if(!checks.some(c=>!c.passed))checks.push({name:'browser verification execution',passed:false,error:error.message});if(page)try{await capture(page,'feeding-failure-v17.jpg');}catch{}throw error;
+}finally{
+ if(page)try{contextEvents=await page.evaluate(()=>window.__localQaContextEvents??[]);}catch{}
+ await writeFile(root+'notes/browser-v17-validation.json',JSON.stringify({date:new Date().toISOString(),clientDate:'2026-10-03',version:17,bundleSha256:bundle,scriptSha256,authorization:{reply:'继续优化',context:'Reply to the preceding explicit request for isolated localhost Playwright acceptance.'},method:'User-authorized isolated headless Chromium, real UI actions and read-only DOM/canvas-event observations. Uses software-capable WebGL; not a hardware performance or full accessibility test.',checks,passed:checks.filter(c=>c.passed).length,failed:checks.filter(c=>!c.passed).length,captures,errors,consoleErrors,warnings,externalRequests,contextEvents},null,2)+'\n');
+ if(browser)await browser.close();
+}

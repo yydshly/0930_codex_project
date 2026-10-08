@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-03T00:14:56.817032+00:00",
+  "version": 18,
+  "bundleSha256": "9051a067c8eb6175f907cc1d68ef5c79ec149600b8aeebc597bcffd0607c36b2",
+  "captures": [
+    {
+      "path": "assets/feeding-mobile-v18.jpg",
+      "bytes": 85083,
+      "sha256": "2f4933d8de62f976e4f31abd5d9d09e02815caf491d10370b8ab7f118c258d65",
+      "width": 390,
+      "height": 844,
+      "sourceRecord": "notes/browser-v18-validation.json",
+      "rawUneditedNativeScreenshot": true,
+      "visuallyInspected": true,
+      "state": "Mobile paused release phase after a native touch tap; hand, fish, counts, controls and focus instructions visible."
+    },
+    {
+      "path": "assets/courtyard-desktop-v18.jpg",
+      "bytes": 321493,
+      "sha256": "63c3bad07fcd43138cf4843c7e91a841458bac9ef4aa1df82b0277fbb271270b",
+      "width": 1280,
+      "height": 960,
+      "sourceRecord": "notes/browser-v18-validation.json",
+      "rawUneditedNativeScreenshot": true,
+      "visuallyInspected": true,
+      "state": "Desktop courtyard after clearing a textured skinned import; default garden, controls and new keyboard help visible."
+    },
+    {
+      "path": "assets/feeding-desktop-v18.jpg",
+      "bytes": 221654,
+      "sha256": "09f801b558d192ad9709f9d0e7b850f4060ef5bfea6652ec6708d19d759beda1",
+      "width": 1280,
+      "height": 960,
+      "sourceRecord": "notes/browser-v18-validation.json",
+      "rawUneditedNativeScreenshot": true,
+      "visuallyInspected": true,
+      "state": "Desktop feed paused at the initial approach; hand mostly outside the right edge. Verifies feedback layout and paused stage, not full hand framing or realism."
+    }
+  ],
+  "method": "Exact saved native Chromium JPEGs inspected with view_image. No image editing or generated replacement."
+}

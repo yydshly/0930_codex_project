@@ -1,0 +1,822 @@
+TAP version 13
+# Subtest: animal world/local coordinates roundtrip around the same scaled pond center
+ok 1 - animal world/local coordinates roundtrip around the same scaled pond center
+  ---
+  duration_ms: 1.1809
+  type: 'test'
+  ...
+# Subtest: landing arc starts and ends at the moving support, with zero extra endpoint velocity
+ok 2 - landing arc starts and ends at the moving support, with zero extra endpoint velocity
+  ---
+  duration_ms: 1.0029
+  type: 'test'
+  ...
+# Subtest: support heading takes the short turn across the angle seam
+ok 3 - support heading takes the short turn across the angle seam
+  ---
+  duration_ms: 0.1577
+  type: 'test'
+  ...
+# Subtest: turtle complete route reserves a body radius plus bank margin at every pond scale
+ok 4 - turtle complete route reserves a body radius plus bank margin at every pond scale
+  ---
+  duration_ms: 147.8114
+  type: 'test'
+  ...
+# Subtest: the turtle route completes continuously with matching entry and exit tangents
+ok 5 - the turtle route completes continuously with matching entry and exit tangents
+  ---
+  duration_ms: 2.2452
+  type: 'test'
+  ...
+# Subtest: full affine child matrices cancel the nonuniform pond parent and preserve world normals
+ok 6 - full affine child matrices cancel the nonuniform pond parent and preserve world normals
+  ---
+  duration_ms: 1627.5494
+  type: 'test'
+  ...
+# Subtest: shared lily geometry keeps curvature, upward normals and a perch inside the actual triangles
+ok 7 - shared lily geometry keeps curvature, upward normals and a perch inside the actual triangles
+  ---
+  duration_ms: 2.1862
+  type: 'test'
+  ...
+# Subtest: real resting frog follows its curved leaf position and sampled normal at all scales
+ok 8 - real resting frog follows its curved leaf position and sampled normal at all scales
+  ---
+  duration_ms: 21.1809
+  type: 'test'
+  ...
+# Subtest: real frog jump retargets the wave-moved landing pad and emits exactly one landing impulse
+ok 9 - real frog jump retargets the wave-moved landing pad and emits exactly one landing impulse
+  ---
+  duration_ms: 3.2358
+  type: 'test'
+  ...
+# Subtest: real dragonfly transitions to a moving perch continuously and stays attached through wind
+ok 10 - real dragonfly transitions to a moving perch continuously and stays attached through wind
+  ---
+  duration_ms: 3.3265
+  type: 'test'
+  ...
+# Subtest: real turtle tracks shared surface depth, stays inside the shore margin and returns continuously
+ok 11 - real turtle tracks shared surface depth, stays inside the shore margin and returns continuously
+  ---
+  duration_ms: 160.4974
+  type: 'test'
+  ...
+# Subtest: zero timestep freezes every actor pose, timer and impulse; reset reproduces the ecosystem start
+ok 12 - zero timestep freezes every actor pose, timer and impulse; reset reproduces the ecosystem start
+  ---
+  duration_ms: 0.896
+  type: 'test'
+  ...
+# Subtest: pending display separates fresh point distance from the older physical calibration
+ok 13 - pending display separates fresh point distance from the older physical calibration
+  ---
+  duration_ms: 0.9078
+  type: 'test'
+  ...
+# Subtest: committed display derives length from the record points, never a stale draft metric
+ok 14 - committed display derives length from the record points, never a stale draft metric
+  ---
+  duration_ms: 0.8527
+  type: 'test'
+  ...
+# Subtest: unapplied selections describe scene units and cancellation rather than physical meters
+ok 15 - unapplied selections describe scene units and cancellation rather than physical meters
+  ---
+  duration_ms: 0.2124
+  type: 'test'
+  ...
+# Subtest: camera coefficient preserves the 60 Hz gain and composes by elapsed time
+ok 16 - camera coefficient preserves the 60 Hz gain and composes by elapsed time
+  ---
+  duration_ms: 2.2513
+  type: 'test'
+  ...
+# Subtest: actual animal-follow method has equal 20/60/120 Hz half-second response without advancing simulation
+ok 17 - actual animal-follow method has equal 20/60/120 Hz half-second response without advancing simulation
+  ---
+  duration_ms: 3.8413
+  type: 'test'
+  ...
+# Subtest: real OrbitControls pending pan damps consistently at 20/60/120 Hz
+ok 18 - real OrbitControls pending pan damps consistently at 20/60/120 Hz
+  ---
+  duration_ms: 6.961
+  type: 'test'
+  ...
+# Subtest: time-aware OrbitControls restores its damping setting even when update throws
+ok 19 - time-aware OrbitControls restores its damping setting even when update throws
+  ---
+  duration_ms: 0.4825
+  type: 'test'
+  ...
+# Subtest: all imported-scene animal requests select the model and never restore hidden follow state
+ok 20 - all imported-scene animal requests select the model and never restore hidden follow state
+  ---
+  duration_ms: 2.9579
+  type: 'test'
+  ...
+# Subtest: bound imported pond views keep the bound water center
+ok 21 - bound imported pond views keep the bound water center
+  ---
+  duration_ms: 0.7107
+  type: 'test'
+  ...
+# Subtest: hidden ancestors cancel animal and fish follow before reading their target
+ok 22 - hidden ancestors cancel animal and fish follow before reading their target
+  ---
+  duration_ms: 0.2781
+  type: 'test'
+  ...
+# Subtest: actual animal picking selects visible actor geometry and respects a nearer opaque blocker
+ok 23 - actual animal picking selects visible actor geometry and respects a nearer opaque blocker
+  ---
+  duration_ms: 2.2081
+  type: 'test'
+  ...
+# Subtest: transparent water shader and transparent material allow underwater turtle selection
+ok 24 - transparent water shader and transparent material allow underwater turtle selection
+  ---
+  duration_ms: 1.2191
+  type: 'test'
+  ...
+# Subtest: hidden ancestors and invisible materials never block actor rays
+ok 25 - hidden ancestors and invisible materials never block actor rays
+  ---
+  duration_ms: 1.0202
+  type: 'test'
+  ...
+# Subtest: actor body parts do not occlude their own actor and a farther blocker is ignored
+ok 26 - actor body parts do not occlude their own actor and a farther blocker is ignored
+  ---
+  duration_ms: 0.4481
+  type: 'test'
+  ...
+# Subtest: ray misses an opaque leaf silhouette instead of treating its bounding box as a blocker
+ok 27 - ray misses an opaque leaf silhouette instead of treating its bounding box as a blocker
+  ---
+  duration_ms: 0.9221
+  type: 'test'
+  ...
+# Subtest: world-space line thresholds neither enlarge actor click targets nor become false blockers
+ok 28 - world-space line thresholds neither enlarge actor click targets nor become false blockers
+  ---
+  duration_ms: 1.0829
+  type: 'test'
+  ...
+# Subtest: actual selected triangle material determines occlusion for multi-material geometry
+ok 29 - actual selected triangle material determines occlusion for multi-material geometry
+  ---
+  duration_ms: 0.6515
+  type: 'test'
+  ...
+# Subtest: scene import validates ranges, finite numbers and known weather
+ok 30 - scene import validates ranges, finite numbers and known weather
+  ---
+  duration_ms: 2.098
+  type: 'test'
+  ...
+# Subtest: experiment weights validate independently and do not enter persisted scene settings
+ok 31 - experiment weights validate independently and do not enter persisted scene settings
+  ---
+  duration_ms: 2.5645
+  type: 'test'
+  ...
+# Subtest: pond boundary remains outside safe swimming domain at different scales
+ok 32 - pond boundary remains outside safe swimming domain at different scales
+  ---
+  duration_ms: 3.6935
+  type: 'test'
+  ...
+# Subtest: partial experiment edits retain v5 defaults and independently control overlays
+ok 33 - partial experiment edits retain v5 defaults and independently control overlays
+  ---
+  duration_ms: 3.4557
+  type: 'test'
+  ...
+# Subtest: invalid edits reject without modifying the previous experiment
+ok 34 - invalid edits reject without modifying the previous experiment
+  ---
+  duration_ms: 1.1618
+  type: 'test'
+  ...
+# Subtest: replay duration is bounded and trajectory signature distinguishes observed movement
+ok 35 - replay duration is bounded and trajectory signature distinguishes observed movement
+  ---
+  duration_ms: 2.2014
+  type: 'test'
+  ...
+# Subtest: A and B use a common captured scenario while retaining changed B parameters
+ok 36 - A and B use a common captured scenario while retaining changed B parameters
+  ---
+  duration_ms: 8.0183
+  type: 'test'
+  ...
+# Subtest: same parameters reproduce the same trajectory signature and endpoint
+ok 37 - same parameters reproduce the same trajectory signature and endpoint
+  ---
+  duration_ms: 1.4229
+  type: 'test'
+  ...
+# Subtest: overlays draw applied directions and all three physical approximation spheres independently
+ok 38 - overlays draw applied directions and all three physical approximation spheres independently
+  ---
+  duration_ms: 1.1158
+  type: 'test'
+  ...
+# Subtest: changed habitat invalidates comparisons and unbound model rejects replay capture
+ok 39 - changed habitat invalidates comparisons and unbound model rejects replay capture
+  ---
+  duration_ms: 1.582
+  type: 'test'
+  ...
+# Subtest: snapshot detaches positions and headings from mutable scene nodes
+ok 40 - snapshot detaches positions and headings from mutable scene nodes
+  ---
+  duration_ms: 1.2017
+  type: 'test'
+  ...
+# Subtest: Boids separation steers close fish away, alignment/cohesion respond to neighbours
+ok 41 - Boids separation steers close fish away, alignment/cohesion respond to neighbours
+  ---
+  duration_ms: 0.398
+  type: 'test'
+  ...
+# Subtest: Boids steering is invariant to neighbour update order
+ok 42 - Boids steering is invariant to neighbour update order
+  ---
+  duration_ms: 0.3248
+  type: 'test'
+  ...
+# Subtest: coincident fish get opposite finite separation; distant/deep fish do not repel
+ok 43 - coincident fish get opposite finite separation; distant/deep fish do not repel
+  ---
+  duration_ms: 0.2282
+  type: 'test'
+  ...
+# Subtest: signed shoreline distances and gradients point outward at every pond scale
+ok 44 - signed shoreline distances and gradients point outward at every pond scale
+  ---
+  duration_ms: 3.5328
+  type: 'test'
+  ...
+# Subtest: predictive shoreline steering reacts before the body crosses the bank
+ok 45 - predictive shoreline steering reacts before the body crosses the bank
+  ---
+  duration_ms: 0.7068
+  type: 'test'
+  ...
+# Subtest: turning follows the shortest wrapped angle and limits angular acceleration
+ok 46 - turning follows the shortest wrapped angle and limits angular acceleration
+  ---
+  duration_ms: 0.7357
+  type: 'test'
+  ...
+# Subtest: lowering turn limits brakes momentum gradually and dt=0 preserves orientation
+ok 47 - lowering turn limits brakes momentum gradually and dt=0 preserves orientation
+  ---
+  duration_ms: 1.2296
+  type: 'test'
+  ...
+# Subtest: three spine spheres detect head/tail overlap beyond root sphere radius
+ok 48 - three spine spheres detect head/tail overlap beyond root sphere radius
+  ---
+  duration_ms: 1.371
+  type: 'test'
+  ...
+# Subtest: body collision is symmetric, bounded and reduces overlap
+ok 49 - body collision is symmetric, bounded and reduces overlap
+  ---
+  duration_ms: 1.3723
+  type: 'test'
+  ...
+# Subtest: coincident crowded fish resolve finitely without drifting the school centroid
+ok 50 - coincident crowded fish resolve finitely without drifting the school centroid
+  ---
+  duration_ms: 1.4942
+  type: 'test'
+  ...
+# Subtest: vertically separated bodies do not receive horizontal collision impulses
+ok 51 - vertically separated bodies do not receive horizontal collision impulses
+  ---
+  duration_ms: 0.2846
+  type: 'test'
+  ...
+# Subtest: float anchor moves in the prescribed wind direction with consistent timestep integration
+ok 52 - float anchor moves in the prescribed wind direction with consistent timestep integration
+  ---
+  duration_ms: 2.9485
+  type: 'test'
+  ...
+# Subtest: zero wind and zero time preserve the anchor; blocked drift cannot cross a bank
+ok 53 - zero wind and zero time preserve the anchor; blocked drift cannot cross a bank
+  ---
+  duration_ms: 0.3369
+  type: 'test'
+  ...
+# Subtest: advected material coordinate and world height sample agree while horizontal orbit changes
+ok 54 - advected material coordinate and world height sample agree while horizontal orbit changes
+  ---
+  duration_ms: 12.6138
+  type: 'test'
+  ...
+# Subtest: water transmission follows large canvas detail while distant reflection remains bounded
+ok 55 - water transmission follows large canvas detail while distant reflection remains bounded
+  ---
+  duration_ms: 0.7291
+  type: 'test'
+  ...
+# Subtest: water targets respect texture limits and cap extreme portrait allocation
+ok 56 - water targets respect texture limits and cap extreme portrait allocation
+  ---
+  duration_ms: 0.9836
+  type: 'test'
+  ...
+# Subtest: binding validates world polygon/water/obstacles and normalizes feed height without aliasing input
+ok 57 - binding validates world polygon/water/obstacles and normalizes feed height without aliasing input
+  ---
+  duration_ms: 3.2095
+  type: 'test'
+  ...
+# Subtest: self crossing, repeated/touching edges, degenerate and oversized polygons are rejected
+ok 58 - self crossing, repeated/touching edges, degenerate and oversized polygons are rejected
+  ---
+  duration_ms: 0.7811
+  type: 'test'
+  ...
+# Subtest: invalid water/depth/feed/obstacle values fail before binding application
+ok 59 - invalid water/depth/feed/obstacle values fail before binding application
+  ---
+  duration_ms: 1.1967
+  type: 'test'
+  ...
+# Subtest: concave polygons classify their cutout correctly and accept the boundary
+ok 60 - concave polygons classify their cutout correctly and accept the boundary
+  ---
+  duration_ms: 0.5935
+  type: 'test'
+  ...
+# Subtest: polygon distance gradients stay outward for clockwise/counterclockwise and translated shorelines
+ok 61 - polygon distance gradients stay outward for clockwise/counterclockwise and translated shorelines
+  ---
+  duration_ms: 0.4783
+  type: 'test'
+  ...
+# Subtest: imported shoreline uses its world polygon and predicts avoidance before crossing
+ok 62 - imported shoreline uses its world polygon and predicts avoidance before crossing
+  ---
+  duration_ms: 2.2769
+  type: 'test'
+  ...
+# Subtest: deterministic spawns fit whole three-ball footprints and avoid imported cylinders
+ok 63 - deterministic spawns fit whole three-ball footprints and avoid imported cylinders
+  ---
+  duration_ms: 57.825
+  type: 'test'
+  ...
+# Subtest: projection remains inside concave shore and outside cylinders including a bank obstacle
+ok 64 - projection remains inside concave shore and outside cylinders including a bank obstacle
+  ---
+  duration_ms: 2.1194
+  type: 'test'
+  ...
+# Subtest: regions that cannot fit a fish footprint fail rather than silently spawning outside
+ok 65 - regions that cannot fit a fish footprint fail rather than silently spawning outside
+  ---
+  duration_ms: 4.0023
+  type: 'test'
+  ...
+# Subtest: debug body spheres match actual collision shape and predictive cylinders produce finite steering
+ok 66 - debug body spheres match actual collision shape and predictive cylinders produce finite steering
+  ---
+  duration_ms: 1.3775
+  type: 'test'
+  ...
+# Subtest: valid but undersized imported water is rejected before interrupting actual koi feeding or other scene state
+ok 67 - valid but undersized imported water is rejected before interrupting actual koi feeding or other scene state
+  ---
+  duration_ms: 264.6522
+  type: 'test'
+  ...
+# Subtest: undersized binding JSON preserves old habitat, calibration and active hand state
+ok 68 - undersized binding JSON preserves old habitat, calibration and active hand state
+  ---
+  duration_ms: 204.8439
+  type: 'test'
+  ...
+# Subtest: successful habitat commits exactly one koi reset and forwards canonical validated geometry to water
+ok 69 - successful habitat commits exactly one koi reset and forwards canonical validated geometry to water
+  ---
+  duration_ms: 364.7689
+  type: 'test'
+  ...
+# Subtest: actual experiment reset closes pending calibration through its API and restores verified endpoints
+ok 70 - actual experiment reset closes pending calibration through its API and restores verified endpoints
+  ---
+  duration_ms: 161.1119
+  type: 'test'
+  ...
+# Subtest: unavailable imported experiment reset rejects before cancelling calibration or stopping the hand
+ok 71 - unavailable imported experiment reset rejects before cancelling calibration or stopping the hand
+  ---
+  duration_ms: 170.6217
+  type: 'test'
+  ...
+# Subtest: courtyard experiment reset uses calibration cancellation without requiring an imported model
+ok 72 - courtyard experiment reset uses calibration cancellation without requiring an imported model
+  ---
+  duration_ms: 148.2679
+  type: 'test'
+  ...
+# Spine derivative: 7236 cases, maximum error 2.8414684534461276e-7
+# Subtest: analytic traveling-wave and turn-bend slope matches central differences
+ok 73 - analytic traveling-wave and turn-bend slope matches central differences
+  ---
+  duration_ms: 15.4445
+  type: 'test'
+  ...
+# Subtest: mouth and anterior body receive no traveling-wave or turn displacement
+ok 74 - mouth and anterior body receive no traveling-wave or turn displacement
+  ---
+  duration_ms: 0.5092
+  type: 'test'
+  ...
+# Subtest: inverse-transpose normal stays perpendicular to deformed tangents
+ok 75 - inverse-transpose normal stays perpendicular to deformed tangents
+  ---
+  duration_ms: 0.2265
+  type: 'test'
+  ...
+# Subtest: a traveling-wave crest moves from positive-x head toward negative-x tail
+ok 76 - a traveling-wave crest moves from positive-x head toward negative-x tail
+  ---
+  duration_ms: 0.554
+  type: 'test'
+  ...
+# Subtest: normal-correction experiment preserves shape while toggling the inverse transpose
+ok 77 - normal-correction experiment preserves shape while toggling the inverse transpose
+  ---
+  duration_ms: 1.4693
+  type: 'test'
+  ...
+# Subtest: surface detail toggles every fish without changing anatomy, animation or seven styles
+ok 78 - surface detail toggles every fish without changing anatomy, animation or seven styles
+  ---
+  duration_ms: 246.3731
+  type: 'test'
+  ...
+# Subtest: r160 physical shader expands skin detail after motion normals and before lighting
+ok 79 - r160 physical shader expands skin detail after motion normals and before lighting
+  ---
+  duration_ms: 189.8145
+  type: 'test'
+  ...
+# Subtest: stone and foliage shader patches use existing r160 UV chunks with derivative filtering
+ok 80 - stone and foliage shader patches use existing r160 UV chunks with derivative filtering
+  ---
+  duration_ms: 98.1562
+  type: 'test'
+  ...
+# Subtest: appearance variation preserves all seven original floating support anchors and scale
+ok 81 - appearance variation preserves all seven original floating support anchors and scale
+  ---
+  duration_ms: 131.8704
+  type: 'test'
+  ...
+# Subtest: calibration computes absolute meters per original model unit independently of current wrapper scale
+ok 82 - calibration computes absolute meters per original model unit independently of current wrapper scale
+  ---
+  duration_ms: 2.8186
+  type: 'test'
+  ...
+# Subtest: calibration rejects coincident, nonfinite and out-of-model points
+ok 83 - calibration rejects coincident, nonfinite and out-of-model points
+  ---
+  duration_ms: 0.8733
+  type: 'test'
+  ...
+# Subtest: known lengths and unsupported scales reject without clipping
+ok 84 - known lengths and unsupported scales reject without clipping
+  ---
+  duration_ms: 0.5682
+  type: 'test'
+  ...
+# Subtest: calibration metadata must match the model, measured ratio and binding scale
+ok 85 - calibration metadata must match the model, measured ratio and binding scale
+  ---
+  duration_ms: 1.1484
+  type: 'test'
+  ...
+# Subtest: two-point selection uses real imported mesh intersections and stores unscaled model coordinates
+ok 86 - two-point selection uses real imported mesh intersections and stores unscaled model coordinates
+  ---
+  duration_ms: 13.259
+  type: 'test'
+  ...
+# Subtest: a ray miss, invisible geometry or duplicate endpoint cannot supply a calibration point
+ok 87 - a ray miss, invisible geometry or duplicate endpoint cannot supply a calibration point
+  ---
+  duration_ms: 1.2993
+  type: 'test'
+  ...
+# Subtest: grouped meshes reject hidden material faces for picking and saved surface validation
+ok 88 - grouped meshes reject hidden material faces for picking and saved surface validation
+  ---
+  duration_ms: 9.0869
+  type: 'test'
+  ...
+# Subtest: applying scale invalidates old world-space habitat and restores the valid model-space measurement
+ok 89 - applying scale invalidates old world-space habitat and restores the valid model-space measurement
+  ---
+  duration_ms: 6.1308
+  type: 'test'
+  ...
+# Subtest: invalid calibration import or application leaves scale, habitat, point selection and camera untouched
+ok 90 - invalid calibration import or application leaves scale, habitat, point selection and camera untouched
+  ---
+  duration_ms: 7.1592
+  type: 'test'
+  ...
+# Subtest: calibration export/import roundtrips against the same model and refuses an unrelated GLB
+ok 91 - calibration export/import roundtrips against the same model and refuses an unrelated GLB
+  ---
+  duration_ms: 3.6257
+  type: 'test'
+  ...
+# Subtest: binding metadata carries calibration while legacy binding files remain compatible
+ok 92 - binding metadata carries calibration while legacy binding files remain compatible
+  ---
+  duration_ms: 7.5934
+  type: 'test'
+  ...
+# Subtest: legacy binding imports neither invent calibration nor retain a record for another model or scale
+ok 93 - legacy binding imports neither invent calibration nor retain a record for another model or scale
+  ---
+  duration_ms: 6.0293
+  type: 'test'
+  ...
+# Subtest: manual scaling, model clearing and mutually exclusive editing discard stale calibration records
+ok 94 - manual scaling, model clearing and mutually exclusive editing discard stale calibration records
+  ---
+  duration_ms: 3.6668
+  type: 'test'
+  ...
+# Subtest: calibration endpoints remain visible while selecting and awaiting known length even when habitat markers are hidden
+ok 95 - calibration endpoints remain visible while selecting and awaiting known length even when habitat markers are hidden
+  ---
+  duration_ms: 0.9358
+  type: 'test'
+  ...
+# Subtest: cancel restores the active calibration and habitat with zero, one or two draft endpoints
+ok 96 - cancel restores the active calibration and habitat with zero, one or two draft endpoints
+  ---
+  duration_ms: 10.7015
+  type: 'test'
+  ...
+# Subtest: Escape-equivalent setMode(null) and switching habitat modes cancel completed or partial calibration drafts
+ok 97 - Escape-equivalent setMode(null) and switching habitat modes cancel completed or partial calibration drafts
+  ---
+  duration_ms: 12.0798
+  type: 'test'
+  ...
+# Subtest: restarting a calibration draft keeps the original rollback record and exports only applied measurements
+ok 98 - restarting a calibration draft keeps the original rollback record and exports only applied measurements
+  ---
+  duration_ms: 3.8719
+  type: 'test'
+  ...
+# Subtest: invalid calibration applications and imports retain an editable pending draft and the old unit declaration
+ok 99 - invalid calibration applications and imports retain an editable pending draft and the old unit declaration
+  ---
+  duration_ms: 2.6593
+  type: 'test'
+  ...
+# Subtest: successful same-scale calibration and JSON import replace the record and cannot resurrect their backups
+ok 100 - successful same-scale calibration and JSON import replace the record and cannot resurrect their backups
+  ---
+  duration_ms: 4.1488
+  type: 'test'
+  ...
+# Subtest: calibration clearing, model reset and manual scale changes discard pending backups permanently
+ok 101 - calibration clearing, model reset and manual scale changes discard pending backups permanently
+  ---
+  duration_ms: 14.1863
+  type: 'test'
+  ...
+# Subtest: legacy binding imports use the old applied calibration during pending edits and terminate drafts only on success
+ok 102 - legacy binding imports use the old applied calibration during pending edits and terminate drafts only on success
+  ---
+  duration_ms: 3.3347
+  type: 'test'
+  ...
+# Subtest: explicit binding metadata replaces pending calibration only after all data validates
+ok 103 - explicit binding metadata replaces pending calibration only after all data validates
+  ---
+  duration_ms: 2.5993
+  type: 'test'
+  ...
+# Subtest: draft cancellation without an older calibration remains uncalibrated and preserve-clear discards rollback state
+ok 104 - draft cancellation without an older calibration remains uncalibrated and preserve-clear discards rollback state
+  ---
+  duration_ms: 2.7638
+  type: 'test'
+  ...
+# Subtest: successful habitat operations terminate pending calibration while retaining the applied unit declaration
+ok 105 - successful habitat operations terminate pending calibration while retaining the applied unit declaration
+  ---
+  duration_ms: 7.8616
+  type: 'test'
+  ...
+# Subtest: display interpolation blends pose and uniforms while restoring the current simulation
+ok 106 - display interpolation blends pose and uniforms while restoring the current simulation
+  ---
+  duration_ms: 8.2099
+  type: 'test'
+  ...
+# Subtest: world interpolation under nonuniform parents preserves affine shear and restores its exact matrix
+ok 107 - world interpolation under nonuniform parents preserves affine shear and restores its exact matrix
+  ---
+  duration_ms: 5.5736
+  type: 'test'
+  ...
+# Subtest: a failed render restores simulation poses and leaves reset history without an old transition
+ok 108 - a failed render restores simulation poses and leaves reset history without an old transition
+  ---
+  duration_ms: 0.7789
+  type: 'test'
+  ...
+# Subtest: a centred impulse is radial and the next stencil propagates height to its neighbours
+ok 109 - a centred impulse is radial and the next stencil propagates height to its neighbours
+  ---
+  duration_ms: 3.4427
+  type: 'test'
+  ...
+# Subtest: bank mask keeps land exactly dry and the stencil reflects instead of draining into it
+ok 110 - bank mask keeps land exactly dry and the stencil reflects instead of draining into it
+  ---
+  duration_ms: 0.4555
+  type: 'test'
+  ...
+# Subtest: sampling uses the same pixel-centre bilinear convention as the GPU texture
+ok 111 - sampling uses the same pixel-centre bilinear convention as the GPU texture
+  ---
+  duration_ms: 0.4243
+  type: 'test'
+  ...
+# Subtest: fixed impulse schedule reproduces identical height and velocity fields
+ok 112 - fixed impulse schedule reproduces identical height and velocity fields
+  ---
+  duration_ms: 26.2568
+  type: 'test'
+  ...
+# Subtest: height and velocity remain bounded for a strong repeated disturbance
+ok 113 - height and velocity remain bounded for a strong repeated disturbance
+  ---
+  duration_ms: 14.7983
+  type: 'test'
+  ...
+# Subtest: reset clears both ping-pong buffers and subsequent samples
+ok 114 - reset clears both ping-pong buffers and subsequent samples
+  ---
+  duration_ms: 0.5682
+  type: 'test'
+  ...
+# Subtest: rest-coordinate inverse sampling keeps local ripples aligned with Gerstner displacement
+ok 115 - rest-coordinate inverse sampling keeps local ripples aligned with Gerstner displacement
+  ---
+  duration_ms: 1.8187
+  type: 'test'
+  ...
+# Subtest: pasted native calibration and binding exports preserve exact floating-point data
+ok 116 - pasted native calibration and binding exports preserve exact floating-point data
+  ---
+  duration_ms: 10.1769
+  type: 'test'
+  ...
+# Subtest: blank, malformed, primitive and array JSON cannot reach domain import
+ok 117 - blank, malformed, primitive and array JSON cannot reach domain import
+  ---
+  duration_ms: 0.6124
+  type: 'test'
+  ...
+# Subtest: pasted UTF-8 byte limit also protects multibyte text
+ok 118 - pasted UTF-8 byte limit also protects multibyte text
+  ---
+  duration_ms: 2.0109
+  type: 'test'
+  ...
+# Subtest: 5/20/60/120 Hz render schedules advance exactly the same fixed ticks
+ok 119 - 5/20/60/120 Hz render schedules advance exactly the same fixed ticks
+  ---
+  duration_ms: 7.3906
+  type: 'test'
+  ...
+# Subtest: sub-tick render frames retain fractional time and expose interpolation alpha
+ok 120 - sub-tick render frames retain fractional time and expose interpolation alpha
+  ---
+  duration_ms: 0.3869
+  type: 'test'
+  ...
+# Subtest: pause and inactive intervals clear fractional backlog without replaying it
+ok 121 - pause and inactive intervals clear fractional backlog without replaying it
+  ---
+  duration_ms: 0.698
+  type: 'test'
+  ...
+# Subtest: a long stall has bounded work and explicitly accounts for discarded time
+ok 122 - a long stall has bounded work and explicitly accounts for discarded time
+  ---
+  duration_ms: 0.5075
+  type: 'test'
+  ...
+# Subtest: reset restores clock counters and invalid durations fail before ticking
+ok 123 - reset restores clock counters and invalid durations fail before ticking
+  ---
+  duration_ms: 0.6259
+  type: 'test'
+  ...
+# Subtest: advancement rate reports active realtime ticks, drops, and reset without including paused time
+ok 124 - advancement rate reports active realtime ticks, drops, and reset without including paused time
+  ---
+  duration_ms: 0.3978
+  type: 'test'
+  ...
+# Subtest: tail source follows spine phase and transforms equivariantly with heading and translation
+ok 125 - tail source follows spine phase and transforms equivariantly with heading and translation
+  ---
+  duration_ms: 2.6402
+  type: 'test'
+  ...
+# Subtest: surface coupling suppresses stopped/deep fish and decreases continuously with immersion
+ok 126 - surface coupling suppresses stopped/deep fish and decreases continuously with immersion
+  ---
+  duration_ms: 0.9248
+  type: 'test'
+  ...
+# Subtest: tail dipole uses opposite sources and flips sign with each half stroke
+ok 127 - tail dipole uses opposite sources and flips sign with each half stroke
+  ---
+  duration_ms: 0.4138
+  type: 'test'
+  ...
+# Subtest: paired wake produces both crests and troughs in the shared difference field
+ok 128 - paired wake produces both crests and troughs in the shared difference field
+  ---
+  duration_ms: 27.3916
+  type: 'test'
+  ...
+# Subtest: a stationary distant water pass is reused for only one intervening frame
+ok 129 - a stationary distant water pass is reused for only one intervening frame
+  ---
+  duration_ms: 0.6999
+  type: 'test'
+  ...
+# Subtest: camera movement and projection changes refresh even on an otherwise skipped frame
+ok 130 - camera movement and projection changes refresh even on an otherwise skipped frame
+  ---
+  duration_ms: 0.358
+  type: 'test'
+  ...
+# Subtest: resize and explicit invalidation force fresh water targets immediately
+ok 131 - resize and explicit invalidation force fresh water targets immediately
+  ---
+  duration_ms: 0.136
+  type: 'test'
+  ...
+# Subtest: sphere framing fits its angular silhouette in both desktop and portrait view fields
+ok 132 - sphere framing fits its angular silhouette in both desktop and portrait view fields
+  ---
+  duration_ms: 0.541
+  type: 'test'
+  ...
+# {"waveDerivativeCases":990,"maxError":3.2460914511922567e-10}
+# Subtest: Gerstner analytic tangents agree with displaced surface finite differences
+ok 133 - Gerstner analytic tangents agree with displaced surface finite differences
+  ---
+  duration_ms: 29.6014
+  type: 'test'
+  ...
+# Subtest: Floating surface height inverts the horizontal orbit of all four waves
+ok 134 - Floating surface height inverts the horizontal orbit of all four waves
+  ---
+  duration_ms: 2.3929
+  type: 'test'
+  ...
+# Subtest: Wave parameters use gravity dispersion and remain below surface folding limit
+ok 135 - Wave parameters use gravity dispersion and remain below surface folding limit
+  ---
+  duration_ms: 0.4368
+  type: 'test'
+  ...
+1..135
+# tests 135
+# suites 0
+# pass 135
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2143.5909

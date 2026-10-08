@@ -1,0 +1,109 @@
+{
+  "clientDate": "2026-10-02",
+  "timeZone": "Asia/Shanghai",
+  "bundleSha256": "aeccae14d75507d30bcd317e3fe20fc76a69a52a025785355efd40cdff7a8209",
+  "checks": [
+    "切换镜头的反射折射深度使用当前相机矩阵",
+    "独立观鱼镜头与下拉框一致且朝向池面",
+    "观鱼镜头提升水下分辨率并独立限制远景倒影",
+    "七片曲面睡莲随共同波面浮动倾斜且避免自身阴影伪影",
+    "水岸遮罩采用双线性采样以减轻方格锯齿",
+    "细分曲面蕨叶保持有效实例几何及顶点色",
+    "CPU镜像与实际GPU半浮点波场采样误差小于0.5毫米",
+    "六粒漂浮饲料随实际局部涟漪起伏且贴合共同波面",
+    "六粒饲料按真实波面轨道漂移并持续对齐共同高度与法线",
+    "零风关闭规定漂流但保留解析波面的水平轨道",
+    "暂停时CPU波场保持逐值不变",
+    "暂停按钮准确提示继续动态",
+    "暂停同时冻结饲料漂移倾斜和睡莲",
+    "实验台直接进入观鱼镜头",
+    "A/B记录实际完整时间序列并显示同参数重复轨迹",
+    "改变B权重使实际历史轨迹分开",
+    "轨迹选择器切换到另一条真实锦鲤",
+    "手机A/B真实轨迹及十四个终点保留且没有横向溢出",
+    "当前倍率的模型全貌取景包含所有模型角点",
+    "绑定标记可以隐藏，动态水域保持启用",
+    "进入编辑时隐藏标记重新显示且有持续画布提示",
+    "画布结束标记恢复隐藏偏好",
+    "Escape结束标记且不解除动态绑定",
+    "逐个删除障碍仅改草稿并提示重新应用",
+    "应用编辑后的标记同步到水域与鱼群",
+    "逐点编辑轮廓保留旧水域直至应用",
+    "模型绑定岸线阻止风流把漂浮锚点推到水域外",
+    "绑定水面完整网格覆盖岸线并由片元遮罩裁切",
+    "手机调整尺寸后实际水域画面完成渲染",
+    "手机进入标记后画布和提示均在可视区域",
+    "新增材质波场轨迹和标记没有脚本/着色器错误",
+    "自动加载资源全部来自本地"
+  ],
+  "errors": [],
+  "fatal": null,
+  "evidence": {
+    "camera": {
+      "projection": true,
+      "world": true
+    },
+    "optics": {
+      "canvas": 1139,
+      "reflection": 512,
+      "refraction": 1024,
+      "height": 682
+    },
+    "lilies": {
+      "count": 7,
+      "heightError": 1.734723475976807e-18,
+      "normalError": 1.1102230246251565e-16,
+      "minNormal": 0.999193012714386,
+      "curvature": 0.012000000104308128,
+      "shadowsOff": true
+    },
+    "fern": {
+      "instances": 29,
+      "vertices": 6804,
+      "colors": 6804,
+      "finite": true,
+      "maxWidth": 1.2553974390029907
+    },
+    "gpuMirror": {
+      "enabled": true,
+      "samples": 64,
+      "steps": 8,
+      "maxError": 0.0000034607481210584268,
+      "peak": 0.004698399920016527
+    },
+    "floating": {
+      "before": 0.02744424015274708,
+      "after": 0.02304374299155,
+      "error": 1.734723475976807e-18,
+      "localPeak": 0.0311147488624129,
+      "landed": 6
+    },
+    "advection": {
+      "count": 6,
+      "distances": [
+        0.04799999999999151,
+        0.04799999999999151,
+        0.04799999999999151,
+        0.04799999999999151,
+        0.04799999999999151,
+        0.04799999999999151
+      ],
+      "heightError": 6.418476861114186e-17,
+      "normalError": 4.440892098500626e-16
+    },
+    "zeroWind": {
+      "anchorUnchanged": true,
+      "orbitalDistance": 0.0005348092267411657
+    },
+    "history": {
+      "samplesA": 17,
+      "samplesB": 17,
+      "identical": true,
+      "first": 0,
+      "last": 3.9999999999999907,
+      "paths": 2,
+      "endpoints": 14
+    }
+  },
+  "method": "Real headless Chromium/SwiftShader. GPU probe renders 64 float pixels from the actual half-float ripple texture; CPU comparison uses identical pixel-centre sampling. UI controls and recorded simulation paths, actual canvas screenshots. No hardware performance or photorealism claim."
+}

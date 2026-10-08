@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-02",
+  "tool": "built-in image_gen",
+  "visualTarget": {
+    "path": "web/assets/courtyard-target.png",
+    "original": "D:/codex/home/generated_images/01a0f813-8778-7292-96de-3618b84cab6e/exec-11b815c1-6123-499e-89e8-c708d5d7111b.png",
+    "prompt": "Use case: photorealistic-natural.\nAsset type: the single visual target for an interactive realtime 3D courtyard reconstruction.\nPrimary request: generate ONE beautiful, highly realistic architectural visualization of a tranquil Asian courtyard koi pond, with clear buildable geometry and natural scale. Landscape 1536 x 1024 composition, no text, no interface, no people.\nScene: a compact 18m wide by 16m deep enclosed courtyard. One long, single-storey white plaster garden house stands along the entire rear, with charcoal gray tiled gabled roofs, slim dark timber posts, wood-framed sliding glass doors, and warm amber interiors. A short perpendicular matching wing at rear-right makes an L-shaped house, not a tall pagoda. A dark timber deck with a low tea table occupies the right side of the pond. In the center-left is an irregular oval 7m by 4.5m clear jade pond edged with individual pale natural granite stones. A narrow simple low timber footbridge crosses the back end of the pond, horizontal in the view. Five orange/white koi visible below the surface; very few lily pads. A modest rock waterfall with moss at rear-left of the pond. One sculptural red Japanese maple at left, clustered green bamboo behind it. A small stone lantern close to the right deck. Foreground: pale gravel, a sequence of broad irregular stepping stones curving from bottom-left toward the house, small patches of lush grasses and ferns. The garden is contained by pale plaster walls. Distant green tree foliage visible above the rear roof, not dramatic mountains.\nComposition/framing: three-quarter perspective from the courtyard front, camera at about 4m height, looking slightly down toward the center and rear house, 36mm architectural lens. Show the complete pond, right wooden deck, rear house, and left maple with comfortable foreground. Architectural verticals near vertical. Pond occupies lower-middle/left, house upper-third. Roof is dark charcoal, water is clear teal green, maple leaves crimson, plants deep natural green, deck warm brown.\nLighting/mood: late afternoon clear sunlight from upper-left, soft long shadows across gravel, warm illuminated timber interiors, subtle water caustics and accurate reflections. Calm intimate elegant mood, editorial landscape photography, physically plausible materials and small imperfections, realistic stone grain and roof tiles.\nConstraints: maintain a simple coherent site plan and enough space between objects for an actual realtime model. Avoid fantasy architecture, extra bridges, dense props, huge waterfalls, impossible perspective, neon colors, text, captions, borders, logos, watermarks, collage, multiple images."
+  },
+  "materials": [
+    {
+      "path": "web/assets/stone-albedo.png",
+      "prompt": "Square seamless evenly lit pale warm gray weathered granite albedo, fine quartz grains and sparse muted brown speckles; flat orthographic surface, no scene, shadow, object silhouettes or text. Match foreground stones of the courtyard target."
+    },
+    {
+      "path": "web/assets/gravel-albedo.png",
+      "prompt": "Square seamless orthographic 60cm patch of densely packed 5–12mm pale beige-gray rounded gravel, thousands of pebbles, subtle crevices; even neutral diffuse albedo light, no scene, big paving stones, plants or text."
+    },
+    {
+      "path": "web/assets/wood-albedo.png",
+      "prompt": "Square seamless single continuous warm light walnut wood surface, horizontal fine elongated grain, subtle weathering, neutral even albedo lighting; no plank divisions, seams, perspective, shadows, scene or text."
+    },
+    {
+      "path": "web/assets/roof-albedo.png",
+      "prompt": "Square seamless uniformly lit charcoal gray aged ceramic roof-tile surface albedo; muted gray ceramic grain and gentle wear; orthographic material only, no scene, shadows, perspective, text or plank grid.",
+      "original": "D:/codex/home/generated_images/01a0f822-eed0-7901-8eab-d3ffed6a9bd3/exec-3111cea6-ca52-4919-86b2-b51b13cca28f.png"
+    },
+    {
+      "date": "2026-10-02",
+      "method": "built-in image_gen; no image editing or background overlay",
+      "path": "web/assets/hand-skin-albedo-v3.png",
+      "original": "D:/codex/home/generated_images/01a0f813-8778-7292-96de-3618b84cab6e/exec-34728f40-a230-4f3d-b6be-5758a61a1132.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "70c823b95c1c09ff3075db2ba77a62e75216965810bf9e1281c3d2014c6e347a",
+      "prompt": "Create a single seamless tileable PBR base-color texture of healthy adult human skin for a realistic 3D hand and forearm. Photorealistic-natural material asset. Flat orthographic macro of a 6cm square of clean dorsal hand/forearm skin, warm light-to-medium beige with subtle pink/cool undertones, fine pores, almost imperceptible irregular freckles and natural tiny crease network. Extremely subtle coloration, no dramatic wrinkles or scars, no visible hair, no prominent veins, no anatomical silhouette, no fingers, no nails, no background, no text, no labels, no borders. Very even diffuse cross-polarized illumination, no baked highlights, no cast shadows, no gradient, no vignette. The entire square is a continuous skin material swatch. Seamless repeating edges. High-resolution detail and restrained contrast. Intended as 3D albedo, not a photograph of an actual hand.",
+      "use": "3-axis projection in actual MeshPhysicalMaterial, albedo modulation and subtle micro-bump; not a replacement picture for the hand mesh"
+    }
+  ],
+  "note": "Material prompts are condensed production specifications. Full prompts were returned by asset agents. All original generated files are retained; project copies are self-contained."
+}

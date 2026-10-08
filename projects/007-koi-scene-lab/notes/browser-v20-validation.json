@@ -1,0 +1,163 @@
+{
+  "date": "2026-10-03T07:07:13.735Z",
+  "version": 20,
+  "status": "completed",
+  "bundleSha256": "fbd61419d326470cdd2a69f4f44bf06fad42c4faa8020e478b1f3f9fd0046b36",
+  "servedBundleSha256": "fbd61419d326470cdd2a69f4f44bf06fad42c4faa8020e478b1f3f9fd0046b36",
+  "scriptSha256": "06bdb90a41afc3a045ddded77d7469ae8379f93fbb3123205e489416ad4f9b73",
+  "elapsedMs": 241714,
+  "checks": [
+    {
+      "name": "served v20 bundle matches and cat controls initialize",
+      "passed": true,
+      "evidence": {
+        "served": "fbd61419d326470cdd2a69f4f44bf06fad42c4faa8020e478b1f3f9fd0046b36",
+        "bundle": "fbd61419d326470cdd2a69f4f44bf06fad42c4faa8020e478b1f3f9fd0046b36"
+      }
+    },
+    {
+      "name": "desktop cat fully fits with camera on foreground side looking toward garden",
+      "passed": true,
+      "evidence": {
+        "box": {
+          "left": -0.13603620103902817,
+          "right": 0.044491369041353424,
+          "bottom": -0.607929332228068,
+          "top": 0.13410676842881813
+        },
+        "vertices": 64402,
+        "camera": [
+          3.57314888170568,
+          1.2649036352256617,
+          8.074304248726296
+        ],
+        "target": [
+          2.3566991864592692,
+          0.24540293825724124,
+          6.336518969802853
+        ],
+        "cat": {
+          "x": 2.45,
+          "y": -0.035,
+          "z": 6.6
+        },
+        "aspect": 1.5008264462809917
+      }
+    },
+    {
+      "name": "pause freezes refined posture, limbs, tail and simulation time",
+      "passed": true,
+      "evidence": {
+        "state": "observe",
+        "time": 2.3999999999999964
+      }
+    },
+    {
+      "name": "mobile cat is complete with no overflow and 44px animal controls",
+      "passed": true,
+      "evidence": {
+        "mobile": {
+          "box": {
+            "left": -0.19846374693714522,
+            "right": 0.06490863269385946,
+            "bottom": -0.607929332228068,
+            "top": 0.13410676842881813
+          },
+          "vertices": 64402,
+          "camera": [
+            3.57314888170568,
+            1.2649036352256617,
+            8.074304248726296
+          ],
+          "target": [
+            2.3566991864592692,
+            0.24540293825724124,
+            6.336518969802853
+          ],
+          "cat": {
+            "x": 2.45,
+            "y": -0.035,
+            "z": 6.6
+          },
+          "aspect": 1.028735632183908
+        },
+        "ui": {
+          "width": 390,
+          "viewport": 390,
+          "buttons": [
+            {
+              "w": 73.5,
+              "h": 44
+            },
+            {
+              "w": 73.5,
+              "h": 44
+            },
+            {
+              "w": 73.5,
+              "h": 44
+            },
+            {
+              "w": 73.5,
+              "h": 44
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "native patrol reaches walking and the foreground camera retains the complete cat",
+      "passed": true,
+      "evidence": {
+        "state": "walk",
+        "time": 4.799999999999988,
+        "frame": {
+          "box": {
+            "left": -0.4135087575335106,
+            "right": 0.19087336088385098,
+            "bottom": -0.44531360047386676,
+            "top": 0.033017028264202136
+          },
+          "vertices": 64402,
+          "camera": [
+            3.54422866310815,
+            1.2744090002098312,
+            7.977679711519416
+          ],
+          "target": [
+            2.3332134149491486,
+            0.259462887467049,
+            6.247657928435128
+          ],
+          "cat": {
+            "x": 2.4796918450007728,
+            "y": -0.035,
+            "z": 6.544980421098918
+          },
+          "aspect": 1.5008264462809917
+        }
+      }
+    },
+    {
+      "name": "no page, shader-console, external-request or context errors",
+      "passed": true,
+      "evidence": {
+        "errors": [],
+        "consoleErrors": [],
+        "externalRequests": [],
+        "contextEvents": []
+      }
+    }
+  ],
+  "passed": 6,
+  "failed": 0,
+  "captures": [
+    "assets/cat-desktop-v20.jpg",
+    "assets/cat-mobile-v20.jpg",
+    "assets/cat-walk-v20.jpg"
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "externalRequests": [],
+  "method": "Continuing user-authorized isolated localhost Chromium QA. Actual keyboard/select/button actions and read-only camera/mesh/pose observations. Raw JPEGs; desktop and 390px mobile. Only cat refinement is tested; G, feeding, GLB and controlled context recovery are not rerun. No hardware performance claim."
+}

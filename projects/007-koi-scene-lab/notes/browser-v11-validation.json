@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-02T14:13:55.283373+00:00",
+  "bundleSha256": "286254bea22d4c957ffa9751569c90c5c55c6382adad6b2046ecbafeabb79bce",
+  "method": "Manual visible-control QA in existing Codex in-app browser through cua_repl; DOM read-only evidence, native screenshots, native Downloads JSON. No hidden scene-state evaluation or Playwright CLI execution. Case list reconstructed from recorded tool outputs after REPL resets.",
+  "cases": [
+    {
+      "name": "WebGL scene renders; no captured script/shader warnings or errors",
+      "passed": true,
+      "evidence": "v11-final-dom.json"
+    },
+    {
+      "name": "All nine visible parameter/overlay sliders have names",
+      "passed": true,
+      "evidence": "v11-final-dom.json"
+    },
+    {
+      "name": "Fish head camera and pause work through visible controls",
+      "passed": true,
+      "evidence": "../assets/fish-detail-on-v11.jpg"
+    },
+    {
+      "name": "Fish material checkbox changes surface appearance in paused pose",
+      "passed": true,
+      "evidence": "../assets/fish-detail-off-v11.jpg"
+    },
+    {
+      "name": "390x844 phone toolbar has three 44px buttons; toolbar height 53.333px",
+      "passed": true,
+      "evidence": "../assets/mobile-v11.jpg"
+    },
+    {
+      "name": "More menu exposes four secondary actions and collapses",
+      "passed": true,
+      "evidence": "../assets/mobile-tools-v11.jpg"
+    },
+    {
+      "name": "Loaded bound program GLB disables frog/turtle/dragonfly options",
+      "passed": true,
+      "evidence": "Observed DOM options: all three disabled"
+    },
+    {
+      "name": "Model surface point selection progresses 0/2 to 1/2 to 2/2",
+      "passed": true,
+      "evidence": "v11-calibration-export.json"
+    },
+    {
+      "name": "Zero actual distance is rejected and pending point status unchanged",
+      "passed": true,
+      "evidence": "Visible toast: 已知距离应为0.001–1000米"
+    },
+    {
+      "name": "8m test input applies scale 1.1873770659862348 and invalidates old habitat",
+      "passed": true,
+      "evidence": "v11-calibration-export.json"
+    },
+    {
+      "name": "Native calibration download contains matching model SHA and exact distance ratio",
+      "passed": true,
+      "evidence": "v11-calibration-export.json"
+    },
+    {
+      "name": "Four new water points and keyboard-entered height/depth apply new habitat",
+      "passed": true,
+      "evidence": "v11-binding-export.json"
+    },
+    {
+      "name": "Feeding is enabled after rebind; visible hand interaction starts and finishes",
+      "passed": true,
+      "evidence": "Visible toast and 结束互动 button, then 手部投喂 enabled"
+    },
+    {
+      "name": "Native binding download carries identical complete calibration record",
+      "passed": true,
+      "evidence": "v11-binding-export.json"
+    },
+    {
+      "name": "Calibrated principle metrics and cumulative progress/drop metrics are visible",
+      "passed": true,
+      "evidence": "Observed: 6.7375 model units -> 8.000m; progress 98.7%, dropped 6.07s"
+    },
+    {
+      "name": "Technology tab explains fixed time, camera time smoothing and calibration workflow",
+      "passed": true,
+      "evidence": "Observed 技术与实践 text"
+    },
+    {
+      "name": "Reloaded HTML has fine scale step; default courtyard restores all animal options",
+      "passed": true,
+      "evidence": "v11-final-dom.json"
+    }
+  ],
+  "passedCases": 17,
+  "limitations": [
+    "Native filechooser event interception timed out in this IAB. Calibration/binding import UI roundtrip was not completed; JSON import/compatibility/surface validation passed numerical tests.",
+    "IAB download event interception timed out, but exports completed natively; actual files were verified from user Downloads.",
+    "8m is a synthetic input to validate scale arithmetic on a program model, not a measurement of a real place.",
+    "This scoped interaction pass does not rerun the historical 359 v10 browser assertions.",
+    "After captures the HTML range step was refined and reselect warning added; JS bundle stayed identical. Reloaded DOM and overview reflect final HTML."
+  ],
+  "passedWithinScope": true
+}

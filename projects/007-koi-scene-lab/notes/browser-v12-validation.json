@@ -1,0 +1,309 @@
+{
+  "date": "2026-10-02T14:54:54.681312+00:00",
+  "version": 12,
+  "finalBundleSha256": "ce58275c59d952f1e51291f92506e39b5062722e7bab51e42cd3dfac7b9f5e5c",
+  "method": "Existing Codex in-app browser, visible UI actions, read-only DOM observations and native screenshots. No hidden runtime mutation or Playwright CLI.",
+  "iterations": [
+    {
+      "bundleSha256": "18272e1767fbbc7a26a3b3eb4a26b1219d9ddc0ea7cde97ecc6eae51f4260a9a",
+      "checks": [
+        {
+          "name": "malformed pasted JSON stays open, retains text and leaves current calibration unchanged",
+          "passed": true,
+          "evidence": "JSON 格式错误，请检查引号、逗号和括号"
+        },
+        {
+          "name": "unrelated model fingerprint is rejected without changing calibration",
+          "passed": true,
+          "evidence": "校准文件与当前 GLB 不匹配，请载入对应模型"
+        },
+        {
+          "name": "typing scene shortcut in JSON textarea does not start feeding",
+          "passed": true
+        },
+        {
+          "name": "paste/import native v11 calibration restores exact model scale",
+          "passed": true,
+          "evidence": "已校准 · 原始距离 6.7375 模型单位 → 8.000 米 · 比例 1.18738 米/模型单位"
+        },
+        {
+          "name": "pasted native binding export restores habitat and calibration",
+          "passed": true,
+          "evidence": "动态绑定已应用 · 鱼群、水面与投喂启用"
+        },
+        {
+          "name": "new selection declares draft and keeps prior 8m calibration active",
+          "passed": true,
+          "evidence": "校准草稿 · 已选 0/2 点 · 旧校准 8.000 米保持生效；应用后替换，取消可回退。"
+        },
+        {
+          "name": "JSON view during calibration draft exports only old committed points/record",
+          "passed": true
+        },
+        {
+          "name": "cancel button restores committed calibration and leaves bound water applied",
+          "passed": true
+        },
+        {
+          "name": "completed 2-point draft keeps old calibration active until apply",
+          "passed": true,
+          "evidence": "校准草稿 · 已选 2/2 点 · 草稿距离 6.7375 模型单位 · 旧校准 8.000 米保持生效；应用后替换，取消可回退。"
+        },
+        {
+          "name": "Escape after both draft points restores old committed measurement",
+          "passed": true
+        },
+        {
+          "name": "geometrically valid tiny habitat rejected while paused feeding stays active",
+          "passed": true,
+          "evidence": "池塘可游区域过小，或障碍物占满了鱼体所需空间"
+        },
+        {
+          "name": "390x844 JSON dialog fits viewport with labeled textarea and 44px buttons",
+          "passed": true,
+          "evidence": {
+            "buttons": [
+              {
+                "height": 44,
+                "name": "关闭"
+              },
+              {
+                "height": 44,
+                "name": "载入当前数据"
+              },
+              {
+                "height": 44,
+                "name": "检查并应用"
+              }
+            ],
+            "height": 635.1041870117188,
+            "width": 362,
+            "x": 6.333333492279053,
+            "y": 104.44792175292967
+          }
+        },
+        {
+          "name": "native dialog keyboard focus wraps from last action to close button",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "name": "Escape closes JSON dialog and restores focus to its opener",
+          "passed": true,
+          "evidence": "calibration-json"
+        }
+      ],
+      "passed": 13,
+      "failed": 1,
+      "failureResolution": "Native Tab moved from final action to BODY. Explicit dialog Tab/Shift+Tab wrapping added and verified in both later builds; marking toast moved below guide."
+    },
+    {
+      "bundleSha256": "5c3ee28d770c4388fbd5e904cc68b78204fef17ff175a910cf085bedb46884e9",
+      "checks": [
+        {
+          "name": "final bundle restores calibration through paste",
+          "passed": true
+        },
+        {
+          "name": "final bundle restores native binding export through paste",
+          "passed": true
+        },
+        {
+          "name": "final modal loops forward and reverse Tab focus",
+          "passed": true
+        },
+        {
+          "name": "final Escape closes dialog and restores opener focus",
+          "passed": true
+        },
+        {
+          "name": "final malformed JSON retains text and effective measurement",
+          "passed": true,
+          "evidence": "JSON 格式错误，请检查引号、逗号和括号"
+        },
+        {
+          "name": "final wrong-model calibration is rejected without state changes",
+          "passed": true,
+          "evidence": "校准文件与当前 GLB 不匹配，请载入对应模型"
+        },
+        {
+          "name": "final JSON text entry isolates scene shortcuts",
+          "passed": true
+        },
+        {
+          "name": "final current-data button restores exact effective calibration JSON",
+          "passed": true
+        },
+        {
+          "name": "final marking toast sits below persistent guide",
+          "passed": true,
+          "evidence": {
+            "guide": {
+              "bottom": 350.9791679382324,
+              "top": 304.3125
+            },
+            "toast": {
+              "bottom": 394.9791679382324,
+              "top": 362.3125
+            }
+          }
+        },
+        {
+          "name": "final completed calibration draft keeps old 8m scale effective",
+          "passed": true,
+          "evidence": "校准草稿 · 已选 2/2 点 · 草稿距离 6.7375 模型单位 · 旧校准 8.000 米保持生效；应用后替换，取消可回退。"
+        },
+        {
+          "name": "final draft JSON view excludes uncommitted endpoints",
+          "passed": true
+        },
+        {
+          "name": "final Escape rolls completed selection back to exact old measurement",
+          "passed": true
+        },
+        {
+          "name": "final tiny water rejection preserves feeding, water and calibration",
+          "passed": true,
+          "evidence": "池塘可游区域过小，或障碍物占满了鱼体所需空间"
+        },
+        {
+          "name": "editing existing known length is retained; zero rejects without replacing calibration",
+          "passed": true
+        },
+        {
+          "name": "valid revised known length commits and invalidates stale water",
+          "passed": true,
+          "evidence": "已校准 · 原始距离 6.7375 模型单位 → 7.500 米 · 比例 1.11317 米/模型单位"
+        },
+        {
+          "name": "final shoal metric uses scene units rather than assumed metres",
+          "passed": true,
+          "evidence": "7 条鱼 · 邻鱼朝向一致度 0.83 · 平均邻域质心偏移 0.57 场景单位 · 分离强度 0.03 · 模拟运行中"
+        },
+        {
+          "name": "final tail amplitude states fish-local units",
+          "passed": true,
+          "evidence": "转速 0.13 rad/s · 摆尾幅度 0.018 鱼体局部单位 · 展鳍 0.99 · 形变法线修正开启"
+        },
+        {
+          "name": "final calibration principle explains shared JSON validation and draft cancellation",
+          "passed": true,
+          "evidence": "Raycaster只与当前模型的可见三角形求交，将两点转为未缩放模型坐标；比例s=L真实/||p₂−p₁||模型，并统一应用到模型。校准JSON记录模型指纹、两点及已知长度；绑定JSON保存水域并可附校准记录。可查看或粘贴JSON，经相同校验后应用；重新选点可取消回退，成功应用才替换旧校准。改倍率后旧世界坐标水域失效。"
+        },
+        {
+          "name": "final 390x844 JSON dialog fits viewport and buttons are at least 44px",
+          "passed": true,
+          "evidence": {
+            "buttons": [
+              {
+                "height": 44,
+                "id": "scene-json-close"
+              },
+              {
+                "height": 44,
+                "id": "scene-json-current"
+              },
+              {
+                "height": 44,
+                "id": "scene-json-apply"
+              }
+            ],
+            "dialog": {
+              "height": 635.1041870117188,
+              "width": 362,
+              "x": 6.333333492279053,
+              "y": 104.44792175292967
+            }
+          }
+        }
+      ],
+      "passed": 19,
+      "failed": 0,
+      "scope": "Functional implementation, before final current-data wording correction."
+    },
+    {
+      "bundleSha256": "ce58275c59d952f1e51291f92506e39b5062722e7bab51e42cd3dfac7b9f5e5c",
+      "checks": [
+        {
+          "name": "wording-final build restores prior native calibration JSON",
+          "passed": true,
+          "evidence": "已校准 · 原始距离 6.7375 模型单位 → 8.000 米 · 比例 1.18738 米/模型单位"
+        },
+        {
+          "name": "wording-final current binding data explicitly identifies uncommitted draft",
+          "passed": true,
+          "evidence": "显示当前绑定数据；未应用水域时显示标记草稿，点击“检查并应用”才会提交。"
+        },
+        {
+          "name": "wording-final build restores prior native binding JSON",
+          "passed": true
+        },
+        {
+          "name": "wording-final current calibration data identifies committed record",
+          "passed": true,
+          "evidence": "显示已提交的校准记录；编辑后点击“检查并应用”才会改变场景。"
+        },
+        {
+          "name": "wording-final rejects wrong fingerprint and keeps entered data and calibration",
+          "passed": true
+        },
+        {
+          "name": "wording-final Tab and Shift+Tab loop in dialog",
+          "passed": true,
+          "evidence": {
+            "forward": "scene-json-close",
+            "reverse": "scene-json-apply"
+          }
+        },
+        {
+          "name": "wording-final phone dialog fits 390x844 and preserves 44px buttons",
+          "passed": true,
+          "evidence": {
+            "buttons": [
+              44,
+              44,
+              44
+            ],
+            "height": 641.8958740234375,
+            "width": 362,
+            "x": 6.333333492279053,
+            "y": 101.05208587646484
+          }
+        },
+        {
+          "name": "wording-final Escape closes dialog and restores opener focus",
+          "passed": true
+        },
+        {
+          "name": "wording-final selecting a fresh calibration draft retains old 8m calibration",
+          "passed": true,
+          "evidence": "校准草稿 · 已选 0/2 点 · 旧校准 8.000 米保持生效；应用后替换，取消可回退。"
+        },
+        {
+          "name": "wording-final Escape cancels fresh draft and restores old calibration and water",
+          "passed": true
+        },
+        {
+          "name": "wording-final return to courtyard clears model JSON entries",
+          "passed": true
+        }
+      ],
+      "consoleWarningsErrors": [],
+      "passed": 11,
+      "failed": 0,
+      "scope": "Final bundle after wording distinguishes committed calibration from uncommitted binding draft; critical restore, protection, focus, cancel, mobile and exit flows repeated."
+    }
+  ],
+  "successfulLaterCases": 30,
+  "finalCases": 11,
+  "historicalV10CasesRerun": false,
+  "dataRoundtrip": {
+    "source": "notes/v11-calibration-export.json and notes/v11-binding-export.json, obtained from actual native downloads in v11",
+    "textUI": "Both successfully applied through the shared import methods in actual UI",
+    "nativeFileInputUI": "Not completed: IAB filechooser interception unavailable; text paste results do not certify the native file input",
+    "measurement": "8m is synthetic input on the program demo model, not a measured real place"
+  },
+  "consoleWarningsErrors": [],
+  "viewportOverrideReset": true,
+  "finalScene": "Default program courtyard, JSON dialog closed, local preview retained as deliverable"
+}

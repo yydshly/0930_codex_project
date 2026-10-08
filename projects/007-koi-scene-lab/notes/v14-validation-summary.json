@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-02T16:04:27.340038+00:00",
+  "localDate": "2026-10-03",
+  "version": 14,
+  "preview": "http://127.0.0.1:8947/?v=65d5e6cd#scene",
+  "bundleSha256": "65d5e6cd65372012f78faf7f7f13fd9189f8872b3e16a09b539d5c4f53e93a35",
+  "scope": "Five-step guided demonstration using actual existing effects, page-local route position, imported-model protection, shared lazy initialization and stale tab request guards. Mobile and desktop navigation verification; no new asset realism claim.",
+  "numerical": {
+    "passed": 148,
+    "failed": 0,
+    "record": "notes/numerical-v14.tap",
+    "newTests": {
+      "tourState": 7,
+      "lazySceneAndActualTabSelection": 6
+    }
+  },
+  "browser": {
+    "passed": 20,
+    "failed": 0,
+    "record": "notes/browser-v14-validation.json",
+    "consoleWarningsAndErrors": 0,
+    "historicalCasesCountedAsRerun": false,
+    "earlierCandidates": [
+      "notes/browser-v14-first-pass.json",
+      "notes/browser-v14-lifecycle-checks.json"
+    ],
+    "resolvedMeasurementError": "The original mobile test included hidden-ancestor buttons as zero-height controls. Failed measurement is retained in notes/browser-v14-mobile-measurement.json; visible control rectangles rechecked at >=44px.",
+    "cssStage": "One successful mobile fit check predates the final mobile width fix. Final width and visible-control measurements were rerun and native mobile capture replaced.",
+    "initialization": "Original procedural initialization caused temporary 3-second DOM selector/control timeouts; after native Ready state, the intended observation/control succeeded. Original source and default settings remain byte-preserved."
+  },
+  "guidedExperiment": {
+    "topic": "fish",
+    "changedParameter": "B separation disabled only; A uses experiment defaults; both show actual vectors",
+    "durationSeconds": 4,
+    "referenceSignature": "ea332a5d",
+    "currentSignature": "60e196c7",
+    "displayedMeanPositionDifferenceSceneUnits": 0.0299,
+    "displayedMaxPositionDifferenceSceneUnits": 0.0736,
+    "actualRenderedComparison": true,
+    "resetAfterQA": true
+  },
+  "feeding": {
+    "actualHandStarted": true,
+    "actualLiveCounters": true,
+    "scheduledPellets": 6,
+    "allSixConsumedOnFinalBuildVerified": false
+  },
+  "route": {
+    "steps": [
+      "original",
+      "construction",
+      "water",
+      "fish",
+      "feeding"
+    ],
+    "positionPersistence": "current page only; refresh resets",
+    "visitedMeansVerified": false,
+    "exitPreservesScene": true,
+    "restartResetsOnlyRoute": true,
+    "importedModelProgramActionsBlocked": true
+  },
+  "captures": {
+    "count": 4,
+    "record": "notes/v14-capture-manifest.json"
+  },
+  "package": {
+    "upstreamSnapshotsUnchanged": 9,
+    "publicFilesMatched": 22,
+    "localReferences": 14,
+    "record": "notes/algorithm-v14-package-validation.json"
+  },
+  "collection": {
+    "testsPassed": 14,
+    "staticDemosBuilt": 17
+  },
+  "sourceHashes": {
+    "src/tour-state.js": "e1932779b6a1bbeabd8d451b6fc267c4ebfda75dfe71f6aa686592c2771b9585",
+    "src/tour-steps.js": "88a279060696285330a49317dd975998fd025c97fb496f6abc2cac510afe550e",
+    "src/tour-ui.js": "421dd38c13b35fc447953ec6ad3e57ab748ff8588d651c0f9bb47d5f68012c5a",
+    "src/lazy-scene.js": "93ed925e67157d0d79c9d8466f4a5c70cb31b44bcdd40bce2c593b46a0dfe35f",
+    "src/main.js": "5e58f605d04daf63b9747fc94d455bf477ad6756ee7c22de6fad55de052dc91d",
+    "tests/tour-state.test.mjs": "e57c66444d289cebffdd63229c39c68de76cb5ee1fb7e8d05e260c2e35c3b2e9",
+    "tests/lazy-scene.test.mjs": "a75d34e34895c8af71eb86e7883d1ee1705f4143b24f0a2c8e7de224e0f1e435",
+    "web/index.html": "ba07be171d5e361b07a8a5abaf13a7d7d2e87128edcd759662c40745c87a3d88",
+    "web/style.css": "d73461b43f9652ea9e9c82a828a2130ecdf28337a05986df5a5b0441b5b9a1cb"
+  },
+  "limitations": [
+    "No new real-location model or measured dimensions; current courtyard remains a generated-design reconstruction.",
+    "Photorealistic reference-image matching remains blocked as documented in design-qa.md.",
+    "Native JSON file input roundtrip remains unverified; successful v12 text input verification is historical evidence.",
+    "Mobile QA uses a temporary IAB viewport; not real-phone performance or full screen-reader verification.",
+    "Final-build feeding evidence confirms actual action and live counters; it does not establish that all six pellets were swallowed."
+  ],
+  "passedWithinScope": true
+}

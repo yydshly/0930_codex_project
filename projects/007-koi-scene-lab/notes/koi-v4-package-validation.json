@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-02",
+  "upstreamSnapshots": 9,
+  "originalRuntimeOnlyTwoLocalScriptSubstitutions": true,
+  "relativeHtmlReferences": 16,
+  "publicFilesMatched": [
+    "index.html",
+    "app.js",
+    "app.js.LEGAL.txt",
+    "THREE-LICENSE.txt",
+    "upstream/koi-pond.html",
+    "upstream/koi-pond.original.html",
+    "upstream/KOI-LICENSE.txt",
+    "vendor/THREE-LICENSE.txt",
+    "vendor/DAT-GUI-LICENSE.txt",
+    "assets/HAND-LICENSE.txt",
+    "assets/hand-right.glb",
+    "assets/hand-skin-albedo-v3.png"
+  ],
+  "webBundleSha256": "a6218c093600d5a53006601ebd17816317a88e17e8e0b98721c1751cff5120b5",
+  "checks": {
+    "koi": 31,
+    "hand": 25,
+    "page": 24,
+    "config": 2,
+    "researchCollection": 10
+  },
+  "errors": [],
+  "motionArtifact": "assets/feeding-motion-v4.gif",
+  "notes": "Locally built and visually inspected; no push or publication. Software WebGL behavior verification, not hardware performance or photographic realism."
+}

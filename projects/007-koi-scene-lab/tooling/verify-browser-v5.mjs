@@ -1,0 +1,104 @@
+import {createRequire} from 'node:module';
+import assert from 'node:assert/strict';
+import {writeFile,readFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import {createHash} from 'node:crypto';
+const require=createRequire('C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/package.json');
+const {chromium}=require('playwright'),root=fileURLToPath(new URL('../',import.meta.url));
+const revision=process.argv.includes('--v10')?'v10':process.argv.includes('--v9')?'v9':process.argv.includes('--v8')?'v8':process.argv.includes('--v7')?'v7':process.argv.includes('--v6')?'v6':'v5';
+const browser=await chromium.launch({headless:true,args:['--enable-webgl','--ignore-gpu-blocklist','--enable-unsafe-swiftshader']});
+const errors=[],requests=[],checks=[];
+const check=(name,condition)=>{assert.ok(condition,name);checks.push(name);};
+function glb(external=false){
+ const positions=new Float32Array([-1,0,0,1,0,0,0,2,0]),bin=Buffer.from(positions.buffer);
+ const data={asset:{version:'2.0'},scene:0,scenes:[{nodes:[0]}],nodes:[{mesh:0}],meshes:[{primitives:[{attributes:{POSITION:0},material:0}]}],
+ materials:[{doubleSided:true,pbrMetallicRoughness:{baseColorFactor:[.3,.6,.4,1],roughnessFactor:1}}],
+ buffers:[{byteLength:bin.length,...external?{uri:'https://example.invalid/geometry.bin'}:{}}],
+ bufferViews:[{buffer:0,byteOffset:0,byteLength:bin.length}],accessors:[{bufferView:0,componentType:5126,count:3,type:'VEC3',min:[-1,0,0],max:[1,2,0]}]};
+ const json=Buffer.from(JSON.stringify(data)),padded=Buffer.alloc(Math.ceil(json.length/4)*4,32);json.copy(padded);
+ const result=Buffer.alloc(12+8+padded.length+8+bin.length);result.writeUInt32LE(0x46546c67);result.writeUInt32LE(2,4);result.writeUInt32LE(result.length,8);
+ result.writeUInt32LE(padded.length,12);result.writeUInt32LE(0x4e4f534a,16);padded.copy(result,20);const offset=20+padded.length;
+ result.writeUInt32LE(bin.length,offset);result.writeUInt32LE(0x004e4942,offset+4);bin.copy(result,offset+8);return result;
+}
+try{
+ const page=await browser.newPage({viewport:{width:1536,height:1120},deviceScaleFactor:1});
+ page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
+ page.on('request',r=>requests.push(r.url()));
+ await page.goto('http://127.0.0.1:8947/#scene',{timeout:90000});
+ await page.waitForFunction(()=>window.__courtyard?.frameIndex>3,null,{timeout:120000});
+ await page.evaluate(()=>window.__courtyard.active=false);
+ check('独立 WebGL 庭院渲染',await page.evaluate(()=>window.__courtyard.renderer.getContext().isContextLost()===false));
+ const pos=await page.evaluate(()=>window.__courtyard.school.fish[0].group.position.toArray());
+ const frame=await page.evaluate(()=>{window.__courtyard.active=true;return window.__courtyard.frameIndex;});
+ await page.waitForFunction(n=>window.__courtyard.frameIndex>n+1,frame,{timeout:90000});
+ const moved=await page.evaluate(()=>{window.__courtyard.active=false;return window.__courtyard.school.fish[0].group.position.toArray();});
+ check('锦鲤位置随动画变化',pos.some((v,i)=>Math.abs(v-moved[i])>1e-5));
+ await page.locator('#pause-toggle').click();
+ const paused=await page.evaluate(()=>({time:window.__courtyard.time,frame:window.__courtyard.frameIndex}));
+ await page.evaluate(()=>window.__courtyard.active=true);
+ await page.waitForFunction(n=>window.__courtyard.frameIndex>n,paused.frame,{timeout:90000});
+ const pauseState=await page.evaluate(()=>{window.__courtyard.active=false;return {time:window.__courtyard.time,paused:window.__courtyard.settings.paused};});
+ check('暂停保持模拟时间',pauseState.paused&&pauseState.time===paused.time);
+ const dropsBeforeFeed=await page.evaluate(()=>window.__courtyard.water.nextDrop);
+ await page.locator('#feed').click();
+ const feedingImpact=await page.evaluate(dropsBefore=>{const c=window.__courtyard,start=c.time,
+  hasLanded=()=>c.school.food.children.some(m=>m.userData.particle?.landed&&m.userData.particle.time>=c.school.feedStart);
+  for(let i=0;i<60&&!hasLanded();i++)c.updateDynamics(.05);
+  return {elapsed:c.time-start,landed:hasLanded(),dropsBefore,dropsAfter:c.water.nextDrop,feedUntil:c.school.feedUntil,time:c.time};
+ },dropsBeforeFeed);
+ check('投喂粒子真实触水后建立波纹（最多推进 3 秒）',feedingImpact.landed&&feedingImpact.dropsAfter>feedingImpact.dropsBefore&&feedingImpact.feedUntil>feedingImpact.time);
+ await page.locator('#stop-interaction').click();
+ await page.locator('[data-weather="dusk"]').click();
+ check('黄昏预设更新灯光参数',await page.evaluate(()=>window.__courtyard.settings.weather==='dusk'&&window.__courtyard.settings.hour===18.3));
+ await page.locator('[data-setting="pondScale"]').evaluate(el=>el.value='1.12');await page.locator('[data-setting="pondScale"]').dispatchEvent('input');
+ check('池岸随尺度变化并保持中心',await page.evaluate(()=>window.__courtyard.landscape.stones.scale.x===1.12&&Math.abs(window.__courtyard.landscape.stones.position.x-.06)<.001));
+ await page.locator('#wireframe').check();
+ await page.locator('#view-select').selectOption('aerial');
+ check('镜头切换建立平滑过渡',await page.evaluate(()=>!!window.__courtyard.transition));
+ await page.locator('#compare').evaluate(el=>el.value='50');await page.locator('#compare').dispatchEvent('input');
+ check('参考图叠加并回到参考镜头',await page.evaluate(()=>!document.querySelector('#reference-overlay').hidden&&document.querySelector('#reference-overlay').style.opacity==='0.5'&&window.__courtyard.transition===null));
+ await page.locator('#show-reference').click();check('效果图弹窗可打开',await page.locator('#reference-dialog').evaluate(d=>d.open));
+ await page.locator('#close-reference').click();
+ await page.locator('#tour-toggle').click();check('自动漫游可开启',await page.evaluate(()=>window.__courtyard.settings.autoTour));await page.locator('#tour-toggle').click();
+ await page.locator('#audio-toggle').click();check('流水声在用户动作后启动',await page.evaluate(()=>window.__courtyard.audio.enabled));await page.locator('#audio-toggle').click();
+ const exported=page.waitForEvent('download');await page.locator('#export-settings').click();const settingsDownload=await exported;
+ await settingsDownload.saveAs(root+'notes/settings-export'+(revision!=='v5'?'-'+revision:'')+'.json');
+ const settings=JSON.parse(await readFile(root+'notes/settings-export'+(revision!=='v5'?'-'+revision:'')+'.json','utf8'));check('参数 JSON 导出保留修改',settings.format==='koi-scene-lab/v1'&&settings.settings.pondScale===1.12);
+ settings.settings.fishCount=3;
+ await page.locator('#settings-file').setInputFiles({name:'settings.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(settings))});
+ await page.waitForFunction(()=>window.__courtyard.settings.fishCount===3);check('参数 JSON 导入生效',true);
+ settings.settings.exposure=999;await page.locator('#settings-file').setInputFiles({name:'bad.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(settings))});
+ await page.waitForFunction(()=>document.querySelector('#scene-toast').textContent.startsWith('导入失败'));check('拒绝越界参数并保留当前状态',await page.evaluate(()=>window.__courtyard.settings.exposure!==999));
+ await page.locator('.settings details summary').click();
+ await page.locator('#model-file').setInputFiles({name:'synthetic-triangle.glb',mimeType:'model/gltf-binary',buffer:glb()});
+ await page.waitForFunction(()=>!!window.__courtyard.imported,null,{timeout:30000});
+ check('标准 GLB 导入替换场景显示',await page.evaluate(()=>!window.__courtyard.root.visible&&!window.__courtyard.water.mesh.visible&&document.querySelector('#feed').disabled));
+ await page.locator('#model-file').setInputFiles({name:'external.glb',mimeType:'model/gltf-binary',buffer:glb(true)});
+ await page.waitForFunction(()=>document.querySelector('#scene-toast').textContent.includes('不支持外部资源'));
+ check('GLB 外部资源被拒绝且保留旧模型',await page.evaluate(()=>!!window.__courtyard.imported));
+ await page.locator('#clear-model').click();check('退出模型返回庭院',await page.evaluate(()=>window.__courtyard.root.visible&&!window.__courtyard.imported));
+ await page.locator('#reset').click();await page.locator('#compare').evaluate(el=>el.value='0');await page.locator('#compare').dispatchEvent('input');
+ await page.evaluate(()=>{window.__courtyard.setView('reference',true);window.__courtyard.active=true;});
+ const f=await page.evaluate(()=>window.__courtyard.frameIndex);
+ await page.waitForFunction(n=>window.__courtyard.frameIndex>n,f,{timeout:90000});await page.evaluate(()=>window.__courtyard.active=false);
+ const png=page.waitForEvent('download');await page.locator('#capture').click();await (await png).saveAs(root+'assets/exported-canvas'+(revision!=='v5'?'-'+revision:'')+'.png');
+ const image=await readFile(root+'assets/exported-canvas'+(revision!=='v5'?'-'+revision:'')+'.png');check('PNG 导出来自实际三维画布',image.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10]))&&image.readUInt32BE(16)>500);
+ await page.screenshot({path:root+'assets/studio-final'+(revision!=='v5'?'-'+revision:'')+'.png',fullPage:true,timeout:90000});
+ await page.evaluate(()=>document.body.classList.add('clean-scene'));
+ const clip=await page.locator('#scene-canvas').boundingBox();await page.screenshot({path:root+'assets/scene-final'+(revision!=='v5'?'-'+revision:'')+'.png',clip,timeout:90000});
+ await page.evaluate(()=>document.body.classList.remove('clean-scene'));
+ await page.locator('[data-tab="tech"]').click();
+ check('六项技术解析可展开',await page.locator('.tech-list details').count()===6);await page.locator('.tech-list details').nth(2).locator('summary').click();
+ check('技术页内容可读',await page.locator('.tech-list details').nth(2).evaluate(d=>d.open));await page.screenshot({path:root+'assets/technology'+(revision!=='v5'?'-'+revision:'')+'.png',fullPage:true});
+ await page.locator('[data-tab="scene"]').click();await page.evaluate(()=>window.__courtyard.active=false);
+ await page.setViewportSize({width:390,height:844});await page.evaluate(()=>{window.__courtyard.resize();window.__courtyard.active=true;});
+ const m=await page.evaluate(()=>window.__courtyard.frameIndex);await page.waitForFunction(n=>window.__courtyard.frameIndex>n,m,{timeout:90000});await page.evaluate(()=>window.__courtyard.active=false);
+ check('390px 移动布局无横向溢出',await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+ check('移动端主要按钮可见',await page.locator('#capture').isVisible()&&await page.locator('#view-select').isVisible());
+ await page.screenshot({path:root+'assets/mobile'+(revision!=='v5'?'-'+revision:'')+'.png',fullPage:true,timeout:90000});
+ check('无浏览器脚本与着色器错误',errors.length===0);
+ check('没有自动外部网络请求',requests.every(u=>u.startsWith('http://127.0.0.1:8947/')||u.startsWith('blob:')||u.startsWith('data:')));
+ console.log(JSON.stringify({checks,errors,requests:requests.length}));
+ await writeFile(root+'notes/browser-'+revision+'-validation.json',JSON.stringify({date:new Date().toISOString(),bundleSha256:createHash('sha256').update(await readFile(root+'web/app.js')).digest('hex'),sourceTest:'tooling/verify-browser-v5.mjs',legacyFailure:revision==='v5'?JSON.parse(await readFile(root+'notes/browser-v5-legacy-failure.json','utf8')):null,renderer:'Chromium headless / SwiftShader, not hardware performance benchmark',viewport:[1536,1120],mobile:[390,844],glbFixture:'synthetic triangle; verifies importer, not a real scanned scene',feedingImpact,checks,errors,requests},null,2));
+}finally{await browser.close();}
+

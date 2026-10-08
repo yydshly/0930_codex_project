@@ -1,0 +1,21 @@
+import {createRequire} from 'node:module';
+import {writeFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import assert from 'node:assert/strict';
+const require=createRequire('C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/package.json');
+const {chromium}=require('playwright'),root=fileURLToPath(new URL('../',import.meta.url));
+const browser=await chromium.launch({headless:true,args:['--enable-webgl','--ignore-gpu-blocklist','--enable-unsafe-swiftshader']});
+const checks=[],errors=[];const check=(name,value)=>{assert.ok(value,name);checks.push(name);};
+try{const page=await browser.newPage({viewport:{width:1280,height:1000}});page.setDefaultTimeout(60000);
+  page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
+  await page.goto('http://127.0.0.1:8947/#scene',{timeout:90000});await page.waitForFunction(()=>window.__courtyard?.frameIndex>2,null,{timeout:120000});await page.evaluate(()=>window.__courtyard.active=false);
+  await page.locator('#compare').evaluate(e=>e.value='100');await page.locator('#compare').dispatchEvent('input');await page.locator('#feed').click();
+  check('启动投喂自动清除参考图遮挡',await page.evaluate(()=>document.querySelector('#reference-overlay').hidden&&window.__courtyard.interaction.mode==='feed'));
+  await page.evaluate(()=>window.__courtyard.updateSettings({pondScale:.9}));
+  check('池塘尺度改变取消旧坐标手部动作',await page.evaluate(()=>window.__courtyard.interaction.mode==='idle'&&!window.__courtyard.interaction.rig.root.visible));
+  await page.locator('#tour-toggle').click();await page.locator('#pause-toggle').click();await page.locator('[data-animal="frog"]').click();
+  check('动物观察恢复动态并同步关闭漫游',await page.evaluate(()=>{const c=window.__courtyard;return !c.settings.paused&&!c.settings.autoTour&&document.querySelector('#tour-toggle').getAttribute('aria-pressed')==='false'&&c.animals.frog.state==='jump'&&c.followAnimal==='frog';}));
+  await page.evaluate(()=>window.__courtyard.setView('reference',true));check('普通视角退出动物跟随',await page.evaluate(()=>window.__courtyard.followAnimal===null));
+  check('界面回归无脚本或着色器错误',errors.length===0);
+  await writeFile(root+'notes/ui-v2-validation.json',JSON.stringify({checks,errors,renderer:'Headless Chromium / software WebGL'},null,2));console.log(JSON.stringify({checks,errors}));
+}finally{await browser.close();}

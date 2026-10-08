@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-02T16:26:48.395563+00:00",
+  "clientDate": "2026-10-03",
+  "timeZone": "Asia/Shanghai",
+  "version": 15,
+  "preview": "http://127.0.0.1:8947/?v=9a9f1dea#scene",
+  "bundleSha256": "9a9f1dea9831a556dbb05f36ae5bd5658f64785d1349753080b71c9f9ba23620",
+  "scope": "Real pellet events attributed by feeding batch; consistent most-recent-round and cumulative counters in canvas-adjacent feedback, tour and principle panel. Pause/continue, early hand withdrawal and repeat-feeding actions. No new rendering assets or photorealism claim.",
+  "automated": {
+    "passed": 181,
+    "failed": 0,
+    "record": "notes/numerical-v15.tap",
+    "existingTests": 148,
+    "newTests": {
+      "batchLedger": 9,
+      "truthfulStatusText": 12,
+      "productionUIBinderWithDOMFixtures": 6,
+      "actualSchoolAndHandEventIntegration": 6
+    },
+    "method": "Node tests run actual production logic. Integration constructs production KoiSchool and HandInteraction, including actual rig/bones; texture canvas and image loading use lightweight stubs. No native browser, GPU or audio playback verification."
+  },
+  "pelletLifecycle": {
+    "releaseEvent": "Actual releasePellet call from fingers",
+    "landEvent": "Actual freefall first contact with shared water height",
+    "consumeEvent": "Actual completion of 0.16s mouth swallow animation",
+    "expireEvent": "14 simulated seconds after landing; separate from consumed",
+    "handEnd": "Natural hand withdrawal around 4s or explicit early stop; does not imply all pellets swallowed",
+    "roundIsolation": true,
+    "clearFoodInvalidatesOldTokens": true,
+    "inspectAndStrokePreserveLatestRound": true,
+    "boundedRoundRetention": true
+  },
+  "nativeBrowser": {
+    "status": "unavailable",
+    "newVerifiedChecks": 0,
+    "newCaptures": 0,
+    "reason": "CUA process failed to start in current managed environment; reset and existing-tab reconnect did not recover. Normal shell startup also failed; automatically reviewed workspace-local shell execution succeeded.",
+    "finalPageOpen": "Codex open_in_codex returned queued for final preview URL. This does not confirm native rendering.",
+    "previousVersionEvidenceRecounted": false
+  },
+  "localPreview": {
+    "record": "notes/local-preview-v15.json",
+    "resourcesByteMatched": 3
+  },
+  "package": {
+    "record": "notes/algorithm-v15-package-validation.json",
+    "upstreamSnapshotsUnchanged": 9,
+    "originalRuntimeOnlyTwoLocalScriptSubstitutions": true,
+    "publicFilesMatched": 22,
+    "localReferences": 14
+  },
+  "collection": {
+    "testsPassed": 14,
+    "staticDemosBuilt": 17
+  },
+  "sourceHashes": {
+    "src/feed-ledger.js": "172ae1e41be86c31a859494717c190d680b7477d61544a10a1ae6c70c810f5b6",
+    "src/feeding-status.js": "6ecf33a3315c3e9dd5aa3dd369b33222760cd5fd5f9dba291af6efba9c7b8685",
+    "src/feeding-ui.js": "080d7922509520a239b84243a059e909706943c1c506fe137462a6f258344508",
+    "src/fish.js": "b3af67c856b0a9b6b6b29e7f39358c901bd84eb00fa920bde3c2a8c3d4f50d9e",
+    "src/interaction.js": "86c9e854365eb41919cd13572e4e828a13183ebc516cd7e09c391b3c6ed58df4",
+    "src/principles.js": "b517634a0c43e9a98a427c71730ae02ed150c003523109752aa0a7b461260481",
+    "src/tour-ui.js": "8facb466f9d35ed31c9d0a7ddfec7a92cb43d8ae26440ae8af7a645e1ba5de37",
+    "src/tour-steps.js": "6c68df1eeee2bfb201db6329edf9b55c9e66ef34d73c7ce84640d6d148882c3a",
+    "src/main.js": "c166258d8988e51e8d425ad31ca2781102d6f4fa0fcf18732093f20a4c1da2e6",
+    "web/index.html": "3ad9ab887f00a46f15b95f0d37123f2e83ff1acf11c58118171ad7bbed365777",
+    "web/style.css": "6ece536421dae43f901643b577a9f0efc5b7ec6260acb5e12e7738b2b87f06ac",
+    "tests/feed-ledger.test.mjs": "882202c06f2b810517e5c03491113a39eec20842458b3cf824e02dc0e1a58c91",
+    "tests/feeding-status.test.mjs": "eece3d5b7d05073c4ad5d358b3d88a365c0dc7f4e77d2bcfa7476f1ca1494358",
+    "tests/feeding-ui.test.mjs": "6e8e477460ef3797f46cca78af69941fb948a59e0b1f30bab61463feb7b34db9",
+    "tests/feeding-integration.test.mjs": "5dbb89eb0c130b7d62f25e902c9e6bbdae9fd77b5f656cbdfb3a7c1ea7739fbb",
+    "tests/lazy-scene.test.mjs": "21ad1126a6628230b1a37b862a4cad2850881a9185b700ae368374061d65c4fa"
+  },
+  "limitations": [
+    "Native desktop/mobile layout, focus and new WebGL render were not revalidated in this version because browser automation was unavailable.",
+    "Passing fixtures and numerical tests do not establish final pixels, hardware performance or full screen-reader behavior.",
+    "Current courtyard remains based on an AI-generated design; no new real-location model or measured dimensions.",
+    "Photorealistic reference matching remains blocked in design-qa.md.",
+    "Native JSON file-input roundtrip remains unverified from earlier iterations."
+  ],
+  "passedWithinAutomatedScope": true,
+  "nativeVisualReviewComplete": false
+}

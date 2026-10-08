@@ -1,0 +1,8 @@
+{
+  "name": "koi-scene-lab-tooling",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "node build.mjs", "test": "node --test ../tests/*.test.mjs" },
+  "dependencies": { "three": "0.160.0" },
+  "devDependencies": { "esbuild": "0.25.10" }
+}

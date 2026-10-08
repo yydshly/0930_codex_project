@@ -1,0 +1,121 @@
+{
+  "clientDate": "2026-10-02",
+  "timeZone": "Asia/Shanghai",
+  "bundleSha256": "374bd51753e6ca7fe31b11561881177587dc127bfe1a0fbc3f3f800d5957be53",
+  "numerical": {
+    "passed": 47,
+    "failed": 0,
+    "record": "notes/numerical-v7.tap"
+  },
+  "browser": {
+    "polish-v7-validation": {
+      "path": "notes/polish-v7-validation.json",
+      "passed": 26,
+      "bundleSha256": "374bd51753e6ca7fe31b11561881177587dc127bfe1a0fbc3f3f800d5957be53"
+    },
+    "v7-browser-validation": {
+      "path": "notes/v7-browser-validation.json",
+      "passed": 29,
+      "bundleSha256": "374bd51753e6ca7fe31b11561881177587dc127bfe1a0fbc3f3f800d5957be53"
+    },
+    "koi-v7-validation": {
+      "path": "notes/koi-v7-validation.json",
+      "passed": 31,
+      "bundleSha256": "374bd51753e6ca7fe31b11561881177587dc127bfe1a0fbc3f3f800d5957be53"
+    },
+    "hand-v7-validation": {
+      "path": "notes/hand-v7-validation.json",
+      "passed": 25,
+      "bundleSha256": "374bd51753e6ca7fe31b11561881177587dc127bfe1a0fbc3f3f800d5957be53"
+    },
+    "browser-v7-validation": {
+      "path": "notes/browser-v7-validation.json",
+      "passed": 24,
+      "bundleSha256": "374bd51753e6ca7fe31b11561881177587dc127bfe1a0fbc3f3f800d5957be53"
+    }
+  },
+  "browserAssertionsPassed": 135,
+  "package": {
+    "path": "notes/algorithm-v7-package-validation.json",
+    "passed": true,
+    "publicFilesMatched": 22,
+    "upstreamSnapshotsUnchanged": 9,
+    "relativeHtmlReferences": 14
+  },
+  "collectionTests": {
+    "passed": 13,
+    "command": "python -m unittest discover -s tests"
+  },
+  "staticDemosBuilt": 15,
+  "gpuMirror": {
+    "enabled": true,
+    "samples": 64,
+    "steps": 8,
+    "maxError": 3.472705526893008e-06,
+    "peak": 0.004697802476584911
+  },
+  "floating": {
+    "before": 0.027170183741662364,
+    "after": 0.023031438314253416,
+    "error": 0.000499979832698361,
+    "localPeak": 0.03128681311643504,
+    "landed": 6
+  },
+  "sampledHistory": {
+    "samplesA": 17,
+    "samplesB": 17,
+    "identical": true,
+    "first": 0,
+    "last": 3.9999999999999907,
+    "paths": 2,
+    "endpoints": 14
+  },
+  "aB": {
+    "sameParameters": {
+      "meanPosition": 0,
+      "maxPosition": 0,
+      "sameTrajectory": true,
+      "sameViewport": true
+    },
+    "changedParameters": {
+      "meanPosition": 0.1918091993243984,
+      "maxPosition": 0.6737085124120344,
+      "sameTrajectory": false,
+      "sameViewport": true
+    },
+    "boundSameParameters": {
+      "meanPosition": 0,
+      "maxPosition": 0,
+      "sameTrajectory": true,
+      "sameViewport": true
+    }
+  },
+  "boundSchool": {
+    "simulatedSeconds": 30,
+    "finite": true,
+    "minimumBodyClearance": 0.015055462310215983,
+    "emitted": 6,
+    "consumed": 6
+  },
+  "screenshots": [
+    "assets/shoal-polish-v7.png",
+    "assets/pond-polish-v7.png",
+    "assets/experiment-trajectories-v7.png",
+    "assets/experiment-trajectories-mobile-v7.png",
+    "assets/binding-polish-v7.png",
+    "assets/binding-edit-mobile-v7.png"
+  ],
+  "initialCheckIssues": [
+    "Repeated demo loading now waits for the async load button to become enabled before capture.",
+    "Frozen headless canvas resize now waits for layout, renders a real frame and checks pixel diversity.",
+    "Centroid-pruned shoreline triangles were replaced with a complete masked surface grid."
+  ],
+  "limitations": [
+    "Procedural garden and demo GLB, not real-world scans",
+    "No hardware performance or photorealism claim",
+    "Horizontal polygon water; uniform depth and cylindrical obstacles",
+    "CPU float32 mirror and GPU half-float wave field have precision differences",
+    "Sampled trajectories every 0.25 seconds, not continuous recorded paths"
+  ],
+  "published": false
+}

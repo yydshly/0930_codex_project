@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-02T04:15:39.030481+00:00",
+  "clientDate": "2026-10-02",
+  "timeZone": "Asia/Shanghai",
+  "bundleSha256": "8f96c123096647d1cd13345f13e79a5cd9cd09ae2a1e9337090d982a09d43f74",
+  "bundleBytes": 2953125,
+  "bundleLastModifiedUtc": "2026-10-02T04:10:25.964641+00:00",
+  "browserMethod": "Real headless Chromium / SwiftShader; UI actions and deterministic 0.025 s and 0.05 s simulated steps. Not hardware performance.",
+  "koi": {
+    "date": "2026-10-02T04:13:49.254Z",
+    "passed": 31,
+    "failures": [],
+    "errors": [],
+    "fatal": null,
+    "evidenceSnapshot": "koi-v4-validation.json"
+  },
+  "hand": {
+    "date": "2026-10-02T04:14:39.885Z",
+    "passed": 25,
+    "errors": [],
+    "evidenceSnapshot": "hand-v4-validation.json"
+  },
+  "totalBrowserChecks": 56,
+  "feeding": {
+    "released": 6,
+    "consumed": 6,
+    "firstBiteTime": 5.050000000000004,
+    "allSwallowedTime": 5.3500000000000085,
+    "swallowed": 6,
+    "expired": 0,
+    "maxPlanarMouthError": 0.04046724882151485,
+    "maxVerticalMouthError": 0.003404794841590165
+  },
+  "strokeAtFourSeconds": {
+    "mode": "stroke",
+    "phase": "contact",
+    "touching": true,
+    "clearance": 0.0019051167994896534,
+    "wet": 0.799731629897678
+  },
+  "historicalV4": [
+    "koi-v4-validation.before-v5.json",
+    "hand-v4-validation.before-v5.json"
+  ]
+}

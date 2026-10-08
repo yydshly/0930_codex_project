@@ -1,0 +1,34 @@
+TAP version 13
+# Subtest: surface detail toggles every fish without changing anatomy, animation or seven styles
+ok 1 - surface detail toggles every fish without changing anatomy, animation or seven styles
+  ---
+  duration_ms: 883.9166
+  type: 'test'
+  ...
+# Subtest: r160 physical shader expands skin detail after motion normals and before lighting
+ok 2 - r160 physical shader expands skin detail after motion normals and before lighting
+  ---
+  duration_ms: 1083.3419
+  type: 'test'
+  ...
+# Subtest: stone and foliage shader patches use existing r160 UV chunks with derivative filtering
+ok 3 - stone and foliage shader patches use existing r160 UV chunks with derivative filtering
+  ---
+  duration_ms: 701.5794
+  type: 'test'
+  ...
+# Subtest: appearance variation preserves all seven original floating support anchors and scale
+ok 4 - appearance variation preserves all seven original floating support anchors and scale
+  ---
+  duration_ms: 774.482
+  type: 'test'
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 4
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 8113.6774

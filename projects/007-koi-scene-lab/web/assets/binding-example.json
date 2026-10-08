@@ -1,0 +1,42 @@
+{
+  "habitat": {
+    "polygon": [
+      {
+        "x": -2.8,
+        "z": -1.7
+      },
+      {
+        "x": 2.8,
+        "z": -1.7
+      },
+      {
+        "x": 2.8,
+        "z": 1.7
+      },
+      {
+        "x": -2.8,
+        "z": 1.7
+      }
+    ],
+    "waterLevel": 0.65,
+    "depth": 0.6,
+    "feedPoint": {
+      "x": -1.2,
+      "y": 0.65,
+      "z": 1
+    },
+    "obstacles": [
+      {
+        "x": 0.7,
+        "z": 0.15,
+        "radius": 0.32
+      },
+      {
+        "x": -1.8,
+        "z": -0.65,
+        "radius": 0.25
+      }
+    ]
+  },
+  "source": "procedural demonstration; not scan"
+}

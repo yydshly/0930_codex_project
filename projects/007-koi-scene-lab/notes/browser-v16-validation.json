@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-02T17:13:29.436Z",
+  "clientDate": "2026-10-03",
+  "version": 16,
+  "bundleSha256": "713cfa3c73643e367b8d27efc33151be35aa64817ff1f412e1eff48ffeb30bae",
+  "scriptSha256": "e3f51630219d24326481f91a310feabc7e2edbdd57d0702da3c2786487a1e6ca",
+  "authorization": {
+    "reply": "继续优化",
+    "context": "Reply to the preceding explicit request for isolated localhost Playwright acceptance."
+  },
+  "method": "User-authorized isolated headless Chromium, real UI actions and read-only DOM observations. Uses software-capable WebGL; not a hardware performance or full accessibility test.",
+  "checks": [
+    {
+      "name": "new scene initializes and feeding feedback is initially hidden",
+      "passed": true
+    },
+    {
+      "name": "fish-count control can select zero",
+      "passed": true
+    },
+    {
+      "name": "zero-fish main feed keeps zero and explains observation-only behavior",
+      "passed": true
+    },
+    {
+      "name": "actual six-pellet release and landing have a separate zero swallow count",
+      "passed": true,
+      "evidence": "本轮释放 6/6 粒 · 实际落水 6 粒 · 吞食 0 粒 · 尚在场景 6 粒 · 过期 0 粒；场景累计吞食 0 粒"
+    },
+    {
+      "name": "pause has a truthful pressed state and status",
+      "passed": true
+    },
+    {
+      "name": "keyboard can move from pause to a feedback action",
+      "passed": true
+    },
+    {
+      "name": "hand withdrawal preserves the frozen batch",
+      "passed": true
+    },
+    {
+      "name": "rejected GLB retains the previous feed record",
+      "passed": true
+    },
+    {
+      "name": "accepted unbound model clears feeding feedback and disables feeding",
+      "passed": true
+    },
+    {
+      "name": "returning to courtyard does not revive the previous round",
+      "passed": true
+    },
+    {
+      "name": "browser verification execution",
+      "passed": false,
+      "error": "new feed begins with no old release count"
+    }
+  ],
+  "passed": 10,
+  "failed": 1,
+  "captures": [
+    "assets/feeding-desktop-v16.jpg",
+    "assets/feeding-failure-v16.jpg"
+  ],
+  "errors": [],
+  "warnings": [
+    "Allow attribute will take precedence over 'allowfullscreen'.",
+    "[.WebGL-0x268c001b8800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x268c001b8800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x268c001b8800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x268c001b8800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ],
+  "externalRequests": []
+}

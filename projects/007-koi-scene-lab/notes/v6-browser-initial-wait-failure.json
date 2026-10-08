@@ -1,0 +1,612 @@
+{
+  "clientDate": "2026-10-02",
+  "timeZone": "Asia/Shanghai",
+  "bundleSha256": "4af543c3a5cbe6cf65f2d0a0689a586f57fdcf9cc15382cd64e24cea5ca08286",
+  "checks": [
+    "完整场景实际 WebGL 启动",
+    "滑块改变实际分离权重及读数",
+    "关闭三条规则后实际加权向量为零",
+    "观察层使用实际行为向量与每鱼三个碰撞球",
+    "法线开关更新全部鱼的实际着色器 uniform",
+    "水面高度模式接入实际水面着色器",
+    "水面法线模式成功渲染"
+  ],
+  "errors": [],
+  "fatal": "AssertionError [ERR_ASSERTION]: 相同起点种子和参数的真实 A/B 轨迹完全一致\n    at check (file:///F:/codex_project/0930_codex_project/projects/007-koi-scene-lab/tooling/verify-v6.mjs:11:32)\n    at file:///F:/codex_project/0930_codex_project/projects/007-koi-scene-lab/tooling/verify-v6.mjs:41:2",
+  "evidence": {
+    "disabledForces": [
+      {
+        "separation": {
+          "x": 0,
+          "z": 0
+        },
+        "alignment": {
+          "x": 0,
+          "z": 0
+        },
+        "cohesion": {
+          "x": 0,
+          "z": 0
+        },
+        "wander": {
+          "x": -0.07768762583214142,
+          "z": -1.7979590714729223
+        },
+        "target": {
+          "x": 0,
+          "z": 0
+        },
+        "shore": {
+          "x": 0,
+          "z": 0
+        },
+        "obstacle": {
+          "x": 0,
+          "z": 0
+        },
+        "combined": {
+          "x": -0.07768762583214142,
+          "z": -1.7979590714729223
+        },
+        "result": {
+          "x": -0.07768762583214142,
+          "z": -1.7979590714729223
+        }
+      },
+      {
+        "separation": {
+          "x": 0,
+          "z": 0
+        },
+        "alignment": {
+          "x": 0,
+          "z": 0
+        },
+        "cohesion": {
+          "x": 0,
+          "z": 0
+        },
+        "wander": {
+          "x": 1.5532710715070008,
+          "z": -0.9091119453866591
+        },
+        "target": {
+          "x": 0,
+          "z": 0
+        },
+        "shore": {
+          "x": 0,
+          "z": 0
+        },
+        "obstacle": {
+          "x": 0,
+          "z": 0
+        },
+        "combined": {
+          "x": 1.5532710715070008,
+          "z": -0.9091119453866591
+        },
+        "result": {
+          "x": 1.5532710715070008,
+          "z": -0.9091119453866591
+        }
+      },
+      {
+        "separation": {
+          "x": 0,
+          "z": 0
+        },
+        "alignment": {
+          "x": 0,
+          "z": 0
+        },
+        "cohesion": {
+          "x": 0,
+          "z": 0
+        },
+        "wander": {
+          "x": 1.2819259296167738,
+          "z": -1.1993314112359232
+        },
+        "target": {
+          "x": 0,
+          "z": 0
+        },
+        "shore": {
+          "x": 0,
+          "z": 0
+        },
+        "obstacle": {
+          "x": 0,
+          "z": 0
+        },
+        "combined": {
+          "x": 1.2819259296167738,
+          "z": -1.1993314112359232
+        },
+        "result": {
+          "x": 1.2819259296167738,
+          "z": -1.1993314112359232
+        }
+      },
+      {
+        "separation": {
+          "x": 0,
+          "z": 0
+        },
+        "alignment": {
+          "x": 0,
+          "z": 0
+        },
+        "cohesion": {
+          "x": 0,
+          "z": 0
+        },
+        "wander": {
+          "x": 1.6041390743595372,
+          "z": -0.7437781020523737
+        },
+        "target": {
+          "x": 0,
+          "z": 0
+        },
+        "shore": {
+          "x": 0,
+          "z": 0
+        },
+        "obstacle": {
+          "x": 0,
+          "z": 0
+        },
+        "combined": {
+          "x": 1.6041390743595372,
+          "z": -0.7437781020523737
+        },
+        "result": {
+          "x": 1.6041390743595372,
+          "z": -0.7437781020523737
+        }
+      },
+      {
+        "separation": {
+          "x": 0,
+          "z": 0
+        },
+        "alignment": {
+          "x": 0,
+          "z": 0
+        },
+        "cohesion": {
+          "x": 0,
+          "z": 0
+        },
+        "wander": {
+          "x": 0.579765202508168,
+          "z": -1.6974094958684107
+        },
+        "target": {
+          "x": 0,
+          "z": 0
+        },
+        "shore": {
+          "x": 0,
+          "z": 0
+        },
+        "obstacle": {
+          "x": 0,
+          "z": 0
+        },
+        "combined": {
+          "x": 0.579765202508168,
+          "z": -1.6974094958684107
+        },
+        "result": {
+          "x": 0.579765202508168,
+          "z": -1.6974094958684107
+        }
+      },
+      {
+        "separation": {
+          "x": 0,
+          "z": 0
+        },
+        "alignment": {
+          "x": 0,
+          "z": 0
+        },
+        "cohesion": {
+          "x": 0,
+          "z": 0
+        },
+        "wander": {
+          "x": -1.7470808148365848,
+          "z": 0.07533646783055353
+        },
+        "target": {
+          "x": 0,
+          "z": 0
+        },
+        "shore": {
+          "x": 0,
+          "z": 0
+        },
+        "obstacle": {
+          "x": 0,
+          "z": 0
+        },
+        "combined": {
+          "x": -1.7470808148365848,
+          "z": 0.07533646783055353
+        },
+        "result": {
+          "x": -1.7470808148365848,
+          "z": 0.07533646783055353
+        }
+      },
+      {
+        "separation": {
+          "x": 0,
+          "z": 0
+        },
+        "alignment": {
+          "x": 0,
+          "z": 0
+        },
+        "cohesion": {
+          "x": 0,
+          "z": 0
+        },
+        "wander": {
+          "x": 1.4135906463497634,
+          "z": -1.1142868458475614
+        },
+        "target": {
+          "x": 0,
+          "z": 0
+        },
+        "shore": {
+          "x": 0,
+          "z": 0
+        },
+        "obstacle": {
+          "x": 0,
+          "z": 0
+        },
+        "combined": {
+          "x": 1.4135906463497634,
+          "z": -1.1142868458475614
+        },
+        "result": {
+          "x": 1.4135906463497634,
+          "z": -1.1142868458475614
+        }
+      }
+    ],
+    "overlays": {
+      "visible": true,
+      "spheres": 21,
+      "fish": 7,
+      "lines": [
+        {
+          "key": "separation",
+          "count": 30
+        },
+        {
+          "key": "alignment",
+          "count": 30
+        },
+        {
+          "key": "cohesion",
+          "count": 30
+        },
+        {
+          "key": "combined",
+          "count": 42
+        }
+      ]
+    },
+    "same": {
+      "parameters": {
+        "separation": 2.4,
+        "alignment": 0.4,
+        "cohesion": 0.22,
+        "collision": true,
+        "normalCorrection": true,
+        "overlay": {
+          "vectors": false,
+          "collision": false
+        },
+        "waterDebug": "natural"
+      },
+      "mode": "baseline",
+      "baseline": {
+        "parameters": {
+          "separation": 2.4,
+          "alignment": 0.4,
+          "cohesion": 0.22,
+          "collision": true,
+          "normalCorrection": true,
+          "overlay": {
+            "vectors": false,
+            "collision": false
+          },
+          "waterDebug": "natural"
+        },
+        "settings": {
+          "hour": 16.3,
+          "clarity": 1.45,
+          "wind": 0.32,
+          "fishCount": 7,
+          "exposure": 1.12,
+          "pondScale": 1,
+          "deckScale": 1,
+          "houseScale": 1,
+          "weather": "sunny",
+          "modelScale": 1,
+          "autoTour": false,
+          "paused": false,
+          "wireframe": false,
+          "sound": false
+        },
+        "context": {
+          "modelSha256": null,
+          "modelScale": 1,
+          "habitat": null
+        },
+        "camera": {
+          "position": [
+            1.1102230246251565e-16,
+            0.9999999999999998,
+            5.300000000000001
+          ],
+          "quaternion": [
+            -0.07561521207342829,
+            0.0388616956904165,
+            0.0029492259058445467,
+            0.9963751353670525
+          ],
+          "target": [
+            -0.5,
+            0.02,
+            -1.1
+          ],
+          "fov": 56
+        },
+        "createdAt": "2026-10-02T05:35:39.341Z"
+      },
+      "current": {
+        "parameters": {
+          "separation": 2.4,
+          "alignment": 0.4,
+          "cohesion": 0.22,
+          "collision": true,
+          "normalCorrection": true,
+          "overlay": {
+            "vectors": false,
+            "collision": false
+          },
+          "waterDebug": "natural"
+        },
+        "savedSettings": {
+          "hour": 16.3,
+          "clarity": 1.45,
+          "wind": 0.32,
+          "fishCount": 7,
+          "exposure": 1.12,
+          "pondScale": 1,
+          "deckScale": 1,
+          "houseScale": 1,
+          "weather": "sunny",
+          "modelScale": 1,
+          "autoTour": false,
+          "paused": false,
+          "wireframe": false,
+          "sound": false
+        }
+      },
+      "results": {
+        "baseline": {
+          "parameters": {
+            "separation": 2.4,
+            "alignment": 0.4,
+            "cohesion": 0.22,
+            "collision": true,
+            "normalCorrection": true,
+            "overlay": {
+              "vectors": false,
+              "collision": false
+            },
+            "waterDebug": "natural"
+          },
+          "elapsed": 3.9999999999999907,
+          "step": 0.016666666666666666,
+          "settings": {
+            "hour": 16.3,
+            "clarity": 1.45,
+            "wind": 0.32,
+            "fishCount": 7,
+            "exposure": 1.12,
+            "pondScale": 1,
+            "deckScale": 1,
+            "houseScale": 1,
+            "weather": "sunny",
+            "modelScale": 1,
+            "autoTour": false,
+            "paused": false,
+            "wireframe": false,
+            "sound": false
+          },
+          "fish": [
+            {
+              "id": 0,
+              "position": [
+                1.2854609803116088,
+                -0.17532130258298734,
+                0.17968509475716757
+              ],
+              "heading": 0.8679872843792161,
+              "speed": 0.019018520380839975,
+              "phase": 23.46990335570239,
+              "amp": 0.013704872499714126
+            },
+            {
+              "id": 1,
+              "position": [
+                -1.1840231604246687,
+                -0.19333267833986442,
+                0.8041018576378183
+              ],
+              "heading": 0.017427274922898056,
+              "speed": 0.04626630861532185,
+              "phase": 22.629537781632337,
+              "amp": 0.018723430602680197
+            },
+            {
+              "id": 2,
+              "position": [
+                1.3670815418892763,
+                -0.23585895899213338,
+                -1.3598738715176608
+              ],
+              "heading": 0.8012167188952759,
+              "speed": 0.12084805813394323,
+              "phase": 33.349018818882016,
+              "amp": 0.026924292608727567
+            },
+            {
+              "id": 3,
+              "position": [
+                0.5883391575374306,
+                -0.2638045918926748,
+                1.13614628493345
+              ],
+              "heading": 0.8625234507161044,
+              "speed": 0.08889503615515097,
+              "phase": 22.885158993655,
+              "amp": 0.025392230770928503
+            },
+            {
+              "id": 4,
+              "position": [
+                1.0212925442997214,
+                -0.25147940049933437,
+                0.452968276674116
+              ],
+              "heading": 1.3248578416300933,
+              "speed": 0.07007628374078917,
+              "phase": 25.018012602973503,
+              "amp": 0.022024453433637896
+            },
+            {
+              "id": 5,
+              "position": [
+                -3.507355520026029,
+                -0.2102090519133261,
+                -0.10420514832871916
+              ],
+              "heading": 3.6957780975458245,
+              "speed": 0.16898691667398993,
+              "phase": 29.319678157547802,
+              "amp": 0.03754912938620845
+            },
+            {
+              "id": 6,
+              "position": [
+                1.7650767046754372,
+                -0.17794338054365955,
+                -0.9267147819157171
+              ],
+              "heading": 0.9660617486466839,
+              "speed": 0.13591501334886338,
+              "phase": 32.57421024885638,
+              "amp": 0.03502656744996753
+            }
+          ],
+          "positions": [
+            [
+              1.2854609803116088,
+              -0.17532130258298734,
+              0.17968509475716757
+            ],
+            [
+              -1.1840231604246687,
+              -0.19333267833986442,
+              0.8041018576378183
+            ],
+            [
+              1.3670815418892763,
+              -0.23585895899213338,
+              -1.3598738715176608
+            ],
+            [
+              0.5883391575374306,
+              -0.2638045918926748,
+              1.13614628493345
+            ],
+            [
+              1.0212925442997214,
+              -0.25147940049933437,
+              0.452968276674116
+            ],
+            [
+              -3.507355520026029,
+              -0.2102090519133261,
+              -0.10420514832871916
+            ],
+            [
+              1.7650767046754372,
+              -0.17794338054365955,
+              -0.9267147819157171
+            ]
+          ],
+          "metrics": {
+            "activeFish": 7,
+            "alignment": 0.7036540190048503,
+            "cohesion": 0.5155131648036997,
+            "separation": 0.18959972252881394,
+            "turnRate": 0.15275672782845898,
+            "effort": 0.2837854728190527,
+            "neighbors": 2,
+            "boundary": 0,
+            "contacts": 0,
+            "consumed": 0
+          },
+          "signature": "ea332a5d",
+          "image": null,
+          "viewport": [
+            1139,
+            759
+          ]
+        },
+        "current": null
+      },
+      "duration": 4,
+      "difference": null,
+      "lastInvalidation": null,
+      "legend": [
+        {
+          "key": "separation",
+          "label": "分离",
+          "color": "#ed6a5e"
+        },
+        {
+          "key": "alignment",
+          "label": "对齐",
+          "color": "#5293df"
+        },
+        {
+          "key": "cohesion",
+          "label": "聚集",
+          "color": "#60bd8d"
+        },
+        {
+          "key": "combined",
+          "label": "最终方向",
+          "color": "#e6ba45"
+        }
+      ],
+      "boundary": "箭头显示当前已施加的转向向量；长度经缩放和截断，不代表真实牛顿力。碰撞球是算法近似；法线开关不改变鱼体形状。A/B 按同一起点、种子、场景设置与固定 1/60 秒步长重播。"
+    }
+  },
+  "method": "Real Chromium with SwiftShader; UI controls and actual pointer marking. Fixed-step simulation advances behavior, full composer rendering captures canvas images. No hardware FPS or scan/photorealism claim."
+}

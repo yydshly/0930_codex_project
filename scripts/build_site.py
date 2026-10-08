@@ -46,7 +46,10 @@ def build(root=ROOT):
                          or (project["slug"] == "rhythm-drop"
                              and relative_asset.parts[0] == "echo"
                              and asset.suffix.lower() == ".wav")
-                         or asset.name in {"THREE-LICENSE.txt", "app.js.LEGAL.txt"})):
+                         or asset.name in {"THREE-LICENSE.txt", "app.js.LEGAL.txt"}
+                         or (project['slug'] == 'koi-scene-lab' and asset.name in {
+                             "KOI-LICENSE.txt", "DAT-GUI-LICENSE.txt", "HAND-LICENSE.txt",
+                             "hand-right.glb", "binding-example.glb", "binding-example.json"}))):
                 target = destination / asset.relative_to(source)
                 target.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(asset, target)
@@ -68,6 +71,8 @@ def build(root=ROOT):
             source_note = (f'最初来源：<a href="{reference}">{reference_name}</a>。资料索引：'
                            f'<a href="{repo}">{repo_name}</a>（其中一个资料项目）。{source_list}。')
             guide_caption = '<p class="guide-caption">我们的十项目能力与技术总览 · 按原库与本机实测分别说明，非原作者效果截图。</p>'
+        if project["id"] == 7 and project["slug"] == "koi-scene-lab":
+            guide_caption = '<p class="guide-caption">我们的理解总览图 · 原作运行实图、底层技术、当前能力、可扩展方向与个人价值；照片重建和实物交付仍为规划。</p>'
         entries.append(f'<tr><td>{project["id"]:03d}</td><th scope="row"><a href="./{relative}/">{name}</a></th>'
                        f'<td>{summary}</td><td>{source_link}</td><td><a href="./{relative}/">网页演示</a></td></tr>')
         guide = ''

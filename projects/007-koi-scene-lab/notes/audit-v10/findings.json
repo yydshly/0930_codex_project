@@ -1,0 +1,55 @@
+{
+  "clientDate": "2026-10-02",
+  "bundleSha256": "604c2e85728acf9cc94fc2028869ed0b5a83108f4af2556116f035cc1244fcdf",
+  "scope": "当前庭院总览、鱼头观察和390×844手机布局；另只读审查模型绑定和动物镜头源码。",
+  "captureMethod": "当前Codex in-app browser，cua_repl；三张原始JPEG截图均保存并打开检查。未重绘或生成截图。",
+  "steps": [
+    {"number": 1, "name": "庭院总览", "health": "可用；植被、空间和材质仍显程序化", "screenshot": "01-current-scene.jpg"},
+    {"number": 2, "name": "鱼头观察并暂停", "health": "操作和近景取景正常；鱼体表面仍有较强塑料感", "screenshot": "02-fish-detail.jpg"},
+    {"number": 3, "name": "390×844手机观察", "health": "主体可见，无横向溢出；底部工具栏占画布23.81%", "screenshot": "03-mobile-detail.jpg"}
+  ],
+  "findings": [
+    {
+      "priority": "P2", "kind": "confirmed-code-defect",
+      "description": "导入GLB并应用水域绑定后，观察下拉框重新启用，但三个庭院动物选项仍可选；非instant的setView又恢复followAnimal，镜头最终跟随隐藏的庭院动物。",
+      "trigger": "导入GLB → 应用绑定 → 下拉框选择跟随乌龟/观察青蛙/观察蜻蜓。",
+      "source": ["src/main.js:27", "src/scene.js:83", "src/scene.js:89", "src/scene.js:174"],
+      "evidence": "真实Courtyard.prototype和Three数值fixture：绑定中心[12,0,12]，setView('turtle')后followAnimal='turtle'，下一次renderFollowTargets将目标移至[10.2,0,10.68]，趋向隐藏动物[-3,0,1]。",
+      "recommendation": "导入态禁用三个庭院动物选项，并在setView中保护导入态的followAnimal。"
+    },
+    {
+      "priority": "P3", "kind": "camera-consistency",
+      "description": "动物跟随镜头每帧使用固定0.12插值系数，响应速度仍取决于渲染帧率。",
+      "source": ["src/scene.js:174"],
+      "evidence": "静止新目标的一秒残差：(1-.12)^20=0.0775628，(1-.12)^60=0.0004666，(1-.12)^120=0.0000002177。",
+      "recommendation": "使用按渲染dt计算的指数平滑系数1-exp(-lambda*dt)。"
+    },
+    {
+      "priority": "P3", "kind": "visual-fidelity",
+      "description": "近景鱼体高光和表面过于均匀；总览植被密度与轮廓仍有明显重复，照片级庭院目标尚未达成。",
+      "evidence": ["01-current-scene.jpg", "02-fish-detail.jpg"],
+      "recommendation": "改进鱼皮粗糙度和微细节、植物资产与材质变化；真实地点工作需要真实素材和尺寸校准。"
+    },
+    {
+      "priority": "P3", "kind": "mobile-layout",
+      "description": "六按钮底部工具栏占用较多观察区域。",
+      "evidence": "03-mobile-detail.jpg；当前DOM测量画布350px、工具栏83.333px，占23.81%。",
+      "recommendation": "近景观察时提供紧凑或收起操作区，同时保留易用的触控入口。"
+    },
+    {
+      "priority": "P2", "kind": "accessible-names",
+      "description": "8个可见参数滑块没有关联label、aria-label或aria-labelledby；可见文字未形成控件的可访问名称。",
+      "evidence": "dom-evidence.json及当前DOM快照；参考图叠加滑块有名称，另8个参数滑块无名称。",
+      "recommendation": "为参数滑块关联可见标签，补充键盘和读屏检查。"
+    }
+  ],
+  "limits": [
+    "本次实际UI未重新执行完整GLB导入/绑定流程；绑定缺陷经源码和独立数值fixture确认。",
+    "未测量代表性真实手机的GPU性能，窗口缩窄只用于响应式布局检查。",
+    "未执行完整读屏、色彩对比度或WCAG符合性测试。",
+    "动物点击是否穿过遮挡物尚未实证，不作为已确认缺陷。",
+    "每帧最多追赶0.2秒的丢时策略是已有设计边界，低于5FPS时可能放慢仿真；建议增加仿真推进率读数。"
+  ],
+  "restored": {"viewportOverride": false, "view": "reference", "fishShot": "whole", "paused": false},
+  "sourceCodeChanged": false
+}

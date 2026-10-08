@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-02T16:26:41.946683+00:00",
+  "clientDate": "2026-10-03",
+  "preview": "http://127.0.0.1:8947/?v=9a9f1dea#scene",
+  "checks": [
+    {
+      "resource": "index.html",
+      "status": 200,
+      "bytes": 45068,
+      "sha256": "3ad9ab887f00a46f15b95f0d37123f2e83ff1acf11c58118171ad7bbed365777",
+      "matchesWorkspace": true
+    },
+    {
+      "resource": "app.js",
+      "status": 200,
+      "bytes": 3087550,
+      "sha256": "9a9f1dea9831a556dbb05f36ae5bd5658f64785d1349753080b71c9f9ba23620",
+      "matchesWorkspace": true
+    },
+    {
+      "resource": "style.css",
+      "status": 200,
+      "bytes": 40645,
+      "sha256": "6ece536421dae43f901643b577a9f0efc5b7ec6260acb5e12e7738b2b87f06ac",
+      "matchesWorkspace": true
+    }
+  ],
+  "passed": true,
+  "method": "HTTP reads of existing local preview server; proves served files match workspace. Does not execute JavaScript, render WebGL or perform browser interaction."
+}

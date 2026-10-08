@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-02T06:18:13.967Z",
+  "bundleSha256": "595159a38304164a355b1bd1e95f4eedb6a1659acb0bb6ec4cfbc834d05d221f",
+  "sourceTest": "tooling/verify-browser-v5.mjs",
+  "legacyFailure": null,
+  "renderer": "Chromium headless / SwiftShader, not hardware performance benchmark",
+  "viewport": [
+    1536,
+    1120
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "glbFixture": "synthetic triangle; verifies importer, not a real scanned scene",
+  "feedingImpact": {
+    "elapsed": 1.9499999999999997,
+    "landed": true,
+    "dropsBefore": 0,
+    "dropsAfter": 1,
+    "feedUntil": 16.46280000001192,
+    "time": 2.4128000000119205
+  },
+  "checks": [
+    "独立 WebGL 庭院渲染",
+    "锦鲤位置随动画变化",
+    "暂停保持模拟时间",
+    "投喂粒子真实触水后建立波纹（最多推进 3 秒）",
+    "黄昏预设更新灯光参数",
+    "池岸随尺度变化并保持中心",
+    "镜头切换建立平滑过渡",
+    "参考图叠加并回到参考镜头",
+    "效果图弹窗可打开",
+    "自动漫游可开启",
+    "流水声在用户动作后启动",
+    "参数 JSON 导出保留修改",
+    "参数 JSON 导入生效",
+    "拒绝越界参数并保留当前状态",
+    "标准 GLB 导入替换场景显示",
+    "GLB 外部资源被拒绝且保留旧模型",
+    "退出模型返回庭院",
+    "PNG 导出来自实际三维画布",
+    "六项技术解析可展开",
+    "技术页内容可读",
+    "390px 移动布局无横向溢出",
+    "移动端主要按钮可见",
+    "无浏览器脚本与着色器错误",
+    "没有自动外部网络请求"
+  ],
+  "errors": [],
+  "requests": [
+    "http://127.0.0.1:8947/",
+    "http://127.0.0.1:8947/style.css",
+    "http://127.0.0.1:8947/assets/courtyard-target.png",
+    "http://127.0.0.1:8947/app.js",
+    "http://127.0.0.1:8947/assets/stone-albedo.png",
+    "http://127.0.0.1:8947/assets/wood-albedo.png",
+    "http://127.0.0.1:8947/assets/gravel-albedo.png",
+    "http://127.0.0.1:8947/assets/roof-albedo.png",
+    "http://127.0.0.1:8947/assets/hand-skin-albedo-v3.png"
+  ]
+}

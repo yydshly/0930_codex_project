@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-03T00:14:56.817032+00:00",
+  "version": 18,
+  "preview": "http://127.0.0.1:8947/?v=9051a067#scene",
+  "bundleSha256": "9051a067c8eb6175f907cc1d68ef5c79ec149600b8aeebc597bcffd0607c36b2",
+  "automated": {
+    "passed": 250,
+    "failed": 0,
+    "newTests": 23,
+    "record": "notes/numerical-v18-result.json",
+    "tap": "notes/numerical-v18.tap",
+    "scope": "Production code, real Three/OrbitControls and event/bitmap fixtures; not native GPU-memory measurement."
+  },
+  "nativeBrowser": {
+    "passed": 21,
+    "failed": 0,
+    "record": "notes/browser-v18-validation.json",
+    "scope": "Keyboard, mouse click/drag/wheel, native touch tap, mobile geometry, focused-button withdrawal, three GLB imports/replacements and clear. No context-recovery rerun or memory measurement."
+  },
+  "captureCount": 3,
+  "captureManifest": "notes/v18-capture-manifest.json",
+  "package": "notes/algorithm-v18-package-validation.json",
+  "http": "notes/local-preview-v18.json",
+  "limits": [
+    "Photorealistic matching is unchanged.",
+    "GPU memory reduction and real-device performance are not measured.",
+    "v17 controlled context recovery remains historical evidence, not counted as v18 tests.",
+    "Desktop feeding capture is the initial approach phase; mobile capture shows the visible hand."
+  ]
+}

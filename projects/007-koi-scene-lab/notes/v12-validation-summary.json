@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-02T14:54:54.681312+00:00",
+  "version": 12,
+  "bundleSha256": "ce58275c59d952f1e51291f92506e39b5062722e7bab51e42cd3dfac7b9f5e5c",
+  "preview": "http://127.0.0.1:8947/?v=ce58275c#scene",
+  "numerical": {
+    "tests": 135,
+    "passed": 135,
+    "failed": 0,
+    "record": "notes/numerical-v12.tap"
+  },
+  "browser": {
+    "successfulFeatureCases": 19,
+    "finalWordingBuildCases": 11,
+    "totalSuccessfulLaterCases": 30,
+    "initialResolvedFailure": 1,
+    "record": "notes/browser-v12-validation.json",
+    "textUIRoundtrip": "passed: native v11 calibration and binding exports reapplied",
+    "nativeFileInputUIRoundtrip": "not completed"
+  },
+  "captures": {
+    "count": 5,
+    "allFinalBundle": true,
+    "record": "notes/v12-capture-manifest.json"
+  },
+  "collection": {
+    "testsPassed": 14,
+    "staticDemosBuilt": 17,
+    "record": "notes/collection-v12-validation.json"
+  },
+  "package": {
+    "upstreamSnapshotsUnchanged": 9,
+    "publicFilesMatched": 22,
+    "relativeReferencesChecked": 14,
+    "record": "notes/algorithm-v12-package-validation.json"
+  },
+  "sourceHashes": {
+    "web/index.html": "23a6a472889b24f8b8cacfbb5a823d60e023c16e3b8ac8d3a31b3db142604d85",
+    "web/style.css": "2ea64283cda869ff549f33b197cf8ae0b938c54515b4bb74b88b142d792720c2",
+    "src/scene-json-ui.js": "7b35c538d933f53ee04e770ccd5ffbd62d4a0a4cfbdff8a3f0e8819f0744c1dd",
+    "src/scene-binding.js": "a863d723bea79514f9832002c627c1ef50bd738cc0e18d7f2aca5b777eb43731",
+    "src/scene.js": "ae84509e0f6507fd29c48e5b324b35f240de7f98978c964891449e97190170e7"
+  },
+  "limitations": [
+    "Program courtyard and demo GLB; no scanned real place or measured distance supplied.",
+    "Two-point calibration is uniform 3D straight-line scale, not scanning distortion correction.",
+    "Validated habitat failures preserve prior state; arbitrary later GPU/runtime allocation errors are not claimed to globally roll back.",
+    "Scoped UI checks do not certify full screen reader support or real phone performance."
+  ],
+  "passedWithinScope": true
+}

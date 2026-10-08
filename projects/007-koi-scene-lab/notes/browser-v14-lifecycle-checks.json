@@ -1,0 +1,35 @@
+{
+  "bundleSha256": "7532de93f2b3e9faca3003172faa41bf1b4394de1392742b303565a67c512eec",
+  "checks": [
+    {
+      "name": "final start opens original at step one and respects lower boundary",
+      "passed": true
+    },
+    {
+      "name": "final original action shows live upstream iframe and floating route navigation",
+      "passed": true
+    },
+    {
+      "name": "final step two selects constructed scene and matching geometry explanation",
+      "passed": true
+    },
+    {
+      "name": "final construction opens existing reference image",
+      "passed": true
+    },
+    {
+      "name": "final water step resumes simulation and activates a live water disturbance",
+      "passed": true
+    },
+    {
+      "name": "final guided A/B generates both real 4s images, changes only separation and synchronizes the duration control",
+      "passed": true,
+      "evidence": "参考 A · 4.00 秒 · 轨迹 ea332a5d\n当前 B · 4.00 秒 · 轨迹 60e196c7\n\n位置平均差 0.0299，最大差 0.0736 · 参数变化产生不同轨迹\n\n俯视轨迹与位置对照\n跟踪锦鲤 \n第 1 条\n第 2 条\n第 3 条\n第 4 条\n第 5 条\n第 6 条\n第 7 条\n1 场景单位\n\n蓝色 A · 红色 B；实线为所选鱼每0.25秒记录的轨迹，圆点为全部鱼的终点，灰线连接两组终点差。"
+    },
+    {
+      "name": "final feeding step starts the real hand and six-pellet interaction and resumes simulation",
+      "passed": true
+    }
+  ],
+  "scope": "Primary route after shared initialization/guards; before additional guard for the explanation link and clearer unloaded-scene status."
+}

@@ -1,0 +1,159 @@
+{
+  "clientDate": "2026-10-02",
+  "timeZone": "Asia/Shanghai",
+  "bundleSha256": "edcf149d7d2e2b7e929c95ade4b6915ffbae65a43705d0499514bfdd379fa926",
+  "numerical": {
+    "passed": 52,
+    "failed": 0,
+    "record": "notes/numerical-v8.tap"
+  },
+  "browser": {
+    "polish-v8-validation": {
+      "path": "notes/polish-v8-validation.json",
+      "passed": 32,
+      "bundleSha256": "edcf149d7d2e2b7e929c95ade4b6915ffbae65a43705d0499514bfdd379fa926"
+    },
+    "v8-browser-validation": {
+      "path": "notes/v8-browser-validation.json",
+      "passed": 29,
+      "bundleSha256": "edcf149d7d2e2b7e929c95ade4b6915ffbae65a43705d0499514bfdd379fa926"
+    },
+    "koi-v8-validation": {
+      "path": "notes/koi-v8-validation.json",
+      "passed": 31,
+      "bundleSha256": "edcf149d7d2e2b7e929c95ade4b6915ffbae65a43705d0499514bfdd379fa926"
+    },
+    "hand-v8-validation": {
+      "path": "notes/hand-v8-validation.json",
+      "passed": 25,
+      "bundleSha256": "edcf149d7d2e2b7e929c95ade4b6915ffbae65a43705d0499514bfdd379fa926"
+    },
+    "browser-v8-validation": {
+      "path": "notes/browser-v8-validation.json",
+      "passed": 24,
+      "bundleSha256": "edcf149d7d2e2b7e929c95ade4b6915ffbae65a43705d0499514bfdd379fa926"
+    }
+  },
+  "browserAssertionsPassed": 141,
+  "package": {
+    "path": "notes/algorithm-v8-package-validation.json",
+    "passed": true,
+    "publicFilesMatched": 22,
+    "upstreamSnapshotsUnchanged": 9,
+    "relativeHtmlReferences": 14
+  },
+  "collectionTests": {
+    "passed": 13,
+    "command": "python -m unittest discover -s tests"
+  },
+  "staticDemosBuilt": 15,
+  "gpuMirror": {
+    "enabled": true,
+    "samples": 64,
+    "steps": 8,
+    "maxError": 3.472705526893008e-06,
+    "peak": 0.004697802476584911
+  },
+  "floating": {
+    "before": 0.027444161562927415,
+    "after": 0.02304471333048899,
+    "error": 1.734723475976807e-18,
+    "localPeak": 0.031131738619047993,
+    "landed": 6
+  },
+  "advection": {
+    "count": 6,
+    "distances": [
+      0.04799999999999151,
+      0.04799999999999151,
+      0.04799999999999151,
+      0.04799999999999151,
+      0.04799999999999151,
+      0.04799999999999151
+    ],
+    "heightError": 6.418476861114186e-17,
+    "normalError": 4.440892098500626e-16
+  },
+  "zeroWind": {
+    "anchorUnchanged": true,
+    "orbitalDistance": 0.0005348092267411657
+  },
+  "optics": {
+    "canvas": 1139,
+    "reflection": 512,
+    "refraction": 1024,
+    "height": 682
+  },
+  "lilies": {
+    "count": 7,
+    "heightError": 1.734723475976807e-18,
+    "normalError": 2.220446049250313e-16,
+    "minNormal": 0.999193012714386,
+    "curvature": 0.012000000104308128,
+    "shadowsOff": true
+  },
+  "sampledHistory": {
+    "samplesA": 17,
+    "samplesB": 17,
+    "identical": true,
+    "first": 0,
+    "last": 3.9999999999999907,
+    "paths": 2,
+    "endpoints": 14
+  },
+  "aB": {
+    "sameParameters": {
+      "meanPosition": 0,
+      "maxPosition": 0,
+      "sameTrajectory": true,
+      "sameViewport": true
+    },
+    "changedParameters": {
+      "meanPosition": 0.1918091993243984,
+      "maxPosition": 0.6737085124120344,
+      "sameTrajectory": false,
+      "sameViewport": true
+    },
+    "boundSameParameters": {
+      "meanPosition": 0,
+      "maxPosition": 0,
+      "sameTrajectory": true,
+      "sameViewport": true
+    }
+  },
+  "boundSchool": {
+    "simulatedSeconds": 30,
+    "finite": true,
+    "minimumBodyClearance": 0.015055462310215983,
+    "emitted": 6,
+    "consumed": 6
+  },
+  "screenshots": [
+    "assets/shoal-v8.png",
+    "assets/koi-detail-v8.png",
+    "assets/feeding-v8.png",
+    "assets/detail-comparison-v8.png",
+    "assets/shoal-polish-v8.png",
+    "assets/pond-polish-v8.png",
+    "assets/experiment-trajectories-v8.png",
+    "assets/experiment-trajectories-mobile-v8.png",
+    "assets/binding-polish-v8.png",
+    "assets/binding-edit-mobile-v8.png"
+  ],
+  "initialCheckIssues": [
+    "Initial capture used an obsolete fish button selector; corrected to the actual fish-inspect control.",
+    "Final leaf details reduce bright vein lines and self-shadows; earlier tested bundle records are preserved separately."
+  ],
+  "limitations": [
+    "Procedural garden and demo GLB, not real-world scans",
+    "No hardware performance or photorealism claim",
+    "Horizontal polygon water; uniform depth and cylindrical obstacles",
+    "CPU float32 mirror and GPU half-float wave field have precision differences",
+    "Prescribed weak wind current, not a solved fluid velocity field",
+    "Lily leaves move as rigid surfaces; no stem or flexible-leaf dynamics",
+    "Screen filtering removes unresolved microdetail; no scan textures added",
+    "Sampled trajectories every 0.25 seconds, not continuous recorded paths"
+  ],
+  "published": false,
+  "archivalCorrection": "See notes/v8-image-comparison.json: original before crop remains preserved in detail-comparison-v8.png; full before captures were overwritten by a misnamed v9 initial capture."
+}

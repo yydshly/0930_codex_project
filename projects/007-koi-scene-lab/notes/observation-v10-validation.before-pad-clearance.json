@@ -1,0 +1,102 @@
+{
+  "clientDate": "2026-10-02",
+  "bundleSha256": "aeccae14d75507d30bcd317e3fe20fc76a69a52a025785355efd40cdff7a8209",
+  "checks": [
+    "观察选择器列出当前七条鱼及花纹",
+    "整鱼观察选择丹顶而非固定第一条鱼",
+    "整鱼取景容纳鱼体及展开鱼鳍的变形顶点",
+    "切换鱼头特写保留所选锦鲤",
+    "竖屏在镜头过渡期间重新取景且整鱼不出框",
+    "手机观察隐藏参考缩略图，提示位于主体上方",
+    "实际浅游发出一对正负波源并跟随变形尾部",
+    "扰动逆解静止坐标后注入共同纹理网格",
+    "实际GPU波场出现波峰波谷且与CPU镜像一致",
+    "关闭开关停止新增鱼游扰动",
+    "暂停不增加扰动也不推进波场",
+    "深水鱼不发出表面摆尾波源",
+    "零条鱼禁用观察选择器并移除所有选项",
+    "远景静止可复用，移动时同一帧重绘并同步矩阵",
+    "实际镜头过渡连续四帧刷新水下画面",
+    "页面说明波源近似边界并显示真实扰动计数",
+    "观察和扰动没有脚本及着色器错误"
+  ],
+  "errors": [],
+  "fatal": null,
+  "evidence": {
+    "desktop": {
+      "maxX": 0.43510996383758144,
+      "maxY": 0.40385670778632365,
+      "outside": 0,
+      "count": 7811,
+      "aspect": 1.5006587615283267,
+      "shot": "whole",
+      "id": 4
+    },
+    "mobile": {
+      "maxX": 0.6482060258398028,
+      "maxY": 0.3929224528891164,
+      "outside": 0,
+      "count": 7811,
+      "aspect": 1.028735632183908,
+      "shot": "whole",
+      "id": 4
+    },
+    "wake": {
+      "pairs": 1,
+      "queue": [
+        [
+          0.5189478825377889,
+          0.5057529096284511,
+          0.012500000000000002,
+          -0.000693631829429439
+        ],
+        [
+          0.5189240356106127,
+          0.5198348832115823,
+          0.012500000000000002,
+          0.000693631829429439
+        ]
+      ],
+      "depth": 0.0384812989746454,
+      "strength": 0.004005584407009121,
+      "radius": 0.15000000000000002,
+      "sourceError": 5.551284527130373e-17,
+      "anchorError": 5.797195660796455e-16
+    },
+    "gpuWake": {
+      "enabled": true,
+      "samples": 256,
+      "positive": 0.00047440940397791564,
+      "negative": -0.0005515060038305819,
+      "error": 1.956459880707957e-7
+    },
+    "pass": {
+      "stationary": "reuse",
+      "moving": "camera",
+      "fresh": true
+    },
+    "transition": [
+      {
+        "frame": 7,
+        "reason": "invalidate",
+        "fresh": true
+      },
+      {
+        "frame": 8,
+        "reason": "projection",
+        "fresh": true
+      },
+      {
+        "frame": 9,
+        "reason": "projection",
+        "fresh": true
+      },
+      {
+        "frame": 10,
+        "reason": "projection",
+        "fresh": true
+      }
+    ]
+  },
+  "method": "Real Chromium/SwiftShader WebGL and DOM. GPU height readback, shared-wave mirror comparison, actual camera animation frames and projected deformed geometry. The framing probe applies spine shear; small fin rotations and membrane motion rely on the enclosing sphere and screenshot inspection. No real-fluid or hardware-performance claim."
+}

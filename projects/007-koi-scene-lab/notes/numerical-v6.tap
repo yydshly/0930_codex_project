@@ -1,0 +1,252 @@
+TAP version 13
+# Subtest: scene import validates ranges, finite numbers and known weather
+ok 1 - scene import validates ranges, finite numbers and known weather
+  ---
+  duration_ms: 1.3687
+  type: 'test'
+  ...
+# Subtest: experiment weights validate independently and do not enter persisted scene settings
+ok 2 - experiment weights validate independently and do not enter persisted scene settings
+  ---
+  duration_ms: 3.0802
+  type: 'test'
+  ...
+# Subtest: pond boundary remains outside safe swimming domain at different scales
+ok 3 - pond boundary remains outside safe swimming domain at different scales
+  ---
+  duration_ms: 2.5713
+  type: 'test'
+  ...
+# Subtest: partial experiment edits retain v5 defaults and independently control overlays
+ok 4 - partial experiment edits retain v5 defaults and independently control overlays
+  ---
+  duration_ms: 1.4514
+  type: 'test'
+  ...
+# Subtest: invalid edits reject without modifying the previous experiment
+ok 5 - invalid edits reject without modifying the previous experiment
+  ---
+  duration_ms: 0.4106
+  type: 'test'
+  ...
+# Subtest: replay duration is bounded and trajectory signature distinguishes observed movement
+ok 6 - replay duration is bounded and trajectory signature distinguishes observed movement
+  ---
+  duration_ms: 2.55
+  type: 'test'
+  ...
+# Subtest: A and B use a common captured scenario while retaining changed B parameters
+ok 7 - A and B use a common captured scenario while retaining changed B parameters
+  ---
+  duration_ms: 4.4779
+  type: 'test'
+  ...
+# Subtest: same parameters reproduce the same trajectory signature and endpoint
+ok 8 - same parameters reproduce the same trajectory signature and endpoint
+  ---
+  duration_ms: 0.681
+  type: 'test'
+  ...
+# Subtest: overlays draw applied directions and all three physical approximation spheres independently
+ok 9 - overlays draw applied directions and all three physical approximation spheres independently
+  ---
+  duration_ms: 0.6621
+  type: 'test'
+  ...
+# Subtest: changed habitat invalidates comparisons and unbound model rejects replay capture
+ok 10 - changed habitat invalidates comparisons and unbound model rejects replay capture
+  ---
+  duration_ms: 0.8075
+  type: 'test'
+  ...
+# Subtest: snapshot detaches positions and headings from mutable scene nodes
+ok 11 - snapshot detaches positions and headings from mutable scene nodes
+  ---
+  duration_ms: 0.8178
+  type: 'test'
+  ...
+# Subtest: Boids separation steers close fish away, alignment/cohesion respond to neighbours
+ok 12 - Boids separation steers close fish away, alignment/cohesion respond to neighbours
+  ---
+  duration_ms: 0.3034
+  type: 'test'
+  ...
+# Subtest: Boids steering is invariant to neighbour update order
+ok 13 - Boids steering is invariant to neighbour update order
+  ---
+  duration_ms: 0.1978
+  type: 'test'
+  ...
+# Subtest: coincident fish get opposite finite separation; distant/deep fish do not repel
+ok 14 - coincident fish get opposite finite separation; distant/deep fish do not repel
+  ---
+  duration_ms: 0.1367
+  type: 'test'
+  ...
+# Subtest: signed shoreline distances and gradients point outward at every pond scale
+ok 15 - signed shoreline distances and gradients point outward at every pond scale
+  ---
+  duration_ms: 1.7294
+  type: 'test'
+  ...
+# Subtest: predictive shoreline steering reacts before the body crosses the bank
+ok 16 - predictive shoreline steering reacts before the body crosses the bank
+  ---
+  duration_ms: 0.2841
+  type: 'test'
+  ...
+# Subtest: turning follows the shortest wrapped angle and limits angular acceleration
+ok 17 - turning follows the shortest wrapped angle and limits angular acceleration
+  ---
+  duration_ms: 0.3141
+  type: 'test'
+  ...
+# Subtest: lowering turn limits brakes momentum gradually and dt=0 preserves orientation
+ok 18 - lowering turn limits brakes momentum gradually and dt=0 preserves orientation
+  ---
+  duration_ms: 0.6228
+  type: 'test'
+  ...
+# Subtest: three spine spheres detect head/tail overlap beyond root sphere radius
+ok 19 - three spine spheres detect head/tail overlap beyond root sphere radius
+  ---
+  duration_ms: 0.3908
+  type: 'test'
+  ...
+# Subtest: body collision is symmetric, bounded and reduces overlap
+ok 20 - body collision is symmetric, bounded and reduces overlap
+  ---
+  duration_ms: 0.7334
+  type: 'test'
+  ...
+# Subtest: coincident crowded fish resolve finitely without drifting the school centroid
+ok 21 - coincident crowded fish resolve finitely without drifting the school centroid
+  ---
+  duration_ms: 1.2209
+  type: 'test'
+  ...
+# Subtest: vertically separated bodies do not receive horizontal collision impulses
+ok 22 - vertically separated bodies do not receive horizontal collision impulses
+  ---
+  duration_ms: 0.2096
+  type: 'test'
+  ...
+# Subtest: binding validates world polygon/water/obstacles and normalizes feed height without aliasing input
+ok 23 - binding validates world polygon/water/obstacles and normalizes feed height without aliasing input
+  ---
+  duration_ms: 2.0903
+  type: 'test'
+  ...
+# Subtest: self crossing, repeated/touching edges, degenerate and oversized polygons are rejected
+ok 24 - self crossing, repeated/touching edges, degenerate and oversized polygons are rejected
+  ---
+  duration_ms: 0.5034
+  type: 'test'
+  ...
+# Subtest: invalid water/depth/feed/obstacle values fail before binding application
+ok 25 - invalid water/depth/feed/obstacle values fail before binding application
+  ---
+  duration_ms: 0.7536
+  type: 'test'
+  ...
+# Subtest: concave polygons classify their cutout correctly and accept the boundary
+ok 26 - concave polygons classify their cutout correctly and accept the boundary
+  ---
+  duration_ms: 0.3688
+  type: 'test'
+  ...
+# Subtest: polygon distance gradients stay outward for clockwise/counterclockwise and translated shorelines
+ok 27 - polygon distance gradients stay outward for clockwise/counterclockwise and translated shorelines
+  ---
+  duration_ms: 0.224
+  type: 'test'
+  ...
+# Subtest: imported shoreline uses its world polygon and predicts avoidance before crossing
+ok 28 - imported shoreline uses its world polygon and predicts avoidance before crossing
+  ---
+  duration_ms: 0.3318
+  type: 'test'
+  ...
+# Subtest: deterministic spawns fit whole three-ball footprints and avoid imported cylinders
+ok 29 - deterministic spawns fit whole three-ball footprints and avoid imported cylinders
+  ---
+  duration_ms: 24.4647
+  type: 'test'
+  ...
+# Subtest: projection remains inside concave shore and outside cylinders including a bank obstacle
+ok 30 - projection remains inside concave shore and outside cylinders including a bank obstacle
+  ---
+  duration_ms: 0.9327
+  type: 'test'
+  ...
+# Subtest: regions that cannot fit a fish footprint fail rather than silently spawning outside
+ok 31 - regions that cannot fit a fish footprint fail rather than silently spawning outside
+  ---
+  duration_ms: 0.9431
+  type: 'test'
+  ...
+# Subtest: debug body spheres match actual collision shape and predictive cylinders produce finite steering
+ok 32 - debug body spheres match actual collision shape and predictive cylinders produce finite steering
+  ---
+  duration_ms: 0.518
+  type: 'test'
+  ...
+# Spine derivative: 7236 cases, maximum error 2.8414684534461276e-7
+# Subtest: analytic traveling-wave and turn-bend slope matches central differences
+ok 33 - analytic traveling-wave and turn-bend slope matches central differences
+  ---
+  duration_ms: 8.1769
+  type: 'test'
+  ...
+# Subtest: mouth and anterior body receive no traveling-wave or turn displacement
+ok 34 - mouth and anterior body receive no traveling-wave or turn displacement
+  ---
+  duration_ms: 0.1548
+  type: 'test'
+  ...
+# Subtest: inverse-transpose normal stays perpendicular to deformed tangents
+ok 35 - inverse-transpose normal stays perpendicular to deformed tangents
+  ---
+  duration_ms: 0.1218
+  type: 'test'
+  ...
+# Subtest: a traveling-wave crest moves from positive-x head toward negative-x tail
+ok 36 - a traveling-wave crest moves from positive-x head toward negative-x tail
+  ---
+  duration_ms: 0.3029
+  type: 'test'
+  ...
+# Subtest: normal-correction experiment preserves shape while toggling the inverse transpose
+ok 37 - normal-correction experiment preserves shape while toggling the inverse transpose
+  ---
+  duration_ms: 0.6872
+  type: 'test'
+  ...
+# {"waveDerivativeCases":990,"maxError":3.2460914511922567e-10}
+# Subtest: Gerstner analytic tangents agree with displaced surface finite differences
+ok 38 - Gerstner analytic tangents agree with displaced surface finite differences
+  ---
+  duration_ms: 17.1519
+  type: 'test'
+  ...
+# Subtest: Floating surface height inverts the horizontal orbit of all four waves
+ok 39 - Floating surface height inverts the horizontal orbit of all four waves
+  ---
+  duration_ms: 0.7941
+  type: 'test'
+  ...
+# Subtest: Wave parameters use gravity dispersion and remain below surface folding limit
+ok 40 - Wave parameters use gravity dispersion and remain below surface folding limit
+  ---
+  duration_ms: 0.1877
+  type: 'test'
+  ...
+1..40
+# tests 40
+# suites 0
+# pass 40
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 266.4138

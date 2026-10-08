@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-03T07:11:34.797298+00:00",
+  "version": 20,
+  "status": "scoped_acceptance_completed",
+  "bundleSha256": "fbd61419d326470cdd2a69f4f44bf06fad42c4faa8020e478b1f3f9fd0046b36",
+  "preview": "http://127.0.0.1:8947/?v=fbd61419#scene",
+  "automatic": {
+    "passed": 278,
+    "failed": 0,
+    "exitCode": 0,
+    "newComparedWithV19": 5,
+    "record": "notes/numerical-v20-result.json",
+    "tap": "notes/numerical-v20.tap",
+    "allSourceHashesMatched": true
+  },
+  "native": {
+    "passed": 6,
+    "failed": 0,
+    "record": "notes/browser-v20-validation.json",
+    "method": "Continuing user-authorized isolated localhost Chromium QA. Actual keyboard/select/button actions and read-only camera/mesh/pose observations. Raw JPEGs; desktop and 390px mobile. Only cat refinement is tested; G, feeding, GLB and controlled context recovery are not rerun. No hardware performance claim.",
+    "errors": [],
+    "consoleErrors": [],
+    "externalRequests": []
+  },
+  "visual": {
+    "rawNativeCaptures": 3,
+    "reviewed": 3,
+    "manifest": "notes/v20-capture-manifest.json"
+  },
+  "static": {
+    "record": "notes/algorithm-v20-package-validation.json",
+    "upstreamSnapshots": 9,
+    "publicFiles": 22,
+    "relativeHtmlReferences": 14,
+    "passed": true
+  },
+  "http": {
+    "record": "notes/local-preview-v20.json",
+    "resources": 3,
+    "passed": true
+  },
+  "scope": "Refined cat silhouette, lower-contrast irregular procedural tabby, shoulder-pivot sitting, distance-driven sagittal IK gait and stable foreground camera containing real 3D garden context. No rerun of native G/feed/GLB/context-recovery flows. Existing automated regression remains covered; earlier native records retain their own bundle.",
+  "limitations": [
+    "Fixed dry route; no arbitrary-terrain pathfinding or full-body dynamics.",
+    "Straight steady stance cancels forward displacement; curved contact is approximate, not exact world-space paw planting.",
+    "No fur simulation or photorealism acceptance, hardware-performance or GPU-memory measurements."
+  ],
+  "git": {
+    "committed": false,
+    "pushed": false,
+    "archived": false
+  }
+}

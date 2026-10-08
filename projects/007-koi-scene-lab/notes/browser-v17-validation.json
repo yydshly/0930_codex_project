@@ -1,0 +1,218 @@
+{
+  "date": "2026-10-02T23:39:18.905Z",
+  "clientDate": "2026-10-03",
+  "version": 17,
+  "bundleSha256": "13f5604427c0d4d6942055c8339707df58d2106551854d03eeac36ab3cfea335",
+  "scriptSha256": "669291be925a58605bab00f02bb06e1deec0c521e6bc921713b438d73a72a009",
+  "authorization": {
+    "reply": "继续优化",
+    "context": "Reply to the preceding explicit request for isolated localhost Playwright acceptance."
+  },
+  "method": "User-authorized isolated headless Chromium, real UI actions and read-only DOM/canvas-event observations. Uses software-capable WebGL; not a hardware performance or full accessibility test.",
+  "checks": [
+    {
+      "name": "new scene initializes and feeding feedback is initially hidden",
+      "passed": true
+    },
+    {
+      "name": "fish-count control can select zero",
+      "passed": true
+    },
+    {
+      "name": "zero-fish main feed keeps zero and explains observation-only behavior",
+      "passed": true
+    },
+    {
+      "name": "actual six-pellet release and landing have a separate zero swallow count",
+      "passed": true,
+      "evidence": "本轮释放 6/6 粒 · 实际落水 6 粒 · 吞食 0 粒 · 尚在场景 6 粒 · 过期 0 粒；场景累计吞食 0 粒"
+    },
+    {
+      "name": "pause has a truthful pressed state and status",
+      "passed": true
+    },
+    {
+      "name": "keyboard can move from pause to a feedback action",
+      "passed": true
+    },
+    {
+      "name": "hand withdrawal preserves the frozen batch",
+      "passed": true
+    },
+    {
+      "name": "paused static water passes stay cached after the returning camera settles",
+      "passed": true,
+      "evidence": {
+        "settled": true,
+        "value": 48,
+        "samples": [
+          47,
+          48,
+          48,
+          48,
+          48
+        ],
+        "elapsedMs": 18758.5
+      }
+    },
+    {
+      "name": "orbit camera movement refreshes paused water passes",
+      "passed": true,
+      "evidence": "实时累计推进率 7.6% · 固定步长 1/60 s · 本帧 0 步 · 追赶丢弃 102.72 s · 可见实例化对象 8 · 本帧绘制调用 384 · 三角形 2,274,404 · 水面离屏更新 58 次"
+    },
+    {
+      "name": "orbit damping eventually returns to static water reuse",
+      "passed": true,
+      "evidence": {
+        "settled": true,
+        "value": 58,
+        "samples": [
+          58,
+          58,
+          58,
+          58
+        ],
+        "elapsedMs": 11299.300000011921
+      }
+    },
+    {
+      "name": "daylight adjustment invalidates the paused water cache",
+      "passed": true
+    },
+    {
+      "name": "rejected GLB retains the previous feed record",
+      "passed": true
+    },
+    {
+      "name": "accepted unbound model clears feeding feedback and disables feeding",
+      "passed": true
+    },
+    {
+      "name": "returning to courtyard does not revive the previous round",
+      "passed": true
+    },
+    {
+      "name": "new courtyard feed restores a six-pellet round without inventing swallowed food",
+      "passed": true,
+      "evidence": "本轮释放 6/6 粒 · 实际落水 2 粒 · 吞食 0 粒 · 尚在场景 6 粒 · 过期 0 粒；场景累计吞食 0 粒"
+    },
+    {
+      "name": "manual withdrawal identifies the stopped hand without inventing swallowed pellets",
+      "passed": true,
+      "evidence": {
+        "releasedBeforeStop": 6,
+        "status": "模拟已暂停 · 当前停步；手部动作已结束 · 等待 6 粒在场景中的饲料反馈 · 当前无鱼",
+        "counts": "本轮释放 6/6 粒 · 实际落水 2 粒 · 吞食 0 粒 · 尚在场景 6 粒 · 过期 0 粒；场景累计吞食 0 粒"
+      }
+    },
+    {
+      "name": "mobile page has no horizontal overflow and feedback action targets are at least 44px",
+      "passed": true,
+      "evidence": {
+        "pageWidth": 390,
+        "clientWidth": 390,
+        "buttons": [
+          {
+            "id": "feeding-pause",
+            "height": 44,
+            "width": 160.5
+          },
+          {
+            "id": "feeding-again",
+            "height": 44,
+            "width": 160.5
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile repeat-feed keeps zero fish and can pause the new hand",
+      "passed": true
+    },
+    {
+      "name": "mobile paused active feed retains all three accessible action targets",
+      "passed": true,
+      "evidence": [
+        {
+          "id": "feeding-pause",
+          "height": 44,
+          "width": 104.65625
+        },
+        {
+          "id": "feeding-stop",
+          "height": 44,
+          "width": 104.671875
+        },
+        {
+          "id": "feeding-again",
+          "height": 44,
+          "width": 104.671875
+        }
+      ]
+    },
+    {
+      "name": "mobile repeated feeding retains an active WebGL scene",
+      "passed": true,
+      "evidence": {
+        "loaderHidden": true,
+        "events": []
+      }
+    },
+    {
+      "name": "reset clears the feeding panel and restores seven fish",
+      "passed": true
+    },
+    {
+      "name": "reset reference camera settles before final courtyard capture",
+      "passed": true,
+      "evidence": {
+        "settled": true,
+        "value": 136,
+        "samples": [
+          136,
+          136,
+          136,
+          136
+        ],
+        "elapsedMs": 11573.40000000596
+      }
+    },
+    {
+      "name": "final courtyard capture retains an active WebGL scene",
+      "passed": true,
+      "evidence": {
+        "loaderHidden": true,
+        "events": []
+      }
+    },
+    {
+      "name": "no page or shader-console errors or external requests",
+      "passed": true,
+      "evidence": {
+        "errors": [],
+        "consoleErrors": [],
+        "externalRequests": []
+      }
+    }
+  ],
+  "passed": 24,
+  "failed": 0,
+  "captures": [
+    "assets/feeding-desktop-v17.jpg",
+    "assets/water-cache-v17.jpg",
+    "assets/feeding-mobile-v17.jpg",
+    "assets/feeding-mobile-active-v17.jpg",
+    "assets/courtyard-desktop-v17.jpg"
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "warnings": [
+    "Allow attribute will take precedence over 'allowfullscreen'.",
+    "[.WebGL-0x84001bbe00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x84001bbe00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x84001bbe00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x84001bbe00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ],
+  "externalRequests": [],
+  "contextEvents": []
+}

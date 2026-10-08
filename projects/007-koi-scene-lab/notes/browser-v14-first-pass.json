@@ -1,0 +1,43 @@
+{
+  "bundleSha256": "3bb007f3bb4b4337526ae99a1fef94133b7fbe1091a0e3fe67fcac0af7734549",
+  "checks": [
+    {
+      "name": "start route opens original step with previous disabled",
+      "passed": true
+    },
+    {
+      "name": "original ready and route action reveals the real iframe without a completion claim",
+      "passed": true
+    },
+    {
+      "name": "next opens constructed courtyard and the geometry topic",
+      "passed": true
+    },
+    {
+      "name": "construction action opens the existing generated reference dialog",
+      "passed": true
+    },
+    {
+      "name": "water action resumes simulation and switches to pond without changing route step",
+      "passed": true
+    },
+    {
+      "name": "one-click route produces two actual four-second A/B results and pauses",
+      "passed": true,
+      "evidence": "参考 A · 4.00 秒 · 轨迹 ea332a5d\n当前 B · 4.00 秒 · 轨迹 60e196c7\n\n位置平均差 0.0299，最大差 0.0736 · 参数变化产生不同轨迹\n\n俯视轨迹与位置对照\n跟踪锦鲤 \n第 1 条\n第 2 条\n第 3 条\n第 4 条\n第 5 条\n第 6 条\n第 7 条\n1 场景单位\n\n蓝色 A · 红色 B；实线为所选鱼每0.25秒记录的轨迹，圆点为全部鱼的终点，灰线连接两组终点差。"
+    },
+    {
+      "name": "feeding step starts real interaction, resumes simulation and shows live counters",
+      "passed": true
+    },
+    {
+      "name": "exit keeps route on feeding and offers resume",
+      "passed": true
+    },
+    {
+      "name": "resume returns to the same feeding step",
+      "passed": true
+    }
+  ],
+  "scope": "Initial route functional pass before asynchronous guards, shared initialization and duration-display corrections."
+}

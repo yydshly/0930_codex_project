@@ -1,0 +1,44 @@
+{
+  "clientDate": "2026-10-08",
+  "timezone": "Asia/Shanghai",
+  "recordedAt": "2026-10-08T04:33:50.030663+00:00",
+  "scope": "Publish project 007 and minimal catalog/Pages integration from origin/main; no other unpublished projects. Current runtime remains v20 and understanding remains v21.",
+  "runtimeBundleSha256": "fbd61419d326470cdd2a69f4f44bf06fad42c4faa8020e478b1f3f9fd0046b36",
+  "guide": {
+    "path": "assets/library-value-map-v21.png",
+    "sha256": "595234a1f46a6052fea0cbcb2e28dd6be2d0630cc47cbd62d8a76e3d9b349907",
+    "bytes": 2944952,
+    "unchangedFromUserSelectedImage": true
+  },
+  "automatic": {
+    "passed": 278,
+    "failed": 0,
+    "tap": "notes/numerical-publication-20261008.tap"
+  },
+  "catalogAndPackagingTests": {
+    "tests": 32,
+    "passed": 27,
+    "skipped": 5,
+    "failed": 0,
+    "reasonForSkips": "Windows environment could not create test symlinks; CI will exercise Linux."
+  },
+  "nativeContent": {
+    "passed": 12,
+    "failed": 0,
+    "record": "notes/understanding-native-publication-20261008.json",
+    "scope": "Native localhost content navigation, keyboard details, exact PNG download and desktop/mobile reading layout. Original/scene gameplay, GPU rendering and manufacturing are not retested."
+  },
+  "static": {
+    "record": "notes/package-publication-20261008.json",
+    "upstreamSnapshots": 9,
+    "runtimeOnlyTwoDependencySubstitutions": true,
+    "publicFiles": 27,
+    "relativeHtmlReferences": 22,
+    "passed": true
+  },
+  "deployment": "pending_public_verification",
+  "limitations": [
+    "Photo reconstruction, printable manufacturing export, physical delivery and consistency acceptance remain proposals.",
+    "Original gameplay and courtyard native checks are tracked separately; this record covers local reading/publication preflight."
+  ]
+}

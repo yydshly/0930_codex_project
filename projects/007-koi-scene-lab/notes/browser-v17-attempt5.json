@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-02T23:24:32.351756+00:00",
+  "bundleSha256": "13f5604427c0d4d6942055c8339707df58d2106551854d03eeac36ab3cfea335",
+  "status": "interrupted_without_final_acceptance",
+  "observedPassedChecks": [
+    "new scene initializes and feeding feedback is initially hidden",
+    "fish-count control can select zero",
+    "zero-fish main feed keeps zero and explains observation-only behavior",
+    "actual six-pellet release and landing have a separate zero swallow count",
+    "pause has a truthful pressed state and status",
+    "keyboard can move from pause to a feedback action",
+    "hand withdrawal preserves the frozen batch",
+    "paused static water passes stay cached after the returning camera settles"
+  ],
+  "passedObserved": 8,
+  "captures": [
+    "assets/feeding-desktop-v17-attempt5.jpg"
+  ],
+  "method": "Eight PASS messages observed in the tool transcript. After a new user message the process session was unavailable and no final JSON was written; process lookup confirmed this project verification process was no longer present. This is partial evidence, not full acceptance; page/console errors or context events are not inferred."
+}

@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-03T03:07:16.651797+00:00",
+  "version": 19,
+  "status": "final_scoped_acceptance_completed",
+  "bundleSha256": "50be1ec336502ad168b4becbb84ac043a88052bd61bc0093f2be78b81447e8a3",
+  "preview": "http://127.0.0.1:8947/?v=50be1ec3#scene",
+  "features": [
+    "courtyard cat observe/stand/walk/sit, sagittal leg IK, nine-bone continuous tail, world scale invariance",
+    "near-hand alert, single local scatter event, bounded turning/speed/dive, short hand withdrawal, 4.5 simulation-second recovery",
+    "phase/current-response feedback and per-effect technology explanations"
+  ],
+  "automatic": {
+    "passed": 273,
+    "failed": 0,
+    "exitCode": 0,
+    "record": "notes/numerical-v19-result.json",
+    "tap": "notes/numerical-v19.tap",
+    "newComparedWithV18": 23,
+    "newCoverage": {
+      "fishStartle": 10,
+      "cat": 8,
+      "wildlifeUI": 4,
+      "zeroFishPrincipleEntry": 1
+    },
+    "sourceHashesMatchedCurrent": true
+  },
+  "nativeFinal": {
+    "passed": 11,
+    "failed": 0,
+    "record": "notes/browser-v19-final-validation.json",
+    "scope": "Final-bundle focused acceptance after two source fixes. The earlier cat full-patrol run is separate and belongs to its recorded base bundle. Feed and imported-model interactions are not rerun here.",
+    "method": "Isolated Chromium UI keyboard actions, select/range controls and desktop/mobile viewport resizing; preinstalled DOM MutationObserver records transient phases without changing application state. Read-only runtime pose/time/threat snapshots. Raw native JPEGs. Software-capable WebGL; no hardware-performance or GPU-memory claims.",
+    "errors": [],
+    "consoleErrors": [],
+    "externalRequests": [],
+    "contextEvents": [],
+    "phaseTrace": [
+      {
+        "phase": "idle",
+        "simulationTime": 4.999999999999988,
+        "triggerCount": 0,
+        "currentResponders": 0
+      },
+      {
+        "phase": "alert",
+        "simulationTime": 5.199999999999987,
+        "triggerCount": 0,
+        "currentResponders": 0
+      },
+      {
+        "phase": "startled",
+        "simulationTime": 5.999999999999984,
+        "triggerCount": 1,
+        "currentResponders": 5
+      },
+      {
+        "phase": "recovering",
+        "simulationTime": 6.799999999999981,
+        "triggerCount": 1,
+        "currentResponders": 5
+      },
+      {
+        "phase": "idle",
+        "simulationTime": 10.400000000000096,
+        "triggerCount": 1,
+        "currentResponders": 0
+      }
+    ]
+  },
+  "visual": {
+    "rawNativeCaptures": 3,
+    "reviewed": 3,
+    "manifest": "notes/v19-capture-manifest.json",
+    "scope": "Three final-bundle raw native JPEGs. Earlier ca8b captures and failure snapshot retain their historical base record and are not final-bundle evidence. Visual review checks visible framing and feedback, not photorealism."
+  },
+  "static": {
+    "record": "notes/algorithm-v19-package-validation.json",
+    "upstreamSnapshots": 9,
+    "publicFiles": 22,
+    "relativeHtmlReferences": 14,
+    "passed": true
+  },
+  "http": {
+    "record": "notes/local-preview-v19.json",
+    "resources": 3,
+    "passed": true
+  },
+  "history": [
+    {
+      "record": "notes/numerical-v19-attempt1-result.json",
+      "status": "266 pass, 5 old extracted-main test fixture failures due to missing new wildlifePanel dependency; fixtures corrected."
+    },
+    {
+      "record": "notes/browser-v19-validation.json",
+      "bundleSha256": "ca8b0d4d75ded56cc929be1f9215dcb37c2433d08adbb93f43b14b87357f9802",
+      "passed": 8,
+      "failed": 1,
+      "status": "Historical base run observed full cat patrol and framing. Sequential QA reads missed transient alert and timed out; final DOM observer captures complete phase sequence. Counts are not added to final native acceptance."
+    }
+  ],
+  "limitations": [
+    "Procedural animals and kinematic fixed-route cat; no exact world-foot planting, arbitrary-terrain navigation, full-body dynamics or fur simulation.",
+    "Near-water proximity rule and prescribed reaction; not a prediction for every real fish.",
+    "No new hardware performance or GPU-memory measurements; photorealism not accepted.",
+    "Final native smoke does not rerun feeding/imported-model flows or v17 controlled context restoration. Existing automated regression and historical native evidence remain separately scoped."
+  ],
+  "git": {
+    "committed": false,
+    "pushed": false,
+    "archived": false
+  }
+}

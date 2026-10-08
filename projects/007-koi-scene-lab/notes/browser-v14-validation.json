@@ -1,0 +1,206 @@
+{
+  "date": "2026-10-02T16:02:45.432Z",
+  "version": 14,
+  "url": "http://127.0.0.1:8947/?v=65d5e6cd#scene",
+  "bundleSha256": "65d5e6cd65372012f78faf7f7f13fd9189f8872b3e16a09b539d5c4f53e93a35",
+  "checks": [
+    {
+      "name": "final route starts at original with lower-boundary control disabled",
+      "passed": true
+    },
+    {
+      "name": "final original action reveals the live original and compact floating navigation",
+      "passed": true
+    },
+    {
+      "name": "final next creates/opens the courtyard and selects geometry explanation",
+      "passed": true
+    },
+    {
+      "name": "final construction uses the existing generated-reference dialog",
+      "passed": true
+    },
+    {
+      "name": "final water action resumes natural water at pond view and preserves step three",
+      "passed": true
+    },
+    {
+      "name": "final guided A/B generates two real 4s results, synchronizes duration and pauses with separation disabled",
+      "passed": true,
+      "evidence": "参考 A · 4.00 秒 · 轨迹 ea332a5d\n当前 B · 4.00 秒 · 轨迹 60e196c7\n\n位置平均差 0.0299，最大差 0.0736 · 参数变化产生不同轨迹\n\n俯视轨迹与位置对照\n跟踪锦鲤 \n第 1 条\n第 2 条\n第 3 条\n第 4 条\n第 5 条\n第 6 条\n第 7 条\n1 场景单位\n\n蓝色 A · 红色 B；实线为所选鱼每0.25秒记录的轨迹，圆点为全部鱼的终点，灰线连接两组终点差。"
+    },
+    {
+      "name": "final feeding starts actual hand interaction and shows six-pellet live counters",
+      "passed": true
+    },
+    {
+      "name": "final exit retains paused feeding state and route location",
+      "passed": true
+    },
+    {
+      "name": "final resume returns to feeding without changing pause or metrics",
+      "passed": true
+    },
+    {
+      "name": "final last-step end exits without claiming effects verified",
+      "passed": true
+    },
+    {
+      "name": "final route blocks feeding on an imported model and leaves its binding unchanged",
+      "passed": true
+    },
+    {
+      "name": "final water navigation preserves imported model and blocks program-courtyard action",
+      "passed": true
+    },
+    {
+      "name": "final construction reference explicitly retains imported model after closing dialog",
+      "passed": true
+    },
+    {
+      "name": "final explanation link retains construction step and opens matching topic",
+      "passed": true
+    },
+    {
+      "name": "final mobile water action shows compact navigation within viewport with 44px buttons",
+      "passed": true,
+      "evidence": {
+        "buttons": [
+          44,
+          47.33333587646485,
+          44
+        ],
+        "height": 56.66666793823242,
+        "width": 187.33334350585935,
+        "x": 93.66667175292967,
+        "y": 10
+      },
+      "cssStage": "Before final mobile floating-rail max-content width repair; current mobile layout is separately rechecked later in this record."
+    },
+    {
+      "name": "refresh intentionally resets page-local route position",
+      "passed": true
+    },
+    {
+      "name": "final mobile visible route controls are at least 44px with no page overflow; corrected ancestor visibility filter",
+      "passed": true,
+      "evidence": {
+        "buttons": [
+          {
+            "height": 44,
+            "id": "tour-previous",
+            "text": "上一步",
+            "width": 100.4375
+          },
+          {
+            "height": 44,
+            "id": "tour-next",
+            "text": "下一步",
+            "width": 100.44792175292967
+          },
+          {
+            "height": 44,
+            "id": "tour-exit",
+            "text": "退出导览",
+            "width": 100.44792175292967
+          },
+          {
+            "height": 44,
+            "id": "",
+            "text": "1 · 原作体验",
+            "width": 83.67708587646484
+          },
+          {
+            "height": 44,
+            "id": "",
+            "text": "2 · 庭院构造",
+            "width": 83.67708587646484
+          },
+          {
+            "height": 44,
+            "id": "",
+            "text": "3 · 水面反馈",
+            "width": 83.67708587646484
+          },
+          {
+            "height": 44,
+            "id": "",
+            "text": "4 · 鱼群对照",
+            "width": 83.67708587646484
+          },
+          {
+            "height": 44,
+            "id": "",
+            "text": "5 · 投喂互动",
+            "width": 83.67708587646484
+          },
+          {
+            "height": 44,
+            "id": "tour-action",
+            "text": "查看生成图",
+            "width": 153.6666717529297
+          },
+          {
+            "height": 44,
+            "id": "tour-more",
+            "text": "查看原理与控制",
+            "width": 153.6666717529297
+          }
+        ],
+        "clientWidth": 375,
+        "guide": {
+          "width": 344.66668701171875,
+          "x": 15
+        },
+        "pageWidth": 375
+      }
+    },
+    {
+      "name": "final mobile floating route rail fits viewport and keeps all controls at least 44px after max-content width fix",
+      "passed": true,
+      "evidence": {
+        "buttons": [
+          {
+            "height": 44,
+            "id": "tour-floating-previous",
+            "text": "上一步",
+            "width": 47.33333587646485
+          },
+          {
+            "height": 44,
+            "id": "tour-return",
+            "text": "3/5 · 水面反馈 · 看说明",
+            "width": 117.3125
+          },
+          {
+            "height": 44,
+            "id": "tour-floating-next",
+            "text": "下一步",
+            "width": 47.33333587646485
+          }
+        ],
+        "clientWidth": 375,
+        "height": 53.33333587646485,
+        "pageWidth": 375,
+        "width": 229.3125,
+        "x": 72.67708587646484,
+        "y": 10
+      }
+    },
+    {
+      "name": "from-start UI resets route index and visited navigation to original without claiming completion",
+      "passed": true
+    },
+    {
+      "name": "QA restores reference view and enabled separation without imported model",
+      "passed": true
+    }
+  ],
+  "passed": 20,
+  "failed": 0,
+  "consoleWarningsAndErrors": [],
+  "method": "Actual native IAB UI actions; read-only DOM text and geometry observations. Desktop override 1280x920, mobile override 390x844; actual client widths reduced by scrollbar.",
+  "measurementCorrection": "Original mobile button measurement included hidden ancestors. Failed measurement retained separately in browser-v14-mobile-measurement.json and corrected using visible element rectangles.",
+  "initializationTimeouts": "Two route revisits to original caused a 3-second DOM observation/control timeout during original procedural asset initialization. Native accessibility state subsequently showed Ready and intended navigation was retried once. No selector assertion counted as passed without a later observation.",
+  "historicalCasesCountedAsRerun": false
+}

@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-03T03:04:47.711962+00:00",
+  "version": 19,
+  "bundleSha256": "50be1ec336502ad168b4becbb84ac043a88052bd61bc0093f2be78b81447e8a3",
+  "captureRecord": "notes/browser-v19-final-validation.json",
+  "captures": [
+    {
+      "path": "assets/cat-desktop-v19-final.jpg",
+      "bundleSha256": "50be1ec336502ad168b4becbb84ac043a88052bd61bc0093f2be78b81447e8a3",
+      "bytes": 292430,
+      "sha256": "655d3413ea00e60093d72973ca7001c20c5670d35a193899d0664b503ab17bd5",
+      "width": 1280,
+      "height": 960,
+      "rawNativeScreenshot": true,
+      "reviewed": true,
+      "observation": "桌面停坐猫；完整身体、四肢和尾巴。近景朝向前景，庭院建筑未入镜。"
+    },
+    {
+      "path": "assets/cat-mobile-v19-final.jpg",
+      "bundleSha256": "50be1ec336502ad168b4becbb84ac043a88052bd61bc0093f2be78b81447e8a3",
+      "bytes": 76549,
+      "sha256": "03df613d824c136891814f1ddeaca1e9927791fe7af63477d72143ce6d2de073",
+      "width": 390,
+      "height": 844,
+      "rawNativeScreenshot": true,
+      "reviewed": true,
+      "observation": "手机停坐猫；完整取景。"
+    },
+    {
+      "path": "assets/startle-desktop-v19-final.jpg",
+      "bundleSha256": "50be1ec336502ad168b4becbb84ac043a88052bd61bc0093f2be78b81447e8a3",
+      "bytes": 224472,
+      "sha256": "6c080dc0a76d368e3e01e244663e9762d60a8e05cf046730d1ae64ef54f9a210",
+      "width": 1280,
+      "height": 960,
+      "rawNativeScreenshot": true,
+      "reviewed": true,
+      "observation": "桌面惊散暂停；手、鱼群与阶段反馈同框，当前响应5条、触发1次。"
+    }
+  ],
+  "scope": "Three final-bundle raw native JPEGs. Earlier ca8b captures and failure snapshot retain their historical base record and are not final-bundle evidence. Visual review checks visible framing and feedback, not photorealism."
+}

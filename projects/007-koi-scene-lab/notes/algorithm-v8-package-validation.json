@@ -1,0 +1,334 @@
+{
+  "date": "2026-10-02T10:04:08.130501+00:00",
+  "clientDate": "2026-10-02",
+  "timeZone": "Asia/Shanghai",
+  "upstreamCommit": "18213ec590e987f605cce6564471e6c0f9451d37",
+  "upstreamSnapshots": 9,
+  "upstreamSnapshotChecks": [
+    {
+      "path": "web/upstream/koi-pond.original.html",
+      "bytes": 562349,
+      "sha256": "ab76bca6c8d3cb8e4185189d3f217665e7d6e1695cbd98f1da8c6024cc1f8f1a",
+      "matched": true
+    },
+    {
+      "path": "web/upstream/KOI-LICENSE.txt",
+      "bytes": 1073,
+      "sha256": "442946ea51dac60327bc8c6aa0d6dcd1ea0e57aa79cf36b0c2c60008a68345d0",
+      "matched": true
+    },
+    {
+      "path": "notes/upstream-readme.md",
+      "bytes": 4988,
+      "sha256": "9ee2b9fbf414a234b34dd95eb314c5f77a9700e95a1009059b6370284367819c",
+      "matched": true
+    },
+    {
+      "path": "notes/upstream-one-shot-prompt.txt",
+      "bytes": 16611,
+      "sha256": "d173476356400d1d0f5ba3951c4b6c2f449c75859de696d5bbba6d2d034b339f",
+      "matched": true
+    },
+    {
+      "path": "notes/upstream-edit-prompt.txt",
+      "bytes": 1066,
+      "sha256": "491540f4493baa31032373333e2f7e17d7e19ab048eea616f16b00c829dee99a",
+      "matched": true
+    },
+    {
+      "path": "web/vendor/three-r160.min.js",
+      "bytes": 669884,
+      "sha256": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa",
+      "matched": true
+    },
+    {
+      "path": "web/vendor/dat.gui-0.7.9.min.js",
+      "bytes": 50323,
+      "sha256": "6e21301e269b7fff15f217c1454b0f614c937d53081e998e8559c26ab0be3944",
+      "matched": true
+    },
+    {
+      "path": "web/vendor/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d",
+      "matched": true
+    },
+    {
+      "path": "web/vendor/DAT-GUI-LICENSE.txt",
+      "bytes": 11343,
+      "sha256": "47754d3064047c300714af25258efa782e144fdf1e835bfd1edbeb7f8f4ef9e4",
+      "matched": true
+    }
+  ],
+  "originalRuntimeOnlyTwoLocalScriptSubstitutions": true,
+  "substitutions": [
+    {
+      "from": "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js",
+      "to": "../vendor/three-r160.min.js"
+    },
+    {
+      "from": "https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js",
+      "to": "../vendor/dat.gui-0.7.9.min.js"
+    }
+  ],
+  "relativeHtmlReferences": 14,
+  "relativeHtmlReferenceChecks": [
+    {
+      "tag": "link",
+      "attribute": "href",
+      "reference": "style.css",
+      "path": "style.css",
+      "exists": true,
+      "publicExists": true
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "reference": "upstream/koi-pond.html",
+      "path": "upstream/koi-pond.html",
+      "exists": true,
+      "publicExists": true
+    },
+    {
+      "tag": "iframe",
+      "attribute": "data-src",
+      "reference": "upstream/koi-pond.html",
+      "path": "upstream/koi-pond.html",
+      "exists": true,
+      "publicExists": true
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "reference": "upstream/KOI-LICENSE.txt",
+      "path": "upstream/KOI-LICENSE.txt",
+      "exists": true,
+      "publicExists": true
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "reference": "upstream/koi-pond.original.html",
+      "path": "upstream/koi-pond.original.html",
+      "exists": true,
+      "publicExists": true
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "reference": "assets/courtyard-target.png",
+      "path": "assets/courtyard-target.png",
+      "exists": true,
+      "publicExists": true
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "reference": "assets/courtyard-target.png",
+      "path": "assets/courtyard-target.png",
+      "exists": true,
+      "publicExists": true
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "reference": "assets/courtyard-target.png",
+      "path": "assets/courtyard-target.png",
+      "exists": true,
+      "publicExists": true
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "reference": "upstream/KOI-LICENSE.txt",
+      "path": "upstream/KOI-LICENSE.txt",
+      "exists": true,
+      "publicExists": true
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "reference": "THREE-LICENSE.txt",
+      "path": "THREE-LICENSE.txt",
+      "exists": true,
+      "publicExists": true
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "reference": "assets/HAND-LICENSE.txt",
+      "path": "assets/HAND-LICENSE.txt",
+      "exists": true,
+      "publicExists": true
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "reference": "assets/courtyard-target.png",
+      "path": "assets/courtyard-target.png",
+      "exists": true,
+      "publicExists": true
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "reference": "assets/courtyard-target.png",
+      "path": "assets/courtyard-target.png",
+      "exists": true,
+      "publicExists": true
+    },
+    {
+      "tag": "script",
+      "attribute": "src",
+      "reference": "app.js",
+      "path": "app.js",
+      "exists": true,
+      "publicExists": true
+    }
+  ],
+  "publicFilesMatched": 22,
+  "publicFileChecks": [
+    {
+      "path": "app.js",
+      "bytes": 3010211,
+      "sha256": "edcf149d7d2e2b7e929c95ade4b6915ffbae65a43705d0499514bfdd379fa926",
+      "matched": true
+    },
+    {
+      "path": "app.js.LEGAL.txt",
+      "bytes": 1943,
+      "sha256": "654a5c3e594bb421410ac9e3ab1eb4a0581ea3cca7d776f0a6475254a8e15718",
+      "matched": true
+    },
+    {
+      "path": "assets/binding-example.glb",
+      "bytes": 36188,
+      "sha256": "4ae12e6064f6b500ba7b3166214a9799f61cfbf7afe2069024575c85a8730d76",
+      "matched": true
+    },
+    {
+      "path": "assets/binding-example.json",
+      "bytes": 643,
+      "sha256": "0a3c05bab38baf343ce722a84e5fe4eac31689005f69bc1667776557dff52fcf",
+      "matched": true
+    },
+    {
+      "path": "assets/courtyard-target.png",
+      "bytes": 3952316,
+      "sha256": "204c846bc506da748abd9decefd16c2b0ca0509c09d53fcc8992b9024260d803",
+      "matched": true
+    },
+    {
+      "path": "assets/gravel-albedo.png",
+      "bytes": 3457089,
+      "sha256": "079ea3135a163c97f7823ae0e5bb9c0c2b8aa1713c1a0015230a24a855aa728a",
+      "matched": true
+    },
+    {
+      "path": "assets/HAND-LICENSE.txt",
+      "bytes": 1094,
+      "sha256": "0ef0c87e8ffdd0681f332dc3b39f284dee2166d1f853fabc3853884fe81a6f30",
+      "matched": true
+    },
+    {
+      "path": "assets/hand-right.glb",
+      "bytes": 94004,
+      "sha256": "291790c14f7f88a7f9bd35330c47392ed8e8d395ae6728f4bb7089f1bc1f2b96",
+      "matched": true
+    },
+    {
+      "path": "assets/hand-skin-albedo-v3.png",
+      "bytes": 2579109,
+      "sha256": "70c823b95c1c09ff3075db2ba77a62e75216965810bf9e1281c3d2014c6e347a",
+      "matched": true
+    },
+    {
+      "path": "assets/roof-albedo.png",
+      "bytes": 2724776,
+      "sha256": "6af157474486dd01ad68b0529f2ada0fdb81359a6abf132dd67dca798f351c84",
+      "matched": true
+    },
+    {
+      "path": "assets/stone-albedo.png",
+      "bytes": 3664785,
+      "sha256": "a32c23d727783b1088ba2feb9db08aa846d7fea0be652bfd1a2b6cce2c3ff106",
+      "matched": true
+    },
+    {
+      "path": "assets/wood-albedo.png",
+      "bytes": 2763960,
+      "sha256": "a113bab8fc74309bb2375930c4808830530b509c83b9437c9c539d67455681b3",
+      "matched": true
+    },
+    {
+      "path": "index.html",
+      "bytes": 35976,
+      "sha256": "16bfa0c4057e4b3e9b82375d9635370cf65c8b422d0e1bebb65fb102c6e6e5ed",
+      "matched": true
+    },
+    {
+      "path": "style.css",
+      "bytes": 30618,
+      "sha256": "ebeda267f3d96ad7f0223c3cd61bbcfc115d7894d03e51540111ce429dbd3458",
+      "matched": true
+    },
+    {
+      "path": "THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d",
+      "matched": true
+    },
+    {
+      "path": "upstream/KOI-LICENSE.txt",
+      "bytes": 1073,
+      "sha256": "442946ea51dac60327bc8c6aa0d6dcd1ea0e57aa79cf36b0c2c60008a68345d0",
+      "matched": true
+    },
+    {
+      "path": "upstream/koi-pond.html",
+      "bytes": 562271,
+      "sha256": "ac6c12b9b47e58d2a22a36d607cedefd70a1261313d349096bc03fd5f4d8882f",
+      "matched": true
+    },
+    {
+      "path": "upstream/koi-pond.original.html",
+      "bytes": 562349,
+      "sha256": "ab76bca6c8d3cb8e4185189d3f217665e7d6e1695cbd98f1da8c6024cc1f8f1a",
+      "matched": true
+    },
+    {
+      "path": "vendor/DAT-GUI-LICENSE.txt",
+      "bytes": 11343,
+      "sha256": "47754d3064047c300714af25258efa782e144fdf1e835bfd1edbeb7f8f4ef9e4",
+      "matched": true
+    },
+    {
+      "path": "vendor/dat.gui-0.7.9.min.js",
+      "bytes": 50323,
+      "sha256": "6e21301e269b7fff15f217c1454b0f614c937d53081e998e8559c26ab0be3944",
+      "matched": true
+    },
+    {
+      "path": "vendor/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d",
+      "matched": true
+    },
+    {
+      "path": "vendor/three-r160.min.js",
+      "bytes": 669884,
+      "sha256": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa",
+      "matched": true
+    }
+  ],
+  "sourceOnlyFilesExcludedByBuildPolicy": [
+    "README.md"
+  ],
+  "webBundleBytes": 3010211,
+  "webBundleSha256": "edcf149d7d2e2b7e929c95ade4b6915ffbae65a43705d0499514bfdd379fa926",
+  "expectedBundleSha256": "edcf149d7d2e2b7e929c95ade4b6915ffbae65a43705d0499514bfdd379fa926",
+  "publicOutput": "F:\\codex_project\\0930_codex_project\\_site\\projects\\007-koi-scene-lab",
+  "errors": [],
+  "passed": true,
+  "method": "Byte/SHA-256 comparison and HTML parsing after local scripts/build_site.py. No app rebuild, interaction rerun, Git push or publication."
+}

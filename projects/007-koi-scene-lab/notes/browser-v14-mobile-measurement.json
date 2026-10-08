@@ -1,0 +1,66 @@
+{
+  "bundle": "65d5e6cd65372012f78faf7f7f13fd9189f8872b3e16a09b539d5c4f53e93a35",
+  "failedMeasurement": {
+    "name": "final mobile route card has no page overflow and all visible action buttons are at least 44px",
+    "passed": false,
+    "evidence": {
+      "buttons": [
+        {
+          "height": 0,
+          "id": "tour-start"
+        },
+        {
+          "height": 0,
+          "id": "tour-restart"
+        },
+        {
+          "height": 44,
+          "id": "tour-previous"
+        },
+        {
+          "height": 44,
+          "id": "tour-next"
+        },
+        {
+          "height": 44,
+          "id": "tour-exit"
+        },
+        {
+          "height": 44,
+          "id": ""
+        },
+        {
+          "height": 44,
+          "id": ""
+        },
+        {
+          "height": 44,
+          "id": ""
+        },
+        {
+          "height": 44,
+          "id": ""
+        },
+        {
+          "height": 44,
+          "id": ""
+        },
+        {
+          "height": 44,
+          "id": "tour-action"
+        },
+        {
+          "height": 44,
+          "id": "tour-more"
+        }
+      ],
+      "clientWidth": 375,
+      "guide": {
+        "width": 344.66668701171875,
+        "x": 15
+      },
+      "pageWidth": 375
+    }
+  },
+  "correction": "The original visibility filter only checked each button hidden attribute and included buttons within hidden ancestors. The recheck excludes zero-width or zero-height elements. This is a measurement error, retained for audit."
+}

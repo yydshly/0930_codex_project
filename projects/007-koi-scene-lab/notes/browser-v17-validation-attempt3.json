@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-02T18:03:50.767Z",
+  "clientDate": "2026-10-03",
+  "version": 17,
+  "bundleSha256": "85093d6f7fa6abbab4b99e94029e20a1357cd0606b7c687d0431be496ce40b17",
+  "scriptSha256": "8de23bb1dc789ab4cbf705dd8265c12f4459fac9ae8e3c66e131f02551ee902c",
+  "authorization": {
+    "reply": "继续优化",
+    "context": "Reply to the preceding explicit request for isolated localhost Playwright acceptance."
+  },
+  "method": "User-authorized isolated headless Chromium, real UI actions and read-only DOM observations. Uses software-capable WebGL; not a hardware performance or full accessibility test.",
+  "checks": [
+    {
+      "name": "new scene initializes and feeding feedback is initially hidden",
+      "passed": true
+    },
+    {
+      "name": "fish-count control can select zero",
+      "passed": true
+    },
+    {
+      "name": "zero-fish main feed keeps zero and explains observation-only behavior",
+      "passed": true
+    },
+    {
+      "name": "actual six-pellet release and landing have a separate zero swallow count",
+      "passed": true,
+      "evidence": "本轮释放 6/6 粒 · 实际落水 6 粒 · 吞食 0 粒 · 尚在场景 6 粒 · 过期 0 粒；场景累计吞食 0 粒"
+    },
+    {
+      "name": "pause has a truthful pressed state and status",
+      "passed": true
+    },
+    {
+      "name": "keyboard can move from pause to a feedback action",
+      "passed": true
+    },
+    {
+      "name": "hand withdrawal preserves the frozen batch",
+      "passed": true
+    },
+    {
+      "name": "paused static water passes stay cached after the returning camera settles",
+      "passed": false,
+      "evidence": {
+        "settled": false,
+        "value": 94,
+        "samples": [
+          80,
+          82,
+          84,
+          86,
+          88,
+          90,
+          92,
+          94
+        ],
+        "elapsedMs": 49231.09999999404
+      }
+    }
+  ],
+  "passed": 7,
+  "failed": 1,
+  "captures": [
+    "assets/feeding-desktop-v17.jpg",
+    "assets/feeding-failure-v17.jpg"
+  ],
+  "errors": [],
+  "warnings": [
+    "Allow attribute will take precedence over 'allowfullscreen'.",
+    "[.WebGL-0x5634001b2600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x5634001b2600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x5634001b2600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x5634001b2600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ],
+  "externalRequests": []
+}

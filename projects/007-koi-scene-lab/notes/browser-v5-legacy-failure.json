@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-02T04:16:09.203139+00:00",
+  "bundleSha256": "8f96c123096647d1cd13345f13e79a5cd9cd09ae2a1e9337090d982a09d43f74",
+  "sourceTest": "tooling/verify-browser.mjs (unmodified)",
+  "status": "failed",
+  "failedCheck": "投喂建立食物目标与波纹",
+  "reason": "At 1.8 s the released pellets are still airborne; the original test requires a water ripple before physical impact.",
+  "completedChecks": [
+    "独立 WebGL 庭院渲染",
+    "锦鲤位置随动画变化",
+    "暂停保持模拟时间"
+  ],
+  "timingDiagnosis": [
+    {
+      "elapsed": 1.8,
+      "emitted": 2,
+      "nextDrop": 0,
+      "pelletYs": [
+        0.1811782825014357,
+        0.19339372107204106
+      ]
+    },
+    {
+      "elapsed": 1.95,
+      "nextDrop": 1
+    },
+    {
+      "elapsed": 2.1,
+      "nextDrop": 4
+    },
+    {
+      "elapsed": 2.5,
+      "emitted": 6,
+      "nextDrop": 6
+    }
+  ],
+  "browserAndShaderErrors": [],
+  "renderer": "Chromium headless / SwiftShader; not hardware performance benchmark",
+  "remainingChecks": "Original test exited before later UI/GLB/mobile checks."
+}

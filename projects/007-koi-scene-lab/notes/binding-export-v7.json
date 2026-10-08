@@ -1,0 +1,46 @@
+{
+  "format": "koi-scene-binding/v1",
+  "coordinateSystem": "centered-model-world",
+  "modelSha256": "4ae12e6064f6b500ba7b3166214a9799f61cfbf7afe2069024575c85a8730d76",
+  "modelName": "binding-example.glb",
+  "modelScale": 1,
+  "habitat": {
+    "polygon": [
+      {
+        "x": -2.8,
+        "z": -1.7
+      },
+      {
+        "x": 2.8,
+        "z": -1.7
+      },
+      {
+        "x": 2.8,
+        "z": 1.7
+      },
+      {
+        "x": -2.8,
+        "z": 1.7
+      }
+    ],
+    "waterLevel": 0.65,
+    "depth": 0.6,
+    "feedPoint": {
+      "x": -1.2,
+      "y": 0.65,
+      "z": 1
+    },
+    "obstacles": [
+      {
+        "x": 0.7,
+        "z": 0.15,
+        "radius": 0.32
+      },
+      {
+        "x": -1.8,
+        "z": -0.65,
+        "radius": 0.25
+      }
+    ]
+  }
+}

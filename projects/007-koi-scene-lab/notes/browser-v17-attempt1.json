@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-02T17:40:35.309Z",
+  "clientDate": "2026-10-03",
+  "version": 17,
+  "bundleSha256": "7eafd0a3f98961a5f9cf9324e02a8c3c529c446f7333d565a1415d1316e921f8",
+  "scriptSha256": "7b6f486425c7ab6f576e3d42264e4274152039538eb3ca234eb1ababdc57657e",
+  "authorization": {
+    "reply": "继续优化",
+    "context": "Reply to the preceding explicit request for isolated localhost Playwright acceptance."
+  },
+  "method": "User-authorized isolated headless Chromium, real UI actions and read-only DOM observations. Uses software-capable WebGL; not a hardware performance or full accessibility test.",
+  "checks": [
+    {
+      "name": "new scene initializes and feeding feedback is initially hidden",
+      "passed": true
+    },
+    {
+      "name": "fish-count control can select zero",
+      "passed": true
+    },
+    {
+      "name": "zero-fish main feed keeps zero and explains observation-only behavior",
+      "passed": true
+    },
+    {
+      "name": "actual six-pellet release and landing have a separate zero swallow count",
+      "passed": true,
+      "evidence": "本轮释放 6/6 粒 · 实际落水 6 粒 · 吞食 0 粒 · 尚在场景 6 粒 · 过期 0 粒；场景累计吞食 0 粒"
+    },
+    {
+      "name": "pause has a truthful pressed state and status",
+      "passed": true
+    },
+    {
+      "name": "keyboard can move from pause to a feedback action",
+      "passed": true
+    },
+    {
+      "name": "hand withdrawal preserves the frozen batch",
+      "passed": true
+    },
+    {
+      "name": "browser verification execution",
+      "passed": false,
+      "error": "paused static water passes stay cached across live browser frames"
+    }
+  ],
+  "passed": 7,
+  "failed": 1,
+  "captures": [
+    "assets/feeding-desktop-v17-attempt1.jpg",
+    "assets/feeding-failure-v17-attempt1.jpg"
+  ],
+  "errors": [],
+  "warnings": [
+    "Allow attribute will take precedence over 'allowfullscreen'.",
+    "[.WebGL-0x799c001ba600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x799c001ba600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x799c001ba600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x799c001ba600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ],
+  "externalRequests": [],
+  "executionFailureExplanation": "The assertion sampled immediately after withdrawing the hand, which also starts the camera return. It could not distinguish required camera refresh from cache faults. The next verifier waits for a stable paused-input baseline and preserves the sampled update counts."
+}

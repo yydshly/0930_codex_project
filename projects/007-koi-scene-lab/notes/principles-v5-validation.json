@@ -1,0 +1,276 @@
+{
+  "date": "2026-10-02T04:34:28.194Z",
+  "clientDate": "2026-10-02",
+  "timeZone": "Asia/Shanghai",
+  "applicationBundleSHA256": "e8fc9c32e3e7bcd06b952c35d17c643b48dba70f7da7b1e7fa554b17cebf1bc6",
+  "checks": [
+    "学习面板提供七个效果主题",
+    "切换 fish 显示对应算法、观察点和近似边界",
+    "切换 motion 显示对应算法、观察点和近似边界",
+    "切换 water 显示对应算法、观察点和近似边界",
+    "切换 feeding 显示对应算法、观察点和近似边界",
+    "切换 geometry 显示对应算法、观察点和近似边界",
+    "切换 lighting 显示对应算法、观察点和近似边界",
+    "切换 performance 显示对应算法、观察点和近似边界",
+    "说明区分骨骼手、近似法线与CPU浮料",
+    "性能说明准确保留鱼的独立网格边界",
+    "鱼群示范解除暂停并切换池边观察",
+    "鱼群说明的数值来自当前行为统计",
+    "形变示范建立真实鱼头跟随和新着色器参数",
+    "形变示范将整条鱼体和尾鳍基础包围盒纳入画面",
+    "水面示范向真实涟漪系统添加扰动",
+    "GPU差分波固定步长推进并消耗真实扰动队列",
+    "投喂示范调用真实手部动作及六粒有限量",
+    "投喂状态推进后六粒全部释放且说明同步数量",
+    "几何示范切换青蛙近景并执行真实跳跃",
+    "光照示范应用18.3时黄昏并同步真实光照",
+    "相同时刻雨后水面GGX高光按真实太阳强度减弱",
+    "性能示范切换俯瞰视角",
+    "性能文本显示实际渲染通道统计与实例对象数",
+    "桌面动态水面说明无横向溢出",
+    "完整技术对照按钮切换到技术页面",
+    "技术页提供七行对照并保留六项详情",
+    "桌面技术对照无横向溢出",
+    "390像素移动动态水面说明保持可读且无溢出",
+    "移动互动提示按内容定高且避开参考图缩略图",
+    "390像素移动技术对照无横向溢出",
+    "导入GLB后可见实例统计排除隐藏庭院",
+    "导入模型时禁用庭院示范并说明返回路径",
+    "退出GLB后恢复庭院示范",
+    "新算法真实绘制与页面运行无错误",
+    "学习面板与场景资源均从本地加载"
+  ],
+  "failures": [],
+  "evidence": {
+    "topics": {
+      "fish": {
+        "effect": "鱼群保持间距、逐渐对齐并聚集；转弯平滑，游动交替推进和滑行。",
+        "method": "Boids 将分离、方向对齐、群体聚集与游走合成转向；提前采样池岸距离和梯度避障，限制角速度与角加速度。鱼身用三个球近似，成对校正重叠。",
+        "boundary": "这是规则驱动的行为模拟。三个球是碰撞近似，未求解鱼体与水的完整流体耦合。",
+        "metrics": "7 条鱼 · 邻鱼朝向一致度 0.67 · 质心偏移 0.52 m · 分离强度 0.18 · 模拟运行中"
+      },
+      "motion": {
+        "effect": "鱼身从头到尾摆动增强，转弯时弯曲；快游时收鳍，减速时展开。",
+        "method": "GPU 行进波叠加转弯曲率。对位移函数解析求导，用逆转置变换修正法线，使高光跟随弯曲的身体；摆尾频率、幅度和展鳍由运动状态驱动。",
+        "boundary": "解析法线修正覆盖脊柱弯曲和成对鳍旋转；微小鳍膜、口唇和背鳍折叠仍使用近似法线。",
+        "metrics": "转速 -0.39 rad/s · 摆尾幅度 0.038 · 展鳍 0.57 · 解析法线已接入"
+      },
+      "water": {
+        "effect": "点击水面出现扩散涟漪；风浪起伏，倒影随波动改变，水下颜色随深度变化。",
+        "method": "128² GPU 纹理保存高度与速度，固定 1/60 秒差分更新，双缓冲交换并由池岸遮罩约束。四组 Gerstner 波同时产生水平/竖直位移，解析切线与波纹梯度决定法线；Fresnel、Beer–Lambert 与 GGX 计算反射、吸光和太阳高光。",
+        "boundary": "涟漪是二维波动近似。CPU 浮料只采样解析风浪，不回读 GPU 涟漪；池底焦散为程序光斑，未做光线追踪。",
+        "metrics": "GPU 差分波 · 128² · 已推进 19 步 · 反射/折射 512px"
+      },
+      "feeding": {
+        "effect": "手捏持六粒饲料，松指落水，鱼上浮张嘴吸入；落料和吞食触发波纹。",
+        "method": "26 骨骼蒙皮手通过指腹 CCD 约束捏合；状态机控制伸手、松指、退场。粒子按重力下落并跟随解析波面；按嘴口距离匹配目标，进入吞食阶段后连续吸入、计数并闭嘴。",
+        "boundary": "本页手部使用 WebXR 网格和 CCD；原作是 SDF 手部加预设骨骼角度。接触、吸入和碰撞为动画与几何近似。",
+        "metrics": "手部阶段 待机 · 本把已落 0/6 粒 · 累计吞食 0 粒"
+      },
+      "geometry": {
+        "effect": "青蛙、乌龟具有连续曲面，锦鲤有嘴腔、口须和完整鱼鳍；庭院结构可调比例。",
+        "method": "青蛙、乌龟主体由 SDF 平滑融合形体，经 Surface Nets 在零交叉网格提取曲面；蜻蜓用分段几何与曲面翅膀。锦鲤用插值截面连接网格；庭院用参数几何建模，花纹和部分微表面由噪声与曲线生成。",
+        "boundary": "模型是人工设定的参数化构造；真实扫描 GLB 可另行导入，当前庭院尺寸仍为设计估值。",
+        "metrics": "青蛙/乌龟主体：SDF → Surface Nets · 锦鲤：插值截面 → 三角网格 · 手部：WebXR 派生网格"
+      },
+      "lighting": {
+        "effect": "鱼身和水面有反光，建筑接缝有阴影，黄昏改变日照与氛围。",
+        "method": "物理材质按粗糙度和法线计算反射。阴影贴图与屏幕空间环境遮蔽补充接触阴影，辉光处理亮部，ACES 色调映射将 HDR 转为可显示画面；水面另用 GGX 高光。",
+        "boundary": "屏幕空间环境遮蔽只利用当前视角的深度；环境光与焦散使用近似，没有完整全局光照求解。",
+        "metrics": "16.3 时 · 曝光 1.12 · SSAO / 辉光 / ACES 已启用"
+      },
+      "performance": {
+        "effect": "大量树叶和庭院构件能共同出现在交互场景中。",
+        "method": "树叶通过实例化共享几何与材质，静态构件按材质合并批次。锦鲤共享鱼体/鱼鳍几何；水面近景用 1024px 反射折射并每帧更新，远景 512px、隔帧更新。",
+        "boundary": "当前锦鲤仍是独立网格与材质，未迁移原作的鱼群 InstancedMesh。下面显示实际浏览器统计，包含水面和后处理通道。",
+        "metrics": "可见实例化对象 8 · 本帧绘制调用 751 · 三角形 3,743,611"
+      }
+    },
+    "demos": {
+      "fish": {
+        "paused": false,
+        "autoTour": false,
+        "to": [
+          0,
+          1,
+          5.3
+        ],
+        "fishCount": 7,
+        "metrics": {
+          "activeFish": 7,
+          "alignment": 0.6656300679803516,
+          "cohesion": 0.5256450304744629,
+          "separation": 0.1787692545201007,
+          "turnRate": 0.15295329368987767,
+          "effort": 0.4615419205895205,
+          "neighbors": 2,
+          "boundary": 0,
+          "contacts": 0,
+          "consumed": 0
+        },
+        "line": "7 条鱼 · 邻鱼朝向一致度 0.67 · 质心偏移 0.53 m · 分离强度 0.18 · 模拟运行中"
+      },
+      "motion": {
+        "follow": true,
+        "inspection": true,
+        "amp": 0.03539357253699631,
+        "bend": 0.01328956986565,
+        "spread": 0.6114238080286001,
+        "waterWidth": 1024,
+        "baseGeometryClipBounds": {
+          "minX": -0.5389909896995645,
+          "maxX": 0.1416138631130641,
+          "minY": -0.2424090576779043,
+          "maxY": 0.595583604588548
+        },
+        "line": "转速 -0.41 rad/s · 摆尾幅度 0.035 · 展鳍 0.61 · 解析法线已接入"
+      },
+      "water": {
+        "drops": 1,
+        "queue": 1,
+        "steps": 0,
+        "enabled": true,
+        "lastDrop": [
+          -0.8,
+          1.3,
+          0,
+          0.035
+        ],
+        "after": {
+          "steps": 12,
+          "queue": 0,
+          "line": "GPU 差分波 · 128² · 已推进 12 步 · 反射/折射 1024px"
+        }
+      },
+      "feeding": {
+        "mode": "feed",
+        "total": 6,
+        "rootVisible": true,
+        "after": {
+          "mode": "feed",
+          "phase": "relax",
+          "emitted": 6,
+          "held": 0,
+          "particles": 6,
+          "line": "手部阶段 放松 · 本把已落 6/6 粒 · 累计吞食 0 粒"
+        }
+      },
+      "geometry": {
+        "follow": "frog",
+        "state": "jump",
+        "after": [
+          -2.4088235294117646,
+          0.38614740773050293,
+          2.3676470588235294
+        ]
+      },
+      "lighting": {
+        "weather": "dusk",
+        "hour": 18.3,
+        "sun": "ffd09a",
+        "bloom": 0.28,
+        "line": "18.3 时 · 曝光 1.12 · SSAO / 辉光 / ACES 已启用",
+        "sunIntensity": {
+          "sunny": {
+            "hour": 16.3,
+            "intensity": 2.7714855939696177,
+            "color": [
+              1,
+              0.8713671191959567,
+              0.6375968739867731
+            ],
+            "waterUniform": [
+              0.8940276109579411,
+              0.7790262638420646,
+              0.5700292100046462
+            ]
+          },
+          "rain": {
+            "hour": 16.3,
+            "intensity": 0.75,
+            "color": [
+              1,
+              0.8713671191959567,
+              0.6375968739867731
+            ],
+            "waterUniform": [
+              0.24193548387096772,
+              0.210814625611925,
+              0.1542573082226064
+            ]
+          }
+        }
+      },
+      "performance": {
+        "instances": 8,
+        "calls": 748,
+        "triangles": 3743605,
+        "camera": [
+          10,
+          13,
+          11.999999999999998
+        ],
+        "line": "可见实例化对象 8 · 本帧绘制调用 748 · 三角形 3,743,605"
+      }
+    },
+    "captures": [
+      "koi-motion-v5.png",
+      "scene-principles-v5.png",
+      "tech-principles-v5.png",
+      "scene-principles-mobile-v5.png",
+      "scene-toast-mobile-v5.png"
+    ],
+    "initial": {
+      "frames": 7,
+      "selectValues": [
+        "fish",
+        "motion",
+        "water",
+        "feeding",
+        "geometry",
+        "lighting",
+        "performance"
+      ]
+    },
+    "desktop": {
+      "width": 1536,
+      "scrollWidth": 1536,
+      "metrics": "GPU 差分波 · 128² · 已推进 12 步 · 反射/折射 1024px",
+      "panelWidth": 1141
+    },
+    "tech": {
+      "hash": "#tech",
+      "visible": true,
+      "rows": 7,
+      "details": 6,
+      "width": 1536,
+      "scrollWidth": 1536
+    },
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "panelWidth": 360,
+      "metricsWidth": 324,
+      "metrics": "GPU 差分波 · 128² · 已推进 12 步 · 反射/折射 1024px"
+    },
+    "mobileToast": {
+      "height": 48,
+      "text": "已加入水面扰动；也可点击池塘查看涟漪传播",
+      "bottom": "113px",
+      "viewportHeight": 350,
+      "avoidsReferenceThumb": true
+    },
+    "mobileTech": {
+      "width": 390,
+      "scrollWidth": 390
+    },
+    "imported": {
+      "model": true,
+      "instances": 0,
+      "line": "可见实例化对象 0 · 本帧绘制调用 22 · 三角形 22"
+    }
+  },
+  "errors": [],
+  "fatal": null,
+  "method": "Real Chromium / SwiftShader. Initial >2 RAF frames establish rendering. Native UI selects all seven topics and triggers all seven demonstrations; active=false immediately freezes RAF to avoid unnecessary software rendering. Real updateDynamics advances 0.025-second steps, including GPU ripple updates, fish behavior and skeletal feeding. Manual calls to actual water renderPasses and composer render produce scene screenshots and renderer statistics. Synthetic one-triangle GLB verifies hidden-parent instance exclusion and mode restrictions. Counts are actual rendering counters, not hardware performance benchmarks. No fabricated imagery or v4 asset replacement."
+}

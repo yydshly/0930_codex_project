@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-02T23:42:13.880141+00:00",
+  "clientDate": "2026-10-03",
+  "version": 17,
+  "bundleSha256": "13f5604427c0d4d6942055c8339707df58d2106551854d03eeac36ab3cfea335",
+  "captures": [
+    {
+      "path": "assets/feeding-desktop-v17.jpg",
+      "bundleSha256": "13f5604427c0d4d6942055c8339707df58d2106551854d03eeac36ab3cfea335",
+      "sourceRecord": "notes/browser-v17-validation.json",
+      "dimensions": [
+        1280,
+        960
+      ],
+      "bytes": 229930,
+      "sha256": "797c1320d6b4d7fd2690dfd8d856dca2c2f0101be9689f0bdfc85113c5b6e805",
+      "modifiedUtc": "2026-10-02T23:30:54.523891+00:00",
+      "rawNativeCapture": true,
+      "visuallyInspected": true,
+      "review": "Expected UI/rendered scene visible; no context-error overlay or horizontal clipping of the tested feedback controls. This is not a photorealistic-reference match claim."
+    },
+    {
+      "path": "assets/water-cache-v17.jpg",
+      "bundleSha256": "13f5604427c0d4d6942055c8339707df58d2106551854d03eeac36ab3cfea335",
+      "sourceRecord": "notes/browser-v17-validation.json",
+      "dimensions": [
+        1280,
+        960
+      ],
+      "bytes": 155244,
+      "sha256": "c9caf7f9d42560ed630bc070d0efdd6b5950ea465715f419b76d70851f42249b",
+      "modifiedUtc": "2026-10-02T23:33:45.971901+00:00",
+      "rawNativeCapture": true,
+      "visuallyInspected": true,
+      "review": "Expected UI/rendered scene visible; no context-error overlay or horizontal clipping of the tested feedback controls. This is not a photorealistic-reference match claim."
+    },
+    {
+      "path": "assets/feeding-mobile-v17.jpg",
+      "bundleSha256": "13f5604427c0d4d6942055c8339707df58d2106551854d03eeac36ab3cfea335",
+      "sourceRecord": "notes/browser-v17-validation.json",
+      "dimensions": [
+        390,
+        844
+      ],
+      "bytes": 94587,
+      "sha256": "527941e94662a6b5ea3b16e9c675c54d43a31bf04e74cf682a6bb7cf1f533ae9",
+      "modifiedUtc": "2026-10-02T23:36:53.834248+00:00",
+      "rawNativeCapture": true,
+      "visuallyInspected": true,
+      "review": "Expected UI/rendered scene visible; no context-error overlay or horizontal clipping of the tested feedback controls. This is not a photorealistic-reference match claim."
+    },
+    {
+      "path": "assets/feeding-mobile-active-v17.jpg",
+      "bundleSha256": "13f5604427c0d4d6942055c8339707df58d2106551854d03eeac36ab3cfea335",
+      "sourceRecord": "notes/browser-v17-validation.json",
+      "dimensions": [
+        390,
+        844
+      ],
+      "bytes": 82607,
+      "sha256": "b1cddd3fbde2df07f8beb1baaecbd810d1c5b06d3c9994b8b3b484a5f8afa9df",
+      "modifiedUtc": "2026-10-02T23:37:56.887086+00:00",
+      "rawNativeCapture": true,
+      "visuallyInspected": true,
+      "review": "Expected UI/rendered scene visible; no context-error overlay or horizontal clipping of the tested feedback controls. This is not a photorealistic-reference match claim."
+    },
+    {
+      "path": "assets/courtyard-desktop-v17.jpg",
+      "bundleSha256": "13f5604427c0d4d6942055c8339707df58d2106551854d03eeac36ab3cfea335",
+      "sourceRecord": "notes/browser-v17-validation.json",
+      "dimensions": [
+        1280,
+        960
+      ],
+      "bytes": 337451,
+      "sha256": "ae83d3e8fbc4f30a7d5546d0c8273616722406acc1a9a5a6c76c343a13802ae0",
+      "modifiedUtc": "2026-10-02T23:39:16.148862+00:00",
+      "rawNativeCapture": true,
+      "visuallyInspected": true,
+      "review": "Expected UI/rendered scene visible; no context-error overlay or horizontal clipping of the tested feedback controls. This is not a photorealistic-reference match claim."
+    },
+    {
+      "path": "assets/context-restored-v17.jpg",
+      "bundleSha256": "13f5604427c0d4d6942055c8339707df58d2106551854d03eeac36ab3cfea335",
+      "sourceRecord": "notes/browser-context-v17-validation.json",
+      "dimensions": [
+        960,
+        820
+      ],
+      "bytes": 162839,
+      "sha256": "bbcb3549fe425db669fc465a15b2b702aac214637aa17b0985b5cc2ca67a1d1a",
+      "modifiedUtc": "2026-10-02T18:53:20.238239+00:00",
+      "rawNativeCapture": true,
+      "visuallyInspected": true,
+      "review": "Expected UI/rendered scene visible; no context-error overlay or horizontal clipping of the tested feedback controls. This is not a photorealistic-reference match claim."
+    }
+  ],
+  "count": 6,
+  "method": "Original JPEG bytes from isolated localhost native Chromium, no crop/compositing/image editing. All six images inspected with view_image. Normal workflow and deliberate public-WebGL-extension recovery are separate records.",
+  "limitations": [
+    "Software-capable browser captures do not establish real-device FPS or all GPU failure recovery.",
+    "The generated courtyard reference remains an illustrative design, not a measured site; photo-reference matching remains blocked."
+  ]
+}

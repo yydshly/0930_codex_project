@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-02T17:06:36.520Z",
+  "clientDate": "2026-10-03",
+  "version": 16,
+  "bundleSha256": "713cfa3c73643e367b8d27efc33151be35aa64817ff1f412e1eff48ffeb30bae",
+  "method": "User-authorized isolated headless Chromium, real UI actions and read-only DOM observations. Uses software-capable WebGL; not a hardware performance or full accessibility test.",
+  "checks": [
+    {
+      "name": "new scene initializes and feeding feedback is initially hidden",
+      "passed": true
+    },
+    {
+      "name": "fish-count control can select zero",
+      "passed": true
+    },
+    {
+      "name": "zero-fish main feed keeps zero and explains observation-only behavior",
+      "passed": true
+    },
+    {
+      "name": "actual six-pellet release has a separate zero swallow count",
+      "passed": true,
+      "evidence": "本轮释放 6/6 粒 · 实际落水 6 粒 · 吞食 0 粒 · 尚在场景 6 粒 · 过期 0 粒；场景累计吞食 0 粒"
+    },
+    {
+      "name": "pause has a truthful pressed state and status",
+      "passed": true
+    },
+    {
+      "name": "keyboard can move from pause to a feedback action",
+      "passed": true
+    },
+    {
+      "name": "hand withdrawal preserves the frozen batch",
+      "passed": true
+    },
+    {
+      "name": "browser verification execution",
+      "passed": false,
+      "error": "page.waitForFunction: Timeout 60000ms exceeded."
+    }
+  ],
+  "passed": 7,
+  "failed": 1,
+  "captures": [
+    "assets/feeding-desktop-v16-attempt1.jpg"
+  ],
+  "errors": [],
+  "warnings": [
+    "Allow attribute will take precedence over 'allowfullscreen'.",
+    "[.WebGL-0x56f4001ba600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x56f4001ba600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x56f4001ba600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x56f4001ba600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ],
+  "externalRequests": [],
+  "executionFailureExplanation": "The first script awaited a toast prefix that differed from the actual model-import error message. This is a QA script error, not evidence of model-state corruption. The expectation was corrected before the next run."
+}

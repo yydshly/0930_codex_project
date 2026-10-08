@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-02T23:25:07.455Z",
+  "clientDate": "2026-10-03",
+  "version": 17,
+  "bundleSha256": "13f5604427c0d4d6942055c8339707df58d2106551854d03eeac36ab3cfea335",
+  "scriptSha256": "669291be925a58605bab00f02bb06e1deec0c521e6bc921713b438d73a72a009",
+  "authorization": {
+    "reply": "\u7ee7\u7eed\u4f18\u5316",
+    "context": "Reply to the preceding explicit request for isolated localhost Playwright acceptance."
+  },
+  "method": "User-authorized isolated headless Chromium, real UI actions and read-only DOM/canvas-event observations. Uses software-capable WebGL; not a hardware performance or full accessibility test.",
+  "checks": [
+    {
+      "name": "browser verification execution",
+      "passed": false,
+      "error": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:8947/?v=13f56044#scene\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:8947/?v=13f56044#scene\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    }
+  ],
+  "passed": 0,
+  "failed": 1,
+  "captures": [
+    "assets/feeding-failure-v17-attempt6.jpg"
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "warnings": [],
+  "externalRequests": [],
+  "contextEvents": [],
+  "archiveNote": "Initialization failed because the prior local preview service had stopped: ERR_CONNECTION_REFUSED. No application check passed; this is a local-service interruption, not an observed application rendering defect."
+}

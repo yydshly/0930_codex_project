@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-02T16:58:39.707518+00:00",
+  "clientDate": "2026-10-03",
+  "timeZone": "Asia/Shanghai",
+  "version": 16,
+  "preview": "http://127.0.0.1:8947/?v=713cfa3c#scene",
+  "bundleSha256": "713cfa3c73643e367b8d27efc33151be35aa64817ff1f412e1eff48ffeb30bae",
+  "scope": "Truthful zero-fish feedback at all feeding entrypoints; clear obsolete feeding state only after a successful model-context switch; prepare isolated localhost browser acceptance with explicit authorization still pending.",
+  "automated": {
+    "passed": 199,
+    "failed": 0,
+    "record": "notes/numerical-v16.tap",
+    "previousVersionTests": 181,
+    "newTests": {
+      "zeroFishPresentation": 8,
+      "actualHandZeroFishIntegration": 2,
+      "realModelContext": 6,
+      "productionTourAndPrincipleEntryPoints": 2
+    },
+    "method": "Node tests execute production logic, including actual KoiSchool/HandInteraction and GLTFLoader. DOM, canvas and loader fixtures support headless logic checks; these are not native layout or GPU verification."
+  },
+  "behavior": {
+    "zeroFishRemainsZero": true,
+    "releaseFeedbackUsesCurrentFishCount": true,
+    "oldConsumedHistoryPreservedWithZeroFish": true,
+    "successfulImportClearsPreviousFeeding": true,
+    "returnFromImportedModelClearsPreviousFeeding": true,
+    "failedImportPreservesCurrentContext": true,
+    "clearModelInProgramCourtyardIsNoOp": true
+  },
+  "nativeBrowser": {
+    "status": "partial_checks_completed_with_script_assertion_failure",
+    "newVerifiedChecks": 10,
+    "failedExecutionChecks": 1,
+    "newCaptures": 2,
+    "records": [
+      "notes/browser-v16-attempt1.json",
+      "notes/browser-v16-attempt2.json"
+    ],
+    "reason": "User replied continue optimization to the explicit local-browser request. Isolated local QA verified feeding and model context; script expectations required correction for the toast prefix and UI latency. No full native acceptance is claimed for this partial v16 run.",
+    "scriptExecuted": true,
+    "previousVersionEvidenceRecounted": false
+  },
+  "localPreview": {
+    "record": "notes/local-preview-v16.json",
+    "resourcesByteMatched": 3
+  },
+  "package": {
+    "record": "notes/algorithm-v16-package-validation.json",
+    "upstreamSnapshotsUnchanged": 9,
+    "originalRuntimeOnlyTwoLocalScriptSubstitutions": true,
+    "publicFilesMatched": 22,
+    "localReferences": 14
+  },
+  "collection": {
+    "staticDemosBuilt": 17,
+    "collectionTestsRerunForV16": false
+  },
+  "sourceHashes": {
+    "src/feeding-status.js": "bed342d535df6d78df65bee8ea927f8e65b56dd8d1be9aee6703a1a09646f8f6",
+    "src/feeding-ui.js": "44cf7c75d31e2ee1a9be5d06fcf04bf5f753ac8c61e4843c0da472ef41987364",
+    "src/interaction.js": "92e9901dd3f4a3d428419f9f0a78fd66e5afab641070dbf6ab257e07a58e1a67",
+    "src/principles.js": "548a37b12da405dd6d3de3aa258cdf4dfdf83395d63084aa9152477e60564a12",
+    "src/tour-ui.js": "3f3bfe9f1805f3a6cbf63a94036b19ec04f7682ff55642c98dae4f6b267ccff5",
+    "src/tour-steps.js": "e787fb0137fabd81e18bb99ed2b6f9d22472e8e625aac96ed5452aa2cd64b685",
+    "src/scene.js": "24ede45e82520ad660e2c602d06488a88be129133ce59a4c2aca8e645a6fd4c5",
+    "web/index.html": "3ad9ab887f00a46f15b95f0d37123f2e83ff1acf11c58118171ad7bbed365777",
+    "web/style.css": "6ece536421dae43f901643b577a9f0efc5b7ec6260acb5e12e7738b2b87f06ac",
+    "tests/feeding-status.test.mjs": "17b1f2e15c2ad3e4f63a90349e400d5f6cc162dea6b3629fbe0928e289968fea",
+    "tests/feeding-integration.test.mjs": "0ac001f8d8552bb52cd8b70db26c2cff2caea4222bd06e10e07dd85ec2f0a39e",
+    "tests/model-feeding-context.test.mjs": "d9be08078a4609e1ef5bf13880dad5565b0787ff7d6bdefa2e9cbb58535e1954",
+    "tests/zero-fish-entrypoints.test.mjs": "9d3b57d1ff3d513ea3262100eea254ff81a51142159bff3e390f8e8b584f853a",
+    "tooling/verify-v16.mjs": "945724d36cd9f8baec8c1d5aedc22f0e4590f0d8ffc9ca9e92f1c2b053d64055"
+  },
+  "limitations": [
+    "Desktop/mobile layout, keyboard focus and new WebGL rendering still await native browser acceptance.",
+    "Numerical and fixture checks do not establish final pixels, hardware performance or full screen-reader behavior.",
+    "The courtyard remains based on an AI-generated design; no measured real-location model was introduced in this iteration.",
+    "Photorealistic reference matching remains blocked in design-qa.md.",
+    "Native JSON file-input roundtrip remains unverified from earlier iterations."
+  ],
+  "passedWithinAutomatedScope": true,
+  "nativeVisualReviewComplete": false
+}

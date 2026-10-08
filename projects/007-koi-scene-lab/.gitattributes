@@ -1,0 +1,7 @@
+# Preserve pinned upstream and runtime bytes across operating systems.
+web/upstream/* -text
+web/vendor/* -text
+web/app.js -text
+notes/upstream-readme.md -text
+notes/upstream-one-shot-prompt.txt -text
+notes/upstream-edit-prompt.txt -text

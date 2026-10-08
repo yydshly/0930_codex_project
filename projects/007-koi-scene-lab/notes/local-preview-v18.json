@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-03T00:05:44.821910+00:00",
+  "version": 18,
+  "url": "http://127.0.0.1:8947/?v=9051a067#scene",
+  "bundleSha256": "9051a067c8eb6175f907cc1d68ef5c79ec149600b8aeebc597bcffd0607c36b2",
+  "resources": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "dd09ae7d0953de3df4cb91cd8f75fdd88ec171142e04b10bd63028c6f2e8654f",
+      "bytes": 47044,
+      "matchesWorkspace": true
+    },
+    {
+      "path": "app.js",
+      "status": 200,
+      "sha256": "9051a067c8eb6175f907cc1d68ef5c79ec149600b8aeebc597bcffd0607c36b2",
+      "bytes": 3099420,
+      "matchesWorkspace": true
+    },
+    {
+      "path": "style.css",
+      "status": 200,
+      "sha256": "545732f8f6bbb630b51b3de46d28cb7912b5ffd4680444dc4f966e73c708e670",
+      "bytes": 40828,
+      "matchesWorkspace": true
+    }
+  ],
+  "passed": true,
+  "method": "Local HTTP bytes compared with current workspace; UI verification is separate."
+}

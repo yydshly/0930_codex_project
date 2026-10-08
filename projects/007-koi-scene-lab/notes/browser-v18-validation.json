@@ -1,0 +1,138 @@
+{
+  "date": "2026-10-03T00:13:30.914Z",
+  "version": 18,
+  "bundleSha256": "9051a067c8eb6175f907cc1d68ef5c79ec149600b8aeebc597bcffd0607c36b2",
+  "scriptSha256": "cca8b12a0bb6ef773403e3d6b60bc1badfca6484c90fb111fef39c6d1f2ca223",
+  "authorization": "Continuing user-authorized isolated localhost browser QA.",
+  "method": "Real isolated Chromium UI keyboard/mouse/touch actions; read-only DOM and canvas-event observations. Software-capable WebGL. No GPU-memory measurement; context recovery not rerun here.",
+  "checks": [
+    {
+      "name": "current scene initializes with seven fish and no stale feeding round",
+      "passed": true
+    },
+    {
+      "name": "focused canvas Space pauses simulation",
+      "passed": true
+    },
+    {
+      "name": "held V toggles clean view only once",
+      "passed": true
+    },
+    {
+      "name": "Escape restores the normal controls",
+      "passed": true
+    },
+    {
+      "name": "browser modifier combinations do not toggle clean view",
+      "passed": true
+    },
+    {
+      "name": "letter keys on another page control do not start interaction",
+      "passed": true
+    },
+    {
+      "name": "reference modal keeps scene shortcuts inactive",
+      "passed": true
+    },
+    {
+      "name": "focused E starts a real feed and Space freezes that hand",
+      "passed": true
+    },
+    {
+      "name": "a native mouse click keeps the paused feed and its record",
+      "passed": true,
+      "evidence": {
+        "counts": "本轮释放 0/6 粒 · 实际落水 0 粒 · 吞食 0 粒 · 尚在场景 0 粒 · 过期 0 粒；场景累计吞食 0 粒"
+      }
+    },
+    {
+      "name": "clicking the scene gives the canvas keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "withdrawing a focused hand keeps focus on an available feedback action",
+      "passed": true
+    },
+    {
+      "name": "actual mouse drag exits feeding while keeping released-pellet counts",
+      "passed": true
+    },
+    {
+      "name": "native mobile touch tap keeps the paused feed and its record",
+      "passed": true
+    },
+    {
+      "name": "mobile page has no overflow and feedback targets remain at least 44px",
+      "passed": true,
+      "evidence": {
+        "width": 390,
+        "viewport": 390,
+        "buttons": [
+          {
+            "id": "feeding-pause",
+            "width": 104.65625,
+            "height": 44
+          },
+          {
+            "id": "feeding-stop",
+            "width": 104.671875,
+            "height": 44
+          },
+          {
+            "id": "feeding-again",
+            "width": 104.671875,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "name": "native wheel zoom exits feeding",
+      "passed": true
+    },
+    {
+      "name": "native GLB replacement renders hand-right.glb",
+      "passed": true
+    },
+    {
+      "name": "native GLB replacement renders binding-example.glb",
+      "passed": true
+    },
+    {
+      "name": "native GLB replacement renders hand-right.glb",
+      "passed": true
+    },
+    {
+      "name": "clearing a textured skinned import returns to the usable courtyard",
+      "passed": true
+    },
+    {
+      "name": "scene remains active with no unintended context loss",
+      "passed": true,
+      "evidence": {
+        "loaderHidden": true,
+        "events": []
+      }
+    },
+    {
+      "name": "no page, shader-console or external-request errors",
+      "passed": true,
+      "evidence": {
+        "errors": [],
+        "consoleErrors": [],
+        "externalRequests": []
+      }
+    }
+  ],
+  "passed": 21,
+  "failed": 0,
+  "captures": [
+    "assets/feeding-mobile-v18.jpg",
+    "assets/courtyard-desktop-v18.jpg",
+    "assets/feeding-desktop-v18.jpg"
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "externalRequests": [],
+  "contextEvents": []
+}

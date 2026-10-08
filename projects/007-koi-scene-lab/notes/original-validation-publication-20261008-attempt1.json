@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-08T04:32:08.518247+00:00",
+  "clientDate": "2026-10-08",
+  "status": "failed",
+  "attempt": 1,
+  "url": "http://127.0.0.1:8997/projects/007-koi-scene-lab/upstream/koi-pond.html",
+  "renderer": "Chromium headless / forced ANGLE SwiftShader",
+  "scriptSha256": "4eb886d1de42cd54f8352cc270429e5b6e67b5a3a8f0ce5082a38e3da5b21b9a",
+  "sourceRuntimeSha256": "ac6c12b9b47e58d2a22a36d607cedefd70a1261313d349096bc03fd5f4d8882f",
+  "sourceSnapshotSha256": "ab76bca6c8d3cb8e4185189d3f217665e7d6e1695cbd98f1da8c6024cc1f8f1a",
+  "observedChecks": [
+    "HTTP runtime source bytes matched",
+    "Original loader removed with 20 fish observed",
+    "Freeze button state assertion passed before screenshot"
+  ],
+  "failure": {
+    "stage": "page.screenshot",
+    "message": "Timeout 90000ms exceeded after fonts loaded."
+  },
+  "captures": [],
+  "scope": "Incomplete original publication-package initialization/UI check only. Screenshot failed before feed/weather/camera checks; do not count this attempt as complete. Original runtime source was not modified."
+}

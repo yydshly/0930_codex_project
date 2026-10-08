@@ -1,0 +1,121 @@
+{
+  "bundleSha256": "5c3ee28d770c4388fbd5e904cc68b78204fef17ff175a910cf085bedb46884e9",
+  "checks": [
+    {
+      "name": "final bundle restores calibration through paste",
+      "passed": true
+    },
+    {
+      "name": "final bundle restores native binding export through paste",
+      "passed": true
+    },
+    {
+      "name": "final modal loops forward and reverse Tab focus",
+      "passed": true
+    },
+    {
+      "name": "final Escape closes dialog and restores opener focus",
+      "passed": true
+    },
+    {
+      "name": "final malformed JSON retains text and effective measurement",
+      "passed": true,
+      "evidence": "JSON 格式错误，请检查引号、逗号和括号"
+    },
+    {
+      "name": "final wrong-model calibration is rejected without state changes",
+      "passed": true,
+      "evidence": "校准文件与当前 GLB 不匹配，请载入对应模型"
+    },
+    {
+      "name": "final JSON text entry isolates scene shortcuts",
+      "passed": true
+    },
+    {
+      "name": "final current-data button restores exact effective calibration JSON",
+      "passed": true
+    },
+    {
+      "name": "final marking toast sits below persistent guide",
+      "passed": true,
+      "evidence": {
+        "guide": {
+          "bottom": 350.9791679382324,
+          "top": 304.3125
+        },
+        "toast": {
+          "bottom": 394.9791679382324,
+          "top": 362.3125
+        }
+      }
+    },
+    {
+      "name": "final completed calibration draft keeps old 8m scale effective",
+      "passed": true,
+      "evidence": "校准草稿 · 已选 2/2 点 · 草稿距离 6.7375 模型单位 · 旧校准 8.000 米保持生效；应用后替换，取消可回退。"
+    },
+    {
+      "name": "final draft JSON view excludes uncommitted endpoints",
+      "passed": true
+    },
+    {
+      "name": "final Escape rolls completed selection back to exact old measurement",
+      "passed": true
+    },
+    {
+      "name": "final tiny water rejection preserves feeding, water and calibration",
+      "passed": true,
+      "evidence": "池塘可游区域过小，或障碍物占满了鱼体所需空间"
+    },
+    {
+      "name": "editing existing known length is retained; zero rejects without replacing calibration",
+      "passed": true
+    },
+    {
+      "name": "valid revised known length commits and invalidates stale water",
+      "passed": true,
+      "evidence": "已校准 · 原始距离 6.7375 模型单位 → 7.500 米 · 比例 1.11317 米/模型单位"
+    },
+    {
+      "name": "final shoal metric uses scene units rather than assumed metres",
+      "passed": true,
+      "evidence": "7 条鱼 · 邻鱼朝向一致度 0.83 · 平均邻域质心偏移 0.57 场景单位 · 分离强度 0.03 · 模拟运行中"
+    },
+    {
+      "name": "final tail amplitude states fish-local units",
+      "passed": true,
+      "evidence": "转速 0.13 rad/s · 摆尾幅度 0.018 鱼体局部单位 · 展鳍 0.99 · 形变法线修正开启"
+    },
+    {
+      "name": "final calibration principle explains shared JSON validation and draft cancellation",
+      "passed": true,
+      "evidence": "Raycaster只与当前模型的可见三角形求交，将两点转为未缩放模型坐标；比例s=L真实/||p₂−p₁||模型，并统一应用到模型。校准JSON记录模型指纹、两点及已知长度；绑定JSON保存水域并可附校准记录。可查看或粘贴JSON，经相同校验后应用；重新选点可取消回退，成功应用才替换旧校准。改倍率后旧世界坐标水域失效。"
+    },
+    {
+      "name": "final 390x844 JSON dialog fits viewport and buttons are at least 44px",
+      "passed": true,
+      "evidence": {
+        "buttons": [
+          {
+            "height": 44,
+            "id": "scene-json-close"
+          },
+          {
+            "height": 44,
+            "id": "scene-json-current"
+          },
+          {
+            "height": 44,
+            "id": "scene-json-apply"
+          }
+        ],
+        "dialog": {
+          "height": 635.1041870117188,
+          "width": 362,
+          "x": 6.333333492279053,
+          "y": 104.44792175292967
+        }
+      }
+    }
+  ]
+}

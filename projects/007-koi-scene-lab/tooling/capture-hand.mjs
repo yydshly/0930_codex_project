@@ -1,0 +1,24 @@
+import {createRequire} from 'node:module';
+import {readFile,writeFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import {build} from 'esbuild';
+const require=createRequire('C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/package.json');
+const {chromium}=require('playwright'),root=fileURLToPath(new URL('../',import.meta.url));
+const browser=await chromium.launch({headless:true,args:['--enable-webgl','--ignore-gpu-blocklist','--enable-unsafe-swiftshader']});const errors=[];
+try{const page=await browser.newPage({viewport:{width:1536,height:1120}});page.setDefaultTimeout(60000);
+ page.on('pageerror',e=>{errors.push(e.message);console.log(e.message);});page.on('console',m=>{if(m.type()==='error'){errors.push(m.text());console.log(m.text().slice(0,12000));}});
+ await page.goto('http://127.0.0.1:8947/#scene',{timeout:90000});await page.waitForFunction(()=>window.__courtyard?.frameIndex>2,null,{timeout:120000});await page.evaluate(()=>window.__courtyard.active=false);
+ await page.locator('#feed').click();await page.evaluate(()=>{const c=window.__courtyard;for(let i=0;i<40;i++)c.updateDynamics(.05);const t=c.transition;c.camera.position.copy(t.to);c.controls.target.copy(t.toTarget);c.camera.fov=t.fov;c.camera.updateProjectionMatrix();c.transition=null;c.controls.update();c.water.update(c.time,c.settings,c.sunDirection,c.sun.color,0);c.water.renderPasses([c.school.group,c.school.food],[c.waterfall.group,c.interaction.rig.root]);c.composer.render();document.body.classList.add('clean-scene');});
+ const clip=await page.locator('#scene-canvas').boundingBox();await page.screenshot({path:root+'assets/hand-feeding-v3.png',clip,timeout:90000});
+ const state=await page.evaluate(()=>{const r=window.__courtyard.interaction.rig;return {gap:r.pinchGap,vertices:r.mesh.geometry.attributes.position.count,tip:r.tips.index.getWorldPosition(r.root.position.clone()).toArray(),bones:r.bones.length};});
+ const render=async(name)=>{await page.evaluate(()=>{const c=window.__courtyard;if(c.transition){c.camera.position.copy(c.transition.to);c.controls.target.copy(c.transition.toTarget);c.camera.fov=c.transition.fov;c.camera.updateProjectionMatrix();c.transition=null;}c.controls.update();c.water.update(c.time,c.settings,c.sunDirection,c.sun.color,0);c.water.renderPasses([c.school.group,c.school.food],[c.waterfall.group,c.interaction.rig.root]);c.composer.render();});await page.screenshot({path:root+'assets/'+name+'.png',clip,timeout:90000});};
+ await page.evaluate(()=>{const c=window.__courtyard;c.interaction.stop();c.inspectHand();c.updateDynamics(.05);});await render('hand-detail-v3');
+ const legacy=await build({stdin:{contents:"import {createHandRig,poseHandFlat} from './src/hand-rig-v2.js';window.__legacyRig={createHandRig,poseHandFlat};",resolveDir:root},bundle:true,format:'iife',write:false,nodePaths:[root+'tooling/node_modules']});
+ await page.addScriptTag({content:legacy.outputFiles[0].text});await page.evaluate(()=>{const c=window.__courtyard,H=c.interaction.rig,old=window.__legacyRig.createHandRig();old.root.position.copy(H.root.position);old.root.quaternion.copy(H.root.quaternion);old.root.visible=true;c.scene.add(old.root);window.__legacyHand=old;H.root.visible=false;window.__legacyRig.poseHandFlat(old,1,c.time);});await render('hand-detail-before');
+ await page.evaluate(()=>{const c=window.__courtyard;c.scene.remove(window.__legacyHand.root);c.interaction.rig.root.visible=true;for(let i=0;i<63;i++)c.updateDynamics(.05);});await render('hand-pinch-v3');
+ const pinch=await page.evaluate(()=>window.__courtyard.interaction.rig.pinchGap);
+ await page.evaluate(()=>{const c=window.__courtyard,h=c.interaction;h.timer=5.5;h.update(0,c.time);c.camera.position.set(h.point.x-.05,.13,h.point.z+.24);c.controls.target.set(h.point.x-.04,.38,h.point.z-.005);c.controls.update();});await render('hand-palm-v3');
+ await page.evaluate(()=>{const c=window.__courtyard;c.interaction.stop();c.stroke();for(let i=0;i<90;i++)c.updateDynamics(.05);});await render('hand-stroking-v3');
+ await page.evaluate(()=>{const c=window.__courtyard,p=c.interaction.fish.group.position;c.camera.position.set(p.x+.35,.66,p.z+.43);c.controls.target.copy(p).y=.02;c.controls.update();});await render('hand-contact-v3');
+ console.log(JSON.stringify({state,pinch,errors:errors.length}));await writeFile(root+'notes/hand-capture.json',JSON.stringify({state,pinch,errors},null,2));
+}finally{await browser.close();}

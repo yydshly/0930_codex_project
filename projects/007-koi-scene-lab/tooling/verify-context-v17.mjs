@@ -1,0 +1,53 @@
+// Isolated localhost recovery acceptance using the public WEBGL_lose_context API.
+import {createRequire} from 'node:module';
+import {readFile,writeFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import {createHash} from 'node:crypto';
+import assert from 'node:assert/strict';
+if(!process.argv.includes('--approved-local-browser'))throw new Error('Local browser authorization required.');
+const root=fileURLToPath(new URL('../',import.meta.url));
+const expected=process.argv.find(arg=>arg.startsWith('--expected-bundle='))?.slice('--expected-bundle='.length);
+assert.match(expected??'',/^[a-f0-9]{64}$/);
+const bundle=createHash('sha256').update(await readFile(root+'web/app.js')).digest('hex');assert.equal(bundle,expected);
+const require=createRequire('C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/package.json');
+const {chromium}=require('playwright');
+const checks=[],errors=[],consoleErrors=[],warnings=[],externalRequests=[],captures=[];let browser,page,events=[];
+const check=(name,condition,evidence)=>{checks.push({name,passed:!!condition,...evidence?{evidence}:{}});assert.ok(condition,name);console.log('PASS '+name);};
+const waterCount=page=>page.locator('#principle-metrics').innerText().then(text=>Number(/水面离屏更新 (\d+) 次/.exec(text)?.[1]));
+try{
+ browser=await chromium.launch({headless:true,args:['--enable-webgl','--ignore-gpu-blocklist']});
+ page=await browser.newPage({viewport:{width:960,height:820},deviceScaleFactor:1});page.setDefaultTimeout(120000);
+ page.on('pageerror',error=>errors.push(error.message));page.on('console',message=>{if(message.type()==='warning')warnings.push(message.text());if(message.type()==='error')consoleErrors.push(message.text());});
+ await page.addInitScript(()=>{window.__localQaContextEvents=[];for(const type of ['webglcontextlost','webglcontextrestored'])window.addEventListener(type,()=>window.__localQaContextEvents.push({type,time:performance.now()}),true);});
+ await page.route('**/*',route=>{const url=new URL(route.request().url());if(url.origin==='http://127.0.0.1:8947'||['data:','blob:'].includes(url.protocol))return route.continue();externalRequests.push(url.href);return route.abort();});
+ await page.goto('http://127.0.0.1:8947/?v='+bundle.slice(0,8)+'#scene',{waitUntil:'domcontentloaded',timeout:90000});
+ await page.waitForFunction(()=>document.getElementById('scene-loader')?.hidden,null,{timeout:120000});
+ await page.locator('#setting-fishCount').press('Home');await page.locator('#feed').click();await page.locator('#feeding-pause').click();
+ await page.locator('#principle-select').selectOption('performance');
+ await page.waitForFunction(()=>/水面离屏更新 [1-9]\d* 次/.test(document.getElementById('principle-metrics')?.textContent??''));
+ const frozen=await page.locator('#feeding-counts').innerText(),before=await waterCount(page);
+ check('recovery starts with a paused zero-fish feed record',await page.locator('#feeding-pause').getAttribute('aria-pressed')==='true'&&await page.locator('#setting-fishCount').inputValue()==='0'&&/吞食 0 粒/.test(frozen),frozen);
+ const available=await page.evaluate(()=>{const canvas=document.getElementById('scene-canvas'),gl=canvas.getContext('webgl2')??canvas.getContext('webgl');window.__localQaContextExtension=gl?.getExtension('WEBGL_lose_context');return !!window.__localQaContextExtension;});
+ check('public WebGL context-loss test extension is available',available);
+ await page.evaluate(()=>window.__localQaContextExtension.loseContext());
+ await page.waitForFunction(()=>window.__localQaContextEvents.some(event=>event.type==='webglcontextlost')&&!document.getElementById('scene-loader')?.hidden);
+ check('native context loss presents the interrupted render state',await page.locator('#scene-loader').evaluate(element=>!element.hidden),await page.locator('#scene-loader').innerText());
+ const lostWaterBefore=await waterCount(page);
+ await page.evaluate(async()=>{for(let i=0;i<3;i++)await new Promise(requestAnimationFrame);});
+ const lostWater=await waterCount(page);
+ check('interrupted context performs no new water rendering',lostWater===lostWaterBefore,{before:lostWaterBefore,after:lostWater});
+ check('context interruption preserves the paused feed ledger and fish count',await page.locator('#feeding-counts').innerText()===frozen&&await page.locator('#feeding-pause').getAttribute('aria-pressed')==='true'&&await page.locator('#setting-fishCount').inputValue()==='0');
+ await page.evaluate(()=>window.__localQaContextExtension.restoreContext());
+ await page.waitForFunction(()=>window.__localQaContextEvents.some(event=>event.type==='webglcontextrestored')&&document.getElementById('scene-loader')?.hidden);
+ check('browser-restored context clears the error overlay',await page.locator('#scene-loader').evaluate(element=>element.hidden));
+ await page.waitForFunction(previous=>Number(/水面离屏更新 (\d+) 次/.exec(document.getElementById('principle-metrics')?.textContent??'')?.[1])>previous,lostWater);
+ check('restored context rebuilds water passes instead of reusing lost textures',await waterCount(page)>lostWater,{beforeLoss:before,atLoss:lostWater,after:await waterCount(page)});
+ check('restored rendering retains user pause and the exact feed record',await page.locator('#feeding-counts').innerText()===frozen&&await page.locator('#feeding-pause').getAttribute('aria-pressed')==='true'&&await page.locator('#setting-fishCount').inputValue()==='0');
+ await page.locator('#viewport').scrollIntoViewIfNeeded();await page.evaluate(async()=>{for(let i=0;i<3;i++)await new Promise(requestAnimationFrame);});
+ await page.screenshot({path:root+'assets/context-restored-v17.jpg',type:'jpeg',quality:90});captures.push('assets/context-restored-v17.jpg');
+ events=await page.evaluate(()=>window.__localQaContextEvents);
+ check('controlled native loss and restoration complete once without page or shader-console errors',events.filter(event=>event.type==='webglcontextlost').length===1&&events.filter(event=>event.type==='webglcontextrestored').length===1&&errors.length===0&&consoleErrors.length===0&&externalRequests.length===0,{events,errors,consoleErrors,externalRequests});
+}catch(error){if(!checks.some(check=>!check.passed))checks.push({name:'context verification execution',passed:false,error:error.message});if(page)try{await page.screenshot({path:root+'assets/context-failure-v17.jpg',type:'jpeg',quality:90});captures.push('assets/context-failure-v17.jpg');events=await page.evaluate(()=>window.__localQaContextEvents);}catch{}throw error;
+}finally{
+ await writeFile(root+'notes/browser-context-v17-validation.json',JSON.stringify({date:new Date().toISOString(),clientDate:'2026-10-03',version:17,bundleSha256:bundle,scriptSha256:createHash('sha256').update(await readFile(fileURLToPath(import.meta.url))).digest('hex'),method:'User-authorized isolated localhost Chromium. The public WEBGL_lose_context extension deliberately interrupts and restores this disposable test context; actual UI actions, canvas events and DOM observations verify application recovery. Does not inspect private application objects or establish recovery from every driver failure.',checks,passed:checks.filter(check=>check.passed).length,failed:checks.filter(check=>!check.passed).length,captures,events,errors,consoleErrors,warnings,externalRequests},null,2)+'\n');if(browser)await browser.close();
+}

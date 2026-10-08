@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-02T16:04:27.340038+00:00",
+  "localDate": "2026-10-03",
+  "captures": [
+    {
+      "path": "assets/tour-desktop-v14.jpg",
+      "description": "Desktop guided construction step with explanation and actual courtyard",
+      "bytes": 134940,
+      "sha256": "131a0c62b6f4cef9bad1d72320d793c7e9a045ce4cb9ddcbcb495366a9e8591a",
+      "bundleSha256": "65d5e6cd65372012f78faf7f7f13fd9189f8872b3e16a09b539d5c4f53e93a35",
+      "width": 1265,
+      "height": 909,
+      "format": "JPEG",
+      "cssStage": "final"
+    },
+    {
+      "path": "assets/tour-mobile-v14.jpg",
+      "description": "Mobile water step with single-line compact navigation and actual courtyard",
+      "bytes": 51604,
+      "sha256": "18ff228e3e79c3758640e179ccad121c6242228ba68e9215349f6b7c70db4452",
+      "bundleSha256": "65d5e6cd65372012f78faf7f7f13fd9189f8872b3e16a09b539d5c4f53e93a35",
+      "width": 375,
+      "height": 812,
+      "format": "JPEG",
+      "cssStage": "final"
+    },
+    {
+      "path": "assets/tour-original-v14.jpg",
+      "description": "Original real scene with floating route navigation; visible original Low setting, not a High quality or hardware performance claim",
+      "bytes": 128552,
+      "sha256": "35a088fd22b1c565d47eebf9686e799aa86f07dc8003b922ca829743ea9def2a",
+      "bundleSha256": "65d5e6cd65372012f78faf7f7f13fd9189f8872b3e16a09b539d5c4f53e93a35",
+      "width": 1265,
+      "height": 889,
+      "format": "JPEG",
+      "cssStage": "before-mobile-width-fix"
+    },
+    {
+      "path": "assets/tour-ab-v14.jpg",
+      "description": "Actual four-second same-start A/B images and trajectory labels ea332a5d / 60e196c7",
+      "bytes": 91862,
+      "sha256": "20441cc5403715e8620acf52ad221c0da3959910c59de8af3d9b21734174629a",
+      "bundleSha256": "65d5e6cd65372012f78faf7f7f13fd9189f8872b3e16a09b539d5c4f53e93a35",
+      "width": 1265,
+      "height": 889,
+      "format": "JPEG",
+      "cssStage": "before-mobile-width-fix"
+    }
+  ],
+  "count": 4,
+  "finalCssSha256": "d73461b43f9652ea9e9c82a828a2130ecdf28337a05986df5a5b0441b5b9a1cb",
+  "finalHtmlSha256": "ba07be171d5e361b07a8a5abaf13a7d7d2e87128edcd759662c40745c87a3d88",
+  "method": "Original native IAB JPEG screenshots, visually inspected. Bytes preserved without repainting, cropping, or compositing.",
+  "provenance": "Original and A/B captures use final JavaScript and HTML before the isolated mobile floating navigation width:max-content CSS adjustment. Desktop and mobile captures use final CSS. The A/B results are real simulation results, not generated illustrations."
+}

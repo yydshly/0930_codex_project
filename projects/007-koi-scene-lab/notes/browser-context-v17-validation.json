@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-02T18:53:20.964Z",
+  "clientDate": "2026-10-03",
+  "version": 17,
+  "bundleSha256": "13f5604427c0d4d6942055c8339707df58d2106551854d03eeac36ab3cfea335",
+  "scriptSha256": "8ef678f7083fd82dc4d433ad4b1023a2e5261b8dce19aecd0cfc27e8b754a4ac",
+  "method": "User-authorized isolated localhost Chromium. The public WEBGL_lose_context extension deliberately interrupts and restores this disposable test context; actual UI actions, canvas events and DOM observations verify application recovery. Does not inspect private application objects or establish recovery from every driver failure.",
+  "checks": [
+    {
+      "name": "recovery starts with a paused zero-fish feed record",
+      "passed": true,
+      "evidence": "本轮释放 6/6 粒 · 实际落水 6 粒 · 吞食 0 粒 · 尚在场景 6 粒 · 过期 0 粒；场景累计吞食 0 粒"
+    },
+    {
+      "name": "public WebGL context-loss test extension is available",
+      "passed": true
+    },
+    {
+      "name": "native context loss presents the interrupted render state",
+      "passed": true,
+      "evidence": "显卡上下文暂时丢失，正在等待恢复；场景与投喂记录已保留。"
+    },
+    {
+      "name": "interrupted context performs no new water rendering",
+      "passed": true,
+      "evidence": {
+        "before": 26,
+        "after": 26
+      }
+    },
+    {
+      "name": "context interruption preserves the paused feed ledger and fish count",
+      "passed": true
+    },
+    {
+      "name": "browser-restored context clears the error overlay",
+      "passed": true
+    },
+    {
+      "name": "restored context rebuilds water passes instead of reusing lost textures",
+      "passed": true,
+      "evidence": {
+        "beforeLoss": 26,
+        "atLoss": 26,
+        "after": 28
+      }
+    },
+    {
+      "name": "restored rendering retains user pause and the exact feed record",
+      "passed": true
+    },
+    {
+      "name": "controlled native loss and restoration complete once without page or shader-console errors",
+      "passed": true,
+      "evidence": {
+        "events": [
+          {
+            "type": "webglcontextlost",
+            "time": 72311.20000001788
+          },
+          {
+            "type": "webglcontextrestored",
+            "time": 72387.59999999404
+          }
+        ],
+        "errors": [],
+        "consoleErrors": [],
+        "externalRequests": []
+      }
+    }
+  ],
+  "passed": 9,
+  "failed": 0,
+  "captures": [
+    "assets/context-restored-v17.jpg"
+  ],
+  "events": [
+    {
+      "type": "webglcontextlost",
+      "time": 72311.20000001788
+    },
+    {
+      "type": "webglcontextrestored",
+      "time": 72387.59999999404
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "warnings": [
+    "Allow attribute will take precedence over 'allowfullscreen'.",
+    "[.WebGL-0x59cc001bb200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x59cc001bb200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x59cc001bb200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x59cc001bb200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ],
+  "externalRequests": []
+}

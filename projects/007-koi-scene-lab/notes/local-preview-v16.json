@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-02T16:50:17.691272+00:00",
+  "clientDate": "2026-10-03",
+  "preview": "http://127.0.0.1:8947/?v=713cfa3c#scene",
+  "checks": [
+    {
+      "resource": "index.html",
+      "status": 200,
+      "sha256": "3ad9ab887f00a46f15b95f0d37123f2e83ff1acf11c58118171ad7bbed365777",
+      "matchesWorkspace": true
+    },
+    {
+      "resource": "app.js",
+      "status": 200,
+      "sha256": "713cfa3c73643e367b8d27efc33151be35aa64817ff1f412e1eff48ffeb30bae",
+      "matchesWorkspace": true
+    },
+    {
+      "resource": "style.css",
+      "status": 200,
+      "sha256": "6ece536421dae43f901643b577a9f0efc5b7ec6260acb5e12e7738b2b87f06ac",
+      "matchesWorkspace": true
+    }
+  ],
+  "passed": true,
+  "method": "Local HTTP file reads; does not render or interact with the page."
+}

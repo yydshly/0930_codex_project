@@ -1,0 +1,421 @@
+{
+  "date": "2026-10-03T03:05:36.923Z",
+  "version": 19,
+  "scope": "Final-bundle focused acceptance after two source fixes. The earlier cat full-patrol run is separate and belongs to its recorded base bundle. Feed and imported-model interactions are not rerun here.",
+  "status": "completed",
+  "bundleSha256": "50be1ec336502ad168b4becbb84ac043a88052bd61bc0093f2be78b81447e8a3",
+  "servedBundleSha256": "50be1ec336502ad168b4becbb84ac043a88052bd61bc0093f2be78b81447e8a3",
+  "scriptSha256": "03f9118253df429170cd6cd2d76930043276eba7eb856f05065c4c85f8f69869",
+  "elapsedMs": 378901,
+  "authorization": "Continuing user-authorized isolated localhost browser QA.",
+  "method": "Isolated Chromium UI keyboard actions, select/range controls and desktop/mobile viewport resizing; preinstalled DOM MutationObserver records transient phases without changing application state. Read-only runtime pose/time/threat snapshots. Raw native JPEGs. Software-capable WebGL; no hardware-performance or GPU-memory claims.",
+  "checks": [
+    {
+      "name": "final bundle is served exactly and initializes cat, seven fish and empty feedback",
+      "passed": true,
+      "elapsedMs": 31201,
+      "evidence": {
+        "bundleSha256": "50be1ec336502ad168b4becbb84ac043a88052bd61bc0093f2be78b81447e8a3",
+        "servedBundleSha256": "50be1ec336502ad168b4becbb84ac043a88052bd61bc0093f2be78b81447e8a3"
+      }
+    },
+    {
+      "name": "final desktop cat view frames actual body, limbs and skinned tail while paused",
+      "passed": true,
+      "elapsedMs": 119806,
+      "evidence": {
+        "bounds": {
+          "left": -0.2866761366412272,
+          "right": 0.3463910103534035,
+          "bottom": -0.5774063689861237,
+          "top": 0.20939994514852084
+        },
+        "meshVertexCount": 66588,
+        "aspect": 1.5008264462809917,
+        "method": "Read-only actual mesh vertex projection, including the skinned tail. Shader fur displacement and line whiskers are excluded."
+      }
+    },
+    {
+      "name": "final UI pause preserves the cat pose and simulation time",
+      "passed": true,
+      "elapsedMs": 123119,
+      "evidence": {
+        "state": "observe",
+        "poseNodes": 28,
+        "time": 4.999999999999988
+      }
+    },
+    {
+      "name": "final mobile cat view frames the body with no overflow and 44px animal controls",
+      "passed": true,
+      "elapsedMs": 160354,
+      "evidence": {
+        "bounds": {
+          "left": -0.41823293947292833,
+          "right": 0.5053512028048841,
+          "bottom": -0.5774063689861237,
+          "top": 0.20939994514852084
+        },
+        "meshVertexCount": 66588,
+        "aspect": 1.028735632183908,
+        "method": "Read-only actual mesh vertex projection, including the skinned tail. Shader fur displacement and line whiskers are excluded.",
+        "width": 390,
+        "viewport": 390,
+        "targets": [
+          {
+            "width": 73.5,
+            "height": 44
+          },
+          {
+            "width": 73.5,
+            "height": 44
+          },
+          {
+            "width": 73.5,
+            "height": 44
+          },
+          {
+            "width": 73.5,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "name": "final native G exposes alert before one near-hand scatter event",
+      "passed": true,
+      "elapsedMs": 208260,
+      "evidence": {
+        "trace": [
+          {
+            "phase": "idle",
+            "wallTimeMs": 189839.90000000596,
+            "status": "已恢复平静：鱼群已恢复平静，可再次轻触观察反应。",
+            "counts": "当前响应 0 条 · 受惊触发 0 次",
+            "simulationTime": 4.999999999999988,
+            "startle": {
+              "phase": "idle",
+              "source": {
+                "x": 0.8924817310006417,
+                "y": 0.21300000000000002,
+                "z": 1.6298273045254363
+              },
+              "affectedFish": 0,
+              "alertFish": 0,
+              "triggerCount": 0,
+              "intensity": 0,
+              "remaining": 0
+            }
+          },
+          {
+            "phase": "alert",
+            "wallTimeMs": 191779.19999998808,
+            "status": "警觉：手正在靠近，附近的鱼进入警觉。",
+            "counts": "当前响应 0 条 · 受惊触发 0 次",
+            "simulationTime": 5.199999999999987,
+            "startle": {
+              "phase": "alert",
+              "source": {
+                "x": 0.872427485911466,
+                "y": 0.2025717925536287,
+                "z": 1.5857079653292498
+              },
+              "affectedFish": 0,
+              "alertFish": 1,
+              "triggerCount": 0,
+              "intensity": 0,
+              "remaining": 0
+            }
+          },
+          {
+            "phase": "startled",
+            "wallTimeMs": 198901.19999998808,
+            "status": "受惊散开：鱼群正在转向、加速并离开手边。",
+            "counts": "当前响应 5 条 · 受惊触发 1 次",
+            "simulationTime": 5.999999999999984,
+            "startle": {
+              "phase": "startled",
+              "source": {
+                "x": 0.6846449594053426,
+                "y": 0.10492487877044453,
+                "z": 1.1725864070157783
+              },
+              "affectedFish": 5,
+              "alertFish": 0,
+              "triggerCount": 1,
+              "intensity": 1,
+              "remaining": 4.35
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "final response panel uses current-response counts and reports native pause",
+      "passed": true,
+      "elapsedMs": 213944,
+      "evidence": {
+        "phase": "startled",
+        "counts": "当前响应 5 条 · 受惊触发 1 次"
+      }
+    },
+    {
+      "name": "final native pause freezes threat memory and all fish poses",
+      "passed": true,
+      "elapsedMs": 216026,
+      "evidence": {
+        "time": 6.199999999999983,
+        "remaining": 4.15
+      }
+    },
+    {
+      "name": "final hand withdraws and fish recover naturally without another stimulus",
+      "passed": true,
+      "elapsedMs": 309980,
+      "evidence": {
+        "startle": {
+          "phase": "idle",
+          "source": null,
+          "affectedFish": 0,
+          "alertFish": 0,
+          "triggerCount": 1,
+          "intensity": 0,
+          "remaining": 0
+        },
+        "trace": [
+          {
+            "phase": "idle",
+            "wallTimeMs": 189839.90000000596,
+            "status": "已恢复平静：鱼群已恢复平静，可再次轻触观察反应。",
+            "counts": "当前响应 0 条 · 受惊触发 0 次",
+            "simulationTime": 4.999999999999988,
+            "startle": {
+              "phase": "idle",
+              "source": {
+                "x": 0.8924817310006417,
+                "y": 0.21300000000000002,
+                "z": 1.6298273045254363
+              },
+              "affectedFish": 0,
+              "alertFish": 0,
+              "triggerCount": 0,
+              "intensity": 0,
+              "remaining": 0
+            }
+          },
+          {
+            "phase": "alert",
+            "wallTimeMs": 191779.19999998808,
+            "status": "警觉：手正在靠近，附近的鱼进入警觉。",
+            "counts": "当前响应 0 条 · 受惊触发 0 次",
+            "simulationTime": 5.199999999999987,
+            "startle": {
+              "phase": "alert",
+              "source": {
+                "x": 0.872427485911466,
+                "y": 0.2025717925536287,
+                "z": 1.5857079653292498
+              },
+              "affectedFish": 0,
+              "alertFish": 1,
+              "triggerCount": 0,
+              "intensity": 0,
+              "remaining": 0
+            }
+          },
+          {
+            "phase": "startled",
+            "wallTimeMs": 198901.19999998808,
+            "status": "受惊散开：鱼群正在转向、加速并离开手边。",
+            "counts": "当前响应 5 条 · 受惊触发 1 次",
+            "simulationTime": 5.999999999999984,
+            "startle": {
+              "phase": "startled",
+              "source": {
+                "x": 0.6846449594053426,
+                "y": 0.10492487877044453,
+                "z": 1.1725864070157783
+              },
+              "affectedFish": 5,
+              "alertFish": 0,
+              "triggerCount": 1,
+              "intensity": 1,
+              "remaining": 4.35
+            }
+          },
+          {
+            "phase": "recovering",
+            "wallTimeMs": 262252.6999999881,
+            "status": "逐渐恢复：手已收回，受惊反应逐渐减弱。",
+            "counts": "当前响应 5 条 · 受惊触发 1 次 · 剩余约 3.5 模拟秒",
+            "simulationTime": 6.799999999999981,
+            "startle": {
+              "phase": "recovering",
+              "source": {
+                "x": 0.6846449594053426,
+                "y": 0.10492487877044453,
+                "z": 1.1725864070157783
+              },
+              "affectedFish": 5,
+              "alertFish": 0,
+              "triggerCount": 1,
+              "intensity": 0.9994266546639231,
+              "remaining": 3.549999999999999
+            }
+          },
+          {
+            "phase": "idle",
+            "wallTimeMs": 300474.8000000119,
+            "status": "已恢复平静：鱼群已恢复平静，可再次轻触观察反应。",
+            "counts": "当前响应 0 条 · 受惊触发 1 次",
+            "simulationTime": 10.400000000000096,
+            "startle": {
+              "phase": "idle",
+              "source": null,
+              "affectedFish": 0,
+              "alertFish": 0,
+              "triggerCount": 1,
+              "intensity": 0,
+              "remaining": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "final zero-fish G rejects hand approach without repopulating",
+      "passed": true,
+      "elapsedMs": 363174,
+      "evidence": {
+        "fishCount": 0,
+        "mode": "idle",
+        "message": "先增加锦鲤数量，再观察轻触惊散"
+      }
+    },
+    {
+      "name": "final page explains near-hand reaction rules and supplies a usable demo",
+      "passed": true,
+      "elapsedMs": 375081
+    },
+    {
+      "name": "final focused acceptance has no context, page, shader-console or external-request errors",
+      "passed": true,
+      "elapsedMs": 376988,
+      "evidence": {
+        "events": [],
+        "errors": [],
+        "consoleErrors": [],
+        "externalRequests": []
+      }
+    }
+  ],
+  "passed": 11,
+  "failed": 0,
+  "captures": [
+    "assets/cat-desktop-v19-final.jpg",
+    "assets/cat-mobile-v19-final.jpg",
+    "assets/startle-desktop-v19-final.jpg"
+  ],
+  "phaseEvents": [
+    {
+      "phase": "idle",
+      "wallTimeMs": 189839.90000000596,
+      "status": "已恢复平静：鱼群已恢复平静，可再次轻触观察反应。",
+      "counts": "当前响应 0 条 · 受惊触发 0 次",
+      "simulationTime": 4.999999999999988,
+      "startle": {
+        "phase": "idle",
+        "source": {
+          "x": 0.8924817310006417,
+          "y": 0.21300000000000002,
+          "z": 1.6298273045254363
+        },
+        "affectedFish": 0,
+        "alertFish": 0,
+        "triggerCount": 0,
+        "intensity": 0,
+        "remaining": 0
+      }
+    },
+    {
+      "phase": "alert",
+      "wallTimeMs": 191779.19999998808,
+      "status": "警觉：手正在靠近，附近的鱼进入警觉。",
+      "counts": "当前响应 0 条 · 受惊触发 0 次",
+      "simulationTime": 5.199999999999987,
+      "startle": {
+        "phase": "alert",
+        "source": {
+          "x": 0.872427485911466,
+          "y": 0.2025717925536287,
+          "z": 1.5857079653292498
+        },
+        "affectedFish": 0,
+        "alertFish": 1,
+        "triggerCount": 0,
+        "intensity": 0,
+        "remaining": 0
+      }
+    },
+    {
+      "phase": "startled",
+      "wallTimeMs": 198901.19999998808,
+      "status": "受惊散开：鱼群正在转向、加速并离开手边。",
+      "counts": "当前响应 5 条 · 受惊触发 1 次",
+      "simulationTime": 5.999999999999984,
+      "startle": {
+        "phase": "startled",
+        "source": {
+          "x": 0.6846449594053426,
+          "y": 0.10492487877044453,
+          "z": 1.1725864070157783
+        },
+        "affectedFish": 5,
+        "alertFish": 0,
+        "triggerCount": 1,
+        "intensity": 1,
+        "remaining": 4.35
+      }
+    },
+    {
+      "phase": "recovering",
+      "wallTimeMs": 262252.6999999881,
+      "status": "逐渐恢复：手已收回，受惊反应逐渐减弱。",
+      "counts": "当前响应 5 条 · 受惊触发 1 次 · 剩余约 3.5 模拟秒",
+      "simulationTime": 6.799999999999981,
+      "startle": {
+        "phase": "recovering",
+        "source": {
+          "x": 0.6846449594053426,
+          "y": 0.10492487877044453,
+          "z": 1.1725864070157783
+        },
+        "affectedFish": 5,
+        "alertFish": 0,
+        "triggerCount": 1,
+        "intensity": 0.9994266546639231,
+        "remaining": 3.549999999999999
+      }
+    },
+    {
+      "phase": "idle",
+      "wallTimeMs": 300474.8000000119,
+      "status": "已恢复平静：鱼群已恢复平静，可再次轻触观察反应。",
+      "counts": "当前响应 0 条 · 受惊触发 1 次",
+      "simulationTime": 10.400000000000096,
+      "startle": {
+        "phase": "idle",
+        "source": null,
+        "affectedFish": 0,
+        "alertFish": 0,
+        "triggerCount": 1,
+        "intensity": 0,
+        "remaining": 0
+      }
+    }
+  ],
+  "contextEvents": [],
+  "errors": [],
+  "consoleErrors": [],
+  "externalRequests": []
+}

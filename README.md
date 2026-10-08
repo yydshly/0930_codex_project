@@ -20,6 +20,7 @@
 | 004 | [Rhythm Drop · 音乐型声音与视听体验研究](projects/004-rhythm-drop/README.md) | **目标：** 研究音乐型声音如何驱动视觉、故事与互动<br>**来源：** Gorden Sun 的 X 音乐动画展示<br>**实验：** 场景叙事、声音身份、花园创造与漂流、儿童游戏、原创回声小队和复杂情绪<br>**结论：** 声音主导，角色驱动系列，故事与表演共同设计<br>**制作：** 参考图、程序化模型与声音时钟驱动实时动画<br>**状态：** 研究原型，产品价值尚未验证。 | 已归档 | [Gorden Sun · 原网页音乐效果](https://x.com/Gorden_Sun/status/2105302007896797351)<br>技术：[mrdoob/three.js](https://github.com/mrdoob/three.js) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/004-rhythm-drop/) |
 | 005 | [Plush Lab · 毛绒实验室](projects/005-plush-lab/README.md) | **背景：** 从舒适自然的毛绒质感出发，积累创作、互动与研究<br>**能力：** 绒毛剪染卷梳、随机搭配、小世界、陪伴笔记、页面提醒、固定任务及完整原作高斯展示<br>**原理：** Three.js 程序纤维与表面场、Spark 高斯渲染、状态机与本机存储<br>**场景：** 自由设计、网页角色、技术学习与生活记录<br>**价值：** 保留你的作品和方法积累，为陪伴与 Agent 可视化提供基础<br>**边界：** 研究原型，真实 AI 与后台提醒待接入，自制质感尚未达到参考。 | 研究中 | [mrdoob/three.js](https://github.com/mrdoob/three.js) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/005-plush-lab/) |
 | 006 | [AI Visual Atlas · 视觉创作能力图谱](projects/006-ai-visual-atlas/README.md) | **范围：** 研究十个视觉创作链接，区分作品源码、风格 Skill、游戏成品、生成工具与资料索引<br>**原理：** 模型理解与创作，代码逐帧渲染、实时游戏，以及生成素材和合成，各项目分别核对<br>**场景：** 音乐 MV、产品宣传、角色动画、游戏体验与风格研究<br>**实测：** 整曲图片 MV、5 秒 H3 演唱与绿幕合成、24 秒六幕网页宣传片<br>**意义：** 理解可复用的时间线、模型调度、素材一致性、检查与交付<br>**边界：** 全曲真实演唱、逐字口型验收和任意 URL 自动服务未完成，部分原作仅本地研究，完整游戏游玩未验收。 | 已完成 | [鸟哥 · 十个视觉创作项目汇总](https://x.com/NFTCPS/status/2105493719931826452)<br>资料索引：[yihui-dev/awesome-opus5-5-videos](https://github.com/yihui-dev/awesome-opus5-5-videos)<br>[十项目源库列表](projects/006-ai-visual-atlas/publication/index.html#library) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/006-ai-visual-atlas/) |
+| 007 | [Koi Scene Lab · 庭院效果与实景构造](projects/007-koi-scene-lab/README.md) | **能力：** 原作体验、按图三维庭院、投喂与惊散、生态动物、GLB 导入与尺寸校准<br>**原理：** 程序化建模、GPU 水波与反射折射、Boids 群游、骨骼动画与状态机<br>**场景：** 互动展示、庭院预演、已有模型核对与技术学习<br>**价值：** 保存场景体验和可复用方法，为数字老家与个性化作品建立基础<br>**扩展：** 照片参数化、纪念摆件、实物交付与一致性核验，均需继续建设<br>**边界：** 研究原型，未做现场测绘，尚无照片自动建模和制造输出。 | 研究中 | [souranyp-stack/koi-pond-garden](https://github.com/souranyp-stack/koi-pond-garden) | — |
 
 <!-- PROJECT_INDEX:END -->
 
@@ -118,6 +119,21 @@
 ![AI Visual Atlas · 视觉创作能力图谱 项目引导图](projects/006-ai-visual-atlas/assets/atlas-projects-overview.png)
 
 [研究详情](projects/006-ai-visual-atlas/README.md) · [在线演示](https://yydshly.github.io/0930_codex_project/projects/006-ai-visual-atlas/)
+
+### 007 · Koi Scene Lab · 庭院效果与实景构造
+
+- **能力：** 原作体验、按图三维庭院、投喂与惊散、生态动物、GLB 导入与尺寸校准
+- **原理：** 程序化建模、GPU 水波与反射折射、Boids 群游、骨骼动画与状态机
+- **场景：** 互动展示、庭院预演、已有模型核对与技术学习
+- **价值：** 保存场景体验和可复用方法，为数字老家与个性化作品建立基础
+- **扩展：** 照片参数化、纪念摆件、实物交付与一致性核验，均需继续建设
+- **边界：** 研究原型，未做现场测绘，尚无照片自动建模和制造输出。
+
+源库：[souranyp-stack/koi-pond-garden](https://github.com/souranyp-stack/koi-pond-garden)。先阅读下方引导图，再进入研究文档与交互演示。
+
+![Koi Scene Lab · 庭院效果与实景构造 项目引导图](projects/007-koi-scene-lab/assets/library-value-map-v21.png)
+
+[研究详情](projects/007-koi-scene-lab/README.md)
 
 <!-- PROJECT_PREVIEWS:END -->
 

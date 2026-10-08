@@ -1,0 +1,5 @@
+The attached koi-pond.html is the final, verified build of my Japanese koi pond garden: a single self-contained HTML file on three.js r160 UMD and dat.gui, with procedural everything (terrain, stones, bridge, pavilion, sakura, maple, bamboo, lotus, 20 koi across 18 varieties, physically simulated water with reflection and refraction passes, a film-tour camera, four weather presets, a first-person hand for feeding and stroking, and procedural Web Audio).
+
+Use this file as the source of truth. Do not rewrite, reformat, re-indent or "clean up" any part of it, and do not change any default in the P object or any shader constant unless I ask. Serve it with `python3 -m http.server 8765` and open http://localhost:8765/koi-pond.html?v=1 to confirm it runs: no console errors, the loader completes, the cinematic tour starts on "The garden from above", and the HUD shows High quality.
+
+Then [describe the one change you want]. After the change: screenshot before/after, check the console, measure fps, and commit with an imperative subject and an explanatory body.

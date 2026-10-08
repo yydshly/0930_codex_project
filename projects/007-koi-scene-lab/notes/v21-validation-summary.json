@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-03T09:55:14.807872+00:00",
+  "version": 21,
+  "status": "scoped_acceptance_completed",
+  "runtimeVersion": 20,
+  "bundleSha256": "fbd61419d326470cdd2a69f4f44bf06fad42c4faa8020e478b1f3f9fd0046b36",
+  "preview": "http://127.0.0.1:8947/?v=understanding-v21#tech",
+  "automatic": {
+    "passed": 278,
+    "failed": 0,
+    "exitCode": 0,
+    "record": "notes/numerical-v21-result.json",
+    "allSourceHashesMatched": true
+  },
+  "native": {
+    "passed": 10,
+    "failed": 0,
+    "record": "notes/understanding-native-v21.json",
+    "allSourceHashesMatched": true,
+    "scope": "Native localhost content navigation, keyboard details, exact PNG download and desktop/mobile reading layout. Original/scene gameplay, GPU rendering and manufacturing are not retested."
+  },
+  "visual": {
+    "rawNativeCaptures": 3,
+    "reviewed": 3,
+    "compositeReviewed": true,
+    "manifest": "notes/v21-capture-manifest.json",
+    "renderRecord": "notes/understanding-render-v21.json"
+  },
+  "static": {
+    "record": "notes/algorithm-v21-package-validation.json",
+    "upstreamSnapshots": 9,
+    "relativeHtmlReferences": 20,
+    "publicFiles": 27,
+    "passed": true
+  },
+  "http": {
+    "record": "notes/local-preview-v21.json",
+    "resources": 8,
+    "passed": true
+  },
+  "scope": "Static explanation, source-backed original effect/technology mapping, current capability distinctions, end-user value and future extensions. One deterministic infographic. Scene runtime remains v20 and upstream remains locked.",
+  "limitations": [
+    "Photo-to-parametric-home, semantic reconstruction, manufacturing exports, physical delivery and consistency acceptance are proposals only.",
+    "Original and courtyard gameplay flows are not rerun in this content-only round; prior native evidence retains its own version.",
+    "No photorealism acceptance, hardware-performance or GPU-memory claim."
+  ],
+  "git": {
+    "committed": false,
+    "pushed": false,
+    "archived": false
+  }
+}

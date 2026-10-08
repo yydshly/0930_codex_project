@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-02T14:13:55.439541+00:00",
+  "version": 11,
+  "bundleSha256": "286254bea22d4c957ffa9751569c90c5c55c6382adad6b2046ecbafeabb79bce",
+  "preview": "http://127.0.0.1:8947/?v=286254be#scene",
+  "numerical": {
+    "tests": 113,
+    "passed": 113,
+    "failed": 0,
+    "record": "notes/numerical-v11.tap"
+  },
+  "browser": {
+    "method": "IAB visible UI scoped functional QA",
+    "passedCases": 17,
+    "record": "notes/browser-v11-validation.json",
+    "importUIRoundtrip": "not completed: IAB native filechooser interception unavailable"
+  },
+  "captures": {
+    "count": 6,
+    "record": "notes/v11-capture-manifest.json"
+  },
+  "collection": {
+    "testsPassed": 14,
+    "staticDemosBuilt": 17
+  },
+  "package": {
+    "upstreamSnapshotsUnchanged": 9,
+    "publicFilesMatched": 22,
+    "relativeReferencesChecked": 14,
+    "record": "notes/algorithm-v11-package-validation.json"
+  },
+  "realAssetStatus": "Program courtyard and demo GLB; real place requires supplied scanned/reconstructed assets and known physical distance.",
+  "passedWithinScope": true
+}

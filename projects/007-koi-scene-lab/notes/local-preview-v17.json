@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-02T23:28:17.256739+00:00",
+  "clientDate": "2026-10-03",
+  "preview": "http://127.0.0.1:8947/?v=13f56044#scene",
+  "bundleSha256": "13f5604427c0d4d6942055c8339707df58d2106551854d03eeac36ab3cfea335",
+  "checks": [
+    {
+      "resource": "index.html",
+      "status": 200,
+      "sha256": "839a5f5482b75175c48ca1ccb5df4b4a757ce1460f09eadf2b05f8413b7311aa",
+      "matchesWorkspace": true
+    },
+    {
+      "resource": "app.js",
+      "status": 200,
+      "sha256": "13f5604427c0d4d6942055c8339707df58d2106551854d03eeac36ab3cfea335",
+      "matchesWorkspace": true
+    },
+    {
+      "resource": "style.css",
+      "status": 200,
+      "sha256": "6ece536421dae43f901643b577a9f0efc5b7ec6260acb5e12e7738b2b87f06ac",
+      "matchesWorkspace": true
+    }
+  ],
+  "passed": true,
+  "method": "Local HTTP resource reads and byte comparison after restarting a stopped preview service. Native rendering is recorded separately."
+}

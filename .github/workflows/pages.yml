@@ -60,6 +60,11 @@ jobs:
           npm ci --prefix projects/005-plush-lab/tooling
           npm test --prefix projects/005-plush-lab/tooling
           npm run build --prefix projects/005-plush-lab/tooling
+      - name: Validate and build Koi Scene Lab
+        run: |
+          npm ci --prefix projects/007-koi-scene-lab/tooling
+          npm test --prefix projects/007-koi-scene-lab/tooling
+          npm run build --prefix projects/007-koi-scene-lab/tooling
       - name: Build all static demos
         run: python scripts/build_site.py
       - uses: actions/configure-pages@v5

@@ -1,0 +1,61 @@
+{
+  "clientDate": "2026-10-02",
+  "timeZone": "Asia/Shanghai",
+  "bundleSha256": "6976e5ffaf9da6ad0aa0083ec79e3761d13beef2bcfd7e8e964361d2eb6a4fdd",
+  "numerical": {
+    "passed": 40,
+    "failed": 0,
+    "record": "notes/numerical-v6.tap"
+  },
+  "browserAndPackage": {
+    "v6-browser-validation": {
+      "path": "notes/v6-browser-validation.json",
+      "passed": 29,
+      "bundleSha256": "6976e5ffaf9da6ad0aa0083ec79e3761d13beef2bcfd7e8e964361d2eb6a4fdd"
+    },
+    "koi-v6-validation": {
+      "path": "notes/koi-v6-validation.json",
+      "passed": 31,
+      "bundleSha256": "6976e5ffaf9da6ad0aa0083ec79e3761d13beef2bcfd7e8e964361d2eb6a4fdd"
+    },
+    "hand-v6-validation": {
+      "path": "notes/hand-v6-validation.json",
+      "passed": 25,
+      "bundleSha256": "6976e5ffaf9da6ad0aa0083ec79e3761d13beef2bcfd7e8e964361d2eb6a4fdd"
+    },
+    "browser-v6-validation": {
+      "path": "notes/browser-v6-validation.json",
+      "passed": 24,
+      "bundleSha256": "6976e5ffaf9da6ad0aa0083ec79e3761d13beef2bcfd7e8e964361d2eb6a4fdd"
+    },
+    "algorithm-v6-package-validation": {
+      "path": "notes/algorithm-v6-package-validation.json",
+      "passed": true,
+      "bundleSha256": "6976e5ffaf9da6ad0aa0083ec79e3761d13beef2bcfd7e8e964361d2eb6a4fdd"
+    }
+  },
+  "collectionTests": {
+    "passed": 13,
+    "command": "python -m unittest discover -s tests"
+  },
+  "staticDemosBuilt": 14,
+  "aB": {
+    "sameParametersMeanDistance": 0,
+    "changedParametersMeanDistance": 0.1918091993243984,
+    "changedParametersMaxDistance": 0.6737085124120344,
+    "boundSameParametersMeanDistance": 0
+  },
+  "boundSchool": {
+    "simulatedSeconds": 30,
+    "minimumBodyClearance": 0.015055462310215983,
+    "consumed": 6
+  },
+  "initialCheckIssue": "First A/B check observed before the asynchronous B button callback finished. Explicit result waiting resolved the test timing issue; initial evidence retained separately.",
+  "limitations": [
+    "Procedural demo model, not a scan",
+    "No hardware performance or photorealism claim",
+    "Horizontal polygon water; uniform depth and cylindrical obstacles",
+    "CPU floaters sample Gerstner only, without GPU ripple readback"
+  ],
+  "published": false
+}

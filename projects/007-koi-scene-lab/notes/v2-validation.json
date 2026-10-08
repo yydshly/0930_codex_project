@@ -1,0 +1,38 @@
+{
+  "checks": [
+    "GPU 半浮点涟漪可用",
+    "涟漪从扰动点向邻域传播",
+    "池岸遮罩外高度保持零",
+    "暂停不推进 GPU 模拟",
+    "折射目标保存深度纹理",
+    "手部几何与骨骼权重有效",
+    "投喂进入手部伸出阶段",
+    "食物释放并建立鱼群目标",
+    "投喂结束后手部退场",
+    "锦鲤靠近后进入实际抚摸阶段",
+    "抚摸退出释放鱼群控制",
+    "无鱼时禁止抚摸且给出反馈",
+    "青蛙跳跃抬升并切换伸腿模型",
+    "青蛙落到另一片睡莲",
+    "乌龟从晒台进入游泳状态",
+    "乌龟完整循环后回到晒台",
+    "三只蜻蜓重新起飞",
+    "用户可主动结束手部互动",
+    "移动端无横向溢出",
+    "移动端六个主要动作均在画布内",
+    "浏览器与着色器错误为零"
+  ],
+  "errors": [],
+  "wave": {
+    "count": 1212,
+    "outside": 0,
+    "steps": 22,
+    "paused": true
+  },
+  "hand": {
+    "valid": true,
+    "bones": 26,
+    "vertices": 22417
+  },
+  "method": "Headless Chromium / software WebGL. Action state machines advanced deterministically in 0.05s simulation steps; selected frames rendered. Not a hardware performance benchmark."
+}

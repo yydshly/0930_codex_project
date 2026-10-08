@@ -1,0 +1,825 @@
+{
+  "date": "2026-10-02T10:02:26.726Z",
+  "bundleSha256": "edcf149d7d2e2b7e929c95ade4b6915ffbae65a43705d0499514bfdd379fa926",
+  "clientDate": "2026-10-02",
+  "timeZone": "Asia/Shanghai",
+  "checks": [
+    "鱼体包含真实凹入口腔及可变形唇缘",
+    "鱼嘴两侧均有立体口须",
+    "七类鱼鳍具有细分网格",
+    "两侧眼球和瞳孔均为独立立体几何",
+    "双眼在头部外侧没有被鱼体遮埋",
+    "池中有七种锦鲤花纹",
+    "锦鲤近景按钮清除参考图并建立观察对象",
+    "近景真实动画帧跟随游动鱼头",
+    "近景水下折射使用1024像素宽缓冲",
+    "近景拖动相机后保持鱼头跟随",
+    "切换普通镜头退出锦鲤跟随",
+    "仅尾号19锦鲤靠近饲料时由它获得目标",
+    "伸手捏持六粒有限饲料且没有提前掉落",
+    "整次投喂只释放六粒且持有数量递减",
+    "锦鲤在自然追食路径中实际吞食",
+    "只有已落水且到达真实嘴边的饲料开始吞食",
+    "吞食包含进入鱼嘴的连续可见过程",
+    "吞食计数只来自吞下饲料且不会超过六粒",
+    "投喂完成后手自然退场",
+    "追食张嘴达到可见开口",
+    "吞食结束后的嘴部恢复闭合并同步材质",
+    "真实暂停帧冻结鱼嘴、空中饲料和吞食计数",
+    "解除暂停后饲料继续下落",
+    "重复投喂开始时保留上一把活颗粒和累计吞食统计",
+    "下一把六粒与上一把共存且不覆盖活颗粒",
+    "恢复默认清除饲料、吞食统计及近景状态",
+    "没有锦鲤时近景给出明确反馈",
+    "GLB展示模式禁用锦鲤近景和投喂",
+    "退出GLB后恢复锦鲤近景入口",
+    "锦鲤材质着色器与页面脚本无错误",
+    "验证期间资产均从本地加载"
+  ],
+  "failures": [],
+  "evidence": {
+    "anatomy": {
+      "valid": true,
+      "bodyVertices": 6268,
+      "outerLipVertices": 57,
+      "interiorVertices": 58,
+      "recessMeters": 0.03999999165534973,
+      "barbelsLeft": 113,
+      "barbelsRight": 113,
+      "finTypes": {
+        "0": 341,
+        "1": 165,
+        "2": 165,
+        "3": 165,
+        "4": 165,
+        "5": 77,
+        "6": 465
+      },
+      "eyeHits": [
+        {
+          "center": [
+            1.0581685106292804,
+            -0.19078598890759835,
+            0.2675302295038239
+          ],
+          "axis": [
+            -0.9458657125563715,
+            0.31646052406922315,
+            -0.07204714092911572
+          ],
+          "globeVertices": 357,
+          "pupilVertices": 221,
+          "visibleFromOutside": true
+        },
+        {
+          "center": [
+            1.1419742628709866,
+            -0.19078598890759835,
+            0.2573349709912812
+          ],
+          "axis": [
+            0.9010032965012443,
+            0.3164605240692233,
+            -0.2967251192597674
+          ],
+          "globeVertices": 357,
+          "pupilVertices": 221,
+          "visibleFromOutside": true
+        }
+      ],
+      "styles": [
+        "红白",
+        "大正三色",
+        "山吹黄金",
+        "昭和三色",
+        "丹顶",
+        "白写",
+        "浅黄"
+      ]
+    },
+    "near": {
+      "targetError": 5.551115123125783e-17,
+      "mouthOpen": 0.14982046082882938,
+      "refraction": [
+        1024,
+        682
+      ],
+      "offset": [
+        0.30128272847445525,
+        0.44999999999999996,
+        -0.3388638628166003
+      ]
+    },
+    "nearest": {
+      "distances": [
+        2.4933517338382685,
+        2.583833546711941,
+        2.4877206850369293,
+        2.5668720849253215,
+        2.567810829672934,
+        2.537494271963401,
+        2.4854042074091227,
+        2.5411685209503374,
+        2.4931706836363747,
+        2.5601938415638306,
+        2.5541242809735127,
+        2.5738144816607833,
+        2.5244889461517843,
+        2.512087422425305,
+        2.4975952954128764,
+        2.57640677136985,
+        2.5413594062255553,
+        2.491132003423221,
+        2.5100868778055894,
+        0.08814468399687198
+      ],
+      "claimed": [
+        19
+      ]
+    },
+    "beforeRelease": {
+      "emitted": 0,
+      "held": 6,
+      "particles": 0
+    },
+    "feed": {
+      "release": [
+        {
+          "at": 1.7499999999999978,
+          "emitted": 1,
+          "held": 5
+        },
+        {
+          "at": 1.7999999999999976,
+          "emitted": 2,
+          "held": 4
+        },
+        {
+          "at": 1.8499999999999974,
+          "emitted": 3,
+          "held": 3
+        },
+        {
+          "at": 1.8749999999999973,
+          "emitted": 4,
+          "held": 2
+        },
+        {
+          "at": 1.9249999999999972,
+          "emitted": 5,
+          "held": 1
+        },
+        {
+          "at": 1.974999999999997,
+          "emitted": 6,
+          "held": 0
+        }
+      ],
+      "bites": [
+        {
+          "grain": 5,
+          "at": 5.050000000000004,
+          "landed": true,
+          "delay": 2.875000000000008,
+          "mouthOpen": 0.8997454410574441,
+          "planarDistance": 0.037390555834385775,
+          "verticalDistance": 0.002721782997050691
+        },
+        {
+          "grain": 1,
+          "at": 5.075000000000005,
+          "landed": true,
+          "delay": 3.0750000000000077,
+          "mouthOpen": 0.9155843758081305,
+          "planarDistance": 0.03846487158231146,
+          "verticalDistance": 0.009201945837593185
+        },
+        {
+          "grain": 3,
+          "at": 5.100000000000005,
+          "landed": true,
+          "delay": 3.0250000000000083,
+          "mouthOpen": 0.9251911753516097,
+          "planarDistance": 0.0355908108345724,
+          "verticalDistance": 0.004865126089197681
+        },
+        {
+          "grain": 4,
+          "at": 5.125000000000005,
+          "landed": true,
+          "delay": 3.000000000000009,
+          "mouthOpen": 0.9310179938164431,
+          "planarDistance": 0.03106182771697889,
+          "verticalDistance": 0.006264365501762417
+        },
+        {
+          "grain": 2,
+          "at": 5.150000000000006,
+          "landed": true,
+          "delay": 3.100000000000009,
+          "mouthOpen": 0.9345521378639443,
+          "planarDistance": 0.029841750282215748,
+          "verticalDistance": 0.0014504867680496872
+        },
+        {
+          "grain": 0,
+          "at": 5.175000000000006,
+          "landed": true,
+          "delay": 3.225000000000009,
+          "mouthOpen": 0.9366957045845946,
+          "planarDistance": 0.02940507878387541,
+          "verticalDistance": 0.00459981953981025
+        }
+      ],
+      "swallows": [
+        {
+          "grain": 5,
+          "at": 5.050000000000004,
+          "mouthDistance": 0.037489488770685496,
+          "progress": 0
+        },
+        {
+          "grain": 1,
+          "at": 5.075000000000005,
+          "mouthDistance": 0.03955024845739544,
+          "progress": 0
+        },
+        {
+          "grain": 5,
+          "at": 5.075000000000005,
+          "mouthDistance": 0.025897399803782008,
+          "progress": 0.15625000000000222
+        },
+        {
+          "grain": 1,
+          "at": 5.100000000000005,
+          "mouthDistance": 0.028060313415984656,
+          "progress": 0.15625000000000222
+        },
+        {
+          "grain": 3,
+          "at": 5.100000000000005,
+          "mouthDistance": 0.03592179377099795,
+          "progress": 0
+        },
+        {
+          "grain": 5,
+          "at": 5.100000000000005,
+          "mouthDistance": 0.016563103133031196,
+          "progress": 0.31250000000000444
+        },
+        {
+          "grain": 1,
+          "at": 5.125000000000005,
+          "mouthDistance": 0.01859976003906877,
+          "progress": 0.31250000000000444
+        },
+        {
+          "grain": 3,
+          "at": 5.125000000000005,
+          "mouthDistance": 0.02453433968853318,
+          "progress": 0.15625000000000222
+        },
+        {
+          "grain": 4,
+          "at": 5.125000000000005,
+          "mouthDistance": 0.031687212188183246,
+          "progress": 0
+        },
+        {
+          "grain": 5,
+          "at": 5.125000000000005,
+          "mouthDistance": 0.009397410598571613,
+          "progress": 0.46875000000000666
+        },
+        {
+          "grain": 1,
+          "at": 5.150000000000006,
+          "mouthDistance": 0.010895652792531687,
+          "progress": 0.46875000000000666
+        },
+        {
+          "grain": 2,
+          "at": 5.150000000000006,
+          "mouthDistance": 0.029876980633430996,
+          "progress": 0
+        },
+        {
+          "grain": 3,
+          "at": 5.150000000000006,
+          "mouthDistance": 0.014784370532155481,
+          "progress": 0.31250000000000444
+        },
+        {
+          "grain": 4,
+          "at": 5.150000000000006,
+          "mouthDistance": 0.02089977302473732,
+          "progress": 0.15625000000000222
+        },
+        {
+          "grain": 5,
+          "at": 5.150000000000006,
+          "mouthDistance": 0.004422109319140389,
+          "progress": 0.6250000000000089
+        },
+        {
+          "grain": 0,
+          "at": 5.175000000000006,
+          "mouthDistance": 0.029762677938732933,
+          "progress": 0
+        },
+        {
+          "grain": 1,
+          "at": 5.175000000000006,
+          "mouthDistance": 0.005314573576495672,
+          "progress": 0.6250000000000089
+        },
+        {
+          "grain": 2,
+          "at": 5.175000000000006,
+          "mouthDistance": 0.019339479411251803,
+          "progress": 0.15625000000000222
+        },
+        {
+          "grain": 3,
+          "at": 5.175000000000006,
+          "mouthDistance": 0.006848263737030718,
+          "progress": 0.46875000000000666
+        },
+        {
+          "grain": 4,
+          "at": 5.175000000000006,
+          "mouthDistance": 0.011860216873528527,
+          "progress": 0.31250000000000444
+        },
+        {
+          "grain": 5,
+          "at": 5.175000000000006,
+          "mouthDistance": 0.003957088019121077,
+          "progress": 0.7812500000000111
+        },
+        {
+          "grain": 0,
+          "at": 5.200000000000006,
+          "mouthDistance": 0.02013918127985506,
+          "progress": 0.15625000000000222
+        },
+        {
+          "grain": 1,
+          "at": 5.200000000000006,
+          "mouthDistance": 0.006628574856960368,
+          "progress": 0.7812500000000111
+        },
+        {
+          "grain": 2,
+          "at": 5.200000000000006,
+          "mouthDistance": 0.011188844389367241,
+          "progress": 0.31250000000000444
+        },
+        {
+          "grain": 3,
+          "at": 5.200000000000006,
+          "mouthDistance": 0.002923206721310114,
+          "progress": 0.6250000000000089
+        },
+        {
+          "grain": 4,
+          "at": 5.200000000000006,
+          "mouthDistance": 0.005691655636395262,
+          "progress": 0.46875000000000666
+        },
+        {
+          "grain": 5,
+          "at": 5.200000000000006,
+          "mouthDistance": 0.0071384958809659,
+          "progress": 0.9375000000000133
+        },
+        {
+          "grain": 0,
+          "at": 5.225000000000007,
+          "mouthDistance": 0.0146621052415444,
+          "progress": 0.31250000000000444
+        },
+        {
+          "grain": 1,
+          "at": 5.225000000000007,
+          "mouthDistance": 0.0053191978559630195,
+          "progress": 0.9375000000000133
+        },
+        {
+          "grain": 2,
+          "at": 5.225000000000007,
+          "mouthDistance": 0.007538191299397359,
+          "progress": 0.46875000000000666
+        },
+        {
+          "grain": 3,
+          "at": 5.225000000000007,
+          "mouthDistance": 0.003715175178547707,
+          "progress": 0.7812500000000111
+        },
+        {
+          "grain": 4,
+          "at": 5.225000000000007,
+          "mouthDistance": 0.004465720774836777,
+          "progress": 0.6250000000000089
+        },
+        {
+          "grain": 0,
+          "at": 5.250000000000007,
+          "mouthDistance": 0.010863611490754287,
+          "progress": 0.46875000000000666
+        },
+        {
+          "grain": 2,
+          "at": 5.250000000000007,
+          "mouthDistance": 0.005513746766100343,
+          "progress": 0.6250000000000089
+        },
+        {
+          "grain": 3,
+          "at": 5.250000000000007,
+          "mouthDistance": 0.003664693390195185,
+          "progress": 0.9375000000000133
+        },
+        {
+          "grain": 4,
+          "at": 5.250000000000007,
+          "mouthDistance": 0.0038057118799303393,
+          "progress": 0.7812500000000111
+        },
+        {
+          "grain": 0,
+          "at": 5.2750000000000075,
+          "mouthDistance": 0.007690670254414348,
+          "progress": 0.6250000000000089
+        },
+        {
+          "grain": 2,
+          "at": 5.2750000000000075,
+          "mouthDistance": 0.004048519760849001,
+          "progress": 0.7812500000000111
+        },
+        {
+          "grain": 4,
+          "at": 5.2750000000000075,
+          "mouthDistance": 0.0032064179014218482,
+          "progress": 0.9375000000000133
+        },
+        {
+          "grain": 0,
+          "at": 5.300000000000008,
+          "mouthDistance": 0.0050447803412682094,
+          "progress": 0.7812500000000111
+        },
+        {
+          "grain": 2,
+          "at": 5.300000000000008,
+          "mouthDistance": 0.003469900231202407,
+          "progress": 0.9375000000000133
+        },
+        {
+          "grain": 0,
+          "at": 5.325000000000008,
+          "mouthDistance": 0.0038243375050656314,
+          "progress": 0.9375000000000133
+        }
+      ],
+      "finished": [
+        {
+          "grain": 5,
+          "at": 5.225000000000007,
+          "expired": false,
+          "visible": false,
+          "swallow": true
+        },
+        {
+          "grain": 1,
+          "at": 5.250000000000007,
+          "expired": false,
+          "visible": false,
+          "swallow": true
+        },
+        {
+          "grain": 3,
+          "at": 5.2750000000000075,
+          "expired": false,
+          "visible": false,
+          "swallow": true
+        },
+        {
+          "grain": 4,
+          "at": 5.300000000000008,
+          "expired": false,
+          "visible": false,
+          "swallow": true
+        },
+        {
+          "grain": 2,
+          "at": 5.325000000000008,
+          "expired": false,
+          "visible": false,
+          "swallow": true
+        },
+        {
+          "grain": 0,
+          "at": 5.3500000000000085,
+          "expired": false,
+          "visible": false,
+          "swallow": true
+        }
+      ],
+      "heldMonotone": true,
+      "heldConserved": true,
+      "maxConsumed": 6,
+      "consumed": 6,
+      "fishConsumed": 6,
+      "particles": 6,
+      "maxMouthOpen": 0.9398354888182426,
+      "finalEmitted": 6,
+      "finalHeld": 0,
+      "mode": "idle"
+    },
+    "closed": {
+      "time": 19.099999999999973,
+      "feedUntil": 16,
+      "mouthOpen": 0.0807585433923112,
+      "uniform": 0.0807585433923112
+    },
+    "pause": {
+      "paused": true,
+      "time": 21.124999999999858,
+      "timer": 2.024999999999997,
+      "mouth": [
+        0.053565006454692574,
+        0.07463257572274794,
+        0.0469100739496291,
+        0.0505329085830593,
+        0.03678285041048729,
+        0.5995460443660195,
+        0.3905968078966307,
+        0.06,
+        0.06,
+        0.06,
+        0.06,
+        0.06,
+        0.06,
+        0.06,
+        0.06,
+        0.06,
+        0.06,
+        0.06,
+        0.06,
+        0.06
+      ],
+      "food": [
+        {
+          "visible": true,
+          "position": [
+            -0.45010956723245454,
+            0.01642663521592222,
+            3.0331215201533253
+          ],
+          "eaten": false
+        },
+        {
+          "visible": true,
+          "position": [
+            -0.4501996607457851,
+            0.017048610305529115,
+            3.0166754672452583
+          ],
+          "eaten": false
+        },
+        {
+          "visible": true,
+          "position": [
+            -0.45794295694409026,
+            0.03363447965791705,
+            3.018838518760466
+          ],
+          "eaten": false
+        },
+        {
+          "visible": true,
+          "position": [
+            -0.45060756087262027,
+            0.07142847908635636,
+            3.030692742297045
+          ],
+          "eaten": false
+        },
+        {
+          "visible": true,
+          "position": [
+            -0.4517580431697593,
+            0.1318255707664397,
+            3.0287781604796846
+          ],
+          "eaten": false
+        },
+        {
+          "visible": true,
+          "position": [
+            -0.4502379124258715,
+            0.16824328653366488,
+            3.029509611473431
+          ],
+          "eaten": false
+        },
+        {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "eaten": false
+        },
+        {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "eaten": false
+        },
+        {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "eaten": false
+        },
+        {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "eaten": false
+        },
+        {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "eaten": false
+        },
+        {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "eaten": false
+        },
+        {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "eaten": false
+        },
+        {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "eaten": false
+        },
+        {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "eaten": false
+        },
+        {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "eaten": false
+        },
+        {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "eaten": false
+        },
+        {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "eaten": false
+        },
+        {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "eaten": false
+        },
+        {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "eaten": false
+        },
+        {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "eaten": false
+        },
+        {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "eaten": false
+        },
+        {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "eaten": false
+        },
+        {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "eaten": false
+        }
+      ],
+      "consumed": 6
+    },
+    "repeatBefore": {
+      "live": 6,
+      "preserved": 6,
+      "pendingSwallow": 0,
+      "consumed": 6
+    },
+    "repeatStart": {
+      "retained": 6,
+      "consumed": 6
+    },
+    "repeatReleased": {
+      "retained": 6,
+      "live": 12,
+      "emitted": 6,
+      "consumed": 6
+    },
+    "reset": {
+      "time": 0,
+      "feedUntil": 0,
+      "consumed": 0,
+      "particles": 0,
+      "visible": false,
+      "follow": false,
+      "inspection": false,
+      "handMode": "idle"
+    }
+  },
+  "errors": [],
+  "fatal": null,
+  "method": "Real headless Chromium / SwiftShader browser. UI buttons start actions. After >2 rendered frames, active=false and 0.025s updateDynamics steps advance simulated feeding; actual rendered frames verify near-camera follow and paused animation. Geometry inspections establish actual mouth cavity and independent eyes/fins; swallowing events record real world mouth distance. Synthetic embedded-triangle GLB verifies mode restrictions. No hardware performance or photorealism claim."
+}

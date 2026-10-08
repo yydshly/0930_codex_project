@@ -1,0 +1,10 @@
+{
+  "clientDate": "2026-10-02",
+  "timeZone": "Asia/Shanghai",
+  "bundleSha256": "f4f050054178ba923da578c7b01e9d8ff9890515fbd12c3c9c85541d49e7cf48",
+  "checks": [],
+  "errors": [],
+  "fatal": "Error: Build failed with 2 errors:\nsrc/geometry.js:1:23: ERROR: Could not resolve \"three\"\nsrc/geometry.js:2:35: ERROR: Could not resolve \"three/examples/jsm/geometries/RoundedBoxGeometry.js\"\n    at failureErrorWithLog (F:\\codex_project\\0930_codex_project\\projects\\007-koi-scene-lab\\tooling\\node_modules\\esbuild\\lib\\main.js:1467:15)\n    at F:\\codex_project\\0930_codex_project\\projects\\007-koi-scene-lab\\tooling\\node_modules\\esbuild\\lib\\main.js:926:25\n    at F:\\codex_project\\0930_codex_project\\projects\\007-koi-scene-lab\\tooling\\node_modules\\esbuild\\lib\\main.js:878:52\n    at buildResponseToResult (F:\\codex_project\\0930_codex_project\\projects\\007-koi-scene-lab\\tooling\\node_modules\\esbuild\\lib\\main.js:924:7)\n    at F:\\codex_project\\0930_codex_project\\projects\\007-koi-scene-lab\\tooling\\node_modules\\esbuild\\lib\\main.js:951:16\n    at responseCallbacks.<computed> (F:\\codex_project\\0930_codex_project\\projects\\007-koi-scene-lab\\tooling\\node_modules\\esbuild\\lib\\main.js:603:9)\n    at handleIncomingPacket (F:\\codex_project\\0930_codex_project\\projects\\007-koi-scene-lab\\tooling\\node_modules\\esbuild\\lib\\main.js:658:12)\n    at Socket.readFromStdout (F:\\codex_project\\0930_codex_project\\projects\\007-koi-scene-lab\\tooling\\node_modules\\esbuild\\lib\\main.js:581:7)\n    at Socket.emit (node:events:518:28)\n    at addChunk (node:internal/streams/readable:561:12)",
+  "evidence": {},
+  "method": "Real Chromium/SwiftShader. Production advanceFrame is driven at three frame frequencies with identical explicit initial conditions; updateDynamics callbacks record actual release, consumption and trajectory state. Browser RAF is separately observed to call the same entry point. Screenshots render the real composer. No hardware performance or photorealism claim."
+}

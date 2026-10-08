@@ -1,0 +1,658 @@
+{
+  "clientDate": "2026-10-02",
+  "timeZone": "Asia/Shanghai",
+  "bundleSha256": "36553991fbc9c7e0c6bfaab8f310aab8973669cc9e82226e3d06296290350743",
+  "numerical": {
+    "passed": 60,
+    "failed": 0,
+    "record": "notes/numerical-v9.tap"
+  },
+  "browser": {
+    "observation-v9-validation": {
+      "path": "notes/observation-v9-validation.json",
+      "passed": 17,
+      "bundleSha256": "36553991fbc9c7e0c6bfaab8f310aab8973669cc9e82226e3d06296290350743"
+    },
+    "polish-v9-validation": {
+      "path": "notes/polish-v9-validation.json",
+      "passed": 32,
+      "bundleSha256": "36553991fbc9c7e0c6bfaab8f310aab8973669cc9e82226e3d06296290350743"
+    },
+    "v9-browser-validation": {
+      "path": "notes/v9-browser-validation.json",
+      "passed": 29,
+      "bundleSha256": "36553991fbc9c7e0c6bfaab8f310aab8973669cc9e82226e3d06296290350743"
+    },
+    "koi-v9-validation": {
+      "path": "notes/koi-v9-validation.json",
+      "passed": 31,
+      "bundleSha256": "36553991fbc9c7e0c6bfaab8f310aab8973669cc9e82226e3d06296290350743"
+    },
+    "hand-v9-validation": {
+      "path": "notes/hand-v9-validation.json",
+      "passed": 25,
+      "bundleSha256": "36553991fbc9c7e0c6bfaab8f310aab8973669cc9e82226e3d06296290350743"
+    },
+    "browser-v9-validation": {
+      "path": "notes/browser-v9-validation.json",
+      "passed": 24,
+      "bundleSha256": "36553991fbc9c7e0c6bfaab8f310aab8973669cc9e82226e3d06296290350743"
+    }
+  },
+  "browserAssertionsPassed": 158,
+  "package": {
+    "path": "notes/algorithm-v9-package-validation.json",
+    "passed": true,
+    "publicFilesMatched": 22,
+    "upstreamSnapshotsUnchanged": 9,
+    "relativeHtmlReferences": 14
+  },
+  "collectionTests": {
+    "passed": 13,
+    "command": "python -m unittest discover -s tests"
+  },
+  "staticDemosBuilt": 15,
+  "observation": {
+    "desktop": {
+      "maxX": 0.37059132158087243,
+      "maxY": 0.4372213150280519,
+      "outside": 0,
+      "count": 7811,
+      "aspect": 1.5006587615283267,
+      "shot": "whole",
+      "id": 4
+    },
+    "mobile": {
+      "maxX": 0.6481146724927733,
+      "maxY": 0.39314547787012794,
+      "outside": 0,
+      "count": 7811,
+      "aspect": 1.028735632183908,
+      "shot": "whole",
+      "id": 4
+    },
+    "wake": {
+      "pairs": 1,
+      "queue": [
+        [
+          0.5189478825377889,
+          0.5057529096284511,
+          0.012500000000000002,
+          -0.000693631829429439
+        ],
+        [
+          0.5189240356106127,
+          0.5198348832115823,
+          0.012500000000000002,
+          0.000693631829429439
+        ]
+      ],
+      "depth": 0.0384812989746454,
+      "strength": 0.004005584407009121,
+      "radius": 0.15000000000000002,
+      "sourceError": 5.551284527130373e-17,
+      "anchorError": 5.797195660796455e-16
+    },
+    "gpuWake": {
+      "enabled": true,
+      "samples": 256,
+      "positive": 0.00047440940397791564,
+      "negative": -0.0005515060038305819,
+      "error": 1.956459880707957e-07
+    },
+    "pass": {
+      "stationary": "reuse",
+      "moving": "camera",
+      "fresh": true
+    },
+    "transition": [
+      {
+        "frame": 7,
+        "reason": "invalidate",
+        "fresh": true
+      },
+      {
+        "frame": 8,
+        "reason": "projection",
+        "fresh": true
+      },
+      {
+        "frame": 9,
+        "reason": "projection",
+        "fresh": true
+      },
+      {
+        "frame": 10,
+        "reason": "projection",
+        "fresh": true
+      }
+    ]
+  },
+  "aB": {
+    "sameParameters": {
+      "meanPosition": 0,
+      "maxPosition": 0,
+      "sameTrajectory": true,
+      "sameViewport": true
+    },
+    "changedParameters": {
+      "meanPosition": 0.1918091993243984,
+      "maxPosition": 0.6737085124120344,
+      "sameTrajectory": false,
+      "sameViewport": true
+    },
+    "boundSameParameters": {
+      "meanPosition": 0,
+      "maxPosition": 0,
+      "sameTrajectory": true,
+      "sameViewport": true
+    }
+  },
+  "boundSchool": {
+    "simulatedSeconds": 30,
+    "bodies": {
+      "finite": true,
+      "habitat": {
+        "polygon": [
+          {
+            "x": -2.8,
+            "z": -1.7
+          },
+          {
+            "x": 2.8,
+            "z": -1.7
+          },
+          {
+            "x": 2.8,
+            "z": 1.7
+          },
+          {
+            "x": -2.8,
+            "z": 1.7
+          }
+        ],
+        "waterLevel": 0.65,
+        "depth": 0.6,
+        "feedPoint": {
+          "x": -1.2,
+          "y": 0.65,
+          "z": 1
+        },
+        "obstacles": [
+          {
+            "x": 0.7,
+            "z": 0.15,
+            "radius": 0.32
+          },
+          {
+            "x": -1.8,
+            "z": -0.65,
+            "radius": 0.25
+          }
+        ]
+      },
+      "minClearance": 0.015055462310215983
+    },
+    "feeding": {
+      "consumed": 6,
+      "emitted": 6,
+      "point": [
+        -1.2,
+        0.65,
+        1
+      ],
+      "particles": [
+        {
+          "landed": true,
+          "eaten": true,
+          "expired": false
+        },
+        {
+          "landed": true,
+          "eaten": true,
+          "expired": false
+        },
+        {
+          "landed": true,
+          "eaten": true,
+          "expired": false
+        },
+        {
+          "landed": true,
+          "eaten": true,
+          "expired": false
+        },
+        {
+          "landed": true,
+          "eaten": true,
+          "expired": false
+        },
+        {
+          "landed": true,
+          "eaten": true,
+          "expired": false
+        }
+      ],
+      "mode": "idle",
+      "drops": 2952
+    }
+  },
+  "naturalFeeding": {
+    "release": [
+      {
+        "at": 1.7499999999999978,
+        "emitted": 1,
+        "held": 5
+      },
+      {
+        "at": 1.7999999999999976,
+        "emitted": 2,
+        "held": 4
+      },
+      {
+        "at": 1.8499999999999974,
+        "emitted": 3,
+        "held": 3
+      },
+      {
+        "at": 1.8749999999999973,
+        "emitted": 4,
+        "held": 2
+      },
+      {
+        "at": 1.9249999999999972,
+        "emitted": 5,
+        "held": 1
+      },
+      {
+        "at": 1.974999999999997,
+        "emitted": 6,
+        "held": 0
+      }
+    ],
+    "bites": [
+      {
+        "grain": 5,
+        "at": 5.050000000000004,
+        "landed": true,
+        "delay": 2.875000000000008,
+        "mouthOpen": 0.8997454410574441,
+        "planarDistance": 0.03739087923753822,
+        "verticalDistance": 0.002710218178228592
+      },
+      {
+        "grain": 1,
+        "at": 5.075000000000005,
+        "landed": true,
+        "delay": 3.0750000000000077,
+        "mouthOpen": 0.9155843758081305,
+        "planarDistance": 0.03846486477574803,
+        "verticalDistance": 0.00913257660147207
+      },
+      {
+        "grain": 3,
+        "at": 5.100000000000005,
+        "landed": true,
+        "delay": 3.0250000000000083,
+        "mouthOpen": 0.9251911753516097,
+        "planarDistance": 0.03559104344466425,
+        "verticalDistance": 0.0049077732505454705
+      },
+      {
+        "grain": 4,
+        "at": 5.125000000000005,
+        "landed": true,
+        "delay": 3.000000000000009,
+        "mouthOpen": 0.9310179938164431,
+        "planarDistance": 0.03106208008161023,
+        "verticalDistance": 0.006264873130008453
+      },
+      {
+        "grain": 2,
+        "at": 5.150000000000006,
+        "landed": true,
+        "delay": 3.100000000000009,
+        "mouthOpen": 0.9345521378639443,
+        "planarDistance": 0.029842002596946773,
+        "verticalDistance": 0.0014505676265066034
+      },
+      {
+        "grain": 0,
+        "at": 5.175000000000006,
+        "landed": true,
+        "delay": 3.225000000000009,
+        "mouthOpen": 0.9366957045845946,
+        "planarDistance": 0.029405245184262536,
+        "verticalDistance": 0.0045854727410581525
+      }
+    ],
+    "swallows": [
+      {
+        "grain": 5,
+        "at": 5.050000000000004,
+        "mouthDistance": 0.03748897348194223,
+        "progress": 0
+      },
+      {
+        "grain": 1,
+        "at": 5.075000000000005,
+        "mouthDistance": 0.039534159629342536,
+        "progress": 0
+      },
+      {
+        "grain": 5,
+        "at": 5.075000000000005,
+        "mouthDistance": 0.02589722949837254,
+        "progress": 0.15625000000000222
+      },
+      {
+        "grain": 1,
+        "at": 5.100000000000005,
+        "mouthDistance": 0.02804455967790419,
+        "progress": 0.15625000000000222
+      },
+      {
+        "grain": 3,
+        "at": 5.100000000000005,
+        "mouthDistance": 0.03592782503518335,
+        "progress": 0
+      },
+      {
+        "grain": 5,
+        "at": 5.100000000000005,
+        "mouthDistance": 0.01656309688827593,
+        "progress": 0.31250000000000444
+      },
+      {
+        "grain": 1,
+        "at": 5.125000000000005,
+        "mouthDistance": 0.018585971762826184,
+        "progress": 0.31250000000000444
+      },
+      {
+        "grain": 3,
+        "at": 5.125000000000005,
+        "mouthDistance": 0.02453945084751465,
+        "progress": 0.15625000000000222
+      },
+      {
+        "grain": 4,
+        "at": 5.125000000000005,
+        "mouthDistance": 0.031687559930222924,
+        "progress": 0
+      },
+      {
+        "grain": 5,
+        "at": 5.125000000000005,
+        "mouthDistance": 0.009397650180616357,
+        "progress": 0.46875000000000666
+      },
+      {
+        "grain": 1,
+        "at": 5.150000000000006,
+        "mouthDistance": 0.010881846111508865,
+        "progress": 0.46875000000000666
+      },
+      {
+        "grain": 2,
+        "at": 5.150000000000006,
+        "mouthDistance": 0.029877236576284074,
+        "progress": 0
+      },
+      {
+        "grain": 3,
+        "at": 5.150000000000006,
+        "mouthDistance": 0.014789581945127788,
+        "progress": 0.31250000000000444
+      },
+      {
+        "grain": 4,
+        "at": 5.150000000000006,
+        "mouthDistance": 0.020900072273368833,
+        "progress": 0.15625000000000222
+      },
+      {
+        "grain": 5,
+        "at": 5.150000000000006,
+        "mouthDistance": 0.004422287366239683,
+        "progress": 0.6250000000000089
+      },
+      {
+        "grain": 0,
+        "at": 5.175000000000006,
+        "mouthDistance": 0.02976062843095862,
+        "progress": 0
+      },
+      {
+        "grain": 1,
+        "at": 5.175000000000006,
+        "mouthDistance": 0.005303738378059701,
+        "progress": 0.6250000000000089
+      },
+      {
+        "grain": 2,
+        "at": 5.175000000000006,
+        "mouthDistance": 0.019339659428380788,
+        "progress": 0.15625000000000222
+      },
+      {
+        "grain": 3,
+        "at": 5.175000000000006,
+        "mouthDistance": 0.006853306064746031,
+        "progress": 0.46875000000000666
+      },
+      {
+        "grain": 4,
+        "at": 5.175000000000006,
+        "mouthDistance": 0.011860832093650926,
+        "progress": 0.31250000000000444
+      },
+      {
+        "grain": 5,
+        "at": 5.175000000000006,
+        "mouthDistance": 0.003957194824642284,
+        "progress": 0.7812500000000111
+      },
+      {
+        "grain": 0,
+        "at": 5.200000000000006,
+        "mouthDistance": 0.02013629482715106,
+        "progress": 0.15625000000000222
+      },
+      {
+        "grain": 1,
+        "at": 5.200000000000006,
+        "mouthDistance": 0.006624835486305852,
+        "progress": 0.7812500000000111
+      },
+      {
+        "grain": 2,
+        "at": 5.200000000000006,
+        "mouthDistance": 0.011188639900761042,
+        "progress": 0.31250000000000444
+      },
+      {
+        "grain": 3,
+        "at": 5.200000000000006,
+        "mouthDistance": 0.0029284746187821153,
+        "progress": 0.6250000000000089
+      },
+      {
+        "grain": 4,
+        "at": 5.200000000000006,
+        "mouthDistance": 0.005690748341431186,
+        "progress": 0.46875000000000666
+      },
+      {
+        "grain": 5,
+        "at": 5.200000000000006,
+        "mouthDistance": 0.007138844514927262,
+        "progress": 0.9375000000000133
+      },
+      {
+        "grain": 0,
+        "at": 5.225000000000007,
+        "mouthDistance": 0.01465904176260291,
+        "progress": 0.31250000000000444
+      },
+      {
+        "grain": 1,
+        "at": 5.225000000000007,
+        "mouthDistance": 0.005318648643165675,
+        "progress": 0.9375000000000133
+      },
+      {
+        "grain": 2,
+        "at": 5.225000000000007,
+        "mouthDistance": 0.007537938565220136,
+        "progress": 0.46875000000000666
+      },
+      {
+        "grain": 3,
+        "at": 5.225000000000007,
+        "mouthDistance": 0.0037172144461031487,
+        "progress": 0.7812500000000111
+      },
+      {
+        "grain": 4,
+        "at": 5.225000000000007,
+        "mouthDistance": 0.004465019614425179,
+        "progress": 0.6250000000000089
+      },
+      {
+        "grain": 0,
+        "at": 5.250000000000007,
+        "mouthDistance": 0.010861519666472051,
+        "progress": 0.46875000000000666
+      },
+      {
+        "grain": 2,
+        "at": 5.250000000000007,
+        "mouthDistance": 0.0055137155574890954,
+        "progress": 0.6250000000000089
+      },
+      {
+        "grain": 3,
+        "at": 5.250000000000007,
+        "mouthDistance": 0.003664912293832705,
+        "progress": 0.9375000000000133
+      },
+      {
+        "grain": 4,
+        "at": 5.250000000000007,
+        "mouthDistance": 0.0038059024031132315,
+        "progress": 0.7812500000000111
+      },
+      {
+        "grain": 0,
+        "at": 5.2750000000000075,
+        "mouthDistance": 0.007690388650497183,
+        "progress": 0.6250000000000089
+      },
+      {
+        "grain": 2,
+        "at": 5.2750000000000075,
+        "mouthDistance": 0.00404822174968133,
+        "progress": 0.7812500000000111
+      },
+      {
+        "grain": 4,
+        "at": 5.2750000000000075,
+        "mouthDistance": 0.0032063052202902197,
+        "progress": 0.9375000000000133
+      },
+      {
+        "grain": 0,
+        "at": 5.300000000000008,
+        "mouthDistance": 0.005044593604651585,
+        "progress": 0.7812500000000111
+      },
+      {
+        "grain": 2,
+        "at": 5.300000000000008,
+        "mouthDistance": 0.0034703659906546044,
+        "progress": 0.9375000000000133
+      },
+      {
+        "grain": 0,
+        "at": 5.325000000000008,
+        "mouthDistance": 0.003825856724581581,
+        "progress": 0.9375000000000133
+      }
+    ],
+    "finished": [
+      {
+        "grain": 5,
+        "at": 5.225000000000007,
+        "expired": false,
+        "visible": false,
+        "swallow": true
+      },
+      {
+        "grain": 1,
+        "at": 5.250000000000007,
+        "expired": false,
+        "visible": false,
+        "swallow": true
+      },
+      {
+        "grain": 3,
+        "at": 5.2750000000000075,
+        "expired": false,
+        "visible": false,
+        "swallow": true
+      },
+      {
+        "grain": 4,
+        "at": 5.300000000000008,
+        "expired": false,
+        "visible": false,
+        "swallow": true
+      },
+      {
+        "grain": 2,
+        "at": 5.325000000000008,
+        "expired": false,
+        "visible": false,
+        "swallow": true
+      },
+      {
+        "grain": 0,
+        "at": 5.3500000000000085,
+        "expired": false,
+        "visible": false,
+        "swallow": true
+      }
+    ],
+    "heldMonotone": true,
+    "heldConserved": true,
+    "maxConsumed": 6,
+    "consumed": 6,
+    "fishConsumed": 6,
+    "particles": 6,
+    "maxMouthOpen": 0.9398354888182426,
+    "finalEmitted": 6,
+    "finalHeld": 0,
+    "mode": "idle"
+  },
+  "screenshots": [
+    "assets/shoal-before-v9.png",
+    "assets/shoal-v9.png",
+    "assets/koi-whole-v9.png",
+    "assets/koi-whole-mobile-v9.png",
+    "assets/koi-detail-v9.png",
+    "assets/feeding-v9.png",
+    "assets/experiment-trajectories-v9.png",
+    "assets/binding-edit-mobile-v9.png"
+  ],
+  "archivalCorrection": "The v9 initial capture reused v8-before names. New captures were renamed before-v9. Original v8 full before screenshots are unavailable; the original before crop remains in detail-comparison-v8.png. See v8-image-comparison.json.",
+  "limitations": [
+    "Procedural garden and demo GLB, not real-world scans",
+    "Surface dipole sources are a wave approximation, not fluid/body hydrodynamics",
+    "GPU half-float and CPU float32 precision differences",
+    "Framing projection probe applies spine shear; small fin rotations and membrane motion use sphere margin and actual visual checks",
+    "Software WebGL verification does not establish hardware performance or photorealism",
+    "Sampled A/B history every 0.25 seconds, not continuous trajectories"
+  ],
+  "published": false
+}

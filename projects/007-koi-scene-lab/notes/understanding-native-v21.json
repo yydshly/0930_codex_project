@@ -1,0 +1,149 @@
+{
+  "date": "2026-10-03T09:48:16.158Z",
+  "status": "completed",
+  "passed": 10,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "tech page and static explanation open without initializing the 3D scene",
+      "passed": true,
+      "evidence": {
+        "tab": "原理与价值"
+      }
+    },
+    {
+      "name": "eight original technology mappings and original/current distinctions are present",
+      "passed": true,
+      "evidence": {
+        "rows": 8
+      }
+    },
+    {
+      "name": "user values, four expansion ideas and five capability states are present",
+      "passed": true,
+      "evidence": {
+        "values": 4,
+        "directions": 4,
+        "statuses": 5
+      }
+    },
+    {
+      "name": "original runtime capture is visibly loaded and buttons point to existing tabs",
+      "passed": true,
+      "evidence": {
+        "image": "assets/original-experience-v21.png",
+        "scope": "DOM routing targets; original and scene runtime are not rerun."
+      }
+    },
+    {
+      "name": "desktop reading layout has no horizontal overflow and 44px actions",
+      "passed": true,
+      "evidence": {
+        "width": 1280,
+        "viewport": 1280,
+        "overflow": [],
+        "buttons": [
+          {
+            "text": "下载一图总览",
+            "h": 44,
+            "w": 108
+          },
+          {
+            "text": "体验原作效果",
+            "h": 44,
+            "w": 108
+          },
+          {
+            "text": "观察当前扩展",
+            "h": 44,
+            "w": 108
+          },
+          {
+            "text": "下载高清图片",
+            "h": 44,
+            "w": 108
+          }
+        ]
+      }
+    },
+    {
+      "name": "native overview download exactly matches the published PNG",
+      "passed": true,
+      "evidence": {
+        "suggestedFilename": "library-value-map-v21.png",
+        "bytes": 2944952
+      }
+    },
+    {
+      "name": "keyboard opens the proposed consistency notes with current limitations",
+      "passed": true,
+      "evidence": {
+        "open": true
+      }
+    },
+    {
+      "name": "inline infographic expands and loads its actual 2560px image",
+      "passed": true,
+      "evidence": {
+        "image": "assets/library-value-map-v21.png"
+      }
+    },
+    {
+      "name": "390px mobile has no overflow, readable stacked tables and 44px actions",
+      "passed": true,
+      "evidence": {
+        "width": 390,
+        "viewport": 390,
+        "overflow": [],
+        "buttons": [
+          {
+            "text": "下载一图总览",
+            "h": 44,
+            "w": 108
+          },
+          {
+            "text": "体验原作效果",
+            "h": 44,
+            "w": 154
+          },
+          {
+            "text": "观察当前扩展",
+            "h": 44,
+            "w": 154
+          },
+          {
+            "text": "下载高清图片",
+            "h": 44,
+            "w": 108
+          }
+        ]
+      }
+    },
+    {
+      "name": "no page, console or automatic external-request errors",
+      "passed": true,
+      "evidence": {
+        "errors": [],
+        "consoleErrors": [],
+        "external": []
+      }
+    }
+  ],
+  "captures": [
+    "assets/understanding-desktop-v21.jpg",
+    "assets/understanding-mobile-v21.jpg",
+    "assets/understanding-value-mobile-v21.jpg"
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "external": [],
+  "hashes": {
+    "web/index.html": "84568ec17c4fd66418ddec16939b6ed441fea71b2af27b5ad40cd14abbfbb31d",
+    "web/style.css": "cf96a3d7d8e1c9c30cb73201a7b69a602ff08ed5b6aa8031dfd46e5d626dffd3",
+    "web/understanding-v21.css": "37710096a5823a0cdb9f6b63f6bc5d76959ab9d0df773b2cfdd9918e6249a0e5",
+    "web/app.js": "fbd61419d326470cdd2a69f4f44bf06fad42c4faa8020e478b1f3f9fd0046b36",
+    "web/assets/library-value-map-v21.png": "595234a1f46a6052fea0cbcb2e28dd6be2d0630cc47cbd62d8a76e3d9b349907"
+  },
+  "scope": "Native localhost content navigation, keyboard details, exact PNG download and desktop/mobile reading layout. Original/scene gameplay, GPU rendering and manufacturing are not retested.",
+  "scriptSha256": "f4d942692fd7022789c8350238cf1c3580d18c18561e87fb97f7f588afc651bf"
+}

@@ -1,0 +1,69 @@
+{
+  "bundleSha256": "ce58275c59d952f1e51291f92506e39b5062722e7bab51e42cd3dfac7b9f5e5c",
+  "checks": [
+    {
+      "name": "wording-final build restores prior native calibration JSON",
+      "passed": true,
+      "evidence": "已校准 · 原始距离 6.7375 模型单位 → 8.000 米 · 比例 1.18738 米/模型单位"
+    },
+    {
+      "name": "wording-final current binding data explicitly identifies uncommitted draft",
+      "passed": true,
+      "evidence": "显示当前绑定数据；未应用水域时显示标记草稿，点击“检查并应用”才会提交。"
+    },
+    {
+      "name": "wording-final build restores prior native binding JSON",
+      "passed": true
+    },
+    {
+      "name": "wording-final current calibration data identifies committed record",
+      "passed": true,
+      "evidence": "显示已提交的校准记录；编辑后点击“检查并应用”才会改变场景。"
+    },
+    {
+      "name": "wording-final rejects wrong fingerprint and keeps entered data and calibration",
+      "passed": true
+    },
+    {
+      "name": "wording-final Tab and Shift+Tab loop in dialog",
+      "passed": true,
+      "evidence": {
+        "forward": "scene-json-close",
+        "reverse": "scene-json-apply"
+      }
+    },
+    {
+      "name": "wording-final phone dialog fits 390x844 and preserves 44px buttons",
+      "passed": true,
+      "evidence": {
+        "buttons": [
+          44,
+          44,
+          44
+        ],
+        "height": 641.8958740234375,
+        "width": 362,
+        "x": 6.333333492279053,
+        "y": 101.05208587646484
+      }
+    },
+    {
+      "name": "wording-final Escape closes dialog and restores opener focus",
+      "passed": true
+    },
+    {
+      "name": "wording-final selecting a fresh calibration draft retains old 8m calibration",
+      "passed": true,
+      "evidence": "校准草稿 · 已选 0/2 点 · 旧校准 8.000 米保持生效；应用后替换，取消可回退。"
+    },
+    {
+      "name": "wording-final Escape cancels fresh draft and restores old calibration and water",
+      "passed": true
+    },
+    {
+      "name": "wording-final return to courtyard clears model JSON entries",
+      "passed": true
+    }
+  ],
+  "consoleWarningsErrors": []
+}

@@ -1,0 +1,187 @@
+{
+  "date": "2026-10-02T18:39:05.694Z",
+  "clientDate": "2026-10-03",
+  "version": 17,
+  "bundleSha256": "7e00f3740c31f5a9d4f7368bff058927b3df75ed0af9b0b081abb4262ea98ba8",
+  "scriptSha256": "32e2ea0e1dcc45c8425426c98f382336feec5250fe8603ca72ca67dcfc11e34a",
+  "authorization": {
+    "reply": "\u7ee7\u7eed\u4f18\u5316",
+    "context": "Reply to the preceding explicit request for isolated localhost Playwright acceptance."
+  },
+  "method": "User-authorized isolated headless Chromium, real UI actions and read-only DOM observations. Uses software-capable WebGL; not a hardware performance or full accessibility test.",
+  "checks": [
+    {
+      "name": "new scene initializes and feeding feedback is initially hidden",
+      "passed": true
+    },
+    {
+      "name": "fish-count control can select zero",
+      "passed": true
+    },
+    {
+      "name": "zero-fish main feed keeps zero and explains observation-only behavior",
+      "passed": true
+    },
+    {
+      "name": "actual six-pellet release and landing have a separate zero swallow count",
+      "passed": true,
+      "evidence": "\u672c\u8f6e\u91ca\u653e 6/6 \u7c92 \u00b7 \u5b9e\u9645\u843d\u6c34 6 \u7c92 \u00b7 \u541e\u98df 0 \u7c92 \u00b7 \u5c1a\u5728\u573a\u666f 6 \u7c92 \u00b7 \u8fc7\u671f 0 \u7c92\uff1b\u573a\u666f\u7d2f\u8ba1\u541e\u98df 0 \u7c92"
+    },
+    {
+      "name": "pause has a truthful pressed state and status",
+      "passed": true
+    },
+    {
+      "name": "keyboard can move from pause to a feedback action",
+      "passed": true
+    },
+    {
+      "name": "hand withdrawal preserves the frozen batch",
+      "passed": true
+    },
+    {
+      "name": "paused static water passes stay cached after the returning camera settles",
+      "passed": true,
+      "evidence": {
+        "settled": true,
+        "value": 48,
+        "samples": [
+          47,
+          48,
+          48,
+          48,
+          48
+        ],
+        "elapsedMs": 20229.69999998808
+      }
+    },
+    {
+      "name": "orbit camera movement refreshes paused water passes",
+      "passed": true,
+      "evidence": "\u5b9e\u65f6\u7d2f\u8ba1\u63a8\u8fdb\u7387 7.2% \u00b7 \u56fa\u5b9a\u6b65\u957f 1/60 s \u00b7 \u672c\u5e27 0 \u6b65 \u00b7 \u8ffd\u8d76\u4e22\u5f03 107.77 s \u00b7 \u53ef\u89c1\u5b9e\u4f8b\u5316\u5bf9\u8c61 8 \u00b7 \u672c\u5e27\u7ed8\u5236\u8c03\u7528 384 \u00b7 \u4e09\u89d2\u5f62 2,274,404 \u00b7 \u6c34\u9762\u79bb\u5c4f\u66f4\u65b0 58 \u6b21"
+    },
+    {
+      "name": "orbit damping eventually returns to static water reuse",
+      "passed": true,
+      "evidence": {
+        "settled": true,
+        "value": 58,
+        "samples": [
+          58,
+          58,
+          58,
+          58
+        ],
+        "elapsedMs": 11266.5
+      }
+    },
+    {
+      "name": "daylight adjustment invalidates the paused water cache",
+      "passed": true
+    },
+    {
+      "name": "rejected GLB retains the previous feed record",
+      "passed": true
+    },
+    {
+      "name": "accepted unbound model clears feeding feedback and disables feeding",
+      "passed": true
+    },
+    {
+      "name": "returning to courtyard does not revive the previous round",
+      "passed": true
+    },
+    {
+      "name": "new courtyard feed restores a six-pellet round without inventing swallowed food",
+      "passed": true,
+      "evidence": "\u672c\u8f6e\u91ca\u653e 2/6 \u7c92 \u00b7 \u5b9e\u9645\u843d\u6c34 0 \u7c92 \u00b7 \u541e\u98df 0 \u7c92 \u00b7 \u5c1a\u5728\u573a\u666f 2 \u7c92 \u00b7 \u8fc7\u671f 0 \u7c92\uff1b\u573a\u666f\u7d2f\u8ba1\u541e\u98df 0 \u7c92"
+    },
+    {
+      "name": "manual withdrawal identifies the stopped hand without inventing swallowed pellets",
+      "passed": true,
+      "evidence": {
+        "releasedBeforeStop": 2,
+        "status": "\u6a21\u62df\u5df2\u6682\u505c \u00b7 \u5f53\u524d\u505c\u6b65\uff1b\u624b\u90e8\u52a8\u4f5c\u5df2\u7ed3\u675f \u00b7 \u7b49\u5f85 2 \u7c92\u5728\u573a\u666f\u4e2d\u7684\u9972\u6599\u53cd\u9988 \u00b7 \u63d0\u524d\u505c\u6b62\uff0c4 \u7c92\u672a\u91ca\u653e \u00b7 \u5f53\u524d\u65e0\u9c7c",
+        "counts": "\u672c\u8f6e\u91ca\u653e 2/6 \u7c92 \u00b7 \u5b9e\u9645\u843d\u6c34 0 \u7c92 \u00b7 \u541e\u98df 0 \u7c92 \u00b7 \u5c1a\u5728\u573a\u666f 2 \u7c92 \u00b7 \u8fc7\u671f 0 \u7c92\uff1b\u573a\u666f\u7d2f\u8ba1\u541e\u98df 0 \u7c92"
+      }
+    },
+    {
+      "name": "mobile page has no horizontal overflow and feedback action targets are at least 44px",
+      "passed": true,
+      "evidence": {
+        "pageWidth": 390,
+        "clientWidth": 390,
+        "buttons": [
+          {
+            "id": "feeding-pause",
+            "height": 44,
+            "width": 160.5
+          },
+          {
+            "id": "feeding-again",
+            "height": 44,
+            "width": 160.5
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile repeat-feed keeps zero fish and can pause the new hand",
+      "passed": true
+    },
+    {
+      "name": "mobile paused active feed retains all three accessible action targets",
+      "passed": true,
+      "evidence": [
+        {
+          "id": "feeding-pause",
+          "height": 44,
+          "width": 104.65625
+        },
+        {
+          "id": "feeding-stop",
+          "height": 44,
+          "width": 104.671875
+        },
+        {
+          "id": "feeding-again",
+          "height": 44,
+          "width": 104.671875
+        }
+      ]
+    },
+    {
+      "name": "reset clears the feeding panel and restores seven fish",
+      "passed": true
+    },
+    {
+      "name": "browser verification execution",
+      "passed": false,
+      "error": "locator.click: Timeout 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#pause-toggle')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"pause-toggle\" aria-pressed=\"false\">\u6682\u505c\u52a8\u6001</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 \u00d7 waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div id=\"scene-loader\" class=\"stage-loader\">\u663e\u5361\u4e0a\u4e0b\u6587\u5df2\u4e22\u5931\uff0c\u8bf7\u5237\u65b0\u9875\u9762\u6216\u964d\u4f4e\u7a97\u53e3\u5206\u8fa8\u7387\u3002</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 \u00d7 waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div id=\"scene-loader\" class=\"stage-loader\">\u663e\u5361\u4e0a\u4e0b\u6587\u5df2\u4e22\u5931\uff0c\u8bf7\u5237\u65b0\u9875\u9762\u6216\u964d\u4f4e\u7a97\u53e3\u5206\u8fa8\u7387\u3002</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div id=\"scene-loader\" class=\"stage-loader\">\u663e\u5361\u4e0a\u4e0b\u6587\u5df2\u4e22\u5931\uff0c\u8bf7\u5237\u65b0\u9875\u9762\u6216\u964d\u4f4e\u7a97\u53e3\u5206\u8fa8\u7387\u3002</div> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n"
+    }
+  ],
+  "passed": 20,
+  "failed": 1,
+  "captures": [
+    "assets/feeding-desktop-v17-attempt4.jpg",
+    "assets/water-cache-v17-attempt4.jpg",
+    "assets/feeding-mobile-v17-attempt4.jpg",
+    "assets/feeding-mobile-active-v17-attempt4.jpg"
+  ],
+  "errors": [],
+  "warnings": [
+    "Allow attribute will take precedence over 'allowfullscreen'.",
+    "[.WebGL-0x47f4001b2600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x47f4001b2600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x47f4001b2600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x47f4001b2600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
+    "WebGL: CONTEXT_LOST_WEBGL: loseContext: context lost"
+  ],
+  "externalRequests": [],
+  "visualReview": {
+    "passed": false,
+    "finding": "Native mobile-active screenshot shows WebGL context lost overlay. Subsequent reset view click timed out because the overlay intercepted input. Passing DOM layout/state checks do not establish active GPU rendering.",
+    "capture": "assets/feeding-mobile-active-v17-attempt4.jpg"
+  },
+  "archiveNote": "Original capture bytes copied before subsequent final-build attempts; captures here point to the preserved copies."
+}

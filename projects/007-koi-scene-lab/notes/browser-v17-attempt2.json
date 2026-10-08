@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-02T17:50:27.349Z",
+  "clientDate": "2026-10-03",
+  "version": 17,
+  "bundleSha256": "7eafd0a3f98961a5f9cf9324e02a8c3c529c446f7333d565a1415d1316e921f8",
+  "scriptSha256": "b437ab02431aafd506ac48c323584e8ba5ed68682b7c1314dd46f304caacd2cf",
+  "authorization": {
+    "reply": "继续优化",
+    "context": "Reply to the preceding explicit request for isolated localhost Playwright acceptance."
+  },
+  "method": "User-authorized isolated headless Chromium, real UI actions and read-only DOM observations. Uses software-capable WebGL; not a hardware performance or full accessibility test.",
+  "checks": [
+    {
+      "name": "new scene initializes and feeding feedback is initially hidden",
+      "passed": true
+    },
+    {
+      "name": "fish-count control can select zero",
+      "passed": true
+    },
+    {
+      "name": "zero-fish main feed keeps zero and explains observation-only behavior",
+      "passed": true
+    },
+    {
+      "name": "actual six-pellet release and landing have a separate zero swallow count",
+      "passed": true,
+      "evidence": "本轮释放 6/6 粒 · 实际落水 6 粒 · 吞食 0 粒 · 尚在场景 6 粒 · 过期 0 粒；场景累计吞食 0 粒"
+    },
+    {
+      "name": "pause has a truthful pressed state and status",
+      "passed": true
+    },
+    {
+      "name": "keyboard can move from pause to a feedback action",
+      "passed": true
+    },
+    {
+      "name": "hand withdrawal preserves the frozen batch",
+      "passed": true
+    },
+    {
+      "name": "paused static water passes stay cached after the returning camera settles",
+      "passed": false,
+      "evidence": {
+        "settled": false,
+        "value": 96,
+        "samples": [
+          80,
+          82,
+          84,
+          86,
+          88,
+          90,
+          92,
+          94,
+          96
+        ],
+        "elapsedMs": 46125
+      }
+    }
+  ],
+  "passed": 7,
+  "failed": 1,
+  "captures": [
+    "assets/feeding-desktop-v17-attempt2.jpg",
+    "assets/feeding-failure-v17-attempt2.jpg"
+  ],
+  "errors": [],
+  "warnings": [
+    "Allow attribute will take precedence over 'allowfullscreen'.",
+    "[.WebGL-0x2734001b2600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x2734001b2600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x2734001b2600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x2734001b2600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ],
+  "externalRequests": [],
+  "executionFailureExplanation": "After waiting for camera return, paused updates still increased for 46 seconds. Real Three r160 transparent DoubleSide rendering increments Material.version every draw. The paused signature mistakenly included this compiler-derived counter. Production source was fixed and two regression tests were added before the next final-build run."
+}

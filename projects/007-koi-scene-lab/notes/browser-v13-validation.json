@@ -1,0 +1,172 @@
+{
+  "bundleSha256": "eb7ddb5748595c54513cdf8db725cddff3f11d3024109d80397ebd7976c9ef72",
+  "checks": [
+    {
+      "name": "fish displays specific value and verification instructions",
+      "passed": true,
+      "evidence": {
+        "value": "适合给展览、游戏或网页空间中的群体添加自主行为。调节间距、方向一致性和聚集程度，可以控制场景的疏密与节奏。",
+        "verify": "在算法实验台开启“显示行为方向向量”，保存基线后运行 A；改变一项规则的权重，再从同起点运行 B。比较轨迹图和位置差，观察参数如何影响群体。"
+      }
+    },
+    {
+      "name": "fish opens and focuses the matching existing control",
+      "passed": true,
+      "evidence": "exp-open"
+    },
+    {
+      "name": "motion displays specific value and verification instructions",
+      "passed": true,
+      "evidence": {
+        "value": "适合让重复出现的角色随运动状态改变姿态，减少僵硬感。形变后的法线修正能使身体弯曲时的反光保持连贯。",
+        "verify": "先用“观察这个效果”进入整鱼近景，再在算法实验台切换“形变后修正表面法线”。留意弯曲鱼身的亮部变化，也可用“暂停动态”固定姿态作对照。"
+      }
+    },
+    {
+      "name": "motion opens and focuses the matching existing control",
+      "passed": true,
+      "evidence": "exp-normal-correction"
+    },
+    {
+      "name": "water displays specific value and verification instructions",
+      "passed": true,
+      "evidence": {
+        "value": "适合为庭院、景观或交互展示建立可响应的水面，让点击与动物活动在同一环境中留下反馈。水色与倒影也能帮助表现池塘的层次和氛围。",
+        "verify": "在算法实验台把“水面观察方式”切换为“波面高度”或“波面法线”，再点击池塘加入扰动。回到“自然画面”，对照波面数据与水面反光的变化。"
+      }
+    },
+    {
+      "name": "water opens and focuses the matching existing control",
+      "passed": true,
+      "evidence": "exp-water-debug"
+    },
+    {
+      "name": "feeding displays specific value and verification instructions",
+      "passed": true,
+      "evidence": {
+        "value": "适合把一次操作串成有反馈的互动过程，让角色、道具与环境按顺序响应。可用于游戏动作、互动演示或产品操作动画。",
+        "verify": "点击“查看手部细节”，观察捏持与松指；再点击“手部投喂”，观察落料、鱼的追食与吞食。选择本项时，运行状态会显示手部阶段和累计吞食粒数。"
+      }
+    },
+    {
+      "name": "feeding opens and focuses the matching existing control",
+      "passed": true,
+      "evidence": "hand-inspect"
+    },
+    {
+      "name": "geometry displays specific value and verification instructions",
+      "passed": true,
+      "evidence": {
+        "value": "适合把一张设计图拆成可调节、可从多角度检查的空间。参数构造便于比较池塘、平台与建筑的比例，也便于重复生成自然物体。",
+        "verify": "切换到“俯瞰布局”，调节“池塘尺度”“木平台深度”和“建筑高度”，检查空间关系；再用“青蛙跳跃”或“乌龟入水”观察动物与池塘的接触。需要回到初始布局时点击“恢复参考”。"
+      }
+    },
+    {
+      "name": "geometry opens and focuses the matching existing control",
+      "passed": true,
+      "evidence": "setting-pondScale"
+    },
+    {
+      "name": "lighting displays specific value and verification instructions",
+      "passed": true,
+      "evidence": {
+        "value": "适合在同一空间中比较材质质感和不同时间的氛围，帮助选择展示画面与镜头。光照、粗糙度和表面细节共同影响物体的辨识度。",
+        "verify": "用“观察这条锦鲤”进入近景，暂停后切换“鱼体材质细节（关闭作对照）”观察鱼皮反光。再比较“下午”“黄昏”预设及“画面曝光”，留意池岸、建筑和水面的变化。"
+      }
+    },
+    {
+      "name": "lighting opens and focuses the matching existing control",
+      "passed": true,
+      "evidence": "fish-detail"
+    },
+    {
+      "name": "performance displays specific value and verification instructions",
+      "passed": true,
+      "evidence": {
+        "value": "适合在网页效果和设备负担之间作取舍，并检查动画是否能按预期时间推进。绘制调用、三角形数和推进率提供不同角度的观察依据。",
+        "verify": "在当前实时运行中改变“锦鲤数量”，切换俯瞰与整鱼近景，观察本项的绘制调用、三角形数与累计推进率。若出现追赶丢弃时间，说明当前运行曾达到补算限额；累计指标不会只反映刚才那一次操作。"
+      }
+    },
+    {
+      "name": "performance opens and focuses the matching existing control",
+      "passed": true,
+      "evidence": "setting-fishCount"
+    },
+    {
+      "name": "calibration displays specific value and verification instructions",
+      "passed": true,
+      "evidence": {
+        "value": "这是可选的模型接入能力：已有 GLB 时，可以把动态水域放到模型中，并用已知长度统一尺度。按生成效果图构造当前庭院时，不需要先提供真实场地素材。",
+        "verify": "在“导入模型与绑定动态水域”中点击“加载绑定示例（程序模型）”，选两个基准点并输入一个练习长度。校准后标记并应用水域，再查看或粘贴校准、绑定 JSON；示例长度用于练习，不代表真实场地测量。"
+      }
+    },
+    {
+      "name": "calibration opens and focuses the matching existing control",
+      "passed": true,
+      "evidence": "binding-demo"
+    },
+    {
+      "name": "navigation preserves all scene slider settings",
+      "passed": true
+    },
+    {
+      "name": "guided fish run A produces an actual image and fixed-duration result",
+      "passed": true
+    },
+    {
+      "name": "guided one-rule B comparison displays real trajectory difference",
+      "passed": true,
+      "evidence": "参考 A · 1.00 秒 · 轨迹 7b8d5d3c\n当前 B · 1.00 秒 · 轨迹 2bae0a06\n\n位置平均差 0.0071，最大差 0.0193 · 参数变化产生不同轨迹\n\n俯视轨迹与位置对照\n跟踪锦鲤 \n第 1 条\n第 2 条\n第 3 条\n第 4 条\n第 5 条\n第 6 条\n第 7 条\n1 场景单位\n\n蓝色 A · 红色 B；实线为所选鱼每0.25秒记录的轨迹，圆点为全部鱼的终点，灰线连接两组终点差。"
+    },
+    {
+      "name": "final 390px learning cards stack and action buttons are at least 44px",
+      "passed": true,
+      "evidence": {
+        "buttons": [
+          {
+            "height": 44,
+            "id": "principle-demo",
+            "width": 144.6666717529297,
+            "x": 32.66666793823242
+          },
+          {
+            "height": 44,
+            "id": "principle-controls",
+            "width": 144.6666717529297,
+            "x": 197.33334350585935
+          },
+          {
+            "height": 44,
+            "id": "principle-more",
+            "width": 309.3333435058594,
+            "x": 32.66666793823242
+          }
+        ],
+        "learning": [
+          {
+            "width": 280,
+            "x": 47.33333587646485,
+            "y": 42.03125
+          },
+          {
+            "width": 280,
+            "x": 47.33333587646485,
+            "y": 146.2916717529297
+          }
+        ],
+        "panel": {
+          "width": 344.66668701171875,
+          "x": 15
+        }
+      }
+    },
+    {
+      "name": "technical page separates current learning goal from optional real-scene input",
+      "passed": true
+    }
+  ],
+  "consoleWarningsErrors": [],
+  "initialFailureRecord": "notes/browser-v13-first-pass.json",
+  "method": "Existing IAB, visible UI actions, read-only DOM and native screenshots; no hidden runtime mutation.",
+  "roundScope": "Eight topic copy/control jumps, unchanged settings, actual guided 1s A/B and mobile layout. Historical checks not counted as rerun."
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-02",
+  "repository": "https://github.com/souranyp-stack/koi-pond-garden",
+  "commit": "18213ec590e987f605cce6564471e6c0f9451d37",
+  "source": "web/upstream/koi-pond.original.html",
+  "source_sha256": "ab76bca6c8d3cb8e4185189d3f217665e7d6e1695cbd98f1da8c6024cc1f8f1a",
+  "license": "MIT / Copyright (c) 2026 Sourany Phomhome",
+  "license_file": "web/upstream/KOI-LICENSE.txt",
+  "adapted_functions": [
+    "KOI_TOP / KOI_BOT / KOI_W / KOI_EYE profiles",
+    "crInterp / koiSection",
+    "koiBodyGeo (mouth, recessed cavity, four barbels)",
+    "koiFinGeo (seven fin types)"
+  ],
+  "modules": [
+    "src/koi-anatomy.js",
+    "src/koi-material.js",
+    "src/fish.js"
+  ],
+  "changes": [
+    "Shared geometry and custom physical materials",
+    "Seeded seven-pattern color textures with smooth closed patch curves",
+    "Mouth/gill/fin shader uniforms",
+    "World-space mouth position matching mouth vertex deformation",
+    "Actual landed grain pursuit and 0.16-second ingestion",
+    "Independent finite hand supply and release positions"
+  ],
+  "boundary": "Parametric real-time geometry, not a measured or scanned fish; seven appearance styles, not all upstream variants."
+}
