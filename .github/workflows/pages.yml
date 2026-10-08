@@ -98,12 +98,19 @@ jobs:
           npm run build --prefix projects/016-chippytea-lab/tooling
           node projects/016-chippytea-lab/tooling/verify-world-host.mjs
           python projects/016-chippytea-lab/tooling/build-research.py
+      - name: Validate and build Waterfalls Lab
+        run: |
+          npm ci --prefix projects/017-waterfalls-lab/tooling
+          npm test --prefix projects/017-waterfalls-lab/tooling
+          npm run build --prefix projects/017-waterfalls-lab/tooling
+          node --check projects/017-waterfalls-lab/web/understanding.js
       - name: Build all static demos
         run: |
           python -c "from pathlib import Path; import subprocess; [subprocess.run(['node', '--check', str(p)], check=True) for p in Path('projects/015-ai-creative-products/web').rglob('*') if p.suffix in {'.js', '.mjs'}]"
           python scripts/build_site.py
           python projects/009-sprite-destruction-lab/tooling/verify-publication.py --site _site/projects/009-sprite-destruction-lab
           python projects/010-dumpling-style-lab/tooling/verify-publication.py --site _site/projects/010-dumpling-style-lab --report projects/010-dumpling-style-lab/notes/publication-ci-checks.json
+          python scripts/waterfalls_publish.py --check --site _site/projects/017-waterfalls-lab
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

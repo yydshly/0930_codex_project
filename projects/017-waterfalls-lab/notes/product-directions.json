@@ -1,0 +1,73 @@
+{
+  "format": "waterfalls-lab-product-directions",
+  "version": 1,
+  "date": "2026-10-03",
+  "baseline": "STUDIO 09",
+  "positioning": "可编辑自然场景与流体交互基座",
+  "status": "后续业务匹配索引，扩展能力待具体需求确定后实现",
+  "complexityMeaning": "相对当前实现的技术估计，不是工期或收益预测",
+  "directions": [
+    {
+      "id": "natural-scene-authoring",
+      "foundation": "可编辑自然场景",
+      "products": ["微景观创作工具", "自然场景原型编辑器", "庭院水景概念配置工具"],
+      "userTask": "创作、保存并比较小范围自然场景",
+      "reuseModules": ["src/voxel.js", "src/terrain-worker.js", "src/object-editor.js", "src/sources.js", "src/project.js"],
+      "additionalCapabilities": ["领域素材与模板", "业务属性", "方案版本", "批注与对比"],
+      "complexity": "中；沿用现有素材的限定工具较小",
+      "boundary": "概念造景与布局；通用大地图、任意模型碰撞及工程水动力需要额外工作"
+    },
+    {
+      "id": "interactive-scene-presentation",
+      "foundation": "实时场景展示与交互",
+      "products": ["品牌活动页", "展厅交互风景", "作品集自然场景组件", "放松型互动页面"],
+      "userTask": "观看风景并通过有限操作改变场景",
+      "reuseModules": ["src/gpu.js", "src/shaders.js", "src/world.js", "src/camera-views.js"],
+      "additionalCapabilities": ["展示内容与操作范围", "品牌界面", "嵌入生命周期与事件", "目标设备适配"],
+      "complexity": "独立展项小；嵌入业务应用中",
+      "boundary": "当前交付是独立应用与内部模块，嵌入组件接口需要封装"
+    },
+    {
+      "id": "water-routing-gameplay",
+      "foundation": "地形与水流玩法",
+      "products": ["引水解谜", "障碍布局挑战", "可创作的水路关卡"],
+      "userTask": "通过改变地形、障碍与水源达成关卡目标",
+      "reuseModules": ["src/gpu.js", "src/voxel.js", "src/stroke.js", "src/object-editor.js", "src/sources.js", "src/project.js"],
+      "additionalCapabilities": ["目标区域与达成判定", "关卡规则", "进度与计分", "稳定业务实体关联"],
+      "complexity": "中；复杂机关与动态刚体较大",
+      "boundary": "当前水流反馈可复用；关卡、计分、动态机关与确定性回放尚需实现"
+    },
+    {
+      "id": "interactive-learning",
+      "foundation": "模拟教学与实验",
+      "products": ["地形水流实验课", "GPU 流体算法演示", "互动课堂练习"],
+      "userTask": "操作参数与场景，观察并解释结果变化",
+      "reuseModules": ["src/gpu.js", "src/shaders.js", "src/world.js", "src/voxel.js", "src/sim-params.js"],
+      "additionalCapabilities": ["教学步骤", "参数解释", "对照任务", "问题反馈", "实验记录"],
+      "complexity": "小至中",
+      "boundary": "定性观察与算法讲解；不能直接提供工程计算结论"
+    },
+    {
+      "id": "scene-media-production",
+      "foundation": "场景素材生产",
+      "products": ["风景截图工具", "动态背景素材工具", "镜头与场景创作工作台"],
+      "userTask": "将可编辑场景转为符合用途的视觉素材",
+      "reuseModules": ["src/gpu.js", "src/shaders.js", "src/camera-views.js", "src/project.js"],
+      "additionalCapabilities": ["镜头动画", "录像", "批量任务", "输出规格", "素材管理"],
+      "complexity": "静态截图工具小；动态素材工作流中",
+      "boundary": "PNG 已有；视频、无缝循环与批量导出尚需实现"
+    },
+    {
+      "id": "creation-library-platform",
+      "foundation": "作品库与创作平台",
+      "products": ["造景作品库", "作品征集活动", "UGC 创作与分享平台"],
+      "userTask": "创建、管理、发布并浏览造景作品",
+      "reuseModules": ["src/app.js", "src/project.js", "src/camera-views.js", "src/gpu.js"],
+      "additionalCapabilities": ["账号与云存储", "发布与浏览", "权限", "内容审核", "版本管理"],
+      "complexity": "中至大，新增平台服务较多",
+      "boundary": "当前作品在本地保存；服务器服务、云分享与多人协作尚需实现"
+    }
+  ],
+  "businessSelectionFields": ["target user", "specific task", "delivery form", "reused modules", "additional capabilities", "acceptance criteria"],
+  "archivePolicy": "保留首次沉淀的 STUDIO 09 归档与校验值；本清单属于后续文档补充"
+}

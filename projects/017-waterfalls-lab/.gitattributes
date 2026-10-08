@@ -1,0 +1,6 @@
+# Preserve reviewed publication resources and the frozen research baseline byte for byte.
+* -text whitespace=cr-at-eol
+# Keep upstream snapshots and generated shader text in their reviewed form.
+web/upstream/** -whitespace
+web/EA-PBMPM-LICENSE.txt -whitespace
+web/app.js -whitespace

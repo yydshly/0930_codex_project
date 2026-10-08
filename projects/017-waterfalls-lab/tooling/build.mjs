@@ -1,0 +1,13 @@
+import {build} from 'esbuild';
+import {copyFile,readFile,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+const root=fileURLToPath(new URL('../',import.meta.url));
+await build({entryPoints:[root+'src/app.js'],bundle:true,format:'esm',target:'es2022',outfile:root+'web/app.js',minify:true,legalComments:'external',nodePaths:[root+'tooling/node_modules']});
+await build({entryPoints:[root+'src/terrain-worker.js'],bundle:true,format:'esm',target:'es2022',outfile:root+'web/terrain-worker.js',minify:true});
+await copyFile(root+'tooling/node_modules/three/LICENSE',root+'web/THREE-LICENSE.txt');
+const files=await Promise.all(['app.js','terrain-worker.js','style.css'].map(file=>readFile(root+'web/'+file)));
+const revision=createHash('sha256');files.forEach(bytes=>revision.update(bytes));const version=revision.digest('hex').slice(0,12);
+const html=await readFile(root+'web/index.html','utf8');
+await writeFile(root+'web/index.html',html.replace(/\.\/style\.css(?:\?v=[a-f0-9]+)?/g,'./style.css?v='+version).replace(/\.\/app\.js(?:\?v=[a-f0-9]+)?/g,'./app.js?v='+version));
+console.log('Built Waterfalls Lab');

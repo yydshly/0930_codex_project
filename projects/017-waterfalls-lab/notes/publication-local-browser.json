@@ -1,0 +1,813 @@
+{
+  "date": "2026-10-09",
+  "timezone": "Asia/Shanghai",
+  "base": "http://127.0.0.1:8992/projects/017-waterfalls-lab/",
+  "environment": "Independent headless Chromium with ANGLE d3d11; actual WebGPU adapter recorded below; desktop and simulated narrow viewports.",
+  "gpuBackend": "d3d11",
+  "channel": "msedge",
+  "launchArgs": [
+    "--use-angle=d3d11",
+    "--enable-unsafe-webgpu"
+  ],
+  "hardwarePerformanceTest": false,
+  "historicalV9HardwareResultsReused": false,
+  "storageScope": "Fresh browser contexts; no existing user browser profile or local作品 storage accessed.",
+  "checks": [
+    {
+      "name": "Complete understanding reader and prominent public resources",
+      "passed": true,
+      "details": {
+        "title": "从水景到产品基座 · Waterfalls Lab",
+        "products": 6,
+        "sections": [
+          {
+            "id": "effect",
+            "present": true
+          },
+          {
+            "id": "resources",
+            "present": true
+          },
+          {
+            "id": "position",
+            "present": true
+          },
+          {
+            "id": "capabilities",
+            "present": true
+          },
+          {
+            "id": "principles",
+            "present": true
+          },
+          {
+            "id": "products",
+            "present": true
+          },
+          {
+            "id": "value",
+            "present": true
+          },
+          {
+            "id": "boundaries",
+            "present": true
+          },
+          {
+            "id": "map",
+            "present": true
+          },
+          {
+            "id": "sources",
+            "present": true
+          }
+        ],
+        "resources": [
+          {
+            "href": "./",
+            "text": "本项目 · 独立三维实现\n进入互动工作室 ↗\n\n雕刻地形、编辑对象和水源，观察水路变化，保存作品与画面。",
+            "visible": true
+          },
+          {
+            "href": "./upstream/",
+            "text": "技术参考 · 保留原版示例\n运行 EA 二维示例 ↗\n\n直接体验上游 PB-MPM。原版多材料能力与本项目的三维水景分别展示。",
+            "visible": true
+          },
+          {
+            "href": "./research-assets/understanding-map.png",
+            "text": "沿用完整理解图 · PNG\n打开汇总大图 ↗\n\n一张图看效果、能力、原理、产品方向、价值和边界。",
+            "visible": true
+          },
+          {
+            "href": "./research-assets/understanding-map.svg",
+            "text": "同一汇总图 · 可编辑 SVG\n下载矢量汇总图 ↓\n\n保留文字、布局与原始实机截图，便于后续说明与演示。",
+            "visible": true
+          },
+          {
+            "href": "./source-notice.html",
+            "text": "来源 · 归属 · 第三方许可\n查看来源与许可 ↗\n\n原作、EA、Breakpoint 与本项目各自贡献什么，以及保留的许可全文。",
+            "visible": true
+          },
+          {
+            "href": "https://github.com/yydshly/0930_codex_project/tree/main/projects/017-waterfalls-lab",
+            "text": "本项目 · GitHub 017 目录\n查看源码与研究记录 ↗\n\n完整源码、基础归档、模块说明、测试和业务扩展理解均在项目目录。",
+            "visible": true
+          },
+          {
+            "href": "https://x.com/mogmek/status/2105966008720900321",
+            "text": "Mogmek 原作演示 ↗",
+            "visible": true
+          },
+          {
+            "href": "https://github.com/electronicarts/pbmpm",
+            "text": "EA 官方代码 ↗",
+            "visible": true
+          },
+          {
+            "href": "https://www.ea.com/games/battlefield/news/siggraph2024-pbmpm",
+            "text": "EA 技术介绍 ↗",
+            "visible": true
+          },
+          {
+            "href": "https://media.contentapi.ea.com/content/dam/ea/seed/presentations/seed-siggraph2024-pbmpm-paper.pdf",
+            "text": "PB-MPM 论文 ↗",
+            "visible": true
+          },
+          {
+            "href": "https://github.com/danieljgerhardt/Breakpoint",
+            "text": "Breakpoint 官方代码 ↗",
+            "visible": true
+          },
+          {
+            "href": "./research-assets/understanding-map.png",
+            "text": "下载 PNG 汇总图 ↓",
+            "visible": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Reader layout at 1280px",
+      "passed": true,
+      "details": {
+        "viewport": 1280,
+        "pageWidth": 1280,
+        "firstImage": 2200,
+        "mapImage": 1800,
+        "mainLinkVisible": true,
+        "overflowing": []
+      }
+    },
+    {
+      "name": "Reader layout at 390px",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "pageWidth": 390,
+        "firstImage": 2200,
+        "mapImage": 1800,
+        "mainLinkVisible": true,
+        "overflowing": []
+      }
+    },
+    {
+      "name": "Reader layout at 320px",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "pageWidth": 320,
+        "firstImage": 2200,
+        "mapImage": 1800,
+        "mainLinkVisible": true,
+        "overflowing": []
+      }
+    },
+    {
+      "name": "Bulk collapse closes all six product details",
+      "passed": true
+    },
+    {
+      "name": "Native detail expands natural-scene-authoring",
+      "passed": true
+    },
+    {
+      "name": "Native detail expands interactive-scene-presentation",
+      "passed": true
+    },
+    {
+      "name": "Native detail expands water-routing-gameplay",
+      "passed": true
+    },
+    {
+      "name": "Native detail expands interactive-learning",
+      "passed": true
+    },
+    {
+      "name": "Native detail expands scene-media-production",
+      "passed": true
+    },
+    {
+      "name": "Native detail expands creation-library-platform",
+      "passed": true
+    },
+    {
+      "name": "Bulk expand reveals all six product details",
+      "passed": true
+    },
+    {
+      "name": "Native PNG guide download is unchanged",
+      "passed": true,
+      "details": {
+        "name": "waterfalls-lab-understanding-map.png",
+        "bytes": 1084250,
+        "sha256": "c2537617473a3ae17ecd21d842285c7cefbbc57a26d58945ce8d86d4965fecf1"
+      }
+    },
+    {
+      "name": "Native SVG guide download is unchanged",
+      "passed": true,
+      "details": {
+        "name": "waterfalls-lab-understanding-map.svg",
+        "bytes": 922476,
+        "sha256": "9d094e0e2be76dbeee66f755682778b9c1138e8c293dcb06303673e58c43c5dd"
+      }
+    },
+    {
+      "name": "Every reader fragment identifies an existing section",
+      "passed": true,
+      "details": {
+        "missing": []
+      }
+    },
+    {
+      "name": "Every local reader destination is publicly served",
+      "passed": true
+    },
+    {
+      "name": "Text, effect, principle, value and sources are readable without JavaScript",
+      "passed": true
+    },
+    {
+      "name": "Native no-JS detail can reveal natural-scene-authoring",
+      "passed": true
+    },
+    {
+      "name": "Native no-JS detail can reveal interactive-scene-presentation",
+      "passed": true
+    },
+    {
+      "name": "Native no-JS detail can reveal water-routing-gameplay",
+      "passed": true
+    },
+    {
+      "name": "Native no-JS detail can reveal interactive-learning",
+      "passed": true
+    },
+    {
+      "name": "Native no-JS detail can reveal scene-media-production",
+      "passed": true
+    },
+    {
+      "name": "Native no-JS detail can reveal creation-library-platform",
+      "passed": true
+    },
+    {
+      "name": "EA upstream complete HTML, modules, WGSL, scenes, images and license match source",
+      "passed": true,
+      "details": {
+        "files": 37
+      }
+    },
+    {
+      "name": "Studio WebGPU initializes on recorded current adapter",
+      "passed": true,
+      "details": {
+        "gpu": {
+          "available": true,
+          "vendor": "intel",
+          "architecture": "gen-12lp",
+          "device": "",
+          "description": "",
+          "isFallbackAdapter": false,
+          "maxBufferSize": 2147483648,
+          "maxStorageBufferBindingSize": 2147483644,
+          "executionKind": "current-machine hardware adapter"
+        },
+        "state": {
+          "status": "ready",
+          "loadingText": "正在唤醒一条河流…",
+          "canvas": {
+            "width": 1280,
+            "height": 900
+          }
+        }
+      }
+    },
+    {
+      "name": "Pause control exposes paused state",
+      "passed": true
+    },
+    {
+      "name": "Pause control resumes water flow",
+      "passed": true
+    },
+    {
+      "name": "Camera preset can switch to close view",
+      "passed": true
+    },
+    {
+      "name": "Camera bookmark saves in isolated browser context",
+      "passed": true
+    },
+    {
+      "name": "Immersive mode has visible exit",
+      "passed": true
+    },
+    {
+      "name": "Escape returns to editor",
+      "passed": true
+    },
+    {
+      "name": "GPU output download is a real nonempty PNG",
+      "passed": true,
+      "details": {
+        "bytes": 263010,
+        "width": 1024,
+        "height": 720
+      }
+    },
+    {
+      "name": "Particle diagnostics return finite/in-domain/collision status on current adapter",
+      "passed": true,
+      "details": {
+        "result": "pass",
+        "text": "8,192 活跃粒子；有限值 8192/8192；范围内 8192/8192；固体内 0；体积比 0.302–1.454；累计 397 子步。",
+        "active": 8192
+      }
+    },
+    {
+      "name": "Studio preserves visible understanding entry at 390px",
+      "passed": true,
+      "details": {
+        "width": 390,
+        "scroll": 390,
+        "summary": {
+          "visible": true,
+          "right": 213
+        }
+      }
+    },
+    {
+      "name": "Studio preserves visible understanding entry at 320px",
+      "passed": true,
+      "details": {
+        "width": 320,
+        "scroll": 320,
+        "summary": {
+          "visible": true,
+          "right": 157
+        }
+      }
+    },
+    {
+      "name": "No missing local browser resources",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "No JavaScript page errors",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "resources": [
+    {
+      "url": "http://127.0.0.1:8992/projects/017-waterfalls-lab/",
+      "status": 200,
+      "scope": "reader-link"
+    },
+    {
+      "url": "http://127.0.0.1:8992/projects/017-waterfalls-lab/research-assets/landscape-v9.png",
+      "status": 200,
+      "scope": "reader-link"
+    },
+    {
+      "url": "http://127.0.0.1:8992/projects/017-waterfalls-lab/upstream/",
+      "status": 200,
+      "scope": "reader-link"
+    },
+    {
+      "url": "http://127.0.0.1:8992/projects/017-waterfalls-lab/research-assets/understanding-map.png",
+      "status": 200,
+      "scope": "reader-link"
+    },
+    {
+      "url": "http://127.0.0.1:8992/projects/017-waterfalls-lab/research-assets/understanding-map.svg",
+      "status": 200,
+      "scope": "reader-link"
+    },
+    {
+      "url": "http://127.0.0.1:8992/projects/017-waterfalls-lab/source-notice.html",
+      "status": 200,
+      "scope": "reader-link"
+    },
+    {
+      "url": "http://127.0.0.1:8992/projects/017-waterfalls-lab/downloads/river-confluence.waterfalls.json",
+      "status": 200,
+      "scope": "reader-link"
+    },
+    {
+      "url": "http://127.0.0.1:8992/projects/017-waterfalls-lab/downloads/river-cavern.waterfalls.json",
+      "status": 200,
+      "scope": "reader-link"
+    },
+    {
+      "url": "http://127.0.0.1:8992/projects/017-waterfalls-lab/downloads/waterfalls-lab-studio09-foundation.zip",
+      "status": 200,
+      "scope": "reader-link"
+    },
+    {
+      "url": "http://127.0.0.1:8992/projects/017-waterfalls-lab/publication-manifest.json",
+      "status": 200,
+      "scope": "reader-link"
+    },
+    {
+      "url": "http://127.0.0.1:8992/projects/017-waterfalls-lab/research-assets/confluence-v9.jpg",
+      "status": 200,
+      "scope": "reader-link"
+    },
+    {
+      "url": "http://127.0.0.1:8992/projects/017-waterfalls-lab/research-assets/mobile-v9.jpg",
+      "status": 200,
+      "scope": "reader-link"
+    },
+    {
+      "url": "http://127.0.0.1:8992/projects/017-waterfalls-lab/research-assets/immersive-mobile-v9.jpg",
+      "status": 200,
+      "scope": "reader-link"
+    },
+    {
+      "path": "upstream/data/rotate.svg",
+      "status": 200,
+      "bytes": 4644,
+      "sha256": "8b1681a3eabd9410e2a27059a7b4ffeba7cbd042f2868f86a9cf87a4821a96d6",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/data/SEED.jpg",
+      "status": 200,
+      "bytes": 12437,
+      "sha256": "193d3f4c9f9a7212845c4eb037bfb5bdf69b0b6a4552137f882a9aa6e9f87bfb",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/data/SEED_inverted.png",
+      "status": 200,
+      "bytes": 7437,
+      "sha256": "8fcddc7be14939f4803b49cdf1fbc7a6b0a38b99729b3aa495f5a497b003729c",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/data/SEED_logo.png",
+      "status": 200,
+      "bytes": 6485,
+      "sha256": "b718a94b511eb68b91d837e95c3ef2277804f6a4cc54fe3cba1944d18c71d536",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/index.html",
+      "status": 200,
+      "bytes": 2672,
+      "sha256": "9c650cef61a267932201af653cb123a0a1811a3cd2dff4add176df69f80db4d4",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/LICENSE.md",
+      "status": 200,
+      "bytes": 1513,
+      "sha256": "bd294b82f9e11be5b931304104ebe9666918020c86d4ddec945bca2e1c724f63",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/scenes/boxFracture.json",
+      "status": 200,
+      "bytes": 3790,
+      "sha256": "44361eac85ba3add5496957d3b6ed7c387c4b0076b8eefe9c51d8426e233c51a",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/scenes/damBreak.json",
+      "status": 200,
+      "bytes": 3493,
+      "sha256": "c28f941d79b73ec5176b50ddf3b95b28451ab291afef0f278220f1ac24fb0545",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/scenes/folding.json",
+      "status": 200,
+      "bytes": 2014,
+      "sha256": "284c9b907eaad2e266c0207d8ab77322d0e5249286303e4d71a95507bf671c0a",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/scenes/manifest.json",
+      "status": 200,
+      "bytes": 419,
+      "sha256": "969c4924f25d10e61e4792de79472fcb3dba44824862c2cdb1c5bac0c786ab2c",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/scenes/plasticPress.json",
+      "status": 200,
+      "bytes": 3552,
+      "sha256": "06f625ed5cc373fa47c70bf8ebccfbe6b7927164d6d2cd64d65a3b97c91bc8dc",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/scenes/seedLogo.json",
+      "status": 200,
+      "bytes": 6181,
+      "sha256": "c20f0fca4627b83c2764ca2be915cb8987125a49509742cbdfc56806019d65df",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/scenes/sillyRubber.json",
+      "status": 200,
+      "bytes": 1535,
+      "sha256": "0810ea805be1e0052a1eda90e4f2d3c2e97e49d25e528a3545551bcf118a25b2",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/shaders/bukkit.inc.wgsl",
+      "status": 200,
+      "bytes": 598,
+      "sha256": "f675123c968d210bc6478d35888f098af390ef71b1246dba0975a9c89a48f2eb",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/shaders/bukkitAllocate.wgsl",
+      "status": 200,
+      "bytes": 2231,
+      "sha256": "3bb31f4fe8c17d15cf6f25d3a118c6f72867a64711cf5f2c0dc8f8540a677847",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/shaders/bukkitCount.wgsl",
+      "status": 200,
+      "bytes": 1338,
+      "sha256": "a8c10290417c566efa041800f399a94b56bf08de39c0748c2b50ed0374e7ea7a",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/shaders/bukkitInsert.wgsl",
+      "status": 200,
+      "bytes": 1664,
+      "sha256": "c56529626fa5ba8b30d55393088a2682958683b034123a6fd035e3e0bd2aa274",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/shaders/dispatch.inc.wgsl",
+      "status": 200,
+      "bytes": 361,
+      "sha256": "651a19c3010bb41e065afdd252cad49970521809a5cf53f572c4922f68a285f5",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/shaders/g2p2g.wgsl",
+      "status": 200,
+      "bytes": 23834,
+      "sha256": "93e7e6fde4893b710f3bf55be4c3361e61010abda7ce0aa3a84b398518b5408d",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/shaders/matrix.inc.wgsl",
+      "status": 200,
+      "bytes": 1846,
+      "sha256": "85ed3f9c2929590de272b6bd58afd45bac362a2b6c6d3692296c9546d2aac525",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/shaders/particle.inc.wgsl",
+      "status": 200,
+      "bytes": 2587,
+      "sha256": "86fd9ac84a671a8e82f4a59de87b5f46bac055c364618bc0584669eef0907817",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/shaders/particleEmit.wgsl",
+      "status": 200,
+      "bytes": 5023,
+      "sha256": "9610bae814c793e58ab8baa8e1b47a3cf9eea6174862deefeb23e2de89612530",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/shaders/particleRender.wgsl",
+      "status": 200,
+      "bytes": 3113,
+      "sha256": "320dbd9ccd9b365899d3e610649e8ab809a23127350b8964ca89896d1a9ee8ab",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/shaders/random.inc.wgsl",
+      "status": 200,
+      "bytes": 510,
+      "sha256": "e5b9a41e34d20da693abed78bdcddd9b58ef9218a4fcc077c472ce848dfa4861",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/shaders/setIndirectArgs.wgsl",
+      "status": 200,
+      "bytes": 704,
+      "sha256": "ca79e813019519fe5b391c1cc16c321a649f8c2903f802cacf397171bd780cb0",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/shaders/shapes.inc.wgsl",
+      "status": 200,
+      "bytes": 1736,
+      "sha256": "f46a0ddd6ac7e4c26aa0f526bd2dfdc51506e2da333a77cb2ce81ebb94c80b17",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/shaders/simConstants.inc.wgsl",
+      "status": 200,
+      "bytes": 898,
+      "sha256": "28753df9f98ee0daad68ef68742f48db01f48f431b4b44c21f677659258bd6d5",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/src/buffer_factory.js",
+      "status": 200,
+      "bytes": 9167,
+      "sha256": "81c797e39ed63b804317645ce482d8ccece9fe512ed406a84d51415057941234",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/src/gpu.js",
+      "status": 200,
+      "bytes": 14209,
+      "sha256": "0cb8a4a18b091586cf4a6dfd3288e0ef9eab725bf5223130ada1344f0168c8f3",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/src/main.js",
+      "status": 200,
+      "bytes": 19249,
+      "sha256": "d3f6dc1ce3553968e9b7ee47357aa966ed861c653c09ce1356dc88f63cb518ff",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/src/render.js",
+      "status": 200,
+      "bytes": 2699,
+      "sha256": "f18777c6c36a99468877dada17976ed41d37298c442219cdf2485843d38eb191",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/src/shader.js",
+      "status": 200,
+      "bytes": 4894,
+      "sha256": "2beaec53c5dc90ed37a0706f5cab581424dc0110089ee312a64cb79b270783ad",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/src/sim.js",
+      "status": 200,
+      "bytes": 14770,
+      "sha256": "f0c9b3c8712ee43cc52aa4538ab71a9a7fe71fe5d30d284428bb9613433b0864",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/src/time.js",
+      "status": 200,
+      "bytes": 2707,
+      "sha256": "c0df784712dd5afdd172561f543cadd7349938a75ac6fce91fde1d93544a16f4",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/src/ui.js",
+      "status": 200,
+      "bytes": 20492,
+      "sha256": "b2a417020fa0db689e55b172ae23b0f33464c082d40e505fab504c7cbe24a26d",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/src/v.js",
+      "status": 200,
+      "bytes": 1552,
+      "sha256": "1dc40f8209050b5afedb872c723a096aa8b8ab4ee348d4371aeaf9bdb5e3559b",
+      "passed": true,
+      "scope": "EA-upstream"
+    },
+    {
+      "path": "upstream/style.css",
+      "status": 200,
+      "bytes": 1403,
+      "sha256": "4ba662550552463d94737ffcd7eb2332bef16807f31544ed780264e927979fe1",
+      "passed": true,
+      "scope": "EA-upstream"
+    }
+  ],
+  "browserErrors": [],
+  "missingResources": [],
+  "screenshots": [
+    "assets/publication-understanding-1280.png",
+    "assets/publication-understanding-390.png",
+    "assets/publication-understanding-320.png",
+    "assets/publication-resources.png",
+    "assets/publication-reader-no-js-390.png",
+    "assets/publication-studio-d3d11-1280.png",
+    "assets/publication-gpu-output-d3d11.png"
+  ],
+  "gpu": {
+    "available": true,
+    "vendor": "intel",
+    "architecture": "gen-12lp",
+    "device": "",
+    "description": "",
+    "isFallbackAdapter": false,
+    "maxBufferSize": 2147483648,
+    "maxStorageBufferBindingSize": 2147483644,
+    "executionKind": "current-machine hardware adapter"
+  },
+  "attempts": [
+    {
+      "date": "2026-10-09",
+      "base": "http://127.0.0.1:8992/projects/017-waterfalls-lab/",
+      "browserVersion": "151.0.7922.34",
+      "launchArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--enable-unsafe-webgpu"
+      ],
+      "gpu": {
+        "available": false,
+        "reason": "No WebGPU adapter"
+      },
+      "outcome": "Software backend could not provide an adapter. Studio showed its supported-device error. No GPU runtime passes are attributed to this attempt."
+    },
+    {
+      "date": "2026-10-09",
+      "base": "http://127.0.0.1:8992/projects/017-waterfalls-lab/",
+      "browserVersion": "151.0.7922.34",
+      "launchArgs": [
+        "--use-angle=d3d11",
+        "--enable-unsafe-webgpu"
+      ],
+      "gpu": {
+        "available": true,
+        "vendor": "nvidia",
+        "architecture": "lovelace",
+        "device": "",
+        "description": "",
+        "isFallbackAdapter": false,
+        "maxBufferSize": 2147483648,
+        "maxStorageBufferBindingSize": 2147483644
+      },
+      "failures": [
+        {
+          "name": "Studio WebGPU initializes on recorded current adapter",
+          "passed": false,
+          "details": {
+            "gpu": {
+              "available": true,
+              "vendor": "nvidia",
+              "architecture": "lovelace",
+              "device": "",
+              "description": "",
+              "isFallbackAdapter": false,
+              "maxBufferSize": 2147483648,
+              "maxStorageBufferBindingSize": 2147483644
+            },
+            "state": {
+              "status": "error",
+              "loadingText": "Failed to execute 'requestDevice' on 'GPUAdapter': DynamicLib.Open: dxil.dll Windows Error: 87\n    at EnsureDXCLibraries (..\\..\\third_party\\dawn\\src\\dawn\\native\\d3d12\\PlatformFunctionsD3D12.cpp:212)\n",
+              "canvas": {
+                "width": 300,
+                "height": 150
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "browserVersion": "154.0.4258.62",
+  "checksPassed": 37,
+  "checksFailed": 0,
+  "result": "passed"
+}

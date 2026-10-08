@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-03",
+  "scope": "understanding page, summary figure and static site integration",
+  "studio": 9,
+  "runtimeRevision": "27c8a72f0ac3",
+  "localPreview": "http://127.0.0.1:8991/projects/017-waterfalls-lab/understanding.html",
+  "htmlBalanced": true,
+  "uniquePageIds": 28,
+  "productDirectionsPresent": [
+    "natural-scene-authoring",
+    "interactive-scene-presentation",
+    "water-routing-gameplay",
+    "interactive-learning",
+    "scene-media-production",
+    "creation-library-platform"
+  ],
+  "localReferencesResolve": 17,
+  "imageDimensions": [
+    1800,
+    3400
+  ],
+  "svgEmbeddedScreenshotIdentical": true,
+  "publicImageCopiesIdentical": true,
+  "httpAndPublishedByteChecks": [
+    {
+      "path": "app.js",
+      "status": 200,
+      "bytes": 354326
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 18991
+    },
+    {
+      "path": "research-assets/confluence-v9.jpg",
+      "status": 200,
+      "bytes": 92062
+    },
+    {
+      "path": "research-assets/landscape-v9.png",
+      "status": 200,
+      "bytes": 672735
+    },
+    {
+      "path": "research-assets/understanding-map.png",
+      "status": 200,
+      "bytes": 1084250
+    },
+    {
+      "path": "research-assets/understanding-map.svg",
+      "status": 200,
+      "bytes": 922476
+    },
+    {
+      "path": "source-notice.html",
+      "status": 200,
+      "bytes": 2974
+    },
+    {
+      "path": "style.css",
+      "status": 200,
+      "bytes": 20042
+    },
+    {
+      "path": "terrain-worker.js",
+      "status": 200,
+      "bytes": 7306
+    },
+    {
+      "path": "understanding.css",
+      "status": 200,
+      "bytes": 15679
+    },
+    {
+      "path": "understanding.html",
+      "status": 200,
+      "bytes": 26028
+    },
+    {
+      "path": "understanding.js",
+      "status": 200,
+      "bytes": 1400
+    }
+  ],
+  "coreFilesUnchangedFromFoundation": [
+    "src/app.js",
+    "src/camera-views.js",
+    "src/gpu.js",
+    "src/jet.js",
+    "src/object-editor.js",
+    "src/object-mesh.js",
+    "src/project.js",
+    "src/shaders.js",
+    "src/sim-params.js",
+    "src/sources.js",
+    "src/stroke.js",
+    "src/terrain-worker.js",
+    "src/voxel.js",
+    "src/world.js",
+    "web/app.js",
+    "web/terrain-worker.js"
+  ],
+  "frozenArchiveSha256": "f7ce08ac9db02109493167be518a92244523f5c8de1b4072efb3fd5f68cd008d",
+  "applicationEventTests": {
+    "passed": 18,
+    "total": 18,
+    "environment": "DOM/GPU substitutes"
+  },
+  "repositoryRegressionTests": {
+    "passed": 20,
+    "total": 20
+  },
+  "browserExecutionVerifiedThisRound": false,
+  "browserLimitation": "Cua runtime could not initialize: Windows sandbox helper setup refresh failed.",
+  "evidenceImages": "Existing V9 screenshots; no newly measured GPU results"
+}

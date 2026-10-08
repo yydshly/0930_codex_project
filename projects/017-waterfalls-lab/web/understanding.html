@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#233d32">
+  <meta name="description" content="Waterfalls Lab：先看三维瀑布与可编辑水景实机效果，再理解体素造景、WebGPU PB-MPM 与屏幕空间水面；汇总六类产品方向、复用价值与接入边界，并提供互动工作室、EA 原版示例、源码、来源许可与 PNG/SVG 汇总图入口。">
+  <title>从水景到产品基座 · Waterfalls Lab</title>
+  <link rel="stylesheet" href="./understanding.css">
+  <script src="./understanding.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Waterfalls Lab，返回互动工作室"><span class="brand-mark" aria-hidden="true">≈</span><span>WATERFALLS LAB<small>STUDIO 09 · 能力与业务理解</small></span></a>
+    <a class="studio-link" href="./">进入互动工作室 <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main">
+    <section class="hero" id="effect" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">01 / 先看它能做什么</p>
+        <h1 id="hero-title">从一片水景，<br>到可复用的<span class="title-phrase">产品基座。</span></h1>
+        <p class="hero-lead">塑造地形，放置岩石，让水从不同源头流出。水会随场景变化绕行、分流与汇合——你可以一边搭建，一边观察结果。</p>
+        <div class="hero-actions"><a class="button primary" href="./">亲手搭建一片风景 <span aria-hidden="true">↗</span></a><a class="text-link" href="#map">看一张图理解全部 <span aria-hidden="true">↓</span></a></div>
+        <p class="hero-note">以下为本项目 STUDIO 09 的真实浏览器输出。截图展示某一时刻；实时流动与编辑请进入工作室体验。</p>
+      </div>
+      <figure class="hero-image">
+        <a href="./research-assets/landscape-v9.png" aria-label="打开双瀑汇流实际效果原图"><img src="./research-assets/landscape-v9.png" width="2200" height="1238" alt="森林山谷中的两股瀑布绕过岩石后汇入溪流，Waterfalls Lab 实际渲染效果" fetchpriority="high"></a>
+        <figcaption><span>双瀑汇流 · 实际 PNG 输出</span><span>地形 × 水流 × 光照 × 镜头</span></figcaption>
+      </figure>
+    </section>
+    <section class="resource-hub" id="resources" aria-labelledby="resources-title">
+      <div class="resource-heading"><div><p class="eyebrow">公开入口 / 体验 · 下载 · 源码 · 来源</p><h2 id="resources-title">看效果之后，直接体验与查阅。</h2></div><p>本页文字和图像无需 WebGPU。互动工作室与 EA 示例需要支持 WebGPU 的浏览器；汇总图沿用已生成的完整理解图。</p></div>
+      <div class="resource-grid">
+        <a class="resource-card resource-primary" href="./"><span class="resource-kind">本项目 · 独立三维实现</span><strong>进入互动工作室 <span aria-hidden="true">↗</span></strong><p>雕刻地形、编辑对象和水源，观察水路变化，保存作品与画面。</p></a>
+        <a class="resource-card" href="./upstream/"><span class="resource-kind">技术参考 · 保留原版示例</span><strong>运行 EA 二维示例 <span aria-hidden="true">↗</span></strong><p>直接体验上游 PB-MPM。原版多材料能力与本项目的三维水景分别展示。</p></a>
+        <a class="resource-card resource-map" href="./research-assets/understanding-map.png" target="_blank" rel="noopener"><img src="./research-assets/understanding-map.png" width="1800" height="3400" alt="完整理解汇总图缩略图" loading="lazy"><div><span class="resource-kind">沿用完整理解图 · PNG</span><strong>打开汇总大图 <span aria-hidden="true">↗</span></strong><p>一张图看效果、能力、原理、产品方向、价值和边界。</p></div></a>
+        <a class="resource-card" href="./research-assets/understanding-map.svg" download="waterfalls-lab-understanding-map.svg"><span class="resource-kind">同一汇总图 · 可编辑 SVG</span><strong>下载矢量汇总图 <span aria-hidden="true">↓</span></strong><p>保留文字、布局与原始实机截图，便于后续说明与演示。</p></a>
+        <a class="resource-card" href="./source-notice.html"><span class="resource-kind">来源 · 归属 · 第三方许可</span><strong>查看来源与许可 <span aria-hidden="true">↗</span></strong><p>原作、EA、Breakpoint 与本项目各自贡献什么，以及保留的许可全文。</p></a>
+        <a class="resource-card" href="https://github.com/yydshly/0930_codex_project/tree/main/projects/017-waterfalls-lab" target="_blank" rel="noopener"><span class="resource-kind">本项目 · GitHub 017 目录</span><strong>查看源码与研究记录 <span aria-hidden="true">↗</span></strong><p>完整源码、基础归档、模块说明、测试和业务扩展理解均在项目目录。</p></a>
+      </div>
+      <div class="reference-links" aria-label="原作与官方技术参考"><span>继续查阅</span><a href="https://x.com/mogmek/status/2105966008720900321" target="_blank" rel="noopener">Mogmek 原作演示 ↗</a><a href="https://github.com/electronicarts/pbmpm" target="_blank" rel="noopener">EA 官方代码 ↗</a><a href="https://www.ea.com/games/battlefield/news/siggraph2024-pbmpm" target="_blank" rel="noopener">EA 技术介绍 ↗</a><a href="https://media.contentapi.ea.com/content/dam/ea/seed/presentations/seed-siggraph2024-pbmpm-paper.pdf" target="_blank" rel="noopener">PB-MPM 论文 ↗</a><a href="https://github.com/danieljgerhardt/Breakpoint" target="_blank" rel="noopener">Breakpoint 官方代码 ↗</a><a href="./research-assets/understanding-map.png" download="waterfalls-lab-understanding-map.png">下载 PNG 汇总图 ↓</a></div>
+    </section>
+    <section class="downloads-section" id="downloads" aria-labelledby="downloads-title">
+      <h2 id="downloads-title">示例与已沉淀的基础</h2>
+      <p>先导入一个可编辑作品，再按需要复用冻结的源码与检查。示例 JSON 保存设计状态，导入后水流重新运行。</p>
+      <div class="map-actions"><a class="button secondary" href="./downloads/river-confluence.waterfalls.json" download>双瀑汇流示例 JSON ↓</a><a class="button secondary" href="./downloads/river-cavern.waterfalls.json" download>穿山溪流示例 JSON ↓</a><a class="button secondary" href="./downloads/waterfalls-lab-studio09-foundation.zip" download>V9 基础源码包 ↓</a><a class="text-link" href="./publication-manifest.json">公开文件与 SHA-256 清单 ↗</a></div>
+      <p class="download-note">从本机迁移到公网：在原工作室“我的作品”导出 JSON，再到公网工作室导入。本机与公网存储互不迁移；Pages 不提供云同步。</p>
+    </section>
+    <nav class="section-nav" aria-label="理解页章节"><a href="#effect">实际效果</a><a href="#resources">全部入口</a><a href="#position">基座定位</a><a href="#capabilities">已有能力</a><a href="#principles">技术原理</a><a href="#products">扩展产品</a><a href="#value">对你的价值</a><a href="#boundaries">接入与边界</a><a href="#map">汇总图</a><a href="#sources">参考来源</a></nav>
+    <section class="section intro-section" id="position" aria-labelledby="position-title">
+      <div class="section-heading"><p class="eyebrow">02 / 我们沉淀的是什么</p><h2 id="position-title">可编辑自然场景<br>与流体交互基座</h2></div>
+      <div class="section-content"><p class="lead">当前交付是一套能独立使用的三维水景工作室，以及可以继续复用的内部模块。它把“场景编辑 → 水流反馈 → 视觉展示 → 作品保存”连成一个完整循环。</p><p>现阶段的价值，是保留已经验证的技术基础。以后出现明确业务，再选择需要的能力，补业务规则和接入层，在目标设备上验收；不必为每个想法重新实现流体和编辑器。</p><p class="callout">场景由你搭建，水流由模拟产生。它适合小范围自然场景与交互体验；工程水动力、通用游戏地图和完整商业平台需要各自的新增能力。</p></div>
+    </section>
+    <section class="section" id="capabilities" aria-labelledby="capabilities-title">
+      <div class="section-heading"><p class="eyebrow">03 / STUDIO 09 已经具备</p><h2 id="capabilities-title">从造景，到保存作品。</h2><p>下列能力已存在于当前版本。后面的业务方向是可扩展路径，不代表这些产品已经交付。</p></div>
+      <div class="capabilities">
+        <article><span class="cap-number">01</span><div><h3>地形塑造</h3><p>增加、切削、恢复、平滑与压平地形；支持镜像笔刷和撤销。可构建溪阶、河道、山谷与洞穴形态。</p></div><span class="cap-tag">体素 / 碰撞场</span></article>
+        <article><span class="cap-number">02</span><div><h3>场景对象编辑</h3><p>放置岩石等内置对象，选择、复制、移动、缩放、旋转与镜像；支持多选和组合变换，实时更新障碍碰撞。</p></div><span class="cap-tag">静态障碍</span></article>
+        <article><span class="cap-number">03</span><div><h3>多水源与流动反馈</h3><p>独立设置水源位置、方向、速度、半径和强度；开关水源、预览喷射轨迹，并观察水流绕行、分流和汇合。</p></div><span class="cap-tag">WebGPU 流体</span></article>
+        <article><span class="cap-number">04</span><div><h3>自然场景与水面表现</h3><p>程序生成的山谷、植被和岩石，配合天空、雾、光照与水面透明、折射、反射和不规则泡沫，形成可观看的水景。</p></div><span class="cap-tag">实时渲染</span></article>
+        <article><span class="cap-number">05</span><div><h3>镜头与观看</h3><p>环绕、缩放、聚焦和预设视角；最多 8 个命名镜头收藏。沉浸观看可隐藏编辑界面，返回按钮或 Esc 退出。</p></div><span class="cap-tag">创作 / 展示</span></article>
+        <article><span class="cap-number">06</span><div><h3>作品保存与输出</h3><p>本地自动保存、作品库、JSON v2 导入导出和 PNG 输出。JSON 保存地形、对象、水源、参数与镜头等设计状态，加载后重新运行模拟。</p></div><span class="cap-tag">设计可复用</span></article>
+      </div>
+      <figure class="workspace-image"><a href="./research-assets/confluence-v9.jpg" aria-label="查看实际编辑界面大图"><img src="./research-assets/confluence-v9.jpg" width="1280" height="720" alt="STUDIO 09 实际编辑界面：双瀑水景、编辑工具与两个命名镜头收藏" loading="lazy"></a><figcaption>实际工作室：造景工具、参数调整与镜头收藏共同围绕实时场景工作。</figcaption></figure>
+      <div class="viewport-showcase"><div class="viewport-copy"><h3>窄屏编辑与沉浸观看</h3><p>既有的 390 × 844 桌面浏览器视口截图，展示工具在窄屏下的收纳与“返回编辑”入口。沉浸观看隐藏工具，让水景成为画面的主体。</p><p class="viewport-note">这两张图是桌面浏览器窄屏检查记录，不能代替实体手机上的 GPU 性能与交互验收。</p><a class="text-link" href="./">进入工作室切换观看模式 ↗</a></div><figure><a href="./research-assets/mobile-v9.jpg" aria-label="查看窄屏编辑模式实际截图"><img src="./research-assets/mobile-v9.jpg" width="390" height="844" alt="390 × 844 桌面浏览器窄屏视口中的水景编辑界面" loading="lazy"></a><figcaption>窄屏视口 · 编辑模式</figcaption></figure><figure><a href="./research-assets/immersive-mobile-v9.jpg" aria-label="查看窄屏沉浸模式实际截图"><img src="./research-assets/immersive-mobile-v9.jpg" width="390" height="844" alt="同一桌面浏览器窄屏视口中的沉浸水景与返回编辑按钮" loading="lazy"></a><figcaption>窄屏视口 · 沉浸模式</figcaption></figure></div>
+    </section>
+    <section class="section" id="principles" aria-labelledby="principles-title">
+      <div class="section-heading"><p class="eyebrow">04 / 内部如何工作</p><h2 id="principles-title">把编辑动作，转成<br>水流与画面反馈。</h2><p>地形网格负责画出环境；水面则从粒子在屏幕上的深度与厚度重建。两条渲染路径在最后画面中汇合。</p></div>
+      <div class="principle-flow" aria-label="五阶段技术流程">
+        <article><span class="flow-step">1</span><h3>CPU 接收编辑</h3><p>笔刷、对象变换、水源和参数修改形成场景状态；历史记录支持撤销与重做。</p><small>JavaScript · 编辑状态</small></article>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <article><span class="flow-step">2</span><h3>构建环境表示</h3><p>体素标量场描述地形与障碍，合成距离近似碰撞场供模拟读取。Worker 用 marching tetrahedra 提取地形网格。</p><small>CPU / Worker · 碰撞 + 地形网格</small></article>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <article><span class="flow-step">3</span><h3>GPU 模拟水流</h3><p>先处理粒子重力与出水，再把质量与动量传到背景网格；结合网格碰撞和粒子体积约束迭代，往返更新运动。</p><small>WebGPU compute · PB-MPM / APIC</small></article>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <article><span class="flow-step">4</span><h3>重建与渲染水面</h3><p>投影粒子并累积深度、厚度，平滑表面后估算法线；叠加吸收、折射、反射和泡沫，与环境合成。</p><small>WGSL · 屏幕空间流体</small></article>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <article><span class="flow-step">5</span><h3>观察与保存</h3><p>镜头控制决定如何观看；PNG 保存画面，JSON 保存可再次编辑的设计。继续编辑进入下一轮反馈。</p><small>镜头 · 输出 · 作品状态</small></article>
+      </div>
+      <div class="principle-notes">
+        <article><h3>为什么用粒子与网格两种表示？</h3><p>粒子跟随水移动，适合表示流动中的材料；固定背景网格为邻域计算与约束迭代提供结构。PB-MPM 在两者之间往返传递运动，再通过局部迭代约束调整材料行为。</p><p>本项目使用固定时间步 <code>1/120 s</code>、每步 3 次迭代。有限迭代的效果受参数与收敛情况影响，不能把论文中的稳定性讨论等同于任何配置和设备都稳定。</p></article>
+        <article><h3>为什么编辑后会改变水路？</h3><p>地形和静态对象共同形成碰撞场，GPU 在运动更新时读取它。修改障碍会改变可流动区域，水便随碰撞关系重新分布；喷射轨迹预览也跟随碰撞版本刷新。</p><p>地形生成放到 Worker，碰撞场与对象网格使用缓存更新，避免每次编辑都重建全部环境。Three.js 负责相机、数学与交互控制，流体计算和渲染使用自定义 WebGPU 流程。</p></article>
+      </div>
+      <div class="lineage"><h3>参考来源，与我们自己的实现</h3><div class="table-scroll" tabindex="0" role="region" aria-label="技术来源与实现关系表，可横向滚动"><table><caption class="visually-hidden">四层来源的角色、技术与边界</caption><thead><tr><th scope="col">来源</th><th scope="col">提供的理解</th><th scope="col">与本项目的关系</th></tr></thead><tbody><tr><th scope="row">Mogmek · Waterfalls Dream</th><td>造景与流体交互的体验灵感。</td><td>原始 X 演示是灵感来源。未据此确认它的内部算法、源码或可用库；本页不代表该作品的官方说明。</td></tr><tr><th scope="row">EA SEED · PB-MPM</th><td>公开二维 WebGPU、多材料 PB-MPM 模型参考。</td><td>参考粒子与网格传递、局部约束迭代思路。上游的多材料能力不等于本项目已经提供多材料编辑。</td></tr><tr><th scope="row">Breakpoint</th><td>三维 DirectX 12 GPU PB-MPM、双层网格与 mesh shaders 流体表面。</td><td>三维技术路径的参考。本项目的水面使用屏幕空间重建，没有采用其水面 mesh shading。</td></tr><tr><th scope="row">Waterfalls Lab · STUDIO 09</th><td>独立的浏览器三维水景实现。</td><td>自有地形、对象、水源、GPU 模拟、屏幕空间水面、作品与镜头编辑模块；不能把几项参考项目视为同一个库。</td></tr></tbody></table></div></div>
+    </section>
+    <section class="section products-section" id="products" aria-labelledby="products-title">
+      <div class="section-heading"><p class="eyebrow">05 / 同一基础，六类业务</p><h2 id="products-title">业务确定后，<br>选择需要的那一层。</h2><p>这里是后续业务匹配索引，不是新增功能清单。相对复杂度只是技术估计，不代表工期或收益预测。</p></div>
+      <div class="product-toolbar"><p>每个方向都回答：服务谁、复用什么、还需要补什么。</p><div id="product-controls" hidden><button type="button" id="expand-products">展开全部</button><button type="button" id="collapse-products">收起全部</button></div></div>
+      <div class="product-list">
+        <details class="product" id="natural-scene-authoring" open><summary><span class="product-index">01</span><span><strong>自然场景创作</strong><small>微景观工具 / 自然场景原型 / 庭院水景概念配置</small></span><span class="product-complexity">中</span></summary><div class="product-body"><p class="product-task">让创作者构建、保存并比较小范围自然场景。</p><dl><div><dt>已有基础</dt><dd>地形笔刷、内置对象、水源编辑、作品存档。</dd></div><div><dt>业务补充</dt><dd>领域素材与模板、业务属性、方案版本、批注与对比。</dd></div><div><dt>适用边界</dt><dd>概念造景与布局。通用大地图、任意模型碰撞和工程水动力需要额外工作；沿用现有素材的限定工具更接近当前基础。</dd></div></dl></div></details>
+        <details class="product" id="interactive-scene-presentation" open><summary><span class="product-index">02</span><span><strong>实时互动展示</strong><small>品牌活动页 / 展厅风景 / 作品集组件 / 放松互动页面</small></span><span class="product-complexity">小—中</span></summary><div class="product-body"><p class="product-task">让访客观看风景，并通过有限操作改变它。</p><dl><div><dt>已有基础</dt><dd>GPU 模拟、实时渲染、程序场景、镜头与沉浸观看。</dd></div><div><dt>业务补充</dt><dd>展示内容与操作范围、品牌界面、嵌入生命周期和事件、目标设备适配。</dd></div><div><dt>适用边界</dt><dd>独立展项较小；嵌入业务应用需要封装。当前交付是独立应用与内部模块，还没有对外稳定组件 API。</dd></div></dl></div></details>
+        <details class="product" id="water-routing-gameplay"><summary><span class="product-index">03</span><span><strong>地形与水流玩法</strong><small>引水解谜 / 障碍布局挑战 / 用户创作水路关卡</small></span><span class="product-complexity">中</span></summary><div class="product-body"><p class="product-task">让玩家通过调整地形、障碍和水源，达成关卡目标。</p><dl><div><dt>已有基础</dt><dd>流体反馈、地形编辑、对象变换、水源控制、设计存档。</dd></div><div><dt>业务补充</dt><dd>目标区域与达成判定、关卡规则、进度与计分、稳定的业务实体关联。</dd></div><div><dt>适用边界</dt><dd>当前没有关卡、计分或确定性回放。复杂机关与动态刚体需要更大扩展。</dd></div></dl></div></details>
+        <details class="product" id="interactive-learning"><summary><span class="product-index">04</span><span><strong>模拟教学与实验</strong><small>地形水流实验课 / GPU 算法演示 / 互动课堂练习</small></span><span class="product-complexity">小—中</span></summary><div class="product-body"><p class="product-task">让学习者操作参数与场景，观察并解释结果变化。</p><dl><div><dt>已有基础</dt><dd>实时模拟与渲染、场景控制、地形编辑、模拟参数。</dd></div><div><dt>业务补充</dt><dd>教学步骤、参数解释、对照任务、问题反馈与实验记录。</dd></div><div><dt>适用边界</dt><dd>适合定性观察与算法讲解。工程水量、结构安全和精确水动力结论需要专门模型与验证。</dd></div></dl></div></details>
+        <details class="product" id="scene-media-production"><summary><span class="product-index">05</span><span><strong>场景素材生产</strong><small>风景截图工具 / 动态背景工具 / 镜头创作工作台</small></span><span class="product-complexity">小—中</span></summary><div class="product-body"><p class="product-task">把可编辑场景转为符合实际用途的视觉素材。</p><dl><div><dt>已有基础</dt><dd>场景渲染、镜头收藏、PNG 输出、作品存档。</dd></div><div><dt>业务补充</dt><dd>镜头动画、录像、批量任务、输出规格与素材管理。</dd></div><div><dt>适用边界</dt><dd>PNG 已有；视频、无缝循环和批量导出尚需实现。静态截图工具更接近当前能力。</dd></div></dl></div></details>
+        <details class="product" id="creation-library-platform"><summary><span class="product-index">06</span><span><strong>作品库与创作平台</strong><small>造景作品库 / 作品征集活动 / UGC 创作分享</small></span><span class="product-complexity">中—大</span></summary><div class="product-body"><p class="product-task">让用户创建、管理、发布并浏览造景作品。</p><dl><div><dt>已有基础</dt><dd>独立工作室、作品 JSON、镜头、画面输出与本地作品库。</dd></div><div><dt>业务补充</dt><dd>账号与云存储、发布与浏览、权限、内容审核及版本管理。</dd></div><div><dt>适用边界</dt><dd>当前作品保存在本地。云分享、平台服务和多人协作仍需要新增服务与产品流程。</dd></div></dl></div></details>
+      </div>
+    </section>
+    <section class="section value-section" id="value" aria-labelledby="value-title">
+      <div class="section-heading"><p class="eyebrow">06 / 对你的价值</p><h2 id="value-title">保留技术资产，<br>让业务决定下一步。</h2></div>
+      <div class="value-list"><article><span>01</span><h3>缩短下一次原型的起点</h3><p>流体、编辑、渲染和存档已经串联，后续可直接从真实可操作场景验证业务，而非从静态概念重新搭建。</p></article><article><span>02</span><h3>共享底层，保留产品差异</h3><p>展示页只开放镜头和少量互动；创作工具开放完整编辑；解谜产品加入目标判定。相同能力可服务不同任务。</p></article><article><span>03</span><h3>能展示，也能再次编辑</h3><p>PNG 用于沟通效果，JSON 保留设计。场景、参数和镜头可以积累为样例与模板，继续服务方案迭代。</p></article><article><span>04</span><h3>把投入放到有需求的地方</h3><p>已有边界、代码模块与验证记录便于判断复用成本。以后按业务补接口、素材或服务，避免无目标地扩展。</p></article></div>
+      <p class="value-statement">当前阶段可以停止无目标探索。沉淀 STUDIO 09 基线；业务出现后，再决定扩什么、为何扩，以及如何验收。</p>
+    </section>
+    <section class="section" id="boundaries" aria-labelledby="boundaries-title">
+      <div class="section-heading"><p class="eyebrow">07 / 从基础到可用产品</p><h2 id="boundaries-title">复用有入口，<br>接入有边界。</h2></div>
+      <details class="module-index"><summary>复用模块与接入入口 <span>按业务需要查看</span></summary><p>以下是仓库中的内部模块，接入业务时需要封装生命周期与业务接口；页面中的路径用于定位源码。</p><div class="table-scroll" tabindex="0" role="region" aria-label="内部复用模块表，可横向滚动"><table><thead><tr><th scope="col">选用能力</th><th scope="col">源码入口</th><th scope="col">业务接入重点</th></tr></thead><tbody>
+        <tr><th scope="row">流体与渲染</th><td><code>src/gpu.js</code> · <code>WaterfallEngine</code><br><code>src/shaders.js</code></td><td>宿主画布、挂载 / 卸载、资源释放、WebGPU 能力与性能预算。</td></tr>
+        <tr><th scope="row">地形与碰撞</th><td><code>src/voxel.js</code><br><code>src/terrain-worker.js</code></td><td>领域素材、尺度与编辑范围；扩大域需要同步修改求解器和校验。</td></tr>
+        <tr><th scope="row">对象与编辑</th><td><code>src/object-editor.js</code><br><code>src/object-mesh.js</code> / <code>src/stroke.js</code></td><td>业务实体、操作权限、工具界面和编辑事件。</td></tr>
+        <tr><th scope="row">水源与轨迹</th><td><code>src/sources.js</code><br><code>src/jet.js</code></td><td>水源规则与交互方式；轨迹预览估算空中运动，实际水流以模拟为准。</td></tr>
+        <tr><th scope="row">作品与历史</th><td><code>src/project.js</code><br><code>encodeProject</code> / <code>decodeProject</code></td><td>业务存储、版本迁移与实体关联。解码只保留已定义字段，导入会重建对象 ID。</td></tr>
+        <tr><th scope="row">镜头与画面</th><td><code>src/camera-views.js</code><br>引擎相机与 PNG 方法</td><td>展示编排、输出规格；视频与批量流程按需求新增。</td></tr>
+      </tbody></table></div></details>
+      <ol class="integration-flow"><li><span>01</span><h3>定义业务任务</h3><p>目标用户是谁？要完成什么任务？交付独立页面、嵌入组件还是平台？</p></li><li><span>02</span><h3>选择复用模块</h3><p>从地形、流体、渲染、编辑、存档和镜头中组合需要的能力。</p></li><li><span>03</span><h3>补接入与业务层</h3><p>按交付形态封装初始化、更新、事件和销毁；再补规则、内容、账号或服务。</p></li><li><span>04</span><h3>在目标设备验收</h3><p>明确加载时间、帧率、编辑反馈、存档与异常恢复要求，使用真实目标设备测试。</p></li></ol>
+      <div class="boundaries-grid"><article><h3>当前实现边界</h3><ul><li>固定模拟网格 <code>52 × 56 × 44</code>，单元尺度 <code>DX = 0.24</code>；扩大范围与提高精度会改变计算和内存成本。</li><li>粒子档位为 8,192 / 16,384 / 24,576 / 49,152；档位存在不代表每台设备都能流畅运行。</li><li>障碍为静态对象；没有动态刚体、任意模型导入与通用模型碰撞。</li><li>作品 JSON v2 保存设计状态，不保存完整粒子时间帧，也不提供确定性模拟回放。</li><li>当前是内部模块与独立应用，尚未发布稳定 SDK、云服务或多人协作接口。</li><li>视觉模拟适合创作、互动与演示，工程分析需建立对应物理模型与独立验证。</li></ul></article><article><h3>已有验证，以及它的范围</h3><p><time datetime="2026-10-03">2026-10-03</time> 的 STUDIO 09 基线记录：<strong>91 项自动检查通过</strong>；本机真实 GPU 检查中，<strong>49,152 个活动粒子</strong>全部为有限值、位于模拟范围内，明显进入固体的粒子为 0。</p><p>同轮实测还覆盖对象组合移动、地形 Worker 编辑与撤销、作品导入导出、PNG 输出、镜头收藏和沉浸观看；390 × 844 为桌面浏览器窄屏视口检查。</p><p class="evidence-note">这些是既有基线的历史验证，不是本说明页新增模拟测试，也不等于所有硬件、实体手机或长时运行都已验收。具体业务仍需在目标设备上验证。</p><a class="text-link" href="./source-notice.html">查看项目来源说明 <span aria-hidden="true">↗</span></a></article></div>
+    </section>
+    <section class="section summary-section" id="map" aria-labelledby="map-title">
+      <div class="section-heading"><p class="eyebrow">08 / 一张图，带走完整理解</p><h2 id="map-title">效果 · 原理 · 能力<br>产品方向 · 你的价值</h2><p>汇总图与上文配套：从真实水景出发，向下理解技术，向外匹配业务，最后落到复用与验收。</p></div>
+      <figure class="summary-image"><a href="./research-assets/understanding-map.png" aria-label="打开能力与业务理解汇总图原图"><img src="./research-assets/understanding-map.png" width="1800" height="3400" alt="Waterfalls Lab 能力与业务理解汇总：真实水景效果、地形和流体技术流程、六类产品方向、复用价值与业务接入边界；各项内容在本页正文亦有完整文字说明" loading="lazy"></a><figcaption>Waterfalls Lab · 可编辑自然场景与流体交互基座 · STUDIO 09</figcaption></figure>
+      <div class="map-actions"><a class="button primary" href="./research-assets/understanding-map.png" target="_blank" rel="noopener">查看完整大图 <span aria-hidden="true">↗</span></a><a class="button secondary" href="./research-assets/understanding-map.png" download="waterfalls-lab-understanding-map.png">下载 PNG 汇总图 <span aria-hidden="true">↓</span></a><a class="button secondary" href="./research-assets/understanding-map.svg" download="waterfalls-lab-understanding-map.svg">下载 SVG 汇总图 <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <section class="section sources-section" id="sources" aria-labelledby="sources-title"><div class="section-heading"><p class="eyebrow">参考与说明</p><h2 id="sources-title">理解有来源，<br>能力以本项目为准。</h2></div><ol class="sources-list"><li><a href="https://x.com/mogmek/status/2105966008720900321" target="_blank" rel="noopener">Mogmek 原始 X 演示 <span aria-hidden="true">↗</span></a><p>体验灵感链接；本轮来源核对未能读取该页面，不据此追加内部实现、源码披露或发行状态结论。</p></li><li><a href="https://github.com/electronicarts/pbmpm" target="_blank" rel="noopener">EA SEED · PB-MPM 官方代码 <span aria-hidden="true">↗</span></a><p>二维 WebGPU 与多材料参考。另见 <a href="https://www.ea.com/games/battlefield/news/siggraph2024-pbmpm" target="_blank" rel="noopener">官方技术介绍</a>和 <a href="https://media.contentapi.ea.com/content/dam/ea/seed/presentations/seed-siggraph2024-pbmpm-paper.pdf" target="_blank" rel="noopener">SIGGRAPH 2024 论文</a>。</p></li><li><a href="https://github.com/danieljgerhardt/Breakpoint" target="_blank" rel="noopener">Breakpoint · 三维 PB-MPM 参考 <span aria-hidden="true">↗</span></a><p>DirectX 12、双层网格与 mesh shaders 流体表面；用于区分三维参考方案与本项目的屏幕空间水面实现。</p></li><li><a href="./source-notice.html">本项目来源与归属说明 <span aria-hidden="true">↗</span></a><p>本页以 STUDIO 09 代码与历史验证为能力基线；产品方向属于后续业务扩展索引。</p></li></ol></section>
+  </main>
+  <footer class="site-footer"><div><strong>WATERFALLS LAB</strong><p>一份已沉淀的基础，等待具体业务来生长。</p><small>公开入口整理 · 2026-10-09 · STUDIO 09 模拟基线</small></div><div class="footer-actions"><a href="./">返回互动工作室 <span aria-hidden="true">↗</span></a><a href="#resources">全部链接与下载</a><a href="#effect">回到顶部 <span aria-hidden="true">↑</span></a></div></footer>
+</body>
+</html>

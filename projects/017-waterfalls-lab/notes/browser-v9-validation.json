@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-03",
+  "studio": 9,
+  "testOrigin": "http://127.0.0.1:8999",
+  "automatedChecks": {
+    "node": 77,
+    "python": 14
+  },
+  "gpuReadbacks": [
+    {
+      "scene": "v8-baseline",
+      "active": 16384,
+      "finite": 16384,
+      "insideDomain": 16384,
+      "insideSolid": 0,
+      "volumeRatio": [
+        0.3,
+        2.103
+      ],
+      "substeps": 1342
+    },
+    {
+      "scene": "v9-after-group-drag-and-mirrored-sculpt",
+      "active": 16384,
+      "finite": 16384,
+      "insideDomain": 16384,
+      "insideSolid": 0,
+      "volumeRatio": [
+        0.3,
+        1.439
+      ],
+      "substeps": 43783
+    },
+    {
+      "scene": "v9-ultra-confluence-after-reset",
+      "active": 49152,
+      "finite": 49152,
+      "insideDomain": 49152,
+      "insideSolid": 0,
+      "volumeRatio": [
+        0.733,
+        1.558
+      ],
+      "substeps": 56
+    }
+  ],
+  "groupDrag": {
+    "selection": [
+      0,
+      1
+    ],
+    "before": [
+      [
+        -2.4099759386748403,
+        1.2000894526060644,
+        -0.5233389205614891
+      ],
+      [
+        -1.9599759386748403,
+        1.2000894526060644,
+        -0.5233389205614891
+      ]
+    ],
+    "after": [
+      [
+        -2.506452372910113,
+        1.2000894526060644,
+        -1.3102056350330615
+      ],
+      [
+        -2.0564523729101127,
+        1.2000894526060644,
+        -1.3102056350330615
+      ]
+    ],
+    "singleUndoRestored": true
+  },
+  "workerSculpt": {
+    "mirroredEdits": 74,
+    "returnedToReady": true,
+    "singleUndoEdits": 0
+  },
+  "cameraViews": {
+    "reloadPreservedCount": 2,
+    "nativeFileImportPreserved": true,
+    "removalUndoPreserved": true,
+    "framesBeforeUndo": 14084,
+    "framesAfterUndo": 14171
+  },
+  "projectFile": {
+    "version": 2,
+    "uiExport": true,
+    "nativeFileChooserImport": true,
+    "namedViewsRoundtripped": true
+  },
+  "png": {
+    "gpuReadback": true,
+    "width": 2200,
+    "height": 1238,
+    "asset": "assets/landscape-v9.png"
+  },
+  "responsive": {
+    "viewport": [
+      390,
+      844
+    ],
+    "immersiveButtonExit": true,
+    "escapeExit": true,
+    "restoresTool": true,
+    "finalNearViewPageOverflow": false,
+    "cameraNameFontPx": 11,
+    "viewportOverrideReset": true
+  },
+  "finalConsoleWarningsAndErrors": [],
+  "screenshots": [
+    "assets/confluence-v9.jpg",
+    "assets/mobile-v9.jpg",
+    "assets/immersive-mobile-v9.jpg"
+  ],
+  "limits": [
+    "single local desktop browser/GPU",
+    "no standardized FPS benchmark",
+    "no physical mobile GPU test",
+    "heuristic foam rendering",
+    "fixed simulation domain and voxel spacing"
+  ],
+  "finalRevision": "46e0893cfee3",
+  "originalPreview": {
+    "origin": "http://127.0.0.1:8988",
+    "studio09Loaded": true,
+    "sceneDataPreserved": true,
+    "consoleWarningsAndErrors": []
+  }
+}

@@ -35,6 +35,7 @@
 | 013 | [InsightFace · 人脸与视频截图检索理解](projects/013-insightface-retrieval/README.md) | **定位：** 人脸身份检索与视频截图出处查找的完整理解<br>**能力：** InsightFace 检测、对齐、身份向量、训练与评测<br>**原理：** ArcFace 等方法训练网络，目标库保存特征与来源，索引排序后校准阈值并拒识<br>**展示：** 原有全景图、全文说明、三任务路线及人工向量排序示意，14 组来源与记录<br>**场景：** 图库找人、素材归组、已收录视频画面定位与内容检索<br>**价值：** 复用现成模型与检索技术，减少人工翻找，判断个人原型可行性<br>**参考：** AVScan、SSCD、Faiss、trace.moe、TwelveLabs 的分工<br>**扩展：** 代表性样本验证、质量过滤、索引更新与候选复核<br>**边界：** 识人不等于找出处，公开成绩不等于实际效果，未确认 AVScan 使用 InsightFace；未做真实识别，官方权重非商业研究条件需另核。 | 已完成 | [AVScan · 需求参考，后台实现未确认](https://avscan.cc/)<br>能力参考：[deepinsight/insightface](https://github.com/deepinsight/insightface)<br>后台关联未确认 | [在线演示](https://yydshly.github.io/0930_codex_project/projects/013-insightface-retrieval/) |
 | 015 | [AI Creative Products · 十项创意效果库](projects/015-ai-creative-products/README.md) | **定位：** 以十个 Opus 社区案例为参考的原创浏览器效果库<br>**效果：** 空间作品集、任务街区、观点叙事、发布动效、机房生存、角色钢琴、研究集市、软胶角色、营地折射水体与车球挑战<br>**原理：** 1 个 CSS、2 个 Canvas、7 个 Three.js 原型，时间表、任务状态与物理规则分别驱动实际反馈，Web Audio 同步音乐<br>**交付：** 分例支持离线 HTML、无声或配乐 WebM、WAV、PNG、脚本及体验 JSON，附 Python / Blender 配方<br>**展示：** 十项真实效果、原作对照、独立试玩、完整理解、来源与原有总览图<br>**价值：** 展示已有研究、制作发布内容、验证产品体验，复用内容配置、场景与交付流程<br>**扩展：** 展厅、训练、课程与品牌影片、角色组件、环境导览和操控活动<br>**边界：** 05 / 07 / 09 / 10 为 v16，其他六项为 v15，无模型生成后台，Blender 新造型与商业成效未验证，物理和资产仍有限。 | 已完成 | [Min Choi · 十个 Opus 创作案例合集](https://x.com/minchoi/status/2105685231298630009)<br>十位原作者分别署名；十项原型由我们独立实现 | [在线演示](https://yydshly.github.io/0930_codex_project/projects/015-ai-creative-products/) |
 | 016 | [Chippytea Lab · 功能与声画编排研究](projects/016-chippytea-lab/README.md) | **定位：** Mac 清理应用及手绘互动官网的完整研究<br>**能力：** 真实功能结果与角色、动作、音乐时间及频谱、用户参与和世界积累共同编排<br>**展示：** 原有理解总览图、三个 32 秒原创小世界、原作对照、纸墨实验、研究回执与全文档案<br>**原理：** 共享视觉规则和音乐时间，功能事件触发独立动作，浏览器状态留下记忆<br>**价值：** 让结果可感知，形成原创产品性格并复用声画表达<br>**扩展：** 知识收藏、任务习惯与专注、素材整理、创作展示、互动课程和音乐叙事编辑器<br>**边界：** 花园与影子已有 MiniMax 配乐，月亮待生成；公开回执只读，Mac 引擎、真实业务集成及收益未验证。 | 已完成 | [richiemcilroy/chippytea](https://github.com/richiemcilroy/chippytea) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/) |
+| 017 | [Waterfalls Lab · 实时瀑布与流体造景](projects/017-waterfalls-lab/README.md) | **定位：** 可编辑自然场景与流体交互基座，受 Waterfalls Dream 启发的独立浏览器三维水景<br>**能力：** 体素造景、岩石与多水源编辑、实时水流、撤销重做、镜头收藏、沉浸观看及作品保存<br>**原理：** WebGPU 三维 PB-MPM / APIC、体素碰撞场、Worker 地形网格与屏幕空间水面光学合成<br>**展示：** 互动工作室、完整理解页、EA 二维原版对照、真实 V9 效果、原有汇总 PNG / SVG、示例与冻结源码基线<br>**场景：** 自然场景创作、互动展示、水流解谜、定性教学、素材生产、作品平台<br>**价值：** 复用已验证的模拟、渲染与编辑基础，积累可再编辑作品，按业务需求补接入层和规则<br>**边界：** 固定小范围视觉模拟，需 WebGPU；公共 SDK、动态刚体、任意模型、视频、云协作与工程精度待建，手机硬件与统一帧率未验证。 | 已完成 | [Mogmek · Waterfalls Dream 演示](https://x.com/mogmek/status/2105966008720900321)<br>技术：[electronicarts/pbmpm](https://github.com/electronicarts/pbmpm) | — |
 
 <!-- PROJECT_INDEX:END -->
 
@@ -284,6 +285,22 @@
 ![Chippytea Lab · 功能与声画编排研究 项目引导图](projects/016-chippytea-lab/assets/chippytea-understanding-map-v1.png)
 
 [研究详情](projects/016-chippytea-lab/README.md) · [在线演示](https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/)
+
+### 017 · Waterfalls Lab · 实时瀑布与流体造景
+
+- **定位：** 可编辑自然场景与流体交互基座，受 Waterfalls Dream 启发的独立浏览器三维水景
+- **能力：** 体素造景、岩石与多水源编辑、实时水流、撤销重做、镜头收藏、沉浸观看及作品保存
+- **原理：** WebGPU 三维 PB-MPM / APIC、体素碰撞场、Worker 地形网格与屏幕空间水面光学合成
+- **展示：** 互动工作室、完整理解页、EA 二维原版对照、真实 V9 效果、原有汇总 PNG / SVG、示例与冻结源码基线
+- **场景：** 自然场景创作、互动展示、水流解谜、定性教学、素材生产、作品平台
+- **价值：** 复用已验证的模拟、渲染与编辑基础，积累可再编辑作品，按业务需求补接入层和规则
+- **边界：** 固定小范围视觉模拟，需 WebGPU；公共 SDK、动态刚体、任意模型、视频、云协作与工程精度待建，手机硬件与统一帧率未验证。
+
+效果来源：[Mogmek · Waterfalls Dream 演示](https://x.com/mogmek/status/2105966008720900321)。技术基础：[electronicarts/pbmpm](https://github.com/electronicarts/pbmpm)。先阅读下方引导图，再进入研究文档与交互演示。
+
+![Waterfalls Lab · 实时瀑布与流体造景 项目引导图](projects/017-waterfalls-lab/assets/understanding-map.png)
+
+[研究详情](projects/017-waterfalls-lab/README.md)
 
 <!-- PROJECT_PREVIEWS:END -->
 
