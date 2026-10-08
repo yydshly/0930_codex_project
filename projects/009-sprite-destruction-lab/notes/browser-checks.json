@@ -1,0 +1,113 @@
+{
+  "checkedAt": "2026-10-08T07:29:31.285Z",
+  "url": "http://127.0.0.1:9549/projects/009-sprite-destruction-lab/lab.html",
+  "browser": "151.0.7922.34",
+  "checks": [
+    {
+      "name": "Actual catalog is visible in the initial DOM",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Real DOM texture and physics tiles created",
+      "passed": true,
+      "details": "{\"state\":\"running\",\"effect\":\"classic\",\"ratio\":0,\"goalRatio\":0,\"total\":186634.375,\"destroyed\":0,\"hits\":0,\"shots\":0,\"complete\":false,\"tiles\":97,\"dynamic\":0,\"visuals\":0,\"collected\":0,\"fps\":60,\"width\":1108,\"height\":490,\"gravity\":1,\"force\":1,\"auto\":false}"
+    },
+    {
+      "name": "Character moves with keyboard",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Character jumps using the physical body",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Manual pointer shot hits actual content",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Catalog task completes and real project links unlock",
+      "passed": true,
+      "details": "{\"state\":\"running\",\"effect\":\"classic\",\"ratio\":0.3712579743147531,\"goalRatio\":0.3712579743147531,\"total\":186634.375,\"destroyed\":69289.5,\"hits\":5,\"shots\":5,\"complete\":true,\"tiles\":97,\"dynamic\":39,\"visuals\":0,\"collected\":0,\"fps\":60,\"width\":1108,\"height\":490,\"gravity\":1,\"force\":1,\"auto\":true}"
+    },
+    {
+      "name": "Every released fragment has finite physical coordinates and inertia",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Pause stops simulation and automatic shooting",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Resume restarts the simulation",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Reset disposes physics and restores the DOM",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Campaign goal targets the price area",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Coupon uses a real clipboard action",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Parameter values apply to live engine",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Events exported as a usable JSON download",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Resize restores correctly sized source rather than distorted physics",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Mobile viewport has no horizontal overflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Mobile pointer input produces a real shot",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Touch direction control moves the body",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Official link uses the verified url parameter",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Both original evidence screenshots load",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "No uncaught browser errors or missing local assets",
+      "passed": true,
+      "details": "[]"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="六种可操作的产品应用：内容动效、方案对比、交互说明书、数据故事、品牌展览与嵌入组件。">
+  <title>Forma · 交互产品工作台</title>
+  <link rel="stylesheet" href="products.css">
+  <script defer src="../vendor/matter.min.js"></script><script defer src="../vendor/html2canvas.min.js"></script>
+  <script type="module" src="products.js"></script>
+</head>
+<body>
+<aside class="rail">
+  <a class="brand" href="#motion"><span class="brand-mark">f.</span><div>forma<span>交互产品工作台</span></div></a>
+  <p class="rail-label">把内容变成体验</p>
+  <nav id="tools" aria-label="产品工具"></nav>
+  <div class="rail-bottom"><a href="../toolbox/" style="display:block;font-size:12px;font-weight:600;margin-bottom:15px">网页辅助工具箱 ↗<br><small style="font-weight:400">真实翻译 · 摘录 · 表格提取</small></a><span class="local-dot"></span> 本地工作空间<p>素材留在当前浏览器</p><a href="../">完整研究总览 ↗</a></div>
+</aside>
+<div class="app">
+  <header class="topbar"><div><span class="breadcrumb">应用工作台 / </span><b id="crumb">内容动效</b></div><div class="top-actions"><span id="save-state">示例项目</span><button id="save-project">保存项目</button><button id="export-project" class="quiet" aria-label="下载项目 JSON">↓ 项目</button><label class="file-button quiet">导入项目<input type="file" id="import-project" accept="application/json,.json"></label></div></header>
+  <main>
+    <div class="heading"><div><p class="eyebrow" id="tool-number">01 / CONTENT MOTION</p><h1 id="tool-title">为内容，做一个有记忆点的退场。</h1><p id="tool-subtitle"></p></div><span class="prototype-badge">可操作产品原型</span></div>
+    <div class="usecase"><span>真实任务</span><p id="task-copy"></p><span class="outcome" id="outcome-copy"></span></div>
+    <div id="workspace"></div>
+    <section class="explanation"><div><p class="eyebrow">为什么做成这个产品</p><p id="value-copy"></p></div><div><p class="eyebrow">效果怎样帮助任务</p><p id="mechanism-copy"></p></div><div><p class="eyebrow">继续扩展</p><p id="extend-copy"></p></div></section>
+    <footer>独立产品原型 · 示例品牌与设备为自建内容，空间图为自绘示意，示例数据非业务实测。<a href="../licenses.html">依赖与许可</a></footer>
+  </main>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<dialog id="export-dialog"><div class="dialog-head"><h2>正在生成动画</h2><button id="cancel-export">取消</button></div><p>浏览器正在实时录制画布。生成后会下载 WebM 视频。</p><progress id="export-progress" max="100" value="0"></progress><p id="export-status">正在准备…</p></dialog>
+</body>
+</html>

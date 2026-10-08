@@ -1,0 +1,54 @@
+import { createRequire } from 'node:module';
+import { mkdir, writeFile } from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+const require=createRequire('C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/package.json');
+const {chromium}=require('playwright');
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+await mkdir(path.join(root,'notes'),{recursive:true});await mkdir(path.join(root,'assets'),{recursive:true});
+const browser=await chromium.launch({headless:true});
+const page=await browser.newPage({viewport:{width:1440,height:1050},deviceScaleFactor:1});
+const errors=[];page.on('pageerror',error=>errors.push(error.message));page.on('response',response=>{if(response.status()>=400&&response.url().startsWith('http://127.0.0.1'))errors.push(`HTTP ${response.status()}: ${response.url()}`);});
+const checks=[];
+function check(name,passed,details=''){checks.push({name,passed:Boolean(passed),details});if(!passed)throw new Error(`Failed: ${name}: ${details}`);}
+const url=process.env.LAB_URL||'http://127.0.0.1:8949/projects/009-sprite-destruction-lab/lab.html';
+try{
+  await page.goto(url,{waitUntil:'networkidle'});await page.screenshot({path:path.join(root,'assets','overview.png'),fullPage:false});
+  check('Actual catalog is visible in the initial DOM',await page.locator('.catalog-card').count()===3);
+  await page.locator('button[data-effect="classic"]').click();
+  await page.locator('#start').click();await page.waitForFunction(()=>window.destructionLab.getState().state==='running');
+  let state=await page.evaluate(()=>window.destructionLab.getState());check('Real DOM texture and physics tiles created',state.tiles>30,JSON.stringify(state));
+  const startPosition=await page.evaluate(()=>({...window.destructionLab.engine.player.position}));await page.locator('#game-canvas').focus();await page.keyboard.down('d');await page.waitForTimeout(250);await page.keyboard.up('d');
+  const moved=await page.evaluate(()=>window.destructionLab.engine.player.position.x);check('Character moves with keyboard',moved>startPosition.x+20);
+  await page.keyboard.press('Space');await page.waitForTimeout(120);check('Character jumps using the physical body',await page.evaluate(()=>window.destructionLab.engine.player.position.y)<startPosition.y-20);
+  const canvas=await page.locator('#game-canvas').boundingBox();await page.mouse.click(canvas.x+canvas.width*.6,canvas.y+canvas.height*.3);await page.waitForTimeout(200);
+  check('Manual pointer shot hits actual content',await page.evaluate(()=>window.destructionLab.getState().hits)>0);
+  await page.locator('#auto').click();await page.waitForFunction(()=>window.destructionLab.getState().complete,{timeout:20000});await page.waitForTimeout(250);
+  state=await page.evaluate(()=>window.destructionLab.getState());check('Catalog task completes and real project links unlock',state.ratio>=.35&&await page.locator('#result a').count()===3,JSON.stringify(state));
+  check('Every released fragment has finite physical coordinates and inertia',await page.evaluate(()=>window.destructionLab.engine.tiles.filter(t=>t.detached).every(t=>Number.isFinite(t.body.position.x)&&Number.isFinite(t.body.position.y)&&Number.isFinite(t.body.inertia))));
+  await page.screenshot({path:path.join(root,'assets','catalog-playing.png'),fullPage:false});
+  await page.locator('#pause').click();const pausedShots=await page.evaluate(()=>window.destructionLab.getState().shots);await page.waitForTimeout(250);check('Pause stops simulation and automatic shooting',await page.evaluate(()=>window.destructionLab.getState().state)==='paused'&&await page.evaluate(()=>window.destructionLab.getState().shots)===pausedShots);
+  await page.locator('#pause').click();check('Resume restarts the simulation',await page.evaluate(()=>window.destructionLab.getState().state)==='running');
+  await page.locator('#reset').click();check('Reset disposes physics and restores the DOM',await page.evaluate(()=>window.destructionLab.getState().state)==='idle'&&await page.locator('#stage-overlay').isVisible()&&await page.locator('#result').isHidden());
+  await page.locator('[data-scene="campaign"]').click();await page.locator('#auto').click();await page.waitForFunction(()=>window.destructionLab.getState().complete,{timeout:20000});
+  check('Campaign goal targets the price area',await page.evaluate(()=>window.destructionLab.getState().goalRatio)>=.8&&await page.locator('#copy-coupon').isVisible());
+  await page.context().grantPermissions(['clipboard-write','clipboard-read']);await page.locator('#copy-coupon').click();await page.waitForFunction(()=>document.getElementById('coupon-state').textContent==='已复制');
+  check('Coupon uses a real clipboard action',await page.evaluate(()=>navigator.clipboard.readText())==='BREAK20-DEMO');
+  await page.screenshot({path:path.join(root,'assets','campaign-complete.png'),fullPage:false});
+  await page.locator('[data-scene="classroom"]').click();await page.locator('#gravity').fill('0');await page.locator('#force').fill('2');await page.locator('#debug').check();await page.locator('#start').click();await page.waitForFunction(()=>window.destructionLab.getState().state==='running');
+  check('Parameter values apply to live engine',await page.evaluate(()=>window.destructionLab.getState().gravity===0&&window.destructionLab.getState().force===2&&window.destructionLab.engine.debug));
+  await page.locator('#auto').click();await page.waitForFunction(()=>window.destructionLab.getState().complete,{timeout:20000});await page.screenshot({path:path.join(root,'assets','classroom-debug.png'),fullPage:false});
+  const downloadPromise=page.waitForEvent('download');await page.locator('#export-events').click();const download=await downloadPromise;check('Events exported as a usable JSON download',download.suggestedFilename()==='destruction-events.json');
+  await download.saveAs(path.join(root,'notes','sample-events.json'));
+  await page.locator('#reset').click();await page.locator('#start').click();await page.waitForFunction(()=>window.destructionLab.getState().state==='running');
+  await page.setViewportSize({width:1000,height:850});await page.waitForTimeout(600);check('Resize restores correctly sized source rather than distorted physics',await page.evaluate(()=>window.destructionLab.getState().state)==='idle');
+  await page.setViewportSize({width:390,height:844});await page.locator('[data-scene="catalog"]').click();await page.waitForTimeout(300);await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:path.join(root,'assets','mobile.png'),fullPage:false});
+  check('Mobile viewport has no horizontal overflow',await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  await page.locator('#start').click();await page.waitForFunction(()=>window.destructionLab.getState().state==='running');
+  const mobileCanvas=await page.locator('#game-canvas').boundingBox();await page.mouse.click(mobileCanvas.x+mobileCanvas.width*.55,mobileCanvas.y+mobileCanvas.height*.4);check('Mobile pointer input produces a real shot',await page.evaluate(()=>window.destructionLab.getState().shots)>0);
+  const before=await page.evaluate(()=>window.destructionLab.engine.player.position.x);await page.locator('[data-move="right"]').dispatchEvent('pointerdown',{pointerId:1});await page.waitForTimeout(200);await page.locator('[data-move="right"]').dispatchEvent('pointerup',{pointerId:1});check('Touch direction control moves the body',await page.evaluate(()=>window.destructionLab.engine.player.position.x)>before+10);
+  const link=await page.locator('#official-catalog').getAttribute('href');check('Official link uses the verified url parameter',new URL(link).searchParams.get('url')==='https://yydshly.github.io/0930_codex_project/');
+  await page.locator('.upstream-evidence summary').click();await page.locator('.source-gallery').scrollIntoViewIfNeeded();await page.waitForFunction(()=>[...document.querySelectorAll('.source-gallery img')].every(image=>image.complete&&image.naturalWidth>0));check('Both original evidence screenshots load',await page.locator('.source-gallery img').evaluateAll(images=>images.length===2&&images.every(image=>image.complete&&image.naturalWidth>0)));
+  check('No uncaught browser errors or missing local assets',errors.length===0,JSON.stringify(errors));
+}catch(error){checks.push({name:'Browser run',passed:false,details:error.message});await page.screenshot({path:path.join(root,'assets','qa-failure.png'),fullPage:true});process.exitCode=1;}
+finally{await writeFile(path.join(root,'notes','browser-checks.json'),JSON.stringify({checkedAt:new Date().toISOString(),url,browser:browser.version(),checks,errors},null,2)+'\n');console.log(JSON.stringify({checks:checks.length,passed:checks.filter(c=>c.passed).length,errors,failed:checks.filter(c=>!c.passed)},null,2));await browser.close();}

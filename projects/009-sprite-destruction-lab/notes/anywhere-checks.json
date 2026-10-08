@@ -1,0 +1,302 @@
+{
+  "checkedAt": "2026-10-02T05:29:37.051Z",
+  "environment": "Full Chromium headless, disposable extension profile; test copy only grants <all_urls> because browser toolbar user gestures cannot be automated here",
+  "productionPermissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "productionHostPermissions": [],
+  "checks": [
+    {
+      "name": "Production uses only activeTab+scripting and has no persistent host grants",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Independent sample page loads no engine or avatar module",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Extension remains absent before invocation",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Real installed MV3 loader mounts the controller in an isolated world",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Pointer selection records host-page elements without predefined data attributes",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Actual captureVisibleTab PNG feeds the same engine and releases real fragments",
+      "passed": true,
+      "details": "{\"hit\":true,\"point\":{\"x\":267,\"y\":560.99375},\"released\":54,\"time\":\"2026-10-02T05:29:15.986Z\",\"type\":\"kick\"}"
+    },
+    {
+      "name": "Only the selected subtree is hidden, including explicit visible descendants",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Released fragments are finite dynamic Matter bodies",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Snapshot fragments move away from their original page positions",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Unselected website controls remain usable while the effect runs",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recall restores the original avatar DOM while retaining card fragments",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Restoration preserves original markup and inline visibility priorities",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Scrolling automatically disposes physics and restores selected content",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Paper style uses the same viewport input with a different fragment mode",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Viewport resize restores the page instead of using stale pixel coordinates",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Close hides the panel and clears effect canvases",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Extension action can reopen the same singleton",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "The extension selects a real GitHub avatar and visible content card",
+      "passed": true,
+      "details": "{\"avatar\":{\"rect\":{\"height\":100,\"width\":100,\"x\":96,\"y\":88},\"tag\":\"img\"},\"engine\":null,\"events\":[{\"rect\":{\"height\":100,\"width\":100,\"x\":96,\"y\":88},\"role\":\"avatar\",\"tag\":\"img\",\"time\":\"2026-10-02T05:29:32.384Z\",\"type\":\"select\"},{\"rect\":{\"height\":294.453125,\"width\":845.953125,\"x\":121,\"y\":351},\"role\":\"target\",\"tag\":\"img\",\"time\":\"2026-10-02T05:29:32.420Z\",\"type\":\"select\"}],\"open\":true,\"phase\":\"ready\",\"phaseLabel\":\"准备点选\",\"picking\":null,\"preparing\":false,\"snapshot\":null,\"target\":{\"rect\":{\"height\":294.453125,\"width\":845.953125,\"x\":121,\"y\":351},\"tag\":\"img\"}}"
+    },
+    {
+      "name": "Live GitHub pixels become a moving character head and real textured shards",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "The live GitHub avatar and card are visible again after restoration",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "The tested controller produces no uncaught page errors",
+      "passed": true,
+      "details": ""
+    }
+  ],
+  "errors": [],
+  "evidence": {
+    "url": "https://github.com/microsoft",
+    "title": "Microsoft · GitHub",
+    "avatar": {
+      "src": "https://avatars.githubusercontent.com/u/6154722?s=200&v=4",
+      "alt": "@microsoft",
+      "cls": "avatar flex-shrink-0 tmp-mb-3 tmp-mr-3 mb-md-0 tmp-mr-md-4",
+      "width": 100
+    },
+    "selected": {
+      "avatar": {
+        "rect": {
+          "height": 100,
+          "width": 100,
+          "x": 96,
+          "y": 88
+        },
+        "tag": "img"
+      },
+      "engine": null,
+      "events": [
+        {
+          "rect": {
+            "height": 100,
+            "width": 100,
+            "x": 96,
+            "y": 88
+          },
+          "role": "avatar",
+          "tag": "img",
+          "time": "2026-10-02T05:29:32.384Z",
+          "type": "select"
+        },
+        {
+          "rect": {
+            "height": 294.453125,
+            "width": 845.953125,
+            "x": 121,
+            "y": 351
+          },
+          "role": "target",
+          "tag": "img",
+          "time": "2026-10-02T05:29:32.420Z",
+          "type": "select"
+        }
+      ],
+      "open": true,
+      "phase": "ready",
+      "phaseLabel": "准备点选",
+      "picking": null,
+      "preparing": false,
+      "snapshot": null,
+      "target": {
+        "rect": {
+          "height": 294.453125,
+          "width": 845.953125,
+          "x": 121,
+          "y": 351
+        },
+        "tag": "img"
+      }
+    },
+    "run": {
+      "avatar": {
+        "rect": {
+          "height": 100,
+          "width": 100,
+          "x": 96,
+          "y": 88
+        },
+        "tag": "img"
+      },
+      "engine": {
+        "auto": false,
+        "collected": 0,
+        "complete": false,
+        "destroyed": 33541.32763608724,
+        "dynamic": 55,
+        "effect": "glass",
+        "force": 1,
+        "fps": 97,
+        "goalRatio": 0.13465354206478158,
+        "gravity": 1,
+        "height": 1020,
+        "hits": 1,
+        "ratio": 0.13465354206478158,
+        "shots": 1,
+        "state": "running",
+        "tiles": 432,
+        "total": 249093.5412597655,
+        "visuals": 0,
+        "width": 1440
+      },
+      "events": [
+        {
+          "rect": {
+            "height": 100,
+            "width": 100,
+            "x": 96,
+            "y": 88
+          },
+          "role": "avatar",
+          "tag": "img",
+          "time": "2026-10-02T05:29:32.384Z",
+          "type": "select"
+        },
+        {
+          "rect": {
+            "height": 294.453125,
+            "width": 845.953125,
+            "x": 121,
+            "y": 351
+          },
+          "role": "target",
+          "tag": "img",
+          "time": "2026-10-02T05:29:32.420Z",
+          "type": "select"
+        },
+        {
+          "avatar": {
+            "height": 100,
+            "width": 100,
+            "x": 96,
+            "y": 88
+          },
+          "effect": "glass",
+          "snapshot": {
+            "headHeight": 100,
+            "headWidth": 100,
+            "height": 1020,
+            "provider": "viewport-pixels",
+            "scaleX": 1,
+            "scaleY": 1,
+            "width": 1440
+          },
+          "target": {
+            "height": 294.453125,
+            "width": 845.953125,
+            "x": 121,
+            "y": 351
+          },
+          "tiles": 432,
+          "time": "2026-10-02T05:29:32.571Z",
+          "type": "escape"
+        },
+        {
+          "time": "2026-10-02T05:29:33.614Z",
+          "type": "land"
+        },
+        {
+          "hit": true,
+          "point": {
+            "x": 186,
+            "y": 533.5609375
+          },
+          "released": 55,
+          "time": "2026-10-02T05:29:34.292Z",
+          "type": "kick"
+        }
+      ],
+      "open": true,
+      "phase": "kicking",
+      "phaseLabel": "正在踢中卡片",
+      "picking": null,
+      "preparing": false,
+      "snapshot": {
+        "headHeight": 100,
+        "headWidth": 100,
+        "height": 1020,
+        "provider": "viewport-pixels",
+        "scaleX": 1,
+        "scaleY": 1,
+        "width": 1440
+      },
+      "target": {
+        "rect": {
+          "height": 294.453125,
+          "width": 845.953125,
+          "x": 121,
+          "y": 351
+        },
+        "tag": "img"
+      }
+    }
+  }
+}

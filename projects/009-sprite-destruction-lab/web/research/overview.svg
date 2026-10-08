@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1900" viewBox="0 0 1800 1900" role="img" aria-labelledby="title desc"><title id="title">网页破坏交互研究完整总览</title><desc id="desc">原作、本地引擎、独立工具；获取内容到动作反馈的原理；已验证扩展、产品能力和后续路线。</desc><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="none" stroke="#81968c" stroke-width="1.5"/></marker></defs><rect width="1800" height="1900" fill="#f4f3ed"/>
+<text x="60" y="64" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18" fill="#658276" font-weight="600">PROJECT 009 / RESEARCH SYNTHESIS</text>
+<text x="60" y="128" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="46" fill="#183d33" font-weight="700">网页内容，怎样变成可参与的互动？</text>
+<text x="60" y="170" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="24" fill="#5c6f65" font-weight="400">原作能力 → 本地原理 → 已做扩展 → 产品用途 → 后续路线</text>
+<text x="1455" y="63" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18" fill="#658276" font-weight="400">2026-10-02 · 研究总览</text>
+<rect x="60" y="202" width="544" height="238" rx="18" fill="#edf3f8" stroke="#bcceda"/>
+<text x="86" y="238" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18" fill="#3e6e91" font-weight="600">原作 / 研究对象</text>
+<text x="86" y="277" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="28" fill="#25493f" font-weight="700">Destroy Any Website</text>
+<text x="86" y="318" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="21" fill="#5c6f65" font-weight="400" data-max-width="488">输入网址，把文字和页面块变成射击关卡。官方提供</text>
+<text x="86" y="350" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="21" fill="#5c6f65" font-weight="400" data-max-width="488">武器、飞行、多人和嵌入入口；本次未确认公开网页</text>
+<text x="86" y="382" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="21" fill="#5c6f65" font-weight="400" data-max-width="488">破坏 SDK。</text>
+<rect x="628" y="202" width="544" height="238" rx="18" fill="#edf5ed" stroke="#b7d2bb"/>
+<text x="654" y="238" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18" fill="#2e7755" font-weight="600">本地 / 独立实现</text>
+<text x="654" y="277" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="28" fill="#25493f" font-weight="700">DestructionEngine</text>
+<text x="654" y="318" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="21" fill="#5c6f65" font-weight="400" data-max-width="488">我们独立实现纹理切片、视觉表现、物理运动、区域</text>
+<text x="654" y="350" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="21" fill="#5c6f65" font-weight="400" data-max-width="488">冲击和事件接口。Matter.js 负责二维刚体；</text>
+<text x="654" y="382" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="21" fill="#5c6f65" font-weight="400" data-max-width="488">html2canvas 或浏览器截图提供画面。</text>
+<rect x="1196" y="202" width="544" height="238" rx="18" fill="#fcf1e4" stroke="#e2ccb2"/>
+<text x="1222" y="238" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18" fill="#a57033" font-weight="600">扩展 / 另建能力</text>
+<text x="1222" y="277" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="28" fill="#25493f" font-weight="700">角色、产品与工具</text>
+<text x="1222" y="318" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="21" fill="#5c6f65" font-weight="400" data-max-width="488">角色编排和浏览器适配扩展了引擎用途；对比、说明</text>
+<text x="1222" y="350" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="21" fill="#5c6f65" font-weight="400" data-max-width="488">书、数据故事等采用独立交互。翻译、摘录、表格工</text>
+<text x="1222" y="382" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="21" fill="#5c6f65" font-weight="400" data-max-width="488">具另外开发。</text>
+<text x="60" y="486" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="26" fill="#183d33" font-weight="700">01 / 原理：内容与宿主、运动、产品流程分开</text>
+<rect x="60" y="510" width="1680" height="248" rx="18" fill="#fffefa" stroke="#d7dfd6"/>
+<text x="82" y="549" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18" fill="#72907d" font-weight="600">01</text>
+<text x="82" y="584" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="25" fill="#25493f" font-weight="700">取得内容</text>
+<text x="82" y="619" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="275">自有 DOM 重建；扩展取当前</text>
+<text x="82" y="649" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="275">视口截图。</text>
+<text x="82" y="687" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="16" fill="#377653" font-weight="400" data-max-width="290">prepare / prepareSnapshot</text>
+<path d="M377 584H401" stroke="#81968c" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="416" y="549" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18" fill="#72907d" font-weight="600">02</text>
+<text x="416" y="584" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="25" fill="#25493f" font-weight="700">定位区域</text>
+<text x="416" y="619" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="275">读取 CSS 像素矩形，按目标</text>
+<text x="416" y="649" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="275">选取纹理。</text>
+<text x="416" y="687" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="16" fill="#377653" font-weight="400" data-max-width="290">标记区域 / 鼠标点选</text>
+<path d="M711 584H735" stroke="#81968c" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="750" y="549" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18" fill="#72907d" font-weight="600">03</text>
+<text x="750" y="584" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="25" fill="#25493f" font-weight="700">生成表现</text>
+<text x="750" y="619" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="275">几何切片、颜色粒子或渐进擦</text>
+<text x="750" y="649" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="275">除遮罩。</text>
+<text x="750" y="687" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="16" fill="#377653" font-weight="400" data-max-width="290">model + EffectLayer</text>
+<path d="M1045 584H1069" stroke="#81968c" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1084" y="549" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18" fill="#72907d" font-weight="600">04</text>
+<text x="1084" y="584" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="25" fill="#25493f" font-weight="700">驱动动作</text>
+<text x="1084" y="619" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="275">刚体求解、粒子插值；角色动</text>
+<text x="1084" y="649" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="275">作独立编排。</text>
+<text x="1084" y="687" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="16" fill="#377653" font-weight="400" data-max-width="290">impactAt + onFrame</text>
+<path d="M1379 584H1403" stroke="#81968c" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1418" y="549" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18" fill="#72907d" font-weight="600">05</text>
+<text x="1418" y="584" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="25" fill="#25493f" font-weight="700">连接流程</text>
+<text x="1418" y="619" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="275">命中、完成、导出与恢复，由</text>
+<text x="1418" y="649" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="275">产品处理。</text>
+<text x="1418" y="687" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="16" fill="#377653" font-weight="400" data-max-width="290">onEvent + dispose</text>
+<text x="82" y="740" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18" fill="#64756b" font-weight="400" data-max-width="1620">原作：网址 → 服务采集 / DOM 布局 → 关卡；本地：DOM 重建或截图 → 纹理 → 刚体 / 粒子 / 遮罩。</text>
+<text x="60" y="804" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="26" fill="#183d33" font-weight="700">02 / 我们实际研究和实现了什么？</text>
+<rect x="60" y="829" width="544" height="328" rx="18" fill="#fffefa" stroke="#d7dfd6"/>
+<rect x="628" y="829" width="544" height="328" rx="18" fill="#fffefa" stroke="#d7dfd6"/>
+<rect x="1196" y="829" width="544" height="328" rx="18" fill="#fffefa" stroke="#d7dfd6"/>
+<text x="86" y="870" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="26" fill="#25493f" font-weight="700">效果与场景</text>
+<text x="86" y="910" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="22" fill="#5c6f65" font-weight="400" data-max-width="492">玻璃裂解 · 纸片飘散 · 方块破坏</text>
+<text x="86" y="944" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="22" fill="#5c6f65" font-weight="400" data-max-width="492">像素消融 · 霓虹聚合 · 涟漪揭幕</text>
+<text x="86" y="1004" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="492">研究集首页 / 旧价揭晓 / 碰撞课堂</text>
+<text x="86" y="1035" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="492">刚体、粒子与遮罩各有计算方式。</text>
+<text x="86" y="1066" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="492">任务阈值、参数、完成事件均可操作。</text>
+<text x="86" y="1127" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18" fill="#377653" font-weight="600">效果 49/49 · 场景 21/21</text>
+<text x="654" y="870" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="26" fill="#25493f" font-weight="700">角色与跨网页</text>
+<text x="654" y="910" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="21" fill="#5c6f65" font-weight="400" data-max-width="492">头像出逃 → 踢碎卡片 → 召回 / 复原</text>
+<text x="654" y="943" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="21" fill="#5c6f65" font-weight="400" data-max-width="492">照片或网页头像只作为头部。</text>
+<text x="654" y="976" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="21" fill="#5c6f65" font-weight="400" data-max-width="492">身体与动作预设，碎片实时物理。</text>
+<text x="654" y="1019" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="492">跨站：点选位置 + 当前视口截图。</text>
+<text x="654" y="1050" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="492">GitHub 实录：实际页面、脚本操作。</text>
+<text x="654" y="1081" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="492">测试权限与下载版授权流程有差异。</text>
+<text x="654" y="1127" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18" fill="#377653" font-weight="600">头像 18/18 · 跨站 21/21</text>
+<text x="1222" y="870" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="26" fill="#25493f" font-weight="700">产品原型与独立工具</text>
+<text x="1222" y="910" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="21" fill="#5c6f65" font-weight="400" data-max-width="492">动效 / 对比 / 说明书 / 数据故事</text>
+<text x="1222" y="943" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="21" fill="#5c6f65" font-weight="400" data-max-width="492">品牌展览 / 嵌入组件，共六工具。</text>
+<text x="1222" y="976" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="21" fill="#5c6f65" font-weight="400" data-max-width="492">只有内容动效直接复用碎裂引擎。</text>
+<text x="1222" y="1019" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="492">翻译 / 摘录 / 表格 / 文本小工具</text>
+<text x="1222" y="1050" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="492">来自另建模块、浏览器 API 和服务。</text>
+<text x="1222" y="1081" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="492">这些不是原作或物理引擎自带功能。</text>
+<text x="1222" y="1127" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18" fill="#377653" font-weight="600">产品 50/50 · 工具 30/30</text>
+<text x="60" y="1203" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="26" fill="#183d33" font-weight="700">03 / 可以扩展成哪些产品能力？</text>
+<rect x="60" y="1228" width="544" height="230" rx="18" fill="#edf3f8" stroke="#bcceda"/>
+<text x="86" y="1270" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="25" fill="#25493f" font-weight="700">直接复用视觉互动</text>
+<text x="86" y="1310" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="492">内容动效制作 / 互动反馈组件</text>
+<text x="86" y="1341" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="492">品牌角色与创作者主页</text>
+<text x="86" y="1372" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="492">碰撞教学与可玩入口</text>
+<text x="86" y="1430" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18" fill="#3e6e91" font-weight="400" data-max-width="492">现有演示可作为组件化基础。</text>
+<rect x="628" y="1228" width="544" height="230" rx="18" fill="#edf5ed" stroke="#b7d2bb"/>
+<text x="654" y="1270" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="25" fill="#25493f" font-weight="700">结合真实任务与业务</text>
+<text x="654" y="1310" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="492">新品揭晓 / 领取预约 / 品牌展览</text>
+<text x="654" y="1341" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="492">提案对比 / 维护指南 / 数据故事</text>
+<text x="654" y="1372" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="492">接业务服务、数据和协作状态</text>
+<text x="654" y="1430" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18" fill="#2e7755" font-weight="400" data-max-width="492">后五类原型采用独立交互实现。</text>
+<rect x="1196" y="1228" width="544" height="230" rx="18" fill="#fcf1e4" stroke="#e2ccb2"/>
+<text x="1222" y="1270" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="25" fill="#25493f" font-weight="700">另外开发网页效率工具</text>
+<text x="1222" y="1310" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="492">翻译阅读 / 来源摘录 / 表格提取</text>
+<text x="1222" y="1341" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="492">文本处理 / 单位换算 / 批量整理</text>
+<text x="1222" y="1372" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#5c6f65" font-weight="400" data-max-width="492">可与角色 UI 共存、按需调用</text>
+<text x="1222" y="1430" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18" fill="#a57033" font-weight="400" data-max-width="492">工具能力需要自己的模块和服务。</text>
+<text x="60" y="1504" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="26" fill="#183d33" font-weight="700">04 / 后续路线：先稳定与验证，再扩大宿主和投入</text>
+<rect x="60" y="1529" width="544" height="257" rx="18" fill="#fff8ee" stroke="#dfd0ba"/>
+<text x="86" y="1568" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="19" fill="#9a713d" font-weight="600">P1 · 先稳定现有能力</text>
+<circle cx="89" cy="1597" r="3" fill="#80968b"/>
+<text x="104" y="1604" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="19" fill="#5c6f65" font-weight="400" data-max-width="474">角色与动作素材包、多个目标、更多反馈</text>
+<circle cx="89" cy="1637" r="3" fill="#80968b"/>
+<text x="104" y="1644" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="19" fill="#5c6f65" font-weight="400" data-max-width="474">时间线、性能预算、减少动画与键盘访问</text>
+<circle cx="89" cy="1677" r="3" fill="#80968b"/>
+<text x="104" y="1684" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="19" fill="#5c6f65" font-weight="400" data-max-width="474">兼容矩阵；人工验证正式扩展授权流程</text>
+<text x="86" y="1745" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="17" fill="#906c3e" font-weight="400" data-max-width="492">沿现有截图、冲击、帧回调与事件接口扩展。</text>
+<rect x="628" y="1529" width="544" height="257" rx="18" fill="#fff8ee" stroke="#dfd0ba"/>
+<text x="654" y="1568" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="19" fill="#9a713d" font-weight="600">P2 · 再扩展宿主和业务</text>
+<circle cx="657" cy="1597" r="3" fill="#80968b"/>
+<text x="672" y="1604" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="19" fill="#5c6f65" font-weight="400" data-max-width="474">WebView 由宿主提供截图、矩形和开始 / 结束</text>
+<circle cx="657" cy="1637" r="3" fill="#80968b"/>
+<text x="672" y="1644" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="19" fill="#5c6f65" font-weight="400" data-max-width="474">原生界面增加独立渲染与坐标适配</text>
+<circle cx="657" cy="1677" r="3" fill="#80968b"/>
+<text x="672" y="1684" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="19" fill="#5c6f65" font-weight="400" data-max-width="474">素材服务、预约、核销、数据源与协作</text>
+<text x="654" y="1745" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="17" fill="#906c3e" font-weight="400" data-max-width="492">需要宿主合作和真实业务服务；本次没有 App 版本。</text>
+<rect x="1196" y="1529" width="544" height="257" rx="18" fill="#fff8ee" stroke="#dfd0ba"/>
+<text x="1222" y="1568" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="19" fill="#9a713d" font-weight="600">P3 · 按价值验证决定投入</text>
+<circle cx="1225" cy="1597" r="3" fill="#80968b"/>
+<text x="1240" y="1604" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="19" fill="#5c6f65" font-weight="400" data-max-width="474">受控 URL 采集、缓存、字体和布局兼容</text>
+<circle cx="1225" cy="1637" r="3" fill="#80968b"/>
+<text x="1240" y="1644" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="19" fill="#5c6f65" font-weight="400" data-max-width="474">房间、输入校验、权威状态与重连</text>
+<circle cx="1225" cy="1677" r="3" fill="#80968b"/>
+<text x="1240" y="1684" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="19" fill="#5c6f65" font-weight="400" data-max-width="474">批量制作、账号、云保存和团队工作流</text>
+<text x="1222" y="1745" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="17" fill="#906c3e" font-weight="400" data-max-width="492">需要后端与持续维护；第三方原生 App 不能通用注入。</text>
+<text x="60" y="1837" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="19" fill="#8b643b" font-weight="400" data-max-width="1680">采用边界：公开 SDK 未确认；不自动生成照片全身；不通用注入第三方原生 App；尚无商业收益数据。</text>
+<text x="60" y="1874" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="17" fill="#67776d" font-weight="400" data-max-width="1680">来源：Destroy Any Website 官方页面、公开客户端观察；本地代码与浏览器实测。Matter.js / html2canvas 为本地技术基础。</text>
+</svg>

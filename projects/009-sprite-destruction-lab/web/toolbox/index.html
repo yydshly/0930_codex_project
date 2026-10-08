@@ -1,0 +1,22 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Forma · 网页辅助工具箱</title><meta name="description" content="实际选中文字翻译、带来源摘录、读取网页表格并导出，以及本地文本与单位工具。"><link rel="stylesheet" href="demo.css"><script type="module" src="demo.js"></script></head>
+<body>
+<header class="demo-top"><a href="../products/" class="logo"><i>f.</i> forma <span>网页辅助工具箱</span></a><nav><a href="../products/">产品工作台</a><a href="#install">在其他网页使用 ↗</a><button id="open-toolbox">打开工具箱</button></nav></header>
+<main>
+  <section class="demo-intro"><p class="kicker">WEB ASSISTANT / LIVE WORKSPACE</p><h1>读得懂，带得走。</h1><p>选中文字翻译、保留带来源的摘录、把网页表格变成文件。</p><div class="steps"><button id="try-translation"><b>01</b> 选一段翻译</button><button id="try-note"><b>02</b> 保存一条摘录</button><button id="try-table"><b>03</b> 提取下方表格</button></div></section>
+  <div class="document-bar"><span><i></i> 当前页面 · 实际 DOM</span><span>自建英文说明 + 本仓库真实项目清单</span></div>
+  <article id="reading-source" class="document">
+    <div class="article-meta"><span>FIELD NOTES / ENGINEERING</span><span>2026 · PROJECT 009</span></div>
+    <h2>From reading a page<br>to keeping useful information.</h2>
+    <p class="article-lead" id="first-paragraph">You can translate selected text and save it with its source link.</p>
+    <div class="article-line"></div>
+    <h3>Keep the source, not just the sentence</h3>
+    <p id="second-paragraph">A useful research note keeps the original quotation, the page title and the source link together. Add your own comment so you can remember why the information matters when you read it again.</p>
+    <blockquote id="quote-paragraph">Translation helps you understand a passage. A saved excerpt helps you return to it. A structured table helps you compare the facts.</blockquote>
+    <h3>Our actual research catalog</h3>
+    <p>The records below are generated from this repository's project catalog. Select the table to preview its cells, then download a CSV file or a JSON file with its source information.</p>
+    <div class="table-scroll"><table id="catalog-table"><caption>本仓库真实研究项目 · <span id="catalog-count"></span> 条</caption><thead><tr><th>编号</th><th>研究项目</th><th>状态</th><th>项目路径</th></tr></thead><tbody id="catalog-body"></tbody></table></div>
+    <div class="article-foot"><b>资料来源</b><p>表格读取自本仓库 <code>projects.json</code> 生成的清单。英文段落为本工具自建说明，可实际选取、编辑、翻译和摘录。</p><a href="../../..">打开完整研究集 ↗</a></div>
+  </article>
+  <section class="install" id="install"><p class="kicker">TAKE IT TO YOUR BROWSER</p><h2>在其他网页上，也能这样用。</h2><p>下载扩展包，在 Chrome / Edge 的扩展管理页面打开开发者模式，选择「加载已解压的扩展程序」。打开想读的网页，再点击工具栏中的 Forma 图标。</p><a class="download" href="downloads/forma-web-toolbox.zip" download>↓ 下载浏览器扩展 ZIP</a><a href="install.html" class="install-link">安装与权限说明 →</a><p class="install-note">演示页无需安装。扩展使用同一套工具代码；只在你主动打开时处理当前网页。在线翻译会发送所选文字，其他工具在本地处理。</p><details id="external-proof" hidden><summary>查看真实外部网页的扩展实测</summary><img src="assets/extension-mdn-translation.png" alt="在真实 MDN 页面选中文字并收到实际中文翻译的截图" loading="lazy"><img src="assets/extension-mdn.png" alt="Forma 工具箱在真实 MDN 页面中运行的实测截图" loading="lazy"><p>2026-10-02 实测：在 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/table" target="_blank" rel="noopener noreferrer">MDN table 文档</a>选取实际文字，获得在线译文，并读取真实表格。截图为当时成功结果；免费翻译服务也曾返回 HTTP 429。</p></details></section>
+  <footer>Forma / 独立网页工具能力 · <a href="../">完整研究总览</a> · <a href="../licenses.html">依赖与许可</a></footer>
+</main></body></html>

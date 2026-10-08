@@ -1,122 +1,80 @@
-[
+// Generated from the real workspace catalog; run npm run prepare to refresh.
+export const catalog = [
   {
     "id": 1,
     "slug": "witr",
     "name": "witr · 运行来源诊断",
-    "repo": "https://github.com/pranshuparmar/witr",
     "summary": "能力：追溯进程、端口、文件与容器来源；原理：系统数据/API/命令采集，加父进程链与来源规则；运行：CLI、TUI、JSON；平台：Linux、Windows、macOS、FreeBSD；场景：端口冲突、残留服务、文件占用；价值：减少手工关联，新增底层能力有限；扩展：JSON 集成、本地 Web/MCP、定制规则与独立历史采集。",
-    "status": "已完成",
-    "demo": "https://yydshly.github.io/0930_codex_project/projects/001-witr/",
-    "cover": "assets/witr-understanding-map.png"
+    "status": "已完成"
   },
   {
     "id": 2,
     "slug": "huashu-design",
     "name": "Huashu Design · 设计能力研究",
-    "repo": "https://github.com/alchaincyf/huashu-design",
     "summary": "能力：设计探索、原型、幻灯片、信息图、动画、声音与检查；产物：HTML、PDF、可编辑 PPTX、MP4 等；原理：Skill 与参考指导模型，浏览器渲染，组件/脚本执行；场景：研究、评审、汇报、培训与传播；价值：复用制作经验；扩展：品牌、模板、数据、导出和验收。",
-    "status": "已完成",
-    "demo": "https://yydshly.github.io/0930_codex_project/projects/002-huashu-design/",
-    "cover": "assets/huashu-capability-map.png"
+    "status": "已完成"
   },
   {
     "id": 3,
     "slug": "learn-harness-engineering",
     "name": "Learn Harness Engineering · AI 工作流程研究",
-    "repo": "https://github.com/walkinglabs/learn-harness-engineering",
     "summary": "定位：学习 AI Agent 工作流程的课程与实践资料；内容：14 讲课程、8 项练习说明、规则/任务/进度/验收模板，附 1 个 Skill、生成与检查脚本和教学示例；用途：理解 Agent、组织持续开发与跨会话任务；价值：少重复解释、少返工、凭证据验收；扩展：领域模板、真实测试、状态恢复及自动循环/多 Agent，需自行接入执行环境。",
-    "status": "已完成",
-    "demo": "https://yydshly.github.io/0930_codex_project/projects/003-learn-harness-engineering/",
-    "cover": "assets/harness-capability-map.png"
+    "status": "已完成"
   },
   {
     "id": 4,
     "slug": "rhythm-drop",
     "name": "Rhythm Drop · 音乐型声音与视听体验研究",
-    "repo": "https://github.com/mrdoob/three.js",
     "summary": "目标：研究音乐型声音如何驱动视觉、故事与互动；来源：Gorden Sun 的 X 音乐动画展示；实验：场景叙事、声音身份、花园创造与漂流、儿童游戏、原创回声小队和复杂情绪；结论：声音主导，角色驱动系列，故事与表演共同设计；制作：参考图、程序化模型与声音时钟驱动实时动画；状态：研究原型，产品价值尚未验证。",
-    "status": "已归档",
-    "demo": "https://yydshly.github.io/0930_codex_project/projects/004-rhythm-drop/",
-    "cover": "assets/source-effect.jpg",
-    "reference": "https://x.com/Gorden_Sun/status/2105302007896797351",
-    "reference_name": "Gorden Sun · 原网页音乐效果"
+    "status": "已归档"
   },
   {
     "id": 5,
     "slug": "plush-lab",
     "name": "Plush Lab · 毛绒实验室",
-    "repo": "https://github.com/mrdoob/three.js",
     "summary": "背景：从舒适自然的毛绒质感出发，积累创作、互动与研究；能力：绒毛剪染卷梳、随机搭配、小世界、陪伴笔记、页面提醒、固定任务及完整原作高斯展示；原理：Three.js 程序纤维与表面场、Spark 高斯渲染、状态机与本机存储；场景：自由设计、网页角色、技术学习与生活记录；价值：保留你的作品和方法积累，为陪伴与 Agent 可视化提供基础；边界：研究原型，真实 AI 与后台提醒待接入，自制质感尚未达到参考。",
-    "status": "研究中",
-    "demo": "https://yydshly.github.io/0930_codex_project/projects/005-plush-lab/",
-    "cover": "assets/plush-capabilities-principles.png"
+    "status": "研究中"
   },
   {
     "id": 6,
     "slug": "ai-visual-atlas",
     "name": "AI Visual Atlas · 视觉创作能力图谱",
-    "repo": "https://github.com/yihui-dev/awesome-opus5-5-videos",
     "summary": "范围：研究十个视觉创作链接，区分作品源码、风格 Skill、游戏成品、生成工具与资料索引；原理：模型理解与创作，代码逐帧渲染、实时游戏，以及生成素材和合成，各项目分别核对；场景：音乐 MV、产品宣传、角色动画、游戏体验与风格研究；实测：整曲图片 MV、5 秒 H3 演唱与绿幕合成、24 秒六幕网页宣传片；意义：理解可复用的时间线、模型调度、素材一致性、检查与交付；边界：全曲真实演唱、逐字口型验收和任意 URL 自动服务未完成，部分原作仅本地研究，完整游戏游玩未验收。",
-    "status": "已完成",
-    "demo": "https://yydshly.github.io/0930_codex_project/projects/006-ai-visual-atlas/",
-    "cover": "assets/atlas-projects-overview.png",
-    "reference": "https://x.com/NFTCPS/status/2105493719931826452",
-    "reference_name": "鸟哥 · 十个视觉创作项目汇总"
+    "status": "已完成"
   },
   {
     "id": 7,
     "slug": "koi-scene-lab",
     "name": "Koi Scene Lab · 庭院效果与实景构造",
-    "repo": "https://github.com/souranyp-stack/koi-pond-garden",
     "summary": "能力：原作体验、按图三维庭院、投喂与惊散、生态动物、GLB 导入与尺寸校准；原理：程序化建模、GPU 水波与反射折射、Boids 群游、骨骼动画与状态机；场景：互动展示、庭院预演、已有模型核对与技术学习；价值：保存场景体验和可复用方法，为数字老家与个性化作品建立基础；扩展：照片参数化、纪念摆件、实物交付与一致性核验，均需继续建设；边界：研究原型，未做现场测绘，尚无照片自动建模和制造输出。",
-    "status": "研究中",
-    "demo": "https://yydshly.github.io/0930_codex_project/projects/007-koi-scene-lab/",
-    "cover": "assets/library-value-map-v21.png"
+    "status": "研究中"
   },
   {
     "id": 8,
     "slug": "cellmotion",
     "name": "CellMotion · 可编辑动效研究",
-    "repo": "https://github.com/opc8838-hub/font-animation",
-    "status": "已完成",
-    "demo": "https://yydshly.github.io/0930_codex_project/projects/008-cellmotion/",
     "summary": "定位：可编辑动效与代码驱动内容制作研究；能力：固定版本37个已完成动效、19项原作视频和3支成片案例；效果：字符重组、逐字强调、图文接力、图片对比与切换；原理：JS算法与时间计算元素状态，Canvas/WebGL绘制及逐帧编码；场景：品牌标题、产品说明、作品对比、课程章节与日报模板；价值：用画面语言指导制作，把内容、视觉与节奏保存为可复用配方；比较：CellMotion提供具体动效，Remotion组织代码视频，HeyGen提供AI视频服务；扩展：四种原创演示、图片替换、需求生成、PNG/JSON保存与完整理解总览；边界：实验室未接入AI、音轨或视频编码，自动日报尚未实现，原作媒体需联网。",
-    "cover": "assets/understanding-map.png"
+    "status": "已完成"
   },
   {
     "id": 9,
     "slug": "sprite-destruction-lab",
     "name": "Sprite Destruction Lab · 网页破坏交互研究",
-    "repo": "https://github.com/liabru/matter-js",
     "summary": "定位：从 Destroy Any Website 游戏出发研究网页内容互动，原作公开破坏 SDK 未确认；能力：六种效果、三个场景、头像出逃与可安装跨站扩展，保留真实 GitHub 录像；产物：动效 PNG/WebM、对比报告、维护记录、CSV 故事、品牌作品册、嵌入组件，以及独立翻译/摘录/表格工具；原理：DOM 重建或视口截图、纹理切片、二维刚体/粒子/遮罩、角色编排与事件；场景：内容制作、品牌角色、可玩展示、碰撞教学和网页效率；价值：复用现有内容与交互接口，明确区分效果能力、产品任务和另建工具；扩展：角色素材、时间线、组件化、自有 WebView 与业务接入；边界：身体动作预设，仅当前视口；App、多人和营销后端待开发，翻译依赖外部服务，尚无商业收益验证。",
-    "status": "已完成",
-    "demo": "",
-    "cover": "assets/research-overview.png",
-    "reference": "https://destroy.spritefusion.com/",
-    "reference_name": "Destroy Any Website · 原作游戏"
+    "status": "已完成"
   },
   {
     "id": 10,
     "slug": "dumpling-style-lab",
     "name": "Dumpling Style Lab · 游戏方向与参与形式研究",
-    "repo": "",
     "summary": "定位：从 Dumpling Dell 出发，研究让玩家愿意参与的游戏方向、视角、操作与展现形式；能力：107 种形式样例与原有九款短篇，共 116 个展示入口，15 个独立方向另列；展示：六类主入口、代表性实机截图、原作体验、20 种早期材质、3 段小体验和历史画风版本；原理：Canvas 2D、Three.js 真实三维、规则与状态机、碰撞与车辆物理、浏览器独立存档；参考：开源游戏分类目录与官方作品体验，用于发现方向、比较质量和筛选可复用源码；价值：积累可运行样例、参与方式对照、素材与技术路径，帮助后续选题和原型验证；扩展：12 项后续方向已记录，当前暂停新增试玩；边界：现有内容为研究样例，画面质量和游戏深度不等于商业成品，多人房间与异步接力仍需本机后端，存档不会自动迁移到公网。",
-    "status": "已归档",
-    "demo": "https://yydshly.github.io/0930_codex_project/projects/010-dumpling-style-lab/",
-    "cover": "assets/project-overview-20261006.jpg",
-    "reference": "https://dumpling-dell.pages.dev/",
-    "reference_name": "Dumpling Dell · 原作网页"
+    "status": "已归档"
   },
   {
     "id": 11,
     "slug": "combination-soup-studio",
     "name": "Combination Soup Studio · 交互展示与业务价值",
-    "repo": "",
     "summary": "定位：以交互官网为参考，拆解效果并沉淀可复用的产品体验与交付方法；能力：五项效果、四类技能、三类业务场景，马桶与耳机完整产品页、目标及交付工作台；原理：素材与浏览器事件驱动画面和状态，Canvas与Three.js/WebGL承担二维及三维，配置贯穿PNG、JSON、简报和ZIP；场景：品牌活动、产品解释与选配、区域服务查询、庭院方案评审；价值：帮助理解、比较和保留选择，便于团队复用与继续制作；扩展：按新品类补齐事实、视觉标杆、资产、交互和验收，逐步建立质量修正闭环；边界：原站开源许可未确认，当前为概念原型，在线模型与任意产品自动交付未验收，商业收益未实测。",
-    "status": "已完成",
-    "demo": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/",
-    "cover": "assets/understanding-map.png",
-    "reference": "https://combinationsoupstudio.com.au/",
-    "reference_name": "Combination Soup Studio · 官网案例"
+    "status": "已完成"
   }
-]
+];

@@ -73,9 +73,18 @@ jobs:
         run: |
           npm ci --prefix projects/010-dumpling-style-lab/tooling
           npm test --prefix projects/010-dumpling-style-lab/tooling
+      - name: Validate Sprite interaction research
+        run: |
+          npm ci --ignore-scripts --prefix projects/009-sprite-destruction-lab/tooling
+          npm test --prefix projects/009-sprite-destruction-lab/tooling
+          node --check projects/009-sprite-destruction-lab/web/research.js
+          node --check projects/009-sprite-destruction-lab/web/toolbox/demo.js
+          python projects/009-sprite-destruction-lab/tooling/package-avatar.py --check
+          python projects/009-sprite-destruction-lab/tooling/package-toolbox.py --check
       - name: Build all static demos
         run: |
           python scripts/build_site.py
+          python projects/009-sprite-destruction-lab/tooling/verify-publication.py --site _site/projects/009-sprite-destruction-lab
           python projects/010-dumpling-style-lab/tooling/verify-publication.py --site _site/projects/010-dumpling-style-lab --report projects/010-dumpling-style-lab/notes/publication-ci-checks.json
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

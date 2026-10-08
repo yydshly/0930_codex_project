@@ -1,0 +1,185 @@
+{
+  "checkedAt": "2026-10-02T03:52:37.825Z",
+  "environment": "Bundled full Chromium headless, disposable profile and test-only localhost/MDN host grants",
+  "productionPermissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "contextMenus"
+  ],
+  "onlineTranslation": {
+    "available": true,
+    "response": {
+      "data": {
+        "exception_code": null,
+        "matches": [
+          {
+            "create-date": "2026-10-02 03:52:33",
+            "created-by": "MT!",
+            "id": 0,
+            "last-update-date": "2026-10-02 03:52:33",
+            "last-updated-by": "MT!",
+            "match": 0.85,
+            "model": "neural",
+            "penalty": null,
+            "quality": 70,
+            "reference": "Machine Translation.",
+            "segment": "HTML tables organize information into rows and columns.",
+            "source": "en-GB",
+            "subject": false,
+            "target": "zh-CN",
+            "translation": "HTML表将信息组织成行和列。",
+            "usage-count": 2
+          },
+          {
+            "create-date": "2017-03-10 09:08:19",
+            "created-by": "TRANSLATED",
+            "id": "22871271",
+            "last-update-date": "2017-03-10 09:08:19",
+            "last-updated-by": "TRANSLATED",
+            "match": 0.57,
+            "penalty": 0,
+            "quality": "0",
+            "reference": null,
+            "segment": "Selecting Tables, Rows, and Columns",
+            "source": "en-GB",
+            "subject": "Computer_Science",
+            "target": "zh-CN",
+            "translation": "選取表格、列和欄",
+            "usage-count": 2
+          },
+          {
+            "create-date": "2018-08-04 08:56:09",
+            "created-by": "MateCat",
+            "id": "472534464",
+            "last-update-date": "2018-08-04 08:56:09",
+            "last-updated-by": "MateCat",
+            "match": 0.49,
+            "penalty": 0,
+            "quality": "74",
+            "reference": null,
+            "segment": "Rows and Columns",
+            "source": "en-GB",
+            "subject": "All",
+            "target": "zh-CN",
+            "translation": "行和列",
+            "usage-count": 15
+          }
+        ],
+        "mtLangSupported": null,
+        "quotaFinished": false,
+        "responderId": null,
+        "responseData": {
+          "match": 0.85,
+          "translatedText": "HTML表将信息组织成行和列。"
+        },
+        "responseDetails": "",
+        "responseStatus": 200
+      },
+      "ok": true
+    },
+    "publicPage": {
+      "available": true,
+      "text": "二维表格中显示的信息",
+      "status": "翻译完成，原网页内容保持可阅读。"
+    }
+  },
+  "checks": [
+    {
+      "name": "Real Manifest V3 service worker is loaded from a disposable extension profile",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Formal extension does not run before a user action",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Content loader mounts the real shared Shadow DOM tool",
+      "passed": true,
+      "details": "{\"open\":true}"
+    },
+    {
+      "name": "The tool stays isolated from the website JavaScript world",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "The extension captures actual selected page text",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "A real selection is saved with its page title, source URL and annotation",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Table extractor reads actual host-page table cells",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "CSV export contains actual table rows rather than a placeholder",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Repeating the action unmounts the tool and restores the host page",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "The same module can remount after its first close",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Live service worker rejects a request above 500 bytes",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "The loaded extension returns the actual service response or an explicit network/quota error",
+      "passed": true,
+      "details": "{\"data\":{\"exception_code\":null,\"matches\":[{\"create-date\":\"2026-10-02 03:52:33\",\"created-by\":\"MT!\",\"id\":0,\"last-update-date\":\"2026-10-02 03:52:33\",\"last-updated-by\":\"MT!\",\"match\":0.85,\"model\":\"neural\",\"penalty\":null,\"quality\":70,\"reference\":\"Machine Translation.\",\"segment\":\"HTML tables organize information into rows and columns.\",\"source\":\"en-GB\",\"subject\":false,\"target\":\"zh-CN\",\"translation\":\"HTML表将信息组织成行和列。\",\"usage-count\":2},{\"create-date\":\"2017-03-10 09:08:19\",\"created-by\":\"TRANSLATED\",\"id\":\"22871271\",\"last-update-date\":\"2017-03-10 09:08:19\",\"last-updated-by\":\"TRANSLATED\",\"match\":0.57,\"penalty\":0,\"quality\":\"0\",\"reference\":null,\"segment\":\"Selecting Tables, Rows, and Columns\",\"source\":\"en-GB\",\"subject\":\"Computer_Science\",\"target\":\"zh-CN\",\"translation\":\"選取表格、列和欄\",\"usage-count\":2},{\"create-date\":\"2018-08-04 08:56:09\",\"created-by\":\"MateCat\",\"id\":\"472534464\",\"last-update-date\":\"2018-08-04 08:56:09\",\"last-updated-by\":\"MateCat\",\"match\":0.49,\"penalty\":0,\"quality\":\"74\",\"reference\":null,\"segment\":\"Rows and Columns\",\"source\":\"en-GB\",\"subject\":\"All\",\"target\":\"zh-CN\",\"translation\":\"行和列\",\"usage-count\":15}],\"mtLangSupported\":null,\"quotaFinished\":false,\"responderId\":null,\"responseData\":{\"match\":0.85,\"translatedText\":\"HTML表将信息组织成行和列。\"},\"responseDetails\":\"\",\"responseStatus\":200},\"ok\":true}"
+    },
+    {
+      "name": "The same packaged extension mounts on the live MDN website",
+      "passed": true,
+      "details": "{\"open\":true}"
+    },
+    {
+      "name": "Extension-local excerpts are shared across different website origins",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "A sentence from the public MDN article is captured with its real URL",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "The public-page translate button shows a real translation or the real service failure",
+      "passed": true,
+      "details": "翻译完成，原网页内容保持可阅读。"
+    },
+    {
+      "name": "The public article contains real extractable HTML tables",
+      "passed": true,
+      "details": "3"
+    },
+    {
+      "name": "The table panel is populated from the real MDN table",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "The tested extension loader and UI produce no uncaught page errors",
+      "passed": true,
+      "details": ""
+    }
+  ],
+  "errors": []
+}

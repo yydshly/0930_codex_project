@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ee">
+  <title>头像出逃 · 页面捣乱实验</title>
+  <meta name="description" content="让头像角色走出自己的圆框，在真实网页上跑动、踢碎卡片，再回到头像里。">
+  <link rel="stylesheet" href="avatar.css">
+  <script src="../vendor/matter.min.js" defer></script>
+  <script src="../vendor/html2canvas.min.js" defer></script>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <div class="page-shell">
+    <nav class="topbar" aria-label="页面导航">
+      <a class="back-link" href="../"><span aria-hidden="true">←</span> 返回研究总览</a>
+      <a class="back-link" href="../avatar-anywhere/#proof">带到其他网页 · 实录与扩展 ↗</a>
+    </nav>
+
+    <header class="intro">
+      <p class="eyebrow">WHEN AN AVATAR HAS A MIND OF ITS OWN</p>
+      <h1>头像里的家伙，<br>今天想出来玩。</h1>
+      <p class="intro-copy">让阿栗跳出头像，在这张主页上跑一圈。他会踢碎一张卡片；你可以让他继续捣乱，也可以叫他回来。</p>
+    </header>
+
+    <section class="control-bar" aria-label="角色操作">
+      <div class="primary-controls">
+        <button class="button primary" id="escape" type="button"><span aria-hidden="true">↗</span> 让他跳出来</button>
+        <button class="button" id="mischief" type="button" disabled>去捣乱</button>
+        <button class="button" id="recall" type="button" disabled>叫他回来</button>
+        <button class="button quiet" id="restore" type="button">复原页面</button>
+      </div>
+      <p class="actor-status" id="actor-status" role="status" aria-live="polite">阿栗还在头像里，等你叫他。</p>
+    </section>
+
+    <main>
+      <section class="homepage-stage" id="avatar-stage" aria-label="阿栗的创作者主页互动演示">
+        <div class="scene-source" id="scene-source">
+          <div class="site-heading"><a class="site-wordmark" href="#avatar-stage">ALi’s little corner<span>.</span></a><span class="site-caption">做点有趣的小东西</span></div>
+          <header class="creator-profile">
+            <div class="avatar-circle" data-avatar-home aria-label="阿栗的头像，角色从这里出发"><span class="portal-glow" aria-hidden="true"></span></div>
+            <div class="profile-copy">
+              <p class="profile-kicker">你好，我是</p>
+              <h2>阿栗<span class="profile-wave" aria-hidden="true">✳</span></h2>
+              <p>喜欢观察，也喜欢瞎折腾。<br>这里放着我的灵感、旅行和还没完成的计划。</p>
+              <div class="profile-tags"><span>独立创作者</span><span>周末漫游者</span><span>好奇心超标</span></div>
+            </div>
+            <div class="profile-stamp" aria-hidden="true"><span>MAKE<br>SMALL<br>THINGS</span><i>↗</i></div>
+          </header>
+          <div class="section-heading"><h3>最近的生活切片</h3><span>3 篇手记 / 慢慢更新</span></div>
+          <div class="card-grid">
+            <article class="avatar-target note-card card-blue" data-destructible data-target="first">
+              <div class="card-topline"><span class="card-number">01</span><span>灵感手记</span></div>
+              <div class="card-illustration illustration-window" aria-hidden="true"><div class="mini-window"><i></i><i></i><i></i><div class="window-cloud"></div><div class="window-sun"></div><div class="window-hill"></div></div></div>
+              <h4>给网页一点小脾气</h4>
+              <p>有时候，一个会跑出来的头像，比一整页自我介绍更容易让人记住。</p>
+              <div class="card-footer"><time datetime="2026-10-02">10 月 02 日</time><span aria-hidden="true">↗</span></div>
+            </article>
+            <article class="avatar-target note-card card-yellow" data-destructible data-target="second">
+              <div class="card-topline"><span class="card-number">02</span><span>周末散步</span></div>
+              <div class="card-illustration illustration-map" aria-hidden="true"><div class="map-path"></div><span class="map-pin">●</span><span class="map-tree">♣</span><span class="map-house">⌂</span></div>
+              <h4>走一条没走过的路</h4>
+              <p>关掉导航，沿着阳光走。转角有一家旧书店，也有一只不肯让路的猫。</p>
+              <div class="card-footer"><time datetime="2026-09-28">09 月 28 日</time><span aria-hidden="true">↗</span></div>
+            </article>
+            <article class="avatar-target note-card card-pink" data-destructible data-target="third">
+              <div class="card-topline"><span class="card-number">03</span><span>小小计划</span></div>
+              <div class="card-illustration illustration-todo" aria-hidden="true"><div class="todo-paper"><b>THIS WEEK</b><span><i>✓</i> 找一个新灵感</span><span><i>✓</i> 做一件小东西</span><span><i>○</i> 早点睡觉</span></div><span class="todo-spark">✳</span></div>
+              <h4>把想法变成一件小事</h4>
+              <p>不等准备好，先试一次。留一点空白，让新鲜的事情自己发生。</p>
+              <div class="card-footer"><time datetime="2026-09-24">09 月 24 日</time><span aria-hidden="true">↗</span></div>
+            </article>
+          </div>
+          <footer class="scene-footer"><span>今天也要保留一点好奇心。</span><span>Made with a little mischief <span aria-hidden="true">✳</span></span></footer>
+        </div>
+        <canvas id="engine-canvas" hidden aria-hidden="true"></canvas>
+        <canvas id="actor-canvas" aria-hidden="true"></canvas>
+      </section>
+
+      <section class="below-stage" aria-label="演示状态与自定义">
+        <div class="scene-stats"><span><b id="mischief-count">0</b> 次捣乱</span><span><b id="fragment-count">0</b> 片被踢开</span></div>
+        <div class="personalize-controls"><label class="upload-button" for="head-upload"><span aria-hidden="true">＋</span> 换成我的头像<input id="head-upload" type="file" accept="image/png,image/jpeg,image/webp"></label><button id="clear-head" class="text-button" type="button">恢复阿栗</button><label class="debug-toggle"><input id="debug" type="checkbox"> 显示碰撞边界</label></div>
+        <p class="upload-hint">上传图片会更换角色的头部。图片仅在当前页面使用。</p>
+      </section>
+
+      <section class="explanation" aria-labelledby="explanation-title">
+        <div class="explanation-heading"><p class="eyebrow">WHAT ACTUALLY HAPPENS</p><h2 id="explanation-title">你看到的每一步，来自什么能力？</h2></div>
+        <div class="explanation-grid">
+          <article><span class="explanation-number">01 / 角色出逃</span><h3>让角色有自己的行动</h3><p>头像里的阿栗会跳出、跑动、踢腿、返回。这里新增了角色绘制与动作编排，决定他什么时候去哪里。</p><span class="capability-tag">新增：角色动画与行为</span></article>
+          <article><span class="explanation-number">02 / 页面被捣乱</span><h3>踢到的卡片真的碎开</h3><p>引擎读取这张网页的实际卡片，把内容转成碎片，再让它们受力、落下、碰撞。复原后，原来的网页内容回来。</p><span class="capability-tag">复用：DestructionEngine</span></article>
+          <article><span class="explanation-number">03 / 头像换成你</span><h3>先换一张脸，再继续扩展</h3><p>当前支持上传图片替换角色头部。照片自动抠出全身、生成骨骼和动作，需要另外接入图像与动画能力。</p><span class="capability-tag neutral">边界：未实现自动人物动画</span></article>
+        </div>
+      </section>
+
+      <section class="event-section" aria-labelledby="event-title">
+        <div class="event-heading"><div><p class="eyebrow">THE LITTLE THINGS THAT HAPPENED</p><h2 id="event-title">这一回，他做了什么</h2></div><button class="button small" id="export-events" type="button">下载互动记录 <span aria-hidden="true">↓</span></button></div>
+        <ol id="event-log" class="event-log" aria-live="polite"><li class="empty-event">阿栗还没出门。点「让他跳出来」，故事就开始了。</li></ol>
+      </section>
+    </main>
+    <footer class="page-footer"><span>头像出逃 · 页面捣乱实验</span><a href="../">查看更多引擎效果 ↗</a></footer>
+  </div>
+</body>
+</html>

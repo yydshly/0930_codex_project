@@ -1,0 +1,253 @@
+{
+  "checkedAt": "2026-10-01T18:09:45.937Z",
+  "url": "http://127.0.0.1:8949/projects/009-sprite-destruction-lab/",
+  "browser": "151.0.7922.34",
+  "checks": [
+    {
+      "name": "Six mode buttons and glass default are available",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "glass: direct manual interaction changes real area",
+      "passed": true,
+      "details": "{\"state\":\"running\",\"effect\":\"glass\",\"ratio\":0.015762965723316518,\"goalRatio\":0.015762965723316518,\"total\":186634.375,\"destroyed\":2941.911255917601,\"hits\":1,\"shots\":1,\"complete\":false,\"tiles\":194,\"dynamic\":3,\"visuals\":0,\"collected\":0,\"fps\":58,\"width\":1108,\"height\":490,\"gravity\":1,\"force\":1,\"auto\":false}"
+    },
+    {
+      "name": "Glass uses triangle geometry",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "glass: pause stops effect animation",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "glass: active bodies and particles stay finite",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "glass: catalog completion unlocks the existing workflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "glass / campaign: same real task still completes",
+      "passed": true,
+      "details": "{\"state\":\"running\",\"effect\":\"glass\",\"ratio\":0.4300412342395624,\"goalRatio\":0.9201021874520546,\"total\":92949.49218749999,\"destroyed\":39972.11434225306,\"hits\":2,\"shots\":2,\"complete\":true,\"tiles\":122,\"dynamic\":46,\"visuals\":0,\"collected\":0,\"fps\":60,\"width\":1108,\"height\":490,\"gravity\":1,\"force\":1,\"auto\":true}"
+    },
+    {
+      "name": "glass / classroom: same real task still completes",
+      "passed": true,
+      "details": "{\"state\":\"running\",\"effect\":\"glass\",\"ratio\":0.2677887381741966,\"goalRatio\":0.2677887381741966,\"total\":196209.37500000006,\"destroyed\":52542.66094919777,\"hits\":2,\"shots\":2,\"complete\":true,\"tiles\":214,\"dynamic\":61,\"visuals\":0,\"collected\":0,\"fps\":60,\"width\":1108,\"height\":490,\"gravity\":1,\"force\":1,\"auto\":true}"
+    },
+    {
+      "name": "paper: direct manual interaction changes real area",
+      "passed": true,
+      "details": "{\"state\":\"running\",\"effect\":\"paper\",\"ratio\":0.011416707131255997,\"goalRatio\":0.011416707131255997,\"total\":186634.3749999994,\"destroyed\":2130.749999999999,\"hits\":1,\"shots\":1,\"complete\":false,\"tiles\":249,\"dynamic\":3,\"visuals\":0,\"collected\":0,\"fps\":60,\"width\":1108,\"height\":490,\"gravity\":1,\"force\":1,\"auto\":false}"
+    },
+    {
+      "name": "Paper uses thin-strip geometry",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "paper: pause stops effect animation",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "paper: active bodies and particles stay finite",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "paper: catalog completion unlocks the existing workflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "paper / campaign: same real task still completes",
+      "passed": true,
+      "details": "{\"state\":\"running\",\"effect\":\"paper\",\"ratio\":0.3995240762057018,\"goalRatio\":0.854808672258269,\"total\":92949.4921874999,\"destroyed\":37135.55999999999,\"hits\":2,\"shots\":2,\"complete\":true,\"tiles\":149,\"dynamic\":53,\"visuals\":0,\"collected\":0,\"fps\":62,\"width\":1108,\"height\":490,\"gravity\":1,\"force\":1,\"auto\":true}"
+    },
+    {
+      "name": "paper / classroom: same real task still completes",
+      "passed": true,
+      "details": "{\"state\":\"running\",\"effect\":\"paper\",\"ratio\":0.27345339720005807,\"goalRatio\":0.27345339720005807,\"total\":196209.3749999993,\"destroyed\":53654.12015624995,\"hits\":2,\"shots\":2,\"complete\":true,\"tiles\":269,\"dynamic\":72,\"visuals\":0,\"collected\":0,\"fps\":585378298,\"width\":1108,\"height\":490,\"gravity\":1,\"force\":1,\"auto\":true}"
+    },
+    {
+      "name": "pixels: direct manual interaction changes real area",
+      "passed": true,
+      "details": "{\"state\":\"running\",\"effect\":\"pixels\",\"ratio\":0.011416707131255964,\"goalRatio\":0.011416707131255964,\"total\":186634.375,\"destroyed\":2130.75,\"hits\":1,\"shots\":1,\"complete\":false,\"tiles\":97,\"dynamic\":0,\"visuals\":42,\"collected\":0,\"fps\":78,\"width\":1108,\"height\":490,\"gravity\":1,\"force\":1,\"auto\":false}"
+    },
+    {
+      "name": "pixels: content becomes real texture particles",
+      "passed": true,
+      "details": "{\"state\":\"running\",\"effect\":\"pixels\",\"ratio\":0.011416707131255964,\"goalRatio\":0.011416707131255964,\"total\":186634.375,\"destroyed\":2130.75,\"hits\":1,\"shots\":1,\"complete\":false,\"tiles\":97,\"dynamic\":0,\"visuals\":42,\"collected\":0,\"fps\":78,\"width\":1108,\"height\":490,\"gravity\":1,\"force\":1,\"auto\":false}"
+    },
+    {
+      "name": "pixels: pause stops effect animation",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "pixels: active bodies and particles stay finite",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "pixels: catalog completion unlocks the existing workflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "pixels / campaign: same real task still completes",
+      "passed": true,
+      "details": "{\"state\":\"running\",\"effect\":\"pixels\",\"ratio\":0.40170203323629644,\"goalRatio\":0.8594685580284568,\"total\":92949.4921875,\"destroyed\":37338,\"hits\":2,\"shots\":2,\"complete\":true,\"tiles\":61,\"dynamic\":0,\"visuals\":798,\"collected\":0,\"fps\":60,\"width\":1108,\"height\":490,\"gravity\":1,\"force\":1,\"auto\":true}"
+    },
+    {
+      "name": "pixels / classroom: same real task still completes",
+      "passed": true,
+      "details": "{\"state\":\"running\",\"effect\":\"pixels\",\"ratio\":0.2800754037459984,\"goalRatio\":0.2800754037459984,\"total\":196209.375,\"destroyed\":54953.419921875,\"hits\":3,\"shots\":3,\"complete\":true,\"tiles\":107,\"dynamic\":0,\"visuals\":1130,\"collected\":0,\"fps\":60,\"width\":1108,\"height\":490,\"gravity\":1,\"force\":1,\"auto\":true}"
+    },
+    {
+      "name": "neon: direct manual interaction changes real area",
+      "passed": true,
+      "details": "{\"state\":\"running\",\"effect\":\"neon\",\"ratio\":0.011416707131255964,\"goalRatio\":0.011416707131255964,\"total\":186634.375,\"destroyed\":2130.75,\"hits\":1,\"shots\":1,\"complete\":false,\"tiles\":97,\"dynamic\":0,\"visuals\":25,\"collected\":0,\"fps\":60,\"width\":1108,\"height\":490,\"gravity\":1,\"force\":1,\"auto\":false}"
+    },
+    {
+      "name": "neon: content becomes real texture particles",
+      "passed": true,
+      "details": "{\"state\":\"running\",\"effect\":\"neon\",\"ratio\":0.011416707131255964,\"goalRatio\":0.011416707131255964,\"total\":186634.375,\"destroyed\":2130.75,\"hits\":1,\"shots\":1,\"complete\":false,\"tiles\":97,\"dynamic\":0,\"visuals\":25,\"collected\":0,\"fps\":60,\"width\":1108,\"height\":490,\"gravity\":1,\"force\":1,\"auto\":false}"
+    },
+    {
+      "name": "neon: pause stops effect animation",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "neon: active bodies and particles stay finite",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "neon: catalog completion unlocks the existing workflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Neon particles reach the collection ring",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "neon / campaign: same real task still completes",
+      "passed": true,
+      "details": "{\"state\":\"running\",\"effect\":\"neon\",\"ratio\":0.46573681018799273,\"goalRatio\":0.9964752765828886,\"total\":92949.4921875,\"destroyed\":43290,\"hits\":3,\"shots\":3,\"complete\":true,\"tiles\":61,\"dynamic\":0,\"visuals\":480,\"collected\":0,\"fps\":60,\"width\":1108,\"height\":490,\"gravity\":1,\"force\":1,\"auto\":true}"
+    },
+    {
+      "name": "neon / classroom: same real task still completes",
+      "passed": true,
+      "details": "{\"state\":\"running\",\"effect\":\"neon\",\"ratio\":0.2557272803287305,\"goalRatio\":0.2557272803287305,\"total\":196209.375,\"destroyed\":50176.08984375,\"hits\":3,\"shots\":3,\"complete\":true,\"tiles\":107,\"dynamic\":0,\"visuals\":575,\"collected\":0,\"fps\":60,\"width\":1108,\"height\":490,\"gravity\":1,\"force\":1,\"auto\":true}"
+    },
+    {
+      "name": "ripple: direct manual interaction changes real area",
+      "passed": true,
+      "details": "{\"state\":\"running\",\"effect\":\"ripple\",\"ratio\":0.015070053413257874,\"goalRatio\":0.015070053413257874,\"total\":186634.375,\"destroyed\":2812.59,\"hits\":1,\"shots\":1,\"complete\":false,\"tiles\":97,\"dynamic\":0,\"visuals\":1,\"collected\":0,\"fps\":60,\"width\":1108,\"height\":490,\"gravity\":1,\"force\":1,\"auto\":false}"
+    },
+    {
+      "name": "Repeated reveal does not double count the same area",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Ripple keeps partial coverage instead of rectangular destruction",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "ripple: pause stops effect animation",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "ripple: active bodies and particles stay finite",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "ripple: catalog completion unlocks the existing workflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "ripple / campaign: same real task still completes",
+      "passed": true,
+      "details": "{\"state\":\"running\",\"effect\":\"ripple\",\"ratio\":0.41311280025652375,\"goalRatio\":0.8838826626767756,\"total\":92949.4921875,\"destroyed\":38398.625,\"hits\":2,\"shots\":2,\"complete\":true,\"tiles\":61,\"dynamic\":0,\"visuals\":2,\"collected\":0,\"fps\":60,\"width\":1108,\"height\":490,\"gravity\":1,\"force\":1,\"auto\":true}"
+    },
+    {
+      "name": "ripple / classroom: same real task still completes",
+      "passed": true,
+      "details": "{\"state\":\"running\",\"effect\":\"ripple\",\"ratio\":0.33514880667972663,\"goalRatio\":0.33514880667972663,\"total\":196209.375,\"destroyed\":65759.33789062499,\"hits\":3,\"shots\":3,\"complete\":true,\"tiles\":107,\"dynamic\":0,\"visuals\":3,\"collected\":0,\"fps\":60,\"width\":1108,\"height\":490,\"gravity\":1,\"force\":1,\"auto\":true}"
+    },
+    {
+      "name": "classic: direct manual interaction changes real area",
+      "passed": true,
+      "details": "{\"state\":\"running\",\"effect\":\"classic\",\"ratio\":0.004114997572124642,\"goalRatio\":0.004114997572124642,\"total\":186634.375,\"destroyed\":768,\"hits\":1,\"shots\":1,\"complete\":false,\"tiles\":97,\"dynamic\":1,\"visuals\":0,\"collected\":0,\"fps\":60,\"width\":1108,\"height\":490,\"gravity\":1,\"force\":1,\"auto\":false}"
+    },
+    {
+      "name": "classic: pause stops effect animation",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "classic: active bodies and particles stay finite",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "classic: catalog completion unlocks the existing workflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "classic / campaign: same real task still completes",
+      "passed": true,
+      "details": "{\"state\":\"running\",\"effect\":\"classic\",\"ratio\":0.48209683770629796,\"goalRatio\":0.8629932814455682,\"total\":92949.4921875,\"destroyed\":44810.65625,\"hits\":3,\"shots\":3,\"complete\":true,\"tiles\":61,\"dynamic\":30,\"visuals\":0,\"collected\":0,\"fps\":60,\"width\":1108,\"height\":490,\"gravity\":1,\"force\":1,\"auto\":true}"
+    },
+    {
+      "name": "classic / classroom: same real task still completes",
+      "passed": true,
+      "details": "{\"state\":\"running\",\"effect\":\"classic\",\"ratio\":0.3147097329064934,\"goalRatio\":0.3147097329064934,\"total\":196209.375,\"destroyed\":61749,\"hits\":3,\"shots\":3,\"complete\":true,\"tiles\":107,\"dynamic\":37,\"visuals\":0,\"collected\":0,\"fps\":60,\"width\":1108,\"height\":490,\"gravity\":1,\"force\":1,\"auto\":true}"
+    },
+    {
+      "name": "Mode switching disposes the old physics world",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Mode switching resets progress and task result",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "All six modes fit the mobile viewport without horizontal overflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Mobile direct interaction creates neon particles",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "No uncaught errors or missing assets across six modes",
+      "passed": true,
+      "details": "[]"
+    }
+  ],
+  "errors": []
+}

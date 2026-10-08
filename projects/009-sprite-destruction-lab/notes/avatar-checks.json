@@ -1,0 +1,98 @@
+{
+  "checkedAt": "2026-10-02T05:14:19.942Z",
+  "url": "http://127.0.0.1:8949/projects/009-sprite-destruction-lab/avatar/",
+  "browser": "151.0.7922.34",
+  "checks": [
+    {
+      "name": "Real article DOM and avatar home are present",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Same destruction engine prepares actual card textures",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Avatar visibly leaves its original circular home",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "A character kick releases real Matter fragments",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Released card texture moves in the existing physics world",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "First kick stays within its target card",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Next command reaches and breaks a different actual card",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recall returns the avatar while preserving damage",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Restore disposes physics and returns the original live DOM",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Actual user-supplied image becomes the character head",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Uploaded head uses the same jump and real kick workflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Original character can be restored after upload",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recall interrupts an unfinished escape without a delayed kick",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Downloaded record contains actual kick points and fragment releases",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Resize restores the scene and fits the mobile viewport",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Mobile escape also releases actual fragments",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Mobile recall and restore leave usable source content",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "No uncaught browser errors or missing local assets",
+      "passed": true,
+      "details": "[]"
+    }
+  ],
+  "errors": []
+}

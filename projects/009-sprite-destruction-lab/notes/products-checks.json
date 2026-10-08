@@ -1,0 +1,276 @@
+{
+  "checkedAt": "2026-10-02T02:57:52.754Z",
+  "url": "http://127.0.0.1:8949/projects/009-sprite-destruction-lab/products/",
+  "browser": "151.0.7922.34",
+  "checks": [
+    {
+      "name": "Six product tools and default motion editor",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Edited text changes the actual rendered source",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "PNG export has real PNG bytes",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Switching tools during image decoding leaves no old engine or page error",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Cancelling during image decoding does not recreate a stale engine",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Uploaded image is used by the motion source",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "glass animates actual content",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "paper animates actual content",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "pixels animates actual content",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "neon animates actual content",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "ripple animates actual content",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "WebM export has substantial video bytes",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Exported WebM has playable duration and dimensions",
+      "passed": true,
+      "details": "{\"duration\":3.0078,\"width\":820,\"height\":370}"
+    },
+    {
+      "name": "Cancelling video resets the editor without blocked controls",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Backgrounding the page cancels recording instead of waiting forever",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Slider changes actual image mask",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Dragging the picture moves the real boundary",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Selected proposal and reason are recorded",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Comparison report embeds uploaded image and actual choice",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Hotspot exposes the matching component description",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Parts have a real exploded state",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Maintenance checklist completes the workflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Maintenance export contains the checked steps",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "CSV duplicates aggregate and quoted categories remain intact",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Summary recalculates from imported values",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Invalid CSV is rejected and current data survives",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Story playback actually advances the visualization",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Analysis summary exports exact imported data",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Data chart is a real PNG",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Brand cover reveals content",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Chapter edit appears in the live exhibition",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Brand collection is a stored project state",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Brand lookbook contains edited three-chapter content",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "ripple component emits a real reveal event",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "paper component emits a real reveal event",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "neon component emits a real reveal event",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Copied snippet contains the real module and event API",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Offline HTML works without local server",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Local project restores uploads and completion after reload",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Exported project is valid versioned JSON",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Invalid project does not erase current state",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Importing the exported project restores all tool settings",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Small decimal CSV values survive local project restore and display",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "motion has no mobile horizontal overflow",
+      "passed": true,
+      "details": {
+        "scrollWidth": 390,
+        "innerWidth": 390
+      }
+    },
+    {
+      "name": "compare has no mobile horizontal overflow",
+      "passed": true,
+      "details": {
+        "scrollWidth": 390,
+        "innerWidth": 390
+      }
+    },
+    {
+      "name": "manual has no mobile horizontal overflow",
+      "passed": true,
+      "details": {
+        "scrollWidth": 390,
+        "innerWidth": 390
+      }
+    },
+    {
+      "name": "data has no mobile horizontal overflow",
+      "passed": true,
+      "details": {
+        "scrollWidth": 390,
+        "innerWidth": 390
+      }
+    },
+    {
+      "name": "brand has no mobile horizontal overflow",
+      "passed": true,
+      "details": {
+        "scrollWidth": 390,
+        "innerWidth": 390
+      }
+    },
+    {
+      "name": "embed has no mobile horizontal overflow",
+      "passed": true,
+      "details": {
+        "scrollWidth": 390,
+        "innerWidth": 390
+      }
+    },
+    {
+      "name": "No uncaught errors or missing local assets",
+      "passed": true,
+      "details": "[]"
+    }
+  ],
+  "errors": []
+}

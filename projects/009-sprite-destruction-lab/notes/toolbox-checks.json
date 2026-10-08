@@ -1,0 +1,160 @@
+{
+  "checkedAt": "2026-10-02T04:06:14.552Z",
+  "url": "http://127.0.0.1:8949/projects/009-sprite-destruction-lab/toolbox/",
+  "browser": "151.0.7922.34",
+  "checks": [
+    {
+      "name": "Toolbox mounts without modifying page text",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Real document selection populates translation input",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Excerpt includes actual selected text and correct page source",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Excerpt JSON contains actual source and selected content",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Saved excerpt survives reload",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Real catalog cells become the extracted matrix",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "CSV contains real project records",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Table JSON keeps provenance and exact rows",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Merged cells expand and nested table text stays out",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "CSV export prevents formula interpretation",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Text tool actually deduplicates lines",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Text statistics reflect user input",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "JSON tool returns parsed formatting",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Invalid JSON clears prior output",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Unit conversion calculates inches to centimeters",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Temperature conversion works",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Closing removes UI and inserted translations",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Reopening retains local notes without duplicate hosts",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Leaving the tables tab exits page picking",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Manual input is explicitly labelled rather than quoted as page text",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Two tabs preserve each other’s newly saved excerpts",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "A stale tab does not resurrect another tab’s deleted excerpt",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Selecting a new paragraph cancels the prior translation",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Element-container selection inserts below its own paragraph (isolated UI fixture)",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Local mode reports actual browser model availability",
+      "passed": true,
+      "details": "Chrome 当前无法提供该语言对的本地模型，请选择在线翻译。"
+    },
+    {
+      "name": "Changing input cancels old translation output",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Real extension ZIP is downloadable",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Mobile page and panel have no horizontal overflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Mobile panel can be minimized",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "No uncaught errors across actual tool operations",
+      "passed": true,
+      "details": "[]"
+    }
+  ],
+  "network": [],
+  "errors": [],
+  "liveTranslationRequested": false
+}

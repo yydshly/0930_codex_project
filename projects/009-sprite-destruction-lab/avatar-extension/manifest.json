@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Avatar Anywhere · 网页角色",
+  "version": "0.1.0",
+  "description": "点击后在当前网页放入可操作角色，利用本地可见页面截图展示角色与真实网页区域的互动。",
+  "permissions": ["activeTab", "scripting"],
+  "background": {"service_worker": "service-worker.js", "type": "module"},
+  "action": {"default_title": "打开网页角色", "default_icon": {"16": "icons/16.png", "32": "icons/32.png"}},
+  "commands": {"_execute_action": {"suggested_key": {"default": "Alt+Shift+A"}}},
+  "icons": {"16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png"},
+  "web_accessible_resources": [{
+    "resources": ["assets/engine.js", "assets/model.js", "assets/effects.js", "assets/avatar/character.js", "assets/avatar-anywhere/controller.js"],
+    "matches": ["http://*/*", "https://*/*"]
+  }]
+}

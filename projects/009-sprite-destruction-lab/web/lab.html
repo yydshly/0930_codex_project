@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="真实网页的破坏交互实验：场景演示、原作原理、本地实现与扩展接口。">
+  <title>效果实验 · 六种表现与三个场景</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="vendor/matter.min.js"></script><script defer src="vendor/html2canvas.min.js"></script>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="./"><span class="brand-icon">✳</span> DESTRUCTION <b>LAB</b><span class="project-id">PROJECT 009</span></a><nav aria-label="页面导航"><a href="./">研究总览</a><a href="avatar/">头像出逃 ↗</a><a href="products/">产品应用工作台 ↗</a><a href="#demo">场景演示</a><a href="#principle">工作原理</a><a href="#extend">接入与扩展</a><a href="https://destroy.spritefusion.com/" target="_blank" rel="noopener noreferrer">原作体验 ↗</a></nav></header>
+<main>
+<div class="page-heading"><div><p class="eyebrow">LOCAL ENGINE / INTERACTIVE LAB</p><h1>六种效果，三个真实场景。</h1><p>这里专注交互实验。原作能力、扩展关系与产品路线见研究总览。</p></div><a class="outline-link" href="./">返回研究总览 →</a></div>
+<section class="effect-switcher" aria-label="效果模式"><div class="effect-heading"><span class="eyebrow">EFFECT MODES</span><span>同一个页面，六种不同表现 · 切换会复原场景</span></div><div class="effect-buttons" role="group" aria-label="选择效果风格">
+  <button data-effect="glass" class="active" aria-pressed="true"><span>◇</span><b>玻璃裂解</b><small>不规则碎片 / 弹跳</small></button>
+  <button data-effect="paper" aria-pressed="false"><span>≋</span><b>纸片飘散</b><small>纸带 / 风力 / 摆动</small></button>
+  <button data-effect="pixels" aria-pressed="false"><span>▦</span><b>像素消融</b><small>颗粒 / 漂浮 / 消失</small></button>
+  <button data-effect="neon" aria-pressed="false"><span>◎</span><b>霓虹聚合</b><small>光点 / 汇流 / 回收</small></button>
+  <button data-effect="ripple" aria-pressed="false"><span>◉</span><b>涟漪揭幕</b><small>水波 / 擦除 / 揭晓</small></button>
+  <button data-effect="classic" aria-pressed="false"><span>▧</span><b>方块破坏</b><small>原有角色射击</small></button>
+</div><div class="effect-caption"><p id="effect-description">把页面裂成不规则三角形，碎片带着原内容旋转、弹跳。</p><span id="effect-use">适合产品揭晓、科技展示、冲击反馈</span></div></section>
+<section id="demo" class="workspace" aria-label="场景演示工作区">
+  <aside class="scenario-panel"><p class="eyebrow">01 / 选择场景</p><div class="scenario-list" role="group" aria-label="选择使用场景">
+    <button class="scenario active" data-scene="catalog" aria-pressed="true"><span>01</span><b>研究集互动首页</b><small>用本仓库的真实项目做关卡</small></button>
+    <button class="scenario" data-scene="campaign" aria-pressed="false"><span>02</span><b>活动页 · 打碎旧价</b><small>完成任务，揭晓并复制活动码</small></button>
+    <button class="scenario" data-scene="classroom" aria-pressed="false"><span>03</span><b>课堂 · 碰撞与冲量</b><small>调节参数，看碎片如何运动</small></button>
+  </div><div class="scenario-brief"><span class="pill" id="scene-type">真实仓库内容</span><h2 id="scene-title">研究集互动首页</h2><p id="scene-brief"></p><dl><dt>这次要做什么</dt><dd id="scene-goal"></dd><dt>完成之后</dt><dd id="scene-outcome"></dd></dl></div><p class="local-note">本地玩法使用真实 DOM 与物理计算。活动内容为自建示例，未接入商家订单。</p></aside>
+  <div class="play-panel">
+    <div class="stage-bar"><div><span class="stage-dot"></span><span id="stage-state" role="status">正在准备场景</span></div><span id="viewport-label">DOM → Canvas → Matter.js</span></div>
+    <div id="stage" class="stage"><div id="scene-dom" class="scene-dom"></div><canvas id="game-canvas" tabindex="0" aria-label="可破坏网页场景。点击开始后，用 A D 移动、空格跳跃、鼠标瞄准与射击；键盘 F 发射、G 爆破。"></canvas><div class="stage-overlay" id="stage-overlay"><div><span class="overlay-mark">✳</span><h2 id="overlay-title">这个网页，可以打碎。</h2><p id="overlay-copy">点击开始，鼠标瞄准射击。也可以开启自动演示。</p><button class="primary" id="start">开始体验</button></div></div></div>
+    <div class="game-controls"><div class="weapon-group" role="group" aria-label="选择武器"><button data-weapon="pulse" class="active" aria-pressed="true">1 点射</button><button data-weapon="scatter" aria-pressed="false">2 散射</button><button data-weapon="blast" aria-pressed="false">3 爆破</button></div><div class="action-group"><button id="auto">自动演示</button><button id="pause" disabled>暂停</button><button id="reset">复原页面</button></div></div>
+    <div class="stats"><div><span id="progress-label">破坏进度</span><b id="progress">0%</b><div class="progress-track"><i id="progress-fill"></i></div></div><div><span>有效交互</span><b id="hit-count">0</b></div><div><span id="body-label">物理碎片</span><b id="body-count">0</b></div><div><span>当前帧率</span><b id="fps">—</b></div><div><span>场景任务</span><b id="goal-state">尚未完成</b></div></div>
+    <p class="control-help" id="control-help">点按或拖拽页面产生裂解 · 选择点触、扩散或冲击</p>
+    <div class="touch-controls"><button data-move="left" aria-label="向左移动">向左</button><button data-move="jump">跳跃</button><button data-move="right" aria-label="向右移动">向右</button></div>
+    <div id="result" class="result" hidden role="status"></div>
+    <details class="parameters" id="parameters"><summary>实验参数与效果原理</summary><div class="parameter-grid"><label class="physics-only">重力 <output id="gravity-value">1.0</output><input id="gravity" type="range" min="0" max="2" step="0.1" value="1"></label><label>交互强度 <output id="force-value">1.0</output><input id="force" type="range" min="0.3" max="2.5" step="0.1" value="1"></label><label><span id="fragment-label">碎片尺寸</span> <select id="cell-size"><option value="36">36 px · 更细</option><option value="48" selected>48 px · 平衡</option><option value="64">64 px · 更快</option></select></label><label class="check physics-only"><input id="debug" type="checkbox">显示刚体边界</label></div><p id="parameter-note">重力与强度即时生效，片区尺寸在下一次开始时生效。</p></details>
+  </div>
+</section>
+<section class="original-strip"><div><span class="eyebrow">原作的真实接入</span><h2>把我们的网站，交给原作游戏。</h2><p>已核对原作的 <code>?url=</code> 接入方式。会打开原作，由它的服务端加载目标页面。</p></div><div class="original-actions"><a id="official-catalog" class="outline-link" target="_blank" rel="noopener noreferrer">体验研究集首页 ↗</a><a class="outline-link" href="https://destroy.spritefusion.com/?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FStick_figure" target="_blank" rel="noopener noreferrer">体验 Wikipedia ↗</a></div><p class="strip-note">原作支持更多武器、飞行与在线多人；这些功能未在本地版本冒充实现。第三方页面加载结果由原作服务决定。</p></section>
+<details class="upstream-evidence"><summary>查看原作的真实网址实测画面</summary><p>2026-10-02，两个网址均已由原作加载为游戏关卡。研究集截图可见射击产生的字符碎片；尚未测试多人或完整关卡破坏。截图来源：Destroy Any Website / Hugo Duprez · Sprite Fusion。</p><div class="source-gallery"><figure><a href="assets/source-catalog.png" target="_blank" rel="noopener noreferrer"><img src="assets/source-catalog.png" alt="原作游戏中，本研究集的中文网页文字被射击后变成碎片" loading="lazy"></a><figcaption>真实场景 01 · 本研究集首页</figcaption></figure><figure><a href="assets/source-wikipedia.png" target="_blank" rel="noopener noreferrer"><img src="assets/source-wikipedia.png" alt="原作将 Wikipedia 的 Stick figure 网页转换成角色可移动的游戏关卡" loading="lazy"></a><figcaption>真实场景 02 · Wikipedia</figcaption></figure></div></details>
+<section id="principle" class="research-section"><div class="section-heading"><p class="eyebrow">02 / HOW IT WORKS</p><h2>内容不变，形状与运动可以重新设计。</h2><p>新增模式共用真实 DOM、任务和事件接口，按表现选择刚体、粒子轨迹或遮罩。</p></div>
+<div class="mode-principles"><article><span>◇ / ≋ / ▧</span><h3>碎裂与飘散</h3><p>玻璃用错位网格三角形，纸片用细长条带。两者都由 Matter.js 求解运动；纸片额外加入轻风、升力和摆动。</p></article><article><span>▦ / ◎</span><h3>溶解与聚合</h3><p>采样原页面纹理颜色，生成细小粒子。像素向上衰减，霓虹沿曲线汇入能量环。使用粒子动画，不冒充刚体碰撞。</p></article><article><span>◉</span><h3>渐进揭幕</h3><p>累计圆形擦除遮罩，绘制扩散涟漪。每个片区采样 25 个点估计揭晓面积，重复擦除不会重复计算。</p></article></div>
+  <div class="pipeline original-pipeline"><div class="pipeline-label"><b>原作客户端</b><span>公开脚本核对 · 2026-10-02</span></div><ol><li><span>01</span><h3>取得目标页面</h3><p>静态路径请求 <code>/api/page</code>，脚本路径使用 <code>/p/…</code> 代理。</p></li><li><span>02</span><h3>采集 DOM 布局</h3><p>受限 iframe 中读取元素几何、计算样式、文字与绘制信息。</p></li><li><span>03</span><h3>生成可破坏关卡</h3><p>把采集结果转换为关卡，再加入角色、武器与破坏逻辑。</p></li><li><span>04</span><h3>共享同一个场景</h3><p>WebSocket 连接房间；客户端上传或下载关卡数据。</p></li></ol><p class="pipeline-note">未取得原作服务端源码或开源许可；无法核实代理内部处理、服务器权威性与完整同步算法。</p></div>
+  <div class="pipeline"><div class="pipeline-label"><b>本地可复用实现</b><span>Matter.js 0.20.0 + html2canvas 1.4.1</span></div><ol><li><span>01</span><h3>真实页面渲染</h3><p>html2canvas 根据 DOM 与支持的样式重建图像；并非浏览器原生截图。</p></li><li><span>02</span><h3>切片与刚体</h3><p>只选 <code>data-destructible</code> 区域。纹理按网格切片，碎片初始保持静止。</p></li><li><span>03</span><h3>命中与冲量</h3><p>射线检测寻找首个命中；受击片解除固定，进入真实刚体碰撞与重力模拟。</p></li><li><span>04</span><h3>触发场景动作</h3><p>累计被破坏的原始面积。达到阈值后揭晓结果，用户可复制活动码或进入项目。</p></li></ol></div>
+  <div class="evidence-grid"><article><h3>能力展示到哪一步？</h3><p>本地：真实 DOM 切片、角色移动与跳跃、三种攻击、触控、自动演示、参数调节、任务反馈、复原与事件记录。</p><p>原作：网址导入、多武器、飞行与房间联机。可从上方入口体验。</p></article><article><h3>为什么不能直接处理任意网址？</h3><p>浏览器同源规则限制跨域 DOM 读取。html2canvas 也不能直接读取未授权的跨域图片。这里的 DOM 实验只处理自有场景；跨站扩展另走当前视口截图路径。</p><p>浏览器扩展可在用户授权后处理当前网页；按网址离线采集整页仍需独立后端和页面适配。</p></article><article><h3>怎样判断有没有价值？</h3><p>体验开始、首次命中、任务完成与后续动作，是这类互动的基本漏斗。本地日志可以真实记录这些动作并下载。</p><p>这次没有线上流量、付费或留存数据；娱乐性与业务收益需要分别验证。</p></article></div>
+</section>
+<section id="extend" class="research-section"><div class="section-heading"><p class="eyebrow">03 / EXTENSIBILITY</p><h2>把交互层，与业务内容分开。</h2><p>本项目已经通过场景配置和事件接口复用同一引擎。</p></div><div class="extension-grid"><article class="integration"><h3>接入自己的页面</h3><pre><code>const lab = new DestructionEngine({
+  canvas, source: document.querySelector('.content'),
+  cellSize: 48,
+  onEvent: (event) =&gt; analytics.track(event)
+});
+await lab.prepare();
+lab.start();
+// 在可破坏区域添加 data-destructible
+// 用 onEvent 的 complete 事件接入业务动作</code></pre><p>源码入口：<a href="engine.js">engine.js</a> · <a href="scenes.js">scenes.js</a> · <a href="licenses.html">第三方许可</a></p></article><div class="extension-list"><div><span class="pill">已实现</span><h3>场景与参数扩展</h3><p>换内容、设定完成阈值、调节切片尺寸、重力与冲量，复用全部运动与交互逻辑。</p></div><div><span class="pill pending">需要开发</span><h3>网页采集与联机</h3><p>增加受控采集后端、布局兼容测试；多人场景还需服务器维护房间、校验输入和同步破坏状态。</p></div><div><span class="pill pending">需要业务系统</span><h3>真实优惠券与运营分析</h3><p>服务端校验领取资格、发放可核销券，并记录去重后的访问漏斗。本地示例码不具有商业效力。</p></div></div></div>
+  <div class="event-panel"><div><h3>这一次体验的真实事件</h3><p>仅保存在当前页面内存中；下载后可用于复盘流程与扩展接口。</p></div><button id="export-events">下载事件记录</button><ol id="event-log" aria-label="交互事件记录"><li>等待开始体验。</li></ol></div>
+</section>
+<footer><p>效果来源：<a href="https://destroy.spritefusion.com/" target="_blank" rel="noopener noreferrer">Destroy Any Website / Hugo Duprez · Sprite Fusion</a>。本地玩法为独立实现，未复制原作游戏或声称拥有其源码。</p><p><a href="https://brm.io/matter-js/docs/">Matter.js 文档</a> · <a href="https://html2canvas.hertzen.com/documentation">html2canvas 原理与限制</a> · <a href="licenses.html">MIT 许可</a></p></footer>
+</main>
+</body></html>
