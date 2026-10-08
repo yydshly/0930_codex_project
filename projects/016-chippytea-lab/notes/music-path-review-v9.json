@@ -1,0 +1,86 @@
+{
+  "reviewedOn": "2026-10-03",
+  "provider": "MiniMax",
+  "scope": "Official documentation and public metadata review followed by one root-authorized free Space music generation. No credentials read, subscription, login, terms acceptance, external message, paid overage, or model download performed.",
+  "status": "hosted-api-blocked-official-space-generation-succeeded",
+  "hostedApi": {
+    "status": "blocked-for-existing-key",
+    "policyEffectiveDate": "2026-08-20",
+    "policy": "Paid Music Generation and Lyrics Generation APIs no longer accept new users. Existing paying users retain their current service. Free music variants are discontinued. Schema listings do not establish entitlement.",
+    "cnEndpoint": "https://api.minimax.cn/v1/music_generation",
+    "globalEndpoint": "https://api.minimax.io/v1/music_generation",
+    "cnEndpointMatchesPriorRequest": true,
+    "priorEvidence": "music-generation.json: HTTP 410, business status 2153, new user music API access unavailable",
+    "priorReceiptUnchanged": true,
+    "officialSources": [
+      "https://platform.minimax.cn/docs/api-reference/music-generation",
+      "https://platform.minimax.io/docs/api-reference/music-generation",
+      "https://platform.minimax.io/docs/guides/music-generation"
+    ],
+    "minimumCondition": "An account/key with confirmed historical music API entitlement, not merely a text-generation balance or a listed music model. Region must match the key issuer. No new credentials were examined in this review."
+  },
+  "officialSpaceCandidate": {
+    "status": "single-anonymous-generation-succeeded-native-wav-and-playback-mp3-verified",
+    "model": "MiniMaxAI/MiniMax-Music3",
+    "space": "https://huggingface.co/spaces/MiniMaxAI/MiniMax-Music3",
+    "host": "https://minimaxai-minimax-music3.hf.space",
+    "runtimeStage": "RUNNING",
+    "runtimeSha": "929e40ed4e425518693ec955ced52aba5ea6c425",
+    "gradioVersion": "6.24.0",
+    "apiName": "/studio_generate",
+    "apiVisibility": "public",
+    "configAuthRequired": null,
+    "metadataHttp200": [
+      "https://huggingface.co/api/spaces/MiniMaxAI/MiniMax-Music3",
+      "https://minimaxai-minimax-music3.hf.space/config",
+      "https://minimaxai-minimax-music3.hf.space/gradio_api/info"
+    ],
+    "parameters": {
+      "state": {
+        "mode": "studio",
+        "description": "Scene-specific original instrumental description",
+        "instrumental": true,
+        "title": "Scene-specific original title",
+        "lyrics": "[instrumental]",
+        "global_meta": "Genre, BPM, key, mood progression and acoustic production",
+        "vocals": "Instrumental. No vocals, speech or choir.",
+        "arrangement": "Scene-specific instruments and four-part development"
+      },
+      "duration": 35,
+      "seed": 17,
+      "randomize_seed": false,
+      "headroom": 0,
+      "steps": 30,
+      "guidance": 1.7
+    },
+    "parameterNotes": "Duration slider uses 5..300 seconds with step 5. Duration is an upper bound; the actual 35-second request ended naturally at 29.942131519274376 seconds. The preserved native WAV was faded over its last 1 second and padded with 2.057868480725624 seconds of silence to exactly 32 decoded seconds for playback. Source handles instrumental section tags. Use studio_generate to supply the finished structured caption; simple_generate additionally invokes an LLM to compose lyrics and prompt.",
+    "result": "One anonymous generation completed. Event ID: 199eec3cebc1448ab96e9b5705120e0b. Native WAV is preserved at assets/music/shadow-minimax-full.wav. Verified 32-second decoded playback MP3 is at web/audio/shadow-minimax.mp3. Actual request, native output hash, level measurements and editing details are recorded in world-music-generation-v9.json. No second generation POST was made. Listening quality and browser animation synchronization have not been verified by this review.",
+    "quota": {
+      "unauthenticatedDailyGpuSeconds": 120,
+      "freeAccountDailyGpuSeconds": 300,
+      "spaceGpuSize": "xlarge",
+      "xlargeQuotaMultiplier": 2,
+      "sourceEstimatedGpuSecondsAt35Seconds30Steps": 48,
+      "estimatedQuotaSecondsAt35Seconds30Steps": 96,
+      "note": "These are documented tier limits and source-derived estimates, not a measured remaining quota. One anonymous track succeeded; three may require a signed-in free account or normal quota reset. No further generation was submitted, and remaining quota is unmeasured. Do not evade quotas or use paid overage."
+    },
+    "officialSources": [
+      "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+      "https://huggingface.co/spaces/MiniMaxAI/MiniMax-Music3/blob/main/app.py",
+      "https://huggingface.co/docs/hub/spaces-zerogpu"
+    ],
+    "minimumCondition": "This official Space successfully handled one anonymous generation. Further pieces still depend on normal remaining quota. If the runtime asks for login, terms acceptance or payment, stop at that actual boundary."
+  },
+  "selfHostedAlternative": {
+    "status": "not-prepared",
+    "model": "MiniMaxAI/MiniMax-Music3",
+    "apiWhenServed": "POST http://127.0.0.1:8000/v1/audio/speech",
+    "minimumConditions": "CUDA runtime, compatible SGLang-Omni or official Diffusers pipeline, sufficient GPU memory or CPU offload, local model download, and compliance with the model Community License. This is an installation/generation project rather than an API-region fix.",
+    "officialSources": [
+      "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+      "https://github.com/MiniMax-AI/MiniMax-Music3",
+      "https://huggingface.co/MiniMaxAI/MiniMax-Music3/blob/main/LICENSE"
+    ]
+  },
+  "remainingBlocker": "No new hosted-API entitlement has appeared, but official Space generation succeeded for the shadow scene. The gravity and moon pieces were not submitted because only one generation was authorized for this review and remaining anonymous quota is unmeasured. MiniMax Audio website still requires an authenticated user session and action-time terms handling before web generation."
+}

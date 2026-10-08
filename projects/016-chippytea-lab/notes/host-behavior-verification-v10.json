@@ -1,0 +1,523 @@
+{
+  "version": 10,
+  "kind": "component_and_audio_logic_simulation",
+  "mocked": true,
+  "browserVerification": false,
+  "visualVerification": false,
+  "actualAudioPlaybackVerified": false,
+  "source": "src/WorldExperience.tsx",
+  "sourceSha256": "1b1e77e9fa2f191c8211c56892624fd7a14ee9f3c8ed5079369a9fce99114edd",
+  "audioController": "src/WorldAudio.ts",
+  "audioControllerSha256": "10280db8428f93c3a1fc19b6527d41ae91249a9a6c5f1a5f6769b529d21d7c7f",
+  "musicConfiguration": {
+    "gravity": {
+      "name": "花园",
+      "src": "./audio/gravity-minimax.mp3"
+    },
+    "moon": {
+      "name": "月亮",
+      "src": null
+    },
+    "shadow": {
+      "name": "影子",
+      "src": "./audio/shadow-minimax.mp3"
+    }
+  },
+  "musicConfigurationSha256": "8365911cb2f8e7a2ce88f8607d361e4052180ab62b5cde1d3b1dbdd2aa69cd02",
+  "script": "tooling/verify-world-host.mjs",
+  "scriptSha256": "83917bab4b48dbab60ee3c0acec530df5e823d997c212ae047fc815540cc48d9",
+  "checkedAt": "2026-10-08T15:43:59.098Z",
+  "environment": "Node VM + mocked React hooks, Image, DOM, requestAnimationFrame, localStorage, HTMLAudioElement, AudioContext, controlled timeout timers and renderWorld; no real browser or audible playback",
+  "checks": [
+    {
+      "label": "v6 entry updates URL and visible edition to v10",
+      "passed": true
+    },
+    {
+      "label": "score configuration only points to actual local music files",
+      "passed": true,
+      "evidence": {
+        "gravity": {
+          "name": "花园",
+          "src": "./audio/gravity-minimax.mp3"
+        },
+        "moon": {
+          "name": "月亮",
+          "src": null
+        },
+        "shadow": {
+          "name": "影子",
+          "src": "./audio/shadow-minimax.mp3"
+        }
+      }
+    },
+    {
+      "label": "initial scene remains silent without constructing audio or an AudioContext",
+      "passed": true
+    },
+    {
+      "label": "explicit music button starts the actual configured media source and enables the score",
+      "passed": true
+    },
+    {
+      "label": "live frequency analyser uses FFT1024 and -90/-10 dB range",
+      "passed": true
+    },
+    {
+      "label": "shadow stage uses media.currentTime without adding the visual RAF delta",
+      "passed": true,
+      "evidence": {
+        "mediaTime": 6.875,
+        "stageTime": 6.875
+      }
+    },
+    {
+      "label": "normalised energy, low and high frequency bands reach the renderer",
+      "passed": true,
+      "evidence": {
+        "energy": 0.3682864450127872,
+        "low": 0.7058823529411765,
+        "high": 0.3529411764705874
+      }
+    },
+    {
+      "label": "pause freezes both clocks and sends zero frequency bands",
+      "passed": true
+    },
+    {
+      "label": "resume continues music from the same position",
+      "passed": true
+    },
+    {
+      "label": "manual timeline seek pauses and updates audio and visual time together",
+      "passed": true
+    },
+    {
+      "label": "chapter selection resumes the score from the chosen chapter",
+      "passed": true
+    },
+    {
+      "label": "replay resets media and stage together",
+      "passed": true
+    },
+    {
+      "label": "disabling music returns to visual clock at the preserved media position",
+      "passed": true
+    },
+    {
+      "label": "visual clock continues after music is disabled",
+      "passed": true
+    },
+    {
+      "label": "a rejected playback promise returns to silence with an explicit retry message",
+      "passed": true
+    },
+    {
+      "label": "media decoding error disables the score and continues silent animation",
+      "passed": true
+    },
+    {
+      "label": "scene switch uses only the configured score; ungenerated scenes remain explicitly silent",
+      "passed": true,
+      "evidence": {
+        "configuredScore": {
+          "name": "月亮",
+          "src": null
+        }
+      }
+    },
+    {
+      "label": "returning to shadow may resume a previously user-enabled score from its opening",
+      "passed": true
+    },
+    {
+      "label": "background visibility pauses the score and stage clock",
+      "passed": true
+    },
+    {
+      "label": "foreground visibility resumes a playing score",
+      "passed": true
+    },
+    {
+      "label": "live reduced-motion switch pauses sound and holds the stage static",
+      "passed": true
+    },
+    {
+      "label": "leaving reduced mode does not resume sound automatically",
+      "passed": true
+    },
+    {
+      "label": "ended music settles at final tableau with zero bands",
+      "passed": true
+    },
+    {
+      "label": "playlist begins in gravity without leaking the shadow soundtrack",
+      "passed": true,
+      "evidence": {
+        "configuredScore": {
+          "name": "花园",
+          "src": "./audio/gravity-minimax.mp3"
+        }
+      }
+    },
+    {
+      "label": "playlist keeps gravity finale for at least 3.5 seconds",
+      "passed": true
+    },
+    {
+      "label": "late collection dialogue finishes before the next playlist scene",
+      "passed": true
+    },
+    {
+      "label": "playlist moves from gravity to moon after the late reply",
+      "passed": true
+    },
+    {
+      "label": "playlist reaches shadow and plays only the previously user-enabled soundtrack",
+      "passed": true
+    },
+    {
+      "label": "pausing a musical playlist finale freezes its hold timer",
+      "passed": true
+    },
+    {
+      "label": "resuming a truly ended playlist finale never calls play or rewinds the media",
+      "passed": true,
+      "evidence": {
+        "playCallsBefore": 4,
+        "playCallsAfter": 4,
+        "mediaTime": 32
+      }
+    },
+    {
+      "label": "the musical playlist ends on the shadow tableau and never loops",
+      "passed": true,
+      "evidence": {
+        "visits": [
+          "shadow",
+          "gravity",
+          "moon",
+          "shadow",
+          "gravity",
+          "moon"
+        ]
+      }
+    },
+    {
+      "label": "manual seek cancels playlist and pauses it",
+      "passed": true
+    },
+    {
+      "label": "manual chapter selection cancels playlist and plays selected chapter",
+      "passed": true
+    },
+    {
+      "label": "manual replay cancels playlist",
+      "passed": true
+    },
+    {
+      "label": "manual scene switch cancels playlist and starts the selected scene",
+      "passed": true
+    },
+    {
+      "label": "theater toggle preserves aria-pressed behavior",
+      "passed": true
+    },
+    {
+      "label": "initial reduced mode constructs no audio and disables playlist/music",
+      "passed": true
+    },
+    {
+      "label": "static manual chapter selection remains available",
+      "passed": true
+    },
+    {
+      "label": "a stale pending playback promise cannot restart the previous score after a scene switch",
+      "passed": true,
+      "evidence": {
+        "requestedAt": 0,
+        "configuredScore": {
+          "name": "月亮",
+          "src": null
+        }
+      }
+    },
+    {
+      "label": "continuous pointer movement does not reset action age and the gesture reaches idle",
+      "passed": true,
+      "evidence": {
+        "actionAge": "4.00",
+        "actionPhase": "idle",
+        "interactions": "1"
+      }
+    },
+    {
+      "label": "dragging in a paused tableau preserves the paused show clock",
+      "passed": true
+    },
+    {
+      "label": "delayed metadata keeps the requested media position available instead of rewinding to zero",
+      "passed": true,
+      "evidence": {
+        "stageTime": 12.35,
+        "readyState": 0
+      }
+    },
+    {
+      "label": "metadata arrival applies the outstanding seek before normal musical playback",
+      "passed": true,
+      "evidence": {
+        "mediaTime": 12.45,
+        "stageTime": 12.45
+      }
+    },
+    {
+      "label": "preparing score remains pending before the configured fifteen second deadline",
+      "passed": true
+    },
+    {
+      "label": "an unresolved play promise times out to explicit silent fallback",
+      "passed": true,
+      "evidence": {
+        "stageTime": 0.5,
+        "message": "配乐暂时没能播放，已继续静音演出。可以再试一次。"
+      }
+    },
+    {
+      "label": "visual performance advances again after preparing music times out",
+      "passed": true
+    },
+    {
+      "label": "a timed out playback promise cannot revive old sound when it eventually resolves",
+      "passed": true
+    },
+    {
+      "label": "waiting without media progress also falls back after fifteen seconds",
+      "passed": true
+    },
+    {
+      "label": "repeated waiting or stalled events cannot extend a fifteen second no-progress deadline",
+      "passed": true
+    },
+    {
+      "label": "real playback recovery clears the previous waiting deadline",
+      "passed": true
+    },
+    {
+      "label": "source load resets old media position and reuses the single audio graph",
+      "passed": true,
+      "evidence": {
+        "loadCalls": 1,
+        "mediaTime": 0.1
+      }
+    },
+    {
+      "label": "stale old play completion cannot revive the shadow score over the new garden score",
+      "passed": true
+    },
+    {
+      "label": "entering plant selection cancels playlist and pauses visual and available musical clocks",
+      "passed": true,
+      "evidence": {
+        "timeBefore": 0.5,
+        "timeAfter": 0.5,
+        "playlist": "false"
+      }
+    },
+    {
+      "label": "a planted discovery completes its independent feedback while the stable show remains paused",
+      "passed": true,
+      "evidence": {
+        "captureAge": 2.9000000000000012,
+        "stageTime": 0.5
+      }
+    },
+    {
+      "label": "arming a planting location neither collects nor changes the show time",
+      "passed": true
+    },
+    {
+      "label": "Escape cancels planting mode without leaving a plot",
+      "passed": true
+    },
+    {
+      "label": "plant location preview does not save before pointer release",
+      "passed": true
+    },
+    {
+      "label": "pointer release plants one saved location during the final act",
+      "passed": true,
+      "evidence": {
+        "plots": [
+          {
+            "x": 0.55,
+            "y": 0.765
+          }
+        ],
+        "stored": [
+          {
+            "x": 0.55,
+            "y": 0.765
+          }
+        ]
+      }
+    },
+    {
+      "label": "keyboard Enter commits a planting location and exits selection",
+      "passed": true
+    },
+    {
+      "label": "garden keeps only the most recent four valid saved positions",
+      "passed": true,
+      "evidence": {
+        "plots": [
+          {
+            "x": 0.39,
+            "y": 0.73
+          },
+          {
+            "x": 0.66,
+            "y": 0.765
+          },
+          {
+            "x": 0.39,
+            "y": 0.73
+          },
+          {
+            "x": 0.66,
+            "y": 0.765
+          }
+        ],
+        "stored": [
+          {
+            "x": 0.39,
+            "y": 0.73
+          },
+          {
+            "x": 0.66,
+            "y": 0.765
+          },
+          {
+            "x": 0.39,
+            "y": 0.73
+          },
+          {
+            "x": 0.66,
+            "y": 0.765
+          }
+        ]
+      }
+    },
+    {
+      "label": "out of bounds clicks are clamped into the actual garden planting safe area",
+      "passed": true,
+      "evidence": [
+        {
+          "x": 0.39,
+          "y": 0.73
+        },
+        {
+          "x": 0.66,
+          "y": 0.765
+        },
+        {
+          "x": 0.39,
+          "y": 0.73
+        },
+        {
+          "x": 0.66,
+          "y": 0.765
+        }
+      ]
+    },
+    {
+      "label": "reloading restores the actual four planted positions rather than only a count",
+      "passed": true,
+      "evidence": [
+        {
+          "x": 0.39,
+          "y": 0.73
+        },
+        {
+          "x": 0.66,
+          "y": 0.765
+        },
+        {
+          "x": 0.39,
+          "y": 0.73
+        },
+        {
+          "x": 0.66,
+          "y": 0.765
+        }
+      ]
+    },
+    {
+      "label": "legacy count-only records remain usable with three safe fallback plots",
+      "passed": true,
+      "evidence": {
+        "count": 3,
+        "plots": [
+          {
+            "x": 0.414,
+            "y": 0.747
+          },
+          {
+            "x": 0.49,
+            "y": 0.755
+          },
+          {
+            "x": 0.565,
+            "y": 0.747
+          }
+        ]
+      }
+    },
+    {
+      "label": "malformed garden records are filtered or safely clamped without breaking the host",
+      "passed": true,
+      "evidence": [
+        {
+          "x": 0.39,
+          "y": 0.765
+        },
+        {
+          "x": 0.55,
+          "y": 0.765
+        }
+      ]
+    },
+    {
+      "label": "planting inversely projects the visible pointer through camera zoom and pan",
+      "passed": true,
+      "evidence": {
+        "targetPoint": {
+          "x": 0.55,
+          "y": 0.75
+        },
+        "screenPoint": {
+          "x": 0.5599495176005614,
+          "y": 0.760634765625
+        },
+        "actual": {
+          "x": 0.55,
+          "y": 0.75
+        }
+      }
+    },
+    {
+      "label": "cancelled pointer selection never commits an extra plant",
+      "passed": true
+    },
+    {
+      "label": "scene switching cancels location selection while preserving saved plants",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "Browser autoplay policy, physical sound output, real decoder timing, fonts/layout, pointer routing, Canvas imagery and persistence across real reloads are not verified by these mocks.",
+    "Real media existence, MP3 decoding, non-silence and generation provenance are recorded separately in notes/world-music-generation-v9.json and subsequent music generation records.",
+    "Ended playback, metadata loading, source load and timeout behavior are modeled explicitly; these checks still do not constitute browser media validation."
+  ]
+}

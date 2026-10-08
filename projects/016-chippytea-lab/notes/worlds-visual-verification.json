@@ -1,0 +1,1778 @@
+{
+  "version": 10,
+  "kind": "offline-renderer-real-music-files-and-mocked-host-verification",
+  "visualStatus": "blocked",
+  "browserStatus": "blocked",
+  "browserReason": "CUA getState: node_repl kernel exited unexpectedly; windows sandbox failed: helper_unknown_error: setup refresh had errors. No v10 browser screenshots or audible playback evidence.",
+  "offlineRendererStatus": "passed",
+  "mockedHostStatus": "passed",
+  "actualBrowserAudioPlaybackVerified": false,
+  "musicStatus": {
+    "gravity": "generated_and_integrated",
+    "shadow": "generated_v9_and_retained",
+    "moon": "pending; single v10 request rejected by free ZeroGPU quota"
+  },
+  "source": "src/WorldScenes.ts",
+  "sourceSha256": "96fbebe9c74f87b61d92bdb65be9c502d826429a74072f885bb4ea80cada2181",
+  "sourceMatches": true,
+  "hostSource": "src/WorldExperience.tsx",
+  "hostSourceSha256": "e4980d2ea5df05b45b304d2965021e839bdb177d33196ee161846d7173173eca",
+  "audioController": "src/WorldAudio.ts",
+  "audioControllerSha256": "10280db8428f93c3a1fc19b6527d41ae91249a9a6c5f1a5f6769b529d21d7c7f",
+  "renderToolSha256": "e907b82e07551a40f17520aa3dd2aa63f3f5dc7e95abd2647d0a2eef4a4dfa7d",
+  "stylesheetSha256": "0fe9953db397fe9eef6afb44a4268ddf8aa3e3d4c736db6a63449dc34a90eb4f",
+  "assets": 29,
+  "newAssets": 0,
+  "assetHashesMatch": true,
+  "assetSetSha256": "b82b268233015db15a0181ebf2f1fb661e4b6d7672f5ccea7965d6ef929d5c14",
+  "assetSetHashConvention": "SHA256 of UTF-8 canonical JSON assetSources with sorted keys and compact separators",
+  "counts": {
+    "frames": 160,
+    "behaviorProbes": 133,
+    "offlineChecks": 59,
+    "contactSheets": 32,
+    "silentAnimations": 3,
+    "musicalPreviews": 2,
+    "assetSources": 29,
+    "mockedHostAudioChecks": 67
+  },
+  "offlineChecks": [
+    {
+      "label": "response-pose-visible",
+      "scene": "gravity",
+      "asset": "stone-proud",
+      "passed": true,
+      "evidence": [
+        "gravity-desktop-action-beat-4-offline.png",
+        "gravity-desktop-capture-beat-3-offline.png",
+        "gravity-desktop-germination-3-offline.png",
+        "gravity-desktop-germination-4-offline.png",
+        "gravity-mobile-action-beat-4-offline.png",
+        "gravity-mobile-capture-beat-3-offline.png",
+        "gravity-mobile-germination-3-offline.png",
+        "gravity-mobile-germination-4-offline.png"
+      ]
+    },
+    {
+      "label": "action-pose-visible",
+      "scene": "gravity",
+      "asset": "stone-awake",
+      "passed": true,
+      "evidence": [
+        "gravity-desktop-act-2-offline.png",
+        "gravity-desktop-act-3-offline.png",
+        "gravity-desktop-transition-15s-offline.png",
+        "gravity-desktop-transition-26s-offline.png",
+        "gravity-mobile-act-2-offline.png",
+        "gravity-mobile-act-3-offline.png",
+        "gravity-mobile-transition-15s-offline.png",
+        "gravity-mobile-transition-26s-offline.png",
+        "gravity-desktop-action-beat-3-offline.png",
+        "gravity-desktop-edge-left-offline.png",
+        "gravity-desktop-edge-right-offline.png",
+        "gravity-mobile-action-beat-3-offline.png",
+        "gravity-mobile-edge-left-offline.png",
+        "gravity-mobile-edge-right-offline.png"
+      ]
+    },
+    {
+      "label": "action-pose-visible",
+      "scene": "gravity",
+      "asset": "wind-gust",
+      "passed": true,
+      "evidence": [
+        "gravity-desktop-act-2-offline.png",
+        "gravity-desktop-transition-15s-offline.png",
+        "gravity-mobile-act-2-offline.png",
+        "gravity-mobile-transition-15s-offline.png",
+        "gravity-desktop-action-beat-2-offline.png",
+        "gravity-desktop-edge-left-offline.png",
+        "gravity-desktop-edge-right-offline.png",
+        "gravity-mobile-action-beat-2-offline.png",
+        "gravity-mobile-edge-left-offline.png",
+        "gravity-mobile-edge-right-offline.png"
+      ]
+    },
+    {
+      "label": "finale-background-visible",
+      "scene": "gravity",
+      "passed": true,
+      "evidence": [
+        {
+          "file": "gravity-desktop-act-4-offline.png",
+          "visibleBackgrounds": [
+            "background",
+            "background-finale"
+          ]
+        },
+        {
+          "file": "gravity-mobile-act-4-offline.png",
+          "visibleBackgrounds": [
+            "background",
+            "background-finale"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "finale-partner-visible",
+      "scene": "gravity",
+      "asset": "wind-rest",
+      "passed": true,
+      "evidence": [
+        {
+          "file": "gravity-desktop-act-4-offline.png",
+          "partnerPose": "wind-rest",
+          "visibleAssets": [
+            "tree",
+            "stone",
+            "wind-rest",
+            "seed"
+          ]
+        },
+        {
+          "file": "gravity-mobile-act-4-offline.png",
+          "partnerPose": "wind-rest",
+          "visibleAssets": [
+            "tree",
+            "stone",
+            "wind-rest",
+            "seed"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "saved-count-changes-finale",
+      "scene": "gravity",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "finale-count-0",
+          "pixelSha256": "b9c567124e3fb58b51e75ba70216c710a98b756201876b011ca7ebb4230b566e",
+          "partnerPose": "wind-rest",
+          "visibleAssets": [
+            "stone",
+            "wind-rest",
+            "tree",
+            "seed"
+          ]
+        },
+        {
+          "label": "finale-count-8",
+          "pixelSha256": "5a984646072617f8687f3009c062c3bbab7fbb41e2be5397f6e3a1242d54ef6c",
+          "partnerPose": "wind-rest",
+          "visibleAssets": [
+            "tree",
+            "stone",
+            "wind-rest",
+            "seed"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "held-drag-responds-after-action-finishes",
+      "scene": "gravity",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "held-drag-left",
+          "x": 0.15,
+          "age": 5,
+          "pixelSha256": "8f8c4e06e59d54bd4eea6ab9166e27545be635f712be88146ab7c946d6a994f0"
+        },
+        {
+          "label": "held-drag-right",
+          "x": 0.9,
+          "age": 5,
+          "pixelSha256": "8cf0de898e458f470612ba818de6b66a0d7d141c5ef421f4dafa8fb31beeb6a4"
+        }
+      ]
+    },
+    {
+      "label": "delayed-recipient-replies",
+      "scene": "gravity",
+      "recipient": "pose",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "partner-reaction-age-005",
+          "pixelSha256": "9bc722337576548fc88734b1ada0955458b8065832b8bea396587994f6b9bd3c",
+          "recipientPose": "stone",
+          "visibleAssets": [
+            "tree",
+            "stone",
+            "wind",
+            "seed"
+          ]
+        },
+        {
+          "label": "partner-reaction-age-150",
+          "pixelSha256": "dff32d602da1d68f480eb1abb8131393e3890d88a40da4e48a6710699b93a28f",
+          "recipientPose": "stone-awake",
+          "visibleAssets": [
+            "tree",
+            "stone-awake",
+            "wind",
+            "seed"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "action-has-four-stages-and-idle",
+      "scene": "gravity",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "action-age-0.12",
+          "actionPhase": "prepare"
+        },
+        {
+          "label": "action-age-0.7",
+          "actionPhase": "act"
+        },
+        {
+          "label": "action-age-1.5",
+          "actionPhase": "reply"
+        },
+        {
+          "label": "action-age-2.8",
+          "actionPhase": "settle"
+        },
+        {
+          "label": "action-age-4",
+          "actionPhase": "idle"
+        }
+      ]
+    },
+    {
+      "label": "collection-visible-in-every-act",
+      "scene": "gravity",
+      "act": 1,
+      "passed": true,
+      "evidence": [
+        {
+          "label": "capture-act-1-before",
+          "pixelSha256": "e1ad6fc1e485b367b817f0d6f33c4f1cd2f49996b6c47f8f6f2483225fff3a1a",
+          "capturePhase": "complete"
+        },
+        {
+          "label": "capture-act-1-during",
+          "pixelSha256": "2c89d42d225d5b7cd3ff34eef79617f01872f8cc8fda691c6ca92c800b4720e5",
+          "capturePhase": "fly"
+        }
+      ]
+    },
+    {
+      "label": "collection-visible-in-every-act",
+      "scene": "gravity",
+      "act": 2,
+      "passed": true,
+      "evidence": [
+        {
+          "label": "capture-act-2-before",
+          "pixelSha256": "0fbd315decda84b941cde59043ee2ef0c0e12d2a7b5e482509fde74be19d0407",
+          "capturePhase": "complete"
+        },
+        {
+          "label": "capture-act-2-during",
+          "pixelSha256": "9355a7ad3f34b74e21be2db5380c75087e57aae0438aafc34c98d2c3003e15a2",
+          "capturePhase": "fly"
+        }
+      ]
+    },
+    {
+      "label": "collection-visible-in-every-act",
+      "scene": "gravity",
+      "act": 3,
+      "passed": true,
+      "evidence": [
+        {
+          "label": "capture-act-3-before",
+          "pixelSha256": "55404167aa70b44d648285931175165aae59d27a02788227e8412636f6cd9018",
+          "capturePhase": "complete"
+        },
+        {
+          "label": "capture-act-3-during",
+          "pixelSha256": "009568e6ff5d1e99bfb3a5fcb40f01be68d01d63e3de5f7c96b49b07a5df11f3",
+          "capturePhase": "fly"
+        }
+      ]
+    },
+    {
+      "label": "collection-visible-in-every-act",
+      "scene": "gravity",
+      "act": 4,
+      "passed": true,
+      "evidence": [
+        {
+          "label": "capture-act-4-before",
+          "pixelSha256": "0854cd348e8ece4970127ac10fbf119585e99d01c9d1d50be84f7f5152e31897",
+          "capturePhase": "complete"
+        },
+        {
+          "label": "capture-act-4-during",
+          "pixelSha256": "90e8a3f9dcd0139bbc52f898756427db444b38a730ab1f1d090c2a8005ebf9e2",
+          "capturePhase": "fly"
+        }
+      ]
+    },
+    {
+      "label": "collection-progresses-and-settles",
+      "scene": "gravity",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "capture-age-0.12",
+          "pixelSha256": "5d27f5763542b06e2e85fabb9ed59a85aed76af100b3a4b678165ba055c929ae",
+          "captureProgress": 0.006193900773782429,
+          "capturePhase": "lift"
+        },
+        {
+          "label": "capture-age-0.7",
+          "pixelSha256": "f82b97fd4b47adba28ef290f6b17c756090eee98ae9d9ad3f91e5fb398fd89ae",
+          "captureProgress": 0.1784251251706873,
+          "capturePhase": "fly"
+        },
+        {
+          "label": "capture-age-1.5",
+          "pixelSha256": "559bd43bd6eb98a85390c15c0275884551e94024d65c962ab7d5df4efbb32200",
+          "captureProgress": 0.6144742831133363,
+          "capturePhase": "fly"
+        },
+        {
+          "label": "capture-age-2.8",
+          "pixelSha256": "a028baa53f046c98935fe13daaaebf6af224db88134f8257ad96b4180bab16b9",
+          "captureProgress": 1,
+          "capturePhase": "complete"
+        },
+        {
+          "label": "capture-age-4",
+          "pixelSha256": "a028baa53f046c98935fe13daaaebf6af224db88134f8257ad96b4180bab16b9",
+          "captureProgress": 1,
+          "capturePhase": "complete"
+        }
+      ]
+    },
+    {
+      "label": "audio-signal-affects-gravity",
+      "scene": "gravity",
+      "passed": true,
+      "note": "Artificial input probes test optional signal rendering; not actual browser audio evidence."
+    },
+    {
+      "label": "reduced-motion-ignores-audio",
+      "scene": "gravity",
+      "passed": true
+    },
+    {
+      "label": "collection-grows-persistent-saplings",
+      "scene": "gravity",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "growth-count-0",
+          "growthStage": 0
+        },
+        {
+          "label": "growth-count-1",
+          "growthStage": 3
+        },
+        {
+          "label": "growth-count-2",
+          "growthStage": 3
+        },
+        {
+          "label": "growth-count-3",
+          "growthStage": 3
+        },
+        {
+          "label": "growth-count-4",
+          "growthStage": 3
+        }
+      ]
+    },
+    {
+      "label": "new-plant-germinates-unfolds-and-settles",
+      "scene": "gravity",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "germination-age-1.2",
+          "phase": "seed",
+          "plant": {
+            "x": 0.62,
+            "y": 0.75,
+            "growth": 0,
+            "width": 31.360000000000003,
+            "latest": true
+          }
+        },
+        {
+          "label": "germination-age-1.5",
+          "phase": "sprout",
+          "plant": {
+            "x": 0.62,
+            "y": 0.75,
+            "growth": 0.060749999999999936,
+            "width": 31.360000000000003,
+            "latest": true
+          }
+        },
+        {
+          "label": "germination-age-1.95",
+          "phase": "unfold",
+          "plant": {
+            "x": 0.62,
+            "y": 0.75,
+            "growth": 0.6479999999999998,
+            "width": 76.32313154301319,
+            "latest": true
+          }
+        },
+        {
+          "label": "germination-age-2.45",
+          "phase": "settle",
+          "plant": {
+            "x": 0.62,
+            "y": 0.75,
+            "growth": 1,
+            "width": 112,
+            "latest": true
+          }
+        },
+        {
+          "label": "germination-age-2.8",
+          "phase": "settled",
+          "plant": {
+            "x": 0.62,
+            "y": 0.75,
+            "growth": 1,
+            "width": 112,
+            "latest": true
+          }
+        }
+      ]
+    },
+    {
+      "label": "chosen-plot-changes-persistent-world",
+      "scene": "gravity",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "chosen-plot-left",
+          "plant": {
+            "x": 0.43,
+            "y": 0.75,
+            "growth": 1,
+            "width": 112,
+            "latest": true
+          },
+          "pixelSha256": "85ee5d880b14b2cab3f496ec11b1fbf909707dcd31d073020f1a3afa462d8f7b"
+        },
+        {
+          "label": "chosen-plot-right",
+          "plant": {
+            "x": 0.61,
+            "y": 0.75,
+            "growth": 1,
+            "width": 112,
+            "latest": true
+          },
+          "pixelSha256": "c59f98e2ac6b166e56f8823a395f435e5a0ce90a55e26e1c5824561f9f03ad5a"
+        }
+      ]
+    },
+    {
+      "label": "fifth-collection-keeps-surviving-plants-grown",
+      "scene": "gravity",
+      "passed": true,
+      "evidence": [
+        {
+          "x": 0.49,
+          "y": 0.75,
+          "growth": 1,
+          "width": 112,
+          "latest": false
+        },
+        {
+          "x": 0.56,
+          "y": 0.745,
+          "growth": 1,
+          "width": 112,
+          "latest": false
+        },
+        {
+          "x": 0.62,
+          "y": 0.75,
+          "growth": 1,
+          "width": 112,
+          "latest": false
+        },
+        {
+          "x": 0.45,
+          "y": 0.755,
+          "growth": 0.060749999999999936,
+          "width": 31.360000000000003,
+          "latest": true
+        }
+      ]
+    },
+    {
+      "label": "preview-does-not-plant-or-increment-count",
+      "scene": "gravity",
+      "passed": true,
+      "evidence": {
+        "plants": [
+          {
+            "x": 0.43,
+            "y": 0.75,
+            "growth": 1,
+            "width": 112,
+            "latest": true
+          }
+        ],
+        "preview": {
+          "x": 0.61,
+          "y": 0.75
+        }
+      }
+    },
+    {
+      "label": "plant-and-preview-roots-stay-on-safe-island",
+      "scene": "gravity",
+      "passed": true,
+      "evidence": {
+        "plants": [
+          {
+            "x": 0.39,
+            "y": 0.765,
+            "growth": 1,
+            "width": 96,
+            "latest": false
+          },
+          {
+            "x": 0.66,
+            "y": 0.73,
+            "growth": 1,
+            "width": 96,
+            "latest": true
+          }
+        ],
+        "preview": {
+          "x": 0.66,
+          "y": 0.765
+        }
+      }
+    },
+    {
+      "label": "response-pose-visible",
+      "scene": "moon",
+      "asset": "moon-content",
+      "passed": true,
+      "evidence": [
+        "moon-desktop-act-4-offline.png",
+        "moon-mobile-act-4-offline.png",
+        "moon-desktop-capture-beat-3-offline.png",
+        "moon-desktop-stitch-detail-1-offline.png",
+        "moon-desktop-stitch-detail-2-offline.png",
+        "moon-desktop-stitch-detail-3-offline.png",
+        "moon-mobile-capture-beat-3-offline.png",
+        "moon-mobile-stitch-detail-1-offline.png",
+        "moon-mobile-stitch-detail-2-offline.png",
+        "moon-mobile-stitch-detail-3-offline.png"
+      ]
+    },
+    {
+      "label": "action-pose-visible",
+      "scene": "moon",
+      "asset": "tailor-chase",
+      "passed": true,
+      "evidence": [
+        "moon-desktop-act-2-offline.png",
+        "moon-desktop-act-3-offline.png",
+        "moon-desktop-transition-15s-offline.png",
+        "moon-mobile-act-2-offline.png",
+        "moon-mobile-act-3-offline.png",
+        "moon-mobile-transition-15s-offline.png",
+        "moon-desktop-action-beat-3-offline.png",
+        "moon-desktop-capture-beat-3-offline.png",
+        "moon-desktop-edge-left-offline.png",
+        "moon-desktop-edge-right-offline.png",
+        "moon-desktop-stitch-detail-1-offline.png",
+        "moon-desktop-stitch-detail-2-offline.png",
+        "moon-desktop-stitch-detail-3-offline.png",
+        "moon-mobile-action-beat-3-offline.png",
+        "moon-mobile-capture-beat-3-offline.png",
+        "moon-mobile-edge-left-offline.png",
+        "moon-mobile-edge-right-offline.png",
+        "moon-mobile-stitch-detail-1-offline.png",
+        "moon-mobile-stitch-detail-2-offline.png",
+        "moon-mobile-stitch-detail-3-offline.png"
+      ]
+    },
+    {
+      "label": "action-pose-visible",
+      "scene": "moon",
+      "asset": "moon-hiccup",
+      "passed": true,
+      "evidence": [
+        "moon-desktop-act-2-offline.png",
+        "moon-desktop-transition-15s-offline.png",
+        "moon-mobile-act-2-offline.png",
+        "moon-mobile-transition-15s-offline.png",
+        "moon-desktop-action-beat-2-offline.png",
+        "moon-desktop-edge-left-offline.png",
+        "moon-desktop-edge-right-offline.png",
+        "moon-mobile-action-beat-2-offline.png",
+        "moon-mobile-edge-left-offline.png",
+        "moon-mobile-edge-right-offline.png"
+      ]
+    },
+    {
+      "label": "finale-background-visible",
+      "scene": "moon",
+      "passed": true,
+      "evidence": [
+        {
+          "file": "moon-desktop-act-4-offline.png",
+          "visibleBackgrounds": [
+            "background",
+            "background-finale"
+          ]
+        },
+        {
+          "file": "moon-mobile-act-4-offline.png",
+          "visibleBackgrounds": [
+            "background",
+            "background-finale"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "finale-partner-visible",
+      "scene": "moon",
+      "asset": "tailor-proud",
+      "passed": true,
+      "evidence": [
+        {
+          "file": "moon-desktop-act-4-offline.png",
+          "partnerPose": "tailor-proud",
+          "visibleAssets": [
+            "thread",
+            "tailor-proud",
+            "moon-content",
+            "patch"
+          ]
+        },
+        {
+          "file": "moon-mobile-act-4-offline.png",
+          "partnerPose": "tailor-proud",
+          "visibleAssets": [
+            "thread",
+            "tailor-proud",
+            "moon-content",
+            "patch"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "saved-count-changes-finale",
+      "scene": "moon",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "finale-count-0",
+          "pixelSha256": "8c3c8e94a236af352097a8f4f9b5da3ddb94d100bdac0f6edfddb2c0d55b3fc8",
+          "partnerPose": "tailor-proud",
+          "visibleAssets": [
+            "thread",
+            "tailor-proud",
+            "moon",
+            "patch"
+          ]
+        },
+        {
+          "label": "finale-count-8",
+          "pixelSha256": "4e0f1c3fc2ce01a226ee004492478aaa8c17e067d1d5c2041e43c2980a2668a5",
+          "partnerPose": "tailor-proud",
+          "visibleAssets": [
+            "thread",
+            "tailor-proud",
+            "moon-content",
+            "patch"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "held-drag-responds-after-action-finishes",
+      "scene": "moon",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "held-drag-left",
+          "x": 0.15,
+          "age": 5,
+          "pixelSha256": "d6ebb2969e85956e6d85c28c83ccacf53eab06bc4e147edf2a9f74c029242106"
+        },
+        {
+          "label": "held-drag-right",
+          "x": 0.9,
+          "age": 5,
+          "pixelSha256": "e561302bad6c8e0a585998a9c0c35ea633a895a05312296501c4c238ad769bc8"
+        }
+      ]
+    },
+    {
+      "label": "delayed-recipient-replies",
+      "scene": "moon",
+      "recipient": "partnerPose",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "partner-reaction-age-005",
+          "pixelSha256": "c13bc1db400feac520d98864b901a1cbeafa7a2000f9db822b8e1d7a2136085b",
+          "recipientPose": "tailor",
+          "visibleAssets": [
+            "thread",
+            "tailor",
+            "moon",
+            "patch"
+          ]
+        },
+        {
+          "label": "partner-reaction-age-150",
+          "pixelSha256": "e1d6a328ca56971955e4ae5fdeadc44da31426b5bbaeacf26a20be4be22614c0",
+          "recipientPose": "tailor-chase",
+          "visibleAssets": [
+            "thread",
+            "tailor-chase",
+            "moon",
+            "patch"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "action-has-four-stages-and-idle",
+      "scene": "moon",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "action-age-0.12",
+          "actionPhase": "prepare"
+        },
+        {
+          "label": "action-age-0.7",
+          "actionPhase": "act"
+        },
+        {
+          "label": "action-age-1.5",
+          "actionPhase": "reply"
+        },
+        {
+          "label": "action-age-2.8",
+          "actionPhase": "settle"
+        },
+        {
+          "label": "action-age-4",
+          "actionPhase": "idle"
+        }
+      ]
+    },
+    {
+      "label": "collection-visible-in-every-act",
+      "scene": "moon",
+      "act": 1,
+      "passed": true,
+      "evidence": [
+        {
+          "label": "capture-act-1-before",
+          "pixelSha256": "8679a688d4717f8eb92f3b4979612fd9aeb50ac7fd140e80663bf016161b0716",
+          "capturePhase": "complete"
+        },
+        {
+          "label": "capture-act-1-during",
+          "pixelSha256": "77fd4032433d0d7e348e9bd3a00a7e23a52a3589974bdfb287307034e9aedcfc",
+          "capturePhase": "fly"
+        }
+      ]
+    },
+    {
+      "label": "collection-visible-in-every-act",
+      "scene": "moon",
+      "act": 2,
+      "passed": true,
+      "evidence": [
+        {
+          "label": "capture-act-2-before",
+          "pixelSha256": "b09b4980689f7d3099210c0edcefdc83b38ef1c84af6eb02b3fac43ab508bb11",
+          "capturePhase": "complete"
+        },
+        {
+          "label": "capture-act-2-during",
+          "pixelSha256": "fff1d2c2dc64ae61be8579a6f87e206767848ee01b299cd4f56abe2360053c1c",
+          "capturePhase": "fly"
+        }
+      ]
+    },
+    {
+      "label": "collection-visible-in-every-act",
+      "scene": "moon",
+      "act": 3,
+      "passed": true,
+      "evidence": [
+        {
+          "label": "capture-act-3-before",
+          "pixelSha256": "967a086c4c0d1730a9f45c562098996616286074b2a017b66d6ba6c51e406d1f",
+          "capturePhase": "complete"
+        },
+        {
+          "label": "capture-act-3-during",
+          "pixelSha256": "994a59d72283583fe4eec9ee5de5e5139c72bfa371336519c6fa2217a8972ab1",
+          "capturePhase": "fly"
+        }
+      ]
+    },
+    {
+      "label": "collection-visible-in-every-act",
+      "scene": "moon",
+      "act": 4,
+      "passed": true,
+      "evidence": [
+        {
+          "label": "capture-act-4-before",
+          "pixelSha256": "2593945b07988fcbc6abd39f8af74985a9b80480cf143869dacb291a524dea62",
+          "capturePhase": "complete"
+        },
+        {
+          "label": "capture-act-4-during",
+          "pixelSha256": "08d3b0b1cd5b1924f9cf5d2adfb4e943e326853203f6a522f5d112fd0342f2ac",
+          "capturePhase": "fly"
+        }
+      ]
+    },
+    {
+      "label": "collection-progresses-and-settles",
+      "scene": "moon",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "capture-age-0.12",
+          "pixelSha256": "c32c08d3bd1a816b9d7b354bc9ef8b4695f35332e632684dfcab4727d76aae79",
+          "captureProgress": 0.006193900773782429,
+          "capturePhase": "lift"
+        },
+        {
+          "label": "capture-age-0.7",
+          "pixelSha256": "77fd4032433d0d7e348e9bd3a00a7e23a52a3589974bdfb287307034e9aedcfc",
+          "captureProgress": 0.1784251251706873,
+          "capturePhase": "fly"
+        },
+        {
+          "label": "capture-age-1.5",
+          "pixelSha256": "76e5475a70ef66ade36075caba695a388f049546edaa043f01163451732275bd",
+          "captureProgress": 0.6144742831133363,
+          "capturePhase": "fly"
+        },
+        {
+          "label": "capture-age-2.8",
+          "pixelSha256": "8679a688d4717f8eb92f3b4979612fd9aeb50ac7fd140e80663bf016161b0716",
+          "captureProgress": 1,
+          "capturePhase": "complete"
+        },
+        {
+          "label": "capture-age-4",
+          "pixelSha256": "8679a688d4717f8eb92f3b4979612fd9aeb50ac7fd140e80663bf016161b0716",
+          "captureProgress": 1,
+          "capturePhase": "complete"
+        }
+      ]
+    },
+    {
+      "label": "three-stitches-evolve",
+      "scene": "moon",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "stitch-age-1.76",
+          "stitchStage": 1
+        },
+        {
+          "label": "stitch-age-2.12",
+          "stitchStage": 2
+        },
+        {
+          "label": "stitch-age-2.28",
+          "stitchStage": 3
+        },
+        {
+          "label": "stitch-age-2.58",
+          "stitchStage": 3
+        }
+      ]
+    },
+    {
+      "label": "saved-patch-tightens-and-turns-between-stitches",
+      "scene": "moon",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "stitch-age-1.76",
+          "patch": {
+            "x": 986.9999918137713,
+            "y": 678.0000066978234,
+            "angle": 0.29499982925349943,
+            "sewing": 0.0004119682475066157
+          }
+        },
+        {
+          "label": "stitch-age-2.12",
+          "patch": {
+            "x": 985.5056180979732,
+            "y": 679.2226761016583,
+            "angle": 0.22157401670757063,
+            "sewing": 0.4034830042743742
+          }
+        },
+        {
+          "label": "stitch-age-2.28",
+          "patch": {
+            "x": 971.2412143048451,
+            "y": 690.8935519323994,
+            "angle": 0.0014342342665965777,
+            "sewing": 0.6815241196824746
+          }
+        },
+        {
+          "label": "stitch-age-2.58",
+          "patch": {
+            "x": 964.999622119178,
+            "y": 696.0003091752179,
+            "angle": -0.10500284082767151,
+            "sewing": 0.9983651536739263
+          }
+        }
+      ]
+    },
+    {
+      "label": "saved-finale-does-not-mask-hiccup",
+      "scene": "moon",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "ending-idle",
+          "pose": "moon-content"
+        },
+        {
+          "label": "ending-click",
+          "pose": "moon-hiccup"
+        }
+      ]
+    },
+    {
+      "label": "response-pose-visible",
+      "scene": "shadow",
+      "asset": "dancer-spin",
+      "passed": true,
+      "evidence": [
+        "shadow-desktop-act-3-offline.png",
+        "shadow-mobile-act-3-offline.png",
+        "shadow-desktop-capture-beat-1-offline.png",
+        "shadow-desktop-capture-beat-2-offline.png",
+        "shadow-desktop-capture-beat-3-offline.png",
+        "shadow-desktop-capture-beat-4-offline.png",
+        "shadow-desktop-spin-detail-1-offline.png",
+        "shadow-desktop-spin-detail-2-offline.png",
+        "shadow-desktop-spin-detail-3-offline.png",
+        "shadow-desktop-spin-detail-4-offline.png",
+        "shadow-desktop-spin-detail-5-offline.png",
+        "shadow-desktop-spin-detail-6-offline.png",
+        "shadow-desktop-spin-detail-7-offline.png",
+        "shadow-mobile-capture-beat-1-offline.png",
+        "shadow-mobile-capture-beat-2-offline.png",
+        "shadow-mobile-capture-beat-3-offline.png",
+        "shadow-mobile-capture-beat-4-offline.png",
+        "shadow-mobile-spin-detail-1-offline.png",
+        "shadow-mobile-spin-detail-2-offline.png",
+        "shadow-mobile-spin-detail-3-offline.png",
+        "shadow-mobile-spin-detail-4-offline.png",
+        "shadow-mobile-spin-detail-5-offline.png",
+        "shadow-mobile-spin-detail-6-offline.png",
+        "shadow-mobile-spin-detail-7-offline.png"
+      ]
+    },
+    {
+      "label": "action-pose-visible",
+      "scene": "shadow",
+      "asset": "dancer-leap",
+      "passed": true,
+      "evidence": [
+        "shadow-desktop-high-strength-leap-offline.png",
+        "shadow-mobile-high-strength-leap-offline.png",
+        "shadow-desktop-action-beat-2-offline.png",
+        "shadow-desktop-action-beat-3-offline.png",
+        "shadow-desktop-edge-left-offline.png",
+        "shadow-desktop-edge-right-offline.png",
+        "shadow-mobile-action-beat-2-offline.png",
+        "shadow-mobile-action-beat-3-offline.png",
+        "shadow-mobile-edge-left-offline.png",
+        "shadow-mobile-edge-right-offline.png"
+      ]
+    },
+    {
+      "label": "action-pose-visible",
+      "scene": "shadow",
+      "asset": "dancer-bow",
+      "passed": true,
+      "evidence": [
+        "shadow-desktop-act-1-offline.png",
+        "shadow-desktop-act-2-offline.png",
+        "shadow-desktop-act-3-offline.png",
+        "shadow-desktop-act-4-offline.png",
+        "shadow-desktop-transition-5s-offline.png",
+        "shadow-desktop-transition-15s-offline.png",
+        "shadow-desktop-transition-26s-offline.png",
+        "shadow-desktop-high-strength-leap-offline.png",
+        "shadow-mobile-act-1-offline.png",
+        "shadow-mobile-act-2-offline.png",
+        "shadow-mobile-act-3-offline.png",
+        "shadow-mobile-act-4-offline.png",
+        "shadow-mobile-transition-5s-offline.png",
+        "shadow-mobile-transition-15s-offline.png",
+        "shadow-mobile-transition-26s-offline.png",
+        "shadow-mobile-high-strength-leap-offline.png",
+        "shadow-desktop-action-beat-1-offline.png",
+        "shadow-desktop-action-beat-2-offline.png",
+        "shadow-desktop-action-beat-3-offline.png",
+        "shadow-desktop-action-beat-4-offline.png",
+        "shadow-desktop-capture-beat-1-offline.png",
+        "shadow-desktop-capture-beat-2-offline.png",
+        "shadow-desktop-capture-beat-3-offline.png",
+        "shadow-desktop-capture-beat-4-offline.png",
+        "shadow-desktop-edge-left-offline.png",
+        "shadow-desktop-edge-right-offline.png",
+        "shadow-desktop-spin-detail-1-offline.png",
+        "shadow-desktop-spin-detail-2-offline.png",
+        "shadow-desktop-spin-detail-3-offline.png",
+        "shadow-desktop-spin-detail-4-offline.png",
+        "shadow-desktop-spin-detail-5-offline.png",
+        "shadow-desktop-spin-detail-6-offline.png",
+        "shadow-desktop-spin-detail-7-offline.png",
+        "shadow-desktop-held-light-1-offline.png",
+        "shadow-desktop-held-light-2-offline.png",
+        "shadow-desktop-held-light-3-offline.png",
+        "shadow-desktop-held-light-4-offline.png",
+        "shadow-mobile-action-beat-1-offline.png",
+        "shadow-mobile-action-beat-2-offline.png",
+        "shadow-mobile-action-beat-3-offline.png",
+        "shadow-mobile-action-beat-4-offline.png",
+        "shadow-mobile-capture-beat-1-offline.png",
+        "shadow-mobile-capture-beat-2-offline.png",
+        "shadow-mobile-capture-beat-3-offline.png",
+        "shadow-mobile-capture-beat-4-offline.png",
+        "shadow-mobile-edge-left-offline.png",
+        "shadow-mobile-edge-right-offline.png",
+        "shadow-mobile-spin-detail-1-offline.png",
+        "shadow-mobile-spin-detail-2-offline.png",
+        "shadow-mobile-spin-detail-3-offline.png",
+        "shadow-mobile-spin-detail-4-offline.png",
+        "shadow-mobile-spin-detail-5-offline.png",
+        "shadow-mobile-spin-detail-6-offline.png",
+        "shadow-mobile-spin-detail-7-offline.png",
+        "shadow-mobile-held-light-1-offline.png",
+        "shadow-mobile-held-light-2-offline.png",
+        "shadow-mobile-held-light-3-offline.png",
+        "shadow-mobile-held-light-4-offline.png"
+      ]
+    },
+    {
+      "label": "finale-background-visible",
+      "scene": "shadow",
+      "passed": true,
+      "evidence": [
+        {
+          "file": "shadow-desktop-act-4-offline.png",
+          "visibleBackgrounds": [
+            "background",
+            "background-finale"
+          ]
+        },
+        {
+          "file": "shadow-mobile-act-4-offline.png",
+          "visibleBackgrounds": [
+            "background",
+            "background-finale"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "finale-partner-visible",
+      "scene": "shadow",
+      "asset": "light-brave",
+      "passed": true,
+      "evidence": [
+        {
+          "file": "shadow-desktop-act-4-offline.png",
+          "partnerPose": "light-brave",
+          "visibleAssets": [
+            "beam",
+            "dancer-bow",
+            "dancer",
+            "light-brave"
+          ]
+        },
+        {
+          "file": "shadow-mobile-act-4-offline.png",
+          "partnerPose": "light-brave",
+          "visibleAssets": [
+            "beam",
+            "dancer-bow",
+            "dancer",
+            "light-brave"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "saved-count-changes-finale",
+      "scene": "shadow",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "finale-count-0",
+          "pixelSha256": "409351fd3573312eb1e7dc921a855bcc26a0f471e0ae6c991d638664384ae046",
+          "partnerPose": "light-brave",
+          "visibleAssets": [
+            "beam",
+            "dancer-bow",
+            "dancer",
+            "light-brave"
+          ]
+        },
+        {
+          "label": "finale-count-8",
+          "pixelSha256": "f179386fed82333b7adfb0ab3d40631fa12f49ca54548036520924175c2a81dd",
+          "partnerPose": "light-brave",
+          "visibleAssets": [
+            "beam",
+            "dancer-bow",
+            "dancer",
+            "light-brave"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "held-drag-responds-after-action-finishes",
+      "scene": "shadow",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "held-drag-left",
+          "x": 0.15,
+          "age": 5,
+          "pixelSha256": "ae659a6739443ed25db6bec725237819bfdb27f2b043f39982effb0f1f5535ce"
+        },
+        {
+          "label": "held-drag-right",
+          "x": 0.9,
+          "age": 5,
+          "pixelSha256": "7154afa3496537999c4cbe4dc0d91a131ff38127f26070c82480935888996e4a"
+        }
+      ]
+    },
+    {
+      "label": "delayed-recipient-replies",
+      "scene": "shadow",
+      "recipient": "partnerPose",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "partner-reaction-age-005",
+          "pixelSha256": "489056565d754762166cf31fc68fc734d841ef79c620cea6e1248054433f4e85",
+          "recipientPose": "light",
+          "visibleAssets": [
+            "beam",
+            "dancer-bow",
+            "dancer",
+            "light"
+          ]
+        },
+        {
+          "label": "partner-reaction-age-150",
+          "pixelSha256": "eb823a7ed5040cd3136cfa77432b14fb26f2830e1a0d7dcad9ef80c8b1240694",
+          "recipientPose": "light-brave",
+          "visibleAssets": [
+            "beam",
+            "dancer-leap",
+            "dancer",
+            "light-brave",
+            "dancer-bow"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "action-has-four-stages-and-idle",
+      "scene": "shadow",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "action-age-0.12",
+          "actionPhase": "prepare"
+        },
+        {
+          "label": "action-age-0.7",
+          "actionPhase": "act"
+        },
+        {
+          "label": "action-age-1.5",
+          "actionPhase": "reply"
+        },
+        {
+          "label": "action-age-2.8",
+          "actionPhase": "settle"
+        },
+        {
+          "label": "action-age-4",
+          "actionPhase": "idle"
+        }
+      ]
+    },
+    {
+      "label": "collection-visible-in-every-act",
+      "scene": "shadow",
+      "act": 1,
+      "passed": true,
+      "evidence": [
+        {
+          "label": "capture-act-1-before",
+          "pixelSha256": "3f0515683efc8b228d7e60033ec17814d6179f0b9715eec20045643bb2f3acd0",
+          "capturePhase": "complete"
+        },
+        {
+          "label": "capture-act-1-during",
+          "pixelSha256": "8ae7afb83662f1f9d89eec5ee4d4e981f604b6f5c928a3b0ab8fd66bb3cc2632",
+          "capturePhase": "fly"
+        }
+      ]
+    },
+    {
+      "label": "collection-visible-in-every-act",
+      "scene": "shadow",
+      "act": 2,
+      "passed": true,
+      "evidence": [
+        {
+          "label": "capture-act-2-before",
+          "pixelSha256": "3b2a6befa5a9e32481f802ad2ae36d4427997f40e4e6fdb3fda1654830557327",
+          "capturePhase": "complete"
+        },
+        {
+          "label": "capture-act-2-during",
+          "pixelSha256": "570d1a16b9c826833424aa1121720411e6240ecb0dc0503d417249c40bcdc062",
+          "capturePhase": "fly"
+        }
+      ]
+    },
+    {
+      "label": "collection-visible-in-every-act",
+      "scene": "shadow",
+      "act": 3,
+      "passed": true,
+      "evidence": [
+        {
+          "label": "capture-act-3-before",
+          "pixelSha256": "72c382b1066fcda310fb8e3d19a08ee11fe09afb1aa9f159a5220226ffa914b7",
+          "capturePhase": "complete"
+        },
+        {
+          "label": "capture-act-3-during",
+          "pixelSha256": "1006b0e88bba19eb6bc59e5ee6be02ed123d55160ce766b80c549aa922cbdedd",
+          "capturePhase": "fly"
+        }
+      ]
+    },
+    {
+      "label": "collection-visible-in-every-act",
+      "scene": "shadow",
+      "act": 4,
+      "passed": true,
+      "evidence": [
+        {
+          "label": "capture-act-4-before",
+          "pixelSha256": "105a726a17a9b197eae7a5b92675c2e2e80fccad4492f8906ee8fd170bc1ad45",
+          "capturePhase": "complete"
+        },
+        {
+          "label": "capture-act-4-during",
+          "pixelSha256": "7f7551f77af41f4ad90b3acefbcbbe4615d9894506a69f7e101071b2af512a5e",
+          "capturePhase": "fly"
+        }
+      ]
+    },
+    {
+      "label": "collection-progresses-and-settles",
+      "scene": "shadow",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "capture-age-0.12",
+          "pixelSha256": "132a302226924ff5871730d8da441385b5c13288c0796d99b8c77d229c57689d",
+          "captureProgress": 0.006193900773782429,
+          "capturePhase": "lift"
+        },
+        {
+          "label": "capture-age-0.7",
+          "pixelSha256": "5975cc389be72926007c23bc116e9287c130ab02a4a135c81c702b2ab463f814",
+          "captureProgress": 0.1784251251706873,
+          "capturePhase": "fly"
+        },
+        {
+          "label": "capture-age-1.5",
+          "pixelSha256": "832bbedaaeb58b51074241484c905d105d8c2a3520bfc3b333670574456e5e02",
+          "captureProgress": 0.6144742831133363,
+          "capturePhase": "fly"
+        },
+        {
+          "label": "capture-age-2.8",
+          "pixelSha256": "1dd3d58e5261f5f3fdc39bace4e11b947a408f2d67f270b8becee6558989280a",
+          "captureProgress": 1,
+          "capturePhase": "complete"
+        },
+        {
+          "label": "capture-age-4",
+          "pixelSha256": "1dd3d58e5261f5f3fdc39bace4e11b947a408f2d67f270b8becee6558989280a",
+          "captureProgress": 1,
+          "capturePhase": "complete"
+        }
+      ]
+    },
+    {
+      "label": "audio-signal-affects-shadow",
+      "scene": "shadow",
+      "passed": true,
+      "note": "Artificial input probes test optional signal rendering; not actual browser audio evidence."
+    },
+    {
+      "label": "reduced-motion-ignores-audio",
+      "scene": "shadow",
+      "passed": true
+    },
+    {
+      "label": "dancer-ducks-under-held-light",
+      "scene": "shadow",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "held-light-high",
+          "followLean": 0.06000000000000001,
+          "followCrouch": 0
+        },
+        {
+          "label": "held-light-low",
+          "followLean": 0.06000000000000001,
+          "followCrouch": 0.19799999999999998
+        }
+      ]
+    },
+    {
+      "label": "reduced-motion-retains-selected-light-pose",
+      "scene": "shadow",
+      "passed": true
+    },
+    {
+      "label": "spin-is-continuous",
+      "scene": "shadow",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "spin-age-0.45",
+          "spinPhase": 0.002151896235168695
+        },
+        {
+          "label": "spin-age-0.68",
+          "spinPhase": 0.061787613764239045
+        },
+        {
+          "label": "spin-age-0.85",
+          "spinPhase": 0.14871774623418155
+        },
+        {
+          "label": "spin-age-1.2",
+          "spinPhase": 0.39926559137662126
+        },
+        {
+          "label": "spin-age-1.55",
+          "spinPhase": 0.6788344224428956
+        },
+        {
+          "label": "spin-age-1.9",
+          "spinPhase": 0.9061654788462676
+        },
+        {
+          "label": "spin-age-2.15",
+          "spinPhase": 0.9915503523976862
+        }
+      ]
+    },
+    {
+      "label": "four-ending-action-poses",
+      "scene": "shadow",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "ending-click-0",
+          "pose": "dancer"
+        },
+        {
+          "label": "ending-click-1",
+          "pose": "dancer-leap"
+        },
+        {
+          "label": "ending-click-2",
+          "pose": "dancer-spin"
+        },
+        {
+          "label": "ending-click-3",
+          "pose": "dancer-bow"
+        }
+      ]
+    }
+  ],
+  "mockedHostRecord": "notes/host-behavior-verification-v10.json",
+  "musicGenerationRecords": [
+    "notes/world-music-generation-v10.json",
+    "notes/world-music-gravity-generation-v10.json",
+    "notes/world-music-moon-generation-v10.json",
+    "notes/world-music-generation-v9.json"
+  ],
+  "audioAnalysisRecords": [
+    "notes/audio-gravity-analysis-v10.json",
+    "notes/audio-shadow-analysis-v10.json"
+  ],
+  "musicFiles": {
+    "gravity": {
+      "file": "web/audio/gravity-minimax.mp3",
+      "sha256": "bfe73c53e68ab0a04924171dfdb0f353e7f5d91f982f537de0f348809072ed50"
+    },
+    "shadow": {
+      "file": "web/audio/shadow-minimax.mp3",
+      "sha256": "7d2a3a179725cd7aeee9baa22cfbd45f35854666b53f0b0faf05cde2e292a41a"
+    }
+  },
+  "animations": [
+    {
+      "file": "gravity-32s-interaction-offline.mp4",
+      "sha256": "9d230b6ce8dadfb6c824a113a6fa0f181ced5a17418d0ad76afdcf74ac15d1a6",
+      "bytes": 3477723,
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 640,
+          "height": 426,
+          "r_frame_rate": "12/1",
+          "duration": "32.000000",
+          "nb_frames": "384"
+        }
+      ],
+      "format": {
+        "duration": "32.000000",
+        "size": "3477723"
+      },
+      "note": "Offline shared renderer; scripted interaction states, not browser recording."
+    },
+    {
+      "file": "gravity-32s-with-music-offline.mp4",
+      "sha256": "70b1abc70f28a3df75d577eccc3bb8a0e2569810c21003dfd3199394a52ac763",
+      "bytes": 4269112,
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 640,
+          "height": 426,
+          "r_frame_rate": "12/1",
+          "duration": "32.000000",
+          "nb_frames": "384"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "r_frame_rate": "0/0",
+          "duration": "32.000000",
+          "nb_frames": "1380"
+        }
+      ],
+      "format": {
+        "duration": "32.000000",
+        "size": "4269112"
+      },
+      "note": "Offline shared renderer; scripted interaction states, not browser recording."
+    },
+    {
+      "file": "moon-32s-interaction-offline.mp4",
+      "sha256": "cddc1a19a465b2701c25b3356506749e78bc3e03c84b2ca1bcdb7a109a385e73",
+      "bytes": 3234089,
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 640,
+          "height": 426,
+          "r_frame_rate": "12/1",
+          "duration": "32.000000",
+          "nb_frames": "384"
+        }
+      ],
+      "format": {
+        "duration": "32.000000",
+        "size": "3234089"
+      },
+      "note": "Offline shared renderer; scripted interaction states, not browser recording."
+    },
+    {
+      "file": "shadow-32s-interaction-offline.mp4",
+      "sha256": "4c210a60d41cce495c63ae2effaaabb8e84be70862f72d96c4aa61c63c41dc95",
+      "bytes": 1950136,
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 640,
+          "height": 426,
+          "r_frame_rate": "12/1",
+          "duration": "32.000000",
+          "nb_frames": "384"
+        }
+      ],
+      "format": {
+        "duration": "32.000000",
+        "size": "1950136"
+      },
+      "note": "Offline shared renderer; scripted interaction states, not browser recording."
+    },
+    {
+      "file": "shadow-32s-with-music-offline.mp4",
+      "sha256": "1445f3dfa7b6514f26093b2faf896c8409a84f733cf5af275568db15240b5161",
+      "bytes": 2689876,
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 640,
+          "height": 426,
+          "r_frame_rate": "12/1",
+          "duration": "32.000000",
+          "nb_frames": "384"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "r_frame_rate": "0/0",
+          "duration": "32.000000",
+          "nb_frames": "1380"
+        }
+      ],
+      "format": {
+        "duration": "32.000000",
+        "size": "2689876"
+      },
+      "note": "Offline shared renderer; scripted interaction states, not browser recording."
+    }
+  ],
+  "comparisons": [
+    {
+      "file": "gravity-v9-v10-offline-comparison.jpg",
+      "width": 1536,
+      "height": 544,
+      "sourcePixels": [
+        1536,
+        1024
+      ],
+      "normalizedPixels": [
+        768,
+        512
+      ],
+      "state": {
+        "count": 1,
+        "poses": [],
+        "x": 0.64,
+        "y": 0.5,
+        "strength": 50,
+        "age": 100,
+        "interaction": 0,
+        "dragging": false,
+        "reduced": false,
+        "captureAge": 100,
+        "scene": "gravity",
+        "time": 29
+      },
+      "note": "Same-state native Canvas comparison, not browser screenshots."
+    },
+    {
+      "file": "moon-v9-v10-offline-comparison.jpg",
+      "width": 1536,
+      "height": 544,
+      "sourcePixels": [
+        1536,
+        1024
+      ],
+      "normalizedPixels": [
+        768,
+        512
+      ],
+      "state": {
+        "count": 1,
+        "poses": [],
+        "x": 0.64,
+        "y": 0.5,
+        "strength": 50,
+        "age": 100,
+        "interaction": 0,
+        "dragging": false,
+        "reduced": false,
+        "captureAge": 100,
+        "scene": "moon",
+        "time": 29
+      },
+      "note": "Same-state native Canvas comparison, not browser screenshots."
+    },
+    {
+      "file": "shadow-v9-v10-offline-comparison.jpg",
+      "width": 1536,
+      "height": 544,
+      "sourcePixels": [
+        1536,
+        1024
+      ],
+      "normalizedPixels": [
+        768,
+        512
+      ],
+      "state": {
+        "count": 1,
+        "poses": [],
+        "x": 0.64,
+        "y": 0.5,
+        "strength": 50,
+        "age": 100,
+        "interaction": 0,
+        "dragging": false,
+        "reduced": false,
+        "captureAge": 100,
+        "scene": "shadow",
+        "time": 29
+      },
+      "note": "Same-state native Canvas comparison, not browser screenshots."
+    },
+    {
+      "file": "gravity-detail-v9-v10-offline-comparison.jpg",
+      "width": 1536,
+      "height": 544,
+      "state": {
+        "scene": "gravity",
+        "time": 5,
+        "count": 4,
+        "captureAge": 100
+      },
+      "note": "Native Canvas same-state detail comparison; not browser screenshots."
+    },
+    {
+      "file": "moon-detail-v9-v10-offline-comparison.jpg",
+      "width": 1536,
+      "height": 544,
+      "state": {
+        "scene": "moon",
+        "time": 5,
+        "count": 1,
+        "captureAge": 2.12
+      },
+      "note": "Native Canvas same-state detail comparison; not browser screenshots."
+    }
+  ],
+  "limitations": [
+    "Native Canvas frames and scripted movies are not browser screenshots or UI recordings.",
+    "Offline FFT is a real MP3 approximation, with different window/smoothing from a browser AnalyserNode.",
+    "Mocked React/DOM/media/timers do not establish actual browser autoplay, layout, touch routing, sound output, listening quality or real persistence.",
+    "The worlds save local interaction memories; external business completion events are not connected."
+  ],
+  "researchCollectionWritePerformed": false,
+  "serviceChecks": {
+    "checks": [
+      {
+        "file": "v10 entry",
+        "httpStatus": 200,
+        "cacheTag": "worlds10",
+        "passed": true
+      },
+      {
+        "file": "v9 legacy URL entry",
+        "httpStatus": 200,
+        "cacheTag": "worlds10",
+        "passed": true
+      },
+      {
+        "file": "app.js",
+        "httpStatus": 200,
+        "contentType": "text/javascript",
+        "bytes": 487047,
+        "sha256": "dbb07c54d99138cd9d7cf9bd35f640ccf3ba16c6262f555749b23421dd3e7ca0",
+        "matchesCurrentWeb": true,
+        "passed": true
+      },
+      {
+        "file": "worlds.css",
+        "httpStatus": 200,
+        "contentType": "text/css",
+        "bytes": 13525,
+        "sha256": "0fe9953db397fe9eef6afb44a4268ddf8aa3e3d4c736db6a63449dc34a90eb4f",
+        "matchesCurrentWeb": true,
+        "passed": true
+      },
+      {
+        "file": "audio/shadow-minimax.mp3",
+        "httpStatus": 200,
+        "contentType": "audio/mpeg",
+        "bytes": 769297,
+        "sha256": "7d2a3a179725cd7aeee9baa22cfbd45f35854666b53f0b0faf05cde2e292a41a",
+        "matchesCurrentWeb": true,
+        "passed": true
+      },
+      {
+        "file": "audio/gravity-minimax.mp3",
+        "httpStatus": 200,
+        "contentType": "audio/mpeg",
+        "bytes": 769297,
+        "sha256": "bfe73c53e68ab0a04924171dfdb0f353e7f5d91f982f537de0f348809072ed50",
+        "matchesCurrentWeb": true,
+        "passed": true
+      }
+    ],
+    "passed": true,
+    "copiedRasterAssetsVerified": 29,
+    "researchReceiptTotal": 6,
+    "ledgerHashUnchangedByRead": true,
+    "collectionPostPerformed": false,
+    "boundary": "HTTP content/hash checks only; no browser runtime or sound output verification."
+  },
+  "build": {
+    "frontend": "passed",
+    "catalogCheck": "passed; 17 projects",
+    "sharedSite": "passed; 17 demos",
+    "packagingFix": "scripts/build_site.py explicitly includes both verified world MP3 files for chippytea-lab."
+  }
+}

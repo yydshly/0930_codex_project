@@ -1,0 +1,106 @@
+{
+  "version": 8,
+  "generatedAt": "2026-10-03",
+  "tool": "image_gen.imagegen (built-in)",
+  "scope": "Character pose PNGs only, preserving existing character identity and watercolor/paper-ink style. No source code changes.",
+  "assets": [
+    {
+      "path": "web/worlds/gravity/stone-proud.png",
+      "references": [
+        "web/worlds/gravity/stone-awake.png",
+        "web/worlds/gravity/seed.png"
+      ],
+      "generatedSource": "D:/codex/home/generated_images/01a0fdd0-73c3-7760-a0db-f9f16f275d01/exec-71633718-6e3c-4244-af78-9e4fd5abfabc.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent full-body story animation sprite. Input Image 1 is the exact stone gardener edit target and identity/medium reference. Input Image 2 is the exact small golden star seed insert reference. Change only the gardener's pose and emotion: remove its wooden mallet entirely; both large stone hands cradle ONE tiny golden star seed right against the upper chest. Same round cream granite body, thick rounded limbs, black oval eyes, peach cheeks, moss cap and delicate daisies/leaf sprouts. Give the gardener a clearly delighted wide smile, proud warm eyes, shoulders lifted and feet planted apart. The gardener is rejoicing after catching the star seed. The star should be the small held object, much smaller than the gardener, clearly visible between the hands. Preserve exact hand-ink contours, paper granulation, watercolor colors and moss details. Single full-body character with its held seed; all hands, feet, moss and leaves fully in the square frame with generous transparent padding. True alpha transparent background, no floor, scene, stage, labels, watermarks, light aura or extra characters. Keep identity and style identical to the reference, create a strong new pose silhouette.",
+      "visualQA": "Original stone identity preserved: cream granite, moss cap, daisies and leaves, large black eyes and peach cheeks. Both hands cradle one small original star seed at upper chest, clear delighted smile, no mallet. Complete feet and leaves inside image.",
+      "alphaQA": {
+        "mode": "RGBA",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 2233680,
+        "fullyTransparentPixels": 740340,
+        "transparentFraction": 0.4708,
+        "visibleBBoxThreshold32": [
+          110,
+          45,
+          1115,
+          1213
+        ],
+        "subjectMarginFractionsThreshold32": [
+          0.0877,
+          0.0359,
+          0.1108,
+          0.0327
+        ],
+        "cornersTransparent": true,
+        "pass": true
+      },
+      "sha256": "906595256dfd569cd3e2880953139c50b5e41e5ee596f79d22e75d97d619ef53"
+    },
+    {
+      "path": "web/worlds/moon/moon-content.png",
+      "references": [
+        "web/worlds/moon/moon.png"
+      ],
+      "generatedSource": "D:/codex/home/generated_images/01a0fdd0-73c3-7760-a0db-f9f16f275d01/exec-b6531e0e-9817-4392-9996-982b01b79aba.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent single-character sprite for a hand-painted animation. Input Image 1 is the exact round golden moon character edit target, identity and medium reference. Keep this same softly round warm golden moon, crater pattern, grainy watercolor/paper strokes, uneven hand-drawn ink edges, rosy cheeks and small curled arms. Change its emotion to calm contentment: both eyes CLOSED as gently curved satisfied lines, a small softly closed smile, relaxed stretched arms, round body slightly more upright and comfortably settled. IMPORTANT remove EVERY fabric patch, stitch line, tear hole and star passenger from the source image. The full round moon surface must be uninterrupted yellow cratered watercolor, with absolutely no sewn patch or damaged hole; later code separately overlays patches. Preserve recognizable original moon shape and palette. One moon character only, whole silhouette centered with generous clear padding on all sides in a square frame. True alpha transparent background; no scenery, floor, text, symbols, watermarks, floating stars, glow or other characters.",
+      "visualQA": "Original round golden cratered watercolor moon with rosy cheeks and tiny arms preserved. Closed satisfied eyes and softly closed smile; arms comfortably extended. No embedded patches, stitches, holes or star passengers.",
+      "alphaQA": {
+        "mode": "RGBA",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 1365233,
+        "fullyTransparentPixels": 941322,
+        "transparentFraction": 0.59861,
+        "visibleBBoxThreshold32": [
+          96,
+          191,
+          1153,
+          1074
+        ],
+        "subjectMarginFractionsThreshold32": [
+          0.0766,
+          0.1523,
+          0.0805,
+          0.1435
+        ],
+        "cornersTransparent": true,
+        "pass": true
+      },
+      "sha256": "877bada5debda7ec3ccb1316c8642437871982e5aa7194953f39bc40a0376d00"
+    },
+    {
+      "path": "web/worlds/shadow/dancer-spin.png",
+      "references": [
+        "web/worlds/shadow/dancer.png",
+        "web/worlds/shadow/dancer-leap.png"
+      ],
+      "generatedSource": "D:/codex/home/generated_images/01a0fdd0-73c3-7760-a0db-f9f16f275d01/exec-da5963a0-3054-4513-bcef-20de698a79c7.png",
+      "prompt": "Use case: identity-preserve. Asset type: isolated transparent full-body animation sprite. Input Image 1 is exact ink-black shadow dancer identity and medium reference; Input Image 2 confirms the same dancer in a dynamic pose. Create ONE distinct spinning-turn pose of this SAME slim elongated whimsical paper shadow dancer: both thin arms stretched out broadly to the sides, one knee bent and one long foot on tiptoe, slender torso twisting in a three-quarter turn. Its tapered ink-paper lower-body hem fans sideways into a small curved folded skirt-like silhouette as it turns, providing a clear sense of rotation; keep narrow original body proportions and recognisable paper silhouette, not a new garment or thick body. Same elongated rounded head, tiny cream closed curved eyes and cream crescent smile, rough charcoal black paper grain and fine ivory speckles, expressive splayed fingertips. Pose should differ clearly from original standing and jumping poses and read as a joyous pirouette at small display sizes. Complete hands, fingertips, feet and head inside square frame with generous transparent margins. True alpha transparent background. Single dancer only, no secondary shadow, floor, stage, lettering, watermark, light ring, motion trails, halo, extra props or other characters. Maintain the original hand-ink cut-paper style exactly.",
+      "visualQA": "Original elongated black charcoal-paper identity with closed cream eyes and crescent smile preserved. Arms spread wide, bent knee and single tiptoe, torso twisted, tapered lower hem flares sideways. Distinct spin silhouette with all fingers and feet inside canvas, no halo or motion trails.",
+      "alphaQA": {
+        "mode": "RGBA",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 560515,
+        "fullyTransparentPixels": 1390691,
+        "transparentFraction": 0.88437,
+        "visibleBBoxThreshold32": [
+          161,
+          142,
+          1139,
+          1160
+        ],
+        "subjectMarginFractionsThreshold32": [
+          0.1284,
+          0.1132,
+          0.0917,
+          0.075
+        ],
+        "cornersTransparent": true,
+        "pass": true
+      },
+      "sha256": "36198aab43e2019cbd4c9e7d05685b0d5a30ebee1102bf857c9d113ca38a1440"
+    }
+  ]
+}

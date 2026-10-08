@@ -1,0 +1,83 @@
+{
+  "scope": "Actual in-app browser captures; silent animation, no generated music",
+  "viewport": [
+    1440,
+    1024
+  ],
+  "captureCSSClip": [
+    981,
+    654
+  ],
+  "gifSize": [
+    768,
+    512
+  ],
+  "scenes": [
+    {
+      "scene": "gravity",
+      "sourceSize": [
+        1487,
+        1058
+      ],
+      "implementationSize": [
+        1440,
+        1024
+      ],
+      "frames": 63,
+      "gifDurationSeconds": 24.42,
+      "chapters": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "gif": "assets\\gravity-world.gif",
+      "bytes": 7668299,
+      "comparison": "assets/worlds-qa/gravity-comparison.jpg"
+    },
+    {
+      "scene": "moon",
+      "sourceSize": [
+        1487,
+        1058
+      ],
+      "implementationSize": [
+        1440,
+        1024
+      ],
+      "frames": 63,
+      "gifDurationSeconds": 24.4,
+      "chapters": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "gif": "assets\\moon-world.gif",
+      "bytes": 4967472,
+      "comparison": "assets/worlds-qa/moon-comparison.jpg"
+    },
+    {
+      "scene": "shadow",
+      "sourceSize": [
+        1487,
+        1058
+      ],
+      "implementationSize": [
+        1440,
+        1024
+      ],
+      "frames": 63,
+      "gifDurationSeconds": 24.36,
+      "chapters": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "gif": "assets\\shadow-world.gif",
+      "bytes": 6628491,
+      "comparison": "assets/worlds-qa/shadow-comparison.jpg"
+    }
+  ]
+}

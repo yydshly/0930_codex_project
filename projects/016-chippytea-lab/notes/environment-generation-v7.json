@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "version": "worlds7",
+  "created_at": "2026-10-03",
+  "generator": "built-in image_gen",
+  "intent": "Non-destructive edits of the existing environment plates for visible fourth-act progression.",
+  "scope": "Assets only. No code, browser, music or real collection API changes.",
+  "assets": [
+    {
+      "scene": "gravity",
+      "prompt": "Use case: precise-object-edit.\nAsset type: finale background plate for an animated paper-and-ink fantasy scene, not a UI mockup.\nInput image 1 is the edit target. Edit this exact gravity garden background to its final, slightly more flourishing state. Preserve the 1536 by 1024, 3:2 landscape composition and the exact silhouette and height of the large lower moss-covered floating island; preserve both distant little house islands and their placement. Keep the large upper-middle cream handmade-paper sky almost empty for animated characters and a title.\nPrimary change: after planting, the SAME island has become a richer small garden: several charming clusters of tiny white, pale lavender, and warm butter-yellow wildflowers and fresh soft moss-green leaves along the LEFT and RIGHT edges of its surface, with subtle foreground plants at the lower side edges. Increase density most at the edges, do not carpet the central playable area. Keep the lower-middle center around x784,y735 clear for a separately animated main tree and keep the left and right actor standing areas uncluttered. No large central plant or tree.\nStyle: faithfully retain the source's hand-painted watercolor, soft gouache, muted moss greens, parchment fibers, cobalt dry-ink wind swirls, rough brushwork and airy storybook scene. Source art should be recognizable; only a restrained garden growth reveal, not a new scene.\nConstraints: absolutely no characters, no creatures, no text, no letters, no logos, no watermark, no UI. Do not add cats or fish. Opaque full-bleed background, exact 1536x1024 pixels.",
+      "input_path": "web/worlds/gravity/background.png",
+      "output_path": "web/worlds/gravity/background-finale.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "transparent_background": false,
+      "qa": {
+        "result": "passed",
+        "method": "Inspected original and generated result directly; PIL read-only dimensions/mode verification.",
+        "notes": [
+          "Same main island silhouette and distant islands retained.",
+          "New lavender, yellow and white flowers and fresh foliage concentrated at side edges.",
+          "Central tree/actor space remains open; no characters/text/logo."
+        ]
+      }
+    },
+    {
+      "scene": "moon",
+      "prompt": "Use case: precise-object-edit and lighting-weather.\nAsset type: finale background plate for a whimsical animated sewing shop.\nInput image 1 is the exact edit target. Preserve this SAME 1536x1024, 3:2 landscape illustrated workshop and its framing: crooked wooden beams above and left, green hanging lamp upper left, large round window cropped at upper right, worktables and sewing tools at the lower extreme sides, and a wide EMPTY central parchment wall and floor. Keep all geometry and object placement aligned with the original so this can crossfade smoothly over it.\nMake a restrained later-evening finale variation: gently warmer golden amber light from the existing hanging lamp and around the wooden floor edges. The round upper-right window has rich deep indigo night sky with a few bright gold stars. At the left and right edges, just inside the beams and near the existing hanging decorative stars, add a few elegant finished patchwork ribbons of lavender, cobalt and warm gold stitched fabrics, like a successful mending shop's small display of completed work. Keep hanging fabric short and to the outer edges; no central bunting or new obstruction.\nPreserve the large upper and middle cream paper region free of objects, and the center lower actor area x365..1060,y470..820 free of new things. No characters, no person, no moon character, no cat, no fish, no text, no logos, no UI, no watermark. Preserve source handmade watercolor/gouache, coarse paper fibers, brushy wood grain, pale cream negative space and muted ink details. Opaque full-bleed PNG exact1536x1024.",
+      "input_path": "web/worlds/moon/background.png",
+      "output_path": "web/worlds/moon/background-finale.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "transparent_background": false,
+      "qa": {
+        "result": "passed",
+        "method": "Inspected original and generated result directly; PIL read-only dimensions/mode verification.",
+        "notes": [
+          "Same roof beams, circular window, furniture and central empty stage retained.",
+          "Warmer amber lamp and floor lighting; short finished patchwork ribbons at both sides.",
+          "Deep indigo window remains visible. No characters/text/logo."
+        ]
+      }
+    },
+    {
+      "scene": "shadow",
+      "prompt": "Use case: precise-object-edit and lighting-weather.\nAsset type: finale environment background plate for an animated shadow paper theater.\nInput image 1 is the exact edit target. Make an ending-night performance variation of this SAME paper theater. Preserve the 1536x1024 3:2 landscape composition, soft cream fiber paper backdrop, upper cream folded paper drapery, lavender floor arc, and dark indigo brushy curtains on both edges. Keep geometry aligned so this will be crossfaded with the source.\nPrimary changes: draw both indigo curtains a LITTLE farther outward (a modest reveal, not a wholly different stage); let the large central cream paper backdrop grow a little warmer from stage lighting. Add a few small warm amber theatrical footlights very near the lower outside edges, with a delicate amber light glow grazing the bottom floor, and one or two folded-paper decorative shapes close to each side curtain. Preserve existing hanging gold and lavender stars. Mood of a warm final bow.\nVery important: keep the large upper center and middle center cream paper area entirely open for our animated dancer and title. Keep the actor standing floor in center and right lower area clear; no central objects or decorations. No characters, no people, no dancer, no faces, no creatures, no text, no letters, no logos, no UI, no watermark, no cats or fish. Do not fill the background with glitter or confetti. Retain the original handmade gouache/dry-brush ink style and fine tactile paper texture. Opaque full-bleed PNG, exact1536x1024.",
+      "input_path": "web/worlds/shadow/background.png",
+      "output_path": "web/worlds/shadow/background-finale.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "transparent_background": false,
+      "qa": {
+        "result": "passed",
+        "method": "Inspected original and generated result directly; PIL read-only dimensions/mode verification.",
+        "notes": [
+          "Same paper theater palette, floor arc and open center retained.",
+          "Warmer final-bow light, side footlights and folded paper decorations visible.",
+          "Side curtain shape modestly opened; no characters/text/logo or confetti fill."
+        ]
+      }
+    }
+  ]
+}

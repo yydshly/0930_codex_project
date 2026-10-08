@@ -1,0 +1,42 @@
+{
+  "kind": "offline-real-audio-fft-analysis",
+  "createdAt": "2026-10-03T01:46:45.839704+00:00",
+  "source": "web/audio/gravity-minimax.mp3",
+  "sourceSha256": "bfe73c53e68ab0a04924171dfdb0f353e7f5d91f982f537de0f348809072ed50",
+  "output": "assets/worlds-v10-qa/gravity-audio-spectrum.json",
+  "outputSha256": "fb1fb4f4a8865ce25587754f035fa30991a7c93ec20742980604ab84c5e7bd93",
+  "tool": "tooling/analyze-world-audio.py",
+  "toolSha256": "9e0bc649096d9854deb1255df60e1006a38b000dd40cdbb10d0780136d38a827",
+  "decodedSampleFrames": 1411200,
+  "decodedDurationSeconds": 32.0,
+  "sampleCount": 384,
+  "generationReceipt": "notes/world-music-gravity-generation-v10.json",
+  "paddedTailCheckedFromSeconds": null,
+  "signalStatistics": {
+    "energy": {
+      "min": 0.0,
+      "max": 0.47569353,
+      "nonzeroSampleCount": 377
+    },
+    "low": {
+      "min": 0.0,
+      "max": 0.87645344,
+      "nonzeroSampleCount": 367
+    },
+    "high": {
+      "min": 0.0,
+      "max": 0.42814635,
+      "nonzeroSampleCount": 356
+    }
+  },
+  "checks": {
+    "sourceHashMatchesGenerationReceipt": true,
+    "decodedDuration32Seconds": true,
+    "sampleCountMatchesDuration": true,
+    "signalsWithinUnitInterval": true,
+    "allBandsHaveMeasuredEnergy": true,
+    "paddedTailAllZero": null
+  },
+  "status": "passed",
+  "limitations": "FFT approximation from real MP3 PCM; browser output, listening quality, AnalyserNode equivalence and animation synchronization were not verified."
+}

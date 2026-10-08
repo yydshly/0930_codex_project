@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-10-03",
+  "mode": "built-in image_gen",
+  "scope": "Gravity Garden character pose variants only; no browser or application code changed.",
+  "assets": [
+    {
+      "file": "web/worlds/gravity/stone-awake.png",
+      "reference": "web/worlds/gravity/stone.png",
+      "prompt": "Use case: identity-preserve. Asset type: an isolated transparent character animation pose for a whimsical painterly interactive world.\nInput image 1 is the exact character identity and medium reference: the moss-covered rounded stone gardener holding a wooden mallet.\nCreate ONE new action pose of this same character, not a different character: suddenly awake, two clearly wide open dark eyes, a small startled open mouth, feet in a low braced crouching step; torso leans forward toward the RIGHT; both stone hands extend the same wooden mallet horizontally toward the right, as though using the mallet head to catch a flying star-seed which will be animated separately. Make the silhouette and facial expression visibly different from the sleepy reference.\nPreserve the oval warm pale-grey stone body, speckled watercolor stone grain, soft orange cheek warmth, olive moss and small white daisies growing on the back/top, stubby stone arms and feet, loose ink outline, handmade children's storybook gouache and dry watercolor paper texture. Match the original palette and texture closely.\nFull body and the complete mallet, generously framed in a square composition with a little transparent padding, no cropping. A single clean cutout on actual transparent alpha background, no scenery, no ground, no cast shadow, no text, no watermark, no extra seed or other character. Do not include cats or fish.",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox_threshold_32": [
+        16,
+        143,
+        1248,
+        1137
+      ],
+      "qa": {
+        "result": "passed",
+        "identity": "Same moss-covered warm grey rounded stone gardener, white daisies and wooden mallet.",
+        "pose": "Open eyes and mouth, forward braced stance and mallet extended to the right.",
+        "style": "Preserved dry watercolor, gouache and loose dark ink outline.",
+        "crop": "Entire feet, character and mallet visible; narrow left/right transparent margin.",
+        "background": "Transparent alpha; no scene or text."
+      }
+    },
+    {
+      "file": "web/worlds/gravity/wind-gust.png",
+      "reference": "web/worlds/gravity/wind.png",
+      "prompt": "Use case: identity-preserve. Asset type: an isolated transparent character animation pose for a whimsical painterly interactive world.\nInput image 1 is the exact identity and medium reference: the pale-faced airy sprite with blue curling hair and trailing blue scarf, thin ink-black arms and legs, and golden wooden wind flute.\nCreate ONE new unmistakably different pose of this SAME character: blowing far too hard, cheeks comically inflated, eyes suddenly round and startled at its own strength, eyebrows raised; head and torso pitched toward the LEFT; both slender arms push the same gold wooden flute toward the left; legs kick backward toward the right like the force of the breath has caused a little airborne recoil. Hair, long blue scarf and cream flowing garment trail dramatically behind to the right. Clear comedy and motion in the silhouette, with distinct open eyes and puffed cheeks rather than the original eyes-squeezed-shut pose.\nPreserve original pale cream skin, rosy cheeks, blue curly hair, cobalt/sky-blue flowing scarf, thin dark limbs, small pointed blue shoes, gold flute, hand-drawn ink outline, handmade storybook dry watercolor and gouache paper grain. Match existing palette and texture closely.\nFull complete character and full flute in a square composition, centered with at least 8 percent transparent margin on every side, no cropped hair/scarf/feet/instrument. Actual transparent alpha background. No scene, no ground, no cast shadow, no typography, no watermark, no gust ribbon or extra accessory, no additional character, no cats or fish.",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox_threshold_32": [
+        34,
+        166,
+        1236,
+        1102
+      ],
+      "qa": {
+        "result": "passed",
+        "identity": "Same cream-faced blue-haired flute sprite, thin dark limbs, golden flute and pointed blue shoes.",
+        "pose": "Inflated cheeks, startled open eyes, forward lean left and legs recoiling right; hair/scarf trail right.",
+        "style": "Preserved dry watercolor paper texture and loose ink outline.",
+        "crop": "Complete hair curls, flute, scarf and shoes visible.",
+        "background": "Transparent alpha; no scene or text."
+      }
+    }
+  ]
+}

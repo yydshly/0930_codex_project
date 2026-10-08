@@ -1,0 +1,181 @@
+{
+  "provider": "MiniMax",
+  "updatedAt": "2026-10-03",
+  "status": "partial",
+  "purpose": "Three distinct original instrumental scores for the interactive character worlds",
+  "generationRequested": true,
+  "generatedFiles": [
+    "web/audio/gravity-minimax.mp3",
+    "web/audio/shadow-minimax.mp3"
+  ],
+  "currentPlayback": "gravity_and_shadow_user_enabled_media_clock; moon_silent_pending_quota",
+  "blocker": {
+    "previousRequestReceipt": "music-generation.json",
+    "httpStatus": 410,
+    "businessStatus": 2153,
+    "scope": "Historical Research to Folio paid API request rejected; not a blocker for completed shadow Music3 Space generation."
+  },
+  "durationNote": "32 seconds and four 8-second chapters are creative targets for the expanded choreography. Generated audio must be inspected, edited as necessary, and aligned to the animation before any synchronization claim.",
+  "worlds": [
+    {
+      "id": "gravity",
+      "title": "引力花园 / Gravity Garden",
+      "status": "ready",
+      "generationRequested": true,
+      "generatedFile": "web/audio/gravity-minimax.mp3",
+      "isInstrumental": true,
+      "targetDurationSeconds": 32,
+      "prompt": "Compose an original 32-second instrumental miniature for a warm hand-painted gravity garden. Two distinct musical personalities: a sleepy round stone gardener represented by soft, woody bass plucks, and an impatient ribbon wind sprite represented by airy piccolo phrases. Playful acoustic chamber folk, tactile paper-and-gouache atmosphere, light brushed percussion, natural stereo space, around 96 BPM. Build a small humorous duet with four roughly 8-second chapters: 0-8 the stone slowly wakes and taps a steady low pattern while a tiny curious piccolo seed appears; 8-16 the wind gets overexcited, rapid rising piccolo notes scatter star-seeds into the air, with a brief gentle stumble; 16-24 the bass replies and the two find a call-and-response rhythm, low notes suggesting seeds returning to earth; 24-32 the motifs agree in a warm growing melody, resolving into a smiling, soft final chord with a short clean decay. Music should make light and heavy feel like opposing but friendly forces. Begin immediately without silence. No vocals, speech, choir, lyrics, aggressive synths or cinematic bombast. Create a new melody; do not imitate or quote Chippytea's song or any existing tune.",
+      "chapters": [
+        {
+          "startSeconds": 0,
+          "endSeconds": 8,
+          "visualTitle": "石头醒来",
+          "musicIntent": "Slow woody bass taps and a curious piccolo pickup"
+        },
+        {
+          "startSeconds": 8,
+          "endSeconds": 16,
+          "visualTitle": "风吹过头了",
+          "musicIntent": "Rising piccolo runs with a playful brief stumble"
+        },
+        {
+          "startSeconds": 16,
+          "endSeconds": 24,
+          "visualTitle": "一起找回节奏",
+          "musicIntent": "Bass and piccolo call-and-response"
+        },
+        {
+          "startSeconds": 24,
+          "endSeconds": 32,
+          "visualTitle": "发现长成花园",
+          "musicIntent": "Shared motif blooms and lands softly"
+        }
+      ],
+      "actualModel": "MiniMaxAI/MiniMax-Music3",
+      "receipt": "world-music-gravity-generation-v10.json",
+      "originalDurationSeconds": 35.02730158730159,
+      "playbackDurationSeconds": 32,
+      "actualPromptNote": "Actual structured request is preserved in the generation receipt; this prompt remains the initial creative brief.",
+      "generationPostAttempts": 1,
+      "editing": {
+        "nativeSourceDurationSeconds": 35.02730158730159,
+        "playbackDurationSeconds": 32,
+        "fadeOutStartSeconds": 31.0,
+        "fadeOutDurationSeconds": 1,
+        "tailSilenceSeconds": 0,
+        "trimmedTailSeconds": 3.0273015873015865,
+        "timeStretch": false,
+        "regeneration": false,
+        "synthesisAdded": false,
+        "filter": "afade=t=out:st=31.000000000000:d=1,atrim=end=32,apad=whole_dur=32"
+      },
+      "browserPlaybackVerified": false
+    },
+    {
+      "id": "moon",
+      "title": "月亮修补铺 / Moon Mending Shop",
+      "status": "pending",
+      "generationRequested": true,
+      "generatedFile": null,
+      "isInstrumental": true,
+      "targetDurationSeconds": 32,
+      "prompt": "Compose an original 32-second instrumental miniature for a crooked, cozy hand-painted moon mending shop. A meticulous tailor chases a mischievous golden moon that keeps hiccupping and tugging its sewing thread. Use pizzicato chamber strings as the central voice, delicate sewing-like percussion made from tiny wooden clicks and muted brushed taps, occasional warm bowed string answers, around 112 BPM with a light skipping chase rhythm. Four roughly 8-second chapters: 0-8 a careful three-note stitch motif reveals a leaking patch of starlight; 8-16 the moon hiccups as an offbeat pluck and little rhythmic interruption, then a comic elastic chase develops; 16-24 the tailor catches the thread with three clearly articulated stitch accents and the two motifs weave together; 24-32 tension relaxes, the repaired moon floats happily, a soft lyrical phrase resolves with a clean short decay. Keep it handmade, witty, intimate and gently surprising, with dynamics that feel like pulling and releasing a thread. Begin immediately without silence. No vocals, speech, choir, lyrics, heavy drums or generic triumphant fanfare. Compose a new tune; do not imitate or quote Chippytea's song or any existing melody.",
+      "chapters": [
+        {
+          "startSeconds": 0,
+          "endSeconds": 8,
+          "visualTitle": "今晚又漏了星光",
+          "musicIntent": "Careful three-note pizzicato stitch motif"
+        },
+        {
+          "startSeconds": 8,
+          "endSeconds": 16,
+          "visualTitle": "月亮忍不住打嗝",
+          "musicIntent": "Offbeat interruption and a light elastic chase"
+        },
+        {
+          "startSeconds": 16,
+          "endSeconds": 24,
+          "visualTitle": "裁缝追着补三针",
+          "musicIntent": "Three stitch accents bring the motifs together"
+        },
+        {
+          "startSeconds": 24,
+          "endSeconds": 32,
+          "visualTitle": "补丁也是好风景",
+          "musicIntent": "Tension releases into a floating warm resolution"
+        }
+      ],
+      "generationBlocked": true,
+      "actualModel": "MiniMaxAI/MiniMax-Music3",
+      "receipt": "world-music-moon-generation-v10.json",
+      "generationPostAttempts": 1,
+      "lastAttempt": {
+        "status": "quota_exceeded",
+        "requestedQuotaSeconds": 96,
+        "remainingQuotaSeconds": 4,
+        "retryPerformed": false,
+        "automaticTaskCreated": false
+      },
+      "browserPlaybackVerified": false
+    },
+    {
+      "id": "shadow",
+      "title": "影子排练场 / Shadow Rehearsal",
+      "status": "ready",
+      "generationRequested": true,
+      "generatedFile": "web/audio/shadow-minimax.mp3",
+      "isInstrumental": true,
+      "targetDurationSeconds": 32,
+      "prompt": "Compose an original 32-second instrumental miniature for a small folded-paper shadow theater. An extravagant charcoal shadow dancer and a shy amber light creature learn to share the stage. Two musical personalities: expressive bass clarinet with warm low-register leaps for the shadow, and delicate soft bells for the tiny light; a gentle hand drum provides physical pulse. Minimal acoustic theatrical jazz-folk, around 88 BPM, roomy but intimate, rich contrast between broad gestures and tiny hesitant replies. Four roughly 8-second chapters: 0-8 cautious bass clarinet steps and one quiet bell invitation; 8-16 increasingly large clarinet gestures and rounded hand-drum accents suggest the shadow growing too tall and almost hitting the roof, followed by a funny small pause; 16-24 the light answers with gentle bells, the clarinet softens and the motifs alternate large and small; 24-32 the pair find a balanced dancing shape, a simple shared phrase resolves warmly with a short clean decay. Use musical space and dynamics so changes in size and courage can be choreographed. Begin immediately without silence. No vocals, speech, choir, lyrics, harsh brass, electronic drops or epic orchestration. Create a new melody; do not imitate or quote Chippytea's song or any existing tune.",
+      "chapters": [
+        {
+          "startSeconds": 0,
+          "endSeconds": 8,
+          "visualTitle": "影子想站上舞台",
+          "musicIntent": "Cautious clarinet steps and a tiny bell invitation"
+        },
+        {
+          "startSeconds": 8,
+          "endSeconds": 16,
+          "visualTitle": "一激动，顶到屋顶",
+          "musicIntent": "Broad leaps, rounded hand-drum accents and a comic pause"
+        },
+        {
+          "startSeconds": 16,
+          "endSeconds": 24,
+          "visualTitle": "小光团：轻一点…",
+          "musicIntent": "Soft bells and smaller clarinet replies alternate"
+        },
+        {
+          "startSeconds": 24,
+          "endSeconds": 32,
+          "visualTitle": "一起找到自己的样子",
+          "musicIntent": "Balanced duet and a warm compact resolution"
+        }
+      ],
+      "actualModel": "MiniMaxAI/MiniMax-Music3",
+      "receipt": "world-music-generation-v9.json",
+      "originalDurationSeconds": 29.942131519,
+      "playbackDurationSeconds": 32,
+      "actualPromptNote": "Actual request differs from this early creative brief; see generation receipt.",
+      "browserPlaybackVerified": false
+    }
+  ],
+  "version": 10,
+  "remainingGenerationBlocker": {
+    "scene": "moon",
+    "status": "quota_exceeded",
+    "receipt": "world-music-moon-generation-v10.json",
+    "requestedQuotaSeconds": 96,
+    "remainingQuotaSeconds": 4,
+    "generationPostAttempts": 1,
+    "retryPerformed": false,
+    "automaticTaskCreated": false
+  },
+  "receipts": [
+    "world-music-generation-v9.json",
+    "world-music-generation-v10.json"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "version": 10,
+  "provider": "MiniMax",
+  "model": "MiniMaxAI/MiniMax-Music3",
+  "updatedAt": "2026-10-03T01:47:37.427148+00:00",
+  "status": "partial",
+  "worlds": {
+    "gravity": {
+      "status": "success",
+      "receipt": "notes/world-music-gravity-generation-v10.json",
+      "generationPostAttempts": 1,
+      "playbackOutput": {
+        "path": "web/audio/gravity-minimax.mp3",
+        "bytes": 769297,
+        "sha256": "bfe73c53e68ab0a04924171dfdb0f353e7f5d91f982f537de0f348809072ed50",
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "bitrate": 192000,
+        "actualDecodedDurationSeconds": 32.0,
+        "nonSilent": true
+      },
+      "blocker": null
+    },
+    "moon": {
+      "status": "blocked",
+      "receipt": "notes/world-music-moon-generation-v10.json",
+      "generationPostAttempts": 1,
+      "playbackOutput": null,
+      "blocker": {
+        "error": "You have exceeded your ZeroGPU quota (96s requested vs. 4s left). Try again in 17:07:22. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens",
+        "duration": 10,
+        "visible": true,
+        "title": "ZeroGPU quota exceeded"
+      }
+    }
+  },
+  "existingShadow": "world-music-generation-v9.json; not regenerated",
+  "limitations": "Generated file verification is not listening-quality or real browser synchronization verification."
+}

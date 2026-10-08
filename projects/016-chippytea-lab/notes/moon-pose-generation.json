@@ -1,0 +1,64 @@
+{
+  "created": "2026-10-03",
+  "mode": "built-in image_gen",
+  "taxonomy": "identity-preserve",
+  "scope": "Original moon workshop character poses; raster assets only",
+  "assets": [
+    {
+      "file": "web/worlds/moon/moon-hiccup.png",
+      "reference": "web/worlds/moon/moon.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent character animation pose for a warm illustrated small theater. Input image is the identity and style reference for the golden patched moon. Generate one different acting pose of exactly this moon character. It is suddenly hiccuping: large startled open eyes rather than closed smiling eyes, inflated cheeks and a small round O mouth, little arms startled outward. Keep the full round golden cratered body, same lavender upper-left patch and amber lower-right patch with dark cobalt sewn stitches, same warm watercolor and crayon paper texture and rough dark ink outlines. The small rip on the right edge leaks one or two attached tiny golden stars; keep the dark blue torn interior. The pose must read as surprised and funny, visibly different from the happy laughing reference, while preserving the same character identity. Composition: single complete centered character, generous clear margin on all sides, nothing cropped. Background: genuine alpha transparency, no backdrop, no ground shadow or paper rectangle. No other characters, cats, fish, typography, watermark, or border. Preserve hand-painted look, not smooth vector or 3D.",
+      "generatedSource": "D:/codex/home/generated_images/01a0fd87-2a34-7030-935d-d4ea1344723e/exec-bc41158b-9b22-4e15-8351-1b7961cef3b7.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "subjectBBoxAlpha32": [
+        136,
+        218,
+        1134,
+        1054
+      ],
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visualQA": "passed: preserved golden round moon, sewn lavender and amber patches, rustic crayon/watercolor texture; wide eyes and round mouth clearly differ from laughing pose; complete uncut subject with alpha background."
+    },
+    {
+      "file": "web/worlds/moon/tailor-chase.png",
+      "reference": "web/worlds/moon/tailor.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent character animation action pose for a warm storybook theater. Input image is the exact identity and style reference for this bespectacled elderly tailor. Create a new running chase pose, clearly unlike the planted feet and backward pulling stance in the reference. The tailor is running energetically toward the RIGHT: upper body leans forward right, both arms stretch toward the right holding a short loose cobalt sewing thread, one knee lifted forward and the other leg kicks behind, feet clearly airborne in a lively running stride. Give a determined surprised open mouth and focused eyes behind the same round glasses. Keep same sparse fluttering grey hair, round peach face and cheeks, navy-indigo stitched coat with warm gold stitch seams, amber scissors in the side pocket, brown pinstripe trousers, black shoes, and pale cuffs. Coat tails and hair stream backward to the left. Same warm hand-painted watercolor/crayon textured paper surfaces with rough dark ink outline. Composition: one single complete character from head to shoes centered with generous transparent margins and no cropping. Genuine alpha transparent background, no floor, no rectangular paper backdrop, no second character. Do not include the moon, cats, fish, typography, labels, watermark or border. Preserve the precise character identity and rustic painterly style, not smooth vector or 3D.",
+      "generatedSource": "D:/codex/home/generated_images/01a0fd87-2a34-7030-935d-d4ea1344723e/exec-2ab8a8c0-2072-4b1a-9aab-04b4b314ec5c.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "subjectBBoxAlpha32": [
+        118,
+        187,
+        1239,
+        993
+      ],
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visualQA": "passed: same round spectacles, sparse grey hair, indigo stitched coat, pocket scissors, striped trousers and black shoes; forward running stride with extended arms and thread, open mouth; all limbs complete. Thread ends near right edge with 15 px margin."
+    }
+  ]
+}

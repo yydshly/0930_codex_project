@@ -1,0 +1,267 @@
+{
+  "version": 10,
+  "scene": "gravity",
+  "provider": "MiniMax",
+  "model": "MiniMaxAI/MiniMax-Music3",
+  "route": "official Hugging Face MiniMaxAI ZeroGPU Space",
+  "startedAt": "2026-10-03T01:43:56.578591+00:00",
+  "status": "success",
+  "endpoint": "https://minimaxai-minimax-music3.hf.space/gradio_api/call/v2/studio_generate",
+  "apiName": "/studio_generate",
+  "officialSources": [
+    "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+    "https://huggingface.co/spaces/MiniMaxAI/MiniMax-Music3/blob/main/app.py",
+    "https://huggingface.co/docs/hub/spaces-zerogpu"
+  ],
+  "preflight": "music-space-preflight-v10.json",
+  "request": {
+    "state": {
+      "mode": "studio",
+      "instrumental": true,
+      "lyrics": "[instrumental]",
+      "vocals": "Instrumental only. No vocals, words, speech, humming, choir or vocal chops. Do not quote any existing melody.",
+      "title": "Seeds on a Little Wind",
+      "description": "Original instrumental miniature for a handmade gravity garden: an airy mischievous wind sprite scatters star-seeds while a sleepy stone gardener catches them and grows a flower garden. No vocals or speech.",
+      "global_meta": "Genre: intimate playful acoustic chamber folk. BPM: 96. Key: G major. Duration target: 35 seconds. Begin immediately. Four-part emotional arc: 0-8s a sleepy woody low motif and a curious high wind note; 8-16s an excited breeze scatters seeds with a little comic stumble; 16-24s the gardener answers and catches them; 24-32s the two motifs bloom together, landing softly; 32-35s short natural decay. Warm tactile hand-painted atmosphere, natural stereo, gentle bass, no epic fanfare.",
+      "arrangement": "Two distinct musical personalities: airy piccolo or small wooden flute for the ribbon wind sprite, soft low woody bass plucks and warm bass marimba for the round stone gardener. Start with slow low taps and a tiny curious piccolo pickup. Let the piccolo rise in quick light runs over sparse brushed percussion as the wind gets carried away. Include one playful rhythmic stumble. Low bass replies in falling steps as star-seeds return to earth, then the piccolo and bass enter a clear call-and-response. Build a small warm shared growing melody with subtle acoustic strings near the ending, resolve softly with a brief clean decay. Handmade acoustic instruments only, no vocals, no synthetic beeps, no heavy drums, no cinematic bombast. New original melody."
+    },
+    "duration": 35,
+    "seed": 23,
+    "randomize_seed": false,
+    "headroom": 0,
+    "steps": 30,
+    "guidance": 1.7
+  },
+  "requestSha256": "0e5365bbe780a1616e3f37137512ca71eb3bdc837a50de96b3db3095680395be",
+  "generationPostAttempts": 1,
+  "credentialUsed": false,
+  "paidOverageAllowed": false,
+  "termsAccepted": false,
+  "quotaEvasion": false,
+  "events": [
+    {
+      "event": "generating",
+      "at": "2026-10-03T01:43:57.935397+00:00",
+      "valueTypes": [
+        "dict",
+        "dict",
+        "dict",
+        "dict",
+        "NoneType"
+      ],
+      "statusText": ""
+    },
+    {
+      "event": "generating",
+      "at": "2026-10-03T01:44:00.378408+00:00",
+      "valueTypes": [
+        "dict",
+        "str",
+        "dict",
+        "int",
+        "NoneType"
+      ],
+      "statusText": "ZeroGPU acquired — warming up..."
+    },
+    {
+      "event": "generating",
+      "at": "2026-10-03T01:44:08.655548+00:00",
+      "valueTypes": [
+        "dict",
+        "str",
+        "dict",
+        "int",
+        "NoneType"
+      ],
+      "statusText": "streaming... 5.0s"
+    },
+    {
+      "event": "generating",
+      "at": "2026-10-03T01:44:11.704728+00:00",
+      "valueTypes": [
+        "dict",
+        "str",
+        "dict",
+        "int",
+        "NoneType"
+      ],
+      "statusText": "streaming... 9.0s of audio at 11s"
+    },
+    {
+      "event": "heartbeat",
+      "at": "2026-10-03T01:44:12.935342+00:00",
+      "valueTypes": "NoneType"
+    },
+    {
+      "event": "generating",
+      "at": "2026-10-03T01:44:15.089927+00:00",
+      "valueTypes": [
+        "dict",
+        "str",
+        "dict",
+        "int",
+        "NoneType"
+      ],
+      "statusText": "streaming... 13.0s of audio at 15s"
+    },
+    {
+      "event": "generating",
+      "at": "2026-10-03T01:44:18.555244+00:00",
+      "valueTypes": [
+        "dict",
+        "str",
+        "dict",
+        "int",
+        "NoneType"
+      ],
+      "statusText": "streaming... 17.0s of audio at 18s"
+    },
+    {
+      "event": "generating",
+      "at": "2026-10-03T01:44:22.006056+00:00",
+      "valueTypes": [
+        "dict",
+        "str",
+        "dict",
+        "int",
+        "NoneType"
+      ],
+      "statusText": "streaming... 21.0s of audio at 22s"
+    },
+    {
+      "event": "generating",
+      "at": "2026-10-03T01:44:25.695582+00:00",
+      "valueTypes": [
+        "dict",
+        "str",
+        "dict",
+        "int",
+        "NoneType"
+      ],
+      "statusText": "streaming... 25.0s of audio at 25s"
+    },
+    {
+      "event": "heartbeat",
+      "at": "2026-10-03T01:44:27.934443+00:00",
+      "valueTypes": "NoneType"
+    },
+    {
+      "event": "generating",
+      "at": "2026-10-03T01:44:29.422453+00:00",
+      "valueTypes": [
+        "dict",
+        "str",
+        "dict",
+        "int",
+        "NoneType"
+      ],
+      "statusText": "streaming... 29.0s of audio at 29s"
+    },
+    {
+      "event": "generating",
+      "at": "2026-10-03T01:44:31.772169+00:00",
+      "valueTypes": [
+        "dict",
+        "str",
+        "dict",
+        "int",
+        "NoneType"
+      ],
+      "statusText": "streaming... 35.0s of audio at 31s"
+    },
+    {
+      "event": "generating",
+      "at": "2026-10-03T01:44:31.774115+00:00",
+      "valueTypes": [
+        "dict",
+        "str",
+        "dict",
+        "int",
+        "NoneType"
+      ],
+      "statusText": "done: 35.0s of audio in 31s — rendering share video..."
+    },
+    {
+      "event": "complete",
+      "at": "2026-10-03T01:44:31.774634+00:00",
+      "valueTypes": [
+        "dict",
+        "str",
+        "dict",
+        "int",
+        "NoneType"
+      ],
+      "statusText": "done: 35.0s of audio in 31s — rendering share video..."
+    }
+  ],
+  "quota": {
+    "anonymousTierDailySeconds": 120,
+    "xlargeMultiplier": 2,
+    "sourceDurationEstimateSeconds": 48,
+    "estimatedQuotaSeconds": 96,
+    "remainingBeforeRequest": null,
+    "note": "Published tier limit and source estimate, not measured remaining quota. Stop when the service reports an actual quota/login/terms/payment boundary."
+  },
+  "submitResponse": {
+    "event_id": "1435ef22bce6479ea16fccf92479d8bb"
+  },
+  "eventId": "1435ef22bce6479ea16fccf92479d8bb",
+  "resultEndpoint": "https://minimaxai-minimax-music3.hf.space/gradio_api/call/v2/studio_generate/1435ef22bce6479ea16fccf92479d8bb",
+  "audioFileData": {
+    "path": "/tmp/gradio/2e8b99f398f52aa2bbab6e45b48ec9caf6f11bb1ce6dbb92e78d5b9b75160915/tmpisdpwx8l.wav",
+    "url": "https://minimaxai-minimax-music3.hf.space/gradio_api/file=/tmp/gradio/2e8b99f398f52aa2bbab6e45b48ec9caf6f11bb1ce6dbb92e78d5b9b75160915/tmpisdpwx8l.wav",
+    "size": 6178860,
+    "orig_name": "tmpisdpwx8l.wav",
+    "mime_type": null,
+    "is_stream": false,
+    "meta": {
+      "_type": "gradio.FileData"
+    }
+  },
+  "nativeOutput": {
+    "path": "assets/music/gravity-minimax-full.wav",
+    "bytes": 6178860,
+    "sha256": "ed9bb838db5a8dc2010bb0e598c3a7f70efe70b2996fffe04ee2659706d953b6",
+    "durationSeconds": 35.02730158730159,
+    "sampleRate": 44100,
+    "channels": 2,
+    "sampleWidthBytes": 2,
+    "peakDbfs": -0.00026507636037961915,
+    "rmsDbfs": -18.59671749562429,
+    "nonSilent": true
+  },
+  "playbackOutput": {
+    "path": "web/audio/gravity-minimax.mp3",
+    "bytes": 769297,
+    "sha256": "bfe73c53e68ab0a04924171dfdb0f353e7f5d91f982f537de0f348809072ed50",
+    "codec": "mp3",
+    "sampleRate": 44100,
+    "channels": 2,
+    "bitrate": 192000,
+    "actualDecodedDurationSeconds": 32.0,
+    "nonSilent": true
+  },
+  "edit": {
+    "nativeSourceDurationSeconds": 35.02730158730159,
+    "playbackDurationSeconds": 32,
+    "fadeOutStartSeconds": 31.0,
+    "fadeOutDurationSeconds": 1,
+    "tailSilenceSeconds": 0,
+    "trimmedTailSeconds": 3.0273015873015865,
+    "timeStretch": false,
+    "regeneration": false,
+    "synthesisAdded": false,
+    "filter": "afade=t=out:st=31.000000000000:d=1,atrim=end=32,apad=whole_dur=32"
+  },
+  "verification": {
+    "decodable": true,
+    "decodedPcmSamples": 2822400,
+    "decodedExactly32Seconds": true,
+    "nativeOutputPreserved": true,
+    "listeningVerified": false,
+    "animationSynchronizationVerified": false
+  },
+  "finishedAt": "2026-10-03T01:44:34.233884+00:00",
+  "requestHashSerialization": "Canonical compact UTF-8 JSON, preserving insertion order",
+  "requestBodySha256": "8c3a79dfa18db47abdfcd838871124f2ffae93dcd54587cc9cacf22947d2153d"
+}

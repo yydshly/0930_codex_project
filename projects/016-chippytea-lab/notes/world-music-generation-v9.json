@@ -1,0 +1,476 @@
+{
+  "provider": "MiniMax",
+  "model": "MiniMaxAI/MiniMax-Music3",
+  "route": "official Hugging Face MiniMaxAI ZeroGPU Space",
+  "startedAt": "2026-10-02T18:52:50.269621+00:00",
+  "status": "success",
+  "endpoint": "https://minimaxai-minimax-music3.hf.space/gradio_api/call/v2/studio_generate",
+  "apiName": "/studio_generate",
+  "officialSources": [
+    "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+    "https://huggingface.co/spaces/MiniMaxAI/MiniMax-Music3/blob/main/app.py",
+    "https://huggingface.co/docs/hub/spaces-zerogpu"
+  ],
+  "request": {
+    "state": {
+      "mode": "studio",
+      "description": "Original instrumental miniature for a handmade shadow rehearsal theatre. A timid paper dancer follows a small light, discovers a brave leap, joins a mirrored duet, then bows warmly. No vocals, speech, humming or choir.",
+      "instrumental": true,
+      "title": "A Little Light Rehearsal",
+      "lyrics": "[instrumental]",
+      "global_meta": "Genre: playful acoustic chamber miniature, tactile handmade theatre. BPM: 100. Key: D major. Duration target: 35 seconds, continuous instrumental, no long introduction. Mood progression: first 0-8 seconds tentative and curious; 8-16 seconds courage and a light upward leap; 16-24 seconds flowing mirrored duet; 24-32 seconds warm theatrical bow; 32-35 seconds natural ending and gentle decay. Intimate acoustic stereo, natural dynamics, clear melodic motif, gentle low end.",
+      "vocals": "Instrumental only. No vocals, spoken words, humming, choir, vocal chops or sung melody.",
+      "arrangement": "Begin immediately with a sparse warm felt-piano motif and quiet pizzicato strings, leaving breathing room for the timid dancer. In the second 8-second section the motif climbs as light wooden percussion and marimba answer it, a short upward flourish accompanies the leap. In the third section two complementary piano and plucked-string phrases answer one another like mirrored dancers, supported by soft brushed rhythm. In the fourth section bring the same motif home with warm strings and a restrained satisfying final chord. Let the last three seconds decay naturally. Memorable, lightly mischievous and tender, acoustic instruments, no electronic beeps, no aggressive bass, no cinematic bombast, no vocals."
+    },
+    "duration": 35,
+    "seed": 17,
+    "randomize_seed": false,
+    "headroom": 0,
+    "steps": 30,
+    "guidance": 1.7
+  },
+  "requestSha256": "ef223ed96b818558227c8d0ed80a1789135733af2d57bcfca21d21b75f657d07",
+  "generationPostAttempts": 1,
+  "credentialUsed": false,
+  "paidOverageAllowed": false,
+  "termsAccepted": false,
+  "events": [
+    {
+      "event": "generating",
+      "at": "2026-10-02T18:52:51.641228+00:00",
+      "valueTypes": [
+        "dict",
+        "dict",
+        "dict",
+        "dict",
+        "NoneType"
+      ]
+    },
+    {
+      "event": "generating",
+      "at": "2026-10-02T18:52:54.112425+00:00",
+      "valueTypes": [
+        "dict",
+        "str",
+        "dict",
+        "int",
+        "NoneType"
+      ],
+      "statusText": "ZeroGPU acquired — warming up..."
+    },
+    {
+      "event": "generating",
+      "at": "2026-10-02T18:53:02.495961+00:00",
+      "valueTypes": [
+        "dict",
+        "str",
+        "dict",
+        "int",
+        "NoneType"
+      ],
+      "statusText": "streaming... 5.0s"
+    },
+    {
+      "event": "generating",
+      "at": "2026-10-02T18:53:05.558738+00:00",
+      "valueTypes": [
+        "dict",
+        "str",
+        "dict",
+        "int",
+        "NoneType"
+      ],
+      "statusText": "streaming... 9.0s of audio at 11s"
+    },
+    {
+      "event": "heartbeat",
+      "at": "2026-10-02T18:53:06.647787+00:00",
+      "valueTypes": [
+        "NoneType"
+      ]
+    },
+    {
+      "event": "generating",
+      "at": "2026-10-02T18:53:08.940700+00:00",
+      "valueTypes": [
+        "dict",
+        "str",
+        "dict",
+        "int",
+        "NoneType"
+      ],
+      "statusText": "streaming... 13.0s of audio at 15s"
+    },
+    {
+      "event": "generating",
+      "at": "2026-10-02T18:53:12.309376+00:00",
+      "valueTypes": [
+        "dict",
+        "str",
+        "dict",
+        "int",
+        "NoneType"
+      ],
+      "statusText": "streaming... 17.0s of audio at 18s"
+    },
+    {
+      "event": "generating",
+      "at": "2026-10-02T18:53:15.696777+00:00",
+      "valueTypes": [
+        "dict",
+        "str",
+        "dict",
+        "int",
+        "NoneType"
+      ],
+      "statusText": "streaming... 21.0s of audio at 21s"
+    },
+    {
+      "event": "generating",
+      "at": "2026-10-02T18:53:19.100887+00:00",
+      "valueTypes": [
+        "dict",
+        "str",
+        "dict",
+        "int",
+        "NoneType"
+      ],
+      "statusText": "streaming... 25.0s of audio at 25s"
+    },
+    {
+      "event": "generating",
+      "at": "2026-10-02T18:53:20.590316+00:00",
+      "valueTypes": [
+        "dict",
+        "str",
+        "dict",
+        "int",
+        "NoneType"
+      ],
+      "statusText": "streaming... 29.9s of audio at 26s"
+    },
+    {
+      "event": "generating",
+      "at": "2026-10-02T18:53:20.590880+00:00",
+      "valueTypes": [
+        "dict",
+        "str",
+        "dict",
+        "int",
+        "NoneType"
+      ],
+      "statusText": "done: 29.9s of audio in 26s — rendering share video..."
+    },
+    {
+      "event": "complete",
+      "at": "2026-10-02T18:53:20.592015+00:00",
+      "valueTypes": [
+        "dict",
+        "str",
+        "dict",
+        "int",
+        "NoneType"
+      ],
+      "statusText": "done: 29.9s of audio in 26s — rendering share video..."
+    }
+  ],
+  "submitResponse": {
+    "event_id": "199eec3cebc1448ab96e9b5705120e0b"
+  },
+  "eventId": "199eec3cebc1448ab96e9b5705120e0b",
+  "resultEndpoint": "https://minimaxai-minimax-music3.hf.space/gradio_api/call/v2/studio_generate/199eec3cebc1448ab96e9b5705120e0b",
+  "audioFileData": {
+    "path": "/tmp/gradio/7dd0df34b750ac0834c1cce1e29ce06cf446c547b8ef8c3752825c1a560e2282/tmpd8g2hkbx.wav",
+    "url": "https://minimaxai-minimax-music3.hf.space/gradio_api/file=/tmp/gradio/7dd0df34b750ac0834c1cce1e29ce06cf446c547b8ef8c3752825c1a560e2282/tmpd8g2hkbx.wav",
+    "size": 5281836,
+    "orig_name": "tmpd8g2hkbx.wav",
+    "mime_type": null,
+    "is_stream": false,
+    "meta": {
+      "_type": "gradio.FileData"
+    }
+  },
+  "nativeOutput": {
+    "path": "assets/music/shadow-minimax-full.wav",
+    "providerUrl": "https://minimaxai-minimax-music3.hf.space/gradio_api/file=/tmp/gradio/7dd0df34b750ac0834c1cce1e29ce06cf446c547b8ef8c3752825c1a560e2282/tmpd8g2hkbx.wav",
+    "bytes": 5281836,
+    "sha256": "e71ac97a74e42126e0fefd6d327254bad657b3d4245c1281bd14a9624023c75a",
+    "durationSeconds": 29.942131519274376,
+    "sampleRate": 44100,
+    "channels": 2,
+    "sampleWidthBytes": 2,
+    "peakDbfs": -3.2057173688902663,
+    "rmsDbfs": -25.222760271239792,
+    "nonSilent": true
+  },
+  "downloadedAt": "2026-10-02T18:53:57.162235+00:00",
+  "finishedAt": "2026-10-02T18:55:40.586866+00:00",
+  "playbackOutput": {
+    "path": "web/audio/shadow-minimax.mp3",
+    "bytes": 769297,
+    "sha256": "7d2a3a179725cd7aeee9baa22cfbd45f35854666b53f0b0faf05cde2e292a41a",
+    "codec": "mp3",
+    "sampleRate": 44100,
+    "channels": 2,
+    "bitrate": 192000,
+    "targetDecodedDurationSeconds": 32,
+    "actualDecodedDurationSeconds": 32.0,
+    "containerDurationSeconds": 32.026122,
+    "containerStartTimeSeconds": 0.025057,
+    "mp3DurationNote": "Container includes MP3 encoder delay/padding; decoded PCM has exactly 32 seconds.",
+    "nonSilent": true
+  },
+  "edit": {
+    "nativeSourceDurationSeconds": 29.942131519274376,
+    "requestedGenerationUpperBoundSeconds": 35,
+    "playbackDurationSeconds": 32,
+    "fadeOutStartSeconds": 28.942131519274376,
+    "fadeOutDurationSeconds": 1,
+    "tailSilenceSeconds": 2.057868480725624,
+    "timeStretch": false,
+    "regeneration": false,
+    "synthesisAdded": false,
+    "filter": "afade=t=out:st=28.942131519274:d=1,apad=whole_dur=32",
+    "encoding": "libmp3lame, stereo, 44100 Hz, 192000 bit/s"
+  },
+  "verification": {
+    "decodable": true,
+    "decodedPcmSamples": 2822400,
+    "decodedSampleFrames": 1411200,
+    "decodedExactly32Seconds": true,
+    "nativeOutputPreserved": true,
+    "nonSilentWindows": [
+      {
+        "startSeconds": 0,
+        "endSeconds": 1,
+        "peakDbfs": -18.55477939881613,
+        "rmsDbfs": -35.09283500434221,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 1,
+        "endSeconds": 2,
+        "peakDbfs": -14.986693034766079,
+        "rmsDbfs": -30.482801900500917,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 2,
+        "endSeconds": 3,
+        "peakDbfs": -14.441573720815246,
+        "rmsDbfs": -28.80318459832531,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 3,
+        "endSeconds": 4,
+        "peakDbfs": -11.585763880971205,
+        "rmsDbfs": -24.704694630502786,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 4,
+        "endSeconds": 5,
+        "peakDbfs": -10.49600693281727,
+        "rmsDbfs": -27.128298454584776,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 5,
+        "endSeconds": 6,
+        "peakDbfs": -7.839152670741326,
+        "rmsDbfs": -24.686266340299806,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 6,
+        "endSeconds": 7,
+        "peakDbfs": -18.259117323048738,
+        "rmsDbfs": -35.726428779939674,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 7,
+        "endSeconds": 8,
+        "peakDbfs": -10.987103110270944,
+        "rmsDbfs": -24.463088128563445,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 8,
+        "endSeconds": 9,
+        "peakDbfs": -8.252780880856058,
+        "rmsDbfs": -20.67324735778105,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 9,
+        "endSeconds": 10,
+        "peakDbfs": -15.481238849608978,
+        "rmsDbfs": -30.342185713112006,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 10,
+        "endSeconds": 11,
+        "peakDbfs": -9.696194801821719,
+        "rmsDbfs": -27.17426835628322,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 11,
+        "endSeconds": 12,
+        "peakDbfs": -10.086898102874757,
+        "rmsDbfs": -25.865973508974992,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 12,
+        "endSeconds": 13,
+        "peakDbfs": -9.518336945806562,
+        "rmsDbfs": -27.638596399659257,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 13,
+        "endSeconds": 14,
+        "peakDbfs": -12.210362151281306,
+        "rmsDbfs": -31.737802091722983,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 14,
+        "endSeconds": 15,
+        "peakDbfs": -26.7698190874562,
+        "rmsDbfs": -44.29572093726876,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 15,
+        "endSeconds": 16,
+        "peakDbfs": -27.00411217668814,
+        "rmsDbfs": -44.72884401448334,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 16,
+        "endSeconds": 17,
+        "peakDbfs": -29.239746600685255,
+        "rmsDbfs": -48.58005618268265,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 17,
+        "endSeconds": 18,
+        "peakDbfs": -12.774252756381069,
+        "rmsDbfs": -27.9635754895168,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 18,
+        "endSeconds": 19,
+        "peakDbfs": -10.747215238071506,
+        "rmsDbfs": -21.712341822191394,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 19,
+        "endSeconds": 20,
+        "peakDbfs": -20.100779738990823,
+        "rmsDbfs": -32.327346707062254,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 20,
+        "endSeconds": 21,
+        "peakDbfs": -22.14419939295737,
+        "rmsDbfs": -34.07004777839103,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 21,
+        "endSeconds": 22,
+        "peakDbfs": -9.91006506561751,
+        "rmsDbfs": -29.055924830715583,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 22,
+        "endSeconds": 23,
+        "peakDbfs": -5.360827460762967,
+        "rmsDbfs": -19.744123629056215,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 23,
+        "endSeconds": 24,
+        "peakDbfs": -8.945281464271126,
+        "rmsDbfs": -24.072438826598898,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 24,
+        "endSeconds": 25,
+        "peakDbfs": -10.67172087936735,
+        "rmsDbfs": -22.153479520733235,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 25,
+        "endSeconds": 26,
+        "peakDbfs": -12.00416875307047,
+        "rmsDbfs": -24.960953610961166,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 26,
+        "endSeconds": 27,
+        "peakDbfs": -4.2347125261201475,
+        "rmsDbfs": -22.30377090447877,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 27,
+        "endSeconds": 28,
+        "peakDbfs": -17.985792442242698,
+        "rmsDbfs": -27.84681763094983,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 28,
+        "endSeconds": 29,
+        "peakDbfs": -3.455414027444823,
+        "rmsDbfs": -19.512990106528424,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 29,
+        "endSeconds": 30,
+        "peakDbfs": -38.39907426268287,
+        "rmsDbfs": -56.593231648802075,
+        "nonSilent": true
+      },
+      {
+        "startSeconds": 30,
+        "endSeconds": 31,
+        "peakDbfs": null,
+        "rmsDbfs": null,
+        "nonSilent": false
+      },
+      {
+        "startSeconds": 31,
+        "endSeconds": 32,
+        "peakDbfs": null,
+        "rmsDbfs": null,
+        "nonSilent": false
+      }
+    ],
+    "tailAfterNativeEndpoint": {
+      "peakDbfs": null,
+      "rmsDbfs": null,
+      "nonSilent": false
+    },
+    "listeningVerified": false,
+    "animationSynchronizationVerified": false
+  }
+}

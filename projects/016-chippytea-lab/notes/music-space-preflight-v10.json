@@ -1,0 +1,133 @@
+{
+  "version": 10,
+  "metadataCapturedAt": "2026-10-03T01:40:44.603424+00:00",
+  "metadataUrls": {
+    "space": "https://huggingface.co/api/spaces/MiniMaxAI/MiniMax-Music3",
+    "info": "https://minimaxai-minimax-music3.hf.space/gradio_api/info",
+    "config": "https://minimaxai-minimax-music3.hf.space/config"
+  },
+  "runtime": {
+    "stage": "RUNNING",
+    "hardware": {
+      "current": "zero-a10g",
+      "requested": "zero-a10g"
+    },
+    "gcTimeout": 172800,
+    "replicas": {
+      "current": 1,
+      "requested": 1
+    },
+    "devMode": false,
+    "domains": [
+      {
+        "domain": "diffusers-internal-dev-minimax-music3.hf.space",
+        "stage": "READY"
+      },
+      {
+        "domain": "minimaxai-minimax-music3.hf.space",
+        "stage": "READY"
+      }
+    ],
+    "sha": "929e40ed4e425518693ec955ced52aba5ea6c425",
+    "pySpacesVersion": "0.51.1"
+  },
+  "gradioVersion": "6.24.0",
+  "authRequired": null,
+  "apiName": "/studio_generate",
+  "apiVisibility": "public",
+  "parameters": [
+    {
+      "name": "state",
+      "hasDefault": true,
+      "default": "structured scene-specific instrumental state",
+      "type": {
+        "type": "string"
+      },
+      "component": "Html"
+    },
+    {
+      "name": "duration",
+      "hasDefault": true,
+      "default": 60,
+      "type": {
+        "type": "number",
+        "description": "numeric value between 5 and 300"
+      },
+      "component": "Slider"
+    },
+    {
+      "name": "seed",
+      "hasDefault": true,
+      "default": 0,
+      "type": {
+        "type": "number",
+        "description": "numeric value between 0 and 2147483647"
+      },
+      "component": "Slider"
+    },
+    {
+      "name": "randomize_seed",
+      "hasDefault": true,
+      "default": true,
+      "type": {
+        "type": "boolean"
+      },
+      "component": "Checkbox"
+    },
+    {
+      "name": "headroom",
+      "hasDefault": true,
+      "default": 0,
+      "type": {
+        "type": "number",
+        "description": "numeric value between 0 and 60"
+      },
+      "component": "Slider"
+    },
+    {
+      "name": "steps",
+      "hasDefault": true,
+      "default": 30,
+      "type": {
+        "type": "number",
+        "description": "numeric value between 4 and 60"
+      },
+      "component": "Slider"
+    },
+    {
+      "name": "guidance",
+      "hasDefault": true,
+      "default": 1.7,
+      "type": {
+        "type": "number",
+        "description": "numeric value between 1.0 and 4.0"
+      },
+      "component": "Slider"
+    }
+  ],
+  "officialSources": [
+    "https://huggingface.co/spaces/MiniMaxAI/MiniMax-Music3/blob/main/app.py",
+    "https://huggingface.co/docs/hub/spaces-zerogpu"
+  ],
+  "quota": {
+    "unauthenticatedDailyGpuSeconds": 120,
+    "resetRule": "exactly 24 hours after first GPU usage",
+    "spaceGpuSize": "xlarge",
+    "quotaMultiplier": 2,
+    "durationEstimator": "min(int(duration * (0.75 + 0.20 * steps / 30.0) + 15), 600)",
+    "estimatedGpuSecondsFor35Seconds30Steps": 48,
+    "estimatedQuotaSeconds": 96,
+    "remainingBeforeFirstSubmission": null,
+    "moonServiceReportedRemainingSeconds": 4,
+    "serviceReportedResetDelay": "17:07:22",
+    "observedByReceipt": "world-music-moon-generation-v10.json"
+  },
+  "authorizationBoundaries": {
+    "credentialUsed": false,
+    "login": false,
+    "termsAccepted": false,
+    "paidOverageAllowed": false,
+    "ipOrProxyChanges": false,
+    "onePostPerScene": true
+  }
+}

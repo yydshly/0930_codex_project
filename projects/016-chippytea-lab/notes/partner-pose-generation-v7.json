@@ -1,0 +1,95 @@
+{
+  "version": 7,
+  "generatedAt": "2026-10-03",
+  "tool": "image_gen.imagegen (built-in)",
+  "scope": "Partner response pose assets only. No code changes.",
+  "assets": [
+    {
+      "path": "web/worlds/shadow/light-brave.png",
+      "reference": "web/worlds/shadow/light.png",
+      "generatedSource": "D:/codex/home/generated_images/01a0fdac-fad8-7243-8bfa-b7656ab9cc4a/exec-b34cc672-5ba5-40eb-a1da-88bd9564a551.png",
+      "prompt": "Use case: identity-preserve. Transparent isolated full-body character pose edit. Input Image 1 is the exact golden-faced lavender paper-cloak light creature to preserve. Change ONLY the arm pose: for a big joyful cheering gesture, extend BOTH arms fully straight UP, the two small hands must be ABOVE the top of its hood/head, lifting the whole brown lamp staff aloft. The lower end of the staff must now be above shoulder height; it must not remain vertically planted beside the body or held at chest level. The staff may tilt diagonally across the upper third of the image so the lamp and hand positions are clearly raised overhead. Full creature including lavender cloak and tiny feet below, same shy happy smile and eyes looking left. Preserve golden lamp halo, cloak paper folds, golden round face, rough watercolor grain, exact identity. Single subject, square frame with generous transparent padding all edges, no floor, no scenery, no words, no symbols, no additional characters, no cats or fish. True alpha transparency. No crop.",
+      "visualQA": "Same golden face, lavender folded cloak and amber lamp. Upright, smiling, both arms extend overhead in a clear cheering gesture; one hand raises the diagonal staff and the other cheers beside it. Full feet and cloak preserved. Targeted second generation corrected the initially mild arm pose.",
+      "alphaQA": {
+        "mode": "RGBA",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 862724,
+        "fullyTransparentPixels": 1187457,
+        "transparentFraction": 0.75513,
+        "visibleBBoxThreshold32": [
+          403,
+          58,
+          1098,
+          1122
+        ],
+        "subjectMarginFractionsThreshold32": [
+          0.3214,
+          0.0463,
+          0.1244,
+          0.1053
+        ],
+        "cornersTransparent": true,
+        "pass": true
+      }
+    },
+    {
+      "path": "web/worlds/gravity/wind-rest.png",
+      "reference": "web/worlds/gravity/wind.png",
+      "generatedSource": "D:/codex/home/generated_images/01a0fdac-fad8-7243-8bfa-b7656ab9cc4a/exec-7e4db59b-e4b1-49d7-96b4-4824c5f0809b.png",
+      "prompt": "Use case: identity-preserve. Asset type: isolated transparent full-body character PNG for an illustrated story animation. Input Image 1 is the identity and style reference. Preserve exactly this slender whimsical wind flute sprite: round cream face with rosy cheeks, long flowing pale-blue watercolor hair, blue scarf, cream tunic, extremely thin charcoal arms and legs, blue cream pointed shoes, golden wooden flute, dark hand-drawn ink outlines and grainy watercolor paper texture. Change pose only: after blowing the wind, the same sprite sits on the ground with legs relaxed and folded to one side, flute resting horizontally across the lap, both hands loosely resting on the flute, not blowing. Hair and scarf settle downward in soft resting curls without airborne streaming. Open gentle eyes looking LEFT and a small shy satisfied smile toward the unseen gardener. Whole character including feet, flute and all hair in frame. Single character centered in square image, 15% transparent empty edge margin. True transparent background, no ground shape, no scene, no other character, no cat, no fish, no symbols, no text or watermark. Keep readable silhouette at 300 pixel display width.",
+      "visualQA": "Same blue-haired flute spirit now seated with relaxed folded legs; flute rests across the lap, hair/scarf droop, open eyes look left and small smile. Full body preserved.",
+      "alphaQA": {
+        "mode": "RGBA",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 1537818,
+        "fullyTransparentPixels": 982257,
+        "transparentFraction": 0.62464,
+        "visibleBBoxThreshold32": [
+          69,
+          120,
+          1194,
+          1148
+        ],
+        "subjectMarginFractionsThreshold32": [
+          0.055,
+          0.0957,
+          0.0478,
+          0.0845
+        ],
+        "cornersTransparent": true,
+        "pass": true
+      }
+    },
+    {
+      "path": "web/worlds/moon/tailor-proud.png",
+      "reference": "web/worlds/moon/tailor.png",
+      "generatedSource": "D:/codex/home/generated_images/01a0fdac-fad8-7243-8bfa-b7656ab9cc4a/exec-1567929b-ea9f-48e8-88be-9345a48fdd8c.png",
+      "prompt": "Use case: identity-preserve. Asset type: isolated transparent full-body character pose PNG for a watercolor story animation. Input Image 1 is the exact identity and medium reference. Preserve this same earnest elderly tailor: round spectacles, sparse flying grey hair, rosy peach face with long nose, dark indigo long coat with yellow hand stitches, white cuffs, brown striped trousers, black little shoes, gold scissors in tan coat pocket, rough hand-ink contour and granular watercolor paper texture. Change only pose and emotion: he stands fully upright after finishing his work, feet together, a modest satisfied smile. Both hands hold up a lavender fabric patch with a single small gold star and cobalt stitches at chest height, presenting it toward the RIGHT to the unseen moon. Clearly readable complete patch, two hands and full body, no cut-off. Single character centered in a square image, about 15% transparent empty margin around the silhouette. True transparent background; no floor, no workshop, no other character, no lettering, no watermark, no decorative symbols, no cats or fish. Crisp readable silhouette at a 280 pixel displayed width. Maintain the same identity, proportions, clothes and hand-painted medium.",
+      "visualQA": "Same glasses, indigo stitched coat, gold scissors and striped trousers; now upright with feet together and smiling, two hands clearly present lavender star patch to right. Full body preserved.",
+      "alphaQA": {
+        "mode": "RGBA",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 1056023,
+        "fullyTransparentPixels": 1186860,
+        "transparentFraction": 0.75475,
+        "visibleBBoxThreshold32": [
+          284,
+          76,
+          1016,
+          1188
+        ],
+        "subjectMarginFractionsThreshold32": [
+          0.2265,
+          0.0606,
+          0.1898,
+          0.0526
+        ],
+        "cornersTransparent": true,
+        "pass": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "version": 8,
+  "kind": "component_logic_simulation",
+  "mocked": true,
+  "browserVerification": false,
+  "visualVerification": false,
+  "source": "src/WorldExperience.tsx",
+  "sourceSha256": "71c956b4ac1bf657abc75650d66c9bcf08de7648e411530e19a7079265ebe4d4",
+  "checkedAt": "2026-10-02T18:27:51.860Z",
+  "environment": "Node VM + mocked React hooks, Image, DOM, requestAnimationFrame, localStorage and renderWorld; no real browser or audio",
+  "coverage": [
+    "v6 URL is updated to v8",
+    "dancer-spin PNG loading and legacy pose storage",
+    "pause keeps play time while action and capture ages advance",
+    "ordinary action does not reset capture",
+    "capture dialogue reaches result independently",
+    "rapid captures do not drop count",
+    "32-second play stops at final tableau and still accepts interaction",
+    "drag stays in action phase, including reduced mode",
+    "live reduced-motion switch settles an active capture and fixes action pose",
+    "theater aria-pressed, Escape exit and focus restoration",
+    "renderer diagnostic phase dataset fields"
+  ],
+  "checks": [
+    {
+      "mode": "normal",
+      "passed": true,
+      "urlV": 8,
+      "assetsLoaded": 9,
+      "legacyAndSpinStorage": true,
+      "independentCapture": true,
+      "pauseKeepsPlayTime": true,
+      "dragRetainsAct": true,
+      "theaterEscapeAndFocus": true,
+      "liveReducedModeSwitch": true,
+      "endStops": true
+    },
+    {
+      "mode": "reduced",
+      "passed": true,
+      "urlV": 8,
+      "assetsLoaded": 9,
+      "legacyAndSpinStorage": true,
+      "independentCapture": true,
+      "pauseKeepsPlayTime": true,
+      "dragRetainsAct": true,
+      "theaterEscapeAndFocus": true,
+      "liveReducedModeSwitch": "not_applicable: starts in reduced mode",
+      "endStops": "not_applicable: play time stays static"
+    }
+  ],
+  "limitations": [
+    "No real browser, font/layout, pointer routing, canvas imagery, localStorage persistence across real reloads or audio verification."
+  ]
+}

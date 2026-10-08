@@ -1,0 +1,63 @@
+Use case: infographic-diagram
+Asset type: one exportable Chinese product-understanding infographic for our existing Chippytea research project.
+Primary request: Create a high-resolution landscape infographic, approximately 3000×2000, Chinese text is crisp, accurate and readable. It must clearly explain five questions: source capabilities, value to us, how it works, our three original styles, and future products. This is a rigorous explanatory poster with playful watercolor miniature illustrations, not a UI screenshot.
+Input images: Reference image 1 is the established "引力花园" visual/characters; image 2 is "月亮修补铺"; image 3 is "影子排练场". Reuse their paper, ink and watercolor aesthetic and recognizable characters only within the corresponding three miniature vignette cards. Ignore the text and interface buttons in all reference images. Do not copy any original Chippytea cat or fish.
+Style: warm cream paper with subtle grain, dark crisp Chinese typography, hand-drawn fine black lines, small muted ochre/green/indigo/lavender accents. Friendly editorial infographic, ample negative space, clear numbered sections, consistent thin borders. Body text typeset rather than brush calligraphy. Large title, bold section headers and readable supporting text. Keep everything within safe margins. No 3D, no glowing futuristic tech, no photo, no illegible tiny text.
+Composition:
+- Top title and subtitle, full width.
+- First row, two readable panels: left 01 source capabilities (about 60% width), right 02 value (about 40%).
+- Second row, full-width main focal panel 03 principle. Large left-to-right arrow flow with five stages, and a well-organized labeled inset under the central stage explaining image/animation/music. A small concrete business-mapping example underneath, explicitly marked "待接入".
+- Third row, 04 our styles: three equally-sized cards, each with a compact watercolor miniature scene based on its corresponding reference, name, function-effect ideas and music status. This should be the primary illustrated portion and must preserve space for every word.
+- Bottom row, 05 potential products: six clearly separated compact tiles in a 3×2 grid. Each pairs a product with a plausible functionality-to-world-effect mapping. Label all as future directions, not implemented integrations.
+- Footer contains implementation boundary and source.
+All visible text must be the following exact Simplified Chinese copy, with no additional paragraphs and no repeated/missing sections:
+
+Title: "从 Chippytea 到我们的声画产品"
+Subtitle: "让真实功能结果，长出可参与的声画体验"
+
+01 header: "01  源库能力"
+Source description: "Mac 清理应用 + 互动官网"
+Source first line: "功能：扫描空间 → 审阅影响 → 执行清理 → 成果记账"
+Source second line: "表达：手绘角色 · 收集动画与音效 · 歌词同步 · 互动歌曲"
+Source small line: "应用：SwiftUI / Rust　　网站：React / Canvas / Web Audio"
+Source small caption: "可研究复用的完整产品实现"
+
+02 header: "02  对我们的价值"
+Value bullets: "结果更易感知" / "操作具有情绪与记忆" / "原创品牌 + 可复用编排"
+Value concluding line: "精彩仍依赖创意与节奏设计"
+Value small note: "留存、传播和收益提升：待验证"
+
+03 header: "03  原理：同一含义，共同编排"
+Five flow stages in order: "功能事件" → "确认结果" → "声画编排" → "用户参与" → "世界积累"
+Inset labels below orchestration stage: "图像：角色与世界" / "动画：过程与回应" / "音乐：节奏与情绪"
+Additional principle line: "音乐时间组织段落 · 频谱影响细节 · 功能事件触发动作"
+Concrete example label: "业务映射示例（待接入）"
+Concrete example line: "收藏成功 → 种子落地、生长 + 乐句回应 → 花园留下记录"
+
+04 header: "04  我们的原创扩展样式"
+Shared rule line: "纸底墨线 · 角色关系 · 世界规则 · 四幕故事 · 可参与表演"
+Left card name: "引力花园"
+Left card character caption: "石头园丁 × 风精灵"
+Left card effect line: "吹种 → 接力 → 选位 → 生长"
+Left card music badge: "MiniMax 配乐已生成"
+Center card name: "月亮修补铺"
+Center card character caption: "严肃裁缝 × 淘气月亮"
+Center card effect line: "追逐 → 拉线 → 三针缝补"
+Center card music badge: "配乐待生成"
+Right card name: "影子排练场"
+Right card character caption: "夸张影子 × 害羞光团"
+Right card effect line: "追光 → 旋身 → 共舞 → 留姿"
+Right card music badge: "MiniMax 配乐已生成"
+
+05 header: "05  可扩展产品（待接真实业务）"
+Tile 1: "知识收藏 / 研究归档" and "一份发现 → 一颗种子"
+Tile 2: "任务 / 习惯 / 专注" and "一次完成 → 一幕成长"
+Tile 3: "文件 / 素材整理" and "整理成果 → 场景舒展"
+Tile 4: "创作成果 / 品牌展示" and "产品能力 → 可玩的故事"
+Tile 5: "互动课程 / 新手引导" and "学习进度 → 角色回应"
+Tile 6: "音乐叙事编辑器" and "素材与歌曲 → 可编排场景"
+
+Footer first line: "当前：声画演示与本机互动已实现；真实业务接入及产品收益待验证。"
+Footer second line: "源库：richiemcilroy/chippytea · f245695　｜　本地扩展：016 · v10"
+
+Constraints: Correct factual hierarchy: source is Mac app plus expressive website; current worlds are audiovisual/local interaction demonstrations; product mappings and benefits are future directions. Do not imply moon music exists. Every listed Chinese phrase must be faithfully typeset. No additional invented metrics, testimonials, claims, UI controls, cat/fish, watermark or decorative text. Make text dominate explanations and miniature art support the three styles.

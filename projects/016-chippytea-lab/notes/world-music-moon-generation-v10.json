@@ -1,0 +1,88 @@
+{
+  "version": 10,
+  "scene": "moon",
+  "provider": "MiniMax",
+  "model": "MiniMaxAI/MiniMax-Music3",
+  "route": "official Hugging Face MiniMaxAI ZeroGPU Space",
+  "startedAt": "2026-10-03T01:45:28.024686+00:00",
+  "status": "blocked",
+  "endpoint": "https://minimaxai-minimax-music3.hf.space/gradio_api/call/v2/studio_generate",
+  "apiName": "/studio_generate",
+  "officialSources": [
+    "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+    "https://huggingface.co/spaces/MiniMaxAI/MiniMax-Music3/blob/main/app.py",
+    "https://huggingface.co/docs/hub/spaces-zerogpu"
+  ],
+  "preflight": "music-space-preflight-v10.json",
+  "request": {
+    "state": {
+      "mode": "studio",
+      "instrumental": true,
+      "lyrics": "[instrumental]",
+      "vocals": "Instrumental only. No vocals, words, speech, humming, choir or vocal chops. Do not quote any existing melody.",
+      "title": "Three Stitches for the Moon",
+      "description": "Original instrumental miniature for a cozy handmade moon mending shop: a meticulous tailor follows a mischievous hiccupping golden moon, catches its thread, sews three little patches, and they settle happily. No vocals or speech.",
+      "global_meta": "Genre: witty intimate acoustic chamber miniature. BPM: 112. Key: D major. Duration target: 35 seconds. Begin immediately. Four-part arc: 0-8s a careful three-note stitch motif discovers leaking starlight; 8-16s offbeat hiccups lead to a light elastic chase; 16-24s three clearly articulated stitch accents weave the two motifs together; 24-32s pulling tension releases into a warm floating resolution; 32-35s a short natural decay. Handmade paper theatre, restrained dynamics, clear pulse, no triumphant fanfare.",
+      "arrangement": "Pizzicato chamber strings are the principal voice. Pair a meticulous low plucked-string tailor motif with higher skipping moon replies. Tiny wooden clicks and muted brushed taps form a delicate sewing-like rhythm, never an industrial machine sound. A careful three-note pluck starts immediately. Add a short offbeat pluck and a gentle rhythmic interruption for each imaginary moon hiccup, then a comic elastic chase with pulling and releasing phrases. Three precise stitch accents catch the thread; the string motifs interweave. Warm bowed-string answers arrive near the last section, easing to a soft lyrical phrase and a satisfying compact final chord with clean decay. Acoustic chamber scale, no lyrics, no humming, no choir, no synth drops, no heavy drums. New original melody."
+    },
+    "duration": 35,
+    "seed": 31,
+    "randomize_seed": false,
+    "headroom": 0,
+    "steps": 30,
+    "guidance": 1.7
+  },
+  "requestSha256": "0eb2db4fd3b2b5fb380015664c03a6dfbb3694df4530b3188714575317a895e0",
+  "generationPostAttempts": 1,
+  "credentialUsed": false,
+  "paidOverageAllowed": false,
+  "termsAccepted": false,
+  "quotaEvasion": false,
+  "events": [
+    {
+      "event": "generating",
+      "at": "2026-10-03T01:45:29.409493+00:00",
+      "valueTypes": [
+        "dict",
+        "dict",
+        "dict",
+        "dict",
+        "NoneType"
+      ],
+      "statusText": ""
+    },
+    {
+      "event": "error",
+      "at": "2026-10-03T01:45:29.411093+00:00",
+      "valueTypes": "dict",
+      "error": {
+        "error": "You have exceeded your ZeroGPU quota (96s requested vs. 4s left). Try again in 17:07:22. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens",
+        "duration": 10,
+        "visible": true,
+        "title": "ZeroGPU quota exceeded"
+      }
+    }
+  ],
+  "quota": {
+    "anonymousTierDailySeconds": 120,
+    "xlargeMultiplier": 2,
+    "sourceDurationEstimateSeconds": 48,
+    "estimatedQuotaSeconds": 96,
+    "remainingBeforeRequest": null,
+    "note": "Published tier limit and source estimate, not measured remaining quota. Stop when the service reports an actual quota/login/terms/payment boundary."
+  },
+  "submitResponse": {
+    "event_id": "c2972dae509e495fbc0c87f15d511501"
+  },
+  "eventId": "c2972dae509e495fbc0c87f15d511501",
+  "resultEndpoint": "https://minimaxai-minimax-music3.hf.space/gradio_api/call/v2/studio_generate/c2972dae509e495fbc0c87f15d511501",
+  "blocker": {
+    "error": "You have exceeded your ZeroGPU quota (96s requested vs. 4s left). Try again in 17:07:22. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens",
+    "duration": 10,
+    "visible": true,
+    "title": "ZeroGPU quota exceeded"
+  },
+  "finishedAt": "2026-10-03T01:45:29.411872+00:00",
+  "requestHashSerialization": "Canonical compact UTF-8 JSON, preserving insertion order",
+  "requestBodySha256": "91c51d30cd781a5e2cab48beb8f692c05e6334671c17ccf38c8202bc54bbacb3"
+}

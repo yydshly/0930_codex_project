@@ -173,3 +173,12 @@ GitHub Pages 不运行 Python、Node.js 等后端，也不能从浏览器直接�
 当前为十项独立前端原型，05 / 07 / 09 / 10 为 v16，其余六项为 v15。CSS / Canvas / Three.js 与 Web Audio 提供实际效果，无 Opus API 或模型生成服务。原作者媒体按点击联网加载；WebCodecs 音乐导出需要支持的浏览器与 HTTPS。Blender 新造型、完整物理与商业成效仍未验证。
 
 [正式入口](https://yydshly.github.io/0930_codex_project/projects/015-ai-creative-products/)与[完整理解](https://yydshly.github.io/0930_codex_project/projects/015-ai-creative-products/research.html)已可访问。184 个运行文件、194 处站内链接和原图身份通过全量核对；十项独立演示已做浏览器挂载检查，正式站第 07 项实际场景与夜景控制可用。详见[发布说明](../projects/015-ai-creative-products/notes/publication-20261008.md)、[公网文件核对](../projects/015-ai-creative-products/notes/publication-online-checks.json)与[浏览器记录](../projects/015-ai-creative-products/notes/publication-browser-local.json)。
+
+
+## Chippytea 完整理解与声画展示
+
+2026-10-08：第016项新增[完整理解与全部演出入口](https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/)，以此前生成的理解总览图为引导，保持图像 SHA-256 不变。目录摘要完整说明定位、能力、展示、原理、价值、六类产品方向和边界；总首页显著提供三个原创世界、原作对照、全文档案、引导图和相关研究入口。
+
+[研究档案](https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/research.html)保留源库研究、原创设计、日常工作分析、运行说明、音乐提示和分版本验收全文。公开站完整提供29个世界PNG、两首已生成MiniMax MP3、三支标注为离线渲染的预览及原作组件、来源和许可。原作歌曲仍由原官网远程播放；月亮与纸墨音乐待生成，没有新增生成调用。
+
+使用 scripts/chippytea_publish.py 专项发布及 publication-manifest.json，含72个公共运行文件的大小和SHA-256；公网回执使用只读快照，不请求本机API。世界存档按浏览器来源隔离；真实业务、Mac原生引擎、人工听感及产品收益另行验证。本机60项真实浏览器检查通过，覆盖画面、声音、互动、存储、下载、桌面/手机和完整阅读路径。正式线上状态见016的部署与公网检查记录。

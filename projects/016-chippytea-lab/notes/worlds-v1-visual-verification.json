@@ -1,0 +1,20 @@
+{
+  "date":"2026-10-03",
+  "scope":"三个原创小世界的静音视觉与交互",
+  "visualStatus":"passed",
+  "musicStatus":"blocked",
+  "musicReason":"没有 MiniMax 生成文件；先前官方请求返回 HTTP 410 / 2153",
+  "viewports":[[1440,1024],[390,844]],
+  "checks":{
+    "sceneSwitchAndFourChapters":"passed: 每场63张实际浏览器帧覆盖全部四幕",
+    "pauseReplaySeek":"passed",
+    "canvasClickKeyboardAndPointerDrag":"passed",
+    "localWorldCountsPersistAfterReload":"passed: 三场各收藏1份",
+    "shadowPoseParameters":"保存x/y、时刻、强度，保留最近三个姿势",
+    "realResearchLedger":"前后6份，未调用入册POST",
+    "mobileHorizontalOverflow":false,
+    "consoleWarningsOrErrors":[]
+  },
+  "media":["assets/gravity-world.gif","assets/moon-world.gif","assets/shadow-world.gif"],
+  "limitations":["GIF是约2.6fps采样，网页使用requestAnimationFrame","未验证真实音乐频谱或触屏设备","角色目前使用图层变换，没有完整骨骼或逐帧表情"]
+}

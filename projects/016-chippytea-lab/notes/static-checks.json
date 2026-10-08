@@ -1,0 +1,387 @@
+{
+  "record_type": "read-only static acceptance",
+  "project": "016-chippytea-lab",
+  "checked_at_local": "2026-10-02 Asia/Shanghai",
+  "result": "passed",
+  "browser_checked": false,
+  "upstream_commit": "f24569546c7e06e3355a8742568b8b9d8ce2519b",
+  "failures": [],
+  "source_correspondence": [
+    {
+      "local": "projects/016-chippytea-lab/src/upstream/components/art.tsx",
+      "upstream": ".tmp/chippytea-source/site/components/art.tsx",
+      "upstream_exists": true,
+      "local_sha256": "cc3cc593d0f6122b1e8db065ae870498ad3bc891229fb833403d986e1108017e",
+      "upstream_sha256": "cc3cc593d0f6122b1e8db065ae870498ad3bc891229fb833403d986e1108017e",
+      "identical": true
+    },
+    {
+      "local": "projects/016-chippytea-lab/src/upstream/components/DemoPanel.tsx",
+      "upstream": ".tmp/chippytea-source/site/components/DemoPanel.tsx",
+      "upstream_exists": true,
+      "local_sha256": "12c8e8e656fbae669cdd1ab6094674e0aed1b6e0d1cbebdebcb21a517547dfbe",
+      "upstream_sha256": "12c8e8e656fbae669cdd1ab6094674e0aed1b6e0d1cbebdebcb21a517547dfbe",
+      "identical": true
+    },
+    {
+      "local": "projects/016-chippytea-lab/src/upstream/components/InkBox.tsx",
+      "upstream": ".tmp/chippytea-source/site/components/InkBox.tsx",
+      "upstream_exists": true,
+      "local_sha256": "dabf15d3c00feaf900454d1d88e399373923360adeb1ddaeb31bce297c7dbaff",
+      "upstream_sha256": "dabf15d3c00feaf900454d1d88e399373923360adeb1ddaeb31bce297c7dbaff",
+      "identical": true
+    },
+    {
+      "local": "projects/016-chippytea-lab/src/upstream/components/Karaoke.tsx",
+      "upstream": ".tmp/chippytea-source/site/components/Karaoke.tsx",
+      "upstream_exists": true,
+      "local_sha256": "d6bbf0cf02d25e14e531f1c3f7bf32a41572dfa320784f3f8fda312e30c8ff1e",
+      "upstream_sha256": "b309924ec16e13d0dad17ea2be43b7a5d9a1ffab50c4975bef53774321e70dcd",
+      "identical": false,
+      "diff": [
+        "--- upstream\n",
+        "+++ adapted\n",
+        "@@ -22,5 +22,5 @@\n",
+        " import { InkBox } from \"./InkBox\";",
+        " ",
+        "-const SONG_SRC = \"/save-your-mac-with-chippytea.mp3\";",
+        "+const SONG_SRC = \"https://www.chippytea.com/save-your-mac-with-chippytea.mp3\";",
+        " const SCORE_W = 132;",
+        " const SCORE_H = 40;",
+        "@@ -183,6 +183,6 @@\n",
+        "             <PlayRing size={42} playing={false} seed={45} phases={3} />",
+        "             <span className=\"flex flex-col gap-[3px]\">",
+        "-              <span className=\"text-[14px] font-semibold leading-tight text-ink\">Play the chippytea song</span>",
+        "-              <span className=\"text-[11.5px] font-normal leading-tight text-ink-soft\">Sing along. Two minutes. Chips everywhere.</span>",
+        "+              <span className=\"text-[14px] font-semibold leading-tight text-ink\">播放官网原曲</span>",
+        "+              <span className=\"text-[11.5px] font-normal leading-tight text-ink-soft\">逐词高亮 · 点按投薯条 · 2 分 14 秒</span>",
+        "             </span>",
+        "             <EqChips />",
+        "@@ -237,4 +237,5 @@\n",
+        "   const [leaving, setLeaving] = useState(false);",
+        "   const [duration, setDuration] = useState(0);",
+        "+  const [audioState, setAudioState] = useState<\"loading\" | \"ready\" | \"error\">(\"loading\");",
+        "   const [barW, setBarW] = useState(0);",
+        "   const [reduced] = useState(",
+        "@@ -350,5 +351,8 @@\n",
+        "     const audio = audioRef.current;",
+        "     if (!audio) return;",
+        "+    // Research adaptation: native remote audio and the existing beat fallback.",
+        "+    // Avoid cross-origin MediaElementSource muting; do not redistribute the recording.",
+        "     try {",
+        "+      if (new URL(SONG_SRC, window.location.href).origin !== window.location.origin) throw new Error(\"remote soundtrack: native audio\");",
+        "       const ctx = getAudioContext();",
+        "       sourceRef.current ??= ctx.createMediaElementSource(audio);",
+        "@@ -702,6 +706,19 @@\n",
+        "           setEnded(true);",
+        "         }}",
+        "-        onLoadedMetadata={(event) => setDuration(event.currentTarget.duration)}",
+        "+        onLoadedMetadata={(event) => {",
+        "+          setDuration(event.currentTarget.duration);",
+        "+          setAudioState(\"ready\");",
+        "+        }}",
+        "+        onError={() => {",
+        "+          setPlaying(false);",
+        "+          setAudioState(\"error\");",
+        "+        }}",
+        "       />",
+        "+      {audioState !== \"ready\" && (",
+        "+        <div className=\"audio-warning\" role=\"status\">",
+        "+          {audioState === \"loading\" ? \"正在加载官网原曲…\" : \"官网原曲暂时无法加载。\"}",
+        "+          {audioState === \"error\" && <a href=\"https://www.chippytea.com/\" target=\"_blank\" rel=\"noreferrer\"> 前往官网体验 ↗</a>}",
+        "+        </div>",
+        "+      )}",
+        "       {/* The paper: a dot grid that moves with the section, washed in its colour. */}",
+        "       <div className=\"karaoke-dots\" aria-hidden=\"true\" />"
+      ]
+    },
+    {
+      "local": "projects/016-chippytea-lab/src/upstream/components/sf.tsx",
+      "upstream": ".tmp/chippytea-source/site/components/sf.tsx",
+      "upstream_exists": true,
+      "local_sha256": "6dc3443a7cead40a7a97a3604a9e7a544c8b9128cdf0809ae9eb457cdeea525c",
+      "upstream_sha256": "6dc3443a7cead40a7a97a3604a9e7a544c8b9128cdf0809ae9eb457cdeea525c",
+      "identical": true
+    },
+    {
+      "local": "projects/016-chippytea-lab/src/upstream/lib/art.ts",
+      "upstream": ".tmp/chippytea-source/site/lib/art.ts",
+      "upstream_exists": true,
+      "local_sha256": "b4f875d2c285e95a961524ef4131c4febe746e2376fe51cbf8598439d1bee8d6",
+      "upstream_sha256": "b4f875d2c285e95a961524ef4131c4febe746e2376fe51cbf8598439d1bee8d6",
+      "identical": true
+    },
+    {
+      "local": "projects/016-chippytea-lab/src/upstream/lib/chime.ts",
+      "upstream": ".tmp/chippytea-source/site/lib/chime.ts",
+      "upstream_exists": true,
+      "local_sha256": "6d42d34dedda1c2c999ec6b194d106acc142d3a774ee023969a1349f34706b9e",
+      "upstream_sha256": "6d42d34dedda1c2c999ec6b194d106acc142d3a774ee023969a1349f34706b9e",
+      "identical": true
+    },
+    {
+      "local": "projects/016-chippytea-lab/src/upstream/lib/draw.ts",
+      "upstream": ".tmp/chippytea-source/site/lib/draw.ts",
+      "upstream_exists": true,
+      "local_sha256": "9de2fc255da971de8312fd1692c8b4b8a96889766d67c9525bdf33670d69bd55",
+      "upstream_sha256": "9de2fc255da971de8312fd1692c8b4b8a96889766d67c9525bdf33670d69bd55",
+      "identical": true
+    },
+    {
+      "local": "projects/016-chippytea-lab/src/upstream/lib/ink.ts",
+      "upstream": ".tmp/chippytea-source/site/lib/ink.ts",
+      "upstream_exists": true,
+      "local_sha256": "60e18d55ad8888a060243af85b61cba92a3cc5483a2b31e176b2ea6eb6ff8b1a",
+      "upstream_sha256": "60e18d55ad8888a060243af85b61cba92a3cc5483a2b31e176b2ea6eb6ff8b1a",
+      "identical": true
+    },
+    {
+      "local": "projects/016-chippytea-lab/src/upstream/lib/karaokeScene.ts",
+      "upstream": ".tmp/chippytea-source/site/lib/karaokeScene.ts",
+      "upstream_exists": true,
+      "local_sha256": "25cca62bfdc9a6e2ca5c80f6f0e73614f7e651047262a63f24c6a088ea4dfb40",
+      "upstream_sha256": "25cca62bfdc9a6e2ca5c80f6f0e73614f7e651047262a63f24c6a088ea4dfb40",
+      "identical": true
+    },
+    {
+      "local": "projects/016-chippytea-lab/src/upstream/lib/lyrics.ts",
+      "upstream": ".tmp/chippytea-source/site/lib/lyrics.ts",
+      "upstream_exists": true,
+      "local_sha256": "8e92e4d08509184cb2ce91e8785f36b15f2640d6f6e10eccfc3f87008ebc2570",
+      "upstream_sha256": "8e92e4d08509184cb2ce91e8785f36b15f2640d6f6e10eccfc3f87008ebc2570",
+      "identical": true
+    },
+    {
+      "local": "projects/016-chippytea-lab/src/upstream/lib/sections.ts",
+      "upstream": ".tmp/chippytea-source/site/lib/sections.ts",
+      "upstream_exists": true,
+      "local_sha256": "e6735db68aa2b9d32d31e218b28734c217d4aceaca2b5e6977d5f8b13c16e3ba",
+      "upstream_sha256": "e6735db68aa2b9d32d31e218b28734c217d4aceaca2b5e6977d5f8b13c16e3ba",
+      "identical": true
+    }
+  ],
+  "html_relative_resources": [
+    {
+      "file": "projects/016-chippytea-lab/web/index.html",
+      "attribute": "href",
+      "url": "./upstream.css",
+      "target_exists": true
+    },
+    {
+      "file": "projects/016-chippytea-lab/web/index.html",
+      "attribute": "href",
+      "url": "./style.css",
+      "target_exists": true
+    },
+    {
+      "file": "projects/016-chippytea-lab/web/index.html",
+      "attribute": "src",
+      "url": "./app.js",
+      "target_exists": true
+    },
+    {
+      "file": "projects/016-chippytea-lab/web/source-notice.html",
+      "attribute": "href",
+      "url": "./upstream.css",
+      "target_exists": true
+    },
+    {
+      "file": "projects/016-chippytea-lab/web/source-notice.html",
+      "attribute": "href",
+      "url": "./style.css",
+      "target_exists": true
+    },
+    {
+      "file": "projects/016-chippytea-lab/web/source-notice.html",
+      "attribute": "href",
+      "url": "./",
+      "target_exists": true
+    },
+    {
+      "file": "projects/016-chippytea-lab/web/source-notice.html",
+      "attribute": "href",
+      "url": "./app.js.LEGAL.txt",
+      "target_exists": true
+    },
+    {
+      "file": "projects/016-chippytea-lab/web/source-notice.html",
+      "attribute": "href",
+      "url": "./",
+      "target_exists": true
+    }
+  ],
+  "css_resources": [],
+  "app_navigation": [
+    {
+      "url": "../../",
+      "shared_site_target_exists": true,
+      "standalone_target_exists": false,
+      "standalone_expected_to_resolve_to_intended_target": false,
+      "note": "共享站导航；独立 web 根服务无法访问兄弟项目，总览链接只回到当前服务根"
+    },
+    {
+      "url": "./source-notice.html",
+      "shared_site_target_exists": true,
+      "standalone_target_exists": true,
+      "standalone_expected_to_resolve_to_intended_target": true,
+      "note": "两种服务都使用项目内资源"
+    },
+    {
+      "url": "../004-rhythm-drop/",
+      "shared_site_target_exists": true,
+      "standalone_target_exists": false,
+      "standalone_expected_to_resolve_to_intended_target": false,
+      "note": "共享站导航；独立 web 根服务无法访问兄弟项目，总览链接只回到当前服务根"
+    },
+    {
+      "url": "../008-cellmotion/",
+      "shared_site_target_exists": true,
+      "standalone_target_exists": false,
+      "standalone_expected_to_resolve_to_intended_target": false,
+      "note": "共享站导航；独立 web 根服务无法访问兄弟项目，总览链接只回到当前服务根"
+    },
+    {
+      "url": "../010-dumpling-style-lab/",
+      "shared_site_target_exists": true,
+      "standalone_target_exists": false,
+      "standalone_expected_to_resolve_to_intended_target": false,
+      "note": "共享站导航；独立 web 根服务无法访问兄弟项目，总览链接只回到当前服务根"
+    },
+    {
+      "url": "../015-ai-creative-products/",
+      "shared_site_target_exists": true,
+      "standalone_target_exists": false,
+      "standalone_expected_to_resolve_to_intended_target": false,
+      "note": "共享站导航；独立 web 根服务无法访问兄弟项目，总览链接只回到当前服务根"
+    }
+  ],
+  "page_anchors": [
+    {
+      "href": "#capabilities",
+      "matching_id": true
+    },
+    {
+      "href": "#main",
+      "matching_id": true
+    },
+    {
+      "href": "#music",
+      "matching_id": true
+    },
+    {
+      "href": "#style",
+      "matching_id": true
+    },
+    {
+      "href": "#top",
+      "matching_id": true
+    },
+    {
+      "href": "#value",
+      "matching_id": true
+    }
+  ],
+  "external_references": [
+    {
+      "file": "projects/016-chippytea-lab/web/source-notice.html",
+      "attribute": "href",
+      "url": "https://github.com/richiemcilroy/chippytea/tree/f245695",
+      "checked": "声明与语法检查；未发起网络请求"
+    },
+    {
+      "file": "projects/016-chippytea-lab/web/source-notice.html",
+      "attribute": "href",
+      "url": "https://www.chippytea.com/_next/static/immutable/chunks/2mwteocwimcul.css",
+      "checked": "声明与语法检查；未发起网络请求"
+    },
+    {
+      "file": "projects/016-chippytea-lab/web/source-notice.html",
+      "attribute": "href",
+      "url": "https://www.chippytea.com/",
+      "checked": "声明与语法检查；未发起网络请求"
+    },
+    {
+      "file": "projects/016-chippytea-lab/web/source-notice.html",
+      "attribute": "href",
+      "url": "https://github.com/richiemcilroy/chippytea/blob/f245695/site/README.md#soundtrack-and-karaoke",
+      "checked": "声明与语法检查；未发起网络请求"
+    }
+  ],
+  "image_provenance": [
+    {
+      "file": "projects/016-chippytea-lab/web/assets/source-bridge.jpg",
+      "bytes": 57721,
+      "sha256": "a316268c217a7898281bf93e3634008a77bfdf9b112c1f2336fb98c3587f0b03",
+      "matched_original_audit_capture": "04-karaoke-bridge.jpg",
+      "project_asset_copy_identical": true
+    },
+    {
+      "file": "projects/016-chippytea-lab/web/assets/source-home.jpg",
+      "bytes": 51198,
+      "sha256": "7cb4d50ec84f1f88336a3279baeac53b314c23934123d84f2a5657e6d3fdec65",
+      "matched_original_audit_capture": "01-style.jpg",
+      "project_asset_copy_identical": true
+    },
+    {
+      "file": "projects/016-chippytea-lab/web/assets/source-result.jpg",
+      "bytes": 54169,
+      "sha256": "c9d8ab2a35068265a4e14125211c20d5982b427e542b088f35c0f14dbd0424e4",
+      "matched_original_audit_capture": "02-cleanup-result.jpg",
+      "project_asset_copy_identical": true
+    },
+    {
+      "file": "projects/016-chippytea-lab/web/assets/source-review.jpg",
+      "bytes": 56449,
+      "sha256": "311bf17215df7e9a610988718c80f6783feffcaacf86aeedb87c9593162a10f9",
+      "matched_original_audit_capture": "02-review.jpg",
+      "project_asset_copy_identical": true
+    },
+    {
+      "file": "projects/016-chippytea-lab/web/assets/source-song.jpg",
+      "bytes": 50130,
+      "sha256": "050d5683d473c97f447829474659db480ce485c8d3f2f2897cec575be227f6bf",
+      "matched_original_audit_capture": "03-karaoke.jpg",
+      "project_asset_copy_identical": true
+    }
+  ],
+  "css_provenance": {
+    "url": "https://www.chippytea.com/_next/static/immutable/chunks/2mwteocwimcul.css",
+    "local_sha256": "8fe70e9012f33698dc5405fda39451461cec45a926eeb68a29660aa2a9922d71",
+    "captured_resource_matches": [
+      {
+        "capture_path": "C:\\Users\\yun68\\AppData\\Local\\Temp\\browser-use\\assets\\17cc550b-55c9-43bc-b78e-14cdf350b598\\d1cc8b69be8561c5.css",
+        "identical": true
+      }
+    ]
+  },
+  "license_checks": {
+    "chippytea_license_identical": true,
+    "upstream_license_in_generated_legal": true,
+    "full_react_licenses_in_generated_legal": {
+      "react": true,
+      "react-dom": true,
+      "scheduler": true
+    },
+    "source_notice_mentions_fixed_revision": true,
+    "source_notice_distinguishes_music_rights": true,
+    "source_notice_links_generated_legal": true,
+    "bundle_banner_mentions_attribution": true
+  },
+  "packaging_checks": {
+    "web_file_count": 12,
+    "web_bytes": 602677,
+    "no_node_modules_git_or_audio_files_in_web": true,
+    "unexpected_files": [],
+    "remote_audio_url_in_source": true,
+    "remote_audio_url_in_bundle": true,
+    "shared_legal_file_exists": true,
+    "standalone_does_not_require_node_server": true
+  },
+  "limits": [
+    "未使用浏览器或 Playwright；交互、手机布局、音频播放、可访问性及控制台错误需浏览器验收。",
+    "未发起外部网络请求；外链可用性与歌曲资源状态未在本记录验证。",
+    "兄弟项目与研究总览链接面向共享静态站；单独 web 根服务只支持本项目内容，不能跳转兄弟项目。",
+    "静态许可检查验证声明和原文保留，不评价歌曲商业使用授权。",
+    "未运行 Mac 原生引擎、真实扫描、删除或空间核算。"
+  ]
+}

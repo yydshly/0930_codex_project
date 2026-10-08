@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-03",
+  "tool": "built-in image_gen",
+  "transparent_background": true,
+  "role": "Additional poses of the existing Shadow Rehearsal dancer; existing original assets retained.",
+  "references": [
+    "web/worlds/shadow/dancer.png",
+    "web/worlds/shadow/light.png"
+  ],
+  "assets": [
+    {
+      "path": "web/worlds/shadow/dancer-bow.png",
+      "prompt": "Use case: illustration-story. Asset type: a single transparent character sprite for the existing Shadow Rehearsal web animation. Input image 1 is the identity and material/style reference. Create one alternate pose of exactly the same lanky charcoal-black shadow dancer, keeping its narrow rounded head continuous with elongated torso, cream crescent smile and simple cream eye marks, long elastic arms, long clearly separated fingers, textured irregular hand-cut silhouette, dry charcoal grain and pale scratched fibers. New pose: polite, theatrical full-body deep bow for a curtain call, head and torso leaning forward diagonally, one leg stretched back and the other supporting, one hand gathered across the chest, the opposite arm open to the audience with expressive long fingers. A small grateful smile. Clear readable silhouette distinct from the upright twisting standing pose in the reference. Preserve the original handmade painterly rough paper/charcoal collage style and dark charcoal palette, not smooth vector, not photorealistic or 3D. Composition: whole character centered, generous padding around every hand and foot, no cropping. Transparent background with real alpha and no ground, stage, backdrop, shadow rectangle, props, extra characters, cats, fish, text, or watermark.",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visibleBboxAlpha32": [
+        122,
+        239,
+        1192,
+        1083
+      ],
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "qa": "Passed: consistent narrow charcoal character and cream face; chest hand, extended audience-facing hand and rear leg are distinct from the original. Whole figure, fingers and feet inside the image. Actual transparent alpha. Forward diagonal torso provides a polite curtain-call bow.",
+      "generatedSource": "D:/codex/home/generated_images/01a0fd87-7050-74a0-a709-1d28ae432ccb/exec-f5c2e912-8bd8-4dbf-9775-c8b6cffe6ddc.png"
+    },
+    {
+      "path": "web/worlds/shadow/dancer-leap.png",
+      "prompt": "Use case: illustration-story. Asset type: a single transparent character sprite for the existing Shadow Rehearsal web animation. Input image 1 is the identity, proportions and material/style reference. Create one alternate pose of exactly the same lanky charcoal-black shadow dancer, preserving its narrow rounded head continuous with elongated torso, cream crescent smile and two simple cream eye marks, very long elastic arms, long clearly separated fingers, irregular hand-cut silhouette, dry charcoal grain and pale scratched fibers. New pose: a bold joyful airborne dance leap, both feet visibly off the implied ground, one leg bent high at the knee and the other stretched back diagonally, both arms raised and opened overhead into a broad expressive arc with long fingers spreading, head lifted in comic delight. The broad raised-arm silhouette must read instantly and differ strongly from the reference's waist-height horizontal arms and standing bent-leg pose. Preserve the same handmade painterly rough paper/charcoal collage style and dark charcoal palette, not smooth vector, not photorealistic, not 3D. Composition: entire character centered with generous transparent padding around every fingertip, foot and head, no cropping. True alpha transparent background. No ground, backdrop, stage, external cast shadow, props, extra characters, cats, fish, text or watermark.",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visibleBboxAlpha32": [
+        326,
+        65,
+        1118,
+        1176
+      ],
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "qa": "Passed: consistent charcoal texture, rounded elongated head and cream smile; raised open arms, high bent knee and stretched trailing leg create a clearly distinct airborne leap. Whole silhouette inside the canvas. Actual transparent alpha.",
+      "generatedSource": "D:/codex/home/generated_images/01a0fd87-7050-74a0-a709-1d28ae432ccb/exec-54c0629c-a0a9-441d-be46-7f64827ddef6.png"
+    }
+  ]
+}

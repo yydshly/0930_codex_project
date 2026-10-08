@@ -1,0 +1,4070 @@
+{
+  "mode": "snapshot",
+  "scannedAt": "2026-10-03T02:07:56.938Z",
+  "criteria": {
+    "scope": "只核验清单项目的目录、索引、来源字段及预定义文档/封面/入口；不读取其他个人数据。",
+    "meaning": "工作区结构核验，不代表研究结论、语义、审美或质量通过。",
+    "minimumContentChars": 100,
+    "contentRule": "README 和至少一份 notes 顶层 .md：去掉注释、标题、链接地址及已知模板提示后至少 100 个非空白字符；这是粗略结构规则。",
+    "rewardRule": "每个项目只入册一次；更新资料可更新同一回执的核验，不增加藏册数量。",
+    "optional": "未登记封面或未建立 web/index.html 是可选项；登记了封面但文件不存在则失败。"
+  },
+  "projects": [
+    {
+      "id": 1,
+      "slug": "witr",
+      "name": "witr · 运行来源诊断",
+      "status": "已完成",
+      "path": "projects/001-witr",
+      "cover": "assets/witr-understanding-map.png",
+      "repo": "https://github.com/pranshuparmar/witr",
+      "reference": "",
+      "checks": [
+        {
+          "id": "directory",
+          "label": "项目目录",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/001-witr",
+          "detail": "已存在清单对应目录。"
+        },
+        {
+          "id": "index",
+          "label": "总索引同步",
+          "required": true,
+          "outcome": "pass",
+          "path": "README.md",
+          "detail": "生成索引与清单一致。",
+          "evidence": {
+            "path": "README.md#project-1",
+            "size": 1493,
+            "sha256": "1fcf929ecf6b2a87b59c7387209c19e58886061519b977663d699ea743d5ae41"
+          }
+        },
+        {
+          "id": "source",
+          "label": "来源登记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects.json",
+          "detail": "清单含有效 HTTPS 来源字段：https://github.com/pranshuparmar/witr；未访问或核验上游内容。"
+        },
+        {
+          "id": "readme",
+          "label": "研究说明",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/001-witr/README.md",
+          "detail": "去掉模板提示后 1934 个非空白字符；阈值 100。只确认材料存在。",
+          "evidence": {
+            "path": "projects/001-witr/README.md",
+            "size": 5659,
+            "sha256": "47c9ff9bee8e957374fcbc7207a46068ca5508690c8c685ae99e7a8a6b394a0d",
+            "modifiedAt": "2026-09-29T15:56:34.099271+00:00"
+          }
+        },
+        {
+          "id": "notes",
+          "label": "实质研究笔记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/001-witr/notes",
+          "detail": "3 份顶层 Markdown；3 份满足 100 字符粗略阈值。符合：infographic-prompt.md、research.md、validation.md",
+          "evidence": [
+            {
+              "path": "projects/001-witr/notes/infographic-prompt.md",
+              "size": 6874,
+              "sha256": "1ff8bb3480505df493caa468d5de218c36618c6537401205353076fc8ac8e14f",
+              "modifiedAt": "2026-09-29T15:42:22.688555+00:00"
+            },
+            {
+              "path": "projects/001-witr/notes/research.md",
+              "size": 10110,
+              "sha256": "42d5fde70517634d653b9db672a501fbd6074f6065afef772e7e9211ac21416b",
+              "modifiedAt": "2026-09-29T15:56:36.448969+00:00"
+            },
+            {
+              "path": "projects/001-witr/notes/validation.md",
+              "size": 2749,
+              "sha256": "26fa5bb2c5e35ba97d736574476098602cdf40ea01fcfea024a84e4dd6620c2a",
+              "modifiedAt": "2026-09-29T15:56:37.531770+00:00"
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "label": "登记封面",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/001-witr/assets/witr-understanding-map.png",
+          "detail": "登记图片存在且可读取；未判断画面质量。",
+          "evidence": {
+            "path": "projects/001-witr/assets/witr-understanding-map.png",
+            "size": 2000014,
+            "sha256": "cd657fe86b38e473bd3d47456885f74ddbc9eee0c5a9d8f8fda266910be91821"
+          }
+        },
+        {
+          "id": "web",
+          "label": "展示入口",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/001-witr/web/index.html",
+          "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+          "evidence": [
+            {
+              "path": "projects/001-witr/web/index.html",
+              "size": 9791,
+              "sha256": "e79d73564f4ddd09625df8ed1c1992a995d77f25dc48351143857f5492df06a1",
+              "modifiedAt": "2026-09-29T15:51:01.517835+00:00"
+            },
+            {
+              "path": "projects/001-witr/web/README.md",
+              "size": 2023,
+              "sha256": "c5fdac29443b22725c0e5127077ce78e88b357fb6dd9ea99eb02f58d95a81a1d",
+              "modifiedAt": "2026-09-29T15:56:35.344258+00:00"
+            }
+          ]
+        }
+      ],
+      "ready": true,
+      "fingerprint": "1944238b658daa60d2a398dab5e9983aea8848b83efb91e3181833146de30463",
+      "contentHash": "1944238b658daa60d2a398dab5e9983aea8848b83efb91e3181833146de30463",
+      "receipt": null
+    },
+    {
+      "id": 2,
+      "slug": "huashu-design",
+      "name": "Huashu Design · 设计能力研究",
+      "status": "已完成",
+      "path": "projects/002-huashu-design",
+      "cover": "assets/huashu-capability-map.png",
+      "repo": "https://github.com/alchaincyf/huashu-design",
+      "reference": "",
+      "checks": [
+        {
+          "id": "directory",
+          "label": "项目目录",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/002-huashu-design",
+          "detail": "已存在清单对应目录。"
+        },
+        {
+          "id": "index",
+          "label": "总索引同步",
+          "required": true,
+          "outcome": "pass",
+          "path": "README.md",
+          "detail": "生成索引与清单一致。",
+          "evidence": {
+            "path": "README.md#project-2",
+            "size": 1495,
+            "sha256": "682690bc89d26eff4fd8d28d75b3f6a61b740eae3d6feb423e8b2fed34a52535"
+          }
+        },
+        {
+          "id": "source",
+          "label": "来源登记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects.json",
+          "detail": "清单含有效 HTTPS 来源字段：https://github.com/alchaincyf/huashu-design；未访问或核验上游内容。"
+        },
+        {
+          "id": "readme",
+          "label": "研究说明",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/002-huashu-design/README.md",
+          "detail": "去掉模板提示后 2724 个非空白字符；阈值 100。只确认材料存在。",
+          "evidence": {
+            "path": "projects/002-huashu-design/README.md",
+            "size": 8241,
+            "sha256": "43890351b47c6502e6fe97dfc2042c65e18f42de29ce38cb1f4b9b6a6b7e02f2",
+            "modifiedAt": "2026-10-01T02:49:59.039725+00:00"
+          }
+        },
+        {
+          "id": "notes",
+          "label": "实质研究笔记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/002-huashu-design/notes",
+          "detail": "11 份顶层 Markdown；11 份满足 100 字符粗略阈值。符合：capability-map.md、capability-matrix.md、export-guide.md、extension-guide.md、real-case.md、reproduction.md、research.md、source-map.md、styles-and-cases.md、task-examples.md、understanding.md",
+          "evidence": [
+            {
+              "path": "projects/002-huashu-design/notes/capability-map.md",
+              "size": 1595,
+              "sha256": "d6c789344545a5cd9f83cb02878db2fc13467987f44b14054e4ca95cfcedbdbf",
+              "modifiedAt": "2026-09-29T16:49:41.904416+00:00"
+            },
+            {
+              "path": "projects/002-huashu-design/notes/capability-matrix.md",
+              "size": 21608,
+              "sha256": "99ff400822ef98baad95514873c750ddd4fe8bcdfd3d5b5bc6dd8ed3c4d212e0",
+              "modifiedAt": "2026-10-01T02:45:53.418221+00:00"
+            },
+            {
+              "path": "projects/002-huashu-design/notes/export-guide.md",
+              "size": 7608,
+              "sha256": "150dbb400f5048abf665f517abc38066501298754e4ee36d7c3919ea97ddd97a",
+              "modifiedAt": "2026-09-29T16:16:53.096146+00:00"
+            },
+            {
+              "path": "projects/002-huashu-design/notes/extension-guide.md",
+              "size": 5299,
+              "sha256": "6373878c8bcf70ff72aed54345ffa5d389b75cf455f15a3fa0109a649be3a633",
+              "modifiedAt": "2026-09-29T15:40:51.775484+00:00"
+            },
+            {
+              "path": "projects/002-huashu-design/notes/real-case.md",
+              "size": 11914,
+              "sha256": "c6e5b7b555ec76283e220b23bc168784193d495a400d026ca9ead91d360a4def",
+              "modifiedAt": "2026-09-29T16:33:21.583298+00:00"
+            },
+            {
+              "path": "projects/002-huashu-design/notes/reproduction.md",
+              "size": 5921,
+              "sha256": "1dff005fb1e452fc3238ee39fd5332a7b10c8f534bc5d56e72eed47f75817114",
+              "modifiedAt": "2026-09-29T16:16:49.917014+00:00"
+            },
+            {
+              "path": "projects/002-huashu-design/notes/research.md",
+              "size": 13744,
+              "sha256": "eb3fa0242b4af0fd54b7194d5a4ddbbd13ad90110c957a56a45c93c61b15d726",
+              "modifiedAt": "2026-09-29T16:16:51.631024+00:00"
+            },
+            {
+              "path": "projects/002-huashu-design/notes/source-map.md",
+              "size": 55550,
+              "sha256": "fb33ff4846d4613324a666509b402dcf59aa2c7f3800cb2a1d8dee96ccae6a18",
+              "modifiedAt": "2026-10-01T02:45:53.418221+00:00"
+            },
+            {
+              "path": "projects/002-huashu-design/notes/styles-and-cases.md",
+              "size": 18733,
+              "sha256": "9f3d3aeac05f072ea35049692cc596e12ee3992f1db9596b22a4747f6cf3f82d",
+              "modifiedAt": "2026-10-01T02:45:53.419213+00:00"
+            },
+            {
+              "path": "projects/002-huashu-design/notes/task-examples.md",
+              "size": 2377,
+              "sha256": "b1a8811308f7268a140b9014e90892403fdc5315390163ebef53cfb2d2b1ecf6",
+              "modifiedAt": "2026-10-01T02:45:53.419213+00:00"
+            },
+            {
+              "path": "projects/002-huashu-design/notes/understanding.md",
+              "size": 8213,
+              "sha256": "8f0832bc9c5584b81baa73888838a5c655cb784e582a4a2a9033120576a680df",
+              "modifiedAt": "2026-10-01T02:41:33.048450+00:00"
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "label": "登记封面",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/002-huashu-design/assets/huashu-capability-map.png",
+          "detail": "登记图片存在且可读取；未判断画面质量。",
+          "evidence": {
+            "path": "projects/002-huashu-design/assets/huashu-capability-map.png",
+            "size": 2152109,
+            "sha256": "34d35ebcff800a3be3b1002832dd545d98070ef653fee40c06342bcee83668fa"
+          }
+        },
+        {
+          "id": "web",
+          "label": "展示入口",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/002-huashu-design/web/index.html",
+          "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+          "evidence": [
+            {
+              "path": "projects/002-huashu-design/web/index.html",
+              "size": 20199,
+              "sha256": "3e41cc51f16c1500ec3d384b402a8a4a4efffa08f3ad0f38ba903cd00006cec2",
+              "modifiedAt": "2026-10-01T02:40:29.526572+00:00"
+            },
+            {
+              "path": "projects/002-huashu-design/web/README.md",
+              "size": 3838,
+              "sha256": "b4852d5379d12fcaf5d02eed56c8e4b7fe11eeb04d37a52b86ca245acbe5c9b1",
+              "modifiedAt": "2026-10-01T02:49:59.039725+00:00"
+            }
+          ]
+        }
+      ],
+      "ready": true,
+      "fingerprint": "35ac0a1016cd95e180823039005a5a2e9337ccc70498a4a33f5742b27066c51e",
+      "contentHash": "35ac0a1016cd95e180823039005a5a2e9337ccc70498a4a33f5742b27066c51e",
+      "receipt": {
+        "id": "afa22e6a-f21c-4138-954c-e04eeaa6aaeb",
+        "projectId": 2,
+        "name": "Huashu Design · 设计能力研究",
+        "fingerprint": "35ac0a1016cd95e180823039005a5a2e9337ccc70498a4a33f5742b27066c51e",
+        "checkedAt": "2026-10-02T14:10:08.008Z",
+        "firstCollectedAt": "2026-10-02T14:10:08.008Z",
+        "checks": [
+          {
+            "id": "directory",
+            "label": "项目目录",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/002-huashu-design",
+            "detail": "已存在清单对应目录。"
+          },
+          {
+            "id": "index",
+            "label": "总索引同步",
+            "required": true,
+            "outcome": "pass",
+            "path": "README.md",
+            "detail": "生成索引与清单一致。",
+            "evidence": {
+              "path": "README.md#project-2",
+              "size": 1495,
+              "sha256": "682690bc89d26eff4fd8d28d75b3f6a61b740eae3d6feb423e8b2fed34a52535"
+            }
+          },
+          {
+            "id": "source",
+            "label": "来源登记",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects.json",
+            "detail": "清单含有效 HTTPS 来源字段：https://github.com/alchaincyf/huashu-design；未访问或核验上游内容。"
+          },
+          {
+            "id": "readme",
+            "label": "研究说明",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/002-huashu-design/README.md",
+            "detail": "去掉模板提示后 2724 个非空白字符；阈值 100。只确认材料存在。",
+            "evidence": {
+              "path": "projects/002-huashu-design/README.md",
+              "size": 8241,
+              "sha256": "43890351b47c6502e6fe97dfc2042c65e18f42de29ce38cb1f4b9b6a6b7e02f2",
+              "modifiedAt": "2026-10-01T02:49:59.039725+00:00"
+            }
+          },
+          {
+            "id": "notes",
+            "label": "实质研究笔记",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/002-huashu-design/notes",
+            "detail": "11 份顶层 Markdown；11 份满足 100 字符粗略阈值。符合：capability-map.md、capability-matrix.md、export-guide.md、extension-guide.md、real-case.md、reproduction.md、research.md、source-map.md、styles-and-cases.md、task-examples.md、understanding.md",
+            "evidence": [
+              {
+                "path": "projects/002-huashu-design/notes/capability-map.md",
+                "size": 1595,
+                "sha256": "d6c789344545a5cd9f83cb02878db2fc13467987f44b14054e4ca95cfcedbdbf",
+                "modifiedAt": "2026-09-29T16:49:41.904416+00:00"
+              },
+              {
+                "path": "projects/002-huashu-design/notes/capability-matrix.md",
+                "size": 21608,
+                "sha256": "99ff400822ef98baad95514873c750ddd4fe8bcdfd3d5b5bc6dd8ed3c4d212e0",
+                "modifiedAt": "2026-10-01T02:45:53.418221+00:00"
+              },
+              {
+                "path": "projects/002-huashu-design/notes/export-guide.md",
+                "size": 7608,
+                "sha256": "150dbb400f5048abf665f517abc38066501298754e4ee36d7c3919ea97ddd97a",
+                "modifiedAt": "2026-09-29T16:16:53.096146+00:00"
+              },
+              {
+                "path": "projects/002-huashu-design/notes/extension-guide.md",
+                "size": 5299,
+                "sha256": "6373878c8bcf70ff72aed54345ffa5d389b75cf455f15a3fa0109a649be3a633",
+                "modifiedAt": "2026-09-29T15:40:51.775484+00:00"
+              },
+              {
+                "path": "projects/002-huashu-design/notes/real-case.md",
+                "size": 11914,
+                "sha256": "c6e5b7b555ec76283e220b23bc168784193d495a400d026ca9ead91d360a4def",
+                "modifiedAt": "2026-09-29T16:33:21.583298+00:00"
+              },
+              {
+                "path": "projects/002-huashu-design/notes/reproduction.md",
+                "size": 5921,
+                "sha256": "1dff005fb1e452fc3238ee39fd5332a7b10c8f534bc5d56e72eed47f75817114",
+                "modifiedAt": "2026-09-29T16:16:49.917014+00:00"
+              },
+              {
+                "path": "projects/002-huashu-design/notes/research.md",
+                "size": 13744,
+                "sha256": "eb3fa0242b4af0fd54b7194d5a4ddbbd13ad90110c957a56a45c93c61b15d726",
+                "modifiedAt": "2026-09-29T16:16:51.631024+00:00"
+              },
+              {
+                "path": "projects/002-huashu-design/notes/source-map.md",
+                "size": 55550,
+                "sha256": "fb33ff4846d4613324a666509b402dcf59aa2c7f3800cb2a1d8dee96ccae6a18",
+                "modifiedAt": "2026-10-01T02:45:53.418221+00:00"
+              },
+              {
+                "path": "projects/002-huashu-design/notes/styles-and-cases.md",
+                "size": 18733,
+                "sha256": "9f3d3aeac05f072ea35049692cc596e12ee3992f1db9596b22a4747f6cf3f82d",
+                "modifiedAt": "2026-10-01T02:45:53.419213+00:00"
+              },
+              {
+                "path": "projects/002-huashu-design/notes/task-examples.md",
+                "size": 2377,
+                "sha256": "b1a8811308f7268a140b9014e90892403fdc5315390163ebef53cfb2d2b1ecf6",
+                "modifiedAt": "2026-10-01T02:45:53.419213+00:00"
+              },
+              {
+                "path": "projects/002-huashu-design/notes/understanding.md",
+                "size": 8213,
+                "sha256": "8f0832bc9c5584b81baa73888838a5c655cb784e582a4a2a9033120576a680df",
+                "modifiedAt": "2026-10-01T02:41:33.048450+00:00"
+              }
+            ]
+          },
+          {
+            "id": "cover",
+            "label": "登记封面",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/002-huashu-design/assets/huashu-capability-map.png",
+            "detail": "登记图片存在且可读取；未判断画面质量。",
+            "evidence": {
+              "path": "projects/002-huashu-design/assets/huashu-capability-map.png",
+              "size": 2152109,
+              "sha256": "34d35ebcff800a3be3b1002832dd545d98070ef653fee40c06342bcee83668fa"
+            }
+          },
+          {
+            "id": "web",
+            "label": "展示入口",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/002-huashu-design/web/index.html",
+            "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+            "evidence": [
+              {
+                "path": "projects/002-huashu-design/web/index.html",
+                "size": 20199,
+                "sha256": "3e41cc51f16c1500ec3d384b402a8a4a4efffa08f3ad0f38ba903cd00006cec2",
+                "modifiedAt": "2026-10-01T02:40:29.526572+00:00"
+              },
+              {
+                "path": "projects/002-huashu-design/web/README.md",
+                "size": 3838,
+                "sha256": "b4852d5379d12fcaf5d02eed56c8e4b7fe11eeb04d37a52b86ca245acbe5c9b1",
+                "modifiedAt": "2026-10-01T02:49:59.039725+00:00"
+              }
+            ]
+          }
+        ],
+        "serial": 5,
+        "current": true
+      }
+    },
+    {
+      "id": 3,
+      "slug": "learn-harness-engineering",
+      "name": "Learn Harness Engineering · AI 工作流程研究",
+      "status": "已完成",
+      "path": "projects/003-learn-harness-engineering",
+      "cover": "assets/harness-capability-map.png",
+      "repo": "https://github.com/walkinglabs/learn-harness-engineering",
+      "reference": "",
+      "checks": [
+        {
+          "id": "directory",
+          "label": "项目目录",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/003-learn-harness-engineering",
+          "detail": "已存在清单对应目录。"
+        },
+        {
+          "id": "index",
+          "label": "总索引同步",
+          "required": true,
+          "outcome": "pass",
+          "path": "README.md",
+          "detail": "生成索引与清单一致。",
+          "evidence": {
+            "path": "README.md#project-3",
+            "size": 1802,
+            "sha256": "ac23719b63f3fc3e4bfc42138fc4aad74cd14bd5835bb187adc55d9b276adacd"
+          }
+        },
+        {
+          "id": "source",
+          "label": "来源登记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects.json",
+          "detail": "清单含有效 HTTPS 来源字段：https://github.com/walkinglabs/learn-harness-engineering；未访问或核验上游内容。"
+        },
+        {
+          "id": "readme",
+          "label": "研究说明",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/003-learn-harness-engineering/README.md",
+          "detail": "去掉模板提示后 2272 个非空白字符；阈值 100。只确认材料存在。",
+          "evidence": {
+            "path": "projects/003-learn-harness-engineering/README.md",
+            "size": 7001,
+            "sha256": "5cae8f5d26cf062c566e6f20638389f648c60cb4102ffb2df0a22d61e5c8fb26",
+            "modifiedAt": "2026-10-01T02:49:13.026263+00:00"
+          }
+        },
+        {
+          "id": "notes",
+          "label": "实质研究笔记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/003-learn-harness-engineering/notes",
+          "detail": "10 份顶层 Markdown；10 份满足 100 字符粗略阈值。符合：architecture.md、capability-map.md、capability-matrix.md、course-map.md、extension-guide.md、limitations.md、reproduction.md、research.md、source-map.md、usage-guide.md",
+          "evidence": [
+            {
+              "path": "projects/003-learn-harness-engineering/notes/architecture.md",
+              "size": 7152,
+              "sha256": "bb91a27c2b686696567413391e0eb5ceee0081b917c166e621f265b6deb9650c",
+              "modifiedAt": "2026-09-29T16:30:35.124202+00:00"
+            },
+            {
+              "path": "projects/003-learn-harness-engineering/notes/capability-map.md",
+              "size": 4185,
+              "sha256": "9b48a01e1c8eb38f797e26903202bba50c82275386e83129ae4b23a4ee232a91",
+              "modifiedAt": "2026-09-29T16:59:12.060141+00:00"
+            },
+            {
+              "path": "projects/003-learn-harness-engineering/notes/capability-matrix.md",
+              "size": 30020,
+              "sha256": "2020a76cc4c0ed291d070141717c53e637914a5b1b8c5f6d30afd978c3b2d2ee",
+              "modifiedAt": "2026-10-01T02:42:10.516361+00:00"
+            },
+            {
+              "path": "projects/003-learn-harness-engineering/notes/course-map.md",
+              "size": 19192,
+              "sha256": "dbf764b851ce433cd55462b55aade83430a932ca20218f61f0c17b25557bb0ed",
+              "modifiedAt": "2026-10-01T02:42:10.520360+00:00"
+            },
+            {
+              "path": "projects/003-learn-harness-engineering/notes/extension-guide.md",
+              "size": 5147,
+              "sha256": "2e704449f37f162032447cf39bc8f065f416b067be27cd6c74c309349cd6f418",
+              "modifiedAt": "2026-09-29T16:30:37.745788+00:00"
+            },
+            {
+              "path": "projects/003-learn-harness-engineering/notes/limitations.md",
+              "size": 8072,
+              "sha256": "773e80116d10a9d3f5ac4f56569cb09373046133fd900e45a1856e716847ada3",
+              "modifiedAt": "2026-09-29T16:30:36.800173+00:00"
+            },
+            {
+              "path": "projects/003-learn-harness-engineering/notes/reproduction.md",
+              "size": 4636,
+              "sha256": "cfdd02b7cfde86e806c6e5a131aadc37421b9ce97a2fbe6422b84bc29b2028d6",
+              "modifiedAt": "2026-09-29T16:30:38.535232+00:00"
+            },
+            {
+              "path": "projects/003-learn-harness-engineering/notes/research.md",
+              "size": 7662,
+              "sha256": "e2d6970d8ab46ff40a76387cf9dcba49f8305499d4e0f0074beab661e58136c6",
+              "modifiedAt": "2026-10-01T02:41:40.723225+00:00"
+            },
+            {
+              "path": "projects/003-learn-harness-engineering/notes/source-map.md",
+              "size": 8273,
+              "sha256": "2007c6739f446ee4e38c75dd1c5950081e54869ef36c58c19f691395a485c342",
+              "modifiedAt": "2026-10-01T02:42:10.523486+00:00"
+            },
+            {
+              "path": "projects/003-learn-harness-engineering/notes/usage-guide.md",
+              "size": 7619,
+              "sha256": "c06936d630c8530aeda5d6b1538242d9fce00dd992b6f56fefa0e9801272698c",
+              "modifiedAt": "2026-09-29T16:30:35.864849+00:00"
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "label": "登记封面",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/003-learn-harness-engineering/assets/harness-capability-map.png",
+          "detail": "登记图片存在且可读取；未判断画面质量。",
+          "evidence": {
+            "path": "projects/003-learn-harness-engineering/assets/harness-capability-map.png",
+            "size": 930633,
+            "sha256": "ee9fd2e891fb71bf53776a9cbee466b90fbf7b509ead7be9d1f4a3e60f118e92"
+          }
+        },
+        {
+          "id": "web",
+          "label": "展示入口",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/003-learn-harness-engineering/web/index.html",
+          "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+          "evidence": [
+            {
+              "path": "projects/003-learn-harness-engineering/web/index.html",
+              "size": 136549,
+              "sha256": "983cd0e2640e68f711bb6ab6c42d7a0e9ab8984eb4fcab0dfcebaae8b06077e4",
+              "modifiedAt": "2026-10-01T02:42:10.621082+00:00"
+            },
+            {
+              "path": "projects/003-learn-harness-engineering/web/README.md",
+              "size": 2231,
+              "sha256": "e2a601aeebd49c3f6671c8e555c4c89b74059cd2c8f011d0d59fc92300ddf271",
+              "modifiedAt": "2026-10-01T02:49:13.026263+00:00"
+            }
+          ]
+        }
+      ],
+      "ready": true,
+      "fingerprint": "0651d9d813709f9b78397683908c14ab2be5ca71defe360ab115d82c32f7138e",
+      "contentHash": "0651d9d813709f9b78397683908c14ab2be5ca71defe360ab115d82c32f7138e",
+      "receipt": null
+    },
+    {
+      "id": 4,
+      "slug": "rhythm-drop",
+      "name": "Rhythm Drop · 音乐型声音与视听体验研究",
+      "status": "已归档",
+      "path": "projects/004-rhythm-drop",
+      "cover": "assets/source-effect.jpg",
+      "repo": "https://github.com/mrdoob/three.js",
+      "reference": "https://x.com/Gorden_Sun/status/2105302007896797351",
+      "checks": [
+        {
+          "id": "directory",
+          "label": "项目目录",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/004-rhythm-drop",
+          "detail": "已存在清单对应目录。"
+        },
+        {
+          "id": "index",
+          "label": "总索引同步",
+          "required": true,
+          "outcome": "pass",
+          "path": "README.md",
+          "detail": "生成索引与清单一致。",
+          "evidence": {
+            "path": "README.md#project-4",
+            "size": 1862,
+            "sha256": "f3ee2b33853df7acb27d06cd09367ac8d536a65726b203d87546d6ddbcf40569"
+          }
+        },
+        {
+          "id": "source",
+          "label": "来源登记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects.json",
+          "detail": "清单含有效 HTTPS 来源字段：https://github.com/mrdoob/three.js；未访问或核验上游内容。"
+        },
+        {
+          "id": "readme",
+          "label": "研究说明",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/004-rhythm-drop/README.md",
+          "detail": "去掉模板提示后 5785 个非空白字符；阈值 100。只确认材料存在。",
+          "evidence": {
+            "path": "projects/004-rhythm-drop/README.md",
+            "size": 18675,
+            "sha256": "86889e8d093e23238993038617d7fb01b03d13c0bbf52e88f9a6b8ec9eab0e51",
+            "modifiedAt": "2026-10-02T04:07:18.083043+00:00"
+          }
+        },
+        {
+          "id": "notes",
+          "label": "实质研究笔记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/004-rhythm-drop/notes",
+          "detail": "15 份顶层 Markdown；15 份满足 100 字符粗略阈值。符合：children-game.md、children-series.md、children-story.md、echo-crew-v1.md、echo-garden.md、echo-implementation.md、identity-experiment.md、research-map.md、research-synthesis.md、research.md、sound-ecosystem.md、sound-garden.md、story-direction.md、team-scene.md、validation.md",
+          "evidence": [
+            {
+              "path": "projects/004-rhythm-drop/notes/children-game.md",
+              "size": 4943,
+              "sha256": "6d3a303f854d31774fad4fba8466b761928c318cc0d208289d30a9d39e176138",
+              "modifiedAt": "2026-10-01T17:55:27.037937+00:00"
+            },
+            {
+              "path": "projects/004-rhythm-drop/notes/children-series.md",
+              "size": 7872,
+              "sha256": "73ab028e3fac2193df39ec2234d1981fbee7dd8828afcd1015f6beed2e9db70c",
+              "modifiedAt": "2026-10-01T18:06:17.756506+00:00"
+            },
+            {
+              "path": "projects/004-rhythm-drop/notes/children-story.md",
+              "size": 3091,
+              "sha256": "f21a51eb77af28300f9c946f89cdb29622521b5f86003e28aacdf119b13c6171",
+              "modifiedAt": "2026-10-01T16:53:24.348121+00:00"
+            },
+            {
+              "path": "projects/004-rhythm-drop/notes/echo-crew-v1.md",
+              "size": 7184,
+              "sha256": "7d617b6469f578c713e9520a6b4a7d753f2b526382a773d84c7c2aac01934125",
+              "modifiedAt": "2026-10-01T18:43:54.125090+00:00"
+            },
+            {
+              "path": "projects/004-rhythm-drop/notes/echo-garden.md",
+              "size": 9188,
+              "sha256": "684bfe64a6878483f949f23926b320a71af4448015ad60298270e64d860051b4",
+              "modifiedAt": "2026-10-01T09:48:46.561690+00:00"
+            },
+            {
+              "path": "projects/004-rhythm-drop/notes/echo-implementation.md",
+              "size": 13398,
+              "sha256": "bec26bf9f784118743550c7513a4f22b20ea667f8ef666d9734a72566210716a",
+              "modifiedAt": "2026-10-02T04:07:18.097258+00:00"
+            },
+            {
+              "path": "projects/004-rhythm-drop/notes/identity-experiment.md",
+              "size": 3299,
+              "sha256": "68e6066249dc407ef6b8a7450c5035b71940caeb6829547dab00a64aa7417af1",
+              "modifiedAt": "2026-10-01T06:34:15.621698+00:00"
+            },
+            {
+              "path": "projects/004-rhythm-drop/notes/research-map.md",
+              "size": 9312,
+              "sha256": "feb4ac974107c1b09daa9798ac0bcd0ae071aa71751f3d6aacfb2cef9446f361",
+              "modifiedAt": "2026-10-02T04:07:18.097258+00:00"
+            },
+            {
+              "path": "projects/004-rhythm-drop/notes/research-synthesis.md",
+              "size": 8281,
+              "sha256": "fec083086b13b563494519cf254c2b9723450a1e6fadf07a6935c12becb4603a",
+              "modifiedAt": "2026-10-02T04:07:18.096169+00:00"
+            },
+            {
+              "path": "projects/004-rhythm-drop/notes/research.md",
+              "size": 7410,
+              "sha256": "3ceb9d4361102b28219e547177bbe6a92299e44a19399bbae3fdffb5ff092a74",
+              "modifiedAt": "2026-10-01T06:35:20.759441+00:00"
+            },
+            {
+              "path": "projects/004-rhythm-drop/notes/sound-ecosystem.md",
+              "size": 3051,
+              "sha256": "941898bd83b77f3f73fe87372fd5f69663543c4e45e43f7e43523042ea9c764a",
+              "modifiedAt": "2026-10-01T08:03:41.294514+00:00"
+            },
+            {
+              "path": "projects/004-rhythm-drop/notes/sound-garden.md",
+              "size": 2784,
+              "sha256": "88425c1b68a067c4049cafef2743db32b9123d1223a67024ba26a522b9587da1",
+              "modifiedAt": "2026-10-01T07:33:48.337509+00:00"
+            },
+            {
+              "path": "projects/004-rhythm-drop/notes/story-direction.md",
+              "size": 4295,
+              "sha256": "808b09d8d79246993bd03906749c859ea18666fdb51860e38d34c84ea5a10cc8",
+              "modifiedAt": "2026-10-01T05:28:07.454550+00:00"
+            },
+            {
+              "path": "projects/004-rhythm-drop/notes/team-scene.md",
+              "size": 2734,
+              "sha256": "0632bcc0c79249e62331a202ba9ff1a2dc66c34a9ff4e1ab719b43bfe1701c2b",
+              "modifiedAt": "2026-10-01T07:04:45.756475+00:00"
+            },
+            {
+              "path": "projects/004-rhythm-drop/notes/validation.md",
+              "size": 19594,
+              "sha256": "033f409af9e11c2ee34a831347eb53b4b276679fceeb2d47b3386cbfe750adcd",
+              "modifiedAt": "2026-10-01T10:33:32.791599+00:00"
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "label": "登记封面",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/004-rhythm-drop/assets/source-effect.jpg",
+          "detail": "登记图片存在且可读取；未判断画面质量。",
+          "evidence": {
+            "path": "projects/004-rhythm-drop/assets/source-effect.jpg",
+            "size": 15090,
+            "sha256": "276050a57934ed32a7335f531313907605ddfdc1fcebf67328ef94b137a5e7fc"
+          }
+        },
+        {
+          "id": "web",
+          "label": "展示入口",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/004-rhythm-drop/web/index.html",
+          "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+          "evidence": [
+            {
+              "path": "projects/004-rhythm-drop/web/index.html",
+              "size": 14943,
+              "sha256": "eb43345046dbe329f7a72e2dc135acfee91c0020ddcae78bde875353960d2db7",
+              "modifiedAt": "2026-10-02T04:07:18.098425+00:00"
+            },
+            {
+              "path": "projects/004-rhythm-drop/web/README.md",
+              "size": 1452,
+              "sha256": "5effc8fd7929c469f80d74e154e154af36378eb51bddd3954a95bda28ab92fb2",
+              "modifiedAt": "2026-10-01T10:28:09.460042+00:00"
+            }
+          ]
+        }
+      ],
+      "ready": true,
+      "fingerprint": "946fbe2f21fb47e2ebc12fba888d0904633fb703f18390c3e60d611dbc579420",
+      "contentHash": "946fbe2f21fb47e2ebc12fba888d0904633fb703f18390c3e60d611dbc579420",
+      "receipt": null
+    },
+    {
+      "id": 5,
+      "slug": "plush-lab",
+      "name": "Plush Lab · 毛绒实验室",
+      "status": "已完成",
+      "path": "projects/005-plush-lab",
+      "cover": "assets/local-studio.jpg",
+      "repo": "https://github.com/mrdoob/three.js",
+      "reference": "",
+      "checks": [
+        {
+          "id": "directory",
+          "label": "项目目录",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/005-plush-lab",
+          "detail": "已存在清单对应目录。"
+        },
+        {
+          "id": "index",
+          "label": "总索引同步",
+          "required": true,
+          "outcome": "pass",
+          "path": "README.md",
+          "detail": "生成索引与清单一致。",
+          "evidence": {
+            "path": "README.md#project-5",
+            "size": 1134,
+            "sha256": "705ce3925826c712bcdf8de0b802c083bedd2bbcabb5655123172d75d86daf30"
+          }
+        },
+        {
+          "id": "source",
+          "label": "来源登记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects.json",
+          "detail": "清单含有效 HTTPS 来源字段：https://github.com/mrdoob/three.js；未访问或核验上游内容。"
+        },
+        {
+          "id": "readme",
+          "label": "研究说明",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/005-plush-lab/README.md",
+          "detail": "去掉模板提示后 27647 个非空白字符；阈值 100。只确认材料存在。",
+          "evidence": {
+            "path": "projects/005-plush-lab/README.md",
+            "size": 77459,
+            "sha256": "bcd8dffc597dcf92db3ab345cc44a401ccdf4b9c571d94a149e0d61e6fb04619",
+            "modifiedAt": "2026-10-02T23:36:13.298604+00:00"
+          }
+        },
+        {
+          "id": "notes",
+          "label": "实质研究笔记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/005-plush-lab/notes",
+          "detail": "4 份顶层 Markdown；4 份满足 100 字符粗略阈值。符合：cycles-material-study.md、gaussian-splatting.md、plush-method-selection.md、research.md",
+          "evidence": [
+            {
+              "path": "projects/005-plush-lab/notes/cycles-material-study.md",
+              "size": 98116,
+              "sha256": "16d6b928af896cfbfc807176527b79ff1b957c29267931446e6dc75405722ff5",
+              "modifiedAt": "2026-10-02T23:45:55.161827+00:00"
+            },
+            {
+              "path": "projects/005-plush-lab/notes/gaussian-splatting.md",
+              "size": 33138,
+              "sha256": "2e9c0c14c90a6d79959c5ce88997b6fa8cebabe796e7a4d21451ecc6b5e33c79",
+              "modifiedAt": "2026-10-02T11:15:54.109756+00:00"
+            },
+            {
+              "path": "projects/005-plush-lab/notes/plush-method-selection.md",
+              "size": 34020,
+              "sha256": "13a205c8a04a513e99b83f8c7bd98d06796032b8eb2d27bdccf700979280e443",
+              "modifiedAt": "2026-10-02T23:38:26.304637+00:00"
+            },
+            {
+              "path": "projects/005-plush-lab/notes/research.md",
+              "size": 25405,
+              "sha256": "82f4d5042d6559d78374a9dd60abaf4788687f06cffebbc34e475a6c23818727",
+              "modifiedAt": "2026-10-02T03:59:57.789157+00:00"
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "label": "登记封面",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/005-plush-lab/assets/local-studio.jpg",
+          "detail": "登记图片存在且可读取；未判断画面质量。",
+          "evidence": {
+            "path": "projects/005-plush-lab/assets/local-studio.jpg",
+            "size": 57209,
+            "sha256": "071a4bbc61ea4435d3a389f978742c72172b625093b7756f74be830ae2293fe1"
+          }
+        },
+        {
+          "id": "web",
+          "label": "展示入口",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/005-plush-lab/web/index.html",
+          "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+          "evidence": [
+            {
+              "path": "projects/005-plush-lab/web/index.html",
+              "size": 24680,
+              "sha256": "d5dc1e3b7b65f66bb6f071e8c6dc6cce5fec8f5845ea63b2ce3c1485d947b726",
+              "modifiedAt": "2026-10-02T04:04:23.968843+00:00"
+            },
+            {
+              "path": "projects/005-plush-lab/web/README.md",
+              "size": 1829,
+              "sha256": "236e02eb9e38fa24fe381fd78fea38759c7bd16d5b758aca14d8ff1e5ec56e19",
+              "modifiedAt": "2026-10-02T04:18:13.854071+00:00"
+            }
+          ]
+        }
+      ],
+      "ready": true,
+      "fingerprint": "ac86da321cc29bdc26bedd98052ddba68d0093e89fec5eb738bd767053022efc",
+      "contentHash": "ac86da321cc29bdc26bedd98052ddba68d0093e89fec5eb738bd767053022efc",
+      "receipt": null
+    },
+    {
+      "id": 6,
+      "slug": "ai-visual-atlas",
+      "name": "AI Visual Atlas · 视觉创作能力图谱",
+      "status": "已完成",
+      "path": "projects/006-ai-visual-atlas",
+      "cover": "",
+      "repo": "https://github.com/yihui-dev/awesome-opus5-5-videos",
+      "reference": "https://x.com/NFTCPS/status/2105493719931826452",
+      "checks": [
+        {
+          "id": "directory",
+          "label": "项目目录",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/006-ai-visual-atlas",
+          "detail": "已存在清单对应目录。"
+        },
+        {
+          "id": "index",
+          "label": "总索引同步",
+          "required": true,
+          "outcome": "pass",
+          "path": "README.md",
+          "detail": "生成索引与清单一致。",
+          "evidence": {
+            "path": "README.md#project-6",
+            "size": 556,
+            "sha256": "15f63392cabd56a85ab3dd6e1b7e64291b16f1a670240d3ab38dd53548c669dd"
+          }
+        },
+        {
+          "id": "source",
+          "label": "来源登记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects.json",
+          "detail": "清单含有效 HTTPS 来源字段：https://github.com/yihui-dev/awesome-opus5-5-videos；未访问或核验上游内容。"
+        },
+        {
+          "id": "readme",
+          "label": "研究说明",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/006-ai-visual-atlas/README.md",
+          "detail": "去掉模板提示后 3091 个非空白字符；阈值 100。只确认材料存在。",
+          "evidence": {
+            "path": "projects/006-ai-visual-atlas/README.md",
+            "size": 7806,
+            "sha256": "5a8bae5a49415a7cc190b3dc4fcbb160fa84ecbf23796c9c8adfb6b9058f11ad",
+            "modifiedAt": "2026-10-02T03:39:42.071285+00:00"
+          }
+        },
+        {
+          "id": "notes",
+          "label": "实质研究笔记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/006-ai-visual-atlas/notes",
+          "detail": "4 份顶层 Markdown；4 份满足 100 字符粗略阈值。符合：motion-graphics-music-video-skill-README.md、motion-graphics-music-video-skill-SKILL.md、research.md、shipvideo-README.md",
+          "evidence": [
+            {
+              "path": "projects/006-ai-visual-atlas/notes/motion-graphics-music-video-skill-README.md",
+              "size": 15626,
+              "sha256": "7a4db2833197d67bd0b37f7197c3833f6a57e740b068b9d13377080edb3d806e",
+              "modifiedAt": "2026-10-01T12:50:46.078987+00:00"
+            },
+            {
+              "path": "projects/006-ai-visual-atlas/notes/motion-graphics-music-video-skill-SKILL.md",
+              "size": 13262,
+              "sha256": "b29b9ca9eb7b9a8c81d14b71b66d876c3263f86c6ab781f03ba8f58cfa47d933",
+              "modifiedAt": "2026-10-01T12:50:47.001096+00:00"
+            },
+            {
+              "path": "projects/006-ai-visual-atlas/notes/research.md",
+              "size": 2934,
+              "sha256": "8f46a6ddbd16c2927b8ed9201671e7a58df72f8c9904d1e24175f4b0304c7a13",
+              "modifiedAt": "2026-10-01T13:53:24.514913+00:00"
+            },
+            {
+              "path": "projects/006-ai-visual-atlas/notes/shipvideo-README.md",
+              "size": 3901,
+              "sha256": "8bd1059c3182c02583b4922087ee64b2dede1408a4fde92de11568dd1729fa38",
+              "modifiedAt": "2026-10-01T12:50:41.706266+00:00"
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "label": "登记封面",
+          "required": false,
+          "outcome": "optional",
+          "path": "projects/006-ai-visual-atlas/assets",
+          "detail": "没有登记封面；按仓库约定为可选项。"
+        },
+        {
+          "id": "web",
+          "label": "展示入口",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/006-ai-visual-atlas/web/index.html",
+          "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+          "evidence": [
+            {
+              "path": "projects/006-ai-visual-atlas/web/index.html",
+              "size": 8672,
+              "sha256": "fc95e29035c51caaf93a7453729720c456fa4d074bdb5efcfbc3a8cda6d0ab49",
+              "modifiedAt": "2026-10-02T03:41:20.685204+00:00"
+            },
+            {
+              "path": "projects/006-ai-visual-atlas/web/README.md",
+              "size": 282,
+              "sha256": "c169790bb0d649fe471b5482b65a8d540ff3b773aa95793ad3bd7470ff80ccc9",
+              "modifiedAt": "2026-10-01T11:59:54.751788+00:00"
+            }
+          ]
+        }
+      ],
+      "ready": true,
+      "fingerprint": "88542cb6c8fc547414cb3792ad9b1558b2165dbb91cee0cdad5c5bd254c077e8",
+      "contentHash": "88542cb6c8fc547414cb3792ad9b1558b2165dbb91cee0cdad5c5bd254c077e8",
+      "receipt": null
+    },
+    {
+      "id": 7,
+      "slug": "koi-scene-lab",
+      "name": "Koi Scene Lab · 庭院效果与实景构造",
+      "status": "研究中",
+      "path": "projects/007-koi-scene-lab",
+      "cover": "assets/scene-v2-final.png",
+      "repo": "https://github.com/souranyp-stack/koi-pond-garden",
+      "reference": "",
+      "checks": [
+        {
+          "id": "directory",
+          "label": "项目目录",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/007-koi-scene-lab",
+          "detail": "已存在清单对应目录。"
+        },
+        {
+          "id": "index",
+          "label": "总索引同步",
+          "required": true,
+          "outcome": "pass",
+          "path": "README.md",
+          "detail": "生成索引与清单一致。",
+          "evidence": {
+            "path": "README.md#project-7",
+            "size": 1273,
+            "sha256": "ec1c0dca3b266484ee05dc90135c0642931c633c1aa5c479aca7d384efbc3534"
+          }
+        },
+        {
+          "id": "source",
+          "label": "来源登记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects.json",
+          "detail": "清单含有效 HTTPS 来源字段：https://github.com/souranyp-stack/koi-pond-garden；未访问或核验上游内容。"
+        },
+        {
+          "id": "readme",
+          "label": "研究说明",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/007-koi-scene-lab/README.md",
+          "detail": "去掉模板提示后 20782 个非空白字符；阈值 100。只确认材料存在。",
+          "evidence": {
+            "path": "projects/007-koi-scene-lab/README.md",
+            "size": 63239,
+            "sha256": "cb3d0a29843e300b379ac881d0a6453de1efb1f62f0e3cad7c39599e97e91ead",
+            "modifiedAt": "2026-10-03T00:18:09.225893+00:00"
+          }
+        },
+        {
+          "id": "notes",
+          "label": "实质研究笔记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/007-koi-scene-lab/notes",
+          "detail": "2 份顶层 Markdown；2 份满足 100 字符粗略阈值。符合：research.md、upstream-readme.md",
+          "evidence": [
+            {
+              "path": "projects/007-koi-scene-lab/notes/research.md",
+              "size": 60496,
+              "sha256": "99b54494eeebdcb4699a7af28cd839152c63b443c51351636bcaaa3c6b33a820",
+              "modifiedAt": "2026-10-03T00:18:09.227019+00:00"
+            },
+            {
+              "path": "projects/007-koi-scene-lab/notes/upstream-readme.md",
+              "size": 4988,
+              "sha256": "9ee2b9fbf414a234b34dd95eb314c5f77a9700e95a1009059b6370284367819c",
+              "modifiedAt": "2026-10-01T15:46:10.006326+00:00"
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "label": "登记封面",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/007-koi-scene-lab/assets/scene-v2-final.png",
+          "detail": "登记图片存在且可读取；未判断画面质量。",
+          "evidence": {
+            "path": "projects/007-koi-scene-lab/assets/scene-v2-final.png",
+            "size": 1448313,
+            "sha256": "a4fddbb742f086d8409d7fd8f4a9b31a3b19e1fa1ff4bebb895b211d14aa402e"
+          }
+        },
+        {
+          "id": "web",
+          "label": "展示入口",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/007-koi-scene-lab/web/index.html",
+          "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+          "evidence": [
+            {
+              "path": "projects/007-koi-scene-lab/web/index.html",
+              "size": 47044,
+              "sha256": "dd09ae7d0953de3df4cb91cd8f75fdd88ec171142e04b10bd63028c6f2e8654f",
+              "modifiedAt": "2026-10-02T23:59:24.798663+00:00"
+            },
+            {
+              "path": "projects/007-koi-scene-lab/web/README.md",
+              "size": 775,
+              "sha256": "8ba2ca5b2f70c33555734390b3e2c7ae9eea478c26b2cd0447c07bdbcf06fefc",
+              "modifiedAt": "2026-10-01T16:27:19.021262+00:00"
+            }
+          ]
+        }
+      ],
+      "ready": true,
+      "fingerprint": "ed9d044f1f31b3955bf693cfa95d9439389ff4482e2a15ae1a8b834dde65d006",
+      "contentHash": "ed9d044f1f31b3955bf693cfa95d9439389ff4482e2a15ae1a8b834dde65d006",
+      "receipt": null
+    },
+    {
+      "id": 8,
+      "slug": "cellmotion",
+      "name": "CellMotion · 可编辑动效研究",
+      "status": "已完成",
+      "path": "projects/008-cellmotion",
+      "cover": "assets/overview.png",
+      "repo": "https://github.com/opc8838-hub/font-animation",
+      "reference": "",
+      "checks": [
+        {
+          "id": "directory",
+          "label": "项目目录",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/008-cellmotion",
+          "detail": "已存在清单对应目录。"
+        },
+        {
+          "id": "index",
+          "label": "总索引同步",
+          "required": true,
+          "outcome": "pass",
+          "path": "README.md",
+          "detail": "生成索引与清单一致。",
+          "evidence": {
+            "path": "README.md#project-8",
+            "size": 1346,
+            "sha256": "0c9ceae556d8e91e8006da14b9bba3ab3ec88942e058571920feb44e1d77c88e"
+          }
+        },
+        {
+          "id": "source",
+          "label": "来源登记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects.json",
+          "detail": "清单含有效 HTTPS 来源字段：https://github.com/opc8838-hub/font-animation；未访问或核验上游内容。"
+        },
+        {
+          "id": "readme",
+          "label": "研究说明",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/008-cellmotion/README.md",
+          "detail": "去掉模板提示后 3249 个非空白字符；阈值 100。只确认材料存在。",
+          "evidence": {
+            "path": "projects/008-cellmotion/README.md",
+            "size": 10038,
+            "sha256": "a592cca1775514e5eeec456bc1dbb9a0cd7da46d1213340f45b1488be737a5ff",
+            "modifiedAt": "2026-10-01T17:52:34.086903+00:00"
+          }
+        },
+        {
+          "id": "notes",
+          "label": "实质研究笔记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/008-cellmotion/notes",
+          "detail": "3 份顶层 Markdown；3 份满足 100 字符粗略阈值。符合：research.md、understanding-summary.md、workshop.md",
+          "evidence": [
+            {
+              "path": "projects/008-cellmotion/notes/research.md",
+              "size": 7210,
+              "sha256": "ba94f78f0170366e1136f605ffd38d895d785c14f0cde7a872e62585e3f267a8",
+              "modifiedAt": "2026-10-01T16:29:59.242862+00:00"
+            },
+            {
+              "path": "projects/008-cellmotion/notes/understanding-summary.md",
+              "size": 10610,
+              "sha256": "b82801b192f6966e0cebaa7075925fd41bc1784f5f4349fa9f86559c5b71025a",
+              "modifiedAt": "2026-10-01T17:52:34.085919+00:00"
+            },
+            {
+              "path": "projects/008-cellmotion/notes/workshop.md",
+              "size": 6999,
+              "sha256": "d8a61ec60b4c4ff030ca16f672695d52ad8c754c7471d7962e203c03590ce56f",
+              "modifiedAt": "2026-10-01T17:11:02.127724+00:00"
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "label": "登记封面",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/008-cellmotion/assets/overview.png",
+          "detail": "登记图片存在且可读取；未判断画面质量。",
+          "evidence": {
+            "path": "projects/008-cellmotion/assets/overview.png",
+            "size": 167795,
+            "sha256": "c3bbec5def1d40ddcda49506cfefbe63c2f24bcdbae2400ec585c61ac1427b19"
+          }
+        },
+        {
+          "id": "web",
+          "label": "展示入口",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/008-cellmotion/web/index.html",
+          "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+          "evidence": [
+            {
+              "path": "projects/008-cellmotion/web/index.html",
+              "size": 17003,
+              "sha256": "de0c4029e403773d7ca26fb67d6e39398130dd2b6d586451d4ed9975aed0353d",
+              "modifiedAt": "2026-10-01T17:45:09.781731+00:00"
+            },
+            {
+              "path": "projects/008-cellmotion/web/README.md",
+              "size": 1887,
+              "sha256": "04144dd8959d4dd9e83b1b543fff3a01243d25716e013185a99d9b9d7363a186",
+              "modifiedAt": "2026-10-01T17:52:34.086903+00:00"
+            }
+          ]
+        }
+      ],
+      "ready": true,
+      "fingerprint": "3fc845561c5aa6feda2513c0bb86c9491bcc72957693c78cb64ee33441e0e727",
+      "contentHash": "3fc845561c5aa6feda2513c0bb86c9491bcc72957693c78cb64ee33441e0e727",
+      "receipt": {
+        "id": "dfb04a5b-bfb0-4f69-a65d-7bbbc7b27d3a",
+        "projectId": 8,
+        "name": "CellMotion · 可编辑动效研究",
+        "fingerprint": "3fc845561c5aa6feda2513c0bb86c9491bcc72957693c78cb64ee33441e0e727",
+        "checkedAt": "2026-10-02T13:36:26.655Z",
+        "firstCollectedAt": "2026-10-02T13:36:26.655Z",
+        "checks": [
+          {
+            "id": "directory",
+            "label": "项目目录",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/008-cellmotion",
+            "detail": "已存在清单对应目录。"
+          },
+          {
+            "id": "index",
+            "label": "总索引同步",
+            "required": true,
+            "outcome": "pass",
+            "path": "README.md",
+            "detail": "生成索引与清单一致。",
+            "evidence": {
+              "path": "README.md#project-8",
+              "size": 1346,
+              "sha256": "0c9ceae556d8e91e8006da14b9bba3ab3ec88942e058571920feb44e1d77c88e"
+            }
+          },
+          {
+            "id": "source",
+            "label": "来源登记",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects.json",
+            "detail": "清单含有效 HTTPS 来源字段：https://github.com/opc8838-hub/font-animation；未访问或核验上游内容。"
+          },
+          {
+            "id": "readme",
+            "label": "研究说明",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/008-cellmotion/README.md",
+            "detail": "去掉模板提示后 3249 个非空白字符；阈值 100。只确认材料存在。",
+            "evidence": {
+              "path": "projects/008-cellmotion/README.md",
+              "size": 10038,
+              "sha256": "a592cca1775514e5eeec456bc1dbb9a0cd7da46d1213340f45b1488be737a5ff",
+              "modifiedAt": "2026-10-01T17:52:34.086903+00:00"
+            }
+          },
+          {
+            "id": "notes",
+            "label": "实质研究笔记",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/008-cellmotion/notes",
+            "detail": "3 份顶层 Markdown；3 份满足 100 字符粗略阈值。符合：research.md、understanding-summary.md、workshop.md",
+            "evidence": [
+              {
+                "path": "projects/008-cellmotion/notes/research.md",
+                "size": 7210,
+                "sha256": "ba94f78f0170366e1136f605ffd38d895d785c14f0cde7a872e62585e3f267a8",
+                "modifiedAt": "2026-10-01T16:29:59.242862+00:00"
+              },
+              {
+                "path": "projects/008-cellmotion/notes/understanding-summary.md",
+                "size": 10610,
+                "sha256": "b82801b192f6966e0cebaa7075925fd41bc1784f5f4349fa9f86559c5b71025a",
+                "modifiedAt": "2026-10-01T17:52:34.085919+00:00"
+              },
+              {
+                "path": "projects/008-cellmotion/notes/workshop.md",
+                "size": 6999,
+                "sha256": "d8a61ec60b4c4ff030ca16f672695d52ad8c754c7471d7962e203c03590ce56f",
+                "modifiedAt": "2026-10-01T17:11:02.127724+00:00"
+              }
+            ]
+          },
+          {
+            "id": "cover",
+            "label": "登记封面",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/008-cellmotion/assets/overview.png",
+            "detail": "登记图片存在且可读取；未判断画面质量。",
+            "evidence": {
+              "path": "projects/008-cellmotion/assets/overview.png",
+              "size": 167795,
+              "sha256": "c3bbec5def1d40ddcda49506cfefbe63c2f24bcdbae2400ec585c61ac1427b19"
+            }
+          },
+          {
+            "id": "web",
+            "label": "展示入口",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/008-cellmotion/web/index.html",
+            "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+            "evidence": [
+              {
+                "path": "projects/008-cellmotion/web/index.html",
+                "size": 17003,
+                "sha256": "de0c4029e403773d7ca26fb67d6e39398130dd2b6d586451d4ed9975aed0353d",
+                "modifiedAt": "2026-10-01T17:45:09.781731+00:00"
+              },
+              {
+                "path": "projects/008-cellmotion/web/README.md",
+                "size": 1887,
+                "sha256": "04144dd8959d4dd9e83b1b543fff3a01243d25716e013185a99d9b9d7363a186",
+                "modifiedAt": "2026-10-01T17:52:34.086903+00:00"
+              }
+            ]
+          }
+        ],
+        "serial": 3,
+        "current": true
+      }
+    },
+    {
+      "id": 9,
+      "slug": "sprite-destruction-lab",
+      "name": "Sprite Destruction Lab · 网页破坏交互研究",
+      "status": "已完成",
+      "path": "projects/009-sprite-destruction-lab",
+      "cover": "assets/source-effect.png",
+      "repo": "https://github.com/liabru/matter-js",
+      "reference": "https://destroy.spritefusion.com/",
+      "checks": [
+        {
+          "id": "directory",
+          "label": "项目目录",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/009-sprite-destruction-lab",
+          "detail": "已存在清单对应目录。"
+        },
+        {
+          "id": "index",
+          "label": "总索引同步",
+          "required": true,
+          "outcome": "pass",
+          "path": "README.md",
+          "detail": "生成索引与清单一致。",
+          "evidence": {
+            "path": "README.md#project-9",
+            "size": 1990,
+            "sha256": "6c96df3ea2e19edc05512d864d55f9d0fa1f01e15a680a23a2d39604fd2ace74"
+          }
+        },
+        {
+          "id": "source",
+          "label": "来源登记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects.json",
+          "detail": "清单含有效 HTTPS 来源字段：https://github.com/liabru/matter-js；未访问或核验上游内容。"
+        },
+        {
+          "id": "readme",
+          "label": "研究说明",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/009-sprite-destruction-lab/README.md",
+          "detail": "去掉模板提示后 4898 个非空白字符；阈值 100。只确认材料存在。",
+          "evidence": {
+            "path": "projects/009-sprite-destruction-lab/README.md",
+            "size": 14023,
+            "sha256": "af077ecf4bfbe176db27b4fda81d43f26a3d80b50204c39e0003cc114d9aa300",
+            "modifiedAt": "2026-10-02T06:19:19.841538+00:00"
+          }
+        },
+        {
+          "id": "notes",
+          "label": "实质研究笔记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/009-sprite-destruction-lab/notes",
+          "detail": "8 份顶层 Markdown；8 份满足 100 字符粗略阈值。符合：avatar-anywhere.md、avatar-mischief.md、effect-modes.md、product-workbench.md、research-summary.md、research.md、verification.md、web-toolbox.md",
+          "evidence": [
+            {
+              "path": "projects/009-sprite-destruction-lab/notes/avatar-anywhere.md",
+              "size": 6251,
+              "sha256": "7d4361144cb5467cef8f52032d8b28469ada90b8a5d401af7a6f26c535345ff2",
+              "modifiedAt": "2026-10-02T05:32:37.954530+00:00"
+            },
+            {
+              "path": "projects/009-sprite-destruction-lab/notes/avatar-mischief.md",
+              "size": 8611,
+              "sha256": "cb69518008cd93f9b2e2376def24d76e08321cf8fa674b9724937cd2b74327f7",
+              "modifiedAt": "2026-10-02T04:38:47.450954+00:00"
+            },
+            {
+              "path": "projects/009-sprite-destruction-lab/notes/effect-modes.md",
+              "size": 3718,
+              "sha256": "ba0fe2d32dbb3e4cae6831f1b012bb3c9f007ed451310c84c8881173c7310898",
+              "modifiedAt": "2026-10-01T18:12:52.353959+00:00"
+            },
+            {
+              "path": "projects/009-sprite-destruction-lab/notes/product-workbench.md",
+              "size": 7198,
+              "sha256": "0750a7c9e4477385baeda75fb89f414038527af5e52de2c37c0d96e4f22b241a",
+              "modifiedAt": "2026-10-02T02:59:08.600808+00:00"
+            },
+            {
+              "path": "projects/009-sprite-destruction-lab/notes/research-summary.md",
+              "size": 9902,
+              "sha256": "7116b4e747ba2231dc06db131c42ce19ada0429a9f24248708bb4c0069a4cdc4",
+              "modifiedAt": "2026-10-02T06:25:55.821331+00:00"
+            },
+            {
+              "path": "projects/009-sprite-destruction-lab/notes/research.md",
+              "size": 3521,
+              "sha256": "cd07b5f486a84582dd79f548f74cc4659046ec6fabbe1511ab7432ceca515c35",
+              "modifiedAt": "2026-10-01T16:53:57.840899+00:00"
+            },
+            {
+              "path": "projects/009-sprite-destruction-lab/notes/verification.md",
+              "size": 3327,
+              "sha256": "7743aaba48f237cc533b30adbf0ab1d1642be9938b48c4b6eee2113fa471538f",
+              "modifiedAt": "2026-10-02T06:25:55.819661+00:00"
+            },
+            {
+              "path": "projects/009-sprite-destruction-lab/notes/web-toolbox.md",
+              "size": 14217,
+              "sha256": "b7c3350b5f98ead520a9b86e8647ef3159fa6c7551c520be5b685a14365f08bd",
+              "modifiedAt": "2026-10-02T04:08:13.641460+00:00"
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "label": "登记封面",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/009-sprite-destruction-lab/assets/source-effect.png",
+          "detail": "登记图片存在且可读取；未判断画面质量。",
+          "evidence": {
+            "path": "projects/009-sprite-destruction-lab/assets/source-effect.png",
+            "size": 106063,
+            "sha256": "85c34607bba6baa5a4e6c8c41618e8c5c4bd4fd415d79c3fda0d027e966f2181"
+          }
+        },
+        {
+          "id": "web",
+          "label": "展示入口",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/009-sprite-destruction-lab/web/index.html",
+          "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+          "evidence": [
+            {
+              "path": "projects/009-sprite-destruction-lab/web/index.html",
+              "size": 12070,
+              "sha256": "6bc4a90fc02de6ecb161647aa64b708fdf0a64b45b974858118a3050dc390e69",
+              "modifiedAt": "2026-10-02T06:01:16.981463+00:00"
+            },
+            {
+              "path": "projects/009-sprite-destruction-lab/web/README.md",
+              "size": 2526,
+              "sha256": "fdfd18d3dbc879997319129102c1c93e388503ea65bb5ba5fcf89255a024824b",
+              "modifiedAt": "2026-10-02T06:15:14.862790+00:00"
+            }
+          ]
+        }
+      ],
+      "ready": true,
+      "fingerprint": "d34302ed7ed97cc1d321aa64cd0bcb6f92cc6dd905b688781471096b85cb9f72",
+      "contentHash": "d34302ed7ed97cc1d321aa64cd0bcb6f92cc6dd905b688781471096b85cb9f72",
+      "receipt": null
+    },
+    {
+      "id": 10,
+      "slug": "dumpling-style-lab",
+      "name": "Dumpling Style Lab · 小世界的新故事",
+      "status": "已完成",
+      "path": "projects/010-dumpling-style-lab",
+      "cover": "assets/original-world.png",
+      "repo": "",
+      "reference": "https://dumpling-dell.pages.dev/",
+      "checks": [
+        {
+          "id": "directory",
+          "label": "项目目录",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/010-dumpling-style-lab",
+          "detail": "已存在清单对应目录。"
+        },
+        {
+          "id": "index",
+          "label": "总索引同步",
+          "required": true,
+          "outcome": "pass",
+          "path": "README.md",
+          "detail": "生成索引与清单一致。",
+          "evidence": {
+            "path": "README.md#project-10",
+            "size": 1886,
+            "sha256": "dcdc3c58fe0736e8ab21431ea9776aa47e1e30c6aa8406859fab3f494c9cb2e5"
+          }
+        },
+        {
+          "id": "source",
+          "label": "来源登记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects.json",
+          "detail": "清单含有效 HTTPS 来源字段：https://dumpling-dell.pages.dev/；未访问或核验上游内容。"
+        },
+        {
+          "id": "readme",
+          "label": "研究说明",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/010-dumpling-style-lab/README.md",
+          "detail": "去掉模板提示后 5385 个非空白字符；阈值 100。只确认材料存在。",
+          "evidence": {
+            "path": "projects/010-dumpling-style-lab/README.md",
+            "size": 18068,
+            "sha256": "abc28ba593c9ee83248fb94181bdcf4cdb9b6516758ab10ccfd246aa6d7fb643",
+            "modifiedAt": "2026-10-03T00:03:33.826513+00:00"
+          }
+        },
+        {
+          "id": "notes",
+          "label": "实质研究笔记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/010-dumpling-style-lab/notes",
+          "detail": "9 份顶层 Markdown；9 份满足 100 字符粗略阈值。符合：art-directions.md、extensions-v1.md、extensions-v2.md、game-art-emotion.md、moving-day-product.md、research.md、showcase-polish.md、spatial-worlds.md、worlds-product.md",
+          "evidence": [
+            {
+              "path": "projects/010-dumpling-style-lab/notes/art-directions.md",
+              "size": 4289,
+              "sha256": "af4f03bdf5d20d0cd45e53fc8ae1fe63f203566ffce53e782e0d983207c091a1",
+              "modifiedAt": "2026-10-02T15:25:26.571550+00:00"
+            },
+            {
+              "path": "projects/010-dumpling-style-lab/notes/extensions-v1.md",
+              "size": 10997,
+              "sha256": "5c593b818cc6168634b2bf7d3715e61f22a8392a3cf336584b7698fe8b22049f",
+              "modifiedAt": "2026-10-02T06:07:45.610734+00:00"
+            },
+            {
+              "path": "projects/010-dumpling-style-lab/notes/extensions-v2.md",
+              "size": 5635,
+              "sha256": "d4229a85683796d733ff3ce98b8a22045e00cd4924baadc42c53239d74bc7555",
+              "modifiedAt": "2026-10-02T06:05:57.107079+00:00"
+            },
+            {
+              "path": "projects/010-dumpling-style-lab/notes/game-art-emotion.md",
+              "size": 8896,
+              "sha256": "483770c8addd200e07e0b350f840ab5ee09566e9ec66b411cbb9ac80bda7fa81",
+              "modifiedAt": "2026-10-02T03:08:50.272978+00:00"
+            },
+            {
+              "path": "projects/010-dumpling-style-lab/notes/moving-day-product.md",
+              "size": 5347,
+              "sha256": "c4cd15ae478d563d032c09468f7dc88b7b29d1d6b1b1e54ff5f0f90a8ab23d20",
+              "modifiedAt": "2026-10-02T13:02:06.215252+00:00"
+            },
+            {
+              "path": "projects/010-dumpling-style-lab/notes/research.md",
+              "size": 10431,
+              "sha256": "8308c56711f742f7513eb4de4d32779e7c764dba31024b835cdf45d67b2c937b",
+              "modifiedAt": "2026-10-02T03:03:57.533115+00:00"
+            },
+            {
+              "path": "projects/010-dumpling-style-lab/notes/showcase-polish.md",
+              "size": 4189,
+              "sha256": "ae65397be5904f55a7a73b128cdbba5a8c5ac9c260c64ec0c93c51c71250eeff",
+              "modifiedAt": "2026-10-03T00:03:33.827776+00:00"
+            },
+            {
+              "path": "projects/010-dumpling-style-lab/notes/spatial-worlds.md",
+              "size": 4779,
+              "sha256": "2914a8e1e7cdc405b2a06ad07fb2798d9daa9e9c14b8e727c3cc317f29db93b0",
+              "modifiedAt": "2026-10-02T16:20:38.144826+00:00"
+            },
+            {
+              "path": "projects/010-dumpling-style-lab/notes/worlds-product.md",
+              "size": 8001,
+              "sha256": "eec7b538a8f4191ab953e0d0802ddf92017969b3f827fe833749228f999949d5",
+              "modifiedAt": "2026-10-02T14:28:47.180079+00:00"
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "label": "登记封面",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/010-dumpling-style-lab/assets/original-world.png",
+          "detail": "登记图片存在且可读取；未判断画面质量。",
+          "evidence": {
+            "path": "projects/010-dumpling-style-lab/assets/original-world.png",
+            "size": 27442,
+            "sha256": "072fdaf2202b64aa653d5281cf342543b469ade5112c050a85999333d30074d5"
+          }
+        },
+        {
+          "id": "web",
+          "label": "展示入口",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/010-dumpling-style-lab/web/index.html",
+          "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+          "evidence": [
+            {
+              "path": "projects/010-dumpling-style-lab/web/index.html",
+              "size": 22592,
+              "sha256": "6513edae057c07e2f7706df0c578cc3a04ab8c9b5e414dcfcb87da84ce9069db",
+              "modifiedAt": "2026-10-02T18:03:08.935999+00:00"
+            },
+            {
+              "path": "projects/010-dumpling-style-lab/web/README.md",
+              "size": 13589,
+              "sha256": "a1bd798e6cdeba879718b40486e07e8ef6548ed2530bf10fe347874420f72525",
+              "modifiedAt": "2026-10-03T00:03:33.827165+00:00"
+            }
+          ]
+        }
+      ],
+      "ready": true,
+      "fingerprint": "cf48323006902098cf9cbdb82ed49345e1919c5abb4a5b849bc31777a162885d",
+      "contentHash": "cf48323006902098cf9cbdb82ed49345e1919c5abb4a5b849bc31777a162885d",
+      "receipt": {
+        "id": "7e9d5ba9-e4fd-4b40-8d2a-a1c6710afe49",
+        "projectId": 10,
+        "name": "Dumpling Style Lab · 小世界的新故事",
+        "fingerprint": "d91810f1ba777490d90ea4ed76b1804e390c2f149d5dc2a2c579ead3bf047d93",
+        "checkedAt": "2026-10-02T14:04:15.576Z",
+        "firstCollectedAt": "2026-10-02T14:04:15.576Z",
+        "checks": [
+          {
+            "id": "directory",
+            "label": "项目目录",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/010-dumpling-style-lab",
+            "detail": "已存在清单对应目录。"
+          },
+          {
+            "id": "index",
+            "label": "总索引同步",
+            "required": true,
+            "outcome": "pass",
+            "path": "README.md",
+            "detail": "生成索引与清单一致。",
+            "evidence": {
+              "path": "README.md#project-10",
+              "size": 1702,
+              "sha256": "223b8d6826e6cf33991034bfb7584375eb014af38922ee24dc09826eee34d39f"
+            }
+          },
+          {
+            "id": "source",
+            "label": "来源登记",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects.json",
+            "detail": "清单含有效 HTTPS 来源字段：https://dumpling-dell.pages.dev/；未访问或核验上游内容。"
+          },
+          {
+            "id": "readme",
+            "label": "研究说明",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/010-dumpling-style-lab/README.md",
+            "detail": "去掉模板提示后 4240 个非空白字符；阈值 100。只确认材料存在。",
+            "evidence": {
+              "path": "projects/010-dumpling-style-lab/README.md",
+              "size": 14128,
+              "sha256": "5645d3783fff2e74b671fac0a507485bf712313cbe1818620822391d4f6d4701",
+              "modifiedAt": "2026-10-02T12:47:13.051048+00:00"
+            }
+          },
+          {
+            "id": "notes",
+            "label": "实质研究笔记",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/010-dumpling-style-lab/notes",
+            "detail": "6 份顶层 Markdown；6 份满足 100 字符粗略阈值。符合：extensions-v1.md、extensions-v2.md、game-art-emotion.md、moving-day-product.md、research.md、worlds-product.md",
+            "evidence": [
+              {
+                "path": "projects/010-dumpling-style-lab/notes/extensions-v1.md",
+                "size": 10997,
+                "sha256": "5c593b818cc6168634b2bf7d3715e61f22a8392a3cf336584b7698fe8b22049f",
+                "modifiedAt": "2026-10-02T06:07:45.610734+00:00"
+              },
+              {
+                "path": "projects/010-dumpling-style-lab/notes/extensions-v2.md",
+                "size": 5635,
+                "sha256": "d4229a85683796d733ff3ce98b8a22045e00cd4924baadc42c53239d74bc7555",
+                "modifiedAt": "2026-10-02T06:05:57.107079+00:00"
+              },
+              {
+                "path": "projects/010-dumpling-style-lab/notes/game-art-emotion.md",
+                "size": 8896,
+                "sha256": "483770c8addd200e07e0b350f840ab5ee09566e9ec66b411cbb9ac80bda7fa81",
+                "modifiedAt": "2026-10-02T03:08:50.272978+00:00"
+              },
+              {
+                "path": "projects/010-dumpling-style-lab/notes/moving-day-product.md",
+                "size": 5347,
+                "sha256": "c4cd15ae478d563d032c09468f7dc88b7b29d1d6b1b1e54ff5f0f90a8ab23d20",
+                "modifiedAt": "2026-10-02T13:02:06.215252+00:00"
+              },
+              {
+                "path": "projects/010-dumpling-style-lab/notes/research.md",
+                "size": 10431,
+                "sha256": "8308c56711f742f7513eb4de4d32779e7c764dba31024b835cdf45d67b2c937b",
+                "modifiedAt": "2026-10-02T03:03:57.533115+00:00"
+              },
+              {
+                "path": "projects/010-dumpling-style-lab/notes/worlds-product.md",
+                "size": 5368,
+                "sha256": "f0939f7d9004daad2d9a293228a5fade1db90c391535264d06c50516de594d58",
+                "modifiedAt": "2026-10-02T12:53:53.005743+00:00"
+              }
+            ]
+          },
+          {
+            "id": "cover",
+            "label": "登记封面",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/010-dumpling-style-lab/assets/original-world.png",
+            "detail": "登记图片存在且可读取；未判断画面质量。",
+            "evidence": {
+              "path": "projects/010-dumpling-style-lab/assets/original-world.png",
+              "size": 27442,
+              "sha256": "072fdaf2202b64aa653d5281cf342543b469ade5112c050a85999333d30074d5"
+            }
+          },
+          {
+            "id": "web",
+            "label": "展示入口",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/010-dumpling-style-lab/web/index.html",
+            "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+            "evidence": [
+              {
+                "path": "projects/010-dumpling-style-lab/web/index.html",
+                "size": 21923,
+                "sha256": "f79d6d11a2451dd97b702733fd7fa0d83b01127bae49067d63215ac651c5e877",
+                "modifiedAt": "2026-10-02T12:47:13.160851+00:00"
+              },
+              {
+                "path": "projects/010-dumpling-style-lab/web/README.md",
+                "size": 8970,
+                "sha256": "2e02fd67c58b52f8ecb8add47fc345af0fce2a1109721b12df05b8b149f8557c",
+                "modifiedAt": "2026-10-02T12:47:13.122048+00:00"
+              }
+            ]
+          }
+        ],
+        "serial": 4,
+        "current": false
+      }
+    },
+    {
+      "id": 11,
+      "slug": "combination-soup-studio",
+      "name": "Combination Soup Studio · 交互展示与业务价值",
+      "status": "已完成",
+      "path": "projects/011-combination-soup-studio",
+      "cover": "assets/scene-polish-v8-gallery.png",
+      "repo": "",
+      "reference": "https://combinationsoupstudio.com.au/",
+      "checks": [
+        {
+          "id": "directory",
+          "label": "项目目录",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/011-combination-soup-studio",
+          "detail": "已存在清单对应目录。"
+        },
+        {
+          "id": "index",
+          "label": "总索引同步",
+          "required": true,
+          "outcome": "pass",
+          "path": "README.md",
+          "detail": "生成索引与清单一致。",
+          "evidence": {
+            "path": "README.md#project-11",
+            "size": 1501,
+            "sha256": "4ea7dce292aea5dbca6e3279974f393b3d0f5048df4f5a5d25c0de4346d5932b"
+          }
+        },
+        {
+          "id": "source",
+          "label": "来源登记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects.json",
+          "detail": "清单含有效 HTTPS 来源字段：https://combinationsoupstudio.com.au/；未访问或核验上游内容。"
+        },
+        {
+          "id": "readme",
+          "label": "研究说明",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/011-combination-soup-studio/README.md",
+          "detail": "去掉模板提示后 9091 个非空白字符；阈值 100。只确认材料存在。",
+          "evidence": {
+            "path": "projects/011-combination-soup-studio/README.md",
+            "size": 31506,
+            "sha256": "0d0a91d71b45832726bfa4b5deec759bfec820dc82edafa21db3a0afb1a4d3d2",
+            "modifiedAt": "2026-10-03T01:46:42.599245+00:00"
+          }
+        },
+        {
+          "id": "notes",
+          "label": "实质研究笔记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/011-combination-soup-studio/notes",
+          "detail": "17 份顶层 Markdown；17 份满足 100 字符粗略阈值。符合：effect-correction.md、effects-breakdown.md、foundry-live-workbench-v14.md、foundry-refinement-v13.md、foundry-v1-review.md、headphone-art-direction-v16.md、headphone-build-v12.md、headphone-material-focus-v15.md、product-visual-review.md、research.md、scene-visual-review-v5.md、scene-visual-review-v6.md、scene-visual-review-v7.md、scene-visual-review-v8.md、skills-and-value.md、toilet-build-v10.md、toilet-presentation-v11.md",
+          "evidence": [
+            {
+              "path": "projects/011-combination-soup-studio/notes/effect-correction.md",
+              "size": 3183,
+              "sha256": "54cbc6e6137b0e8823a2996efb798c01e3789b67ccdd57480ed12aebe2920450",
+              "modifiedAt": "2026-10-02T03:35:07.793593+00:00"
+            },
+            {
+              "path": "projects/011-combination-soup-studio/notes/effects-breakdown.md",
+              "size": 5829,
+              "sha256": "8861cf4ce899a7b24b5073d084a741b8feeb1d065b73d6605e2d99efc45cedcb",
+              "modifiedAt": "2026-10-01T18:39:57.587609+00:00"
+            },
+            {
+              "path": "projects/011-combination-soup-studio/notes/foundry-live-workbench-v14.md",
+              "size": 3734,
+              "sha256": "eabb99d6640cf3efa09571b6b8d9288c8c20c4431be9dffb3d3e78804607c5b1",
+              "modifiedAt": "2026-10-02T18:14:17.290727+00:00"
+            },
+            {
+              "path": "projects/011-combination-soup-studio/notes/foundry-refinement-v13.md",
+              "size": 3810,
+              "sha256": "fa51cc2b440c1f2e0f57adc739ebdbf59f8911702d4983227a306a9ddfb6983e",
+              "modifiedAt": "2026-10-02T17:47:43.504297+00:00"
+            },
+            {
+              "path": "projects/011-combination-soup-studio/notes/foundry-v1-review.md",
+              "size": 2826,
+              "sha256": "3db7f9740052f8ea8da3eca1ab97c99e780cc7e23f8339cfc04030b10980a572",
+              "modifiedAt": "2026-10-02T14:05:33.508352+00:00"
+            },
+            {
+              "path": "projects/011-combination-soup-studio/notes/headphone-art-direction-v16.md",
+              "size": 5330,
+              "sha256": "4c5345cb2b12094ee78d8e3a839212b13171e653612007ef23421d94b3149141",
+              "modifiedAt": "2026-10-03T01:49:39.834077+00:00"
+            },
+            {
+              "path": "projects/011-combination-soup-studio/notes/headphone-build-v12.md",
+              "size": 4849,
+              "sha256": "a6a28e7fd5d5afcf9edaf03f4da9581b3af6792013f748064e3bbe3de4f50243",
+              "modifiedAt": "2026-10-02T16:46:08.062684+00:00"
+            },
+            {
+              "path": "projects/011-combination-soup-studio/notes/headphone-material-focus-v15.md",
+              "size": 5353,
+              "sha256": "50071618cbe8dce866a7f583c75bab78ff23becaff41e1679244fc686833b26e",
+              "modifiedAt": "2026-10-03T01:43:50.228367+00:00"
+            },
+            {
+              "path": "projects/011-combination-soup-studio/notes/product-visual-review.md",
+              "size": 2092,
+              "sha256": "48357ffd3119dcc566a3cba076b778b3e1773871d0655858f7cdb9ac003fd9e6",
+              "modifiedAt": "2026-10-02T05:26:54.463616+00:00"
+            },
+            {
+              "path": "projects/011-combination-soup-studio/notes/research.md",
+              "size": 3687,
+              "sha256": "25c55d5ff1cb6af2394d2efd177776faa8be27ac9474e2f3892c629293a90b9c",
+              "modifiedAt": "2026-10-01T17:53:27.839811+00:00"
+            },
+            {
+              "path": "projects/011-combination-soup-studio/notes/scene-visual-review-v5.md",
+              "size": 3856,
+              "sha256": "2b3b1bebc00aeb7f2f136cf2892a98d12d20acde1d9f7dfbf7df747b20d1e872",
+              "modifiedAt": "2026-10-02T07:10:31.821389+00:00"
+            },
+            {
+              "path": "projects/011-combination-soup-studio/notes/scene-visual-review-v6.md",
+              "size": 2514,
+              "sha256": "5650072844f05d898d8913f30bac695b5478a24ea910326cfaff5cb978f5465f",
+              "modifiedAt": "2026-10-02T10:16:43.061848+00:00"
+            },
+            {
+              "path": "projects/011-combination-soup-studio/notes/scene-visual-review-v7.md",
+              "size": 2741,
+              "sha256": "76f1fe6825660fc5d553832a0223cfe3b18f3ccb8256791c6a393c36ef0c5437",
+              "modifiedAt": "2026-10-02T10:46:12.379706+00:00"
+            },
+            {
+              "path": "projects/011-combination-soup-studio/notes/scene-visual-review-v8.md",
+              "size": 3302,
+              "sha256": "764e7dbade4946b39e4f218af3d95c70b3e696ddae25b2154f638480468fe31d",
+              "modifiedAt": "2026-10-02T11:35:25.757090+00:00"
+            },
+            {
+              "path": "projects/011-combination-soup-studio/notes/skills-and-value.md",
+              "size": 5979,
+              "sha256": "9d3972c08b342eb32e4fb68acee44671f0673bac765ea4cb1f0c34acbd6c3423",
+              "modifiedAt": "2026-10-02T10:16:43.064980+00:00"
+            },
+            {
+              "path": "projects/011-combination-soup-studio/notes/toilet-build-v10.md",
+              "size": 4344,
+              "sha256": "2af0c47b548a5e2016e6b24577569cb67a3bdb327bf6c5f0a83e620aa9df7278",
+              "modifiedAt": "2026-10-02T14:05:33.509352+00:00"
+            },
+            {
+              "path": "projects/011-combination-soup-studio/notes/toilet-presentation-v11.md",
+              "size": 3723,
+              "sha256": "08dbcc5b733ec837d98210bba022cc6644eba8f9c1e28c9d7a9e0fc95491cae5",
+              "modifiedAt": "2026-10-02T15:04:18.728914+00:00"
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "label": "登记封面",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/011-combination-soup-studio/assets/scene-polish-v8-gallery.png",
+          "detail": "登记图片存在且可读取；未判断画面质量。",
+          "evidence": {
+            "path": "projects/011-combination-soup-studio/assets/scene-polish-v8-gallery.png",
+            "size": 1911210,
+            "sha256": "031217322896f2ce1e4467e50777134ea1f294fb6bbc331e52251e0713efb8f2"
+          }
+        },
+        {
+          "id": "web",
+          "label": "展示入口",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/011-combination-soup-studio/web/index.html",
+          "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+          "evidence": [
+            {
+              "path": "projects/011-combination-soup-studio/web/index.html",
+              "size": 36459,
+              "sha256": "2a7e880df4be66377eafae625f475dc72c0297af5787bf18ec7ca244952ad191",
+              "modifiedAt": "2026-10-02T13:53:59.678576+00:00"
+            },
+            {
+              "path": "projects/011-combination-soup-studio/web/README.md",
+              "size": 11551,
+              "sha256": "2fd4cf21a8c2e18162307e432538f87022a5be77b9ba42de056f943607c20543",
+              "modifiedAt": "2026-10-02T11:33:15.840912+00:00"
+            }
+          ]
+        }
+      ],
+      "ready": true,
+      "fingerprint": "9a35221574e61925ea95f63f366e94d71a140a47dff60662dce59959203fd14d",
+      "contentHash": "9a35221574e61925ea95f63f366e94d71a140a47dff60662dce59959203fd14d",
+      "receipt": null
+    },
+    {
+      "id": 12,
+      "slug": "black-hole-lab",
+      "name": "Black Hole Lab · 黑洞形成与现象实验室",
+      "status": "已完成",
+      "path": "projects/012-black-hole-lab",
+      "cover": "assets/observer-result.png",
+      "repo": "",
+      "reference": "https://www.reddit.com/r/SoloDevelopment/comments/1wr6jr4/my_black_hole_shader_for_my_game/",
+      "checks": [
+        {
+          "id": "directory",
+          "label": "项目目录",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/012-black-hole-lab",
+          "detail": "已存在清单对应目录。"
+        },
+        {
+          "id": "index",
+          "label": "总索引同步",
+          "required": true,
+          "outcome": "pass",
+          "path": "README.md",
+          "detail": "生成索引与清单一致。",
+          "evidence": {
+            "path": "README.md#project-12",
+            "size": 1066,
+            "sha256": "99dedf5acfb8ab020a85582b415962e23266fb70a6db225519f8bb9d61587c2f"
+          }
+        },
+        {
+          "id": "source",
+          "label": "来源登记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects.json",
+          "detail": "清单含有效 HTTPS 来源字段：https://www.reddit.com/r/SoloDevelopment/comments/1wr6jr4/my_black_hole_shader_for_my_game/；未访问或核验上游内容。"
+        },
+        {
+          "id": "readme",
+          "label": "研究说明",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/012-black-hole-lab/README.md",
+          "detail": "去掉模板提示后 2115 个非空白字符；阈值 100。只确认材料存在。",
+          "evidence": {
+            "path": "projects/012-black-hole-lab/README.md",
+            "size": 6220,
+            "sha256": "8f790bb04baa1ce8731c788c1a173e3410cc056108c8cda378eb00f7580dedbd",
+            "modifiedAt": "2026-10-02T09:53:12.082487+00:00"
+          }
+        },
+        {
+          "id": "notes",
+          "label": "实质研究笔记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/012-black-hole-lab/notes",
+          "detail": "6 份顶层 Markdown；6 份满足 100 字符粗略阈值。符合：CONSTRUCTION.md、NARRATION.md、PRINCIPLES.md、SCIENCE.md、UNDERSTANDING.md、research.md",
+          "evidence": [
+            {
+              "path": "projects/012-black-hole-lab/notes/CONSTRUCTION.md",
+              "size": 4533,
+              "sha256": "9c004f99ce4aefe3fce9e390674a6b6f4cc4a4aa16755e4d501eed5815329ad7",
+              "modifiedAt": "2026-10-02T04:13:55.411429+00:00"
+            },
+            {
+              "path": "projects/012-black-hole-lab/notes/NARRATION.md",
+              "size": 20305,
+              "sha256": "aec27df1dea5a464fbf13a18a5a9dcdde43be302d272142fba06816711fc2a5d",
+              "modifiedAt": "2026-10-02T04:15:52.491537+00:00"
+            },
+            {
+              "path": "projects/012-black-hole-lab/notes/PRINCIPLES.md",
+              "size": 9736,
+              "sha256": "7fcd80567d4eb6816790a608aebbba688ad3145142c328849eaf801b2639863b",
+              "modifiedAt": "2026-10-02T04:13:55.412510+00:00"
+            },
+            {
+              "path": "projects/012-black-hole-lab/notes/SCIENCE.md",
+              "size": 8785,
+              "sha256": "9f0ebb66ee9791953fb84d7c5f8a22dfddec3a89d478483624215829a746606c",
+              "modifiedAt": "2026-10-02T03:10:15.128563+00:00"
+            },
+            {
+              "path": "projects/012-black-hole-lab/notes/UNDERSTANDING.md",
+              "size": 6568,
+              "sha256": "00c53f39ada246f53d16c28091b97cf8799b744c751c5f624cfb5d9fefaf9d0d",
+              "modifiedAt": "2026-10-02T09:53:12.083489+00:00"
+            },
+            {
+              "path": "projects/012-black-hole-lab/notes/research.md",
+              "size": 3045,
+              "sha256": "928d61e34ef64279df2e997926b8d4a9a96c2bf7a156c3ea4fd2cd00e8cd0065",
+              "modifiedAt": "2026-10-01T18:33:20.977250+00:00"
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "label": "登记封面",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/012-black-hole-lab/assets/observer-result.png",
+          "detail": "登记图片存在且可读取；未判断画面质量。",
+          "evidence": {
+            "path": "projects/012-black-hole-lab/assets/observer-result.png",
+            "size": 515693,
+            "sha256": "9511d04e85a80cd3f7024b40866252218e51b7630918be198413f10d18d300ff"
+          }
+        },
+        {
+          "id": "web",
+          "label": "展示入口",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/012-black-hole-lab/web/index.html",
+          "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+          "evidence": [
+            {
+              "path": "projects/012-black-hole-lab/web/index.html",
+              "size": 31164,
+              "sha256": "3a62355b2df08fa3f30b36803c65265d915b01a72960b85f5c3df86aa19945d6",
+              "modifiedAt": "2026-10-02T09:53:12.079330+00:00"
+            },
+            {
+              "path": "projects/012-black-hole-lab/web/README.md",
+              "size": 2764,
+              "sha256": "15ff1e12cf8d05b682cd4390cfed628deae426027cdcb85d25cf8d492f7bbd70",
+              "modifiedAt": "2026-10-02T09:59:22.688756+00:00"
+            }
+          ]
+        }
+      ],
+      "ready": true,
+      "fingerprint": "ea7d4a09fb8c462c44fd606a9f2948f92456254b1f0304b28b775f46b5916832",
+      "contentHash": "ea7d4a09fb8c462c44fd606a9f2948f92456254b1f0304b28b775f46b5916832",
+      "receipt": null
+    },
+    {
+      "id": 13,
+      "slug": "insightface-retrieval",
+      "name": "InsightFace · 人脸与视频截图检索理解",
+      "status": "已完成",
+      "path": "projects/013-insightface-retrieval",
+      "cover": "assets/understanding-map.png",
+      "repo": "https://github.com/deepinsight/insightface",
+      "reference": "https://avscan.cc/",
+      "checks": [
+        {
+          "id": "directory",
+          "label": "项目目录",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/013-insightface-retrieval",
+          "detail": "已存在清单对应目录。"
+        },
+        {
+          "id": "index",
+          "label": "总索引同步",
+          "required": true,
+          "outcome": "pass",
+          "path": "README.md",
+          "detail": "生成索引与清单一致。",
+          "evidence": {
+            "path": "README.md#project-13",
+            "size": 1658,
+            "sha256": "29f820b861684ca80f105d780f088bd0aca465c9c6fc75c159aa79e60bc2df54"
+          }
+        },
+        {
+          "id": "source",
+          "label": "来源登记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects.json",
+          "detail": "清单含有效 HTTPS 来源字段：https://github.com/deepinsight/insightface；未访问或核验上游内容。"
+        },
+        {
+          "id": "readme",
+          "label": "研究说明",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/013-insightface-retrieval/README.md",
+          "detail": "去掉模板提示后 3659 个非空白字符；阈值 100。只确认材料存在。",
+          "evidence": {
+            "path": "projects/013-insightface-retrieval/README.md",
+            "size": 10966,
+            "sha256": "57779ebb7117b3d4e669c81f2fab2a8663f7d718773e105927176f911d447105",
+            "modifiedAt": "2026-10-01T17:44:05.807357+00:00"
+          }
+        },
+        {
+          "id": "notes",
+          "label": "实质研究笔记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/013-insightface-retrieval/notes",
+          "detail": "3 份顶层 Markdown；3 份满足 100 字符粗略阈值。符合：production.md、research.md、sources.md",
+          "evidence": [
+            {
+              "path": "projects/013-insightface-retrieval/notes/production.md",
+              "size": 2570,
+              "sha256": "aa5911c457d55bb88278af1fb2ae4a57ca63ed7ec36697abe83481e995fddb0b",
+              "modifiedAt": "2026-10-01T17:59:40.882427+00:00"
+            },
+            {
+              "path": "projects/013-insightface-retrieval/notes/research.md",
+              "size": 2069,
+              "sha256": "989d2703d9cac759a0b366e3023b877e6fe8c10d0091c3727ba822b50bc4c03f",
+              "modifiedAt": "2026-10-01T17:58:44.660068+00:00"
+            },
+            {
+              "path": "projects/013-insightface-retrieval/notes/sources.md",
+              "size": 4360,
+              "sha256": "a91b2763f16a885a073e686c9fb065528317e1d67c6dffe584794e44a365ff40",
+              "modifiedAt": "2026-10-01T17:44:05.808367+00:00"
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "label": "登记封面",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/013-insightface-retrieval/assets/understanding-map.png",
+          "detail": "登记图片存在且可读取；未判断画面质量。",
+          "evidence": {
+            "path": "projects/013-insightface-retrieval/assets/understanding-map.png",
+            "size": 1122333,
+            "sha256": "791356db37e49495938f32bc80efe785b13016f24050a59191aeb110e6bd02d6"
+          }
+        },
+        {
+          "id": "web",
+          "label": "展示入口",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/013-insightface-retrieval/web/index.html",
+          "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+          "evidence": [
+            {
+              "path": "projects/013-insightface-retrieval/web/index.html",
+              "size": 2786,
+              "sha256": "23e8a101271dc06aedb2e94105153013eb88d89ac5899a62848d3cfd6a4e901b",
+              "modifiedAt": "2026-10-01T17:50:49.958632+00:00"
+            },
+            {
+              "path": "projects/013-insightface-retrieval/web/README.md",
+              "size": 768,
+              "sha256": "3f09eb50223a8d922bc3368fda89a34b3bcfa07c83e54d039cd31c05e11d3c92",
+              "modifiedAt": "2026-10-01T17:58:44.660068+00:00"
+            }
+          ]
+        }
+      ],
+      "ready": true,
+      "fingerprint": "1d216923c7a6af867859481224d5dacbec567ad0fe7caac5469241c92f670632",
+      "contentHash": "1d216923c7a6af867859481224d5dacbec567ad0fe7caac5469241c92f670632",
+      "receipt": null
+    },
+    {
+      "id": 14,
+      "slug": "tanstarter-foundation",
+      "name": "TanStarter · 产品底座与自建判断",
+      "status": "已完成",
+      "path": "projects/014-tanstarter-foundation",
+      "cover": "assets/understanding-map.png",
+      "repo": "https://github.com/MkFastHQ/tanstarter-cli",
+      "reference": "https://x.com/yihui_indie/status/2105839069200777304",
+      "checks": [
+        {
+          "id": "directory",
+          "label": "项目目录",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/014-tanstarter-foundation",
+          "detail": "已存在清单对应目录。"
+        },
+        {
+          "id": "index",
+          "label": "总索引同步",
+          "required": true,
+          "outcome": "pass",
+          "path": "README.md",
+          "detail": "生成索引与清单一致。",
+          "evidence": {
+            "path": "README.md#project-14",
+            "size": 1695,
+            "sha256": "8ff3c8d6895b63f63e1ccc6d0c2d9e2e2e2baf89ed7555fdf77c77d2110ca172"
+          }
+        },
+        {
+          "id": "source",
+          "label": "来源登记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects.json",
+          "detail": "清单含有效 HTTPS 来源字段：https://github.com/MkFastHQ/tanstarter-cli；未访问或核验上游内容。"
+        },
+        {
+          "id": "readme",
+          "label": "研究说明",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/014-tanstarter-foundation/README.md",
+          "detail": "去掉模板提示后 661 个非空白字符；阈值 100。只确认材料存在。",
+          "evidence": {
+            "path": "projects/014-tanstarter-foundation/README.md",
+            "size": 2021,
+            "sha256": "504acf96dabca9bb14463854ff129e674455e8e40481b47dace797e55b82c175",
+            "modifiedAt": "2026-10-02T03:44:16.822214+00:00"
+          }
+        },
+        {
+          "id": "notes",
+          "label": "实质研究笔记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/014-tanstarter-foundation/notes",
+          "detail": "1 份顶层 Markdown；1 份满足 100 字符粗略阈值。符合：research.md",
+          "evidence": [
+            {
+              "path": "projects/014-tanstarter-foundation/notes/research.md",
+              "size": 4493,
+              "sha256": "c76e2c592e5ff7d85578178b7021b2c01d81484d6ca80854b6d9530195866f70",
+              "modifiedAt": "2026-10-02T03:41:17.466630+00:00"
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "label": "登记封面",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/014-tanstarter-foundation/assets/understanding-map.png",
+          "detail": "登记图片存在且可读取；未判断画面质量。",
+          "evidence": {
+            "path": "projects/014-tanstarter-foundation/assets/understanding-map.png",
+            "size": 1000179,
+            "sha256": "4f638b24a0f177d43e4371b606031aa5f908adc25dddb47eb3404795976509b2"
+          }
+        },
+        {
+          "id": "web",
+          "label": "展示入口",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/014-tanstarter-foundation/web/index.html",
+          "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+          "evidence": [
+            {
+              "path": "projects/014-tanstarter-foundation/web/index.html",
+              "size": 2475,
+              "sha256": "576d437038fc5442bead05d4e4c15de11a1a004b284930796217ff3736d71d92",
+              "modifiedAt": "2026-10-02T03:41:17.467737+00:00"
+            },
+            {
+              "path": "projects/014-tanstarter-foundation/web/README.md",
+              "size": 552,
+              "sha256": "a8e41691b7381eb0f05327ae040d9e0e24a46a851185ffe139a351dce0d86091",
+              "modifiedAt": "2026-09-29T14:41:34.628000+00:00"
+            }
+          ]
+        }
+      ],
+      "ready": true,
+      "fingerprint": "e9b89d207c21b4c14d20c08fb89448311148ddc3be9e9342da9af49a3ad89f59",
+      "contentHash": "e9b89d207c21b4c14d20c08fb89448311148ddc3be9e9342da9af49a3ad89f59",
+      "receipt": null
+    },
+    {
+      "id": 15,
+      "slug": "ai-creative-products",
+      "name": "AI Creative Products · 十案例与产品机会",
+      "status": "已完成",
+      "path": "projects/015-ai-creative-products",
+      "cover": "assets/overview.png",
+      "repo": "",
+      "reference": "https://x.com/minchoi/status/2105685231298630009",
+      "checks": [
+        {
+          "id": "directory",
+          "label": "项目目录",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/015-ai-creative-products",
+          "detail": "已存在清单对应目录。"
+        },
+        {
+          "id": "index",
+          "label": "总索引同步",
+          "required": true,
+          "outcome": "pass",
+          "path": "README.md",
+          "detail": "生成索引与清单一致。",
+          "evidence": {
+            "path": "README.md#project-15",
+            "size": 1536,
+            "sha256": "9ef29ce592513465c77d3d5c49a213ee8217f8b7597504e6ebea4f29ce2742b0"
+          }
+        },
+        {
+          "id": "source",
+          "label": "来源登记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects.json",
+          "detail": "清单含有效 HTTPS 来源字段：https://x.com/minchoi/status/2105685231298630009；未访问或核验上游内容。"
+        },
+        {
+          "id": "readme",
+          "label": "研究说明",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/015-ai-creative-products/README.md",
+          "detail": "去掉模板提示后 6913 个非空白字符；阈值 100。只确认材料存在。",
+          "evidence": {
+            "path": "projects/015-ai-creative-products/README.md",
+            "size": 21464,
+            "sha256": "28cc43e8c312178a3f1e60d58b93aae14e4ee912447eedeed6a9c292d720ac0e",
+            "modifiedAt": "2026-10-03T01:00:21.327267+00:00"
+          }
+        },
+        {
+          "id": "notes",
+          "label": "实质研究笔记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/015-ai-creative-products/notes",
+          "detail": "17 份顶层 Markdown；17 份满足 100 字符粗略阈值。符合：case-01-optimization.md、case-02-optimization.md、case-03-optimization.md、case-04-optimization.md、case-05-optimization.md、case-06-optimization.md、case-07-optimization.md、case-08-optimization.md、case-09-optimization.md、case-09-v12-design.md、case-10-optimization.md、demo-research.md、export-verification.md、product-opportunities.md、research.md、ten-demos.md、visual-polish.md",
+          "evidence": [
+            {
+              "path": "projects/015-ai-creative-products/notes/case-01-optimization.md",
+              "size": 3769,
+              "sha256": "8a7f79d71a21a633415086790e2701c859d43dab5db8b0c0c719dd6f9908a914",
+              "modifiedAt": "2026-10-03T00:19:03.256128+00:00"
+            },
+            {
+              "path": "projects/015-ai-creative-products/notes/case-02-optimization.md",
+              "size": 4970,
+              "sha256": "b429f034b6d80edf158e0cb4174b118156a43398ef70abac5a756d1935f60c71",
+              "modifiedAt": "2026-10-03T00:56:01.389081+00:00"
+            },
+            {
+              "path": "projects/015-ai-creative-products/notes/case-03-optimization.md",
+              "size": 3614,
+              "sha256": "c38f056d7340b94e034943a8eae80708495b1b49b245a94e28b1795412eace77",
+              "modifiedAt": "2026-10-02T23:46:44.801719+00:00"
+            },
+            {
+              "path": "projects/015-ai-creative-products/notes/case-04-optimization.md",
+              "size": 4144,
+              "sha256": "3d63ff162278c80bf560c8e14de1230f7d476b69b3e1979da14a14e20821dd52",
+              "modifiedAt": "2026-10-03T00:16:00.852880+00:00"
+            },
+            {
+              "path": "projects/015-ai-creative-products/notes/case-05-optimization.md",
+              "size": 5971,
+              "sha256": "0a039ba9833b9a991a4fd63c56782d5c91e0ee5b1e11b481f63c9d16f3cf0d4d",
+              "modifiedAt": "2026-10-03T00:53:32.174299+00:00"
+            },
+            {
+              "path": "projects/015-ai-creative-products/notes/case-06-optimization.md",
+              "size": 5408,
+              "sha256": "0aa499b7aebacb08b920bf6562ffe620554bf94ae973fdbe0663b9822cecfe5a",
+              "modifiedAt": "2026-10-02T16:30:49.354108+00:00"
+            },
+            {
+              "path": "projects/015-ai-creative-products/notes/case-07-optimization.md",
+              "size": 4523,
+              "sha256": "c2827b0ef9b58d33ed24297341e1694dfe042401648959e60050cd79790ffb3e",
+              "modifiedAt": "2026-10-03T00:55:35.652191+00:00"
+            },
+            {
+              "path": "projects/015-ai-creative-products/notes/case-08-optimization.md",
+              "size": 5481,
+              "sha256": "7079bb86ab68bea9969afe961a19da055ba9054025be5fcb17546bb7250de9a9",
+              "modifiedAt": "2026-10-03T00:24:06.554822+00:00"
+            },
+            {
+              "path": "projects/015-ai-creative-products/notes/case-09-optimization.md",
+              "size": 4117,
+              "sha256": "fcbe063ebba576eb60a71fea278ebbfb5a6b72704651d701c9097846652485f9",
+              "modifiedAt": "2026-10-02T23:59:24.008894+00:00"
+            },
+            {
+              "path": "projects/015-ai-creative-products/notes/case-09-v12-design.md",
+              "size": 1861,
+              "sha256": "f958f6d3ac525c921d978ca4bb73b50832fda03ac1f9f0f8b2ca9dfcb06ba44e",
+              "modifiedAt": "2026-10-02T23:49:57.113515+00:00"
+            },
+            {
+              "path": "projects/015-ai-creative-products/notes/case-10-optimization.md",
+              "size": 3572,
+              "sha256": "269f24d07b1ebe4daed8f5d4a79a64fc84eca94257ff30ac8ab43638c7f6e648",
+              "modifiedAt": "2026-10-02T23:55:40.782053+00:00"
+            },
+            {
+              "path": "projects/015-ai-creative-products/notes/demo-research.md",
+              "size": 6309,
+              "sha256": "5ee09c87641be3acc16754cb5983ddadf7e152ff47f7bb888dcae57336944209",
+              "modifiedAt": "2026-10-02T10:34:17.006792+00:00"
+            },
+            {
+              "path": "projects/015-ai-creative-products/notes/export-verification.md",
+              "size": 1992,
+              "sha256": "746db2708973c511bf5ef315306d27c02379457826ae467c73ee6005981f8f5f",
+              "modifiedAt": "2026-10-02T06:38:12.271877+00:00"
+            },
+            {
+              "path": "projects/015-ai-creative-products/notes/product-opportunities.md",
+              "size": 14151,
+              "sha256": "a1dce8b7dd1bae6bdce10f67b5204184e65a0c5a0f9d34d1d032435dc3f561b0",
+              "modifiedAt": "2026-10-02T06:01:58.606227+00:00"
+            },
+            {
+              "path": "projects/015-ai-creative-products/notes/research.md",
+              "size": 2656,
+              "sha256": "735c9106792c5ae3bcb9968f5cc8063def091d94355d31c16d8a08840c36ee68",
+              "modifiedAt": "2026-10-02T10:00:37.782638+00:00"
+            },
+            {
+              "path": "projects/015-ai-creative-products/notes/ten-demos.md",
+              "size": 13411,
+              "sha256": "033bd5edf6dde56515a6cb6a3e7084dbbf46acf018719a4fb0e55d711ee79a03",
+              "modifiedAt": "2026-10-02T13:28:55.149240+00:00"
+            },
+            {
+              "path": "projects/015-ai-creative-products/notes/visual-polish.md",
+              "size": 4033,
+              "sha256": "5ab468606330a851cd4fe5eceaa4ef049e4b384917f79b4348bb9af3dfec7c11",
+              "modifiedAt": "2026-10-02T15:21:52.611805+00:00"
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "label": "登记封面",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/015-ai-creative-products/assets/overview.png",
+          "detail": "登记图片存在且可读取；未判断画面质量。",
+          "evidence": {
+            "path": "projects/015-ai-creative-products/assets/overview.png",
+            "size": 532163,
+            "sha256": "557b0ea06189376677b188099e30cb95125e149be80a7b94f92717e91e223c87"
+          }
+        },
+        {
+          "id": "web",
+          "label": "展示入口",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/015-ai-creative-products/web/index.html",
+          "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+          "evidence": [
+            {
+              "path": "projects/015-ai-creative-products/web/index.html",
+              "size": 11276,
+              "sha256": "f4505498bb87de467c83bb87914f47d355f19ecb83bf66b46b578d106a7c4bfd",
+              "modifiedAt": "2026-10-02T15:07:48.094461+00:00"
+            },
+            {
+              "path": "projects/015-ai-creative-products/web/README.md",
+              "size": 1351,
+              "sha256": "3a05a8902a421e15ac8977b30e24be2276631a703dac360fcf1a2a0895f49535",
+              "modifiedAt": "2026-10-02T09:51:38.682668+00:00"
+            }
+          ]
+        }
+      ],
+      "ready": true,
+      "fingerprint": "9ae29907c71fa41fcf12d741865355b60cd4a43e64048761e12fab662ad065e6",
+      "contentHash": "9ae29907c71fa41fcf12d741865355b60cd4a43e64048761e12fab662ad065e6",
+      "receipt": {
+        "id": "1dad97a1-46da-466c-8c05-5fd57293a9d3",
+        "projectId": 15,
+        "name": "AI Creative Products · 十案例与产品机会",
+        "fingerprint": "15791fe6d62fd062a212219b23aede685b0c5289c9997e3356f076f7fbb320a0",
+        "checkedAt": "2026-10-02T13:32:51.799Z",
+        "firstCollectedAt": "2026-10-02T13:32:51.799Z",
+        "checks": [
+          {
+            "id": "directory",
+            "label": "项目目录",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/015-ai-creative-products",
+            "detail": "已存在清单对应目录。"
+          },
+          {
+            "id": "index",
+            "label": "总索引同步",
+            "required": true,
+            "outcome": "pass",
+            "path": "README.md",
+            "detail": "生成索引与清单一致。",
+            "evidence": {
+              "path": "README.md#project-15",
+              "size": 1536,
+              "sha256": "9ef29ce592513465c77d3d5c49a213ee8217f8b7597504e6ebea4f29ce2742b0"
+            }
+          },
+          {
+            "id": "source",
+            "label": "来源登记",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects.json",
+            "detail": "清单含有效 HTTPS 来源字段：https://x.com/minchoi/status/2105685231298630009；未访问或核验上游内容。"
+          },
+          {
+            "id": "readme",
+            "label": "研究说明",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/015-ai-creative-products/README.md",
+            "detail": "去掉模板提示后 2353 个非空白字符；阈值 100。只确认材料存在。",
+            "evidence": {
+              "path": "projects/015-ai-creative-products/README.md",
+              "size": 6981,
+              "sha256": "ab64200027b4fa7b594a190b9fb74e0f9d8b0ac0fd45ea90a63c2ba79b29f667",
+              "modifiedAt": "2026-10-02T13:28:55.149240+00:00"
+            }
+          },
+          {
+            "id": "notes",
+            "label": "实质研究笔记",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/015-ai-creative-products/notes",
+            "detail": "5 份顶层 Markdown；5 份满足 100 字符粗略阈值。符合：demo-research.md、export-verification.md、product-opportunities.md、research.md、ten-demos.md",
+            "evidence": [
+              {
+                "path": "projects/015-ai-creative-products/notes/demo-research.md",
+                "size": 6309,
+                "sha256": "5ee09c87641be3acc16754cb5983ddadf7e152ff47f7bb888dcae57336944209",
+                "modifiedAt": "2026-10-02T10:34:17.006792+00:00"
+              },
+              {
+                "path": "projects/015-ai-creative-products/notes/export-verification.md",
+                "size": 1992,
+                "sha256": "746db2708973c511bf5ef315306d27c02379457826ae467c73ee6005981f8f5f",
+                "modifiedAt": "2026-10-02T06:38:12.271877+00:00"
+              },
+              {
+                "path": "projects/015-ai-creative-products/notes/product-opportunities.md",
+                "size": 14151,
+                "sha256": "a1dce8b7dd1bae6bdce10f67b5204184e65a0c5a0f9d34d1d032435dc3f561b0",
+                "modifiedAt": "2026-10-02T06:01:58.606227+00:00"
+              },
+              {
+                "path": "projects/015-ai-creative-products/notes/research.md",
+                "size": 2656,
+                "sha256": "735c9106792c5ae3bcb9968f5cc8063def091d94355d31c16d8a08840c36ee68",
+                "modifiedAt": "2026-10-02T10:00:37.782638+00:00"
+              },
+              {
+                "path": "projects/015-ai-creative-products/notes/ten-demos.md",
+                "size": 13411,
+                "sha256": "033bd5edf6dde56515a6cb6a3e7084dbbf46acf018719a4fb0e55d711ee79a03",
+                "modifiedAt": "2026-10-02T13:28:55.149240+00:00"
+              }
+            ]
+          },
+          {
+            "id": "cover",
+            "label": "登记封面",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/015-ai-creative-products/assets/overview.png",
+            "detail": "登记图片存在且可读取；未判断画面质量。",
+            "evidence": {
+              "path": "projects/015-ai-creative-products/assets/overview.png",
+              "size": 398872,
+              "sha256": "a22da6fa03b79c0225401186aef5a77b7a0b27ca0d9c5fbdea5ab836055a5d31"
+            }
+          },
+          {
+            "id": "web",
+            "label": "展示入口",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/015-ai-creative-products/web/index.html",
+            "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+            "evidence": [
+              {
+                "path": "projects/015-ai-creative-products/web/index.html",
+                "size": 11178,
+                "sha256": "e1fcc83b6fcdad62350c885a632186d722cb5b3aa450273b4173bcbfb5c136b4",
+                "modifiedAt": "2026-10-02T12:16:57.140522+00:00"
+              },
+              {
+                "path": "projects/015-ai-creative-products/web/README.md",
+                "size": 1351,
+                "sha256": "3a05a8902a421e15ac8977b30e24be2276631a703dac360fcf1a2a0895f49535",
+                "modifiedAt": "2026-10-02T09:51:38.682668+00:00"
+              }
+            ]
+          }
+        ],
+        "serial": 2,
+        "current": false
+      }
+    },
+    {
+      "id": 16,
+      "slug": "chippytea-lab",
+      "name": "Chippytea Lab · 能力、手绘风格与成果反馈",
+      "status": "研究中",
+      "path": "projects/016-chippytea-lab",
+      "cover": "assets/overview.jpg",
+      "repo": "https://github.com/richiemcilroy/chippytea",
+      "reference": "https://www.chippytea.com/",
+      "checks": [
+        {
+          "id": "directory",
+          "label": "项目目录",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/016-chippytea-lab",
+          "detail": "已存在清单对应目录。"
+        },
+        {
+          "id": "index",
+          "label": "总索引同步",
+          "required": true,
+          "outcome": "pass",
+          "path": "README.md",
+          "detail": "生成索引与清单一致。",
+          "evidence": {
+            "path": "README.md#project-16",
+            "size": 1223,
+            "sha256": "da42a6355a73cec53160d44a797d2bda1af3e12c83c9676a9ef35deb505cc468"
+          }
+        },
+        {
+          "id": "source",
+          "label": "来源登记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects.json",
+          "detail": "清单含有效 HTTPS 来源字段：https://github.com/richiemcilroy/chippytea；未访问或核验上游内容。"
+        },
+        {
+          "id": "readme",
+          "label": "研究说明",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/016-chippytea-lab/README.md",
+          "detail": "去掉模板提示后 8009 个非空白字符；阈值 100。只确认材料存在。",
+          "evidence": {
+            "path": "projects/016-chippytea-lab/README.md",
+            "size": 24569,
+            "sha256": "8b5557591b1f6a6de353472cec8eef684733391502b0f9e12b77a4ed4ea73b00",
+            "modifiedAt": "2026-10-03T02:07:37.259125+00:00"
+          }
+        },
+        {
+          "id": "notes",
+          "label": "实质研究笔记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/016-chippytea-lab/notes",
+          "detail": "9 份顶层 Markdown；9 份满足 100 字符粗略阈值。符合：daily-work-analysis.md、folio-design-qa.md、original-worlds.md、research.md、worlds-v1-design-qa.md、worlds-v6-design-qa.md、worlds-v7-design-qa.md、worlds-v8-design-qa.md、worlds-v9-design-qa.md",
+          "evidence": [
+            {
+              "path": "projects/016-chippytea-lab/notes/daily-work-analysis.md",
+              "size": 7194,
+              "sha256": "517b27ca70543fb6085c6181d40a552f37cd5cb85940fc291aca4b754a806e2a",
+              "modifiedAt": "2026-10-02T13:54:45.768807+00:00"
+            },
+            {
+              "path": "projects/016-chippytea-lab/notes/folio-design-qa.md",
+              "size": 9262,
+              "sha256": "ac05a51870dcc93fa5123b7ae0b2bb9d706a6a8e6e082cec00781675db798fdf",
+              "modifiedAt": "2026-10-02T15:10:37.938902+00:00"
+            },
+            {
+              "path": "projects/016-chippytea-lab/notes/original-worlds.md",
+              "size": 10284,
+              "sha256": "de7465d794d8d4b31d425ce6bcb0c19a0ebc4bb8a21ac5c3c6e4a70694262536",
+              "modifiedAt": "2026-10-03T02:04:29.542407+00:00"
+            },
+            {
+              "path": "projects/016-chippytea-lab/notes/research.md",
+              "size": 28580,
+              "sha256": "bdc6ea166e30680f0fd22d98ed6af84767b62106dd98237fcd2fee971122e8fd",
+              "modifiedAt": "2026-10-02T15:12:18.906915+00:00"
+            },
+            {
+              "path": "projects/016-chippytea-lab/notes/worlds-v1-design-qa.md",
+              "size": 4301,
+              "sha256": "97d293250941f5b639ffb393184bc6e6c4cb544e66bd48e738d66d26407f36d0",
+              "modifiedAt": "2026-10-02T16:36:01.976064+00:00"
+            },
+            {
+              "path": "projects/016-chippytea-lab/notes/worlds-v6-design-qa.md",
+              "size": 4284,
+              "sha256": "1740a213f7e7de87c7a7538270d4e24eeafe2e89b3e018679b495e5ed43cff75",
+              "modifiedAt": "2026-10-02T17:20:27.277909+00:00"
+            },
+            {
+              "path": "projects/016-chippytea-lab/notes/worlds-v7-design-qa.md",
+              "size": 5259,
+              "sha256": "31eccf8c8b4df5ed46e3a2c88f527fb1878adc06e9e08f350c5bf2221a9f363c",
+              "modifiedAt": "2026-10-02T18:02:10.546594+00:00"
+            },
+            {
+              "path": "projects/016-chippytea-lab/notes/worlds-v8-design-qa.md",
+              "size": 6093,
+              "sha256": "bb35ed2d264ee129dddb38e86047969a66cbc4b3e4bad5307ffdf5496e1f28ab",
+              "modifiedAt": "2026-10-02T18:41:29.843786+00:00"
+            },
+            {
+              "path": "projects/016-chippytea-lab/notes/worlds-v9-design-qa.md",
+              "size": 6651,
+              "sha256": "75db8b18587005b18248d1e5b104ef0058d6be3bf98a0d19b36c9c75d368fac5",
+              "modifiedAt": "2026-10-02T23:46:24.053507+00:00"
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "label": "登记封面",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/016-chippytea-lab/assets/overview.jpg",
+          "detail": "登记图片存在且可读取；未判断画面质量。",
+          "evidence": {
+            "path": "projects/016-chippytea-lab/assets/overview.jpg",
+            "size": 51198,
+            "sha256": "7cb4d50ec84f1f88336a3279baeac53b314c23934123d84f2a5657e6d3fdec65"
+          }
+        },
+        {
+          "id": "web",
+          "label": "展示入口",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/016-chippytea-lab/web/index.html",
+          "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+          "evidence": [
+            {
+              "path": "projects/016-chippytea-lab/web/index.html",
+              "size": 940,
+              "sha256": "0308de8848ef71cb69ace65bc07170af52c3349e3f14e1e4902625b1d0b9a136",
+              "modifiedAt": "2026-10-03T01:59:48.004384+00:00"
+            },
+            {
+              "path": "projects/016-chippytea-lab/web/README.md",
+              "size": 18112,
+              "sha256": "878f2ef582210dc82a647edebcab586bd48af53059c87b1982e751684a8c88a3",
+              "modifiedAt": "2026-10-03T02:03:33.861342+00:00"
+            }
+          ]
+        }
+      ],
+      "ready": true,
+      "fingerprint": "d3a4b8d47f06545d7b3370fa95989a67eca7b4ed811c730d7c3efeecc9933710",
+      "contentHash": "d3a4b8d47f06545d7b3370fa95989a67eca7b4ed811c730d7c3efeecc9933710",
+      "receipt": {
+        "id": "2a68311b-ac15-46e2-89c4-1d7c9b81208f",
+        "projectId": 16,
+        "name": "Chippytea Lab · 能力、手绘风格与成果反馈",
+        "fingerprint": "c7c991c6f1b7224f94880d03dfc501247cf50d4fcb533858fdefcf965b63aced",
+        "checkedAt": "2026-10-02T14:34:16.146Z",
+        "firstCollectedAt": "2026-10-02T13:27:19.017Z",
+        "checks": [
+          {
+            "id": "directory",
+            "label": "项目目录",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/016-chippytea-lab",
+            "detail": "已存在清单对应目录。"
+          },
+          {
+            "id": "index",
+            "label": "总索引同步",
+            "required": true,
+            "outcome": "pass",
+            "path": "README.md",
+            "detail": "生成索引与清单一致。",
+            "evidence": {
+              "path": "README.md#project-16",
+              "size": 1592,
+              "sha256": "073571ae02b74d137f237cd25c3237aabe2bc15d4a2d2dd456c9fcebde9c6bd5"
+            }
+          },
+          {
+            "id": "source",
+            "label": "来源登记",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects.json",
+            "detail": "清单含有效 HTTPS 来源字段：https://github.com/richiemcilroy/chippytea；未访问或核验上游内容。"
+          },
+          {
+            "id": "readme",
+            "label": "研究说明",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/016-chippytea-lab/README.md",
+            "detail": "去掉模板提示后 5059 个非空白字符；阈值 100。只确认材料存在。",
+            "evidence": {
+              "path": "projects/016-chippytea-lab/README.md",
+              "size": 14807,
+              "sha256": "5c05d608d4c9aa545488a3641d00da1387a965b0eae0698c647742be4cf33fee",
+              "modifiedAt": "2026-10-02T14:23:42.844165+00:00"
+            }
+          },
+          {
+            "id": "notes",
+            "label": "实质研究笔记",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/016-chippytea-lab/notes",
+            "detail": "2 份顶层 Markdown；2 份满足 100 字符粗略阈值。符合：daily-work-analysis.md、research.md",
+            "evidence": [
+              {
+                "path": "projects/016-chippytea-lab/notes/daily-work-analysis.md",
+                "size": 7194,
+                "sha256": "517b27ca70543fb6085c6181d40a552f37cd5cb85940fc291aca4b754a806e2a",
+                "modifiedAt": "2026-10-02T13:54:45.768807+00:00"
+              },
+              {
+                "path": "projects/016-chippytea-lab/notes/research.md",
+                "size": 26433,
+                "sha256": "01d2b832ccb4d3ad08b6af9a3e5718519a7fc31e433c71fcc6995accb35626fc",
+                "modifiedAt": "2026-10-02T14:34:15.823483+00:00"
+              }
+            ]
+          },
+          {
+            "id": "cover",
+            "label": "登记封面",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/016-chippytea-lab/assets/overview.jpg",
+            "detail": "登记图片存在且可读取；未判断画面质量。",
+            "evidence": {
+              "path": "projects/016-chippytea-lab/assets/overview.jpg",
+              "size": 51198,
+              "sha256": "7cb4d50ec84f1f88336a3279baeac53b314c23934123d84f2a5657e6d3fdec65"
+            }
+          },
+          {
+            "id": "web",
+            "label": "展示入口",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/016-chippytea-lab/web/index.html",
+            "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+            "evidence": [
+              {
+                "path": "projects/016-chippytea-lab/web/index.html",
+                "size": 992,
+                "sha256": "1fa6c3b80f4b03309cae344ea132f5ef33ca1dd60a2ec00d6438ca6db459e102",
+                "modifiedAt": "2026-10-02T14:31:02.195237+00:00"
+              },
+              {
+                "path": "projects/016-chippytea-lab/web/README.md",
+                "size": 8989,
+                "sha256": "a8e4af32684b5f117de7e58a8001496f386bb6d11fe323c36a4ca3d9827fcd3a",
+                "modifiedAt": "2026-10-02T14:25:10.211042+00:00"
+              }
+            ]
+          }
+        ],
+        "serial": 1,
+        "current": false
+      }
+    },
+    {
+      "id": 17,
+      "slug": "waterfalls-lab",
+      "name": "Waterfalls Lab · 实时瀑布与流体造景",
+      "status": "已完成",
+      "path": "projects/017-waterfalls-lab",
+      "cover": "assets/confluence-v9.jpg",
+      "repo": "https://github.com/electronicarts/pbmpm",
+      "reference": "https://x.com/mogmek/status/2105966008720900321",
+      "checks": [
+        {
+          "id": "directory",
+          "label": "项目目录",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/017-waterfalls-lab",
+          "detail": "已存在清单对应目录。"
+        },
+        {
+          "id": "index",
+          "label": "总索引同步",
+          "required": true,
+          "outcome": "pass",
+          "path": "README.md",
+          "detail": "生成索引与清单一致。",
+          "evidence": {
+            "path": "README.md#project-17",
+            "size": 1944,
+            "sha256": "48719412373da1b903b843053f3ecf033acd2bdf218cc89a6cd2cd6c5d02b7fc"
+          }
+        },
+        {
+          "id": "source",
+          "label": "来源登记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects.json",
+          "detail": "清单含有效 HTTPS 来源字段：https://github.com/electronicarts/pbmpm；未访问或核验上游内容。"
+        },
+        {
+          "id": "readme",
+          "label": "研究说明",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/017-waterfalls-lab/README.md",
+          "detail": "去掉模板提示后 6258 个非空白字符；阈值 100。只确认材料存在。",
+          "evidence": {
+            "path": "projects/017-waterfalls-lab/README.md",
+            "size": 17590,
+            "sha256": "87b5e07a5336d30833c8686ed578f8579c97de7b6019f4eb35734bf46b1d2af3",
+            "modifiedAt": "2026-10-03T00:16:54.672375+00:00"
+          }
+        },
+        {
+          "id": "notes",
+          "label": "实质研究笔记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/017-waterfalls-lab/notes",
+          "detail": "2 份顶层 Markdown；2 份满足 100 字符粗略阈值。符合：research.md、validation.md",
+          "evidence": [
+            {
+              "path": "projects/017-waterfalls-lab/notes/research.md",
+              "size": 20482,
+              "sha256": "cd95386f42230b5866d155db205fb7cb3e1e04ace48bbfb8d61b9b0f9ea584da",
+              "modifiedAt": "2026-10-03T00:16:54.057578+00:00"
+            },
+            {
+              "path": "projects/017-waterfalls-lab/notes/validation.md",
+              "size": 27017,
+              "sha256": "578059eaedfb12495a4cd0f1e13a3f105360e66dd8002d47bb6ef2caa909c314",
+              "modifiedAt": "2026-10-03T00:20:43.851794+00:00"
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "label": "登记封面",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/017-waterfalls-lab/assets/confluence-v9.jpg",
+          "detail": "登记图片存在且可读取；未判断画面质量。",
+          "evidence": {
+            "path": "projects/017-waterfalls-lab/assets/confluence-v9.jpg",
+            "size": 92062,
+            "sha256": "ca4adb9e03675ed7a0af6a7a6f370bd01228f6168630e830cbd2a8c4101d3e71"
+          }
+        },
+        {
+          "id": "web",
+          "label": "展示入口",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/017-waterfalls-lab/web/index.html",
+          "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+          "evidence": [
+            {
+              "path": "projects/017-waterfalls-lab/web/index.html",
+              "size": 18512,
+              "sha256": "ea428194ac848e96e52eacab99ee7c4a9686bb2eafc34613f31f18685ddbf8b9",
+              "modifiedAt": "2026-10-03T00:13:56.073935+00:00"
+            },
+            {
+              "path": "projects/017-waterfalls-lab/web/README.md",
+              "size": 14200,
+              "sha256": "728cc25b24141c4b1a1d9e9fbc3233bc10a5b6c23350d766795ccf4acbc93bcc",
+              "modifiedAt": "2026-10-03T00:16:54.672375+00:00"
+            }
+          ]
+        }
+      ],
+      "ready": true,
+      "fingerprint": "6f4972ecb13b10639e1117018b5c46a550ada004f6df34932260a8057e7a4bff",
+      "contentHash": "6f4972ecb13b10639e1117018b5c46a550ada004f6df34932260a8057e7a4bff",
+      "receipt": {
+        "id": "9d149833-7cb4-4d28-b947-5c144b5f7772",
+        "projectId": 17,
+        "name": "Waterfalls Lab · 实时瀑布与流体造景",
+        "fingerprint": "501e1815f84fe06423ce0402602005981a6c497d10ea6c9c4ded900994c137ae",
+        "checkedAt": "2026-10-02T14:24:58.447Z",
+        "firstCollectedAt": "2026-10-02T14:24:58.447Z",
+        "checks": [
+          {
+            "id": "directory",
+            "label": "项目目录",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/017-waterfalls-lab",
+            "detail": "已存在清单对应目录。"
+          },
+          {
+            "id": "index",
+            "label": "总索引同步",
+            "required": true,
+            "outcome": "pass",
+            "path": "README.md",
+            "detail": "生成索引与清单一致。",
+            "evidence": {
+              "path": "README.md#project-17",
+              "size": 1474,
+              "sha256": "d8ed40a447d7ec4799d705d59bb934cd364d5c6380e5697957a2a707a8f73d38"
+            }
+          },
+          {
+            "id": "source",
+            "label": "来源登记",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects.json",
+            "detail": "清单含有效 HTTPS 来源字段：https://github.com/electronicarts/pbmpm；未访问或核验上游内容。"
+          },
+          {
+            "id": "readme",
+            "label": "研究说明",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/017-waterfalls-lab/README.md",
+            "detail": "去掉模板提示后 2254 个非空白字符；阈值 100。只确认材料存在。",
+            "evidence": {
+              "path": "projects/017-waterfalls-lab/README.md",
+              "size": 6337,
+              "sha256": "e26a99f5c103d7fe9969dce4eec89166ca53436d7ee380d06b67f9c5a896eaf7",
+              "modifiedAt": "2026-10-02T13:56:20.310909+00:00"
+            }
+          },
+          {
+            "id": "notes",
+            "label": "实质研究笔记",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/017-waterfalls-lab/notes",
+            "detail": "2 份顶层 Markdown；2 份满足 100 字符粗略阈值。符合：research.md、validation.md",
+            "evidence": [
+              {
+                "path": "projects/017-waterfalls-lab/notes/research.md",
+                "size": 5605,
+                "sha256": "2d5e20157611a13e6a30f2a14361e6a3a5582aa1990549d722a8269ba153339b",
+                "modifiedAt": "2026-10-02T13:56:20.310909+00:00"
+              },
+              {
+                "path": "projects/017-waterfalls-lab/notes/validation.md",
+                "size": 4053,
+                "sha256": "ea30f6cf868d13787b08a19a253a751fea8752b69743134bcc9d0e29099e412f",
+                "modifiedAt": "2026-10-02T14:08:47.015610+00:00"
+              }
+            ]
+          },
+          {
+            "id": "cover",
+            "label": "登记封面",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/017-waterfalls-lab/assets/overview.jpg",
+            "detail": "登记图片存在且可读取；未判断画面质量。",
+            "evidence": {
+              "path": "projects/017-waterfalls-lab/assets/overview.jpg",
+              "size": 68425,
+              "sha256": "a7f0166e6157c02a077308611ad6c2238639757c779fc7245a8b05ce3f9d34bf"
+            }
+          },
+          {
+            "id": "web",
+            "label": "展示入口",
+            "required": true,
+            "outcome": "pass",
+            "path": "projects/017-waterfalls-lab/web/index.html",
+            "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+            "evidence": [
+              {
+                "path": "projects/017-waterfalls-lab/web/index.html",
+                "size": 6735,
+                "sha256": "3bcf8b03745a401c32da87cd7e1de667bf4fd28a373a352f9d6844d463053423",
+                "modifiedAt": "2026-10-02T13:44:33.177651+00:00"
+              },
+              {
+                "path": "projects/017-waterfalls-lab/web/README.md",
+                "size": 2227,
+                "sha256": "7d77253cb3a81ee0372b94e166fd381acf51ec21cf7c2f57f96fe8bc1ad1959a",
+                "modifiedAt": "2026-10-02T13:56:20.310909+00:00"
+              }
+            ]
+          }
+        ],
+        "serial": 6,
+        "current": false
+      }
+    }
+  ],
+  "receipts": [
+    {
+      "id": "2a68311b-ac15-46e2-89c4-1d7c9b81208f",
+      "projectId": 16,
+      "name": "Chippytea Lab · 能力、手绘风格与成果反馈",
+      "fingerprint": "c7c991c6f1b7224f94880d03dfc501247cf50d4fcb533858fdefcf965b63aced",
+      "checkedAt": "2026-10-02T14:34:16.146Z",
+      "firstCollectedAt": "2026-10-02T13:27:19.017Z",
+      "checks": [
+        {
+          "id": "directory",
+          "label": "项目目录",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/016-chippytea-lab",
+          "detail": "已存在清单对应目录。"
+        },
+        {
+          "id": "index",
+          "label": "总索引同步",
+          "required": true,
+          "outcome": "pass",
+          "path": "README.md",
+          "detail": "生成索引与清单一致。",
+          "evidence": {
+            "path": "README.md#project-16",
+            "size": 1592,
+            "sha256": "073571ae02b74d137f237cd25c3237aabe2bc15d4a2d2dd456c9fcebde9c6bd5"
+          }
+        },
+        {
+          "id": "source",
+          "label": "来源登记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects.json",
+          "detail": "清单含有效 HTTPS 来源字段：https://github.com/richiemcilroy/chippytea；未访问或核验上游内容。"
+        },
+        {
+          "id": "readme",
+          "label": "研究说明",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/016-chippytea-lab/README.md",
+          "detail": "去掉模板提示后 5059 个非空白字符；阈值 100。只确认材料存在。",
+          "evidence": {
+            "path": "projects/016-chippytea-lab/README.md",
+            "size": 14807,
+            "sha256": "5c05d608d4c9aa545488a3641d00da1387a965b0eae0698c647742be4cf33fee",
+            "modifiedAt": "2026-10-02T14:23:42.844165+00:00"
+          }
+        },
+        {
+          "id": "notes",
+          "label": "实质研究笔记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/016-chippytea-lab/notes",
+          "detail": "2 份顶层 Markdown；2 份满足 100 字符粗略阈值。符合：daily-work-analysis.md、research.md",
+          "evidence": [
+            {
+              "path": "projects/016-chippytea-lab/notes/daily-work-analysis.md",
+              "size": 7194,
+              "sha256": "517b27ca70543fb6085c6181d40a552f37cd5cb85940fc291aca4b754a806e2a",
+              "modifiedAt": "2026-10-02T13:54:45.768807+00:00"
+            },
+            {
+              "path": "projects/016-chippytea-lab/notes/research.md",
+              "size": 26433,
+              "sha256": "01d2b832ccb4d3ad08b6af9a3e5718519a7fc31e433c71fcc6995accb35626fc",
+              "modifiedAt": "2026-10-02T14:34:15.823483+00:00"
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "label": "登记封面",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/016-chippytea-lab/assets/overview.jpg",
+          "detail": "登记图片存在且可读取；未判断画面质量。",
+          "evidence": {
+            "path": "projects/016-chippytea-lab/assets/overview.jpg",
+            "size": 51198,
+            "sha256": "7cb4d50ec84f1f88336a3279baeac53b314c23934123d84f2a5657e6d3fdec65"
+          }
+        },
+        {
+          "id": "web",
+          "label": "展示入口",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/016-chippytea-lab/web/index.html",
+          "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+          "evidence": [
+            {
+              "path": "projects/016-chippytea-lab/web/index.html",
+              "size": 992,
+              "sha256": "1fa6c3b80f4b03309cae344ea132f5ef33ca1dd60a2ec00d6438ca6db459e102",
+              "modifiedAt": "2026-10-02T14:31:02.195237+00:00"
+            },
+            {
+              "path": "projects/016-chippytea-lab/web/README.md",
+              "size": 8989,
+              "sha256": "a8e4af32684b5f117de7e58a8001496f386bb6d11fe323c36a4ca3d9827fcd3a",
+              "modifiedAt": "2026-10-02T14:25:10.211042+00:00"
+            }
+          ]
+        }
+      ],
+      "serial": 1,
+      "current": false
+    },
+    {
+      "id": "1dad97a1-46da-466c-8c05-5fd57293a9d3",
+      "projectId": 15,
+      "name": "AI Creative Products · 十案例与产品机会",
+      "fingerprint": "15791fe6d62fd062a212219b23aede685b0c5289c9997e3356f076f7fbb320a0",
+      "checkedAt": "2026-10-02T13:32:51.799Z",
+      "firstCollectedAt": "2026-10-02T13:32:51.799Z",
+      "checks": [
+        {
+          "id": "directory",
+          "label": "项目目录",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/015-ai-creative-products",
+          "detail": "已存在清单对应目录。"
+        },
+        {
+          "id": "index",
+          "label": "总索引同步",
+          "required": true,
+          "outcome": "pass",
+          "path": "README.md",
+          "detail": "生成索引与清单一致。",
+          "evidence": {
+            "path": "README.md#project-15",
+            "size": 1536,
+            "sha256": "9ef29ce592513465c77d3d5c49a213ee8217f8b7597504e6ebea4f29ce2742b0"
+          }
+        },
+        {
+          "id": "source",
+          "label": "来源登记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects.json",
+          "detail": "清单含有效 HTTPS 来源字段：https://x.com/minchoi/status/2105685231298630009；未访问或核验上游内容。"
+        },
+        {
+          "id": "readme",
+          "label": "研究说明",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/015-ai-creative-products/README.md",
+          "detail": "去掉模板提示后 2353 个非空白字符；阈值 100。只确认材料存在。",
+          "evidence": {
+            "path": "projects/015-ai-creative-products/README.md",
+            "size": 6981,
+            "sha256": "ab64200027b4fa7b594a190b9fb74e0f9d8b0ac0fd45ea90a63c2ba79b29f667",
+            "modifiedAt": "2026-10-02T13:28:55.149240+00:00"
+          }
+        },
+        {
+          "id": "notes",
+          "label": "实质研究笔记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/015-ai-creative-products/notes",
+          "detail": "5 份顶层 Markdown；5 份满足 100 字符粗略阈值。符合：demo-research.md、export-verification.md、product-opportunities.md、research.md、ten-demos.md",
+          "evidence": [
+            {
+              "path": "projects/015-ai-creative-products/notes/demo-research.md",
+              "size": 6309,
+              "sha256": "5ee09c87641be3acc16754cb5983ddadf7e152ff47f7bb888dcae57336944209",
+              "modifiedAt": "2026-10-02T10:34:17.006792+00:00"
+            },
+            {
+              "path": "projects/015-ai-creative-products/notes/export-verification.md",
+              "size": 1992,
+              "sha256": "746db2708973c511bf5ef315306d27c02379457826ae467c73ee6005981f8f5f",
+              "modifiedAt": "2026-10-02T06:38:12.271877+00:00"
+            },
+            {
+              "path": "projects/015-ai-creative-products/notes/product-opportunities.md",
+              "size": 14151,
+              "sha256": "a1dce8b7dd1bae6bdce10f67b5204184e65a0c5a0f9d34d1d032435dc3f561b0",
+              "modifiedAt": "2026-10-02T06:01:58.606227+00:00"
+            },
+            {
+              "path": "projects/015-ai-creative-products/notes/research.md",
+              "size": 2656,
+              "sha256": "735c9106792c5ae3bcb9968f5cc8063def091d94355d31c16d8a08840c36ee68",
+              "modifiedAt": "2026-10-02T10:00:37.782638+00:00"
+            },
+            {
+              "path": "projects/015-ai-creative-products/notes/ten-demos.md",
+              "size": 13411,
+              "sha256": "033bd5edf6dde56515a6cb6a3e7084dbbf46acf018719a4fb0e55d711ee79a03",
+              "modifiedAt": "2026-10-02T13:28:55.149240+00:00"
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "label": "登记封面",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/015-ai-creative-products/assets/overview.png",
+          "detail": "登记图片存在且可读取；未判断画面质量。",
+          "evidence": {
+            "path": "projects/015-ai-creative-products/assets/overview.png",
+            "size": 398872,
+            "sha256": "a22da6fa03b79c0225401186aef5a77b7a0b27ca0d9c5fbdea5ab836055a5d31"
+          }
+        },
+        {
+          "id": "web",
+          "label": "展示入口",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/015-ai-creative-products/web/index.html",
+          "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+          "evidence": [
+            {
+              "path": "projects/015-ai-creative-products/web/index.html",
+              "size": 11178,
+              "sha256": "e1fcc83b6fcdad62350c885a632186d722cb5b3aa450273b4173bcbfb5c136b4",
+              "modifiedAt": "2026-10-02T12:16:57.140522+00:00"
+            },
+            {
+              "path": "projects/015-ai-creative-products/web/README.md",
+              "size": 1351,
+              "sha256": "3a05a8902a421e15ac8977b30e24be2276631a703dac360fcf1a2a0895f49535",
+              "modifiedAt": "2026-10-02T09:51:38.682668+00:00"
+            }
+          ]
+        }
+      ],
+      "serial": 2,
+      "current": false
+    },
+    {
+      "id": "dfb04a5b-bfb0-4f69-a65d-7bbbc7b27d3a",
+      "projectId": 8,
+      "name": "CellMotion · 可编辑动效研究",
+      "fingerprint": "3fc845561c5aa6feda2513c0bb86c9491bcc72957693c78cb64ee33441e0e727",
+      "checkedAt": "2026-10-02T13:36:26.655Z",
+      "firstCollectedAt": "2026-10-02T13:36:26.655Z",
+      "checks": [
+        {
+          "id": "directory",
+          "label": "项目目录",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/008-cellmotion",
+          "detail": "已存在清单对应目录。"
+        },
+        {
+          "id": "index",
+          "label": "总索引同步",
+          "required": true,
+          "outcome": "pass",
+          "path": "README.md",
+          "detail": "生成索引与清单一致。",
+          "evidence": {
+            "path": "README.md#project-8",
+            "size": 1346,
+            "sha256": "0c9ceae556d8e91e8006da14b9bba3ab3ec88942e058571920feb44e1d77c88e"
+          }
+        },
+        {
+          "id": "source",
+          "label": "来源登记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects.json",
+          "detail": "清单含有效 HTTPS 来源字段：https://github.com/opc8838-hub/font-animation；未访问或核验上游内容。"
+        },
+        {
+          "id": "readme",
+          "label": "研究说明",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/008-cellmotion/README.md",
+          "detail": "去掉模板提示后 3249 个非空白字符；阈值 100。只确认材料存在。",
+          "evidence": {
+            "path": "projects/008-cellmotion/README.md",
+            "size": 10038,
+            "sha256": "a592cca1775514e5eeec456bc1dbb9a0cd7da46d1213340f45b1488be737a5ff",
+            "modifiedAt": "2026-10-01T17:52:34.086903+00:00"
+          }
+        },
+        {
+          "id": "notes",
+          "label": "实质研究笔记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/008-cellmotion/notes",
+          "detail": "3 份顶层 Markdown；3 份满足 100 字符粗略阈值。符合：research.md、understanding-summary.md、workshop.md",
+          "evidence": [
+            {
+              "path": "projects/008-cellmotion/notes/research.md",
+              "size": 7210,
+              "sha256": "ba94f78f0170366e1136f605ffd38d895d785c14f0cde7a872e62585e3f267a8",
+              "modifiedAt": "2026-10-01T16:29:59.242862+00:00"
+            },
+            {
+              "path": "projects/008-cellmotion/notes/understanding-summary.md",
+              "size": 10610,
+              "sha256": "b82801b192f6966e0cebaa7075925fd41bc1784f5f4349fa9f86559c5b71025a",
+              "modifiedAt": "2026-10-01T17:52:34.085919+00:00"
+            },
+            {
+              "path": "projects/008-cellmotion/notes/workshop.md",
+              "size": 6999,
+              "sha256": "d8a61ec60b4c4ff030ca16f672695d52ad8c754c7471d7962e203c03590ce56f",
+              "modifiedAt": "2026-10-01T17:11:02.127724+00:00"
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "label": "登记封面",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/008-cellmotion/assets/overview.png",
+          "detail": "登记图片存在且可读取；未判断画面质量。",
+          "evidence": {
+            "path": "projects/008-cellmotion/assets/overview.png",
+            "size": 167795,
+            "sha256": "c3bbec5def1d40ddcda49506cfefbe63c2f24bcdbae2400ec585c61ac1427b19"
+          }
+        },
+        {
+          "id": "web",
+          "label": "展示入口",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/008-cellmotion/web/index.html",
+          "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+          "evidence": [
+            {
+              "path": "projects/008-cellmotion/web/index.html",
+              "size": 17003,
+              "sha256": "de0c4029e403773d7ca26fb67d6e39398130dd2b6d586451d4ed9975aed0353d",
+              "modifiedAt": "2026-10-01T17:45:09.781731+00:00"
+            },
+            {
+              "path": "projects/008-cellmotion/web/README.md",
+              "size": 1887,
+              "sha256": "04144dd8959d4dd9e83b1b543fff3a01243d25716e013185a99d9b9d7363a186",
+              "modifiedAt": "2026-10-01T17:52:34.086903+00:00"
+            }
+          ]
+        }
+      ],
+      "serial": 3,
+      "current": true
+    },
+    {
+      "id": "7e9d5ba9-e4fd-4b40-8d2a-a1c6710afe49",
+      "projectId": 10,
+      "name": "Dumpling Style Lab · 小世界的新故事",
+      "fingerprint": "d91810f1ba777490d90ea4ed76b1804e390c2f149d5dc2a2c579ead3bf047d93",
+      "checkedAt": "2026-10-02T14:04:15.576Z",
+      "firstCollectedAt": "2026-10-02T14:04:15.576Z",
+      "checks": [
+        {
+          "id": "directory",
+          "label": "项目目录",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/010-dumpling-style-lab",
+          "detail": "已存在清单对应目录。"
+        },
+        {
+          "id": "index",
+          "label": "总索引同步",
+          "required": true,
+          "outcome": "pass",
+          "path": "README.md",
+          "detail": "生成索引与清单一致。",
+          "evidence": {
+            "path": "README.md#project-10",
+            "size": 1702,
+            "sha256": "223b8d6826e6cf33991034bfb7584375eb014af38922ee24dc09826eee34d39f"
+          }
+        },
+        {
+          "id": "source",
+          "label": "来源登记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects.json",
+          "detail": "清单含有效 HTTPS 来源字段：https://dumpling-dell.pages.dev/；未访问或核验上游内容。"
+        },
+        {
+          "id": "readme",
+          "label": "研究说明",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/010-dumpling-style-lab/README.md",
+          "detail": "去掉模板提示后 4240 个非空白字符；阈值 100。只确认材料存在。",
+          "evidence": {
+            "path": "projects/010-dumpling-style-lab/README.md",
+            "size": 14128,
+            "sha256": "5645d3783fff2e74b671fac0a507485bf712313cbe1818620822391d4f6d4701",
+            "modifiedAt": "2026-10-02T12:47:13.051048+00:00"
+          }
+        },
+        {
+          "id": "notes",
+          "label": "实质研究笔记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/010-dumpling-style-lab/notes",
+          "detail": "6 份顶层 Markdown；6 份满足 100 字符粗略阈值。符合：extensions-v1.md、extensions-v2.md、game-art-emotion.md、moving-day-product.md、research.md、worlds-product.md",
+          "evidence": [
+            {
+              "path": "projects/010-dumpling-style-lab/notes/extensions-v1.md",
+              "size": 10997,
+              "sha256": "5c593b818cc6168634b2bf7d3715e61f22a8392a3cf336584b7698fe8b22049f",
+              "modifiedAt": "2026-10-02T06:07:45.610734+00:00"
+            },
+            {
+              "path": "projects/010-dumpling-style-lab/notes/extensions-v2.md",
+              "size": 5635,
+              "sha256": "d4229a85683796d733ff3ce98b8a22045e00cd4924baadc42c53239d74bc7555",
+              "modifiedAt": "2026-10-02T06:05:57.107079+00:00"
+            },
+            {
+              "path": "projects/010-dumpling-style-lab/notes/game-art-emotion.md",
+              "size": 8896,
+              "sha256": "483770c8addd200e07e0b350f840ab5ee09566e9ec66b411cbb9ac80bda7fa81",
+              "modifiedAt": "2026-10-02T03:08:50.272978+00:00"
+            },
+            {
+              "path": "projects/010-dumpling-style-lab/notes/moving-day-product.md",
+              "size": 5347,
+              "sha256": "c4cd15ae478d563d032c09468f7dc88b7b29d1d6b1b1e54ff5f0f90a8ab23d20",
+              "modifiedAt": "2026-10-02T13:02:06.215252+00:00"
+            },
+            {
+              "path": "projects/010-dumpling-style-lab/notes/research.md",
+              "size": 10431,
+              "sha256": "8308c56711f742f7513eb4de4d32779e7c764dba31024b835cdf45d67b2c937b",
+              "modifiedAt": "2026-10-02T03:03:57.533115+00:00"
+            },
+            {
+              "path": "projects/010-dumpling-style-lab/notes/worlds-product.md",
+              "size": 5368,
+              "sha256": "f0939f7d9004daad2d9a293228a5fade1db90c391535264d06c50516de594d58",
+              "modifiedAt": "2026-10-02T12:53:53.005743+00:00"
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "label": "登记封面",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/010-dumpling-style-lab/assets/original-world.png",
+          "detail": "登记图片存在且可读取；未判断画面质量。",
+          "evidence": {
+            "path": "projects/010-dumpling-style-lab/assets/original-world.png",
+            "size": 27442,
+            "sha256": "072fdaf2202b64aa653d5281cf342543b469ade5112c050a85999333d30074d5"
+          }
+        },
+        {
+          "id": "web",
+          "label": "展示入口",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/010-dumpling-style-lab/web/index.html",
+          "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+          "evidence": [
+            {
+              "path": "projects/010-dumpling-style-lab/web/index.html",
+              "size": 21923,
+              "sha256": "f79d6d11a2451dd97b702733fd7fa0d83b01127bae49067d63215ac651c5e877",
+              "modifiedAt": "2026-10-02T12:47:13.160851+00:00"
+            },
+            {
+              "path": "projects/010-dumpling-style-lab/web/README.md",
+              "size": 8970,
+              "sha256": "2e02fd67c58b52f8ecb8add47fc345af0fce2a1109721b12df05b8b149f8557c",
+              "modifiedAt": "2026-10-02T12:47:13.122048+00:00"
+            }
+          ]
+        }
+      ],
+      "serial": 4,
+      "current": false
+    },
+    {
+      "id": "afa22e6a-f21c-4138-954c-e04eeaa6aaeb",
+      "projectId": 2,
+      "name": "Huashu Design · 设计能力研究",
+      "fingerprint": "35ac0a1016cd95e180823039005a5a2e9337ccc70498a4a33f5742b27066c51e",
+      "checkedAt": "2026-10-02T14:10:08.008Z",
+      "firstCollectedAt": "2026-10-02T14:10:08.008Z",
+      "checks": [
+        {
+          "id": "directory",
+          "label": "项目目录",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/002-huashu-design",
+          "detail": "已存在清单对应目录。"
+        },
+        {
+          "id": "index",
+          "label": "总索引同步",
+          "required": true,
+          "outcome": "pass",
+          "path": "README.md",
+          "detail": "生成索引与清单一致。",
+          "evidence": {
+            "path": "README.md#project-2",
+            "size": 1495,
+            "sha256": "682690bc89d26eff4fd8d28d75b3f6a61b740eae3d6feb423e8b2fed34a52535"
+          }
+        },
+        {
+          "id": "source",
+          "label": "来源登记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects.json",
+          "detail": "清单含有效 HTTPS 来源字段：https://github.com/alchaincyf/huashu-design；未访问或核验上游内容。"
+        },
+        {
+          "id": "readme",
+          "label": "研究说明",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/002-huashu-design/README.md",
+          "detail": "去掉模板提示后 2724 个非空白字符；阈值 100。只确认材料存在。",
+          "evidence": {
+            "path": "projects/002-huashu-design/README.md",
+            "size": 8241,
+            "sha256": "43890351b47c6502e6fe97dfc2042c65e18f42de29ce38cb1f4b9b6a6b7e02f2",
+            "modifiedAt": "2026-10-01T02:49:59.039725+00:00"
+          }
+        },
+        {
+          "id": "notes",
+          "label": "实质研究笔记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/002-huashu-design/notes",
+          "detail": "11 份顶层 Markdown；11 份满足 100 字符粗略阈值。符合：capability-map.md、capability-matrix.md、export-guide.md、extension-guide.md、real-case.md、reproduction.md、research.md、source-map.md、styles-and-cases.md、task-examples.md、understanding.md",
+          "evidence": [
+            {
+              "path": "projects/002-huashu-design/notes/capability-map.md",
+              "size": 1595,
+              "sha256": "d6c789344545a5cd9f83cb02878db2fc13467987f44b14054e4ca95cfcedbdbf",
+              "modifiedAt": "2026-09-29T16:49:41.904416+00:00"
+            },
+            {
+              "path": "projects/002-huashu-design/notes/capability-matrix.md",
+              "size": 21608,
+              "sha256": "99ff400822ef98baad95514873c750ddd4fe8bcdfd3d5b5bc6dd8ed3c4d212e0",
+              "modifiedAt": "2026-10-01T02:45:53.418221+00:00"
+            },
+            {
+              "path": "projects/002-huashu-design/notes/export-guide.md",
+              "size": 7608,
+              "sha256": "150dbb400f5048abf665f517abc38066501298754e4ee36d7c3919ea97ddd97a",
+              "modifiedAt": "2026-09-29T16:16:53.096146+00:00"
+            },
+            {
+              "path": "projects/002-huashu-design/notes/extension-guide.md",
+              "size": 5299,
+              "sha256": "6373878c8bcf70ff72aed54345ffa5d389b75cf455f15a3fa0109a649be3a633",
+              "modifiedAt": "2026-09-29T15:40:51.775484+00:00"
+            },
+            {
+              "path": "projects/002-huashu-design/notes/real-case.md",
+              "size": 11914,
+              "sha256": "c6e5b7b555ec76283e220b23bc168784193d495a400d026ca9ead91d360a4def",
+              "modifiedAt": "2026-09-29T16:33:21.583298+00:00"
+            },
+            {
+              "path": "projects/002-huashu-design/notes/reproduction.md",
+              "size": 5921,
+              "sha256": "1dff005fb1e452fc3238ee39fd5332a7b10c8f534bc5d56e72eed47f75817114",
+              "modifiedAt": "2026-09-29T16:16:49.917014+00:00"
+            },
+            {
+              "path": "projects/002-huashu-design/notes/research.md",
+              "size": 13744,
+              "sha256": "eb3fa0242b4af0fd54b7194d5a4ddbbd13ad90110c957a56a45c93c61b15d726",
+              "modifiedAt": "2026-09-29T16:16:51.631024+00:00"
+            },
+            {
+              "path": "projects/002-huashu-design/notes/source-map.md",
+              "size": 55550,
+              "sha256": "fb33ff4846d4613324a666509b402dcf59aa2c7f3800cb2a1d8dee96ccae6a18",
+              "modifiedAt": "2026-10-01T02:45:53.418221+00:00"
+            },
+            {
+              "path": "projects/002-huashu-design/notes/styles-and-cases.md",
+              "size": 18733,
+              "sha256": "9f3d3aeac05f072ea35049692cc596e12ee3992f1db9596b22a4747f6cf3f82d",
+              "modifiedAt": "2026-10-01T02:45:53.419213+00:00"
+            },
+            {
+              "path": "projects/002-huashu-design/notes/task-examples.md",
+              "size": 2377,
+              "sha256": "b1a8811308f7268a140b9014e90892403fdc5315390163ebef53cfb2d2b1ecf6",
+              "modifiedAt": "2026-10-01T02:45:53.419213+00:00"
+            },
+            {
+              "path": "projects/002-huashu-design/notes/understanding.md",
+              "size": 8213,
+              "sha256": "8f0832bc9c5584b81baa73888838a5c655cb784e582a4a2a9033120576a680df",
+              "modifiedAt": "2026-10-01T02:41:33.048450+00:00"
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "label": "登记封面",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/002-huashu-design/assets/huashu-capability-map.png",
+          "detail": "登记图片存在且可读取；未判断画面质量。",
+          "evidence": {
+            "path": "projects/002-huashu-design/assets/huashu-capability-map.png",
+            "size": 2152109,
+            "sha256": "34d35ebcff800a3be3b1002832dd545d98070ef653fee40c06342bcee83668fa"
+          }
+        },
+        {
+          "id": "web",
+          "label": "展示入口",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/002-huashu-design/web/index.html",
+          "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+          "evidence": [
+            {
+              "path": "projects/002-huashu-design/web/index.html",
+              "size": 20199,
+              "sha256": "3e41cc51f16c1500ec3d384b402a8a4a4efffa08f3ad0f38ba903cd00006cec2",
+              "modifiedAt": "2026-10-01T02:40:29.526572+00:00"
+            },
+            {
+              "path": "projects/002-huashu-design/web/README.md",
+              "size": 3838,
+              "sha256": "b4852d5379d12fcaf5d02eed56c8e4b7fe11eeb04d37a52b86ca245acbe5c9b1",
+              "modifiedAt": "2026-10-01T02:49:59.039725+00:00"
+            }
+          ]
+        }
+      ],
+      "serial": 5,
+      "current": true
+    },
+    {
+      "id": "9d149833-7cb4-4d28-b947-5c144b5f7772",
+      "projectId": 17,
+      "name": "Waterfalls Lab · 实时瀑布与流体造景",
+      "fingerprint": "501e1815f84fe06423ce0402602005981a6c497d10ea6c9c4ded900994c137ae",
+      "checkedAt": "2026-10-02T14:24:58.447Z",
+      "firstCollectedAt": "2026-10-02T14:24:58.447Z",
+      "checks": [
+        {
+          "id": "directory",
+          "label": "项目目录",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/017-waterfalls-lab",
+          "detail": "已存在清单对应目录。"
+        },
+        {
+          "id": "index",
+          "label": "总索引同步",
+          "required": true,
+          "outcome": "pass",
+          "path": "README.md",
+          "detail": "生成索引与清单一致。",
+          "evidence": {
+            "path": "README.md#project-17",
+            "size": 1474,
+            "sha256": "d8ed40a447d7ec4799d705d59bb934cd364d5c6380e5697957a2a707a8f73d38"
+          }
+        },
+        {
+          "id": "source",
+          "label": "来源登记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects.json",
+          "detail": "清单含有效 HTTPS 来源字段：https://github.com/electronicarts/pbmpm；未访问或核验上游内容。"
+        },
+        {
+          "id": "readme",
+          "label": "研究说明",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/017-waterfalls-lab/README.md",
+          "detail": "去掉模板提示后 2254 个非空白字符；阈值 100。只确认材料存在。",
+          "evidence": {
+            "path": "projects/017-waterfalls-lab/README.md",
+            "size": 6337,
+            "sha256": "e26a99f5c103d7fe9969dce4eec89166ca53436d7ee380d06b67f9c5a896eaf7",
+            "modifiedAt": "2026-10-02T13:56:20.310909+00:00"
+          }
+        },
+        {
+          "id": "notes",
+          "label": "实质研究笔记",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/017-waterfalls-lab/notes",
+          "detail": "2 份顶层 Markdown；2 份满足 100 字符粗略阈值。符合：research.md、validation.md",
+          "evidence": [
+            {
+              "path": "projects/017-waterfalls-lab/notes/research.md",
+              "size": 5605,
+              "sha256": "2d5e20157611a13e6a30f2a14361e6a3a5582aa1990549d722a8269ba153339b",
+              "modifiedAt": "2026-10-02T13:56:20.310909+00:00"
+            },
+            {
+              "path": "projects/017-waterfalls-lab/notes/validation.md",
+              "size": 4053,
+              "sha256": "ea30f6cf868d13787b08a19a253a751fea8752b69743134bcc9d0e29099e412f",
+              "modifiedAt": "2026-10-02T14:08:47.015610+00:00"
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "label": "登记封面",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/017-waterfalls-lab/assets/overview.jpg",
+          "detail": "登记图片存在且可读取；未判断画面质量。",
+          "evidence": {
+            "path": "projects/017-waterfalls-lab/assets/overview.jpg",
+            "size": 68425,
+            "sha256": "a7f0166e6157c02a077308611ad6c2238639757c779fc7245a8b05ce3f9d34bf"
+          }
+        },
+        {
+          "id": "web",
+          "label": "展示入口",
+          "required": true,
+          "outcome": "pass",
+          "path": "projects/017-waterfalls-lab/web/index.html",
+          "detail": "Web 入口文件存在；未证明页面或功能运行通过。",
+          "evidence": [
+            {
+              "path": "projects/017-waterfalls-lab/web/index.html",
+              "size": 6735,
+              "sha256": "3bcf8b03745a401c32da87cd7e1de667bf4fd28a373a352f9d6844d463053423",
+              "modifiedAt": "2026-10-02T13:44:33.177651+00:00"
+            },
+            {
+              "path": "projects/017-waterfalls-lab/web/README.md",
+              "size": 2227,
+              "sha256": "7d77253cb3a81ee0372b94e166fd381acf51ec21cf7c2f57f96fe8bc1ad1959a",
+              "modifiedAt": "2026-10-02T13:56:20.310909+00:00"
+            }
+          ]
+        }
+      ],
+      "serial": 6,
+      "current": false
+    }
+  ],
+  "total": 6,
+  "readyCount": 17,
+  "uncollectedReadyCount": 11,
+  "ledgerPath": "projects/016-chippytea-lab/notes/research-collection.json",
+  "snapshotNotice": "静态预览只显示生成时的结构核验快照；无法重新核验或真实入册，请打开本机 8977 服务。"
+}

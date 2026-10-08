@@ -1,0 +1,3098 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>完整研究档案 · Chippytea Lab</title><style>body{overflow-wrap:anywhere;background:#faf5ea;color:#302e29;font:16px/1.85 system-ui,'Microsoft YaHei',sans-serif;margin:0}main{max-width:1120px;margin:auto;padding:30px}a{color:#514126;text-underline-offset:3px}header,nav,section{border-bottom:1px solid #c8beac;padding:26px 0}h1{font-size:36px;line-height:1.4}h2{font-size:28px}h3,h4,h5,h6{line-height:1.5}nav{display:flex;gap:16px;flex-wrap:wrap}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#ede8dc;padding:20px;font:13px/1.7 ui-monospace,monospace;border-radius:8px}code{overflow-wrap:anywhere}img{max-width:100%;height:auto}.archive-table{overflow-x:auto}table{border-collapse:collapse;min-width:620px;font-size:14px}td,th{padding:12px;border:1px solid #c8beac;vertical-align:top}.heading-link{font-size:12px;margin-left:12px}.status{color:#77664b;font-size:13px}.scope{padding:22px;background:#eae4d6}details{padding:12px 0}summary{cursor:pointer;font-weight:600}@media(max-width:600px){main{padding:18px}h1{font-size:28px}h2{font-size:24px}}</style></head><body><main><header><a href="./">← 理解与全部展示入口</a><h1>Chippytea Lab · 完整研究档案</h1><p>保留源库研究、原创世界设计、日常场景分析、操作说明和分版本验收全文。当前源库快照 f245695，演出基线 v10。</p><p class="status">两首 MiniMax 配乐已生成；月亮与历史纸墨配乐待生成。历史记录不代表当前完整验收。</p></header><nav id="contents"><a href="#understanding">当前理解与全部入口</a><a href="#publication">本次发布摘要与范围</a><a href="#source">源库研究全文</a><a href="#worlds">三个原创世界与实现</a><a href="#daily">日常重复工作分析</a><a href="#usage">网页运行与使用说明</a><a href="#qa">设计与历史验收记录</a><a href="#music">配乐提示与生成记录</a></nav>
+<section id="understanding"><p class="status">当前整理 · 2026-10-08</p><h2>当前理解与全部入口</h2><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/README.md">查看原始文档 ↗</a> · <a href="#contents">回到目录 ↑</a></p><h3 id="understanding-heading-1">016 · Chippytea Lab · 功能、角色与音乐的共同编排<a class="heading-link" href="#understanding-heading-1" aria-label="链接到这一节">#</a></h3>
+<p>Chippytea 是一个 Mac 清理应用，也将功能成果延伸成手绘角色、收集动画、短音效和可参与的歌曲场景。本项目研究它如何把功能、图像、动作与音乐组织为同一段体验，并扩展为三个原创互动小世界。</p>
+<p><strong>我们的理解：功能提供含义，图像建立角色与世界，动画表达过程和回应，音乐组织节奏与情绪；用户参与后，结果在世界里留下变化。</strong> 源库提供可研究的完整产品实现，这套表达仍需要原创角色、旋律、动作与业务含义的共同设计。</p>
+<p><img src="assets/chippytea-understanding-map-v1.png" alt="从 Chippytea 到我们的声画产品：能力、价值、原理、原创样式与扩展产品" loading="lazy"></p>
+<p><a href="assets/chippytea-understanding-map-v1.png">引导图原图</a> · <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/notes/understanding-map-generation-v1.txt">图的生成说明</a> · <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/web/README.md">运行说明</a> · <a href="#publication">发布摘要</a></p>
+<h4 id="understanding-heading-2">全部阅读与演示入口<a class="heading-link" href="#understanding-heading-2" aria-label="链接到这一节">#</a></h4>
+<p>网页默认进入理解总览。三场原创演出、原作对照、真实回执和历史纸墨实验都保留独立直达入口。</p>
+<div class="archive-table"><table><thead><tr><th scope="col">入口</th><th scope="col">可以看到什么</th></tr></thead><tbody><tr><td><a href="https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/">理解总览</a></td><td>上面的原有引导图、源库能力、价值、原理、三个样式与六个产品方向</td></tr><tr><td><a href="https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/?view=experience&amp;scene=gravity&amp;v=10">引力花园</a></td><td>风精灵与石头园丁接力星种、选位种植、连续生长与 MiniMax 配乐</td></tr><tr><td><a href="https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/?view=experience&amp;scene=moon&amp;v=10">月亮修补铺</a></td><td>裁缝追月亮、拖动拉线、补丁飞行与三针缝合；当前静音</td></tr><tr><td><a href="https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/?view=experience&amp;scene=shadow&amp;v=10">影子排练场</a></td><td>追光、连续旋身、镜像共舞、保存当下姿势与 MiniMax 配乐</td></tr><tr><td><a href="https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/?view=source">原作案例对照</a></td><td>模拟清理、种子墨线、收集反馈、逐词歌词与原作互动歌曲</td></tr><tr><td><a href="https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/?view=research&amp;mode=records">资料与研究回执</a></td><td>实际资料、检查依据及构建时只读快照；本机服务可重新核验与入册</td></tr><tr><td><a href="https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/?view=folio">历史纸墨实验</a></td><td>笔记归整、批注、装订和真实编号落印的 24 秒静音预演</td></tr><tr><td><a href="#source">完整研究笔记</a></td><td>源文件依据、实现细节、原生运行条件、许可与历史记录</td></tr><tr><td><a href="#worlds">原创场景设计</a></td><td>角色关系、四幕故事、世界规则、互动与素材设计</td></tr><tr><td><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/design-qa.md">验证记录</a></td><td>当前 v10 的通过项、证据类型和未完成验收</td></tr></tbody></table></div>
+<p>当前效果另有离线视频：<a href="assets/previews/gravity-v10.mp4">花园带配乐</a> · <a href="assets/previews/moon-v10.mp4">修补铺静音</a> · <a href="assets/previews/shadow-v10.mp4">影子带配乐</a>。它们由网页共享渲染器按脚本互动导出，32 秒、12 fps；配乐版读取实际 MP3 的离线 FFT 近似并合入真实音乐，属于离线预览，不是浏览器操作录屏。</p>
+<h4 id="understanding-heading-3">源库的能力<a class="heading-link" href="#understanding-heading-3" aria-label="链接到这一节">#</a></h4>
+<p>源库有两层：原生应用负责真实文件工作，官网将产品及成果编排成可观看、可点按的声画体验。它不是通用动画或音乐 SDK。</p>
+<div class="archive-table"><table><thead><tr><th scope="col">层次</th><th scope="col">能力与边界</th></tr></thead><tbody><tr><td>发现空间占用</td><td>在选定位置识别开发依赖、构建产物、已知工具缓存、应用缓存、日志、下载和较大/较旧的个人文件，展示估算与原因</td></tr><tr><td>审阅与操作</td><td>按类别复核归属、活动和内容，用户选择保留、移入 Trash 或永久清理合适的开发产物；个人文件仍需用户判断</td></tr><tr><td>成果记账</td><td>符合条件的永久操作完成后保守核算空间，每 100 MB 计一个 chip，余量累计；估算与 Trash 不计奖，成功操作也可能核算为零</td></tr><tr><td>原生系统整合</td><td>SwiftUI 界面、Rust 有界扫描和 SQLite 索引、Finder/Trash、位置权限、本地历史与账本；无需账号</td></tr><tr><td>网页表达</td><td>React、SVG、Canvas、CSS 与 Web Audio；纸张墨线、统一手绘组件、角色关系、收集动画与短音效、歌词和段落同步、用户投放互动</td></tr></tbody></table></div>
+<p>本项目清理组件采用上游虚构数据与预设结果，没有在访客电脑扫描或删除文件。Mac 应用与 Rust 引擎未在本轮实机运行，原生能力不会随静态网页变成 Windows/Linux 清理工具。事实依据为 <a href="https://github.com/richiemcilroy/chippytea/tree/f245695">源码快照 f245695</a>，官网观察记录于 2026-10-02。</p>
+<h4 id="understanding-heading-4">原理与对我们的价值<a class="heading-link" href="#understanding-heading-4" aria-label="链接到这一节">#</a></h4>
+<p>编排的因果链是 <strong>功能事件 → 确认结果 → 声画编排 → 用户参与 → 世界积累</strong>。真实结果决定何时展示完成；角色和世界解释这次结果；动作、字幕与音乐围绕共同含义发生。比如将来接入知识收藏时，应先确认收藏成功，再让种子落地、生长并配合乐句回应，最后留下可见记录。这个业务映射尚未接入当前三个小世界。</p>
+<p>上游用稳定种子噪声和曲线形成墨线，循环三个种子产生低帧率重绘感。歌曲以实际播放时间同步歌词与段落，Canvas 根据段落编排角色和点击反馈，音频能量补充节奏细节。本地花园与影子用 <code>HTMLAudio.currentTime</code> 统一四幕，<code>AnalyserNode</code> 的低频、高频和能量影响细节；即兴动作与收藏有独立时钟，暂停也能完成反馈。频谱响应不等于自动理解乐句或逐音符编舞。</p>
+<div class="archive-table"><table><thead><tr><th scope="col">价值</th><th scope="col">对我们意味着什么</th></tr></thead><tbody><tr><td>让结果可感知</td><td>用过程、角色回应和留下的变化表达一次完成，适合抽象的收藏、整理与创作结果</td></tr><tr><td>建立原创辨识度</td><td>角色性格、关系和世界规则形成属于产品的视觉与声音语言</td></tr><tr><td>沉淀可复用编排</td><td>共享绘图、媒体主钟、段落脚本、交互阶段与失败回退，减少重复实现</td></tr><tr><td>让重复使用有积累</td><td>用户每次行动可以改变世界，形成可以回看和继续参与的痕迹；真实留存效果仍需测试</td></tr></tbody></table></div>
+<p>精彩程度取决于创意、音乐、动作与节奏的匹配。完成率、传播、付费与商业收益尚未测量。</p>
+<h4 id="understanding-heading-5">三个原创扩展样式<a class="heading-link" href="#understanding-heading-5" aria-label="链接到这一节">#</a></h4>
+<p>共同风格是纸底墨线、水彩质感、两个有性格的角色、一条世界规则、32 秒四幕故事和可参与表演。每幕 8 秒，29 个独立 PNG 构成背景、人物、道具及动作变体；没有套用原作猫、鱼或食品元素。</p>
+<div class="archive-table"><table><thead><tr><th scope="col">样式</th><th scope="col">角色与动作</th><th scope="col">参与和积累</th><th scope="col">配乐状态</th></tr></thead><tbody><tr><td>引力花园</td><td>懒石头园丁 × 急性子风精灵；吹种、旋流、接力、落土与生长</td><td>拖风、点按接力、选择岛面落点；本机保存最近四株真实位置</td><td>MiniMax Music3 已生成并接入</td></tr><tr><td>月亮修补铺</td><td>严肃裁缝 × 淘气月亮；追逐、拉线、飞补丁、三针缝合</td><td>拖线、点击反应；收藏在月亮上留下补丁和本机计数</td><td>一次生成请求因配额拒绝，待生成</td></tr><tr><td>影子排练场</td><td>夸张影子 × 害羞光团；追光倾身、连续旋身、共舞与谢幕</td><td>拖灯、点按换动作；保存最近三个实际姿势与参数，前排最多五位观众</td><td>MiniMax Music3 已生成并接入</td></tr></tbody></table></div>
+<div class="archive-table"><table><thead><tr><th scope="col">引力花园</th><th scope="col">月亮修补铺</th><th scope="col">影子排练场</th></tr></thead><tbody><tr><td><img src="assets/concepts/gravity.png" alt="引力花园概念关键帧" loading="lazy"></td><td><img src="assets/concepts/moon.png" alt="月亮修补铺概念关键帧" loading="lazy"></td><td><img src="assets/concepts/shadow.png" alt="影子排练场概念关键帧" loading="lazy"></td></tr></tbody></table></div>
+<p>以上是创意方向参考图；实际演出由拆分素材构成。默认无声，点击花园或影子配乐开关才播放。两首实际文件均处理为 32 秒，原始 WAV 与生成回执保留，没有变速或合成替代：花园原曲 35.027 秒，裁切并末秒淡出；影子原曲约 29.94 秒，淡出并补尾部静音。月亮没有音乐文件，不播放其他场的曲子。见 <a href="#record-world-music-briefs">配乐提示</a>、<a href="#record-world-music-generation-v10">花园/月亮回执</a>和<a href="#record-world-music-generation-v9">影子回执</a>。</p>
+<p>三个小世界只保存本浏览器 <code>localStorage</code> 的有限世界状态，未连接真实业务完成事件、不保存实际研究内容、不增加研究回执。资料页的本机核验与持久回执是另一条真实工作流程；公开静态站只能查看构建时快照。</p>
+<h4 id="understanding-heading-6">可以扩展哪些产品<a class="heading-link" href="#understanding-heading-6" aria-label="链接到这一节">#</a></h4>
+<p>下列是可继续建设的产品方向，尚未接入业务；每个方向都需要先确定可信的功能结果，再设计对应声画表达。</p>
+<div class="archive-table"><table><thead><tr><th scope="col">产品方向</th><th scope="col">真实功能可以怎样转为体验</th></tr></thead><tbody><tr><td>知识收藏 / 研究归档</td><td>一份收藏成功 → 一颗种子落地生长，保留发现的积累</td></tr><tr><td>任务 / 习惯 / 专注</td><td>一次任务完成或专注结束 → 角色合作完成一幕，世界逐步成长</td></tr><tr><td>文件 / 素材整理</td><td>一次真实分类、整理或清理 → 物件归位、空间舒展；文件引擎及平台权限另行实现</td></tr><tr><td>创作成果 / 品牌展示</td><td>真实作品与产品能力 → 可玩的故事、角色演出和音乐段落</td></tr><tr><td>互动课程 / 新手引导</td><td>练习结果或学习步骤 → 角色回应、剧情进展与明确的进度反馈</td></tr><tr><td>音乐叙事编辑器</td><td>原创或授权音乐、素材、词级时间与场景脚本 → 可编辑的互动演出；当前没有完整编辑器</td></tr></tbody></table></div>
+<p>相关研究：<a href="../004-rhythm-drop/">004 · Rhythm Drop（已归档）</a> 的音乐叙事、<a href="../008-cellmotion/">008 · CellMotion</a> 的文字动效、<a href="../010-dumpling-style-lab/">010 · Dumpling Style Lab</a> 的手绘品牌、<a href="../015-ai-creative-products/">015 · AI Creative Products</a> 的创作成果。它们是结合方向，当前没有因此完成跨项目集成。</p>
+<h4 id="understanding-heading-7">运行与验证<a class="heading-link" href="#understanding-heading-7" aria-label="链接到这一节">#</a></h4>
+<p>静态网站可查看全部页面、三场演出、两首本地配乐、离线视频与资料快照；真实资料重新核验和保存需要本机 Python 服务。首次在仓库根目录安装、构建并启动：</p>
+<pre><code class="language-powershell">npm --prefix projects/016-chippytea-lab/tooling ci
+python projects/016-chippytea-lab/tooling/research_snapshot.py
+node projects/016-chippytea-lab/tooling/build.mjs
+python scripts/build_site.py
+python projects/016-chippytea-lab/tooling/research_server.py</code></pre>
+<p>本机入口为 <code>http://127.0.0.1:8977/projects/016-chippytea-lab/</code>。资料服务只读取清单固定材料，写入本项目 <code>notes/research-collection.json</code>：一项目一回执，重复核验不增数，资料变化更新原回执，失败不返回保存成功。结构检查不认证研究结论或页面质量。操作、键盘、存储和 API 详见 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/web/README.md">Web README</a>。</p>
+<div class="archive-table"><table><thead><tr><th scope="col">证据</th><th scope="col">可以支持的结论</th></tr></thead><tbody><tr><td>v10 离线渲染与行为检查</td><td>160 帧、133 条探针、32 张联系图、59 项共享渲染检查通过；29 个 PNG 指纹一致</td></tr><tr><td>v10 Host / 音频模拟</td><td>67 项逻辑模拟通过，覆盖切场、计时、暂停、错误回退、落点和姿势保存等规则</td></tr><tr><td>实际音频文件</td><td>花园与影子 MP3 解码为 32 秒、来源与文件 SHA 可追溯；离线 FFT 已核验</td></tr><tr><td>历史真实研究入册</td><td>保存、去重、更新、刷新保留、缺项阻止及导出曾有浏览器证据；不代表三个新场景全部验收</td></tr><tr><td>2026-10-08 本次浏览器验收</td><td>60 项真实 Chromium 检查通过，72 个运行资源大小/SHA核对通过；桌面/手机、画面、互动、两首实际配乐/频谱、暂停、保存重载、下载、全文档案均有检查记录。详见 <a href="#record-publication-local-checks">本机检查</a>；人工听感与实机兼容另验</td></tr></tbody></table></div>
+<p>原生 Mac 应用、真实删除、空间释放、完整无障碍、全浏览器兼容及商业收益未验证。历史过程和旧版预览继续保存在 <a href="#source">研究笔记</a>、<a href="#worlds">原创设计</a>与<a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/design-qa.md">设计记录</a>，当前结论优先。</p>
+<h4 id="understanding-heading-8">来源与许可<a class="heading-link" href="#understanding-heading-8" aria-label="链接到这一节">#</a></h4>
+<ul><li><a href="https://www.chippytea.com/">原作官网</a> · <a href="https://github.com/richiemcilroy/chippytea">上游仓库</a> · <a href="https://github.com/richiemcilroy/chippytea/tree/f245695">研究快照 f245695</a>。</li><li>复用代码与绘图路径遵循上游 MIT；已保留 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/CHIPPYTEA-LICENSE.txt">许可证</a>和<a href="source-notice.html">网页来源声明</a>。原作截图用于有来源的研究记录。</li><li>原作歌曲 <strong>Save Your Mac with chippytea</strong> 仅从官网远程播放，未下载归档。歌曲权益独立于代码 MIT；原创 MiniMax 音乐也不能沿用原代码许可结论。</li><li>新世界的原图、素材与生成来源均留在项目资料中；公开网页不包含服务密钥。</li></ul>
+<p><a href="../../">返回总索引</a></p></section>
+<section id="publication"><p class="status">当前整理</p><h2>本次发布摘要与范围</h2><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/notes/publication-summary.md">查看原始文档 ↗</a> · <a href="#contents">回到目录 ↑</a></p><h3 id="publication-heading-1">Chippytea Lab · 完整理解与网页发布摘要<a class="heading-link" href="#publication-heading-1" aria-label="链接到这一节">#</a></h3>
+<p>整理日期：2026-10-08。研究基线为源库 <code>f245695</code>，原创演出基线为 v10；本次复用此前生成的 <code>assets/chippytea-understanding-map-v1.png</code>，不更换引导图或重新生成音乐。</p>
+<h4 id="publication-heading-2">清楚的一句话<a class="heading-link" href="#publication-heading-2" aria-label="链接到这一节">#</a></h4>
+<p>我们研究的是<strong>把有意义的功能结果编排成可参与、可积累的声画体验</strong>：功能决定发生了什么，图像赋予角色与世界，动作展现过程和回应，音乐组织节奏与情绪，用户的参与在世界里留下变化。</p>
+<p>Chippytea 本身是 Mac 清理应用加互动官网，提供可阅读复用的完整产品实现；它不是通用动画 SDK。其价值包括可信的结果表达、统一原创品牌和可复用的声画编排。完成率、留存、传播或收益提升尚未测量。</p>
+<h4 id="publication-heading-3">本次网页应完整包含什么<a class="heading-link" href="#publication-heading-3" aria-label="链接到这一节">#</a></h4>
+<p><a href="https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/">公开总入口</a>默认展示理解总览，所有旧演示保留直达方式：</p>
+<div class="archive-table"><table><thead><tr><th scope="col">阅读 / 展示</th><th scope="col">路由与内容</th></tr></thead><tbody><tr><td>理解总览</td><td>默认或 <code>?view=overview</code>；原引导图、源库能力、价值、原理、样式、产品方向与边界</td></tr><tr><td>引力花园</td><td><code>?view=experience&amp;scene=gravity&amp;v=10</code>；接力星种、岛面选位、持续生长与真实 MiniMax 配乐</td></tr><tr><td>月亮修补铺</td><td><code>?view=experience&amp;scene=moon&amp;v=10</code>；追逐、拉线、补丁飞行和三针缝合，静音</td></tr><tr><td>影子排练场</td><td><code>?view=experience&amp;scene=shadow&amp;v=10</code>；追光、旋身、共舞、姿势留存与真实 MiniMax 配乐</td></tr><tr><td>原作对照</td><td><code>?view=source</code>；模拟清理、种子墨线、收集动画与音效、原作互动歌曲</td></tr><tr><td>资料与回执</td><td><code>?view=research&amp;mode=records</code>；静态只读快照，本机服务可重新核验和保存</td></tr><tr><td>历史纸墨实验</td><td><code>?view=folio</code>；24 秒自有笔记、批注、装订与编号落印静音预演</td></tr><tr><td>旧 research 入口</td><td><code>?view=research</code>；保留进入原创世界的既有行为</td></tr><tr><td>完整依据</td><td>原作官网、固定源码快照、README、完整研究/设计/运行说明、素材和音乐来源、当前及历史验证记录</td></tr></tbody></table></div>
+<p>首页和总索引摘要应让人直接知道为什么看、有哪些真实效果、如何进入原作与我们的三个场景，图与效果入口应出现在明显位置。</p>
+<h4 id="publication-heading-4">五部分理解<a class="heading-link" href="#publication-heading-4" aria-label="链接到这一节">#</a></h4>
+<ol><li><strong>源库能力</strong>：在指定位置扫描空间机会，按类别审阅后保留、Trash 或永久处理；符合条件的真实永久操作保守记账计奖。网页用手绘组件、角色、收集动画、短音效、逐词歌词和歌曲互动表达产品。</li><li><strong>价值</strong>：使抽象结果可感知，建立产品的原创视觉与声音语言，并复用绘图、媒体主钟、段落、互动阶段与回退规则。艺术质量仍依赖创意和节奏匹配。</li><li><strong>原理</strong>：功能事件 → 确认结果 → 声画编排 → 用户参与 → 世界积累；实际音频时间组织段落，频谱影响细节，独立互动时钟表达用户操作。业务成功和演出播放分别处理，重演不重复结算。</li><li><strong>原创样式</strong>：引力花园、月亮修补铺、影子排练场。共同采用纸底墨线、水彩素材、两角色关系、世界规则、32 秒四幕和可参与表演，保留自己的元素与性格。</li><li><strong>扩展产品</strong>：知识收藏/研究归档、任务习惯/专注、文件素材整理、创作成果/品牌展示、互动课程/新手引导、音乐叙事编辑器。当前都是待接业务方向，不是已经交付的六款产品。</li></ol>
+<h4 id="publication-heading-5">已有能力与证据状态<a class="heading-link" href="#publication-heading-5" aria-label="链接到这一节">#</a></h4>
+<div class="archive-table"><table><thead><tr><th scope="col">状态</th><th scope="col">实际范围</th></tr></thead><tbody><tr><td>已实现</td><td>三场原创声画与本机互动，29 个 PNG，四幕、章节、暂停、重演、有限连演、强度、专注、减少动态；花园记住四株落点，影子记住三个姿势</td></tr><tr><td>已有真实音乐</td><td>MiniMax Music3 生成花园和影子两首；32 秒播放版与原 WAV、请求及 SHA 均保留，未变速或合成替代</td></tr><tr><td>仍缺音乐</td><td>月亮唯一请求因匿名配额拒绝，无文件；历史纸墨音乐也未取得</td></tr><tr><td>已有真实业务案例</td><td>本机研究资料核验与持久回执，历史浏览器检查覆盖保存、去重、更新、刷新、阻止缺项和导出</td></tr><tr><td>尚未接入</td><td>三场本机世界状态未连接真实任务/收藏/研究完成，不保存实际研究内容，不增加真实回执</td></tr><tr><td>历史 v10 通过项</td><td>160 帧、133 探针、32 联系图、59 项共享渲染检查及 67 项 mocked Host/音频控制；真实 MP3 解码与离线 FFT</td></tr><tr><td>当前发布检查</td><td>由本次发布记录报告构建、公共资源、入口、浏览器及线上结果；历史离线与模拟不能代替新网页实测</td></tr><tr><td>未验证</td><td>Mac 原生引擎、真实删除/释放、完整无障碍、所有浏览器兼容、真人听感及产品/商业收益</td></tr></tbody></table></div>
+<p>公开 GitHub Pages 是静态展示：可播放本地两首音乐并使用世界本机存储，资料为构建时快照，不能重新核验或保存真实研究回执。入册必须运行仓库里的本机 Python 服务。</p>
+<h4 id="publication-heading-6">推荐总索引摘要<a class="heading-link" href="#publication-heading-6" aria-label="链接到这一节">#</a></h4>
+<blockquote><p>定位：Mac 清理应用及手绘互动官网研究；能力：将功能结果与角色、四幕动作、音乐时间/频谱、用户参与和世界记忆共同编排；成果：原有理解引导图、引力花园、月亮修补铺、影子排练场、原作对照及研究回执；价值：让结果可感知，沉淀原创品牌和可复用声画表达；扩展：知识收藏、任务习惯、素材整理、创作展示、互动课程及音乐叙事；边界：花园/影子有 MiniMax 配乐，月亮待生成，三个场景未接真实业务，收益待验证。</p></blockquote>
+<h4 id="publication-heading-7">来源与相关研究<a class="heading-link" href="#publication-heading-7" aria-label="链接到这一节">#</a></h4>
+<p><a href="https://www.chippytea.com/">原官网</a> · <a href="https://github.com/richiemcilroy/chippytea/tree/f245695">源码快照 f245695</a> · <a href="#source">研究笔记</a> · <a href="#worlds">原创设计</a> · <a href="#daily">日常工作分析</a> · <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/web/README.md">Web 说明</a> · <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/design-qa.md">设计验收</a>。</p>
+<p>相关方向：<a href="../004-rhythm-drop/">004 · Rhythm Drop（已归档）</a>、<a href="../008-cellmotion/">008 · CellMotion</a>、<a href="../010-dumpling-style-lab/">010 · Dumpling Style Lab</a>、<a href="../015-ai-creative-products/">015 · AI Creative Products</a>。这些是研究连接，当前没有声明已完成跨项目业务集成。</p>
+<p>原代码和绘图路径为 MIT，原曲权益独立并仅远程播放；MiniMax 音乐也不能从源代码 MIT 推导许可。来源声明与上游许可证持续保留。</p>
+<h4 id="publication-heading-8">本机发布验证<a class="heading-link" href="#publication-heading-8" aria-label="链接到这一节">#</a></h4>
+<p>2026-10-08，完整静态站 72 个资源核对通过、60 项真实 Chromium 浏览器检查通过，记录见 publication-local-checks.json。包含两曲真实解码/播放/频谱、三场互动与存档重载、桌面和手机视口、引导图下载、三视频解码、原作/纸墨/回执和完整档案。公网发布状态另以实际 Pages 工作流与 HTTPS 复核记录为准。</p></section>
+<section id="source"><p class="status">2026-10-02 历史研究；音乐与入口以当前总览为准</p><h2>源库研究全文</h2><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/notes/research.md">查看原始文档 ↗</a> · <a href="#contents">回到目录 ↑</a></p><h3 id="source-heading-1">Chippytea 研究笔记<a class="heading-link" href="#source-heading-1" aria-label="链接到这一节">#</a></h3>
+<p>研究日期：2026-10-02。来源：<a href="https://www.chippytea.com/">原官网</a> 与 <a href="https://github.com/richiemcilroy/chippytea/tree/f245695">公开仓库快照 f245695</a>。本地环境为 Windows；源码快照存于仓库忽略目录 <code>.tmp/chippytea-source</code>，子项目仅保留实际复用的网页模块、MIT 声明、截图和研究材料。</p>
+<p>本轮回答七个问题：能做什么、底层怎么做、如何运行、支持什么系统、适合哪些场景、对我们有何价值、后续怎样扩展。最重要的采用方向是从真实功能事件扩展出的完整动画、音乐与互动场景。研究入册承载业务事件；主舞台按我们的研究语义设计笔记、批注联接、装订与编号落印，不使用原作鱼、食品、封面或原曲。原作案例组件仅作来源研究。</p>
+<p><strong>新版 24 秒四幕静音视觉已实现并实测；MiniMax 配乐尚未生成。</strong> 官方 API 已返回 HTTP 410、业务状态 2153，本地无生成文件；真实音乐时钟、频谱和音画同步不在通过范围内。历史版 16 秒舞台截图与检查不作为新版验收。</p>
+<h4 id="source-heading-2">证据层次<a class="heading-link" href="#source-heading-2" aria-label="链接到这一节">#</a></h4>
+<div class="archive-table"><table><thead><tr><th scope="col">层次</th><th scope="col">本轮依据</th><th scope="col">能支持的结论</th></tr></thead><tbody><tr><td>原官网浏览器操作</td><td>首页、审阅、虚构清理结果、歌曲与桥段截图</td><td>能确认网页外观和对应交互；网页模拟不证明原生扫描、清理或空间释放</td></tr><tr><td>固定源码快照</td><td>根 README、<code>site/README.md</code>、SwiftUI/Rust/网页源码</td><td>能说明公开设计、运行要求、计奖条件和实现关系；不是原生实机测试</td></tr><tr><td>本地组件复用与原创实验</td><td><code>src/App.tsx</code>、<code>src/upstream/</code>、<code>web/</code></td><td>能研究绘图、交互与反馈规则；验收以最终浏览器操作记录为准</td></tr><tr><td>自有场景的视觉演出</td><td><code>src/Experience.tsx</code>、<code>PerformanceStage.tsx</code>、<code>performanceAudio.ts</code></td><td>24 秒四幕静音预演已实测；MiniMax 音乐尚未取得，文件时钟与频谱尚未通过</td></tr><tr><td>真实工作区分析与入册</td><td><code>notes/daily-work-analysis.md</code>、材料快照、<code>src/ResearchWork.tsx</code>、<code>tooling/research_server.py</code></td><td>能确认项目间重复流程、文件与索引结构、持久回执；不能推算每日工时或认证研究质量</td></tr><tr><td>我们的产品价值推演</td><td>对照 015、004、008、010 的已有方向</td><td>能提出采用路径与验收指标；不能声称提高了留存、转化或收入</td></tr></tbody></table></div>
+<p>官网截图来自当日页面，代码研究使用 <code>f245695</code>。没有证据表明捕获时官网与该 commit 精确对应，因此分别注明时间与版本。</p>
+<h4 id="source-heading-3">一、能力与安全边界<a class="heading-link" href="#source-heading-3" aria-label="链接到这一节">#</a></h4>
+<p>上游定位是菜单栏中的本地 Mac 清理应用，SwiftUI 提供原生界面，Rust 提供扫描和操作引擎。它发现用户选定位置和已知工具位置中的候选项目，展示估算大小、原因与后果，再由用户决定保留或处理。</p>
+<p>类别包括开发依赖、构建产物、npm/npx/Corepack/Bun/pip/uv/mise/Cargo/SwiftPM/Zig/Expo/Homebrew 下载/AWS CLI 等已知缓存，以及应用缓存、日志、Python 字节码、Xcode DerivedData、下载和个人大文件。类别间权限、复核与允许操作不同。已知工具缓存也可能因活动、共享文件、目录内容或归属不满足条件而被禁用；测得大小不意味着全部可删。</p>
+<p>重复文件检查是用户主动发起的有界过程：比较已经索引的旧/大个人文件建议、验证内容，再复核要保留和要处理的副本。普通扫描不对个人文件内容做全量哈希，也不是全盘去重服务。</p>
+<p>源码依据：<a href="https://github.com/richiemcilroy/chippytea/blob/f245695/README.md">根 README</a>、<a href="https://github.com/richiemcilroy/chippytea/blob/f245695/core/src/scanner.rs">scanner.rs</a>、<a href="https://github.com/richiemcilroy/chippytea/blob/f245695/core/src/safety.rs">safety.rs</a>、<a href="https://github.com/richiemcilroy/chippytea/blob/f245695/core/src/duplicates.rs">duplicates.rs</a>。本轮未实机验证这些清理类别。</p>
+<h4 id="source-heading-4">二、系统与原理<a class="heading-link" href="#source-heading-4" aria-label="链接到这一节">#</a></h4>
+<div class="archive-table"><table><thead><tr><th scope="col">层</th><th scope="col">文件或目录</th><th scope="col">作用</th></tr></thead><tbody><tr><td>原生界面与平台桥接</td><td><code>native/Chippytea/</code>，<code>EngineBridge.swift</code></td><td>SwiftUI、菜单栏、扫描位置授权、Finder/Trash、引擎数据和历史界面</td></tr><tr><td>扫描、索引和候选</td><td><code>core/src/scanner.rs</code>、<code>store.rs</code>、<code>recommendations.rs</code></td><td>有界发现、SQLite 状态与建议，区分候选与真正可处理项目</td></tr><tr><td>操作前复核</td><td><code>core/src/safety.rs</code>、<code>cleanup.rs</code>、<code>activity.rs</code></td><td>检查归属、活动和文件状态，按类别决定允许的操作</td></tr><tr><td>核算与账本</td><td><code>core/src/accounting.rs</code>、<code>store.rs</code></td><td>操作观察窗口、保守空间核算、余额与持久记录</td></tr><tr><td>共用视觉语言</td><td><code>native/Chippytea/CoinScene.swift</code> 与 <code>site/lib/ink.ts</code> 等</td><td>原生和官网采用相同种子绘图思路与角色语言</td></tr><tr><td>网站应用</td><td><code>site/</code></td><td>Next.js/React、SVG/Canvas、CSS、Web Audio、原作示例与歌曲</td></tr></tbody></table></div>
+<p>原生数据流可以概括为：选择扫描位置 → 收集与索引候选 → 用户审阅 → 操作前重新验证 → 执行允许操作 → 形成结果记录 → 保守核算 → 更新本地余额与视觉反馈。图形反馈在结果之后，不能反过来替代对结果的核实。</p>
+<h5 id="source-heading-5">计奖不是按估算大小直接相除<a class="heading-link" href="#source-heading-5" aria-label="链接到这一节">#</a></h5>
+<p><code>accounting.rs</code> 先要求操作为永久清理、目标内容完整移除、私有分配可证明、审阅项目存在分配字节，并且容量采样显示可用空间增加。空间计奖受到三个上界约束：可证明的私有分配、审阅分配大小、扣除测得背景增长后的容量增量。条件不足时计奖为零；APFS 共享、快照和其他磁盘活动也会影响游戏计奖，源码没有把它称为精确磁盘节省结论。</p>
+<p>累计本次有证据支持的空间与历史余量后，按十进制 <strong>100 MB = 100,000,000 字节</strong> 增加一个 chip，余量继续保留。操作、核算分配、收入和余额在 SQLite 事务中更新，避免同一个观察窗口被重复结算。</p>
+<p><strong>移入 Trash 不建立已恢复空间，也不计奖。</strong> 应用缓存、日志、Python 字节码、Xcode DerivedData、下载与个人文件属于上游说明的审阅/Trash 范围；符合条件且重新验证通过的开发缓存、依赖与构建文件才可能永久操作并计奖。不能为了让动画好看，把所有文件估算大小都转换为奖励。</p>
+<p>依据：<a href="https://github.com/richiemcilroy/chippytea/blob/f245695/core/src/accounting.rs">accounting.rs</a>、<a href="https://github.com/richiemcilroy/chippytea/blob/f245695/core/src/cleanup.rs">cleanup.rs</a>、<a href="https://github.com/richiemcilroy/chippytea/blob/f245695/README.md">根 README 计奖说明</a>。这是源码核对结果，不是对本机空间核算的测量。</p>
+<h4 id="source-heading-6">三、风格拆解与复用范围<a class="heading-link" href="#source-heading-6" aria-label="链接到这一节">#</a></h4>
+<p><code>ink.ts</code> 的颜色表提供奶油纸底 <code>#FAF5EA</code>、深纸色 <code>#F1EADB</code>、卡片 <code>#FFFDF6</code>、炭黑 <code>#33302B</code>、金黄 <code>#F2B63C</code>，并配蓝笔与锈红。纸张、点阵、便签和胶带使产品像生活中的小纸条；正文保持清晰，角色与手写数字承担装饰和成果表现。</p>
+<p><code>handPath</code> 的关键不是随机抖动每一个像素，而是对轮廓采样点加入<strong>可复现的种子噪声</strong>，再以二次曲线中点平滑成形。同一 seed 保持相同轮廓，循环三个 seed 形成约 167 ms 一次的线条重绘。SVG 和 Canvas 共用同一个轮廓思路，适合让按钮、卡片、图标、鱼、薯条和数字保持一致。</p>
+<div class="archive-table"><table><thead><tr><th scope="col">模块</th><th scope="col">可复用能力</th><th scope="col">必须补做的工作</th></tr></thead><tbody><tr><td><code>ink.ts</code>、<code>art.ts</code></td><td>种子墨线、配色、角色与手写字形</td><td>使用我们的原创形象、品牌语义与可配置 token</td></tr><tr><td><code>InkBox.tsx</code>、<code>art.tsx</code></td><td>手绘交互控件与 SVG 角色</td><td>与现有设计系统、键盘和移动交互整合</td></tr><tr><td><code>draw.ts</code></td><td>纸包、薯条、余额的 Canvas 绘制</td><td>按业务成果设计容器与收藏物，处理缩放和可读文本</td></tr><tr><td><code>DemoPanel.tsx</code></td><td>审阅、模拟结果、收藏动画的一段完整交互</td><td>替换虚构数据，连接真实业务的完成和核验事件</td></tr><tr><td><code>chime.ts</code></td><td>Web Audio 合成短收集声音</td><td>可关闭声音、按用户手势启动、处理暂停与资源释放</td></tr><tr><td><code>Karaoke.tsx</code>、<code>lyrics.ts</code>、<code>sections.ts</code>、<code>karaokeScene.ts</code></td><td>音频时钟、词级同步、段落表演、点击反馈</td><td>更换授权音乐、生成并人工校正歌词时间、设计新段落表演</td></tr></tbody></table></div>
+<p>源码注明绘图原语来自原生 <code>CoinScene.swift</code>；这个跨原生与网页的统一视觉语言比单纯复用一张插画更有参考价值。</p>
+<h4 id="source-heading-7">四、官网交互与本地展示<a class="heading-link" href="#source-heading-7" aria-label="链接到这一节">#</a></h4>
+<h5 id="source-heading-8">功能事件扩展为完整演出<a class="heading-link" href="#source-heading-8" aria-label="链接到这一节">#</a></h5>
+<p>用户指出此前资料收集页没有体现最期待参考的能力：基于功能扩展出动画、音乐和特效。单次卡片归位与短提示音不足以展示原作歌曲中完整的声画编排，因此新的 <code>?view=experience</code> 和 <code>?view=research</code> 默认进入全屏舞台；资料列表与回执操作改在 <code>?view=research&amp;mode=records</code>。</p>
+<p>用户随后进一步要求：参考其方法和风格，场景元素适合我们的研究工作，音乐使用 MiniMax 生成。新舞台已完成 <strong>24 秒四幕视觉</strong>：“散乱笔记 → 墨线批注与线索联接 → 纸页归整装订 → 真实编号落印”。它去掉原作鱼群、食品与封面，用研究笔记、书页、墨线与编号印章表达业务。静音预演展示已完成的画面，音乐仍待真实生成文件。</p>
+<p><code>PerformanceStage.tsx</code> 已绘制四幕构图、批注与装订动作；<code>Experience.tsx</code> 读取真实名称与编号并运行静音预演，布局位于 <code>web/performance-stage.css</code> 和 <code>experience.css</code>。<code>performanceAudio.ts</code> 准备以 HTMLAudio 文件时间统一动作和段落，并读取实际频谱；当前音乐不存在，因此音频接入代码不能视为已实测。官方音乐接口返回 HTTP 410、业务状态 2153，新账号无法使用该旧 API；生成文件、来源与实际时长将在成功后记录。</p>
+<p>音乐未就绪时，“重新观看纸墨预演”只重置视觉循环，不提交保存、不增加回执。真实核验与入册保留在资料页。音乐文件成功接入后，完整演出沿用已有回执重演不增数、未入册项目先核验保存的规则。暂停、继续、静音、频谱与音画同步需在真实文件接入后重新检查，不能沿用旧配乐的通过结论。</p>
+<p>原作完整 Karaoke 只留在案例研究页，作为远程原曲、词级歌词、段落角色与投薯条互动的来源对照。我们的主舞台不再提供其启动入口，不使用其原曲作自己的配乐。原曲时间同步与跨域处理详见后文，与新本地文件频谱是两种不同实现。</p>
+<p>新版视觉实际检查已完成：1440 × 1000 桌面录制约 24.9 秒、71 个截帧，覆盖四幕；390 × 844 手机无横向溢出，舞台内 <code>img</code> 数量为零；切换 017 后真实名称与 No.006 正常，六份回执不增。新版证据为 <a href="#scope">folio-effect.gif</a>、<a href="#scope">桌面</a>、<a href="#scope">手机</a>。它们记录静音视觉，GIF 本身无声，不能证明音乐生成。最终范围见 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/design-qa.md">设计验收记录</a>。</p>
+<p>历史版 <a href="#scope">16 秒动图</a>、<a href="#scope">桌面</a>、<a href="#scope">手机</a> 保留包含借用原作元素和浏览器合成配乐的旧方案。旧版的手机、暂停恢复、重播与首次入册检查，不沿用为新版音乐的通过证据。</p>
+<h5 id="source-heading-9">MiniMax 配乐的重新生成<a class="heading-link" href="#source-heading-9" aria-label="链接到这一节">#</a></h5>
+<p>工具位于 <code>tooling/generate-music.py</code>。待本地账号有可用音乐接口后，可从仓库根目录执行；示例应换成自己的本地配置路径：</p>
+<pre><code class="language-powershell">python projects/016-chippytea-lab/tooling/generate-music.py --generate --env-file C:/private/.env.minimax</code></pre>
+<p>过程记录在 <code>notes/music-generation.json</code>。只有真实生成与文件处理成功后，才接入本地 <code>web/audio/research-to-folio.mp3</code>、HTMLAudio 媒体时间和实际频谱。拒绝与失败状态不能视为生成成功，也不会自动提供合成替代音轨。成功后重新构建，并检查实际播放、暂停恢复与声画同步。</p>
+<p>原作 <code>DemoPanel.tsx</code> 使用内存中的虚构文件和预设成功结果。默认纸包余额为 854 chips；例如 2.40 GB 的 <code>target</code> 清理示例会表现为 24 chips 的增加。这是一段交互说明，不是扫描和存储恢复测试。下载样例只能移入 Trash，不增加奖励。</p>
+<p>本地页面复用原作的 <code>DemoPanel</code>，提供重置，并将能力说明拆为发现、复核、计奖与原生四个可切换角度。风格实验复用 <code>FishSvg</code>、<code>MugDoodle</code> 和 <code>InkBox</code>，允许切换画笔 seed 和三帧循环。画廊与音乐区保留首页、审阅、结果、歌曲和桥段的原官网截图。</p>
+<p>新增任务实验将 015 的研究工作示意为可完成事项：完成一次后绘制薯条进入纸包，数字与可选短音效响应，重复点击已完成项不会再次领，支持重置和导出本轮结果 JSON。Canvas 复用上游 <code>paintWrap</code> 与 <code>paintChip</code>，任务规则和价值说明由本项目新增。它当前是内存原型，没有连接 015 真实任务，也没有跨设备、账号、后端或持久奖励账本。</p>
+<h5 id="source-heading-10">从重复工作走到真实研究入册<a class="heading-link" href="#source-heading-10" aria-label="链接到这一节">#</a></h5>
+<p>用户进一步要求“日常重复最多的进行分析，用真实场景搭配一个真实的效果看看”。本次没有活动日志、每日次数或工时数据，因此以跨项目覆盖分析重复流程。分析时的快照包含 17 个项目，均登记来源、建立 README 与研究笔记入口，16 个有 Web 入口，15 个登记了存在的封面。先选择的承载案例是：看案例、核对来源与源码、整理能力原理、做展示、登记索引、复核留存。具体快照时间、统计方法与逐项文件证据见 <a href="#daily">daily-work-analysis.md</a> 和 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/notes/daily-work-evidence.json">daily-work-evidence.json</a>。这是跨项目覆盖分析，不表示已经测得每天耗时最多；项目随后新增或补全不会改写这份历史快照。</p>
+<p>资料与回执页面入口为 <code>http://127.0.0.1:8977/projects/016-chippytea-lab/?view=research&amp;mode=records</code>。它读取当前在册项目，选中一个项目后呈现实际资料状态、缺项与依据；点击“核验并入册”后，由本机 Python 服务重新读取文件，而不是由浏览器按钮直接判定成功。这部分是演出所需真实业务连接，主体验仍是上述完整声画舞台。</p>
+<div class="archive-table"><table><thead><tr><th scope="col">核验项</th><th scope="col">实际规则</th><th scope="col">可以支持的判断</th></tr></thead><tbody><tr><td>目录与总索引</td><td>清单 ID/slug 对应目录存在；主 README 生成块与清单一致</td><td>项目已按仓库结构登记</td></tr><tr><td>来源</td><td>清单有通过登记格式检查的 HTTPS 源库或参考字段；不访问上游</td><td>有可追溯的来源字段，不证明源站可达或事实正确</td></tr><tr><td>README 与笔记</td><td>README 和至少一份 notes 顶层 Markdown 去掉注释、标题、链接地址及已知模板提示后，达到 100 个非空白字符的粗略阈值</td><td>有超过空模板的资料量；不判断语义、完整性或质量</td></tr><tr><td>封面</td><td>未登记是可选项；登记后文件须存在且可读，并记录哈希</td><td>登记素材存在，不判断画面质量</td></tr><tr><td>Web</td><td>未建立入口是可选项；已有 <code>web/index.html</code> 须非空，读取入口与 Web README</td><td>有展示入口，不证明资源、交互或浏览器验收通过</td></tr></tbody></table></div>
+<p>服务只读取清单项目的固定文件范围与必要顶层 Markdown，不递归扫描个人目录。资料指纹包含该项目清单条目和核验材料的哈希；主 README 使用该项目的索引摘录，避免其他项目修改使全部回执失效。客户端只提交 <code>projectId</code>，服务自行决定是否满足条件。</p>
+<p>通过后，服务将唯一回执原子保存至 <code>notes/research-collection.json</code>，包含 UUID、项目编号、序号、首次保存时间、核验时间、资料指纹和检查依据。每个项目只占一个位置：首次保存增加数量，重复核验不增加，资料变化则更新同一回执。失败时不返回成功；损坏账本被保留并显示错误，不自动清空。入册不会更改 <code>projects.json</code> 的研究完成状态，也不保存全部历史修订。</p>
+<p>浏览器收到新增回执成功响应后，才让研究卡片在约 1.3 秒内飞入收集册，编号落印、数字增长，并在卡片归位时播放上游 <code>chime.ts</code> 合成的约 0.67 秒短声音。这些反馈对应同一次真实保存；重复核验与回执更新不制造新增奖励。声音可关闭或试听，试听不写入回执；减少动态偏好省略飞行与数字渐变，保留文字结果。最终交互实测与截图仍由 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/design-qa.md">设计验收记录</a> 记录，不能由源码实现直接宣布通过。</p>
+<p>静态页面使用构建时的 <code>web/research-state.json</code> 只读快照，明确标记未连接本机服务并禁用入册。快照生成脚本仅读取，不创建回执。这样同一页面既能公开展示实际资料，又不会在没有服务器保存的情况下假装完成。</p>
+<h5 id="source-heading-11">本轮真实场景的浏览器验收<a class="heading-link" href="#source-heading-11" aria-label="链接到这一节">#</a></h5>
+<p>2026-10-02，此前真实入册流程使用 016 Chippytea、015 AI Creative Products、008 CellMotion 三份回执完成操作检查：刷新后保留，重复提交不增数；016 资料变更更新原回执，数量不变。017 当时仍是模板，资料不足被阻止入册。回执导出的实际文件已取得，1440 px 桌面、390 px 手机截图和旧入册 GIF 留作历史证据。随后用户新增其他回执；017 资料完成后也在新舞台通过真实保存并开始演出。当前数量和状态以页面实时读取或明确标记的快照为准，不再固定为此前三份。</p>
+<p>通过范围是本机真实资料核验、保存、去重、更新、刷新保留、缺项阻止、导出与对应界面操作；不包括对三项研究的内容质量认证，也不表示这些项目各自的浏览器功能全部通过。具体证据与截图见 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/design-qa.md">设计验收记录</a>。原生 Mac 引擎、真实删除、商业收益和完整无障碍仍未验证。</p>
+<h5 id="source-heading-12">歌曲的时间同步与跨域处理<a class="heading-link" href="#source-heading-12" aria-label="链接到这一节">#</a></h5>
+<p>上游歌曲 <strong>Save Your Mac with chippytea</strong> 由 <code>&lt;audio&gt;</code> 播放，歌词每个词有起止时间；<code>sections.ts</code> 将歌词连续段落归为 intro、chorus、verse、pre-chorus、bridge、last chorus 等区间。<code>Karaoke</code> 按 <code>audio.currentTime</code> 查找当前词和段落，<code>karaokeScene</code> 根据区间编排游鱼、薯条、拍手、强调与点击投放。原官网的 AnalyserNode 检查低频强度变化形成节拍刺激，它没有自动完成整首歌的分镜。</p>
+<p>本地 <code>SONG_SRC</code> 指向原官网歌曲，不下载音乐归档。跨域媒体通过 <code>createMediaElementSource</code> 时可能受 CORS 限制而得到静音，因此本地让远程原曲走 HTML 音频原生播放，跳过音频分析节点，并使用现有 <code>FALLBACK_BEAT</code>（0.5 秒）驱动角色节奏。歌词、段落和拖动后的同步继续依据音频真实播放时间；关闭时通过 HTMLAudio 的 <code>volume</code> 淡出。<strong>这份适配让远程歌曲走原生播放通道，实际可听与同步仍需浏览器验证；它不是本地对原曲做实时频谱检测。</strong></p>
+<p>词级时间生成方案来自上游：歌词表加 Whisper word timestamps 后执行对齐脚本，生成 <code>lyrics.ts</code>。新的歌曲仍需人工校正时间和表演；更换音轨不能沿用原曲时间数据。依据：<a href="https://github.com/richiemcilroy/chippytea/blob/f245695/site/README.md">site/README</a>、<a href="https://github.com/richiemcilroy/chippytea/blob/f245695/site/components/Karaoke.tsx">Karaoke.tsx</a>、<a href="https://github.com/richiemcilroy/chippytea/blob/f245695/site/lib/sections.ts">sections.ts</a>。</p>
+<h4 id="source-heading-13">五、运行条件与平台<a class="heading-link" href="#source-heading-13" aria-label="链接到这一节">#</a></h4>
+<div class="archive-table"><table><thead><tr><th scope="col">对象</th><th scope="col">运行条件</th><th scope="col">本轮状态</th></tr></thead><tbody><tr><td>Mac 原生应用</td><td>Apple Silicon、macOS 14+、Xcode/命令行工具、Python 3、Rust；<code>./scripts/build.sh</code></td><td>仅核对公开要求与源码，未构建或实机运行</td></tr><tr><td>原官网</td><td>Bun 1.4、Next.js 16.3.4、React 19.2.8；<code>bun install --frozen-lockfile</code> 与 <code>bun run dev/build/start</code></td><td>本轮操作官网并读取代码；没有声称跑通原网站生产构建</td></tr><tr><td>本地展示构建</td><td>React/ReactDOM 18.3.1、esbuild 0.25.10，锁文件位于 <code>tooling/</code></td><td>构建为静态 <code>web/app.js</code>，使用已有编译官网 CSS 与自有布局 CSS</td></tr><tr><td>本地展示访问</td><td>Python 3 或任意静态 HTTP 服务、现代浏览器；远程音乐需网络</td><td>提供共享站和独立站两种入口，详细命令见 Web README</td></tr><tr><td>真实研究入册</td><td>Python 3 标准库服务、完整当前仓库及已构建的 <code>_site/</code>；默认 <code>127.0.0.1:8977</code></td><td>读取实际资料与本机持久回执，最终操作验收见设计记录</td></tr></tbody></table></div>
+<p>官网 <code>/download</code> 要求 Next.js 服务端，检查稳定 GitHub Release 和精确安装包；本地研究页没有移植这一路由。原生 SwiftUI/Rust 清理能力不能随静态网页运行，也未变成 Windows/Linux 清理工具。</p>
+<p>本地构建入口为 <code>tooling/build.mjs</code>，将 <code>src/App.tsx</code>、React 与复用模块打包进 <code>web/app.js</code>；上游署名保留于 <code>app.js.LEGAL.txt</code> 和 <code>source-notice.html</code>。静态服务可以直接消费 <code>web/</code>，共享站由仓库 <code>scripts/build_site.py</code> 汇总。</p>
+<p>完整演出由 <code>src/Experience.tsx</code>、<code>PerformanceStage.tsx</code> 和 <code>performanceAudio.ts</code> 提供，资料操作由 <code>src/ResearchWork.tsx</code> 与 <code>tooling/research_server.py</code> 提供。构建时先运行 <code>python projects/016-chippytea-lab/tooling/research_snapshot.py</code>，再运行浏览器打包和共享站构建；从仓库根目录执行 <code>python projects/016-chippytea-lab/tooling/research_server.py</code> 启动服务。Python 服务不调用原生清理引擎，不修改研究清单，只写入本子项目的回执账本。详细操作见 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/web/README.md">Web README</a>。</p>
+<p><code>web/upstream.css</code> 来自当日官网已加载的 <a href="https://www.chippytea.com/_next/static/immutable/chunks/2mwteocwimcul.css">编译样式资源</a>，对应上游 <code>site/app/globals.css</code> 和组件工具类。该资源的发布哈希属于官网构建，不等于研究 commit；本项目另用 <code>web/style.css</code> 编写研究布局、任务实验和中文样式，来源也保留在浏览器 <code>source-notice.html</code>。</p>
+<h4 id="source-heading-14">六、场景与对我们的价值<a class="heading-link" href="#source-heading-14" aria-label="链接到这一节">#</a></h4>
+<p>首要价值是把功能扩展为完整的动画、音乐与互动场景。业务事件提供真实素材与触发点；演出层组织音频主钟、角色、绘图、字幕、段落情绪、参与动作和收尾。这套组织方式既可用于一次成果，也可用于产品介绍、互动歌曲、课程结课或创作结果。</p>
+<div class="archive-table"><table><thead><tr><th scope="col">对应已有研究</th><th scope="col">可结合的部分</th><th scope="col">当前价值判断</th><th scope="col">后续验收</th></tr></thead><tbody><tr><td>015 任务冒险</td><td>任务事件触发角色、配乐与分段演出</td><td>用实际成果素材演出，而不是只弹出一个完成提示；接入 015 业务仍需实现</td><td>业务只结算一次，演出可重复播放；事件和演出成功分别处理</td></tr><tr><td>004 音乐叙事</td><td>声音作为主时钟、角色演出、段落情绪</td><td>可形成轻量互动歌曲模板</td><td>暂停、跳转和重新播放时音画同步，用户手势启动，能退出</td></tr><tr><td>008 字体动效</td><td>字词高亮、手写数字、字幕节奏</td><td>可把固定视频效果延伸到可操作字幕与歌词</td><td>词级数据可编辑，不依赖特定歌曲，移动端字幕清楚</td></tr><tr><td>010 手绘生活产品</td><td>自有角色、低帧率线条、纸张控件</td><td>可沉淀统一品牌表达，适合生活化产品</td><td>新角色与按钮卡片一致，装饰不会遮挡文字和操作</td></tr></tbody></table></div>
+<p>传播、习惯完成率、长期留存和付费都还是假设。网站“能玩且有辨识度”可以观察，商业成效不能从源代码或一次体验直接推断。</p>
+<p>研究入册是这次可操作的承载案例。最应沉淀的能力是：把一个确定的功能事件编排为有节奏、可参与、能暂停重播的声画段落。统一墨线和角色减少素材断裂，主时钟减少音画漂移，段落脚本组织起承转合；这些是可复用实现。旋律、动作、字幕与业务含义如何匹配仍需创意判断，不能通过复制源码自动获得。资料核验与去重使真实事件可信，但不是本轮重点价值。</p>
+<h4 id="source-heading-15">七、扩展顺序<a class="heading-link" href="#source-heading-15" aria-label="链接到这一节">#</a></h4>
+<ol><li>从当前完整演出抽出业务输入、配乐、主时钟、段落脚本、角色、字幕和交互配置，接入一个真实任务或生成结果。</li><li>优先检查完整视听过程：首屏动作是否可见、场景是否随音乐换段、暂停恢复是否同步、重播是否不影响业务数量、手机构图是否清楚。</li><li>扩展原创或授权音乐、词级时间编辑、角色表演与场景脚本；处理音轨失败、用户手势启动、退出、资源释放与减少动态效果。预设节拍与频谱检测分别说明。</li><li>本机回执已持久保存；需要产品化时再增加撤销、修订历史、账号与多人状态，清理原生工具则另做平台权限、文件操作安全、恢复与引擎测试。</li></ol>
+<p>先打磨一段完整声画体验，再观察它是否服务产品表达和用户行动。源码复用能降低绘图与同步的重复工作；长期产品效果与商业结果仍需真实使用验证。</p>
+<h4 id="source-heading-16">截图、素材与许可<a class="heading-link" href="#source-heading-16" aria-label="链接到这一节">#</a></h4>
+<div class="archive-table"><table><thead><tr><th scope="col">文件</th><th scope="col">来源与用途</th></tr></thead><tbody><tr><td><code>assets/overview.jpg</code></td><td>原官网首页参考截图，作为索引封面；不是本地验收截图</td></tr><tr><td><code>assets/source-home.jpg</code></td><td>原官网首页，纸张、墨线、角色与示例</td></tr><tr><td><code>assets/source-review.jpg</code></td><td>原官网审阅界面，项目与后果说明</td></tr><tr><td><code>assets/source-result.jpg</code></td><td>原官网虚构完成结果，收藏与计数反馈</td></tr><tr><td><code>assets/source-song.jpg</code></td><td>原官网歌曲，词级歌词与角色表演</td></tr><tr><td><code>assets/source-bridge.jpg</code></td><td>原官网桥段，拍手与换场表现</td></tr><tr><td><code>assets/real-work-desktop.jpg</code></td><td>本地真实研究入册场景的桌面画面，区别于原作参考</td></tr><tr><td><code>assets/real-work-mobile.jpg</code></td><td>本地真实研究入册场景的手机画面</td></tr><tr><td><code>assets/real-work-effect.gif</code></td><td>本地卡片入册过程动图；不包含声音，实际音效由网页合成</td></tr><tr><td><code>assets/folio-desktop.jpg</code>、<code>folio-mobile.jpg</code></td><td>新版自有研究场景的桌面与手机实际视觉画面</td></tr><tr><td><code>assets/folio-effect.gif</code></td><td>新版约 24.9 秒静音预演、71 截帧，覆盖四幕；不能证明音乐已生成</td></tr><tr><td><code>assets/performance-desktop.jpg</code>、<code>performance-mobile.jpg</code></td><td>历史版 16 秒舞台实际画面，包含借用元素；不代表新版验收</td></tr><tr><td><code>assets/performance-effect.gif</code></td><td>历史版 16 秒演出、85 截帧；含借用元素，GIF 本身无声</td></tr></tbody></table></div>
+<p>原作截图只用作有来源的研究记录。复用的网页组件与绘图路径遵循上游根 MIT 许可，本子项目保留 <code>CHIPPYTEA-LICENSE.txt</code> 并在浏览器与打包声明中署名。</p>
+<p>歌曲权益独立于 MIT。上游 <code>site/README.md</code> 说明其项目自有原曲获得维护者发布许可；这不授予独立替换录音的权利，也不应把代码许可误写为音乐可任意商用。原作曲目仅在来源研究页远程播放，不下载归档。新版主舞台必须使用 MiniMax 生成音轨，目前尚未取得文件；实际渠道、生成来源及使用条件将在成功后记录。</p>
+<h4 id="source-heading-17">已知限制与待验证事项<a class="heading-link" href="#source-heading-17" aria-label="链接到这一节">#</a></h4>
+<ul><li>Mac 原生应用、Rust 引擎、文件权限、真实删除和空间核算未实机验证；性能与安全结论不能由浏览器示例推出。</li><li>本地清理示例预设成功，旧原创任务结果在内存中；新的研究收集册具有本机资料核验与持久回执，但没有连接 015 的业务任务状态。</li><li>入册只验证固定文件与索引结构，100 字符是粗略过滤空模板的阈值；不能认证研究内容、审美、源码结论、浏览器效果或原生可靠性。静态页面仅为只读快照。</li><li>当前回执一项目一份，更新会替换当前核验依据，不保留完整修订历史；没有账号、跨设备同步或撤销服务。</li><li>远程原曲需要官网持续提供资源及网络；本地通过稳定节拍回退，未对跨域歌曲做频谱分析。</li><li>新舞台四幕视觉与手机检查已完成；MiniMax 音乐尚未生成，官方旧接口返回 410/2153。24 秒是视觉编排时长，不能当作已生成音乐的实际时长；文件播放、音画同步、频谱与暂停待真实文件接入验收。</li><li>本轮文档不声称完整无障碍、所有浏览器兼容或大规模性能已验收；本地浏览器检查结果以最终验收记录为准。</li><li>商业价值、长期留存、真人情绪反馈和收入均未验证。</li></ul>
+<p>完整操作说明见 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/web/README.md">web/README.md</a>，整体结论见 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/README.md">项目 README</a>。</p></section>
+<section id="worlds"><p class="status">2026-10-03 历史设计 · 演出基线 v10；当前首页为总览，原作在 source，发布检查见下方</p><h2>三个原创世界与实现</h2><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/notes/original-worlds.md">查看原始文档 ↗</a> · <a href="#contents">回到目录 ↑</a></p><h3 id="worlds-heading-1">原创小世界：风格参考与分别演示<a class="heading-link" href="#worlds-heading-1" aria-label="链接到这一节">#</a></h3>
+<p>更新日期：2026-10-03，v10。每场 32 秒四幕，可单场重演或三个世界有限连演，终幕至少停留 3.5 秒并等当前互动完成。花园新增岛面选位与最近四株实际落点记忆，生长、三针缝补与追光更明确。花园和影子已有真实 MiniMax Music3 配乐，月亮因匿名配额限制待生成；真实浏览器验收仍 blocked。</p>
+<h4 id="worlds-heading-2">参考什么<a class="heading-link" href="#worlds-heading-2" aria-label="链接到这一节">#</a></h4>
+<p>Chippytea 的启发在于角色、音乐和动作共同构成一个有性格的小世界。我们保留温暖的奶油纸底、墨线与水粉笔触、轻微不规则的形体，以及角色可以失误、回应和合作的俏皮气质。原作猫、鱼和食品对应原作品牌；三个新世界发展自己的角色关系与场景规则。</p>
+<p>每场由两个性格不同的角色和一条荒诞规则出发：高低音改变重力、拉线补月亮形成乐句、光影大小表现胆量。花园与影子已接入真实音乐播放时间及频谱，动作仍有四幕编排，信号只作小幅回应，尚未逐音符标注乐句或实现完全由音高控制的重力。修补铺的音乐规则仍是创作目标。</p>
+<p>功能可以成为触发器：收藏使花园积累星种，整理给月亮留下补丁，探索角度留下一个喜欢的姿势。场景的主要内容是角色之间的小戏与用户的参与，用户即使只想看、碰一碰或重演，也有完整的体验理由。</p>
+<h4 id="worlds-heading-3">三个世界<a class="heading-link" href="#worlds-heading-3" aria-label="链接到这一节">#</a></h4>
+<div class="archive-table"><table><thead><tr><th scope="col">场景</th><th scope="col">性格与规则</th><th scope="col">32 秒四幕</th><th scope="col">用户参与</th></tr></thead><tbody><tr><td><a href="./?view=experience&amp;scene=gravity&amp;v=10">引力花园</a></td><td>懒石头与急性子风精灵合作；已可开启短笛、木质低音与轻打击配乐，低高频对角色、幼苗与星种作小幅回应</td><td>园丁还在打盹 → 风人口吹出星种形成旋流 → 园丁接住后放下 → 每个发现长成花园</td><td>拖动改变风向，点按引出连续手递；岛面选择落点并预览种子，最近四株实际位置记在本机；落种后生根抽芽、展叶和轻轻站稳，不等待第三幕</td></tr><tr><td><a href="./?view=experience&amp;scene=moon&amp;v=10">月亮修补铺</a></td><td>严肃裁缝追着淘气月亮补裂缝；拨奏缝纫配乐只尝试一次，被匿名配额拒绝，当前静音</td><td>月亮又漏了星光 → 裁缝追着打嗝的月亮 → 三针线迹明确贴合补丁 → 补丁拼成新的风景</td><td>拖动拉线，点击触发反应；补丁飞行带短线尾迹，针迹依次缝上，裁缝后仰拉线再放松，收藏标记四幕可见</td></tr><tr><td><a href="./?view=experience&amp;scene=shadow&amp;v=10">影子排练场</a></td><td>夸张影子与害羞光团试探；已接入 MiniMax 钢琴、拨弦与木质打击配乐，用真实时间和频谱回应胆量变化</td><td>先向舞台行礼 → 跃起与连续旋身 → 镜像搭档一起跳 → 谢幕，留下一场表演</td><td>拖灯时舞者追光倾身、压低身形；旋身连续正侧背正，保留短残影与光团跟拍；收藏纸影落入前排，最近三个动作与参数留在本机</td></tr></tbody></table></div>
+<p>每幕 8 秒，章节可直接点击查看。单场 32 秒演完停在终幕，可以选择“再演一场”或“从头再演”；有限连演依次经过花园、修补铺与影子，每场终幕至少停留 3.5 秒，并等当前互动结束，三场完成后停止。手动切场、选幕、进度跳转或重演会取消连演；暂停也冻结终幕等待。终幕暂停后继续保持谢幕，只有明确重演才从头开始。</p>
+<p>花园的“选个位置种下”会暂停演出与配乐、取消连演，让镜头稳定下来。种子预览限制在岛面安全范围内；鼠标或触摸点按提交，也可方向键选位、Enter/空格种下、Esc 取消。提交后仍暂停，独立收藏动画继续完成，点击继续演出再恢复；原“保存一颗发现”按钮仍自动选择空位。最新一株由种子、生根抽芽、展叶到站稳连续变化，原有三株保持长成后的大小，不随新收藏重新缩小。</p>
+<p>即兴动作与收藏各有独立时钟。持续拖动不再把动作年龄锁在同一阶段，伙伴回应和收尾能继续发生。即兴经历准备、动作、伙伴回应与收尾；收藏经历托起、飞行、落下与保留。暂停时这些小戏也能完成，幼苗、补丁和纸影在四幕中持久可见，当前未连接真实业务完成事件。</p>
+<p>“专注看演出”提供集中的舞台，可按 Esc 退出。系统“减少动态”下保持静止，章节和进度选择对应静帧，互动保留静态反馈；连演和频谱运动禁用，配乐暂停。顶部场景标签支持左右方向键，普通舞台聚焦后方向键移动、空格触发；选位模式使用单独的提交和取消操作。</p>
+<h4 id="worlds-heading-4">素材、状态与实现边界<a class="heading-link" href="#worlds-heading-4" aria-label="链接到这一节">#</a></h4>
+<p>三张方向图位于 <code>assets/concepts/</code>，属于概念关键帧。v10 沿用 <code>web/worlds/</code> 中 29 个独立 PNG：花园 10 张、修补铺 10 张、排练场 9 张，包括 14 张基础背景、角色与道具、12 张动作变体和 3 张收尾环境。本轮没有新增 PNG。主要角色和道具以真实栅格素材合成；幼苗使用已有 tree，针迹使用 thread，旋身以 dancer-spin 连续缩放翻转实现，没有新画 Canvas 人物。</p>
+<p>动作变体保留原角色身份、配色与纸墨纹理，由内置 Image Gen 生成透明 PNG。v7 伙伴记录见 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/notes/partner-pose-generation-v7.json">partner-pose-generation-v7.json</a>，v8 prompt、参考、hash 与 alpha 检查见 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/notes/pose-generation-v8.json">pose-generation-v8.json</a>。其中 <code>visibleBBoxThreshold32</code> 是 PIL 的 <code>[left, top, right, bottom]</code>，Canvas 换算为 <code>[x, y, width, height]</code>。</p>
+<p><code>src/WorldExperience.tsx</code> 负责状态、缓存、对白、选位、单次演出与有限连演；<code>src/WorldScenes.ts</code> 负责共享 Canvas 合成、连续生长、三针缝补、追光与收尾；<code>src/WorldAudio.ts</code> 用同一个音频元素处理花园与影子的真实媒体时间和 AnalyserNode 频谱。默认视觉时钟，用户开启配乐后才切为媒体时钟；切场先停前曲再换 src，月亮没有音源。暂停、跳转、重演、后台和减少动态同步音频；准备或等待超过 15 秒会明确回退静音，播放错误不生成替代声音。</p>
+<p>三个世界的计数保存在本浏览器 <code>localStorage</code> 的 <code>chippytea-original-worlds</code>，每场上限 30。花园最近四株 x/y 落点另存于 <code>chippytea-garden-plots</code>，超过四株后只保留最近四次；只有旧计数的记录按默认位置兼容。影子将最近三次保存时实际动作、指针 x/y、演出时间与强度写入 <code>chippytea-shadow-poses</code>，最多五位观众中最近三份按所存动作绘制，其余使用通用行礼剪影。旧影子记录没有动作字段时按参数兼容。</p>
+<p>这些记录没有真实发现内容、完整故事历史或跨设备同步。小世界不调用研究入册 API，不写 <code>notes/research-collection.json</code>，演出和收藏不增加真实回执。实际材料核验与保存保留在 <code>?view=research&amp;mode=records</code>；历史研究成册舞台在 <code>?view=folio</code>；原作组件与原曲在默认案例页。</p>
+<h4 id="worlds-heading-5">配乐状态与验证<a class="heading-link" href="#worlds-heading-5" aria-label="链接到这一节">#</a></h4>
+<p>用户指定直接使用 MiniMax 生成原创音乐。v10 向 <a href="https://huggingface.co/spaces/MiniMaxAI/MiniMax-Music3">MiniMax Music3 官方 Space</a> 各提交一次花园与月亮纯器乐请求。花园取得 35.027 秒 WAV，保留完整原文件，播放版裁为 32 秒并末秒淡出，见 <a href="#record-world-music-gravity-generation-v10">花园回执</a>。月亮被配额检查拒绝：需 96 秒，仅余 4 秒；没有文件、再次请求、付费或自动任务，见 <a href="#record-world-music-moon-generation-v10">月亮拒绝回执</a>。影子沿用 v9 的约 29.94 秒原曲，淡出后补静音至 32 秒，见 <a href="#record-world-music-generation-v9">影子回执</a>。两首没有变速或合成替代；请求、Job ID、文件 SHA 与处理均保留。</p>
+<p>开启配乐需用户点击；已开启后的连演在月亮静音，进入可用曲目时尝试播放，浏览器若拒绝则继续静音。实际音频谱分析见 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/notes/audio-gravity-analysis-v10.json">花园</a> 和 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/notes/audio-shadow-analysis-v10.json">影子</a>。三份初始创作提示与当前状态在 <a href="#record-world-music-briefs">world-music-briefs.json</a>；原研究成册付费 API 的 <a href="#record-music-generation">失败记录</a> 未改，不与新渠道混淆。</p>
+<p>提示按 32 秒四幕组织，生成音频没有逐乐句重编。当前频谱对花园幼苗、星种、园丁及影子光束、角色作小幅回应。离线 FFT 从真实 MP3 解码得到，属于近似分析，不是浏览器 AnalyserNode 采样，也不证明听感或音画同步。</p>
+<p>v10 共享渲染器的 160 张画面帧、133 条行为探针、32 张联系图与 59 项原生渲染检查通过，29 个 PNG 没有新增；Host/音频的 67 项逻辑模拟通过，见 <a href="#record-host-behavior-verification-v10">组件逻辑记录</a>。真实浏览器仍受 Windows helper 故障阻塞，范围见 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/design-qa.md">设计验收记录</a>。离线预览使用共享生产渲染器、脚本互动和真实音频的 FFT 近似；配乐版也不是网页录屏或实际控件操作。</p>
+<h4 id="worlds-heading-6">历史版本与后续价值<a class="heading-link" href="#worlds-heading-6" aria-label="链接到这一节">#</a></h4>
+<p>v6 针对同一画面只移动的问题增加石头醒来、风精灵鼓风、月亮打嗝、裁缝奔跑、影子跃起与谢幕。v7 增加风精灵坐下、裁缝展示星补丁、小光团举灯，以及三场环境收尾和对白；v8 加入独立动作/收藏阶段、专注模式与单次演出。v9 首次将接力、缝补和旋身做成连续过程，加入有限连演与影子配乐。v9 的 136 帧、109 条探针、24 张联系图与 46 项检查保留在 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/notes/worlds-v9-design-qa.md">v9 设计验收</a>、<a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/notes/worlds-v9-visual-verification.json">v9 验证数据</a> 和 <code>assets/worlds-v9-qa/</code>，不覆盖为 v10 结果。v8/v7/v6 离线记录与 v1 浏览器 GIF 也继续保留。</p>
+<p>对我们的价值是建立原创角色、世界规则与用户动作之间可反复发展的关系。v10 的落点记忆让收藏成为用户在世界里做的选择；接入业务时，可以让确认完成的收藏或整理触发表演和积累，再观察是否带来持续使用、重演或分享。留存、传播和商业收益仍未测量。</p></section>
+<section id="daily"><p class="status">场景选择依据；无次数和工时统计</p><h2>日常重复工作分析</h2><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/notes/daily-work-analysis.md">查看原始文档 ↗</a> · <a href="#contents">回到目录 ↑</a></p><h3 id="daily-heading-1">日常重复工作的分析与真实反馈场景<a class="heading-link" href="#daily-heading-1" aria-label="链接到这一节">#</a></h3>
+<p>日期：2026-10-02。分析对象是当前研究工作区的项目材料、清单、内容约定和构建脚本。数量及逐项文件证据见 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/notes/daily-work-evidence.json">daily-work-evidence.json</a>。</p>
+<h4 id="daily-heading-2">我们反复做的是什么<a class="heading-link" href="#daily-heading-2" aria-label="链接到这一节">#</a></h4>
+<p>当前工作区最稳定地重复出现的工作，是<strong>把一个感兴趣的案例，变成以后能回看、比较和采用的研究成果</strong>：看案例与原作效果 → 核对来源和源码 → 整理能力、原理、场景、价值和边界 → 做说明图或可操作展示 → 登记到总索引 → 复核并保存。</p>
+<p>这是一项有真实输入、真实文件和真实成果的工作，适合先试 Chippytea 的成果反馈思想。仓库没有全天活动日志、工时或每日操作次数，本次结论表示“在项目间反复出现的流程”，不能据项目数量断言每天花在哪一步的时间最多。</p>
+<div class="archive-table"><table><thead><tr><th scope="col">客观观察</th><th scope="col">本次快照</th><th scope="col">能说明什么</th></tr></thead><tbody><tr><td>在册项目</td><td>17 项：已完成 13、已归档 1、研究中 2、待研究 1</td><td>已存在连续研究、迭代、归档和等待的工作链</td></tr><tr><td>来源登记</td><td>17/17 有源库或效果来源；其中 13 项有源库，11 项有效果来源，两类可重合</td><td>保存“从哪里看到、依据什么判断”是共同步骤</td></tr><tr><td>项目 README 与研究笔记入口</td><td>17/17 均存在</td><td>整理与留存是共同结构；存在模板不表示内容完成</td></tr><tr><td>Web 展示入口</td><td>16/17 有 <code>web/index.html</code></td><td>研究经常需要转化为可看的展示，包含静态阅读页和互动原型</td></tr><tr><td>清单封面</td><td>15/17 有封面字段且文件存在</td><td>研究成果经常需要一张能够回看的代表图</td></tr></tbody></table></div>
+<p>017 Waterfalls 是新增待研究项目，笔记仍包含“待填写”；其目录与模板已建，但还没有网页成果。016 Chippytea 已有研究与网页，最终浏览器验收在此前记录中仍待完成。两者不应因目录存在而被显示成已经验收完成的项目。</p>
+<h4 id="daily-heading-3">哪些重复值得优先处理<a class="heading-link" href="#daily-heading-3" aria-label="链接到这一节">#</a></h4>
+<div class="archive-table"><table><thead><tr><th scope="col">重复工作</th><th scope="col">现有依据</th><th scope="col">建议</th></tr></thead><tbody><tr><td>记录来源、版本和事实边界</td><td>001、002、007、008、016 的固定版本；009、011、013、014、015 的来源及未验证范围</td><td>先减少重复填写，让每张研究卡有稳定来源与证据入口</td></tr><tr><td>反复回答“能力、原理、场景、价值”</td><td>项目摘要、README、研究笔记；共享站的七个问题介绍</td><td>用统一研究结构帮助形成理解，保留各项目差异</td></tr><tr><td>做可看、可操作的展示</td><td>前 16 项已有网页；002 真场景、004 音乐、010 游戏、015 多案例、016 原作组件</td><td>沿用真实效果和素材，集中打磨成果出现的时刻</td></tr><tr><td>登记、补封面、同步入口与复核</td><td><code>docs/CONVENTIONS.md</code>、<code>scripts/projects.py</code>、<code>scripts/build_site.py</code></td><td>最适合先接真实反馈：步骤明确、文件可查、结果可定位</td></tr></tbody></table></div>
+<p>“整理文件”“学习练习”“写日报”也可能高频，但当前证据不足以给它们排日常频率。第一轮选择当前已经积累了大量实例的研究入册，后续用真实使用记录判断是否再扩展。</p>
+<h4 id="daily-heading-4">真实场景：工作区研究入册<a class="heading-link" href="#daily-heading-4" aria-label="链接到这一节">#</a></h4>
+<p>例如今天看完 Chippytea，我们已留下来源、能力原理说明、截图、可操作网页和目录登记。下一步点击“检查并入册”，系统检查这份工作区成果，再生成一张可以打开原作、研究说明和本地展示的收藏卡。</p>
+<p>建议交互闭环：</p>
+<ol><li>选择一个实际登记的项目，先显示缺少什么和已有成果链接。</li><li>检查来源、清单、研究说明、展示入口与代表图。状态由实际检查返回；失败时给出可解决的缺项。</li><li>材料条件通过且该版本首次入册时，研究卡从工作区进入书架，编号印记落下，响起一次短声音。</li><li>动画结束后留下项目名称、核验时间和三个成果入口；再次检查同一份成果只显示已有记录。</li><li>修改成果后可重新检查、更新该卡，不把同一项目的重复点击累计为多张完成卡。</li></ol>
+<p>卡片、编号和书架直接对应我们真实积累的研究成果。第一轮只需要一个认真打磨的“归位”动作、一个落印动作和一个短音效；一般阅读、判断和错误提示保持清楚、平静。</p>
+<h4 id="daily-heading-5">真实触发条件与计奖边界<a class="heading-link" href="#daily-heading-5" aria-label="链接到这一节">#</a></h4>
+<p>建议自动检查的内容包括：项目 ID 与目录对应，源库或参考链接已登记，README 和研究笔记存在且没有关键“待填写”项，网页入口与本地资源存在，封面路径有效，目录索引检查通过。展示操作和内容质量仍按各项目的实际验收记录判断。</p>
+<p>自动检查应呈现“材料条件已满足”“浏览器验收待完成”等明确状态。文件存在仅能支持材料完整度；能力是否准确、原作是否被忠实呈现、实际效果是否可靠，需要内容复核和对应实验。入册不改变 <code>projects.json</code> 的研究完成状态。</p>
+<p>计奖以“项目 ID + 成果版本指纹”去重，服务器先确认保存记录，再返回一次成功反馈。每个项目在书架占一个位置；更新版本替换卡片并保留更新记录。取消、检查失败、刷新、重复点击和单纯打开页面不产生新奖励。使用合成短音效并提供静音，尊重减少动态偏好。</p>
+<p>第一轮验收观察四件事：用户能否说清刚入册的成果是什么；能否立即回到来源或展示；失败原因是否可执行；重复提交是否仍只有一张卡。是否更愿意完成研究、是否节省时间，都需要后续实际使用记录。</p>
+<h4 id="daily-heading-6">分析来源与复核方法<a class="heading-link" href="#daily-heading-6" aria-label="链接到这一节">#</a></h4>
+<ul><li>数据清单：<a href="https://github.com/yydshly/0930_codex_project/blob/main/projects.json">projects.json</a>，本次实际读取 17 条记录；统计不使用线程数量、提交数量或修改时间推算工时。</li><li>内容规范：<a href="https://github.com/yydshly/0930_codex_project/blob/main/docs/CONVENTIONS.md">docs/CONVENTIONS.md</a>：规定项目编号、来源、研究目录、登记与检查方式。</li><li>目录工具：<a href="https://github.com/yydshly/0930_codex_project/blob/main/scripts/projects.py">scripts/projects.py</a>：检查字段、来源格式、目录、封面和主 README 同步；不访问源站，不证明原生产品可靠。</li><li>静态构建：<a href="https://github.com/yydshly/0930_codex_project/blob/main/scripts/build_site.py">scripts/build_site.py</a>：只有存在 <code>web/index.html</code> 的项目进入共享展示。</li><li>研究保存：<a href="https://github.com/yydshly/0930_codex_project/blob/main/docs/RESEARCH_ARCHIVE.md">docs/RESEARCH_ARCHIVE.md</a>：说明文件快照、版本保留和恢复边界。</li><li>内容抽查覆盖前 16 项的 README、<code>notes/research.md</code> 和 Web 说明；017 作为模板阶段单列。逐项路径、大小、哈希和状态保存在配套 JSON 中，可复查本次材料快照。</li></ul>
+<h4 id="daily-heading-7">实际实现与后续复核<a class="heading-link" href="#daily-heading-7" aria-label="链接到这一节">#</a></h4>
+<p>上述表格是分析时的文件快照。随后已实现本机研究收集册，并在浏览器中实际保存 016、015、008 三份唯一回执，核验刷新保留、重复去重、更新替换、模板缺项提示与导出；桌面和手机画面以及实际入册动图见<a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/design-qa.md">设计验收记录</a>。017 后续新增网页，不能据此推断其模板说明已经完成；当前状态以服务重新读取的材料为准。016 的此前浏览器阻塞已经解除。本轮实现没有测量省时幅度或使用意愿提升。</p></section>
+<section id="usage"><p class="status">当前操作与静态边界</p><h2>网页运行与使用说明</h2><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/web/README.md">查看原始文档 ↗</a> · <a href="#contents">回到目录 ↑</a></p><h3 id="usage-heading-1">Chippytea Lab Web · 完整理解与原创声画展示<a class="heading-link" href="#usage-heading-1" aria-label="链接到这一节">#</a></h3>
+<p>本网页将源库的能力、价值和原理与我们的原创演出放在一个入口中：功能事件提供含义，图像建立角色与世界，动作表达过程与回应，音乐组织节奏与情绪，用户参与后留下世界记忆。首页使用此前已生成的 <a href="assets/chippytea-understanding-map-v1.png">引导图</a>。</p>
+<p><a href="https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/">线上总览</a> · <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/README.md">项目理解</a> · <a href="#publication">发布范围</a></p>
+<h4 id="usage-heading-2">全部网页入口<a class="heading-link" href="#usage-heading-2" aria-label="链接到这一节">#</a></h4>
+<div class="archive-table"><table><thead><tr><th scope="col">路由</th><th scope="col">内容</th></tr></thead><tbody><tr><td><a href="index.html?view=overview">默认入口 / ?view=overview</a></td><td>五大理解、原有引导图、三个演出入口、产品扩展、来源及证据</td></tr><tr><td><a href="index.html?view=experience&amp;scene=gravity&amp;v=10">?view=experience&amp;scene=gravity</a></td><td>引力花园：选位种植、接力星种、生长、MiniMax 配乐</td></tr><tr><td><a href="index.html?view=experience&amp;scene=moon&amp;v=10">?view=experience&amp;scene=moon</a></td><td>月亮修补铺：拉线、追逐、三针缝补，当前静音</td></tr><tr><td><a href="index.html?view=experience&amp;scene=shadow&amp;v=10">?view=experience&amp;scene=shadow</a></td><td>影子排练场：追光、旋身、共舞、保存姿势、MiniMax 配乐</td></tr><tr><td><a href="index.html?view=source">?view=source</a></td><td>源库对照：虚构清理示例、手绘组件、收集动画、原作完整 Karaoke</td></tr><tr><td><a href="index.html?view=research&amp;mode=records">?view=research&amp;mode=records</a></td><td>实际资料状态与研究回执；静态站只读、本机服务可重新核验和保存</td></tr><tr><td><a href="index.html?view=folio">?view=folio</a></td><td>历史研究成册：24 秒四幕静音预演</td></tr><tr><td><a href="index.html?view=research">?view=research</a></td><td>保留旧行为，进入原创小世界；需要资料操作时加 mode=records</td></tr><tr><td><a href="source-notice.html">来源与许可</a></td><td>上游署名、原作截图、素材与音乐来源说明</td></tr></tbody></table></div>
+<p>这些相对链接适用于本地 HTTP 服务，也保留同样路径的线上直达方式。在线阅读与本机资料服务能力的区别如下。</p>
+<div class="archive-table"><table><thead><tr><th scope="col">能力</th><th scope="col">静态站</th><th scope="col">本机 research_server.py</th></tr></thead><tbody><tr><td>总览、原作对照、三场演出、历史纸墨</td><td>可查看</td><td>可查看</td></tr><tr><td>花园和影子真实 MP3、世界本机存储</td><td>可使用</td><td>可使用</td></tr><tr><td>研究资料与已有回执</td><td>构建时只读快照</td><td>每次读取当前仓库</td></tr><tr><td>重新核验并保存真实回执</td><td>不支持，页面禁用保存</td><td>支持固定项目资料核验与原子保存</td></tr></tbody></table></div>
+<h4 id="usage-heading-3">三个原创小世界怎样操作<a class="heading-link" href="#usage-heading-3" aria-label="链接到这一节">#</a></h4>
+<p>每场 32 秒四幕，每幕 8 秒，结束后停在终幕。页面提供暂停/继续、重演、章节、进度、强度、专注观看与有限连演。连演依次经过花园、月亮和影子，每场谢幕后至少等待 3.5 秒并等当前互动完成；手动切场、重演、跳转或花园选位会取消连演。</p>
+<ol><li><strong>引力花园</strong>：拖动改变风向，点按让星种飞起并触发园丁与风精灵接力。点击“选个位置种下”后演出与配乐暂停，种子预览随选位移动；点按岛面提交，也可方向键选位、Enter/空格种下、Esc 取消。种下后仍暂停，独立收藏动画完成连续生根、抽芽、展叶和站稳，再点继续演出恢复。最近四株实际落点保存在本机；原保存按钮自动选位。</li><li><strong>月亮修补铺</strong>：拖动拉线，点按触发月亮打嗝与裁缝追逐。收藏让补丁从裁缝手中飞向月亮，三针逐次拉紧，月亮闭眼满足。当前没有音乐文件。</li><li><strong>影子排练场</strong>：拖动灯光，影子即时追光倾身和压低身形；点按切换站立、跃起、旋转与行礼，小光团随后举灯。收藏当时姿势与参数，纸影飞到前排并留下回应。</li></ol>
+<p>即兴与收藏有独立时钟，暂停也能完成反馈。舞台聚焦后可用方向键移动、空格触发；专注模式可用退出按钮或 Esc 返回。系统“减少动态”偏好会暂停配乐并保持选定章节静帧，禁用连演，操作保留静态结果。</p>
+<p>世界状态仅存于本浏览器 <code>localStorage</code>：三个计数位于 <code>chippytea-original-worlds</code>，各场上限 30；花园 <code>chippytea-garden-plots</code> 保留最近四株归一化落点；影子 <code>chippytea-shadow-poses</code> 保留最近三个实际动作、指针、时间与强度。前排最多五位观众，其中最近三份用实际动作，其余为通用行礼剪影。当前不保存实际研究内容，不提交 <code>/api/research/collect</code>，不增加真实研究回执。</p>
+<h4 id="usage-heading-4">音乐与声画同步<a class="heading-link" href="#usage-heading-4" aria-label="链接到这一节">#</a></h4>
+<p>默认无声，花园和影子各自点击配乐开关才播放。两首均为 <a href="https://huggingface.co/spaces/MiniMaxAI/MiniMax-Music3">MiniMax Music3 官方 Space</a> 实际生成文件：花园原始 WAV 35.027 秒，裁至 32 秒并末秒淡出；影子原曲约 29.94 秒，淡出后补静音至 32 秒。原始文件、提示、Job ID、SHA 与处理回执保留，没有变速或合成替代。月亮唯一请求因配额不足被拒绝，未取得文件；实际回执见 <a href="#record-world-music-generation-v10">v10 花园/月亮</a>与<a href="#record-world-music-generation-v9">v9 影子</a>。</p>
+<p>开启本地配乐后，<code>HTMLAudio.currentTime</code> 提供演出主钟，<code>AnalyserNode</code> 读取能量、低频与高频并使角色、植物和灯光作小幅回应。同一个音频元素先停前曲再切换源。暂停、章节、跳转、重演、切场和后台状态同步音频；准备或等待超过 15 秒或播放失败会提示并继续静音。终幕暂停后继续保持谢幕，只有显式重演才从头开始。静音时没有实际音频信号，不能据静音动作认定已检测高低音或节拍。</p>
+<p>源库对照页的歌曲 <strong>Save Your Mac with chippytea</strong> 从官网远程播放，需要网络。为避免 CORS 分析节点静音，本地让原曲走 HTMLAudio 原生通道，用原有 0.5 秒稳定节拍回退驱动角色；词级歌词与段落仍跟随实际播放时间。这个适配不属于本地对原曲做实时频谱检测，也不是原创世界的配乐。</p>
+<p>历史纸墨实验的 MiniMax 配乐仍未取得；其“重新观看纸墨预演”只重置静音视觉，不保存或增加回执。原作与历史音乐记录都不代替新世界的实际文件和验收。</p>
+<h4 id="usage-heading-5">首次构建、更新与本机服务<a class="heading-link" href="#usage-heading-5" aria-label="链接到这一节">#</a></h4>
+<p>从仓库根目录执行：</p>
+<pre><code class="language-powershell">npm --prefix projects/016-chippytea-lab/tooling ci
+python projects/016-chippytea-lab/tooling/research_snapshot.py
+node projects/016-chippytea-lab/tooling/build.mjs
+python scripts/build_site.py
+python projects/016-chippytea-lab/tooling/research_server.py</code></pre>
+<p>随后打开 <code>http://127.0.0.1:8977/projects/016-chippytea-lab/</code>。依赖为锁定的 React/ReactDOM 18.3.1、esbuild 0.25.10 与 Python 3 标准库；普通静态 HTTP 服务可只读展示，无须服务密钥。资料服务默认只监听 <code>127.0.0.1:8977</code>，来自 <code>_site/</code>；不扫描任意个人目录、不运行 Mac/Rust 清理引擎。</p>
+<p>修改源码、文档或清单后重新执行快照、浏览器打包与共享站构建。快照脚本只读，不新增回执。输出为 <code>web/app.js</code>，许可保留于 <code>app.js.LEGAL.txt</code> 与 <code>source-notice.html</code>。仓库发布说明见 <a href="https://github.com/yydshly/0930_codex_project/blob/main/docs/DEPLOYMENT.md">DEPLOYMENT.md</a>。</p>
+<h4 id="usage-heading-6">资料回执 API 与保存规则<a class="heading-link" href="#usage-heading-6" aria-label="链接到这一节">#</a></h4>
+<div class="archive-table"><table><thead><tr><th scope="col">入口 / 文件</th><th scope="col">用途</th></tr></thead><tbody><tr><td><code>GET /api/research/state</code></td><td>当前清单、固定材料、状态、指纹与回执</td></tr><tr><td><code>POST /api/research/collect</code></td><td>只接受 <code>{&quot;projectId&quot;:16}</code> 形式，服务重新核验后决定保存</td></tr><tr><td><code>../notes/research-collection.json</code></td><td>每项目一份持久回执：ID、序号、首次保存/核验时间、资料指纹和依据</td></tr><tr><td><code>research-state.json</code></td><td>构建时只读快照，不是实时账本</td></tr></tbody></table></div>
+<p>核验覆盖目录、总索引、来源登记、README、顶层 Markdown 笔记、登记封面和已有 Web 入口。README 与至少一份笔记去除注释、标题、链接和已知模板后，采用 100 个非空白字符的粗略阈值；来源仅核对格式，不访问上游。这只确认资料结构，不认证语义、结论、审美或页面效果，也不改变清单完成状态。</p>
+<p>唯一写入目标是本项目回执账本。首次保存增加数量，重复核验不增加，资料变化更新同一回执；临时文件、同步落盘与原子替换保证失败不返回成功，损坏账本保留并报错。没有账号、跨设备同步、撤销或完整修订历史。本机服务拒绝其他来源页面提交，页面和 API 应来自同一个 8977 服务。</p>
+<h4 id="usage-heading-7">验证与许可边界<a class="heading-link" href="#usage-heading-7" aria-label="链接到这一节">#</a></h4>
+<p>v10 的 160 张离线帧、133 条探针、32 张联系图、59 项共享渲染检查及 67 项 Host/音频逻辑模拟通过；29 个 PNG 指纹一致。花园和影子实际 MP3 解码均为 32 秒，离线 FFT 与回执 SHA 已核验。离线视频与 mocked 控制不等于真实浏览器验收，当前范围见 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/design-qa.md">design-qa.md</a>与<a href="#publication">发布摘要</a>。历史真实回执和纸墨舞台曾有浏览器证据，新演出需按当前版本单独检查。</p>
+<p>原作清理、旧任务实验采用虚构或内存数据；Mac 原生应用、Rust 引擎、真实删除、空间释放、完整无障碍、全浏览器兼容与商业收益未验证。旧 Windows helper 故障记录保留，是否已取得新的网页证据以本次发布检查为准。</p>
+<p>上游代码和绘图路径为 MIT，见 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/CHIPPYTEA-LICENSE.txt">许可证</a>。原作歌曲权益独立，仅远程播放；MiniMax 音乐不能沿用源代码 MIT 结论。概念图、动作素材、生成提示与实际音乐请求均可在项目资料追溯。</p></section>
+<section id="qa"><p class="status">历史证据分版本保留；本次发布另附记录</p><h2>设计与历史验收记录</h2><div class="scope"><h3>2026-10-08 当前发布检查</h3><p>真实 Chromium 检查状态：通过。覆盖桌面/手机、实际画面、互动、两首配乐解码与频谱、暂停、存档重载、完整档案、下载及资源清单；不等于人工听感、实机移动端或全部无障碍验收。</p><p><a href="#record-publication-local-checks">本机检查 JSON</a> · <a href="#music">公开资源与音乐记录</a></p><p>以下完整正文为 2026-10-03 等历史研发记录，当时的 blocked 保留其日期和范围。</p></div><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/design-qa.md">查看原始文档 ↗</a> · <a href="#contents">回到目录 ↑</a></p><h4 id="qa-heading-1">2026-10-08 完整发布检查<a class="heading-link" href="#qa-heading-1" aria-label="链接到这一节">#</a></h4>
+<p>本次以真实 Chromium 检查公开静态路径（本机使用 publication.test 模拟公网主机）。60 项检查通过，72 个运行资源大小与 SHA-256 核对通过；包含原图下载、三支 v10 离线预览实际视频解码、三场实际 Canvas 画面和互动、两首 MiniMax MP3 实际解码及播放与 AnalyserNode、暂停、世界收藏保存和刷新重载、桌面与 390 px 手机视口、资料只读快照、纸墨及原作入口、全文档案和锚点。公网 API 请求为零，未出现脚本异常或自身资源失败。</p>
+<p>证据：<a href="#record-publication-local-checks">本机完整检查</a>。软件浏览器和手机视口模拟不代表实机设备、人工听感、全浏览器兼容、完整无障碍、业务接入或商业收益。下方及此前 2026-10-03 的 blocked 为当时研发条件，仍保留历史范围。</p>
+<hr>
+<h3 id="qa-heading-2">三个原创小世界 · v10 自选种植与更可靠的声画互动<a class="heading-link" href="#qa-heading-2" aria-label="链接到这一节">#</a></h3>
+<p>2026-10-03。v10 源码、离线渲染和模拟控制核验通过；正式浏览器设计 QA blocked。此次 CUA getState 仍返回 <code>node_repl kernel exited unexpectedly</code> 和 <code>windows sandbox failed: helper_unknown_error: setup refresh had errors</code>，无法取得新版网页截图、真实触摸或可听播放证据。</p>
+<h4 id="qa-heading-3">已修复的发现<a class="heading-link" href="#qa-heading-3" aria-label="链接到这一节">#</a></h4>
+<ul><li>P1 持续拖动锁住动作：pointerMove 曾每次把 age 重设 .7，接力/旋身无法走完。现只更新坐标，动作独立推进，拖动风、线与灯仍持续影响场景。4秒持续拖动模拟和 age&gt;3.5 输入探针通过。</li><li>P1 终幕暂停后继续重播：真实 ended 媒体再 play 会回到零，旧 mock 未模拟。WorldAudio 现在保持 ended，只有显式 seek/replay 可重播；新 mock 复现真实 ended 语义并验证修复。</li><li>P1 音乐准备冻结：加载/播放不决或waiting/stalled会接管时钟却无超时。现首个15秒无进展期限后回退静音并提示重试，连续 stalled 不延长期限，playing 恢复清除计时；迟到 Promise 不覆盖新场景或重启旧音源。控制器模拟通过。</li><li>P2 收藏结果仍偏小：v10幼苗宽度约108–116，根部移回安全岛面并放到角色后层；补丁收集宽度由36至74并逐针压紧回正。相同输入的v9/v10完整图比较显示种植和补丁更清楚，未以结束帧代替过程证据。</li></ul>
+<p>未解决的验收条件是实际网页字体与控件布局、手机DOM对白避让、物理输入、焦点/专注退出、浏览器保存重载、自动播放策略、真实媒体切换和听感。未据构建/模拟标通过。</p>
+<h4 id="qa-heading-4">新互动及真实音乐<a class="heading-link" href="#qa-heading-4" aria-label="链接到这一节">#</a></h4>
+<p>花园“选个位置种下”暂停演出与配乐并取消连演，使用真实seed预览。点击松开或Enter/Space种下，方向键选位，Esc取消；指针进行镜头逆映射。最近四株归一化落点写入 chippytea-garden-plots，旧计数恢复默认位置，保存按钮仍自动选位。最新株依次种子、发芽、展开与安定，旧株保持完整；种下后维持暂停，独立收藏时钟仍完成成长。影子拖灯即时倾身与压身追光。</p>
+<p>花园新 MiniMax Music3 配乐已实际生成，原始35.027秒WAV保留，播放版裁至32秒且末1秒淡出，没有变速或合成替代。影子沿用v9约29.94秒生成音频补尾部静音为32秒。月亮唯一请求因需96秒配额、只余4秒被官方免费Space拒绝，未重复提交/规避，没有配乐文件。生成总记录为 notes/world-music-generation-v10.json，影子原记录保留。</p>
+<p>花园与影子默认无声，点击配乐开关后由真实HTMLAudio.currentTime驱动；一个媒体元素和一个音频图切换可用源，FFT能量/高低频作小幅回应，暂停/结束/减少动态归零。月亮继续视觉时钟与静音提示。</p>
+<h4 id="qa-heading-5">比较与证据<a class="heading-link" href="#qa-heading-5" aria-label="链接到这一节">#</a></h4>
+<p>来源视觉方向：assets/concepts/gravity.png、moon.png、shadow.png。继承生产基线：assets/worlds-v9-qa/。这是既有原创方向的演进，参考Chippytea的角色关系与声画编排气质。</p>
+<p>浏览器implementation screenshot path：unavailable。Native Canvas帧是共享WorldScenes.ts的输出，没有网页控件或DOM文案，不是网页截图。桌面1536×1024、手机舞台390×260；CSS viewport和browser deviceScaleFactor未取得。v9/v10终幕双方t29,count1,strength50,pointer(.64,.5),age100；同状态幼苗双方t5,count4，补丁双方t5,count1,captureAge2.12。各归一到768×512，放在同一1536×544比较输入，顶部32像素仅标注。</p>
+<p><a href="#scope">同输入幼苗离线比较（本机历史素材）</a></p>
+<p><a href="#scope">同输入补丁离线比较（本机历史素材）</a></p>
+<p>已打开两幅同状态比较，并检查手机发芽、选位、月亮三针近景与追灯联系图。近景裁切让针脚和拉紧变化可读；全景用于核对比例、图层与角色遮挡。终幕布局延续，不能用它证明新追光或种植过程。</p>
+<h4 id="qa-heading-6">验证结果及边界<a class="heading-link" href="#qa-heading-6" aria-label="链接到这一节">#</a></h4>
+<ul><li>160原生帧、133行为探针、32联系图、59检查通过；可见角色透明框未越界，29原始PNG指纹一致，无新增人物素材。</li><li>生产renderer SHA：96fbebe9c74f87b61d92bdb65be9c502d826429a74072f885bb4ea80cada2181；Host、Audio、模拟脚本、音乐配置和渲染工具各有最终指纹记录。</li><li>67项主组件/音频/计时器模拟通过：包括持续拖动、ended防重播、首个超时、metadata延迟、stale Promise、音源切换、位置持久化/恢复、安全区、镜头逆变换、选位暂停/取消连演，以及普通/reduced/后台/错误路径。</li><li>花园/影子实际MP3均解码32秒，SHA与生成回执相符；384样本的12Hz FFT1024/Hann频谱0..1核验通过。它近似音频频谱，不能作为browser AnalyserNode捕获证据。</li><li>三段静音离线视频和两段音乐版均640×426、384帧、12fps、32秒。动作预设3.5/10.5/18.5/26.5秒，收藏5/13/21/29秒；花园以脚本落点依次种下四株。镜头没有页面控件，影片不是真实UI录屏，影子追光主要由额外held-light联系图证明。</li><li>本机HTTP/hash与构建检查另写 notes/worlds-visual-verification.json。没有研究入册POST，真实回执数仅GET读取。</li></ul>
+<h4 id="qa-heading-7">五项验收表面<a class="heading-link" href="#qa-heading-7" aria-label="链接到这一节">#</a></h4>
+<ul><li>字体与文字：沿用KaiTi/STKaiti和中文衬线fallback。新开关、选位与失败提示源码可读；实际字体命中、字重、大小、换行、抗锯齿与DOM层级 blocked。</li><li>间距与布局：3:2舞台及角色比例保持，幼苗根部与角色后层关系经同状态图核对。移动按钮换行、专注模式、对白遮挡和真实视口尺寸 blocked。</li><li>色彩与token：奶油纸/苔绿、靛蓝/琥珀与炭黑/薰衣草延续；花园音乐/种植按钮使用苔绿，选位反馈使用真实星种。实际UI对比度和交互状态 blocked。</li><li>图片与素材：29个真实raster素材沿用，透明框/文件SHA通过；连续变换仍合成原PNG，没有以SVG/CSS/div或程序绘制人物代替。成长与补丁大小已在全图和近景检查。</li><li>文案与内容：选位说明暂停、种下/取消和本机记忆；花园/影子明确配乐可开、月亮待生成，失败提示保留于专注模式。没有声称月亮已生成、业务成果已接入或完整声画验收已通过。实际DOM密度、包装与朗读 blocked。</li></ul>
+<h4 id="qa-heading-8">比较历史与验收要求<a class="heading-link" href="#qa-heading-8" aria-label="链接到这一节">#</a></h4>
+<p>v9 QA与验证JSON已归档 notes/worlds-v9-design-qa.md、notes/worlds-v9-visual-verification.json；更早证据保持。v10首轮发现幼苗遮挡风险和补丁过程太小，已把树移到角色后层、放大补丁并加强回正，最终同状态图与联系图重新打开核对。源码冻结后导出影片，文件指纹通过。</p>
+<p>规则来源：<a href="#scope">Design QA SKILL.md</a>：“If browser-rendered evidence is missing, final result is blocked.” 缺少当前网页实施截图，所以正式设计验收保持 blocked。</p>
+<p>final result: blocked</p></section>
+<section id="music"><h2>配乐提示与真实生成记录</h2><p>保留提示、生成与处理结果。没有新生成调用；原 WAV 和大批中间渲染留在本机，公开演出使用已生成的 MP3。</p>
+<details id="record-world-music-briefs"><summary>world-music-briefs.json</summary><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/notes/world-music-briefs.json">原始 JSON ↗</a></p><pre>{
+  &quot;provider&quot;: &quot;MiniMax&quot;,
+  &quot;updatedAt&quot;: &quot;2026-10-03&quot;,
+  &quot;status&quot;: &quot;partial&quot;,
+  &quot;purpose&quot;: &quot;Three distinct original instrumental scores for the interactive character worlds&quot;,
+  &quot;generationRequested&quot;: true,
+  &quot;generatedFiles&quot;: [
+    &quot;web/audio/gravity-minimax.mp3&quot;,
+    &quot;web/audio/shadow-minimax.mp3&quot;
+  ],
+  &quot;currentPlayback&quot;: &quot;gravity_and_shadow_user_enabled_media_clock; moon_silent_pending_quota&quot;,
+  &quot;blocker&quot;: {
+    &quot;previousRequestReceipt&quot;: &quot;music-generation.json&quot;,
+    &quot;httpStatus&quot;: 410,
+    &quot;businessStatus&quot;: 2153,
+    &quot;scope&quot;: &quot;Historical Research to Folio paid API request rejected; not a blocker for completed shadow Music3 Space generation.&quot;
+  },
+  &quot;durationNote&quot;: &quot;32 seconds and four 8-second chapters are creative targets for the expanded choreography. Generated audio must be inspected, edited as necessary, and aligned to the animation before any synchronization claim.&quot;,
+  &quot;worlds&quot;: [
+    {
+      &quot;id&quot;: &quot;gravity&quot;,
+      &quot;title&quot;: &quot;引力花园 / Gravity Garden&quot;,
+      &quot;status&quot;: &quot;ready&quot;,
+      &quot;generationRequested&quot;: true,
+      &quot;generatedFile&quot;: &quot;web/audio/gravity-minimax.mp3&quot;,
+      &quot;isInstrumental&quot;: true,
+      &quot;targetDurationSeconds&quot;: 32,
+      &quot;prompt&quot;: &quot;Compose an original 32-second instrumental miniature for a warm hand-painted gravity garden. Two distinct musical personalities: a sleepy round stone gardener represented by soft, woody bass plucks, and an impatient ribbon wind sprite represented by airy piccolo phrases. Playful acoustic chamber folk, tactile paper-and-gouache atmosphere, light brushed percussion, natural stereo space, around 96 BPM. Build a small humorous duet with four roughly 8-second chapters: 0-8 the stone slowly wakes and taps a steady low pattern while a tiny curious piccolo seed appears; 8-16 the wind gets overexcited, rapid rising piccolo notes scatter star-seeds into the air, with a brief gentle stumble; 16-24 the bass replies and the two find a call-and-response rhythm, low notes suggesting seeds returning to earth; 24-32 the motifs agree in a warm growing melody, resolving into a smiling, soft final chord with a short clean decay. Music should make light and heavy feel like opposing but friendly forces. Begin immediately without silence. No vocals, speech, choir, lyrics, aggressive synths or cinematic bombast. Create a new melody; do not imitate or quote Chippytea&#x27;s song or any existing tune.&quot;,
+      &quot;chapters&quot;: [
+        {
+          &quot;startSeconds&quot;: 0,
+          &quot;endSeconds&quot;: 8,
+          &quot;visualTitle&quot;: &quot;石头醒来&quot;,
+          &quot;musicIntent&quot;: &quot;Slow woody bass taps and a curious piccolo pickup&quot;
+        },
+        {
+          &quot;startSeconds&quot;: 8,
+          &quot;endSeconds&quot;: 16,
+          &quot;visualTitle&quot;: &quot;风吹过头了&quot;,
+          &quot;musicIntent&quot;: &quot;Rising piccolo runs with a playful brief stumble&quot;
+        },
+        {
+          &quot;startSeconds&quot;: 16,
+          &quot;endSeconds&quot;: 24,
+          &quot;visualTitle&quot;: &quot;一起找回节奏&quot;,
+          &quot;musicIntent&quot;: &quot;Bass and piccolo call-and-response&quot;
+        },
+        {
+          &quot;startSeconds&quot;: 24,
+          &quot;endSeconds&quot;: 32,
+          &quot;visualTitle&quot;: &quot;发现长成花园&quot;,
+          &quot;musicIntent&quot;: &quot;Shared motif blooms and lands softly&quot;
+        }
+      ],
+      &quot;actualModel&quot;: &quot;MiniMaxAI/MiniMax-Music3&quot;,
+      &quot;receipt&quot;: &quot;world-music-gravity-generation-v10.json&quot;,
+      &quot;originalDurationSeconds&quot;: 35.02730158730159,
+      &quot;playbackDurationSeconds&quot;: 32,
+      &quot;actualPromptNote&quot;: &quot;Actual structured request is preserved in the generation receipt; this prompt remains the initial creative brief.&quot;,
+      &quot;generationPostAttempts&quot;: 1,
+      &quot;editing&quot;: {
+        &quot;nativeSourceDurationSeconds&quot;: 35.02730158730159,
+        &quot;playbackDurationSeconds&quot;: 32,
+        &quot;fadeOutStartSeconds&quot;: 31.0,
+        &quot;fadeOutDurationSeconds&quot;: 1,
+        &quot;tailSilenceSeconds&quot;: 0,
+        &quot;trimmedTailSeconds&quot;: 3.0273015873015865,
+        &quot;timeStretch&quot;: false,
+        &quot;regeneration&quot;: false,
+        &quot;synthesisAdded&quot;: false,
+        &quot;filter&quot;: &quot;afade=t=out:st=31.000000000000:d=1,atrim=end=32,apad=whole_dur=32&quot;
+      },
+      &quot;browserPlaybackVerified&quot;: false
+    },
+    {
+      &quot;id&quot;: &quot;moon&quot;,
+      &quot;title&quot;: &quot;月亮修补铺 / Moon Mending Shop&quot;,
+      &quot;status&quot;: &quot;pending&quot;,
+      &quot;generationRequested&quot;: true,
+      &quot;generatedFile&quot;: null,
+      &quot;isInstrumental&quot;: true,
+      &quot;targetDurationSeconds&quot;: 32,
+      &quot;prompt&quot;: &quot;Compose an original 32-second instrumental miniature for a crooked, cozy hand-painted moon mending shop. A meticulous tailor chases a mischievous golden moon that keeps hiccupping and tugging its sewing thread. Use pizzicato chamber strings as the central voice, delicate sewing-like percussion made from tiny wooden clicks and muted brushed taps, occasional warm bowed string answers, around 112 BPM with a light skipping chase rhythm. Four roughly 8-second chapters: 0-8 a careful three-note stitch motif reveals a leaking patch of starlight; 8-16 the moon hiccups as an offbeat pluck and little rhythmic interruption, then a comic elastic chase develops; 16-24 the tailor catches the thread with three clearly articulated stitch accents and the two motifs weave together; 24-32 tension relaxes, the repaired moon floats happily, a soft lyrical phrase resolves with a clean short decay. Keep it handmade, witty, intimate and gently surprising, with dynamics that feel like pulling and releasing a thread. Begin immediately without silence. No vocals, speech, choir, lyrics, heavy drums or generic triumphant fanfare. Compose a new tune; do not imitate or quote Chippytea&#x27;s song or any existing melody.&quot;,
+      &quot;chapters&quot;: [
+        {
+          &quot;startSeconds&quot;: 0,
+          &quot;endSeconds&quot;: 8,
+          &quot;visualTitle&quot;: &quot;今晚又漏了星光&quot;,
+          &quot;musicIntent&quot;: &quot;Careful three-note pizzicato stitch motif&quot;
+        },
+        {
+          &quot;startSeconds&quot;: 8,
+          &quot;endSeconds&quot;: 16,
+          &quot;visualTitle&quot;: &quot;月亮忍不住打嗝&quot;,
+          &quot;musicIntent&quot;: &quot;Offbeat interruption and a light elastic chase&quot;
+        },
+        {
+          &quot;startSeconds&quot;: 16,
+          &quot;endSeconds&quot;: 24,
+          &quot;visualTitle&quot;: &quot;裁缝追着补三针&quot;,
+          &quot;musicIntent&quot;: &quot;Three stitch accents bring the motifs together&quot;
+        },
+        {
+          &quot;startSeconds&quot;: 24,
+          &quot;endSeconds&quot;: 32,
+          &quot;visualTitle&quot;: &quot;补丁也是好风景&quot;,
+          &quot;musicIntent&quot;: &quot;Tension releases into a floating warm resolution&quot;
+        }
+      ],
+      &quot;generationBlocked&quot;: true,
+      &quot;actualModel&quot;: &quot;MiniMaxAI/MiniMax-Music3&quot;,
+      &quot;receipt&quot;: &quot;world-music-moon-generation-v10.json&quot;,
+      &quot;generationPostAttempts&quot;: 1,
+      &quot;lastAttempt&quot;: {
+        &quot;status&quot;: &quot;quota_exceeded&quot;,
+        &quot;requestedQuotaSeconds&quot;: 96,
+        &quot;remainingQuotaSeconds&quot;: 4,
+        &quot;retryPerformed&quot;: false,
+        &quot;automaticTaskCreated&quot;: false
+      },
+      &quot;browserPlaybackVerified&quot;: false
+    },
+    {
+      &quot;id&quot;: &quot;shadow&quot;,
+      &quot;title&quot;: &quot;影子排练场 / Shadow Rehearsal&quot;,
+      &quot;status&quot;: &quot;ready&quot;,
+      &quot;generationRequested&quot;: true,
+      &quot;generatedFile&quot;: &quot;web/audio/shadow-minimax.mp3&quot;,
+      &quot;isInstrumental&quot;: true,
+      &quot;targetDurationSeconds&quot;: 32,
+      &quot;prompt&quot;: &quot;Compose an original 32-second instrumental miniature for a small folded-paper shadow theater. An extravagant charcoal shadow dancer and a shy amber light creature learn to share the stage. Two musical personalities: expressive bass clarinet with warm low-register leaps for the shadow, and delicate soft bells for the tiny light; a gentle hand drum provides physical pulse. Minimal acoustic theatrical jazz-folk, around 88 BPM, roomy but intimate, rich contrast between broad gestures and tiny hesitant replies. Four roughly 8-second chapters: 0-8 cautious bass clarinet steps and one quiet bell invitation; 8-16 increasingly large clarinet gestures and rounded hand-drum accents suggest the shadow growing too tall and almost hitting the roof, followed by a funny small pause; 16-24 the light answers with gentle bells, the clarinet softens and the motifs alternate large and small; 24-32 the pair find a balanced dancing shape, a simple shared phrase resolves warmly with a short clean decay. Use musical space and dynamics so changes in size and courage can be choreographed. Begin immediately without silence. No vocals, speech, choir, lyrics, harsh brass, electronic drops or epic orchestration. Create a new melody; do not imitate or quote Chippytea&#x27;s song or any existing tune.&quot;,
+      &quot;chapters&quot;: [
+        {
+          &quot;startSeconds&quot;: 0,
+          &quot;endSeconds&quot;: 8,
+          &quot;visualTitle&quot;: &quot;影子想站上舞台&quot;,
+          &quot;musicIntent&quot;: &quot;Cautious clarinet steps and a tiny bell invitation&quot;
+        },
+        {
+          &quot;startSeconds&quot;: 8,
+          &quot;endSeconds&quot;: 16,
+          &quot;visualTitle&quot;: &quot;一激动，顶到屋顶&quot;,
+          &quot;musicIntent&quot;: &quot;Broad leaps, rounded hand-drum accents and a comic pause&quot;
+        },
+        {
+          &quot;startSeconds&quot;: 16,
+          &quot;endSeconds&quot;: 24,
+          &quot;visualTitle&quot;: &quot;小光团：轻一点…&quot;,
+          &quot;musicIntent&quot;: &quot;Soft bells and smaller clarinet replies alternate&quot;
+        },
+        {
+          &quot;startSeconds&quot;: 24,
+          &quot;endSeconds&quot;: 32,
+          &quot;visualTitle&quot;: &quot;一起找到自己的样子&quot;,
+          &quot;musicIntent&quot;: &quot;Balanced duet and a warm compact resolution&quot;
+        }
+      ],
+      &quot;actualModel&quot;: &quot;MiniMaxAI/MiniMax-Music3&quot;,
+      &quot;receipt&quot;: &quot;world-music-generation-v9.json&quot;,
+      &quot;originalDurationSeconds&quot;: 29.942131519,
+      &quot;playbackDurationSeconds&quot;: 32,
+      &quot;actualPromptNote&quot;: &quot;Actual request differs from this early creative brief; see generation receipt.&quot;,
+      &quot;browserPlaybackVerified&quot;: false
+    }
+  ],
+  &quot;version&quot;: 10,
+  &quot;remainingGenerationBlocker&quot;: {
+    &quot;scene&quot;: &quot;moon&quot;,
+    &quot;status&quot;: &quot;quota_exceeded&quot;,
+    &quot;receipt&quot;: &quot;world-music-moon-generation-v10.json&quot;,
+    &quot;requestedQuotaSeconds&quot;: 96,
+    &quot;remainingQuotaSeconds&quot;: 4,
+    &quot;generationPostAttempts&quot;: 1,
+    &quot;retryPerformed&quot;: false,
+    &quot;automaticTaskCreated&quot;: false
+  },
+  &quot;receipts&quot;: [
+    &quot;world-music-generation-v9.json&quot;,
+    &quot;world-music-generation-v10.json&quot;
+  ]
+}
+</pre></details>
+<details id="record-host-behavior-verification-v10"><summary>host-behavior-verification-v10.json</summary><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/notes/host-behavior-verification-v10.json">原始 JSON ↗</a></p><pre>{
+  &quot;version&quot;: 10,
+  &quot;kind&quot;: &quot;component_and_audio_logic_simulation&quot;,
+  &quot;mocked&quot;: true,
+  &quot;browserVerification&quot;: false,
+  &quot;visualVerification&quot;: false,
+  &quot;actualAudioPlaybackVerified&quot;: false,
+  &quot;source&quot;: &quot;src/WorldExperience.tsx&quot;,
+  &quot;sourceSha256&quot;: &quot;1b1e77e9fa2f191c8211c56892624fd7a14ee9f3c8ed5079369a9fce99114edd&quot;,
+  &quot;audioController&quot;: &quot;src/WorldAudio.ts&quot;,
+  &quot;audioControllerSha256&quot;: &quot;10280db8428f93c3a1fc19b6527d41ae91249a9a6c5f1a5f6769b529d21d7c7f&quot;,
+  &quot;musicConfiguration&quot;: {
+    &quot;gravity&quot;: {
+      &quot;name&quot;: &quot;花园&quot;,
+      &quot;src&quot;: &quot;./audio/gravity-minimax.mp3&quot;
+    },
+    &quot;moon&quot;: {
+      &quot;name&quot;: &quot;月亮&quot;,
+      &quot;src&quot;: null
+    },
+    &quot;shadow&quot;: {
+      &quot;name&quot;: &quot;影子&quot;,
+      &quot;src&quot;: &quot;./audio/shadow-minimax.mp3&quot;
+    }
+  },
+  &quot;musicConfigurationSha256&quot;: &quot;8365911cb2f8e7a2ce88f8607d361e4052180ab62b5cde1d3b1dbdd2aa69cd02&quot;,
+  &quot;script&quot;: &quot;tooling/verify-world-host.mjs&quot;,
+  &quot;scriptSha256&quot;: &quot;83917bab4b48dbab60ee3c0acec530df5e823d997c212ae047fc815540cc48d9&quot;,
+  &quot;checkedAt&quot;: &quot;2026-10-08T15:05:49.245Z&quot;,
+  &quot;environment&quot;: &quot;Node VM + mocked React hooks, Image, DOM, requestAnimationFrame, localStorage, HTMLAudioElement, AudioContext, controlled timeout timers and renderWorld; no real browser or audible playback&quot;,
+  &quot;checks&quot;: [
+    {
+      &quot;label&quot;: &quot;v6 entry updates URL and visible edition to v10&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;score configuration only points to actual local music files&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: {
+        &quot;gravity&quot;: {
+          &quot;name&quot;: &quot;花园&quot;,
+          &quot;src&quot;: &quot;./audio/gravity-minimax.mp3&quot;
+        },
+        &quot;moon&quot;: {
+          &quot;name&quot;: &quot;月亮&quot;,
+          &quot;src&quot;: null
+        },
+        &quot;shadow&quot;: {
+          &quot;name&quot;: &quot;影子&quot;,
+          &quot;src&quot;: &quot;./audio/shadow-minimax.mp3&quot;
+        }
+      }
+    },
+    {
+      &quot;label&quot;: &quot;initial scene remains silent without constructing audio or an AudioContext&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;explicit music button starts the actual configured media source and enables the score&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;live frequency analyser uses FFT1024 and -90/-10 dB range&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;shadow stage uses media.currentTime without adding the visual RAF delta&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: {
+        &quot;mediaTime&quot;: 6.875,
+        &quot;stageTime&quot;: 6.875
+      }
+    },
+    {
+      &quot;label&quot;: &quot;normalised energy, low and high frequency bands reach the renderer&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: {
+        &quot;energy&quot;: 0.3682864450127872,
+        &quot;low&quot;: 0.7058823529411765,
+        &quot;high&quot;: 0.3529411764705874
+      }
+    },
+    {
+      &quot;label&quot;: &quot;pause freezes both clocks and sends zero frequency bands&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;resume continues music from the same position&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;manual timeline seek pauses and updates audio and visual time together&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;chapter selection resumes the score from the chosen chapter&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;replay resets media and stage together&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;disabling music returns to visual clock at the preserved media position&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;visual clock continues after music is disabled&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;a rejected playback promise returns to silence with an explicit retry message&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;media decoding error disables the score and continues silent animation&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;scene switch uses only the configured score; ungenerated scenes remain explicitly silent&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: {
+        &quot;configuredScore&quot;: {
+          &quot;name&quot;: &quot;月亮&quot;,
+          &quot;src&quot;: null
+        }
+      }
+    },
+    {
+      &quot;label&quot;: &quot;returning to shadow may resume a previously user-enabled score from its opening&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;background visibility pauses the score and stage clock&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;foreground visibility resumes a playing score&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;live reduced-motion switch pauses sound and holds the stage static&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;leaving reduced mode does not resume sound automatically&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;ended music settles at final tableau with zero bands&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;playlist begins in gravity without leaking the shadow soundtrack&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: {
+        &quot;configuredScore&quot;: {
+          &quot;name&quot;: &quot;花园&quot;,
+          &quot;src&quot;: &quot;./audio/gravity-minimax.mp3&quot;
+        }
+      }
+    },
+    {
+      &quot;label&quot;: &quot;playlist keeps gravity finale for at least 3.5 seconds&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;late collection dialogue finishes before the next playlist scene&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;playlist moves from gravity to moon after the late reply&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;playlist reaches shadow and plays only the previously user-enabled soundtrack&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;pausing a musical playlist finale freezes its hold timer&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;resuming a truly ended playlist finale never calls play or rewinds the media&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: {
+        &quot;playCallsBefore&quot;: 4,
+        &quot;playCallsAfter&quot;: 4,
+        &quot;mediaTime&quot;: 32
+      }
+    },
+    {
+      &quot;label&quot;: &quot;the musical playlist ends on the shadow tableau and never loops&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: {
+        &quot;visits&quot;: [
+          &quot;shadow&quot;,
+          &quot;gravity&quot;,
+          &quot;moon&quot;,
+          &quot;shadow&quot;,
+          &quot;gravity&quot;,
+          &quot;moon&quot;
+        ]
+      }
+    },
+    {
+      &quot;label&quot;: &quot;manual seek cancels playlist and pauses it&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;manual chapter selection cancels playlist and plays selected chapter&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;manual replay cancels playlist&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;manual scene switch cancels playlist and starts the selected scene&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;theater toggle preserves aria-pressed behavior&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;initial reduced mode constructs no audio and disables playlist/music&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;static manual chapter selection remains available&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;a stale pending playback promise cannot restart the previous score after a scene switch&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: {
+        &quot;requestedAt&quot;: 0,
+        &quot;configuredScore&quot;: {
+          &quot;name&quot;: &quot;月亮&quot;,
+          &quot;src&quot;: null
+        }
+      }
+    },
+    {
+      &quot;label&quot;: &quot;continuous pointer movement does not reset action age and the gesture reaches idle&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: {
+        &quot;actionAge&quot;: &quot;4.00&quot;,
+        &quot;actionPhase&quot;: &quot;idle&quot;,
+        &quot;interactions&quot;: &quot;1&quot;
+      }
+    },
+    {
+      &quot;label&quot;: &quot;dragging in a paused tableau preserves the paused show clock&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;delayed metadata keeps the requested media position available instead of rewinding to zero&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: {
+        &quot;stageTime&quot;: 12.35,
+        &quot;readyState&quot;: 0
+      }
+    },
+    {
+      &quot;label&quot;: &quot;metadata arrival applies the outstanding seek before normal musical playback&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: {
+        &quot;mediaTime&quot;: 12.45,
+        &quot;stageTime&quot;: 12.45
+      }
+    },
+    {
+      &quot;label&quot;: &quot;preparing score remains pending before the configured fifteen second deadline&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;an unresolved play promise times out to explicit silent fallback&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: {
+        &quot;stageTime&quot;: 0.5,
+        &quot;message&quot;: &quot;配乐暂时没能播放，已继续静音演出。可以再试一次。&quot;
+      }
+    },
+    {
+      &quot;label&quot;: &quot;visual performance advances again after preparing music times out&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;a timed out playback promise cannot revive old sound when it eventually resolves&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;waiting without media progress also falls back after fifteen seconds&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;repeated waiting or stalled events cannot extend a fifteen second no-progress deadline&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;real playback recovery clears the previous waiting deadline&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;source load resets old media position and reuses the single audio graph&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: {
+        &quot;loadCalls&quot;: 1,
+        &quot;mediaTime&quot;: 0.1
+      }
+    },
+    {
+      &quot;label&quot;: &quot;stale old play completion cannot revive the shadow score over the new garden score&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;entering plant selection cancels playlist and pauses visual and available musical clocks&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: {
+        &quot;timeBefore&quot;: 0.5,
+        &quot;timeAfter&quot;: 0.5,
+        &quot;playlist&quot;: &quot;false&quot;
+      }
+    },
+    {
+      &quot;label&quot;: &quot;a planted discovery completes its independent feedback while the stable show remains paused&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: {
+        &quot;captureAge&quot;: 2.9000000000000012,
+        &quot;stageTime&quot;: 0.5
+      }
+    },
+    {
+      &quot;label&quot;: &quot;arming a planting location neither collects nor changes the show time&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;Escape cancels planting mode without leaving a plot&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;plant location preview does not save before pointer release&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;pointer release plants one saved location during the final act&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: {
+        &quot;plots&quot;: [
+          {
+            &quot;x&quot;: 0.55,
+            &quot;y&quot;: 0.765
+          }
+        ],
+        &quot;stored&quot;: [
+          {
+            &quot;x&quot;: 0.55,
+            &quot;y&quot;: 0.765
+          }
+        ]
+      }
+    },
+    {
+      &quot;label&quot;: &quot;keyboard Enter commits a planting location and exits selection&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;garden keeps only the most recent four valid saved positions&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: {
+        &quot;plots&quot;: [
+          {
+            &quot;x&quot;: 0.39,
+            &quot;y&quot;: 0.73
+          },
+          {
+            &quot;x&quot;: 0.66,
+            &quot;y&quot;: 0.765
+          },
+          {
+            &quot;x&quot;: 0.39,
+            &quot;y&quot;: 0.73
+          },
+          {
+            &quot;x&quot;: 0.66,
+            &quot;y&quot;: 0.765
+          }
+        ],
+        &quot;stored&quot;: [
+          {
+            &quot;x&quot;: 0.39,
+            &quot;y&quot;: 0.73
+          },
+          {
+            &quot;x&quot;: 0.66,
+            &quot;y&quot;: 0.765
+          },
+          {
+            &quot;x&quot;: 0.39,
+            &quot;y&quot;: 0.73
+          },
+          {
+            &quot;x&quot;: 0.66,
+            &quot;y&quot;: 0.765
+          }
+        ]
+      }
+    },
+    {
+      &quot;label&quot;: &quot;out of bounds clicks are clamped into the actual garden planting safe area&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: [
+        {
+          &quot;x&quot;: 0.39,
+          &quot;y&quot;: 0.73
+        },
+        {
+          &quot;x&quot;: 0.66,
+          &quot;y&quot;: 0.765
+        },
+        {
+          &quot;x&quot;: 0.39,
+          &quot;y&quot;: 0.73
+        },
+        {
+          &quot;x&quot;: 0.66,
+          &quot;y&quot;: 0.765
+        }
+      ]
+    },
+    {
+      &quot;label&quot;: &quot;reloading restores the actual four planted positions rather than only a count&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: [
+        {
+          &quot;x&quot;: 0.39,
+          &quot;y&quot;: 0.73
+        },
+        {
+          &quot;x&quot;: 0.66,
+          &quot;y&quot;: 0.765
+        },
+        {
+          &quot;x&quot;: 0.39,
+          &quot;y&quot;: 0.73
+        },
+        {
+          &quot;x&quot;: 0.66,
+          &quot;y&quot;: 0.765
+        }
+      ]
+    },
+    {
+      &quot;label&quot;: &quot;legacy count-only records remain usable with three safe fallback plots&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: {
+        &quot;count&quot;: 3,
+        &quot;plots&quot;: [
+          {
+            &quot;x&quot;: 0.414,
+            &quot;y&quot;: 0.747
+          },
+          {
+            &quot;x&quot;: 0.49,
+            &quot;y&quot;: 0.755
+          },
+          {
+            &quot;x&quot;: 0.565,
+            &quot;y&quot;: 0.747
+          }
+        ]
+      }
+    },
+    {
+      &quot;label&quot;: &quot;malformed garden records are filtered or safely clamped without breaking the host&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: [
+        {
+          &quot;x&quot;: 0.39,
+          &quot;y&quot;: 0.765
+        },
+        {
+          &quot;x&quot;: 0.55,
+          &quot;y&quot;: 0.765
+        }
+      ]
+    },
+    {
+      &quot;label&quot;: &quot;planting inversely projects the visible pointer through camera zoom and pan&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: {
+        &quot;targetPoint&quot;: {
+          &quot;x&quot;: 0.55,
+          &quot;y&quot;: 0.75
+        },
+        &quot;screenPoint&quot;: {
+          &quot;x&quot;: 0.5599495176005614,
+          &quot;y&quot;: 0.760634765625
+        },
+        &quot;actual&quot;: {
+          &quot;x&quot;: 0.55,
+          &quot;y&quot;: 0.75
+        }
+      }
+    },
+    {
+      &quot;label&quot;: &quot;cancelled pointer selection never commits an extra plant&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;scene switching cancels location selection while preserving saved plants&quot;,
+      &quot;passed&quot;: true
+    }
+  ],
+  &quot;passed&quot;: true,
+  &quot;limitations&quot;: [
+    &quot;Browser autoplay policy, physical sound output, real decoder timing, fonts/layout, pointer routing, Canvas imagery and persistence across real reloads are not verified by these mocks.&quot;,
+    &quot;Real media existence, MP3 decoding, non-silence and generation provenance are recorded separately in notes/world-music-generation-v9.json and subsequent music generation records.&quot;,
+    &quot;Ended playback, metadata loading, source load and timeout behavior are modeled explicitly; these checks still do not constitute browser media validation.&quot;
+  ]
+}
+</pre></details>
+<details id="record-host-behavior-verification-v8"><summary>host-behavior-verification-v8.json</summary><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/notes/host-behavior-verification-v8.json">原始 JSON ↗</a></p><pre>{
+  &quot;version&quot;: 8,
+  &quot;kind&quot;: &quot;component_logic_simulation&quot;,
+  &quot;mocked&quot;: true,
+  &quot;browserVerification&quot;: false,
+  &quot;visualVerification&quot;: false,
+  &quot;source&quot;: &quot;src/WorldExperience.tsx&quot;,
+  &quot;sourceSha256&quot;: &quot;71c956b4ac1bf657abc75650d66c9bcf08de7648e411530e19a7079265ebe4d4&quot;,
+  &quot;checkedAt&quot;: &quot;2026-10-02T18:27:51.860Z&quot;,
+  &quot;environment&quot;: &quot;Node VM + mocked React hooks, Image, DOM, requestAnimationFrame, localStorage and renderWorld; no real browser or audio&quot;,
+  &quot;coverage&quot;: [
+    &quot;v6 URL is updated to v8&quot;,
+    &quot;dancer-spin PNG loading and legacy pose storage&quot;,
+    &quot;pause keeps play time while action and capture ages advance&quot;,
+    &quot;ordinary action does not reset capture&quot;,
+    &quot;capture dialogue reaches result independently&quot;,
+    &quot;rapid captures do not drop count&quot;,
+    &quot;32-second play stops at final tableau and still accepts interaction&quot;,
+    &quot;drag stays in action phase, including reduced mode&quot;,
+    &quot;live reduced-motion switch settles an active capture and fixes action pose&quot;,
+    &quot;theater aria-pressed, Escape exit and focus restoration&quot;,
+    &quot;renderer diagnostic phase dataset fields&quot;
+  ],
+  &quot;checks&quot;: [
+    {
+      &quot;mode&quot;: &quot;normal&quot;,
+      &quot;passed&quot;: true,
+      &quot;urlV&quot;: 8,
+      &quot;assetsLoaded&quot;: 9,
+      &quot;legacyAndSpinStorage&quot;: true,
+      &quot;independentCapture&quot;: true,
+      &quot;pauseKeepsPlayTime&quot;: true,
+      &quot;dragRetainsAct&quot;: true,
+      &quot;theaterEscapeAndFocus&quot;: true,
+      &quot;liveReducedModeSwitch&quot;: true,
+      &quot;endStops&quot;: true
+    },
+    {
+      &quot;mode&quot;: &quot;reduced&quot;,
+      &quot;passed&quot;: true,
+      &quot;urlV&quot;: 8,
+      &quot;assetsLoaded&quot;: 9,
+      &quot;legacyAndSpinStorage&quot;: true,
+      &quot;independentCapture&quot;: true,
+      &quot;pauseKeepsPlayTime&quot;: true,
+      &quot;dragRetainsAct&quot;: true,
+      &quot;theaterEscapeAndFocus&quot;: true,
+      &quot;liveReducedModeSwitch&quot;: &quot;not_applicable: starts in reduced mode&quot;,
+      &quot;endStops&quot;: &quot;not_applicable: play time stays static&quot;
+    }
+  ],
+  &quot;limitations&quot;: [
+    &quot;No real browser, font/layout, pointer routing, canvas imagery, localStorage persistence across real reloads or audio verification.&quot;
+  ]
+}
+</pre></details>
+<details id="record-host-behavior-verification-v9"><summary>host-behavior-verification-v9.json</summary><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/notes/host-behavior-verification-v9.json">原始 JSON ↗</a></p><pre>{
+  &quot;version&quot;: 9,
+  &quot;kind&quot;: &quot;component_and_audio_logic_simulation&quot;,
+  &quot;mocked&quot;: true,
+  &quot;browserVerification&quot;: false,
+  &quot;visualVerification&quot;: false,
+  &quot;actualAudioPlaybackVerified&quot;: false,
+  &quot;source&quot;: &quot;src/WorldExperience.tsx&quot;,
+  &quot;sourceSha256&quot;: &quot;774cee51786dc3d08e5e917c87b81a58836f2df82691d75912aec56d7fb24987&quot;,
+  &quot;audioController&quot;: &quot;src/WorldAudio.ts&quot;,
+  &quot;audioControllerSha256&quot;: &quot;477a649d0fafc1f52abbd6d7a1e6de2ca32b1ea9c9fdc3947287c4eff75b3b80&quot;,
+  &quot;script&quot;: &quot;tooling/verify-world-host.mjs&quot;,
+  &quot;checkedAt&quot;: &quot;2026-10-02T23:41:10.604Z&quot;,
+  &quot;environment&quot;: &quot;Node VM + mocked React hooks, Image, DOM, requestAnimationFrame, localStorage, HTMLAudioElement, AudioContext and renderWorld; no real browser or audible playback&quot;,
+  &quot;checks&quot;: [
+    {
+      &quot;label&quot;: &quot;v6 entry updates URL and visible edition to v9&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;initial scene remains silent without constructing audio or an AudioContext&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;explicit music button starts the actual media source and enables the score&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;live frequency analyser uses FFT1024 and -90/-10 dB range&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;shadow stage uses media.currentTime without adding the visual RAF delta&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: {
+        &quot;mediaTime&quot;: 6.875,
+        &quot;stageTime&quot;: 6.875
+      }
+    },
+    {
+      &quot;label&quot;: &quot;normalised energy, low and high frequency bands reach the renderer&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: {
+        &quot;energy&quot;: 0.3682864450127872,
+        &quot;low&quot;: 0.7058823529411765,
+        &quot;high&quot;: 0.3529411764705874
+      }
+    },
+    {
+      &quot;label&quot;: &quot;pause freezes both clocks and sends zero frequency bands&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;resume continues music from the same position&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;manual timeline seek pauses and updates audio and visual time together&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;chapter selection resumes the score from the chosen chapter&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;replay resets media and stage together&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;disabling music returns to visual clock at the preserved media position&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;visual clock continues after music is disabled&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;a rejected playback promise returns to silence with an explicit retry message&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;media decoding error disables the score and continues silent animation&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;scene switch immediately stops the previous score; ungenerated scenes are explicitly silent&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;returning to shadow may resume a previously user-enabled score from its opening&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;background visibility pauses the score and stage clock&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;foreground visibility resumes a playing score&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;live reduced-motion switch pauses sound and holds the stage static&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;leaving reduced mode does not resume sound automatically&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;ended music settles at final tableau with zero bands&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;playlist begins in gravity without leaking the shadow soundtrack&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;playlist keeps gravity finale for at least 3.5 seconds&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;late collection dialogue finishes before the next playlist scene&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;playlist moves from gravity to moon after the late reply&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;playlist reaches shadow and plays only the previously user-enabled soundtrack&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;pausing a musical playlist finale freezes its hold timer&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;the musical playlist ends on the shadow tableau and never loops&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: {
+        &quot;visits&quot;: [
+          &quot;shadow&quot;,
+          &quot;gravity&quot;,
+          &quot;moon&quot;,
+          &quot;shadow&quot;,
+          &quot;gravity&quot;,
+          &quot;moon&quot;
+        ]
+      }
+    },
+    {
+      &quot;label&quot;: &quot;manual seek cancels playlist and pauses it&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;manual chapter selection cancels playlist and plays selected chapter&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;manual replay cancels playlist&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;manual scene switch cancels playlist and starts the selected scene&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;theater toggle preserves aria-pressed behavior&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;initial reduced mode constructs no audio and disables playlist/music&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;static manual chapter selection remains available&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;label&quot;: &quot;a stale pending playback promise cannot restart sound after a scene switch&quot;,
+      &quot;passed&quot;: true,
+      &quot;evidence&quot;: {
+        &quot;requestedAt&quot;: 0
+      }
+    }
+  ],
+  &quot;passed&quot;: true,
+  &quot;limitations&quot;: [
+    &quot;Browser autoplay policy, physical sound output, real decoder timing, fonts/layout, pointer routing, Canvas imagery and persistence across real reloads are not verified by these mocks.&quot;,
+    &quot;Real media existence, MP3 decoding, non-silence and generation provenance are recorded separately in notes/world-music-generation-v9.json.&quot;
+  ]
+}
+</pre></details>
+<details id="record-music-generation"><summary>music-generation.json</summary><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/notes/music-generation.json">原始 JSON ↗</a></p><pre>{
+  &quot;provider&quot;: &quot;MiniMax&quot;,
+  &quot;model&quot;: &quot;music-2.6&quot;,
+  &quot;title&quot;: &quot;研究成册 / Research to Folio&quot;,
+  &quot;documentation&quot;: &quot;https://platform.minimax.cn/docs/api-reference/music-generation&quot;,
+  &quot;status&quot;: &quot;rejected&quot;,
+  &quot;startedAt&quot;: &quot;2026-10-02T14:52:52.539073+00:00&quot;,
+  &quot;endpoint&quot;: &quot;https://api.minimax.cn/v1/music_generation&quot;,
+  &quot;request&quot;: {
+    &quot;model&quot;: &quot;music-2.6&quot;,
+    &quot;prompt&quot;: &quot;Original instrumental miniature for a hand-drawn research notebook coming to life. Warm tactile acoustic chamber pop, felt piano, pizzicato strings, finger-picked acoustic guitar, muted marimba, brushed percussion and subtle paper-like rhythmic textures. Curious, intelligent, playful, then quietly triumphant; handmade ink-on-cream-paper atmosphere. No vocals, no spoken words, no choir. A memorable gentle melody with clear rhythmic accents at about 100 BPM. Aim for a concise 24-second piece with four 6-second movements: first scattered curious notes, second interweaving instruments and rising motion, third a bright flowing melodic lift, fourth a satisfying warm final chord and a clean soft decay. Start immediately, no long empty intro. Suitable for watching research clues connect, paper notes fold and bind into a finished notebook. Natural acoustic dynamics, polished stereo production, avoid abrasive synths and heavy bass.&quot;,
+    &quot;is_instrumental&quot;: true,
+    &quot;stream&quot;: false,
+    &quot;output_format&quot;: &quot;hex&quot;,
+    &quot;audio_setting&quot;: {
+      &quot;sample_rate&quot;: 44100,
+      &quot;bitrate&quot;: 256000,
+      &quot;format&quot;: &quot;mp3&quot;
+    }
+  },
+  &quot;error&quot;: &quot;HTTP 410: {\&quot;base_resp\&quot;:{\&quot;status_code\&quot;:2153,\&quot;status_msg\&quot;:\&quot;This Music API is no longer available to new users. Existing paying customers can continue to use the service. For new access, please try MiniMax Audio (https://www.minimax.io/audio) &quot;
+}
+</pre></details>
+<details id="record-publication-local-checks"><summary>publication-local-checks.json</summary><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/notes/publication-local-checks.json">原始 JSON ↗</a></p><pre>{
+  &quot;date&quot;: &quot;2026-10-08&quot;,
+  &quot;timezone&quot;: &quot;Asia/Shanghai&quot;,
+  &quot;url&quot;: &quot;http://127.0.0.1:8996/projects/016-chippytea-lab/&quot;,
+  &quot;browserURL&quot;: &quot;http://publication.test:8996/projects/016-chippytea-lab/&quot;,
+  &quot;environment&quot;: &quot;Actual Chromium; desktop and emulated mobile viewport; no human listening review&quot;,
+  &quot;checks&quot;: [
+    {
+      &quot;name&quot;: &quot;Public runtime manifest available&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;status&quot;: 200
+      }
+    },
+    {
+      &quot;name&quot;: &quot;All art, scores, three previews and unchanged guide registered&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;count&quot;: 72
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Every public file is complete and matches manifest SHA-256&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;count&quot;: 72
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Overview, unchanged map, six products and all effect routes visible&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Desktop overview fits and every image loads&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;width&quot;: 1440,
+        &quot;scroll&quot;: 1440,
+        &quot;broken&quot;: []
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Overview anchor #entries&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Overview linked resource &quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;status&quot;: 200
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Overview anchor #map&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Overview anchor #understanding&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Overview anchor #products&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Overview anchor #resources&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Overview linked resource research.html&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;status&quot;: 200
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Overview linked resource chippytea-understanding-map-v1.png&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;status&quot;: 200
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Overview linked resource source-notice.html&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;status&quot;: 200
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Overview linked resource research.html&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;status&quot;: 200
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Overview linked resource research.html&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;status&quot;: 200
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Overview linked resource publication-manifest.json&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;status&quot;: 200
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Overview anchor #top&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;PNG download preserves original generated image&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Actual preview video decode 0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;time&quot;: 0.556744,
+        &quot;width&quot;: 640,
+        &quot;paused&quot;: false
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Actual preview video decode 1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;time&quot;: 0.708264,
+        &quot;width&quot;: 640,
+        &quot;paused&quot;: false
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Actual preview video decode 2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;time&quot;: 0.660976,
+        &quot;width&quot;: 640,
+        &quot;paused&quot;: false
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Mobile overview fits and images load&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;width&quot;: 390,
+        &quot;scroll&quot;: 390,
+        &quot;broken&quot;: []
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Actual world renders gravity&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Desktop world layout gravity&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;width&quot;: 1440,
+        &quot;scroll&quot;: 1440,
+        &quot;broken&quot;: []
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Nonempty Canvas imagery gravity&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;samples&quot;: 4874
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Real pointer/button event triggers independent action gravity&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Actual MiniMax media decode, playback and real analyser gravity&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;time&quot;: 1.012971,
+        &quot;ready&quot;: 4,
+        &quot;duration&quot;: 32,
+        &quot;bands&quot;: [
+          1871
+        ]
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Pause also pauses actual music gravity&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;World memory saves to actual browser storage gravity&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;gravity&quot;: 1,
+        &quot;moon&quot;: 0,
+        &quot;shadow&quot;: 0
+      }
+    },
+    {
+      &quot;name&quot;: &quot;World memory survives real reload gravity&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Mobile world layout gravity&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;width&quot;: 390,
+        &quot;scroll&quot;: 390,
+        &quot;broken&quot;: []
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Actual world renders moon&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Desktop world layout moon&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;width&quot;: 1440,
+        &quot;scroll&quot;: 1440,
+        &quot;broken&quot;: []
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Nonempty Canvas imagery moon&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;samples&quot;: 4874
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Real pointer/button event triggers independent action moon&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Moon stays explicitly silent&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;World memory saves to actual browser storage moon&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;gravity&quot;: 1,
+        &quot;moon&quot;: 1,
+        &quot;shadow&quot;: 0
+      }
+    },
+    {
+      &quot;name&quot;: &quot;World memory survives real reload moon&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Mobile world layout moon&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;width&quot;: 390,
+        &quot;scroll&quot;: 390,
+        &quot;broken&quot;: []
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Actual world renders shadow&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Desktop world layout shadow&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;width&quot;: 1440,
+        &quot;scroll&quot;: 1440,
+        &quot;broken&quot;: []
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Nonempty Canvas imagery shadow&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;samples&quot;: 4874
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Real pointer/button event triggers independent action shadow&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Actual MiniMax media decode, playback and real analyser shadow&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;time&quot;: 1.012971,
+        &quot;ready&quot;: 4,
+        &quot;duration&quot;: 32,
+        &quot;bands&quot;: [
+          5186
+        ]
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Pause also pauses actual music shadow&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;World memory saves to actual browser storage shadow&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;gravity&quot;: 1,
+        &quot;moon&quot;: 1,
+        &quot;shadow&quot;: 1
+      }
+    },
+    {
+      &quot;name&quot;: &quot;World memory survives real reload shadow&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Mobile world layout shadow&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;width&quot;: 390,
+        &quot;scroll&quot;: 390,
+        &quot;broken&quot;: []
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Public receipts are read-only with saving disabled&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Public receipt snapshot has no broken covers&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;width&quot;: 1440,
+        &quot;scroll&quot;: 1440,
+        &quot;broken&quot;: []
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Historical folio remains reachable&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Original comparison and interactive components preserved&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Source comparison layout&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;width&quot;: 1440,
+        &quot;scroll&quot;: 1440,
+        &quot;broken&quot;: []
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Complete reader preserves source/world/music/QA sections&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Complete reader desktop layout&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;width&quot;: 1440,
+        &quot;scroll&quot;: 1440,
+        &quot;broken&quot;: []
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Complete reader mobile layout&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;width&quot;: 390,
+        &quot;scroll&quot;: 390,
+        &quot;broken&quot;: []
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Reader internal anchors all resolve&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;count&quot;: 107
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Public routes never call local research APIs&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: []
+    },
+    {
+      &quot;name&quot;: &quot;No browser exceptions or failed own resources&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;errors&quot;: [],
+        &quot;failed&quot;: []
+      }
+    }
+  ],
+  &quot;files&quot;: [
+    {
+      &quot;path&quot;: &quot;app.js.LEGAL.txt&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 5633,
+      &quot;sha256&quot;: &quot;c9afb26eb84efd4c7f7c8661593d3bb5f7912428ca9eff9a586fd8b3a01f4dde&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;app.js&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 517836,
+      &quot;sha256&quot;: &quot;035c77b8ceb45856316700b83a1cdf27c214a181e9702637ca1f073726c35a13&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/concepts/gravity.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 2807185,
+      &quot;sha256&quot;: &quot;efdb53fc847a4e791eac91151593212369c9b25c1eb5669bc3d327f509b85e37&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/concepts/moon.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 2769995,
+      &quot;sha256&quot;: &quot;5adb4a3f9a3dc837d9ac30ba4cb0800033d147c458ead722f8101eef52400e09&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/chippytea-understanding-map-v1.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 2623255,
+      &quot;sha256&quot;: &quot;b3420ebbed9fef286436c1adbfe731ef2673e8e3ec095d3175b13380dd81bf2e&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/research-covers/001.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 2000014,
+      &quot;sha256&quot;: &quot;cd657fe86b38e473bd3d47456885f74ddbc9eee0c5a9d8f8fda266910be91821&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/concepts/shadow.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 2539830,
+      &quot;sha256&quot;: &quot;c42949a91343d2b16657a12eb81900694c18c0680ed1b08951090351861bf1a1&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/previews/gravity-v10.mp4&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 4269112,
+      &quot;sha256&quot;: &quot;70b1abc70f28a3df75d577eccc3bb8a0e2569810c21003dfd3199394a52ac763&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/previews/moon-v10.mp4&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 3234089,
+      &quot;sha256&quot;: &quot;cddc1a19a465b2701c25b3356506749e78bc3e03c84b2ca1bcdb7a109a385e73&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/previews/shadow-v10.mp4&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 2689876,
+      &quot;sha256&quot;: &quot;1445f3dfa7b6514f26093b2faf896c8409a84f733cf5af275568db15240b5161&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/research-covers/003.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 930633,
+      &quot;sha256&quot;: &quot;ee9fd2e891fb71bf53776a9cbee466b90fbf7b509ead7be9d1f4a3e60f118e92&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/research-covers/005.jpg&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 57209,
+      &quot;sha256&quot;: &quot;071a4bbc61ea4435d3a389f978742c72172b625093b7756f74be830ae2293fe1&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/research-covers/004.jpg&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 15090,
+      &quot;sha256&quot;: &quot;276050a57934ed32a7335f531313907605ddfdc1fcebf67328ef94b137a5e7fc&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/research-covers/002.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 2152109,
+      &quot;sha256&quot;: &quot;34d35ebcff800a3be3b1002832dd545d98070ef653fee40c06342bcee83668fa&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/research-covers/007.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 1448313,
+      &quot;sha256&quot;: &quot;a4fddbb742f086d8409d7fd8f4a9b31a3b19e1fa1ff4bebb895b211d14aa402e&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/research-covers/011.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 1911210,
+      &quot;sha256&quot;: &quot;031217322896f2ce1e4467e50777134ea1f294fb6bbc331e52251e0713efb8f2&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/research-covers/009.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 106063,
+      &quot;sha256&quot;: &quot;85c34607bba6baa5a4e6c8c41618e8c5c4bd4fd415d79c3fda0d027e966f2181&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/research-covers/008.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 167795,
+      &quot;sha256&quot;: &quot;c3bbec5def1d40ddcda49506cfefbe63c2f24bcdbae2400ec585c61ac1427b19&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/research-covers/010.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 27442,
+      &quot;sha256&quot;: &quot;072fdaf2202b64aa653d5281cf342543b469ade5112c050a85999333d30074d5&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/research-covers/012.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 515693,
+      &quot;sha256&quot;: &quot;9511d04e85a80cd3f7024b40866252218e51b7630918be198413f10d18d300ff&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/research-covers/017.jpg&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 92062,
+      &quot;sha256&quot;: &quot;ca4adb9e03675ed7a0af6a7a6f370bd01228f6168630e830cbd2a8c4101d3e71&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/research-covers/016.jpg&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 51198,
+      &quot;sha256&quot;: &quot;7cb4d50ec84f1f88336a3279baeac53b314c23934123d84f2a5657e6d3fdec65&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/research-covers/014.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 1000179,
+      &quot;sha256&quot;: &quot;4f638b24a0f177d43e4371b606031aa5f908adc25dddb47eb3404795976509b2&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/research-covers/013.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 1122333,
+      &quot;sha256&quot;: &quot;791356db37e49495938f32bc80efe785b13016f24050a59191aeb110e6bd02d6&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/research-covers/015.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 2101825,
+      &quot;sha256&quot;: &quot;5de69bf69788e63045b8f68e1d06d6aeab3546e4e3b583ebc9a7fd48b50d4c6e&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/source-result.jpg&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 54169,
+      &quot;sha256&quot;: &quot;c9d8ab2a35068265a4e14125211c20d5982b427e542b088f35c0f14dbd0424e4&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/source-home.jpg&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 51198,
+      &quot;sha256&quot;: &quot;7cb4d50ec84f1f88336a3279baeac53b314c23934123d84f2a5657e6d3fdec65&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/source-bridge.jpg&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 57721,
+      &quot;sha256&quot;: &quot;a316268c217a7898281bf93e3634008a77bfdf9b112c1f2336fb98c3587f0b03&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/source-review.jpg&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 56449,
+      &quot;sha256&quot;: &quot;311bf17215df7e9a610988718c80f6783feffcaacf86aeedb87c9593162a10f9&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;assets/source-song.jpg&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 50130,
+      &quot;sha256&quot;: &quot;050d5683d473c97f447829474659db480ce485c8d3f2f2897cec575be227f6bf&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;audio/shadow-minimax.mp3&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 769297,
+      &quot;sha256&quot;: &quot;7d2a3a179725cd7aeee9baa22cfbd45f35854666b53f0b0faf05cde2e292a41a&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;audio/gravity-minimax.mp3&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 769297,
+      &quot;sha256&quot;: &quot;bfe73c53e68ab0a04924171dfdb0f353e7f5d91f982f537de0f348809072ed50&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;experience.css&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 6095,
+      &quot;sha256&quot;: &quot;d1b75c02cd2783af64f9a30955c6c1f2d0a54906b9321f71930765e8bd2be503&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;overview.css&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 8130,
+      &quot;sha256&quot;: &quot;2e348972572b8b9cb5235c152c888d23ac0f1d2594fb53b6fe5a7df9b97c9e5d&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;index.html&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 1191,
+      &quot;sha256&quot;: &quot;4c073b5e988fc91086888137e4c457e3e50bf69bccc847c8468c6b1e08de9d85&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;performance-stage.css&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 8584,
+      &quot;sha256&quot;: &quot;b8dc1eb62af223ad5a475cb293f1eb1bac713c0a1a53c7f61efca84d75b98781&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;research-state.json&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 173896,
+      &quot;sha256&quot;: &quot;6579b9c01abc4c606e78b8bf7be65fe4c32d65dd4068e4464d87292044591207&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;research-work.css&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 14525,
+      &quot;sha256&quot;: &quot;5fb1dfee551d0cab1d413f7b444d2aca775a224788097202eb725a247ae47d58&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;source-notice.html&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 7600,
+      &quot;sha256&quot;: &quot;c1e07bad63bab9a88031d533397f048f0201ab9fd088901091140425135c516a&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;research.html&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 229105,
+      &quot;sha256&quot;: &quot;db6989bbffa1b890f1b492c9b6cf726ca29b13c34cf010a49ae3337abc8cec34&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;style.css&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 16252,
+      &quot;sha256&quot;: &quot;d054347e7a62d6796d591bcb53744482aed4f3318cbf5a27a77252ab04aea775&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;upstream.css&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 35212,
+      &quot;sha256&quot;: &quot;8fe70e9012f33698dc5405fda39451461cec45a926eeb68a29660aa2a9922d71&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/gravity/seed.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 729386,
+      &quot;sha256&quot;: &quot;01fd5a6f73bfe498fde97e373e2b7a17587dda246040bd549638a9d064f91b43&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/gravity/background.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 2630143,
+      &quot;sha256&quot;: &quot;3604b1cf67ce956a6bf8435f11f028b81ca3e2c297820b3feafd116818d64ccf&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/gravity/background-finale.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 2421635,
+      &quot;sha256&quot;: &quot;05c80d0c9918631a50fbe510b9c8bbd00704913d918c13f3f5a79ca5c75e82ab&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/gravity/stone-awake.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 1945154,
+      &quot;sha256&quot;: &quot;fc0c034435e167275e629e648ea5140a4a16bed94326331caac4faf90b9a54ed&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/gravity/tree.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 890929,
+      &quot;sha256&quot;: &quot;c993227003c3bf80222913afcb29ed214153dd7d490c76f6aa44f556b9ced6f0&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/gravity/wind-gust.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 1296994,
+      &quot;sha256&quot;: &quot;6826d9a512668e11292575869860176f2eb624ff48b1b7c1b0be591d1fd8e646&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/gravity/stone-proud.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 2233680,
+      &quot;sha256&quot;: &quot;906595256dfd569cd3e2880953139c50b5e41e5ee596f79d22e75d97d619ef53&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/gravity/stone.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 2446111,
+      &quot;sha256&quot;: &quot;01c72464af2ceac0d5ae545b22782e6da230226d07bd6532e9ae9a1201f05586&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/moon/moon-content.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 1365233,
+      &quot;sha256&quot;: &quot;877bada5debda7ec3ccb1316c8642437871982e5aa7194953f39bc40a0376d00&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/gravity/wind-rest.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 1537818,
+      &quot;sha256&quot;: &quot;c13cd8fe49ce5d7e1872737a2ddf168e8d33365f63baab93eb60f51686f2f97a&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/moon/background-finale.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 2722911,
+      &quot;sha256&quot;: &quot;2abb2474216dff2d05757362519b5c4897ee4c18627c06673d7bd86eec0d6253&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/gravity/wind.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 1270926,
+      &quot;sha256&quot;: &quot;3aa4987dc81334bca246d8a01a7b16a26a21565e46fd96d91ce4fa44fec97a31&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/moon/background.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 2903368,
+      &quot;sha256&quot;: &quot;3eed0fc28ad7a08b3182c928632e502176995181ab7b77fcc1ec0a5fd1b0bc23&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/moon/moon.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 1079656,
+      &quot;sha256&quot;: &quot;5503589bfbf2db55532092a9873ba155f65cadc0d4ee333a66a7041897a24dfe&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/moon/patch.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 1104760,
+      &quot;sha256&quot;: &quot;ee5cdfb6ab35b0381c4a584b7b955651f3df4f389050fc85aa33b30d364a4747&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/moon/tailor-proud.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 1056023,
+      &quot;sha256&quot;: &quot;69495ab5556735e5d38db20d0bdf2ec5084560ba79767e85de42f1a896bd15d4&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/moon/tailor-chase.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 1108288,
+      &quot;sha256&quot;: &quot;861b618d550c7406b854e3d00c44834b4fca38fa14455341456fb78559ed510e&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/moon/moon-hiccup.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 1374009,
+      &quot;sha256&quot;: &quot;256295cfeabae4199b6d55f9c342d5d37b5c2672f8eb8714c8cb3d52421a1a19&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/moon/tailor.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 1011640,
+      &quot;sha256&quot;: &quot;e202ef14294251a69bd6f1a1568a1f4f188e1e1f8684cb592655a17c3c365894&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/moon/thread.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 164426,
+      &quot;sha256&quot;: &quot;a6bf7d1d7fd19a62aea850b68cdd1204d3d619ddd9a16795fda2dfae7e9063f8&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/shadow/beam.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 1858623,
+      &quot;sha256&quot;: &quot;ac2294999fc36d9dde44b54177a7a7f0e675dc5349056c95276c8fd6eac35247&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/shadow/background-finale.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 2479485,
+      &quot;sha256&quot;: &quot;741776ee0e0a8383f68cd440eff17194b637dccc9b93c32f4e9ef9f08d2bb930&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/shadow/background.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 2616498,
+      &quot;sha256&quot;: &quot;2bc1268bcba4de1a980c623092eb49946e2381f60e1eeeb37bdc815b11d61a8f&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/shadow/dancer.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 440499,
+      &quot;sha256&quot;: &quot;c41b0d5354d36ae31b638b76f2d681f71f40933397c7185bc1fc7dcee7693298&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/shadow/light-brave.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 862724,
+      &quot;sha256&quot;: &quot;86d9b12bbf82070c4d8ffc84644c4039b59341b7763267c89ab98c950724e28d&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/shadow/dancer-bow.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 522413,
+      &quot;sha256&quot;: &quot;e198506383a1473db6ff2b1bc1c324682f191768c865c92f23c2bf4537272bcf&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/shadow/dancer-leap.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 580513,
+      &quot;sha256&quot;: &quot;4b11a9594bf10282c1d458271ea55b902200627f3213dd9169c2f5a3ce1bb5ac&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/shadow/dancer-spin.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 560515,
+      &quot;sha256&quot;: &quot;36198aab43e2019cbd4c9e7d05685b0d5a30ebee1102bf857c9d113ca38a1440&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds/shadow/light.png&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 542492,
+      &quot;sha256&quot;: &quot;b45e5413e4655fbc92c0c8456511a46b68794aa435e6360b796888827da5dacd&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;path&quot;: &quot;worlds.css&quot;,
+      &quot;status&quot;: 200,
+      &quot;bytes&quot;: 13525,
+      &quot;sha256&quot;: &quot;0fe9953db397fe9eef6afb44a4268ddf8aa3e3d4c736db6a63449dc34a90eb4f&quot;,
+      &quot;passed&quot;: true
+    }
+  ],
+  &quot;pageErrors&quot;: [],
+  &quot;failedResponses&quot;: [],
+  &quot;apiRequests&quot;: [],
+  &quot;passed&quot;: true
+}
+</pre></details>
+<details id="record-world-music-generation-v10"><summary>world-music-generation-v10.json</summary><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/notes/world-music-generation-v10.json">原始 JSON ↗</a></p><pre>{
+  &quot;version&quot;: 10,
+  &quot;provider&quot;: &quot;MiniMax&quot;,
+  &quot;model&quot;: &quot;MiniMaxAI/MiniMax-Music3&quot;,
+  &quot;updatedAt&quot;: &quot;2026-10-03T01:47:37.427148+00:00&quot;,
+  &quot;status&quot;: &quot;partial&quot;,
+  &quot;worlds&quot;: {
+    &quot;gravity&quot;: {
+      &quot;status&quot;: &quot;success&quot;,
+      &quot;receipt&quot;: &quot;notes/world-music-gravity-generation-v10.json&quot;,
+      &quot;generationPostAttempts&quot;: 1,
+      &quot;playbackOutput&quot;: {
+        &quot;path&quot;: &quot;web/audio/gravity-minimax.mp3&quot;,
+        &quot;bytes&quot;: 769297,
+        &quot;sha256&quot;: &quot;bfe73c53e68ab0a04924171dfdb0f353e7f5d91f982f537de0f348809072ed50&quot;,
+        &quot;codec&quot;: &quot;mp3&quot;,
+        &quot;sampleRate&quot;: 44100,
+        &quot;channels&quot;: 2,
+        &quot;bitrate&quot;: 192000,
+        &quot;actualDecodedDurationSeconds&quot;: 32.0,
+        &quot;nonSilent&quot;: true
+      },
+      &quot;blocker&quot;: null
+    },
+    &quot;moon&quot;: {
+      &quot;status&quot;: &quot;blocked&quot;,
+      &quot;receipt&quot;: &quot;notes/world-music-moon-generation-v10.json&quot;,
+      &quot;generationPostAttempts&quot;: 1,
+      &quot;playbackOutput&quot;: null,
+      &quot;blocker&quot;: {
+        &quot;error&quot;: &quot;You have exceeded your ZeroGPU quota (96s requested vs. 4s left). Try again in 17:07:22. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens&quot;,
+        &quot;duration&quot;: 10,
+        &quot;visible&quot;: true,
+        &quot;title&quot;: &quot;ZeroGPU quota exceeded&quot;
+      }
+    }
+  },
+  &quot;existingShadow&quot;: &quot;world-music-generation-v9.json; not regenerated&quot;,
+  &quot;limitations&quot;: &quot;Generated file verification is not listening-quality or real browser synchronization verification.&quot;
+}
+</pre></details>
+<details id="record-world-music-generation-v9"><summary>world-music-generation-v9.json</summary><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/notes/world-music-generation-v9.json">原始 JSON ↗</a></p><pre>{
+  &quot;provider&quot;: &quot;MiniMax&quot;,
+  &quot;model&quot;: &quot;MiniMaxAI/MiniMax-Music3&quot;,
+  &quot;route&quot;: &quot;official Hugging Face MiniMaxAI ZeroGPU Space&quot;,
+  &quot;startedAt&quot;: &quot;2026-10-02T18:52:50.269621+00:00&quot;,
+  &quot;status&quot;: &quot;success&quot;,
+  &quot;endpoint&quot;: &quot;https://minimaxai-minimax-music3.hf.space/gradio_api/call/v2/studio_generate&quot;,
+  &quot;apiName&quot;: &quot;/studio_generate&quot;,
+  &quot;officialSources&quot;: [
+    &quot;https://huggingface.co/MiniMaxAI/MiniMax-Music3&quot;,
+    &quot;https://huggingface.co/spaces/MiniMaxAI/MiniMax-Music3/blob/main/app.py&quot;,
+    &quot;https://huggingface.co/docs/hub/spaces-zerogpu&quot;
+  ],
+  &quot;request&quot;: {
+    &quot;state&quot;: {
+      &quot;mode&quot;: &quot;studio&quot;,
+      &quot;description&quot;: &quot;Original instrumental miniature for a handmade shadow rehearsal theatre. A timid paper dancer follows a small light, discovers a brave leap, joins a mirrored duet, then bows warmly. No vocals, speech, humming or choir.&quot;,
+      &quot;instrumental&quot;: true,
+      &quot;title&quot;: &quot;A Little Light Rehearsal&quot;,
+      &quot;lyrics&quot;: &quot;[instrumental]&quot;,
+      &quot;global_meta&quot;: &quot;Genre: playful acoustic chamber miniature, tactile handmade theatre. BPM: 100. Key: D major. Duration target: 35 seconds, continuous instrumental, no long introduction. Mood progression: first 0-8 seconds tentative and curious; 8-16 seconds courage and a light upward leap; 16-24 seconds flowing mirrored duet; 24-32 seconds warm theatrical bow; 32-35 seconds natural ending and gentle decay. Intimate acoustic stereo, natural dynamics, clear melodic motif, gentle low end.&quot;,
+      &quot;vocals&quot;: &quot;Instrumental only. No vocals, spoken words, humming, choir, vocal chops or sung melody.&quot;,
+      &quot;arrangement&quot;: &quot;Begin immediately with a sparse warm felt-piano motif and quiet pizzicato strings, leaving breathing room for the timid dancer. In the second 8-second section the motif climbs as light wooden percussion and marimba answer it, a short upward flourish accompanies the leap. In the third section two complementary piano and plucked-string phrases answer one another like mirrored dancers, supported by soft brushed rhythm. In the fourth section bring the same motif home with warm strings and a restrained satisfying final chord. Let the last three seconds decay naturally. Memorable, lightly mischievous and tender, acoustic instruments, no electronic beeps, no aggressive bass, no cinematic bombast, no vocals.&quot;
+    },
+    &quot;duration&quot;: 35,
+    &quot;seed&quot;: 17,
+    &quot;randomize_seed&quot;: false,
+    &quot;headroom&quot;: 0,
+    &quot;steps&quot;: 30,
+    &quot;guidance&quot;: 1.7
+  },
+  &quot;requestSha256&quot;: &quot;ef223ed96b818558227c8d0ed80a1789135733af2d57bcfca21d21b75f657d07&quot;,
+  &quot;generationPostAttempts&quot;: 1,
+  &quot;credentialUsed&quot;: false,
+  &quot;paidOverageAllowed&quot;: false,
+  &quot;termsAccepted&quot;: false,
+  &quot;events&quot;: [
+    {
+      &quot;event&quot;: &quot;generating&quot;,
+      &quot;at&quot;: &quot;2026-10-02T18:52:51.641228+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;dict&quot;,
+        &quot;dict&quot;,
+        &quot;dict&quot;,
+        &quot;NoneType&quot;
+      ]
+    },
+    {
+      &quot;event&quot;: &quot;generating&quot;,
+      &quot;at&quot;: &quot;2026-10-02T18:52:54.112425+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;str&quot;,
+        &quot;dict&quot;,
+        &quot;int&quot;,
+        &quot;NoneType&quot;
+      ],
+      &quot;statusText&quot;: &quot;ZeroGPU acquired — warming up...&quot;
+    },
+    {
+      &quot;event&quot;: &quot;generating&quot;,
+      &quot;at&quot;: &quot;2026-10-02T18:53:02.495961+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;str&quot;,
+        &quot;dict&quot;,
+        &quot;int&quot;,
+        &quot;NoneType&quot;
+      ],
+      &quot;statusText&quot;: &quot;streaming... 5.0s&quot;
+    },
+    {
+      &quot;event&quot;: &quot;generating&quot;,
+      &quot;at&quot;: &quot;2026-10-02T18:53:05.558738+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;str&quot;,
+        &quot;dict&quot;,
+        &quot;int&quot;,
+        &quot;NoneType&quot;
+      ],
+      &quot;statusText&quot;: &quot;streaming... 9.0s of audio at 11s&quot;
+    },
+    {
+      &quot;event&quot;: &quot;heartbeat&quot;,
+      &quot;at&quot;: &quot;2026-10-02T18:53:06.647787+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;NoneType&quot;
+      ]
+    },
+    {
+      &quot;event&quot;: &quot;generating&quot;,
+      &quot;at&quot;: &quot;2026-10-02T18:53:08.940700+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;str&quot;,
+        &quot;dict&quot;,
+        &quot;int&quot;,
+        &quot;NoneType&quot;
+      ],
+      &quot;statusText&quot;: &quot;streaming... 13.0s of audio at 15s&quot;
+    },
+    {
+      &quot;event&quot;: &quot;generating&quot;,
+      &quot;at&quot;: &quot;2026-10-02T18:53:12.309376+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;str&quot;,
+        &quot;dict&quot;,
+        &quot;int&quot;,
+        &quot;NoneType&quot;
+      ],
+      &quot;statusText&quot;: &quot;streaming... 17.0s of audio at 18s&quot;
+    },
+    {
+      &quot;event&quot;: &quot;generating&quot;,
+      &quot;at&quot;: &quot;2026-10-02T18:53:15.696777+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;str&quot;,
+        &quot;dict&quot;,
+        &quot;int&quot;,
+        &quot;NoneType&quot;
+      ],
+      &quot;statusText&quot;: &quot;streaming... 21.0s of audio at 21s&quot;
+    },
+    {
+      &quot;event&quot;: &quot;generating&quot;,
+      &quot;at&quot;: &quot;2026-10-02T18:53:19.100887+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;str&quot;,
+        &quot;dict&quot;,
+        &quot;int&quot;,
+        &quot;NoneType&quot;
+      ],
+      &quot;statusText&quot;: &quot;streaming... 25.0s of audio at 25s&quot;
+    },
+    {
+      &quot;event&quot;: &quot;generating&quot;,
+      &quot;at&quot;: &quot;2026-10-02T18:53:20.590316+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;str&quot;,
+        &quot;dict&quot;,
+        &quot;int&quot;,
+        &quot;NoneType&quot;
+      ],
+      &quot;statusText&quot;: &quot;streaming... 29.9s of audio at 26s&quot;
+    },
+    {
+      &quot;event&quot;: &quot;generating&quot;,
+      &quot;at&quot;: &quot;2026-10-02T18:53:20.590880+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;str&quot;,
+        &quot;dict&quot;,
+        &quot;int&quot;,
+        &quot;NoneType&quot;
+      ],
+      &quot;statusText&quot;: &quot;done: 29.9s of audio in 26s — rendering share video...&quot;
+    },
+    {
+      &quot;event&quot;: &quot;complete&quot;,
+      &quot;at&quot;: &quot;2026-10-02T18:53:20.592015+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;str&quot;,
+        &quot;dict&quot;,
+        &quot;int&quot;,
+        &quot;NoneType&quot;
+      ],
+      &quot;statusText&quot;: &quot;done: 29.9s of audio in 26s — rendering share video...&quot;
+    }
+  ],
+  &quot;submitResponse&quot;: {
+    &quot;event_id&quot;: &quot;199eec3cebc1448ab96e9b5705120e0b&quot;
+  },
+  &quot;eventId&quot;: &quot;199eec3cebc1448ab96e9b5705120e0b&quot;,
+  &quot;resultEndpoint&quot;: &quot;https://minimaxai-minimax-music3.hf.space/gradio_api/call/v2/studio_generate/199eec3cebc1448ab96e9b5705120e0b&quot;,
+  &quot;audioFileData&quot;: {
+    &quot;path&quot;: &quot;/tmp/gradio/7dd0df34b750ac0834c1cce1e29ce06cf446c547b8ef8c3752825c1a560e2282/tmpd8g2hkbx.wav&quot;,
+    &quot;url&quot;: &quot;https://minimaxai-minimax-music3.hf.space/gradio_api/file=/tmp/gradio/7dd0df34b750ac0834c1cce1e29ce06cf446c547b8ef8c3752825c1a560e2282/tmpd8g2hkbx.wav&quot;,
+    &quot;size&quot;: 5281836,
+    &quot;orig_name&quot;: &quot;tmpd8g2hkbx.wav&quot;,
+    &quot;mime_type&quot;: null,
+    &quot;is_stream&quot;: false,
+    &quot;meta&quot;: {
+      &quot;_type&quot;: &quot;gradio.FileData&quot;
+    }
+  },
+  &quot;nativeOutput&quot;: {
+    &quot;path&quot;: &quot;assets/music/shadow-minimax-full.wav&quot;,
+    &quot;providerUrl&quot;: &quot;https://minimaxai-minimax-music3.hf.space/gradio_api/file=/tmp/gradio/7dd0df34b750ac0834c1cce1e29ce06cf446c547b8ef8c3752825c1a560e2282/tmpd8g2hkbx.wav&quot;,
+    &quot;bytes&quot;: 5281836,
+    &quot;sha256&quot;: &quot;e71ac97a74e42126e0fefd6d327254bad657b3d4245c1281bd14a9624023c75a&quot;,
+    &quot;durationSeconds&quot;: 29.942131519274376,
+    &quot;sampleRate&quot;: 44100,
+    &quot;channels&quot;: 2,
+    &quot;sampleWidthBytes&quot;: 2,
+    &quot;peakDbfs&quot;: -3.2057173688902663,
+    &quot;rmsDbfs&quot;: -25.222760271239792,
+    &quot;nonSilent&quot;: true
+  },
+  &quot;downloadedAt&quot;: &quot;2026-10-02T18:53:57.162235+00:00&quot;,
+  &quot;finishedAt&quot;: &quot;2026-10-02T18:55:40.586866+00:00&quot;,
+  &quot;playbackOutput&quot;: {
+    &quot;path&quot;: &quot;web/audio/shadow-minimax.mp3&quot;,
+    &quot;bytes&quot;: 769297,
+    &quot;sha256&quot;: &quot;7d2a3a179725cd7aeee9baa22cfbd45f35854666b53f0b0faf05cde2e292a41a&quot;,
+    &quot;codec&quot;: &quot;mp3&quot;,
+    &quot;sampleRate&quot;: 44100,
+    &quot;channels&quot;: 2,
+    &quot;bitrate&quot;: 192000,
+    &quot;targetDecodedDurationSeconds&quot;: 32,
+    &quot;actualDecodedDurationSeconds&quot;: 32.0,
+    &quot;containerDurationSeconds&quot;: 32.026122,
+    &quot;containerStartTimeSeconds&quot;: 0.025057,
+    &quot;mp3DurationNote&quot;: &quot;Container includes MP3 encoder delay/padding; decoded PCM has exactly 32 seconds.&quot;,
+    &quot;nonSilent&quot;: true
+  },
+  &quot;edit&quot;: {
+    &quot;nativeSourceDurationSeconds&quot;: 29.942131519274376,
+    &quot;requestedGenerationUpperBoundSeconds&quot;: 35,
+    &quot;playbackDurationSeconds&quot;: 32,
+    &quot;fadeOutStartSeconds&quot;: 28.942131519274376,
+    &quot;fadeOutDurationSeconds&quot;: 1,
+    &quot;tailSilenceSeconds&quot;: 2.057868480725624,
+    &quot;timeStretch&quot;: false,
+    &quot;regeneration&quot;: false,
+    &quot;synthesisAdded&quot;: false,
+    &quot;filter&quot;: &quot;afade=t=out:st=28.942131519274:d=1,apad=whole_dur=32&quot;,
+    &quot;encoding&quot;: &quot;libmp3lame, stereo, 44100 Hz, 192000 bit/s&quot;
+  },
+  &quot;verification&quot;: {
+    &quot;decodable&quot;: true,
+    &quot;decodedPcmSamples&quot;: 2822400,
+    &quot;decodedSampleFrames&quot;: 1411200,
+    &quot;decodedExactly32Seconds&quot;: true,
+    &quot;nativeOutputPreserved&quot;: true,
+    &quot;nonSilentWindows&quot;: [
+      {
+        &quot;startSeconds&quot;: 0,
+        &quot;endSeconds&quot;: 1,
+        &quot;peakDbfs&quot;: -18.55477939881613,
+        &quot;rmsDbfs&quot;: -35.09283500434221,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 1,
+        &quot;endSeconds&quot;: 2,
+        &quot;peakDbfs&quot;: -14.986693034766079,
+        &quot;rmsDbfs&quot;: -30.482801900500917,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 2,
+        &quot;endSeconds&quot;: 3,
+        &quot;peakDbfs&quot;: -14.441573720815246,
+        &quot;rmsDbfs&quot;: -28.80318459832531,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 3,
+        &quot;endSeconds&quot;: 4,
+        &quot;peakDbfs&quot;: -11.585763880971205,
+        &quot;rmsDbfs&quot;: -24.704694630502786,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 4,
+        &quot;endSeconds&quot;: 5,
+        &quot;peakDbfs&quot;: -10.49600693281727,
+        &quot;rmsDbfs&quot;: -27.128298454584776,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 5,
+        &quot;endSeconds&quot;: 6,
+        &quot;peakDbfs&quot;: -7.839152670741326,
+        &quot;rmsDbfs&quot;: -24.686266340299806,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 6,
+        &quot;endSeconds&quot;: 7,
+        &quot;peakDbfs&quot;: -18.259117323048738,
+        &quot;rmsDbfs&quot;: -35.726428779939674,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 7,
+        &quot;endSeconds&quot;: 8,
+        &quot;peakDbfs&quot;: -10.987103110270944,
+        &quot;rmsDbfs&quot;: -24.463088128563445,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 8,
+        &quot;endSeconds&quot;: 9,
+        &quot;peakDbfs&quot;: -8.252780880856058,
+        &quot;rmsDbfs&quot;: -20.67324735778105,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 9,
+        &quot;endSeconds&quot;: 10,
+        &quot;peakDbfs&quot;: -15.481238849608978,
+        &quot;rmsDbfs&quot;: -30.342185713112006,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 10,
+        &quot;endSeconds&quot;: 11,
+        &quot;peakDbfs&quot;: -9.696194801821719,
+        &quot;rmsDbfs&quot;: -27.17426835628322,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 11,
+        &quot;endSeconds&quot;: 12,
+        &quot;peakDbfs&quot;: -10.086898102874757,
+        &quot;rmsDbfs&quot;: -25.865973508974992,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 12,
+        &quot;endSeconds&quot;: 13,
+        &quot;peakDbfs&quot;: -9.518336945806562,
+        &quot;rmsDbfs&quot;: -27.638596399659257,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 13,
+        &quot;endSeconds&quot;: 14,
+        &quot;peakDbfs&quot;: -12.210362151281306,
+        &quot;rmsDbfs&quot;: -31.737802091722983,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 14,
+        &quot;endSeconds&quot;: 15,
+        &quot;peakDbfs&quot;: -26.7698190874562,
+        &quot;rmsDbfs&quot;: -44.29572093726876,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 15,
+        &quot;endSeconds&quot;: 16,
+        &quot;peakDbfs&quot;: -27.00411217668814,
+        &quot;rmsDbfs&quot;: -44.72884401448334,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 16,
+        &quot;endSeconds&quot;: 17,
+        &quot;peakDbfs&quot;: -29.239746600685255,
+        &quot;rmsDbfs&quot;: -48.58005618268265,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 17,
+        &quot;endSeconds&quot;: 18,
+        &quot;peakDbfs&quot;: -12.774252756381069,
+        &quot;rmsDbfs&quot;: -27.9635754895168,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 18,
+        &quot;endSeconds&quot;: 19,
+        &quot;peakDbfs&quot;: -10.747215238071506,
+        &quot;rmsDbfs&quot;: -21.712341822191394,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 19,
+        &quot;endSeconds&quot;: 20,
+        &quot;peakDbfs&quot;: -20.100779738990823,
+        &quot;rmsDbfs&quot;: -32.327346707062254,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 20,
+        &quot;endSeconds&quot;: 21,
+        &quot;peakDbfs&quot;: -22.14419939295737,
+        &quot;rmsDbfs&quot;: -34.07004777839103,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 21,
+        &quot;endSeconds&quot;: 22,
+        &quot;peakDbfs&quot;: -9.91006506561751,
+        &quot;rmsDbfs&quot;: -29.055924830715583,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 22,
+        &quot;endSeconds&quot;: 23,
+        &quot;peakDbfs&quot;: -5.360827460762967,
+        &quot;rmsDbfs&quot;: -19.744123629056215,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 23,
+        &quot;endSeconds&quot;: 24,
+        &quot;peakDbfs&quot;: -8.945281464271126,
+        &quot;rmsDbfs&quot;: -24.072438826598898,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 24,
+        &quot;endSeconds&quot;: 25,
+        &quot;peakDbfs&quot;: -10.67172087936735,
+        &quot;rmsDbfs&quot;: -22.153479520733235,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 25,
+        &quot;endSeconds&quot;: 26,
+        &quot;peakDbfs&quot;: -12.00416875307047,
+        &quot;rmsDbfs&quot;: -24.960953610961166,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 26,
+        &quot;endSeconds&quot;: 27,
+        &quot;peakDbfs&quot;: -4.2347125261201475,
+        &quot;rmsDbfs&quot;: -22.30377090447877,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 27,
+        &quot;endSeconds&quot;: 28,
+        &quot;peakDbfs&quot;: -17.985792442242698,
+        &quot;rmsDbfs&quot;: -27.84681763094983,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 28,
+        &quot;endSeconds&quot;: 29,
+        &quot;peakDbfs&quot;: -3.455414027444823,
+        &quot;rmsDbfs&quot;: -19.512990106528424,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 29,
+        &quot;endSeconds&quot;: 30,
+        &quot;peakDbfs&quot;: -38.39907426268287,
+        &quot;rmsDbfs&quot;: -56.593231648802075,
+        &quot;nonSilent&quot;: true
+      },
+      {
+        &quot;startSeconds&quot;: 30,
+        &quot;endSeconds&quot;: 31,
+        &quot;peakDbfs&quot;: null,
+        &quot;rmsDbfs&quot;: null,
+        &quot;nonSilent&quot;: false
+      },
+      {
+        &quot;startSeconds&quot;: 31,
+        &quot;endSeconds&quot;: 32,
+        &quot;peakDbfs&quot;: null,
+        &quot;rmsDbfs&quot;: null,
+        &quot;nonSilent&quot;: false
+      }
+    ],
+    &quot;tailAfterNativeEndpoint&quot;: {
+      &quot;peakDbfs&quot;: null,
+      &quot;rmsDbfs&quot;: null,
+      &quot;nonSilent&quot;: false
+    },
+    &quot;listeningVerified&quot;: false,
+    &quot;animationSynchronizationVerified&quot;: false
+  }
+}
+</pre></details>
+<details id="record-world-music-gravity-generation-v10"><summary>world-music-gravity-generation-v10.json</summary><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/notes/world-music-gravity-generation-v10.json">原始 JSON ↗</a></p><pre>{
+  &quot;version&quot;: 10,
+  &quot;scene&quot;: &quot;gravity&quot;,
+  &quot;provider&quot;: &quot;MiniMax&quot;,
+  &quot;model&quot;: &quot;MiniMaxAI/MiniMax-Music3&quot;,
+  &quot;route&quot;: &quot;official Hugging Face MiniMaxAI ZeroGPU Space&quot;,
+  &quot;startedAt&quot;: &quot;2026-10-03T01:43:56.578591+00:00&quot;,
+  &quot;status&quot;: &quot;success&quot;,
+  &quot;endpoint&quot;: &quot;https://minimaxai-minimax-music3.hf.space/gradio_api/call/v2/studio_generate&quot;,
+  &quot;apiName&quot;: &quot;/studio_generate&quot;,
+  &quot;officialSources&quot;: [
+    &quot;https://huggingface.co/MiniMaxAI/MiniMax-Music3&quot;,
+    &quot;https://huggingface.co/spaces/MiniMaxAI/MiniMax-Music3/blob/main/app.py&quot;,
+    &quot;https://huggingface.co/docs/hub/spaces-zerogpu&quot;
+  ],
+  &quot;preflight&quot;: &quot;music-space-preflight-v10.json&quot;,
+  &quot;request&quot;: {
+    &quot;state&quot;: {
+      &quot;mode&quot;: &quot;studio&quot;,
+      &quot;instrumental&quot;: true,
+      &quot;lyrics&quot;: &quot;[instrumental]&quot;,
+      &quot;vocals&quot;: &quot;Instrumental only. No vocals, words, speech, humming, choir or vocal chops. Do not quote any existing melody.&quot;,
+      &quot;title&quot;: &quot;Seeds on a Little Wind&quot;,
+      &quot;description&quot;: &quot;Original instrumental miniature for a handmade gravity garden: an airy mischievous wind sprite scatters star-seeds while a sleepy stone gardener catches them and grows a flower garden. No vocals or speech.&quot;,
+      &quot;global_meta&quot;: &quot;Genre: intimate playful acoustic chamber folk. BPM: 96. Key: G major. Duration target: 35 seconds. Begin immediately. Four-part emotional arc: 0-8s a sleepy woody low motif and a curious high wind note; 8-16s an excited breeze scatters seeds with a little comic stumble; 16-24s the gardener answers and catches them; 24-32s the two motifs bloom together, landing softly; 32-35s short natural decay. Warm tactile hand-painted atmosphere, natural stereo, gentle bass, no epic fanfare.&quot;,
+      &quot;arrangement&quot;: &quot;Two distinct musical personalities: airy piccolo or small wooden flute for the ribbon wind sprite, soft low woody bass plucks and warm bass marimba for the round stone gardener. Start with slow low taps and a tiny curious piccolo pickup. Let the piccolo rise in quick light runs over sparse brushed percussion as the wind gets carried away. Include one playful rhythmic stumble. Low bass replies in falling steps as star-seeds return to earth, then the piccolo and bass enter a clear call-and-response. Build a small warm shared growing melody with subtle acoustic strings near the ending, resolve softly with a brief clean decay. Handmade acoustic instruments only, no vocals, no synthetic beeps, no heavy drums, no cinematic bombast. New original melody.&quot;
+    },
+    &quot;duration&quot;: 35,
+    &quot;seed&quot;: 23,
+    &quot;randomize_seed&quot;: false,
+    &quot;headroom&quot;: 0,
+    &quot;steps&quot;: 30,
+    &quot;guidance&quot;: 1.7
+  },
+  &quot;requestSha256&quot;: &quot;0e5365bbe780a1616e3f37137512ca71eb3bdc837a50de96b3db3095680395be&quot;,
+  &quot;generationPostAttempts&quot;: 1,
+  &quot;credentialUsed&quot;: false,
+  &quot;paidOverageAllowed&quot;: false,
+  &quot;termsAccepted&quot;: false,
+  &quot;quotaEvasion&quot;: false,
+  &quot;events&quot;: [
+    {
+      &quot;event&quot;: &quot;generating&quot;,
+      &quot;at&quot;: &quot;2026-10-03T01:43:57.935397+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;dict&quot;,
+        &quot;dict&quot;,
+        &quot;dict&quot;,
+        &quot;NoneType&quot;
+      ],
+      &quot;statusText&quot;: &quot;&quot;
+    },
+    {
+      &quot;event&quot;: &quot;generating&quot;,
+      &quot;at&quot;: &quot;2026-10-03T01:44:00.378408+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;str&quot;,
+        &quot;dict&quot;,
+        &quot;int&quot;,
+        &quot;NoneType&quot;
+      ],
+      &quot;statusText&quot;: &quot;ZeroGPU acquired — warming up...&quot;
+    },
+    {
+      &quot;event&quot;: &quot;generating&quot;,
+      &quot;at&quot;: &quot;2026-10-03T01:44:08.655548+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;str&quot;,
+        &quot;dict&quot;,
+        &quot;int&quot;,
+        &quot;NoneType&quot;
+      ],
+      &quot;statusText&quot;: &quot;streaming... 5.0s&quot;
+    },
+    {
+      &quot;event&quot;: &quot;generating&quot;,
+      &quot;at&quot;: &quot;2026-10-03T01:44:11.704728+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;str&quot;,
+        &quot;dict&quot;,
+        &quot;int&quot;,
+        &quot;NoneType&quot;
+      ],
+      &quot;statusText&quot;: &quot;streaming... 9.0s of audio at 11s&quot;
+    },
+    {
+      &quot;event&quot;: &quot;heartbeat&quot;,
+      &quot;at&quot;: &quot;2026-10-03T01:44:12.935342+00:00&quot;,
+      &quot;valueTypes&quot;: &quot;NoneType&quot;
+    },
+    {
+      &quot;event&quot;: &quot;generating&quot;,
+      &quot;at&quot;: &quot;2026-10-03T01:44:15.089927+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;str&quot;,
+        &quot;dict&quot;,
+        &quot;int&quot;,
+        &quot;NoneType&quot;
+      ],
+      &quot;statusText&quot;: &quot;streaming... 13.0s of audio at 15s&quot;
+    },
+    {
+      &quot;event&quot;: &quot;generating&quot;,
+      &quot;at&quot;: &quot;2026-10-03T01:44:18.555244+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;str&quot;,
+        &quot;dict&quot;,
+        &quot;int&quot;,
+        &quot;NoneType&quot;
+      ],
+      &quot;statusText&quot;: &quot;streaming... 17.0s of audio at 18s&quot;
+    },
+    {
+      &quot;event&quot;: &quot;generating&quot;,
+      &quot;at&quot;: &quot;2026-10-03T01:44:22.006056+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;str&quot;,
+        &quot;dict&quot;,
+        &quot;int&quot;,
+        &quot;NoneType&quot;
+      ],
+      &quot;statusText&quot;: &quot;streaming... 21.0s of audio at 22s&quot;
+    },
+    {
+      &quot;event&quot;: &quot;generating&quot;,
+      &quot;at&quot;: &quot;2026-10-03T01:44:25.695582+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;str&quot;,
+        &quot;dict&quot;,
+        &quot;int&quot;,
+        &quot;NoneType&quot;
+      ],
+      &quot;statusText&quot;: &quot;streaming... 25.0s of audio at 25s&quot;
+    },
+    {
+      &quot;event&quot;: &quot;heartbeat&quot;,
+      &quot;at&quot;: &quot;2026-10-03T01:44:27.934443+00:00&quot;,
+      &quot;valueTypes&quot;: &quot;NoneType&quot;
+    },
+    {
+      &quot;event&quot;: &quot;generating&quot;,
+      &quot;at&quot;: &quot;2026-10-03T01:44:29.422453+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;str&quot;,
+        &quot;dict&quot;,
+        &quot;int&quot;,
+        &quot;NoneType&quot;
+      ],
+      &quot;statusText&quot;: &quot;streaming... 29.0s of audio at 29s&quot;
+    },
+    {
+      &quot;event&quot;: &quot;generating&quot;,
+      &quot;at&quot;: &quot;2026-10-03T01:44:31.772169+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;str&quot;,
+        &quot;dict&quot;,
+        &quot;int&quot;,
+        &quot;NoneType&quot;
+      ],
+      &quot;statusText&quot;: &quot;streaming... 35.0s of audio at 31s&quot;
+    },
+    {
+      &quot;event&quot;: &quot;generating&quot;,
+      &quot;at&quot;: &quot;2026-10-03T01:44:31.774115+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;str&quot;,
+        &quot;dict&quot;,
+        &quot;int&quot;,
+        &quot;NoneType&quot;
+      ],
+      &quot;statusText&quot;: &quot;done: 35.0s of audio in 31s — rendering share video...&quot;
+    },
+    {
+      &quot;event&quot;: &quot;complete&quot;,
+      &quot;at&quot;: &quot;2026-10-03T01:44:31.774634+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;str&quot;,
+        &quot;dict&quot;,
+        &quot;int&quot;,
+        &quot;NoneType&quot;
+      ],
+      &quot;statusText&quot;: &quot;done: 35.0s of audio in 31s — rendering share video...&quot;
+    }
+  ],
+  &quot;quota&quot;: {
+    &quot;anonymousTierDailySeconds&quot;: 120,
+    &quot;xlargeMultiplier&quot;: 2,
+    &quot;sourceDurationEstimateSeconds&quot;: 48,
+    &quot;estimatedQuotaSeconds&quot;: 96,
+    &quot;remainingBeforeRequest&quot;: null,
+    &quot;note&quot;: &quot;Published tier limit and source estimate, not measured remaining quota. Stop when the service reports an actual quota/login/terms/payment boundary.&quot;
+  },
+  &quot;submitResponse&quot;: {
+    &quot;event_id&quot;: &quot;1435ef22bce6479ea16fccf92479d8bb&quot;
+  },
+  &quot;eventId&quot;: &quot;1435ef22bce6479ea16fccf92479d8bb&quot;,
+  &quot;resultEndpoint&quot;: &quot;https://minimaxai-minimax-music3.hf.space/gradio_api/call/v2/studio_generate/1435ef22bce6479ea16fccf92479d8bb&quot;,
+  &quot;audioFileData&quot;: {
+    &quot;path&quot;: &quot;/tmp/gradio/2e8b99f398f52aa2bbab6e45b48ec9caf6f11bb1ce6dbb92e78d5b9b75160915/tmpisdpwx8l.wav&quot;,
+    &quot;url&quot;: &quot;https://minimaxai-minimax-music3.hf.space/gradio_api/file=/tmp/gradio/2e8b99f398f52aa2bbab6e45b48ec9caf6f11bb1ce6dbb92e78d5b9b75160915/tmpisdpwx8l.wav&quot;,
+    &quot;size&quot;: 6178860,
+    &quot;orig_name&quot;: &quot;tmpisdpwx8l.wav&quot;,
+    &quot;mime_type&quot;: null,
+    &quot;is_stream&quot;: false,
+    &quot;meta&quot;: {
+      &quot;_type&quot;: &quot;gradio.FileData&quot;
+    }
+  },
+  &quot;nativeOutput&quot;: {
+    &quot;path&quot;: &quot;assets/music/gravity-minimax-full.wav&quot;,
+    &quot;bytes&quot;: 6178860,
+    &quot;sha256&quot;: &quot;ed9bb838db5a8dc2010bb0e598c3a7f70efe70b2996fffe04ee2659706d953b6&quot;,
+    &quot;durationSeconds&quot;: 35.02730158730159,
+    &quot;sampleRate&quot;: 44100,
+    &quot;channels&quot;: 2,
+    &quot;sampleWidthBytes&quot;: 2,
+    &quot;peakDbfs&quot;: -0.00026507636037961915,
+    &quot;rmsDbfs&quot;: -18.59671749562429,
+    &quot;nonSilent&quot;: true
+  },
+  &quot;playbackOutput&quot;: {
+    &quot;path&quot;: &quot;web/audio/gravity-minimax.mp3&quot;,
+    &quot;bytes&quot;: 769297,
+    &quot;sha256&quot;: &quot;bfe73c53e68ab0a04924171dfdb0f353e7f5d91f982f537de0f348809072ed50&quot;,
+    &quot;codec&quot;: &quot;mp3&quot;,
+    &quot;sampleRate&quot;: 44100,
+    &quot;channels&quot;: 2,
+    &quot;bitrate&quot;: 192000,
+    &quot;actualDecodedDurationSeconds&quot;: 32.0,
+    &quot;nonSilent&quot;: true
+  },
+  &quot;edit&quot;: {
+    &quot;nativeSourceDurationSeconds&quot;: 35.02730158730159,
+    &quot;playbackDurationSeconds&quot;: 32,
+    &quot;fadeOutStartSeconds&quot;: 31.0,
+    &quot;fadeOutDurationSeconds&quot;: 1,
+    &quot;tailSilenceSeconds&quot;: 0,
+    &quot;trimmedTailSeconds&quot;: 3.0273015873015865,
+    &quot;timeStretch&quot;: false,
+    &quot;regeneration&quot;: false,
+    &quot;synthesisAdded&quot;: false,
+    &quot;filter&quot;: &quot;afade=t=out:st=31.000000000000:d=1,atrim=end=32,apad=whole_dur=32&quot;
+  },
+  &quot;verification&quot;: {
+    &quot;decodable&quot;: true,
+    &quot;decodedPcmSamples&quot;: 2822400,
+    &quot;decodedExactly32Seconds&quot;: true,
+    &quot;nativeOutputPreserved&quot;: true,
+    &quot;listeningVerified&quot;: false,
+    &quot;animationSynchronizationVerified&quot;: false
+  },
+  &quot;finishedAt&quot;: &quot;2026-10-03T01:44:34.233884+00:00&quot;,
+  &quot;requestHashSerialization&quot;: &quot;Canonical compact UTF-8 JSON, preserving insertion order&quot;,
+  &quot;requestBodySha256&quot;: &quot;8c3a79dfa18db47abdfcd838871124f2ffae93dcd54587cc9cacf22947d2153d&quot;
+}
+</pre></details>
+<details id="record-world-music-moon-generation-v10"><summary>world-music-moon-generation-v10.json</summary><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/016-chippytea-lab/notes/world-music-moon-generation-v10.json">原始 JSON ↗</a></p><pre>{
+  &quot;version&quot;: 10,
+  &quot;scene&quot;: &quot;moon&quot;,
+  &quot;provider&quot;: &quot;MiniMax&quot;,
+  &quot;model&quot;: &quot;MiniMaxAI/MiniMax-Music3&quot;,
+  &quot;route&quot;: &quot;official Hugging Face MiniMaxAI ZeroGPU Space&quot;,
+  &quot;startedAt&quot;: &quot;2026-10-03T01:45:28.024686+00:00&quot;,
+  &quot;status&quot;: &quot;blocked&quot;,
+  &quot;endpoint&quot;: &quot;https://minimaxai-minimax-music3.hf.space/gradio_api/call/v2/studio_generate&quot;,
+  &quot;apiName&quot;: &quot;/studio_generate&quot;,
+  &quot;officialSources&quot;: [
+    &quot;https://huggingface.co/MiniMaxAI/MiniMax-Music3&quot;,
+    &quot;https://huggingface.co/spaces/MiniMaxAI/MiniMax-Music3/blob/main/app.py&quot;,
+    &quot;https://huggingface.co/docs/hub/spaces-zerogpu&quot;
+  ],
+  &quot;preflight&quot;: &quot;music-space-preflight-v10.json&quot;,
+  &quot;request&quot;: {
+    &quot;state&quot;: {
+      &quot;mode&quot;: &quot;studio&quot;,
+      &quot;instrumental&quot;: true,
+      &quot;lyrics&quot;: &quot;[instrumental]&quot;,
+      &quot;vocals&quot;: &quot;Instrumental only. No vocals, words, speech, humming, choir or vocal chops. Do not quote any existing melody.&quot;,
+      &quot;title&quot;: &quot;Three Stitches for the Moon&quot;,
+      &quot;description&quot;: &quot;Original instrumental miniature for a cozy handmade moon mending shop: a meticulous tailor follows a mischievous hiccupping golden moon, catches its thread, sews three little patches, and they settle happily. No vocals or speech.&quot;,
+      &quot;global_meta&quot;: &quot;Genre: witty intimate acoustic chamber miniature. BPM: 112. Key: D major. Duration target: 35 seconds. Begin immediately. Four-part arc: 0-8s a careful three-note stitch motif discovers leaking starlight; 8-16s offbeat hiccups lead to a light elastic chase; 16-24s three clearly articulated stitch accents weave the two motifs together; 24-32s pulling tension releases into a warm floating resolution; 32-35s a short natural decay. Handmade paper theatre, restrained dynamics, clear pulse, no triumphant fanfare.&quot;,
+      &quot;arrangement&quot;: &quot;Pizzicato chamber strings are the principal voice. Pair a meticulous low plucked-string tailor motif with higher skipping moon replies. Tiny wooden clicks and muted brushed taps form a delicate sewing-like rhythm, never an industrial machine sound. A careful three-note pluck starts immediately. Add a short offbeat pluck and a gentle rhythmic interruption for each imaginary moon hiccup, then a comic elastic chase with pulling and releasing phrases. Three precise stitch accents catch the thread; the string motifs interweave. Warm bowed-string answers arrive near the last section, easing to a soft lyrical phrase and a satisfying compact final chord with clean decay. Acoustic chamber scale, no lyrics, no humming, no choir, no synth drops, no heavy drums. New original melody.&quot;
+    },
+    &quot;duration&quot;: 35,
+    &quot;seed&quot;: 31,
+    &quot;randomize_seed&quot;: false,
+    &quot;headroom&quot;: 0,
+    &quot;steps&quot;: 30,
+    &quot;guidance&quot;: 1.7
+  },
+  &quot;requestSha256&quot;: &quot;0eb2db4fd3b2b5fb380015664c03a6dfbb3694df4530b3188714575317a895e0&quot;,
+  &quot;generationPostAttempts&quot;: 1,
+  &quot;credentialUsed&quot;: false,
+  &quot;paidOverageAllowed&quot;: false,
+  &quot;termsAccepted&quot;: false,
+  &quot;quotaEvasion&quot;: false,
+  &quot;events&quot;: [
+    {
+      &quot;event&quot;: &quot;generating&quot;,
+      &quot;at&quot;: &quot;2026-10-03T01:45:29.409493+00:00&quot;,
+      &quot;valueTypes&quot;: [
+        &quot;dict&quot;,
+        &quot;dict&quot;,
+        &quot;dict&quot;,
+        &quot;dict&quot;,
+        &quot;NoneType&quot;
+      ],
+      &quot;statusText&quot;: &quot;&quot;
+    },
+    {
+      &quot;event&quot;: &quot;error&quot;,
+      &quot;at&quot;: &quot;2026-10-03T01:45:29.411093+00:00&quot;,
+      &quot;valueTypes&quot;: &quot;dict&quot;,
+      &quot;error&quot;: {
+        &quot;error&quot;: &quot;You have exceeded your ZeroGPU quota (96s requested vs. 4s left). Try again in 17:07:22. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens&quot;,
+        &quot;duration&quot;: 10,
+        &quot;visible&quot;: true,
+        &quot;title&quot;: &quot;ZeroGPU quota exceeded&quot;
+      }
+    }
+  ],
+  &quot;quota&quot;: {
+    &quot;anonymousTierDailySeconds&quot;: 120,
+    &quot;xlargeMultiplier&quot;: 2,
+    &quot;sourceDurationEstimateSeconds&quot;: 48,
+    &quot;estimatedQuotaSeconds&quot;: 96,
+    &quot;remainingBeforeRequest&quot;: null,
+    &quot;note&quot;: &quot;Published tier limit and source estimate, not measured remaining quota. Stop when the service reports an actual quota/login/terms/payment boundary.&quot;
+  },
+  &quot;submitResponse&quot;: {
+    &quot;event_id&quot;: &quot;c2972dae509e495fbc0c87f15d511501&quot;
+  },
+  &quot;eventId&quot;: &quot;c2972dae509e495fbc0c87f15d511501&quot;,
+  &quot;resultEndpoint&quot;: &quot;https://minimaxai-minimax-music3.hf.space/gradio_api/call/v2/studio_generate/c2972dae509e495fbc0c87f15d511501&quot;,
+  &quot;blocker&quot;: {
+    &quot;error&quot;: &quot;You have exceeded your ZeroGPU quota (96s requested vs. 4s left). Try again in 17:07:22. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens&quot;,
+    &quot;duration&quot;: 10,
+    &quot;visible&quot;: true,
+    &quot;title&quot;: &quot;ZeroGPU quota exceeded&quot;
+  },
+  &quot;finishedAt&quot;: &quot;2026-10-03T01:45:29.411872+00:00&quot;,
+  &quot;requestHashSerialization&quot;: &quot;Canonical compact UTF-8 JSON, preserving insertion order&quot;,
+  &quot;requestBodySha256&quot;: &quot;91c51d30cd781a5e2cab48beb8f692c05e6334671c17ccf38c8202bc54bbacb3&quot;
+}
+</pre></details>
+<details><summary>引导图生成说明与提示词</summary><pre>工具模式：内置 image_gen（未使用 CLI）
+最终图：F:/codex_project/0930_codex_project/projects/016-chippytea-lab/assets/chippytea-understanding-map-v1.png
+参考图：assets/concepts/gravity.png、moon.png、shadow.png
+事实依据：README.md、notes/research.md、notes/original-worlds.md，源库快照 f245695，本地扩展 v10。
+核对：五部分齐全；源库功能与原创角色分离；花园/影子音乐已生成，月亮待生成；业务接入与收益标为待验证。
+
+=== 首次生成提示 ===
+Use case: infographic-diagram
+Asset type: one exportable Chinese product-understanding infographic for our existing Chippytea research project.
+Primary request: Create a high-resolution landscape infographic, approximately 3000×2000, Chinese text is crisp, accurate and readable. It must clearly explain five questions: source capabilities, value to us, how it works, our three original styles, and future products. This is a rigorous explanatory poster with playful watercolor miniature illustrations, not a UI screenshot.
+Input images: Reference image 1 is the established &quot;引力花园&quot; visual/characters; image 2 is &quot;月亮修补铺&quot;; image 3 is &quot;影子排练场&quot;. Reuse their paper, ink and watercolor aesthetic and recognizable characters only within the corresponding three miniature vignette cards. Ignore the text and interface buttons in all reference images. Do not copy any original Chippytea cat or fish.
+Style: warm cream paper with subtle grain, dark crisp Chinese typography, hand-drawn fine black lines, small muted ochre/green/indigo/lavender accents. Friendly editorial infographic, ample negative space, clear numbered sections, consistent thin borders. Body text typeset rather than brush calligraphy. Large title, bold section headers and readable supporting text. Keep everything within safe margins. No 3D, no glowing futuristic tech, no photo, no illegible tiny text.
+Composition:
+- Top title and subtitle, full width.
+- First row, two readable panels: left 01 source capabilities (about 60% width), right 02 value (about 40%).
+- Second row, full-width main focal panel 03 principle. Large left-to-right arrow flow with five stages, and a well-organized labeled inset under the central stage explaining image/animation/music. A small concrete business-mapping example underneath, explicitly marked &quot;待接入&quot;.
+- Third row, 04 our styles: three equally-sized cards, each with a compact watercolor miniature scene based on its corresponding reference, name, function-effect ideas and music status. This should be the primary illustrated portion and must preserve space for every word.
+- Bottom row, 05 potential products: six clearly separated compact tiles in a 3×2 grid. Each pairs a product with a plausible functionality-to-world-effect mapping. Label all as future directions, not implemented integrations.
+- Footer contains implementation boundary and source.
+All visible text must be the following exact Simplified Chinese copy, with no additional paragraphs and no repeated/missing sections:
+
+Title: &quot;从 Chippytea 到我们的声画产品&quot;
+Subtitle: &quot;让真实功能结果，长出可参与的声画体验&quot;
+
+01 header: &quot;01  源库能力&quot;
+Source description: &quot;Mac 清理应用 + 互动官网&quot;
+Source first line: &quot;功能：扫描空间 → 审阅影响 → 执行清理 → 成果记账&quot;
+Source second line: &quot;表达：手绘角色 · 收集动画与音效 · 歌词同步 · 互动歌曲&quot;
+Source small line: &quot;应用：SwiftUI / Rust　　网站：React / Canvas / Web Audio&quot;
+Source small caption: &quot;可研究复用的完整产品实现&quot;
+
+02 header: &quot;02  对我们的价值&quot;
+Value bullets: &quot;结果更易感知&quot; / &quot;操作具有情绪与记忆&quot; / &quot;原创品牌 + 可复用编排&quot;
+Value concluding line: &quot;精彩仍依赖创意与节奏设计&quot;
+Value small note: &quot;留存、传播和收益提升：待验证&quot;
+
+03 header: &quot;03  原理：同一含义，共同编排&quot;
+Five flow stages in order: &quot;功能事件&quot; → &quot;确认结果&quot; → &quot;声画编排&quot; → &quot;用户参与&quot; → &quot;世界积累&quot;
+Inset labels below orchestration stage: &quot;图像：角色与世界&quot; / &quot;动画：过程与回应&quot; / &quot;音乐：节奏与情绪&quot;
+Additional principle line: &quot;音乐时间组织段落 · 频谱影响细节 · 功能事件触发动作&quot;
+Concrete example label: &quot;业务映射示例（待接入）&quot;
+Concrete example line: &quot;收藏成功 → 种子落地、生长 + 乐句回应 → 花园留下记录&quot;
+
+04 header: &quot;04  我们的原创扩展样式&quot;
+Shared rule line: &quot;纸底墨线 · 角色关系 · 世界规则 · 四幕故事 · 可参与表演&quot;
+Left card name: &quot;引力花园&quot;
+Left card character caption: &quot;石头园丁 × 风精灵&quot;
+Left card effect line: &quot;吹种 → 接力 → 选位 → 生长&quot;
+Left card music badge: &quot;MiniMax 配乐已生成&quot;
+Center card name: &quot;月亮修补铺&quot;
+Center card character caption: &quot;严肃裁缝 × 淘气月亮&quot;
+Center card effect line: &quot;追逐 → 拉线 → 三针缝补&quot;
+Center card music badge: &quot;配乐待生成&quot;
+Right card name: &quot;影子排练场&quot;
+Right card character caption: &quot;夸张影子 × 害羞光团&quot;
+Right card effect line: &quot;追光 → 旋身 → 共舞 → 留姿&quot;
+Right card music badge: &quot;MiniMax 配乐已生成&quot;
+
+05 header: &quot;05  可扩展产品（待接真实业务）&quot;
+Tile 1: &quot;知识收藏 / 研究归档&quot; and &quot;一份发现 → 一颗种子&quot;
+Tile 2: &quot;任务 / 习惯 / 专注&quot; and &quot;一次完成 → 一幕成长&quot;
+Tile 3: &quot;文件 / 素材整理&quot; and &quot;整理成果 → 场景舒展&quot;
+Tile 4: &quot;创作成果 / 品牌展示&quot; and &quot;产品能力 → 可玩的故事&quot;
+Tile 5: &quot;互动课程 / 新手引导&quot; and &quot;学习进度 → 角色回应&quot;
+Tile 6: &quot;音乐叙事编辑器&quot; and &quot;素材与歌曲 → 可编排场景&quot;
+
+Footer first line: &quot;当前：声画演示与本机互动已实现；真实业务接入及产品收益待验证。&quot;
+Footer second line: &quot;源库：richiemcilroy/chippytea · f245695　｜　本地扩展：016 · v10&quot;
+
+Constraints: Correct factual hierarchy: source is Mac app plus expressive website; current worlds are audiovisual/local interaction demonstrations; product mappings and benefits are future directions. Do not imply moon music exists. Every listed Chinese phrase must be faithfully typeset. No additional invented metrics, testimonials, claims, UI controls, cat/fish, watermark or decorative text. Make text dominate explanations and miniature art support the three styles.
+
+=== 最终局部修订提示 ===
+Use case: precise-object-edit
+Edit target: the attached completed Chinese infographic.
+Make exactly ONE localized change: in the top-left &quot;01 源库能力&quot; panel ONLY, replace the stone gardener character, its watering tool and its immediately surrounding decorative garden (currently on the lower-left side of that panel) with a compact cream-paper hand-ink/watercolor illustration of a Mac-style laptop, a few folders, a magnifying glass and a small checklist/checkmark. This illustration represents reviewing storage cleanup. It must fit the same occupied lower-left area and not overlap any words.
+Critical reason: the stone gardener belongs to our ORIGINAL extension, not the source Chippytea repository, and should therefore appear only in section 04 &quot;引力花园&quot;.
+Strict invariants: Keep the overall landscape size, every single Chinese and English word, every numbered section, all arrow diagrams, every colored label and music-status badge, all layouts, palette, margins and paper texture exactly unchanged. Keep the three miniature worlds in section 04 exactly as they are. Keep the wind-sprite decoration on the upper-right value panel and all remaining decoration unchanged. Do not add cats, fish, new characters, metrics, logos, claims or text. Only the lower-left illustration within panel 01 changes. This is a targeted edit to one source-capability illustration, not a redesign.
+
+</pre></details></section><section id="scope" class="scope"><h2>资料与展示范围</h2><p>当前网页、场景素材、两首播放版音乐、原图与三支离线预览完整公开。研究正文和源码进入 GitHub；历史大批 QA 联系图、完整 WAV、模型中间文件等继续保留在原本机。档案中指向这些未公开素材的链接回到这里。没有下载链接的素材不代表在线可取得。</p><p>公开站不运行本机核验 API、Mac 清理引擎或音乐生成服务。浏览器存储按站点隔离，收益待用户验证。来源与许可见 <a href="./source-notice.html">署名页</a>。</p></section><footer><a href="./">← 返回理解与全部展示</a></footer></main></body></html>

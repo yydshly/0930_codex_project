@@ -1,0 +1,980 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-02T21:18:34.722605+08:00",
+  "workspace": "F:\\codex_project\\0930_codex_project",
+  "method": {
+    "scope": "Current workspace catalog, project README/research/Web artifacts, conventions and catalog/build scripts.",
+    "contentSampleProjectIds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "newTemplateProjectIds": [
+      17
+    ],
+    "excludedMeasures": [
+      "daily event frequency",
+      "hours spent",
+      "thread count",
+      "commit count as time proxy",
+      "file timestamps as time proxy"
+    ],
+    "interpretation": "Cross-project workflow recurrence and artifact completeness only; not a measured ranking of daily time or productivity.",
+    "snapshotLimits": "Local files were read during this analysis. Other agents may update them later. Presence is not proof of semantic quality, browser acceptance or upstream runtime validation."
+  },
+  "metrics": {
+    "registeredProjects": 17,
+    "statusCounts": {
+      "已完成": 13,
+      "已归档": 1,
+      "研究中": 2,
+      "待研究": 1
+    },
+    "projectsWithSourceRegistration": 17,
+    "projectsWithRepo": 13,
+    "projectsWithEffectReference": 11,
+    "projectsWithReadme": 17,
+    "projectsWithResearchNotesEntry": 17,
+    "projectsWithWebReadme": 17,
+    "projectsWithWebEntry": 16,
+    "projectsWithCoverField": 15,
+    "projectsWithExistingConfiguredCover": 15,
+    "projectsWithResearchPlaceholderMarkers": 1
+  },
+  "commonWorkflow": [
+    "observe original case",
+    "verify sources and implementation",
+    "explain capability, mechanism, scenarios, value and limits",
+    "build visual or interactive research artifact",
+    "register catalog and representative image",
+    "review and save evidence"
+  ],
+  "recommendedRealScenario": {
+    "name": "工作区研究入册",
+    "input": "One actual catalogued project and its current research artifacts.",
+    "trigger": "A successful, persisted check of artifact requirements for a previously unregistered outcome version.",
+    "visualFeedback": "A project research card settles into a shelf; its project-number stamp lands; a brief optional synthesized sound plays.",
+    "durableOutcome": "An accessible research card with source, written research, demo entry, checked-at time and known validation boundaries.",
+    "deduplication": "Project ID plus outcome version fingerprint; one shelf location per project, updates replace card and keep history.",
+    "noRewardEvents": [
+      "failed check",
+      "cancel",
+      "refresh",
+      "repeated click",
+      "page view alone"
+    ],
+    "qualityBoundary": "Structural checks support artifact readiness. Semantic accuracy and browser/upstream validity require explicit evidence; registry completion state is not changed by the visual reward.",
+    "proposedAcceptance": [
+      "the outcome can be identified",
+      "source and artifact links can be opened",
+      "missing-item reasons are actionable",
+      "repeat submissions keep a single project card"
+    ]
+  },
+  "workflowEvidence": [
+    {
+      "path": "docs/CONVENTIONS.md",
+      "needle": "新增研究使用",
+      "matches": [
+        {
+          "line": 26,
+          "text": "新增研究使用 `python scripts/projects.py add`；修改清单后使用 `render`，提交前运行 `check`。CI 会检查重复编号、目录、链接格式、封面文件及首页生成内容。检查不访问上游网站，也不证明演示在线可用。"
+        }
+      ]
+    },
+    {
+      "path": "docs/CONVENTIONS.md",
+      "needle": "每个子项目",
+      "matches": [
+        {
+          "line": 32,
+          "text": "## 每个子项目的内容"
+        }
+      ]
+    },
+    {
+      "path": "scripts/projects.py",
+      "needle": "def validate",
+      "matches": [
+        {
+          "line": 32,
+          "text": "def validate(projects, root, check_files=True):"
+        }
+      ]
+    },
+    {
+      "path": "scripts/projects.py",
+      "needle": "封面不存在",
+      "matches": [
+        {
+          "line": 80,
+          "text": "                raise ValueError(f\"{number}: 封面不存在或位于项目目录之外。\")"
+        }
+      ]
+    },
+    {
+      "path": "scripts/projects.py",
+      "needle": "首页索引未同步",
+      "matches": [
+        {
+          "line": 182,
+          "text": "                raise ValueError(\"首页索引未同步，请运行 python scripts/projects.py render。\")"
+        }
+      ]
+    },
+    {
+      "path": "scripts/build_site.py",
+      "needle": "index.html",
+      "matches": [
+        {
+          "line": 20,
+          "text": "        if not (source / \"index.html\").is_file():"
+        },
+        {
+          "line": 87,
+          "text": "    (output / \"index.html\").write_text(index, encoding=\"utf-8\")"
+        }
+      ]
+    },
+    {
+      "path": "scripts/build_site.py",
+      "needle": "七个问题",
+      "matches": [
+        {
+          "line": 86,
+          "text": "<p class=\"eyebrow\">OPEN SOURCE FIELD NOTES</p><h1>GitHub 项目研究集</h1><div class=\"intro\"><p>从能力到原理，从使用场景到采用判断：把开源项目整理成可阅读、可比较、可交互的研究记录。</p><p>每项研究围绕七个问题展开：能做什么、底层怎么做、如何运行、支持什么系统、用于哪些场景、对我们有何价值、未来怎样扩展。源库链接使用原仓库名；本站演示与上游产品明确区分。</p><p>witr 是运行来源诊断工具，主要价值是整合已有系统能力、减少人工关联。已有成熟采集工具链时，可把它作为便利工具与适配样本，而不必视作新的底层技术。</p></div><h2>项目索引</h2><div class=\"table-wrap\"><table><thead><tr><th>编号</th><th>研究项目</th><th>能力、原理与使用摘要</th><th>来源 / 技术</th><th>入口</th></tr></thead><tbody>''' + ''.join(entries) + '</tbody></table></div><h2>项目介绍与引导图</h2>' + ''.join(introductions) + '<footer>引导图与网页属于独立研究材料；模拟数据不代表实机测量。各源库遵循各自许可证。</footer></body></html>'"
+        }
+      ]
+    },
+    {
+      "path": "docs/RESEARCH_ARCHIVE.md",
+      "needle": "每个 ZIP",
+      "matches": [
+        {
+          "line": 15,
+          "text": "- 每个 ZIP 内的 `__research_manifest__.json` 记录文件路径、大小、SHA-256、保存时间和当时的 Git HEAD。"
+        }
+      ]
+    },
+    {
+      "path": "projects/016-chippytea-lab/notes/research.md",
+      "needle": "本轮回答七个问题",
+      "matches": [
+        {
+          "line": 5,
+          "text": "本轮回答七个问题：能做什么、底层怎么做、如何运行、支持什么系统、适合哪些场景、对我们有何价值、后续怎样扩展。原作事实、我们新增的演示和产品假设应分别判断。"
+        }
+      ]
+    },
+    {
+      "path": "projects/017-waterfalls-lab/notes/research.md",
+      "needle": "待填写",
+      "matches": [
+        {
+          "line": 5,
+          "text": "- 日期：待填写"
+        },
+        {
+          "line": 6,
+          "text": "- 上游版本 / Commit：待填写"
+        },
+        {
+          "line": 7,
+          "text": "- 环境：待填写"
+        },
+        {
+          "line": 8,
+          "text": "- 本轮问题：待填写"
+        }
+      ]
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "projects.json",
+      "exists": true,
+      "bytes": 12337,
+      "sha256": "88d9fac557ab8771475bd42c732276abb1bef894bdc78d28e3eccd0cf3297ef1"
+    },
+    {
+      "path": "docs/CONVENTIONS.md",
+      "exists": true,
+      "bytes": 3381,
+      "sha256": "c2703de975413cda28961190b5ac47777e6d429b55dca798bb0a8b53e9a9ba6c"
+    },
+    {
+      "path": "scripts/projects.py",
+      "exists": true,
+      "bytes": 10903,
+      "sha256": "20223dd7e4f8f69234eae81b984a0188433378980840216461a65d65c228e147"
+    },
+    {
+      "path": "scripts/build_site.py",
+      "exists": true,
+      "bytes": 9039,
+      "sha256": "ada5d62d03b17c7f7db237ead3c2e94831250e5f3d35d64e9a32f1f118298f2d"
+    },
+    {
+      "path": "docs/RESEARCH_ARCHIVE.md",
+      "exists": true,
+      "bytes": 9369,
+      "sha256": "93065e6c16fa396da2a9fabefc18b0f1689effa0709108faab1330376b75c1da"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "slug": "witr",
+      "name": "witr · 运行来源诊断",
+      "status": "已完成",
+      "sourceRepo": "https://github.com/pranshuparmar/witr",
+      "effectReference": "",
+      "hasSourceRegistration": true,
+      "hasWebEntry": true,
+      "hasConfiguredCover": true,
+      "cover": {
+        "path": "projects/001-witr/assets/witr-understanding-map.png",
+        "exists": true,
+        "bytes": 2000014,
+        "sha256": "cd657fe86b38e473bd3d47456885f74ddbc9eee0c5a9d8f8fda266910be91821"
+      },
+      "researchTemplateMarkers": [],
+      "files": [
+        {
+          "path": "projects/001-witr/README.md",
+          "exists": true,
+          "bytes": 5659,
+          "sha256": "47c9ff9bee8e957374fcbc7207a46068ca5508690c8c685ae99e7a8a6b394a0d"
+        },
+        {
+          "path": "projects/001-witr/notes/research.md",
+          "exists": true,
+          "bytes": 10110,
+          "sha256": "42d5fde70517634d653b9db672a501fbd6074f6065afef772e7e9211ac21416b"
+        },
+        {
+          "path": "projects/001-witr/web/README.md",
+          "exists": true,
+          "bytes": 2023,
+          "sha256": "c5fdac29443b22725c0e5127077ce78e88b357fb6dd9ea99eb02f58d95a81a1d"
+        },
+        {
+          "path": "projects/001-witr/web/index.html",
+          "exists": true,
+          "bytes": 9791,
+          "sha256": "e79d73564f4ddd09625df8ed1c1992a995d77f25dc48351143857f5492df06a1"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "huashu-design",
+      "name": "Huashu Design · 设计能力研究",
+      "status": "已完成",
+      "sourceRepo": "https://github.com/alchaincyf/huashu-design",
+      "effectReference": "",
+      "hasSourceRegistration": true,
+      "hasWebEntry": true,
+      "hasConfiguredCover": true,
+      "cover": {
+        "path": "projects/002-huashu-design/assets/huashu-capability-map.png",
+        "exists": true,
+        "bytes": 2152109,
+        "sha256": "34d35ebcff800a3be3b1002832dd545d98070ef653fee40c06342bcee83668fa"
+      },
+      "researchTemplateMarkers": [],
+      "files": [
+        {
+          "path": "projects/002-huashu-design/README.md",
+          "exists": true,
+          "bytes": 8241,
+          "sha256": "43890351b47c6502e6fe97dfc2042c65e18f42de29ce38cb1f4b9b6a6b7e02f2"
+        },
+        {
+          "path": "projects/002-huashu-design/notes/research.md",
+          "exists": true,
+          "bytes": 13744,
+          "sha256": "eb3fa0242b4af0fd54b7194d5a4ddbbd13ad90110c957a56a45c93c61b15d726"
+        },
+        {
+          "path": "projects/002-huashu-design/web/README.md",
+          "exists": true,
+          "bytes": 3838,
+          "sha256": "b4852d5379d12fcaf5d02eed56c8e4b7fe11eeb04d37a52b86ca245acbe5c9b1"
+        },
+        {
+          "path": "projects/002-huashu-design/web/index.html",
+          "exists": true,
+          "bytes": 20199,
+          "sha256": "3e41cc51f16c1500ec3d384b402a8a4a4efffa08f3ad0f38ba903cd00006cec2"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "learn-harness-engineering",
+      "name": "Learn Harness Engineering · AI 工作流程研究",
+      "status": "已完成",
+      "sourceRepo": "https://github.com/walkinglabs/learn-harness-engineering",
+      "effectReference": "",
+      "hasSourceRegistration": true,
+      "hasWebEntry": true,
+      "hasConfiguredCover": true,
+      "cover": {
+        "path": "projects/003-learn-harness-engineering/assets/harness-capability-map.png",
+        "exists": true,
+        "bytes": 930633,
+        "sha256": "ee9fd2e891fb71bf53776a9cbee466b90fbf7b509ead7be9d1f4a3e60f118e92"
+      },
+      "researchTemplateMarkers": [],
+      "files": [
+        {
+          "path": "projects/003-learn-harness-engineering/README.md",
+          "exists": true,
+          "bytes": 7001,
+          "sha256": "5cae8f5d26cf062c566e6f20638389f648c60cb4102ffb2df0a22d61e5c8fb26"
+        },
+        {
+          "path": "projects/003-learn-harness-engineering/notes/research.md",
+          "exists": true,
+          "bytes": 7662,
+          "sha256": "e2d6970d8ab46ff40a76387cf9dcba49f8305499d4e0f0074beab661e58136c6"
+        },
+        {
+          "path": "projects/003-learn-harness-engineering/web/README.md",
+          "exists": true,
+          "bytes": 2231,
+          "sha256": "e2a601aeebd49c3f6671c8e555c4c89b74059cd2c8f011d0d59fc92300ddf271"
+        },
+        {
+          "path": "projects/003-learn-harness-engineering/web/index.html",
+          "exists": true,
+          "bytes": 136549,
+          "sha256": "983cd0e2640e68f711bb6ab6c42d7a0e9ab8984eb4fcab0dfcebaae8b06077e4"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "rhythm-drop",
+      "name": "Rhythm Drop · 音乐型声音与视听体验研究",
+      "status": "已归档",
+      "sourceRepo": "https://github.com/mrdoob/three.js",
+      "effectReference": "https://x.com/Gorden_Sun/status/2105302007896797351",
+      "hasSourceRegistration": true,
+      "hasWebEntry": true,
+      "hasConfiguredCover": true,
+      "cover": {
+        "path": "projects/004-rhythm-drop/assets/source-effect.jpg",
+        "exists": true,
+        "bytes": 15090,
+        "sha256": "276050a57934ed32a7335f531313907605ddfdc1fcebf67328ef94b137a5e7fc"
+      },
+      "researchTemplateMarkers": [],
+      "files": [
+        {
+          "path": "projects/004-rhythm-drop/README.md",
+          "exists": true,
+          "bytes": 18675,
+          "sha256": "86889e8d093e23238993038617d7fb01b03d13c0bbf52e88f9a6b8ec9eab0e51"
+        },
+        {
+          "path": "projects/004-rhythm-drop/notes/research.md",
+          "exists": true,
+          "bytes": 7410,
+          "sha256": "3ceb9d4361102b28219e547177bbe6a92299e44a19399bbae3fdffb5ff092a74"
+        },
+        {
+          "path": "projects/004-rhythm-drop/web/README.md",
+          "exists": true,
+          "bytes": 1452,
+          "sha256": "5effc8fd7929c469f80d74e154e154af36378eb51bddd3954a95bda28ab92fb2"
+        },
+        {
+          "path": "projects/004-rhythm-drop/web/index.html",
+          "exists": true,
+          "bytes": 14943,
+          "sha256": "eb43345046dbe329f7a72e2dc135acfee91c0020ddcae78bde875353960d2db7"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "plush-lab",
+      "name": "Plush Lab · 毛绒实验室",
+      "status": "已完成",
+      "sourceRepo": "https://github.com/mrdoob/three.js",
+      "effectReference": "",
+      "hasSourceRegistration": true,
+      "hasWebEntry": true,
+      "hasConfiguredCover": true,
+      "cover": {
+        "path": "projects/005-plush-lab/assets/local-studio.jpg",
+        "exists": true,
+        "bytes": 57209,
+        "sha256": "071a4bbc61ea4435d3a389f978742c72172b625093b7756f74be830ae2293fe1"
+      },
+      "researchTemplateMarkers": [],
+      "files": [
+        {
+          "path": "projects/005-plush-lab/README.md",
+          "exists": true,
+          "bytes": 68736,
+          "sha256": "bbf9d2422c5903e18ebc556bb6a55f20efde6260e01c7e4979e1ca31ec5cf75d"
+        },
+        {
+          "path": "projects/005-plush-lab/notes/research.md",
+          "exists": true,
+          "bytes": 25405,
+          "sha256": "82f4d5042d6559d78374a9dd60abaf4788687f06cffebbc34e475a6c23818727"
+        },
+        {
+          "path": "projects/005-plush-lab/web/README.md",
+          "exists": true,
+          "bytes": 1829,
+          "sha256": "236e02eb9e38fa24fe381fd78fea38759c7bd16d5b758aca14d8ff1e5ec56e19"
+        },
+        {
+          "path": "projects/005-plush-lab/web/index.html",
+          "exists": true,
+          "bytes": 24680,
+          "sha256": "d5dc1e3b7b65f66bb6f071e8c6dc6cce5fec8f5845ea63b2ce3c1485d947b726"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "ai-visual-atlas",
+      "name": "AI Visual Atlas · 视觉创作能力图谱",
+      "status": "已完成",
+      "sourceRepo": "https://github.com/yihui-dev/awesome-opus5-5-videos",
+      "effectReference": "https://x.com/NFTCPS/status/2105493719931826452",
+      "hasSourceRegistration": true,
+      "hasWebEntry": true,
+      "hasConfiguredCover": false,
+      "cover": null,
+      "researchTemplateMarkers": [],
+      "files": [
+        {
+          "path": "projects/006-ai-visual-atlas/README.md",
+          "exists": true,
+          "bytes": 7806,
+          "sha256": "5a8bae5a49415a7cc190b3dc4fcbb160fa84ecbf23796c9c8adfb6b9058f11ad"
+        },
+        {
+          "path": "projects/006-ai-visual-atlas/notes/research.md",
+          "exists": true,
+          "bytes": 2934,
+          "sha256": "8f46a6ddbd16c2927b8ed9201671e7a58df72f8c9904d1e24175f4b0304c7a13"
+        },
+        {
+          "path": "projects/006-ai-visual-atlas/web/README.md",
+          "exists": true,
+          "bytes": 282,
+          "sha256": "c169790bb0d649fe471b5482b65a8d540ff3b773aa95793ad3bd7470ff80ccc9"
+        },
+        {
+          "path": "projects/006-ai-visual-atlas/web/index.html",
+          "exists": true,
+          "bytes": 8672,
+          "sha256": "fc95e29035c51caaf93a7453729720c456fa4d074bdb5efcfbc3a8cda6d0ab49"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "koi-scene-lab",
+      "name": "Koi Scene Lab · 庭院效果与实景构造",
+      "status": "研究中",
+      "sourceRepo": "https://github.com/souranyp-stack/koi-pond-garden",
+      "effectReference": "",
+      "hasSourceRegistration": true,
+      "hasWebEntry": true,
+      "hasConfiguredCover": true,
+      "cover": {
+        "path": "projects/007-koi-scene-lab/assets/scene-v2-final.png",
+        "exists": true,
+        "bytes": 1448313,
+        "sha256": "a4fddbb742f086d8409d7fd8f4a9b31a3b19e1fa1ff4bebb895b211d14aa402e"
+      },
+      "researchTemplateMarkers": [],
+      "files": [
+        {
+          "path": "projects/007-koi-scene-lab/README.md",
+          "exists": true,
+          "bytes": 35340,
+          "sha256": "e969011e6a669372a8c95636de74b324fbcedfc2e820175e9618273029c124e2"
+        },
+        {
+          "path": "projects/007-koi-scene-lab/notes/research.md",
+          "exists": true,
+          "bytes": 32399,
+          "sha256": "0e098b6270b2519dd984e377a615b13ce5bbe8a734c95c30a82a619a1a7e62c1"
+        },
+        {
+          "path": "projects/007-koi-scene-lab/web/README.md",
+          "exists": true,
+          "bytes": 775,
+          "sha256": "8ba2ca5b2f70c33555734390b3e2c7ae9eea478c26b2cd0447c07bdbcf06fefc"
+        },
+        {
+          "path": "projects/007-koi-scene-lab/web/index.html",
+          "exists": true,
+          "bytes": 38146,
+          "sha256": "836de66ba5fb36bc44282a35b1138ff5005100fc15f8b79138e2cc398b458f9a"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "cellmotion",
+      "name": "CellMotion · 可编辑动效研究",
+      "status": "已完成",
+      "sourceRepo": "https://github.com/opc8838-hub/font-animation",
+      "effectReference": "",
+      "hasSourceRegistration": true,
+      "hasWebEntry": true,
+      "hasConfiguredCover": true,
+      "cover": {
+        "path": "projects/008-cellmotion/assets/overview.png",
+        "exists": true,
+        "bytes": 167795,
+        "sha256": "c3bbec5def1d40ddcda49506cfefbe63c2f24bcdbae2400ec585c61ac1427b19"
+      },
+      "researchTemplateMarkers": [],
+      "files": [
+        {
+          "path": "projects/008-cellmotion/README.md",
+          "exists": true,
+          "bytes": 10038,
+          "sha256": "a592cca1775514e5eeec456bc1dbb9a0cd7da46d1213340f45b1488be737a5ff"
+        },
+        {
+          "path": "projects/008-cellmotion/notes/research.md",
+          "exists": true,
+          "bytes": 7210,
+          "sha256": "ba94f78f0170366e1136f605ffd38d895d785c14f0cde7a872e62585e3f267a8"
+        },
+        {
+          "path": "projects/008-cellmotion/web/README.md",
+          "exists": true,
+          "bytes": 1887,
+          "sha256": "04144dd8959d4dd9e83b1b543fff3a01243d25716e013185a99d9b9d7363a186"
+        },
+        {
+          "path": "projects/008-cellmotion/web/index.html",
+          "exists": true,
+          "bytes": 17003,
+          "sha256": "de0c4029e403773d7ca26fb67d6e39398130dd2b6d586451d4ed9975aed0353d"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "slug": "sprite-destruction-lab",
+      "name": "Sprite Destruction Lab · 网页破坏交互研究",
+      "status": "已完成",
+      "sourceRepo": "https://github.com/liabru/matter-js",
+      "effectReference": "https://destroy.spritefusion.com/",
+      "hasSourceRegistration": true,
+      "hasWebEntry": true,
+      "hasConfiguredCover": true,
+      "cover": {
+        "path": "projects/009-sprite-destruction-lab/assets/source-effect.png",
+        "exists": true,
+        "bytes": 106063,
+        "sha256": "85c34607bba6baa5a4e6c8c41618e8c5c4bd4fd415d79c3fda0d027e966f2181"
+      },
+      "researchTemplateMarkers": [],
+      "files": [
+        {
+          "path": "projects/009-sprite-destruction-lab/README.md",
+          "exists": true,
+          "bytes": 14023,
+          "sha256": "af077ecf4bfbe176db27b4fda81d43f26a3d80b50204c39e0003cc114d9aa300"
+        },
+        {
+          "path": "projects/009-sprite-destruction-lab/notes/research.md",
+          "exists": true,
+          "bytes": 3521,
+          "sha256": "cd07b5f486a84582dd79f548f74cc4659046ec6fabbe1511ab7432ceca515c35"
+        },
+        {
+          "path": "projects/009-sprite-destruction-lab/web/README.md",
+          "exists": true,
+          "bytes": 2526,
+          "sha256": "fdfd18d3dbc879997319129102c1c93e388503ea65bb5ba5fcf89255a024824b"
+        },
+        {
+          "path": "projects/009-sprite-destruction-lab/web/index.html",
+          "exists": true,
+          "bytes": 12070,
+          "sha256": "6bc4a90fc02de6ecb161647aa64b708fdf0a64b45b974858118a3050dc390e69"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "slug": "dumpling-style-lab",
+      "name": "Dumpling Style Lab · 小世界的新故事",
+      "status": "已完成",
+      "sourceRepo": "",
+      "effectReference": "https://dumpling-dell.pages.dev/",
+      "hasSourceRegistration": true,
+      "hasWebEntry": true,
+      "hasConfiguredCover": true,
+      "cover": {
+        "path": "projects/010-dumpling-style-lab/assets/original-world.png",
+        "exists": true,
+        "bytes": 27442,
+        "sha256": "072fdaf2202b64aa653d5281cf342543b469ade5112c050a85999333d30074d5"
+      },
+      "researchTemplateMarkers": [],
+      "files": [
+        {
+          "path": "projects/010-dumpling-style-lab/README.md",
+          "exists": true,
+          "bytes": 14128,
+          "sha256": "5645d3783fff2e74b671fac0a507485bf712313cbe1818620822391d4f6d4701"
+        },
+        {
+          "path": "projects/010-dumpling-style-lab/notes/research.md",
+          "exists": true,
+          "bytes": 10431,
+          "sha256": "8308c56711f742f7513eb4de4d32779e7c764dba31024b835cdf45d67b2c937b"
+        },
+        {
+          "path": "projects/010-dumpling-style-lab/web/README.md",
+          "exists": true,
+          "bytes": 8970,
+          "sha256": "2e02fd67c58b52f8ecb8add47fc345af0fce2a1109721b12df05b8b149f8557c"
+        },
+        {
+          "path": "projects/010-dumpling-style-lab/web/index.html",
+          "exists": true,
+          "bytes": 21923,
+          "sha256": "f79d6d11a2451dd97b702733fd7fa0d83b01127bae49067d63215ac651c5e877"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "slug": "combination-soup-studio",
+      "name": "Combination Soup Studio · 交互展示与业务价值",
+      "status": "已完成",
+      "sourceRepo": "",
+      "effectReference": "https://combinationsoupstudio.com.au/",
+      "hasSourceRegistration": true,
+      "hasWebEntry": true,
+      "hasConfiguredCover": true,
+      "cover": {
+        "path": "projects/011-combination-soup-studio/assets/scene-polish-v8-gallery.png",
+        "exists": true,
+        "bytes": 1911210,
+        "sha256": "031217322896f2ce1e4467e50777134ea1f294fb6bbc331e52251e0713efb8f2"
+      },
+      "researchTemplateMarkers": [],
+      "files": [
+        {
+          "path": "projects/011-combination-soup-studio/README.md",
+          "exists": true,
+          "bytes": 22442,
+          "sha256": "4a45e5c75db8f3342d47115ee218da5198af3600619403abbd6cddc5ae43695c"
+        },
+        {
+          "path": "projects/011-combination-soup-studio/notes/research.md",
+          "exists": true,
+          "bytes": 3687,
+          "sha256": "25c55d5ff1cb6af2394d2efd177776faa8be27ac9474e2f3892c629293a90b9c"
+        },
+        {
+          "path": "projects/011-combination-soup-studio/web/README.md",
+          "exists": true,
+          "bytes": 11551,
+          "sha256": "2fd4cf21a8c2e18162307e432538f87022a5be77b9ba42de056f943607c20543"
+        },
+        {
+          "path": "projects/011-combination-soup-studio/web/index.html",
+          "exists": true,
+          "bytes": 36457,
+          "sha256": "8fea7e63430e78dd3625099ec84c555fa22081c45899b9ab4e8b447dcf67f5b1"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "slug": "black-hole-lab",
+      "name": "Black Hole Lab · 黑洞形成与现象实验室",
+      "status": "已完成",
+      "sourceRepo": "",
+      "effectReference": "https://www.reddit.com/r/SoloDevelopment/comments/1wr6jr4/my_black_hole_shader_for_my_game/",
+      "hasSourceRegistration": true,
+      "hasWebEntry": true,
+      "hasConfiguredCover": true,
+      "cover": {
+        "path": "projects/012-black-hole-lab/assets/observer-result.png",
+        "exists": true,
+        "bytes": 515693,
+        "sha256": "9511d04e85a80cd3f7024b40866252218e51b7630918be198413f10d18d300ff"
+      },
+      "researchTemplateMarkers": [],
+      "files": [
+        {
+          "path": "projects/012-black-hole-lab/README.md",
+          "exists": true,
+          "bytes": 6220,
+          "sha256": "8f790bb04baa1ce8731c788c1a173e3410cc056108c8cda378eb00f7580dedbd"
+        },
+        {
+          "path": "projects/012-black-hole-lab/notes/research.md",
+          "exists": true,
+          "bytes": 3045,
+          "sha256": "928d61e34ef64279df2e997926b8d4a9a96c2bf7a156c3ea4fd2cd00e8cd0065"
+        },
+        {
+          "path": "projects/012-black-hole-lab/web/README.md",
+          "exists": true,
+          "bytes": 2764,
+          "sha256": "15ff1e12cf8d05b682cd4390cfed628deae426027cdcb85d25cf8d492f7bbd70"
+        },
+        {
+          "path": "projects/012-black-hole-lab/web/index.html",
+          "exists": true,
+          "bytes": 31164,
+          "sha256": "3a62355b2df08fa3f30b36803c65265d915b01a72960b85f5c3df86aa19945d6"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "slug": "insightface-retrieval",
+      "name": "InsightFace · 人脸与视频截图检索理解",
+      "status": "已完成",
+      "sourceRepo": "https://github.com/deepinsight/insightface",
+      "effectReference": "https://avscan.cc/",
+      "hasSourceRegistration": true,
+      "hasWebEntry": true,
+      "hasConfiguredCover": true,
+      "cover": {
+        "path": "projects/013-insightface-retrieval/assets/understanding-map.png",
+        "exists": true,
+        "bytes": 1122333,
+        "sha256": "791356db37e49495938f32bc80efe785b13016f24050a59191aeb110e6bd02d6"
+      },
+      "researchTemplateMarkers": [],
+      "files": [
+        {
+          "path": "projects/013-insightface-retrieval/README.md",
+          "exists": true,
+          "bytes": 10966,
+          "sha256": "57779ebb7117b3d4e669c81f2fab2a8663f7d718773e105927176f911d447105"
+        },
+        {
+          "path": "projects/013-insightface-retrieval/notes/research.md",
+          "exists": true,
+          "bytes": 2069,
+          "sha256": "989d2703d9cac759a0b366e3023b877e6fe8c10d0091c3727ba822b50bc4c03f"
+        },
+        {
+          "path": "projects/013-insightface-retrieval/web/README.md",
+          "exists": true,
+          "bytes": 768,
+          "sha256": "3f09eb50223a8d922bc3368fda89a34b3bcfa07c83e54d039cd31c05e11d3c92"
+        },
+        {
+          "path": "projects/013-insightface-retrieval/web/index.html",
+          "exists": true,
+          "bytes": 2786,
+          "sha256": "23e8a101271dc06aedb2e94105153013eb88d89ac5899a62848d3cfd6a4e901b"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "slug": "tanstarter-foundation",
+      "name": "TanStarter · 产品底座与自建判断",
+      "status": "已完成",
+      "sourceRepo": "https://github.com/MkFastHQ/tanstarter-cli",
+      "effectReference": "https://x.com/yihui_indie/status/2105839069200777304",
+      "hasSourceRegistration": true,
+      "hasWebEntry": true,
+      "hasConfiguredCover": true,
+      "cover": {
+        "path": "projects/014-tanstarter-foundation/assets/understanding-map.png",
+        "exists": true,
+        "bytes": 1000179,
+        "sha256": "4f638b24a0f177d43e4371b606031aa5f908adc25dddb47eb3404795976509b2"
+      },
+      "researchTemplateMarkers": [],
+      "files": [
+        {
+          "path": "projects/014-tanstarter-foundation/README.md",
+          "exists": true,
+          "bytes": 2021,
+          "sha256": "504acf96dabca9bb14463854ff129e674455e8e40481b47dace797e55b82c175"
+        },
+        {
+          "path": "projects/014-tanstarter-foundation/notes/research.md",
+          "exists": true,
+          "bytes": 4493,
+          "sha256": "c76e2c592e5ff7d85578178b7021b2c01d81484d6ca80854b6d9530195866f70"
+        },
+        {
+          "path": "projects/014-tanstarter-foundation/web/README.md",
+          "exists": true,
+          "bytes": 552,
+          "sha256": "a8e41691b7381eb0f05327ae040d9e0e24a46a851185ffe139a351dce0d86091"
+        },
+        {
+          "path": "projects/014-tanstarter-foundation/web/index.html",
+          "exists": true,
+          "bytes": 2475,
+          "sha256": "576d437038fc5442bead05d4e4c15de11a1a004b284930796217ff3736d71d92"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "slug": "ai-creative-products",
+      "name": "AI Creative Products · 十案例与产品机会",
+      "status": "已完成",
+      "sourceRepo": "",
+      "effectReference": "https://x.com/minchoi/status/2105685231298630009",
+      "hasSourceRegistration": true,
+      "hasWebEntry": true,
+      "hasConfiguredCover": true,
+      "cover": {
+        "path": "projects/015-ai-creative-products/assets/overview.png",
+        "exists": true,
+        "bytes": 398872,
+        "sha256": "a22da6fa03b79c0225401186aef5a77b7a0b27ca0d9c5fbdea5ab836055a5d31"
+      },
+      "researchTemplateMarkers": [],
+      "files": [
+        {
+          "path": "projects/015-ai-creative-products/README.md",
+          "exists": true,
+          "bytes": 6981,
+          "sha256": "882a207238d3f815cdae797d5bd5731c7eebf844155c5fa704b4ad0d4e24642f"
+        },
+        {
+          "path": "projects/015-ai-creative-products/notes/research.md",
+          "exists": true,
+          "bytes": 2656,
+          "sha256": "735c9106792c5ae3bcb9968f5cc8063def091d94355d31c16d8a08840c36ee68"
+        },
+        {
+          "path": "projects/015-ai-creative-products/web/README.md",
+          "exists": true,
+          "bytes": 1351,
+          "sha256": "3a05a8902a421e15ac8977b30e24be2276631a703dac360fcf1a2a0895f49535"
+        },
+        {
+          "path": "projects/015-ai-creative-products/web/index.html",
+          "exists": true,
+          "bytes": 11178,
+          "sha256": "e1fcc83b6fcdad62350c885a632186d722cb5b3aa450273b4173bcbfb5c136b4"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "slug": "chippytea-lab",
+      "name": "Chippytea Lab · 能力、手绘风格与成果反馈",
+      "status": "研究中",
+      "sourceRepo": "https://github.com/richiemcilroy/chippytea",
+      "effectReference": "https://www.chippytea.com/",
+      "hasSourceRegistration": true,
+      "hasWebEntry": true,
+      "hasConfiguredCover": true,
+      "cover": {
+        "path": "projects/016-chippytea-lab/assets/overview.jpg",
+        "exists": true,
+        "bytes": 51198,
+        "sha256": "7cb4d50ec84f1f88336a3279baeac53b314c23934123d84f2a5657e6d3fdec65"
+      },
+      "researchTemplateMarkers": [],
+      "files": [
+        {
+          "path": "projects/016-chippytea-lab/README.md",
+          "exists": true,
+          "bytes": 11467,
+          "sha256": "6c30b728883899215023445a872c33a664abd28a0860ca38ef40c037d93259ac"
+        },
+        {
+          "path": "projects/016-chippytea-lab/notes/research.md",
+          "exists": true,
+          "bytes": 16058,
+          "sha256": "a43bdf5927d9f8f38538b26cfb011da0c9d629f8fd590fd17641ed9e6fbfc235"
+        },
+        {
+          "path": "projects/016-chippytea-lab/web/README.md",
+          "exists": true,
+          "bytes": 4922,
+          "sha256": "004999f607ff2e73bffff0e8737b15f1359af3efe996ae799ab144b0eff1b5fb"
+        },
+        {
+          "path": "projects/016-chippytea-lab/web/index.html",
+          "exists": true,
+          "bytes": 715,
+          "sha256": "c4d67290d697182961eb0bd67f026b25892eb072853fe05a91e5413b3949472e"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "slug": "waterfalls-lab",
+      "name": "Waterfalls Lab · 实时瀑布与流体造景",
+      "status": "待研究",
+      "sourceRepo": "https://github.com/electronicarts/pbmpm",
+      "effectReference": "https://x.com/mogmek/status/2105966008720900321",
+      "hasSourceRegistration": true,
+      "hasWebEntry": false,
+      "hasConfiguredCover": false,
+      "cover": null,
+      "researchTemplateMarkers": [
+        "- 日期：待填写",
+        "- 上游版本 / Commit：待填写",
+        "- 环境：待填写",
+        "- 本轮问题：待填写"
+      ],
+      "files": [
+        {
+          "path": "projects/017-waterfalls-lab/README.md",
+          "exists": true,
+          "bytes": 1963,
+          "sha256": "e68ab362b4e670f29a66608a4c19c363351c220b674f7db7405139afd77fe801"
+        },
+        {
+          "path": "projects/017-waterfalls-lab/notes/research.md",
+          "exists": true,
+          "bytes": 487,
+          "sha256": "d7f20c22530793856c89bcb23d720b0229d52dd41693c828d8fb28a5134bb0e8"
+        },
+        {
+          "path": "projects/017-waterfalls-lab/web/README.md",
+          "exists": true,
+          "bytes": 552,
+          "sha256": "a8e41691b7381eb0f05327ae040d9e0e24a46a851185ffe139a351dce0d86091"
+        },
+        {
+          "path": "projects/017-waterfalls-lab/web/index.html",
+          "exists": false
+        }
+      ]
+    }
+  ]
+}

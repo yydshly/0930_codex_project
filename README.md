@@ -34,6 +34,7 @@
 | 012 | [Black Hole Lab · 黑洞形成与现象实验室](projects/012-black-hole-lab/README.md) | **定位：** 从游戏黑洞 Shader 出发的独立科学演示与认知研究<br>**效果：** 吸积盘、光捕获、弯光、运动与重力频移，配合 10 章 / 30 段、约 13 分 3 秒 MiniMax 中文旁白<br>**原理：** WebGL 逐像素光路积分、无自旋外部模型、薄盘与机制图解<br>**理解：** 形成条件、事件视界、时空、固有时与衰老，附事件坐标、引力时钟和光钟交互实验，区分真实年龄差和光学影像变慢<br>**场景：** 科普、展览与游戏<br>**价值：** 用可操作对照连接现象和原因，保留完整讨论、原有总览图、依据与记录<br>**扩展：** 形成分支、自旋、真实环境、精度校验与引擎接入<br>**边界：** 原作源码未确认，内部、完整恒星坍缩及人体旅行未模拟，1:10 年龄比为理论例子。 | 已完成 | [VOLDR\_dev · 黑洞 Shader 展示](https://www.reddit.com/r/SoloDevelopment/comments/1wr6jr4/my_black_hole_shader_for_my_game/)<br>公开仓库未确认 | [在线演示](https://yydshly.github.io/0930_codex_project/projects/012-black-hole-lab/) |
 | 013 | [InsightFace · 人脸与视频截图检索理解](projects/013-insightface-retrieval/README.md) | **定位：** 人脸身份检索与视频截图出处查找的完整理解<br>**能力：** InsightFace 检测、对齐、身份向量、训练与评测<br>**原理：** ArcFace 等方法训练网络，目标库保存特征与来源，索引排序后校准阈值并拒识<br>**展示：** 原有全景图、全文说明、三任务路线及人工向量排序示意，14 组来源与记录<br>**场景：** 图库找人、素材归组、已收录视频画面定位与内容检索<br>**价值：** 复用现成模型与检索技术，减少人工翻找，判断个人原型可行性<br>**参考：** AVScan、SSCD、Faiss、trace.moe、TwelveLabs 的分工<br>**扩展：** 代表性样本验证、质量过滤、索引更新与候选复核<br>**边界：** 识人不等于找出处，公开成绩不等于实际效果，未确认 AVScan 使用 InsightFace；未做真实识别，官方权重非商业研究条件需另核。 | 已完成 | [AVScan · 需求参考，后台实现未确认](https://avscan.cc/)<br>能力参考：[deepinsight/insightface](https://github.com/deepinsight/insightface)<br>后台关联未确认 | [在线演示](https://yydshly.github.io/0930_codex_project/projects/013-insightface-retrieval/) |
 | 015 | [AI Creative Products · 十项创意效果库](projects/015-ai-creative-products/README.md) | **定位：** 以十个 Opus 社区案例为参考的原创浏览器效果库<br>**效果：** 空间作品集、任务街区、观点叙事、发布动效、机房生存、角色钢琴、研究集市、软胶角色、营地折射水体与车球挑战<br>**原理：** 1 个 CSS、2 个 Canvas、7 个 Three.js 原型，时间表、任务状态与物理规则分别驱动实际反馈，Web Audio 同步音乐<br>**交付：** 分例支持离线 HTML、无声或配乐 WebM、WAV、PNG、脚本及体验 JSON，附 Python / Blender 配方<br>**展示：** 十项真实效果、原作对照、独立试玩、完整理解、来源与原有总览图<br>**价值：** 展示已有研究、制作发布内容、验证产品体验，复用内容配置、场景与交付流程<br>**扩展：** 展厅、训练、课程与品牌影片、角色组件、环境导览和操控活动<br>**边界：** 05 / 07 / 09 / 10 为 v16，其他六项为 v15，无模型生成后台，Blender 新造型与商业成效未验证，物理和资产仍有限。 | 已完成 | [Min Choi · 十个 Opus 创作案例合集](https://x.com/minchoi/status/2105685231298630009)<br>十位原作者分别署名；十项原型由我们独立实现 | [在线演示](https://yydshly.github.io/0930_codex_project/projects/015-ai-creative-products/) |
+| 016 | [Chippytea Lab · 功能与声画编排研究](projects/016-chippytea-lab/README.md) | **定位：** Mac 清理应用及手绘互动官网的完整研究<br>**能力：** 真实功能结果与角色、动作、音乐时间及频谱、用户参与和世界积累共同编排<br>**展示：** 原有理解总览图、三个 32 秒原创小世界、原作对照、纸墨实验、研究回执与全文档案<br>**原理：** 共享视觉规则和音乐时间，功能事件触发独立动作，浏览器状态留下记忆<br>**价值：** 让结果可感知，形成原创产品性格并复用声画表达<br>**扩展：** 知识收藏、任务习惯与专注、素材整理、创作展示、互动课程和音乐叙事编辑器<br>**边界：** 花园与影子已有 MiniMax 配乐，月亮待生成；公开回执只读，Mac 引擎、真实业务集成及收益未验证。 | 已完成 | [richiemcilroy/chippytea](https://github.com/richiemcilroy/chippytea) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/) |
 
 <!-- PROJECT_INDEX:END -->
 
@@ -267,6 +268,22 @@
 ![AI Creative Products · 十项创意效果库 项目引导图](projects/015-ai-creative-products/assets/library-overview/creative-products-capability-overview-v16.png)
 
 [研究详情](projects/015-ai-creative-products/README.md) · [在线演示](https://yydshly.github.io/0930_codex_project/projects/015-ai-creative-products/)
+
+### 016 · Chippytea Lab · 功能与声画编排研究
+
+- **定位：** Mac 清理应用及手绘互动官网的完整研究
+- **能力：** 真实功能结果与角色、动作、音乐时间及频谱、用户参与和世界积累共同编排
+- **展示：** 原有理解总览图、三个 32 秒原创小世界、原作对照、纸墨实验、研究回执与全文档案
+- **原理：** 共享视觉规则和音乐时间，功能事件触发独立动作，浏览器状态留下记忆
+- **价值：** 让结果可感知，形成原创产品性格并复用声画表达
+- **扩展：** 知识收藏、任务习惯与专注、素材整理、创作展示、互动课程和音乐叙事编辑器
+- **边界：** 花园与影子已有 MiniMax 配乐，月亮待生成；公开回执只读，Mac 引擎、真实业务集成及收益未验证。
+
+源库：[richiemcilroy/chippytea](https://github.com/richiemcilroy/chippytea)。先阅读下方引导图，再进入研究文档与交互演示。
+
+![Chippytea Lab · 功能与声画编排研究 项目引导图](projects/016-chippytea-lab/assets/chippytea-understanding-map-v1.png)
+
+[研究详情](projects/016-chippytea-lab/README.md) · [在线演示](https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/)
 
 <!-- PROJECT_PREVIEWS:END -->
 

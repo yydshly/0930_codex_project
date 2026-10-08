@@ -1,0 +1,22 @@
+{
+  "provider": "MiniMax",
+  "model": "music-2.6",
+  "title": "研究成册 / Research to Folio",
+  "documentation": "https://platform.minimax.cn/docs/api-reference/music-generation",
+  "status": "rejected",
+  "startedAt": "2026-10-02T14:52:52.539073+00:00",
+  "endpoint": "https://api.minimax.cn/v1/music_generation",
+  "request": {
+    "model": "music-2.6",
+    "prompt": "Original instrumental miniature for a hand-drawn research notebook coming to life. Warm tactile acoustic chamber pop, felt piano, pizzicato strings, finger-picked acoustic guitar, muted marimba, brushed percussion and subtle paper-like rhythmic textures. Curious, intelligent, playful, then quietly triumphant; handmade ink-on-cream-paper atmosphere. No vocals, no spoken words, no choir. A memorable gentle melody with clear rhythmic accents at about 100 BPM. Aim for a concise 24-second piece with four 6-second movements: first scattered curious notes, second interweaving instruments and rising motion, third a bright flowing melodic lift, fourth a satisfying warm final chord and a clean soft decay. Start immediately, no long empty intro. Suitable for watching research clues connect, paper notes fold and bind into a finished notebook. Natural acoustic dynamics, polished stereo production, avoid abrasive synths and heavy bass.",
+    "is_instrumental": true,
+    "stream": false,
+    "output_format": "hex",
+    "audio_setting": {
+      "sample_rate": 44100,
+      "bitrate": 256000,
+      "format": "mp3"
+    }
+  },
+  "error": "HTTP 410: {\"base_resp\":{\"status_code\":2153,\"status_msg\":\"This Music API is no longer available to new users. Existing paying customers can continue to use the service. For new access, please try MiniMax Audio (https://www.minimax.io/audio) "
+}

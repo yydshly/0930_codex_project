@@ -1,0 +1,42 @@
+{
+  "kind": "offline-real-audio-fft-analysis",
+  "createdAt": "2026-10-03T01:47:42.854891+00:00",
+  "source": "web/audio/shadow-minimax.mp3",
+  "sourceSha256": "7d2a3a179725cd7aeee9baa22cfbd45f35854666b53f0b0faf05cde2e292a41a",
+  "output": "assets/worlds-v10-qa/shadow-audio-spectrum.json",
+  "outputSha256": "9cc4b62b86e1147420e31d96d58e0d0be0ff9b468bf6a6ddcb674171981a69f2",
+  "tool": "tooling/analyze-world-audio.py",
+  "toolSha256": "9e0bc649096d9854deb1255df60e1006a38b000dd40cdbb10d0780136d38a827",
+  "decodedSampleFrames": 1411200,
+  "decodedDurationSeconds": 32.0,
+  "sampleCount": 384,
+  "generationReceipt": "notes/world-music-generation-v9.json",
+  "paddedTailCheckedFromSeconds": 30,
+  "signalStatistics": {
+    "energy": {
+      "min": 0.0,
+      "max": 0.43252496,
+      "nonzeroSampleCount": 359
+    },
+    "low": {
+      "min": 0.0,
+      "max": 0.7390972,
+      "nonzeroSampleCount": 352
+    },
+    "high": {
+      "min": 0.0,
+      "max": 0.43817605,
+      "nonzeroSampleCount": 343
+    }
+  },
+  "checks": {
+    "sourceHashMatchesGenerationReceipt": true,
+    "decodedDuration32Seconds": true,
+    "sampleCountMatchesDuration": true,
+    "signalsWithinUnitInterval": true,
+    "allBandsHaveMeasuredEnergy": true,
+    "paddedTailAllZero": true
+  },
+  "status": "passed",
+  "limitations": "FFT approximation from real MP3 PCM; browser output, listening quality, AnalyserNode equivalence and animation synchronization were not verified."
+}

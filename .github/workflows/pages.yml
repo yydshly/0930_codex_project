@@ -92,6 +92,12 @@ jobs:
           node --check projects/012-black-hole-lab/web/model.js
           node --check projects/012-black-hole-lab/web/shaders.js
           node projects/012-black-hole-lab/tooling/verify-model.cjs
+      - name: Validate and build Chippytea Lab
+        run: |
+          npm ci --prefix projects/016-chippytea-lab/tooling
+          npm run build --prefix projects/016-chippytea-lab/tooling
+          node projects/016-chippytea-lab/tooling/verify-world-host.mjs
+          python projects/016-chippytea-lab/tooling/build-research.py
       - name: Build all static demos
         run: |
           python -c "from pathlib import Path; import subprocess; [subprocess.run(['node', '--check', str(p)], check=True) for p in Path('projects/015-ai-creative-products/web').rglob('*') if p.suffix in {'.js', '.mjs'}]"

@@ -1,0 +1,500 @@
+{
+  "date": "2026-10-03",
+  "version": "worlds7",
+  "scope": "32-second worlds: partners, finale environments and story dialogue",
+  "visualStatus": "blocked",
+  "offlineRendererStatus": "passed",
+  "browserStatus": "blocked",
+  "browserReason": "CUA kernel startup failed: Windows sandbox helper setup refresh error",
+  "musicStatus": "pending",
+  "musicReason": "No MiniMax-generated files; no new music request",
+  "durationSeconds": 32,
+  "chapterSeconds": 8,
+  "rasterAssets": 26,
+  "newAssets": 6,
+  "offlineFrames": 44,
+  "behaviorProbes": 30,
+  "sourceSha256": "2eb4dad9ad46f3cc48a689a3eb39afb41ffc7d775870dcae17ebd3e36539eb7d",
+  "assetSetSha256": "a545ba31c3fd65ad32b5c047327992acd4ff30c4d51bc00cf45cd309eadb007a",
+  "sourceMatches": true,
+  "checks": {
+    "researchReceipts": 6,
+    "staticSiteBuild": "passed: 17 projects",
+    "entryHttp": 200,
+    "frontendBuild": "passed",
+    "newAssetHttp": [
+      {
+        "asset": "gravity/background-finale.png",
+        "status": 200
+      },
+      {
+        "asset": "gravity/wind-rest.png",
+        "status": 200
+      },
+      {
+        "asset": "moon/background-finale.png",
+        "status": 200
+      },
+      {
+        "asset": "moon/tailor-proud.png",
+        "status": 200
+      },
+      {
+        "asset": "shadow/background-finale.png",
+        "status": 200
+      },
+      {
+        "asset": "shadow/light-brave.png",
+        "status": 200
+      }
+    ],
+    "cacheVersion7": true
+  },
+  "offlineChecks": [
+    {
+      "label": "action-pose-visible",
+      "scene": "gravity",
+      "asset": "stone-awake",
+      "passed": true,
+      "evidence": [
+        "gravity-desktop-act-2-offline.png",
+        "gravity-desktop-act-3-offline.png",
+        "gravity-desktop-transition-15s-offline.png",
+        "gravity-desktop-transition-26s-offline.png",
+        "gravity-mobile-act-2-offline.png",
+        "gravity-mobile-act-3-offline.png",
+        "gravity-mobile-transition-15s-offline.png",
+        "gravity-mobile-transition-26s-offline.png"
+      ]
+    },
+    {
+      "label": "action-pose-visible",
+      "scene": "gravity",
+      "asset": "wind-gust",
+      "passed": true,
+      "evidence": [
+        "gravity-desktop-act-2-offline.png",
+        "gravity-desktop-transition-15s-offline.png",
+        "gravity-mobile-act-2-offline.png",
+        "gravity-mobile-transition-15s-offline.png"
+      ]
+    },
+    {
+      "label": "finale-background-visible",
+      "scene": "gravity",
+      "passed": true,
+      "evidence": [
+        {
+          "file": "gravity-desktop-act-4-offline.png",
+          "visibleBackgrounds": [
+            "background",
+            "background-finale"
+          ]
+        },
+        {
+          "file": "gravity-mobile-act-4-offline.png",
+          "visibleBackgrounds": [
+            "background",
+            "background-finale"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "finale-partner-visible",
+      "scene": "gravity",
+      "asset": "wind-rest",
+      "passed": true,
+      "evidence": [
+        {
+          "file": "gravity-desktop-act-4-offline.png",
+          "partnerPose": "wind-rest",
+          "visibleAssets": [
+            "stone",
+            "wind-rest",
+            "tree",
+            "seed"
+          ]
+        },
+        {
+          "file": "gravity-mobile-act-4-offline.png",
+          "partnerPose": "wind-rest",
+          "visibleAssets": [
+            "stone",
+            "wind-rest",
+            "tree",
+            "seed"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "saved-count-changes-finale",
+      "scene": "gravity",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "finale-count-0",
+          "pixelSha256": "389b473c62156a9e7ad36ec5148a3ef552e9716bfe1aff8ae7e99664dc9ec190",
+          "partnerPose": "wind-rest",
+          "visibleAssets": [
+            "stone",
+            "wind-rest",
+            "tree",
+            "seed"
+          ]
+        },
+        {
+          "label": "finale-count-8",
+          "pixelSha256": "ae8d910e85942862f422919da2480d71f4f63329638e2c5df90155e43135686d",
+          "partnerPose": "wind-rest",
+          "visibleAssets": [
+            "stone",
+            "wind-rest",
+            "tree",
+            "seed"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "partner-reaction-evolves",
+      "scene": "gravity",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "partner-reaction-age-005",
+          "pixelSha256": "9d3153e470cf0630a1b9f921c9ba7ab978b41cd85f6817ac164c74458586ed41",
+          "partnerPose": "wind-gust",
+          "visibleAssets": [
+            "stone",
+            "wind-gust",
+            "seed"
+          ]
+        },
+        {
+          "label": "partner-reaction-age-080",
+          "pixelSha256": "4bf692a10a7fa08e12a7867b50a1be6306ddf8609f47f0a358004652fb2e7544",
+          "partnerPose": "wind",
+          "visibleAssets": [
+            "stone-awake",
+            "wind",
+            "seed"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "action-pose-visible",
+      "scene": "moon",
+      "asset": "tailor-chase",
+      "passed": true,
+      "evidence": [
+        "moon-desktop-act-2-offline.png",
+        "moon-desktop-transition-15s-offline.png",
+        "moon-mobile-act-2-offline.png",
+        "moon-mobile-transition-15s-offline.png"
+      ]
+    },
+    {
+      "label": "action-pose-visible",
+      "scene": "moon",
+      "asset": "moon-hiccup",
+      "passed": true,
+      "evidence": [
+        "moon-desktop-act-2-offline.png",
+        "moon-desktop-transition-15s-offline.png",
+        "moon-mobile-act-2-offline.png",
+        "moon-mobile-transition-15s-offline.png"
+      ]
+    },
+    {
+      "label": "finale-background-visible",
+      "scene": "moon",
+      "passed": true,
+      "evidence": [
+        {
+          "file": "moon-desktop-act-4-offline.png",
+          "visibleBackgrounds": [
+            "background",
+            "background-finale"
+          ]
+        },
+        {
+          "file": "moon-mobile-act-4-offline.png",
+          "visibleBackgrounds": [
+            "background",
+            "background-finale"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "finale-partner-visible",
+      "scene": "moon",
+      "asset": "tailor-proud",
+      "passed": true,
+      "evidence": [
+        {
+          "file": "moon-desktop-act-4-offline.png",
+          "partnerPose": "tailor-proud",
+          "visibleAssets": [
+            "thread",
+            "tailor-proud",
+            "moon",
+            "patch"
+          ]
+        },
+        {
+          "file": "moon-mobile-act-4-offline.png",
+          "partnerPose": "tailor-proud",
+          "visibleAssets": [
+            "thread",
+            "tailor-proud",
+            "moon",
+            "patch"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "saved-count-changes-finale",
+      "scene": "moon",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "finale-count-0",
+          "pixelSha256": "845ea43b1c24f6355ffb23a0d8488407c2f41d093160706b7993e7cfe8a34fc6",
+          "partnerPose": "tailor-proud",
+          "visibleAssets": [
+            "thread",
+            "tailor-proud",
+            "moon",
+            "patch"
+          ]
+        },
+        {
+          "label": "finale-count-8",
+          "pixelSha256": "038d9f41344f5c968d3f4bb95e63c61373d2f3dd891468fccfeee6a16ef80c70",
+          "partnerPose": "tailor-proud",
+          "visibleAssets": [
+            "thread",
+            "tailor-proud",
+            "moon",
+            "patch"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "partner-reaction-evolves",
+      "scene": "moon",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "partner-reaction-age-005",
+          "pixelSha256": "333a35726caa105f346a8a6fba4e24935c2cc580847ac32d92448e030c899d97",
+          "partnerPose": "tailor",
+          "visibleAssets": [
+            "thread",
+            "tailor",
+            "moon-hiccup"
+          ]
+        },
+        {
+          "label": "partner-reaction-age-080",
+          "pixelSha256": "3589e528d902bae4d5fdd23db53712060dac86665dde574bc6d6e89560970ebb",
+          "partnerPose": "tailor-chase",
+          "visibleAssets": [
+            "thread",
+            "tailor-chase",
+            "moon-hiccup"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "action-pose-visible",
+      "scene": "shadow",
+      "asset": "dancer-leap",
+      "passed": true,
+      "evidence": [
+        "shadow-desktop-high-strength-leap-offline.png",
+        "shadow-mobile-high-strength-leap-offline.png"
+      ]
+    },
+    {
+      "label": "action-pose-visible",
+      "scene": "shadow",
+      "asset": "dancer-bow",
+      "passed": true,
+      "evidence": [
+        "shadow-desktop-act-1-offline.png",
+        "shadow-desktop-act-2-offline.png",
+        "shadow-desktop-act-3-offline.png",
+        "shadow-desktop-act-4-offline.png",
+        "shadow-desktop-transition-5s-offline.png",
+        "shadow-desktop-transition-15s-offline.png",
+        "shadow-desktop-transition-26s-offline.png",
+        "shadow-desktop-high-strength-leap-offline.png",
+        "shadow-mobile-act-1-offline.png",
+        "shadow-mobile-act-2-offline.png",
+        "shadow-mobile-act-3-offline.png",
+        "shadow-mobile-act-4-offline.png",
+        "shadow-mobile-transition-5s-offline.png",
+        "shadow-mobile-transition-15s-offline.png",
+        "shadow-mobile-transition-26s-offline.png",
+        "shadow-mobile-high-strength-leap-offline.png"
+      ]
+    },
+    {
+      "label": "finale-background-visible",
+      "scene": "shadow",
+      "passed": true,
+      "evidence": [
+        {
+          "file": "shadow-desktop-act-4-offline.png",
+          "visibleBackgrounds": [
+            "background",
+            "background-finale"
+          ]
+        },
+        {
+          "file": "shadow-mobile-act-4-offline.png",
+          "visibleBackgrounds": [
+            "background",
+            "background-finale"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "finale-partner-visible",
+      "scene": "shadow",
+      "asset": "light-brave",
+      "passed": true,
+      "evidence": [
+        {
+          "file": "shadow-desktop-act-4-offline.png",
+          "partnerPose": "light-brave",
+          "visibleAssets": [
+            "beam",
+            "dancer-bow",
+            "dancer",
+            "light-brave"
+          ]
+        },
+        {
+          "file": "shadow-mobile-act-4-offline.png",
+          "partnerPose": "light-brave",
+          "visibleAssets": [
+            "beam",
+            "dancer-bow",
+            "dancer",
+            "light-brave"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "saved-count-changes-finale",
+      "scene": "shadow",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "finale-count-0",
+          "pixelSha256": "409351fd3573312eb1e7dc921a855bcc26a0f471e0ae6c991d638664384ae046",
+          "partnerPose": "light-brave",
+          "visibleAssets": [
+            "beam",
+            "dancer-bow",
+            "dancer",
+            "light-brave"
+          ]
+        },
+        {
+          "label": "finale-count-8",
+          "pixelSha256": "a1d649f84c6c6cf0925ff53472bdc2ffab15a68a1bd19cd639239f598292d201",
+          "partnerPose": "light-brave",
+          "visibleAssets": [
+            "beam",
+            "dancer-bow",
+            "dancer",
+            "light-brave"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "partner-reaction-evolves",
+      "scene": "shadow",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "partner-reaction-age-005",
+          "pixelSha256": "c7d087c59cd80f8399f6c896f30a0aaf1385d7eef311178eea08d77a1c72524a",
+          "partnerPose": "light",
+          "visibleAssets": [
+            "beam",
+            "dancer-leap",
+            "dancer",
+            "light",
+            "dancer-bow"
+          ]
+        },
+        {
+          "label": "partner-reaction-age-080",
+          "pixelSha256": "648644fba1713d5971ffaa66d16dba22bce839d9e832c103eb79654ace4584b9",
+          "partnerPose": "light-brave",
+          "visibleAssets": [
+            "beam",
+            "dancer-leap",
+            "dancer",
+            "light-brave",
+            "dancer-bow"
+          ]
+        }
+      ]
+    }
+  ],
+  "media": [
+    {
+      "file": "gravity-32s-offline.mp4",
+      "width": 640,
+      "height": 426,
+      "frames": 256,
+      "sourceFps": 8,
+      "durationMs": 32000,
+      "bytes": 2549653,
+      "note": "Offline shared renderer animation; not a browser recording. PNG frames are unaltered production renderer output. FFmpeg used only to export silent H.264 MP4."
+    },
+    {
+      "file": "moon-32s-offline.mp4",
+      "width": 640,
+      "height": 426,
+      "frames": 256,
+      "sourceFps": 8,
+      "durationMs": 32000,
+      "bytes": 2579652,
+      "note": "Offline shared renderer animation; not a browser recording. PNG frames are unaltered production renderer output. FFmpeg used only to export silent H.264 MP4."
+    },
+    {
+      "file": "shadow-32s-offline.mp4",
+      "width": 640,
+      "height": 426,
+      "frames": 256,
+      "sourceFps": 8,
+      "durationMs": 32000,
+      "bytes": 1573837,
+      "note": "Offline shared renderer animation; not a browser recording. PNG frames are unaltered production renderer output. FFmpeg used only to export silent H.264 MP4."
+    }
+  ],
+  "evidence": "../assets/worlds-v7-qa/offline-render-verification.json",
+  "historicalVersion6": "worlds-v6-visual-verification.json",
+  "limitations": [
+    "Offline frames have no DOM titles, dialogue or controls; not browser recordings",
+    "Browser typography, dialogue wrapping, actual controls, caching/reload and touch unverified",
+    "No audio clock, spectrum or synchronization verification"
+  ],
+  "assetSetHashSource": "Final renderer verification: sorted asset sources; individual file hashes in offline manifest"
+}
