@@ -1,0 +1,122 @@
+{
+  "passed": true,
+  "checks": [
+    "Actual teammate click kicks a moving ball and completes a pass to a different player",
+    "Real sprint moves the selected player with possession",
+    "sports actual save/reload retains progress",
+    "Actual dribbling and aimed shots score goals; opponent pursuit and full match resolve"
+  ],
+  "result": {
+    "version": 1,
+    "time": 30.033400000005578,
+    "remaining": 63.349799999995504,
+    "phase": "ended",
+    "selected": 1,
+    "players": [
+      {
+        "id": 1,
+        "team": "teal",
+        "name": "前锋",
+        "x": 365,
+        "y": 298,
+        "angle": -1.5707963267948966,
+        "pose": 0
+      },
+      {
+        "id": 2,
+        "team": "teal",
+        "name": "边锋",
+        "x": 455,
+        "y": 187,
+        "angle": -1.5707963267948966,
+        "pose": 0
+      },
+      {
+        "id": 3,
+        "team": "teal",
+        "name": "后卫",
+        "x": 320,
+        "y": 415,
+        "angle": -1.5707963267948966,
+        "pose": 0
+      },
+      {
+        "id": 4,
+        "team": "teal",
+        "name": "门将",
+        "x": 149,
+        "y": 300,
+        "keeper": true,
+        "angle": -1.5707963267948966,
+        "pose": 0
+      },
+      {
+        "id": 11,
+        "team": "coral",
+        "name": "前锋",
+        "x": 750,
+        "y": 305,
+        "angle": -1.5707963267948966,
+        "pose": 0
+      },
+      {
+        "id": 12,
+        "team": "coral",
+        "name": "边锋",
+        "x": 730,
+        "y": 190,
+        "angle": -1.5707963267948966,
+        "pose": 0
+      },
+      {
+        "id": 13,
+        "team": "coral",
+        "name": "后卫",
+        "x": 815,
+        "y": 414,
+        "angle": -1.5707963267948966,
+        "pose": 0
+      },
+      {
+        "id": 14,
+        "team": "coral",
+        "name": "门将",
+        "x": 970,
+        "y": 300,
+        "keeper": true,
+        "angle": -1.5707963267948966,
+        "pose": 0
+      }
+    ],
+    "ball": {
+      "x": 734,
+      "y": 305,
+      "vx": 0,
+      "vy": 0,
+      "owner": 11,
+      "lock": 0.8
+    },
+    "teal": 3,
+    "coral": 0,
+    "passes": 1,
+    "completedPasses": 1,
+    "shots": 7,
+    "saves": 4,
+    "steals": 14,
+    "score": 1530,
+    "kickoff": 1.6,
+    "won": true,
+    "passTarget": null,
+    "moveTarget": null,
+    "field": {
+      "left": 122,
+      "right": 996,
+      "top": 95,
+      "bottom": 514,
+      "goalTop": 255,
+      "goalBottom": 346
+    }
+  },
+  "errors": [],
+  "missing": []
+}

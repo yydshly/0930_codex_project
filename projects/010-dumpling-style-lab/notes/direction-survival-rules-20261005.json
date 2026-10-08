@@ -1,0 +1,539 @@
+{
+  "passed": true,
+  "count": 44,
+  "checks": [
+    "new worlds start paused at the real camp without free supplies and own independent arrays",
+    "the finite map exposes21by15 terrain, a river boundary, a bridge, cabin walls and reachable fixed resources",
+    "paused step, demo and actions preserve time, bodies, resources and depletion",
+    "manual WASD motion is three tiles per second and diagonal motion is normalized",
+    "pointer targets use continuous BFS walking around cabin walls instead of teleporting",
+    "fractional pointer destinations preserve an exact final waypoint and valid in-flight saves",
+    "river, rock, walls and world edges block bodies even under long held movement",
+    "manual input immediately takes over demonstration and cancels its pointer route",
+    "interactions require actual proximity and failed actions are atomic",
+    "each fixed supply is looted exactly once and depletion survives save restoration",
+    "keyboard nearest-object interaction updates the actual water cooldown, not a detached view",
+    "water replenishes only after four real seconds and still requires the pump vicinity",
+    "shelter, fire and purifier consume their exact real materials and cannot be built twice",
+    "construction is restricted to the camp and incomplete supplies do not partly spend",
+    "inherited, nonstring and unknown recipe names are rejected atomically with useful guidance",
+    "building a fire supplies no free fuel, wood feeds45seconds and fuel burns with real time",
+    "fuel expires at zero, remains extinguished and cannot be piled above the allowed feed boundary",
+    "boiling needs camp, a lit fire, a purifier, dirty water and eleven fuel seconds",
+    "boil reserves one dirty water and eight fuel, holds movement and produces no water before three seconds",
+    "an unfinished boil survives an exact paused save and resumes only its remaining real duration",
+    "drinking and eating consume one real item each, restore30 and clamp body meters to100",
+    "radio repair consumes scrap2cloth1 once, then a separate nearby send establishes the signal",
+    "weather follows the published dry, rain, storm, night, dawn schedule and later repeats",
+    "rain raises wetness outdoors while a real shelter keeps its camper dry",
+    "a fueled campfire warms and dries only a player within the actual camp radius",
+    "ordinary demo planning never advances time and physics advances exactly once per call",
+    "ordinary manual walking, scavenging, recipes, signal and tending reproduce dawn completion",
+    "a manual late return during the next storm must tend real fire and wait for the following dawn",
+    "dawn alone, camp alone or signal alone does not award completion",
+    "completion requires actual camp proximity and adequate hydration, then remains sticky during further play",
+    "untended bodies eventually fail, stop the clock and retain a valid failure save",
+    "normal frame intervals keep every demo stage and pending craft restorable",
+    "save restoration preserves routes, inventory, structures, time and objective but always pauses",
+    "paused completed saves retain the exact achievement and are still playable after resume",
+    "strict saves reject malformed input, wrong version, wrong map, illegal modes and nonfinite time or body values",
+    "strict saves reject impossible instant body refills, heat, wetness or death without ordinary causes",
+    "strict saves reject invented inventory, missing item keys, forged loot, locations and depletion",
+    "strict saves replay actual recipe and supply costs and reject free structures, fuel or repaired signals",
+    "strict saves reject fabricated actions, remotely looted resources and same-time teleports in the ledger",
+    "strict saves reject forged water cooldowns, outputs, consumption and unfinished craft duration",
+    "strict saves cannot relocate the player or the completed output during an immobilized boil",
+    "strict saves reject blocked paths, detached targets, invalid weather, completion and failure flags",
+    "strict log validation rejects nonfinite, out-of-order, future or oversized entries",
+    "invalid finite targets, unknown actions and nonpositive or nonfinite time steps preserve the world"
+  ],
+  "failures": [],
+  "playthroughs": [
+    {
+      "kind": "ordinary demonstration",
+      "time": 100.00000000000443,
+      "completedAt": 100.00000000000443,
+      "player": {
+        "x": 5,
+        "y": 10,
+        "heading": 3.141592653589793,
+        "moving": false,
+        "health": 100,
+        "temperature": 37.199571865253155,
+        "hydration": 90.65919999999412,
+        "hunger": 94.16499999999978,
+        "wetness": 0
+      },
+      "inventory": {
+        "wood": 10,
+        "cloth": 1,
+        "scrap": 1,
+        "dirty": 0,
+        "clean": 0,
+        "food": 3
+      },
+      "camp": {
+        "x": 5,
+        "y": 10,
+        "shelter": true,
+        "fire": true,
+        "purifier": true,
+        "fuel": 46.120000000001724
+      },
+      "signal": {
+        "repaired": true,
+        "sent": true
+      },
+      "stats": {
+        "distance": 51.99999999999965,
+        "fuelAdded": 135,
+        "fuelBurned": 80.88000000000144,
+        "boilFuel": 8,
+        "waterCollected": 1,
+        "boiled": 1,
+        "drinks": 1,
+        "meals": 1
+      },
+      "ledger": [
+        {
+          "time": 2.4800000000000013,
+          "kind": "scavenge",
+          "x": 5.960000000000001,
+          "y": 4,
+          "id": "wood-west"
+        },
+        {
+          "time": 5.760000000000004,
+          "kind": "scavenge",
+          "x": 9,
+          "y": 6.039999999999999,
+          "id": "cabin"
+        },
+        {
+          "time": 8.67999999999999,
+          "kind": "scavenge",
+          "x": 14,
+          "y": 8.959999999999994,
+          "id": "wreck"
+        },
+        {
+          "time": 10.519999999999952,
+          "kind": "water",
+          "x": 16.960000000000008,
+          "y": 7
+        },
+        {
+          "time": 12.719999999999905,
+          "kind": "repair",
+          "x": 14.040000000000006,
+          "y": 4
+        },
+        {
+          "time": 12.759999999999904,
+          "kind": "send",
+          "x": 14,
+          "y": 4
+        },
+        {
+          "time": 13.519999999999888,
+          "kind": "scavenge",
+          "x": 13.040000000000006,
+          "y": 3,
+          "id": "wood-east"
+        },
+        {
+          "time": 18.999999999999773,
+          "kind": "craft",
+          "x": 5,
+          "y": 10,
+          "recipe": "shelter"
+        },
+        {
+          "time": 19.03999999999977,
+          "kind": "craft",
+          "x": 5,
+          "y": 10,
+          "recipe": "fire"
+        },
+        {
+          "time": 19.07999999999977,
+          "kind": "craft",
+          "x": 5,
+          "y": 10,
+          "recipe": "purifier"
+        },
+        {
+          "time": 19.11999999999977,
+          "kind": "fuel",
+          "x": 5,
+          "y": 10
+        },
+        {
+          "time": 19.15999999999977,
+          "kind": "craft",
+          "x": 5,
+          "y": 10,
+          "recipe": "boil"
+        },
+        {
+          "time": 22.159999999999705,
+          "kind": "boiled",
+          "x": 5,
+          "y": 10
+        },
+        {
+          "time": 22.159999999999705,
+          "kind": "drink",
+          "x": 5,
+          "y": 10
+        },
+        {
+          "time": 22.199999999999704,
+          "kind": "eat",
+          "x": 5,
+          "y": 10
+        },
+        {
+          "time": 42.15999999999928,
+          "kind": "fuel",
+          "x": 5,
+          "y": 10
+        },
+        {
+          "time": 87.16000000000243,
+          "kind": "fuel",
+          "x": 5,
+          "y": 10
+        },
+        {
+          "time": 100.00000000000443,
+          "kind": "complete",
+          "x": 5,
+          "y": 10,
+          "health": 100,
+          "temperature": 37.199571865253155,
+          "hydration": 90.65919999999412,
+          "hunger": 94.16499999999978,
+          "wetness": 0
+        }
+      ]
+    },
+    {
+      "kind": "ordinary manual commands",
+      "time": 100.12000000000445,
+      "completedAt": 100.00000000000443,
+      "player": {
+        "x": 5,
+        "y": 10,
+        "heading": 3.141592653589793,
+        "moving": false,
+        "health": 100,
+        "temperature": 37.198104448340466,
+        "hydration": 89.94399999999558,
+        "hunger": 93.74199999999874,
+        "wetness": 0
+      },
+      "inventory": {
+        "wood": 10,
+        "cloth": 1,
+        "scrap": 1,
+        "dirty": 0,
+        "clean": 0,
+        "food": 3
+      },
+      "camp": {
+        "x": 5,
+        "y": 10,
+        "shelter": true,
+        "fire": true,
+        "purifier": true,
+        "fuel": 45.600000000001735
+      },
+      "signal": {
+        "repaired": true,
+        "sent": true
+      },
+      "stats": {
+        "distance": 82.00000000000011,
+        "fuelAdded": 135,
+        "fuelBurned": 81.40000000000153,
+        "boilFuel": 8,
+        "waterCollected": 1,
+        "boiled": 1,
+        "drinks": 1,
+        "meals": 1
+      },
+      "ledger": [
+        {
+          "time": 2.5200000000000014,
+          "kind": "scavenge",
+          "x": 6,
+          "y": 4,
+          "id": "wood-west"
+        },
+        {
+          "time": 5.760000000000004,
+          "kind": "scavenge",
+          "x": 9,
+          "y": 6,
+          "id": "cabin"
+        },
+        {
+          "time": 8.639999999999992,
+          "kind": "scavenge",
+          "x": 14,
+          "y": 9,
+          "id": "wreck"
+        },
+        {
+          "time": 10.439999999999953,
+          "kind": "water",
+          "x": 17,
+          "y": 7
+        },
+        {
+          "time": 13.319999999999892,
+          "kind": "scavenge",
+          "x": 13,
+          "y": 3,
+          "id": "wood-east"
+        },
+        {
+          "time": 18.71999999999978,
+          "kind": "craft",
+          "x": 5,
+          "y": 10,
+          "recipe": "shelter"
+        },
+        {
+          "time": 18.71999999999978,
+          "kind": "craft",
+          "x": 5,
+          "y": 10,
+          "recipe": "fire"
+        },
+        {
+          "time": 18.71999999999978,
+          "kind": "craft",
+          "x": 5,
+          "y": 10,
+          "recipe": "purifier"
+        },
+        {
+          "time": 18.71999999999978,
+          "kind": "fuel",
+          "x": 5,
+          "y": 10
+        },
+        {
+          "time": 18.71999999999978,
+          "kind": "craft",
+          "x": 5,
+          "y": 10,
+          "recipe": "boil"
+        },
+        {
+          "time": 21.719999999999715,
+          "kind": "boiled",
+          "x": 5,
+          "y": 10
+        },
+        {
+          "time": 21.719999999999715,
+          "kind": "drink",
+          "x": 5,
+          "y": 10
+        },
+        {
+          "time": 21.719999999999715,
+          "kind": "eat",
+          "x": 5,
+          "y": 10
+        },
+        {
+          "time": 27.1199999999996,
+          "kind": "repair",
+          "x": 14,
+          "y": 4
+        },
+        {
+          "time": 27.1199999999996,
+          "kind": "send",
+          "x": 14,
+          "y": 4
+        },
+        {
+          "time": 41.75999999999929,
+          "kind": "fuel",
+          "x": 5,
+          "y": 10
+        },
+        {
+          "time": 86.76000000000236,
+          "kind": "fuel",
+          "x": 5,
+          "y": 10
+        },
+        {
+          "time": 100.00000000000443,
+          "kind": "complete",
+          "x": 5,
+          "y": 10,
+          "health": 100,
+          "temperature": 37.198086133957716,
+          "hydration": 89.95839999999559,
+          "hunger": 93.75099999999874,
+          "wetness": 0
+        }
+      ]
+    },
+    {
+      "kind": "ordinary late-cycle manual return",
+      "time": 240.03999999998652,
+      "completedAt": 240.03999999998652,
+      "player": {
+        "x": 5,
+        "y": 10,
+        "heading": 3.141592653589793,
+        "moving": false,
+        "health": 100,
+        "temperature": 37.11906268750624,
+        "hydration": 49.42399999998598,
+        "hunger": 65.96379999999648,
+        "wetness": 0
+      },
+      "inventory": {
+        "wood": 10,
+        "cloth": 1,
+        "scrap": 1,
+        "dirty": 1,
+        "clean": 0,
+        "food": 4
+      },
+      "camp": {
+        "x": 5,
+        "y": 10,
+        "shelter": true,
+        "fire": true,
+        "purifier": true,
+        "fuel": 53.36000000000078
+      },
+      "signal": {
+        "repaired": true,
+        "sent": true
+      },
+      "stats": {
+        "distance": 82.00000000000011,
+        "fuelAdded": 135,
+        "fuelBurned": 81.64000000000156,
+        "boilFuel": 0,
+        "waterCollected": 1,
+        "boiled": 0,
+        "drinks": 0,
+        "meals": 0
+      },
+      "ledger": [
+        {
+          "time": 2.5200000000000014,
+          "kind": "scavenge",
+          "x": 6,
+          "y": 4,
+          "id": "wood-west"
+        },
+        {
+          "time": 5.760000000000004,
+          "kind": "scavenge",
+          "x": 9,
+          "y": 6,
+          "id": "cabin"
+        },
+        {
+          "time": 8.639999999999992,
+          "kind": "scavenge",
+          "x": 14,
+          "y": 9,
+          "id": "wreck"
+        },
+        {
+          "time": 10.439999999999953,
+          "kind": "water",
+          "x": 17,
+          "y": 7
+        },
+        {
+          "time": 13.319999999999892,
+          "kind": "scavenge",
+          "x": 13,
+          "y": 3,
+          "id": "wood-east"
+        },
+        {
+          "time": 18.71999999999978,
+          "kind": "craft",
+          "x": 5,
+          "y": 10,
+          "recipe": "shelter"
+        },
+        {
+          "time": 18.71999999999978,
+          "kind": "craft",
+          "x": 5,
+          "y": 10,
+          "recipe": "fire"
+        },
+        {
+          "time": 18.71999999999978,
+          "kind": "craft",
+          "x": 5,
+          "y": 10,
+          "recipe": "purifier"
+        },
+        {
+          "time": 18.71999999999978,
+          "kind": "fuel",
+          "x": 5,
+          "y": 10
+        },
+        {
+          "time": 24.119999999999663,
+          "kind": "repair",
+          "x": 14,
+          "y": 4
+        },
+        {
+          "time": 24.119999999999663,
+          "kind": "send",
+          "x": 14,
+          "y": 4
+        },
+        {
+          "time": 203.3999999999938,
+          "kind": "fuel",
+          "x": 5,
+          "y": 10
+        },
+        {
+          "time": 234.43999999998763,
+          "kind": "fuel",
+          "x": 5,
+          "y": 10
+        },
+        {
+          "time": 240.03999999998652,
+          "kind": "complete",
+          "x": 5,
+          "y": 10,
+          "health": 100,
+          "temperature": 37.11906268750624,
+          "hydration": 49.42399999998598,
+          "hunger": 65.96379999999648,
+          "wetness": 0
+        }
+      ]
+    }
+  ],
+  "method": "Production 21 by 15 collision map, continuous movement at three tiles per second, ordinary fixed-resource scavenging and same-action demo/manual playthroughs. No granted supplies, teleports, time overrides or forced objective completion. Dedicated body boundary fixtures are limited to the explicit hydration threshold and forged-save assertions. Weather, finite supplies, real fuel conservation, three-second boil, depletion, dawn-only sticky completion and strict versioned ledger save validation are exercised.",
+  "commands": [
+    "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' tooling/check-direction-survival-rules.mjs"
+  ]
+}

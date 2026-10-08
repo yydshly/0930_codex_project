@@ -1,0 +1,4015 @@
+{
+  "date": "2026-10-05",
+  "passed": true,
+  "method": "Actual visible native page controls, original scene images, evidence selects, explicit verification, saved-state reload and native fullscreen. Read-only DOM text/images/layout only; no hidden game state, injected discoveries, clocks or victory state.",
+  "checks": [
+    {
+      "name": "Fresh production page loads the original scene paused, with zero clues and no verified facts",
+      "passed": true,
+      "after": {
+        "claimText": "1. 谁决定改道\n待检验\n\n是谁决定把蓝锚邮袋转往栈桥？\n\n待证解释\n选择你的推断\n林岚 · 值班员\n周远 · 渡船员\n裴宁 · 北仓保管员\n证据 1\n选择已发现证据\n证据 2\n选择已发现证据\n检验证据\n2. 走哪条交通线\n待检验\n\n蓝锚邮袋经哪一班交通工具离港？\n\n待证解释\n选择你的推断\n21:35 临时渡船\n22:10 列车\n21:00 北仓转运\n证据 1\n选择已发现证据\n证据 2\n选择已发现证据\n检验证据\n3. 最后送到哪里\n待检验\n\n哪一个地点实际收到蓝锚邮袋？\n\n待证解释\n选择你的推断\n东岸安置站\n北仓\n旧隧道收件点\n证据 1\n选择已发现证据\n证据 2\n选择已发现证据\n检验证据",
+        "clue": {
+          "detail": "",
+          "name": "",
+          "text": ""
+        },
+        "documentWidth": 1265,
+        "feedback": "夜港收到一只送回的空邮袋，但当晚的临时改道记录缺了一段。开始调查，查清谁改道、走哪条航路、送到了哪里。",
+        "image": {
+          "natural": [
+            1672,
+            941
+          ],
+          "src": "http://127.0.0.1:8962/assets/directions/investigation/station.png"
+        },
+        "mode": "调查暂停",
+        "progress": "线索 0 / 9 · 已核事实 0 / 3",
+        "result": {
+          "text": "",
+          "title": "",
+          "visible": false
+        },
+        "save": "现场、线索与已核事实已独立保存",
+        "scene": "旧站候车室",
+        "selects": [
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "林岚 · 值班员",
+                "value": "lin"
+              },
+              {
+                "text": "周远 · 渡船员",
+                "value": "zhou"
+              },
+              {
+                "text": "裴宁 · 北仓保管员",
+                "value": "pei"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "21:35 临时渡船",
+                "value": "ferry"
+              },
+              {
+                "text": "22:10 列车",
+                "value": "train"
+              },
+              {
+                "text": "21:00 北仓转运",
+                "value": "warehouse"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "东岸安置站",
+                "value": "east"
+              },
+              {
+                "text": "北仓",
+                "value": "north"
+              },
+              {
+                "text": "旧隧道收件点",
+                "value": "tunnel"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              }
+            ],
+            "value": ""
+          }
+        ],
+        "viewport": [
+          1280,
+          720
+        ]
+      }
+    },
+    {
+      "name": "Manual start enables native inspection and a genuine clock clue reveals the stopped-clock evidence",
+      "passed": true,
+      "after": {
+        "claimText": "1. 谁决定改道\n待检验\n\n是谁决定把蓝锚邮袋转往栈桥？\n\n待证解释\n选择你的推断\n林岚 · 值班员\n周远 · 渡船员\n裴宁 · 北仓保管员\n证据 1\n选择已发现证据\n停摆的挂钟\n证据 2\n选择已发现证据\n停摆的挂钟\n检验证据\n2. 走哪条交通线\n待检验\n\n蓝锚邮袋经哪一班交通工具离港？\n\n待证解释\n选择你的推断\n21:35 临时渡船\n22:10 列车\n21:00 北仓转运\n证据 1\n选择已发现证据\n停摆的挂钟\n证据 2\n选择已发现证据\n停摆的挂钟\n检验证据\n3. 最后送到哪里\n待检验\n\n哪一个地点实际收到蓝锚邮袋？\n\n待证解释\n选择你的推断\n东岸安置站\n北仓\n旧隧道收件点\n证据 1\n选择已发现证据\n停摆的挂钟\n证据 2\n选择已发现证据\n停摆的挂钟\n检验证据",
+        "clue": {
+          "detail": "钟旁的停电检修条写着：22:10 断电后钟机未再运转。这个读数不能证明邮袋或列车的离开时间，也不反映后来空邮袋归还的时间。",
+          "name": "停摆的挂钟",
+          "text": "挂钟停在 22:10。"
+        },
+        "documentWidth": 1265,
+        "feedback": "记录：停摆的挂钟。挂钟停在 22:10。",
+        "image": {
+          "natural": [
+            1672,
+            941
+          ],
+          "src": "http://127.0.0.1:8962/assets/directions/investigation/station.png"
+        },
+        "mode": "亲自调查",
+        "progress": "线索 1 / 9 · 已核事实 0 / 3",
+        "result": {
+          "text": "",
+          "title": "",
+          "visible": false
+        },
+        "save": "现场、线索与已核事实已独立保存",
+        "scene": "旧站候车室",
+        "selects": [
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "林岚 · 值班员",
+                "value": "lin"
+              },
+              {
+                "text": "周远 · 渡船员",
+                "value": "zhou"
+              },
+              {
+                "text": "裴宁 · 北仓保管员",
+                "value": "pei"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "21:35 临时渡船",
+                "value": "ferry"
+              },
+              {
+                "text": "22:10 列车",
+                "value": "train"
+              },
+              {
+                "text": "21:00 北仓转运",
+                "value": "warehouse"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "东岸安置站",
+                "value": "east"
+              },
+              {
+                "text": "北仓",
+                "value": "north"
+              },
+              {
+                "text": "旧隧道收件点",
+                "value": "tunnel"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              }
+            ],
+            "value": ""
+          }
+        ],
+        "viewport": [
+          1280,
+          720
+        ]
+      }
+    },
+    {
+      "name": "Three native station objects add three distinct real clues and preserve the returned-bag storyline",
+      "passed": true,
+      "after": {
+        "claimText": "1. 谁决定改道\n待检验\n\n是谁决定把蓝锚邮袋转往栈桥？\n\n待证解释\n选择你的推断\n林岚 · 值班员\n周远 · 渡船员\n裴宁 · 北仓保管员\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n检验证据\n2. 走哪条交通线\n待检验\n\n蓝锚邮袋经哪一班交通工具离港？\n\n待证解释\n选择你的推断\n21:35 临时渡船\n22:10 列车\n21:00 北仓转运\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n检验证据\n3. 最后送到哪里\n待检验\n\n哪一个地点实际收到蓝锚邮袋？\n\n待证解释\n选择你的推断\n东岸安置站\n北仓\n旧隧道收件点\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n检验证据",
+        "clue": {
+          "detail": "归还条注明空袋于 22:30 送回旧站。袋签留存了当晚的东岸批次和交接检查：交付时封条完整。现在袋中已无信件；这份留存信息可以与收件站回执核对。",
+          "name": "归还的蓝锚空邮袋",
+          "text": "22:30 送回的空邮袋 · 蓝锚东岸批次。"
+        },
+        "documentWidth": 1265,
+        "feedback": "记录：归还的蓝锚空邮袋。22:30 送回的空邮袋 · 蓝锚东岸批次。",
+        "image": {
+          "natural": [
+            1672,
+            941
+          ],
+          "src": "http://127.0.0.1:8962/assets/directions/investigation/station.png"
+        },
+        "mode": "亲自调查",
+        "progress": "线索 3 / 9 · 已核事实 0 / 3",
+        "result": {
+          "text": "",
+          "title": "",
+          "visible": false
+        },
+        "save": "现场、线索与已核事实已独立保存",
+        "scene": "旧站候车室",
+        "selects": [
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "林岚 · 值班员",
+                "value": "lin"
+              },
+              {
+                "text": "周远 · 渡船员",
+                "value": "zhou"
+              },
+              {
+                "text": "裴宁 · 北仓保管员",
+                "value": "pei"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "21:35 临时渡船",
+                "value": "ferry"
+              },
+              {
+                "text": "22:10 列车",
+                "value": "train"
+              },
+              {
+                "text": "21:00 北仓转运",
+                "value": "warehouse"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "东岸安置站",
+                "value": "east"
+              },
+              {
+                "text": "北仓",
+                "value": "north"
+              },
+              {
+                "text": "旧隧道收件点",
+                "value": "tunnel"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              }
+            ],
+            "value": ""
+          }
+        ],
+        "viewport": [
+          1280,
+          720
+        ]
+      }
+    },
+    {
+      "name": "Native wrong person and unrelated discovered evidence produce explicit non-supporting feedback without verified facts",
+      "passed": true,
+      "after": {
+        "claimText": "1. 谁决定改道\n待检验\n\n是谁决定把蓝锚邮袋转往栈桥？\n\n待证解释\n选择你的推断\n林岚 · 值班员\n周远 · 渡船员\n裴宁 · 北仓保管员\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n检验证据\n这组推断与证据尚不能互相支持。重阅记录，调整解释或更换证据后再试。\n2. 走哪条交通线\n待检验\n\n蓝锚邮袋经哪一班交通工具离港？\n\n待证解释\n选择你的推断\n21:35 临时渡船\n22:10 列车\n21:00 北仓转运\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n检验证据\n3. 最后送到哪里\n待检验\n\n哪一个地点实际收到蓝锚邮袋？\n\n待证解释\n选择你的推断\n东岸安置站\n北仓\n旧隧道收件点\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n检验证据",
+        "clue": {
+          "detail": "归还条注明空袋于 22:30 送回旧站。袋签留存了当晚的东岸批次和交接检查：交付时封条完整。现在袋中已无信件；这份留存信息可以与收件站回执核对。",
+          "name": "归还的蓝锚空邮袋",
+          "text": "22:30 送回的空邮袋 · 蓝锚东岸批次。"
+        },
+        "documentWidth": 1265,
+        "feedback": "这组推断与证据尚不能互相支持。重阅记录，调整解释或更换证据后再试。",
+        "image": {
+          "natural": [
+            1672,
+            941
+          ],
+          "src": "http://127.0.0.1:8962/assets/directions/investigation/station.png"
+        },
+        "mode": "亲自调查",
+        "progress": "线索 3 / 9 · 已核事实 0 / 3",
+        "result": {
+          "text": "",
+          "title": "",
+          "visible": false
+        },
+        "save": "现场、线索与已核事实已独立保存",
+        "scene": "旧站候车室",
+        "selects": [
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "林岚 · 值班员",
+                "value": "lin"
+              },
+              {
+                "text": "周远 · 渡船员",
+                "value": "zhou"
+              },
+              {
+                "text": "裴宁 · 北仓保管员",
+                "value": "pei"
+              }
+            ],
+            "value": "zhou"
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              }
+            ],
+            "value": "clock"
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              }
+            ],
+            "value": "bag"
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "21:35 临时渡船",
+                "value": "ferry"
+              },
+              {
+                "text": "22:10 列车",
+                "value": "train"
+              },
+              {
+                "text": "21:00 北仓转运",
+                "value": "warehouse"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "东岸安置站",
+                "value": "east"
+              },
+              {
+                "text": "北仓",
+                "value": "north"
+              },
+              {
+                "text": "旧隧道收件点",
+                "value": "tunnel"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              }
+            ],
+            "value": ""
+          }
+        ],
+        "viewport": [
+          1280,
+          720
+        ]
+      }
+    },
+    {
+      "name": "Three native office inspections load the actual new scene and add only those three authored clues",
+      "passed": true,
+      "after": {
+        "claimText": "1. 谁决定改道\n待检验\n\n是谁决定把蓝锚邮袋转往栈桥？\n\n待证解释\n选择你的推断\n林岚 · 值班员\n周远 · 渡船员\n裴宁 · 北仓保管员\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n检验证据\n这组推断与证据尚不能互相支持。重阅记录，调整解释或更换证据后再试。\n2. 走哪条交通线\n待检验\n\n蓝锚邮袋经哪一班交通工具离港？\n\n待证解释\n选择你的推断\n21:35 临时渡船\n22:10 列车\n21:00 北仓转运\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n检验证据\n3. 最后送到哪里\n待检验\n\n哪一个地点实际收到蓝锚邮袋？\n\n待证解释\n选择你的推断\n东岸安置站\n北仓\n旧隧道收件点\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n检验证据",
+        "clue": {
+          "detail": "领用表的后续栏为空，北仓入库簿也没有蓝锚邮袋。这条记录可以排除把邮袋送进北仓的解释，不能当作一次运送时间。",
+          "name": "封存的北仓钥匙",
+          "text": "北仓钥匙于 21:00 封存，之后无人领取。"
+        },
+        "documentWidth": 1265,
+        "feedback": "记录：封存的北仓钥匙。北仓钥匙于 21:00 封存，之后无人领取。",
+        "image": {
+          "natural": [
+            1672,
+            941
+          ],
+          "src": "http://127.0.0.1:8962/assets/directions/investigation/office.png"
+        },
+        "mode": "亲自调查",
+        "progress": "线索 6 / 9 · 已核事实 0 / 3",
+        "result": {
+          "text": "",
+          "title": "",
+          "visible": false
+        },
+        "save": "现场、线索与已核事实已独立保存",
+        "scene": "值班邮务室",
+        "selects": [
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "林岚 · 值班员",
+                "value": "lin"
+              },
+              {
+                "text": "周远 · 渡船员",
+                "value": "zhou"
+              },
+              {
+                "text": "裴宁 · 北仓保管员",
+                "value": "pei"
+              }
+            ],
+            "value": "zhou"
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": "clock"
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": "bag"
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "21:35 临时渡船",
+                "value": "ferry"
+              },
+              {
+                "text": "22:10 列车",
+                "value": "train"
+              },
+              {
+                "text": "21:00 北仓转运",
+                "value": "warehouse"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "东岸安置站",
+                "value": "east"
+              },
+              {
+                "text": "北仓",
+                "value": "north"
+              },
+              {
+                "text": "旧隧道收件点",
+                "value": "tunnel"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": ""
+          }
+        ],
+        "viewport": [
+          1280,
+          720
+        ]
+      }
+    },
+    {
+      "name": "Repairing the real person choice and using dispatch plus note explicitly verifies only that first fact",
+      "passed": true,
+      "after": {
+        "claimText": "1. 谁决定改道\n已核实\n\n是谁决定把蓝锚邮袋转往栈桥？\n\n待证解释\n选择你的推断\n林岚 · 值班员\n周远 · 渡船员\n裴宁 · 北仓保管员\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n检验证据\n两条记录交叉验证，已核实。\n2. 走哪条交通线\n待检验\n\n蓝锚邮袋经哪一班交通工具离港？\n\n待证解释\n选择你的推断\n21:35 临时渡船\n22:10 列车\n21:00 北仓转运\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n检验证据\n3. 最后送到哪里\n待检验\n\n哪一个地点实际收到蓝锚邮袋？\n\n待证解释\n选择你的推断\n东岸安置站\n北仓\n旧隧道收件点\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n检验证据",
+        "clue": {
+          "detail": "领用表的后续栏为空，北仓入库簿也没有蓝锚邮袋。这条记录可以排除把邮袋送进北仓的解释，不能当作一次运送时间。",
+          "name": "封存的北仓钥匙",
+          "text": "北仓钥匙于 21:00 封存，之后无人领取。"
+        },
+        "documentWidth": 1265,
+        "feedback": "“谁决定改道”已由两条记录交叉验证。",
+        "image": {
+          "natural": [
+            1672,
+            941
+          ],
+          "src": "http://127.0.0.1:8962/assets/directions/investigation/office.png"
+        },
+        "mode": "亲自调查",
+        "progress": "线索 6 / 9 · 已核事实 1 / 3",
+        "result": {
+          "text": "",
+          "title": "",
+          "visible": false
+        },
+        "save": "现场、线索与已核事实已独立保存",
+        "scene": "值班邮务室",
+        "selects": [
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "林岚 · 值班员",
+                "value": "lin"
+              },
+              {
+                "text": "周远 · 渡船员",
+                "value": "zhou"
+              },
+              {
+                "text": "裴宁 · 北仓保管员",
+                "value": "pei"
+              }
+            ],
+            "value": "lin"
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": "dispatch"
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": "note"
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "21:35 临时渡船",
+                "value": "ferry"
+              },
+              {
+                "text": "22:10 列车",
+                "value": "train"
+              },
+              {
+                "text": "21:00 北仓转运",
+                "value": "warehouse"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "东岸安置站",
+                "value": "east"
+              },
+              {
+                "text": "北仓",
+                "value": "north"
+              },
+              {
+                "text": "旧隧道收件点",
+                "value": "tunnel"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": ""
+          }
+        ],
+        "viewport": [
+          1280,
+          720
+        ]
+      }
+    },
+    {
+      "name": "Native fullscreen expands the whole actual stage including original office, casebook, controls and exit",
+      "passed": true,
+      "after": {
+        "exitDisplay": "flex",
+        "image": {
+          "bottom": 840.2500457763672,
+          "height": 620.5208740234375,
+          "left": 0.6666666865348816,
+          "right": 1103.8229166865349,
+          "top": 219.7291717529297,
+          "width": 1103.15625,
+          "x": 0.6666666865348816,
+          "y": 219.7291717529297
+        },
+        "notebook": {
+          "bottom": 1066.6666717529297,
+          "height": 1001,
+          "left": 1103.8333740234375,
+          "right": 1706.666748046875,
+          "top": 65.66667175292969,
+          "width": 602.8333740234375,
+          "x": 1103.8333740234375,
+          "y": 65.66667175292969
+        },
+        "sceneMap": {
+          "bottom": 840.2500457763672,
+          "height": 620.5208740234375,
+          "left": 0.6666666865348816,
+          "right": 1103.8229166865349,
+          "top": 219.7291717529297,
+          "width": 1103.15625,
+          "x": 0.6666666865348816,
+          "y": 219.7291717529297
+        },
+        "stage": {
+          "bottom": 1067.3333740234375,
+          "height": 1067.3333740234375,
+          "left": 0,
+          "right": 1707.3333740234375,
+          "top": 0,
+          "width": 1707.3333740234375,
+          "x": 0,
+          "y": 0
+        },
+        "viewport": [
+          1707,
+          1067
+        ]
+      }
+    },
+    {
+      "name": "Changing an already verified native hypothesis actually revokes that fact until reverified",
+      "passed": true,
+      "after": {
+        "claimText": "1. 谁决定改道\n待检验\n\n是谁决定把蓝锚邮袋转往栈桥？\n\n待证解释\n选择你的推断\n林岚 · 值班员\n周远 · 渡船员\n裴宁 · 北仓保管员\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n检验证据\n推断已调整，请主动检验。\n2. 走哪条交通线\n待检验\n\n蓝锚邮袋经哪一班交通工具离港？\n\n待证解释\n选择你的推断\n21:35 临时渡船\n22:10 列车\n21:00 北仓转运\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n检验证据\n3. 最后送到哪里\n待检验\n\n哪一个地点实际收到蓝锚邮袋？\n\n待证解释\n选择你的推断\n东岸安置站\n北仓\n旧隧道收件点\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n检验证据",
+        "clue": {
+          "detail": "便签落款林岚，与交接册署名一致。她改变了蓝锚邮袋的运送安排，并先通知收件站。封闭的是东岸支线，西港列车仍照常开出；便签未写出船的具体离港时刻。",
+          "name": "林岚的便签",
+          "text": "“东岸支线封闭，赶潮线前的渡船。我已告知收件站。”"
+        },
+        "documentWidth": 1265,
+        "feedback": "修改“谁决定改道”的推断。需要重新验证。",
+        "image": {
+          "natural": [
+            1672,
+            941
+          ],
+          "src": "http://127.0.0.1:8962/assets/directions/investigation/office.png"
+        },
+        "mode": "亲自调查",
+        "progress": "线索 6 / 9 · 已核事实 0 / 3",
+        "result": {
+          "text": "",
+          "title": "",
+          "visible": false
+        },
+        "save": "现场、线索与已核事实已独立保存",
+        "scene": "值班邮务室",
+        "selects": [
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "林岚 · 值班员",
+                "value": "lin"
+              },
+              {
+                "text": "周远 · 渡船员",
+                "value": "zhou"
+              },
+              {
+                "text": "裴宁 · 北仓保管员",
+                "value": "pei"
+              }
+            ],
+            "value": "zhou"
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": "dispatch"
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": "note"
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "21:35 临时渡船",
+                "value": "ferry"
+              },
+              {
+                "text": "22:10 列车",
+                "value": "train"
+              },
+              {
+                "text": "21:00 北仓转运",
+                "value": "warehouse"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "东岸安置站",
+                "value": "east"
+              },
+              {
+                "text": "北仓",
+                "value": "north"
+              },
+              {
+                "text": "旧隧道收件点",
+                "value": "tunnel"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": ""
+          }
+        ],
+        "viewport": [
+          1280,
+          720
+        ]
+      }
+    },
+    {
+      "name": "Actual production reload restores the same six found clues, verified first fact, selected record and reasoning choices paused",
+      "passed": true,
+      "before": {
+        "claimText": "1. 谁决定改道\n已核实\n\n是谁决定把蓝锚邮袋转往栈桥？\n\n待证解释\n选择你的推断\n林岚 · 值班员\n周远 · 渡船员\n裴宁 · 北仓保管员\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n检验证据\n两条记录交叉验证，已核实。\n2. 走哪条交通线\n待检验\n\n蓝锚邮袋经哪一班交通工具离港？\n\n待证解释\n选择你的推断\n21:35 临时渡船\n22:10 列车\n21:00 北仓转运\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n检验证据\n3. 最后送到哪里\n待检验\n\n哪一个地点实际收到蓝锚邮袋？\n\n待证解释\n选择你的推断\n东岸安置站\n北仓\n旧隧道收件点\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n检验证据",
+        "clue": {
+          "detail": "便签落款林岚，与交接册署名一致。她改变了蓝锚邮袋的运送安排，并先通知收件站。封闭的是东岸支线，西港列车仍照常开出；便签未写出船的具体离港时刻。",
+          "name": "林岚的便签",
+          "text": "“东岸支线封闭，赶潮线前的渡船。我已告知收件站。”"
+        },
+        "documentWidth": 1265,
+        "feedback": "“谁决定改道”已由两条记录交叉验证。",
+        "image": {
+          "natural": [
+            1672,
+            941
+          ],
+          "src": "http://127.0.0.1:8962/assets/directions/investigation/office.png"
+        },
+        "mode": "调查暂停",
+        "progress": "线索 6 / 9 · 已核事实 1 / 3",
+        "result": {
+          "text": "",
+          "title": "",
+          "visible": false
+        },
+        "save": "现场、线索与已核事实已独立保存",
+        "scene": "值班邮务室",
+        "selects": [
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "林岚 · 值班员",
+                "value": "lin"
+              },
+              {
+                "text": "周远 · 渡船员",
+                "value": "zhou"
+              },
+              {
+                "text": "裴宁 · 北仓保管员",
+                "value": "pei"
+              }
+            ],
+            "value": "lin"
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": "dispatch"
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": "note"
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "21:35 临时渡船",
+                "value": "ferry"
+              },
+              {
+                "text": "22:10 列车",
+                "value": "train"
+              },
+              {
+                "text": "21:00 北仓转运",
+                "value": "warehouse"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "东岸安置站",
+                "value": "east"
+              },
+              {
+                "text": "北仓",
+                "value": "north"
+              },
+              {
+                "text": "旧隧道收件点",
+                "value": "tunnel"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": ""
+          }
+        ],
+        "viewport": [
+          1280,
+          720
+        ]
+      },
+      "after": {
+        "claimText": "1. 谁决定改道\n已核实\n\n是谁决定把蓝锚邮袋转往栈桥？\n\n待证解释\n选择你的推断\n林岚 · 值班员\n周远 · 渡船员\n裴宁 · 北仓保管员\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n检验证据\n两条记录交叉验证，已核实。\n2. 走哪条交通线\n待检验\n\n蓝锚邮袋经哪一班交通工具离港？\n\n待证解释\n选择你的推断\n21:35 临时渡船\n22:10 列车\n21:00 北仓转运\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n检验证据\n3. 最后送到哪里\n待检验\n\n哪一个地点实际收到蓝锚邮袋？\n\n待证解释\n选择你的推断\n东岸安置站\n北仓\n旧隧道收件点\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n检验证据",
+        "clue": {
+          "detail": "便签落款林岚，与交接册署名一致。她改变了蓝锚邮袋的运送安排，并先通知收件站。封闭的是东岸支线，西港列车仍照常开出；便签未写出船的具体离港时刻。",
+          "name": "林岚的便签",
+          "text": "“东岸支线封闭，赶潮线前的渡船。我已告知收件站。”"
+        },
+        "documentWidth": 1265,
+        "feedback": "上次调查档案已恢复。继续调查后可从原处查看与检验。",
+        "image": {
+          "natural": [
+            1672,
+            941
+          ],
+          "src": "http://127.0.0.1:8962/assets/directions/investigation/office.png"
+        },
+        "mode": "上次调查已恢复 · 暂停",
+        "progress": "线索 6 / 9 · 已核事实 1 / 3",
+        "result": {
+          "text": "",
+          "title": "",
+          "visible": false
+        },
+        "save": "现场、线索与已核事实已独立保存",
+        "scene": "值班邮务室",
+        "selects": [
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "林岚 · 值班员",
+                "value": "lin"
+              },
+              {
+                "text": "周远 · 渡船员",
+                "value": "zhou"
+              },
+              {
+                "text": "裴宁 · 北仓保管员",
+                "value": "pei"
+              }
+            ],
+            "value": "lin"
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": "dispatch"
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": "note"
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "21:35 临时渡船",
+                "value": "ferry"
+              },
+              {
+                "text": "22:10 列车",
+                "value": "train"
+              },
+              {
+                "text": "21:00 北仓转运",
+                "value": "warehouse"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "东岸安置站",
+                "value": "east"
+              },
+              {
+                "text": "北仓",
+                "value": "north"
+              },
+              {
+                "text": "旧隧道收件点",
+                "value": "tunnel"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              }
+            ],
+            "value": ""
+          }
+        ],
+        "viewport": [
+          1280,
+          720
+        ]
+      }
+    },
+    {
+      "name": "Native quay objects add three real remaining clues including the letter and preserved delivery/return times",
+      "passed": true,
+      "after": {
+        "claimText": "1. 谁决定改道\n已核实\n\n是谁决定把蓝锚邮袋转往栈桥？\n\n待证解释\n选择你的推断\n林岚 · 值班员\n周远 · 渡船员\n裴宁 · 北仓保管员\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n临时渡船公告\n东岸收件回执\n等回音的来信\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n临时渡船公告\n东岸收件回执\n等回音的来信\n检验证据\n两条记录交叉验证，已核实。\n2. 走哪条交通线\n待检验\n\n蓝锚邮袋经哪一班交通工具离港？\n\n待证解释\n选择你的推断\n21:35 临时渡船\n22:10 列车\n21:00 北仓转运\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n临时渡船公告\n东岸收件回执\n等回音的来信\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n临时渡船公告\n东岸收件回执\n等回音的来信\n检验证据\n3. 最后送到哪里\n待检验\n\n哪一个地点实际收到蓝锚邮袋？\n\n待证解释\n选择你的推断\n东岸安置站\n北仓\n旧隧道收件点\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n临时渡船公告\n东岸收件回执\n等回音的来信\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n临时渡船公告\n东岸收件回执\n等回音的来信\n检验证据",
+        "clue": {
+          "detail": "来信人只希望东岸安置站的人收到平安消息。查明邮袋去向后，可以正式归档保存交接记录，也可以给来信人回信，告诉对方消息已经送达。",
+          "name": "等回音的来信",
+          "text": "“路封了，也请把报平安的信送到安置站。”"
+        },
+        "documentWidth": 1265,
+        "feedback": "记录：等回音的来信。“路封了，也请把报平安的信送到安置站。”",
+        "image": {
+          "natural": [
+            1672,
+            941
+          ],
+          "src": "http://127.0.0.1:8962/assets/directions/investigation/quay.png"
+        },
+        "mode": "亲自调查",
+        "progress": "线索 9 / 9 · 已核事实 1 / 3",
+        "result": {
+          "text": "",
+          "title": "",
+          "visible": false
+        },
+        "save": "现场、线索与已核事实已独立保存",
+        "scene": "潮线栈桥",
+        "selects": [
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "林岚 · 值班员",
+                "value": "lin"
+              },
+              {
+                "text": "周远 · 渡船员",
+                "value": "zhou"
+              },
+              {
+                "text": "裴宁 · 北仓保管员",
+                "value": "pei"
+              }
+            ],
+            "value": "lin"
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              },
+              {
+                "text": "临时渡船公告",
+                "value": "tide"
+              },
+              {
+                "text": "东岸收件回执",
+                "value": "receipt"
+              },
+              {
+                "text": "等回音的来信",
+                "value": "letter"
+              }
+            ],
+            "value": "dispatch"
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              },
+              {
+                "text": "临时渡船公告",
+                "value": "tide"
+              },
+              {
+                "text": "东岸收件回执",
+                "value": "receipt"
+              },
+              {
+                "text": "等回音的来信",
+                "value": "letter"
+              }
+            ],
+            "value": "note"
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "21:35 临时渡船",
+                "value": "ferry"
+              },
+              {
+                "text": "22:10 列车",
+                "value": "train"
+              },
+              {
+                "text": "21:00 北仓转运",
+                "value": "warehouse"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              },
+              {
+                "text": "临时渡船公告",
+                "value": "tide"
+              },
+              {
+                "text": "东岸收件回执",
+                "value": "receipt"
+              },
+              {
+                "text": "等回音的来信",
+                "value": "letter"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              },
+              {
+                "text": "临时渡船公告",
+                "value": "tide"
+              },
+              {
+                "text": "东岸收件回执",
+                "value": "receipt"
+              },
+              {
+                "text": "等回音的来信",
+                "value": "letter"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "东岸安置站",
+                "value": "east"
+              },
+              {
+                "text": "北仓",
+                "value": "north"
+              },
+              {
+                "text": "旧隧道收件点",
+                "value": "tunnel"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              },
+              {
+                "text": "临时渡船公告",
+                "value": "tide"
+              },
+              {
+                "text": "东岸收件回执",
+                "value": "receipt"
+              },
+              {
+                "text": "等回音的来信",
+                "value": "letter"
+              }
+            ],
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              },
+              {
+                "text": "临时渡船公告",
+                "value": "tide"
+              },
+              {
+                "text": "东岸收件回执",
+                "value": "receipt"
+              },
+              {
+                "text": "等回音的来信",
+                "value": "letter"
+              }
+            ],
+            "value": ""
+          }
+        ],
+        "viewport": [
+          1280,
+          720
+        ]
+      }
+    },
+    {
+      "name": "Actual native route and destination choices with their paired discovered records verify three facts and enable epilogue choices only now",
+      "passed": true,
+      "after": {
+        "claimText": "1. 谁决定改道\n已核实\n\n是谁决定把蓝锚邮袋转往栈桥？\n\n待证解释\n选择你的推断\n林岚 · 值班员\n周远 · 渡船员\n裴宁 · 北仓保管员\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n临时渡船公告\n东岸收件回执\n等回音的来信\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n临时渡船公告\n东岸收件回执\n等回音的来信\n检验证据\n两条记录交叉验证，已核实。\n2. 走哪条交通线\n已核实\n\n蓝锚邮袋经哪一班交通工具离港？\n\n待证解释\n选择你的推断\n21:35 临时渡船\n22:10 列车\n21:00 北仓转运\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n临时渡船公告\n东岸收件回执\n等回音的来信\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n临时渡船公告\n东岸收件回执\n等回音的来信\n检验证据\n两条记录交叉验证，已核实。\n3. 最后送到哪里\n已核实\n\n哪一个地点实际收到蓝锚邮袋？\n\n待证解释\n选择你的推断\n东岸安置站\n北仓\n旧隧道收件点\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n临时渡船公告\n东岸收件回执\n等回音的来信\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n临时渡船公告\n东岸收件回执\n等回音的来信\n检验证据\n两条记录交叉验证，已核实。",
+        "clue": {
+          "detail": "来信人只希望东岸安置站的人收到平安消息。查明邮袋去向后，可以正式归档保存交接记录，也可以给来信人回信，告诉对方消息已经送达。",
+          "name": "等回音的来信",
+          "text": "“路封了，也请把报平安的信送到安置站。”"
+        },
+        "documentWidth": 1265,
+        "feedback": "“最后送到哪里”已由两条记录交叉验证。",
+        "image": {
+          "natural": [
+            1672,
+            941
+          ],
+          "src": "http://127.0.0.1:8962/assets/directions/investigation/quay.png"
+        },
+        "mode": "亲自调查",
+        "progress": "线索 9 / 9 · 已核事实 3 / 3",
+        "result": {
+          "text": "",
+          "title": "",
+          "visible": false
+        },
+        "save": "现场、线索与已核事实已独立保存",
+        "scene": "潮线栈桥",
+        "selects": [
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "林岚 · 值班员",
+                "value": "lin"
+              },
+              {
+                "text": "周远 · 渡船员",
+                "value": "zhou"
+              },
+              {
+                "text": "裴宁 · 北仓保管员",
+                "value": "pei"
+              }
+            ],
+            "value": "lin"
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              },
+              {
+                "text": "临时渡船公告",
+                "value": "tide"
+              },
+              {
+                "text": "东岸收件回执",
+                "value": "receipt"
+              },
+              {
+                "text": "等回音的来信",
+                "value": "letter"
+              }
+            ],
+            "value": "dispatch"
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              },
+              {
+                "text": "临时渡船公告",
+                "value": "tide"
+              },
+              {
+                "text": "东岸收件回执",
+                "value": "receipt"
+              },
+              {
+                "text": "等回音的来信",
+                "value": "letter"
+              }
+            ],
+            "value": "note"
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "21:35 临时渡船",
+                "value": "ferry"
+              },
+              {
+                "text": "22:10 列车",
+                "value": "train"
+              },
+              {
+                "text": "21:00 北仓转运",
+                "value": "warehouse"
+              }
+            ],
+            "value": "ferry"
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              },
+              {
+                "text": "临时渡船公告",
+                "value": "tide"
+              },
+              {
+                "text": "东岸收件回执",
+                "value": "receipt"
+              },
+              {
+                "text": "等回音的来信",
+                "value": "letter"
+              }
+            ],
+            "value": "timetable"
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              },
+              {
+                "text": "临时渡船公告",
+                "value": "tide"
+              },
+              {
+                "text": "东岸收件回执",
+                "value": "receipt"
+              },
+              {
+                "text": "等回音的来信",
+                "value": "letter"
+              }
+            ],
+            "value": "tide"
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "东岸安置站",
+                "value": "east"
+              },
+              {
+                "text": "北仓",
+                "value": "north"
+              },
+              {
+                "text": "旧隧道收件点",
+                "value": "tunnel"
+              }
+            ],
+            "value": "east"
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              },
+              {
+                "text": "临时渡船公告",
+                "value": "tide"
+              },
+              {
+                "text": "东岸收件回执",
+                "value": "receipt"
+              },
+              {
+                "text": "等回音的来信",
+                "value": "letter"
+              }
+            ],
+            "value": "bag"
+          },
+          {
+            "disabled": false,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              },
+              {
+                "text": "临时渡船公告",
+                "value": "tide"
+              },
+              {
+                "text": "东岸收件回执",
+                "value": "receipt"
+              },
+              {
+                "text": "等回音的来信",
+                "value": "letter"
+              }
+            ],
+            "value": "receipt"
+          }
+        ],
+        "viewport": [
+          1280,
+          720
+        ]
+      }
+    },
+    {
+      "name": "Selecting a native epilogue preserves the supported case until explicit submit",
+      "passed": true,
+      "after": {
+        "progress": "线索 9 / 9 · 已核事实 3 / 3",
+        "result": {
+          "text": "",
+          "title": "",
+          "visible": false
+        },
+        "submitEnabled": true
+      }
+    },
+    {
+      "name": "Actual manual final submit creates the archive ending, supported time line, terminal paused case and retained nine clues",
+      "passed": true,
+      "after": {
+        "claimText": "1. 谁决定改道\n已核实\n\n是谁决定把蓝锚邮袋转往栈桥？\n\n待证解释\n选择你的推断\n林岚 · 值班员\n周远 · 渡船员\n裴宁 · 北仓保管员\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n临时渡船公告\n东岸收件回执\n等回音的来信\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n临时渡船公告\n东岸收件回执\n等回音的来信\n检验证据\n两条记录交叉验证，已核实。\n2. 走哪条交通线\n已核实\n\n蓝锚邮袋经哪一班交通工具离港？\n\n待证解释\n选择你的推断\n21:35 临时渡船\n22:10 列车\n21:00 北仓转运\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n临时渡船公告\n东岸收件回执\n等回音的来信\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n临时渡船公告\n东岸收件回执\n等回音的来信\n检验证据\n两条记录交叉验证，已核实。\n3. 最后送到哪里\n已核实\n\n哪一个地点实际收到蓝锚邮袋？\n\n待证解释\n选择你的推断\n东岸安置站\n北仓\n旧隧道收件点\n证据 1\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n临时渡船公告\n东岸收件回执\n等回音的来信\n证据 2\n选择已发现证据\n停摆的挂钟\n末班列车表\n归还的蓝锚空邮袋\n签出交接册\n林岚的便签\n封存的北仓钥匙\n临时渡船公告\n东岸收件回执\n等回音的来信\n检验证据\n两条记录交叉验证，已核实。",
+        "clue": {
+          "detail": "来信人只希望东岸安置站的人收到平安消息。查明邮袋去向后，可以正式归档保存交接记录，也可以给来信人回信，告诉对方消息已经送达。",
+          "name": "等回音的来信",
+          "text": "“路封了，也请把报平安的信送到安置站。”"
+        },
+        "documentWidth": 1265,
+        "feedback": "林岚改道，21:35 的渡船载走蓝锚邮袋，东岸安置站在 21:50 收到它。你把证据与交接时间归入夜港档案。下一位值班人不必再猜钟面上的时间。",
+        "image": {
+          "natural": [
+            1672,
+            941
+          ],
+          "src": "http://127.0.0.1:8962/assets/directions/investigation/quay.png"
+        },
+        "mode": "调查结案 · 已暂停",
+        "progress": "线索 9 / 9 · 已核事实 3 / 3",
+        "result": {
+          "text": "林岚改道，21:35 的渡船载走蓝锚邮袋，东岸安置站在 21:50 收到它。你把证据与交接时间归入夜港档案。下一位值班人不必再猜钟面上的时间。",
+          "title": "正式归档",
+          "visible": true
+        },
+        "save": "现场、线索与已核事实已独立保存",
+        "scene": "潮线栈桥",
+        "selects": [
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "林岚 · 值班员",
+                "value": "lin"
+              },
+              {
+                "text": "周远 · 渡船员",
+                "value": "zhou"
+              },
+              {
+                "text": "裴宁 · 北仓保管员",
+                "value": "pei"
+              }
+            ],
+            "value": "lin"
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              },
+              {
+                "text": "临时渡船公告",
+                "value": "tide"
+              },
+              {
+                "text": "东岸收件回执",
+                "value": "receipt"
+              },
+              {
+                "text": "等回音的来信",
+                "value": "letter"
+              }
+            ],
+            "value": "dispatch"
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              },
+              {
+                "text": "临时渡船公告",
+                "value": "tide"
+              },
+              {
+                "text": "东岸收件回执",
+                "value": "receipt"
+              },
+              {
+                "text": "等回音的来信",
+                "value": "letter"
+              }
+            ],
+            "value": "note"
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "21:35 临时渡船",
+                "value": "ferry"
+              },
+              {
+                "text": "22:10 列车",
+                "value": "train"
+              },
+              {
+                "text": "21:00 北仓转运",
+                "value": "warehouse"
+              }
+            ],
+            "value": "ferry"
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              },
+              {
+                "text": "临时渡船公告",
+                "value": "tide"
+              },
+              {
+                "text": "东岸收件回执",
+                "value": "receipt"
+              },
+              {
+                "text": "等回音的来信",
+                "value": "letter"
+              }
+            ],
+            "value": "timetable"
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              },
+              {
+                "text": "临时渡船公告",
+                "value": "tide"
+              },
+              {
+                "text": "东岸收件回执",
+                "value": "receipt"
+              },
+              {
+                "text": "等回音的来信",
+                "value": "letter"
+              }
+            ],
+            "value": "tide"
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择你的推断",
+                "value": ""
+              },
+              {
+                "text": "东岸安置站",
+                "value": "east"
+              },
+              {
+                "text": "北仓",
+                "value": "north"
+              },
+              {
+                "text": "旧隧道收件点",
+                "value": "tunnel"
+              }
+            ],
+            "value": "east"
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              },
+              {
+                "text": "临时渡船公告",
+                "value": "tide"
+              },
+              {
+                "text": "东岸收件回执",
+                "value": "receipt"
+              },
+              {
+                "text": "等回音的来信",
+                "value": "letter"
+              }
+            ],
+            "value": "bag"
+          },
+          {
+            "disabled": true,
+            "id": "",
+            "options": [
+              {
+                "text": "选择已发现证据",
+                "value": ""
+              },
+              {
+                "text": "停摆的挂钟",
+                "value": "clock"
+              },
+              {
+                "text": "末班列车表",
+                "value": "timetable"
+              },
+              {
+                "text": "归还的蓝锚空邮袋",
+                "value": "bag"
+              },
+              {
+                "text": "签出交接册",
+                "value": "dispatch"
+              },
+              {
+                "text": "林岚的便签",
+                "value": "note"
+              },
+              {
+                "text": "封存的北仓钥匙",
+                "value": "key"
+              },
+              {
+                "text": "临时渡船公告",
+                "value": "tide"
+              },
+              {
+                "text": "东岸收件回执",
+                "value": "receipt"
+              },
+              {
+                "text": "等回音的来信",
+                "value": "letter"
+              }
+            ],
+            "value": "receipt"
+          }
+        ],
+        "viewport": [
+          1280,
+          720
+        ]
+      }
+    },
+    {
+      "name": "Final source reload with explicit demo query retains the genuine saved archive case rather than overwriting it",
+      "passed": true,
+      "after": {
+        "progress": "线索 9 / 9 · 已核事实 3 / 3",
+        "mode": "调查结案 · 已暂停",
+        "result": {
+          "text": "林岚改道，21:35 的渡船载走蓝锚邮袋，东岸安置站在 21:50 收到它。你把证据与交接时间归入夜港档案。下一位值班人不必再猜钟面上的时间。",
+          "title": "正式归档",
+          "visible": true
+        }
+      }
+    },
+    {
+      "name": "Native pause freezes a running actual demonstration after its first discovered clue",
+      "passed": true,
+      "before": {
+        "progress": "线索 1 / 9 · 已核事实 0 / 3",
+        "scene": "旧站候车室"
+      },
+      "after": {
+        "progress": "线索 1 / 9 · 已核事实 0 / 3",
+        "scene": "旧站候车室",
+        "mode": "调查暂停"
+      }
+    },
+    {
+      "name": "Native takeover keeps the actual first clue, scene and deductions while switching demonstration to manual",
+      "passed": true,
+      "after": {
+        "progress": "线索 1 / 9 · 已核事实 0 / 3",
+        "scene": "旧站候车室",
+        "mode": "亲自调查"
+      }
+    },
+    {
+      "name": "Final actual 390px layout keeps native scene and internally scrollable casebook within page width, all displayed buttons at least 44px, and adjacent station targets separated",
+      "passed": true,
+      "after": {
+        "book": {
+          "bottom": 1037.0729370117188,
+          "height": 376.6666870117187,
+          "left": 14.666666984558104,
+          "right": 360.0000104904175,
+          "top": 660.40625,
+          "width": 345.3333435058594,
+          "x": 14.666666984558104,
+          "y": 660.40625
+        },
+        "bookOverflow": "auto",
+        "controlSizes": [
+          {
+            "height": 44,
+            "text": "01 车站",
+            "width": 60.02083587646485
+          },
+          {
+            "height": 44,
+            "text": "02 值班室",
+            "width": 72.02083587646484
+          },
+          {
+            "height": 44,
+            "text": "03 码头",
+            "width": 60.02083587646485
+          },
+          {
+            "height": 44,
+            "text": "隐藏线索标记",
+            "width": 67
+          },
+          {
+            "height": 44,
+            "text": "1挂钟",
+            "width": 66.33333587646484
+          },
+          {
+            "height": 44,
+            "text": "2班次表",
+            "width": 76.33333587646484
+          },
+          {
+            "height": 44,
+            "text": "3邮袋签",
+            "width": 76.33333587646484
+          },
+          {
+            "height": 44,
+            "text": "继续调查",
+            "width": 65.33333587646484
+          },
+          {
+            "height": 44,
+            "text": "完整示范",
+            "width": 65.33333587646484
+          },
+          {
+            "height": 44,
+            "text": "示范 ×2",
+            "width": 60.82291793823242
+          },
+          {
+            "height": 44,
+            "text": "全屏调查",
+            "width": 65.33333587646484
+          },
+          {
+            "height": 44,
+            "text": "停摆的挂钟",
+            "width": 74.33333587646484
+          },
+          {
+            "height": 44,
+            "text": "检验证据",
+            "width": 75.33333587646484
+          },
+          {
+            "height": 44,
+            "text": "检验证据",
+            "width": 75.33333587646484
+          },
+          {
+            "height": 44,
+            "text": "检验证据",
+            "width": 75.33333587646484
+          },
+          {
+            "height": 69.625,
+            "text": "正式归档保存交接记录，让这次临时改道有据可查。",
+            "width": 299.3333435058594
+          },
+          {
+            "height": 69.625,
+            "text": "给来信人回信告诉等待回音的人，平安消息已经送达。",
+            "width": 299.3333435058594
+          },
+          {
+            "height": 44,
+            "text": "提交调查与结局",
+            "width": 299.3333435058594
+          }
+        ],
+        "documentWidth": 375,
+        "hotspots": [
+          {
+            "circle": {
+              "bottom": 396.8854370117187,
+              "height": 25,
+              "left": 226.625,
+              "right": 251.625,
+              "top": 371.8854370117187,
+              "width": 25,
+              "x": 226.625,
+              "y": 371.8854370117187
+            },
+            "label": "查看停摆的挂钟",
+            "rect": {
+              "bottom": 402.3854370117187,
+              "height": 44,
+              "left": 222.625,
+              "right": 288.95833587646484,
+              "top": 358.38543701171875,
+              "width": 66.33333587646484,
+              "x": 222.625,
+              "y": 358.38543701171875
+            }
+          },
+          {
+            "circle": {
+              "bottom": 434.7604370117187,
+              "height": 25,
+              "left": 230.0729217529297,
+              "right": 255.0729217529297,
+              "top": 409.7604370117187,
+              "width": 25,
+              "x": 230.0729217529297,
+              "y": 409.7604370117187
+            },
+            "label": "查看末班列车表",
+            "rect": {
+              "bottom": 448.2604370117187,
+              "height": 44,
+              "left": 226.0729217529297,
+              "right": 302.40625762939453,
+              "top": 404.2604370117187,
+              "width": 76.33333587646484,
+              "x": 226.0729217529297,
+              "y": 404.2604370117187
+            }
+          },
+          {
+            "circle": {
+              "bottom": 502.7395935058594,
+              "height": 25,
+              "left": 261.15625,
+              "right": 286.15625,
+              "top": 477.7395935058594,
+              "width": 25,
+              "x": 261.15625,
+              "y": 477.7395935058594
+            },
+            "label": "查看归还的蓝锚空邮袋",
+            "rect": {
+              "bottom": 512.2395935058594,
+              "height": 44,
+              "left": 257.15625,
+              "right": 333.48958587646484,
+              "top": 468.2395935058594,
+              "width": 76.33333587646484,
+              "x": 257.15625,
+              "y": 468.2395935058594
+            }
+          }
+        ],
+        "image": {
+          "bottom": 548.5208435058594,
+          "height": 194.23959350585935,
+          "left": 14.666666984558104,
+          "right": 359.98960399627686,
+          "top": 354.28125,
+          "width": 345.32293701171875,
+          "x": 14.666666984558104,
+          "y": 354.28125
+        },
+        "map": {
+          "bottom": 548.5208435058594,
+          "height": 194.23959350585935,
+          "left": 14.666666984558104,
+          "right": 359.98960399627686,
+          "top": 354.28125,
+          "width": 345.32293701171875,
+          "x": 14.666666984558104,
+          "y": 354.28125
+        },
+        "stage": {
+          "bottom": 1037.7395935058594,
+          "height": 845,
+          "left": 14,
+          "right": 360.6666870117187,
+          "top": 192.73959350585935,
+          "width": 346.66668701171875,
+          "x": 14,
+          "y": 192.73959350585935
+        },
+        "viewport": [
+          390,
+          844
+        ],
+        "stationTargetGap": 1.875
+      },
+      "scope": "Responsive browser viewport only; physical touch hardware was not tested."
+    },
+    {
+      "name": "ordinary-complete-demo-reply-ending",
+      "passed": true,
+      "observed": {
+        "progress": "线索 9 / 9 · 已核事实 3 / 3",
+        "mode": "调查结案 · 已暂停",
+        "result": {
+          "text": "你写下回信：封路没有拦住这封平安信。林岚安排改道，周远随 21:35 的渡船交付邮袋，东岸安置站已经收到。窗外夜色未散，来信的人终于有了回音。",
+          "title": "给来信人回信",
+          "visible": true
+        },
+        "values": [
+          "lin",
+          "dispatch",
+          "note",
+          "ferry",
+          "timetable",
+          "tide",
+          "east",
+          "bag",
+          "receipt"
+        ]
+      },
+      "boundary": "Native complete-demo button, ordinary RAF cadence at ×2; no time or game-state injection."
+    },
+    {
+      "name": "actual-direction-map-and-reference-nav",
+      "passed": true,
+      "observed": "Native header navigation to directions and references visibly retains first ten, deck and wildlife, old 107 / 116 counts, and separate thirteenth commercial-genre reference."
+    },
+    {
+      "name": "reply-ending-retained-after-native-reference-roundtrip",
+      "passed": true,
+      "observed": {
+        "progress": "线索 9 / 9 · 已核事实 3 / 3",
+        "mode": "调查结案 · 已暂停",
+        "result": {
+          "text": "你写下回信：封路没有拦住这封平安信。林岚安排改道，周远随 21:35 的渡船交付邮袋，东岸安置站已经收到。窗外夜色未散，来信的人终于有了回音。",
+          "title": "给来信人回信",
+          "visible": true
+        }
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-investigation-captures/manual-archive.png",
+      "description": "Actual manually completed case with formal archive epilogue, nine discovered records and original quay scene.",
+      "viewport": [
+        1280,
+        720
+      ],
+      "capture_size": [
+        1265,
+        712
+      ],
+      "format": "JPEG",
+      "sha256": "a2414bb6404274fe2bfd4d69bce9c42221a63cc1e583db578eb140033ce035b8"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-investigation-captures/mobile-casebook.png",
+      "description": "Final actual 390×844 responsive investigation stage aligned in view: station, native controls and internally scrollable casebook; adjacent 44px station targets separated by 1.875px.",
+      "viewport": [
+        390,
+        844
+      ],
+      "capture_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "sha256": "d16aeb55992851b5f351f1cfc274b35fffe5b1ea295b152910043556f9c8656f"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-investigation-captures/fullscreen-office.png",
+      "description": "Final source actual native fullscreen office: six genuinely discovered clues after takeover, first manually supported deduction, original scene, correctly centered native hotspots and full casebook.",
+      "viewport": [
+        1722,
+        1034
+      ],
+      "capture_size": [
+        1722,
+        1034
+      ],
+      "format": "JPEG",
+      "sha256": "196d9edca8c50e95babe2bcec3240e528e876569eed4c6403209c993157642d4"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-investigation-captures/fullscreen-reply.png",
+      "description": "Actual completed 25-action ordinary ×2 demo in native full-stage fullscreen: nine discovered clues, three verified facts and original reply ending.",
+      "viewport": [
+        1722,
+        1034
+      ],
+      "capture_size": [
+        1722,
+        1034
+      ],
+      "format": "JPEG",
+      "sha256": "9ae83d0f9a9a614d2482c414998198aa1162a345b3462afa93827a98ab514e19"
+    }
+  ],
+  "notes": [
+    "Native browser controls and visible DOM were used without injecting game state, clues, time, verification or victory.",
+    "Desktop fullscreen is a real browser fullscreen of the complete game stage. Capture dimensions and format are read from the original saved screenshot bytes.",
+    "Responsive viewport tested at 390 × 844 CSS pixels; original capture pixels may differ. This is viewport verification, not physical-device touch testing.",
+    "A clock / timetable touch-area overlap discovered in narrow layout was corrected before the accepted mobile capture. Final native touch rectangles have 1.875 pixels separation and all visible buttons meet 44 × 44 CSS pixels.",
+    "Rule and controller reports separately cover replay validation, action limits, asset failures and storage failure adapters; these are not claimed as browser fault injection."
+  ]
+}

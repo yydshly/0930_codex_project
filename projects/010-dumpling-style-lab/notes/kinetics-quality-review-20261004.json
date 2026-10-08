@@ -1,0 +1,139 @@
+{
+  "production_visual_review": true,
+  "browser_acceptance_complete": false,
+  "review_method": "Reviewed production Skia initial/progress/complete contact sheets and separate nested images. Nested is actual THREE geometry via explicit depth-buffered compatibility rasterization, not GPU screenshots.",
+  "frames": [
+    {
+      "id": "ribbon",
+      "phase": "initial",
+      "file": "assets/game-forms/kinetics-qa/ribbon-initial.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D scene rendering",
+      "sha256": "d59fe06a3a971c05a821db099279c059762ef6943f38b636324972098485262a",
+      "review_observation": "风峡谷有清楚左右岸；玻璃信使沿有光晕的实际路径前进，风印与过程、结果状态可读。没有把背景图当作运动规则。"
+    },
+    {
+      "id": "ribbon",
+      "phase": "progress",
+      "file": "assets/game-forms/kinetics-qa/ribbon-progress.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D scene rendering",
+      "sha256": "84a0c68e5b9de7ffdfc9ca7e9af5d4c366285677da7764953b014348c86c0f71",
+      "review_observation": "风峡谷有清楚左右岸；玻璃信使沿有光晕的实际路径前进，风印与过程、结果状态可读。没有把背景图当作运动规则。"
+    },
+    {
+      "id": "ribbon",
+      "phase": "complete",
+      "file": "assets/game-forms/kinetics-qa/ribbon-complete.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D scene rendering",
+      "sha256": "1d46bf2a6ddca2862fc30d03088ffe4b8181c823eef2eef1a487e8e7aeec2dac",
+      "review_observation": "风峡谷有清楚左右岸；玻璃信使沿有光晕的实际路径前进，风印与过程、结果状态可读。没有把背景图当作运动规则。"
+    },
+    {
+      "id": "rescue",
+      "phase": "initial",
+      "file": "assets/game-forms/kinetics-qa/rescue-initial.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D scene rendering",
+      "sha256": "5b35ff5ccef2814613492d9cb91371f16a90ccba716f68b227592505cc381b2a",
+      "review_observation": "开局显示待放行队伍；行进中能看到队员、逐步施工的木梯、选中环和可开凿石墙；完成结果在中央下方，没有遮挡通路。"
+    },
+    {
+      "id": "rescue",
+      "phase": "progress",
+      "file": "assets/game-forms/kinetics-qa/rescue-progress.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D scene rendering",
+      "sha256": "f9b311e375ce267691c2638beda17a473da027711eaf2614497619dc4239be37",
+      "review_observation": "开局显示待放行队伍；行进中能看到队员、逐步施工的木梯、选中环和可开凿石墙；完成结果在中央下方，没有遮挡通路。"
+    },
+    {
+      "id": "rescue",
+      "phase": "complete",
+      "file": "assets/game-forms/kinetics-qa/rescue-complete.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D scene rendering",
+      "sha256": "b746215349922e1bc29436139727ba333d6398bebb465494555977698cbf0cd1",
+      "review_observation": "开局显示待放行队伍；行进中能看到队员、逐步施工的木梯、选中环和可开凿石墙；完成结果在中央下方，没有遮挡通路。"
+    },
+    {
+      "id": "rewind",
+      "phase": "initial",
+      "file": "assets/game-forms/kinetics-qa/rewind-initial.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D scene rendering",
+      "sha256": "115d7a5b48017ffab990e58ea13cede698ffc3ca105facb95b646c382ae18e05",
+      "review_observation": "横向桥面与人物脚底已校准；下沉桥和配重在下层，晶石状态及回溯时间可读；锁桥后人物到达右岸，完成卡避开人物。"
+    },
+    {
+      "id": "rewind",
+      "phase": "progress",
+      "file": "assets/game-forms/kinetics-qa/rewind-progress.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D scene rendering",
+      "sha256": "687666eb57d249e76fda5294383c05876c8fea03fea98af5b4bcc1760fce482d",
+      "review_observation": "横向桥面与人物脚底已校准；下沉桥和配重在下层，晶石状态及回溯时间可读；锁桥后人物到达右岸，完成卡避开人物。"
+    },
+    {
+      "id": "rewind",
+      "phase": "complete",
+      "file": "assets/game-forms/kinetics-qa/rewind-complete.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D scene rendering",
+      "sha256": "0a267e7d9ad55b208d3b940f872a1f22458aab749d2551124721d3eb2eb7df94",
+      "review_observation": "横向桥面与人物脚底已校准；下沉桥和配重在下层，晶石状态及回溯时间可读；锁桥后人物到达右岸，完成卡避开人物。"
+    },
+    {
+      "id": "nested",
+      "phase": "initial",
+      "file": "assets/game-forms/kinetics-qa/nested-initial.png",
+      "pausedStateUnchanged": true,
+      "method": "Production actual THREE meshes and cameras using explicitly labelled software projection, plus production HUD",
+      "sha256": "fe443a24dddb3fc502bab396a86116948a57cd73bf75acf2cecb2c0ce3342de3",
+      "review_observation": "同几何深度缓冲消除地面遮挡和材质黑块；小模型显示当前两桥和棋子，大庭院显示相同布置；水道缺口、木桥、石台和两端拱门可辨识。"
+    },
+    {
+      "id": "nested",
+      "phase": "progress",
+      "file": "assets/game-forms/kinetics-qa/nested-progress.png",
+      "pausedStateUnchanged": true,
+      "method": "Production actual THREE meshes and cameras using explicitly labelled software projection, plus production HUD",
+      "sha256": "6a32b6f729df9c5a6ce1074ab29c8338cc3e018d4f1c9c842ed83a714a9a5891",
+      "review_observation": "同几何深度缓冲消除地面遮挡和材质黑块；小模型显示当前两桥和棋子，大庭院显示相同布置；水道缺口、木桥、石台和两端拱门可辨识。"
+    },
+    {
+      "id": "nested",
+      "phase": "complete",
+      "file": "assets/game-forms/kinetics-qa/nested-complete.png",
+      "pausedStateUnchanged": true,
+      "method": "Production actual THREE meshes and cameras using explicitly labelled software projection, plus production HUD",
+      "sha256": "e76d619f896683b298070d06a1da73964e53f3f0a1117bfc06bc08888d35cc3d",
+      "review_observation": "同几何深度缓冲消除地面遮挡和材质黑块；小模型显示当前两桥和棋子，大庭院显示相同布置；水道缺口、木桥、石台和两端拱门可辨识。"
+    }
+  ],
+  "fixes": [
+    "从静态矿井图移除石墙、从钟楼图移除桥，互动对象由真实状态单独绘制。",
+    "透明素材按 alpha>=16 的元数据定位，保持原 PNG/WebP 像素不变；姿势使用统一比例。",
+    "断线末端停止重复吸附，能实际脱轨坠落。",
+    "救援开局显示待入场队伍。",
+    "三维兼容投影使用逐像素深度缓冲与透视校正 UV，模型视图只显示小模型。",
+    "验证适配器同步原生离屏画布尺寸，完整读取石木纹理；避免把适配器尺寸问题误当成浏览器渲染。",
+    "钟楼只展示有作用的左右移动按钮。"
+  ],
+  "verified": [
+    "四种玩法通过正常操作完成，不注入胜利状态。",
+    "50 项规则与 60 项生命周期/控件/模型检查。",
+    "生产初始、过程、完成共十二帧；暂停绘制不改变保存状态。",
+    "真实 Three.js 网格的八倍尺度与射线拖动。"
+  ],
+  "not_verified": [
+    "真实浏览器窄屏和全屏布局",
+    "真实键鼠、触摸和无障碍树",
+    "浏览器 localStorage 刷新保存",
+    "真实 WebGL 光照、材质、抗锯齿、性能",
+    "实际声音输出"
+  ],
+  "browser_blocker": "cua.getState 初始化失败：trusted Node process exited unexpectedly; kernel reset, rerun your request。没有使用其他浏览器自动化绕过。",
+  "scope": "四种原创参与形式短场景；不等于完整商业游戏，也不宣称产品质量全部验收。"
+}

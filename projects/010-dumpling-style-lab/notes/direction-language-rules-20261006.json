@@ -1,0 +1,834 @@
+{
+  "date": "2026-10-06",
+  "direction": "灯市译语 / LANTERN LEXICON",
+  "passed": true,
+  "count": 54,
+  "checks": [
+    "fresh world starts paused at only the unlocked market with empty dictionary and history",
+    "public metadata contains six signs eight candidate meanings and no answer fields",
+    "the twelve exact context signatures are unique and belong to four five and three scene observations",
+    "all gameplay actions are blocked atomically while paused",
+    "malformed extra symbolic inherited and accessor fields are rejected atomically",
+    "pause requires an explicit boolean records accepted actions and prevents subsequent gameplay",
+    "harbor and lighthouse remain inaccessible until their preceding requests are solved",
+    "a new observation requires its actual current scene and unknown IDs never grant evidence",
+    "unknown glyphs unknown candidate meanings and null hypotheses are rejected",
+    "a correct hypothesis alone neither awards points nor confirms a sign",
+    "zero-context validation accepts a failed attempt without disclosing whether a guess is right",
+    "repeating the same observation cannot manufacture a second distinct validation context",
+    "unrelated observations cannot serve as proof for a sign they do not contain",
+    "even two correct contexts require explicit validation and never automatically confirm",
+    "all six signs are confirmed only after at least two actual distinct containing contexts",
+    "a decoy hypothesis with sufficient evidence produces an honest failure and remains editable",
+    "a wrong nondecoy candidate also fails rather than confusing two real signs",
+    "validation without a hypothesis is rejected without a failure counter or history entry",
+    "revisiting observations selects current evidence without new evidence or points",
+    "a previously observed context can be reread across scenes without moving the response scene",
+    "visiting an unlocked scene clears selected evidence while retaining the notebook",
+    "a confirmed sign cannot be changed to a false meaning but identical reselection is safe",
+    "revalidating a known sign cannot repeat its twenty-point reward or confirmation counter",
+    "market response is unavailable until all three request signs are confirmed from evidence",
+    "missing gift observation blocks the giving proof and therefore the market request",
+    "the right market response unlocks harbor once and leaves explicit travel to the player",
+    "valid wrong choices in all three scenes preserve progress with honest response failures",
+    "response candidates are scoped to the current scene and invented answers are atomic rejects",
+    "harbor requires the observed two-sign route plaque even when all six signs are known",
+    "one latch context cannot confirm open or advance harbor without the gate demonstration",
+    "the right harbor response unlocks lighthouse without teleporting or finishing",
+    "lighthouse arrival has all six proved signs but still requires its actual keeper observation",
+    "all solved requests leave the world exploring until an explicit finish action",
+    "finish cannot skip observations vocabulary proof or any of the three requests",
+    "ordinary full manual solution records twelve observations six confirmations three responses and 330 points",
+    "a second manual order repairs a wrong word and three wrong replies through the same API for 330 points",
+    "terminal completion pauses the world and rejects every action without state leakage",
+    "ordinary demonstration uses fresh legal actions and replays every intermediate state to 330 points",
+    "the planner repairs a partial human guess failed validation paused save and nondefault scene",
+    "planner proposals are deterministic pure and legal while fresh paused and midstory",
+    "accepted wrong validations wrong replies revisits and pause actions all survive exact replay",
+    "restoring an active world is always paused and ordinary continuation remains possible",
+    "save format stores only engine version and accepted actions without world or objective grants",
+    "replay rejects malformed top-level saves version changes missing fields and nonarray action lists",
+    "replay rejects invented unknown extra malformed and illegally gated actions",
+    "replay preserves pause barriers and rejects appended actions after terminal finish",
+    "malformed UTF16 surrogate inputs and oversized UTF8 saves are rejected",
+    "accepted action history is capped and the longest legal history still fits its save budget",
+    "fresh worlds and copied status views are isolated from each other and engine state",
+    "mutating an action object after acceptance cannot alter its recorded replay",
+    "forged copied or externally mutated worlds cannot validate grant state or serialize injection",
+    "custom serialization getters and hidden fields cannot conceal fabricated engine state",
+    "status score counts current evidence summary and feedback reflect actual accepted actions",
+    "a completed replay restores all original evidence order six meanings and narrative without auto resume"
+  ],
+  "failures": [],
+  "playthroughs": [
+    {
+      "mode": "manual forward observation and confirmation order",
+      "score": 330,
+      "stats": {
+        "observations": 12,
+        "confirmations": 6,
+        "validations": 6,
+        "wrongVerifications": 0,
+        "responses": 3,
+        "wrongResponses": 0
+      },
+      "actions": [
+        {
+          "type": "pause",
+          "paused": false
+        },
+        {
+          "type": "observe",
+          "id": "m-welcome"
+        },
+        {
+          "type": "observe",
+          "id": "m-lamp"
+        },
+        {
+          "type": "observe",
+          "id": "m-gift"
+        },
+        {
+          "type": "observe",
+          "id": "m-water"
+        },
+        {
+          "type": "guess",
+          "glyph": "person",
+          "meaning": "person"
+        },
+        {
+          "type": "validate",
+          "glyph": "person"
+        },
+        {
+          "type": "guess",
+          "glyph": "give",
+          "meaning": "give"
+        },
+        {
+          "type": "validate",
+          "glyph": "give"
+        },
+        {
+          "type": "guess",
+          "glyph": "lamp",
+          "meaning": "lamp"
+        },
+        {
+          "type": "validate",
+          "glyph": "lamp"
+        },
+        {
+          "type": "respond",
+          "answer": "lantern"
+        },
+        {
+          "type": "visit",
+          "scene": "harbor"
+        },
+        {
+          "type": "observe",
+          "id": "h-water"
+        },
+        {
+          "type": "observe",
+          "id": "h-door"
+        },
+        {
+          "type": "observe",
+          "id": "h-sign"
+        },
+        {
+          "type": "observe",
+          "id": "h-open"
+        },
+        {
+          "type": "observe",
+          "id": "h-lock"
+        },
+        {
+          "type": "guess",
+          "glyph": "water",
+          "meaning": "water"
+        },
+        {
+          "type": "validate",
+          "glyph": "water"
+        },
+        {
+          "type": "guess",
+          "glyph": "door",
+          "meaning": "door"
+        },
+        {
+          "type": "validate",
+          "glyph": "door"
+        },
+        {
+          "type": "guess",
+          "glyph": "open",
+          "meaning": "open"
+        },
+        {
+          "type": "validate",
+          "glyph": "open"
+        },
+        {
+          "type": "respond",
+          "answer": "wheel"
+        },
+        {
+          "type": "visit",
+          "scene": "lighthouse"
+        },
+        {
+          "type": "observe",
+          "id": "l-request"
+        },
+        {
+          "type": "observe",
+          "id": "l-cup"
+        },
+        {
+          "type": "observe",
+          "id": "l-return"
+        },
+        {
+          "type": "respond",
+          "answer": "water"
+        },
+        {
+          "type": "finish"
+        }
+      ]
+    },
+    {
+      "mode": "manual reverse contexts with repaired hypothesis and wrong replies",
+      "score": 330,
+      "stats": {
+        "observations": 12,
+        "confirmations": 6,
+        "validations": 7,
+        "wrongVerifications": 1,
+        "responses": 6,
+        "wrongResponses": 3
+      },
+      "actions": [
+        {
+          "type": "pause",
+          "paused": false
+        },
+        {
+          "type": "observe",
+          "id": "m-water"
+        },
+        {
+          "type": "observe",
+          "id": "m-gift"
+        },
+        {
+          "type": "observe",
+          "id": "m-lamp"
+        },
+        {
+          "type": "observe",
+          "id": "m-welcome"
+        },
+        {
+          "type": "guess",
+          "glyph": "give",
+          "meaning": "sleep"
+        },
+        {
+          "type": "validate",
+          "glyph": "give"
+        },
+        {
+          "type": "guess",
+          "glyph": "lamp",
+          "meaning": "lamp"
+        },
+        {
+          "type": "validate",
+          "glyph": "lamp"
+        },
+        {
+          "type": "guess",
+          "glyph": "give",
+          "meaning": "give"
+        },
+        {
+          "type": "validate",
+          "glyph": "give"
+        },
+        {
+          "type": "guess",
+          "glyph": "person",
+          "meaning": "person"
+        },
+        {
+          "type": "validate",
+          "glyph": "person"
+        },
+        {
+          "type": "respond",
+          "answer": "stone"
+        },
+        {
+          "type": "respond",
+          "answer": "lantern"
+        },
+        {
+          "type": "visit",
+          "scene": "harbor"
+        },
+        {
+          "type": "observe",
+          "id": "h-lock"
+        },
+        {
+          "type": "observe",
+          "id": "h-open"
+        },
+        {
+          "type": "observe",
+          "id": "h-sign"
+        },
+        {
+          "type": "observe",
+          "id": "h-door"
+        },
+        {
+          "type": "observe",
+          "id": "h-water"
+        },
+        {
+          "type": "guess",
+          "glyph": "open",
+          "meaning": "open"
+        },
+        {
+          "type": "validate",
+          "glyph": "open"
+        },
+        {
+          "type": "guess",
+          "glyph": "door",
+          "meaning": "door"
+        },
+        {
+          "type": "validate",
+          "glyph": "door"
+        },
+        {
+          "type": "guess",
+          "glyph": "water",
+          "meaning": "water"
+        },
+        {
+          "type": "validate",
+          "glyph": "water"
+        },
+        {
+          "type": "respond",
+          "answer": "rope"
+        },
+        {
+          "type": "respond",
+          "answer": "wheel"
+        },
+        {
+          "type": "visit",
+          "scene": "lighthouse"
+        },
+        {
+          "type": "observe",
+          "id": "l-return"
+        },
+        {
+          "type": "observe",
+          "id": "l-cup"
+        },
+        {
+          "type": "observe",
+          "id": "l-request"
+        },
+        {
+          "type": "respond",
+          "answer": "lantern"
+        },
+        {
+          "type": "respond",
+          "answer": "water"
+        },
+        {
+          "type": "finish"
+        }
+      ]
+    },
+    {
+      "mode": "ordinary planner actions with every intermediate legal-history replay",
+      "score": 330,
+      "stats": {
+        "observations": 12,
+        "confirmations": 6,
+        "validations": 6,
+        "wrongVerifications": 0,
+        "responses": 3,
+        "wrongResponses": 0
+      },
+      "actions": [
+        {
+          "type": "pause",
+          "paused": false
+        },
+        {
+          "type": "observe",
+          "id": "m-welcome"
+        },
+        {
+          "type": "observe",
+          "id": "m-lamp"
+        },
+        {
+          "type": "observe",
+          "id": "m-gift"
+        },
+        {
+          "type": "observe",
+          "id": "m-water"
+        },
+        {
+          "type": "guess",
+          "glyph": "person",
+          "meaning": "person"
+        },
+        {
+          "type": "validate",
+          "glyph": "person"
+        },
+        {
+          "type": "guess",
+          "glyph": "give",
+          "meaning": "give"
+        },
+        {
+          "type": "validate",
+          "glyph": "give"
+        },
+        {
+          "type": "guess",
+          "glyph": "lamp",
+          "meaning": "lamp"
+        },
+        {
+          "type": "validate",
+          "glyph": "lamp"
+        },
+        {
+          "type": "respond",
+          "answer": "lantern"
+        },
+        {
+          "type": "visit",
+          "scene": "harbor"
+        },
+        {
+          "type": "observe",
+          "id": "h-water"
+        },
+        {
+          "type": "observe",
+          "id": "h-door"
+        },
+        {
+          "type": "observe",
+          "id": "h-sign"
+        },
+        {
+          "type": "observe",
+          "id": "h-open"
+        },
+        {
+          "type": "observe",
+          "id": "h-lock"
+        },
+        {
+          "type": "guess",
+          "glyph": "open",
+          "meaning": "open"
+        },
+        {
+          "type": "validate",
+          "glyph": "open"
+        },
+        {
+          "type": "guess",
+          "glyph": "water",
+          "meaning": "water"
+        },
+        {
+          "type": "validate",
+          "glyph": "water"
+        },
+        {
+          "type": "guess",
+          "glyph": "door",
+          "meaning": "door"
+        },
+        {
+          "type": "validate",
+          "glyph": "door"
+        },
+        {
+          "type": "respond",
+          "answer": "wheel"
+        },
+        {
+          "type": "visit",
+          "scene": "lighthouse"
+        },
+        {
+          "type": "observe",
+          "id": "l-request"
+        },
+        {
+          "type": "observe",
+          "id": "l-cup"
+        },
+        {
+          "type": "observe",
+          "id": "l-return"
+        },
+        {
+          "type": "respond",
+          "answer": "water"
+        },
+        {
+          "type": "finish"
+        }
+      ],
+      "snapshots": [
+        {
+          "action": {
+            "type": "pause",
+            "paused": false
+          },
+          "phase": "exploring",
+          "scene": "market",
+          "score": 0,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "observe",
+            "id": "m-welcome"
+          },
+          "phase": "exploring",
+          "scene": "market",
+          "score": 10,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "observe",
+            "id": "m-lamp"
+          },
+          "phase": "exploring",
+          "scene": "market",
+          "score": 20,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "observe",
+            "id": "m-gift"
+          },
+          "phase": "exploring",
+          "scene": "market",
+          "score": 30,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "observe",
+            "id": "m-water"
+          },
+          "phase": "exploring",
+          "scene": "market",
+          "score": 40,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "guess",
+            "glyph": "person",
+            "meaning": "person"
+          },
+          "phase": "exploring",
+          "scene": "market",
+          "score": 40,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "validate",
+            "glyph": "person"
+          },
+          "phase": "exploring",
+          "scene": "market",
+          "score": 60,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "guess",
+            "glyph": "give",
+            "meaning": "give"
+          },
+          "phase": "exploring",
+          "scene": "market",
+          "score": 60,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "validate",
+            "glyph": "give"
+          },
+          "phase": "exploring",
+          "scene": "market",
+          "score": 80,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "guess",
+            "glyph": "lamp",
+            "meaning": "lamp"
+          },
+          "phase": "exploring",
+          "scene": "market",
+          "score": 80,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "validate",
+            "glyph": "lamp"
+          },
+          "phase": "exploring",
+          "scene": "market",
+          "score": 100,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "respond",
+            "answer": "lantern"
+          },
+          "phase": "exploring",
+          "scene": "market",
+          "score": 130,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "visit",
+            "scene": "harbor"
+          },
+          "phase": "exploring",
+          "scene": "harbor",
+          "score": 130,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "observe",
+            "id": "h-water"
+          },
+          "phase": "exploring",
+          "scene": "harbor",
+          "score": 140,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "observe",
+            "id": "h-door"
+          },
+          "phase": "exploring",
+          "scene": "harbor",
+          "score": 150,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "observe",
+            "id": "h-sign"
+          },
+          "phase": "exploring",
+          "scene": "harbor",
+          "score": 160,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "observe",
+            "id": "h-open"
+          },
+          "phase": "exploring",
+          "scene": "harbor",
+          "score": 170,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "observe",
+            "id": "h-lock"
+          },
+          "phase": "exploring",
+          "scene": "harbor",
+          "score": 180,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "guess",
+            "glyph": "open",
+            "meaning": "open"
+          },
+          "phase": "exploring",
+          "scene": "harbor",
+          "score": 180,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "validate",
+            "glyph": "open"
+          },
+          "phase": "exploring",
+          "scene": "harbor",
+          "score": 200,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "guess",
+            "glyph": "water",
+            "meaning": "water"
+          },
+          "phase": "exploring",
+          "scene": "harbor",
+          "score": 200,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "validate",
+            "glyph": "water"
+          },
+          "phase": "exploring",
+          "scene": "harbor",
+          "score": 220,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "guess",
+            "glyph": "door",
+            "meaning": "door"
+          },
+          "phase": "exploring",
+          "scene": "harbor",
+          "score": 220,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "validate",
+            "glyph": "door"
+          },
+          "phase": "exploring",
+          "scene": "harbor",
+          "score": 240,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "respond",
+            "answer": "wheel"
+          },
+          "phase": "exploring",
+          "scene": "harbor",
+          "score": 270,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "visit",
+            "scene": "lighthouse"
+          },
+          "phase": "exploring",
+          "scene": "lighthouse",
+          "score": 270,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "observe",
+            "id": "l-request"
+          },
+          "phase": "exploring",
+          "scene": "lighthouse",
+          "score": 280,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "observe",
+            "id": "l-cup"
+          },
+          "phase": "exploring",
+          "scene": "lighthouse",
+          "score": 290,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "observe",
+            "id": "l-return"
+          },
+          "phase": "exploring",
+          "scene": "lighthouse",
+          "score": 300,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "respond",
+            "answer": "water"
+          },
+          "phase": "exploring",
+          "scene": "lighthouse",
+          "score": 330,
+          "success": true
+        },
+        {
+          "action": {
+            "type": "finish"
+          },
+          "phase": "complete",
+          "scene": "lighthouse",
+          "score": 330,
+          "success": true
+        }
+      ]
+    }
+  ],
+  "method": "DOM-independent production-engine assertions. Two manual action orders and the ordinary demo discover twelve actual contexts, explicitly guess and cross-validate six signs, respond to three scene-bound requests, then explicitly finish. No prebuilt solved state or synthetic evidence grants are used. Every demo intermediate is restored from strict accepted-action replay, including failed attempts in separate replay tests. Restore always pauses; save validation is deterministic legal-history replay, not player authentication.",
+  "command": "C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe tooling/check-direction-language-rules.mjs"
+}

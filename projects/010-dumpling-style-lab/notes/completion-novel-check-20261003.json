@@ -1,0 +1,430 @@
+{
+  "passed": true,
+  "checks": [
+    "Actual typewriter reveal, readable dialogue, instant-text control and first pair of choices operate through visible UI",
+    "Real canvas choice changes scene, branch, subsequent dialogue and persisted choice history",
+    "E opens dialogue history; continue input cannot advance while history is open and return preserves current place",
+    "Actual pause/save/reload preserves the exact branch, current dialogue, choices, log and text setting",
+    "Letter/voice/stay route produces its conditional dialogue and the actual “并肩的灯火” ending",
+    "Completed ending survives reload; replay clears current story while retaining previously read endings and gallery completion",
+    "Independent signal/record/stay branch changes dialogue and produces “记在纸上的灯” with its own accumulated response values",
+    "Departure route produces “寄向下一站”; three real completed routes populate the own ending ledger and global completion record",
+    "QA writes only QA-prefixed saves; no normal progress writes, browser errors or missing images"
+  ],
+  "result": {
+    "firstEnding": {
+      "version": 1,
+      "node": "platform",
+      "line": 1,
+      "visible": 34,
+      "phase": "won",
+      "route": "letter",
+      "promise": "voice",
+      "trust": 2,
+      "rigor": 0,
+      "choices": [
+        {
+          "node": "opening",
+          "id": "letter",
+          "text": "陪周衡走一趟灯塔"
+        },
+        {
+          "node": "letter",
+          "id": "voice",
+          "text": "让周衡亲口读出这封信"
+        },
+        {
+          "node": "platform",
+          "id": "stay",
+          "text": "留在港口，等天亮"
+        }
+      ],
+      "log": [
+        {
+          "key": "opening:0",
+          "speaker": "这一夜",
+          "text": "雨沿着玻璃往下走。最后一班列车停在窗外，港口的航标却迟迟没有亮。"
+        },
+        {
+          "key": "opening:1",
+          "speaker": "周衡 · 港口调度员",
+          "text": "这封信晚了七年。今晚再不送去，我大概又会把它带回家。"
+        },
+        {
+          "key": "opening:2",
+          "speaker": "林岚 · 航标工程师",
+          "text": "我要去灯塔核对最后一段记录。你若不急着上车，可以陪我们走一程。"
+        },
+        {
+          "key": "opening:choice",
+          "speaker": "你的选择",
+          "text": "陪周衡走一趟灯塔"
+        },
+        {
+          "key": "letter:0",
+          "speaker": "周衡 · 港口调度员",
+          "text": "信是写给我的老搭档的。那年我替他做了一个决定，却从没问他愿不愿意。"
+        },
+        {
+          "key": "letter:1",
+          "speaker": "林岚 · 航标工程师",
+          "text": "他离开前在这里留过一句话：有些事情，收到解释比收到道歉更难。"
+        },
+        {
+          "key": "letter:2",
+          "speaker": "你",
+          "text": "纸上的字还在。现在要怎样把它们交出去？"
+        },
+        {
+          "key": "letter:choice",
+          "speaker": "你的选择",
+          "text": "让周衡亲口读出这封信"
+        },
+        {
+          "key": "voice:0",
+          "speaker": "周衡 · 港口调度员",
+          "text": "“那天我以为替你留下，是为了你好。现在我知道，留下或离开都该由你自己选。”"
+        },
+        {
+          "key": "voice:1",
+          "speaker": "林岚 · 航标工程师",
+          "text": "她没有接话，只把收信人的名字写进值班册。窗外第一束航标光越过了海面。"
+        },
+        {
+          "key": "platform:0",
+          "speaker": "这一夜",
+          "text": "回到候车厅时，雨小了。那封信有了去处，港口也有了回应。"
+        },
+        {
+          "key": "platform:1",
+          "speaker": "周衡 · 港口调度员",
+          "text": "我以为把信送出去，就能立刻轻松。原来还要学着等一个不一定会来的回音。"
+        },
+        {
+          "key": "platform:choice",
+          "speaker": "你的选择",
+          "text": "留在港口，等天亮"
+        }
+      ],
+      "logOffset": 0,
+      "backlog": false,
+      "review": false,
+      "instant": true,
+      "ending": "together",
+      "endings": [
+        "together"
+      ],
+      "decision": "together",
+      "won": true,
+      "score": 500,
+      "elapsed": 1.766499999976157,
+      "scene": "station",
+      "chapter": "回到末班车前",
+      "current": {
+        "speaker": "zhou",
+        "text": "我以为把信送出去，就能立刻轻松。原来还要学着等一个不一定会来的回音。"
+      },
+      "choicesAvailable": [
+        {
+          "id": "stay",
+          "text": "留在港口，等天亮"
+        },
+        {
+          "id": "depart",
+          "text": "登上末班列车"
+        }
+      ],
+      "choiceRects": [
+        {
+          "id": "stay",
+          "text": "留在港口，等天亮",
+          "finish": "stay",
+          "x": 252,
+          "y": 245,
+          "w": 616,
+          "h": 65
+        },
+        {
+          "id": "depart",
+          "text": "登上末班列车",
+          "finish": "depart",
+          "x": 252,
+          "y": 327,
+          "w": 616,
+          "h": 65
+        }
+      ],
+      "endingNames": {
+        "together": "并肩的灯火",
+        "record": "记在纸上的灯",
+        "depart": "寄向下一站"
+      }
+    },
+    "finalState": {
+      "version": 1,
+      "node": "platform",
+      "line": 1,
+      "visible": 29,
+      "phase": "won",
+      "route": "letter",
+      "promise": "record",
+      "trust": 1,
+      "rigor": 1,
+      "choices": [
+        {
+          "node": "opening",
+          "id": "letter",
+          "text": "陪周衡走一趟灯塔"
+        },
+        {
+          "node": "letter",
+          "id": "record-letter",
+          "text": "将信收入档案，留下来由"
+        },
+        {
+          "node": "platform",
+          "id": "depart",
+          "text": "登上末班列车"
+        }
+      ],
+      "log": [
+        {
+          "key": "opening:0",
+          "speaker": "这一夜",
+          "text": "雨沿着玻璃往下走。最后一班列车停在窗外，港口的航标却迟迟没有亮。"
+        },
+        {
+          "key": "opening:1",
+          "speaker": "周衡 · 港口调度员",
+          "text": "这封信晚了七年。今晚再不送去，我大概又会把它带回家。"
+        },
+        {
+          "key": "opening:2",
+          "speaker": "林岚 · 航标工程师",
+          "text": "我要去灯塔核对最后一段记录。你若不急着上车，可以陪我们走一程。"
+        },
+        {
+          "key": "opening:choice",
+          "speaker": "你的选择",
+          "text": "陪周衡走一趟灯塔"
+        },
+        {
+          "key": "letter:0",
+          "speaker": "周衡 · 港口调度员",
+          "text": "信是写给我的老搭档的。那年我替他做了一个决定，却从没问他愿不愿意。"
+        },
+        {
+          "key": "letter:1",
+          "speaker": "林岚 · 航标工程师",
+          "text": "他离开前在这里留过一句话：有些事情，收到解释比收到道歉更难。"
+        },
+        {
+          "key": "letter:2",
+          "speaker": "你",
+          "text": "纸上的字还在。现在要怎样把它们交出去？"
+        },
+        {
+          "key": "letter:choice",
+          "speaker": "你的选择",
+          "text": "将信收入档案，留下来由"
+        },
+        {
+          "key": "recordLetter:0",
+          "speaker": "你",
+          "text": "你把迟到的信放在那份离岗记录旁边，没有替任何人写下原谅。"
+        },
+        {
+          "key": "recordLetter:1",
+          "speaker": "周衡 · 港口调度员",
+          "text": "谢谢。至少以后有人问起那年，我们不用只剩下一句“都过去了”。"
+        },
+        {
+          "key": "platform:0",
+          "speaker": "这一夜",
+          "text": "回到候车厅时，雨小了。那封信有了去处，港口也有了回应。"
+        },
+        {
+          "key": "platform:1",
+          "speaker": "周衡 · 港口调度员",
+          "text": "明天还要继续值班。今晚留下来的事，终于不必再由一个人记着。"
+        },
+        {
+          "key": "platform:choice",
+          "speaker": "你的选择",
+          "text": "登上末班列车"
+        }
+      ],
+      "logOffset": 0,
+      "backlog": false,
+      "review": false,
+      "instant": true,
+      "ending": "depart",
+      "endings": [
+        "together",
+        "record",
+        "depart"
+      ],
+      "decision": "depart",
+      "won": true,
+      "score": 500,
+      "elapsed": 1.0999000000000003,
+      "scene": "station",
+      "chapter": "回到末班车前",
+      "current": {
+        "speaker": "zhou",
+        "text": "明天还要继续值班。今晚留下来的事，终于不必再由一个人记着。"
+      },
+      "choicesAvailable": [
+        {
+          "id": "stay",
+          "text": "留在港口，等天亮"
+        },
+        {
+          "id": "depart",
+          "text": "登上末班列车"
+        }
+      ],
+      "choiceRects": [
+        {
+          "id": "stay",
+          "text": "留在港口，等天亮",
+          "finish": "stay",
+          "x": 252,
+          "y": 245,
+          "w": 616,
+          "h": 65
+        },
+        {
+          "id": "depart",
+          "text": "登上末班列车",
+          "finish": "depart",
+          "x": 252,
+          "y": 327,
+          "w": 616,
+          "h": 65
+        }
+      ],
+      "endingNames": {
+        "together": "并肩的灯火",
+        "record": "记在纸上的灯",
+        "depart": "寄向下一站"
+      }
+    },
+    "saved": {
+      "version": 1,
+      "node": "letter",
+      "line": 2,
+      "visible": 19,
+      "phase": "choice",
+      "route": "letter",
+      "promise": null,
+      "trust": 1,
+      "rigor": 0,
+      "choices": [
+        {
+          "node": "opening",
+          "id": "letter",
+          "text": "陪周衡走一趟灯塔"
+        }
+      ],
+      "log": [
+        {
+          "key": "opening:0",
+          "speaker": "这一夜",
+          "text": "雨沿着玻璃往下走。最后一班列车停在窗外，港口的航标却迟迟没有亮。"
+        },
+        {
+          "key": "opening:1",
+          "speaker": "周衡 · 港口调度员",
+          "text": "这封信晚了七年。今晚再不送去，我大概又会把它带回家。"
+        },
+        {
+          "key": "opening:2",
+          "speaker": "林岚 · 航标工程师",
+          "text": "我要去灯塔核对最后一段记录。你若不急着上车，可以陪我们走一程。"
+        },
+        {
+          "key": "opening:choice",
+          "speaker": "你的选择",
+          "text": "陪周衡走一趟灯塔"
+        },
+        {
+          "key": "letter:0",
+          "speaker": "周衡 · 港口调度员",
+          "text": "信是写给我的老搭档的。那年我替他做了一个决定，却从没问他愿不愿意。"
+        },
+        {
+          "key": "letter:1",
+          "speaker": "林岚 · 航标工程师",
+          "text": "他离开前在这里留过一句话：有些事情，收到解释比收到道歉更难。"
+        },
+        {
+          "key": "letter:2",
+          "speaker": "你",
+          "text": "纸上的字还在。现在要怎样把它们交出去？"
+        }
+      ],
+      "logOffset": 0,
+      "backlog": false,
+      "review": false,
+      "instant": true,
+      "ending": null,
+      "endings": [],
+      "decision": null,
+      "won": false,
+      "score": 0,
+      "elapsed": 1.1489000000000003,
+      "scene": "control",
+      "chapter": "灯塔里的旧信",
+      "current": {
+        "speaker": "you",
+        "text": "纸上的字还在。现在要怎样把它们交出去？"
+      },
+      "choicesAvailable": [
+        {
+          "id": "voice",
+          "text": "让周衡亲口读出这封信"
+        },
+        {
+          "id": "record-letter",
+          "text": "将信收入档案，留下来由"
+        }
+      ],
+      "choiceRects": [
+        {
+          "id": "voice",
+          "text": "让周衡亲口读出这封信",
+          "next": "voice",
+          "promise": "voice",
+          "trust": 1,
+          "x": 252,
+          "y": 245,
+          "w": 616,
+          "h": 65
+        },
+        {
+          "id": "record-letter",
+          "text": "将信收入档案，留下来由",
+          "next": "recordLetter",
+          "promise": "record",
+          "rigor": 1,
+          "x": 252,
+          "y": 327,
+          "w": 616,
+          "h": 65
+        }
+      ],
+      "endingNames": {
+        "together": "并肩的灯火",
+        "record": "记在纸上的灯",
+        "depart": "寄向下一站"
+      }
+    },
+    "storage": [
+      "dumpling-showcase-qa-v1-novel",
+      "dumpling-showcase-qa-v1-records"
+    ]
+  },
+  "errors": [],
+  "missing": []
+}

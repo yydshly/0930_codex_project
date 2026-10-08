@@ -1,0 +1,866 @@
+{
+  "date": "2026-10-05",
+  "passed": true,
+  "method": "Actual visible page buttons, keyboard and native fullscreen; read-only DOM text/layout. No hidden world state, injected timers, fabricated outcomes or scripted model states.",
+  "checks": [
+    {
+      "name": "Manual attack changes target HP and moves real card to discard",
+      "passed": true,
+      "before": {
+        "block": "0",
+        "documentWidth": 1265,
+        "enemy": "攻击 6\n礁口哨艇\n24 / 24 HP",
+        "energy": "3 / 3",
+        "hand": [
+          {
+            "disabled": false,
+            "id": "c2",
+            "name": "1，水手齐射，1 能量，造成 6 点伤害。"
+          },
+          {
+            "disabled": false,
+            "id": "c10",
+            "name": "2，应急修补，1 能量，恢复 4 点船体，消耗：本场不再抽到。"
+          },
+          {
+            "disabled": false,
+            "id": "c3",
+            "name": "3，水手齐射，1 能量，造成 6 点伤害。"
+          },
+          {
+            "disabled": false,
+            "id": "c7",
+            "name": "4，护航灯，1 能量，获得 6 点格挡。"
+          },
+          {
+            "disabled": false,
+            "id": "c1",
+            "name": "5，水手齐射，1 能量，造成 6 点伤害。"
+          }
+        ],
+        "hint": "已开始亲自出牌。观察敌方意图，点击敌舰选择目标，再点击手牌。能量不足时，结束回合来抽取下一手。",
+        "hp": "54 / 54",
+        "mode": "1 / 3 · 击退礁口哨艇",
+        "piles": [
+          "抽牌堆 7",
+          "弃牌堆 0",
+          "完整牌组 12"
+        ],
+        "scene": {
+          "bottom": 432.5729217529297,
+          "height": 286.1875,
+          "left": 38.66666793823242,
+          "right": 1226.00004196167,
+          "top": 146.3854217529297,
+          "width": 1187.3333740234375,
+          "x": 38.66666793823242,
+          "y": 146.3854217529297
+        },
+        "turn": "01",
+        "viewport": [
+          1280,
+          720
+        ]
+      },
+      "after": {
+        "block": "6",
+        "documentWidth": 1265,
+        "enemy": "攻击 6\n礁口哨艇\n12 / 24 HP",
+        "energy": "0 / 3",
+        "hand": [
+          {
+            "disabled": true,
+            "id": "c10",
+            "name": "1，应急修补，1 能量，恢复 4 点船体，消耗：本场不再抽到。 能量不足：需要 1 点。"
+          },
+          {
+            "disabled": true,
+            "id": "c1",
+            "name": "2，水手齐射，1 能量，造成 6 点伤害。 能量不足：需要 1 点。"
+          }
+        ],
+        "hint": "使用水手齐射 → 礁口哨艇。造成 6 点伤害。",
+        "hp": "54 / 54",
+        "mode": "1 / 3 · 击退礁口哨艇",
+        "piles": [
+          "抽牌堆 7",
+          "弃牌堆 3",
+          "完整牌组 12"
+        ],
+        "scene": {
+          "bottom": 220.57291412353516,
+          "height": 286.1875,
+          "left": 38.66666793823242,
+          "right": 1226.00004196167,
+          "top": -65.61458587646484,
+          "width": 1187.3333740234375,
+          "x": 38.66666793823242,
+          "y": -65.61458587646484
+        },
+        "turn": "01",
+        "viewport": [
+          1280,
+          720
+        ]
+      }
+    },
+    {
+      "name": "Manual shield uses one energy; insufficient-energy cards disabled",
+      "passed": true,
+      "after": {
+        "block": "6",
+        "documentWidth": 1265,
+        "enemy": "攻击 6\n礁口哨艇\n12 / 24 HP",
+        "energy": "0 / 3",
+        "hand": [
+          {
+            "disabled": true,
+            "id": "c10",
+            "name": "1，应急修补，1 能量，恢复 4 点船体，消耗：本场不再抽到。 能量不足：需要 1 点。"
+          },
+          {
+            "disabled": true,
+            "id": "c1",
+            "name": "2，水手齐射，1 能量，造成 6 点伤害。 能量不足：需要 1 点。"
+          }
+        ],
+        "hint": "使用水手齐射 → 礁口哨艇。造成 6 点伤害。",
+        "hp": "54 / 54",
+        "mode": "1 / 3 · 击退礁口哨艇",
+        "piles": [
+          "抽牌堆 7",
+          "弃牌堆 3",
+          "完整牌组 12"
+        ],
+        "scene": {
+          "bottom": 220.57291412353516,
+          "height": 286.1875,
+          "left": 38.66666793823242,
+          "right": 1226.00004196167,
+          "top": -65.61458587646484,
+          "width": 1187.3333740234375,
+          "x": 38.66666793823242,
+          "y": -65.61458587646484
+        },
+        "turn": "01",
+        "viewport": [
+          1280,
+          720
+        ]
+      }
+    },
+    {
+      "name": "End turn resolves advertised attack against shield; resets energy and draws",
+      "passed": true,
+      "after": {
+        "block": "0",
+        "documentWidth": 1265,
+        "enemy": "护甲 6\n礁口哨艇\n12 / 24 HP",
+        "energy": "3 / 3",
+        "hand": [
+          {
+            "disabled": true,
+            "id": "c6",
+            "name": "1，护航灯，1 能量，获得 6 点格挡。"
+          },
+          {
+            "disabled": true,
+            "id": "c11",
+            "name": "2，抛锚牵制，1 能量，获得 4 点格挡，使目标虚弱 2 回合。"
+          },
+          {
+            "disabled": true,
+            "id": "c5",
+            "name": "3，舷炮开火，2 能量，造成 11 点伤害。"
+          },
+          {
+            "disabled": true,
+            "id": "c9",
+            "name": "4，航图测绘，1 能量，抽 2 张牌。"
+          },
+          {
+            "disabled": true,
+            "id": "c8",
+            "name": "5，航图测绘，1 能量，抽 2 张牌。"
+          }
+        ],
+        "hint": "礁口哨艇攻击 6，船体损失 0。新回合抽取 5 张牌。",
+        "hp": "54 / 54",
+        "mode": "敌方行动结算 · 新手牌已到",
+        "piles": [
+          "抽牌堆 2",
+          "弃牌堆 5",
+          "完整牌组 12"
+        ],
+        "scene": {
+          "bottom": 69.23957824707031,
+          "height": 286.1875,
+          "left": 38.66666793823242,
+          "right": 1226.00004196167,
+          "top": -216.9479217529297,
+          "width": 1187.3333740234375,
+          "x": 38.66666793823242,
+          "y": -216.9479217529297
+        },
+        "turn": "02",
+        "viewport": [
+          1280,
+          720
+        ]
+      }
+    },
+    {
+      "name": "Native pile inspection lists actual discarded cards and explains exhaust",
+      "passed": true
+    },
+    {
+      "name": "Chart draws two real cards and spends remaining energy",
+      "passed": true,
+      "after": {
+        "block": "0",
+        "documentWidth": 1265,
+        "enemy": "护甲 6\n礁口哨艇\n1 / 24 HP",
+        "energy": "0 / 3",
+        "hand": [
+          {
+            "disabled": true,
+            "id": "c6",
+            "name": "1，护航灯，1 能量，获得 6 点格挡。 能量不足：需要 1 点。"
+          },
+          {
+            "disabled": true,
+            "id": "c11",
+            "name": "2，抛锚牵制，1 能量，获得 4 点格挡，使目标虚弱 2 回合。 能量不足：需要 1 点。"
+          },
+          {
+            "disabled": true,
+            "id": "c8",
+            "name": "3，航图测绘，1 能量，抽 2 张牌。 能量不足：需要 1 点。"
+          },
+          {
+            "disabled": true,
+            "id": "c12",
+            "name": "4，抛锚牵制，1 能量，获得 4 点格挡，使目标虚弱 2 回合。 能量不足：需要 1 点。"
+          },
+          {
+            "disabled": true,
+            "id": "c4",
+            "name": "5，舷炮开火，2 能量，造成 11 点伤害。 能量不足：需要 2 点。"
+          }
+        ],
+        "hint": "使用航图测绘。抽取 2 张牌。",
+        "hp": "54 / 54",
+        "mode": "1 / 3 · 击退礁口哨艇",
+        "piles": [
+          "抽牌堆 0",
+          "弃牌堆 7",
+          "完整牌组 12"
+        ],
+        "scene": {
+          "bottom": 220.57291412353516,
+          "height": 286.1875,
+          "left": 38.66666793823242,
+          "right": 1226.00004196167,
+          "top": -65.61458587646484,
+          "width": 1187.3333740234375,
+          "x": 38.66666793823242,
+          "y": -65.61458587646484
+        },
+        "turn": "02",
+        "viewport": [
+          1280,
+          720
+        ]
+      }
+    },
+    {
+      "name": "Native fullscreen includes whole stage, real hand and internal end-turn controls",
+      "passed": true,
+      "evidence": "Native AX tree restricted to deck-stage; exit fullscreen visible; observed viewport1722×1034"
+    },
+    {
+      "name": "Fullscreen keyboard turn and attack reshuffle actual discard, break shield, reach route choice",
+      "passed": true,
+      "after": {
+        "block": "0",
+        "documentWidth": 1722,
+        "enemy": "",
+        "energy": "0 / 3",
+        "hand": [
+          {
+            "disabled": true,
+            "id": "c11",
+            "name": "1，抛锚牵制，1 能量，获得 4 点格挡，使目标虚弱 2 回合。 当前不在战斗，请先完成航线选择。"
+          },
+          {
+            "disabled": true,
+            "id": "c1",
+            "name": "2，水手齐射，1 能量，造成 6 点伤害。 当前不在战斗，请先完成航线选择。"
+          },
+          {
+            "disabled": true,
+            "id": "c8",
+            "name": "3，航图测绘，1 能量，抽 2 张牌。 当前不在战斗，请先完成航线选择。"
+          },
+          {
+            "disabled": true,
+            "id": "c3",
+            "name": "4，水手齐射，1 能量，造成 6 点伤害。 当前不在战斗，请先完成航线选择。"
+          }
+        ],
+        "hint": "礁口哨线已突破。选择靠港修缮，或去工坊升级一张牌。",
+        "hp": "54 / 54",
+        "mode": "选择修缮或改装航线",
+        "piles": [
+          "抽牌堆 7",
+          "弃牌堆 1",
+          "完整牌组 12"
+        ],
+        "scene": {
+          "bottom": 689.5208435058594,
+          "height": 555.1875,
+          "left": 0.6666666865348816,
+          "right": 1721.33341473341,
+          "top": 134.33334350585938,
+          "width": 1720.666748046875,
+          "x": 0.6666666865348816,
+          "y": 134.33334350585938
+        },
+        "turn": "03",
+        "viewport": [
+          1722,
+          1034
+        ]
+      }
+    },
+    {
+      "name": "Chosen cannon permanently upgrades a real card and enters second encounter",
+      "passed": true,
+      "after": {
+        "block": "0",
+        "documentWidth": 1722,
+        "enemy": "攻击 8\n雾幕钩艇\n22 / 22 HP\n攻击 5\n巡雾灯舰\n20 / 20 HP",
+        "energy": "3 / 3",
+        "hand": [
+          {
+            "disabled": false,
+            "id": "c8",
+            "name": "1，航图测绘，1 能量，抽 2 张牌。"
+          },
+          {
+            "disabled": false,
+            "id": "c7",
+            "name": "2，护航灯，1 能量，获得 6 点格挡。"
+          },
+          {
+            "disabled": false,
+            "id": "c5",
+            "name": "3，舷炮开火，2 能量，造成 11 点伤害。"
+          },
+          {
+            "disabled": false,
+            "id": "c3",
+            "name": "4，水手齐射，1 能量，造成 6 点伤害。"
+          },
+          {
+            "disabled": false,
+            "id": "c9",
+            "name": "5，航图测绘，1 能量，抽 2 张牌。"
+          }
+        ],
+        "hint": "驶入雾幕封锁。查看敌方意图，用 3 点能量安排这一回合。",
+        "hp": "54 / 54",
+        "mode": "2 / 3 · 击退雾幕封锁",
+        "piles": [
+          "抽牌堆 7",
+          "弃牌堆 0",
+          "完整牌组 12"
+        ],
+        "scene": {
+          "bottom": 689.5208435058594,
+          "height": 555.1875,
+          "left": 0.6666666865348816,
+          "right": 1721.33341473341,
+          "top": 134.33334350585938,
+          "width": 1720.666748046875,
+          "x": 0.6666666865348816,
+          "y": 134.33334350585938
+        },
+        "turn": "01",
+        "viewport": [
+          1722,
+          1034
+        ]
+      },
+      "pile": "水手齐射 · 1 能量\n造成 6 点伤害。\n水手齐射 · 1 能量\n造成 6 点伤害。\n水手齐射 · 1 能量\n造成 6 点伤害。\n舷炮开火 + · 1 能量\n造成 14 点伤害。\n舷炮开火 · 2 能量\n造成 11 点伤害。\n护航灯 · 1 能量\n获得 6 点格挡。\n护航灯 · 1 能量\n获得 6 点格挡。\n航图测绘 · 1 能量\n抽 2 张牌。\n航图测绘 · 1 能量\n抽 2 张牌。\n应急修补 · 1 能量\n恢复 4 点船体，消耗：本场不再抽到。\n抛锚牵制 · 1 能量\n获得 4 点格挡，使目标虚弱 2 回合。\n抛锚牵制 · 1 能量\n获得 4 点格挡，使目标虚弱 2 回合。"
+    },
+    {
+      "name": "Actual page reload preserves current encounter, hand, HP and piles and restores paused",
+      "passed": true,
+      "after": {
+        "block": "0",
+        "documentWidth": 1265,
+        "enemy": "攻击 8\n雾幕钩艇\n22 / 22 HP\n攻击 5\n巡雾灯舰\n20 / 20 HP",
+        "energy": "3 / 3",
+        "hand": [
+          {
+            "disabled": true,
+            "id": "c8",
+            "name": "1，航图测绘，1 能量，抽 2 张牌。 先继续航程，再安排行动。"
+          },
+          {
+            "disabled": true,
+            "id": "c7",
+            "name": "2，护航灯，1 能量，获得 6 点格挡。 先继续航程，再安排行动。"
+          },
+          {
+            "disabled": true,
+            "id": "c5",
+            "name": "3，舷炮开火，2 能量，造成 11 点伤害。 先继续航程，再安排行动。"
+          },
+          {
+            "disabled": true,
+            "id": "c3",
+            "name": "4，水手齐射，1 能量，造成 6 点伤害。 先继续航程，再安排行动。"
+          },
+          {
+            "disabled": true,
+            "id": "c9",
+            "name": "5，航图测绘，1 能量，抽 2 张牌。 先继续航程，再安排行动。"
+          }
+        ],
+        "hint": "航程暂停 · 手牌、船体与意图都已保留",
+        "hp": "54 / 54",
+        "mode": "上次手牌已恢复 · 暂停",
+        "piles": [
+          "抽牌堆 7",
+          "弃牌堆 0",
+          "完整牌组 12"
+        ],
+        "scene": {
+          "bottom": 933.2396240234376,
+          "height": 286.1875,
+          "left": 38.66666793823242,
+          "right": 1226.00004196167,
+          "top": 647.0521240234375,
+          "width": 1187.3333740234375,
+          "x": 38.66666793823242,
+          "y": 647.0521240234375
+        },
+        "turn": "01",
+        "viewport": [
+          1280,
+          720
+        ]
+      }
+    },
+    {
+      "name": "390px layout keeps real card hand scrolling internally and dual target HP/intents within viewport",
+      "passed": true,
+      "after": {
+        "controlsWidth": 345.3333435058594,
+        "enemyButtons": [
+          {
+            "left": 125.17708587646484,
+            "right": 235.6354217529297,
+            "text": "攻击 8\n雾幕钩艇\n22 / 22 HP",
+            "width": 110.45833587646484
+          },
+          {
+            "left": 242.6354217529297,
+            "right": 353.09375762939453,
+            "text": "攻击 5\n巡雾灯舰\n20 / 20 HP",
+            "width": 110.45833587646484
+          }
+        ],
+        "handScrollWidth": 727,
+        "handWidth": 329,
+        "sceneHeight": 245,
+        "viewport": [
+          390,
+          844
+        ],
+        "width": 375
+      }
+    },
+    {
+      "name": "Final ordinary demo completes three actual encounters with reward and upgraded deck",
+      "passed": true,
+      "after": {
+        "block": "0",
+        "documentWidth": 375,
+        "enemy": "",
+        "energy": "0 / 3",
+        "hand": [
+          {
+            "disabled": true,
+            "id": "c7",
+            "name": "1，护航灯，1 能量，获得 6 点格挡。 先继续航程，再安排行动。"
+          },
+          {
+            "disabled": true,
+            "id": "c1",
+            "name": "2，水手齐射，1 能量，造成 6 点伤害。 先继续航程，再安排行动。"
+          },
+          {
+            "disabled": true,
+            "id": "c11",
+            "name": "3，抛锚牵制，1 能量，获得 4 点格挡，使目标虚弱 2 回合。 先继续航程，再安排行动。"
+          },
+          {
+            "disabled": true,
+            "id": "c12",
+            "name": "4，抛锚牵制，1 能量，获得 4 点格挡，使目标虚弱 2 回合。 先继续航程，再安排行动。"
+          },
+          {
+            "disabled": true,
+            "id": "c8",
+            "name": "5，航图测绘，1 能量，抽 2 张牌。 先继续航程，再安排行动。"
+          }
+        ],
+        "hint": "航程完成 · 已暂停",
+        "hp": "43 / 54",
+        "mode": "航程完成 · 已暂停",
+        "piles": [
+          "抽牌堆 2",
+          "弃牌堆 6",
+          "完整牌组 13"
+        ],
+        "scene": {
+          "bottom": 414.6770935058594,
+          "height": 245,
+          "left": 14.666666984558104,
+          "right": 360.0000104904175,
+          "top": 169.67709350585938,
+          "width": 345.3333435058594,
+          "x": 14.666666984558104,
+          "y": 169.67709350585938
+        },
+        "turn": "04",
+        "viewport": [
+          390,
+          844
+        ]
+      },
+      "result": "MISTBOUND / VOYAGE COMPLETE\n\n灯火就在前方。\n\n完成 3 / 3 场遭遇，出牌 21 次，承受 11 点伤害。最终船身 43 / 54，完整牌组 13 张。这一轮已暂停并保存。\n\n开启新的牌航"
+    },
+    {
+      "name": "Final named encounter reload preserves real hand, HP, energy and pile counts, paused",
+      "passed": true,
+      "after": {
+        "block": "0",
+        "documentWidth": 375,
+        "enemy": "攻击 8\n雾幕钩艇\n22 / 22 HP\n攻击 5\n巡雾灯塔\n20 / 20 HP",
+        "energy": "3 / 3",
+        "hand": [
+          {
+            "disabled": true,
+            "id": "c8",
+            "name": "1，航图测绘，1 能量，抽 2 张牌。 先继续航程，再安排行动。"
+          },
+          {
+            "disabled": true,
+            "id": "c7",
+            "name": "2，护航灯，1 能量，获得 6 点格挡。 先继续航程，再安排行动。"
+          },
+          {
+            "disabled": true,
+            "id": "c5",
+            "name": "3，舷炮开火，2 能量，造成 11 点伤害。 先继续航程，再安排行动。"
+          },
+          {
+            "disabled": true,
+            "id": "c3",
+            "name": "4，水手齐射，1 能量，造成 6 点伤害。 先继续航程，再安排行动。"
+          },
+          {
+            "disabled": true,
+            "id": "c9",
+            "name": "5，航图测绘，1 能量，抽 2 张牌。 先继续航程，再安排行动。"
+          }
+        ],
+        "hint": "航程暂停 · 手牌、船体与意图都已保留",
+        "hp": "54 / 54",
+        "mode": "上次手牌已恢复 · 暂停",
+        "piles": [
+          "抽牌堆 7",
+          "弃牌堆 0",
+          "完整牌组 12"
+        ],
+        "scene": {
+          "bottom": 544.6770935058594,
+          "height": 245,
+          "left": 14.666666984558104,
+          "right": 360.0000104904175,
+          "top": 299.6770935058594,
+          "width": 345.3333435058594,
+          "x": 14.666666984558104,
+          "y": 299.6770935058594
+        },
+        "turn": "01",
+        "viewport": [
+          390,
+          844
+        ]
+      }
+    },
+    {
+      "name": "Final resume clears restored pause HUD and enables actual manual hand",
+      "passed": true,
+      "after": {
+        "block": "0",
+        "documentWidth": 375,
+        "enemy": "攻击 8\n雾幕钩艇\n22 / 22 HP\n攻击 5\n巡雾灯塔\n20 / 20 HP",
+        "energy": "3 / 3",
+        "hand": [
+          {
+            "disabled": false,
+            "id": "c8",
+            "name": "1，航图测绘，1 能量，抽 2 张牌。"
+          },
+          {
+            "disabled": false,
+            "id": "c7",
+            "name": "2，护航灯，1 能量，获得 6 点格挡。"
+          },
+          {
+            "disabled": false,
+            "id": "c5",
+            "name": "3，舷炮开火，2 能量，造成 11 点伤害。"
+          },
+          {
+            "disabled": false,
+            "id": "c3",
+            "name": "4，水手齐射，1 能量，造成 6 点伤害。"
+          },
+          {
+            "disabled": false,
+            "id": "c9",
+            "name": "5，航图测绘，1 能量，抽 2 张牌。"
+          }
+        ],
+        "hint": "2 / 3 · 击退雾幕封锁 · 第 1 回合 · 能量 3 / 3",
+        "hp": "54 / 54",
+        "mode": "2 / 3 · 击退雾幕封锁",
+        "piles": [
+          "抽牌堆 7",
+          "弃牌堆 0",
+          "完整牌组 12"
+        ],
+        "scene": {
+          "bottom": 410.0104217529297,
+          "height": 245,
+          "left": 14.666666984558104,
+          "right": 360.0000104904175,
+          "top": 165.0104217529297,
+          "width": 345.3333435058594,
+          "x": 14.666666984558104,
+          "y": 165.0104217529297
+        },
+        "turn": "01",
+        "viewport": [
+          390,
+          844
+        ]
+      }
+    },
+    {
+      "name": "Final 390px dual encounter uses 120px player sprite and internal hand scroll without document overflow",
+      "passed": true,
+      "after": {
+        "captionWidth": "104px",
+        "enemyButtons": [
+          {
+            "left": 125.17708587646484,
+            "right": 235.6354217529297,
+            "text": "攻击 8\n雾幕钩艇\n22 / 22 HP"
+          },
+          {
+            "left": 242.6354217529297,
+            "right": 353.09375762939453,
+            "text": "攻击 5\n巡雾灯塔\n20 / 20 HP"
+          }
+        ],
+        "handScrollWidth": 727,
+        "handWidth": 329,
+        "sceneHeight": 245,
+        "shipWidth": "120px",
+        "viewport": [
+          390,
+          844
+        ],
+        "width": 375
+      }
+    },
+    {
+      "name": "Final native fullscreen capture and internal exit preserve the same manual world",
+      "passed": true,
+      "fullscreen": {
+        "block": "0",
+        "documentWidth": 1707,
+        "enemy": "攻击 8\n雾幕钩艇\n22 / 22 HP\n攻击 5\n巡雾灯塔\n20 / 20 HP",
+        "energy": "3 / 3",
+        "hand": [
+          {
+            "disabled": false,
+            "id": "c8",
+            "name": "1，航图测绘，1 能量，抽 2 张牌。"
+          },
+          {
+            "disabled": false,
+            "id": "c7",
+            "name": "2，护航灯，1 能量，获得 6 点格挡。"
+          },
+          {
+            "disabled": false,
+            "id": "c5",
+            "name": "3，舷炮开火，2 能量，造成 11 点伤害。"
+          },
+          {
+            "disabled": false,
+            "id": "c3",
+            "name": "4，水手齐射，1 能量，造成 6 点伤害。"
+          },
+          {
+            "disabled": false,
+            "id": "c9",
+            "name": "5，航图测绘，1 能量，抽 2 张牌。"
+          }
+        ],
+        "hint": "2 / 3 · 击退雾幕封锁 · 第 1 回合 · 能量 3 / 3",
+        "hp": "54 / 54",
+        "mode": "2 / 3 · 击退雾幕封锁",
+        "piles": [
+          "抽牌堆 7",
+          "弃牌堆 0",
+          "完整牌组 12"
+        ],
+        "scene": {
+          "bottom": 722.8542175292969,
+          "height": 588.5208740234375,
+          "left": 0.6666666865348816,
+          "right": 1706.6666666865349,
+          "top": 134.33334350585938,
+          "width": 1706,
+          "x": 0.6666666865348816,
+          "y": 134.33334350585938
+        },
+        "turn": "01",
+        "viewport": [
+          1707,
+          1067
+        ]
+      },
+      "afterExit": {
+        "block": "0",
+        "documentWidth": 1707,
+        "enemy": "攻击 8\n雾幕钩艇\n22 / 22 HP\n攻击 5\n巡雾灯塔\n20 / 20 HP",
+        "energy": "3 / 3",
+        "hand": [
+          {
+            "disabled": false,
+            "id": "c8",
+            "name": "1，航图测绘，1 能量，抽 2 张牌。"
+          },
+          {
+            "disabled": false,
+            "id": "c7",
+            "name": "2，护航灯，1 能量，获得 6 点格挡。"
+          },
+          {
+            "disabled": false,
+            "id": "c5",
+            "name": "3，舷炮开火，2 能量，造成 11 点伤害。"
+          },
+          {
+            "disabled": false,
+            "id": "c3",
+            "name": "4，水手齐射，1 能量，造成 6 点伤害。"
+          },
+          {
+            "disabled": false,
+            "id": "c9",
+            "name": "5，航图测绘，1 能量，抽 2 张牌。"
+          }
+        ],
+        "hint": "2 / 3 · 击退雾幕封锁 · 第 1 回合 · 能量 3 / 3",
+        "hp": "54 / 54",
+        "mode": "2 / 3 · 击退雾幕封锁",
+        "piles": [
+          "抽牌堆 7",
+          "弃牌堆 0",
+          "完整牌组 12"
+        ],
+        "scene": {
+          "bottom": 700.5729370117188,
+          "height": 416.1875,
+          "left": 72,
+          "right": 1634.666748046875,
+          "top": 284.38543701171875,
+          "width": 1562.666748046875,
+          "x": 72,
+          "y": 284.38543701171875
+        },
+        "turn": "01",
+        "viewport": [
+          1722,
+          1034
+        ]
+      }
+    },
+    {
+      "name": "Live direction map and reference summary preserve initial ten and append new deckbuilding genre separately",
+      "passed": true,
+      "evidence": "Clicked direction map then original-reference navigation; observed both new deck launch and separately retained first ten."
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-deck-captures/completed-mobile.png",
+      "description": "Final ordinary legal demo, three encounters completed; 43/54 HP and 13 real deck cards, 390px browser viewport.",
+      "viewport": [
+        390,
+        844
+      ],
+      "capture_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "sha256": "12ed500b0e4cb037161a66db60d629bab6df0d2ff1d26fbc6e85222063929a7c"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-deck-captures/dual-mobile.png",
+      "description": "Final 390px responsive cardtable with both target intents, real hand and internal controls; no document overflow.",
+      "viewport": [
+        390,
+        844
+      ],
+      "capture_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "sha256": "96093d74ab181cfc9d9a9976c228d422fe2715603f8b4bbe01b05d4e67e6c411"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-deck-captures/dual-fullscreen.png",
+      "description": "Native whole-stage fullscreen; final illustrated dual target encounter with actual hand and internal deck controls.",
+      "viewport": [
+        1707,
+        1067
+      ],
+      "capture_size": [
+        1707,
+        1067
+      ],
+      "format": "JPEG",
+      "sha256": "0d42feb37c6ad2125cab16f2b92c18d0d4bdf06bebdb3dfacdb665a7e5420e95"
+    }
+  ],
+  "notes": [
+    "Actual final source demo completed three encounters naturally, 21 played cards, 43/54 HP and 13 real deck cards.",
+    "Early manual checks were recorded before cosmetic encounter labels were aligned with the artwork; final named encounters, restore, resumed HUD and responsive layout were rechecked after the final changes.",
+    "Screenshots record actual browser states; 390px viewport is not a physical mobile device. Temporary viewport override has been reset."
+  ]
+}

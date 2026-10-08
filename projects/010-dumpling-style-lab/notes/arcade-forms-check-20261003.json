@@ -1,0 +1,207 @@
+{
+  "at": "2026-10-03T07:33:27.252Z",
+  "checks": [
+    "Beat-em-up real walking, jump and dodge inputs",
+    "Real near-range grab and throw damages an opponent",
+    "brawler actual progress survives reload",
+    "Actual combo inputs clear seven opponents across all three street sections",
+    "Aerial movement, manual sustained fire and real shock-wave input",
+    "skyline actual progress survives reload",
+    "Real aerial combat obtains supply, enters carrier encounter and wins",
+    "3D race changes between actual chase and hood cameras",
+    "coast actual progress survives reload",
+    "Real steering, energy boost, vehicle collision, overtaking and 1.80 km race completion",
+    "All three real completion states can replay while retaining completion records",
+    "Sixteen playable form cards, nine genuinely pending forms and three new comparison entries",
+    "New forms and embedded games fit 390px; real touch control accelerates the 3D vehicle",
+    "All browser tests use QA saves without writing normal progress"
+  ],
+  "errors": [],
+  "missing": [],
+  "results": {
+    "brawler": {
+      "x": 2382.71349999999,
+      "y": 495.61002499999967,
+      "z": 0,
+      "vz": 0,
+      "hp": 8,
+      "facing": 1,
+      "stage": 2,
+      "elapsed": 20.8838000000357,
+      "kills": 7,
+      "hits": 21,
+      "combo": 3,
+      "bestCombo": 3,
+      "throws": 1,
+      "dodges": 1,
+      "won": true,
+      "phase": "active",
+      "enemies": [
+        {
+          "id": 0,
+          "stage": 0,
+          "x": 561.1233999990222,
+          "y": 490,
+          "hp": 0,
+          "max": 3,
+          "kind": "enemy",
+          "cooldown": 0,
+          "windup": 0,
+          "stun": 0.45,
+          "attack": 0,
+          "fade": 0
+        },
+        {
+          "id": 1,
+          "stage": 0,
+          "x": 685.3927999990207,
+          "y": 506.6575999994279,
+          "hp": 0,
+          "max": 3,
+          "kind": "enemy",
+          "cooldown": 0,
+          "windup": 0,
+          "stun": 0.45,
+          "attack": 0,
+          "fade": 0
+        },
+        {
+          "id": 2,
+          "stage": 1,
+          "x": 1074.4475999980416,
+          "y": 476.7136000011445,
+          "hp": 0,
+          "max": 3,
+          "kind": "enemy",
+          "cooldown": 0,
+          "windup": 0,
+          "stun": 0.45,
+          "attack": 0,
+          "fade": 0
+        },
+        {
+          "id": 3,
+          "stage": 1,
+          "x": 1266.9531999986248,
+          "y": 496.68319999885546,
+          "hp": 0,
+          "max": 5,
+          "kind": "heavy",
+          "cooldown": 0,
+          "windup": 0,
+          "stun": 0.45,
+          "attack": 0,
+          "fade": 0
+        },
+        {
+          "id": 4,
+          "stage": 1,
+          "x": 1203.133399998034,
+          "y": 497.2863999988556,
+          "hp": 0,
+          "max": 3,
+          "kind": "enemy",
+          "cooldown": 0,
+          "windup": 0,
+          "stun": 0.45,
+          "attack": 0,
+          "fade": 0
+        },
+        {
+          "id": 5,
+          "stage": 2,
+          "x": 2225.8999999999855,
+          "y": 505.2,
+          "hp": 0,
+          "max": 10,
+          "kind": "heavy",
+          "cooldown": 0,
+          "windup": 0,
+          "stun": 0.45,
+          "attack": 0,
+          "fade": 0
+        },
+        {
+          "id": 6,
+          "stage": 2,
+          "x": 2025.8306000000068,
+          "y": 484.4015999999997,
+          "hp": 0,
+          "max": 3,
+          "kind": "enemy",
+          "cooldown": 0,
+          "windup": 0,
+          "stun": 0.45,
+          "attack": 0,
+          "fade": 0
+        }
+      ]
+    },
+    "skyline": {
+      "x": 654.9619999999992,
+      "y": 515,
+      "hp": 3,
+      "elapsed": 36.497499999994,
+      "spawn": 8,
+      "enemies": [],
+      "kills": 21,
+      "score": 5100,
+      "shots": 260,
+      "hits": 115,
+      "power": 2,
+      "bombs": 3,
+      "bombsUsed": 1,
+      "supplies": [],
+      "won": true,
+      "phase": "active",
+      "autoFire": true,
+      "bossSpawned": true
+    },
+    "coast": {
+      "distance": 1800,
+      "speed": 44,
+      "lateral": -1.6969752253227655,
+      "integrity": 39.899950000000004,
+      "boost": 29.877300000000155,
+      "elapsed": 42.40590000002318,
+      "checkpoint": 1200,
+      "collisions": 4,
+      "offroadTime": 0.06669999999999981,
+      "passed": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "camera": "chase",
+      "won": true,
+      "phase": "active",
+      "rivals": [
+        {
+          "id": 0,
+          "d": 1052.7416000005758,
+          "l": 1.9,
+          "v": 24
+        },
+        {
+          "id": 1,
+          "d": 1192.5534000006282,
+          "l": -1.8,
+          "v": 26
+        },
+        {
+          "id": 2,
+          "d": 1332.3652000006628,
+          "l": 1.8,
+          "v": 28
+        },
+        {
+          "id": 3,
+          "d": 1270.1475000006028,
+          "l": -1.8,
+          "v": 25
+        }
+      ]
+    }
+  }
+}

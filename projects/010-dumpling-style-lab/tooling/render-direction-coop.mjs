@@ -1,0 +1,12 @@
+import fs from 'node:fs'; import path from 'node:path'; import assert from 'node:assert/strict'; import { fileURLToPath } from 'node:url';
+import { Canvas, Image } from 'file:///C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/@oai/artifact-tool/node_modules/skia-canvas/lib/index.mjs';
+import { template, createWorld, advance, demonstrationInputs, edit } from '../web/direction-coop-engine.js'; import { drawCoop, VIEW, point, cellFromPoint } from '../web/direction-coop-render.js';
+const p = path.dirname(path.dirname(fileURLToPath(import.meta.url))), out = path.join(p, 'assets/directions/cooperation-qa'); fs.mkdirSync(out, { recursive: true });
+const load = async file => { const image = new Image(); image.src = fs.readFileSync(path.join(p, 'web/assets/directions/cooperation', file)); await image.decode(); return image; };
+const assets = { background: await load('mist-ridge.png'), props: await load('props-atlas.png'), people: await load('explorers-atlas.png') }, surface = new Canvas(VIEW.width, VIEW.height), ctx = surface.getContext('2d'), frames = [];
+for (let x = 0; x < 24; x++) for (let y = 0; y < 12; y++) assert.deepEqual(cellFromPoint(...point(x, y)), [x, y]);
+const run = (w, seconds) => { for (let i = 0; i < seconds * 120; i++) advance(w, 1 / 120, demonstrationInputs(w)); };
+async function render(name, w, options = {}) { const before = JSON.stringify(w); drawCoop(ctx, w, assets, options); assert.equal(JSON.stringify(w), before); await surface.toFile(path.join(out, name + '.png')); frames.push({ name, file: `assets/directions/cooperation-qa/${name}.png`, time: w.time, phase: w.phase, stats: structuredClone(w.stats) }); }
+const w = createWorld(template(1), { frozenStart: true }); await render('rescue-needed', w); w.paused = false; run(w, 1.1); await render('gate-opening', w); run(w, 1.1); await render('crossing', w); run(w, 20); await render('together', w);
+const designed = createWorld(template(2)); edit(designed.map, 'ice', 20, 10); await render('creator', designed, { editing: true, hover: [20, 10], tool: 'ice' });
+fs.writeFileSync(path.join(p, 'notes/direction-coop-frames-20261005.json'), JSON.stringify({ method: 'Actual production Canvas2D renderer and cooperation simulation via Skia; not browser screenshots or CSS/touch/fullscreen acceptance.', frames }, null, 2)); console.log(`Rendered ${frames.length} actual cooperation frames; all 288 pointer cell mappings verified`);

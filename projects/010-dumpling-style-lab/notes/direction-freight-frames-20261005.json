@@ -1,0 +1,125 @@
+{
+  "method": "Production Canvas2D and real freight simulation via Skia. Not browser screenshots or CSS/touch/fullscreen acceptance.",
+  "frames": [
+    {
+      "name": "01-network-ready",
+      "file": "assets/directions/freight-qa/01-network-ready.png",
+      "time": 0,
+      "phase": "playing",
+      "delivered": {
+        "boards": 0,
+        "grain": 0
+      },
+      "stats": {
+        "revenue": 0,
+        "expenses": 840,
+        "producedLogs": 10,
+        "producedGrain": 10,
+        "processedBoards": 0,
+        "transfers": 0,
+        "trips": 0,
+        "built": 0
+      }
+    },
+    {
+      "name": "02-cargo-in-motion",
+      "file": "assets/directions/freight-qa/02-cargo-in-motion.png",
+      "time": 9.00000000000006,
+      "phase": "playing",
+      "delivered": {
+        "boards": 0,
+        "grain": 0
+      },
+      "stats": {
+        "revenue": 0,
+        "expenses": 854,
+        "producedLogs": 16,
+        "producedGrain": 14,
+        "processedBoards": 3,
+        "transfers": 4,
+        "trips": 3,
+        "built": 0
+      }
+    },
+    {
+      "name": "03-transfer-depot",
+      "file": "assets/directions/freight-qa/03-transfer-depot.png",
+      "time": 23.999999999999705,
+      "phase": "playing",
+      "delivered": {
+        "boards": 6,
+        "grain": 8
+      },
+      "stats": {
+        "revenue": 428,
+        "expenses": 872,
+        "producedLogs": 26,
+        "producedGrain": 20,
+        "processedBoards": 10,
+        "transfers": 12,
+        "trips": 14,
+        "built": 0
+      }
+    },
+    {
+      "name": "04-south-bridge-closed",
+      "file": "assets/directions/freight-qa/04-south-bridge-closed.png",
+      "time": 45.49999999999849,
+      "phase": "playing",
+      "delivered": {
+        "boards": 13,
+        "grain": 16
+      },
+      "stats": {
+        "revenue": 898,
+        "expenses": 900,
+        "producedLogs": 42,
+        "producedGrain": 32,
+        "processedBoards": 18,
+        "transfers": 20,
+        "trips": 26,
+        "built": 0
+      }
+    },
+    {
+      "name": "05-region-connected",
+      "file": "assets/directions/freight-qa/05-region-connected.png",
+      "time": 47.17499999999839,
+      "phase": "won",
+      "delivered": {
+        "boards": 17,
+        "grain": 20
+      },
+      "stats": {
+        "revenue": 1154,
+        "expenses": 904,
+        "producedLogs": 42,
+        "producedGrain": 32,
+        "processedBoards": 19,
+        "transfers": 20,
+        "trips": 29,
+        "built": 0
+      }
+    },
+    {
+      "name": "06-repair-a-link",
+      "file": "assets/directions/freight-qa/06-repair-a-link.png",
+      "time": 0,
+      "phase": "playing",
+      "delivered": {
+        "boards": 0,
+        "grain": 0
+      },
+      "stats": {
+        "revenue": 0,
+        "expenses": 840,
+        "producedLogs": 10,
+        "producedGrain": 10,
+        "processedBoards": 0,
+        "transfers": 0,
+        "trips": 0,
+        "built": 0
+      }
+    }
+  ]
+}

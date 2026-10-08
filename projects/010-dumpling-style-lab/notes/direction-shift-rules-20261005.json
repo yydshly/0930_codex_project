@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "checks": [
+    "standard and pressure complete through ordinary dispatch, work timers and walking",
+    "professions and circuit isolation constrain real orders",
+    "parallel roles work concurrently and isolation takes actual travel and time",
+    "power requires a completed repair and a separate dispatcher reconnection",
+    "medical stabilization consumes exactly one kit and treatment requires electricity",
+    "air worsens before repair and recovers only after sealing, power and ventilation",
+    "a new incident creates obstacles and BFS reroutes around the corridor hazard",
+    "a travelling actor reroutes after the fire appears without entering blocked cells",
+    "evacuation depends on the beacon, power, breathable air and all medical work",
+    "evacuation walks patients to their docking spots and never grants instant arrival",
+    "winning requires crew walking too, after the final dispatcher task",
+    "pausing freezes everything including travel and work progress",
+    "neglecting duties can lose through health and a closed evacuation window",
+    "moving cancels an unfinished job without applying its completion",
+    "in-progress saves resume deterministically and remain paused on load",
+    "save validation rejects invented counts, fake arrivals, alien jobs and broken paths",
+    "all equipment destinations resolve to floor routes rather than the equipment cell"
+  ],
+  "method": "Production simulation and ordinary dispatch actions; no synthetic progress, health or arrival grants. Both scenarios complete normally."
+}

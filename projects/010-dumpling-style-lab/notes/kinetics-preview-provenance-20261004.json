@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ribbon",
+    "source": "assets/game-forms/kinetics-qa/ribbon-progress.png",
+    "source_sha256": "84a0c68e5b9de7ffdfc9ca7e9af5d4c366285677da7764953b014348c86c0f71",
+    "runtime": "web/assets/game-forms/kinetics/previews/ribbon.webp",
+    "runtime_sha256": "f30bace091f513c3133557c37987aba75a67ed44be8a18cb50f254aba436889b",
+    "method": "Production Canvas2D drawing through Skia.",
+    "not_a_browser_screenshot": true
+  },
+  {
+    "id": "rescue",
+    "source": "assets/game-forms/kinetics-qa/rescue-progress.png",
+    "source_sha256": "f9b311e375ce267691c2638beda17a473da027711eaf2614497619dc4239be37",
+    "runtime": "web/assets/game-forms/kinetics/previews/rescue.webp",
+    "runtime_sha256": "1b0afe01382c526578885f4c974654e116bbb8d90cee1994e92b6058186eaa67",
+    "method": "Production Canvas2D drawing through Skia.",
+    "not_a_browser_screenshot": true
+  },
+  {
+    "id": "rewind",
+    "source": "assets/game-forms/kinetics-qa/rewind-progress.png",
+    "source_sha256": "687666eb57d249e76fda5294383c05876c8fea03fea98af5b4bcc1760fce482d",
+    "runtime": "web/assets/game-forms/kinetics/previews/rewind.webp",
+    "runtime_sha256": "d70874846b3c9c9da0fea46e7957391d6e8f33e22ac9b79169ea6fd187472000",
+    "method": "Production Canvas2D drawing through Skia.",
+    "not_a_browser_screenshot": true
+  },
+  {
+    "id": "nested",
+    "source": "assets/game-forms/kinetics-qa/nested-progress.png",
+    "source_sha256": "6a32b6f729df9c5a6ce1074ab29c8338cc3e018d4f1c9c842ed83a714a9a5891",
+    "runtime": "web/assets/game-forms/kinetics/previews/nested.webp",
+    "runtime_sha256": "ed94a723cb37e83c53a094ea85056db9934258a6be2f8845012dba942a97119e",
+    "method": "Actual THREE meshes/cameras/UVs through explicit depth-buffered software projection, production HUD.",
+    "not_a_browser_screenshot": true
+  }
+]

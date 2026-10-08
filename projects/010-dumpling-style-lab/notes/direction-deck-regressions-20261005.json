@@ -1,0 +1,170 @@
+{
+  "date": "2026-10-05",
+  "passed": true,
+  "directions": 10,
+  "script_count": 20,
+  "total_checks": 440,
+  "method": "Actual rerun in independent Node processes; fs.writeFileSync suppressed for existing reports, so historical evidence is preserved. No stored report pass status is substituted for current execution.",
+  "runs": [
+    {
+      "script": "check-direction-factory.mjs",
+      "exit_code": 0,
+      "stdout": "13 factory direction checks passed\n",
+      "stderr": "",
+      "count": 13,
+      "passed": true
+    },
+    {
+      "script": "check-direction-park.mjs",
+      "exit_code": 0,
+      "stdout": "14 park direction checks passed\n",
+      "stderr": "",
+      "count": 14,
+      "passed": true
+    },
+    {
+      "script": "check-direction-coop.mjs",
+      "exit_code": 0,
+      "stdout": "16 cooperation rule checks passed, including ordinary completion of all three maps\n",
+      "stderr": "",
+      "count": 16,
+      "passed": true
+    },
+    {
+      "script": "check-direction-shift.mjs",
+      "exit_code": 0,
+      "stdout": "17 shift rules checks passed\n",
+      "stderr": "",
+      "count": 17,
+      "passed": true
+    },
+    {
+      "script": "check-direction-freight.mjs",
+      "exit_code": 0,
+      "stdout": "18 freight rules checks passed\n",
+      "stderr": "",
+      "count": 18,
+      "passed": true
+    },
+    {
+      "script": "check-direction-dungeon.mjs",
+      "exit_code": 0,
+      "stdout": "24 dungeon rules checks passed; 0 failed\n",
+      "stderr": "",
+      "count": 24,
+      "passed": true
+    },
+    {
+      "script": "check-direction-stealth.mjs",
+      "exit_code": 0,
+      "stdout": "22 stealth rules checks passed\n",
+      "stderr": "",
+      "count": 22,
+      "passed": true
+    },
+    {
+      "script": "check-direction-space-rules.mjs",
+      "exit_code": 0,
+      "stdout": "27 space rules checks passed\n",
+      "stderr": "",
+      "count": 27,
+      "passed": true
+    },
+    {
+      "script": "check-direction-survival-rules.mjs",
+      "exit_code": 0,
+      "stdout": "44 survival rules checks passed\n",
+      "stderr": "",
+      "count": 44,
+      "passed": true
+    },
+    {
+      "script": "check-direction-controller.mjs",
+      "exit_code": 0,
+      "stdout": "9 controller checks passed; only the new dedicated storage key was touched\n",
+      "stderr": "",
+      "count": 9,
+      "passed": true
+    },
+    {
+      "script": "check-direction-park-controller.mjs",
+      "exit_code": 0,
+      "stdout": "10 park controller checks passed; only the dedicated park save key was touched\n",
+      "stderr": "",
+      "count": 10,
+      "passed": true
+    },
+    {
+      "script": "check-direction-coop-controller.mjs",
+      "exit_code": 0,
+      "stdout": "12 production cooperation callback checks passed; only the independent new save key was touched\n",
+      "stderr": "",
+      "count": 12,
+      "passed": true
+    },
+    {
+      "script": "check-direction-shift-controller.mjs",
+      "exit_code": 0,
+      "stdout": "13 shift controller checks passed; only the dedicated shift save key was touched\n",
+      "stderr": "",
+      "count": 13,
+      "passed": true
+    },
+    {
+      "script": "check-direction-freight-controller.mjs",
+      "exit_code": 0,
+      "stdout": "15 freight controller checks passed; only the new freight save key was touched\n",
+      "stderr": "",
+      "count": 15,
+      "passed": true
+    },
+    {
+      "script": "check-direction-dungeon-controller.mjs",
+      "exit_code": 0,
+      "stdout": "23 dungeon controller checks passed; only the new dungeon save key was written\n",
+      "stderr": "",
+      "count": 23,
+      "passed": true
+    },
+    {
+      "script": "check-direction-stealth-controller.mjs",
+      "exit_code": 0,
+      "stdout": "24 stealth controller checks passed; only the dedicated stealth save key was read or written\n",
+      "stderr": "",
+      "count": 24,
+      "passed": true
+    },
+    {
+      "script": "check-direction-space-controller.mjs",
+      "exit_code": 0,
+      "stdout": "25 space controller checks passed; only the dedicated space save key was read or written\n",
+      "stderr": "",
+      "count": 25,
+      "passed": true
+    },
+    {
+      "script": "check-direction-survival-controller.mjs",
+      "exit_code": 0,
+      "stdout": "30 survival controller checks passed; only the dedicated survival save key was read or written\n",
+      "stderr": "",
+      "count": 30,
+      "passed": true
+    },
+    {
+      "script": "check-direction-vehicle-rules.mjs",
+      "exit_code": 0,
+      "stdout": "49 vehicle rules checks passed; 0 failed\n",
+      "stderr": "",
+      "count": 49,
+      "passed": true
+    },
+    {
+      "script": "check-direction-vehicle-controller.mjs",
+      "exit_code": 0,
+      "stdout": "35 vehicle controller checks passed; only the dedicated vehicle save key was read or written\n",
+      "stderr": "",
+      "count": 35,
+      "passed": true
+    }
+  ]
+}

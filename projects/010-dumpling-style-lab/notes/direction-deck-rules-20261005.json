@@ -1,0 +1,3322 @@
+{
+  "date": "2026-10-05",
+  "passed": true,
+  "count": 51,
+  "checks": [
+    "fresh voyage is paused with three energy, five actual dealt cards and twelve unique instances",
+    "eight original definitions expose six starting types and two distinct selectable reward types",
+    "shuffle is deterministic for a seed and materially differs for other seeds",
+    "three encounters have real one two one enemy bodies and preannounced attack guard rally cycles",
+    "paused legal and illegal actions preserve every pile body intent resource and ledger exactly",
+    "actual crew damage costs one energy and moves precisely its own instance to discard",
+    "cannon costs two and insufficient energy rejection is atomic rather than a free partial attack",
+    "targeted cards reject missing nonexistent dead and nonstring enemy targets before consumption",
+    "self cards reject enemy targets and malformed or excess payload fields atomically",
+    "draw discard exhaust unknown and already played instances cannot be used from outside the hand",
+    "lantern block absorbs real announced enemy damage and remaining block expires for the new player turn",
+    "enemy guard absorbs actual player attacks and expires when that enemy acts again",
+    "anchor updates displayed imminent attack and applies two real enemy turns of weakness",
+    "chart draws actual distinct card instances and cannot draw itself during its resolving effect",
+    "empty draw pile reshuffles the actual discard without duplicating or fabricating cards",
+    "unused hand cards discard at end of turn and energy resets rather than carrying leftovers",
+    "repair heals actual persistent damage and exhausts once for that encounter",
+    "repair never heals beyond the real maximum hull even when played at full health",
+    "successful last-hit transitions stop combat and never allow enemy retaliation after victory",
+    "route choices are available only after encounter one and cannot be picked twice or forged",
+    "repair route heals up to twelve from actual damage and preserves the same master cards",
+    "upgrade route waits for a specific existing instance and gives no free healing or upgrade",
+    "permanent cannon upgrade changes only the chosen instance cost and damage in the next encounter",
+    "new encounters preserve hull but reset block energy exhausted and combat piles from the same master deck",
+    "two live enemy targets are independent and dead targets cannot consume cards or energy",
+    "rally changes real strength and the next shown attack includes that permanent increase",
+    "only living enemies retaliate and their real total attack is shown by the intent helper",
+    "reward choice appears after second real encounter and adds exactly one new instance to the next deck",
+    "fog reward is a distinct actual exhaust card and does not silently replace other cards",
+    "early unknown inherited object or repeated reward choices are rejected atomically",
+    "card instance conservation holds after every action of complete upgrade and repair voyages",
+    "persistent hull follows real damage and healing rather than resetting to maximum each fight",
+    "read-only same-API demo legally completes multiple varied deterministic seeds",
+    "a genuinely reachable defensive 300-action voyage remains restorable and never yields an illegal planner action",
+    "intentionally ending every turn produces actual damage loss with zero granted attacks or cards",
+    "won and lost voyages auto-pause and refuse resume or further card route and reward actions",
+    "unknown draw grant heal energy damage teleport and time override actions never alter the voyage",
+    "saved in-flight card order resources intent and upgraded instances restore exactly paused",
+    "resuming a real restored upgraded voyage reaches later reward and final victory with the same legal acts",
+    "canonical replay accepts reordered JSON keys but rejects invented extra fields",
+    "strict restore rejects malformed oversized unsupported and noninteger seed data",
+    "strict replay rejects duplicated missing reordered or detached actual card instances and piles",
+    "strict replay rejects forged energy hull block healing and combat statistics",
+    "strict replay rejects invented enemy damage blocks weakness strength and detached shown intent",
+    "strict replay rejects detached upgrades invented rewards and incorrect route decisions",
+    "strict replay rejects changed RNG seed future shuffle and nonfinite numerical bodies",
+    "strict replay rejects missing reordered forged illegal or paused-only ledger entries",
+    "strict replay rejects forged encounter completion death phase selection and event output",
+    "strict replay rejects detached oversized missing or edited battle log messages",
+    "restore replay does not mutate source text world arrays or a separate ongoing voyage",
+    "card helpers preserve meaningful upgraded text actual energy and legal target options"
+  ],
+  "failures": [],
+  "playthroughs": [
+    {
+      "mode": "ordinary same-API demo",
+      "seed": 20261005,
+      "route": "upgrade",
+      "reward": "flare",
+      "actionCount": 31,
+      "endedTurns": 7,
+      "finalHp": 43,
+      "cardCount": 13,
+      "stats": {
+        "turns": 7,
+        "cardsPlayed": 21,
+        "damageDealt": 124,
+        "damageTaken": 11,
+        "healed": 0,
+        "blockGained": 16,
+        "blockedDamage": 12,
+        "draws": 52,
+        "shuffles": 6,
+        "exhausted": 0,
+        "upgraded": 1,
+        "rewards": 1,
+        "encountersCleared": 3
+      },
+      "snapshots": [
+        {
+          "phase": "route",
+          "encounter": 0,
+          "hp": 54,
+          "cards": 12,
+          "energy": 0,
+          "action": "play"
+        },
+        {
+          "phase": "route",
+          "encounter": 0,
+          "hp": 54,
+          "cards": 12,
+          "energy": 0,
+          "action": "choose-route"
+        },
+        {
+          "phase": "combat",
+          "encounter": 1,
+          "hp": 54,
+          "cards": 12,
+          "energy": 3,
+          "action": "upgrade"
+        },
+        {
+          "phase": "reward",
+          "encounter": 1,
+          "hp": 49,
+          "cards": 12,
+          "energy": 0,
+          "action": "play"
+        },
+        {
+          "phase": "combat",
+          "encounter": 2,
+          "hp": 49,
+          "cards": 13,
+          "energy": 3,
+          "action": "choose-reward"
+        },
+        {
+          "phase": "won",
+          "encounter": 2,
+          "hp": 43,
+          "cards": 13,
+          "energy": 0,
+          "action": "play"
+        }
+      ],
+      "actions": [
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c7"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c5",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "choose-route",
+          "payload": "upgrade"
+        },
+        {
+          "action": "upgrade",
+          "payload": "c4"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c5",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "choose-reward",
+          "payload": "flare"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c6"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c13",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c13",
+            "targetId": "e3-1"
+          }
+        }
+      ]
+    },
+    {
+      "mode": "ordinary combat actions with explicit human route/reward choices",
+      "seed": 20261005,
+      "route": "repair",
+      "reward": "fog",
+      "actionCount": 52,
+      "endedTurns": 13,
+      "finalHp": 48,
+      "cardCount": 13,
+      "stats": {
+        "turns": 13,
+        "cardsPlayed": 37,
+        "damageDealt": 124,
+        "damageTaken": 10,
+        "healed": 4,
+        "blockGained": 68,
+        "blockedDamage": 49,
+        "draws": 86,
+        "shuffles": 11,
+        "exhausted": 2,
+        "upgraded": 0,
+        "rewards": 1,
+        "encountersCleared": 3
+      },
+      "snapshots": [
+        {
+          "phase": "route",
+          "encounter": 0,
+          "hp": 54,
+          "cards": 12,
+          "energy": 0,
+          "action": "play"
+        },
+        {
+          "phase": "combat",
+          "encounter": 1,
+          "hp": 54,
+          "cards": 12,
+          "energy": 3,
+          "action": "choose-route"
+        },
+        {
+          "phase": "reward",
+          "encounter": 1,
+          "hp": 50,
+          "cards": 12,
+          "energy": 0,
+          "action": "play"
+        },
+        {
+          "phase": "combat",
+          "encounter": 2,
+          "hp": 50,
+          "cards": 13,
+          "energy": 3,
+          "action": "choose-reward"
+        },
+        {
+          "phase": "won",
+          "encounter": 2,
+          "hp": 48,
+          "cards": 13,
+          "energy": 0,
+          "action": "play"
+        }
+      ],
+      "actions": [
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c7"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c5",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "choose-route",
+          "payload": "repair"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c6"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c7"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "choose-reward",
+          "payload": "fog"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c10"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c5",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c8"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c9"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c13"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c12",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c6"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c8"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e3-1"
+          }
+        }
+      ]
+    },
+    {
+      "mode": "ordinary same-API demo",
+      "seed": 1,
+      "route": "upgrade",
+      "reward": "flare",
+      "actionCount": 39,
+      "endedTurns": 9,
+      "finalHp": 42,
+      "cardCount": 13,
+      "stats": {
+        "turns": 9,
+        "cardsPlayed": 27,
+        "damageDealt": 124,
+        "damageTaken": 16,
+        "healed": 4,
+        "blockGained": 40,
+        "blockedDamage": 32,
+        "draws": 66,
+        "shuffles": 7,
+        "exhausted": 1,
+        "upgraded": 1,
+        "rewards": 1,
+        "encountersCleared": 3
+      },
+      "snapshots": [
+        {
+          "phase": "route",
+          "encounter": 0,
+          "hp": 54,
+          "cards": 12,
+          "energy": 0,
+          "action": "play"
+        },
+        {
+          "phase": "route",
+          "encounter": 0,
+          "hp": 54,
+          "cards": 12,
+          "energy": 0,
+          "action": "choose-route"
+        },
+        {
+          "phase": "combat",
+          "encounter": 1,
+          "hp": 54,
+          "cards": 12,
+          "energy": 3,
+          "action": "upgrade"
+        },
+        {
+          "phase": "reward",
+          "encounter": 1,
+          "hp": 47,
+          "cards": 12,
+          "energy": 0,
+          "action": "play"
+        },
+        {
+          "phase": "combat",
+          "encounter": 2,
+          "hp": 47,
+          "cards": 13,
+          "energy": 3,
+          "action": "choose-reward"
+        },
+        {
+          "phase": "won",
+          "encounter": 2,
+          "hp": 42,
+          "cards": 13,
+          "energy": 0,
+          "action": "play"
+        }
+      ],
+      "actions": [
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c8"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c7"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "choose-route",
+          "payload": "upgrade"
+        },
+        {
+          "action": "upgrade",
+          "payload": "c4"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c7"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "choose-reward",
+          "payload": "flare"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c6"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c7"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c13",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c10"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c9"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c13",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e3-1"
+          }
+        }
+      ]
+    },
+    {
+      "mode": "ordinary same-API demo",
+      "seed": 2,
+      "route": "upgrade",
+      "reward": "flare",
+      "actionCount": 32,
+      "endedTurns": 7,
+      "finalHp": 48,
+      "cardCount": 13,
+      "stats": {
+        "turns": 7,
+        "cardsPlayed": 22,
+        "damageDealt": 124,
+        "damageTaken": 6,
+        "healed": 0,
+        "blockGained": 22,
+        "blockedDamage": 18,
+        "draws": 51,
+        "shuffles": 6,
+        "exhausted": 0,
+        "upgraded": 1,
+        "rewards": 1,
+        "encountersCleared": 3
+      },
+      "snapshots": [
+        {
+          "phase": "route",
+          "encounter": 0,
+          "hp": 54,
+          "cards": 12,
+          "energy": 0,
+          "action": "play"
+        },
+        {
+          "phase": "route",
+          "encounter": 0,
+          "hp": 54,
+          "cards": 12,
+          "energy": 0,
+          "action": "choose-route"
+        },
+        {
+          "phase": "combat",
+          "encounter": 1,
+          "hp": 54,
+          "cards": 12,
+          "energy": 3,
+          "action": "upgrade"
+        },
+        {
+          "phase": "reward",
+          "encounter": 1,
+          "hp": 53,
+          "cards": 12,
+          "energy": 0,
+          "action": "play"
+        },
+        {
+          "phase": "combat",
+          "encounter": 2,
+          "hp": 53,
+          "cards": 13,
+          "energy": 3,
+          "action": "choose-reward"
+        },
+        {
+          "phase": "won",
+          "encounter": 2,
+          "hp": 48,
+          "cards": 13,
+          "energy": 0,
+          "action": "play"
+        }
+      ],
+      "actions": [
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c12",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c5",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c5",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "choose-route",
+          "payload": "upgrade"
+        },
+        {
+          "action": "upgrade",
+          "payload": "c4"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c6"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c12",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "choose-reward",
+          "payload": "flare"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c13",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c5",
+            "targetId": "e3-1"
+          }
+        }
+      ]
+    },
+    {
+      "mode": "ordinary same-API demo",
+      "seed": 3,
+      "route": "upgrade",
+      "reward": "flare",
+      "actionCount": 38,
+      "endedTurns": 9,
+      "finalHp": 42,
+      "cardCount": 13,
+      "stats": {
+        "turns": 9,
+        "cardsPlayed": 26,
+        "damageDealt": 124,
+        "damageTaken": 20,
+        "healed": 8,
+        "blockGained": 28,
+        "blockedDamage": 20,
+        "draws": 64,
+        "shuffles": 7,
+        "exhausted": 2,
+        "upgraded": 1,
+        "rewards": 1,
+        "encountersCleared": 3
+      },
+      "snapshots": [
+        {
+          "phase": "route",
+          "encounter": 0,
+          "hp": 54,
+          "cards": 12,
+          "energy": 0,
+          "action": "play"
+        },
+        {
+          "phase": "route",
+          "encounter": 0,
+          "hp": 54,
+          "cards": 12,
+          "energy": 0,
+          "action": "choose-route"
+        },
+        {
+          "phase": "combat",
+          "encounter": 1,
+          "hp": 54,
+          "cards": 12,
+          "energy": 3,
+          "action": "upgrade"
+        },
+        {
+          "phase": "reward",
+          "encounter": 1,
+          "hp": 53,
+          "cards": 12,
+          "energy": 0,
+          "action": "play"
+        },
+        {
+          "phase": "combat",
+          "encounter": 2,
+          "hp": 53,
+          "cards": 13,
+          "energy": 3,
+          "action": "choose-reward"
+        },
+        {
+          "phase": "won",
+          "encounter": 2,
+          "hp": 42,
+          "cards": 13,
+          "energy": 0,
+          "action": "play"
+        }
+      ],
+      "actions": [
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c12",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c6"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c9"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c12",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "choose-route",
+          "payload": "upgrade"
+        },
+        {
+          "action": "upgrade",
+          "payload": "c4"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c5",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c10"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "choose-reward",
+          "payload": "flare"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c7"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c10"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c13",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c13",
+            "targetId": "e3-1"
+          }
+        }
+      ]
+    },
+    {
+      "mode": "ordinary same-API demo",
+      "seed": 4,
+      "route": "upgrade",
+      "reward": "flare",
+      "actionCount": 41,
+      "endedTurns": 10,
+      "finalHp": 42,
+      "cardCount": 13,
+      "stats": {
+        "turns": 10,
+        "cardsPlayed": 28,
+        "damageDealt": 124,
+        "damageTaken": 19,
+        "healed": 7,
+        "blockGained": 36,
+        "blockedDamage": 32,
+        "draws": 69,
+        "shuffles": 7,
+        "exhausted": 2,
+        "upgraded": 1,
+        "rewards": 1,
+        "encountersCleared": 3
+      },
+      "snapshots": [
+        {
+          "phase": "route",
+          "encounter": 0,
+          "hp": 52,
+          "cards": 12,
+          "energy": 0,
+          "action": "play"
+        },
+        {
+          "phase": "route",
+          "encounter": 0,
+          "hp": 52,
+          "cards": 12,
+          "energy": 0,
+          "action": "choose-route"
+        },
+        {
+          "phase": "combat",
+          "encounter": 1,
+          "hp": 52,
+          "cards": 12,
+          "energy": 3,
+          "action": "upgrade"
+        },
+        {
+          "phase": "reward",
+          "encounter": 1,
+          "hp": 51,
+          "cards": 12,
+          "energy": 0,
+          "action": "play"
+        },
+        {
+          "phase": "combat",
+          "encounter": 2,
+          "hp": 51,
+          "cards": 13,
+          "energy": 3,
+          "action": "choose-reward"
+        },
+        {
+          "phase": "won",
+          "encounter": 2,
+          "hp": 42,
+          "cards": 13,
+          "energy": 0,
+          "action": "play"
+        }
+      ],
+      "actions": [
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c12",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "choose-route",
+          "payload": "upgrade"
+        },
+        {
+          "action": "upgrade",
+          "payload": "c4"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c5",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c9"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c10"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c7"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "choose-reward",
+          "payload": "flare"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c6"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c7"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c13",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c10"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c6"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c13",
+            "targetId": "e3-1"
+          }
+        }
+      ]
+    },
+    {
+      "mode": "ordinary same-API demo",
+      "seed": 5,
+      "route": "upgrade",
+      "reward": "flare",
+      "actionCount": 36,
+      "endedTurns": 9,
+      "finalHp": 44,
+      "cardCount": 13,
+      "stats": {
+        "turns": 9,
+        "cardsPlayed": 24,
+        "damageDealt": 124,
+        "damageTaken": 15,
+        "healed": 5,
+        "blockGained": 30,
+        "blockedDamage": 30,
+        "draws": 62,
+        "shuffles": 7,
+        "exhausted": 2,
+        "upgraded": 1,
+        "rewards": 1,
+        "encountersCleared": 3
+      },
+      "snapshots": [
+        {
+          "phase": "route",
+          "encounter": 0,
+          "hp": 54,
+          "cards": 12,
+          "energy": 0,
+          "action": "play"
+        },
+        {
+          "phase": "route",
+          "encounter": 0,
+          "hp": 54,
+          "cards": 12,
+          "energy": 0,
+          "action": "choose-route"
+        },
+        {
+          "phase": "combat",
+          "encounter": 1,
+          "hp": 54,
+          "cards": 12,
+          "energy": 3,
+          "action": "upgrade"
+        },
+        {
+          "phase": "reward",
+          "encounter": 1,
+          "hp": 53,
+          "cards": 12,
+          "energy": 0,
+          "action": "play"
+        },
+        {
+          "phase": "combat",
+          "encounter": 2,
+          "hp": 53,
+          "cards": 13,
+          "energy": 3,
+          "action": "choose-reward"
+        },
+        {
+          "phase": "won",
+          "encounter": 2,
+          "hp": 44,
+          "cards": 13,
+          "energy": 0,
+          "action": "play"
+        }
+      ],
+      "actions": [
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c12",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c5",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "choose-route",
+          "payload": "upgrade"
+        },
+        {
+          "action": "upgrade",
+          "payload": "c4"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c5",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c10"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "choose-reward",
+          "payload": "flare"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c6"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c7"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c5",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c10"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c13",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c12",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c7"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c12",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c13",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e3-1"
+          }
+        }
+      ]
+    },
+    {
+      "mode": "ordinary same-API demo",
+      "seed": 100,
+      "route": "upgrade",
+      "reward": "flare",
+      "actionCount": 33,
+      "endedTurns": 8,
+      "finalHp": 53,
+      "cardCount": 13,
+      "stats": {
+        "turns": 8,
+        "cardsPlayed": 22,
+        "damageDealt": 124,
+        "damageTaken": 5,
+        "healed": 4,
+        "blockGained": 26,
+        "blockedDamage": 21,
+        "draws": 59,
+        "shuffles": 6,
+        "exhausted": 1,
+        "upgraded": 1,
+        "rewards": 1,
+        "encountersCleared": 3
+      },
+      "snapshots": [
+        {
+          "phase": "route",
+          "encounter": 0,
+          "hp": 54,
+          "cards": 12,
+          "energy": 0,
+          "action": "play"
+        },
+        {
+          "phase": "route",
+          "encounter": 0,
+          "hp": 54,
+          "cards": 12,
+          "energy": 0,
+          "action": "choose-route"
+        },
+        {
+          "phase": "combat",
+          "encounter": 1,
+          "hp": 54,
+          "cards": 12,
+          "energy": 3,
+          "action": "upgrade"
+        },
+        {
+          "phase": "reward",
+          "encounter": 1,
+          "hp": 53,
+          "cards": 12,
+          "energy": 0,
+          "action": "play"
+        },
+        {
+          "phase": "combat",
+          "encounter": 2,
+          "hp": 53,
+          "cards": 13,
+          "energy": 3,
+          "action": "choose-reward"
+        },
+        {
+          "phase": "won",
+          "encounter": 2,
+          "hp": 53,
+          "cards": 13,
+          "energy": 0,
+          "action": "play"
+        }
+      ],
+      "actions": [
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c7"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c5",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "choose-route",
+          "payload": "upgrade"
+        },
+        {
+          "action": "upgrade",
+          "payload": "c4"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c5",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c10"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c6"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c5",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "choose-reward",
+          "payload": "flare"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c12",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c6"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c13",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c9"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c13",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e3-1"
+          }
+        }
+      ]
+    },
+    {
+      "mode": "ordinary same-API demo",
+      "seed": 12345,
+      "route": "upgrade",
+      "reward": "flare",
+      "actionCount": 39,
+      "endedTurns": 9,
+      "finalHp": 54,
+      "cardCount": 13,
+      "stats": {
+        "turns": 9,
+        "cardsPlayed": 27,
+        "damageDealt": 124,
+        "damageTaken": 3,
+        "healed": 3,
+        "blockGained": 38,
+        "blockedDamage": 33,
+        "draws": 65,
+        "shuffles": 6,
+        "exhausted": 1,
+        "upgraded": 1,
+        "rewards": 1,
+        "encountersCleared": 3
+      },
+      "snapshots": [
+        {
+          "phase": "route",
+          "encounter": 0,
+          "hp": 54,
+          "cards": 12,
+          "energy": 0,
+          "action": "play"
+        },
+        {
+          "phase": "route",
+          "encounter": 0,
+          "hp": 54,
+          "cards": 12,
+          "energy": 0,
+          "action": "choose-route"
+        },
+        {
+          "phase": "combat",
+          "encounter": 1,
+          "hp": 54,
+          "cards": 12,
+          "energy": 3,
+          "action": "upgrade"
+        },
+        {
+          "phase": "reward",
+          "encounter": 1,
+          "hp": 51,
+          "cards": 12,
+          "energy": 0,
+          "action": "play"
+        },
+        {
+          "phase": "combat",
+          "encounter": 2,
+          "hp": 51,
+          "cards": 13,
+          "energy": 3,
+          "action": "choose-reward"
+        },
+        {
+          "phase": "won",
+          "encounter": 2,
+          "hp": 54,
+          "cards": 13,
+          "energy": 0,
+          "action": "play"
+        }
+      ],
+      "actions": [
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c8"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c8"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c7"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "choose-route",
+          "payload": "upgrade"
+        },
+        {
+          "action": "upgrade",
+          "payload": "c4"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c12",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c6"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c5",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "choose-reward",
+          "payload": "flare"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c7"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c5",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c10"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c13",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c5",
+            "targetId": "e3-1"
+          }
+        }
+      ]
+    },
+    {
+      "mode": "ordinary same-API demo",
+      "seed": 987654321,
+      "route": "upgrade",
+      "reward": "flare",
+      "actionCount": 37,
+      "endedTurns": 9,
+      "finalHp": 46,
+      "cardCount": 13,
+      "stats": {
+        "turns": 9,
+        "cardsPlayed": 25,
+        "damageDealt": 124,
+        "damageTaken": 13,
+        "healed": 5,
+        "blockGained": 28,
+        "blockedDamage": 23,
+        "draws": 61,
+        "shuffles": 7,
+        "exhausted": 2,
+        "upgraded": 1,
+        "rewards": 1,
+        "encountersCleared": 3
+      },
+      "snapshots": [
+        {
+          "phase": "route",
+          "encounter": 0,
+          "hp": 54,
+          "cards": 12,
+          "energy": 0,
+          "action": "play"
+        },
+        {
+          "phase": "route",
+          "encounter": 0,
+          "hp": 54,
+          "cards": 12,
+          "energy": 0,
+          "action": "choose-route"
+        },
+        {
+          "phase": "combat",
+          "encounter": 1,
+          "hp": 54,
+          "cards": 12,
+          "energy": 3,
+          "action": "upgrade"
+        },
+        {
+          "phase": "reward",
+          "encounter": 1,
+          "hp": 54,
+          "cards": 12,
+          "energy": 0,
+          "action": "play"
+        },
+        {
+          "phase": "combat",
+          "encounter": 2,
+          "hp": 54,
+          "cards": 13,
+          "energy": 3,
+          "action": "choose-reward"
+        },
+        {
+          "phase": "won",
+          "encounter": 2,
+          "hp": 46,
+          "cards": 13,
+          "energy": 0,
+          "action": "play"
+        }
+      ],
+      "actions": [
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c5",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c5",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "choose-route",
+          "payload": "upgrade"
+        },
+        {
+          "action": "upgrade",
+          "payload": "c4"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c12",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c6"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c10"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c7"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c12",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c5",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "choose-reward",
+          "payload": "flare"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c10"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c5",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c13",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e3-1"
+          }
+        }
+      ]
+    },
+    {
+      "mode": "ordinary same-API demo",
+      "seed": 4294967295,
+      "route": "upgrade",
+      "reward": "flare",
+      "actionCount": 40,
+      "endedTurns": 9,
+      "finalHp": 53,
+      "cardCount": 13,
+      "stats": {
+        "turns": 9,
+        "cardsPlayed": 28,
+        "damageDealt": 124,
+        "damageTaken": 1,
+        "healed": 0,
+        "blockGained": 48,
+        "blockedDamage": 35,
+        "draws": 68,
+        "shuffles": 6,
+        "exhausted": 0,
+        "upgraded": 1,
+        "rewards": 1,
+        "encountersCleared": 3
+      },
+      "snapshots": [
+        {
+          "phase": "route",
+          "encounter": 0,
+          "hp": 54,
+          "cards": 12,
+          "energy": 0,
+          "action": "play"
+        },
+        {
+          "phase": "route",
+          "encounter": 0,
+          "hp": 54,
+          "cards": 12,
+          "energy": 0,
+          "action": "choose-route"
+        },
+        {
+          "phase": "combat",
+          "encounter": 1,
+          "hp": 54,
+          "cards": 12,
+          "energy": 3,
+          "action": "upgrade"
+        },
+        {
+          "phase": "reward",
+          "encounter": 1,
+          "hp": 53,
+          "cards": 12,
+          "energy": 0,
+          "action": "play"
+        },
+        {
+          "phase": "combat",
+          "encounter": 2,
+          "hp": 53,
+          "cards": 13,
+          "energy": 3,
+          "action": "choose-reward"
+        },
+        {
+          "phase": "won",
+          "encounter": 2,
+          "hp": 53,
+          "cards": 13,
+          "energy": 0,
+          "action": "play"
+        }
+      ],
+      "actions": [
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c3",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c12",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c8"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c7"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e1-1"
+          }
+        },
+        {
+          "action": "choose-route",
+          "payload": "upgrade"
+        },
+        {
+          "action": "upgrade",
+          "payload": "c4"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c12",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c6"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c2",
+            "targetId": "e2-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c9"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c6"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e2-2"
+          }
+        },
+        {
+          "action": "choose-reward",
+          "payload": "flare"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c11",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c7"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c13",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c9"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c4",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c1",
+            "targetId": "e3-1"
+          }
+        },
+        {
+          "action": "end-turn"
+        },
+        {
+          "action": "play",
+          "payload": {
+            "cardId": "c13",
+            "targetId": "e3-1"
+          }
+        }
+      ]
+    },
+    {
+      "mode": "ordinary defensive action-limit boundary without damage cards",
+      "seed": 1,
+      "actionCount": 300,
+      "endedTurns": 140,
+      "finalHp": 46,
+      "stats": {
+        "turns": 140,
+        "cardsPlayed": 160,
+        "damageDealt": 0,
+        "damageTaken": 10,
+        "healed": 2,
+        "blockGained": 662,
+        "blockedDamage": 472,
+        "draws": 751,
+        "shuffles": 79,
+        "exhausted": 1,
+        "upgraded": 0,
+        "rewards": 0,
+        "encountersCleared": 0
+      }
+    },
+    {
+      "mode": "ordinary deliberate no-card loss",
+      "seed": 20261005,
+      "actionCount": 12,
+      "stats": {
+        "turns": 12,
+        "cardsPlayed": 0,
+        "damageDealt": 0,
+        "damageTaken": 54,
+        "healed": 0,
+        "blockGained": 0,
+        "blockedDamage": 0,
+        "draws": 60,
+        "shuffles": 6,
+        "exhausted": 0,
+        "upgraded": 0,
+        "rewards": 0,
+        "encountersCleared": 0
+      }
+    }
+  ],
+  "method": "Production deterministic seed-based Fisher-Yates shuffle, real unique card instances and hand/draw/discard/exhaust conservation, three-energy legal card plays and actual enemy attack/guard/rally cycles. Every objective journey begins from a fresh dealt world and uses only public legal act calls; the production demo planner is read-only and supplies ordinary play/turn/route/reward intentions. Upgrade and repair routes plus flare/fog rewards are completed, multiple varied seeds win, and intentional ordinary end-turn-only play produces actual loss. No cards, energy, HP, enemy HP or objective completion are granted or overridden. Intermediate saves are restored through full canonical replay of the bounded legal action ledger, validating exact RNG, pile order, bodies, intent, resources, upgrades, rewards and logs. Malformed-save assertions alter copies solely to exercise rejection; they are never used for objective playthroughs.",
+  "commands": [
+    "node tooling/check-direction-deck-rules.mjs"
+  ]
+}

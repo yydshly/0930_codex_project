@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-04",
+  "module": "showcase-chain.js",
+  "checks": 14,
+  "passed": 14,
+  "routeLength": 2878.3907889072652,
+  "defaultRunSeconds": 120.87621453132809,
+  "results": [
+    {
+      "name": "Route interpolation is finite, normalized and anchored at authored portals",
+      "passed": true
+    },
+    {
+      "name": "Insertion into a matching pair consumes the actual projectile and both existing balls",
+      "passed": true
+    },
+    {
+      "name": "An inserted unmatched ball pushes forward neighbours and preserves order / spacing",
+      "passed": true
+    },
+    {
+      "name": "Three equal colors separated by a real physical gap are not treated as a match",
+      "passed": true
+    },
+    {
+      "name": "Removing a middle run preserves its gap; physical closure reconnects four outer colors as a second chain reaction",
+      "passed": true
+    },
+    {
+      "name": "A nonmatching gap closes without an invented elimination",
+      "passed": true
+    },
+    {
+      "name": "A aimed projectile travels through space, intersects a moving pair, inserts and produces a real win",
+      "passed": true
+    },
+    {
+      "name": "Fire cooldown gates repeated shots; swap exchanges only the two queued colors",
+      "passed": true
+    },
+    {
+      "name": "Shots leaving the field count as misses and do not delete a remote ball",
+      "passed": true
+    },
+    {
+      "name": "Default learning run lasts 120–125 seconds when no shot is fired",
+      "passed": true
+    },
+    {
+      "name": "Failure is triggered by the actual leading marble reaching the mouth; finished games do not advance",
+      "passed": true
+    },
+    {
+      "name": "Saving in flight and during gap closure restores deterministic positions, projectile color and final rule outcome",
+      "passed": true
+    },
+    {
+      "name": "Malformed colors, positions, duplicated IDs, overlaps, won/playing contradictions and projectile records fall back safely",
+      "passed": true
+    },
+    {
+      "name": "Module starts inactive, pauses with exact rule state frozen and resumes only after explicit activation",
+      "passed": true
+    }
+  ],
+  "limits": "Renderer-independent rule and lifecycle checks. Art, real mouse/touch/keyboard interaction, default/narrow/fullscreen screenshots and browser errors require root CUA review."
+}

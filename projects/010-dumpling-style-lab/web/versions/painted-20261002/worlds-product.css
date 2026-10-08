@@ -1,0 +1,88 @@
+body:not([data-game=movers]){--paper:#111b1e;--card:#19272b;--line:#334246;--ink:#ece9df;--muted:#a2aeaa;--accent:#c8b691;--selected:#c8b691;--selected-text:#152226;--shadow:rgba(0,0,0,.25)}
+body[data-game=wuxia]{--paper:#e5e4d8;--card:#f3f1e8;--line:#bfc4b6;--ink:#2c4039;--muted:#6b796b;--accent:#935b48;--selected:#445e51;--selected-text:#f9f2df}
+body[data-game=ecology]{--paper:#e1e8df;--card:#f3f6ed;--line:#bfcfbd;--ink:#294337;--muted:#647a66;--accent:#4c7854;--selected:#48694d;--selected-text:#f6f5e6}
+body[data-game=wasteland]{--paper:#252323;--card:#34302f;--line:#595047;--ink:#efe2ca;--muted:#b6a892;--accent:#d6a26d;--selected:#c39662;--selected-text:#211d19}
+body[data-game=dream]{--paper:#0d232c;--card:#18323b;--line:#37525a;--ink:#dfebda;--muted:#9bb8b7;--accent:#d1c399;--selected:#b7cbbc;--selected-text:#102e37}
+body[data-game=arcade]{--paper:#101c2a;--card:#1b2c3b;--line:#354b56;--ink:#e8ece0;--muted:#9bb6ba;--accent:#68d9c0;--selected:#67d3bd;--selected-text:#142b34}
+body[data-game=inn]{--paper:#efe6d5;--card:#faf4e7;--line:#d4c3a9;--ink:#574332;--muted:#907960;--accent:#92734b;--selected:#6d7353;--selected-text:#fff7e3}
+body[data-game=islands]{--paper:#172a32;--card:#213842;--line:#3c5660;--ink:#e4ede3;--muted:#a1b8bc;--accent:#c8bf93;--selected:#c7d5b2;--selected-text:#263b3e}
+body:not([data-game=movers]) .game-header{padding:15px 28px;max-width:1360px;gap:16px}
+body:not([data-game=movers]) .wordmark{font-size:11px;letter-spacing:3px}
+body:not([data-game=movers]) .wordmark span,body:not([data-game=movers]) .edition{display:none}
+body:not([data-game=movers]) .moving-top-controls{display:flex;gap:8px;margin-left:auto}
+body:not([data-game=movers]) .moving-top-controls button{min-height:38px;padding:7px 12px;border:1px solid var(--line);border-radius:7px;background:transparent;color:var(--ink);font-size:11px}
+body:not([data-game=movers]) .game-shell{max-width:1360px;padding:24px 28px 0}
+body:not([data-game=movers]) .game-intro,body:not([data-game=movers]) .design-notes,body:not([data-game=movers]) .next-worlds{display:none}
+.worlds-heading{display:flex;justify-content:space-between;align-items:center;gap:25px;margin:0 0 21px}
+.worlds-genre{font-size:10px;letter-spacing:2px;color:var(--accent)}
+.worlds-heading h1{font-family:Georgia,"Songti SC",serif;font-size:32px;font-weight:500;letter-spacing:2px;margin:8px 0}
+.worlds-heading p{color:var(--muted);font-size:12px;letter-spacing:1px;margin:0}
+.worlds-heading-tools{display:flex;gap:8px}.worlds-heading-tools button{border:1px solid var(--line);border-radius:7px;background:transparent;padding:10px 15px;font-size:11px;min-height:40px}
+body:not([data-game=movers]) .game-tabs{display:flex;gap:7px;overflow-x:auto;scrollbar-width:thin;scrollbar-color:var(--line) transparent;padding:0 0 8px;margin:0 0 16px}
+body:not([data-game=movers]) .game-tabs button{flex:1 0 auto;min-width:102px;border-radius:7px;padding:11px 12px;justify-content:center;gap:0;background:transparent}
+body:not([data-game=movers]) .game-tabs button[aria-selected=true]{background:var(--selected);color:var(--selected-text);border-color:var(--selected)}
+body:not([data-game=movers]) .game-tabs b{font-size:11px;font-weight:500;white-space:nowrap;margin:0}
+body:not([data-game=movers]) .game-tabs small,body:not([data-game=movers]) .tab-number,body:not([data-game=movers]) .tab-arrow{display:none}
+body:not([data-game=movers]) .game-layout{display:flex;flex-direction:column;align-items:stretch;gap:14px;min-width:0}
+body:not([data-game=movers]) .game-view{width:100%;max-width:min(100%,calc((100dvh - 245px)*1.6));margin:0 auto;border-radius:12px;border-color:var(--line);box-shadow:0 14px 40px rgba(0,0,0,.12);position:relative;overflow:hidden;scroll-margin-top:78px}
+body:not([data-game=movers]) .game-toolbar{padding:11px 17px;min-height:49px;background:var(--card);gap:10px;border-bottom:1px solid var(--line)}
+body:not([data-game=movers]) .game-toolbar>div:first-child{flex-wrap:wrap}
+body:not([data-game=movers]) #game-title{font-size:12px;letter-spacing:.5px}
+body:not([data-game=movers]) .chapter{font-size:10px;padding:4px 8px;background:var(--paper);border-radius:4px;color:var(--muted)}
+body:not([data-game=movers]) .view-tools{gap:5px;flex-wrap:wrap;justify-content:flex-end}
+body:not([data-game=movers]) .view-tools button{min-height:32px;padding:6px 9px;border-radius:5px;font-size:10px}
+.worlds-mission{display:flex;align-items:baseline;gap:15px;padding:11px 17px;background:var(--paper);border-bottom:1px solid var(--line)}
+.worlds-mission>span{flex:none;color:var(--accent);font-size:10px;letter-spacing:1px}.worlds-mission p{font-size:12px;line-height:1.75;margin:0;color:var(--ink)}
+.worlds-progress{padding:10px 17px 12px;background:var(--card);border-bottom:1px solid var(--line)}.worlds-checkpoints{display:flex;gap:7px;flex-wrap:wrap;list-style:none;padding:0;margin:0}.worlds-checkpoints li{font-size:10px;padding:5px 8px;border:1px solid var(--line);border-radius:4px;color:var(--muted)}.worlds-checkpoints li.done{color:var(--accent);background:var(--paper)}.worlds-hint{font-size:11px;line-height:1.8;color:var(--muted);margin:8px 0 0}.worlds-hint-action{font-size:11px;min-height:44px;border:1px solid var(--accent);border-radius:5px;background:transparent;color:var(--ink);padding:8px 12px;margin-top:8px}body[data-game=movers] .worlds-progress{display:none}.worlds-overlay{z-index:80}.worlds-dialog-foot{flex-wrap:wrap}.worlds-dialog-foot button{max-width:100%}
+.worlds-dialogue{display:flex;align-items:center;gap:14px;padding:15px 20px;background:var(--card);border-top:1px solid var(--line);min-height:85px}
+.worlds-portrait{width:39px;height:62px;object-fit:contain;object-position:center bottom;flex:none;filter:drop-shadow(0 5px 4px rgba(0,0,0,.2))}
+body:not([data-game=movers]) #game-message{padding:0;font-size:12px;line-height:1.9;min-height:0;border:0;background:transparent;color:var(--ink)}
+body:not([data-game=movers]) .game-actions{padding:0 20px 16px;gap:8px;display:flex;flex-wrap:wrap}
+body:not([data-game=movers]) .game-actions button{font-size:11px;line-height:1.4;border-radius:6px;padding:9px 12px;min-height:38px;background:transparent;border-color:var(--line)}
+body:not([data-game=movers]) .game-actions button.primary{background:var(--selected);color:var(--selected-text);border-color:var(--selected)}
+body:not([data-game=movers]) .game-actions button:disabled{opacity:.5}
+.world-action-group{display:flex;align-items:center;gap:6px;flex-wrap:wrap;padding-top:8px;width:100%;border-top:1px solid var(--line)}
+.action-group-label{width:78px;flex:none;font-size:10px;color:var(--muted);letter-spacing:.5px}
+.world-decision{width:100%;border:1px solid var(--line);border-radius:7px;padding:0 12px 10px}.world-decision>summary{font-size:11px;padding:12px 0 3px;cursor:pointer;color:var(--accent)}.world-decision:not([open]){padding-bottom:9px}.world-decision .world-action-group{border:0}
+body:not([data-game=movers]) .control-help{font-size:10px;line-height:1.6;color:var(--muted);padding:0 20px 15px;margin:0}
+.worlds-dossier{width:100%;max-width:min(100%,calc((100dvh - 245px)*1.6));margin:0 auto;border:1px solid var(--line);border-radius:9px;background:var(--card);overflow:hidden}.worlds-dossier>summary{padding:14px 18px;font-size:11px;cursor:pointer;color:var(--muted);min-height:44px}
+.worlds-dossier .game-notebook{display:grid;grid-template-columns:1fr 1.4fr;gap:0 25px;background:transparent;border:none;border-radius:0;padding:5px 20px 20px;box-shadow:none}
+.worlds-dossier .notebook-heading,.worlds-dossier #game-goal{display:none}.worlds-dossier .pocket{border:0;padding-top:0}.worlds-dossier h3{margin:7px 0 12px}.worlds-dossier .save-box{grid-column:1/-1;padding-top:12px;margin-top:16px}.worlds-dossier .save-box>div:empty{display:none}
+.worlds-asset-status{display:flex;align-items:center;gap:12px;padding:9px 17px;background:var(--paper);color:var(--muted);font-size:11px}.worlds-asset-status button{font-size:11px;padding:5px 9px;background:transparent;border:1px solid var(--accent);border-radius:4px;color:var(--ink);min-height:35px}
+.worlds-overlay{position:fixed;inset:0;z-index:25;background:rgba(6,16,22,.72);backdrop-filter:blur(7px);display:flex;align-items:center;justify-content:center;padding:24px}
+.worlds-dialog{width:min(560px,100%);max-height:min(680px,calc(100dvh - 60px));display:flex;flex-direction:column;border:1px solid var(--line);background:var(--card);border-radius:12px;box-shadow:0 30px 100px #0007;color:var(--ink)}
+.worlds-dialog-top{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:15px 22px;border-bottom:1px solid var(--line);font-size:10px;letter-spacing:1px;color:var(--accent)}
+.worlds-dialog button{font-size:12px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--ink);min-height:40px;padding:9px 14px}
+.worlds-dialog button.primary{background:var(--selected);color:var(--selected-text);border-color:var(--selected)}
+.worlds-dialog-body{overflow:auto;padding:14px 26px 20px;overscroll-behavior:contain}.worlds-dialog h2{font:500 27px/1.4 Georgia,"Songti SC",serif;margin:12px 0 20px;letter-spacing:1px}
+.worlds-opening{font-size:13px;line-height:2;color:var(--ink);margin:0 0 20px}.worlds-steps{font-size:12px;line-height:1.9;color:var(--muted);padding-left:20px;display:grid;gap:13px}.worlds-steps li::marker{color:var(--accent)}
+.worlds-record-inventory{display:flex;flex-wrap:wrap;gap:7px;padding:13px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.worlds-record-inventory span{font-size:10px;padding:5px 8px;border-radius:4px;background:var(--paper);color:var(--muted)}
+.worlds-records{font-size:11px;line-height:1.85;color:var(--muted);padding-left:20px;display:grid;gap:10px}.worlds-dialog-foot{padding:15px 22px;display:flex;gap:8px;justify-content:flex-end;border-top:1px solid var(--line);flex:none}
+body[data-game=movers] .worlds-heading,body[data-game=movers] .worlds-mission,body[data-game=movers] .worlds-dossier,body[data-game=movers] .worlds-mini{display:none}
+body[data-game=movers] .worlds-dialogue{display:contents}body[data-game=movers] .worlds-portrait{display:none}
+body:not([data-game=movers]).embedded .worlds-heading,body:not([data-game=movers]).embedded .game-header{display:none}
+body:not([data-game=movers]).embedded .game-shell{padding:12px}
+body:not([data-game=movers]).embedded .game-view,body:not([data-game=movers]).embedded .worlds-dossier{max-width:none}
+body:not([data-game=movers]) .game-view:fullscreen{max-width:none;border-radius:0;background:var(--card)}
+body:not([data-game=movers]) .game-view:fullscreen .worlds-mission{padding:7px 16px}
+body:not([data-game=movers]) .game-view:fullscreen .worlds-dialogue{padding:8px 16px;min-height:50px}
+body:not([data-game=movers]) .game-view:fullscreen .worlds-portrait{height:35px;width:25px}
+body:not([data-game=movers]) .game-view:fullscreen .game-actions{max-height:20vh;overflow:auto;padding:0 16px 8px}
+body:not([data-game=movers]) .game-view:fullscreen .world-action-group{padding-top:4px}
+body:not([data-game=movers]) .game-view:fullscreen .control-help{padding-bottom:7px}
+@media(min-width:1050px){body:not([data-game=movers]) .game-layout{max-width:1130px;margin:0 auto}body:not([data-game=movers]) .worlds-heading,body:not([data-game=movers]) .game-tabs{max-width:1130px;margin-left:auto;margin-right:auto}}
+@media(max-width:700px){body:not([data-game=movers]) .game-header{padding:11px 14px;gap:10px}body:not([data-game=movers]) .back-link{font-size:9px}body:not([data-game=movers]) .wordmark{font-size:9px;letter-spacing:1px}body:not([data-game=movers]) .moving-top-controls button{padding:6px 8px;min-height:36px;font-size:10px}body:not([data-game=movers]) .game-shell{padding:20px 12px 0}.worlds-heading{align-items:flex-start;gap:10px;margin-bottom:18px}.worlds-heading h1{font-size:27px;margin:9px 0}.worlds-heading p{font-size:11px;line-height:1.7}.worlds-genre{font-size:8px;letter-spacing:1px}.worlds-heading-tools{flex-direction:column;gap:6px}.worlds-heading-tools button{padding:8px 9px;font-size:10px;min-height:38px;white-space:nowrap}body:not([data-game=movers]) .game-tabs button{min-height:44px;min-width:93px;padding:10px}body:not([data-game=movers]) .game-toolbar{padding:8px 10px}body:not([data-game=movers]) .view-tools button{min-height:38px;padding:7px;font-size:9px}body:not([data-game=movers]) #game-title{font-size:10px}body:not([data-game=movers]) .chapter{font-size:8px}.worlds-mission{padding:10px 12px;gap:8px}.worlds-mission p{font-size:11px}.worlds-mission>span{font-size:9px}.worlds-dialogue{padding:12px;gap:10px;min-height:75px}.worlds-portrait{width:29px;height:48px}body:not([data-game=movers]) #game-message{font-size:11px;line-height:1.8}body:not([data-game=movers]) .game-actions{padding:0 12px 12px;gap:6px}body:not([data-game=movers]) .game-actions button{min-height:44px;font-size:10px;padding:8px 10px}.action-group-label{width:100%;font-size:9px;padding-bottom:2px}.world-action-group{gap:6px;padding-top:9px}body:not([data-game=movers]) .control-help{font-size:9px;padding:0 12px 12px}body:not([data-game=movers]) .touch-controls{display:flex;padding:0 12px 12px}body:not([data-game=movers]) .touch-controls button{min-height:44px;min-width:44px}.worlds-dossier .game-notebook{grid-template-columns:1fr;padding:0 15px 15px}.worlds-dossier .save-box{font-size:9px}.worlds-overlay{padding:13px;position:fixed}.worlds-dialog{max-height:calc(100dvh - 35px)}.worlds-dialog-body{padding:10px 20px 16px}.worlds-dialog-top,.worlds-dialog-foot{padding:12px 16px}.worlds-dialog h2{font-size:25px}.worlds-opening{font-size:12px}.worlds-dialog button{min-height:44px}}
+@media(max-width:700px){body:not([data-game=movers]) .dpad{grid-template-columns:repeat(3,44px);grid-template-rows:repeat(2,44px);gap:4px}body:not([data-game=movers]) .game-actions button{min-width:44px}}
+body:not([data-game=movers]) .game-tabs{position:sticky;top:0;z-index:10;background:var(--paper);padding-top:8px;border-bottom:1px solid var(--line)}
+@media(prefers-reduced-motion:reduce){.worlds-overlay{backdrop-filter:none}}
+
+.worlds-overlay{z-index:80}body[data-game=movers] .worlds-overlay{--line:#d6bfa3;--card:#f6ead8;--paper:#eddbc1;--ink:#6b513d;--muted:#967b60;--accent:#926644;--selected:#7c583e;--selected-text:#fff0da}
+
+.worlds-letters h3{font:500 17px Georgia,"Songti SC",serif;margin:12px 0}.worlds-letter{background:var(--paper);border-left:2px solid var(--accent);padding:13px 15px;font-size:12px;line-height:1.9;color:var(--ink);margin:10px 0}
+
+.worlds-stocks{display:flex;gap:8px;flex-wrap:wrap;padding:8px 16px;background:var(--paper);border-bottom:1px solid var(--line)}.worlds-stocks span{font-size:11px;color:var(--ink);padding:3px 7px;background:var(--card);border-radius:4px}
+
+body[data-game=movers] .worlds-stocks{display:none}
+@media(max-width:700px){body:not([data-game=movers]) .moving-top-controls button,body:not([data-game=movers]) .view-tools button,.worlds-heading-tools button{min-height:44px}.worlds-mission p,body:not([data-game=movers]) #game-message{font-size:13px}body:not([data-game=movers]) .game-actions button{font-size:12px}.worlds-hint,.worlds-checkpoints li,.worlds-stocks span,body:not([data-game=movers]) .control-help{font-size:11px}}
+@media(max-width:700px){.moving-top-controls button,.view-tools button,.worlds-heading-tools button,.worlds-dialog button,.game-actions button{min-width:44px}}
+@media(max-width:700px){body[data-game=movers] .view-tools button{min-width:44px}}

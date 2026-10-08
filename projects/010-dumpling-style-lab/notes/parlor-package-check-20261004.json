@@ -1,0 +1,485 @@
+{
+  "site_tests": {
+    "exit_code": 0,
+    "stdout": "Built 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmpzy8db6ud\\_site\nBuilt 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmpy0x3ul05\\_site\nBuilt 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmpfd5ca1x8\\_site\nBuilt 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmprzjn25hg\\_site\nBuilt 2 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmp2s3kx8ro\\_site\nBuilt 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmpvap3b0nc\\_site\n",
+    "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.413s\n\nOK\n"
+  },
+  "world_rules_regression": {
+    "exit_code": 0,
+    "stdout": "{\n  \"date\": \"2026-10-04T10:01:33.019Z\",\n  \"method\": \"Node VM; real game rules and pathfinding; drawing context and 3D renderer mocked. Isolated browser screenshots and UI checks cover rendering.\",\n  \"checks\": [\n    \"All shipped JavaScript modules parse\",\n    \"Detective evidence custody produces a completed case\",\n    \"Second case retains the completed first case\",\n    \"The first case answer fails the new case\",\n    \"Second case requires withdrawal evidence and the different recipient\",\n    \"Wuxia roads, one rope and two supplies produce a real rescue\",\n    \"Rescue has a persisted next-day response\",\n    \"Retrace replenishes finite resources and retains the old arrangement\",\n    \"Rescue cannot conclude before allocating the two supplies\",\n    \"Planting uses labor and does not instantly create wildlife\",\n    \"Spring habitats attract insects\",\n    \"A second-season canopy attracts birds\",\n    \"Three-season mixed habitat completes with viable vegetation\",\n    \"A mixed habitat earns an actual annual research result\",\n    \"Rewind retains the comparison record\",\n    \"Next year retains grown vegetation\",\n    \"A new year can change its research goal without deleting the yearbook\",\n    \"Unfunded crops actually fail\",\n    \"Repairs and allocations survive three rounds with an archived cost\",\n    \"Unanswered storm request blocks climate settlement\",\n    \"Shelter choice immediately spends water and parts and adds backup power\",\n    \"Storm shelter scenario remains completable with a distinct archived outcome\",\n    \"An unbuilt bridge blocks reaching the watch\",\n    \"Memory placement opens actual paths to the chosen ending\",\n    \"Revisiting retains both different endings\",\n    \"Seven successful stays retain return memories and six souvenirs\",\n    \"Inn second chapter retains furniture and return histories\",\n    \"Three return dilemmas produce real letters and souvenirs\",\n    \"Inn revisit starts day eight while keeping all three letters\",\n    \"Closed cases can be selected with both old conclusions preserved\",\n    \"First rooftop course is completable without falling\",\n    \"Second rooftop course keeps a separate actual record\",\n    \"Third courier route is completable and has its own recipient and record\",\n    \"Completed routes can be selected while keeping three best times\",\n    \"Jump buffering accepts an airborne request without pretending it jumped\",\n    \"A buffered jump fires on the real landing within 140 ms\",\n    \"Auto forward moves but leaves jumps under player control\",\n    \"Actual island paths, bridge and seal permit two discoveries and return\",\n    \"Cloud tower is a real third area and opens a new incomplete chapter\",\n    \"Uncalibrated wind actually blocks the star platform\",\n    \"Wind bridge, two star rotations, beacon and return report complete chapter two\",\n    \"detective extended chapter and records survive reload\",\n    \"wuxia extended chapter and records survive reload\",\n    \"ecology extended chapter and records survive reload\",\n    \"wasteland extended chapter and records survive reload\",\n    \"dream extended chapter and records survive reload\",\n    \"inn extended chapter and records survive reload\",\n    \"arcade extended chapter and records survive reload\",\n    \"islands extended chapter and records survive reload\",\n    \"Legacy moving save retains two delivered objects\",\n    \"Selecting a completed commission starts its real cargo while retaining all three records\",\n    \"Commission selection cannot discard an unfinished order\",\n    \"A pre-extension completed inn save enters the new chapter\",\n    \"A pre-extension island save retains discoveries and reaches the new island\",\n    \"Two-route courier saves gain an empty third route without losing best times\",\n    \"Ecology forecast matches actual water, health and age across all three gates and seasons\"\n  ],\n  \"commercialOrEmotionalValidation\": false\n}\n",
+    "stderr": "(node:8496) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  "precision_rules_regression": {
+    "exit_code": 0,
+    "stdout": "{\"checks\":23,\"passed\":23}\n",
+    "stderr": ""
+  },
+  "observation_rules_regression": {
+    "exit_code": 0,
+    "stdout": "{\"passed\":28,\"checks\":[\"Eight distinct target regions fit actual room coordinates\",\"Clicking an object records its identity only once\",\"Empty scenery does not complete an object\",\"Every authored hotspot is independently reachable\",\"Finding all eight targets reaches completion\",\"Restore filters duplicates and unknown object identities\",\"Restore derives completed state from all actual identities\",\"Malformed camera and hint data restore safely\",\"Zoom coordinate mapping round-trips target position\",\"Camera never exposes empty pixels at scene edges\",\"Three hints locate but never auto-find objects\",\"Hints skip an already found selected object\",\"Pipe masks rotate coherently and straight rotates by two axes\",\"Pipe level 0 starts disconnected and has a valid complete route\",\"Pipe level 0 solves through ordinary rotations\",\"Pipe level 1 starts disconnected and has a valid complete route\",\"Pipe level 1 solves through ordinary rotations\",\"Disconnected pump runs then returns to editable state\",\"Undo restores the complete previous rotation state and move count\",\"Invalid tile index never mutates network\",\"Restore rejects forged completion on disconnected pipes\",\"Restore retains valid completed network and next stage\",\"Restore validates tile types and undo history dimensions\",\"Save round-trip preserves rotations and in-flight progress\",\"seek factory tolerates a negative initial RAF delta and absent transient feedback\",\"seek factory pause freezes motion and resume continues real state\",\"conduit factory tolerates a negative initial RAF delta and absent transient feedback\",\"conduit factory pause freezes motion and resume continues real state\"],\"limits\":\"Production rules and lifecycle doubles; actual rendering and gestures are verified separately through CUA.\"}\n",
+    "stderr": ""
+  },
+  "gesture_rules_regression": {
+    "exit_code": 0,
+    "stdout": "{\"passed\":31,\"checks\":[\"Territory starts with safe outer boundary and no captured interior\",\"Entering an open area requires deliberate drawing mode\",\"Safe boundary movement changes origin without claiming territory\",\"Ordinary closed line claims the region without the enemy\",\"A second ordinary closed route reaches 68% completion\",\"Closing a path cannot capture through an enemy already touching the unfinished line\",\"Crossing own unfinished trail consumes a life and retracts it\",\"Moving enemy really collides with an unfinished line\",\"Enemy bounces from captured cells rather than entering safe space\",\"Voluntary retreat discards unfinished path without consuming lives\",\"Three collisions lead to failure and stop movement\",\"Save restore retains valid captured area and active trail\",\"Malformed territory save cannot put player outside board or falsely complete\",\"Enemy timing rejects negative and NaN deltas\",\"Vertical cut produces a real gravity fall and first-stage delivery\",\"Two intact ropes hold the initial lantern in place\",\"Cutting one rope changes support and creates continuous swing\",\"Second stage is reachable using timed cuts, not a completion shortcut\",\"Release preview is ballistic and changes with actual velocity\",\"Bad release really misses rather than snapping to receiver\",\"The same rope cannot be cut twice and invalid ropes have no effect\",\"Gesture intersection rejects separated lines and recognizes crossing\",\"Retry resets physical state but preserves chosen viewing settings\",\"Advancing to next stage requires an actual first delivery\",\"Restore retains in-flight velocity, time, support and freeze\",\"Restore rejects false completion with hanging or misplaced lantern\",\"Physics ignores invalid initial deltas and prevents huge integration steps\",\"trace real factory tolerates negative/NaN initial RAF timing and draws\",\"trace real factory pause freezes all state and resume continues\",\"swing real factory tolerates negative/NaN initial RAF timing and draws\",\"swing real factory pause freezes all state and resume continues\"],\"limits\":\"Production rules and actual factory lifecycle doubles, with browser rendering and gestures checked separately through CUA.\"}\n",
+    "stderr": ""
+  },
+  "logic_rules_regression": {
+    "exit_code": 0,
+    "stdout": "{\"passed\":31,\"checks\":[\"Hex grid neighbor relation is reciprocal and geometry agrees\",\"Bubble starts with authored color groups and 32 suspended balls\",\"Connected groups follow hex neighbors and require same color\",\"Pairs alone do not disappear\",\"Matching support releases actual disconnected lower cluster\",\"Landing is limited to vacant cells adjacent to impact\",\"Side-wall bounce preserves speed and redirects horizontal velocity\",\"Negative and nonfinite flight time do not mutate position\",\"Only one projectile can fly at a time\",\"Predicted landing equals actual continuous collision result\",\"Original board is clearable through real launches in six shots\",\"Shot budget produces genuine failure and stops launch\",\"In-flight save resumes same position and velocity\",\"Bubble completion survives restore\",\"Malformed bubble save falls back rather than breaking scene\",\"All eight mine neighbors are symmetric and bounded\",\"First click and its eight neighbors exclude mines for 192 boards\",\"Mine generation is deterministic for independent save restore\",\"Zero flood really reveals multiple safe cells\",\"Flagged cells cannot be revealed and open cells cannot be flagged\",\"Marking is capped at actual danger count\",\"Wrong reveal genuinely loses and cannot continue\",\"Chord requires matching adjacent flag count\",\"Correct numeric chord opens safe neighbors\",\"Incorrect but count-matching flags can cause a real chord loss\",\"Visible hint uses neighbor evidence without opening any cell\",\"Opening every safe cell wins; mine marking alone does not win\",\"Mine progress, marks and completion survive deterministic restore\",\"Invalid mine arrays and forged win flags are rejected\",\"Bubble blocked-impact failure remains failed after restore\",\"A revealed mine cannot be restored as a successful map\"],\"limits\":\"Production rule checks; real factory drawing and pause tested through Skia/DOM doubles. Browser control and responsive/fullscreen testing are not covered.\"}\n",
+    "stderr": ""
+  },
+  "nine_rules_regression": {
+    "exit_code": 0,
+    "stdout": "{\"passed\":74,\"checks\":[{\"name\":\"hook normal commands complete\",\"passed\":true},{\"name\":\"hook mid-session JSON round trip\",\"passed\":true},{\"name\":\"hook complete JSON round trip\",\"passed\":true},{\"name\":\"hook malformed timing / forged won\",\"passed\":true},{\"name\":\"fold normal commands complete\",\"passed\":true},{\"name\":\"fold mid-session JSON round trip\",\"passed\":true},{\"name\":\"fold complete JSON round trip\",\"passed\":true},{\"name\":\"fold malformed timing / forged won\",\"passed\":true},{\"name\":\"repair normal commands complete\",\"passed\":true},{\"name\":\"repair mid-session JSON round trip\",\"passed\":true},{\"name\":\"repair complete JSON round trip\",\"passed\":true},{\"name\":\"repair malformed timing / forged won\",\"passed\":true},{\"name\":\"delve normal commands complete\",\"passed\":true},{\"name\":\"delve mid-session JSON round trip\",\"passed\":true},{\"name\":\"delve complete JSON round trip\",\"passed\":true},{\"name\":\"delve malformed timing / forged won\",\"passed\":true},{\"name\":\"cluster normal commands complete\",\"passed\":true},{\"name\":\"cluster mid-session JSON round trip\",\"passed\":true},{\"name\":\"cluster complete JSON round trip\",\"passed\":true},{\"name\":\"cluster malformed timing / forged won\",\"passed\":true},{\"name\":\"paint normal commands complete\",\"passed\":true},{\"name\":\"paint mid-session JSON round trip\",\"passed\":true},{\"name\":\"paint complete JSON round trip\",\"passed\":true},{\"name\":\"paint malformed timing / forged won\",\"passed\":true},{\"name\":\"swarm normal commands complete\",\"passed\":true},{\"name\":\"swarm mid-session JSON round trip\",\"passed\":true},{\"name\":\"swarm complete JSON round trip\",\"passed\":true},{\"name\":\"swarm malformed timing / forged won\",\"passed\":true},{\"name\":\"kitchen normal commands complete\",\"passed\":true},{\"name\":\"kitchen mid-session JSON round trip\",\"passed\":true},{\"name\":\"kitchen complete JSON round trip\",\"passed\":true},{\"name\":\"kitchen malformed timing / forged won\",\"passed\":true},{\"name\":\"relay normal commands complete\",\"passed\":true},{\"name\":\"relay mid-session JSON round trip\",\"passed\":true},{\"name\":\"relay complete JSON round trip\",\"passed\":true},{\"name\":\"relay malformed timing / forged won\",\"passed\":true},{\"name\":\"grappling rope constraint, radial velocity, release continuity\",\"passed\":true},{\"name\":\"grappling checkpoint restart retains checkpoint\",\"passed\":true},{\"name\":\"perspective requires actual alignment at each broken bridge\",\"passed\":true},{\"name\":\"restoration requires cleaning, orientation and prior layer\",\"passed\":true},{\"name\":\"digging carves persistent cells and crystal can only be collected once\",\"passed\":true},{\"name\":\"collection size gate rejects a large object initially\",\"passed\":true},{\"name\":\"ink movement and regeneration differ by terrain\",\"passed\":true},{\"name\":\"ink timeout blocks commands and updates after restore\",\"passed\":true},{\"name\":\"squad dispatch requires the bridge and sufficient team size\",\"passed\":true},{\"name\":\"squad route crosses the repaired bridge, not the river\",\"passed\":true},{\"name\":\"kitchen prevents remote work, wrong ingredients and early soup pickup\",\"passed\":true},{\"name\":\"kitchen expiration blocks further play and survives restore\",\"passed\":true},{\"name\":\"relay manual cannot operate devices, wrong wire cannot advance\",\"passed\":true},{\"name\":\"hook controls require start and resume\",\"passed\":true},{\"name\":\"grappling provides only working left / right touch controls\",\"passed\":true},{\"name\":\"hook disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"fold controls require start and resume\",\"passed\":true},{\"name\":\"fold disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"repair controls require start and resume\",\"passed\":true},{\"name\":\"restoration completes through native buttons and their enabled states\",\"passed\":true},{\"name\":\"repair disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"delve controls require start and resume\",\"passed\":true},{\"name\":\"digging one physical key press is exactly one cell\",\"passed\":true},{\"name\":\"delve disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"cluster controls require start and resume\",\"passed\":true},{\"name\":\"collection touch hold releases on cancellation\",\"passed\":true},{\"name\":\"cluster disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"paint controls require start and resume\",\"passed\":true},{\"name\":\"paint disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"swarm controls require start and resume\",\"passed\":true},{\"name\":\"swarm disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"kitchen controls require start and resume\",\"passed\":true},{\"name\":\"service workflow completes through native station and work buttons\",\"passed\":true},{\"name\":\"kitchen disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"relay controls require start and resume\",\"passed\":true},{\"name\":\"relay roles isolate native controls and finish by valid buttons\",\"passed\":true},{\"name\":\"relay disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"collection camera transform maps pointer back to the world\",\"passed\":true}],\"browser_verified\":false,\"scope\":\"Production state rules, valid command playthroughs, serialization and factory lifecycle with a DOM double. Actual browser input and layout remain unverified.\"}\n",
+    "stderr": ""
+  },
+  "frontier_rules_regression": {
+    "exit_code": 0,
+    "stdout": "Frontier rules passed: 55\n",
+    "stderr": ""
+  },
+  "frontier_lifecycle_regression": {
+    "exit_code": 0,
+    "stdout": "Frontier lifecycle and audio passed: 60\n",
+    "stderr": ""
+  },
+  "studio_rules_regression": {
+    "exit_code": 0,
+    "stdout": "Studio rules: 49 passed\n",
+    "stderr": ""
+  },
+  "studio_lifecycle_regression": {
+    "exit_code": 0,
+    "stdout": "Studio lifecycle: 50 passed\n",
+    "stderr": ""
+  },
+  "horizons_rules_regression": {
+    "exit_code": 0,
+    "stdout": "Horizons rule checks: 50\n",
+    "stderr": ""
+  },
+  "horizons_lifecycle_regression": {
+    "exit_code": 0,
+    "stdout": "Horizons lifecycle checks: 53\n",
+    "stderr": ""
+  },
+  "voyages_rules_regression": {
+    "exit_code": 0,
+    "stdout": "Voyages rules checks: 53\n",
+    "stderr": ""
+  },
+  "voyages_lifecycle_regression": {
+    "exit_code": 0,
+    "stdout": "Voyages lifecycle checks: 60\n",
+    "stderr": ""
+  },
+  "kinetics_rules_regression": {
+    "exit_code": 0,
+    "stdout": "Kinetics rule checks: 50\n",
+    "stderr": ""
+  },
+  "kinetics_lifecycle_regression": {
+    "exit_code": 0,
+    "stdout": "Kinetics lifecycle checks: 60\n",
+    "stderr": ""
+  },
+  "thresholds_rules_regression": {
+    "exit_code": 0,
+    "stdout": "Rules checks: 58\n",
+    "stderr": ""
+  },
+  "thresholds_lifecycle_regression": {
+    "exit_code": 0,
+    "stdout": "Lifecycle checks: 50\n",
+    "stderr": ""
+  },
+  "circuitry_rules_regression": {
+    "exit_code": 0,
+    "stdout": "Rules checks: 67\n",
+    "stderr": ""
+  },
+  "circuitry_lifecycle_regression": {
+    "exit_code": 0,
+    "stdout": "Lifecycle checks: 60\n",
+    "stderr": ""
+  },
+  "rules": {
+    "passed": true,
+    "count": 67,
+    "checks": [
+      "cascade completes by normal commands and rules",
+      "cascade initial progress complete states restore exactly via JSON",
+      "cascade completion freezes simulation",
+      "cascade fresh state ignores forged won flag",
+      "cascade invalid version and common fields reset",
+      "cascade unknown save fields cannot overwrite object prototype",
+      "cascade restart clears completed progress",
+      "patience completes by normal commands and rules",
+      "patience initial progress complete states restore exactly via JSON",
+      "patience completion freezes simulation",
+      "patience fresh state ignores forged won flag",
+      "patience invalid version and common fields reset",
+      "patience unknown save fields cannot overwrite object prototype",
+      "patience restart clears completed progress",
+      "lexicon completes by normal commands and rules",
+      "lexicon initial progress complete states restore exactly via JSON",
+      "lexicon completion freezes simulation",
+      "lexicon fresh state ignores forged won flag",
+      "lexicon invalid version and common fields reset",
+      "lexicon unknown save fields cannot overwrite object prototype",
+      "lexicon restart clears completed progress",
+      "Block 0 has four unique cells in every orientation",
+      "Block 0 four rotations return to original cells",
+      "Block 1 has four unique cells in every orientation",
+      "Block 1 four rotations return to original cells",
+      "Block 2 has four unique cells in every orientation",
+      "Block 2 four rotations return to original cells",
+      "Block 3 has four unique cells in every orientation",
+      "Block 3 four rotations return to original cells",
+      "Block 4 has four unique cells in every orientation",
+      "Block 4 four rotations return to original cells",
+      "Block 5 has four unique cells in every orientation",
+      "Block 5 four rotations return to original cells",
+      "Block 6 has four unique cells in every orientation",
+      "Block 6 four rotations return to original cells",
+      "Blocks remain immobile until explicit start",
+      "Blocks fall under time and do not pass through occupied cells",
+      "Blocks reject horizontal wall overlap",
+      "Block rotation uses bounded kicks near walls",
+      "Ghost landing is a legal position with no further downward move",
+      "Hard drop writes actual four cells without forced line clearance",
+      "Completed line flashes before board removal and saves midway",
+      "Hold is restricted to once per falling piece and resets after lock",
+      "Free mode begins empty and queue includes all seven forms",
+      "Actual free-mode repeated misplaced drops produce top-out failure",
+      "Native pause model freezes falling and clearing clocks",
+      "Blocks reject malformed board pieces effects and clearing rows",
+      "Solitaire all twenty cards remain unique across piles and homes",
+      "Solitaire covered cards cannot be selected",
+      "Solitaire wrong suit and nonascending home placement are rejected",
+      "Solitaire moving A to home reveals actual hidden top card",
+      "Solitaire empty column accepts only highest-rank sequence",
+      "Solitaire red-black descending build and grouped legal transfer",
+      "Solitaire draw exposes only waste top and redeal preserves order",
+      "Solitaire undo restores covered cards and actual inventory",
+      "Solitaire final winning move can be undone without losing history",
+      "Solitaire hint describes legal play without moving cards",
+      "Solitaire rejects duplicate missing or mismatched saved cards",
+      "Word marks use exact position and one copy per remaining letter",
+      "Word game rejects invalid dictionary entries without consuming an attempt",
+      "Word game rejects repeated guesses and blocks input during reveal",
+      "Word knowledge never downgrades an already correct letter",
+      "Word midpoint reveal saves and resumes exactly",
+      "Word completion occurs after real matching reveal finishes",
+      "Six incorrect words produce actual failure and changing word resets it",
+      "Word input is normalized and restart retains current local round",
+      "Word saves reject forged feedback target and malformed reveal"
+    ],
+    "method": "Actual pure rules and normal full playthroughs, block collision/rotation/clearing/hold/top-out, legal card building/inventory/undo, duplicate-letter scoring/feedback/failure and saves."
+  },
+  "lifecycle": {
+    "passed": true,
+    "count": 48,
+    "checks": [
+      "cascade production factory stays inert before Start",
+      "cascade Start enables native controls with an accessible canvas label",
+      "Falling blocks native start activates physics",
+      "Falling blocks native direction hold cancels cleanly",
+      "Falling blocks actual Q and Shift keyboard events work without parent key sampling",
+      "Falling blocks canvas horizontal swipe and long down swipe affect real cells",
+      "Falling blocks native pause stops clear animation and disables move controls",
+      "Falling blocks native free mode resets to actual empty board",
+      "Falling blocks blur releases held movement and native capture",
+      "cascade paused native controls commands and ticks cannot change state",
+      "cascade getState is an isolated deep clone",
+      "cascade factory restores actual JSON state without restarting progress",
+      "cascade dispose removes controls and scene and clears native callbacks",
+      "cascade disposed scene stays inert after attempted reactivation",
+      "patience production factory stays inert before Start",
+      "patience Start enables native controls with an accessible canvas label",
+      "Solitaire native select and suit home reveal actual next card",
+      "Solitaire native undo preserves inventory and covered state",
+      "Solitaire pointer drag places a real A into matching home",
+      "Solitaire invalid drop returns card with inventory intact",
+      "Solitaire native draw and top-waste selection use actual stock",
+      "Solitaire native hint leaves card layout untouched",
+      "Solitaire blur ends dragging without moving selected cards",
+      "patience paused native controls commands and ticks cannot change state",
+      "patience getState is an isolated deep clone",
+      "patience factory restores actual JSON state without restarting progress",
+      "patience dispose removes controls and scene and clears native callbacks",
+      "patience disposed scene stays inert after attempted reactivation",
+      "lexicon production factory stays inert before Start",
+      "lexicon Start enables native controls with an accessible canvas label",
+      "Word native text input normalizes into actual draft",
+      "Word input Enter submits once and reveal disables input",
+      "Word pause freezes partly revealed feedback then resumes",
+      "Word candidate fills draft and native submit generates exact marks",
+      "Word accessible keypad and deletion change actual draft",
+      "Word canvas letters P/F stop global pause and fullscreen hotkeys",
+      "Word native clue does not consume a guess or reveal exact target",
+      "Word wrong-entry message preserves guesses and keyboard marks have accessible labels",
+      "Word native new-puzzle button clears draft and prior feedback",
+      "lexicon paused native controls commands and ticks cannot change state",
+      "lexicon getState is an isolated deep clone",
+      "lexicon factory restores actual JSON state without restarting progress",
+      "lexicon dispose removes controls and scene and clears native callbacks",
+      "lexicon disposed scene stays inert after attempted reactivation",
+      "cascade completed native controls expose valid continuation only",
+      "patience completed native controls expose valid continuation only",
+      "lexicon completed native controls expose valid continuation only",
+      "Failed blocks expose restart and disable launch/drop controls"
+    ],
+    "method": "Production Canvas factories and real native callbacks via DOM/Skia; keyboard, hold/cancel, card drag, text input, focus hotkey protection, halfway reveal pause, JSON restore and disposal. Not browser layout, native touch or actual browser persistence."
+  },
+  "production_render": {
+    "frames": 9,
+    "all_phases": true,
+    "pause_state_unchanged": true,
+    "method": "Production Canvas factories with Skia. Does not verify browser layout, browser keyboard/touch input, fullscreen or persistence."
+  },
+  "build": {
+    "exit_code": 0,
+    "stdout": "Built 19 static demo(s) into F:\\codex_project\\0930_codex_project\\_site\n",
+    "stderr": ""
+  },
+  "preservation": {
+    "protected": 2468,
+    "changed": [],
+    "missing": [],
+    "editable_shared": [
+      "forms.html",
+      "forms.js",
+      "game-forms-catalog.js",
+      "showcase-catalog.js",
+      "showcase.html",
+      "showcase.js"
+    ],
+    "storage": "No browser storage read, cleared or migrated. Original IDs, edition routes and storage prefixes compared against baseline."
+  },
+  "catalogs": {
+    "forms": 98,
+    "entrances": 107,
+    "uniqueForms": 98,
+    "uniqueEntrances": 107,
+    "allFormsRouted": true,
+    "previousForms": 95,
+    "previousEntrances": 104,
+    "changedPreviousForms": [],
+    "changedPreviousEntrances": [],
+    "storagePrefixesPreserved": true,
+    "newForms": [
+      {
+        "id": "falling-blocks",
+        "play": "cascade"
+      },
+      {
+        "id": "solitaire",
+        "play": "patience"
+      },
+      {
+        "id": "word-deduction",
+        "play": "lexicon"
+      }
+    ],
+    "newRouter": true,
+    "previewKinds": [
+      {
+        "id": "cascade",
+        "kind": "生产场景绘制预览"
+      },
+      {
+        "id": "patience",
+        "kind": "生产场景绘制预览"
+      },
+      {
+        "id": "lexicon",
+        "kind": "生产场景绘制预览"
+      }
+    ]
+  },
+  "packaged": {
+    "targets": 21,
+    "mismatches": []
+  },
+  "http": [
+    {
+      "path": "forms.html?left=falling-blocks&right=solitaire",
+      "status": 200,
+      "bytes": 8614,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "forms.html?left=word-deduction&right=nonogram",
+      "status": 200,
+      "bytes": 8614,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase.html?play=cascade",
+      "status": 200,
+      "bytes": 6674,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase.html?play=patience",
+      "status": 200,
+      "bytes": 6674,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase.html?play=lexicon",
+      "status": 200,
+      "bytes": 6674,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase-parlor-kit.js",
+      "status": 200,
+      "bytes": 7311,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase-parlor-panel.js",
+      "status": 200,
+      "bytes": 8458,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase-parlor-rules.js",
+      "status": 200,
+      "bytes": 14655,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase-parlor-sprites.js",
+      "status": 200,
+      "bytes": 332,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase-parlor.js",
+      "status": 200,
+      "bytes": 11441,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "forms.html",
+      "status": 200,
+      "bytes": 8614,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "forms.js",
+      "status": 200,
+      "bytes": 5427,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "game-forms-catalog.js",
+      "status": 200,
+      "bytes": 57053,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase-catalog.js",
+      "status": 200,
+      "bytes": 60660,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase.html",
+      "status": 200,
+      "bytes": 6674,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase.js",
+      "status": 200,
+      "bytes": 27912,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/parlor/block-room.webp",
+      "status": 200,
+      "bytes": 339862,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/parlor/block-tiles.webp",
+      "status": 200,
+      "bytes": 424774,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/parlor/card-back.webp",
+      "status": 200,
+      "bytes": 680298,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/parlor/card-front.webp",
+      "status": 200,
+      "bytes": 327226,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/parlor/card-table.webp",
+      "status": 200,
+      "bytes": 434600,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/parlor/letter-tile.webp",
+      "status": 200,
+      "bytes": 205874,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/parlor/word-room.webp",
+      "status": 200,
+      "bytes": 550858,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/parlor/previews/cascade.webp",
+      "status": 200,
+      "bytes": 161178,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/parlor/previews/lexicon.webp",
+      "status": 200,
+      "bytes": 207028,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/parlor/previews/patience.webp",
+      "status": 200,
+      "bytes": 189790,
+      "served_matches_workspace": true
+    }
+  ],
+  "companion_service": {
+    "service": "frontier-room",
+    "version": 1
+  },
+  "syntax_errors": [],
+  "original_assets": {
+    "count": 7,
+    "generation_mode": "builtin image_gen",
+    "hash_mismatches": []
+  },
+  "browser_qa": {
+    "verified": false,
+    "responsive_fullscreen_native_input_storage_verified": false,
+    "attempts": [
+      "cua.getState failed twice during initialization: trusted Node process exited unexpectedly; kernel reset, rerun your request"
+    ],
+    "blocker": "Browser control kernel exits before returning browser state. No alternate browser automation used."
+  },
+  "new_checks": 115,
+  "passed": true,
+  "acceptance_complete": false
+}

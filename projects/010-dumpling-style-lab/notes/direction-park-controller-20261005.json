@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": [
+    "production HTML IDs and assets match every controller dependency",
+    "demo controls open the actual six-facility park",
+    "pause freezes model time while page frames continue",
+    "guided map pointer repairs exactly the disconnected road tile",
+    "inspection is read-only and exposes real facility service information",
+    "tool selection exits inspection and view controls change state",
+    "blank layout resets and keyboard construction is available",
+    "fast road drag fills skipped grid tiles and releases capture",
+    "background blur pauses park and releases an active drag",
+    "normal frame callbacks complete a day; next day retains the earned budget and layout"
+  ],
+  "method": "Actual production page callbacks with minimal DOM/no-op Canvas adapter; image drawing separately verified in five production Skia frames. Not browser CSS, pointer platform, fullscreen, touch or refresh storage acceptance."
+}

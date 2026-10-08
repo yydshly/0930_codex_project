@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "count": 24,
+  "checks": [
+    "all four rotations preserve occupied area and return to original",
+    "blocked slots, overlap, boundary and fractional coordinates reject real placement",
+    "same item moves without duplicating itself and invalid drops retain it",
+    "rotation changes actual footprint to allow horizontal sword",
+    "undo restores placement then removal exactly",
+    "compass affects sword only when orthogonally adjacent",
+    "lamp shield and herb elixir links produce separate real stats",
+    "sword alone genuinely fails encounter, complete layout wins",
+    "battle locks edits and invalid dt does not advance",
+    "partial battle JSON restore resumes same result and stats",
+    "malformed layouts filter overlaps and forged completion without battle",
+    "appraisal toggles real clue state without changing cash or price",
+    "budget, fractional and under-minimum bids reject",
+    "local bidder responds according to actual price and limit",
+    "late bid extends timer and actual settlement charges only once",
+    "three ordinary competitive auctions complete with bounded budget",
+    "overpayment can lose even after genuine purchase",
+    "auction saves rebuild cash from actual purchases, ignore fake cash and won",
+    "partial auction timing and leader resume same settlement",
+    "route covers all stations, neighboring tiles and exact terminal",
+    "route editing is reversible and locked after publishing",
+    "local saves cannot assert completion without rechecking service",
+    "service reply validates route and step, updates independent roles",
+    "completion reply cannot assert delivery before last route step"
+  ]
+}

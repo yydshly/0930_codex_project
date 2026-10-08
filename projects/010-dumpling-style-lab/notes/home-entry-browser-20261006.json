@@ -1,0 +1,62 @@
+{
+  "checks": [
+    {
+      "name": "首页进入形式对照",
+      "url": "http://127.0.0.1:8962/forms.html?left=platform&right=run-gun#compare"
+    },
+    {
+      "name": "形式对照返回首页",
+      "url": "http://127.0.0.1:8962/index.html?experience=cozy#site-hub"
+    },
+    {
+      "name": "材质附录展开后落点稳定且不进入游戏原型",
+      "hash": "#visual-archive",
+      "headerBottom": 76,
+      "open": true,
+      "playOpen": false,
+      "top": 99.92708587646484
+    },
+    {
+      "name": "早期原型从首页展开",
+      "hash": "#play-archive",
+      "playOpen": true,
+      "top": 99.92708587646484
+    },
+    {
+      "name": "首页直接进入独立方向",
+      "url": "http://127.0.0.1:8962/direction-landscape.html?demo=1#play"
+    },
+    {
+      "name": "首页直达后续扩展记录",
+      "url": "http://127.0.0.1:8962/research.html#backlog"
+    },
+    {
+      "name": "手机首页无横向溢出且导航点击高度44px",
+      "navigationHeights": [
+        44,
+        44,
+        44,
+        44,
+        44,
+        44
+      ],
+      "pageWidth": 375,
+      "viewportWidth": 390
+    },
+    {
+      "name": "手机附录落点位于固定导航下方",
+      "hash": "#visual-archive",
+      "headerBottom": 152.6666717529297,
+      "open": true,
+      "playOpen": false,
+      "top": 168
+    },
+    {
+      "name": "桌面刷新材质附录保持正确位置",
+      "hash": "#visual-archive",
+      "headerBottom": 76,
+      "open": true,
+      "top": 99.92708587646484
+    }
+  ]
+}

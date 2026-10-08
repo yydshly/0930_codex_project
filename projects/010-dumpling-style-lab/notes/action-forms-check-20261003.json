@@ -1,0 +1,427 @@
+{
+  "passed": true,
+  "method": "Combined independently completed fresh browser runs; actual UI controls, no state injection. Each source report retained.",
+  "sourceReports": [
+    "notes/action-sports-check-20261003.json",
+    "notes/action-stealth-check-20261003.json",
+    "notes/action-pinball-check-20261003.json",
+    "notes/action-forms-pinball-check-20261003.json"
+  ],
+  "checks": [
+    "Actual teammate click kicks a moving ball and completes a pass to a different player",
+    "Real sprint moves the selected player with possession",
+    "sports actual save/reload retains progress",
+    "Actual dribbling and aimed shots score goals; opponent pursuit and full match resolve",
+    "Actual posture toggle changes speed and footstep behavior",
+    "Actual building boundary blocks movement",
+    "Actual thrown sound changes nearby guard investigation targets",
+    "stealth actual save/reload retains progress",
+    "Actual obstacle-aware movement reads all terminals and reaches the real exit",
+    "Actual held key charges; release launches the ball with upward velocity",
+    "Independent real input rotates both physical flippers",
+    "Real nudge changes ball velocity and consumes a limited allowance",
+    "pinball actual save/reload retains progress",
+    "Real gravity, rail collisions, bumper hits, flipper contact and star-target scoring",
+    "Three physical balls drain and replay retains the actual best score",
+    "25 playable forms and real new comparison frames pause on focus switch",
+    "390px layout fits; real held pointer controls a physical flipper"
+  ],
+  "results": {
+    "sports": {
+      "version": 1,
+      "time": 30.033400000005578,
+      "remaining": 63.349799999995504,
+      "phase": "ended",
+      "selected": 1,
+      "players": [
+        {
+          "id": 1,
+          "team": "teal",
+          "name": "前锋",
+          "x": 365,
+          "y": 298,
+          "angle": -1.5707963267948966,
+          "pose": 0
+        },
+        {
+          "id": 2,
+          "team": "teal",
+          "name": "边锋",
+          "x": 455,
+          "y": 187,
+          "angle": -1.5707963267948966,
+          "pose": 0
+        },
+        {
+          "id": 3,
+          "team": "teal",
+          "name": "后卫",
+          "x": 320,
+          "y": 415,
+          "angle": -1.5707963267948966,
+          "pose": 0
+        },
+        {
+          "id": 4,
+          "team": "teal",
+          "name": "门将",
+          "x": 149,
+          "y": 300,
+          "keeper": true,
+          "angle": -1.5707963267948966,
+          "pose": 0
+        },
+        {
+          "id": 11,
+          "team": "coral",
+          "name": "前锋",
+          "x": 750,
+          "y": 305,
+          "angle": -1.5707963267948966,
+          "pose": 0
+        },
+        {
+          "id": 12,
+          "team": "coral",
+          "name": "边锋",
+          "x": 730,
+          "y": 190,
+          "angle": -1.5707963267948966,
+          "pose": 0
+        },
+        {
+          "id": 13,
+          "team": "coral",
+          "name": "后卫",
+          "x": 815,
+          "y": 414,
+          "angle": -1.5707963267948966,
+          "pose": 0
+        },
+        {
+          "id": 14,
+          "team": "coral",
+          "name": "门将",
+          "x": 970,
+          "y": 300,
+          "keeper": true,
+          "angle": -1.5707963267948966,
+          "pose": 0
+        }
+      ],
+      "ball": {
+        "x": 734,
+        "y": 305,
+        "vx": 0,
+        "vy": 0,
+        "owner": 11,
+        "lock": 0.8
+      },
+      "teal": 3,
+      "coral": 0,
+      "passes": 1,
+      "completedPasses": 1,
+      "shots": 7,
+      "saves": 4,
+      "steals": 14,
+      "score": 1530,
+      "kickoff": 1.6,
+      "won": true,
+      "passTarget": null,
+      "moveTarget": null,
+      "field": {
+        "left": 122,
+        "right": 996,
+        "top": 95,
+        "bottom": 514,
+        "goalTop": 255,
+        "goalBottom": 346
+      }
+    },
+    "stealth": {
+      "version": 1,
+      "time": 39.54670000002379,
+      "phase": "won",
+      "x": 1023.6638032324234,
+      "y": 530.6006954632414,
+      "angle": 0.12855890906469125,
+      "crouching": true,
+      "exposure": 0,
+      "collected": [
+        0,
+        2,
+        1
+      ],
+      "guards": [
+        {
+          "id": 0,
+          "x": 225.5749308941617,
+          "y": 157.08808520740288,
+          "waypoint": 1,
+          "angle": -0.010214073064888132,
+          "investigate": null,
+          "timer": 0,
+          "seeing": false
+        },
+        {
+          "id": 1,
+          "x": 623.9172484380726,
+          "y": 321.14740060420206,
+          "waypoint": 2,
+          "angle": 1.5603228634709325,
+          "investigate": null,
+          "timer": 0,
+          "seeing": false
+        },
+        {
+          "id": 2,
+          "x": 841.9971002289312,
+          "y": 253.2158918020512,
+          "waypoint": 0,
+          "angle": -1.5872704006826477,
+          "investigate": null,
+          "timer": 0,
+          "seeing": false
+        }
+      ],
+      "path": [],
+      "lures": 1,
+      "noise": null,
+      "checkpoint": {
+        "x": 657.7891033413167,
+        "y": 511.9999999999694,
+        "collected": [
+          0,
+          2,
+          1
+        ],
+        "lures": 1,
+        "interactions": 3,
+        "distractions": 1,
+        "steps": 2265.8372999999924,
+        "time": 33.663600000023855,
+        "score": 900
+      },
+      "steps": 2670.83729999998,
+      "hiddenTime": 37.59660000002377,
+      "seenTime": 1.8834000000000015,
+      "interactions": 3,
+      "distractions": 1,
+      "won": true,
+      "score": 1362,
+      "walls": [
+        {
+          "x": 225,
+          "y": 126,
+          "w": 156,
+          "h": 157
+        },
+        {
+          "x": 462,
+          "y": 292,
+          "w": 143,
+          "h": 192
+        },
+        {
+          "x": 643,
+          "y": 106,
+          "w": 169,
+          "h": 177
+        },
+        {
+          "x": 893,
+          "y": 315,
+          "w": 115,
+          "h": 111
+        }
+      ],
+      "terminals": [
+        {
+          "x": 445,
+          "y": 122,
+          "name": "北侧终端"
+        },
+        {
+          "x": 650,
+          "y": 514,
+          "name": "南侧终端"
+        },
+        {
+          "x": 951,
+          "y": 120,
+          "name": "东侧终端"
+        }
+      ],
+      "exit": {
+        "x": 1020,
+        "y": 535
+      }
+    },
+    "pinball": {
+      "version": 1,
+      "phase": "ended",
+      "time": 14.654599999982043,
+      "ball": {
+        "x": 752,
+        "y": 540,
+        "vx": 0,
+        "vy": 0,
+        "r": 8
+      },
+      "balls": 0,
+      "score": 1800,
+      "best": 1800,
+      "charge": 0,
+      "launched": 3,
+      "bumperHits": 10,
+      "flipperHits": 7,
+      "wallHits": 24,
+      "targetHits": 7,
+      "lit": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "leftAngle": 0.27,
+      "rightAngle": 3.681592653589793,
+      "nudges": 3,
+      "tilt": 0,
+      "savedFor": 0,
+      "won": true,
+      "bumpers": [
+        {
+          "x": 467,
+          "y": 168,
+          "r": 29
+        },
+        {
+          "x": 648,
+          "y": 168,
+          "r": 29
+        },
+        {
+          "x": 558,
+          "y": 255,
+          "r": 32
+        }
+      ],
+      "targets": [
+        {
+          "x": 406,
+          "y": 302,
+          "r": 15
+        },
+        {
+          "x": 705,
+          "y": 303,
+          "r": 15
+        },
+        {
+          "x": 442,
+          "y": 407,
+          "r": 15
+        },
+        {
+          "x": 674,
+          "y": 407,
+          "r": 15
+        }
+      ],
+      "walls": [
+        [
+          [
+            391,
+            47
+          ],
+          [
+            766,
+            47
+          ]
+        ],
+        [
+          [
+            391,
+            47
+          ],
+          [
+            349,
+            479
+          ]
+        ],
+        [
+          [
+            766,
+            47
+          ],
+          [
+            792,
+            600
+          ]
+        ],
+        [
+          [
+            349,
+            479
+          ],
+          [
+            423,
+            520
+          ]
+        ],
+        [
+          [
+            724,
+            479
+          ],
+          [
+            695,
+            520
+          ]
+        ],
+        [
+          [
+            400,
+            430
+          ],
+          [
+            466,
+            478
+          ]
+        ],
+        [
+          [
+            716,
+            430
+          ],
+          [
+            654,
+            478
+          ]
+        ],
+        [
+          [
+            733,
+            553
+          ],
+          [
+            733,
+            165
+          ]
+        ],
+        [
+          [
+            720,
+            47
+          ],
+          [
+            766,
+            95
+          ]
+        ]
+      ]
+    }
+  },
+  "errors": [],
+  "missing": []
+}

@@ -1,0 +1,256 @@
+{
+  "date": "2026-10-06",
+  "passed": true,
+  "method": "Actual native browser navigation and disclosure controls with read-only rendered DOM/layout; desktop and narrow viewport screenshots. No new game, injected game state or save access.",
+  "checks": [
+    {
+      "name": "Stage summary is visible with existing counts and explicit paused development; no scripts or embedded game starts",
+      "passed": true,
+      "evidence": {
+        "documentWidth": 1265,
+        "futureCount": "12 项记录 · 全部未启动",
+        "heading": "把探索，\n留成下一步的依据。",
+        "iframes": 0,
+        "metrics": [
+          "15",
+          "107",
+          "116",
+          "9"
+        ],
+        "phase": "当前阶段：沉淀整理 · 暂停新增试玩",
+        "scripts": 0,
+        "viewport": [
+          1280,
+          720
+        ]
+      }
+    },
+    {
+      "name": "Native disclosure exposes fifteen actual direction summaries and distinguishes three-dimensional implementations",
+      "passed": true,
+      "evidence": {
+        "count": 15,
+        "open": true,
+        "text": "铜谷防线\n二维俯视 / Canvas\n打开已有试玩 ↗\n\n建设设施、连接产线、分配弹药，让生产支撑防守。\n\n当前范围：固定小地图、三波进攻、本地单人短局。\n\n风湾乐园\n二维等距投影 / Canvas\n打开已有试玩 ↗\n\n布置设施、连通道路，观察游客选择、排队与评价。\n\n当前范围：有限地图与营业日；尚未实现完整过山车工程。\n\n雾岭同行\n二维横版 / Canvas\n打开已有试玩 ↗\n\n同设备双人独立按键或单人切换角色，压板、接应、解冻，编辑与分享关卡文件。\n\n当前范围：本地同屏与文件导入导出；没有在线联机或排名社区。\n\n夜航值守\n二维俯视 / Canvas\n打开已有试玩 ↗\n\n切换工程、医护、调度，安排并行任务，让不同职责共同支撑撤离。\n\n当前范围：一人控制三角色的有限救援流程；尚未提供三人联机。\n\n湾岸货运\n二维俯视 / Canvas\n打开已有试玩 ↗\n\n连路建桥、设置运输线路，观察车队装卸、加工与中转。\n\n当前范围：六站公路短局；没有完整铁路、水运与地区经济。\n\n深岩堡垒\n二维管理 / 2.5D 射线附身\n打开已有试玩 ↗\n\n挖掘、建房、安排岗位、防守，再附身守卫进入同一个地下城。\n\n当前范围：有限地下城与防守轮次；附身采用纹理射线投影，管理与附身共享状态。\n\n月影档案\n二维俯视 / Canvas\n打开已有试玩 ↗\n\n观察巡逻、光照与声音，灭灯、绕行或投石，取回档案后脱身。\n\n当前范围：本地二维宅邸短关与有限守卫行为。\n\n星潮航路\n真实三维 / Three.js\n打开已有试玩 ↗\n\n实际驾驶飞船，选择运输、贸易和扫描，在追尾与航区总览间切换。\n\n当前范围：有限原创航区的短循环；没有联机或完整星系经济。\n\n雨后余生\n二维俯视 / Canvas\n打开已有试玩 ↗\n\n寻找补给、制作、搭建营地，在身体需求与天气变化中安排生存。\n\n当前范围：有限地图与天气周期；暂停、暂离和离线时世界停止。\n\n岚谷试车场\n真实三维 / Three.js\n打开已有试玩 ↗\n\n驾驶工程车，调校悬架，装卸载重，观察地形与四轮接地反馈。\n\n当前范围：简化刚体姿态与四轮弹簧模型、两种调校和有限交付；尚未实现软体车辆模拟。\n\n雾海牌航\nHTML / CSS 与位图牌面\n打开已有试玩 ↗\n\n观察敌方意图，分配出牌、洗牌、修补与升级，选择下一段航路。\n\n当前范围：三场固定遭遇的有限构筑短局；尚未实现完整随机战役。\n\n芦湾观鸟\n二维投影 / Canvas\n打开已有试玩 ↗\n\n移动取景、调焦、等待动物、实际拍照，检查并下载当前画面的成片。\n\n当前范围：三种动物与有限观察位；尚未提供完整三维漫游。\n\n夜港来信\nHTML 热点 / 场景图片\n打开已有试玩 ↗\n\n查看现场、收录线索、选择推断与证据，检验事实并决定结局。\n\n当前范围：三地点、九线索、三事实与两结局的固定单案。\n\n溪丘拼境\n二维六边地块 / Canvas\n打开已有试玩 ↗\n\n旋转、预览、放置与撤回地块，观察真实邻接如何连成群落。\n\n当前范围：固定地块与有限景观短局；没有无限生成世界或完整城市经营。\n\n灯市译语\n二维场景合成 / 原生词典\n打开已有试玩 ↗\n\n记录情境、提出词义、交叉验证，用读懂的语言完成交流。\n\n当前范围：三场景、十二语境、六词义与三次交流的预设语义短局。",
+        "threeD": [
+          "真实三维 / Three.js",
+          "真实三维 / Three.js"
+        ]
+      }
+    },
+    {
+      "name": "Native future-record navigation and first disclosure show differences, restart conditions and old foundation; all twelve entries remain not started",
+      "passed": true,
+      "evidence": {
+        "count": 12,
+        "open": true,
+        "statuses": [
+          "优先候选 · 未启动",
+          "优先候选 · 未启动",
+          "已记录 · 未启动",
+          "已记录 · 未启动",
+          "已记录 · 未启动",
+          "已记录 · 未启动",
+          "已记录 · 未启动",
+          "已记录 · 未启动",
+          "已记录 · 未启动",
+          "概念记录 · 未启动",
+          "概念记录 · 未启动",
+          "概念记录 · 未启动"
+        ],
+        "text": "01\n第一人称小型三维空间交互\n空间、近距离操作与真实尺度\n优先候选 · 未启动\n\n要验证的差异：玩家实际走入房间，转头、靠近和搬动物件；灯光、遮挡、碰撞与机械响应帮助理解空间。\n\n重新启动的条件：选定一个小房间，备齐模型、材质与可操作物件，先验证连续移动及交互。\n\n查看已有基础：空间解谜与第一人称射击 ↗"
+      }
+    },
+    {
+      "name": "Actual project homepage exposes the archive and future-record entry with paused phase and preserved catalog counts",
+      "passed": true,
+      "evidence": {
+        "links": [
+          {
+            "href": "research.html",
+            "text": "查看探索总结 ↗"
+          },
+          {
+            "href": "research.html#backlog",
+            "text": "后续扩展记录 ↗"
+          }
+        ],
+        "text": "CURRENT PHASE / 沉淀整理\n先回看积累，把下一步记下来。\n\n当前暂停新增试玩。十五个独立方向、107 种形式对照与历史版本继续保留；阶段结论和十二项尚未启动的扩展设想已集中归档。\n\n查看探索总结 ↗\n后续扩展记录 ↗"
+      }
+    },
+    {
+      "name": "Actual homepage future-record link opens the native archive backlog section",
+      "passed": true,
+      "evidence": "http://127.0.0.1:8962/research.html#backlog"
+    },
+    {
+      "name": "Actual narrow viewport keeps expanded records readable without horizontal overflow and with substantial native summary targets",
+      "passed": true,
+      "evidence": {
+        "documentWidth": 375,
+        "firstOpen": true,
+        "firstRecord": "01\n第一人称小型三维空间交互\n空间、近距离操作与真实尺度\n优先候选 · 未启动\n\n要验证的差异：玩家实际走入房间，转头、靠近和搬动物件；灯光、遮挡、碰撞与机械响应帮助理解空间。\n\n重新启动的条件：选定一个小房间，备齐模型、材质与可操作物件，先验证连续移动及交互。\n\n查看已有基础：空间解谜与第一人称射击 ↗",
+        "summaries": [
+          {
+            "bottom": 2222.77099609375,
+            "height": 110.59375,
+            "left": 20.666667938232425,
+            "right": 354.0000114440918,
+            "top": 2112.17724609375,
+            "width": 333.3333435058594,
+            "x": 20.666667938232425,
+            "y": 2112.17724609375
+          },
+          {
+            "bottom": 2530.02099609375,
+            "height": 110.59375,
+            "left": 20.666667938232425,
+            "right": 354.0000114440918,
+            "top": 2419.42724609375,
+            "width": 333.3333435058594,
+            "x": 20.666667938232425,
+            "y": 2419.42724609375
+          },
+          {
+            "bottom": 2641.28125,
+            "height": 110.59375,
+            "left": 20.666667938232425,
+            "right": 354.0000114440918,
+            "top": 2530.6875,
+            "width": 333.3333435058594,
+            "x": 20.666667938232425,
+            "y": 2530.6875
+          },
+          {
+            "bottom": 2752.541748046875,
+            "height": 110.59375,
+            "left": 20.666667938232425,
+            "right": 354.0000114440918,
+            "top": 2641.947998046875,
+            "width": 333.3333435058594,
+            "x": 20.666667938232425,
+            "y": 2641.947998046875
+          },
+          {
+            "bottom": 2863.80224609375,
+            "height": 110.59375,
+            "left": 20.666667938232425,
+            "right": 354.0000114440918,
+            "top": 2753.20849609375,
+            "width": 333.3333435058594,
+            "x": 20.666667938232425,
+            "y": 2753.20849609375
+          },
+          {
+            "bottom": 2975.0625,
+            "height": 110.59375,
+            "left": 20.666667938232425,
+            "right": 354.0000114440918,
+            "top": 2864.46875,
+            "width": 333.3333435058594,
+            "x": 20.666667938232425,
+            "y": 2864.46875
+          },
+          {
+            "bottom": 3086.322998046875,
+            "height": 110.59375,
+            "left": 20.666667938232425,
+            "right": 354.0000114440918,
+            "top": 2975.729248046875,
+            "width": 333.3333435058594,
+            "x": 20.666667938232425,
+            "y": 2975.729248046875
+          },
+          {
+            "bottom": 3197.58349609375,
+            "height": 110.59375,
+            "left": 20.666667938232425,
+            "right": 354.0000114440918,
+            "top": 3086.98974609375,
+            "width": 333.3333435058594,
+            "x": 20.666667938232425,
+            "y": 3086.98974609375
+          },
+          {
+            "bottom": 3308.84375,
+            "height": 110.59375,
+            "left": 20.666667938232425,
+            "right": 354.0000114440918,
+            "top": 3198.25,
+            "width": 333.3333435058594,
+            "x": 20.666667938232425,
+            "y": 3198.25
+          },
+          {
+            "bottom": 3420.104248046875,
+            "height": 110.59375,
+            "left": 20.666667938232425,
+            "right": 354.0000114440918,
+            "top": 3309.510498046875,
+            "width": 333.3333435058594,
+            "x": 20.666667938232425,
+            "y": 3309.510498046875
+          },
+          {
+            "bottom": 3531.36474609375,
+            "height": 110.59375,
+            "left": 20.666667938232425,
+            "right": 354.0000114440918,
+            "top": 3420.77099609375,
+            "width": 333.3333435058594,
+            "x": 20.666667938232425,
+            "y": 3420.77099609375
+          },
+          {
+            "bottom": 3642.625,
+            "height": 110.59375,
+            "left": 20.666667938232425,
+            "right": 354.0000114440918,
+            "top": 3532.03125,
+            "width": 333.3333435058594,
+            "x": 20.666667938232425,
+            "y": 3532.03125
+          }
+        ],
+        "viewport": [
+          390,
+          844
+        ]
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/research-consolidation-captures/summary-desktop.jpg",
+      "description": "Native desktop screenshot of the stage archive and explicit pause-new-games status.",
+      "format": "JPEG",
+      "capture_size": [
+        1265,
+        712
+      ],
+      "sha256": "e5e80c4d508d9d59b244ce13a7fab26365ee16657ff4118e0d4645a0b5e6a9f7"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/research-consolidation-captures/future-records-desktop.jpg",
+      "description": "Native expanded future record with explicit not-started status and restart conditions.",
+      "format": "JPEG",
+      "capture_size": [
+        1265,
+        712
+      ],
+      "sha256": "82b179a23ebdcc6854c622cc5eb848ab5a746b2b792ff3bc756e303251391bc1"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/research-consolidation-captures/future-records-mobile.jpg",
+      "description": "Actual 390x844 CSS viewport of expanded backlog record with visible not-started status and native link to existing foundation.",
+      "format": "JPEG",
+      "capture_size": [
+        375,
+        812
+      ],
+      "sha256": "caebb85d87db53de9b553980fb3f9760b985bac4d0d66b90907f53cf7db8e8f9"
+    }
+  ],
+  "deliveryUrl": "http://127.0.0.1:8962/research.html#main",
+  "transientLoadIssue": "One homepage navigation initially returned browser ERR_INSUFFICIENT_RESOURCES. Local HTTP remained 200; a native reload recovered, and the homepage-to-archive link was then exercised successfully."
+}

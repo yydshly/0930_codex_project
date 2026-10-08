@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-02",
+  "qaNote": "Remote original isolated only during QA. Tests use real pointer/keyboard movement, world state and WebGL picking. Technical checks do not establish emotional value or willingness to play.",
+  "checks": [
+    {
+      "name": "主研究是三个游戏体验",
+      "passed": true
+    },
+    {
+      "name": "旧材质实验默认折叠",
+      "passed": true
+    },
+    {
+      "name": "没有开局自动给奖励",
+      "passed": true
+    },
+    {
+      "name": "只看画面对照不触发摘果",
+      "passed": true
+    },
+    {
+      "name": "点击对象先实际行走",
+      "passed": true
+    },
+    {
+      "name": "缺少莓果时不会直接完成关系",
+      "passed": true
+    },
+    {
+      "name": "伙伴表达具体需要",
+      "passed": true
+    },
+    {
+      "name": "行走到莓果后实际采摘",
+      "passed": true
+    },
+    {
+      "name": "送莓果后伙伴关系改变",
+      "passed": true
+    },
+    {
+      "name": "玩家有两种关系选择",
+      "passed": true
+    },
+    {
+      "name": "画面对照禁用关系选择",
+      "passed": true
+    },
+    {
+      "name": "一起走走形成随行结局",
+      "passed": true
+    },
+    {
+      "name": "照顾小花改变世界",
+      "passed": true
+    },
+    {
+      "name": "随行小团在当前位置回应",
+      "passed": true
+    },
+    {
+      "name": "重新体验清空当前世界",
+      "passed": true
+    },
+    {
+      "name": "另一种选择保留休息结局",
+      "passed": true
+    },
+    {
+      "name": "键盘可以行走",
+      "passed": true
+    },
+    {
+      "name": "没有灯石时门不会打开",
+      "passed": true
+    },
+    {
+      "name": "rune-a 因探索而点亮",
+      "passed": true
+    },
+    {
+      "name": "rune-b 因探索而点亮",
+      "passed": true
+    },
+    {
+      "name": "rune-c 因探索而点亮",
+      "passed": true
+    },
+    {
+      "name": "三盏灯解锁下一步目标",
+      "passed": true
+    },
+    {
+      "name": "探索有真正的世界变化结局",
+      "passed": true
+    },
+    {
+      "name": "hide-0 通过真实三维拾取找到朋友",
+      "passed": true
+    },
+    {
+      "name": "hide-1 通过真实三维拾取找到朋友",
+      "passed": true
+    },
+    {
+      "name": "hide-2 通过真实三维拾取找到朋友",
+      "passed": true
+    },
+    {
+      "name": "找齐后获得帽子结局",
+      "passed": true
+    },
+    {
+      "name": "奖励帽子确实显示在人物上",
+      "passed": true
+    },
+    {
+      "name": "世界之间切换保留各自进度",
+      "passed": true
+    },
+    {
+      "name": "游戏体验标签支持键盘",
+      "passed": true
+    },
+    {
+      "name": "手机没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "手机有方向控制",
+      "passed": true
+    },
+    {
+      "name": "手机方向按钮驱动人物行走",
+      "passed": true
+    },
+    {
+      "name": "直达链接恢复游戏方向",
+      "passed": true
+    },
+    {
+      "name": "无 JavaScript 运行错误",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "web/assets/play-cozy.webp",
+    "web/assets/play-wonder.webp",
+    "web/assets/play-playful.webp"
+  ],
+  "errors": []
+}

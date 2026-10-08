@@ -1,0 +1,65 @@
+{
+  "method": "Actual production Canvas2D renderer and cooperation simulation via Skia; not browser screenshots or CSS/touch/fullscreen acceptance.",
+  "frames": [
+    {
+      "name": "rescue-needed",
+      "file": "assets/directions/cooperation-qa/rescue-needed.png",
+      "time": 0,
+      "phase": "playing",
+      "stats": {
+        "rescues": 0,
+        "falls": 0,
+        "gateActivations": 0,
+        "checkpoints": 0
+      }
+    },
+    {
+      "name": "gate-opening",
+      "file": "assets/directions/cooperation-qa/gate-opening.png",
+      "time": 1.0999999999999985,
+      "phase": "playing",
+      "stats": {
+        "rescues": 1,
+        "falls": 0,
+        "gateActivations": 2,
+        "checkpoints": 0
+      }
+    },
+    {
+      "name": "crossing",
+      "file": "assets/directions/cooperation-qa/crossing.png",
+      "time": 2.199999999999995,
+      "phase": "playing",
+      "stats": {
+        "rescues": 1,
+        "falls": 0,
+        "gateActivations": 2,
+        "checkpoints": 1
+      }
+    },
+    {
+      "name": "together",
+      "file": "assets/directions/cooperation-qa/together.png",
+      "time": 5.425000000000059,
+      "phase": "won",
+      "stats": {
+        "rescues": 1,
+        "falls": 0,
+        "gateActivations": 2,
+        "checkpoints": 2
+      }
+    },
+    {
+      "name": "creator",
+      "file": "assets/directions/cooperation-qa/creator.png",
+      "time": 0,
+      "phase": "playing",
+      "stats": {
+        "rescues": 0,
+        "falls": 0,
+        "gateActivations": 0,
+        "checkpoints": 0
+      }
+    }
+  ]
+}

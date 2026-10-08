@@ -1,0 +1,509 @@
+{
+  "date": "2026-10-05",
+  "direction": "芦湾观鸟 / REEDLIGHT",
+  "passed": true,
+  "count": 35,
+  "checks": [
+    "fresh observation is independent paused and empty with a finite 120 second clock",
+    "three visible subjects use the actual cropped natural aspects in a 16 by 9 frame",
+    "deterministic seeded motion changes with actual time and respects wetland placements",
+    "kingfisher really moves on finite flights and returns to its branch without a position jump",
+    "shared projection translates and scales both sprite bounds and judged photo coordinates",
+    "paused time camera animals stability photos and ledger stay frozen under physical input",
+    "bounded zoom and pan keep the authored landscape filling the actual view",
+    "invalid camera shutter target and pause payloads fail atomically",
+    "invalid and oversized time steps do not simulate hidden elapsed time",
+    "camera movement restarts the actual 0.6 second stability window",
+    "clamped no-op camera input does not destroy already earned stability",
+    "selecting a subject is an observation choice and never automatically aims the camera",
+    "small bird at wide focal length fails with an explicit occupancy explanation",
+    "an immediate shutter records an actual failed frame rather than delaying or granting a photo",
+    "a cropped animal is judged on its full sprite rectangle and cannot qualify",
+    "small and oversized subjects are gated even when other quality components are high",
+    "composition credit responds to actual horizontal camera alignment",
+    "a qualified photograph records its exact shutter time camera animal and shared bounds",
+    "returned photo metadata is detached from authoritative history and live animal state",
+    "repeated photos have unique IDs and cannot count one species as three completed species",
+    "the twelve-photo archive preserves actual best captures while evicting older non-best frames",
+    "ordinary manual zoom pan wait shutter actions can finish all three species",
+    "timed demonstration issues ordinary legal actions and wins with three genuine scored photographs",
+    "the same visible planner completes varied seeds and ordinary frame rates",
+    "completed observation parks time and rejects further physical actions or resumption",
+    "the finite observation window ends exactly at 120 seconds without granting missing photos",
+    "native 60 frame per second observation has a bounded sparse save instead of frame events",
+    "paused restore keeps the exact observed camera subjects IDs photos and best records",
+    "active save restores paused and legal continuation reproduces the same next photograph",
+    "strict replay rejects forged scores cameras animals stable time and photograph IDs",
+    "strict replay rejects granted best status time selection counters and unknown fields",
+    "strict replay rejects malformed reordered future duplicated and non-legal action records",
+    "strict restore rejects unknown versions invalid seeds malformed objects and oversized input",
+    "every intermediate genuine demo save restores the same canonical state",
+    "legal record-cap boundary refuses extra actions and offers no impossible demo plan"
+  ],
+  "failures": [],
+  "playthroughs": [
+    {
+      "mode": "ordinary same-API timed demo",
+      "seed": 20261005,
+      "frameDt": 0.1,
+      "actionEvery": 0.35,
+      "observationSeconds": 6.8,
+      "actionCount": 15,
+      "shots": [
+        {
+          "id": "p1",
+          "speciesId": "heron",
+          "time": 1.6,
+          "camera": {
+            "x": 0.303030303,
+            "y": 0.5,
+            "zoom": 1.65
+          },
+          "score": 88,
+          "qualified": true,
+          "components": {
+            "framing": 20,
+            "centering": 18,
+            "occupancy": 25,
+            "stability": 25
+          }
+        },
+        {
+          "id": "p2",
+          "speciesId": "kingfisher",
+          "time": 4.4,
+          "camera": {
+            "x": 0.503030303,
+            "y": 0.5,
+            "zoom": 2.8
+          },
+          "score": 93,
+          "qualified": true,
+          "components": {
+            "framing": 20,
+            "centering": 24.4,
+            "occupancy": 23.2,
+            "stability": 25
+          }
+        },
+        {
+          "id": "p3",
+          "speciesId": "deer",
+          "time": 6.8,
+          "camera": {
+            "x": 0.807692308,
+            "y": 0.5,
+            "zoom": 2.6
+          },
+          "score": 86,
+          "qualified": true,
+          "components": {
+            "framing": 20,
+            "centering": 15.8,
+            "occupancy": 25,
+            "stability": 25
+          }
+        }
+      ]
+    },
+    {
+      "mode": "ordinary explicit manual controls",
+      "observationSeconds": 1.8,
+      "actionCount": 16,
+      "scores": {
+        "heron": 88,
+        "kingfisher": 93,
+        "deer": 87
+      },
+      "shots": [
+        {
+          "id": "p1",
+          "speciesId": "heron",
+          "time": 0.6,
+          "camera": {
+            "x": 0.303030303,
+            "y": 0.5,
+            "zoom": 1.65
+          },
+          "subject": {
+            "id": "heron",
+            "name": "苍鹭",
+            "x": 0.211304111,
+            "y": 0.615510256,
+            "height": 0.22,
+            "width": 0.095778788,
+            "aspect": 0.77397,
+            "state": "wading",
+            "activity": "涉水觅食",
+            "speed": 0.003870738
+          },
+          "projection": {
+            "x": 0.3486517832,
+            "y": 0.6905919223999999,
+            "width": 0.158034999375,
+            "height": 0.363,
+            "left": 0.2696342835125,
+            "right": 0.4276692828875,
+            "top": 0.5090919223999999,
+            "bottom": 0.8720919223999999,
+            "inFrame": true
+          },
+          "stableFor": 0.6,
+          "components": {
+            "framing": 20,
+            "centering": 18.3,
+            "occupancy": 25,
+            "stability": 25
+          },
+          "score": 88,
+          "qualified": true,
+          "reasons": []
+        },
+        {
+          "id": "p2",
+          "speciesId": "kingfisher",
+          "time": 1.2,
+          "camera": {
+            "x": 0.518829022,
+            "y": 0.5,
+            "zoom": 2.8
+          },
+          "subject": {
+            "id": "kingfisher",
+            "name": "翠鸟",
+            "x": 0.518829022,
+            "y": 0.545,
+            "height": 0.085,
+            "width": 0.043159866,
+            "aspect": 0.90269,
+            "state": "perched",
+            "activity": "落枝停留",
+            "speed": 0
+          },
+          "projection": {
+            "x": 0.5,
+            "y": 0.6260000000000001,
+            "width": 0.12084762375000002,
+            "height": 0.238,
+            "left": 0.439576188125,
+            "right": 0.560423811875,
+            "top": 0.5070000000000001,
+            "bottom": 0.7450000000000001,
+            "inFrame": true
+          },
+          "stableFor": 0.6,
+          "components": {
+            "framing": 20,
+            "centering": 25.1,
+            "occupancy": 23.2,
+            "stability": 25
+          },
+          "score": 93,
+          "qualified": true,
+          "reasons": []
+        },
+        {
+          "id": "p3",
+          "speciesId": "deer",
+          "time": 1.8,
+          "camera": {
+            "x": 0.807692308,
+            "y": 0.5,
+            "zoom": 2.6
+          },
+          "subject": {
+            "id": "deer",
+            "name": "林鹿",
+            "x": 0.885480357,
+            "y": 0.458949234,
+            "height": 0.21,
+            "width": 0.094833113,
+            "aspect": 0.80282,
+            "state": "walking",
+            "activity": "草岸缓步",
+            "speed": 0.001551942
+          },
+          "projection": {
+            "x": 0.7022489274000001,
+            "y": 0.3932680084,
+            "width": 0.24656609250000003,
+            "height": 0.546,
+            "left": 0.5789658811500001,
+            "right": 0.8255319736500001,
+            "top": 0.12026800839999996,
+            "bottom": 0.6662680084,
+            "inFrame": true
+          },
+          "stableFor": 0.6,
+          "components": {
+            "framing": 20,
+            "centering": 17.2,
+            "occupancy": 25,
+            "stability": 25
+          },
+          "score": 87,
+          "qualified": true,
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "mode": "ordinary same-API timed demo",
+      "seed": 1,
+      "frameDt": 0.016666666666666666,
+      "actionEvery": 0.4,
+      "observationSeconds": 6.800136,
+      "actionCount": 15,
+      "shots": [
+        {
+          "id": "p1",
+          "speciesId": "heron",
+          "time": 1.600032,
+          "camera": {
+            "x": 0.303030303,
+            "y": 0.5,
+            "zoom": 1.65
+          },
+          "score": 89,
+          "qualified": true,
+          "components": {
+            "framing": 20,
+            "centering": 19.2,
+            "occupancy": 25,
+            "stability": 25
+          }
+        },
+        {
+          "id": "p2",
+          "speciesId": "kingfisher",
+          "time": 4.400088,
+          "camera": {
+            "x": 0.503030303,
+            "y": 0.5,
+            "zoom": 2.8
+          },
+          "score": 93,
+          "qualified": true,
+          "components": {
+            "framing": 20,
+            "centering": 25,
+            "occupancy": 23.2,
+            "stability": 25
+          }
+        },
+        {
+          "id": "p3",
+          "speciesId": "deer",
+          "time": 6.800136,
+          "camera": {
+            "x": 0.807692308,
+            "y": 0.5,
+            "zoom": 2.6
+          },
+          "score": 84,
+          "qualified": true,
+          "components": {
+            "framing": 20,
+            "centering": 13.8,
+            "occupancy": 25,
+            "stability": 25
+          }
+        }
+      ]
+    },
+    {
+      "mode": "ordinary same-API timed demo",
+      "seed": 4294967295,
+      "frameDt": 0.25,
+      "actionEvery": 0.4,
+      "observationSeconds": 16.5,
+      "actionCount": 27,
+      "shots": [
+        {
+          "id": "p1",
+          "speciesId": "heron",
+          "time": 2,
+          "camera": {
+            "x": 0.303030303,
+            "y": 0.5,
+            "zoom": 1.65
+          },
+          "score": 89,
+          "qualified": true,
+          "components": {
+            "framing": 20,
+            "centering": 19.1,
+            "occupancy": 25,
+            "stability": 25
+          }
+        },
+        {
+          "id": "p2",
+          "speciesId": "kingfisher",
+          "time": 13.5,
+          "camera": {
+            "x": 0.506631145,
+            "y": 0.5,
+            "zoom": 2.8
+          },
+          "score": 93,
+          "qualified": true,
+          "components": {
+            "framing": 20,
+            "centering": 25.1,
+            "occupancy": 23.2,
+            "stability": 25
+          }
+        },
+        {
+          "id": "p3",
+          "speciesId": "deer",
+          "time": 16.5,
+          "camera": {
+            "x": 0.807692308,
+            "y": 0.5,
+            "zoom": 2.6
+          },
+          "score": 83,
+          "qualified": true,
+          "components": {
+            "framing": 20,
+            "centering": 12.6,
+            "occupancy": 25,
+            "stability": 25
+          }
+        }
+      ]
+    },
+    {
+      "mode": "ordinary same-API timed demo",
+      "seed": 12345,
+      "frameDt": 0.1,
+      "actionEvery": 0.4,
+      "observationSeconds": 7.2,
+      "actionCount": 16,
+      "shots": [
+        {
+          "id": "p1",
+          "speciesId": "heron",
+          "time": 1.6,
+          "camera": {
+            "x": 0.303030303,
+            "y": 0.5,
+            "zoom": 1.65
+          },
+          "score": 86,
+          "qualified": true,
+          "components": {
+            "framing": 20,
+            "centering": 16.4,
+            "occupancy": 25,
+            "stability": 25
+          }
+        },
+        {
+          "id": "p2",
+          "speciesId": "kingfisher",
+          "time": 4.8,
+          "camera": {
+            "x": 0.53107693,
+            "y": 0.5,
+            "zoom": 2.8
+          },
+          "score": 93,
+          "qualified": true,
+          "components": {
+            "framing": 20,
+            "centering": 25.1,
+            "occupancy": 23.2,
+            "stability": 25
+          }
+        },
+        {
+          "id": "p3",
+          "speciesId": "deer",
+          "time": 7.2,
+          "camera": {
+            "x": 0.807692308,
+            "y": 0.5,
+            "zoom": 2.6
+          },
+          "score": 83,
+          "qualified": true,
+          "components": {
+            "framing": 20,
+            "centering": 13,
+            "occupancy": 25,
+            "stability": 25
+          }
+        }
+      ]
+    },
+    {
+      "mode": "ordinary same-API timed demo",
+      "seed": 987654321,
+      "frameDt": 0.2,
+      "actionEvery": 0.4,
+      "observationSeconds": 6.8,
+      "actionCount": 15,
+      "shots": [
+        {
+          "id": "p1",
+          "speciesId": "heron",
+          "time": 1.6,
+          "camera": {
+            "x": 0.303030303,
+            "y": 0.5,
+            "zoom": 1.65
+          },
+          "score": 89,
+          "qualified": true,
+          "components": {
+            "framing": 20,
+            "centering": 18.7,
+            "occupancy": 25,
+            "stability": 25
+          }
+        },
+        {
+          "id": "p2",
+          "speciesId": "kingfisher",
+          "time": 4.4,
+          "camera": {
+            "x": 0.503030303,
+            "y": 0.5,
+            "zoom": 2.8
+          },
+          "score": 93,
+          "qualified": true,
+          "components": {
+            "framing": 20,
+            "centering": 25.1,
+            "occupancy": 23.2,
+            "stability": 25
+          }
+        },
+        {
+          "id": "p3",
+          "speciesId": "deer",
+          "time": 6.8,
+          "camera": {
+            "x": 0.807692308,
+            "y": 0.5,
+            "zoom": 2.6
+          },
+          "score": 84,
+          "qualified": true,
+          "components": {
+            "framing": 20,
+            "centering": 13.7,
+            "occupancy": 25,
+            "stability": 25
+          }
+        }
+      ]
+    }
+  ],
+  "method": "Pure DOM-independent deterministic rule assertions. Every completion uses public pan/zoom/select/shutter actions and ordinary bounded time steps. Restore replays sparse legal actions at integer timestamps and compares all canonical camera/subject/photo/score/history fields; it does not authenticate browser PNG bytes, which are separately bound by photo ID in controller/browser checks.",
+  "command": "D:/software/nodejs/node.exe tooling/check-direction-wildlife-rules.mjs"
+}

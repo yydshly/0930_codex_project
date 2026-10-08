@@ -1,0 +1,424 @@
+{
+  "generated": [
+    {
+      "game": "brawler",
+      "name": "idle",
+      "source": "brawler-atlas",
+      "crop": [
+        44,
+        12,
+        300,
+        352
+      ],
+      "size": [
+        256,
+        340
+      ]
+    },
+    {
+      "game": "brawler",
+      "name": "walk-a",
+      "source": "brawler-atlas",
+      "crop": [
+        444,
+        8,
+        652,
+        348
+      ],
+      "size": [
+        208,
+        340
+      ]
+    },
+    {
+      "game": "brawler",
+      "name": "walk-b",
+      "source": "brawler-atlas",
+      "crop": [
+        788,
+        12,
+        1020,
+        348
+      ],
+      "size": [
+        232,
+        336
+      ]
+    },
+    {
+      "game": "brawler",
+      "name": "jab",
+      "source": "brawler-atlas",
+      "crop": [
+        1116,
+        16,
+        1436,
+        352
+      ],
+      "size": [
+        320,
+        336
+      ]
+    },
+    {
+      "game": "brawler",
+      "name": "hook",
+      "source": "brawler-atlas",
+      "crop": [
+        48,
+        372,
+        320,
+        704
+      ],
+      "size": [
+        272,
+        332
+      ]
+    },
+    {
+      "game": "brawler",
+      "name": "kick",
+      "source": "brawler-atlas",
+      "crop": [
+        396,
+        368,
+        720,
+        704
+      ],
+      "size": [
+        324,
+        336
+      ]
+    },
+    {
+      "game": "brawler",
+      "name": "jump",
+      "source": "brawler-atlas",
+      "crop": [
+        816,
+        360,
+        1016,
+        676
+      ],
+      "size": [
+        200,
+        316
+      ]
+    },
+    {
+      "game": "brawler",
+      "name": "hurt",
+      "source": "brawler-atlas",
+      "crop": [
+        1136,
+        388,
+        1400,
+        704
+      ],
+      "size": [
+        264,
+        316
+      ]
+    },
+    {
+      "game": "brawler",
+      "name": "enemy",
+      "source": "brawler-atlas",
+      "crop": [
+        32,
+        716,
+        300,
+        1060
+      ],
+      "size": [
+        268,
+        344
+      ]
+    },
+    {
+      "game": "brawler",
+      "name": "enemy-attack",
+      "source": "brawler-atlas",
+      "crop": [
+        388,
+        716,
+        704,
+        1060
+      ],
+      "size": [
+        316,
+        344
+      ]
+    },
+    {
+      "game": "brawler",
+      "name": "heavy",
+      "source": "brawler-atlas",
+      "crop": [
+        756,
+        712,
+        1028,
+        1064
+      ],
+      "size": [
+        272,
+        352
+      ]
+    },
+    {
+      "game": "brawler",
+      "name": "heavy-attack",
+      "source": "brawler-atlas",
+      "crop": [
+        1096,
+        716,
+        1440,
+        1056
+      ],
+      "size": [
+        344,
+        340
+      ]
+    },
+    {
+      "game": "skyline",
+      "name": "plane",
+      "source": "flight-atlas",
+      "crop": [
+        28,
+        104,
+        340,
+        464
+      ],
+      "size": [
+        312,
+        360
+      ]
+    },
+    {
+      "game": "skyline",
+      "name": "bank-left",
+      "source": "flight-atlas",
+      "crop": [
+        424,
+        120,
+        684,
+        440
+      ],
+      "size": [
+        260,
+        320
+      ]
+    },
+    {
+      "game": "skyline",
+      "name": "bank-right",
+      "source": "flight-atlas",
+      "crop": [
+        768,
+        120,
+        1028,
+        444
+      ],
+      "size": [
+        260,
+        324
+      ]
+    },
+    {
+      "game": "skyline",
+      "name": "fighter",
+      "source": "flight-atlas",
+      "crop": [
+        1108,
+        144,
+        1416,
+        460
+      ],
+      "size": [
+        308,
+        316
+      ]
+    },
+    {
+      "game": "skyline",
+      "name": "bomber",
+      "source": "flight-atlas",
+      "crop": [
+        4,
+        628,
+        384,
+        984
+      ],
+      "size": [
+        380,
+        356
+      ]
+    },
+    {
+      "game": "skyline",
+      "name": "carrier",
+      "source": "flight-atlas",
+      "crop": [
+        372,
+        556,
+        800,
+        1000
+      ],
+      "size": [
+        428,
+        444
+      ]
+    },
+    {
+      "game": "skyline",
+      "name": "supply",
+      "source": "flight-atlas",
+      "crop": [
+        876,
+        704,
+        1000,
+        896
+      ],
+      "size": [
+        124,
+        192
+      ]
+    },
+    {
+      "game": "skyline",
+      "name": "cloud",
+      "source": "flight-atlas",
+      "crop": [
+        1112,
+        632,
+        1440,
+        992
+      ],
+      "size": [
+        328,
+        360
+      ]
+    }
+  ],
+  "racing": {
+    "url": "https://kenney.nl/media/pages/assets/racing-kit/933b8fd9fd-1677580949/kenney_racing-kit.zip",
+    "source": "https://kenney.nl/assets/racing-kit",
+    "license": "CC0-1.0",
+    "files": [
+      "License.txt",
+      "bannerTowerGreen.glb",
+      "bannerTowerRed.glb",
+      "barrierRed.glb",
+      "barrierWall.glb",
+      "barrierWhite.glb",
+      "billboard.glb",
+      "billboardDouble_exclusive.glb",
+      "billboardLow.glb",
+      "billboardLower.glb",
+      "camera_exclusive.glb",
+      "fenceCurved.glb",
+      "fenceStraight.glb",
+      "flagCheckers.glb",
+      "flagCheckersSmall.glb",
+      "flagGreen.glb",
+      "flagRed.glb",
+      "flagTankco.glb",
+      "grandStand.glb",
+      "grandStandAwning.glb",
+      "grandStandCovered.glb",
+      "grandStandCoveredRound.glb",
+      "grandStandRound.glb",
+      "grass.glb",
+      "lightColored.glb",
+      "lightPostLarge.glb",
+      "lightPostModern.glb",
+      "lightPost_exclusive.glb",
+      "lightRed.glb",
+      "lightRedDouble.glb",
+      "overhead.glb",
+      "overheadLights.glb",
+      "overheadRound.glb",
+      "overheadRoundColored.glb",
+      "pitsGarage.glb",
+      "pitsGarageClosed.glb",
+      "pitsGarageCorner.glb",
+      "pitsOffice.glb",
+      "pitsOfficeCorner.glb",
+      "pitsOfficeRoof.glb",
+      "pylon.glb",
+      "raceCarGreen.glb",
+      "raceCarOrange.glb",
+      "raceCarRed.glb",
+      "raceCarWhite.glb",
+      "radarEquipment.glb",
+      "rail.glb",
+      "railDouble.glb",
+      "ramp.glb",
+      "roadBump.glb",
+      "roadCornerBridgeLarge.glb",
+      "roadCornerBridgeLarger.glb",
+      "roadCornerBridgeSmall.glb",
+      "roadCornerLarge.glb",
+      "roadCornerLargeBorder.glb",
+      "roadCornerLargeBorderInner.glb",
+      "roadCornerLarger.glb",
+      "roadCornerLargerBorder.glb",
+      "roadCornerLargerBorderInner.glb",
+      "roadCornerLargerSand.glb",
+      "roadCornerLargerSandInner.glb",
+      "roadCornerLargerWall.glb",
+      "roadCornerLargerWallInner.glb",
+      "roadCornerLargeSand.glb",
+      "roadCornerLargeSandInner.glb",
+      "roadCornerLargeWall.glb",
+      "roadCornerLargeWallInner.glb",
+      "roadCornerSmall.glb",
+      "roadCornerSmallBorder.glb",
+      "roadCornerSmallSand.glb",
+      "roadCornerSmallSquare.glb",
+      "roadCornerSmallWall.glb",
+      "roadCrossing.glb",
+      "roadCurved.glb",
+      "roadCurvedSplit.glb",
+      "roadEnd.glb",
+      "roadPitEntry.glb",
+      "roadPitGarage.glb",
+      "roadPitStraight.glb",
+      "roadPitStraightLong.glb",
+      "roadRamp.glb",
+      "roadRampLong.glb",
+      "roadRampLongCurved.glb",
+      "roadRampLongCurvedWall.glb",
+      "roadRampLongWall.glb",
+      "roadRampWall.glb",
+      "roadSide.glb",
+      "roadSplit.glb",
+      "roadSplitLarge.glb",
+      "roadSplitLarger.glb",
+      "roadSplitRound.glb",
+      "roadSplitRoundLarge.glb",
+      "roadSplitSmall.glb",
+      "roadStart.glb",
+      "roadStartPositions.glb",
+      "roadStraight.glb",
+      "roadStraightArrow.glb",
+      "roadStraightBridge.glb",
+      "roadStraightBridgeMid.glb",
+      "roadStraightBridgeStart.glb",
+      "roadStraightLong.glb",
+      "roadStraightLongBump.glb",
+      "roadStraightLongBumpRound.glb",
+      "roadStraightLongMid.glb",
+      "roadStraightSkew.glb",
+      "tent.glb",
+      "tentClosed.glb",
+      "tentClosedLong.glb",
+      "tentLong.glb",
+      "tentRoof.glb",
+      "tentRoofDouble.glb",
+      "treeLarge.glb",
+      "treeSmall.glb"
+    ]
+  }
+}

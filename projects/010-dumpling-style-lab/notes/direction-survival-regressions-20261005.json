@@ -1,0 +1,140 @@
+{
+  "date": "2026-10-05",
+  "passed": true,
+  "directions": 8,
+  "script_count": 16,
+  "rule_checks": 151,
+  "controller_checks": 131,
+  "total_checks": 282,
+  "method": "Actual rerun of the eight established direction rule suites and eight production controller suites. stdout and exact PowerShell invocation are recorded per run; controller suites use their documented DOM/renderer adapters, with browser visuals tested separately.",
+  "runs": [
+    {
+      "script": "check-direction-factory.mjs",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' tooling/check-direction-factory.mjs",
+      "exit_code": 0,
+      "stdout": "13 factory direction checks passed\n",
+      "count": 13,
+      "passed": true
+    },
+    {
+      "script": "check-direction-park.mjs",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' tooling/check-direction-park.mjs",
+      "exit_code": 0,
+      "stdout": "14 park direction checks passed\n",
+      "count": 14,
+      "passed": true
+    },
+    {
+      "script": "check-direction-coop.mjs",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' tooling/check-direction-coop.mjs",
+      "exit_code": 0,
+      "stdout": "16 cooperation rule checks passed, including ordinary completion of all three maps\n",
+      "count": 16,
+      "passed": true
+    },
+    {
+      "script": "check-direction-shift.mjs",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' tooling/check-direction-shift.mjs",
+      "exit_code": 0,
+      "stdout": "17 shift rules checks passed\n",
+      "count": 17,
+      "passed": true
+    },
+    {
+      "script": "check-direction-freight.mjs",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' tooling/check-direction-freight.mjs",
+      "exit_code": 0,
+      "stdout": "18 freight rules checks passed\n",
+      "count": 18,
+      "passed": true
+    },
+    {
+      "script": "check-direction-dungeon.mjs",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' tooling/check-direction-dungeon.mjs",
+      "exit_code": 0,
+      "stdout": "24 dungeon rules checks passed; 0 failed\n",
+      "count": 24,
+      "passed": true
+    },
+    {
+      "script": "check-direction-stealth.mjs",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' tooling/check-direction-stealth.mjs",
+      "exit_code": 0,
+      "stdout": "22 stealth rules checks passed\n",
+      "count": 22,
+      "passed": true
+    },
+    {
+      "script": "check-direction-space-rules.mjs",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' tooling/check-direction-space-rules.mjs",
+      "exit_code": 0,
+      "stdout": "27 space rules checks passed\n",
+      "count": 27,
+      "passed": true
+    },
+    {
+      "script": "check-direction-controller.mjs",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' tooling/check-direction-controller.mjs",
+      "exit_code": 0,
+      "stdout": "9 controller checks passed; only the new dedicated storage key was touched\n",
+      "count": 9,
+      "passed": true
+    },
+    {
+      "script": "check-direction-park-controller.mjs",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' tooling/check-direction-park-controller.mjs",
+      "exit_code": 0,
+      "stdout": "10 park controller checks passed; only the dedicated park save key was touched\n",
+      "count": 10,
+      "passed": true
+    },
+    {
+      "script": "check-direction-coop-controller.mjs",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' tooling/check-direction-coop-controller.mjs",
+      "exit_code": 0,
+      "stdout": "12 production cooperation callback checks passed; only the independent new save key was touched\n",
+      "count": 12,
+      "passed": true
+    },
+    {
+      "script": "check-direction-shift-controller.mjs",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' tooling/check-direction-shift-controller.mjs",
+      "exit_code": 0,
+      "stdout": "13 shift controller checks passed; only the dedicated shift save key was touched\n",
+      "count": 13,
+      "passed": true
+    },
+    {
+      "script": "check-direction-freight-controller.mjs",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' tooling/check-direction-freight-controller.mjs",
+      "exit_code": 0,
+      "stdout": "15 freight controller checks passed; only the new freight save key was touched\n",
+      "count": 15,
+      "passed": true
+    },
+    {
+      "script": "check-direction-dungeon-controller.mjs",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' tooling/check-direction-dungeon-controller.mjs",
+      "exit_code": 0,
+      "stdout": "23 dungeon controller checks passed; only the new dungeon save key was written\n",
+      "count": 23,
+      "passed": true
+    },
+    {
+      "script": "check-direction-stealth-controller.mjs",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' tooling/check-direction-stealth-controller.mjs",
+      "exit_code": 0,
+      "stdout": "24 stealth controller checks passed; only the dedicated stealth save key was read or written\n",
+      "count": 24,
+      "passed": true
+    },
+    {
+      "script": "check-direction-space-controller.mjs",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' tooling/check-direction-space-controller.mjs",
+      "exit_code": 0,
+      "stdout": "25 space controller checks passed; only the dedicated space save key was read or written\n",
+      "count": 25,
+      "passed": true
+    }
+  ]
+}

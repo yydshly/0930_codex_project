@@ -1,0 +1,1126 @@
+{
+  "stage": "沉淀整理，暂停新增试玩",
+  "formCount": 107,
+  "showcaseCount": 116,
+  "groups": {
+    "动作": [
+      {
+        "id": "platform",
+        "name": "平台跳跃",
+        "play": "wonder",
+        "view": "横版跟随",
+        "action": "跑 · 跳 · 踩 · 收集",
+        "reference": "超级玛丽 / Super Mario"
+      },
+      {
+        "id": "run-gun",
+        "name": "横版跑射",
+        "play": "breach",
+        "view": "横版跟随",
+        "action": "跑 · 跳 · 蹲 · 瞄准 · 连射",
+        "reference": "魂斗罗 / Contra"
+      },
+      {
+        "id": "beat-em-up",
+        "name": "清版格斗",
+        "play": "brawler",
+        "view": "侧面街道 / 前后纵深",
+        "action": "走位 · 连击 · 跳击 · 抓取",
+        "reference": "快打旋风 / Final Fight"
+      },
+      {
+        "id": "vertical-shooter",
+        "name": "纵向飞行射击",
+        "play": "skyline",
+        "view": "竖向航路 / 俯视飞机",
+        "action": "驾驶 · 闪避 · 射击 · 冲击波",
+        "reference": "1942"
+      },
+      {
+        "id": "versus-fighting",
+        "name": "对战格斗",
+        "play": "duel",
+        "view": "固定竞技场 / 双方同屏",
+        "action": "走位 · 出拳 · 踢击 · 格挡",
+        "reference": "街头霸王 / Street Fighter"
+      },
+      {
+        "id": "maze-chase",
+        "name": "迷宫追逐",
+        "play": "maze",
+        "view": "固定单屏 / 俯视通路",
+        "action": "转弯 · 收集 · 躲避 · 反追",
+        "reference": "吃豆人 / Pac-Man"
+      },
+      {
+        "id": "rhythm",
+        "name": "音乐节奏",
+        "play": "rhythm",
+        "view": "透视音符轨道 / 判定线",
+        "action": "听拍 · 看轨道 · 准时敲击",
+        "reference": "太鼓达人 / Taiko no Tatsujin"
+      },
+      {
+        "id": "sports",
+        "name": "体育竞技",
+        "play": "sports",
+        "view": "整场俯视 / 双方球队",
+        "action": "跑位 · 传球 · 射门 · 切换队员",
+        "reference": "小场足球 / 球队竞技"
+      },
+      {
+        "id": "pinball",
+        "name": "物理弹球",
+        "play": "pinball",
+        "view": "固定机台 / 独立球体",
+        "action": "蓄力 · 发球 · 接球 · 反弹",
+        "reference": "物理弹球 / Pinball"
+      },
+      {
+        "id": "rail-shooter",
+        "name": "轨道射击",
+        "play": "rail",
+        "view": "自动巡航 / 自由准星",
+        "action": "瞄准 · 射击 · 换弹 · 避弹",
+        "reference": "轨道射击 / 自动镜头"
+      },
+      {
+        "id": "co-op",
+        "name": "双人合作",
+        "play": "tandem",
+        "view": "双人同屏 / 独立控制",
+        "action": "分别移动 · 跳跃 · 压板 · 配合",
+        "reference": "本地双人合作"
+      },
+      {
+        "id": "top-action",
+        "name": "俯视动作",
+        "play": "hunter",
+        "view": "等距俯视",
+        "action": "绕行 · 攻击 · 闪避",
+        "reference": "Hades"
+      },
+      {
+        "id": "fps",
+        "name": "第一人称射击",
+        "play": "range",
+        "view": "角色眼睛 / 准星",
+        "action": "移动 · 转头 · 瞄准 · 开火",
+        "reference": "Counter-Strike"
+      },
+      {
+        "id": "breakout",
+        "name": "街机打砖块",
+        "play": "prism",
+        "view": "固定场地 / 底部挡板",
+        "action": "移挡板 · 接球 · 改角 · 清砖",
+        "reference": "打砖块 / Breakout"
+      },
+      {
+        "id": "territory-capture",
+        "name": "划线围地",
+        "play": "trace",
+        "view": "固定玻璃舞台 / 路径与区域",
+        "action": "沿边 · 划线 · 闭合 · 拓界",
+        "reference": "划线围地 / Territory capture"
+      },
+      {
+        "id": "bubble-shooter",
+        "name": "泡泡发射消除",
+        "play": "bubble",
+        "view": "固定穹顶 / 六角邻接",
+        "action": "瞄准 · 反弹 · 连消 · 掉落",
+        "reference": "泡泡发射 / Bubble shooter"
+      },
+      {
+        "id": "rolling-collection",
+        "name": "滚动吸附成长",
+        "play": "cluster",
+        "view": "俯视庭院 / 尺度变化",
+        "action": "滚动 · 吸附 · 增长 · 改变镜头尺度",
+        "reference": "Katamari Damacy"
+      },
+      {
+        "id": "ink-territory",
+        "name": "涂地与形态切换",
+        "play": "paint",
+        "view": "俯视场地 / 可覆盖地表",
+        "action": "喷涂 · 覆盖 · 潜行 · 恢复",
+        "reference": "Splatoon"
+      },
+      {
+        "id": "service-workflow",
+        "name": "订单服务与连续工序",
+        "play": "kitchen",
+        "view": "厨房 / 多工位服务",
+        "action": "取料 · 切配 · 烹调 · 交付",
+        "reference": "Overcooked! 2"
+      },
+      {
+        "id": "time-manipulation",
+        "name": "时间操控",
+        "play": "tempo",
+        "view": "俯视建筑空间 / 行动推进时间",
+        "action": "移动 · 停下观察 · 规划轨迹",
+        "reference": "SUPERHOT"
+      },
+      {
+        "id": "body-control",
+        "name": "异形身体操控",
+        "play": "coil",
+        "view": "真实三维 / 分节身体",
+        "action": "前行 · 转向 · 盘绕 · 爬高",
+        "reference": "Snake Pass"
+      },
+      {
+        "id": "action-replay",
+        "name": "动作录制回放协作",
+        "play": "afterimage",
+        "view": "侧面时钟厅 / 过去的动作",
+        "action": "录制路线 · 生成分身 · 同时协作",
+        "reference": "The Talos Principle / 时间录制"
+      },
+      {
+        "id": "soft-limb",
+        "name": "柔性多肢操控",
+        "play": "tendril",
+        "view": "水下研究舱 / 三条柔性臂",
+        "action": "选肢体 · 拖末端 · 抓取 · 装配",
+        "reference": "Octodad / 独立肢体操控"
+      },
+      {
+        "id": "gravity-inversion",
+        "name": "重力翻转平台",
+        "play": "inverter",
+        "view": "侧面单屏 / 地面与天花板",
+        "action": "移动 · 落地翻转 · 绕开上下危险",
+        "reference": "VVVVVV / 翻转重力平台"
+      },
+      {
+        "id": "voice-pitch",
+        "name": "声音音高控制",
+        "play": "cantor",
+        "view": "空中单屏 / 连续音高输入",
+        "action": "持续发声 · 调整音高 · 匹配音环",
+        "reference": "One Hand Clapping / 唱声参与"
+      },
+      {
+        "id": "radial-shooter",
+        "name": "径向环轨射击",
+        "play": "orbiter",
+        "view": "环形舞台 / 径向航道",
+        "action": "圆周换轨 · 向心射击 · 守住外环",
+        "reference": "Tempest / 管道射击形式"
+      }
+    ],
+    "空间": [
+      {
+        "id": "racing",
+        "name": "三维竞速",
+        "play": "coast",
+        "view": "车后追踪 / 车头镜头",
+        "action": "加速 · 刹车 · 转向 · 超越",
+        "reference": "Out Run"
+      },
+      {
+        "id": "flight-sim",
+        "name": "三维飞行驾驶",
+        "play": "pilot",
+        "view": "机后追踪 / 座舱",
+        "action": "转向 · 升降 · 加速 · 穿环",
+        "reference": "三维飞行驾驶 / 自由航向"
+      },
+      {
+        "id": "physics-puzzle",
+        "name": "三维物理机关",
+        "play": "balance",
+        "view": "固定三维场景 / 可抓物体",
+        "action": "抓取 · 移动 · 旋转 · 放下",
+        "reference": "刚体与物体操作"
+      },
+      {
+        "id": "mini-golf",
+        "name": "三维迷你高尔夫",
+        "play": "putt",
+        "view": "三维球道 / 挥杆瞄准",
+        "action": "定方向 · 控力度 · 挥杆 · 入洞",
+        "reference": "迷你高尔夫 / 蓄力击球"
+      },
+      {
+        "id": "first-puzzle",
+        "name": "第一人称空间解谜",
+        "play": "station",
+        "view": "角色眼睛 / 三维空间",
+        "action": "观察 · 搬运 · 对齐 · 操作",
+        "reference": "Portal"
+      },
+      {
+        "id": "third-adventure",
+        "name": "第三人称冒险",
+        "play": "expedition",
+        "view": "角色背后 / 环绕镜头",
+        "action": "行走 · 跳跃 · 探索",
+        "reference": "Zelda"
+      },
+      {
+        "id": "building",
+        "name": "三维搭建",
+        "play": "builder",
+        "view": "三维场地 / 方块预览",
+        "action": "选格 · 建造 · 回收 · 通行",
+        "reference": "Minecraft"
+      },
+      {
+        "id": "rolling-ball",
+        "name": "惯性滚球闯关",
+        "play": "roll",
+        "view": "三维跟随 / 连续高差",
+        "action": "滚动 · 转向 · 制动 · 过弯",
+        "reference": "连续滚球闯关"
+      },
+      {
+        "id": "billiards",
+        "name": "台球清台",
+        "play": "cue",
+        "view": "固定顶视 / 真实球桌",
+        "action": "瞄准 · 控力度 · 碰球 · 入袋",
+        "reference": "台球 / Billiards"
+      },
+      {
+        "id": "rope-cutting",
+        "name": "切绳摆荡",
+        "play": "swing",
+        "view": "固定侧面 / 挂点与重力",
+        "action": "切绳 · 观摆 · 定格 · 释放",
+        "reference": "切绳机关 / Rope-cutting puzzle"
+      },
+      {
+        "id": "grappling",
+        "name": "抓钩跑酷",
+        "play": "hook",
+        "view": "侧面峡谷 / 连续摆荡",
+        "action": "挂点 · 收绳 · 摆荡 · 释放",
+        "reference": "A Story About My Uncle"
+      },
+      {
+        "id": "perspective-illusion",
+        "name": "错视空间",
+        "play": "fold",
+        "view": "三维等距投影 / 可旋转镜头",
+        "action": "旋转镜头 · 看重合 · 沿路前行",
+        "reference": "Monument Valley"
+      },
+      {
+        "id": "terrain-digging",
+        "name": "地形挖掘",
+        "play": "delve",
+        "view": "侧面地层 / 纵向跟随",
+        "action": "挖掘 · 开路 · 收矿 · 下潜",
+        "reference": "SteamWorld Dig"
+      },
+      {
+        "id": "material-simulation",
+        "name": "材料模拟",
+        "play": "flux",
+        "view": "剖面实验舱 / 连续材料变化",
+        "action": "投放 · 流动 · 燃烧 · 灭火",
+        "reference": "Noita"
+      },
+      {
+        "id": "photo-world",
+        "name": "摄影造景",
+        "play": "expose",
+        "view": "第一人称三维 / 照片实体化",
+        "action": "拍摄 · 放置照片 · 走过新桥",
+        "reference": "Viewfinder"
+      },
+      {
+        "id": "jigsaw-puzzle",
+        "name": "拼图旋转吸附",
+        "play": "mosaic",
+        "view": "桌面近景 / 不规则拼片",
+        "action": "拖动 · 旋转 · 对照 · 吸附",
+        "reference": "Super Jigsaw Puzzle: Generations"
+      },
+      {
+        "id": "light-reflection",
+        "name": "光线反射解谜",
+        "play": "lumen",
+        "view": "俯视光学桌 / 连续光路",
+        "action": "选择镜面 · 旋转 · 绕障 · 稳定接通",
+        "reference": "The Talos Principle / 光路解谜"
+      },
+      {
+        "id": "voxel-sculpture",
+        "name": "三维体素雕刻",
+        "play": "atelier",
+        "view": "真实三维雕塑 / 分层切片",
+        "action": "点选凿刻 · 分层补土 · 撤销 · 旋转",
+        "reference": "Teardown / 可改变体素空间"
+      },
+      {
+        "id": "collage-world",
+        "name": "剪纸造路",
+        "play": "cutout",
+        "view": "纸片舞台 / 可变通路",
+        "action": "拖移 · 旋转 · 缩放 · 试走",
+        "reference": "Tearaway / 剪纸世界创作"
+      },
+      {
+        "id": "panoramic-survey",
+        "name": "360°环视勘察",
+        "play": "panorama",
+        "view": "固定观察点 / 全景球面",
+        "action": "拖动环视 · 望远镜 · 稳定测量",
+        "reference": "Myst III: Exile / 360°全景观察"
+      },
+      {
+        "id": "draw-guidance",
+        "name": "绘线引导",
+        "play": "ribbon",
+        "view": "侧面单屏 / 自由绘制轨道",
+        "action": "拖动绘线 · 沿线运动 · 缺口坠落",
+        "reference": "Kirby and the Rainbow Paintbrush / 绘线引导"
+      },
+      {
+        "id": "world-rewind",
+        "name": "世界时间回溯",
+        "play": "rewind",
+        "view": "横向钟楼 / 整个局部世界回退",
+        "action": "移动取物 · 回退历史 · 改写后续",
+        "reference": "Braid, Anniversary Edition / 时间回退"
+      },
+      {
+        "id": "recursive-scale",
+        "name": "双尺度嵌套世界",
+        "play": "nested",
+        "view": "真实三维 / 模型与庭院双视图",
+        "action": "拖动模型 · 同步放大 · 走过庭院",
+        "reference": "Maquette / 递归尺度空间"
+      },
+      {
+        "id": "dual-world",
+        "name": "双世界切换",
+        "play": "phasewalk",
+        "view": "同坐标双层舞台 / 即时切换",
+        "action": "跳跃 · 切换实体层 · 拼接通路",
+        "reference": "Guacamelee! / 双世界空间切换"
+      },
+      {
+        "id": "portal-momentum",
+        "name": "传送门惯性",
+        "play": "transit",
+        "view": "二维侧面 / 两端局部场景窗口",
+        "action": "布置入口出口 · 下落 · 惯性转向",
+        "reference": "Portal / 门面与动量"
+      },
+      {
+        "id": "machine-construction",
+        "name": "机械组装与试驾",
+        "play": "rigworks",
+        "view": "三维装配 / 机后与环绕镜头",
+        "action": "装配 · 试驾 · 抓取与交付",
+        "reference": "Besiege / 拼装后检验机械的形式"
+      },
+      {
+        "id": "six-dof",
+        "name": "六自由度三维行动",
+        "play": "drift",
+        "view": "三维失重 / 机后与第一人称",
+        "action": "六向平移 · 三轴旋转 · 制动",
+        "reference": "Overload / Descent 六自由度形式"
+      },
+      {
+        "id": "level-authoring",
+        "name": "关卡创作与即时试玩",
+        "play": "levelsmith",
+        "view": "编辑画布 / 横版平台舞台",
+        "action": "绘制关卡 · 立即试玩 · 返回修改",
+        "reference": "Super Mario Maker 2 / 创作与试玩形式"
+      },
+      {
+        "id": "asynchronous-relay",
+        "name": "跨窗口异步接力",
+        "play": "postway",
+        "view": "路线地图 / 制图与接棒两端",
+        "action": "画路线 · 发布 · 接棒 · 步进送达",
+        "reference": "Death Stranding / 间接协作的参考方向"
+      }
+    ],
+    "策略": [
+      {
+        "id": "rts",
+        "name": "即时战略",
+        "play": "command",
+        "view": "可移动大地图 / 多单位俯视",
+        "action": "框选 · 调度 · 招募 · 占领",
+        "reference": "星际争霸 / StarCraft"
+      },
+      {
+        "id": "tower-defense",
+        "name": "塔防",
+        "play": "bastion",
+        "view": "固定地图 / 连续通路",
+        "action": "部署 · 看射程 · 升级 · 拦截",
+        "reference": "王国保卫战 / Kingdom Rush"
+      },
+      {
+        "id": "turn-tactics",
+        "name": "回合战棋",
+        "play": "tactics",
+        "view": "等距格子战场 / 多角色",
+        "action": "选队员 · 走格 · 攻击 · 治疗",
+        "reference": "最终幻想战略版 / Final Fantasy Tactics"
+      },
+      {
+        "id": "push-box",
+        "name": "推箱子机关",
+        "play": "cargo",
+        "view": "固定网格 / 实体通路",
+        "action": "走位 · 推箱 · 压板 · 出口",
+        "reference": "推箱子 / Sokoban"
+      },
+      {
+        "id": "match-three",
+        "name": "三消连锁",
+        "play": "jewel",
+        "view": "固定交换棋盘 / 掉落补齐",
+        "action": "交换 · 消除 · 掉落 · 连锁",
+        "reference": "三消 / Match-three"
+      },
+      {
+        "id": "grand-strategy",
+        "name": "宏观战略",
+        "play": "realm",
+        "view": "地区地图 / 势力边界",
+        "action": "招募 · 发展 · 调度 · 占领",
+        "reference": "地区战略 / 势力调度"
+      },
+      {
+        "id": "command-rpg",
+        "name": "指令式 RPG 战斗",
+        "play": "party",
+        "view": "队伍分列 / 技能菜单",
+        "action": "选技能 · 选目标 · 观察行动",
+        "reference": "指令式队伍战斗"
+      },
+      {
+        "id": "city-planning",
+        "name": "城市交通规划",
+        "play": "district",
+        "view": "三维街区 / 全局规划",
+        "action": "铺路 · 建设 · 拆除 · 看通勤",
+        "reference": "城市与交通模拟"
+      },
+      {
+        "id": "train-dispatch",
+        "name": "铁路信号调度",
+        "play": "signal",
+        "view": "三维铁路 / 区段控制",
+        "action": "看去向 · 转道岔 · 停车 · 放行",
+        "reference": "铁路调度 / 道岔和信号"
+      },
+      {
+        "id": "artillery",
+        "name": "回合弹道炮战",
+        "play": "battery",
+        "view": "固定侧面 / 完整山地",
+        "action": "调角 · 定力度 · 发射 · 看弹坑",
+        "reference": "回合炮战 / 地形与弹道"
+      },
+      {
+        "id": "board",
+        "name": "棋盘几何益智",
+        "play": "order",
+        "view": "固定棋盘",
+        "action": "移动 · 旋转 · 排列",
+        "reference": "Tetris"
+      },
+      {
+        "id": "cards",
+        "name": "牌桌策略",
+        "play": "ledger",
+        "view": "桌面 / 手牌",
+        "action": "选牌 · 组合 · 结算",
+        "reference": "Balatro"
+      },
+      {
+        "id": "automation",
+        "name": "自动化建设",
+        "play": "factory",
+        "view": "俯视网格 / 物流",
+        "action": "摆设施 · 连线路 · 看流动",
+        "reference": "Factorio"
+      },
+      {
+        "id": "marble-chain",
+        "name": "轨道珠链",
+        "play": "chain",
+        "view": "固定场景 / 曲线珠链",
+        "action": "瞄准 · 发射 · 换珠 · 连消",
+        "reference": "轨道珠链射击"
+      },
+      {
+        "id": "pipe-network",
+        "name": "旋转管线接通",
+        "play": "conduit",
+        "view": "固定装置 / 接口网格",
+        "action": "选格 · 旋转 · 接通 · 输送",
+        "reference": "管线旋转 / Connection puzzle"
+      },
+      {
+        "id": "mine-deduction",
+        "name": "数字线索排雷",
+        "play": "sonar",
+        "view": "固定棋盘 / 隐藏信息",
+        "action": "探测 · 读数 · 标记 · 快开",
+        "reference": "数字排雷 / Mine deduction"
+      },
+      {
+        "id": "squad-following",
+        "name": "小队跟随搬运",
+        "play": "swarm",
+        "view": "庭院 / 主角与群体",
+        "action": "带队 · 分组 · 派遣 · 搬物 · 修桥",
+        "reference": "Pikmin 4"
+      },
+      {
+        "id": "rule-rewriting",
+        "name": "规则改写",
+        "play": "axiom",
+        "view": "规则文字 / 可推实体棋盘",
+        "action": "移动词块 · 改写规则 · 推石通行",
+        "reference": "Baba Is You"
+      },
+      {
+        "id": "programming-puzzle",
+        "name": "编程式解谜",
+        "play": "script",
+        "view": "指令编排 / 工人执行",
+        "action": "编写指令 · 单步 · 绕行 · 循环",
+        "reference": "Human Resource Machine"
+      },
+      {
+        "id": "bridge-building",
+        "name": "物理造桥",
+        "play": "span",
+        "view": "侧面峡谷 / 杆件结构",
+        "action": "连接 · 选材 · 承重 · 加固",
+        "reference": "Poly Bridge 3"
+      },
+      {
+        "id": "nonogram",
+        "name": "图案交叉推理",
+        "play": "weave",
+        "view": "玻璃工坊 / 行列数字",
+        "action": "读线索 · 填色 · 划空 · 交叉验证",
+        "reference": "PICROSS S"
+      },
+      {
+        "id": "vehicle-stations",
+        "name": "多工位载具驾驶",
+        "play": "submersible",
+        "view": "水下侧面航行 / 工位仪表",
+        "action": "切工位 · 控推进 · 调浮力 · 声呐回收",
+        "reference": "Barotrauma / 多系统潜艇"
+      },
+      {
+        "id": "map-expedition",
+        "name": "地图勘察旅行",
+        "play": "cartographer",
+        "view": "海岛地图 / 路线与旅行",
+        "action": "连点规划 · 沿线旅行 · 到站记录",
+        "reference": "80 Days / 路线旅行"
+      },
+      {
+        "id": "autonomous-rescue",
+        "name": "群体间接救援",
+        "play": "rescue",
+        "view": "侧面矿井 / 自动行走群体",
+        "action": "选队员 · 给技能 · 改通路",
+        "reference": "Lemmings / 地形指令与群体救援"
+      },
+      {
+        "id": "auto-battler",
+        "name": "自动战棋布阵",
+        "play": "automata",
+        "view": "等距棋盘 / 战前布阵",
+        "action": "选择队员 · 部署 · 自动对抗",
+        "reference": "Teamfight Tactics / 部署后自动战斗"
+      },
+      {
+        "id": "dice-combination",
+        "name": "掷骰锁定组合",
+        "play": "dicework",
+        "view": "实体骰桌 / 结果保留",
+        "action": "掷骰 · 锁定 · 重掷 · 分类记录",
+        "reference": "Yahtzee / 保留与重掷"
+      },
+      {
+        "id": "simultaneous-tactics",
+        "name": "同步规划战术",
+        "play": "synchro",
+        "view": "俯视网格 / 规划与同步执行",
+        "action": "安排路线 · 提交 · 双方共同执行",
+        "reference": "Frozen Synapse / 同步回合形式"
+      },
+      {
+        "id": "inventory-loadout",
+        "name": "背包空间配装",
+        "play": "satchel",
+        "view": "俯视工作台 / 空间装备",
+        "action": "摆放 · 旋转 · 邻接 · 检验",
+        "reference": "Backpack Hero / 空间摆放影响能力"
+      },
+      {
+        "id": "auction-bidding",
+        "name": "限时竞价拍卖",
+        "play": "gavel",
+        "view": "拍卖现场 / 鉴定与竞价席",
+        "action": "鉴定 · 出价 · 等落槌 · 留预算",
+        "reference": "Dealer’s Life 2 / 鉴定与拍卖决策"
+      }
+    ],
+    "故事": [
+      {
+        "id": "stealth",
+        "name": "潜行行动",
+        "play": "stealth",
+        "view": "俯视庭院 / 巡逻视野",
+        "action": "绕行 · 蹲行 · 引诱 · 读取",
+        "reference": "巡逻潜行 / 隐蔽路线"
+      },
+      {
+        "id": "point-click",
+        "name": "点击解谜冒险",
+        "play": "archive",
+        "view": "固定房间 / 场景切换",
+        "action": "调查 · 拾取 · 组合 · 使用",
+        "reference": "点击冒险 / 调查与使用"
+      },
+      {
+        "id": "visual-novel",
+        "name": "互动小说",
+        "play": "novel",
+        "view": "场景 / 人物立绘 / 对话框",
+        "action": "阅读 · 回应 · 选择 · 回看",
+        "reference": "互动小说 / Visual novel"
+      },
+      {
+        "id": "side-story",
+        "name": "横版叙事探索",
+        "play": "afterdark",
+        "view": "侧面舞台",
+        "action": "走近 · 观察 · 躲藏 · 互动",
+        "reference": "INSIDE"
+      },
+      {
+        "id": "desk",
+        "name": "工作台调查",
+        "play": "checkpoint",
+        "view": "固定桌面 / 文书",
+        "action": "检查 · 对照 · 判断",
+        "reference": "Papers, Please"
+      },
+      {
+        "id": "surveillance",
+        "name": "监控室悬疑",
+        "play": "watch",
+        "view": "固定多机位 / 操作台",
+        "action": "观察 · 切机位 · 控灯 · 开关闸门",
+        "reference": "固定机位值守"
+      },
+      {
+        "id": "hidden-object",
+        "name": "场景寻物",
+        "play": "seek",
+        "view": "完整场景 / 放大与平移",
+        "action": "观察 · 放大 · 定位 · 标记",
+        "reference": "场景寻物 / Hidden-object"
+      },
+      {
+        "id": "object-restoration",
+        "name": "物件拆装修复",
+        "play": "repair",
+        "view": "近距离工作台 / 分层物件",
+        "action": "拆盖 · 清洁 · 拖动 · 旋转 · 安装",
+        "reference": "Assemble with Care"
+      },
+      {
+        "id": "asymmetric-coop",
+        "name": "信息不对称合作",
+        "play": "relay",
+        "view": "操作端 / 说明端",
+        "action": "描述信息 · 读规则 · 调整 · 核对",
+        "reference": "Keep Talking and Nobody Explodes"
+      },
+      {
+        "id": "panel-puzzle",
+        "name": "绘本画框解谜",
+        "play": "folio",
+        "view": "四幅绘本 / 局部空间重组",
+        "action": "交换画框 · 放大局部 · 连接通行",
+        "reference": "Gorogoa"
+      },
+      {
+        "id": "audio-exploration",
+        "name": "声音定位探索",
+        "play": "echo",
+        "view": "空间声音 / 有限可视场景",
+        "action": "转身辨向 · 听距离 · 走近声标",
+        "reference": "A Blind Legend"
+      },
+      {
+        "id": "social-deduction",
+        "name": "社交推理与伪装",
+        "play": "assembly",
+        "view": "真实玩家房间 / 隐藏身份",
+        "action": "任务 · 伪装 · 危机 · 讨论投票",
+        "reference": "Among Us"
+      },
+      {
+        "id": "desktop-investigation",
+        "name": "仿桌面侦探",
+        "play": "desktop",
+        "view": "桌面窗口 / 文件与照片",
+        "action": "开窗口 · 搜档案 · 阅读 · 结案",
+        "reference": "Hypnospace Outlaw / 仿界面探索"
+      },
+      {
+        "id": "parser-adventure",
+        "name": "输入文字冒险",
+        "play": "inkwell",
+        "view": "场景插画 / 指令与文字记录",
+        "action": "输入动词 · 探索 · 拿取 · 使用",
+        "reference": "Hadean Lands / 指令式互动小说"
+      }
+    ],
+    "生活": [
+      {
+        "id": "fishing",
+        "name": "垂钓与收线",
+        "play": "angler",
+        "view": "三维水面 / 浮标与鱼线",
+        "action": "抛竿 · 读咬钩 · 扬竿 · 收松线",
+        "reference": "垂钓 / 拉力与张力"
+      },
+      {
+        "id": "life",
+        "name": "生活经营",
+        "play": "garden",
+        "view": "俯视生活场景",
+        "action": "种植 · 照料 · 收获 · 送礼",
+        "reference": "Stardew Valley"
+      },
+      {
+        "id": "music-composition",
+        "name": "音乐作曲",
+        "play": "sonata",
+        "view": "录音桌 / 四轨乐谱",
+        "action": "布置音符 · 调音高 · 试听 · 导出",
+        "reference": "Incredibox / 音乐创作"
+      }
+    ],
+    "解谜": [
+      {
+        "id": "twisty-puzzle",
+        "name": "立体扭转复原",
+        "play": "prismcube",
+        "view": "实时三维 / 可环绕观察",
+        "action": "选择面 · 四分之一转动 · 复原",
+        "reference": "Rubik’s 2×2 / 表层扭转"
+      },
+      {
+        "id": "falling-blocks",
+        "name": "落块消行",
+        "play": "cascade",
+        "view": "固定竖井 / 持续下落",
+        "action": "移动 · 旋转 · 落稳 · 消除横排",
+        "reference": "Tetris / 下落与横排消除"
+      },
+      {
+        "id": "solitaire",
+        "name": "纸牌接龙",
+        "play": "patience",
+        "view": "俯视牌桌 / 遮盖与揭牌",
+        "action": "选牌 · 红黑递减 · 同花归位",
+        "reference": "Klondike / 揭牌与顺序整理"
+      },
+      {
+        "id": "word-deduction",
+        "name": "字词位置推理",
+        "play": "lexicon",
+        "view": "字母矩阵 / 逐格线索",
+        "action": "输入 · 提交 · 比较位置与数量",
+        "reference": "Wordle 形式 / 字母与位置反馈"
+      }
+    ],
+    "感知": [
+      {
+        "id": "radio-tuning",
+        "name": "无线电调谐",
+        "play": "receiver",
+        "view": "实体仪表 / 连续调节",
+        "action": "调频率相位带宽 · 稳定 · 记录",
+        "reference": "OXENFREE / 调谐作为交互"
+      }
+    ],
+    "模拟": [
+      {
+        "id": "orbital-navigation",
+        "name": "轨道引力航行",
+        "play": "perigee",
+        "view": "俯视轨道 / 惯性与引力",
+        "action": "定向推力 · 滑行 · 预测 · 交会",
+        "reference": "引力轨道导航 / 中心引力"
+      }
+    ]
+  },
+  "legacy": [
+    {
+      "id": "legacy-detective",
+      "game": "detective",
+      "title": "旧城失物局",
+      "subtitle": "雨夜黑色电影",
+      "family": "故事",
+      "view": "俯视",
+      "description": "调查证据、对照证词并作出归还判断。",
+      "legacy": true,
+      "reference": "原有独立短篇",
+      "cover": "assets/extension-detective.webp",
+      "scope": "保留当前版本、画风切换、已实现章节和原有浏览器存档。",
+      "controls": "操作说明与目标显示在游戏内部。"
+    },
+    {
+      "id": "legacy-wuxia",
+      "game": "wuxia",
+      "title": "山间小驿站",
+      "subtitle": "国风江湖",
+      "family": "故事",
+      "view": "俯视",
+      "description": "山路调查、有限物资与救援安排。",
+      "legacy": true,
+      "reference": "原有独立短篇",
+      "cover": "assets/extension-wuxia.webp",
+      "scope": "保留当前版本、画风切换、已实现章节和原有浏览器存档。",
+      "controls": "操作说明与目标显示在游戏内部。"
+    },
+    {
+      "id": "legacy-ecology",
+      "game": "ecology",
+      "title": "小小生态岛",
+      "subtitle": "自然微缩",
+      "family": "生活",
+      "view": "俯视",
+      "description": "栽植、水文与三个季节的演替。",
+      "legacy": true,
+      "reference": "原有独立短篇",
+      "cover": "assets/extension-ecology.webp",
+      "scope": "保留当前版本、画风切换、已实现章节和原有浏览器存档。",
+      "controls": "操作说明与目标显示在游戏内部。"
+    },
+    {
+      "id": "legacy-wasteland",
+      "game": "wasteland",
+      "title": "最后一座温室",
+      "subtitle": "废土生存",
+      "family": "策略",
+      "view": "俯视",
+      "description": "维修设备与物资分配，面对三轮天气。",
+      "legacy": true,
+      "reference": "原有独立短篇",
+      "cover": "assets/extension-wasteland.webp",
+      "scope": "保留当前版本、画风切换、已实现章节和原有浏览器存档。",
+      "controls": "操作说明与目标显示在游戏内部。"
+    },
+    {
+      "id": "legacy-dream",
+      "game": "dream",
+      "title": "记忆渡船",
+      "subtitle": "梦境幻想",
+      "family": "故事",
+      "view": "横版",
+      "description": "记忆物件改变通路与归岸选择。",
+      "legacy": true,
+      "reference": "原有独立短篇",
+      "cover": "assets/extension-dream.webp",
+      "scope": "保留当前版本、画风切换、已实现章节和原有浏览器存档。",
+      "controls": "操作说明与目标显示在游戏内部。"
+    },
+    {
+      "id": "legacy-arcade",
+      "game": "arcade",
+      "title": "屋顶快递赛",
+      "subtitle": "都市霓虹跑酷",
+      "family": "动作",
+      "view": "横版",
+      "description": "跳跃、冲刺、检查点与计时投递。",
+      "legacy": true,
+      "reference": "原有独立短篇",
+      "cover": "assets/extension-arcade.webp",
+      "scope": "保留当前版本、画风切换、已实现章节和原有浏览器存档。",
+      "controls": "操作说明与目标显示在游戏内部。"
+    },
+    {
+      "id": "legacy-inn",
+      "game": "inn",
+      "title": "七日小旅店",
+      "subtitle": "暖色生活叙事",
+      "family": "生活",
+      "view": "俯视",
+      "description": "家具布置、来客活动与回访书信。",
+      "legacy": true,
+      "reference": "原有独立短篇",
+      "cover": "assets/extension-inn.webp",
+      "scope": "保留当前版本、画风切换、已实现章节和原有浏览器存档。",
+      "controls": "操作说明与目标显示在游戏内部。"
+    },
+    {
+      "id": "legacy-islands",
+      "game": "islands",
+      "title": "浮岛探险社",
+      "subtitle": "低多边形幻想",
+      "family": "空间",
+      "view": "第三人称",
+      "description": "工具、真实通路、遗迹与归航。",
+      "legacy": true,
+      "reference": "原有独立短篇",
+      "cover": "assets/extension-islands.webp",
+      "scope": "保留当前版本、画风切换、已实现章节和原有浏览器存档。",
+      "controls": "操作说明与目标显示在游戏内部。"
+    },
+    {
+      "id": "legacy-movers",
+      "game": "movers",
+      "title": "搬家日",
+      "subtitle": "手绘生活物理",
+      "family": "生活",
+      "view": "横版",
+      "description": "三份委托，拿起、轻放、投掷与送达。",
+      "legacy": true,
+      "reference": "原有独立短篇",
+      "cover": "assets/extension-moving-day.webp",
+      "scope": "保留当前版本、画风切换、已实现章节和原有浏览器存档。",
+      "controls": "操作说明与目标显示在游戏内部。"
+    }
+  ],
+  "materialStudies": [
+    {
+      "id": "pixel",
+      "name": "治愈像素",
+      "engine": "CANVAS 2D"
+    },
+    {
+      "id": "flat",
+      "name": "扁平插画",
+      "engine": "CANVAS 2D"
+    },
+    {
+      "id": "storybook",
+      "name": "手绘绘本",
+      "engine": "CANVAS 2D"
+    },
+    {
+      "id": "ink",
+      "name": "水墨国风",
+      "engine": "CANVAS 2D"
+    },
+    {
+      "id": "anime",
+      "name": "日系动漫",
+      "engine": "CANVAS 2D"
+    },
+    {
+      "id": "isometric",
+      "name": "等距微缩",
+      "engine": "CANVAS 2D"
+    },
+    {
+      "id": "lowpoly",
+      "name": "低多边形 3D",
+      "engine": "WEBGL / 3D"
+    },
+    {
+      "id": "clay",
+      "name": "黏土玩具 3D",
+      "engine": "WEBGL / 3D"
+    },
+    {
+      "id": "neon",
+      "name": "科技霓虹",
+      "engine": "CANVAS 2D"
+    },
+    {
+      "id": "realistic",
+      "name": "写实材质 3D",
+      "engine": "WEBGL / 3D"
+    },
+    {
+      "id": "papercut",
+      "name": "层叠剪纸",
+      "engine": "CANVAS 2D"
+    },
+    {
+      "id": "linocut",
+      "name": "黑白刻版",
+      "engine": "CANVAS 2D"
+    },
+    {
+      "id": "cyanotype",
+      "name": "植物蓝晒",
+      "engine": "CANVAS 2D"
+    },
+    {
+      "id": "stainedglass",
+      "name": "透光彩窗",
+      "engine": "CANVAS 2D"
+    },
+    {
+      "id": "comic",
+      "name": "漫画网点",
+      "engine": "CANVAS 2D"
+    },
+    {
+      "id": "ascii",
+      "name": "终端字符",
+      "engine": "CANVAS 2D"
+    },
+    {
+      "id": "wireframe",
+      "name": "结构线框",
+      "engine": "CANVAS 2D"
+    },
+    {
+      "id": "embroidery",
+      "name": "刺绣布艺",
+      "engine": "CANVAS 2D"
+    },
+    {
+      "id": "ukiyoe",
+      "name": "木版海浪",
+      "engine": "CANVAS 2D"
+    },
+    {
+      "id": "risograph",
+      "name": "孔版套色",
+      "engine": "CANVAS 2D"
+    }
+  ],
+  "earlyWorlds": [
+    {
+      "id": "cozy",
+      "title": "小谷，留一会儿",
+      "art": "粉彩像素 × 生活与陪伴"
+    },
+    {
+      "id": "wonder",
+      "title": "森林里，谁留了灯？",
+      "art": "发光幻想插画 × 探索与发现"
+    },
+    {
+      "id": "playful",
+      "title": "三只小淘气，藏好了吗？",
+      "art": "圆润玩具 3D × 捉迷藏与惊喜"
+    }
+  ]
+}

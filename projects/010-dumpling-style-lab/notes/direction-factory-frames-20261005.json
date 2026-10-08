@@ -1,0 +1,57 @@
+{
+  "method": "Production Canvas2D renderer and production simulation rendered through Skia. These are not browser screenshots and do not verify CSS/touch/fullscreen.",
+  "frames": [
+    {
+      "name": "ready",
+      "file": "assets/directions/qa/ready.png",
+      "phase": "ready",
+      "wave": 0,
+      "stats": {
+        "mined": 0,
+        "fabricated": 0,
+        "shots": 0,
+        "kills": 0,
+        "leaks": 0
+      }
+    },
+    {
+      "name": "battle",
+      "file": "assets/directions/qa/battle.png",
+      "phase": "defense",
+      "wave": 1,
+      "stats": {
+        "mined": 48,
+        "fabricated": 114,
+        "shots": 46,
+        "kills": 18,
+        "leaks": 0
+      }
+    },
+    {
+      "name": "won",
+      "file": "assets/directions/qa/won.png",
+      "phase": "won",
+      "wave": 3,
+      "stats": {
+        "mined": 48,
+        "fabricated": 114,
+        "shots": 46,
+        "kills": 18,
+        "leaks": 0
+      }
+    },
+    {
+      "name": "guided",
+      "file": "assets/directions/qa/guided.png",
+      "phase": "production",
+      "wave": 0,
+      "stats": {
+        "mined": 4,
+        "fabricated": 9,
+        "shots": 0,
+        "kills": 0,
+        "leaks": 0
+      }
+    }
+  ]
+}

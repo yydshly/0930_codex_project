@@ -1,0 +1,2210 @@
+{
+  "passed": true,
+  "method": "Production drawStealth Canvas2D calls rendered through Skia using the production engine and actual ordinary demo/manual commands. These are generated renderer frames, not browser screenshots. This verifies Canvas output and shared model geometry; it makes no browser DOM, browser input, GPU/WebGL or screenshot claim.",
+  "coordinateChecks": {
+    "passed": true,
+    "mappingCount": 384,
+    "cols": 24,
+    "rows": 16,
+    "view": {
+      "width": 1440,
+      "height": 960,
+      "x": 120,
+      "y": 70,
+      "tile": 50
+    },
+    "firstCellCentre": [
+      145,
+      95
+    ],
+    "lastCellCentre": [
+      1295,
+      845
+    ],
+    "outsideBoundaryChecks": 4
+  },
+  "renderingPurity": "encode(world) compared before and after every production draw; every model was unchanged.",
+  "simulation": {
+    "stepSeconds": 0.04,
+    "noTeleports": true,
+    "noSyntheticObjectiveOrPhaseAwards": true,
+    "sourcePlans": [
+      "shadow",
+      "blackout",
+      "lure"
+    ],
+    "counterfactual": "manual middle route without its ordinary lamp interaction"
+  },
+  "sources": {
+    "materials": {
+      "file": "web/assets/directions/stealth/materials-atlas.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "1e801a4208dec03d83bd9ac9e9ac18a314151f91dfd7ca08af3b07cd3a5efb93"
+    },
+    "props": {
+      "file": "web/assets/directions/stealth/estate-props.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "74e018b114b16e9a7defb7cd6c1553bfe91e30e61b4a5d6bbc84a29747fb2f76"
+    },
+    "actors": {
+      "file": "web/assets/directions/stealth/covert-actors.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "3972b144d159fc8c7387459cbbdee3d6ec7ecddceaf15415f0156d3c3298e8a3"
+    },
+    "scene": {
+      "file": "web/assets/directions/stealth/moonlit-estate.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "cb605a466faf56e0aef73ef53abd533809bcdea0ec7d1b62213bd07ffe755cd4"
+    },
+    "states": {
+      "file": "web/assets/directions/stealth/state-variants.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "d735df26a273c523313b35f3ea00d1f4570e78f8ddb3008c1565aee381fc7a70"
+    }
+  },
+  "frames": [
+    {
+      "file": "assets/directions/stealth-qa/01-opening.png",
+      "coverage": "The original shared scene, paused before any movement.",
+      "width": 1440,
+      "height": 960,
+      "bytes": 1084885,
+      "sha256": "9fb85a1918890869a679c061f9020a777b88fa73a8dc6e59b76436ac8dc3effa",
+      "modelUnchangedByDraw": true,
+      "time": 0,
+      "mode": "demo",
+      "plan": "shadow",
+      "phase": "playing",
+      "paused": true,
+      "objective": false,
+      "stones": 3,
+      "visibility": 0.085,
+      "player": {
+        "x": 3,
+        "y": 8,
+        "angle": 0,
+        "stance": "crouch",
+        "motionStance": "crouch",
+        "moving": false,
+        "noise": 0,
+        "exposure": 0,
+        "path": [],
+        "destination": null,
+        "stepDistance": 0
+      },
+      "lamps": [
+        {
+          "id": "court",
+          "x": 9,
+          "y": 2,
+          "on": true,
+          "radius": 3.8
+        },
+        {
+          "id": "gallery",
+          "x": 12,
+          "y": 7,
+          "on": true,
+          "radius": 7
+        },
+        {
+          "id": "yard",
+          "x": 14,
+          "y": 12,
+          "on": true,
+          "radius": 5.5
+        }
+      ],
+      "guards": [
+        {
+          "id": "rook",
+          "name": "庭院巡夜人",
+          "x": 13,
+          "y": 2,
+          "angle": 0,
+          "patrol": [
+            {
+              "x": 13,
+              "y": 2
+            },
+            {
+              "x": 17,
+              "y": 2
+            }
+          ],
+          "patrolIndex": 1,
+          "mode": "patrol",
+          "awareness": 0,
+          "target": null,
+          "searchTimer": 0,
+          "path": [],
+          "lastHeard": 0,
+          "lostSight": 0
+        },
+        {
+          "id": "keeper",
+          "name": "长廊守卫",
+          "x": 8,
+          "y": 6,
+          "angle": 0,
+          "patrol": [
+            {
+              "x": 8,
+              "y": 6
+            },
+            {
+              "x": 16,
+              "y": 6
+            }
+          ],
+          "patrolIndex": 1,
+          "mode": "patrol",
+          "awareness": 0,
+          "target": null,
+          "searchTimer": 0,
+          "path": [],
+          "lastHeard": 0,
+          "lostSight": 0
+        },
+        {
+          "id": "porter",
+          "name": "货院守卫",
+          "x": 15,
+          "y": 12,
+          "angle": 3.141592653589793,
+          "patrol": [
+            {
+              "x": 11,
+              "y": 12
+            },
+            {
+              "x": 16,
+              "y": 12
+            }
+          ],
+          "patrolIndex": 0,
+          "mode": "patrol",
+          "awareness": 0,
+          "target": null,
+          "searchTimer": 0,
+          "path": [],
+          "lastHeard": 0,
+          "lostSight": 0
+        }
+      ],
+      "projectiles": [],
+      "noises": [],
+      "stats": {
+        "distance": 0,
+        "footsteps": 0,
+        "stonesThrown": 0,
+        "lightsToggled": 0,
+        "alerts": 0,
+        "timeInLight": 0,
+        "maxExposure": 0,
+        "investigations": 0,
+        "commands": 0,
+        "archiveCollected": false,
+        "pickupTime": null,
+        "exitTime": null
+      },
+      "lastLog": [
+        {
+          "time": 0,
+          "text": "演示使用普通移动与交互，可随时接管同一现场。",
+          "kind": "info"
+        }
+      ]
+    },
+    {
+      "file": "assets/directions/stealth-qa/02-shadow-detour.png",
+      "coverage": "Actual crouched travel on the upper rug below the solid screen, with guard patrols and wall-clipped vision.",
+      "width": 1440,
+      "height": 960,
+      "bytes": 1064526,
+      "sha256": "e8332e370fe34a727d75d0edaea8ed5d7006f4a5e507edc6b727cf530bb89692",
+      "modelUnchangedByDraw": true,
+      "time": 15.4,
+      "mode": "demo",
+      "plan": "shadow",
+      "phase": "playing",
+      "paused": false,
+      "objective": false,
+      "stones": 3,
+      "visibility": 0.085,
+      "player": {
+        "x": 11.526399999999992,
+        "y": 4,
+        "angle": 0,
+        "stance": "crouch",
+        "motionStance": "crouch",
+        "moving": true,
+        "noise": 0,
+        "exposure": 0,
+        "path": [
+          {
+            "x": 12,
+            "y": 4
+          }
+        ],
+        "destination": {
+          "x": 12,
+          "y": 4
+        },
+        "stepDistance": 0.28640000000000776
+      },
+      "lamps": [
+        {
+          "id": "court",
+          "x": 9,
+          "y": 2,
+          "on": true,
+          "radius": 3.8
+        },
+        {
+          "id": "gallery",
+          "x": 12,
+          "y": 7,
+          "on": true,
+          "radius": 7
+        },
+        {
+          "id": "yard",
+          "x": 14,
+          "y": 12,
+          "on": true,
+          "radius": 5.5
+        }
+      ],
+      "guards": [
+        {
+          "id": "rook",
+          "name": "庭院巡夜人",
+          "x": 15.621999999999964,
+          "y": 2,
+          "angle": 0,
+          "patrol": [
+            {
+              "x": 13,
+              "y": 2
+            },
+            {
+              "x": 17,
+              "y": 2
+            }
+          ],
+          "patrolIndex": 1,
+          "mode": "patrol",
+          "awareness": 0,
+          "target": {
+            "x": 17,
+            "y": 2
+          },
+          "searchTimer": 0,
+          "path": [
+            {
+              "x": 16,
+              "y": 2
+            },
+            {
+              "x": 17,
+              "y": 2
+            }
+          ],
+          "lastHeard": 0,
+          "lostSight": 15.399999999999848
+        },
+        {
+          "id": "keeper",
+          "name": "长廊守卫",
+          "x": 13.378000000000036,
+          "y": 6,
+          "angle": 3.141592653589793,
+          "patrol": [
+            {
+              "x": 8,
+              "y": 6
+            },
+            {
+              "x": 16,
+              "y": 6
+            }
+          ],
+          "patrolIndex": 0,
+          "mode": "patrol",
+          "awareness": 0,
+          "target": {
+            "x": 8,
+            "y": 6
+          },
+          "searchTimer": 0,
+          "path": [
+            {
+              "x": 13,
+              "y": 6
+            },
+            {
+              "x": 12,
+              "y": 6
+            },
+            {
+              "x": 11,
+              "y": 6
+            },
+            {
+              "x": 10,
+              "y": 6
+            },
+            {
+              "x": 9,
+              "y": 6
+            },
+            {
+              "x": 8,
+              "y": 6
+            }
+          ],
+          "lastHeard": 0,
+          "lostSight": 15.399999999999848
+        },
+        {
+          "id": "porter",
+          "name": "货院守卫",
+          "x": 14.399200000000022,
+          "y": 12,
+          "angle": 3.141592653589793,
+          "patrol": [
+            {
+              "x": 11,
+              "y": 12
+            },
+            {
+              "x": 16,
+              "y": 12
+            }
+          ],
+          "patrolIndex": 0,
+          "mode": "patrol",
+          "awareness": 0,
+          "target": {
+            "x": 11,
+            "y": 12
+          },
+          "searchTimer": 0,
+          "path": [
+            {
+              "x": 14,
+              "y": 12
+            },
+            {
+              "x": 13,
+              "y": 12
+            },
+            {
+              "x": 12,
+              "y": 12
+            },
+            {
+              "x": 11,
+              "y": 12
+            }
+          ],
+          "lastHeard": 0,
+          "lostSight": 15.399999999999848
+        }
+      ],
+      "projectiles": [],
+      "noises": [
+        {
+          "id": 16,
+          "x": 10.542399999999994,
+          "y": 4,
+          "kind": "footstep",
+          "radius": 0.24,
+          "age": 1.2400000000000004,
+          "lifetime": 1.25,
+          "heard": [
+            "rook",
+            "keeper",
+            "porter"
+          ]
+        },
+        {
+          "id": 17,
+          "x": 11.263999999999992,
+          "y": 4,
+          "kind": "footstep",
+          "radius": 0.24,
+          "age": 0.36,
+          "lifetime": 1.25,
+          "heard": [
+            "rook",
+            "keeper",
+            "porter"
+          ]
+        }
+      ],
+      "stats": {
+        "distance": 12.526399999999992,
+        "footsteps": 17,
+        "stonesThrown": 0,
+        "lightsToggled": 0,
+        "alerts": 0,
+        "timeInLight": 5.040000000000004,
+        "maxExposure": 0,
+        "investigations": 0,
+        "commands": 4,
+        "archiveCollected": false,
+        "pickupTime": null,
+        "exitTime": null
+      },
+      "lastLog": [
+        {
+          "time": 0,
+          "text": "演示使用普通移动与交互，可随时接管同一现场。",
+          "kind": "info"
+        }
+      ]
+    },
+    {
+      "file": "assets/directions/stealth-qa/03-gallery-lamp-extinguished.png",
+      "coverage": "The ordinary E interaction has actually turned off the gallery lamp; the middle corridor uses the changed light state.",
+      "width": 1440,
+      "height": 960,
+      "bytes": 947040,
+      "sha256": "e5003fdfe061ed612f2a9a85f3694b97ffbfde166ff801b032dc01f31014e046",
+      "modelUnchangedByDraw": true,
+      "time": 2.56,
+      "mode": "demo",
+      "plan": "blackout",
+      "phase": "playing",
+      "paused": false,
+      "objective": false,
+      "stones": 3,
+      "visibility": 0.085,
+      "player": {
+        "x": 5,
+        "y": 8,
+        "angle": 0,
+        "stance": "crouch",
+        "motionStance": "crouch",
+        "moving": false,
+        "noise": 0,
+        "exposure": 0,
+        "path": [],
+        "destination": {
+          "x": 5,
+          "y": 8
+        },
+        "stepDistance": 0.5600000000000027
+      },
+      "lamps": [
+        {
+          "id": "court",
+          "x": 9,
+          "y": 2,
+          "on": true,
+          "radius": 3.8
+        },
+        {
+          "id": "gallery",
+          "x": 12,
+          "y": 7,
+          "on": false,
+          "radius": 7
+        },
+        {
+          "id": "yard",
+          "x": 14,
+          "y": 12,
+          "on": true,
+          "radius": 5.5
+        }
+      ],
+      "guards": [
+        {
+          "id": "rook",
+          "name": "庭院巡夜人",
+          "x": 14.766399999999976,
+          "y": 2,
+          "angle": 0,
+          "patrol": [
+            {
+              "x": 13,
+              "y": 2
+            },
+            {
+              "x": 17,
+              "y": 2
+            }
+          ],
+          "patrolIndex": 1,
+          "mode": "patrol",
+          "awareness": 0,
+          "target": {
+            "x": 17,
+            "y": 2
+          },
+          "searchTimer": 0,
+          "path": [
+            {
+              "x": 15,
+              "y": 2
+            },
+            {
+              "x": 16,
+              "y": 2
+            },
+            {
+              "x": 17,
+              "y": 2
+            }
+          ],
+          "lastHeard": 0,
+          "lostSight": 2.5600000000000014
+        },
+        {
+          "id": "keeper",
+          "name": "长廊守卫",
+          "x": 9.766399999999976,
+          "y": 6,
+          "angle": 0,
+          "patrol": [
+            {
+              "x": 8,
+              "y": 6
+            },
+            {
+              "x": 16,
+              "y": 6
+            }
+          ],
+          "patrolIndex": 1,
+          "mode": "patrol",
+          "awareness": 0,
+          "target": {
+            "x": 16,
+            "y": 6
+          },
+          "searchTimer": 0,
+          "path": [
+            {
+              "x": 10,
+              "y": 6
+            },
+            {
+              "x": 11,
+              "y": 6
+            },
+            {
+              "x": 12,
+              "y": 6
+            },
+            {
+              "x": 13,
+              "y": 6
+            },
+            {
+              "x": 14,
+              "y": 6
+            },
+            {
+              "x": 15,
+              "y": 6
+            },
+            {
+              "x": 16,
+              "y": 6
+            }
+          ],
+          "lastHeard": 0,
+          "lostSight": 2.5600000000000014
+        },
+        {
+          "id": "porter",
+          "name": "货院守卫",
+          "x": 13.233600000000024,
+          "y": 12,
+          "angle": 3.141592653589793,
+          "patrol": [
+            {
+              "x": 11,
+              "y": 12
+            },
+            {
+              "x": 16,
+              "y": 12
+            }
+          ],
+          "patrolIndex": 0,
+          "mode": "patrol",
+          "awareness": 0,
+          "target": {
+            "x": 11,
+            "y": 12
+          },
+          "searchTimer": 0,
+          "path": [
+            {
+              "x": 13,
+              "y": 12
+            },
+            {
+              "x": 12,
+              "y": 12
+            },
+            {
+              "x": 11,
+              "y": 12
+            }
+          ],
+          "lastHeard": 0,
+          "lostSight": 2.5600000000000014
+        }
+      ],
+      "projectiles": [],
+      "noises": [
+        {
+          "id": 2,
+          "x": 4.443199999999997,
+          "y": 8,
+          "kind": "footstep",
+          "radius": 0.768,
+          "age": 0.8000000000000002,
+          "lifetime": 1.25,
+          "heard": [
+            "rook",
+            "keeper",
+            "porter"
+          ]
+        }
+      ],
+      "stats": {
+        "distance": 2.000000000000001,
+        "footsteps": 2,
+        "stonesThrown": 0,
+        "lightsToggled": 1,
+        "alerts": 0,
+        "timeInLight": 0,
+        "maxExposure": 0,
+        "investigations": 0,
+        "commands": 3,
+        "archiveCollected": false,
+        "pickupTime": null,
+        "exitTime": null
+      },
+      "lastLog": [
+        {
+          "time": 0,
+          "text": "演示使用普通移动与交互，可随时接管同一现场。",
+          "kind": "info"
+        },
+        {
+          "time": 2.5600000000000014,
+          "text": "长廊电闸：灯光熄灭。",
+          "kind": "light"
+        }
+      ]
+    },
+    {
+      "file": "assets/directions/stealth-qa/04-real-stone-flight.png",
+      "coverage": "One of the three finite stones is in its actual 0.42 second flight; no impact or investigation has been granted.",
+      "width": 1440,
+      "height": 960,
+      "bytes": 1028789,
+      "sha256": "95dc47aa0459a6874d06abb15dd4563bf9a7c1ebb0d411089a5d93b712407fe4",
+      "modelUnchangedByDraw": true,
+      "time": 10.08,
+      "mode": "demo",
+      "plan": "lure",
+      "phase": "playing",
+      "paused": false,
+      "objective": false,
+      "stones": 2,
+      "visibility": 0.085,
+      "player": {
+        "x": 7,
+        "y": 11.8688,
+        "angle": -1.5707963267948966,
+        "stance": "crouch",
+        "motionStance": "crouch",
+        "moving": true,
+        "noise": 0,
+        "exposure": 0,
+        "path": [
+          {
+            "x": 7,
+            "y": 11
+          }
+        ],
+        "destination": {
+          "x": 7,
+          "y": 11
+        },
+        "stepDistance": 0.2112000000000101
+      },
+      "lamps": [
+        {
+          "id": "court",
+          "x": 9,
+          "y": 2,
+          "on": true,
+          "radius": 3.8
+        },
+        {
+          "id": "gallery",
+          "x": 12,
+          "y": 7,
+          "on": true,
+          "radius": 7
+        },
+        {
+          "id": "yard",
+          "x": 14,
+          "y": 12,
+          "on": true,
+          "radius": 5.5
+        }
+      ],
+      "guards": [
+        {
+          "id": "rook",
+          "name": "庭院巡夜人",
+          "x": 14.04680000000004,
+          "y": 2,
+          "angle": 3.141592653589793,
+          "patrol": [
+            {
+              "x": 13,
+              "y": 2
+            },
+            {
+              "x": 17,
+              "y": 2
+            }
+          ],
+          "patrolIndex": 0,
+          "mode": "patrol",
+          "awareness": 0,
+          "target": {
+            "x": 13,
+            "y": 2
+          },
+          "searchTimer": 0,
+          "path": [
+            {
+              "x": 14,
+              "y": 2
+            },
+            {
+              "x": 13,
+              "y": 2
+            }
+          ],
+          "lastHeard": 0,
+          "lostSight": 10.079999999999961
+        },
+        {
+          "id": "keeper",
+          "name": "长廊守卫",
+          "x": 14.955199999999905,
+          "y": 6,
+          "angle": 0,
+          "patrol": [
+            {
+              "x": 8,
+              "y": 6
+            },
+            {
+              "x": 16,
+              "y": 6
+            }
+          ],
+          "patrolIndex": 1,
+          "mode": "patrol",
+          "awareness": 0,
+          "target": {
+            "x": 16,
+            "y": 6
+          },
+          "searchTimer": 0,
+          "path": [
+            {
+              "x": 15,
+              "y": 6
+            },
+            {
+              "x": 16,
+              "y": 6
+            }
+          ],
+          "lastHeard": 0,
+          "lostSight": 10.079999999999961
+        },
+        {
+          "id": "porter",
+          "name": "货院守卫",
+          "x": 13.95319999999996,
+          "y": 12,
+          "angle": 0,
+          "patrol": [
+            {
+              "x": 11,
+              "y": 12
+            },
+            {
+              "x": 16,
+              "y": 12
+            }
+          ],
+          "patrolIndex": 1,
+          "mode": "patrol",
+          "awareness": 0,
+          "target": {
+            "x": 16,
+            "y": 12
+          },
+          "searchTimer": 0,
+          "path": [
+            {
+              "x": 14,
+              "y": 12
+            },
+            {
+              "x": 15,
+              "y": 12
+            },
+            {
+              "x": 16,
+              "y": 12
+            }
+          ],
+          "lastHeard": 0,
+          "lostSight": 10.079999999999961
+        }
+      ],
+      "projectiles": [
+        {
+          "x": 7.476190476190476,
+          "y": 12.952380952380953,
+          "from": {
+            "x": 7,
+            "y": 12
+          },
+          "target": {
+            "x": 8,
+            "y": 14
+          },
+          "age": 0.2,
+          "flight": 0.42
+        }
+      ],
+      "noises": [
+        {
+          "id": 10,
+          "x": 6.213599999999998,
+          "y": 12,
+          "kind": "footstep",
+          "radius": 1.128,
+          "age": 1.2400000000000004,
+          "lifetime": 1.25,
+          "heard": [
+            "rook",
+            "keeper",
+            "porter"
+          ]
+        },
+        {
+          "id": 11,
+          "x": 6.9351999999999965,
+          "y": 12,
+          "kind": "footstep",
+          "radius": 0.768,
+          "age": 0.36,
+          "lifetime": 1.25,
+          "heard": [
+            "rook",
+            "keeper",
+            "porter"
+          ]
+        }
+      ],
+      "stats": {
+        "distance": 8.1312,
+        "footsteps": 11,
+        "stonesThrown": 1,
+        "lightsToggled": 0,
+        "alerts": 0,
+        "timeInLight": 0,
+        "maxExposure": 0,
+        "investigations": 0,
+        "commands": 5,
+        "archiveCollected": false,
+        "pickupTime": null,
+        "exitTime": null
+      },
+      "lastLog": [
+        {
+          "time": 0,
+          "text": "演示使用普通移动与交互，可随时接管同一现场。",
+          "kind": "info"
+        },
+        {
+          "time": 9.919999999999964,
+          "text": "掷出石子，落地声音会沿门洞传播。",
+          "kind": "stone"
+        }
+      ]
+    },
+    {
+      "file": "assets/directions/stealth-qa/05-guard-investigates-impact.png",
+      "coverage": "The real stone landed and its traversable sound distance caused the porter to investigate the actual impact tile.",
+      "width": 1440,
+      "height": 960,
+      "bytes": 1030358,
+      "sha256": "5c4cbcd4b7dfb6959297af55ac077d89b0566c5e482750502b46b6270bdbacb3",
+      "modelUnchangedByDraw": true,
+      "time": 10.32,
+      "mode": "demo",
+      "plan": "lure",
+      "phase": "playing",
+      "paused": false,
+      "objective": false,
+      "stones": 2,
+      "visibility": 0.085,
+      "player": {
+        "x": 7,
+        "y": 11.672,
+        "angle": -1.5707963267948966,
+        "stance": "crouch",
+        "motionStance": "crouch",
+        "moving": true,
+        "noise": 0,
+        "exposure": 17.6,
+        "path": [
+          {
+            "x": 7,
+            "y": 11
+          }
+        ],
+        "destination": {
+          "x": 7,
+          "y": 11
+        },
+        "stepDistance": 0.4080000000000101
+      },
+      "lamps": [
+        {
+          "id": "court",
+          "x": 9,
+          "y": 2,
+          "on": true,
+          "radius": 3.8
+        },
+        {
+          "id": "gallery",
+          "x": 12,
+          "y": 7,
+          "on": true,
+          "radius": 7
+        },
+        {
+          "id": "yard",
+          "x": 14,
+          "y": 12,
+          "on": true,
+          "radius": 5.5
+        }
+      ],
+      "guards": [
+        {
+          "id": "rook",
+          "name": "庭院巡夜人",
+          "x": 13.881200000000042,
+          "y": 2,
+          "angle": 3.141592653589793,
+          "patrol": [
+            {
+              "x": 13,
+              "y": 2
+            },
+            {
+              "x": 17,
+              "y": 2
+            }
+          ],
+          "patrolIndex": 0,
+          "mode": "patrol",
+          "awareness": 0,
+          "target": {
+            "x": 13,
+            "y": 2
+          },
+          "searchTimer": 0,
+          "path": [
+            {
+              "x": 13,
+              "y": 2
+            }
+          ],
+          "lastHeard": 0,
+          "lostSight": 10.319999999999956
+        },
+        {
+          "id": "keeper",
+          "name": "长廊守卫",
+          "x": 15.120799999999903,
+          "y": 6,
+          "angle": 0,
+          "patrol": [
+            {
+              "x": 8,
+              "y": 6
+            },
+            {
+              "x": 16,
+              "y": 6
+            }
+          ],
+          "patrolIndex": 1,
+          "mode": "patrol",
+          "awareness": 0,
+          "target": {
+            "x": 16,
+            "y": 6
+          },
+          "searchTimer": 0,
+          "path": [
+            {
+              "x": 16,
+              "y": 6
+            }
+          ],
+          "lastHeard": 0,
+          "lostSight": 10.319999999999956
+        },
+        {
+          "id": "porter",
+          "name": "货院守卫",
+          "x": 14.050399999999957,
+          "y": 12,
+          "angle": 0.16,
+          "patrol": [
+            {
+              "x": 11,
+              "y": 12
+            },
+            {
+              "x": 16,
+              "y": 12
+            }
+          ],
+          "patrolIndex": 1,
+          "mode": "investigate",
+          "awareness": 17.6,
+          "target": {
+            "x": 8,
+            "y": 14
+          },
+          "searchTimer": 0,
+          "path": [
+            {
+              "x": 14,
+              "y": 12
+            },
+            {
+              "x": 13,
+              "y": 12
+            },
+            {
+              "x": 12,
+              "y": 12
+            },
+            {
+              "x": 12,
+              "y": 13
+            },
+            {
+              "x": 12,
+              "y": 14
+            },
+            {
+              "x": 11,
+              "y": 14
+            },
+            {
+              "x": 10,
+              "y": 14
+            },
+            {
+              "x": 9,
+              "y": 14
+            },
+            {
+              "x": 8,
+              "y": 14
+            }
+          ],
+          "lastHeard": 12,
+          "lostSight": 10.319999999999956
+        }
+      ],
+      "projectiles": [],
+      "noises": [
+        {
+          "id": 11,
+          "x": 6.9351999999999965,
+          "y": 12,
+          "kind": "footstep",
+          "radius": 0.768,
+          "age": 0.6,
+          "lifetime": 1.25,
+          "heard": [
+            "rook",
+            "keeper",
+            "porter"
+          ]
+        },
+        {
+          "id": 12,
+          "x": 8,
+          "y": 14,
+          "kind": "stone",
+          "radius": 12,
+          "age": 0.04,
+          "lifetime": 3,
+          "heard": [
+            "rook",
+            "keeper",
+            "porter"
+          ]
+        }
+      ],
+      "stats": {
+        "distance": 8.328,
+        "footsteps": 11,
+        "stonesThrown": 1,
+        "lightsToggled": 0,
+        "alerts": 0,
+        "timeInLight": 0,
+        "maxExposure": 17.6,
+        "investigations": 1,
+        "commands": 5,
+        "archiveCollected": false,
+        "pickupTime": null,
+        "exitTime": null
+      },
+      "lastLog": [
+        {
+          "time": 0,
+          "text": "演示使用普通移动与交互，可随时接管同一现场。",
+          "kind": "info"
+        },
+        {
+          "time": 9.919999999999964,
+          "text": "掷出石子，落地声音会沿门洞传播。",
+          "kind": "stone"
+        },
+        {
+          "time": 10.319999999999956,
+          "text": "货院守卫听到落石，正在查探声音来源。",
+          "kind": "investigate"
+        }
+      ]
+    },
+    {
+      "file": "assets/directions/stealth-qa/06-guard-searches-sound-alcove.png",
+      "coverage": "The porter physically reached the impact and started the limited search timer while the infiltrator uses the grass lane.",
+      "width": 1440,
+      "height": 960,
+      "bytes": 1082553,
+      "sha256": "46b7fa47815bebf63e06dbd9cf1893b151522668ccc03ea1740864af171c5ae4",
+      "modelUnchangedByDraw": true,
+      "time": 18.24,
+      "mode": "demo",
+      "plan": "lure",
+      "phase": "playing",
+      "paused": false,
+      "objective": false,
+      "stones": 2,
+      "visibility": 0.7396291092443411,
+      "player": {
+        "x": 14.991999999999983,
+        "y": 11,
+        "angle": 0,
+        "stance": "walk",
+        "motionStance": "walk",
+        "moving": true,
+        "noise": 0,
+        "exposure": 0,
+        "path": [
+          {
+            "x": 15,
+            "y": 11
+          },
+          {
+            "x": 16,
+            "y": 11
+          },
+          {
+            "x": 17,
+            "y": 11
+          }
+        ],
+        "destination": {
+          "x": 17,
+          "y": 11
+        },
+        "stepDistance": 0.4320000000000141
+      },
+      "lamps": [
+        {
+          "id": "court",
+          "x": 9,
+          "y": 2,
+          "on": true,
+          "radius": 3.8
+        },
+        {
+          "id": "gallery",
+          "x": 12,
+          "y": 7,
+          "on": true,
+          "radius": 7
+        },
+        {
+          "id": "yard",
+          "x": 14,
+          "y": 12,
+          "on": true,
+          "radius": 5.5
+        }
+      ],
+      "guards": [
+        {
+          "id": "rook",
+          "name": "庭院巡夜人",
+          "x": 16.420400000000008,
+          "y": 2,
+          "angle": 3.141592653589793,
+          "patrol": [
+            {
+              "x": 13,
+              "y": 2
+            },
+            {
+              "x": 17,
+              "y": 2
+            }
+          ],
+          "patrolIndex": 0,
+          "mode": "patrol",
+          "awareness": 0,
+          "target": {
+            "x": 13,
+            "y": 2
+          },
+          "searchTimer": 0,
+          "path": [
+            {
+              "x": 16,
+              "y": 2
+            },
+            {
+              "x": 15,
+              "y": 2
+            },
+            {
+              "x": 14,
+              "y": 2
+            },
+            {
+              "x": 13,
+              "y": 2
+            }
+          ],
+          "lastHeard": 0,
+          "lostSight": 18.23999999999979
+        },
+        {
+          "id": "keeper",
+          "name": "长廊守卫",
+          "x": 11.418400000000062,
+          "y": 6,
+          "angle": 3.141592653589793,
+          "patrol": [
+            {
+              "x": 8,
+              "y": 6
+            },
+            {
+              "x": 16,
+              "y": 6
+            }
+          ],
+          "patrolIndex": 0,
+          "mode": "patrol",
+          "awareness": 0,
+          "target": {
+            "x": 8,
+            "y": 6
+          },
+          "searchTimer": 0,
+          "path": [
+            {
+              "x": 11,
+              "y": 6
+            },
+            {
+              "x": 10,
+              "y": 6
+            },
+            {
+              "x": 9,
+              "y": 6
+            },
+            {
+              "x": 8,
+              "y": 6
+            }
+          ],
+          "lastHeard": 0,
+          "lostSight": 18.23999999999979
+        },
+        {
+          "id": "porter",
+          "name": "货院守卫",
+          "x": 8,
+          "y": 14,
+          "angle": 3.141592653589793,
+          "patrol": [
+            {
+              "x": 11,
+              "y": 12
+            },
+            {
+              "x": 16,
+              "y": 12
+            }
+          ],
+          "patrolIndex": 1,
+          "mode": "search",
+          "awareness": 0,
+          "target": {
+            "x": 8,
+            "y": 14
+          },
+          "searchTimer": 9,
+          "path": [],
+          "lastHeard": 12,
+          "lostSight": 5.840000000000004
+        }
+      ],
+      "projectiles": [],
+      "noises": [
+        {
+          "id": 22,
+          "x": 13.141999999999987,
+          "y": 11,
+          "kind": "footstep",
+          "radius": 1.25,
+          "age": 1.0400000000000003,
+          "lifetime": 1.25,
+          "heard": [
+            "rook",
+            "keeper",
+            "porter"
+          ]
+        },
+        {
+          "id": 23,
+          "x": 13.881999999999985,
+          "y": 11,
+          "kind": "footstep",
+          "radius": 1.25,
+          "age": 0.64,
+          "lifetime": 1.25,
+          "heard": [
+            "rook",
+            "keeper",
+            "porter"
+          ]
+        },
+        {
+          "id": 24,
+          "x": 14.621999999999984,
+          "y": 11,
+          "kind": "footstep",
+          "radius": 1.25,
+          "age": 0.24000000000000002,
+          "lifetime": 1.25,
+          "heard": [
+            "rook",
+            "keeper",
+            "porter"
+          ]
+        }
+      ],
+      "stats": {
+        "distance": 16.992000000000008,
+        "footsteps": 23,
+        "stonesThrown": 1,
+        "lightsToggled": 0,
+        "alerts": 0,
+        "timeInLight": 2.7200000000000015,
+        "maxExposure": 17.6,
+        "investigations": 1,
+        "commands": 7,
+        "archiveCollected": false,
+        "pickupTime": null,
+        "exitTime": null
+      },
+      "lastLog": [
+        {
+          "time": 0,
+          "text": "演示使用普通移动与交互，可随时接管同一现场。",
+          "kind": "info"
+        },
+        {
+          "time": 9.919999999999964,
+          "text": "掷出石子，落地声音会沿门洞传播。",
+          "kind": "stone"
+        },
+        {
+          "time": 10.319999999999956,
+          "text": "货院守卫听到落石，正在查探声音来源。",
+          "kind": "investigate"
+        }
+      ]
+    },
+    {
+      "file": "assets/directions/stealth-qa/07-archive-collected.png",
+      "coverage": "The infiltrator reached the archive and used ordinary interaction to collect the seal, before returning to the exit.",
+      "width": 1440,
+      "height": 960,
+      "bytes": 1010446,
+      "sha256": "b0586b18358184d2628b8f365c29dbbe9aa1be9f54f67440e9b55569d111703c",
+      "modelUnchangedByDraw": true,
+      "time": 28.44,
+      "mode": "demo",
+      "plan": "shadow",
+      "phase": "playing",
+      "paused": false,
+      "objective": true,
+      "stones": 3,
+      "visibility": 0.085,
+      "player": {
+        "x": 21,
+        "y": 3,
+        "angle": -1.5707963267948966,
+        "stance": "crouch",
+        "motionStance": "crouch",
+        "moving": false,
+        "noise": 0,
+        "exposure": 6.002559413591511,
+        "path": [],
+        "destination": {
+          "x": 21,
+          "y": 3
+        },
+        "stepDistance": 0.6799999999997628
+      },
+      "lamps": [
+        {
+          "id": "court",
+          "x": 9,
+          "y": 2,
+          "on": true,
+          "radius": 3.8
+        },
+        {
+          "id": "gallery",
+          "x": 12,
+          "y": 7,
+          "on": true,
+          "radius": 7
+        },
+        {
+          "id": "yard",
+          "x": 14,
+          "y": 12,
+          "on": true,
+          "radius": 5.5
+        }
+      ],
+      "guards": [
+        {
+          "id": "rook",
+          "name": "庭院巡夜人",
+          "x": 16.61559999999995,
+          "y": 2,
+          "angle": 0,
+          "patrol": [
+            {
+              "x": 13,
+              "y": 2
+            },
+            {
+              "x": 17,
+              "y": 2
+            }
+          ],
+          "patrolIndex": 1,
+          "mode": "patrol",
+          "awareness": 6.002559413591511,
+          "target": {
+            "x": 17,
+            "y": 2
+          },
+          "searchTimer": 0,
+          "path": [
+            {
+              "x": 17,
+              "y": 2
+            }
+          ],
+          "lastHeard": 0,
+          "lostSight": 0.8800000000000002
+        },
+        {
+          "id": "keeper",
+          "name": "长廊守卫",
+          "x": 11.61559999999995,
+          "y": 6,
+          "angle": 0,
+          "patrol": [
+            {
+              "x": 8,
+              "y": 6
+            },
+            {
+              "x": 16,
+              "y": 6
+            }
+          ],
+          "patrolIndex": 1,
+          "mode": "patrol",
+          "awareness": 0,
+          "target": {
+            "x": 16,
+            "y": 6
+          },
+          "searchTimer": 0,
+          "path": [
+            {
+              "x": 12,
+              "y": 6
+            },
+            {
+              "x": 13,
+              "y": 6
+            },
+            {
+              "x": 14,
+              "y": 6
+            },
+            {
+              "x": 15,
+              "y": 6
+            },
+            {
+              "x": 16,
+              "y": 6
+            }
+          ],
+          "lastHeard": 0,
+          "lostSight": 28.43999999999957
+        },
+        {
+          "id": "porter",
+          "name": "货院守卫",
+          "x": 15.448000000000008,
+          "y": 12,
+          "angle": 3.141592653589793,
+          "patrol": [
+            {
+              "x": 11,
+              "y": 12
+            },
+            {
+              "x": 16,
+              "y": 12
+            }
+          ],
+          "patrolIndex": 0,
+          "mode": "patrol",
+          "awareness": 0,
+          "target": {
+            "x": 11,
+            "y": 12
+          },
+          "searchTimer": 0,
+          "path": [
+            {
+              "x": 15,
+              "y": 12
+            },
+            {
+              "x": 14,
+              "y": 12
+            },
+            {
+              "x": 13,
+              "y": 12
+            },
+            {
+              "x": 12,
+              "y": 12
+            },
+            {
+              "x": 11,
+              "y": 12
+            }
+          ],
+          "lastHeard": 0,
+          "lostSight": 28.43999999999957
+        }
+      ],
+      "projectiles": [],
+      "noises": [
+        {
+          "id": 31,
+          "x": 21,
+          "y": 3.6711999999998977,
+          "kind": "footstep",
+          "radius": 0.24,
+          "age": 0.9600000000000003,
+          "lifetime": 1.25,
+          "heard": [
+            "rook",
+            "keeper",
+            "porter"
+          ]
+        }
+      ],
+      "stats": {
+        "distance": 23.000000000000107,
+        "footsteps": 31,
+        "stonesThrown": 0,
+        "lightsToggled": 0,
+        "alerts": 0,
+        "timeInLight": 5.040000000000004,
+        "maxExposure": 14.802559413591519,
+        "investigations": 0,
+        "commands": 8,
+        "archiveCollected": true,
+        "pickupTime": 28.43999999999957,
+        "exitTime": null
+      },
+      "lastLog": [
+        {
+          "time": 0,
+          "text": "演示使用普通移动与交互，可随时接管同一现场。",
+          "kind": "info"
+        },
+        {
+          "time": 28.43999999999957,
+          "text": "档案封印已取得。带它返回西侧出口。",
+          "kind": "objective"
+        }
+      ]
+    },
+    {
+      "file": "assets/directions/stealth-qa/08-seal-returned-victory.png",
+      "coverage": "Ordinary travel back to the west exit and ordinary interaction completed this run.",
+      "width": 1440,
+      "height": 960,
+      "bytes": 1077791,
+      "sha256": "4d1a9727db44ec3b434ab3da57ebadbacad3d8052036f5c58f5e05444dd5fed4",
+      "modelUnchangedByDraw": true,
+      "time": 60.36,
+      "mode": "demo",
+      "plan": "shadow",
+      "phase": "won",
+      "paused": false,
+      "objective": true,
+      "stones": 3,
+      "visibility": 0.085,
+      "player": {
+        "x": 3,
+        "y": 8,
+        "angle": 1.5707963267948966,
+        "stance": "crouch",
+        "motionStance": "crouch",
+        "moving": false,
+        "noise": 0,
+        "exposure": 0,
+        "path": [],
+        "destination": {
+          "x": 3,
+          "y": 8
+        },
+        "stepDistance": 0.6399999999995238
+      },
+      "lamps": [
+        {
+          "id": "court",
+          "x": 9,
+          "y": 2,
+          "on": true,
+          "radius": 3.8
+        },
+        {
+          "id": "gallery",
+          "x": 12,
+          "y": 7,
+          "on": true,
+          "radius": 7
+        },
+        {
+          "id": "yard",
+          "x": 14,
+          "y": 12,
+          "on": true,
+          "radius": 5.5
+        }
+      ],
+      "guards": [
+        {
+          "id": "rook",
+          "name": "庭院巡夜人",
+          "x": 14.628399999999978,
+          "y": 2,
+          "angle": 0,
+          "patrol": [
+            {
+              "x": 13,
+              "y": 2
+            },
+            {
+              "x": 17,
+              "y": 2
+            }
+          ],
+          "patrolIndex": 1,
+          "mode": "patrol",
+          "awareness": 0,
+          "target": {
+            "x": 17,
+            "y": 2
+          },
+          "searchTimer": 0,
+          "path": [
+            {
+              "x": 15,
+              "y": 2
+            },
+            {
+              "x": 16,
+              "y": 2
+            },
+            {
+              "x": 17,
+              "y": 2
+            }
+          ],
+          "lastHeard": 0,
+          "lostSight": 19.03999999999977
+        },
+        {
+          "id": "keeper",
+          "name": "长廊守卫",
+          "x": 14.399200000000022,
+          "y": 6,
+          "angle": 3.141592653589793,
+          "patrol": [
+            {
+              "x": 8,
+              "y": 6
+            },
+            {
+              "x": 16,
+              "y": 6
+            }
+          ],
+          "patrolIndex": 0,
+          "mode": "patrol",
+          "awareness": 0,
+          "target": {
+            "x": 8,
+            "y": 6
+          },
+          "searchTimer": 0,
+          "path": [
+            {
+              "x": 14,
+              "y": 6
+            },
+            {
+              "x": 13,
+              "y": 6
+            },
+            {
+              "x": 12,
+              "y": 6
+            },
+            {
+              "x": 11,
+              "y": 6
+            },
+            {
+              "x": 10,
+              "y": 6
+            },
+            {
+              "x": 9,
+              "y": 6
+            },
+            {
+              "x": 8,
+              "y": 6
+            }
+          ],
+          "lastHeard": 0,
+          "lostSight": 60.31999999999889
+        },
+        {
+          "id": "porter",
+          "name": "货院守卫",
+          "x": 13.543600000000033,
+          "y": 12,
+          "angle": 3.141592653589793,
+          "patrol": [
+            {
+              "x": 11,
+              "y": 12
+            },
+            {
+              "x": 16,
+              "y": 12
+            }
+          ],
+          "patrolIndex": 0,
+          "mode": "patrol",
+          "awareness": 0,
+          "target": {
+            "x": 11,
+            "y": 12
+          },
+          "searchTimer": 0,
+          "path": [
+            {
+              "x": 13,
+              "y": 12
+            },
+            {
+              "x": 12,
+              "y": 12
+            },
+            {
+              "x": 11,
+              "y": 12
+            }
+          ],
+          "lastHeard": 0,
+          "lostSight": 60.31999999999889
+        }
+      ],
+      "projectiles": [],
+      "noises": [
+        {
+          "id": 63,
+          "x": 3,
+          "y": 7.378399999999994,
+          "kind": "footstep",
+          "radius": 0.768,
+          "age": 0.8800000000000002,
+          "lifetime": 1.25,
+          "heard": [
+            "rook",
+            "keeper",
+            "porter"
+          ]
+        }
+      ],
+      "stats": {
+        "distance": 46.000000000001066,
+        "footsteps": 63,
+        "stonesThrown": 0,
+        "lightsToggled": 0,
+        "alerts": 0,
+        "timeInLight": 10.11999999999996,
+        "maxExposure": 14.802559413591519,
+        "investigations": 0,
+        "commands": 15,
+        "archiveCollected": true,
+        "pickupTime": 28.43999999999957,
+        "exitTime": 60.35999999999889
+      },
+      "lastLog": [
+        {
+          "time": 0,
+          "text": "演示使用普通移动与交互，可随时接管同一现场。",
+          "kind": "info"
+        },
+        {
+          "time": 28.43999999999957,
+          "text": "档案封印已取得。带它返回西侧出口。",
+          "kind": "objective"
+        },
+        {
+          "time": 60.35999999999889,
+          "text": "已带着档案封印撤离。",
+          "kind": "win"
+        }
+      ]
+    },
+    {
+      "file": "assets/directions/stealth-qa/09-gallery-left-lit-capture.png",
+      "coverage": "Counterfactual ordinary middle crossing omits the lamp toggle and is caught through accumulated real exposure.",
+      "width": 1440,
+      "height": 960,
+      "bytes": 1070646,
+      "sha256": "0be4a6d2ec86790e55ae46e1bc0ddef3f725dbf81ec2853d5ab467161d227ae1",
+      "modelUnchangedByDraw": true,
+      "time": 53.76,
+      "mode": "manual",
+      "plan": "blackout",
+      "phase": "lost",
+      "paused": false,
+      "objective": true,
+      "stones": 3,
+      "visibility": 0.4282064559237286,
+      "player": {
+        "x": 7.848799999999963,
+        "y": 8,
+        "angle": 3.141592653589793,
+        "stance": "crouch",
+        "motionStance": "crouch",
+        "moving": false,
+        "noise": 0,
+        "exposure": 100,
+        "path": [],
+        "destination": {
+          "x": 7,
+          "y": 8
+        },
+        "stepDistance": 0.11119999999955604
+      },
+      "lamps": [
+        {
+          "id": "court",
+          "x": 9,
+          "y": 2,
+          "on": true,
+          "radius": 3.8
+        },
+        {
+          "id": "gallery",
+          "x": 12,
+          "y": 7,
+          "on": true,
+          "radius": 7
+        },
+        {
+          "id": "yard",
+          "x": 14,
+          "y": 12,
+          "on": true,
+          "radius": 5.5
+        }
+      ],
+      "guards": [
+        {
+          "id": "rook",
+          "name": "庭院巡夜人",
+          "x": 15.923600000000015,
+          "y": 2,
+          "angle": 3.141592653589793,
+          "patrol": [
+            {
+              "x": 13,
+              "y": 2
+            },
+            {
+              "x": 17,
+              "y": 2
+            }
+          ],
+          "patrolIndex": 0,
+          "mode": "patrol",
+          "awareness": 0,
+          "target": {
+            "x": 13,
+            "y": 2
+          },
+          "searchTimer": 0,
+          "path": [
+            {
+              "x": 15,
+              "y": 2
+            },
+            {
+              "x": 14,
+              "y": 2
+            },
+            {
+              "x": 13,
+              "y": 2
+            }
+          ],
+          "lastHeard": 0,
+          "lostSight": 17.559999999999803
+        },
+        {
+          "id": "keeper",
+          "name": "长廊守卫",
+          "x": 9.480000000000004,
+          "y": 8,
+          "angle": 3.141592653589793,
+          "patrol": [
+            {
+              "x": 8,
+              "y": 6
+            },
+            {
+              "x": 16,
+              "y": 6
+            }
+          ],
+          "patrolIndex": 1,
+          "mode": "chase",
+          "awareness": 100,
+          "target": {
+            "x": 8.471999999999962,
+            "y": 8
+          },
+          "searchTimer": 7.480000000000021,
+          "path": [
+            {
+              "x": 9,
+              "y": 8
+            },
+            {
+              "x": 8,
+              "y": 8
+            }
+          ],
+          "lastHeard": 0,
+          "lostSight": 0
+        },
+        {
+          "id": "porter",
+          "name": "货院守卫",
+          "x": 13.92559999999996,
+          "y": 12,
+          "angle": 0,
+          "patrol": [
+            {
+              "x": 11,
+              "y": 12
+            },
+            {
+              "x": 16,
+              "y": 12
+            }
+          ],
+          "patrolIndex": 1,
+          "mode": "patrol",
+          "awareness": 0,
+          "target": {
+            "x": 16,
+            "y": 12
+          },
+          "searchTimer": 0,
+          "path": [
+            {
+              "x": 14,
+              "y": 12
+            },
+            {
+              "x": 15,
+              "y": 12
+            },
+            {
+              "x": 16,
+              "y": 12
+            }
+          ],
+          "lastHeard": 0,
+          "lostSight": 53.71999999999903
+        }
+      ],
+      "projectiles": [],
+      "noises": [
+        {
+          "id": 56,
+          "x": 8.668799999999962,
+          "y": 8,
+          "kind": "footstep",
+          "radius": 0.24,
+          "age": 1.0400000000000003,
+          "lifetime": 1.25,
+          "heard": [
+            "rook",
+            "porter"
+          ]
+        },
+        {
+          "id": 57,
+          "x": 7.947199999999963,
+          "y": 8,
+          "kind": "footstep",
+          "radius": 0.24,
+          "age": 0.16,
+          "lifetime": 1.25,
+          "heard": [
+            "rook",
+            "porter"
+          ]
+        }
+      ],
+      "stats": {
+        "distance": 41.15120000000086,
+        "footsteps": 57,
+        "stonesThrown": 0,
+        "lightsToggled": 0,
+        "alerts": 2,
+        "timeInLight": 24.039999999999665,
+        "maxExposure": 100,
+        "investigations": 0,
+        "commands": 12,
+        "archiveCollected": true,
+        "pickupTime": 28.07999999999958,
+        "exitTime": null
+      },
+      "lastLog": [
+        {
+          "time": 0,
+          "text": "取得东北侧档案封印，再返回西侧出口。",
+          "kind": "info"
+        },
+        {
+          "time": 28.07999999999958,
+          "text": "档案封印已取得。带它返回西侧出口。",
+          "kind": "objective"
+        },
+        {
+          "time": 48.399999999999146,
+          "text": "长廊守卫确认了人影，正在追捕！",
+          "kind": "alert"
+        },
+        {
+          "time": 52.639999999999056,
+          "text": "长廊守卫确认了人影，正在追捕！",
+          "kind": "alert"
+        },
+        {
+          "time": 53.75999999999903,
+          "text": "暴露持续累积，守卫截住了你。调整路线后再试。",
+          "kind": "loss"
+        }
+      ]
+    }
+  ]
+}

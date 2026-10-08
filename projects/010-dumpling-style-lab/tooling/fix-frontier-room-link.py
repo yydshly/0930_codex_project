@@ -1,0 +1,19 @@
+from pathlib import Path
+P=Path(__file__).resolve().parents[1];f=P/'web/showcase-frontier-room.js';s=f.read_text(encoding='utf-8')
+old="if(query.has('room')&&!s.room)s.room=query.get('room').toUpperCase();";assert old in s;s=s.replace(old,"if(query.has('room')&&query.get('room').toUpperCase()!==s.room)s={...freshFrontier('assembly'),name:s.name,room:query.get('room').toUpperCase()};")
+old="if(session?.room&&session?.token){";assert old in s;s=s.replace(old,"if(session?.room&&session?.token&&(!query.has('room')||session.room===query.get('room').toUpperCase())){")
+f.write_text(s,encoding='utf-8')
+f=P/'tooling/check-frontier-lifecycle.mjs';s=f.read_text(encoding='utf-8');needle="const parameter=()=>";assert needle in s;s=s.replace(needle,"""// An incoming public room link must supersede an unrelated saved session.
+location.search='?room=NEW123&qa=1';sessionStorage.setItem('dumpling-frontier-room-session-v1-qa',JSON.stringify({room:'OLD123',token:'old-private-token',name:'旧玩家'}));
+const roomHost=new FrontierNode(),roomGame=await createFrontier({host:roomHost,input:{},id:'assembly',saved:{...freshFrontier('assembly'),room:'OLD123',won:true,phase:'won'}}),roomPanel=roomHost.afterNodes[0],extra=roomPanel.querySelector('.frontier-extra');
+check('public room link overrides old room',roomGame.getState().room==='NEW123');check('new room does not inherit completion',!roomGame.getState().won);check('stale private token not used',roomGame.getState().token==='');
+let requestBody;globalThis.fetch=async(url,options)=>{requestBody=JSON.parse(options.body);return {ok:true,json:async()=>({token:'new-isolated-test-token',view:{room:'NEW123',self:'player1',host:'player1',players:[{id:'player1',name:'新玩家',station:'meeting',alive:true}],phase:'lobby',alive:true,role:null,tasks:[],patterns:{},progress:0,goal:0,log:[]}})}};
+roomGame.onStart();extra.querySelectorAll('[data-command]').find(b=>b.dataset.command==='join').click();await new Promise(resolve=>setTimeout(resolve,0));check('native join sends correct room',requestBody?.action==='join'&&requestBody.room==='NEW123');check('private token stays out of shared save',roomGame.getState().token==='');roomGame.dispose();location.search='?qa=1';
+"""+needle);f.write_text(s,encoding='utf-8')
+f=P/'tooling/finalize-frontier-package.py';s=f.read_text(encoding='utf-8');old="with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:\n tasks={k:pool.submit(run,v) for k,v in commands.items()};report={k:v.result() for k,v in tasks.items()}";assert old in s;s=s.replace(old,"if '--reuse-unaffected-regressions' in sys.argv:\n previous=json.loads((P/'notes/frontier-package-check-20261004.json').read_text(encoding='utf-8'));report={k:previous[k] for k in commands if k!='frontier_lifecycle'};report['frontier_lifecycle']=run(commands['frontier_lifecycle'])\nelse:\n with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:\n  tasks={k:pool.submit(run,v) for k,v in commands.items()};report={k:v.result() for k,v in tasks.items()}");f.write_text(s,encoding='utf-8')
+f=P/'tooling/record-frontier-review.py';s=f.read_text(encoding='utf-8');s=s.replace("f.write_text(header+old,encoding='utf-8')", "f.write_text(header.replace('118',str(report['new_checks']))+old,encoding='utf-8')")
+# Rerunning documentation recording should replace only the current frontier section.
+s=s.replace("old=f.read_text(encoding='utf-8');old=old.replace", "old=f.read_text(encoding='utf-8');old=old[old.index('2026-10-04 上一批新增 **抓钩'):] if old.startswith('2026-10-04 本轮新增 **时间操控') else old;old=old.replace")
+s=s.replace("old=f.read_text(encoding='utf-8');f.write_text('''# 游戏形态", "old=f.read_text(encoding='utf-8');old=old.split('以下保留上一批补全记录。\\n\\n',1)[-1] if '以下保留上一批补全记录。' in old else old;f.write_text('''# 游戏形态")
+s=s.replace("118 项新增逻辑", "123 项新增逻辑");f.write_text(s,encoding='utf-8')
+print('Fixed public room link / session selection; added five client checks.')

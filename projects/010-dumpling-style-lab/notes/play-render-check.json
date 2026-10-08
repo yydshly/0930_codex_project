@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-02",
+  "scope": "Local technical and presentation checks only; no human emotion or retention conclusion. Remote original isolated only during QA.",
+  "checks": [
+    {
+      "name": "送果后莓丛记得行动结果",
+      "passed": true
+    },
+    {
+      "name": "照顾和随行状态一致",
+      "passed": true
+    },
+    {
+      "name": "没有脚本运行错误",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "failedResources": [
+    {
+      "url": "http://127.0.0.1:8962/assets/play-wonder.webp",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8962/assets/play-cozy.webp",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8962/assets/play-playful.webp",
+      "status": 404
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "date": "2026-10-02T14:39:30.364Z",
+  "method": "CUA browser input, rendered DOM observations and actual screenshots. Independent ?qa=1 saves were used for destructive or replay checks; the user save was only refreshed.",
+  "mobile": [
+    {
+      "id": "detective",
+      "error": null,
+      "minimumButtonHeight": 44,
+      "minimumButtonWidth": 44,
+      "pageWidth": 375,
+      "title": "旧城失物局 · 未放映的那一晚",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    {
+      "id": "wuxia",
+      "error": null,
+      "minimumButtonHeight": 44,
+      "minimumButtonWidth": 44,
+      "pageWidth": 375,
+      "title": "山间小驿站",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    {
+      "id": "ecology",
+      "error": null,
+      "minimumButtonHeight": 44,
+      "minimumButtonWidth": 44,
+      "pageWidth": 375,
+      "title": "小小生态岛 · 第2年自然观察",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    {
+      "id": "wasteland",
+      "error": null,
+      "minimumButtonHeight": 44,
+      "minimumButtonWidth": 44,
+      "pageWidth": 375,
+      "title": "最后一座温室 · 风暴求援",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    {
+      "id": "dream",
+      "error": null,
+      "minimumButtonHeight": 44,
+      "minimumButtonWidth": 44,
+      "pageWidth": 375,
+      "title": "记忆渡船",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    {
+      "id": "arcade",
+      "error": null,
+      "minimumButtonHeight": 44,
+      "minimumButtonWidth": 44,
+      "pageWidth": 375,
+      "title": "屋顶快递赛",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    {
+      "id": "islands",
+      "error": null,
+      "minimumButtonHeight": 44,
+      "minimumButtonWidth": 44,
+      "pageWidth": 375,
+      "title": "浮岛探险社 · 云塔岛 · 归航灯",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    {
+      "id": "movers",
+      "error": null,
+      "minimumButtonHeight": 44,
+      "minimumButtonWidth": 44,
+      "pageWidth": 390,
+      "title": "搬家日MOVING DAY",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    {
+      "id": "inn",
+      "error": null,
+      "minimumButtonHeight": 44,
+      "minimumButtonWidth": 44,
+      "pageWidth": 375,
+      "title": "小旅店 · 留下的信",
+      "viewport": [
+        390,
+        844
+      ]
+    }
+  ],
+  "actualPlay": [
+    {
+      "game": "detective",
+      "coverage": "Completed K22: gathered four clues, heard Lin and Ji, compared both relationships; verified old K17 answer failed and Ji/withdrawal answer completed. Both closed cases remain in the dossier."
+    },
+    {
+      "game": "inn",
+      "coverage": "Completed days 5–7 and entered second chapter; completed days 8–10 with listen/encourage/listen; observed three distinct letters and nine souvenirs. Reload and revisit retained letters; left day eight available for another choice."
+    },
+    {
+      "game": "islands",
+      "coverage": "Entered actual 3D cloud tower from completed first chapter; read note, walked to wind platform, opened real right bridge, rotated star ring twice, lit beacon, returned to camp and archived second chapter. Revisit and reload retain lit beacon and bridges."
+    },
+    {
+      "game": "wasteland",
+      "coverage": "Played storm shelter through three settlements. Aid immediately changed water/power/parts 5/5/2 to 3/6/1; completed with inventory 1/1/1 and people/crops 4/5 and 5/5. Radio referral not fully browser-played."
+    },
+    {
+      "game": "ecology",
+      "coverage": "Started second research year from completed three-season save, retained vegetation/records and chose wetland research. Full three research conditions covered by rule checks."
+    },
+    {
+      "game": "wuxia",
+      "coverage": "Used task hint to walk along actual road to bridge and observed investigation feedback. Full rescue, aftermath and retained replay covered by rule checks."
+    },
+    {
+      "game": "dream",
+      "coverage": "Loaded saved puzzle state and checked current goal and controls. Both endings and retained revisit covered by rule checks."
+    },
+    {
+      "game": "arcade",
+      "coverage": "Restarted old-city course, enabled automatic horizontal movement, pressed jump and observed fall/checkpoint stop, checked pause overlay. Full three zero-fall course paths and buffered landing covered by rule checks, not complete browser runs."
+    },
+    {
+      "game": "movers",
+      "coverage": "Fixed actual records-button click-through; checked disabled revisit during unfinished order. Assisted real delivery of photo, sofa and fragile vase; completed third order, opened records and selected first completed commission. Three records retained."
+    }
+  ],
+  "sharedChecks": [
+    "All nine games load at 390×844 without a game-loading error or body horizontal overflow. Visible primary controls measured minimum width and height 44 CSS px after correction.",
+    "Restart confirmation defaults focus to Keep Progress; cancelling preserves inn progress and letters. Escape closes record modal.",
+    "The normal user Moving Day save retained 2/3 delivered objects before and after refresh.",
+    "Temporary mobile viewport override reset after testing."
+  ],
+  "desktopViewports": [
+    [
+      1280,
+      720
+    ],
+    [
+      1280,
+      900
+    ]
+  ],
+  "consoleErrors": [],
+  "knownConsoleWarning": "Existing bundled Three.js global-build deprecation warning; no engine migration in this round.",
+  "screenshots": [
+    "inn-letters.png",
+    "inn-mobile-letters.png",
+    "islands-result.png",
+    "islands-tower.png",
+    "wasteland-shelter.png",
+    "wasteland-mobile.png",
+    "detective-second-case.png",
+    "arcade-controls.png",
+    "movers-records.png",
+    "inn-second-chapter.png"
+  ],
+  "notVerified": [
+    "Human enjoyment, willingness to continue, retention or commercial outcomes",
+    "Frame rate on target devices",
+    "Cloud saving or cross-browser progress synchronization"
+  ]
+}

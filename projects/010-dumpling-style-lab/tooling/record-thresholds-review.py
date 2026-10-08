@@ -1,0 +1,8 @@
+from pathlib import Path
+import json,hashlib
+P=Path(__file__).resolve().parents[1];sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+frames=json.loads((P/'notes/thresholds-production-frames-20261004.json').read_text(encoding='utf-8'))['frames']
+observations={'inverter':'上、下石台、危险尖刺、星印与实际人物可辨；角色轮廓补光；倒立姿态脚贴天花板，轨迹显示实际重力路线。','phasewalk':'白昼与夜层背景、实体台面和幽影层区分；过程人物位于第三块实际台面，完成时位于夜层右岸。','transit':'另一端窗口从生产场景取样；胶囊真实下落和侧向飞出，速度读数保持，轨迹贯穿入口出口；高台结果可辨。','cantor':'三段音环、频率与保持弧可辨；灯船在实际匹配高度，过程和完成的已收集环状态不同。'}
+review={'production_visual_review':True,'browser_acceptance_complete':False,'review_method':'Viewed 12 production Skia frames in initial/progress/complete contact sheets and individual gravity initial scene. No browser screenshots or actual device test.','frames':[dict(v,sha256=sha(P/v['file']),review_observation=observations[v['id']]) for v in frames],'fixes':['背景暗角移到文字与角色之前，标题和状态栏保持对比度。','角色增加光晕和轮廓，保留统一姿势比例。','立柱按长轴旋转石台素材，避免横向纹理拉伸。','双世界非实体台显示可辨幽影，按住预览提高透明度。','传送之后不使用瞬移前的坐标执行跨越平台碰撞。'],'verified':['四种正常操作通关，不注入胜利状态。','58 条规则与 PCM 音高检查、50 条生产控件和音频生命周期检查。','十二帧开始、过程、完成的实际绘图，暂停绘制不改变存档。','老目录与受保护文件一致；生产源码、资产和打包内容哈希一致。'],'not_verified':['真实浏览器窄屏、全屏和触摸','真实浏览器刷新存档与无障碍树','真实设备麦克风权限、音高检测与环境噪声体验','真实声音输出、浏览器帧率和延迟'],'browser_blocker':'cua.getState initialization failed: windows sandbox helper_unknown_error; setup refresh had errors; kernel exited code 1. No alternate browser automation used.','scope':'四段原创可玩演示；二维门面惯性与连续声音控制的明确范围，不代表完整商业游戏。'}
+(P/'notes/thresholds-quality-review-20261004.json').write_text(json.dumps(review,ensure_ascii=False,indent=2),encoding='utf-8')
+print('Recorded visual review: 12 frames')

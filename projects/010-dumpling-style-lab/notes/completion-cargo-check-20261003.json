@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "url": "http://127.0.0.1:8962/showcase.html?play=cargo&qa=1#play",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "checks": [
+    "Read-only BFS proves all three original layouts can reach the exit with push-only rules",
+    "Held direction cannot push a crate into masonry or pass through it",
+    "Walking away does not pull crates; real undo restores the move",
+    "Clicked reachable floor follows a real route; a direct wall blocks the porter",
+    "Adjacent crate click pushes exactly one square; undo and per-warehouse restart restore original placement",
+    "Held movement uses a deliberate initial delay and bounded repeat rate",
+    "Boxes open the exit, but the warehouse completes only after walking onto it",
+    "Moving a crate off its plate locks the exit; a real undo restores the box and reopens it",
+    "Pause freezes input; saved player, boxes, undo stack and warehouse restore on reload",
+    "A neighboring crate blocks a push; crates cannot overlap or push each other in a chain",
+    "All three exits complete through real keyboard controls and visible next-warehouse actions",
+    "Pause freezes input; saved player, boxes, undo stack and warehouse restore on reload",
+    "Completed save restores; replay resets the puzzle while retaining the completion record",
+    "QA storage is isolated; no runtime exceptions or missing assets"
+  ],
+  "results": {
+    "solvers": [
+      {
+        "warehouse": 1,
+        "name": "靠岸入库",
+        "shortestMoves": 9,
+        "visitedStates": 320
+      },
+      {
+        "warehouse": 2,
+        "name": "双灯联锁",
+        "shortestMoves": 18,
+        "visitedStates": 9393
+      },
+      {
+        "warehouse": 3,
+        "name": "潮汐总仓",
+        "shortestMoves": 29,
+        "visitedStates": 126318
+      }
+    ],
+    "warehouse1": {
+      "moves": 9,
+      "pushes": 2
+    },
+    "warehouse2": {
+      "moves": 18,
+      "pushes": 6
+    },
+    "warehouse3": {
+      "moves": 29,
+      "pushes": 9
+    },
+    "finish": {
+      "score": 1500,
+      "totalMoves": 74,
+      "totalPushes": 19,
+      "elapsed": 16.029400000000056
+    }
+  },
+  "errors": [],
+  "missing": []
+}

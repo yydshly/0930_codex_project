@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-05",
+  "status": "prototype_visual_and_delivery_review_passed",
+  "sample": "深岩堡垒 / Deepstone Keep",
+  "purpose": "第六个原创方向：地下城布局与角色附身相互连接，比较管理者与堡垒居民两种参与方式。",
+  "reference": {
+    "urls": ["https://keeperfx.net/", "https://keeperfx.net/wiki/new-game-controls-and-commands"],
+    "read": "2026-10-05",
+    "inference": "从地下城管理、角色调度与附身控制思路提取原创短样例；没有复制上游源码、素材或原游戏数据。"
+  },
+  "implemented": [
+    "22 × 14 地块共享地图，俯视经营与守卫附身使用同一状态。",
+    "两名矿工沿真实路径抵达岩壁，再经过 2.4 秒开凿；金矿挖通后才产出金币。",
+    "机关工坊、训练室、休养圣所和金库；布局与连通情况影响工作、训练、恢复与容量。",
+    "工坊消耗金币制造有上限的机关储备；建设陷阱同时消耗预算和实际构件。",
+    "守卫招募、巡守/训练/休养岗位切换、真实寻路和三轮入侵防守。",
+    "附身选定守卫，移动、转向和攻击；岩层碰撞、攻击距离、朝向、视线与冷却均影响实际结果。",
+    "完整示范、接通训练场与空白开凿三种开局。",
+    "地图拖绘、键盘建造、多指控件、第一人称拖动转向、全屏舞台操作、窄屏附身自动定位、暂离取消输入并暂停、独立保存恢复。"
+  ],
+  "visual_review": {
+    "status": "seven_production_frames_and_real_browser_views_reviewed",
+    "method": "实际模型与生产 Canvas2D 俯视渲染、纹理射线第一人称投影，经 Skia 输出 1440 × 900；不等同于浏览器截图。",
+    "directory": "assets/directions/dungeon-qa/",
+    "frames": ["01-dungeon-ready.png", "02-production-and-training.png", "03-invaders-and-defense.png", "04-inside-the-same-defense.png", "05-first-person-walk.png", "06-dungeon-secured.png", "07-workers-dig-the-connection.png"],
+    "art": "内置 ImageGen 制作原创岩层、房间和两种观看方式的透明角色图集；路径、建造标记与射线投影由真实局内状态驱动。",
+    "adjustments": "第一人称采用 720×450 纹理缓冲、雕刻石墙与更清楚的距离明暗；按实际图集重排角色方向。内嵌模式移除重复标题/生命/操作文本，经营状态移到地图上方以避开全屏操作条。",
+    "browser_screenshots": ["assets/directions/dungeon-browser/01-first-person-fullscreen.jpg", "assets/directions/dungeon-browser/02-management-browser.jpg", "assets/directions/dungeon-browser/03-responsive-first-person.jpg"],
+    "limits": "俯视为二维，第一人称为 2.5D 射线投影；尚无真正三维场景、垂直楼层或高自由度三维相机。"
+  },
+  "evidence": {
+    "rules": "notes/direction-dungeon-rules-20261005.json",
+    "callbacks": "notes/direction-dungeon-controller-20261005.json",
+    "frames": "notes/direction-dungeon-frames-20261005.json",
+    "package": "notes/direction-dungeon-package-20261005.json",
+    "browser": "notes/direction-dungeon-browser-20261005.json",
+    "generation": "assets/directions/dungeon-generation-20261005.json",
+    "rules_passed": 24,
+    "callbacks_passed": 23,
+    "prior_direction_checks_passed": 137,
+    "site_tests_passed": 6,
+    "built_demos": 19,
+    "package_checks_passed": 514,
+    "source_build_http_resources_matched": 16
+  },
+  "browser_acceptance": {
+    "status": "desktop_and_responsive_checks_passed",
+    "verified": "实际浏览器验证暂停、经营/附身切换、全屏舞台按钮、P返回、引导挖掘完成、真实刷新恢复、390像素无横向溢出与自动定位。三张真实截图单独保存；不把Skia生产帧视为浏览器证据。",
+    "remaining": "真手机多指、旋转与移动浏览器全屏、持续性能和跨设备兼容仍待实机验证；玩家情绪与产品成品验收尚未完成。",
+    "report": "notes/direction-dungeon-browser-20261005.json"
+  },
+  "preservation": {
+    "baseline": "notes/dungeon-preservation-before-20261005.json",
+    "protected_prior_files": 2579,
+    "protected_hash_audit": "all_2579_matched_in_final_package_check",
+    "save_key": "world-play-direction-dungeon-v1",
+    "original_forms": 107,
+    "original_entrances": 116,
+    "new_direction_samples": 6
+  },
+  "scope": "原创本地短样例：地下城建设与三轮防守，俯视经营和2.5D角色附身。没有 KeeperFX 移植、在线多人、真正三维场景、长期战役或社区服务。玩家情绪、继续意愿与商业成品质量仍需真实用户验证。",
+  "next_directions": ["星际船长与自由职业", "环境潜行与多种解法", "生态恢复与环境连锁变化"]
+}

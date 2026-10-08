@@ -1,0 +1,85 @@
+{
+  "method": "Actual production Canvas2D renderer and park simulation via Skia. Not browser screenshots; CSS, touch and fullscreen acceptance remain separate.",
+  "frames": [
+    {
+      "name": "ready",
+      "file": "assets/directions/park-qa/ready.png",
+      "phase": "ready",
+      "time": 0,
+      "stats": {
+        "entered": 0,
+        "departed": 0,
+        "served": 0,
+        "rides": 0,
+        "earned": 0,
+        "abandoned": 0,
+        "stranded": 0,
+        "satisfactionTotal": 0
+      }
+    },
+    {
+      "name": "open-day",
+      "file": "assets/directions/park-qa/open-day.png",
+      "phase": "open",
+      "time": 44.99999999999958,
+      "stats": {
+        "entered": 17,
+        "departed": 0,
+        "served": 10,
+        "rides": 9,
+        "earned": 76,
+        "abandoned": 0,
+        "stranded": 0,
+        "satisfactionTotal": 0
+      }
+    },
+    {
+      "name": "finished",
+      "file": "assets/directions/park-qa/finished.png",
+      "phase": "report",
+      "time": 142.54999999999816,
+      "stats": {
+        "entered": 38,
+        "departed": 38,
+        "served": 97,
+        "rides": 70,
+        "earned": 682,
+        "abandoned": 0,
+        "stranded": 0,
+        "satisfactionTotal": 3623.9799999999973
+      }
+    },
+    {
+      "name": "disconnected",
+      "file": "assets/directions/park-qa/disconnected.png",
+      "phase": "open",
+      "time": 25.00000000000022,
+      "stats": {
+        "entered": 10,
+        "departed": 0,
+        "served": 5,
+        "rides": 4,
+        "earned": 28,
+        "abandoned": 0,
+        "stranded": 0,
+        "satisfactionTotal": 0
+      }
+    },
+    {
+      "name": "reconnected",
+      "file": "assets/directions/park-qa/reconnected.png",
+      "phase": "open",
+      "time": 54.99999999999901,
+      "stats": {
+        "entered": 21,
+        "departed": 0,
+        "served": 21,
+        "rides": 14,
+        "earned": 112,
+        "abandoned": 0,
+        "stranded": 0,
+        "satisfactionTotal": 0
+      }
+    }
+  ]
+}

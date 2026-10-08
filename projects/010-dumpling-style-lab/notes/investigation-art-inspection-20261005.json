@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-05",
+  "mode": "read-only pixel size, source-byte identity and visually assigned normalized native hotspot mapping",
+  "assets": [
+    {
+      "key": "station",
+      "file": "web/assets/directions/investigation/station.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "source_identical": true,
+      "sha256": "b60aac4533b52e7f28455441cb569d666445c994131f97c7dba00b81909e7781"
+    },
+    {
+      "key": "office",
+      "file": "web/assets/directions/investigation/office.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "source_identical": true,
+      "sha256": "5ea72986e9bd5168a7446c9afe932fc558c18e77d97213bafddc1fb92599af8c"
+    },
+    {
+      "key": "quay",
+      "file": "web/assets/directions/investigation/quay.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "source_identical": true,
+      "sha256": "d270a86bb05c245a293ff430f50dc2f03d668c7b70964c82a385bc8b79d44ed9"
+    }
+  ],
+  "hotspots": {
+    "station": {
+      "clock": [
+        0.65,
+        0.155
+      ],
+      "timetable": [
+        0.66,
+        0.35
+      ],
+      "bag": [
+        0.75,
+        0.7
+      ]
+    },
+    "office": {
+      "dispatch": [
+        0.48,
+        0.6
+      ],
+      "note": [
+        0.89,
+        0.4
+      ],
+      "key": [
+        0.2,
+        0.84
+      ]
+    },
+    "quay": {
+      "tide": [
+        0.25,
+        0.65
+      ],
+      "receipt": [
+        0.57,
+        0.63
+      ],
+      "letter": [
+        0.83,
+        0.76
+      ]
+    }
+  },
+  "notes": [
+    "Generated illustrated records are not relied on for exact legible words, clock hands or clue content; each inspected object presents the authoritative original Chinese clue text in the native casebook.",
+    "Hotspots map to the actual image content coordinate system, not its letterboxed container.",
+    "No generated bitmap was resampled, composited or edited by this inspection script."
+  ]
+}

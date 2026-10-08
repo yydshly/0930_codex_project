@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-04",
+  "new_forms": ["bubble-shooter", "mine-deduction"],
+  "catalog": {"forms": 51, "entrances": 60},
+  "art": {
+    "method": "Built-in ImageGen: original glass conservatory, four-symbol glass sphere atlas, underwater ruins, ceramic sonar tile atlas.",
+    "manifest": "assets/game-forms/logic-generation-20261004.json",
+    "raw_png_preserved": true,
+    "runtime_encoding": "WebP at original size, alpha preserved",
+    "production_draw_preview": "assets/game-forms/logic-qa/production-scenes.png"
+  },
+  "verified": {
+    "new_rule_checks": 31,
+    "old_rule_checks": {"world": 56, "precision": 23, "observation": 28, "gesture": 31},
+    "site_tests": 6,
+    "built_demos": 19,
+    "protected_old_files": 2293,
+    "protected_changed": [],
+    "protected_missing": [],
+    "production_render": "Both actual factory draw methods rendered via Skia and visually reviewed; initial and revealed mine states saved. Not browser screenshots.",
+    "factory_pause": "Inactive tick left both production state objects unchanged through the DOM lifecycle double.",
+    "bubble": "Continuous launches clear authored board in six shots; projection agrees with collision landing, hex graph and unsupported drops tested, in-flight save resumes.",
+    "sonar": "192 first-click placements exclude mines in first cell and neighbors; visible hint, numeric chord including wrong flags, zero flood, win/loss and deterministic restore tested.",
+    "localhost_http": "Comparison, standalone entries, modules and all six runtime WebP files return 200."
+  },
+  "not_verified": [
+    "Live browser operation, pointer and keyboard input integration",
+    "390px viewport layout and touch interactions",
+    "Native fullscreen, focus handoff and browser pause overlay",
+    "Browser localStorage reload behavior for the two new forms",
+    "Actual device performance and audio quality"
+  ],
+  "blocker": "CUA Node kernel exits before connection: windows sandbox setup refresh had errors. Default terminal process had the same failure; file work recovered through ordinary approved terminal execution. No shell or external browser automation substituted for CUA.",
+  "acceptance_complete": false,
+  "limits": [
+    "Bubble shooter currently has one 32-ball authored board and a 40-shot budget; it is a short playable form sample.",
+    "Mine deduction is 8x8 with 10 mines; the safe first-click neighborhood is guaranteed, but generated boards are not guaranteed solvable without guessing.",
+    "Hint derives only from visible local numbers and flags; incorrect flags can mislead it and are explicitly explained in the UI.",
+    "Screenshots from older batches and normal browser saves were not replaced."
+  ]
+}

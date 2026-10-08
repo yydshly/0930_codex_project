@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "checks": [
+    "openings have independent state and preserve the intended tunnel difference",
+    "pause freezes workers, production, training and assault state",
+    "invalid map and room requests cannot consume budget or alter tunnels",
+    "the ordinary demo survives three actual AI assault waves without granted kills",
+    "guided excavation requires worker travel and 2.4 seconds at an adjacent face",
+    "mined gold is earned only when the real ore tile is excavated",
+    "duplicate and disconnected dig requests are rejected without duplicate charges",
+    "blank layout requires a physically excavated entry connection before assault",
+    "room construction requires a connected excavated tile and charges its listed cost",
+    "workshop production costs gold, fills a bounded stock and pays nothing once full",
+    "trap building consumes one real workshop component and refuses missing stock",
+    "recruiting costs budget and connected treasury increases the live guard cap",
+    "disconnected training cannot progress and repairing the route enables paid training",
+    "missing jobs and nonexistent actors cannot change the guard roster",
+    "possession keeps the same guard and map; collision limits movement at solid rock",
+    "line of sight follows actual excavated tunnels and is blocked by intact rock",
+    "an undefended connected heart can be lost through ordinary movement and enemy attacks",
+    "possession attack obeys range, facing and a cooldown against normally spawned enemies",
+    "a wounded guard must return to the actual sanctuary before health can recover",
+    "budget exhaustion blocks further hires, construction and digging without overdraft",
+    "paid queued excavations finish at zero budget and unaffordable training remains saveable",
+    "save restoration pauses and deterministically continues pending excavation and combat",
+    "save validation rejects impossible budget, stock, actor positions, identities and wins",
+    "save validation binds mining, paid construction and wave counters to actual world history"
+  ],
+  "failures": [],
+  "method": "Production dungeon simulation using normal excavation, room construction, recruiting, scheduling and possession inputs. Checks cover actual path-dependent operations, gold and trap-stock accounts, three assault waves, collisions, pauses and strict save restoration."
+}

@@ -1,0 +1,935 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-03T12:52:26.263Z",
+  "checks": [
+    "Authored 19-model isometric 3D city loads with three houses, an office, parks, two real broken road segments and no invented traffic",
+    "Real occupied-house and protected-park clicks reject overlapping construction without charging budget",
+    "Clinic, houses and road construction charge exact costs; budget of one denies a road with no cell mutation",
+    "Actual reset restores the original scenario and clears trial placements",
+    "Adding the two road gaps makes actual BFS work routes for all three houses; service requirement still prevents premature completion",
+    "Demolishing a shared road refunds two and breaks two actual work routes; repair restores BFS connectivity and charges three",
+    "Fourth house and clinic create four true road-only cardinal routes to both destinations, each visible vehicle belongs to a real connected house",
+    "Actual renderer time moves authored vehicles on computed routes, including staggered departures",
+    "Pause freezes traffic, and actual reload preserves the built road network, budget, camera and per-vehicle leg/progress",
+    "A rotated 3D view still accepts real lot clicks; removing the central connection cancels all affected traffic and rebuilding restores four routes",
+    "Real UI construction and autonomous traffic complete sixteen destination arrivals and save the completion record",
+    "Actual replay resets the neighborhood while retaining its completion record",
+    "At 390 px a real touchscreen tap builds the correct projected road lot with exact budget and no horizontal page overflow",
+    "QA storage stays independent; no normal save changes, missing models or browser exceptions"
+  ],
+  "result": {
+    "version": 1,
+    "cells": [
+      "park",
+      "grass",
+      "grass",
+      "park",
+      "park",
+      "grass",
+      "grass",
+      "grass",
+      "park",
+      "park",
+      "home",
+      "grass",
+      "grass",
+      "grass",
+      "home",
+      "grass",
+      "work",
+      "park",
+      "grass",
+      "road",
+      "grass",
+      "grass",
+      "grass",
+      "road",
+      "grass",
+      "road",
+      "grass",
+      "road",
+      "road",
+      "road",
+      "road",
+      "road",
+      "road",
+      "road",
+      "road",
+      "road",
+      "grass",
+      "home",
+      "grass",
+      "grass",
+      "grass",
+      "home",
+      "grass",
+      "clinic",
+      "grass",
+      "park",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "park",
+      "park",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "park"
+    ],
+    "budget": 32,
+    "tool": "road",
+    "selected": 33,
+    "elapsed": 27.223399999993905,
+    "trips": 16,
+    "changes": 8,
+    "invalid": 0,
+    "won": true,
+    "phase": "won",
+    "score": 1620,
+    "view": 1,
+    "vehicles": [
+      {
+        "home": 10,
+        "paths": [
+          [
+            19,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            25
+          ],
+          [
+            25,
+            34,
+            33,
+            32,
+            31,
+            30,
+            29,
+            28,
+            19
+          ],
+          [
+            19,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34
+          ],
+          [
+            34,
+            33,
+            32,
+            31,
+            30,
+            29,
+            28,
+            19
+          ]
+        ],
+        "leg": 0,
+        "progress": 3.7999560344827557,
+        "wait": 0,
+        "arrivals": 2
+      },
+      {
+        "home": 14,
+        "paths": [
+          [
+            23,
+            32,
+            33,
+            34,
+            25
+          ],
+          [
+            25,
+            34,
+            33,
+            32,
+            23
+          ],
+          [
+            23,
+            32,
+            33,
+            34
+          ],
+          [
+            34,
+            33,
+            32,
+            23
+          ]
+        ],
+        "leg": 3,
+        "progress": 0,
+        "wait": 0.65,
+        "arrivals": 4
+      },
+      {
+        "home": 37,
+        "paths": [
+          [
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            25
+          ],
+          [
+            25,
+            34,
+            33,
+            32,
+            31,
+            30,
+            29,
+            28
+          ],
+          [
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34
+          ],
+          [
+            34,
+            33,
+            32,
+            31,
+            30,
+            29,
+            28
+          ]
+        ],
+        "leg": 0,
+        "progress": 2.8127405172413744,
+        "wait": 0,
+        "arrivals": 2
+      },
+      {
+        "home": 41,
+        "paths": [
+          [
+            32,
+            33,
+            34,
+            25
+          ],
+          [
+            25,
+            34,
+            33,
+            32
+          ],
+          [
+            32,
+            33,
+            34
+          ],
+          [
+            34,
+            33,
+            32
+          ]
+        ],
+        "leg": 3,
+        "progress": 0.7599844827586159,
+        "wait": 0,
+        "arrivals": 4
+      }
+    ],
+    "replays": 1,
+    "rules": {
+      "cols": 9,
+      "rows": 7,
+      "cost": {
+        "road": 3,
+        "home": 12,
+        "clinic": 18
+      },
+      "refund": {
+        "road": 2,
+        "home": 9,
+        "clinic": 14
+      },
+      "targetHomes": 4,
+      "targetTrips": 16,
+      "startingBudget": 70
+    },
+    "connections": [
+      {
+        "home": 10,
+        "work": true,
+        "service": true,
+        "connected": true
+      },
+      {
+        "home": 14,
+        "work": true,
+        "service": true,
+        "connected": true
+      },
+      {
+        "home": 37,
+        "work": true,
+        "service": true,
+        "connected": true
+      },
+      {
+        "home": 41,
+        "work": true,
+        "service": true,
+        "connected": true
+      }
+    ],
+    "routes": [
+      {
+        "home": 10,
+        "office": [
+          19,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          25
+        ],
+        "clinic": [
+          19,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ]
+      },
+      {
+        "home": 14,
+        "office": [
+          23,
+          32,
+          33,
+          34,
+          25
+        ],
+        "clinic": [
+          23,
+          32,
+          33,
+          34
+        ]
+      },
+      {
+        "home": 37,
+        "office": [
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          25
+        ],
+        "clinic": [
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ]
+      },
+      {
+        "home": 41,
+        "office": [
+          32,
+          33,
+          34,
+          25
+        ],
+        "clinic": [
+          32,
+          33,
+          34
+        ]
+      }
+    ],
+    "connected": 4,
+    "homes": 4,
+    "vehiclePositions": [
+      {
+        "x": -0.31006814655172876,
+        "y": 0.18,
+        "z": 0,
+        "angle": 1.5707963267948966,
+        "home": 10
+      },
+      {
+        "x": 4.65,
+        "y": 0.18,
+        "z": 0,
+        "angle": -1.5707963267948966,
+        "home": 14
+      },
+      {
+        "x": -0.2902521982758697,
+        "y": 0.18,
+        "z": 0,
+        "angle": 1.5707963267948966,
+        "home": 37
+      },
+      {
+        "x": 3.4720240517241456,
+        "y": 0.18,
+        "z": 0,
+        "angle": -1.5707963267948966,
+        "home": 41
+      }
+    ],
+    "cellsScreen": [
+      {
+        "x": 771.7911487505127,
+        "z": 0,
+        "index": 0,
+        "type": "park",
+        "y": 297.11457664234854,
+        "visible": true
+      },
+      {
+        "x": 746.5632124245335,
+        "z": 0,
+        "index": 1,
+        "type": "grass",
+        "y": 318.4353777059969,
+        "visible": true
+      },
+      {
+        "x": 719.8980031700684,
+        "z": 0,
+        "index": 2,
+        "type": "grass",
+        "y": 340.970856410593,
+        "visible": true
+      },
+      {
+        "x": 691.6690942746479,
+        "z": 0,
+        "index": 3,
+        "type": "park",
+        "y": 364.82785933886356,
+        "visible": true
+      },
+      {
+        "x": 661.7347833112736,
+        "z": 0,
+        "index": 4,
+        "type": "park",
+        "y": 390.12614298683155,
+        "visible": true
+      },
+      {
+        "x": 629.9357131351517,
+        "z": 0,
+        "index": 5,
+        "type": "grass",
+        "y": 417.0003843228508,
+        "visible": true
+      },
+      {
+        "x": 596.0920339866891,
+        "z": 0,
+        "index": 6,
+        "type": "grass",
+        "y": 445.6025791699677,
+        "visible": true
+      },
+      {
+        "x": 560,
+        "z": 0,
+        "index": 7,
+        "type": "grass",
+        "y": 476.1049185872513,
+        "visible": true
+      },
+      {
+        "x": 521.4278640879623,
+        "z": 0,
+        "index": 8,
+        "type": "park",
+        "y": 508.7032582117923,
+        "visible": true
+      },
+      {
+        "x": 736.7712256662246,
+        "z": 1,
+        "index": 9,
+        "type": "park",
+        "y": 276.91282257075505,
+        "visible": true
+      },
+      {
+        "x": 711.279391964652,
+        "z": 1,
+        "index": 10,
+        "type": "home",
+        "y": 297.11457664234854,
+        "visible": true
+      },
+      {
+        "x": 684.375474949689,
+        "z": 1,
+        "index": 11,
+        "type": "grass",
+        "y": 318.4353777059969,
+        "visible": true
+      },
+      {
+        "x": 655.938801902041,
+        "z": 1,
+        "index": 12,
+        "type": "grass",
+        "y": 340.970856410593,
+        "visible": true
+      },
+      {
+        "x": 625.834547137324,
+        "z": 1,
+        "index": 13,
+        "type": "grass",
+        "y": 364.82785933886356,
+        "visible": true
+      },
+      {
+        "x": 593.9115944370911,
+        "z": 1,
+        "index": 14,
+        "type": "home",
+        "y": 390.12614298683144,
+        "visible": true
+      },
+      {
+        "x": 560,
+        "z": 1,
+        "index": 15,
+        "type": "grass",
+        "y": 417.00038432285066,
+        "visible": true
+      },
+      {
+        "x": 523.9079660133109,
+        "z": 1,
+        "index": 16,
+        "type": "work",
+        "y": 445.6025791699677,
+        "visible": true
+      },
+      {
+        "x": 485.418211055464,
+        "z": 1,
+        "index": 17,
+        "type": "park",
+        "y": 476.1049185872513,
+        "visible": true
+      },
+      {
+        "x": 703.5423610044287,
+        "z": 2,
+        "index": 18,
+        "type": "grass",
+        "y": 257.74426670727746,
+        "visible": true
+      },
+      {
+        "x": 677.847483777483,
+        "z": 2,
+        "index": 19,
+        "type": "road",
+        "y": 276.91282257075505,
+        "visible": true
+      },
+      {
+        "x": 650.7676351787911,
+        "z": 2,
+        "index": 20,
+        "type": "grass",
+        "y": 297.11457664234854,
+        "visible": true
+      },
+      {
+        "x": 622.1877374748444,
+        "z": 2,
+        "index": 21,
+        "type": "grass",
+        "y": 318.4353777059969,
+        "visible": true
+      },
+      {
+        "x": 591.9796006340135,
+        "z": 2,
+        "index": 22,
+        "type": "grass",
+        "y": 340.970856410593,
+        "visible": true
+      },
+      {
+        "x": 560,
+        "z": 2,
+        "index": 23,
+        "type": "road",
+        "y": 364.82785933886356,
+        "visible": true
+      },
+      {
+        "x": 526.0884055629087,
+        "z": 2,
+        "index": 24,
+        "type": "grass",
+        "y": 390.12614298683144,
+        "visible": true
+      },
+      {
+        "x": 490.06428686484827,
+        "z": 2,
+        "index": 25,
+        "type": "road",
+        "y": 417.0003843228508,
+        "visible": true
+      },
+      {
+        "x": 451.72389803993275,
+        "z": 2,
+        "index": 26,
+        "type": "grass",
+        "y": 445.6025791699677,
+        "visible": true
+      },
+      {
+        "x": 671.9705780196957,
+        "z": 3,
+        "index": 27,
+        "type": "road",
+        "y": 239.53162260968224,
+        "visible": true
+      },
+      {
+        "x": 646.1254166026572,
+        "z": 3,
+        "index": 28,
+        "type": "road",
+        "y": 257.74426670727746,
+        "visible": true
+      },
+      {
+        "x": 618.9237418887416,
+        "z": 3,
+        "index": 29,
+        "type": "road",
+        "y": 276.91282257075505,
+        "visible": true
+      },
+      {
+        "x": 590.2558783929304,
+        "z": 3,
+        "index": 30,
+        "type": "road",
+        "y": 297.11457664234854,
+        "visible": true
+      },
+      {
+        "x": 560,
+        "z": 3,
+        "index": 31,
+        "type": "road",
+        "y": 318.4353777059969,
+        "visible": true
+      },
+      {
+        "x": 528.0203993659863,
+        "z": 3,
+        "index": 32,
+        "type": "road",
+        "y": 340.970856410593,
+        "visible": true
+      },
+      {
+        "x": 494.165452862676,
+        "z": 3,
+        "index": 33,
+        "type": "road",
+        "y": 364.82785933886356,
+        "visible": true
+      },
+      {
+        "x": 458.2652166887263,
+        "z": 3,
+        "index": 34,
+        "type": "road",
+        "y": 390.12614298683144,
+        "visible": true
+      },
+      {
+        "x": 420.1285737296966,
+        "z": 3,
+        "index": 35,
+        "type": "road",
+        "y": 417.0003843228508,
+        "visible": true
+      },
+      {
+        "x": 641.9349373901314,
+        "z": 4,
+        "index": 36,
+        "type": "grass",
+        "y": 222.20512466390437,
+        "visible": true
+      },
+      {
+        "x": 615.9852890098479,
+        "z": 4,
+        "index": 37,
+        "type": "home",
+        "y": 239.53162260968224,
+        "visible": true
+      },
+      {
+        "x": 588.7084722008857,
+        "z": 4,
+        "index": 38,
+        "type": "grass",
+        "y": 257.7442667072774,
+        "visible": true
+      },
+      {
+        "x": 559.9999999999999,
+        "z": 4,
+        "index": 39,
+        "type": "grass",
+        "y": 276.91282257075505,
+        "visible": true
+      },
+      {
+        "x": 529.7441216070696,
+        "z": 4,
+        "index": 40,
+        "type": "grass",
+        "y": 297.11457664234854,
+        "visible": true
+      },
+      {
+        "x": 497.81226252515546,
+        "z": 4,
+        "index": 41,
+        "type": "home",
+        "y": 318.4353777059969,
+        "visible": true
+      },
+      {
+        "x": 464.06119809795905,
+        "z": 4,
+        "index": 42,
+        "type": "grass",
+        "y": 340.970856410593,
+        "visible": true
+      },
+      {
+        "x": 428.33090572535195,
+        "z": 4,
+        "index": 43,
+        "type": "clinic",
+        "y": 364.82785933886356,
+        "visible": true
+      },
+      {
+        "x": 390.44202781454385,
+        "z": 4,
+        "index": 44,
+        "type": "grass",
+        "y": 390.12614298683144,
+        "visible": true
+      },
+      {
+        "x": 613.3259890240549,
+        "z": 5,
+        "index": 45,
+        "type": "park",
+        "y": 205.7016349861188,
+        "visible": true
+      },
+      {
+        "x": 587.3116457967104,
+        "z": 5,
+        "index": 46,
+        "type": "grass",
+        "y": 222.20512466390437,
+        "visible": true
+      },
+      {
+        "x": 559.9999999999999,
+        "z": 5,
+        "index": 47,
+        "type": "grass",
+        "y": 239.53162260968224,
+        "visible": true
+      },
+      {
+        "x": 531.2915277991143,
+        "z": 5,
+        "index": 48,
+        "type": "grass",
+        "y": 257.7442667072774,
+        "visible": true
+      },
+      {
+        "x": 501.0762581112584,
+        "z": 5,
+        "index": 49,
+        "type": "grass",
+        "y": 276.91282257075505,
+        "visible": true
+      },
+      {
+        "x": 469.2323648212088,
+        "z": 5,
+        "index": 50,
+        "type": "grass",
+        "y": 297.11457664234854,
+        "visible": true
+      },
+      {
+        "x": 435.624525050311,
+        "z": 5,
+        "index": 51,
+        "type": "grass",
+        "y": 318.4353777059969,
+        "visible": true
+      },
+      {
+        "x": 400.1019968299317,
+        "z": 5,
+        "index": 52,
+        "type": "grass",
+        "y": 340.970856410593,
+        "visible": true
+      },
+      {
+        "x": 362.49635858802793,
+        "z": 5,
+        "index": 53,
+        "type": "park",
+        "y": 364.82785933886356,
+        "visible": true
+      },
+      {
+        "x": 586.0444393660154,
+        "z": 6,
+        "index": 54,
+        "type": "park",
+        "y": 189.96387463875377,
+        "visible": true
+      },
+      {
+        "x": 559.9999999999999,
+        "z": 6,
+        "index": 55,
+        "type": "grass",
+        "y": 205.70163498611876,
+        "visible": true
+      },
+      {
+        "x": 532.6883542032895,
+        "z": 6,
+        "index": 56,
+        "type": "grass",
+        "y": 222.20512466390437,
+        "visible": true
+      },
+      {
+        "x": 504.0147109901521,
+        "z": 6,
+        "index": 57,
+        "type": "grass",
+        "y": 239.53162260968224,
+        "visible": true
+      },
+      {
+        "x": 473.87458339734275,
+        "z": 6,
+        "index": 58,
+        "type": "grass",
+        "y": 257.7442667072774,
+        "visible": true
+      },
+      {
+        "x": 442.15251622251685,
+        "z": 6,
+        "index": 59,
+        "type": "grass",
+        "y": 276.91282257075505,
+        "visible": true
+      },
+      {
+        "x": 408.72060803534805,
+        "z": 6,
+        "index": 60,
+        "type": "grass",
+        "y": 297.11457664234854,
+        "visible": true
+      },
+      {
+        "x": 373.43678757546644,
+        "z": 6,
+        "index": 61,
+        "type": "grass",
+        "y": 318.4353777059969,
+        "visible": true
+      },
+      {
+        "x": 336.1427955619044,
+        "z": 6,
+        "index": 62,
+        "type": "park",
+        "y": 340.970856410593,
+        "visible": true
+      }
+    ],
+    "modelCount": 19
+  },
+  "screenshot": "assets/game-forms/systems-qa/district-playable.png",
+  "mobileScreenshot": "assets/game-forms/systems-qa/district-mobile.png",
+  "sources": "assets/game-forms/systems-city-sources.json",
+  "limitations": [
+    "A fixed 9 by 7 local city-planning scenario; no long economy campaign.",
+    "Traffic uses explicit BFS routes and shared-tile slowing, not a full intersection simulation."
+  ],
+  "errors": [],
+  "missing": []
+}

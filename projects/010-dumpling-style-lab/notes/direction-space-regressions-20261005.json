@@ -1,0 +1,198 @@
+{
+  "passed": true,
+  "date": "2026-10-05",
+  "workspace": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab",
+  "method": "Executed fourteen existing production-engine and production-callback regression scripts for the seven earlier directions. Counts below are parsed from their actual stdout and every exit code was zero. The subsequent authorized fixes to the new space engine were separately verified by27 space rule checks; they are not included in the230 legacy total. Callback adapters do not substitute for browser CSS, real WebGL, native pointer/fullscreen, or browser storage acceptance.",
+  "totals": {
+    "directions": 7,
+    "scripts": 14,
+    "rules": 124,
+    "controllers": 106,
+    "checks": 230
+  },
+  "commands": [
+    {
+      "script": "tooling/check-direction-factory.mjs",
+      "kind": "rules",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' 'tooling/check-direction-factory.mjs'",
+      "exitCode": 0,
+      "passed": true,
+      "checks": 13,
+      "stdout": "13 factory direction checks passed"
+    },
+    {
+      "script": "tooling/check-direction-park.mjs",
+      "kind": "rules",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' 'tooling/check-direction-park.mjs'",
+      "exitCode": 0,
+      "passed": true,
+      "checks": 14,
+      "stdout": "14 park direction checks passed"
+    },
+    {
+      "script": "tooling/check-direction-coop.mjs",
+      "kind": "rules",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' 'tooling/check-direction-coop.mjs'",
+      "exitCode": 0,
+      "passed": true,
+      "checks": 16,
+      "stdout": "16 cooperation rule checks passed, including ordinary completion of all three maps"
+    },
+    {
+      "script": "tooling/check-direction-shift.mjs",
+      "kind": "rules",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' 'tooling/check-direction-shift.mjs'",
+      "exitCode": 0,
+      "passed": true,
+      "checks": 17,
+      "stdout": "17 shift rules checks passed"
+    },
+    {
+      "script": "tooling/check-direction-freight.mjs",
+      "kind": "rules",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' 'tooling/check-direction-freight.mjs'",
+      "exitCode": 0,
+      "passed": true,
+      "checks": 18,
+      "stdout": "18 freight rules checks passed"
+    },
+    {
+      "script": "tooling/check-direction-dungeon.mjs",
+      "kind": "rules",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' 'tooling/check-direction-dungeon.mjs'",
+      "exitCode": 0,
+      "passed": true,
+      "checks": 24,
+      "stdout": "24 dungeon rules checks passed; 0 failed"
+    },
+    {
+      "script": "tooling/check-direction-stealth.mjs",
+      "kind": "rules",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' 'tooling/check-direction-stealth.mjs'",
+      "exitCode": 0,
+      "passed": true,
+      "checks": 22,
+      "stdout": "22 stealth rules checks passed"
+    },
+    {
+      "script": "tooling/check-direction-controller.mjs",
+      "kind": "controller",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' 'tooling/check-direction-controller.mjs'",
+      "exitCode": 0,
+      "passed": true,
+      "checks": 9,
+      "stdout": "9 controller checks passed; only the new dedicated storage key was touched"
+    },
+    {
+      "script": "tooling/check-direction-park-controller.mjs",
+      "kind": "controller",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' 'tooling/check-direction-park-controller.mjs'",
+      "exitCode": 0,
+      "passed": true,
+      "checks": 10,
+      "stdout": "10 park controller checks passed; only the dedicated park save key was touched"
+    },
+    {
+      "script": "tooling/check-direction-coop-controller.mjs",
+      "kind": "controller",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' 'tooling/check-direction-coop-controller.mjs'",
+      "exitCode": 0,
+      "passed": true,
+      "checks": 12,
+      "stdout": "12 production cooperation callback checks passed; only the independent new save key was touched"
+    },
+    {
+      "script": "tooling/check-direction-shift-controller.mjs",
+      "kind": "controller",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' 'tooling/check-direction-shift-controller.mjs'",
+      "exitCode": 0,
+      "passed": true,
+      "checks": 13,
+      "stdout": "13 shift controller checks passed; only the dedicated shift save key was touched"
+    },
+    {
+      "script": "tooling/check-direction-freight-controller.mjs",
+      "kind": "controller",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' 'tooling/check-direction-freight-controller.mjs'",
+      "exitCode": 0,
+      "passed": true,
+      "checks": 15,
+      "stdout": "15 freight controller checks passed; only the new freight save key was touched"
+    },
+    {
+      "script": "tooling/check-direction-dungeon-controller.mjs",
+      "kind": "controller",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' 'tooling/check-direction-dungeon-controller.mjs'",
+      "exitCode": 0,
+      "passed": true,
+      "checks": 23,
+      "stdout": "23 dungeon controller checks passed; only the new dungeon save key was written"
+    },
+    {
+      "script": "tooling/check-direction-stealth-controller.mjs",
+      "kind": "controller",
+      "command": "& 'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' 'tooling/check-direction-stealth-controller.mjs'",
+      "exitCode": 0,
+      "passed": true,
+      "checks": 24,
+      "stdout": "24 stealth controller checks passed; only the dedicated stealth save key was read or written"
+    }
+  ],
+  "audit": {
+    "sourceEditsByThisAudit": false,
+    "authorizedFollowup": { "spaceRulesPassed": 27, "report": "notes/direction-space-rules-20261005.json", "productionChanges": "Only the new space engine: finite long-session saves, genuine30/14 boost, fixed completedAt, ledger-accounted six-second requested rescue.", "findingsStatus": "All three findings below describe the original audit probes and have now been resolved by authorized followup changes." },
+    "scope": "Read-only engine/controller review and ordinary runtime probes. The 3D scene is planar XZ flight; decorative asteroids are not colliders and no collision-physics claim is made.",
+    "confirmedWorking": [
+      "Controller manualMode sets demoAuto false before held flight input is processed; the next nonzero physics step cancels autopilot. The scripted demo cannot reclaim control after a takeover.",
+      "Explicit takeover also stops navigation and preserves the same model, velocity, cargo and cash.",
+      "Restore always pauses and reconstructs financial transactions, FIFO purchase basis, courier reservations/rewards, survey reward, cash, profit, fuel purchases/burn, and cargo counts.",
+      "Completed achievement stays recorded even after later losing trades; this is legal continued play rather than an account mismatch."
+    ],
+    "findings": [
+      {
+        "priority": "P2",
+        "topic": "Fuel exhaustion far from a port can strand manual play",
+        "source": "web/direction-space-engine.js:50",
+        "reproduction": "Create a manual world, undock, hold boost for180 seconds, then brake for2 seconds. No model editing or rewarded phase shortcuts.",
+        "observed": {
+          "time": 181.99999999999807,
+          "x": 0,
+          "z": -3953.0880000003563,
+          "fuel": 0,
+          "speed": 0,
+          "autopilot": "rejected: fuel exhausted",
+          "refuel": "rejected: requires docking",
+          "saveAccepted": true
+        },
+        "suggestion": "Optional small recovery action or an explicit stranded-state message explaining the available reset. The ordinary demonstration consumes only about2.13 fuel, so its goal is unaffected."
+      },
+      {
+        "priority": "P2",
+        "topic": "Runtime can produce a legal save that its arbitrary7200-second restore cap rejects",
+        "source": "web/direction-space-engine.js:218",
+        "reproduction": "Stay docked at dawn and call stepWorld(world,5)1441 times; the engine continues normally.",
+        "observed": {
+          "time": 7204.999999994027,
+          "credits": 360,
+          "saveAccepted": false
+        },
+        "suggestion": "Remove the arbitrary runtime-duration cap while retaining finite numeric and conservation checks, or enforce and communicate the same session limit in runtime."
+      },
+      {
+        "priority": "P3",
+        "topic": "Boost at already-full throttle has identical motion but higher fuel burn",
+        "source": "web/direction-space-engine.js:139",
+        "reproduction": "Undock two fresh worlds and fly for2 seconds with thrust1, enabling boost only for the second.",
+        "observed": {
+          "x": 0,
+          "z": -20.40000000000001,
+          "speed": 19.999999999999993,
+          "fuelNormal": 99.36000000000007,
+          "fuelBoost": 98.83999999999986
+        },
+        "suggestion": "Describe Shift as full-throttle engagement and its higher fuel cost, or give boost a genuine benefit within the maximum-speed/acceleration contract."
+      }
+    ],
+    "limitations": "Save validation checks arithmetic and state consistency, not cryptographic authenticity of user-edited localStorage."
+  }
+}

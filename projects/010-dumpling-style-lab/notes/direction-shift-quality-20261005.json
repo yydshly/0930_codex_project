@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-05",
+  "sample": "夜航值守 / Waypoint – The Night Shift",
+  "purpose": "第四个原创方向：职业分工、并行任务和系统事件；与既有工厂、乐园和双人关卡在参与方式上形成对比。",
+  "references": [
+    {"url": "https://spacestation14.com/", "read": "2026-10-05", "facts": "官方描述不同船员职业、职责、装备和细致系统；玩家共同应对空间站突发状况。", "inference": "本样例选择职业依赖、并行工作、事故与共同撤离作为方向探索。"},
+    {"url": "https://github.com/space-wizards/space-station-14", "read": "2026-10-05", "use": "仅为参考研究。没有导入上游代码/资产，没有向其仓库提交 AI 生成贡献。"}
+  ],
+  "implemented": [
+    "工程、医护、调度三位成人角色；切换不会打断正在执行的其他任务。",
+    "真实隔离与修复、恢复供电、封漏通风、稳定治疗、信标与撤离依赖。",
+    "作业先走到设备或乘员相邻地块，再计时执行；过早/错误职业任务给出具体原因。",
+    "主通道短路改变可行地块，BFS 会绕行；工程可以实际解除故障。",
+    "伤员沿通道走到接驳舱，最后三位工作人员也必须抵达才完成。",
+    "标准与紧急两种场景；缺乏及时处理可能因空气、乘员状态或窗口超时失败。",
+    "按钮、设备与人物点选、地面寻路、键盘切换与派工、暂停和路线显示。",
+    "示范使用与手动操作相同的派工规则；可以接管同一局，独立保存与暂停恢复。"
+  ],
+  "visual_review": {
+    "method": "实际生产 Canvas2D 与游戏模型经 Skia 渲染，1440 × 900；非浏览器截图。",
+    "reviewed_frames": ["01-night-begins.png", "02-parallel-duties.png", "03-corridor-incident.png", "04-evacuation.png", "05-all-aboard.png", "06-pressure-start.png"],
+    "directory": "assets/directions/shift-qa/",
+    "art": "内置 ImageGen：轨道夜景、透明舱室、设备和成人角色图集；原始素材均为 1536 × 1024。",
+    "adjustments": ["修正走廊素材边缘透明留白，连续通道可见。", "下部舱室名称移出主走廊。", "人物标签避开房间、设备与其他姓名标签，工作进度与姓名组合显示。", "登船后用短姓名标签，避开信标状态框。", "结局场景文字对应实际全员抵达状态。"],
+    "limits": "绘制素材的灯光和固定设备不会构成逐像素物理地图；规则使用明确的连通地块。角色有站立/行走两帧，部分镜头方向和动画丰富度仍可继续提升。"
+  },
+  "evidence": {
+    "rules": "notes/direction-shift-rules-20261005.json",
+    "callbacks": "notes/direction-shift-controller-20261005.json",
+    "frames": "notes/direction-shift-frames-20261005.json",
+    "package": "notes/direction-shift-package-20261005.json",
+    "generation": "assets/directions/shift-generation-20261005.json"
+  },
+  "browser_acceptance": {"status": "pending", "attempted": true, "reason": "CUA node_repl kernel exited: Windows sandbox helper_unknown_error; setup refresh had errors.", "pending": ["浏览器 CSS 与窄屏布局", "设备级触摸与指针命中", "全屏", "浏览器刷新后的实际存档恢复"]},
+  "preservation": {"baseline": "notes/shift-preservation-before-20261005.json", "protected_prior_files": 2562, "authorized_navigation_pages": ["direction-coop.html", "direction-park.html", "directions.html", "references.html", "forms.html"], "save_key": "world-play-direction-shift-v1", "original_forms": 107, "original_entrances": 116, "new_direction_samples": 4},
+  "scope": "原创本地短事件。没有在线多人、持续社区、随机职业轮换、真实 3D 或 Space Station 14 移植；未完成真人情绪、留存和商业作品质量验证。",
+  "next_extensions": ["真人多端职业分工与消息协作", "事件链与角色轮换", "更多方向的原创可玩样例，例如交通网络、星际职业与环境潜行"]
+}

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": [
+    "blueprint budget equals actual facility costs",
+    "ready and paused clocks preserve all state",
+    "ore becomes ammunition and reaches both actual turrets",
+    "an open belt gap blocks ammo rather than creating a cosmetic stream",
+    "wrong direction does not teleport material and can be rebuilt",
+    "three ordinary waves finish using only production and automatic targeting",
+    "no turret supply causes real leaks and a loss",
+    "turrets eventually stop when the physical ammunition line is removed",
+    "building constraints protect roads, core, ore beds and spending",
+    "demolition refunds its documented amount exactly once",
+    "saved running battle restores paused and then continues identically",
+    "restoration rejects malformed and unsafe state instead of running it",
+    "custom construction can create the same functioning system from empty ground"
+  ],
+  "method": "Actual production engine, ordinary placement, packet transport, firing, waves, win/loss and save restoration. No browser acceptance claim."
+}

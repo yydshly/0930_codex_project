@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-04",
+  "forms": 83,
+  "entrances": 92,
+  "new_forms": 4,
+  "original_assets": 10,
+  "generation_mode": "builtin-imagegen",
+  "prompts_and_originals": "assets/game-forms/voyages-generation.json",
+  "checks": 113,
+  "render_review": {
+    "frames": 12,
+    "phases": [
+      "initial",
+      "progress",
+      "complete"
+    ],
+    "method": "Visually inspected production Skia contact sheets for all phases, then inspected revised panorama detail frames and unobstructed completion scenes. Panorama uses explicitly labelled compatibility projection; these are not browser screenshots.",
+    "refinements": [
+      "Degenerate IK chains still keep all segment lengths",
+      "Map artwork and overlays zoom and pan together",
+      "Three high-detail directional illustrations replace blurred telescope enlargement",
+      "Detail layers use the same camera bearing and projection",
+      "Completion panels moved below principal objects",
+      "Material uniform textures disposed explicitly",
+      "Implementation formulas removed from player instructions"
+    ]
+  },
+  "preservation": {
+    "protected": 2389,
+    "changed": [],
+    "missing": [],
+    "editable_shared": [
+      "forms.html",
+      "forms.js",
+      "game-forms-catalog.js",
+      "showcase-catalog.js",
+      "showcase.html",
+      "showcase.js"
+    ],
+    "old_storage": "No browser storage read, cleared or migrated. Prior IDs, edition routes and storage prefixes compared against baseline."
+  },
+  "catalogs": {
+    "forms": 83,
+    "entrances": 92,
+    "uniqueForms": 83,
+    "uniqueEntrances": 92,
+    "allFormsRouted": true,
+    "previousForms": 79,
+    "previousEntrances": 88,
+    "changedPreviousForms": [],
+    "changedPreviousEntrances": [],
+    "storagePrefixesPreserved": true,
+    "newForms": [
+      {
+        "id": "map-expedition",
+        "play": "cartographer"
+      },
+      {
+        "id": "soft-limb",
+        "play": "tendril"
+      },
+      {
+        "id": "collage-world",
+        "play": "cutout"
+      },
+      {
+        "id": "panoramic-survey",
+        "play": "panorama"
+      }
+    ],
+    "newRouter": true,
+    "previewKinds": [
+      {
+        "id": "cartographer",
+        "kind": "生产场景绘制预览"
+      },
+      {
+        "id": "tendril",
+        "kind": "生产场景绘制预览"
+      },
+      {
+        "id": "cutout",
+        "kind": "生产场景绘制预览"
+      },
+      {
+        "id": "panorama",
+        "kind": "同场景球面兼容渲染预览"
+      }
+    ]
+  },
+  "packaged": {
+    "targets": 26,
+    "mismatches": []
+  },
+  "browser_qa": {
+    "verified": false,
+    "responsive_fullscreen_native_input_storage_webgl_verified": false,
+    "attempts": [
+      "Fresh js_reset succeeded",
+      "cua.getState failed before browser connection: trusted Node process exited unexpectedly; kernel reset, rerun your request"
+    ],
+    "blocker": "Browser control kernel exits before returning browser state. No alternate browser automation used."
+  },
+  "automated_checks_passed": true,
+  "acceptance_complete": false,
+  "remaining": [
+    "Native HTML layout and real keyboard/touch focus",
+    "Narrow viewport and fullscreen",
+    "Actual WebGL shaders, texture seams, frame time and memory",
+    "Browser refresh and localStorage continuation"
+  ]
+}

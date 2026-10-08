@@ -1,0 +1,309 @@
+{
+  "date": "2026-10-05",
+  "passed": true,
+  "count": 49,
+  "checks": [
+    "fresh worlds are paused empty garage bodies with independent mutable state",
+    "the finite 108 metre map exposes real dirt slope corrugation bridge and grass surfaces",
+    "terrain heights normals and transition gradients stay finite across the bounded map",
+    "wheel centres use four real axle offsets and current terrain contact height",
+    "paused stepping actions and planner preserve the complete body and objective state exactly",
+    "normal W input continuously accelerates toward positive z without position grants",
+    "reverse input drives backward with a bounded reverse speed",
+    "brake pressure physically stops the vehicle and holds it on the slope",
+    "left and right steering rotate real forward headings symmetrically",
+    "four corner spring damper forces integrate genuine heave pitch roll and different compression",
+    "suspension settles under gravity instead of using canned idle bounce",
+    "body orientation suspension compression and forces stay bounded during a long rough drive",
+    "continuous collision bounds contain a held forward throttle at the map edge",
+    "building and rock circles block real manual movement without tunnelling",
+    "long permitted frames are subdivided and cannot jump through boundaries",
+    "invalid nonfinite negative excessive timesteps are atomically rejected",
+    "malformed and unknown physical controls are atomically rejected",
+    "unknown grant teleport and time override actions never change state",
+    "dispatch requires garage proximity and rejects a moving vehicle",
+    "load delivery and finish reject wrong route stages atomically",
+    "fixed payload actions reject forged quantity and location parameters",
+    "depot loading is available only after a real stopped trip and uses 320 kg",
+    "actual cargo increases static spring compression and lowers the chassis",
+    "actual loaded mass reduces throttle acceleration on the same terrain",
+    "moving vehicles cannot change spring or damper tuning",
+    "stopped tuning changes actual constants without granting cargo or moving the vehicle",
+    "invalid inherited and nonstring tuning modes are atomically rejected",
+    "comfort absorbs less corrugation body acceleration than the firm tune",
+    "planner is read-only and returns ordinary input and action intentions",
+    "assist target validation requires the real dispatch and a known station",
+    "cancel assist leaves the physical vehicle cargo and progress untouched",
+    "paused active assist cannot change its route or body before resuming",
+    "ordinary demo runs the ordered real depot cargo delivery bridge return sequence",
+    "demo remains an ordinary complete loop under 50 millisecond frames",
+    "double speed sized 100 millisecond frames complete and preserve suspension stability",
+    "manual pointer assist plus contextual actions complete without invoking demoStep",
+    "completion freezes bodies route cargo clock and statistics permanently",
+    "restoring in-flight loaded saves preserves the exact world and forces paused state",
+    "saved loaded runs resume ordinary delivery bridge crossing and garage completion",
+    "strict saves reject unsupported version malformed data and oversized text",
+    "strict saves reject nonfinite out of range and relocated bodies",
+    "strict saves reject wheel offset contact ground height compression and force forgery",
+    "strict saves reject invented loads detached mass and forged output counters",
+    "strict saves reject missing reordered remote moving or future handoff records",
+    "strict saves reject false bridge checkpoints and forged completion records",
+    "strict saves reject detached tune changed moving tune and unknown tune records",
+    "strict saves reject invalid route target waypoint list index or inactive path",
+    "strict saves reject impossible distance time roughness and counter statistics",
+    "strict saves reject nonfinite future reordered oversized and detached log entries"
+  ],
+  "failures": [],
+  "playthroughs": [
+    {
+      "mode": "demo ordinary controls",
+      "dt": 0.02,
+      "tune": "comfort",
+      "seconds": 43.79999999999724,
+      "distanceMetres": 254.37089841719637,
+      "collisions": 0,
+      "cargoDelivered": 4,
+      "maxStep": 0.16008200455088895,
+      "corrugationBodyRms": 7.743669601476991,
+      "springsDiffered": true,
+      "ledger": [
+        {
+          "kind": "dispatch",
+          "time": 0,
+          "x": -32,
+          "z": -32,
+          "speed": 0
+        },
+        {
+          "kind": "load",
+          "time": 11.160000000000027,
+          "x": -32,
+          "z": 30.601151750773987,
+          "speed": 0.5258361757330494
+        },
+        {
+          "kind": "deliver",
+          "time": 23.21999999999977,
+          "x": 30.661877031601012,
+          "z": 32.103512678813225,
+          "speed": 0.5189560333377685
+        },
+        {
+          "kind": "bridge",
+          "time": 28.279999999999664,
+          "x": 34.958580864040584,
+          "z": 8.996551553804673,
+          "speed": 7.529173585196348
+        },
+        {
+          "kind": "finish",
+          "time": 43.79999999999724,
+          "x": -30.576345493566386,
+          "z": -31.992029953891603,
+          "speed": 0.5478159386335146
+        }
+      ]
+    },
+    {
+      "mode": "demo ordinary controls",
+      "dt": 0.02,
+      "tune": "firm",
+      "seconds": 43.79999999999724,
+      "distanceMetres": 254.37089841719637,
+      "collisions": 0,
+      "cargoDelivered": 4,
+      "maxStep": 0.16008200455088895,
+      "corrugationBodyRms": 10.035349135188074,
+      "springsDiffered": true,
+      "ledger": [
+        {
+          "kind": "tune",
+          "time": 0,
+          "x": -32,
+          "z": -32,
+          "speed": 0,
+          "tune": "firm"
+        },
+        {
+          "kind": "dispatch",
+          "time": 0,
+          "x": -32,
+          "z": -32,
+          "speed": 0
+        },
+        {
+          "kind": "load",
+          "time": 11.160000000000027,
+          "x": -32,
+          "z": 30.601151750773987,
+          "speed": 0.5258361757330494
+        },
+        {
+          "kind": "deliver",
+          "time": 23.21999999999977,
+          "x": 30.661877031601012,
+          "z": 32.103512678813225,
+          "speed": 0.5189560333377685
+        },
+        {
+          "kind": "bridge",
+          "time": 28.279999999999664,
+          "x": 34.958580864040584,
+          "z": 8.996551553804673,
+          "speed": 7.529173585196348
+        },
+        {
+          "kind": "finish",
+          "time": 43.79999999999724,
+          "x": -30.576345493566386,
+          "z": -31.992029953891603,
+          "speed": 0.5478159386335146
+        }
+      ]
+    },
+    {
+      "mode": "demo ordinary controls",
+      "dt": 0.05,
+      "tune": "comfort",
+      "seconds": 43.94999999999815,
+      "distanceMetres": 254.43643736245346,
+      "collisions": 0,
+      "cargoDelivered": 4,
+      "maxStep": 0.4004904102957182,
+      "corrugationBodyRms": 7.979861658108808,
+      "springsDiffered": true,
+      "ledger": [
+        {
+          "kind": "dispatch",
+          "time": 0,
+          "x": -32,
+          "z": -32,
+          "speed": 0
+        },
+        {
+          "kind": "load",
+          "time": 11.200000000000005,
+          "x": -32,
+          "z": 30.589186965644647,
+          "speed": 0.5350991962343927
+        },
+        {
+          "kind": "deliver",
+          "time": 23.29999999999932,
+          "x": 30.649512721221903,
+          "z": 32.10353723809969,
+          "speed": 0.5492692852675
+        },
+        {
+          "kind": "bridge",
+          "time": 28.40833333333236,
+          "x": 34.930315240190346,
+          "z": 8.952453549583073,
+          "speed": 7.5293755474651265
+        },
+        {
+          "kind": "finish",
+          "time": 43.94999999999815,
+          "x": -30.574526287062735,
+          "z": -31.991804142976505,
+          "speed": 0.54652910949815
+        }
+      ]
+    },
+    {
+      "mode": "demo ordinary controls",
+      "dt": 0.1,
+      "tune": "comfort",
+      "seconds": 44.39999999999812,
+      "distanceMetres": 254.59159494168307,
+      "collisions": 0,
+      "cargoDelivered": 4,
+      "maxStep": 0.8022819956550893,
+      "corrugationBodyRms": 7.942088322327372,
+      "springsDiffered": true,
+      "ledger": [
+        {
+          "kind": "dispatch",
+          "time": 0,
+          "x": -32,
+          "z": -32,
+          "speed": 0
+        },
+        {
+          "kind": "load",
+          "time": 11.299999999999999,
+          "x": -32,
+          "z": 30.589340511538083,
+          "speed": 0.48216083412079264
+        },
+        {
+          "kind": "deliver",
+          "time": 23.499999999999307,
+          "x": 30.648327581811916,
+          "z": 32.10205889165471,
+          "speed": 0.513099752956075
+        },
+        {
+          "kind": "bridge",
+          "time": 28.72499999999901,
+          "x": 34.886985130683016,
+          "z": 8.959827245840742,
+          "speed": 7.523186064354925
+        },
+        {
+          "kind": "finish",
+          "time": 44.39999999999812,
+          "x": -30.607615776891997,
+          "z": -31.99164071176675,
+          "speed": 0.37162758150851566
+        }
+      ]
+    },
+    {
+      "mode": "manual pointer assist and contextual handoffs",
+      "seconds": 43.679999999997264,
+      "distanceMetres": 254.32612053207208,
+      "ledger": [
+        {
+          "kind": "dispatch",
+          "time": 0,
+          "x": -32,
+          "z": -32,
+          "speed": 0
+        },
+        {
+          "kind": "load",
+          "time": 11.120000000000028,
+          "x": -32,
+          "z": 30.60150737142786,
+          "speed": 0.5197740142790082
+        },
+        {
+          "kind": "deliver",
+          "time": 23.139999999999773,
+          "x": 30.66158297124725,
+          "z": 32.103054683757634,
+          "speed": 0.5194576800220639
+        },
+        {
+          "kind": "bridge",
+          "time": 28.159999999999666,
+          "x": 34.945032731930574,
+          "z": 8.99961598010224,
+          "speed": 7.529048130457656
+        },
+        {
+          "kind": "finish",
+          "time": 43.679999999997264,
+          "x": -30.576384772292162,
+          "z": -31.992015753038444,
+          "speed": 0.5477087594340446
+        }
+      ]
+    }
+  ],
+  "method": "Production continuous x/z bicycle driving at ordinary throttle/steer/brake values. Four independent terrain-contact springs and dampers integrate chassis heave/pitch/roll in at-most 1/120 second substeps. All objective playthroughs begin at the paused empty garage, drive the real 254 metre loop, perform stopped proximity handoffs, carry the fixed 320 kg payload, cross the bridge, and stop back at the garage. Demo planner returns intentions without mutating physics, inventory, objectives or time. No route teleports, supplies grants, objective overrides or simulation time overrides. Paused exact restoration, mass-dependent acceleration and spring compression, tune-dependent measured corrugation response, collisions, finite boundaries, and versioned body/action/load/ledger validation are exercised.",
+  "commands": [
+    "node tooling/check-direction-vehicle-rules.mjs"
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "passed": true,
+  "checks": [
+    "Actual posture toggle changes speed and footstep behavior",
+    "Actual building boundary blocks movement",
+    "Actual thrown sound changes nearby guard investigation targets",
+    "stealth actual save/reload retains progress",
+    "Actual obstacle-aware movement reads all terminals and reaches the real exit",
+    "25 playable forms and real new comparison frames pause on focus switch",
+    "390px layout fits; real held pointer controls a physical flipper"
+  ],
+  "results": {
+    "stealth": {
+      "version": 1,
+      "time": 39.54670000002379,
+      "phase": "won",
+      "x": 1023.6638032324234,
+      "y": 530.6006954632414,
+      "angle": 0.12855890906469125,
+      "crouching": true,
+      "exposure": 0,
+      "collected": [
+        0,
+        2,
+        1
+      ],
+      "guards": [
+        {
+          "id": 0,
+          "x": 225.5749308941617,
+          "y": 157.08808520740288,
+          "waypoint": 1,
+          "angle": -0.010214073064888132,
+          "investigate": null,
+          "timer": 0,
+          "seeing": false
+        },
+        {
+          "id": 1,
+          "x": 623.9172484380726,
+          "y": 321.14740060420206,
+          "waypoint": 2,
+          "angle": 1.5603228634709325,
+          "investigate": null,
+          "timer": 0,
+          "seeing": false
+        },
+        {
+          "id": 2,
+          "x": 841.9971002289312,
+          "y": 253.2158918020512,
+          "waypoint": 0,
+          "angle": -1.5872704006826477,
+          "investigate": null,
+          "timer": 0,
+          "seeing": false
+        }
+      ],
+      "path": [],
+      "lures": 1,
+      "noise": null,
+      "checkpoint": {
+        "x": 657.7891033413167,
+        "y": 511.9999999999694,
+        "collected": [
+          0,
+          2,
+          1
+        ],
+        "lures": 1,
+        "interactions": 3,
+        "distractions": 1,
+        "steps": 2265.8372999999924,
+        "time": 33.663600000023855,
+        "score": 900
+      },
+      "steps": 2670.83729999998,
+      "hiddenTime": 37.59660000002377,
+      "seenTime": 1.8834000000000015,
+      "interactions": 3,
+      "distractions": 1,
+      "won": true,
+      "score": 1362,
+      "walls": [
+        {
+          "x": 225,
+          "y": 126,
+          "w": 156,
+          "h": 157
+        },
+        {
+          "x": 462,
+          "y": 292,
+          "w": 143,
+          "h": 192
+        },
+        {
+          "x": 643,
+          "y": 106,
+          "w": 169,
+          "h": 177
+        },
+        {
+          "x": 893,
+          "y": 315,
+          "w": 115,
+          "h": 111
+        }
+      ],
+      "terminals": [
+        {
+          "x": 445,
+          "y": 122,
+          "name": "北侧终端"
+        },
+        {
+          "x": 650,
+          "y": 514,
+          "name": "南侧终端"
+        },
+        {
+          "x": 951,
+          "y": 120,
+          "name": "东侧终端"
+        }
+      ],
+      "exit": {
+        "x": 1020,
+        "y": 535
+      }
+    }
+  },
+  "errors": [],
+  "missing": []
+}

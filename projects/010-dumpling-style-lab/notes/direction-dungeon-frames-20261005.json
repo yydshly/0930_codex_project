@@ -1,0 +1,171 @@
+{
+  "method": "Production Canvas2D management view and actual textured ray-cast first-person projection via Skia, using the same game models. No browser screenshot or GPU/WebGL claim. 308 pointer-cell mappings and geometric wall depths verified.",
+  "frames": [
+    {
+      "file": "assets/directions/dungeon-qa/01-dungeon-ready.png",
+      "time": 0,
+      "view": "management",
+      "phase": "playing",
+      "core": 180,
+      "wave": 0,
+      "stats": {
+        "expenses": 0,
+        "income": 0,
+        "mined": 0,
+        "dug": 0,
+        "kills": 0,
+        "recruited": 0,
+        "trapChargesProduced": 0,
+        "trapChargesUsed": 2,
+        "manualHits": 0
+      },
+      "camera": null
+    },
+    {
+      "file": "assets/directions/dungeon-qa/02-production-and-training.png",
+      "time": 17.000000000000107,
+      "view": "management",
+      "phase": "playing",
+      "core": 180,
+      "wave": 0,
+      "stats": {
+        "expenses": 22,
+        "income": 0,
+        "mined": 0,
+        "dug": 0,
+        "kills": 0,
+        "recruited": 0,
+        "trapChargesProduced": 3,
+        "trapChargesUsed": 2,
+        "manualHits": 0
+      },
+      "camera": null
+    },
+    {
+      "file": "assets/directions/dungeon-qa/03-invaders-and-defense.png",
+      "time": 20.500000000000156,
+      "view": "management",
+      "phase": "playing",
+      "core": 180,
+      "wave": 1,
+      "stats": {
+        "expenses": 26,
+        "income": 0,
+        "mined": 0,
+        "dug": 0,
+        "kills": 0,
+        "recruited": 0,
+        "trapChargesProduced": 4,
+        "trapChargesUsed": 2,
+        "manualHits": 0
+      },
+      "camera": null
+    },
+    {
+      "file": "assets/directions/dungeon-qa/04-inside-the-same-defense.png",
+      "time": 21.000000000000163,
+      "view": "possession",
+      "phase": "playing",
+      "core": 180,
+      "wave": 1,
+      "stats": {
+        "expenses": 26,
+        "income": 0,
+        "mined": 0,
+        "dug": 0,
+        "kills": 0,
+        "recruited": 0,
+        "trapChargesProduced": 4,
+        "trapChargesUsed": 2,
+        "manualHits": 0
+      },
+      "camera": {
+        "id": 1,
+        "x": 16.335000000000043,
+        "y": 6,
+        "hp": 110,
+        "maxHp": 110,
+        "level": 1,
+        "xp": 0,
+        "job": "guard",
+        "angle": 0.9999999999999999,
+        "attackCd": 0,
+        "moving": false,
+        "trainingTimer": 0
+      }
+    },
+    {
+      "file": "assets/directions/dungeon-qa/05-first-person-walk.png",
+      "time": 1.1500000000000004,
+      "view": "possession",
+      "phase": "playing",
+      "core": 180,
+      "wave": 0,
+      "stats": {
+        "expenses": 0,
+        "income": 0,
+        "mined": 0,
+        "dug": 0,
+        "kills": 0,
+        "recruited": 0,
+        "trapChargesProduced": 0,
+        "trapChargesUsed": 2,
+        "manualHits": 0
+      },
+      "camera": {
+        "id": 1,
+        "x": 14.600000000000016,
+        "y": 6,
+        "hp": 110,
+        "maxHp": 110,
+        "level": 1,
+        "xp": 0,
+        "job": "guard",
+        "angle": 0.06000000000000001,
+        "attackCd": 0,
+        "moving": false,
+        "trainingTimer": 0
+      }
+    },
+    {
+      "file": "assets/directions/dungeon-qa/06-dungeon-secured.png",
+      "time": 72.09999999999805,
+      "view": "management",
+      "phase": "won",
+      "core": 180,
+      "wave": 3,
+      "stats": {
+        "expenses": 60,
+        "income": 72,
+        "mined": 0,
+        "dug": 0,
+        "kills": 12,
+        "recruited": 0,
+        "trapChargesProduced": 12,
+        "trapChargesUsed": 2,
+        "manualHits": 0
+      },
+      "camera": null
+    },
+    {
+      "file": "assets/directions/dungeon-qa/07-workers-dig-the-connection.png",
+      "time": 1.5000000000000007,
+      "view": "management",
+      "phase": "playing",
+      "core": 180,
+      "wave": 0,
+      "stats": {
+        "expenses": 8,
+        "income": 0,
+        "mined": 0,
+        "dug": 0,
+        "kills": 0,
+        "recruited": 0,
+        "trapChargesProduced": 0,
+        "trapChargesUsed": 2,
+        "manualHits": 0
+      },
+      "camera": null
+    }
+  ]
+}

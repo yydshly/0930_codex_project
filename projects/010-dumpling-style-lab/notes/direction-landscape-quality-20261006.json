@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-06",
+  "passed": true,
+  "direction": 14,
+  "scope": "Original finite eighteen-tile plus one seed hex landscape study. Rotation, legal neighboring placement, water/land rejection, actual matched-edge score, connected terrain groups, undo, independent paused restore and explicit final summary. Original raster art supplies terrain texture; paths and previews are actual engine geometry.",
+  "art": [
+    {
+      "key": "atlas",
+      "file": "web/assets/directions/landscape/terrain-atlas.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "sha256": "c8632d2aa690b93b01ca33b0751b57d9b056461b42530872946e01fdefc27b0c",
+      "source_copy_identical": true
+    },
+    {
+      "key": "backdrop",
+      "file": "web/assets/directions/landscape/backdrop.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "sha256": "8fb440bc8c19e06e85a594824352e4ed8f015d663883bc2acafb4290f36dc6a2",
+      "source_copy_identical": true
+    }
+  ],
+  "verification": {
+    "rules": 39,
+    "controller": 31,
+    "old_checks": 650,
+    "browser": 15
+  },
+  "screenshots": [
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-landscape-captures/fullscreen-manual-preview.png",
+      "description": "Actual native fullscreen after three manually placed tiles, undo/replay and saved-state reload: 36 points, true terrain groups and an unplaced river preview selected by native canvas hit.",
+      "viewport": [
+        1722,
+        1034
+      ],
+      "capture_size": [
+        1722,
+        1034
+      ],
+      "format": "JPEG",
+      "sha256": "556199e40ea02e2f9761821937dad40e5728a9cc2f793575215ce83ca327b473"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-landscape-captures/fullscreen-complete.png",
+      "description": "Actual final nineteen-tile landscape from the completed ordinary ×2 demo, now deliberately opened in native whole-stage fullscreen: real 536 points and three attained connected-terrain objectives.",
+      "viewport": [
+        1707,
+        1067
+      ],
+      "capture_size": [
+        1707,
+        1067
+      ],
+      "format": "JPEG",
+      "sha256": "67177ecaaa555023c6820eab444488b000ae3096bce088af322d7b6766d9dd99"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-landscape-captures/mobile-complete.png",
+      "description": "Actual responsive 390 × 844 CSS-pixel viewport, scrolled with native page input to the completed nineteen-tile board and native controls; stacked current-tile dock follows below. No horizontal overflow and all visible stage buttons meet 44 × 44 CSS pixels.",
+      "viewport": [
+        390,
+        844
+      ],
+      "capture_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "sha256": "d167fbca41db078f583693c2155b90e6fc53324c0b3c863310e41bf78aba1d3a"
+    }
+  ],
+  "limitations": [
+    "Finite authored eighteen-tile deck, not unlimited world generation or real ecology",
+    "Canvas2D landscape board, not a freely explorable 3D world",
+    "Desktop and responsive browser viewport checked, no physical mobile device test",
+    "Commercial maturity, sustained performance and human retention have not been measured"
+  ]
+}

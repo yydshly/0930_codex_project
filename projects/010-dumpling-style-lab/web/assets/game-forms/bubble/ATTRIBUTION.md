@@ -1,0 +1,1 @@
+原创场景与物件通过内置 ImageGen 制作，原始 PNG、完整提示词与哈希见项目 assets/game-forms/logic-generation-20261004.json。运行素材保持原尺寸和透明通道。preview 由实际生产模块 draw() 在 Skia 画布绘制，编码为 WebP，来源见 notes/logic-preview-provenance-20261004.json；不是浏览器实机截图。

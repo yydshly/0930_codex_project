@@ -1,0 +1,220 @@
+{
+  "errors": [],
+  "missing": [
+    "http://127.0.0.1:8962/assets/showcase/previews/brawler.webp",
+    "http://127.0.0.1:8962/assets/showcase/previews/skyline.webp",
+    "http://127.0.0.1:8962/assets/showcase/previews/coast.webp",
+    "http://127.0.0.1:8962/assets/showcase/previews/brawler.webp",
+    "http://127.0.0.1:8962/assets/showcase/previews/skyline.webp",
+    "http://127.0.0.1:8962/assets/showcase/previews/coast.webp",
+    "http://127.0.0.1:8962/assets/showcase/previews/brawler.webp",
+    "http://127.0.0.1:8962/assets/showcase/previews/skyline.webp",
+    "http://127.0.0.1:8962/assets/showcase/previews/coast.webp"
+  ],
+  "results": {
+    "brawler": {
+      "x": 583.3000000000001,
+      "y": 495,
+      "z": 0,
+      "vz": 0,
+      "hp": 7,
+      "facing": 1,
+      "stage": 0,
+      "elapsed": 2.1325999999940373,
+      "kills": 0,
+      "hits": 0,
+      "combo": 0,
+      "bestCombo": 0,
+      "throws": 0,
+      "dodges": 0,
+      "won": false,
+      "phase": "active",
+      "enemies": [
+        {
+          "id": 0,
+          "stage": 0,
+          "x": 481.7186000004881,
+          "y": 490,
+          "hp": 3,
+          "max": 3,
+          "kind": "enemy",
+          "cooldown": 0.8501000000000005,
+          "windup": -0.0033999999999999413,
+          "stun": 0,
+          "attack": 0,
+          "fade": 0
+        },
+        {
+          "id": 1,
+          "stage": 0,
+          "x": 574.7574000004857,
+          "y": 506.8304000002861,
+          "hp": 3,
+          "max": 3,
+          "kind": "enemy",
+          "cooldown": 0,
+          "windup": 0.11329999999999994,
+          "stun": 0,
+          "attack": 0,
+          "fade": 0
+        },
+        {
+          "id": 2,
+          "stage": 1,
+          "x": 1130,
+          "y": 460,
+          "hp": 3,
+          "max": 3,
+          "kind": "enemy",
+          "cooldown": 1,
+          "windup": 0,
+          "stun": 0,
+          "attack": 0,
+          "fade": 0
+        },
+        {
+          "id": 3,
+          "stage": 1,
+          "x": 1330,
+          "y": 515,
+          "hp": 5,
+          "max": 5,
+          "kind": "heavy",
+          "cooldown": 1,
+          "windup": 0,
+          "stun": 0,
+          "attack": 0,
+          "fade": 0
+        },
+        {
+          "id": 4,
+          "stage": 1,
+          "x": 1450,
+          "y": 550,
+          "hp": 3,
+          "max": 3,
+          "kind": "enemy",
+          "cooldown": 1,
+          "windup": 0,
+          "stun": 0,
+          "attack": 0,
+          "fade": 0
+        },
+        {
+          "id": 5,
+          "stage": 2,
+          "x": 2110,
+          "y": 510,
+          "hp": 10,
+          "max": 10,
+          "kind": "heavy",
+          "cooldown": 1,
+          "windup": 0,
+          "stun": 0,
+          "attack": 0,
+          "fade": 0
+        },
+        {
+          "id": 6,
+          "stage": 2,
+          "x": 2210,
+          "y": 450,
+          "hp": 3,
+          "max": 3,
+          "kind": "enemy",
+          "cooldown": 1,
+          "windup": 0,
+          "stun": 0,
+          "attack": 0,
+          "fade": 0
+        }
+      ]
+    },
+    "skyline": {
+      "x": 560,
+      "y": 515,
+      "hp": 5,
+      "elapsed": 2.1625999999821173,
+      "spawn": 1,
+      "enemies": [
+        {
+          "id": "0-0",
+          "kind": "fighter",
+          "x": 439.44013182958395,
+          "base": 405,
+          "y": 46.65999999999996,
+          "hp": 2,
+          "max": 2,
+          "age": 1.1666000000000005,
+          "timer": 2.15,
+          "flash": 0
+        },
+        {
+          "id": "0-2",
+          "kind": "fighter",
+          "x": 711.6682285820168,
+          "base": 705,
+          "y": -37.3399999999998,
+          "hp": 2,
+          "max": 2,
+          "age": 1.9665999999999986,
+          "timer": 0.43340000000000156,
+          "flash": 0
+        }
+      ],
+      "kills": 1,
+      "score": 100,
+      "shots": 14,
+      "hits": 2,
+      "power": 1,
+      "bombs": 2,
+      "bombsUsed": 0,
+      "supplies": [],
+      "won": false,
+      "phase": "active",
+      "autoFire": true,
+      "bossSpawned": false
+    },
+    "coast": {
+      "distance": 74.78602892666537,
+      "speed": 38.60090000000004,
+      "lateral": -0.1963242843152093,
+      "integrity": 100,
+      "boost": 100,
+      "elapsed": 3.087799999994036,
+      "checkpoint": 0,
+      "collisions": 0,
+      "offroadTime": 0,
+      "passed": [],
+      "camera": "chase",
+      "won": false,
+      "phase": "active",
+      "rivals": [
+        {
+          "id": 0,
+          "d": 109.10719999985686,
+          "l": 1.9,
+          "v": 24
+        },
+        {
+          "id": 1,
+          "d": 170.28279999984565,
+          "l": -1.8,
+          "v": 26
+        },
+        {
+          "id": 2,
+          "d": 231.45839999983315,
+          "l": 1.8,
+          "v": 28
+        },
+        {
+          "id": 3,
+          "d": 287.1949999998515,
+          "l": -1.8,
+          "v": 25
+        }
+      ]
+    }
+  }
+}

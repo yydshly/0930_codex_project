@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "checks": [
+    "three ordinary maps are valid and complete via actual input, jumps, pressure pads and rescue",
+    "paused world is exactly stable",
+    "closed gate blocks a moving character without tunneling",
+    "standing on a pressure pad opens a physical gate and leaving allows it to close",
+    "grounded ice freezes; distant or frozen helpers cannot rescue",
+    "a nearby active helper restores movement with a temporary protection window",
+    "only one character arriving does not complete the room",
+    "checkpoint contact changes fall recovery while keeping the companion in place",
+    "editing a solid tile changes the actual next play collision",
+    "unique exit and both starts remain explicit in exported designs",
+    "exported rescue map reconstructs the same frozen starting situation",
+    "configuration checks catch missing exit, unsupported starts and gates without pads",
+    "save and restore preserve an in-progress cooperation, resume paused and finish identically",
+    "malformed maps and impossible numeric saves are rejected",
+    "regroup can release both frozen characters without fabricating a win",
+    "jump resolves a low ceiling and gravity returns the character to a real floor"
+  ],
+  "outcomes": [
+    {
+      "room": 0,
+      "seconds": 4.775000000000027,
+      "stats": {
+        "rescues": 0,
+        "falls": 0,
+        "gateActivations": 1,
+        "checkpoints": 2
+      }
+    },
+    {
+      "room": 1,
+      "seconds": 5.425000000000059,
+      "stats": {
+        "rescues": 1,
+        "falls": 0,
+        "gateActivations": 2,
+        "checkpoints": 2
+      }
+    },
+    {
+      "room": 2,
+      "seconds": 5.191666666666714,
+      "stats": {
+        "rescues": 0,
+        "falls": 0,
+        "gateActivations": 1,
+        "checkpoints": 2
+      }
+    }
+  ]
+}

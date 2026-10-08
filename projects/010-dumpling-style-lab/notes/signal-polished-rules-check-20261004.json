@@ -1,0 +1,55 @@
+{
+  "createdAt": "2026-10-03T16:45:11.022Z",
+  "mode": "non-browser production geometry and public-action simulation; DOM/WebGL facades, image decode omitted",
+  "checks": [
+    "Original timetable, sampled paths, exact stop distances, train positions, switch-lock, failure and tick logic match byte-for-byte",
+    "All 39 original module/asset bytes preserved; all 24 new files match original official archives",
+    "All fourteen new authored models resolve their original external palette URI within the versioned pack folder; five source CC0 licenses are bundled",
+    "Tight desktop camera retains both real signal posts and the switch in view, with exact logical 1120 × 630 hit positions",
+    "Public actions complete all six actual arrivals with exactly the original simulation trace, score, lock denial and won state",
+    "Simultaneous release still produces the same genuine locomotive/carriage distance collision and frozen failure state",
+    "Wrong route still fails only after the actual destination is reached, matching the original failure detail",
+    "setActive pause freezes positions and time; saved version-one original state restores unchanged in the refined module",
+    "390 px / 4:3 projection retains real controls and the public logical-pointer path toggles the western signal",
+    "Authored geometry loads and all deformed rail/scenery positions are finite within the local rendering budget"
+  ],
+  "passed": 10,
+  "authoredModels": 23,
+  "newModels": 14,
+  "meshCount": 307,
+  "vertexCount": 152201,
+  "arrivalTrace": [
+    {
+      "id": "W01",
+      "at": 9.900000000000006,
+      "target": "bay"
+    },
+    {
+      "id": "N02",
+      "at": 16.950000000000106,
+      "target": "forest"
+    },
+    {
+      "id": "W03",
+      "at": 24.000000000000206,
+      "target": "forest"
+    },
+    {
+      "id": "N04",
+      "at": 31.050000000000306,
+      "target": "bay"
+    },
+    {
+      "id": "W05",
+      "at": 38.09999999999997,
+      "target": "bay"
+    },
+    {
+      "id": "N06",
+      "at": 45.14999999999957,
+      "target": "forest"
+    }
+  ],
+  "preservation": 39,
+  "pending": "Root CUA actual visual review and UI smoke test; this report makes no browser or screenshot claim."
+}

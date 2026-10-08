@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-05",
+  "passed": true,
+  "scope": "Existing site integration checks and static build, independent of browser visual QA and human playtesting.",
+  "checks": [
+    {"command": "python -m unittest discover -s tests", "cwd": "F:/codex_project/0930_codex_project", "exit_code": 0, "passed": true, "count": 21},
+    {"command": "python scripts/build_site.py", "cwd": "F:/codex_project/0930_codex_project", "exit_code": 0, "passed": true, "built_demos": 19}
+  ]
+}

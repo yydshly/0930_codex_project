@@ -1,0 +1,17 @@
+import * as THREE from './vendor/showcase/three.module.js';
+import {GLTFLoader} from './vendor/showcase/GLTFLoader.js';
+
+export {THREE};
+export async function modelsAt(base,names){const loader=new GLTFLoader(),models={};await Promise.all(names.map(async name=>models[name]=await loader.loadAsync(base+name+'.glb')));return models}
+export function fitModel(gltf,size,axis='y'){
+ const group=new THREE.Group(),object=gltf.scene.clone(true),box=new THREE.Box3().setFromObject(object),dimensions=box.getSize(new THREE.Vector3()),middle=box.getCenter(new THREE.Vector3());object.position.sub(middle);group.add(object);group.scale.setScalar(size/(dimensions[axis]||1));object.traverse(n=>{if(n.isMesh){n.castShadow=true;n.receiveShadow=true}});return group;
+}
+export function surface3D(host,{background='#061321',fov=60,far=500,shadows=false}={}){
+ const scene=new THREE.Scene();scene.background=new THREE.Color(background);const camera=new THREE.PerspectiveCamera(fov,16/9,.05,far),renderer=new THREE.WebGLRenderer({antialias:true});renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.14;renderer.shadowMap.enabled=shadows;renderer.shadowMap.type=THREE.PCFSoftShadowMap;
+ const element=renderer.domElement;element.className='play-canvas';element.tabIndex=0;host.append(element);const resize=()=>{const w=host.clientWidth||1120,h=host.clientHeight||630;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix()},observer=new ResizeObserver(resize);observer.observe(host);resize();
+ function dispose(){observer.disconnect();const geometries=new Set(),materials=new Set(),textures=new Set();scene.traverse(o=>{if(o.geometry)geometries.add(o.geometry);for(const m of o.material?Array.isArray(o.material)?o.material:[o.material]:[]){materials.add(m);for(const v of Object.values(m))if(v?.isTexture)textures.add(v)}});if(scene.background?.isTexture)textures.add(scene.background);if(scene.environment?.isTexture)textures.add(scene.environment);for(const g of geometries)g.dispose();for(const m of materials)m.dispose();for(const t of textures)t.dispose();renderer.dispose();renderer.forceContextLoss();element.remove()}
+ let lastDraw=0,slowFrames=0,adaptive=false;
+ return {scene,camera,renderer,element,draw(){const now=performance.now();slowFrames=lastDraw&&now-lastDraw>90?slowFrames+1:Math.max(0,slowFrames-1);lastDraw=now;if(slowFrames>=12&&!adaptive){adaptive=true;renderer.setPixelRatio(.8);renderer.shadowMap.enabled=false;resize()}renderer.render(scene,camera)},dispose};
+}
+export function instanceStatics(scene,objects){scene.updateMatrixWorld(true);const groups=new Map();for(const object of objects)object.traverse(n=>{if(!n.isMesh||Array.isArray(n.material)||n.isSkinnedMesh)return;const key=n.geometry.uuid+'/'+n.material.uuid;if(!groups.has(key))groups.set(key,[]);groups.get(key).push(n)});for(const list of groups.values()){if(list.length<3)continue;const first=list[0],mesh=new THREE.InstancedMesh(first.geometry,first.material,list.length);list.forEach((n,i)=>{mesh.setMatrixAt(i,n.matrixWorld);n.visible=false});mesh.castShadow=first.castShadow;mesh.receiveShadow=first.receiveShadow;scene.add(mesh)}}
+export function projectPoint(camera,point){const p=new THREE.Vector3(point.x,point.y,point.z).project(camera);return {x:(p.x*.5+.5)*1120,y:(.5-p.y*.5)*630,visible:p.z>-1&&p.z<1&&Math.abs(p.x)<1&&Math.abs(p.y)<1}}

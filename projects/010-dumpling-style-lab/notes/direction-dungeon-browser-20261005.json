@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-05",
+  "url": "http://127.0.0.1:8962/direction-dungeon.html?demo=1#play",
+  "method": "Real Codex in-app browser UI through computer-use / cua_repl. Native accessibility controls and documented Playwright locators; DOM evaluation limited to visible layout measurements. Screenshots captured from the real browser, separately from Skia production frames.",
+  "status": "desktop_and_responsive_checks_passed",
+  "passed": true,
+  "checks": [
+    {"name": "Original material and structure assets render in the real game", "passed": true, "observed": "Overhead rooms, guardians, textured first-person stone corridors, a trap and the shared map are visible."},
+    {"name": "Pause and resume", "passed": true, "observed": "UI changes between 暂停 and 继续运转 / 开始运转; full-screen pause also changes the actual shared pause state."},
+    {"name": "Enter and return from possession", "passed": true, "observed": "Guard 1 becomes 亲自控制 with real 110/110 health, build tools become disabled, seven movement/combat controls appear; P restores management and enables construction."},
+    {"name": "Full-screen controls stay accessible", "passed": true, "observed": "Full-screen stage exposes pause, selected-guard possession, return to management, tool instructions and exit. Enter-guard and pause were activated by pointer; return and exit were additionally verified by keyboard activation of their actual visible buttons."},
+    {"name": "Guided excavation consumes budget and completes", "passed": true, "observed": "接通训练场 + canvas Enter reduces 700 gold to 692 and creates one digging task. After starting normal time the queue reaches zero and guard 3 progresses to level 2."},
+    {"name": "Actual reload restores paused state", "passed": true, "observed": "Reload preserves the current gold, charges, room count and guard levels; restore message appears and resume remains an explicit action."},
+    {"name": "390 by 844 responsive layout", "passed": true, "observed": "Document content width 375 <= viewport 390; game stage width 345.33 and height 215.83. All seven on-screen controls stay inside the stage and viewport."},
+    {"name": "Possession scrolls the game into view on a narrow screen", "passed": true, "observed": "After the sidebar possession action the stage appears at y=313.77 within the 844-high viewport, with health, return and movement controls visible."},
+    {"name": "Desktop layout", "passed": true, "observed": "Real desktop page and full-screen views were reviewed; a 1440-wide layout has content width 1425 with no horizontal overflow. Temporary viewport overrides were reset afterward."},
+    {"name": "Browser errors", "passed": true, "observed": "Captured warn/error log inspection returned an empty list."}
+  ],
+  "screenshots": [
+    {"file": "assets/directions/dungeon-browser/01-first-person-fullscreen.jpg", "purpose": "Actual full-screen shared-world guard view with textured walls, trap, minimap, health and controls."},
+    {"file": "assets/directions/dungeon-browser/02-management-browser.jpg", "purpose": "Actual paused management entrance at the browser's restored default narrow sizing."},
+    {"file": "assets/directions/dungeon-browser/03-responsive-first-person.jpg", "purpose": "Actual 390-wide responsive guard view after automatic game positioning."}
+  ],
+  "fixes_from_review": [
+    "Added in-stage full-screen actions so management controls remain available.",
+    "Moved actual management statistics above the map to avoid overlap with full-screen actions.",
+    "Removed duplicate embedded view/health instructions that overlapped the minimap and controls.",
+    "Automatically positions the game after entering possession on narrow screens.",
+    "Corrected the guard/miner count label and named the guided objective 接通训练场."
+  ],
+  "remaining": [
+    "Real phone hardware multitouch, orientation changes and mobile browser full-screen behaviour have not been validated; callback tests cover multiple pointer identities and cancellation.",
+    "No sustained performance profiling or broad browser/device compatibility claim.",
+    "Human emotional appeal, replay intention and commercial product readiness remain unverified."
+  ]
+}

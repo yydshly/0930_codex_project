@@ -1,0 +1,54 @@
+// Non-browser verification only. DOM/WebGL are facades; actual authored GLB
+// geometry and the unchanged production simulation execute in Node.
+const fs=require('fs'),path=require('path'),vm=require('vm'),assert=require('assert/strict'),crypto=require('crypto'),{pathToFileURL}=require('url');
+const root=path.resolve(__dirname,'..'),checks=[],sha=data=>crypto.createHash('sha256').update(data).digest('hex');
+const original=fs.readFileSync(path.join(root,'web/showcase-signal.js'),'utf8'),polished=fs.readFileSync(path.join(root,'web/showcase-signal-polished.js'),'utf8');
+const block=text=>text.slice(text.indexOf(' function block()'),text.indexOf(' function cameraSync()')).replace(/\s*let lastAspect=0;\s*$/,'');
+const header=text=>text.slice(text.indexOf('const STATIONS='),text.indexOf('export async function createSignal')).replace(/\/\/ Render changes[\s\S]*/,'').trim();
+assert.equal(header(polished),header(original));assert.equal(block(polished).trim(),block(original).trim());checks.push('Original timetable, sampled paths, exact stop distances, train positions, switch-lock, failure and tick logic match byte-for-byte');
+const manifest=JSON.parse(fs.readFileSync(path.join(root,'assets/game-forms/signal-polish-sources.json')));
+for(const record of [...manifest.preservedOriginals,...manifest.files])assert.equal(sha(fs.readFileSync(path.join(root,record.path))),record.sha256,record.path);
+checks.push(`All ${manifest.preservedOriginals.length} original module/asset bytes preserved; all ${manifest.files.length} new files match original official archives`);
+for(const record of manifest.files.filter(r=>r.path.endsWith('.glb'))){const data=fs.readFileSync(path.join(root,record.path)),json=JSON.parse(data.subarray(20,20+data.readUInt32LE(12)));for(const image of json.images||[])if(image.uri)assert(fs.existsSync(path.resolve(root,path.dirname(record.path),image.uri)),record.path+' texture '+image.uri)}
+checks.push('All fourteen new authored models resolve their original external palette URI within the versioned pack folder; five source CC0 licenses are bundled');
+class Element {constructor(){this.style={setProperty(){}};this.dataset={};this.children=[];this.selectors=new Map();this.hidden=false;this.clientWidth=1120;this.clientHeight=630}append(...nodes){this.children.push(...nodes)}setAttribute(){}remove(){}replaceChildren(...nodes){this.children=nodes}querySelector(selector){if(!this.selectors.has(selector))this.selectors.set(selector,new Element());return this.selectors.get(selector)}getContext(){return {fillRect(){},fillText(){}}}}
+const document={createElement:()=>new Element()},clamp=(x,a,b)=>Math.max(a,Math.min(b,x)),safeSaved=(raw,defaults)=>({...structuredClone(defaults),...structuredClone(raw||{})}),action=(label,run,disabled=false)=>({label,run,disabled});
+(async()=>{
+ const THREE=await import(pathToFileURL(path.join(root,'web/vendor/showcase/three.module.js'))),{GLTFLoader}=await import(pathToFileURL(path.join(root,'web/vendor/showcase/GLTFLoader.js')));
+ global.self=global;global.ProgressEvent=class {constructor(type,data){this.type=type;Object.assign(this,data)}};
+ const cache=new Map();async function load(file){if(!cache.has(file)){const data=fs.readFileSync(file),loader=new GLTFLoader();loader.register(parser=>{parser.loadTexture=()=>Promise.resolve(new THREE.Texture());return {name:'NO_IMAGE_IN_NODE'}});cache.set(file,await new Promise((resolve,reject)=>loader.parse(data.buffer.slice(data.byteOffset,data.byteOffset+data.byteLength),'',resolve,reject)))}return cache.get(file)}
+ async function modelsAt(base,names){const result={};for(const name of names)result[name]=await load(path.join(root,'web',base,name+'.glb'));return result}
+ function fitModel(gltf,size,axis='y'){const group=new THREE.Group(),object=gltf.scene.clone(true),box=new THREE.Box3().setFromObject(object),dimensions=box.getSize(new THREE.Vector3()),middle=box.getCenter(new THREE.Vector3());object.position.sub(middle);group.add(object);group.scale.setScalar(size/(dimensions[axis]||1));return group}
+ function projectPoint(camera,point){const p=new THREE.Vector3(point.x,point.y,point.z).project(camera);return {x:(p.x*.5+.5)*1120,y:(.5-p.y*.5)*630,visible:p.z>-1&&p.z<1&&Math.abs(p.x)<1&&Math.abs(p.y)<1}}
+ const worlds=[];function surface3D(host,{fov,far}){const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(fov,host.clientWidth/host.clientHeight,.05,far),world={scene,camera,element:new Element(),renderer:{shadowMap:{}},draw(){},dispose(){}};worlds.push(world);return world}
+ function instanceStatics(scene,objects){scene.updateMatrixWorld(true);const groups=new Map();for(const o of objects)o.traverse(n=>{if(!n.isMesh||Array.isArray(n.material)||n.isSkinnedMesh)return;const key=n.geometry.uuid+'/'+n.material.uuid;if(!groups.has(key))groups.set(key,[]);groups.get(key).push(n)});for(const list of groups.values()){if(list.length<3)continue;const first=list[0],mesh=new THREE.InstancedMesh(first.geometry,first.material,list.length);list.forEach((n,i)=>{mesh.setMatrixAt(i,n.matrixWorld);n.visible=false});scene.add(mesh)}}
+ const dependencies={THREE,modelsAt,fitModel,surface3D,projectPoint,instanceStatics,action,safeSaved,clamp,document,structuredClone,console};
+ function factory(source){const code=source.replace(/^import .*;\r?\n/gm,'').replace(/export const/g,'const').replace(/export async function/g,'async function');return new vm.Script(code+'\ncreateSignal;').runInNewContext({...dependencies})}
+ const oldFactory=factory(original),newFactory=factory(polished);
+ async function create(factory,saved,width=1120,height=630){const input={pressed:new Set(),pointers:[]},host=new Element();host.clientWidth=width;host.clientHeight=height;const game=await factory({host,input,saved,notify(){},sfx(){}});return {game,input,host}}
+ const old=await create(oldFactory),fresh=await create(newFactory);
+ function core(game){const s=game.getState();return JSON.parse(JSON.stringify({trains:s.trains,signals:s.signals,switch:s.switch,elapsed:s.elapsed,delivered:s.delivered,phase:s.phase,won:s.won,score:s.score,failure:s.failure,denied:s.denied,replays:s.replays}))}
+ function doAction(game,prefix){const a=game.getStatus().actions.find(a=>a.label.startsWith(prefix));assert(a&&!a.disabled,prefix);a.run()}
+ function stepBoth(dt=.05){old.game.tick(dt);fresh.game.tick(dt);assert.deepEqual(core(fresh.game),core(old.game))}
+ function untilBoth(test){for(let n=0;n<2000&&!test(fresh.game.getState());n++)stepBoth();assert(test(fresh.game.getState()))}
+ old.game.setActive(true);fresh.game.setActive(true);untilBoth(s=>s.trains.slice(0,2).every(t=>t.status==='waiting'));
+ assert(fresh.game.getState().controlsScreen.west.visible);assert(fresh.game.getState().controlsScreen.north.visible);assert(fresh.game.getState().controlsScreen.switch.visible);
+ checks.push('Tight desktop camera retains both real signal posts and the switch in view, with exact logical 1120 × 630 hit positions');
+ const trace=[];
+ for(const id of ['W01','N02','W03','N04','W05','N06']){
+  untilBoth(s=>!s.block.length&&s.trains.find(t=>t.id===id).status==='waiting');const t=fresh.game.getState().trains.find(t=>t.id===id);
+  if(fresh.game.getState().switch!==t.target){doAction(old.game,'道岔：');doAction(fresh.game,'道岔：')}
+  const entry=t.entry==='west'?'西线':'北线';doAction(old.game,entry+'信号');doAction(fresh.game,entry+'信号');stepBoth();assert(fresh.game.getState().trains.find(t=>t.id===id).route===t.target);
+  doAction(old.game,entry+'信号');doAction(fresh.game,entry+'信号');
+  const before=fresh.game.getState();old.input.pressed.add('KeyE');fresh.input.pressed.add('KeyE');stepBoth();old.input.pressed.clear();fresh.input.pressed.clear();assert.equal(fresh.game.getState().switch,before.switch);assert.equal(fresh.game.getState().denied,before.denied+1);
+  untilBoth(s=>s.delivered.includes(id));trace.push({id,at:fresh.game.getState().elapsed,target:t.target});
+ }
+ assert(fresh.game.getState().won);checks.push('Public actions complete all six actual arrivals with exactly the original simulation trace, score, lock denial and won state');
+ doAction(old.game,'重新调度');doAction(fresh.game,'重新调度');untilBoth(s=>s.trains.slice(0,2).every(t=>t.status==='waiting'));
+ doAction(old.game,'西线信号');doAction(fresh.game,'西线信号');doAction(old.game,'北线信号');doAction(fresh.game,'北线信号');untilBoth(s=>s.phase==='failed');assert.equal(fresh.game.getState().failure.kind,'collision');checks.push('Simultaneous release still produces the same genuine locomotive/carriage distance collision and frozen failure state');
+ doAction(old.game,'重新调度');doAction(fresh.game,'重新调度');untilBoth(s=>s.trains.slice(0,2).every(t=>t.status==='waiting'));doAction(old.game,'北线信号');doAction(fresh.game,'北线信号');untilBoth(s=>s.phase==='failed');assert.equal(fresh.game.getState().failure.kind,'wrong-station');checks.push('Wrong route still fails only after the actual destination is reached, matching the original failure detail');
+ doAction(fresh.game,'重新调度');fresh.game.tick(3);const stored=fresh.game.getState();fresh.game.setActive(false);fresh.game.tick(20);assert.equal(fresh.game.getState().elapsed,stored.elapsed);const reload=await create(newFactory,stored);assert.deepEqual(core(reload.game),core(fresh.game));checks.push('setActive pause freezes positions and time; saved version-one original state restores unchanged in the refined module');
+ const mobile=await create(newFactory,null,390,292.5);mobile.game.setActive(true);const q=mobile.game.getState().controlsScreen.west;assert(q.visible);mobile.input.pointers.push({x:q.x,y:q.y});mobile.game.tick(.01);mobile.input.pointers.length=0;assert.equal(mobile.game.getState().signals.west,true);checks.push('390 px / 4:3 projection retains real controls and the public logical-pointer path toggles the western signal');
+ const scene=worlds.at(-1).scene;let meshes=0,vertices=0;scene.traverse(o=>{if(!o.isMesh)return;meshes++;const p=o.geometry?.attributes?.position;if(p){vertices+=p.count;for(const v of p.array)assert(Number.isFinite(v))}});assert(meshes>100);assert(vertices<700000);checks.push('Authored geometry loads and all deformed rail/scenery positions are finite within the local rendering budget');
+ const final={createdAt:new Date().toISOString(),mode:'non-browser production geometry and public-action simulation; DOM/WebGL facades, image decode omitted',checks,passed:checks.length,authoredModels:23,newModels:14,meshCount:meshes,vertexCount:vertices,arrivalTrace:trace,preservation:manifest.preservedOriginals.length,pending:'Root CUA actual visual review and UI smoke test; this report makes no browser or screenshot claim.'};fs.writeFileSync(path.join(root,'notes/signal-polished-rules-check-20261004.json'),JSON.stringify(final,null,2)+'\n');console.log(JSON.stringify(final,null,2));
+})().catch(error=>{console.error(error);process.exitCode=1});

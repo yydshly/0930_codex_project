@@ -1,0 +1,111 @@
+{
+  "production_visual_review": true,
+  "browser_acceptance_complete": false,
+  "review_method": "Viewed all nine initial/progress/complete production frames via contact sheets and full-size progress images; reviewed final corrected tactical progress, orbital progress and completion sheet, then final original step numbering. Canvas2D via Skia, not browser screenshots.",
+  "frames": [
+    {
+      "id": "dicework",
+      "phase": "initial",
+      "file": "assets/game-forms/trajectories-qa/dicework-initial.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D via Skia; normal command playthrough, not browser screenshots.",
+      "sha256": "7b75314c4ca8b9aa8cf901949b3ca88e3b2b9bc172297700f79c7f446f751c48",
+      "review_observation": "五枚象牙骰面的实际点数清晰，锁定骰有状态框，六类分值和选择可辨，完成保留最后结果与实际三轮记录，不再暗示尚未开始。"
+    },
+    {
+      "id": "dicework",
+      "phase": "progress",
+      "file": "assets/game-forms/trajectories-qa/dicework-progress.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D via Skia; normal command playthrough, not browser screenshots.",
+      "sha256": "ffaa892298f0f1b5660c80c5d6977727b643120209d89092a6c9a7e4aee6837a",
+      "review_observation": "五枚象牙骰面的实际点数清晰，锁定骰有状态框，六类分值和选择可辨，完成保留最后结果与实际三轮记录，不再暗示尚未开始。"
+    },
+    {
+      "id": "dicework",
+      "phase": "complete",
+      "file": "assets/game-forms/trajectories-qa/dicework-complete.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D via Skia; normal command playthrough, not browser screenshots.",
+      "sha256": "e6ce7a099d46d413100e30f6b55320ffa2db056f98b2fcdc20e9faa59517cabf",
+      "review_observation": "五枚象牙骰面的实际点数清晰，锁定骰有状态框，六类分值和选择可辨，完成保留最后结果与实际三轮记录，不再暗示尚未开始。"
+    },
+    {
+      "id": "synchro",
+      "phase": "initial",
+      "file": "assets/game-forms/trajectories-qa/synchro-initial.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D via Skia; normal command playthrough, not browser screenshots.",
+      "sha256": "b04a98908c7a3bd755934b74049a8942f91cbcb734c464076733bfff84397aec",
+      "review_observation": "四个箱体与真实遮挡格吻合，侦察机与探机有颜色、编号及耐久，过程中双方实际沿剩余第三、第四步同步移动，完成两探机耐久归零并抵达信标。"
+    },
+    {
+      "id": "synchro",
+      "phase": "progress",
+      "file": "assets/game-forms/trajectories-qa/synchro-progress.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D via Skia; normal command playthrough, not browser screenshots.",
+      "sha256": "872e01225f0ad642d1e6c47eb3aefeeb6cbeaf4706c3b08630190ef0d8378781",
+      "review_observation": "四个箱体与真实遮挡格吻合，侦察机与探机有颜色、编号及耐久，过程中双方实际沿剩余第三、第四步同步移动，完成两探机耐久归零并抵达信标。"
+    },
+    {
+      "id": "synchro",
+      "phase": "complete",
+      "file": "assets/game-forms/trajectories-qa/synchro-complete.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D via Skia; normal command playthrough, not browser screenshots.",
+      "sha256": "84d0da239dc557d21a55fabdd12a490e6003697311b48920915d8f727521f4e9",
+      "review_observation": "四个箱体与真实遮挡格吻合，侦察机与探机有颜色、编号及耐久，过程中双方实际沿剩余第三、第四步同步移动，完成两探机耐久归零并抵达信标。"
+    },
+    {
+      "id": "perigee",
+      "phase": "initial",
+      "file": "assets/game-forms/trajectories-qa/perigee-initial.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D via Skia; normal command playthrough, not browser screenshots.",
+      "sha256": "fd60db98bf75bc410e556931782992d937dbc14bb9e84573243e6eda0f284a39",
+      "review_observation": "可见行星轮廓对应碰撞半径，真实轨迹与预测线可区分，飞船与交会站标签不被底部裁切；完成距离与相对速度实际达标。"
+    },
+    {
+      "id": "perigee",
+      "phase": "progress",
+      "file": "assets/game-forms/trajectories-qa/perigee-progress.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D via Skia; normal command playthrough, not browser screenshots.",
+      "sha256": "7c366b3dcb87b334618cabcb1334c2bc6c15e7c43cc10deff8e30c5427b4e203",
+      "review_observation": "可见行星轮廓对应碰撞半径，真实轨迹与预测线可区分，飞船与交会站标签不被底部裁切；完成距离与相对速度实际达标。"
+    },
+    {
+      "id": "perigee",
+      "phase": "complete",
+      "file": "assets/game-forms/trajectories-qa/perigee-complete.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D via Skia; normal command playthrough, not browser screenshots.",
+      "sha256": "bc9167ba9352ebbcab2b71188709fed710b56c88359a1375516aaef48e9bb879",
+      "review_observation": "可见行星轮廓对应碰撞半径，真实轨迹与预测线可区分，飞船与交会站标签不被底部裁切；完成距离与相对速度实际达标。"
+    }
+  ],
+  "fixes": [
+    "同时争格的单位共同等待，避免处理顺序偏差。",
+    "执行过的路线不再在恢复时当作未来路线检查。",
+    "轨道模拟时钟随实际加速积分前进，行星显示轮廓对应碰撞半径。",
+    "骰局完成后显示清晰结果与完成提示。",
+    "战术封面使用真实同步执行中途，剩余路线保留原来的第三、第四步编号。",
+    "战术完成槽位显示实际 4/4，轨道标签移到可见范围。",
+    "原生推力按住控件在取消、暂停和失去焦点时释放指针捕获。"
+  ],
+  "verified": [
+    "三段通过正常命令完成，完成状态没有注入。",
+    "54 项规则、46 项生产控件与生命周期检查。",
+    "九帧生产绘图，绘制及暂停不修改状态，实际生产工厂恢复结果逐项一致。",
+    "原有 98 种形式、107 个入口逐项一致，2483 个受保护旧文件保持原样。",
+    "21 个打包目标和 26 个 HTTP 地址与工作区内容一致，旧回归、六项站点测试和十九个演示构建通过。"
+  ],
+  "not_verified": [
+    "真实浏览器窄屏、全屏、触摸与无障碍树",
+    "输入焦点、真实按键体验与设备帧率",
+    "浏览器刷新存档和真实声音输出"
+  ],
+  "browser_blocker": "cua.getState failed during initialization: trusted Node process exited unexpectedly; kernel reset, rerun your request. No browser state returned, no alternate browser automation used.",
+  "scope": "三段原创形式演示：六类三轮锁骰、公开意图两对两同步规划、无量纲二维单中心引力交会。尚未完成产品设备验收。"
+}

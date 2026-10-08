@@ -1,0 +1,156 @@
+{
+  "date": "2026-10-02",
+  "base": "http://127.0.0.1:8962/",
+  "imagesValidated": true,
+  "qaNote": "Only the remote original iframe is isolated. Local resources keep their real responses; missing extension WebP images are recorded as deferred in --skip-images mode. Parent and child selection, visibility, resizing and responsive layout use the real pages. These engineering checks do not establish player emotion or willingness to continue.",
+  "checks": [
+    {
+      "name": "主导航入口指向新游戏段",
+      "passed": true
+    },
+    {
+      "name": "旧三段默认折叠",
+      "passed": true
+    },
+    {
+      "name": "旧二十种默认折叠",
+      "passed": true
+    },
+    {
+      "name": "父URL初始指定搬家方向",
+      "passed": true
+    },
+    {
+      "name": "初始iframe位于视口外",
+      "passed": true
+    },
+    {
+      "name": "父页初始离屏时子游戏时钟停止",
+      "passed": true,
+      "detail": "movers.time remains unchanged after initial message settling"
+    },
+    {
+      "name": "方向 movers 同步子页、父URL和完整页面CTA",
+      "passed": true
+    },
+    {
+      "name": "滚入视口后子游戏时钟恢复",
+      "passed": true
+    },
+    {
+      "name": "桌面iframe高度随子页内容调整",
+      "passed": true,
+      "detail": "{\"actual\":998,\"expected\":998}"
+    },
+    {
+      "name": "方向 islands 同步子页、父URL和完整页面CTA",
+      "passed": true
+    },
+    {
+      "name": "子页切换浮岛真实渲染器可用",
+      "passed": true
+    },
+    {
+      "name": "方向 inn 同步子页、父URL和完整页面CTA",
+      "passed": true
+    },
+    {
+      "name": "方向 movers 同步子页、父URL和完整页面CTA",
+      "passed": true
+    },
+    {
+      "name": "方向 inn 同步子页、父URL和完整页面CTA",
+      "passed": true
+    },
+    {
+      "name": "方向 islands 同步子页、父URL和完整页面CTA",
+      "passed": true
+    },
+    {
+      "name": "刷新保留父页选中的浮岛方向",
+      "passed": true
+    },
+    {
+      "name": "方向 islands 同步子页、父URL和完整页面CTA",
+      "passed": true
+    },
+    {
+      "name": "方向 movers 同步子页、父URL和完整页面CTA",
+      "passed": true
+    },
+    {
+      "name": "滚离视口后子游戏再次停止",
+      "passed": true
+    },
+    {
+      "name": "再次滚入视口能继续运行",
+      "passed": true
+    },
+    {
+      "name": "手机iframe高度随子页内容调整",
+      "passed": true,
+      "detail": "{\"actual\":846,\"expected\":846}"
+    },
+    {
+      "name": "手机父研究页没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "手机子游戏没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "手机子游戏提供触屏控制",
+      "passed": true
+    },
+    {
+      "name": "方向 islands 同步子页、父URL和完整页面CTA",
+      "passed": true
+    },
+    {
+      "name": "返回桌面后iframe重新调整高度",
+      "passed": true,
+      "detail": "{\"actual\":996,\"expected\":996}"
+    },
+    {
+      "name": "inn 场景WebP真实加载",
+      "passed": true
+    },
+    {
+      "name": "islands 场景WebP真实加载",
+      "passed": true
+    },
+    {
+      "name": "movers 场景WebP真实加载",
+      "passed": true
+    },
+    {
+      "name": "旧#play-lab直达链接自动展开旧三段",
+      "passed": true
+    },
+    {
+      "name": "旧直达链接仍选择神秘探索",
+      "passed": true
+    },
+    {
+      "name": "旧二十种在旧三段直达时仍折叠",
+      "passed": true
+    },
+    {
+      "name": "本地资源无未豁免HTTP错误",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "父子页无JavaScript运行错误",
+      "passed": true,
+      "detail": "[]"
+    }
+  ],
+  "screenshots": [
+    "assets/extension-worlds-overview.webp"
+  ],
+  "errors": [],
+  "localResponses": [],
+  "deferredImages": []
+}

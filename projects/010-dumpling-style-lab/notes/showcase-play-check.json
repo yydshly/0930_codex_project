@@ -1,0 +1,727 @@
+{
+  "at": "2026-10-03T02:14:31.964Z",
+  "method": "isolated browser, real keyboard and pointer input; state is read only",
+  "results": [
+    {
+      "id": "station",
+      "checks": [
+        "three spatial puzzles solved",
+        "battery carried",
+        "walked through all doors"
+      ],
+      "state": {
+        "x": 0.23345000000000948,
+        "z": -25.057049999999975,
+        "yaw": 0,
+        "pitch": 0,
+        "solved": [
+          true,
+          true,
+          true
+        ],
+        "mirror": 1,
+        "battery": "installed",
+        "order": [
+          0,
+          2,
+          1
+        ],
+        "won": true
+      }
+    },
+    {
+      "id": "hunter",
+      "checks": [
+        "real attack and dodge",
+        "kills 7",
+        "phase lost"
+      ],
+      "state": {
+        "x": 560,
+        "y": 465,
+        "hp": 0,
+        "maxHp": 100,
+        "wave": 0,
+        "kills": 7,
+        "damage": 28,
+        "attackRate": 0.38,
+        "dashRate": 1.05,
+        "phase": "lost",
+        "upgrades": [],
+        "enemies": [
+          {
+            "id": 0,
+            "type": 0,
+            "x": 437.83974594056116,
+            "y": 373.3295273424555,
+            "hp": -1,
+            "mode": "move",
+            "clock": 1.1333000000000002,
+            "targetX": 560,
+            "targetY": 465
+          },
+          {
+            "id": 1,
+            "type": 0,
+            "x": 456.5760220439143,
+            "y": 351.66700276074704,
+            "hp": -57,
+            "mode": "warn",
+            "clock": 0.5833999999999999,
+            "targetX": 560,
+            "targetY": 465
+          },
+          {
+            "id": 2,
+            "type": 1,
+            "x": 521.3585872091368,
+            "y": 314.37928818083753,
+            "hp": -83,
+            "mode": "warn",
+            "clock": 0.36669999999999975,
+            "targetX": 560,
+            "targetY": 465
+          },
+          {
+            "id": 3,
+            "type": 2,
+            "x": 745.5762499404126,
+            "y": 328.8398136141815,
+            "hp": 55,
+            "mode": "move",
+            "clock": 0.7499999999999984,
+            "targetX": 560,
+            "targetY": 465
+          }
+        ],
+        "won": false
+      }
+    },
+    {
+      "id": "expedition",
+      "checks": [
+        "animated walking and jump",
+        "collected real lamp stone"
+      ],
+      "state": {
+        "x": -4.855000000000005,
+        "z": -1.9245599999999958,
+        "py": 0,
+        "vy": 0,
+        "camYaw": 2.7755575615628914e-17,
+        "stones": [
+          0
+        ],
+        "blocks": {},
+        "stock": 8,
+        "removed": 0,
+        "selected": {
+          "x": 0,
+          "z": 0
+        },
+        "won": false
+      }
+    },
+    {
+      "id": "builder",
+      "checks": [
+        "animated walking and jump",
+        "block construction and removal"
+      ],
+      "state": {
+        "x": -5.020000000000007,
+        "z": -1.8149999999999997,
+        "py": 0,
+        "vy": 0,
+        "camYaw": 2.7755575615628914e-17,
+        "stones": [],
+        "blocks": {},
+        "stock": 8,
+        "removed": 1,
+        "selected": {
+          "x": 0,
+          "z": 0
+        },
+        "won": false
+      }
+    },
+    {
+      "id": "ledger",
+      "checks": [
+        "five rounds completed",
+        "real card selection, redraw and upgrades"
+      ],
+      "state": {
+        "round": 5,
+        "score": 241,
+        "hands": 1,
+        "discards": 1,
+        "hand": [
+          28,
+          27,
+          1,
+          26,
+          26,
+          10,
+          19
+        ],
+        "selected": [],
+        "upgrade": 16,
+        "phase": "won",
+        "seed": 2738254306,
+        "credits": 26,
+        "history": [
+          "第 1 轮：同类货物 ×1.8 · 基础 26 × 路线 1.80，收入 47",
+          "第 2 轮：同类货物 ×1.8 · 基础 40 × 路线 3.13，收入 125",
+          "第 3 轮：基础 40 × 路线 2.10，收入 84",
+          "第 3 轮：基础 36 × 路线 2.10，收入 76",
+          "第 4 轮：基础 54 × 路线 1.50，收入 81",
+          "第 4 轮：基础 64 × 路线 1.00，收入 64",
+          "第 4 轮：基础 64 × 路线 1.00，收入 64",
+          "第 5 轮：同类货物 ×1.8 · 基础 44 × 路线 3.35，收入 147",
+          "第 5 轮：基础 54 × 路线 1.74，收入 94"
+        ],
+        "supportBonus": 0,
+        "routeBonus": 0,
+        "relics": [
+          "货仓扩建",
+          "货仓扩建",
+          "货仓扩建",
+          "货仓扩建"
+        ]
+      }
+    },
+    {
+      "id": "afterdark",
+      "checks": [
+        "three illustrated scenes reached",
+        "battery and report collected",
+        "broadcast ending"
+      ],
+      "state": {
+        "chapter": 2,
+        "x": 818.6750000000003,
+        "y": 412,
+        "vy": 0,
+        "battery": true,
+        "power": true,
+        "log": true,
+        "end": "你把记录送进公共广播。远处一盏盏窗灯亮起来，列车上的人终于知道这一夜发生了什么。",
+        "choice": null,
+        "alerts": 0,
+        "exposure": 0,
+        "decision": "truth"
+      }
+    },
+    {
+      "id": "range",
+      "checks": [
+        "real aimed hit and reload cycle",
+        "first-person movement",
+        "hits 1"
+      ],
+      "state": {
+        "x": 0,
+        "z": 5.375000000000001,
+        "yaw": -1.4928295898437498,
+        "pitch": -0.1545333251953125,
+        "hp": 70,
+        "ammo": 12,
+        "reload": 0,
+        "dead": [
+          0
+        ],
+        "shots": 12,
+        "hits": 1,
+        "won": false
+      }
+    },
+    {
+      "id": "checkpoint",
+      "checks": [
+        "six real document decisions",
+        "correct wages and expenses"
+      ],
+      "state": {
+        "index": 6,
+        "credits": 14,
+        "correct": 6,
+        "exceptions": 0,
+        "phase": "ended",
+        "history": [
+          "米拉：放行，核验正确 +3",
+          "洛安：拒绝，核验正确 +3",
+          "苏禾：拒绝，核验正确 +3",
+          "贺川：放行，核验正确 +3",
+          "安弥：拒绝，核验正确 +3",
+          "方守：放行，核验正确 +3"
+        ],
+        "field": null,
+        "end": "今天的收入支付了食物与供暖。你严格遵守了规则，关口的秩序维持到了夜里。",
+        "lastDecision": null
+      }
+    },
+    {
+      "id": "factory",
+      "checks": [
+        "built powered transport network",
+        "ten actual deliveries"
+      ],
+      "state": {
+        "cells": {
+          "0:3": {
+            "type": "mine",
+            "dir": 0
+          },
+          "1:3": {
+            "type": "belt",
+            "dir": 0
+          },
+          "2:3": {
+            "type": "belt",
+            "dir": 0
+          },
+          "6:3": {
+            "type": "smelt",
+            "dir": 0
+          },
+          "9:3": {
+            "type": "depot",
+            "dir": 0
+          },
+          "3:3": {
+            "type": "belt",
+            "dir": 0
+          },
+          "4:3": {
+            "type": "belt",
+            "dir": 0
+          },
+          "5:3": {
+            "type": "belt",
+            "dir": 0
+          },
+          "7:3": {
+            "type": "belt",
+            "dir": 0
+          },
+          "8:3": {
+            "type": "belt",
+            "dir": 0
+          },
+          "6:2": {
+            "type": "generator",
+            "dir": 0
+          }
+        },
+        "items": [
+          {
+            "x": 7,
+            "y": 3,
+            "kind": "ingot"
+          },
+          {
+            "x": 5,
+            "y": 3,
+            "kind": "ore"
+          },
+          {
+            "x": 3,
+            "y": 3,
+            "kind": "ore"
+          },
+          {
+            "x": 1,
+            "y": 3,
+            "kind": "ore"
+          }
+        ],
+        "budget": 3,
+        "delivered": 10,
+        "tool": "generator",
+        "dir": 0,
+        "won": true,
+        "productionPaused": false,
+        "edits": [
+          {
+            "key": "3:3",
+            "before": null,
+            "after": {
+              "type": "belt",
+              "dir": 0
+            },
+            "delta": -2
+          },
+          {
+            "key": "4:3",
+            "before": null,
+            "after": {
+              "type": "belt",
+              "dir": 0
+            },
+            "delta": -2
+          },
+          {
+            "key": "5:3",
+            "before": null,
+            "after": {
+              "type": "belt",
+              "dir": 0
+            },
+            "delta": -2
+          },
+          {
+            "key": "7:3",
+            "before": null,
+            "after": {
+              "type": "belt",
+              "dir": 0
+            },
+            "delta": -2
+          },
+          {
+            "key": "8:3",
+            "before": null,
+            "after": {
+              "type": "belt",
+              "dir": 0
+            },
+            "delta": -2
+          },
+          {
+            "key": "6:2",
+            "before": null,
+            "after": {
+              "type": "generator",
+              "dir": 0
+            },
+            "delta": -5
+          }
+        ]
+      }
+    },
+    {
+      "id": "garden",
+      "checks": [
+        "planted watered and harvested three crops",
+        "gift and neighbor letter"
+      ],
+      "state": {
+        "day": 4,
+        "energy": 9,
+        "seeds": 3,
+        "harvest": 2,
+        "gifts": 1,
+        "tool": "harvest",
+        "selected": 1,
+        "plots": [
+          {
+            "seed": false,
+            "water": false,
+            "growth": 0
+          },
+          {
+            "seed": false,
+            "water": false,
+            "growth": 0
+          },
+          {
+            "seed": false,
+            "water": false,
+            "growth": 0
+          },
+          {
+            "seed": false,
+            "water": false,
+            "growth": 0
+          },
+          {
+            "seed": false,
+            "water": false,
+            "growth": 0
+          },
+          {
+            "seed": false,
+            "water": false,
+            "growth": 0
+          }
+        ],
+        "phase": "ended",
+        "letter": "邻居：我把你送来的菜放进了今晚的汤里。明天来，一起吃吧。"
+      }
+    },
+    {
+      "id": "order",
+      "checks": [
+        "rotation and hard drop",
+        "collision and scoring"
+      ],
+      "state": {
+        "board": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            3,
+            3,
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "score": 52,
+        "lines": 0,
+        "type": 6,
+        "next": 1,
+        "x": 3,
+        "y": 0,
+        "matrix": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "over": false,
+        "hold": null,
+        "heldThisTurn": false,
+        "bag": [
+          5,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "id": "wonder",
+      "checks": [
+        "real platform landing",
+        "jump and collectible route"
+      ],
+      "state": {
+        "x": 474.2119999999999,
+        "y": 395,
+        "vy": 0,
+        "stamps": [
+          0
+        ],
+        "checkpoint": 80,
+        "hits": 0,
+        "won": false,
+        "movingClock": 3.0404999999880733
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,37 @@
+const {chromium}=require('./browser.cjs'),assert=require('assert/strict'),fs=require('fs/promises'),path=require('path');
+const root=path.resolve(__dirname,'..'),base='http://127.0.0.1:8962/';
+(async()=>{
+ const browser=await chromium.launch({headless:true,args:['--ignore-gpu-blocklist','--enable-webgl']});
+ try{
+  const context=await browser.newContext({viewport:{width:1500,height:1100}}),p=await context.newPage(),errors=[],missing=[],checks=[];
+  p.on('pageerror',e=>errors.push(e.message));p.on('response',r=>{if(r.status()>=400&&!r.url().endsWith('favicon.ico'))missing.push(r.url())});
+  const state=()=>p.evaluate(()=>gameShowcase.state);
+  async function hold(keys,test,limit=18000){await p.locator('canvas.play-canvas').scrollIntoViewIfNeeded();await p.locator('#play-mount').focus();for(const k of keys)await p.keyboard.down(k);const start=Date.now();while(Date.now()-start<limit){const s=await state();if(test(s))break;if(s.phase==='down')break;await p.waitForTimeout(70)}for(const k of keys)await p.keyboard.up(k);assert(test(await state()),'Input '+keys+' did not reach the expected state')}
+  await p.goto(base+'showcase.html?play=breach&qa=1#play');await p.waitForFunction(()=>window.gameShowcase?.ready||window.gameShowcase?.error);assert.equal(await p.evaluate(()=>gameShowcase.error),null);assert.equal(await p.evaluate(()=>gameShowcase.total),45);await p.locator('#play-start').click();
+  await hold(['j'],s=>s.enemies[0].hp===0,5000);assert((await state()).hits>=4);checks.push('Real sustained fire hits and destroys the first sentry');
+  await p.locator('#play-mount').focus();await p.keyboard.press('Space');await p.waitForFunction(()=>gameShowcase.state.y<420);await p.waitForFunction(()=>gameShowcase.state.y===467);checks.push('Real jump leaves and lands on the catwalk');
+  await hold(['d','j'],s=>s.x>=1250);assert.equal((await state()).weapon,'spread');assert.equal((await state()).checkpoint,1230);checks.push('Scrolling movement obtains the actual spread pickup and checkpoint');
+  await p.locator('#play-pause').click();const saved=await state();await p.reload();await p.waitForFunction(()=>window.gameShowcase?.ready);assert.equal((await state()).weapon,'spread');assert.equal((await state()).checkpoint,1230);assert(Math.abs((await state()).x-saved.x)<.01);await p.locator('#play-start').click();checks.push('Run-and-gun movement, weapon and checkpoint survive reload');
+  // Actual movement and fire, using checkpoint retry if hit. No state injection.
+  let won=false;for(let attempt=0;attempt<5;attempt++){
+   if((await state()).phase==='down')await p.getByRole('button',{name:'返回检查点',exact:true}).click();
+   await p.locator('canvas.play-canvas').scrollIntoViewIfNeeded();await p.locator('#play-mount').focus();await p.keyboard.down('d');await p.keyboard.down('j');const start=Date.now();
+   while(Date.now()-start<18000){const s=await state();if(s.won){won=true;break}if(s.phase==='down')break;await p.waitForTimeout(80)}await p.keyboard.up('d');await p.keyboard.up('j');if(won)break;
+  }
+  assert(won,'Actual run-and-gun should be completable with real movement and fire');const result=await state();assert.equal(result.enemies.find(e=>e.kind==='boss').hp,0);checks.push('Actual input defeats the exit guardian and completes the side-scrolling sample');
+  await p.goto(base+'forms.html?qa=1#compare');let frames=()=>p.frames().filter(f=>f.url().includes('present=1'));
+  await p.waitForFunction(()=>document.querySelectorAll('#comparison-grid iframe').length===2);for(const f of frames())await f.waitForFunction(()=>window.gameShowcase?.ready||window.gameShowcase?.error);
+  assert.equal(await p.locator('.form-card').count(),36);assert.equal(await p.locator('.pending-forms article').count(),0);assert.equal(await p.locator('.compare-panel select').first().locator('option').count(),36);let left=frames().find(f=>f.url().includes('play=wonder')),right=frames().find(f=>f.url().includes('play=breach'));
+  await right.locator('#play-reset').click();await right.locator('#reset-confirm').click();await right.waitForFunction(()=>gameShowcase.ready&&!gameShowcase.state.won&&gameShowcase.state.x===100);
+  await left.locator('#play-start').click();await left.waitForFunction(()=>gameShowcase.started&&!gameShowcase.paused);await right.locator('#play-start').click();await left.waitForFunction(()=>gameShowcase.paused);assert(await right.evaluate(()=>gameShowcase.started&&!gameShowcase.paused));checks.push('Comparison frames are real games; focusing the other side pauses the previous game');
+  await right.locator('#play-pause').click();for(const f of [left,right])await f.addStyleTag({content:'#play-paused{visibility:hidden!important}'});await p.locator('#compare').screenshot({path:path.join(root,'assets/game-forms/comparison-desktop.png')});
+  const games={'top-action':'hunter','side-story':'afterdark',fps:'range','first-puzzle':'station','third-adventure':'expedition',building:'builder',board:'order',cards:'ledger',life:'garden',automation:'factory',desk:'checkpoint','beat-em-up':'brawler','vertical-shooter':'skyline',racing:'coast','versus-fighting':'duel','maze-chase':'maze',rhythm:'rhythm',rts:'command','tower-defense':'bastion','turn-tactics':'tactics',sports:'sports',stealth:'stealth',pinball:'pinball','flight-sim':'pilot','rail-shooter':'rail','point-click':'archive','push-box':'cargo','match-three':'jewel','grand-strategy':'realm','visual-novel':'novel','command-rpg':'party','city-planning':'district','physics-puzzle':'balance','co-op':'tandem'};
+  for(const id of Object.keys(games)){
+   const play=games[id];await Promise.all([p.waitForEvent('framenavigated',{predicate:f=>new URL(f.url()).searchParams.get('play')===play}),p.locator('.compare-panel select').last().selectOption(id)]);right=frames().find(f=>new URL(f.url()).searchParams.get('play')===play);await right.waitForFunction(()=>window.gameShowcase?.ready||window.gameShowcase?.error);assert.equal(await right.evaluate(()=>gameShowcase.error),null,id);assert(await right.locator('#play-start').isVisible(),id);console.log('Presentation form',id);
+  }
+  checks.push('All 36 presentation forms load their corresponding existing or new game');
+  await p.setViewportSize({width:390,height:844});await p.goto(base+'forms.html?qa=1#compare');for(const f of frames())await f.waitForFunction(()=>window.gameShowcase?.ready||window.gameShowcase?.error);assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);for(const f of frames())assert.equal(await f.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);await p.locator('.compare-panel').first().screenshot({path:path.join(root,'assets/game-forms/comparison-mobile.png')});checks.push('Comparison and both child games fit a 390px mobile viewport');
+  const keys=await p.evaluate(()=>Object.keys(localStorage));assert(!keys.some(k=>k.startsWith('dumpling-showcase-v1-')||k.startsWith('dumpling-extension-v1-')||k==='dumpling-art-directions-v2'));checks.push('QA did not write normal user saves');
+  assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);await fs.writeFile(path.join(root,'notes/game-forms-check-20261003.json'),JSON.stringify({at:new Date().toISOString(),checks,errors,missing,result},null,2));console.log(checks.join('\n'));
+ }finally{await browser.close()}
+})().catch(e=>{console.error(e);process.exitCode=1});

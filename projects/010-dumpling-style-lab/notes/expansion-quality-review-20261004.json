@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-04",
+  "scope": "Three new playable forms: rolling-ball / marble-chain / surveillance. Existing forms were preserved; this is not a quality audit of every historical demo.",
+  "counts": { "forms": 43, "entrances": 52, "new_forms": 3, "previous_forms": 40 },
+  "modules": {
+    "roll": {
+      "title": "云廊滚球",
+      "visual_corrections": ["Close follow camera during play with an overview toggle", "Teal glass and brass ball, continuous limestone and brass course", "Hide duplicate canvas heading and meter on narrow screens"],
+      "browser_verified": ["Actual directional movement and braking", "Pause freezes elapsed time and disables controls", "Refresh restores elapsed time and progress", "Overview toggle", "Desktop, 390px viewport and fullscreen"],
+      "production_rule_checks_passed": 11,
+      "manual_browser_course_completion": false,
+      "simulated_production_physics_course_completion": true,
+      "screenshots": ["assets/game-forms/expansion-qa/roll-follow-desktop.jpg", "assets/game-forms/expansion-qa/roll-mobile.jpg", "assets/game-forms/expansion-qa/roll-fullscreen.jpg"]
+    },
+    "chain": {
+      "title": "琉光回廊",
+      "visual_corrections": ["Original observatory garden and glass crystal artwork", "Reduce heavy grey track to a subtle stone groove and thin brass inlay", "Readable current and next ammunition with 46px controls"],
+      "browser_verified": ["Actual projectile insertion", "A matched shot clears three crystals: 35 plus one minus three equals 33 remaining, 360 score", "Refresh restores 33 remaining, 3 cleared and 360 score", "Pause freezes motion", "Desktop, 390px viewport and fullscreen"],
+      "production_rule_checks_passed": 14,
+      "manual_browser_full_win_or_second_chain_reaction": false,
+      "production_checks_cover_win_and_second_chain_reaction": true,
+      "screenshots": ["assets/game-forms/expansion-qa/chain-desktop.jpg", "assets/game-forms/expansion-qa/chain-mobile.jpg", "assets/game-forms/expansion-qa/chain-fullscreen-approved.jpg"]
+    },
+    "watch": {
+      "title": "夜潮值守",
+      "visual_corrections": ["Four consistent authored rainy coastal camera scenes", "Moving characters, rain, working beam and gate", "Readable external power, time and character meters", "Explicit successful handover and failed recording states"],
+      "browser_verified": ["All four cameras", "Lamp and gate affect power and events", "Failure from missed lighthouse rescue", "Failure from leaving the generator gate open", "Complete 72-second successful shift: worker arrives, generator safe, 45 percent power remaining", "Refresh restores completed state and disables controls", "Desktop, 390px viewport and fullscreen"],
+      "production_rule_checks_passed": 13,
+      "audible_quality_listened_to": false,
+      "screenshots": ["assets/game-forms/expansion-qa/watch-desktop.jpg", "assets/game-forms/expansion-qa/watch-guiding.jpg", "assets/game-forms/expansion-qa/watch-completed.jpg", "assets/game-forms/expansion-qa/watch-mobile.jpg", "assets/game-forms/expansion-qa/watch-fullscreen.jpg"]
+    }
+  },
+  "shared_corrections": ["Align scene and module controls in standalone and embedded views", "Use a vertical layout for new fullscreen players", "Reserve a 56px fullscreen exit header to avoid hiding timers", "Make paused Continue and Exit controls distinct", "Catalog covers are exact captures from the actual rendered demos"],
+  "responsive_metrics": "notes/expansion-responsive-metrics-20261004.json",
+  "preview_provenance": "notes/expansion-preview-provenance-20261004.json",
+  "packaging_report": "notes/expansion-package-check-20261004.json",
+  "preservation": { "baseline_files": 2233, "changed": 0, "missing": 0, "intentional_shared_files_excluded_from_baseline": 10 },
+  "verification": { "new_production_checks_passed": 38, "original_rule_regressions_passed": 56, "root_site_tests_passed": 6, "built_static_demos": 19, "copied_targets_compared": 33, "copied_target_mismatches": 0 },
+  "user_progress": { "original_user_tab_kept": true, "old_games_not_reset": true, "test_reset_and_completion_used_separate_qa_save_keys": true, "normal_new_form_pair_opened_at_ready_to_start": true },
+  "browser_console": {
+    "individual_new_demo_errors_observed": [],
+    "fresh_comparison_parent_error": "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+    "parent_error_provenance": "Unknown; this observer error was also seen on the pre-existing comparison page and no matching observer implementation was found in project source. Embedded modules nevertheless loaded and rendered. The error was not suppressed."
+  },
+  "final_user_view": "assets/game-forms/expansion-qa/final-forms-preview.jpg",
+  "limits": ["Responsive validation uses a browser viewport override, not real-device performance testing", "Audio implementation was checked but audible quality was not listened to", "This review does not establish commercial completeness or quality of all 43 forms"]
+}

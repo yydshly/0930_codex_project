@@ -24,6 +24,7 @@
 | 006 | [AI Visual Atlas · 视觉创作能力图谱](projects/006-ai-visual-atlas/README.md) | **范围：** 研究十个视觉创作链接，区分作品源码、风格 Skill、游戏成品、生成工具与资料索引<br>**原理：** 模型理解与创作，代码逐帧渲染、实时游戏，以及生成素材和合成，各项目分别核对<br>**场景：** 音乐 MV、产品宣传、角色动画、游戏体验与风格研究<br>**实测：** 整曲图片 MV、5 秒 H3 演唱与绿幕合成、24 秒六幕网页宣传片<br>**意义：** 理解可复用的时间线、模型调度、素材一致性、检查与交付<br>**边界：** 全曲真实演唱、逐字口型验收和任意 URL 自动服务未完成，部分原作仅本地研究，完整游戏游玩未验收。 | 已完成 | [鸟哥 · 十个视觉创作项目汇总](https://x.com/NFTCPS/status/2105493719931826452)<br>资料索引：[yihui-dev/awesome-opus5-5-videos](https://github.com/yihui-dev/awesome-opus5-5-videos)<br>[十项目源库列表](projects/006-ai-visual-atlas/publication/index.html#library) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/006-ai-visual-atlas/) |
 | 007 | [Koi Scene Lab · 庭院效果与实景构造](projects/007-koi-scene-lab/README.md) | **能力：** 原作体验、按图三维庭院、投喂与惊散、生态动物、GLB 导入与尺寸校准<br>**原理：** 程序化建模、GPU 水波与反射折射、Boids 群游、骨骼动画与状态机<br>**场景：** 互动展示、庭院预演、已有模型核对与技术学习<br>**价值：** 保存场景体验和可复用方法，为数字老家与个性化作品建立基础<br>**扩展：** 照片参数化、纪念摆件、实物交付与一致性核验，均需继续建设<br>**边界：** 研究原型，未做现场测绘，尚无照片自动建模和制造输出。 | 研究中 | [souranyp-stack/koi-pond-garden](https://github.com/souranyp-stack/koi-pond-garden) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/007-koi-scene-lab/) |
 | 008 | [CellMotion · 可编辑动效研究](projects/008-cellmotion/README.md) | **定位：** 可编辑动效与代码驱动内容制作研究<br>**能力：** 固定版本37个已完成动效、19项原作视频和3支成片案例<br>**效果：** 字符重组、逐字强调、图文接力、图片对比与切换<br>**原理：** JS算法与时间计算元素状态，Canvas/WebGL绘制及逐帧编码<br>**场景：** 品牌标题、产品说明、作品对比、课程章节与日报模板<br>**价值：** 用画面语言指导制作，把内容、视觉与节奏保存为可复用配方<br>**比较：** CellMotion提供具体动效，Remotion组织代码视频，HeyGen提供AI视频服务<br>**扩展：** 四种原创演示、图片替换、需求生成、PNG/JSON保存与完整理解总览<br>**边界：** 实验室未接入AI、音轨或视频编码，自动日报尚未实现，原作媒体需联网。 | 已完成 | [opc8838-hub/font-animation](https://github.com/opc8838-hub/font-animation) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/008-cellmotion/) |
+| 010 | [Dumpling Style Lab · 游戏方向与参与形式研究](projects/010-dumpling-style-lab/README.md) | **定位：** 从 Dumpling Dell 出发，研究让玩家愿意参与的游戏方向、视角、操作与展现形式<br>**能力：** 107 种形式样例与原有九款短篇，共 116 个展示入口，15 个独立方向另列<br>**展示：** 六类主入口、代表性实机截图、原作体验、20 种早期材质、3 段小体验和历史画风版本<br>**原理：** Canvas 2D、Three.js 真实三维、规则与状态机、碰撞与车辆物理、浏览器独立存档<br>**参考：** 开源游戏分类目录与官方作品体验，用于发现方向、比较质量和筛选可复用源码<br>**价值：** 积累可运行样例、参与方式对照、素材与技术路径，帮助后续选题和原型验证<br>**扩展：** 12 项后续方向已记录，当前暂停新增试玩<br>**边界：** 现有内容为研究样例，画面质量和游戏深度不等于商业成品，多人房间与异步接力仍需本机后端，存档不会自动迁移到公网。 | 已归档 | [Dumpling Dell · 原作网页](https://dumpling-dell.pages.dev/)<br>公开仓库未确认 | — |
 | 011 | [Combination Soup Studio · 交互展示与业务价值](projects/011-combination-soup-studio/README.md) | **定位：** 以交互官网为参考，拆解效果并沉淀可复用的产品体验与交付方法<br>**能力：** 五项效果、四类技能、三类业务场景，马桶与耳机完整产品页、目标及交付工作台<br>**原理：** 素材与浏览器事件驱动画面和状态，Canvas与Three.js/WebGL承担二维及三维，配置贯穿PNG、JSON、简报和ZIP<br>**场景：** 品牌活动、产品解释与选配、区域服务查询、庭院方案评审<br>**价值：** 帮助理解、比较和保留选择，便于团队复用与继续制作<br>**扩展：** 按新品类补齐事实、视觉标杆、资产、交互和验收，逐步建立质量修正闭环<br>**边界：** 原站开源许可未确认，当前为概念原型，在线模型与任意产品自动交付未验收，商业收益未实测。 | 已完成 | [Combination Soup Studio · 官网案例](https://combinationsoupstudio.com.au/)<br>公开仓库未确认 | [在线演示](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/) |
 
 <!-- PROJECT_INDEX:END -->
@@ -156,6 +157,23 @@
 ![CellMotion · 可编辑动效研究 项目引导图](projects/008-cellmotion/assets/understanding-map.png)
 
 [研究详情](projects/008-cellmotion/README.md) · [在线演示](https://yydshly.github.io/0930_codex_project/projects/008-cellmotion/)
+
+### 010 · Dumpling Style Lab · 游戏方向与参与形式研究
+
+- **定位：** 从 Dumpling Dell 出发，研究让玩家愿意参与的游戏方向、视角、操作与展现形式
+- **能力：** 107 种形式样例与原有九款短篇，共 116 个展示入口，15 个独立方向另列
+- **展示：** 六类主入口、代表性实机截图、原作体验、20 种早期材质、3 段小体验和历史画风版本
+- **原理：** Canvas 2D、Three.js 真实三维、规则与状态机、碰撞与车辆物理、浏览器独立存档
+- **参考：** 开源游戏分类目录与官方作品体验，用于发现方向、比较质量和筛选可复用源码
+- **价值：** 积累可运行样例、参与方式对照、素材与技术路径，帮助后续选题和原型验证
+- **扩展：** 12 项后续方向已记录，当前暂停新增试玩
+- **边界：** 现有内容为研究样例，画面质量和游戏深度不等于商业成品，多人房间与异步接力仍需本机后端，存档不会自动迁移到公网。
+
+效果来源：[Dumpling Dell · 原作网页](https://dumpling-dell.pages.dev/)。公开仓库未确认，按公开网页进行研究。先阅读下方引导图，再进入研究文档与交互演示。
+
+![Dumpling Style Lab · 游戏方向与参与形式研究 项目引导图](projects/010-dumpling-style-lab/assets/project-overview-20261006.jpg)
+
+[研究详情](projects/010-dumpling-style-lab/README.md)
 
 ### 011 · Combination Soup Studio · 交互展示与业务价值
 

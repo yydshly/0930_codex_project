@@ -1,0 +1,107 @@
+{
+  "production_canvas_and_scene_review": true,
+  "browser_acceptance_complete": false,
+  "frames": [
+    {
+      "id": "rigworks",
+      "phase": "initial",
+      "file": "assets/game-forms/foundry-qa/rigworks-initial.png",
+      "sha256": "291174843f3b4b7c941824971f23bd14766d96072ec037f459eb31547d46b3cd",
+      "method": "Production scene geometry/camera via diagnostic projection; lighting and HUD approximated",
+      "browser_screenshot": false,
+      "review_observation": "作者模型原始配色与车轮轮廓可辨；装配、载货、交付状态由真实流程产生。金属纹理只映射新增表面，避免覆写原有模型颜色图。"
+    },
+    {
+      "id": "rigworks",
+      "phase": "progress",
+      "file": "assets/game-forms/foundry-qa/rigworks-progress.png",
+      "sha256": "a86a719e0be626d4075961613ecc22f4e8fd1f9b77bbf56ea34353d87933824f",
+      "method": "Production scene geometry/camera via diagnostic projection; lighting and HUD approximated",
+      "browser_screenshot": false,
+      "review_observation": "作者模型原始配色与车轮轮廓可辨；装配、载货、交付状态由真实流程产生。金属纹理只映射新增表面，避免覆写原有模型颜色图。"
+    },
+    {
+      "id": "rigworks",
+      "phase": "complete",
+      "file": "assets/game-forms/foundry-qa/rigworks-complete.png",
+      "sha256": "5231b5716c3d0e268ffe53b6221f8a138088362409ea30c7ac91a26cf30db8a5",
+      "method": "Production scene geometry/camera via diagnostic projection; lighting and HUD approximated",
+      "browser_screenshot": false,
+      "review_observation": "作者模型原始配色与车轮轮廓可辨；装配、载货、交付状态由真实流程产生。金属纹理只映射新增表面，避免覆写原有模型颜色图。"
+    },
+    {
+      "id": "drift",
+      "phase": "initial",
+      "file": "assets/game-forms/foundry-qa/drift-initial.png",
+      "sha256": "1e71c4cc397da33ea5ac4dcef7ec211e8403f501717821995f6fe5a28973f3f5",
+      "method": "Production scene geometry/camera via diagnostic projection; lighting and HUD approximated",
+      "browser_screenshot": false,
+      "review_observation": "三维航廊、飞船、不同高度的信标可辨；摄像机位置与姿态来自实际六自由度状态。诊断投影的光照和 HUD 不代表实际 WebGL 效果。"
+    },
+    {
+      "id": "drift",
+      "phase": "progress",
+      "file": "assets/game-forms/foundry-qa/drift-progress.png",
+      "sha256": "9a98c514b05b031b1a588a3904757b9638f982b15145cd4ae6e52381bd7a3571",
+      "method": "Production scene geometry/camera via diagnostic projection; lighting and HUD approximated",
+      "browser_screenshot": false,
+      "review_observation": "三维航廊、飞船、不同高度的信标可辨；摄像机位置与姿态来自实际六自由度状态。诊断投影的光照和 HUD 不代表实际 WebGL 效果。"
+    },
+    {
+      "id": "drift",
+      "phase": "complete",
+      "file": "assets/game-forms/foundry-qa/drift-complete.png",
+      "sha256": "55ec2ac2d296f3a642549722e3d450ccae3f765a64d2c68d7357ede10f620a7d",
+      "method": "Production scene geometry/camera via diagnostic projection; lighting and HUD approximated",
+      "browser_screenshot": false,
+      "review_observation": "三维航廊、飞船、不同高度的信标可辨；摄像机位置与姿态来自实际六自由度状态。诊断投影的光照和 HUD 不代表实际 WebGL 效果。"
+    },
+    {
+      "id": "levelsmith",
+      "phase": "initial",
+      "file": "assets/game-forms/foundry-qa/levelsmith-initial.png",
+      "sha256": "b8c2299af5afb50800a985d7bf02866b615e7130bea2e8629459e60a5942beea",
+      "method": "Production Canvas2D via Skia",
+      "browser_screenshot": false,
+      "review_observation": "原创风谷背景与透明图集组成实际编辑地图；过程收集当前布局晶石，完成显示版本 2 及四颗晶石，验证编辑结果。"
+    },
+    {
+      "id": "levelsmith",
+      "phase": "progress",
+      "file": "assets/game-forms/foundry-qa/levelsmith-progress.png",
+      "sha256": "5160d187ecd5eec7ae4c4ea373b6d12d35601f308235d417f9dd16c624b76968",
+      "method": "Production Canvas2D via Skia",
+      "browser_screenshot": false,
+      "review_observation": "原创风谷背景与透明图集组成实际编辑地图；过程收集当前布局晶石，完成显示版本 2 及四颗晶石，验证编辑结果。"
+    },
+    {
+      "id": "levelsmith",
+      "phase": "complete",
+      "file": "assets/game-forms/foundry-qa/levelsmith-complete.png",
+      "sha256": "38c0fba031f404c85a9493963ffb46d0907cc39da8998fd82ef104b950d5b9be",
+      "method": "Production Canvas2D via Skia",
+      "browser_screenshot": false,
+      "review_observation": "原创风谷背景与透明图集组成实际编辑地图；过程收集当前布局晶石，完成显示版本 2 及四颗晶石，验证编辑结果。"
+    }
+  ],
+  "review_method": "All nine initial/progress/complete images viewed via image tools; final original-palette 3D revision checked. Not browser screenshots.",
+  "fixes": [
+    "Preserved original model palette maps; generated alloy map limited to added primitives.",
+    "Improved wheel/rim/tread details and load bed/cargo placement.",
+    "Removed unsupported Three backgroundRotation reference.",
+    "Descent key no longer triggers shell fullscreen; pause key still bubbles.",
+    "Both editor templates and edited map complete through ordinary movement.",
+    "Included copied CC0 licenses in static packaging; restored loopback services."
+  ],
+  "remaining": [
+    "Actual browser WebGL rendering and performance",
+    "Responsive CSS and real touch/keyboard focus",
+    "Fullscreen and context-loss recovery in real browser",
+    "Refresh/save restoration in browser storage"
+  ],
+  "scope_limits": [
+    "Constrained chassis choices and simplified vehicle motion, not full jointed rigid-body simulation",
+    "Specified spherical obstacle collision, not all decorative meshes",
+    "Fixed-grid local editor, no online sharing"
+  ]
+}

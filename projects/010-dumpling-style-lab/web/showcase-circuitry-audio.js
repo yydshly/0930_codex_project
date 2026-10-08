@@ -1,0 +1,11 @@
+import {radioQuality,RADIO_CHANNELS} from './showcase-circuitry-rules.js';
+export function radioNoise(length=24000){const a=new Float32Array(length);let seed=712367,b=0;for(let i=0;i<length;i++){seed=(Math.imul(seed,1664525)+1013904223)|0;b=b*.45+((seed>>>0)/4294967296*2-1)*.55;a[i]=b;}return a;}
+export function radioAudio({getSound=()=>false,onStatus=()=>{}}={}){let context=null,nodes=[],signalGain=null,noiseGain=null,oscillators=[],epoch=0,ready=false,status='声音待启用';const report=v=>{status=v;onStatus(v);};
+ function stop(){epoch++;ready=false;for(const n of nodes){try{n.stop?.();n.disconnect();}catch{}}nodes=[];oscillators=[];signalGain=noiseGain=null;const c=context;context=null;if(c)c.close().catch(()=>{});report('监听已停止');}
+ async function enable(){stop();if(!getSound()){report('先开启上方声音，再点击监听。');return false;}const AC=globalThis.AudioContext||globalThis.webkitAudioContext;if(!AC){report('此环境无法播放声音，仪表仍可操作。');return false;}const ticket=epoch;
+  try{context=new AC();const c=context;signalGain=c.createGain();noiseGain=c.createGain();signalGain.gain.value=noiseGain.gain.value=0;signalGain.connect(c.destination);noiseGain.connect(c.destination);nodes.push(signalGain,noiseGain);
+   for(let i=0;i<2;i++){const o=c.createOscillator();o.type='sine';o.frequency.value=165*(i+1);o.connect(signalGain);o.start();nodes.push(o);oscillators.push(o);}
+   const source=c.createBufferSource(),pcm=radioNoise(Math.floor(c.sampleRate*.7)),buffer=c.createBuffer(1,pcm.length,c.sampleRate);buffer.copyToChannel(pcm,0);source.buffer=buffer;source.loop=true;source.connect(noiseGain);source.start();nodes.push(source);await c.resume();if(ticket!==epoch)return false;ready=true;report('本地信号监听已开启');return true;
+  }catch{if(ticket===epoch){stop();report('声音未能开启，仪表仍可操作。');}return false;}}
+ return {enable,stop,get status(){return status;},get ready(){return ready;},update(s){if(!ready)return;if(!getSound()){stop();return;}const q=radioQuality(s),c=RADIO_CHANNELS[s.channel],playing=s.running&&!s.won;signalGain.gain.value=playing?.035*q:0;noiseGain.gain.value=playing?.028*(1-q):0;oscillators.forEach((o,i)=>o.frequency.value=Math.max(65,(c.note+(s.frequency-c.frequency)*12)*(i+1)));},dispose:stop};
+}

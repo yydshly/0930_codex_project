@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checks": [
+    "ordinary six-truck network completes both regional orders",
+    "all seeded roads avoid building footprints and connect every station frontage",
+    "a broken network waits without inventing cargo or deliveries; repairing a road unblocks it",
+    "an alternate southern bridge can recover the same guided network",
+    "only bridge tools and the two bridge sites can cross the river",
+    "purchasing and building from a blank region uses normal costs and still completes",
+    "line validation rejects invalid destinations, nonexistent output and duplicate lines",
+    "cargo is physically loaded and arrives after travel plus unloading time",
+    "production consumes two real logs per processed board and cannot run without them",
+    "central depot inventory is received and then removed by the actual connecting line",
+    "bridge maintenance excludes the southern crossing and selects the connected northern route",
+    "a single southern crossing waits through maintenance and reopens later",
+    "pause freezes processing, production, vehicles and expenses",
+    "pausing a line retains cargo and lets in-flight vehicles finish and return",
+    "occupied roads and station forecourts cannot be erased",
+    "the window ends with a truthful incomplete report if no transport is connected",
+    "save restore pauses and continues an in-flight network deterministically",
+    "save validation rejects invented cash, lost cargo, fake orders and nonadjacent paths"
+  ],
+  "method": "Production simulation; ordinary building, line purchases, actual freight loading/travel/unloading, conservation of all three cargo types and balance-sheet checks. No synthetic delivery grants."
+}

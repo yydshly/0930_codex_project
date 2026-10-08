@@ -1,0 +1,2014 @@
+{
+  "passed": true,
+  "method": "Combined independently completed fresh browser runs; real UI controls and read-only observations/solvers, no game state injection. Each source report retained.",
+  "forms": 36,
+  "entries": 45,
+  "cooperationClassification": "Participation form combined with platform puzzles, not counted as an independent genre taxonomy.",
+  "sourceReports": [
+    "notes/systems-party-check-20261003.json",
+    "notes/systems-district-check-20261003.json",
+    "notes/systems-balance-check-20261003.json",
+    "notes/systems-tandem-check-20261003.json",
+    "notes/systems-shell-check-20261003.json"
+  ],
+  "checks": [
+    "Actual battle loads three separately illustrated party roles and three enemies with independent health, spirit and intents",
+    "Real skill buttons and canvas target selection consume each party turn; protect and focus create shields, then actual enemy actions damage party and consume shields",
+    "Pause/save/reload restores a pending command exactly and applies its damage once after continuation",
+    "Actual targeted spell spends three spirit and defeats its target; healer restores injured ally and writes real combat log",
+    "First victory opens actual rest action; second encounter restores specified resources and creates a stronger enemy group",
+    "Read-only target planning and actual menu input complete both encounters with finite health and spirit",
+    "Completed save reloads; replay resets this battle and retains its gallery completion",
+    "Repeated actual defensive commands still allow enemy attacks to produce real defeat; restart recovers",
+    "390px layout has no horizontal overflow and visible skill/target buttons advance an actual party action",
+    "QA uses only QA-prefixed storage; no missing runtime assets or browser errors",
+    "Authored 19-model isometric 3D city loads with three houses, an office, parks, two real broken road segments and no invented traffic",
+    "Real occupied-house and protected-park clicks reject overlapping construction without charging budget",
+    "Clinic, houses and road construction charge exact costs; budget of one denies a road with no cell mutation",
+    "Actual reset restores the original scenario and clears trial placements",
+    "Adding the two road gaps makes actual BFS work routes for all three houses; service requirement still prevents premature completion",
+    "Demolishing a shared road refunds two and breaks two actual work routes; repair restores BFS connectivity and charges three",
+    "Fourth house and clinic create four true road-only cardinal routes to both destinations, each visible vehicle belongs to a real connected house",
+    "Actual renderer time moves authored vehicles on computed routes, including staggered departures",
+    "Pause freezes traffic, and actual reload preserves the built road network, budget, camera and per-vehicle leg/progress",
+    "A rotated 3D view still accepts real lot clicks; removing the central connection cancels all affected traffic and rebuilding restores four routes",
+    "Real UI construction and autonomous traffic complete sixteen destination arrivals and save the completion record",
+    "Actual replay resets the neighborhood while retaining its completion record",
+    "At 390 px a real touchscreen tap builds the correct projected road lot with exact budget and no horizontal page overflow",
+    "QA storage stays independent; no normal save changes, missing models or browser exceptions",
+    "Real 3D workshop loads authored models, stone texture and cannon-es rigid gravity; incomplete construction cannot start the car or win",
+    "Actual canvas pointer selects an authored bridge mesh; finite-force constraint lifts the rigid body against gravity",
+    "Visible tilt action changes a physical body quaternion through the constraint, with no placement snap",
+    "Incorrectly oriented bridge actually falls into the gap and contacts the lower floor; it cannot satisfy the support sensors or auto-win",
+    "Eight actual move buttons and six rotation buttons orient the bridge across the gap; released rigid bridge settles by gravity on two actual platform contacts",
+    "Actual pointer relocation followed by release makes the five-kilogram weight contact the plate; the real gate collider rises after stable physical contact",
+    "Pause and reload restore each rigid body position, quaternion, linear and angular velocity, and construction progress",
+    "Actual test button drives the rigid car across the nonfixed bridge and through the raised collider; only physically reaching the far platform completes the workshop",
+    "Replay restores the starting physical arrangement and keeps the completion record",
+    "Saving while grasped restores the grip target and finite-force constraint safely; the restored object remains held and can release normally",
+    "390-pixel mobile view stays within the viewport; real touch buttons grasp and rotate the physical bridge",
+    "QA storage remains isolated from normal saves; no browser errors or missing assets",
+    "Real simultaneous P1 D and P2 left move the two characters in opposite directions without shared-axis interference",
+    "Independent simultaneous jumps apply gravity and land both characters back on the physical floor",
+    "P2 physically jumps over the equipment box but cannot pass the locked gate alone",
+    "P1 pressure plate continuously opens the gate and closes it again when P1 leaves",
+    "P2 crosses while P1 holds the plate, reaches the far-side latch and permanently opens the path for P1",
+    "Actual pause freezes both players and preserves exact positions, velocities, gate latch and checkpoint across save/reload",
+    "One character at the exit does not complete the cooperative room",
+    "Both characters really traverse the first room; only their joint exit enables the second checkpoint",
+    "Holding only one of the two assigned plates cannot charge or open the second bridge",
+    "Two independently controlled players hold complementary plates for 1.6 seconds and charge the actual physical bridge",
+    "Charged bridge timer and both grounded plate positions remain frozen while paused and restore exactly",
+    "Real simultaneous movement carries both characters across the live limited-duration bridge and records a cooperative victory",
+    "Completed scene restores as completed; replay resets this short game while retaining the completed gallery record",
+    "Walking into the unpowered canyon causes a real gravity fall and returns both players to the current checkpoint",
+    "Saved preview captures actual cooperative players and the activated bridge, using only UI-produced progress",
+    "390px mobile reserves two separate 44px touch clusters below the full canvas; real simultaneous two-finger holds move both characters independently and release cleanly",
+    "Pausing with fingers held clears both touch inputs and disables both control clusters",
+    "No page errors, missing assets, or writes to normal user save keys",
+    "36 form cards and 36 choices per selector, with zero pending-form cards",
+    "Command RPG × city planning: both child games really start, and focusing/resuming either side pauses the other in both directions",
+    "Real selector controls load physics puzzle × co-op; co-op is explicitly labeled 参与形式 in both comparison metadata and its catalog card",
+    "Physics puzzle × local co-op: both child games really start, and focusing/resuming either side pauses the other in both directions",
+    "Showcase exposes all 45 actual game cards and retains the cooperative entry",
+    "390px comparison stacks its real child game frames without horizontal overflow; co-op touch controls occupy a separate row below the full canvas",
+    "390px command RPG × city planning comparison also loads both children without horizontal overflow",
+    "All four new standalone games load, start and pause inside a 390px screen without horizontal overflow; co-op reserves a separate control row",
+    "Only QA-prefixed saves are used; no normal user progress writes, page errors or missing assets"
+  ],
+  "results": {
+    "party": {
+      "win": {
+        "version": 1,
+        "stage": 1,
+        "round": 5,
+        "phase": "won",
+        "heroIndex": 0,
+        "skill": "strike",
+        "heroes": [
+          {
+            "id": "captain",
+            "name": "岚 · 近卫",
+            "hp": 72,
+            "mp": 0,
+            "maxHP": 80,
+            "maxMP": 0,
+            "shield": 0
+          },
+          {
+            "id": "mage",
+            "name": "衡 · 术师",
+            "hp": 54,
+            "mp": 6,
+            "maxHP": 58,
+            "maxMP": 12,
+            "shield": 0
+          },
+          {
+            "id": "healer",
+            "name": "葵 · 医师",
+            "hp": 56,
+            "mp": 3,
+            "maxHP": 64,
+            "maxMP": 12,
+            "shield": 0
+          }
+        ],
+        "enemies": [
+          {
+            "id": "sentinel",
+            "name": "铜卫",
+            "hp": 0,
+            "damage": 10,
+            "maxHP": 78,
+            "shield": 0
+          },
+          {
+            "id": "hound",
+            "name": "影兽",
+            "hp": 0,
+            "damage": 12,
+            "maxHP": 38,
+            "shield": 0
+          },
+          {
+            "id": "orb",
+            "name": "星轮",
+            "hp": 0,
+            "damage": 8,
+            "maxHP": 36,
+            "shield": 0
+          }
+        ],
+        "pending": null,
+        "enemyQueue": [
+          2
+        ],
+        "enemyCursor": 1,
+        "log": [
+          "星轮：星轮脉冲 → 衡 · 术师 −8",
+          "岚 · 近卫：斩击，铜卫 −16",
+          "衡 · 术师：专注，灵力 +4 · 护盾 +4",
+          "葵 · 医师：治疗，衡 · 术师 +20",
+          "铜卫：铜刃 → 岚 · 近卫 −10",
+          "影兽：追击低生命 → 衡 · 术师 −8",
+          "星轮：星轮脉冲 → 葵 · 医师 −8",
+          "岚 · 近卫：斩击，铜卫 −16",
+          "衡 · 术师：回响，所有敌人 −12",
+          "葵 · 医师：治疗，岚 · 近卫 +20",
+          "影兽：追击低生命 → 衡 · 术师 −12",
+          "星轮：星轮脉冲 → 岚 · 近卫 −8",
+          "岚 · 近卫：斩击，影兽 −16",
+          "衡 · 术师：专注，灵力 +4 · 护盾 +4",
+          "葵 · 医师：治疗，衡 · 术师 +20",
+          "星轮：星轮脉冲 → 衡 · 术师 −4",
+          "岚 · 近卫：斩击，星轮 −16",
+          "两场试炼完成。天文台重新回应了旅团。"
+        ],
+        "score": 1200,
+        "won": true,
+        "elapsed": 29.969900000011595,
+        "actions": 24,
+        "damageDealt": 308,
+        "healed": 68,
+        "prevented": 28,
+        "skills": {
+          "captain": [
+            {
+              "id": "strike",
+              "name": "斩击",
+              "target": "enemy",
+              "cost": 0,
+              "detail": "单体伤害 16"
+            },
+            {
+              "id": "protect",
+              "name": "护卫",
+              "target": "allies",
+              "cost": 0,
+              "detail": "全队获得 8 点护盾"
+            }
+          ],
+          "mage": [
+            {
+              "id": "arcane",
+              "name": "奥术",
+              "target": "enemy",
+              "cost": 3,
+              "detail": "消耗 3 灵力，单体伤害 24"
+            },
+            {
+              "id": "echo",
+              "name": "回响",
+              "target": "enemies",
+              "cost": 4,
+              "detail": "消耗 4 灵力，每名敌人伤害 12"
+            },
+            {
+              "id": "focus",
+              "name": "专注",
+              "target": "self",
+              "cost": 0,
+              "detail": "恢复 4 灵力，获得 4 点护盾"
+            }
+          ],
+          "healer": [
+            {
+              "id": "toss",
+              "name": "投掷",
+              "target": "enemy",
+              "cost": 0,
+              "detail": "单体伤害 12"
+            },
+            {
+              "id": "heal",
+              "name": "治疗",
+              "target": "ally",
+              "cost": 3,
+              "detail": "消耗 3 灵力，恢复队友 24 生命"
+            },
+            {
+              "id": "focus",
+              "name": "专注",
+              "target": "self",
+              "cost": 0,
+              "detail": "恢复 4 灵力，获得 4 点护盾"
+            }
+          ]
+        },
+        "heroSpots": [
+          {
+            "x": 190,
+            "y": 395,
+            "h": 245
+          },
+          {
+            "x": 305,
+            "y": 468,
+            "h": 252
+          },
+          {
+            "x": 405,
+            "y": 515,
+            "h": 224
+          }
+        ],
+        "enemySpots": [
+          {
+            "x": 797,
+            "y": 399,
+            "h": 260
+          },
+          {
+            "x": 938,
+            "y": 484,
+            "h": 185
+          },
+          {
+            "x": 768,
+            "y": 519,
+            "h": 204
+          }
+        ],
+        "intents": []
+      },
+      "saved": {
+        "version": 1,
+        "stage": 0,
+        "round": 2,
+        "phase": "anim",
+        "heroIndex": 0,
+        "skill": "strike",
+        "heroes": [
+          {
+            "id": "captain",
+            "name": "岚 · 近卫",
+            "hp": 78,
+            "mp": 0,
+            "maxHP": 80,
+            "maxMP": 0,
+            "shield": 0
+          },
+          {
+            "id": "mage",
+            "name": "衡 · 术师",
+            "hp": 50,
+            "mp": 12,
+            "maxHP": 58,
+            "maxMP": 12,
+            "shield": 0
+          },
+          {
+            "id": "healer",
+            "name": "葵 · 医师",
+            "hp": 64,
+            "mp": 12,
+            "maxHP": 64,
+            "maxMP": 12,
+            "shield": 0
+          }
+        ],
+        "enemies": [
+          {
+            "id": "sentinel",
+            "name": "铜卫",
+            "hp": 28,
+            "damage": 10,
+            "maxHP": 40,
+            "shield": 0
+          },
+          {
+            "id": "hound",
+            "name": "影兽",
+            "hp": 32,
+            "damage": 12,
+            "maxHP": 32,
+            "shield": 0
+          },
+          {
+            "id": "orb",
+            "name": "星轮",
+            "hp": 30,
+            "damage": 8,
+            "maxHP": 30,
+            "shield": 0
+          }
+        ],
+        "pending": {
+          "side": "hero",
+          "index": 0,
+          "target": 0,
+          "skill": "strike",
+          "title": "斩击",
+          "elapsed": 0.08340000000000056,
+          "duration": 0.62
+        },
+        "enemyQueue": [
+          0,
+          1,
+          2
+        ],
+        "enemyCursor": 3,
+        "log": [
+          "岚 · 近卫：护卫，全队护盾 +8",
+          "衡 · 术师：专注，灵力 +0 · 护盾 +4",
+          "葵 · 医师：投掷，铜卫 −12",
+          "铜卫：铜刃 → 岚 · 近卫 −2",
+          "影兽：追击低生命 → 衡 · 术师 −0",
+          "星轮：星轮脉冲 → 衡 · 术师 −8"
+        ],
+        "score": 0,
+        "won": false,
+        "elapsed": 4.498700000005961,
+        "actions": 4,
+        "damageDealt": 12,
+        "healed": 0,
+        "prevented": 20,
+        "skills": {
+          "captain": [
+            {
+              "id": "strike",
+              "name": "斩击",
+              "target": "enemy",
+              "cost": 0,
+              "detail": "单体伤害 16"
+            },
+            {
+              "id": "protect",
+              "name": "护卫",
+              "target": "allies",
+              "cost": 0,
+              "detail": "全队获得 8 点护盾"
+            }
+          ],
+          "mage": [
+            {
+              "id": "arcane",
+              "name": "奥术",
+              "target": "enemy",
+              "cost": 3,
+              "detail": "消耗 3 灵力，单体伤害 24"
+            },
+            {
+              "id": "echo",
+              "name": "回响",
+              "target": "enemies",
+              "cost": 4,
+              "detail": "消耗 4 灵力，每名敌人伤害 12"
+            },
+            {
+              "id": "focus",
+              "name": "专注",
+              "target": "self",
+              "cost": 0,
+              "detail": "恢复 4 灵力，获得 4 点护盾"
+            }
+          ],
+          "healer": [
+            {
+              "id": "toss",
+              "name": "投掷",
+              "target": "enemy",
+              "cost": 0,
+              "detail": "单体伤害 12"
+            },
+            {
+              "id": "heal",
+              "name": "治疗",
+              "target": "ally",
+              "cost": 3,
+              "detail": "消耗 3 灵力，恢复队友 24 生命"
+            },
+            {
+              "id": "focus",
+              "name": "专注",
+              "target": "self",
+              "cost": 0,
+              "detail": "恢复 4 灵力，获得 4 点护盾"
+            }
+          ]
+        },
+        "heroSpots": [
+          {
+            "x": 190,
+            "y": 395,
+            "h": 245
+          },
+          {
+            "x": 305,
+            "y": 468,
+            "h": 252
+          },
+          {
+            "x": 405,
+            "y": 515,
+            "h": 224
+          }
+        ],
+        "enemySpots": [
+          {
+            "x": 797,
+            "y": 399,
+            "h": 260
+          },
+          {
+            "x": 938,
+            "y": 484,
+            "h": 185
+          },
+          {
+            "x": 768,
+            "y": 519,
+            "h": 204
+          }
+        ],
+        "intents": [
+          {
+            "enemy": 0,
+            "target": 0,
+            "amount": 10,
+            "title": "铜刃"
+          },
+          {
+            "enemy": 1,
+            "target": 1,
+            "amount": 12,
+            "title": "追击低生命"
+          },
+          {
+            "enemy": 2,
+            "target": 2,
+            "amount": 8,
+            "title": "星轮脉冲"
+          }
+        ]
+      },
+      "storage": [
+        "dumpling-showcase-qa-v1-party",
+        "dumpling-showcase-qa-v1-records"
+      ]
+    },
+    "district": {
+      "version": 1,
+      "cells": [
+        "park",
+        "grass",
+        "grass",
+        "park",
+        "park",
+        "grass",
+        "grass",
+        "grass",
+        "park",
+        "park",
+        "home",
+        "grass",
+        "grass",
+        "grass",
+        "home",
+        "grass",
+        "work",
+        "park",
+        "grass",
+        "road",
+        "grass",
+        "grass",
+        "grass",
+        "road",
+        "grass",
+        "road",
+        "grass",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "grass",
+        "home",
+        "grass",
+        "grass",
+        "grass",
+        "home",
+        "grass",
+        "clinic",
+        "grass",
+        "park",
+        "grass",
+        "grass",
+        "grass",
+        "grass",
+        "grass",
+        "grass",
+        "grass",
+        "park",
+        "park",
+        "grass",
+        "grass",
+        "grass",
+        "grass",
+        "grass",
+        "grass",
+        "grass",
+        "park"
+      ],
+      "budget": 32,
+      "tool": "road",
+      "selected": 33,
+      "elapsed": 27.223399999993905,
+      "trips": 16,
+      "changes": 8,
+      "invalid": 0,
+      "won": true,
+      "phase": "won",
+      "score": 1620,
+      "view": 1,
+      "vehicles": [
+        {
+          "home": 10,
+          "paths": [
+            [
+              19,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              25
+            ],
+            [
+              25,
+              34,
+              33,
+              32,
+              31,
+              30,
+              29,
+              28,
+              19
+            ],
+            [
+              19,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34
+            ],
+            [
+              34,
+              33,
+              32,
+              31,
+              30,
+              29,
+              28,
+              19
+            ]
+          ],
+          "leg": 0,
+          "progress": 3.7999560344827557,
+          "wait": 0,
+          "arrivals": 2
+        },
+        {
+          "home": 14,
+          "paths": [
+            [
+              23,
+              32,
+              33,
+              34,
+              25
+            ],
+            [
+              25,
+              34,
+              33,
+              32,
+              23
+            ],
+            [
+              23,
+              32,
+              33,
+              34
+            ],
+            [
+              34,
+              33,
+              32,
+              23
+            ]
+          ],
+          "leg": 3,
+          "progress": 0,
+          "wait": 0.65,
+          "arrivals": 4
+        },
+        {
+          "home": 37,
+          "paths": [
+            [
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              25
+            ],
+            [
+              25,
+              34,
+              33,
+              32,
+              31,
+              30,
+              29,
+              28
+            ],
+            [
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34
+            ],
+            [
+              34,
+              33,
+              32,
+              31,
+              30,
+              29,
+              28
+            ]
+          ],
+          "leg": 0,
+          "progress": 2.8127405172413744,
+          "wait": 0,
+          "arrivals": 2
+        },
+        {
+          "home": 41,
+          "paths": [
+            [
+              32,
+              33,
+              34,
+              25
+            ],
+            [
+              25,
+              34,
+              33,
+              32
+            ],
+            [
+              32,
+              33,
+              34
+            ],
+            [
+              34,
+              33,
+              32
+            ]
+          ],
+          "leg": 3,
+          "progress": 0.7599844827586159,
+          "wait": 0,
+          "arrivals": 4
+        }
+      ],
+      "replays": 1,
+      "rules": {
+        "cols": 9,
+        "rows": 7,
+        "cost": {
+          "road": 3,
+          "home": 12,
+          "clinic": 18
+        },
+        "refund": {
+          "road": 2,
+          "home": 9,
+          "clinic": 14
+        },
+        "targetHomes": 4,
+        "targetTrips": 16,
+        "startingBudget": 70
+      },
+      "connections": [
+        {
+          "home": 10,
+          "work": true,
+          "service": true,
+          "connected": true
+        },
+        {
+          "home": 14,
+          "work": true,
+          "service": true,
+          "connected": true
+        },
+        {
+          "home": 37,
+          "work": true,
+          "service": true,
+          "connected": true
+        },
+        {
+          "home": 41,
+          "work": true,
+          "service": true,
+          "connected": true
+        }
+      ],
+      "routes": [
+        {
+          "home": 10,
+          "office": [
+            19,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            25
+          ],
+          "clinic": [
+            19,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34
+          ]
+        },
+        {
+          "home": 14,
+          "office": [
+            23,
+            32,
+            33,
+            34,
+            25
+          ],
+          "clinic": [
+            23,
+            32,
+            33,
+            34
+          ]
+        },
+        {
+          "home": 37,
+          "office": [
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            25
+          ],
+          "clinic": [
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34
+          ]
+        },
+        {
+          "home": 41,
+          "office": [
+            32,
+            33,
+            34,
+            25
+          ],
+          "clinic": [
+            32,
+            33,
+            34
+          ]
+        }
+      ],
+      "connected": 4,
+      "homes": 4,
+      "vehiclePositions": [
+        {
+          "x": -0.31006814655172876,
+          "y": 0.18,
+          "z": 0,
+          "angle": 1.5707963267948966,
+          "home": 10
+        },
+        {
+          "x": 4.65,
+          "y": 0.18,
+          "z": 0,
+          "angle": -1.5707963267948966,
+          "home": 14
+        },
+        {
+          "x": -0.2902521982758697,
+          "y": 0.18,
+          "z": 0,
+          "angle": 1.5707963267948966,
+          "home": 37
+        },
+        {
+          "x": 3.4720240517241456,
+          "y": 0.18,
+          "z": 0,
+          "angle": -1.5707963267948966,
+          "home": 41
+        }
+      ],
+      "cellsScreen": [
+        {
+          "x": 771.7911487505127,
+          "z": 0,
+          "index": 0,
+          "type": "park",
+          "y": 297.11457664234854,
+          "visible": true
+        },
+        {
+          "x": 746.5632124245335,
+          "z": 0,
+          "index": 1,
+          "type": "grass",
+          "y": 318.4353777059969,
+          "visible": true
+        },
+        {
+          "x": 719.8980031700684,
+          "z": 0,
+          "index": 2,
+          "type": "grass",
+          "y": 340.970856410593,
+          "visible": true
+        },
+        {
+          "x": 691.6690942746479,
+          "z": 0,
+          "index": 3,
+          "type": "park",
+          "y": 364.82785933886356,
+          "visible": true
+        },
+        {
+          "x": 661.7347833112736,
+          "z": 0,
+          "index": 4,
+          "type": "park",
+          "y": 390.12614298683155,
+          "visible": true
+        },
+        {
+          "x": 629.9357131351517,
+          "z": 0,
+          "index": 5,
+          "type": "grass",
+          "y": 417.0003843228508,
+          "visible": true
+        },
+        {
+          "x": 596.0920339866891,
+          "z": 0,
+          "index": 6,
+          "type": "grass",
+          "y": 445.6025791699677,
+          "visible": true
+        },
+        {
+          "x": 560,
+          "z": 0,
+          "index": 7,
+          "type": "grass",
+          "y": 476.1049185872513,
+          "visible": true
+        },
+        {
+          "x": 521.4278640879623,
+          "z": 0,
+          "index": 8,
+          "type": "park",
+          "y": 508.7032582117923,
+          "visible": true
+        },
+        {
+          "x": 736.7712256662246,
+          "z": 1,
+          "index": 9,
+          "type": "park",
+          "y": 276.91282257075505,
+          "visible": true
+        },
+        {
+          "x": 711.279391964652,
+          "z": 1,
+          "index": 10,
+          "type": "home",
+          "y": 297.11457664234854,
+          "visible": true
+        },
+        {
+          "x": 684.375474949689,
+          "z": 1,
+          "index": 11,
+          "type": "grass",
+          "y": 318.4353777059969,
+          "visible": true
+        },
+        {
+          "x": 655.938801902041,
+          "z": 1,
+          "index": 12,
+          "type": "grass",
+          "y": 340.970856410593,
+          "visible": true
+        },
+        {
+          "x": 625.834547137324,
+          "z": 1,
+          "index": 13,
+          "type": "grass",
+          "y": 364.82785933886356,
+          "visible": true
+        },
+        {
+          "x": 593.9115944370911,
+          "z": 1,
+          "index": 14,
+          "type": "home",
+          "y": 390.12614298683144,
+          "visible": true
+        },
+        {
+          "x": 560,
+          "z": 1,
+          "index": 15,
+          "type": "grass",
+          "y": 417.00038432285066,
+          "visible": true
+        },
+        {
+          "x": 523.9079660133109,
+          "z": 1,
+          "index": 16,
+          "type": "work",
+          "y": 445.6025791699677,
+          "visible": true
+        },
+        {
+          "x": 485.418211055464,
+          "z": 1,
+          "index": 17,
+          "type": "park",
+          "y": 476.1049185872513,
+          "visible": true
+        },
+        {
+          "x": 703.5423610044287,
+          "z": 2,
+          "index": 18,
+          "type": "grass",
+          "y": 257.74426670727746,
+          "visible": true
+        },
+        {
+          "x": 677.847483777483,
+          "z": 2,
+          "index": 19,
+          "type": "road",
+          "y": 276.91282257075505,
+          "visible": true
+        },
+        {
+          "x": 650.7676351787911,
+          "z": 2,
+          "index": 20,
+          "type": "grass",
+          "y": 297.11457664234854,
+          "visible": true
+        },
+        {
+          "x": 622.1877374748444,
+          "z": 2,
+          "index": 21,
+          "type": "grass",
+          "y": 318.4353777059969,
+          "visible": true
+        },
+        {
+          "x": 591.9796006340135,
+          "z": 2,
+          "index": 22,
+          "type": "grass",
+          "y": 340.970856410593,
+          "visible": true
+        },
+        {
+          "x": 560,
+          "z": 2,
+          "index": 23,
+          "type": "road",
+          "y": 364.82785933886356,
+          "visible": true
+        },
+        {
+          "x": 526.0884055629087,
+          "z": 2,
+          "index": 24,
+          "type": "grass",
+          "y": 390.12614298683144,
+          "visible": true
+        },
+        {
+          "x": 490.06428686484827,
+          "z": 2,
+          "index": 25,
+          "type": "road",
+          "y": 417.0003843228508,
+          "visible": true
+        },
+        {
+          "x": 451.72389803993275,
+          "z": 2,
+          "index": 26,
+          "type": "grass",
+          "y": 445.6025791699677,
+          "visible": true
+        },
+        {
+          "x": 671.9705780196957,
+          "z": 3,
+          "index": 27,
+          "type": "road",
+          "y": 239.53162260968224,
+          "visible": true
+        },
+        {
+          "x": 646.1254166026572,
+          "z": 3,
+          "index": 28,
+          "type": "road",
+          "y": 257.74426670727746,
+          "visible": true
+        },
+        {
+          "x": 618.9237418887416,
+          "z": 3,
+          "index": 29,
+          "type": "road",
+          "y": 276.91282257075505,
+          "visible": true
+        },
+        {
+          "x": 590.2558783929304,
+          "z": 3,
+          "index": 30,
+          "type": "road",
+          "y": 297.11457664234854,
+          "visible": true
+        },
+        {
+          "x": 560,
+          "z": 3,
+          "index": 31,
+          "type": "road",
+          "y": 318.4353777059969,
+          "visible": true
+        },
+        {
+          "x": 528.0203993659863,
+          "z": 3,
+          "index": 32,
+          "type": "road",
+          "y": 340.970856410593,
+          "visible": true
+        },
+        {
+          "x": 494.165452862676,
+          "z": 3,
+          "index": 33,
+          "type": "road",
+          "y": 364.82785933886356,
+          "visible": true
+        },
+        {
+          "x": 458.2652166887263,
+          "z": 3,
+          "index": 34,
+          "type": "road",
+          "y": 390.12614298683144,
+          "visible": true
+        },
+        {
+          "x": 420.1285737296966,
+          "z": 3,
+          "index": 35,
+          "type": "road",
+          "y": 417.0003843228508,
+          "visible": true
+        },
+        {
+          "x": 641.9349373901314,
+          "z": 4,
+          "index": 36,
+          "type": "grass",
+          "y": 222.20512466390437,
+          "visible": true
+        },
+        {
+          "x": 615.9852890098479,
+          "z": 4,
+          "index": 37,
+          "type": "home",
+          "y": 239.53162260968224,
+          "visible": true
+        },
+        {
+          "x": 588.7084722008857,
+          "z": 4,
+          "index": 38,
+          "type": "grass",
+          "y": 257.7442667072774,
+          "visible": true
+        },
+        {
+          "x": 559.9999999999999,
+          "z": 4,
+          "index": 39,
+          "type": "grass",
+          "y": 276.91282257075505,
+          "visible": true
+        },
+        {
+          "x": 529.7441216070696,
+          "z": 4,
+          "index": 40,
+          "type": "grass",
+          "y": 297.11457664234854,
+          "visible": true
+        },
+        {
+          "x": 497.81226252515546,
+          "z": 4,
+          "index": 41,
+          "type": "home",
+          "y": 318.4353777059969,
+          "visible": true
+        },
+        {
+          "x": 464.06119809795905,
+          "z": 4,
+          "index": 42,
+          "type": "grass",
+          "y": 340.970856410593,
+          "visible": true
+        },
+        {
+          "x": 428.33090572535195,
+          "z": 4,
+          "index": 43,
+          "type": "clinic",
+          "y": 364.82785933886356,
+          "visible": true
+        },
+        {
+          "x": 390.44202781454385,
+          "z": 4,
+          "index": 44,
+          "type": "grass",
+          "y": 390.12614298683144,
+          "visible": true
+        },
+        {
+          "x": 613.3259890240549,
+          "z": 5,
+          "index": 45,
+          "type": "park",
+          "y": 205.7016349861188,
+          "visible": true
+        },
+        {
+          "x": 587.3116457967104,
+          "z": 5,
+          "index": 46,
+          "type": "grass",
+          "y": 222.20512466390437,
+          "visible": true
+        },
+        {
+          "x": 559.9999999999999,
+          "z": 5,
+          "index": 47,
+          "type": "grass",
+          "y": 239.53162260968224,
+          "visible": true
+        },
+        {
+          "x": 531.2915277991143,
+          "z": 5,
+          "index": 48,
+          "type": "grass",
+          "y": 257.7442667072774,
+          "visible": true
+        },
+        {
+          "x": 501.0762581112584,
+          "z": 5,
+          "index": 49,
+          "type": "grass",
+          "y": 276.91282257075505,
+          "visible": true
+        },
+        {
+          "x": 469.2323648212088,
+          "z": 5,
+          "index": 50,
+          "type": "grass",
+          "y": 297.11457664234854,
+          "visible": true
+        },
+        {
+          "x": 435.624525050311,
+          "z": 5,
+          "index": 51,
+          "type": "grass",
+          "y": 318.4353777059969,
+          "visible": true
+        },
+        {
+          "x": 400.1019968299317,
+          "z": 5,
+          "index": 52,
+          "type": "grass",
+          "y": 340.970856410593,
+          "visible": true
+        },
+        {
+          "x": 362.49635858802793,
+          "z": 5,
+          "index": 53,
+          "type": "park",
+          "y": 364.82785933886356,
+          "visible": true
+        },
+        {
+          "x": 586.0444393660154,
+          "z": 6,
+          "index": 54,
+          "type": "park",
+          "y": 189.96387463875377,
+          "visible": true
+        },
+        {
+          "x": 559.9999999999999,
+          "z": 6,
+          "index": 55,
+          "type": "grass",
+          "y": 205.70163498611876,
+          "visible": true
+        },
+        {
+          "x": 532.6883542032895,
+          "z": 6,
+          "index": 56,
+          "type": "grass",
+          "y": 222.20512466390437,
+          "visible": true
+        },
+        {
+          "x": 504.0147109901521,
+          "z": 6,
+          "index": 57,
+          "type": "grass",
+          "y": 239.53162260968224,
+          "visible": true
+        },
+        {
+          "x": 473.87458339734275,
+          "z": 6,
+          "index": 58,
+          "type": "grass",
+          "y": 257.7442667072774,
+          "visible": true
+        },
+        {
+          "x": 442.15251622251685,
+          "z": 6,
+          "index": 59,
+          "type": "grass",
+          "y": 276.91282257075505,
+          "visible": true
+        },
+        {
+          "x": 408.72060803534805,
+          "z": 6,
+          "index": 60,
+          "type": "grass",
+          "y": 297.11457664234854,
+          "visible": true
+        },
+        {
+          "x": 373.43678757546644,
+          "z": 6,
+          "index": 61,
+          "type": "grass",
+          "y": 318.4353777059969,
+          "visible": true
+        },
+        {
+          "x": 336.1427955619044,
+          "z": 6,
+          "index": 62,
+          "type": "park",
+          "y": 340.970856410593,
+          "visible": true
+        }
+      ],
+      "modelCount": 19
+    },
+    "balance": {
+      "version": 1,
+      "elapsed": 27.144425000005917,
+      "score": 2073,
+      "won": true,
+      "phase": "won",
+      "held": null,
+      "hand": null,
+      "bodies": {
+        "bridge": {
+          "position": [
+            0.0021164297448301958,
+            0.8899972696312449,
+            -0.002532067016241087
+          ],
+          "quaternion": [
+            -1.1802151788559286e-07,
+            0.0004691376097540083,
+            5.867637620606158e-08,
+            0.9999998899549368
+          ],
+          "velocity": [
+            4.2578627225728845e-11,
+            1.8041124150158794e-15,
+            -3.6327832426537464e-10
+          ],
+          "angularVelocity": [
+            -3.8970412731879286e-15,
+            1.0980574037063822e-10,
+            2.725518770198874e-16
+          ],
+          "sleepState": 0
+        },
+        "weight": {
+          "position": [
+            3.250000325662976,
+            1.4299965228927376,
+            -1.7499998180014829
+          ],
+          "quaternion": [
+            -0.05423421791618401,
+            -0.0542342539199587,
+            0.7050238645850255,
+            0.7050238617765792
+          ],
+          "velocity": [
+            -3.07354802194039e-09,
+            6.314393452555578e-15,
+            7.729032611476628e-09
+          ],
+          "angularVelocity": [
+            -1.1931520673547284e-15,
+            -6.245014658154934e-09,
+            4.019973898638941e-15
+          ],
+          "sleepState": 0
+        },
+        "cart": {
+          "position": [
+            5.2182229161435805,
+            1.0593127426617788,
+            3.269748548478703e-05
+          ],
+          "quaternion": [
+            -0.001294377226035814,
+            0.0012428381818977334,
+            0.8282786276605919,
+            0.5603135683717976
+          ],
+          "velocity": [
+            1.1802732861029364,
+            -0.08174999999998925,
+            -4.516052560207687e-06
+          ],
+          "angularVelocity": [
+            -1.733147826104748e-05,
+            0.0027099824294880225,
+            -4.542426270719667
+          ],
+          "sleepState": 0
+        }
+      },
+      "stable": 2,
+      "bridge": true,
+      "pressure": true,
+      "gate": 1.0000000000000004,
+      "grabs": 2,
+      "drops": 2,
+      "rotations": 6,
+      "tests": 1,
+      "replays": 2,
+      "contacts": [
+        [
+          "left",
+          "bridge"
+        ],
+        [
+          "left",
+          "bridge"
+        ],
+        [
+          "left",
+          "bridge"
+        ],
+        [
+          "left",
+          "bridge"
+        ],
+        [
+          "right",
+          "bridge"
+        ],
+        [
+          "right",
+          "bridge"
+        ],
+        [
+          "right",
+          "bridge"
+        ],
+        [
+          "right",
+          "bridge"
+        ],
+        [
+          "plate",
+          "weight"
+        ],
+        [
+          "plate",
+          "weight"
+        ],
+        [
+          "plate",
+          "weight"
+        ],
+        [
+          "plate",
+          "weight"
+        ]
+      ],
+      "lastMessage": "通行检验完成：桥板承担了车的重量，配重保持闸门开启。",
+      "physicsTime": 9.795125000005953,
+      "physicsStep": 1176,
+      "rules": {
+        "gravity": -9.81,
+        "step": 0.008333333333333333,
+        "bridge": [
+          4.6,
+          0.18,
+          1.05
+        ],
+        "weight": [
+          0.9,
+          0.9,
+          0.9
+        ],
+        "platformTop": 0.8,
+        "gap": 2.4,
+        "plate": {
+          "x": 3.25,
+          "y": 0.89,
+          "z": -1.75,
+          "size": 1.3
+        },
+        "stableSeconds": 1.2,
+        "gripMaxForce": 500
+      },
+      "objects": [
+        {
+          "id": "bridge",
+          "size": [
+            4.6,
+            0.18,
+            1.05
+          ],
+          "mass": 6,
+          "screen": {
+            "x": 548.9890190834329,
+            "y": 302.8319731821569,
+            "visible": true
+          }
+        },
+        {
+          "id": "weight",
+          "size": [
+            0.9,
+            0.9,
+            0.9
+          ],
+          "mass": 5,
+          "screen": {
+            "x": 689.5579255527443,
+            "y": 300.33920446646647,
+            "visible": true
+          }
+        }
+      ],
+      "plateScreen": {
+        "x": 687.6026669619052,
+        "y": 317.5983702145404,
+        "visible": true
+      },
+      "handScreen": null,
+      "projection": {
+        "bridgeTarget": {
+          "x": 548.4892504900519,
+          "y": 264.03162924285937,
+          "visible": true
+        },
+        "plateTarget": {
+          "x": 692.0688172659625,
+          "y": 278.1752747793445,
+          "visible": true
+        }
+      }
+    },
+    "tandem": {
+      "charged": {
+        "version": 1,
+        "level": 1,
+        "players": [
+          {
+            "x": 360.00000000000034,
+            "y": 520,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true,
+            "facing": 1,
+            "id": 0
+          },
+          {
+            "x": 477.8536000000002,
+            "y": 520,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true,
+            "facing": 1,
+            "id": 1
+          }
+        ],
+        "phase": "play",
+        "won": false,
+        "elapsed": 19.56339999999406,
+        "failures": 0,
+        "restarts": 1,
+        "completed": [
+          0
+        ],
+        "gateLatched": false,
+        "charge": 1.6,
+        "bridgeTimer": 11,
+        "bridgeActivations": 1,
+        "score": 900,
+        "message": "同步完成，灯桥开启。两人一起通过；离开压板后还有 11 秒。",
+        "levels": [
+          {
+            "name": "01 / 分工开门",
+            "hint": "P1 留在青色压板上，P2 跳过设备箱，穿过门，到右侧锁定通路。",
+            "floor": [
+              {
+                "x": 20,
+                "y": 520,
+                "w": 1080,
+                "h": 70
+              }
+            ],
+            "obstacles": [
+              {
+                "x": 442,
+                "y": 484,
+                "w": 55,
+                "h": 36
+              }
+            ],
+            "plates": [
+              {
+                "x": 330,
+                "y": 520,
+                "w": 62,
+                "player": 0
+              }
+            ],
+            "gate": {
+              "x": 600,
+              "y": 288,
+              "w": 25,
+              "h": 232
+            },
+            "latch": {
+              "x": 812,
+              "y": 520,
+              "w": 56
+            },
+            "exit": {
+              "x": 987,
+              "y": 520,
+              "w": 89
+            },
+            "starts": [
+              {
+                "x": 115,
+                "y": 520
+              },
+              {
+                "x": 210,
+                "y": 520
+              }
+            ]
+          },
+          {
+            "name": "02 / 同步灯桥",
+            "hint": "P1 与 P2 分别站上两块压板，共同充能 1.6 秒。灯桥维持 11 秒，两人一起穿过峡谷。",
+            "floor": [
+              {
+                "x": 20,
+                "y": 520,
+                "w": 570,
+                "h": 70
+              },
+              {
+                "x": 870,
+                "y": 520,
+                "w": 230,
+                "h": 70
+              }
+            ],
+            "obstacles": [],
+            "plates": [
+              {
+                "x": 328,
+                "y": 520,
+                "w": 62,
+                "player": 0
+              },
+              {
+                "x": 448,
+                "y": 520,
+                "w": 62,
+                "player": 1
+              }
+            ],
+            "gap": {
+              "x": 590,
+              "y": 520,
+              "w": 280
+            },
+            "bridge": {
+              "x": 590,
+              "y": 520,
+              "w": 280,
+              "h": 22
+            },
+            "exit": {
+              "x": 987,
+              "y": 520,
+              "w": 89
+            },
+            "starts": [
+              {
+                "x": 115,
+                "y": 520
+              },
+              {
+                "x": 210,
+                "y": 520
+              }
+            ]
+          }
+        ],
+        "rules": {
+          "speed": 196,
+          "gravity": 1200,
+          "jump": 435,
+          "bodyWidth": 32,
+          "bodyHeight": 86,
+          "chargeSeconds": 1.6,
+          "bridgeSeconds": 11
+        },
+        "platesHeld": [
+          true,
+          true
+        ],
+        "gateOpen": null,
+        "exitReached": [
+          false,
+          false
+        ],
+        "touchHeld": [],
+        "active": true
+      },
+      "win": {
+        "version": 1,
+        "level": 1,
+        "players": [
+          {
+            "x": 987.1608000000023,
+            "y": 520,
+            "vx": 196,
+            "vy": 0,
+            "grounded": true,
+            "facing": 1,
+            "id": 0
+          },
+          {
+            "x": 1084,
+            "y": 520,
+            "vx": 196,
+            "vy": 0,
+            "grounded": true,
+            "facing": 1,
+            "id": 1
+          }
+        ],
+        "phase": "won",
+        "won": true,
+        "elapsed": 22.98890000000007,
+        "failures": 0,
+        "restarts": 1,
+        "completed": [
+          0,
+          1
+        ],
+        "gateLatched": false,
+        "charge": 0,
+        "bridgeTimer": 7.966799999999957,
+        "bridgeActivations": 1,
+        "score": 1500,
+        "message": "两位工程师同时抵达，观测站的灯桥恢复运行。",
+        "levels": [
+          {
+            "name": "01 / 分工开门",
+            "hint": "P1 留在青色压板上，P2 跳过设备箱，穿过门，到右侧锁定通路。",
+            "floor": [
+              {
+                "x": 20,
+                "y": 520,
+                "w": 1080,
+                "h": 70
+              }
+            ],
+            "obstacles": [
+              {
+                "x": 442,
+                "y": 484,
+                "w": 55,
+                "h": 36
+              }
+            ],
+            "plates": [
+              {
+                "x": 330,
+                "y": 520,
+                "w": 62,
+                "player": 0
+              }
+            ],
+            "gate": {
+              "x": 600,
+              "y": 288,
+              "w": 25,
+              "h": 232
+            },
+            "latch": {
+              "x": 812,
+              "y": 520,
+              "w": 56
+            },
+            "exit": {
+              "x": 987,
+              "y": 520,
+              "w": 89
+            },
+            "starts": [
+              {
+                "x": 115,
+                "y": 520
+              },
+              {
+                "x": 210,
+                "y": 520
+              }
+            ]
+          },
+          {
+            "name": "02 / 同步灯桥",
+            "hint": "P1 与 P2 分别站上两块压板，共同充能 1.6 秒。灯桥维持 11 秒，两人一起穿过峡谷。",
+            "floor": [
+              {
+                "x": 20,
+                "y": 520,
+                "w": 570,
+                "h": 70
+              },
+              {
+                "x": 870,
+                "y": 520,
+                "w": 230,
+                "h": 70
+              }
+            ],
+            "obstacles": [],
+            "plates": [
+              {
+                "x": 328,
+                "y": 520,
+                "w": 62,
+                "player": 0
+              },
+              {
+                "x": 448,
+                "y": 520,
+                "w": 62,
+                "player": 1
+              }
+            ],
+            "gap": {
+              "x": 590,
+              "y": 520,
+              "w": 280
+            },
+            "bridge": {
+              "x": 590,
+              "y": 520,
+              "w": 280,
+              "h": 22
+            },
+            "exit": {
+              "x": 987,
+              "y": 520,
+              "w": 89
+            },
+            "starts": [
+              {
+                "x": 115,
+                "y": 520
+              },
+              {
+                "x": 210,
+                "y": 520
+              }
+            ]
+          }
+        ],
+        "rules": {
+          "speed": 196,
+          "gravity": 1200,
+          "jump": 435,
+          "bodyWidth": 32,
+          "bodyHeight": 86,
+          "chargeSeconds": 1.6,
+          "bridgeSeconds": 11
+        },
+        "platesHeld": [
+          false,
+          false
+        ],
+        "gateOpen": null,
+        "exitReached": [
+          true,
+          true
+        ],
+        "touchHeld": [],
+        "active": true
+      }
+    },
+    "shell": {
+      "mobilePanels": [
+        {
+          "x": 16,
+          "y": -1157.21875,
+          "width": 358,
+          "height": 1076.375,
+          "bottom": -80.84375
+        },
+        {
+          "x": 16,
+          "y": -56.84375,
+          "width": 358,
+          "height": 957.375,
+          "bottom": 900.53125
+        }
+      ],
+      "mobileStandalone": {
+        "party": {
+          "frameWidth": 350,
+          "overflow": false
+        },
+        "district": {
+          "frameWidth": 350,
+          "overflow": false
+        },
+        "balance": {
+          "frameWidth": 350,
+          "overflow": false
+        },
+        "tandem": {
+          "frameWidth": 350,
+          "overflow": false
+        }
+      }
+    }
+  },
+  "errors": [],
+  "missing": [],
+  "regressionReport": "notes/game-forms-check-20261003.json",
+  "rulesReport": "notes/worlds-rules-check.json",
+  "actualGameplayPreviews": [
+    "web/assets/showcase/previews/party.webp",
+    "web/assets/showcase/previews/district.webp",
+    "web/assets/showcase/previews/balance.webp",
+    "web/assets/showcase/previews/tandem.webp"
+  ],
+  "artworkMode": "built-in image_gen and authored locally bundled Kenney CC0 models",
+  "artworkManifest": "assets/game-forms/systems-generation-20261003.json",
+  "cityModelManifest": "assets/game-forms/systems-city-sources.json",
+  "physicsManifest": "assets/game-forms/systems-balance-sources.json"
+}

@@ -1,0 +1,357 @@
+{
+  "date": "2026-10-06",
+  "passed": true,
+  "method": "Actual visible native browser controls, original raster terrain rendering, native frontier selectors, legal explicit placement, rotation, undo, paused reload, ordinary demo, native fullscreen and responsive viewport. Read-only visible DOM and layout only; no injected game state, tile placements, clocks, objectives or victory.",
+  "checks": [
+    {
+      "name": "fresh-art-ready-paused-one-seed",
+      "passed": true,
+      "observed": {
+        "progress": "地块 1 / 19 · 剩余 18",
+        "mode": "拼境暂停",
+        "canvas": {
+          "height": 987,
+          "rect": {
+            "bottom": 724.3750228881836,
+            "height": 658.0416870117188,
+            "left": 38.66666793823242,
+            "right": 936.00004196167,
+            "top": 66.33333587646484,
+            "width": 897.3333740234375,
+            "x": 38.66666793823242,
+            "y": 66.33333587646484
+          },
+          "width": 1346
+        }
+      }
+    },
+    {
+      "name": "actual-rotation-water-conflict-rejects-place",
+      "passed": true,
+      "observed": {
+        "rotation": "旋转 60°",
+        "preview": "水边冲突 · 这处暂不能放置水道与陆地边不能相接，请旋转地块或换一处空地。",
+        "score": "0 分",
+        "progress": "地块 1 / 19 · 剩余 18"
+      }
+    },
+    {
+      "name": "native-preview-does-not-place-or-score",
+      "passed": true,
+      "observed": {
+        "preview": "1 / 1 接边同类 · 预估 +22 分所有相接边都一致。 绿点同类连接，黄点普通差异，棕点水边冲突。",
+        "score": "0 分",
+        "progress": "地块 1 / 19 · 剩余 18"
+      }
+    },
+    {
+      "name": "native-explicit-water-placement",
+      "passed": true,
+      "observed": {
+        "progress": "地块 2 / 19 · 剩余 17",
+        "score": "22 分",
+        "objectives": "林地连通群1 / 4村落连通群1 / 3水道连通群2 / 5"
+      }
+    },
+    {
+      "name": "native-undo-restores-tile-score-and-group",
+      "passed": true,
+      "observed": {
+        "progress": "地块 1 / 19 · 剩余 18",
+        "score": "0 分",
+        "tile": "长溪 · 一",
+        "objectives": "林地连通群1 / 4村落连通群1 / 3水道连通群1 / 5"
+      }
+    },
+    {
+      "name": "ordinary-land-mismatch-preview-legal-with-lower-score",
+      "passed": true,
+      "observed": "1 / 2 接边同类 · 预估 +7 分1 条普通地貌边不同，仍可放置。 绿点同类连接，黄点普通差异，棕点水边冲突。"
+    },
+    {
+      "name": "native-land-placement-updates-actual-connected-group",
+      "passed": true,
+      "observed": {
+        "progress": "地块 3 / 19 · 剩余 16",
+        "score": "29 分",
+        "objectives": "林地连通群2 / 4村落连通群1 / 3水道连通群2 / 5"
+      }
+    },
+    {
+      "name": "actual-partial-restore-retains-placement-score-groups-orientation-selection",
+      "passed": true,
+      "observed": {
+        "progress": "地块 4 / 19 · 剩余 15",
+        "score": "36 分",
+        "mode": "上次拼境已恢复 · 暂停",
+        "rotation": "旋转 60°",
+        "selected": "2,0",
+        "objectives": "林地连通群2 / 4村落连通群2 / 3水道连通群2 / 5"
+      }
+    },
+    {
+      "name": "native-fullscreen-whole-stage-faithful-map-size",
+      "passed": true,
+      "observed": {
+        "canvas": {
+          "bottom": 904.6666679382324,
+          "height": 854,
+          "left": 0.6666666865348816,
+          "right": 1421.33341473341,
+          "top": 50.66666793823242,
+          "width": 1420.666748046875,
+          "x": 0.6666666865348816,
+          "y": 50.66666793823242
+        },
+        "dock": {
+          "bottom": 1033.3333549499512,
+          "height": 982.6666870117188,
+          "left": 1421.3333740234375,
+          "right": 1721.3333740234375,
+          "top": 50.66666793823242,
+          "width": 300,
+          "x": 1421.3333740234375,
+          "y": 50.66666793823242
+        },
+        "exitVisible": false,
+        "stage": {
+          "bottom": 1034,
+          "height": 1034,
+          "left": 0,
+          "right": 1722,
+          "top": 0,
+          "width": 1722,
+          "x": 0,
+          "y": 0
+        },
+        "viewport": [
+          1722,
+          1034
+        ]
+      },
+      "evidence": {
+        "canvas": {
+          "bottom": 938.00004196167,
+          "height": 887.3333740234375,
+          "left": 0.6666666865348816,
+          "right": 1406.6666666865349,
+          "top": 50.66666793823242,
+          "width": 1406,
+          "x": 0.6666666865348816,
+          "y": 50.66666793823242
+        },
+        "overflow": false,
+        "stage": {
+          "bottom": 1067.3333740234375,
+          "height": 1067.3333740234375,
+          "left": 0,
+          "right": 1707.3333740234375,
+          "top": 0,
+          "width": 1707.3333740234375,
+          "x": 0,
+          "y": 0
+        },
+        "viewport": [
+          1707,
+          1067
+        ],
+        "nativeExitButtonVisible": true,
+        "nativeExitClicked": true
+      }
+    },
+    {
+      "name": "actual-canvas-frontier-hit-matches-native-control",
+      "passed": true,
+      "observed": {
+        "selected": "-2,1",
+        "preview": "0 / 1 接边同类 · 预估 +0 分1 条普通地貌边不同，仍可放置。 绿点同类连接，黄点普通差异，棕点水边冲突。",
+        "progress": "地块 4 / 19 · 剩余 15"
+      },
+      "method": "Native screenshot-derived click at a visibly empty hex center, without model access."
+    },
+    {
+      "name": "ordinary-full-demo-completes-real-landscape-and-objectives",
+      "passed": true,
+      "observed": {
+        "progress": "地块 19 / 19 · 剩余 0",
+        "mode": "湖畔已封存 · 暂停",
+        "score": "536 分",
+        "objectives": "林地连通群7 / 4 · 达成村落连通群7 / 3 · 达成水道连通群5 / 5 · 达成",
+        "result": {
+          "detail": "536 分 · 3 / 3 连通目标达成。林地 7、村落 7、水道 5 地块连成各自最大的群落。地图依照你的真实放置保留。",
+          "title": "一片湖畔，有了自己的轮廓。",
+          "visible": true
+        }
+      },
+      "method": "Native complete-demo control at ordinary ×2 RAF cadence. Engine ledger visibly completes eighteen ordinary placements then finish; no injected state or accelerated browser clock."
+    },
+    {
+      "name": "actual-narrow-layout-canvas-and-native-targets",
+      "passed": true,
+      "observed": {
+        "viewport": [
+          390,
+          844
+        ],
+        "documentWidth": 375,
+        "buttons": [
+          {
+            "height": 44,
+            "id": "landscape-center",
+            "text": "居中全景",
+            "width": 65.33333587646484
+          },
+          {
+            "height": 44,
+            "id": "landscape-pause",
+            "text": "继续拼境",
+            "width": 53.33333587646485
+          },
+          {
+            "height": 44,
+            "id": "landscape-stage-demo",
+            "text": "完整示范",
+            "width": 53.33333587646485
+          },
+          {
+            "height": 44,
+            "id": "landscape-timescale",
+            "text": "示范 ×2",
+            "width": 49.95833587646485
+          },
+          {
+            "height": 44,
+            "id": "landscape-fullscreen",
+            "text": "全屏拼境",
+            "width": 53.33333587646485
+          },
+          {
+            "height": 44,
+            "id": "landscape-rotate-left",
+            "text": "↶ 左转 60°",
+            "width": 144.6666717529297
+          },
+          {
+            "height": 44,
+            "id": "landscape-rotate-right",
+            "text": "右转 60° ↷",
+            "width": 144.6666717529297
+          },
+          {
+            "height": 44,
+            "id": "landscape-frontier-prev",
+            "text": "←",
+            "width": 44
+          },
+          {
+            "height": 44,
+            "id": "landscape-frontier-next",
+            "text": "→",
+            "width": 44
+          },
+          {
+            "height": 44,
+            "id": "landscape-place",
+            "text": "放置当前地块",
+            "width": 198.33334350585935
+          },
+          {
+            "height": 44,
+            "id": "landscape-undo",
+            "text": "撤回一片",
+            "width": 100
+          },
+          {
+            "height": 44,
+            "id": "landscape-finish",
+            "text": "封存这一片湖畔",
+            "width": 305.3333435058594
+          },
+          {
+            "height": 44,
+            "id": "landscape-new",
+            "text": "再拼一片新风景",
+            "width": 305.3333435058594
+          }
+        ],
+        "canvas": {
+          "height": 323,
+          "rect": {
+            "bottom": 427.90626525878906,
+            "height": 322.7395935058594,
+            "left": 14.666666984558104,
+            "right": 360.0000104904175,
+            "top": 105.16667175292967,
+            "width": 345.3333435058594,
+            "x": 14.666666984558104,
+            "y": 105.16667175292967
+          },
+          "width": 345
+        }
+      },
+      "boundary": "Responsive browser viewport only; physical mobile touch/device not tested."
+    },
+    {
+      "name": "Native direction map and reference summary retain the first ten, all four separate genre expansion references, old 107 forms / 116 entrances and the new 14th landscape link",
+      "passed": true
+    },
+    {
+      "name": "Native reference link with demo query restores the completed landscape paused without resetting the saved result",
+      "passed": true
+    },
+    {
+      "name": "Restored sealed scene explains preserved results and available fresh/demo actions without suggesting unavailable undo",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-landscape-captures/fullscreen-manual-preview.png",
+      "description": "Actual native fullscreen after three manually placed tiles, undo/replay and saved-state reload: 36 points, true terrain groups and an unplaced river preview selected by native canvas hit.",
+      "viewport": [
+        1722,
+        1034
+      ],
+      "capture_size": [
+        1722,
+        1034
+      ],
+      "format": "JPEG",
+      "sha256": "556199e40ea02e2f9761821937dad40e5728a9cc2f793575215ce83ca327b473"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-landscape-captures/fullscreen-complete.png",
+      "description": "Actual final nineteen-tile landscape from the completed ordinary ×2 demo, now deliberately opened in native whole-stage fullscreen: real 536 points and three attained connected-terrain objectives.",
+      "viewport": [
+        1707,
+        1067
+      ],
+      "capture_size": [
+        1707,
+        1067
+      ],
+      "format": "JPEG",
+      "sha256": "67177ecaaa555023c6820eab444488b000ae3096bce088af322d7b6766d9dd99"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-landscape-captures/mobile-complete.png",
+      "description": "Actual responsive 390 × 844 CSS-pixel viewport, scrolled with native page input to the completed nineteen-tile board and native controls; stacked current-tile dock follows below. No horizontal overflow and all visible stage buttons meet 44 × 44 CSS pixels.",
+      "viewport": [
+        390,
+        844
+      ],
+      "capture_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "sha256": "d167fbca41db078f583693c2155b90e6fc53324c0b3c863310e41bf78aba1d3a"
+    }
+  ],
+  "scope": [
+    "Manual native browser play verified three placements, rotation, legal and rejected previews, undo, saved partial restore and canvas frontier hit.",
+    "Ordinary native complete demo executed all eighteen deck placements, produced nineteen total tiles and 536 real points with all three connected-terrain targets achieved.",
+    "Responsive viewport evidence uses browser layout simulation, not a physical mobile device. Screenshots are native unmodified captures; actual codec and pixel dimensions are inspected independently.",
+    "A replacement tab opened through the native reference summary after temporary tab cleanup; completed saved state restored paused under the demo query."
+  ]
+}

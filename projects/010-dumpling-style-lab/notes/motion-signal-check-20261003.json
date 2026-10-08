@@ -1,0 +1,510 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-03T13:48:11.951Z",
+  "checks": [
+    "Six real scheduled trains load with original authored Train Kit models and move on their actual incoming rail centerlines",
+    "Both red entry signals hold real trains at exact independent stop lines, with no motion or premature arrival count",
+    "Actual 3D signal-post click releases the western train, red restores for following trains, and an occupied block physically locks the route switch",
+    "The chosen bay switch produces actual curved outgoing train motion before reaching any station; travel alone is not counted",
+    "Pause freezes distances and time; actual refresh restores exact train positions, fixed route, signals, shared occupancy and timetable",
+    "Real switch-ring click changes the path to the forest station; independent north signal release uses that path and only actual western arrival scores",
+    "Read-only dispatch planning and real switch/signal buttons route all six actual trains to their own two distinct destinations and record completion",
+    "Replay really resets six trains and both red signals while retaining the gallery completion",
+    "Intentionally wrong switch sends the north train along the bay track, and only real arrival at that incorrect station fails the task",
+    "Intentionally simultaneous green signals cause actual train-unit proximity inside the shared track and a physical-distance collision failure",
+    "390 px actual touchscreen selects the projected signal post, the train advances on the selected route, outside controls remain usable and there is no horizontal overflow",
+    "Actual authored assets load without browser errors; QA remains separate from normal save keys"
+  ],
+  "results": {
+    "won": {
+      "version": 1,
+      "elapsed": 49.30846666666068,
+      "phase": "won",
+      "won": true,
+      "score": 2301,
+      "signals": {
+        "west": false,
+        "north": false
+      },
+      "switch": "forest",
+      "delivered": [
+        "W01",
+        "N02",
+        "W03",
+        "N04",
+        "W05",
+        "N06"
+      ],
+      "failure": null,
+      "trains": [
+        {
+          "id": "W01",
+          "entry": "west",
+          "target": "bay",
+          "kind": "city",
+          "spawn": 0,
+          "status": "arrived",
+          "distance": 17.752535503508987,
+          "route": "bay",
+          "blocked": false
+        },
+        {
+          "id": "N02",
+          "entry": "north",
+          "target": "forest",
+          "kind": "freight",
+          "spawn": 0,
+          "status": "arrived",
+          "distance": 17.690399603919126,
+          "route": "forest",
+          "blocked": false
+        },
+        {
+          "id": "W03",
+          "entry": "west",
+          "target": "forest",
+          "kind": "steam",
+          "spawn": 9,
+          "status": "arrived",
+          "distance": 17.752535503508987,
+          "route": "forest",
+          "blocked": false
+        },
+        {
+          "id": "N04",
+          "entry": "north",
+          "target": "bay",
+          "kind": "city",
+          "spawn": 9,
+          "status": "arrived",
+          "distance": 17.690399603919126,
+          "route": "bay",
+          "blocked": false
+        },
+        {
+          "id": "W05",
+          "entry": "west",
+          "target": "bay",
+          "kind": "freight",
+          "spawn": 18,
+          "status": "arrived",
+          "distance": 17.752535503508987,
+          "route": "bay",
+          "blocked": false
+        },
+        {
+          "id": "N06",
+          "entry": "north",
+          "target": "forest",
+          "kind": "steam",
+          "spawn": 18,
+          "status": "arrived",
+          "distance": 17.690399603919126,
+          "route": "forest",
+          "blocked": false
+        }
+      ],
+      "switchChanges": 3,
+      "signalChanges": 12,
+      "denied": 1,
+      "replays": 0,
+      "active": true,
+      "block": [],
+      "trainPositions": [],
+      "controlsScreen": {
+        "west": {
+          "x": 466.24568092306794,
+          "y": 267.52873691791444,
+          "visible": true
+        },
+        "north": {
+          "x": 520.9909862568735,
+          "y": 243.8530993338169,
+          "visible": true
+        },
+        "switch": {
+          "x": 581.3940265186416,
+          "y": 334.74903412829394,
+          "visible": true
+        }
+      },
+      "stops": {
+        "west": 5.1,
+        "north": 5.037864100410136
+      },
+      "approachLengths": {
+        "west": 9.600000000000003,
+        "north": 9.53786410041014
+      },
+      "stations": {
+        "bay": {
+          "name": "海湾站",
+          "color": 13084254,
+          "z": 2.7
+        },
+        "forest": {
+          "name": "山林站",
+          "color": 6005141,
+          "z": -2.7
+        }
+      },
+      "rules": {
+        "speed": 1.8,
+        "trains": 6,
+        "collisionRadius": 0.7,
+        "carriageOffset": 1.48,
+        "sharedExitX": 4.85
+      },
+      "models": 7
+    },
+    "wrong": {
+      "version": 1,
+      "elapsed": 10.632900000000012,
+      "phase": "failed",
+      "won": false,
+      "score": 0,
+      "signals": {
+        "west": false,
+        "north": true
+      },
+      "switch": "bay",
+      "delivered": [],
+      "failure": {
+        "kind": "wrong-station",
+        "train": "N02",
+        "expected": "forest",
+        "arrived": "bay",
+        "at": 10.632900000000012
+      },
+      "trains": [
+        {
+          "id": "W01",
+          "entry": "west",
+          "target": "bay",
+          "kind": "city",
+          "spawn": 0,
+          "status": "waiting",
+          "distance": 5.1,
+          "route": null,
+          "blocked": true
+        },
+        {
+          "id": "N02",
+          "entry": "north",
+          "target": "forest",
+          "kind": "freight",
+          "spawn": 0,
+          "status": "misrouted",
+          "distance": 17.690399603919126,
+          "route": "bay",
+          "blocked": false
+        },
+        {
+          "id": "W03",
+          "entry": "west",
+          "target": "forest",
+          "kind": "steam",
+          "spawn": 9,
+          "status": "pending",
+          "distance": 0,
+          "route": null,
+          "blocked": false
+        },
+        {
+          "id": "N04",
+          "entry": "north",
+          "target": "bay",
+          "kind": "city",
+          "spawn": 9,
+          "status": "pending",
+          "distance": 0,
+          "route": null,
+          "blocked": false
+        },
+        {
+          "id": "W05",
+          "entry": "west",
+          "target": "bay",
+          "kind": "freight",
+          "spawn": 18,
+          "status": "pending",
+          "distance": 0,
+          "route": null,
+          "blocked": false
+        },
+        {
+          "id": "N06",
+          "entry": "north",
+          "target": "forest",
+          "kind": "steam",
+          "spawn": 18,
+          "status": "pending",
+          "distance": 0,
+          "route": null,
+          "blocked": false
+        }
+      ],
+      "switchChanges": 0,
+      "signalChanges": 1,
+      "denied": 0,
+      "replays": 1,
+      "active": true,
+      "block": [],
+      "trainPositions": [
+        {
+          "id": "W01",
+          "x": -3.5,
+          "y": 0.09,
+          "z": 0,
+          "screen": {
+            "x": 480.22491676944577,
+            "y": 293.94856567783864,
+            "visible": true
+          }
+        },
+        {
+          "id": "N02",
+          "x": 7.700000000000001,
+          "y": 0.09,
+          "z": 2.7000000000000006,
+          "screen": {
+            "x": 692.7744946053582,
+            "y": 442.41184389144615,
+            "visible": true
+          }
+        }
+      ],
+      "controlsScreen": {
+        "west": {
+          "x": 466.24568092306794,
+          "y": 267.52873691791444,
+          "visible": true
+        },
+        "north": {
+          "x": 520.9909862568735,
+          "y": 243.8530993338169,
+          "visible": true
+        },
+        "switch": {
+          "x": 581.3940265186416,
+          "y": 334.74903412829394,
+          "visible": true
+        }
+      },
+      "stops": {
+        "west": 5.1,
+        "north": 5.037864100410136
+      },
+      "approachLengths": {
+        "west": 9.600000000000003,
+        "north": 9.53786410041014
+      },
+      "stations": {
+        "bay": {
+          "name": "海湾站",
+          "color": 13084254,
+          "z": 2.7
+        },
+        "forest": {
+          "name": "山林站",
+          "color": 6005141,
+          "z": -2.7
+        }
+      },
+      "rules": {
+        "speed": 1.8,
+        "trains": 6,
+        "collisionRadius": 0.7,
+        "carriageOffset": 1.48,
+        "sharedExitX": 4.85
+      },
+      "models": 7
+    },
+    "collided": {
+      "version": 1,
+      "elapsed": 5.3664000000000005,
+      "phase": "failed",
+      "won": false,
+      "score": 0,
+      "signals": {
+        "west": true,
+        "north": true
+      },
+      "switch": "bay",
+      "delivered": [],
+      "failure": {
+        "kind": "collision",
+        "trains": [
+          "W01",
+          "N02"
+        ],
+        "separation": 0.6924983992296532,
+        "at": 5.3664000000000005
+      },
+      "trains": [
+        {
+          "id": "W01",
+          "entry": "west",
+          "target": "bay",
+          "kind": "city",
+          "spawn": 0,
+          "status": "running",
+          "distance": 8.669759999999986,
+          "route": "bay",
+          "blocked": false
+        },
+        {
+          "id": "N02",
+          "entry": "north",
+          "target": "forest",
+          "kind": "freight",
+          "spawn": 0,
+          "status": "running",
+          "distance": 6.507744100410129,
+          "route": "bay",
+          "blocked": false
+        },
+        {
+          "id": "W03",
+          "entry": "west",
+          "target": "forest",
+          "kind": "steam",
+          "spawn": 9,
+          "status": "pending",
+          "distance": 0,
+          "route": null,
+          "blocked": false
+        },
+        {
+          "id": "N04",
+          "entry": "north",
+          "target": "bay",
+          "kind": "city",
+          "spawn": 9,
+          "status": "pending",
+          "distance": 0,
+          "route": null,
+          "blocked": false
+        },
+        {
+          "id": "W05",
+          "entry": "west",
+          "target": "bay",
+          "kind": "freight",
+          "spawn": 18,
+          "status": "pending",
+          "distance": 0,
+          "route": null,
+          "blocked": false
+        },
+        {
+          "id": "N06",
+          "entry": "north",
+          "target": "forest",
+          "kind": "steam",
+          "spawn": 18,
+          "status": "pending",
+          "distance": 0,
+          "route": null,
+          "blocked": false
+        }
+      ],
+      "switchChanges": 0,
+      "signalChanges": 2,
+      "denied": 0,
+      "replays": 2,
+      "active": true,
+      "block": [
+        "W01",
+        "N02"
+      ],
+      "trainPositions": [
+        {
+          "id": "W01",
+          "x": 0.06975999999998558,
+          "y": 0.09,
+          "z": 0,
+          "screen": {
+            "x": 550.1834010091081,
+            "y": 323.0069489570539,
+            "visible": true
+          }
+        },
+        {
+          "id": "N02",
+          "x": -1.8789490076441138,
+          "y": 0.09,
+          "z": -0.509770437637293,
+          "screen": {
+            "x": 518.5648035821803,
+            "y": 300.78328302448847,
+            "visible": true
+          }
+        }
+      ],
+      "controlsScreen": {
+        "west": {
+          "x": 466.24568092306794,
+          "y": 267.52873691791444,
+          "visible": true
+        },
+        "north": {
+          "x": 520.9909862568735,
+          "y": 243.8530993338169,
+          "visible": true
+        },
+        "switch": {
+          "x": 581.3940265186416,
+          "y": 334.74903412829394,
+          "visible": true
+        }
+      },
+      "stops": {
+        "west": 5.1,
+        "north": 5.037864100410136
+      },
+      "approachLengths": {
+        "west": 9.600000000000003,
+        "north": 9.53786410041014
+      },
+      "stations": {
+        "bay": {
+          "name": "海湾站",
+          "color": 13084254,
+          "z": 2.7
+        },
+        "forest": {
+          "name": "山林站",
+          "color": 6005141,
+          "z": -2.7
+        }
+      },
+      "rules": {
+        "speed": 1.8,
+        "trains": 6,
+        "collisionRadius": 0.7,
+        "carriageOffset": 1.48,
+        "sharedExitX": 4.85
+      },
+      "models": 7
+    }
+  },
+  "departed": [
+    "W01",
+    "N02",
+    "W03",
+    "N04",
+    "W05",
+    "N06"
+  ],
+  "screenshot": "assets/game-forms/motion-qa/signal-playable.png",
+  "mobileScreenshot": "assets/game-forms/motion-qa/mobile-signal.png",
+  "sourceManifest": "assets/game-forms/motion-signal-sources.json",
+  "limitations": [
+    "Fixed six-train two-destination dispatch task, not a full railway network builder.",
+    "Signals are manual; the player can authorize a conflict. Switch is locked until the real train tail clears the shared block.",
+    "Collision uses actual locomotive/carriage distances, without a rigid-body derailment simulation."
+  ],
+  "errors": [],
+  "missing": []
+}

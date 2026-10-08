@@ -1,0 +1,1 @@
+九款原创场景与两套物件图集通过内置 ImageGen 制作；11 份原始 PNG、完整提示词、哈希见项目 assets/game-forms/nine-generation-20261004.json。运行素材保持原尺寸与透明通道。错视桥面复用已有原创 roll/limestone.webp 材质，不修改源文件，其出处见 roll/ATTRIBUTION.md。九款 preview 为实际生产工厂 draw() 的 Skia 画布输出，来源见 notes/nine-preview-provenance-20261004.json；不是浏览器截图。

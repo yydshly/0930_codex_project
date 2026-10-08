@@ -1,0 +1,290 @@
+{
+  "date": "2026-10-04",
+  "new_forms": 9,
+  "total_forms": 60,
+  "total_entrances": 69,
+  "implemented": [
+    "grappling",
+    "perspective-illusion",
+    "object-restoration",
+    "terrain-digging",
+    "rolling-collection",
+    "ink-territory",
+    "squad-following",
+    "service-workflow",
+    "asymmetric-coop"
+  ],
+  "original_art": {
+    "new_backgrounds": 9,
+    "new_transparent_atlases": 2,
+    "manifest": "assets/game-forms/nine-generation-20261004.json",
+    "reused_material": "web/assets/game-forms/roll/limestone.webp; protected original unchanged"
+  },
+  "verified": {
+    "rules_and_lifecycle": 74,
+    "all_nine_normal_command_playthroughs_complete": true,
+    "mid_and_complete_state_json_round_trips": true,
+    "native_button_full_workflows": [
+      "repair",
+      "kitchen",
+      "relay"
+    ],
+    "production_draw_initial_progress_complete": 27,
+    "pause_state_and_pixels": true,
+    "old_web_files_unchanged": 2304,
+    "site_tests": 6,
+    "old_checks": {
+      "world": 56,
+      "precision": 23,
+      "observation": 28,
+      "gesture": 31,
+      "logic": 31
+    },
+    "static_demos_built": 19,
+    "packaged_hash_targets": 30,
+    "local_http_all_200": true
+  },
+  "visual_refinements": [
+    "Continuous stone bridge surfaces, material grain and depth sorting replace repeated exposed pillar faces.",
+    "Diggable stone uses connected material and exposed tunnel edges instead of a visible rock tile grid.",
+    "Ink coverage uses continuous irregular pigment outlines and spray particles instead of checkerboard cells.",
+    "Completion banner keeps the repaired watch, collector sphere, bridge and other results visible.",
+    "Generated watch layers expose a moving second hand on test.",
+    "Kitchen native work button follows actual preparation/cooking/delivery state.",
+    "Selected anchors/parts/stations are highlighted; unavailable commands disabled.",
+    "Squad workers and cargo cross the repaired bridge through its actual location."
+  ],
+  "preservation": {
+    "files": 2304,
+    "changed": [],
+    "missing": [],
+    "intentional_shared": [
+      "forms.html",
+      "forms.js",
+      "game-forms-catalog.js",
+      "showcase-catalog.js",
+      "showcase.html",
+      "showcase.js"
+    ],
+    "save_migration": "No browser storage accessed. Old save prefix and old route IDs unchanged; new games use their own IDs."
+  },
+  "not_verified": [
+    "Browser CSS/layout",
+    "390px viewport and actual touchscreen",
+    "Desktop and narrow-screen fullscreen",
+    "Actual browser keyboard focus, pointer cancellation and tab switching",
+    "Browser localStorage refresh restore",
+    "Full interactive comparison embed behavior"
+  ],
+  "browser_blocker": {
+    "verified": false,
+    "responsive_verified": false,
+    "fullscreen_verified": false,
+    "keyboard_pointer_focus_verified": false,
+    "browser_storage_verified": false,
+    "blocker": "CUA rewriteDocumentation retry fails at kernel initialization: windows sandbox failed, helper_unknown_error, setup refresh had errors. No alternative browser automation used.",
+    "earlier_auto_review": "Initial getState was rejected for missing rewriteDocumentation precondition. The required rewriteDocumentation call was attempted and then the kernel failed before connection."
+  },
+  "quality_gate": {
+    "automated_and_offscreen_passed": true,
+    "browser_acceptance_complete": false,
+    "product_quality_certified": false,
+    "next_required": "Resume browser QA when CUA can initialize; play all nine, test refresh/resume, narrow screen/fullscreen, native input cancellation/focus and old-entry switching. Fix any findings before marking acceptance complete."
+  },
+  "scope_document": "notes/nine-forms-20261004.md",
+  "renders": [
+    {
+      "id": "hook",
+      "frame": "initial",
+      "path": "assets/game-forms/nine-qa/hook-initial.png",
+      "sha256": "e9371de87f539eab5b3867175fea84d73c9eb24112c6acf9f647ecd2f26b6225",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "hook",
+      "frame": "progress",
+      "path": "assets/game-forms/nine-qa/hook-progress.png",
+      "sha256": "f9274d996a90a86086883b92863fc51e5edb6376c25fa140d2179887b54468b2",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "hook",
+      "frame": "complete",
+      "path": "assets/game-forms/nine-qa/hook-complete.png",
+      "sha256": "bd88d99b3b76cd0a0e14a69a1c138de905446389265f9e10e1889866946bc3ef",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "repair",
+      "frame": "initial",
+      "path": "assets/game-forms/nine-qa/repair-initial.png",
+      "sha256": "a274834fa8d47b3651c3d602dc1f26dd4dce83a078233373ecb1c15f9e3f4f7e",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "repair",
+      "frame": "progress",
+      "path": "assets/game-forms/nine-qa/repair-progress.png",
+      "sha256": "fddcddcce14f76630a0bb9a1150d6cb4f003891a2c2255d54867234f5947cfb3",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "repair",
+      "frame": "complete",
+      "path": "assets/game-forms/nine-qa/repair-complete.png",
+      "sha256": "f7d6cb2a7b28bcb5cfb1b4c0c5cf9176db21b8983b114cba79cd8d1b7155c2ab",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "delve",
+      "frame": "initial",
+      "path": "assets/game-forms/nine-qa/delve-initial.png",
+      "sha256": "5441f97f47fac544f3f63b453b93cf928f5c792b76adb6e8da40498768ef5422",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "delve",
+      "frame": "progress",
+      "path": "assets/game-forms/nine-qa/delve-progress.png",
+      "sha256": "91a6e43b50ed4abbadf1967e5020e31527577e3716adc76b371becab2c6550e5",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "delve",
+      "frame": "complete",
+      "path": "assets/game-forms/nine-qa/delve-complete.png",
+      "sha256": "da8d9619b608c8fd57a9a2e5dde1bf870148bca21f4bf7d26e0691f6df9e9306",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "cluster",
+      "frame": "initial",
+      "path": "assets/game-forms/nine-qa/cluster-initial.png",
+      "sha256": "adb12edf5e5949acb1d6e81178f0513762f69cb81a64f02e317caa8455838aa8",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "cluster",
+      "frame": "progress",
+      "path": "assets/game-forms/nine-qa/cluster-progress.png",
+      "sha256": "a0dbbe3cc9fccc222214b3a3f69bff317b17c75d710be9fec3c8d0dd25861c26",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "cluster",
+      "frame": "complete",
+      "path": "assets/game-forms/nine-qa/cluster-complete.png",
+      "sha256": "0bb51a4f86ca359afe59d9720783707bc0b2e57eec8fda221522a1f49066d782",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "paint",
+      "frame": "initial",
+      "path": "assets/game-forms/nine-qa/paint-initial.png",
+      "sha256": "bc9e52c4d588a7383057529134a06866ee55880bc5de9fa0d130ec82b3e27fb3",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "paint",
+      "frame": "progress",
+      "path": "assets/game-forms/nine-qa/paint-progress.png",
+      "sha256": "9a31dbcdfe76a510fbbdfabfcc417745084ac2e9df93aa38005613f1df6b96a7",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "paint",
+      "frame": "complete",
+      "path": "assets/game-forms/nine-qa/paint-complete.png",
+      "sha256": "8b3930e6ba3e36ba52f0b34c1fa9364fc1409ebd78f8c4b63b4cf8983ba8110e",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "swarm",
+      "frame": "initial",
+      "path": "assets/game-forms/nine-qa/swarm-initial.png",
+      "sha256": "63c89bf48f808504355987653572ad064cdc1174027b067f0230f230d3b22ac9",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "swarm",
+      "frame": "progress",
+      "path": "assets/game-forms/nine-qa/swarm-progress.png",
+      "sha256": "a45a8d3b07c2c9fcde9fadd5246523ec16313ec59917e9ea4adce83223d77d68",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "swarm",
+      "frame": "complete",
+      "path": "assets/game-forms/nine-qa/swarm-complete.png",
+      "sha256": "ef7b63e2cbc67c45df7fcb6d975b486e043be5ef6275bdad5d2467523b475e52",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "kitchen",
+      "frame": "initial",
+      "path": "assets/game-forms/nine-qa/kitchen-initial.png",
+      "sha256": "0589fed520a2c525e195d6858cca15189bb9d3bd40243f092611d8d7a7772513",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "kitchen",
+      "frame": "progress",
+      "path": "assets/game-forms/nine-qa/kitchen-progress.png",
+      "sha256": "ecba70e6d21280c748995abe99198362683a8e2a823bbdccff812a9c1e829aa9",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "kitchen",
+      "frame": "complete",
+      "path": "assets/game-forms/nine-qa/kitchen-complete.png",
+      "sha256": "76beb946f272c4735337fd153b8b46a3943e31165c321bc7fae9819cf324ecc8",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "relay",
+      "frame": "initial",
+      "path": "assets/game-forms/nine-qa/relay-initial.png",
+      "sha256": "eb5d11011d226bdc781f0399f559466486411fd1e9a1ef85617542d3b4484e76",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "relay",
+      "frame": "progress",
+      "path": "assets/game-forms/nine-qa/relay-progress.png",
+      "sha256": "ca41f3bd779b22e3794fccc7ccccedc4d6fe73f1630381e05196a70e82b55a97",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "relay",
+      "frame": "complete",
+      "path": "assets/game-forms/nine-qa/relay-complete.png",
+      "sha256": "ad8a5c4bca3ad1a680055aadedbc2f16499fe34ca283490f3227f05773437b2a",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "fold",
+      "frame": "initial",
+      "path": "assets/game-forms/nine-qa/fold-initial.png",
+      "sha256": "05ffe5d8acf6396209476696c84501add84d7b4118a9ca1ea0cccb642576cf88",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "fold",
+      "frame": "progress",
+      "path": "assets/game-forms/nine-qa/fold-progress.png",
+      "sha256": "137a6b59553ca57300776dc1c72a0532bb62faf1df48a35891032ce2b5008e4d",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    },
+    {
+      "id": "fold",
+      "frame": "complete",
+      "path": "assets/game-forms/nine-qa/fold-complete.png",
+      "sha256": "42a9345c404edc93180661c1ed8bbe9ef08da8385f8627e38eeb8f60a5553024",
+      "review": "All initial/progress/complete contact sheets inspected; fold initial, watch complete and relay operator also inspected individually. Actual production factory draw(), Skia; no browser CSS."
+    }
+  ],
+  "production_sources": {
+    "showcase-nine.js": "7ecf5a5e23c874faf701193a1f44c7215f8e826fa9e1f0f9e0a08e6e4b232014",
+    "showcase-nine-rules.js": "3e4fa14201ee4f1856ead03b2e846e00a6e746c808a1b2937fa2ec0dd319ed05"
+  }
+}

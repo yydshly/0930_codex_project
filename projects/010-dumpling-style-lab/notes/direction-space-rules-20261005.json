@@ -1,0 +1,122 @@
+{
+  "passed": true,
+  "checks": [
+    "world starts at the real dawn port with independent inventories and legal targets",
+    "heading zero applies acceleration along negative z and release retains physical inertia",
+    "positive turning changes heading and forward thrust, while negative thrust reverses velocity",
+    "braking lowers speed to zero without inventing reverse motion",
+    "boost genuinely raises acceleration14 and maximum30 while ordinary flight remains10 and22",
+    "ordinary autopilot turns and moves every frame, brakes and docks without teleportation",
+    "manual controls interrupt both demonstration and autopilot immediately",
+    "docking requires strict distance and speed limits and never moves the model",
+    "courier cargo occupies two real slots and cannot be sold as free stock or accepted twice",
+    "transport reward is paid only after real forge docking and is separate from trade profit",
+    "ordinary ore trade uses forge and verdant prices and consumes actual stock",
+    "prices and cost-basis accounting include losing trades and reject unknown or airborne market actions",
+    "survey needs low speed, real proximity and a continuous five-second scan",
+    "scanning at excessive speed or outside the beacon radius cannot accumulate progress",
+    "fuel burns with actual engine work, empty tanks cannot accelerate, and paid refuel conserves credits",
+    "ordinary demo completes within110 simulated seconds using continuous flights and finite cargo",
+    "manual ordinary commands reproduce the same transport, sale, scan and return solution",
+    "completion permits further flight and losing trades without revoking the recorded achievement",
+    "normal long sessions remain restorable beyond7200 seconds without an arbitrary expiry",
+    "explicit rescue waits six seconds without moving, preserves cargo and tasks, then returns to dawn with20 fuel",
+    "low-credit and zero-credit rescue charges only available credits and records all fuel and fee changes",
+    "rescue is unavailable in demonstrations or with fuel, and forged rescue or completion records are rejected",
+    "pause freezes navigation, scan progress, time, demo actions and market spending",
+    "midflight and partial-scan saves restore paused and resume deterministic ordinary navigation",
+    "all demo stages and common frame intervals maintain valid legal saves",
+    "strict saves reject schema, nonfinite motion, forged cash, cargo, profit, fuel, tasks and ledgers",
+    "invalid actions and invalid time steps cannot mutate the production world"
+  ],
+  "failures": [],
+  "playthroughs": [
+    {
+      "kind": "ordinary demo",
+      "seconds": 28.279999999999575,
+      "credits": 730,
+      "profit": 40,
+      "stats": {
+        "distance": 313.970194995635,
+        "flightTime": 28.159999999999577,
+        "fuelBurned": 2.1247999999999942,
+        "fuelPurchased": 0,
+        "buySpent": 20,
+        "sellEarned": 60,
+        "refuelSpent": 0,
+        "rescueSpent": 0,
+        "rescues": 0,
+        "buyUnits": 1,
+        "sellUnits": 1,
+        "dockings": 2,
+        "manualTakeovers": 0
+      }
+    },
+    {
+      "kind": "ordinary manual commands",
+      "seconds": 28.239999999999576,
+      "credits": 730,
+      "profit": 40,
+      "stats": {
+        "distance": 313.970194995635,
+        "flightTime": 28.159999999999577,
+        "fuelBurned": 2.1247999999999942,
+        "fuelPurchased": 0,
+        "buySpent": 20,
+        "sellEarned": 60,
+        "refuelSpent": 0,
+        "rescueSpent": 0,
+        "rescues": 0,
+        "buyUnits": 1,
+        "sellUnits": 1,
+        "dockings": 2,
+        "manualTakeovers": 0
+      }
+    }
+  ],
+  "method": "Production inertial flight and automatic steering/thrust/braking. Ordinary demonstration and manually repeated port actions have no position teleports, free cargo sales, synthetic task rewards or awarded completion. Explicit user-requested rescue alone waits six seconds then transports the vessel to dawn with ledger-accounted fees/fuel. Dedicated fixtures are limited to exact docking and scanning boundary assertions.",
+  "flight": {
+    "maxSpeed": 22,
+    "acceleration": 10,
+    "boostMaxSpeed": 30,
+    "boostAcceleration": 14,
+    "turnRate": 1.75,
+    "brakeAcceleration": 14,
+    "fuelRate": 0.32,
+    "boostFuelRate": 0.58,
+    "dockRadius": 8,
+    "dockSpeed": 3,
+    "scanRadius": 15,
+    "scanSpeed": 4,
+    "scanSeconds": 5
+  },
+  "ports": [
+    {
+      "id": "dawn",
+      "name": "曙光港",
+      "x": 0,
+      "z": 0,
+      "color": "#79d6df"
+    },
+    {
+      "id": "forge",
+      "name": "赤砾矿站",
+      "x": 80,
+      "z": -65,
+      "color": "#efb479"
+    },
+    {
+      "id": "verdant",
+      "name": "青湾商港",
+      "x": -80,
+      "z": -35,
+      "color": "#91d4a6"
+    }
+  ],
+  "survey": {
+    "id": "survey",
+    "name": "远域信标",
+    "x": 30,
+    "z": -130
+  }
+}

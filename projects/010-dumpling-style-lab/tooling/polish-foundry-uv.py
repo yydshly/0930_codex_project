@@ -1,0 +1,7 @@
+from pathlib import Path
+P=Path(__file__).resolve().parents[1];p=P/'web/showcase-foundry-scenes.js';s=p.read_text(encoding='utf-8')
+old="const p=o.geometry.attributes.position,n=o.geometry.attributes.normal,uv=new Float32Array(p.count*2);for(let i=0;i<p.count;i++){const nx=Math.abs(n?.getX(i)||0),ny=Math.abs(n?.getY(i)||0),nz=Math.abs(n?.getZ(i)||1);uv[i*2]=(nx>nz?p.getZ(i):p.getX(i))*1.8;uv[i*2+1]=(ny>Math.max(nx,nz)?p.getZ(i):p.getY(i))*1.8;}"
+new="o.geometry.computeBoundingBox();const b=o.geometry.boundingBox,d=b.getSize(new THREE.Vector3()),p=o.geometry.attributes.position,n=o.geometry.attributes.normal,uv=new Float32Array(p.count*2);for(let i=0;i<p.count;i++){const nx=Math.abs(n?.getX(i)||0),ny=Math.abs(n?.getY(i)||0),nz=Math.abs(n?.getZ(i)||1);uv[i*2]=nx>nz?(p.getZ(i)-b.min.z)/(d.z||1):(p.getX(i)-b.min.x)/(d.x||1);uv[i*2+1]=ny>Math.max(nx,nz)?(p.getZ(i)-b.min.z)/(d.z||1):(p.getY(i)-b.min.y)/(d.y||1);}"
+assert old in s;s=s.replace(old,new);p.write_text(s,encoding='utf-8')
+p=P/'tooling/raster-foundry-scenes.py';s=p.read_text(encoding='utf-8');s=s.replace("np.asarray(Image.open(W/path).convert('RGB'),dtype=np.float32)", "np.asarray(Image.open(W/path).convert('RGB').resize((256,256),Image.Resampling.LANCZOS) if 'alloy-panel' in path else Image.open(W/path).convert('RGB'),dtype=np.float32)");p.write_text(s,encoding='utf-8')
+print('Normalized authored surface UVs; diagnostic texture filtering approximates mipmaps')

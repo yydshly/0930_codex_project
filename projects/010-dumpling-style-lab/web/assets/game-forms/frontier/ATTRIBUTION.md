@@ -1,0 +1,1 @@
+Ten original environment, panel, sprite and material assets made with built-in ImageGen. Full prompts, source PNGs and hashes: assets/game-forms/frontier-generation-20261004.json. Three-dimensional scenes also reuse original limestone material from assets/game-forms/roll/limestone.webp; its existing source and attribution are preserved.

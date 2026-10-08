@@ -1,0 +1,58 @@
+{
+  "scope": "Renderer-independent production logic and local asset integrity; browser appearance, input, and audible output require root CUA review.",
+  "passed": 13,
+  "checks": [
+    {
+      "name": "Safe light/gate route reaches rescue and powered handover",
+      "passed": true
+    },
+    {
+      "name": "Leaving corridor open causes generator failure before handover",
+      "passed": true
+    },
+    {
+      "name": "Protecting generator without guiding worker fails at high tide",
+      "passed": true
+    },
+    {
+      "name": "Closing a gate after an intruder already crossed cannot trap him behind it",
+      "passed": true
+    },
+    {
+      "name": "Floodlight delays approach by a finite interval",
+      "passed": true
+    },
+    {
+      "name": "Beacon only operates at lighthouse and consumes exact activation power",
+      "passed": true
+    },
+    {
+      "name": "Backup power is available only at archives and once per shift",
+      "passed": true
+    },
+    {
+      "name": "Loss of power disables floodlights, beacon and held shutter",
+      "passed": true
+    },
+    {
+      "name": "Save/resume yields identical encounter progression",
+      "passed": true
+    },
+    {
+      "name": "Corrupt saves cannot create NaN, invalid camera or out-of-range power",
+      "passed": true
+    },
+    {
+      "name": "Completed episodes stop consuming power and time",
+      "passed": true
+    },
+    {
+      "name": "Stateful actions are disabled after failure, camera review remains possible",
+      "passed": true
+    },
+    {
+      "name": "All six authored runtime files and generation originals exist",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,305 @@
+{
+  "date": "2026-10-08",
+  "target": "GitHub Pages static subpath hosting",
+  "method": "Read-only source audit by evaluating existing build_site.py public-copy predicate, HTML/CSS/module link resolution, actual GLB JSON resource inspection, source hash comparisons and production frontend DOM/Skia gate tests. No browser or live remote deployment test was performed by this agent.",
+  "source_web": {
+    "file_count": 2695,
+    "bytes": 285121499,
+    "suffix_counts": {
+      ".js": 247,
+      ".css": 38,
+      ".html": 23,
+      ".md": 23,
+      ".txt": 30,
+      ".webp": 710,
+      ".png": 777,
+      ".jpg": 5,
+      ".json": 7,
+      ".glb": 809,
+      ".wav": 1,
+      "[no suffix]": 9,
+      ".ogg": 16
+    }
+  },
+  "publication_predicate": {
+    "included_count": 2682,
+    "excluded_count": 13,
+    "excluded": [
+      "README.md",
+      "assets/moving-day/asset-manifest.json",
+      "assets/worlds/manifest.json",
+      "assets/showcase/platform2d/Backgrounds",
+      "assets/showcase/platform2d/Characters",
+      "assets/showcase/platform2d/Default",
+      "assets/showcase/platform2d/Double",
+      "assets/showcase/platform2d/Enemies",
+      "assets/showcase/platform2d/Sprites",
+      "assets/showcase/platform2d/Tiles",
+      "versions/painted-20261002/README.md",
+      "versions/painted-20261002/assets/moving-day/asset-manifest.json",
+      "versions/painted-20261002/assets/worlds/manifest.json"
+    ],
+    "necessary_runtime_assets_missing": [],
+    "exclusion_explanation": "Only two web README files, four unreferenced preparation manifest JSON files and seven empty no-suffix platform-pack directory-marker files are excluded. No runtime request to the excluded manifests was found. All GLB models, OGG/WAV audio, atlas JSON and third-party notices required by current runtime are included."
+  },
+  "pages_and_links": {
+    "html_count": 23,
+    "html_pages": [
+      "direction-coop.html",
+      "direction-deck.html",
+      "direction-dungeon.html",
+      "direction-freight.html",
+      "direction-investigation.html",
+      "direction-landscape.html",
+      "direction-language.html",
+      "direction-park.html",
+      "direction-shift.html",
+      "direction-space.html",
+      "direction-stealth.html",
+      "direction-survival.html",
+      "direction-vehicle.html",
+      "direction-wildlife.html",
+      "directions.html",
+      "forms.html",
+      "games.html",
+      "index.html",
+      "references.html",
+      "research.html",
+      "showcase.html",
+      "versions/painted-20261002/games.html",
+      "versions/painted-20261002/index.html"
+    ],
+    "homepage_direct_or_self": [
+      "direction-coop.html",
+      "direction-deck.html",
+      "direction-dungeon.html",
+      "direction-freight.html",
+      "direction-investigation.html",
+      "direction-landscape.html",
+      "direction-language.html",
+      "direction-park.html",
+      "direction-shift.html",
+      "direction-space.html",
+      "direction-stealth.html",
+      "direction-survival.html",
+      "direction-vehicle.html",
+      "direction-wildlife.html",
+      "directions.html",
+      "forms.html",
+      "games.html",
+      "index.html",
+      "references.html",
+      "research.html",
+      "showcase.html",
+      "versions/painted-20261002/games.html",
+      "versions/painted-20261002/index.html"
+    ],
+    "homepage_unlinked_html": [],
+    "static_reference_count": 1199,
+    "missing_references": [],
+    "dynamic_imports": [
+      {
+        "from": "showcase.js",
+        "prefix": "./showcase-",
+        "coverage": "All .js files below web are included by publication predicate."
+      }
+    ]
+  },
+  "glb_resources": {
+    "count": 809,
+    "external_uri_count": 345,
+    "unique_external_file_count": 15,
+    "missing_or_unpublished": []
+  },
+  "audio": {
+    "ogg_count": 16,
+    "wav_count": 1,
+    "all_published": true
+  },
+  "licenses": {
+    "count": 54,
+    "all_published": true,
+    "files": [
+      "THREE-LICENSE.txt",
+      "assets/directions/space/License-space-kit.txt",
+      "assets/directions/space/SOURCE-NOTICE.txt",
+      "assets/directions/vehicle/License-car-kit.txt",
+      "assets/directions/vehicle/SOURCE-NOTICE.json",
+      "assets/directions/vehicle/nature/License-nature-kit.txt",
+      "assets/game-forms/balance/ATTRIBUTION.md",
+      "assets/game-forms/bubble/ATTRIBUTION.md",
+      "assets/game-forms/chain/ATTRIBUTION.md",
+      "assets/game-forms/coast/License.txt",
+      "assets/game-forms/conduit/ATTRIBUTION.md",
+      "assets/game-forms/cue/ATTRIBUTION.md",
+      "assets/game-forms/district/ATTRIBUTION.md",
+      "assets/game-forms/district/cars-LICENSE.txt",
+      "assets/game-forms/district/commercial-LICENSE.txt",
+      "assets/game-forms/district/roads-LICENSE.txt",
+      "assets/game-forms/district/suburban-LICENSE.txt",
+      "assets/game-forms/foundry/License-racing-kit.txt",
+      "assets/game-forms/foundry/License-space-kit.txt",
+      "assets/game-forms/frontier/ATTRIBUTION.md",
+      "assets/game-forms/horizons/ATTRIBUTION.md",
+      "assets/game-forms/nine/ATTRIBUTION.md",
+      "assets/game-forms/pilot/License.txt",
+      "assets/game-forms/polish/ATTRIBUTION.md",
+      "assets/game-forms/prism/ATTRIBUTION.md",
+      "assets/game-forms/putt/ATTRIBUTION.md",
+      "assets/game-forms/putt/License.txt",
+      "assets/game-forms/roll/ATTRIBUTION.md",
+      "assets/game-forms/seek/ATTRIBUTION.md",
+      "assets/game-forms/signal/ATTRIBUTION.md",
+      "assets/game-forms/signal/License.txt",
+      "assets/game-forms/sonar/ATTRIBUTION.md",
+      "assets/game-forms/studio/ATTRIBUTION.md",
+      "assets/game-forms/swing/ATTRIBUTION.md",
+      "assets/game-forms/trace/ATTRIBUTION.md",
+      "assets/game-forms/voyages/ATTRIBUTION.md",
+      "assets/game-forms/watch/ATTRIBUTION.md",
+      "assets/game-forms/signal-polished/cars/License.txt",
+      "assets/game-forms/signal-polished/commercial/License.txt",
+      "assets/game-forms/signal-polished/industrial/License.txt",
+      "assets/game-forms/signal-polished/roads/License.txt",
+      "assets/game-forms/signal-polished/suburban/License.txt",
+      "assets/showcase/blaster/License.txt",
+      "assets/showcase/farm/License.txt",
+      "assets/showcase/nature/License.txt",
+      "assets/showcase/platform2d/License.txt",
+      "assets/showcase/platform3d/License.txt",
+      "assets/showcase/station/License.txt",
+      "assets/showcase/town/License.txt",
+      "assets/showcase/audio/interface-sounds/License.txt",
+      "assets/showcase/audio/rpg-audio/License.txt",
+      "vendor/physics/LICENSE",
+      "vendor/showcase/LICENSE",
+      "versions/painted-20261002/THREE-LICENSE.txt"
+    ],
+    "scope": "Three.js and cannon-es license notices, Kenney CC0 model/texture/audio pack notices and original generated-asset attributions are shipped; external reference games are linked and are not bundled upstream games."
+  },
+  "external_dependencies": [
+    {
+      "kind": "original_game",
+      "source": "https://dumpling-dell.pages.dev/",
+      "behavior": "External original iframe and original code/source links require network; independent link is available. Original game is not a local licensed mirror."
+    },
+    {
+      "kind": "font",
+      "source": "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap",
+      "file": "direction-language.css:1",
+      "behavior": "Only remaining font network import discovered. Declared fallback Songti SC / SimSun / serif keeps language page readable without Google Fonts; identical typeface offline or in restrictive networks is not guaranteed."
+    }
+  ],
+  "local_services": {
+    "room": {
+      "module": "showcase-frontier-room.js",
+      "endpoint": "http://127.0.0.1:8963/room",
+      "old_auto_trigger": "Restored session token triggers poll onStart/setActive and once per second while active. Fresh session waits for explicit create/join.",
+      "public_after_fix": "Shows real room scene and rule description; no session-token restore, create/join/tasks/votes or polling on nonlocal host; controls disabled with clear no-backend notice. No fabricated participants or success."
+    },
+    "relay": {
+      "module": "showcase-exchange.js",
+      "endpoint": "http://127.0.0.1:8971/relay",
+      "old_auto_trigger": "postway restored receiveCode claims onStart; outgoing/ownerKey auto read/lookup; active records poll every 4 seconds. satchel and gavel do not use relay.",
+      "public_after_fix": "postway retains actual route drawing, role layout, undo and local restart; publish/receive/refresh/copy disabled; restored auto requests and polling skip public host. Low-level default request also rejects nonlocal hosts before fetch. Explicit relayRequest injection preserved for isolated tests."
+    },
+    "allowed_hosts": [
+      "localhost",
+      "127.0.0.1",
+      "[::1]",
+      "::1"
+    ],
+    "helper": "publication-runtime.js",
+    "public_production_gate_checks": {
+      "passed": true,
+      "count": 31,
+      "checks": [
+        "local hostname localhost retains services",
+        "local hostname 127.0.0.1 retains services",
+        "local hostname [::1] retains services",
+        "local hostname ::1 retains services",
+        "nonlocal hostname yydshly.github.io refuses services",
+        "nonlocal hostname localhost.example refuses services",
+        "nonlocal hostname 127.0.0.1.example refuses services",
+        "nonlocal hostname  refuses services",
+        "nonlocal hostname undefined refuses services",
+        "public room controls all disabled after start",
+        "public room with restored session emits zero loopback requests",
+        "public room does not invent participants or a new victory",
+        "public room scope is visible in shell and room log",
+        "local room still calls its original loopback endpoint",
+        "local room create flow remains available",
+        "public courier retains actual adjacent route editing",
+        "public courier undo removes an actual segment",
+        "public courier publish guarded",
+        "public courier receive guarded",
+        "public courier refresh guarded",
+        "public courier copy guarded",
+        "public relay-dependent controls disabled",
+        "public courier remains unpublished and incomplete",
+        "public restored carrier emits no automatic relay request",
+        "public restored carrier remains unverified",
+        "public restored author emits no automatic relay request",
+        "public restored author remains unverified",
+        "all public relay paths emit zero loopback requests",
+        "explicit injected relay still works on public hostname for isolated tests",
+        "local relay retains original endpoint",
+        "local default relay remains callable"
+      ],
+      "scope": "Production frontend factories through existing DOM/Skia adapters; no browser CSS acceptance or remote room backend."
+    },
+    "regressions": {
+      "exchange_rules": 24,
+      "exchange_lifecycle": 33,
+      "frontier_lifecycle_and_audio": 60,
+      "passed": true,
+      "scope": "Existing production-factory and native-control adapters rerun successfully; backend services and saved real-user SQLite records were not changed."
+    }
+  },
+  "preservation": {
+    "history": {
+      "count": 149,
+      "changed_or_missing": []
+    },
+    "game_engines": {
+      "count": 22,
+      "changed_or_missing": []
+    },
+    "old_assets": {
+      "count": 2268,
+      "changed_or_missing": []
+    },
+    "legacy_runtime": {
+      "count": 3,
+      "changed_or_missing": []
+    }
+  },
+  "overview_guide": {
+    "path": "assets/project-overview-20261006.jpg",
+    "bytes": 1985913,
+    "sha256": "7eef18cd174b9198803134e4ff6cf5d72ae4f7a42df6a266c23518a75288c771",
+    "matches_original_manifest": true,
+    "format": "JPEG",
+    "size": [
+      2400,
+      9344
+    ],
+    "counts": {
+      "forms": 107,
+      "legacy": 9,
+      "showcase": 116,
+      "independent_directions": 15,
+      "future_notes": 12
+    },
+    "usage": "Use this exact image for project cover and prominent homepage summary entrance; do not generate a substitute."
+  },
+  "recommendations": [
+    "Publish existing asset allowlist unchanged for this project; current runtime assets and notices are complete. Do not add tooling servers, notes, SQLite databases, generation inputs or source manifests to the public artifact.",
+    "Describe room and asynchronous relay as local-service mechanisms, distinct from public static demos. Public GitHub Pages is not an internet multiplayer backend.",
+    "Keep existing historical and original-edition entrances and all 23 current/history HTML pages directly reachable; all were present during this audit.",
+    "Use 107 forms + 9 preserved legacy entries = 116 showcase entries, with 15 independent directions and 12 unstarted future notes as separate scopes. Do not add these numbers into one completed-game count.",
+    "State browser-local saves and non-migrating origin; local 127.0.0.1 saves are not automatically transferred to the GitHub Pages origin.",
+    "On deployment verify actual remote HTTP asset loads, 3D renderer startup and published gate messages; this source-level audit does not prove remote browser acceptance."
+  ],
+  "passed": true
+}

@@ -1,0 +1,373 @@
+{
+  "date": "2026-10-05",
+  "passed": true,
+  "status": "passed_with_explicit_scope",
+  "method": "Actual browser CUA UI actions, read-only rendered DOM observations, and screenshots of the production Three.js/WebGL renderer; no injected world state, accelerated browser clock, or Skia substitute.",
+  "url": "http://127.0.0.1:8962/direction-space.html?demo=1#play",
+  "screenshots": [
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/space-browser-20261005/01-desktop-chase.jpg",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "capture_scope": "desktop viewport, ordinary manual start at dawn, true WebGL chase",
+      "capture_size": {
+        "width": 1425,
+        "height": 990
+      },
+      "format": "JPEG"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/space-browser-20261005/02-desktop-sector.jpg",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "capture_scope": "desktop viewport, keyboard C switches the same manual voyage to sector camera",
+      "capture_size": {
+        "width": 1425,
+        "height": 990
+      },
+      "format": "JPEG"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/space-browser-20261005/03b-native-fullscreen.jpg",
+      "viewport": {
+        "height": 1034,
+        "width": 1722
+      },
+      "capture_scope": "native default fullscreen without responsive viewport override; restored completed voyage remains paused, full in-stage HUD and port target selector",
+      "capture_size": {
+        "width": 1722,
+        "height": 1034
+      },
+      "format": "JPEG"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/space-browser-20261005/04-mobile390.jpg",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "capture_scope": "390px responsive desktop browser override; ordinary manual start; not a real phone or multi-touch hardware test",
+      "capture_size": {
+        "width": 375,
+        "height": 812
+      },
+      "format": "JPEG"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/space-browser-20261005/05-native-demo-complete.jpg",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "capture_scope": "default native browser viewport, ordinary complete demonstration finished at 730 credits and 40 trade profit",
+      "capture_size": {
+        "width": 1265,
+        "height": 712
+      },
+      "format": "JPEG"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/space-browser-20261005/06-native-takeover.jpg",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "capture_scope": "native viewport; UI wait for real speed above 10, actual takeover preserves moving ship/cargo/credits, then paused flight scene",
+      "capture_size": {
+        "width": 1265,
+        "height": 712
+      },
+      "format": "JPEG"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/space-browser-20261005/07-native-ready.jpg",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "capture_scope": "default native viewport after final source reload; toolbar pause restores whole stage visibility; retained moving-vessel save paused for user takeover",
+      "capture_size": {
+        "width": 1265,
+        "height": 712
+      },
+      "format": "JPEG"
+    }
+  ],
+  "observations": [
+    {
+      "name": "desktop initial layout",
+      "observed": {
+        "buttonFont": "13px",
+        "captionFont": "11px",
+        "engine": "three.js r160",
+        "overflow": false,
+        "stage": {
+          "bottom": 879.9270858764648,
+          "top": 119.92708587646484
+        },
+        "viewport": {
+          "height": 1000,
+          "width": 1440
+        }
+      }
+    },
+    {
+      "name": "manual voyage arrival",
+      "observed": {
+        "cargo": "3 / 6",
+        "credits": "340",
+        "location": "靠泊 · 赤砾矿站",
+        "log": "0s · 停靠曙光港：接下两舱运输单，再购买一份医用品。\n63s · 已装载两舱封签医用品，交付赤砾矿站可获得180信用点。\n63s · 购买一舱医用品，支付20信用点。\n63s · 离开曙光港。\n71s · 已停靠赤砾矿站。",
+        "view": "3D 航区总览"
+      }
+    },
+    {
+      "name": "manual delivery and trade",
+      "observed": {
+        "cargo": "0 / 6",
+        "courier": "已在矿站交付",
+        "credits": "580",
+        "mode": "自由驾驶 · 自动导航",
+        "profit": "40 CR",
+        "target": "survey"
+      }
+    },
+    {
+      "name": "actual continuous scan complete",
+      "observed": {
+        "location": "深空 · 32, -130",
+        "log": "126s · 封签货物已交付，获得180信用点。\n126s · 出售一舱医用品，收入60；该笔利润40。\n127s · 离开赤砾矿站。\n134s · 已抵达远域信标，保持低速并持续扫描。\n138s · 五秒扫描完成。把勘探资料带回曙光港。",
+        "scan": "扫描完成 · 待结算"
+      }
+    },
+    {
+      "name": "fullscreen target selection",
+      "observed": {
+        "location": "靠泊 · 曙光港",
+        "panelTarget": "verdant",
+        "pausedButton": "继续航行",
+        "stageTarget": "verdant",
+        "task": "把远域勘探资料带回曙光港结算。"
+      }
+    },
+    {
+      "name": "manual voyage fully completed",
+      "observed": {
+        "courier": "已在矿站交付",
+        "credits": "730",
+        "location": "靠泊 · 曙光港",
+        "profit": "40 CR",
+        "report": "用时 288 秒，运输委托已交付，信标扫描已结算，贸易净收益 40 CR。飞船和货舱继续保留，可以继续自由飞行与交易。",
+        "survey": "已在曙光结算",
+        "task": "委托与探索已完成"
+      }
+    },
+    {
+      "name": "refresh restoration",
+      "observed": {
+        "credits": "730",
+        "location": "靠泊 · 曙光港",
+        "mode": "自由驾驶 · 已暂停",
+        "report": "用时 288 秒，运输委托已交付，信标扫描已结算，贸易净收益 40 CR。飞船和货舱继续保留，可以继续自由飞行与交易。",
+        "resumeVisible": true,
+        "task": "委托与探索已完成"
+      }
+    },
+    {
+      "name": "390px layout and input sizing",
+      "observed": {
+        "buttonFont": "13px",
+        "canvas": {
+          "height": 387,
+          "width": 345
+        },
+        "captionFont": "11px",
+        "overflow": false,
+        "stage": {
+          "bottom": 821.9375,
+          "height": 800,
+          "top": 21.9375
+        },
+        "touchButtons": [
+          {
+            "height": 57.33333587646485,
+            "name": "按住向左转向",
+            "width": 61.0625
+          },
+          {
+            "height": 57.33333587646485,
+            "name": "按住推进",
+            "width": 61.07291793823242
+          },
+          {
+            "height": 57.33333587646485,
+            "name": "按住制动",
+            "width": 61.0625
+          },
+          {
+            "height": 57.33333587646485,
+            "name": "按住向右转向",
+            "width": 61.07291793823242
+          },
+          {
+            "height": 57.33333587646485,
+            "name": "按住加速",
+            "width": 61.0625
+          }
+        ],
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      }
+    },
+    {
+      "name": "native keyboard E and Space",
+      "observed": {
+        "dock": "低速泊船 · E",
+        "location": "深空 · 0, 0",
+        "mode": "自由驾驶 · 已暂停",
+        "pause": "继续航行"
+      }
+    },
+    {
+      "name": "complete demo launched",
+      "observed": {
+        "cargo": "3 / 6",
+        "credits": "340",
+        "location": "深空 · 0, 0",
+        "mode": "完整航程示范 · 自动导航",
+        "task": "前往赤砾矿站停靠，交付封签医用品。"
+      }
+    },
+    {
+      "name": "complete demo observed",
+      "observed": {
+        "credits": "730",
+        "log": "15s · 已抵达远域信标，保持低速并持续扫描。\n20s · 五秒扫描完成。把勘探资料带回曙光港。\n29s · 已停靠曙光港。\n29s · 远域勘探资料已结算，获得150信用点。\n29s · 运单、盈利与远域勘探均已完成。航路继续开放，自由飞行吧。",
+        "report": "用时 30 秒，运输委托已交付，信标扫描已结算，贸易净收益 40 CR。飞船和货舱继续保留，可以继续自由飞行与交易。",
+        "task": "委托与探索已完成"
+      }
+    },
+    {
+      "name": "native demo takeover at moving checkpoint",
+      "before": {
+        "cargo": "3 / 6",
+        "credits": "340",
+        "location": "深空 · 5, -4",
+        "speed": "11.3"
+      },
+      "observed": {
+        "cargo": "3 / 6",
+        "credits": "340",
+        "location": "深空 · 8, -8",
+        "mode": "自由驾驶",
+        "speed": "12.2"
+      }
+    },
+    {
+      "name": "final toolbar focus keeps stage in view",
+      "observed": {
+        "cargo": "3 / 6",
+        "credits": "340",
+        "location": "深空 · 11, -10",
+        "mode": "自由驾驶 · 已暂停",
+        "stage": {
+          "bottom": 705.2604169845581,
+          "top": 15.260416984558104
+        },
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    }
+  ],
+  "console": [],
+  "scope": {
+    "verified": [
+      "3D ship and station GLB models, painted planet UV textures, lighting, chase and sector cameras",
+      "Actual manual courier, buy, navigation arrival, delivery, sell, five-second scan, return and settlement at 730 credits/profit 40",
+      "Ordinary automatic demonstration finishes and supports moving-ship takeover",
+      "Native keyboard C, E and Space; pause, refresh restores paused financial/cargo/mission state",
+      "Default native fullscreen stage HUD, terminal mission action, synchronized target selector and exit",
+      "1440x1000 desktop and 390x844 responsive layout; no horizontal overflow and touch controls above 44px",
+      "Final toolbar pause/view scroll alignment"
+    ],
+    "not_verified": [
+      "Real phone hardware, simultaneous physical touch contacts, mobile fullscreen and orientation",
+      "Sustained performance and broad GPU/browser compatibility",
+      "Native held key timing, physical rescue interaction and context-loss recovery: these are covered by actual controller callbacks, not claimed as hardware/browser tests",
+      "Human emotional appeal or commercial game-product readiness"
+    ]
+  },
+  "diagnostics": [
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/space-browser-20261005/03-fullscreen-complete.jpg",
+      "observed": "Combining a responsive viewport override with native fullscreen produced a clipped screenshot composite. Default native fullscreen was verified separately without that override. The cause was not established; this diagnostic is not included among accepted screenshots."
+    }
+  ],
+  "rendering": "True WebGL 3D presentation over original x/z planar flight rules; asteroids and ambient traffic are decorative, with no collision combat or six-degree-of-freedom flight.",
+  "checks": [
+    {
+      "name": "Production 3D scene and legible desktop HUD",
+      "passed": true,
+      "evidence": "Rendered DOM at 1440x1000, plus accepted chase and sector captures."
+    },
+    {
+      "name": "Manual courier, trade and continuous exploration settle with correct funds",
+      "passed": true,
+      "evidence": "Ordinary UI actions, intermediate arrival/trade/scan observations, and final settlement."
+    },
+    {
+      "name": "In-stage target selection synchronizes the terminal",
+      "passed": true,
+      "evidence": "Native fullscreen UI selection and rendered select values; fullscreenElement was undefined in the read-only DOM observation and is not asserted."
+    },
+    {
+      "name": "Completed voyage restores paused with funds and mission state",
+      "passed": true,
+      "evidence": "Actual browser reload after manual completion."
+    },
+    {
+      "name": "Narrow responsive layout has no horizontal overflow and usable controls",
+      "passed": true,
+      "evidence": "390x844 desktop responsive override; no real phone claim."
+    },
+    {
+      "name": "Native keyboard undocks and pauses the voyage",
+      "passed": true,
+      "evidence": "Actual native E and Space presses; C sector switch is captured separately."
+    },
+    {
+      "name": "Ordinary browser demo reaches completed 730-credit voyage",
+      "passed": true,
+      "evidence": "Ordinary UI launch, production frame loop and visible final report; no injected game clock."
+    },
+    {
+      "name": "Moving-ship takeover retains cargo, credits and positive speed",
+      "passed": true,
+      "evidence": "Wait for actual visible speed checkpoint and click takeover; different positions reflect ongoing flight."
+    },
+    {
+      "name": "Final paused voyage and full stage fit native viewport",
+      "passed": true,
+      "evidence": "Final source reload and toolbar pause, screenshot 07-native-ready.jpg."
+    },
+    {
+      "name": "Final browser console has no errors or warnings",
+      "passed": true,
+      "evidence": "Final default native viewport console read."
+    },
+    {
+      "name": "Seven accepted captures are readable actual browser images",
+      "passed": true,
+      "evidence": "Actual file inspection with PIL; capture pixels are recorded independently from CSS viewport dimensions. Diagnostic clipped fullscreen composite is excluded."
+    }
+  ],
+  "check_count": 11
+}

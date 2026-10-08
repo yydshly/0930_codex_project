@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "at": "2026-10-03T13:53:42.738Z",
+  "checks": [
+    "40 form cards and 40 choices per selector expose real playable entries with zero pending cards",
+    "Mini golf × train dispatch loads real child games and pauses the other player in both focus directions",
+    "Fishing × artillery loads real child games and pauses the other player in both focus directions",
+    "49 gallery entries include all four new games and all nine original worlds",
+    "Both new comparisons stack at 390px with no parent or child horizontal overflow",
+    "All four standalone games actually start and pause by touch at 390px",
+    "QA remains separate from normal progress and all comparison/standalone assets load without browser errors"
+  ],
+  "results": {
+    "mobilePairs": [
+      {
+        "games": [
+          "putt",
+          "signal"
+        ],
+        "boxes": [
+          {
+            "y": 216.78125,
+            "width": 358,
+            "bottom": 1137.46875
+          },
+          {
+            "y": 1161.46875,
+            "width": 358,
+            "bottom": 2042.84375
+          }
+        ]
+      },
+      {
+        "games": [
+          "angler",
+          "battery"
+        ],
+        "boxes": [
+          {
+            "y": 216.78125,
+            "width": 358,
+            "bottom": 1119.15625
+          },
+          {
+            "y": 1143.15625,
+            "width": 358,
+            "bottom": 2180.53125
+          }
+        ]
+      }
+    ],
+    "mobileStandalone": {
+      "putt": {
+        "width": 350,
+        "started": true,
+        "paused": true
+      },
+      "signal": {
+        "width": 350,
+        "started": true,
+        "paused": true
+      },
+      "angler": {
+        "width": 350,
+        "started": true,
+        "paused": true
+      },
+      "battery": {
+        "width": 350,
+        "started": true,
+        "paused": true
+      }
+    }
+  },
+  "errors": [],
+  "missing": []
+}

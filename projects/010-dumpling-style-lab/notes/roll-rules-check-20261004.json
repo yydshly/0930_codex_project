@@ -1,0 +1,118 @@
+{
+  "game": "roll / 云廊滚球",
+  "scope": "renderer-independent tests of the exact production Cannon simulation. Does not assert visual quality, pointer UI, WebGL rendering, accessibility layout or real-device performance; root CUA review covers actual browser presentation.",
+  "checks": [
+    {
+      "name": "真实 Cannon 球体在起点稳定；不会静止自滑或穿过曲面",
+      "passed": true,
+      "detail": {
+        "steps": 360,
+        "height": 1.2099967571728358
+      }
+    },
+    {
+      "name": "持续施力产生平移及实际球体角速度，松手后保留惯性",
+      "passed": true,
+      "detail": {
+        "drivenSpeed": 2.643871767070562,
+        "releasedSpeed": 2.507082835051929,
+        "rotation": [
+          -8.31164208827914,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "按住制动显著缩短惯性，不把球直接传送或归零位置",
+      "passed": true,
+      "detail": {
+        "before": 2.643871767070562,
+        "after": 0.340957101498192,
+        "travel": 0.26979996473575163
+      }
+    },
+    {
+      "name": "坠落会计次，短暂停顿后返回真正的起点",
+      "passed": true,
+      "detail": {
+        "falls": 1,
+        "phase": "ready",
+        "position": [
+          -7.320090153268619,
+          1.209996757172832,
+          6.377223402351261
+        ]
+      }
+    },
+    {
+      "name": "同一真实物理曲面可走完：两座检查点、高差、完赛与最佳记录",
+      "passed": true,
+      "detail": {
+        "ticks": 4410,
+        "peak": 2.493518507637975,
+        "elapsed": 36.74999999999856,
+        "best": 36.74999999999856,
+        "finish": [
+          0.5838745203243517,
+          1.4594536052058775,
+          6.143021295063847
+        ]
+      }
+    },
+    {
+      "name": "未点亮灯台时，直接抵达终点不会跳关成功",
+      "passed": true,
+      "detail": {
+        "won": false,
+        "phase": "ready"
+      }
+    },
+    {
+      "name": "中段检查点重新开始只回最近灯台，前段进度和计时继续",
+      "passed": true,
+      "detail": {
+        "checkpoint": 1,
+        "position": [
+          -4.1076528959124365,
+          1.6192316195076766,
+          -5.4590891993127935
+        ],
+        "elapsed": 14.641666666666476
+      }
+    },
+    {
+      "name": "存档刷新保留惯性、球体旋转、检查点、时间，不重启关卡",
+      "passed": true,
+      "detail": {
+        "checkpoint": 1,
+        "speed": 0.9943091219615564,
+        "elapsed": 14.766666666666469
+      }
+    },
+    {
+      "name": "无效/旧版本/畸形存档不会生成 NaN 或错误完赛",
+      "passed": true,
+      "detail": {
+        "cases": 6
+      }
+    },
+    {
+      "name": "完赛暂停不推进，重新挑战保留最佳但清空本次跌落/检查点",
+      "passed": true,
+      "detail": {
+        "best": 36.74999999999856,
+        "phase": "ready"
+      }
+    },
+    {
+      "name": "视觉曲面与碰撞网格共用 361 个断面且法线向上",
+      "passed": true,
+      "detail": {
+        "vertices": 722,
+        "triangles": 720
+      }
+    }
+  ],
+  "passed": 11
+}

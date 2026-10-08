@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-02",
+  "version": "Moving Day V3 product sample",
+  "scope": "Current movers direction; other eight directions remain exploration prototypes",
+  "method": "Real DOM buttons, native pointer and keyboard actions in the Codex in-app browser through CUA; screenshots from the actual running game",
+  "productionUrl": "http://127.0.0.1:8962/games.html?game=movers",
+  "testUrl": "http://127.0.0.1:8962/games.html?game=movers&qa=1",
+  "saveIsolation": {
+    "playerPrefix": "dumpling-extension-v1-",
+    "testPrefix": "dumpling-product-qa-v3-",
+    "playerProgressBeforeAndAfter": "委托 1/3 · 安全装车 2/3",
+    "playerSaveReset": false
+  },
+  "checks": [
+    {"name":"Fresh briefing and start","result":"pass","evidence":"First QA game started at 0/3 with the client letter, control instructions and enabled start button after assets loaded."},
+    {"name":"Actual cargo physics and delivery","result":"pass","evidence":"Pointer pickup and transport of all nine cargo items; each contract reached visible 3/3 and its own result screen. Light, heavy and fragile items traversed real ramps and obstacles."},
+    {"name":"Fragile failure and checkpoint recovery","result":"pass","evidence":"After delivering the first box, throwing the fragile item damaged packaging. Repair retained 1/3 delivery, allowed continuation and produced evaluation 86."},
+    {"name":"Three contracts and personal responses","result":"pass","evidence":"Lin Xia / sunny courtyard, Chen Shu / rain, Zhou Ayi / night completed in order with distinct thank-you letters. The last result stated 今天，三处灯亮了。"},
+    {"name":"Records and refresh","result":"pass","evidence":"Three visible record articles retained evaluations 86, 100 and 100 after refresh; records can be opened and returned from."},
+    {"name":"Keyboard and replay","result":"pass","evidence":"Current-contract practice button restored cargo. Space visibly put the worker in the air; E picked up the photo box and changed the action label to 轻放."},
+    {"name":"Pause and resume","result":"pass","evidence":"Paused while carrying a sofa in the third contract. Delivery count remained 1/3 across the pause; resuming completed delivery."},
+    {"name":"Mobile layout and real input","result":"pass","viewport":{"width":390,"height":844},"documentWidth":390,"gameActionMinHeight":44,"movementAndTouchActionHeight":47,"evidence":"Third-contract pointer pickups and transport completed on the mobile viewport. Record content scrolls while the return button stays visible. Temporary viewport override was reset."},
+    {"name":"Fullscreen entry and exit","result":"pass","evidence":"Button changes to 退出大画面 and exits on the next click. Sound and restart controls remain inside fullscreen. Visible canvas rectangle was within the fullscreen game bounds."},
+    {"name":"Focus after switching","result":"pass","evidence":"Loaded detective first, then movers; opening and closing the client letter returned focus to the movers canvas rather than a cached canvas from another game."},
+    {"name":"Embedded product controls","result":"pass","evidence":"The embedded URL showed sound and restart controls inside the game toolbar. The actual sound button switched 开 / 关 in the visible interface."},
+    {"name":"Nine-direction switching regression","result":"pass","directions":["detective","wuxia","ecology","wasteland","dream","arcade","inn","islands","movers"],"evidence":"Each selection showed one visible canvas and a valid game title with no game-loading error. Moving Day panels stayed hidden in the other eight directions."},
+    {"name":"Missing artwork recovery","result":"pass","evidence":"An isolated copy on port 8963 deliberately omitted fridge.webp. The game displayed a retry button instead of an endless spinner. Restoring the asset and clicking 重新加载场景 returned to the complete first briefing; production files were untouched."},
+    {"name":"Artwork preparation","result":"pass","runtimeAssetCount":14,"runtimeBytes":2496082,"workerFrameSize":[256,256],"evidence":"Regenerated runtime WebP files from six preserved ImageGen sources; checked transparent worker frames and fixed feet baseline."},
+    {"name":"JavaScript syntax","result":"pass","files":["games.js","games/movers.js","games/moving-contracts.js","games/moving-art.js","games/moving-interface.js"],"evidence":"Node --check completed without syntax errors."},
+    {"name":"Repository catalog","result":"pass","evidence":"scripts/projects.py check confirmed 15 projects and matching catalog / README."},
+    {"name":"Static build","result":"pass","evidence":"scripts/build_site.py built 15 static demos; the Moving Day scene thumbnail and all 14 WebP assets are included. Original artwork and temporary QA files stay outside the public build."}
+  ],
+  "screenshots": {
+    "before":"../assets/product/01-before.png",
+    "current":"../assets/product/02-after.webp",
+    "firstDelivery":"../assets/product/03-first-delivery.webp",
+    "mobilePlay":"../assets/product/04-mobile-play.webp",
+    "mobileRecords":"../assets/product/05-mobile-records.webp",
+    "threeDeliveries":"../assets/product/06-three-deliveries.webp",
+    "loadRecovery":"../assets/product/07-load-recovery.webp"
+  },
+  "limitations": [
+    "No human playtesting, emotional response, retention or commercial success measurement.",
+    "Three short contracts reuse the moving structure; long-term content, branching dialogue and interior destination scenes are not implemented.",
+    "Desktop and 390x844 mobile checked in the in-app browser; broad browser/device QA and auditory quality evaluation remain outstanding.",
+    "The 20-second asset timeout is implemented; the tested loading failure was an actual missing-file response, not a deliberately stalled connection.",
+    "Only direction switching was rechecked for the other eight prototypes in this round; earlier full-game checks describe their own historical versions."
+  ],
+  "temporaryTestCleanup": "Test browser tabs closed and port 8963 stopped. Recursive deletion of the isolated QA directory was rejected by automatic policy review; the directory remains outside web and the public build."
+}

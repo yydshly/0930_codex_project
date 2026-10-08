@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-04",
+  "checks": 23,
+  "passed": 23,
+  "results": [
+    {
+      "name": "Pool: the actual default shot transfers momentum, pots the first ball and stops before allowing a new shot",
+      "passed": true
+    },
+    {
+      "name": "Pool: each of the six real pocket positions captures a nearby ball",
+      "passed": true
+    },
+    {
+      "name": "Pool: rail reflection preserves the tangent and reduces normal velocity",
+      "passed": true
+    },
+    {
+      "name": "Pool: center collision moves the struck ball forward without increasing kinetic energy",
+      "passed": true
+    },
+    {
+      "name": "Pool: white-ball scratch is counted and respotted in a non-overlapping playable position",
+      "passed": true
+    },
+    {
+      "name": "Pool: clearing the actual last colored ball finishes the table and freezes its state",
+      "passed": true
+    },
+    {
+      "name": "Pool: fifteen-ball break defaults to the rack, is stable, collision driven and finishes rolling",
+      "passed": true
+    },
+    {
+      "name": "Pool: aim preview identifies the first contact, with a normalized contact direction",
+      "passed": true
+    },
+    {
+      "name": "Pool: save while rolling restores exact motion and outcome",
+      "passed": true
+    },
+    {
+      "name": "Pool: invalid saves fall back without importing duplicated balls or a false victory",
+      "passed": true
+    },
+    {
+      "name": "Breakout: a launched ball actually travels to a brick, damages it and reflects",
+      "passed": true
+    },
+    {
+      "name": "Breakout: paddle contact location controls the left / center / right return direction",
+      "passed": true
+    },
+    {
+      "name": "Breakout: a miss consumes one life and preserves surviving bricks and score",
+      "passed": true
+    },
+    {
+      "name": "Breakout: three misses end a run; the finished run does not advance",
+      "passed": true
+    },
+    {
+      "name": "Breakout: clearing the final first-act brick starts the actual second layout and requires a new launch",
+      "passed": true
+    },
+    {
+      "name": "Breakout: a two-layer brick survives the first contact and is removed on the second",
+      "passed": true
+    },
+    {
+      "name": "Breakout: the actual last second-act contact wins and freezes motion",
+      "passed": true
+    },
+    {
+      "name": "Breakout: the sixth cleared brick drops a capsule, and a caught capsule really expands the paddle",
+      "passed": true
+    },
+    {
+      "name": "Breakout: target clamps respect expanded widths and difficulty modes",
+      "passed": true
+    },
+    {
+      "name": "Breakout: saving a live volley restores exact positions, damage, score and remaining lives",
+      "passed": true
+    },
+    {
+      "name": "Breakout: malformed brick coordinates, duplicate IDs, false win and invalid capsule data are rejected",
+      "passed": true
+    },
+    {
+      "name": "pool: lifecycle activation, pause, resume and disposal preserve an exact frozen state",
+      "passed": true
+    },
+    {
+      "name": "breakout: lifecycle activation, pause, resume and disposal preserve an exact frozen state",
+      "passed": true
+    }
+  ],
+  "limits": "Production rule functions and lifecycle doubles; browser rendering, pointer gestures and material quality are verified separately through CUA. No simulated result is reported as a manual browser completion."
+}

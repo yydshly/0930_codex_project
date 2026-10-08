@@ -1,0 +1,420 @@
+{
+  "site_tests": {
+    "exit_code": 0,
+    "stdout": "Built 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmpshaczpmx\\_site\nBuilt 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmpx1bovtxy\\_site\nBuilt 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmpx5pm2p4_\\_site\nBuilt 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmpgan2o6uc\\_site\nBuilt 2 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmpaclcsj59\\_site\nBuilt 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmp4692x2wm\\_site\n",
+    "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.126s\n\nOK\n"
+  },
+  "world_regression": {
+    "exit_code": 0,
+    "stdout": "{\n  \"date\": \"2026-10-04T03:53:48.113Z\",\n  \"method\": \"Node VM; real game rules and pathfinding; drawing context and 3D renderer mocked. Isolated browser screenshots and UI checks cover rendering.\",\n  \"checks\": [\n    \"All shipped JavaScript modules parse\",\n    \"Detective evidence custody produces a completed case\",\n    \"Second case retains the completed first case\",\n    \"The first case answer fails the new case\",\n    \"Second case requires withdrawal evidence and the different recipient\",\n    \"Wuxia roads, one rope and two supplies produce a real rescue\",\n    \"Rescue has a persisted next-day response\",\n    \"Retrace replenishes finite resources and retains the old arrangement\",\n    \"Rescue cannot conclude before allocating the two supplies\",\n    \"Planting uses labor and does not instantly create wildlife\",\n    \"Spring habitats attract insects\",\n    \"A second-season canopy attracts birds\",\n    \"Three-season mixed habitat completes with viable vegetation\",\n    \"A mixed habitat earns an actual annual research result\",\n    \"Rewind retains the comparison record\",\n    \"Next year retains grown vegetation\",\n    \"A new year can change its research goal without deleting the yearbook\",\n    \"Unfunded crops actually fail\",\n    \"Repairs and allocations survive three rounds with an archived cost\",\n    \"Unanswered storm request blocks climate settlement\",\n    \"Shelter choice immediately spends water and parts and adds backup power\",\n    \"Storm shelter scenario remains completable with a distinct archived outcome\",\n    \"An unbuilt bridge blocks reaching the watch\",\n    \"Memory placement opens actual paths to the chosen ending\",\n    \"Revisiting retains both different endings\",\n    \"Seven successful stays retain return memories and six souvenirs\",\n    \"Inn second chapter retains furniture and return histories\",\n    \"Three return dilemmas produce real letters and souvenirs\",\n    \"Inn revisit starts day eight while keeping all three letters\",\n    \"Closed cases can be selected with both old conclusions preserved\",\n    \"First rooftop course is completable without falling\",\n    \"Second rooftop course keeps a separate actual record\",\n    \"Third courier route is completable and has its own recipient and record\",\n    \"Completed routes can be selected while keeping three best times\",\n    \"Jump buffering accepts an airborne request without pretending it jumped\",\n    \"A buffered jump fires on the real landing within 140 ms\",\n    \"Auto forward moves but leaves jumps under player control\",\n    \"Actual island paths, bridge and seal permit two discoveries and return\",\n    \"Cloud tower is a real third area and opens a new incomplete chapter\",\n    \"Uncalibrated wind actually blocks the star platform\",\n    \"Wind bridge, two star rotations, beacon and return report complete chapter two\",\n    \"detective extended chapter and records survive reload\",\n    \"wuxia extended chapter and records survive reload\",\n    \"ecology extended chapter and records survive reload\",\n    \"wasteland extended chapter and records survive reload\",\n    \"dream extended chapter and records survive reload\",\n    \"inn extended chapter and records survive reload\",\n    \"arcade extended chapter and records survive reload\",\n    \"islands extended chapter and records survive reload\",\n    \"Legacy moving save retains two delivered objects\",\n    \"Selecting a completed commission starts its real cargo while retaining all three records\",\n    \"Commission selection cannot discard an unfinished order\",\n    \"A pre-extension completed inn save enters the new chapter\",\n    \"A pre-extension island save retains discoveries and reaches the new island\",\n    \"Two-route courier saves gain an empty third route without losing best times\",\n    \"Ecology forecast matches actual water, health and age across all three gates and seasons\"\n  ],\n  \"commercialOrEmotionalValidation\": false\n}\n",
+    "stderr": "(node:46916) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  "precision_regression": {
+    "exit_code": 0,
+    "stdout": "{\"checks\":23,\"passed\":23}\n",
+    "stderr": ""
+  },
+  "observation_regression": {
+    "exit_code": 0,
+    "stdout": "{\"passed\":28,\"checks\":[\"Eight distinct target regions fit actual room coordinates\",\"Clicking an object records its identity only once\",\"Empty scenery does not complete an object\",\"Every authored hotspot is independently reachable\",\"Finding all eight targets reaches completion\",\"Restore filters duplicates and unknown object identities\",\"Restore derives completed state from all actual identities\",\"Malformed camera and hint data restore safely\",\"Zoom coordinate mapping round-trips target position\",\"Camera never exposes empty pixels at scene edges\",\"Three hints locate but never auto-find objects\",\"Hints skip an already found selected object\",\"Pipe masks rotate coherently and straight rotates by two axes\",\"Pipe level 0 starts disconnected and has a valid complete route\",\"Pipe level 0 solves through ordinary rotations\",\"Pipe level 1 starts disconnected and has a valid complete route\",\"Pipe level 1 solves through ordinary rotations\",\"Disconnected pump runs then returns to editable state\",\"Undo restores the complete previous rotation state and move count\",\"Invalid tile index never mutates network\",\"Restore rejects forged completion on disconnected pipes\",\"Restore retains valid completed network and next stage\",\"Restore validates tile types and undo history dimensions\",\"Save round-trip preserves rotations and in-flight progress\",\"seek factory tolerates a negative initial RAF delta and absent transient feedback\",\"seek factory pause freezes motion and resume continues real state\",\"conduit factory tolerates a negative initial RAF delta and absent transient feedback\",\"conduit factory pause freezes motion and resume continues real state\"],\"limits\":\"Production rules and lifecycle doubles; actual rendering and gestures are verified separately through CUA.\"}\n",
+    "stderr": ""
+  },
+  "gesture_regression": {
+    "exit_code": 0,
+    "stdout": "{\"passed\":31,\"checks\":[\"Territory starts with safe outer boundary and no captured interior\",\"Entering an open area requires deliberate drawing mode\",\"Safe boundary movement changes origin without claiming territory\",\"Ordinary closed line claims the region without the enemy\",\"A second ordinary closed route reaches 68% completion\",\"Closing a path cannot capture through an enemy already touching the unfinished line\",\"Crossing own unfinished trail consumes a life and retracts it\",\"Moving enemy really collides with an unfinished line\",\"Enemy bounces from captured cells rather than entering safe space\",\"Voluntary retreat discards unfinished path without consuming lives\",\"Three collisions lead to failure and stop movement\",\"Save restore retains valid captured area and active trail\",\"Malformed territory save cannot put player outside board or falsely complete\",\"Enemy timing rejects negative and NaN deltas\",\"Vertical cut produces a real gravity fall and first-stage delivery\",\"Two intact ropes hold the initial lantern in place\",\"Cutting one rope changes support and creates continuous swing\",\"Second stage is reachable using timed cuts, not a completion shortcut\",\"Release preview is ballistic and changes with actual velocity\",\"Bad release really misses rather than snapping to receiver\",\"The same rope cannot be cut twice and invalid ropes have no effect\",\"Gesture intersection rejects separated lines and recognizes crossing\",\"Retry resets physical state but preserves chosen viewing settings\",\"Advancing to next stage requires an actual first delivery\",\"Restore retains in-flight velocity, time, support and freeze\",\"Restore rejects false completion with hanging or misplaced lantern\",\"Physics ignores invalid initial deltas and prevents huge integration steps\",\"trace real factory tolerates negative/NaN initial RAF timing and draws\",\"trace real factory pause freezes all state and resume continues\",\"swing real factory tolerates negative/NaN initial RAF timing and draws\",\"swing real factory pause freezes all state and resume continues\"],\"limits\":\"Production rules and actual factory lifecycle doubles, with browser rendering and gestures checked separately through CUA.\"}\n",
+    "stderr": ""
+  },
+  "logic_regression": {
+    "exit_code": 0,
+    "stdout": "{\"passed\":31,\"checks\":[\"Hex grid neighbor relation is reciprocal and geometry agrees\",\"Bubble starts with authored color groups and 32 suspended balls\",\"Connected groups follow hex neighbors and require same color\",\"Pairs alone do not disappear\",\"Matching support releases actual disconnected lower cluster\",\"Landing is limited to vacant cells adjacent to impact\",\"Side-wall bounce preserves speed and redirects horizontal velocity\",\"Negative and nonfinite flight time do not mutate position\",\"Only one projectile can fly at a time\",\"Predicted landing equals actual continuous collision result\",\"Original board is clearable through real launches in six shots\",\"Shot budget produces genuine failure and stops launch\",\"In-flight save resumes same position and velocity\",\"Bubble completion survives restore\",\"Malformed bubble save falls back rather than breaking scene\",\"All eight mine neighbors are symmetric and bounded\",\"First click and its eight neighbors exclude mines for 192 boards\",\"Mine generation is deterministic for independent save restore\",\"Zero flood really reveals multiple safe cells\",\"Flagged cells cannot be revealed and open cells cannot be flagged\",\"Marking is capped at actual danger count\",\"Wrong reveal genuinely loses and cannot continue\",\"Chord requires matching adjacent flag count\",\"Correct numeric chord opens safe neighbors\",\"Incorrect but count-matching flags can cause a real chord loss\",\"Visible hint uses neighbor evidence without opening any cell\",\"Opening every safe cell wins; mine marking alone does not win\",\"Mine progress, marks and completion survive deterministic restore\",\"Invalid mine arrays and forged win flags are rejected\",\"Bubble blocked-impact failure remains failed after restore\",\"A revealed mine cannot be restored as a successful map\"],\"limits\":\"Production rule checks; real factory drawing and pause tested through Skia/DOM doubles. Browser control and responsive/fullscreen testing are not covered.\"}\n",
+    "stderr": ""
+  },
+  "nine_regression": {
+    "exit_code": 0,
+    "stdout": "{\"passed\":74,\"checks\":[{\"name\":\"hook normal commands complete\",\"passed\":true},{\"name\":\"hook mid-session JSON round trip\",\"passed\":true},{\"name\":\"hook complete JSON round trip\",\"passed\":true},{\"name\":\"hook malformed timing / forged won\",\"passed\":true},{\"name\":\"fold normal commands complete\",\"passed\":true},{\"name\":\"fold mid-session JSON round trip\",\"passed\":true},{\"name\":\"fold complete JSON round trip\",\"passed\":true},{\"name\":\"fold malformed timing / forged won\",\"passed\":true},{\"name\":\"repair normal commands complete\",\"passed\":true},{\"name\":\"repair mid-session JSON round trip\",\"passed\":true},{\"name\":\"repair complete JSON round trip\",\"passed\":true},{\"name\":\"repair malformed timing / forged won\",\"passed\":true},{\"name\":\"delve normal commands complete\",\"passed\":true},{\"name\":\"delve mid-session JSON round trip\",\"passed\":true},{\"name\":\"delve complete JSON round trip\",\"passed\":true},{\"name\":\"delve malformed timing / forged won\",\"passed\":true},{\"name\":\"cluster normal commands complete\",\"passed\":true},{\"name\":\"cluster mid-session JSON round trip\",\"passed\":true},{\"name\":\"cluster complete JSON round trip\",\"passed\":true},{\"name\":\"cluster malformed timing / forged won\",\"passed\":true},{\"name\":\"paint normal commands complete\",\"passed\":true},{\"name\":\"paint mid-session JSON round trip\",\"passed\":true},{\"name\":\"paint complete JSON round trip\",\"passed\":true},{\"name\":\"paint malformed timing / forged won\",\"passed\":true},{\"name\":\"swarm normal commands complete\",\"passed\":true},{\"name\":\"swarm mid-session JSON round trip\",\"passed\":true},{\"name\":\"swarm complete JSON round trip\",\"passed\":true},{\"name\":\"swarm malformed timing / forged won\",\"passed\":true},{\"name\":\"kitchen normal commands complete\",\"passed\":true},{\"name\":\"kitchen mid-session JSON round trip\",\"passed\":true},{\"name\":\"kitchen complete JSON round trip\",\"passed\":true},{\"name\":\"kitchen malformed timing / forged won\",\"passed\":true},{\"name\":\"relay normal commands complete\",\"passed\":true},{\"name\":\"relay mid-session JSON round trip\",\"passed\":true},{\"name\":\"relay complete JSON round trip\",\"passed\":true},{\"name\":\"relay malformed timing / forged won\",\"passed\":true},{\"name\":\"grappling rope constraint, radial velocity, release continuity\",\"passed\":true},{\"name\":\"grappling checkpoint restart retains checkpoint\",\"passed\":true},{\"name\":\"perspective requires actual alignment at each broken bridge\",\"passed\":true},{\"name\":\"restoration requires cleaning, orientation and prior layer\",\"passed\":true},{\"name\":\"digging carves persistent cells and crystal can only be collected once\",\"passed\":true},{\"name\":\"collection size gate rejects a large object initially\",\"passed\":true},{\"name\":\"ink movement and regeneration differ by terrain\",\"passed\":true},{\"name\":\"ink timeout blocks commands and updates after restore\",\"passed\":true},{\"name\":\"squad dispatch requires the bridge and sufficient team size\",\"passed\":true},{\"name\":\"squad route crosses the repaired bridge, not the river\",\"passed\":true},{\"name\":\"kitchen prevents remote work, wrong ingredients and early soup pickup\",\"passed\":true},{\"name\":\"kitchen expiration blocks further play and survives restore\",\"passed\":true},{\"name\":\"relay manual cannot operate devices, wrong wire cannot advance\",\"passed\":true},{\"name\":\"hook controls require start and resume\",\"passed\":true},{\"name\":\"grappling provides only working left / right touch controls\",\"passed\":true},{\"name\":\"hook disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"fold controls require start and resume\",\"passed\":true},{\"name\":\"fold disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"repair controls require start and resume\",\"passed\":true},{\"name\":\"restoration completes through native buttons and their enabled states\",\"passed\":true},{\"name\":\"repair disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"delve controls require start and resume\",\"passed\":true},{\"name\":\"digging one physical key press is exactly one cell\",\"passed\":true},{\"name\":\"delve disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"cluster controls require start and resume\",\"passed\":true},{\"name\":\"collection touch hold releases on cancellation\",\"passed\":true},{\"name\":\"cluster disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"paint controls require start and resume\",\"passed\":true},{\"name\":\"paint disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"swarm controls require start and resume\",\"passed\":true},{\"name\":\"swarm disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"kitchen controls require start and resume\",\"passed\":true},{\"name\":\"service workflow completes through native station and work buttons\",\"passed\":true},{\"name\":\"kitchen disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"relay controls require start and resume\",\"passed\":true},{\"name\":\"relay roles isolate native controls and finish by valid buttons\",\"passed\":true},{\"name\":\"relay disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"collection camera transform maps pointer back to the world\",\"passed\":true}],\"browser_verified\":false,\"scope\":\"Production state rules, valid command playthroughs, serialization and factory lifecycle with a DOM double. Actual browser input and layout remain unverified.\"}\n",
+    "stderr": ""
+  },
+  "frontier_rules_regression": {
+    "exit_code": 0,
+    "stdout": "Frontier rules passed: 55\n",
+    "stderr": ""
+  },
+  "frontier_lifecycle_regression": {
+    "exit_code": 0,
+    "stdout": "Frontier lifecycle and audio passed: 60\n",
+    "stderr": ""
+  },
+  "studio_rules_regression": {
+    "exit_code": 0,
+    "stdout": "Studio rules: 49 passed\n",
+    "stderr": ""
+  },
+  "studio_lifecycle_regression": {
+    "exit_code": 0,
+    "stdout": "Studio lifecycle: 50 passed\n",
+    "stderr": ""
+  },
+  "rules": {
+    "passed": true,
+    "count": 50,
+    "checks": [
+      "desktop normal interaction completion",
+      "desktop progress save restore",
+      "desktop completed save remains completed",
+      "desktop rejects wrong save identity",
+      "desktop nonfinite values sanitised",
+      "inkwell normal interaction completion",
+      "inkwell progress save restore",
+      "inkwell completed save remains completed",
+      "inkwell rejects wrong save identity",
+      "inkwell nonfinite values sanitised",
+      "atelier normal interaction completion",
+      "atelier progress save restore",
+      "atelier completed save remains completed",
+      "atelier rejects wrong save identity",
+      "atelier nonfinite values sanitised",
+      "submersible normal interaction completion",
+      "submersible progress save restore",
+      "submersible completed save remains completed",
+      "submersible rejects wrong save identity",
+      "submersible nonfinite values sanitised",
+      "Desktop answers cannot bypass missing evidence",
+      "Desktop wrong inference rejected even with all evidence",
+      "Desktop opening duplicate window keeps one instance",
+      "Desktop closing preserves evidence",
+      "Desktop windows clamped to reachable position",
+      "Desktop local search preserved without forging evidence",
+      "Desktop photo does not replace opened archive document",
+      "Parser cannot take unseen key",
+      "Parser cannot enter dark or locked stairs",
+      "Parser wrong location rejects object use",
+      "Parser lantern needs both objects",
+      "Parser undo restores world, inventory and transcript",
+      "Parser unknown command produces help, not invented progress",
+      "Parser final trigger requires lens and fuel",
+      "Parser typed HTML remains plain transcript data",
+      "Voxel target removes 63 of 125 actual cells",
+      "Voxel remove and add change geometry state",
+      "Voxel undo restores previous volume",
+      "Voxel wrong outer column blocks completion",
+      "Voxel orbit bounded with finite angles",
+      "Vehicle only current station can operate system",
+      "Vehicle real acceleration and stopping inertia",
+      "Vehicle buoyancy converges over time",
+      "Sonar reveals only after propagating to contact",
+      "Sonar cooldown and energy block repeated pulses",
+      "Recovery fails if fast, far away or unscanned",
+      "Pressure damage requires excessive depth",
+      "Repair trades power for actual hull restoration",
+      "Vehicle zero energy creates stopped failure",
+      "Vehicle sample collection alone cannot forge return"
+    ],
+    "method": "Normal production commands complete all four scenes; additional invalid, undo, restore, physics, energy and prerequisite cases."
+  },
+  "lifecycle": {
+    "passed": true,
+    "count": 53,
+    "checks": [
+      "desktop starts gated",
+      "desktop native reset accessible after start",
+      "Desktop native application button opens window",
+      "Desktop native document click records evidence",
+      "Desktop native search filters file labels",
+      "Desktop native answer stores choice",
+      "Desktop native close removes window only",
+      "desktop paused tick, native controls and API cannot mutate",
+      "desktop native controls disabled while paused",
+      "desktop factory restore preserves progress",
+      "desktop resume re-enables native controls",
+      "desktop disposal removes native controls",
+      "desktop disposal clears callbacks",
+      "desktop disposed public commands cannot mutate",
+      "inkwell starts gated",
+      "inkwell native reset accessible after start",
+      "Parser native input saves draft",
+      "Parser native submit executes typed command",
+      "Parser output is built with textContent, never HTML",
+      "Parser native undo restores prior record",
+      "inkwell paused tick, native controls and API cannot mutate",
+      "inkwell native controls disabled while paused",
+      "inkwell factory restore preserves progress",
+      "inkwell resume re-enables native controls",
+      "inkwell disposal removes native controls",
+      "inkwell disposal clears callbacks",
+      "inkwell disposed public commands cannot mutate",
+      "atelier starts gated",
+      "atelier native reset accessible after start",
+      "Voxel native layer selection changes editable volume",
+      "Voxel native slice button carves same three-dimensional cell",
+      "Voxel native fill restores material",
+      "Voxel camera command changes actual orbit state",
+      "atelier paused tick, native controls and API cannot mutate",
+      "atelier native controls disabled while paused",
+      "atelier factory restore preserves progress",
+      "atelier resume re-enables native controls",
+      "atelier disposal removes native controls",
+      "atelier disposal clears callbacks",
+      "atelier disposed public commands cannot mutate",
+      "submersible starts gated",
+      "submersible native reset accessible after start",
+      "Submarine native station and throttle alter persistent drive",
+      "Submarine native depth form changes buoyancy target",
+      "Submarine native sonar starts propagation",
+      "Submarine readout tracks actual resources",
+      "submersible paused tick, native controls and API cannot mutate",
+      "submersible native controls disabled while paused",
+      "submersible factory restore preserves progress",
+      "submersible resume re-enables native controls",
+      "submersible disposal removes native controls",
+      "submersible disposal clears callbacks",
+      "submersible disposed public commands cannot mutate"
+    ],
+    "method": "Production factories and native control callbacks with a DOM lifecycle adapter. No browser layout, accessibility tree or real storage verification."
+  },
+  "production_render": {
+    "frames": 12,
+    "all_phases": true,
+    "pause_state_unchanged": true,
+    "method": "Skia rendering. Desktop is explicitly a native interface state preview; sculpture uses actual meshes in software mode. These are not browser screenshots."
+  },
+  "build": {
+    "exit_code": 0,
+    "stdout": "Built 19 static demo(s) into F:\\codex_project\\0930_codex_project\\_site\n",
+    "stderr": ""
+  },
+  "preservation": {
+    "protected": 2373,
+    "changed": [],
+    "missing": [],
+    "editable_shared": [
+      "forms.html",
+      "forms.js",
+      "game-forms-catalog.js",
+      "showcase-catalog.js",
+      "showcase.html",
+      "showcase.js"
+    ],
+    "old_storage": "No browser storage read, cleared or migrated. Prior IDs, edition routes and storage prefixes are compared against the baseline."
+  },
+  "catalogs": {
+    "forms": 79,
+    "entrances": 88,
+    "uniqueForms": 79,
+    "uniqueEntrances": 88,
+    "allFormsRouted": true,
+    "previousForms": 75,
+    "previousEntrances": 84,
+    "changedPreviousForms": [],
+    "changedPreviousEntrances": [],
+    "storagePrefixesPreserved": true,
+    "newForms": [
+      {
+        "id": "desktop-investigation",
+        "play": "desktop"
+      },
+      {
+        "id": "parser-adventure",
+        "play": "inkwell"
+      },
+      {
+        "id": "voxel-sculpture",
+        "play": "atelier"
+      },
+      {
+        "id": "vehicle-stations",
+        "play": "submersible"
+      }
+    ]
+  },
+  "packaged": {
+    "targets": 22,
+    "mismatches": []
+  },
+  "http": [
+    {
+      "path": "forms.html?left=desktop-investigation&right=parser-adventure",
+      "status": 200,
+      "bytes": 7398,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "forms.html?left=voxel-sculpture&right=vehicle-stations",
+      "status": 200,
+      "bytes": 7398,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase.html?play=desktop",
+      "status": 200,
+      "bytes": 6672,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase.html?play=inkwell",
+      "status": 200,
+      "bytes": 6672,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase.html?play=atelier",
+      "status": 200,
+      "bytes": 6672,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase.html?play=submersible",
+      "status": 200,
+      "bytes": 6672,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase-horizons.js",
+      "status": 200,
+      "bytes": 9404,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase-horizons-rules.js",
+      "status": 200,
+      "bytes": 16619,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase-horizons-panel.js",
+      "status": 200,
+      "bytes": 17460,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase-horizons-3d.js",
+      "status": 200,
+      "bytes": 9948,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "forms.html",
+      "status": 200,
+      "bytes": 7398,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "forms.js",
+      "status": 200,
+      "bytes": 5330,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "game-forms-catalog.js",
+      "status": 200,
+      "bytes": 44022,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase-catalog.js",
+      "status": 200,
+      "bytes": 45865,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase.html",
+      "status": 200,
+      "bytes": 6672,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase.js",
+      "status": 200,
+      "bytes": 26378,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/horizons/archive.webp",
+      "status": 200,
+      "bytes": 441540,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/horizons/atelier.webp",
+      "status": 200,
+      "bytes": 389264,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/horizons/ATTRIBUTION.md",
+      "status": 200,
+      "bytes": 185,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/horizons/clay.webp",
+      "status": 200,
+      "bytes": 257218,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/horizons/craft.webp",
+      "status": 200,
+      "bytes": 436112,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/horizons/desktop.webp",
+      "status": 200,
+      "bytes": 431746,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/horizons/inkwell.webp",
+      "status": 200,
+      "bytes": 542524,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/horizons/sea.webp",
+      "status": 200,
+      "bytes": 170050,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/horizons/previews/atelier.webp",
+      "status": 200,
+      "bytes": 136790,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/horizons/previews/desktop.webp",
+      "status": 200,
+      "bytes": 171444,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/horizons/previews/inkwell.webp",
+      "status": 200,
+      "bytes": 114272,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/horizons/previews/submersible.webp",
+      "status": 200,
+      "bytes": 92064,
+      "served_matches_workspace": true
+    }
+  ],
+  "companion_service": {
+    "service": "frontier-room",
+    "version": 1
+  },
+  "syntax_errors": [],
+  "browser_qa": {
+    "verified": false,
+    "responsive_fullscreen_native_input_storage_webgl_verified": false,
+    "attempts": [
+      "Fresh js_reset succeeded",
+      "cua.getState failed before browser connection: trusted Node process exited unexpectedly; kernel reset, rerun your request"
+    ],
+    "blocker": "Browser control kernel exits before returning browser state. No alternate browser automation used."
+  },
+  "new_checks": 103,
+  "passed": true,
+  "acceptance_complete": false
+}

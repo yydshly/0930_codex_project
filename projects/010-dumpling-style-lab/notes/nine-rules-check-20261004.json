@@ -1,0 +1,303 @@
+{
+  "passed": 74,
+  "checks": [
+    {
+      "name": "hook normal commands complete",
+      "passed": true
+    },
+    {
+      "name": "hook mid-session JSON round trip",
+      "passed": true
+    },
+    {
+      "name": "hook complete JSON round trip",
+      "passed": true
+    },
+    {
+      "name": "hook malformed timing / forged won",
+      "passed": true
+    },
+    {
+      "name": "fold normal commands complete",
+      "passed": true
+    },
+    {
+      "name": "fold mid-session JSON round trip",
+      "passed": true
+    },
+    {
+      "name": "fold complete JSON round trip",
+      "passed": true
+    },
+    {
+      "name": "fold malformed timing / forged won",
+      "passed": true
+    },
+    {
+      "name": "repair normal commands complete",
+      "passed": true
+    },
+    {
+      "name": "repair mid-session JSON round trip",
+      "passed": true
+    },
+    {
+      "name": "repair complete JSON round trip",
+      "passed": true
+    },
+    {
+      "name": "repair malformed timing / forged won",
+      "passed": true
+    },
+    {
+      "name": "delve normal commands complete",
+      "passed": true
+    },
+    {
+      "name": "delve mid-session JSON round trip",
+      "passed": true
+    },
+    {
+      "name": "delve complete JSON round trip",
+      "passed": true
+    },
+    {
+      "name": "delve malformed timing / forged won",
+      "passed": true
+    },
+    {
+      "name": "cluster normal commands complete",
+      "passed": true
+    },
+    {
+      "name": "cluster mid-session JSON round trip",
+      "passed": true
+    },
+    {
+      "name": "cluster complete JSON round trip",
+      "passed": true
+    },
+    {
+      "name": "cluster malformed timing / forged won",
+      "passed": true
+    },
+    {
+      "name": "paint normal commands complete",
+      "passed": true
+    },
+    {
+      "name": "paint mid-session JSON round trip",
+      "passed": true
+    },
+    {
+      "name": "paint complete JSON round trip",
+      "passed": true
+    },
+    {
+      "name": "paint malformed timing / forged won",
+      "passed": true
+    },
+    {
+      "name": "swarm normal commands complete",
+      "passed": true
+    },
+    {
+      "name": "swarm mid-session JSON round trip",
+      "passed": true
+    },
+    {
+      "name": "swarm complete JSON round trip",
+      "passed": true
+    },
+    {
+      "name": "swarm malformed timing / forged won",
+      "passed": true
+    },
+    {
+      "name": "kitchen normal commands complete",
+      "passed": true
+    },
+    {
+      "name": "kitchen mid-session JSON round trip",
+      "passed": true
+    },
+    {
+      "name": "kitchen complete JSON round trip",
+      "passed": true
+    },
+    {
+      "name": "kitchen malformed timing / forged won",
+      "passed": true
+    },
+    {
+      "name": "relay normal commands complete",
+      "passed": true
+    },
+    {
+      "name": "relay mid-session JSON round trip",
+      "passed": true
+    },
+    {
+      "name": "relay complete JSON round trip",
+      "passed": true
+    },
+    {
+      "name": "relay malformed timing / forged won",
+      "passed": true
+    },
+    {
+      "name": "grappling rope constraint, radial velocity, release continuity",
+      "passed": true
+    },
+    {
+      "name": "grappling checkpoint restart retains checkpoint",
+      "passed": true
+    },
+    {
+      "name": "perspective requires actual alignment at each broken bridge",
+      "passed": true
+    },
+    {
+      "name": "restoration requires cleaning, orientation and prior layer",
+      "passed": true
+    },
+    {
+      "name": "digging carves persistent cells and crystal can only be collected once",
+      "passed": true
+    },
+    {
+      "name": "collection size gate rejects a large object initially",
+      "passed": true
+    },
+    {
+      "name": "ink movement and regeneration differ by terrain",
+      "passed": true
+    },
+    {
+      "name": "ink timeout blocks commands and updates after restore",
+      "passed": true
+    },
+    {
+      "name": "squad dispatch requires the bridge and sufficient team size",
+      "passed": true
+    },
+    {
+      "name": "squad route crosses the repaired bridge, not the river",
+      "passed": true
+    },
+    {
+      "name": "kitchen prevents remote work, wrong ingredients and early soup pickup",
+      "passed": true
+    },
+    {
+      "name": "kitchen expiration blocks further play and survives restore",
+      "passed": true
+    },
+    {
+      "name": "relay manual cannot operate devices, wrong wire cannot advance",
+      "passed": true
+    },
+    {
+      "name": "hook controls require start and resume",
+      "passed": true
+    },
+    {
+      "name": "grappling provides only working left / right touch controls",
+      "passed": true
+    },
+    {
+      "name": "hook disposal removes native listeners and panel",
+      "passed": true
+    },
+    {
+      "name": "fold controls require start and resume",
+      "passed": true
+    },
+    {
+      "name": "fold disposal removes native listeners and panel",
+      "passed": true
+    },
+    {
+      "name": "repair controls require start and resume",
+      "passed": true
+    },
+    {
+      "name": "restoration completes through native buttons and their enabled states",
+      "passed": true
+    },
+    {
+      "name": "repair disposal removes native listeners and panel",
+      "passed": true
+    },
+    {
+      "name": "delve controls require start and resume",
+      "passed": true
+    },
+    {
+      "name": "digging one physical key press is exactly one cell",
+      "passed": true
+    },
+    {
+      "name": "delve disposal removes native listeners and panel",
+      "passed": true
+    },
+    {
+      "name": "cluster controls require start and resume",
+      "passed": true
+    },
+    {
+      "name": "collection touch hold releases on cancellation",
+      "passed": true
+    },
+    {
+      "name": "cluster disposal removes native listeners and panel",
+      "passed": true
+    },
+    {
+      "name": "paint controls require start and resume",
+      "passed": true
+    },
+    {
+      "name": "paint disposal removes native listeners and panel",
+      "passed": true
+    },
+    {
+      "name": "swarm controls require start and resume",
+      "passed": true
+    },
+    {
+      "name": "swarm disposal removes native listeners and panel",
+      "passed": true
+    },
+    {
+      "name": "kitchen controls require start and resume",
+      "passed": true
+    },
+    {
+      "name": "service workflow completes through native station and work buttons",
+      "passed": true
+    },
+    {
+      "name": "kitchen disposal removes native listeners and panel",
+      "passed": true
+    },
+    {
+      "name": "relay controls require start and resume",
+      "passed": true
+    },
+    {
+      "name": "relay roles isolate native controls and finish by valid buttons",
+      "passed": true
+    },
+    {
+      "name": "relay disposal removes native listeners and panel",
+      "passed": true
+    },
+    {
+      "name": "collection camera transform maps pointer back to the world",
+      "passed": true
+    }
+  ],
+  "browser_verified": false,
+  "scope": "Production state rules, valid command playthroughs, serialization and factory lifecycle with a DOM double. Actual browser input and layout remain unverified."
+}

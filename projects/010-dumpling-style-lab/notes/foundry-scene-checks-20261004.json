@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "id": "rigworks",
+      "phase": "initial",
+      "meshes": 246,
+      "vertices": 25096,
+      "sceneSyncPreservesState": true
+    },
+    {
+      "id": "rigworks",
+      "phase": "progress",
+      "meshes": 252,
+      "vertices": 25163,
+      "sceneSyncPreservesState": true
+    },
+    {
+      "id": "rigworks",
+      "phase": "complete",
+      "meshes": 250,
+      "vertices": 24143,
+      "sceneSyncPreservesState": true
+    },
+    {
+      "id": "drift",
+      "phase": "initial",
+      "meshes": 115,
+      "vertices": 17655,
+      "sceneSyncPreservesState": true
+    },
+    {
+      "id": "drift",
+      "phase": "progress",
+      "meshes": 106,
+      "vertices": 16260,
+      "sceneSyncPreservesState": true
+    },
+    {
+      "id": "drift",
+      "phase": "complete",
+      "meshes": 96,
+      "vertices": 14814,
+      "sceneSyncPreservesState": true
+    }
+  ],
+  "frames": [
+    "rigworks-initial.scene.json",
+    "rigworks-progress.scene.json",
+    "rigworks-complete.scene.json",
+    "drift-initial.scene.json",
+    "drift-progress.scene.json",
+    "drift-complete.scene.json"
+  ],
+  "method": "Actual production scene builders, authored GLB models and playthrough snapshots, exported meshes/camera matrices. Does not execute the browser WebGL driver."
+}

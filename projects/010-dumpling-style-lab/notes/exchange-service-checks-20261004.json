@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "count": 19,
+  "checks": [
+    "valid route published without recipient or completion",
+    "same publish retry is idempotent",
+    "lost publish response recoverable by owner identity",
+    "invalid route cannot be published",
+    "originator cannot claim its own identity",
+    "independent recipient claims route from database",
+    "second claimant rejected",
+    "unauthorized record read rejected",
+    "recipient cannot skip ahead",
+    "first step updates authoritative position",
+    "lost-response step retry idempotent",
+    "restart preserves claim and progress",
+    "ordinary steps reach terminal and genuine completion",
+    "author sees same final result after recipient finish",
+    "completed retry cannot advance twice",
+    "concurrent claims admit exactly one recipient",
+    "HTTP rejects foreign origin before mutation",
+    "HTTP creator receives final route and allowed CORS",
+    "HTTP invalid identity rejected"
+  ],
+  "scope": "Independent identities, SQLite persistence and actual HTTP; isolated test database, no real user records."
+}

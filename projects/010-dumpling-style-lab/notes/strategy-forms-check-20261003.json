@@ -1,0 +1,771 @@
+{
+  "passed": true,
+  "method": "Combined independently completed fresh browser runs; actual UI controls, no state injection. Each source report retained.",
+  "sourceReports": [
+    "notes/strategy-command-check-20261003.json",
+    "notes/strategy-bastion-check-20261003.json",
+    "notes/strategy-tactics-check-20261003.json",
+    "notes/strategy-forms-bastion-check-20261003.json",
+    "notes/strategy-forms-tactics-check-20261003.json"
+  ],
+  "checks": [
+    "RTS actual drag rectangle selects four separate units",
+    "Recruitment spends real funds and produces distinct moving units",
+    "WASD scrolls the real map, beyond the initial viewport",
+    "command actual pause/save/reload retains progress",
+    "Real commands move, fire projectiles, defeat guards/outposts and occupy all three beacons",
+    "Tower types deploy on actual road-side pads and spend exact funds",
+    "bastion actual pause/save/reload retains progress",
+    "Actual upgrade changes the selected tower and its real damage/range",
+    "All five real waves finish with actual bolts, slow effects, multi-enemy mortar hits and final large enemy",
+    "Real grid move spends movement; guard reduces damage in the actual enemy turn",
+    "Actual healer movement and targeted ability restore real ally HP",
+    "tactics actual pause/save/reload retains progress",
+    "Real moves and attacks defeat all four opponents through alternating turns",
+    "22 form cards, three genuinely pending, new real comparison frames and focus pause",
+    "390px layout fits and direct mobile pad input actually deploys a tower",
+    "QA isolation; no runtime errors or missing art"
+  ],
+  "results": {
+    "command": {
+      "units": [
+        {
+          "id": 1,
+          "kind": "rover",
+          "x": 1344.0180571893184,
+          "y": 813.8114612624892,
+          "hp": 84,
+          "maxHp": 84,
+          "cd": 0,
+          "goal": null,
+          "face": 1
+        },
+        {
+          "id": 2,
+          "kind": "rover",
+          "x": 1389.6959219680252,
+          "y": 813.8400131753749,
+          "hp": 70,
+          "maxHp": 84,
+          "cd": 0,
+          "goal": null,
+          "face": 1
+        },
+        {
+          "id": 3,
+          "kind": "rover",
+          "x": 1434.599351960635,
+          "y": 813.0322422706049,
+          "hp": 70,
+          "maxHp": 84,
+          "cd": 0,
+          "goal": null,
+          "face": 1
+        },
+        {
+          "id": 4,
+          "kind": "drone",
+          "x": 1343.8415097692366,
+          "y": 859.4203058965925,
+          "hp": 37,
+          "maxHp": 58,
+          "cd": 0,
+          "goal": null,
+          "face": 1
+        },
+        {
+          "id": 5,
+          "kind": "rover",
+          "x": 1388.1992224809358,
+          "y": 858.7631160530988,
+          "hp": 63,
+          "maxHp": 84,
+          "cd": 0,
+          "goal": null,
+          "face": 1
+        },
+        {
+          "id": 6,
+          "kind": "drone",
+          "x": 1433.7848490365861,
+          "y": 858.0463361347435,
+          "hp": 2,
+          "maxHp": 58,
+          "cd": 0,
+          "goal": null,
+          "face": 1
+        }
+      ],
+      "enemies": [
+        {
+          "id": 100,
+          "home": 0,
+          "x": 608.2039366644382,
+          "y": 604.1523320521397,
+          "hp": 0,
+          "maxHp": 46,
+          "cd": 0.9500000000000002,
+          "face": -1
+        },
+        {
+          "id": 101,
+          "home": 0,
+          "x": 788.9367990464796,
+          "y": 584.8222242207083,
+          "hp": 0,
+          "maxHp": 46,
+          "cd": 0.7001000000000002,
+          "face": -1
+        },
+        {
+          "id": 102,
+          "home": 1,
+          "x": 1148.4632517534,
+          "y": 377.28681629028097,
+          "hp": 0,
+          "maxHp": 46,
+          "cd": 0.43339999999999984,
+          "face": -1
+        },
+        {
+          "id": 103,
+          "home": 1,
+          "x": 1273.0866408803097,
+          "y": 374.88842788228806,
+          "hp": 0,
+          "maxHp": 46,
+          "cd": 0.4334000000000003,
+          "face": -1
+        },
+        {
+          "id": 104,
+          "home": 2,
+          "x": 1309.7421585940886,
+          "y": 851.3394461159708,
+          "hp": 0,
+          "maxHp": 46,
+          "cd": 0.883299999999999,
+          "face": -1
+        },
+        {
+          "id": 105,
+          "home": 2,
+          "x": 1440.581840736536,
+          "y": 835.8550462306482,
+          "hp": 0,
+          "maxHp": 46,
+          "cd": 1.0666999999999986,
+          "face": -1
+        }
+      ],
+      "beacons": [
+        {
+          "id": "p0",
+          "x": 760,
+          "y": 510,
+          "hp": 0,
+          "maxHp": 100,
+          "progress": 1,
+          "captured": true
+        },
+        {
+          "id": "p1",
+          "x": 1250,
+          "y": 300,
+          "hp": 0,
+          "maxHp": 100,
+          "progress": 1,
+          "captured": true
+        },
+        {
+          "id": "p2",
+          "x": 1390,
+          "y": 840,
+          "hp": 0,
+          "maxHp": 100,
+          "progress": 1,
+          "captured": true
+        }
+      ],
+      "selected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "camera": {
+        "x": 672,
+        "y": 490
+      },
+      "gold": 327,
+      "time": 28.71080000000001,
+      "income": 0.6440999999999729,
+      "nextId": 7,
+      "kills": 9,
+      "hits": 60,
+      "orders": 3,
+      "captures": 3,
+      "score": 3000,
+      "won": true,
+      "down": false,
+      "reinforced": false,
+      "world": {
+        "width": 1792,
+        "height": 1120
+      },
+      "base": {
+        "x": 310,
+        "y": 700
+      }
+    },
+    "bastion": {
+      "gold": 427,
+      "lives": 15,
+      "wave": 5,
+      "phase": "won",
+      "towers": [
+        {
+          "pad": 0,
+          "kind": "bolt",
+          "level": 1,
+          "cd": 0.5367000000000046,
+          "shots": 69
+        },
+        {
+          "pad": 2,
+          "kind": "frost",
+          "level": 2,
+          "cd": 0,
+          "shots": 10
+        },
+        {
+          "pad": 3,
+          "kind": "bolt",
+          "level": 2,
+          "cd": 0,
+          "shots": 0
+        },
+        {
+          "pad": 1,
+          "kind": "mortar",
+          "level": 2,
+          "cd": 1.1101769911504424,
+          "shots": 20
+        }
+      ],
+      "enemies": [],
+      "spawned": 12,
+      "nextId": 43,
+      "spawnTime": -3.3631999999999933,
+      "time": 52.48500000000052,
+      "kills": 42,
+      "leaks": 0,
+      "hits": 102,
+      "splashHits": 14,
+      "score": 6100,
+      "buildKind": "mortar",
+      "selectedPad": 1,
+      "won": true,
+      "checkpoint": {
+        "gold": 200,
+        "lives": 15,
+        "wave": 4,
+        "towers": [
+          {
+            "pad": 0,
+            "kind": "bolt",
+            "level": 1,
+            "cd": 0.5700000000000002,
+            "shots": 50
+          },
+          {
+            "pad": 2,
+            "kind": "frost",
+            "level": 2,
+            "cd": 0.6459035398230101,
+            "shots": 10
+          },
+          {
+            "pad": 3,
+            "kind": "bolt",
+            "level": 2,
+            "cd": 0,
+            "shots": 0
+          },
+          {
+            "pad": 1,
+            "kind": "mortar",
+            "level": 2,
+            "cd": 1.6334000000000013,
+            "shots": 11
+          }
+        ],
+        "kills": 30,
+        "leaks": 0,
+        "hits": 70,
+        "splashHits": 9,
+        "score": 3000,
+        "buildKind": "mortar",
+        "selectedPad": 1
+      },
+      "path": [
+        [
+          -20,
+          288
+        ],
+        [
+          269,
+          288
+        ],
+        [
+          294,
+          278
+        ],
+        [
+          309,
+          255
+        ],
+        [
+          309,
+          187
+        ],
+        [
+          321,
+          172
+        ],
+        [
+          341,
+          163
+        ],
+        [
+          475,
+          163
+        ],
+        [
+          492,
+          172
+        ],
+        [
+          503,
+          191
+        ],
+        [
+          503,
+          346
+        ],
+        [
+          514,
+          365
+        ],
+        [
+          538,
+          382
+        ],
+        [
+          716,
+          383
+        ],
+        [
+          740,
+          377
+        ],
+        [
+          759,
+          356
+        ],
+        [
+          763,
+          254
+        ],
+        [
+          775,
+          235
+        ],
+        [
+          793,
+          225
+        ],
+        [
+          997,
+          224
+        ],
+        [
+          1075,
+          214
+        ],
+        [
+          1138,
+          214
+        ]
+      ],
+      "pads": [
+        {
+          "x": 174,
+          "y": 236
+        },
+        {
+          "x": 253,
+          "y": 338
+        },
+        {
+          "x": 398,
+          "y": 224
+        },
+        {
+          "x": 571,
+          "y": 290
+        },
+        {
+          "x": 676,
+          "y": 326
+        },
+        {
+          "x": 830,
+          "y": 287
+        },
+        {
+          "x": 724,
+          "y": 177
+        },
+        {
+          "x": 943,
+          "y": 279
+        }
+      ],
+      "length": 1555.925010370456,
+      "types": {
+        "bolt": {
+          "name": "连弩",
+          "cost": 90,
+          "range": 192,
+          "damage": 18,
+          "interval": 0.72,
+          "color": "#f6d38d"
+        },
+        "frost": {
+          "name": "霜塔",
+          "cost": 80,
+          "range": 167,
+          "damage": 8,
+          "interval": 1.05,
+          "color": "#8befec"
+        },
+        "mortar": {
+          "name": "迫击",
+          "cost": 120,
+          "range": 231,
+          "damage": 28,
+          "interval": 1.65,
+          "color": "#ffa480"
+        }
+      }
+    },
+    "tactics": {
+      "units": [
+        {
+          "id": 1,
+          "side": "ally",
+          "kind": "guard",
+          "name": "青卫",
+          "c": 5,
+          "r": 3,
+          "hp": 44,
+          "maxHp": 44,
+          "damage": 16,
+          "range": 1,
+          "move": 3,
+          "moved": true,
+          "acted": true,
+          "guard": false
+        },
+        {
+          "id": 2,
+          "side": "ally",
+          "kind": "scout",
+          "name": "弥弓",
+          "c": 3,
+          "r": 4,
+          "hp": 22,
+          "maxHp": 34,
+          "damage": 13,
+          "range": 3,
+          "move": 4,
+          "moved": false,
+          "acted": false,
+          "guard": false
+        },
+        {
+          "id": 3,
+          "side": "ally",
+          "kind": "medic",
+          "name": "灯医",
+          "c": 2,
+          "r": 3,
+          "hp": 36,
+          "maxHp": 36,
+          "damage": 9,
+          "range": 2,
+          "move": 3,
+          "moved": false,
+          "acted": false,
+          "guard": false
+        },
+        {
+          "id": 10,
+          "side": "enemy",
+          "kind": "raider",
+          "name": "红刃",
+          "c": 2,
+          "r": 3,
+          "hp": 0,
+          "maxHp": 26,
+          "damage": 7,
+          "range": 1,
+          "move": 2,
+          "moved": false,
+          "acted": false,
+          "guard": false
+        },
+        {
+          "id": 11,
+          "side": "enemy",
+          "kind": "raider",
+          "name": "赤哨",
+          "c": 4,
+          "r": 3,
+          "hp": 0,
+          "maxHp": 26,
+          "damage": 7,
+          "range": 1,
+          "move": 2,
+          "moved": false,
+          "acted": false,
+          "guard": false
+        },
+        {
+          "id": 12,
+          "side": "enemy",
+          "kind": "raider",
+          "name": "游骑",
+          "c": 3,
+          "r": 5,
+          "hp": 0,
+          "maxHp": 26,
+          "damage": 7,
+          "range": 1,
+          "move": 2,
+          "moved": false,
+          "acted": false,
+          "guard": false
+        },
+        {
+          "id": 13,
+          "side": "enemy",
+          "kind": "walker",
+          "name": "重甲",
+          "c": 2,
+          "r": 6,
+          "hp": 0,
+          "maxHp": 40,
+          "damage": 8,
+          "range": 3,
+          "move": 2,
+          "moved": false,
+          "acted": false,
+          "guard": false
+        }
+      ],
+      "selected": 1,
+      "round": 7,
+      "phase": "won",
+      "mode": "attack",
+      "showThreat": true,
+      "enemyIndex": 4,
+      "aiTimer": -0.03329999999999897,
+      "pendingHit": null,
+      "score": 1500,
+      "hits": 15,
+      "heals": 3,
+      "moves": 7,
+      "kills": 4,
+      "won": true,
+      "checkpoint": {
+        "units": [
+          {
+            "id": 1,
+            "side": "ally",
+            "kind": "guard",
+            "name": "青卫",
+            "c": 4,
+            "r": 5,
+            "hp": 44,
+            "maxHp": 44,
+            "damage": 16,
+            "range": 1,
+            "move": 3,
+            "moved": false,
+            "acted": false,
+            "guard": false
+          },
+          {
+            "id": 2,
+            "side": "ally",
+            "kind": "scout",
+            "name": "弥弓",
+            "c": 3,
+            "r": 4,
+            "hp": 22,
+            "maxHp": 34,
+            "damage": 13,
+            "range": 3,
+            "move": 4,
+            "moved": false,
+            "acted": false,
+            "guard": false
+          },
+          {
+            "id": 3,
+            "side": "ally",
+            "kind": "medic",
+            "name": "灯医",
+            "c": 2,
+            "r": 3,
+            "hp": 36,
+            "maxHp": 36,
+            "damage": 9,
+            "range": 2,
+            "move": 3,
+            "moved": false,
+            "acted": false,
+            "guard": false
+          },
+          {
+            "id": 10,
+            "side": "enemy",
+            "kind": "raider",
+            "name": "红刃",
+            "c": 2,
+            "r": 3,
+            "hp": 0,
+            "maxHp": 26,
+            "damage": 7,
+            "range": 1,
+            "move": 2,
+            "moved": false,
+            "acted": false,
+            "guard": false
+          },
+          {
+            "id": 11,
+            "side": "enemy",
+            "kind": "raider",
+            "name": "赤哨",
+            "c": 4,
+            "r": 3,
+            "hp": 13,
+            "maxHp": 26,
+            "damage": 7,
+            "range": 1,
+            "move": 2,
+            "moved": false,
+            "acted": false,
+            "guard": false
+          },
+          {
+            "id": 12,
+            "side": "enemy",
+            "kind": "raider",
+            "name": "游骑",
+            "c": 3,
+            "r": 5,
+            "hp": 0,
+            "maxHp": 26,
+            "damage": 7,
+            "range": 1,
+            "move": 2,
+            "moved": false,
+            "acted": false,
+            "guard": false
+          },
+          {
+            "id": 13,
+            "side": "enemy",
+            "kind": "walker",
+            "name": "重甲",
+            "c": 2,
+            "r": 6,
+            "hp": 0,
+            "maxHp": 40,
+            "damage": 8,
+            "range": 3,
+            "move": 2,
+            "moved": false,
+            "acted": false,
+            "guard": false
+          }
+        ],
+        "selected": 1,
+        "round": 7,
+        "score": 450,
+        "hits": 14,
+        "heals": 3,
+        "moves": 6,
+        "kills": 3,
+        "log": [
+          "红刃退场。",
+          "灯医治疗灯医 7 点。",
+          "敌方回合开始。",
+          "第 6 回合开始。",
+          "青卫移动 2 格。",
+          "青卫防守至下个己方回合，受伤减半。",
+          "弥弓攻击赤哨，造成 13 伤害。",
+          "灯医移动 1 格。",
+          "灯医防守至下个己方回合，受伤减半。",
+          "敌方回合开始。"
+        ]
+      },
+      "log": [
+        "青卫防守至下个己方回合，受伤减半。",
+        "弥弓攻击赤哨，造成 13 伤害。",
+        "灯医移动 1 格。",
+        "灯医防守至下个己方回合，受伤减半。",
+        "敌方回合开始。",
+        "第 7 回合开始。",
+        "青卫移动 3 格。",
+        "青卫攻击赤哨，造成 16 伤害。",
+        "赤哨退场。",
+        "所有敌方单位已击退。"
+      ],
+      "blocks": [
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "project": {
+        "x": 560,
+        "y": 155,
+        "dx": 45,
+        "dy": 24
+      },
+      "reachable": [],
+      "animating": false
+    }
+  },
+  "errors": [],
+  "missing": []
+}

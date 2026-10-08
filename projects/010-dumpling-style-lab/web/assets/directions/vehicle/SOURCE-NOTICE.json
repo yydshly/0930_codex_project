@@ -1,0 +1,23 @@
+{
+  "source": "https://kenney.nl/assets/car-kit",
+  "download": "https://kenney.nl/media/pages/assets/car-kit/1a312ec241-1775131960/kenney_car-kit.zip",
+  "license": "CC0",
+  "files": [
+    "truck-flat.glb",
+    "wheel-truck.glb",
+    "box.glb",
+    "cone.glb",
+    "debris-drivetrain-axle.glb"
+  ],
+  "notes": "Original unchanged GLBs and their external colormap texture. Runtime removes the authored static truck wheel nodes and renders the original wheel-truck GLB at actual independent physics wheel positions. No upstream Rigs of Rods code or art is used.",
+  "nature": {
+    "source": "https://kenney.nl/assets/nature-kit",
+    "files": [
+      "tree_pineTallA_detailed.glb",
+      "rock_largeA.glb"
+    ],
+    "license": "CC0",
+    "notes": "Unchanged existing licensed project copies retained at their previous paths; additional sample copies only."
+  },
+  "runtime_details": "Source GLBs remain unchanged. Runtime clones omit static source wheels and apply chassis axis scaling to the 1.76 m track and 2.9 m wheelbase; windows, bronze markings, workshop architecture and matching bridge planks are added scene meshes. Four separate wheel models follow engine contact telemetry. Original PNG atlas quadrants are sampled into runtime materials; source images stay unchanged."
+}

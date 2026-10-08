@@ -1,0 +1,375 @@
+{
+  "passed": true,
+  "at": "2026-10-03T13:08:11.226Z",
+  "checks": [
+    "Real simultaneous P1 D and P2 left move the two characters in opposite directions without shared-axis interference",
+    "Independent simultaneous jumps apply gravity and land both characters back on the physical floor",
+    "P2 physically jumps over the equipment box but cannot pass the locked gate alone",
+    "P1 pressure plate continuously opens the gate and closes it again when P1 leaves",
+    "P2 crosses while P1 holds the plate, reaches the far-side latch and permanently opens the path for P1",
+    "Actual pause freezes both players and preserves exact positions, velocities, gate latch and checkpoint across save/reload",
+    "One character at the exit does not complete the cooperative room",
+    "Both characters really traverse the first room; only their joint exit enables the second checkpoint",
+    "Holding only one of the two assigned plates cannot charge or open the second bridge",
+    "Two independently controlled players hold complementary plates for 1.6 seconds and charge the actual physical bridge",
+    "Charged bridge timer and both grounded plate positions remain frozen while paused and restore exactly",
+    "Real simultaneous movement carries both characters across the live limited-duration bridge and records a cooperative victory",
+    "Completed scene restores as completed; replay resets this short game while retaining the completed gallery record",
+    "Walking into the unpowered canyon causes a real gravity fall and returns both players to the current checkpoint",
+    "Saved preview captures actual cooperative players and the activated bridge, using only UI-produced progress",
+    "390px mobile reserves two separate 44px touch clusters below the full canvas; real simultaneous two-finger holds move both characters independently and release cleanly",
+    "Pausing with fingers held clears both touch inputs and disables both control clusters",
+    "No page errors, missing assets, or writes to normal user save keys"
+  ],
+  "results": {
+    "charged": {
+      "version": 1,
+      "level": 1,
+      "players": [
+        {
+          "x": 360.00000000000034,
+          "y": 520,
+          "vx": 0,
+          "vy": 0,
+          "grounded": true,
+          "facing": 1,
+          "id": 0
+        },
+        {
+          "x": 477.8536000000002,
+          "y": 520,
+          "vx": 0,
+          "vy": 0,
+          "grounded": true,
+          "facing": 1,
+          "id": 1
+        }
+      ],
+      "phase": "play",
+      "won": false,
+      "elapsed": 19.56339999999406,
+      "failures": 0,
+      "restarts": 1,
+      "completed": [
+        0
+      ],
+      "gateLatched": false,
+      "charge": 1.6,
+      "bridgeTimer": 11,
+      "bridgeActivations": 1,
+      "score": 900,
+      "message": "同步完成，灯桥开启。两人一起通过；离开压板后还有 11 秒。",
+      "levels": [
+        {
+          "name": "01 / 分工开门",
+          "hint": "P1 留在青色压板上，P2 跳过设备箱，穿过门，到右侧锁定通路。",
+          "floor": [
+            {
+              "x": 20,
+              "y": 520,
+              "w": 1080,
+              "h": 70
+            }
+          ],
+          "obstacles": [
+            {
+              "x": 442,
+              "y": 484,
+              "w": 55,
+              "h": 36
+            }
+          ],
+          "plates": [
+            {
+              "x": 330,
+              "y": 520,
+              "w": 62,
+              "player": 0
+            }
+          ],
+          "gate": {
+            "x": 600,
+            "y": 288,
+            "w": 25,
+            "h": 232
+          },
+          "latch": {
+            "x": 812,
+            "y": 520,
+            "w": 56
+          },
+          "exit": {
+            "x": 987,
+            "y": 520,
+            "w": 89
+          },
+          "starts": [
+            {
+              "x": 115,
+              "y": 520
+            },
+            {
+              "x": 210,
+              "y": 520
+            }
+          ]
+        },
+        {
+          "name": "02 / 同步灯桥",
+          "hint": "P1 与 P2 分别站上两块压板，共同充能 1.6 秒。灯桥维持 11 秒，两人一起穿过峡谷。",
+          "floor": [
+            {
+              "x": 20,
+              "y": 520,
+              "w": 570,
+              "h": 70
+            },
+            {
+              "x": 870,
+              "y": 520,
+              "w": 230,
+              "h": 70
+            }
+          ],
+          "obstacles": [],
+          "plates": [
+            {
+              "x": 328,
+              "y": 520,
+              "w": 62,
+              "player": 0
+            },
+            {
+              "x": 448,
+              "y": 520,
+              "w": 62,
+              "player": 1
+            }
+          ],
+          "gap": {
+            "x": 590,
+            "y": 520,
+            "w": 280
+          },
+          "bridge": {
+            "x": 590,
+            "y": 520,
+            "w": 280,
+            "h": 22
+          },
+          "exit": {
+            "x": 987,
+            "y": 520,
+            "w": 89
+          },
+          "starts": [
+            {
+              "x": 115,
+              "y": 520
+            },
+            {
+              "x": 210,
+              "y": 520
+            }
+          ]
+        }
+      ],
+      "rules": {
+        "speed": 196,
+        "gravity": 1200,
+        "jump": 435,
+        "bodyWidth": 32,
+        "bodyHeight": 86,
+        "chargeSeconds": 1.6,
+        "bridgeSeconds": 11
+      },
+      "platesHeld": [
+        true,
+        true
+      ],
+      "gateOpen": null,
+      "exitReached": [
+        false,
+        false
+      ],
+      "touchHeld": [],
+      "active": true
+    },
+    "win": {
+      "version": 1,
+      "level": 1,
+      "players": [
+        {
+          "x": 987.1608000000023,
+          "y": 520,
+          "vx": 196,
+          "vy": 0,
+          "grounded": true,
+          "facing": 1,
+          "id": 0
+        },
+        {
+          "x": 1084,
+          "y": 520,
+          "vx": 196,
+          "vy": 0,
+          "grounded": true,
+          "facing": 1,
+          "id": 1
+        }
+      ],
+      "phase": "won",
+      "won": true,
+      "elapsed": 22.98890000000007,
+      "failures": 0,
+      "restarts": 1,
+      "completed": [
+        0,
+        1
+      ],
+      "gateLatched": false,
+      "charge": 0,
+      "bridgeTimer": 7.966799999999957,
+      "bridgeActivations": 1,
+      "score": 1500,
+      "message": "两位工程师同时抵达，观测站的灯桥恢复运行。",
+      "levels": [
+        {
+          "name": "01 / 分工开门",
+          "hint": "P1 留在青色压板上，P2 跳过设备箱，穿过门，到右侧锁定通路。",
+          "floor": [
+            {
+              "x": 20,
+              "y": 520,
+              "w": 1080,
+              "h": 70
+            }
+          ],
+          "obstacles": [
+            {
+              "x": 442,
+              "y": 484,
+              "w": 55,
+              "h": 36
+            }
+          ],
+          "plates": [
+            {
+              "x": 330,
+              "y": 520,
+              "w": 62,
+              "player": 0
+            }
+          ],
+          "gate": {
+            "x": 600,
+            "y": 288,
+            "w": 25,
+            "h": 232
+          },
+          "latch": {
+            "x": 812,
+            "y": 520,
+            "w": 56
+          },
+          "exit": {
+            "x": 987,
+            "y": 520,
+            "w": 89
+          },
+          "starts": [
+            {
+              "x": 115,
+              "y": 520
+            },
+            {
+              "x": 210,
+              "y": 520
+            }
+          ]
+        },
+        {
+          "name": "02 / 同步灯桥",
+          "hint": "P1 与 P2 分别站上两块压板，共同充能 1.6 秒。灯桥维持 11 秒，两人一起穿过峡谷。",
+          "floor": [
+            {
+              "x": 20,
+              "y": 520,
+              "w": 570,
+              "h": 70
+            },
+            {
+              "x": 870,
+              "y": 520,
+              "w": 230,
+              "h": 70
+            }
+          ],
+          "obstacles": [],
+          "plates": [
+            {
+              "x": 328,
+              "y": 520,
+              "w": 62,
+              "player": 0
+            },
+            {
+              "x": 448,
+              "y": 520,
+              "w": 62,
+              "player": 1
+            }
+          ],
+          "gap": {
+            "x": 590,
+            "y": 520,
+            "w": 280
+          },
+          "bridge": {
+            "x": 590,
+            "y": 520,
+            "w": 280,
+            "h": 22
+          },
+          "exit": {
+            "x": 987,
+            "y": 520,
+            "w": 89
+          },
+          "starts": [
+            {
+              "x": 115,
+              "y": 520
+            },
+            {
+              "x": 210,
+              "y": 520
+            }
+          ]
+        }
+      ],
+      "rules": {
+        "speed": 196,
+        "gravity": 1200,
+        "jump": 435,
+        "bodyWidth": 32,
+        "bodyHeight": 86,
+        "chargeSeconds": 1.6,
+        "bridgeSeconds": 11
+      },
+      "platesHeld": [
+        false,
+        false
+      ],
+      "gateOpen": null,
+      "exitReached": [
+        true,
+        true
+      ],
+      "touchHeld": [],
+      "active": true
+    }
+  },
+  "errors": [],
+  "missing": []
+}

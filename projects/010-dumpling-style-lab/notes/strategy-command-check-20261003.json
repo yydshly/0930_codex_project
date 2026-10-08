@@ -1,0 +1,205 @@
+{
+  "passed": true,
+  "checks": [
+    "RTS actual drag rectangle selects four separate units",
+    "Recruitment spends real funds and produces distinct moving units",
+    "WASD scrolls the real map, beyond the initial viewport",
+    "command actual pause/save/reload retains progress",
+    "Real commands move, fire projectiles, defeat guards/outposts and occupy all three beacons"
+  ],
+  "result": {
+    "units": [
+      {
+        "id": 1,
+        "kind": "rover",
+        "x": 1344.0180571893184,
+        "y": 813.8114612624892,
+        "hp": 84,
+        "maxHp": 84,
+        "cd": 0,
+        "goal": null,
+        "face": 1
+      },
+      {
+        "id": 2,
+        "kind": "rover",
+        "x": 1389.6959219680252,
+        "y": 813.8400131753749,
+        "hp": 70,
+        "maxHp": 84,
+        "cd": 0,
+        "goal": null,
+        "face": 1
+      },
+      {
+        "id": 3,
+        "kind": "rover",
+        "x": 1434.599351960635,
+        "y": 813.0322422706049,
+        "hp": 70,
+        "maxHp": 84,
+        "cd": 0,
+        "goal": null,
+        "face": 1
+      },
+      {
+        "id": 4,
+        "kind": "drone",
+        "x": 1343.8415097692366,
+        "y": 859.4203058965925,
+        "hp": 37,
+        "maxHp": 58,
+        "cd": 0,
+        "goal": null,
+        "face": 1
+      },
+      {
+        "id": 5,
+        "kind": "rover",
+        "x": 1388.1992224809358,
+        "y": 858.7631160530988,
+        "hp": 63,
+        "maxHp": 84,
+        "cd": 0,
+        "goal": null,
+        "face": 1
+      },
+      {
+        "id": 6,
+        "kind": "drone",
+        "x": 1433.7848490365861,
+        "y": 858.0463361347435,
+        "hp": 2,
+        "maxHp": 58,
+        "cd": 0,
+        "goal": null,
+        "face": 1
+      }
+    ],
+    "enemies": [
+      {
+        "id": 100,
+        "home": 0,
+        "x": 608.2039366644382,
+        "y": 604.1523320521397,
+        "hp": 0,
+        "maxHp": 46,
+        "cd": 0.9500000000000002,
+        "face": -1
+      },
+      {
+        "id": 101,
+        "home": 0,
+        "x": 788.9367990464796,
+        "y": 584.8222242207083,
+        "hp": 0,
+        "maxHp": 46,
+        "cd": 0.7001000000000002,
+        "face": -1
+      },
+      {
+        "id": 102,
+        "home": 1,
+        "x": 1148.4632517534,
+        "y": 377.28681629028097,
+        "hp": 0,
+        "maxHp": 46,
+        "cd": 0.43339999999999984,
+        "face": -1
+      },
+      {
+        "id": 103,
+        "home": 1,
+        "x": 1273.0866408803097,
+        "y": 374.88842788228806,
+        "hp": 0,
+        "maxHp": 46,
+        "cd": 0.4334000000000003,
+        "face": -1
+      },
+      {
+        "id": 104,
+        "home": 2,
+        "x": 1309.7421585940886,
+        "y": 851.3394461159708,
+        "hp": 0,
+        "maxHp": 46,
+        "cd": 0.883299999999999,
+        "face": -1
+      },
+      {
+        "id": 105,
+        "home": 2,
+        "x": 1440.581840736536,
+        "y": 835.8550462306482,
+        "hp": 0,
+        "maxHp": 46,
+        "cd": 1.0666999999999986,
+        "face": -1
+      }
+    ],
+    "beacons": [
+      {
+        "id": "p0",
+        "x": 760,
+        "y": 510,
+        "hp": 0,
+        "maxHp": 100,
+        "progress": 1,
+        "captured": true
+      },
+      {
+        "id": "p1",
+        "x": 1250,
+        "y": 300,
+        "hp": 0,
+        "maxHp": 100,
+        "progress": 1,
+        "captured": true
+      },
+      {
+        "id": "p2",
+        "x": 1390,
+        "y": 840,
+        "hp": 0,
+        "maxHp": 100,
+        "progress": 1,
+        "captured": true
+      }
+    ],
+    "selected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "camera": {
+      "x": 672,
+      "y": 490
+    },
+    "gold": 327,
+    "time": 28.71080000000001,
+    "income": 0.6440999999999729,
+    "nextId": 7,
+    "kills": 9,
+    "hits": 60,
+    "orders": 3,
+    "captures": 3,
+    "score": 3000,
+    "won": true,
+    "down": false,
+    "reinforced": false,
+    "world": {
+      "width": 1792,
+      "height": 1120
+    },
+    "base": {
+      "x": 310,
+      "y": 700
+    }
+  },
+  "errors": [],
+  "missing": []
+}

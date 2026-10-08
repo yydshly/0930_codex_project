@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-05",
+  "implemented": "Original Windhaven theme park direction sample, connected from the references page, direction map and existing forms summary; factory gameplay kept intact.",
+  "visual_method": "Production park engine and Canvas2D renderer executed via Skia using the three final generated project bitmaps. Frames are not browser screenshots or HTML/CSS renders.",
+  "reviewed_frames": [
+    "assets/directions/park-qa/ready.png",
+    "assets/directions/park-qa/open-day.png",
+    "assets/directions/park-qa/finished.png",
+    "assets/directions/park-qa/disconnected.png",
+    "assets/directions/park-qa/reconnected.png"
+  ],
+  "observations": [
+    "Consistent warm garden terrain and cream/teal/coral/gold facility art; facilities and adult visitor sprites have alpha transparency.",
+    "Roads and gold facility entrances remain legible against the garden scene; a dark guidance callout improves the missing-road instruction.",
+    "Visitors and service/queue counts come from actual simulated state; disconnected attractions do not serve visitors.",
+    "Reconnected frame shows visitors queued and served at the previously isolated attractions.",
+    "Finished frame has no lingering visitors after the ordinary closing sequence; the page controller presents a real daily report separately."
+  ],
+  "verification": {
+    "park_rule_checks": 14,
+    "park_production_callback_checks": 10,
+    "factory_regression_checks": 22,
+    "site_tests": 6,
+    "built_demos": 19,
+    "park_package_checks": 286,
+    "protected_prior_files_unchanged": 2548,
+    "live_source_match": "11 new or integrated routes/resources matched source and build over HTTP port 8962"
+  },
+  "browser_acceptance": "pending",
+  "browser_failure": "CUA initialization exited: windows sandbox helper_unknown_error; setup refresh had errors.",
+  "pending_platform_checks": ["browser CSS and narrow-screen layout", "touch and actual pointer capture", "fullscreen", "real browser refresh and localStorage restoration"],
+  "scope_limits": ["Original short isometric Canvas2D sample, not true 3D or an upstream game port", "No track authoring or complete mechanical attraction animations", "No multiplayer or long-term park economy", "No human emotion, retention or commercial-quality acceptance study"]
+}

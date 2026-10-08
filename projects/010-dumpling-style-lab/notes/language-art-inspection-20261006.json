@@ -1,0 +1,111 @@
+{
+  "passed": true,
+  "assets": [
+    {
+      "key": "market",
+      "file": "web/assets/directions/language/market.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "alpha_extrema": null,
+      "sha256": "3eb76bd5f17687d7f187366d93777b009663c8966bd0fbcee7def9f7d2dae91c",
+      "source_copy_identical": true
+    },
+    {
+      "key": "harbor",
+      "file": "web/assets/directions/language/harbor.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "alpha_extrema": null,
+      "sha256": "4cdc602e2cd4d766acaf76abb6bba893cdb7ac02597839dad247537f6914107a",
+      "source_copy_identical": true
+    },
+    {
+      "key": "lighthouse",
+      "file": "web/assets/directions/language/lighthouse.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "alpha_extrema": null,
+      "sha256": "b89509bb28ad41cf24b90d79c5ad7e32b47cbcc885becb56f7f58a32d49b054d",
+      "source_copy_identical": true
+    },
+    {
+      "key": "props",
+      "file": "web/assets/directions/language/props.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "sha256": "bb1a9ff1c1166706a9d7743d4cf7381de1c18874f882c0e0912591f1fffd8b64",
+      "source_copy_identical": true
+    }
+  ],
+  "frames": {
+    "traveler": [
+      0,
+      0,
+      384,
+      512
+    ],
+    "merchant": [
+      384,
+      0,
+      384,
+      512
+    ],
+    "keeper": [
+      768,
+      0,
+      384,
+      512
+    ],
+    "water": [
+      1152,
+      0,
+      384,
+      512
+    ],
+    "lantern": [
+      0,
+      512,
+      384,
+      512
+    ],
+    "gate": [
+      384,
+      512,
+      384,
+      512
+    ],
+    "hands": [
+      768,
+      512,
+      384,
+      512
+    ],
+    "key": [
+      1152,
+      512,
+      384,
+      512
+    ]
+  },
+  "method": "Actual original bitmap dimensions, modes, alpha and hashes read. Original three harbor environments and eight-cell transparent props atlas visually inspected; runtime cell crops preserve proportions, precise glyphs are native authored game writing."
+}

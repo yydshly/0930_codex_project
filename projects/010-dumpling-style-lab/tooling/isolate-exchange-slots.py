@@ -1,0 +1,8 @@
+from pathlib import Path
+P=Path(__file__).resolve().parents[1];f=P/'web/showcase.js';s=f.read_text(encoding='utf-8');assert 'showcaseStorageKey' not in s
+s="import {showcaseStorageKey} from './showcase-relay-storage.js?v=20261004-1';\n"+s
+s=s.replace('localStorage.getItem(prefix+id)','localStorage.getItem(showcaseStorageKey(prefix,id,params.get(\'role\')))').replace('localStorage.setItem(prefix+currentId,','localStorage.setItem(showcaseStorageKey(prefix,currentId,params.get(\'role\')),').replace('localStorage.removeItem(prefix+currentId)','localStorage.removeItem(showcaseStorageKey(prefix,currentId,params.get(\'role\')))')
+s=s.replace('factoryModules.exchange.createExchange({...options,id})',"factoryModules.exchange.createExchange({...options,id,role:params.get('role')==='carrier'?'carrier':'author'})")
+f.write_text(s,encoding='utf-8')
+f=P/'web/showcase-exchange.js';s=f.read_text(encoding='utf-8');old="if(id==='postway'&&!saved&&globalThis.location?.search&&new URLSearchParams(location.search).get('role')==='carrier')s.role='carrier';";new="if(id==='postway'&&['author','carrier'].includes(options.role))s.role=options.role;else if(id==='postway'&&globalThis.location?.search&&new URLSearchParams(location.search).has('role'))s.role=new URLSearchParams(location.search).get('role')==='carrier'?'carrier':'author';";assert old in s;s=s.replace(old,new);f.write_text(s,encoding='utf-8')
+f=P/'web/showcase-exchange-rules.js';s=f.read_text(encoding='utf-8').replace("typeof raw?.ownerKey==='string'?raw.ownerKey:''","/^[a-f0-9]{48}$/.test(raw?.ownerKey)?raw.ownerKey:''").replace("typeof raw?.carrierKey==='string'?raw.carrierKey:''","/^[a-f0-9]{48}$/.test(raw?.carrierKey)?raw.carrierKey:''");f.write_text(s,encoding='utf-8')

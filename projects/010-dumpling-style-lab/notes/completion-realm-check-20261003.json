@@ -1,0 +1,900 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-03T12:13:43.722Z",
+  "checks": [
+    "Twelve distinct geographic provinces have symmetric explicit adjacency, saved army/ownership and income rules",
+    "Opponent province cannot recruit, develop or dispatch; keyboard also enforces ownership",
+    "Nonadjacent opponent tap is denied with no army, ownership, resource or order changes",
+    "Insufficient adjacent attack consumes the actual sent army and order, damages defenders, and cannot capture",
+    "Adjacent friendly transfer moves real army counts, spends one order and retains one source garrison",
+    "Recruit and development charge exact gold/orders, increase actual garrison/tax, and exhausted orders deny more commands",
+    "Real end-turn triggers exactly one rival fortification, +13 tax and readable round summary",
+    "Actual pause/save/reload preserves province ownership, armies, development, resources, round and checkpoint",
+    "Actual adjacent capture changes control, then deterministic rival attack moves port armies and takes the weak newly captured province",
+    "Checkpoint retry restores the full previous round through the real UI",
+    "Read-only planning and actual province/action clicks complete a short game with at least five real captures and a rival round",
+    "Completion is recorded; real replay restores starting armies and keeps the completion record",
+    "QA storage is isolated; no normal saves, missing assets or browser errors"
+  ],
+  "result": {
+    "version": 1,
+    "provinces": [
+      {
+        "id": "west",
+        "owner": "player",
+        "army": 1,
+        "level": 0,
+        "fort": 0,
+        "recruited": false,
+        "developed": false
+      },
+      {
+        "id": "grain",
+        "owner": "player",
+        "army": 1,
+        "level": 0,
+        "fort": 0,
+        "recruited": false,
+        "developed": false
+      },
+      {
+        "id": "pine",
+        "owner": "player",
+        "army": 1,
+        "level": 0,
+        "fort": 0,
+        "recruited": false,
+        "developed": false
+      },
+      {
+        "id": "snow",
+        "owner": "player",
+        "army": 3,
+        "level": 0,
+        "fort": 0,
+        "recruited": false,
+        "developed": false
+      },
+      {
+        "id": "falls",
+        "owner": "neutral",
+        "army": 3,
+        "level": 0,
+        "fort": 0,
+        "recruited": false,
+        "developed": false
+      },
+      {
+        "id": "river",
+        "owner": "player",
+        "army": 1,
+        "level": 0,
+        "fort": 0,
+        "recruited": false,
+        "developed": false
+      },
+      {
+        "id": "south",
+        "owner": "player",
+        "army": 1,
+        "level": 0,
+        "fort": 0,
+        "recruited": true,
+        "developed": false
+      },
+      {
+        "id": "marsh",
+        "owner": "player",
+        "army": 2,
+        "level": 0,
+        "fort": 0,
+        "recruited": false,
+        "developed": false
+      },
+      {
+        "id": "sail",
+        "owner": "player",
+        "army": 1,
+        "level": 0,
+        "fort": 0,
+        "recruited": false,
+        "developed": false
+      },
+      {
+        "id": "port",
+        "owner": "rival",
+        "army": 6,
+        "level": 0,
+        "fort": 0,
+        "recruited": false,
+        "developed": false
+      },
+      {
+        "id": "cliff",
+        "owner": "rival",
+        "army": 5,
+        "level": 0,
+        "fort": 0,
+        "recruited": false,
+        "developed": false
+      },
+      {
+        "id": "pass",
+        "owner": "rival",
+        "army": 6,
+        "level": 0,
+        "fort": 1,
+        "recruited": false,
+        "developed": false
+      }
+    ],
+    "selected": "sail",
+    "source": null,
+    "target": null,
+    "mode": "inspect",
+    "force": "all",
+    "round": 2,
+    "orders": 0,
+    "gold": 46,
+    "phase": "won",
+    "won": true,
+    "score": 1566,
+    "captures": 5,
+    "transfers": 0,
+    "recruits": 1,
+    "developments": 0,
+    "spent": 6,
+    "incomeReceived": 22,
+    "aiActions": 1,
+    "replays": 0,
+    "history": [
+      "青盟握有西侧三省。八回合内控制八省，或攻下赤盟首府东港。",
+      "西垒攻下河枢：出兵 9，消耗 3，余 6。",
+      "麦谷攻下南境：出兵 5，消耗 2，余 3。",
+      "松岭攻下白脊：出兵 5，消耗 2，余 3。",
+      "第 1 回合结束，赤盟行动。",
+      "赤盟在岚关增援两队、筑垒一级，防御 7。",
+      "第 1 回合税收 22 金，现有 52 金。",
+      "河枢攻下翠泽：出兵 5，消耗 3，余 2。",
+      "南境招募三队，花费 6 金。",
+      "南境攻下盐帆：出兵 5，消耗 4，余 1。",
+      "青盟完成半岛协定：控制 8 省。"
+    ],
+    "lastRound": {
+      "round": 1,
+      "income": 22,
+      "ai": "赤盟在岚关增援两队、筑垒一级，防御 7。",
+      "ownedBefore": 6,
+      "ownedAfter": 6
+    },
+    "checkpoint": {
+      "version": 1,
+      "provinces": [
+        {
+          "id": "west",
+          "owner": "player",
+          "army": 1,
+          "level": 0,
+          "fort": 0,
+          "recruited": false,
+          "developed": false
+        },
+        {
+          "id": "grain",
+          "owner": "player",
+          "army": 1,
+          "level": 0,
+          "fort": 0,
+          "recruited": false,
+          "developed": false
+        },
+        {
+          "id": "pine",
+          "owner": "player",
+          "army": 1,
+          "level": 0,
+          "fort": 0,
+          "recruited": false,
+          "developed": false
+        },
+        {
+          "id": "snow",
+          "owner": "player",
+          "army": 3,
+          "level": 0,
+          "fort": 0,
+          "recruited": false,
+          "developed": false
+        },
+        {
+          "id": "falls",
+          "owner": "neutral",
+          "army": 3,
+          "level": 0,
+          "fort": 0,
+          "recruited": false,
+          "developed": false
+        },
+        {
+          "id": "river",
+          "owner": "player",
+          "army": 6,
+          "level": 0,
+          "fort": 0,
+          "recruited": false,
+          "developed": false
+        },
+        {
+          "id": "south",
+          "owner": "player",
+          "army": 3,
+          "level": 0,
+          "fort": 0,
+          "recruited": false,
+          "developed": false
+        },
+        {
+          "id": "marsh",
+          "owner": "neutral",
+          "army": 3,
+          "level": 0,
+          "fort": 0,
+          "recruited": false,
+          "developed": false
+        },
+        {
+          "id": "sail",
+          "owner": "neutral",
+          "army": 4,
+          "level": 0,
+          "fort": 0,
+          "recruited": false,
+          "developed": false
+        },
+        {
+          "id": "port",
+          "owner": "rival",
+          "army": 6,
+          "level": 0,
+          "fort": 0,
+          "recruited": false,
+          "developed": false
+        },
+        {
+          "id": "cliff",
+          "owner": "rival",
+          "army": 5,
+          "level": 0,
+          "fort": 0,
+          "recruited": false,
+          "developed": false
+        },
+        {
+          "id": "pass",
+          "owner": "rival",
+          "army": 6,
+          "level": 0,
+          "fort": 1,
+          "recruited": false,
+          "developed": false
+        }
+      ],
+      "selected": "snow",
+      "source": null,
+      "target": null,
+      "mode": "inspect",
+      "force": "all",
+      "round": 2,
+      "orders": 3,
+      "gold": 52,
+      "phase": "player",
+      "won": false,
+      "score": 0,
+      "captures": 3,
+      "transfers": 0,
+      "recruits": 0,
+      "developments": 0,
+      "spent": 0,
+      "incomeReceived": 22,
+      "aiActions": 1,
+      "replays": 0,
+      "history": [
+        "青盟握有西侧三省。八回合内控制八省，或攻下赤盟首府东港。",
+        "西垒攻下河枢：出兵 9，消耗 3，余 6。",
+        "麦谷攻下南境：出兵 5，消耗 2，余 3。",
+        "松岭攻下白脊：出兵 5，消耗 2，余 3。",
+        "第 1 回合结束，赤盟行动。",
+        "赤盟在岚关增援两队、筑垒一级，防御 7。",
+        "第 1 回合税收 22 金，现有 52 金。"
+      ],
+      "lastRound": {
+        "round": 1,
+        "income": 22,
+        "ai": "赤盟在岚关增援两队、筑垒一级，防御 7。",
+        "ownedBefore": 6,
+        "ownedAfter": 6
+      }
+    },
+    "regions": [
+      {
+        "id": "west",
+        "name": "西垒",
+        "x": 156,
+        "y": 355,
+        "income": 4,
+        "owner": "player",
+        "army": 10,
+        "neighbors": [
+          "pine",
+          "grain",
+          "river",
+          "south"
+        ],
+        "polygon": [
+          [
+            50,
+            300
+          ],
+          [
+            220,
+            280
+          ],
+          [
+            286,
+            332
+          ],
+          [
+            242,
+            417
+          ],
+          [
+            78,
+            414
+          ]
+        ]
+      },
+      {
+        "id": "grain",
+        "name": "麦谷",
+        "x": 343,
+        "y": 356,
+        "income": 4,
+        "owner": "player",
+        "army": 6,
+        "neighbors": [
+          "west",
+          "river",
+          "marsh",
+          "south",
+          "sail"
+        ],
+        "polygon": [
+          [
+            286,
+            332
+          ],
+          [
+            402,
+            302
+          ],
+          [
+            505,
+            331
+          ],
+          [
+            439,
+            406
+          ],
+          [
+            363,
+            425
+          ],
+          [
+            242,
+            417
+          ]
+        ]
+      },
+      {
+        "id": "pine",
+        "name": "松岭",
+        "x": 176,
+        "y": 245,
+        "income": 3,
+        "owner": "player",
+        "army": 6,
+        "neighbors": [
+          "west",
+          "snow",
+          "river"
+        ],
+        "polygon": [
+          [
+            50,
+            160
+          ],
+          [
+            185,
+            178
+          ],
+          [
+            273,
+            222
+          ],
+          [
+            220,
+            280
+          ],
+          [
+            50,
+            300
+          ]
+        ]
+      },
+      {
+        "id": "snow",
+        "name": "白脊",
+        "x": 177,
+        "y": 116,
+        "income": 2,
+        "owner": "neutral",
+        "army": 2,
+        "neighbors": [
+          "pine",
+          "falls"
+        ],
+        "polygon": [
+          [
+            30,
+            74
+          ],
+          [
+            225,
+            66
+          ],
+          [
+            309,
+            151
+          ],
+          [
+            273,
+            222
+          ],
+          [
+            185,
+            178
+          ],
+          [
+            50,
+            160
+          ]
+        ]
+      },
+      {
+        "id": "falls",
+        "name": "云瀑",
+        "x": 393,
+        "y": 154,
+        "income": 3,
+        "owner": "neutral",
+        "army": 3,
+        "neighbors": [
+          "snow",
+          "river",
+          "pass"
+        ],
+        "polygon": [
+          [
+            225,
+            66
+          ],
+          [
+            452,
+            67
+          ],
+          [
+            515,
+            185
+          ],
+          [
+            388,
+            228
+          ],
+          [
+            273,
+            222
+          ],
+          [
+            309,
+            151
+          ]
+        ]
+      },
+      {
+        "id": "river",
+        "name": "河枢",
+        "x": 455,
+        "y": 267,
+        "income": 5,
+        "owner": "neutral",
+        "army": 3,
+        "neighbors": [
+          "west",
+          "grain",
+          "pine",
+          "falls",
+          "marsh",
+          "cliff",
+          "pass"
+        ],
+        "polygon": [
+          [
+            273,
+            222
+          ],
+          [
+            388,
+            228
+          ],
+          [
+            515,
+            185
+          ],
+          [
+            659,
+            207
+          ],
+          [
+            621,
+            294
+          ],
+          [
+            505,
+            331
+          ],
+          [
+            402,
+            302
+          ],
+          [
+            286,
+            332
+          ],
+          [
+            220,
+            280
+          ]
+        ]
+      },
+      {
+        "id": "south",
+        "name": "南境",
+        "x": 249,
+        "y": 483,
+        "income": 4,
+        "owner": "neutral",
+        "army": 2,
+        "neighbors": [
+          "west",
+          "grain",
+          "sail"
+        ],
+        "polygon": [
+          [
+            78,
+            414
+          ],
+          [
+            242,
+            417
+          ],
+          [
+            363,
+            425
+          ],
+          [
+            383,
+            507
+          ],
+          [
+            282,
+            576
+          ],
+          [
+            164,
+            560
+          ],
+          [
+            58,
+            470
+          ]
+        ]
+      },
+      {
+        "id": "marsh",
+        "name": "翠泽",
+        "x": 568,
+        "y": 362,
+        "income": 4,
+        "owner": "neutral",
+        "army": 3,
+        "neighbors": [
+          "grain",
+          "river",
+          "sail",
+          "port",
+          "cliff"
+        ],
+        "polygon": [
+          [
+            505,
+            331
+          ],
+          [
+            621,
+            294
+          ],
+          [
+            700,
+            318
+          ],
+          [
+            699,
+            389
+          ],
+          [
+            584,
+            438
+          ],
+          [
+            439,
+            406
+          ]
+        ]
+      },
+      {
+        "id": "sail",
+        "name": "盐帆",
+        "x": 525,
+        "y": 505,
+        "income": 5,
+        "owner": "neutral",
+        "army": 4,
+        "neighbors": [
+          "grain",
+          "south",
+          "marsh",
+          "port"
+        ],
+        "polygon": [
+          [
+            363,
+            425
+          ],
+          [
+            439,
+            406
+          ],
+          [
+            584,
+            438
+          ],
+          [
+            699,
+            389
+          ],
+          [
+            737,
+            451
+          ],
+          [
+            642,
+            543
+          ],
+          [
+            500,
+            583
+          ],
+          [
+            383,
+            507
+          ]
+        ]
+      },
+      {
+        "id": "port",
+        "name": "东港",
+        "x": 769,
+        "y": 390,
+        "income": 5,
+        "owner": "rival",
+        "army": 6,
+        "capital": true,
+        "neighbors": [
+          "marsh",
+          "sail",
+          "cliff"
+        ],
+        "polygon": [
+          [
+            700,
+            318
+          ],
+          [
+            837,
+            305
+          ],
+          [
+            844,
+            438
+          ],
+          [
+            737,
+            451
+          ],
+          [
+            699,
+            389
+          ]
+        ]
+      },
+      {
+        "id": "cliff",
+        "name": "赤崖",
+        "x": 752,
+        "y": 255,
+        "income": 4,
+        "owner": "rival",
+        "army": 5,
+        "neighbors": [
+          "river",
+          "marsh",
+          "port",
+          "pass"
+        ],
+        "polygon": [
+          [
+            659,
+            207
+          ],
+          [
+            823,
+            184
+          ],
+          [
+            837,
+            305
+          ],
+          [
+            700,
+            318
+          ],
+          [
+            621,
+            294
+          ]
+        ]
+      },
+      {
+        "id": "pass",
+        "name": "岚关",
+        "x": 656,
+        "y": 133,
+        "income": 3,
+        "owner": "rival",
+        "army": 4,
+        "neighbors": [
+          "falls",
+          "river",
+          "cliff"
+        ],
+        "polygon": [
+          [
+            452,
+            67
+          ],
+          [
+            780,
+            80
+          ],
+          [
+            823,
+            184
+          ],
+          [
+            659,
+            207
+          ],
+          [
+            515,
+            185
+          ]
+        ]
+      }
+    ],
+    "rules": {
+      "maxRounds": 8,
+      "ordersPerRound": 3,
+      "recruitCost": 6,
+      "recruitArmy": 3,
+      "developCost": 8,
+      "incomePerLevel": 2,
+      "maxLevel": 2,
+      "maxArmy": 24,
+      "targetProvinces": 8
+    },
+    "income": 31,
+    "owned": 8,
+    "preview": null
+  },
+  "played": [
+    {
+      "kind": "capture",
+      "round": 1,
+      "from": "west",
+      "to": "river",
+      "score": 56,
+      "risk": 0,
+      "sent": 9,
+      "remaining": 6
+    },
+    {
+      "kind": "capture",
+      "round": 1,
+      "from": "grain",
+      "to": "south",
+      "score": 43,
+      "risk": 0,
+      "sent": 5,
+      "remaining": 3
+    },
+    {
+      "kind": "capture",
+      "round": 1,
+      "from": "pine",
+      "to": "snow",
+      "score": 23,
+      "risk": 0,
+      "sent": 5,
+      "remaining": 3
+    },
+    {
+      "kind": "end",
+      "round": 1
+    },
+    {
+      "kind": "capture",
+      "round": 2,
+      "from": "river",
+      "to": "marsh",
+      "score": -358,
+      "risk": 4,
+      "sent": 5,
+      "remaining": 2
+    },
+    {
+      "kind": "recruit",
+      "round": 2,
+      "id": "south",
+      "target": "sail",
+      "score": 105
+    },
+    {
+      "kind": "capture",
+      "round": 2,
+      "from": "south",
+      "to": "sail",
+      "score": 9651,
+      "risk": 4,
+      "sent": 5,
+      "remaining": 1
+    }
+  ],
+  "screenshot": "assets/game-forms/completion-qa/realm-playable.png",
+  "limitations": [
+    "Fixed short scenario with deterministic AI; no diplomacy or long campaign.",
+    "Parent suite owns global 32-form comparison and mobile regression checks."
+  ],
+  "errors": [],
+  "missing": []
+}

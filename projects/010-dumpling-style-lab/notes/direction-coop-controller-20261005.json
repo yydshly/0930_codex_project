@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": [
+    "all production DOM and asset dependencies exist",
+    "real demonstration completes a rescue map without awarding a human record",
+    "single player Tab switches the actually moving character; global keyup releases motion",
+    "dual mode has independent simultaneous keyboard inputs",
+    "independent touch holds move separate characters and release pointer capture",
+    "pause and background blur stop the simulation and release held input",
+    "editing modifies a separate draft; immediate play applies real terrain",
+    "a fast editor drag fills skipped tiles and undo restores the entire stroke",
+    "keyboard editor tools and erase alter the selected tile",
+    "export emits the exact current design as a reusable level file",
+    "import validates and opens a design without silently replacing the running world",
+    "ordinary manual completion records the particular playable layout"
+  ],
+  "method": "Actual production module callbacks through a minimal DOM/no-op Canvas adapter; rendering separately verified with Skia. Not browser CSS, real touch/fullscreen/download dialog or refresh acceptance."
+}

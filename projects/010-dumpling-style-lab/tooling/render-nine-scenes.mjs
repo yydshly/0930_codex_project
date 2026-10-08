@@ -1,0 +1,13 @@
+// Call actual production factories and draw() through Skia, with a DOM double.
+// These outputs do not certify browser CSS, touch, fullscreen or focus.
+import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';
+import {createNine,NINE_INFO} from '../web/showcase-nine.js';
+import {NINE_IDS} from '../web/showcase-nine-rules.js';
+import {playNine} from './nine-playthroughs.mjs';
+import {NodeDouble,installLifecycleDouble,Canvas,SkiaImage} from './nine-dom-double.mjs';
+const P=fileURLToPath(new URL('../',import.meta.url)),out=path.join(P,'assets/game-forms/nine-qa');fs.mkdirSync(out,{recursive:true});installLifecycleDouble(path.join(P,'web'));const chosen=process.argv.slice(2).length?process.argv.slice(2):NINE_IDS,previous=fs.existsSync(path.join(out,'render-review.json'))?JSON.parse(fs.readFileSync(path.join(out,'render-review.json'),'utf8')).results:[],results=previous.filter(v=>!chosen.includes(v.id));
+for(const id of chosen){const frames=playNine(id);for(const [frame,saved]of Object.entries(frames)){
+ const host=new NodeDouble(),input={x:0,y:0,pressed:new Set(),keys:new Set()},game=await createNine({host,input,saved,id});game.draw();const canvas=host.children[0].canvas;await canvas.toFile(path.join(out,id+'-'+frame+'.png'));game.onStart();game.setActive(false);const before=JSON.stringify(game.getState()),pixels=await canvas.toBuffer('png');game.tick(10);game.draw();if(JSON.stringify(game.getState())!==before||!(await canvas.toBuffer('png')).equals(pixels))throw new Error('Paused render changed: '+id);results.push({id,frame,won:game.getState().won,status:game.getStatus()});game.dispose();
+ }console.log('Rendered '+id+' initial / progress / complete');}
+for(const frame of ['initial','progress','complete']){const sheet=new Canvas(1680,1095),ctx=sheet.getContext('2d');ctx.fillStyle='#10262b';ctx.fillRect(0,0,1680,1095);NINE_IDS.forEach((id,i)=>{const x=i%3*560,y=Math.floor(i/3)*365;ctx.font='600 20px "Microsoft YaHei",sans-serif';ctx.fillStyle='#eddcbc';ctx.fillText(NINE_INFO[id].title+' · '+NINE_INFO[id].detail.split(' · ')[0],x+15,y+29);const im=new SkiaImage();im.src=fs.readFileSync(path.join(out,id+'-'+frame+'.png'));ctx.drawImage(im,x+12,y+45,536,301.5)});await sheet.toFile(path.join(out,frame==='progress'?'production-scenes.png':'production-'+frame+'.png'));}
+fs.writeFileSync(path.join(out,'render-review.json'),JSON.stringify({method:'Actual production createNine / draw(), Skia canvas and DOM lifecycle double. Not a browser screenshot.',scenes:results.length,results,pause_state_and_pixels_verified:true,browserVerified:false},null,2));

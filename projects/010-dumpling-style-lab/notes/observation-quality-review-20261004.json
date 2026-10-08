@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-04",
+  "batch": "Scene search and rotating conduit forms",
+  "forms": 47,
+  "entrances": 56,
+  "scope": {
+    "seek": "One authored collectible conservatory, eight objects, zoom/pan, three non-completing hints.",
+    "conduit": "Two authored square pipe networks, elbow/straight tiles, rotate/undo, connectivity preview and incremental flow."
+  },
+  "actual_browser_checks": {
+    "seek": [
+      "Clicked red teapot at overview, blue butterfly at 1.7× after one hint, then all six remaining objects; reached 8/8.",
+      "Pause disabled controls; refresh restored 2/8, two hints and zoom; completed 8/8 was also restored.",
+      "390px viewport: two-column targets, 46px controls, magnified view and actual drag pan inspected.",
+      "Updated fullscreen start/pause overlays align horizontally and vertically to canvas. Resume, overview and hint continue responding. Final independent error log was empty."
+    ],
+    "conduit": [
+      "Initial incomplete network ran and showed a real A1 break; returned to edit mode.",
+      "Selection, rotation, undo and preview exercised; first stage solved in eight rotations, 11 pipe segments; reached its output.",
+      "Second stage selected B1 via mobile control and completed through ordinary clicks in ten rotations, 18 segments; both-stage completion inspected.",
+      "Paused during live second-stage flow; two canvas-region PNG captures are byte/pixel identical; reload retained live flow and continued to completed state.",
+      "390px viewport: no horizontal overflow; final native controls all 46px minimum; fullscreen and ready start layout inspected. Final independent error log was empty."
+    ],
+    "compare": [
+      "Left start followed by right start makes left pause button read 继续 and right read 暂停. Pause overlay remains within scene.",
+      "Final normal-session comparison left 0/8 and right stage 1/2, zero rotations, ready to start. Original golf/train tab kept open and not reset."
+    ]
+  },
+  "resolved_findings": [
+    {
+      "finding": "Ready button initially sat below scene because overlay spanned scene plus controls.",
+      "fix": "New-frame ResizeObserver tracks canvas area; intro and pause layers constrained to its top, left, width and height."
+    },
+    {
+      "finding": "Conduit mobile rotate label wrapped, undo left an empty half-row.",
+      "fix": "Short visible rotate label with descriptive aria-label; full-width mobile undo; native buttons 46px."
+    },
+    {
+      "finding": "A negative initial RAF delta could turn a zero feedback timer positive while its point was absent, causing seekScreen(null) and a frozen frame.",
+      "fix": "New factories normalize finite nonnegative delta; seek draw guards absent feedback; actual negative-tick factory draw regression added and fullscreen native start/pause/resume rechecked."
+    }
+  ],
+  "validation": {
+    "new_rules": 28,
+    "world_regression": 56,
+    "previous_precision_regression": 23,
+    "site_tests": 6,
+    "build_demos": 19,
+    "preserved_web_files": 2271,
+    "changed_protected_files": 0,
+    "missing_protected_files": 0
+  },
+  "error_scope": {
+    "independent_final_logs": {
+      "seek": [],
+      "conduit": []
+    },
+    "comparison_existing_log": "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+    "note": "Same comparison log was present before this batch; source remains unidentified. No error-hiding handler was added. Does not justify a global zero-error claim."
+  },
+  "limits": [
+    "Single room and two short boards; no claim of extensive content or genre exhaustiveness.",
+    "Responsive checks use browser viewport simulation, not real mobile hardware/performance.",
+    "No audible sound quality review or user playtest performed.",
+    "Other existing modules retain their earlier quality records; preservation is not a fresh visual review of all 47 forms."
+  ],
+  "evidence_dir": "assets/game-forms/observation-qa/",
+  "prompts_and_originals": "assets/game-forms/observation-generation-20261004.json",
+  "packaging": "notes/observation-package-check-20261004.json"
+}

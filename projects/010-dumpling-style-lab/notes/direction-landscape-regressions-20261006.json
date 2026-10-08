@@ -1,0 +1,537 @@
+{
+  "date": "2026-10-06",
+  "passed": true,
+  "directions": 13,
+  "script_count": 26,
+  "total_checks": 650,
+  "historical_reports_unchanged": true,
+  "historical_reports": [
+    {
+      "name": "direction-controller-checks-20261005.json",
+      "sha256": "2a83a0aa48fcb648e29500aeff615ab90f73db514957b182484e038d08df347b"
+    },
+    {
+      "name": "direction-coop-controller-20261005.json",
+      "sha256": "3b8c24b8df239d6375f69b85c9dfc5ca4d846affe97dd18df999fb054a493fcf"
+    },
+    {
+      "name": "direction-coop-frames-20261005.json",
+      "sha256": "af8e0e23ed70e3baa0db6df5d43f9c3747f18ddb7790f192e08b1bb6abf495e6"
+    },
+    {
+      "name": "direction-coop-package-20261005.json",
+      "sha256": "4f8d3b018d43bebd6da68b58a27b0eab99268d7538e99e62e1b70e3fc8adc03f"
+    },
+    {
+      "name": "direction-coop-quality-20261005.json",
+      "sha256": "30db2b5c3472a97552683cdd0888d6d577041e64580a6574fd88439699a614fa"
+    },
+    {
+      "name": "direction-coop-rules-20261005.json",
+      "sha256": "f57a3f8b870fb4f328cae3a72f59b8e831586bffd823c97166290f744f06c08e"
+    },
+    {
+      "name": "direction-deck-browser-20261005.json",
+      "sha256": "a1989b0038fdf9e50f108b16fe00749943274a09aa7d9fe3e82834f9edc3a63d"
+    },
+    {
+      "name": "direction-deck-controller-20261005.json",
+      "sha256": "7f7b07fb50abf876c9261079b7688974cd86e50327c024f7a7b85ee468f7fa8a"
+    },
+    {
+      "name": "direction-deck-package-20261005.json",
+      "sha256": "52dfa765666ea1c1f5c90ddd8fb990ed50b8683594d441ea40d40c7c20f91fec"
+    },
+    {
+      "name": "direction-deck-quality-20261005.json",
+      "sha256": "80f5fbc441469f3b76b29a1d209779d68f82ef5d1c88e8cff41d7f44a8236e21"
+    },
+    {
+      "name": "direction-deck-regressions-20261005.json",
+      "sha256": "f95a6fbf022fdeb0abfe290869d54ab73b82ac1a248ed4cde9fed8ff4a5c17a1"
+    },
+    {
+      "name": "direction-deck-rules-20261005.json",
+      "sha256": "8681f37a75198156c0e41850f2ac5f077a266417f6dadeb7934251edc8a66ae3"
+    },
+    {
+      "name": "direction-dungeon-browser-20261005.json",
+      "sha256": "00e24ff224244627b16eb66497b64395a8c0bbfe7be41c1d003b5cc3359d1e90"
+    },
+    {
+      "name": "direction-dungeon-controller-20261005.json",
+      "sha256": "b57a99fe27b01395e96a9ddf35ad0f70aeeb5259763d8ab2431ed6f1cedd6258"
+    },
+    {
+      "name": "direction-dungeon-frames-20261005.json",
+      "sha256": "4913ba4d688cd9accba9b5bae995ff057ece1d3d9b4a54ae4261d9fab9ce27f8"
+    },
+    {
+      "name": "direction-dungeon-package-20261005.json",
+      "sha256": "8e091bfff51cc74fd94e693644af72ba8c4e1a59b945c65fc578789663aadc8f"
+    },
+    {
+      "name": "direction-dungeon-quality-20261005.json",
+      "sha256": "a458efee6a265663699185ccadf6278886856186b34affe6a6d911bbbd12a80a"
+    },
+    {
+      "name": "direction-dungeon-rules-20261005.json",
+      "sha256": "ebed32ba939c542e4d1c73c64243bea4333521b980dffcbf853cbfd881d3de37"
+    },
+    {
+      "name": "direction-factory-frames-20261005.json",
+      "sha256": "514668c6e2401774e11f5b5f4e65a44f7e06baf8ccf58bd797a58aecfb16420b"
+    },
+    {
+      "name": "direction-factory-rules-20261005.json",
+      "sha256": "121c26a4c2ccd0b74a0268f0ff7914381860ba04c6d57fb88059abc130bf2f0d"
+    },
+    {
+      "name": "direction-freight-controller-20261005.json",
+      "sha256": "045b2f9126a672d8d2544a4048d0be99abfc89f27407692fe25d8b99b8c8301d"
+    },
+    {
+      "name": "direction-freight-frames-20261005.json",
+      "sha256": "3bbebe950b947681494bf82de1696e8cf233239c4c7979f83d6f1f8efd68b5f8"
+    },
+    {
+      "name": "direction-freight-package-20261005.json",
+      "sha256": "209be4fe18991ff82ce3ef439a28cc35e4483643db8a362f5852cb164856fda0"
+    },
+    {
+      "name": "direction-freight-quality-20261005.json",
+      "sha256": "b7f6484452ada622c769591bbbdd7b523fb2a7ddf58a127baf1b8c318f160f73"
+    },
+    {
+      "name": "direction-freight-rules-20261005.json",
+      "sha256": "a49f49462e48286f7873da3ccf1420924dfd4b6188d2624e3ca110b63f0d3f67"
+    },
+    {
+      "name": "direction-investigation-browser-20261005.json",
+      "sha256": "74df8d43d14344d86499f173a06f3fe122f24eadcabfb0ad93eb637e00470eac"
+    },
+    {
+      "name": "direction-investigation-controller-20261005.json",
+      "sha256": "e8b8429bb20314ec8074d84d3b70bc64e29273332e84b8b00f6f6dc541d1843e"
+    },
+    {
+      "name": "direction-investigation-package-20261005.json",
+      "sha256": "65938b68073f05b1ec8dfe9c541108b94529da720910fe3cc46426c51431e119"
+    },
+    {
+      "name": "direction-investigation-quality-20261005.json",
+      "sha256": "a9b649475cab102b88e686608c56d9b4a453a3681cffd295a960ff07b16bdf25"
+    },
+    {
+      "name": "direction-investigation-regressions-20261005.json",
+      "sha256": "8260dd94eb4414196cfe59fe430b6c8e00983d93a4c7fff64b2d73f34743af6a"
+    },
+    {
+      "name": "direction-investigation-rules-20261005.json",
+      "sha256": "1e643a7bd8440d58c67fad1125f912f88e443d3b45e0b07f800e4e615cd6c205"
+    },
+    {
+      "name": "direction-language-browser-20261006.json",
+      "sha256": "bcf6d0e755a112298416443899a043f01625dc11b16becabcf242208c0b80906"
+    },
+    {
+      "name": "direction-language-controller-20261006.json",
+      "sha256": "2e1d79901583fcbd10e50ef30a30aa6c518ac42d1145c8140dba314a80da7fc8"
+    },
+    {
+      "name": "direction-language-package-20261006.json",
+      "sha256": "cb819a8bb400aacbad6c99af0d509422664f00650658286490afb77bcaa501b8"
+    },
+    {
+      "name": "direction-language-quality-20261006.json",
+      "sha256": "be5bf5dce3c478c6d2fccd53996263c24307a3779bfc995bce14407c5da8f1c8"
+    },
+    {
+      "name": "direction-language-regressions-20261006.json",
+      "sha256": "9371be583b323a8ad372abe3930b748ffbfc94adcc23f05de5cbb1b0c0895eea"
+    },
+    {
+      "name": "direction-language-rules-20261006.json",
+      "sha256": "5da0fae4d94946349f14ee65a21cab26481c1b90a7734baaa49466567c56ede9"
+    },
+    {
+      "name": "direction-package-check-20261005.json",
+      "sha256": "14a4c29dbbcfb970d845a82157ced4a36a7f92fe684218dcf229353f5dbb942a"
+    },
+    {
+      "name": "direction-park-controller-20261005.json",
+      "sha256": "d8b715765354dbf16662ae9c53c460593a10c27bfba0c236447ddfebdaed9ba8"
+    },
+    {
+      "name": "direction-park-frames-20261005.json",
+      "sha256": "0049b34f5107c5345aff746d9c160bde51f5437bb9b48f6cf93c894741b47d7e"
+    },
+    {
+      "name": "direction-park-package-20261005.json",
+      "sha256": "b50c642cc16c0081e029588ab6a2bffa086989297641f64ded2f6b1f0c853ea6"
+    },
+    {
+      "name": "direction-park-quality-20261005.json",
+      "sha256": "1ac76ea0737333c04693ff43fa153f062389618d4abafa27c55dd8e9472fcbe2"
+    },
+    {
+      "name": "direction-park-rules-20261005.json",
+      "sha256": "ff9a647a71eb97b6bd1cc5b0434bf789de834ec96f783f57e9a1bffae17baf50"
+    },
+    {
+      "name": "direction-shift-controller-20261005.json",
+      "sha256": "2316dcf4c693f0fcf1cbe756092d10f156b6943ccd5c9c09e41a03ba40c454a2"
+    },
+    {
+      "name": "direction-shift-frames-20261005.json",
+      "sha256": "3cffe940018a04c877dc0d30ddce6a285ad1cc38f0cc01284a577e8f3ea4f36d"
+    },
+    {
+      "name": "direction-shift-package-20261005.json",
+      "sha256": "5363e49a47f092be30f1f5e6320a66341032d553213740d6ef8f4b8dd2fbce77"
+    },
+    {
+      "name": "direction-shift-quality-20261005.json",
+      "sha256": "21b4e96585c6a6b11cfdf672a1b56aff430f4f1a49d093a66a360c5ec0fc5b25"
+    },
+    {
+      "name": "direction-shift-rules-20261005.json",
+      "sha256": "d2df4a898ac62c9d680f0ddb2c66c65fed0bf433228fee494a796b9e14c9813f"
+    },
+    {
+      "name": "direction-space-browser-20261005.json",
+      "sha256": "ebd2c4b1955852b33896053a15972ce48d8bf692ce64a56ba95d360728cd4242"
+    },
+    {
+      "name": "direction-space-controller-20261005.json",
+      "sha256": "723a21ea2ccaf79e3cf8869a5d3b49218d137f1205c7e96ee50866952054eb6e"
+    },
+    {
+      "name": "direction-space-package-20261005.json",
+      "sha256": "bfa9efc9648e244dcc2191ebfd41e29858c2f2228c8e29fedfd9f66b0f27d448"
+    },
+    {
+      "name": "direction-space-quality-20261005.json",
+      "sha256": "e5d5ce70220f6e20bbaa02793a86e631dbf7cb1f91f7f77c96d970682da9f88b"
+    },
+    {
+      "name": "direction-space-regressions-20261005.json",
+      "sha256": "c1177266e1a107bb197c08ad31208c87856bbbea80a29f169042d6067cc4f7a5"
+    },
+    {
+      "name": "direction-space-rules-20261005.json",
+      "sha256": "335224dd660884ebc5e5fb3c65c556fe9d8f130c9aafd3436d321874398f2943"
+    },
+    {
+      "name": "direction-stealth-browser-20261005.json",
+      "sha256": "59c05761a01663a0841b1e053fb10d8424e604a6c32175741dc26ae6468f1732"
+    },
+    {
+      "name": "direction-stealth-controller-20261005.json",
+      "sha256": "e1c02ee05ed514a6e579f51e7e18cff710358b55fcf7b146651f4ab392893008"
+    },
+    {
+      "name": "direction-stealth-frames-20261005.json",
+      "sha256": "6acccac037c20dbe400375f71f25c69ee510e7824ec7b5f4cdcb99062cab7008"
+    },
+    {
+      "name": "direction-stealth-package-20261005.json",
+      "sha256": "45a60856aaeb72fcd5718a7ca00f6c5231a5cb5174bfc66e8ed7f6f0384e5556"
+    },
+    {
+      "name": "direction-stealth-quality-20261005.json",
+      "sha256": "8fb55dda5e9cba7c618a603073eb74174ba99510d0a16c6c9412a4c046c9f912"
+    },
+    {
+      "name": "direction-stealth-rules-20261005.json",
+      "sha256": "33d75ee03b286f7fed536697870611208ce0df3620256386c04b2649d21d017d"
+    },
+    {
+      "name": "direction-survival-browser-20261005.json",
+      "sha256": "dfc9f6db66387d0444b90fc0ec7f8358a9f775019fff5839c90362d9f6622289"
+    },
+    {
+      "name": "direction-survival-controller-20261005.json",
+      "sha256": "cfea785b09f03aeafa3d90a070da31b9e71563d4de2c62b89066d7e7d3d4a3ad"
+    },
+    {
+      "name": "direction-survival-package-20261005.json",
+      "sha256": "82c112cb5015d6783a35f23b41ed9c88183b0638d887dc72b21e46cb6a09863c"
+    },
+    {
+      "name": "direction-survival-quality-20261005.json",
+      "sha256": "ee2a6b8fd26bbdc458885250d1c78004fec3cf27d7a57765b86a7fb0c117422b"
+    },
+    {
+      "name": "direction-survival-regressions-20261005.json",
+      "sha256": "a25285b3165805846c3946278c39c86691b4c1eca1a5920168527f74476adba2"
+    },
+    {
+      "name": "direction-survival-rules-20261005.json",
+      "sha256": "58ac4008fc011226782447828e24e253d1faa2861fbb96a2a6f274180cba1bfd"
+    },
+    {
+      "name": "direction-survival-site-20261005.json",
+      "sha256": "2707eeffb578bf83cbfe90555aabe06e1289c48dc0acda44bd92d3eb54dcbe66"
+    },
+    {
+      "name": "direction-vehicle-browser-20261005.json",
+      "sha256": "f352b6df2376fa29941f899038bf68621de1dd918ac5a20ae5e1335a9fe3f5ce"
+    },
+    {
+      "name": "direction-vehicle-controller-20261005.json",
+      "sha256": "3fed8fc1ef01d62cb3e26422d881761ca4f49099cdce6bd850ac5fd0f2b5bcd6"
+    },
+    {
+      "name": "direction-vehicle-package-20261005.json",
+      "sha256": "e70c99bc51c8dd77ef04a6961034a6257dc1536adc082816cc0f57220498eea9"
+    },
+    {
+      "name": "direction-vehicle-quality-20261005.json",
+      "sha256": "dd71b8d9c2bc02abb2482672ee0b9b74d19485482af010eb7e10d260fbeb59d0"
+    },
+    {
+      "name": "direction-vehicle-regressions-20261005.json",
+      "sha256": "85aa0c8b72f138f3cd6271b8c3a20fc1b62046e92306bf4bd7eab4119f4726a0"
+    },
+    {
+      "name": "direction-vehicle-rules-20261005.json",
+      "sha256": "5bd231ce26d18346e2550dae7a492e20eb12615719a68bd476f6ed7a8c28ed55"
+    },
+    {
+      "name": "direction-wildlife-browser-20261005.json",
+      "sha256": "491ebf3f1b4e57254189993ef4edc9f0a368b368dc9429708235c9e4cc1bfa5b"
+    },
+    {
+      "name": "direction-wildlife-controller-20261005.json",
+      "sha256": "9b2d40342f534ee6ca4400440e5916c3be57bf332c6407774e9c524943d8ea7e"
+    },
+    {
+      "name": "direction-wildlife-package-20261005.json",
+      "sha256": "ba1c5417bd77b4dd61ff702e8c400ecf4dbbd86c46f5d6e72353f323aa7f60bf"
+    },
+    {
+      "name": "direction-wildlife-quality-20261005.json",
+      "sha256": "0cc9e8febab72f15b9f1dc91cc054b8cdb8d2482b0d4c07e3161dd7a34cab4a7"
+    },
+    {
+      "name": "direction-wildlife-regressions-20261005.json",
+      "sha256": "d9a3a073cc76a72267cd0a7f0ec1b76b63d465070748745d111462a924bdb2f9"
+    },
+    {
+      "name": "direction-wildlife-rules-20261005.json",
+      "sha256": "0911760a996b242a719cd38f2a7e1ee16ce006f7cd22f3f0c252b96274692daa"
+    }
+  ],
+  "method": "Actual independent Node reruns with only existing report writes suppressed; old report SHA256 compared before and after. No historical pass substitutes for current execution.",
+  "runs": [
+    {
+      "script": "check-direction-factory.mjs",
+      "exit_code": 0,
+      "stdout": "13 factory direction checks passed\n",
+      "stderr": "",
+      "count": 13,
+      "passed": true
+    },
+    {
+      "script": "check-direction-park.mjs",
+      "exit_code": 0,
+      "stdout": "14 park direction checks passed\n",
+      "stderr": "",
+      "count": 14,
+      "passed": true
+    },
+    {
+      "script": "check-direction-coop.mjs",
+      "exit_code": 0,
+      "stdout": "16 cooperation rule checks passed, including ordinary completion of all three maps\n",
+      "stderr": "",
+      "count": 16,
+      "passed": true
+    },
+    {
+      "script": "check-direction-shift.mjs",
+      "exit_code": 0,
+      "stdout": "17 shift rules checks passed\n",
+      "stderr": "",
+      "count": 17,
+      "passed": true
+    },
+    {
+      "script": "check-direction-freight.mjs",
+      "exit_code": 0,
+      "stdout": "18 freight rules checks passed\n",
+      "stderr": "",
+      "count": 18,
+      "passed": true
+    },
+    {
+      "script": "check-direction-dungeon.mjs",
+      "exit_code": 0,
+      "stdout": "24 dungeon rules checks passed; 0 failed\n",
+      "stderr": "",
+      "count": 24,
+      "passed": true
+    },
+    {
+      "script": "check-direction-stealth.mjs",
+      "exit_code": 0,
+      "stdout": "22 stealth rules checks passed\n",
+      "stderr": "",
+      "count": 22,
+      "passed": true
+    },
+    {
+      "script": "check-direction-space-rules.mjs",
+      "exit_code": 0,
+      "stdout": "27 space rules checks passed\n",
+      "stderr": "",
+      "count": 27,
+      "passed": true
+    },
+    {
+      "script": "check-direction-survival-rules.mjs",
+      "exit_code": 0,
+      "stdout": "44 survival rules checks passed\n",
+      "stderr": "",
+      "count": 44,
+      "passed": true
+    },
+    {
+      "script": "check-direction-controller.mjs",
+      "exit_code": 0,
+      "stdout": "9 controller checks passed; only the new dedicated storage key was touched\n",
+      "stderr": "",
+      "count": 9,
+      "passed": true
+    },
+    {
+      "script": "check-direction-park-controller.mjs",
+      "exit_code": 0,
+      "stdout": "10 park controller checks passed; only the dedicated park save key was touched\n",
+      "stderr": "",
+      "count": 10,
+      "passed": true
+    },
+    {
+      "script": "check-direction-coop-controller.mjs",
+      "exit_code": 0,
+      "stdout": "12 production cooperation callback checks passed; only the independent new save key was touched\n",
+      "stderr": "",
+      "count": 12,
+      "passed": true
+    },
+    {
+      "script": "check-direction-shift-controller.mjs",
+      "exit_code": 0,
+      "stdout": "13 shift controller checks passed; only the dedicated shift save key was touched\n",
+      "stderr": "",
+      "count": 13,
+      "passed": true
+    },
+    {
+      "script": "check-direction-freight-controller.mjs",
+      "exit_code": 0,
+      "stdout": "15 freight controller checks passed; only the new freight save key was touched\n",
+      "stderr": "",
+      "count": 15,
+      "passed": true
+    },
+    {
+      "script": "check-direction-dungeon-controller.mjs",
+      "exit_code": 0,
+      "stdout": "23 dungeon controller checks passed; only the new dungeon save key was written\n",
+      "stderr": "",
+      "count": 23,
+      "passed": true
+    },
+    {
+      "script": "check-direction-stealth-controller.mjs",
+      "exit_code": 0,
+      "stdout": "24 stealth controller checks passed; only the dedicated stealth save key was read or written\n",
+      "stderr": "",
+      "count": 24,
+      "passed": true
+    },
+    {
+      "script": "check-direction-space-controller.mjs",
+      "exit_code": 0,
+      "stdout": "25 space controller checks passed; only the dedicated space save key was read or written\n",
+      "stderr": "",
+      "count": 25,
+      "passed": true
+    },
+    {
+      "script": "check-direction-survival-controller.mjs",
+      "exit_code": 0,
+      "stdout": "30 survival controller checks passed; only the dedicated survival save key was read or written\n",
+      "stderr": "",
+      "count": 30,
+      "passed": true
+    },
+    {
+      "script": "check-direction-vehicle-rules.mjs",
+      "exit_code": 0,
+      "stdout": "49 vehicle rules checks passed; 0 failed\n",
+      "stderr": "",
+      "count": 49,
+      "passed": true
+    },
+    {
+      "script": "check-direction-vehicle-controller.mjs",
+      "exit_code": 0,
+      "stdout": "35 vehicle controller checks passed; only the dedicated vehicle save key was read or written\n",
+      "stderr": "",
+      "count": 35,
+      "passed": true
+    },
+    {
+      "script": "check-direction-deck-rules.mjs",
+      "exit_code": 0,
+      "stdout": "51 deck rules checks passed; 0 failed\n",
+      "stderr": "",
+      "count": 51,
+      "passed": true
+    },
+    {
+      "script": "check-direction-deck-controller.mjs",
+      "exit_code": 0,
+      "stdout": "28 deck controller checks passed; only the dedicated deck save key was read or written\n",
+      "stderr": "",
+      "count": 28,
+      "passed": true
+    },
+    {
+      "script": "check-direction-wildlife-rules.mjs",
+      "exit_code": 0,
+      "stdout": "35 wildlife rule checks passed; 0 failed.\n",
+      "stderr": "",
+      "count": 35,
+      "passed": true
+    },
+    {
+      "script": "check-direction-wildlife-controller.mjs",
+      "exit_code": 0,
+      "stdout": "33 wildlife controller checks passed; only world-play-direction-wildlife-v1 read or written\n",
+      "stderr": "",
+      "count": 33,
+      "passed": true
+    },
+    {
+      "script": "check-direction-investigation-rules.mjs",
+      "exit_code": 0,
+      "stdout": "33 investigation rule checks passed; 0 failed.\n",
+      "stderr": "",
+      "count": 33,
+      "passed": true
+    },
+    {
+      "script": "check-direction-investigation-controller.mjs",
+      "exit_code": 0,
+      "stdout": "30 investigation controller checks passed; only world-play-direction-investigation-v1 read or written\n",
+      "stderr": "",
+      "count": 30,
+      "passed": true
+    }
+  ]
+}

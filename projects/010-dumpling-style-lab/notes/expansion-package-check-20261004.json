@@ -1,0 +1,567 @@
+{
+  "generated_at": "2026-10-03T17:39:58.677455+00:00",
+  "phase": "final",
+  "browser_access": false,
+  "normal_save_access": false,
+  "preservation": {
+    "passed": true,
+    "recorded_count": 2233,
+    "declared_count": 2233,
+    "changed": [],
+    "missing": [],
+    "intentional_shared": [
+      "forms.css",
+      "forms.html",
+      "forms.js",
+      "game-forms-catalog.js",
+      "showcase-audio.js",
+      "showcase-catalog.js",
+      "showcase-inspection.js",
+      "showcase-presentation.css",
+      "showcase.html",
+      "showcase.js"
+    ]
+  },
+  "catalogs": {
+    "passed": true,
+    "errors": [],
+    "forms": 43,
+    "directions": 52,
+    "new_directions": 43,
+    "legacy_directions": 9,
+    "additions": {
+      "roll": {
+        "form": {
+          "id": "rolling-ball",
+          "play": "roll",
+          "name": "惯性滚球闯关",
+          "view": "三维跟随 / 连续高差",
+          "action": "滚动 · 转向 · 制动 · 过弯",
+          "rhythm": "读路线 → 控惯性 → 经过检查点",
+          "reference": "连续滚球闯关",
+          "description": "玩家持续控制滚动中的球，空间高差、惯性和制动参与每一次转向。",
+          "compare": "对比高尔夫的逐杆发球：这里始终操控球，镜头沿回廊跟随。",
+          "next": "可继续扩展倾斜球台、垂直机关、分岔路线与竞速。"
+        },
+        "direction": {
+          "id": "roll",
+          "title": "云廊滚球",
+          "subtitle": "连续惯性三维滚球",
+          "family": "空间",
+          "view": "三维跟随 / 高差回廊",
+          "reference": "连续滚球 / 空间与惯性",
+          "source": "forms.html?left=rolling-ball&right=mini-golf#compare",
+          "cover": "assets/game-forms/roll/preview.webp",
+          "description": "控制琉璃球穿过象牙石回廊，转向与制动改变真实滚动，在高差、弯道和水庭之间找到平衡。",
+          "scope": "连续三维球道、刚体惯性与高差碰撞、检查点、坠落恢复与终点。",
+          "controls": "方向键 / WASD 或触屏方向控制 · 空格制动 · 检查点恢复"
+        }
+      },
+      "chain": {
+        "form": {
+          "id": "marble-chain",
+          "play": "chain",
+          "name": "轨道珠链",
+          "view": "固定场景 / 曲线珠链",
+          "action": "瞄准 · 发射 · 换珠 · 连消",
+          "rhythm": "读颜色 → 插入珠链 → 回拢连消",
+          "reference": "轨道珠链射击",
+          "description": "彩珠沿弧形轨道持续推进，发射角度与同色组合改变整条珠链。",
+          "compare": "对比格子三消：操作从相邻交换变成瞄准发射，珠链在轨道中前进与回拢。",
+          "next": "可继续扩展多轨道、反向运行、移动发射器与支路。"
+        },
+        "direction": {
+          "id": "chain",
+          "title": "琉光回廊",
+          "subtitle": "弧形轨道珠链射击",
+          "family": "策略",
+          "view": "固定庭院 / 移动珠链",
+          "reference": "轨道珠链 / 瞄准与连消",
+          "source": "forms.html?left=marble-chain&right=match-three#compare",
+          "cover": "assets/game-forms/chain/preview.webp",
+          "description": "在观测庭院向不断推进的琉璃珠链发射彩珠。瞄准、插入和同色回拢构成节奏，让连锁在真实轨道上发生。",
+          "scope": "曲线推进、实体发射与插入、三颗同色消除、间隙回拢与连消、换珠、短局胜败与保存。",
+          "controls": "指向轨道点击发射 · 左右键瞄准 / 空格发射 · C 或按钮换珠"
+        }
+      },
+      "watch": {
+        "form": {
+          "id": "surveillance",
+          "play": "watch",
+          "name": "监控室悬疑",
+          "view": "固定多机位 / 操作台",
+          "action": "观察 · 切机位 · 控灯 · 开关闸门",
+          "rhythm": "发现动向 → 远程干预 → 等待结果",
+          "reference": "固定机位值守",
+          "description": "角色留在值守台，多个固定镜头提供信息，灯光、闸门与有限电力决定人物去向。",
+          "compare": "对比潜行中亲自控制角色：这里通过监控观察人物，操作远处的设备。",
+          "next": "可继续扩展声音定位、录像回看、盲区与多角色救援。"
+        },
+        "direction": {
+          "id": "watch",
+          "title": "夜潮值守",
+          "subtitle": "多机位监控室悬疑",
+          "family": "故事",
+          "view": "固定多机位 / 值守台",
+          "reference": "固定监控 / 观察与远程干预",
+          "source": "forms.html?left=surveillance&right=stealth#compare",
+          "cover": "assets/game-forms/watch/preview.webp",
+          "description": "在雨夜海岸站切换固定机位，观察人物的真实动向，用有限电力操作灯光和闸门，带领值班员安全离场。",
+          "scope": "四个统一场景机位、人物路线与危险推进、灯光引导、闸门干预、电力与时间、完成或失败。",
+          "controls": "机位按钮 / 数字键切换 · 灯光与闸门按钮控制 · 观察路线和电量"
+        }
+      }
+    }
+  },
+  "factory_resources": {
+    "passed": true,
+    "errors": [],
+    "pending": [],
+    "imports": [
+      {
+        "module": "showcase-roll.js",
+        "import": "./showcase-3d-kit.js",
+        "exists": true
+      },
+      {
+        "module": "showcase-roll.js",
+        "import": "./vendor/physics/cannon-es-0.20.0.js",
+        "exists": true
+      },
+      {
+        "module": "showcase-roll.js",
+        "import": "./showcase-core.js",
+        "exists": true
+      },
+      {
+        "module": "showcase-chain.js",
+        "import": "./showcase-core.js",
+        "exists": true
+      },
+      {
+        "module": "showcase-watch.js",
+        "import": "./showcase-core.js",
+        "exists": true
+      }
+    ],
+    "runtime_resources": {
+      "roll": [
+        {
+          "path": "assets/game-forms/roll/ATTRIBUTION.md",
+          "bytes": 1299,
+          "sha256": "907f340de171493ca07e69d0e139166ea0bd592b87b5d98aef4cd81a7443e79e"
+        },
+        {
+          "path": "assets/game-forms/roll/limestone.webp",
+          "bytes": 272982,
+          "sha256": "700860e7328338c64baf2d94340a1e84e267bc80c91139da69bcbc3e999554e7"
+        },
+        {
+          "path": "assets/game-forms/roll/preview.webp",
+          "bytes": 53026,
+          "sha256": "b62e7fad15b0054f4ce9b25fbdf0b87a25d4025f6614c4d73bd603854bd0f353"
+        }
+      ],
+      "chain": [
+        {
+          "path": "assets/game-forms/chain/amber.webp",
+          "bytes": 105518,
+          "sha256": "56d0749a94616382147c71786ee473f88773ad6321bc2d28b1ef6b33e5ec1fa5"
+        },
+        {
+          "path": "assets/game-forms/chain/ATTRIBUTION.md",
+          "bytes": 538,
+          "sha256": "8c0276fb8862335fd73ac296bc7010e16cb26acf298d14243712f707550574d3"
+        },
+        {
+          "path": "assets/game-forms/chain/cyan.webp",
+          "bytes": 107936,
+          "sha256": "6bde70b42f958a1bc1d2e1bad6ca08fda23076c1ce4156f21326f7d304a519e0"
+        },
+        {
+          "path": "assets/game-forms/chain/jade.webp",
+          "bytes": 109848,
+          "sha256": "ebf0c8ecb00f7e1a66589d5a477453fa1ab3ed9f0fa59c4bdb72ef3bea50a429"
+        },
+        {
+          "path": "assets/game-forms/chain/launcher.webp",
+          "bytes": 290572,
+          "sha256": "914affc001f16ce55b816efd1f6dc2482a5f20727de11ec8817aa60989d8917f"
+        },
+        {
+          "path": "assets/game-forms/chain/observatory.webp",
+          "bytes": 476310,
+          "sha256": "db0b02c8df4257e4715b04576996bc53126b345afe161332c17619168cbe2d29"
+        },
+        {
+          "path": "assets/game-forms/chain/preview.webp",
+          "bytes": 121898,
+          "sha256": "028d145326ce93454dde9ac7298fcc56a303d445e4cfe4e9915b5042a24c0425"
+        },
+        {
+          "path": "assets/game-forms/chain/ruby.webp",
+          "bytes": 103814,
+          "sha256": "b72174da5ebbeea03852aabb3eae76a2ab62b2a36bf76ca3a7bda44d6c5db832"
+        },
+        {
+          "path": "assets/game-forms/chain/violet.webp",
+          "bytes": 113532,
+          "sha256": "039c6ab0ec15657c8bf4a64fb9cb7dfae50bbaa46981008206a7db8d5fc92433"
+        }
+      ],
+      "watch": [
+        {
+          "path": "assets/game-forms/watch/ATTRIBUTION.md",
+          "bytes": 810,
+          "sha256": "7fa5763963f7289271759666fa509ea483f26770149b253f1ccaedbc3aba367d"
+        },
+        {
+          "path": "assets/game-forms/watch/beacon.webp",
+          "bytes": 501798,
+          "sha256": "626e220eeddb7c407d41d48f6b66409965daaf868994de1be943541aca06a3f1"
+        },
+        {
+          "path": "assets/game-forms/watch/hall.webp",
+          "bytes": 409774,
+          "sha256": "6a6634a4717f8cc276566b71a617323df61b6313d6ada21508de78f78c0bed00"
+        },
+        {
+          "path": "assets/game-forms/watch/preview.webp",
+          "bytes": 102146,
+          "sha256": "4ed854d5e2bf4bb99d6157360d216392de5ea0c5151c6c85fc3607ac83c37bc7"
+        },
+        {
+          "path": "assets/game-forms/watch/quay.webp",
+          "bytes": 408492,
+          "sha256": "883ee4b6e6370805fc6cd889c1e664e9a59e63b3d2580bff2b43edff6bf419b5"
+        },
+        {
+          "path": "assets/game-forms/watch/store.webp",
+          "bytes": 332980,
+          "sha256": "6a157525d94bad50bba8f1a9b3f1e200184a34651b1ff32aa381c17f3b646abd"
+        },
+        {
+          "path": "assets/game-forms/watch/visitor.webp",
+          "bytes": 92028,
+          "sha256": "715eca6e5265a205f7e5c622c9fb25d44b6e701236fc8f0deb7b1643a45b6b4e"
+        },
+        {
+          "path": "assets/game-forms/watch/worker.webp",
+          "bytes": 140400,
+          "sha256": "768370068ea08c5becf6b4d249ad2007bd5fc8b97bef52ad297bb32405b3f881"
+        }
+      ]
+    },
+    "resource_count": 20,
+    "module_count": 3
+  },
+  "provenance": {
+    "passed": true,
+    "errors": [],
+    "original_sources_verified": [
+      {
+        "path": "assets/game-forms/roll/limestone-generated.png",
+        "sha256": "b6d5a51d99fa33248b69636f11fe94350310adda5a1182c83a167fbf448e4348",
+        "matched_recorded_original": true
+      },
+      {
+        "path": "assets/game-forms/chain-sources/observatory.png",
+        "sha256": "23d4e9e8d89d5206002dba8e997c62a5f14450c30e6d97b89f94631a1890183b",
+        "matched_imagegen_original": true
+      },
+      {
+        "path": "assets/game-forms/chain-sources/sprites.png",
+        "sha256": "f8a9983fb6020431218feb9ed0e5756966d282c623a4acae492c4e3f0190bdfb",
+        "matched_imagegen_original": true
+      },
+      {
+        "path": "assets/game-forms/chain-sources/sprites-clean.png",
+        "sha256": "b751fa441e7f7b3e26506425787b7687521883a927a31be9a642a5b6b4b7db51",
+        "matched_imagegen_original": true
+      },
+      {
+        "path": "assets/game-forms/watch-sources/quay.png",
+        "sha256": "202e8a27de2544c7de81c560b089bef1a250e5b765c50fc1f64859ac1aaff204",
+        "matched_imagegen_original": true
+      },
+      {
+        "path": "assets/game-forms/watch-sources/hall.png",
+        "sha256": "ade2ca145ec730b627a613a6de4dd2f87afcfbe3056beff650534329cd07de11",
+        "matched_imagegen_original": true
+      },
+      {
+        "path": "assets/game-forms/watch-sources/beacon.png",
+        "sha256": "0ad488d3f885551a5db98b87f8b4188494c477a5a6c8c8615acac7187492c8a2",
+        "matched_imagegen_original": true
+      },
+      {
+        "path": "assets/game-forms/watch-sources/store.png",
+        "sha256": "fd55e7efa9da39a782274826e9a1a926c1b72b531d5c96998de882c9cdbea872",
+        "matched_imagegen_original": true
+      },
+      {
+        "path": "assets/game-forms/watch-sources/worker.png",
+        "sha256": "9fe3fda2430714b99035be6f08fa6afb9b1a55edfb8ace81e47573d7b21609a7",
+        "matched_imagegen_original": true
+      },
+      {
+        "path": "assets/game-forms/watch-sources/visitor.png",
+        "sha256": "b4150d9063019570ab5531b61bbf3f6a3d331854db593f30e19e99a34ef997e6",
+        "matched_imagegen_original": true
+      }
+    ],
+    "original_source_count": 10,
+    "vendor_licenses": [
+      "vendor/showcase/LICENSE",
+      "vendor/physics/LICENSE"
+    ]
+  },
+  "site_tests": {
+    "command": [
+      "C:\\Users\\yun68\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_site.py"
+    ],
+    "exit_code": 0,
+    "stdout": "Built 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmpfbg0zusr\\_site\nBuilt 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmp4hhgre5n\\_site\nBuilt 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmpux1bxfen\\_site\nBuilt 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmp80ahxyc3\\_site\nBuilt 2 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmp46vli925\\_site\nBuilt 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmpbd_vb6l8\\_site",
+    "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.315s\n\nOK",
+    "test_count": 6
+  },
+  "world_regression": {
+    "command": [
+      "C:\\Users\\yun68\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+      "--experimental-vm-modules",
+      "--input-type=module",
+      "-e",
+      "\nimport fs from 'node:fs';\nimport path from 'node:path';\nimport {pathToFileURL} from 'node:url';\nconst originalWrite=fs.writeFileSync;\nconst protectedNote=path.resolve(process.argv[2]);\nfs.writeFileSync=function(destination,...args){\n if(typeof destination==='string' && path.resolve(destination)===protectedNote)return;\n return originalWrite.call(this,destination,...args);\n};\nawait import(pathToFileURL(process.argv[1]).href);\n",
+      "F:\\codex_project\\0930_codex_project\\projects\\010-dumpling-style-lab\\tooling\\check-world-rules.mjs",
+      "F:\\codex_project\\0930_codex_project\\projects\\010-dumpling-style-lab\\notes\\worlds-rules-check.json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"date\": \"2026-10-03T17:40:01.037Z\",\n  \"method\": \"Node VM; real game rules and pathfinding; drawing context and 3D renderer mocked. Isolated browser screenshots and UI checks cover rendering.\",\n  \"checks\": [\n    \"All shipped JavaScript modules parse\",\n    \"Detective evidence custody produces a completed case\",\n    \"Second case retains the completed first case\",\n    \"The first case answer fails the new case\",\n    \"Second case requires withdrawal evidence and the different recipient\",\n    \"Wuxia roads, one rope and two supplies produce a real rescue\",\n    \"Rescue has a persisted next-day response\",\n    \"Retrace replenishes finite resources and retains the old arrangement\",\n    \"Rescue cannot conclude before allocating the two supplies\",\n    \"Planting uses labor and does not instantly create wildlife\",\n    \"Spring habitats attract insects\",\n    \"A second-season canopy attracts birds\",\n    \"Three-season mixed habitat completes with viable vegetation\",\n    \"A mixed habitat earns an actual annual research result\",\n    \"Rewind retains the comparison record\",\n    \"Next year retains grown vegetation\",\n    \"A new year can change its research goal without deleting the yearbook\",\n    \"Unfunded crops actually fail\",\n    \"Repairs and allocations survive three rounds with an archived cost\",\n    \"Unanswered storm request blocks climate settlement\",\n    \"Shelter choice immediately spends water and parts and adds backup power\",\n    \"Storm shelter scenario remains completable with a distinct archived outcome\",\n    \"An unbuilt bridge blocks reaching the watch\",\n    \"Memory placement opens actual paths to the chosen ending\",\n    \"Revisiting retains both different endings\",\n    \"Seven successful stays retain return memories and six souvenirs\",\n    \"Inn second chapter retains furniture and return histories\",\n    \"Three return dilemmas produce real letters and souvenirs\",\n    \"Inn revisit starts day eight while keeping all three letters\",\n    \"Closed cases can be selected with both old conclusions preserved\",\n    \"First rooftop course is completable without falling\",\n    \"Second rooftop course keeps a separate actual record\",\n    \"Third courier route is completable and has its own recipient and record\",\n    \"Completed routes can be selected while keeping three best times\",\n    \"Jump buffering accepts an airborne request without pretending it jumped\",\n    \"A buffered jump fires on the real landing within 140 ms\",\n    \"Auto forward moves but leaves jumps under player control\",\n    \"Actual island paths, bridge and seal permit two discoveries and return\",\n    \"Cloud tower is a real third area and opens a new incomplete chapter\",\n    \"Uncalibrated wind actually blocks the star platform\",\n    \"Wind bridge, two star rotations, beacon and return report complete chapter two\",\n    \"detective extended chapter and records survive reload\",\n    \"wuxia extended chapter and records survive reload\",\n    \"ecology extended chapter and records survive reload\",\n    \"wasteland extended chapter and records survive reload\",\n    \"dream extended chapter and records survive reload\",\n    \"inn extended chapter and records survive reload\",\n    \"arcade extended chapter and records survive reload\",\n    \"islands extended chapter and records survive reload\",\n    \"Legacy moving save retains two delivered objects\",\n    \"Selecting a completed commission starts its real cargo while retaining all three records\",\n    \"Commission selection cannot discard an unfinished order\",\n    \"A pre-extension completed inn save enters the new chapter\",\n    \"A pre-extension island save retains discoveries and reaches the new island\",\n    \"Two-route courier saves gain an empty third route without losing best times\",\n    \"Ecology forecast matches actual water, health and age across all three gates and seasons\"\n  ],\n  \"commercialOrEmotionalValidation\": false\n}",
+    "stderr": "(node:47000) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)",
+    "check_count": 56
+  },
+  "build": {
+    "command": [
+      "C:\\Users\\yun68\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\codex_project\\0930_codex_project\\scripts\\build_site.py"
+    ],
+    "exit_code": 0,
+    "stdout": "Built 19 static demo(s) into F:\\codex_project\\0930_codex_project\\_site",
+    "stderr": ""
+  },
+  "packaged_bytes": {
+    "passed": true,
+    "destination": "F:\\codex_project\\0930_codex_project\\_site\\projects\\010-dumpling-style-lab",
+    "file_count": 33,
+    "mismatches": [],
+    "inventory": [
+      {
+        "path": "assets/game-forms/chain/amber.webp",
+        "bytes": 105518,
+        "sha256": "56d0749a94616382147c71786ee473f88773ad6321bc2d28b1ef6b33e5ec1fa5",
+        "copied_exactly": true
+      },
+      {
+        "path": "assets/game-forms/chain/ATTRIBUTION.md",
+        "bytes": 538,
+        "sha256": "8c0276fb8862335fd73ac296bc7010e16cb26acf298d14243712f707550574d3",
+        "copied_exactly": true
+      },
+      {
+        "path": "assets/game-forms/chain/cyan.webp",
+        "bytes": 107936,
+        "sha256": "6bde70b42f958a1bc1d2e1bad6ca08fda23076c1ce4156f21326f7d304a519e0",
+        "copied_exactly": true
+      },
+      {
+        "path": "assets/game-forms/chain/jade.webp",
+        "bytes": 109848,
+        "sha256": "ebf0c8ecb00f7e1a66589d5a477453fa1ab3ed9f0fa59c4bdb72ef3bea50a429",
+        "copied_exactly": true
+      },
+      {
+        "path": "assets/game-forms/chain/launcher.webp",
+        "bytes": 290572,
+        "sha256": "914affc001f16ce55b816efd1f6dc2482a5f20727de11ec8817aa60989d8917f",
+        "copied_exactly": true
+      },
+      {
+        "path": "assets/game-forms/chain/observatory.webp",
+        "bytes": 476310,
+        "sha256": "db0b02c8df4257e4715b04576996bc53126b345afe161332c17619168cbe2d29",
+        "copied_exactly": true
+      },
+      {
+        "path": "assets/game-forms/chain/preview.webp",
+        "bytes": 121898,
+        "sha256": "028d145326ce93454dde9ac7298fcc56a303d445e4cfe4e9915b5042a24c0425",
+        "copied_exactly": true
+      },
+      {
+        "path": "assets/game-forms/chain/ruby.webp",
+        "bytes": 103814,
+        "sha256": "b72174da5ebbeea03852aabb3eae76a2ab62b2a36bf76ca3a7bda44d6c5db832",
+        "copied_exactly": true
+      },
+      {
+        "path": "assets/game-forms/chain/violet.webp",
+        "bytes": 113532,
+        "sha256": "039c6ab0ec15657c8bf4a64fb9cb7dfae50bbaa46981008206a7db8d5fc92433",
+        "copied_exactly": true
+      },
+      {
+        "path": "assets/game-forms/roll/ATTRIBUTION.md",
+        "bytes": 1299,
+        "sha256": "907f340de171493ca07e69d0e139166ea0bd592b87b5d98aef4cd81a7443e79e",
+        "copied_exactly": true
+      },
+      {
+        "path": "assets/game-forms/roll/limestone.webp",
+        "bytes": 272982,
+        "sha256": "700860e7328338c64baf2d94340a1e84e267bc80c91139da69bcbc3e999554e7",
+        "copied_exactly": true
+      },
+      {
+        "path": "assets/game-forms/roll/preview.webp",
+        "bytes": 53026,
+        "sha256": "b62e7fad15b0054f4ce9b25fbdf0b87a25d4025f6614c4d73bd603854bd0f353",
+        "copied_exactly": true
+      },
+      {
+        "path": "assets/game-forms/watch/ATTRIBUTION.md",
+        "bytes": 810,
+        "sha256": "7fa5763963f7289271759666fa509ea483f26770149b253f1ccaedbc3aba367d",
+        "copied_exactly": true
+      },
+      {
+        "path": "assets/game-forms/watch/beacon.webp",
+        "bytes": 501798,
+        "sha256": "626e220eeddb7c407d41d48f6b66409965daaf868994de1be943541aca06a3f1",
+        "copied_exactly": true
+      },
+      {
+        "path": "assets/game-forms/watch/hall.webp",
+        "bytes": 409774,
+        "sha256": "6a6634a4717f8cc276566b71a617323df61b6313d6ada21508de78f78c0bed00",
+        "copied_exactly": true
+      },
+      {
+        "path": "assets/game-forms/watch/preview.webp",
+        "bytes": 102146,
+        "sha256": "4ed854d5e2bf4bb99d6157360d216392de5ea0c5151c6c85fc3607ac83c37bc7",
+        "copied_exactly": true
+      },
+      {
+        "path": "assets/game-forms/watch/quay.webp",
+        "bytes": 408492,
+        "sha256": "883ee4b6e6370805fc6cd889c1e664e9a59e63b3d2580bff2b43edff6bf419b5",
+        "copied_exactly": true
+      },
+      {
+        "path": "assets/game-forms/watch/store.webp",
+        "bytes": 332980,
+        "sha256": "6a157525d94bad50bba8f1a9b3f1e200184a34651b1ff32aa381c17f3b646abd",
+        "copied_exactly": true
+      },
+      {
+        "path": "assets/game-forms/watch/visitor.webp",
+        "bytes": 92028,
+        "sha256": "715eca6e5265a205f7e5c622c9fb25d44b6e701236fc8f0deb7b1643a45b6b4e",
+        "copied_exactly": true
+      },
+      {
+        "path": "assets/game-forms/watch/worker.webp",
+        "bytes": 140400,
+        "sha256": "768370068ea08c5becf6b4d249ad2007bd5fc8b97bef52ad297bb32405b3f881",
+        "copied_exactly": true
+      },
+      {
+        "path": "forms.css",
+        "bytes": 6524,
+        "sha256": "42023d7c14639d301078ce04b98557d90fc787be960d88f3dde6d30d17d52c3a",
+        "copied_exactly": true
+      },
+      {
+        "path": "forms.html",
+        "bytes": 5044,
+        "sha256": "0f6a86fe342038352a86d1c87cc63964a70ac28909876bad091b60b65dec1ced",
+        "copied_exactly": true
+      },
+      {
+        "path": "forms.js",
+        "bytes": 5312,
+        "sha256": "b625d6ec7f000b754512f1ea233328de8caaf71f30f1b1774b034f7dc4f31fbf",
+        "copied_exactly": true
+      },
+      {
+        "path": "game-forms-catalog.js",
+        "bytes": 22380,
+        "sha256": "ba257da3976b07232a02cd8347aedd3e94e06129197da41e0a9acd743c6fae2b",
+        "copied_exactly": true
+      },
+      {
+        "path": "showcase-audio.js",
+        "bytes": 1646,
+        "sha256": "7cf8f42314a1e3c1a9f17b17b4050e0b29ea237d3945e5bb9fd8fb78be94bc2f",
+        "copied_exactly": true
+      },
+      {
+        "path": "showcase-catalog.js",
+        "bytes": 23625,
+        "sha256": "167cd5015a713cf1ee56c47500a7abf611c8b9bb31af1f33231ee803c172aba4",
+        "copied_exactly": true
+      },
+      {
+        "path": "showcase-chain.js",
+        "bytes": 19414,
+        "sha256": "c76b951f7c2f34bc3906ca345c8de34100791893491d31dc88db672a22a5ff7e",
+        "copied_exactly": true
+      },
+      {
+        "path": "showcase-inspection.js",
+        "bytes": 9132,
+        "sha256": "2dc769627df07811a0ca43c8eea33874617bc14fef9daaddd0dbb3a8c0b557d0",
+        "copied_exactly": true
+      },
+      {
+        "path": "showcase-presentation.css",
+        "bytes": 7862,
+        "sha256": "db8ae7efeff711c7dd34db57d5e872b381c0660ab38bb4ce9bbef5317286151f",
+        "copied_exactly": true
+      },
+      {
+        "path": "showcase-roll.js",
+        "bytes": 36561,
+        "sha256": "0d5eccc142fdd08b6da55254097e4a3146c3a03bfcdbc9cab5b0dc00cdad2253",
+        "copied_exactly": true
+      },
+      {
+        "path": "showcase-watch.js",
+        "bytes": 23558,
+        "sha256": "7eb7f11009fad0198edd249e761287b2cdb7be295a8d44e0512eab4bc3f3162f",
+        "copied_exactly": true
+      },
+      {
+        "path": "showcase.html",
+        "bytes": 6672,
+        "sha256": "d10639724f98957413a710c34d2cfca09cbbb0d6bd4eceed78fc24fd48929fac",
+        "copied_exactly": true
+      },
+      {
+        "path": "showcase.js",
+        "bytes": 24424,
+        "sha256": "7d72771d19fc292d1dd4161421ba27bfe502e676c62e651dec0b886179bac5ca",
+        "copied_exactly": true
+      }
+    ]
+  },
+  "build_demo_count": 19,
+  "passed": true
+}

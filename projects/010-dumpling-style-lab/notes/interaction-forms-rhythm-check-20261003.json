@@ -1,0 +1,518 @@
+{
+  "passed": true,
+  "checks": [
+    "Original music starts audibly and freezes/resumes on real pause",
+    "rhythm real save/reload restores progress",
+    "Actual timed keys score at least 60/80 notes and produce real combo/accuracy/grade",
+    "Comparison switching pauses the other game and its music",
+    "390px layout fits; touch rhythm pad generates a judged real input",
+    "QA is isolated; no runtime exceptions or missing assets"
+  ],
+  "results": {
+    "rhythm": {
+      "elapsed": 37.939809,
+      "results": [
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "miss",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect"
+      ],
+      "score": 7900,
+      "combo": 0,
+      "maxCombo": 65,
+      "perfect": 79,
+      "good": 0,
+      "miss": 1,
+      "stray": 0,
+      "offsetMs": 0,
+      "won": true,
+      "grade": "S",
+      "accuracy": 98.8,
+      "audioTime": 37.940109,
+      "audioPaused": true,
+      "audioMuted": false,
+      "audioDuration": 40,
+      "chart": [
+        {
+          "time": 2.2222222222222223,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 2.7777777777777777,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 3.3333333333333335,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 3.611111111111111,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 3.8888888888888893,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 4.444444444444445,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 5,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 5.555555555555555,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 5.833333333333334,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 6.111111111111112,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 6.666666666666667,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 7.222222222222222,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 7.777777777777779,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 8.055555555555555,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 8.333333333333334,
+          "lane": 1,
+          "result": "miss"
+        },
+        {
+          "time": 8.88888888888889,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 9.444444444444445,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 10,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 10.277777777777779,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 10.555555555555555,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 11.11111111111111,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 11.666666666666668,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 12.222222222222223,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 12.5,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 12.777777777777779,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 13.333333333333334,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 13.88888888888889,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 14.444444444444445,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 14.722222222222223,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 15,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 15.555555555555557,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 16.11111111111111,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 16.666666666666668,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 16.944444444444446,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 17.22222222222222,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 17.77777777777778,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 18.333333333333336,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 18.88888888888889,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 19.166666666666668,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 19.444444444444446,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 20,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 20.555555555555557,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 21.11111111111111,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 21.38888888888889,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 21.666666666666668,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 22.22222222222222,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 22.77777777777778,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 23.333333333333336,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 23.61111111111111,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 23.88888888888889,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 24.444444444444446,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 25,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 25.555555555555557,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 25.833333333333336,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 26.11111111111111,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 26.666666666666668,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 27.222222222222225,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 27.77777777777778,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 28.055555555555557,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 28.333333333333336,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 28.88888888888889,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 29.444444444444446,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 30,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 30.27777777777778,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 30.555555555555557,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 31.111111111111114,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 31.666666666666668,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 32.22222222222222,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 32.5,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 32.77777777777778,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 33.333333333333336,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 33.88888888888889,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 34.44444444444444,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 34.72222222222222,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 35,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 35.55555555555556,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 36.111111111111114,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 36.66666666666667,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 36.94444444444444,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 37.22222222222222,
+          "lane": 1,
+          "result": "perfect"
+        }
+      ],
+      "audioError": ""
+    }
+  },
+  "errors": [],
+  "missing": []
+}

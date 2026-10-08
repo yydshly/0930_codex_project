@@ -1,0 +1,221 @@
+{
+  "method": "Production Canvas2D renderer and real simulation via Skia; not browser screenshots or CSS/fullscreen/touch acceptance.",
+  "frames": [
+    {
+      "name": "01-night-begins",
+      "file": "assets/directions/shift-qa/01-night-begins.png",
+      "time": 0,
+      "phase": "playing",
+      "oxygen": 82,
+      "powered": false,
+      "fire": false,
+      "stats": {
+        "repairs": 0,
+        "stabilized": 0,
+        "treated": 0,
+        "orders": 0
+      },
+      "patients": [
+        {
+          "name": "陈述",
+          "stable": false,
+          "health": 62,
+          "boarded": false
+        },
+        {
+          "name": "闻夏",
+          "stable": false,
+          "health": 62,
+          "boarded": false
+        },
+        {
+          "name": "许舟",
+          "stable": false,
+          "health": 62,
+          "boarded": false
+        }
+      ]
+    },
+    {
+      "name": "02-parallel-duties",
+      "file": "assets/directions/shift-qa/02-parallel-duties.png",
+      "time": 1.0000000000000004,
+      "phase": "playing",
+      "oxygen": 81.68000000000018,
+      "powered": false,
+      "fire": false,
+      "stats": {
+        "repairs": 0,
+        "stabilized": 0,
+        "treated": 0,
+        "orders": 3
+      },
+      "patients": [
+        {
+          "name": "陈述",
+          "stable": false,
+          "health": 61.7999999999999,
+          "boarded": false
+        },
+        {
+          "name": "闻夏",
+          "stable": false,
+          "health": 61.7999999999999,
+          "boarded": false
+        },
+        {
+          "name": "许舟",
+          "stable": false,
+          "health": 61.7999999999999,
+          "boarded": false
+        }
+      ]
+    },
+    {
+      "name": "03-corridor-incident",
+      "file": "assets/directions/shift-qa/03-corridor-incident.png",
+      "time": 22.049999999999816,
+      "phase": "playing",
+      "oxygen": 89.91699999999658,
+      "powered": true,
+      "fire": true,
+      "stats": {
+        "repairs": 3,
+        "stabilized": 3,
+        "treated": 0,
+        "orders": 10
+      },
+      "patients": [
+        {
+          "name": "陈述",
+          "stable": true,
+          "health": 65,
+          "boarded": false
+        },
+        {
+          "name": "闻夏",
+          "stable": true,
+          "health": 65,
+          "boarded": false
+        },
+        {
+          "name": "许舟",
+          "stable": true,
+          "health": 65,
+          "boarded": false
+        }
+      ]
+    },
+    {
+      "name": "04-evacuation",
+      "file": "assets/directions/shift-qa/04-evacuation.png",
+      "time": 53.14999999999805,
+      "phase": "playing",
+      "oxygen": 100,
+      "powered": true,
+      "fire": false,
+      "stats": {
+        "repairs": 4,
+        "stabilized": 3,
+        "treated": 3,
+        "orders": 14
+      },
+      "patients": [
+        {
+          "name": "陈述",
+          "stable": true,
+          "health": 100,
+          "boarded": false
+        },
+        {
+          "name": "闻夏",
+          "stable": true,
+          "health": 100,
+          "boarded": false
+        },
+        {
+          "name": "许舟",
+          "stable": true,
+          "health": 100,
+          "boarded": false
+        }
+      ]
+    },
+    {
+      "name": "05-all-aboard",
+      "file": "assets/directions/shift-qa/05-all-aboard.png",
+      "time": 68.44999999999844,
+      "phase": "won",
+      "oxygen": 100,
+      "powered": true,
+      "fire": false,
+      "stats": {
+        "repairs": 4,
+        "stabilized": 3,
+        "treated": 3,
+        "orders": 15
+      },
+      "patients": [
+        {
+          "name": "陈述",
+          "stable": true,
+          "health": 100,
+          "boarded": true
+        },
+        {
+          "name": "闻夏",
+          "stable": true,
+          "health": 100,
+          "boarded": true
+        },
+        {
+          "name": "许舟",
+          "stable": true,
+          "health": 100,
+          "boarded": true
+        }
+      ]
+    },
+    {
+      "name": "06-pressure-start",
+      "file": "assets/directions/shift-qa/06-pressure-start.png",
+      "time": 0,
+      "phase": "playing",
+      "oxygen": 72,
+      "powered": false,
+      "fire": false,
+      "stats": {
+        "repairs": 0,
+        "stabilized": 0,
+        "treated": 0,
+        "orders": 0
+      },
+      "patients": [
+        {
+          "name": "陈述",
+          "stable": false,
+          "health": 52,
+          "boarded": false
+        },
+        {
+          "name": "闻夏",
+          "stable": false,
+          "health": 52,
+          "boarded": false
+        },
+        {
+          "name": "许舟",
+          "stable": false,
+          "health": 52,
+          "boarded": false
+        },
+        {
+          "name": "方青",
+          "stable": false,
+          "health": 52,
+          "boarded": false
+        }
+      ]
+    }
+  ]
+}

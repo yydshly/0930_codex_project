@@ -1,0 +1,116 @@
+{
+  "at": "2026-10-03T02:17:04.744Z",
+  "method": "isolated browser; real UI input; game state read only; QA storage only",
+  "checks": [
+    "Default gallery retains the nine original worlds",
+    "All eight inn styles retain the current stay and furniture",
+    "Each game remembers its own supported style; favorite and stay survive reload",
+    "Host pause and sound controls operate the retained game",
+    "Order hold consumes the next piece once, locks until landing, and swaps after real drop",
+    "Factory real placement, budget refund, undo and paused production",
+    "Document fields report actual equality and a real decision stamps the permit",
+    "Garden field selection is free; water preview matches actual overnight growth",
+    "Landscape zoom and reset change the real camera without changing progress",
+    "All 21 retained and expanded panels fit 390px with touch controls at least 44px",
+    "Isolated QA wrote no normal play saves or normal art preferences",
+    "All 1516 pre-existing visual assets retain identical hashes"
+  ],
+  "views": [
+    {
+      "id": "legacy-inn",
+      "items": 2,
+      "error": null
+    },
+    {
+      "id": "legacy-detective",
+      "items": 4,
+      "error": null
+    },
+    {
+      "id": "legacy-wuxia",
+      "items": 3,
+      "error": null
+    },
+    {
+      "id": "legacy-ecology",
+      "items": 4,
+      "error": null
+    },
+    {
+      "id": "legacy-wasteland",
+      "items": 3,
+      "error": null
+    },
+    {
+      "id": "legacy-dream",
+      "items": 2,
+      "error": null
+    },
+    {
+      "id": "legacy-arcade",
+      "items": 3,
+      "error": null
+    },
+    {
+      "id": "legacy-islands",
+      "items": 4,
+      "error": null
+    },
+    {
+      "id": "legacy-movers",
+      "items": 3,
+      "error": null
+    },
+    {
+      "id": "afterdark",
+      "items": 4
+    },
+    {
+      "id": "hunter",
+      "items": 4
+    },
+    {
+      "id": "station",
+      "items": 4
+    },
+    {
+      "id": "ledger",
+      "items": 4
+    },
+    {
+      "id": "order",
+      "items": 4
+    },
+    {
+      "id": "wonder",
+      "items": 4
+    },
+    {
+      "id": "range",
+      "items": 4
+    },
+    {
+      "id": "expedition",
+      "items": 4
+    },
+    {
+      "id": "builder",
+      "items": 4
+    },
+    {
+      "id": "garden",
+      "items": 6
+    },
+    {
+      "id": "factory",
+      "items": 4
+    },
+    {
+      "id": "checkpoint",
+      "items": 4
+    }
+  ],
+  "assetsPreserved": 1516,
+  "errors": [],
+  "missing": []
+}

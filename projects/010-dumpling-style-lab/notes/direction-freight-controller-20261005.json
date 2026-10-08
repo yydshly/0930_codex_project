@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "checks": [
+    "real HTML dependencies, four image files and initial line cards load",
+    "demo uses a real six-vehicle network and ordinary animation produces cargo movement",
+    "pause freezes the saved simulation while page frames continue",
+    "guided pointer repair purchases the missing road and releases capture",
+    "invalid river placement explains the required bridge, and the bridge tool builds it",
+    "blank planning pauses the world and fast road drag fills every crossed cell",
+    "line controls reject invalid cargo then purchase a real waiting truck",
+    "cargo selector offers the corresponding source and consumer defaults",
+    "line selection, purchasing another truck and departure pause affect the selected route",
+    "inspection reports real stock without editing roads or purchases",
+    "keyboard construction repairs the guided route and pause starts the actual simulation",
+    "view controls change; blur releases an active drag and pauses transportation",
+    "normal callbacks finish both orders and show the truthful freight report",
+    "retry resets the network and hides the ended report",
+    "restored module starts paused, resumes its network and retains selected line"
+  ],
+  "method": "Actual production module callbacks through minimal DOM/no-op Canvas adapter, including a restored module instance. Production bitmap drawing checked separately with Skia. Browser CSS, touch/fullscreen and real browser refresh remain separate."
+}

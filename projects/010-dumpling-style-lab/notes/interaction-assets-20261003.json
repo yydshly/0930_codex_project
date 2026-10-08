@@ -1,0 +1,349 @@
+{
+  "sprites": [
+    {
+      "game": "duel",
+      "name": "hero-idle",
+      "crop": [
+        48,
+        4,
+        256,
+        316
+      ],
+      "size": [
+        208,
+        312
+      ]
+    },
+    {
+      "game": "duel",
+      "name": "hero-walk-a",
+      "crop": [
+        348,
+        8,
+        560,
+        316
+      ],
+      "size": [
+        212,
+        308
+      ]
+    },
+    {
+      "game": "duel",
+      "name": "hero-walk-b",
+      "crop": [
+        644,
+        20,
+        872,
+        312
+      ],
+      "size": [
+        228,
+        292
+      ]
+    },
+    {
+      "game": "duel",
+      "name": "hero-jab",
+      "crop": [
+        932,
+        28,
+        1216,
+        312
+      ],
+      "size": [
+        284,
+        284
+      ]
+    },
+    {
+      "game": "duel",
+      "name": "hero-kick",
+      "crop": [
+        32,
+        328,
+        316,
+        628
+      ],
+      "size": [
+        284,
+        300
+      ]
+    },
+    {
+      "game": "duel",
+      "name": "hero-guard",
+      "crop": [
+        332,
+        336,
+        576,
+        628
+      ],
+      "size": [
+        244,
+        292
+      ]
+    },
+    {
+      "game": "duel",
+      "name": "hero-jump",
+      "crop": [
+        660,
+        328,
+        880,
+        588
+      ],
+      "size": [
+        220,
+        260
+      ]
+    },
+    {
+      "game": "duel",
+      "name": "hero-hurt",
+      "crop": [
+        980,
+        348,
+        1196,
+        624
+      ],
+      "size": [
+        216,
+        276
+      ]
+    },
+    {
+      "game": "duel",
+      "name": "rival-idle",
+      "crop": [
+        36,
+        632,
+        260,
+        952
+      ],
+      "size": [
+        224,
+        320
+      ]
+    },
+    {
+      "game": "duel",
+      "name": "rival-walk-a",
+      "crop": [
+        344,
+        632,
+        568,
+        948
+      ],
+      "size": [
+        224,
+        316
+      ]
+    },
+    {
+      "game": "duel",
+      "name": "rival-walk-b",
+      "crop": [
+        648,
+        636,
+        888,
+        948
+      ],
+      "size": [
+        240,
+        312
+      ]
+    },
+    {
+      "game": "duel",
+      "name": "rival-jab",
+      "crop": [
+        944,
+        652,
+        1212,
+        948
+      ],
+      "size": [
+        268,
+        296
+      ]
+    },
+    {
+      "game": "duel",
+      "name": "rival-kick",
+      "crop": [
+        20,
+        960,
+        320,
+        1264
+      ],
+      "size": [
+        300,
+        304
+      ]
+    },
+    {
+      "game": "duel",
+      "name": "rival-guard",
+      "crop": [
+        356,
+        976,
+        596,
+        1264
+      ],
+      "size": [
+        240,
+        288
+      ]
+    },
+    {
+      "game": "duel",
+      "name": "rival-jump",
+      "crop": [
+        652,
+        952,
+        864,
+        1236
+      ],
+      "size": [
+        212,
+        284
+      ]
+    },
+    {
+      "game": "duel",
+      "name": "rival-hurt",
+      "crop": [
+        952,
+        984,
+        1204,
+        1264
+      ],
+      "size": [
+        252,
+        280
+      ]
+    },
+    {
+      "game": "maze",
+      "name": "up",
+      "crop": [
+        76,
+        56,
+        372,
+        340
+      ],
+      "size": [
+        296,
+        284
+      ]
+    },
+    {
+      "game": "maze",
+      "name": "right",
+      "crop": [
+        528,
+        56,
+        804,
+        352
+      ],
+      "size": [
+        276,
+        296
+      ]
+    },
+    {
+      "game": "maze",
+      "name": "down",
+      "crop": [
+        960,
+        68,
+        1256,
+        352
+      ],
+      "size": [
+        296,
+        284
+      ]
+    },
+    {
+      "game": "maze",
+      "name": "left",
+      "crop": [
+        1412,
+        56,
+        1688,
+        352
+      ],
+      "size": [
+        276,
+        296
+      ]
+    },
+    {
+      "game": "maze",
+      "name": "red",
+      "crop": [
+        44,
+        456,
+        404,
+        788
+      ],
+      "size": [
+        360,
+        332
+      ]
+    },
+    {
+      "game": "maze",
+      "name": "violet",
+      "crop": [
+        488,
+        476,
+        844,
+        812
+      ],
+      "size": [
+        356,
+        336
+      ]
+    },
+    {
+      "game": "maze",
+      "name": "battery",
+      "crop": [
+        968,
+        504,
+        1248,
+        788
+      ],
+      "size": [
+        280,
+        284
+      ]
+    },
+    {
+      "game": "maze",
+      "name": "portal",
+      "crop": [
+        1356,
+        456,
+        1736,
+        832
+      ],
+      "size": [
+        380,
+        376
+      ]
+    }
+  ],
+  "music": {
+    "title": "Night Sailing / \u62cd\u70b9\u591c\u822a",
+    "bpm": 108,
+    "bars": 16,
+    "countInBeats": 4,
+    "duration": 40.0,
+    "sampleRate": 22050,
+    "composition": "Original deterministic synthesized keys, bass, pads, drums; no third-party recording."
+  }
+}

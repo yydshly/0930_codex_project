@@ -1,0 +1,120 @@
+{
+  "project": "010-dumpling-style-lab",
+  "generationMode": "built-in image_gen",
+  "provenance": "Seven original AI-generated bitmap sheets; runtime images are cropped/compressed copies. Three-dimensional meshes, native pixel sprites and selected audio samples are imported from Kenney CC0 packs. Game layouts, effects and rules are implemented in code.",
+  "generatedAssets": [
+    {
+      "name": "night",
+      "source": "assets/showcase/sources/night.png",
+      "runtime": [
+        "web/assets/showcase/night.webp"
+      ],
+      "generationBrief": "Full-bleed 16:9 premium adult cinematic abandoned railway maintenance yard at night. Teal moonlight, amber lamps, aged material, rain, flat side-view walking ledge. No people, UI or text."
+    },
+    {
+      "name": "arena",
+      "source": "assets/showcase/sources/arena.png",
+      "runtime": [
+        "web/assets/showcase/arena.webp"
+      ],
+      "generationBrief": "Full-bleed 16:9 three-quarter overhead ruined forge courtyard. Obsidian, copper and amber fissures, crimson banners, turquoise spirit fires; clear central play floor, detailed painterly edge ornament. No people, UI or text."
+    },
+    {
+      "name": "actors",
+      "source": "assets/showcase/sources/actors.png",
+      "runtimePattern": "web/assets/showcase/{worker,fighter,enemy}-{0,1,2,3}.webp",
+      "generationBrief": "Transparent 4-column by 3-row adult full-body character sheet. Row one: auburn railway worker in charcoal coat with cyan lamp, idle/two walking frames/crouch. Row two: burgundy leather and brass swordswoman, idle/two running frames/attack. Row three: dark iron and turquoise sword guard, shield guard, caster and commander. Consistent cell size and alpha gutters."
+    },
+    {
+      "name": "card-art",
+      "source": "assets/showcase/sources/card-art.png",
+      "runtimePattern": "web/assets/showcase/card-{0..11}.webp",
+      "generationBrief": "Twelve equal editorial engraving and painterly illustration cells. Sepia, navy, crimson, brass and cream; compass, satchel, crates, medicine, train, clock, bridge, lantern and four adult merchant/inspector/courier/engineer portraits. Cream margins; no typography or UI."
+    },
+    {
+      "name": "factory-art",
+      "source": "assets/showcase/sources/factory-art.png",
+      "runtimePattern": "web/assets/showcase/machine-{0..5}.webp",
+      "generationBrief": "Transparent 3-column by 2-row painterly dieselpunk industrial prop atlas viewed from overhead three quarters. Teal, brass and copper extraction drill, right-facing conveyor, smelter, export depot, generator and ore. Transparent gutters and no UI."
+    },
+    {
+      "name": "story-scenes",
+      "source": "assets/showcase/sources/story-scenes.png",
+      "runtime": [
+        "web/assets/showcase/checkpoint-scene.webp",
+        "web/assets/showcase/radio-scene.webp"
+      ],
+      "generationBrief": "Two equal 16:9 side-view environments stacked vertically. Top: sealed freight checkpoint beneath a steel bridge, patrol searchlight, containers, rainy teal and amber night. Bottom: dispatch and radio interior, tall city windows, aged switchboards, radio racks, cabling and console to the right. Flat walking ledge at 65% of each panel with basement cutaway beneath. Detailed original adult cinematic art; no people, text or UI."
+    },
+    {
+      "name": "afterdark-props-v2",
+      "source": "assets/showcase/sources/afterdark-props-v2.png",
+      "runtimePattern": "web/assets/showcase/rail-prop-{0..5}.webp",
+      "generationBrief": "Transparent 3x2 adult cinematic railway prop atlas, using the original night scene as style reference. Teal battery, amber control cabinet, weathered freight crate, cloth evidence dossier, radio transmitter and railway warning lamp. Side-on crafted material details and isolated silhouettes."
+    }
+  ],
+  "imports": [
+    {
+      "pack": "blaster",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "source": "https://kenney.nl/assets/blaster-kit"
+    },
+    {
+      "pack": "station",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "source": "https://kenney.nl/assets/space-station-kit"
+    },
+    {
+      "pack": "platform3d",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "source": "https://kenney.nl/assets/platformer-kit"
+    },
+    {
+      "pack": "platform2d",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "source": "https://kenney.nl/assets/new-platformer-pack"
+    },
+    {
+      "pack": "town",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "source": "https://kenney.nl/assets/tiny-town"
+    },
+    {
+      "pack": "farm",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "source": "https://kenney.nl/assets/tiny-farm"
+    },
+    {
+      "pack": "rpg-audio",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "source": "https://kenney.nl/assets/rpg-audio"
+    },
+    {
+      "pack": "interface-sounds",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "source": "https://kenney.nl/assets/interface-sounds"
+    },
+    {
+      "pack": "nature",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "source": "https://kenney.nl/assets/nature-kit"
+    }
+  ],
+  "engine": {
+    "name": "Three.js",
+    "version": "r160",
+    "license": "MIT",
+    "source": "https://github.com/mrdoob/three.js/tree/r160",
+    "runtime": "web/vendor/showcase"
+  },
+  "referenceBoundary": "Historical games inform camera, art language and gameplay structure. No characters, scenes, logos, music or copyrighted assets from those games are imported. No sales or ranking claims are made."
+}

@@ -69,8 +69,14 @@ jobs:
           npm ci --prefix projects/007-koi-scene-lab/tooling
           npm test --prefix projects/007-koi-scene-lab/tooling
           npm run build --prefix projects/007-koi-scene-lab/tooling
+      - name: Validate Dumpling game study
+        run: |
+          npm ci --prefix projects/010-dumpling-style-lab/tooling
+          npm test --prefix projects/010-dumpling-style-lab/tooling
       - name: Build all static demos
-        run: python scripts/build_site.py
+        run: |
+          python scripts/build_site.py
+          python projects/010-dumpling-style-lab/tooling/verify-publication.py --site _site/projects/010-dumpling-style-lab --report projects/010-dumpling-style-lab/notes/publication-ci-checks.json
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

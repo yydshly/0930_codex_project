@@ -1,0 +1,177 @@
+{
+  "passed": true,
+  "checks": [
+    "Actual held key charges; release launches the ball with upward velocity",
+    "Independent real input rotates both physical flippers",
+    "Real nudge changes ball velocity and consumes a limited allowance",
+    "pinball actual save/reload retains progress",
+    "Real gravity, rail collisions, bumper hits, flipper contact and star-target scoring",
+    "Three physical balls drain and replay retains the actual best score"
+  ],
+  "result": {
+    "version": 1,
+    "phase": "ended",
+    "time": 14.654599999982043,
+    "ball": {
+      "x": 752,
+      "y": 540,
+      "vx": 0,
+      "vy": 0,
+      "r": 8
+    },
+    "balls": 0,
+    "score": 1800,
+    "best": 1800,
+    "charge": 0,
+    "launched": 3,
+    "bumperHits": 10,
+    "flipperHits": 7,
+    "wallHits": 24,
+    "targetHits": 7,
+    "lit": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "leftAngle": 0.27,
+    "rightAngle": 3.681592653589793,
+    "nudges": 3,
+    "tilt": 0,
+    "savedFor": 0,
+    "won": true,
+    "bumpers": [
+      {
+        "x": 467,
+        "y": 168,
+        "r": 29
+      },
+      {
+        "x": 648,
+        "y": 168,
+        "r": 29
+      },
+      {
+        "x": 558,
+        "y": 255,
+        "r": 32
+      }
+    ],
+    "targets": [
+      {
+        "x": 406,
+        "y": 302,
+        "r": 15
+      },
+      {
+        "x": 705,
+        "y": 303,
+        "r": 15
+      },
+      {
+        "x": 442,
+        "y": 407,
+        "r": 15
+      },
+      {
+        "x": 674,
+        "y": 407,
+        "r": 15
+      }
+    ],
+    "walls": [
+      [
+        [
+          391,
+          47
+        ],
+        [
+          766,
+          47
+        ]
+      ],
+      [
+        [
+          391,
+          47
+        ],
+        [
+          349,
+          479
+        ]
+      ],
+      [
+        [
+          766,
+          47
+        ],
+        [
+          792,
+          600
+        ]
+      ],
+      [
+        [
+          349,
+          479
+        ],
+        [
+          423,
+          520
+        ]
+      ],
+      [
+        [
+          724,
+          479
+        ],
+        [
+          695,
+          520
+        ]
+      ],
+      [
+        [
+          400,
+          430
+        ],
+        [
+          466,
+          478
+        ]
+      ],
+      [
+        [
+          716,
+          430
+        ],
+        [
+          654,
+          478
+        ]
+      ],
+      [
+        [
+          733,
+          553
+        ],
+        [
+          733,
+          165
+        ]
+      ],
+      [
+        [
+          720,
+          47
+        ],
+        [
+          766,
+          95
+        ]
+      ]
+    ]
+  },
+  "errors": [],
+  "missing": []
+}

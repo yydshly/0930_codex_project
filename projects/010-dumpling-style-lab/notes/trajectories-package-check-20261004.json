@@ -1,0 +1,480 @@
+{
+  "site_tests": {
+    "exit_code": 0,
+    "stdout": "Built 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmp0aeamosr\\_site\nBuilt 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmpbxjk67c8\\_site\nBuilt 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmpw_5k9s3f\\_site\nBuilt 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmpe3zy_25b\\_site\nBuilt 2 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmpi_764qfb\\_site\nBuilt 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmpnsy20snb\\_site\n",
+    "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.302s\n\nOK\n"
+  },
+  "world_rules_regression": {
+    "exit_code": 0,
+    "stdout": "{\n  \"date\": \"2026-10-04T11:57:30.995Z\",\n  \"method\": \"Node VM; real game rules and pathfinding; drawing context and 3D renderer mocked. Isolated browser screenshots and UI checks cover rendering.\",\n  \"checks\": [\n    \"All shipped JavaScript modules parse\",\n    \"Detective evidence custody produces a completed case\",\n    \"Second case retains the completed first case\",\n    \"The first case answer fails the new case\",\n    \"Second case requires withdrawal evidence and the different recipient\",\n    \"Wuxia roads, one rope and two supplies produce a real rescue\",\n    \"Rescue has a persisted next-day response\",\n    \"Retrace replenishes finite resources and retains the old arrangement\",\n    \"Rescue cannot conclude before allocating the two supplies\",\n    \"Planting uses labor and does not instantly create wildlife\",\n    \"Spring habitats attract insects\",\n    \"A second-season canopy attracts birds\",\n    \"Three-season mixed habitat completes with viable vegetation\",\n    \"A mixed habitat earns an actual annual research result\",\n    \"Rewind retains the comparison record\",\n    \"Next year retains grown vegetation\",\n    \"A new year can change its research goal without deleting the yearbook\",\n    \"Unfunded crops actually fail\",\n    \"Repairs and allocations survive three rounds with an archived cost\",\n    \"Unanswered storm request blocks climate settlement\",\n    \"Shelter choice immediately spends water and parts and adds backup power\",\n    \"Storm shelter scenario remains completable with a distinct archived outcome\",\n    \"An unbuilt bridge blocks reaching the watch\",\n    \"Memory placement opens actual paths to the chosen ending\",\n    \"Revisiting retains both different endings\",\n    \"Seven successful stays retain return memories and six souvenirs\",\n    \"Inn second chapter retains furniture and return histories\",\n    \"Three return dilemmas produce real letters and souvenirs\",\n    \"Inn revisit starts day eight while keeping all three letters\",\n    \"Closed cases can be selected with both old conclusions preserved\",\n    \"First rooftop course is completable without falling\",\n    \"Second rooftop course keeps a separate actual record\",\n    \"Third courier route is completable and has its own recipient and record\",\n    \"Completed routes can be selected while keeping three best times\",\n    \"Jump buffering accepts an airborne request without pretending it jumped\",\n    \"A buffered jump fires on the real landing within 140 ms\",\n    \"Auto forward moves but leaves jumps under player control\",\n    \"Actual island paths, bridge and seal permit two discoveries and return\",\n    \"Cloud tower is a real third area and opens a new incomplete chapter\",\n    \"Uncalibrated wind actually blocks the star platform\",\n    \"Wind bridge, two star rotations, beacon and return report complete chapter two\",\n    \"detective extended chapter and records survive reload\",\n    \"wuxia extended chapter and records survive reload\",\n    \"ecology extended chapter and records survive reload\",\n    \"wasteland extended chapter and records survive reload\",\n    \"dream extended chapter and records survive reload\",\n    \"inn extended chapter and records survive reload\",\n    \"arcade extended chapter and records survive reload\",\n    \"islands extended chapter and records survive reload\",\n    \"Legacy moving save retains two delivered objects\",\n    \"Selecting a completed commission starts its real cargo while retaining all three records\",\n    \"Commission selection cannot discard an unfinished order\",\n    \"A pre-extension completed inn save enters the new chapter\",\n    \"A pre-extension island save retains discoveries and reaches the new island\",\n    \"Two-route courier saves gain an empty third route without losing best times\",\n    \"Ecology forecast matches actual water, health and age across all three gates and seasons\"\n  ],\n  \"commercialOrEmotionalValidation\": false\n}\n",
+    "stderr": "(node:25888) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  "precision_rules_regression": {
+    "exit_code": 0,
+    "stdout": "{\"checks\":23,\"passed\":23}\n",
+    "stderr": ""
+  },
+  "observation_rules_regression": {
+    "exit_code": 0,
+    "stdout": "{\"passed\":28,\"checks\":[\"Eight distinct target regions fit actual room coordinates\",\"Clicking an object records its identity only once\",\"Empty scenery does not complete an object\",\"Every authored hotspot is independently reachable\",\"Finding all eight targets reaches completion\",\"Restore filters duplicates and unknown object identities\",\"Restore derives completed state from all actual identities\",\"Malformed camera and hint data restore safely\",\"Zoom coordinate mapping round-trips target position\",\"Camera never exposes empty pixels at scene edges\",\"Three hints locate but never auto-find objects\",\"Hints skip an already found selected object\",\"Pipe masks rotate coherently and straight rotates by two axes\",\"Pipe level 0 starts disconnected and has a valid complete route\",\"Pipe level 0 solves through ordinary rotations\",\"Pipe level 1 starts disconnected and has a valid complete route\",\"Pipe level 1 solves through ordinary rotations\",\"Disconnected pump runs then returns to editable state\",\"Undo restores the complete previous rotation state and move count\",\"Invalid tile index never mutates network\",\"Restore rejects forged completion on disconnected pipes\",\"Restore retains valid completed network and next stage\",\"Restore validates tile types and undo history dimensions\",\"Save round-trip preserves rotations and in-flight progress\",\"seek factory tolerates a negative initial RAF delta and absent transient feedback\",\"seek factory pause freezes motion and resume continues real state\",\"conduit factory tolerates a negative initial RAF delta and absent transient feedback\",\"conduit factory pause freezes motion and resume continues real state\"],\"limits\":\"Production rules and lifecycle doubles; actual rendering and gestures are verified separately through CUA.\"}\n",
+    "stderr": ""
+  },
+  "gesture_rules_regression": {
+    "exit_code": 0,
+    "stdout": "{\"passed\":31,\"checks\":[\"Territory starts with safe outer boundary and no captured interior\",\"Entering an open area requires deliberate drawing mode\",\"Safe boundary movement changes origin without claiming territory\",\"Ordinary closed line claims the region without the enemy\",\"A second ordinary closed route reaches 68% completion\",\"Closing a path cannot capture through an enemy already touching the unfinished line\",\"Crossing own unfinished trail consumes a life and retracts it\",\"Moving enemy really collides with an unfinished line\",\"Enemy bounces from captured cells rather than entering safe space\",\"Voluntary retreat discards unfinished path without consuming lives\",\"Three collisions lead to failure and stop movement\",\"Save restore retains valid captured area and active trail\",\"Malformed territory save cannot put player outside board or falsely complete\",\"Enemy timing rejects negative and NaN deltas\",\"Vertical cut produces a real gravity fall and first-stage delivery\",\"Two intact ropes hold the initial lantern in place\",\"Cutting one rope changes support and creates continuous swing\",\"Second stage is reachable using timed cuts, not a completion shortcut\",\"Release preview is ballistic and changes with actual velocity\",\"Bad release really misses rather than snapping to receiver\",\"The same rope cannot be cut twice and invalid ropes have no effect\",\"Gesture intersection rejects separated lines and recognizes crossing\",\"Retry resets physical state but preserves chosen viewing settings\",\"Advancing to next stage requires an actual first delivery\",\"Restore retains in-flight velocity, time, support and freeze\",\"Restore rejects false completion with hanging or misplaced lantern\",\"Physics ignores invalid initial deltas and prevents huge integration steps\",\"trace real factory tolerates negative/NaN initial RAF timing and draws\",\"trace real factory pause freezes all state and resume continues\",\"swing real factory tolerates negative/NaN initial RAF timing and draws\",\"swing real factory pause freezes all state and resume continues\"],\"limits\":\"Production rules and actual factory lifecycle doubles, with browser rendering and gestures checked separately through CUA.\"}\n",
+    "stderr": ""
+  },
+  "logic_rules_regression": {
+    "exit_code": 0,
+    "stdout": "{\"passed\":31,\"checks\":[\"Hex grid neighbor relation is reciprocal and geometry agrees\",\"Bubble starts with authored color groups and 32 suspended balls\",\"Connected groups follow hex neighbors and require same color\",\"Pairs alone do not disappear\",\"Matching support releases actual disconnected lower cluster\",\"Landing is limited to vacant cells adjacent to impact\",\"Side-wall bounce preserves speed and redirects horizontal velocity\",\"Negative and nonfinite flight time do not mutate position\",\"Only one projectile can fly at a time\",\"Predicted landing equals actual continuous collision result\",\"Original board is clearable through real launches in six shots\",\"Shot budget produces genuine failure and stops launch\",\"In-flight save resumes same position and velocity\",\"Bubble completion survives restore\",\"Malformed bubble save falls back rather than breaking scene\",\"All eight mine neighbors are symmetric and bounded\",\"First click and its eight neighbors exclude mines for 192 boards\",\"Mine generation is deterministic for independent save restore\",\"Zero flood really reveals multiple safe cells\",\"Flagged cells cannot be revealed and open cells cannot be flagged\",\"Marking is capped at actual danger count\",\"Wrong reveal genuinely loses and cannot continue\",\"Chord requires matching adjacent flag count\",\"Correct numeric chord opens safe neighbors\",\"Incorrect but count-matching flags can cause a real chord loss\",\"Visible hint uses neighbor evidence without opening any cell\",\"Opening every safe cell wins; mine marking alone does not win\",\"Mine progress, marks and completion survive deterministic restore\",\"Invalid mine arrays and forged win flags are rejected\",\"Bubble blocked-impact failure remains failed after restore\",\"A revealed mine cannot be restored as a successful map\"],\"limits\":\"Production rule checks; real factory drawing and pause tested through Skia/DOM doubles. Browser control and responsive/fullscreen testing are not covered.\"}\n",
+    "stderr": ""
+  },
+  "nine_rules_regression": {
+    "exit_code": 0,
+    "stdout": "{\"passed\":74,\"checks\":[{\"name\":\"hook normal commands complete\",\"passed\":true},{\"name\":\"hook mid-session JSON round trip\",\"passed\":true},{\"name\":\"hook complete JSON round trip\",\"passed\":true},{\"name\":\"hook malformed timing / forged won\",\"passed\":true},{\"name\":\"fold normal commands complete\",\"passed\":true},{\"name\":\"fold mid-session JSON round trip\",\"passed\":true},{\"name\":\"fold complete JSON round trip\",\"passed\":true},{\"name\":\"fold malformed timing / forged won\",\"passed\":true},{\"name\":\"repair normal commands complete\",\"passed\":true},{\"name\":\"repair mid-session JSON round trip\",\"passed\":true},{\"name\":\"repair complete JSON round trip\",\"passed\":true},{\"name\":\"repair malformed timing / forged won\",\"passed\":true},{\"name\":\"delve normal commands complete\",\"passed\":true},{\"name\":\"delve mid-session JSON round trip\",\"passed\":true},{\"name\":\"delve complete JSON round trip\",\"passed\":true},{\"name\":\"delve malformed timing / forged won\",\"passed\":true},{\"name\":\"cluster normal commands complete\",\"passed\":true},{\"name\":\"cluster mid-session JSON round trip\",\"passed\":true},{\"name\":\"cluster complete JSON round trip\",\"passed\":true},{\"name\":\"cluster malformed timing / forged won\",\"passed\":true},{\"name\":\"paint normal commands complete\",\"passed\":true},{\"name\":\"paint mid-session JSON round trip\",\"passed\":true},{\"name\":\"paint complete JSON round trip\",\"passed\":true},{\"name\":\"paint malformed timing / forged won\",\"passed\":true},{\"name\":\"swarm normal commands complete\",\"passed\":true},{\"name\":\"swarm mid-session JSON round trip\",\"passed\":true},{\"name\":\"swarm complete JSON round trip\",\"passed\":true},{\"name\":\"swarm malformed timing / forged won\",\"passed\":true},{\"name\":\"kitchen normal commands complete\",\"passed\":true},{\"name\":\"kitchen mid-session JSON round trip\",\"passed\":true},{\"name\":\"kitchen complete JSON round trip\",\"passed\":true},{\"name\":\"kitchen malformed timing / forged won\",\"passed\":true},{\"name\":\"relay normal commands complete\",\"passed\":true},{\"name\":\"relay mid-session JSON round trip\",\"passed\":true},{\"name\":\"relay complete JSON round trip\",\"passed\":true},{\"name\":\"relay malformed timing / forged won\",\"passed\":true},{\"name\":\"grappling rope constraint, radial velocity, release continuity\",\"passed\":true},{\"name\":\"grappling checkpoint restart retains checkpoint\",\"passed\":true},{\"name\":\"perspective requires actual alignment at each broken bridge\",\"passed\":true},{\"name\":\"restoration requires cleaning, orientation and prior layer\",\"passed\":true},{\"name\":\"digging carves persistent cells and crystal can only be collected once\",\"passed\":true},{\"name\":\"collection size gate rejects a large object initially\",\"passed\":true},{\"name\":\"ink movement and regeneration differ by terrain\",\"passed\":true},{\"name\":\"ink timeout blocks commands and updates after restore\",\"passed\":true},{\"name\":\"squad dispatch requires the bridge and sufficient team size\",\"passed\":true},{\"name\":\"squad route crosses the repaired bridge, not the river\",\"passed\":true},{\"name\":\"kitchen prevents remote work, wrong ingredients and early soup pickup\",\"passed\":true},{\"name\":\"kitchen expiration blocks further play and survives restore\",\"passed\":true},{\"name\":\"relay manual cannot operate devices, wrong wire cannot advance\",\"passed\":true},{\"name\":\"hook controls require start and resume\",\"passed\":true},{\"name\":\"grappling provides only working left / right touch controls\",\"passed\":true},{\"name\":\"hook disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"fold controls require start and resume\",\"passed\":true},{\"name\":\"fold disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"repair controls require start and resume\",\"passed\":true},{\"name\":\"restoration completes through native buttons and their enabled states\",\"passed\":true},{\"name\":\"repair disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"delve controls require start and resume\",\"passed\":true},{\"name\":\"digging one physical key press is exactly one cell\",\"passed\":true},{\"name\":\"delve disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"cluster controls require start and resume\",\"passed\":true},{\"name\":\"collection touch hold releases on cancellation\",\"passed\":true},{\"name\":\"cluster disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"paint controls require start and resume\",\"passed\":true},{\"name\":\"paint disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"swarm controls require start and resume\",\"passed\":true},{\"name\":\"swarm disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"kitchen controls require start and resume\",\"passed\":true},{\"name\":\"service workflow completes through native station and work buttons\",\"passed\":true},{\"name\":\"kitchen disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"relay controls require start and resume\",\"passed\":true},{\"name\":\"relay roles isolate native controls and finish by valid buttons\",\"passed\":true},{\"name\":\"relay disposal removes native listeners and panel\",\"passed\":true},{\"name\":\"collection camera transform maps pointer back to the world\",\"passed\":true}],\"browser_verified\":false,\"scope\":\"Production state rules, valid command playthroughs, serialization and factory lifecycle with a DOM double. Actual browser input and layout remain unverified.\"}\n",
+    "stderr": ""
+  },
+  "frontier_rules_regression": {
+    "exit_code": 0,
+    "stdout": "Frontier rules passed: 55\n",
+    "stderr": ""
+  },
+  "frontier_lifecycle_regression": {
+    "exit_code": 0,
+    "stdout": "Frontier lifecycle and audio passed: 60\n",
+    "stderr": ""
+  },
+  "studio_rules_regression": {
+    "exit_code": 0,
+    "stdout": "Studio rules: 49 passed\n",
+    "stderr": ""
+  },
+  "studio_lifecycle_regression": {
+    "exit_code": 0,
+    "stdout": "Studio lifecycle: 50 passed\n",
+    "stderr": ""
+  },
+  "horizons_rules_regression": {
+    "exit_code": 0,
+    "stdout": "Horizons rule checks: 50\n",
+    "stderr": ""
+  },
+  "horizons_lifecycle_regression": {
+    "exit_code": 0,
+    "stdout": "Horizons lifecycle checks: 53\n",
+    "stderr": ""
+  },
+  "voyages_rules_regression": {
+    "exit_code": 0,
+    "stdout": "Voyages rules checks: 53\n",
+    "stderr": ""
+  },
+  "voyages_lifecycle_regression": {
+    "exit_code": 0,
+    "stdout": "Voyages lifecycle checks: 60\n",
+    "stderr": ""
+  },
+  "kinetics_rules_regression": {
+    "exit_code": 0,
+    "stdout": "Kinetics rule checks: 50\n",
+    "stderr": ""
+  },
+  "kinetics_lifecycle_regression": {
+    "exit_code": 0,
+    "stdout": "Kinetics lifecycle checks: 60\n",
+    "stderr": ""
+  },
+  "thresholds_rules_regression": {
+    "exit_code": 0,
+    "stdout": "Rules checks: 58\n",
+    "stderr": ""
+  },
+  "thresholds_lifecycle_regression": {
+    "exit_code": 0,
+    "stdout": "Lifecycle checks: 50\n",
+    "stderr": ""
+  },
+  "circuitry_rules_regression": {
+    "exit_code": 0,
+    "stdout": "Rules checks: 67\n",
+    "stderr": ""
+  },
+  "circuitry_lifecycle_regression": {
+    "exit_code": 0,
+    "stdout": "Lifecycle checks: 60\n",
+    "stderr": ""
+  },
+  "parlor_rules_regression": {
+    "exit_code": 0,
+    "stdout": "Rules checks: 67\n",
+    "stderr": ""
+  },
+  "parlor_lifecycle_regression": {
+    "exit_code": 0,
+    "stdout": "Lifecycle checks: 48\n",
+    "stderr": ""
+  },
+  "rules": {
+    "passed": true,
+    "count": 54,
+    "checks": [
+      "dicework normal commands complete real objective",
+      "dicework initial progress complete JSON restores exactly",
+      "dicework completion freezes all simulation clocks",
+      "dicework restart restores original exercise",
+      "dicework forged completion cannot win a fresh state",
+      "dicework invalid fields versions and unknown keys are rejected",
+      "synchro normal commands complete real objective",
+      "synchro initial progress complete JSON restores exactly",
+      "synchro completion freezes all simulation clocks",
+      "synchro restart restores original exercise",
+      "synchro forged completion cannot win a fresh state",
+      "synchro invalid fields versions and unknown keys are rejected",
+      "perigee normal commands complete real objective",
+      "perigee initial progress complete JSON restores exactly",
+      "perigee completion freezes all simulation clocks",
+      "perigee restart restores original exercise",
+      "perigee forged completion cannot win a fresh state",
+      "perigee invalid fields versions and unknown keys are rejected",
+      "Dice category scores match actual pips",
+      "Dice has no category selection or locks before first roll",
+      "Dice rolling animation blocks reroll and locks until settled",
+      "Held dice retain their actual result after partial reroll",
+      "All held dice cannot consume another roll",
+      "Three rolls require a category rather than a fourth roll",
+      "Dice record uses actual category value and closes it for later rounds",
+      "Dice zero result is a valid deliberate record",
+      "Mid-roll JSON restore preserves RNG, locked faces and eventual outcome",
+      "Next dice sequence is reproducible and differs from original",
+      "Dice saves reject forged category points and malformed dice",
+      "Tactical planning uses adjacent open cells and no more than four steps",
+      "Tactical editing is inert while both teams execute",
+      "Tactical wait undo and clear change only selected plan",
+      "Enemy intent is four legal public steps",
+      "Two units requesting the same empty cell both wait symmetrically",
+      "An occupied cell prevents movement but allied swap is allowed",
+      "Visible freight crates obstruct attack rays",
+      "Lethal opposing attacks are settled simultaneously",
+      "Mid-step tactical restore retains interpolation and actual result",
+      "Tactical round ends after four real slots and new plans start empty",
+      "Tactical saves reject overlapping live units, walls and illegal paths",
+      "Orbital circle conserves radius and energy under gravity integration",
+      "Orbit remains stationary until explicit launch",
+      "Circular calibration consumes actual delta-v without moving position",
+      "Directional burns change velocity according to selected heading",
+      "Burn impulse is limited by remaining fuel without negative fuel",
+      "Trajectory prediction is pure and follows the same physical integrator",
+      "Physical time follows selected acceleration while real clock remains real",
+      "Pausing orbital drift freezes all state including halfway burn glow",
+      "Station velocity matches its circular motion",
+      "Dock rejects distant or fast flyby even if another condition matches",
+      "Uncorrected stationary orbit cannot satisfy the exercise by forged won",
+      "Inward burns can actually impact the visible planet",
+      "Orbit midpoint save continues exactly through future physical samples",
+      "Malformed orbital position clocks fuel and trail reset safely"
+    ],
+    "method": "Normal full command playthroughs, actual dice category/RNG/hold/record rules, symmetric simultaneous movement and damage, two-body planar gravity integration, delta-v fuel, trajectory prediction, docking gates and JSON restoration. Not browser or commercial acceptance."
+  },
+  "lifecycle": {
+    "passed": true,
+    "count": 46,
+    "checks": [
+      "dicework no controls pointer or tick can operate before Start",
+      "dicework Start enables native controls and canvas accessible label",
+      "Native dice roll settles actual result and disables controls during animation",
+      "Canvas die hit locks the correct die and native label reflects it",
+      "Actual keyboard number toggles lock and R rolls once",
+      "Held die survives actual production controller reroll",
+      "Canvas category hit previews choice and native record stores actual pips",
+      "Previously recorded category stays disabled on next round",
+      "Native new dice sequence restarts without recycling old records",
+      "dicework host pause blocks commands native clicks and ticks",
+      "dicework returned state is isolated from caller mutation",
+      "dicework actual production factory restores JSON progress exactly",
+      "dicework dispose removes scene controls listeners and pointer captures",
+      "dicework disposed scene cannot be reactivated or changed",
+      "synchro no controls pointer or tick can operate before Start",
+      "synchro Start enables native controls and canvas accessible label",
+      "Actual canvas drag appends adjacent cells and releases capture",
+      "Tactical native undo and wait edit only selected plan",
+      "Actual tactical number and arrow events select and plan once",
+      "Native tactical commit disables edit and advances actual simultaneous slots",
+      "Native tactical speed changes execution speed but not plan",
+      "Tactical pointer cancel and blur release current capture",
+      "synchro host pause blocks commands native clicks and ticks",
+      "synchro returned state is isolated from caller mutation",
+      "synchro actual production factory restores JSON progress exactly",
+      "synchro dispose removes scene controls listeners and pointer captures",
+      "synchro disposed scene cannot be reactivated or changed",
+      "perigee no controls pointer or tick can operate before Start",
+      "perigee Start enables native controls and canvas accessible label",
+      "Paused orbital native controls permit real velocity calibration without drifting",
+      "Orbital canvas direction and native pulse alter actual velocity",
+      "Native orbital warp and zoom select actual model and view settings",
+      "Orbital native hold applies fuel-consuming thrust only while running",
+      "Actual J key hold releases on keyup without continued fuel use",
+      "Orbital host pause cancels native hold capture and saves actual current state",
+      "Orbital native failed dock presents measured conditions and never wins",
+      "Native pause of orbital drift freezes all clocks",
+      "perigee host pause blocks commands native clicks and ticks",
+      "perigee returned state is isolated from caller mutation",
+      "perigee actual production factory restores JSON progress exactly",
+      "perigee dispose removes scene controls listeners and pointer captures",
+      "perigee disposed scene cannot be reactivated or changed",
+      "dicework completion exposes restart and valid continuation only",
+      "synchro completion exposes restart and valid continuation only",
+      "perigee completion exposes restart and valid continuation only",
+      "All intermediate production save states remain exact under draw"
+    ],
+    "method": "Production Canvas factories and actual native callbacks via DOM/Skia, die lock and category hit, tactical path drag, real keyboard events, orbital thrust hold/cancel/capture, host pause, JSON restore and disposal. Does not verify actual browser CSS layout, device input or persistence."
+  },
+  "production_render": {
+    "frames": 9,
+    "all_phases": true,
+    "pause_state_unchanged": true,
+    "method": "Production Canvas factories with Skia. Does not verify browser layout, browser keyboard/touch input, fullscreen or persistence."
+  },
+  "build": {
+    "exit_code": 0,
+    "stdout": "Built 19 static demo(s) into F:\\codex_project\\0930_codex_project\\_site\n",
+    "stderr": ""
+  },
+  "preservation": {
+    "protected": 2483,
+    "changed": [],
+    "missing": [],
+    "editable_shared": [
+      "forms.html",
+      "forms.js",
+      "game-forms-catalog.js",
+      "showcase-catalog.js",
+      "showcase.html",
+      "showcase.js"
+    ],
+    "storage": "No browser storage read, cleared or migrated. Original IDs, edition routes and storage prefixes compared against baseline."
+  },
+  "catalogs": {
+    "forms": 101,
+    "entrances": 110,
+    "uniqueForms": 101,
+    "uniqueEntrances": 110,
+    "allFormsRouted": true,
+    "previousForms": 98,
+    "previousEntrances": 107,
+    "changedPreviousForms": [],
+    "changedPreviousEntrances": [],
+    "storagePrefixesPreserved": true,
+    "newForms": [
+      {
+        "id": "dice-combination",
+        "play": "dicework"
+      },
+      {
+        "id": "simultaneous-tactics",
+        "play": "synchro"
+      },
+      {
+        "id": "orbital-navigation",
+        "play": "perigee"
+      }
+    ],
+    "newRouter": true,
+    "previewKinds": [
+      {
+        "id": "dicework",
+        "kind": "生产场景绘制预览"
+      },
+      {
+        "id": "synchro",
+        "kind": "生产场景绘制预览"
+      },
+      {
+        "id": "perigee",
+        "kind": "生产场景绘制预览"
+      }
+    ]
+  },
+  "packaged": {
+    "targets": 21,
+    "mismatches": []
+  },
+  "http": [
+    {
+      "path": "forms.html?left=dice-combination&right=simultaneous-tactics",
+      "status": 200,
+      "bytes": 8874,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "forms.html?left=orbital-navigation&right=flight-sim",
+      "status": 200,
+      "bytes": 8874,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase.html?play=dicework",
+      "status": 200,
+      "bytes": 6678,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase.html?play=synchro",
+      "status": 200,
+      "bytes": 6678,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase.html?play=perigee",
+      "status": 200,
+      "bytes": 6678,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase-trajectories-kit.js",
+      "status": 200,
+      "bytes": 5702,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase-trajectories-panel.js",
+      "status": 200,
+      "bytes": 7647,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase-trajectories-rules.js",
+      "status": 200,
+      "bytes": 13746,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase-trajectories-sprites.js",
+      "status": 200,
+      "bytes": 287,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase-trajectories.js",
+      "status": 200,
+      "bytes": 11953,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "forms.html",
+      "status": 200,
+      "bytes": 8874,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "forms.js",
+      "status": 200,
+      "bytes": 5427,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "game-forms-catalog.js",
+      "status": 200,
+      "bytes": 59268,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase-catalog.js",
+      "status": 200,
+      "bytes": 63584,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase.html",
+      "status": 200,
+      "bytes": 6678,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "showcase.js",
+      "status": 200,
+      "bytes": 28213,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/trajectories/dice-table.webp",
+      "status": 200,
+      "bytes": 549926,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/trajectories/ivory-die.webp",
+      "status": 200,
+      "bytes": 159304,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/trajectories/orbital-craft.webp",
+      "status": 200,
+      "bytes": 264598,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/trajectories/orbital-planet.webp",
+      "status": 200,
+      "bytes": 595662,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/trajectories/orbital-space.webp",
+      "status": 200,
+      "bytes": 218342,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/trajectories/tactical-pieces.webp",
+      "status": 200,
+      "bytes": 262568,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/trajectories/tactical-yard.webp",
+      "status": 200,
+      "bytes": 692392,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/trajectories/previews/dicework.webp",
+      "status": 200,
+      "bytes": 180768,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/trajectories/previews/perigee.webp",
+      "status": 200,
+      "bytes": 131280,
+      "served_matches_workspace": true
+    },
+    {
+      "path": "assets/game-forms/trajectories/previews/synchro.webp",
+      "status": 200,
+      "bytes": 251796,
+      "served_matches_workspace": true
+    }
+  ],
+  "companion_service": {
+    "service": "frontier-room",
+    "version": 1
+  },
+  "syntax_errors": [],
+  "original_assets": {
+    "count": 7,
+    "generation_mode": "builtin image_gen",
+    "hash_mismatches": []
+  },
+  "browser_qa": {
+    "verified": false,
+    "responsive_fullscreen_native_input_storage_verified": false,
+    "attempts": [
+      "cua.getState failed during initialization: trusted Node process exited unexpectedly; kernel reset, rerun your request"
+    ],
+    "blocker": "Browser control kernel exits before returning browser state. No alternate browser automation used."
+  },
+  "new_checks": 100,
+  "passed": true,
+  "acceptance_complete": false
+}

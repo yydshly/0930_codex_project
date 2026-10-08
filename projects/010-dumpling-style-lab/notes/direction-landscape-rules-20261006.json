@@ -1,0 +1,1326 @@
+{
+  "date": "2026-10-06",
+  "direction": "RIVERFOLD / 溪丘拼境",
+  "passed": true,
+  "checkCount": 39,
+  "checks": [
+    "fresh independent world is paused with one seed and no unearned score",
+    "authored eighteen-tile deck has immutable unique IDs and actual terrain ports",
+    "axial directions match requested clockwise pointy-top edge centers",
+    "opposite directions return to the original cell and rotate terrain clockwise",
+    "all unpaused gameplay actions are blocked while paused without mutations",
+    "malformed values unknown actions and unwanted payload properties are atomic",
+    "select allows bounded frontier coordinates but rejects occupied or isolated cells",
+    "frontier is unique adjacent empty geometry with no mutation or placed coordinates",
+    "selection and same orientation are harmless no-ops rather than ledger growth",
+    "rotate changes only current terrain orientation and does not move placed terrain",
+    "preview is pure and explains no selection occupied cells isolated positions and bad orientations",
+    "water-to-land incoming mismatch is forbidden and placement cannot change score or board",
+    "valid river preview scores its exact shared edge and reveals projected real water group",
+    "explicit placement agrees with preview and consumes exactly one authored tile",
+    "forest-village land mismatch remains legal and earns less than an exact edge",
+    "only equal shared terrain edges join a group even across touching cells",
+    "forest matching edge joins the exact real cells and reaches two before objective threshold",
+    "connected component totals include each terrain-bearing cell at most once",
+    "every completed connection group is genuinely reachable over matching shared ports",
+    "placement contacts count only actual neighbors with transparent match scoring",
+    "undo cannot remove seed and returns last tile score deck and actual objectives",
+    "undo preserves the removed orientation for a genuine subsequent replacement",
+    "undo retracts attained objectives and restores them only through replacement",
+    "remaining queued previews are copies and cannot mutate authored deck or world",
+    "finish is rejected before all eighteen tiles and objective completion alone does not finish",
+    "eighteenth placement leaves an editable board and needs explicit finish",
+    "explicit finish summarizes actual score groups and success without bonus grants",
+    "a legal low-connectivity arrangement finishes with genuine unmet goals instead of fake success",
+    "terminal world rejects resume and all board mutations without losing its result",
+    "ordinary deterministic heuristic reaches all objectives using only accepted player actions",
+    "heuristic can continue a legal manual detour and undo without replacing the board",
+    "paused planner returns no action while its live preview can still explain the map",
+    "serialize is a deep normalized paused snapshot and never changes live state",
+    "strict replay restores initial partial undone and completed worlds paused",
+    "forged derived score coordinates terrain objective stats log message phase and summary reject",
+    "unknown malformed repetitive skipped or post-finish ledger records reject",
+    "malformed oversized cyclic wrong-version and non-object saves reject safely",
+    "legal action cap is genuinely reached by replayable rotations and prevents further mutation",
+    "complete source topology score and objectives meet all authoritative invariants"
+  ],
+  "failures": [],
+  "playthroughs": [
+    {
+      "mode": "ordinary shared-API heuristic demonstration",
+      "actionCount": 43,
+      "score": 536,
+      "objectives": {
+        "forest": {
+          "current": 7,
+          "target": 4,
+          "complete": true
+        },
+        "village": {
+          "current": 7,
+          "target": 3,
+          "complete": true
+        },
+        "water": {
+          "current": 5,
+          "target": 5,
+          "complete": true
+        }
+      },
+      "summary": {
+        "score": 536,
+        "placements": 18,
+        "objectives": {
+          "forest": {
+            "current": 7,
+            "target": 4,
+            "complete": true
+          },
+          "village": {
+            "current": 7,
+            "target": 3,
+            "complete": true
+          },
+          "water": {
+            "current": 5,
+            "target": 5,
+            "complete": true
+          }
+        },
+        "completedObjectives": 3,
+        "perfectPlacements": 16,
+        "matchedEdges": 35
+      },
+      "ledger": [
+        {
+          "type": "select",
+          "payload": {
+            "q": -1,
+            "r": 0
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": 0,
+            "r": 1
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": 1,
+            "r": -1
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": -2,
+            "r": 0
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": 1,
+            "r": 1
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": 1,
+            "r": -2
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": -3,
+            "r": 0
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": 0,
+            "r": 2
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "orient",
+          "payload": 1
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": -3,
+            "r": 1
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": -2,
+            "r": 1
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "orient",
+          "payload": 5
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": 0,
+            "r": -1
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "orient",
+          "payload": 2
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": -1,
+            "r": 2
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "orient",
+          "payload": 3
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": -1,
+            "r": -1
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": -1,
+            "r": 1
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": 1,
+            "r": 2
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "orient",
+          "payload": 2
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": 2,
+            "r": -2
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": -2,
+            "r": -1
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "orient",
+          "payload": 1
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": 2,
+            "r": -1
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "finish"
+        }
+      ],
+      "board": [
+        {
+          "id": "seed",
+          "q": 0,
+          "r": 0,
+          "tileId": "seed",
+          "center": "meadow",
+          "edges": [
+            "water",
+            "forest",
+            "village",
+            "water",
+            "forest",
+            "village"
+          ],
+          "rotation": 0,
+          "score": 0,
+          "matches": 0,
+          "contacts": 0,
+          "perfect": false
+        },
+        {
+          "id": "p1",
+          "q": -1,
+          "r": 0,
+          "tileId": "river-01",
+          "rotation": 0,
+          "center": "water",
+          "edges": [
+            "water",
+            "meadow",
+            "meadow",
+            "water",
+            "meadow",
+            "meadow"
+          ],
+          "score": 22,
+          "matches": 1,
+          "contacts": 1,
+          "perfect": true
+        },
+        {
+          "id": "p2",
+          "q": 0,
+          "r": 1,
+          "tileId": "forest-01",
+          "rotation": 0,
+          "center": "forest",
+          "edges": [
+            "forest",
+            "forest",
+            "forest",
+            "forest",
+            "forest",
+            "forest"
+          ],
+          "score": 22,
+          "matches": 1,
+          "contacts": 1,
+          "perfect": true
+        },
+        {
+          "id": "p3",
+          "q": 1,
+          "r": -1,
+          "tileId": "village-01",
+          "rotation": 0,
+          "center": "village",
+          "edges": [
+            "village",
+            "village",
+            "village",
+            "village",
+            "village",
+            "village"
+          ],
+          "score": 22,
+          "matches": 1,
+          "contacts": 1,
+          "perfect": true
+        },
+        {
+          "id": "p4",
+          "q": -2,
+          "r": 0,
+          "tileId": "river-02",
+          "rotation": 0,
+          "center": "water",
+          "edges": [
+            "water",
+            "meadow",
+            "meadow",
+            "water",
+            "meadow",
+            "meadow"
+          ],
+          "score": 22,
+          "matches": 1,
+          "contacts": 1,
+          "perfect": true
+        },
+        {
+          "id": "p5",
+          "q": 1,
+          "r": 1,
+          "tileId": "forest-02",
+          "rotation": 0,
+          "center": "forest",
+          "edges": [
+            "forest",
+            "forest",
+            "forest",
+            "forest",
+            "forest",
+            "forest"
+          ],
+          "score": 22,
+          "matches": 1,
+          "contacts": 1,
+          "perfect": true
+        },
+        {
+          "id": "p6",
+          "q": 1,
+          "r": -2,
+          "tileId": "village-02",
+          "rotation": 0,
+          "center": "village",
+          "edges": [
+            "village",
+            "village",
+            "village",
+            "village",
+            "village",
+            "village"
+          ],
+          "score": 22,
+          "matches": 1,
+          "contacts": 1,
+          "perfect": true
+        },
+        {
+          "id": "p7",
+          "q": -3,
+          "r": 0,
+          "tileId": "river-03",
+          "rotation": 0,
+          "center": "water",
+          "edges": [
+            "water",
+            "water",
+            "meadow",
+            "meadow",
+            "meadow",
+            "meadow"
+          ],
+          "score": 22,
+          "matches": 1,
+          "contacts": 1,
+          "perfect": true
+        },
+        {
+          "id": "p8",
+          "q": 0,
+          "r": 2,
+          "tileId": "forest-03",
+          "rotation": 0,
+          "center": "forest",
+          "edges": [
+            "forest",
+            "forest",
+            "forest",
+            "forest",
+            "forest",
+            "forest"
+          ],
+          "score": 32,
+          "matches": 2,
+          "contacts": 2,
+          "perfect": true
+        },
+        {
+          "id": "p9",
+          "q": -3,
+          "r": 1,
+          "tileId": "river-04",
+          "rotation": 1,
+          "center": "water",
+          "edges": [
+            "meadow",
+            "water",
+            "meadow",
+            "meadow",
+            "water",
+            "meadow"
+          ],
+          "score": 32,
+          "matches": 2,
+          "contacts": 2,
+          "perfect": true
+        },
+        {
+          "id": "p10",
+          "q": -2,
+          "r": 1,
+          "tileId": "meadow-01",
+          "rotation": 0,
+          "center": "meadow",
+          "edges": [
+            "meadow",
+            "meadow",
+            "meadow",
+            "meadow",
+            "meadow",
+            "meadow"
+          ],
+          "score": 42,
+          "matches": 3,
+          "contacts": 3,
+          "perfect": true
+        },
+        {
+          "id": "p11",
+          "q": 0,
+          "r": -1,
+          "tileId": "village-03",
+          "rotation": 5,
+          "center": "village",
+          "edges": [
+            "village",
+            "forest",
+            "village",
+            "meadow",
+            "village",
+            "village"
+          ],
+          "score": 27,
+          "matches": 3,
+          "contacts": 4,
+          "perfect": false
+        },
+        {
+          "id": "p12",
+          "q": -1,
+          "r": 2,
+          "tileId": "forest-04",
+          "rotation": 2,
+          "center": "forest",
+          "edges": [
+            "forest",
+            "meadow",
+            "forest",
+            "forest",
+            "meadow",
+            "forest"
+          ],
+          "score": 32,
+          "matches": 2,
+          "contacts": 2,
+          "perfect": true
+        },
+        {
+          "id": "p13",
+          "q": -1,
+          "r": -1,
+          "tileId": "river-05",
+          "rotation": 3,
+          "center": "water",
+          "edges": [
+            "meadow",
+            "meadow",
+            "meadow",
+            "water",
+            "meadow",
+            "water"
+          ],
+          "score": 42,
+          "matches": 3,
+          "contacts": 3,
+          "perfect": true
+        },
+        {
+          "id": "p14",
+          "q": -1,
+          "r": 1,
+          "tileId": "meadow-02",
+          "rotation": 0,
+          "center": "meadow",
+          "edges": [
+            "meadow",
+            "meadow",
+            "forest",
+            "meadow",
+            "meadow",
+            "village"
+          ],
+          "score": 37,
+          "matches": 4,
+          "contacts": 5,
+          "perfect": false
+        },
+        {
+          "id": "p15",
+          "q": 1,
+          "r": 2,
+          "tileId": "forest-05",
+          "rotation": 0,
+          "center": "forest",
+          "edges": [
+            "forest",
+            "forest",
+            "forest",
+            "forest",
+            "forest",
+            "forest"
+          ],
+          "score": 32,
+          "matches": 2,
+          "contacts": 2,
+          "perfect": true
+        },
+        {
+          "id": "p16",
+          "q": 2,
+          "r": -2,
+          "tileId": "village-04",
+          "rotation": 2,
+          "center": "village",
+          "edges": [
+            "forest",
+            "meadow",
+            "village",
+            "village",
+            "meadow",
+            "village"
+          ],
+          "score": 32,
+          "matches": 2,
+          "contacts": 2,
+          "perfect": true
+        },
+        {
+          "id": "p17",
+          "q": -2,
+          "r": -1,
+          "tileId": "river-06",
+          "rotation": 0,
+          "center": "water",
+          "edges": [
+            "water",
+            "meadow",
+            "meadow",
+            "water",
+            "meadow",
+            "meadow"
+          ],
+          "score": 42,
+          "matches": 3,
+          "contacts": 3,
+          "perfect": true
+        },
+        {
+          "id": "p18",
+          "q": 2,
+          "r": -1,
+          "tileId": "meadow-03",
+          "rotation": 1,
+          "center": "meadow",
+          "edges": [
+            "meadow",
+            "meadow",
+            "forest",
+            "village",
+            "meadow",
+            "forest"
+          ],
+          "score": 32,
+          "matches": 2,
+          "contacts": 2,
+          "perfect": true
+        }
+      ]
+    },
+    {
+      "mode": "ordinary legal low-connectivity counterexample",
+      "actionCount": 42,
+      "score": 0,
+      "objectives": {
+        "forest": {
+          "current": 1,
+          "target": 4,
+          "complete": false
+        },
+        "village": {
+          "current": 1,
+          "target": 3,
+          "complete": false
+        },
+        "water": {
+          "current": 1,
+          "target": 5,
+          "complete": false
+        }
+      },
+      "summary": {
+        "score": 0,
+        "placements": 18,
+        "objectives": {
+          "forest": {
+            "current": 1,
+            "target": 4,
+            "complete": false
+          },
+          "village": {
+            "current": 1,
+            "target": 3,
+            "complete": false
+          },
+          "water": {
+            "current": 1,
+            "target": 5,
+            "complete": false
+          }
+        },
+        "completedObjectives": 0,
+        "perfectPlacements": 0,
+        "matchedEdges": 0
+      },
+      "ledger": [
+        {
+          "type": "select",
+          "payload": {
+            "q": 0,
+            "r": -1
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": -1,
+            "r": 1
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": 0,
+            "r": 1
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "orient",
+          "payload": 1
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": -2,
+            "r": 1
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": 0,
+            "r": -2
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": 1,
+            "r": -2
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": 2,
+            "r": -2
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": 1,
+            "r": 1
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": 2,
+            "r": 0
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": -1,
+            "r": 2
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": 0,
+            "r": 2
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "orient",
+          "payload": 2
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": 0,
+            "r": -3
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "orient",
+          "payload": 4
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": 1,
+            "r": -3
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": 3,
+            "r": -3
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": 3,
+            "r": -1
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": -1,
+            "r": -2
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "orient",
+          "payload": 2
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": 1,
+            "r": 2
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "orient",
+          "payload": 1
+        },
+        {
+          "type": "select",
+          "payload": {
+            "q": -2,
+            "r": -1
+          }
+        },
+        {
+          "type": "place"
+        },
+        {
+          "type": "finish"
+        }
+      ],
+      "board": [
+        {
+          "id": "seed",
+          "q": 0,
+          "r": 0,
+          "tileId": "seed",
+          "center": "meadow",
+          "edges": [
+            "water",
+            "forest",
+            "village",
+            "water",
+            "forest",
+            "village"
+          ],
+          "rotation": 0,
+          "score": 0,
+          "matches": 0,
+          "contacts": 0,
+          "perfect": false
+        },
+        {
+          "id": "p1",
+          "q": 0,
+          "r": -1,
+          "tileId": "river-01",
+          "rotation": 0,
+          "center": "water",
+          "edges": [
+            "water",
+            "meadow",
+            "meadow",
+            "water",
+            "meadow",
+            "meadow"
+          ],
+          "score": 0,
+          "matches": 0,
+          "contacts": 1,
+          "perfect": false
+        },
+        {
+          "id": "p2",
+          "q": -1,
+          "r": 1,
+          "tileId": "forest-01",
+          "rotation": 0,
+          "center": "forest",
+          "edges": [
+            "forest",
+            "forest",
+            "forest",
+            "forest",
+            "forest",
+            "forest"
+          ],
+          "score": 0,
+          "matches": 0,
+          "contacts": 1,
+          "perfect": false
+        },
+        {
+          "id": "p3",
+          "q": 0,
+          "r": 1,
+          "tileId": "village-01",
+          "rotation": 0,
+          "center": "village",
+          "edges": [
+            "village",
+            "village",
+            "village",
+            "village",
+            "village",
+            "village"
+          ],
+          "score": 0,
+          "matches": 0,
+          "contacts": 2,
+          "perfect": false
+        },
+        {
+          "id": "p4",
+          "q": -2,
+          "r": 1,
+          "tileId": "river-02",
+          "rotation": 1,
+          "center": "water",
+          "edges": [
+            "meadow",
+            "water",
+            "meadow",
+            "meadow",
+            "water",
+            "meadow"
+          ],
+          "score": 0,
+          "matches": 0,
+          "contacts": 1,
+          "perfect": false
+        },
+        {
+          "id": "p5",
+          "q": 0,
+          "r": -2,
+          "tileId": "forest-02",
+          "rotation": 0,
+          "center": "forest",
+          "edges": [
+            "forest",
+            "forest",
+            "forest",
+            "forest",
+            "forest",
+            "forest"
+          ],
+          "score": 0,
+          "matches": 0,
+          "contacts": 1,
+          "perfect": false
+        },
+        {
+          "id": "p6",
+          "q": 1,
+          "r": -2,
+          "tileId": "village-02",
+          "rotation": 0,
+          "center": "village",
+          "edges": [
+            "village",
+            "village",
+            "village",
+            "village",
+            "village",
+            "village"
+          ],
+          "score": 0,
+          "matches": 0,
+          "contacts": 2,
+          "perfect": false
+        },
+        {
+          "id": "p7",
+          "q": 2,
+          "r": -2,
+          "tileId": "river-03",
+          "rotation": 0,
+          "center": "water",
+          "edges": [
+            "water",
+            "water",
+            "meadow",
+            "meadow",
+            "meadow",
+            "meadow"
+          ],
+          "score": 0,
+          "matches": 0,
+          "contacts": 1,
+          "perfect": false
+        },
+        {
+          "id": "p8",
+          "q": 1,
+          "r": 1,
+          "tileId": "forest-03",
+          "rotation": 0,
+          "center": "forest",
+          "edges": [
+            "forest",
+            "forest",
+            "forest",
+            "forest",
+            "forest",
+            "forest"
+          ],
+          "score": 0,
+          "matches": 0,
+          "contacts": 1,
+          "perfect": false
+        },
+        {
+          "id": "p9",
+          "q": 2,
+          "r": 0,
+          "tileId": "river-04",
+          "rotation": 0,
+          "center": "water",
+          "edges": [
+            "water",
+            "meadow",
+            "meadow",
+            "water",
+            "meadow",
+            "meadow"
+          ],
+          "score": 0,
+          "matches": 0,
+          "contacts": 1,
+          "perfect": false
+        },
+        {
+          "id": "p10",
+          "q": -1,
+          "r": 2,
+          "tileId": "meadow-01",
+          "rotation": 0,
+          "center": "meadow",
+          "edges": [
+            "meadow",
+            "meadow",
+            "meadow",
+            "meadow",
+            "meadow",
+            "meadow"
+          ],
+          "score": 0,
+          "matches": 0,
+          "contacts": 2,
+          "perfect": false
+        },
+        {
+          "id": "p11",
+          "q": 0,
+          "r": 2,
+          "tileId": "village-03",
+          "rotation": 0,
+          "center": "village",
+          "edges": [
+            "village",
+            "village",
+            "forest",
+            "village",
+            "meadow",
+            "village"
+          ],
+          "score": 0,
+          "matches": 0,
+          "contacts": 3,
+          "perfect": false
+        },
+        {
+          "id": "p12",
+          "q": 0,
+          "r": -3,
+          "tileId": "forest-04",
+          "rotation": 2,
+          "center": "forest",
+          "edges": [
+            "forest",
+            "meadow",
+            "forest",
+            "forest",
+            "meadow",
+            "forest"
+          ],
+          "score": 0,
+          "matches": 0,
+          "contacts": 1,
+          "perfect": false
+        },
+        {
+          "id": "p13",
+          "q": 1,
+          "r": -3,
+          "tileId": "river-05",
+          "rotation": 4,
+          "center": "water",
+          "edges": [
+            "water",
+            "meadow",
+            "meadow",
+            "meadow",
+            "water",
+            "meadow"
+          ],
+          "score": 0,
+          "matches": 0,
+          "contacts": 3,
+          "perfect": false
+        },
+        {
+          "id": "p14",
+          "q": 3,
+          "r": -3,
+          "tileId": "meadow-02",
+          "rotation": 0,
+          "center": "meadow",
+          "edges": [
+            "meadow",
+            "meadow",
+            "forest",
+            "meadow",
+            "meadow",
+            "village"
+          ],
+          "score": 0,
+          "matches": 0,
+          "contacts": 1,
+          "perfect": false
+        },
+        {
+          "id": "p15",
+          "q": 3,
+          "r": -1,
+          "tileId": "forest-05",
+          "rotation": 0,
+          "center": "forest",
+          "edges": [
+            "forest",
+            "forest",
+            "forest",
+            "forest",
+            "forest",
+            "forest"
+          ],
+          "score": 0,
+          "matches": 0,
+          "contacts": 1,
+          "perfect": false
+        },
+        {
+          "id": "p16",
+          "q": -1,
+          "r": -2,
+          "tileId": "village-04",
+          "rotation": 0,
+          "center": "village",
+          "edges": [
+            "village",
+            "village",
+            "meadow",
+            "village",
+            "forest",
+            "meadow"
+          ],
+          "score": 0,
+          "matches": 0,
+          "contacts": 2,
+          "perfect": false
+        },
+        {
+          "id": "p17",
+          "q": 1,
+          "r": 2,
+          "tileId": "river-06",
+          "rotation": 2,
+          "center": "water",
+          "edges": [
+            "meadow",
+            "meadow",
+            "water",
+            "meadow",
+            "meadow",
+            "water"
+          ],
+          "score": 0,
+          "matches": 0,
+          "contacts": 2,
+          "perfect": false
+        },
+        {
+          "id": "p18",
+          "q": -2,
+          "r": -1,
+          "tileId": "meadow-03",
+          "rotation": 1,
+          "center": "meadow",
+          "edges": [
+            "meadow",
+            "meadow",
+            "forest",
+            "village",
+            "meadow",
+            "forest"
+          ],
+          "score": 0,
+          "matches": 0,
+          "contacts": 1,
+          "perfect": false
+        }
+      ]
+    }
+  ],
+  "limits": {
+    "actions": 4096,
+    "saveBytes": 1000000,
+    "coordinateLimit": 12
+  },
+  "method": "Actual exported production engine API and deterministic replay. No injected objective, score, victory, clock or grant action."
+}

@@ -1,0 +1,786 @@
+{
+  "passed": true,
+  "checks": [
+    "Duel actual near-range guard blocks an AI strike and builds meter",
+    "duel real save/reload restores progress",
+    "Real attacks resolve distance, hits, KO, next round and two-win match",
+    "Maze real movement collects signals and respects blocked boundary",
+    "maze real save/reload restores progress",
+    "Connected maze completes through real path-following, chase, power and pulse",
+    "Original music starts audibly and freezes/resumes on real pause",
+    "rhythm real save/reload restores progress",
+    "Actual timed keys score at least 60/80 notes and produce real combo/accuracy/grade",
+    "Comparison switching pauses the other game and its music",
+    "390px layout fits; touch rhythm pad generates a judged real input",
+    "QA is isolated; no runtime exceptions or missing assets"
+  ],
+  "results": {
+    "duel": {
+      "hero": {
+        "x": 496.6749999999997,
+        "y": 0,
+        "vy": 0,
+        "hp": 68,
+        "face": 1,
+        "walk": 216.67499999999973,
+        "guard": 0,
+        "hurt": 0,
+        "attack": null,
+        "cooldown": 0.28329999999999933,
+        "meter": 100
+      },
+      "rival": {
+        "x": 666.0050000000005,
+        "y": 0,
+        "vy": 0,
+        "hp": 0,
+        "face": -1,
+        "walk": 349.9950000000002,
+        "guard": 0,
+        "hurt": 0.19,
+        "attack": null,
+        "cooldown": 0,
+        "meter": 80
+      },
+      "round": 2,
+      "wins": [
+        2,
+        0
+      ],
+      "time": 35.8172000000005,
+      "phase": "match-end",
+      "won": true,
+      "score": 5040,
+      "elapsed": 20.488799999993923,
+      "hits": 26,
+      "blocks": 1,
+      "combo": 11,
+      "bestCombo": 13,
+      "aiWait": 0.1499000000000022
+    },
+    "maze": {
+      "player": {
+        "c": 8,
+        "r": 11,
+        "nc": 8,
+        "nr": 11,
+        "p": 0,
+        "d": 3
+      },
+      "ghosts": [
+        {
+          "c": 15,
+          "r": 15,
+          "nc": 15,
+          "nr": 14,
+          "p": 0.9780245098039324,
+          "d": 0,
+          "color": "red"
+        },
+        {
+          "c": 15,
+          "r": 1,
+          "nc": 15,
+          "nr": 2,
+          "p": 0.5205735294117699,
+          "d": 2,
+          "color": "violet"
+        }
+      ],
+      "collected": [
+        18,
+        19,
+        20,
+        37,
+        54,
+        71,
+        88,
+        105,
+        122,
+        123,
+        124,
+        141,
+        158,
+        175,
+        159,
+        160,
+        161,
+        162,
+        179,
+        196,
+        178,
+        177,
+        194,
+        211,
+        228,
+        229,
+        230,
+        231,
+        232,
+        249,
+        266,
+        265,
+        264,
+        263,
+        262,
+        261,
+        260,
+        259,
+        258,
+        241,
+        224,
+        207,
+        190,
+        173,
+        156,
+        155,
+        154,
+        137,
+        120,
+        103,
+        86,
+        69,
+        52,
+        104,
+        106,
+        107,
+        90,
+        91,
+        92,
+        93,
+        94,
+        111,
+        128,
+        145,
+        143,
+        126,
+        109,
+        76,
+        59,
+        60,
+        77,
+        74,
+        57,
+        58,
+        41,
+        24,
+        25,
+        55,
+        56,
+        23,
+        22,
+        26,
+        27,
+        28,
+        45,
+        89,
+        192,
+        209,
+        210,
+        227,
+        226,
+        225,
+        223,
+        222,
+        239,
+        256,
+        205,
+        188,
+        189,
+        206,
+        242,
+        248,
+        250,
+        251,
+        268,
+        269,
+        270,
+        253,
+        236,
+        219,
+        202,
+        185,
+        168,
+        167,
+        166,
+        165,
+        164,
+        147,
+        130,
+        131,
+        132,
+        133,
+        134,
+        117,
+        100,
+        83,
+        66,
+        49,
+        32,
+        31,
+        30,
+        47,
+        64,
+        48,
+        65,
+        81,
+        98,
+        97,
+        96,
+        79,
+        62,
+        80,
+        114,
+        149,
+        182,
+        199,
+        200,
+        217,
+        234,
+        235,
+        198,
+        197,
+        214,
+        195
+      ],
+      "score": 17600,
+      "lives": 1,
+      "power": 0,
+      "pulses": 2,
+      "freeze": 0.23350000000000587,
+      "grace": 0,
+      "time": 43.269699999982336,
+      "won": true,
+      "down": false,
+      "chain": 10,
+      "eaten": 16,
+      "board": [
+        "#################",
+        "#...#.......#...#",
+        "###.###.###.#...#",
+        "#.#.......#.#...#",
+        "#.#.##.#..#...#.#",
+        "#.#.......#...#.#",
+        "#.....#.#.##.##.#",
+        "#.#...#.#.#.....#",
+        "#.###.#.#.#.#.###",
+        "#...#.....#.....#",
+        "###.#.#...##.##.#",
+        "#...#.#.......#.#",
+        "#...#...##.##.#.#",
+        "#...........#...#",
+        "#.#..#####....#.#",
+        "#.#.........#...#",
+        "#################"
+      ],
+      "total": 154,
+      "remaining": 0,
+      "retries": 0
+    },
+    "rhythm": {
+      "elapsed": 37.941754,
+      "results": [
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "miss",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect",
+        "perfect"
+      ],
+      "score": 7900,
+      "combo": 0,
+      "maxCombo": 65,
+      "perfect": 79,
+      "good": 0,
+      "miss": 1,
+      "stray": 0,
+      "offsetMs": 0,
+      "won": true,
+      "grade": "S",
+      "accuracy": 98.8,
+      "audioTime": 37.941968,
+      "audioPaused": true,
+      "audioMuted": false,
+      "audioDuration": 40,
+      "chart": [
+        {
+          "time": 2.2222222222222223,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 2.7777777777777777,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 3.3333333333333335,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 3.611111111111111,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 3.8888888888888893,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 4.444444444444445,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 5,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 5.555555555555555,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 5.833333333333334,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 6.111111111111112,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 6.666666666666667,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 7.222222222222222,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 7.777777777777779,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 8.055555555555555,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 8.333333333333334,
+          "lane": 1,
+          "result": "miss"
+        },
+        {
+          "time": 8.88888888888889,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 9.444444444444445,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 10,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 10.277777777777779,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 10.555555555555555,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 11.11111111111111,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 11.666666666666668,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 12.222222222222223,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 12.5,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 12.777777777777779,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 13.333333333333334,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 13.88888888888889,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 14.444444444444445,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 14.722222222222223,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 15,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 15.555555555555557,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 16.11111111111111,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 16.666666666666668,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 16.944444444444446,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 17.22222222222222,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 17.77777777777778,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 18.333333333333336,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 18.88888888888889,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 19.166666666666668,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 19.444444444444446,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 20,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 20.555555555555557,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 21.11111111111111,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 21.38888888888889,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 21.666666666666668,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 22.22222222222222,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 22.77777777777778,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 23.333333333333336,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 23.61111111111111,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 23.88888888888889,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 24.444444444444446,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 25,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 25.555555555555557,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 25.833333333333336,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 26.11111111111111,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 26.666666666666668,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 27.222222222222225,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 27.77777777777778,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 28.055555555555557,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 28.333333333333336,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 28.88888888888889,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 29.444444444444446,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 30,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 30.27777777777778,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 30.555555555555557,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 31.111111111111114,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 31.666666666666668,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 32.22222222222222,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 32.5,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 32.77777777777778,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 33.333333333333336,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 33.88888888888889,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 34.44444444444444,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 34.72222222222222,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 35,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 35.55555555555556,
+          "lane": 2,
+          "result": "perfect"
+        },
+        {
+          "time": 36.111111111111114,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 36.66666666666667,
+          "lane": 0,
+          "result": "perfect"
+        },
+        {
+          "time": 36.94444444444444,
+          "lane": 1,
+          "result": "perfect"
+        },
+        {
+          "time": 37.22222222222222,
+          "lane": 1,
+          "result": "perfect"
+        }
+      ],
+      "audioError": ""
+    }
+  },
+  "errors": [],
+  "missing": []
+}

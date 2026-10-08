@@ -1,0 +1,253 @@
+{
+  "passed": true,
+  "checks": [
+    "Tower types deploy on actual road-side pads and spend exact funds",
+    "bastion actual pause/save/reload retains progress",
+    "Actual upgrade changes the selected tower and its real damage/range",
+    "All five real waves finish with actual bolts, slow effects, multi-enemy mortar hits and final large enemy"
+  ],
+  "result": {
+    "gold": 427,
+    "lives": 15,
+    "wave": 5,
+    "phase": "won",
+    "towers": [
+      {
+        "pad": 0,
+        "kind": "bolt",
+        "level": 1,
+        "cd": 0.5367000000000046,
+        "shots": 69
+      },
+      {
+        "pad": 2,
+        "kind": "frost",
+        "level": 2,
+        "cd": 0,
+        "shots": 10
+      },
+      {
+        "pad": 3,
+        "kind": "bolt",
+        "level": 2,
+        "cd": 0,
+        "shots": 0
+      },
+      {
+        "pad": 1,
+        "kind": "mortar",
+        "level": 2,
+        "cd": 1.1101769911504424,
+        "shots": 20
+      }
+    ],
+    "enemies": [],
+    "spawned": 12,
+    "nextId": 43,
+    "spawnTime": -3.3631999999999933,
+    "time": 52.48500000000052,
+    "kills": 42,
+    "leaks": 0,
+    "hits": 102,
+    "splashHits": 14,
+    "score": 6100,
+    "buildKind": "mortar",
+    "selectedPad": 1,
+    "won": true,
+    "checkpoint": {
+      "gold": 200,
+      "lives": 15,
+      "wave": 4,
+      "towers": [
+        {
+          "pad": 0,
+          "kind": "bolt",
+          "level": 1,
+          "cd": 0.5700000000000002,
+          "shots": 50
+        },
+        {
+          "pad": 2,
+          "kind": "frost",
+          "level": 2,
+          "cd": 0.6459035398230101,
+          "shots": 10
+        },
+        {
+          "pad": 3,
+          "kind": "bolt",
+          "level": 2,
+          "cd": 0,
+          "shots": 0
+        },
+        {
+          "pad": 1,
+          "kind": "mortar",
+          "level": 2,
+          "cd": 1.6334000000000013,
+          "shots": 11
+        }
+      ],
+      "kills": 30,
+      "leaks": 0,
+      "hits": 70,
+      "splashHits": 9,
+      "score": 3000,
+      "buildKind": "mortar",
+      "selectedPad": 1
+    },
+    "path": [
+      [
+        -20,
+        288
+      ],
+      [
+        269,
+        288
+      ],
+      [
+        294,
+        278
+      ],
+      [
+        309,
+        255
+      ],
+      [
+        309,
+        187
+      ],
+      [
+        321,
+        172
+      ],
+      [
+        341,
+        163
+      ],
+      [
+        475,
+        163
+      ],
+      [
+        492,
+        172
+      ],
+      [
+        503,
+        191
+      ],
+      [
+        503,
+        346
+      ],
+      [
+        514,
+        365
+      ],
+      [
+        538,
+        382
+      ],
+      [
+        716,
+        383
+      ],
+      [
+        740,
+        377
+      ],
+      [
+        759,
+        356
+      ],
+      [
+        763,
+        254
+      ],
+      [
+        775,
+        235
+      ],
+      [
+        793,
+        225
+      ],
+      [
+        997,
+        224
+      ],
+      [
+        1075,
+        214
+      ],
+      [
+        1138,
+        214
+      ]
+    ],
+    "pads": [
+      {
+        "x": 174,
+        "y": 236
+      },
+      {
+        "x": 253,
+        "y": 338
+      },
+      {
+        "x": 398,
+        "y": 224
+      },
+      {
+        "x": 571,
+        "y": 290
+      },
+      {
+        "x": 676,
+        "y": 326
+      },
+      {
+        "x": 830,
+        "y": 287
+      },
+      {
+        "x": 724,
+        "y": 177
+      },
+      {
+        "x": 943,
+        "y": 279
+      }
+    ],
+    "length": 1555.925010370456,
+    "types": {
+      "bolt": {
+        "name": "连弩",
+        "cost": 90,
+        "range": 192,
+        "damage": 18,
+        "interval": 0.72,
+        "color": "#f6d38d"
+      },
+      "frost": {
+        "name": "霜塔",
+        "cost": 80,
+        "range": 167,
+        "damage": 8,
+        "interval": 1.05,
+        "color": "#8befec"
+      },
+      "mortar": {
+        "name": "迫击",
+        "cost": 120,
+        "range": 231,
+        "damage": 28,
+        "interval": 1.65,
+        "color": "#ffa480"
+      }
+    }
+  },
+  "errors": [],
+  "missing": []
+}

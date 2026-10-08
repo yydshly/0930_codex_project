@@ -1,0 +1,1357 @@
+{
+  "date": "2026-10-05",
+  "passed": true,
+  "method": "Actual visible native page controls, keyboard, photos and fullscreen. Read-only DOM text, displayed image sources and layout; no hidden game state, injected clocks, prebuilt victory state or fabricated photographs.",
+  "checks": [
+    {
+      "name": "Final production reload renders its completed saved observation paused with the three actual photographs intact",
+      "passed": true,
+      "after": {
+        "buttons": [
+          {
+            "disabled": true,
+            "label": null,
+            "text": "苍鹭 最佳 88 分"
+          },
+          {
+            "disabled": true,
+            "label": null,
+            "text": "翠鸟 最佳 93 分"
+          },
+          {
+            "disabled": true,
+            "label": null,
+            "text": "林鹿 最佳 87 分"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "开启新一轮观察"
+          },
+          {
+            "disabled": true,
+            "label": "按住向左取景",
+            "text": "← 左取景"
+          },
+          {
+            "disabled": true,
+            "label": "按住向右取景",
+            "text": "右取景 →"
+          },
+          {
+            "disabled": true,
+            "label": "按住缩小焦距",
+            "text": "−"
+          },
+          {
+            "disabled": true,
+            "label": "按住放大焦距",
+            "text": "＋"
+          },
+          {
+            "disabled": true,
+            "label": null,
+            "text": "拍摄林鹿 · 空格"
+          },
+          {
+            "disabled": true,
+            "label": null,
+            "text": "继续观察"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "完整示范"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "打开照片图鉴"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "示范 ×1"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "全屏取景"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "退出全屏"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "关闭图鉴"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "林鹿 · 87 分合格记录 · 2.6× · p3"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "翠鸟 · 93 分合格记录 · 2.8× · p2"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "苍鹭 · 88 分合格记录 · 1.6× · p1"
+          }
+        ],
+        "caption": "每次快门都会记录当时真实画面，并显示评分与原因。",
+        "count": "3 张照片 · 3 次快门",
+        "detail": "实时构图 87 分",
+        "documentWidth": 760,
+        "focal": "焦距 2.6×",
+        "frame": "观察 林鹿",
+        "hint": "实时构图 87 分。镜头稳定，准备快门。",
+        "mode": "观察完成 · 已暂停",
+        "photos": [
+          {
+            "alt": "林鹿，87分，观察第4.6秒的实际照片",
+            "length": 144590,
+            "prefix": "data:image/png;base64,iV"
+          },
+          {
+            "alt": "翠鸟，93分，观察第3.1秒的实际照片",
+            "length": 125214,
+            "prefix": "data:image/png;base64,iV"
+          },
+          {
+            "alt": "苍鹭，88分，观察第1.3秒的实际照片",
+            "length": 141270,
+            "prefix": "data:image/png;base64,iV"
+          }
+        ],
+        "qualified": "3 / 3",
+        "save": "现场与实际 PNG 照片已独立保存",
+        "stable": "镜头已稳",
+        "time": "4.6 / 120",
+        "viewport": [
+          775,
+          871
+        ]
+      }
+    },
+    {
+      "name": "Actual premature shutter records a PNG with a stability reason and does not grant species completion",
+      "passed": true,
+      "after": {
+        "buttons": [
+          {
+            "disabled": true,
+            "label": null,
+            "text": "苍鹭 尚未记录"
+          },
+          {
+            "disabled": true,
+            "label": null,
+            "text": "翠鸟 尚未记录"
+          },
+          {
+            "disabled": true,
+            "label": null,
+            "text": "林鹿 尚未记录"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "开启新一轮观察"
+          },
+          {
+            "disabled": true,
+            "label": "按住向左取景",
+            "text": "← 左取景"
+          },
+          {
+            "disabled": true,
+            "label": "按住向右取景",
+            "text": "右取景 →"
+          },
+          {
+            "disabled": true,
+            "label": "按住缩小焦距",
+            "text": "−"
+          },
+          {
+            "disabled": true,
+            "label": "按住放大焦距",
+            "text": "＋"
+          },
+          {
+            "disabled": true,
+            "label": null,
+            "text": "拍摄苍鹭 · 空格"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "继续观察"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "完整示范"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "打开照片图鉴"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "示范 ×1"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "全屏取景"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "退出全屏"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "关闭图鉴"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "苍鹭 · 70 分继续尝试 · 1.0× · p1"
+          }
+        ],
+        "caption": "苍鹭 · 70 分 · 继续尝试。相机尚未稳定：停下操作约 0.6 秒",
+        "count": "1 张照片 · 1 次快门",
+        "detail": "实时构图 78 分",
+        "documentWidth": 760,
+        "focal": "焦距 1.0×",
+        "frame": "观察 苍鹭",
+        "hint": "实时构图 78 分。镜头稳定，准备快门。 先放大焦距，才能左右移动取景。",
+        "mode": "现场暂停",
+        "photos": [
+          {
+            "alt": "苍鹭，70分，观察第0.4秒的实际照片",
+            "length": 147346,
+            "prefix": "data:image/png;base64,iV"
+          }
+        ],
+        "qualified": "0 / 3",
+        "save": "现场与实际 PNG 照片已独立保存",
+        "stable": "镜头已稳",
+        "time": "1.0 / 120",
+        "viewport": [
+          775,
+          871
+        ]
+      }
+    },
+    {
+      "name": "Native gallery shows the actual full PNG and its download links to exactly those same bytes",
+      "passed": true,
+      "sourceLength": 1821926,
+      "sourceSha256": "26979ec47d3a0fa08890ae8999b8049aee2feeb531f183a4284b7838ffe66587"
+    },
+    {
+      "name": "Opening and reading the photo gallery freezes actual observation time",
+      "passed": true,
+      "observedTime": "1.0 / 120"
+    },
+    {
+      "name": "Stabilized retake creates a separate actual photo and qualifies only the selected species",
+      "passed": true,
+      "after": {
+        "buttons": [
+          {
+            "disabled": true,
+            "label": null,
+            "text": "苍鹭 最佳 77 分"
+          },
+          {
+            "disabled": true,
+            "label": null,
+            "text": "翠鸟 尚未记录"
+          },
+          {
+            "disabled": true,
+            "label": null,
+            "text": "林鹿 尚未记录"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "开启新一轮观察"
+          },
+          {
+            "disabled": true,
+            "label": "按住向左取景",
+            "text": "← 左取景"
+          },
+          {
+            "disabled": true,
+            "label": "按住向右取景",
+            "text": "右取景 →"
+          },
+          {
+            "disabled": true,
+            "label": "按住缩小焦距",
+            "text": "−"
+          },
+          {
+            "disabled": true,
+            "label": "按住放大焦距",
+            "text": "＋"
+          },
+          {
+            "disabled": true,
+            "label": null,
+            "text": "拍摄苍鹭 · 空格"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "继续观察"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "完整示范"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "打开照片图鉴"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "示范 ×1"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "全屏取景"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "退出全屏"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "关闭图鉴"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "苍鹭 · 77 分合格记录 · 1.0× · p2"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "苍鹭 · 70 分继续尝试 · 1.0× · p1"
+          }
+        ],
+        "caption": "苍鹭 · 77 分 · 合格记录。",
+        "count": "2 张照片 · 2 次快门",
+        "detail": "实时构图 77 分",
+        "documentWidth": 760,
+        "focal": "焦距 1.0×",
+        "frame": "观察 苍鹭",
+        "hint": "实时构图 77 分。镜头稳定，准备快门。 先放大焦距，才能左右移动取景。",
+        "mode": "现场暂停",
+        "photos": [
+          {
+            "alt": "苍鹭，77分，观察第1.8秒的实际照片",
+            "length": 147298,
+            "prefix": "data:image/png;base64,iV"
+          },
+          {
+            "alt": "苍鹭，70分，观察第0.4秒的实际照片",
+            "length": 147346,
+            "prefix": "data:image/png;base64,iV"
+          }
+        ],
+        "qualified": "1 / 3",
+        "save": "现场与实际 PNG 照片已独立保存",
+        "stable": "镜头已稳",
+        "time": "2.5 / 120",
+        "viewport": [
+          775,
+          871
+        ]
+      }
+    },
+    {
+      "name": "Actual reload restores time, qualification and two real photos paused",
+      "passed": true,
+      "after": {
+        "buttons": [
+          {
+            "disabled": true,
+            "label": null,
+            "text": "苍鹭 最佳 77 分"
+          },
+          {
+            "disabled": true,
+            "label": null,
+            "text": "翠鸟 尚未记录"
+          },
+          {
+            "disabled": true,
+            "label": null,
+            "text": "林鹿 尚未记录"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "开启新一轮观察"
+          },
+          {
+            "disabled": true,
+            "label": "按住向左取景",
+            "text": "← 左取景"
+          },
+          {
+            "disabled": true,
+            "label": "按住向右取景",
+            "text": "右取景 →"
+          },
+          {
+            "disabled": true,
+            "label": "按住缩小焦距",
+            "text": "−"
+          },
+          {
+            "disabled": true,
+            "label": "按住放大焦距",
+            "text": "＋"
+          },
+          {
+            "disabled": true,
+            "label": null,
+            "text": "拍摄苍鹭 · 空格"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "继续观察"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "完整示范"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "打开照片图鉴"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "示范 ×1"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "全屏取景"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "退出全屏"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "关闭图鉴"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "苍鹭 · 77 分合格记录 · 1.0× · p2"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "苍鹭 · 70 分继续尝试 · 1.0× · p1"
+          }
+        ],
+        "caption": "每次快门都会记录当时真实画面，并显示评分与原因。",
+        "count": "2 张照片 · 2 次快门",
+        "detail": "实时构图 77 分",
+        "documentWidth": 760,
+        "focal": "焦距 1.0×",
+        "frame": "观察 苍鹭",
+        "hint": "实时构图 77 分。镜头稳定，准备快门。 先放大焦距，才能左右移动取景。",
+        "mode": "上次现场已恢复 · 暂停",
+        "photos": [
+          {
+            "alt": "苍鹭，77分，观察第1.8秒的实际照片",
+            "length": 147298,
+            "prefix": "data:image/png;base64,iV"
+          },
+          {
+            "alt": "苍鹭，70分，观察第0.4秒的实际照片",
+            "length": 147346,
+            "prefix": "data:image/png;base64,iV"
+          }
+        ],
+        "qualified": "1 / 3",
+        "save": "现场与实际 PNG 照片已独立保存",
+        "stable": "镜头已稳",
+        "time": "2.5 / 120",
+        "viewport": [
+          775,
+          871
+        ]
+      }
+    },
+    {
+      "name": "IndexedDB reload retains the exact same actual full photograph bytes",
+      "passed": true,
+      "photo": "p2",
+      "sourceSha256": "9a8fc70c82cb3d135d6c062351fb11cd2665fa947904d74d2cef70aef2536735"
+    },
+    {
+      "name": "Actual zoom and horizontal pan controls change focal length and require new stability",
+      "passed": true,
+      "after": {
+        "buttons": [
+          {
+            "disabled": true,
+            "label": null,
+            "text": "苍鹭 最佳 77 分"
+          },
+          {
+            "disabled": true,
+            "label": null,
+            "text": "翠鸟 尚未记录"
+          },
+          {
+            "disabled": true,
+            "label": null,
+            "text": "林鹿 尚未记录"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "开启新一轮观察"
+          },
+          {
+            "disabled": true,
+            "label": "按住向左取景",
+            "text": "← 左取景"
+          },
+          {
+            "disabled": true,
+            "label": "按住向右取景",
+            "text": "右取景 →"
+          },
+          {
+            "disabled": true,
+            "label": "按住缩小焦距",
+            "text": "−"
+          },
+          {
+            "disabled": true,
+            "label": "按住放大焦距",
+            "text": "＋"
+          },
+          {
+            "disabled": true,
+            "label": null,
+            "text": "拍摄苍鹭 · 空格"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "继续观察"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "完整示范"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "打开照片图鉴"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "示范 ×1"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "全屏取景"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "退出全屏"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "关闭图鉴"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "苍鹭 · 77 分合格记录 · 1.0× · p2"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "苍鹭 · 70 分继续尝试 · 1.0× · p1"
+          }
+        ],
+        "caption": "每次快门都会记录当时真实画面，并显示评分与原因。",
+        "count": "2 张照片 · 2 次快门",
+        "detail": "相机尚未稳定：停下操作约 0.6 秒",
+        "documentWidth": 760,
+        "focal": "焦距 1.2×",
+        "frame": "观察 苍鹭",
+        "hint": "实时构图 71 分。相机尚未稳定：停下操作约 0.6 秒",
+        "mode": "现场暂停",
+        "photos": [
+          {
+            "alt": "苍鹭，77分，观察第1.8秒的实际照片",
+            "length": 147298,
+            "prefix": "data:image/png;base64,iV"
+          },
+          {
+            "alt": "苍鹭，70分，观察第0.4秒的实际照片",
+            "length": 147346,
+            "prefix": "data:image/png;base64,iV"
+          }
+        ],
+        "qualified": "1 / 3",
+        "save": "现场与实际 PNG 照片已独立保存",
+        "stable": "0.2 s",
+        "time": "3.6 / 120",
+        "viewport": [
+          775,
+          871
+        ]
+      }
+    },
+    {
+      "name": "Focused native Space captures a third actual photo after camera controls",
+      "passed": true,
+      "after": {
+        "buttons": [
+          {
+            "disabled": true,
+            "label": null,
+            "text": "苍鹭 最佳 81 分"
+          },
+          {
+            "disabled": true,
+            "label": null,
+            "text": "翠鸟 尚未记录"
+          },
+          {
+            "disabled": true,
+            "label": null,
+            "text": "林鹿 尚未记录"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "开启新一轮观察"
+          },
+          {
+            "disabled": true,
+            "label": "按住向左取景",
+            "text": "← 左取景"
+          },
+          {
+            "disabled": true,
+            "label": "按住向右取景",
+            "text": "右取景 →"
+          },
+          {
+            "disabled": true,
+            "label": "按住缩小焦距",
+            "text": "−"
+          },
+          {
+            "disabled": true,
+            "label": "按住放大焦距",
+            "text": "＋"
+          },
+          {
+            "disabled": true,
+            "label": null,
+            "text": "拍摄苍鹭 · 空格"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "继续观察"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "完整示范"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "打开照片图鉴"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "示范 ×1"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "全屏取景"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "退出全屏"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "关闭图鉴"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "苍鹭 · 81 分合格记录 · 1.2× · p3"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "苍鹭 · 77 分合格记录 · 1.0× · p2"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "苍鹭 · 70 分继续尝试 · 1.0× · p1"
+          }
+        ],
+        "caption": "苍鹭 · 81 分 · 合格记录。",
+        "count": "3 张照片 · 3 次快门",
+        "detail": "实时构图 81 分",
+        "documentWidth": 760,
+        "focal": "焦距 1.2×",
+        "frame": "观察 苍鹭",
+        "hint": "实时构图 81 分。镜头稳定，准备快门。",
+        "mode": "现场暂停",
+        "photos": [
+          {
+            "alt": "苍鹭，81分，观察第3.9秒的实际照片",
+            "length": 143402,
+            "prefix": "data:image/png;base64,iV"
+          },
+          {
+            "alt": "苍鹭，77分，观察第1.8秒的实际照片",
+            "length": 147298,
+            "prefix": "data:image/png;base64,iV"
+          },
+          {
+            "alt": "苍鹭，70分，观察第0.4秒的实际照片",
+            "length": 147346,
+            "prefix": "data:image/png;base64,iV"
+          }
+        ],
+        "qualified": "1 / 3",
+        "save": "现场与实际 PNG 照片已独立保存",
+        "stable": "镜头已稳",
+        "time": "4.0 / 120",
+        "viewport": [
+          775,
+          871
+        ]
+      }
+    },
+    {
+      "name": "Takeover switches an ordinary running demo to manual without resetting its camera or photos",
+      "passed": true,
+      "before": {
+        "buttons": [
+          {
+            "disabled": false,
+            "label": null,
+            "text": "苍鹭 尚未记录"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "翠鸟 尚未记录"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "林鹿 尚未记录"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "开启新一轮观察"
+          },
+          {
+            "disabled": false,
+            "label": "按住向左取景",
+            "text": "← 左取景"
+          },
+          {
+            "disabled": false,
+            "label": "按住向右取景",
+            "text": "右取景 →"
+          },
+          {
+            "disabled": false,
+            "label": "按住缩小焦距",
+            "text": "−"
+          },
+          {
+            "disabled": false,
+            "label": "按住放大焦距",
+            "text": "＋"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "拍摄苍鹭 · 空格"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "暂停观察"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "接管当前镜头"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "完整示范"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "打开照片图鉴"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "示范 ×1"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "全屏取景"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "退出全屏"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "关闭图鉴"
+          }
+        ],
+        "caption": "完整观察按普通调焦、取景、稳定等待与快门规则记录三种动物，可随时接管。",
+        "count": "0 张照片 · 0 次快门",
+        "detail": "相机尚未稳定：停下操作约 0.6 秒",
+        "documentWidth": 760,
+        "focal": "焦距 1.4×",
+        "frame": "观察 苍鹭",
+        "hint": "实时构图 56 分。相机尚未稳定：停下操作约 0.6 秒",
+        "mode": "完整观察示范",
+        "photos": [],
+        "qualified": "0 / 3",
+        "save": "现场与实际 PNG 照片已独立保存",
+        "stable": "0.5 s",
+        "time": "0.4 / 120",
+        "viewport": [
+          775,
+          871
+        ]
+      },
+      "after": {
+        "buttons": [
+          {
+            "disabled": false,
+            "label": null,
+            "text": "苍鹭 尚未记录"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "翠鸟 尚未记录"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "林鹿 尚未记录"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "开启新一轮观察"
+          },
+          {
+            "disabled": false,
+            "label": "按住向左取景",
+            "text": "← 左取景"
+          },
+          {
+            "disabled": false,
+            "label": "按住向右取景",
+            "text": "右取景 →"
+          },
+          {
+            "disabled": false,
+            "label": "按住缩小焦距",
+            "text": "−"
+          },
+          {
+            "disabled": false,
+            "label": "按住放大焦距",
+            "text": "＋"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "拍摄苍鹭 · 空格"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "暂停观察"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "完整示范"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "打开照片图鉴"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "示范 ×1"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "全屏取景"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "退出全屏"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "关闭图鉴"
+          }
+        ],
+        "caption": "已接管当前镜头，观察时间、取景、焦距与照片均保留。",
+        "count": "0 张照片 · 0 次快门",
+        "detail": "相机尚未稳定：停下操作约 0.6 秒",
+        "documentWidth": 760,
+        "focal": "焦距 1.4×",
+        "frame": "观察 苍鹭",
+        "hint": "实时构图 69 分。相机尚未稳定：停下操作约 0.6 秒",
+        "mode": "亲自取景",
+        "photos": [],
+        "qualified": "0 / 3",
+        "save": "现场与实际 PNG 照片已独立保存",
+        "stable": "0.1 s",
+        "time": "0.7 / 120",
+        "viewport": [
+          775,
+          871
+        ]
+      }
+    },
+    {
+      "name": "Ordinary visible demo completes all three species through camera and shutter actions and pauses its actual record",
+      "passed": true,
+      "after": {
+        "buttons": [
+          {
+            "disabled": true,
+            "label": null,
+            "text": "苍鹭 最佳 88 分"
+          },
+          {
+            "disabled": true,
+            "label": null,
+            "text": "翠鸟 最佳 93 分"
+          },
+          {
+            "disabled": true,
+            "label": null,
+            "text": "林鹿 最佳 87 分"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "开启新一轮观察"
+          },
+          {
+            "disabled": true,
+            "label": "按住向左取景",
+            "text": "← 左取景"
+          },
+          {
+            "disabled": true,
+            "label": "按住向右取景",
+            "text": "右取景 →"
+          },
+          {
+            "disabled": true,
+            "label": "按住缩小焦距",
+            "text": "−"
+          },
+          {
+            "disabled": true,
+            "label": "按住放大焦距",
+            "text": "＋"
+          },
+          {
+            "disabled": true,
+            "label": null,
+            "text": "拍摄林鹿 · 空格"
+          },
+          {
+            "disabled": true,
+            "label": null,
+            "text": "继续观察"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "完整示范"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "打开照片图鉴"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "示范 ×1"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "全屏取景"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "退出全屏"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "关闭图鉴"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "林鹿 · 87 分合格记录 · 2.6× · p3"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "翠鸟 · 93 分合格记录 · 2.8× · p2"
+          },
+          {
+            "disabled": false,
+            "label": null,
+            "text": "苍鹭 · 88 分合格记录 · 1.6× · p1"
+          }
+        ],
+        "caption": "林鹿 · 87 分 · 合格记录。",
+        "count": "3 张照片 · 3 次快门",
+        "detail": "实时构图 87 分",
+        "documentWidth": 760,
+        "focal": "焦距 2.6×",
+        "frame": "观察 林鹿",
+        "hint": "实时构图 87 分。镜头稳定，准备快门。",
+        "mode": "观察完成 · 已暂停",
+        "photos": [
+          {
+            "alt": "林鹿，87分，观察第4.6秒的实际照片",
+            "length": 144590,
+            "prefix": "data:image/png;base64,iV"
+          },
+          {
+            "alt": "翠鸟，93分，观察第3.1秒的实际照片",
+            "length": 125214,
+            "prefix": "data:image/png;base64,iV"
+          },
+          {
+            "alt": "苍鹭，88分，观察第1.3秒的实际照片",
+            "length": 141270,
+            "prefix": "data:image/png;base64,iV"
+          }
+        ],
+        "qualified": "3 / 3",
+        "save": "现场与实际 PNG 照片已独立保存",
+        "stable": "镜头已稳",
+        "time": "4.6 / 120",
+        "viewport": [
+          775,
+          871
+        ]
+      }
+    },
+    {
+      "name": "Native fullscreen expands the complete photographic stage with real rendered scene, controls and exit",
+      "passed": true,
+      "after": {
+        "canvas": {
+          "bottom": 860.4166717529297,
+          "height": 711.21875,
+          "left": 0.6666666865348816,
+          "right": 1706.6666666865349,
+          "top": 149.1979217529297,
+          "width": 1706,
+          "x": 0.6666666865348816,
+          "y": 149.1979217529297
+        },
+        "exitVisible": true,
+        "height": 1067,
+        "panWidth": 87.1875,
+        "stage": {
+          "bottom": 1067.3333740234375,
+          "height": 1067.3333740234375,
+          "left": 0,
+          "right": 1707.3333740234375,
+          "top": 0,
+          "width": 1707.3333740234375,
+          "x": 0,
+          "y": 0
+        },
+        "width": 1707
+      },
+      "method": "Actual native Fullscreen entry and Exit controls, stage bounds occupy actual enlarged browser surface, screenshot visually confirms it; Canvas pixels remain 16:9 via object-fit contain with side letterboxing."
+    },
+    {
+      "name": "Actual 390px viewport has no horizontal overflow, retains canonical scene aspect and native camera targets at least 44px",
+      "passed": true,
+      "after": {
+        "controls": {
+          "bottom": 839.4166870117188,
+          "height": 244.75,
+          "left": 14.666666984558104,
+          "right": 360.0000104904175,
+          "top": 594.6666870117188,
+          "width": 345.3333435058594,
+          "x": 14.666666984558104,
+          "y": 594.6666870117188
+        },
+        "documentWidth": 375,
+        "objectFit": "contain",
+        "stage": {
+          "bottom": 840.0833339691162,
+          "height": 822,
+          "left": 14,
+          "right": 360.6666870117187,
+          "top": 18.08333396911621,
+          "width": 346.66668701171875,
+          "x": 14,
+          "y": 18.08333396911621
+        },
+        "view": {
+          "bottom": 594.6666870117188,
+          "height": 378.0208435058594,
+          "left": 14.666666984558104,
+          "right": 360.0000104904175,
+          "top": 216.64584350585935,
+          "width": 345.3333435058594,
+          "x": 14.666666984558104,
+          "y": 216.64584350585935
+        },
+        "viewport": [
+          390,
+          844
+        ],
+        "controlSizes": [
+          {
+            "height": 50,
+            "text": "苍鹭 尚未记录",
+            "width": 104.4375
+          },
+          {
+            "height": 50,
+            "text": "翠鸟 尚未记录",
+            "width": 104.44792175292967
+          },
+          {
+            "height": 50,
+            "text": "林鹿 尚未记录",
+            "width": 104.44792175292967
+          },
+          {
+            "height": 46,
+            "text": "← 左取景",
+            "width": 98.27083587646484
+          },
+          {
+            "height": 46,
+            "text": "右取景 →",
+            "width": 98.27083587646484
+          },
+          {
+            "height": 46,
+            "text": "−",
+            "width": 44
+          },
+          {
+            "height": 46,
+            "text": "＋",
+            "width": 44
+          },
+          {
+            "height": 44,
+            "text": "拍摄苍鹭 · 空格",
+            "width": 108.79167175292967
+          },
+          {
+            "height": 44,
+            "text": "继续观察",
+            "width": 71.33333587646484
+          },
+          {
+            "height": 44,
+            "text": "完整示范",
+            "width": 71.33333587646484
+          },
+          {
+            "height": 44,
+            "text": "打开照片图鉴",
+            "width": 97.33333587646484
+          },
+          {
+            "height": 44,
+            "text": "示范 ×1",
+            "width": 66.44792175292969
+          },
+          {
+            "height": 44,
+            "text": "全屏取景",
+            "width": 71.33333587646484
+          }
+        ],
+        "canvasBitmap": [
+          1600,
+          900
+        ]
+      },
+      "scope": "Browser responsive layout only; physical touch hardware not tested."
+    },
+    {
+      "name": "Visible direction map and reference summary retain the first batch and deck while adding a distinct twelfth wildlife entry",
+      "passed": true,
+      "after": {
+        "mapTitle": "12 个原创方向试玩 · 首批 10 条参考已完成",
+        "newEntry": "芦湾观鸟 · 自然摄影与野外观察",
+        "referenceContainsCommercialSource": true
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-wildlife-captures/manual-gallery.png",
+      "description": "Actual manually photographed heron p2, separate unsteady p1 retained; native enlarged-photo journal.",
+      "viewport": [
+        775,
+        871
+      ],
+      "capture_size": [
+        760,
+        854
+      ],
+      "format": "JPEG",
+      "sha256": "5c9fcc3f93b1cff043646ef42fbe3f478bb4a3adb916c8df078eddf719c4a7dd"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-wildlife-captures/completed-journal.png",
+      "description": "Actual ordinary-demo field journal: three legally captured PNG photographs and selected kingfisher enlarged.",
+      "viewport": [
+        775,
+        871
+      ],
+      "capture_size": [
+        760,
+        854
+      ],
+      "format": "JPEG",
+      "sha256": "1f4775f14f50c428fad21450217b59426dadbb658237686295b7b4c9e43eedd5"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-wildlife-captures/fullscreen-field.png",
+      "description": "Actual native fullscreen wetland scene and camera controls, fresh manual session paused.",
+      "viewport": [
+        1707,
+        1067
+      ],
+      "capture_size": [
+        1707,
+        1067
+      ],
+      "format": "JPEG",
+      "sha256": "6e283702e4c4cd5ccc20dc7526e07ca6b2bd8c51b3a064eee463c249858b6356"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-wildlife-captures/mobile-stage-aligned.png",
+      "description": "Actual 390×844 CSS viewport with field HUD, three-species selector, image and camera panel visible; preserved 16:9 scene through contain.",
+      "viewport": [
+        390,
+        844
+      ],
+      "capture_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "sha256": "5970cd1271d92d57f6f4aebd73580a3a80d42951a31c756dbbbb07f565b5d8cb"
+    }
+  ],
+  "notes": [
+    "Production boot queryDemo and stable gallery-node regressions were corrected before accepted final UI checks.",
+    "The browser initially contained a previous wildlife observation; fresh empty no-query boot is covered by actual production controller callback tests, while visible-browser acceptance checks actual saved-state reload.",
+    "Normal full IndexedDB photograph save and restore was tested in the actual browser. Failure and newer compact-fallback precedence are covered by actual production controller callbacks.",
+    "Native download href was verified identical to the enlarged real PNG; browser file-transfer download completion was not separately exercised.",
+    "Original manual photograph actual-heron-p2.png is exported from the displayed enlarged photo PNG, not counted as a browser screenshot.",
+    "390×844 is a CSS viewport; actual capture pixel dimensions can differ with desktop scaling. This is not a physical mobile-device test."
+  ]
+}

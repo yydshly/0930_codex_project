@@ -1,0 +1,290 @@
+{
+  "date": "2026-10-05",
+  "status": "original_sample_review_passed_with_explicit_scope",
+  "scope": "Eighth original local playable direction: a real Three.js/WebGL three-dimensional scene viewed through a chase-camera perspective, connected to transport, trading and exploration choices. Flight and mission rules operate on the x/z navigation plane. Loaded ship/station models, spherical textured planets, scene lights and a perspective camera provide real spatial depth; the nebula texture is the scene environment background. Asteroids are decorative and do not participate in collisions. The sample has no six-degree-of-freedom motion or combat. The gameplay and interface are original; five meshes are CC0 Kenney Space Kit assets and the three opaque environment/surface bitmaps are original ImageGen assets. Recorded rule, controller, real-browser and final resource delivery checks pass within their explicit scope; no upstream Endless Sky code or art port is claimed.",
+  "sample": "星潮航路 / Star Tide Routes",
+  "checks": [
+    {
+      "name": "Previous games, versions, art and runtimes preserved",
+      "passed": true,
+      "observed": "Final package hashes match all 2596 protected prior web files. Nine authorized old navigation pages were the only existing web pages edited; original save keys and runtimes stay protected."
+    },
+    {
+      "name": "Original entrances and reference counts stay separate",
+      "passed": true,
+      "observed": "All nine authorized old headers link to the new entry once. The new space comparison retains each of the seven prior original entrances once. Ten reference cards, original ordinals 01–07 and the 107 forms / 116 entrances remain; Cataclysm: DDA and Rigs of Rods remain reference-only cards 07 and 09."
+    },
+    {
+      "name": "Real flight, missions and resource accounting",
+      "passed": true,
+      "observed": "27 production rules and 25 actual controller callback checks pass. Ordinary and manually repeated commands navigate continuously, deliver reserved cargo, trade free cargo with ledger-accounted credits/profit, sustain a five-second scan and return for settlement. Inertia, docking distance/speed, fuel/refuel, explicit delayed rescue, pauses and validated independent restores are covered. The prior seven directions have 230 passed recorded checks.",
+      "evidence": [
+        "notes/direction-space-rules-20261005.json",
+        "notes/direction-space-controller-20261005.json"
+      ]
+    },
+    {
+      "name": "Actual three-dimensional production rendering",
+      "passed": true,
+      "observed": "7 accepted real WebGL JPEG captures show loaded ship/station GLBs, textured spherical planets, lighting and chase/sector camera views. The final native paused-flight frame was visually reviewed: ship, stations, planet, target labels and readable in-stage HUD remain visible. Nebula is the environment background; x/z-plane rules remain separate from the 3D presentation. No Skia frame is used as 3D evidence.",
+      "evidence": "notes/direction-space-browser-20261005.json"
+    },
+    {
+      "name": "Browser input and responsive layout",
+      "passed": true,
+      "observed": "11 actual derived browser assertions pass: manual transport/trade/scan/return and ordinary demo finish at 730 credits and 40 trade profit; moving-ship takeover, native C/E/Space, pause, reload restoration, native fullscreen HUD/target synchronization/exit, desktop and 390x844 responsive CSS layout, final stage alignment and empty warn/error log are recorded. Physical held-key timing, rescue and context-loss recovery are covered by controller callbacks, not claimed as hardware/browser tests.",
+      "evidence": "notes/direction-space-browser-20261005.json"
+    },
+    {
+      "name": "Final delivery and asset provenance",
+      "passed": true,
+      "observed": "789 package checks pass and 27 actual resources match source, public build and live HTTP bytes. Three opaque ImageGen PNGs are 1774x887, with full prompts/source paths in the actual assets manifest; five complete CC0 GLBs retain the license/source notice. The package imports actual JavaScript declarations while excluding comments, strings, templates and regex text.",
+      "evidence": "notes/direction-space-package-20261005.json"
+    }
+  ],
+  "references": [
+    {
+      "url": "https://endless-sky.github.io/",
+      "read": "2026-10-05",
+      "role": "Official primary reference for space trading, transport missions and different career choices. Endless Sky is a 2D game; this original local sample uses a separate 3D implementation."
+    },
+    {
+      "url": "https://kenney.nl/assets/space-kit",
+      "read": "2026-10-05",
+      "role": "Official source for the five CC0 three-dimensional models; the actual license and source notice are shipped with the new sample."
+    }
+  ],
+  "evidence": {
+    "baseline": "notes/space-preservation-before-20261005.json",
+    "generation": "assets/directions/space-generation-20261005.json",
+    "rules": "notes/direction-space-rules-20261005.json",
+    "controller": "notes/direction-space-controller-20261005.json",
+    "browser": "notes/direction-space-browser-20261005.json",
+    "package": "notes/direction-space-package-20261005.json",
+    "model_license": "web/assets/directions/space/License-space-kit.txt",
+    "model_source": "web/assets/directions/space/SOURCE-NOTICE.txt",
+    "rules_passed": 27,
+    "callbacks_passed": 25,
+    "prior_direction_checks_passed": 230,
+    "total_direction_checks_passed": 282,
+    "package_checks_passed": 789,
+    "source_build_http_resources_matched": 27,
+    "protected_prior_files": 2596,
+    "browser_assertions_passed": 11,
+    "accepted_browser_screenshots": 7,
+    "site_tests_passed": 21,
+    "built_demos": 19
+  },
+  "preservation": {
+    "baseline_protected_files": 2596,
+    "authorized_navigation_pages": 9,
+    "original_forms": 107,
+    "original_entrances": 116,
+    "new_original_direction_samples": 8,
+    "reference_directions": 10,
+    "save_key": "world-play-direction-space-v1"
+  },
+  "remaining": [
+    "Real phone hardware, simultaneous physical touch contacts, mobile fullscreen and orientation",
+    "Sustained performance and broad GPU/browser compatibility",
+    "Native held key timing, physical rescue interaction and context-loss recovery: these are covered by actual controller callbacks, not claimed as hardware/browser tests",
+    "Human emotional appeal or commercial game-product readiness"
+  ],
+  "rendering_scope": {
+    "scene": "Real Three.js/WebGL models, planets, lighting and a chase perspective camera.",
+    "navigation_rules": "Motion and missions use the x/z plane.",
+    "nebula": "Environment background texture around the rendered 3D scene.",
+    "asteroids": "Decorative models without collision rules.",
+    "excluded": [
+      "Six-degree-of-freedom flight",
+      "Combat"
+    ]
+  },
+  "passed": true,
+  "browser_acceptance": {
+    "status": "passed_with_explicit_scope",
+    "passed": true,
+    "method": "Actual browser CUA UI actions, read-only rendered DOM observations, and screenshots of the production Three.js/WebGL renderer; no injected world state, accelerated browser clock, or Skia substitute.",
+    "scope": {
+      "verified": [
+        "3D ship and station GLB models, painted planet UV textures, lighting, chase and sector cameras",
+        "Actual manual courier, buy, navigation arrival, delivery, sell, five-second scan, return and settlement at 730 credits/profit 40",
+        "Ordinary automatic demonstration finishes and supports moving-ship takeover",
+        "Native keyboard C, E and Space; pause, refresh restores paused financial/cargo/mission state",
+        "Default native fullscreen stage HUD, terminal mission action, synchronized target selector and exit",
+        "1440x1000 desktop and 390x844 responsive layout; no horizontal overflow and touch controls above 44px",
+        "Final toolbar pause/view scroll alignment"
+      ],
+      "not_verified": [
+        "Real phone hardware, simultaneous physical touch contacts, mobile fullscreen and orientation",
+        "Sustained performance and broad GPU/browser compatibility",
+        "Native held key timing, physical rescue interaction and context-loss recovery: these are covered by actual controller callbacks, not claimed as hardware/browser tests",
+        "Human emotional appeal or commercial game-product readiness"
+      ]
+    },
+    "checks": [
+      {
+        "name": "Production 3D scene and legible desktop HUD",
+        "passed": true,
+        "evidence": "Rendered DOM at 1440x1000, plus accepted chase and sector captures."
+      },
+      {
+        "name": "Manual courier, trade and continuous exploration settle with correct funds",
+        "passed": true,
+        "evidence": "Ordinary UI actions, intermediate arrival/trade/scan observations, and final settlement."
+      },
+      {
+        "name": "In-stage target selection synchronizes the terminal",
+        "passed": true,
+        "evidence": "Native fullscreen UI selection and rendered select values; fullscreenElement was undefined in the read-only DOM observation and is not asserted."
+      },
+      {
+        "name": "Completed voyage restores paused with funds and mission state",
+        "passed": true,
+        "evidence": "Actual browser reload after manual completion."
+      },
+      {
+        "name": "Narrow responsive layout has no horizontal overflow and usable controls",
+        "passed": true,
+        "evidence": "390x844 desktop responsive override; no real phone claim."
+      },
+      {
+        "name": "Native keyboard undocks and pauses the voyage",
+        "passed": true,
+        "evidence": "Actual native E and Space presses; C sector switch is captured separately."
+      },
+      {
+        "name": "Ordinary browser demo reaches completed 730-credit voyage",
+        "passed": true,
+        "evidence": "Ordinary UI launch, production frame loop and visible final report; no injected game clock."
+      },
+      {
+        "name": "Moving-ship takeover retains cargo, credits and positive speed",
+        "passed": true,
+        "evidence": "Wait for actual visible speed checkpoint and click takeover; different positions reflect ongoing flight."
+      },
+      {
+        "name": "Final paused voyage and full stage fit native viewport",
+        "passed": true,
+        "evidence": "Final source reload and toolbar pause, screenshot 07-native-ready.jpg."
+      },
+      {
+        "name": "Final browser console has no errors or warnings",
+        "passed": true,
+        "evidence": "Final default native viewport console read."
+      },
+      {
+        "name": "Seven accepted captures are readable actual browser images",
+        "passed": true,
+        "evidence": "Actual file inspection with PIL; capture pixels are recorded independently from CSS viewport dimensions. Diagnostic clipped fullscreen composite is excluded."
+      }
+    ],
+    "screenshots": [
+      {
+        "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/space-browser-20261005/01-desktop-chase.jpg",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "capture_scope": "desktop viewport, ordinary manual start at dawn, true WebGL chase",
+        "capture_size": {
+          "width": 1425,
+          "height": 990
+        },
+        "format": "JPEG"
+      },
+      {
+        "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/space-browser-20261005/02-desktop-sector.jpg",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "capture_scope": "desktop viewport, keyboard C switches the same manual voyage to sector camera",
+        "capture_size": {
+          "width": 1425,
+          "height": 990
+        },
+        "format": "JPEG"
+      },
+      {
+        "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/space-browser-20261005/03b-native-fullscreen.jpg",
+        "viewport": {
+          "height": 1034,
+          "width": 1722
+        },
+        "capture_scope": "native default fullscreen without responsive viewport override; restored completed voyage remains paused, full in-stage HUD and port target selector",
+        "capture_size": {
+          "width": 1722,
+          "height": 1034
+        },
+        "format": "JPEG"
+      },
+      {
+        "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/space-browser-20261005/04-mobile390.jpg",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "capture_scope": "390px responsive desktop browser override; ordinary manual start; not a real phone or multi-touch hardware test",
+        "capture_size": {
+          "width": 375,
+          "height": 812
+        },
+        "format": "JPEG"
+      },
+      {
+        "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/space-browser-20261005/05-native-demo-complete.jpg",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        },
+        "capture_scope": "default native browser viewport, ordinary complete demonstration finished at 730 credits and 40 trade profit",
+        "capture_size": {
+          "width": 1265,
+          "height": 712
+        },
+        "format": "JPEG"
+      },
+      {
+        "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/space-browser-20261005/06-native-takeover.jpg",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        },
+        "capture_scope": "native viewport; UI wait for real speed above 10, actual takeover preserves moving ship/cargo/credits, then paused flight scene",
+        "capture_size": {
+          "width": 1265,
+          "height": 712
+        },
+        "format": "JPEG"
+      },
+      {
+        "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/space-browser-20261005/07-native-ready.jpg",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        },
+        "capture_scope": "default native viewport after final source reload; toolbar pause restores whole stage visibility; retained moving-vessel save paused for user takeover",
+        "capture_size": {
+          "width": 1265,
+          "height": 712
+        },
+        "format": "JPEG"
+      }
+    ],
+    "diagnostics": [
+      {
+        "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/space-browser-20261005/03-fullscreen-complete.jpg",
+        "observed": "Combining a responsive viewport override with native fullscreen produced a clipped screenshot composite. Default native fullscreen was verified separately without that override. The cause was not established; this diagnostic is not included among accepted screenshots."
+      }
+    ],
+    "capture_note": "Capture pixels are independently measured and may differ from CSS viewport dimensions; native fullscreen 1722x1034 and final native 1265x712 are recorded. The clipped responsive-override/fullscreen diagnostic is excluded from the seven accepted captures."
+  },
+  "fixes_from_review": [
+    "Raised dense button/caption text to the reviewed 13px / 11px sizes.",
+    "Added synchronized in-stage destination selection and terminal controls for native fullscreen.",
+    "Aligned explicit start, takeover and toolbar actions with the visible game stage without applying scrolling during fullscreen.",
+    "Retained an explicit WebGL loading/failure/retry path, with callback-verified context-loss handling and no bitmap scene substitute.",
+    "Corrected package import inspection to skip comment/text examples and to inspect actual import/re-export declarations."
+  ]
+}

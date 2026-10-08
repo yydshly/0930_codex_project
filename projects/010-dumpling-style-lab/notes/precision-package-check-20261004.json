@@ -1,0 +1,78 @@
+{
+  "site_tests": {
+    "exit_code": 0,
+    "stdout": "Built 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmpq24m6693\\_site\nBuilt 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmpope36p6q\\_site\nBuilt 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmp_5wefox1\\_site\nBuilt 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmp46cwvbi5\\_site\nBuilt 2 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmp8dnmkds9\\_site\nBuilt 1 static demo(s) into C:\\Users\\yun68\\AppData\\Local\\Temp\\tmpors3xlkc\\_site\n",
+    "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.349s\n\nOK\n"
+  },
+  "world_regression": {
+    "exit_code": 0,
+    "stdout": "{\n  \"date\": \"2026-10-03T18:15:41.987Z\",\n  \"method\": \"Node VM; real game rules and pathfinding; drawing context and 3D renderer mocked. Isolated browser screenshots and UI checks cover rendering.\",\n  \"checks\": [\n    \"All shipped JavaScript modules parse\",\n    \"Detective evidence custody produces a completed case\",\n    \"Second case retains the completed first case\",\n    \"The first case answer fails the new case\",\n    \"Second case requires withdrawal evidence and the different recipient\",\n    \"Wuxia roads, one rope and two supplies produce a real rescue\",\n    \"Rescue has a persisted next-day response\",\n    \"Retrace replenishes finite resources and retains the old arrangement\",\n    \"Rescue cannot conclude before allocating the two supplies\",\n    \"Planting uses labor and does not instantly create wildlife\",\n    \"Spring habitats attract insects\",\n    \"A second-season canopy attracts birds\",\n    \"Three-season mixed habitat completes with viable vegetation\",\n    \"A mixed habitat earns an actual annual research result\",\n    \"Rewind retains the comparison record\",\n    \"Next year retains grown vegetation\",\n    \"A new year can change its research goal without deleting the yearbook\",\n    \"Unfunded crops actually fail\",\n    \"Repairs and allocations survive three rounds with an archived cost\",\n    \"Unanswered storm request blocks climate settlement\",\n    \"Shelter choice immediately spends water and parts and adds backup power\",\n    \"Storm shelter scenario remains completable with a distinct archived outcome\",\n    \"An unbuilt bridge blocks reaching the watch\",\n    \"Memory placement opens actual paths to the chosen ending\",\n    \"Revisiting retains both different endings\",\n    \"Seven successful stays retain return memories and six souvenirs\",\n    \"Inn second chapter retains furniture and return histories\",\n    \"Three return dilemmas produce real letters and souvenirs\",\n    \"Inn revisit starts day eight while keeping all three letters\",\n    \"Closed cases can be selected with both old conclusions preserved\",\n    \"First rooftop course is completable without falling\",\n    \"Second rooftop course keeps a separate actual record\",\n    \"Third courier route is completable and has its own recipient and record\",\n    \"Completed routes can be selected while keeping three best times\",\n    \"Jump buffering accepts an airborne request without pretending it jumped\",\n    \"A buffered jump fires on the real landing within 140 ms\",\n    \"Auto forward moves but leaves jumps under player control\",\n    \"Actual island paths, bridge and seal permit two discoveries and return\",\n    \"Cloud tower is a real third area and opens a new incomplete chapter\",\n    \"Uncalibrated wind actually blocks the star platform\",\n    \"Wind bridge, two star rotations, beacon and return report complete chapter two\",\n    \"detective extended chapter and records survive reload\",\n    \"wuxia extended chapter and records survive reload\",\n    \"ecology extended chapter and records survive reload\",\n    \"wasteland extended chapter and records survive reload\",\n    \"dream extended chapter and records survive reload\",\n    \"inn extended chapter and records survive reload\",\n    \"arcade extended chapter and records survive reload\",\n    \"islands extended chapter and records survive reload\",\n    \"Legacy moving save retains two delivered objects\",\n    \"Selecting a completed commission starts its real cargo while retaining all three records\",\n    \"Commission selection cannot discard an unfinished order\",\n    \"A pre-extension completed inn save enters the new chapter\",\n    \"A pre-extension island save retains discoveries and reaches the new island\",\n    \"Two-route courier saves gain an empty third route without losing best times\",\n    \"Ecology forecast matches actual water, health and age across all three gates and seasons\"\n  ],\n  \"commercialOrEmotionalValidation\": false\n}\n",
+    "stderr": "(node:56248) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  "new_rules": {
+    "exit_code": 0,
+    "stdout": "{\"checks\":23,\"passed\":23}\n",
+    "stderr": ""
+  },
+  "build": {
+    "exit_code": 0,
+    "stdout": "Built 19 static demo(s) into F:\\codex_project\\0930_codex_project\\_site\n",
+    "stderr": ""
+  },
+  "preservation": {
+    "files": 2260,
+    "changed": [],
+    "missing": [],
+    "intentional_shared": [
+      "forms.html",
+      "forms.js",
+      "game-forms-catalog.js",
+      "showcase-catalog.js",
+      "showcase.html",
+      "showcase.js"
+    ]
+  },
+  "catalogs": {
+    "forms": 45,
+    "entrances": 54,
+    "uniqueForms": 45,
+    "uniqueEntrances": 54,
+    "newCovers": [
+      "assets/game-forms/cue/preview.webp",
+      "assets/game-forms/prism/preview.webp"
+    ]
+  },
+  "packaged": {
+    "targets": 17,
+    "mismatches": []
+  },
+  "previews": [
+    {
+      "source": "assets/game-forms/precision-qa/cue-preview.png",
+      "source_sha256": "d0c341e8846ba241ce563c1c8aebdc69b73ffb4e89a0dc8b5e84d61731d0c0f2",
+      "target": "web/assets/game-forms/cue/preview.webp",
+      "target_sha256": "d3221bd4c5aa6aa9ac01d94c1012f8021c6d81e669cfce4a7a12c074ee564684",
+      "dimensions": [
+        887,
+        499
+      ],
+      "method": "Exact CUA canvas-region screenshot, WebP encoding only; no repainting or resizing."
+    },
+    {
+      "source": "assets/game-forms/precision-qa/prism-preview.png",
+      "source_sha256": "22b525211289af4bdfe28f3b8bf3fc8d127e38aeca24913fe305abf8c1adb930",
+      "target": "web/assets/game-forms/prism/preview.webp",
+      "target_sha256": "97114182dcc149e42f04af66e7871c84c9cba823752b5162064a036fcd756767",
+      "dimensions": [
+        887,
+        499
+      ],
+      "method": "Exact CUA canvas-region screenshot, WebP encoding only; no repainting or resizing."
+    }
+  ],
+  "site_test_count": 6,
+  "world_check_count": 56,
+  "new_check_count": 23,
+  "build_demo_count": 19,
+  "passed": true
+}

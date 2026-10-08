@@ -1,0 +1,55 @@
+{
+  "batch": "2026-10-04 / territory capture and rope cutting",
+  "catalogs": {"playable_forms": 49, "entrances": 58},
+  "scope": "Two new independent game forms with original art, added to the existing catalog and routing. Existing worlds, visual editions and normal progress remain available.",
+  "manual_browser_checks": {
+    "trace": [
+      "Started from the safe border and used an actual point-selected straight route to close the first region.",
+      "Observed 57.1% repair, moving enemy collisions and loss of a light core with unfinished line retraction.",
+      "Reload restored captured cells, repair percentage, player position and life count.",
+      "Completed through two further closures, ending at 83.4% with one core and three closures; reload retained completion.",
+      "Native narrow-screen direction, drawing-mode and retreat buttons were used at 390 x 844.",
+      "Global pause produced two pixel-identical canvas screenshots; fullscreen P pause, resume and exit were used."
+    ],
+    "swing": [
+      "Cut first rope and observed a gravity fall into the first receiver, then entered the second scene.",
+      "Cut left rope while frozen, advanced seven ordinary 0.1-second steps, and observed projected landing 696 within the target mouth.",
+      "Cut remaining rope and resumed physics; actual second delivery completed both scenes, and reload retained completion.",
+      "Narrow-screen freeze, cut and step buttons worked; reload retained a cut rope and frozen in-flight state.",
+      "Dragged a real horizontal gesture across the rope; the rope was cut and the lantern fell.",
+      "Retried and used the canvas digit 1 key; one actual cut was recorded.",
+      "Default desktop fullscreen displayed the complete game scene, controls and independent exit button."
+    ],
+    "comparison": "Starting the right scene after the left scene paused the left: left control = 继续, right control = 暂停."
+  },
+  "responsive": {
+    "viewport": "390 x 844 browser override; actual viewport values and control measurements saved in assets/game-forms/gesture-qa/responsive-metrics.json",
+    "main_button_min_height": 46,
+    "horizontal_overflow": false,
+    "accepted_fullscreen_evidence": ["assets/game-forms/gesture-qa/trace-fullscreen.png", "assets/game-forms/gesture-qa/swing-fullscreen.png"],
+    "mobile_fullscreen_limit": "With the 390px override, IAB native fullscreen screenshots showed a small scaled region. Layout dimensions were read, but these captures are not accepted as mobile fullscreen visual proof; fullscreen visual review uses the normal desktop viewport."
+  },
+  "repairs": [
+    "Actual browser caught a six-argument Canvas ellipse call. Added the missing rotation argument and strict drawing-double argument validation; independent subsequent tabs recorded no errors.",
+    "Added a direct canvas digit-key listener for numbered cuts, since the existing shared input helper does not collect Digit1 or Digit2.",
+    "Changed narrow-screen swing toolbar to two columns so long labels stay on one line with 46px controls.",
+    "Restored games report their retained scene/progress instead of repeating first-use instructions.",
+    "Closing a territory path now checks enemy contact before capture; a production-rule regression covers the closing-frame collision."
+  ],
+  "checks": {"new_rules": 31, "old_world_rules": 56, "old_precision_rules": 23, "old_observation_rules": 28, "site_tests": 6, "built_static_demos": 19, "protected_existing_files_unchanged": 2282, "packaged_targets_matched": 17},
+  "assets": {
+    "tool": "Built-in ImageGen",
+    "art": "Two original environment images and two isolated transparent props. Raw PNGs, full prompts, dimensions and hashes saved in assets/game-forms/gesture-generation-20261004.json.",
+    "runtime": "WebP encoding only with original dimensions and alpha. The attempted cradle background edit was discarded; the original was verified to have transparent outside pixels and is the runtime source.",
+    "covers": "Actual CUA canvas-region screenshots, then WebP encoding only; see gesture-preview-provenance-20261004.json."
+  },
+  "known_parent_log": "Comparison page still records the pre-existing unlocated MutationObserver observe(non-Node) error. No suppression was added. New standalone trace and swing tabs recorded empty error/warn logs.",
+  "limits": [
+    "One territory mural and two rope scenes are demonstrations of distinct forms, not a long game or exhaustive genre taxonomy.",
+    "Lantern is a continuous point-mass pendulum with constraints and ballistic receiver detection; no claim of a general rigid-body or soft-rope engine.",
+    "Actual-device mobile performance and audio quality were not validated.",
+    "Other existing forms retain their prior verification scope; this batch does not claim all 49 forms were visually re-reviewed."
+  ],
+  "reports": ["gesture-package-check-20261004.json", "gesture-rules-check-20261004.json", "gesture-preview-provenance-20261004.json"],
+  "final_comparison": "http://127.0.0.1:8962/forms.html?left=territory-capture&right=rope-cutting#compare"
+}

@@ -1,0 +1,1130 @@
+{
+  "date": "2026-10-05",
+  "direction": "夜港来信 / NIGHT POST",
+  "passed": true,
+  "count": 33,
+  "checks": [
+    "fresh one-case world is paused independent and contains no discoveries or verified conclusions",
+    "three scenes contain nine original unique clue records with consistent ownership",
+    "clock warehouse delivery and transport texts separate the case times and person roles",
+    "paused investigation cannot discover select travel reason verify or submit",
+    "an undiscovered clue can only be inspected in its actual scene and cannot be granted",
+    "discovery order is unique and repeated inspect leaves the entire world unchanged",
+    "found evidence can be reread from another scene without travel or rediscovery",
+    "malformed action names scene IDs pause values and reasoning payloads fail atomically",
+    "each fact has three legal candidate values and its own two-record validation requirement",
+    "unfound evidence cannot be associated and a pin does not itself verify a fact",
+    "each fact rejects duplicate or third evidence without losing its current two pins",
+    "verification requires a candidate and exactly two discovered records before it can be attempted",
+    "correct evidence does not validate the wrong person and feedback does not name the answer",
+    "correct candidate with irrelevant records fails and can be repaired through normal unpin pin verify",
+    "two correct records validate regardless of pin order and never validate another fact implicitly",
+    "changing a verified candidate clears verification and any chosen ending immediately",
+    "unpinning verified evidence requires revalidation even when the same evidence is later repinned",
+    "same candidate selection and already verified confirmation are safe no-ops",
+    "a candidate can be cleared without erasing found clues or silently keeping its validation",
+    "all three verified facts still need the actual letter before an ending can be selected",
+    "finding the letter alone cannot skip reconstruction or manufacture a resolution",
+    "ending selection is reversible while only explicit submit resolves and pauses the case",
+    "ordinary complete manual reconstruction can reverse pin order and choose formal archive",
+    "both ordinary demo endings resolve the same facts with distinct original narrative text",
+    "planner repairs human wrong candidates and evidence using normal legal actions",
+    "resolved case rejects further discoveries reasoning ending changes and resumption",
+    "paused restore keeps the exact found order selection hypotheses evidence ending and logs",
+    "active restore is paused and normal continuation reproduces the same final ending",
+    "strict replay rejects fabricated discoveries selections fact evidence and verified flags",
+    "strict replay rejects forged resolved state ending counters version and extra fields",
+    "strict replay rejects missing reordered duplicate unknown and paused ledger actions",
+    "strict restore rejects malformed object inputs oversized UTF8 saves and invalid pause fields",
+    "a long legal investigation is bounded and the action-cap planner never proposes a rejected move"
+  ],
+  "failures": [],
+  "playthroughs": [
+    {
+      "mode": "ordinary same-API demonstration",
+      "ending": "reply",
+      "actionCount": 25,
+      "inspected": [
+        "clock",
+        "timetable",
+        "bag",
+        "dispatch",
+        "note",
+        "key",
+        "tide",
+        "receipt",
+        "letter"
+      ],
+      "hypotheses": {
+        "actor": {
+          "value": "lin",
+          "evidence": [
+            "dispatch",
+            "note"
+          ],
+          "verified": true
+        },
+        "route": {
+          "value": "ferry",
+          "evidence": [
+            "timetable",
+            "tide"
+          ],
+          "verified": true
+        },
+        "destination": {
+          "value": "east",
+          "evidence": [
+            "bag",
+            "receipt"
+          ],
+          "verified": true
+        }
+      },
+      "stats": {
+        "inspections": 9,
+        "verifications": 3,
+        "failedVerifications": 0
+      },
+      "actions": [
+        {
+          "type": "inspect",
+          "payload": "clock"
+        },
+        {
+          "type": "inspect",
+          "payload": "timetable"
+        },
+        {
+          "type": "inspect",
+          "payload": "bag"
+        },
+        {
+          "type": "scene",
+          "payload": "office"
+        },
+        {
+          "type": "inspect",
+          "payload": "dispatch"
+        },
+        {
+          "type": "inspect",
+          "payload": "note"
+        },
+        {
+          "type": "inspect",
+          "payload": "key"
+        },
+        {
+          "type": "scene",
+          "payload": "quay"
+        },
+        {
+          "type": "inspect",
+          "payload": "tide"
+        },
+        {
+          "type": "inspect",
+          "payload": "receipt"
+        },
+        {
+          "type": "inspect",
+          "payload": "letter"
+        },
+        {
+          "type": "setHypothesis",
+          "payload": {
+            "claimId": "actor",
+            "value": "lin"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "actor",
+            "clueId": "dispatch"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "actor",
+            "clueId": "note"
+          }
+        },
+        {
+          "type": "verify",
+          "payload": "actor"
+        },
+        {
+          "type": "setHypothesis",
+          "payload": {
+            "claimId": "route",
+            "value": "ferry"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "route",
+            "clueId": "timetable"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "route",
+            "clueId": "tide"
+          }
+        },
+        {
+          "type": "verify",
+          "payload": "route"
+        },
+        {
+          "type": "setHypothesis",
+          "payload": {
+            "claimId": "destination",
+            "value": "east"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "destination",
+            "clueId": "bag"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "destination",
+            "clueId": "receipt"
+          }
+        },
+        {
+          "type": "verify",
+          "payload": "destination"
+        },
+        {
+          "type": "chooseEnding",
+          "payload": "reply"
+        },
+        {
+          "type": "submit"
+        }
+      ]
+    },
+    {
+      "mode": "ordinary same-API demonstration",
+      "ending": "archive",
+      "actionCount": 25,
+      "inspected": [
+        "clock",
+        "timetable",
+        "bag",
+        "dispatch",
+        "note",
+        "key",
+        "tide",
+        "receipt",
+        "letter"
+      ],
+      "hypotheses": {
+        "actor": {
+          "value": "lin",
+          "evidence": [
+            "dispatch",
+            "note"
+          ],
+          "verified": true
+        },
+        "route": {
+          "value": "ferry",
+          "evidence": [
+            "timetable",
+            "tide"
+          ],
+          "verified": true
+        },
+        "destination": {
+          "value": "east",
+          "evidence": [
+            "bag",
+            "receipt"
+          ],
+          "verified": true
+        }
+      },
+      "stats": {
+        "inspections": 9,
+        "verifications": 3,
+        "failedVerifications": 0
+      },
+      "actions": [
+        {
+          "type": "inspect",
+          "payload": "clock"
+        },
+        {
+          "type": "inspect",
+          "payload": "timetable"
+        },
+        {
+          "type": "inspect",
+          "payload": "bag"
+        },
+        {
+          "type": "scene",
+          "payload": "office"
+        },
+        {
+          "type": "inspect",
+          "payload": "dispatch"
+        },
+        {
+          "type": "inspect",
+          "payload": "note"
+        },
+        {
+          "type": "inspect",
+          "payload": "key"
+        },
+        {
+          "type": "scene",
+          "payload": "quay"
+        },
+        {
+          "type": "inspect",
+          "payload": "tide"
+        },
+        {
+          "type": "inspect",
+          "payload": "receipt"
+        },
+        {
+          "type": "inspect",
+          "payload": "letter"
+        },
+        {
+          "type": "setHypothesis",
+          "payload": {
+            "claimId": "actor",
+            "value": "lin"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "actor",
+            "clueId": "dispatch"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "actor",
+            "clueId": "note"
+          }
+        },
+        {
+          "type": "verify",
+          "payload": "actor"
+        },
+        {
+          "type": "setHypothesis",
+          "payload": {
+            "claimId": "route",
+            "value": "ferry"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "route",
+            "clueId": "timetable"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "route",
+            "clueId": "tide"
+          }
+        },
+        {
+          "type": "verify",
+          "payload": "route"
+        },
+        {
+          "type": "setHypothesis",
+          "payload": {
+            "claimId": "destination",
+            "value": "east"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "destination",
+            "clueId": "bag"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "destination",
+            "clueId": "receipt"
+          }
+        },
+        {
+          "type": "verify",
+          "payload": "destination"
+        },
+        {
+          "type": "chooseEnding",
+          "payload": "archive"
+        },
+        {
+          "type": "submit"
+        }
+      ]
+    },
+    {
+      "mode": "ordinary explicit manual actions with reversed evidence order",
+      "ending": "archive",
+      "actionCount": 25,
+      "inspected": [
+        "clock",
+        "timetable",
+        "bag",
+        "dispatch",
+        "note",
+        "key",
+        "tide",
+        "receipt",
+        "letter"
+      ],
+      "hypotheses": {
+        "actor": {
+          "value": "lin",
+          "evidence": [
+            "note",
+            "dispatch"
+          ],
+          "verified": true
+        },
+        "route": {
+          "value": "ferry",
+          "evidence": [
+            "tide",
+            "timetable"
+          ],
+          "verified": true
+        },
+        "destination": {
+          "value": "east",
+          "evidence": [
+            "receipt",
+            "bag"
+          ],
+          "verified": true
+        }
+      },
+      "actions": [
+        {
+          "type": "inspect",
+          "payload": "clock"
+        },
+        {
+          "type": "inspect",
+          "payload": "timetable"
+        },
+        {
+          "type": "inspect",
+          "payload": "bag"
+        },
+        {
+          "type": "scene",
+          "payload": "office"
+        },
+        {
+          "type": "inspect",
+          "payload": "dispatch"
+        },
+        {
+          "type": "inspect",
+          "payload": "note"
+        },
+        {
+          "type": "inspect",
+          "payload": "key"
+        },
+        {
+          "type": "scene",
+          "payload": "quay"
+        },
+        {
+          "type": "inspect",
+          "payload": "tide"
+        },
+        {
+          "type": "inspect",
+          "payload": "receipt"
+        },
+        {
+          "type": "inspect",
+          "payload": "letter"
+        },
+        {
+          "type": "setHypothesis",
+          "payload": {
+            "claimId": "actor",
+            "value": "lin"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "actor",
+            "clueId": "note"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "actor",
+            "clueId": "dispatch"
+          }
+        },
+        {
+          "type": "verify",
+          "payload": "actor"
+        },
+        {
+          "type": "setHypothesis",
+          "payload": {
+            "claimId": "route",
+            "value": "ferry"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "route",
+            "clueId": "tide"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "route",
+            "clueId": "timetable"
+          }
+        },
+        {
+          "type": "verify",
+          "payload": "route"
+        },
+        {
+          "type": "setHypothesis",
+          "payload": {
+            "claimId": "destination",
+            "value": "east"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "destination",
+            "clueId": "receipt"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "destination",
+            "clueId": "bag"
+          }
+        },
+        {
+          "type": "verify",
+          "payload": "destination"
+        },
+        {
+          "type": "chooseEnding",
+          "payload": "archive"
+        },
+        {
+          "type": "submit"
+        }
+      ]
+    },
+    {
+      "mode": "ordinary same-API demonstration",
+      "ending": "reply",
+      "actionCount": 31,
+      "inspected": [
+        "clock",
+        "timetable",
+        "bag",
+        "dispatch",
+        "note",
+        "key",
+        "tide",
+        "receipt",
+        "letter"
+      ],
+      "hypotheses": {
+        "actor": {
+          "value": "lin",
+          "evidence": [
+            "dispatch",
+            "note"
+          ],
+          "verified": true
+        },
+        "route": {
+          "value": "ferry",
+          "evidence": [
+            "timetable",
+            "tide"
+          ],
+          "verified": true
+        },
+        "destination": {
+          "value": "east",
+          "evidence": [
+            "bag",
+            "receipt"
+          ],
+          "verified": true
+        }
+      },
+      "stats": {
+        "inspections": 9,
+        "verifications": 4,
+        "failedVerifications": 1
+      },
+      "actions": [
+        {
+          "type": "inspect",
+          "payload": "clock"
+        },
+        {
+          "type": "inspect",
+          "payload": "timetable"
+        },
+        {
+          "type": "inspect",
+          "payload": "bag"
+        },
+        {
+          "type": "scene",
+          "payload": "office"
+        },
+        {
+          "type": "inspect",
+          "payload": "dispatch"
+        },
+        {
+          "type": "inspect",
+          "payload": "note"
+        },
+        {
+          "type": "inspect",
+          "payload": "key"
+        },
+        {
+          "type": "scene",
+          "payload": "quay"
+        },
+        {
+          "type": "inspect",
+          "payload": "tide"
+        },
+        {
+          "type": "inspect",
+          "payload": "receipt"
+        },
+        {
+          "type": "inspect",
+          "payload": "letter"
+        },
+        {
+          "type": "setHypothesis",
+          "payload": {
+            "claimId": "actor",
+            "value": "zhou"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "actor",
+            "clueId": "receipt"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "actor",
+            "clueId": "key"
+          }
+        },
+        {
+          "type": "verify",
+          "payload": "actor"
+        },
+        {
+          "type": "setHypothesis",
+          "payload": {
+            "claimId": "actor",
+            "value": "lin"
+          }
+        },
+        {
+          "type": "unpin",
+          "payload": {
+            "claimId": "actor",
+            "clueId": "receipt"
+          }
+        },
+        {
+          "type": "unpin",
+          "payload": {
+            "claimId": "actor",
+            "clueId": "key"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "actor",
+            "clueId": "dispatch"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "actor",
+            "clueId": "note"
+          }
+        },
+        {
+          "type": "verify",
+          "payload": "actor"
+        },
+        {
+          "type": "setHypothesis",
+          "payload": {
+            "claimId": "route",
+            "value": "ferry"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "route",
+            "clueId": "timetable"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "route",
+            "clueId": "tide"
+          }
+        },
+        {
+          "type": "verify",
+          "payload": "route"
+        },
+        {
+          "type": "setHypothesis",
+          "payload": {
+            "claimId": "destination",
+            "value": "east"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "destination",
+            "clueId": "bag"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "destination",
+            "clueId": "receipt"
+          }
+        },
+        {
+          "type": "verify",
+          "payload": "destination"
+        },
+        {
+          "type": "chooseEnding",
+          "payload": "reply"
+        },
+        {
+          "type": "submit"
+        }
+      ]
+    },
+    {
+      "mode": "ordinary same-API demonstration",
+      "ending": "reply",
+      "actionCount": 25,
+      "inspected": [
+        "clock",
+        "timetable",
+        "bag",
+        "dispatch",
+        "note",
+        "key",
+        "tide",
+        "receipt",
+        "letter"
+      ],
+      "hypotheses": {
+        "actor": {
+          "value": "lin",
+          "evidence": [
+            "dispatch",
+            "note"
+          ],
+          "verified": true
+        },
+        "route": {
+          "value": "ferry",
+          "evidence": [
+            "timetable",
+            "tide"
+          ],
+          "verified": true
+        },
+        "destination": {
+          "value": "east",
+          "evidence": [
+            "bag",
+            "receipt"
+          ],
+          "verified": true
+        }
+      },
+      "stats": {
+        "inspections": 9,
+        "verifications": 3,
+        "failedVerifications": 0
+      },
+      "actions": [
+        {
+          "type": "inspect",
+          "payload": "clock"
+        },
+        {
+          "type": "inspect",
+          "payload": "timetable"
+        },
+        {
+          "type": "inspect",
+          "payload": "bag"
+        },
+        {
+          "type": "scene",
+          "payload": "office"
+        },
+        {
+          "type": "inspect",
+          "payload": "dispatch"
+        },
+        {
+          "type": "inspect",
+          "payload": "note"
+        },
+        {
+          "type": "inspect",
+          "payload": "key"
+        },
+        {
+          "type": "scene",
+          "payload": "quay"
+        },
+        {
+          "type": "inspect",
+          "payload": "tide"
+        },
+        {
+          "type": "inspect",
+          "payload": "receipt"
+        },
+        {
+          "type": "inspect",
+          "payload": "letter"
+        },
+        {
+          "type": "setHypothesis",
+          "payload": {
+            "claimId": "actor",
+            "value": "lin"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "actor",
+            "clueId": "dispatch"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "actor",
+            "clueId": "note"
+          }
+        },
+        {
+          "type": "verify",
+          "payload": "actor"
+        },
+        {
+          "type": "setHypothesis",
+          "payload": {
+            "claimId": "route",
+            "value": "ferry"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "route",
+            "clueId": "timetable"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "route",
+            "clueId": "tide"
+          }
+        },
+        {
+          "type": "verify",
+          "payload": "route"
+        },
+        {
+          "type": "setHypothesis",
+          "payload": {
+            "claimId": "destination",
+            "value": "east"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "destination",
+            "clueId": "bag"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "destination",
+            "clueId": "receipt"
+          }
+        },
+        {
+          "type": "verify",
+          "payload": "destination"
+        },
+        {
+          "type": "chooseEnding",
+          "payload": "reply"
+        },
+        {
+          "type": "submit"
+        }
+      ]
+    },
+    {
+      "mode": "ordinary same-API demonstration",
+      "ending": "reply",
+      "actionCount": 25,
+      "inspected": [
+        "clock",
+        "timetable",
+        "bag",
+        "dispatch",
+        "note",
+        "key",
+        "tide",
+        "receipt",
+        "letter"
+      ],
+      "hypotheses": {
+        "actor": {
+          "value": "lin",
+          "evidence": [
+            "dispatch",
+            "note"
+          ],
+          "verified": true
+        },
+        "route": {
+          "value": "ferry",
+          "evidence": [
+            "timetable",
+            "tide"
+          ],
+          "verified": true
+        },
+        "destination": {
+          "value": "east",
+          "evidence": [
+            "bag",
+            "receipt"
+          ],
+          "verified": true
+        }
+      },
+      "stats": {
+        "inspections": 9,
+        "verifications": 3,
+        "failedVerifications": 0
+      },
+      "actions": [
+        {
+          "type": "inspect",
+          "payload": "clock"
+        },
+        {
+          "type": "inspect",
+          "payload": "timetable"
+        },
+        {
+          "type": "inspect",
+          "payload": "bag"
+        },
+        {
+          "type": "scene",
+          "payload": "office"
+        },
+        {
+          "type": "inspect",
+          "payload": "dispatch"
+        },
+        {
+          "type": "inspect",
+          "payload": "note"
+        },
+        {
+          "type": "inspect",
+          "payload": "key"
+        },
+        {
+          "type": "scene",
+          "payload": "quay"
+        },
+        {
+          "type": "inspect",
+          "payload": "tide"
+        },
+        {
+          "type": "inspect",
+          "payload": "receipt"
+        },
+        {
+          "type": "inspect",
+          "payload": "letter"
+        },
+        {
+          "type": "setHypothesis",
+          "payload": {
+            "claimId": "actor",
+            "value": "lin"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "actor",
+            "clueId": "dispatch"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "actor",
+            "clueId": "note"
+          }
+        },
+        {
+          "type": "verify",
+          "payload": "actor"
+        },
+        {
+          "type": "setHypothesis",
+          "payload": {
+            "claimId": "route",
+            "value": "ferry"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "route",
+            "clueId": "timetable"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "route",
+            "clueId": "tide"
+          }
+        },
+        {
+          "type": "verify",
+          "payload": "route"
+        },
+        {
+          "type": "setHypothesis",
+          "payload": {
+            "claimId": "destination",
+            "value": "east"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "destination",
+            "clueId": "bag"
+          }
+        },
+        {
+          "type": "pin",
+          "payload": {
+            "claimId": "destination",
+            "clueId": "receipt"
+          }
+        },
+        {
+          "type": "verify",
+          "payload": "destination"
+        },
+        {
+          "type": "chooseEnding",
+          "payload": "reply"
+        },
+        {
+          "type": "submit"
+        }
+      ]
+    }
+  ],
+  "method": "Pure DOM-independent production rule assertions. All solved cases discover actual scene-owned clues through inspect, then use explicit hypothesis/pin/verify/ending/submit actions; no synthetic discovery or outcome grants. Every demo intermediate state is checked through canonical legal-action replay. Restore recomputes all found order, verification, narrative and stats fields and normalizes paused=true; this validates deterministic history rather than authenticating a player identity.",
+  "command": "D:/software/nodejs/node.exe tooling/check-direction-investigation-rules.mjs"
+}

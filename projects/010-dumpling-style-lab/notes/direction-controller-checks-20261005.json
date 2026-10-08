@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    "production HTML IDs match every controller dependency",
+    "demo button starts actual three-wave simulation",
+    "pause button freezes clock and changes control label",
+    "guided button and real map pointer fill the intended supply gap",
+    "real controls select tools, rotate and change view flags",
+    "blank mode keeps core, resets resources and keyboard can construct",
+    "a fast horizontal belt drag fills every skipped map cell",
+    "background blur releases drag and saves paused simulation",
+    "ordinary page controls reach actual end state and show completion panel"
+  ],
+  "method": "Actual production page module and callbacks with DOM/Canvas adapter. Not browser CSS, pointer platform, fullscreen or localStorage acceptance."
+}

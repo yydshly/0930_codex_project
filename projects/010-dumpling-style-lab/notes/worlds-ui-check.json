@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-02",
+  "method": "CUA browser controls, real buttons, coordinate canvas clicks, screenshots and read-only DOM. Independent qa=1 save prefix; no browser runtime state mutation.",
+  "checks": [
+    "All eight upgraded worlds load their actual scenes and can be selected from the nine-game strip",
+    "Detective: canvas investigation of film can, ledger, receipt, Lin, contact proof and Ji; select two evidence cards, compare, choose Lin and custody reason, submit a completed case",
+    "Ecology: plant a wood seedling, advance spring, adjust to hold water, observe summer bird record and autumn loss; complete and display the three-season record",
+    "Wasteland: repair pump and window, spend power to salvage, repair heater, enable crops and heat, advance three rounds; survive with water2/power1/parts1/people2/crops3",
+    "Islands: acquire rope and lantern, install a real bridge, walk to departure, enter ruins, obtain crystal, open seal, obtain rubbing, return and archive both discoveries",
+    "Inn: first four days completed through actual room and furniture controls; tea, drawing and reading poses captured; the returning courier remembers the earlier quiet room and tea",
+    "Inn: browser reload preserves the fourth-day departure, furniture and return memory",
+    "Detective, ecology, wasteland and islands completed progress restored after reload and later selection",
+    "Dream: on 390x844 viewport, tap 45 logical pixels from the ticket center still selects it through the expanded touch radius; carry to lamp, placement creates the actual paper bridge",
+    "Arcade: jump and dash controls produce an airborne pose and cooldown; delivery remains disabled away from the cabinet",
+    "Pause keeps the visible arcade counter at 0.6 seconds through fullscreen, record dialog and focus checks",
+    "Fullscreen fits an 8:5 game canvas inside the available stage and moves sound/reset controls into the toolbar",
+    "Record dialog focus cycles from last button to Close with Tab and back with Shift+Tab; Escape closes the mobile record and restores focus",
+    "All eight worlds checked at 390x844: no page horizontal overflow, one active canvas, all primary game and touch buttons at least44px tall",
+    "Arcade mobile button widths below44px found and fixed; final repeat reports no game or touch button narrower or shorter than44px",
+    "Small-display directional grid uses44x44 cells and no overlaps; game strip stays available while scrolling",
+    "Moving Day still opens after switching through eight worlds; its three contract records, active third contract and cargo state remain available",
+    "Final eight-world capture pass has no browser console errors; viewport override reset after responsive checks"
+  ],
+  "errors": [],
+  "limits": [
+    "Complete seven-day inn and both rooftop routes covered by actual game-rule tests with mocked drawing, rather than claimed as full browser playthroughs in this round",
+    "No measured frame-rate, human playtest, retention, commercial-readiness or emotional-value validation",
+    "Generated asset failure/retry path implemented but not forced in this round"
+  ],
+  "evidenceDirectory": "assets/worlds-product",
+  "mobileMeasurements": "assets/worlds-product/mobile-checks.json",
+  "assetChecks": "notes/worlds-assets-check.json",
+  "ruleChecks": "notes/worlds-rules-check.json"
+}

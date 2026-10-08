@@ -1,0 +1,19 @@
+from pathlib import Path
+P=Path(__file__).resolve().parents[1];p=P/'web/showcase-foundry-scenes.js';s=p.read_text(encoding='utf-8')
+anchor="function splitRover(gltf)"
+helper="""function textureModel(group,texture){if(!texture)return;group.traverse(o=>{if(!o.isMesh)return;o.geometry=o.geometry.clone();o.material=o.material.clone();if(o.material.color.r+o.material.color.g+o.material.color.b<1.25)return;if(!o.geometry.attributes.uv){const p=o.geometry.attributes.position,n=o.geometry.attributes.normal,uv=new Float32Array(p.count*2);for(let i=0;i<p.count;i++){const nx=Math.abs(n?.getX(i)||0),ny=Math.abs(n?.getY(i)||0),nz=Math.abs(n?.getZ(i)||1);uv[i*2]=(nx>nz?p.getZ(i):p.getX(i))*1.8;uv[i*2+1]=(ny>Math.max(nx,nz)?p.getZ(i):p.getY(i))*1.8;}o.geometry.setAttribute('uv',new THREE.BufferAttribute(uv,2));}o.material.map=texture;o.material.roughness=.48;o.material.metalness=.5;});}
+function refinedWheel(parent,radius){const rubber=standard('#18262c',{roughness:.82,metalness:.02}),rim=standard('#c1bfb0',{roughness:.23,metalness:.86}),hub=standard('#bd8b42',{roughness:.35,metalness:.7});const tire=mesh(parent,new THREE.CylinderGeometry(radius,radius,.44,40),rubber);tire.rotation.z=Math.PI/2;for(const x of [-.225,.225]){const face=mesh(parent,new THREE.CylinderGeometry(radius*.69,radius*.69,.025,32),rim,[x,0,0]);face.rotation.z=Math.PI/2;const rimRing=mesh(parent,new THREE.TorusGeometry(radius*.74,radius*.055,8,40),rubber,[x,0,0]);rimRing.rotation.y=Math.PI/2;const cap=mesh(parent,new THREE.CylinderGeometry(radius*.2,radius*.2,.06,16),hub,[x*1.1,0,0]);cap.rotation.z=Math.PI/2;for(let n=0;n<6;n++){const a=n*Math.PI/3,bolt=mesh(parent,new THREE.CylinderGeometry(.035,.035,.035,6),hub,[x*1.1,Math.cos(a)*radius*.42,Math.sin(a)*radius*.42]);bolt.rotation.z=Math.PI/2;}}for(let n=0;n<24;n++){const a=n*Math.PI/12,tread=box(parent,[.47,.055,radius*.12],rubber,[0,Math.cos(a)*(radius-.025),Math.sin(a)*(radius-.025)]);tread.rotation.x=a;}return parent;}
+"""
+s=s.replace(anchor,helper+anchor)
+s=s.replace("if(mode==='body'?!wheelTriangle:wheelTriangle&&rightFront)", "if(mode==='body'?!wheelTriangle&&p.every(v=>v.y<.272):wheelTriangle&&rightFront)")
+s=s.replace('vehicle.add(body);const core=',"vehicle.add(body);textureModel(body,textures['alloy-panel']);const core=")
+s=s.replace("w=wheel.clone(true);spin.add(w);", "w=refinedWheel(new THREE.Group(),.62);spin.add(w);")
+s=s.replace('w.object.scale.setScalar(spec.radius/.043301)', 'w.object.scale.setScalar(spec.radius/.62)')
+s=s.replace('scene.add(garage);for(const x', "textureModel(garage,textures['alloy-panel']);scene.add(garage);for(const x")
+s=s.replace('scene.add(facility);box(scene', "textureModel(facility,textures['alloy-panel']);scene.add(facility);box(scene")
+s=s.replace('scene.add(hangar);', "textureModel(hangar,textures['alloy-panel']);scene.add(hangar);")
+s=s.replace("ship.traverse(o=>", "textureModel(ship,textures['alloy-panel']);ship.traverse(o=>")
+p.write_text(s,encoding='utf-8')
+p=P/'tooling/export-foundry-scenes.mjs';s=p.read_text(encoding='utf-8');s=s.replace("uv:uv?Array.from(uv.array):null,", "uv:uv?Array.from(uv.array):null,color:geometry.attributes.color?{values:Array.from(geometry.attributes.color.array),size:geometry.attributes.color.itemSize}:null,");s=s.replace("map:textureAsset(m.map)", "map:textureAsset(m.map),mapFlip:m.map?.flipY??true");p.write_text(s,encoding='utf-8')
+p=P/'tooling/raster-foundry-scenes.py';s=p.read_text(encoding='utf-8');s=s.replace("color*=illumination;em=", "if mesh.get('color'):\\n    attr=mesh['color'];vertex_color=np.array(attr['values'],dtype=np.float32).reshape(-1,attr['size'])[:,:3];color*=weights@vertex_color[ids]\\n   color*=illumination;em=");p.write_text(s,encoding='utf-8')
+print('Refined tire geometry and metallic rims; mapped original surfaces; included actual vertex colors')

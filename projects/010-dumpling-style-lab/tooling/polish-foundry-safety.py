@@ -1,0 +1,5 @@
+from pathlib import Path
+P=Path(__file__).resolve().parents[1]/'web'
+p=P/'showcase-foundry-rules.js';s=p.read_text(encoding='utf-8');s=s.replace('finite(raw[k],s[k])','finite(raw[k],defaults[k])');p.write_text(s,encoding='utf-8')
+p=P/'showcase-foundry-scenes.js';s=p.read_text(encoding='utf-8');s=s.replace('vehicle.add(engine);const arm=', 'vehicle.add(engine);const engineScale=engine.scale.x;const arm=');s=s.replace("(s.config.engine==='torque'?1.2:1)*1.4/4", "(s.config.engine==='torque'?1.2:1)*engineScale");s=s.replace('let failures=0;', 'let failures=0;const events=new AbortController();');s=s.replace("element.addEventListener('webglcontextlost',e=>{e.preventDefault();failures++;});", "element.addEventListener('webglcontextlost',e=>{e.preventDefault();failures++;},{signal:events.signal});element.addEventListener('webglcontextrestored',()=>{failures=0;},{signal:events.signal});");s=s.replace('dispose(){observer.disconnect();disposeFoundryScene', 'dispose(){events.abort();observer.disconnect();disposeFoundryScene');p.write_text(s,encoding='utf-8')
+print('Repaired finite save defaults, preserved model scale, context recovery')

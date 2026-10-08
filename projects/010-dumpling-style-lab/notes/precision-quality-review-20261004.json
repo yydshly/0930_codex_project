@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-04",
+  "scope": "Two additional playable forms: billiards / breakout. Existing visual editions, modules, assets and normal saves are preserved.",
+  "catalogs": { "forms": 45, "entrances": 54, "new_forms": 2, "previous_forms": 43 },
+  "visual_assets": {
+    "tool": "Built-in ImageGen",
+    "asset_count": 4,
+    "manifest_and_prompts": "assets/game-forms/arcade-generation-20261004.json",
+    "raw_sources": "assets/game-forms/arcade-sources/",
+    "runtime_directories": ["web/assets/game-forms/cue/", "web/assets/game-forms/prism/"],
+    "preview_provenance": "notes/precision-preview-provenance-20261004.json"
+  },
+  "cue": {
+    "title": "暮色台球",
+    "implemented": ["Authored walnut, brass and green felt tabletop", "Six-ball practice and fifteen-ball triangular rack", "First-contact aim preview and object-ball direction", "Power slider, mouse/drag aiming and keyboard controls", "Ball-to-ball momentum collision, rail restitution, rolling friction, six pockets and cue-ball respot", "Independent saves and actual clear-table completion"],
+    "browser_verified": ["Default first shot pots ball 1", "Potted count changes to 1/6 with one stroke", "Pause disables controls", "Refresh restores 1/6 and one stroke", "Switch to the fifteen-ball rack", "Desktop, 390px narrow viewport and fullscreen", "Dedicated fullscreen exit and full-width aligned control strip"],
+    "manual_complete_table": false,
+    "production_checks_cover_last_ball_completion": true,
+    "limitations": ["Free clear-table practice, not a standard eight-ball opponent match", "Cue spin / English is not simulated", "Full clear-table end card was not manually reached in the browser"],
+    "screenshots": ["assets/game-forms/precision-qa/cue-desktop.jpg", "assets/game-forms/precision-qa/cue-mobile.jpg", "assets/game-forms/precision-qa/cue-fullscreen.jpg"]
+  },
+  "prism": {
+    "title": "琉璃星阵",
+    "implemented": ["Authored celestial observatory, glass bricks and mechanical paddle", "Two layouts, with double-layer bricks in the second act", "Actual ball travel and collision; paddle contact location changes return angle", "Three lives, surviving brick progress and score", "Falling expansion capsules and 18-second enlarged paddle", "Easy and standard widths, pointer/drag/keyboard and HTML touch controls", "Independent live-volley save and restore"],
+    "browser_verified": ["First launched ball breaks one brick and scores 115", "Move paddle to catch the ball, then hit again: 2 bricks and 230 score", "Refresh restores 34 surviving bricks and 230 score", "A miss consumes a life and retains the surviving layout", "Desktop, 390px narrow viewport and fullscreen", "Dedicated fullscreen exit and full-width aligned control strip"],
+    "manual_two_act_win": false,
+    "production_checks_cover_act_change_and_victory": true,
+    "ending_capture_status": "Manually lost all three balls: 10 bricks cleared, 1465 score, 0 lives; ending card inspected and refresh retained the completed failure state.",
+    "screenshots": ["assets/game-forms/precision-qa/prism-desktop.jpg", "assets/game-forms/precision-qa/prism-mobile.jpg", "assets/game-forms/precision-qa/prism-fullscreen.jpg", "assets/game-forms/precision-qa/prism-ending.jpg"]
+  },
+  "verification": { "new_production_and_lifecycle_checks": 23, "original_rule_regressions": 56, "site_tests": 6, "built_demos": 19, "protected_existing_files": 2260, "changed_protected_files": 0, "missing_protected_files": 0, "packaged_targets": 17, "packaged_mismatches": 0 },
+  "rule_report": "notes/precision-rules-check-20261004.json",
+  "package_report": "notes/precision-package-check-20261004.json",
+  "responsive_metrics": "notes/precision-responsive-metrics-20261004.json",
+  "normal_save_handling": "All reset, mode-switch, motion and completion QA used qa=1 save keys. The original mini-golf/train-dispatch user tab was not reset or navigated. The new normal-save comparison is ready to start.",
+  "browser_console": {
+    "individual_new_demo_errors_observed": [],
+    "comparison_parent_observer_error": "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+    "observer_provenance": "The same error was previously observed on the existing comparison page. No matching MutationObserver implementation was found in the project source inspected. The origin remains unknown; both new embedded games loaded and rendered. No error handler was added to hide it."
+  },
+  "final_user_view": "assets/game-forms/precision-qa/final-pair.jpg",
+  "limits": ["Viewport simulation does not establish real-device performance", "Audio quality was not listened to", "Production rule tests do not substitute for manual visual review", "This batch does not establish commercial completeness or review the visual quality of all 45 forms"]
+}

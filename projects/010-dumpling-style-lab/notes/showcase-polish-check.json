@@ -1,0 +1,166 @@
+{
+  "at": "2026-10-02T23:59:27.113Z",
+  "method": "isolated browser; all progress earned through real keyboard/pointer input; state read only",
+  "results": [
+    {
+      "id": "hunter",
+      "passed": true,
+      "state": {
+        "x": 428.0239999999992,
+        "y": 465,
+        "hp": 100,
+        "maxHp": 100,
+        "wave": 0,
+        "kills": 0,
+        "damage": 28,
+        "attackRate": 0.38,
+        "dashRate": 1.05,
+        "phase": "fight",
+        "upgrades": [],
+        "enemies": [
+          {
+            "id": 0,
+            "type": 0,
+            "x": 286.9702099933249,
+            "y": 318.0986839485063,
+            "hp": 55,
+            "guard": 0,
+            "stagger": 0,
+            "mode": "move",
+            "clock": 0.41659999999999986,
+            "hit": 0,
+            "fade": 0
+          },
+          {
+            "id": 1,
+            "type": 0,
+            "x": 425.4615313347427,
+            "y": 370.81857365614053,
+            "hp": 55,
+            "guard": 0,
+            "stagger": 0,
+            "mode": "move",
+            "clock": 0.5865999999999999,
+            "hit": 0,
+            "fade": 0
+          },
+          {
+            "id": 2,
+            "type": 1,
+            "x": 543.5900362356832,
+            "y": 327.9379202444178,
+            "hp": 85,
+            "guard": 2,
+            "stagger": 0,
+            "mode": "move",
+            "clock": 0.7565999999999999,
+            "hit": 0,
+            "fade": 0
+          },
+          {
+            "id": 3,
+            "type": 2,
+            "x": 731.1638229421343,
+            "y": 346.9596632091278,
+            "hp": 55,
+            "guard": 0,
+            "stagger": 0,
+            "mode": "move",
+            "clock": 0.9265999999999999,
+            "hit": 0,
+            "fade": 0
+          }
+        ],
+        "won": false
+      }
+    },
+    {
+      "id": "station",
+      "passed": true,
+      "state": {
+        "x": 0.11689999999999445,
+        "z": -25.03974999999996,
+        "yaw": 0,
+        "pitch": 0,
+        "solved": [
+          true,
+          true,
+          true
+        ],
+        "mirror": 1,
+        "battery": "installed",
+        "order": [
+          0,
+          2,
+          1
+        ],
+        "won": true
+      }
+    },
+    {
+      "id": "builder",
+      "passed": true,
+      "state": {
+        "x": 8.234449999999985,
+        "z": 1.2652200000000047,
+        "py": 0,
+        "vy": 0,
+        "camYaw": 2.7755575615628914e-17,
+        "stones": [],
+        "blocks": {
+          "0:0": true,
+          "1:0": true,
+          "2:0": true
+        },
+        "stock": 5,
+        "removed": 0,
+        "selected": {
+          "x": 2,
+          "z": 0
+        },
+        "won": true,
+        "checkpoint": {
+          "x": 4,
+          "z": 0
+        },
+        "falls": 0,
+        "visited": []
+      }
+    },
+    {
+      "id": "expedition",
+      "passed": true,
+      "state": {
+        "x": 8.014009999999983,
+        "z": 0.9348900000000012,
+        "py": 0,
+        "vy": 0,
+        "camYaw": 2.7755575615628914e-17,
+        "stones": [
+          0,
+          1,
+          2
+        ],
+        "blocks": {},
+        "stock": 8,
+        "removed": 0,
+        "selected": {
+          "x": 0,
+          "z": 0
+        },
+        "won": true,
+        "checkpoint": {
+          "x": 4,
+          "z": 0
+        },
+        "falls": 0,
+        "visited": [
+          0,
+          1,
+          2
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,110 @@
+{
+  "production_visual_review": true,
+  "browser_acceptance_complete": false,
+  "review_method": "Viewed nine initial/progress/complete production frames in contact sheets, then three full-size progress frames and the final corrected solitaire progress frame. Production Canvas2D via Skia, not browser screenshots.",
+  "frames": [
+    {
+      "id": "cascade",
+      "phase": "initial",
+      "file": "assets/game-forms/parlor-qa/cascade-initial.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D via Skia; normal command playthrough, not browser screenshots.",
+      "sha256": "a11c6c834ec2e1f601a7d68ca215e6a116f4b808b2751a411d90d593552f7837",
+      "review_observation": "原创海窗装置与竖井边界吻合，实际贴图方块、幽影、下三块与暂存可辨；过程保留一个待消横排，完成通过正常落点清掉两行。"
+    },
+    {
+      "id": "cascade",
+      "phase": "progress",
+      "file": "assets/game-forms/parlor-qa/cascade-progress.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D via Skia; normal command playthrough, not browser screenshots.",
+      "sha256": "f383fc6887f9c46cee934979030d0d17882c09b2a32cc926fac72f9b423ae218",
+      "review_observation": "原创海窗装置与竖井边界吻合，实际贴图方块、幽影、下三块与暂存可辨；过程保留一个待消横排，完成通过正常落点清掉两行。"
+    },
+    {
+      "id": "cascade",
+      "phase": "complete",
+      "file": "assets/game-forms/parlor-qa/cascade-complete.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D via Skia; normal command playthrough, not browser screenshots.",
+      "sha256": "319655a8af9afb4e1d0f5acebec73b98be97e3b87fd70913ec56e552667482a9",
+      "review_observation": "原创海窗装置与竖井边界吻合，实际贴图方块、幽影、下三块与暂存可辨；过程保留一个待消横排，完成通过正常落点清掉两行。"
+    },
+    {
+      "id": "patience",
+      "phase": "initial",
+      "file": "assets/game-forms/parlor-qa/patience-initial.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D via Skia; normal command playthrough, not browser screenshots.",
+      "sha256": "f60285740434d056078379e58fcfbcea0ee65564be12fbfd4ae34a61f158df04",
+      "review_observation": "原创正背牌面、红黑花色、点数、遮盖牌与空列可辨；归位计数移至标题后，不再和第三、四列标题挤在一起；完成实际归位二十张。"
+    },
+    {
+      "id": "patience",
+      "phase": "progress",
+      "file": "assets/game-forms/parlor-qa/patience-progress.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D via Skia; normal command playthrough, not browser screenshots.",
+      "sha256": "26bf85c2859405e784e25b1d404e67dae6e006ee6c14e03f01bbca64519c0629",
+      "review_observation": "原创正背牌面、红黑花色、点数、遮盖牌与空列可辨；归位计数移至标题后，不再和第三、四列标题挤在一起；完成实际归位二十张。"
+    },
+    {
+      "id": "patience",
+      "phase": "complete",
+      "file": "assets/game-forms/parlor-qa/patience-complete.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D via Skia; normal command playthrough, not browser screenshots.",
+      "sha256": "9815bdc61c7142a96c58209eee5115329b723f5b7b1395b2e75141265696108b",
+      "review_observation": "原创正背牌面、红黑花色、点数、遮盖牌与空列可辨；归位计数移至标题后，不再和第三、四列标题挤在一起；完成实际归位二十张。"
+    },
+    {
+      "id": "lexicon",
+      "phase": "initial",
+      "file": "assets/game-forms/parlor-qa/lexicon-initial.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D via Skia; normal command playthrough, not browser screenshots.",
+      "sha256": "efba99321d9ddae87b1b4f119516a8917c105416b79e51da13332de6476ced5e",
+      "review_observation": "纸面容纳完整五列六行，右侧线索与字母状态清晰；CRANE 的 R 错位、E 正位，BLOOM 只给一个 O 匹配，SHORE 实际逐格全对。"
+    },
+    {
+      "id": "lexicon",
+      "phase": "progress",
+      "file": "assets/game-forms/parlor-qa/lexicon-progress.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D via Skia; normal command playthrough, not browser screenshots.",
+      "sha256": "7b769cd0c9848cce93cedb67638eb3fb7d29affb36811f0d2dcd7de7c469a1fa",
+      "review_observation": "纸面容纳完整五列六行，右侧线索与字母状态清晰；CRANE 的 R 错位、E 正位，BLOOM 只给一个 O 匹配，SHORE 实际逐格全对。"
+    },
+    {
+      "id": "lexicon",
+      "phase": "complete",
+      "file": "assets/game-forms/parlor-qa/lexicon-complete.png",
+      "pausedStateUnchanged": true,
+      "method": "Production Canvas2D via Skia; normal command playthrough, not browser screenshots.",
+      "sha256": "b788927acb2d67bab164f73f74ddaa72fd22aab6300515c2f0e9a1862afcdefc",
+      "review_observation": "纸面容纳完整五列六行，右侧线索与字母状态清晰；CRANE 的 R 错位、E 正位，BLOOM 只给一个 O 匹配，SHORE 实际逐格全对。"
+    }
+  ],
+  "fixes": [
+    "归位计数并入同花归位区标题，避免与接龙列标题相互拥挤。",
+    "落块完成状态显示消行完成，不再显示准备开始。",
+    "接龙无效放牌说明同花顺序或红黑递减规则，牌张不改变。",
+    "Q 和 Shift 由原生键盘事件处理，避免与按键采样重复执行。",
+    "拖动起点与当前坐标独立保存，滑动实际作用于棋盘。",
+    "字母 P / F 阻止宿主暂停与全屏快捷键。"
+  ],
+  "verified": [
+    "三段通过正常命令完成，没有注入胜利状态。",
+    "67 项规则与 48 项生产控件生命周期检查。",
+    "九张生产绘图，暂停绘制不改变状态。",
+    "原有 95 种形式、104 个入口逐项一致，2468 个受保护旧文件没有修改或丢失。",
+    "21 个打包目标、26 个 HTTP 地址内容一致，旧回归与六项站点检查通过。"
+  ],
+  "not_verified": [
+    "真实浏览器窄屏、全屏、触摸和无障碍树",
+    "输入焦点与真实浏览器按键体验",
+    "浏览器刷新存档、真实声音、设备性能与帧率"
+  ],
+  "browser_blocker": "cua.getState failed twice: trusted Node process exited unexpectedly; kernel reset, rerun your request. No browser state returned and no alternative browser automation used.",
+  "scope": "三段原创形式演示。10×18 固定队列落块、四列二十张 A–5 接龙、24 词本地字词推理；不等于完整商业游戏。"
+}

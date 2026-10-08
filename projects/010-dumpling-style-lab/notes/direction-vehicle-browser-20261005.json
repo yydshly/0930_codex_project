@@ -1,0 +1,1048 @@
+{
+  "date": "2026-10-05",
+  "status": "passed",
+  "passed": true,
+  "method": "Actual Codex in-app Chromium UI, native page controls and read-only rendered DOM; production WebGL screenshots. No hidden world access or time injection.",
+  "checks": [
+    {
+      "name": "Manual firm tuning, ordinary depot drive and four-unit 320 kg load persisted paused after reload",
+      "passed": true,
+      "evidence": {
+        "canvas": {
+          "bottom": 706.0520935058594,
+          "height": 474.3333435058594,
+          "width": 1037.3333740234375,
+          "x": 38.66666793823242,
+          "y": 231.71875
+        },
+        "controls": {
+          "bottom": 895.0521240234375,
+          "height": 189,
+          "width": 1037.3333740234375,
+          "x": 38.66666793823242,
+          "y": 706.0521240234375
+        },
+        "fullscreen": null,
+        "panel": {
+          "bottom": 895.0520858764648,
+          "height": 790,
+          "width": 310,
+          "x": 1076,
+          "y": 105.05208587646484
+        },
+        "scrollWidth": 1425,
+        "springs": [
+          "103 mm",
+          "101 mm",
+          "100 mm",
+          "103 mm"
+        ],
+        "stage": {
+          "bottom": 895.0520858764648,
+          "height": 790,
+          "width": 1037.3333740234375,
+          "x": 38.66666793823242,
+          "y": 105.05208587646484
+        },
+        "text": {
+          "vehicle-camera-name": "3D 环绕检视",
+          "vehicle-cargo": "320",
+          "vehicle-contact": "4 / 4",
+          "vehicle-distance": "63 m",
+          "vehicle-hint": "上次车辆已恢复并暂停。继续上次，或开始新一轮试车。",
+          "vehicle-log": "0s · 空车停在岚谷车库。领取试车单，去北坡料站装载，再送往桥东工地。\n0s · 切换紧致调校：四角弹簧与阻尼参数已更新。\n0s · 试车单已领取。沿西侧缓坡到北坡料站，停车装载 320 kg 建材。\n12s · 4 件建材已装车，载重增加 320 kg。观察车身下沉与加速变化，横穿搓板路到工地。",
+          "vehicle-mass": "1,570 kg",
+          "vehicle-max-compression": "149 mm",
+          "vehicle-mode": "存档已恢复 · 暂停",
+          "vehicle-pitch": "0.4",
+          "vehicle-report-detail": "",
+          "vehicle-roll": "-0.7",
+          "vehicle-speed": "0.4",
+          "vehicle-task": "载重通过搓板路 · 送达工地",
+          "vehicle-tune-name": "紧致悬架"
+        },
+        "viewport": {
+          "height": 1000,
+          "width": 1440
+        }
+      }
+    },
+    {
+      "name": "Desktop stage and controls fit without horizontal overflow",
+      "passed": true,
+      "evidence": {
+        "canvas": {
+          "bottom": 706.0520935058594,
+          "height": 474.3333435058594,
+          "width": 1037.3333740234375,
+          "x": 38.66666793823242,
+          "y": 231.71875
+        },
+        "controls": {
+          "bottom": 895.0521240234375,
+          "height": 189,
+          "width": 1037.3333740234375,
+          "x": 38.66666793823242,
+          "y": 706.0521240234375
+        },
+        "fullscreen": null,
+        "panel": {
+          "bottom": 895.0520858764648,
+          "height": 790,
+          "width": 310,
+          "x": 1076,
+          "y": 105.05208587646484
+        },
+        "scrollWidth": 1425,
+        "springs": [
+          "103 mm",
+          "101 mm",
+          "100 mm",
+          "103 mm"
+        ],
+        "stage": {
+          "bottom": 895.0520858764648,
+          "height": 790,
+          "width": 1037.3333740234375,
+          "x": 38.66666793823242,
+          "y": 105.05208587646484
+        },
+        "text": {
+          "vehicle-camera-name": "3D 环绕检视",
+          "vehicle-cargo": "320",
+          "vehicle-contact": "4 / 4",
+          "vehicle-distance": "63 m",
+          "vehicle-hint": "上次车辆已恢复并暂停。继续上次，或开始新一轮试车。",
+          "vehicle-log": "0s · 空车停在岚谷车库。领取试车单，去北坡料站装载，再送往桥东工地。\n0s · 切换紧致调校：四角弹簧与阻尼参数已更新。\n0s · 试车单已领取。沿西侧缓坡到北坡料站，停车装载 320 kg 建材。\n12s · 4 件建材已装车，载重增加 320 kg。观察车身下沉与加速变化，横穿搓板路到工地。",
+          "vehicle-mass": "1,570 kg",
+          "vehicle-max-compression": "149 mm",
+          "vehicle-mode": "存档已恢复 · 暂停",
+          "vehicle-pitch": "0.4",
+          "vehicle-report-detail": "",
+          "vehicle-roll": "-0.7",
+          "vehicle-speed": "0.4",
+          "vehicle-task": "载重通过搓板路 · 送达工地",
+          "vehicle-tune-name": "紧致悬架"
+        },
+        "viewport": {
+          "height": 1000,
+          "width": 1440
+        }
+      }
+    },
+    {
+      "name": "Native fullscreen includes the whole stage and visible exit, route and cargo controls",
+      "passed": true,
+      "evidence": {
+        "layout": {
+          "canvas": {
+            "bottom": 713.0000457763672,
+            "height": 592.3333740234375,
+            "width": 1722,
+            "x": 0,
+            "y": 120.66667175292967
+          },
+          "controls": {
+            "bottom": 1034,
+            "height": 321,
+            "width": 1722,
+            "x": 0,
+            "y": 713
+          },
+          "fullscreen": null,
+          "panel": {
+            "bottom": 710.3854141235352,
+            "height": 790,
+            "width": 330,
+            "x": 1312.3333740234375,
+            "y": -79.61458587646484
+          },
+          "scrollWidth": 1722,
+          "springs": [
+            "181 mm",
+            "161 mm",
+            "161 mm",
+            "181 mm"
+          ],
+          "stage": {
+            "bottom": 1034,
+            "height": 1034,
+            "width": 1722,
+            "x": 0,
+            "y": 0
+          },
+          "text": {
+            "vehicle-camera-name": "3D 追尾视角",
+            "vehicle-cargo": "320",
+            "vehicle-contact": "4 / 4",
+            "vehicle-distance": "129 m",
+            "vehicle-hint": "驾驶辅助 → 桥东工地 · 方向或踏板可随时接管",
+            "vehicle-log": "0s · 空车停在岚谷车库。领取试车单，去北坡料站装载，再送往桥东工地。\n0s · 切换紧致调校：四角弹簧与阻尼参数已更新。\n0s · 试车单已领取。沿西侧缓坡到北坡料站，停车装载 320 kg 建材。\n12s · 4 件建材已装车，载重增加 320 kg。观察车身下沉与加速变化，横穿搓板路到工地。\n12s · 切换舒适调校：四角弹簧与阻尼参数已更新。",
+            "vehicle-mass": "1,570 kg",
+            "vehicle-max-compression": "311 mm",
+            "vehicle-mode": "驾驶辅助中",
+            "vehicle-pitch": "-0.4",
+            "vehicle-report-detail": "",
+            "vehicle-roll": "-1.2",
+            "vehicle-speed": "0.1",
+            "vehicle-task": "载重通过搓板路 · 送达工地",
+            "vehicle-tune-name": "舒适悬架"
+          },
+          "viewport": {
+            "height": 1034,
+            "width": 1722
+          }
+        },
+        "native_fullscreen_confirmed_by": "Native input AX is restricted to vehicle-stage, viewport1722×1034, fullscreen exit control visible"
+      }
+    },
+    {
+      "name": "Fullscreen cargo terminal unloads actual 320 kg and synchronizes return target",
+      "passed": true,
+      "evidence": {
+        "canvas": {
+          "bottom": 713.0000457763672,
+          "height": 592.3333740234375,
+          "width": 1722,
+          "x": 0,
+          "y": 120.66667175292967
+        },
+        "controls": {
+          "bottom": 1034,
+          "height": 321,
+          "width": 1722,
+          "x": 0,
+          "y": 713
+        },
+        "fullscreen": null,
+        "panel": {
+          "bottom": 710.3854141235352,
+          "height": 790,
+          "width": 330,
+          "x": 1312.3333740234375,
+          "y": -79.61458587646484
+        },
+        "scrollWidth": 1722,
+        "springs": [
+          "147 mm",
+          "125 mm",
+          "125 mm",
+          "147 mm"
+        ],
+        "stage": {
+          "bottom": 1034,
+          "height": 1034,
+          "width": 1722,
+          "x": 0,
+          "y": 0
+        },
+        "text": {
+          "vehicle-camera-name": "3D 追尾视角",
+          "vehicle-cargo": "0",
+          "vehicle-contact": "4 / 4",
+          "vehicle-distance": "129 m",
+          "vehicle-hint": "空车跨桥 · 返回车库",
+          "vehicle-log": "0s · 切换紧致调校：四角弹簧与阻尼参数已更新。\n0s · 试车单已领取。沿西侧缓坡到北坡料站，停车装载 320 kg 建材。\n12s · 4 件建材已装车，载重增加 320 kg。观察车身下沉与加速变化，横穿搓板路到工地。\n12s · 切换舒适调校：四角弹簧与阻尼参数已更新。\n78s · 建材已送达。空车沿东侧跨桥，再经南侧道路返回车库。",
+          "vehicle-mass": "1,250 kg",
+          "vehicle-max-compression": "311 mm",
+          "vehicle-mode": "手动驾驶",
+          "vehicle-pitch": "-0.3",
+          "vehicle-report-detail": "",
+          "vehicle-roll": "-1.2",
+          "vehicle-speed": "0.0",
+          "vehicle-task": "空车跨桥 · 返回车库",
+          "vehicle-tune-name": "舒适悬架"
+        },
+        "viewport": {
+          "height": 1034,
+          "width": 1722
+        }
+      }
+    },
+    {
+      "name": "Manual operations and ordinary assist route complete delivery, actual east bridge and garage finish",
+      "passed": true,
+      "evidence": {
+        "canvas": {
+          "bottom": 403.9479370117187,
+          "height": 422.4479370117187,
+          "width": 552.6666870117188,
+          "x": 24.666667938232425,
+          "y": -18.5
+        },
+        "controls": {
+          "bottom": 674.0521240234375,
+          "height": 270.10418701171875,
+          "width": 552.6666870117188,
+          "x": 24.666667938232425,
+          "y": 403.9479370117187
+        },
+        "fullscreen": null,
+        "panel": {
+          "bottom": 2371.666748046875,
+          "height": 1627.6146240234375,
+          "width": 552.6666870117188,
+          "x": 24.666667938232425,
+          "y": 744.0521240234375
+        },
+        "scrollWidth": 602,
+        "springs": [
+          "135 mm",
+          "137 mm",
+          "137 mm",
+          "135 mm"
+        ],
+        "stage": {
+          "bottom": 674.0521240234375,
+          "height": 847.3333740234375,
+          "width": 552.6666870117188,
+          "x": 24.666667938232425,
+          "y": -173.28125
+        },
+        "text": {
+          "vehicle-camera-name": "3D 追尾视角",
+          "vehicle-cargo": "0",
+          "vehicle-contact": "4 / 4",
+          "vehicle-distance": "256 m",
+          "vehicle-hint": "建材已交付，桥面与回库测试已完成。本轮已暂停保存，可查看读数或开启新的试车。",
+          "vehicle-log": "12s · 4 件建材已装车，载重增加 320 kg。观察车身下沉与加速变化，横穿搓板路到工地。\n12s · 切换舒适调校：四角弹簧与阻尼参数已更新。\n78s · 建材已送达。空车沿东侧跨桥，再经南侧道路返回车库。\n180s · 东侧桥面测试已通过。沿南侧道路回库，停车提交试车记录。\n220s · 配送与回库完成。四角悬挂、载重搓板路和桥面测试已记录，本轮自动暂停。",
+          "vehicle-mass": "1,250 kg",
+          "vehicle-max-compression": "311 mm",
+          "vehicle-mode": "试车完成 · 已暂停",
+          "vehicle-pitch": "0.7",
+          "vehicle-report-detail": "用时 221 秒，实际行驶 256 m，交付 4 件建材。最大悬架压缩 311 mm，碰撞 0 次。车辆已在车库停稳并保存。",
+          "vehicle-roll": "1.1",
+          "vehicle-speed": "0.0",
+          "vehicle-task": "配送完成 · 测试已记录",
+          "vehicle-tune-name": "舒适悬架"
+        },
+        "viewport": {
+          "height": 871,
+          "width": 617
+        }
+      }
+    },
+    {
+      "name": "Survey camera changes perspective while retaining the paused route and suspension",
+      "passed": true,
+      "evidence": {
+        "canvas": {
+          "bottom": 706.0520935058594,
+          "height": 474.3333435058594,
+          "width": 1037.3333740234375,
+          "x": 38.66666793823242,
+          "y": 231.71875
+        },
+        "controls": {
+          "bottom": 895.0521240234375,
+          "height": 189,
+          "width": 1037.3333740234375,
+          "x": 38.66666793823242,
+          "y": 706.0521240234375
+        },
+        "fullscreen": null,
+        "panel": {
+          "bottom": 895.0520858764648,
+          "height": 790,
+          "width": 310,
+          "x": 1076,
+          "y": 105.05208587646484
+        },
+        "scrollWidth": 1425,
+        "springs": [
+          "143 mm",
+          "121 mm",
+          "111 mm",
+          "132 mm"
+        ],
+        "stage": {
+          "bottom": 895.0520858764648,
+          "height": 790,
+          "width": 1037.3333740234375,
+          "x": 38.66666793823242,
+          "y": 105.05208587646484
+        },
+        "text": {
+          "vehicle-camera-name": "3D 试车场总览",
+          "vehicle-cargo": "0",
+          "vehicle-contact": "4 / 4",
+          "vehicle-distance": "60 m",
+          "vehicle-hint": "试车暂停 · 车身、悬挂与路线全部冻结",
+          "vehicle-log": "0s · 空车停在岚谷车库。领取试车单，去北坡料站装载，再送往桥东工地。\n0s · 试车单已领取。沿西侧缓坡到北坡料站，停车装载 320 kg 建材。",
+          "vehicle-mass": "1,250 kg",
+          "vehicle-max-compression": "166 mm",
+          "vehicle-mode": "试车暂停",
+          "vehicle-pitch": "3.4",
+          "vehicle-report-detail": "",
+          "vehicle-roll": "0.3",
+          "vehicle-speed": "14.8",
+          "vehicle-task": "去北坡料站 · 停车装载",
+          "vehicle-tune-name": "舒适悬架"
+        },
+        "viewport": {
+          "height": 1000,
+          "width": 1440
+        }
+      }
+    },
+    {
+      "name": "Paused vehicle speed, distance, cargo and all four spring readouts remain exactly fixed",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "canvas": {
+            "bottom": 706.0520935058594,
+            "height": 474.3333435058594,
+            "width": 1037.3333740234375,
+            "x": 38.66666793823242,
+            "y": 231.71875
+          },
+          "controls": {
+            "bottom": 895.0521240234375,
+            "height": 189,
+            "width": 1037.3333740234375,
+            "x": 38.66666793823242,
+            "y": 706.0521240234375
+          },
+          "fullscreen": null,
+          "panel": {
+            "bottom": 895.0520858764648,
+            "height": 790,
+            "width": 310,
+            "x": 1076,
+            "y": 105.05208587646484
+          },
+          "scrollWidth": 1425,
+          "springs": [
+            "143 mm",
+            "121 mm",
+            "111 mm",
+            "132 mm"
+          ],
+          "stage": {
+            "bottom": 895.0520858764648,
+            "height": 790,
+            "width": 1037.3333740234375,
+            "x": 38.66666793823242,
+            "y": 105.05208587646484
+          },
+          "text": {
+            "vehicle-camera-name": "3D 试车场总览",
+            "vehicle-cargo": "0",
+            "vehicle-contact": "4 / 4",
+            "vehicle-distance": "60 m",
+            "vehicle-hint": "试车暂停 · 车身、悬挂与路线全部冻结",
+            "vehicle-log": "0s · 空车停在岚谷车库。领取试车单，去北坡料站装载，再送往桥东工地。\n0s · 试车单已领取。沿西侧缓坡到北坡料站，停车装载 320 kg 建材。",
+            "vehicle-mass": "1,250 kg",
+            "vehicle-max-compression": "166 mm",
+            "vehicle-mode": "试车暂停",
+            "vehicle-pitch": "3.4",
+            "vehicle-report-detail": "",
+            "vehicle-roll": "0.3",
+            "vehicle-speed": "14.8",
+            "vehicle-task": "去北坡料站 · 停车装载",
+            "vehicle-tune-name": "舒适悬架"
+          },
+          "viewport": {
+            "height": 1000,
+            "width": 1440
+          }
+        },
+        "after": {
+          "canvas": {
+            "bottom": 706.0520935058594,
+            "height": 474.3333435058594,
+            "width": 1037.3333740234375,
+            "x": 38.66666793823242,
+            "y": 231.71875
+          },
+          "controls": {
+            "bottom": 895.0521240234375,
+            "height": 189,
+            "width": 1037.3333740234375,
+            "x": 38.66666793823242,
+            "y": 706.0521240234375
+          },
+          "fullscreen": null,
+          "panel": {
+            "bottom": 895.0520858764648,
+            "height": 790,
+            "width": 310,
+            "x": 1076,
+            "y": 105.05208587646484
+          },
+          "scrollWidth": 1425,
+          "springs": [
+            "143 mm",
+            "121 mm",
+            "111 mm",
+            "132 mm"
+          ],
+          "stage": {
+            "bottom": 895.0520858764648,
+            "height": 790,
+            "width": 1037.3333740234375,
+            "x": 38.66666793823242,
+            "y": 105.05208587646484
+          },
+          "text": {
+            "vehicle-camera-name": "3D 试车场总览",
+            "vehicle-cargo": "0",
+            "vehicle-contact": "4 / 4",
+            "vehicle-distance": "60 m",
+            "vehicle-hint": "试车暂停 · 车身、悬挂与路线全部冻结",
+            "vehicle-log": "0s · 空车停在岚谷车库。领取试车单，去北坡料站装载，再送往桥东工地。\n0s · 试车单已领取。沿西侧缓坡到北坡料站，停车装载 320 kg 建材。",
+            "vehicle-mass": "1,250 kg",
+            "vehicle-max-compression": "166 mm",
+            "vehicle-mode": "试车暂停",
+            "vehicle-pitch": "3.4",
+            "vehicle-report-detail": "",
+            "vehicle-roll": "0.3",
+            "vehicle-speed": "14.8",
+            "vehicle-task": "去北坡料站 · 停车装载",
+            "vehicle-tune-name": "舒适悬架"
+          },
+          "viewport": {
+            "height": 1000,
+            "width": 1440
+          }
+        }
+      }
+    },
+    {
+      "name": "Final ordinary demonstration finishes its actual 254 m bridge loop in 44 seconds and parks at zero speed",
+      "passed": true,
+      "evidence": {
+        "canvas": {
+          "bottom": 706.0520935058594,
+          "height": 474.3333435058594,
+          "width": 1037.3333740234375,
+          "x": 38.66666793823242,
+          "y": 231.71875
+        },
+        "controls": {
+          "bottom": 895.0521240234375,
+          "height": 189,
+          "width": 1037.3333740234375,
+          "x": 38.66666793823242,
+          "y": 706.0521240234375
+        },
+        "fullscreen": null,
+        "panel": {
+          "bottom": 895.0520858764648,
+          "height": 790,
+          "width": 310,
+          "x": 1076,
+          "y": 105.05208587646484
+        },
+        "scrollWidth": 1425,
+        "springs": [
+          "143 mm",
+          "150 mm",
+          "130 mm",
+          "122 mm"
+        ],
+        "stage": {
+          "bottom": 895.0520858764648,
+          "height": 790,
+          "width": 1037.3333740234375,
+          "x": 38.66666793823242,
+          "y": 105.05208587646484
+        },
+        "text": {
+          "vehicle-camera-name": "3D 追尾视角",
+          "vehicle-cargo": "0",
+          "vehicle-contact": "4 / 4",
+          "vehicle-distance": "254 m",
+          "vehicle-hint": "建材已交付，桥面与回库测试已完成。本轮已暂停保存，可查看读数或开启新的试车。",
+          "vehicle-log": "0s · 试车单已领取。沿西侧缓坡到北坡料站，停车装载 320 kg 建材。\n11s · 4 件建材已装车，载重增加 320 kg。观察车身下沉与加速变化，横穿搓板路到工地。\n23s · 建材已送达。空车沿东侧跨桥，再经南侧道路返回车库。\n28s · 东侧桥面测试已通过。沿南侧道路回库，停车提交试车记录。\n43s · 配送与回库完成。四角悬挂、载重搓板路和桥面测试已记录，本轮自动暂停。",
+          "vehicle-mass": "1,250 kg",
+          "vehicle-max-compression": "310 mm",
+          "vehicle-mode": "试车完成 · 已暂停",
+          "vehicle-pitch": "0.2",
+          "vehicle-report-detail": "用时 44 秒，实际行驶 254 m，交付 4 件建材。最大悬架压缩 310 mm，碰撞 0 次。车辆已在车库停稳并保存。",
+          "vehicle-roll": "1.1",
+          "vehicle-speed": "0.0",
+          "vehicle-task": "配送完成 · 测试已记录",
+          "vehicle-tune-name": "舒适悬架"
+        },
+        "viewport": {
+          "height": 1000,
+          "width": 1440
+        }
+      }
+    },
+    {
+      "name": "Keyboard Space and E dispatch work in the narrow real page",
+      "passed": true,
+      "evidence": {
+        "canvas": {
+          "bottom": 570.4166870117188,
+          "height": 408.9895935058594,
+          "width": 345.3333435058594,
+          "x": 14.666666984558104,
+          "y": 161.42709350585938
+        },
+        "controls": {
+          "bottom": 832.0521240234375,
+          "height": 261.63543701171875,
+          "width": 345.3333435058594,
+          "x": 14.666666984558104,
+          "y": 570.4166870117188
+        },
+        "fullscreen": null,
+        "panel": {
+          "bottom": 2376.822998046875,
+          "height": 1474.7708740234375,
+          "width": 345.3333435058594,
+          "x": 14.666666984558104,
+          "y": 902.0521240234376
+        },
+        "scrollWidth": 375,
+        "springs": [
+          "149 mm",
+          "126 mm",
+          "125 mm",
+          "148 mm"
+        ],
+        "stage": {
+          "bottom": 832.0520839691162,
+          "height": 820,
+          "width": 345.3333435058594,
+          "x": 14.666666984558104,
+          "y": 12.052083969116213
+        },
+        "text": {
+          "vehicle-camera-name": "3D 追尾视角",
+          "vehicle-cargo": "0",
+          "vehicle-contact": "4 / 4",
+          "vehicle-distance": "0 m",
+          "vehicle-hint": "试车单已领取。沿西侧缓坡到北坡料站，停车装载 320 kg 建材。",
+          "vehicle-log": "0s · 空车停在岚谷车库。领取试车单，去北坡料站装载，再送往桥东工地。\n0s · 试车单已领取。沿西侧缓坡到北坡料站，停车装载 320 kg 建材。",
+          "vehicle-mass": "1,250 kg",
+          "vehicle-max-compression": "149 mm",
+          "vehicle-mode": "试车暂停",
+          "vehicle-pitch": "0.8",
+          "vehicle-report-detail": "用时 44 秒，实际行驶 254 m，交付 4 件建材。最大悬架压缩 310 mm，碰撞 0 次。车辆已在车库停稳并保存。",
+          "vehicle-roll": "0.2",
+          "vehicle-speed": "0.2",
+          "vehicle-task": "去北坡料站 · 停车装载",
+          "vehicle-tune-name": "舒适悬架"
+        },
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      }
+    },
+    {
+      "name": "390×844 stage retains at least 240 px scene and no horizontal overflow",
+      "passed": true,
+      "evidence": {
+        "canvas": {
+          "bottom": 570.4166870117188,
+          "height": 408.9895935058594,
+          "width": 345.3333435058594,
+          "x": 14.666666984558104,
+          "y": 161.42709350585938
+        },
+        "controls": {
+          "bottom": 832.0521240234375,
+          "height": 261.63543701171875,
+          "width": 345.3333435058594,
+          "x": 14.666666984558104,
+          "y": 570.4166870117188
+        },
+        "fullscreen": null,
+        "panel": {
+          "bottom": 2376.822998046875,
+          "height": 1474.7708740234375,
+          "width": 345.3333435058594,
+          "x": 14.666666984558104,
+          "y": 902.0521240234376
+        },
+        "scrollWidth": 375,
+        "springs": [
+          "149 mm",
+          "126 mm",
+          "125 mm",
+          "148 mm"
+        ],
+        "stage": {
+          "bottom": 832.0520839691162,
+          "height": 820,
+          "width": 345.3333435058594,
+          "x": 14.666666984558104,
+          "y": 12.052083969116213
+        },
+        "text": {
+          "vehicle-camera-name": "3D 追尾视角",
+          "vehicle-cargo": "0",
+          "vehicle-contact": "4 / 4",
+          "vehicle-distance": "0 m",
+          "vehicle-hint": "试车单已领取。沿西侧缓坡到北坡料站，停车装载 320 kg 建材。",
+          "vehicle-log": "0s · 空车停在岚谷车库。领取试车单，去北坡料站装载，再送往桥东工地。\n0s · 试车单已领取。沿西侧缓坡到北坡料站，停车装载 320 kg 建材。",
+          "vehicle-mass": "1,250 kg",
+          "vehicle-max-compression": "149 mm",
+          "vehicle-mode": "试车暂停",
+          "vehicle-pitch": "0.8",
+          "vehicle-report-detail": "用时 44 秒，实际行驶 254 m，交付 4 件建材。最大悬架压缩 310 mm，碰撞 0 次。车辆已在车库停稳并保存。",
+          "vehicle-roll": "0.2",
+          "vehicle-speed": "0.2",
+          "vehicle-task": "去北坡料站 · 停车装载",
+          "vehicle-tune-name": "舒适悬架"
+        },
+        "viewport": {
+          "height": 844,
+          "width": 390
+        }
+      }
+    },
+    {
+      "name": "Narrow in-stage selection synchronizes the main route while controls scroll internally",
+      "passed": true,
+      "evidence": {
+        "controls": {
+          "clientHeight": 261,
+          "scrollHeight": 575
+        },
+        "main": "garage",
+        "stage": "garage"
+      }
+    },
+    {
+      "name": "Final loaded scene and orbit preserve mass and contact after responsive camera changes",
+      "passed": true,
+      "evidence": {
+        "canvas": {
+          "bottom": 706.0520935058594,
+          "height": 474.3333435058594,
+          "width": 1037.3333740234375,
+          "x": 38.66666793823242,
+          "y": 231.71875
+        },
+        "controls": {
+          "bottom": 895.0521240234375,
+          "height": 189,
+          "width": 1037.3333740234375,
+          "x": 38.66666793823242,
+          "y": 706.0521240234375
+        },
+        "fullscreen": null,
+        "panel": {
+          "bottom": 895.0520858764648,
+          "height": 790,
+          "width": 310,
+          "x": 1076,
+          "y": 105.05208587646484
+        },
+        "scrollWidth": 1425,
+        "springs": [
+          "178 mm",
+          "175 mm",
+          "175 mm",
+          "178 mm"
+        ],
+        "stage": {
+          "bottom": 895.0520858764648,
+          "height": 790,
+          "width": 1037.3333740234375,
+          "x": 38.66666793823242,
+          "y": 105.05208587646484
+        },
+        "text": {
+          "vehicle-camera-name": "3D 环绕检视",
+          "vehicle-cargo": "320",
+          "vehicle-contact": "4 / 4",
+          "vehicle-distance": "63 m",
+          "vehicle-hint": "试车暂停 · 车身、悬挂与路线全部冻结",
+          "vehicle-log": "0s · 空车停在岚谷车库。领取试车单，去北坡料站装载，再送往桥东工地。\n0s · 试车单已领取。沿西侧缓坡到北坡料站，停车装载 320 kg 建材。\n32s · 4 件建材已装车，载重增加 320 kg。观察车身下沉与加速变化，横穿搓板路到工地。",
+          "vehicle-mass": "1,570 kg",
+          "vehicle-max-compression": "178 mm",
+          "vehicle-mode": "试车暂停",
+          "vehicle-pitch": "0.4",
+          "vehicle-report-detail": "",
+          "vehicle-roll": "-0.7",
+          "vehicle-speed": "0.0",
+          "vehicle-task": "载重通过搓板路 · 送达工地",
+          "vehicle-tune-name": "舒适悬架"
+        },
+        "viewport": {
+          "height": 1000,
+          "width": 1440
+        }
+      }
+    },
+    {
+      "name": "Final production reload restores loaded mass, four-wheel pose and paused manual route",
+      "passed": true,
+      "evidence": {
+        "canvas": {
+          "bottom": 706.0520935058594,
+          "height": 474.3333435058594,
+          "width": 1037.3333740234375,
+          "x": 38.66666793823242,
+          "y": 231.71875
+        },
+        "controls": {
+          "bottom": 895.0521240234375,
+          "height": 189,
+          "width": 1037.3333740234375,
+          "x": 38.66666793823242,
+          "y": 706.0521240234375
+        },
+        "fullscreen": null,
+        "panel": {
+          "bottom": 895.0520858764648,
+          "height": 790,
+          "width": 310,
+          "x": 1076,
+          "y": 105.05208587646484
+        },
+        "scrollWidth": 1425,
+        "springs": [
+          "178 mm",
+          "175 mm",
+          "175 mm",
+          "178 mm"
+        ],
+        "stage": {
+          "bottom": 895.0520858764648,
+          "height": 790,
+          "width": 1037.3333740234375,
+          "x": 38.66666793823242,
+          "y": 105.05208587646484
+        },
+        "text": {
+          "vehicle-camera-name": "3D 环绕检视",
+          "vehicle-cargo": "320",
+          "vehicle-contact": "4 / 4",
+          "vehicle-distance": "63 m",
+          "vehicle-hint": "上次车辆已恢复并暂停。继续上次，或开始新一轮试车。",
+          "vehicle-log": "0s · 空车停在岚谷车库。领取试车单，去北坡料站装载，再送往桥东工地。\n0s · 试车单已领取。沿西侧缓坡到北坡料站，停车装载 320 kg 建材。\n32s · 4 件建材已装车，载重增加 320 kg。观察车身下沉与加速变化，横穿搓板路到工地。",
+          "vehicle-mass": "1,570 kg",
+          "vehicle-max-compression": "178 mm",
+          "vehicle-mode": "存档已恢复 · 暂停",
+          "vehicle-pitch": "0.4",
+          "vehicle-report-detail": "",
+          "vehicle-roll": "-0.7",
+          "vehicle-speed": "0.0",
+          "vehicle-task": "载重通过搓板路 · 送达工地",
+          "vehicle-tune-name": "舒适悬架"
+        },
+        "viewport": {
+          "height": 1000,
+          "width": 1440
+        }
+      }
+    },
+    {
+      "name": "Final native fullscreen retains loaded mass and readable whole-stage controls",
+      "passed": true,
+      "evidence": {
+        "canvas": {
+          "bottom": 713.0000457763672,
+          "height": 592.3333740234375,
+          "width": 1722,
+          "x": 0,
+          "y": 120.66667175292967
+        },
+        "controls": {
+          "bottom": 1034,
+          "height": 321,
+          "width": 1722,
+          "x": 0,
+          "y": 713
+        },
+        "fullscreen": null,
+        "panel": {
+          "bottom": 1316.3854370117188,
+          "height": 790,
+          "width": 330,
+          "x": 1312.3333740234375,
+          "y": 526.3854370117188
+        },
+        "scrollWidth": 1722,
+        "springs": [
+          "178 mm",
+          "175 mm",
+          "175 mm",
+          "178 mm"
+        ],
+        "stage": {
+          "bottom": 1034,
+          "height": 1034,
+          "width": 1722,
+          "x": 0,
+          "y": 0
+        },
+        "text": {
+          "vehicle-camera-name": "3D 环绕检视",
+          "vehicle-cargo": "320",
+          "vehicle-contact": "4 / 4",
+          "vehicle-distance": "63 m",
+          "vehicle-hint": "上次车辆已恢复并暂停。继续上次，或开始新一轮试车。",
+          "vehicle-log": "0s · 空车停在岚谷车库。领取试车单，去北坡料站装载，再送往桥东工地。\n0s · 试车单已领取。沿西侧缓坡到北坡料站，停车装载 320 kg 建材。\n32s · 4 件建材已装车，载重增加 320 kg。观察车身下沉与加速变化，横穿搓板路到工地。",
+          "vehicle-mass": "1,570 kg",
+          "vehicle-max-compression": "178 mm",
+          "vehicle-mode": "存档已恢复 · 暂停",
+          "vehicle-pitch": "0.4",
+          "vehicle-report-detail": "",
+          "vehicle-roll": "-0.7",
+          "vehicle-speed": "0.0",
+          "vehicle-task": "载重通过搓板路 · 送达工地",
+          "vehicle-tune-name": "舒适悬架"
+        },
+        "viewport": {
+          "height": 1034,
+          "width": 1722
+        }
+      }
+    },
+    {
+      "name": "Leaving fullscreen and closing terminal retain the loaded paused truck",
+      "passed": true,
+      "evidence": {
+        "canvas": {
+          "bottom": 589.2812805175781,
+          "height": 422.4479370117187,
+          "width": 552.6666870117188,
+          "x": 24.666667938232425,
+          "y": 166.83334350585938
+        },
+        "controls": {
+          "bottom": 859.3854370117188,
+          "height": 270.10418701171875,
+          "width": 552.6666870117188,
+          "x": 24.666667938232425,
+          "y": 589.28125
+        },
+        "fullscreen": null,
+        "panel": {
+          "bottom": 2301.187561035156,
+          "height": 1371.8021240234375,
+          "width": 552.6666870117188,
+          "x": 24.666667938232425,
+          "y": 929.3854370117188
+        },
+        "scrollWidth": 602,
+        "springs": [
+          "178 mm",
+          "175 mm",
+          "175 mm",
+          "178 mm"
+        ],
+        "stage": {
+          "bottom": 859.3854579925537,
+          "height": 847.3333740234375,
+          "width": 552.6666870117188,
+          "x": 24.666667938232425,
+          "y": 12.052083969116213
+        },
+        "text": {
+          "vehicle-camera-name": "3D 环绕检视",
+          "vehicle-cargo": "320",
+          "vehicle-contact": "4 / 4",
+          "vehicle-distance": "63 m",
+          "vehicle-hint": "上次车辆已恢复并暂停。继续上次，或开始新一轮试车。",
+          "vehicle-log": "0s · 空车停在岚谷车库。领取试车单，去北坡料站装载，再送往桥东工地。\n0s · 试车单已领取。沿西侧缓坡到北坡料站，停车装载 320 kg 建材。\n32s · 4 件建材已装车，载重增加 320 kg。观察车身下沉与加速变化，横穿搓板路到工地。",
+          "vehicle-mass": "1,570 kg",
+          "vehicle-max-compression": "178 mm",
+          "vehicle-mode": "存档已恢复 · 暂停",
+          "vehicle-pitch": "0.4",
+          "vehicle-report-detail": "",
+          "vehicle-roll": "-0.7",
+          "vehicle-speed": "0.0",
+          "vehicle-task": "载重通过搓板路 · 送达工地",
+          "vehicle-tune-name": "舒适悬架"
+        },
+        "viewport": {
+          "height": 871,
+          "width": 617
+        }
+      }
+    },
+    {
+      "name": "Final actual WebGL page has no captured console warnings or errors",
+      "passed": true,
+      "evidence": []
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-vehicle-captures/02-fullscreen-loaded.jpg",
+      "viewport": {
+        "height": 1034,
+        "width": 1722
+      },
+      "capture_scope": "Final native fullscreen paused loaded orbit view and internal route terminal, all current resources",
+      "capture_size": [
+        1722,
+        1034
+      ],
+      "format": "JPEG"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-vehicle-captures/03-course-overview.jpg",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      },
+      "capture_scope": "Final survey with continuous coarse/dense ground and workshops facing the physical loop",
+      "capture_size": [
+        1425,
+        990
+      ],
+      "format": "JPEG"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-vehicle-captures/04-loaded-chase-final.jpg",
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      },
+      "capture_scope": "Final orbit inspection of loaded chassis, authored three-dimensional model and material depot",
+      "capture_size": [
+        1425,
+        990
+      ],
+      "format": "JPEG"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-vehicle-captures/05-mobile-stage.jpg",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "capture_scope": "Final 390×844 responsive viewport; compact top-left suspension panel leaves the actual truck visible",
+      "capture_size": [
+        375,
+        812
+      ],
+      "format": "JPEG"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-vehicle-captures/06-mobile-terminal.jpg",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "capture_scope": "390×844 responsive internal route terminal; physical scene remains above scrollable controls",
+      "capture_size": [
+        375,
+        812
+      ],
+      "format": "JPEG"
+    }
+  ],
+  "not_verified": [
+    "Physical phone and multi-finger touch",
+    "Extended performance and broad device compatibility",
+    "Professional vehicle or soft-body engineering accuracy",
+    "Human emotional value and commercial product acceptance"
+  ],
+  "count": 16,
+  "scope": "Actual final local vehicle direction in Chromium; desktop1440×1000 and narrow390×844 viewport overrides, plus native full-stage fullscreen. No physical-phone or commercial acceptance.",
+  "dom_evaluation_limitations": "The read-only page snapshot did not expose document.fullscreenElement. Native fullscreen was confirmed by the AX tree restricted to vehicle-stage, visible exit control, full-stage screen coordinates and actual screenshots. Null raw property evidence is not a fullscreen failure or the status used by assertions.",
+  "capture_notes": "Screenshots are actual browser captures; PNG/JPEG pixels and CSS viewport sizes are measured separately. Five final resource/layout views replace earlier visual-inspection captures."
+}

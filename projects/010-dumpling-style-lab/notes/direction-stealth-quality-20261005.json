@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-05",
+  "status": "original_sample_visual_review_passed_with_explicit_scope",
+  "scope": "Seventh original playable direction sample: one24x16 environmental-stealth level, three ordinary-action solutions, original bitmap art and Canvas2D feedback. This is a local2D short sample informed by environmental stealth. It is not an upstream source/asset integration, native3D title, or commercial product acceptance.",
+  "checks": [
+    {
+      "name": "Original art and gameplay state stay distinct",
+      "passed": true,
+      "observed": "Five active ImageGen bitmaps: actual material atlas, original props, corrected directional actors, scene banner, and empty-desk/unlit-lamp/off-switch state variants. Scene banner is only establishing art; the collision map and guard systems use the actual tile model."
+    },
+    {
+      "name": "Real light, sight and sound decisions",
+      "passed": true,
+      "observed": "All three ordinary plans and manual replay complete. Leaving the gallery lamp on or omitting the lure stones on their respective demonstrated crossings causes capture. Terrain, crouch/walk/run, occlusion, facing, proximity and accumulated suspicion are actual engine inputs."
+    },
+    {
+      "name": "Dynamic states receive real alternate art",
+      "passed": true,
+      "observed": "Collected archive uses the empty velvet tray, extinguished lantern has no flame, switched-off lever uses its raised state. Removed blue rectangle covers. All three alpha atlases have genuine background transparency."
+    },
+    {
+      "name": "Directional identity and visibility readability",
+      "passed": true,
+      "observed": "North-facing rogue/watchman first cells were corrected by ImageGen to rear views; east/south/west maintained. Player ring and heading arrow, guard selection, actual suspicion bars and wall-clipped field/proximity aids provide interactive feedback."
+    },
+    {
+      "name": "Production geometry and rendering purity",
+      "passed": true,
+      "observed": "Nine1440x960 production frames reviewed, covering all three routes and unlit/impact/search/pickup/victory/failure states; 384 grid mappings and4 outside edges verified. Each draw leaves encode(world) identical."
+    },
+    {
+      "name": "Browser interaction and layout review",
+      "passed": true,
+      "observed": "Actual browser checked ordinary blackout victory (~60s), takeover, manual point path/E lamp interaction, C/Space keys, finite stone count, guard selection, route/vision toggles, full-screen feedback and pause/exit, paused reload, desktop and390px responsive layouts. Browser evidence is recorded separately."
+    }
+  ],
+  "fixes_from_review": [
+    "Corrected0–100 suspicion/exposure rendering instead of treating raw awareness as a0–1 fraction.",
+    "Imported actual engine vision distance, half-angle and proximity; rendered wall-clipped proximity ring and actual patrol routes.",
+    "Added real empty/archive, unlit/lamp and off/switch artwork instead of covering the original sprite.",
+    "Kept full-screen controls in separate top/bottom rows, added real-time compact light/noise/alert/objective readouts.",
+    "Corrected won/lost instructions and completion labels.",
+    "Explicit user start/takeover positions the stage using actual viewport height; ordinary narrow-screen direction buttons are44x44.",
+    "Kept all prior sample files/assets/save keys separate; preservation baseline covers2587 earlier files."
+  ],
+  "references": [
+    {
+      "url": "https://www.thedarkmod.com/main/",
+      "role": "Primary official reference for environmental stealth"
+    },
+    {
+      "url": "https://wiki.thedarkmod.com/index.php?title=Basics_of_Stealth_Gaming",
+      "role": "Primary mechanics reference for lighting, footsteps, crouching and guard investigation"
+    }
+  ],
+  "evidence": {
+    "generation": "assets/directions/stealth-generation-20261005.json",
+    "engine": "notes/direction-stealth-rules-20261005.json",
+    "controller": "notes/direction-stealth-controller-20261005.json",
+    "frames": "notes/direction-stealth-frames-20261005.json",
+    "browser": "notes/direction-stealth-browser-20261005.json"
+  },
+  "remaining": [
+    "Real phone hardware multi-pointer behavior, orientation and mobile full-screen remain unverified; real controller callbacks cover simultaneous pointers and cancellation.",
+    "Long-running performance profiling and broad browser/device compatibility remain unverified.",
+    "One short map with static directional sprite artwork and limited scenarios; no native3D geometry, online multiplayer or audible soundtrack/footstep audio.",
+    "Human emotional appeal, willingness to keep playing and commercial product readiness need actual playtesting."
+  ]
+}

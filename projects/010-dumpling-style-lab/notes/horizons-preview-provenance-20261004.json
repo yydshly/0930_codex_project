@@ -1,0 +1,38 @@
+[
+  {
+    "id": "desktop",
+    "source": "assets/game-forms/horizons-qa/desktop-progress.png",
+    "source_sha256": "77c8c2877994fac72aded487c4718185e744f9a2b472faff4ba2ce2414baf788",
+    "runtime": "web/assets/game-forms/horizons/previews/desktop.webp",
+    "runtime_sha256": "94cbf81d92e33ae9848580debdf6adb15430bda248481a99c3cf7a1089ff7d0f",
+    "method": "Native interface-state drawing; HTML windows are not browser screenshots.",
+    "not_a_browser_screenshot": true
+  },
+  {
+    "id": "inkwell",
+    "source": "assets/game-forms/horizons-qa/inkwell-progress.png",
+    "source_sha256": "e8c1044c6170ce2c30f6fb340f7f4a8f1baa55b679f14a667f1031074b4219f2",
+    "runtime": "web/assets/game-forms/horizons/previews/inkwell.webp",
+    "runtime_sha256": "e34e7ba12b0d30281440dee2daa6f043d84dd1f9c1ecf87632d6615ab4948d7a",
+    "method": "Production Canvas2D draw through Skia.",
+    "not_a_browser_screenshot": true
+  },
+  {
+    "id": "atelier",
+    "source": "assets/game-forms/horizons-qa/atelier-progress.png",
+    "source_sha256": "d31677bf981d34738c6c3af8e8b46aec4b4101c9fca556634c3e1b8aac1e5600",
+    "runtime": "web/assets/game-forms/horizons/previews/atelier.webp",
+    "runtime_sha256": "1a7f5ae7955c64a5f8dd66fe56eec7f8e99b94a74b9d2004778de42e744e3281",
+    "method": "Actual THREE meshes and camera through software projection.",
+    "not_a_browser_screenshot": true
+  },
+  {
+    "id": "submersible",
+    "source": "assets/game-forms/horizons-qa/submersible-progress.png",
+    "source_sha256": "b5d2e939901c2dd26d68233392f899576c68a1e98959a72b9c4f83de8536b4ae",
+    "runtime": "web/assets/game-forms/horizons/previews/submersible.webp",
+    "runtime_sha256": "3021ab2e49ee267e58625e8416801eee355bb561230bcf11c576a658cd830428",
+    "method": "Production Canvas2D draw through Skia.",
+    "not_a_browser_screenshot": true
+  }
+]

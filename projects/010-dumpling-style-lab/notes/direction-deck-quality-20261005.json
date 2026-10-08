@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-05",
+  "passed": true,
+  "status": "accepted_in_recorded_local_sample_scope",
+  "scope": "Eleventh original direction; first of a new genre expansion after the completed initial ten-reference batch. Native HTML turn-based deckbuilding table, three finite encounters, seeded draws and reshuffle, actual intent/energy/damage/block/weakness/exhaust, persistent HP, repair-or-upgrade intermission and one real card reward. No original Slay the Spire code or art is adopted.",
+  "art_provenance": "assets/directions/deck-generation-20261005.json",
+  "primary_reference": "https://www.megacrit.com/games/",
+  "verification": {
+    "rules": 51,
+    "controller": 28,
+    "old_checks": 440,
+    "browser": 16,
+    "total": 519
+  },
+  "screenshots": [
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-deck-captures/completed-mobile.png",
+      "description": "Final ordinary legal demo, three encounters completed; 43/54 HP and 13 real deck cards, 390px browser viewport.",
+      "viewport": [
+        390,
+        844
+      ],
+      "capture_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "sha256": "12ed500b0e4cb037161a66db60d629bab6df0d2ff1d26fbc6e85222063929a7c"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-deck-captures/dual-mobile.png",
+      "description": "Final 390px responsive cardtable with both target intents, real hand and internal controls; no document overflow.",
+      "viewport": [
+        390,
+        844
+      ],
+      "capture_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "sha256": "96093d74ab181cfc9d9a9976c228d422fe2715603f8b4bbe01b05d4e67e6c411"
+    },
+    {
+      "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/direction-deck-captures/dual-fullscreen.png",
+      "description": "Native whole-stage fullscreen; final illustrated dual target encounter with actual hand and internal deck controls.",
+      "viewport": [
+        1707,
+        1067
+      ],
+      "capture_size": [
+        1707,
+        1067
+      ],
+      "format": "JPEG",
+      "sha256": "0d42feb37c6ad2125cab16f2b92c18d0d4bdf06bebdb3dfacdb665a7e5420e95"
+    }
+  ],
+  "preservation": {
+    "protected_web_files": 2635,
+    "previous_readme_suffix_bytes": 84363,
+    "old_forms": 107,
+    "old_entrances": 116,
+    "original_reference_batch": 10
+  },
+  "limitations": [
+    "Finite original three-encounter study, not a full procedural roguelike campaign",
+    "Six original base card illustrations; two reward cards reuse the relevant illustration, with unique live text and effects",
+    "Native 2D illustrated card table, not a real 3D ship simulation",
+    "390px browser viewport is not physical mobile hardware",
+    "No online multiplayer, server account, upstream port, original game assets, long-run performance benchmark or broad compatibility claims",
+    "Human emotional value, continuing play and commercial product maturity not tested"
+  ]
+}

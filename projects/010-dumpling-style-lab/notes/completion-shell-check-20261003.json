@@ -1,0 +1,187 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-03T12:21:48.980Z",
+  "checks": [
+    "Showcase exposes all 41 entries through the actual gallery",
+    "Forms page has 32 cards, both real selectors have 32 options, and zero pending cards",
+    "push-box × match-three: both directions of focus switching pause the previous game",
+    "grand-strategy × visual-novel: both directions of focus switching pause the previous game",
+    "390 × 844 forms page and stacked comparison have no horizontal overflow",
+    "390px cargo touch arrow moves the porter one square without moving the crate",
+    "390px jewel taps correctly select and swap two adjacent cells through the letterboxed canvas",
+    "390px realm map tap selects the intended province and its visible recruit action changes army and gold",
+    "390px novel dialogue taps advance reading and a mapped canvas option selects the letter route",
+    "Both fresh QA contexts leave normal storage untouched; no runtime errors or missing assets"
+  ],
+  "results": {
+    "comparison": [
+      {
+        "left": "cargo",
+        "right": "jewel",
+        "selectedThroughRealControls": true,
+        "rightFocusPausesLeft": true,
+        "leftResumePausesRight": true
+      },
+      {
+        "left": "realm",
+        "right": "novel",
+        "selectedThroughRealControls": true,
+        "rightFocusPausesLeft": true,
+        "leftResumePausesRight": true
+      }
+    ],
+    "mobile": {
+      "forms": {
+        "width": 390,
+        "document": 390,
+        "body": 390
+      },
+      "cargo": {
+        "layout": {
+          "width": 390,
+          "document": 390,
+          "body": 390
+        },
+        "geometry": {
+          "x": 195,
+          "y": 380.84375,
+          "css": {
+            "width": 348,
+            "height": 261
+          },
+          "backing": {
+            "width": 1120,
+            "height": 630
+          },
+          "letterbox": {
+            "x": 0,
+            "y": 32.625
+          },
+          "scale": 0.3107142857142857
+        },
+        "input": "Actual touch arrow",
+        "player": {
+          "c": 3,
+          "r": 5
+        },
+        "moves": 1
+      },
+      "jewel": {
+        "layout": {
+          "width": 390,
+          "document": 390,
+          "body": 390
+        },
+        "geometry": {
+          "x": 195,
+          "y": 380.84375,
+          "css": {
+            "width": 348,
+            "height": 261
+          },
+          "backing": {
+            "width": 1120,
+            "height": 630
+          },
+          "letterbox": {
+            "x": 0,
+            "y": 32.625
+          },
+          "scale": 0.3107142857142857
+        },
+        "input": "Two adjacent touchscreen board taps",
+        "pair": [
+          9,
+          10
+        ],
+        "turns": 1,
+        "removed": 6
+      },
+      "realm": {
+        "layout": {
+          "width": 390,
+          "document": 390,
+          "body": 390
+        },
+        "geometry": {
+          "x": 195,
+          "y": 380.84375,
+          "css": {
+            "width": 348,
+            "height": 261
+          },
+          "backing": {
+            "width": 1120,
+            "height": 630
+          },
+          "letterbox": {
+            "x": 0,
+            "y": 32.625
+          },
+          "scale": 0.3107142857142857
+        },
+        "input": "Touch province selection and recruit action",
+        "selected": "pine",
+        "gold": 24,
+        "orders": 2
+      },
+      "novel": {
+        "layout": {
+          "width": 390,
+          "document": 390,
+          "body": 390
+        },
+        "geometry": {
+          "x": 195,
+          "y": 380.84375,
+          "css": {
+            "width": 348,
+            "height": 261
+          },
+          "backing": {
+            "width": 1120,
+            "height": 630
+          },
+          "letterbox": {
+            "x": 0,
+            "y": 32.625
+          },
+          "scale": 0.3107142857142857
+        },
+        "input": "Touch dialogue continue and canvas choice",
+        "node": "letter",
+        "route": "letter",
+        "choices": [
+          {
+            "node": "opening",
+            "id": "letter",
+            "text": "陪周衡走一趟灯塔"
+          }
+        ]
+      }
+    },
+    "desktopStorage": [
+      "dumpling-showcase-qa-v1-breach",
+      "dumpling-showcase-qa-v1-wonder",
+      "dumpling-showcase-qa-v1-cargo",
+      "dumpling-showcase-qa-v1-realm",
+      "dumpling-showcase-qa-v1-novel",
+      "dumpling-showcase-qa-v1-jewel"
+    ],
+    "mobileStorage": [
+      "dumpling-showcase-qa-v1-cargo",
+      "dumpling-showcase-qa-v1-realm",
+      "dumpling-showcase-qa-v1-novel",
+      "dumpling-showcase-qa-v1-jewel"
+    ]
+  },
+  "screenshots": [
+    "assets/game-forms/completion-qa/comparison.png",
+    "assets/game-forms/completion-qa/mobile-cargo.png",
+    "assets/game-forms/completion-qa/mobile-jewel.png",
+    "assets/game-forms/completion-qa/mobile-realm.png",
+    "assets/game-forms/completion-qa/mobile-novel.png"
+  ],
+  "errors": [],
+  "missing": []
+}

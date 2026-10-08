@@ -1,0 +1,2148 @@
+{
+  "passed": true,
+  "method": "Combined independently completed fresh browser runs; actual UI inputs, read-only observation/solvers, no state injection. Each source report is retained.",
+  "forms": 32,
+  "entries": 41,
+  "pending": 0,
+  "sourceReports": [
+    "notes/completion-cargo-check-20261003.json",
+    "notes/completion-jewel-check-20261003.json",
+    "notes/completion-realm-check-20261003.json",
+    "notes/completion-novel-check-20261003.json",
+    "notes/completion-shell-check-20261003.json"
+  ],
+  "checks": [
+    "Read-only BFS proves all three original layouts can reach the exit with push-only rules",
+    "Held direction cannot push a crate into masonry or pass through it",
+    "Walking away does not pull crates; real undo restores the move",
+    "Clicked reachable floor follows a real route; a direct wall blocks the porter",
+    "Adjacent crate click pushes exactly one square; undo and per-warehouse restart restore original placement",
+    "Held movement uses a deliberate initial delay and bounded repeat rate",
+    "Boxes open the exit, but the warehouse completes only after walking onto it",
+    "Moving a crate off its plate locks the exit; a real undo restores the box and reopens it",
+    "Pause freezes input; saved player, boxes, undo stack and warehouse restore on reload",
+    "A neighboring crate blocks a push; crates cannot overlap or push each other in a chain",
+    "All three exits complete through real keyboard controls and visible next-warehouse actions",
+    "Completed save restores; replay resets the puzzle while retaining the completion record",
+    "QA storage is isolated; no runtime exceptions or missing assets",
+    "Initial 8×8 board has six raster gem colors, no pre-existing matches and at least one legal exchange",
+    "Real adjacent invalid swap visibly enters return animation, restores original cells and spends no move",
+    "Hint button highlights a genuinely legal adjacent exchange without spending moves",
+    "Real legal exchange removes matched cells, falls and refills, then performs multiple cascades with exact colors, RNG, orders and combo score",
+    "Actual pause/save/reload preserves an in-progress fall/clear animation and continues it once without duplicate collection",
+    "Actual pointer drag exchanges adjacent cells and uses the same real match, gravity and refill rules",
+    "Captured actual gameplay with collected order progress and selected raster jewel",
+    "Read-only board solver sends only real clicks and wins the two-color order within the finite move budget",
+    "Completed save reloads as completed; replay resets only this game while retaining its completed gallery record",
+    "Actual paid reshuffles each spend two moves, create legal match-free boards and produce failure when the move budget reaches zero",
+    "QA writes only QA-prefixed saves; no normal progress, page errors or missing assets",
+    "Twelve distinct geographic provinces have symmetric explicit adjacency, saved army/ownership and income rules",
+    "Opponent province cannot recruit, develop or dispatch; keyboard also enforces ownership",
+    "Nonadjacent opponent tap is denied with no army, ownership, resource or order changes",
+    "Insufficient adjacent attack consumes the actual sent army and order, damages defenders, and cannot capture",
+    "Adjacent friendly transfer moves real army counts, spends one order and retains one source garrison",
+    "Recruit and development charge exact gold/orders, increase actual garrison/tax, and exhausted orders deny more commands",
+    "Real end-turn triggers exactly one rival fortification, +13 tax and readable round summary",
+    "Actual pause/save/reload preserves province ownership, armies, development, resources, round and checkpoint",
+    "Actual adjacent capture changes control, then deterministic rival attack moves port armies and takes the weak newly captured province",
+    "Checkpoint retry restores the full previous round through the real UI",
+    "Read-only planning and actual province/action clicks complete a short game with at least five real captures and a rival round",
+    "Completion is recorded; real replay restores starting armies and keeps the completion record",
+    "QA storage is isolated; no normal saves, missing assets or browser errors",
+    "Actual typewriter reveal, readable dialogue, instant-text control and first pair of choices operate through visible UI",
+    "Real canvas choice changes scene, branch, subsequent dialogue and persisted choice history",
+    "E opens dialogue history; continue input cannot advance while history is open and return preserves current place",
+    "Actual pause/save/reload preserves the exact branch, current dialogue, choices, log and text setting",
+    "Letter/voice/stay route produces its conditional dialogue and the actual “并肩的灯火” ending",
+    "Completed ending survives reload; replay clears current story while retaining previously read endings and gallery completion",
+    "Independent signal/record/stay branch changes dialogue and produces “记在纸上的灯” with its own accumulated response values",
+    "Departure route produces “寄向下一站”; three real completed routes populate the own ending ledger and global completion record",
+    "QA writes only QA-prefixed saves; no normal progress writes, browser errors or missing images",
+    "Showcase exposes all 41 entries through the actual gallery",
+    "Forms page has 32 cards, both real selectors have 32 options, and zero pending cards",
+    "push-box × match-three: both directions of focus switching pause the previous game",
+    "grand-strategy × visual-novel: both directions of focus switching pause the previous game",
+    "390 × 844 forms page and stacked comparison have no horizontal overflow",
+    "390px cargo touch arrow moves the porter one square without moving the crate",
+    "390px jewel taps correctly select and swap two adjacent cells through the letterboxed canvas",
+    "390px realm map tap selects the intended province and its visible recruit action changes army and gold",
+    "390px novel dialogue taps advance reading and a mapped canvas option selects the letter route",
+    "Both fresh QA contexts leave normal storage untouched; no runtime errors or missing assets"
+  ],
+  "results": {
+    "cargo": {
+      "solvers": [
+        {
+          "warehouse": 1,
+          "name": "靠岸入库",
+          "shortestMoves": 9,
+          "visitedStates": 320
+        },
+        {
+          "warehouse": 2,
+          "name": "双灯联锁",
+          "shortestMoves": 18,
+          "visitedStates": 9393
+        },
+        {
+          "warehouse": 3,
+          "name": "潮汐总仓",
+          "shortestMoves": 29,
+          "visitedStates": 126318
+        }
+      ],
+      "warehouse1": {
+        "moves": 9,
+        "pushes": 2
+      },
+      "warehouse2": {
+        "moves": 18,
+        "pushes": 6
+      },
+      "warehouse3": {
+        "moves": 29,
+        "pushes": 9
+      },
+      "finish": {
+        "score": 1500,
+        "totalMoves": 74,
+        "totalPushes": 19,
+        "elapsed": 16.029400000000056
+      }
+    },
+    "jewel": {
+      "winningState": {
+        "version": 1,
+        "rng": 3989580674,
+        "board": [
+          3,
+          2,
+          0,
+          5,
+          3,
+          5,
+          0,
+          2,
+          5,
+          0,
+          5,
+          3,
+          0,
+          2,
+          0,
+          5,
+          5,
+          2,
+          4,
+          0,
+          3,
+          0,
+          5,
+          2,
+          0,
+          2,
+          4,
+          3,
+          4,
+          3,
+          5,
+          4,
+          1,
+          3,
+          1,
+          2,
+          5,
+          2,
+          3,
+          1,
+          5,
+          2,
+          5,
+          2,
+          2,
+          0,
+          2,
+          4,
+          2,
+          5,
+          5,
+          3,
+          1,
+          5,
+          2,
+          1,
+          0,
+          3,
+          0,
+          4,
+          4,
+          5,
+          0,
+          4
+        ],
+        "phase": "won",
+        "anim": null,
+        "selected": null,
+        "hint": [],
+        "hintTime": 0,
+        "moves": 14,
+        "turns": 8,
+        "score": 15800,
+        "orders": {
+          "amber": 10,
+          "blue": 12
+        },
+        "combo": 2,
+        "maxCombo": 4,
+        "cascades": 14,
+        "removed": 80,
+        "invalidSwaps": 1,
+        "shuffles": 0,
+        "autoShuffles": 0,
+        "hints": 1,
+        "won": true,
+        "elapsed": 22.15969999999386,
+        "availableMoves": 16,
+        "lastClear": [
+          {
+            "index": 19,
+            "color": 2
+          },
+          {
+            "index": 20,
+            "color": 2
+          },
+          {
+            "index": 21,
+            "color": 2
+          }
+        ],
+        "lastTurnRemoved": 10,
+        "message": "琥珀与蓝宝石都已配齐。这份珠宝委托完成了。",
+        "bounds": {
+          "x": 355,
+          "y": 72,
+          "cell": 64,
+          "cols": 8,
+          "rows": 8,
+          "width": 512,
+          "height": 512
+        },
+        "colors": [
+          {
+            "id": "amber",
+            "name": "琥珀",
+            "index": 0
+          },
+          {
+            "id": "jade",
+            "name": "翡翠",
+            "index": 1
+          },
+          {
+            "id": "rose",
+            "name": "玫瑰晶",
+            "index": 2
+          },
+          {
+            "id": "violet",
+            "name": "紫水晶",
+            "index": 3
+          },
+          {
+            "id": "blue",
+            "name": "蓝宝石",
+            "index": 4
+          },
+          {
+            "id": "pearl",
+            "name": "月光石",
+            "index": 5
+          }
+        ],
+        "targets": {
+          "amber": 10,
+          "blue": 10
+        },
+        "moveBudget": 22
+      },
+      "pendingSaved": {
+        "version": 1,
+        "rng": 859685037,
+        "board": [
+          5,
+          2,
+          1,
+          0,
+          1,
+          3,
+          2,
+          4,
+          0,
+          5,
+          1,
+          4,
+          4,
+          2,
+          3,
+          1,
+          4,
+          4,
+          5,
+          0,
+          1,
+          0,
+          0,
+          3,
+          1,
+          5,
+          3,
+          2,
+          0,
+          5,
+          4,
+          4,
+          1,
+          3,
+          3,
+          5,
+          1,
+          2,
+          2,
+          4,
+          5,
+          2,
+          3,
+          3,
+          2,
+          0,
+          3,
+          2,
+          2,
+          5,
+          5,
+          3,
+          3,
+          5,
+          4,
+          3,
+          0,
+          3,
+          0,
+          4,
+          4,
+          5,
+          0,
+          3
+        ],
+        "phase": "fall",
+        "anim": {
+          "t": 0.08340000000000009,
+          "duration": 0.43,
+          "tiles": [
+            {
+              "color": 0,
+              "from": 7,
+              "to": 56
+            },
+            {
+              "color": 2,
+              "from": 6,
+              "to": 48
+            },
+            {
+              "color": 5,
+              "from": 5,
+              "to": 40
+            },
+            {
+              "color": 1,
+              "from": 3,
+              "to": 32
+            },
+            {
+              "color": 1,
+              "from": 2,
+              "to": 24
+            },
+            {
+              "color": 4,
+              "from": 1,
+              "to": 16
+            },
+            {
+              "color": 0,
+              "from": 0,
+              "to": 8
+            },
+            {
+              "color": 5,
+              "from": -1,
+              "to": 0
+            },
+            {
+              "color": 3,
+              "from": 7,
+              "to": 57
+            },
+            {
+              "color": 5,
+              "from": 6,
+              "to": 49
+            },
+            {
+              "color": 2,
+              "from": 5,
+              "to": 41
+            },
+            {
+              "color": 3,
+              "from": 3,
+              "to": 33
+            },
+            {
+              "color": 5,
+              "from": 2,
+              "to": 25
+            },
+            {
+              "color": 4,
+              "from": 1,
+              "to": 17
+            },
+            {
+              "color": 5,
+              "from": 0,
+              "to": 9
+            },
+            {
+              "color": 2,
+              "from": -1,
+              "to": 1
+            },
+            {
+              "color": 0,
+              "from": 7,
+              "to": 58
+            },
+            {
+              "color": 5,
+              "from": 6,
+              "to": 50
+            },
+            {
+              "color": 3,
+              "from": 5,
+              "to": 42
+            },
+            {
+              "color": 3,
+              "from": 3,
+              "to": 34
+            },
+            {
+              "color": 3,
+              "from": 2,
+              "to": 26
+            },
+            {
+              "color": 5,
+              "from": 1,
+              "to": 18
+            },
+            {
+              "color": 1,
+              "from": 0,
+              "to": 10
+            },
+            {
+              "color": 1,
+              "from": -1,
+              "to": 2
+            },
+            {
+              "color": 4,
+              "from": 7,
+              "to": 59
+            },
+            {
+              "color": 3,
+              "from": 6,
+              "to": 51
+            },
+            {
+              "color": 3,
+              "from": 5,
+              "to": 43
+            },
+            {
+              "color": 5,
+              "from": 4,
+              "to": 35
+            },
+            {
+              "color": 2,
+              "from": 3,
+              "to": 27
+            },
+            {
+              "color": 0,
+              "from": 2,
+              "to": 19
+            },
+            {
+              "color": 4,
+              "from": 1,
+              "to": 11
+            },
+            {
+              "color": 0,
+              "from": 0,
+              "to": 3
+            },
+            {
+              "color": 4,
+              "from": 7,
+              "to": 60
+            },
+            {
+              "color": 3,
+              "from": 6,
+              "to": 52
+            },
+            {
+              "color": 2,
+              "from": 5,
+              "to": 44
+            },
+            {
+              "color": 1,
+              "from": 4,
+              "to": 36
+            },
+            {
+              "color": 0,
+              "from": 3,
+              "to": 28
+            },
+            {
+              "color": 1,
+              "from": 2,
+              "to": 20
+            },
+            {
+              "color": 4,
+              "from": 1,
+              "to": 12
+            },
+            {
+              "color": 1,
+              "from": 0,
+              "to": 4
+            },
+            {
+              "color": 5,
+              "from": 7,
+              "to": 61
+            },
+            {
+              "color": 5,
+              "from": 6,
+              "to": 53
+            },
+            {
+              "color": 0,
+              "from": 5,
+              "to": 45
+            },
+            {
+              "color": 2,
+              "from": 4,
+              "to": 37
+            },
+            {
+              "color": 5,
+              "from": 3,
+              "to": 29
+            },
+            {
+              "color": 0,
+              "from": 2,
+              "to": 21
+            },
+            {
+              "color": 2,
+              "from": 1,
+              "to": 13
+            },
+            {
+              "color": 3,
+              "from": 0,
+              "to": 5
+            },
+            {
+              "color": 0,
+              "from": 7,
+              "to": 62
+            },
+            {
+              "color": 4,
+              "from": 6,
+              "to": 54
+            },
+            {
+              "color": 3,
+              "from": 5,
+              "to": 46
+            },
+            {
+              "color": 2,
+              "from": 4,
+              "to": 38
+            },
+            {
+              "color": 4,
+              "from": 3,
+              "to": 30
+            },
+            {
+              "color": 0,
+              "from": 2,
+              "to": 22
+            },
+            {
+              "color": 3,
+              "from": 1,
+              "to": 14
+            },
+            {
+              "color": 2,
+              "from": 0,
+              "to": 6
+            },
+            {
+              "color": 3,
+              "from": 7,
+              "to": 63
+            },
+            {
+              "color": 3,
+              "from": 6,
+              "to": 55
+            },
+            {
+              "color": 2,
+              "from": 5,
+              "to": 47
+            },
+            {
+              "color": 4,
+              "from": 4,
+              "to": 39
+            },
+            {
+              "color": 4,
+              "from": 3,
+              "to": 31
+            },
+            {
+              "color": 3,
+              "from": 2,
+              "to": 23
+            },
+            {
+              "color": 1,
+              "from": 1,
+              "to": 15
+            },
+            {
+              "color": 4,
+              "from": 0,
+              "to": 7
+            }
+          ]
+        },
+        "selected": null,
+        "hint": [],
+        "hintTime": 0,
+        "moves": 21,
+        "turns": 1,
+        "score": 300,
+        "orders": {
+          "amber": 0,
+          "blue": 0
+        },
+        "combo": 1,
+        "maxCombo": 1,
+        "cascades": 0,
+        "removed": 3,
+        "invalidSwaps": 1,
+        "shuffles": 0,
+        "autoShuffles": 0,
+        "hints": 1,
+        "won": false,
+        "elapsed": 1.9291999999761578,
+        "availableMoves": 15,
+        "lastClear": [
+          {
+            "index": 32,
+            "color": 2
+          },
+          {
+            "index": 33,
+            "color": 2
+          },
+          {
+            "index": 34,
+            "color": 2
+          }
+        ],
+        "lastTurnRemoved": 3,
+        "message": "宝石下落并补入空位…",
+        "bounds": {
+          "x": 355,
+          "y": 72,
+          "cell": 64,
+          "cols": 8,
+          "rows": 8,
+          "width": 512,
+          "height": 512
+        },
+        "colors": [
+          {
+            "id": "amber",
+            "name": "琥珀",
+            "index": 0
+          },
+          {
+            "id": "jade",
+            "name": "翡翠",
+            "index": 1
+          },
+          {
+            "id": "rose",
+            "name": "玫瑰晶",
+            "index": 2
+          },
+          {
+            "id": "violet",
+            "name": "紫水晶",
+            "index": 3
+          },
+          {
+            "id": "blue",
+            "name": "蓝宝石",
+            "index": 4
+          },
+          {
+            "id": "pearl",
+            "name": "月光石",
+            "index": 5
+          }
+        ],
+        "targets": {
+          "amber": 10,
+          "blue": 10
+        },
+        "moveBudget": 22
+      }
+    },
+    "realm": {
+      "version": 1,
+      "provinces": [
+        {
+          "id": "west",
+          "owner": "player",
+          "army": 1,
+          "level": 0,
+          "fort": 0,
+          "recruited": false,
+          "developed": false
+        },
+        {
+          "id": "grain",
+          "owner": "player",
+          "army": 1,
+          "level": 0,
+          "fort": 0,
+          "recruited": false,
+          "developed": false
+        },
+        {
+          "id": "pine",
+          "owner": "player",
+          "army": 1,
+          "level": 0,
+          "fort": 0,
+          "recruited": false,
+          "developed": false
+        },
+        {
+          "id": "snow",
+          "owner": "player",
+          "army": 3,
+          "level": 0,
+          "fort": 0,
+          "recruited": false,
+          "developed": false
+        },
+        {
+          "id": "falls",
+          "owner": "neutral",
+          "army": 3,
+          "level": 0,
+          "fort": 0,
+          "recruited": false,
+          "developed": false
+        },
+        {
+          "id": "river",
+          "owner": "player",
+          "army": 1,
+          "level": 0,
+          "fort": 0,
+          "recruited": false,
+          "developed": false
+        },
+        {
+          "id": "south",
+          "owner": "player",
+          "army": 1,
+          "level": 0,
+          "fort": 0,
+          "recruited": true,
+          "developed": false
+        },
+        {
+          "id": "marsh",
+          "owner": "player",
+          "army": 2,
+          "level": 0,
+          "fort": 0,
+          "recruited": false,
+          "developed": false
+        },
+        {
+          "id": "sail",
+          "owner": "player",
+          "army": 1,
+          "level": 0,
+          "fort": 0,
+          "recruited": false,
+          "developed": false
+        },
+        {
+          "id": "port",
+          "owner": "rival",
+          "army": 6,
+          "level": 0,
+          "fort": 0,
+          "recruited": false,
+          "developed": false
+        },
+        {
+          "id": "cliff",
+          "owner": "rival",
+          "army": 5,
+          "level": 0,
+          "fort": 0,
+          "recruited": false,
+          "developed": false
+        },
+        {
+          "id": "pass",
+          "owner": "rival",
+          "army": 6,
+          "level": 0,
+          "fort": 1,
+          "recruited": false,
+          "developed": false
+        }
+      ],
+      "selected": "sail",
+      "source": null,
+      "target": null,
+      "mode": "inspect",
+      "force": "all",
+      "round": 2,
+      "orders": 0,
+      "gold": 46,
+      "phase": "won",
+      "won": true,
+      "score": 1566,
+      "captures": 5,
+      "transfers": 0,
+      "recruits": 1,
+      "developments": 0,
+      "spent": 6,
+      "incomeReceived": 22,
+      "aiActions": 1,
+      "replays": 0,
+      "history": [
+        "青盟握有西侧三省。八回合内控制八省，或攻下赤盟首府东港。",
+        "西垒攻下河枢：出兵 9，消耗 3，余 6。",
+        "麦谷攻下南境：出兵 5，消耗 2，余 3。",
+        "松岭攻下白脊：出兵 5，消耗 2，余 3。",
+        "第 1 回合结束，赤盟行动。",
+        "赤盟在岚关增援两队、筑垒一级，防御 7。",
+        "第 1 回合税收 22 金，现有 52 金。",
+        "河枢攻下翠泽：出兵 5，消耗 3，余 2。",
+        "南境招募三队，花费 6 金。",
+        "南境攻下盐帆：出兵 5，消耗 4，余 1。",
+        "青盟完成半岛协定：控制 8 省。"
+      ],
+      "lastRound": {
+        "round": 1,
+        "income": 22,
+        "ai": "赤盟在岚关增援两队、筑垒一级，防御 7。",
+        "ownedBefore": 6,
+        "ownedAfter": 6
+      },
+      "checkpoint": {
+        "version": 1,
+        "provinces": [
+          {
+            "id": "west",
+            "owner": "player",
+            "army": 1,
+            "level": 0,
+            "fort": 0,
+            "recruited": false,
+            "developed": false
+          },
+          {
+            "id": "grain",
+            "owner": "player",
+            "army": 1,
+            "level": 0,
+            "fort": 0,
+            "recruited": false,
+            "developed": false
+          },
+          {
+            "id": "pine",
+            "owner": "player",
+            "army": 1,
+            "level": 0,
+            "fort": 0,
+            "recruited": false,
+            "developed": false
+          },
+          {
+            "id": "snow",
+            "owner": "player",
+            "army": 3,
+            "level": 0,
+            "fort": 0,
+            "recruited": false,
+            "developed": false
+          },
+          {
+            "id": "falls",
+            "owner": "neutral",
+            "army": 3,
+            "level": 0,
+            "fort": 0,
+            "recruited": false,
+            "developed": false
+          },
+          {
+            "id": "river",
+            "owner": "player",
+            "army": 6,
+            "level": 0,
+            "fort": 0,
+            "recruited": false,
+            "developed": false
+          },
+          {
+            "id": "south",
+            "owner": "player",
+            "army": 3,
+            "level": 0,
+            "fort": 0,
+            "recruited": false,
+            "developed": false
+          },
+          {
+            "id": "marsh",
+            "owner": "neutral",
+            "army": 3,
+            "level": 0,
+            "fort": 0,
+            "recruited": false,
+            "developed": false
+          },
+          {
+            "id": "sail",
+            "owner": "neutral",
+            "army": 4,
+            "level": 0,
+            "fort": 0,
+            "recruited": false,
+            "developed": false
+          },
+          {
+            "id": "port",
+            "owner": "rival",
+            "army": 6,
+            "level": 0,
+            "fort": 0,
+            "recruited": false,
+            "developed": false
+          },
+          {
+            "id": "cliff",
+            "owner": "rival",
+            "army": 5,
+            "level": 0,
+            "fort": 0,
+            "recruited": false,
+            "developed": false
+          },
+          {
+            "id": "pass",
+            "owner": "rival",
+            "army": 6,
+            "level": 0,
+            "fort": 1,
+            "recruited": false,
+            "developed": false
+          }
+        ],
+        "selected": "snow",
+        "source": null,
+        "target": null,
+        "mode": "inspect",
+        "force": "all",
+        "round": 2,
+        "orders": 3,
+        "gold": 52,
+        "phase": "player",
+        "won": false,
+        "score": 0,
+        "captures": 3,
+        "transfers": 0,
+        "recruits": 0,
+        "developments": 0,
+        "spent": 0,
+        "incomeReceived": 22,
+        "aiActions": 1,
+        "replays": 0,
+        "history": [
+          "青盟握有西侧三省。八回合内控制八省，或攻下赤盟首府东港。",
+          "西垒攻下河枢：出兵 9，消耗 3，余 6。",
+          "麦谷攻下南境：出兵 5，消耗 2，余 3。",
+          "松岭攻下白脊：出兵 5，消耗 2，余 3。",
+          "第 1 回合结束，赤盟行动。",
+          "赤盟在岚关增援两队、筑垒一级，防御 7。",
+          "第 1 回合税收 22 金，现有 52 金。"
+        ],
+        "lastRound": {
+          "round": 1,
+          "income": 22,
+          "ai": "赤盟在岚关增援两队、筑垒一级，防御 7。",
+          "ownedBefore": 6,
+          "ownedAfter": 6
+        }
+      },
+      "regions": [
+        {
+          "id": "west",
+          "name": "西垒",
+          "x": 156,
+          "y": 355,
+          "income": 4,
+          "owner": "player",
+          "army": 10,
+          "neighbors": [
+            "pine",
+            "grain",
+            "river",
+            "south"
+          ],
+          "polygon": [
+            [
+              50,
+              300
+            ],
+            [
+              220,
+              280
+            ],
+            [
+              286,
+              332
+            ],
+            [
+              242,
+              417
+            ],
+            [
+              78,
+              414
+            ]
+          ]
+        },
+        {
+          "id": "grain",
+          "name": "麦谷",
+          "x": 343,
+          "y": 356,
+          "income": 4,
+          "owner": "player",
+          "army": 6,
+          "neighbors": [
+            "west",
+            "river",
+            "marsh",
+            "south",
+            "sail"
+          ],
+          "polygon": [
+            [
+              286,
+              332
+            ],
+            [
+              402,
+              302
+            ],
+            [
+              505,
+              331
+            ],
+            [
+              439,
+              406
+            ],
+            [
+              363,
+              425
+            ],
+            [
+              242,
+              417
+            ]
+          ]
+        },
+        {
+          "id": "pine",
+          "name": "松岭",
+          "x": 176,
+          "y": 245,
+          "income": 3,
+          "owner": "player",
+          "army": 6,
+          "neighbors": [
+            "west",
+            "snow",
+            "river"
+          ],
+          "polygon": [
+            [
+              50,
+              160
+            ],
+            [
+              185,
+              178
+            ],
+            [
+              273,
+              222
+            ],
+            [
+              220,
+              280
+            ],
+            [
+              50,
+              300
+            ]
+          ]
+        },
+        {
+          "id": "snow",
+          "name": "白脊",
+          "x": 177,
+          "y": 116,
+          "income": 2,
+          "owner": "neutral",
+          "army": 2,
+          "neighbors": [
+            "pine",
+            "falls"
+          ],
+          "polygon": [
+            [
+              30,
+              74
+            ],
+            [
+              225,
+              66
+            ],
+            [
+              309,
+              151
+            ],
+            [
+              273,
+              222
+            ],
+            [
+              185,
+              178
+            ],
+            [
+              50,
+              160
+            ]
+          ]
+        },
+        {
+          "id": "falls",
+          "name": "云瀑",
+          "x": 393,
+          "y": 154,
+          "income": 3,
+          "owner": "neutral",
+          "army": 3,
+          "neighbors": [
+            "snow",
+            "river",
+            "pass"
+          ],
+          "polygon": [
+            [
+              225,
+              66
+            ],
+            [
+              452,
+              67
+            ],
+            [
+              515,
+              185
+            ],
+            [
+              388,
+              228
+            ],
+            [
+              273,
+              222
+            ],
+            [
+              309,
+              151
+            ]
+          ]
+        },
+        {
+          "id": "river",
+          "name": "河枢",
+          "x": 455,
+          "y": 267,
+          "income": 5,
+          "owner": "neutral",
+          "army": 3,
+          "neighbors": [
+            "west",
+            "grain",
+            "pine",
+            "falls",
+            "marsh",
+            "cliff",
+            "pass"
+          ],
+          "polygon": [
+            [
+              273,
+              222
+            ],
+            [
+              388,
+              228
+            ],
+            [
+              515,
+              185
+            ],
+            [
+              659,
+              207
+            ],
+            [
+              621,
+              294
+            ],
+            [
+              505,
+              331
+            ],
+            [
+              402,
+              302
+            ],
+            [
+              286,
+              332
+            ],
+            [
+              220,
+              280
+            ]
+          ]
+        },
+        {
+          "id": "south",
+          "name": "南境",
+          "x": 249,
+          "y": 483,
+          "income": 4,
+          "owner": "neutral",
+          "army": 2,
+          "neighbors": [
+            "west",
+            "grain",
+            "sail"
+          ],
+          "polygon": [
+            [
+              78,
+              414
+            ],
+            [
+              242,
+              417
+            ],
+            [
+              363,
+              425
+            ],
+            [
+              383,
+              507
+            ],
+            [
+              282,
+              576
+            ],
+            [
+              164,
+              560
+            ],
+            [
+              58,
+              470
+            ]
+          ]
+        },
+        {
+          "id": "marsh",
+          "name": "翠泽",
+          "x": 568,
+          "y": 362,
+          "income": 4,
+          "owner": "neutral",
+          "army": 3,
+          "neighbors": [
+            "grain",
+            "river",
+            "sail",
+            "port",
+            "cliff"
+          ],
+          "polygon": [
+            [
+              505,
+              331
+            ],
+            [
+              621,
+              294
+            ],
+            [
+              700,
+              318
+            ],
+            [
+              699,
+              389
+            ],
+            [
+              584,
+              438
+            ],
+            [
+              439,
+              406
+            ]
+          ]
+        },
+        {
+          "id": "sail",
+          "name": "盐帆",
+          "x": 525,
+          "y": 505,
+          "income": 5,
+          "owner": "neutral",
+          "army": 4,
+          "neighbors": [
+            "grain",
+            "south",
+            "marsh",
+            "port"
+          ],
+          "polygon": [
+            [
+              363,
+              425
+            ],
+            [
+              439,
+              406
+            ],
+            [
+              584,
+              438
+            ],
+            [
+              699,
+              389
+            ],
+            [
+              737,
+              451
+            ],
+            [
+              642,
+              543
+            ],
+            [
+              500,
+              583
+            ],
+            [
+              383,
+              507
+            ]
+          ]
+        },
+        {
+          "id": "port",
+          "name": "东港",
+          "x": 769,
+          "y": 390,
+          "income": 5,
+          "owner": "rival",
+          "army": 6,
+          "capital": true,
+          "neighbors": [
+            "marsh",
+            "sail",
+            "cliff"
+          ],
+          "polygon": [
+            [
+              700,
+              318
+            ],
+            [
+              837,
+              305
+            ],
+            [
+              844,
+              438
+            ],
+            [
+              737,
+              451
+            ],
+            [
+              699,
+              389
+            ]
+          ]
+        },
+        {
+          "id": "cliff",
+          "name": "赤崖",
+          "x": 752,
+          "y": 255,
+          "income": 4,
+          "owner": "rival",
+          "army": 5,
+          "neighbors": [
+            "river",
+            "marsh",
+            "port",
+            "pass"
+          ],
+          "polygon": [
+            [
+              659,
+              207
+            ],
+            [
+              823,
+              184
+            ],
+            [
+              837,
+              305
+            ],
+            [
+              700,
+              318
+            ],
+            [
+              621,
+              294
+            ]
+          ]
+        },
+        {
+          "id": "pass",
+          "name": "岚关",
+          "x": 656,
+          "y": 133,
+          "income": 3,
+          "owner": "rival",
+          "army": 4,
+          "neighbors": [
+            "falls",
+            "river",
+            "cliff"
+          ],
+          "polygon": [
+            [
+              452,
+              67
+            ],
+            [
+              780,
+              80
+            ],
+            [
+              823,
+              184
+            ],
+            [
+              659,
+              207
+            ],
+            [
+              515,
+              185
+            ]
+          ]
+        }
+      ],
+      "rules": {
+        "maxRounds": 8,
+        "ordersPerRound": 3,
+        "recruitCost": 6,
+        "recruitArmy": 3,
+        "developCost": 8,
+        "incomePerLevel": 2,
+        "maxLevel": 2,
+        "maxArmy": 24,
+        "targetProvinces": 8
+      },
+      "income": 31,
+      "owned": 8,
+      "preview": null
+    },
+    "novel": {
+      "firstEnding": {
+        "version": 1,
+        "node": "platform",
+        "line": 1,
+        "visible": 34,
+        "phase": "won",
+        "route": "letter",
+        "promise": "voice",
+        "trust": 2,
+        "rigor": 0,
+        "choices": [
+          {
+            "node": "opening",
+            "id": "letter",
+            "text": "陪周衡走一趟灯塔"
+          },
+          {
+            "node": "letter",
+            "id": "voice",
+            "text": "让周衡亲口读出这封信"
+          },
+          {
+            "node": "platform",
+            "id": "stay",
+            "text": "留在港口，等天亮"
+          }
+        ],
+        "log": [
+          {
+            "key": "opening:0",
+            "speaker": "这一夜",
+            "text": "雨沿着玻璃往下走。最后一班列车停在窗外，港口的航标却迟迟没有亮。"
+          },
+          {
+            "key": "opening:1",
+            "speaker": "周衡 · 港口调度员",
+            "text": "这封信晚了七年。今晚再不送去，我大概又会把它带回家。"
+          },
+          {
+            "key": "opening:2",
+            "speaker": "林岚 · 航标工程师",
+            "text": "我要去灯塔核对最后一段记录。你若不急着上车，可以陪我们走一程。"
+          },
+          {
+            "key": "opening:choice",
+            "speaker": "你的选择",
+            "text": "陪周衡走一趟灯塔"
+          },
+          {
+            "key": "letter:0",
+            "speaker": "周衡 · 港口调度员",
+            "text": "信是写给我的老搭档的。那年我替他做了一个决定，却从没问他愿不愿意。"
+          },
+          {
+            "key": "letter:1",
+            "speaker": "林岚 · 航标工程师",
+            "text": "他离开前在这里留过一句话：有些事情，收到解释比收到道歉更难。"
+          },
+          {
+            "key": "letter:2",
+            "speaker": "你",
+            "text": "纸上的字还在。现在要怎样把它们交出去？"
+          },
+          {
+            "key": "letter:choice",
+            "speaker": "你的选择",
+            "text": "让周衡亲口读出这封信"
+          },
+          {
+            "key": "voice:0",
+            "speaker": "周衡 · 港口调度员",
+            "text": "“那天我以为替你留下，是为了你好。现在我知道，留下或离开都该由你自己选。”"
+          },
+          {
+            "key": "voice:1",
+            "speaker": "林岚 · 航标工程师",
+            "text": "她没有接话，只把收信人的名字写进值班册。窗外第一束航标光越过了海面。"
+          },
+          {
+            "key": "platform:0",
+            "speaker": "这一夜",
+            "text": "回到候车厅时，雨小了。那封信有了去处，港口也有了回应。"
+          },
+          {
+            "key": "platform:1",
+            "speaker": "周衡 · 港口调度员",
+            "text": "我以为把信送出去，就能立刻轻松。原来还要学着等一个不一定会来的回音。"
+          },
+          {
+            "key": "platform:choice",
+            "speaker": "你的选择",
+            "text": "留在港口，等天亮"
+          }
+        ],
+        "logOffset": 0,
+        "backlog": false,
+        "review": false,
+        "instant": true,
+        "ending": "together",
+        "endings": [
+          "together"
+        ],
+        "decision": "together",
+        "won": true,
+        "score": 500,
+        "elapsed": 1.766499999976157,
+        "scene": "station",
+        "chapter": "回到末班车前",
+        "current": {
+          "speaker": "zhou",
+          "text": "我以为把信送出去，就能立刻轻松。原来还要学着等一个不一定会来的回音。"
+        },
+        "choicesAvailable": [
+          {
+            "id": "stay",
+            "text": "留在港口，等天亮"
+          },
+          {
+            "id": "depart",
+            "text": "登上末班列车"
+          }
+        ],
+        "choiceRects": [
+          {
+            "id": "stay",
+            "text": "留在港口，等天亮",
+            "finish": "stay",
+            "x": 252,
+            "y": 245,
+            "w": 616,
+            "h": 65
+          },
+          {
+            "id": "depart",
+            "text": "登上末班列车",
+            "finish": "depart",
+            "x": 252,
+            "y": 327,
+            "w": 616,
+            "h": 65
+          }
+        ],
+        "endingNames": {
+          "together": "并肩的灯火",
+          "record": "记在纸上的灯",
+          "depart": "寄向下一站"
+        }
+      },
+      "finalState": {
+        "version": 1,
+        "node": "platform",
+        "line": 1,
+        "visible": 29,
+        "phase": "won",
+        "route": "letter",
+        "promise": "record",
+        "trust": 1,
+        "rigor": 1,
+        "choices": [
+          {
+            "node": "opening",
+            "id": "letter",
+            "text": "陪周衡走一趟灯塔"
+          },
+          {
+            "node": "letter",
+            "id": "record-letter",
+            "text": "将信收入档案，留下来由"
+          },
+          {
+            "node": "platform",
+            "id": "depart",
+            "text": "登上末班列车"
+          }
+        ],
+        "log": [
+          {
+            "key": "opening:0",
+            "speaker": "这一夜",
+            "text": "雨沿着玻璃往下走。最后一班列车停在窗外，港口的航标却迟迟没有亮。"
+          },
+          {
+            "key": "opening:1",
+            "speaker": "周衡 · 港口调度员",
+            "text": "这封信晚了七年。今晚再不送去，我大概又会把它带回家。"
+          },
+          {
+            "key": "opening:2",
+            "speaker": "林岚 · 航标工程师",
+            "text": "我要去灯塔核对最后一段记录。你若不急着上车，可以陪我们走一程。"
+          },
+          {
+            "key": "opening:choice",
+            "speaker": "你的选择",
+            "text": "陪周衡走一趟灯塔"
+          },
+          {
+            "key": "letter:0",
+            "speaker": "周衡 · 港口调度员",
+            "text": "信是写给我的老搭档的。那年我替他做了一个决定，却从没问他愿不愿意。"
+          },
+          {
+            "key": "letter:1",
+            "speaker": "林岚 · 航标工程师",
+            "text": "他离开前在这里留过一句话：有些事情，收到解释比收到道歉更难。"
+          },
+          {
+            "key": "letter:2",
+            "speaker": "你",
+            "text": "纸上的字还在。现在要怎样把它们交出去？"
+          },
+          {
+            "key": "letter:choice",
+            "speaker": "你的选择",
+            "text": "将信收入档案，留下来由"
+          },
+          {
+            "key": "recordLetter:0",
+            "speaker": "你",
+            "text": "你把迟到的信放在那份离岗记录旁边，没有替任何人写下原谅。"
+          },
+          {
+            "key": "recordLetter:1",
+            "speaker": "周衡 · 港口调度员",
+            "text": "谢谢。至少以后有人问起那年，我们不用只剩下一句“都过去了”。"
+          },
+          {
+            "key": "platform:0",
+            "speaker": "这一夜",
+            "text": "回到候车厅时，雨小了。那封信有了去处，港口也有了回应。"
+          },
+          {
+            "key": "platform:1",
+            "speaker": "周衡 · 港口调度员",
+            "text": "明天还要继续值班。今晚留下来的事，终于不必再由一个人记着。"
+          },
+          {
+            "key": "platform:choice",
+            "speaker": "你的选择",
+            "text": "登上末班列车"
+          }
+        ],
+        "logOffset": 0,
+        "backlog": false,
+        "review": false,
+        "instant": true,
+        "ending": "depart",
+        "endings": [
+          "together",
+          "record",
+          "depart"
+        ],
+        "decision": "depart",
+        "won": true,
+        "score": 500,
+        "elapsed": 1.0999000000000003,
+        "scene": "station",
+        "chapter": "回到末班车前",
+        "current": {
+          "speaker": "zhou",
+          "text": "明天还要继续值班。今晚留下来的事，终于不必再由一个人记着。"
+        },
+        "choicesAvailable": [
+          {
+            "id": "stay",
+            "text": "留在港口，等天亮"
+          },
+          {
+            "id": "depart",
+            "text": "登上末班列车"
+          }
+        ],
+        "choiceRects": [
+          {
+            "id": "stay",
+            "text": "留在港口，等天亮",
+            "finish": "stay",
+            "x": 252,
+            "y": 245,
+            "w": 616,
+            "h": 65
+          },
+          {
+            "id": "depart",
+            "text": "登上末班列车",
+            "finish": "depart",
+            "x": 252,
+            "y": 327,
+            "w": 616,
+            "h": 65
+          }
+        ],
+        "endingNames": {
+          "together": "并肩的灯火",
+          "record": "记在纸上的灯",
+          "depart": "寄向下一站"
+        }
+      },
+      "saved": {
+        "version": 1,
+        "node": "letter",
+        "line": 2,
+        "visible": 19,
+        "phase": "choice",
+        "route": "letter",
+        "promise": null,
+        "trust": 1,
+        "rigor": 0,
+        "choices": [
+          {
+            "node": "opening",
+            "id": "letter",
+            "text": "陪周衡走一趟灯塔"
+          }
+        ],
+        "log": [
+          {
+            "key": "opening:0",
+            "speaker": "这一夜",
+            "text": "雨沿着玻璃往下走。最后一班列车停在窗外，港口的航标却迟迟没有亮。"
+          },
+          {
+            "key": "opening:1",
+            "speaker": "周衡 · 港口调度员",
+            "text": "这封信晚了七年。今晚再不送去，我大概又会把它带回家。"
+          },
+          {
+            "key": "opening:2",
+            "speaker": "林岚 · 航标工程师",
+            "text": "我要去灯塔核对最后一段记录。你若不急着上车，可以陪我们走一程。"
+          },
+          {
+            "key": "opening:choice",
+            "speaker": "你的选择",
+            "text": "陪周衡走一趟灯塔"
+          },
+          {
+            "key": "letter:0",
+            "speaker": "周衡 · 港口调度员",
+            "text": "信是写给我的老搭档的。那年我替他做了一个决定，却从没问他愿不愿意。"
+          },
+          {
+            "key": "letter:1",
+            "speaker": "林岚 · 航标工程师",
+            "text": "他离开前在这里留过一句话：有些事情，收到解释比收到道歉更难。"
+          },
+          {
+            "key": "letter:2",
+            "speaker": "你",
+            "text": "纸上的字还在。现在要怎样把它们交出去？"
+          }
+        ],
+        "logOffset": 0,
+        "backlog": false,
+        "review": false,
+        "instant": true,
+        "ending": null,
+        "endings": [],
+        "decision": null,
+        "won": false,
+        "score": 0,
+        "elapsed": 1.1489000000000003,
+        "scene": "control",
+        "chapter": "灯塔里的旧信",
+        "current": {
+          "speaker": "you",
+          "text": "纸上的字还在。现在要怎样把它们交出去？"
+        },
+        "choicesAvailable": [
+          {
+            "id": "voice",
+            "text": "让周衡亲口读出这封信"
+          },
+          {
+            "id": "record-letter",
+            "text": "将信收入档案，留下来由"
+          }
+        ],
+        "choiceRects": [
+          {
+            "id": "voice",
+            "text": "让周衡亲口读出这封信",
+            "next": "voice",
+            "promise": "voice",
+            "trust": 1,
+            "x": 252,
+            "y": 245,
+            "w": 616,
+            "h": 65
+          },
+          {
+            "id": "record-letter",
+            "text": "将信收入档案，留下来由",
+            "next": "recordLetter",
+            "promise": "record",
+            "rigor": 1,
+            "x": 252,
+            "y": 327,
+            "w": 616,
+            "h": 65
+          }
+        ],
+        "endingNames": {
+          "together": "并肩的灯火",
+          "record": "记在纸上的灯",
+          "depart": "寄向下一站"
+        }
+      },
+      "storage": [
+        "dumpling-showcase-qa-v1-novel",
+        "dumpling-showcase-qa-v1-records"
+      ]
+    },
+    "shell": {
+      "comparison": [
+        {
+          "left": "cargo",
+          "right": "jewel",
+          "selectedThroughRealControls": true,
+          "rightFocusPausesLeft": true,
+          "leftResumePausesRight": true
+        },
+        {
+          "left": "realm",
+          "right": "novel",
+          "selectedThroughRealControls": true,
+          "rightFocusPausesLeft": true,
+          "leftResumePausesRight": true
+        }
+      ],
+      "mobile": {
+        "forms": {
+          "width": 390,
+          "document": 390,
+          "body": 390
+        },
+        "cargo": {
+          "layout": {
+            "width": 390,
+            "document": 390,
+            "body": 390
+          },
+          "geometry": {
+            "x": 195,
+            "y": 380.84375,
+            "css": {
+              "width": 348,
+              "height": 261
+            },
+            "backing": {
+              "width": 1120,
+              "height": 630
+            },
+            "letterbox": {
+              "x": 0,
+              "y": 32.625
+            },
+            "scale": 0.3107142857142857
+          },
+          "input": "Actual touch arrow",
+          "player": {
+            "c": 3,
+            "r": 5
+          },
+          "moves": 1
+        },
+        "jewel": {
+          "layout": {
+            "width": 390,
+            "document": 390,
+            "body": 390
+          },
+          "geometry": {
+            "x": 195,
+            "y": 380.84375,
+            "css": {
+              "width": 348,
+              "height": 261
+            },
+            "backing": {
+              "width": 1120,
+              "height": 630
+            },
+            "letterbox": {
+              "x": 0,
+              "y": 32.625
+            },
+            "scale": 0.3107142857142857
+          },
+          "input": "Two adjacent touchscreen board taps",
+          "pair": [
+            9,
+            10
+          ],
+          "turns": 1,
+          "removed": 6
+        },
+        "realm": {
+          "layout": {
+            "width": 390,
+            "document": 390,
+            "body": 390
+          },
+          "geometry": {
+            "x": 195,
+            "y": 380.84375,
+            "css": {
+              "width": 348,
+              "height": 261
+            },
+            "backing": {
+              "width": 1120,
+              "height": 630
+            },
+            "letterbox": {
+              "x": 0,
+              "y": 32.625
+            },
+            "scale": 0.3107142857142857
+          },
+          "input": "Touch province selection and recruit action",
+          "selected": "pine",
+          "gold": 24,
+          "orders": 2
+        },
+        "novel": {
+          "layout": {
+            "width": 390,
+            "document": 390,
+            "body": 390
+          },
+          "geometry": {
+            "x": 195,
+            "y": 380.84375,
+            "css": {
+              "width": 348,
+              "height": 261
+            },
+            "backing": {
+              "width": 1120,
+              "height": 630
+            },
+            "letterbox": {
+              "x": 0,
+              "y": 32.625
+            },
+            "scale": 0.3107142857142857
+          },
+          "input": "Touch dialogue continue and canvas choice",
+          "node": "letter",
+          "route": "letter",
+          "choices": [
+            {
+              "node": "opening",
+              "id": "letter",
+              "text": "陪周衡走一趟灯塔"
+            }
+          ]
+        }
+      },
+      "desktopStorage": [
+        "dumpling-showcase-qa-v1-breach",
+        "dumpling-showcase-qa-v1-wonder",
+        "dumpling-showcase-qa-v1-cargo",
+        "dumpling-showcase-qa-v1-realm",
+        "dumpling-showcase-qa-v1-novel",
+        "dumpling-showcase-qa-v1-jewel"
+      ],
+      "mobileStorage": [
+        "dumpling-showcase-qa-v1-cargo",
+        "dumpling-showcase-qa-v1-realm",
+        "dumpling-showcase-qa-v1-novel",
+        "dumpling-showcase-qa-v1-jewel"
+      ]
+    }
+  },
+  "errors": [],
+  "missing": [],
+  "actualGameplayPreviews": [
+    "web/assets/showcase/previews/cargo.webp",
+    "web/assets/showcase/previews/jewel.webp",
+    "web/assets/showcase/previews/realm.webp",
+    "web/assets/showcase/previews/novel.webp"
+  ],
+  "artworkMode": "built-in image_gen",
+  "artworkManifest": "assets/game-forms/completion-generation-20261003.json"
+}

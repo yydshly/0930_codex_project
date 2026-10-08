@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-04",
+  "forms": 79,
+  "entrances": 88,
+  "new_forms": 4,
+  "original_assets": 7,
+  "generation_mode": "builtin-imagegen",
+  "prompts_and_originals": "assets/game-forms/horizons-generation.json",
+  "checks": 103,
+  "render_review": {
+    "frames": 12,
+    "phases": [
+      "initial",
+      "progress",
+      "complete"
+    ],
+    "method": "Visually inspected Skia contact sheets for all phases. Desktop is an explicitly labelled interface-state illustration, not native DOM screenshots; sculpture uses actual Three.js meshes in software compatibility mode; text adventure and submarine use production draw functions.",
+    "refinements": [
+      "Window positions clamped and bodies height-limited",
+      "Unchanged native document text no longer rewritten each frame",
+      "Exact finite grammar prevents substring command matches",
+      "Submarine instruments move aside when the vessel approaches the right edge",
+      "Sculpture completion uses the same changed mesh volume and in-scene light"
+    ]
+  },
+  "preservation": {
+    "protected": 2373,
+    "changed": [],
+    "missing": [],
+    "editable_shared": [
+      "forms.html",
+      "forms.js",
+      "game-forms-catalog.js",
+      "showcase-catalog.js",
+      "showcase.html",
+      "showcase.js"
+    ],
+    "old_storage": "No browser storage read, cleared or migrated. Prior IDs, edition routes and storage prefixes are compared against the baseline."
+  },
+  "catalogs": {
+    "forms": 79,
+    "entrances": 88,
+    "uniqueForms": 79,
+    "uniqueEntrances": 88,
+    "allFormsRouted": true,
+    "previousForms": 75,
+    "previousEntrances": 84,
+    "changedPreviousForms": [],
+    "changedPreviousEntrances": [],
+    "storagePrefixesPreserved": true,
+    "newForms": [
+      {
+        "id": "desktop-investigation",
+        "play": "desktop"
+      },
+      {
+        "id": "parser-adventure",
+        "play": "inkwell"
+      },
+      {
+        "id": "voxel-sculpture",
+        "play": "atelier"
+      },
+      {
+        "id": "vehicle-stations",
+        "play": "submersible"
+      }
+    ]
+  },
+  "packaged": {
+    "targets": 22,
+    "mismatches": []
+  },
+  "browser_qa": {
+    "verified": false,
+    "responsive_fullscreen_native_input_storage_webgl_verified": false,
+    "attempts": [
+      "Fresh js_reset succeeded",
+      "cua.getState failed before browser connection: trusted Node process exited unexpectedly; kernel reset, rerun your request"
+    ],
+    "blocker": "Browser control kernel exits before returning browser state. No alternate browser automation used."
+  },
+  "automated_checks_passed": true,
+  "acceptance_complete": false,
+  "remaining": [
+    "Real native HTML layout, focus and keyboard interactions",
+    "Narrow viewport and fullscreen",
+    "Touch drag and voxel picking",
+    "Actual WebGL lighting, frame time and memory",
+    "Browser refresh/save continuation"
+  ]
+}

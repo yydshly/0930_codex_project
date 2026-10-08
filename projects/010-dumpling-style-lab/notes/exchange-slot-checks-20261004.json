@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "count": 4,
+  "checks": [
+    "every existing entry retains its original storage key in normal and QA modes",
+    "author and carrier writes cannot overwrite each other",
+    "closing and revisiting the same role addresses the same persistent slot",
+    "production load save reset and role routing all use the slot helper"
+  ],
+  "scope": "Production key function and routing; actual browser localStorage refresh remains unverified."
+}

@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "count": 24,
+  "checks": [
+    "actual page awaits five final bitmap dependencies and starts a fresh paused scene",
+    "solution selection changes the next opening without restarting the current world",
+    "takeover preserves actual positions, guard states, lamps, archive and elapsed time",
+    "manual opening and held WASD move the actor then stop on key release",
+    "stance buttons and C toggle use actual model stance; held Shift only changes effective moving stance",
+    "E toggles a reachable switch and changes the real lamp and light-action count",
+    "map movement and the separate stone tool use different actual commands",
+    "Space throws toward the current pointer aim rather than a fixed noise location",
+    "invalid far and wall stone targets leave supplies unchanged with real rule reasons",
+    "clicking a live guard only selects his real information while the demonstration remains active",
+    "select and button focus retain browser shortcuts without controlling the world",
+    "multiple held touch pointers combine movement and releasing one preserves the other",
+    "secondary map pointers cannot replace the active aim or release another pointer",
+    "pause synchronizes stage controls and rejects actions while ordinary frames keep running",
+    "blur releases every held pointer and key then pauses the actual model",
+    "ordinary animation callbacks complete shadow with archive pickup and real exit",
+    "ordinary animation callbacks complete blackout with archive pickup and real exit",
+    "ordinary animation callbacks complete lure with archive pickup and real exit",
+    "retry opens a fresh manual attempt and both outcome states give replay instructions",
+    "fullscreen and exit callbacks target the complete stage with its controls and exit never reopens it",
+    "refresh restores a valid saved world paused without replacing it with query auto-demo",
+    "saved production model passes the engine validator after callback movement and restore",
+    "invalid model payload is rejected and replaced with a fresh paused opening",
+    "asset failure leaves a visible load explanation and disables all action inputs"
+  ],
+  "save_key": "world-play-direction-stealth-v1",
+  "prior_save_sentinels_unchanged": true,
+  "method": "Actual production controller imported with the real stealth engine and renderer, using a minimal DOM and no-op Canvas adapter. Final bitmap paths are checked on load. Verifies callbacks, real movement and all three ordinary-frame demo endings, paused valid-model restore, key focus guards, independent pointers, fullscreen targeting and asset failure. Browser CSS, hardware touch, fullscreen permission and rendered visual acceptance are separate."
+}

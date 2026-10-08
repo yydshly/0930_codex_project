@@ -1,0 +1,153 @@
+{
+  "checks": 37,
+  "results": [
+    {
+      "name": "four wheels and two axles required for stable test",
+      "passed": true
+    },
+    {
+      "name": "different power changes mass and acceleration",
+      "passed": true
+    },
+    {
+      "name": "cargo changes actual acceleration",
+      "passed": true
+    },
+    {
+      "name": "tires change physical radius, grip and motion",
+      "passed": true
+    },
+    {
+      "name": "gripper and proximity required",
+      "passed": true
+    },
+    {
+      "name": "moving pickup prevented and delivery needs correct location",
+      "passed": true
+    },
+    {
+      "name": "terrain produces body tilt and suspension response",
+      "passed": true
+    },
+    {
+      "name": "editing after completed delivery starts a new valid drive",
+      "passed": true
+    },
+    {
+      "name": "assembly has no autonomous driving",
+      "passed": true
+    },
+    {
+      "name": "six-degree translation forward",
+      "passed": true
+    },
+    {
+      "name": "six-degree translation back",
+      "passed": true
+    },
+    {
+      "name": "six-degree translation left",
+      "passed": true
+    },
+    {
+      "name": "six-degree translation right",
+      "passed": true
+    },
+    {
+      "name": "six-degree translation up",
+      "passed": true
+    },
+    {
+      "name": "six-degree translation down",
+      "passed": true
+    },
+    {
+      "name": "rotation yaw normalized quaternion",
+      "passed": true
+    },
+    {
+      "name": "rotation pitch normalized quaternion",
+      "passed": true
+    },
+    {
+      "name": "rotation roll normalized quaternion",
+      "passed": true
+    },
+    {
+      "name": "thrust follows actual rotated local axis",
+      "passed": true
+    },
+    {
+      "name": "inertial mode preserves drift and braking reduces it",
+      "passed": true
+    },
+    {
+      "name": "assist reduces motion without a teleport",
+      "passed": true
+    },
+    {
+      "name": "align changes heading only",
+      "passed": true
+    },
+    {
+      "name": "facility collision changes position velocity and integrity",
+      "passed": true
+    },
+    {
+      "name": "beacons require actual arrival in correct order",
+      "passed": true
+    },
+    {
+      "name": "editor checks real start exit and collectibles",
+      "passed": true
+    },
+    {
+      "name": "painting updates grid and start remains unique",
+      "passed": true
+    },
+    {
+      "name": "undo restores exact previous grid",
+      "passed": true
+    },
+    {
+      "name": "play cannot alter the design by painting",
+      "passed": true
+    },
+    {
+      "name": "floor collision and jumping use current tile map",
+      "passed": true
+    },
+    {
+      "name": "hazard is real failure",
+      "passed": true
+    },
+    {
+      "name": "empty gaps cause fall failure",
+      "passed": true
+    },
+    {
+      "name": "exit blocked while crystals remain",
+      "passed": true
+    },
+    {
+      "name": "retry keeps layout and removes collected run state",
+      "passed": true
+    },
+    {
+      "name": "three normal command-driven complete playthroughs",
+      "passed": true
+    },
+    {
+      "name": "rigworks malformed save falls back safely",
+      "passed": true
+    },
+    {
+      "name": "drift malformed save falls back safely",
+      "passed": true
+    },
+    {
+      "name": "levelsmith malformed save falls back safely",
+      "passed": true
+    }
+  ]
+}

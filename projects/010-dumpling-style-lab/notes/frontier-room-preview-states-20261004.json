@@ -1,0 +1,195 @@
+{
+  "initial": {
+    "room": "V9RV7Q",
+    "revision": 3,
+    "host": "f5926a00",
+    "self": "f5926a00",
+    "role": null,
+    "alive": true,
+    "phase": "lobby",
+    "winner": "",
+    "players": [
+      {
+        "id": "f5926a00",
+        "name": "青蓝",
+        "alive": true,
+        "station": "meeting"
+      },
+      {
+        "id": "235a5576",
+        "name": "珊瑚",
+        "alive": true,
+        "station": "meeting"
+      },
+      {
+        "id": "83ffa98f",
+        "name": "琥珀",
+        "alive": true,
+        "station": "meeting"
+      }
+    ],
+    "tasks": [],
+    "patterns": {
+      "engine": [
+        2,
+        1,
+        3
+      ],
+      "comms": [
+        1,
+        3,
+        2
+      ],
+      "garden": [
+        3,
+        2,
+        1
+      ]
+    },
+    "progress": 0,
+    "goal": 9,
+    "sabotage": false,
+    "deadline": 0,
+    "meeting_seconds": 0,
+    "voted": false,
+    "votes_count": 0,
+    "log": [
+      "房间已创建 · 等待三至六位真实玩家",
+      "珊瑚 加入房间",
+      "琥珀 加入房间"
+    ]
+  },
+  "progress": {
+    "room": "V9RV7Q",
+    "revision": 4,
+    "host": "f5926a00",
+    "self": "235a5576",
+    "role": "crew",
+    "alive": true,
+    "phase": "play",
+    "winner": "",
+    "players": [
+      {
+        "id": "f5926a00",
+        "name": "青蓝",
+        "alive": true,
+        "station": "meeting"
+      },
+      {
+        "id": "235a5576",
+        "name": "珊瑚",
+        "alive": true,
+        "station": "meeting"
+      },
+      {
+        "id": "83ffa98f",
+        "name": "琥珀",
+        "alive": true,
+        "station": "meeting"
+      }
+    ],
+    "tasks": [],
+    "patterns": {
+      "engine": [
+        2,
+        1,
+        3
+      ],
+      "comms": [
+        1,
+        3,
+        2
+      ],
+      "garden": [
+        3,
+        2,
+        1
+      ]
+    },
+    "progress": 0,
+    "goal": 6,
+    "sabotage": false,
+    "deadline": 0,
+    "meeting_seconds": 0,
+    "voted": false,
+    "votes_count": 0,
+    "log": [
+      "房间已创建 · 等待三至六位真实玩家",
+      "珊瑚 加入房间",
+      "琥珀 加入房间",
+      "深海航行开始 · 身份仅本人可见"
+    ]
+  },
+  "complete": {
+    "room": "V9RV7Q",
+    "revision": 17,
+    "host": "f5926a00",
+    "self": "83ffa98f",
+    "role": "crew",
+    "alive": true,
+    "phase": "ended",
+    "winner": "船员",
+    "players": [
+      {
+        "id": "f5926a00",
+        "name": "青蓝",
+        "alive": true,
+        "station": "meeting"
+      },
+      {
+        "id": "235a5576",
+        "name": "珊瑚",
+        "alive": true,
+        "station": "garden"
+      },
+      {
+        "id": "83ffa98f",
+        "name": "琥珀",
+        "alive": true,
+        "station": "garden"
+      }
+    ],
+    "tasks": [
+      "engine",
+      "comms",
+      "garden"
+    ],
+    "patterns": {
+      "engine": [
+        2,
+        1,
+        3
+      ],
+      "comms": [
+        1,
+        3,
+        2
+      ],
+      "garden": [
+        3,
+        2,
+        1
+      ]
+    },
+    "progress": 6,
+    "goal": 6,
+    "sabotage": false,
+    "deadline": 0,
+    "meeting_seconds": 0,
+    "voted": false,
+    "votes_count": 0,
+    "log": [
+      "房间已创建 · 等待三至六位真实玩家",
+      "珊瑚 加入房间",
+      "琥珀 加入房间",
+      "深海航行开始 · 身份仅本人可见",
+      "珊瑚 在工位操作了设备",
+      "珊瑚 在工位操作了设备",
+      "珊瑚 在工位操作了设备",
+      "琥珀 在工位操作了设备",
+      "琥珀 在工位操作了设备",
+      "琥珀 在工位操作了设备",
+      "全部航行任务完成 · 船员获胜"
+    ]
+  }
+}

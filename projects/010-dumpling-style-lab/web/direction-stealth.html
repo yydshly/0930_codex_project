@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>月影档案 · 环境潜行方向 — WORLD & PLAY</title>
+  <meta name="description" content="潜入月下宅邸，借阴影、关闭灯光或投石引开守卫，取得档案并从西门撤离。原创二维环境潜行试玩，三条真实可完成的方案与独立保存。">
+  <link rel="stylesheet" href="directions.css?v=1"><link rel="stylesheet" href="direction-stealth.css?v=1">
+<link rel="stylesheet" href="research-entry.css?v=20261006"></head>
+<body class="stealth-page">
+<a class="skip" href="#play">跳到试玩</a>
+<header class="header"><a class="brand" href="index.html">WORLD & PLAY <span>游戏方向探索 / 第七个原创样例</span></a><nav aria-label="主导航"><a class="research-archive-link" href="index.html#site-hub">探索首页 ↗</a><a class="research-archive-link" href="research.html">探索沉淀 ↗</a><a href="directions.html#directions">方向地图</a><a href="directions.html#play">铜谷防线</a><a href="direction-park.html#play">风湾乐园</a><a href="direction-coop.html#play">雾岭同行</a><a href="direction-shift.html?demo=1#play">夜航值守</a><a href="direction-freight.html?demo=1#play">湾岸货运</a><a href="direction-dungeon.html?demo=1#play">深岩堡垒</a><a href="references.html">参考汇总</a><a href="direction-space.html?demo=1#play">星潮航路 ↗</a><a href="direction-survival.html?demo=1#play">雨后余生 ↗</a><a href="direction-vehicle.html?demo=1#play">岚谷试车场 ↗</a><a href="direction-deck.html?demo=1#play">雾海牌航 ↗</a><a href="direction-wildlife.html?demo=1#play">芦湾观鸟 ↗</a><a href="direction-investigation.html?demo=1#play">夜港来信 ↗</a><a href="direction-landscape.html?demo=1#play">溪丘拼境 ↗</a><a href="direction-language.html?demo=1#play">灯市译语 ↗</a></nav></header>
+<main>
+  <section class="intro stealth-intro"><div class="intro-title"><p class="eyebrow">MOONSHADOW ARCHIVE / ENVIRONMENTAL STEALTH</p><h1>让夜色，<br>成为你的另一条路。</h1><p>一份档案。一座宅邸。三种离开的办法。</p></div><div class="intro-copy"><span class="intro-number">VII</span><p>先读懂光与声音，<br>再决定如何穿过守卫的视线。</p><span class="tag">环境潜行 · 多解路线 · 原创二维试玩</span></div></section>
+  <section class="play-section" id="play" aria-labelledby="m-title">
+    <div class="play-heading"><div><p class="eyebrow">ORIGINAL DIRECTION SAMPLE / 07</p><h2 id="m-title">月影档案 <span>Moonshadow Archive</span></h2><p>月下宅邸 · 材质脚步声 · 灯光遮蔽 · 守卫调查与搜索</p></div><div class="play-actions"><button id="m-demo" class="primary">观看所选方案</button><button id="m-manual">开始亲自潜入</button></div></div>
+    <div class="solution-strip" aria-label="选择下次示范与潜入方案">
+      <button data-stealth-plan="shadow" aria-pressed="true"><span class="solution-number">01</span><span><b>借影绕行</b><small>沿暗处与软地面，安静穿过宅邸。</small></span><i aria-hidden="true">↗</i></button>
+      <button data-stealth-plan="blackout" aria-pressed="false"><span class="solution-number">02</span><span><b>切断灯光</b><small>靠近铜制开关，熄灯后越过主通道。</small></span><i aria-hidden="true">↗</i></button>
+      <button data-stealth-plan="lure" aria-pressed="false"><span class="solution-number">03</span><span><b>投石引开</b><small>瞄准落点，让守卫离开巡逻路线。</small></span><i aria-hidden="true">↗</i></button>
+    </div>
+    <div class="game-shell">
+      <div class="field">
+        <div class="hud stealth-hud" aria-label="实时潜行状态">
+          <div class="metric"><span>身体光照 <em id="m-light-state">藏在阴影</em></span><strong id="m-light">0%</strong><div class="meter"><i id="m-light-meter"></i></div></div>
+          <div class="metric"><span>脚步噪声 <em id="m-surface">草地</em></span><strong id="m-noise">0%</strong><div class="meter noise-meter"><i id="m-noise-meter"></i></div></div>
+          <div class="metric"><span>最高怀疑 <em id="m-alert-state">巡逻中</em></span><strong id="m-alert">0%</strong><div class="meter alert-meter"><i id="m-alert-meter"></i></div></div>
+          <div class="mission-progress"><span>任务进度</span><strong id="m-objective">取得档案</strong><small id="m-objective-detail">东侧档案室 → 西门撤离</small></div>
+        </div>
+        <div class="stealth-stage" id="m-stage">
+          <div class="stage-top"><span id="m-mode">观察准备 · 借影绕行</span><div class="stage-readouts" aria-label="全屏实时潜行状态"><span>光照 <b id="m-stage-light">0%</b></span><span>噪声 <b id="m-stage-noise">0%</b></span><span>怀疑 <b id="m-stage-alert">0%</b></span><span class="stage-goal">目标 <b id="m-stage-objective">取得档案</b></span></div><div class="stage-buttons"><button id="m-stage-pause">开始行动</button><button id="m-stage-takeover" hidden>接管现场</button><button id="m-stage-exit" class="fullscreen-exit">退出全屏</button></div></div>
+          <div class="canvas-wrap"><canvas id="stealth-canvas" width="1440" height="960" tabindex="0" aria-label="宅邸潜行地图。点击地面行走；切换投石工具后点击落点投掷。WASD 或方向键移动，C 蹲伏，E 操作附近开关、取得档案或从西门撤离，空格向当前瞄准点投石，P 暂停。"></canvas><div id="m-load-status" class="load-status" role="status">正在装载月下宅邸…</div><div id="m-end-card" class="end-card" hidden><p class="eyebrow" id="m-end-tag">ARCHIVE RECOVERED</p><h3 id="m-end-title">档案已带出。</h3><p id="m-end-detail"></p><div><button id="m-retry" class="primary">重新亲自潜入</button><button id="m-rewatch">观看所选方案</button></div></div></div>
+          <div class="stage-bottom">
+            <div class="stance-controls" aria-label="移动姿态"><button data-stealth-stance="crouch" aria-pressed="true">蹲伏 <small>安静</small></button><button data-stealth-stance="walk" aria-pressed="false">行走 <small>平衡</small></button><button data-stealth-stance="run" aria-pressed="false">奔跑 <small>嘈杂</small></button></div>
+            <div class="tool-controls" aria-label="地图操作工具"><button data-stealth-tool="move" aria-pressed="true">点地面行走</button><button data-stealth-tool="stone" aria-pressed="false">瞄准投石 <span id="m-stones">3</span></button><button id="m-interact">操作附近 · E</button><button id="m-toss">投向瞄准点 · 空格</button></div>
+            <div class="touch-controls" id="m-touch" aria-label="触屏移动"><div class="touch-movement"><button data-stealth-input="left" aria-label="按住向左移动" aria-pressed="false">←</button><button data-stealth-input="up" aria-label="按住向上移动" aria-pressed="false">↑</button><button data-stealth-input="down" aria-label="按住向下移动" aria-pressed="false">↓</button><button data-stealth-input="right" aria-label="按住向右移动" aria-pressed="false">→</button></div><span id="m-stage-hint">WASD 移动 · C 蹲伏 · E 操作 · 空格投石 · P 暂停</span></div>
+          </div>
+        </div>
+        <div class="field-toolbar"><button id="m-pause">开始行动</button><button id="m-takeover" hidden>接管当前现场</button><button id="m-vision" aria-pressed="true">守卫视野</button><button id="m-routes" aria-pressed="false">巡逻路线</button><button id="m-fullscreen">全屏潜入</button><span id="m-time">00:00</span></div>
+        <p class="hint" id="m-hint" role="status" aria-live="polite">先选一种方案观看，再亲自试试：取得东侧档案，回到西门按 E 撤离。</p>
+      </div>
+      <aside class="build-panel" aria-label="潜入目标与守卫情报">
+        <div class="panel-heading"><p class="eyebrow">THE NIGHT'S OBJECTIVE</p><h3>带走档案，安全离开。</h3><p>档案在东侧书房。开关可改变局部灯光，石子会发出可被守卫听见的声音。</p></div>
+        <ol class="objective-list"><li id="m-goal-archive"><span>01</span><div><b>取得密封档案</b><small>靠近东侧书桌，按 E 取得。</small></div></li><li id="m-goal-exit"><span>02</span><div><b>从西门撤离</b><small>带着档案回到起点，按 E 离开。</small></div></li></ol>
+        <div class="guard-heading"><p class="eyebrow">LIVE GUARD INTELLIGENCE</p><label for="m-guard-select">观察守卫</label><select id="m-guard-select" aria-label="选择观察的真实守卫"></select></div>
+        <div id="m-roster" class="guard-list"></div>
+        <div class="guard-detail"><b id="m-guard-name">守卫情报</b><p id="m-guard-detail">选择地图上的守卫，查看现场状态。</p><div class="guard-awareness"><span>怀疑度</span><strong id="m-guard-awareness">0%</strong></div><div class="meter alert-meter"><i id="m-guard-meter"></i></div></div>
+        <div class="field-guide"><b id="m-plan-title">所选方案 · 借影绕行</b><p id="m-plan-description">优先利用阴影和草地。蹲伏会降低暴露与脚步声；地毯比金属地面更安静。</p><span id="m-aim">瞄准点：前方地面</span><small>投石工具：点击地图即投掷。行走工具：点击地图更新瞄准点并寻路。空格始终投向当前瞄准点；E 仅操作身边物件。</small></div>
+        <details class="stealth-log" open><summary>现场记录</summary><p id="m-log"></p></details>
+        <div class="save-row"><span id="m-save-status">独立保存本次潜入</span><button id="m-resume" hidden>继续上次现场</button></div>
+        <p class="keys">接管会保留当前守卫、灯光与进度。<br>触屏方向按钮可同时按住。<br>暂离页面自动暂停；刷新后暂停恢复。</p>
+      </aside>
+    </div>
+  </section>
+  <section class="learning" aria-label="潜行方向理解与参考">
+    <article><span>01 / 环境给出选择</span><h3>先观察，再走另一条路。</h3><p>光照决定你有多显眼，地面与姿态改变声音。守卫被惊动后，会去声源调查，再搜索周围。你可以等待巡逻空隙，也可以主动改变现场。</p></article>
+    <article><span>02 / 三种方案，同一个目标</span><h3>解法来自行动的组合。</h3><p>暗处绕行、操作开关、投石诱导都使用相同的移动和感知规则。示范会实际取得档案、返回西门；接管时，当前的路线和局面交给你。</p></article>
+    <article><span>03 / 参考与本版范围</span><h3>向 The Dark Mod 学习环境潜行。</h3><p>参考其光影、声音与守卫调查的设计思想。本版是原创美术与宅邸布局的二维俯视试玩，用于体验环境潜行和多种解法；并非其三维关卡复刻。</p><a href="https://www.thedarkmod.com/main/" target="_blank" rel="noopener noreferrer">The Dark Mod 官方介绍 ↗</a><a href="https://wiki.thedarkmod.com/index.php?title=Basics_of_Stealth_Gaming" target="_blank" rel="noopener noreferrer">官方 Wiki · 潜行基础 ↗</a><a href="references.html#source">开源游戏参考汇总 →</a></article>
+  </section>
+  <section class="stealth-compare"><p class="eyebrow">TEN DIFFERENT REASONS TO PLAY</p><h2>从经营与协作、读懂一座宅邸，到选择自己的星际生活。</h2><p>十个原创方向样例分别保存。已有样例与形态探索继续保留。</p><div><a href="directions.html#play">铜谷防线 · 系统建造 →</a><a href="direction-park.html#play">风湾乐园 · 创造观赏 →</a><a href="direction-coop.html#play">雾岭同行 · 并肩闯关 →</a><a href="direction-shift.html?demo=1#play">夜航值守 · 职业协作 →</a><a href="direction-freight.html?demo=1#play">湾岸货运 · 网络经营 →</a><a href="direction-dungeon.html?demo=1#play">深岩堡垒 · 经营与附身 →</a><a href="direction-space.html?demo=1#play">星潮航路 · 太空自由职业 →</a><a href="direction-survival.html?demo=1#play">雨后余生 · 环境生存 →</a><a href="directions.html#directions">方向地图 →</a><a href="forms.html">形态对比 →</a><a href="direction-vehicle.html?demo=1#play">岚谷试车场 · 车辆物理 →</a></div></section>
+</main>
+<footer><span>010 / WORLD & PLAY · 月影档案 · 原创环境潜行样例</span><a href="references.html">参考汇总 →</a></footer>
+<script type="module" src="direction-stealth.js?v=1"></script>
+</body></html>

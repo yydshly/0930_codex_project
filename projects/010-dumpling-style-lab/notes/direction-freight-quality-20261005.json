@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-05",
+  "sample": "湾岸货运 / Coastline Freight",
+  "purpose": "第五个原创方向：从局部调度扩展到地区运输网络，观察道路、线路、车辆、加工与接驳之间的关系。",
+  "reference": {"url": "https://www.openttd.org/about", "read": "2026-10-05", "facts": "官方介绍运输模拟、车辆寻路、道路、站点、桥梁与车辆任务等功能。", "inference": "本项目选取网络经营、原料加工链和接驳物流进行原创短样例探索。没有复制上游源码或美术。"},
+  "implemented": [
+    "六座固定站点，三类货物：原木、建材、粮食。",
+    "道路、桥梁与拆除工具；指定河岸桥址；站点前场和车辆所在路段保留。",
+    "线路选择出发站、到达站及货物，购车、增派、暂停发车；在途车辆继续完成本次运输。",
+    "车辆实际装货、寻路行驶、计时卸货与空车返回；同向车辆等待前车。",
+    "木厂每两份真实原木加工一份建材；中央货站储存再供接驳线路装货。",
+    "45 到 58 秒南桥检修，车辆重新寻路或等待；运输窗口结束时给出实际订单报告。",
+    "完整现成网络、缺路修复、从空白路网自行规划三种开局。",
+    "按钮、地图点选、连续拖动铺路和键盘操作；独立暂停恢复与路线查看。"
+  ],
+  "visual_review": {"method": "真实模型与生产 Canvas2D 经 Skia 渲染，1440 × 900，非浏览器截图。", "frames": ["01-network-ready.png", "02-cargo-in-motion.png", "03-transfer-depot.png", "04-south-bridge-closed.png", "05-region-connected.png", "06-repair-a-link.png"], "directory": "assets/directions/freight-qa/", "art": "内置 ImageGen 制作原创地图、透明站点、载货与空车图集；道路、桥梁与规划标记由运行状态绘制。", "adjustments": ["道路各描边层整批绘制，去掉分段管道外观。", "去掉示范路网中的冗余道路和相邻平行路段，突出主要运输路径。", "库存从站点前场车道移出，集市标签避开经过的建材线路。", "匹配载货与空车的车身颜色、方向及外观；载货图集实际东/西顺序在渲染中修正。", "按道路调整车辆大小及双向车道偏移，增加真实跟车等待间距，车顶载量改为悬停显示，避免站名遮挡。"], "limits": "地图美术是背景材质，通行使用明确地块与道路图。站点固定，画面是二维，当前不模拟完整交通碰撞与地区长期发展。"},
+  "evidence": {"rules": "notes/direction-freight-rules-20261005.json", "callbacks": "notes/direction-freight-controller-20261005.json", "frames": "notes/direction-freight-frames-20261005.json", "package": "notes/direction-freight-package-20261005.json", "generation": "assets/directions/freight-generation-20261005.json"},
+  "browser_acceptance": {"status": "pending", "attempted": true, "reason": "第一次 trusted Node process exited unexpectedly；重试后 Windows sandbox helper_unknown_error: setup refresh had errors。", "pending": ["浏览器 CSS 与窄屏布局", "真实触摸和指针", "全屏", "浏览器刷新后的实际保存恢复"]},
+  "preservation": {"baseline": "notes/freight-preservation-before-20261005.json", "protected_prior_files": 2570, "save_key": "world-play-direction-freight-v1", "original_forms": 107, "original_entrances": 116, "new_direction_samples": 5},
+  "scope": "原创公路货运短样例，真实订单与局内预算；没有 OpenTTD 移植、在线多人、铁路/水运/航空与长期城市发展。尚未经过真人情绪与继续意愿验证。",
+  "next_directions": ["星际船长与自由职业", "环境潜行与多种解法", "地下城管理与角色附身"]
+}

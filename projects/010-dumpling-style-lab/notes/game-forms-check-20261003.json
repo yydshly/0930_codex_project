@@ -1,0 +1,93 @@
+{
+  "at": "2026-10-03T13:02:23.205Z",
+  "checks": [
+    "Real sustained fire hits and destroys the first sentry",
+    "Real jump leaves and lands on the catwalk",
+    "Scrolling movement obtains the actual spread pickup and checkpoint",
+    "Run-and-gun movement, weapon and checkpoint survive reload",
+    "Actual input defeats the exit guardian and completes the side-scrolling sample",
+    "Comparison frames are real games; focusing the other side pauses the previous game",
+    "All 36 presentation types load their corresponding existing or new game",
+    "Comparison and both child games fit a 390px mobile viewport",
+    "QA did not write normal user saves"
+  ],
+  "errors": [],
+  "missing": [],
+  "result": {
+    "x": 3261.897999999992,
+    "y": 467,
+    "vy": 0,
+    "hp": 6,
+    "facing": 1,
+    "elapsed": 14.387100000035815,
+    "checkpoint": 1230,
+    "weapon": "spread",
+    "pickups": [
+      "power",
+      "shield"
+    ],
+    "enemies": [
+      {
+        "id": "sentry-1",
+        "kind": "turret",
+        "x": 560,
+        "y": 467,
+        "hp": 0,
+        "max": 4,
+        "timer": 0.8241999999761596
+      },
+      {
+        "id": "patrol-1",
+        "kind": "drone",
+        "x": 820,
+        "y": 366,
+        "hp": 3,
+        "max": 3,
+        "timer": 1.5834000000000006
+      },
+      {
+        "id": "sentry-2",
+        "kind": "turret",
+        "x": 1500,
+        "y": 467,
+        "hp": 0,
+        "max": 4,
+        "timer": 1.6665999999999999
+      },
+      {
+        "id": "patrol-2",
+        "kind": "drone",
+        "x": 1805,
+        "y": 340,
+        "hp": 3,
+        "max": 3,
+        "timer": 1.0001000000000013
+      },
+      {
+        "id": "sentry-3",
+        "kind": "turret",
+        "x": 2410,
+        "y": 467,
+        "hp": 0,
+        "max": 4,
+        "timer": 1.6000000000000003
+      },
+      {
+        "id": "guardian",
+        "kind": "boss",
+        "x": 2960,
+        "y": 467,
+        "hp": 0,
+        "max": 24,
+        "timer": 0.06670000000000156
+      }
+    ],
+    "shots": 80,
+    "hits": 36,
+    "kills": 4,
+    "retries": 0,
+    "won": true,
+    "phase": "active",
+    "shield": 1
+  }
+}

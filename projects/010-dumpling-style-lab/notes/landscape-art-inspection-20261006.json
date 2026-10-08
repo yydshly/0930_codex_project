@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "assets": [
+    {
+      "key": "atlas",
+      "file": "web/assets/directions/landscape/terrain-atlas.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "sha256": "c8632d2aa690b93b01ca33b0751b57d9b056461b42530872946e01fdefc27b0c",
+      "source_copy_identical": true
+    },
+    {
+      "key": "backdrop",
+      "file": "web/assets/directions/landscape/backdrop.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "sha256": "8fb440bc8c19e06e85a594824352e4ed8f015d663883bc2acafb4290f36dc6a2",
+      "source_copy_identical": true
+    }
+  ],
+  "frames": {
+    "meadow": [
+      128,
+      0,
+      512,
+      512
+    ],
+    "forest": [
+      896,
+      0,
+      512,
+      512
+    ],
+    "village": [
+      128,
+      512,
+      512,
+      512
+    ],
+    "water": [
+      896,
+      512,
+      512,
+      512
+    ]
+  },
+  "method": "Actual original bitmap dimensions, mode and hashes read; visually inspected original four terrain cells and calm backdrop. Runtime centered-square atlas crops retain proportions; authored edge paths derive from engine data."
+}

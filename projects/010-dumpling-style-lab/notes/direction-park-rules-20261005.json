@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checks": [
+    "all six demo facilities have true road routes from the gate",
+    "ready and paused simulation preserve state exactly",
+    "guests walk roads and enter actual queues or facilities",
+    "isolated attractions cannot serve visitors until the missing road is built",
+    "a connected extra road is not enough if the facility entrance itself is missing",
+    "ordinary demo day finishes with real service, revenue and normal departures",
+    "an empty park has no fabricated ride counts, revenue or happy reviews",
+    "crowded single attraction yields actual waits or abandonment",
+    "build constraints protect footprints, access, gate and spending",
+    "facility demolition releases queued/riding guests without ghost references",
+    "mid-day restoration resumes the same services, income and departures",
+    "a second day keeps layout and budget while resetting daily visitors and feedback",
+    "restoration rejects malformed layouts and broken guest/service references",
+    "a park built through ordinary placement from empty ground can operate"
+  ],
+  "method": "Production park simulation and ordinary placement, BFS, preferences, queues, services, daily accounting and restore. No browser claim."
+}

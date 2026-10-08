@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-03T04:35:21.148Z",
+  "method": "isolated browser, actual UI and keyboard input; read-only gameplay state",
+  "checks": [
+    "All 12 inn styles preserve the full occupied-room state; four new backgrounds, activity sprites and furniture actually drawn",
+    "Actual keyboard movement uses both generated walk frames",
+    "Per-game remembered style and favorite persist; new styles correctly limited to the inn",
+    "Gallery preview controls select the same art; unsupported options hidden/disabled on other worlds",
+    "All four new styles fit 390px mobile without horizontal overflow",
+    "Isolated QA did not write normal user saves or preferences",
+    "All 1516 existing visual assets have identical hashes"
+  ],
+  "errors": [],
+  "missing": []
+}

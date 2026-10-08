@@ -1,0 +1,245 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-03T13:05:21.990Z",
+  "checks": [
+    "Real 3D workshop loads authored models, stone texture and cannon-es rigid gravity; incomplete construction cannot start the car or win",
+    "Actual canvas pointer selects an authored bridge mesh; finite-force constraint lifts the rigid body against gravity",
+    "Visible tilt action changes a physical body quaternion through the constraint, with no placement snap",
+    "Incorrectly oriented bridge actually falls into the gap and contacts the lower floor; it cannot satisfy the support sensors or auto-win",
+    "Eight actual move buttons and six rotation buttons orient the bridge across the gap; released rigid bridge settles by gravity on two actual platform contacts",
+    "Actual pointer relocation followed by release makes the five-kilogram weight contact the plate; the real gate collider rises after stable physical contact",
+    "Pause and reload restore each rigid body position, quaternion, linear and angular velocity, and construction progress",
+    "Actual test button drives the rigid car across the nonfixed bridge and through the raised collider; only physically reaching the far platform completes the workshop",
+    "Replay restores the starting physical arrangement and keeps the completion record",
+    "Saving while grasped restores the grip target and finite-force constraint safely; the restored object remains held and can release normally",
+    "390-pixel mobile view stays within the viewport; real touch buttons grasp and rotate the physical bridge",
+    "QA storage remains isolated from normal saves; no browser errors or missing assets"
+  ],
+  "result": {
+    "version": 1,
+    "elapsed": 27.144425000005917,
+    "score": 2073,
+    "won": true,
+    "phase": "won",
+    "held": null,
+    "hand": null,
+    "bodies": {
+      "bridge": {
+        "position": [
+          0.0021164297448301958,
+          0.8899972696312449,
+          -0.002532067016241087
+        ],
+        "quaternion": [
+          -1.1802151788559286e-7,
+          0.0004691376097540083,
+          5.867637620606158e-8,
+          0.9999998899549368
+        ],
+        "velocity": [
+          4.2578627225728845e-11,
+          1.8041124150158794e-15,
+          -3.6327832426537464e-10
+        ],
+        "angularVelocity": [
+          -3.8970412731879286e-15,
+          1.0980574037063822e-10,
+          2.725518770198874e-16
+        ],
+        "sleepState": 0
+      },
+      "weight": {
+        "position": [
+          3.250000325662976,
+          1.4299965228927376,
+          -1.7499998180014829
+        ],
+        "quaternion": [
+          -0.05423421791618401,
+          -0.0542342539199587,
+          0.7050238645850255,
+          0.7050238617765792
+        ],
+        "velocity": [
+          -3.07354802194039e-9,
+          6.314393452555578e-15,
+          7.729032611476628e-9
+        ],
+        "angularVelocity": [
+          -1.1931520673547284e-15,
+          -6.245014658154934e-9,
+          4.019973898638941e-15
+        ],
+        "sleepState": 0
+      },
+      "cart": {
+        "position": [
+          5.2182229161435805,
+          1.0593127426617788,
+          0.00003269748548478703
+        ],
+        "quaternion": [
+          -0.001294377226035814,
+          0.0012428381818977334,
+          0.8282786276605919,
+          0.5603135683717976
+        ],
+        "velocity": [
+          1.1802732861029364,
+          -0.08174999999998925,
+          -0.000004516052560207687
+        ],
+        "angularVelocity": [
+          -0.00001733147826104748,
+          0.0027099824294880225,
+          -4.542426270719667
+        ],
+        "sleepState": 0
+      }
+    },
+    "stable": 2,
+    "bridge": true,
+    "pressure": true,
+    "gate": 1.0000000000000004,
+    "grabs": 2,
+    "drops": 2,
+    "rotations": 6,
+    "tests": 1,
+    "replays": 2,
+    "contacts": [
+      [
+        "left",
+        "bridge"
+      ],
+      [
+        "left",
+        "bridge"
+      ],
+      [
+        "left",
+        "bridge"
+      ],
+      [
+        "left",
+        "bridge"
+      ],
+      [
+        "right",
+        "bridge"
+      ],
+      [
+        "right",
+        "bridge"
+      ],
+      [
+        "right",
+        "bridge"
+      ],
+      [
+        "right",
+        "bridge"
+      ],
+      [
+        "plate",
+        "weight"
+      ],
+      [
+        "plate",
+        "weight"
+      ],
+      [
+        "plate",
+        "weight"
+      ],
+      [
+        "plate",
+        "weight"
+      ]
+    ],
+    "lastMessage": "通行检验完成：桥板承担了车的重量，配重保持闸门开启。",
+    "physicsTime": 9.795125000005953,
+    "physicsStep": 1176,
+    "rules": {
+      "gravity": -9.81,
+      "step": 0.008333333333333333,
+      "bridge": [
+        4.6,
+        0.18,
+        1.05
+      ],
+      "weight": [
+        0.9,
+        0.9,
+        0.9
+      ],
+      "platformTop": 0.8,
+      "gap": 2.4,
+      "plate": {
+        "x": 3.25,
+        "y": 0.89,
+        "z": -1.75,
+        "size": 1.3
+      },
+      "stableSeconds": 1.2,
+      "gripMaxForce": 500
+    },
+    "objects": [
+      {
+        "id": "bridge",
+        "size": [
+          4.6,
+          0.18,
+          1.05
+        ],
+        "mass": 6,
+        "screen": {
+          "x": 548.9890190834329,
+          "y": 302.8319731821569,
+          "visible": true
+        }
+      },
+      {
+        "id": "weight",
+        "size": [
+          0.9,
+          0.9,
+          0.9
+        ],
+        "mass": 5,
+        "screen": {
+          "x": 689.5579255527443,
+          "y": 300.33920446646647,
+          "visible": true
+        }
+      }
+    ],
+    "plateScreen": {
+      "x": 687.6026669619052,
+      "y": 317.5983702145404,
+      "visible": true
+    },
+    "handScreen": null,
+    "projection": {
+      "bridgeTarget": {
+        "x": 548.4892504900519,
+        "y": 264.03162924285937,
+        "visible": true
+      },
+      "plateTarget": {
+        "x": 692.0688172659625,
+        "y": 278.1752747793445,
+        "visible": true
+      }
+    }
+  },
+  "screenshots": [
+    "assets/game-forms/systems-qa/balance-playable.png",
+    "assets/game-forms/systems-qa/mobile-balance.png"
+  ],
+  "limitations": [
+    "One original workshop, two manipulation objects, finite-force lock grip and a rigid sphere collision proxy under the visual inspection cart.",
+    "Fixed overhead three-dimensional camera; no character controller or long physics campaign."
+  ],
+  "errors": [],
+  "missing": []
+}

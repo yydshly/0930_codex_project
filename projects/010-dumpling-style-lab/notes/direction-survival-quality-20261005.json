@@ -1,0 +1,491 @@
+{
+  "date": "2026-10-05",
+  "status": "original_sample_review_passed_with_explicit_scope",
+  "passed": true,
+  "sample": "雨后余生 / After the Rain",
+  "scope": "Ninth original local playable direction: four painted original ImageGen bitmaps rendered in a top-down Canvas2D survival scene. A finite 21 by 15 map connects continuous collision-aware movement, fixed supplies, water collection, resource-accounted camp construction, three-second boiling, radio repair/signal, weather/body effects and dawn completion. The local world advances only while running and saved progress restores paused. Manual completion remains playable through later local weather cycles; the ordinary demo auto-pauses upon dawn completion. The actual rule, controller, real-browser and final resource-delivery evidence passes within its recorded scope. No offline simulation, server world, endless/procedural map, combat, three-dimensional presentation, upstream game port or human emotional/commercial product acceptance is claimed.",
+  "checks": [
+    {
+      "name": "Prior web resources retained unchanged",
+      "passed": true,
+      "observed": "SHA256 check found no changed or missing files among 2,610 protected web resources. Only the ten authorized old navigation HTML pages are excluded from protection.",
+      "evidence": "notes/survival-preservation-before-20261005.json"
+    },
+    {
+      "name": "Current original and reference counts remain separate",
+      "passed": true,
+      "observed": "Ten old headers link once to the new entry; direction map has nine featured originals and ten reference cards. Card 07 retains Cataclysm: DDA official reference, card 09 remains reference-only. Original collection still reports 107 forms and 116 entrances."
+    },
+    {
+      "name": "Historical README suffix retained",
+      "passed": true,
+      "observed": "The pre-existing 76,635-byte README suffix retains SHA256 ab8f64cc8029df60ed411651125fad92405875ec464aecf19ab4e91617923554. Only the ninth-direction summary is prepended."
+    },
+    {
+      "name": "Eight prior production rule and controller reports retained",
+      "passed": true,
+      "observed": "All sixteen prior rule/controller reports retain 282 passed recorded checks; new rules, callbacks, browser and delivery remain pending."
+    },
+    {
+      "name": "Real survival rules, resources and complete journeys",
+      "passed": true,
+      "observed": "44 production-engine assertions pass on the collision map, finite resources, proximity-only actions, exact material/fuel accounting, three-second boiling, body/weather effects, ordinary manual/demo completion and late-cycle return. Paused valid saves restore exact depletion/routes/camp, while forged supply, location, craft, fuel, completion and action-ledger states are rejected.",
+      "evidence": "notes/direction-survival-rules-20261005.json"
+    },
+    {
+      "name": "Actual production controller callbacks",
+      "passed": true,
+      "observed": "30 actual exported production-controller checks pass with the real engine and HTML selectors. Manual/demo/takeover, exact material/fuel accounting, multi-pointer ownership, native focus rules, visibility pause, independent paused save restoration, invalid-save rejection, loading/render retry, whole-stage alignment, post-completion demo auto-pause/save and movement-input takeover are covered. Physical hardware behavior remains separate.",
+      "evidence": "notes/direction-survival-controller-20261005.json"
+    },
+    {
+      "name": "Original bitmap generation and retained source provenance",
+      "passed": true,
+      "observed": "Four intended PNGs exist with full prompts and existing ImageGen source paths. Valley is RGB 1536x1024; ground RGB 1774x887; props RGBA 1448x1086; actors RGBA 1774x887.",
+      "evidence": "assets/directions/survival-generation-20261005.json"
+    },
+    {
+      "name": "Actual desktop manual browser journey and paused restore",
+      "passed": true,
+      "observed": "Ordinary UI takeover walked to water, radio and camp. Native E collected water, repaired/sent the signal; camp buttons built shelter/fire/purifier, added two real wood fuel loads, boiled, drank and ate. Wood/cloth/scrap changed from 9/4/3 to 2/1/1. Dawn completion was observed at 123 seconds; actual refresh retained the built camp, 73 seconds of fuel and exact item balances paused.",
+      "evidence": "notes/direction-survival-browser-20261005.json"
+    },
+    {
+      "name": "Actual Canvas2D rendering and final responsive captures visually reviewed",
+      "passed": true,
+      "observed": "Five accepted actual-browser JPEGs retain original terrain/props/actors, exhausted supplies, constructed shelter/fire/purifier, radio state and body/weather HUD. Native fullscreen shows the complete fitted world; final 390x844 override shows the current camp and compact result with an internally scrolling terminal. Capture pixels were validated independently of CSS viewport: desktop1425x990, nativefullscreen1722x1034 and mobileoverride375x812. Diagnostic pre-fix captures are excluded.",
+      "evidence": "notes/direction-survival-browser-20261005.json"
+    },
+    {
+      "name": "Ordinary full demo and scoped browser interaction/layout acceptance",
+      "passed": true,
+      "observed": "12 recorded browser checks pass. Final ordinary demo reaches actual100-second dawn and auto-pauses. Native fullscreen takeover preserves the camp, stage feed consumes wood10 to9 and adds45seconds of fuel, then native Space pauses at101seconds with fuel89. Destination selection synchronizes and native exit works. On390x844, stage height750 stays within46.7..796.7, canvas equals wrapper248.67px, controls scroll internally without page shift, basic targets reach44px, compact result height63.33px leaves camp visible, and final warn/error log is empty. Physical phone/multitouch and controller recovery fixtures are outside browser assertions.",
+      "evidence": "notes/direction-survival-browser-20261005.json"
+    },
+    {
+      "name": "Final source/build/HTTP delivery and provenance",
+      "passed": true,
+      "observed": "819 package assertions pass. All20 actual resources match source, public build and live HTTP bytes; 2,610 protected old files match their pre-edit SHA256. Four PNGs retain complete ImageGen prompts/source paths. Eight prior directions retain282 checks;44 new rules and30 actual callbacks bring the total to356. Ten old headers link once to survival and all eight earlier entrances appear once in the new comparison.",
+      "evidence": "notes/direction-survival-package-20261005.json"
+    }
+  ],
+  "evidence": {
+    "baseline": "notes/survival-preservation-before-20261005.json",
+    "generation": "assets/directions/survival-generation-20261005.json",
+    "rules": "notes/direction-survival-rules-20261005.json",
+    "controller": "notes/direction-survival-controller-20261005.json",
+    "browser": "notes/direction-survival-browser-20261005.json",
+    "package": "notes/direction-survival-package-20261005.json",
+    "prior_direction_checks_passed": 282,
+    "rules_passed": 44,
+    "site_tests_passed": 21,
+    "built_demos": 19,
+    "callbacks_passed": 30,
+    "total_direction_checks_passed": 356,
+    "package_checks_passed": 819,
+    "source_build_http_resources_matched": 20,
+    "protected_prior_files": 2610,
+    "browser_assertions_passed": 12,
+    "accepted_browser_screenshots": 5
+  },
+  "preservation": {
+    "baseline_protected_files": 2610,
+    "authorized_navigation_pages": 10,
+    "original_forms": 107,
+    "original_entrances": 116,
+    "new_original_direction_samples": 9,
+    "reference_directions": 10,
+    "readme_historical_suffix_sha256": "ab8f64cc8029df60ed411651125fad92405875ec464aecf19ab4e91617923554",
+    "readme_historical_suffix_bytes": 76635,
+    "save_key": "world-play-direction-survival-v1"
+  },
+  "remaining": [
+    "Responsive390x844 override is not a physical phone test.",
+    "Physical multitouch, device rotation, sustained performance and broad device compatibility not verified.",
+    "Long key holds, pointer cancellation, loading/rendering failures and corrupt save rejection are covered by controller adapters and engine assertions; no physical hardware recovery claim.",
+    "Emotional appeal, willingness to continue and commercial product readiness need human playtesting."
+  ],
+  "rendering_scope": {
+    "scene": "Painted original bitmap terrain, props and actors rendered through top-down Canvas2D.",
+    "excluded": [
+      "Three-dimensional presentation",
+      "Offline or server persistence",
+      "Endless/procedural worlds",
+      "Combat",
+      "Upstream code or art port"
+    ]
+  },
+  "browser_acceptance": {
+    "date": "2026-10-05",
+    "status": "passed_scoped_browser_acceptance",
+    "passed": true,
+    "method": "Actual Codex In-app Browser UI actions with ordinary clock, movement, resources and native keys; DOM evaluation only for visible text, selections, styles and rectangles. No browser hidden-state inspection, storage injection, resource grants or time changes. Screenshots are captured viewport pixels; CSS viewport and capture dimensions are recorded separately.",
+    "url": "http://127.0.0.1:8962/direction-survival.html?demo=1#play",
+    "count": 12,
+    "checks": [
+      {
+        "name": "desktop final stage positioning and saved loot",
+        "passed": true,
+        "observed": {
+          "buttonFont": "13px",
+          "captionFont": "11px",
+          "cloth": "5",
+          "engine": "canvas2d-original-bitmap",
+          "mode": "完整生存旅程 · 已暂停 · ×1",
+          "overflow": false,
+          "scrap": "5",
+          "stage": {
+            "bottom": 964.71875,
+            "top": 34.71875
+          },
+          "viewport": {
+            "height": 1000,
+            "width": 1440
+          },
+          "wood": "9"
+        }
+      },
+      {
+        "name": "ordinary takeover and water collection",
+        "passed": true,
+        "observed": {
+          "cloth": "5",
+          "dirty": "1",
+          "location": "山谷 / 17.0, 7.0",
+          "log": "00:00 · 林间营地尚无补给。先找倒木、旧屋与货车，搭棚生火，再净水并修复电台。\n00:02 · 西侧倒木：找到木材9。\n00:05 · 旧林间屋：找到布料5、食物3。\n00:08 · 遗弃货车：找到废金属5、食物1。\n00:09 · 接到一份浑水；需在燃烧的营火旁用滤水器烧净。\n00:25 · 天气变化：绵雨 · 潮湿。",
+          "mode": "亲自探索 · ×1",
+          "scrap": "5",
+          "wood": "9"
+        }
+      },
+      {
+        "name": "native E radio repair and send",
+        "passed": true,
+        "observed": {
+          "cloth": "4",
+          "location": "山谷 / 14.0, 4.0",
+          "scrap": "3",
+          "signal": "求救已发送",
+          "weather": "风暴 · 低温"
+        }
+      },
+      {
+        "name": "manual takeover crafting and dawn completion",
+        "passed": true,
+        "observed": "Actual UI consumed wood9→2 cloth4→1 scrap3→1; dirty1 boiled over3seconds; drink and eat succeeded; repaired radio and camp completion at123seconds; paused afterward."
+      },
+      {
+        "name": "completed world refresh",
+        "passed": true,
+        "observed": "Reload kept camp built, fuel73seconds, signal sent, actual remaining inventory2/1/1/0/0/3, health100 and achievement123seconds; restored paused."
+      },
+      {
+        "name": "ordinary full demonstration",
+        "passed": true,
+        "observed": "Started through demo button from empty camp, speedx2; ordinary route scavenged both wood sources, cabin, wreck, pump and radio; built camp, boiled, drank, ate, tended fire; visible report recorded100second dawn completion. Paused afterward."
+      },
+      {
+        "name": "390x844 expanded terminal layout",
+        "passed": true,
+        "observed": "Stage750px stays46.7..796.7, canvas and viewport both248.67px, controls330px; no horizontal overflow; actual controls scroll622.67 reveals44px final reset without moving document; basic movement/action targets44px or larger.",
+        "measurements": {
+          "canvas": {
+            "bottom": 466.7083435058594,
+            "height": 248.6666717529297,
+            "left": 12.666666984558104,
+            "right": 362.0000104904175,
+            "top": 218.0416717529297,
+            "width": 349.3333435058594,
+            "x": 12.666666984558104,
+            "y": 218.0416717529297
+          },
+          "controls": {
+            "bottom": 796.7083435058594,
+            "height": 330,
+            "left": 12.666666984558104,
+            "right": 362.0000104904175,
+            "top": 466.7083435058594,
+            "width": 349.3333435058594,
+            "x": 12.666666984558104,
+            "y": 466.7083435058594
+          },
+          "overflow": false,
+          "scrollHeight": 952,
+          "stage": {
+            "bottom": 796.7083358764648,
+            "height": 750,
+            "left": 12.666666984558104,
+            "right": 362.0000104904175,
+            "top": 46.70833587646485,
+            "width": 349.3333435058594,
+            "x": 12.666666984558104,
+            "y": 46.70833587646485
+          },
+          "view": {
+            "bottom": 466.7083435058594,
+            "height": 248.6666717529297,
+            "left": 12.666666984558104,
+            "right": 362.0000104904175,
+            "top": 218.0416717529297,
+            "width": 349.3333435058594,
+            "x": 12.666666984558104,
+            "y": 218.0416717529297
+          },
+          "viewport": {
+            "height": 844,
+            "width": 390
+          }
+        }
+      },
+      {
+        "name": "final full demo auto pauses",
+        "passed": true,
+        "observed": "New ordinary demonstration completed at100seconds, visible01:40 and paused×2, fueled camp45seconds, healthybody100/37.2/91/94/0. Nativefullscreen actual1722x1034 with canvas==wrapper682.94 and full map visible.",
+        "measurements": {
+          "canvas": {
+            "bottom": 802.2708358764648,
+            "height": 682.9375,
+            "left": 0,
+            "right": 1722,
+            "top": 119.33333587646484,
+            "width": 1722,
+            "x": 0,
+            "y": 119.33333587646484
+          },
+          "mode": "完整生存旅程 · 已暂停 · ×2",
+          "stage": {
+            "bottom": 1034,
+            "height": 1034,
+            "left": 0,
+            "right": 1722,
+            "top": 0,
+            "width": 1722,
+            "x": 0,
+            "y": 0
+          },
+          "time": "01:40",
+          "view": {
+            "bottom": 802.2708358764648,
+            "height": 682.9375,
+            "left": 0,
+            "right": 1722,
+            "top": 119.33333587646484,
+            "width": 1722,
+            "x": 0,
+            "y": 119.33333587646484
+          },
+          "viewport": {
+            "height": 1034,
+            "width": 1722
+          }
+        }
+      },
+      {
+        "name": "native fullscreen stage terminal action and Space",
+        "passed": true,
+        "observed": "At completion100sec takeover retained camp/body; actual stage terminal feed consumed wood10→9 and added45sec fuel; native Space on canvas paused manualworld101sec fuel89; expanded canvas fillswrapper withoutclipping.",
+        "measurements": {
+          "bag": "木材 9 · 布料 1 · 废金属 1 · 浑水 0 · 净水 0 · 食物 3",
+          "canvas": {
+            "bottom": 496.3229293823242,
+            "height": 376.9895935058594,
+            "left": 0,
+            "right": 1722,
+            "top": 119.33333587646484,
+            "width": 1722,
+            "x": 0,
+            "y": 119.33333587646484
+          },
+          "controls": {
+            "bottom": 1034.0000610351562,
+            "height": 537.6771240234375,
+            "left": 0,
+            "right": 1722,
+            "top": 496.3229370117187,
+            "width": 1722,
+            "x": 0,
+            "y": 496.3229370117187
+          },
+          "mode": "亲自探索 · 已暂停 · ×2",
+          "time": "01:41",
+          "view": {
+            "bottom": 496.3229293823242,
+            "height": 376.9895935058594,
+            "left": 0,
+            "right": 1722,
+            "top": 119.33333587646484,
+            "width": 1722,
+            "x": 0,
+            "y": 119.33333587646484
+          },
+          "viewport": {
+            "height": 1034,
+            "width": 1722
+          }
+        }
+      },
+      {
+        "name": "native fullscreen selection and exit",
+        "passed": true,
+        "observed": "Changed stage destination to river pump; sidebar selected option synchronized; exited native fullscreen through actualexitbutton."
+      },
+      {
+        "name": "final compact narrow result",
+        "passed": true,
+        "observed": "390x844 stage staysfullyvisible; completionbanner63.33px leaves actualcampvisible; canvas==wrapper248.67px, nohorizontaloverflow.",
+        "measurements": {
+          "canvas": {
+            "bottom": 466.7083435058594,
+            "height": 248.6666717529297,
+            "left": 12.666666984558104,
+            "right": 362.0000104904175,
+            "top": 218.0416717529297,
+            "width": 349.3333435058594,
+            "x": 12.666666984558104,
+            "y": 218.0416717529297
+          },
+          "controls": {
+            "bottom": 796.7083435058594,
+            "height": 330,
+            "left": 12.666666984558104,
+            "right": 362.0000104904175,
+            "top": 466.7083435058594,
+            "width": 349.3333435058594,
+            "x": 12.666666984558104,
+            "y": 466.7083435058594
+          },
+          "overflow": false,
+          "result": {
+            "bottom": 456.7083358764648,
+            "height": 63.33333587646485,
+            "left": 22.666667938232425,
+            "right": 352.0000114440918,
+            "top": 393.375,
+            "width": 329.3333435058594,
+            "x": 22.666667938232425,
+            "y": 393.375
+          },
+          "stage": {
+            "bottom": 796.7083358764648,
+            "height": 750,
+            "left": 12.666666984558104,
+            "right": 362.0000104904175,
+            "top": 46.70833587646485,
+            "width": 349.3333435058594,
+            "x": 12.666666984558104,
+            "y": 46.70833587646485
+          },
+          "view": {
+            "bottom": 466.7083435058594,
+            "height": 248.6666717529297,
+            "left": 12.666666984558104,
+            "right": 362.0000104904175,
+            "top": 218.0416717529297,
+            "width": 349.3333435058594,
+            "x": 12.666666984558104,
+            "y": 218.0416717529297
+          },
+          "viewport": {
+            "height": 844,
+            "width": 390
+          }
+        }
+      },
+      {
+        "name": "console warnings and errors",
+        "passed": true,
+        "observed": []
+      }
+    ],
+    "screenshots": [
+      {
+        "file": "notes/survival-browser-20261005/01b-desktop-exploration.jpg",
+        "viewport": {
+          "height": 1000,
+          "width": 1440
+        },
+        "capture_scope": "1440x1000 desktop override; final stage positioning and real production renderer",
+        "capture_size": [
+          1425,
+          990
+        ],
+        "format": "JPEG"
+      },
+      {
+        "file": "notes/survival-browser-20261005/02-desktop-camp-restored.jpg",
+        "scope": "CSS viewport override1440x1000; viewport screenshot; paused built camp and restored completion",
+        "capture_size": [
+          1425,
+          990
+        ],
+        "format": "JPEG"
+      },
+      {
+        "file": "notes/survival-browser-20261005/03-desktop-night.jpg",
+        "scope": "CSS viewport override1440x1000; actual night phase92seconds, fueled camp and complete demonstration in progress",
+        "capture_size": [
+          1425,
+          990
+        ],
+        "format": "JPEG"
+      },
+      {
+        "file": "notes/survival-browser-20261005/06-fullscreen-fixed.jpg",
+        "scope": "Native fullscreen, viewport override reset; scene sizing fixed; actual demo completion",
+        "capture_size": [
+          1722,
+          1034
+        ],
+        "format": "JPEG"
+      },
+      {
+        "file": "notes/survival-browser-20261005/07-mobile-final.jpg",
+        "scope": "CSSviewportoverride390x844, compact completion banner, expanded internallyscrollableterminal, fullHUD andmapvisible",
+        "capture_size": [
+          375,
+          812
+        ],
+        "format": "JPEG"
+      }
+    ],
+    "diagnostics": [
+      {
+        "file": "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/notes/survival-browser-20261005/01-desktop-exploration.jpg",
+        "viewport": {
+          "height": 1000,
+          "width": 1440
+        },
+        "capture_scope": "1440x1000 responsive desktop override, actual bitmap production rendering and paused depleted-world restore"
+      },
+      {
+        "file": "04-native-fullscreen.jpg",
+        "reason": "Pre-fix intrinsic canvas sizing clipped lower map; replaced by later verification."
+      },
+      {
+        "file": "05-mobile-expanded.jpg",
+        "reason": "Pre-compact completion text obscured narrow map; replaced by07-mobile-final."
+      }
+    ],
+    "limitations": [
+      "Responsive390x844 override is not a physical phone test.",
+      "Physical multitouch, device rotation, sustained performance and broad device compatibility not verified.",
+      "Long key holds, pointer cancellation, loading/rendering failures and corrupt save rejection are covered by controller adapters and engine assertions; no physical hardware recovery claim.",
+      "Emotional appeal, willingness to continue and commercial product readiness need human playtesting."
+    ],
+    "scope": "Original local realtime finite survival sample rendered through top-down Canvas2D. Paused/offline world does not advance. Existing upstream game is a learning reference; no upstream code/art integration.",
+    "fixes_verified": [
+      "Renderer-ready #play stage realignment",
+      "Demo completion automatic pause/save and manual takeover afterward",
+      "Canvas absolute fill prevents intrinsic dimension feedback and clipping",
+      "Details toggle alignment and internal controls scrolling",
+      "Compact narrow result banner leaves camp visible"
+    ]
+  },
+  "fixes_from_review": [
+    "Renderer-ready #play stage realignment",
+    "Demo completion automatic pause/save and manual takeover afterward",
+    "Canvas absolute fill prevents intrinsic dimension feedback and clipping",
+    "Details toggle alignment and internal controls scrolling",
+    "Compact narrow result banner leaves camp visible"
+  ]
+}

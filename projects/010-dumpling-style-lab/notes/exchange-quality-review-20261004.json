@@ -1,0 +1,108 @@
+{
+  "production_visual_review": true,
+  "browser_acceptance_complete": false,
+  "review_method": "Viewed all nine production frames; after fixes rechecked final pack initial/progress, auction initial/progress/complete and relay progress. Visual layout and ordinary gameplay states, not browser CSS screenshots.",
+  "frames": [
+    {
+      "id": "satchel",
+      "phase": "initial",
+      "file": "assets/game-forms/exchange-qa/satchel-initial.png",
+      "sha256": "324a4f4e5246d0e4d6c1c54a7ce4e54636d38666a1b3f3eeeea92b97c0fde559",
+      "method": "Actual production Canvas2D through Skia",
+      "browser_screenshot": false,
+      "review_observation": "皮革台面、透明装备、真实占格和邻接效果清晰；过程显示实际攻击 10、格挡 6、补给 15，检验在第四轮按耐久结算。"
+    },
+    {
+      "id": "satchel",
+      "phase": "progress",
+      "file": "assets/game-forms/exchange-qa/satchel-progress.png",
+      "sha256": "4db766a183059057c7393d79f2a91263ea7df48c47cf70bbac80bc291c759df3",
+      "method": "Actual production Canvas2D through Skia",
+      "browser_screenshot": false,
+      "review_observation": "皮革台面、透明装备、真实占格和邻接效果清晰；过程显示实际攻击 10、格挡 6、补给 15，检验在第四轮按耐久结算。"
+    },
+    {
+      "id": "satchel",
+      "phase": "complete",
+      "file": "assets/game-forms/exchange-qa/satchel-complete.png",
+      "sha256": "663f8d7e4c95ae97498c37805dbe402298e92b1872596570d6c7b6dcd8a030c6",
+      "method": "Actual production Canvas2D through Skia",
+      "browser_screenshot": false,
+      "review_observation": "皮革台面、透明装备、真实占格和邻接效果清晰；过程显示实际攻击 10、格挡 6、补给 15，检验在第四轮按耐久结算。"
+    },
+    {
+      "id": "gavel",
+      "phase": "initial",
+      "file": "assets/game-forms/exchange-qa/gavel-initial.png",
+      "sha256": "4542762161e2d968acb4bb83f7a625a4c92dee426394d200d5d1ca5bc5b74380",
+      "method": "Actual production Canvas2D through Skia",
+      "browser_screenshot": false,
+      "review_observation": "三件透明拍品与拍卖厅匹配；当前价格、鉴定区间、竞价领先和预算可辨。最终价格恢复为实际 46，倒计时增加深色底提升对比度。"
+    },
+    {
+      "id": "gavel",
+      "phase": "progress",
+      "file": "assets/game-forms/exchange-qa/gavel-progress.png",
+      "sha256": "b9b461bb32c1611a634c4ed6d5cd4458fbeba5d711dc2d42ae03f311f4d62dee",
+      "method": "Actual production Canvas2D through Skia",
+      "browser_screenshot": false,
+      "review_observation": "三件透明拍品与拍卖厅匹配；当前价格、鉴定区间、竞价领先和预算可辨。最终价格恢复为实际 46，倒计时增加深色底提升对比度。"
+    },
+    {
+      "id": "gavel",
+      "phase": "complete",
+      "file": "assets/game-forms/exchange-qa/gavel-complete.png",
+      "sha256": "0d6f5bc0e379cb83da11fa78592f3203cb4060d463a874406449d7d32501606f",
+      "method": "Actual production Canvas2D through Skia",
+      "browser_screenshot": false,
+      "review_observation": "三件透明拍品与拍卖厅匹配；当前价格、鉴定区间、竞价领先和预算可辨。最终价格恢复为实际 46，倒计时增加深色底提升对比度。"
+    },
+    {
+      "id": "postway",
+      "phase": "initial",
+      "file": "assets/game-forms/exchange-qa/postway-initial.png",
+      "sha256": "4701540e052444879fc0f2c06f3065f6ca4a88783bd750f6e6b82726db6762ce",
+      "method": "Actual production Canvas2D through Skia",
+      "browser_screenshot": false,
+      "review_observation": "实际路线、岩脊、驿站、接力码、角色和完成状态可辨；过程来自独立身份通过 HTTP 逐格前进，最终两端都读取同一完成记录。"
+    },
+    {
+      "id": "postway",
+      "phase": "progress",
+      "file": "assets/game-forms/exchange-qa/postway-progress.png",
+      "sha256": "f7d56f82cecca2abe97d0a92e04ca2432ca9c66cd0fdcb60ac1c587ea5f061ca",
+      "method": "Actual production Canvas2D through Skia",
+      "browser_screenshot": false,
+      "review_observation": "实际路线、岩脊、驿站、接力码、角色和完成状态可辨；过程来自独立身份通过 HTTP 逐格前进，最终两端都读取同一完成记录。"
+    },
+    {
+      "id": "postway",
+      "phase": "complete",
+      "file": "assets/game-forms/exchange-qa/postway-complete.png",
+      "sha256": "5797dab8511c9fdd8daeb806c6ad28a99c5644813227041202fcf49f7d4d57f9",
+      "method": "Actual production Canvas2D through Skia",
+      "browser_screenshot": false,
+      "review_observation": "实际路线、岩脊、驿站、接力码、角色和完成状态可辨；过程来自独立身份通过 HTTP 逐格前进，最终两端都读取同一完成记录。"
+    }
+  ],
+  "fixes": [
+    "Retained item alpha and coherent original backgrounds.",
+    "Fixed item anchor when clicking an occupied lower cell.",
+    "Preserved actual final auction price and bidder; improved timer contrast.",
+    "First-time carrier entry claims before resuming; unknown publish result can be recovered by owner key.",
+    "Closed SQLite connections and verified restart persistence.",
+    "Separated author and carrier storage slots; original game keys retained.",
+    "Invalid early completion replies rejected; late replies queued while paused and ignored after disposal."
+  ],
+  "remaining": [
+    "Real browser CSS and responsive layout",
+    "Physical touch, keyboard focus and fullscreen",
+    "Actual browser refresh storage and two-tab role navigation"
+  ],
+  "scope_limits": [
+    "Fixed six-item loadout and one encounter",
+    "Three authored lots against two local rule characters",
+    "Loopback asynchronous relay, no public cross-device backend"
+  ],
+  "checks": 80
+}

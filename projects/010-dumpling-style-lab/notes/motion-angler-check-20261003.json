@@ -1,0 +1,331 @@
+{
+  "passed": true,
+  "at": "2026-10-03T13:50:23.412Z",
+  "checks": [
+    "Actual perspective fishing scene loads eight existing authored GLB assets; intro does not advance the fishing state",
+    "Real controls choose throw direction and force; clicking the projected water target updates a real world-plane landing point",
+    "Real premature lift during waiting fails before a fish has fully bitten",
+    "Float visibly twitches before dipping underwater; ignoring the finite strike window causes a real missed bite",
+    "Continuous real reeling raises tension, bends the rod and snaps the line before the fish reaches shore",
+    "Holding actual slack control too long lowers tension and produces a lost hook",
+    "Actual pause/save/reload freezes and restores the current hooked fish, float position, line distance, tension, rod bend and strike history",
+    "Read-only tension solver uses only real J/C holds to bring the short-burst trout physically within 0.8m of shore",
+    "Second fish has visibly stronger sustained pull; real reeling/slacking lands the bass and only two actual catches complete the short task",
+    "Completed fishing ledger survives reload, and replay clears only the current fishing task while retaining completed gallery history",
+    "390px mobile renders full scene above a separate control row; actual touch casting, timely lift and held reeling work, and pause clears/disables held inputs",
+    "Only QA saves are written; zero page errors or missing GLB/assets"
+  ],
+  "results": {
+    "first": {
+      "state": {
+        "version": 1,
+        "phase": "caught",
+        "won": false,
+        "elapsed": 43.646200000011106,
+        "phaseTime": 0.02494999999999982,
+        "angle": 0.32,
+        "power": 0.2,
+        "fishIndex": 0,
+        "distance": 0.8,
+        "tension": 0.5117278441892232,
+        "highTime": 0,
+        "lowTime": 0,
+        "fightTime": 7.010149999994063,
+        "castCount": 5,
+        "misses": 2,
+        "breaks": 1,
+        "escapes": 1,
+        "catches": [
+          {
+            "id": "trout",
+            "name": "银鳍溪鳟",
+            "length": 1.25,
+            "distance": 0.8,
+            "tension": 0.5117278441892232,
+            "fightSeconds": 7.010149999994063
+          }
+        ],
+        "score": 649,
+        "reelPulse": 0,
+        "slackPulse": 0,
+        "replays": 0,
+        "message": "银鳍溪鳟已抵岸。下一尾岩鲈有不同的拉力节奏。",
+        "rules": {
+          "castSeconds": 0.85,
+          "nibbleSeconds": 0.65,
+          "strikeSeconds": 1.1,
+          "breakTension": 0.97,
+          "breakSeconds": 0.28,
+          "slackTension": 0.08,
+          "slackSeconds": 0.65,
+          "landDistance": 0.8,
+          "reelSpeed": 2.25
+        },
+        "species": [
+          {
+            "id": "trout",
+            "name": "银鳍溪鳟",
+            "description": "轻快短冲，拉扯之间会放缓。",
+            "color": 11916748,
+            "length": 1.25
+          },
+          {
+            "id": "bass",
+            "name": "暮湾岩鲈",
+            "description": "强力长冲；先松线卸力，再趁间歇收线。",
+            "color": 9415842,
+            "length": 1.6
+          }
+        ],
+        "pull": 0.36117979864550437,
+        "castDistance": 7.3,
+        "castTarget": {
+          "x": 2.29633589249766,
+          "y": 0.07,
+          "z": 2.370581447998183
+        },
+        "floatPosition": {
+          "x": -0.4,
+          "y": 0.22,
+          "z": 9
+        },
+        "fishPosition": {
+          "x": -0.4,
+          "y": 0.48,
+          "z": 9.2
+        },
+        "rodTip": {
+          "x": -0.3298034075687176,
+          "y": 2.55,
+          "z": 8.1
+        },
+        "targetScreen": {
+          "x": 508.66414965956267,
+          "y": 412.10003558070775,
+          "visible": true
+        },
+        "held": [],
+        "active": true,
+        "reusedModels": 8
+      },
+      "steps": 52,
+      "maxPull": 0.6195510438315178,
+      "minPull": 0.22,
+      "trace": [
+        {
+          "at": 1.5853999999940402,
+          "mode": "j",
+          "distance": 7.249919221426949,
+          "tension": 0.2514919825507535,
+          "pull": 0.22
+        },
+        {
+          "at": 3.3186999999940343,
+          "mode": "c",
+          "distance": 3.8771781556330107,
+          "tension": 0.7722171024320544,
+          "pull": 0.446569829763942
+        },
+        {
+          "at": 4.318599999994038,
+          "mode": "j",
+          "distance": 4.071411379360026,
+          "tension": 0.3460007582284859,
+          "pull": 0.2277654903281887
+        },
+        {
+          "at": 5.818599999994055,
+          "mode": "c",
+          "distance": 1.2621070089945352,
+          "tension": 0.7251034592225637,
+          "pull": 0.22
+        },
+        {
+          "at": 6.601899999994063,
+          "mode": "j",
+          "distance": 1.4136055315592284,
+          "tension": 0.34842396734533315,
+          "pull": 0.6187055326180702
+        }
+      ]
+    },
+    "second": {
+      "state": {
+        "version": 1,
+        "phase": "won",
+        "won": true,
+        "elapsed": 64.09550000001038,
+        "phaseTime": 0,
+        "angle": 0.32,
+        "power": 0.2,
+        "fishIndex": 1,
+        "distance": 0.8,
+        "tension": 0.5001584000000044,
+        "highTime": 0,
+        "lowTime": 0,
+        "fightTime": 13.399400000000071,
+        "castCount": 6,
+        "misses": 2,
+        "breaks": 1,
+        "escapes": 1,
+        "catches": [
+          {
+            "id": "trout",
+            "name": "银鳍溪鳟",
+            "length": 1.25,
+            "distance": 0.8,
+            "tension": 0.5117278441892232,
+            "fightSeconds": 7.010149999994063
+          },
+          {
+            "id": "bass",
+            "name": "暮湾岩鲈",
+            "length": 1.6,
+            "distance": 0.8,
+            "tension": 0.5001584000000044,
+            "fightSeconds": 13.399400000000071
+          }
+        ],
+        "score": 1299,
+        "reelPulse": 0,
+        "slackPulse": 0,
+        "replays": 0,
+        "message": "两尾暮湾鱼都已拉近到岸边。浮标与鱼线终于安静下来。",
+        "rules": {
+          "castSeconds": 0.85,
+          "nibbleSeconds": 0.65,
+          "strikeSeconds": 1.1,
+          "breakTension": 0.97,
+          "breakSeconds": 0.28,
+          "slackTension": 0.08,
+          "slackSeconds": 0.65,
+          "landDistance": 0.8,
+          "reelSpeed": 2.25
+        },
+        "species": [
+          {
+            "id": "trout",
+            "name": "银鳍溪鳟",
+            "description": "轻快短冲，拉扯之间会放缓。",
+            "color": 11916748,
+            "length": 1.25
+          },
+          {
+            "id": "bass",
+            "name": "暮湾岩鲈",
+            "description": "强力长冲；先松线卸力，再趁间歇收线。",
+            "color": 9415842,
+            "length": 1.6
+          }
+        ],
+        "pull": 0.30800000000000005,
+        "castDistance": 7.3,
+        "castTarget": {
+          "x": 2.29633589249766,
+          "y": 0.07,
+          "z": 2.370581447998183
+        },
+        "floatPosition": {
+          "x": -0.4,
+          "y": 0.22,
+          "z": 9
+        },
+        "fishPosition": {
+          "x": -0.4,
+          "y": 0.48,
+          "z": 9.2
+        },
+        "rodTip": {
+          "x": -0.3298034075687176,
+          "y": 2.55,
+          "z": 8.1
+        },
+        "targetScreen": {
+          "x": 508.66414965956267,
+          "y": 412.10003558070775,
+          "visible": true
+        },
+        "held": [],
+        "active": true,
+        "reusedModels": 8
+      },
+      "steps": 108,
+      "maxPull": 0.8400000000000001,
+      "minPull": 0.30800000000000005,
+      "trace": [
+        {
+          "at": 1.6664999999999988,
+          "mode": "c",
+          "distance": 7.648631800000007,
+          "tension": 0.8666299999999985,
+          "pull": 0.8400000000000001
+        },
+        {
+          "at": 2.766399999999997,
+          "mode": "j",
+          "distance": 8.039371552000004,
+          "tension": 0.3398755999999993,
+          "pull": 0.30800000000000005
+        },
+        {
+          "at": 4.066399999999997,
+          "mode": "c",
+          "distance": 5.705247699638956,
+          "tension": 0.7371696000000012,
+          "pull": 0.30800000000000005
+        },
+        {
+          "at": 4.733099999999993,
+          "mode": "j",
+          "distance": 5.798411579738956,
+          "tension": 0.34885120000000247,
+          "pull": 0.30800000000000005
+        },
+        {
+          "at": 5.533099999999995,
+          "mode": "c",
+          "distance": 4.447336178353534,
+          "tension": 0.736037999999999,
+          "pull": 0.8400000000000001
+        },
+        {
+          "at": 7.583000000000001,
+          "mode": "j",
+          "distance": 5.0933970787927825,
+          "tension": 0.37001880000000276,
+          "pull": 0.30800000000000005
+        },
+        {
+          "at": 8.699600000000007,
+          "mode": "c",
+          "distance": 3.0598780732321114,
+          "tension": 0.7260576000000016,
+          "pull": 0.30800000000000005
+        },
+        {
+          "at": 9.399500000000023,
+          "mode": "j",
+          "distance": 3.126865579233708,
+          "tension": 0.3326928000000021,
+          "pull": 0.30800000000000005
+        },
+        {
+          "at": 10.532800000000032,
+          "mode": "c",
+          "distance": 1.1407768520729642,
+          "tension": 0.7334872000000011,
+          "pull": 0.8400000000000001
+        },
+        {
+          "at": 12.716100000000058,
+          "mode": "j",
+          "distance": 1.9762802714685594,
+          "tension": 0.3240000000000044,
+          "pull": 0.30800000000000005
+        }
+      ]
+    }
+  },
+  "errors": [],
+  "missing": []
+}

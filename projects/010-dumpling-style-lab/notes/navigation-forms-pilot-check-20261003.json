@@ -1,0 +1,91 @@
+{
+  "passed": true,
+  "checks": [
+    "Real steering changes heading, pitch and three-dimensional position",
+    "Actual input switches between chase and first-person cockpit views",
+    "pilot actual pause/save/reload retains progress",
+    "Real checkpoint relocation preserves completed rings",
+    "Actual yaw, pitch and speed controls pass all eight three-dimensional gate planes",
+    "28 forms, four pending directions and real 3D comparison focus pause",
+    "390px layout fits and direct mobile scene input collects a real inventory item"
+  ],
+  "results": {
+    "pilot": {
+      "version": 1,
+      "x": 0.1398560331612741,
+      "y": 34.64852950687957,
+      "z": -2050.113166985822,
+      "yaw": 0.018965999999999338,
+      "pitch": -0.1217759999999949,
+      "roll": 0.3373163253858153,
+      "speed": 38.6962963740889,
+      "boost": 16.767999999999837,
+      "integrity": 100,
+      "gate": 8,
+      "camera": "chase",
+      "elapsed": 50.66250000001098,
+      "collisions": 0,
+      "distance": 2341.930416989241,
+      "score": 5000,
+      "won": true,
+      "phase": "flight",
+      "checkpoint": {
+        "x": 0,
+        "y": 35,
+        "z": -2085,
+        "gate": 8
+      },
+      "respawns": 1,
+      "gates": [
+        {
+          "x": 0,
+          "y": 25,
+          "z": -180
+        },
+        {
+          "x": 65,
+          "y": 40,
+          "z": -430
+        },
+        {
+          "x": -35,
+          "y": 25,
+          "z": -700
+        },
+        {
+          "x": 80,
+          "y": 60,
+          "z": -980
+        },
+        {
+          "x": -70,
+          "y": 32,
+          "z": -1240
+        },
+        {
+          "x": 15,
+          "y": 80,
+          "z": -1500
+        },
+        {
+          "x": -15,
+          "y": 50,
+          "z": -1760
+        },
+        {
+          "x": 0,
+          "y": 35,
+          "z": -2050
+        }
+      ],
+      "forward": [
+        0.018824417953815686,
+        -0.12147524570263299,
+        -0.9924159440326346
+      ],
+      "nextScreen": null
+    }
+  },
+  "errors": [],
+  "missing": []
+}

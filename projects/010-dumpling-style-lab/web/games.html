@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#182b22"><title>小世界的新故事 · 九种可玩方向</title><link rel="stylesheet" href="games.css?v=3"><link rel="stylesheet" href="moving-day.css?v=8"><link rel="stylesheet" href="worlds-product.css?v=11"><link rel="stylesheet" href="./art-directions.css?v=4">
+<link rel="stylesheet" href="spatial-worlds.css?v=1">
+<link rel="stylesheet" href="play-inspection.css?v=2">
+<link rel="stylesheet" href="research-entry.css?v=20261006"></head>
+<body data-game="detective">
+<a class="skip" href="#game-view">跳到游戏</a>
+<header class="game-header"><a class="research-archive-link" href="index.html#site-hub">探索首页 ↗</a><a class="research-archive-link" href="research.html">探索沉淀 ↗</a><a href="./#prototypes" class="back-link">← 原作与研究</a><div class="wordmark">LITTLE WORLDS <span>可亲历的故事</span></div><a class="edition" style="color:inherit;text-decoration:underline;text-underline-offset:4px" href="showcase.html">新增十二种玩法 ↗</a><div id="moving-top-controls" class="moving-top-controls"></div></header>
+<main class="game-shell">
+<div class="moving-heading"><div><h1>搬家日<span>MOVING DAY</span></h1><p>把生活，稳稳送到。</p></div><span>三份委托 · 从晴天到入夜</span></div>
+<div class="game-intro"><p class="eyebrow">从一个小世界，出发去不同的地方</p><h1>选择一段想亲历的故事</h1><p>调查秘密、走入江湖、观察生态、守住温室、穿过梦境，或挑战屋顶路线。原有三款也可以继续。</p></div>
+<div class="game-tabs" role="tablist" aria-label="选择九种游戏方向"></div>
+<noscript><p>请开启 JavaScript，加载九个游戏方向及互动场景。</p></noscript>
+<div class="game-layout">
+ <section class="game-view" id="game-view" role="tabpanel" aria-labelledby="tab-detective" tabindex="0">
+  <div class="game-toolbar"><div><span id="game-chapter" class="chapter">第一章</span><b id="game-title">旧城失物局</b></div><div class="view-tools"><button id="game-pause" aria-pressed="false" title="暂停游戏">暂停</button><button id="game-full" title="放大游戏画面">大画面</button></div></div>
+  <div class="game-stage" id="game-stage"><div id="game-mount"></div><div class="pause-screen" id="pause-screen" hidden><b>已暂停</b><span>点击“继续”回到游戏</span></div><div class="load-screen" id="game-loading">世界正在打开……</div></div>
+  <div class="game-message" id="game-message" role="status" aria-live="polite">场景与当前目标正在加载。</div>
+  <div class="game-actions" id="game-actions" aria-label="当前可做的事"></div>
+  <div class="touch-controls" id="touch-controls"><div class="dpad" aria-label="方向控制"><button data-game-key="ArrowUp" aria-label="向上">↑</button><button data-game-key="ArrowLeft" aria-label="向左">←</button><button data-game-key="ArrowDown" aria-label="向下">↓</button><button data-game-key="ArrowRight" aria-label="向右">→</button></div><div class="touch-action-keys"><button data-game-key="Space">跳跃</button><button data-game-key="KeyE">互动 / 拿放</button><button data-game-key="KeyF">投掷</button></div></div>
+  <p class="control-help" id="game-controls"></p>
+ </section>
+ <aside class="game-notebook"><div class="notebook-heading"><span>当前目标</span><span class="notebook-dot" aria-hidden="true"></span></div><h2 id="game-goal">选择一种方向，进入它的故事。</h2><div class="pocket"><h3>物资、证据与成果</h3><ul id="game-inventory"></ul></div><div class="journal"><h3 id="journal-title">经历与结果</h3><ol id="game-journal"></ol></div><div class="save-box"><span id="save-status" role="status">进度保存在此浏览器</span><div><button id="game-sound" aria-pressed="false">声音：关</button><button id="game-reset">重新开始</button></div></div></aside>
+</div>
+<details class="design-notes"><summary>试玩后再看：九个方向的画风、玩法与体验意图</summary><div class="design-grid" id="direction-reading"></div><p class="prototype-note">九段是独立原创原型，参考原作的设计结构。人物、故事与规则重新设计；技术检查只说明所列行为可用，玩家的情绪和继续意愿需要真人试玩。</p></details>
+<section class="next-worlds"><p class="eyebrow">本轮新增 · 六种不同的体验</p><h2>从画面进入规则与故事</h2><div class="next-grid" id="new-directions"></div><p class="prototype-note">上方九个方向均可进入试玩。本轮六款是可完成的短章或短关卡，玩法范围见试玩后的说明。</p></section>
+</main><footer class="game-footer"><span>010 · Dumpling Style Lab / Playable Stories</span><a href="./#original">参考案例 Dumpling Dell ↗</a></footer>
+<script src="vendor/three-r160.min.js" defer></script><script type="module" src="games.js?v=31"></script><script type="module" src="direction-reading.js?v=3"></script>
+</body></html>

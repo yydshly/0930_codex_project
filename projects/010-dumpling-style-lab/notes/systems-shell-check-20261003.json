@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "at": "2026-10-03T13:07:48.627Z",
+  "checks": [
+    "36 form cards and 36 choices per selector, with zero pending-form cards",
+    "Command RPG × city planning: both child games really start, and focusing/resuming either side pauses the other in both directions",
+    "Real selector controls load physics puzzle × co-op; co-op is explicitly labeled 参与形式 in both comparison metadata and its catalog card",
+    "Physics puzzle × local co-op: both child games really start, and focusing/resuming either side pauses the other in both directions",
+    "Showcase exposes all 45 actual game cards and retains the cooperative entry",
+    "390px comparison stacks its real child game frames without horizontal overflow; co-op touch controls occupy a separate row below the full canvas",
+    "390px command RPG × city planning comparison also loads both children without horizontal overflow",
+    "All four new standalone games load, start and pause inside a 390px screen without horizontal overflow; co-op reserves a separate control row",
+    "Only QA-prefixed saves are used; no normal user progress writes, page errors or missing assets"
+  ],
+  "results": {
+    "mobilePanels": [
+      {
+        "x": 16,
+        "y": -1157.21875,
+        "width": 358,
+        "height": 1076.375,
+        "bottom": -80.84375
+      },
+      {
+        "x": 16,
+        "y": -56.84375,
+        "width": 358,
+        "height": 957.375,
+        "bottom": 900.53125
+      }
+    ],
+    "mobileStandalone": {
+      "party": {
+        "frameWidth": 350,
+        "overflow": false
+      },
+      "district": {
+        "frameWidth": 350,
+        "overflow": false
+      },
+      "balance": {
+        "frameWidth": 350,
+        "overflow": false
+      },
+      "tandem": {
+        "frameWidth": 350,
+        "overflow": false
+      }
+    }
+  },
+  "errors": [],
+  "missing": []
+}

@@ -1,0 +1,2180 @@
+{
+  "passed": true,
+  "method": "Fresh real keyboard, pointer and touchscreen UI runs with read-only state observations, no injected game progress. Per-game source reports retained.",
+  "forms": 40,
+  "entries": 49,
+  "checks": [
+    "Three authored 3D holes load; pre-start action buttons cannot move the ball or add strokes",
+    "Actual canvas targeting and a weak slider shot roll the real ball a short distance, slow by surface resistance, and cannot auto-complete the distant hole",
+    "Pause and reload precisely restore a moving golf ball position, quaternion, linear/angular velocity, direction, strength and stroke count",
+    "Space works while the strength slider retains focus; the restored lateral shot actually strikes an authored boundary and rebounds through sphere–triangle collision",
+    "Hole 1 completes only after the rigid ball falls below the authored cup opening",
+    "Hole 2 completes only after the rigid ball falls below the authored cup opening",
+    "Hole 3 completes only after the rigid ball falls below the authored cup opening, after real uphill travel",
+    "All three distinct holes contribute real strokes, per-hole bests and a final completion record",
+    "Replay restores the first tee and keeps every best score and the completion record",
+    "390-pixel touch controls adjust power and launch a real stroke without horizontal overflow",
+    "QA storage is isolated; no normal saves, missing assets or browser errors",
+    "Six real scheduled trains load with original authored Train Kit models and move on their actual incoming rail centerlines",
+    "Both red entry signals hold real trains at exact independent stop lines, with no motion or premature arrival count",
+    "Actual 3D signal-post click releases the western train, red restores for following trains, and an occupied block physically locks the route switch",
+    "The chosen bay switch produces actual curved outgoing train motion before reaching any station; travel alone is not counted",
+    "Pause freezes distances and time; actual refresh restores exact train positions, fixed route, signals, shared occupancy and timetable",
+    "Real switch-ring click changes the path to the forest station; independent north signal release uses that path and only actual western arrival scores",
+    "Read-only dispatch planning and real switch/signal buttons route all six actual trains to their own two distinct destinations and record completion",
+    "Replay really resets six trains and both red signals while retaining the gallery completion",
+    "Intentionally wrong switch sends the north train along the bay track, and only real arrival at that incorrect station fails the task",
+    "Intentionally simultaneous green signals cause actual train-unit proximity inside the shared track and a physical-distance collision failure",
+    "390 px actual touchscreen selects the projected signal post, the train advances on the selected route, outside controls remain usable and there is no horizontal overflow",
+    "Actual authored assets load without browser errors; QA remains separate from normal save keys",
+    "Actual perspective fishing scene loads eight existing authored GLB assets; intro does not advance the fishing state",
+    "Real controls choose throw direction and force; clicking the projected water target updates a real world-plane landing point",
+    "Real premature lift during waiting fails before a fish has fully bitten",
+    "Float visibly twitches before dipping underwater; ignoring the finite strike window causes a real missed bite",
+    "Continuous real reeling raises tension, bends the rod and snaps the line before the fish reaches shore",
+    "Holding actual slack control too long lowers tension and produces a lost hook",
+    "Actual pause/save/reload freezes and restores the current hooked fish, float position, line distance, tension, rod bend and strike history",
+    "Read-only tension solver uses only real J/C holds to bring the short-burst trout physically within 0.8m of shore",
+    "Second fish has visibly stronger sustained pull; real reeling/slacking lands the bass and only two actual catches complete the short task",
+    "Completed fishing ledger survives reload, and replay clears only the current fishing task while retaining completed gallery history",
+    "390px mobile renders full scene above a separate control row; actual touch casting, timely lift and held reeling work, and pause clears/disables held inputs",
+    "Only QA saves are written; zero page errors or missing GLB/assets",
+    "Illustrated cannon bases and barrels load separately over an editable 281-sample terrain; pre-start sliders cannot change play",
+    "Actual keyboard-adjusted sliders accept space to fire with slider focus; continuous gravity/wind trajectory and pause/reload retain the in-flight shell without double fire",
+    "Both sides actually launch; impact changes ground samples and round wind changes after the opponent resolves",
+    "Read-only ballistic planning and real angle/power keyboard input create actual blast damage to the other cannon",
+    "Repeated actual aimed shots finish the duel with finite opposing armor and recorded gallery completion",
+    "Completed save reloads; this duel replays while preserving the completed gallery record",
+    "Real missed shots permit the opposing AI to exhaust player armor; restart restores the whole terrain and armor",
+    "390px has no overflow; visible touch actions adjust angle and power and launch a real shell",
+    "Only QA-prefixed storage is written; all runtime art loads and no browser error occurs",
+    "40 form cards and 40 choices per selector expose real playable entries with zero pending cards",
+    "Mini golf × train dispatch loads real child games and pauses the other player in both focus directions",
+    "Fishing × artillery loads real child games and pauses the other player in both focus directions",
+    "49 gallery entries include all four new games and all nine original worlds",
+    "Both new comparisons stack at 390px with no parent or child horizontal overflow",
+    "All four standalone games actually start and pause by touch at 390px",
+    "QA remains separate from normal progress and all comparison/standalone assets load without browser errors"
+  ],
+  "results": {
+    "putt": {
+      "version": 1,
+      "course": 2,
+      "angle": -6,
+      "power": 15,
+      "strokes": 3,
+      "total": 8,
+      "won": true,
+      "phase": "won",
+      "best": [
+        2,
+        3,
+        3
+      ],
+      "completed": [
+        0,
+        1,
+        2
+      ],
+      "ball": {
+        "position": [
+          0.010515687453814227,
+          0.39896152256914635,
+          -4.661445696715288
+        ],
+        "quaternion": [
+          -0.2651940352341963,
+          0.35174001876307104,
+          0.10200825734018351,
+          0.8919335167551318
+        ],
+        "velocity": [
+          -0.0772087587401695,
+          -2.137036428718334,
+          -0.45508952984228207
+        ],
+        "angularVelocity": [
+          -7.324709303628012,
+          -0.09120660074233282,
+          1.3337486524245294
+        ],
+        "sleepState": 0
+      },
+      "lastShot": {
+        "position": [
+          0.09437619702440478,
+          0.6599995403294725,
+          -3.936440199750451
+        ],
+        "quaternion": [
+          -0.18331290457734808,
+          -0.2878060775611032,
+          -0.15516923279919548,
+          -0.9270849744909133
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "angularVelocity": [
+          0,
+          0,
+          0
+        ],
+        "sleepState": 2
+      },
+      "elapsed": 59.31800000002314,
+      "stationary": 0,
+      "collisions": 1,
+      "peakHeight": 0.6599995403294726,
+      "replays": 0,
+      "score": 2200,
+      "lastMessage": "三洞完成，共 8 杆。球道中的摩擦、反弹和坡度共同决定了这份成绩。",
+      "rules": {
+        "radius": 0.11,
+        "holeRadius": 0.32,
+        "gravity": -9.81,
+        "maxSpeed": 8.4,
+        "minSpeed": 0.35,
+        "rollingResistance": 0.72,
+        "step": 0.008333333333333333
+      },
+      "courses": [
+        {
+          "name": "向海的直线",
+          "subtitle": "读懂方向与力度",
+          "par": 2,
+          "width": 4.8,
+          "length": 9.6,
+          "start": [
+            0,
+            3.65
+          ],
+          "hole": [
+            0,
+            -2.4
+          ],
+          "height": 0,
+          "obstacles": [],
+          "waypoints": [
+            [
+              0,
+              -2.4
+            ]
+          ]
+        },
+        {
+          "name": "借一道岸壁",
+          "subtitle": "反弹，或绕过短墙",
+          "par": 3,
+          "width": 4.8,
+          "length": 9.6,
+          "start": [
+            -1.4,
+            3.55
+          ],
+          "hole": [
+            0,
+            -2.4
+          ],
+          "height": 0,
+          "obstacles": [
+            {
+              "position": [
+                -1.1,
+                0.2,
+                0.15
+              ],
+              "size": [
+                2.6,
+                0.4,
+                0.36
+              ]
+            }
+          ],
+          "waypoints": [
+            [
+              1.15,
+              1.05
+            ],
+            [
+              1.15,
+              -1.15
+            ],
+            [
+              0,
+              -2.4
+            ]
+          ]
+        },
+        {
+          "name": "海风坡",
+          "subtitle": "上坡要留一些余力",
+          "par": 4,
+          "width": 4.8,
+          "length": 14.4,
+          "start": [
+            -1.2,
+            6.1
+          ],
+          "hole": [
+            0,
+            -4.8
+          ],
+          "height": 0.55,
+          "obstacles": [],
+          "ramp": true,
+          "waypoints": [
+            [
+              0,
+              3.05
+            ],
+            [
+              0,
+              -4.8
+            ]
+          ]
+        }
+      ],
+      "currentCourse": {
+        "name": "海风坡",
+        "subtitle": "上坡要留一些余力",
+        "par": 4,
+        "width": 4.8,
+        "length": 14.4,
+        "start": [
+          -1.2,
+          6.1
+        ],
+        "hole": [
+          0,
+          -4.8
+        ],
+        "height": 0.55,
+        "obstacles": [],
+        "ramp": true,
+        "waypoints": [
+          [
+            0,
+            3.05
+          ],
+          [
+            0,
+            -4.8
+          ]
+        ]
+      },
+      "speed": 0.461592539582549,
+      "ballScreen": {
+        "x": 637.2062750738015,
+        "y": 256.0645730362967,
+        "visible": true
+      },
+      "holeScreen": {
+        "x": 639.2593784079736,
+        "y": 251.09689584145013,
+        "visible": true
+      },
+      "waypointScreens": [
+        {
+          "x": 499.8756126380444,
+          "y": 362.8990656819603,
+          "visible": true
+        },
+        {
+          "x": 639.2593784079736,
+          "y": 251.09689584145013,
+          "visible": true
+        }
+      ],
+      "physicsStep": 2475,
+      "physicsTime": 20.627
+    },
+    "signal": {
+      "won": {
+        "version": 1,
+        "elapsed": 49.30846666666068,
+        "phase": "won",
+        "won": true,
+        "score": 2301,
+        "signals": {
+          "west": false,
+          "north": false
+        },
+        "switch": "forest",
+        "delivered": [
+          "W01",
+          "N02",
+          "W03",
+          "N04",
+          "W05",
+          "N06"
+        ],
+        "failure": null,
+        "trains": [
+          {
+            "id": "W01",
+            "entry": "west",
+            "target": "bay",
+            "kind": "city",
+            "spawn": 0,
+            "status": "arrived",
+            "distance": 17.752535503508987,
+            "route": "bay",
+            "blocked": false
+          },
+          {
+            "id": "N02",
+            "entry": "north",
+            "target": "forest",
+            "kind": "freight",
+            "spawn": 0,
+            "status": "arrived",
+            "distance": 17.690399603919126,
+            "route": "forest",
+            "blocked": false
+          },
+          {
+            "id": "W03",
+            "entry": "west",
+            "target": "forest",
+            "kind": "steam",
+            "spawn": 9,
+            "status": "arrived",
+            "distance": 17.752535503508987,
+            "route": "forest",
+            "blocked": false
+          },
+          {
+            "id": "N04",
+            "entry": "north",
+            "target": "bay",
+            "kind": "city",
+            "spawn": 9,
+            "status": "arrived",
+            "distance": 17.690399603919126,
+            "route": "bay",
+            "blocked": false
+          },
+          {
+            "id": "W05",
+            "entry": "west",
+            "target": "bay",
+            "kind": "freight",
+            "spawn": 18,
+            "status": "arrived",
+            "distance": 17.752535503508987,
+            "route": "bay",
+            "blocked": false
+          },
+          {
+            "id": "N06",
+            "entry": "north",
+            "target": "forest",
+            "kind": "steam",
+            "spawn": 18,
+            "status": "arrived",
+            "distance": 17.690399603919126,
+            "route": "forest",
+            "blocked": false
+          }
+        ],
+        "switchChanges": 3,
+        "signalChanges": 12,
+        "denied": 1,
+        "replays": 0,
+        "active": true,
+        "block": [],
+        "trainPositions": [],
+        "controlsScreen": {
+          "west": {
+            "x": 466.24568092306794,
+            "y": 267.52873691791444,
+            "visible": true
+          },
+          "north": {
+            "x": 520.9909862568735,
+            "y": 243.8530993338169,
+            "visible": true
+          },
+          "switch": {
+            "x": 581.3940265186416,
+            "y": 334.74903412829394,
+            "visible": true
+          }
+        },
+        "stops": {
+          "west": 5.1,
+          "north": 5.037864100410136
+        },
+        "approachLengths": {
+          "west": 9.600000000000003,
+          "north": 9.53786410041014
+        },
+        "stations": {
+          "bay": {
+            "name": "海湾站",
+            "color": 13084254,
+            "z": 2.7
+          },
+          "forest": {
+            "name": "山林站",
+            "color": 6005141,
+            "z": -2.7
+          }
+        },
+        "rules": {
+          "speed": 1.8,
+          "trains": 6,
+          "collisionRadius": 0.7,
+          "carriageOffset": 1.48,
+          "sharedExitX": 4.85
+        },
+        "models": 7
+      },
+      "wrong": {
+        "version": 1,
+        "elapsed": 10.632900000000012,
+        "phase": "failed",
+        "won": false,
+        "score": 0,
+        "signals": {
+          "west": false,
+          "north": true
+        },
+        "switch": "bay",
+        "delivered": [],
+        "failure": {
+          "kind": "wrong-station",
+          "train": "N02",
+          "expected": "forest",
+          "arrived": "bay",
+          "at": 10.632900000000012
+        },
+        "trains": [
+          {
+            "id": "W01",
+            "entry": "west",
+            "target": "bay",
+            "kind": "city",
+            "spawn": 0,
+            "status": "waiting",
+            "distance": 5.1,
+            "route": null,
+            "blocked": true
+          },
+          {
+            "id": "N02",
+            "entry": "north",
+            "target": "forest",
+            "kind": "freight",
+            "spawn": 0,
+            "status": "misrouted",
+            "distance": 17.690399603919126,
+            "route": "bay",
+            "blocked": false
+          },
+          {
+            "id": "W03",
+            "entry": "west",
+            "target": "forest",
+            "kind": "steam",
+            "spawn": 9,
+            "status": "pending",
+            "distance": 0,
+            "route": null,
+            "blocked": false
+          },
+          {
+            "id": "N04",
+            "entry": "north",
+            "target": "bay",
+            "kind": "city",
+            "spawn": 9,
+            "status": "pending",
+            "distance": 0,
+            "route": null,
+            "blocked": false
+          },
+          {
+            "id": "W05",
+            "entry": "west",
+            "target": "bay",
+            "kind": "freight",
+            "spawn": 18,
+            "status": "pending",
+            "distance": 0,
+            "route": null,
+            "blocked": false
+          },
+          {
+            "id": "N06",
+            "entry": "north",
+            "target": "forest",
+            "kind": "steam",
+            "spawn": 18,
+            "status": "pending",
+            "distance": 0,
+            "route": null,
+            "blocked": false
+          }
+        ],
+        "switchChanges": 0,
+        "signalChanges": 1,
+        "denied": 0,
+        "replays": 1,
+        "active": true,
+        "block": [],
+        "trainPositions": [
+          {
+            "id": "W01",
+            "x": -3.5,
+            "y": 0.09,
+            "z": 0,
+            "screen": {
+              "x": 480.22491676944577,
+              "y": 293.94856567783864,
+              "visible": true
+            }
+          },
+          {
+            "id": "N02",
+            "x": 7.700000000000001,
+            "y": 0.09,
+            "z": 2.7000000000000006,
+            "screen": {
+              "x": 692.7744946053582,
+              "y": 442.41184389144615,
+              "visible": true
+            }
+          }
+        ],
+        "controlsScreen": {
+          "west": {
+            "x": 466.24568092306794,
+            "y": 267.52873691791444,
+            "visible": true
+          },
+          "north": {
+            "x": 520.9909862568735,
+            "y": 243.8530993338169,
+            "visible": true
+          },
+          "switch": {
+            "x": 581.3940265186416,
+            "y": 334.74903412829394,
+            "visible": true
+          }
+        },
+        "stops": {
+          "west": 5.1,
+          "north": 5.037864100410136
+        },
+        "approachLengths": {
+          "west": 9.600000000000003,
+          "north": 9.53786410041014
+        },
+        "stations": {
+          "bay": {
+            "name": "海湾站",
+            "color": 13084254,
+            "z": 2.7
+          },
+          "forest": {
+            "name": "山林站",
+            "color": 6005141,
+            "z": -2.7
+          }
+        },
+        "rules": {
+          "speed": 1.8,
+          "trains": 6,
+          "collisionRadius": 0.7,
+          "carriageOffset": 1.48,
+          "sharedExitX": 4.85
+        },
+        "models": 7
+      },
+      "collided": {
+        "version": 1,
+        "elapsed": 5.3664000000000005,
+        "phase": "failed",
+        "won": false,
+        "score": 0,
+        "signals": {
+          "west": true,
+          "north": true
+        },
+        "switch": "bay",
+        "delivered": [],
+        "failure": {
+          "kind": "collision",
+          "trains": [
+            "W01",
+            "N02"
+          ],
+          "separation": 0.6924983992296532,
+          "at": 5.3664000000000005
+        },
+        "trains": [
+          {
+            "id": "W01",
+            "entry": "west",
+            "target": "bay",
+            "kind": "city",
+            "spawn": 0,
+            "status": "running",
+            "distance": 8.669759999999986,
+            "route": "bay",
+            "blocked": false
+          },
+          {
+            "id": "N02",
+            "entry": "north",
+            "target": "forest",
+            "kind": "freight",
+            "spawn": 0,
+            "status": "running",
+            "distance": 6.507744100410129,
+            "route": "bay",
+            "blocked": false
+          },
+          {
+            "id": "W03",
+            "entry": "west",
+            "target": "forest",
+            "kind": "steam",
+            "spawn": 9,
+            "status": "pending",
+            "distance": 0,
+            "route": null,
+            "blocked": false
+          },
+          {
+            "id": "N04",
+            "entry": "north",
+            "target": "bay",
+            "kind": "city",
+            "spawn": 9,
+            "status": "pending",
+            "distance": 0,
+            "route": null,
+            "blocked": false
+          },
+          {
+            "id": "W05",
+            "entry": "west",
+            "target": "bay",
+            "kind": "freight",
+            "spawn": 18,
+            "status": "pending",
+            "distance": 0,
+            "route": null,
+            "blocked": false
+          },
+          {
+            "id": "N06",
+            "entry": "north",
+            "target": "forest",
+            "kind": "steam",
+            "spawn": 18,
+            "status": "pending",
+            "distance": 0,
+            "route": null,
+            "blocked": false
+          }
+        ],
+        "switchChanges": 0,
+        "signalChanges": 2,
+        "denied": 0,
+        "replays": 2,
+        "active": true,
+        "block": [
+          "W01",
+          "N02"
+        ],
+        "trainPositions": [
+          {
+            "id": "W01",
+            "x": 0.06975999999998558,
+            "y": 0.09,
+            "z": 0,
+            "screen": {
+              "x": 550.1834010091081,
+              "y": 323.0069489570539,
+              "visible": true
+            }
+          },
+          {
+            "id": "N02",
+            "x": -1.8789490076441138,
+            "y": 0.09,
+            "z": -0.509770437637293,
+            "screen": {
+              "x": 518.5648035821803,
+              "y": 300.78328302448847,
+              "visible": true
+            }
+          }
+        ],
+        "controlsScreen": {
+          "west": {
+            "x": 466.24568092306794,
+            "y": 267.52873691791444,
+            "visible": true
+          },
+          "north": {
+            "x": 520.9909862568735,
+            "y": 243.8530993338169,
+            "visible": true
+          },
+          "switch": {
+            "x": 581.3940265186416,
+            "y": 334.74903412829394,
+            "visible": true
+          }
+        },
+        "stops": {
+          "west": 5.1,
+          "north": 5.037864100410136
+        },
+        "approachLengths": {
+          "west": 9.600000000000003,
+          "north": 9.53786410041014
+        },
+        "stations": {
+          "bay": {
+            "name": "海湾站",
+            "color": 13084254,
+            "z": 2.7
+          },
+          "forest": {
+            "name": "山林站",
+            "color": 6005141,
+            "z": -2.7
+          }
+        },
+        "rules": {
+          "speed": 1.8,
+          "trains": 6,
+          "collisionRadius": 0.7,
+          "carriageOffset": 1.48,
+          "sharedExitX": 4.85
+        },
+        "models": 7
+      }
+    },
+    "angler": {
+      "first": {
+        "state": {
+          "version": 1,
+          "phase": "caught",
+          "won": false,
+          "elapsed": 43.646200000011106,
+          "phaseTime": 0.02494999999999982,
+          "angle": 0.32,
+          "power": 0.2,
+          "fishIndex": 0,
+          "distance": 0.8,
+          "tension": 0.5117278441892232,
+          "highTime": 0,
+          "lowTime": 0,
+          "fightTime": 7.010149999994063,
+          "castCount": 5,
+          "misses": 2,
+          "breaks": 1,
+          "escapes": 1,
+          "catches": [
+            {
+              "id": "trout",
+              "name": "银鳍溪鳟",
+              "length": 1.25,
+              "distance": 0.8,
+              "tension": 0.5117278441892232,
+              "fightSeconds": 7.010149999994063
+            }
+          ],
+          "score": 649,
+          "reelPulse": 0,
+          "slackPulse": 0,
+          "replays": 0,
+          "message": "银鳍溪鳟已抵岸。下一尾岩鲈有不同的拉力节奏。",
+          "rules": {
+            "castSeconds": 0.85,
+            "nibbleSeconds": 0.65,
+            "strikeSeconds": 1.1,
+            "breakTension": 0.97,
+            "breakSeconds": 0.28,
+            "slackTension": 0.08,
+            "slackSeconds": 0.65,
+            "landDistance": 0.8,
+            "reelSpeed": 2.25
+          },
+          "species": [
+            {
+              "id": "trout",
+              "name": "银鳍溪鳟",
+              "description": "轻快短冲，拉扯之间会放缓。",
+              "color": 11916748,
+              "length": 1.25
+            },
+            {
+              "id": "bass",
+              "name": "暮湾岩鲈",
+              "description": "强力长冲；先松线卸力，再趁间歇收线。",
+              "color": 9415842,
+              "length": 1.6
+            }
+          ],
+          "pull": 0.36117979864550437,
+          "castDistance": 7.3,
+          "castTarget": {
+            "x": 2.29633589249766,
+            "y": 0.07,
+            "z": 2.370581447998183
+          },
+          "floatPosition": {
+            "x": -0.4,
+            "y": 0.22,
+            "z": 9
+          },
+          "fishPosition": {
+            "x": -0.4,
+            "y": 0.48,
+            "z": 9.2
+          },
+          "rodTip": {
+            "x": -0.3298034075687176,
+            "y": 2.55,
+            "z": 8.1
+          },
+          "targetScreen": {
+            "x": 508.66414965956267,
+            "y": 412.10003558070775,
+            "visible": true
+          },
+          "held": [],
+          "active": true,
+          "reusedModels": 8
+        },
+        "steps": 52,
+        "maxPull": 0.6195510438315178,
+        "minPull": 0.22,
+        "trace": [
+          {
+            "at": 1.5853999999940402,
+            "mode": "j",
+            "distance": 7.249919221426949,
+            "tension": 0.2514919825507535,
+            "pull": 0.22
+          },
+          {
+            "at": 3.3186999999940343,
+            "mode": "c",
+            "distance": 3.8771781556330107,
+            "tension": 0.7722171024320544,
+            "pull": 0.446569829763942
+          },
+          {
+            "at": 4.318599999994038,
+            "mode": "j",
+            "distance": 4.071411379360026,
+            "tension": 0.3460007582284859,
+            "pull": 0.2277654903281887
+          },
+          {
+            "at": 5.818599999994055,
+            "mode": "c",
+            "distance": 1.2621070089945352,
+            "tension": 0.7251034592225637,
+            "pull": 0.22
+          },
+          {
+            "at": 6.601899999994063,
+            "mode": "j",
+            "distance": 1.4136055315592284,
+            "tension": 0.34842396734533315,
+            "pull": 0.6187055326180702
+          }
+        ]
+      },
+      "second": {
+        "state": {
+          "version": 1,
+          "phase": "won",
+          "won": true,
+          "elapsed": 64.09550000001038,
+          "phaseTime": 0,
+          "angle": 0.32,
+          "power": 0.2,
+          "fishIndex": 1,
+          "distance": 0.8,
+          "tension": 0.5001584000000044,
+          "highTime": 0,
+          "lowTime": 0,
+          "fightTime": 13.399400000000071,
+          "castCount": 6,
+          "misses": 2,
+          "breaks": 1,
+          "escapes": 1,
+          "catches": [
+            {
+              "id": "trout",
+              "name": "银鳍溪鳟",
+              "length": 1.25,
+              "distance": 0.8,
+              "tension": 0.5117278441892232,
+              "fightSeconds": 7.010149999994063
+            },
+            {
+              "id": "bass",
+              "name": "暮湾岩鲈",
+              "length": 1.6,
+              "distance": 0.8,
+              "tension": 0.5001584000000044,
+              "fightSeconds": 13.399400000000071
+            }
+          ],
+          "score": 1299,
+          "reelPulse": 0,
+          "slackPulse": 0,
+          "replays": 0,
+          "message": "两尾暮湾鱼都已拉近到岸边。浮标与鱼线终于安静下来。",
+          "rules": {
+            "castSeconds": 0.85,
+            "nibbleSeconds": 0.65,
+            "strikeSeconds": 1.1,
+            "breakTension": 0.97,
+            "breakSeconds": 0.28,
+            "slackTension": 0.08,
+            "slackSeconds": 0.65,
+            "landDistance": 0.8,
+            "reelSpeed": 2.25
+          },
+          "species": [
+            {
+              "id": "trout",
+              "name": "银鳍溪鳟",
+              "description": "轻快短冲，拉扯之间会放缓。",
+              "color": 11916748,
+              "length": 1.25
+            },
+            {
+              "id": "bass",
+              "name": "暮湾岩鲈",
+              "description": "强力长冲；先松线卸力，再趁间歇收线。",
+              "color": 9415842,
+              "length": 1.6
+            }
+          ],
+          "pull": 0.30800000000000005,
+          "castDistance": 7.3,
+          "castTarget": {
+            "x": 2.29633589249766,
+            "y": 0.07,
+            "z": 2.370581447998183
+          },
+          "floatPosition": {
+            "x": -0.4,
+            "y": 0.22,
+            "z": 9
+          },
+          "fishPosition": {
+            "x": -0.4,
+            "y": 0.48,
+            "z": 9.2
+          },
+          "rodTip": {
+            "x": -0.3298034075687176,
+            "y": 2.55,
+            "z": 8.1
+          },
+          "targetScreen": {
+            "x": 508.66414965956267,
+            "y": 412.10003558070775,
+            "visible": true
+          },
+          "held": [],
+          "active": true,
+          "reusedModels": 8
+        },
+        "steps": 108,
+        "maxPull": 0.8400000000000001,
+        "minPull": 0.30800000000000005,
+        "trace": [
+          {
+            "at": 1.6664999999999988,
+            "mode": "c",
+            "distance": 7.648631800000007,
+            "tension": 0.8666299999999985,
+            "pull": 0.8400000000000001
+          },
+          {
+            "at": 2.766399999999997,
+            "mode": "j",
+            "distance": 8.039371552000004,
+            "tension": 0.3398755999999993,
+            "pull": 0.30800000000000005
+          },
+          {
+            "at": 4.066399999999997,
+            "mode": "c",
+            "distance": 5.705247699638956,
+            "tension": 0.7371696000000012,
+            "pull": 0.30800000000000005
+          },
+          {
+            "at": 4.733099999999993,
+            "mode": "j",
+            "distance": 5.798411579738956,
+            "tension": 0.34885120000000247,
+            "pull": 0.30800000000000005
+          },
+          {
+            "at": 5.533099999999995,
+            "mode": "c",
+            "distance": 4.447336178353534,
+            "tension": 0.736037999999999,
+            "pull": 0.8400000000000001
+          },
+          {
+            "at": 7.583000000000001,
+            "mode": "j",
+            "distance": 5.0933970787927825,
+            "tension": 0.37001880000000276,
+            "pull": 0.30800000000000005
+          },
+          {
+            "at": 8.699600000000007,
+            "mode": "c",
+            "distance": 3.0598780732321114,
+            "tension": 0.7260576000000016,
+            "pull": 0.30800000000000005
+          },
+          {
+            "at": 9.399500000000023,
+            "mode": "j",
+            "distance": 3.126865579233708,
+            "tension": 0.3326928000000021,
+            "pull": 0.30800000000000005
+          },
+          {
+            "at": 10.532800000000032,
+            "mode": "c",
+            "distance": 1.1407768520729642,
+            "tension": 0.7334872000000011,
+            "pull": 0.8400000000000001
+          },
+          {
+            "at": 12.716100000000058,
+            "mode": "j",
+            "distance": 1.9762802714685594,
+            "tension": 0.3240000000000044,
+            "pull": 0.30800000000000005
+          }
+        ]
+      }
+    },
+    "battery": {
+      "win": {
+        "version": 1,
+        "terrain": [
+          497.99892905874697,
+          499.22426579254187,
+          500.43470642061504,
+          501.61564819484084,
+          502.75302251527677,
+          503.8335492244247,
+          504.8449755988789,
+          505.7762954073838,
+          506.6179437937615,
+          507.36196421546464,
+          508.00214421445787,
+          508.53411740602,
+          508.9554297309975,
+          509.26556871510013,
+          509.46595520137123,
+          509.5598977548297,
+          509.55251066715624,
+          509.45059719990036,
+          509.26250038313447,
+          508.9979243194891,
+          508.6677295187013,
+          508.2837062939356,
+          507.85833067830015,
+          507.4045076598271,
+          506.93530677906614,
+          506.4636952805622,
+          506.0022740549615,
+          505.5630215514523,
+          505.15705068180733,
+          504.79438348056925,
+          504.48374793594394,
+          504.2324009695855,
+          504.0459810292387,
+          503.92839317619814,
+          503.8817289111752,
+          503.90622229990873,
+          504.0002432470975,
+          504.1603280379188,
+          504.38124653481043,
+          504.6561046976705,
+          510.57681018316157,
+          521.4188051075852,
+          526.6270621498716,
+          530.4148154322696,
+          533.410609419727,
+          535.8657324454051,
+          537.9110496018894,
+          539.6247249270989,
+          541.0574767551909,
+          542.2439916945441,
+          543.2087657235152,
+          543.9693604255984,
+          544.5383279645613,
+          544.9243896559842,
+          545.1331623524729,
+          545.1675874438507,
+          545.028143649653,
+          544.7128808894232,
+          544.2172809776742,
+          543.5339211752699,
+          542.6518791640151,
+          541.5557590584043,
+          540.2241111334802,
+          538.6268031591798,
+          536.7204267267733,
+          534.4396525733008,
+          531.679129616995,
+          528.2490170650797,
+          523.7323612982188,
+          516.6533208958499,
+          490.44517704423833,
+          489.03586036603923,
+          487.66450947599594,
+          486.34300770355225,
+          485.08205930178656,
+          483.8909898889214,
+          482.77757390477285,
+          481.74789247800726,
+          480.8062245077279,
+          479.95497311553106,
+          479.19462893437293,
+          478.5237709818656,
+          477.93910513198574,
+          477.4355394649759,
+          477.00629505478133,
+          476.6430500607709,
+          476.3361143392661,
+          476.074631193273,
+          475.84680234745315,
+          475.64013178014653,
+          475.441683674093,
+          475.23834946960767,
+          475.01711882378873,
+          474.7653492004061,
+          474.47102883897406,
+          474.123027977699,
+          473.7113334310583,
+          473.22726194429424,
+          472.6636481578339,
+          472.01500350655544,
+          471.27764294231423,
+          470.4497769922336,
+          469.531567337763,
+          468.5251448073066,
+          467.4345894045101,
+          466.2658727308386,
+          465.0267638905252,
+          463.7267006740848,
+          462.376628489573,
+          460.9888101355109,
+          459.57661007371365,
+          458.15425735317683,
+          456.7365917480912,
+          455.338797995971,
+          453.97613324952545,
+          452.66365298387876,
+          451.4159406265917,
+          450.24684610120096,
+          449.1692382972227,
+          448.19477620427176,
+          447.3337030805675,
+          446.59466757384166,
+          445.98457518442007,
+          445.5084728663723,
+          445.1694689147626,
+          444.9686895978696,
+          444.9052732762786,
+          444.9764020200134,
+          445.17737000466366,
+          445.5016872520592,
+          445.9412165944307,
+          446.48634109658826,
+          447.1261585810353,
+          447.8486993776194,
+          448.6411629725026,
+          449.49016886962585,
+          450.3820167084624,
+          451.30295050992953,
+          452.2394218511688,
+          453.17834680084115,
+          454.1073515789493,
+          455.01500213634364,
+          455.89101317439486,
+          456.7264325383967,
+          457.513797410939,
+          458.24725929405616,
+          458.92267539032514,
+          459.53766466103895,
+          460.09162754096803,
+          460.5857290102518,
+          461.0228454504693,
+          461.4074764296239,
+          461.74562325556036,
+          462.04463679553635,
+          462.3130376683857,
+          462.56031246295646,
+          462.7966901115457,
+          463.0329029405367,
+          463.2799372246578,
+          463.54877828021733,
+          463.8501552422476,
+          464.19429067851956,
+          464.59066009972935,
+          465.047766231612,
+          465.5729326251173,
+          466.1721208007451,
+          466.8497746601427,
+          467.6086953611932,
+          468.4499492525982,
+          469.37281081215826,
+          470.3747418423744,
+          471.4514074611767,
+          472.5967286985955,
+          473.8029707862943,
+          475.0608655202976,
+          476.3597654018601,
+          477.68782663050183,
+          479.0322174491913,
+          480.3793478357822,
+          481.715116107068,
+          483.02516766064196,
+          484.2951608318795,
+          485.5110346937115,
+          486.6592735784164,
+          487.7271631544444,
+          488.7030330462961,
+          489.57648123874316,
+          490.33857585329497,
+          490.982030318056,
+          491.50134846354814,
+          491.89293665674035,
+          492.15518072212166,
+          492.28848607976175,
+          492.29528024262737,
+          492.1799775450581,
+          491.948906706993,
+          491.61020255997056,
+          491.17366395699077,
+          490.6505805454289,
+          490.0535316874669,
+          489.39616135412575,
+          488.69293328634006,
+          487.95887110046203,
+          487.20928830859776,
+          486.45951342051825,
+          485.7246153896887,
+          485.0191346593427,
+          484.3568249555794,
+          483.75041076531977,
+          483.2113651316571,
+          482.74971200365394,
+          482.37385689965976,
+          482.0904490920882,
+          481.9042779080455,
+          481.8182050762213,
+          481.8331343489966,
+          481.9480189034904,
+          482.1599062904058,
+          482.46401996941256,
+          482.8538757586508,
+          485.52622559977505,
+          498.22896016928775,
+          503.5621456919059,
+          507.4090754227299,
+          510.44238324865546,
+          512.9247311389184,
+          514.9914505857307,
+          516.7228777476395,
+          518.1709395235459,
+          519.3710622993664,
+          520.3482297035989,
+          521.1203455203881,
+          521.7002162191465,
+          522.0967631174823,
+          522.3157699451232,
+          522.3603264300991,
+          522.231052333573,
+          521.9261413176235,
+          521.4412320937131,
+          520.7690847282156,
+          519.8990032765494,
+          518.8158887609784,
+          517.4987035315279,
+          515.9179223501333,
+          514.0310937284144,
+          511.77452944191725,
+          509.04603156279575,
+          505.66294152938514,
+          501.23032980601397,
+          494.4160569789201,
+          489.87005409794233,
+          489.72232933793015,
+          489.6399773974053,
+          489.632897805772,
+          489.7096896963172,
+          489.87746685188165,
+          490.14170123318627,
+          490.50609810607205,
+          490.9725052661692,
+          491.54085819273934,
+          492.20916226069795,
+          492.97351241486285,
+          493.828149977487,
+          494.7655555334635,
+          495.77657613145703,
+          496.85058436744293,
+          497.97566629287155,
+          499.1388345251305,
+          500.3262624442194,
+          501.52353494621656,
+          502.7159108993301,
+          503.8885922184121,
+          505.02699434329827,
+          506.117012877763,
+          507.1452812198149,
+          508.09941418905447,
+          508.96823292946044,
+          509.74196673091495,
+          510.4124278629051,
+          510.9731560403208,
+          511.4195297338253
+        ],
+        "hp": [
+          55,
+          0
+        ],
+        "angle": 32,
+        "power": 60,
+        "enemyAngle": 46,
+        "enemyPower": 63,
+        "wind": -16,
+        "round": 3,
+        "shots": 3,
+        "phase": "won",
+        "ball": null,
+        "delay": -0.016600000000001683,
+        "craters": 5,
+        "damage": 127,
+        "won": true,
+        "score": 1155,
+        "best": 1155,
+        "log": [
+          "炮战完成：3 发炮弹，保留 55 点装甲。",
+          "你的落点 939 · 蓝队 −43",
+          "第 3 回合 · 风力 -16，重新判断落点。",
+          "蓝队落点 144 ·  绿队 −43",
+          "蓝队调整炮口，准备回击。"
+        ],
+        "fx": [
+          {
+            "x": 940.1951419827383,
+            "y": 484.02097064186586,
+            "vx": 70,
+            "vy": -30.991999999999827,
+            "life": 0.8332999999999993
+          },
+          {
+            "x": 938.1271853041218,
+            "y": 484.8444278052758,
+            "vx": -53.82974123451092,
+            "vy": 18.316812180234194,
+            "life": 0.9332999999999992
+          },
+          {
+            "x": 939.1371956925195,
+            "y": 482.75663852033136,
+            "vx": 6.649922741397926,
+            "vy": -106.70051027152371,
+            "life": 1.0332999999999992
+          },
+          {
+            "x": 939.8287398720006,
+            "y": 485.06805665464213,
+            "vx": 48.05975384804816,
+            "vy": 31.707761244083237,
+            "life": 1.133299999999999
+          },
+          {
+            "x": 937.6777104330137,
+            "y": 483.7822475476591,
+            "vx": -80.74440417511842,
+            "vy": -45.28679606028416,
+            "life": 0.8332999999999993
+          },
+          {
+            "x": 940.223992677159,
+            "y": 483.2593053847642,
+            "vx": 71.72758649226184,
+            "vy": -76.6006980300368,
+            "life": 0.9332999999999992
+          },
+          {
+            "x": 938.6443143960464,
+            "y": 485.4401013102828,
+            "vx": -22.863927346810364,
+            "vy": 53.98588433633663,
+            "life": 1.0332999999999992
+          },
+          {
+            "x": 938.326048733449,
+            "y": 482.672135020932,
+            "vx": -41.92175145443399,
+            "vy": -111.76060005591674,
+            "life": 1.133299999999999
+          },
+          {
+            "x": 940.500530082983,
+            "y": 484.55990641712737,
+            "vx": 88.28671258950585,
+            "vy": 1.2796033090703407,
+            "life": 0.8332999999999993
+          },
+          {
+            "x": 937.5285901545548,
+            "y": 484.6385583132978,
+            "vx": -89.67376216666966,
+            "vy": 5.989297690529691,
+            "life": 0.9332999999999992
+          },
+          {
+            "x": 939.734520924991,
+            "y": 482.50865477731475,
+            "vx": 42.417900733699696,
+            "vy": -121.54983620066221,
+            "life": 1.0332999999999992
+          },
+          {
+            "x": 939.5402762714757,
+            "y": 485.66243643290284,
+            "vx": 30.786484355540576,
+            "vy": 67.29936473274796,
+            "life": 1.133299999999999
+          },
+          {
+            "x": 937.4949368921698,
+            "y": 483.1327032211992,
+            "vx": -91.68892757894018,
+            "vy": -84.18166590818035,
+            "life": 0.8332999999999993
+          },
+          {
+            "x": 940.8041715237432,
+            "y": 483.6309667427653,
+            "vx": 106.46883479071646,
+            "vy": -54.345526892251584,
+            "life": 0.9332999999999992
+          },
+          {
+            "x": 937.9496323683103,
+            "y": 485.5505206443322,
+            "vx": -64.46165355855044,
+            "vy": 60.59782050696166,
+            "life": 1.0332999999999992
+          },
+          {
+            "x": 938.7803877168087,
+            "y": 482.1162593538283,
+            "vx": -14.715824307151538,
+            "vy": -145.04656814595813,
+            "life": 1.133299999999999
+          },
+          {
+            "x": 940.5322118915884,
+            "y": 485.2918041438071,
+            "vx": 90.18382687725608,
+            "vy": 45.105814487494506,
+            "life": 0.8332999999999993
+          },
+          {
+            "x": 937.0071157561279,
+            "y": 484.1031995069928,
+            "vx": -120.8997740485168,
+            "vy": -26.068115860666175,
+            "life": 0.9332999999999992
+          },
+          {
+            "x": 940.4949523988557,
+            "y": 482.56124169390836,
+            "vx": 87.95271952799025,
+            "vy": -118.4009190393672,
+            "life": 1.0332999999999992
+          },
+          {
+            "x": 938.9266944153668,
+            "y": 486.1395378443271,
+            "vx": -5.954944153974476,
+            "vy": 95.86831152461785,
+            "life": 1.133299999999999
+          },
+          {
+            "x": 937.6363886217505,
+            "y": 482.35308977213214,
+            "vx": -83.21876413099596,
+            "vy": -130.86510597207652,
+            "life": 0.8332999999999993
+          },
+          {
+            "x": 941.2271768984474,
+            "y": 484.31884731068965,
+            "vx": 131.7984979466512,
+            "vy": -13.155073723127424,
+            "life": 0.9332999999999992
+          },
+          {
+            "x": 937.1607598099063,
+            "y": 485.31661673138314,
+            "vx": -111.69953130729446,
+            "vy": 46.591598174683604,
+            "life": 1.0332999999999992
+          },
+          {
+            "x": 939.5375391954885,
+            "y": 481.75670330323476,
+            "vx": 30.62258758984253,
+            "vy": -166.57687057670694,
+            "life": 1.133299999999999
+          },
+          {
+            "x": 940.2033405013182,
+            "y": 486.0795482109299,
+            "vx": 70.49092925628543,
+            "vy": 92.27611790801954,
+            "life": 0.8332999999999993
+          },
+          {
+            "x": 936.7198739506628,
+            "y": 483.28287172286684,
+            "vx": -138.09988216019767,
+            "vy": -75.18954005982124,
+            "life": 0.9332999999999992
+          }
+        ],
+        "elapsed": 23.565799999999758,
+        "physics": {
+          "gravity": 220,
+          "step": 0.008333333333333333,
+          "tankX": [
+            146,
+            968
+          ]
+        },
+        "predicted": {
+          "x": 976.3995390411212,
+          "y": 513.8056973456005,
+          "points": [
+            {
+              "x": 197.30579870635265,
+              "y": 438.03544793417706
+            },
+            {
+              "x": 262.29994655484194,
+              "y": 401.4330534771092
+            },
+            {
+              "x": 326.75631662555344,
+              "y": 372.2251034644858
+            },
+            {
+              "x": 390.6749089184872,
+              "y": 350.4115978963069
+            },
+            {
+              "x": 454.0557234336432,
+              "y": 335.9925367725724
+            },
+            {
+              "x": 516.8987601710215,
+              "y": 328.9679200932824
+            },
+            {
+              "x": 579.204019130622,
+              "y": 329.3377478584368
+            },
+            {
+              "x": 640.9715003124448,
+              "y": 337.10202006803564
+            },
+            {
+              "x": 702.2012037164898,
+              "y": 352.26073672207895
+            },
+            {
+              "x": 762.8931293427571,
+              "y": 374.81389782056664
+            },
+            {
+              "x": 823.0472771912466,
+              "y": 404.76150336349883
+            },
+            {
+              "x": 882.6636472619584,
+              "y": 442.10355335087553
+            },
+            {
+              "x": 941.7422395548925,
+              "y": 486.84004778269673
+            }
+          ]
+        }
+      },
+      "saved": {
+        "version": 1,
+        "terrain": [
+          497.99892905874697,
+          499.22426579254187,
+          500.43470642061504,
+          501.61564819484084,
+          502.75302251527677,
+          503.8335492244247,
+          504.8449755988789,
+          505.7762954073838,
+          506.6179437937615,
+          507.36196421546464,
+          508.00214421445787,
+          508.53411740602,
+          508.9554297309975,
+          509.26556871510013,
+          509.46595520137123,
+          509.5598977548297,
+          509.55251066715624,
+          509.45059719990036,
+          509.26250038313447,
+          508.9979243194891,
+          508.6677295187013,
+          508.2837062939356,
+          507.85833067830015,
+          507.4045076598271,
+          506.93530677906614,
+          506.4636952805622,
+          506.0022740549615,
+          505.5630215514523,
+          505.15705068180733,
+          504.79438348056925,
+          504.48374793594394,
+          504.2324009695855,
+          504.0459810292387,
+          503.92839317619814,
+          503.8817289111752,
+          503.90622229990873,
+          504.0002432470975,
+          504.1603280379188,
+          504.38124653481043,
+          504.6561046976705,
+          504.976480402248,
+          505.3325898778528,
+          505.7134814843936,
+          506.10725301194606,
+          506.50128822406583,
+          506.88250798794775,
+          507.2376310477083,
+          507.55343930714565,
+          507.81704239905133,
+          508.0161363312524,
+          508.139251114816,
+          508.17598249499457,
+          508.1172032163368,
+          507.9552496538416,
+          507.6840801242849,
+          507.2994017464429,
+          506.79876333503665,
+          506.1816124787711,
+          505.4493156548117,
+          504.60514095669555,
+          503.65420374582806,
+          502.60337626401537,
+          501.46116295168906,
+          500.2375438897469,
+          498.94378940906563,
+          497.5922494784858,
+          496.1961219783103,
+          494.7692043823648,
+          493.32563369930017,
+          491.87961975660915,
+          490.44517704423833,
+          489.03586036603923,
+          487.66450947599594,
+          486.34300770355225,
+          485.08205930178656,
+          483.8909898889214,
+          482.77757390477285,
+          481.74789247800726,
+          480.8062245077279,
+          479.95497311553106,
+          479.19462893437293,
+          478.5237709818656,
+          477.93910513198574,
+          477.4355394649759,
+          477.00629505478133,
+          476.6430500607709,
+          476.3361143392661,
+          476.074631193273,
+          475.84680234745315,
+          475.64013178014653,
+          475.441683674093,
+          475.23834946960767,
+          475.01711882378873,
+          474.7653492004061,
+          474.47102883897406,
+          474.123027977699,
+          473.7113334310583,
+          473.22726194429424,
+          472.6636481578339,
+          472.01500350655544,
+          471.27764294231423,
+          470.4497769922336,
+          469.531567337763,
+          468.5251448073066,
+          467.4345894045101,
+          466.2658727308386,
+          465.0267638905252,
+          463.7267006740848,
+          462.376628489573,
+          460.9888101355109,
+          459.57661007371365,
+          458.15425735317683,
+          456.7365917480912,
+          455.338797995971,
+          453.97613324952545,
+          452.66365298387876,
+          451.4159406265917,
+          450.24684610120096,
+          449.1692382972227,
+          448.19477620427176,
+          447.3337030805675,
+          446.59466757384166,
+          445.98457518442007,
+          445.5084728663723,
+          445.1694689147626,
+          444.9686895978696,
+          444.9052732762786,
+          444.9764020200134,
+          445.17737000466366,
+          445.5016872520592,
+          445.9412165944307,
+          446.48634109658826,
+          447.1261585810353,
+          447.8486993776194,
+          448.6411629725026,
+          449.49016886962585,
+          450.3820167084624,
+          451.30295050992953,
+          452.2394218511688,
+          453.17834680084115,
+          454.1073515789493,
+          455.01500213634364,
+          455.89101317439486,
+          456.7264325383967,
+          457.513797410939,
+          458.24725929405616,
+          458.92267539032514,
+          459.53766466103895,
+          460.09162754096803,
+          460.5857290102518,
+          461.0228454504693,
+          461.4074764296239,
+          461.74562325556036,
+          462.04463679553635,
+          462.3130376683857,
+          462.56031246295646,
+          462.7966901115457,
+          463.0329029405367,
+          463.2799372246578,
+          463.54877828021733,
+          463.8501552422476,
+          464.19429067851956,
+          464.59066009972935,
+          465.047766231612,
+          465.5729326251173,
+          466.1721208007451,
+          466.8497746601427,
+          467.6086953611932,
+          468.4499492525982,
+          469.37281081215826,
+          470.3747418423744,
+          471.4514074611767,
+          472.5967286985955,
+          473.8029707862943,
+          475.0608655202976,
+          476.3597654018601,
+          477.68782663050183,
+          479.0322174491913,
+          480.3793478357822,
+          481.715116107068,
+          483.02516766064196,
+          484.2951608318795,
+          485.5110346937115,
+          486.6592735784164,
+          487.7271631544444,
+          488.7030330462961,
+          489.57648123874316,
+          490.33857585329497,
+          490.982030318056,
+          491.50134846354814,
+          491.89293665674035,
+          492.15518072212166,
+          492.28848607976175,
+          492.29528024262737,
+          492.1799775450581,
+          491.948906706993,
+          491.61020255997056,
+          491.17366395699077,
+          490.6505805454289,
+          490.0535316874669,
+          489.39616135412575,
+          488.69293328634006,
+          487.95887110046203,
+          487.20928830859776,
+          486.45951342051825,
+          485.7246153896887,
+          485.0191346593427,
+          484.3568249555794,
+          483.75041076531977,
+          483.2113651316571,
+          482.74971200365394,
+          482.37385689965976,
+          482.0904490920882,
+          481.9042779080455,
+          481.8182050762213,
+          481.8331343489966,
+          481.9480189034904,
+          482.1599062904058,
+          482.46401996941256,
+          482.8538757586508,
+          483.32143084766676,
+          483.8572623909225,
+          484.4507721253087,
+          485.0904129510299,
+          485.76393299065955,
+          486.4586323043678,
+          487.1616271968692,
+          487.8601169082476,
+          488.5416474392788,
+          489.19436732297504,
+          489.80727031661934,
+          490.3704202493366,
+          490.87515361414785,
+          491.31425593354413,
+          491.6821084452648,
+          491.97480224004414,
+          492.190217624135,
+          492.328067163885,
+          492.38990158412696,
+          492.37907842267174,
+          492.3006940754492,
+          492.16148058651964,
+          491.96966923016777,
+          491.7348235850554,
+          491.4676454001584,
+          491.1797570872205,
+          490.8834651342565,
+          490.59150911022675,
+          490.3168012150456,
+          490.07216151601466,
+          489.87005409794233,
+          489.72232933793015,
+          489.6399773974053,
+          489.632897805772,
+          489.7096896963172,
+          489.87746685188165,
+          490.14170123318627,
+          490.50609810607205,
+          490.9725052661692,
+          491.54085819273934,
+          492.20916226069795,
+          492.97351241486285,
+          493.828149977487,
+          494.7655555334635,
+          495.77657613145703,
+          496.85058436744293,
+          497.97566629287155,
+          499.1388345251305,
+          500.3262624442194,
+          501.52353494621656,
+          502.7159108993301,
+          503.8885922184121,
+          505.02699434329827,
+          506.117012877763,
+          507.1452812198149,
+          508.09941418905447,
+          508.96823292946044,
+          509.74196673091495,
+          510.4124278629051,
+          510.9731560403208,
+          511.4195297338253
+        ],
+        "hp": [
+          110,
+          110
+        ],
+        "angle": 65,
+        "power": 30,
+        "enemyAngle": 45,
+        "enemyPower": 55,
+        "wind": -10,
+        "round": 1,
+        "shots": 1,
+        "phase": "flight",
+        "ball": {
+          "x": 224.0808890329679,
+          "y": 321.64052542202506,
+          "vx": 122.45147852221005,
+          "vy": -176.54433611099466,
+          "side": 0,
+          "age": 0.43340000000000056,
+          "trail": [
+            {
+              "x": 171.14509212912716,
+              "y": 416.1702500916053
+            },
+            {
+              "x": 175.36997707843565,
+              "y": 407.3035467988314
+            },
+            {
+              "x": 179.57110850211413,
+              "y": 398.7076822507797
+            },
+            {
+              "x": 183.7611510257926,
+              "y": 390.3557735027281
+            },
+            {
+              "x": 187.9526359751011,
+              "y": 382.2238702099541
+            },
+            {
+              "x": 192.12046739877957,
+              "y": 374.3606056619024
+            },
+            {
+              "x": 196.28967454808802,
+              "y": 366.71881396912863
+            },
+            {
+              "x": 200.43529487176653,
+              "y": 359.34419362107684
+            },
+            {
+              "x": 204.56982629544504,
+              "y": 352.21352907302514
+            },
+            {
+              "x": 208.7056334447535,
+              "y": 345.3065373802513
+            },
+            {
+              "x": 213.83300420826484,
+              "y": 337.05990346488574
+            },
+            {
+              "x": 218.95950734669026,
+              "y": 329.168009060261
+            },
+            {
+              "x": 224.07680731701714,
+              "y": 321.6464102332288
+            }
+          ]
+        },
+        "delay": 0,
+        "craters": 0,
+        "damage": 0,
+        "won": false,
+        "score": 0,
+        "best": null,
+        "log": [
+          "调整角度和力度，观察风向与预估弧线。"
+        ],
+        "fx": [],
+        "elapsed": 1.1692000000119211,
+        "physics": {
+          "gravity": 220,
+          "step": 0.008333333333333333,
+          "tankX": [
+            146,
+            968
+          ]
+        },
+        "predicted": {
+          "x": 464.14269932381933,
+          "y": 451.37423337702813,
+          "points": [
+            {
+              "x": 171.14509212912716,
+              "y": 416.1702500916053
+            },
+            {
+              "x": 194.19812430264344,
+              "y": 370.52471069347837
+            },
+            {
+              "x": 216.9150453650486,
+              "y": 332.27361573979596
+            },
+            {
+              "x": 239.29585531634268,
+              "y": 301.41696523055805
+            },
+            {
+              "x": 261.3405541565256,
+              "y": 277.95475916576464
+            },
+            {
+              "x": 283.0491418855975,
+              "y": 261.8869975454156
+            },
+            {
+              "x": 304.4216185035583,
+              "y": 253.21368036951105
+            },
+            {
+              "x": 325.457984010408,
+              "y": 251.93480763805093
+            },
+            {
+              "x": 346.1582384061466,
+              "y": 258.0503793510352
+            },
+            {
+              "x": 366.5223816907741,
+              "y": 271.56039550846396
+            },
+            {
+              "x": 386.55041386429053,
+              "y": 292.4648561103371
+            },
+            {
+              "x": 406.2423349266959,
+              "y": 320.76376115665477
+            },
+            {
+              "x": 425.59814487799014,
+              "y": 356.4571106474169
+            },
+            {
+              "x": 444.61784371817333,
+              "y": 399.5449045826236
+            },
+            {
+              "x": 463.30143144724536,
+              "y": 450.02714296227464
+            }
+          ]
+        }
+      },
+      "storage": [
+        "dumpling-showcase-qa-v1-battery",
+        "dumpling-showcase-qa-v1-records"
+      ]
+    },
+    "shell": {
+      "mobilePairs": [
+        {
+          "games": [
+            "putt",
+            "signal"
+          ],
+          "boxes": [
+            {
+              "y": 216.78125,
+              "width": 358,
+              "bottom": 1137.46875
+            },
+            {
+              "y": 1161.46875,
+              "width": 358,
+              "bottom": 2042.84375
+            }
+          ]
+        },
+        {
+          "games": [
+            "angler",
+            "battery"
+          ],
+          "boxes": [
+            {
+              "y": 216.78125,
+              "width": 358,
+              "bottom": 1119.15625
+            },
+            {
+              "y": 1143.15625,
+              "width": 358,
+              "bottom": 2180.53125
+            }
+          ]
+        }
+      ],
+      "mobileStandalone": {
+        "putt": {
+          "width": 350,
+          "started": true,
+          "paused": true
+        },
+        "signal": {
+          "width": 350,
+          "started": true,
+          "paused": true
+        },
+        "angler": {
+          "width": 350,
+          "started": true,
+          "paused": true
+        },
+        "battery": {
+          "width": 350,
+          "started": true,
+          "paused": true
+        }
+      }
+    }
+  },
+  "errors": [],
+  "missing": [],
+  "sourceReports": [
+    "notes/motion-putt-check-20261003.json",
+    "notes/motion-signal-check-20261003.json",
+    "notes/motion-angler-check-20261003.json",
+    "notes/motion-battery-check-20261003.json",
+    "notes/motion-shell-check-20261003.json"
+  ],
+  "regressionReport": "notes/motion-regression-check-20261003.json",
+  "preservationReport": "notes/motion-preservation-20261003.json",
+  "actualGameplayPreviews": [
+    "web/assets/showcase/previews/putt.webp",
+    "web/assets/showcase/previews/signal.webp",
+    "web/assets/showcase/previews/angler.webp",
+    "web/assets/showcase/previews/battery.webp"
+  ],
+  "artworkMode": "built-in image_gen for battery; authored Kenney CC0 GLB plus original interaction geometry for 3D games",
+  "artworkManifest": "assets/game-forms/motion-generation-20261003.json",
+  "modelManifests": [
+    "assets/game-forms/motion-putt-sources.json",
+    "assets/game-forms/motion-signal-sources.json",
+    "assets/game-forms/motion-angler-sources.json"
+  ]
+}

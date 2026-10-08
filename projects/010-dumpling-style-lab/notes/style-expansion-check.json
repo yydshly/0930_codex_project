@@ -1,0 +1,535 @@
+{
+  "date": "2026-10-02",
+  "qaNote": "Only QA isolates the remote original; new style canvases rendered at fixed time to verify pixel changes.",
+  "checks": [
+    {
+      "name": "20 个风格已接入",
+      "passed": true
+    },
+    {
+      "name": "新风格 URL 可直达",
+      "passed": true
+    },
+    {
+      "name": "papercut 被选中",
+      "passed": true
+    },
+    {
+      "name": "papercut 有可调材质参数",
+      "passed": true
+    },
+    {
+      "name": "papercut 开盖增加真实收藏",
+      "passed": true
+    },
+    {
+      "name": "papercut 开盖改变画面",
+      "passed": true
+    },
+    {
+      "name": "papercut 挤压驱动形变",
+      "passed": true
+    },
+    {
+      "name": "papercut 松开后回弹",
+      "passed": true
+    },
+    {
+      "name": "papercut 昼夜改变实际像素",
+      "passed": true
+    },
+    {
+      "name": "papercut 参数确实改变渲染",
+      "passed": true
+    },
+    {
+      "name": "papercut 参数输出与状态一致",
+      "passed": true
+    },
+    {
+      "name": "linocut 被选中",
+      "passed": true
+    },
+    {
+      "name": "linocut 有可调材质参数",
+      "passed": true
+    },
+    {
+      "name": "linocut 开盖增加真实收藏",
+      "passed": true
+    },
+    {
+      "name": "linocut 开盖改变画面",
+      "passed": true
+    },
+    {
+      "name": "linocut 挤压驱动形变",
+      "passed": true
+    },
+    {
+      "name": "linocut 松开后回弹",
+      "passed": true
+    },
+    {
+      "name": "linocut 昼夜改变实际像素",
+      "passed": true
+    },
+    {
+      "name": "linocut 参数确实改变渲染",
+      "passed": true
+    },
+    {
+      "name": "linocut 参数输出与状态一致",
+      "passed": true
+    },
+    {
+      "name": "cyanotype 被选中",
+      "passed": true
+    },
+    {
+      "name": "cyanotype 有可调材质参数",
+      "passed": true
+    },
+    {
+      "name": "cyanotype 开盖增加真实收藏",
+      "passed": true
+    },
+    {
+      "name": "cyanotype 开盖改变画面",
+      "passed": true
+    },
+    {
+      "name": "cyanotype 挤压驱动形变",
+      "passed": true
+    },
+    {
+      "name": "cyanotype 松开后回弹",
+      "passed": true
+    },
+    {
+      "name": "cyanotype 昼夜改变实际像素",
+      "passed": true
+    },
+    {
+      "name": "cyanotype 参数确实改变渲染",
+      "passed": true
+    },
+    {
+      "name": "cyanotype 参数输出与状态一致",
+      "passed": true
+    },
+    {
+      "name": "stainedglass 被选中",
+      "passed": true
+    },
+    {
+      "name": "stainedglass 有可调材质参数",
+      "passed": true
+    },
+    {
+      "name": "stainedglass 开盖增加真实收藏",
+      "passed": true
+    },
+    {
+      "name": "stainedglass 开盖改变画面",
+      "passed": true
+    },
+    {
+      "name": "stainedglass 挤压驱动形变",
+      "passed": true
+    },
+    {
+      "name": "stainedglass 松开后回弹",
+      "passed": true
+    },
+    {
+      "name": "stainedglass 昼夜改变实际像素",
+      "passed": true
+    },
+    {
+      "name": "stainedglass 参数确实改变渲染",
+      "passed": true
+    },
+    {
+      "name": "stainedglass 参数输出与状态一致",
+      "passed": true
+    },
+    {
+      "name": "comic 被选中",
+      "passed": true
+    },
+    {
+      "name": "comic 有可调材质参数",
+      "passed": true
+    },
+    {
+      "name": "comic 开盖增加真实收藏",
+      "passed": true
+    },
+    {
+      "name": "comic 开盖改变画面",
+      "passed": true
+    },
+    {
+      "name": "comic 挤压驱动形变",
+      "passed": true
+    },
+    {
+      "name": "comic 松开后回弹",
+      "passed": true
+    },
+    {
+      "name": "comic 昼夜改变实际像素",
+      "passed": true
+    },
+    {
+      "name": "comic 参数确实改变渲染",
+      "passed": true
+    },
+    {
+      "name": "comic 参数输出与状态一致",
+      "passed": true
+    },
+    {
+      "name": "ascii 被选中",
+      "passed": true
+    },
+    {
+      "name": "ascii 有可调材质参数",
+      "passed": true
+    },
+    {
+      "name": "ascii 开盖增加真实收藏",
+      "passed": true
+    },
+    {
+      "name": "ascii 开盖改变画面",
+      "passed": true
+    },
+    {
+      "name": "ascii 挤压驱动形变",
+      "passed": true
+    },
+    {
+      "name": "ascii 松开后回弹",
+      "passed": true
+    },
+    {
+      "name": "ascii 昼夜改变实际像素",
+      "passed": true
+    },
+    {
+      "name": "ascii 参数确实改变渲染",
+      "passed": true
+    },
+    {
+      "name": "ascii 参数输出与状态一致",
+      "passed": true
+    },
+    {
+      "name": "wireframe 被选中",
+      "passed": true
+    },
+    {
+      "name": "wireframe 有可调材质参数",
+      "passed": true
+    },
+    {
+      "name": "wireframe 开盖增加真实收藏",
+      "passed": true
+    },
+    {
+      "name": "wireframe 开盖改变画面",
+      "passed": true
+    },
+    {
+      "name": "wireframe 挤压驱动形变",
+      "passed": true
+    },
+    {
+      "name": "wireframe 松开后回弹",
+      "passed": true
+    },
+    {
+      "name": "wireframe 昼夜改变实际像素",
+      "passed": true
+    },
+    {
+      "name": "wireframe 参数确实改变渲染",
+      "passed": true
+    },
+    {
+      "name": "wireframe 参数输出与状态一致",
+      "passed": true
+    },
+    {
+      "name": "embroidery 被选中",
+      "passed": true
+    },
+    {
+      "name": "embroidery 有可调材质参数",
+      "passed": true
+    },
+    {
+      "name": "embroidery 开盖增加真实收藏",
+      "passed": true
+    },
+    {
+      "name": "embroidery 开盖改变画面",
+      "passed": true
+    },
+    {
+      "name": "embroidery 挤压驱动形变",
+      "passed": true
+    },
+    {
+      "name": "embroidery 松开后回弹",
+      "passed": true
+    },
+    {
+      "name": "embroidery 昼夜改变实际像素",
+      "passed": true
+    },
+    {
+      "name": "embroidery 参数确实改变渲染",
+      "passed": true
+    },
+    {
+      "name": "embroidery 参数输出与状态一致",
+      "passed": true
+    },
+    {
+      "name": "ukiyoe 被选中",
+      "passed": true
+    },
+    {
+      "name": "ukiyoe 有可调材质参数",
+      "passed": true
+    },
+    {
+      "name": "ukiyoe 开盖增加真实收藏",
+      "passed": true
+    },
+    {
+      "name": "ukiyoe 开盖改变画面",
+      "passed": true
+    },
+    {
+      "name": "ukiyoe 挤压驱动形变",
+      "passed": true
+    },
+    {
+      "name": "ukiyoe 松开后回弹",
+      "passed": true
+    },
+    {
+      "name": "ukiyoe 昼夜改变实际像素",
+      "passed": true
+    },
+    {
+      "name": "ukiyoe 参数确实改变渲染",
+      "passed": true
+    },
+    {
+      "name": "ukiyoe 参数输出与状态一致",
+      "passed": true
+    },
+    {
+      "name": "risograph 被选中",
+      "passed": true
+    },
+    {
+      "name": "risograph 有可调材质参数",
+      "passed": true
+    },
+    {
+      "name": "risograph 开盖增加真实收藏",
+      "passed": true
+    },
+    {
+      "name": "risograph 开盖改变画面",
+      "passed": true
+    },
+    {
+      "name": "risograph 挤压驱动形变",
+      "passed": true
+    },
+    {
+      "name": "risograph 松开后回弹",
+      "passed": true
+    },
+    {
+      "name": "risograph 昼夜改变实际像素",
+      "passed": true
+    },
+    {
+      "name": "risograph 参数确实改变渲染",
+      "passed": true
+    },
+    {
+      "name": "risograph 参数输出与状态一致",
+      "passed": true
+    },
+    {
+      "name": "new 分组数量正确",
+      "passed": true
+    },
+    {
+      "name": "new 选中项可见",
+      "passed": true
+    },
+    {
+      "name": "core 分组数量正确",
+      "passed": true
+    },
+    {
+      "name": "core 选中项可见",
+      "passed": true
+    },
+    {
+      "name": "craft 分组数量正确",
+      "passed": true
+    },
+    {
+      "name": "craft 选中项可见",
+      "passed": true
+    },
+    {
+      "name": "print 分组数量正确",
+      "passed": true
+    },
+    {
+      "name": "print 选中项可见",
+      "passed": true
+    },
+    {
+      "name": "digital 分组数量正确",
+      "passed": true
+    },
+    {
+      "name": "digital 选中项可见",
+      "passed": true
+    },
+    {
+      "name": "all 分组数量正确",
+      "passed": true
+    },
+    {
+      "name": "all 选中项可见",
+      "passed": true
+    },
+    {
+      "name": "分组内键盘切换",
+      "passed": true
+    },
+    {
+      "name": "分组内循环切换",
+      "passed": true
+    },
+    {
+      "name": "原有三维场景回归可用",
+      "passed": true
+    },
+    {
+      "name": "原有像素玩法入口可用",
+      "passed": true
+    },
+    {
+      "name": "原有风格隐藏扩展参数",
+      "passed": true
+    },
+    {
+      "name": "原有养成仍能操作",
+      "passed": true
+    },
+    {
+      "name": "390px 无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "手机可访问最后一个风格",
+      "passed": true
+    },
+    {
+      "name": "手机可调整参数",
+      "passed": true
+    },
+    {
+      "name": "无 JavaScript 错误",
+      "passed": true
+    }
+  ],
+  "styles": [
+    {
+      "id": "papercut",
+      "low": "c8969ac48585bb617f298aa85c36ef317d62e7c34b1b7457bf7da7a1576f7ee3",
+      "high": "fecfd0aed7aed60e2afff42c9cf645d2d530f21b64628ba2da7ae04eb8e5f34c",
+      "openedHash": "8417b8b3fc585b71aec3061c8a677d5e2990b59c99f18e34888f1eea5fb5eaba",
+      "nightHash": "ec1ca015655b39662d03cc81ceaf64031b4d9b9712ff6fcb2885910c94a6488f"
+    },
+    {
+      "id": "linocut",
+      "low": "7a75ab987a0ec2720d23e615075d8f55b023e475058afc440f1b2c5616296efd",
+      "high": "47211f7c118c5542383358a283cc95deabe7f19f631ba691b7bb9cae01917260",
+      "openedHash": "3e34e96cd9b1f0937268014f8501c3bc64c44e019a46ffe0eeabfc4a50605ca4",
+      "nightHash": "9dd941552ddf255cf7602b46e6f127e639c7d03b01e1aa8ca593890b91a1d2a3"
+    },
+    {
+      "id": "cyanotype",
+      "low": "1bbc91529d3b44018af5ff0a103d67bbd7171dfa83835734aa6f7cb0dd111f66",
+      "high": "78828f63560578e5c73b53617886158b27826a257ac44e64d6922c42079e476f",
+      "openedHash": "2e4b7034d2af68604a8865d9433da61c6627e8ab7763253bcc2dc0d7730e0f01",
+      "nightHash": "50e9c0803ff744d0c6eefd83eb009691b883da46181aaeb0e2b8e69e3620d5b9"
+    },
+    {
+      "id": "stainedglass",
+      "low": "3d2225fe82ac2f829e57c781c9db8c05bd3e7bd0c57b0a82afca5d6630f2d887",
+      "high": "b8eb4a53331ebdc1ae51ae57d71d14150e913bf304e1a00a517c061a505485db",
+      "openedHash": "7e4f0e922e1b96146a665046630dc786a252673a544aaa00575024c092d7035b",
+      "nightHash": "b6da9bc6d3e81353edbf7ed00d3ab6682f0c706f6c4dcb890ebf66f8741f120e"
+    },
+    {
+      "id": "comic",
+      "low": "d20fcd397186bae2adbe32001cfd5a1bf1375b883d626b048568749278d8f7e0",
+      "high": "c86ea23811bc7c23d782f5e1211150a826fa20d6af78522b286f99fe60fc99de",
+      "openedHash": "57d4846b95b0da74b9e0e0bad933878283d03077cd9a21942e3aa2cc4c2bae97",
+      "nightHash": "fc19403b560ebc19fc36189a7d1cf78132c650ad696d30cd0bc40985a8d04290"
+    },
+    {
+      "id": "ascii",
+      "low": "7b6812b10e5a057bace97a25de5cf81ee08fc1fcbb54291a00d9ab13f2be46a4",
+      "high": "485a1210f8cf07c3da3b46d0f172d051404fd8ae7d40335aa4c369d57d68601f",
+      "openedHash": "9246224071dd7a79ba5b886d13ccb49be950d413bf2e11c84832ffcc29adfa81",
+      "nightHash": "677f470e11e97a7fa52c473ef9c42636fe4a8051270652994b07e9f63f4d0cc5"
+    },
+    {
+      "id": "wireframe",
+      "low": "bd85ec324c84259130beb1de8350c9dfb0cb39c751919c2fe1ba2b72cf607c0c",
+      "high": "8e0b744d3e73b708fdb3de6423871eb8a70d2cbd850db4739ab76fb2b026bc33",
+      "openedHash": "d6249ff66cbc1ad1d2c9cc32cd3218b7da9f896a29fe534c3daeb7bc3d529397",
+      "nightHash": "7dd77dfe6d16ed22352b78c54b43bdef8e73713dec6f5baabfac585b77227ee7"
+    },
+    {
+      "id": "embroidery",
+      "low": "5211a522773d62e06010fce4f63ba1b170b88aa18d58afe595e0013691a3a82f",
+      "high": "1e0c889074e0d1fe264639e8f98ae084ee91173d28d7db1ac9524457bb0306c0",
+      "openedHash": "1d15e1968bc99b958ed91d78bc1884ad3e91823a80e87720e48b76b00b2003d3",
+      "nightHash": "469e9ec400f1040bcb4b5c8eb592d0caee4006b82ad23a053396748306417670"
+    },
+    {
+      "id": "ukiyoe",
+      "low": "88f3fdf67b2017462d55b4f269476b908cba2fe6140a4d60616bf53190ae6632",
+      "high": "37b78725fdcfe6a0d02420f96d648776fb92a28d86a1b32836e7d79cadba3eba",
+      "openedHash": "30c715df8ad28dfbe9ebe0353f27117dfb9cf1ad4568ff0a4a999cb2466942fb",
+      "nightHash": "ba6920a926ecc4ffc3f4c664fc63716fc2d42916dcc59bd3918016e49d33b319"
+    },
+    {
+      "id": "risograph",
+      "low": "a2cd0f274bba673cd0ed152ea0b4a9f4c056b6fafc3041f3bb9b684626fe8e79",
+      "high": "eb3d6ad5a201c3c2757f5ca03c76e24b1d1235c8041ce5aca172a68e5e35baed",
+      "openedHash": "f0be654983762e1d1ccd897b11d2284fa9b4d254b4fd4b57779aea5a534d8296",
+      "nightHash": "3d544d17f79a2acb24fecb2376fc2d0dce001ea75f0d11c8dbdd7bd46d0b67dc"
+    }
+  ],
+  "errors": []
+}

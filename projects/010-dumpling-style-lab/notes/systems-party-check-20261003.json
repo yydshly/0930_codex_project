@@ -1,0 +1,428 @@
+{
+  "passed": true,
+  "checks": [
+    "Actual battle loads three separately illustrated party roles and three enemies with independent health, spirit and intents",
+    "Real skill buttons and canvas target selection consume each party turn; protect and focus create shields, then actual enemy actions damage party and consume shields",
+    "Pause/save/reload restores a pending command exactly and applies its damage once after continuation",
+    "Actual targeted spell spends three spirit and defeats its target; healer restores injured ally and writes real combat log",
+    "First victory opens actual rest action; second encounter restores specified resources and creates a stronger enemy group",
+    "Read-only target planning and actual menu input complete both encounters with finite health and spirit",
+    "Completed save reloads; replay resets this battle and retains its gallery completion",
+    "Repeated actual defensive commands still allow enemy attacks to produce real defeat; restart recovers",
+    "390px layout has no horizontal overflow and visible skill/target buttons advance an actual party action",
+    "QA uses only QA-prefixed storage; no missing runtime assets or browser errors"
+  ],
+  "result": {
+    "win": {
+      "version": 1,
+      "stage": 1,
+      "round": 5,
+      "phase": "won",
+      "heroIndex": 0,
+      "skill": "strike",
+      "heroes": [
+        {
+          "id": "captain",
+          "name": "岚 · 近卫",
+          "hp": 72,
+          "mp": 0,
+          "maxHP": 80,
+          "maxMP": 0,
+          "shield": 0
+        },
+        {
+          "id": "mage",
+          "name": "衡 · 术师",
+          "hp": 54,
+          "mp": 6,
+          "maxHP": 58,
+          "maxMP": 12,
+          "shield": 0
+        },
+        {
+          "id": "healer",
+          "name": "葵 · 医师",
+          "hp": 56,
+          "mp": 3,
+          "maxHP": 64,
+          "maxMP": 12,
+          "shield": 0
+        }
+      ],
+      "enemies": [
+        {
+          "id": "sentinel",
+          "name": "铜卫",
+          "hp": 0,
+          "damage": 10,
+          "maxHP": 78,
+          "shield": 0
+        },
+        {
+          "id": "hound",
+          "name": "影兽",
+          "hp": 0,
+          "damage": 12,
+          "maxHP": 38,
+          "shield": 0
+        },
+        {
+          "id": "orb",
+          "name": "星轮",
+          "hp": 0,
+          "damage": 8,
+          "maxHP": 36,
+          "shield": 0
+        }
+      ],
+      "pending": null,
+      "enemyQueue": [
+        2
+      ],
+      "enemyCursor": 1,
+      "log": [
+        "星轮：星轮脉冲 → 衡 · 术师 −8",
+        "岚 · 近卫：斩击，铜卫 −16",
+        "衡 · 术师：专注，灵力 +4 · 护盾 +4",
+        "葵 · 医师：治疗，衡 · 术师 +20",
+        "铜卫：铜刃 → 岚 · 近卫 −10",
+        "影兽：追击低生命 → 衡 · 术师 −8",
+        "星轮：星轮脉冲 → 葵 · 医师 −8",
+        "岚 · 近卫：斩击，铜卫 −16",
+        "衡 · 术师：回响，所有敌人 −12",
+        "葵 · 医师：治疗，岚 · 近卫 +20",
+        "影兽：追击低生命 → 衡 · 术师 −12",
+        "星轮：星轮脉冲 → 岚 · 近卫 −8",
+        "岚 · 近卫：斩击，影兽 −16",
+        "衡 · 术师：专注，灵力 +4 · 护盾 +4",
+        "葵 · 医师：治疗，衡 · 术师 +20",
+        "星轮：星轮脉冲 → 衡 · 术师 −4",
+        "岚 · 近卫：斩击，星轮 −16",
+        "两场试炼完成。天文台重新回应了旅团。"
+      ],
+      "score": 1200,
+      "won": true,
+      "elapsed": 29.969900000011595,
+      "actions": 24,
+      "damageDealt": 308,
+      "healed": 68,
+      "prevented": 28,
+      "skills": {
+        "captain": [
+          {
+            "id": "strike",
+            "name": "斩击",
+            "target": "enemy",
+            "cost": 0,
+            "detail": "单体伤害 16"
+          },
+          {
+            "id": "protect",
+            "name": "护卫",
+            "target": "allies",
+            "cost": 0,
+            "detail": "全队获得 8 点护盾"
+          }
+        ],
+        "mage": [
+          {
+            "id": "arcane",
+            "name": "奥术",
+            "target": "enemy",
+            "cost": 3,
+            "detail": "消耗 3 灵力，单体伤害 24"
+          },
+          {
+            "id": "echo",
+            "name": "回响",
+            "target": "enemies",
+            "cost": 4,
+            "detail": "消耗 4 灵力，每名敌人伤害 12"
+          },
+          {
+            "id": "focus",
+            "name": "专注",
+            "target": "self",
+            "cost": 0,
+            "detail": "恢复 4 灵力，获得 4 点护盾"
+          }
+        ],
+        "healer": [
+          {
+            "id": "toss",
+            "name": "投掷",
+            "target": "enemy",
+            "cost": 0,
+            "detail": "单体伤害 12"
+          },
+          {
+            "id": "heal",
+            "name": "治疗",
+            "target": "ally",
+            "cost": 3,
+            "detail": "消耗 3 灵力，恢复队友 24 生命"
+          },
+          {
+            "id": "focus",
+            "name": "专注",
+            "target": "self",
+            "cost": 0,
+            "detail": "恢复 4 灵力，获得 4 点护盾"
+          }
+        ]
+      },
+      "heroSpots": [
+        {
+          "x": 190,
+          "y": 395,
+          "h": 245
+        },
+        {
+          "x": 305,
+          "y": 468,
+          "h": 252
+        },
+        {
+          "x": 405,
+          "y": 515,
+          "h": 224
+        }
+      ],
+      "enemySpots": [
+        {
+          "x": 797,
+          "y": 399,
+          "h": 260
+        },
+        {
+          "x": 938,
+          "y": 484,
+          "h": 185
+        },
+        {
+          "x": 768,
+          "y": 519,
+          "h": 204
+        }
+      ],
+      "intents": []
+    },
+    "saved": {
+      "version": 1,
+      "stage": 0,
+      "round": 2,
+      "phase": "anim",
+      "heroIndex": 0,
+      "skill": "strike",
+      "heroes": [
+        {
+          "id": "captain",
+          "name": "岚 · 近卫",
+          "hp": 78,
+          "mp": 0,
+          "maxHP": 80,
+          "maxMP": 0,
+          "shield": 0
+        },
+        {
+          "id": "mage",
+          "name": "衡 · 术师",
+          "hp": 50,
+          "mp": 12,
+          "maxHP": 58,
+          "maxMP": 12,
+          "shield": 0
+        },
+        {
+          "id": "healer",
+          "name": "葵 · 医师",
+          "hp": 64,
+          "mp": 12,
+          "maxHP": 64,
+          "maxMP": 12,
+          "shield": 0
+        }
+      ],
+      "enemies": [
+        {
+          "id": "sentinel",
+          "name": "铜卫",
+          "hp": 28,
+          "damage": 10,
+          "maxHP": 40,
+          "shield": 0
+        },
+        {
+          "id": "hound",
+          "name": "影兽",
+          "hp": 32,
+          "damage": 12,
+          "maxHP": 32,
+          "shield": 0
+        },
+        {
+          "id": "orb",
+          "name": "星轮",
+          "hp": 30,
+          "damage": 8,
+          "maxHP": 30,
+          "shield": 0
+        }
+      ],
+      "pending": {
+        "side": "hero",
+        "index": 0,
+        "target": 0,
+        "skill": "strike",
+        "title": "斩击",
+        "elapsed": 0.08340000000000056,
+        "duration": 0.62
+      },
+      "enemyQueue": [
+        0,
+        1,
+        2
+      ],
+      "enemyCursor": 3,
+      "log": [
+        "岚 · 近卫：护卫，全队护盾 +8",
+        "衡 · 术师：专注，灵力 +0 · 护盾 +4",
+        "葵 · 医师：投掷，铜卫 −12",
+        "铜卫：铜刃 → 岚 · 近卫 −2",
+        "影兽：追击低生命 → 衡 · 术师 −0",
+        "星轮：星轮脉冲 → 衡 · 术师 −8"
+      ],
+      "score": 0,
+      "won": false,
+      "elapsed": 4.498700000005961,
+      "actions": 4,
+      "damageDealt": 12,
+      "healed": 0,
+      "prevented": 20,
+      "skills": {
+        "captain": [
+          {
+            "id": "strike",
+            "name": "斩击",
+            "target": "enemy",
+            "cost": 0,
+            "detail": "单体伤害 16"
+          },
+          {
+            "id": "protect",
+            "name": "护卫",
+            "target": "allies",
+            "cost": 0,
+            "detail": "全队获得 8 点护盾"
+          }
+        ],
+        "mage": [
+          {
+            "id": "arcane",
+            "name": "奥术",
+            "target": "enemy",
+            "cost": 3,
+            "detail": "消耗 3 灵力，单体伤害 24"
+          },
+          {
+            "id": "echo",
+            "name": "回响",
+            "target": "enemies",
+            "cost": 4,
+            "detail": "消耗 4 灵力，每名敌人伤害 12"
+          },
+          {
+            "id": "focus",
+            "name": "专注",
+            "target": "self",
+            "cost": 0,
+            "detail": "恢复 4 灵力，获得 4 点护盾"
+          }
+        ],
+        "healer": [
+          {
+            "id": "toss",
+            "name": "投掷",
+            "target": "enemy",
+            "cost": 0,
+            "detail": "单体伤害 12"
+          },
+          {
+            "id": "heal",
+            "name": "治疗",
+            "target": "ally",
+            "cost": 3,
+            "detail": "消耗 3 灵力，恢复队友 24 生命"
+          },
+          {
+            "id": "focus",
+            "name": "专注",
+            "target": "self",
+            "cost": 0,
+            "detail": "恢复 4 灵力，获得 4 点护盾"
+          }
+        ]
+      },
+      "heroSpots": [
+        {
+          "x": 190,
+          "y": 395,
+          "h": 245
+        },
+        {
+          "x": 305,
+          "y": 468,
+          "h": 252
+        },
+        {
+          "x": 405,
+          "y": 515,
+          "h": 224
+        }
+      ],
+      "enemySpots": [
+        {
+          "x": 797,
+          "y": 399,
+          "h": 260
+        },
+        {
+          "x": 938,
+          "y": 484,
+          "h": 185
+        },
+        {
+          "x": 768,
+          "y": 519,
+          "h": 204
+        }
+      ],
+      "intents": [
+        {
+          "enemy": 0,
+          "target": 0,
+          "amount": 10,
+          "title": "铜刃"
+        },
+        {
+          "enemy": 1,
+          "target": 1,
+          "amount": 12,
+          "title": "追击低生命"
+        },
+        {
+          "enemy": 2,
+          "target": 2,
+          "amount": 8,
+          "title": "星轮脉冲"
+        }
+      ]
+    },
+    "storage": [
+      "dumpling-showcase-qa-v1-party",
+      "dumpling-showcase-qa-v1-records"
+    ]
+  },
+  "errors": [],
+  "missing": []
+}

@@ -1,0 +1,462 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-03T13:49:31.459Z",
+  "checks": [
+    "Three authored 3D holes load; pre-start action buttons cannot move the ball or add strokes",
+    "Actual canvas targeting and a weak slider shot roll the real ball a short distance, slow by surface resistance, and cannot auto-complete the distant hole",
+    "Pause and reload precisely restore a moving golf ball position, quaternion, linear/angular velocity, direction, strength and stroke count",
+    "Space works while the strength slider retains focus; the restored lateral shot actually strikes an authored boundary and rebounds through sphere–triangle collision",
+    "Hole 1 completes only after the rigid ball falls below the authored cup opening",
+    "Hole 2 completes only after the rigid ball falls below the authored cup opening",
+    "Hole 3 completes only after the rigid ball falls below the authored cup opening, after real uphill travel",
+    "All three distinct holes contribute real strokes, per-hole bests and a final completion record",
+    "Replay restores the first tee and keeps every best score and the completion record",
+    "390-pixel touch controls adjust power and launch a real stroke without horizontal overflow",
+    "QA storage is isolated; no normal saves, missing assets or browser errors"
+  ],
+  "result": {
+    "version": 1,
+    "course": 2,
+    "angle": -6,
+    "power": 15,
+    "strokes": 3,
+    "total": 8,
+    "won": true,
+    "phase": "won",
+    "best": [
+      2,
+      3,
+      3
+    ],
+    "completed": [
+      0,
+      1,
+      2
+    ],
+    "ball": {
+      "position": [
+        0.010515687453814227,
+        0.39896152256914635,
+        -4.661445696715288
+      ],
+      "quaternion": [
+        -0.2651940352341963,
+        0.35174001876307104,
+        0.10200825734018351,
+        0.8919335167551318
+      ],
+      "velocity": [
+        -0.0772087587401695,
+        -2.137036428718334,
+        -0.45508952984228207
+      ],
+      "angularVelocity": [
+        -7.324709303628012,
+        -0.09120660074233282,
+        1.3337486524245294
+      ],
+      "sleepState": 0
+    },
+    "lastShot": {
+      "position": [
+        0.09437619702440478,
+        0.6599995403294725,
+        -3.936440199750451
+      ],
+      "quaternion": [
+        -0.18331290457734808,
+        -0.2878060775611032,
+        -0.15516923279919548,
+        -0.9270849744909133
+      ],
+      "velocity": [
+        0,
+        0,
+        0
+      ],
+      "angularVelocity": [
+        0,
+        0,
+        0
+      ],
+      "sleepState": 2
+    },
+    "elapsed": 59.31800000002314,
+    "stationary": 0,
+    "collisions": 1,
+    "peakHeight": 0.6599995403294726,
+    "replays": 0,
+    "score": 2200,
+    "lastMessage": "三洞完成，共 8 杆。球道中的摩擦、反弹和坡度共同决定了这份成绩。",
+    "rules": {
+      "radius": 0.11,
+      "holeRadius": 0.32,
+      "gravity": -9.81,
+      "maxSpeed": 8.4,
+      "minSpeed": 0.35,
+      "rollingResistance": 0.72,
+      "step": 0.008333333333333333
+    },
+    "courses": [
+      {
+        "name": "向海的直线",
+        "subtitle": "读懂方向与力度",
+        "par": 2,
+        "width": 4.8,
+        "length": 9.6,
+        "start": [
+          0,
+          3.65
+        ],
+        "hole": [
+          0,
+          -2.4
+        ],
+        "height": 0,
+        "obstacles": [],
+        "waypoints": [
+          [
+            0,
+            -2.4
+          ]
+        ]
+      },
+      {
+        "name": "借一道岸壁",
+        "subtitle": "反弹，或绕过短墙",
+        "par": 3,
+        "width": 4.8,
+        "length": 9.6,
+        "start": [
+          -1.4,
+          3.55
+        ],
+        "hole": [
+          0,
+          -2.4
+        ],
+        "height": 0,
+        "obstacles": [
+          {
+            "position": [
+              -1.1,
+              0.2,
+              0.15
+            ],
+            "size": [
+              2.6,
+              0.4,
+              0.36
+            ]
+          }
+        ],
+        "waypoints": [
+          [
+            1.15,
+            1.05
+          ],
+          [
+            1.15,
+            -1.15
+          ],
+          [
+            0,
+            -2.4
+          ]
+        ]
+      },
+      {
+        "name": "海风坡",
+        "subtitle": "上坡要留一些余力",
+        "par": 4,
+        "width": 4.8,
+        "length": 14.4,
+        "start": [
+          -1.2,
+          6.1
+        ],
+        "hole": [
+          0,
+          -4.8
+        ],
+        "height": 0.55,
+        "obstacles": [],
+        "ramp": true,
+        "waypoints": [
+          [
+            0,
+            3.05
+          ],
+          [
+            0,
+            -4.8
+          ]
+        ]
+      }
+    ],
+    "currentCourse": {
+      "name": "海风坡",
+      "subtitle": "上坡要留一些余力",
+      "par": 4,
+      "width": 4.8,
+      "length": 14.4,
+      "start": [
+        -1.2,
+        6.1
+      ],
+      "hole": [
+        0,
+        -4.8
+      ],
+      "height": 0.55,
+      "obstacles": [],
+      "ramp": true,
+      "waypoints": [
+        [
+          0,
+          3.05
+        ],
+        [
+          0,
+          -4.8
+        ]
+      ]
+    },
+    "speed": 0.461592539582549,
+    "ballScreen": {
+      "x": 637.2062750738015,
+      "y": 256.0645730362967,
+      "visible": true
+    },
+    "holeScreen": {
+      "x": 639.2593784079736,
+      "y": 251.09689584145013,
+      "visible": true
+    },
+    "waypointScreens": [
+      {
+        "x": 499.8756126380444,
+        "y": 362.8990656819603,
+        "visible": true
+      },
+      {
+        "x": 639.2593784079736,
+        "y": 251.09689584145013,
+        "visible": true
+      }
+    ],
+    "physicsStep": 2475,
+    "physicsTime": 20.627
+  },
+  "played": [
+    {
+      "course": 0,
+      "start": [
+        0,
+        0.10999952758936016,
+        3.65
+      ],
+      "target": [
+        0,
+        -2.4
+      ],
+      "angle": 0,
+      "power": 5,
+      "end": [
+        0,
+        0.10999952758971898,
+        3.4179201845957032
+      ],
+      "phase": "aim",
+      "collisions": 0,
+      "tag": "weak-shot"
+    },
+    {
+      "course": 0,
+      "start": [
+        0,
+        0.10999951671867195,
+        3.65
+      ],
+      "target": [
+        0,
+        -2.4
+      ],
+      "angle": 0,
+      "power": 44,
+      "end": [
+        0,
+        0.10999952758971898,
+        -1.7240358467921215
+      ],
+      "phase": "aim",
+      "collisions": 0,
+      "tag": "solver"
+    },
+    {
+      "course": 0,
+      "start": [
+        0,
+        0.10999952758971898,
+        -1.7240358467921215
+      ],
+      "target": [
+        0,
+        -2.4
+      ],
+      "angle": 0,
+      "power": 13,
+      "end": [
+        -0.00007798279732962242,
+        -0.12767695039217236,
+        -2.2499577896653364
+      ],
+      "phase": "cleared",
+      "collisions": 0,
+      "tag": "solver"
+    },
+    {
+      "course": 1,
+      "start": [
+        -1.4,
+        0.10999949150185578,
+        3.55
+      ],
+      "target": [
+        1.15,
+        1.05
+      ],
+      "angle": 46,
+      "power": 35,
+      "end": [
+        1.2312138027786923,
+        0.10999952758971898,
+        1.0090663665391828
+      ],
+      "phase": "aim",
+      "collisions": 0,
+      "tag": "solver"
+    },
+    {
+      "course": 1,
+      "start": [
+        1.2312138027786923,
+        0.10999952758971898,
+        1.0090663665391828
+      ],
+      "target": [
+        1.15,
+        -1.15
+      ],
+      "angle": -2,
+      "power": 26,
+      "end": [
+        1.1531259164238927,
+        0.10999952758971898,
+        -1.2270781254444076
+      ],
+      "phase": "aim",
+      "collisions": 0,
+      "tag": "solver"
+    },
+    {
+      "course": 1,
+      "start": [
+        1.1531259164238927,
+        0.10999952758971898,
+        -1.2270781254444076
+      ],
+      "target": [
+        0,
+        -2.4
+      ],
+      "angle": -45,
+      "power": 22,
+      "end": [
+        0.10139804099433791,
+        -0.13442348040441976,
+        -2.2936903466362217
+      ],
+      "phase": "cleared",
+      "collisions": 0,
+      "tag": "solver"
+    },
+    {
+      "course": 2,
+      "start": [
+        -1.2,
+        0.10999952721195554,
+        6.1
+      ],
+      "target": [
+        0,
+        3.05
+      ],
+      "angle": 21,
+      "power": 32,
+      "end": [
+        -0.0710907785555421,
+        0.10999952758971898,
+        3.159090932183035
+      ],
+      "phase": "aim",
+      "collisions": 0,
+      "tag": "solver"
+    },
+    {
+      "course": 2,
+      "start": [
+        -0.0710907785555421,
+        0.10999952758971898,
+        3.159090932183035
+      ],
+      "target": [
+        0,
+        -4.8
+      ],
+      "angle": 1,
+      "power": 75,
+      "end": [
+        0.09437619702440478,
+        0.6599995403294725,
+        -3.936440199750451
+      ],
+      "phase": "aim",
+      "collisions": 0,
+      "tag": "solver"
+    },
+    {
+      "course": 2,
+      "start": [
+        0.09437619702440478,
+        0.6599995403294725,
+        -3.936440199750451
+      ],
+      "target": [
+        0,
+        -4.8
+      ],
+      "angle": -6,
+      "power": 15,
+      "end": [
+        0.010515687453814227,
+        0.39896152256914635,
+        -4.661445696715288
+      ],
+      "phase": "won",
+      "collisions": 0,
+      "tag": "solver"
+    }
+  ],
+  "weakDistance": 0.23207981540429667,
+  "screenshots": [
+    "assets/game-forms/motion-qa/putt-playable.png",
+    "assets/game-forms/motion-qa/mobile-putt.png"
+  ],
+  "limitations": [
+    "Three original short holes with authored triangle-mesh collisions, surface rolling resistance and a physical cup opening.",
+    "Fixed camera, no movable avatar; two native direction/power sliders and actual shot buttons."
+  ],
+  "errors": [],
+  "missing": []
+}

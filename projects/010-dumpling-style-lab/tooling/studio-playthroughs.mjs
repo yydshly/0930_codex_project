@@ -1,0 +1,10 @@
+import {freshStudio,commandStudio,stepStudio,JIGSAW,glassDeduction} from '../web/showcase-studio-rules.js';
+export function advance(s,seconds,drive={x:0}){for(let t=0;t<seconds-1e-7;t+=1/60)stepStudio(s,Math.min(1/60,seconds-t),drive)}
+export function playStudio(id){const s=freshStudio(id),snapshots={initial:structuredClone(s)},cmd=(key,value)=>{if(!commandStudio(s,key,value))throw Error(id+' command rejected: '+key)};if(id==='mosaic'){for(let i=0;i<12;i++){cmd('select',i);while(s.pieces[i].rotation!==0)cmd('rotate',1);cmd('move',{x:JIGSAW.x+(i%4+.5)*132,y:JIGSAW.y+(Math.floor(i/4)+.5)*132});cmd('release');if(i===5)snapshots.progress=structuredClone(s)}}
+ if(id==='span'){for(let i=0;i<5;i++)for(const a of [i,i+1]){cmd('node',a);cmd('node',i+6)}for(let i=6;i<10;i++){cmd('node',i);cmd('node',i+1)}cmd('test');advance(s,6);snapshots.progress=structuredClone(s);advance(s,8)}
+ if(id==='lumen'){for(let level=0;level<2;level++){if(level)cmd('next');for(let i=0;i<3;i++){cmd('select',i);cmd('rotate',i<2?-1:1);if(level===0&&i===1)snapshots.progress=structuredClone(s)}advance(s,1.6)}}
+ if(id==='sonata'){for(const [track,steps] of [[0,[0,3,6,8,11,14]],[1,[0,4,8,12]],[2,[0,4,8,12]],[3,[2,6,10,14]]])for(const step of steps){cmd('select',{track,step});cmd('toggle');if(track===0&&step===6)cmd('pitch',1)}cmd('play');advance(s,1.3);snapshots.progress=structuredClone(s);advance(s,5)}
+ if(id==='afterimage'){cmd('record');advance(s,205/145,{x:1});advance(s,.3);cmd('stop');advance(s,485/145,{x:1});advance(s,1.7);snapshots.progress=structuredClone(s);advance(s,380/145,{x:1})}
+ if(id==='weave'){for(let i=0;i<70&&!s.won;i++){const d=glassDeduction(s.cells);if(d.bad.length||!d.forced.length)throw Error('Clues require guessing');for(const hint of d.forced){if(s.cells[hint.index])continue;cmd('brush',hint.value);cmd('mark',hint.index)}if(i===1)snapshots.progress=structuredClone(s)}}
+ snapshots.complete=structuredClone(s);if(!snapshots.progress)snapshots.progress=structuredClone(s);return {s,snapshots};
+}

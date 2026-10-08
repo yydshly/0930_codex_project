@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-05",
+  "scope": "Third original direction study: local cooperative platform traversal and collision-driven level authoring, with freezing/rescue and reusable level files. Prior factory, park, local cooperation prototype and single-character creator all retained.",
+  "primary_reference": "https://ddnet.org/",
+  "reference_basis": "DDNet official overview connects cooperation through custom maps, authoring, ranks and tournaments. This sample explores local rescue and level-file sharing, and does not implement that project's full physics, online play or community services.",
+  "visual_method": "Actual production Canvas2D module and simulation, rendered via Skia. This is not a browser screenshot or HTML/CSS render.",
+  "reviewed_frames": ["assets/directions/cooperation-qa/rescue-needed.png", "assets/directions/cooperation-qa/gate-opening.png", "assets/directions/cooperation-qa/crossing.png", "assets/directions/cooperation-qa/together.png", "assets/directions/cooperation-qa/creator.png"],
+  "visual_review": [
+    "Cool alpine mountain scene, amber lights and slate/brass mechanism art distinguish this side-on action direction from the factory and isometric park.",
+    "Transparent asset atlas crops remove empty margins around physical stone platforms; all original generated image files are preserved unchanged.",
+    "Two adult explorer characters have standing, alternating running and airborne frames, runtime facing reversal and state-driven freeze overlay.",
+    "Frozen player and rescue prompt are visible in the first scene; open gate translucency and remaining latch time correspond to actual mechanism state.",
+    "Neighboring player labels are vertically separated to avoid overlapping; editor grid and material cursor show the exact collision layout used for play."
+  ],
+  "verification": {
+    "rule_checks": 16,
+    "production_callback_checks": 12,
+    "ordinary_completed_maps": 3,
+    "prior_factory_and_park_regression_checks": 46,
+    "site_tests": 6,
+    "built_demos": 19,
+    "package_checks": 331,
+    "protected_prior_files_unchanged": 2555,
+    "source_build_http_matching_files": 12
+  },
+  "browser_acceptance": "pending",
+  "browser_failure": "CUA kernel exited: windows sandbox helper_unknown_error; setup refresh had errors.",
+  "pending_platform_checks": ["CSS and narrow-screen layout", "actual multitouch, focus and pointer capture", "fullscreen", "browser level download/import UI", "refresh persistence in real localStorage"],
+  "limitations": ["Three short maps, no long campaign", "Local keyboard/touch cooperation and level file sharing only; no online multiplayer or community service", "Canvas2D, not true 3D", "No upstream game port or borrowed upstream art", "No human enjoyment, retention or commercial quality acceptance study"]
+}

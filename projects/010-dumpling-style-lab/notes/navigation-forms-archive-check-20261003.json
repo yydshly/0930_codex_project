@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "checks": [
+    "Real scene clicks collect objects and use selected key to unlock another room",
+    "Actual inventory combination creates a tool that opens the real cabinet",
+    "Wrong symbol sequence fails; actual clue sequence opens lock and awards lens",
+    "archive actual pause/save/reload retains progress",
+    "Real item use repairs power and telescope, then completes the observatory",
+    "28 forms, four pending directions and real 3D comparison focus pause",
+    "390px layout fits and direct mobile scene input collects a real inventory item"
+  ],
+  "results": {
+    "archive": {
+      "version": 1,
+      "room": "observatory",
+      "inventory": [
+        "lever"
+      ],
+      "selected": null,
+      "combine": false,
+      "drawer": true,
+      "handleTaken": true,
+      "headTaken": true,
+      "doorOpen": true,
+      "clue": true,
+      "cabinetOpen": true,
+      "lockOpen": true,
+      "code": [
+        "star",
+        "moon",
+        "sea"
+      ],
+      "codeAttempts": 2,
+      "codePanel": false,
+      "powered": true,
+      "lensInstalled": true,
+      "won": true,
+      "phase": "won",
+      "score": 2000,
+      "interactions": 21,
+      "message": "海岸的航标重新点亮。潮灯档案的这一夜完成了。",
+      "history": [
+        "维修室里有工具箱、配电柜和三象锁盒。",
+        "工具箱里有铁撬头。试着与木柄组合。",
+        "先选一件道具，再选另一件道具尝试组合。",
+        "已选择 木柄，再点击场景中的目标。",
+        "木柄与铁撬头组合成了完整撬具。",
+        "撬具打开了配电柜，取出一枚完好的保险管。",
+        "按星图顺序选择三象。",
+        "三象顺序不符。看过星图后，可以再次尝试。",
+        "星、月、海顺序正确。锁盒打开，取出望远镜片。",
+        "观测室的能源与望远镜仍待恢复。",
+        "控制台等待能源与清晰的观测信号。先恢复接线盒和望远镜。",
+        "已选择 保险管，再点击场景中的目标。",
+        "保险管装入，观测室的能源恢复了。",
+        "已选择 望远镜片，再点击场景中的目标。",
+        "镜片装入，望远镜重新对准远处海岸。",
+        "海岸的航标重新点亮。潮灯档案的这一夜完成了。"
+      ],
+      "elapsed": 3.106900000011917,
+      "hotspots": [
+        {
+          "id": "back",
+          "name": "返回维修室",
+          "x": 82,
+          "y": 322,
+          "r": 65
+        },
+        {
+          "id": "power",
+          "name": "能源接线盒",
+          "x": 260,
+          "y": 306,
+          "r": 68
+        },
+        {
+          "id": "scope",
+          "name": "望远镜",
+          "x": 602,
+          "y": 311,
+          "r": 110
+        },
+        {
+          "id": "console",
+          "name": "航标控制台",
+          "x": 920,
+          "y": 429,
+          "r": 85
+        }
+      ],
+      "itemNames": {
+        "key": "铜钥匙",
+        "handle": "木柄",
+        "head": "铁撬头",
+        "lever": "组装撬具",
+        "fuse": "保险管",
+        "lens": "望远镜片"
+      }
+    }
+  },
+  "errors": [],
+  "missing": []
+}
