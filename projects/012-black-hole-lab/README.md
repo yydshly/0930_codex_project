@@ -10,6 +10,8 @@
 
 [沿用的总览图 PNG](https://yydshly.github.io/0930_codex_project/projects/012-black-hole-lab/assets/understanding-map.png) · [可编辑 SVG](https://yydshly.github.io/0930_codex_project/projects/012-black-hole-lab/assets/understanding-map.svg) · [完整 MiniMax 旁白 MP3](https://yydshly.github.io/0930_codex_project/projects/012-black-hole-lab/audio/narration/full-course.mp3)。
 
+[时空与光钟交互实验](https://yydshly.github.io/0930_codex_project/projects/012-black-hole-lab/time-and-light.html)：沿用讨论中的事件坐标、不同半径的理想静止时钟、视界内外光路与高速光钟动画。引力时钟与运动光钟分别说明假设；光钟用于测量时间，不是衰老的光源。
+
 本地网页入口为 [web/index.html](web/index.html#overview)，完整档案为 [web/research.html](web/research.html)。档案保留 UNDERSTANDING、SCIENCE、PRINCIPLES、NARRATION、CONSTRUCTION 与 research 六份文档的完整正文、全部已保存验证记录与 GitHub 原始资料链接；当前科学说明与模型放在前面，旧版着色器构造记录明确标为历史。引导图使用之前生成的总览图，不重新生成。
 
 网页新增 [理解总结](web/index.html#understanding)：一张可下载的总览图串起黑洞效果、形成机制、时空影响、固有时与身体衰老、证据和未知。图下有适合手机及辅助阅读的完整文字版，保留“真实时间差 / 普通环境影响 / 收到的光似乎停住”三种情况的区分。

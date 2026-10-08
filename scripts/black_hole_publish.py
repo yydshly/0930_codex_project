@@ -4,7 +4,7 @@ import hashlib
 import json
 import shutil
 
-PAGES = ('index.html', 'research.html', 'styles.css', 'app.js', 'course.js',
+PAGES = ('index.html', 'research.html', 'time-and-light.html', 'styles.css', 'app.js', 'course.js',
          'narration.js', 'model.js', 'physics.js', 'shaders.js')
 ASSETS = ('summary-effect.png', 'understanding-map.png', 'understanding-map.svg')
 AUDIO = tuple(f'{chapter:02d}-{cue:02d}.mp3' for chapter in range(10)

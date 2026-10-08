@@ -262,6 +262,16 @@ def build(publication_date: str = PUBLICATION_DATE, check: bool = False) -> Path
         contents.append(f'<li><a href="#{anchor}">{html.escape(title)}</a></li>')
     contents.extend(['<li><a href="#records">全部验证记录与适用范围</a></li>', '<li><a href="#sources">来源、源码与公开范围</a></li>'])
     record_cards = "\n".join(validation_card(path) for path in records)
+    publication_records = " · ".join(
+        f'<a href="{source_url(PROJECT / "notes" / name)}">{label}</a>'
+        for name, label in (
+            ("time-experiments-checks.json", "讨论交互图实测"),
+            ("publication-local-checks.json", "本机完整发布检查"),
+            ("publication-online-checks.json", "公网文件与浏览器检查"),
+            ("deployment-summary.json", "正式发布记录"),
+        )
+    )
+    record_cards += '<article class="record-card"><h3>当前发布与交互验收</h3><p>以下记录保存在源码仓库，随正式发布核对后更新；逐项文件散列、播放与下载、手机布局及讨论图输出均可查阅。</p><p>' + publication_records + '</p></article>'
     output = f'''<!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080b11"><meta name="description" content="Black Hole Lab 完整研究档案：黑洞理解整理、科学说明、成像公式、10章30段中文旁白原稿、课程设计、历史版本和验证记录。"><title>Black Hole Lab · 完整理解与研究档案</title><link rel="stylesheet" href="styles.css"><style>{CSS}</style></head>
 <body class="archive-page"><header class="site-header"><a class="wordmark" href="index.html#overview"><span class="orbit-mark" aria-hidden="true"></span>BLACK HOLE <span>LAB</span></a><nav aria-label="返回展示与理解"><a href="index.html#overview">全部入口</a><a href="index.html#experiment">效果与课程</a><a href="index.html#understanding">理解总结</a><a href="index.html#references">相关链接</a></nav><span class="project-number">研究集 / 012</span></header>

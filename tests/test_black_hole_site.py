@@ -39,9 +39,10 @@ class BlackHolePublicationTests(unittest.TestCase):
             project = self.fixture(root)
             manifest = publish_black_hole(project, root/'public')
             paths = {f['path'] for f in manifest['files']}
-            self.assertEqual(len(paths), 43)
+            self.assertEqual(len(paths), 44)
             self.assertEqual(len([p for p in paths if p.endswith('.mp3')]), 31)
             self.assertIn('research.html', paths)
+            self.assertIn('time-and-light.html', paths)
             for f in manifest['files']:
                 data = (root/'public'/f['path']).read_bytes()
                 self.assertEqual(len(data), f['bytes'])

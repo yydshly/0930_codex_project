@@ -160,6 +160,7 @@ def build(root=ROOT):
                                 f'<a href="./{relative}/assets/understanding-map.svg">放大原有总览图</a> · '
                                 f'<a href="./{relative}/audio/narration/full-course.mp3">完整中文旁白</a> · '
                                 f'<a href="./{relative}/research.html">全文与研究档案</a> · '
+                                f'<a href="./{relative}/time-and-light.html">时空与光钟实验</a> · '
                                 f'<a href="./{relative}/#applications">场景与扩展</a> · '
                                 f'<a href="./{relative}/#references">原帖与科学依据</a></p>')
         entries.append(f'<tr><td>{project["id"]:03d}</td><th scope="row"><a href="./{relative}/">{name}</a></th>'

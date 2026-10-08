@@ -9,7 +9,7 @@ function check(name,ok,details){report.checks.push({name,passed:!!ok,details});c
 const digest=b=>crypto.createHash('sha256').update(b).digest('hex');
 async function main(){
  const response=await fetch(new URL('publication-manifest.json',base));check('Public manifest available',response.status===200,{status:response.status});
- const manifest=await response.json();check('Complete public runtime and all narration registered',manifest.files.length===43&&manifest.files.filter(f=>f.path.endsWith('.mp3')).length===31&&manifest.audio.segments===30,{count:manifest.files.length});
+ const manifest=await response.json();check('Complete public runtime and all narration registered',manifest.files.length===44&&manifest.files.filter(f=>f.path.endsWith('.mp3')).length===31&&manifest.audio.segments===30,{count:manifest.files.length});
  for(let i=0;i<manifest.files.length;i+=4)await Promise.all(manifest.files.slice(i,i+4).map(async f=>{
   const r=await fetch(new URL(f.path,base)),data=Buffer.from(await r.arrayBuffer());
   const record={path:f.path,status:r.status,bytes:data.length,sha256:digest(data),passed:r.status===200&&data.length===f.bytes&&digest(data)===f.sha256};
@@ -51,7 +51,7 @@ async function main(){
   check('Final chapter audio is available and playable',await p.locator('audio').evaluate(a=>a.getAttribute('src').includes('09-00.mp3')&&a.duration>10));await p.locator('#pause').click();
   const fullDuration=await p.evaluate(async()=>{const a=new Audio('audio/narration/full-course.mp3');a.preload='metadata';return new Promise((resolve,reject)=>{a.onloadedmetadata=()=>resolve(a.duration);a.onerror=()=>reject(Error('Full narration decode failed'));});});
   check('Complete-course MP3 decodes to about 13 minutes',fullDuration>780&&fullDuration<790,{duration:fullDuration});
-  for(const name of ['index.html','research.html']){
+  for(const name of ['index.html','research.html','time-and-light.html']){
    await p.goto(new URL(name,base).href,{waitUntil:'networkidle'});
    const anchors=await p.evaluate(()=>{const ids=[...document.querySelectorAll('[id]')].map(x=>x.id),missing=[...document.querySelectorAll('a[href^="#"]')].map(a=>a.getAttribute('href').slice(1)).filter(id=>id&&!document.getElementById(id));return{duplicates:ids.filter((id,n)=>ids.indexOf(id)!==n),missing};});
    check('All local fragments exist in '+name,!anchors.duplicates.length&&!anchors.missing.length,anchors);
@@ -60,6 +60,20 @@ async function main(){
    await p.setViewportSize({width,height:900});await p.goto(new URL('research.html#science',base).href,{waitUntil:'networkidle'});
    const layout=await p.evaluate(()=>({scroll:document.documentElement.scrollWidth,sections:['understanding','science','narration','records'].every(id=>document.getElementById(id))}));
    check('Complete archive readable at '+width+'px',layout.scroll<=width+1&&layout.sections,layout);
+  }
+  for(const width of [1280,390,320]){
+   await p.setViewportSize({width,height:900});await p.goto(new URL('time-and-light.html',base).href,{waitUntil:'networkidle'});
+   await p.locator('#spacetime-basics-v1 [data-next]').click();await p.locator('#spacetime-basics-v1 [data-action]').click();
+   const clocks=await p.locator('#spacetime-basics-v1').innerText();
+   check('Interactive static clocks accumulate 60.0s and 52.2s at '+width+'px',clocks.includes('60.0')&&clocks.includes('52.2'),{width});
+   await p.locator('#spacetime-basics-v1 [data-next]').click();for(let n=0;n<4;n++)await p.locator('#spacetime-basics-v1 [data-action]').click();
+   check('Horizon light diagram advances to its final state at '+width+'px',await p.locator('#spacetime-basics-v1 [data-heading]').innerText()==='黑洞边界：向外发出的光');
+   await p.locator('#light-clock-aging-v1 [data-play]').click();
+   await p.waitForFunction(()=>document.querySelector('#light-clock-aging-v1 [data-play]').textContent.includes('再播放一次'));
+   const counts=await p.locator('#light-clock-aging-v1').evaluate(el=>({still:el.querySelector('[data-still-count]').textContent,moving:el.querySelector('[data-moving-count]').textContent}));
+   check('Motion light clock completes with 1.67 versus 1.00 ticks at '+width+'px',counts.still.includes('1.67')&&counts.moving.includes('1.00'),counts);
+   const layout=await p.evaluate(()=>({scroll:document.documentElement.scrollWidth,overflow:[...document.querySelectorAll('svg text')].filter(t=>{const b=t.getBBox(),v=t.ownerSVGElement.viewBox.baseVal;return b.x<-.5||b.x+b.width>v.width+.5;}).length}));
+   check('All discussion experiments fit page and SVG at '+width+'px',layout.scroll<=width+1&&layout.overflow===0,layout);
   }
   await p.goto(base,{waitUntil:'networkidle'});const mapSaved=p.waitForEvent('download');await p.locator('.overview-links a[download]').first().click();const map=await mapSaved,mapPath=path.join(output,'understanding-map.png');await map.saveAs(mapPath);
   check('Native guide download preserves original PNG',digest(fs.readFileSync(mapPath))==='73a859b1ad6a710c4aa19706ba1828849b49169a368a57ff65cf6d4779908c54');
