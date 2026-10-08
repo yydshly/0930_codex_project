@@ -1,0 +1,84 @@
+{
+  "reviewed": "2026-10-02",
+  "scope": "Consolidation of the conversation, checked source designs, actual local implementations, proposed product controls and optional extensions. The page does not call a generation API.",
+  "page": "understanding.html",
+  "claims": [
+    {
+      "topic": "Ten links and distinct outputs",
+      "evidence": "technical-source/ours/atlas-overview-content.json",
+      "status": "Source capabilities and local previews separately documented"
+    },
+    {
+      "topic": "Code animation, director and virtual clock",
+      "evidence": "technical-source/shipvideo/source-map.json",
+      "commit": "53d7c6f752fb85b449de8cf806b77ad21808a8f1",
+      "status": "Source read; original cloud application not executed locally"
+    },
+    {
+      "topic": "Real six-scene local production",
+      "evidence": "technical-source/ours/launch-real-evidence.json",
+      "status": "Actual 24-second 1280x720 24fps 576-frame MP4, no audio; full decode passed"
+    },
+    {
+      "topic": "H3 audio condition and no separate lip-sync pass in the main workflow",
+      "evidence": [
+        "technical-source/makevoid/video.rb.txt",
+        "technical-source/makevoid/prompts.md.txt",
+        "technical-source/makevoid/h3_max_image_to_video.rb.txt"
+      ],
+      "commit": "deb6efd51d08cc19fdcd3f96db43f4d903868da9",
+      "status": "Source read; target audio is not proof of phoneme alignment"
+    },
+    {
+      "topic": "Official API local pilot",
+      "evidence": [
+        "production/h3-pilot-status.json",
+        "technical-source/ours/minimax-pilot.py.txt",
+        "media/still-a-light-h3-composite.mp4"
+      ],
+      "status": "5 seconds of actual generated performance; phoneme-level sync not accepted"
+    },
+    {
+      "topic": "Local cutout and compositing",
+      "evidence": [
+        "technical-source/ours/composite-h3-pilot.py.txt",
+        "technical-source/ours/pilot-alpha-check.json"
+      ],
+      "status": "Basic alpha metrics checked; full acting, edges and lip-sync quality require separate playback review"
+    },
+    {
+      "topic": "Seated train staging",
+      "evidence": [
+        "media/still-a-light-train-v2.png",
+        "mv-architecture.html#staging"
+      ],
+      "status": "Existing still reference; generated seated performance, contact and occlusion not implemented"
+    },
+    {
+      "topic": "Whole-song picture MV",
+      "evidence": "media/still-a-light-generated-v2.mp4",
+      "status": "Actual picture-based MV with camera and edit motion; not a whole-song generated performance"
+    },
+    {
+      "topic": "Hard product controls, templates and automatic URL service",
+      "evidence": "launch-architecture.html#next",
+      "status": "Proposed modules; not all implemented"
+    },
+    {
+      "topic": "Direct deterministic SVG example",
+      "evidence": "understanding.js",
+      "status": "Local code computes position from time; no model or generation request"
+    }
+  ],
+  "mediaLoading": "Local assets only; video preload none; external repository links are explicit user navigation.",
+  "newPaidGenerationCalls": 0,
+  "credentialsRead": false,
+  "notClaimed": [
+    "Exact lip-sync accuracy",
+    "Full-song H3 performance",
+    "A general URL-to-video product",
+    "Complete gameplay validation",
+    "A reusable prompt guarantees the original result",
+    "The model alone determines all creative quality"
+  ]
+}

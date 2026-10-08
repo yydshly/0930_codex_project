@@ -1,0 +1,90 @@
+// Media production only: renders this authored local Canvas scene, not user-browser automation.
+const fs = require('node:fs');
+const path = require('node:path');
+const crypto = require('node:crypto');
+const { spawn, execFileSync } = require('node:child_process');
+const { chromium } = require('[本机配置路径]');
+const base = path.resolve(__dirname, '../..');
+const web = path.join(base, 'web');
+const bin = '[本机配置路径]';
+const output = path.join(web, 'media/atlas-launch-real.mp4');
+const partial = path.join(base, 'notes/atlas-launch-real.partial.mp4');
+const shots = [1.5, 6.8, 10.5, 14.5, 18, 22];
+const hash = file => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+async function main() {
+  let browser, encoder;
+  const errors = [], failedRequests = [];
+  const started = Date.now();
+  try {
+    browser = await chromium.launch({ executablePath: '[本机配置路径] Files/Google/Chrome/Application/chrome.exe', headless: true });
+    const page = await browser.newPage({ viewport: { width: 1280, height: 720 }, deviceScaleFactor: 1 });
+    page.on('pageerror', e => errors.push(e.message));
+    page.on('requestfailed', req => failedRequests.push(req.url()));
+    page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
+    await page.route('**/*', route => {
+      const url = new URL(route.request().url());
+      return url.origin === 'htt[本机配置路径]' ? route.continue() : route.abort();
+    });
+    await page.goto('htt[本机配置路径]', { waitUntil: 'load' });
+    await page.evaluate(() => window.__ready);
+    await page.evaluate(() => document.fonts.ready);
+    await page.evaluate(() => { document.documentElement.dataset.export = 'true'; });
+    for (let i = 0; i < shots.length; i++) {
+      await page.evaluate(t => window.__seek(t), shots[i]);
+      await page.locator('#film').screenshot({ path: path.join(web, `media/atlas-real-${i + 1}.jpg`), type: 'jpeg', quality: 94 });
+    }
+    // Backward seeking must reproduce the same scene pixels before encoding.
+    await page.evaluate(() => window.__seek(10.5));
+    const a = await page.locator('#film').screenshot({ type: 'png' });
+    await page.evaluate(() => window.__seek(2));
+    await page.evaluate(() => window.__seek(10.5));
+    const b = await page.locator('#film').screenshot({ type: 'png' });
+    if (!a.equals(b)) throw new Error('Scene is not reproducible on backward seek.');
+    if (errors.length || failedRequests.length) throw new Error(JSON.stringify({ errors, failedRequests }));
+    encoder = spawn(path.join(bin, 'ffmpeg.exe'), ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-vcodec', 'mjpeg', '-framerate', '24', '-i', 'pipe:0', '-an', '-c:v', 'libx264', '-preset', 'fast', '-crf', '18', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', partial], { stdio: ['pipe', 'ignore', 'pipe'] });
+    let stderr = '';
+    encoder.stderr.on('data', data => { stderr += data; });
+    encoder.stdin.on('error', () => {});
+    const finished = new Promise((resolve, reject) => {
+      encoder.on('error', reject);
+      encoder.on('close', code => code === 0 ? resolve() : reject(new Error(stderr || 'Encoding failed.')));
+    });
+    finished.catch(() => {});
+    for (let frame = 0; frame < 576; frame++) {
+      await page.evaluate(t => window.__seek(t), frame / 24);
+      const image = await page.locator('#film').screenshot({ type: 'jpeg', quality: 94 });
+      if (!encoder.stdin.write(image)) await new Promise(resolve => encoder.stdin.once('drain', resolve));
+      if (frame % 96 === 0) console.log('rendered ' + frame + '/576');
+      if (errors.length || failedRequests.length) throw new Error(JSON.stringify({ errors, failedRequests }));
+    }
+    encoder.stdin.end(); await finished; encoder = null;
+    const probe = JSON.parse(execFileSync(path.join(bin, 'ffprobe.exe'), ['-v', 'error', '-show_streams', '-show_format', '-of', 'json', partial], { encoding: 'utf8' }));
+    const video = probe.streams.find(stream => stream.codec_type === 'video');
+    if (video.nb_frames !== '576' || video.width !== 1280 || video.height !== 720 || video.avg_frame_rate !== '24/1' || Math.abs(Number(probe.format.duration) - 24) > .001) throw new Error('Encoded media does not match production spec.');
+    execFileSync(path.join(bin, 'ffmpeg.exe'), ['-v', 'error', '-i', partial, '-f', 'null', '-']);
+    fs.copyFileSync(partial, output);
+    // Public posters are extracted from the encoded MP4, not an imagined storyboard.
+    for (let i = 0; i < shots.length; i++) execFileSync(path.join(bin, 'ffmpeg.exe'), ['-y', '-v', 'error', '-ss', String(shots[i]), '-i', output, '-frames:v', '1', '-q:v', '2', path.join(web, `media/atlas-real-${i + 1}.jpg`)]);
+    fs.copyFileSync(path.join(web, 'production/launch-real.js'), path.join(web, 'technical-source/ours/launch-real.js.txt'));
+    fs.copyFileSync(__filename, path.join(web, 'technical-source/ours/render-launch-real.cjs.txt'));
+    const evidence = {
+      producedAt: new Date().toISOString(), creator: 'Current conversation model authored the actual storyboard and scene code',
+      input: 'technical-source/ours/launch-real-input.json', plan: 'technical-source/ours/launch-real-plan.json',
+      execution: 'Local Chromium screenshots of draw(frame / 24), decoded local assets, H.264 encoding with FFmpeg',
+      additionalModelApiCalls: 0, paidCalls: 0, output: 'media/atlas-launch-real.mp4',
+      width: 1280, height: 720, frames: 576, fps: 24, duration: 24, audioTracks: probe.streams.filter(s => s.codec_type === 'audio').length,
+      runtimeErrors: errors, failedRequests, backwardSeekSamePixels: true, fullDecodePassed: true,
+      elapsedSeconds: (Date.now() - started) / 1000,
+      samples: shots.map((seconds, i) => ({ seconds, file: `media/atlas-real-${i + 1}.jpg`, extractedFromEncodedMp4: true })),
+      files: ['web/production/launch-real.html', 'web/production/launch-real.css', 'web/production/launch-real.js', 'notes/launch-real-plan.json', 'web/technical-source/ours/launch-real-input.json', 'web/media/atlas-launch-real.mp4', 'web/media/still-a-light-h3-composite.mp4', 'web/media/still-a-light-train-v2.png', 'web/media/atlas-technical-03.jpg', 'tooling/production/render-launch-real.cjs'].map(file => ({ file, sha256: hash(path.join(base, file)) })),
+      qualityNote: 'Production frames were inspected directly. Promotional quality remains a creative judgment; no model-generated score is claimed. Research-page browser interaction has not been visually verified.'
+    };
+    fs.writeFileSync(path.join(web, 'technical-source/ours/launch-real-evidence.json'), JSON.stringify(evidence, null, 2) + '\n');
+    fs.writeFileSync(path.join(base, 'notes/launch-real-render.json'), JSON.stringify(evidence, null, 2) + '\n');
+    console.log(JSON.stringify({ output, frames: evidence.frames, duration: evidence.duration, elapsedSeconds: evidence.elapsedSeconds, checksPassed: true }));
+  } finally {
+    if (encoder) encoder.kill();
+    if (browser) await browser.close();
+  }
+}
+main().catch(error => { console.error(error.message); process.exitCode = 1; });

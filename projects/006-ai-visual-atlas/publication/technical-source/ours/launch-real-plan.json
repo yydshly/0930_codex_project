@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-02",
+  "creator": "Current conversation model: actual content planning and Canvas code authoring",
+  "task": "Make an actual product launch film from the existing Visual Atlas website; show the completed result and its actual production chain.",
+  "methodReference": "Shipvideo pinned source 53d7c6f752fb85b449de8cf806b77ad21808a8f1: product facts, kinetic design, time-controlled browser frames, FFmpeg encoding. Local implementation authored here, not execution of the upstream cloud agent.",
+  "spec": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "durationSeconds": 24,
+    "frames": 576,
+    "audio": "silent"
+  },
+  "design": {
+    "palette": [
+      "#101510",
+      "#d5f883",
+      "#eff2df"
+    ],
+    "typography": "System Arial / Microsoft YaHei",
+    "motion": "clipped type reveals, project cards gathering into categories, actual acting frames as a texture, sequential paths, interface-to-graphic morph, directional wipes"
+  },
+  "storyboard": [
+    {
+      "start": 0,
+      "end": 4,
+      "title": "把想法，变成作品。",
+      "fact": "Website title and hero promise",
+      "decision": "Large kinetic type and a rotating graphic mark",
+      "source": "web/index.html"
+    },
+    {
+      "start": 4,
+      "end": 8,
+      "title": "十个项目，一张地图。",
+      "fact": "10 actual project names and 4 actual categories",
+      "decision": "Ten project cards gather into four category cards",
+      "source": "web/app.js"
+    },
+    {
+      "start": 8,
+      "end": 12,
+      "title": "先看到效果。",
+      "fact": "Existing H3 pilot, image MV, and webpage launch film",
+      "decision": "Three product examples; H3 panel shows actual moving pilot frames",
+      "source": "web/production.html and local media"
+    },
+    {
+      "start": 12,
+      "end": 16,
+      "title": "再看懂原理。",
+      "fact": "Research pages explain input, storyboard, code, drawing and encoding",
+      "decision": "Time-driven five-stage path and progressive emphasis",
+      "source": "web/launch-architecture.html"
+    },
+    {
+      "start": 16,
+      "end": 20,
+      "title": "歌曲 → MV / 网页 → 宣传片",
+      "fact": "Two research entries on the homepage",
+      "decision": "Two visual routes: acting excerpt and a content-to-graphic morph",
+      "source": "web/index.html#deep-research"
+    },
+    {
+      "start": 20,
+      "end": 24,
+      "title": "你的下一件作品，从这里开始。",
+      "fact": "Call to action to open this existing atlas",
+      "decision": "One closing message, graphic mark and action pill",
+      "source": "web/index.html"
+    }
+  ],
+  "assetUsage": {
+    "acting": "Existing local still-a-light-h3-composite.mp4, sampled at 12fps to JPEG textures; no new character generation or lipsync inference",
+    "images": "Existing locally created train artwork and a frame of the previously rendered launch film",
+    "graphics": "New original Canvas animation code authored for this production"
+  },
+  "externalPaidCalls": 0,
+  "upstreamCloudExecuted": false,
+  "separateChatGPTApiCalled": false,
+  "limits": [
+    "This is actual scene authoring and rendering by the current conversation model; not an unattended arbitrary-URL generation service.",
+    "Acting shown in the promotional film is an excerpt from the existing pilot, not newly generated or extended acting.",
+    "No voiceover or soundtrack was requested or added."
+  ]
+}

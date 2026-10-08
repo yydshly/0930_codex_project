@@ -1,0 +1,84 @@
+{
+  "repository": "diggerhq/shipvideo",
+  "commit": "53d7c6f752fb85b449de8cf806b77ad21808a8f1",
+  "reviewed": "2026-10-02",
+  "license_paths": [],
+  "full_source_republished": false,
+  "source_executed": false,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "c6c215686860c8ed3f9754cb8a05028364b698d3163cf1d6139d5101d636fbe7",
+      "source_url": "https://github.com/diggerhq/shipvideo/blob/53d7c6f752fb85b449de8cf806b77ad21808a8f1/README.md",
+      "role": "Project overview and the current session-workspace delivery architecture."
+    },
+    {
+      "path": "opencomputer/agents/director/agent.ts",
+      "sha256": "66df1a841b1e1ebcadcd7bb979043e3868a33f4f0aeb4af14d3ffe54fd0f072e",
+      "source_url": "https://github.com/diggerhq/shipvideo/blob/53d7c6f752fb85b449de8cf806b77ad21808a8f1/opencomputer/agents/director/agent.ts",
+      "role": "Code-writing director, style instructions and three tool registrations."
+    },
+    {
+      "path": "opencomputer/agents/director/tools/renderer.ts",
+      "sha256": "d70739abe9826d85a284adc96cbe7dbf2163370285b04b19bb15e7fe13ba3435",
+      "source_url": "https://github.com/diggerhq/shipvideo/blob/53d7c6f752fb85b449de8cf806b77ad21808a8f1/opencomputer/agents/director/tools/renderer.ts",
+      "role": "Virtual clock, browser frame capture and FFmpeg encoding."
+    },
+    {
+      "path": "opencomputer/agents/director/tools/scene.ts",
+      "sha256": "87cdfb0a5e60440ac84955208c07a38f32fe775aba79e68db789ccf5cb6f1977",
+      "source_url": "https://github.com/diggerhq/shipvideo/blob/53d7c6f752fb85b449de8cf806b77ad21808a8f1/opencomputer/agents/director/tools/scene.ts",
+      "role": "Scene validation, sampled checks, rendering and workspace publication."
+    },
+    {
+      "path": "opencomputer/agents/director/tools/web.ts",
+      "sha256": "ed78fd5ae5d40e13d3307bffe5a885c9201a5831af83be8b1823654fdc78b582",
+      "source_url": "https://github.com/diggerhq/shipvideo/blob/53d7c6f752fb85b449de8cf806b77ad21808a8f1/opencomputer/agents/director/tools/web.ts",
+      "role": "Page text and metadata extraction from the returned response HTML."
+    },
+    {
+      "path": "web/src/app/api/jobs/route.ts",
+      "sha256": "e62db8834d47e9ecfc75632ec9a0d1d50d5ff0ad599f48d008f8b14c53afdcb4",
+      "source_url": "https://github.com/diggerhq/shipvideo/blob/53d7c6f752fb85b449de8cf806b77ad21808a8f1/web/src/app/api/jobs/route.ts",
+      "role": "Input validation, session startup and job turn creation."
+    },
+    {
+      "path": "web/src/app/api/jobs/[id]/route.ts",
+      "sha256": "a0d3cbe442417f2be87a9823fa0e73e9bbe427893cc347b62c39f246e8673c97",
+      "source_url": "https://github.com/diggerhq/shipvideo/blob/53d7c6f752fb85b449de8cf806b77ad21808a8f1/web/src/app/api/jobs/[id]/route.ts",
+      "role": "Tool-event phases and result lookup in the session workspace."
+    },
+    {
+      "path": "web/src/lib/oc.ts",
+      "sha256": "dd8a6a6e33d2deac399eb11fb98c0cb9349a4761eea6a09521d6c0a81f52efbe",
+      "source_url": "https://github.com/diggerhq/shipvideo/blob/53d7c6f752fb85b449de8cf806b77ad21808a8f1/web/src/lib/oc.ts",
+      "role": "OpenComputer session/event API and signed workspace file download."
+    },
+    {
+      "path": "web/src/lib/jobs.ts",
+      "sha256": "44350e1278f8889b46adf2ad57960bf5f6b9746437f8dad9bd7ae8ea3e91f6f6",
+      "source_url": "https://github.com/diggerhq/shipvideo/blob/53d7c6f752fb85b449de8cf806b77ad21808a8f1/web/src/lib/jobs.ts",
+      "role": "Job identifiers, job input text and output file names."
+    },
+    {
+      "path": "web/src/lib/examples.ts",
+      "sha256": "1d140f9cbbd521679f0784c978d430630e3281de3e49515d77eda70ca4e72cca",
+      "source_url": "https://github.com/diggerhq/shipvideo/blob/53d7c6f752fb85b449de8cf806b77ad21808a8f1/web/src/lib/examples.ts",
+      "role": "Inputs and saved examples; example media still uses Blob storage."
+    },
+    {
+      "path": "opencomputer/project.ts",
+      "sha256": "2ca5234b8fd70717aa5c650d51b90cd997edf35f2e409f812369403952e98b8f",
+      "source_url": "https://github.com/diggerhq/shipvideo/blob/53d7c6f752fb85b449de8cf806b77ad21808a8f1/opencomputer/project.ts",
+      "role": "Agent project registration."
+    },
+    {
+      "path": "package.json",
+      "sha256": "c85e53fc0d6d20c2d127134e42fc5c224977f054a1d9ad76b5271a81bf1acaed",
+      "source_url": "https://github.com/diggerhq/shipvideo/blob/53d7c6f752fb85b449de8cf806b77ad21808a8f1/package.json",
+      "role": "Runtime and development dependencies."
+    }
+  ],
+  "new_video_model_calls": 0,
+  "local_scope": "Existing 24-second Canvas film and frame renderer; no cloud deployment or arbitrary-URL generation service."
+}

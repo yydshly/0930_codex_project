@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; media-src 'self'; connect-src 'self'; frame-src 'self'">
+  <title>理解与查漏补缺 · 视觉创作能力图谱</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="research.css">
+  <link rel="stylesheet" href="architecture.css">
+  <link rel="stylesheet" href="understanding.css">
+<link rel="stylesheet" href="summary.css"></head>
+<body>
+<header class="understanding-header"><a class="brand" href="index.html#understanding">← 返回能力首页</a><nav aria-label="研究入口"><a href="index.html#all-projects-map">十项目总览图</a><a href="index.html#experience">本地效果</a></nav></header>
+<main><p class="publication-banner">公开研究版：保留说明和选定自制结果；原作者媒体通过来源入口查阅。本机研究副本、历史中间材料与公开范围分别记录。<a href="index.html#publication-scope">查看范围 →</a></p>
+  <section class="hero architecture-hero">
+    <div class="eyebrow">OUR UNDERSTANDING / 全部理解与查漏补缺</div>
+    <h1>模型创作，程序执行。<br><span>先分清每一层，再选方案。</span></h1>
+    <p>最初的目标，是把十个链接的能力和真实效果看懂，再研究歌曲 → MV、网页 → 宣传短片。这里把讨论中的理解串成完整链路，并修正容易混淆的概念。</p>
+    <div class="architecture-note"><strong>已经确认的主线：</strong>语言模型负责理解信息、设计作品与编写代码；图形程序和媒体工具执行画面、交互与编码；需要人物表演时，可接图像和视频模型。设计、素材、模型能力、执行与审查共同决定效果。</div>
+    <div class="understanding-start"><a class="research-link" href="#corrections">先看十二项修正</a><a href="#routes">分清五类产物 →</a><a href="#evidence">查看本机实际范围 →</a></div>
+  </section>
+
+  <nav class="technical-nav" aria-label="理解汇总章节"><a href="#roles">各层分工</a><a href="#routes">五类产物</a><a href="#skill">Skill 的作用</a><a href="#mv">MV 如何生成</a><a href="#staging">人物与场景</a><a href="#launch">网页宣传片</a><a href="#control">控制与沉淀</a><a href="#corrections">查漏补缺</a><a href="#projects">十项目定位</a><a href="#evidence">实测与证据</a></nav>
+
+  <section class="research-block" id="roles">
+    <div class="section-label">01 / WHO DOES WHAT</div><h2>一件作品，先分清创作阶段和运行阶段。</h2>
+    <div class="responsibility"><div><strong>人 / 产品规则</strong><p>确定目标、人群、内容事实、品牌、风格、可用素材与预算；决定什么结果值得接受。</p></div><div><strong>模型 / 创作与修订</strong><p>提炼内容、构思故事、设计分镜；编写场景代码，或用专门的图像 / 视频模型制作素材；根据反馈修改。</p></div><div><strong>程序 / 执行与交付</strong><p>加载素材、运行图形与游戏逻辑、推进时间、检查错误、编码并保存文件。规则只有写进程序，才能被强制执行。</p></div></div>
+    <div class="understanding-chain" aria-label="代码作品的制作与运行"><article><small>制作时</small><b>需求 → 模型 / 作者 → 代码与素材</b><p>模型参与创作，但还要预览、检查和修改。</p></article><span aria-hidden="true">→</span><article><small>运行或导出时</small><b>代码＋素材＋时间 / 输入 → 画面</b><p>已写好的程序负责执行；游戏还会响应玩家操作。</p></article></div>
+    <p>例如动态字体短片：模型设计字的出现顺序和运动，浏览器执行代码画出每一帧，FFmpeg 编码 MP4。Opus 在这类项目中承担导演和程序员的角色，画面运动可由程序计算出来。</p>
+    <p class="architecture-note"><strong>“每帧都是图片”是文件层面的事实。</strong>区别在于帧从哪里来：静态图经过平移缩放、代码重新绘制动态场景、视频模型生成连续表演，或已有视频素材。只看最后的 MP4，无法反推出制作路线。</p>
+  </section>
+
+  <section class="research-block" id="routes">
+    <div class="section-label">02 / FIVE DIFFERENT OUTPUTS</div><h2>音乐配图片只是其中一条路线。</h2>
+    <div class="table-scroll"><table><caption>五类产物及其运动来源</caption><thead><tr><th>路线</th><th>画面与动作怎样产生</th><th>适合的目标 / 本地入口</th></tr></thead><tbody>
+      <tr><td>图片 MV</td><td>生成或导入静态场景；程序做镜头平移、缩放、转场和音乐剪辑。人物的真实表演尚未因此产生。</td><td>氛围、故事意象、低成本整曲版。<a href="production.html#mv-v2">我们的图片 MV</a></td></tr>
+      <tr><td>代码动画视频</td><td>模型或作者写 HTML / SVG / Canvas / p5 / WebGL 场景。位置、姿态、形状、材质和镜头随时间改变，再逐帧编码。</td><td>动态字体、手绘故事、信息图、品牌与机制演示。<a href="launch-architecture.html#real-production">六幕真实制作</a></td></tr>
+      <tr><td>生成式 / 混合 MV</td><td>图像模型制作参考；视频模型生成短镜头的动作与表演；程序将镜头、图形、背景和歌曲剪辑或合成。</td><td>人物演唱与较复杂的自然动作。<a href="production.html#h3-composite">真实 H3 局部试验</a></td></tr>
+      <tr><td>实时游戏</td><td>已经写好的游戏程序根据输入和状态更新画面、碰撞与声音；每次游玩都可以不同。</td><td>可交互体验。<a href="index.html#experience">本地游戏入口</a></td></tr>
+      <tr><td>案例资料库</td><td>收集效果、提示词、原帖与技术分类，帮助找参考和研究。实际制作交给其他工具或平台。</td><td>选方向、追溯来源、比较实现。<a href="#projects">两个资料库的区别</a></td></tr>
+    </tbody></table></div>
+    <p>还可以直接剪辑已有视频或录制真实网页 / 应用操作。它们适合证明产品真实界面；可以与代码动画、生成素材混用。这些路线无需都调用视频生成模型。</p>
+    <div class="technical-card code-example"><span class="tag">直接运行的代码例子 · 无模型调用</span><h3>代码怎样产生运动？改变 t，画面就改变。</h3><p>拖动时间，方块按同一条公式移动。这是正在执行的 SVG 绘图代码；可前后定位。它解释代码动画的运行方式，完整宣传片另有实际 MP4。</p>
+      <svg class="time-drawing" viewBox="0 0 800 150" role="img" aria-label="代码计算位置的移动方块"><path d="M 45 105 H 755" stroke="#46533e" stroke-width="2"/><g id="time-object" transform="translate(45 36)"><rect width="80" height="68" rx="10" fill="#d5f883"/><text x="40" y="42" text-anchor="middle" fill="#101510" font-size="20">代码</text></g><text x="45" y="137" fill="#a3aa9b" font-size="16">0 秒</text><text x="712" y="137" fill="#a3aa9b" font-size="16">5 秒</text></svg>
+      <div class="launch-clock"><label for="code-time">时间 t</label><input id="code-time" type="range" min="0" max="5" step="0.01" value="2"><output id="code-time-label" for="code-time">2.00 s</output><output id="code-x-label">x = 297</output></div><pre><code>t = frame / fps
+x = 45 + 126 * t
+renderAt(t) → 绘制当前帧 → FFmpeg 编码</code></pre>
+    </div>
+  </section>
+
+  <section class="research-block" id="skill">
+    <div class="section-label">03 / MODEL ≠ SKILL ≠ RENDERER</div><h2>Skill 把制作方法交给代理，也连接具体工具。</h2>
+    <div class="table-scroll"><table><caption>工具名称所处的层次</caption><thead><tr><th>层次</th><th>作用</th><th>我们讨论过的例子</th></tr></thead><tbody>
+      <tr><td>语言 / 编码模型</td><td>理解、规划、编写代码和修订；不自动替代全部运行环境。</td><td>原库中的 Opus；本次对话模型编写实际宣传片。</td></tr>
+      <tr><td>图像 / 视频模型</td><td>生成图像或连续的视频画面；能力要按具体模型与接口确认。</td><td>角色参考生图、H3 人物表演。</td></tr>
+      <tr><td>Skill / 导演代理</td><td>提供制作步骤、风格规则、分工、工具调用、预算与审查要求；可以附带脚本和资源。</td><td>makevoid、Lemo、opus-video-skills；Shipvideo 的导演代理。</td></tr>
+      <tr><td>图形工程 / 组件</td><td>提供角色绘制、表情、场景、镜头与动效，模型在其上编排或写代码。</td><td>ClaudeAnimationBase、p5 场景、Three.js / WebGPU。</td></tr>
+      <tr><td>渲染、合成与编码工具</td><td>在指定时刻画帧、处理透明度、拼接音画、编码并交付。</td><td>Chromium / Puppeteer、抠像脚本、FFmpeg。</td></tr>
+    </tbody></table></div>
+    <p>Skill 本身没有训练出另一个模型。它的价值在于把“怎么做、用什么、什么时候检查”变成可重复的流程。仅复制提示词，无法复制缺失的角色组件、渲染器、模型权限或素材。</p>
+    <p class="architecture-note"><strong>更换模型属于适配工作。</strong>可以沿用制作思路与本地工具；接口字段、可用分辨率、音频条件、成本和输出行为需要重新核对。原作效果来自整条制作链路，我们的适配不等于原服务原样运行。</p>
+  </section>
+
+  <section class="research-block" id="mv">
+    <div class="section-label">04 / SONG → PERFORMANCE → MUSIC VIDEO</div><h2>从歌曲到视频：声音驱动表演，时间轴连接各层。</h2>
+    <ol class="pipeline mv-pipeline"><li><b>拆歌曲与叙事</b><span>保留完整歌曲作主音轨；标记段落、歌词与时间，按需提取人声，设计画面事件。</span></li><li><b>确定角色和镜头</b><span>接受统一身份参考，制作姿态与构图关键帧；决定这一镜用分层、完整场景或其他方式。</span></li><li><b>制作表演素材</b><span>给模型参考图、对应音频与表演提示，生成短镜头；检查身份、动作、嘴部与停顿。</span></li><li><b>组织场景与图层</b><span>如采用绿幕，提取人物透明层；把背景、人物、文字与前景放在同一个镜头时间里。</span></li><li><b>连接歌曲时间</b><span>歌曲第 12 秒 → 本次 10–15 秒镜头的第 2 秒 → 24fps 人物素材第 48 帧。</span></li><li><b>审查与成片</b><span>逐镜头检查后拼接整曲，合入连续原歌曲；编码成功与演唱质量分别验收。</span></li></ol>
+    <div class="technical-grid"><article class="technical-card"><h3>口型来自生成的表演画面</h3><p>原 makevoid 固定源码用 Fal H3 Max 图生视频并传入 <code>target_audio_url</code>。本机试验使用 MiniMax 官方 API 的参考图 / 参考音频字段。音频是模型输入条件；实际嘴部动作存在于返回视频中。</p><p>原主线没有再执行一个独立的“Lip Sync”后处理步骤。此前讨论中的“H3 Max Lip Sync”不应当作我们已经拥有的另一个独立模型名称。</p></article><article class="technical-card"><h3>同步要分三个层次验收</h3><ul><li>素材位置：有没有截到正确歌词、贴到歌曲的正确时间。</li><li>粗略节奏：发声与停顿时嘴是否合理开合。</li><li>音素嘴形：具体发音和可见嘴形是否匹配。</li></ul><p>音频上传成功、嘴部能量相关或主音轨相关性，都不能单独证明第三层通过。提示词可以要求同步，无法把要求变成结果保证。</p></article></div>
+    <p class="architecture-note"><strong>生成成功、合成成功和表演自然是不同结论。</strong>API 成功说明拿到了文件；抠像通过说明能分离；时间映射通过说明使用位置正确。还要实际听看脸部、嘴形、动作、边缘与镜头连续性。</p>
+    <div class="source-ref"><a href="mv-architecture.html#models">原接口与本机请求对照</a><a href="mv-architecture.html#timing">歌曲、片段与帧坐标</a><a href="mv-architecture.html#quality">口型辅助检测及限制</a></div>
+  </section>
+
+  <section class="research-block" id="staging">
+    <div class="section-label">05 / SUBJECT AND PRODUCTION ROUTE</div><h2>人物主导、场景主导，与绿幕或整体生成分别选择。</h2>
+    <div class="technical-grid"><article class="technical-card"><span class="tag">创作选择</span><h3>画面围绕谁组织？</h3><p>人物主导：围绕歌手的风格、表演与情绪安排世界。场景主导：围绕列车、城市或事件安排人物。也可以围绕歌词、抽象图形或产品机制，不必强行有歌手。</p></article><article class="technical-card"><span class="tag">技术选择</span><h3>镜头如何制作？</h3><p>分层合成、完整场景生成、视频后做口型、动作 / 3D 驱动、实拍与已有素材剪辑、无人物动效。它们可按镜头混用，主体选择不强制绑定某一种技术。</p></article></div>
+    <div class="staging-understanding"><img src="media/still-a-light-train-v2.png" alt="已有静态构图：人物坐在车厢座位中，手部与桌面关系已经一起设计" loading="lazy" width="1672" height="941"><article><h3>具体例子：人物坐在火车里</h3><p>这张已有静态图，把人物和车厢一起构图。要变成自然动态，还需要同时维持：</p><ul><li>机位、透视与人物尺寸匹配。</li><li>坐姿、臀部与座位、手与桌面的接触。</li><li>桌沿、座椅与手臂正确的前后遮挡。</li><li>光线、阴影、色彩以及运动的一致性。</li></ul><p>把站立近景人物叠到车窗前，只解决背景替换，无法自动得到坐姿和接触关系。当前本机 H3 试验尚未实现这些互动。</p></article></div>
+    <div class="technical-grid"><article class="technical-card"><h3>分层路线怎样做？</h3><p>先设计完整构图，再给人物匹配的姿态与机位，准备场景、接触 / 阴影和遮挡层；生成并提取人物表演后按时间合成。层级、文字与背景更便于修改，但复杂互动需要额外设计。</p></article><article class="technical-card"><h3>完整场景路线怎样做？</h3><p>以人物和车厢已经匹配的完整画面作参考，让模型共同生成镜头。姿态、接触和光线可能更统一，仍需检查变形、身份漂移与表演；修改单一元素可能需要重新生成。</p></article></div>
+    <p>makevoid 默认更偏人物主导的分层动效舞台。原作自然感还依赖统一美术、表演素材、分镜、节奏和多轮审查。绿幕是用于提取人物的手段，无法单独解释全部质量。</p>
+    <div class="source-ref"><a href="mv-architecture.html#routes">六条路线与各自状态</a><a href="mv-architecture.html#staging">完整列车坐姿说明</a><a href="mv-architecture.html#matting">真实抠像实现与限制</a></div>
+  </section>
+
+  <section class="research-block" id="launch">
+    <div class="section-label">06 / URL → PROMOTIONAL VIDEO</div><h2>网页到宣传片，要把“理解内容”和“呈现效果”连起来。</h2>
+    <div class="understanding-chain launch-understanding"><article><small>输入与理解</small><b>URL → 网页事实 → 宣传简报</b><p>记录产品名、卖点、数字与来源。原库主要读取响应 HTML 与元数据；动态界面、交互和视觉品牌可能需要补充截图或抓取。</p></article><span aria-hidden="true">→</span><article><small>创作与交付</small><b>分镜 / 动画代码 → 检查 → 帧 → MP4</b><p>模型选择表达与节奏；程序画帧并编码。原库主线没有视频生成模型，也不会自动录制网页操作。</p></article></div>
+    <p>动画能表达产品机制和卖点，也可以结合真实界面录屏、截图、生图、视频片段、配音与配乐。这些需要明确素材入口、来源和制作工具，不能把扩展构想当作当前主链已经实现。</p>
+    <div class="table-scroll"><table><caption>如果做成“输入网址即可生成”的产品，应该落实的规则</caption><thead><tr><th>产品规则</th><th>模型可以决定</th><th>程序要落实</th></tr></thead><tbody>
+      <tr><td>输入范围</td><td>理解已采集的产品信息。</td><td>先限定公开单页、大小、跳转、超时和可访问来源；处理动态页面与抓取失败。</td></tr>
+      <tr><td>宣传事实</td><td>组织有依据的卖点与文案。</td><td>保存事实来源；数字、引语和功能说明可追溯，缺失信息允许用户补充。</td></tr>
+      <tr><td>表现范围</td><td>在允许的版式与动作中编排。</td><td>固定规格、风格、组件、字体与可用素材，检查文字长度和阅读时长。</td></tr>
+      <tr><td>执行与成本</td><td>按预算选择方案、依据反馈修订。</td><td>任务状态、预算、有限重试、隔离运行环境、恢复与结果保存。</td></tr>
+      <tr><td>验收与交付</td><td>查看画面并修正文案、构图与节奏。</td><td>运行错误、素材加载、帧数、规格与完整解码检查；事实和美感另做审查。</td></tr>
+    </tbody></table></div>
+    <p class="architecture-note"><strong>原库控制与产品建议分别看。</strong>Shipvideo 已有导演指令、场景检查与渲染工具；部分限制只是提示词，<code>check_scene</code> 也没有实现“通过检查才允许导出”的强制门控。上表是我们要继续落实的产品设计。</p>
+    <div class="source-ref"><a href="launch-architecture.html#source">固定源码核对</a><a href="launch-architecture.html#real-production">实际六幕成片与模型决定</a><a href="launch-architecture.html#next">待建模块</a></div>
+  </section>
+
+  <section class="research-block" id="control">
+    <div class="section-label">07 / CONTROL AND REUSABLE ENGINEERING</div><h2>能限制的范围，比尺寸、时长和风格更广。</h2>
+    <div class="technical-grid"><article class="technical-card"><h3>提示词软控制</h3><p>要求暖色、少文字、固定机位、准确唱词、某种情绪与镜头风格。模型可能偏离，需要实际检查与修订。</p></article><article class="technical-card"><h3>程序硬控制</h3><p>限制输入、可选素材 / 组件、参数类型、时长、预算、任务顺序与运行环境。规则可以拒绝违规请求，但不会自动证明表演自然或文案正确。</p></article></div>
+    <div class="table-scroll"><table><caption>两种产品实现方式</caption><thead><tr><th>方式</th><th>模型发挥的范围</th><th>适用目标与代价</th></tr></thead><tbody><tr><td>自由代码创作</td><td>编写完整场景，决定大部分视觉表达。</td><td>探索多样效果；运行隔离、修复和审查负担较大。Shipvideo 原主线接近此方式。</td></tr><tr><td>固定组件 / 模板</td><td>填内容和参数，选择允许的动效组合。</td><td>重复生产同一品牌或类型，风格更稳定；需要先建设组件与能力边界。</td></tr></tbody></table></div>
+    <div class="roadmap"><article><em>可沉淀 · 内容层</em><h3>事实、角色与导演规则</h3><p>输入快照、卖点来源、统一角色 / 品牌、分镜与节奏约定，让创作有可检查的依据。</p></article><article><em>可沉淀 · 执行层</em><h3>统一时间与制作模块</h3><p>素材版本、时间坐标、角色 / 动效组件、提供商适配、渲染、合成、编码和任务恢复。</p></article><article><em>可沉淀 · 验收层</em><h3>过程记录与结果复核</h3><p>错误、关键帧、成本、参数与修改记录；分别检查技术成功、内容准确和主观效果。</p></article></div>
+    <p>同一模型换了参考、素材、导演规则或组件，结果也会变化。原样片经过什么具体修改无法仅从最终视频确认；复制同一提示词不保证复制同一质量。</p>
+  </section>
+
+  <section class="research-block" id="corrections">
+    <div class="section-label">08 / TWELVE CORRECTIONS</div><h2>把容易形成的理解，补充到准确的范围。</h2>
+    <div class="table-scroll"><table><caption>本次讨论的查漏补缺</caption><thead><tr><th>容易形成的理解</th><th>补充后的结论</th></tr></thead><tbody>
+      <tr><td>这些 MV 都是音乐搭静态图片。</td><td>图片 MV 是一条路线；代码动画和视频模型表演有不同的运动来源。</td></tr>
+      <tr><td>Opus 直接生成了这些视频画面。</td><td>在代码路线中，它主要写分镜与代码；浏览器画帧、编码器生成文件。专门的视频模型可以生成连续镜头。</td></tr>
+      <tr><td>Skill 就是另一个模型。</td><td>Skill 组织规则、步骤、工具与资源；结果依赖所调用模型、工程和素材。</td></tr>
+      <tr><td>全部靠提示词控制。</td><td>参考图、音频、组件、时间映射、参数与执行程序也参与控制；软要求与硬校验分别看。</td></tr>
+      <tr><td>只有人物主导与场景主导两种实现。</td><td>它们是创作方向；技术上还有分层、整体、后对口型、动作驱动、实拍剪辑和无人物动效，可混用。</td></tr>
+      <tr><td>完整 MV 必须先抠绿幕人物。</td><td>绿幕适用于分层制作；完整场景、实拍与其他路线可以直接保留人物和场景。</td></tr>
+      <tr><td>传音频就等于嘴型已经同步。</td><td>音频作为生成条件；歌词位置、节奏和音素嘴形仍要分层验收。</td></tr>
+      <tr><td>换背景就能让人坐进火车。</td><td>还需匹配坐姿、机位、接触、遮挡与光线；普通背景叠层没有完成这些关系。</td></tr>
+      <tr><td>模型唯一决定效果，我们只能选参数。</td><td>事实、素材、结构、组件、预算和验收也能由产品定义；设计与工程共同影响质量。</td></tr>
+      <tr><td>有 MiniMax token 或网页积分，就能用任意视频接口。</td><td>文本额度、网页积分与 API 权限 / 计费要按账户和接口分别确认。本机只有这次五秒 H3 调用的成功证据。</td></tr>
+      <tr><td>生成文件成功，说明质量达到原作。</td><td>文件、时间、合成、口型与美感分别检查；五秒试验也不能证明完整歌曲都达到该质量。</td></tr>
+      <tr><td>演示网页已经是自动生成产品。</td><td>本页展示本地已有结果；任意 URL 的后台生成、队列、成本与自动交付仍需建设。</td></tr>
+    </tbody></table></div>
+  </section>
+
+  <section class="research-block" id="projects">
+    <div class="section-label">09 / POSITION THE TEN LINKS</div><h2>十个链接在这套理解中的位置。</h2>
+    <div class="table-scroll"><table><caption>作品、生产工具、基础工程与索引分别使用</caption><thead><tr><th>项目 / 源链接</th><th>定位与核心原理</th><th>本地展示范围</th></tr></thead><tbody>
+      <tr><td><a href="https://github.com/JohnHeibel/PDoomVideo" target="_blank" rel="noreferrer">JohnHeibel / PDoomVideo ↗</a></td><td>特定手绘 MV 工程；p5 / p5.brush 逐帧＋歌曲。</td><td>原作源码、时间轴与音乐预览。</td></tr>
+      <tr><td><a href="https://github.com/lemomo-ai/lemo-opuscar" target="_blank" rel="noreferrer">lemomo-ai / lemo-opuscar ↗</a></td><td>风格 Skill 与有声代码短片工具包；浏览器逐帧＋音频链路。</td><td>九支作者 MP4；完整生产 Skill 未运行。</td></tr>
+      <tr><td><a href="https://github.com/dgreenheck/tidewater" target="_blank" rel="noreferrer">dgreenheck / tidewater ↗</a></td><td>实时游戏成品；WebGPU / WGSL 海洋和游戏系统。</td><td>本地构建与启动；完整游玩未验收。</td></tr>
+      <tr><td><a href="https://github.com/riba2534/claude-opus-5-5-demo" target="_blank" rel="noreferrer">riba2534 / claude-opus-5-5-demo ↗</a></td><td>三款模型编程案例；Three.js＋交互 / 音效＋esbuild。</td><td>三个原作构建 HTML；完整流程未逐项验收。</td></tr>
+      <tr><td><a href="https://github.com/diggerhq/shipvideo" target="_blank" rel="noreferrer">diggerhq / shipvideo ↗</a></td><td>导演代理应用；读网页、写动画 HTML、检查与编码。</td><td>作者样片＋本机实际宣传片；通用服务待建。</td></tr>
+      <tr><td><a href="https://github.com/makevoid/motion-graphics-music-video-skill" target="_blank" rel="noreferrer">makevoid / motion-graphics-music-video-skill ↗</a></td><td>混合 MV Skill；角色图、H3 表演、代码世界与主曲合成。</td><td>作者缩略图；本机图片 MV＋五秒 H3 适配试验。</td></tr>
+      <tr><td><a href="https://github.com/tuzhechen2005/opus-video-skills" target="_blank" rel="noreferrer">tuzhechen2005 / opus-video-skills ↗</a></td><td>手绘与动态字体 Skill；代码画面、审查、音乐与编码。</td><td>作者 GIF 和接触表；完整 Skill 未运行。</td></tr>
+      <tr><td><a href="https://github.com/JohnHeibel/ClaudeAnimationBase" target="_blank" rel="noreferrer">JohnHeibel / ClaudeAnimationBase ↗</a></td><td>角色表演基础工程；p5 绘制与 renderAt(t)。</td><td>作者动态表情 WebP。</td></tr>
+      <tr><td><a href="https://github.com/yihui-dev/awesome-opus5-5-videos" target="_blank" rel="noreferrer">yihui-dev / awesome-opus5-5-videos ↗</a></td><td>作品、提示词与重制对照的参考索引。</td><td>Skillry 展厅截图；没有在线重制执行。</td></tr>
+      <tr><td><a href="https://github.com/athemeroy/awesome-opus-5-5-videos" target="_blank" rel="noreferrer">athemeroy / awesome-opus-5-5-videos ↗</a></td><td>逐案来源与技术路线研究索引。</td><td>静态资料图；索引本身不生成视频。</td></tr>
+    </tbody></table></div>
+    <p>“作品成品”“可运行源码”“制作 Skill”“基础组件”“资料索引”回答不同的问题。作者的单会话案例也可能包含搜索、自测与修复；不能当作一次模型输出成功的通用保证。</p>
+  </section>
+
+  <section class="research-block" id="evidence">
+    <div class="section-label">10 / VERIFIED, ADAPTED, AND PROPOSED</div><h2>我们的实际状态、源库依据与下一步。</h2>
+    <div class="research-videos"><article><span class="state partial">图片 MV · 整曲已有</span><h3>约 127 秒《Still a Light》</h3><video controls preload="none" poster="media/still-a-light-train-v2.png" src="media/still-a-light-generated-v2.mp4" aria-label="本机制作的全曲图片MV"></video><p>统一人物参考生图＋镜头运动、转场与原歌曲；人物表演不覆盖全曲。</p></article><article><span class="state partial">真实视频模型 · 局部已有</span><h3>歌曲 10–15 秒 H3 表演合成</h3><video controls preload="none" poster="media/still-a-light-h3-composite-preview.png" src="media/still-a-light-h3-composite.mp4" aria-label="本机五秒H3演唱与背景合成"></video><p>MiniMax 官方 API 实际返回视频；本地去绿与合成。嘴部变化可见，逐字口型与坐姿接触尚未验收。</p></article><article><span class="state">代码动画 · 已实际制作</span><h3>24 秒六幕能力图谱宣传片</h3><video controls preload="none" poster="media/atlas-real-1.jpg" src="media/atlas-launch-real.mp4" aria-label="本次模型编写代码实际导出的六幕宣传片"></video><p>模型读取真实网页、写分镜与场景；本机 720p / 24fps / 576 帧，完整解码通过，无音轨。复用已有 H3 素材。</p></article><article><span class="state pending">产品化 · 继续建设</span><h3>两个目标分别推进</h3><p>MV：先验收已有表演，再完善接触 / 遮挡、时间与分层场景；按预算补充镜头。网页宣传片：接输入采集、结构化简报、模型后台、组件范围、队列与交付。</p><p>没有因本页加载再次提交付费任务。新生图、视频生成、配音等自动入口属于待接能力。</p></article></div>
+    <div class="table-scroll"><table><caption>证据的范围</caption><thead><tr><th>证据</th><th>能支持的结论</th><th>不能单独支持的结论</th></tr></thead><tbody><tr><td>截图 / 接触表</td><td>静态构图、画风与若干帧内容。</td><td>连续动作、声音同步和交互是否正确。</td></tr><tr><td>本地视频 / 动图</td><td>已保存画面的实际动态；有音轨时可听音。</td><td>完整自动生成流程、所有模型调用或可复制成功率。</td></tr><tr><td>源代码 / 任务与编码记录</td><td>该版本的设计、实际参数、文件、技术检查和时间映射。</td><td>所有样片质量、每个音素准确率、完整商业产品已完成。</td></tr></tbody></table></div>
+    <details class="source-detail"><summary>展开源码、结果与本次整理依据</summary><div class="source-ref"><a href="technical-source/ours/understanding-evidence.json" target="_blank">本次理解与来源记录</a><a href="technical-source/ours/atlas-overview-content.json" target="_blank">十项目逐项分析</a><a href="technical-source/shipvideo/source-map.json" target="_blank">Shipvideo 固定源码</a><a href="technical-source/makevoid/video.rb.txt" target="_blank">makevoid 视频调用</a><a href="technical-source/makevoid/prompts.md.txt" target="_blank">生成输入与口型限制</a><a href="technical-source/ours/launch-real-evidence.json" target="_blank">六幕成片证据</a><a href="production.html#history" target="_blank" rel="noreferrer">查看本机材料与版本说明 →</a></div><p class="document-meta">研究日期：2026-10-02。Shipvideo 固定提交 53d7c6f752fb；makevoid 固定提交 deb6efd51d08。其他项目以本地快照和已核对源库介绍为依据。没有重新生成原作者样片。</p></details>
+    <div class="source-ref"><a href="index.html#all-projects-map">十项目总览图</a><a href="mv-architecture.html">MV 具体模块与实现状态</a><a href="launch-architecture.html">网页宣传片技术拆解</a><a href="index.html#experience">本地原作体验</a></div>
+  </section>
+  <footer><p>阅读顺序：先分清产物和各层作用，再选创作主体与制作路线，最后按实际素材、实现和验收证据判断能力。</p><p>本页只运行本地绘图例子并展示已有媒体。源库入口供主动查阅；模型凭据不进入网页。</p></footer>
+</main>
+<script src="understanding.js"></script>
+</body>
+</html>

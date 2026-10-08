@@ -19,6 +19,7 @@
 | 003 | [Learn Harness Engineering · AI 工作流程研究](projects/003-learn-harness-engineering/README.md) | **定位：** 学习 AI Agent 工作流程的课程与实践资料<br>**内容：** 14 讲课程、8 项练习说明、规则/任务/进度/验收模板，附 1 个 Skill、生成与检查脚本和教学示例<br>**用途：** 理解 Agent、组织持续开发与跨会话任务<br>**价值：** 少重复解释、少返工、凭证据验收<br>**扩展：** 领域模板、真实测试、状态恢复及自动循环/多 Agent，需自行接入执行环境。 | 已完成 | [walkinglabs/learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/003-learn-harness-engineering/) |
 | 004 | [Rhythm Drop · 音乐型声音与视听体验研究](projects/004-rhythm-drop/README.md) | **目标：** 研究音乐型声音如何驱动视觉、故事与互动<br>**来源：** Gorden Sun 的 X 音乐动画展示<br>**实验：** 场景叙事、声音身份、花园创造与漂流、儿童游戏、原创回声小队和复杂情绪<br>**结论：** 声音主导，角色驱动系列，故事与表演共同设计<br>**制作：** 参考图、程序化模型与声音时钟驱动实时动画<br>**状态：** 研究原型，产品价值尚未验证。 | 已归档 | [Gorden Sun · 原网页音乐效果](https://x.com/Gorden_Sun/status/2105302007896797351)<br>技术：[mrdoob/three.js](https://github.com/mrdoob/three.js) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/004-rhythm-drop/) |
 | 005 | [Plush Lab · 毛绒实验室](projects/005-plush-lab/README.md) | **背景：** 从舒适自然的毛绒质感出发，积累创作、互动与研究<br>**能力：** 绒毛剪染卷梳、随机搭配、小世界、陪伴笔记、页面提醒、固定任务及完整原作高斯展示<br>**原理：** Three.js 程序纤维与表面场、Spark 高斯渲染、状态机与本机存储<br>**场景：** 自由设计、网页角色、技术学习与生活记录<br>**价值：** 保留你的作品和方法积累，为陪伴与 Agent 可视化提供基础<br>**边界：** 研究原型，真实 AI 与后台提醒待接入，自制质感尚未达到参考。 | 研究中 | [mrdoob/three.js](https://github.com/mrdoob/three.js) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/005-plush-lab/) |
+| 006 | [AI Visual Atlas · 视觉创作能力图谱](projects/006-ai-visual-atlas/README.md) | **范围：** 研究十个视觉创作链接，区分作品源码、风格 Skill、游戏成品、生成工具与资料索引<br>**原理：** 模型理解与创作，代码逐帧渲染、实时游戏，以及生成素材和合成，各项目分别核对<br>**场景：** 音乐 MV、产品宣传、角色动画、游戏体验与风格研究<br>**实测：** 整曲图片 MV、5 秒 H3 演唱与绿幕合成、24 秒六幕网页宣传片<br>**意义：** 理解可复用的时间线、模型调度、素材一致性、检查与交付<br>**边界：** 全曲真实演唱、逐字口型验收和任意 URL 自动服务未完成，部分原作仅本地研究，完整游戏游玩未验收。 | 已完成 | [鸟哥 · 十个视觉创作项目汇总](https://x.com/NFTCPS/status/2105493719931826452)<br>资料索引：[yihui-dev/awesome-opus5-5-videos](https://github.com/yihui-dev/awesome-opus5-5-videos)<br>[十项目源库列表](projects/006-ai-visual-atlas/publication/index.html#library) | — |
 
 <!-- PROJECT_INDEX:END -->
 
@@ -102,6 +103,21 @@
 ![Plush Lab · 毛绒实验室 项目引导图](projects/005-plush-lab/assets/plush-capabilities-principles.png)
 
 [研究详情](projects/005-plush-lab/README.md) · [在线演示](https://yydshly.github.io/0930_codex_project/projects/005-plush-lab/)
+
+### 006 · AI Visual Atlas · 视觉创作能力图谱
+
+- **范围：** 研究十个视觉创作链接，区分作品源码、风格 Skill、游戏成品、生成工具与资料索引
+- **原理：** 模型理解与创作，代码逐帧渲染、实时游戏，以及生成素材和合成，各项目分别核对
+- **场景：** 音乐 MV、产品宣传、角色动画、游戏体验与风格研究
+- **实测：** 整曲图片 MV、5 秒 H3 演唱与绿幕合成、24 秒六幕网页宣传片
+- **意义：** 理解可复用的时间线、模型调度、素材一致性、检查与交付
+- **边界：** 全曲真实演唱、逐字口型验收和任意 URL 自动服务未完成，部分原作仅本地研究，完整游戏游玩未验收。
+
+最初来源：[鸟哥 · 十个视觉创作项目汇总](https://x.com/NFTCPS/status/2105493719931826452)。资料索引：[yihui-dev/awesome-opus5-5-videos](https://github.com/yihui-dev/awesome-opus5-5-videos)（其中一个资料项目）。[十项目源库列表](projects/006-ai-visual-atlas/publication/index.html#library)。我们的十项目能力与技术总览。先阅读下方引导图，再进入研究文档与交互演示。
+
+![AI Visual Atlas · 视觉创作能力图谱 项目引导图](projects/006-ai-visual-atlas/assets/atlas-projects-overview.png)
+
+[研究详情](projects/006-ai-visual-atlas/README.md)
 
 <!-- PROJECT_PREVIEWS:END -->
 

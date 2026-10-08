@@ -1,0 +1,439 @@
+{
+  "title": "从十个链接到可复用的创作能力",
+  "reviewed": "2026-10-02",
+  "initialGoal": "本地看真实效果 → 逐个拆能力和原理 → 判断可复用价值 → 实做歌曲 MV 与网页宣传片",
+  "sourcePost": "https://x.com/NFTCPS/status/2105493719931826452",
+  "projects": [
+    {
+      "id": "01",
+      "repo": "JohnHeibel/PDoomVideo",
+      "kind": "特定作品源码",
+      "color": "#d5f883",
+      "title": "完整手绘 MV 的代码样本",
+      "capability": "既有歌曲、歌词时间线与章节源码 → 手绘音乐 MV；换歌要重新设计。",
+      "principle": "p5.js / p5.brush 场景与角色 → renderAt(t) → Chrome 并行逐帧 → FFmpeg 合入歌曲。",
+      "value": "共享角色、章节转场、歌词时间映射、指定时刻重绘与断点续渲染。",
+      "boundary": "它是某支作品的工程；没有自动生歌或通用的一键换歌接口。",
+      "local": "本地原作源码＋时间滑块＋音乐预览；此入口不是已编码的完整原作 MP4。",
+      "sources": [
+        "README.md",
+        "render.mjs"
+      ],
+      "evidence": "games/pdoom/index.html?t=20",
+      "url": "https://github.com/JohnHeibel/PDoomVideo",
+      "sourceUrls": [
+        "https://github.com/JohnHeibel/PDoomVideo/blob/main/README.md",
+        "https://github.com/JohnHeibel/PDoomVideo/blob/main/render.mjs"
+      ]
+    },
+    {
+      "id": "02",
+      "repo": "lemomo-ai/lemo-opuscar",
+      "kind": "风格工具包＋Skill",
+      "color": "#d5f883",
+      "title": "多风格、有声音的代码短片",
+      "capability": "按作者列出的 43 种风格选择，输入故事或素材 → 代码短片；包含导演与制作指南。",
+      "principle": "Skill 指导编码 → Canvas / WebGL / Three.js render(t) → 浏览器逐帧＋TTS / 配乐 / 音效 → FFmpeg。",
+      "value": "把视觉风格变成制作规则，复用统一时间线、渲染工具和音画检查。",
+      "boundary": "需要编码代理与制作环境；主画面不靠视频生成模型，换编码模型也需重新验证效果。",
+      "local": "9 支作者 MP4 已本地播放；本机尚未运行它的完整制作 Skill。",
+      "sources": [
+        "README.md",
+        "TECHNIQUE.md"
+      ],
+      "evidence": "media/ink-wash.mp4",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar",
+      "sourceUrls": [
+        "https://github.com/lemomo-ai/lemo-opuscar/blob/main/README.md",
+        "https://github.com/lemomo-ai/lemo-opuscar/blob/main/TECHNIQUE.md"
+      ]
+    },
+    {
+      "id": "03",
+      "repo": "dgreenheck/tidewater",
+      "kind": "实时游戏成品",
+      "color": "#9fc8f5",
+      "title": "海岛钓鱼、游泳与驾驶",
+      "capability": "玩家键鼠操作 → 海岛探索、钓鱼、交易与升级；输出是可交互的实时游戏。",
+      "principle": "自建 WebGPU / WGSL 引擎 → FFT 海洋、天空与后处理 → 游戏状态 / 资产 / 音频 → 实时绘制。",
+      "value": "海洋与天空渲染、场景引擎、游戏系统、资产转换和性能适配。",
+      "boundary": "依赖 WebGPU 与 GPU；包含第三方资产，不能把画面都归为程序生成，也不是游戏生成器。",
+      "local": "游戏和资源已本地构建，启动页已查看；完整游玩与设备兼容性尚未验收。",
+      "sources": [
+        "README.md",
+        "package.json"
+      ],
+      "evidence": "games/tidewater/index.html",
+      "url": "https://github.com/dgreenheck/tidewater",
+      "sourceUrls": [
+        "https://github.com/dgreenheck/tidewater/blob/main/README.md",
+        "https://github.com/dgreenheck/tidewater/blob/main/package.json"
+      ]
+    },
+    {
+      "id": "04",
+      "repo": "riba2534/claude-opus-5-5-demo",
+      "kind": "模型编程案例",
+      "color": "#9fc8f5",
+      "title": "骑行、FPS 与漂移竞速",
+      "capability": "作者的自然语言需求 → 三个独立网页游戏；运行时响应玩家操作。",
+      "principle": "模型编写模块化 JS → Three.js / WebGL＋交互与 Web Audio → esbuild 打包单文件 HTML。",
+      "value": "程序化几何与音效、游戏反馈模块、单文件部署和迭代构建。",
+      "boundary": "作者记录的单会话包含自测与修复；不能理解为模型一次输出，就保证完成任意游戏。",
+      "local": "三个原作 HTML 已本地构建；骑行启动页已查看，完整游戏流程尚未逐项验收。",
+      "sources": [
+        "README.md",
+        "package.json"
+      ],
+      "evidence": "games/pelican-bike/index.html",
+      "url": "https://github.com/riba2534/claude-opus-5-5-demo",
+      "sourceUrls": [
+        "https://github.com/riba2534/claude-opus-5-5-demo/blob/main/README.md",
+        "https://github.com/riba2534/claude-opus-5-5-demo/blob/main/package.json"
+      ]
+    },
+    {
+      "id": "05",
+      "repo": "diggerhq/shipvideo",
+      "kind": "导演代理＋生成应用",
+      "color": "#efc47b",
+      "title": "网页 → 产品宣传短片",
+      "capability": "产品 URL / 描述 → 动态文字、图形和产品故事 → MP4；默认导演目标 20–40 秒。",
+      "principle": "读取 HTML / 元数据 → 原库 Opus 5.5 写分镜与动画 HTML → check_scene 反馈 → 虚拟时钟逐帧 → FFmpeg / 会话工作区。",
+      "value": "事实提炼、导演规则、时间控制、错误反馈、任务状态与成片交付。",
+      "boundary": "原主链是代码动画；视觉表达主要由编码模型决定，检查工具不能自动保证事实与美感。",
+      "local": "已保存原作者样片，并实际制作 24 秒六幕宣传片；通用任意 URL 自动服务仍待接入。",
+      "commit": "53d7c6f752fb85b449de8cf806b77ad21808a8f1",
+      "sources": [
+        "README.md",
+        "opencomputer/agents/director/agent.ts",
+        "opencomputer/agents/director/tools/renderer.ts",
+        "opencomputer/agents/director/tools/scene.ts"
+      ],
+      "evidence": "launch-architecture.html#real-production",
+      "url": "https://github.com/diggerhq/shipvideo",
+      "sourceUrls": [
+        "https://github.com/diggerhq/shipvideo/blob/53d7c6f752fb85b449de8cf806b77ad21808a8f1/README.md",
+        "https://github.com/diggerhq/shipvideo/blob/53d7c6f752fb85b449de8cf806b77ad21808a8f1/opencomputer/agents/director/agent.ts",
+        "https://github.com/diggerhq/shipvideo/blob/53d7c6f752fb85b449de8cf806b77ad21808a8f1/opencomputer/agents/director/tools/renderer.ts",
+        "https://github.com/diggerhq/shipvideo/blob/53d7c6f752fb85b449de8cf806b77ad21808a8f1/opencomputer/agents/director/tools/scene.ts"
+      ]
+    },
+    {
+      "id": "06",
+      "repo": "makevoid/motion-graphics-music-video-skill",
+      "kind": "音乐 MV 制作 Skill",
+      "color": "#efc47b",
+      "title": "歌曲 → 角色表演与动效 MV",
+      "capability": "歌曲＋创意 → 音乐分析、角色、分镜、表演镜头、动效与整曲 MP4。",
+      "principle": "GPT Image 2.5 角色图 → Fal H3 Max＋对应音频生成短镜头 → 绿幕提取人物 → p5.js 场景 / 合成 → FFmpeg 合入原曲。",
+      "value": "角色一致性、音乐时间映射、生成任务编排、分层与素材审查。自然度来自模型素材和设计配合。",
+      "boundary": "原主线偏人物主导，依赖外部图像 / 视频服务；音频条件不保证精确口型，坐姿接触也要设计。",
+      "local": "作者原作仅有本地缩略图；我们已做整曲图片 MV＋5 秒真实 H3 演唱合成，逐字口型未验收。",
+      "commit": "deb6efd51d08cc19fdcd3f96db43f4d903868da9",
+      "sources": [
+        "README.md",
+        ".claude/skills/motion-graphics-music-video/SKILL.md",
+        ".claude/skills/motion-graphics-music-video/scripts/lib/pipeline/steps/video.rb"
+      ],
+      "evidence": "production.html#h3-composite",
+      "url": "https://github.com/makevoid/motion-graphics-music-video-skill",
+      "sourceUrls": [
+        "https://github.com/makevoid/motion-graphics-music-video-skill/blob/deb6efd51d08cc19fdcd3f96db43f4d903868da9/README.md",
+        "https://github.com/makevoid/motion-graphics-music-video-skill/blob/deb6efd51d08cc19fdcd3f96db43f4d903868da9/.claude/skills/motion-graphics-music-video/SKILL.md",
+        "https://github.com/makevoid/motion-graphics-music-video-skill/blob/deb6efd51d08cc19fdcd3f96db43f4d903868da9/.claude/skills/motion-graphics-music-video/scripts/lib/pipeline/steps/video.rb"
+      ]
+    },
+    {
+      "id": "07",
+      "repo": "tuzhechen2005/opus-video-skills",
+      "kind": "两类动画 Skill",
+      "color": "#89c8c5",
+      "title": "手绘叙事与动态字体",
+      "capability": "主题、故事、时长与风格 → painted-animation / kinetic-reel 场景工程与 MP4。",
+      "principle": "模型分镜 / 编码 → p5 手绘或 Canvas＋Three.js 动效 → 接触表审查 → Chrome 逐帧 → 配乐 / FFmpeg。",
+      "value": "导演规则、时间纯函数、角色表演、镜头审查及并行渲染；改编自 ClaudeAnimationBase。",
+      "boundary": "主链不靠图像 / 视频生成模型；Skill 提供步骤，仍要编码、运行、看图修改。",
+      "local": "两段作者 GIF＋两张成片接触表；GIF 无音轨，本机未完整执行这两个生产 Skill。",
+      "sources": [
+        "README.md",
+        "skills/painted-animation/SKILL.md",
+        "skills/kinetic-reel/SKILL.md"
+      ],
+      "evidence": "media/work-reel.gif",
+      "url": "https://github.com/tuzhechen2005/opus-video-skills",
+      "sourceUrls": [
+        "https://github.com/tuzhechen2005/opus-video-skills/blob/main/README.md",
+        "https://github.com/tuzhechen2005/opus-video-skills/blob/main/skills/painted-animation/SKILL.md",
+        "https://github.com/tuzhechen2005/opus-video-skills/blob/main/skills/kinetic-reel/SKILL.md"
+      ]
+    },
+    {
+      "id": "08",
+      "repo": "JohnHeibel/ClaudeAnimationBase",
+      "kind": "角色动画基础工程",
+      "color": "#89c8c5",
+      "title": "可修改的手绘角色与表演",
+      "capability": "故事 / 自定义角色与表情 → 场景预览、接触表、静帧及 MP4；提供角色、镜头与转场基础。",
+      "principle": "模型先分镜 → p5.js / p5.brush 角色与绘画 API → renderAt(t) → Puppeteer / Chrome → FFmpeg。",
+      "value": "角色表演 API、画面一致性、动画原则，以及渲染后看图修正的闭环。",
+      "boundary": "基础代码工程让模型在其上创作；水彩渲染较耗 GPU，不能替代写实人物表演模型。",
+      "local": "作者动态 emotions.webp 已接入，展示表情与姿态；并非本机新生成的故事影片。",
+      "sources": [
+        "README.md",
+        "render.mjs"
+      ],
+      "evidence": "media/emotions.webp",
+      "url": "https://github.com/JohnHeibel/ClaudeAnimationBase",
+      "sourceUrls": [
+        "https://github.com/JohnHeibel/ClaudeAnimationBase/blob/main/README.md",
+        "https://github.com/JohnHeibel/ClaudeAnimationBase/blob/main/render.mjs"
+      ]
+    },
+    {
+      "id": "09",
+      "repo": "yihui-dev/awesome-opus5-5-videos",
+      "kind": "案例与提示词索引",
+      "color": "#c6b4e6",
+      "title": "从作品反查提示与实现",
+      "capability": "选择主题或风格 → 作品、作者来源、公开提示词与 Skillry 重制对照入口。",
+      "principle": "策展案例 / 技术标签 → 学习或复制提示 → 交给另一个编码代理或平台制作。",
+      "value": "效果参考、提示词学习、原作与重制比较；能帮助选视觉方向。",
+      "boundary": "仓库本身不执行视频生产；同一提示词也可能得到不同结果，需核准素材来源。",
+      "local": "本地保存 Skillry 展厅截图；没有接入在线重制执行或把截图当视频。",
+      "sources": [
+        "README.md"
+      ],
+      "evidence": "media/skillry-gallery.jpg",
+      "url": "https://github.com/yihui-dev/awesome-opus5-5-videos",
+      "sourceUrls": [
+        "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/main/README.md"
+      ]
+    },
+    {
+      "id": "10",
+      "repo": "athemeroy/awesome-opus-5-5-videos",
+      "kind": "来源与技术研究索引",
+      "color": "#c6b4e6",
+      "title": "辨认效果背后的真实路线",
+      "capability": "研究目标 → 逐案效果帧、原帖、技术路线、证据与统计；与左侧库名称仅差一个连字符。",
+      "principle": "收集来源 / 视频预览 → 采样与逐案审查 → 区分代码渲染、外部模型、已有素材剪辑及录屏。",
+      "value": "追溯工具链、辨别谁生成了画面、比较相似视觉的不同实现方式。",
+      "boundary": "它是研究导航；分类和作者披露不能当作真实模型调用的独立证明。",
+      "local": "本地 corpus-overview.svg 为静态资料图；用于研究分类，不是视频播放器。",
+      "sources": [
+        "README.md",
+        "docs/cases-index.zh-CN.md"
+      ],
+      "evidence": "media/corpus-overview.svg",
+      "url": "https://github.com/athemeroy/awesome-opus-5-5-videos",
+      "sourceUrls": [
+        "https://github.com/athemeroy/awesome-opus-5-5-videos/blob/main/README.md",
+        "https://github.com/athemeroy/awesome-opus-5-5-videos/blob/main/docs/cases-index.zh-CN.md"
+      ]
+    }
+  ],
+  "executionRoutes": [
+    {
+      "title": "A 代码影像",
+      "ids": "01 / 02 / 05 / 07 / 08",
+      "color": "#d5f883",
+      "items": [
+        "模型或作者设计分镜与动画代码",
+        "按 t 绘制场景，逐帧导出 MP4",
+        "风格、字体与动作可做成组件"
+      ]
+    },
+    {
+      "title": "B 实时游戏",
+      "ids": "03 / 04",
+      "color": "#9fc8f5",
+      "items": [
+        "模型或开发者编写游戏代码",
+        "GPU 渲染＋游戏状态响应输入",
+        "运行阶段执行程序，产物可交互"
+      ]
+    },
+    {
+      "title": "C 生成素材＋合成",
+      "ids": "06",
+      "color": "#efc47b",
+      "items": [
+        "图像 / 视频模型生成角色与表演",
+        "代码世界、素材和音乐按时间合成",
+        "动作与口型质量要实际看片验收"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "title": "人 / 产品规则",
+      "color": "#d5f883",
+      "items": [
+        "定目标、人群、事实与品牌",
+        "选风格、路线、预算及素材范围",
+        "明确什么效果算通过"
+      ]
+    },
+    {
+      "title": "模型 / 创作判断",
+      "color": "#89c8c5",
+      "items": [
+        "理解信息，设计分镜与视觉表达",
+        "写代码；需要时生成图像与视频",
+        "根据报错和画面反馈修改"
+      ]
+    },
+    {
+      "title": "程序 / 执行控制",
+      "color": "#efc47b",
+      "items": [
+        "管理素材、任务、时间与运行环境",
+        "检查格式、错误、尺寸与时长",
+        "逐帧渲染、编码、保存与交付"
+      ]
+    }
+  ],
+  "reusable": "值得沉淀：事实与素材记录 · 角色 / 动效组件 · 时间接口 · 分镜与风格规则 · 任务恢复 / 预算 · 渲染、质检与版本交付。",
+  "control": "提示词是软控制；可选组件、参数校验、执行隔离与预算门控才是程序硬控制。自由写代码更开放，固定组件更稳定。",
+  "localProgress": [
+    {
+      "title": "网页宣传片 · 已实际制作",
+      "color": "#d5f883",
+      "items": [
+        "当前对话模型读取真实网页并写六幕场景",
+        "本机导出 24 秒 / 720p / 24fps / 576 帧",
+        "无音轨；复用已有 H3 素材，无新增付费生成",
+        "自动采集任意 URL 的后台服务仍待建设"
+      ]
+    },
+    {
+      "title": "歌曲 MV · 已做有限试验",
+      "color": "#efc47b",
+      "items": [
+        "用户歌曲已做约 127 秒整曲图片 MV",
+        "歌曲 10–15 秒已有真实 H3 表演与绿幕合成",
+        "尚未成为整曲角色表演 MV，逐字口型未验收",
+        "已研究分层、完整场景等路线；绿幕不是唯一方案"
+      ]
+    }
+  ],
+  "takeaway": "模型提供创作能力；设计、素材、工程与审查共同决定效果和交付。",
+  "evidenceNote": "本图区分源库能力、实际本地展示与待建设能力。样片 / 动图 / 截图的证明范围不同；不把作者案例当作通用成功保证。",
+  "render": {
+    "width": 2800,
+    "height": 8816,
+    "minimumFontPx": 34,
+    "method": "Measured native text and shapes drawn on a new canvas; no paid API or image editing.",
+    "sectionBounds": [
+      {
+        "section": "initial-goal",
+        "top": 538,
+        "bottom": 960
+      },
+      {
+        "section": "ten-projects",
+        "top": 960,
+        "bottom": 6236
+      },
+      {
+        "section": "execution-routes",
+        "top": 6236,
+        "bottom": 7041
+      },
+      {
+        "section": "control-and-value",
+        "top": 7041,
+        "bottom": 7844
+      },
+      {
+        "section": "actual-progress",
+        "top": 7844,
+        "bottom": 8497
+      }
+    ],
+    "projectBounds": [
+      {
+        "id": "01",
+        "repo": "JohnHeibel/PDoomVideo",
+        "x": 100,
+        "y": 1258,
+        "width": 1280,
+        "height": 858
+      },
+      {
+        "id": "02",
+        "repo": "lemomo-ai/lemo-opuscar",
+        "x": 1420,
+        "y": 1258,
+        "width": 1280,
+        "height": 858
+      },
+      {
+        "id": "03",
+        "repo": "dgreenheck/tidewater",
+        "x": 100,
+        "y": 2239,
+        "width": 1280,
+        "height": 858
+      },
+      {
+        "id": "04",
+        "repo": "riba2534/claude-opus-5-5-demo",
+        "x": 1420,
+        "y": 2239,
+        "width": 1280,
+        "height": 858
+      },
+      {
+        "id": "05",
+        "repo": "diggerhq/shipvideo",
+        "x": 100,
+        "y": 3220,
+        "width": 1280,
+        "height": 910
+      },
+      {
+        "id": "06",
+        "repo": "makevoid/motion-graphics-music-video-skill",
+        "x": 1420,
+        "y": 3220,
+        "width": 1280,
+        "height": 910
+      },
+      {
+        "id": "07",
+        "repo": "tuzhechen2005/opus-video-skills",
+        "x": 100,
+        "y": 4253,
+        "width": 1280,
+        "height": 910
+      },
+      {
+        "id": "08",
+        "repo": "JohnHeibel/ClaudeAnimationBase",
+        "x": 1420,
+        "y": 4253,
+        "width": 1280,
+        "height": 910
+      },
+      {
+        "id": "09",
+        "repo": "yihui-dev/awesome-opus5-5-videos",
+        "x": 100,
+        "y": 5286,
+        "width": 1280,
+        "height": 910
+      },
+      {
+        "id": "10",
+        "repo": "athemeroy/awesome-opus-5-5-videos",
+        "x": 1420,
+        "y": 5286,
+        "width": 1280,
+        "height": 910
+      }
+    ],
+    "image": "media/atlas-projects-overview.png"
+  }
+}

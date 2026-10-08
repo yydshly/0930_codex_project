@@ -1,0 +1,227 @@
+/* Actual production scene authored in this conversation. All motion is draw(t).
+   Input facts: local index.html + app.js. Acting texture: existing H3 pilot frames.
+   No remote model, network asset, random state, or video element is required. */
+(() => {
+  'use strict';
+  const canvas = document.getElementById('film');
+  const ctx = canvas.getContext('2d');
+  const play = document.getElementById('play');
+  const seek = document.getElementById('seek');
+  const clock = document.getElementById('time');
+  const C = { dark: '#101510', panel: '#20281c', lime: '#d5f883', paper: '#eff2df', muted: '#a7b19e', teal: '#a7d4c9' };
+  const names = ['PDoomVideo', 'lemo-opuscar', 'tidewater', 'claude-opus-5-5-demo', 'shipvideo', 'motion-graphics-music-video-skill', 'opus-video-skills', 'ClaudeAnimationBase', 'awesome-opus5-5-videos', 'awesome-opus-5-5-videos'];
+  const groups = ['视频与动画', '3D 游戏', '创作工具', '灵感与资料'];
+  const projectGroup = [0, 0, 1, 1, 2, 2, 2, 2, 3, 3];
+  const clamp = v => Math.max(0, Math.min(1, v));
+  const out = v => 1 - Math.pow(1 - clamp(v), 3);
+  const smooth = v => { v = clamp(v); return v * v * (3 - 2 * v); };
+  const lerp = (a, b, v) => a + (b - a) * v;
+  const images = {};
+  const acting = [];
+  let loaded = false, running = false, base = 0, started = 0, raf = 0;
+  function load(src) {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => img.decode().then(() => resolve(img), reject);
+      img.onerror = () => reject(new Error('Missing local production asset: ' + src));
+      img.src = src;
+    });
+  }
+  function rect(x, y, w, h, fill, radius = 0, stroke = null) {
+    ctx.beginPath(); ctx.roundRect(x, y, w, h, radius);
+    if (fill) { ctx.fillStyle = fill; ctx.fill(); }
+    if (stroke) { ctx.strokeStyle = stroke; ctx.lineWidth = 1; ctx.stroke(); }
+  }
+  function text(s, x, y, size = 24, color = C.paper, weight = 400, align = 'left') {
+    ctx.font = `${weight} ${size}px Arial, Microsoft YaHei, sans-serif`;
+    ctx.fillStyle = color; ctx.textAlign = align; ctx.textBaseline = 'alphabetic'; ctx.fillText(s, x, y);
+  }
+  function fit(s, x, y, width, size, color = C.paper, weight = 400) {
+    while (size > 13) {
+      ctx.font = `${weight} ${size}px Arial, Microsoft YaHei, sans-serif`;
+      if (ctx.measureText(s).width <= width) break;
+      size -= 1;
+    }
+    text(s, x, y, size, color, weight);
+  }
+  function line(x, y, x2, y2, color = C.muted, width = 1) {
+    ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x2, y2);
+    ctx.strokeStyle = color; ctx.lineWidth = width; ctx.stroke();
+  }
+  function cover(img, x, y, w, h, zoom = 1) {
+    const ratio = Math.max(w / img.naturalWidth, h / img.naturalHeight) * zoom;
+    const sw = w / ratio, sh = h / ratio;
+    ctx.drawImage(img, (img.naturalWidth - sw) / 2, (img.naturalHeight - sh) / 2, sw, sh, x, y, w, h);
+  }
+  function texture(img, x, y, w, h, radius = 14, zoom = 1) {
+    ctx.save(); ctx.beginPath(); ctx.roundRect(x, y, w, h, radius); ctx.clip(); cover(img, x, y, w, h, zoom); ctx.restore();
+  }
+  function actingFrame(seconds) {
+    return acting[Math.min(acting.length - 1, Math.max(0, Math.floor(seconds * 12)))];
+  }
+  function reveal(s, x, y, size, phase, color = C.paper) {
+    ctx.save(); ctx.beginPath(); ctx.rect(x - 4, y - size - 8, 1160, size + 28); ctx.clip();
+    text(s, x, y + (1 - out(phase)) * (size + 25), size, color, 700); ctx.restore();
+  }
+  function chrome(t, chapter, light) {
+    const ink = light ? C.dark : C.paper;
+    ctx.save(); ctx.translate(58, 49); ctx.rotate(Math.PI / 4);
+    rect(-6, -6, 12, 12, light ? C.dark : C.lime); ctx.restore();
+    text('VISUAL ATLAS', 80, 56, 18, ink, 700);
+    text('创作能力图谱', 1216, 56, 16, light ? '#5e6758' : C.muted, 400, 'right');
+    line(56, 86, 1224, 86, light ? '#d2d9c3' : '#34412d');
+    text('0' + (chapter + 1) + ' / 06', 1224, 674, 15, light ? '#5e6758' : C.muted, 400, 'right');
+    for (let i = 0; i < 6; i++) rect(56 + i * 34, 663, 24, 3, i === chapter ? (light ? C.dark : C.lime) : (light ? '#cbd2be' : '#3b4732'));
+  }
+  function intro(p) {
+    const a = smooth((p - 1.2) / 1.4);
+    ctx.save(); ctx.translate(974, 344); ctx.rotate(-.18 + p * .14);
+    for (let i = 0; i < 4; i++) {
+      ctx.save(); ctx.rotate(i * Math.PI / 2);
+      rect(-29, -190 - 28 * a, 58, 155, i % 2 ? C.paper : C.lime, 29); ctx.restore();
+    }
+    ctx.beginPath(); ctx.arc(0, 0, 58 + 9 * Math.sin(p * 1.8), 0, Math.PI * 2); ctx.fillStyle = C.lime; ctx.fill();
+    text('↗', 0, 25, 70, C.dark, 400, 'center'); ctx.restore();
+    reveal('把想法，', 70, 278, 92, p / .8);
+    reveal('变成作品。', 70, 401, 92, (p - .32) / .8, C.lime);
+    ctx.globalAlpha = out((p - 1.0) / .8); text('先看见效果，再选择创作工具。', 75, 482, 26, C.muted); ctx.globalAlpha = 1;
+    const w = 265 * out((p - 1.4) / .8); rect(74, 526, w, 4, C.lime);
+  }
+  function library(p) {
+    reveal('十个项目，一张地图。', 66, 191, 60, p / .7, C.dark);
+    const count = Math.round(10 * out(p / 1.15));
+    text(String(count).padStart(2, '0'), 80, 506, 226, C.dark, 700);
+    text('开源项目', 88, 560, 25, '#5e6758');
+    for (let i = 0; i < 10; i++) {
+      const group = projectGroup[i], col = i % 2, row = Math.floor(i / 2);
+      const arrival = out((p - .12 - i * .045) / .65);
+      const gather = smooth((p - 1.65) / .7);
+      const x = lerp(422 + col * 383, 446 + group % 2 * 368, gather);
+      const y = lerp(244 + row * 67, 270 + Math.floor(group / 2) * 159 + (i % 2) * 10, gather);
+      ctx.save(); ctx.globalAlpha = arrival * (1 - gather); ctx.translate(45 * (1 - arrival), 0);
+      rect(x, y, 355, 52, C.dark, 9); fit(names[i], x + 16, y + 33, 321, 19, C.paper); ctx.restore();
+    }
+    const gather = smooth((p - 1.65) / .7);
+    if (gather > 0) groups.forEach((label, i) => {
+      const x = 446 + i % 2 * 368, y = 270 + Math.floor(i / 2) * 159;
+      ctx.save(); ctx.globalAlpha = gather; rect(x, y, 338, 133, C.dark, 15);
+      text('0' + (i + 1), x + 24, y + 36, 16, C.lime);
+      text(label, x + 24, y + 91, 32, C.paper, 700); ctx.restore();
+    });
+    ctx.globalAlpha = out((p - 2.55) / .55); text('四个方向，找到你的入口。', 450, 637, 24, '#5e6758'); ctx.globalAlpha = 1;
+  }
+  function showcase(p) {
+    reveal('先看到效果。', 64, 182, 67, p / .65);
+    const cards = [
+      { x: 66, y: 255, w: 350, h: 282, label: 'H3 演唱试验', sub: '已有五秒真实片段', image: actingFrame(p) },
+      { x: 464, y: 255, w: 350, h: 282, label: '整曲图片 MV', sub: 'Still a Light', image: images.train },
+      { x: 862, y: 255, w: 350, h: 282, label: '网页宣传片', sub: '已有本机成片', image: images.launch }
+    ];
+    cards.forEach((card, i) => {
+      const appear = out((p - i * .15) / .65), scale = .9 + .1 * appear;
+      ctx.save(); ctx.globalAlpha = appear; ctx.translate(card.x + card.w / 2, card.y + card.h / 2 + 50 * (1 - appear));
+      ctx.scale(scale, scale); ctx.rotate((i - 1) * .035 * (1 - smooth((p - 1.5) / .6)));
+      const x = -card.w / 2, y = -card.h / 2;
+      rect(x, y, card.w, card.h, C.panel, 18); texture(card.image, x + 9, y + 9, card.w - 18, 180, 11, 1 + .025 * p);
+      text(card.label, x + 20, y + 223, 25, C.paper, 700); text(card.sub, x + 20, y + 255, 16, C.muted); ctx.restore();
+    });
+    ctx.globalAlpha = out((p - 1.35) / .7); text('本地播放。真实样片。', 67, 612, 24, C.muted); ctx.globalAlpha = 1;
+  }
+  function mechanism(p) {
+    reveal('再看懂原理。', 67, 186, 67, p / .65, C.dark);
+    const labels = ['输入', '分镜', '代码', '画面', '成片'];
+    const active = Math.min(4, Math.floor(p / .65));
+    const progress = smooth((p - .3) / 2.9);
+    line(153, 344, 1132, 344, '#c8d0bb', 3); line(153, 344, 153 + 979 * progress, 344, C.dark, 3);
+    labels.forEach((s, i) => {
+      const appear = out((p - .1 - i * .11) / .45), x = 148 + i * 245;
+      ctx.save(); ctx.globalAlpha = appear; ctx.translate(0, 18 * (1 - appear));
+      ctx.beginPath(); ctx.arc(x, 344, 62, 0, Math.PI * 2); ctx.fillStyle = i <= active ? C.dark : '#dae0ce'; ctx.fill();
+      text('0' + (i + 1), x, 354, 27, i <= active ? C.lime : '#728064', 700, 'center');
+      text(s, x, 469, 35, C.dark, 700, 'center'); ctx.restore();
+    });
+    text('能力、方法与使用边界，都有出处。', 68, 591, 25, '#5e6758');
+  }
+  function twoPaths(p) {
+    const expand = out(p / .7);
+    rect(66, 128 + 45 * (1 - expand), 557, 484, C.panel, 22);
+    rect(655, 128 + 45 * (1 - expand), 557, 484, C.lime, 22);
+    ctx.save(); ctx.globalAlpha = expand;
+    text('歌曲 → MV', 94, 190, 36, C.paper, 700);
+    texture(actingFrame(Math.min(4.9, p + .6)), 90, 216, 509, 285, 13);
+    text('从演唱画面，研究角色与场景。', 94, 554, 23, C.muted);
+    text('网页 → 宣传片', 683, 190, 36, C.dark, 700);
+    rect(683, 216, 501, 285, C.dark, 13);
+    text('VISUAL ATLAS', 706, 257, 15, C.lime, 700);
+    const q = smooth((p - .6) / 1.2);
+    for (let i = 0; i < 3; i++) {
+      const w = lerp(174 + (i % 2) * 80, 48, q), x = lerp(709, 947 + i * 71, q);
+      rect(x, 291 + i * 46 * (1 - q), w, lerp(23, 132 + (i % 2) * 30, q), i === 1 ? C.lime : C.paper, lerp(4, 14, q));
+    }
+    ctx.globalAlpha = q; text('想法 → 作品', 707, 343, 29, C.paper, 700); ctx.globalAlpha = expand;
+    text('让内容拥有自己的节奏。', 683, 554, 23, '#3e4e2a'); ctx.restore();
+    text('两条创作路线，在这里分别看懂。', 68, 653, 23, C.muted);
+  }
+  function ending(p) {
+    ctx.save(); ctx.translate(1002, 320); ctx.rotate(p * .13);
+    for (let i = 0; i < 8; i++) {
+      ctx.save(); ctx.rotate(i * Math.PI / 4); rect(-13, -116 - 10 * Math.sin(p), 26, 75, i % 2 ? C.paper : C.lime, 13); ctx.restore();
+    }
+    ctx.beginPath(); ctx.arc(0, 0, 40, 0, Math.PI * 2); ctx.fillStyle = C.lime; ctx.fill(); ctx.restore();
+    reveal('你的下一件作品，', 68, 273, 67, p / .7);
+    reveal('从这里开始。', 68, 369, 76, (p - .2) / .7, C.lime);
+    ctx.globalAlpha = out((p - .85) / .7); rect(70, 431, 354, 66, C.lime, 33);
+    text('打开视觉创作能力图谱', 101, 474, 24, C.dark, 700); text('↗', 395, 475, 28, C.dark, 400, 'right');
+    text('参考 · 体验 · 理解 · 创作', 72, 557, 22, C.muted); ctx.globalAlpha = 1;
+  }
+  const scenes = [intro, library, showcase, mechanism, twoPaths, ending];
+  function draw(time) {
+    if (!loaded) throw new Error('Local images must finish decoding before rendering.');
+    const t = Math.max(0, Math.min(23.999999, time));
+    const chapter = Math.min(5, Math.floor(t / 4)), p = t - chapter * 4, light = chapter === 1 || chapter === 3;
+    ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1; ctx.clearRect(0, 0, 1280, 720);
+    rect(0, 0, 1280, 720, light ? C.paper : C.dark);
+    // Subtle scene-scale motion; no wall-clock or random state affects output.
+    if (!light) {
+      const glow = ctx.createRadialGradient(1000, 200, 30, 1000, 200, 550);
+      glow.addColorStop(0, '#2c3a1b'); glow.addColorStop(1, C.dark); ctx.fillStyle = glow; ctx.fillRect(0, 0, 1280, 720);
+    }
+    chrome(t, chapter, light);
+    ctx.save(); scenes[chapter](p); ctx.restore();
+    // A short directional wipe makes each cut deliberate; it is fully time-driven.
+    if (chapter > 0 && p < .24) rect(1280 * out(p / .24), 0, 1280, 720, chapter % 2 ? C.lime : C.paper);
+    window.__currentTime = time;
+    window.__frameInfo = { chapter, seconds: time, actingSourceSeconds: chapter === 2 ? p : chapter === 4 ? Math.min(4.9, p + .6) : null };
+  }
+  window.__duration = 24;
+  window.__fps = 24;
+  window.__seek = time => {
+    if (!Number.isFinite(time)) throw new TypeError('seek time must be finite');
+    draw(Math.max(0, Math.min(24, time)));
+  };
+  window.__ready = Promise.all([
+    load('../media/still-a-light-train-v2.png').then(img => { images.train = img; }),
+    load('../media/atlas-technical-03.jpg').then(img => { images.launch = img; }),
+    ...Array.from({ length: 60 }, (_, i) => load('launch-real-assets/acting/frame-' + String(i + 1).padStart(3, '0') + '.jpg').then(img => { acting[i] = img; }))
+  ]).then(() => { loaded = true; draw(0); play.disabled = false; play.textContent = '播放宣传片'; });
+  window.__ready.catch(error => { clock.textContent = '素材加载失败'; console.error(error); });
+  function showTime(t) { seek.value = t; clock.textContent = t.toFixed(1) + ' / 24s'; }
+  function tick(now) {
+    if (!running) return;
+    const t = Math.min(24, base + (now - started) / 1000); draw(t); showTime(t);
+    if (t >= 24) { running = false; play.textContent = '重新播放'; }
+    else raf = requestAnimationFrame(tick);
+  }
+  function stop() { running = false; cancelAnimationFrame(raf); play.textContent = '播放宣传片'; }
+  play.addEventListener('click', () => {
+    if (running) { base = Number(seek.value); stop(); return; }
+    base = Number(seek.value); if (base >= 24) base = 0;
+    running = true; started = performance.now(); play.textContent = '暂停'; raf = requestAnimationFrame(tick);
+  });
+  seek.addEventListener('input', () => { if (!loaded) return; stop(); base = Number(seek.value); draw(base); showTime(base); });
+  window.addEventListener('message', event => {
+    if (event.origin !== window.location.origin || event.source !== window.parent) return;
+    if (event.data?.type !== 'atlas-real-seek' || !Number.isFinite(event.data.seconds)) return;
+    window.__ready.then(() => { stop(); base = Math.max(0, Math.min(24, event.data.seconds)); draw(base); showTime(base); });
+  });
+})();

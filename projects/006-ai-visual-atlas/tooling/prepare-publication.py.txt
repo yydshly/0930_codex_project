@@ -1,0 +1,214 @@
+"""Prepare an explicit public study snapshot from local, reviewed materials.
+
+The original local showroom remains intact. Third-party media are represented
+by source links; only selected self-made experiments and research assets ship.
+No API, model generation, or deployment is performed by this script.
+"""
+from __future__ import annotations
+
+import hashlib
+import html
+import json
+import posixpath
+import re
+import shutil
+from pathlib import Path
+from urllib.parse import unquote, urlsplit
+
+ROOT = Path(__file__).resolve().parents[2]
+WEB = ROOT / 'web'
+OUTPUT = ROOT / 'publication'
+GUIDE = 'atlas-projects-overview.png'
+DATE = '2026-10-08'
+BASE_URL = 'https://yydshly.github.io/0930_codex_project/projects/006-ai-visual-atlas/'
+DATA = json.loads((WEB / 'technical-source/ours/atlas-overview-content.json').read_text(encoding='utf-8'))
+SCENARIOS = [
+    '学习手绘叙事、共享角色、歌曲章节与时间映射。',
+    '选择视觉风格，制作有声音的故事、品牌或信息短片。',
+    '研究海洋、天空、实时渲染和游戏系统；体验海岛玩法。',
+    '学习自然语言需求到交互游戏的编程、构建与迭代。',
+    '产品发布、功能介绍、卖点和工作机制的动效演示。',
+    '围绕歌手、音乐情绪与歌词组织完整角色动效 MV。',
+    '手绘叙事、歌词动画、动态字体与程序配乐制作。',
+    '搭建可修改的角色表演、故事、镜头与转场基础。',
+    '找效果和公开提示词，比较原作与重制，选择创作方向。',
+    '追溯来源，区分代码、模型、剪辑和录屏等实现方式。',
+]
+EXPLORATIONS = [
+    {'title': '十项目的本地效果与技术研究', 'result': '保存并查看部分原作样片，构建原作游戏和源码预览；为十项目逐项记录输入、产出、原理、条件与边界。', 'limit': '作者样片、源码预览和游戏启动界面分别证明不同范围；没有完成每个 Skill 的完整生产或所有游戏的流程验收。'},
+    {'title': '约 127 秒整曲图片 MV', 'result': '以《Still a Light》及同一人物参考制作六幕图像，运镜、转场与原曲合成实际 MP4。', 'limit': '图片镜头版，整曲真实人物演唱尚未完成；它不能代表原 makevoid 的表演质量。'},
+    {'title': '五秒 H3 表演与人物场景合成', 'result': '通过 MiniMax 官方 API 生成歌曲 10–15 秒的真实表演；提取人物透明层，与窗景和对应歌曲片段合成。', 'limit': '仅一小段，逐字口型、坐姿、桌椅接触和前后遮挡尚未验收。'},
+    {'title': '24 秒六幕网页宣传片', 'result': '读取真实能力图谱网页，模型编写分镜与 Canvas；本机导出 720p、24fps、576 帧，完整解码通过。', 'limit': '无音轨；复用已有 H3 素材。任意 URL 的通用采集、模型后台、队列和自动交付服务尚未接通。'},
+]
+
+
+def e(value):
+    return html.escape(str(value), quote=True)
+
+
+def chrome(title, body):
+    return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="十个源项目的能力、范围、原理与场景；歌曲 MV 和网页宣传片的真实探索、价值及边界。"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; media-src 'self'; connect-src 'self'; frame-src 'self'"><title>{e(title)}</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="research.css"><link rel="stylesheet" href="architecture.css"><link rel="stylesheet" href="overview.css"><link rel="stylesheet" href="summary.css"></head><body><header class="atlas-header"><a class="brand" href="index.html">◈ VISUAL ATLAS <span>研究集 / 006</span></a><nav class="atlas-header-nav"><a href="{BASE_URL.rsplit('projects/',1)[0]}">研究集首页 ↗</a><a href="understanding.html">完整理解</a><a href="index.html#library">十个源项目</a></nav></header><main>{body}</main></body></html>'''
+
+
+def film(title, src, poster, detail, ident=''):
+    return f'<article class="technical-card"{f" id={e(ident)}" if ident else ""}><h3>{e(title)}</h3><video class="summary-film" controls preload="none" poster="media/{e(poster)}" src="media/{e(src)}" aria-label="{e(title)}"></video><p>{e(detail)}</p></article>'
+
+
+def summary_html():
+    cards = []
+    for item, scenario in zip(DATA['projects'], SCENARIOS):
+        cards.append(f'''<article class="technical-card summary-project"><span class="tag">{e(item['id'])} · {e(item['kind'])}</span><h3>{e(item['repo'])}</h3><dl><dt>能力与产物</dt><dd>{e(item['capability'])}</dd><dt>实现原理</dt><dd>{e(item['principle'])}</dd><dt>使用场景</dt><dd>{e(scenario)}</dd><dt>适用范围</dt><dd>{e(item['boundary'])}</dd><dt>我们的探索</dt><dd>{e(item['local'])}</dd></dl><div class="source-ref"><a href="https://github.com/{e(item['repo'])}" target="_blank" rel="noreferrer">查看源库 ↗</a></div></article>''')
+    studies = ''.join(f'<article class="technical-card"><h3>{e(s["title"])}</h3><p><strong>实际探索：</strong>{e(s["result"])}</p><p><strong>范围：</strong>{e(s["limit"])}</p></article>' for s in EXPLORATIONS)
+    body = f'''
+<section class="hero architecture-hero summary-hero"><div class="eyebrow">RESEARCH SUMMARY / 能力、原理、探索与价值</div><h1>看清创作能力，<br>再把它变成<span>可复用的方法。</span></h1><p>从最初的十个链接，研究真实作品如何由模型、代码、素材和工具链共同制作；重点实做歌曲 MV 与网页宣传片。</p><div class="architecture-note"><strong>研究结论：</strong>代码动画由模型或作者编排、程序按时间绘制；混合 MV 加入图像与视频模型的表演素材；游戏由实时引擎响应操作；资料索引提供参考。设计、素材、模型、执行和审查共同决定最终效果。</div><div class="summary-actions"><a class="research-link" href="#all-projects-map">先看生成的引导图</a><a href="#library">十项目能力与场景 ↓</a><a href="#exploration">我们的探索 ↓</a><a href="#experience">实际结果 ↓</a></div><p class="document-meta">汇总更新 {DATE} · 源库研究快照 2026-10-01 / 02 · <a href="https://x.com/NFTCPS/status/2105493719931826452" target="_blank" rel="noreferrer">最初链接来源 ↗</a></p></section>
+<nav class="technical-nav" aria-label="研究摘要章节"><a href="#scope">研究范围</a><a href="#all-projects-map">引导图</a><a href="#library">源库能力</a><a href="#exploration">实作探索</a><a href="#experience">成片</a><a href="#meaning">意义与沉淀</a><a href="#deep-research">技术细节</a></nav>
+<section class="research-block" id="scope"><div class="section-label">SCOPE / 研究什么、适合什么</div><h2>作品、工具、基础工程和索引分别理解。</h2><div class="technical-grid"><article class="technical-card"><h3>能力与范围</h3><p>十项目覆盖风格短片、手绘与动态字体、混合音乐 MV、网页宣传片、实时游戏及案例索引。它们的输入输出和运行条件不同；有些是成品源码，有些才提供生产流程。</p></article><article class="technical-card"><h3>共同原理</h3><p>语言模型理解和设计、编写代码；图形与媒体工具运行、渲染、合成和编码。写实表演可由专门的视频模型生成；Skill 组织制作方法与检查。</p></article><article class="technical-card"><h3>使用场景</h3><p>产品传播、信息与机制演示、歌曲视觉、角色故事、互动体验、技术教学、风格与工具选型。不同任务应挑对应的制作路线。</p></article><article class="technical-card"><h3>本研究边界</h3><p>这是有来源、有实作证据的研究汇总。通用输入到视频产品、整曲自然演唱和全部游戏兼容性尚未完成验证；作者的成功案例不等于通用成功保证。</p></article></div></section>
+<section class="research-block overview-map" id="all-projects-map"><div class="section-label">GUIDE / 沿用已生成的引导图</div><h2>先建立全景理解，再逐项查看。</h2><div class="summary-guide"><a href="media/{GUIDE}" target="_blank" rel="noreferrer" aria-label="打开完整高清十项目引导图"><img src="media/{GUIDE}" width="2800" height="8816" alt="我们生成的十项目能力与技术完整总览图" loading="lazy"></a><div><p>沿用已经生成的总览图，内容包括初始目标、十个项目各自的能力 / 原理 / 价值 / 边界、三类执行底座、人与模型和程序的分工，以及本机实际进度。</p><p>左侧是完整长图的预览，点击可放大查看；图片没有重新生成。</p><div class="source-ref"><a href="media/{GUIDE}" download>下载高清引导图</a><a href="technical-source/ours/atlas-overview-content.json">图中文字与来源</a></div></div></div></section>
+<section class="research-block" id="library"><div class="section-label">TEN SOURCE PROJECTS / 源库能力、原理、场景与范围</div><h2>每个源项目解决什么问题？</h2><p>卡片中的“我们的探索”记录本机研究状态。发布版展示后面的自制代表性结果；原作者作品请主动打开来源查看。</p><div class="technical-grid">{''.join(cards)}</div></section>
+<section class="research-block" id="exploration"><div class="section-label">OUR EXPLORATION / 从效果研究到实际制作</div><h2>我们做了什么，并由此确认了什么？</h2><div class="technical-grid">{studies}</div><p>还拆解了人物主导与场景主导、分层与完整场景、音频条件与逐字口型、坐姿接触与遮挡、软提示与硬规则。这些帮助解释原作与本机试验的差异，并确定下一步需要补的模块。</p></section>
+<section class="research-block" id="experience"><div class="section-label">ACTUAL OUTPUTS / 三项代表性实作</div><h2>直接看本次探索的实际文件。</h2><div class="technical-grid">{film('整曲图片 MV · 约 127 秒','still-a-light-generated-v2.mp4','still-a-light-train-v2.png','六幕图像、镜头运动与原歌曲合成；全曲人物真实表演尚未完成。')}{film('五秒 H3 演唱与合成','still-a-light-h3-composite.mp4','still-a-light-h3-composite-preview.png','实际 MiniMax 视频输出＋本地去绿和背景合成。口型逐字准确性、坐姿与物理接触尚未验收。')}{film('六幕网页宣传片 · 24 秒','atlas-launch-real.mp4','atlas-real-1.jpg','模型读取网页、编写 Canvas 场景，本机逐帧导出；720p / 24fps / 576 帧，无音轨。')}<article class="technical-card"><h3>原作者效果与其他材料</h3><p>原作样片、动图、游戏和资料索引在源项目中查阅；本机研究副本与中间版本继续保留。我们没有用别的项目或教学画面替代原作。</p><div class="source-ref"><a href="research.html">原作入口与原理研究 →</a><a href="production.html">试验、绿幕与制作版本 →</a></div></article></div></section>
+<section class="research-block" id="meaning"><div class="section-label">VALUE / 探索的意义是什么</div><h2>从一次效果，沉淀可修改、可追溯、可复用的制作能力。</h2><div class="roadmap"><article><em>判断价值</em><h3>能选对制作路线</h3><p>区分代码、生成素材、游戏和索引；按场景选工具，明确设备、模型和费用条件，避免把成品误当生成服务。</p></article><article><em>技术价值</em><h3>能保留执行底座</h3><p>事实快照、素材与角色版本、统一时间、动效组件、提供商适配、任务恢复、渲染与合成可以跨创作复用。</p></article><article><em>产品价值</em><h3>能控制过程并验收</h3><p>产品规定内容、结构、可用素材、预算与组件。文件成功、事实准确、口型自然和美感分别检查；商业效果仍需实际业务验证。</p></article></div><div class="architecture-note"><strong>下一步：</strong>MV 先验收已有表演，再补齐场景关系与更多镜头；宣传片接结构化简报、后台任务和可用组件。自由代码表达更开放，固定组件生产更稳定，两种方式可以按任务组合。</div></section>
+<section class="research-block" id="deep-research"><span id="understanding"></span><div class="section-label">READ MORE / 理解与技术细节</div><h2>沿着这个顺序继续阅读。</h2><div class="technical-grid"><article class="technical-card"><h3>全部理解与十二项修正</h3><p>模型、Skill、程序、产物、控制与证据分别处于哪一层。</p><a class="research-link" href="understanding.html">打开完整理解</a></article><article class="technical-card"><h3>歌曲 → MV 底层</h3><p>口型、角色与场景、时间映射、绿幕、质量与实际实现状态。</p><a class="research-link" href="mv-architecture.html">查看 MV 技术</a></article><article class="technical-card"><h3>网页 → 宣传短片底层</h3><p>读内容、模型分镜与代码、时钟、渲染、检查和自动产品缺口。</p><a class="research-link" href="launch-architecture.html">查看宣传片技术</a></article><article class="technical-card"><h3>方法与发布记录</h3><p>固定源码、实际文件和制作证据；源能力、本机结果与设计建议分别标注。</p><div class="source-ref"><a href="technical-source/ours/research-summary.json">研究摘要与来源</a><a href="technical-source/ours/publication-scope.json">公开文件范围</a></div></article></div></section>
+<section class="research-block" id="publication-scope"><h2>公开研究范围</h2><p>本站发布我们整理的说明、既有引导图、选定的自制实验和脱敏技术证据。原作者媒体和原作游戏提供来源入口；本机原始音频、服务配置、凭据与未选中间文件保留在本机。页面播放已有文件，不提交付费生成任务。</p></section><footer><p>源库研究以当时的固定版本和源码为依据；提供商当前模型、接口与费用需要使用前另行核对。研究完成不代表通用自动产品完成。</p></footer>'''
+    return chrome('视觉创作能力研究 · 源库、探索与价值', body)
+
+
+def production_html():
+    body = '''<section class="hero architecture-hero"><div class="eyebrow">OUR EXPERIMENTS / 真实结果与有限范围</div><h1>从理解到<span>实际文件。</span></h1><p>代表性实验来自本次制作；保留图片 MV、真实 H3 表演和代码宣传片的区别。</p></section><nav class="technical-nav"><a href="#mv-v2">整曲图片 MV</a><a href="#h3-composite">H3 绿幕与合成</a><a href="#launch-result">网页宣传片</a><a href="#history">版本说明</a></nav>'''
+    body += '<section class="research-block" id="mv-v2"><span id="mv-result"></span><h2>整曲图片 MV</h2>' + film('Still a Light · 图片镜头版','still-a-light-generated-v2.mp4','still-a-light-train-v2.png',EXPLORATIONS[1]['result']+' '+EXPLORATIONS[1]['limit']) + '</section>'
+    body += '<section class="research-block" id="h3-composite"><span id="h3-pilot"></span><span id="mv-v3"></span><h2>模型产生表演，程序提取与合成人物。</h2><div class="technical-grid">'+film('原始五秒 H3 · 绿幕','still-a-light-h3-pilot-raw.mp4','still-a-light-h3-raw-preview.png','动作已在模型输出里；绿幕用于人物分离。原素材约5.184秒，成片取前120帧。')+film('本地五秒合成','still-a-light-h3-composite.mp4','still-a-light-h3-composite-preview.png',EXPLORATIONS[2]['result']+' '+EXPLORATIONS[2]['limit'])+'</div><div class="source-ref"><a href="mv-architecture.html#models">输入与口型原理</a><a href="mv-architecture.html#staging">人物怎样进入场景</a><a href="mv-architecture.html#matting">抠像实现</a></div></section>'
+    body += '<section class="research-block" id="launch-result"><h2>网页 → 六幕宣传片</h2>'+film('Visual Atlas · 24 秒六幕','atlas-launch-real.mp4','atlas-real-1.jpg',EXPLORATIONS[3]['result']+' '+EXPLORATIONS[3]['limit'])+'<a class="research-link" href="launch-architecture.html#real-production">逐幕解释模型决定与真实代码 →</a></section>'
+    body += '<section class="research-block" id="history"><h2>探索版本与意义</h2><p>先以歌曲驱动的代码画面验证整曲渲染；再以统一参考的图片 MV 验证视觉方向；随后仅生成五秒 H3 表演，验证视频输出、人物分离与音乐时间映射。宣传片先做五幕版本，再实际制作六幕版本。</p><p>部分中间工程、原始音频与未选版本保留本机；这些步骤说明验证的先后与范围，不能推导成完整自动生成产品或原作等同质量。</p><div class="source-ref"><a href="understanding.html#evidence">证据能证明什么</a><a href="index.html#meaning">可复用的技术与价值</a></div></section><footer>本页展示已有成片；不调用模型或生成服务。源库、官方 API 的实际适配和未来扩展分别记录。</footer>'
+    return chrome('本次实作 · 图片 MV、H3 与网页宣传片', body)
+
+
+def source_for(relative):
+    filename = Path(relative).name
+    if filename.startswith('shipvideo-'):
+        return ('https://github.com/diggerhq/shipvideo', '查看作者样片来源 ↗')
+    if filename.startswith('makevoid-'):
+        return ('https://github.com/makevoid/motion-graphics-music-video-skill#videos-created-with-this-skill', '查看作者 MV 来源 ↗')
+    if filename in {'emotions.webp'}:
+        return ('https://github.com/JohnHeibel/ClaudeAnimationBase', '查看作者角色动画 ↗')
+    if filename in {'work-reel.gif','koi-gag.gif','xiaozhen-sheet.jpg','work-reel-sheet.jpg'}:
+        return ('https://github.com/tuzhechen2005/opus-video-skills', '查看作者动画来源 ↗')
+    if filename in {'skillry-gallery.jpg'}:
+        return ('https://github.com/yihui-dev/awesome-opus5-5-videos', '查看案例与重制索引 ↗')
+    if filename in {'corpus-overview.svg'}:
+        return ('https://github.com/athemeroy/awesome-opus-5-5-videos', '查看来源与技术索引 ↗')
+    if relative.startswith('games/'):
+        repo = {'pdoom':'JohnHeibel/PDoomVideo','tidewater':'dgreenheck/tidewater'}.get(relative.split('/')[1], 'riba2534/claude-opus-5-5-demo')
+        return ('https://github.com/'+repo, '查看原作游戏或作品来源 ↗')
+    return ('production.html#history', '查看本机材料与版本说明 →')
+
+
+def referenced(href, relative):
+    u = urlsplit(html.unescape(href))
+    if u.scheme or u.netloc or not u.path:
+        return None
+    return posixpath.normpath(posixpath.join(str(Path(relative).parent).replace('\\','/'), unquote(u.path)))
+
+
+def public_page(text, relative, selected):
+    if relative == 'research.html':
+        text = text.replace('① 网页宣传片 · 本地播放', '① 网页宣传片 · 来源与原理')
+        text = text.replace('本页只播放本地副本。', '此前已在本机查看部分副本；公开版提供作者来源入口。')
+        text = text.replace('本次已确认原页面实际播放。下面保存的是播放中的截图；本地尚无完整 MP4，截图不能替代节拍、口型与转场的评价。', '此前研究时已确认原页面实际播放并保存截图；本地尚无完整 MP4。公开版提供原作观看入口，截图不能替代节拍、口型与转场的评价。')
+        text = text.replace('已保留独立观看标签页。', '请通过上方来源入口主动观看。')
+    if relative == 'launch-architecture.html':
+        text = text.replace('样片此前已保存到本地；这里播放已有媒体，没有提交新任务。', '样片此前已保存到本地研究；公开版通过作者来源查看，没有提交新任务。')
+        text = text.replace('本页播放它们此前保存的本地副本。', '本机研究副本继续保留；公开版通过作者来源查阅这些原作。')
+    def replace_media(match):
+        tag = match.group()
+        src = re.search(r'\bsrc=["\']([^"\']+)["\']', tag)
+        target = referenced(src.group(1), relative) if src else None
+        if target and target not in selected:
+            url, label = source_for(target)
+            prefix = posixpath.relpath('production.html', str(Path(relative).parent))+'#history' if url.startswith('production.html') else url
+            return f'<div class="publication-note"><p>此项为原作来源或未选的本机材料。公开页提供来源与版本说明。</p><a href="{e(prefix)}" target="_blank" rel="noreferrer">{e(label)}</a></div>'
+        return re.sub(r'preload=["\'][^"\']+["\']', 'preload="none"', tag)
+    text = re.sub(r'<video\b[^>]*>[\s\S]*?</video>|<iframe\b[^>]*>[\s\S]*?</iframe>|<img\b[^>]*>', replace_media, text, flags=re.I)
+    def replace_anchor(match):
+        anchor = match.group()
+        href = re.search(r'\bhref=["\']([^"\']+)["\']', anchor)
+        target = referenced(href.group(1), relative) if href else None
+        if not target or target in selected:
+            return anchor
+        url,label=source_for(target)
+        if url.startswith('production.html'):
+            url=posixpath.relpath('production.html',str(Path(relative).parent))+'#history'
+        return f'<a href="{e(url)}" target="_blank" rel="noreferrer">{e(label)}</a>'
+    text = re.sub(r'<a\b[^>]*>[\s\S]*?</a>', replace_anchor, text, flags=re.I)
+    stylesheet = posixpath.relpath('summary.css', str(Path(relative).parent))
+    index = posixpath.relpath('index.html', str(Path(relative).parent))
+    text = text.replace('</head>', f'<link rel="stylesheet" href="{stylesheet}"></head>',1)
+    note=f'<p class="publication-banner">公开研究版：保留说明和选定自制结果；原作者媒体通过来源入口查阅。本机研究副本、历史中间材料与公开范围分别记录。<a href="{index}#publication-scope">查看范围 →</a></p>'
+    return text.replace('<main>', '<main>'+note, 1)
+
+
+def scrub_json(value):
+    if isinstance(value, dict):
+        return {k:scrub_json(v) for k,v in value.items() if k not in {'regularFont','boldFont','task_id','taskId'}}
+    if isinstance(value,list):return [scrub_json(v) for v in value]
+    if isinstance(value,str):
+        if re.match(r'^[A-Za-z]:[\\/]',value):return '[本机配置路径已省略]'
+    return value
+
+
+def prepare():
+    OUTPUT.mkdir(exist_ok=True)
+    chosen = {'style.css','research.css','architecture.css','overview.css','understanding.css','summary.css',
+              'understanding.js','architecture.js','launch-architecture.js','launch-real-explainer.js',
+              'understanding.html','mv-architecture.html','launch-architecture.html','research.html','skill-adaptation.html',
+              'production/launch.html','production/launch.js','production/studio.css'}
+    videos = {'atlas-launch-local.mp4','atlas-launch-real.mp4','still-a-light-generated-v2.mp4','still-a-light-h3-composite.mp4','still-a-light-h3-pilot-raw.mp4'}
+    for p in (WEB/'media').iterdir():
+        if p.name in videos or (p.suffix in {'.png','.jpg'} and (p.name.startswith(('atlas-','still-a-light-','h3-technical-','shipvideo-capability-overview')))):
+            chosen.add(p.relative_to(WEB).as_posix())
+    for p in (WEB/'technical-source').rglob('*'):
+        if not p.is_file():continue
+        rel=p.relative_to(WEB).as_posix()
+        if rel.startswith('technical-source/makevoid/') or rel=='technical-source/shipvideo/source-map.json':chosen.add(rel)
+        elif rel.startswith('technical-source/ours/') and p.suffix in {'.json','.txt'} and p.name!='minimax-pilot.py.txt':chosen.add(rel)
+    # The new summary is also available next to the existing local showroom.
+    (WEB/'summary.html').write_text(summary_html(),encoding='utf-8')
+    scope={'updated':DATE,'sourceSnapshot':'2026-10-01 / 02','published':'Selected original research text, generated diagrams, selected self-made experiments and redacted technical evidence.','sourceMedia':'Third-party source media and original games are accessed via explicit source links.','rawPrivateAudioPublished':False,'credentialsPublished':False,'selectedSongExperiments':'The existing picture MV and five-second performance are selected as representative results for this user-requested study publication. Raw MP3/WAV and other intermediates are excluded.','newGenerationCalls':0}
+    summary={'updated':DATE,'sourcePost':DATA['sourcePost'],'goal':'Understand the ten project links, inspect actual effects, study their mechanisms and test song-to-MV and webpage-to-promotional-video routes.','projects':[dict(p,useCases=s) for p,s in zip(DATA['projects'],SCENARIOS)],'explorations':EXPLORATIONS,'meaning':'Separate creative model ability from reusable execution, controls and evidence; preserve traceable facts, assets, time contracts, components, provider adapters, rendering and review.','boundaries':['Whole-song generated singing not completed','Phoneme-accurate lip-sync not accepted','Train contact and occlusion not implemented','Generic arbitrary-URL automatic video product not connected']}
+    generated={'index.html':summary_html(),'summary.html':summary_html(),'production.html':production_html(),
+               'technical-source/ours/publication-scope.json':json.dumps(scope,ensure_ascii=False,indent=2)+'\n',
+               'technical-source/ours/research-summary.json':json.dumps(scrub_json(summary),ensure_ascii=False,indent=2)+'\n'}
+    selected=chosen | set(generated) | {'assets/'+GUIDE}
+    for relative in sorted(chosen):
+        source=WEB/relative;target=OUTPUT/relative
+        if not source.is_file():raise ValueError('Missing chosen source: '+relative)
+        target.parent.mkdir(parents=True,exist_ok=True)
+        if source.suffix=='.html':target.write_text(public_page(source.read_text(encoding='utf-8'),relative,selected),encoding='utf-8')
+        elif source.suffix=='.json':target.write_text(json.dumps(scrub_json(json.loads(source.read_text(encoding='utf-8'))),ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+        elif source.suffix=='.txt':
+            text=source.read_text(encoding='utf-8')
+            text=re.sub(r'[A-Za-z]:[/\\](?:[^\s"\'<>]*)', '[本机配置路径]', text)
+            target.write_text(text.rstrip('\r\n')+'\n',encoding='utf-8')
+        else:shutil.copy2(source,target)
+    for relative,text in generated.items():
+        target=OUTPUT/relative;target.parent.mkdir(parents=True,exist_ok=True);target.write_text(text,encoding='utf-8')
+    assets=ROOT/'assets';assets.mkdir(exist_ok=True)
+    shutil.copy2(WEB/'media'/GUIDE,assets/GUIDE)
+    (OUTPUT/'assets').mkdir(exist_ok=True)
+    shutil.copy2(assets/GUIDE,OUTPUT/'assets'/GUIDE)
+    # Keep manifest bytes identical across Windows preparation and Linux CI.
+    for relative in selected:
+        p=OUTPUT/relative
+        if p.suffix in {'.html','.css','.js','.mjs','.json','.txt','.md','.svg'}:
+            normalized='\n'.join(line.rstrip() for line in p.read_text(encoding='utf-8').splitlines()).rstrip('\n')+'\n'
+            p.write_bytes(normalized.encode('utf-8'))
+    files=[]
+    for relative in sorted(selected):
+        p=OUTPUT/relative
+        files.append({'path':relative,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
+    manifest={'project':'006-ai-visual-atlas','updated':DATE,'publicUrl':BASE_URL,'guideReusedWithoutGeneration':True,'newPaidGenerationCalls':0,'scope':scope,'files':files}
+    (OUTPUT/'manifest.json').write_bytes((json.dumps(manifest,ensure_ascii=False,indent=2)+'\n').encode('utf-8'))
+    (WEB/'technical-source/ours/research-summary.json').write_text(generated['technical-source/ours/research-summary.json'],encoding='utf-8')
+    print(json.dumps({'files':len(files),'bytes':sum(f['bytes'] for f in files),'publication':str(OUTPUT),'guideSha256':hashlib.sha256((assets/GUIDE).read_bytes()).hexdigest()},ensure_ascii=False))
+
+
+if __name__=='__main__':prepare()

@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; media-src 'self'; connect-src 'self'; frame-src 'self'">
+  <title>MV 技术底层 · 源库与本机实现</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="research.css">
+  <link rel="stylesheet" href="architecture.css">
+  <link rel="stylesheet" href="overview.css">
+<link rel="stylesheet" href="summary.css"></head>
+<body>
+<header class="atlas-header"><a class="brand" href="index.html#deep-research">← 返回能力首页</a><nav class="atlas-header-nav" aria-label="研究页面导航"><a href="understanding.html">全部理解与查漏补缺 →</a><a href="launch-architecture.html">另一项：网页 → 宣传短片 ↗</a></nav></header>
+<main><p class="publication-banner">公开研究版：保留说明和选定自制结果；原作者媒体通过来源入口查阅。本机研究副本、历史中间材料与公开范围分别记录。<a href="index.html#publication-scope">查看范围 →</a></p>
+  <section class="hero architecture-hero">
+    <div class="eyebrow">TECHNICAL BREAKDOWN / MAKEVOID → WINDOWS</div>
+    <h1>从音频到视频，<br>拆开<span>每一个技术环节。</span></h1>
+    <p>先看我们梳理的创作方式与六条制作路线，再对照源库的实际代码。用《Still a Light》已有的真实素材，查看人物、背景和全曲时间轴如何连接。</p>
+    <div class="fact-strip">
+      <div><strong>127.118 s</strong><span>原歌曲解码时长<br>视频末尾取整到 127.125 s</span></div>
+      <div><strong>5 s</strong><span>真实 H3 演唱素材<br>位于原歌曲 10–15 s</span></div>
+      <div><strong>24 fps</strong><span>统一帧时钟<br>全曲覆盖 3051 帧</span></div>
+      <div><strong>0 次</strong><span>本次技术页新增模型调用<br>所有演示读取本地素材</span></div>
+    </div>
+    <p class="document-meta">依据固定版本 <code>deb6efd51d08</code>，MIT 许可证；不是对远端最新版本的实时同步。实现与试验记录更新于 2026-10-02。<a href="technical-source/makevoid/LICENSE.txt" target="_blank">本地许可证</a> · <a href="production.html#history" target="_blank" rel="noreferrer">查看本机材料与版本说明 →</a></p>
+  </section>
+  <nav class="technical-nav" aria-label="技术章节">
+    <a href="understanding.html">先看完整理解</a>
+    <a href="#routes">我们的理解 / 六条路线</a><a href="#system">系统分工</a><a href="#staging">坐姿怎样进入场景</a><a href="#models">生成与口型</a><a href="#layers">拆开图层</a><a href="#timing">音频与帧时钟</a><a href="#matting">抠像算法</a><a href="#execution">API 与任务回执</a><a href="#quality">自然感与验收</a><a href="#design">我们的模块设计</a>
+  </nav>
+
+  <section class="research-block" id="routes">
+    <div class="section-label">OUR UNDERSTANDING / 创作主体与技术路线分别选择</div>
+    <h2>人物为主、场景为主，都可以选择不同的制作方法。</h2>
+    <p>人物主导：围绕演唱者的风格、情绪与动作安排画面。场景主导：先设计车厢、城市或故事空间，再安排人物进入。两者是创作选择；“分层、整体生成、后做嘴型”等是技术选择，一支 MV 可以按镜头混用。</p>
+    <div class="technical-grid">
+      <article class="technical-card"><span class="tag">选择一 · 画面围绕谁</span><div class="route-buttons" role="group" aria-label="选择创作主体"><button type="button" data-subject="character" aria-pressed="true">人物为主体</button><button type="button" data-subject="scene" aria-pressed="false">场景为主体</button></div><h3 id="subject-title">围绕演唱者编排画面</h3><p id="subject-description">人物负责唱歌和情绪，背景、文字、图形与镜头配合人物及歌词。makevoid 默认路线更接近这种角色主导的分层动效制作。</p><p class="document-meta">统一风格是制作要求；源库没有硬编码只能漫画风。风格与渲染方式也可分别选择。</p></article>
+      <article class="technical-card"><span class="tag">选择二 · 哪些交给模型，哪些自己控制</span><div class="route-buttons" role="group" aria-label="选择 MV 制作技术"><button type="button" data-route="layered" aria-pressed="true">分层合成</button><button type="button" data-route="whole" aria-pressed="false">完整场景生成</button><button type="button" data-route="lipsync" aria-pressed="false">视频后对口型</button><button type="button" data-route="performance" aria-pressed="false">表演迁移</button><button type="button" data-route="rig" aria-pressed="false">绑定动画</button><button type="button" data-route="story" aria-pressed="false">叙事 / 歌词</button></div><h3 id="route-title">人物表演 + 本地场景编排</h3><p id="route-description">模型先生成单独的人物表演，本地代码制作背景、文字、镜头与合成。人物姿态仍需与计划中的场景匹配。</p><p id="route-status" class="route-status">当前证据：已实测 5 秒 H3 表演、抠像和全曲插入。</p></article>
+    </div>
+    <p class="architecture-note"><strong>“抽卡”程度取决于生成范围与约束：</strong>完整场景可以先由一张接受的构图约束；分层人物也可能出现姿态或口型失误。参考图、表演视频、局部修改和明确的时间轴，可以减少交给模型自由决定的内容，不能保证每次生成都可直接使用。</p>
+    <div class="table-scroll"><table class="tech-table"><thead><tr><th>制作路线</th><th>具体过程</th><th>适用重点</th><th>我们这里的证据</th></tr></thead><tbody>
+      <tr><td>① 分层合成</td><td>人物参考 + 歌曲片段 → 表演 → 透明人物 → 背景 / 动效。</td><td>演唱者主导、动态排版、场景可独立调整。</td><td><span class="state">5 秒已实测</span><br>源库默认路线；全曲角色表演未完成。</td></tr>
+      <tr><td>② 完整场景生成</td><td>接受的完整构图 + 表演要求 / 可用音频条件 → 镜头。</td><td>坐姿、靠背、人与物体接触；需要检查场景与物体稳定性。</td><td><span class="state pending">尚未实测</span><br>源库允许少量物理互动镜头采用这种例外。</td></tr>
+      <tr><td>③ 视频后对口型</td><td>先做好人物与场景的视频，再用音频进行专门的嘴型处理。</td><td>把场景 / 动作制作与音频同步分开验收。</td><td><span class="state pending">工具未接入</span><br>属于新增研究路线；不是给视频换音轨。</td></tr>
+      <tr><td>④ 表演迁移</td><td>拍摄真人动作与表情，作为驱动视频，迁移到角色参考。</td><td>表演具有明确参考，减少仅靠文字描述演技的部分。</td><td><span class="state pending">工具未接入</span><br>不同工具 / 输入类型可控制的身体与场景范围不同。</td></tr>
+      <tr><td>⑤ 绑定动画</td><td>搭建可控制的 2D / 3D 角色，用动作时间轴与嘴形轨道制作。</td><td>坐姿、物体接触与镜头可具体调整；角色准备工作更多。</td><td><span class="state pending">尚未搭建</span><br>可以有音频辅助生成嘴形，仍需编辑与审查。</td></tr>
+      <tr><td>⑥ 叙事 / 歌词</td><td>以风景、故事镜头、文字或图片运镜组织歌曲。</td><td>演唱者可不出镜；不要求每个镜头都出现唱歌口型。</td><td><span class="state">已有整曲示范</span><br>已制作图片镜头版和代码动画版；非精确歌词字幕。</td></tr>
+    </tbody></table></div>
+    <p>③～⑤ 是扩展制作路线，不属于我们已经跑过的 makevoid / H3 试验。官方工具说明支持这些处理方式，但歌唱长音、具体姿态和最终质量仍需单独试样，不能据此认为本机已具备。</p>
+    <div class="source-ref"><a href="technical-source/makevoid/prompts.md.txt" target="_blank">源库：默认分层与场景例外</a><a href="https://sync.so/docs/api-reference/api-overview" target="_blank" rel="noreferrer">扩展：视频 + 音频口型处理 ↗</a><a href="https://help.runwayml.com/hc/en-us/articles/42311337895827-Performance-Capture-with-Act-Two" target="_blank" rel="noreferrer">扩展：表演驱动角色 ↗</a><a href="https://manual.reallusion.com/iclone-8/content/enu/8.0/50-Animation/Facial-Animation/Creating-Voice-Script-with-Accurate-Lipsync.htm" target="_blank" rel="noreferrer">扩展：角色嘴形动画轨道 ↗</a></div>
+    <p class="document-meta">创作主体与路线的分类是本次讨论的整理；工具能力依据官方说明，查阅于 2026-10-02。外部链接只在点击时打开。</p>
+  </section>
+
+  <section class="research-block" id="system">
+    <div class="section-label">01 / SYSTEM BOUNDARY</div>
+    <h2>Skill 编排流程，视频模型生成表演，代码控制场景。</h2>
+    <div class="responsibility">
+      <div><strong>制作决策：代理 + Skill</strong><p>读歌、设计分镜、固定角色版本、编写提示词与动画、审查素材。Skill 是制作规则和工具入口；执行它的代理负责具体创作判断。</p></div>
+      <div><strong>生成模型：图片 + H3</strong><p>图片模型制作身份参考、关键帧和背景。H3 根据人物参考、音频片段和演唱要求，生成连续的人脸、身体与视频帧。</p></div>
+      <div><strong>确定性工具：抠像 + 渲染 + 编码</strong><p>Python / FFmpeg 处理媒体；p5.js 按帧绘制场景；Swift 在 macOS 加特效。它们控制摆放和时刻，不负责“理解并唱出歌词”。</p></div>
+    </div>
+    <div class="flow-map" aria-label="歌曲到完整 MV 的数据流">
+      <a href="#timing"><em>01 · 音频</em><b>歌曲主轨</b><small>解码 / 段落 / 唱词时刻</small></a>
+      <a href="#models"><em>02 · 图片</em><b>角色与关键帧</b><small>身份版本 / 构图 / 风格</small></a>
+      <a href="#models"><em>03 · 模型</em><b>H3 表演</b><small>图 + 音频 + 提示词 → 视频</small></a>
+      <a href="#matting"><em>04 · 本地</em><b>透明人物</b><small>RGBA / 去绿 / 裁切</small></a>
+      <a href="#layers"><em>05 · 本地</em><b>场景渲染</b><small>人物 + 图形 + 镜头</small></a>
+      <a href="#timing"><em>06 · 本地</em><b>全曲组装</b><small>连续画面 + 一条主音轨</small></a>
+      <a href="#quality"><em>07 · 审查</em><b>效果与证据</b><small>播放 / 帧数 / 同步 / 边缘</small></a>
+    </div>
+    <p class="architecture-note"><strong>源码里能确认的边界：</strong>这个仓库提供调用外部模型和组合媒体的工程代码，没有提供 H3 的权重、训练代码或内部网络结构。我们能还原它的制作流水线，不能据此断言模型内部采用哪一种音素编码器或扩散结构。</p>
+    <div class="source-ref"><a href="technical-source/makevoid/SKILL.md.txt" target="_blank">本地原 Skill</a><a href="technical-source/makevoid/animation-audio-vfx.md.txt" target="_blank">本地分工与合成说明</a><a href="https://github.com/makevoid/motion-graphics-music-video-skill/blob/deb6efd51d08cc19fdcd3f96db43f4d903868da9/.claude/skills/motion-graphics-music-video/SKILL.md" target="_blank" rel="noreferrer">固定版本出处 ↗</a></div>
+  </section>
+
+  <section class="research-block" id="staging">
+    <div class="section-label">STAGING / 人物不是任意贴到背景上</div>
+    <h2>“坐在火车里”要在生成前设计好，抠像后不会自动坐下。</h2>
+    <p><strong>我们当前的缺口：</strong>已经生成的 H3 是正面演唱近景，合成时只用了窗外景色。没有保留座位、桌子、坐姿和接触关系，因此它目前只能表达“人物在窗景前”，不能证明“人物坐在火车座位里”。</p>
+    <div class="staging-layout">
+      <div>
+        <div class="staging-photo">
+          <img src="media/still-a-light-train-v2.png" alt="已有列车场景图片：人物坐在右侧座位上，左侧是窗，手持杯子，手肘接触桌面。此图为静态构图参考，不是新生成视频。">
+          <button type="button" class="staging-marker marker-camera" data-staging="camera" aria-pressed="true" aria-label="查看机位与朝向关系">1</button>
+          <button type="button" class="staging-marker marker-seat" data-staging="seat" aria-pressed="false" aria-label="查看座椅与遮挡关系">2</button>
+          <button type="button" class="staging-marker marker-contact" data-staging="contact" aria-pressed="false" aria-label="查看手、杯子与桌面的接触关系">3</button>
+        </div>
+        <p class="layer-caption">这是已有的静态列车构图，用来解释搭配关系；没有新增视频生成。标记为人工示意，不是模型检测出的骨骼或三维坐标。</p>
+      </div>
+      <article class="technical-card staging-explanation" aria-live="polite">
+        <span class="tag">点击画面中的 1 / 2 / 3</span>
+        <h3 id="staging-title">1 · 机位与人物朝向先一致</h3>
+        <p id="staging-body">这张图是从人物侧前方看过去，人物朝左，窗光从左侧进入。需要在这个构图下制作演唱关键帧；当前正面近景的角度和景别不同，缩放和平移不能把它变成这张图的姿态。</p>
+        <p class="document-meta">先把“人应该怎么坐、镜头从哪里看”设计在同一张参考构图里，再决定哪些部分单独生成和合成。</p>
+      </article>
+    </div>
+    <div class="technical-grid">
+      <article class="technical-card"><span class="tag">方案 A · 分层，姿态先匹配</span><h3>坐姿人物 + 对应的车厢布景</h3><p>先确定一张完整构图：座位、桌面、人物朝向、景别与光线。然后制作同机位的无人车厢背景，以及基于同一身份的单姿态坐姿关键帧。</p><p>让 H3 从这个坐姿关键帧演唱，保持下半身姿态与镜头稳定。合成时对齐身体位置和桌面接触点：椅背在人物后面，桌沿 / 扶手按需要在人物前面，接触阴影跟随姿态安排。</p><p>杯子若由人物拿着，可跟人物一起生成；独立桌子与扶手需要场景图层和遮罩。背景和人物的透视、光线或姿态不一致时，仅调 x、y、缩放无法全部补救。</p></article>
+      <article class="technical-card"><span class="tag">方案 B · 物理互动镜头的例外</span><h3>用完整场景关键帧生成这个镜头</h3><p>对于“坐着靠椅背、手肘压桌面、手拿杯子”这样的接触镜头，可以把接受的完整构图作为视频参考，让模型在同一个镜头里生成场景与人物表演，再审查口型、手部和家具稳定性。</p><p>源库明确允许少数必须与物体互动的短镜头使用完整场景 H3，要求简单环境、少量道具、固定机位和短时长。分层是它的默认路线，这个镜头可以因接触关系而采用例外。</p><p>这是一条拟验证路线，尚未用我们的 API 跑过。它减少了手工拼接接触关系的工作，也把家具和背景的稳定性交给模型，需要查看真实输出再决定是否采用。</p></article>
+    </div>
+    <p class="architecture-note"><strong>对这支歌曲的具体设计：</strong>可以保留列车静态图作为统一构图参考，先选定一个露出嘴部的坐姿演唱镜头。需要复现桌椅与手部接触时，考虑一个短的完整场景镜头；其他演唱特写与动态排版继续分层。当前正面 H3 只适合另一个近景镜头，不应直接冒充这张图里的坐姿表演。</p>
+    <div class="source-ref"><a href="technical-source/makevoid/prompts.md.txt" target="_blank">源库：单姿态关键帧与物理互动例外</a><a href="technical-source/makevoid/core.js.txt" target="_blank">源库：裁切位置与人物摆放</a></div>
+  </section>
+
+  <section class="research-block" id="models">
+    <div class="section-label">02 / MODEL INPUTS & PERFORMANCE</div>
+    <h2>嘴型在 H3 生成阶段出现，后面的抠像与换音轨不会修复它。</h2>
+    <div class="technical-grid">
+      <article class="technical-card"><span class="tag">原库 · Fal 入口</span><h3>普通 H3 图生视频调用</h3><p>源代码使用 <code>minimax/h3-max/image-to-video</code>，默认 <code>1080P</code>，禁用提示词扩写。<code>image_url</code> 固定外观，<code>target_audio_url</code> 提供该时间段的音频，<code>prompt</code> 描述唱词、情绪和动作。</p><p><code>video.rb</code> 明确写着 “No lipsync pass”。这个固定版本没有在主流程中再调用一个独立的 “H3 Max Lip Sync” 接口；不能把其他接口的名称当成它的实现。</p><details class="source-detail"><summary>展开真实模型封装</summary><pre><code>ENDPOINT = "minimax/h3-max/image-to-video"
+DEFAULTS = {
+  resolution: "1080P",
+  prompt_expansion_mode: "disabled",
+  enable_safety_checker: true
+}
+
+animate(prompt:, image_url:, duration:,
+        target_audio_url: nil, **opts)</code></pre></details><div class="source-ref"><a href="technical-source/makevoid/h3_max_image_to_video.rb.txt" target="_blank">模型封装</a><a href="technical-source/makevoid/video.rb.txt" target="_blank">视频调用与主音轨合入</a></div></article>
+      <article class="technical-card"><span class="tag">我们 · 官方 API 已实测</span><h3>同类能力，另一套请求契约</h3><p>通过 MiniMax 官方 <code>/v2/video_generation</code>，使用 <code>MiniMax-H3-Max</code>、<code>reference_image</code> 与 <code>reference_audio</code>。本次限定 5 秒、480P；实际返回 832 × 480、24fps。两种服务的字段不同，不能直接复制 Fal 的 JSON。</p><p>视频里已经出现嘴唇、下巴、表情和头部变化。提供音频是生成条件，逐字口型的准确程度仍需听看验证；我们尚未证明每个音素都准确同步。</p><details class="source-detail"><summary>展开本机实际请求结构（媒体内容省略）</summary><pre><code>{
+  "model": "MiniMax-H3-Max",
+  "content": [
+    {"type": "text", "text": "演唱与动作要求…"},
+    {"type": "image_url", "role": "reference_image",
+     "image_url": {"url": "data:image/png;base64,…"}},
+    {"type": "audio_url", "role": "reference_audio",
+     "audio_url": {"url": "data:audio/wav;base64,…"}}
+  ],
+  "duration": 5, "resolution": "480P", "ratio": "16:9",
+  "extra": {"prompt_expansion_mode": "disabled"}
+}</code></pre></details><div class="source-ref"><a href="production.html#history" target="_blank" rel="noreferrer">查看本机材料与版本说明 →</a><a href="production.html#history" target="_blank" rel="noreferrer">查看本机材料与版本说明 →</a></div></article>
+    </div>
+    <div class="table-scroll"><table class="tech-table"><thead><tr><th>输入</th><th>控制对象</th><th>控制不到的部分</th></tr></thead><tbody>
+      <tr><td>接受的角色参考 / 编辑关键帧</td><td>脸、衣着、风格、机位、单姿态；锁定版本并复用图片。</td><td>不保证连续视频中的外观、镜头完全不漂移。</td></tr>
+      <tr><td>实际歌曲片段</td><td>该段旋律、发声、时长、停顿的参考；源库可使用全曲对齐的人声轨。</td><td>不是已经算好的逐帧嘴形，不能单靠上传音频宣布同步成功。</td></tr>
+      <tr><td>表演提示词</td><td>身份 → 构图 → 唱词 / 情绪 → 2–3 个动作节点 → 固定镜头 → 绿幕约束。</td><td>不是精确动画关键帧。禁止漂移、文字与阴影的要求仍可能被模型违反。</td></tr>
+      <tr><td>后续本地代码</td><td>人物坐标、层级、透明度、背景运动、文字、剪辑区间与输出帧数。</td><td>不重新生成嘴部运动。背景合成再精致，也不会校正错误发音口型。</td></tr>
+    </tbody></table></div>
+    <p>原库的图片模型封装为 GPT Image 2.5 Sunburst 生成 / 编辑，制作规则要求先审查身份，再基于同一张接受的参考编辑关键帧。我们已使用内置 Image Gen 生成角色和六幕场景，之后沿用参考制作了正面绿幕输入；没有执行原 Fal 图片接口。</p>
+    <div class="source-ref"><a href="technical-source/makevoid/prompts.md.txt" target="_blank">源库提示词与角色规范</a><a href="technical-source/makevoid/gpt_image25.rb.txt" target="_blank">图片模型封装</a><a href="technical-source/makevoid/gpt_image25_edit.rb.txt" target="_blank">图片编辑封装</a></div>
+  </section>
+
+  <section class="research-block" id="layers">
+    <div class="section-label">03 / INSPECT THE LAYERS</div>
+    <h2>把画面拆开，查看每一层负责什么。</h2>
+    <p>下方人物是实际 H3 片段第 1 秒的抠像帧，背景来自已用过的列车窗景。勾选图层，直观看到“生成演员”与“绘制世界”的区别。棋盘格表示透明区域。</p>
+    <div class="layer-layout">
+      <div><div class="layer-stage" aria-label="可切换的背景与人物图层示意">
+        <img id="layer-background" src="media/h3-technical-background.png" alt="实际合成采用的无人物列车窗景区域">
+        <div id="layer-behind" class="lesson-layer" hidden><b>STILL<br>A LIGHT</b><small>教学排版层 · 未写入现有 MP4</small></div>
+        <img id="layer-actor" class="actor-layer" src="media/h3-technical-actor.png" alt="从已接受的透明人物视频提取的 RGBA 帧">
+        <div id="layer-front" class="fore-layer" hidden><span>前景标记 · 教学层</span><span>WORLD / ACTOR / TIME</span></div>
+      </div><p class="layer-caption">这是一帧的交互拆层视图。人物比例与位置沿用实际合成；文字与前景标记是教学示意，当前成片没有这些图层。真实动态结果见下方视频。</p></div>
+      <div class="layer-controls">
+        <label><input type="checkbox" checked data-default="true" data-layer-toggle="layer-background">背景：本地绘制与镜头</label>
+        <label><input type="checkbox" checked data-default="true" data-layer-toggle="layer-actor">人物：H3 表演的透明帧</label>
+        <label><input type="checkbox" data-default="false" data-layer-toggle="layer-behind">人物后方：教学文字层</label>
+        <label><input type="checkbox" data-default="false" data-layer-toggle="layer-front">人物前方：教学标记层</label>
+        <button id="layer-reset" type="button">恢复当前成片的两层结构</button>
+        <p>源库的绘制顺序：背景 → 远景图形 → 人物后的文字 → 人物 → 前景粒子 / 字幕。同一时间 t 可以驱动各层，而口型帧始终取自正确的歌曲位置。</p>
+      </div>
+    </div>
+    <div class="research-videos"><article><h3>真实绿幕输入</h3><video controls muted preload="none" poster="media/still-a-light-h3-raw-preview.png" src="media/still-a-light-h3-pilot-raw.mp4"></video><p>人物的动作已存在于模型输出里。原始视频包含 124 帧、约 5.184 秒；当前合成取前 120 帧，维持 24fps。</p></article><article><h3>真实本地合成 · 可按帧定位</h3><video id="technical-clip" controls preload="none" poster="media/still-a-light-h3-composite-preview.png" src="media/still-a-light-h3-composite.mp4"></video><p>实际成片是背景 + 透明人物 + 原歌曲 10–15 秒。人物源为 480P，输出放大为 720P；不会因此产生原生 720P 的人脸细节。</p></article></div>
+    <details class="source-detail"><summary>展开源库 p5 的帧取样与图层接口</summary><pre><code>// core.js：每帧重绘，画面可重现
+ANIM.frame = i;
+ANIM.t = i / ANIM.fps;
+await redraw();
+
+// meta.audio_at 是该角色片段在当前段落中的起点
+at: (t, opts) =&gt; frame((t - (meta.audio_at ?? 0)) * ANIM.fps, opts)
+
+// 场景代码可在人物前后绘制独立图形
+drawBackground(t);
+drawBehindCharacterText(t);
+singer.draw(singer.at(t), x, y, height);
+drawForeground(t);</code></pre><p class="document-meta">前两段是源库代码摘录；最后四行是解释层级的伪代码。当前试验使用 FFmpeg 合成，还没有移植这套 p5 角色场景引擎。</p></details>
+    <div class="source-ref"><a href="technical-source/makevoid/core.js.txt" target="_blank">p5 生命周期与角色帧</a><a href="technical-source/makevoid/render.mjs.txt" target="_blank">逐帧渲染器</a><a href="technical-source/makevoid/overlay.rb.txt" target="_blank">字幕时刻与叠层服务</a></div>
+  </section>
+
+  <section class="research-block" id="timing">
+    <div class="section-label">04 / ONE SONG, ONE CLOCK</div>
+    <h2>音频先确定时刻，人物、场景与剪辑共同服从帧时钟。</h2>
+    <p>歌曲主轨始终不变。源库先按实际听到的唱词和段落规划镜头；Whisper 可提供词级候选时刻，Demucs 可分离人声，节拍 / RMS 只提供辅助信息。这次 10–15 秒是低成本试验区间，尚未做完整唱词对齐；78 BPM 是创作描述，未作为实测节拍。</p>
+    <div class="timing-panel">
+      <div class="section-label">交互 · 拖动帧时钟，查看已有素材覆盖</div>
+      <div class="song-track" aria-hidden="true"><span class="stills-before"></span><span class="acting"></span><span class="stills-after"></span><span id="song-cursor" class="song-cursor"></span></div>
+      <div class="track-legend"><span><i></i>图片 MV：[0,240) + [360,3051)</span><span><i class="active-key"></i>真实 H3：[240,360)</span></div>
+      <label for="song-frame" class="document-meta">原歌曲时间轴（0–3050 帧；键盘方向键可逐帧调整）</label>
+      <input id="song-frame" class="time-slider" type="range" min="0" max="3050" step="1" value="288">
+      <div class="timing-presets"><button type="button" data-song-frame="239">进入前 · 239</button><button type="button" data-song-frame="240">第一帧 · 240</button><button type="button" data-song-frame="288">中间 · 288</button><button type="button" data-song-frame="359">最后一帧 · 359</button><button type="button" data-song-frame="360">离开 · 360</button></div>
+      <div class="timing-values"><div><small>歌曲时间</small><output id="song-seconds">12.000 s</output></div><div><small>全曲帧号</small><output id="song-frame-value">288</output></div><div><small>演唱片段内时间</small><output id="scene-seconds">2.000 s</output></div><div><small>人物素材帧号</small><output id="actor-frame">48</output></div></div>
+      <p id="time-status" class="timing-status" aria-live="polite">H3 帧 48 对应歌曲第 12 秒。</p>
+      <button id="inspect-frame" type="button" class="research-link">在上方合成视频中定位该时刻</button>
+      <p class="document-meta">视频控件按媒体时间定位，浏览器解码显示可能存在容差；精确区间与帧数由本地编码检查确认。</p>
+    </div>
+    <div class="technical-grid"><article class="technical-card"><h3>区分全曲时间与段落内时间</h3><pre><code>song_time  = song_frame / 24
+scene_time = song_time - music_offset
+audio_start = music_offset + audio_at
+actor_frame = floor((scene_time - audio_at) * 24)</code></pre><p>源库 <code>clips.rb</code> 中，<code>audio_at</code> 是段落内秒数；服务切音时加上 <code>music_offset</code>。混淆两个坐标系，人物就可能唱另一句。</p><p>我们的单段例子：<code>music_offset=10</code>、<code>audio_at=0</code>；歌曲第 12 秒 → 片段第 2 秒 → 人物第 48 帧。这里只在演唱片段有效区间取样，不把片段外的嘴形循环填满全曲。</p></article><article class="technical-card"><h3>画面拼接，音频一次合入</h3><pre><code>N = ceil(127.117625 * 24) = 3051
+
+picture = original[0:240]
+        + H3_composite[0:120]
+        + original[360:3051]
+
+final = encode(picture, continuous_original_song)</code></pre><p>三个左闭右开区间恰好覆盖 3051 帧。相邻段的时间戳在拼接前归零，随后连接画面。完整主轨一次编码合入，不拼接各段独立编码 / 淡出的音轨，也不加速人物去适应唱词。</p><p>最后视频长 127.125 秒，比音频多约 0.007 秒，来自最后一帧取整，不是新增歌曲内容。</p></article></div>
+    <div class="source-ref"><a href="technical-source/makevoid/planning.md.txt" target="_blank">全曲覆盖与歌词规划</a><a href="technical-source/makevoid/clips.rb.txt" target="_blank">音频偏移与人物元数据</a><a href="technical-source/makevoid/ffmpeg.rb.txt" target="_blank">媒体拼接工具</a><a href="technical-source/ours/composite-h3-pilot.py.txt" target="_blank">本机实际插入代码</a></div>
+  </section>
+
+  <section class="research-block" id="matting">
+    <div class="section-label">05 / ALPHA MATTING</div>
+    <h2>绿幕只负责分离人物，RGBA 让人物进入可控的场景。</h2>
+    <div class="technical-grid">
+      <article class="technical-card"><h3>原库：绿占优势 → Alpha → 去绿</h3><p><code>cutout.py</code> 逐帧读取 RGB，测量绿色比红、蓝强多少，再映射成 Alpha。它不是用视频模型重画一遍人物。</p><pre><code>dom = G - max(R, B)
+alpha = clip(255 - (dom - 25) * 6, 0, 255)
+
+alpha → MinFilter(3) → GaussianBlur(0.8)
+G_clean = min(G, max(R, B) + 10)
+
+output: 0000.png … + metadata.json</code></pre><p>强绿色趋向透明，非绿色保留；最小值滤波略收边，模糊让边缘柔和，去绿减少反光。算法会受绿色衣物、半透明头发、阴影影响，必须查看 Alpha 与不同背景上的边缘。</p><p>源库另有纸色抠像：从边界 flood fill 找背景，再按 seed 保留人物连通分量。浅色皮肤或衣料更适合绿幕；纸色路线并不是本次使用的算法。</p><div class="source-ref"><a href="technical-source/makevoid/cutout.py.txt" target="_blank">完整抠像源码</a></div></article>
+      <article class="technical-card"><h3>我们：FFmpeg chromakey + despill</h3><p>实际背景取样约 <code>#008E3C</code>，与提示词中的 <code>#00B140</code> 有差异。因此使用实际颜色调整参数，而非照搬文字描述。</p><pre><code>format=yuva444p,
+chromakey=0x008E3C:0.12:0.05,
+despill=type=green:mix=0.5:expand=0.2:
+        green=-1:red=0.15</code></pre><p>这里的 similarity / blend 控制颜色容差与透明过渡；它与源库“绿色优势”公式是两种实现。输出透明 QTRLE / ARGB MOV，保留人物原帧，再叠到背景上。</p><p>已抽样检查 5 帧：绿色角落 Alpha 为 0，脸部 ROI 完全不透明，透明像素约 33.5%。这些指标支持基本分离，不能替代发丝、衣物与运动边缘的完整播放审查。</p><div class="source-ref"><a href="technical-source/ours/composite-h3-pilot.py.txt" target="_blank">实际抠像与合成代码</a><a href="technical-source/ours/pilot-alpha-check.json" target="_blank">Alpha 抽样结果</a></div></article>
+    </div>
+    <p class="architecture-note"><strong>廉价修正与重新生成的分界：</strong>边缘容差、裁切、摆放和背景可以对同一个已下载素材反复本地调整。错歌词口型、脸部失真、手臂出画或明显机位漂移，通常需要修复生成源或换表演素材。源库的 <code>RECUT=1</code> 会重抠已下载的视频，不再次调用 Fal。</p>
+  </section>
+
+  <section class="research-block" id="execution">
+    <div class="section-label">06 / EXECUTION & RECEIPTS</div>
+    <h2>一次生成任务，也是一个需要恢复与追踪的工程任务。</h2>
+    <div class="technical-grid"><article class="technical-card"><h3>源库：Ruby 服务 + Fal 队列</h3><p>Ruby 负责项目 / 步骤 / 素材清单，模型封装通过 Fal 队列提交。<code>client.rb</code> 用 endpoint + input 的 SHA-256 找回执，文件锁防止同一任务并发提交；拿到 request_id 后保存状态地址并轮询。</p><pre><code>POST queue.fal.run/{endpoint}
+ → request_id + status_url + response_url
+GET status_url
+ → IN_QUEUE / IN_PROGRESS / COMPLETED
+GET response_url
+ → 下载真实视频 → 保存素材与清单</code></pre><p>这个版本是在提交返回后写回执；如果 POST 已到服务端、响应却丢失，仅靠本地回执不能证明没有创建任务。不能把文件缓存描述成服务端的“恰好一次”保证。</p><div class="source-ref"><a href="technical-source/makevoid/client.rb.txt" target="_blank">请求指纹、锁与恢复</a><a href="technical-source/makevoid/production.md.txt" target="_blank">依赖关系与阶段审查</a></div></article><article class="technical-card"><h3>我们：Python + MiniMax 官方队列</h3><p>提交前先记录 <code>submitting</code>；拿到 task_id 后查询该任务。网络超时标记 <code>submission_unknown</code>，查近期记录，停止自动追加生成；用户明确授权后才执行一次限定重试。</p><pre><code>POST /v2/video_generation
+ → task_id
+GET /v2/query/video_generation/{task_id}
+ → queued / running / succeeded
+下载结果 → 本地 MP4
+
+GET /v2/query/video_generation?page_num=1&amp;page_size=20
+ → 为提交结果不明的请求核对近期任务</code></pre><p>当前成功任务 <code>447754747384211</code>，第 2 次尝试。首次超时没有拿到 task_id，账户实际扣费未核实；本页面不把它推断为“首次一定没收费”。</p><div class="source-ref"><a href="production.html#history" target="_blank" rel="noreferrer">查看本机材料与版本说明 →</a><a href="production.html#history" target="_blank" rel="noreferrer">查看本机材料与版本说明 →</a></div></article></div>
+    <div class="api-states" aria-label="正常任务状态"><span>输入校验 / 指纹</span><em>→</em><span>submitting</span><em>→</em><span>task_id</span><em>→</em><span>queued / running</span><em>→</em><span class="done">下载并审查</span></div>
+    <p class="architecture-note"><strong>运行边界：</strong>密钥只在本机执行进程里使用。网页读取脱敏本地状态与本地媒体，不调用生成 API，也不保留密钥或签名媒体地址。这里的成本控制是任务时长与次数限制；不是前端每刷新一次就重新提交。</p>
+  </section>
+
+  <section class="research-block" id="quality">
+    <div class="section-label">07 / WHY IT LOOKS NATURAL</div>
+    <h2>自然感来自表演、风格与编排同时成立。</h2>
+    <div class="technical-grid"><article class="technical-card"><h3>源库把质量控制放在每个边界</h3><ul><li>同一身份参考经过审查后锁定，再制作单姿态关键帧。</li><li>表演同时包含嘴、下巴、眉眼、肩膀与动作前后衔接，按真实唱词与停顿安排。</li><li>人物材质、背景、字体和图形服从同一风格；镜头与画面事件跟随歌词和音乐。</li><li>先检查素材，再检查段落播放，最后检查整曲与结尾；失败素材不自动向后扩散。</li></ul><p>以上是源码中的制作要求。我们没有逐项复现原样片的完整制作记录，不能断言某一张参考图、某一个阈值就是原样片自然感的唯一原因。</p></article><article class="technical-card"><h3>我们的试验只验证了一小段链路</h3><ul><li>480P 正面近景，人物细节与机位丰富度有限；原库默认 1080P。</li><li>直接使用原混音，没有人声分离、逐句听音修订和完整词级时刻。</li><li>背景只用了现有窗景；p5 场景编排、动效排版与 Swift 特效尚未移植。</li><li>仅 5 秒有真实演唱；其余 122 秒左右仍是图片镜头版。</li></ul><p>浏览器自动化目前无法启动，完整播放和逐字口型复核尚未完成。静帧、帧数与音频指标是已有证据，不足以宣布达到原作者整曲的表演质量。</p></article></div>
+    <article class="technical-card"><h3><code>mouth_sync.py</code> 是检测辅助，不是口型模型。</h3><p>脚本统计嘴部 ROI 中的暗像素比例，近似表示张嘴程度；同时计算每帧人声能量，在 −6 到 +6 帧的偏移中寻找相关性。24fps 下，这是约 ±250ms 的粗略时差检查。</p><p>它没有把音频变成 /p/、/m/、/a/ 等音素，也没有生成逐帧嘴形，更没有改动人物视频。张嘴跟音量相关不等于发音准确；移动的人脸、低对比嘴部与伴奏串音会让结果不可靠。原库明确要求继续听看音素、嘴形和停顿。</p><div class="source-ref"><a href="technical-source/makevoid/mouth_sync.py.txt" target="_blank">完整检测源码</a><a href="technical-source/makevoid/animation-audio-vfx.md.txt" target="_blank">检测限制与播放要求</a></div></article>
+    <h3>已有工程检查，分别能证明什么？</h3>
+    <div class="table-scroll"><table class="tech-table"><thead><tr><th>证据</th><th>实际结果</th><th>结论范围</th></tr></thead><tbody>
+      <tr><td>任务返回与媒体文件</td><td>真实 MiniMax task_id；24fps 视频与动作帧。</td><td>证明模型生成了视频；不证明每个词唱得准确。</td></tr>
+      <tr><td>Alpha 抽样</td><td>5 帧绿色角落透明，脸部 ROI 不透明。</td><td>支持基本抠像正确；未覆盖全部运动边缘。</td></tr>
+      <tr><td>全曲帧数</td><td>3051 帧，演唱只占 [240,360)。</td><td>证明区间覆盖与成片长度；不评价镜头是否自然。</td></tr>
+      <tr><td>主轨零偏移相关性</td><td>编码后与原音频约 0.9983。</td><td>支持主音轨内容与时间保持一致；不是口型准确率。</td></tr>
+      <tr><td>插入区间 PSNR</td><td>平均约 46.40 dB。</td><td>支持重编码后的片段仍接近合成源；不是美术质量分数。</td></tr>
+    </tbody></table></div>
+    <img class="comparison-image" src="media/still-a-light-h3-integration-contact.jpg" alt="合成段进入与退出全曲的实际抽帧，来自歌曲 9.5、10、14.5、15、15.5 秒" loading="lazy">
+    <div class="source-ref"><a href="technical-source/ours/pilot-composite-review.json" target="_blank">实际合成检查记录</a><a href="production.html#h3-composite">播放已完成的整曲示范</a></div>
+  </section>
+
+  <section class="research-block" id="design">
+    <div class="section-label">08 / OUR IMPLEMENTATION DESIGN</div>
+    <h2>保留源库的职责边界，用可替换的模块适配我们这里。</h2>
+    <p>下表区分已经运行的代码与待建设的接口。当前是一个受限的制作试验，还没有把所有步骤接成自动化整曲生成服务。</p>
+    <div class="table-scroll"><table class="tech-table"><thead><tr><th>模块</th><th>输入 → 输出 / 责任</th><th>原库实现</th><th>我们这里</th></tr></thead><tbody>
+      <tr><td>Song / Timing</td><td>原音频 + 歌词 → song.wav、段落帧区间、修订后的 words.json；以歌曲为唯一时间基准。</td><td>规划、音频分析、Whisper / Demucs 与段落偏移。</td><td><span class="state partial">部分已运行</span><br>原曲、能量、帧时钟和 5 秒裁切；词级时间 / 人声轨未完成。</td></tr>
+      <tr><td>References</td><td>风格与参考图 → 有版本的角色 / 背景 / 单姿态关键帧；后续素材绑定接受的版本。</td><td>图片生成 / 编辑、引用导入与清单。</td><td><span class="state partial">素材已生成</span><br>六幕与正面绿幕参考；完整依赖版本管理待完善。</td></tr>
+      <tr><td>Staging / 场景搭配</td><td>完整构图 → 同机位的姿态、场景、接触点、遮挡层与光线约束；决定是否使用物理互动例外。</td><td>关键帧朝向 / 构图规范、p5 层级摆放，少量完整场景 H3。</td><td><span class="state pending">尚未完成</span><br>当前近景只有窗景叠层；列车坐姿、桌椅接触与前后遮挡未实现。</td></tr>
+      <tr><td>PerformanceProvider</td><td>参考图 + 精确音频片段 + 动作提示 → task_id、原始视频、实际参数。</td><td>Ruby 模型封装 + Fal H3。</td><td><span class="state">5 秒已实测</span><br>Python + MiniMax 官方 API；统一多服务接口尚未实现。</td></tr>
+      <tr><td>Matting</td><td>原始表演 → RGBA 素材、crop / src / fps / audio_at 元数据与边缘证据。</td><td>Python → 透明 PNG 序列。</td><td><span class="state">已运行</span><br>FFmpeg → 透明 MOV；PNG 序列接口待接场景引擎。</td></tr>
+      <tr><td>SceneRenderer</td><td>时间 t + 背景 + 角色帧 + 文字 / 图形 cues → 精确长度的画面。</td><td>p5 核心、图形辅助库、逐帧浏览器渲染。</td><td><span class="state partial">基础已运行</span><br>FFmpeg 两层合成；有本地 Canvas 动画先例，尚未接入完整 p5 MV 场景。</td></tr>
+      <tr><td>Assembler / Finish</td><td>连续帧段 + 一条完整主音轨 → clean.mp4、可选特效版；验证边界与尾帧。</td><td>FFmpeg，另有 Swift / Core Image 特效。</td><td><span class="state partial">组装已运行</span><br>完整 3051 帧示范；Swift 不可直接在 Windows 运行，未完整移植。</td></tr>
+      <tr><td>Jobs / Review</td><td>依赖、指纹、回执、预算范围、接受 / 返工记录 → 可恢复的生产状态。</td><td>Ruby 项目清单、Fal 回执、工作依赖与审查证据。</td><td><span class="state partial">试验级已运行</span><br>单任务恢复与一次限定重试；全曲任务图、逐段接受状态和汇总仍待实现。</td></tr>
+    </tbody></table></div>
+    <details class="source-detail"><summary>建议的模块数据契约（设计稿，尚未作为通用配置执行）</summary><pre><code>{
+  "song": {"source": "audio/source.mp3", "fps": 24, "frames": 3051},
+  "section": {"id": "train-close", "at": 240, "frames": 120},
+  "performance": {
+    "reference_version": "singer-front-v1",
+    "audio_start_seconds": 10, "duration_seconds": 5,
+    "provider": "minimax-official", "model": "MiniMax-H3-Max",
+    "resolution": "480P", "receipt": "receipts/clip-id.json"
+  },
+  "sprite": {
+    "source": "output/clip-id-cutout.mov", "fps": 24,
+    "frames": 120, "audio_at": 0, "source_size": [832, 480]
+  },
+  "scene": {"layers": ["background", "behind-text", "singer", "front"]},
+  "review": {"state": "pending", "evidence": []}
+}</code></pre><p class="document-meta">这是将现有脚本收敛为可替换模块的设计建议。字段与原库 / 当前试验一一对应，不能据此认为通用调度器已经完成。</p></details>
+    <div class="roadmap"><article><em>下一步 01 · 不新增生成</em><h3>补全听音与素材审查</h3><p>修订唱词时刻，正常速度与慢放检查已有 5 秒，记录脸部、停顿、口型和边缘是否可接受。先把“生成成功”变成“这一段可使用”。</p></article><article><em>下一步 02 · 本地模块</em><h3>接入统一场景引擎</h3><p>透明素材适配 p5 / Canvas，按帧取角色，读取词级 cues，分开背景、字、人物与前景。先用现有素材验证图层、内存和时间一致性。</p></article><article><em>下一步 03 · 有预算才扩展</em><h3>逐句表演覆盖全曲</h3><p>按完整短句生成不同景别和动作，审查接受后才推进后续镜头。生成费用主要随表演秒数与重试增加；背景和本地编排尽量复用。</p></article></div>
+    <p class="architecture-note"><strong>与“网页 → 宣传片”的共同底层：</strong>两者都可以由代理编写场景代码，按固定 t 逐帧渲染，再由 FFmpeg 编码。MV 多了音频切片、人物表演生成与透明素材取样；网页宣传片的重点则是提炼产品内容、排版和图形运动。<a href="production.html#launch-result">查看本机已经制作的网页宣传片 →</a></p>
+  </section>
+  <footer>技术对照 · 2026-10-02。原库按固定提交核对，本地完整源码附带 MIT 许可证。真实演唱仅 5 秒，其他素材与规划状态如上；所有播放与交互资源从本机加载。源码出处链接仅在点击后打开，页面不向源站请求演示资源。</footer>
+</main>
+<script src="architecture.js"></script>
+</body>
+</html>

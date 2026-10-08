@@ -37,6 +37,14 @@ GitHub Actions 的构建、47 项检查与部署成功；45 个在线资源返�
 
 005 的打包由 `scripts/plush_publish.py` 完成：保留目录和相对链接，排除隐藏配置、依赖、原生大工程，将历史本机页面地址转为公开相对入口，并将 `.blend` 下载改为档案入口。`_site/projects/005-plush-lab/notes/publication-manifest.json` 记录实际发布范围。其他项目沿用原有打包方法。
 
+## 视觉创作能力图谱发布范围
+
+2026-10-08：第 006 项增加研究摘要入口，沿用既有十项目技术引导图。逐项说明源库的能力、范围、原理和场景，汇总我们的探索、意义、可复用技术以及未完成的部分。保留完整理解、MV 与网页宣传片技术页之间的导航。
+
+公开版展示整曲图片 MV、五秒 MiniMax H3 绿幕与合成、24 秒六幕网页宣传片等选定自制结果。原作者的媒体和游戏提供来源入口，本机研究副本继续保留；原始 MP3/WAV、私密配置、凭据和未选中间文件不随站发布。本次整理与部署没有提交新的生成任务。
+
+`scripts/atlas_publish.py` 仅发布 `projects/006-ai-visual-atlas/publication/manifest.json` 登记的文件，在复制前验证路径、大小和 SHA-256。引导图、技术说明、选定媒体和脱敏证据保持相对路径；发布结果中的 `publication-manifest.json` 可核对公开范围。001–005 的条目和发布方法保留。
+
 ## 自动发布流程
 
 工作流为 `.github/workflows/pages.yml`，推送 `main` 或手动运行时：

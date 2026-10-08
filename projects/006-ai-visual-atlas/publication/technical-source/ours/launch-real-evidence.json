@@ -1,0 +1,96 @@
+{
+  "producedAt": "2026-10-01T18:17:29.409Z",
+  "creator": "Current conversation model authored the actual storyboard and scene code",
+  "input": "technical-source/ours/launch-real-input.json",
+  "plan": "technical-source/ours/launch-real-plan.json",
+  "execution": "Local Chromium screenshots of draw(frame / 24), decoded local assets, H.264 encoding with FFmpeg",
+  "additionalModelApiCalls": 0,
+  "paidCalls": 0,
+  "output": "media/atlas-launch-real.mp4",
+  "width": 1280,
+  "height": 720,
+  "frames": 576,
+  "fps": 24,
+  "duration": 24,
+  "audioTracks": 0,
+  "runtimeErrors": [],
+  "failedRequests": [],
+  "backwardSeekSamePixels": true,
+  "fullDecodePassed": true,
+  "elapsedSeconds": 18.535,
+  "samples": [
+    {
+      "seconds": 1.5,
+      "file": "media/atlas-real-1.jpg",
+      "extractedFromEncodedMp4": true
+    },
+    {
+      "seconds": 6.8,
+      "file": "media/atlas-real-2.jpg",
+      "extractedFromEncodedMp4": true
+    },
+    {
+      "seconds": 10.5,
+      "file": "media/atlas-real-3.jpg",
+      "extractedFromEncodedMp4": true
+    },
+    {
+      "seconds": 14.5,
+      "file": "media/atlas-real-4.jpg",
+      "extractedFromEncodedMp4": true
+    },
+    {
+      "seconds": 18,
+      "file": "media/atlas-real-5.jpg",
+      "extractedFromEncodedMp4": true
+    },
+    {
+      "seconds": 22,
+      "file": "media/atlas-real-6.jpg",
+      "extractedFromEncodedMp4": true
+    }
+  ],
+  "files": [
+    {
+      "file": "web/production/launch-real.html",
+      "sha256": "b7ea6de9ac5781d80747746dd73c6ea8723cb76faa4f380a5a802cd3892c3b4e"
+    },
+    {
+      "file": "web/production/launch-real.css",
+      "sha256": "03bf5e5167ffc84e6e16a9295a08df612b126b1a0d3ad3fc1ad50d8fd2375166"
+    },
+    {
+      "file": "web/production/launch-real.js",
+      "sha256": "b31f2912c604d35df67686293429625074424887231a9aac4b9139697df9bce2"
+    },
+    {
+      "file": "notes/launch-real-plan.json",
+      "sha256": "7c0a04039aa5d87597f8fa31737172b51b2276040d7a50a3b6f228f77e403f4c"
+    },
+    {
+      "file": "web/technical-source/ours/launch-real-input.json",
+      "sha256": "a41f2341d1027332474d77a3116fd729f6e97991115566af3e6846d9ab4cf628"
+    },
+    {
+      "file": "web/media/atlas-launch-real.mp4",
+      "sha256": "8d86b966581620b4b426001fbef37521826073cca8c39e25a9d3e2553e5bc751"
+    },
+    {
+      "file": "web/media/still-a-light-h3-composite.mp4",
+      "sha256": "cde4fb80f71ae618fb51f980c9c2645a863103ff0347a8a15db6912577df6924"
+    },
+    {
+      "file": "web/media/still-a-light-train-v2.png",
+      "sha256": "757b8dbd7f37376f24fe3345b6a67ed4ca1faf5d72a5da9f4e100e5c48c8c5c4"
+    },
+    {
+      "file": "web/media/atlas-technical-03.jpg",
+      "sha256": "69e01449c5f7813b19563f7d32e12379b74655cca5d004e5e16c180ee3eaae47"
+    },
+    {
+      "file": "tooling/production/render-launch-real.cjs",
+      "sha256": "66b77e3b7c0dc69777ed6d89a3bcae7d8d8399f7b823ef946308374c51ad114c"
+    }
+  ],
+  "qualityNote": "Production frames were inspected directly. Promotional quality remains a creative judgment; no model-generated score is claimed. Research-page browser interaction has not been visually verified."
+}

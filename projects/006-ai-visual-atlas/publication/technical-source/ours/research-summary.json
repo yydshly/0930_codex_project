@@ -1,0 +1,274 @@
+{
+  "updated": "2026-10-08",
+  "sourcePost": "https://x.com/NFTCPS/status/2105493719931826452",
+  "goal": "Understand the ten project links, inspect actual effects, study their mechanisms and test song-to-MV and webpage-to-promotional-video routes.",
+  "projects": [
+    {
+      "id": "01",
+      "repo": "JohnHeibel/PDoomVideo",
+      "kind": "特定作品源码",
+      "color": "#d5f883",
+      "title": "完整手绘 MV 的代码样本",
+      "capability": "既有歌曲、歌词时间线与章节源码 → 手绘音乐 MV；换歌要重新设计。",
+      "principle": "p5.js / p5.brush 场景与角色 → renderAt(t) → Chrome 并行逐帧 → FFmpeg 合入歌曲。",
+      "value": "共享角色、章节转场、歌词时间映射、指定时刻重绘与断点续渲染。",
+      "boundary": "它是某支作品的工程；没有自动生歌或通用的一键换歌接口。",
+      "local": "本地原作源码＋时间滑块＋音乐预览；此入口不是已编码的完整原作 MP4。",
+      "sources": [
+        "README.md",
+        "render.mjs"
+      ],
+      "evidence": "games/pdoom/index.html?t=20",
+      "url": "https://github.com/JohnHeibel/PDoomVideo",
+      "sourceUrls": [
+        "https://github.com/JohnHeibel/PDoomVideo/blob/main/README.md",
+        "https://github.com/JohnHeibel/PDoomVideo/blob/main/render.mjs"
+      ],
+      "useCases": "学习手绘叙事、共享角色、歌曲章节与时间映射。"
+    },
+    {
+      "id": "02",
+      "repo": "lemomo-ai/lemo-opuscar",
+      "kind": "风格工具包＋Skill",
+      "color": "#d5f883",
+      "title": "多风格、有声音的代码短片",
+      "capability": "按作者列出的 43 种风格选择，输入故事或素材 → 代码短片；包含导演与制作指南。",
+      "principle": "Skill 指导编码 → Canvas / WebGL / Three.js render(t) → 浏览器逐帧＋TTS / 配乐 / 音效 → FFmpeg。",
+      "value": "把视觉风格变成制作规则，复用统一时间线、渲染工具和音画检查。",
+      "boundary": "需要编码代理与制作环境；主画面不靠视频生成模型，换编码模型也需重新验证效果。",
+      "local": "9 支作者 MP4 已本地播放；本机尚未运行它的完整制作 Skill。",
+      "sources": [
+        "README.md",
+        "TECHNIQUE.md"
+      ],
+      "evidence": "media/ink-wash.mp4",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar",
+      "sourceUrls": [
+        "https://github.com/lemomo-ai/lemo-opuscar/blob/main/README.md",
+        "https://github.com/lemomo-ai/lemo-opuscar/blob/main/TECHNIQUE.md"
+      ],
+      "useCases": "选择视觉风格，制作有声音的故事、品牌或信息短片。"
+    },
+    {
+      "id": "03",
+      "repo": "dgreenheck/tidewater",
+      "kind": "实时游戏成品",
+      "color": "#9fc8f5",
+      "title": "海岛钓鱼、游泳与驾驶",
+      "capability": "玩家键鼠操作 → 海岛探索、钓鱼、交易与升级；输出是可交互的实时游戏。",
+      "principle": "自建 WebGPU / WGSL 引擎 → FFT 海洋、天空与后处理 → 游戏状态 / 资产 / 音频 → 实时绘制。",
+      "value": "海洋与天空渲染、场景引擎、游戏系统、资产转换和性能适配。",
+      "boundary": "依赖 WebGPU 与 GPU；包含第三方资产，不能把画面都归为程序生成，也不是游戏生成器。",
+      "local": "游戏和资源已本地构建，启动页已查看；完整游玩与设备兼容性尚未验收。",
+      "sources": [
+        "README.md",
+        "package.json"
+      ],
+      "evidence": "games/tidewater/index.html",
+      "url": "https://github.com/dgreenheck/tidewater",
+      "sourceUrls": [
+        "https://github.com/dgreenheck/tidewater/blob/main/README.md",
+        "https://github.com/dgreenheck/tidewater/blob/main/package.json"
+      ],
+      "useCases": "研究海洋、天空、实时渲染和游戏系统；体验海岛玩法。"
+    },
+    {
+      "id": "04",
+      "repo": "riba2534/claude-opus-5-5-demo",
+      "kind": "模型编程案例",
+      "color": "#9fc8f5",
+      "title": "骑行、FPS 与漂移竞速",
+      "capability": "作者的自然语言需求 → 三个独立网页游戏；运行时响应玩家操作。",
+      "principle": "模型编写模块化 JS → Three.js / WebGL＋交互与 Web Audio → esbuild 打包单文件 HTML。",
+      "value": "程序化几何与音效、游戏反馈模块、单文件部署和迭代构建。",
+      "boundary": "作者记录的单会话包含自测与修复；不能理解为模型一次输出，就保证完成任意游戏。",
+      "local": "三个原作 HTML 已本地构建；骑行启动页已查看，完整游戏流程尚未逐项验收。",
+      "sources": [
+        "README.md",
+        "package.json"
+      ],
+      "evidence": "games/pelican-bike/index.html",
+      "url": "https://github.com/riba2534/claude-opus-5-5-demo",
+      "sourceUrls": [
+        "https://github.com/riba2534/claude-opus-5-5-demo/blob/main/README.md",
+        "https://github.com/riba2534/claude-opus-5-5-demo/blob/main/package.json"
+      ],
+      "useCases": "学习自然语言需求到交互游戏的编程、构建与迭代。"
+    },
+    {
+      "id": "05",
+      "repo": "diggerhq/shipvideo",
+      "kind": "导演代理＋生成应用",
+      "color": "#efc47b",
+      "title": "网页 → 产品宣传短片",
+      "capability": "产品 URL / 描述 → 动态文字、图形和产品故事 → MP4；默认导演目标 20–40 秒。",
+      "principle": "读取 HTML / 元数据 → 原库 Opus 5.5 写分镜与动画 HTML → check_scene 反馈 → 虚拟时钟逐帧 → FFmpeg / 会话工作区。",
+      "value": "事实提炼、导演规则、时间控制、错误反馈、任务状态与成片交付。",
+      "boundary": "原主链是代码动画；视觉表达主要由编码模型决定，检查工具不能自动保证事实与美感。",
+      "local": "已保存原作者样片，并实际制作 24 秒六幕宣传片；通用任意 URL 自动服务仍待接入。",
+      "commit": "53d7c6f752fb85b449de8cf806b77ad21808a8f1",
+      "sources": [
+        "README.md",
+        "opencomputer/agents/director/agent.ts",
+        "opencomputer/agents/director/tools/renderer.ts",
+        "opencomputer/agents/director/tools/scene.ts"
+      ],
+      "evidence": "launch-architecture.html#real-production",
+      "url": "https://github.com/diggerhq/shipvideo",
+      "sourceUrls": [
+        "https://github.com/diggerhq/shipvideo/blob/53d7c6f752fb85b449de8cf806b77ad21808a8f1/README.md",
+        "https://github.com/diggerhq/shipvideo/blob/53d7c6f752fb85b449de8cf806b77ad21808a8f1/opencomputer/agents/director/agent.ts",
+        "https://github.com/diggerhq/shipvideo/blob/53d7c6f752fb85b449de8cf806b77ad21808a8f1/opencomputer/agents/director/tools/renderer.ts",
+        "https://github.com/diggerhq/shipvideo/blob/53d7c6f752fb85b449de8cf806b77ad21808a8f1/opencomputer/agents/director/tools/scene.ts"
+      ],
+      "useCases": "产品发布、功能介绍、卖点和工作机制的动效演示。"
+    },
+    {
+      "id": "06",
+      "repo": "makevoid/motion-graphics-music-video-skill",
+      "kind": "音乐 MV 制作 Skill",
+      "color": "#efc47b",
+      "title": "歌曲 → 角色表演与动效 MV",
+      "capability": "歌曲＋创意 → 音乐分析、角色、分镜、表演镜头、动效与整曲 MP4。",
+      "principle": "GPT Image 2.5 角色图 → Fal H3 Max＋对应音频生成短镜头 → 绿幕提取人物 → p5.js 场景 / 合成 → FFmpeg 合入原曲。",
+      "value": "角色一致性、音乐时间映射、生成任务编排、分层与素材审查。自然度来自模型素材和设计配合。",
+      "boundary": "原主线偏人物主导，依赖外部图像 / 视频服务；音频条件不保证精确口型，坐姿接触也要设计。",
+      "local": "作者原作仅有本地缩略图；我们已做整曲图片 MV＋5 秒真实 H3 演唱合成，逐字口型未验收。",
+      "commit": "deb6efd51d08cc19fdcd3f96db43f4d903868da9",
+      "sources": [
+        "README.md",
+        ".claude/skills/motion-graphics-music-video/SKILL.md",
+        ".claude/skills/motion-graphics-music-video/scripts/lib/pipeline/steps/video.rb"
+      ],
+      "evidence": "production.html#h3-composite",
+      "url": "https://github.com/makevoid/motion-graphics-music-video-skill",
+      "sourceUrls": [
+        "https://github.com/makevoid/motion-graphics-music-video-skill/blob/deb6efd51d08cc19fdcd3f96db43f4d903868da9/README.md",
+        "https://github.com/makevoid/motion-graphics-music-video-skill/blob/deb6efd51d08cc19fdcd3f96db43f4d903868da9/.claude/skills/motion-graphics-music-video/SKILL.md",
+        "https://github.com/makevoid/motion-graphics-music-video-skill/blob/deb6efd51d08cc19fdcd3f96db43f4d903868da9/.claude/skills/motion-graphics-music-video/scripts/lib/pipeline/steps/video.rb"
+      ],
+      "useCases": "围绕歌手、音乐情绪与歌词组织完整角色动效 MV。"
+    },
+    {
+      "id": "07",
+      "repo": "tuzhechen2005/opus-video-skills",
+      "kind": "两类动画 Skill",
+      "color": "#89c8c5",
+      "title": "手绘叙事与动态字体",
+      "capability": "主题、故事、时长与风格 → painted-animation / kinetic-reel 场景工程与 MP4。",
+      "principle": "模型分镜 / 编码 → p5 手绘或 Canvas＋Three.js 动效 → 接触表审查 → Chrome 逐帧 → 配乐 / FFmpeg。",
+      "value": "导演规则、时间纯函数、角色表演、镜头审查及并行渲染；改编自 ClaudeAnimationBase。",
+      "boundary": "主链不靠图像 / 视频生成模型；Skill 提供步骤，仍要编码、运行、看图修改。",
+      "local": "两段作者 GIF＋两张成片接触表；GIF 无音轨，本机未完整执行这两个生产 Skill。",
+      "sources": [
+        "README.md",
+        "skills/painted-animation/SKILL.md",
+        "skills/kinetic-reel/SKILL.md"
+      ],
+      "evidence": "media/work-reel.gif",
+      "url": "https://github.com/tuzhechen2005/opus-video-skills",
+      "sourceUrls": [
+        "https://github.com/tuzhechen2005/opus-video-skills/blob/main/README.md",
+        "https://github.com/tuzhechen2005/opus-video-skills/blob/main/skills/painted-animation/SKILL.md",
+        "https://github.com/tuzhechen2005/opus-video-skills/blob/main/skills/kinetic-reel/SKILL.md"
+      ],
+      "useCases": "手绘叙事、歌词动画、动态字体与程序配乐制作。"
+    },
+    {
+      "id": "08",
+      "repo": "JohnHeibel/ClaudeAnimationBase",
+      "kind": "角色动画基础工程",
+      "color": "#89c8c5",
+      "title": "可修改的手绘角色与表演",
+      "capability": "故事 / 自定义角色与表情 → 场景预览、接触表、静帧及 MP4；提供角色、镜头与转场基础。",
+      "principle": "模型先分镜 → p5.js / p5.brush 角色与绘画 API → renderAt(t) → Puppeteer / Chrome → FFmpeg。",
+      "value": "角色表演 API、画面一致性、动画原则，以及渲染后看图修正的闭环。",
+      "boundary": "基础代码工程让模型在其上创作；水彩渲染较耗 GPU，不能替代写实人物表演模型。",
+      "local": "作者动态 emotions.webp 已接入，展示表情与姿态；并非本机新生成的故事影片。",
+      "sources": [
+        "README.md",
+        "render.mjs"
+      ],
+      "evidence": "media/emotions.webp",
+      "url": "https://github.com/JohnHeibel/ClaudeAnimationBase",
+      "sourceUrls": [
+        "https://github.com/JohnHeibel/ClaudeAnimationBase/blob/main/README.md",
+        "https://github.com/JohnHeibel/ClaudeAnimationBase/blob/main/render.mjs"
+      ],
+      "useCases": "搭建可修改的角色表演、故事、镜头与转场基础。"
+    },
+    {
+      "id": "09",
+      "repo": "yihui-dev/awesome-opus5-5-videos",
+      "kind": "案例与提示词索引",
+      "color": "#c6b4e6",
+      "title": "从作品反查提示与实现",
+      "capability": "选择主题或风格 → 作品、作者来源、公开提示词与 Skillry 重制对照入口。",
+      "principle": "策展案例 / 技术标签 → 学习或复制提示 → 交给另一个编码代理或平台制作。",
+      "value": "效果参考、提示词学习、原作与重制比较；能帮助选视觉方向。",
+      "boundary": "仓库本身不执行视频生产；同一提示词也可能得到不同结果，需核准素材来源。",
+      "local": "本地保存 Skillry 展厅截图；没有接入在线重制执行或把截图当视频。",
+      "sources": [
+        "README.md"
+      ],
+      "evidence": "media/skillry-gallery.jpg",
+      "url": "https://github.com/yihui-dev/awesome-opus5-5-videos",
+      "sourceUrls": [
+        "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/main/README.md"
+      ],
+      "useCases": "找效果和公开提示词，比较原作与重制，选择创作方向。"
+    },
+    {
+      "id": "10",
+      "repo": "athemeroy/awesome-opus-5-5-videos",
+      "kind": "来源与技术研究索引",
+      "color": "#c6b4e6",
+      "title": "辨认效果背后的真实路线",
+      "capability": "研究目标 → 逐案效果帧、原帖、技术路线、证据与统计；与左侧库名称仅差一个连字符。",
+      "principle": "收集来源 / 视频预览 → 采样与逐案审查 → 区分代码渲染、外部模型、已有素材剪辑及录屏。",
+      "value": "追溯工具链、辨别谁生成了画面、比较相似视觉的不同实现方式。",
+      "boundary": "它是研究导航；分类和作者披露不能当作真实模型调用的独立证明。",
+      "local": "本地 corpus-overview.svg 为静态资料图；用于研究分类，不是视频播放器。",
+      "sources": [
+        "README.md",
+        "docs/cases-index.zh-CN.md"
+      ],
+      "evidence": "media/corpus-overview.svg",
+      "url": "https://github.com/athemeroy/awesome-opus-5-5-videos",
+      "sourceUrls": [
+        "https://github.com/athemeroy/awesome-opus-5-5-videos/blob/main/README.md",
+        "https://github.com/athemeroy/awesome-opus-5-5-videos/blob/main/docs/cases-index.zh-CN.md"
+      ],
+      "useCases": "追溯来源，区分代码、模型、剪辑和录屏等实现方式。"
+    }
+  ],
+  "explorations": [
+    {
+      "title": "十项目的本地效果与技术研究",
+      "result": "保存并查看部分原作样片，构建原作游戏和源码预览；为十项目逐项记录输入、产出、原理、条件与边界。",
+      "limit": "作者样片、源码预览和游戏启动界面分别证明不同范围；没有完成每个 Skill 的完整生产或所有游戏的流程验收。"
+    },
+    {
+      "title": "约 127 秒整曲图片 MV",
+      "result": "以《Still a Light》及同一人物参考制作六幕图像，运镜、转场与原曲合成实际 MP4。",
+      "limit": "图片镜头版，整曲真实人物演唱尚未完成；它不能代表原 makevoid 的表演质量。"
+    },
+    {
+      "title": "五秒 H3 表演与人物场景合成",
+      "result": "通过 MiniMax 官方 API 生成歌曲 10–15 秒的真实表演；提取人物透明层，与窗景和对应歌曲片段合成。",
+      "limit": "仅一小段，逐字口型、坐姿、桌椅接触和前后遮挡尚未验收。"
+    },
+    {
+      "title": "24 秒六幕网页宣传片",
+      "result": "读取真实能力图谱网页，模型编写分镜与 Canvas；本机导出 720p、24fps、576 帧，完整解码通过。",
+      "limit": "无音轨；复用已有 H3 素材。任意 URL 的通用采集、模型后台、队列和自动交付服务尚未接通。"
+    }
+  ],
+  "meaning": "Separate creative model ability from reusable execution, controls and evidence; preserve traceable facts, assets, time contracts, components, provider adapters, rendering and review.",
+  "boundaries": [
+    "Whole-song generated singing not completed",
+    "Phoneme-accurate lip-sync not accepted",
+    "Train contact and occlusion not implemented",
+    "Generic arbitrary-URL automatic video product not connected"
+  ]
+}

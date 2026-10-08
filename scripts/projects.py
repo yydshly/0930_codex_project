@@ -118,11 +118,19 @@ def render_readme(root, projects):
         demo = link("在线演示", project["demo"]) if project["demo"] else "—"
         code = link(urlsplit(project['repo']).path.strip('/'), project['repo'])
         source = (link(project['reference_name'], project['reference']) + '<br>技术：' + code) if 'reference' in project else code
+        atlas = project["id"] == 6 and project["slug"] == "ai-visual-atlas"
+        if atlas:
+            source_list = link("十项目源库列表", f"{path}/publication/index.html#library")
+            source = (link(project['reference_name'], project['reference'])
+                      + '<br>资料索引：' + code + '<br>' + source_list)
         rows.append(f"| {project['id']:03d} | {entry} | {summary_markdown(project['summary'], table=True)} | "
                     f"{project['status']} | {source} | {demo} |")
         if project["cover"]:
             source_note = (f"效果来源：{link(project['reference_name'], project['reference'])}。技术基础：{code}。" if 'reference' in project
                            else f"源库：{code}。")
+            if atlas:
+                source_note = (f"最初来源：{link(project['reference_name'], project['reference'])}。资料索引："
+                               f"{code}（其中一个资料项目）。{source_list}。我们的十项目能力与技术总览。")
             previews.append(f"### {project['id']:03d} · {markdown(project['name'])}\n\n"
                             f"{summary_markdown(project['summary'])}\n\n"
                             f"{source_note}先阅读下方引导图，再进入研究文档与交互演示。\n\n"

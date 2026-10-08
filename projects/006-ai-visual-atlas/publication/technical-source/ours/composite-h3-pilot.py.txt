@@ -1,0 +1,71 @@
+"""Local greenscreen compositing and insertion of the accepted five-second H3 pilot."""
+import argparse
+import json
+import subprocess
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+PROJECT = ROOT / "production/still-a-light"
+MEDIA = ROOT / "web/media"
+FFMPEG = Path(r"[本机配置路径]")
+FFPROBE = FFMPEG.with_name("ffprobe.exe")
+SOURCE = MEDIA / "still-a-light-h3-pilot-raw.mp4"
+BACKGROUND = MEDIA / "still-a-light-train-v2.png"
+AUDIO = PROJECT / "audio/pilot-10-to-15.wav"
+COMPOSITE = MEDIA / "still-a-light-h3-composite.mp4"
+CUTOUT = PROJECT / "output/h3-pilot-cutout.mov"
+INTEGRATED = MEDIA / "still-a-light-h3-integrated-pilot.mp4"
+KEY = "format=yuva444p,chromakey=0x008E3C:0.12:0.05,despill=type=green:mix=0.5:expand=0.2:green=-1:red=0.15"
+
+
+def run(args):
+    subprocess.run([str(FFMPEG), "-hide_banner", "-loglevel", "error", "-y", *args], check=True)
+
+
+def probe(path):
+    return json.loads(subprocess.run([str(FFPROBE), "-v", "error", "-count_frames", "-show_streams", "-show_format", "-of", "json", str(path)], check=True, capture_output=True, text=True).stdout)
+
+
+def composite():
+    # This crop is a background-video filter; the accepted source bitmap is unchanged.
+    # The chosen window region excludes the still portrait already present in the image.
+    background = "[0:v]crop=730:410:220:20,scale=1344:756:flags=lanczos,crop=1280:720:x='(iw-ow)/2+5*sin(t*0.45)':y='(ih-oh)/2',gblur=sigma=1.7,eq=saturation=0.88:brightness=-0.025,setsar=1[bg]"
+    foreground = f"[1:v]{KEY},scale=1248:720:flags=lanczos,setsar=1[fg]"
+    graph = background + ";" + foreground + ";[bg][fg]overlay=x=16:y=0:shortest=1:format=auto,format=yuv420p[v]"
+    run(["-loop", "1", "-framerate", "24", "-i", str(BACKGROUND), "-i", str(SOURCE), "-i", str(AUDIO), "-filter_complex", graph, "-map", "[v]", "-map", "2:a:0", "-frames:v", "120", "-t", "5", "-r", "24", "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(COMPOSITE)])
+    CUTOUT.parent.mkdir(parents=True, exist_ok=True)
+    run(["-i", str(SOURCE), "-vf", KEY + ",format=argb", "-an", "-frames:v", "120", "-r", "24", "-c:v", "qtrle", "-pix_fmt", "argb", str(CUTOUT)])
+    print("Saved five-second composite and a reusable transparent MOV.", flush=True)
+
+
+def integrate():
+    original = MEDIA / "still-a-light-generated-v2.mp4"
+    info = probe(original)
+    video = next(stream for stream in info["streams"] if stream["codec_type"] == "video")
+    if video["r_frame_rate"] != "24/1" or int(video["nb_read_frames"]) != 3051:
+        raise ValueError("The existing full MV must contain exactly 3051 frames at 24 fps")
+    graph = "[0:v]split=2[before][after];[before]trim=start_frame=0:end_frame=240,setpts=PTS-STARTPTS,setsar=1[a];[1:v]trim=start_frame=0:end_frame=120,setpts=PTS-STARTPTS,setsar=1[b];[after]trim=start_frame=360:end_frame=3051,setpts=PTS-STARTPTS,setsar=1[c];[a][b][c]concat=n=3:v=1:a=0,format=yuv420p[v]"
+    # One continuous master track; independently cut audio clips are never concatenated.
+    run(["-i", str(original), "-i", str(COMPOSITE), "-i", str(PROJECT / "audio/source.mp3"), "-filter_complex", graph, "-map", "[v]", "-map", "2:a:0", "-frames:v", "3051", "-r", "24", "-c:v", "libx264", "-preset", "fast", "-crf", "20", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(INTEGRATED)])
+    output_info = probe(INTEGRATED)
+    output_video = next(stream for stream in output_info["streams"] if stream["codec_type"] == "video")
+    if int(output_video["nb_read_frames"]) != 3051:
+        raise ValueError("Final MV frame coverage is incorrect")
+    print("Saved the complete MV demo: only frames [240,360) use the real H3 performance.", flush=True)
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--composite-only", action="store_true")
+    parser.add_argument("--integrate-only", action="store_true")
+    args = parser.parse_args()
+    if not args.integrate_only:
+        composite()
+    if not args.composite_only:
+        integrate()
+    record = {"source": str(SOURCE), "background": str(BACKGROUND), "background_crop": [220, 20, 730, 410], "key_rgb": "#008E3C", "key_similarity": 0.12, "key_blend": 0.05, "spill_reduction": True, "original_bitmap_unchanged": True, "new_model_calls": 0, "mouth_frames_retimed": False, "fps": 24, "clip_frames": 120, "song_interval_seconds": [10, 15], "full_song_h3_frame_interval": [240, 360], "full_song_frames": 3051, "full_song_scope": "Only the five-second interval has H3 singing; all other frames retain the prior image-based MV.", "composite": str(COMPOSITE), "transparent_asset": str(CUTOUT), "integrated": str(INTEGRATED)}
+    (PROJECT / "docs/pilot-composite.json").write_text(json.dumps(record, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+if __name__ == "__main__":
+    main()

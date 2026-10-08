@@ -1,0 +1,9 @@
+.overview-map{scroll-margin-top:20px}
+.overview-map figure{margin:24px 0}
+.overview-map .overview-image{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:12px;background:#101510}
+.overview-map .overview-image-link{display:block;cursor:zoom-in}
+.overview-map figcaption{font-size:12px;line-height:1.9;color:var(--muted);margin-top:12px}
+.overview-map .overview-actions{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;margin:20px 0}
+.overview-map .overview-actions a{color:var(--lime);text-decoration:underline;text-underline-offset:4px}
+.atlas-header{flex-wrap:wrap;gap:16px;align-items:center}
+.atlas-header-nav{display:flex;gap:18px;flex-wrap:wrap}

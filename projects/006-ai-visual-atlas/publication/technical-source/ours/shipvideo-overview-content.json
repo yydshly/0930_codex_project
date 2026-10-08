@@ -1,0 +1,310 @@
+{
+  "header": {
+    "label": "SHIPVIDEO / 网页宣传片",
+    "title": "能力、原理、价值与控制边界",
+    "subtitle": "人定方向与边界 · 模型负责创作 · 程序负责执行与验收"
+  },
+  "sections": [
+    {
+      "title": "01 这个库能做什么？",
+      "panels": [
+        {
+          "title": "能力",
+          "items": [
+            "网页 URL / 产品描述 → 品牌动效宣传片",
+            "动态文字、图形、卡片、流程与机制演示",
+            "核心产物：模型编写的代码动画 → MP4"
+          ]
+        },
+        {
+          "title": "价值",
+          "items": [
+            "把产品信息转成可编辑的视觉表达",
+            "按明确时间轴制作、修改与重复导出",
+            "组织任务、执行工具、交付真实视频文件"
+          ]
+        }
+      ],
+      "note": "原库主链是导演代理＋工具流水线；生图与视频生成属于另接的扩展能力。"
+    },
+    {
+      "title": "02 原理：画面怎样变成视频？",
+      "flow": [
+        {
+          "title": "读取网页",
+          "role": "工具",
+          "detail": "HTML 文本 / 标题 / 品牌信息"
+        },
+        {
+          "title": "模型创作",
+          "role": "模型",
+          "detail": "文案 / 分镜 / HTML 动画代码"
+        },
+        {
+          "title": "场景检查",
+          "role": "反馈工具",
+          "detail": "错误与抽查反馈 → 模型修复"
+        },
+        {
+          "title": "逐帧绘制",
+          "role": "工具",
+          "detail": "虚拟时钟＋Chromium"
+        },
+        {
+          "title": "编码交付",
+          "role": "工具",
+          "detail": "FFmpeg → MP4"
+        }
+      ],
+      "notes": [
+        "画面来自 HTML / CSS / SVG / Canvas；视频来自逐帧编码。",
+        "网页提取主要读取响应 HTML 与元数据；完整视觉识别和交互理解需另做。"
+      ],
+      "warning": "原库 check_scene 提供反馈，未强制检查通过后才能渲染；不自动判断美感。",
+      "specs": [
+        "原库工具：1920×1080｜24/30fps｜3–90 秒",
+        "导演目标：20–40 秒、6–10 个节奏段，属于提示词要求",
+        "原库硬限制：HTML 基础检查；禁用 video / audio / iframe 标签",
+        "外链图片、外部脚本与随机状态等主要靠提示词限制"
+      ]
+    },
+    {
+      "title": "03 我们怎样与模型搭配？",
+      "label": "下面是可设计的产品分工，具体规则需要落到程序中",
+      "panels": [
+        {
+          "title": "人 / 产品规则",
+          "items": [
+            "目标人群与宣传目标",
+            "事实范围、品牌与风格",
+            "分镜结构、规格与预算",
+            "允许的素材与动作集合"
+          ]
+        },
+        {
+          "title": "模型 / 创作判断",
+          "items": [
+            "提炼卖点与文案",
+            "设计分镜、构图与节奏",
+            "编写代码或组件参数",
+            "根据检查结果修改"
+          ]
+        },
+        {
+          "title": "程序 / 执行工具",
+          "items": [
+            "抓取与输入校验",
+            "素材管理与运行环境",
+            "时间推进、渲染与编码",
+            "任务状态与结果验收"
+          ]
+        }
+      ],
+      "controls": [
+        "软控制：写在提示词中的风格、镜头和美感要求",
+        "硬控制：写进校验、模板、组件与运行环境的规则"
+      ],
+      "note": "固定风格要靠组件或参数约束；只写提示词仍由模型发挥。"
+    },
+    {
+      "title": "04 谁决定最终效果？",
+      "panels": [
+        {
+          "title": "自由代码路线 · 原库主路线",
+          "items": [
+            "模型写完整动画，决定大部分视觉表达",
+            "创作空间大，效果变化也较大"
+          ]
+        },
+        {
+          "title": "组件模板路线 · 可继续建设",
+          "items": [
+            "产品固定分镜、版式与动作范围",
+            "模型填文案与参数，风格更稳定"
+          ]
+        }
+      ],
+      "example": [
+        {
+          "title": "10 个项目 / 4 类",
+          "role": "网页事实",
+          "detail": ""
+        },
+        {
+          "title": "卡片汇聚成分类",
+          "role": "模型决定",
+          "detail": ""
+        },
+        {
+          "title": "按代码导出 576 帧",
+          "role": "程序执行",
+          "detail": ""
+        }
+      ],
+      "note": "当前仍未建立通用导演规则与动效组件库。"
+    },
+    {
+      "title": "05 可以变得更丰富吗？",
+      "badge": "可选扩展 · 自动网页链路尚未接入",
+      "flow": [
+        {
+          "title": "语言模型设计",
+          "role": "创作",
+          "detail": ""
+        },
+        {
+          "title": "图像模型生图",
+          "role": "可选素材",
+          "detail": ""
+        },
+        {
+          "title": "视频模型生成镜头",
+          "role": "可选素材",
+          "detail": ""
+        },
+        {
+          "title": "程序合成成片",
+          "role": "合成",
+          "detail": ""
+        }
+      ],
+      "notes": [
+        "可增加主视觉、场景镜头、配音与配乐；需要另接相应工具。",
+        "产品继续规定事实、素材范围、时长、预算与验收条件。"
+      ]
+    },
+    {
+      "title": "06 值得沉淀的技术与产品限制",
+      "panels": [
+        {
+          "title": "可沉淀的制作底座",
+          "items": [
+            "事实规范与输入快照",
+            "统一时间接口、素材时间映射",
+            "场景检查、逐帧渲染与编码",
+            "制作记录、结果验证与交付",
+            "导演规则与动效组件：待建设"
+          ]
+        },
+        {
+          "title": "产品化建议限制",
+          "items": [
+            "公开单页；限制大小、跳转与超时",
+            "抓取禁止访问内网；隔离执行生成代码",
+            "固定规格、风格与可用组件",
+            "卖点与数字有来源；核准素材范围",
+            "任务预算、有限修复、失败恢复"
+          ]
+        }
+      ],
+      "note": "这些是产品设计建议，不代表原库或本机已全部实现。",
+      "productLabel": "产品化待接通 · 从输入网址到播放下载",
+      "productFlow": [
+        {
+          "title": "用户输入 URL",
+          "role": "入口",
+          "detail": ""
+        },
+        {
+          "title": "后台创建任务",
+          "role": "后台",
+          "detail": ""
+        },
+        {
+          "title": "工作队列调用模型与渲染器",
+          "role": "制作",
+          "detail": ""
+        },
+        {
+          "title": "保存 MP4",
+          "role": "交付",
+          "detail": ""
+        },
+        {
+          "title": "页面播放 / 下载",
+          "role": "结果",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "title": "07 我们实际做到哪里？",
+      "panels": [
+        {
+          "title": "已完成 · 本机适配",
+          "items": [
+            "真实网页读取、事实快照",
+            "当前对话模型实际编写六幕动画",
+            "24 秒｜720p｜24fps｜576 帧｜无音轨",
+            "定位复现、素材检查、完整解码通过",
+            "复用已有 H3 片段；无新增付费生成"
+          ]
+        },
+        {
+          "title": "待接通 · 自动产品",
+          "items": [
+            "通用网页采集＋后台模型 API",
+            "任务队列、预算与失败恢复",
+            "通用导演规则与动效组件库",
+            "生图 / 视频生成的自动接入",
+            "任意网址自动生成入口尚未完成"
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": "源库：diggerhq/shipvideo｜固定提交 53d7c6f752fb｜研究日期 2026-10-02",
+  "takeaway": "模型提供创作能力；设计、素材、工程与审查共同决定效果和交付。",
+  "source": {
+    "repository": "diggerhq/shipvideo",
+    "commit": "53d7c6f752fb85b449de8cf806b77ad21808a8f1",
+    "localEvidence": "technical-source/ours/launch-real-evidence.json",
+    "originalSource": "technical-source/shipvideo/source-map.json",
+    "scope": "Code-native informational overview; source facts, implemented local adaptation, and proposed product design are separately identified."
+  },
+  "render": {
+    "width": 2400,
+    "height": 6558,
+    "format": "PNG",
+    "minimumFontPx": 34,
+    "sectionBounds": [
+      {
+        "section": 1,
+        "top": 424,
+        "bottom": 971
+      },
+      {
+        "section": 2,
+        "top": 1047,
+        "bottom": 1979
+      },
+      {
+        "section": 3,
+        "top": 2055,
+        "bottom": 2990
+      },
+      {
+        "section": 4,
+        "top": 3066,
+        "bottom": 3733
+      },
+      {
+        "section": 5,
+        "top": 3809,
+        "bottom": 4370
+      },
+      {
+        "section": 6,
+        "top": 4446,
+        "bottom": 5518
+      },
+      {
+        "section": 7,
+        "top": 5594,
+        "bottom": 6226
+      }
+    ],
+    "image": "media/shipvideo-capability-overview.png",
+    "method": "Code-native Pillow drawing from measured text; no image-generation or image-editing call."
+  }
+}

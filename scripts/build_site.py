@@ -6,6 +6,7 @@ from urllib.parse import urlsplit
 
 from projects import ROOT, project_path, validate
 from plush_publish import publish_plush
+from atlas_publish import publish_atlas
 
 
 def build(root=ROOT):
@@ -26,8 +27,13 @@ def build(root=ROOT):
         # structure connects demos, renders, source snapshots and study pages.
         if project["id"] == 5 and project["slug"] == "plush-lab":
             publish_plush(root / relative, destination)
+        # Visual Atlas publishes only its reviewed static directory and manifest.
+        if project["id"] == 6 and project["slug"] == "ai-visual-atlas":
+            publish_atlas(root / relative, destination)
         # Other demos retain their established, flattened web publication.
-        for asset in (() if project["id"] == 5 and project["slug"] == "plush-lab" else source.rglob("*")):
+        specialized_publication = ((project["id"] == 5 and project["slug"] == "plush-lab")
+                                   or (project["id"] == 6 and project["slug"] == "ai-visual-atlas"))
+        for asset in (() if specialized_publication else source.rglob("*")):
             # Case studies can carry actual exported artifacts and public evidence.
             relative_asset = asset.relative_to(source)
             case_export = (relative_asset.parts[0] == "cases" and
@@ -55,6 +61,13 @@ def build(root=ROOT):
             source_link = f'<a href="{reference}">{reference_name}</a><br>技术：<a href="{repo}">{repo_name}</a>'
             source_note = f'效果来源：<a href="{reference}">{reference_name}</a>。技术基础：<a href="{repo}">{repo_name}</a>。'
             guide_caption = f'<p class="guide-caption">原网页效果截图 · <a href="{reference}">{reference_name}</a>；用于研究引导，非本项目效果。</p>'
+        if project["id"] == 6 and project["slug"] == "ai-visual-atlas":
+            source_list = f'<a href="./{relative}/#library">十项目源库列表</a>'
+            source_link = (f'<a href="{reference}">{reference_name}</a><br>资料索引：'
+                           f'<a href="{repo}">{repo_name}</a><br>{source_list}')
+            source_note = (f'最初来源：<a href="{reference}">{reference_name}</a>。资料索引：'
+                           f'<a href="{repo}">{repo_name}</a>（其中一个资料项目）。{source_list}。')
+            guide_caption = '<p class="guide-caption">我们的十项目能力与技术总览 · 按原库与本机实测分别说明，非原作者效果截图。</p>'
         entries.append(f'<tr><td>{project["id"]:03d}</td><th scope="row"><a href="./{relative}/">{name}</a></th>'
                        f'<td>{summary}</td><td>{source_link}</td><td><a href="./{relative}/">网页演示</a></td></tr>')
         guide = ''

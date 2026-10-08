@@ -1,0 +1,20 @@
+import json
+from html.parser import HTMLParser
+from pathlib import Path
+class Extract(HTMLParser):
+    def __init__(self): super().__init__(); self.tag=None; self.buffer=''; self.items=[]
+    def handle_starttag(self, tag, attrs):
+        if tag in ['title','h1','h2','h3','p']: self.tag=tag; self.buffer=''
+    def handle_data(self, data):
+        if self.tag: self.buffer+=data
+    def handle_endtag(self, tag):
+        if tag==self.tag:
+            text=' '.join(self.buffer.split())
+            if text: self.items.append({'tag':tag,'text':text})
+            self.tag=None
+base=Path(__file__).resolve().parents[2]
+source=base/'web/index.html'
+p=Extract();p.feed(source.read_text(encoding='utf8'))
+result={'source':'htt[本机配置路径]','sourceFile':'web/index.html','extractedText':p.items,'productionClaims':['10 projects','4 capability directions','Local original media and game experiences','Input, output, method, dependencies and limits'], 'process':'Source HTML parsed locally. AI selected the claims and authored a new animation in this session; no remote generation service was called.'}
+(base/'notes/launch-input.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf8')
+print('Saved source text and production brief')

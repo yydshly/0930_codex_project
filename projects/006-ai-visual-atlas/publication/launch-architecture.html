@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; media-src 'self'; connect-src 'self'; frame-src 'self'">
+  <title>网页到宣传短片 · 技术与本机实现</title>
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="research.css"><link rel="stylesheet" href="architecture.css"><link rel="stylesheet" href="overview.css">
+<link rel="stylesheet" href="summary.css"></head>
+<body>
+<header class="atlas-header"><a class="brand" href="index.html#deep-research">← 返回能力首页</a><nav class="atlas-header-nav" aria-label="研究页面导航"><a href="understanding.html">全部理解与查漏补缺 →</a><a href="mv-architecture.html#routes">另一项：歌曲 → MV ↗</a></nav></header>
+<main><p class="publication-banner">公开研究版：保留说明和选定自制结果；原作者媒体通过来源入口查阅。本机研究副本、历史中间材料与公开范围分别记录。<a href="index.html#publication-scope">查看范围 →</a></p>
+  <section class="hero architecture-hero">
+    <div class="eyebrow">CAPABILITY 02 / SHIPVIDEO → LOCAL IMPLEMENTATION</div>
+    <h1>把网页内容，<br>编成一支<span>宣传短片。</span></h1>
+    <p>先提炼产品卖点，再让模型编写一个会按时间变化的动画网页。浏览器画出每一帧，FFmpeg 将这些帧编码为视频。这次已用当前对话模型为真实的能力图谱制作一支六幕宣传片：下面直接播放结果，并逐幕说明模型决定了什么。</p>
+    <div class="fact-strip"><div><strong>内容 → 代码</strong><span>模型编写动画场景<br>图形主要来自 HTML / CSS / SVG / Canvas</span></div><div><strong>24 s</strong><span>最新六幕宣传片<br>1280 × 720</span></div><div><strong>576 帧</strong><span>本地样片 24fps<br>画面可按指定时刻重绘</span></div><div><strong>0 次</strong><span>本次新增视频模型生成<br>不调用源站生成服务</span></div></div>
+    <p class="document-meta"><a href="#overview-map">一张图看懂能力、原理、价值与控制 →</a> · <a href="#real-production">播放实际制作的宣传片 →</a> · Shipvideo 固定提交 <code>53d7c6f752fb</code>。<a href="technical-source/shipvideo/source-map.json" target="_blank">源码核对清单</a></p>
+  </section>
+  <nav class="technical-nav" aria-label="宣传片技术章节"><a href="understanding.html">先看完整理解</a><a href="#overview-map">能力总览图</a><a href="#real-production">这次实际制作</a><a href="#idea">一句话理解</a><a href="#effects">原作与早期样片</a><a href="#style">风格如何限定</a><a href="#clock">时间与帧的交互</a><a href="#source">源库模块</a><a href="#local">本机已经做到哪</a><a href="#next">下一步设计</a></nav>
+
+  <section class="research-block overview-map" id="overview-map">
+    <div class="section-label">ONE IMAGE / 能力与产品化总览</div>
+    <h2>能力、原理、价值，以及我们和模型怎样分工。</h2>
+    <p>将这次讨论汇总为一张图：从源库的制作链路，到人的创作边界、模型的决定、程序的控制，再到值得沉淀的技术与产品化缺口。原库、本机已实现、可选扩展和待建设分别标注。</p>
+    <figure><a class="overview-image-link" href="media/shipvideo-capability-overview.png" target="_blank" rel="noreferrer" aria-label="打开高清技术总览图，可放大查看"><img class="overview-image" src="media/shipvideo-capability-overview.png" width="2400" height="6558" alt="Shipvideo 七部分技术总览：能力与价值、网页到视频的原理、人模型程序的分工、软硬控制、自由代码与组件模板、生成素材扩展、技术沉淀与本机实际状态" loading="lazy"></a><figcaption>点击图片可打开高清原图。文字依据固定版本源码和真实成片记录核对；图形采用本地排版生成。新的生图和视频生成自动接入属于待建设能力。</figcaption></figure>
+    <div class="overview-actions"><a href="media/shipvideo-capability-overview.png" download="shipvideo-capability-overview.png">下载总览图 PNG</a><a href="technical-source/ours/shipvideo-overview-content.json" target="_blank">图中文字与内容记录</a><a href="technical-source/shipvideo/source-map.json" target="_blank">源库核对依据</a><a href="technical-source/ours/launch-real-evidence.json" target="_blank">本机实际成片证据</a><a href="index.html#all-projects-map">回到初始十项目技术总览 →</a></div>
+  </section>
+
+  <section class="research-block real-production" id="real-production">
+    <div class="section-label">ACTUAL PRODUCTION / 2026-10-02</div>
+    <h2>当前模型给我们的真实网页，实际做了一支宣传片。</h2>
+    <p>输入就是现有 Visual Atlas 网页。当前对话模型读取内容、决定六幕分镜、编写新动画代码，再由本机 Chromium 和 FFmpeg 导出下面这支 MP4。参考源库的代码动画制作方法，使用我们已有的模型和渲染能力。</p>
+    <div class="real-film-layout">
+      <div><video id="real-launch-video" controls playsinline preload="none" poster="media/atlas-real-1.jpg" src="media/atlas-launch-real.mp4" aria-label="这次实际制作的二十四秒产品宣传片"></video><p class="clock-note">24 秒 · 1280 × 720 · 24fps · 576 帧 · 无音轨。片内演唱为已有 H3 五秒试验的画面摘取；本次没有新增人物生成。</p><div class="source-ref"><a href="media/atlas-launch-real.mp4" download>下载实际成片</a><a href="production.html#history" target="_blank" rel="noreferrer">查看本机材料与版本说明 →</a></div></div>
+      <article class="technical-card real-decision"><span class="state">实际成片的逐幕说明</span><h3 id="real-beat-title">第一幕：把想法变成作品</h3><dl><dt>网页事实</dt><dd id="real-beat-fact">首页标题是“从一句想法，到一段可见的作品。”</dd><dt>模型的创作决定</dt><dd id="real-beat-choice">把标题改写成两行短句，使用大字揭示、旋转图形和品牌色，先建立观看目标。</dd><dt>程序的执行</dt><dd id="real-beat-execution">按 t 计算文字位置和图形角度，浏览器绘制，再逐帧编码；编码器不决定文案与构图。</dd></dl><p id="real-beat-time" class="clock-note">0–4 秒 · 帧 0–95</p></article>
+    </div>
+    <div class="real-chapters" role="group" aria-label="定位成片章节"><button type="button" data-real-chapter="0" aria-pressed="true">01 · 开场</button><button type="button" data-real-chapter="1" aria-pressed="false">02 · 项目地图</button><button type="button" data-real-chapter="2" aria-pressed="false">03 · 实际效果</button><button type="button" data-real-chapter="3" aria-pressed="false">04 · 制作原理</button><button type="button" data-real-chapter="4" aria-pressed="false">05 · 两条路线</button><button type="button" data-real-chapter="5" aria-pressed="false">06 · 结尾</button></div>
+    <p class="architecture-note"><strong>用第二幕理解分工：</strong>网页只提供“10 个项目、4 个方向”。模型决定先列出项目，再让它们汇聚为分类卡片；程序按照代码计算位置并画出运动。重新编码同一份代码会得到同样的编排，修改视觉创意需要修改这份场景代码。</p>
+    <details class="real-record"><summary>查看这次真实制作的输入、分镜、源码与检查记录</summary><div class="source-ref"><a href="technical-source/ours/launch-real-input.json" target="_blank">实际网页输入</a><a href="technical-source/ours/launch-real-plan.json" target="_blank">本次模型编写的分镜</a><a href="technical-source/ours/launch-real.js.txt" target="_blank">实际执行的动画代码</a><a href="technical-source/ours/render-launch-real.cjs.txt" target="_blank">本次渲染器</a><a href="technical-source/ours/launch-real-evidence.json" target="_blank">成片规格与检查证据</a></div><p class="clock-note">输入数字来自本地 app.js 数据，素材来自已有本机产物；新场景由当前对话模型实际编写。没有另外调用 ChatGPT 网页 / API，也未运行 Shipvideo 云代理。动画图形是本次作品本身；执行记录不以虚构的“生成进度”代替。任意网址自动生成服务尚未接入。</p><p class="clock-note">已完成素材加载与运行错误检查、来回定位的同像素复现、576 帧成片规格检查、完整解码和六幕画面抽查。没有把这些检查称为自动审美判断或新的口型准确度测量。</p></details>
+  </section>
+
+  <section class="research-block" id="idea">
+    <div class="section-label">01 / EXPLAIN IT SIMPLY</div>
+    <h2>它做的是：读懂产品 → 设计信息节奏 → 编写动画 → 导出视频。</h2>
+    <p>例如网页上写着“10 个项目、4 个创作方向、可以本地看效果”。制作时先挑出这些信息，再决定它们在哪一幕出现、用多大的字、配什么图形和动作。动画可以表现流程、计数器、卡片或请求流，不要求使用人物。</p>
+    <div class="flow-map"><a href="#source"><em>01 · 输入</em><b>网址 / 描述</b><small>产品内容与制作目标</small></a><a href="#source"><em>02 · 理解</em><b>事实与品牌</b><small>卖点 / 数字 / 色彩</small></a><a href="#style"><em>03 · 创作</em><b>分镜与文案</b><small>每幕一个重点</small></a><a href="#style"><em>04 · 模型</em><b>动画代码</b><small>一份 HTML 场景</small></a><a href="#source"><em>05 · 审查</em><b>检查与修改</b><small>运行错误 / 可见文本</small></a><a href="#clock"><em>06 · 本地</em><b>逐帧绘制</b><small>时间 t → 图像</small></a><a href="#source"><em>07 · 编码</em><b>MP4 交付</b><small>图像帧 → 视频文件</small></a></div>
+    <div class="responsibility"><div><strong>语言模型负责设计与写代码</strong><p>提炼内容、选视觉表达、编写完整动画文档，并根据检查反馈修改。源库代理选择的模型名称记录在 agent.ts 中。</p></div><div><strong>浏览器负责画图</strong><p>运行 HTML / CSS / SVG / Canvas，在指定时刻输出画面。画面能重绘，不依赖电脑恰好在真实时间运行到哪一秒。</p></div><div><strong>FFmpeg 负责编码</strong><p>接收图像帧，编码 H.264 MP4。视频的文案、构图和运动来自场景代码；编码器不替设计者决定内容。</p></div></div>
+    <p class="architecture-note"><strong>与 MV 的区别：</strong>MV 多了角色表演、口型和生成素材的组合。这个宣传片源码的核心是“模型编写动画代码”，没有视频生成模型环节。两者都可以使用统一时间轴和本地编码。</p>
+  </section>
+
+  <section class="research-block" id="effects">
+    <div class="section-label">02 / ACTUAL OUTPUTS</div>
+    <h2>原作者样片与较早的本地制作结果。</h2>
+    <div class="research-videos"><article><h3>作者样片 · NVIDIA · 31 秒</h3><div class="publication-note"><p>此项为原作来源或未选的本机材料。公开页提供来源与版本说明。</p><a href="https://github.com/diggerhq/shipvideo" target="_blank" rel="noreferrer">查看作者样片来源 ↗</a></div><p>源码示例清单记录的输入为 nvidia.com。样片此前已保存到本地研究；公开版通过作者来源查看，没有提交新任务。</p></article><article><h3>本机样片 · Visual Atlas · 24 秒</h3><video controls preload="none" poster="media/atlas-launch-local.jpg" src="media/atlas-launch-local.mp4"></video><p>输入为我们的能力图谱。由本次本地制作编写 Canvas 五幕，再逐帧编码。未运行 Shipvideo 的云代理。</p></article></div>
+    <div class="film-frame-strip"><figure><img src="media/atlas-technical-01.jpg" alt="本机宣传片第一幕：想法有了，效果在哪里" loading="lazy"><figcaption>1 s · 提出需求</figcaption></figure><figure><img src="media/atlas-technical-02.jpg" alt="第二幕：十个项目、四个创作方向" loading="lazy"><figcaption>6 s · 分类与内容</figcaption></figure><figure><img src="media/atlas-technical-03.jpg" alt="第三幕：本地效果展厅" loading="lazy"><figcaption>11 s · 展示体验</figcaption></figure><figure><img src="media/atlas-technical-04.jpg" alt="第四幕：输入到视频的制作流程" loading="lazy"><figcaption>16 s · 解释机制</figcaption></figure><figure><img src="media/atlas-technical-05.jpg" alt="第五幕：打开能力图谱的行动入口" loading="lazy"><figcaption>21 s · 行动入口</figcaption></figure></div>
+    <p>上方抽帧来自已有 MP4。它们能说明每幕的画面内容，转场与阅读节奏仍需要播放判断。</p>
+  </section>
+
+  <section class="research-block" id="style">
+    <div class="section-label">03 / STYLE IS A DESIGN CHOICE</div>
+    <h2>样片风格相近，主要来自明确的导演规则。</h2>
+    <p>源库的 agent.ts 提示词偏向短促的动态排版：先强调大字和图形，少量主色，一幕一个信息点，表现产品的工作机制。默认目标是 20–40 秒、6–10 个节奏段；这些是创作指令，工具的可用时长范围另有定义。</p>
+    <div class="technical-grid"><article class="technical-card"><h3>内容与视觉规则</h3><p>从网页取得产品名、能力与真实数字；用文字、流程框、计数器等表达。简化画面和配色，限制同时出现的文字量，安排开场、产品介绍、机制与结尾。</p><p>这说明源库选择了一种品牌动效方向。要制作另一种方向，需要重新设计提示词、分镜和场景代码；当前工具约束也要一起核对。</p></article><article class="technical-card"><h3>渲染约束与风格规则不同</h3><p>场景工具会拒绝 audio、video、iframe 元素。外部图片、外部脚本、随机状态与 CSS transitions 主要由导演提示词禁止，不能把所有提示词要求都称为程序强制校验。</p><p>原库允许 Google Fonts。我们本地场景使用系统字体，当前播放和预览不加载外部字体；可用字体变化也会影响视觉效果。</p></article></div>
+    <div class="content-map"><article><em>我们的第一幕</em><b>需求</b><p>先让观众理解“为什么要看”。</p></article><article><em>第二幕</em><b>内容</b><p>十个项目与四个方向。</p></article><article><em>第三幕</em><b>体验</b><p>本地播放、切换、观察。</p></article><article><em>第四幕</em><b>机制</b><p>输入 → 代码 → 绘制 → 视频。</p></article><article><em>第五幕</em><b>行动</b><p>打开能力图谱。</p></article></div>
+    <p class="architecture-note"><strong>我们的样片是另一次本地创作：</strong>采用五幕、24 秒、Canvas 和系统字体。它验证了代码动画的执行链路，没有逐项照搬源库的 6–10 段导演规则，也没有复刻原作者的每个转场。</p>
+  </section>
+
+  <section class="research-block" id="clock">
+    <div class="section-label">04 / CONTENT + TIME = FRAME</div>
+    <h2>同一段代码，给它不同的 t，就会画出不同的画面。</h2>
+    <p>拖动下面的帧滑块，预览会读取现有 launch.js 在对应时刻绘制。可以来回拖动，不会生成新的视频，也不调用模型。</p>
+    <div class="timing-panel">
+      <div class="launch-clock"><label for="launch-frame">本地帧号</label><input id="launch-frame" type="range" min="0" max="575" step="1" value="264"><output id="launch-frame-number">264</output><output id="launch-time">11.000 s</output></div>
+      <div class="timing-presets"><button type="button" data-launch-frame="24">需求 · 1 s</button><button type="button" data-launch-frame="144">内容 · 6 s</button><button type="button" data-launch-frame="264">体验 · 11 s</button><button type="button" data-launch-frame="384">机制 · 16 s</button><button type="button" data-launch-frame="504">行动 · 21 s</button></div>
+      <p id="launch-beat" class="clock-note" aria-live="polite">当前第 3 幕：效果体验。</p>
+      <iframe id="launch-preview" class="launch-preview" src="production/launch.html" title="已有本地 Canvas 宣传片，按指定时间预览" loading="eager"></iframe>
+      <p class="clock-note">这里的 iframe 只用于研究页装载本地预览，不在导出的宣传片场景里。样片最后编码帧为 575 / 24 ≈ 23.958 秒，整段视频时长 24 秒。</p>
+    </div>
+    <div class="technical-grid"><article class="technical-card"><h3>我们的时钟：直接重绘 Canvas</h3><pre><code>// 本地场景接口，单位为秒
+t = frame / 24
+window.__seek(t) → draw(t)
+
+frames = ceil(24 × 24) = 576</code></pre><p>launch.js 中的位置、透明度、文字与图形由 t 计算，渲染器对每一帧调用这个接口。它没有移植原库对 Date、定时器与 CSS 动画的整体虚拟时钟。</p><div class="source-ref"><a href="technical-source/ours/launch.js.txt" target="_blank">本地场景代码</a><a href="technical-source/ours/render.cjs.txt" target="_blank">已有帧渲染器</a></div></article><article class="technical-card"><h3>源库时钟：统一驱动多种动画</h3><p>renderer.ts 在页面脚本运行前注入时钟，统一推进 rAF、定时器、Date 与 CSS / WAAPI 动画，再截图。原库的 seek 参数用毫秒；本地 Canvas 用秒，适配时不能混用。</p><p>该固定版本的虚拟时钟单调向前推进。回到更早时刻需要重新建立场景或另外设计重置机制；本页的来回拖动依靠本地 draw(t) 直接重绘。</p><pre><code>// 解释性的帧渲染流程，非源库逐行复制
+for each frame i:
+  advance_scene(i × 1000 / fps)
+  image = screenshot()
+  send(image, encoder)</code></pre></article></div>
+  </section>
+
+  <section class="research-block source-map" id="source">
+    <div class="section-label">05 / PINNED SOURCE MAP</div>
+    <h2>源库是一套代理应用，导演提示词和工具一起组成能力。</h2>
+    <p>这里没有 makevoid 那样的 SKILL.md 制作入口。导演代理在 agent.ts 中定义模型、创作规则与工具，前端创建会话并查询结果。它的制作方法可以适配成我们自己的 Skill 或本地流程，但不能据此称原插件已安装。</p>
+    <div class="table-scroll"><table class="tech-table"><thead><tr><th>源码模块</th><th>实际责任与边界</th><th>我们可替换成什么</th></tr></thead><tbody>
+      <tr><td>导演代理<code>opencomputer/agents/director/agent.ts</code></td><td>选择 anthropic/claude-opus-5.5，读取 URL / 描述任务，编写场景并调用检查与渲染。</td><td>由当前代理执行内容规划、编写本地场景；无需为了学习流程部署原云服务。</td></tr>
+      <tr><td>网页读取<code>tools/web.ts</code></td><td>读取返回的页面文本，提取标题、描述、H1–H3、出现的十六进制色值与 Google Fonts；不是完整网站操作录屏。</td><td>本地 HTML 解析与已保存的品牌资料；任意 URL 的自动采集尚未接入。</td></tr>
+      <tr><td>场景检查<code>tools/scene.ts · check_scene</code></td><td>按多个时刻查看运行错误、网络失败和可见 DOM 文本。Canvas 文字不属于 DOM 文本，检查结果不能代替画面审查。</td><td>保存分镜抽帧、运行错误与人工复核记录；当前未复刻完整自动检查工具。</td></tr>
+      <tr><td>渲染与编码<code>tools/renderer.ts</code></td><td>1920 × 1080，默认 30fps，工具也接受 24fps；Chromium 逐帧输出 JPEG，FFmpeg 编码 H.264。</td><td>已有 1280 × 720 / 24fps 的本地渲染器；适配明确的时间接口。</td></tr>
+      <tr><td>任务启动<code>web/src/app/api/jobs/route.ts</code></td><td>验证 URL / 描述，创建会话、等待运行环境连接，再发送带任务编号的制作指令。</td><td>若要做成输入网址即可生成的产品，需要新增任务服务、状态和失败恢复。</td></tr>
+      <tr><td>状态与交付<code>web/src/app/api/jobs/[id]/route.ts · lib/oc.ts</code></td><td>根据工具事件报告阶段，并检查会话工作区中的 videos/&lt;job&gt;.mp4，取得下载签名。</td><td>本地状态文件与完成后的本地媒体 URL；网页不能直接放生成密钥。</td></tr>
+    </tbody></table></div>
+    <p class="architecture-note"><strong>版本核对更新：</strong>当前新任务由会话工作区交付视频，没有调用 Vercel Blob 作为新任务输出。examples.ts 中已有的样片仍使用 Blob 地址，属于示例媒体集合。本机研究副本继续保留；公开版通过作者来源查阅这些原作。</p>
+    <div class="source-ref"><a href="https://github.com/diggerhq/shipvideo/blob/53d7c6f752fb85b449de8cf806b77ad21808a8f1/opencomputer/agents/director/agent.ts" target="_blank" rel="noreferrer">固定版本导演规则 ↗</a><a href="https://github.com/diggerhq/shipvideo/blob/53d7c6f752fb85b449de8cf806b77ad21808a8f1/opencomputer/agents/director/tools/renderer.ts" target="_blank" rel="noreferrer">固定版本帧渲染 ↗</a><a href="https://github.com/diggerhq/shipvideo/blob/53d7c6f752fb85b449de8cf806b77ad21808a8f1/web/src/app/api/jobs/%5Bid%5D/route.ts" target="_blank" rel="noreferrer">固定版本任务交付 ↗</a><a href="technical-source/shipvideo/source-map.json" target="_blank">本地源码位置与哈希</a></div>
+    <p class="document-meta">已保存 12 份源码用于本机阅读，未执行原代码。该提交未找到 LICENSE 文件；本页提供源码路径与固定版本链接，没有公开复制其完整源码或导演提示词。</p>
+  </section>
+
+  <section class="research-block" id="local">
+    <div class="section-label">06 / WHAT IS ACTUALLY WORKING HERE</div>
+    <h2>已完成真实网页的两次制作，自动化产品链路还不完整。</h2>
+    <div class="technical-grid"><article class="technical-card"><span class="state">已经运行</span><h3>网页内容 → 场景代码 → MP4</h3><p>早期制作读取能力图谱 HTML，保存简报并设计五幕 Canvas；本次制作重新读取真实网页并设计六幕。两支样片各为 24 秒、576 帧，均已有播放文件、源码和导出记录；最新六幕详见本页“这次实际制作”。</p><div class="source-ref"><a href="technical-source/ours/launch-input.json" target="_blank">早期五幕输入简报</a><a href="technical-source/ours/extract.py.txt" target="_blank">早期 HTML 提取代码</a><a href="media/atlas-launch-local.mp4" download>下载早期五幕样片</a><a href="#real-production">查看最新六幕制作与证据</a></div></article><article class="technical-card"><span class="state pending">尚未完成</span><h3>任意网址 → 自动生成服务</h3><p>尚未建立通用 URL 采集、模型任务接口、源库虚拟时钟移植、自动场景检查、在线队列与工作区交付。现在的网页用于研究和预览，不会在输入网址后自动提交生成。</p><p>原源码场景排除音频元素，视频帧编码流程也没有加入歌曲。我们当前样片无音轨；配音、配乐与字幕可以作为后续独立模块设计。</p></article></div>
+    <p>本页源码研究完成与本机渲染已运行是两项证据。它们不代表原 Shipvideo 云应用已经部署，也不代表新的任意 URL 生成入口已经可用。</p>
+  </section>
+
+  <section class="research-block" id="next">
+    <div class="section-label">07 / NEXT IMPLEMENTATION</div>
+    <h2>接下来需要补的是事实、分镜、检查与任务模块。</h2>
+    <div class="roadmap"><article><em>输入模块</em><h3>有来源的产品简报</h3><p>每条卖点和数字记录来源，保存品牌色、可用字体与用户选择的宣传目标。动态网站抓取与外部 CSS 提取需要单独适配。</p></article><article><em>创作与检查模块</em><h3>可修改的分镜与场景</h3><p>先输出文案和段落范围，再编写动画。保存关键时刻的画面、错误与修改记录，检查文案准确、可读性、遮挡和节奏。</p></article><article><em>执行模块</em><h3>可恢复的本地任务</h3><p>统一时钟单位和帧率，明确纯 Canvas 与通用 HTML 的渲染契约；保存完成状态、成片和可选音轨，再接一个真正的制作入口。</p></article></div>
+    <p class="architecture-note"><strong>两项能力的研究入口：</strong><a href="mv-architecture.html#routes">歌曲 → MV：创作主体、六条路线与实际 H3 试验</a>；本页是网页 → 宣传短片。首页已提供两个直达入口，样片与进度可以分别查看。</p>
+  </section>
+  <footer>研究与实现更新：2026-10-02。所有视频、抽帧与预览从本机加载。本次六幕宣传片由当前对话模型编写，已实际渲染并检查成片；技术页的浏览器交互视觉复核尚未完成。没有新增付费视频生成或调用原云服务。</footer>
+</main>
+<script src="launch-architecture.js"></script>
+<script src="launch-real-explainer.js"></script>
+</body></html>
