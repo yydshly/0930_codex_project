@@ -182,3 +182,10 @@ GitHub Pages 不运行 Python、Node.js 等后端，也不能从浏览器直接�
 [研究档案](https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/research.html)保留源库研究、原创设计、日常工作分析、运行说明、音乐提示和分版本验收全文。公开站完整提供29个世界PNG、两首已生成MiniMax MP3、三支标注为离线渲染的预览及原作组件、来源和许可。原作歌曲仍由原官网远程播放；月亮与纸墨音乐待生成，没有新增生成调用。
 
 使用 scripts/chippytea_publish.py 专项发布及 publication-manifest.json，含72个公共运行文件的大小和SHA-256；公网回执使用只读快照，不请求本机API。世界存档按浏览器来源隔离；真实业务、Mac原生引擎、人工听感及产品收益另行验证。本机60项真实浏览器检查通过，覆盖画面、声音、互动、存储、下载、桌面/手机和完整阅读路径。正式线上状态见016的部署与公网检查记录。
+
+
+## 正式上线与公网验收
+
+2026-10-08 内容提交 [665c0c68](https://github.com/yydshly/0930_codex_project/commit/665c0c687631c1087123743128b0303e9f5114c1) 的 [Pages 检查、构建与部署](https://github.com/yydshly/0930_codex_project/actions/runs/37803483007)成功。2026-10-09 公网62项真实浏览器检查通过；72个公共文件大小及SHA-256匹配发布清单，原图字节不变，14个既有项目入口均HTTP200。验证包括原图下载、三视频解码、三世界实际Canvas与互动、两曲真实播放/频谱/画面时间、暂停、存档重载、桌面/手机、只读回执和全文档案。早期加载与下载等待超时保留在检查记录中，延长有界等待后通过；此前成功的资源校验仅在清单完全不变时复用。
+
+[在线总览](https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/) · [全部效果](https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/#entries) · [完整档案](https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/research.html) · [公网检查](../projects/016-chippytea-lab/notes/publication-online-checks.json) · [发布记录](../projects/016-chippytea-lab/notes/deployment-summary.json)。这是静态体验与软件浏览器验证，人工听感、Mac原生引擎、真实业务与收益另验。

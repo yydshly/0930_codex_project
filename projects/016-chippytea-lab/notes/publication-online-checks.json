@@ -1,0 +1,932 @@
+{
+  "date": "2026-10-09",
+  "timezone": "Asia/Shanghai",
+  "url": "https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/",
+  "browserURL": "https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/",
+  "environment": "Actual Chromium; desktop and emulated mobile viewport; no human listening review",
+  "checks": [
+    {
+      "name": "Public runtime manifest available",
+      "passed": true,
+      "details": {
+        "status": 200
+      }
+    },
+    {
+      "name": "All art, scores, three previews and unchanged guide registered",
+      "passed": true,
+      "details": {
+        "count": 72
+      }
+    },
+    {
+      "name": "Every public file is complete and matches manifest SHA-256",
+      "passed": true,
+      "details": {
+        "count": 72
+      }
+    },
+    {
+      "name": "Overview, unchanged map, six products and all effect routes visible",
+      "passed": true
+    },
+    {
+      "name": "Desktop overview fits and every image loads",
+      "passed": true,
+      "details": {
+        "width": 1440,
+        "scroll": 1440,
+        "broken": []
+      }
+    },
+    {
+      "name": "Overview anchor #entries",
+      "passed": true
+    },
+    {
+      "name": "Overview linked resource ",
+      "passed": true,
+      "details": {
+        "status": 200
+      }
+    },
+    {
+      "name": "Overview anchor #map",
+      "passed": true
+    },
+    {
+      "name": "Overview anchor #understanding",
+      "passed": true
+    },
+    {
+      "name": "Overview anchor #products",
+      "passed": true
+    },
+    {
+      "name": "Overview anchor #resources",
+      "passed": true
+    },
+    {
+      "name": "Overview linked resource research.html",
+      "passed": true,
+      "details": {
+        "status": 200
+      }
+    },
+    {
+      "name": "Overview linked resource chippytea-understanding-map-v1.png",
+      "passed": true,
+      "details": {
+        "status": 200
+      }
+    },
+    {
+      "name": "Overview linked resource source-notice.html",
+      "passed": true,
+      "details": {
+        "status": 200
+      }
+    },
+    {
+      "name": "Overview linked resource research.html",
+      "passed": true,
+      "details": {
+        "status": 200
+      }
+    },
+    {
+      "name": "Overview linked resource research.html",
+      "passed": true,
+      "details": {
+        "status": 200
+      }
+    },
+    {
+      "name": "Overview linked resource publication-manifest.json",
+      "passed": true,
+      "details": {
+        "status": 200
+      }
+    },
+    {
+      "name": "Overview anchor #top",
+      "passed": true
+    },
+    {
+      "name": "PNG download preserves original generated image",
+      "passed": true
+    },
+    {
+      "name": "Actual preview video decode 0",
+      "passed": true,
+      "details": {
+        "time": 0.603669,
+        "width": 640,
+        "paused": false
+      }
+    },
+    {
+      "name": "Actual preview video decode 1",
+      "passed": true,
+      "details": {
+        "time": 0.709657,
+        "width": 640,
+        "paused": false
+      }
+    },
+    {
+      "name": "Actual preview video decode 2",
+      "passed": true,
+      "details": {
+        "time": 0.66705,
+        "width": 640,
+        "paused": false
+      }
+    },
+    {
+      "name": "Mobile overview fits and images load",
+      "passed": true,
+      "details": {
+        "width": 390,
+        "scroll": 390,
+        "broken": []
+      }
+    },
+    {
+      "name": "Actual world renders gravity",
+      "passed": true
+    },
+    {
+      "name": "Desktop world layout gravity",
+      "passed": true,
+      "details": {
+        "width": 1440,
+        "scroll": 1440,
+        "broken": []
+      }
+    },
+    {
+      "name": "Nonempty Canvas imagery gravity",
+      "passed": true,
+      "details": {
+        "samples": 4874
+      }
+    },
+    {
+      "name": "Real pointer/button event triggers independent action gravity",
+      "passed": true
+    },
+    {
+      "name": "Actual MiniMax media decode, playback and real analyser gravity",
+      "passed": true,
+      "details": {
+        "time": 1.009194,
+        "ready": 4,
+        "duration": 32,
+        "bands": [
+          1412
+        ]
+      }
+    },
+    {
+      "name": "Canvas scene follows the actual music clock gravity",
+      "passed": true,
+      "details": {
+        "audio": 1.016159,
+        "visual": 1.01
+      }
+    },
+    {
+      "name": "Pause also pauses actual music gravity",
+      "passed": true
+    },
+    {
+      "name": "World memory saves to actual browser storage gravity",
+      "passed": true,
+      "details": {
+        "gravity": 1,
+        "moon": 0,
+        "shadow": 0
+      }
+    },
+    {
+      "name": "World memory survives real reload gravity",
+      "passed": true
+    },
+    {
+      "name": "Mobile world layout gravity",
+      "passed": true,
+      "details": {
+        "width": 390,
+        "scroll": 390,
+        "broken": []
+      }
+    },
+    {
+      "name": "Actual world renders moon",
+      "passed": true
+    },
+    {
+      "name": "Desktop world layout moon",
+      "passed": true,
+      "details": {
+        "width": 1440,
+        "scroll": 1440,
+        "broken": []
+      }
+    },
+    {
+      "name": "Nonempty Canvas imagery moon",
+      "passed": true,
+      "details": {
+        "samples": 4874
+      }
+    },
+    {
+      "name": "Real pointer/button event triggers independent action moon",
+      "passed": true
+    },
+    {
+      "name": "Moon stays explicitly silent",
+      "passed": true
+    },
+    {
+      "name": "World memory saves to actual browser storage moon",
+      "passed": true,
+      "details": {
+        "gravity": 1,
+        "moon": 1,
+        "shadow": 0
+      }
+    },
+    {
+      "name": "World memory survives real reload moon",
+      "passed": true
+    },
+    {
+      "name": "Mobile world layout moon",
+      "passed": true,
+      "details": {
+        "width": 390,
+        "scroll": 390,
+        "broken": []
+      }
+    },
+    {
+      "name": "Actual world renders shadow",
+      "passed": true
+    },
+    {
+      "name": "Desktop world layout shadow",
+      "passed": true,
+      "details": {
+        "width": 1440,
+        "scroll": 1440,
+        "broken": []
+      }
+    },
+    {
+      "name": "Nonempty Canvas imagery shadow",
+      "passed": true,
+      "details": {
+        "samples": 4874
+      }
+    },
+    {
+      "name": "Real pointer/button event triggers independent action shadow",
+      "passed": true
+    },
+    {
+      "name": "Actual MiniMax media decode, playback and real analyser shadow",
+      "passed": true,
+      "details": {
+        "time": 1.009252,
+        "ready": 4,
+        "duration": 32,
+        "bands": [
+          4422
+        ]
+      }
+    },
+    {
+      "name": "Canvas scene follows the actual music clock shadow",
+      "passed": true,
+      "details": {
+        "audio": 1.009252,
+        "visual": 1.01
+      }
+    },
+    {
+      "name": "Pause also pauses actual music shadow",
+      "passed": true
+    },
+    {
+      "name": "World memory saves to actual browser storage shadow",
+      "passed": true,
+      "details": {
+        "gravity": 1,
+        "moon": 1,
+        "shadow": 1
+      }
+    },
+    {
+      "name": "World memory survives real reload shadow",
+      "passed": true
+    },
+    {
+      "name": "Mobile world layout shadow",
+      "passed": true,
+      "details": {
+        "width": 390,
+        "scroll": 390,
+        "broken": []
+      }
+    },
+    {
+      "name": "Public receipts are read-only with saving disabled",
+      "passed": true
+    },
+    {
+      "name": "Public receipt snapshot has no broken covers",
+      "passed": true,
+      "details": {
+        "width": 1440,
+        "scroll": 1440,
+        "broken": []
+      }
+    },
+    {
+      "name": "Historical folio remains reachable",
+      "passed": true
+    },
+    {
+      "name": "Original comparison and interactive components preserved",
+      "passed": true
+    },
+    {
+      "name": "Source comparison layout",
+      "passed": true,
+      "details": {
+        "width": 1440,
+        "scroll": 1440,
+        "broken": []
+      }
+    },
+    {
+      "name": "Complete reader preserves source/world/music/QA sections",
+      "passed": true
+    },
+    {
+      "name": "Complete reader desktop layout",
+      "passed": true,
+      "details": {
+        "width": 1440,
+        "scroll": 1440,
+        "broken": []
+      }
+    },
+    {
+      "name": "Complete reader mobile layout",
+      "passed": true,
+      "details": {
+        "width": 390,
+        "scroll": 390,
+        "broken": []
+      }
+    },
+    {
+      "name": "Reader internal anchors all resolve",
+      "passed": true,
+      "details": {
+        "count": 111
+      }
+    },
+    {
+      "name": "Public routes never call local research APIs",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "No browser exceptions or failed own resources",
+      "passed": true,
+      "details": {
+        "errors": [],
+        "failed": []
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "app.js.LEGAL.txt",
+      "status": 200,
+      "bytes": 5612,
+      "sha256": "5a877937081716cfe051b809920a34081b29b2cee22bbe104b21b0a3dec4ef1c",
+      "passed": true
+    },
+    {
+      "path": "app.js",
+      "status": 200,
+      "bytes": 517836,
+      "sha256": "ab47530cc64f8412f2fa8cc50626cf3c5ec2dc2dd3d3f76b03460e99c5535a2e",
+      "passed": true
+    },
+    {
+      "path": "assets/concepts/moon.png",
+      "status": 200,
+      "bytes": 2769995,
+      "sha256": "5adb4a3f9a3dc837d9ac30ba4cb0800033d147c458ead722f8101eef52400e09",
+      "passed": true
+    },
+    {
+      "path": "assets/concepts/gravity.png",
+      "status": 200,
+      "bytes": 2807185,
+      "sha256": "efdb53fc847a4e791eac91151593212369c9b25c1eb5669bc3d327f509b85e37",
+      "passed": true
+    },
+    {
+      "path": "assets/chippytea-understanding-map-v1.png",
+      "status": 200,
+      "bytes": 2623255,
+      "sha256": "b3420ebbed9fef286436c1adbfe731ef2673e8e3ec095d3175b13380dd81bf2e",
+      "passed": true
+    },
+    {
+      "path": "assets/previews/shadow-v10.mp4",
+      "status": 200,
+      "bytes": 2689876,
+      "sha256": "1445f3dfa7b6514f26093b2faf896c8409a84f733cf5af275568db15240b5161",
+      "passed": true
+    },
+    {
+      "path": "assets/previews/moon-v10.mp4",
+      "status": 200,
+      "bytes": 3234089,
+      "sha256": "cddc1a19a465b2701c25b3356506749e78bc3e03c84b2ca1bcdb7a109a385e73",
+      "passed": true
+    },
+    {
+      "path": "assets/research-covers/001.png",
+      "status": 200,
+      "bytes": 2000014,
+      "sha256": "cd657fe86b38e473bd3d47456885f74ddbc9eee0c5a9d8f8fda266910be91821",
+      "passed": true
+    },
+    {
+      "path": "assets/previews/gravity-v10.mp4",
+      "status": 200,
+      "bytes": 4269112,
+      "sha256": "70b1abc70f28a3df75d577eccc3bb8a0e2569810c21003dfd3199394a52ac763",
+      "passed": true
+    },
+    {
+      "path": "assets/concepts/shadow.png",
+      "status": 200,
+      "bytes": 2539830,
+      "sha256": "c42949a91343d2b16657a12eb81900694c18c0680ed1b08951090351861bf1a1",
+      "passed": true
+    },
+    {
+      "path": "assets/research-covers/004.jpg",
+      "status": 200,
+      "bytes": 15090,
+      "sha256": "276050a57934ed32a7335f531313907605ddfdc1fcebf67328ef94b137a5e7fc",
+      "passed": true
+    },
+    {
+      "path": "assets/research-covers/005.jpg",
+      "status": 200,
+      "bytes": 57209,
+      "sha256": "071a4bbc61ea4435d3a389f978742c72172b625093b7756f74be830ae2293fe1",
+      "passed": true
+    },
+    {
+      "path": "assets/research-covers/007.png",
+      "status": 200,
+      "bytes": 1448313,
+      "sha256": "a4fddbb742f086d8409d7fd8f4a9b31a3b19e1fa1ff4bebb895b211d14aa402e",
+      "passed": true
+    },
+    {
+      "path": "assets/research-covers/003.png",
+      "status": 200,
+      "bytes": 930633,
+      "sha256": "ee9fd2e891fb71bf53776a9cbee466b90fbf7b509ead7be9d1f4a3e60f118e92",
+      "passed": true
+    },
+    {
+      "path": "assets/research-covers/002.png",
+      "status": 200,
+      "bytes": 2152109,
+      "sha256": "34d35ebcff800a3be3b1002832dd545d98070ef653fee40c06342bcee83668fa",
+      "passed": true
+    },
+    {
+      "path": "assets/research-covers/010.png",
+      "status": 200,
+      "bytes": 27442,
+      "sha256": "072fdaf2202b64aa653d5281cf342543b469ade5112c050a85999333d30074d5",
+      "passed": true
+    },
+    {
+      "path": "assets/research-covers/009.png",
+      "status": 200,
+      "bytes": 106063,
+      "sha256": "85c34607bba6baa5a4e6c8c41618e8c5c4bd4fd415d79c3fda0d027e966f2181",
+      "passed": true
+    },
+    {
+      "path": "assets/research-covers/008.png",
+      "status": 200,
+      "bytes": 167795,
+      "sha256": "c3bbec5def1d40ddcda49506cfefbe63c2f24bcdbae2400ec585c61ac1427b19",
+      "passed": true
+    },
+    {
+      "path": "assets/research-covers/012.png",
+      "status": 200,
+      "bytes": 515693,
+      "sha256": "9511d04e85a80cd3f7024b40866252218e51b7630918be198413f10d18d300ff",
+      "passed": true
+    },
+    {
+      "path": "assets/research-covers/011.png",
+      "status": 200,
+      "bytes": 1911210,
+      "sha256": "031217322896f2ce1e4467e50777134ea1f294fb6bbc331e52251e0713efb8f2",
+      "passed": true
+    },
+    {
+      "path": "assets/research-covers/017.jpg",
+      "status": 200,
+      "bytes": 92062,
+      "sha256": "ca4adb9e03675ed7a0af6a7a6f370bd01228f6168630e830cbd2a8c4101d3e71",
+      "passed": true
+    },
+    {
+      "path": "assets/research-covers/016.jpg",
+      "status": 200,
+      "bytes": 51198,
+      "sha256": "7cb4d50ec84f1f88336a3279baeac53b314c23934123d84f2a5657e6d3fdec65",
+      "passed": true
+    },
+    {
+      "path": "assets/research-covers/014.png",
+      "status": 200,
+      "bytes": 1000179,
+      "sha256": "4f638b24a0f177d43e4371b606031aa5f908adc25dddb47eb3404795976509b2",
+      "passed": true
+    },
+    {
+      "path": "assets/research-covers/015.png",
+      "status": 200,
+      "bytes": 2101825,
+      "sha256": "5de69bf69788e63045b8f68e1d06d6aeab3546e4e3b583ebc9a7fd48b50d4c6e",
+      "passed": true
+    },
+    {
+      "path": "assets/research-covers/013.png",
+      "status": 200,
+      "bytes": 1122333,
+      "sha256": "791356db37e49495938f32bc80efe785b13016f24050a59191aeb110e6bd02d6",
+      "passed": true
+    },
+    {
+      "path": "assets/source-review.jpg",
+      "status": 200,
+      "bytes": 56449,
+      "sha256": "311bf17215df7e9a610988718c80f6783feffcaacf86aeedb87c9593162a10f9",
+      "passed": true
+    },
+    {
+      "path": "assets/source-result.jpg",
+      "status": 200,
+      "bytes": 54169,
+      "sha256": "c9d8ab2a35068265a4e14125211c20d5982b427e542b088f35c0f14dbd0424e4",
+      "passed": true
+    },
+    {
+      "path": "assets/source-song.jpg",
+      "status": 200,
+      "bytes": 50130,
+      "sha256": "050d5683d473c97f447829474659db480ce485c8d3f2f2897cec575be227f6bf",
+      "passed": true
+    },
+    {
+      "path": "assets/source-home.jpg",
+      "status": 200,
+      "bytes": 51198,
+      "sha256": "7cb4d50ec84f1f88336a3279baeac53b314c23934123d84f2a5657e6d3fdec65",
+      "passed": true
+    },
+    {
+      "path": "assets/source-bridge.jpg",
+      "status": 200,
+      "bytes": 57721,
+      "sha256": "a316268c217a7898281bf93e3634008a77bfdf9b112c1f2336fb98c3587f0b03",
+      "passed": true
+    },
+    {
+      "path": "experience.css",
+      "status": 200,
+      "bytes": 6093,
+      "sha256": "6c8f9163ac7ef0dd5d9bf2aa8de7129cc7598efba81580414f36bbb637663c61",
+      "passed": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 1189,
+      "sha256": "1514c6cc768fb3dc593b630e71267cd61dc30568cb68244581718d4cffc65b21",
+      "passed": true
+    },
+    {
+      "path": "overview.css",
+      "status": 200,
+      "bytes": 8130,
+      "sha256": "2e348972572b8b9cb5235c152c888d23ac0f1d2594fb53b6fe5a7df9b97c9e5d",
+      "passed": true
+    },
+    {
+      "path": "audio/shadow-minimax.mp3",
+      "status": 200,
+      "bytes": 769297,
+      "sha256": "7d2a3a179725cd7aeee9baa22cfbd45f35854666b53f0b0faf05cde2e292a41a",
+      "passed": true
+    },
+    {
+      "path": "audio/gravity-minimax.mp3",
+      "status": 200,
+      "bytes": 769297,
+      "sha256": "bfe73c53e68ab0a04924171dfdb0f353e7f5d91f982f537de0f348809072ed50",
+      "passed": true
+    },
+    {
+      "path": "research-work.css",
+      "status": 200,
+      "bytes": 14525,
+      "sha256": "5fb1dfee551d0cab1d413f7b444d2aca775a224788097202eb725a247ae47d58",
+      "passed": true
+    },
+    {
+      "path": "performance-stage.css",
+      "status": 200,
+      "bytes": 8584,
+      "sha256": "b8dc1eb62af223ad5a475cb293f1eb1bac713c0a1a53c7f61efca84d75b98781",
+      "passed": true
+    },
+    {
+      "path": "source-notice.html",
+      "status": 200,
+      "bytes": 7579,
+      "sha256": "26e3208e74240363fb23b40901f172b418b1591d56ecb39e91cad8bbc60f672f",
+      "passed": true
+    },
+    {
+      "path": "research-state.json",
+      "status": 200,
+      "bytes": 169826,
+      "sha256": "c71cb1f6cce5556f777bbe264800c9acd580b0188f6944c3e541162b7b179bba",
+      "passed": true
+    },
+    {
+      "path": "research.html",
+      "status": 200,
+      "bytes": 230662,
+      "sha256": "9dc824de6aaf11d76dcde05da44dbf81631d4c96625079d1f67d4f16e952d9fc",
+      "passed": true
+    },
+    {
+      "path": "style.css",
+      "status": 200,
+      "bytes": 16252,
+      "sha256": "d054347e7a62d6796d591bcb53744482aed4f3318cbf5a27a77252ab04aea775",
+      "passed": true
+    },
+    {
+      "path": "upstream.css",
+      "status": 200,
+      "bytes": 35212,
+      "sha256": "8fe70e9012f33698dc5405fda39451461cec45a926eeb68a29660aa2a9922d71",
+      "passed": true
+    },
+    {
+      "path": "worlds/gravity/seed.png",
+      "status": 200,
+      "bytes": 729386,
+      "sha256": "01fd5a6f73bfe498fde97e373e2b7a17587dda246040bd549638a9d064f91b43",
+      "passed": true
+    },
+    {
+      "path": "worlds/gravity/background-finale.png",
+      "status": 200,
+      "bytes": 2421635,
+      "sha256": "05c80d0c9918631a50fbe510b9c8bbd00704913d918c13f3f5a79ca5c75e82ab",
+      "passed": true
+    },
+    {
+      "path": "worlds/gravity/background.png",
+      "status": 200,
+      "bytes": 2630143,
+      "sha256": "3604b1cf67ce956a6bf8435f11f028b81ca3e2c297820b3feafd116818d64ccf",
+      "passed": true
+    },
+    {
+      "path": "worlds/gravity/tree.png",
+      "status": 200,
+      "bytes": 890929,
+      "sha256": "c993227003c3bf80222913afcb29ed214153dd7d490c76f6aa44f556b9ced6f0",
+      "passed": true
+    },
+    {
+      "path": "worlds/gravity/stone-awake.png",
+      "status": 200,
+      "bytes": 1945154,
+      "sha256": "fc0c034435e167275e629e648ea5140a4a16bed94326331caac4faf90b9a54ed",
+      "passed": true
+    },
+    {
+      "path": "worlds/gravity/stone-proud.png",
+      "status": 200,
+      "bytes": 2233680,
+      "sha256": "906595256dfd569cd3e2880953139c50b5e41e5ee596f79d22e75d97d619ef53",
+      "passed": true
+    },
+    {
+      "path": "worlds/gravity/wind-gust.png",
+      "status": 200,
+      "bytes": 1296994,
+      "sha256": "6826d9a512668e11292575869860176f2eb624ff48b1b7c1b0be591d1fd8e646",
+      "passed": true
+    },
+    {
+      "path": "worlds/gravity/stone.png",
+      "status": 200,
+      "bytes": 2446111,
+      "sha256": "01c72464af2ceac0d5ae545b22782e6da230226d07bd6532e9ae9a1201f05586",
+      "passed": true
+    },
+    {
+      "path": "worlds/gravity/wind-rest.png",
+      "status": 200,
+      "bytes": 1537818,
+      "sha256": "c13cd8fe49ce5d7e1872737a2ddf168e8d33365f63baab93eb60f51686f2f97a",
+      "passed": true
+    },
+    {
+      "path": "worlds/gravity/wind.png",
+      "status": 200,
+      "bytes": 1270926,
+      "sha256": "3aa4987dc81334bca246d8a01a7b16a26a21565e46fd96d91ce4fa44fec97a31",
+      "passed": true
+    },
+    {
+      "path": "worlds/moon/background.png",
+      "status": 200,
+      "bytes": 2903368,
+      "sha256": "3eed0fc28ad7a08b3182c928632e502176995181ab7b77fcc1ec0a5fd1b0bc23",
+      "passed": true
+    },
+    {
+      "path": "worlds/moon/moon-content.png",
+      "status": 200,
+      "bytes": 1365233,
+      "sha256": "877bada5debda7ec3ccb1316c8642437871982e5aa7194953f39bc40a0376d00",
+      "passed": true
+    },
+    {
+      "path": "worlds/moon/background-finale.png",
+      "status": 200,
+      "bytes": 2722911,
+      "sha256": "2abb2474216dff2d05757362519b5c4897ee4c18627c06673d7bd86eec0d6253",
+      "passed": true
+    },
+    {
+      "path": "worlds/moon/moon.png",
+      "status": 200,
+      "bytes": 1079656,
+      "sha256": "5503589bfbf2db55532092a9873ba155f65cadc0d4ee333a66a7041897a24dfe",
+      "passed": true
+    },
+    {
+      "path": "worlds/moon/tailor-proud.png",
+      "status": 200,
+      "bytes": 1056023,
+      "sha256": "69495ab5556735e5d38db20d0bdf2ec5084560ba79767e85de42f1a896bd15d4",
+      "passed": true
+    },
+    {
+      "path": "worlds/moon/tailor-chase.png",
+      "status": 200,
+      "bytes": 1108288,
+      "sha256": "861b618d550c7406b854e3d00c44834b4fca38fa14455341456fb78559ed510e",
+      "passed": true
+    },
+    {
+      "path": "worlds/moon/moon-hiccup.png",
+      "status": 200,
+      "bytes": 1374009,
+      "sha256": "256295cfeabae4199b6d55f9c342d5d37b5c2672f8eb8714c8cb3d52421a1a19",
+      "passed": true
+    },
+    {
+      "path": "worlds/moon/patch.png",
+      "status": 200,
+      "bytes": 1104760,
+      "sha256": "ee5cdfb6ab35b0381c4a584b7b955651f3df4f389050fc85aa33b30d364a4747",
+      "passed": true
+    },
+    {
+      "path": "worlds/moon/tailor.png",
+      "status": 200,
+      "bytes": 1011640,
+      "sha256": "e202ef14294251a69bd6f1a1568a1f4f188e1e1f8684cb592655a17c3c365894",
+      "passed": true
+    },
+    {
+      "path": "worlds/moon/thread.png",
+      "status": 200,
+      "bytes": 164426,
+      "sha256": "a6bf7d1d7fd19a62aea850b68cdd1204d3d619ddd9a16795fda2dfae7e9063f8",
+      "passed": true
+    },
+    {
+      "path": "worlds/shadow/background.png",
+      "status": 200,
+      "bytes": 2616498,
+      "sha256": "2bc1268bcba4de1a980c623092eb49946e2381f60e1eeeb37bdc815b11d61a8f",
+      "passed": true
+    },
+    {
+      "path": "worlds/shadow/background-finale.png",
+      "status": 200,
+      "bytes": 2479485,
+      "sha256": "741776ee0e0a8383f68cd440eff17194b637dccc9b93c32f4e9ef9f08d2bb930",
+      "passed": true
+    },
+    {
+      "path": "worlds/shadow/beam.png",
+      "status": 200,
+      "bytes": 1858623,
+      "sha256": "ac2294999fc36d9dde44b54177a7a7f0e675dc5349056c95276c8fd6eac35247",
+      "passed": true
+    },
+    {
+      "path": "worlds/shadow/dancer.png",
+      "status": 200,
+      "bytes": 440499,
+      "sha256": "c41b0d5354d36ae31b638b76f2d681f71f40933397c7185bc1fc7dcee7693298",
+      "passed": true
+    },
+    {
+      "path": "worlds/shadow/dancer-spin.png",
+      "status": 200,
+      "bytes": 560515,
+      "sha256": "36198aab43e2019cbd4c9e7d05685b0d5a30ebee1102bf857c9d113ca38a1440",
+      "passed": true
+    },
+    {
+      "path": "worlds/shadow/dancer-bow.png",
+      "status": 200,
+      "bytes": 522413,
+      "sha256": "e198506383a1473db6ff2b1bc1c324682f191768c865c92f23c2bf4537272bcf",
+      "passed": true
+    },
+    {
+      "path": "worlds/shadow/dancer-leap.png",
+      "status": 200,
+      "bytes": 580513,
+      "sha256": "4b11a9594bf10282c1d458271ea55b902200627f3213dd9169c2f5a3ce1bb5ac",
+      "passed": true
+    },
+    {
+      "path": "worlds/shadow/light-brave.png",
+      "status": 200,
+      "bytes": 862724,
+      "sha256": "86d9b12bbf82070c4d8ffc84644c4039b59341b7763267c89ab98c950724e28d",
+      "passed": true
+    },
+    {
+      "path": "worlds.css",
+      "status": 200,
+      "bytes": 13525,
+      "sha256": "0fe9953db397fe9eef6afb44a4268ddf8aa3e3d4c736db6a63449dc34a90eb4f",
+      "passed": true
+    },
+    {
+      "path": "worlds/shadow/light.png",
+      "status": 200,
+      "bytes": 542492,
+      "sha256": "b45e5413e4655fbc92c0c8456511a46b68794aa435e6360b796888827da5dacd",
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "failedResponses": [],
+  "apiRequests": [],
+  "resourceEvidence": "Reused successful byte checks from the preceding run; every manifest path, size and hash is unchanged.",
+  "precedingBrowserFailure": "page.waitForEvent: Timeout 90000ms exceeded while waiting for event \"download\"\n=========================== logs ===========================\nwaiting for event \"download\"\n============================================================\n    at main (D:\\codex\\home\\worktrees\\chippytea-publication\\0930_codex_project\\projects\\016-chippytea-lab\\tooling\\verify-publication.cjs:46:14)",
+  "passed": true,
+  "verifiedContentCommit": "665c0c687631c1087123743128b0303e9f5114c1",
+  "deploymentRun": "https://github.com/yydshly/0930_codex_project/actions/runs/37803483007"
+}

@@ -63,3 +63,10 @@ v9 QA与验证JSON已归档 notes/worlds-v9-design-qa.md、notes/worlds-v9-visua
 规则来源：[Design QA SKILL.md](D:/codex/home/plugins/cache/openai-curated-remote/product-design/0.1.56/skills/design-qa/SKILL.md)：“If browser-rendered evidence is missing, final result is blocked.” 缺少当前网页实施截图，所以正式设计验收保持 blocked。
 
 final result: blocked
+
+
+## 正式上线与公网验收
+
+2026-10-08 内容提交 [665c0c68](https://github.com/yydshly/0930_codex_project/commit/665c0c687631c1087123743128b0303e9f5114c1) 的 [Pages 检查、构建与部署](https://github.com/yydshly/0930_codex_project/actions/runs/37803483007)成功。2026-10-09 公网62项真实浏览器检查通过；72个公共文件大小及SHA-256匹配发布清单，原图字节不变，14个既有项目入口均HTTP200。验证包括原图下载、三视频解码、三世界实际Canvas与互动、两曲真实播放/频谱/画面时间、暂停、存档重载、桌面/手机、只读回执和全文档案。早期加载与下载等待超时保留在检查记录中，延长有界等待后通过；此前成功的资源校验仅在清单完全不变时复用。
+
+[在线总览](https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/) · [全部效果](https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/#entries) · [完整档案](https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/research.html) · [公网检查](notes/publication-online-checks.json) · [发布记录](notes/deployment-summary.json)。这是静态体验与软件浏览器验证，人工听感、Mac原生引擎、真实业务与收益另验。

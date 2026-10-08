@@ -165,7 +165,7 @@ class Markdown:
 
 CSS="""body{overflow-wrap:anywhere;background:#faf5ea;color:#302e29;font:16px/1.85 system-ui,'Microsoft YaHei',sans-serif;margin:0}main{max-width:1120px;margin:auto;padding:30px}a{color:#514126;text-underline-offset:3px}header,nav,section{border-bottom:1px solid #c8beac;padding:26px 0}h1{font-size:36px;line-height:1.4}h2{font-size:28px}h3,h4,h5,h6{line-height:1.5}nav{display:flex;gap:16px;flex-wrap:wrap}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#ede8dc;padding:20px;font:13px/1.7 ui-monospace,monospace;border-radius:8px}code{overflow-wrap:anywhere}img{max-width:100%;height:auto}.archive-table{overflow-x:auto}table{border-collapse:collapse;min-width:620px;font-size:14px}td,th{padding:12px;border:1px solid #c8beac;vertical-align:top}.heading-link{font-size:12px;margin-left:12px}.status{color:#77664b;font-size:13px}.scope{padding:22px;background:#eae4d6}details{padding:12px 0}summary{cursor:pointer;font-weight:600}@media(max-width:600px){main{padding:18px}h1{font-size:28px}h2{font-size:24px}}"""
 def build():
- records=[p for p in (PROJECT/"notes").glob("*.json") if p.name.startswith(("world-music","music-generation","host-behavior","publication-"))]
+ records=[p for p in (PROJECT/"notes").glob("*.json") if p.name.startswith(("world-music","music-generation","host-behavior","publication-")) or p.name=="deployment-summary.json"]
  links="".join(f'<a href="#{anchor}">{html.escape(title)}</a>' for _,anchor,title,_ in DOCUMENTS)
  parts=[f'<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>完整研究档案 · Chippytea Lab</title><style>{CSS}</style></head><body><main><header><a href="./">← 理解与全部展示入口</a><h1>Chippytea Lab · 完整研究档案</h1><p>保留源库研究、原创世界设计、日常场景分析、操作说明和分版本验收全文。当前源库快照 f245695，演出基线 v10。</p><p class="status">两首 MiniMax 配乐已生成；月亮与历史纸墨配乐待生成。历史记录不代表当前完整验收。</p></header><nav id="contents">{links}<a href="#music">配乐提示与生成记录</a></nav>']
  for name,anchor,title,status in DOCUMENTS:
@@ -177,7 +177,7 @@ def build():
    result=PROJECT/"notes/publication-local-checks.json"
    if result.is_file():
     check=json.loads(result.read_text(encoding="utf-8"))
-    current='<div class="scope"><h3>2026-10-08 当前发布检查</h3><p>真实 Chromium 检查状态：'+("通过" if check.get("passed") else "修正与复核中")+'。覆盖桌面/手机、实际画面、互动、两首配乐解码与频谱、暂停、存档重载、完整档案、下载及资源清单；不等于人工听感、实机移动端或全部无障碍验收。</p><p><a href="#record-publication-local-checks">本机检查 JSON</a> · <a href="#music">公开资源与音乐记录</a></p><p>以下完整正文为 2026-10-03 等历史研发记录，当时的 blocked 保留其日期和范围。</p></div>'
+    current='<div class="scope"><h3>2026-10-08 当前发布检查</h3><p>真实 Chromium 检查状态：'+("通过" if check.get("passed") else "修正与复核中")+'。覆盖桌面/手机、实际画面、互动、两首配乐解码与频谱、暂停、存档重载、完整档案、下载及资源清单；不等于人工听感、实机移动端或全部无障碍验收。</p><p><a href="#record-publication-local-checks">本机检查 JSON</a> · <a href="#record-publication-online-checks">62项公网检查</a> · <a href="#record-deployment-summary">正式发布记录</a> · <a href="#music">公开资源与音乐记录</a></p><p>以下完整正文为 2026-10-03 等历史研发记录，当时的 blocked 保留其日期和范围。</p></div>'
   parts.append(f'<section id="{anchor}"><p class="status">{html.escape(status)}</p><h2>{html.escape(title)}</h2>{current}<p><a href="{source_url(source)}">查看原始文档 ↗</a> · <a href="#contents">回到目录 ↑</a></p>{body}</section>')
  parts.append('<section id="music"><h2>配乐提示与真实生成记录</h2><p>保留提示、生成与处理结果。没有新生成调用；原 WAV 和大批中间渲染留在本机，公开演出使用已生成的 MP3。</p>')
  for source in dict.fromkeys([PROJECT/"notes/world-music-briefs.json"]+sorted(records)):
