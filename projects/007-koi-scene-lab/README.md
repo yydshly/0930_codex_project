@@ -88,7 +88,7 @@ npm test
 
 ## 验证与来源
 
-视觉验收见 [design-qa.md](design-qa.md)，浏览器验证记录保存在 notes/。软件 WebGL 的帧率不能作为本机硬件性能指标。原作本轮通过8项初始化/按钮状态检查；第一次软件截图读取超时，随后跳过截图重试，保留[首次失败](notes/original-validation-publication-20261008-attempt1.json)与[通过记录](notes/original-validation-publication-20261008.json)，不计为原作画面或性能验收。公开发布入口为 [GitHub Pages](https://yydshly.github.io/0930_codex_project/projects/007-koi-scene-lab/)，待本轮线上验证；入口地址与本地检查通过不代表已经部署成功。
+视觉验收见 [design-qa.md](design-qa.md)，浏览器验证记录保存在 notes/。软件 WebGL 的帧率不能作为本机硬件性能指标。原作本轮通过8项初始化/按钮状态检查；第一次软件截图读取超时，随后跳过截图重试，保留[首次失败](notes/original-validation-publication-20261008-attempt1.json)与[通过记录](notes/original-validation-publication-20261008.json)，不计为原作画面或性能验收。公开发布入口为 [GitHub Pages](https://yydshly.github.io/0930_codex_project/projects/007-koi-scene-lab/)，已于2026-10-08完成构建、部署与线上验证；详情见[发布验收](notes/publication-validation-20261008.json)。
 
 - 原作 © 2026 Sourany Phomhome，MIT；[许可声明](web/upstream/KOI-LICENSE.txt)。
 - [Three.js r160](https://github.com/mrdoob/three.js/tree/r160)，MIT。
