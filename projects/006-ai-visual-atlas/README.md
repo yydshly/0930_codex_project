@@ -2,9 +2,11 @@
 
 公开入口：[视觉创作能力研究摘要](https://yydshly.github.io/0930_codex_project/projects/006-ai-visual-atlas/)。源文件入口：[当前摘要](publication/summary.html)。
 
-公开版沿用现成引导图，展示选定自制结果和脱敏技术证据；原作者媒体与游戏提供来源入口。本机展厅和原始素材继续保留，详细公开清单为 [manifest.json](publication/manifest.json)。
+公开版沿用现成引导图，展示选定自制结果和脱敏技术证据；已核对原作媒体进入效果展厅，其余原作与游戏提供来源入口。本机展厅和原始素材继续保留，详细公开清单为 [manifest.json](publication/manifest.json)。
 
 2026-10-08：已发布[在线研究摘要](https://yydshly.github.io/0930_codex_project/projects/006-ai-visual-atlas/)，沿用既有引导图。98 个公开文件与本机清单逐一匹配，研究集首页及六项研究入口均可访问；详见[部署验证记录](notes/deployment-checks.json)。
+
+2026-10-08 展示补全：[完整效果展厅](publication/effects.html)集中展示九支作者风格短片、动态字体 GIF、角色表情动画、海岛游戏截图及三项自制结果。十项目能力研究与两项深入实作分别说明；理解页的时间滑块只是教学例子。原作署名与许可见效果展厅中的来源记录。
 
 ## 当前研究摘要（截至 2026-10-08）
 

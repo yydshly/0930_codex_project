@@ -1,0 +1,79 @@
+"""Build the evidence showroom from existing original samples and our outputs."""
+from html import escape
+
+STYLE_FILMS = [
+    ('ink-wash', '中国水墨 · 侠客过江', '看笔触、墨色、留白与角色运动怎样一起组织。'),
+    ('watercolor', '水彩 · 跟随降雨', '看连续画面的水彩质感、景观变化和镜头运动。'),
+    ('crayon-book', '蜡笔绘本 · 月亮失眠', '看角色表演、童话叙事和手绘风格的连续性。'),
+    ('swiss-motion', '瑞士动态排版', '看文字层级、网格、节奏与转场。'),
+    ('dark-keynote', '科技产品发布', '看产品窗口、光标、标题和卖点如何形成故事。'),
+    ('glass-product', '玻璃产品质感', '看材质、灯光、特写与产品镜头的配合。'),
+    ('iso-infographic', '等距信息图', '看空间组织和镜头怎样解释复杂流程。'),
+    ('cel-anime-80s', '80 年代动画', '看都市氛围、角色动作与镜头语言。'),
+    ('lowpoly-island', '低多边形世界', '看场景生长、光照和配乐怎样配合。'),
+]
+ORIGINAL_MEDIA = {f'{name}.{ext}' for name, _, _ in STYLE_FILMS for ext in ('mp4', 'jpg')}
+ORIGINAL_MEDIA |= {'work-reel.gif', 'work-reel-sheet.jpg', 'emotions.webp', 'tidewater-author-island.jpg', 'tidewater-author-beach.jpg'}
+EFFECT_ANCHORS = {'01': 'code-mv', '02': 'styles', '03': 'games', '04': 'games',
+                  '05': 'ours', '06': 'ours', '07': 'animation', '08': 'animation',
+                  '09': 'references', '10': 'references'}
+
+
+def video(title, filename, poster, description, label):
+    return f'''<article class="technical-card"><span class="tag">{escape(label)}</span><h3>{escape(title)}</h3><video class="summary-film" controls playsinline preload="none" poster="media/{escape(poster)}" src="media/{escape(filename)}" aria-label="{escape(title)}"></video><p>{escape(description)}</p></article>'''
+
+
+def build_effects_html(chrome, projects):
+    rows = []
+    for item in projects:
+        anchor = EFFECT_ANCHORS[item['id']]
+        rows.append(f'''<tr><th scope="row">{escape(item['repo'])}</th><td>{escape(item['local'])}</td><td><a href="#{anchor}">查看对应效果与入口</a></td></tr>''')
+    films = []
+    for name, title, focus in STYLE_FILMS:
+        credit = '<p class="document-meta">© 2026 LemoLab · 原作者样片 / MIT · <a href="credits.html#lemo-'+name+'">逐片素材署名与 CREDITS</a></p>'
+        if name == 'watercolor':
+            credit += '<p class="document-meta">Music: <a href="https://www.scottbuckley.com.au/library/wildflowers/" target="_blank" rel="noreferrer">Wildflowers — Scott Buckley</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0</a> · 原作已剪辑混音，本次保留原预览。</p>'
+        if name == 'swiss-motion':
+            credit += '<p class="document-meta">Drum samples: MuldjordKit — Lars Muldjord / drumgizmo.org · FreePats version · CC BY 4.0 · 用于上游原配乐，本次未另行编辑。</p>'
+        films.append(video(title, name+'.mp4', name+'.jpg', focus+' 作者公开样片，尚未在本机完整运行这个制作 Skill。', '原作者 · lemo-opuscar').replace('</article>', credit+'</article>'))
+    ours = ''.join([
+        video('整曲图片 MV · 约 127 秒', 'still-a-light-generated-v2.mp4', 'still-a-light-train-v2.png', '六幕图像、运镜、转场与歌曲合成。整曲人物真实表演尚未完成。', '我们的制作 · MV'),
+        video('五秒 H3 表演与合成', 'still-a-light-h3-composite.mp4', 'still-a-light-h3-composite-preview.png', '实际 MiniMax API 输出、本地去绿、背景与歌曲片段合成。逐字口型和坐姿接触尚未验收。', '我们的制作 · MV'),
+        video('六幕网页宣传片 · 24 秒', 'atlas-launch-real.mp4', 'atlas-real-1.jpg', '读取真实网页、设计分镜、编写 Canvas，再逐帧导出 720p / 24fps / 576 帧；此版无音轨。', '我们的制作 · 网页宣传片'),
+    ])
+    body = f'''
+<section class="hero architecture-hero summary-hero"><div class="eyebrow">EFFECT SHOWROOM / 把研究对应到实际效果</div><h1>研究了十个项目。<br><span>效果不止一种。</span></h1><p>这里统一展示九支原作风格短片、两段 GIF、一张动态角色表情表和三项自制代表结果；游戏、源码 MV 与资料索引另有明确入口。</p><div class="architecture-note"><strong>研究深度：</strong>十项目分别做了能力与原理梳理，其中歌曲 MV、网页宣传片做了深入实作。作者样片体现原作者作品；源码预览、启动界面和我们的制作各有不同的验证范围。</div><div class="summary-actions"><a class="research-link" href="#styles">先看九种风格</a><a href="#animation">角色与字体动画 ↓</a><a href="#ours">我们的制作 ↓</a><a href="#coverage">全部十项状态 ↓</a></div></section>
+<nav class="technical-nav" aria-label="效果展厅章节"><a href="#styles">九种原作风格</a><a href="#animation">角色与动态字体</a><a href="#ours">三项自制结果</a><a href="#games">游戏</a><a href="#code-mv">源码 MV</a><a href="#references">资料索引</a><a href="#coverage">研究范围</a></nav>
+<section class="research-block" id="styles"><div class="section-label">ORIGINAL FILMS / LEMO 的九种风格</div><h2>这些是连续播放的原作短片。</h2><p>选择任一播放器查看动作、镜头、节奏与声音。这九支视频来自 lemo-opuscar，主画面由代码渲染；我们研究了制作方法并保存原作，没有重新生成这些样片。</p><div class="technical-grid">{''.join(films)}</div><div class="source-ref"><a href="https://github.com/lemomo-ai/lemo-opuscar" target="_blank" rel="noreferrer">源库与完整风格工具包 ↗</a><a href="https://lemomo-ai.github.io/lemo-opuscar/" target="_blank" rel="noreferrer">作者风格展厅 ↗</a><a href="technical-source/effects/provenance.json">逐片来源、许可与署名</a></div><p class="document-meta">逐片 CREDITS 和完整许可证随研究页保留。水彩音乐和瑞士动效采样的作者、作品与 CC BY 4.0 署名见下方许可记录。</p></section>
+<section class="research-block" id="animation"><div class="section-label">CODE ANIMATION / 角色表演与动态字体</div><h2>代码还可以产生这些动作。</h2><div class="technical-grid"><article class="technical-card"><span class="tag">原作者 · opus-video-skills</span><h3>动态字体与镜头片段</h3><img class="summary-film" src="media/work-reel.gif" alt="作者原作动态字体 GIF" loading="lazy"><p>真实动画 GIF，无音轨。观察字形、粒子和画面转场；本机尚未完整执行 kinetic-reel Skill。</p><a href="https://github.com/tuzhechen2005/opus-video-skills/tree/main/skills/kinetic-reel" target="_blank" rel="noreferrer">作者动态字体 Skill ↗</a></article><article class="technical-card"><span class="tag">原作者 · opus-video-skills</span><h3>手绘歌词动画片段</h3><img class="summary-film" src="media/koi-gag.gif" alt="作者原作手绘歌词 GIF" loading="lazy"><p>作者公开视觉片段，无音轨。可看角色、字幕和场景变化；它不是本机制作，也不是完整歌曲 MV。</p><a href="https://github.com/tuzhechen2005/opus-video-skills/tree/main/skills/painted-animation" target="_blank" rel="noreferrer">作者手绘 Skill ↗</a></article><article class="technical-card"><span class="tag">原作者 · ClaudeAnimationBase</span><h3>手绘角色的动态表情与姿态</h3><img class="summary-film" src="media/emotions.webp" alt="作者角色的动态表情表" loading="lazy"><p>实际动画 WebP，展示角色的眼嘴、姿态与动作。它来自基础工程文档，本机没有在这个工程上制作新的故事影片。</p><a href="https://github.com/JohnHeibel/ClaudeAnimationBase" target="_blank" rel="noreferrer">角色动画基础工程 ↗</a></article><article class="technical-card"><span class="tag">原作者 · 静态接触表</span><h3>查看整片的构图与章节</h3><a href="media/xiaozhen-sheet.jpg" target="_blank" rel="noreferrer"><img class="summary-film" src="media/xiaozhen-sheet.jpg" alt="作者手绘成片接触表" loading="lazy"></a><p>接触表是静态多帧图，可看分镜；连续动作请看左侧 GIF。</p><a href="media/work-reel-sheet.jpg" target="_blank" rel="noreferrer">打开动态字体成片接触表</a></article></div></section>
+<section class="research-block" id="ours"><div class="section-label">OUR PRODUCTION / 两项能力，三种实际结果</div><h2>我们真正制作到哪一步？</h2><div class="technical-grid">{ours}</div><div class="source-ref"><a href="production.html">绿幕原片与试验版本</a><a href="mv-architecture.html">MV 技术拆解</a><a href="launch-architecture.html#real-production">六幕宣传片的实际代码</a><a href="research.html#mv">makevoid 作者完整 MV 观看入口</a></div></section>
+<section class="research-block" id="games"><div class="section-label">REAL-TIME GAMES / 另外研究过的实时交互</div><h2>游戏是另一类产物，运行时响应操作。</h2><div class="technical-grid"><article class="technical-card"><h3>Tidewater · 海岛探索与钓鱼</h3><p>已研究 WebGPU / WGSL 海洋与天空、资产与游戏状态；在本机完成构建并查看启动页，完整游玩和兼容性尚未验收。公开研究页通过原作者入口体验。</p><a class="research-link" href="https://dgreenheck.github.io/tidewater/" target="_blank" rel="noreferrer">打开作者游戏 ↗</a></article><article class="technical-card"><h3>骑行、运输船 FPS、漂移竞速</h3><p>三个原作均已本地构建为 HTML。骑行启动页已查看，尚未逐项验收完整流程；作者记录的编程过程包含自测与修复。</p><div class="source-ref"><a href="https://claude-opus-5-5.riba2534.cn/" target="_blank" rel="noreferrer">鹈鹕骑行 ↗</a><a href="https://claude-opus-5-5-cf-transport-ship.pages.dev" target="_blank" rel="noreferrer">运输船 FPS ↗</a><a href="https://claude-opus-5-5-qqfeiche3d.pages.dev/" target="_blank" rel="noreferrer">漂移竞速 ↗</a></div></article></div></section>
+<section class="research-block" id="code-mv"><div class="section-label">SOURCE PREVIEW / PDOOM 的手绘源码 MV</div><h2>还研究过按时间重新绘制的手绘 MV。</h2><p>本机保存并运行了 PDoomVideo 原作场景源码、时间轴与音乐预览，可以查看各章场景。它是特定作品的工程；该预览并非已编码的完整 MP4。公开页保留原库入口，本机工程继续保存。</p><a class="research-link" href="https://github.com/JohnHeibel/PDoomVideo" target="_blank" rel="noreferrer">查看原作工程与章节 ↗</a></section>
+<section class="research-block" id="references"><div class="section-label">REFERENCE COLLECTIONS / 两个资料项目</div><h2>这两项提供案例与来源。</h2><div class="technical-grid"><article class="technical-card"><h3>yihui · 案例、提示词与重制对照</h3><p>研究原作、公开提示词与重制展厅，本机保存过展厅截图。资料库自身不执行视频生成。</p><div class="source-ref"><a href="https://skillry.dev/ai-videos/opus-5-5" target="_blank" rel="noreferrer">观看案例展厅 ↗</a><a href="https://github.com/yihui-dev/awesome-opus5-5-videos" target="_blank" rel="noreferrer">来源与提示词 ↗</a></div></article><article class="technical-card"><h3>athemeroy · 来源与实现路线</h3><p>研究代码、外部模型、已有素材剪辑和录屏的分类；本机接入静态资料 SVG。该统计图不是影片。</p><a href="https://github.com/athemeroy/awesome-opus-5-5-videos/blob/main/docs/cases-index.zh-CN.md" target="_blank" rel="noreferrer">逐案效果与来源图鉴 ↗</a></article></div></section>
+<section class="research-block" id="coverage"><div class="section-label">COVERAGE / 十个项目逐项对照</div><h2>归档、源码研究、运行与实作分别记录。</h2><div class="table-scroll"><table><caption>我们的研究与效果范围</caption><thead><tr><th>项目</th><th>已有研究与效果</th><th>对应入口</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div><p>尚未把所有 Skill 完整运行一遍，也未完成全部游戏的游玩验收。深入实作集中于歌曲 MV 和网页宣传片。</p></section>
+<section class="research-block" id="credits"><h2>原作来源与许可</h2><p>原作媒体分别标示作者；完整许可证、样片 CREDITS、所需署名与来源记录随站保留。这里播放已保存的文件，不调用生成服务。</p><a class="research-link" href="technical-source/effects/provenance.json">查看逐文件许可与署名记录</a></section><footer><p>阅读顺序：先看动态效果，再看十项目状态，最后进入 <a href="understanding.html">理解与技术分工</a>。</p></footer>'''
+    body = body.replace('两段 GIF、一张动态角色表情表', '动态字体 GIF、动态角色表情表')
+    # The lyric example remains an explicit author link, without rebundling it.
+    start = body.index('<article class="technical-card"><span class="tag">原作者 · opus-video-skills</span><h3>手绘歌词动画片段')
+    end = body.index('</article>', start)+len('</article>')
+    body = body[:start] + '<article class="technical-card"><span class="tag">原作者 · 手绘 Skill 的观看入口</span><h3>手绘歌词与角色故事</h3><p>本机研究时保存过作者视觉片段和接触表；公开页提供原作入口。我们尚未完整执行 painted-animation 制作流程。</p><a href="https://github.com/tuzhechen2005/opus-video-skills/tree/main/skills/painted-animation" target="_blank" rel="noreferrer">查看作者手绘示例与制作流程 ↗</a></article>' + body[end:]
+    body = body.replace('href="media/xiaozhen-sheet.jpg"', 'href="media/work-reel-sheet.jpg"').replace('src="media/xiaozhen-sheet.jpg"', 'src="media/work-reel-sheet.jpg"').replace('作者手绘成片接触表', '作者动态字体成片接触表').replace('连续动作请看左侧 GIF', '连续动作请看本节 GIF')
+    body = body.replace('逐片 CREDITS 和完整许可证随研究页保留。', '逐片 CREDITS 和完整许可证见 <a href="credits.html">原作者与素材署名页</a>。')
+    body = body.replace('查看逐文件许可与署名记录</a>', '查看逐文件许可与署名记录</a><p><a href="credits.html">原作者与素材署名全文</a></p>')
+    body = body.replace('本机没有在这个工程上制作新的故事影片。', '本机没有在这个工程上制作新的故事影片。© 2026 John Heibel / MIT。')
+    body = body.replace('本机尚未完整执行 kinetic-reel Skill。', '本机尚未完整执行 kinetic-reel Skill。© 2026 tuzhechen2005 / MIT；基础工程 © 2026 John Heibel。')
+    body = body.replace('公开研究页通过原作者入口体验。</p>', '公开研究页通过原作者入口体验。</p><a href="media/tidewater-author-island.jpg" target="_blank" rel="noreferrer"><img class="summary-film" src="media/tidewater-author-island.jpg" alt="Tidewater 原作者海岛游戏静态截图" loading="lazy"></a><p class="document-meta">原作者静态截图；不代表本机完整游玩验收。<a href="credits.html#tidewater-island">来源与 CREDITS</a></p><a href="media/tidewater-author-beach.jpg" target="_blank" rel="noreferrer">查看第二张海滩截图</a>')
+    body = body.replace('credits.html#tidewater-island"', 'credits.html#tidewater-island-screenshot"')
+    return chrome('完整效果展厅 · 十项目研究与实际结果', body)
+
+
+def build_credits_html(chrome, provenance):
+    rows = []
+    for item in provenance['resources']:
+        if not item.get('selected_for_publication'):
+            continue
+        attrs = ''.join('<p>'+escape(text)+'</p>' for text in item['visible_attribution'])
+        links = ''.join('<a href="technical-source/effects/'+escape(name,quote=True)+'">'+escape(name)+'</a> ' for name in item['license_documents'])
+        rows.append('<section class="research-block" id="'+escape(item['id'],quote=True)+'"><h2>'+escape(item['id'])+'</h2>'+attrs+'<div class="source-ref">'+links+'</div><p><a href="'+escape(item['source_media_url'],quote=True)+'" target="_blank" rel="noreferrer">原作来源</a></p></section>')
+    body = '<section class="hero architecture-hero"><div class="eyebrow">ATTRIBUTION / 公开原作的作者与素材署名</div><h1>原作来源与<span>素材署名。</span></h1><p>本次保持原预览内容，完整许可与 CREDITS 随站保留；作者样片与我们的制作分别标示。</p><a class="research-link" href="effects.html">返回完整效果展厅</a></section>'+''.join(rows)
+    return chrome('原作者与素材署名 · 效果展厅', body)

@@ -1,0 +1,731 @@
+{
+  "reviewed": "2026-10-08",
+  "scope": "Read-only rights/provenance audit of already saved author media; documents fetched, no new media downloaded, no generation or deployment performed.",
+  "sources_reviewed_at_commits": {
+    "lemomo-ai/lemo-opuscar": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+    "tuzhechen2005/opus-video-skills": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+    "JohnHeibel/ClaudeAnimationBase": "0ac8bf2b31942376cb6b8c4074715595d512acd2",
+    "dgreenheck/tidewater": "4811ba48d795197de5621985f404e765c0b7c0ef"
+  },
+  "documents": [
+    {
+      "file": "lemo-MIT-LICENSE.txt",
+      "repo": "lemomo-ai/lemo-opuscar",
+      "commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+      "source_path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/lemomo-ai/lemo-opuscar/b65efe6ea393fdc71212898ea4c57c754cfefa46/LICENSE",
+      "bytes": 1253,
+      "sha256": "f6d14d5ea5f60387eff5e7916f490e9d743986be48138d9ce187d69cbe536756"
+    },
+    {
+      "file": "opus-video-skills-MIT-LICENSE.txt",
+      "repo": "tuzhechen2005/opus-video-skills",
+      "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "source_path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/tuzhechen2005/opus-video-skills/59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1/LICENSE",
+      "bytes": 1265,
+      "sha256": "ea30fc6f274c0c2b325db2d5b4bc196b51292cf85215b4da67c5fb0b1b0d89fa"
+    },
+    {
+      "file": "ClaudeAnimationBase-MIT-LICENSE.txt",
+      "repo": "JohnHeibel/ClaudeAnimationBase",
+      "commit": "0ac8bf2b31942376cb6b8c4074715595d512acd2",
+      "source_path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/JohnHeibel/ClaudeAnimationBase/0ac8bf2b31942376cb6b8c4074715595d512acd2/LICENSE",
+      "bytes": 1068,
+      "sha256": "7d25ae95b305b884c08ce898e53b58d2e180ff0119e5d203d8b4ae30420f3b33"
+    },
+    {
+      "file": "opus-template-JohnHeibel-MIT-LICENSE.txt",
+      "repo": "tuzhechen2005/opus-video-skills",
+      "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "source_path": "skills/painted-animation/template/LICENSE",
+      "source_url": "https://raw.githubusercontent.com/tuzhechen2005/opus-video-skills/59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1/skills/painted-animation/template/LICENSE",
+      "bytes": 1068,
+      "sha256": "7d25ae95b305b884c08ce898e53b58d2e180ff0119e5d203d8b4ae30420f3b33"
+    },
+    {
+      "file": "painted-animation-README.md.txt",
+      "repo": "tuzhechen2005/opus-video-skills",
+      "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "source_path": "skills/painted-animation/README.md",
+      "source_url": "https://raw.githubusercontent.com/tuzhechen2005/opus-video-skills/59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1/skills/painted-animation/README.md",
+      "bytes": 5773,
+      "sha256": "8fbe497fde2435425034833129488bc13c22f8939fd224aa1cdc8f1432c88468"
+    },
+    {
+      "file": "lemo-lowpoly-island-music-CREDITS.txt",
+      "repo": "lemomo-ai/lemo-opuscar",
+      "commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+      "source_path": "styles/lowpoly-island/demo/music/CREDITS_music.txt",
+      "source_url": "https://raw.githubusercontent.com/lemomo-ai/lemo-opuscar/b65efe6ea393fdc71212898ea4c57c754cfefa46/styles/lowpoly-island/demo/music/CREDITS_music.txt",
+      "bytes": 1227,
+      "sha256": "aa965c985ea0b1931b9e781fde329bbd16e640292da140da88e69a4a6a54e6e1"
+    },
+    {
+      "file": "lemo-dark-keynote-music-CREDITS.txt",
+      "repo": "lemomo-ai/lemo-opuscar",
+      "commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+      "source_path": "styles/dark-keynote/demo/music/CREDITS_music.txt",
+      "source_url": "https://raw.githubusercontent.com/lemomo-ai/lemo-opuscar/b65efe6ea393fdc71212898ea4c57c754cfefa46/styles/dark-keynote/demo/music/CREDITS_music.txt",
+      "bytes": 537,
+      "sha256": "e42598da7fe8d1d069215570c07148b028f1d9507e916b360c46473845545806"
+    },
+    {
+      "file": "lemo-cel-anime-80s-CREDITS.txt",
+      "repo": "lemomo-ai/lemo-opuscar",
+      "commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+      "source_path": "styles/cel-anime-80s/demo/CREDITS",
+      "source_url": "https://raw.githubusercontent.com/lemomo-ai/lemo-opuscar/b65efe6ea393fdc71212898ea4c57c754cfefa46/styles/cel-anime-80s/demo/CREDITS",
+      "bytes": 1105,
+      "sha256": "19c1a30063da3a0916ade63976fade3c1fe97c2ad83fae11b5364339236841bc"
+    },
+    {
+      "file": "lemo-crayon-book-CREDITS.txt",
+      "repo": "lemomo-ai/lemo-opuscar",
+      "commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+      "source_path": "styles/crayon-book/demo/CREDITS",
+      "source_url": "https://raw.githubusercontent.com/lemomo-ai/lemo-opuscar/b65efe6ea393fdc71212898ea4c57c754cfefa46/styles/crayon-book/demo/CREDITS",
+      "bytes": 1061,
+      "sha256": "da4d202ec0a1655bbbfde170092c494614d20a2cafdd4e19cf1340a1b790b446"
+    },
+    {
+      "file": "lemo-dark-keynote-CREDITS.txt",
+      "repo": "lemomo-ai/lemo-opuscar",
+      "commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+      "source_path": "styles/dark-keynote/demo/CREDITS",
+      "source_url": "https://raw.githubusercontent.com/lemomo-ai/lemo-opuscar/b65efe6ea393fdc71212898ea4c57c754cfefa46/styles/dark-keynote/demo/CREDITS",
+      "bytes": 922,
+      "sha256": "0c28931a2414b40a65f1794733d2342e0f59e4ae1183fc090aa11125bb1fc456"
+    },
+    {
+      "file": "lemo-glass-product-CREDITS.txt",
+      "repo": "lemomo-ai/lemo-opuscar",
+      "commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+      "source_path": "styles/glass-product/demo/CREDITS",
+      "source_url": "https://raw.githubusercontent.com/lemomo-ai/lemo-opuscar/b65efe6ea393fdc71212898ea4c57c754cfefa46/styles/glass-product/demo/CREDITS",
+      "bytes": 1057,
+      "sha256": "54a9c3607be3c5db52cbf5b5a4c180bc440275ad43ad9244fb024319a50a441b"
+    },
+    {
+      "file": "lemo-ink-wash-CREDITS.txt",
+      "repo": "lemomo-ai/lemo-opuscar",
+      "commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+      "source_path": "styles/ink-wash/demo/CREDITS",
+      "source_url": "https://raw.githubusercontent.com/lemomo-ai/lemo-opuscar/b65efe6ea393fdc71212898ea4c57c754cfefa46/styles/ink-wash/demo/CREDITS",
+      "bytes": 1399,
+      "sha256": "ec7bbc6fa7570a3cf817f5094517d26159cefbecc0046c7ff62923b16db4bfcf"
+    },
+    {
+      "file": "lemo-iso-infographic-CREDITS.txt",
+      "repo": "lemomo-ai/lemo-opuscar",
+      "commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+      "source_path": "styles/iso-infographic/demo/CREDITS",
+      "source_url": "https://raw.githubusercontent.com/lemomo-ai/lemo-opuscar/b65efe6ea393fdc71212898ea4c57c754cfefa46/styles/iso-infographic/demo/CREDITS",
+      "bytes": 959,
+      "sha256": "a82eee2c6b3bd6470bf13879ae95a243c26b8049168eec472551c2027325644f"
+    },
+    {
+      "file": "lemo-lowpoly-island-CREDITS.txt",
+      "repo": "lemomo-ai/lemo-opuscar",
+      "commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+      "source_path": "styles/lowpoly-island/demo/CREDITS",
+      "source_url": "https://raw.githubusercontent.com/lemomo-ai/lemo-opuscar/b65efe6ea393fdc71212898ea4c57c754cfefa46/styles/lowpoly-island/demo/CREDITS",
+      "bytes": 773,
+      "sha256": "54cae183cf7a320a60c5eedb79199b9e58fddc6edf0be68102cfea3c2f94a171"
+    },
+    {
+      "file": "lemo-swiss-motion-CREDITS.txt",
+      "repo": "lemomo-ai/lemo-opuscar",
+      "commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+      "source_path": "styles/swiss-motion/demo/CREDITS",
+      "source_url": "https://raw.githubusercontent.com/lemomo-ai/lemo-opuscar/b65efe6ea393fdc71212898ea4c57c754cfefa46/styles/swiss-motion/demo/CREDITS",
+      "bytes": 1092,
+      "sha256": "129d4de51e31753c890d6452f0429676432c5b6a47f2c6061de27bf279d55dc5"
+    },
+    {
+      "file": "lemo-watercolor-CREDITS.txt",
+      "repo": "lemomo-ai/lemo-opuscar",
+      "commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+      "source_path": "styles/watercolor/demo/CREDITS",
+      "source_url": "https://raw.githubusercontent.com/lemomo-ai/lemo-opuscar/b65efe6ea393fdc71212898ea4c57c754cfefa46/styles/watercolor/demo/CREDITS",
+      "bytes": 2421,
+      "sha256": "f6853a6be52e259299d58e0d99f4c3f2aadb574ad7aed6ecb634383b3323504a"
+    },
+    {
+      "file": "tidewater-MIT-LICENSE.txt",
+      "repo": "dgreenheck/tidewater",
+      "reviewed_remote_commit": "4811ba48d795197de5621985f404e765c0b7c0ef",
+      "source_path": "LICENSE",
+      "source_url": "https://github.com/dgreenheck/tidewater/blob/4811ba48d795197de5621985f404e765c0b7c0ef/LICENSE",
+      "bytes": 1083,
+      "sha256": "413204504456b6b29e99d565629023e9aeee5916907e41fe8ffe8549219348ec",
+      "source_git_blob_sha1": "114ab92b2ef48d9e63c9f99e830a0125c57ae2f6",
+      "local_git_blob_sha1": "114ab92b2ef48d9e63c9f99e830a0125c57ae2f6",
+      "exact_upstream_blob_matches": true,
+      "origin": "Existing local source snapshot copied unchanged; compared with current pinned source metadata."
+    },
+    {
+      "file": "tidewater-CREDITS.md",
+      "repo": "dgreenheck/tidewater",
+      "reviewed_remote_commit": "4811ba48d795197de5621985f404e765c0b7c0ef",
+      "source_path": "CREDITS.md",
+      "source_url": "https://github.com/dgreenheck/tidewater/blob/4811ba48d795197de5621985f404e765c0b7c0ef/CREDITS.md",
+      "bytes": 5148,
+      "sha256": "49706aaa01bc73b678bed06aaa456e01924299e6ee109a5cdccd2e6a07fe5fcd",
+      "source_git_blob_sha1": "591b91d6fa8bfc9f5b52bb2d3643e739b6604264",
+      "local_git_blob_sha1": "591b91d6fa8bfc9f5b52bb2d3643e739b6604264",
+      "exact_upstream_blob_matches": true,
+      "origin": "Existing local source snapshot copied unchanged; compared with current pinned source metadata."
+    }
+  ],
+  "resources": [
+    {
+      "id": "lemo-cel-anime-80s",
+      "project": "lemomo-ai/lemo-opuscar",
+      "repo_url": "https://github.com/lemomo-ai/lemo-opuscar",
+      "reviewed_commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+      "source_media_url": "https://lemomo-ai.github.io/lemo-opuscar/films/cel-anime-80s.mp4",
+      "source_release_url": "https://github.com/lemomo-ai/lemo-opuscar/releases/download/films/cel-anime-80s.mp4",
+      "source_path": "styles/cel-anime-80s/demo/",
+      "local_files": [
+        "media/cel-anime-80s.mp4",
+        "media/cel-anime-80s.jpg"
+      ],
+      "local_bytes": 10054399,
+      "local_sha256": "40657a5d85560e26e5768ff3580a21ba03ff5fcfc78b2d9ebbd064b67c002918",
+      "remote_preview_content_length": 10054399,
+      "remote_preview_size_matches": true,
+      "remote_media_hash_verified": false,
+      "license": "MIT for original project material; third-party material licences per demo CREDITS",
+      "license_documents": [
+        "lemo-MIT-LICENSE.txt",
+        "lemo-cel-anime-80s-CREDITS.txt"
+      ],
+      "visible_attribution": [
+        "Film by LemoLab × Claude Opus 5.5; original code and associated documentation: MIT, Copyright (c) 2026 LemoLab.",
+        "Author preview preserved as a research example; not generated by our project.",
+        "Third-party credits and licences: see lemo-cel-anime-80s-CREDITS.txt."
+      ],
+      "third_party_attribution": [],
+      "boundary": "Author demo playback only. Our project has not executed the full Lemo production Skill.",
+      "selected_for_publication": true
+    },
+    {
+      "id": "lemo-crayon-book",
+      "project": "lemomo-ai/lemo-opuscar",
+      "repo_url": "https://github.com/lemomo-ai/lemo-opuscar",
+      "reviewed_commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+      "source_media_url": "https://lemomo-ai.github.io/lemo-opuscar/films/crayon-book.mp4",
+      "source_release_url": "https://github.com/lemomo-ai/lemo-opuscar/releases/download/films/crayon-book.mp4",
+      "source_path": "styles/crayon-book/demo/",
+      "local_files": [
+        "media/crayon-book.mp4",
+        "media/crayon-book.jpg"
+      ],
+      "local_bytes": 12980661,
+      "local_sha256": "f3cb476defb89550447d4e781b141766050f7c88fc00a9fd0ce39ab2c05d71cc",
+      "remote_preview_content_length": 12980661,
+      "remote_preview_size_matches": true,
+      "remote_media_hash_verified": false,
+      "license": "MIT for original project material; third-party material licences per demo CREDITS",
+      "license_documents": [
+        "lemo-MIT-LICENSE.txt",
+        "lemo-crayon-book-CREDITS.txt"
+      ],
+      "visible_attribution": [
+        "Film by LemoLab × Claude Opus 5.5; original code and associated documentation: MIT, Copyright (c) 2026 LemoLab.",
+        "Author preview preserved as a research example; not generated by our project.",
+        "Third-party credits and licences: see lemo-crayon-book-CREDITS.txt."
+      ],
+      "third_party_attribution": [],
+      "boundary": "Author demo playback only. Our project has not executed the full Lemo production Skill.",
+      "selected_for_publication": true
+    },
+    {
+      "id": "lemo-dark-keynote",
+      "project": "lemomo-ai/lemo-opuscar",
+      "repo_url": "https://github.com/lemomo-ai/lemo-opuscar",
+      "reviewed_commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+      "source_media_url": "https://lemomo-ai.github.io/lemo-opuscar/films/dark-keynote.mp4",
+      "source_release_url": "https://github.com/lemomo-ai/lemo-opuscar/releases/download/films/dark-keynote.mp4",
+      "source_path": "styles/dark-keynote/demo/",
+      "local_files": [
+        "media/dark-keynote.mp4",
+        "media/dark-keynote.jpg"
+      ],
+      "local_bytes": 5355677,
+      "local_sha256": "1a441812461fe54e10572efde07b28b1e69c90679eb963958a896f9c9b04b9a4",
+      "remote_preview_content_length": 5355677,
+      "remote_preview_size_matches": true,
+      "remote_media_hash_verified": false,
+      "license": "MIT for original project material; third-party material licences per demo CREDITS",
+      "license_documents": [
+        "lemo-MIT-LICENSE.txt",
+        "lemo-dark-keynote-CREDITS.txt"
+      ],
+      "visible_attribution": [
+        "Film by LemoLab × Claude Opus 5.5; original code and associated documentation: MIT, Copyright (c) 2026 LemoLab.",
+        "Author preview preserved as a research example; not generated by our project.",
+        "Third-party credits and licences: see lemo-dark-keynote-CREDITS.txt."
+      ],
+      "third_party_attribution": [],
+      "boundary": "Author demo playback only. Our project has not executed the full Lemo production Skill.",
+      "selected_for_publication": true
+    },
+    {
+      "id": "lemo-glass-product",
+      "project": "lemomo-ai/lemo-opuscar",
+      "repo_url": "https://github.com/lemomo-ai/lemo-opuscar",
+      "reviewed_commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+      "source_media_url": "https://lemomo-ai.github.io/lemo-opuscar/films/glass-product.mp4",
+      "source_release_url": "https://github.com/lemomo-ai/lemo-opuscar/releases/download/films/glass-product.mp4",
+      "source_path": "styles/glass-product/demo/",
+      "local_files": [
+        "media/glass-product.mp4",
+        "media/glass-product.jpg"
+      ],
+      "local_bytes": 4732458,
+      "local_sha256": "4d4d07073e2bc7abcb537afae06fa19562de6f69f67f754df6865b734c308f25",
+      "remote_preview_content_length": 4732458,
+      "remote_preview_size_matches": true,
+      "remote_media_hash_verified": false,
+      "license": "MIT for original project material; third-party material licences per demo CREDITS",
+      "license_documents": [
+        "lemo-MIT-LICENSE.txt",
+        "lemo-glass-product-CREDITS.txt"
+      ],
+      "visible_attribution": [
+        "Film by LemoLab × Claude Opus 5.5; original code and associated documentation: MIT, Copyright (c) 2026 LemoLab.",
+        "Author preview preserved as a research example; not generated by our project.",
+        "Third-party credits and licences: see lemo-glass-product-CREDITS.txt."
+      ],
+      "third_party_attribution": [],
+      "boundary": "Author demo playback only. Our project has not executed the full Lemo production Skill.",
+      "selected_for_publication": true
+    },
+    {
+      "id": "lemo-ink-wash",
+      "project": "lemomo-ai/lemo-opuscar",
+      "repo_url": "https://github.com/lemomo-ai/lemo-opuscar",
+      "reviewed_commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+      "source_media_url": "https://lemomo-ai.github.io/lemo-opuscar/films/ink-wash.mp4",
+      "source_release_url": "https://github.com/lemomo-ai/lemo-opuscar/releases/download/films/ink-wash.mp4",
+      "source_path": "styles/ink-wash/demo/",
+      "local_files": [
+        "media/ink-wash.mp4",
+        "media/ink-wash.jpg"
+      ],
+      "local_bytes": 6884674,
+      "local_sha256": "38c2d3681aa7d49a5d2199a319e4934a1b89d182ace9446c3575eccfa606533c",
+      "remote_preview_content_length": 6884674,
+      "remote_preview_size_matches": true,
+      "remote_media_hash_verified": false,
+      "license": "MIT for original project material; third-party material licences per demo CREDITS",
+      "license_documents": [
+        "lemo-MIT-LICENSE.txt",
+        "lemo-ink-wash-CREDITS.txt"
+      ],
+      "visible_attribution": [
+        "Film by LemoLab × Claude Opus 5.5; original code and associated documentation: MIT, Copyright (c) 2026 LemoLab.",
+        "Author preview preserved as a research example; not generated by our project.",
+        "Third-party credits and licences: see lemo-ink-wash-CREDITS.txt."
+      ],
+      "third_party_attribution": [],
+      "boundary": "Author demo playback only. Our project has not executed the full Lemo production Skill.",
+      "selected_for_publication": true
+    },
+    {
+      "id": "lemo-iso-infographic",
+      "project": "lemomo-ai/lemo-opuscar",
+      "repo_url": "https://github.com/lemomo-ai/lemo-opuscar",
+      "reviewed_commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+      "source_media_url": "https://lemomo-ai.github.io/lemo-opuscar/films/iso-infographic.mp4",
+      "source_release_url": "https://github.com/lemomo-ai/lemo-opuscar/releases/download/films/iso-infographic.mp4",
+      "source_path": "styles/iso-infographic/demo/",
+      "local_files": [
+        "media/iso-infographic.mp4",
+        "media/iso-infographic.jpg"
+      ],
+      "local_bytes": 8050305,
+      "local_sha256": "657fd06ee331c1d803e61d1b1c1bb16a4f8fdbb33cbb27b4c0acc81ea75a19fb",
+      "remote_preview_content_length": 8050305,
+      "remote_preview_size_matches": true,
+      "remote_media_hash_verified": false,
+      "license": "MIT for original project material; third-party material licences per demo CREDITS",
+      "license_documents": [
+        "lemo-MIT-LICENSE.txt",
+        "lemo-iso-infographic-CREDITS.txt"
+      ],
+      "visible_attribution": [
+        "Film by LemoLab × Claude Opus 5.5; original code and associated documentation: MIT, Copyright (c) 2026 LemoLab.",
+        "Author preview preserved as a research example; not generated by our project.",
+        "Third-party credits and licences: see lemo-iso-infographic-CREDITS.txt."
+      ],
+      "third_party_attribution": [],
+      "boundary": "Author demo playback only. Our project has not executed the full Lemo production Skill.",
+      "selected_for_publication": true
+    },
+    {
+      "id": "lemo-lowpoly-island",
+      "project": "lemomo-ai/lemo-opuscar",
+      "repo_url": "https://github.com/lemomo-ai/lemo-opuscar",
+      "reviewed_commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+      "source_media_url": "https://lemomo-ai.github.io/lemo-opuscar/films/lowpoly-island.mp4",
+      "source_release_url": "https://github.com/lemomo-ai/lemo-opuscar/releases/download/films/lowpoly-island.mp4",
+      "source_path": "styles/lowpoly-island/demo/",
+      "local_files": [
+        "media/lowpoly-island.mp4",
+        "media/lowpoly-island.jpg"
+      ],
+      "local_bytes": 6878067,
+      "local_sha256": "d5f2da94f3d8718801ed1381fe1dd593e2fbc51e53995ada27d5c2bf580b9c5b",
+      "remote_preview_content_length": 6878067,
+      "remote_preview_size_matches": true,
+      "remote_media_hash_verified": false,
+      "license": "MIT for original project material; third-party material licences per demo CREDITS",
+      "license_documents": [
+        "lemo-MIT-LICENSE.txt",
+        "lemo-lowpoly-island-CREDITS.txt"
+      ],
+      "visible_attribution": [
+        "Film by LemoLab × Claude Opus 5.5; original code and associated documentation: MIT, Copyright (c) 2026 LemoLab.",
+        "Author preview preserved as a research example; not generated by our project.",
+        "Third-party credits and licences: see lemo-lowpoly-island-CREDITS.txt."
+      ],
+      "third_party_attribution": [],
+      "boundary": "Author demo playback only. Our project has not executed the full Lemo production Skill.",
+      "selected_for_publication": true
+    },
+    {
+      "id": "lemo-swiss-motion",
+      "project": "lemomo-ai/lemo-opuscar",
+      "repo_url": "https://github.com/lemomo-ai/lemo-opuscar",
+      "reviewed_commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+      "source_media_url": "https://lemomo-ai.github.io/lemo-opuscar/films/swiss-motion.mp4",
+      "source_release_url": "https://github.com/lemomo-ai/lemo-opuscar/releases/download/films/swiss-motion.mp4",
+      "source_path": "styles/swiss-motion/demo/",
+      "local_files": [
+        "media/swiss-motion.mp4",
+        "media/swiss-motion.jpg"
+      ],
+      "local_bytes": 1803113,
+      "local_sha256": "09639ce0cc856adceb177bacbe6d380d619fb25576b612402f0fcf1aa9a303ca",
+      "remote_preview_content_length": 1803113,
+      "remote_preview_size_matches": true,
+      "remote_media_hash_verified": false,
+      "license": "MIT for original project material; third-party material licences per demo CREDITS",
+      "license_documents": [
+        "lemo-MIT-LICENSE.txt",
+        "lemo-swiss-motion-CREDITS.txt"
+      ],
+      "visible_attribution": [
+        "Film by LemoLab × Claude Opus 5.5; original code and associated documentation: MIT, Copyright (c) 2026 LemoLab.",
+        "Author preview preserved as a research example; not generated by our project.",
+        "Third-party credits and licences: see lemo-swiss-motion-CREDITS.txt.",
+        "Drum samples: MuldjordKit by Lars Muldjord (drumgizmo.org), FreePats version, CC BY 4.0; used in the upstream original score. No additional edit in our publication."
+      ],
+      "third_party_attribution": [
+        {
+          "work": "MuldjordKit drum samples (FreePats version)",
+          "author": "Lars Muldjord",
+          "license": "CC BY 4.0",
+          "source_url": "https://www.drumgizmo.org/",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "changes": "Incorporated in upstream score; research copy is unchanged."
+        }
+      ],
+      "boundary": "Author demo playback only. Our project has not executed the full Lemo production Skill.",
+      "selected_for_publication": true
+    },
+    {
+      "id": "lemo-watercolor",
+      "project": "lemomo-ai/lemo-opuscar",
+      "repo_url": "https://github.com/lemomo-ai/lemo-opuscar",
+      "reviewed_commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+      "source_media_url": "https://lemomo-ai.github.io/lemo-opuscar/films/watercolor.mp4",
+      "source_release_url": "https://github.com/lemomo-ai/lemo-opuscar/releases/download/films/watercolor.mp4",
+      "source_path": "styles/watercolor/demo/",
+      "local_files": [
+        "media/watercolor.mp4",
+        "media/watercolor.jpg"
+      ],
+      "local_bytes": 14558372,
+      "local_sha256": "a222efe90cdbc0c2283d531757373f83c2b7dc0811212f4db4c032249884ead2",
+      "remote_preview_content_length": 14558372,
+      "remote_preview_size_matches": true,
+      "remote_media_hash_verified": false,
+      "license": "MIT for original project material; third-party material licences per demo CREDITS",
+      "license_documents": [
+        "lemo-MIT-LICENSE.txt",
+        "lemo-watercolor-CREDITS.txt"
+      ],
+      "visible_attribution": [
+        "Film by LemoLab × Claude Opus 5.5; original code and associated documentation: MIT, Copyright (c) 2026 LemoLab.",
+        "Author preview preserved as a research example; not generated by our project.",
+        "Third-party credits and licences: see lemo-watercolor-CREDITS.txt.",
+        "'Wildflowers' by Scott Buckley - released under CC-BY 4.0. www.scottbuckley.com.au",
+        "Upstream music edit: beat-aligned jump from 61.23 s to 265.61 s with 0.18 s crossfade, faded out and mixed under voice/SFX; no additional music edit in our publication."
+      ],
+      "third_party_attribution": [
+        {
+          "work": "Wildflowers",
+          "author": "Scott Buckley",
+          "license": "CC BY 4.0",
+          "source_url": "https://www.scottbuckley.com.au/library/wildflowers/",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "changes": "Upstream edit described in lemo-watercolor-CREDITS.txt; research copy is unchanged."
+        }
+      ],
+      "boundary": "Author demo playback only. Our project has not executed the full Lemo production Skill.",
+      "selected_for_publication": true
+    },
+    {
+      "id": "work-reel",
+      "project": "tuzhechen2005/opus-video-skills",
+      "repo_url": "https://github.com/tuzhechen2005/opus-video-skills",
+      "reviewed_commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "source_path": "skills/kinetic-reel/docs/work-reel.gif",
+      "source_media_url": "https://raw.githubusercontent.com/tuzhechen2005/opus-video-skills/59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1/skills/kinetic-reel/docs/work-reel.gif",
+      "local_files": [
+        "media/work-reel.gif"
+      ],
+      "local_bytes": 2031064,
+      "local_sha256": "f01d4c13c8d83e09589acbea75d94f013a9863179deea892f607d77fcb4eb16a",
+      "source_git_blob_sha1": "c4d2b27bbc314c355d470bf57394b4c8a58647d4",
+      "local_git_blob_sha1": "c4d2b27bbc314c355d470bf57394b4c8a58647d4",
+      "exact_upstream_blob_matches": true,
+      "license": "MIT for author visual documentation; John Heibel derivative copyright retained.",
+      "license_documents": [
+        "opus-video-skills-MIT-LICENSE.txt",
+        "opus-template-JohnHeibel-MIT-LICENSE.txt",
+        "painted-animation-README.md.txt"
+      ],
+      "visible_attribution": [
+        "Original visual documentation by tuzhechen2005; MIT, Copyright (c) 2026 tuzhechen2005.",
+        "Author resource, preserved unchanged for technical research; not generated by our project.",
+        "Adapted animation foundation: Copyright (c) 2026 John Heibel; see opus-template-JohnHeibel-MIT-LICENSE.txt."
+      ],
+      "boundary": "Author visual excerpt / contact sheet. No audio or complete MP4 is bundled here; our project has not run the full Skill.",
+      "selected_for_publication": true
+    },
+    {
+      "id": "koi-gag",
+      "project": "tuzhechen2005/opus-video-skills",
+      "repo_url": "https://github.com/tuzhechen2005/opus-video-skills",
+      "reviewed_commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "source_path": "skills/painted-animation/docs/koi-gag.gif",
+      "source_media_url": "https://raw.githubusercontent.com/tuzhechen2005/opus-video-skills/59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1/skills/painted-animation/docs/koi-gag.gif",
+      "local_files": [
+        "media/koi-gag.gif"
+      ],
+      "local_bytes": 4720659,
+      "local_sha256": "fe2f693b7c78e5766d099df593da7a3e4e338f60e03e4f98f6c4a6cdb58ec542",
+      "source_git_blob_sha1": "c4430b8f1e9eddbcdfdf7d621ebd6d0dd702d4f4",
+      "local_git_blob_sha1": "c4430b8f1e9eddbcdfdf7d621ebd6d0dd702d4f4",
+      "exact_upstream_blob_matches": true,
+      "license": "MIT for author visual documentation; underlying third-party song/lyrics not licensed by repository MIT",
+      "license_documents": [
+        "opus-video-skills-MIT-LICENSE.txt",
+        "opus-template-JohnHeibel-MIT-LICENSE.txt",
+        "painted-animation-README.md.txt"
+      ],
+      "visible_attribution": [
+        "Original visual documentation by tuzhechen2005; MIT, Copyright (c) 2026 tuzhechen2005.",
+        "Author resource, preserved unchanged for technical research; not generated by our project.",
+        "Adapted animation foundation: Copyright (c) 2026 John Heibel; see opus-template-JohnHeibel-MIT-LICENSE.txt.",
+        "Visual lyric-video example for 小镇姑娘 (David Tao / 陶喆). The upstream README explicitly excludes the song audio for copyright reasons; our publication also contains no song audio for this example. Repository MIT does not grant rights to the underlying third-party song or lyrics."
+      ],
+      "boundary": "Author visual excerpt / contact sheet. No audio or complete MP4 is bundled here; our project has not run the full Skill.",
+      "selected_for_publication": false
+    },
+    {
+      "id": "xiaozhen-sheet",
+      "project": "tuzhechen2005/opus-video-skills",
+      "repo_url": "https://github.com/tuzhechen2005/opus-video-skills",
+      "reviewed_commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "source_path": "skills/painted-animation/docs/xiaozhen-sheet.jpg",
+      "source_media_url": "https://raw.githubusercontent.com/tuzhechen2005/opus-video-skills/59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1/skills/painted-animation/docs/xiaozhen-sheet.jpg",
+      "local_files": [
+        "media/xiaozhen-sheet.jpg"
+      ],
+      "local_bytes": 297994,
+      "local_sha256": "08bc9ac5c087e9dbbdbb6e04b5921c90550d237d75cd3618b73fb640e4f66063",
+      "source_git_blob_sha1": "82ab8ef88e1ef9bf82523af4e3111d90fb1f7ce0",
+      "local_git_blob_sha1": "82ab8ef88e1ef9bf82523af4e3111d90fb1f7ce0",
+      "exact_upstream_blob_matches": true,
+      "license": "MIT for author visual documentation; underlying third-party song/lyrics not licensed by repository MIT",
+      "license_documents": [
+        "opus-video-skills-MIT-LICENSE.txt",
+        "opus-template-JohnHeibel-MIT-LICENSE.txt",
+        "painted-animation-README.md.txt"
+      ],
+      "visible_attribution": [
+        "Original visual documentation by tuzhechen2005; MIT, Copyright (c) 2026 tuzhechen2005.",
+        "Author resource, preserved unchanged for technical research; not generated by our project.",
+        "Adapted animation foundation: Copyright (c) 2026 John Heibel; see opus-template-JohnHeibel-MIT-LICENSE.txt.",
+        "Visual lyric-video example for 小镇姑娘 (David Tao / 陶喆). The upstream README explicitly excludes the song audio for copyright reasons; our publication also contains no song audio for this example. Repository MIT does not grant rights to the underlying third-party song or lyrics."
+      ],
+      "boundary": "Author visual excerpt / contact sheet. No audio or complete MP4 is bundled here; our project has not run the full Skill.",
+      "selected_for_publication": false
+    },
+    {
+      "id": "work-reel-sheet",
+      "project": "tuzhechen2005/opus-video-skills",
+      "repo_url": "https://github.com/tuzhechen2005/opus-video-skills",
+      "reviewed_commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "source_path": "skills/kinetic-reel/docs/work-reel-sheet.jpg",
+      "source_media_url": "https://raw.githubusercontent.com/tuzhechen2005/opus-video-skills/59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1/skills/kinetic-reel/docs/work-reel-sheet.jpg",
+      "local_files": [
+        "media/work-reel-sheet.jpg"
+      ],
+      "local_bytes": 226491,
+      "local_sha256": "e21828daaeab949bf548ff4a4f8549f96e592e4ebe651e596d213a429d8d56f2",
+      "source_git_blob_sha1": "8d53172cfd33612cf7454b1415bdd5d6d4a9cea4",
+      "local_git_blob_sha1": "8d53172cfd33612cf7454b1415bdd5d6d4a9cea4",
+      "exact_upstream_blob_matches": true,
+      "license": "MIT for author visual documentation; John Heibel derivative copyright retained.",
+      "license_documents": [
+        "opus-video-skills-MIT-LICENSE.txt",
+        "opus-template-JohnHeibel-MIT-LICENSE.txt",
+        "painted-animation-README.md.txt"
+      ],
+      "visible_attribution": [
+        "Original visual documentation by tuzhechen2005; MIT, Copyright (c) 2026 tuzhechen2005.",
+        "Author resource, preserved unchanged for technical research; not generated by our project.",
+        "Adapted animation foundation: Copyright (c) 2026 John Heibel; see opus-template-JohnHeibel-MIT-LICENSE.txt."
+      ],
+      "boundary": "Author visual excerpt / contact sheet. No audio or complete MP4 is bundled here; our project has not run the full Skill.",
+      "selected_for_publication": true
+    },
+    {
+      "id": "emotions",
+      "project": "JohnHeibel/ClaudeAnimationBase",
+      "repo_url": "https://github.com/JohnHeibel/ClaudeAnimationBase",
+      "reviewed_commit": "0ac8bf2b31942376cb6b8c4074715595d512acd2",
+      "source_path": "docs/emotions.webp",
+      "source_media_url": "https://raw.githubusercontent.com/JohnHeibel/ClaudeAnimationBase/0ac8bf2b31942376cb6b8c4074715595d512acd2/docs/emotions.webp",
+      "local_files": [
+        "media/emotions.webp"
+      ],
+      "local_bytes": 6678428,
+      "local_sha256": "868a72dc0840e273cc31609c5532fc61909143aa9bc9103ebd2d6fa123184c7b",
+      "source_git_blob_sha1": "e640ab4a233cfc3976632de65867f7e470b9bbd4",
+      "local_git_blob_sha1": "e640ab4a233cfc3976632de65867f7e470b9bbd4",
+      "exact_upstream_blob_matches": true,
+      "license": "MIT for author animated visual documentation; no independent exclusion was found.",
+      "license_documents": [
+        "ClaudeAnimationBase-MIT-LICENSE.txt"
+      ],
+      "visible_attribution": [
+        "Original visual documentation by John Heibel; MIT, Copyright (c) 2026 John Heibel.",
+        "Author resource, preserved unchanged for technical research; not generated by our project."
+      ],
+      "boundary": "Animated author character model sheet; no new story film produced by our project.",
+      "selected_for_publication": true
+    },
+    {
+      "id": "tidewater-island-screenshot",
+      "project": "dgreenheck/tidewater",
+      "repo_url": "https://github.com/dgreenheck/tidewater",
+      "reviewed_commit": "4811ba48d795197de5621985f404e765c0b7c0ef",
+      "source_path": "docs/screenshot.jpg",
+      "source_media_url": "https://github.com/dgreenheck/tidewater/blob/4811ba48d795197de5621985f404e765c0b7c0ef/docs/screenshot.jpg",
+      "local_files": [
+        "media/tidewater-author-island.jpg"
+      ],
+      "local_bytes": 245947,
+      "local_sha256": "85a2ca018d2aa5094b61d86c1c9927511d1a96fcf4804f9dbbe7aeae14ca19bf",
+      "source_git_blob_sha1": "3c3002149598b2fbaa9c9bec3a0213ba8ae6eac9",
+      "local_git_blob_sha1": "3c3002149598b2fbaa9c9bec3a0213ba8ae6eac9",
+      "exact_upstream_blob_matches": true,
+      "license": "Repository README documentation screenshot; project MIT with separately declared third-party asset licences in CREDITS.",
+      "license_documents": [
+        "tidewater-MIT-LICENSE.txt",
+        "tidewater-CREDITS.md"
+      ],
+      "visible_attribution": [
+        "Tidewater 原作者 README 静态截图；Copyright (c) 2026 DRG Software Solutions LLC，MIT。",
+        "画面中的第三方素材依原库 CREDITS 保留各自许可：CC0 场录/Poly Haven资源、MIT Rocketbox角色与其余已列出处。",
+        "仅观察原作场景与渲染效果，不证明本机完整游玩、全流程验收或新生成游戏。"
+      ],
+      "boundary": "Original author README screenshot copied unchanged; not a video or an interactive demo. Does not prove full local gameplay validation.",
+      "selected_for_publication": true
+    },
+    {
+      "id": "tidewater-beach-screenshot",
+      "project": "dgreenheck/tidewater",
+      "repo_url": "https://github.com/dgreenheck/tidewater",
+      "reviewed_commit": "4811ba48d795197de5621985f404e765c0b7c0ef",
+      "source_path": "docs/screenshot-beach.jpg",
+      "source_media_url": "https://github.com/dgreenheck/tidewater/blob/4811ba48d795197de5621985f404e765c0b7c0ef/docs/screenshot-beach.jpg",
+      "local_files": [
+        "media/tidewater-author-beach.jpg"
+      ],
+      "local_bytes": 212101,
+      "local_sha256": "17e051371ace2a45ed1660a07b965787e6a27f0490049efe34a8e99ae2f3d833",
+      "source_git_blob_sha1": "4bd710c4d6e7b52f7217a926f5fade66d1219121",
+      "local_git_blob_sha1": "4bd710c4d6e7b52f7217a926f5fade66d1219121",
+      "exact_upstream_blob_matches": true,
+      "license": "Repository README documentation screenshot; project MIT with separately declared third-party asset licences in CREDITS.",
+      "license_documents": [
+        "tidewater-MIT-LICENSE.txt",
+        "tidewater-CREDITS.md"
+      ],
+      "visible_attribution": [
+        "Tidewater 原作者 README 静态截图；Copyright (c) 2026 DRG Software Solutions LLC，MIT。",
+        "画面中的第三方素材依原库 CREDITS 保留各自许可：CC0 场录/Poly Haven资源、MIT Rocketbox角色与其余已列出处。",
+        "仅观察原作场景与渲染效果，不证明本机完整游玩、全流程验收或新生成游戏。"
+      ],
+      "boundary": "Original author README screenshot copied unchanged; not a video or an interactive demo. Does not prove full local gameplay validation.",
+      "selected_for_publication": true
+    }
+  ],
+  "not_ready_for_rehosting": [
+    {
+      "project": "JohnHeibel/PDoomVideo",
+      "reason": "GitHub repo licence is null; local music asset is borrowed from earlier song source and no separate redistribution licence was found. Preserve original viewing links."
+    },
+    {
+      "project": "riba2534/claude-opus-5-5-demo",
+      "reason": "GitHub repo licence is null; no blanket licence found for the three built games. Preserve original game links."
+    },
+    {
+      "project": "diggerhq/shipvideo",
+      "reason": "Pinned source snapshot has no LICENSE path. Saved NVIDIA / Linear / Infera videos have no separately identified rehosting licence. Preserve author viewing links."
+    },
+    {
+      "project": "makevoid/motion-graphics-music-video-skill",
+      "reason": "Code and documentation MIT, but no complete author MV is saved locally; YouTube originals have not been separately licensed for rehosting. Preserve author viewing links and our own actual experiments."
+    }
+  ],
+  "tidewater_note": "Code MIT and third-party licences are thoroughly declared in CREDITS; publication of a full game requires keeping its included attribution files. This audit did not re-audit every game dependency or claim full gameplay validation.",
+  "publication_selection": {
+    "approved_author_resources": [
+      "lemo-cel-anime-80s",
+      "lemo-crayon-book",
+      "lemo-dark-keynote",
+      "lemo-glass-product",
+      "lemo-ink-wash",
+      "lemo-iso-infographic",
+      "lemo-lowpoly-island",
+      "lemo-swiss-motion",
+      "lemo-watercolor",
+      "work-reel",
+      "work-reel-sheet",
+      "emotions",
+      "tidewater-island-screenshot",
+      "tidewater-beach-screenshot"
+    ],
+    "withheld_resources": [
+      {
+        "id": "koi-gag",
+        "reason": "Underlying third-party song/lyric rights are not conferred by repository MIT; use an explicit original viewing link instead."
+      },
+      {
+        "id": "xiaozhen-sheet",
+        "reason": "Underlying third-party song/lyric rights are not conferred by repository MIT; use an explicit original viewing link instead."
+      }
+    ]
+  }
+}

@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="understanding.css">
 <link rel="stylesheet" href="summary.css"></head>
 <body>
-<header class="understanding-header"><a class="brand" href="index.html#understanding">← 返回能力首页</a><nav aria-label="研究入口"><a href="index.html#all-projects-map">十项目总览图</a><a href="index.html#experience">本地效果</a></nav></header>
-<main><p class="publication-banner">公开研究版：保留说明和选定自制结果；原作者媒体通过来源入口查阅。本机研究副本、历史中间材料与公开范围分别记录。<a href="index.html#publication-scope">查看范围 →</a></p>
+<header class="understanding-header"><a class="brand" href="index.html">← 返回能力首页</a><nav aria-label="研究入口"><a href="index.html#all-projects-map">十项目总览图</a><a href="effects.html">完整效果展厅</a></nav></header>
+<main><p class="publication-banner">研究覆盖十个项目；歌曲 MV 与网页宣传片做了深入实作。已核对的原作短片、角色动画与自制结果汇总在 <a href="effects.html">完整效果展厅</a>，其他原作另有来源入口。<a href="index.html#publication-scope">查看公开范围 →</a></p>
   <section class="hero architecture-hero">
     <div class="eyebrow">OUR UNDERSTANDING / 全部理解与查漏补缺</div>
     <h1>模型创作，程序执行。<br><span>先分清每一层，再选方案。</span></h1>
@@ -21,7 +21,15 @@
     <div class="understanding-start"><a class="research-link" href="#corrections">先看十二项修正</a><a href="#routes">分清五类产物 →</a><a href="#evidence">查看本机实际范围 →</a></div>
   </section>
 
-  <nav class="technical-nav" aria-label="理解汇总章节"><a href="#roles">各层分工</a><a href="#routes">五类产物</a><a href="#skill">Skill 的作用</a><a href="#mv">MV 如何生成</a><a href="#staging">人物与场景</a><a href="#launch">网页宣传片</a><a href="#control">控制与沉淀</a><a href="#corrections">查漏补缺</a><a href="#projects">十项目定位</a><a href="#evidence">实测与证据</a></nav>
+  <section class="research-block" id="research-coverage">
+    <div class="section-label">RESEARCH COVERAGE / 我们研究了哪些</div><h2>十个项目已经梳理，两项能力做了深入实作。</h2>
+    <div class="technical-grid"><article class="technical-card"><span class="tag">10 个源项目</span><h3>原作效果与技术路线</h3><p>研究范围包括手绘 MV、多风格代码短片、实时游戏、网页宣传片、角色表演 MV、动画基础工程和案例资料库。我们核对能力、制作原理、适用范围与来源；各项目的验证深度不同。</p></article><article class="technical-card"><span class="tag">2 项重点能力</span><h3>歌曲 MV 与网页宣传片</h3><p>围绕 makevoid 和 Shipvideo 深入拆解源码与流程，再用现有能力适配：角色参考、音频条件表演、绿幕合成，以及网页内容提炼、分镜编码、逐帧渲染和交付检查。</p></article><article class="technical-card"><span class="tag">3 项代表结果</span><h3>我们实际制作的效果</h3><p>约 127 秒整曲图片 MV、5 秒 H3 人物表演与合成、24 秒六幕网页宣传片。三项结果对应不同制作路线，已实现的范围与限制均单独标明。</p></article></div>
+    <p>原作者样片用于观察效果；原作源码预览用于验证本机运行；我们的实作用于验证适配路线。下载样片不等于执行了它的 Skill，启动游戏也不等于完成了全部游玩验收。</p>
+    <p class="architecture-note"><strong>下面的时间滑块只是教学例子。</strong>它用一个方块解释“代码按时间绘制”的机制。完整效果、各项目的展示状态和观看入口集中在效果展厅。</p>
+    <div class="source-ref"><a class="research-link" href="effects.html">打开完整效果展厅 →</a><a href="index.html#library">查看十个源项目的能力与范围 →</a><a href="production.html">查看我们的三项代表实作 →</a></div>
+  </section>
+
+  <nav class="technical-nav" aria-label="理解汇总章节"><a href="#research-coverage">研究范围</a><a href="#roles">各层分工</a><a href="#routes">五类产物</a><a href="#skill">Skill 的作用</a><a href="#mv">MV 如何生成</a><a href="#staging">人物与场景</a><a href="#launch">网页宣传片</a><a href="#control">控制与沉淀</a><a href="#corrections">查漏补缺</a><a href="#projects">十项目定位</a><a href="#evidence">实测与证据</a></nav>
 
   <section class="research-block" id="roles">
     <div class="section-label">01 / WHO DOES WHAT</div><h2>一件作品，先分清创作阶段和运行阶段。</h2>
@@ -37,7 +45,7 @@
       <tr><td>图片 MV</td><td>生成或导入静态场景；程序做镜头平移、缩放、转场和音乐剪辑。人物的真实表演尚未因此产生。</td><td>氛围、故事意象、低成本整曲版。<a href="production.html#mv-v2">我们的图片 MV</a></td></tr>
       <tr><td>代码动画视频</td><td>模型或作者写 HTML / SVG / Canvas / p5 / WebGL 场景。位置、姿态、形状、材质和镜头随时间改变，再逐帧编码。</td><td>动态字体、手绘故事、信息图、品牌与机制演示。<a href="launch-architecture.html#real-production">六幕真实制作</a></td></tr>
       <tr><td>生成式 / 混合 MV</td><td>图像模型制作参考；视频模型生成短镜头的动作与表演；程序将镜头、图形、背景和歌曲剪辑或合成。</td><td>人物演唱与较复杂的自然动作。<a href="production.html#h3-composite">真实 H3 局部试验</a></td></tr>
-      <tr><td>实时游戏</td><td>已经写好的游戏程序根据输入和状态更新画面、碰撞与声音；每次游玩都可以不同。</td><td>可交互体验。<a href="index.html#experience">本地游戏入口</a></td></tr>
+      <tr><td>实时游戏</td><td>已经写好的游戏程序根据输入和状态更新画面、碰撞与声音；每次游玩都可以不同。</td><td>可交互体验。<a href="effects.html#games">游戏效果与入口</a></td></tr>
       <tr><td>案例资料库</td><td>收集效果、提示词、原帖与技术分类，帮助找参考和研究。实际制作交给其他工具或平台。</td><td>选方向、追溯来源、比较实现。<a href="#projects">两个资料库的区别</a></td></tr>
     </tbody></table></div>
     <p>还可以直接剪辑已有视频或录制真实网页 / 应用操作。它们适合证明产品真实界面；可以与代码动画、生成素材混用。这些路线无需都调用视频生成模型。</p>
@@ -142,7 +150,7 @@ renderAt(t) → 绘制当前帧 → FFmpeg 编码</code></pre>
     <div class="research-videos"><article><span class="state partial">图片 MV · 整曲已有</span><h3>约 127 秒《Still a Light》</h3><video controls preload="none" poster="media/still-a-light-train-v2.png" src="media/still-a-light-generated-v2.mp4" aria-label="本机制作的全曲图片MV"></video><p>统一人物参考生图＋镜头运动、转场与原歌曲；人物表演不覆盖全曲。</p></article><article><span class="state partial">真实视频模型 · 局部已有</span><h3>歌曲 10–15 秒 H3 表演合成</h3><video controls preload="none" poster="media/still-a-light-h3-composite-preview.png" src="media/still-a-light-h3-composite.mp4" aria-label="本机五秒H3演唱与背景合成"></video><p>MiniMax 官方 API 实际返回视频；本地去绿与合成。嘴部变化可见，逐字口型与坐姿接触尚未验收。</p></article><article><span class="state">代码动画 · 已实际制作</span><h3>24 秒六幕能力图谱宣传片</h3><video controls preload="none" poster="media/atlas-real-1.jpg" src="media/atlas-launch-real.mp4" aria-label="本次模型编写代码实际导出的六幕宣传片"></video><p>模型读取真实网页、写分镜与场景；本机 720p / 24fps / 576 帧，完整解码通过，无音轨。复用已有 H3 素材。</p></article><article><span class="state pending">产品化 · 继续建设</span><h3>两个目标分别推进</h3><p>MV：先验收已有表演，再完善接触 / 遮挡、时间与分层场景；按预算补充镜头。网页宣传片：接输入采集、结构化简报、模型后台、组件范围、队列与交付。</p><p>没有因本页加载再次提交付费任务。新生图、视频生成、配音等自动入口属于待接能力。</p></article></div>
     <div class="table-scroll"><table><caption>证据的范围</caption><thead><tr><th>证据</th><th>能支持的结论</th><th>不能单独支持的结论</th></tr></thead><tbody><tr><td>截图 / 接触表</td><td>静态构图、画风与若干帧内容。</td><td>连续动作、声音同步和交互是否正确。</td></tr><tr><td>本地视频 / 动图</td><td>已保存画面的实际动态；有音轨时可听音。</td><td>完整自动生成流程、所有模型调用或可复制成功率。</td></tr><tr><td>源代码 / 任务与编码记录</td><td>该版本的设计、实际参数、文件、技术检查和时间映射。</td><td>所有样片质量、每个音素准确率、完整商业产品已完成。</td></tr></tbody></table></div>
     <details class="source-detail"><summary>展开源码、结果与本次整理依据</summary><div class="source-ref"><a href="technical-source/ours/understanding-evidence.json" target="_blank">本次理解与来源记录</a><a href="technical-source/ours/atlas-overview-content.json" target="_blank">十项目逐项分析</a><a href="technical-source/shipvideo/source-map.json" target="_blank">Shipvideo 固定源码</a><a href="technical-source/makevoid/video.rb.txt" target="_blank">makevoid 视频调用</a><a href="technical-source/makevoid/prompts.md.txt" target="_blank">生成输入与口型限制</a><a href="technical-source/ours/launch-real-evidence.json" target="_blank">六幕成片证据</a><a href="production.html#history" target="_blank" rel="noreferrer">查看本机材料与版本说明 →</a></div><p class="document-meta">研究日期：2026-10-02。Shipvideo 固定提交 53d7c6f752fb；makevoid 固定提交 deb6efd51d08。其他项目以本地快照和已核对源库介绍为依据。没有重新生成原作者样片。</p></details>
-    <div class="source-ref"><a href="index.html#all-projects-map">十项目总览图</a><a href="mv-architecture.html">MV 具体模块与实现状态</a><a href="launch-architecture.html">网页宣传片技术拆解</a><a href="index.html#experience">本地原作体验</a></div>
+    <div class="source-ref"><a href="index.html#all-projects-map">十项目总览图</a><a href="mv-architecture.html">MV 具体模块与实现状态</a><a href="launch-architecture.html">网页宣传片技术拆解</a><a href="effects.html">完整效果展厅</a></div>
   </section>
   <footer><p>阅读顺序：先分清产物和各层作用，再选创作主体与制作路线，最后按实际素材、实现和验收证据判断能力。</p><p>本页只运行本地绘图例子并展示已有媒体。源库入口供主动查阅；模型凭据不进入网页。</p></footer>
 </main>

@@ -8,11 +8,12 @@
     "updated": "2026-10-08",
     "sourceSnapshot": "2026-10-01 / 02",
     "published": "Selected original research text, generated diagrams, selected self-made experiments and redacted technical evidence.",
-    "sourceMedia": "Third-party source media and original games are accessed via explicit source links.",
+    "sourceMedia": "Nine licensed Lemo previews, kinetic text GIF/contact sheet, animated character sheet and two Tidewater screenshots with complete credits; remaining original media and games use explicit source links.",
     "rawPrivateAudioPublished": false,
     "credentialsPublished": false,
     "selectedSongExperiments": "The existing picture MV and five-second performance are selected as representative results for this user-requested study publication. Raw MP3/WAV and other intermediates are excluded.",
-    "newGenerationCalls": 0
+    "newGenerationCalls": 0,
+    "effectRightsRecord": "technical-source/effects/provenance.json"
   },
   "files": [
     {
@@ -31,14 +32,24 @@
       "sha256": "4d241499b1b37419ce0d963716733377848389e93ce8a52fc82edf16b0e74acd"
     },
     {
+      "path": "credits.html",
+      "bytes": 12575,
+      "sha256": "2d5a2b6aaa02832e6af48a5b252baebb560b7053a2a7f0030b02250d5fd957d8"
+    },
+    {
+      "path": "effects.html",
+      "bytes": 19882,
+      "sha256": "7bc1bf1cfa9748af6b3e11cd04957681d84f9f5c60edaf4cc4a9afcf70a94230"
+    },
+    {
       "path": "index.html",
-      "bytes": 21691,
-      "sha256": "0c3a7ced1fca0cfd456d2faeca96f8c444ae33a81e9ffc3c6e3518f99b64ae7c"
+      "bytes": 22518,
+      "sha256": "692f524a5973e198e929ea5eeff5d8b10093e5645eaf0c31d1407e1d79a01c36"
     },
     {
       "path": "launch-architecture.html",
-      "bytes": 25369,
-      "sha256": "d350d5ef1a1eb40239b1644b2235407a0f118c9f995710bc7df15692711341f7"
+      "bytes": 25431,
+      "sha256": "dc6da7d6b666d146aa3d352bd5eb79a291bdab218b8f8e6f89a405c7c2673fff"
     },
     {
       "path": "launch-architecture.js",
@@ -126,6 +137,51 @@
       "sha256": "8cbcc4ffb7b9d2790aa2134442f511f0573d1c4969baa1244cb9de2d0b319f50"
     },
     {
+      "path": "media/cel-anime-80s.jpg",
+      "bytes": 387864,
+      "sha256": "bc3284a139a13a4f5981b3afeb52a3286a239ea8866068f9a0427477e41a3591"
+    },
+    {
+      "path": "media/cel-anime-80s.mp4",
+      "bytes": 10054399,
+      "sha256": "40657a5d85560e26e5768ff3580a21ba03ff5fcfc78b2d9ebbd064b67c002918"
+    },
+    {
+      "path": "media/crayon-book.jpg",
+      "bytes": 760734,
+      "sha256": "031a968a6225e83e6fd12c1840a97e2c1c8325f4d1192f7e8b4f2e475666aa54"
+    },
+    {
+      "path": "media/crayon-book.mp4",
+      "bytes": 12980661,
+      "sha256": "f3cb476defb89550447d4e781b141766050f7c88fc00a9fd0ce39ab2c05d71cc"
+    },
+    {
+      "path": "media/dark-keynote.jpg",
+      "bytes": 218648,
+      "sha256": "372ee1939e62cc7824c57a49ce5752e36042bdcf90fa9193ac646259e826f295"
+    },
+    {
+      "path": "media/dark-keynote.mp4",
+      "bytes": 5355677,
+      "sha256": "1a441812461fe54e10572efde07b28b1e69c90679eb963958a896f9c9b04b9a4"
+    },
+    {
+      "path": "media/emotions.webp",
+      "bytes": 6678428,
+      "sha256": "868a72dc0840e273cc31609c5532fc61909143aa9bc9103ebd2d6fa123184c7b"
+    },
+    {
+      "path": "media/glass-product.jpg",
+      "bytes": 133647,
+      "sha256": "7dc077989680f19f06acaf3c00f94ab4cfa525e639dc5a8fe643887650b4a3f5"
+    },
+    {
+      "path": "media/glass-product.mp4",
+      "bytes": 4732458,
+      "sha256": "4d4d07073e2bc7abcb537afae06fa19562de6f69f67f754df6865b734c308f25"
+    },
+    {
       "path": "media/h3-technical-actor.png",
       "bytes": 632577,
       "sha256": "407bd2d1ff4d2368813bce586fe46839a99731ae0fbdbf76b5fd2a70e4c81351"
@@ -134,6 +190,36 @@
       "path": "media/h3-technical-background.png",
       "bytes": 957452,
       "sha256": "e92d8917b8403b91d38909371993813165c613f449cff8e9fd401ba52e750a49"
+    },
+    {
+      "path": "media/ink-wash.jpg",
+      "bytes": 316128,
+      "sha256": "aa6d8b2d477b06d67537a60e5fd1468a8f2f175d174daaa98322a87747071e02"
+    },
+    {
+      "path": "media/ink-wash.mp4",
+      "bytes": 6884674,
+      "sha256": "38c2d3681aa7d49a5d2199a319e4934a1b89d182ace9446c3575eccfa606533c"
+    },
+    {
+      "path": "media/iso-infographic.jpg",
+      "bytes": 313197,
+      "sha256": "13ad16df2b297a11fa2199cbdf0b23d6cfcd38129edd8dbfdf45da674ed77ed1"
+    },
+    {
+      "path": "media/iso-infographic.mp4",
+      "bytes": 8050305,
+      "sha256": "657fd06ee331c1d803e61d1b1c1bb16a4f8fdbb33cbb27b4c0acc81ea75a19fb"
+    },
+    {
+      "path": "media/lowpoly-island.jpg",
+      "bytes": 158774,
+      "sha256": "f7164a3d030e87c1a1ad467a9286385e83dc3ffec4c6a8e9241e67a02bc0f3d1"
+    },
+    {
+      "path": "media/lowpoly-island.mp4",
+      "bytes": 6878067,
+      "sha256": "d5f2da94f3d8718801ed1381fe1dd593e2fbc51e53995ada27d5c2bf580b9c5b"
     },
     {
       "path": "media/shipvideo-capability-overview.png",
@@ -231,9 +317,49 @@
       "sha256": "757b8dbd7f37376f24fe3345b6a67ed4ca1faf5d72a5da9f4e100e5c48c8c5c4"
     },
     {
+      "path": "media/swiss-motion.jpg",
+      "bytes": 108603,
+      "sha256": "d7f5a5746b9c7a4cf012e895c6a3fc80f78a41c959a46e20db20165e7d7dbff1"
+    },
+    {
+      "path": "media/swiss-motion.mp4",
+      "bytes": 1803113,
+      "sha256": "09639ce0cc856adceb177bacbe6d380d619fb25576b612402f0fcf1aa9a303ca"
+    },
+    {
+      "path": "media/tidewater-author-beach.jpg",
+      "bytes": 212101,
+      "sha256": "17e051371ace2a45ed1660a07b965787e6a27f0490049efe34a8e99ae2f3d833"
+    },
+    {
+      "path": "media/tidewater-author-island.jpg",
+      "bytes": 245947,
+      "sha256": "85a2ca018d2aa5094b61d86c1c9927511d1a96fcf4804f9dbbe7aeae14ca19bf"
+    },
+    {
+      "path": "media/watercolor.jpg",
+      "bytes": 129523,
+      "sha256": "fa8e3e8e8280b71f0b627765e6c297582f8e341b8a2858feee072cc4946f9c3c"
+    },
+    {
+      "path": "media/watercolor.mp4",
+      "bytes": 14558372,
+      "sha256": "a222efe90cdbc0c2283d531757373f83c2b7dc0811212f4db4c032249884ead2"
+    },
+    {
+      "path": "media/work-reel-sheet.jpg",
+      "bytes": 226491,
+      "sha256": "e21828daaeab949bf548ff4a4f8549f96e592e4ebe651e596d213a429d8d56f2"
+    },
+    {
+      "path": "media/work-reel.gif",
+      "bytes": 2031064,
+      "sha256": "f01d4c13c8d83e09589acbea75d94f013a9863179deea892f607d77fcb4eb16a"
+    },
+    {
       "path": "mv-architecture.html",
-      "bytes": 44509,
-      "sha256": "c0c8e758ec2e8b7591879fc4ab2141701cf4d53e45478c3c40baf135dc1d1efb"
+      "bytes": 44571,
+      "sha256": "60c59bab77f6591d630b0c8cb0757d93aea92a766ec1e0901ae0d6e5162361c5"
     },
     {
       "path": "overview.css",
@@ -242,13 +368,13 @@
     },
     {
       "path": "production.html",
-      "bytes": 4994,
-      "sha256": "491dd56c0f37a68775482b8b20535b6f227025c2ed9a5d4e769606a44258de33"
+      "bytes": 5056,
+      "sha256": "2b5fada9da3b458a44f3927915c41f934ac7a5157b6d9f6d16cbbe54165d58e0"
     },
     {
       "path": "production/launch.html",
-      "bytes": 1347,
-      "sha256": "78cffbcd3d2f22b55cf6bd7180dfaf7ea7a3d288c4025606943e3e7e188a60ce"
+      "bytes": 1412,
+      "sha256": "47daddf7640dfb9da8347966ebc6e61512af29197c5fcb72e8766e00c3eb3ce3"
     },
     {
       "path": "production/launch.js",
@@ -267,13 +393,13 @@
     },
     {
       "path": "research.html",
-      "bytes": 11618,
-      "sha256": "920b80a5b7e3313c108848592585373bd839515086036ab901b04f6cbb9306a8"
+      "bytes": 11680,
+      "sha256": "31695761cc2cfd79a8e5c670f24dedc46029dbc44db08ebd067694f43ff0836c"
     },
     {
       "path": "skill-adaptation.html",
-      "bytes": 4129,
-      "sha256": "ed1f66a8d566513df939a13caa162e4d32bde964561a3d676f3ba92fedd079db"
+      "bytes": 4191,
+      "sha256": "2641c4c3766a182c5db4bc188cde0cfe1b9c327c8ca65aea734f1eea6d2a4a1a"
     },
     {
       "path": "style.css",
@@ -282,13 +408,118 @@
     },
     {
       "path": "summary.css",
-      "bytes": 1495,
-      "sha256": "0392bf5c538141721197c1d2ade198be459a8b8969376e0c39024832678461d0"
+      "bytes": 1612,
+      "sha256": "fe1e04415b9c0b42d24a2608b3e5fab6b2c99b75f82f9d2955b30db31ac77102"
     },
     {
       "path": "summary.html",
-      "bytes": 21691,
-      "sha256": "0c3a7ced1fca0cfd456d2faeca96f8c444ae33a81e9ffc3c6e3518f99b64ae7c"
+      "bytes": 22518,
+      "sha256": "692f524a5973e198e929ea5eeff5d8b10093e5645eaf0c31d1407e1d79a01c36"
+    },
+    {
+      "path": "technical-source/effects/ATTRIBUTION.md",
+      "bytes": 9645,
+      "sha256": "15d7bfbea3bb6766be68ea379cd402f30201c2e5c4e415fc4bfdafaf9a0e3158"
+    },
+    {
+      "path": "technical-source/effects/ClaudeAnimationBase-MIT-LICENSE.txt",
+      "bytes": 1068,
+      "sha256": "7d25ae95b305b884c08ce898e53b58d2e180ff0119e5d203d8b4ae30420f3b33"
+    },
+    {
+      "path": "technical-source/effects/PUBLIC-ATTRIBUTION.md",
+      "bytes": 7741,
+      "sha256": "e4aa1fb155941a83cc4d4187d2b4f41e3e348187bea64dff80fcf78623393dd3"
+    },
+    {
+      "path": "technical-source/effects/lemo-MIT-LICENSE.txt",
+      "bytes": 1253,
+      "sha256": "f6d14d5ea5f60387eff5e7916f490e9d743986be48138d9ce187d69cbe536756"
+    },
+    {
+      "path": "technical-source/effects/lemo-cel-anime-80s-CREDITS.txt",
+      "bytes": 1105,
+      "sha256": "19c1a30063da3a0916ade63976fade3c1fe97c2ad83fae11b5364339236841bc"
+    },
+    {
+      "path": "technical-source/effects/lemo-crayon-book-CREDITS.txt",
+      "bytes": 1061,
+      "sha256": "da4d202ec0a1655bbbfde170092c494614d20a2cafdd4e19cf1340a1b790b446"
+    },
+    {
+      "path": "technical-source/effects/lemo-dark-keynote-CREDITS.txt",
+      "bytes": 922,
+      "sha256": "0c28931a2414b40a65f1794733d2342e0f59e4ae1183fc090aa11125bb1fc456"
+    },
+    {
+      "path": "technical-source/effects/lemo-dark-keynote-music-CREDITS.txt",
+      "bytes": 537,
+      "sha256": "e42598da7fe8d1d069215570c07148b028f1d9507e916b360c46473845545806"
+    },
+    {
+      "path": "technical-source/effects/lemo-glass-product-CREDITS.txt",
+      "bytes": 1057,
+      "sha256": "54a9c3607be3c5db52cbf5b5a4c180bc440275ad43ad9244fb024319a50a441b"
+    },
+    {
+      "path": "technical-source/effects/lemo-ink-wash-CREDITS.txt",
+      "bytes": 1399,
+      "sha256": "ec7bbc6fa7570a3cf817f5094517d26159cefbecc0046c7ff62923b16db4bfcf"
+    },
+    {
+      "path": "technical-source/effects/lemo-iso-infographic-CREDITS.txt",
+      "bytes": 959,
+      "sha256": "a82eee2c6b3bd6470bf13879ae95a243c26b8049168eec472551c2027325644f"
+    },
+    {
+      "path": "technical-source/effects/lemo-lowpoly-island-CREDITS.txt",
+      "bytes": 773,
+      "sha256": "54cae183cf7a320a60c5eedb79199b9e58fddc6edf0be68102cfea3c2f94a171"
+    },
+    {
+      "path": "technical-source/effects/lemo-lowpoly-island-music-CREDITS.txt",
+      "bytes": 1227,
+      "sha256": "aa965c985ea0b1931b9e781fde329bbd16e640292da140da88e69a4a6a54e6e1"
+    },
+    {
+      "path": "technical-source/effects/lemo-swiss-motion-CREDITS.txt",
+      "bytes": 1092,
+      "sha256": "129d4de51e31753c890d6452f0429676432c5b6a47f2c6061de27bf279d55dc5"
+    },
+    {
+      "path": "technical-source/effects/lemo-watercolor-CREDITS.txt",
+      "bytes": 2421,
+      "sha256": "f6853a6be52e259299d58e0d99f4c3f2aadb574ad7aed6ecb634383b3323504a"
+    },
+    {
+      "path": "technical-source/effects/opus-template-JohnHeibel-MIT-LICENSE.txt",
+      "bytes": 1068,
+      "sha256": "7d25ae95b305b884c08ce898e53b58d2e180ff0119e5d203d8b4ae30420f3b33"
+    },
+    {
+      "path": "technical-source/effects/opus-video-skills-MIT-LICENSE.txt",
+      "bytes": 1265,
+      "sha256": "ea30fc6f274c0c2b325db2d5b4bc196b51292cf85215b4da67c5fb0b1b0d89fa"
+    },
+    {
+      "path": "technical-source/effects/painted-animation-README.md.txt",
+      "bytes": 5773,
+      "sha256": "8fbe497fde2435425034833129488bc13c22f8939fd224aa1cdc8f1432c88468"
+    },
+    {
+      "path": "technical-source/effects/provenance.json",
+      "bytes": 39043,
+      "sha256": "427fe80905babc8141eb950405ae9ffc85482df175b243450c91d32af6705525"
+    },
+    {
+      "path": "technical-source/effects/tidewater-CREDITS.md",
+      "bytes": 5148,
+      "sha256": "49706aaa01bc73b678bed06aaa456e01924299e6ee109a5cdccd2e6a07fe5fcd"
+    },
+    {
+      "path": "technical-source/effects/tidewater-MIT-LICENSE.txt",
+      "bytes": 1083,
+      "sha256": "413204504456b6b29e99d565629023e9aeee5916907e41fe8ffe8549219348ec"
     },
     {
       "path": "technical-source/makevoid/LICENSE.txt",
@@ -457,8 +688,8 @@
     },
     {
       "path": "technical-source/ours/publication-scope.json",
-      "bytes": 621,
-      "sha256": "1b419a6fb9a3603a617d7d76f1631129af40a2da6d7fb81f95e18cb717ea565c"
+      "bytes": 806,
+      "sha256": "97690f28005de5ecf4db8cc600d4ba813bf83dade6fc240fbbae7fec1922e138"
     },
     {
       "path": "technical-source/ours/render-launch-real.cjs.txt",
@@ -497,8 +728,8 @@
     },
     {
       "path": "understanding.html",
-      "bytes": 30856,
-      "sha256": "c4411507bd0ec3eeff99224a4d8dcec402ee1e18baea15dbbbf9e440d3786286"
+      "bytes": 32926,
+      "sha256": "9997c85c2a6ec48f0aeb4706457afc39a720b4124f3f18a16517d68e1c2f183c"
     },
     {
       "path": "understanding.js",

@@ -14,6 +14,7 @@ import re
 import shutil
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
+from effects_showroom import ORIGINAL_MEDIA, EFFECT_ANCHORS, build_effects_html, build_credits_html
 
 ROOT = Path(__file__).resolve().parents[2]
 WEB = ROOT / 'web'
@@ -47,7 +48,7 @@ def e(value):
 
 
 def chrome(title, body):
-    return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="十个源项目的能力、范围、原理与场景；歌曲 MV 和网页宣传片的真实探索、价值及边界。"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; media-src 'self'; connect-src 'self'; frame-src 'self'"><title>{e(title)}</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="research.css"><link rel="stylesheet" href="architecture.css"><link rel="stylesheet" href="overview.css"><link rel="stylesheet" href="summary.css"></head><body><header class="atlas-header"><a class="brand" href="index.html">◈ VISUAL ATLAS <span>研究集 / 006</span></a><nav class="atlas-header-nav"><a href="{BASE_URL.rsplit('projects/',1)[0]}">研究集首页 ↗</a><a href="understanding.html">完整理解</a><a href="index.html#library">十个源项目</a></nav></header><main>{body}</main></body></html>'''
+    return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="十个源项目的能力、范围、原理与场景；原作风格短片、角色动画与歌曲 MV、网页宣传片的实际探索。"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; media-src 'self'; connect-src 'self'; frame-src 'self'"><title>{e(title)}</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="research.css"><link rel="stylesheet" href="architecture.css"><link rel="stylesheet" href="overview.css"><link rel="stylesheet" href="summary.css"></head><body><header class="atlas-header"><a class="brand" href="index.html">◈ VISUAL ATLAS <span>研究集 / 006</span></a><nav class="atlas-header-nav"><a href="{BASE_URL.rsplit('projects/',1)[0]}">研究集首页 ↗</a><a href="effects.html">完整效果展厅</a><a href="understanding.html">完整理解</a><a href="index.html#library">十个源项目</a></nav></header><main>{body}</main></body></html>'''
 
 
 def film(title, src, poster, detail, ident=''):
@@ -70,6 +71,14 @@ def summary_html():
 <section class="research-block" id="meaning"><div class="section-label">VALUE / 探索的意义是什么</div><h2>从一次效果，沉淀可修改、可追溯、可复用的制作能力。</h2><div class="roadmap"><article><em>判断价值</em><h3>能选对制作路线</h3><p>区分代码、生成素材、游戏和索引；按场景选工具，明确设备、模型和费用条件，避免把成品误当生成服务。</p></article><article><em>技术价值</em><h3>能保留执行底座</h3><p>事实快照、素材与角色版本、统一时间、动效组件、提供商适配、任务恢复、渲染与合成可以跨创作复用。</p></article><article><em>产品价值</em><h3>能控制过程并验收</h3><p>产品规定内容、结构、可用素材、预算与组件。文件成功、事实准确、口型自然和美感分别检查；商业效果仍需实际业务验证。</p></article></div><div class="architecture-note"><strong>下一步：</strong>MV 先验收已有表演，再补齐场景关系与更多镜头；宣传片接结构化简报、后台任务和可用组件。自由代码表达更开放，固定组件生产更稳定，两种方式可以按任务组合。</div></section>
 <section class="research-block" id="deep-research"><span id="understanding"></span><div class="section-label">READ MORE / 理解与技术细节</div><h2>沿着这个顺序继续阅读。</h2><div class="technical-grid"><article class="technical-card"><h3>全部理解与十二项修正</h3><p>模型、Skill、程序、产物、控制与证据分别处于哪一层。</p><a class="research-link" href="understanding.html">打开完整理解</a></article><article class="technical-card"><h3>歌曲 → MV 底层</h3><p>口型、角色与场景、时间映射、绿幕、质量与实际实现状态。</p><a class="research-link" href="mv-architecture.html">查看 MV 技术</a></article><article class="technical-card"><h3>网页 → 宣传短片底层</h3><p>读内容、模型分镜与代码、时钟、渲染、检查和自动产品缺口。</p><a class="research-link" href="launch-architecture.html">查看宣传片技术</a></article><article class="technical-card"><h3>方法与发布记录</h3><p>固定源码、实际文件和制作证据；源能力、本机结果与设计建议分别标注。</p><div class="source-ref"><a href="technical-source/ours/research-summary.json">研究摘要与来源</a><a href="technical-source/ours/publication-scope.json">公开文件范围</a></div></article></div></section>
 <section class="research-block" id="publication-scope"><h2>公开研究范围</h2><p>本站发布我们整理的说明、既有引导图、选定的自制实验和脱敏技术证据。原作者媒体和原作游戏提供来源入口；本机原始音频、服务配置、凭据与未选中间文件保留在本机。页面播放已有文件，不提交付费生成任务。</p></section><footer><p>源库研究以当时的固定版本和源码为依据；提供商当前模型、接口与费用需要使用前另行核对。研究完成不代表通用自动产品完成。</p></footer>'''
+    body = body.replace('<a href="#experience">实际结果 ↓</a>', '<a class="research-link" href="effects.html">完整效果展厅 →</a><a href="#experience">自制结果 ↓</a>')
+    body = body.replace('原作样片、动图、游戏和资料索引在源项目中查阅；本机研究副本与中间版本继续保留。我们没有用别的项目或教学画面替代原作。', '九支原作风格短片、动态字体 GIF、角色表情动画与游戏截图已接入效果展厅。游戏与其他原作通过明确入口查阅；本机研究副本继续保留。')
+    body = body.replace('<a href="research.html">原作入口与原理研究 →</a>', '<a href="effects.html">完整效果展厅 →</a><a href="research.html">原作入口与原理研究 →</a>')
+    body = body.replace('本站发布我们整理的说明、既有引导图、选定的自制实验和脱敏技术证据。原作者媒体和原作游戏提供来源入口；', '本站发布我们整理的说明、既有引导图、选定自制实验，以及附完整署名的已核对原作媒体。其余原作与游戏提供来源入口；')
+    body = body.replace('原作者作品请主动打开来源查看。', '原作者已核对样片与动图请进入效果展厅，其余原作主动打开来源查看。')
+    for item in DATA['projects']:
+        source=f'<a href="https://github.com/{e(item["repo"])}" target="_blank" rel="noreferrer">查看源库 ↗</a>'
+        body=body.replace(source, f'<a href="effects.html#{EFFECT_ANCHORS[item["id"]]}">查看对应效果 →</a>'+source)
     return chrome('视觉创作能力研究 · 源库、探索与价值', body)
 
 
@@ -142,7 +151,8 @@ def public_page(text, relative, selected):
     stylesheet = posixpath.relpath('summary.css', str(Path(relative).parent))
     index = posixpath.relpath('index.html', str(Path(relative).parent))
     text = text.replace('</head>', f'<link rel="stylesheet" href="{stylesheet}"></head>',1)
-    note=f'<p class="publication-banner">公开研究版：保留说明和选定自制结果；原作者媒体通过来源入口查阅。本机研究副本、历史中间材料与公开范围分别记录。<a href="{index}#publication-scope">查看范围 →</a></p>'
+    effects=posixpath.relpath('effects.html', str(Path(relative).parent))
+    note=f'<p class="publication-banner">研究覆盖十个项目；歌曲 MV 与网页宣传片做了深入实作。已核对的原作短片、角色动画与自制结果汇总在 <a href="{effects}">完整效果展厅</a>，其他原作另有来源入口。<a href="{index}#publication-scope">查看公开范围 →</a></p>'
     return text.replace('<main>', '<main>'+note, 1)
 
 
@@ -163,18 +173,24 @@ def prepare():
               'production/launch.html','production/launch.js','production/studio.css'}
     videos = {'atlas-launch-local.mp4','atlas-launch-real.mp4','still-a-light-generated-v2.mp4','still-a-light-h3-composite.mp4','still-a-light-h3-pilot-raw.mp4'}
     for p in (WEB/'media').iterdir():
-        if p.name in videos or (p.suffix in {'.png','.jpg'} and (p.name.startswith(('atlas-','still-a-light-','h3-technical-','shipvideo-capability-overview')))):
+        if p.name in videos or p.name in ORIGINAL_MEDIA or (p.suffix in {'.png','.jpg'} and (p.name.startswith(('atlas-','still-a-light-','h3-technical-','shipvideo-capability-overview')))):
             chosen.add(p.relative_to(WEB).as_posix())
     for p in (WEB/'technical-source').rglob('*'):
         if not p.is_file():continue
         rel=p.relative_to(WEB).as_posix()
-        if rel.startswith('technical-source/makevoid/') or rel=='technical-source/shipvideo/source-map.json':chosen.add(rel)
+        if rel.startswith(('technical-source/makevoid/','technical-source/effects/')) or rel=='technical-source/shipvideo/source-map.json':chosen.add(rel)
         elif rel.startswith('technical-source/ours/') and p.suffix in {'.json','.txt'} and p.name!='minimax-pilot.py.txt':chosen.add(rel)
     # The new summary is also available next to the existing local showroom.
     (WEB/'summary.html').write_text(summary_html(),encoding='utf-8')
+    provenance=json.loads((WEB/'technical-source/effects/provenance.json').read_text(encoding='utf-8'))
+    (WEB/'effects.html').write_text(build_effects_html(chrome,DATA['projects']),encoding='utf-8')
+    (WEB/'credits.html').write_text(build_credits_html(chrome,provenance),encoding='utf-8')
     scope={'updated':DATE,'sourceSnapshot':'2026-10-01 / 02','published':'Selected original research text, generated diagrams, selected self-made experiments and redacted technical evidence.','sourceMedia':'Third-party source media and original games are accessed via explicit source links.','rawPrivateAudioPublished':False,'credentialsPublished':False,'selectedSongExperiments':'The existing picture MV and five-second performance are selected as representative results for this user-requested study publication. Raw MP3/WAV and other intermediates are excluded.','newGenerationCalls':0}
+    scope['sourceMedia']='Nine licensed Lemo previews, kinetic text GIF/contact sheet, animated character sheet and two Tidewater screenshots with complete credits; remaining original media and games use explicit source links.'
+    scope['effectRightsRecord']='technical-source/effects/provenance.json'
     summary={'updated':DATE,'sourcePost':DATA['sourcePost'],'goal':'Understand the ten project links, inspect actual effects, study their mechanisms and test song-to-MV and webpage-to-promotional-video routes.','projects':[dict(p,useCases=s) for p,s in zip(DATA['projects'],SCENARIOS)],'explorations':EXPLORATIONS,'meaning':'Separate creative model ability from reusable execution, controls and evidence; preserve traceable facts, assets, time contracts, components, provider adapters, rendering and review.','boundaries':['Whole-song generated singing not completed','Phoneme-accurate lip-sync not accepted','Train contact and occlusion not implemented','Generic arbitrary-URL automatic video product not connected']}
     generated={'index.html':summary_html(),'summary.html':summary_html(),'production.html':production_html(),
+               'effects.html':build_effects_html(chrome,DATA['projects']), 'credits.html':build_credits_html(chrome,provenance),
                'technical-source/ours/publication-scope.json':json.dumps(scope,ensure_ascii=False,indent=2)+'\n',
                'technical-source/ours/research-summary.json':json.dumps(scrub_json(summary),ensure_ascii=False,indent=2)+'\n'}
     selected=chosen | set(generated) | {'assets/'+GUIDE}
@@ -182,7 +198,8 @@ def prepare():
         source=WEB/relative;target=OUTPUT/relative
         if not source.is_file():raise ValueError('Missing chosen source: '+relative)
         target.parent.mkdir(parents=True,exist_ok=True)
-        if source.suffix=='.html':target.write_text(public_page(source.read_text(encoding='utf-8'),relative,selected),encoding='utf-8')
+        if relative.startswith('technical-source/effects/'):shutil.copy2(source,target)
+        elif source.suffix=='.html':target.write_text(public_page(source.read_text(encoding='utf-8'),relative,selected),encoding='utf-8')
         elif source.suffix=='.json':target.write_text(json.dumps(scrub_json(json.loads(source.read_text(encoding='utf-8'))),ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
         elif source.suffix=='.txt':
             text=source.read_text(encoding='utf-8')
@@ -198,7 +215,7 @@ def prepare():
     # Keep manifest bytes identical across Windows preparation and Linux CI.
     for relative in selected:
         p=OUTPUT/relative
-        if p.suffix in {'.html','.css','.js','.mjs','.json','.txt','.md','.svg'}:
+        if p.suffix in {'.html','.css','.js','.mjs','.json','.txt','.md','.svg'} and (not relative.startswith('technical-source/effects/') or p.name in {'ATTRIBUTION.md','PUBLIC-ATTRIBUTION.md','provenance.json'}):
             normalized='\n'.join(line.rstrip() for line in p.read_text(encoding='utf-8').splitlines()).rstrip('\n')+'\n'
             p.write_bytes(normalized.encode('utf-8'))
     files=[]

@@ -47,6 +47,8 @@ GitHub Actions 的构建、47 项检查与部署成功；45 个在线资源返�
 
 发布已验证：[研究摘要入口](https://yydshly.github.io/0930_codex_project/projects/006-ai-visual-atlas/)。98 个公开文件均返回 HTTP 200，大小及 SHA-256 与清单一致；总首页、001–006 入口和发布清单共 8 个入口检查通过。Pages 构建及部署成功，记录见 [006 部署验证](../projects/006-ai-visual-atlas/notes/deployment-checks.json)。
 
+2026-10-08 效果展示补全：新增 [完整效果展厅](https://yydshly.github.io/0930_codex_project/projects/006-ai-visual-atlas/effects.html)与署名页，理解页首屏显示十项目研究、两项深入实作、三项自制代表结果。新增九支已核对许可的 Lemo 原作视频、动态字体 GIF/接触表、角色动画 WebP、两张原作者游戏截图；其他游戏和原作提供明确入口。公开快照增至 144 项，保留完整许可证与逐片 CREDITS，无新增生成调用。
+
 ## 自动发布流程
 
 工作流为 `.github/workflows/pages.yml`，推送 `main` 或手动运行时：
