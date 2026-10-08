@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-08",
+  "timezone": "Asia/Shanghai",
+  "result": "verified",
+  "public_url": "https://yydshly.github.io/0930_codex_project/projects/012-black-hole-lab/",
+  "full_effect_url": "https://yydshly.github.io/0930_codex_project/projects/012-black-hole-lab/?view=effect#experiment",
+  "understanding_url": "https://yydshly.github.io/0930_codex_project/projects/012-black-hole-lab/#understanding",
+  "clock_experiments_url": "https://yydshly.github.io/0930_codex_project/projects/012-black-hole-lab/time-and-light.html",
+  "research_url": "https://yydshly.github.io/0930_codex_project/projects/012-black-hole-lab/research.html",
+  "content_commits": [
+    "7cce2754b51392b061ef8a2a8d6424561991e7e0",
+    "8f0c934f4cd3df65c98634faedc020a0244cd78a"
+  ],
+  "verified_pages_run": "https://github.com/yydshly/0930_codex_project/actions/runs/37774343152",
+  "pages_result": "success",
+  "files": 44,
+  "public_bytes": 28582448,
+  "guide": {
+    "unchanged": true,
+    "dimensions": [
+      1800,
+      2240
+    ],
+    "sha256": "73a859b1ad6a710c4aa19706ba1828849b49169a368a57ff65cf6d4779908c54"
+  },
+  "checks": {
+    "online": 43,
+    "local_publication": 43,
+    "existing_browser": 50,
+    "numeric_model": 31,
+    "python_local": {
+      "run": 51,
+      "skipped": 5,
+      "result": "passed"
+    }
+  },
+  "audio": {
+    "provider": "MiniMax",
+    "chapters": 10,
+    "segments": 30,
+    "duration_seconds": 782.82,
+    "all_files_checked": true,
+    "native_playback_and_merged_metadata": true,
+    "new_generation_requests": 0
+  },
+  "scope": [
+    "Complete three-page static publication with all referenced runtime resources.",
+    "Original guide and audio retained; previous discussion experiments included.",
+    "No complete stellar-collapse, interior, Kerr or human-trip simulation.",
+    "Browser checks use software rendering and mobile viewport simulation; no hardware performance or human voice-quality claim."
+  ],
+  "evidence": [
+    "publication-online-checks.json",
+    "publication-local-checks.json",
+    "time-experiments-checks.json",
+    "model-validation.json",
+    "validation.json"
+  ]
+}

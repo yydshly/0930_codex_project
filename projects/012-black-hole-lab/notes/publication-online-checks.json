@@ -1,0 +1,645 @@
+{
+  "date": "2026-10-08",
+  "timezone": "Asia/Shanghai",
+  "url": "https://yydshly.github.io/0930_codex_project/projects/012-black-hole-lab/",
+  "environment": "Chromium/SwiftShader; mobile viewport simulation",
+  "checks": [
+    {
+      "name": "Public manifest available",
+      "passed": true,
+      "details": {
+        "status": 200
+      }
+    },
+    {
+      "name": "Complete public runtime and all narration registered",
+      "passed": true,
+      "details": {
+        "count": 44
+      }
+    },
+    {
+      "name": "Every public file matches bytes, SHA-256 and reviewed source",
+      "passed": true,
+      "details": {
+        "files": 44
+      }
+    },
+    {
+      "name": "Original guide retained byte for byte",
+      "passed": true
+    },
+    {
+      "name": "Entry opens quietly with six prominent routes",
+      "passed": true,
+      "details": {
+        "state": {
+          "stage": 0,
+          "highest": 0,
+          "mode": "science",
+          "comparing": false,
+          "autoExplaining": false,
+          "narrationScope": "full",
+          "playing": false,
+          "elapsed": 0,
+          "cue": 0,
+          "cueTime": 0,
+          "progress": 0,
+          "completed": false,
+          "totalDuration": 782.82,
+          "layers": {
+            "sky": 1,
+            "horizon": 1,
+            "texture": 1,
+            "disk": 1,
+            "lensing": 1,
+            "doppler": 1
+          },
+          "audio": {
+            "status": "ready",
+            "src": "audio/narration/00-00.mp3",
+            "currentTime": 0,
+            "duration": 25.848,
+            "enabled": true,
+            "error": "",
+            "token": 1
+          }
+        },
+        "paused": true,
+        "cards": 6
+      }
+    },
+    {
+      "name": "Main entrance readable at 1280px",
+      "passed": true,
+      "details": {
+        "width": 1280,
+        "scroll": 1280,
+        "guide": 1800,
+        "nav": true
+      }
+    },
+    {
+      "name": "Main entrance readable at 390px",
+      "passed": true,
+      "details": {
+        "width": 390,
+        "scroll": 390,
+        "guide": 1800,
+        "nav": true
+      }
+    },
+    {
+      "name": "Main entrance readable at 320px",
+      "passed": true,
+      "details": {
+        "width": 320,
+        "scroll": 320,
+        "guide": 1800,
+        "nav": true
+      }
+    },
+    {
+      "name": "Complete-effect entry produces actual rendered pixels and free controls",
+      "passed": true,
+      "details": {
+        "mode": "free",
+        "falseColor": true,
+        "bright": 82347,
+        "pixels": 307928,
+        "audioPaused": true
+      }
+    },
+    {
+      "name": "Native effect export is a real PNG",
+      "passed": true
+    },
+    {
+      "name": "Published full-effect deep link opens free experiment",
+      "passed": true
+    },
+    {
+      "name": "Course entry really starts generated Chinese audio from chapter zero",
+      "passed": true
+    },
+    {
+      "name": "Narration pause holds playback position",
+      "passed": true
+    },
+    {
+      "name": "Final chapter audio is available and playable",
+      "passed": true
+    },
+    {
+      "name": "Complete-course MP3 decodes to about 13 minutes",
+      "passed": true,
+      "details": {
+        "duration": 782.82
+      }
+    },
+    {
+      "name": "All local fragments exist in index.html",
+      "passed": true,
+      "details": {
+        "duplicates": [],
+        "missing": []
+      }
+    },
+    {
+      "name": "All local fragments exist in research.html",
+      "passed": true,
+      "details": {
+        "duplicates": [],
+        "missing": []
+      }
+    },
+    {
+      "name": "All local fragments exist in time-and-light.html",
+      "passed": true,
+      "details": {
+        "duplicates": [],
+        "missing": []
+      }
+    },
+    {
+      "name": "Complete archive readable at 1280px",
+      "passed": true,
+      "details": {
+        "scroll": 1280,
+        "sections": true
+      }
+    },
+    {
+      "name": "Complete archive readable at 390px",
+      "passed": true,
+      "details": {
+        "scroll": 390,
+        "sections": true
+      }
+    },
+    {
+      "name": "Complete archive readable at 320px",
+      "passed": true,
+      "details": {
+        "scroll": 320,
+        "sections": true
+      }
+    },
+    {
+      "name": "Interactive static clocks accumulate 60.0s and 52.2s at 1280px",
+      "passed": true,
+      "details": {
+        "width": 1280
+      }
+    },
+    {
+      "name": "Horizon light diagram advances to its final state at 1280px",
+      "passed": true
+    },
+    {
+      "name": "Motion light clock completes with 1.67 versus 1.00 ticks at 1280px",
+      "passed": true,
+      "details": {
+        "still": "累计 1.67 格",
+        "moving": "累计 1.00 格"
+      }
+    },
+    {
+      "name": "All discussion experiments fit page and SVG at 1280px",
+      "passed": true,
+      "details": {
+        "scroll": 1280,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "Interactive static clocks accumulate 60.0s and 52.2s at 390px",
+      "passed": true,
+      "details": {
+        "width": 390
+      }
+    },
+    {
+      "name": "Horizon light diagram advances to its final state at 390px",
+      "passed": true
+    },
+    {
+      "name": "Motion light clock completes with 1.67 versus 1.00 ticks at 390px",
+      "passed": true,
+      "details": {
+        "still": "累计 1.67 格",
+        "moving": "累计 1.00 格"
+      }
+    },
+    {
+      "name": "All discussion experiments fit page and SVG at 390px",
+      "passed": true,
+      "details": {
+        "scroll": 390,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "Interactive static clocks accumulate 60.0s and 52.2s at 320px",
+      "passed": true,
+      "details": {
+        "width": 320
+      }
+    },
+    {
+      "name": "Horizon light diagram advances to its final state at 320px",
+      "passed": true
+    },
+    {
+      "name": "Motion light clock completes with 1.67 versus 1.00 ticks at 320px",
+      "passed": true,
+      "details": {
+        "still": "累计 1.67 格",
+        "moving": "累计 1.00 格"
+      }
+    },
+    {
+      "name": "All discussion experiments fit page and SVG at 320px",
+      "passed": true,
+      "details": {
+        "scroll": 320,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "Native guide download preserves original PNG",
+      "passed": true
+    },
+    {
+      "name": "Catalog prominently links effect, summary, archive and original guide",
+      "passed": true
+    },
+    {
+      "name": "Existing public entrance preserved: 001-witr",
+      "passed": true,
+      "details": {
+        "status": 200
+      }
+    },
+    {
+      "name": "Existing public entrance preserved: 005-plush-lab",
+      "passed": true,
+      "details": {
+        "status": 200
+      }
+    },
+    {
+      "name": "Existing public entrance preserved: 008-cellmotion",
+      "passed": true,
+      "details": {
+        "status": 200
+      }
+    },
+    {
+      "name": "Existing public entrance preserved: 009-sprite-destruction-lab",
+      "passed": true,
+      "details": {
+        "status": 200
+      }
+    },
+    {
+      "name": "Existing public entrance preserved: 010-dumpling-style-lab",
+      "passed": true,
+      "details": {
+        "status": 200
+      }
+    },
+    {
+      "name": "Existing public entrance preserved: 011-combination-soup-studio",
+      "passed": true,
+      "details": {
+        "status": 200
+      }
+    },
+    {
+      "name": "Existing public entrance preserved: 013-insightface-retrieval",
+      "passed": true,
+      "details": {
+        "status": 200
+      }
+    },
+    {
+      "name": "No page runtime errors",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "files": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 37221,
+      "sha256": "2c50dec2e11ad32f68992a68d7b2c39388e0f9a5f599a8f0d49f9ee1005d3a0c",
+      "passed": true
+    },
+    {
+      "path": "research.html",
+      "status": 200,
+      "bytes": 229023,
+      "sha256": "91d07d96a220cf1bb978ba6948a493bb511bbf38042519745016f4dc01caacb1",
+      "passed": true
+    },
+    {
+      "path": "time-and-light.html",
+      "status": 200,
+      "bytes": 27361,
+      "sha256": "2d17e41cc172f3c2ce9701b54081fa9b0916f7719450706a85d23095ec2dc299",
+      "passed": true
+    },
+    {
+      "path": "styles.css",
+      "status": 200,
+      "bytes": 34129,
+      "sha256": "9cacbeb88ced7e8eb22fe5f4904d4ee8aa072558522fd60e3e5e6b5026576747",
+      "passed": true
+    },
+    {
+      "path": "course.js",
+      "status": 200,
+      "bytes": 26977,
+      "sha256": "c21fb2fb2a3f6055bb8808caef2e56949f5ac7d88f684094d70578cb6e094583",
+      "passed": true
+    },
+    {
+      "path": "app.js",
+      "status": 200,
+      "bytes": 18652,
+      "sha256": "4a698db6437436762e82ffade29f9ae37647809c61cbade1ba0d959afaf161e1",
+      "passed": true
+    },
+    {
+      "path": "model.js",
+      "status": 200,
+      "bytes": 5326,
+      "sha256": "e0395df991058fcb328e2963b126ecdcc962f06011c271679b49b734a42d8c16",
+      "passed": true
+    },
+    {
+      "path": "narration.js",
+      "status": 200,
+      "bytes": 32932,
+      "sha256": "1d27cee523f4e0d210e6f94984ca6fa4725b40d24740b4f60e228194a1ebe982",
+      "passed": true
+    },
+    {
+      "path": "shaders.js",
+      "status": 200,
+      "bytes": 8431,
+      "sha256": "54b0b2699bae11933265f1ac6f02ef7e37117918e60002ed04d0899f804ca128",
+      "passed": true
+    },
+    {
+      "path": "physics.js",
+      "status": 200,
+      "bytes": 16444,
+      "sha256": "bf74bb3f715b0fb3d23973a95201ce8fe0ece06f09596b40129f9733deabd3a5",
+      "passed": true
+    },
+    {
+      "path": "assets/summary-effect.png",
+      "status": 200,
+      "bytes": 284585,
+      "sha256": "4fbc46dd524bcb3f62de9584a4af419a8f16ac17b5e9db8a59bec859ae7b30d8",
+      "passed": true
+    },
+    {
+      "path": "assets/understanding-map.png",
+      "status": 200,
+      "bytes": 2366353,
+      "sha256": "73a859b1ad6a710c4aa19706ba1828849b49169a368a57ff65cf6d4779908c54",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/00-00.mp3",
+      "status": 200,
+      "bytes": 415284,
+      "sha256": "4b245502596c2b00dcd9e4664f4f4657153d64c844afde47cdb37b9097f48656",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/00-01.mp3",
+      "status": 200,
+      "bytes": 385908,
+      "sha256": "8f72825ba39b1f7c1255f163fc9e2cb629bdd8075a6dfefd75c5182ff4cd9a19",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/00-02.mp3",
+      "status": 200,
+      "bytes": 438324,
+      "sha256": "387e6ecfc6e432c018822c581e3d1eb54af4543c266a3f033e489f0425052cbf",
+      "passed": true
+    },
+    {
+      "path": "assets/understanding-map.svg",
+      "status": 200,
+      "bytes": 392673,
+      "sha256": "c2e6527c19e4bee2e24560ddf22d751e99f043b008a3c8d13f2ff754d33006e7",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/01-02.mp3",
+      "status": 200,
+      "bytes": 448116,
+      "sha256": "b5532cbcab23f533b506ce8e70264d3ee3cdb73b5b7dbd2dff298a0fa5dbbee2",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/01-00.mp3",
+      "status": 200,
+      "bytes": 359412,
+      "sha256": "85a90ffff0c129d68774316f48fe3a042c6f0dd0757bc034e7136188648a19f1",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/01-01.mp3",
+      "status": 200,
+      "bytes": 391668,
+      "sha256": "6288a02d9873f642690e9df8bd35e2669eb2f99cee3870e4dd65e48be6f27e6a",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/02-00.mp3",
+      "status": 200,
+      "bytes": 428532,
+      "sha256": "e1e32f81e326da3c54f99679cb39e8b11f62cb48ad7cb0c9243be97d7943abb2",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/02-02.mp3",
+      "status": 200,
+      "bytes": 461364,
+      "sha256": "0aea62e7bad7951442fe7e7a15b99f529bce22d14cb3a7620450d94e8935f004",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/03-01.mp3",
+      "status": 200,
+      "bytes": 421044,
+      "sha256": "9b32c49511f84e1921af72b7362fdc325815a9c9293ac8c99a4793300f010594",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/02-01.mp3",
+      "status": 200,
+      "bytes": 393396,
+      "sha256": "c5a6694c0187092f0c66d10c4d8a6645fd0ebbcb87d0f3b587b949be8d97abbf",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/03-00.mp3",
+      "status": 200,
+      "bytes": 412980,
+      "sha256": "04b8c8f41b9175a88e856521c500edd6c6325e5f221a9fc4c8ec9282b9190af6",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/04-02.mp3",
+      "status": 200,
+      "bytes": 412404,
+      "sha256": "abd99cc960333802fd250dc42142d1fd22341fd14db59b9a6e5d032188d3d6c0",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/04-01.mp3",
+      "status": 200,
+      "bytes": 357684,
+      "sha256": "6121538a3b69cebc888aaa0b60cebefb4bbfa2cfc5d3c1c8c2a6a6da57739698",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/04-00.mp3",
+      "status": 200,
+      "bytes": 395124,
+      "sha256": "14dd184e37c3152083b85a5a4fbad7de50d813b090eb0df873e27b51b960b34a",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/03-02.mp3",
+      "status": 200,
+      "bytes": 419316,
+      "sha256": "0f09a4d5e2d01d4637e99c36fd4b18edefab047e913760a018ec0d6f6a933401",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/05-00.mp3",
+      "status": 200,
+      "bytes": 423924,
+      "sha256": "c62ba27704228d2e8b28d7dc19bda84e2b5d460a527c27b27392fa2c7db3cd6d",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/05-02.mp3",
+      "status": 200,
+      "bytes": 420468,
+      "sha256": "74410b4ee844e33190071fec561f296341f79880d8fa610b86b1e7d43ade73aa",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/06-00.mp3",
+      "status": 200,
+      "bytes": 411828,
+      "sha256": "3f2493e8fa4c4ba7fa4857cf9e40af6221b03feb55b38baa261a03ca1463eaa5",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/05-01.mp3",
+      "status": 200,
+      "bytes": 396852,
+      "sha256": "01aff3c02315ce1cf3aa57c1450ae7410a19a92faae447a1cfef2f56f63a430d",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/07-00.mp3",
+      "status": 200,
+      "bytes": 387636,
+      "sha256": "b8f05764a61e23f136fc637c8fa08c0bd20cbff5f69dfcf3e5bc5672b681551b",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/06-01.mp3",
+      "status": 200,
+      "bytes": 438900,
+      "sha256": "5bc33dacda696eb95c1150e61b13e48df166fef7dcd864a26c21672506f807ea",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/07-01.mp3",
+      "status": 200,
+      "bytes": 426804,
+      "sha256": "86e523b3b23ea7239bb7d1be13d65a136b397261d0dac8d01823b5cdd93565cc",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/06-02.mp3",
+      "status": 200,
+      "bytes": 433716,
+      "sha256": "71e86a9cdac0afb33bce491c23555922dc4ae6326e369e33f81b495532f78646",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/08-02.mp3",
+      "status": 200,
+      "bytes": 421044,
+      "sha256": "609ee4f4e5cd28695edcf1b45155760d776fa96b8a69b55af35c860e054fc275",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/08-01.mp3",
+      "status": 200,
+      "bytes": 444660,
+      "sha256": "6b8a65dc9fb6427bee802acb3b9f161cf5db58a2353db6a1481345e3dfbe6274",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/07-02.mp3",
+      "status": 200,
+      "bytes": 444084,
+      "sha256": "c0d9cee507e3116087e123a5016621a8c43067289c98cae4ecf666b54cb5a9d4",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/08-00.mp3",
+      "status": 200,
+      "bytes": 381300,
+      "sha256": "392b566dfb512d6eeabbf52d51565314b283e0d127e61031dfb8b95e7563cc83",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/09-00.mp3",
+      "status": 200,
+      "bytes": 457908,
+      "sha256": "e146a635903b94a51a00ad8627fff4c495def5d6e8717b7a5102a9bc0614d775",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/09-01.mp3",
+      "status": 200,
+      "bytes": 456180,
+      "sha256": "6b5f7f86271c71cd42ca1781b184a660429c9a63c324d5622823f3102d771f6a",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/09-02.mp3",
+      "status": 200,
+      "bytes": 490740,
+      "sha256": "22deb45ffdb290bb741b2da3fb5d30f68c3f28d6ad9f0ad195c74f205a660e5b",
+      "passed": true
+    },
+    {
+      "path": "audio/narration/full-course.mp3",
+      "status": 200,
+      "bytes": 12525741,
+      "sha256": "6c1545ea1060c0db4465b8bcac2d4a794802574f4cefca7a4fd316fd30cc965b",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "result": "passed",
+  "checksPassed": 43
+}

@@ -10,7 +10,7 @@
 
 本地既有 50 项浏览器检查、31 项数值检查与新增完整发布检查通过。检查覆盖实际音频播放、13 分钟 MP3 解码、完整效果直达、PNG 保存、原图下载、全文和锚点、1280 / 390 / 320 px 布局及既有网页入口。软件渲染与手机视口检查不等于实机性能和人工音质评审；外部无自旋模型不求解内部或完整恒星坍缩。
 
-线上核对记录将在正式发布完成后保存于第 012 项 `notes/`，公开清单位于网页的 `publication-manifest.json`。
+正式发布已核对：[完整入口](https://yydshly.github.io/0930_codex_project/projects/012-black-hole-lab/) · [完整效果](https://yydshly.github.io/0930_codex_project/projects/012-black-hole-lab/?view=effect#experiment) · [时空与光钟实验](https://yydshly.github.io/0930_codex_project/projects/012-black-hole-lab/time-and-light.html) · [全文档案](https://yydshly.github.io/0930_codex_project/projects/012-black-hole-lab/research.html)。内容提交 `8f0c934f4cd3df65c98634faedc020a0244cd78a` 的 [Pages 构建与部署](https://github.com/yydshly/0930_codex_project/actions/runs/37774343152)成功。44 个公共文件均 HTTP 200，大小与 SHA-256 符合公开清单，文本按 Git 的 LF 换行核对源文件；图与 MP3 二进制完全一致。43 项公网检查通过，涵盖实际音频播放、完整 MP3 解码、真实黑洞像素与 PNG 保存、原图下载、全部本页锚点、静止时钟与光钟输出、桌面 / 手机布局及既有页面入口。详情见 [公网检查](../projects/012-black-hole-lab/notes/publication-online-checks.json)、[本机检查](../projects/012-black-hole-lab/notes/publication-local-checks.json)、[讨论图实测](../projects/012-black-hole-lab/notes/time-experiments-checks.json)与[正式发布记录](../projects/012-black-hole-lab/notes/deployment-summary.json)。公开清单为网页的 `publication-manifest.json`。
 
 本站采用 GitHub Pages，统一托管各子项目的静态演示。
 
