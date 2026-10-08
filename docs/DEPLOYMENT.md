@@ -65,6 +65,8 @@ Pages构建与部署成功。35个线上入口和资源HTTP 200及SHA-256核对�
 
 相关研究保留完整理解，但只为已部署项目提供网页链接；未发布项目明确标为本机研究。汤碗视频依赖原站外部资源，加载失败有提示。原站公开源码与开源许可未确认；任意产品生成、完整自动质量闭环与真实商业服务仍待建设。
 
+正式发布已验证：[完整在线入口](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/) · [全景图](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/understanding-map.html) · [理解汇总](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/understanding.html)。首次发布提交 `30de87156e75d445225ad7e72e2a2af946db4595` 的 [Pages 构建与部署](https://github.com/yydshly/0930_codex_project/actions/runs/37731603242)及目录检查均成功。6 个页面、94 个文件和 68 个地址通过真实 HTTPS 检查；公开文件大小、SHA-256 与线上清单一致，引导图与既有 PNG 完全一致。10 项线上浏览器检查全部通过，包括桌面/手机入口、马桶与耳机非空实时模型、实际 PNG/ZIP 下载及无本机模型请求。详情见 [文件检查](../projects/011-combination-soup-studio/notes/deployment-checks.json)、[浏览器检查](../projects/011-combination-soup-studio/notes/publication-online-browser.json)和[发布记录](../projects/011-combination-soup-studio/notes/deployment-summary.json)。
+
 ## 自动发布流程
 
 工作流为 `.github/workflows/pages.yml`，推送 `main` 或手动运行时：

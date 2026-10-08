@@ -1,0 +1,94 @@
+{
+  "createdAt": "2026-10-08T05:17:19.430498+00:00",
+  "status": "passed",
+  "initial": {
+    "record": "publication-browser-check.json",
+    "passed": 93,
+    "environmentFailures": [
+      {
+        "name": "1440/map-controls",
+        "passed": false,
+        "detail": "download.saveAs: canceled"
+      },
+      {
+        "name": "390/scene/garden",
+        "passed": false,
+        "detail": "locator.getAttribute: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[data-scene=garden]')\u001b[22m\n"
+      },
+      {
+        "name": "390/map-controls",
+        "passed": false,
+        "detail": "download.saveAs: canceled"
+      },
+      {
+        "name": "static-assets/no-missing",
+        "passed": false,
+        "detail": [
+          {
+            "url": "https://soup-preview.test/0930_codex_project/projects/011-combination-soup-studio/?scene=garden",
+            "file": "D:\\codex\\home\\worktrees\\soup-publication\\0930_codex_project\\_site\\projects\\011-combination-soup-studio\\index.html",
+            "message": "ENOENT: no such file or directory, open 'D:\\codex\\home\\worktrees\\soup-publication\\0930_codex_project\\_site\\projects\\011-combination-soup-studio\\index.html'"
+          }
+        ]
+      }
+    ]
+  },
+  "recheck": {
+    "record": "publication-browser-recheck.json",
+    "passed": 17,
+    "failed": 0
+  },
+  "resolvedFailures": [
+    {
+      "initial": "1440/map-controls and 390/map-controls",
+      "cause": "Virtual HTTPS request fulfillment canceled the native URL download, while PNG display and controls worked.",
+      "evidence": "Native HTTP download is byte-for-byte equal to the existing 2800 x 9581 source PNG in both viewport checks."
+    },
+    {
+      "initial": "390/scene/garden and static-assets/no-missing",
+      "cause": "Request hit _site/index.html while the static package was being rebuilt (ENOENT).",
+      "evidence": "Stable native server recheck passed garden on desktop and mobile; no HTTP errors."
+    }
+  ],
+  "testedViewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "covered": [
+    "6 page files, including both explicit product variants (7 URLs per viewport)",
+    "Homepage guide preview, full 6-group directory, page width and loaded images",
+    "5 effect / 3 scene / 4 skill deep-link selection states",
+    "FORM toilet and AURA headphones selected product and visible live models",
+    "PNG intrinsic dimensions, fit/original/refit and exact native download bytes",
+    "Studio preset plan download, local rules for unsupported product, explicit missing-module message",
+    "Covered/uncovered service results, changed-region invalidation, request JSON",
+    "Coverage and headphone actual ZIP download, inventory and extracted standalone execution",
+    "Explicit delivery route readiness and real ZIP download",
+    "Public hostname disables online model provider and makes no loopback-service request",
+    "Explicit product preset ignores a previously stored coverage draft"
+  ],
+  "evidenceDirectory": "assets/qa/publication/",
+  "limits": [
+    "Publication checks do not rerun all historical renderer regression cases.",
+    "Headless Chromium mobile viewport is not a physical mobile GPU test.",
+    "Initial tests use virtual HTTPS with actual _site bytes; PNG/garden additionally use a native HTTP public hostname and preserved repository subpath. Foundry secure runtime is verified under virtual HTTPS.",
+    "Original-site video is an external dependency; permanent availability is not asserted."
+  ],
+  "keyScreenshots": [
+    "home-1440.png",
+    "home-390.png",
+    "directory-1440.png",
+    "directory-390.png",
+    "headphones-live-1440.png",
+    "toilet-live-390.png",
+    "scene-garden-native-390.png",
+    "delivery-direct-1440.png",
+    "delivery-direct-390.png"
+  ]
+}

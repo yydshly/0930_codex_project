@@ -1,0 +1,943 @@
+{
+  "completed": true,
+  "date": "2026-10-08",
+  "verifiedAtUTC": "2026-10-08T05:21:13.089621+00:00",
+  "base": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/",
+  "pageCount": 6,
+  "files": [
+    {
+      "path": "app.js",
+      "status": 200,
+      "bytes": 28733,
+      "sha256": "004d3af4e626f7e7fc9b409d6d8e17c732b46a21effc10f71655570c1b02f03f",
+      "matchesManifest": true
+    },
+    {
+      "path": "assets/gravel-v5.webp",
+      "status": 200,
+      "bytes": 388334,
+      "sha256": "c9df823c9b927ac969fd36baf1377edb50caad0c599d6c4f0ab4b5389d368eec",
+      "matchesManifest": true
+    },
+    {
+      "path": "assets/maple-leaf-v5.webp",
+      "status": 200,
+      "bytes": 79992,
+      "sha256": "0cd95cc54768003f22bf561ad05254cff993ffb3f20286e9aa3278782204b235",
+      "matchesManifest": true
+    },
+    {
+      "path": "assets/stone-v5.webp",
+      "status": 200,
+      "bytes": 438930,
+      "sha256": "add0183475a695ddbf0abd5a268d73c47fe122eadebdba063dc078acc4312985",
+      "matchesManifest": true
+    },
+    {
+      "path": "assets/studio-environment-v5.webp",
+      "status": 200,
+      "bytes": 183034,
+      "sha256": "9573f33a0fcfb0b283b0df65f903f8b25c4871a030bcfe79af22dc44b4e30573",
+      "matchesManifest": true
+    },
+    {
+      "path": "assets/tea-editorial-v5.webp",
+      "status": 200,
+      "bytes": 181132,
+      "sha256": "d953c5f35a36cb5c8444c8add1cb9c3232d91b605b0419a46b814140568008d1",
+      "matchesManifest": true
+    },
+    {
+      "path": "assets/understanding-map.png",
+      "status": 200,
+      "bytes": 4983755,
+      "sha256": "2712f080d304a1e3ac1704d237648a13a0f51a7f5e55f32a044865cf5e05fc3d",
+      "matchesManifest": true
+    },
+    {
+      "path": "assets/wood-v5.webp",
+      "status": 200,
+      "bytes": 255986,
+      "sha256": "4b171a91004afd993b42c95d495739e7acb409652b05e1e80aa8439185c4bc65",
+      "matchesManifest": true
+    },
+    {
+      "path": "effects/broth-engine.js",
+      "status": 200,
+      "bytes": 17783,
+      "sha256": "6fbe0b8a74019dabaf000f567b38fcbd038f3454db47b9d6231e6116d899c027",
+      "matchesManifest": true
+    },
+    {
+      "path": "effects/delivery-map.js",
+      "status": 200,
+      "bytes": 12914,
+      "sha256": "ccbb4d891d103bfaa7489b58d5bcea436b869c365a2e41506814e2b2133cbc58",
+      "matchesManifest": true
+    },
+    {
+      "path": "effects/fortune-cookie.js",
+      "status": 200,
+      "bytes": 5768,
+      "sha256": "1584687d9b88fe19e678b4b69f1266382b16ed4c2635649e1edea1714e618351",
+      "matchesManifest": true
+    },
+    {
+      "path": "effects/hero-atmosphere.js",
+      "status": 200,
+      "bytes": 3310,
+      "sha256": "b45e5b31965aa1160e3123e2d74565ea25ace8bdaeb19edcd3902a74094a2e93",
+      "matchesManifest": true
+    },
+    {
+      "path": "effects/map-data.js",
+      "status": 200,
+      "bytes": 2338,
+      "sha256": "e0b643fb9f0eed4b461d29bc217a9d9b205a147c708cf47094c7a7d9af242132",
+      "matchesManifest": true
+    },
+    {
+      "path": "effects/rotating-menu.js",
+      "status": 200,
+      "bytes": 5685,
+      "sha256": "cd40694eef3af39f53aa09b1a0789a33774cfa3a58951b25897e45da62ca0b6b",
+      "matchesManifest": true
+    },
+    {
+      "path": "effects/runtime.js",
+      "status": 200,
+      "bytes": 1324,
+      "sha256": "76d4693b9d93dc5e28825f80d6b422864c6ad26bb36396da5eba865b970576f9",
+      "matchesManifest": true
+    },
+    {
+      "path": "effects-lab.js",
+      "status": 200,
+      "bytes": 7315,
+      "sha256": "c7e33370e204863a1c4ab02f14d11c00eafe3e650f063ea1fdd9923e06507c94",
+      "matchesManifest": true
+    },
+    {
+      "path": "effects.css",
+      "status": 200,
+      "bytes": 13650,
+      "sha256": "ea257679d609b22bf0c325ef6f4bb3c9081c56cfeb9f1a4bb91f66c25378a94d",
+      "matchesManifest": true
+    },
+    {
+      "path": "favicon.svg",
+      "status": 200,
+      "bytes": 237,
+      "sha256": "526d0a4c18cf41b1d7ae29c854ab186fe05adb59f147f6aa2b0fcad50c1a038d",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/app.js",
+      "status": 200,
+      "bytes": 20019,
+      "sha256": "a2b1be64a16a77226413618ea599657883614ec8d5f0ca2013e9618113370db1",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/assets/headphone-detail-v12.webp",
+      "status": 200,
+      "bytes": 206434,
+      "sha256": "f2d1c96f64c8d725726a580e3ee773880de2582744abe98a6fe229d2f8b993de",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/assets/headphone-hero-v12.webp",
+      "status": 200,
+      "bytes": 136724,
+      "sha256": "4c4ba08af50f4cbde26ad9cb84b6f3d8a16a81b8fdb1475442572d1e43e043b1",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/assets/headphone-mobile-v12.webp",
+      "status": 200,
+      "bytes": 161796,
+      "sha256": "c4c25764e6d1fca87f8a06202cc10b361546e2440c37389da6f976130377b18a",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/assets/toilet-detail-v11.webp",
+      "status": 200,
+      "bytes": 66142,
+      "sha256": "5ad6120af53dd8c59b87fceb3ad477ad1bf1ca3f1d2d9028965793e2ee890ab6",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/assets/toilet-green-stone-v11.webp",
+      "status": 200,
+      "bytes": 553870,
+      "sha256": "100b015d7fa9f6a0498de08931f60959875fe405501e715d12e45c3658688b5d",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/assets/toilet-hero-mobile-v11.webp",
+      "status": 200,
+      "bytes": 280104,
+      "sha256": "46f883456b3c95498ee514d65215f36b3659b152797f4dd3fdef3da6c03a590f",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/assets/toilet-hero-v11.webp",
+      "status": 200,
+      "bytes": 269106,
+      "sha256": "c098ef6b5874f5352722d4f265dd603f9b1eea93b9a0e639fb7e6d460c944b66",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/assets/toilet-travertine-v11.webp",
+      "status": 200,
+      "bytes": 573674,
+      "sha256": "d5f139801e1f877fc279355042e2be513b58b5c8c4b3a4d64fb3b854d7e721cf",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/core.js",
+      "status": 200,
+      "bytes": 14640,
+      "sha256": "5707e5049689b046e55077ac0664af4c7fe45c5e3f312dba2b06c83a98d96cc0",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/headphone-domain.js",
+      "status": 200,
+      "bytes": 1846,
+      "sha256": "c3f39dd80bc0b36f46cb714375de79570d5c05e13c85aeb15fab7976cdcc6450",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/headphone-preview.js",
+      "status": 200,
+      "bytes": 10682,
+      "sha256": "c0d3c919665fd35582133873e5d0799abad4330e12edd71e8c9a35d3f42cd5b8",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/headphone-renderer.js",
+      "status": 200,
+      "bytes": 22036,
+      "sha256": "37db726c9129ddfa9ac8ad2b40448145c180082f498ac2bfd677c09b16562a37",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/headphone.css",
+      "status": 200,
+      "bytes": 18453,
+      "sha256": "c980a6f234aabdb1afa610f0ce599c2378dd5f497cb51854ddcc31d5d91077c7",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/index.html",
+      "status": 200,
+      "bytes": 9717,
+      "sha256": "00fccaa997a4f3cf2619b4727af5781498d39a67087e7d5158da2e9ecb5ee417",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/planner.js",
+      "status": 200,
+      "bytes": 7895,
+      "sha256": "162e58e554bcf40efd3e3c78022298fc5f9fd6a525b7a75ed1f320238b9968ec",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/planning-contract.js",
+      "status": 200,
+      "bytes": 4314,
+      "sha256": "d30f91fda774aa7f0627d111afbcad90fd0843129df18df8083d3ba730e99a8e",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/prototype.css",
+      "status": 200,
+      "bytes": 5209,
+      "sha256": "d012349cf529c08839db8d739b5957733d5929943bdff89aaa7814cb0cb01060",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/prototype.js",
+      "status": 200,
+      "bytes": 10323,
+      "sha256": "7e21a369c70d322255efc601cc9ad98dcb002eb94f86c055f83bbea0a69d7d42",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/showroom.html",
+      "status": 200,
+      "bytes": 2112,
+      "sha256": "17487d21e101ec16fbc46616cbb20c76efca5fb8bad520a1d600282419de6b77",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/studio-live.js",
+      "status": 200,
+      "bytes": 6164,
+      "sha256": "9f60c62c21aa71bf258372cf9d454be260abc80b765aa5e8ff2a53135e8840b9",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/studio-presentation.js",
+      "status": 200,
+      "bytes": 9124,
+      "sha256": "848a28ce13b1d84fc26b68f42d38677b527ee3ea4ea408f681dc302f91796cac",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/studio-product.js",
+      "status": 200,
+      "bytes": 1549,
+      "sha256": "945317db294b26a19087c658173577cf9539b32b25b124fcf1beaeb55e5e76ba",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/studio.css",
+      "status": 200,
+      "bytes": 17311,
+      "sha256": "33c87b07edd4b91f01e3ba1ad71d1c244c1e504090b6f904e1d87fa6c94b3b7e",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/studio.html",
+      "status": 200,
+      "bytes": 7423,
+      "sha256": "a036c9bb80e169be173c7dc40b53d547d7b37c21b7bac0ece9810612e7d1c34c",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/studio.js",
+      "status": 200,
+      "bytes": 10608,
+      "sha256": "ac73d2e7d5614f0279db67f1d66b2af00ddd20390b34b22de2276f7ed692cf30",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/style.css",
+      "status": 200,
+      "bytes": 14901,
+      "sha256": "46caa2969b4f02d184971238d88317e2e62cc95288e6c80339956078eedf5a0b",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/toilet-domain.js",
+      "status": 200,
+      "bytes": 8099,
+      "sha256": "2638e75437b890dc5044f118db66f3c9a647606e823e5cf04b59765e3cdbdd87",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/toilet-editor.js",
+      "status": 200,
+      "bytes": 3194,
+      "sha256": "d744c6d0ff6f4d5186384551046f69550be3b2e1b2b5a9b3f8d6bb9796bcd805",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/toilet-preview.js",
+      "status": 200,
+      "bytes": 17253,
+      "sha256": "e0dbe88068f8bb98575f3fd935b06fc11018e31fd5b3c595d61bd1d5d8097395",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/toilet-renderer.js",
+      "status": 200,
+      "bytes": 13200,
+      "sha256": "d0d246d59456108a53023931b2c6594165206e3ea0a63813cd1b7c46199a2881",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/toilet-room.js",
+      "status": 200,
+      "bytes": 10125,
+      "sha256": "7f4b047845196d4f2bb95287c2f07553a25808f3c254acae5557496e4717aa23",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/toilet-shapes.js",
+      "status": 200,
+      "bytes": 8627,
+      "sha256": "c58a00fd61359c0ba0f46eaacde2e82b7f4e0dfeaaa5bcbf874e377672c520b6",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/toilet.css",
+      "status": 200,
+      "bytes": 23445,
+      "sha256": "e7dbc8e6798cd6bf1f8f2b0ef2d16685dc3f0858da095bbefbacf141d58b76cd",
+      "matchesManifest": true
+    },
+    {
+      "path": "foundry/zip.js",
+      "status": 200,
+      "bytes": 1802,
+      "sha256": "cfbf48723639a3d9e964e587368a6490aceef6654eb0f868e4c1a74d7d473610",
+      "matchesManifest": true
+    },
+    {
+      "path": "garden-renderer.js",
+      "status": 200,
+      "bytes": 25465,
+      "sha256": "ea9ada85d6c4e443ecda4d818c739ca8ae5fe65bf0b8d1e950ba95ca2195166a",
+      "matchesManifest": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 42878,
+      "sha256": "792c5c0ba1b945c5c417b30756455a83a7e5b55dfebdf5add25b1a52d83ed116",
+      "matchesManifest": true
+    },
+    {
+      "path": "native-effects.css",
+      "status": 200,
+      "bytes": 15078,
+      "sha256": "6f4c0cc51945d990553338f44ee0224aad9330407f5b50972b2eaaa7d9851b19",
+      "matchesManifest": true
+    },
+    {
+      "path": "planar-water.js",
+      "status": 200,
+      "bytes": 3280,
+      "sha256": "7d155e91f2e0d04cfd0a76801045c7abb14e32e9cd9cbc1f85f8bd63c81c8bee",
+      "matchesManifest": true
+    },
+    {
+      "path": "product-entry.css",
+      "status": 200,
+      "bytes": 3172,
+      "sha256": "9b2ad053288fcf4ec3fcc93d13b3be717b2f69fa81bdfbeeac73093b71a0f31d",
+      "matchesManifest": true
+    },
+    {
+      "path": "product-renderer.js",
+      "status": 200,
+      "bytes": 27346,
+      "sha256": "59f2d8dcfd316b8b281ced66a20c5d0f82cad605d1d1c56c0546acc443580de9",
+      "matchesManifest": true
+    },
+    {
+      "path": "product-showcase.css",
+      "status": 200,
+      "bytes": 12635,
+      "sha256": "e8fc24eef5a70551cb3949b33c4ed88b5ae125b7568147bef8fffdc0ce9fa449",
+      "matchesManifest": true
+    },
+    {
+      "path": "publication.css",
+      "status": 200,
+      "bytes": 3361,
+      "sha256": "4b5797ccc264bd0c3bc259f4101434e761789c553c9e54c57a5ac11e1744c462",
+      "matchesManifest": true
+    },
+    {
+      "path": "refined-effects.css",
+      "status": 200,
+      "bytes": 9223,
+      "sha256": "884b82a437cbc67444b2e9ea8ac86c7349bc52c6fa5acd43c2ae705b48d9ab1b",
+      "matchesManifest": true
+    },
+    {
+      "path": "renderers.js",
+      "status": 200,
+      "bytes": 4372,
+      "sha256": "efc45c51def694c4827734c5e281dd998f6bf3596de76fd27cba2aa8ddaac4d2",
+      "matchesManifest": true
+    },
+    {
+      "path": "scene-decision.js",
+      "status": 200,
+      "bytes": 2609,
+      "sha256": "87bbd1680b31edcda08bd5d68a6fd2587f25c128473c0316a157cfb2804ccf74",
+      "matchesManifest": true
+    },
+    {
+      "path": "scene-materials.js",
+      "status": 200,
+      "bytes": 1976,
+      "sha256": "943e15c7d7c0fa82d33835fea057e16714f7841e1c57ac1364c29205dd3b8066",
+      "matchesManifest": true
+    },
+    {
+      "path": "scene-showcase.css",
+      "status": 200,
+      "bytes": 19544,
+      "sha256": "02d67c07ddb0951e4a2fbdf45a30897f6f0b724f6e0abdf15c72b2d95e0afdd3",
+      "matchesManifest": true
+    },
+    {
+      "path": "skills-lab.css",
+      "status": 200,
+      "bytes": 8102,
+      "sha256": "21faabcbc3adceb8e3eff020cd3636a448b21f669dc049f2d81ea6663d4b316f",
+      "matchesManifest": true
+    },
+    {
+      "path": "skills-lab.js",
+      "status": 200,
+      "bytes": 19129,
+      "sha256": "ce60431e669ada8d32e132136917b13150725b5cbe821b6ffec0f8fc6aeb2660",
+      "matchesManifest": true
+    },
+    {
+      "path": "source-assets/SOURCE-NOTICE.txt",
+      "status": 200,
+      "bytes": 1263,
+      "sha256": "46097a2d4d8878002e5c49a4d81d8336ff3fa87c4a8250a802de7089eab5fe0b",
+      "matchesManifest": true
+    },
+    {
+      "path": "source-assets/cookie-1.webp",
+      "status": 200,
+      "bytes": 25552,
+      "sha256": "b900018d02a2ec379cb47d5f0486bacfa11bfc925f6925f1ef581a22cf200666",
+      "matchesManifest": true
+    },
+    {
+      "path": "source-assets/fonts/BagelFatOne-OFL.txt",
+      "status": 200,
+      "bytes": 4392,
+      "sha256": "3c0c7ba68ec39dba0f2e811cbca3d420c167ef9001c5931ed8e870b53ba5b744",
+      "matchesManifest": true
+    },
+    {
+      "path": "source-assets/fonts/CaveatBrush-OFL.txt",
+      "status": 200,
+      "bytes": 4351,
+      "sha256": "07d9c4636f2df38321fd3ff02fcedf69cf463f9399d413b02466428ccd2dbbd5",
+      "matchesManifest": true
+    },
+    {
+      "path": "source-assets/fonts/IBMPlexMono-OFL.txt",
+      "status": 200,
+      "bytes": 4363,
+      "sha256": "37784b44044a4ffd9256702b7c0982c37e5c8887ba90c6dca0479aea93dc898d",
+      "matchesManifest": true
+    },
+    {
+      "path": "source-assets/fonts/InstrumentSans-OFL.txt",
+      "status": 200,
+      "bytes": 4403,
+      "sha256": "9e27a72ed30eb49a08678f6a5d6ed98ec7ba5368f541637ee0683ec9134ef966",
+      "matchesManifest": true
+    },
+    {
+      "path": "source-assets/fonts/f-bagel-fat-one-400.woff2",
+      "status": 200,
+      "bytes": 24376,
+      "sha256": "115ac5b80f2bd487ab5d5af59dd374261b6e81d00eda8361dd70e671d5aa35e4",
+      "matchesManifest": true
+    },
+    {
+      "path": "source-assets/fonts/f-caveat-brush-400.woff2",
+      "status": 200,
+      "bytes": 67460,
+      "sha256": "1e1ef30f8b69c21206603097ad0ba68591539af68214f7cfb2fbd23991accd48",
+      "matchesManifest": true
+    },
+    {
+      "path": "source-assets/fonts/f-ibm-plex-mono-400.woff2",
+      "status": 200,
+      "bytes": 14708,
+      "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+      "matchesManifest": true
+    },
+    {
+      "path": "source-assets/fonts/f-ibm-plex-mono-600.woff2",
+      "status": 200,
+      "bytes": 15620,
+      "sha256": "0d1f0b8d0722224e32e9f28261bdc86c79115be73444ae5eceb73976a1bcdf83",
+      "matchesManifest": true
+    },
+    {
+      "path": "source-assets/fonts/f-instrument-sans-400.woff2",
+      "status": 200,
+      "bytes": 30092,
+      "sha256": "2ee17598a98d8a59e4df8152d015bec9ab8e4d5672cc0ab42bef806b568e3971",
+      "matchesManifest": true
+    },
+    {
+      "path": "source-assets/map-badge.svg",
+      "status": 200,
+      "bytes": 1290,
+      "sha256": "9f86d82eec7ddb220923c565263e38568adf475958c76b02bd24d70a6b02037a",
+      "matchesManifest": true
+    },
+    {
+      "path": "source-assets/menu-1.webp",
+      "status": 200,
+      "bytes": 15506,
+      "sha256": "109e5daff6f7c867b34e7716e71a526d8cb8169aa3d7b1e641a95575d1a2633d",
+      "matchesManifest": true
+    },
+    {
+      "path": "source-assets/menu-2.webp",
+      "status": 200,
+      "bytes": 38646,
+      "sha256": "523e1fc57ecaf147ba59d350f28bdc955a88624cc1f3515415182c66faf7ef5f",
+      "matchesManifest": true
+    },
+    {
+      "path": "source-assets/menu-3.webp",
+      "status": 200,
+      "bytes": 42654,
+      "sha256": "be55bbca47a8fbaf93b2292401f5f2b9bc355decc531c26a3b8c06dfcbf5f8d7",
+      "matchesManifest": true
+    },
+    {
+      "path": "style.css",
+      "status": 200,
+      "bytes": 21113,
+      "sha256": "1f9e4fc1ee2b8ae50d00d6319a56a6c5c1052547e6769b455c883e8adb130210",
+      "matchesManifest": true
+    },
+    {
+      "path": "understanding-map.html",
+      "status": 200,
+      "bytes": 4150,
+      "sha256": "735ff7cbc673ccddd688b29f8fca64a7868f580eadf29b8ed706a9ab8a4f79c1",
+      "matchesManifest": true
+    },
+    {
+      "path": "understanding.css",
+      "status": 200,
+      "bytes": 7555,
+      "sha256": "ad84c2e29f3cdc66da78041130f4a78bb620213e3f0ed0789c0d56a25aed3778",
+      "matchesManifest": true
+    },
+    {
+      "path": "understanding.html",
+      "status": 200,
+      "bytes": 35793,
+      "sha256": "f67106acbdc9d80036503cfe96bc7650fcbb2ec975cfff701b92e6db26da6242",
+      "matchesManifest": true
+    },
+    {
+      "path": "vendor/THREE-LICENSE.txt",
+      "status": 200,
+      "bytes": 1081,
+      "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d",
+      "matchesManifest": true
+    },
+    {
+      "path": "vendor/three-r160.min.js",
+      "status": 200,
+      "bytes": 669884,
+      "sha256": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa",
+      "matchesManifest": true
+    },
+    {
+      "path": "assets/business-scenes-v5.mp4",
+      "status": 200,
+      "bytes": 5506773,
+      "sha256": "ec07005657326f8a2a82f40b793aa1ed6bef32f24f4cd866b86f557baaf99bd3",
+      "matchesManifest": true
+    },
+    {
+      "path": "assets/business-scenes-v6.mp4",
+      "status": 200,
+      "bytes": 6256262,
+      "sha256": "e21389d48695ac4f088ec6960de741372ca3f8b34780c93f53db234d102b1fda",
+      "matchesManifest": true
+    },
+    {
+      "path": "assets/product-showcase-refined.mp4",
+      "status": 200,
+      "bytes": 1704853,
+      "sha256": "f729f130e8adc5cb8270f9f5dd2f0a7b94c12e499895ab9cc84f8abda06073c6",
+      "matchesManifest": true
+    },
+    {
+      "path": "assets/scene-polish-v7.mp4",
+      "status": 200,
+      "bytes": 3840086,
+      "sha256": "168943355c2889a048a8c5ba85a99f2cdf1e0501d35f2e4f031f7070e9ed3e38",
+      "matchesManifest": true
+    },
+    {
+      "path": "assets/scene-polish-v8.mp4",
+      "status": 200,
+      "bytes": 6284620,
+      "sha256": "3a2fa6b2ca68df58e8c32766ba6408be170a0a93f1918267552a151fb4b8a46d",
+      "matchesManifest": true
+    }
+  ],
+  "routes": [
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/001-witr/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/002-huashu-design/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/002-huashu-design/cases/research-desk/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/003-learn-harness-engineering/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/004-rhythm-drop/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/005-plush-lab/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/005-plush-lab/web/splat.html",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/006-ai-visual-atlas/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/006-ai-visual-atlas/launch-architecture.html",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/006-ai-visual-atlas/understanding.html",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/007-koi-scene-lab/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/?effect=broth&skill=explain&scene=product",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/app.js?v=20261002-8",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/assets/maple-leaf-v5.webp",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/assets/scene-polish-v8.mp4",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/assets/studio-environment-v5.webp",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/assets/tea-editorial-v5.webp",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/assets/understanding-map.png",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/effects-lab.js?v=20261002-3",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/effects.css",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/favicon.svg",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/?example=coverage&template=coverage",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/?example=coverage&template=coverage&revision=20261003-16",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/?example=headphones&step=delivery",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/?example=headphones&step=preview&revision=20261003-16",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/?example=product&template=product&step=define",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/?example=toilet&step=preview&revision=20261003-16",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/?revision=20261002-10",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/?revision=20261003-16",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/app.js?v=20261003-16",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/assets/headphone-hero-v12.webp",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/assets/toilet-hero-v11.webp",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/prototype.css?v=20261002-11",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/showroom.html",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/showroom.html?example=headphones&revision=20261003-16",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/showroom.html?example=toilet&revision=20261003-16",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/studio.css?v=20261003-17",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/studio.html?example=headphones&revision=20261003-16",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/studio.html?revision=20261003-16",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/studio.js?v=20261003-16",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/style.css?v=20261003-16",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/index.html",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/index.html?effect=broth",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/index.html?effect=delivery",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/index.html?effect=fortune",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/index.html?effect=hero",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/index.html?effect=menu",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/index.html?scene=brand",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/index.html?scene=garden",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/index.html?scene=product",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/index.html?skill=explain",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/index.html?skill=reveal",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/index.html?skill=story",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/index.html?skill=territory",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/native-effects.css?v=20261002-2",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/product-entry.css?v=20261003-17",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/product-showcase.css?v=20261002-8",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/publication.css?v=20261008",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/refined-effects.css?v=20261002-2",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/scene-showcase.css?v=20261002-8",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/skills-lab.css?v=20261002-3",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/skills-lab.js?v=20261002-3",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/style.css",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/understanding-map.html",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/understanding.css",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/understanding.html",
+      "status": 200
+    }
+  ],
+  "guideMatchesExistingPNG": true,
+  "limits": "HTTP and byte integrity checks; visual/interaction evidence is recorded separately. No model service was called."
+}

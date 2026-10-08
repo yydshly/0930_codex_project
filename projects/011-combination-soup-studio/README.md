@@ -6,6 +6,8 @@
 
 **完整入口**：[研究首页](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/) · [全景图](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/understanding-map.html) · [文字理解](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/understanding.html) · [目标工作台](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/studio.html) · [马桶](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/showroom.html?example=toilet) · [耳机](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/showroom.html?example=headphones) · [服务查询](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/?example=coverage&template=coverage) · [独立交付](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/foundry/?example=headphones&step=delivery)。
 
+[发布浏览器验收](notes/publication-browser-summary.json)核对桌面与手机、全部效果入口、真实下载和独立包运行。初次虚拟路由与重建并发产生的环境异常及稳定复核均保留证据。正式 HTTPS 的[文件与链接校验](notes/deployment-checks.json)通过 6 个页面、94 个文件、68 个地址，文件大小及 SHA-256 与发布清单一致；[线上浏览器检查](notes/publication-online-browser.json)的 10 项检查全部通过，包括马桶/耳机实时模型、PNG 与 ZIP 下载。引导 PNG 与原有文件完全一致。
+
 公开版保留 6 个页面、全部运行模块、必要素材、字体与许可，以及选定场景录像；PNG、JSON、简报和 ZIP 仍由浏览器实际状态生成。模型服务仅允许在本机使用，公网不会探测访客的本机服务。新目标采用预置方案或有限本地规则，陌生产品仍需新增资产、形体与业务；完整自动质量修正没有实现。
 
 引导图沿用既有 2026-10-03 全景图，展示 18 项研究的历史快照。相关研究分别标明已经公开的网页和仅在本机保留的项目，不把尚未发布的页面写成可用入口。原站公开源码及开源许可未确认；固定系列影像、概念模型、虚构型号与示例规则均有边界说明。商业价值尚未实测。
@@ -33,7 +35,7 @@
 | 本项目内容 | 五个独立效果模块、原站视频 URL 接入、业务原型、引导图与本机截图 |
 | 状态 | 原站效果已有分项核对；业务场景当前为第八版，庭院水面倒影、植物层次、选择结果与方案面积差异均可查看和导出；商业收益未实测 |
 | 平台 | 现代桌面与手机浏览器，静态 HTML/CSS/JavaScript；产品与庭院展示使用本地 MIT Three.js r160 与 WebGL，无法使用 WebGL 时保留二维兼容预览 |
-| 发布 | 本次发布到 GitHub Pages；在线入口与验证记录见下方说明 |
+| 发布 | 已公开发布到 GitHub Pages；[发布记录](notes/deployment-summary.json)、[文件校验](notes/deployment-checks.json)与[线上浏览器验收](notes/publication-online-browser.json)可核对 |
 
 ## 造型与展示重做 · Idea Foundry V1.7
 
