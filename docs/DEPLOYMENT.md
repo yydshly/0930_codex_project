@@ -45,6 +45,8 @@ GitHub Actions 的构建、47 项检查与部署成功；45 个在线资源返�
 
 `scripts/atlas_publish.py` 仅发布 `projects/006-ai-visual-atlas/publication/manifest.json` 登记的文件，在复制前验证路径、大小和 SHA-256。引导图、技术说明、选定媒体和脱敏证据保持相对路径；发布结果中的 `publication-manifest.json` 可核对公开范围。001–005 的条目和发布方法保留。
 
+发布已验证：[研究摘要入口](https://yydshly.github.io/0930_codex_project/projects/006-ai-visual-atlas/)。98 个公开文件均返回 HTTP 200，大小及 SHA-256 与清单一致；总首页、001–006 入口和发布清单共 8 个入口检查通过。Pages 构建及部署成功，记录见 [006 部署验证](../projects/006-ai-visual-atlas/notes/deployment-checks.json)。
+
 ## 自动发布流程
 
 工作流为 `.github/workflows/pages.yml`，推送 `main` 或手动运行时：
