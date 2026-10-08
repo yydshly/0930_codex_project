@@ -1,0 +1,167 @@
+{
+  "date": "2026-10-08T04:35:39.762Z",
+  "version": 20,
+  "clientDate": "2026-10-08",
+  "publicationCheck": true,
+  "url": "http://127.0.0.1:8997/projects/007-koi-scene-lab/?v=fbd61419#scene",
+  "renderer": "Chromium headless / forced ANGLE SwiftShader software renderer",
+  "status": "completed",
+  "bundleSha256": "fbd61419d326470cdd2a69f4f44bf06fad42c4faa8020e478b1f3f9fd0046b36",
+  "servedBundleSha256": "fbd61419d326470cdd2a69f4f44bf06fad42c4faa8020e478b1f3f9fd0046b36",
+  "scriptSha256": "11c07efbaa67e02023c1217ccca426219cca132c00ffdd8f20e7d395e4a72e0c",
+  "elapsedMs": 185772,
+  "checks": [
+    {
+      "name": "served v20 bundle matches and cat controls initialize",
+      "passed": true,
+      "evidence": {
+        "served": "fbd61419d326470cdd2a69f4f44bf06fad42c4faa8020e478b1f3f9fd0046b36",
+        "bundle": "fbd61419d326470cdd2a69f4f44bf06fad42c4faa8020e478b1f3f9fd0046b36"
+      }
+    },
+    {
+      "name": "desktop cat fully fits with camera on foreground side looking toward garden",
+      "passed": true,
+      "evidence": {
+        "box": {
+          "left": -0.12816335443266422,
+          "right": 0.05872934359060846,
+          "bottom": -0.630383978810829,
+          "top": 0.13753376365296074
+        },
+        "vertices": 64402,
+        "camera": [
+          3.565251514722351,
+          1.2691202817640141,
+          8.084403904760347
+        ],
+        "target": [
+          2.3496478701623302,
+          0.2503286558470452,
+          6.347827269674603
+        ],
+        "cat": {
+          "x": 2.45,
+          "y": -0.035,
+          "z": 6.6
+        },
+        "aspect": 1.5008264462809917
+      }
+    },
+    {
+      "name": "pause freezes refined posture, limbs, tail and simulation time",
+      "passed": true,
+      "evidence": {
+        "state": "observe",
+        "time": 0.4833333333333333
+      }
+    },
+    {
+      "name": "mobile cat is complete with no overflow and 44px animal controls",
+      "passed": true,
+      "evidence": {
+        "mobile": {
+          "box": {
+            "left": -0.18697802016275436,
+            "right": 0.0856804695744717,
+            "bottom": -0.630383978810829,
+            "top": 0.13753376365296074
+          },
+          "vertices": 64402,
+          "camera": [
+            3.565251514722351,
+            1.2691202817640141,
+            8.084403904760347
+          ],
+          "target": [
+            2.3496478701623302,
+            0.2503286558470452,
+            6.347827269674603
+          ],
+          "cat": {
+            "x": 2.45,
+            "y": -0.035,
+            "z": 6.6
+          },
+          "aspect": 1.028735632183908
+        },
+        "ui": {
+          "width": 390,
+          "viewport": 390,
+          "buttons": [
+            {
+              "w": 73.5,
+              "h": 44
+            },
+            {
+              "w": 73.5,
+              "h": 44
+            },
+            {
+              "w": 73.5,
+              "h": 44
+            },
+            {
+              "w": 73.5,
+              "h": 44
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "native patrol reaches walking and the foreground camera retains the complete cat",
+      "passed": true,
+      "evidence": {
+        "state": "walk",
+        "time": 1.6333333333333324,
+        "frame": {
+          "box": {
+            "left": -0.25638408507461624,
+            "right": 0.13868079080033274,
+            "bottom": -0.46789904379703834,
+            "top": 0.1273606236912443
+          },
+          "vertices": 64402,
+          "camera": [
+            3.49862475445622,
+            1.2338527679263682,
+            8.031563153678546
+          ],
+          "target": [
+            2.325514947252898,
+            0.25067502474644127,
+            6.355692000530943
+          ],
+          "cat": {
+            "x": 2.4500000771528865,
+            "y": -0.035,
+            "z": 6.599910525164319
+          },
+          "aspect": 1.5008264462809917
+        }
+      }
+    },
+    {
+      "name": "no page, shader-console, external-request or context errors",
+      "passed": true,
+      "evidence": {
+        "errors": [],
+        "consoleErrors": [],
+        "externalRequests": [],
+        "contextEvents": []
+      }
+    }
+  ],
+  "passed": 6,
+  "failed": 0,
+  "captures": [
+    "assets/cat-desktop-publication-20261008.jpg",
+    "assets/cat-mobile-publication-20261008.jpg",
+    "assets/cat-walk-publication-20261008.jpg"
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "externalRequests": [],
+  "method": "User-authorized local static publication package verification on the GitHub Pages subpath, using forced software rendering. Actual keyboard/select/button actions and read-only camera/mesh/pose observations. Raw JPEGs; desktop and 390px mobile. Only v20 cat initialization, framing, pause and patrol are tested; G, feeding, GLB and controlled context recovery are not rerun. No hardware performance claim."
+}

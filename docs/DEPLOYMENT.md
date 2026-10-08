@@ -49,6 +49,14 @@ GitHub Actions 的构建、47 项检查与部署成功；45 个在线资源返�
 
 2026-10-08 效果展示补全：新增 [完整效果展厅](https://yydshly.github.io/0930_codex_project/projects/006-ai-visual-atlas/effects.html)与署名页，理解页首屏显示十项目研究、两项深入实作、三项自制代表结果。新增九支已核对许可的 Lemo 原作视频、动态字体 GIF/接触表、角色动画 WebP、两张原作者游戏截图；其他游戏和原作提供明确入口。公开快照增至 144 项，保留完整许可证与逐片 CREDITS，无新增生成调用。
 
+## 锦鲤庭院研究发布
+
+2026-10-08：[Koi Scene Lab 在线体验](https://yydshly.github.io/0930_codex_project/projects/007-koi-scene-lab/)已发布，保留原作体验、按图构造和原理与价值三个入口。首页引导使用已有[技术与个人价值总览图](https://yydshly.github.io/0930_codex_project/projects/007-koi-scene-lab/assets/library-value-map-v21.png)，摘要说明当前能力及其原理、使用场景、个人价值、可扩展方向与边界。
+
+Three.js、原作、贴图、WebXR手模型、GLB/绑定示例与许可均本地托管；打包采用007资源白名单，CI执行锁定依赖安装、278项场景检查和构建。原作源码保持固定版本，场景仍沿用v20；照片自动参数化、制造输出、实物交付和完整一致性验收未接入。
+
+Pages构建与部署成功。35个线上入口和资源HTTP 200及SHA-256核对通过，含总首页、001–006既有入口；12项公网阅读、桌面/手机布局、下载与返回首页检查通过。原作和当前庭院另以Low/SwiftShader软件环境验证初始化/按钮和猫流程，不作为真实硬件性能或照片级质量验收。原作首次截图超时保留失败记录。详见[007发布验收](../projects/007-koi-scene-lab/notes/publication-validation-20261008.json)。
+
 ## 自动发布流程
 
 工作流为 `.github/workflows/pages.yml`，推送 `main` 或手动运行时：

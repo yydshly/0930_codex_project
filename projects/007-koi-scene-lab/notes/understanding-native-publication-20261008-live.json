@@ -1,0 +1,165 @@
+{
+  "date": "2026-10-08T04:38:24.886Z",
+  "status": "completed",
+  "passed": 12,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "tech page and static explanation open without initializing the 3D scene",
+      "passed": true,
+      "evidence": {
+        "tab": "原理与价值"
+      }
+    },
+    {
+      "name": "public sharing metadata uses the selected infographic",
+      "passed": true,
+      "evidence": {
+        "image": "assets/library-value-map-v21.png"
+      }
+    },
+    {
+      "name": "eight original technology mappings and original/current distinctions are present",
+      "passed": true,
+      "evidence": {
+        "rows": 8
+      }
+    },
+    {
+      "name": "user values, four expansion ideas and five capability states are present",
+      "passed": true,
+      "evidence": {
+        "values": 4,
+        "directions": 4,
+        "statuses": 5
+      }
+    },
+    {
+      "name": "original runtime capture is visibly loaded and buttons point to existing tabs",
+      "passed": true,
+      "evidence": {
+        "image": "assets/original-experience-v21.png",
+        "scope": "DOM routing targets; original and scene runtime are not rerun."
+      }
+    },
+    {
+      "name": "desktop reading layout has no horizontal overflow and 44px actions",
+      "passed": true,
+      "evidence": {
+        "width": 1280,
+        "viewport": 1280,
+        "overflow": [],
+        "buttons": [
+          {
+            "text": "下载一图总览",
+            "h": 44,
+            "w": 108
+          },
+          {
+            "text": "体验原作效果",
+            "h": 44,
+            "w": 108
+          },
+          {
+            "text": "观察当前扩展",
+            "h": 44,
+            "w": 108
+          },
+          {
+            "text": "下载高清图片",
+            "h": 44,
+            "w": 108
+          }
+        ]
+      }
+    },
+    {
+      "name": "native overview download exactly matches the published PNG",
+      "passed": true,
+      "evidence": {
+        "suggestedFilename": "library-value-map-v21.png",
+        "bytes": 2944952
+      }
+    },
+    {
+      "name": "keyboard opens the proposed consistency notes with current limitations",
+      "passed": true,
+      "evidence": {
+        "open": true
+      }
+    },
+    {
+      "name": "inline infographic expands and loads its actual 2560px image",
+      "passed": true,
+      "evidence": {
+        "image": "assets/library-value-map-v21.png"
+      }
+    },
+    {
+      "name": "390px mobile has no overflow, readable stacked tables and 44px actions",
+      "passed": true,
+      "evidence": {
+        "width": 390,
+        "viewport": 390,
+        "overflow": [],
+        "buttons": [
+          {
+            "text": "下载一图总览",
+            "h": 44,
+            "w": 108
+          },
+          {
+            "text": "体验原作效果",
+            "h": 44,
+            "w": 154
+          },
+          {
+            "text": "观察当前扩展",
+            "h": 44,
+            "w": 154
+          },
+          {
+            "text": "下载高清图片",
+            "h": 44,
+            "w": 108
+          }
+        ]
+      }
+    },
+    {
+      "name": "return link reaches the hosted research catalog",
+      "passed": true,
+      "evidence": {
+        "url": "https://yydshly.github.io/0930_codex_project/"
+      }
+    },
+    {
+      "name": "no page, console or automatic external-request errors",
+      "passed": true,
+      "evidence": {
+        "errors": [],
+        "consoleErrors": [],
+        "external": []
+      }
+    }
+  ],
+  "captures": [
+    "assets/understanding-desktop-publication-20261008-live.jpg",
+    "assets/understanding-mobile-publication-20261008-live.jpg",
+    "assets/understanding-value-mobile-publication-20261008-live.jpg"
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "external": [],
+  "hashes": {
+    "web/index.html": "977ba70d4fadf040f451d0c7571d01da0eb87752940d2cbb93dc0d7bc89365ef",
+    "web/style.css": "cf96a3d7d8e1c9c30cb73201a7b69a602ff08ed5b6aa8031dfd46e5d626dffd3",
+    "web/understanding-v21.css": "708520ae23b51768865d7c88b5ad88b8f20a8382b7cb3f09685392eefb0db0e4",
+    "web/app.js": "fbd61419d326470cdd2a69f4f44bf06fad42c4faa8020e478b1f3f9fd0046b36",
+    "web/assets/library-value-map-v21.png": "595234a1f46a6052fea0cbcb2e28dd6be2d0630cc47cbd62d8a76e3d9b349907"
+  },
+  "scope": "Native browser on the actual HTTPS publication: reading, sharing metadata, exact PNG download, keyboard details, desktop/mobile layout and return navigation. No repeat of 3D gameplay or hardware performance.",
+  "scriptSha256": "93f75358cd5f5b9e28da31c3f393f729de7344845f07bb65b0e9a991709b664d",
+  "hostedURL": "https://yydshly.github.io/0930_codex_project/projects/007-koi-scene-lab/?v=ba2de5d03ed9#tech",
+  "servedSourceVerification": "notes/deployment-checks.json checks committed bytes; hashes in this native record describe the local source checkout."
+}

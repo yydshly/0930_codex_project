@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-08T04:39:15.683Z",
+  "clientDate": "2026-10-08",
+  "publicationCheck": true,
+  "url": "http://127.0.0.1:8997/projects/007-koi-scene-lab/upstream/koi-pond.html",
+  "status": "completed",
+  "passed": 8,
+  "failed": 0,
+  "elapsedMs": 83361,
+  "sourceRuntimeSha256": "ac6c12b9b47e58d2a22a36d607cedefd70a1261313d349096bc03fd5f4d8882f",
+  "servedRuntimeSha256": "ac6c12b9b47e58d2a22a36d607cedefd70a1261313d349096bc03fd5f4d8882f",
+  "sourceSnapshotSha256": "ab76bca6c8d3cb8e4185189d3f217665e7d6e1695cbd98f1da8c6024cc1f8f1a",
+  "scriptSha256": "ae1210068968e03fa7e992a51fc9af89fc28f33043984c43f958a7f0258e0b07",
+  "captures": [],
+  "screenshotStatus": "not_attempted_after_attempt1_90s_capture_timeout",
+  "priorAttempts": [
+    "notes/original-validation-publication-20261008-attempt1.json"
+  ],
+  "scope": "Local static publication package on the GitHub Pages subpath. Original initialization/20 fish and UI states only; no screenshot, full-quality, animal-motion, hardware-performance or online-deployment verification. Attempt1 screenshot timed out; that failure is preserved separately and is not counted as interaction validation.",
+  "renderer": "Chromium headless / SwiftShader",
+  "viewport": [
+    960,
+    640
+  ],
+  "testOnlySettings": "Low quality; SSAO, god rays and DOF disabled for software renderer; original runtime file defaults unchanged. Scene frame function stopped after initialization for UI state checks; no screenshot captured; native RAF retained. Click actionability wait skipped for software rendering.",
+  "checks": [
+    "打包后原作与本地运行副本字节一致",
+    "本地原作完成初始化并构造20条鱼",
+    "原作冻结动态",
+    "原作投喂按钮触发状态",
+    "原作天气切换",
+    "原作镜头模式切换",
+    "无脚本与着色器错误",
+    "依赖和原作均从本地加载"
+  ],
+  "info": {
+    "quality": "Low",
+    "fishCount": 20,
+    "weather": "Rain",
+    "time": 0.46830000001192096,
+    "canvas": [
+      960,
+      640
+    ],
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  "errors": [],
+  "requests": [
+    "http://127.0.0.1:8997/projects/007-koi-scene-lab/upstream/koi-pond.html",
+    "http://127.0.0.1:8997/projects/007-koi-scene-lab/vendor/three-r160.min.js",
+    "http://127.0.0.1:8997/projects/007-koi-scene-lab/vendor/dat.gui-0.7.9.min.js"
+  ]
+}

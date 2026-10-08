@@ -1,6 +1,6 @@
 # 007 · Koi Scene Lab · 庭院效果与实景构造
 
-[发布入口（待本轮线上验证）](https://yydshly.github.io/0930_codex_project/projects/007-koi-scene-lab/) · [原理与价值](web/index.html#tech) · [下载引导图](assets/library-value-map-v21.png) · [本轮说明与依据](notes/understanding-v21.md) · [上游源码](https://github.com/souranyp-stack/koi-pond-garden)
+[在线体验](https://yydshly.github.io/0930_codex_project/projects/007-koi-scene-lab/) · [原理与价值](web/index.html#tech) · [下载引导图](assets/library-value-map-v21.png) · [本轮说明与依据](notes/understanding-v21.md) · [上游源码](https://github.com/souranyp-stack/koi-pond-garden)
 
 这是一个可在浏览器中运行的实时庭院研究项目：先保留 Koi Pond Garden 原作体验，说明水、鱼、手部与生态的计算方法，再把部分原理接入独立庭院，展示这些能力如何用于个人空间。网页有“原作体验”“按图构造”“原理与价值”三个入口。
 
@@ -13,9 +13,9 @@
 - **对个人用户的意义：** 通过可探索空间保存老家和家庭记忆，用视角与参数预演庭院改造，为家人加入有情境的动物和互动，也可作为作品展示。当前已能体验庭院和相关算法；数字老家、家庭纪念与实物交付的价值仍需用具体用户和场景验证。
 - **可扩展方向与边界：** 未来可发展照片辅助参数建模、乡村建筑构件、家庭共同校正、数字纪念场景、缩尺摆件及数字到实物交付。单张照片缺少背面、遮挡和精确尺寸，需要补充素材、已知长度与人工校正。照片自动重建、可制造模型导出、实物生产和图片/模型/实物一致性验收尚未接入；当前庭院按设计估值构造，未做现场测绘，照片级外观与真实设备性能仍未完成验收。
 
-当前说明为 v21：网页整理八项效果与技术对应、原作和当前实现的区别，以及模型的六层可复用能力。278项自动检查和10项网页阅读、下载检查通过，属于此前限定范围的本地验证，详情见[v21汇总](notes/v21-validation-summary.json)。本轮 GitHub 发布与线上验证由单独记录提供。
+当前说明为 v21：网页整理八项效果与技术对应、原作和当前实现的区别，以及模型的六层可复用能力。278项自动检查和10项网页阅读、下载检查通过，属于此前限定范围的本地验证，详情见[v21汇总](notes/v21-validation-summary.json)。本轮已发布到 GitHub Pages，35个线上入口与资源的HTTP和SHA-256核对通过，12项公网阅读/下载检查通过。详情见[发布验收](notes/publication-validation-20261008.json)。
 
-互动场景继续沿用 v20 构建 `fbd61419…`：收细猫的体形与虎斑，改进肩部支点坐姿和按实际行程推进的步态；观察镜头固定在庭院前景侧。此前6项猫原生流程通过，3张原始实图已审阅；本轮没有重跑这些场景流程。详情见[v20汇总](notes/v20-validation-summary.json)与[收尾技术说明](notes/cat-refinement-v20.md)。
+互动场景继续沿用 v20 构建 `fbd61419…`：收细猫的体形与虎斑，改进肩部支点坐姿和按实际行程推进的步态；观察镜头固定在庭院前景侧。此前6项猫原生流程通过，3张原始实图已审阅；本轮在打包后的Pages子路径重跑了6项猫流程，详情见[发布场景检查](notes/browser-publication-20261008.json)。详情见[v20汇总](notes/v20-validation-summary.json)与[收尾技术说明](notes/cat-refinement-v20.md)。
 
 在网页顶部点击“开始演示路线”浏览原有流程。新增动物可在“按图构造”的动物控制区点击“庭院猫巡游”，也可从视角菜单选择“观察庭院猫”；轻触入口在“更多操作”，或聚焦画布后按 G。技术范围与操作见[动物行为记录](notes/wildlife-v19.md)。历史失败、中断与旧截图保留构建归属；照片级外观和真实设备性能仍未完成验收。
 
@@ -88,7 +88,7 @@ npm test
 
 ## 验证与来源
 
-视觉验收见 [design-qa.md](design-qa.md)，浏览器验证记录保存在 notes/。软件 WebGL 的帧率不能作为本机硬件性能指标。公开发布入口为 [GitHub Pages](https://yydshly.github.io/0930_codex_project/projects/007-koi-scene-lab/)，待本轮线上验证；入口地址与本地检查通过不代表已经部署成功。
+视觉验收见 [design-qa.md](design-qa.md)，浏览器验证记录保存在 notes/。软件 WebGL 的帧率不能作为本机硬件性能指标。原作本轮通过8项初始化/按钮状态检查；第一次软件截图读取超时，随后跳过截图重试，保留[首次失败](notes/original-validation-publication-20261008-attempt1.json)与[通过记录](notes/original-validation-publication-20261008.json)，不计为原作画面或性能验收。公开发布入口为 [GitHub Pages](https://yydshly.github.io/0930_codex_project/projects/007-koi-scene-lab/)，待本轮线上验证；入口地址与本地检查通过不代表已经部署成功。
 
 - 原作 © 2026 Sourany Phomhome，MIT；[许可声明](web/upstream/KOI-LICENSE.txt)。
 - [Three.js r160](https://github.com/mrdoob/three.js/tree/r160)，MIT。

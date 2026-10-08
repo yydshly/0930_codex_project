@@ -1,0 +1,73 @@
+{
+  "clientDate": "2026-10-08",
+  "timezone": "Asia/Shanghai",
+  "recordedAt": "2026-10-08T04:42:18.475300+00:00",
+  "status": "publication_verified",
+  "publicationCommit": "ba2de5d03ed9c7801557fab8aa046b5f717a315b",
+  "pagesRun": "https://github.com/yydshly/0930_codex_project/actions/runs/37728186012",
+  "publicURL": "https://yydshly.github.io/0930_codex_project/projects/007-koi-scene-lab/",
+  "runtimeVersion": 20,
+  "understandingVersion": 21,
+  "runtimeBundleSha256": "fbd61419d326470cdd2a69f4f44bf06fad42c4faa8020e478b1f3f9fd0046b36",
+  "guide": {
+    "path": "assets/library-value-map-v21.png",
+    "sha256": "595234a1f46a6052fea0cbcb2e28dd6be2d0630cc47cbd62d8a76e3d9b349907",
+    "width": 2560,
+    "height": 3885,
+    "sameAsUserSelectedImage": true
+  },
+  "automatic": {
+    "passed": 278,
+    "failed": 0,
+    "tap": "notes/numerical-publication-20261008.tap"
+  },
+  "nativeLocalReading": {
+    "passed": 12,
+    "failed": 0,
+    "record": "notes/understanding-native-publication-20261008.json"
+  },
+  "nativeLiveReading": {
+    "passed": 12,
+    "failed": 0,
+    "record": "notes/understanding-native-publication-20261008-live.json"
+  },
+  "original": {
+    "checks": 8,
+    "errors": 0,
+    "record": "notes/original-validation-publication-20261008.json",
+    "scope": "Initialization and UI state under Low/SwiftShader; simulation frame function stopped after initialization. No fresh original screenshot acceptance."
+  },
+  "courtyard": {
+    "passed": 6,
+    "failed": 0,
+    "record": "notes/browser-publication-20261008.json",
+    "scope": "Cat initialization, desktop/mobile framing, pause and patrol; raw capture review. G, detailed feeding, GLB interaction and context recovery are not repeated."
+  },
+  "visual": {
+    "courtyardRawReviewed": 3,
+    "record": "notes/scene-capture-publication-20261008.json",
+    "originalScreenshotAttempt": "notes/original-validation-publication-20261008-attempt1.json",
+    "originalScreenshotAcceptance": false
+  },
+  "http": {
+    "passed": 35,
+    "failed": 0,
+    "record": "notes/deployment-checks.json",
+    "scope": "All 27 Koi assets, entry alias, catalog and six previous public entry pages."
+  },
+  "upstream": {
+    "lockedSnapshots": 9,
+    "exactInGitIndex": true,
+    "runtimeOnlyTwoDependencySubstitutions": true,
+    "record": "notes/package-publication-20261008.json"
+  },
+  "limitations": [
+    "Photo reconstruction, printable manufacturing exports, physical delivery and consistency acceptance remain proposals.",
+    "Original screenshot readback timed out in the first software-rendered attempt; that failure remains separate from the passing initialization/UI retry.",
+    "No photo-realism, true device-performance or GPU-memory acceptance."
+  ],
+  "git": {
+    "pushedTo": "main",
+    "otherUnpublishedProjectsIncluded": false
+  }
+}
