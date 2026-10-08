@@ -1,0 +1,57 @@
+{
+  "game": "balance",
+  "checkedAt": "2026-10-03",
+  "physics": {
+    "name": "cannon-es",
+    "version": "0.20.0",
+    "repository": "https://github.com/pmndrs/cannon-es",
+    "primaryVersionSource": "https://raw.githubusercontent.com/pmndrs/cannon-es/v0.20.0/package.json",
+    "download": "https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cannon-es.js",
+    "license": "MIT",
+    "licenseSource": "https://raw.githubusercontent.com/pmndrs/cannon-es/v0.20.0/LICENSE",
+    "local": "web/vendor/physics/cannon-es-0.20.0.js",
+    "localLicense": "web/vendor/physics/LICENSE",
+    "sha256": "f0700cbd3a482954949b9d58c1b0f76dcc74767750297647a39d8c40dd63d37c",
+    "licenseSha256": "4714d0272f50cb21fe46fe29333c7c600d3c85b5ebd2a80f4db07e8cfccbf5b2",
+    "apiDocumentation": [
+      "https://pmndrs.github.io/cannon-es/docs/classes/LockConstraint.html",
+      "https://pmndrs.github.io/cannon-es/docs/classes/World.html"
+    ],
+    "scope": "Standalone pinned ES module. Rigid gravity, collision, friction, finite-force lock grasp, body rotation, contact pressure sensing, a physical gate collider and an inspection cart sphere proxy. No remote runtime dependency."
+  },
+  "reusedAuthoredModels": [
+    {
+      "author": "Kenney",
+      "pack": "Nature Kit 2.1",
+      "source": "https://kenney.nl/assets/nature-kit",
+      "license": "CC0-1.0",
+      "localLicense": "web/assets/showcase/nature/License.txt",
+      "base": "web/assets/showcase/nature/",
+      "files": ["bridge_center_woodRound.glb", "fence_planks.glb", "rock_smallFlatA.glb"]
+    },
+    {
+      "author": "Kenney",
+      "pack": "Space Station Kit 1.0",
+      "source": "https://kenney.nl/assets/space-station-kit",
+      "license": "CC0-1.0",
+      "localLicense": "web/assets/showcase/station/License.txt",
+      "base": "web/assets/showcase/station/",
+      "files": ["table-large.glb", "container.glb", "computer.glb", "pipe.glb", "wall-window.glb", "balcony-rail.glb", "door-double-closed.glb"]
+    },
+    {
+      "author": "Kenney",
+      "pack": "Blaster Kit 2.1",
+      "source": "https://kenney.nl/assets/blaster-kit",
+      "license": "CC0-1.0",
+      "localLicense": "web/assets/showcase/blaster/License.txt",
+      "base": "web/assets/showcase/blaster/",
+      "files": ["crate-medium.glb"]
+    }
+  ],
+  "generatedSurface": {
+    "file": "web/assets/game-forms/balance/stone.webp",
+    "mode": "Built-in ImageGen; root systems-generation manifest records the full prompt and source.",
+    "use": "Repeated authored stone surface on the workshop floor and rigid supports."
+  },
+  "originalScene": "Original workshop layout, lighting, pressure gate circuit and short physical inspection puzzle. The visible bridge, crate, door and workshop props use authored assets; simple meshes provide architectural slabs, metal trims, grip reticle and inspection cart detailing."
+}

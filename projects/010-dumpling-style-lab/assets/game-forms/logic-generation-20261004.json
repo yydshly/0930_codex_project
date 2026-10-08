@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-04",
+  "assets": [
+    {
+      "key": "dome",
+      "module": "bubble",
+      "prompt": "Original premium indie puzzle game background, 16:9 landscape. A luminous Art Nouveau glass conservatory at twilight, looking frontally into a tall jewel workshop. Intricate bronze archways at far left and right edges, deep indigo glass and tiny stars behind, restrained cyan and honey light, exquisite painterly 3D rendered materials, sophisticated adult collectible aesthetic. The large central area from x 26% to 74%, y 12% to 79% must be an uncluttered dark blue softly graduated space for a separate hexagonal bubble puzzle; no balls, no grid, no objects inside that area. Bottom center has a subtle brass pedestal and gently glowing circular launcher recess, decorative not functional. Side alcoves contain detailed glass vessels and distant indoor foliage. Distinct focal hierarchy, professional hand-authored art feel, atmospheric depth, texture detail, cinematic but readable. No text, no letters, no UI, no people, no screenshots, no logos, no watermark. Exact original artwork, unrelated to any franchise.",
+      "output_hint": "Generated images are saved to D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c as D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-9dbe7543-25fc-4960-9a73-dbb6e69b28a9.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "tool": "builtin image_gen",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "raw_file": "assets/game-forms/logic-sources/dome.png",
+      "raw_sha256": "aff136417730294a345f22f26a44af33218293223e40fe490cfc51dc24bad9c9",
+      "runtime_file": "web/assets/game-forms/bubble/dome.webp",
+      "runtime_sha256": "4c93bd1ef1bc083ab3a5bd05fcdc7ccd28dd8b9d72a549321fbeeac00c07f9dc",
+      "conversion": "WebP encoding only; original dimensions and alpha preserved."
+    },
+    {
+      "key": "orbs",
+      "module": "bubble",
+      "prompt": "A transparent background production sprite atlas for an elegant glass bubble puzzle game. Four perfectly circular spherical glass jewels, each centered in one quadrant of a square image: upper left aquamarine with an inset diamond symbol, upper right amber honey with an inset triangular symbol, lower left violet amethyst with a four point star symbol, lower right rose pink with an inset small circle symbol. Same sizes, front facing, each sphere about 35% of the entire image width, exactly centered at (25%,25%),(75%,25%),(25%,75%),(75%,75%). Empty padding transparent, no sphere overlapping quadrant boundary. Meticulously rendered optical glass, thin brass equatorial ring, rich translucent colored core, restrained white reflection, beautiful caustics and tiny internal flecks. Symbols are geometric metal inlay, visually distinct even without color. Beautiful adult art direction, exquisite premium game collectible object, legible at 60px, no text no numbers no shadows extending outside sphere silhouette, no tabletop, no backdrop.",
+      "output_hint": "Generated images are saved to D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c as D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-dc952dce-a165-4a35-a627-c1f9c89c11ee.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "tool": "builtin image_gen",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "raw_file": "assets/game-forms/logic-sources/orbs.png",
+      "raw_sha256": "6f861432695371d1d132d20ca6e9dced8e1c56bcbe66f1cad027938e4f2ef813",
+      "runtime_file": "web/assets/game-forms/bubble/orbs.webp",
+      "runtime_sha256": "9279a0e8a2e3dc473c3e61cb1aee5a84dfd410f5dd9973472cd1cdffdce24eed",
+      "conversion": "WebP encoding only; original dimensions and alpha preserved."
+    },
+    {
+      "key": "sea",
+      "module": "sonar",
+      "prompt": "Premium original underwater exploration puzzle game scene, landscape16:9. A beautifully painted semi-realistic deep ocean observatory seen from above at a slight perspective, teal sea and monumental ancient submerged stone ruins, hazy shafts of sunlight, delicate coral reefs and bioluminescent amber plankton along outer edges. A small refined research submersible in far left bottom and distant whale silhouette at right top. The rectangular center x26%-74%,y13%-85% must be an uncluttered dark teal seafloor/navigation table area, very subtle relief texture, to hold separately rendered mine-deduction grid tiles. No grid, no numbers, no game HUD inside the image. Art directing: elegant moody nautical science, deep navy and jade with small gold highlights, atmospheric volumetric depth, meticulously detailed materials at borders, excellent real indie game key art quality, no childish cartoon, no people, no text, no watermark. Central space must be readable, dark, quiet. This image is original, not fan art.",
+      "output_hint": "Generated images are saved to D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c as D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-b7d81618-7400-4548-889f-b2e8317eb5df.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "tool": "builtin image_gen",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "raw_file": "assets/game-forms/logic-sources/sea.png",
+      "raw_sha256": "3cb0b6f53b1e7c6235f7ddeac2994347625dfd5e8d7a3c02775da77b6f566160",
+      "runtime_file": "web/assets/game-forms/sonar/sea.webp",
+      "runtime_sha256": "b81a0e7e50b9d796addb447d9635d031d14724e63f05ed48359cebdc69e9b8c3",
+      "conversion": "WebP encoding only; original dimensions and alpha preserved."
+    },
+    {
+      "key": "tiles",
+      "module": "sonar",
+      "prompt": "Transparent background game sprite atlas, square image with four equally sized square tiles centered in quadrants, exact positions 25%25%,75%25%,25%75%,75%75%. Each tile has beveled square corners and occupies 37% of full image width, does not overlap quadrant edge. Top left: closed dark jade ceramic sonar tile with finely embossed compass rosette and brass frame. Top right: revealed pale sea-glass panel with blank flat luminous blue-green center for a number overlay, brass frame. Bottom left: flagged danger tile, closed jade tile bearing a sculptural amber brass warning pennant. Bottom right: mine tile, dark tile with original mechanical sea urchin shaped black pressure mine and restrained warm red central indicator. Strict top-down frontal orthographic viewpoint, no perspective tilt, physically rendered material, consistent edge size and lighting, subtle patina, beautiful adult premium nautical puzzle UI, legible small, no words no numbers no letters, no cast shadow outside tile silhouette, no background. These are standalone sprite assets with actual transparent alpha.",
+      "output_hint": "Generated images are saved to D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c as D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-715d24c1-5298-41c6-8ce2-3e290809c411.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "tool": "builtin image_gen",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "raw_file": "assets/game-forms/logic-sources/tiles.png",
+      "raw_sha256": "c2c2e1e96eece774cd001e6eac7fb5a0af14aa2cc12ca8cf1ac17030eff7ebc0",
+      "runtime_file": "web/assets/game-forms/sonar/tiles.webp",
+      "runtime_sha256": "1791c541cde3cfece5379ada5c6b565ad887a331e9ee47e7d377776e71baf8db",
+      "conversion": "WebP encoding only; original dimensions and alpha preserved."
+    }
+  ]
+}

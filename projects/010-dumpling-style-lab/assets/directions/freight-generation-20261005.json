@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-05",
+  "mode": "built-in ImageGen",
+  "purpose": "Original Coastline Freight network direction",
+  "images": [
+    {
+      "file": "web/assets/directions/freight/coastal-valley.png",
+      "source": "D:/codex/home/generated_images/01a0f829-1d38-7672-a112-e0a52908ac0c/exec-773c8430-ebda-4bfa-8697-36a7b9f6edb5.png",
+      "transparent_background": false,
+      "prompt": "Use case: stylized-concept. Asset type: original high quality transport management game world terrain texture, landscape 1536x1024. Flat orthographic overhead aerial view of a lush coastal valley, entire image viewed vertically from above, premium detailed painted strategy-game terrain, mature realistic miniature materials, mossy olive grass and subtle farmland, clusters of pine trees at far outer corners, low rocky ridges near upper right edge. A clear blue river flows almost vertically from top to bottom at exactly one third of the image width, occupying about five percent of the width, grassy banks; river is straight enough in the central region for orthogonal transport roads. Broad empty readable land across central 80 percent for placing separate game stations and roads. Warm late afternoon light, nuanced greens, blue water, cream soil. Fine natural texture without noisy contrast. No buildings, no roads, no vehicles, no text, no HUD, no visible tile grid, no arrows, no logos. Beautiful production-quality top-down miniature landscape, not abstract geometry, not childish."
+    },
+    {
+      "file": "web/assets/directions/freight/stations-atlas.png",
+      "source": "D:/codex/home/generated_images/01a0f829-1d38-7672-a112-e0a52908ac0c/exec-6cd9e672-2517-4a5c-af77-0319f8d94896.png",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Asset type: original game building atlas with true transparent alpha. EXACT 3 columns and 2 rows, landscape 1536x1024, six separate equal 512x512 cells. Consistent flat orthographic overhead camera, a slight view of roof side depth only, not isometric. Richly detailed painted miniature coastal freight region, mature strategy-game visuals, warm brick, sage-green roofs, cream stone, amber windows, subtle dimensional shadows. Top left a compact timber logging yard with saw shed and neatly stacked logs; top middle a compact sawmill factory with weathered teal roof and covered lumber rack; top right a small elegant coastal town block with several terracotta houses around a courtyard. Bottom left a wheat farm warehouse with grain silo and golden crates; bottom middle a friendly mature village market cluster with pale canvas awnings and a cream loading court; bottom right a freight transfer depot with teal cargo shed, stacked brown crates and a small loading apron. Every entire building cluster contained within its equal cell with generous transparent margin, consistent size and lighting. Keep the southern / bottom edge as a clear frontage for trucks. NO vehicles, no people, no words, no background outside each sprite, no labels or grid. Distinct readable silhouettes, detailed premium painted game sprites."
+    },
+    {
+      "file": "web/assets/directions/freight/loaded-trucks.png",
+      "source": "D:/codex/home/generated_images/01a0f829-1d38-7672-a112-e0a52908ac0c/exec-6580bbf9-3ab4-4e50-ba1f-3c74999c459a.png",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Asset type: original transport game vehicle sprite atlas, true transparent alpha background. EXACT 4 columns and 3 rows, twelve separate equal 384x341 cells in landscape 1536x1024. Flat orthographic overhead view, consistent realistic miniature truck size. Columns are EAST right-facing, WEST left-facing, NORTH upward-facing, SOUTH downward-facing. First row four teal freight trucks with open cargo beds filled with round timber logs, respectively in those four directions. Second row four rust-red flatbed trucks carrying stacked cut timber planks, same four directions. Third row four warm ochre delivery trucks carrying sacks of grain in open cargo beds, same four directions. All full vehicles centered within their cells, plenty of transparent margin, small crisp wheels and cabin roof, mature premium hand-painted strategy game sprites with subtle shadows. Correct overhead trucks, no isometric angle, no side profile. Strong readable directional silhouettes, no text, no road, no labels, no grid, no background outside sprites."
+    },
+    {
+      "file": "web/assets/directions/freight/empty-trucks.png",
+      "final": false,
+      "source": "D:/codex/home/generated_images/01a0f829-1d38-7672-a112-e0a52908ac0c/exec-89de767a-a657-4359-a7f5-1d42f6839989.png",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Asset type: original game empty freight truck sprite atlas with genuine transparent alpha, square 1024x1024, EXACT 2 columns and 2 rows with four equal 512x512 cells. Flat orthographic overhead view, premium detailed painted transport strategy game miniature vehicles with warm natural light and subtle shadow. Four small unbranded teal freight trucks, EMPTY open flatbed cargo areas with visible clean timber deck, no logs or cargo in any truck. Top left heading EAST right, top right heading WEST left, bottom left heading NORTH up, bottom right heading SOUTH down. All entire trucks centered and fully contained in their cell, consistent real size, comparable longest vehicle dimension 340 pixels, generous transparent margins. Correct top-down camera, not side profile, not isometric. Distinct cab roof and tiny wheels, crisp realistic materials, no text, no grid, no roads, no background outside truck sprites."
+    },
+    {
+      "file": "web/assets/directions/freight/empty-fleet.png",
+      "source": "D:/codex/home/generated_images/01a0f829-1d38-7672-a112-e0a52908ac0c/exec-eeb403b0-37d4-4d19-b47a-9ab7695a7a3f.png",
+      "input_reference": "web/assets/directions/freight/loaded-trucks.png",
+      "final": true,
+      "transparent_background": true,
+      "prompt": "Use case: precise-object-edit. Edit the supplied freight truck sprite atlas into its matching EMPTY vehicles atlas. Preserve the EXACT 4 columns by 3 rows layout and each vehicle's position, dimensions, painted style, camera direction, shadow and details. Preserve the twelve truck cabins and body paint colors exactly: teal first row, rust-red second row, ochre third row. Preserve current column orientations exactly: WEST left-facing first column, EAST right-facing second column, NORTH upward-facing third column, SOUTH downward-facing fourth column. Change ONLY the cargo beds: remove all round timber logs, cut planks, and grain sacks from every truck, reveal empty weathered wooden bed floors with rails. No cargo remains on any truck. Keep a genuinely transparent alpha background everywhere outside vehicles, no backdrop, no labels or text, no additional objects. Landscape 1536x1024. These images are the unloaded states of the same individual vehicles, so their identity, paint colors and size must remain consistent."
+    }
+  ],
+  "atlas_mapping": "Loaded and matching empty fleet use cargo rows teal/logs, rust-red/boards, ochre/grain; columns west, east, north, south. The renderer remaps east/west. Initial empty-trucks.png preview remains preserved but inactive."
+}

@@ -1,0 +1,71 @@
+{
+  "tool": "builtin image_gen",
+  "created": "2026-10-04",
+  "purpose": "Two new playable game forms: scene search and rotating conduit puzzle",
+  "assets": [
+    {
+      "role": "seek-room",
+      "prompt": "Original premium hidden-object puzzle game scene, 16:9 wide composition, exquisitely hand-painted European storybook cutaway illustration of a seaside collector's conservatory at sunset. Cozy sophisticated adult art direction, rich burnt amber light, teal shadows, fine woodgrain, brass, ceramics, lush botanical textures, professional commercial game key art clarity. No people, no words or text, no interface, no icons. Entire room fits wide frame: left tall shelves of old books and botanical jars, central large round window looking onto dusk blue sea and sailing ship, foreground wooden desk with brass telescope on tripod, right cabinet and flowering plants. Many small but distinctly readable objects to visually search, intentionally include one large red ceramic teapot on the left middle shelf, one blue butterfly pinned on a board upper right, one white seashell on the central desk, one brass pocket watch on desk right, one pair of spectacles on an open book in foreground lower left, one small green frog ceramic figurine on right cabinet, one orange starfish on shelf left bottom, one feather quill in ink bottle in foreground center. Each of these eight recognisable objects fully visible, clear silhouette, not covered or deformed. Additional interesting coherent clutter: postcards, bottles, globe, maps, ivy, leather satchel. Preserve a calm dark top band 8 percent for title overlay and bottom 10 percent for game target list overlay, keep all eight search objects within inner region y 14–82 percent, x 6–94 percent. Perspective gentle frontal, never fisheye. Complex attractive composition with visual hierarchy, crisp craftsmanship, no flat geometric placeholder style, no external game IP.",
+      "source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-e522b56a-df2d-4f9f-9f64-4d2c71741bde.png",
+      "raw": "assets/game-forms/observation-sources/seek-room.png",
+      "runtime": "web/assets/game-forms/seek/room.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "fd15735cb8f938e88dd51c759d192ad05c39c27e1e799108eab7aab3397674f8",
+      "runtime_sha256": "bdaf4a473ebc771d279abbc0b475b1786af984c07f6c6a75704ac09abae1bb6c"
+    },
+    {
+      "role": "conduit-cabinet",
+      "prompt": "Original high-end industrial puzzle game environment artwork, 16:9 wide, straight frontal orthographic view of an elegant Victorian copper-and-ceramic pump control cabinet in an old coastal waterworks. Visually sophisticated premium game art: photorealistic aged brass fittings, deep navy enamel, warm copper patina, soft cyan indicator lighting, tiny brushed-metal scratches, warm theatrical sidelight, gentle ambient occlusion. The main central 64 percent of image from x18 to82 percent, y13 to88 percent is one perfectly flat EMPTY very dark desaturated blue rectangular recessed backing panel, uninterrupted clean surface reserved for a game pipe grid overlay. No objects and no pipe network inside this panel. The left and right narrow edges have thick copper supply pipes, valves, a large round pressure gauge left, a glass reservoir right; machinery elegantly frames central negative space. Top and bottom borders with rivets. No lettering, no text, no UI, no logos, no people. Entire cabinet fully visible, no perspective angle, premium 3D render quality with subtle real material depth, not flat cartoon, not a generic sci-fi HUD.",
+      "source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-3e90d16c-a439-4c7f-a674-4bfa68b9e370.png",
+      "raw": "assets/game-forms/observation-sources/conduit-cabinet.png",
+      "runtime": "web/assets/game-forms/conduit/cabinet.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "95749a08e84eafe7c812b5c2efbfdf761e7c500d0caf77e6b064d8e533dbd97e",
+      "runtime_sha256": "460dbe54296137154b036819b27c7678f0d382516b987691dda019148515672c"
+    },
+    {
+      "role": "conduit-elbow",
+      "prompt": "One original rotation-ready square puzzle-game tile asset, perfectly square front-on orthographic 3D product render. Dark midnight navy enamel square plate with a tiny brushed brass border and four unobtrusive corner rivets. Exactly ONE copper pipe makes a smooth quarter-turn elbow route joining the CENTER OF THE LEFT EDGE of the square plate to the CENTER OF THE TOP EDGE. Both copper pipe ends reach exactly to the square plate edge, end diameter identical. Centerline of path goes from left mid-edge horizontally towards the center, then smoothly curves upward to top mid-edge. Tube width 16 percent of tile width, gorgeous polished worn copper with subtle teal oxidisation, two brass collars close to the edges. Everything contained in this single square tile, front-on no perspective, no extra pipes, no text, no logo, no icons, no water or visual effects. Background outside the square tile fully transparent, tile fills 90 percent image leaving uniform narrow transparent margin. Match sophisticated industrial pump cabinet, excellent material shading and believable tube volume. Source image 1024 x 1024, square.",
+      "source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-0731ff89-9f37-4566-8a94-6999306f9e27.png",
+      "raw": "assets/game-forms/observation-sources/conduit-elbow.png",
+      "runtime": "web/assets/game-forms/conduit/elbow.webp",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        1232,
+        1254
+      ],
+      "source_sha256": "80dc1c3c843d343abf2d1e5c91fbf45a4d7c2b0ccc2f6d2e6cc5e46415fa475f",
+      "runtime_sha256": "9005d4d4168f4748de4c35558bbbc59bfa8879bbdd1901e8b8eb1b55f2e3467f"
+    },
+    {
+      "role": "conduit-straight",
+      "prompt": "One original rotation-ready perfectly SQUARE puzzle-game tile asset, front-on orthographic 3D product render. A square dark midnight navy enamel plate with tiny brushed brass border and four corner rivets, aged navy paint, sophisticated commercial industrial game art. Exactly ONE thick straight copper tube crosses HORIZONTALLY from exact CENTER OF LEFT EDGE to exact CENTER OF RIGHT EDGE. Tube is perfectly centred y=50 percent, ends flush with square plate edges, tube width 16 percent of tile width, two brass collars close to each edge, subtle teal patina and excellent realistic warm metallic shading. No bent pipes, no vertical pipes, no branching, no text, no symbols, no water, no extra object. Plate fills 90 percent of square image with even small transparent margin outside, alpha transparent outside plate. Front-on no perspective tilt. Match a high quality Victorian copper pump cabinet in deep navy and brass. Crisp rivet detail, tangible copper volume. Both pipe end centres exactly match square mid-edge. Square image 1024 x 1024.",
+      "source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-437190eb-e2c3-4b56-8baa-a30ae09d5916.png",
+      "raw": "assets/game-forms/observation-sources/conduit-straight.png",
+      "runtime": "web/assets/game-forms/conduit/straight.webp",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha_bbox": [
+        0,
+        21,
+        1182,
+        1254
+      ],
+      "source_sha256": "6b4d6296fbc14f4786a2172e06811a84eff3353f423f611fa5e5bc47a2f431b0",
+      "runtime_sha256": "0ac5208c10544a0705a43da5d57b04baa6e46dd836f9c5be269e685cb2956adf"
+    }
+  ]
+}

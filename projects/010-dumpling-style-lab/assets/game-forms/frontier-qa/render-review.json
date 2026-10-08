@@ -1,0 +1,438 @@
+{
+  "method": "Actual production factories / draw() with Skia Canvas and DOM lifecycle double. 3D uses production compatibility renderer of same THREE scene. Room uses redacted HTTP-test state fixtures. Not a browser screenshot or WebGL validation.",
+  "scenes": 27,
+  "results": [
+    {
+      "id": "tempo",
+      "phase": "initial",
+      "won": false,
+      "renderer": "production Canvas",
+      "status": {
+        "goal": "激活三座信标，再回到左上原点",
+        "message": "方向键移动。你停下时，红色脉冲几乎停住；移动才让世界恢复速度。观察弹道，规划下一小段路线。",
+        "stats": [
+          "信标 0/3",
+          "世界 4%",
+          "触碰 0"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "tempo",
+      "phase": "progress",
+      "won": false,
+      "renderer": "production Canvas",
+      "status": {
+        "goal": "激活三座信标，再回到左上原点",
+        "message": "方向键移动。你停下时，红色脉冲几乎停住；移动才让世界恢复速度。观察弹道，规划下一小段路线。",
+        "stats": [
+          "信标 1/3",
+          "世界 100%",
+          "触碰 0"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "tempo",
+      "phase": "complete",
+      "won": true,
+      "renderer": "production Canvas",
+      "status": {
+        "goal": "静时之庭 · 本段完成",
+        "message": "三座时间信标已激活，并返回原点",
+        "stats": [
+          "信标 3/3",
+          "世界 100%",
+          "触碰 0"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "flux",
+      "phase": "initial",
+      "won": false,
+      "renderer": "production Canvas",
+      "status": {
+        "goal": "右侧底部收集 75 格水，并扑灭至少 5 格火",
+        "message": "选材料后在舱内按住拖动投放。先放火，再放水观察灭火；木材可引燃，沙会下落，水会流向低处，蒸汽会上升消散。右侧水槽位于底部。",
+        "stats": [
+          "水槽 0/75",
+          "灭火 0/5",
+          "投放 0"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "flux",
+      "phase": "progress",
+      "won": false,
+      "renderer": "production Canvas",
+      "status": {
+        "goal": "右侧底部收集 75 格水，并扑灭至少 5 格火",
+        "message": "选材料后在舱内按住拖动投放。先放火，再放水观察灭火；木材可引燃，沙会下落，水会流向低处，蒸汽会上升消散。右侧水槽位于底部。",
+        "stats": [
+          "水槽 25/75",
+          "灭火 19/5",
+          "投放 45"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "flux",
+      "phase": "complete",
+      "won": true,
+      "renderer": "production Canvas",
+      "status": {
+        "goal": "元素玻璃舱 · 本段完成",
+        "message": "水在重力下进入右侧水槽，并真实扑灭了火焰",
+        "stats": [
+          "水槽 79/75",
+          "灭火 46/5",
+          "投放 114"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "coil",
+      "phase": "initial",
+      "won": false,
+      "renderer": "production software fallback projecting same Three.js geometry",
+      "status": {
+        "goal": "盘住两根柱体，爬高取回两枚信环",
+        "message": "↑ 前行 / ↓ 后退，← → 转向。靠近柱体后按盘绕，左右键绕柱；绕满四分之三圈后，按爬高。松开会下落。分节身体跟随头部并避开柱体。",
+        "stats": [
+          "信环 0/2",
+          "自由移动",
+          "高度 0.2"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "coil",
+      "phase": "progress",
+      "won": false,
+      "renderer": "production software fallback projecting same Three.js geometry",
+      "status": {
+        "goal": "盘住两根柱体，爬高取回两枚信环",
+        "message": "↑ 前行 / ↓ 后退，← → 转向。靠近柱体后按盘绕，左右键绕柱；绕满四分之三圈后，按爬高。松开会下落。分节身体跟随头部并避开柱体。",
+        "stats": [
+          "信环 1/2",
+          "盘柱 1 · 332°",
+          "高度 2.4"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "coil",
+      "phase": "complete",
+      "won": true,
+      "renderer": "production software fallback projecting same Three.js geometry",
+      "status": {
+        "goal": "盘鳞浮庭 · 完成",
+        "message": "两枚高处信环已取回 · 身体盘绕形成了支撑",
+        "stats": [
+          "信环 2/2",
+          "盘柱 2 · 332°",
+          "高度 3.2"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "axiom",
+      "phase": "initial",
+      "won": false,
+      "renderer": "production Canvas",
+      "status": {
+        "goal": "改变岩石规则，再抵达右侧航灯",
+        "message": "选择 STOP 或 PUSH，用词块方向按钮调整位置。ROCK IS STOP 挡路，ROCK IS PUSH 可推岩石。先挪开 STOP，再把 PUSH 放入规则行。人物方向按钮控制探索者。",
+        "stats": [
+          "ROCK IS STOP",
+          "选中 STOP"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "axiom",
+      "phase": "progress",
+      "won": false,
+      "renderer": "production Canvas",
+      "status": {
+        "goal": "改变岩石规则，再抵达右侧航灯",
+        "message": "选择 STOP 或 PUSH，用词块方向按钮调整位置。ROCK IS STOP 挡路，ROCK IS PUSH 可推岩石。先挪开 STOP，再把 PUSH 放入规则行。人物方向按钮控制探索者。",
+        "stats": [
+          "ROCK IS PUSH",
+          "选中 PUSH"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "axiom",
+      "phase": "complete",
+      "won": true,
+      "renderer": "production Canvas",
+      "status": {
+        "goal": "字石航灯 · 本段完成",
+        "message": "规则文字改变了通行条件 · 触碰航灯完成",
+        "stats": [
+          "ROCK IS PUSH",
+          "选中 PUSH"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "folio",
+      "phase": "initial",
+      "won": false,
+      "renderer": "production Canvas",
+      "status": {
+        "goal": "依次连接书阁 → 橙庭 → 钟楼 → 深海",
+        "message": "点选画框，交换到指定位置，再放大圆门。当前世界要在左、下一世界要在紧邻右侧，两幅都放大后按连接；光点会实际穿过画框。可拖一幅到另一幅交换。",
+        "stats": [
+          "光旅 0/3",
+          "选中画框 1"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "folio",
+      "phase": "progress",
+      "won": false,
+      "renderer": "production Canvas",
+      "status": {
+        "goal": "依次连接书阁 → 橙庭 → 钟楼 → 深海",
+        "message": "光点已穿过相连的门，进入下一幅世界。",
+        "stats": [
+          "光旅 1/3",
+          "选中画框 2"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "folio",
+      "phase": "complete",
+      "won": true,
+      "renderer": "production Canvas",
+      "status": {
+        "goal": "四页光旅 · 本段完成",
+        "message": "四幅绘本通过画框重组，完成了一条连贯旅程",
+        "stats": [
+          "光旅 3/3",
+          "选中画框 2"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "expose",
+      "phase": "initial",
+      "won": false,
+      "renderer": "production software fallback projecting same Three.js geometry",
+      "status": {
+        "goal": "用两张照片跨过断口，走到最远平台",
+        "message": "方向键 / WASD 移动，拖动画面或镜头按钮转向。靠近取景台拍摄，面向断口放置照片。首版两张预设建筑照片会展开为真实桥面；走过桥再拍下一张。",
+        "stats": [
+          "照片 0/2",
+          "桥面 0/2",
+          "平台 1/3",
+          "软件兼容模式"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "expose",
+      "phase": "progress",
+      "won": false,
+      "renderer": "production software fallback projecting same Three.js geometry",
+      "status": {
+        "goal": "用两张照片跨过断口，走到最远平台",
+        "message": "照片已展开为可行走的实体桥面",
+        "stats": [
+          "照片 1/2",
+          "桥面 1/2",
+          "平台 2/3",
+          "软件兼容模式"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "expose",
+      "phase": "complete",
+      "won": true,
+      "renderer": "production software fallback projecting same Three.js geometry",
+      "status": {
+        "goal": "取景造境 · 完成",
+        "message": "两张照片变为实体通路 · 你已穿过新增桥面",
+        "stats": [
+          "照片 2/2",
+          "桥面 2/2",
+          "平台 3/3",
+          "软件兼容模式"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "script",
+      "phase": "initial",
+      "won": false,
+      "renderer": "production Canvas",
+      "status": {
+        "goal": "编写程序，把三份邮件送到出口",
+        "message": "用指令按钮编排程序，点程序条目选中后可上移、下移或删除。入口在左，出口在右；中央分拣台挡路。LOOP 在任务未完成时回到首条。单步观察，复位后重跑。",
+        "stats": [
+          "投递 0/3",
+          "执行 0 步",
+          "程序暂停"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "script",
+      "phase": "progress",
+      "won": false,
+      "renderer": "production Canvas",
+      "status": {
+        "goal": "编写程序，把三份邮件送到出口",
+        "message": "用指令按钮编排程序，点程序条目选中后可上移、下移或删除。入口在左，出口在右；中央分拣台挡路。LOOP 在任务未完成时回到首条。单步观察，复位后重跑。",
+        "stats": [
+          "投递 1/3",
+          "执行 8 步",
+          "程序暂停"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "script",
+      "phase": "complete",
+      "won": true,
+      "renderer": "production Canvas",
+      "status": {
+        "goal": "指令邮局 · 本段完成",
+        "message": "三份邮件已由你编排的程序实际送达",
+        "stats": [
+          "投递 3/3",
+          "执行 38 步",
+          "程序暂停"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "echo",
+      "phase": "initial",
+      "won": false,
+      "renderer": "production Canvas",
+      "status": {
+        "goal": "戴耳机，沿三座空间声标抵达出口",
+        "message": "开始会打开声音。← → 转身，↑ 前行，↓ 后退；让声标落在正前方再走近。可校准左右耳，也可打开训练地图。暂停、静音和切换页面会停止声音。",
+        "stats": [
+          "声标 0/3",
+          "声音关闭",
+          "雾中探索"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "echo",
+      "phase": "progress",
+      "won": false,
+      "renderer": "production Canvas",
+      "status": {
+        "goal": "戴耳机，沿三座空间声标抵达出口",
+        "message": "找到一座声标。下一段声音已经响起。",
+        "stats": [
+          "声标 1/3",
+          "声音关闭",
+          "雾中探索"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "echo",
+      "phase": "complete",
+      "won": true,
+      "renderer": "production Canvas",
+      "status": {
+        "goal": "听见雾港 · 本段完成",
+        "message": "沿空间声标找到雾港出口",
+        "stats": [
+          "声标 3/3",
+          "声音关闭",
+          "雾中探索"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "assembly",
+      "phase": "initial",
+      "won": false,
+      "renderer": "production Canvas",
+      "status": {
+        "goal": "船员完成任务；潜伏者制造危机并隐藏身份",
+        "message": "三至六位真实玩家开局。创建房间后复制链接，用其他窗口加入。只会把自己的身份发给当前玩家；会议讨论和投票由房间服务同步。",
+        "stats": [
+          "房间 V9RV7Q",
+          "3/6 人",
+          "等待真实玩家"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "assembly",
+      "phase": "progress",
+      "won": false,
+      "renderer": "production Canvas",
+      "status": {
+        "goal": "船员完成任务；潜伏者制造危机并隐藏身份",
+        "message": "三至六位真实玩家开局。创建房间后复制链接，用其他窗口加入。只会把自己的身份发给当前玩家；会议讨论和投票由房间服务同步。",
+        "stats": [
+          "房间 V9RV7Q",
+          "3/6 人",
+          "航行任务 0/6"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "assembly",
+      "phase": "complete",
+      "won": true,
+      "renderer": "production Canvas",
+      "status": {
+        "goal": "船员获胜",
+        "message": "三至六位真实玩家开局。创建房间后复制链接，用其他窗口加入。只会把自己的身份发给当前玩家；会议讨论和投票由房间服务同步。",
+        "stats": [
+          "房间 V9RV7Q",
+          "3/6 人",
+          "船员获胜"
+        ],
+        "actions": []
+      }
+    }
+  ],
+  "pause_state_verified": true,
+  "pause_pixels_verified": true,
+  "browserVerified": false
+}

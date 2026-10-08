@@ -1,0 +1,404 @@
+{
+  "method": "Actual production createNine / draw(), Skia canvas and DOM lifecycle double. Not a browser screenshot.",
+  "scenes": 27,
+  "results": [
+    {
+      "id": "hook",
+      "frame": "initial",
+      "won": false,
+      "status": {
+        "goal": "借三个挂点抵达右侧灯台",
+        "message": "左右方向增加摆动，挂点按钮切换目标；挂住、收绳或松绳保持惯性。第三个挂点适当收绳，松绳后向左减速落到灯台。落到中间平台记录起点。",
+        "stats": [
+          "挂点 1",
+          "绳长 350",
+          "跌落 0"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "hook",
+      "frame": "progress",
+      "won": false,
+      "status": {
+        "goal": "借三个挂点抵达右侧灯台",
+        "message": "绳索已挂住，左右方向增加摆动，松绳保留速度。",
+        "stats": [
+          "挂点 2",
+          "绳长 397",
+          "跌落 0"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "hook",
+      "frame": "complete",
+      "won": true,
+      "status": {
+        "goal": "风隙航渡 · 本段已完成",
+        "message": "已释放绳索，物件保持当前惯性。",
+        "stats": [
+          "挂点 3",
+          "绳长 299",
+          "跌落 0"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "repair",
+      "frame": "initial",
+      "won": false,
+      "status": {
+        "goal": "修好一枚古旧怀表，并实际测试",
+        "message": "移开盖板→清洁→转正并装入机芯→表盘→后盖→测试。可拖动零件，也可选中后用方向按钮移动或移到表壳。装错方向和顺序不会通过。",
+        "stats": [
+          "安装 0/3",
+          "选中 机芯",
+          "等待清洁"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "repair",
+      "frame": "progress",
+      "won": false,
+      "status": {
+        "goal": "修好一枚古旧怀表，并实际测试",
+        "message": "移开盖板→清洁→转正并装入机芯→表盘→后盖→测试。可拖动零件，也可选中后用方向按钮移动或移到表壳。装错方向和顺序不会通过。",
+        "stats": [
+          "安装 2/3",
+          "选中 表盘",
+          "表壳干净"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "repair",
+      "frame": "complete",
+      "won": true,
+      "status": {
+        "goal": "时光修复铺 · 本段已完成",
+        "message": "机芯正常运行，怀表已修复。",
+        "stats": [
+          "安装 3/3",
+          "选中 后盖",
+          "表壳干净"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "delve",
+      "frame": "initial",
+      "won": false,
+      "status": {
+        "goal": "自行挖出路线，找到底层信标",
+        "message": "方向键或下方按钮逐格挖掘并移动；打开的洞壁永久留下，晶矿累计收集。镜头随深度向下，最底层第 G 列藏着古井信标。",
+        "stats": [
+          "深度 2/22",
+          "晶矿 0"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "delve",
+      "frame": "progress",
+      "won": false,
+      "status": {
+        "goal": "自行挖出路线，找到底层信标",
+        "message": "方向键或下方按钮逐格挖掘并移动；打开的洞壁永久留下，晶矿累计收集。镜头随深度向下，最底层第 G 列藏着古井信标。",
+        "stats": [
+          "深度 11/22",
+          "晶矿 1"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "delve",
+      "frame": "complete",
+      "won": true,
+      "status": {
+        "goal": "深层回声 · 本段已完成",
+        "message": "古井信标已找到，开出的路径继续保留。",
+        "stats": [
+          "深度 22/22",
+          "晶矿 2"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "cluster",
+      "frame": "initial",
+      "won": false,
+      "status": {
+        "goal": "滚动收集庭院中的 28 件收藏物",
+        "message": "方向键或点地面滚动，只有当前体积能吸附的物件才会加入。已吸附物件真实附着在球体，体积和镜头尺度随收集变化。首版为俯视球体成长。",
+        "stats": [
+          "收藏 0/28",
+          "体积 22"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "cluster",
+      "frame": "progress",
+      "won": false,
+      "status": {
+        "goal": "滚动收集庭院中的 28 件收藏物",
+        "message": "已吸附 12 件，体积变大。",
+        "stats": [
+          "收藏 12/28",
+          "体积 53"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "cluster",
+      "frame": "complete",
+      "won": true,
+      "status": {
+        "goal": "收藏物语 · 本段已完成",
+        "message": "已吸附 28 件，体积变大。",
+        "stats": [
+          "收藏 28/28",
+          "体积 70"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "paint",
+      "frame": "initial",
+      "won": false,
+      "status": {
+        "goal": "75 秒内让青色覆盖达到 58%",
+        "message": "方向键或点地面移动。喷涂消耗颜料，在自己的青色地面潜行可恢复颜料、加快移动；空白或珊瑚色地面会减慢潜行。",
+        "stats": [
+          "覆盖 0.0%",
+          "颜料 100%",
+          "剩余 75 秒"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "paint",
+      "frame": "progress",
+      "won": false,
+      "status": {
+        "goal": "75 秒内让青色覆盖达到 58%",
+        "message": "方向键或点地面移动。喷涂消耗颜料，在自己的青色地面潜行可恢复颜料、加快移动；空白或珊瑚色地面会减慢潜行。",
+        "stats": [
+          "覆盖 30.2%",
+          "颜料 46%",
+          "剩余 68 秒"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "paint",
+      "frame": "complete",
+      "won": true,
+      "status": {
+        "goal": "流彩工场 · 本段已完成",
+        "message": "青色覆盖达到 58%，本轮完成。",
+        "stats": [
+          "覆盖 58.3%",
+          "颜料 68%",
+          "剩余 56 秒"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "swarm",
+      "frame": "initial",
+      "won": false,
+      "status": {
+        "goal": "分配小队，运回三件材料",
+        "message": "先搬左岸两件材料修桥，再派至少六个队员去右岸。每件货物需要足够队员到位才会移动；交付后自动归队，也可召回。",
+        "stats": [
+          "交付 0/3",
+          "分队 6 人",
+          "左岸修桥"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "swarm",
+      "frame": "progress",
+      "won": false,
+      "status": {
+        "goal": "分配小队，运回三件材料",
+        "message": "材料已送回温室，队员将自动归队。",
+        "stats": [
+          "交付 2/3",
+          "分队 6 人",
+          "桥面接通"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "swarm",
+      "frame": "complete",
+      "won": true,
+      "status": {
+        "goal": "苔庭小队 · 本段已完成",
+        "message": "材料已送回温室，队员将自动归队。",
+        "stats": [
+          "交付 3/3",
+          "分队 6 人",
+          "桥面接通"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "kitchen",
+      "frame": "initial",
+      "won": false,
+      "status": {
+        "goal": "在顾客等待结束前完成三份热汤",
+        "message": "选工位走到台前，按操作工位：取番茄→切三次→入锅→等四秒→取汤→交付。三个订单同时等待；可先查看路线再开始。",
+        "stats": [
+          "交付 0/3",
+          "手持 空",
+          "工位 1"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "kitchen",
+      "frame": "progress",
+      "won": false,
+      "status": {
+        "goal": "在顾客等待结束前完成三份热汤",
+        "message": "选工位走到台前，按操作工位：取番茄→切三次→入锅→等四秒→取汤→交付。三个订单同时等待；可先查看路线再开始。",
+        "stats": [
+          "交付 0/3",
+          "手持 空",
+          "工位 3"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "kitchen",
+      "frame": "complete",
+      "won": true,
+      "status": {
+        "goal": "夜港晚餐 · 本段已完成",
+        "message": "三份热汤全部交付。",
+        "stats": [
+          "交付 3/3",
+          "手持 空",
+          "工位 4"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "relay",
+      "frame": "initial",
+      "won": false,
+      "status": {
+        "goal": "按说明核对线路、旋钮和脉冲，恢复航灯",
+        "message": "操作端只能看装置序号，说明端只给规则。两人轮流看各自的端并交流，也可单人切换学习。首版为同设备交接式双端演示。",
+        "stats": [
+          "操作端",
+          "步骤 1/3",
+          "核对失误 0"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "relay",
+      "frame": "progress",
+      "won": false,
+      "status": {
+        "goal": "按说明核对线路、旋钮和脉冲，恢复航灯",
+        "message": "操作端只能看装置序号，说明端只给规则。两人轮流看各自的端并交流，也可单人切换学习。首版为同设备交接式双端演示。",
+        "stats": [
+          "说明端",
+          "步骤 1/3",
+          "核对失误 0"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "relay",
+      "frame": "complete",
+      "won": true,
+      "status": {
+        "goal": "雾海协作台 · 本段已完成",
+        "message": "双方信息已核对，航灯重新点亮。",
+        "stats": [
+          "操作端",
+          "步骤 3/3",
+          "核对失误 0"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "fold",
+      "frame": "initial",
+      "won": false,
+      "status": {
+        "goal": "旋转视角，让断桥投影相接，抵达高台",
+        "message": "旋转镜头观察桥端，只有端点在画面中重合才能前行。青绿色环表示已经相接；先走到断桥边，再转动视角。",
+        "stats": [
+          "路段 0/7",
+          "当前通路可接"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "fold",
+      "frame": "progress",
+      "won": false,
+      "status": {
+        "goal": "旋转视角，让断桥投影相接，抵达高台",
+        "message": "沿当前投影通路前行。",
+        "stats": [
+          "路段 3/7",
+          "需要旋转对齐"
+        ],
+        "actions": []
+      }
+    },
+    {
+      "id": "fold",
+      "frame": "complete",
+      "won": true,
+      "status": {
+        "goal": "折光回廊 · 本段已完成",
+        "message": "沿当前投影通路前行。",
+        "stats": [
+          "路段 7/7",
+          "需要旋转对齐"
+        ],
+        "actions": []
+      }
+    }
+  ],
+  "pause_state_and_pixels_verified": true,
+  "browserVerified": false
+}

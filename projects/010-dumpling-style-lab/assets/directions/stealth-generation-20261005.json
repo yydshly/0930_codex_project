@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-05",
+  "mode": "built-in ImageGen",
+  "purpose": "Original Moonshadow Archive environmental stealth with three real solutions",
+  "atlas_mapping": "Materials3x2 stone/wood/rug/grass/metal/wall; props3x2 archive/lantern/switch/column/planter/exit; states3x2 empty archive/off lamp/off switch/same column/planter/exit; actors4x2 north(rear)/east/south(front)/west, rogue then watchman. Genuine alpha preserved without procedural editing.",
+  "images": [
+    {
+      "file": "web/assets/directions/stealth/state-variants.png",
+      "transparent_background": true,
+      "prompt": "Use case: state-accurate sprite atlas editing for an original premium stealth game. Edit the supplied facility atlas. Preserve EXACTLY canvas1536x1024, 3columns2rows equal512x512 cells, camera, scale, positioning, painterly realism, Gothic blue-grey limestone, walnut and antique brass materials, and genuine transparent alpha. Change only TOP ROW THREE sprites: LEFT ornate archive desk stays identical but REMOVE the silver-blue moon medallion from its central blue velvet tray; leave a clearly EMPTY blue velvet tray and all desk wood, papers, pen and books unchanged. MIDDLE tall brass gas lantern stays identical but is SWITCHED OFF: remove every flame, amber emission and glow, clear cold glass shows a dark burner inside; maintain fine metal detail. RIGHT brass lever switch on limestone pedestal stays identical but lever is rotated to the upper OFF position. BOTTOM ROW stone column, ivy planter and open Gothic exit doorway stay unchanged. These are alternate gameplay states of the same original props, must closely match original geometry. No new furniture, characters, scenery, backdrop, floor plane, captions, text, grid, symbols, frames, logos, shadows outside sprite or extra marks. No medallion on empty desk, no glowing flame in cold lamp. Transparent background throughout.",
+      "source": "D:/codex/home/generated_images/01a0f829-1d38-7672-a112-e0a52908ac0c/exec-62ac1522-ea91-453b-814d-164ea289bb6d.png",
+      "referenced_image_paths": [
+        "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/web/assets/directions/stealth/estate-props.png"
+      ],
+      "operation": "edit-gameplay-states",
+      "final": true
+    },
+    {
+      "file": "web/assets/directions/stealth/materials-atlas.png",
+      "transparent_background": false,
+      "prompt": "Use case: stylized-concept. Asset type: original premium top-down stealth game material atlas. Landscape 1536x1024, EXACT 3 columns and 2 rows, six equal square 512x512 cells. Straight-down orthographic texture swatches, even diffuse lighting without perspective or cast shadows. TOP ROW left: aged dark blue-grey slate paving slabs with thin silver joints, readable soft stone grain. TOP ROW middle: rich weathered dark walnut herringbone parquet floor with subtly polished wood grains. TOP ROW right: muted wine-red woven Persian-style carpet, ornate understated antique gold and indigo repeating pattern, no large outer border. BOTTOM ROW left: dense velvety deep green moss and tiny natural grasses, a soft quiet ground surface. BOTTOM ROW middle: dark wrought-iron floor grating with bronze seams and small rivets, highly readable metallic grid. BOTTOM ROW right: weathered blue-grey Gothic stone masonry with small carved decorative joints, designed to be used for solid blocked walls. Mature moonlit Gothic archive setting, beautifully painted realistic materials, restrained midnight blue, walnut, burgundy, moss green and antique brass. Every texture fills exactly its quadrant edge to edge with repeat-friendly edges. No text, letters, numbers, logos, watermarks, scene, objects, characters, labels, outer grid or extra margins.",
+      "source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-4c10329b-2be8-414a-ac7c-25f983c78331.png",
+      "final": true
+    },
+    {
+      "file": "web/assets/directions/stealth/estate-props.png",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Asset type: original premium game facility sprite atlas with genuine transparent alpha. Landscape 1536x1024, EXACT 3 columns and 2 rows, six equal 512x512 cells. All six objects are miniature sculptural assets viewed from the same high overhead orthographic camera looking down at 65 degrees. Gothic moonlit archive mansion, richly painted adult dark fantasy material style, weathered limestone, walnut wood, antique brass, small silver-blue accents. TOP ROW left: an ornate walnut archive desk with a carved blue-silver moon medallion displayed on an open felt-lined tray, a few parchment documents, unmistakable collectible centerpiece. TOP ROW middle: a tall elegant antique brass gas lamp fixture with one glass lantern containing a SMALL steady warm flame, complete pedestal, no painted halo outside the object. TOP ROW right: a compact brass wall electrical switch box on a stone pedestal with one large visible lever. BOTTOM ROW left: a weathered carved Gothic limestone column with square sturdy plinth, vertical ornament, compact footprint. BOTTOM ROW middle: an ornamental low stone planter with rich moss, ivy and three small dense shrubs, clear cover silhouette. BOTTOM ROW right: an open Gothic pointed stone doorway with dark walnut door wings and a muted silver-blue arch ornament, inviting exit, complete freestanding miniature. Generous genuine transparent margin around each full object, consistent camera and unified realistic lighting, full objects contained within their equal cells. No scenery outside sprites, no floor plane or backdrop, no people, characters, text, labels, branding, tile grid, floating objects or harsh white outlines. Original assets, not reproductions of any existing game.",
+      "source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-2993cd1d-ca72-4c3f-9274-79b232cc55ad.png",
+      "final": true
+    },
+    {
+      "file": "web/assets/directions/stealth/covert-actors.png",
+      "transparent_background": true,
+      "prompt": "Use case: precise game sprite atlas direction correction. Edit the attached atlas, preserve exactly its canvas size1536x1024, 4columns2rows of equal cells, character identities, clothing, equipment, painterly realistic quality, scale and transparent alpha. Change ONLY the two characters in the FIRST LEFT COLUMN: turn BOTH completely around to face NORTH toward the top of the image. We must see the BACK of the rogue's hood and coat and the BACK of the watchman's helmet and coat, toes pointed toward the top edge. These must clearly be rear views, no eyes, chest, front buttons or faces visible. Maintain the same high overhead orthographic camera and generous transparent cell margins. The other three columns must retain east-facing, south-facing and west-facing characters exactly in their existing positions. Top row charcoal indigo hooded adult stealth archivist, bottom row navy bronze watchman with same small lamp and staff. This is a directional gameplay atlas, north and south cannot duplicate. Genuine transparent background everywhere outside sprites, no floor, shadow backdrop, text, grid, labels or extra objects.",
+      "source": "D:/codex/home/generated_images/01a0f829-1d38-7672-a112-e0a52908ac0c/exec-790c1e95-72b7-431c-ae53-3f441265e8c8.png",
+      "referenced_image_paths": [
+        "F:/codex_project/0930_codex_project/projects/010-dumpling-style-lab/assets/directions/stealth/covert-actors-initial.png"
+      ],
+      "operation": "edit-direction-correction",
+      "final": true
+    },
+    {
+      "file": "web/assets/directions/stealth/moonlit-estate.png",
+      "transparent_background": false,
+      "prompt": "Use case: stylized-concept. Asset type: original atmospheric establishing illustration for a mature environmental-stealth game chapter header. Wide landscape 1536x1024. A refined Gothic archive estate at midnight, viewed from a quiet raised courtyard terrace. Carved blue-grey limestone arcades and slender pointed windows surround a walnut-and-burgundy interior archive gallery seen through one open archway; ivy planters and wet slate stone paving in the foreground. Moonlight breaks through light clouds and casts elegant silver-blue shafts into the estate, three restrained antique brass lanterns cast small warm pools. Fine architectural depth, tactile weathered stone, wood and foliage, understated cinematic atmosphere, richly painted realism suitable for an adult indie game, a sense of intrigue and patient observation. Keep the composition spacious and sophisticated, no characters, no HUD, no gameplay markers, no text, typography, labels, branding or existing-game imitation. This is the scenic chapter artwork; no collidable map or floor plan, no giant glowing crystals, no childlike toy buildings. Restrained midnight blue, smoky teal, aged bronze and muted burgundy palette, shadows retain readable detail.",
+      "source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-b6ea615d-c631-44c1-91ea-e6db5995eb96.png",
+      "final": true
+    },
+    {
+      "file": "assets/directions/stealth/covert-actors-initial.png",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Asset type: original premium top-down stealth game directional character sprite atlas with genuine transparent alpha. Landscape 1536x1024, EXACT 4 columns and 2 rows, eight equal 384x512 cells. Strict high OVERHEAD orthographic camera looking straight down at the character's hood or helmet, shoulders, arms and feet, never frontal portraits. Columns face NORTH up, EAST right, SOUTH down, WEST left. First row: same adult stealth archivist in all four directions, slender grounded anatomy, charcoal indigo hooded coat, restrained silver-blue sash, dark leather boots and gloves, subtle low cautious walking posture with knees bent. Second row: same adult patrolling estate watchman in all four directions, tailored weathered bronze and deep navy uniform, rounded practical dark helmet, long dark coat, small brass lantern carried near the body and compact walking staff, not bulky combat armor. Mature atmospheric painterly realism with beautiful fabric, leather and metal details, midnight indigo, bronze and soft silver, clear readable original silhouettes. Characters have matching physical scale and consistent identity/equipment between directions, every complete figure including feet fits comfortably inside its cell with generous transparent margins. No ground, floor, shadow backdrop, scenery, text, labels, grid, logos, floating weapons, cartoon children's proportions, portraits or white outline.",
+      "source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-deceedc5-d5da-40b8-80c6-3f35d94c4459.png",
+      "final": false
+    }
+  ]
+}

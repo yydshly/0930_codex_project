@@ -1,0 +1,79 @@
+{
+  "tool": "builtin image_gen",
+  "date": "2026-10-04",
+  "scene": {
+    "source": "D:/codex/home/generated_images/01a102b4-c35e-7e21-baf4-65153dcdb69d/exec-2559b64d-d766-41f4-bf90-cff5e586adc2.png",
+    "workspaceSource": "assets/game-forms/chain-sources/observatory.png",
+    "prompt": "Use case: stylized-concept. Asset type: an original premium 2D playable marble-chain game background, landscape aspect ratio 16:9. Primary request: a richly authored mysterious celestial observatory courtyard called Radiant Cloister, no text, no UI and NO MARBLES. Camera exactly top-down overhead like a beautiful polished casual strategy board. Indigo-blue obsidian inlaid floor, ancient oxidized copper astronomical engraving, fine brass seams, luminous turquoise fissures, jewel-toned moss, restrained amber lanterns and constellations, a mystical elegant adult atmosphere. Composition MUST leave clear mostly smooth dark floor across central 85% of image for a code-controlled curving route. Build a low circular copper-and-stone launcher pedestal exactly at normalized coordinate x .51, y .68, diameter .10 of width, viewed from above, its center vacant. At left edge around x .08 y .75, a small open copper tunnel emits soft cyan haze; at lower right x .89 y .72, a stone mouth arch with a dark opening. Decorative thick architectural corner columns, foliage and shallow reflective celestial pools only at image edges and top corners; several carved rings and believable crafted detail; top center can show stepped ornate observatory doorway but not overlap floor. NO serpentine track, NO tokens, NO balls, NO characters, NO words, NO fonts, NO symbols resembling writing, NO interface panels, NO watermark. Route is rendered separately during actual gameplay so don't bake a track. Sophisticated hand-painted game illustration with physical 3D shading and rich layered material texture, cinematic controlled contrast; calm deep blue floor should make separately rendered glowing colored balls perfectly legible, avoid bright competing floor details. Full bleed sharp authored scene."
+  },
+  "sprites": {
+    "source": "D:/codex/home/generated_images/01a102b4-c35e-7e21-baf4-65153dcdb69d/exec-4bfde2d0-e535-4b8a-9df8-8d00e848b211.png",
+    "workspaceSource": "assets/game-forms/chain-sources/sprites.png",
+    "prompt": "Use case: stylized-concept. Asset type: isolated transparent 2D game sprite sheet for a premium top-down luminous marble-chain shooting game, not a UI mockup. The background must be truly fully transparent, preserving clean alpha at each object edge. Single landscape sheet: FIVE separate circular polished translucent glass-gem spheres in an evenly spaced horizontal row across TOP HALF, full round front-facing spheres with realistic volumetric refraction and small upper-left specular highlight, thin dark bronze equator setting but no stand, each is exactly same diameter. Colors from left to right: warm ruby red, golden amber, luminous cyan teal, violet amethyst, fresh jade green. Internal luminous core for each sphere. Inside each sphere a distinct small recognizable brass symbol, respectively triangle, diamond, crescent moon, five-point star, circular ring, clean simple symbol, no text. Bottom HALF: one isolated overhead top-down antique brass-and-obsidian mechanical orb launcher, muzzle aiming straight UP, compact celestial filigree cannon carriage viewed from above, dark round body, copper metal limbs, small jade gems, elegant strong silhouette; no orb in muzzle, no base pedestal, transparent around entire object. Do not connect objects. Each of six objects must be fully visible and have ample transparent margins; nothing touches edges. Extremely polished realistic hand-painted game sprite art with refined controlled glow inside alpha edge, NOT clipart, NO checkerboard, NO letters, NO words, NO text, NO watermark, NO floor, NO shadow outside object.",
+    "transparent_background": true
+  },
+  "spriteEdgeEdit": {
+    "source": "D:/codex/home/generated_images/01a102b4-c35e-7e21-baf4-65153dcdb69d/exec-f6fc96a4-e8fa-482a-95c5-6fe0edccf950.png",
+    "workspaceSource": "assets/game-forms/chain-sources/sprites-clean.png",
+    "prompt": "Edit this sprite sheet: preserve the six objects, their exact positions, proportions, colors, materials, symbols and rendering. Remove ONLY the colored haze/background around objects completely. The five glass spheres must have a crisp circular outer alpha silhouette, fully transparent immediately beyond their circular rim. The mechanical launcher must have clean cutout edges, fully transparent outside metal object, no colored rectangles, no background haze, no halo or shadow. Do not add any glow outside silhouettes. Make every empty pixel around and between all objects genuinely alpha-zero transparent, no checkerboard. Keep all five sphere symbols and elaborate mechanical launcher unchanged, retain translucent rendering INSIDE the sphere silhouette. Output true transparent PNG.",
+    "transparent_background": true,
+    "final": true
+  },
+  "processing": {
+    "method": "Copy original PNGs unchanged. Crop sheet cells without painting/alpha replacement. Preserve alpha and encode lossless WebP sprites. Background WebP quality 91.",
+    "orbs": [
+      {
+        "name": "ruby",
+        "box": [
+          36,
+          120,
+          326,
+          417
+        ]
+      },
+      {
+        "name": "amber",
+        "box": [
+          329,
+          120,
+          619,
+          417
+        ]
+      },
+      {
+        "name": "cyan",
+        "box": [
+          623,
+          120,
+          913,
+          417
+        ]
+      },
+      {
+        "name": "violet",
+        "box": [
+          916,
+          120,
+          1206,
+          417
+        ]
+      },
+      {
+        "name": "jade",
+        "box": [
+          1209,
+          120,
+          1499,
+          417
+        ]
+      }
+    ],
+    "launcherBox": [
+      514,
+      425,
+      1020,
+      990
+    ]
+  },
+  "runtimeDirectory": "web/assets/game-forms/chain/"
+}

@@ -1,0 +1,224 @@
+{
+  "mode": "built-in image_gen",
+  "images": [
+    {
+      "key": "alloy-panel",
+      "prompt": "Use case: stylized-concept. Asset type: tileable albedo texture for a polished real-time 3D mechanical rover and space station. Create a square seamless industrial enamel panel texture, warm ivory painted alloy, two recessed narrow graphite horizontal panel seams, tiny authentic bolt heads near corners, subtle brushed metal grain and localized edge wear, refined utilitarian industrial design. Flat orthographic straight-on, neutral diffuse illumination, no cast shadows, no perspective, no object render, no lettering, no logos, no watermark. Consistent quiet surfaces, not noisy grunge. This will be physically wrapped on actual mesh geometry. 1024x1024.",
+      "transparent": false,
+      "source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-04449a05-3d98-4a98-874e-1936d50dd3e1.png",
+      "source_png": "assets/game-forms/foundry-sources/alloy-panel.png",
+      "runtime_webp": "web/assets/game-forms/foundry/alloy-panel.webp",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "source_sha256": "07d49f30e41336a6bed76c780187a0334a8df04026d324b85e6b4d52030ed8f3",
+      "runtime_sha256": "1363c055b64e7ac1e74b48cb1a27c6bc1601d32bd4ea8245c8fd98dc3a688337"
+    },
+    {
+      "key": "drift-sky",
+      "prompt": "Use case: stylized-concept. Asset type: 2:1 equirectangular environment panorama for a real-time six-degree-of-freedom 3D spacecraft game. Original restrained cinematic orbital vista, immense dark navy space, a pale blue planet's limb below the equator, fine atmospheric rim and thin flowing aurora, subtle distant nebula light, sparse sharp stars, realistic scale and atmospheric depth. Horizon seamless around longitude, no foreground craft, no station, no cockpit, no rings, no HUD, no text, no watermarks. Calm beautiful light with useful highlights and rich dark space. Full spherical equirectangular panorama, 2048x1024.",
+      "transparent": false,
+      "source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-dbb42c73-5732-475b-9b9e-eebcfb03b7fb.png",
+      "source_png": "assets/game-forms/foundry-sources/drift-sky.png",
+      "runtime_webp": "web/assets/game-forms/foundry/drift-sky.webp",
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "source_sha256": "53d79ea923eb8051248372af714050ea830e179d109ae0697dce32399526a813",
+      "runtime_sha256": "10d7a3a0ddf49d7de0d8f1b095ee6224e1877b1d13a443fa450592720b9488be"
+    },
+    {
+      "key": "maker-valley",
+      "prompt": "Use case: stylized-concept. Asset type: original illustrated background for an editable platform game. Wide 16:9 exquisitely art-directed side-on valley of ancient aqueduct ruins and soft green hills, airy light blue dawn, warm gold highlights, layered distant cliffs, delicate wildflowers only at low edges, elegant painterly hand-painted animation game background. The central 85 percent should be open sky and distant low contrast scenery so a precise tile grid and playable platforms can overlay clearly. No foreground traversable platforms, no characters, no interface, no typography, no logos. Product quality visual depth and beautiful restrained materials, not childish clipart. 1792x1024.",
+      "transparent": false,
+      "source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-626faeef-df43-4ab6-9bce-778b641d9c7a.png",
+      "source_png": "assets/game-forms/foundry-sources/maker-valley.png",
+      "runtime_webp": "web/assets/game-forms/foundry/maker-valley.webp",
+      "size": [
+        1659,
+        948
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "source_sha256": "5d644c1597a9816d9df243b84cc67fd014be7803960d042ab7ab2a094c1bdc8f",
+      "runtime_sha256": "ec63e48a0de3b1227137f6092ce1b26192baf30ad48fb42d23dd2f5323fc5bbd"
+    },
+    {
+      "key": "maker-pieces",
+      "prompt": "Use case: stylized-concept. Asset type: transparent sprite atlas for a high quality side-on platform game and level editor. Arrange SIX independent beautifully hand-painted game assets in an exact 3-column by 2-row grid, equal 512x512 cells in a 1536x1024 image, each fully inside its cell with ample transparent margin. TOP ROW left: a square solid sandstone platform block, flat warm mossy top, carved front, clearly square silhouette; middle: compact dark slate spike cluster pointing up, hazard; right: brilliant faceted turquoise crystal with small subtle luminous edge, collectible. BOTTOM ROW left: original adult-sized small explorer in ochre hooded cloak and navy travel clothes, full body side-facing right, standing pose, clear dark boots; middle: same explorer in airborne jumping pose facing right, matching identity and proportions; right: freestanding sandstone exit arch with a glowing pale gold doorway, front-on, no floor attached. Sophisticated painterly adventure art, clear physical forms, refined lighting, consistent scale. Absolutely transparent background, no ground shadow outside assets, no numbers, no labels, no UI, no watermark, no decorative panels, no contact sheet borders.",
+      "transparent": true,
+      "source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-0f9d5a5e-e737-44b4-85b0-3f78934843ce.png",
+      "source_png": "assets/game-forms/foundry-sources/maker-pieces.png",
+      "runtime_webp": "web/assets/game-forms/foundry/maker-pieces.webp",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "source_sha256": "1db2e308058ffe3d5b96796a0f168c7a1f27cb9ba8870d4dc36887957ac72ba0",
+      "runtime_sha256": "8a6333a9287f4aeb14634fc8ed21451c9d262a0c81073fc5e60956ba9c4a2bf1"
+    }
+  ],
+  "models": [
+    {
+      "name": "rover",
+      "source": "Existing original Kenney Space Kit zip",
+      "runtime": "web/assets/game-forms/foundry/rover.glb",
+      "sha256": "9784549775017e540ab84e6fc0eb8a1902dbeff9ba4285cecb97c086d2937fa5"
+    },
+    {
+      "name": "corridor_detailed",
+      "source": "Existing original Kenney Space Kit zip",
+      "runtime": "web/assets/game-forms/foundry/corridor_detailed.glb",
+      "sha256": "676a58e8085f3c5766a9dda6ba521f06a48d2d431379745bbf608e04ae34fb4b"
+    },
+    {
+      "name": "hangar_largeB",
+      "source": "Existing original Kenney Space Kit zip",
+      "runtime": "web/assets/game-forms/foundry/hangar_largeB.glb",
+      "sha256": "c78ab6ed17adf2f2ffa860046d92e1ea30fc84a2dd35377382dad04b48064817"
+    },
+    {
+      "name": "machine_generatorLarge",
+      "source": "Existing original Kenney Space Kit zip",
+      "runtime": "web/assets/game-forms/foundry/machine_generatorLarge.glb",
+      "sha256": "bbfa33a2e7c7eff7d9ee12f64255249b7e2f5d4b2ada2d681aa35cf38ba599bc"
+    }
+  ],
+  "sprite_frames": [
+    [
+      63,
+      56,
+      450,
+      440
+    ],
+    [
+      555,
+      80,
+      1007,
+      434
+    ],
+    [
+      1136,
+      59,
+      1412,
+      512
+    ],
+    [
+      93,
+      515,
+      363,
+      975
+    ],
+    [
+      550,
+      514,
+      941,
+      906
+    ],
+    [
+      1034,
+      512,
+      1492,
+      976
+    ]
+  ],
+  "originals_unchanged": true,
+  "used_authored_models": [
+    {
+      "runtime": "web/assets/game-forms/foundry/rover.glb",
+      "sha256": "9784549775017e540ab84e6fc0eb8a1902dbeff9ba4285cecb97c086d2937fa5",
+      "license": "Kenney CC0, original license retained with each source pack"
+    },
+    {
+      "runtime": "web/assets/game-forms/foundry/machine_generatorLarge.glb",
+      "sha256": "bbfa33a2e7c7eff7d9ee12f64255249b7e2f5d4b2ada2d681aa35cf38ba599bc",
+      "license": "Kenney CC0, original license retained with each source pack"
+    },
+    {
+      "runtime": "web/assets/game-forms/foundry/corridor_detailed.glb",
+      "sha256": "676a58e8085f3c5766a9dda6ba521f06a48d2d431379745bbf608e04ae34fb4b",
+      "license": "Kenney CC0, original license retained with each source pack"
+    },
+    {
+      "runtime": "web/assets/game-forms/foundry/hangar_largeB.glb",
+      "sha256": "c78ab6ed17adf2f2ffa860046d92e1ea30fc84a2dd35377382dad04b48064817",
+      "license": "Kenney CC0, original license retained with each source pack"
+    },
+    {
+      "runtime": "web/assets/game-forms/foundry/pitsGarage.glb",
+      "sha256": "db73d2ebd70763380ef872ffd2a399eb72c979f96c5a3c1ab377d93670204a23",
+      "license": "Kenney CC0, original license retained with each source pack"
+    },
+    {
+      "runtime": "web/assets/game-forms/foundry/pylon.glb",
+      "sha256": "d554671f5ab372cef0e1083b83dc270c03f32bfa0dbc3978c40206faf5608b89",
+      "license": "Kenney CC0, original license retained with each source pack"
+    },
+    {
+      "runtime": "web/assets/game-forms/foundry/lightPostModern.glb",
+      "sha256": "8fd8fccc65f53cf54efff81546b90be23d8c32a4ea85b5bbc79c6c9d123cb925",
+      "license": "Kenney CC0, original license retained with each source pack"
+    },
+    {
+      "runtime": "web/assets/game-forms/pilot/craft_speederA.glb",
+      "sha256": "dc48652fa5c59088a5e3902abce7598199f32e0dcb8c91bac25e17bb8ce15876",
+      "license": "Kenney CC0, original license retained with each source pack"
+    },
+    {
+      "runtime": "web/assets/game-forms/pilot/satelliteDish.glb",
+      "sha256": "db27a561b66fabda45a6ce2bcf41d650852e89e15bb9f63b68133ad1293aed8b",
+      "license": "Kenney CC0, original license retained with each source pack"
+    },
+    {
+      "runtime": "web/assets/game-forms/pilot/meteor_detailed.glb",
+      "sha256": "f30379abd7d772a2fdc52ebb72ad2b5fc94768343cb8f6788614820f632c5e63",
+      "license": "Kenney CC0, original license retained with each source pack"
+    },
+    {
+      "runtime": "web/assets/showcase/blaster/crate-medium.glb",
+      "sha256": "187c32592fedaecbbb84152102bbf536f733cbc0c2cfee60828fb18a4803619c",
+      "license": "Kenney CC0, original license retained with each source pack"
+    }
+  ],
+  "preview_methods": [
+    {
+      "id": "rigworks",
+      "source": "assets/game-forms/foundry-qa/rigworks-initial.png",
+      "source_sha256": "291174843f3b4b7c941824971f23bd14766d96072ec037f459eb31547d46b3cd",
+      "runtime": "web/assets/game-forms/foundry/previews/rigworks.webp",
+      "runtime_sha256": "3db8f2eaa8986d8d2f33146322a5073d2250bca1f70035387e0bbc656a17cd75",
+      "method": "Production scene models/cameras, independent depth-buffered diagnostic projection; approximated lighting and overlay",
+      "not_a_browser_screenshot": true
+    },
+    {
+      "id": "drift",
+      "source": "assets/game-forms/foundry-qa/drift-initial.png",
+      "source_sha256": "1e71c4cc397da33ea5ac4dcef7ec211e8403f501717821995f6fe5a28973f3f5",
+      "runtime": "web/assets/game-forms/foundry/previews/drift.webp",
+      "runtime_sha256": "a421f23a682b770a57666b1bf804342de967649a0f9859520d47e85b0e2bb3ba",
+      "method": "Production scene models/cameras, independent depth-buffered diagnostic projection; approximated lighting and overlay",
+      "not_a_browser_screenshot": true
+    },
+    {
+      "id": "levelsmith",
+      "source": "assets/game-forms/foundry-qa/levelsmith-progress.png",
+      "source_sha256": "5160d187ecd5eec7ae4c4ea373b6d12d35601f308235d417f9dd16c624b76968",
+      "runtime": "web/assets/game-forms/foundry/previews/levelsmith.webp",
+      "runtime_sha256": "ca3e7542fd51adbb8d4d96b8d34e0af4bae38f21aff8d3e4b74cab5577db6e54",
+      "method": "Actual production Canvas via Skia",
+      "not_a_browser_screenshot": true
+    }
+  ],
+  "detail_geometry": "Smooth tire/rim/tread geometry; authored palette textures retained on original model surfaces; generated alloy texture applied to added chassis, load bed and workshop plates. GLB originals unchanged."
+}

@@ -1,0 +1,235 @@
+{
+  "createdAt": "2026-10-03T12:51:40.195118+00:00",
+  "mode": "Official authored 3D model assets, locally bundled",
+  "author": "Kenney",
+  "license": "Creative Commons CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "primarySources": [
+    {
+      "pack": "suburban",
+      "url": "https://kenney.nl/assets/city-kit-suburban",
+      "archive": "assets/game-forms/systems-city-sources/suburban.zip",
+      "licenseFile": "web/assets/game-forms/district/suburban-LICENSE.txt"
+    },
+    {
+      "pack": "commercial",
+      "url": "https://kenney.nl/assets/city-kit-commercial",
+      "archive": "assets/game-forms/systems-city-sources/commercial.zip",
+      "licenseFile": "web/assets/game-forms/district/commercial-LICENSE.txt"
+    },
+    {
+      "pack": "roads",
+      "url": "https://kenney.nl/assets/city-kit-roads",
+      "archive": "assets/game-forms/systems-city-sources/roads.zip",
+      "licenseFile": "web/assets/game-forms/district/roads-LICENSE.txt"
+    },
+    {
+      "pack": "cars",
+      "url": "https://kenney.nl/assets/car-kit",
+      "archive": "assets/game-forms/systems-city-sources/cars.zip",
+      "licenseFile": "web/assets/game-forms/district/cars-LICENSE.txt"
+    }
+  ],
+  "files": [
+    {
+      "path": "web/assets/game-forms/district/Textures/suburban-colormap.png",
+      "pack": "suburban",
+      "original": "Models/GLB format/Textures/colormap.png",
+      "bytes": 11784,
+      "sha256": "9b5de86078c25ef02351a80d35ff3c978693a1044565b73eedd9ae9b5b80665d"
+    },
+    {
+      "path": "web/assets/game-forms/district/building-type-a.glb",
+      "pack": "suburban",
+      "original": "Models/GLB format/building-type-a.glb",
+      "originalSha256": "49f32e20b9dcd24b1c8f6d6488807b8c8cb684cbb595bfb0bb36ad903e470faa",
+      "bytes": 98604,
+      "sha256": "7a53ac6d7c15007a4962e79afc3c7e382d5002245c1967bb45c6dc17d1999555",
+      "change": "Only external texture URI renamed to avoid collisions between the four official colormaps; original mesh buffer and materials unchanged."
+    },
+    {
+      "path": "web/assets/game-forms/district/building-type-c.glb",
+      "pack": "suburban",
+      "original": "Models/GLB format/building-type-c.glb",
+      "originalSha256": "86a69f30f1a09461283e158514945ae5cc9d56357b0ddc83a9a3f0eecd113591",
+      "bytes": 99592,
+      "sha256": "3d807064c4fd0983d9d3baf9c26afe8a668d4ad5821a3f032c2d57bf0ab82bbd",
+      "change": "Only external texture URI renamed to avoid collisions between the four official colormaps; original mesh buffer and materials unchanged."
+    },
+    {
+      "path": "web/assets/game-forms/district/building-type-g.glb",
+      "pack": "suburban",
+      "original": "Models/GLB format/building-type-g.glb",
+      "originalSha256": "f497a7bc3a8e6b6273ba99f090042d1cfb3141da57d3c51998c57a479a0ece11",
+      "bytes": 93600,
+      "sha256": "0524eef2b2ad64e8f95ded1d28d22ab1c40933687865f0472a4005ca08fb9053",
+      "change": "Only external texture URI renamed to avoid collisions between the four official colormaps; original mesh buffer and materials unchanged."
+    },
+    {
+      "path": "web/assets/game-forms/district/building-type-k.glb",
+      "pack": "suburban",
+      "original": "Models/GLB format/building-type-k.glb",
+      "originalSha256": "c1b819a526bbcf9663bc40c98e22337cded7fff7c50c14679132d5d98d75f583",
+      "bytes": 89156,
+      "sha256": "e53059dcf6b962085a04b5e48446944ba341bcbe9525e2d4a9938ca59a45ed1a",
+      "change": "Only external texture URI renamed to avoid collisions between the four official colormaps; original mesh buffer and materials unchanged."
+    },
+    {
+      "path": "web/assets/game-forms/district/tree-large.glb",
+      "pack": "suburban",
+      "original": "Models/GLB format/tree-large.glb",
+      "originalSha256": "16d1f95c149bc727a953a473cf20bf21de9bf1a88747c4f9d2eeb4ac7d43e291",
+      "bytes": 5812,
+      "sha256": "012efae6d2ef79ae7cec40bae251862100e1cac7f19d1de04d5e0487ab2a92ea",
+      "change": "Only external texture URI renamed to avoid collisions between the four official colormaps; original mesh buffer and materials unchanged."
+    },
+    {
+      "path": "web/assets/game-forms/district/tree-small.glb",
+      "pack": "suburban",
+      "original": "Models/GLB format/tree-small.glb",
+      "originalSha256": "5f63359e5f392609d7617cc98070855ca1ffd4f4b4bc3978a5ff56ece88a58d6",
+      "bytes": 5812,
+      "sha256": "8a29da4b11ca4048cf8269c63d1bda33565370364892142accff3aad95a415cc",
+      "change": "Only external texture URI renamed to avoid collisions between the four official colormaps; original mesh buffer and materials unchanged."
+    },
+    {
+      "path": "web/assets/game-forms/district/planter.glb",
+      "pack": "suburban",
+      "original": "Models/GLB format/planter.glb",
+      "originalSha256": "a876e87d908f0397dcaf94b7705835447825c4c5b39195319535415386542c17",
+      "bytes": 20368,
+      "sha256": "a44fdcc049ccfb98a8fd2ddda456b64c452f5cc5abeea931d5e469fa182a6f7e",
+      "change": "Only external texture URI renamed to avoid collisions between the four official colormaps; original mesh buffer and materials unchanged."
+    },
+    {
+      "path": "web/assets/game-forms/district/Textures/commercial-colormap.png",
+      "pack": "commercial",
+      "original": "Models/GLB format/Textures/colormap.png",
+      "bytes": 11002,
+      "sha256": "191bec3889aaaca5018380038fecc129ebb5c2182879a099b7b538b3fa050b5d"
+    },
+    {
+      "path": "web/assets/game-forms/district/building-a.glb",
+      "pack": "commercial",
+      "original": "Models/GLB format/building-a.glb",
+      "originalSha256": "5cf220f90ee3f21e7abe38055ca409a48aa8ef1d5ffab6e2deb99e5a5e1ed5e0",
+      "bytes": 108944,
+      "sha256": "1aa4f3d6ecab3efecc68d0346fbb67f3488571b68628574c330ccdae500c6b12",
+      "change": "Only external texture URI renamed to avoid collisions between the four official colormaps; original mesh buffer and materials unchanged."
+    },
+    {
+      "path": "web/assets/game-forms/district/building-c.glb",
+      "pack": "commercial",
+      "original": "Models/GLB format/building-c.glb",
+      "originalSha256": "f6887608a95a165503561730252c30506938803731c6546efca12bd47b1666bd",
+      "bytes": 102796,
+      "sha256": "d65ab2f13e2c4cd9502fb6852132a1e32ab7a95913877e77dbdda582a468c1c7",
+      "change": "Only external texture URI renamed to avoid collisions between the four official colormaps; original mesh buffer and materials unchanged."
+    },
+    {
+      "path": "web/assets/game-forms/district/Textures/roads-colormap.png",
+      "pack": "roads",
+      "original": "Models/GLB format/Textures/colormap.png",
+      "bytes": 11428,
+      "sha256": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185"
+    },
+    {
+      "path": "web/assets/game-forms/district/road-straight.glb",
+      "pack": "roads",
+      "original": "Models/GLB format/road-straight.glb",
+      "originalSha256": "f8f744fb6fc96dedd5ad1f763b550166f2624a3757bf36b4b39969d2e7cacac5",
+      "bytes": 5252,
+      "sha256": "e8060730c320784c84ac4ec6692d9dacc6be1eced0bf3c64575d3b369127edbf",
+      "change": "Only external texture URI renamed to avoid collisions between the four official colormaps; original mesh buffer and materials unchanged."
+    },
+    {
+      "path": "web/assets/game-forms/district/road-crossroad.glb",
+      "pack": "roads",
+      "original": "Models/GLB format/road-crossroad.glb",
+      "originalSha256": "2dc52a28cf89ec88025a047c0f6fff4c643f16b0f50f0e9a1140f16230c28b12",
+      "bytes": 10088,
+      "sha256": "2ae0134b36fa82143acdd9c74b9d62973f8a0b8ffb19451509cca53b0f66df7b",
+      "change": "Only external texture URI renamed to avoid collisions between the four official colormaps; original mesh buffer and materials unchanged."
+    },
+    {
+      "path": "web/assets/game-forms/district/road-intersection.glb",
+      "pack": "roads",
+      "original": "Models/GLB format/road-intersection.glb",
+      "originalSha256": "fdf4f213abe41ddfe2a7e798a0ef1c3de5b7a68143e21c44f1893985ec6aae58",
+      "bytes": 7904,
+      "sha256": "eece0db42212293648c18c186c8b438adf053a7532db9f0610bbe242f5c4952c",
+      "change": "Only external texture URI renamed to avoid collisions between the four official colormaps; original mesh buffer and materials unchanged."
+    },
+    {
+      "path": "web/assets/game-forms/district/road-bend.glb",
+      "pack": "roads",
+      "original": "Models/GLB format/road-bend.glb",
+      "originalSha256": "9752f63448c8e7a3d30ca2e0e1bb6784c5adb72b56a2b05667be8d546c1674bc",
+      "bytes": 20168,
+      "sha256": "b4e2b26119be101256211c6fad23fdc00c262f60450c5e0419402a07b6bd8d79",
+      "change": "Only external texture URI renamed to avoid collisions between the four official colormaps; original mesh buffer and materials unchanged."
+    },
+    {
+      "path": "web/assets/game-forms/district/road-end.glb",
+      "pack": "roads",
+      "original": "Models/GLB format/road-end.glb",
+      "originalSha256": "bdf62518cfcc2c1a1425a4c8bc845e8e344f9c8b34dfb364b6b7d442e6171f11",
+      "bytes": 4944,
+      "sha256": "f65da25e33b205e7b59c4b2d5a6f6c2ec1f1f522cd674312630120052e6b2a1c",
+      "change": "Only external texture URI renamed to avoid collisions between the four official colormaps; original mesh buffer and materials unchanged."
+    },
+    {
+      "path": "web/assets/game-forms/district/light-curved.glb",
+      "pack": "roads",
+      "original": "Models/GLB format/light-curved.glb",
+      "originalSha256": "154dcce9d58ec2cd165e26c91a89c97bdd2838cf06d255099b3570df84f82ec6",
+      "bytes": 9496,
+      "sha256": "4a956480dea302708f067b71af594e4957dfda024db2809c5518ca86edc652d2",
+      "change": "Only external texture URI renamed to avoid collisions between the four official colormaps; original mesh buffer and materials unchanged."
+    },
+    {
+      "path": "web/assets/game-forms/district/road-crossing.glb",
+      "pack": "roads",
+      "original": "Models/GLB format/road-crossing.glb",
+      "originalSha256": "eb8575335f77da513add4a5277a7b60cad4886c07966f024b15cf55e5966cde3",
+      "bytes": 8704,
+      "sha256": "58ff73dc2c60af953ead04e770bbae81e94feee6e445b02f1fdff255d7f68173",
+      "change": "Only external texture URI renamed to avoid collisions between the four official colormaps; original mesh buffer and materials unchanged."
+    },
+    {
+      "path": "web/assets/game-forms/district/Textures/cars-colormap.png",
+      "pack": "cars",
+      "original": "Models/GLB format/Textures/colormap.png",
+      "bytes": 12371,
+      "sha256": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5"
+    },
+    {
+      "path": "web/assets/game-forms/district/sedan.glb",
+      "pack": "cars",
+      "original": "Models/GLB format/sedan.glb",
+      "originalSha256": "b532ea7d2c59f7f6b22b138cf1955218a2c1898f1cea932af4d3fd563c3959b7",
+      "bytes": 172172,
+      "sha256": "9e571e8ae5118b8be6fd2e18eeee8a3be87aa024ef5852c92f5ffe3e3e660e59",
+      "change": "Only external texture URI renamed to avoid collisions between the four official colormaps; original mesh buffer and materials unchanged."
+    },
+    {
+      "path": "web/assets/game-forms/district/taxi.glb",
+      "pack": "cars",
+      "original": "Models/GLB format/taxi.glb",
+      "originalSha256": "3803539718ffd3b84b515dbce8ed6b489f1ff5be58edb1903d2c5db5c584bdc7",
+      "bytes": 175568,
+      "sha256": "f7b0b5d42b4ab8c325d48a22b6208f438ba3ddf98acba1152f5842d4c6037eb8",
+      "change": "Only external texture URI renamed to avoid collisions between the four official colormaps; original mesh buffer and materials unchanged."
+    },
+    {
+      "path": "web/assets/game-forms/district/van.glb",
+      "pack": "cars",
+      "original": "Models/GLB format/van.glb",
+      "originalSha256": "ed4ed56e8e5ed98db050af09ed2062b3b6bb7b93eab1e563cb6774b387b233a1",
+      "bytes": 175620,
+      "sha256": "c7fd12547144aa176d6caf57f654e46ad258f50be7d1f50957951447c16667b1",
+      "change": "Only external texture URI renamed to avoid collisions between the four official colormaps; original mesh buffer and materials unchanged."
+    }
+  ],
+  "changes": "Scaled and rotated glTF scene instances; game roads, building placement, lighting, water and pathfinding authored in the local module. Original model geometry and authored colormap textures retained; external texture paths are renamed by pack to avoid filename collisions."
+}

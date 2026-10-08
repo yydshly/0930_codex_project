@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-05",
+  "mode": "built-in image_gen",
+  "purpose": "Thirteenth original environmental investigation direction. Three original generated scenes copied unchanged, with native evidence reading and reconstruction. No original game's story or art is copied.",
+  "primary_reference": "https://store.steampowered.com/app/1677770/The_Case_of_the_Golden_Idol/",
+  "assets": [
+    {
+      "key": "station",
+      "transparent_background": false,
+      "prompt": "Use case: stylized-concept. Asset type: original polished environmental detective game scene. A sophisticated cinematic painterly-realistic 16:9 full-bleed wide landscape for an adult story game, exceptionally detailed tangible materials, crisp readable interactive objects, natural atmospheric depth. Original coastal postal station in an imagined 1960s small harbor, late evening after rain. Consistent deep midnight navy, desaturated teal, warm amber practical lamps, copper, worn cream paper. Refined composition, believable old architecture, subtle mist and wet surfaces. No people or creatures. No UI, interface, icons, overlays, frame, logo, watermark, no readable writing, no generated text. One coherent finished scene, not a contact sheet or a montage. Eye-level three-quarter camera; all objects fully visible and easily inspectable. Location: the empty covered railway platform and waiting area, elegant long perspective to wet rails and coastal harbor lights. Upper-left wall has a large round brass station clock at normalized x .18 y .18, clock hands approximately 10:10 but no legible numbering needed. A cream timetable board with faint unreadable lines is clearly visible on the brick wall around x .40 y .34. A substantial blue canvas postal bag, buckled shut, with a cream luggage tag tied by cyan blue ribbon rests on a wooden bench in the right foreground around x .76 y .72. A single rain lamp illuminates the bag. Dark platform roof upper edge, warm waiting-room windows, wet cobblestone lower foreground. Silent tense but humane mystery atmosphere, tangible railway-platform environment, not a train interior. Avoid disconnected props, threatening imagery, violence, cartoon people, excessive darkness. Camera 16:9 landscape.",
+      "file": "web/assets/directions/investigation/station.png",
+      "source": "D:/codex/home/generated_images/01a0f829-1d38-7672-a112-e0a52908ac0c/exec-9f19033c-08b1-48c9-b00d-7f8e61caf9a2.png"
+    },
+    {
+      "key": "office",
+      "transparent_background": false,
+      "prompt": "Use case: stylized-concept. Asset type: original polished environmental detective game scene. A sophisticated cinematic painterly-realistic 16:9 full-bleed wide landscape for an adult story game, exceptionally detailed tangible materials, crisp readable interactive objects, natural atmospheric depth. Original coastal postal station in an imagined 1960s small harbor, late evening after rain. Consistent deep midnight navy, desaturated teal, warm amber practical lamps, copper, worn cream paper. Refined composition, believable old architecture, subtle mist and wet surfaces. No people or creatures. No UI, interface, icons, overlays, frame, logo, watermark, no readable writing, no generated text. One coherent finished scene, not a contact sheet or a montage. Eye-level three-quarter camera; all objects fully visible and easily inspectable. Location: a cozy but serious wood-paneled station postal office, rich warm lamplight against rain-blue window. Large wooden sorting desk across foreground. A cream OPEN DISPATCH LEDGER lies readable as an object at normalized x .49 y .75, elegant unreadable ruled marks, brass desk lamp slightly above. To the right around x .80 y .48, a damp charcoal coat hangs on a coat hook with a cream folded handwritten note peeking conspicuously from its pocket. To the left around x .20 y .73, a partly open desk drawer contains a small antique brass KEY WITH AN IVORY NUMBER TAG, clearly visible. Behind: postal sorting cubbies, bundled envelopes, map without labels, window shows wet harbor night. Three central inspectable objects are distinct, prominent and unobscured, with room for small native hotspot buttons. Fine material detail: polished wood, frayed paper, brass patina, wool coat. No people, no text, no UI. Camera 16:9 landscape.",
+      "file": "web/assets/directions/investigation/office.png",
+      "source": "D:/codex/home/generated_images/01a0f829-1d38-7672-a112-e0a52908ac0c/exec-44db8ddd-44f0-4c61-92c2-d6804fcff7e7.png"
+    },
+    {
+      "key": "quay",
+      "transparent_background": false,
+      "prompt": "Use case: stylized-concept. Asset type: original polished environmental detective game scene. A sophisticated cinematic painterly-realistic 16:9 full-bleed wide landscape for an adult story game, exceptionally detailed tangible materials, crisp readable interactive objects, natural atmospheric depth. Original coastal postal station in an imagined 1960s small harbor, late evening after rain. Consistent deep midnight navy, desaturated teal, warm amber practical lamps, copper, worn cream paper. Refined composition, believable old architecture, subtle mist and wet surfaces. No people or creatures. No UI, interface, icons, overlays, frame, logo, watermark, no readable writing, no generated text. One coherent finished scene, not a contact sheet or a montage. Eye-level three-quarter camera; all objects fully visible and easily inspectable. Location: a small covered ferry landing at the harbor after rain, open water and moored wooden ferry beyond, a lit pier hut on the left and distant east-bank settlement lights across the dark teal bay. Foreground is a dockside worktable and timber rail, warm hanging lantern above. At normalized x .28 y .72 on left table is a weathered brass clipboard holding a cream TIDE AND DEPARTURE SHEET with unreadable ruled lines. Around x .59 y .77, a folded cream DELIVERY RECEIPT bearing an indistinct cyan blue anchor stamp rests beside a dark leather satchel on the center-right rail. At far right foreground around x .83 y .70, a clearly visible SEALED IVORY ENVELOPE tied in thin blue ribbon rests on a wooden crate, beautifully lit amber. All three evidence objects accessible and clear. Quiet sea breeze and distant safe ferry lighting, emotionally mature epilogue atmosphere, human warmth through objects rather than characters. No readable words, no UI, no people, no violence. Camera 16:9 landscape.",
+      "file": "web/assets/directions/investigation/quay.png",
+      "source": "D:/codex/home/generated_images/01a0f829-1d38-7672-a112-e0a52908ac0c/exec-c85502bf-217f-45c4-a129-43225415b000.png"
+    }
+  ],
+  "hotspots": {
+    "station": {
+      "clock": [
+        0.65,
+        0.155
+      ],
+      "timetable": [
+        0.66,
+        0.35
+      ],
+      "bag": [
+        0.75,
+        0.7
+      ]
+    },
+    "office": {
+      "dispatch": [
+        0.48,
+        0.6
+      ],
+      "note": [
+        0.89,
+        0.4
+      ],
+      "key": [
+        0.2,
+        0.84
+      ]
+    },
+    "quay": {
+      "tide": [
+        0.25,
+        0.65
+      ],
+      "receipt": [
+        0.57,
+        0.63
+      ],
+      "letter": [
+        0.83,
+        0.76
+      ]
+    }
+  }
+}

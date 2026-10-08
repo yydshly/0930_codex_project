@@ -1,0 +1,330 @@
+{
+  "mode": "builtin image_gen",
+  "processing": "Copy unchanged PNG originals; WebP encoding only; alpha bounds metadata only.",
+  "assets": [
+    {
+      "key": "ribbon",
+      "prompt": "Use case: stylized-concept. Asset type: original production game environment illustration, 16:9 landscape. A magnificent indigo night wind canyon with suspended ivory rock islands, delicate silver grasses, deep plum clouds and a distant rose aurora. Adult, refined painterly adventure art, tactile stone and rich atmospheric depth. A left launching ledge at about x=10%, y=70%; right destination ledge at x=88%, y=45%. Broad empty air in the centre from x=20-85%, y=30-80% leaves room for a player-drawn glowing route and moving glass courier. Quiet floating rocks at lower-centre only; no route connecting the ledges. Composition must be beautiful and coherent, authored game art, no tiny placeholder humans, no UI, letters, logos or frame.",
+      "transparent": false,
+      "source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-0fb4872e-aad4-4ad7-b59d-dd4456b38b2e.png",
+      "savedSource": "assets/game-forms/kinetics-sources/ribbon.png",
+      "runtime": "web/assets/game-forms/kinetics/ribbon.webp",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sourceSHA256": "c7c4ec061a7b6fd3485666f7aeeec95c01506b3feeb6c7f0ca60c1bfaa5c5e46",
+      "runtimeSHA256": "cc1f6f14b716839a6cf1d611655884d559d784fe17ee06cf1ce20209fb82de95"
+    },
+    {
+      "key": "rescue",
+      "prompt": "Use case: stylized-concept. Asset type: original production game environment illustration, 16:9 landscape. Side-on industrial mine rescue chamber, sophisticated warm ochre, ember orange and smoky slate palette. Solid left and right masonry terraces end at around x=29% and begin at x=52%, both with horizontal tops around y=62%. Deep open mine shaft in between. Detailed distant ore lifts, fine timber beams, hanging lamps and weathered stone, quiet background space for a walking team and a player-built stairway across the central shaft. The right terrace continues to an arched exit near x=93%, with a short stone obstruction near x=78%. Strong lighting hierarchy and atmospheric depth, mature hand-painted narrative game art. No characters, bridges across the shaft, text, UI, logos, watermark or border.",
+      "transparent": false,
+      "edit_prompt": "Edit only the supplied mine illustration. Remove the small stone wall obstruction on the right terrace around x=70-78%, y=30-42%, replacing it with the same unobstructed terrace floor and distant rock background. Keep the terraces, pit, exit arch, camera, all other objects, lighting, colors and illustration style exactly unchanged. This wall will be a separately interactive game object. No characters or UI.",
+      "edit_source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-243e2c3d-7ec1-4e44-acc6-6c2b9530b46d.png",
+      "source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-d901664a-cc0d-41c9-81d8-c296c40d8705.png",
+      "savedSource": "assets/game-forms/kinetics-sources/rescue.png",
+      "runtime": "web/assets/game-forms/kinetics/rescue.webp",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sourceSHA256": "7b7d3213c433aec9c5492a07f979ab2e1ec23a829e0e11830374fe3189402194",
+      "runtimeSHA256": "c8be5086fa333e9739a7f8bac2228df949ef999b72ab759d56bf72988ba25c3a",
+      "savedEditReference": "assets/game-forms/kinetics-sources/rescue-before-edit.png"
+    },
+    {
+      "key": "rewind",
+      "prompt": "Use case: stylized-concept. Asset type: original production game environment illustration, 16:9 landscape. Side-on interior of an elegant abandoned clock tower, immense beautifully engraved brass gears and moonlit blue stained-glass windows in the upper half, amber practical lights, dark walnut and aged ivory stone. A quiet horizontal playable gallery zone in the lower middle; stone plinths at far left and far right at about y=68%, with an open lower maintenance recess between them reaching y=89%. Keep centre lower region spacious for an actual moving mechanical bridge, falling weight and an explorer. Sophisticated illustrated realistic materials, coherent architecture, finely detailed but readable, mysterious adult adventure atmosphere. No characters, movable bridge drawn across the gap, UI, text, symbols, logos or border.",
+      "transparent": false,
+      "edit_prompt": "Edit only the supplied clock tower illustration. Remove the entire horizontal brass bridge and its railing connecting the two stone plinths, around centre x=22-78%, y=51-65%. Leave an open dark maintenance recess with the distant clock machinery visible behind, without any connection between left and right plinths. Keep the stone plinths, side galleries, immense engraved gears, blue windows, camera, warm lamps and overall composition exactly unchanged. The bridge will be a separately moving object controlled by game time. No characters or UI.",
+      "edit_source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-6b6cff8c-396c-47a4-b4d7-0d4846329b54.png",
+      "source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-1f1e4606-f5ba-4d0c-b85b-89a38a0cce4f.png",
+      "savedSource": "assets/game-forms/kinetics-sources/rewind.png",
+      "runtime": "web/assets/game-forms/kinetics/rewind.webp",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sourceSHA256": "775b989eb3e92faf13e2af7356633ecff343164d995373a30b760b900ab33fec",
+      "runtimeSHA256": "e9682b72a07e4d8d516f3a9500b217d5bb4d8b0436d79ea8a79fa3685dab244e",
+      "savedEditReference": "assets/game-forms/kinetics-sources/rewind-before-edit.png"
+    },
+    {
+      "key": "nested",
+      "prompt": "Use case: stylized-concept. Asset type: original scenic backdrop for a real-time 3D miniature courtyard, 16:9 landscape. A luxurious quiet model-maker's workshop at late afternoon, tall arched windows on side walls, warm dust in sunbeams, ivory plaster, restrained sage tones and deep walnut cabinets, fine brass tools around extreme frame edges. Broad empty central work area and softly defocused dark wood foreground, no central tabletop objects; actual interactive 3D architectural models will occupy this space. Camera looking toward rear wall from slightly above table height, no fixed drawn isometric board. Photographically rich yet gently painterly premium environmental art, adult collectible miniature atmosphere. No characters, buildings in the central foreground, UI, letters, numbers, branding, watermark or border.",
+      "transparent": false,
+      "source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-cb96bec3-c63e-46b4-9fe9-80bc7bdd31ba.png",
+      "savedSource": "assets/game-forms/kinetics-sources/nested.png",
+      "runtime": "web/assets/game-forms/kinetics/nested.webp",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sourceSHA256": "254a37f9c68251a326ca41a94f589c22ff2aa04eebd1d2f064e1326b868490ef",
+      "runtimeSHA256": "63b196d6c44a0ed2cd912c98ceebe975fae3247f33b666287d550110cfe03441"
+    },
+    {
+      "key": "courier",
+      "prompt": "Use case: stylized-concept. Asset type: original transparent game sprite. ONE circular glass wind courier orb, a polished translucent pale violet glass sphere encircled by a very fine engraved silver cage, small warm rose-gold light at its core, tiny elegant trailing silk ribbon contained close to its lower rim. Sophisticated collectible game object, crisp rich materials and subtle internal refraction, visible from the side, no floor or cast shadow. Entire object centred with clean margins, premium hand-painted realistic fantasy art. True transparent background, no scenery, text, logos, extra objects or UI.",
+      "transparent": true,
+      "source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-f9b0329e-5463-4448-87a2-bc4fc675e2bb.png",
+      "savedSource": "assets/game-forms/kinetics-sources/courier.png",
+      "runtime": "web/assets/game-forms/kinetics/courier.webp",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sourceSHA256": "1982845df3906afea688f7eab4dc15cfc0b24a8008fef373f2e99fdd261becce",
+      "runtimeSHA256": "b09c95e6f1bcc30016dd15440b970c3ef45873c12287eba27732780fbe49d5b7",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        49,
+        15,
+        1134,
+        1254
+      ],
+      "spriteBoundsThreshold": 16,
+      "spriteBounds": [
+        116,
+        18,
+        1065,
+        1155
+      ]
+    },
+    {
+      "key": "crew",
+      "prompt": "Use case: stylized-concept. Asset type: original game animation sprite atlas on a true transparent background. EXACTLY 8 equally sized frames arranged in a strict 4-column by 2-row grid, empty transparent gutters, no borders. Every frame shows the SAME adult mine rescue worker facing RIGHT, whole body, ochre helmet with warm headlamp, dark slate work clothes, worn leather boots, small tool belt; coherent mature hand-painted game art with finely rendered clothing. Frame feet align to the same baseline in each row, head height and scale identical. Top row: four consecutive distinct walking-cycle poses, legs and arms alternate realistically. Bottom row left to right: using a hammer to build stairs, crouching and using a pickaxe to excavate, stationary blocking pose with arms extended, upright waving in relief. Only one isolated whole worker in each cell. Do not show ground, labels, numbers, props outside a worker's hand, duplicates per cell or cropped limbs.",
+      "transparent": true,
+      "source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-ece327a8-7c0c-4362-8c24-23f9d2723223.png",
+      "savedSource": "assets/game-forms/kinetics-sources/crew.png",
+      "runtime": "web/assets/game-forms/kinetics/crew.webp",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sourceSHA256": "255d87379c196216c0b8e87274396bec368224d2ec1fb95720923b5231649f3e",
+      "runtimeSHA256": "9c089530f23b13715abb187eceb99d3932c81fb494831d3df4f38a9dbda76477",
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "alphaBounds": [
+        34,
+        0,
+        1504,
+        1010
+      ],
+      "spriteBoundsThreshold": 16,
+      "spriteBounds": [
+        37,
+        14,
+        1494,
+        1005
+      ],
+      "frames": [
+        [
+          44,
+          14,
+          338,
+          512
+        ],
+        [
+          417,
+          14,
+          724,
+          485
+        ],
+        [
+          802,
+          14,
+          1107,
+          484
+        ],
+        [
+          1185,
+          14,
+          1494,
+          512
+        ],
+        [
+          37,
+          512,
+          364,
+          999
+        ],
+        [
+          423,
+          651,
+          768,
+          995
+        ],
+        [
+          768,
+          564,
+          1147,
+          1001
+        ],
+        [
+          1246,
+          512,
+          1493,
+          1005
+        ]
+      ]
+    },
+    {
+      "key": "explorer",
+      "prompt": "Use case: stylized-concept. Asset type: original game animation sprite atlas on a true transparent background. EXACTLY 8 equally sized frames in a strict 4-column by 2-row grid, transparent gutters, no border or labels. SAME adult clock-tower explorer facing RIGHT in all cells, whole body; short dusty blue coat, dark trousers, brass satchel, leather boots, auburn hair, small amber pendant. Elegant hand-painted realistic adventure character with believable anatomy, consistent face, silhouette and scale. Feet share baseline within each row. Top row: four consecutive distinct walking-cycle poses with real alternating strides. Bottom row: still standing, ascending jump, falling with coat flaring, reaching one arm toward a wall switch. Only one character per cell, clean alpha edges, no ground, cast shadows, scenery, letters, numbers or cropped limbs.",
+      "transparent": true,
+      "source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-0852211a-2502-48c9-9f6f-746ad85967bb.png",
+      "savedSource": "assets/game-forms/kinetics-sources/explorer.png",
+      "runtime": "web/assets/game-forms/kinetics/explorer.webp",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sourceSHA256": "1ae1f53c53bac332bc037868011eb5b753a8a22c05078bccbbbb37ae4c4da7f3",
+      "runtimeSHA256": "abf847bb92f1a96ef9b36b4d5c9c8ecbf8e8ecec1658f974f0475ec6602c8bb5",
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1520,
+        992
+      ],
+      "spriteBoundsThreshold": 16,
+      "spriteBounds": [
+        59,
+        12,
+        1517,
+        984
+      ],
+      "frames": [
+        [
+          59,
+          14,
+          360,
+          512
+        ],
+        [
+          456,
+          12,
+          734,
+          512
+        ],
+        [
+          818,
+          22,
+          1133,
+          470
+        ],
+        [
+          1217,
+          21,
+          1517,
+          470
+        ],
+        [
+          106,
+          512,
+          274,
+          982
+        ],
+        [
+          415,
+          512,
+          704,
+          954
+        ],
+        [
+          791,
+          558,
+          1151,
+          960
+        ],
+        [
+          1190,
+          548,
+          1516,
+          984
+        ]
+      ]
+    },
+    {
+      "key": "stone",
+      "prompt": "Use case: game-material. Original seamless square top-down ivory travertine material for a refined miniature courtyard. Very fine pores, warm pale limestone, subtle aged cracks and tiny tonal variation. High-quality physically believable albedo surface, flat even illumination, no baked shadows, perspective, objects, lettering, logos, border or UI. Tileable in both directions.",
+      "transparent": false,
+      "source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-4ed07e93-b5c0-4752-ab48-cb82b9d0c409.png",
+      "savedSource": "assets/game-forms/kinetics-sources/stone.png",
+      "runtime": "web/assets/game-forms/kinetics/stone.webp",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "sourceSHA256": "5b3193502c52354748eecd4a692f5233fa54adf2863bed606091eabd33284477",
+      "runtimeSHA256": "1da7bdd12489a9aa0e0339bf63248015c8d6bcf54cae66e7de51ca653a8edbdb"
+    },
+    {
+      "key": "wood",
+      "prompt": "Use case: game-material. Original seamless square top-down dark warm walnut material for miniature wooden bridges. Rich restrained brown wood grain, fine long natural fibres, subtle worn patina, physically believable albedo texture. Even flat illumination, no perspective, objects, knots dominating the image, baked shadows, words, border or UI. Tileable in both directions.",
+      "transparent": false,
+      "source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-852bd561-ec49-4bfe-877a-64f3ce512457.png",
+      "savedSource": "assets/game-forms/kinetics-sources/wood.png",
+      "runtime": "web/assets/game-forms/kinetics/wood.webp",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "sourceSHA256": "fcc6f40d1246779b993bcd092d5a0449e4161fcf9a950db41783692605c99882",
+      "runtimeSHA256": "447203102d79cb013408a2c4ce61e59b6940a625b4f847e2fab74538ab03f81c"
+    },
+    {
+      "key": "clockbridge",
+      "prompt": "Use case: stylized-concept. Original isolated side-on brass mechanical bridge game sprite on a true transparent background, approximately six times wider than high. A straight THIN horizontal walkable deck along the top, finely engraved aged brass and dark walnut, delicate crossed metal trusses hanging BELOW the deck. No railing above the deck, pillars, ground, cast shadow, background, UI, text or logos. Coherent mature illustrated realistic game art, warm brass and dark teal patina. The bridge is a movable object in a moonlit clock tower. Entire object with clear margins.",
+      "transparent": true,
+      "source": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-294c7b03-4ab5-4119-aa0f-eac3d37b51e4.png",
+      "savedSource": "assets/game-forms/kinetics-sources/clockbridge.png",
+      "runtime": "web/assets/game-forms/kinetics/clockbridge.webp",
+      "size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "sourceSHA256": "e97323a3da76a7245e1c2fa11c9912bc9c69d18831bd1c436240fde5e2fdc816",
+      "runtimeSHA256": "d963a808fb906cd66d8fba0d15d589a8dd0d1cae81775bfd68d99681e55e983f",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        23,
+        21,
+        2154,
+        648
+      ],
+      "spriteBoundsThreshold": 16,
+      "spriteBounds": [
+        26,
+        236,
+        2147,
+        495
+      ]
+    }
+  ]
+}

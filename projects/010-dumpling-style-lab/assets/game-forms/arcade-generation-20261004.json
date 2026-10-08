@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-04",
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "role": "pool-table",
+      "prompt": "Use case: product-mockup. Asset type: playable billiards table background, not a screenshot or menu. Create a superb realistic overhead orthographic photograph/render of a luxurious walnut and brass six-pocket pool table, horizontal landscape exactly 16:9. Emerald green woven worsted felt, beautiful soft warm pendant light, very subtle natural chalk wear, detailed polished dark walnut frame and brass pocket fittings. The INNER PLAYING rectangle must occupy x=12% to 88% and y=14% to 86% of image, yielding a near 2:1 billiards playing area. Six black open pockets at the four inner corners and the middle of the two LONG horizontal edges. The whole table occupies x=7% to93%, y=6%to94%. Small surrounding dark oak parquet and dark carpet margin, art deco billiards lounge mood. Camera exactly perpendicular above the tabletop, rails straight and symmetric, no perspective distortion. Absolutely EMPTY playing surface: no balls, no cue sticks, no chalk boxes, no people, no numbers, no letters, no UI, no logo, no watermark. The empty felt is the functional space for real animated balls placed later. Professional tactile photoreal game asset with crisp craftsmanship, restrained lighting, believable materials.",
+      "source": "D:/codex/home/generated_images/01a0f829-1d38-7672-a112-e0a52908ac0c/exec-31b76f93-1fb7-4a33-83e3-bc3845dd01b4.png",
+      "raw": "assets/game-forms/arcade-sources/pool-table.png",
+      "runtime": "web/assets/game-forms/cue/table.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "96e5faa5f120f7bca030a54d8254b01310c22074d9a3ed7e0e3222c9012aacaa",
+      "runtime_sha256": "6acac5038a549cf4f1b10ee3f0876a467a520fa7cead8632f6ac8f2eaa09ad74"
+    },
+    {
+      "role": "breakout-field",
+      "prompt": "Use case: stylized-concept. Asset type: background for a PLAYABLE top-down arcade breakout game, landscape 16:9. Premium hand-painted game environment: a luminous Art Deco celestial glasswork inside a midnight observatory. Camera straight-on overhead, perfectly flat playable plane. Rectangular game field inside a very elegant thin brass rim at x=7% to93% and y=9% to92% of image. Dark midnight blue enameled stone field, quiet fine star-chart engravings, subtle celestial glow, open negative space so moving luminous blocks and a paddle can be placed later. Border corners have luxurious brass gears and blue-green faceted crystal ornaments, uppermost edge framed with a graceful moon lens; lower corners warm little lamps, no visual clutter in the field center. Strong sophisticated adult arcade atmosphere, restrained turquoise and warm amber lighting, rich tactile craftsmanship, painterly AAA quality background. Absolutely NO balls, NO bricks, NO paddle, NO characters, NO interface, NO numbers, NO letters, NO logos, NO watermark. The actual moving game objects are added by the runtime. The inside field must remain uniformly dark and legible, no large bright object or perspective vanishing point inside it.",
+      "source": "D:/codex/home/generated_images/01a0f829-1d38-7672-a112-e0a52908ac0c/exec-a2dd88fe-6e67-49aa-af8d-1331cb5f46c7.png",
+      "raw": "assets/game-forms/arcade-sources/prism-field.png",
+      "runtime": "web/assets/game-forms/prism/field.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "0e755f067b0e8b61f7693bef867d835f2fa886e74a668494e13b97dcf3419bf1",
+      "runtime_sha256": "45d5247ee40ee76293d14a69484ec1ed87e4871da79dc7cd4c09fde4d48bd8b0"
+    },
+    {
+      "role": "glass-brick",
+      "prompt": "Use case: stylized-concept. Asset type: one transparent sprite for a refined Art Deco breakout game. A SINGLE luminous turquoise cyan glass rectangular brick, very wide and short, about 4:1 length-to-height. Top-down / straight-on view with crisp restrained bevels, tiny brass edging, faceted translucent polished crystal, elegant inner optical refraction, turquoise luminous center, soft teal edge highlight, small warm metallic inset corners. One self-contained game object centered at large scale, all sides clearly separated from a truly transparent background. This must be a usable sprite, not an illustration scene. No base, no floor, no long cast shadow outside the object, no text, no UI, no particles, no duplicates, no watermark. Mature luxurious celestial arcade visual, polished material rendering.",
+      "source": "D:/codex/home/generated_images/01a0f829-1d38-7672-a112-e0a52908ac0c/exec-55b01ee8-46f6-4cc9-beb5-008d9b03f8fa.png",
+      "raw": "assets/game-forms/arcade-sources/glass-brick.png",
+      "runtime": "web/assets/game-forms/prism/brick.webp",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "alpha_bbox": [
+        45,
+        0,
+        2126,
+        724
+      ],
+      "source_sha256": "80cd34173e0f2f6fa006505fd5db0e8a67ac03e8a5c738c6ce108a759539276d",
+      "runtime_sha256": "763dff844f2f951dc8ce892db65b41677d8d7054e0ebcbb1174f28a1dff57473"
+    },
+    {
+      "role": "paddle",
+      "prompt": "Use case: stylized-concept. Asset type: one transparent sprite, the PLAYER PADDLE for a luxurious celestial Art Deco breakout arcade game. A SINGLE long horizontal symmetrical brass-and-ivory mechanical paddle, about 6:1 length-to-height, view straight overhead. Curved polished pale ivory central shield with a little blue gemstone inset at center, antique brass ribbed end caps on left and right, refined warm metallic bevels, a thin turquoise illuminated strip across its upper edge. It is an elegant solid mechanical object used to bounce a moving ball. Crisp detailed realistic stylized game material, premium crafted optical instrument style, top lit, all sides clearly separated from a truly transparent background. Object centered at large scale, no perspective, no text, no numbers, no UI, no duplicates, no watermark, no floor, no base, no environment, no long cast shadow beyond the object.",
+      "source": "D:/codex/home/generated_images/01a0f829-1d38-7672-a112-e0a52908ac0c/exec-b9034a7e-6810-4fb6-b661-52309e1b2de2.png",
+      "raw": "assets/game-forms/arcade-sources/paddle.png",
+      "runtime": "web/assets/game-forms/prism/paddle.webp",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "alpha_bbox": [
+        0,
+        15,
+        2172,
+        685
+      ],
+      "source_sha256": "1a296a808478bcf9c14319a226973f21f550c9f82ab54ecfd115e3553ff06e32",
+      "runtime_sha256": "30177f9c09ee8c6defe55f9ea7da52a811f97cba27ac80c1c5412a8162d6e381"
+    }
+  ]
+}

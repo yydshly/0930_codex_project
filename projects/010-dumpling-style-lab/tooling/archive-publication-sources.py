@@ -8,7 +8,7 @@ from urllib.parse import unquote, urlsplit
 
 project = Path(__file__).resolve().parents[1]
 assets = project / 'assets'
-selected = {p for p in assets.iterdir() if p.is_file()}
+selected = {p for p in assets.iterdir() if p.is_file() and not p.name.startswith('.')}
 selected.update(p for p in assets.rglob('*') if p.is_file() and
                 (p.suffix.lower() in {'.json', '.txt', '.md'} or p.name == 'LICENSE'))
 for md in [project / 'README.md', project / 'web/README.md', *(project / 'notes').rglob('*.md')]:

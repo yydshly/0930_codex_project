@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-05",
+  "mode": "built-in image_gen; generate new original opaque bitmap assets",
+  "assets": [
+    {
+      "key": "space-nebula",
+      "prompt": "Create an original premium space-flight videogame environment sky texture. A cinematic deep navy starfield with a sweeping subtle teal and violet nebula spanning the upper left to lower right, fine distant star clusters, softly illuminated dust filaments and quiet black-blue negative space for readable ships. Mature scientific science-fiction art direction, rich subtle gradients and delicate photographic astronomical texture, avoid oversaturated neon. Full-bleed landscape panoramic bitmap, ideally 2048 by 1024 pixels, horizontally seam-continuous equirectangular environment sky. Flat panoramic sky map only: no planets, no ships, no stations, no characters, no HUD, no lettering, no logo, no frames or watermarks. This texture will surround a live true 3D flight scene, not be a game screenshot. Keep most stars small, nebula detailed but low contrast. Opaque background.",
+      "source_path": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-fe5faee6-c23e-4d85-a635-4c3bb1da9976.png",
+      "output": "web/assets/directions/space/nebula.png"
+    },
+    {
+      "key": "space-ocean",
+      "prompt": "Generate one original professionally crafted planetary surface COLOR TEXTURE for a 3D videogame planet sphere, full-bleed rectangular equirectangular UV map ideally 2048x1024, seamless left and right longitude edges. A fictional ocean world with dark deep blue seas, coastal turquoise shallows, green brown landmasses, intricately eroded coasts, delicate swirling white cloud systems and snowy mountain ranges. Mature cinematic science-fiction aesthetic, realistic geological detail yet clear large shapes. Entire image is a flat map of the surface filling every pixel; absolutely NO rendered globe or sphere, no perspective, no baked directional lighting, no planet disk silhouette, no space or black background, no text, no icons, no inset images, no HUD. Top and bottom polar rows gradually settle into ice and pale clouds suitable for spherical poles. Clouds occupy about twenty percent, multiple continents, not Earth geography. This is an albedo texture, lighting will be applied in a real 3D scene. Opaque bitmap.",
+      "source_path": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-c8e09a58-2110-4496-b7e1-bc379d91e568.png",
+      "output": "web/assets/directions/space/planet-ocean.png"
+    },
+    {
+      "key": "space-arid",
+      "prompt": "Generate one original high-quality fictional desert-planet albedo surface texture for a real 3D videogame sphere. Full-bleed flat rectangular equirectangular UV map ideally 2048x1024, seamless wrapping left and right edges. Warm ochre and rust-colored continental deserts, ancient pale mineral basins, charcoal volcanic regions, fine crater chains and sweeping layered river canyons, a few muted cold-gray highlands. Subtle finely detailed geological texture with strong elegant large-scale landform shapes. Mature premium science-fiction environmental art, no bright cartoon colors. NO rendered sphere, NO planet disk, NO perspective, NO lighting or baked spherical shadow, NO space background; every pixel is surface texture. No text, frames, characters, spaceship, HUD or symbols. Polar edges should fade to a consistent pale tan band suitable for spherical mapping. Opaque bitmap.",
+      "source_path": "D:\\codex\\home\\generated_images\\01a0f829-1d38-7672-a112-e0a52908ac0c\\exec-dc6538a3-5124-4531-be24-a2d02768de0d.png",
+      "output": "web/assets/directions/space/planet-arid.png"
+    }
+  ]
+}

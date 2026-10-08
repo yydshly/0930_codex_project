@@ -1,0 +1,170 @@
+{
+  "traceMobile": {
+    "buttons": [
+      {
+        "h": 46,
+        "label": "开启划线",
+        "w": 109.10417175292967
+      },
+      {
+        "h": 46,
+        "label": "收回未闭合线",
+        "w": 109.11458587646484
+      },
+      {
+        "h": 46,
+        "label": "节奏：舒缓",
+        "w": 109.11458587646484
+      },
+      {
+        "h": 46,
+        "label": "向左移动",
+        "w": 82.08333587646484
+      },
+      {
+        "h": 46,
+        "label": "向上移动",
+        "w": 82.08333587646484
+      },
+      {
+        "h": 46,
+        "label": "向下移动",
+        "w": 82.08333587646484
+      },
+      {
+        "h": 46,
+        "label": "向右移动",
+        "w": 82.08333587646484
+      }
+    ],
+    "overflow": false,
+    "viewport": {
+      "h": 844,
+      "w": 390
+    }
+  },
+  "swingMobile": {
+    "buttons": [
+      {
+        "h": 46,
+        "label": "继续摆动",
+        "w": 167.6666717529297
+      },
+      {
+        "h": 46,
+        "label": "推进一点",
+        "w": 167.6666717529297
+      },
+      {
+        "h": 46,
+        "label": "慢放：开",
+        "w": 167.6666717529297
+      },
+      {
+        "h": 46,
+        "label": "落点预览：开",
+        "w": 167.6666717529297
+      },
+      {
+        "h": 46,
+        "label": "绳 1 已切断",
+        "w": 168.6666717529297
+      },
+      {
+        "h": 46,
+        "label": "重试本幕",
+        "w": 168.6666717529297
+      }
+    ],
+    "overflow": false,
+    "viewport": {
+      "h": 844,
+      "w": 390
+    }
+  },
+  "traceDesktopFs": {
+    "canvas": {
+      "h": 758,
+      "w": 1347.5521240234375,
+      "x": 187.21875,
+      "y": 86.63542175292969
+    },
+    "controls": {
+      "bottom": 1003.3646087646484,
+      "h": 158.7291717529297,
+      "w": 1347.5521240234375,
+      "x": 187.21875,
+      "y": 844.6354370117188
+    },
+    "viewport": {
+      "h": 1034,
+      "w": 1722
+    }
+  },
+  "swingDesktopFs": {
+    "canvas": {
+      "h": 758,
+      "w": 1347.5521240234375,
+      "x": 187.21875,
+      "y": 87.13542175292969
+    },
+    "controls": {
+      "bottom": 1002.8646087646484,
+      "h": 157.7291717529297,
+      "w": 1347.5521240234375,
+      "x": 187.21875,
+      "y": 845.1354370117188
+    },
+    "viewport": {
+      "h": 1034,
+      "w": 1722
+    }
+  },
+  "mobileFullscreenLayout": {
+    "traceFullscreen": {
+      "canvas": {
+        "h": 219.375,
+        "w": 390,
+        "x": 0,
+        "y": 243.78125
+      },
+      "controls": {
+        "bottom": 656.21875,
+        "h": 193.0625,
+        "w": 390,
+        "x": 0,
+        "y": 463.15625
+      },
+      "fullscreen": false,
+      "overflow": false,
+      "viewport": {
+        "h": 844,
+        "w": 390
+      }
+    },
+    "swingFullscreen": {
+      "canvas": {
+        "h": 219.375,
+        "w": 390,
+        "x": 0,
+        "y": 217.28125
+      },
+      "controls": {
+        "bottom": 682.71875,
+        "h": 246.0625,
+        "w": 390,
+        "x": 0,
+        "y": 436.65625
+      },
+      "viewport": {
+        "h": 844,
+        "w": 390
+      }
+    }
+  },
+  "mobileFullscreenCaptureLimitation": "With viewport override, IAB native fullscreen captures appeared scaled into a small region. Desktop native fullscreen screenshots are the accepted visual evidence; mobile fullscreen has layout metrics only.",
+  "independentLogs": {
+    "trace": [],
+    "swing": []
+  }
+}

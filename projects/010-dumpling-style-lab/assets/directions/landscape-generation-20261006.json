@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-06",
+  "mode": "built-in image_gen",
+  "reference": "https://www.toukana.com/dorfromantik",
+  "assets": [
+    {
+      "key": "atlas",
+      "file": "web/assets/directions/landscape/terrain-atlas.png",
+      "source": "D:/codex/home/generated_images/01a0f829-1d38-7672-a112-e0a52908ac0c/exec-12780565-f813-43d1-abee-6afc5f84c82e.png",
+      "prompt": "Create an original premium raster terrain texture atlas for a playable hexagonal landscape-building game called RIVERFOLD (do not render the title). Output a landscape image with exactly FOUR equal square cells in a seamless 2 columns by 2 rows grid, full bleed cell artwork, no grid lines, no borders, no margins, no words, no labels, no icons. Orthographic straight-down bird's-eye camera, NOT perspective or isometric; all ground planes flat. Cohesive exquisite hand-painted miniature landscape art, finely textured gouache and painterly realism, sage jade greens, pale straw grass, deep evergreen, tiny warm terracotta roofs, warm late afternoon illumination from upper left, soft ambient shadows. Top-left cell: sunlit meadow, rich grass and tiny white wildflowers, delicate patches of ochre earth, subtle footpaths only, mostly open grass. Top-right cell: dense mixed woodland, many individual rounded tree canopies in deep teal and olive, small clearings with fern ground, trees occupy central 70 percent, grassy border all around. Bottom-left cell: intimate rural hamlet seen directly from above, a cluster of six or seven distinct small cottages with intricately painted terracotta roofs, a tiny orchard and garden courtyards, no people, cottage cluster central 65 percent, grassy borders. Bottom-right cell: riverbank meadow with smooth pale pebbles, reed tufts and moss, open central grass area for a runtime game river drawn over it; do NOT draw a river, lake or body of water in this cell. Each square cell is a complete independently usable top-down terrain patch; every outer 12 percent is compatible green meadow. Rich real bitmap brushwork with readable miniature details at a small tile size; no procedural polygon meshes, no large geometric blocks, no UI, no game screenshot, no famous-game map or borrowed characters.",
+      "transparent_background": false
+    },
+    {
+      "key": "backdrop",
+      "file": "web/assets/directions/landscape/backdrop.png",
+      "source": "D:/codex/home/generated_images/01a0f829-1d38-7672-a112-e0a52908ac0c/exec-86524409-b4c2-4676-8f8b-c311eb887ff2.png",
+      "prompt": "Original wide landscape background plate for a polished interactive landscape tile game, no UI and no text. A serene mist-blue jade tabletop-like atmosphere, delicate handmade paper and fine natural mineral texture, diffused dawn light, subtle desaturated lake mist at outer edges and translucent soft distant mountain silhouettes ONLY along the bottom and outermost corners. The middle 85 percent is calm uninterrupted pale blue-gray space that will hold an actual user-built hexagonal terrain board, make it quiet and clean. Elegant mature editorial art direction, restrained warm cream highlights and jade-blue hues, luminous and soft but not flat white. No tiles, no existing gameboard, no objects, no houses, no figures, no logos, no labels, no hard geometry, no diagram. Original detailed painterly raster illustration with clean spacious composition.",
+      "transparent_background": false
+    }
+  ],
+  "atlas_runtime_frames": {
+    "meadow": [
+      128,
+      0,
+      512,
+      512
+    ],
+    "forest": [
+      896,
+      0,
+      512,
+      512
+    ],
+    "village": [
+      128,
+      512,
+      512,
+      512
+    ],
+    "water": [
+      896,
+      512,
+      512,
+      512
+    ]
+  },
+  "note": "Actual atlas is 1536×1024 with four equal rectangular quadrants. Centered square 512×512 runtime source frames preserve proportions. Bitmap originals copied without pixel changes; actual dynamic waterway geometry is rendered from engine edge data."
+}

@@ -1,0 +1,45 @@
+{
+  "game": "putt",
+  "checkedAt": "2026-10-03",
+  "authoredPack": {
+    "author": "Kenney",
+    "name": "Minigolf Kit",
+    "version": "3.1",
+    "primaryPage": "https://kenney.nl/assets/minigolf-kit",
+    "officialDownload": "https://kenney.nl/media/pages/assets/minigolf-kit/3ae60d8b01-1741163874/kenney_minigolf-kit.zip",
+    "archive": "assets/game-forms/motion-putt-sources/kenney_minigolf-kit.zip",
+    "sha256": "74b7bf5cf82bf8a5225319ade1284600c64f9482ae66f0ccf1f22d2212d5a952",
+    "extractedSource": "assets/game-forms/motion-putt-sources/kenney_minigolf-kit",
+    "license": "CC0-1.0",
+    "originalLicense": "assets/game-forms/motion-putt-sources/kenney_minigolf-kit/License.txt",
+    "shippingLicense": "web/assets/game-forms/putt/License.txt",
+    "shippingBase": "web/assets/game-forms/putt/",
+    "models": [
+      "open.glb", "hole-open.glb", "block.glb", "flag-large-red.glb",
+      "ball-blue.glb", "club-blue.glb", "castle.glb", "windmill.glb",
+      "supports-low.glb", "ramp.glb"
+    ],
+    "externalTexture": "Textures/colormap.png",
+    "texturePolicy": "Original relative GLB texture URI is preserved and the original color map ships locally. No remote runtime downloads."
+  },
+  "reusedDecoration": {
+    "author": "Kenney",
+    "pack": "Nature Kit 2.1",
+    "source": "https://kenney.nl/assets/nature-kit",
+    "license": "CC0-1.0",
+    "shippingBase": "web/assets/showcase/nature/",
+    "originalLicense": "web/assets/showcase/nature/License.txt",
+    "models": ["tree_palmShort.glb", "rock_largeA.glb", "rock_smallFlatA.glb", "plant_bush.glb"]
+  },
+  "physics": {
+    "name": "cannon-es",
+    "version": "0.20.0",
+    "license": "MIT",
+    "localModule": "web/vendor/physics/cannon-es-0.20.0.js",
+    "originalLicense": "web/vendor/physics/LICENSE",
+    "dependencySourceRecord": "assets/game-forms/systems-balance-sources.json",
+    "collisionPolicy": "Authored GLB world-space triangles form static collision meshes. The blind cup bottom is omitted from its collision mesh so the ball can physically fall through the real authored opening into a deeper catcher. Walls, obstacle and inclined authored ramp remain actual colliders.",
+    "strokePolicy": "Each stroke applies a real rigid-body impulse from selected angle and strength. Gravity, contact friction, restitution and continuous rolling resistance govern the result. Completion requires the physical ball center to fall beneath the hole."
+  },
+  "originalContent": "Three original short hole layouts, sea-side diorama placement and lighting, aiming line, direction/strength controls, actual stroke counts and independent bests. No copied commercial game map or artwork."
+}

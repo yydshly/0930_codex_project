@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-05",
+  "mode": "built-in image_gen; generate new original bitmap assets",
+  "assets": [
+    {
+      "key": "survival-valley",
+      "prompt": "Use case: stylized-concept. Asset type: original cinematic game landscape background for a mature survival exploration sample named After the Rain. Paint an abandoned mountain valley after a rainstorm, mist layered through tall dark spruce forest, broken timber cabins beside a cold winding stream, wet gravel, amber light from a tiny surviving camp, distant mountains under blue grey storm clouds. Premium hand-painted environment art, grounded proportions, detailed material surfaces and atmospheric depth, restrained desaturated pine green, slate blue and worn ochre, hopeful but tense. Wide landscape 3:2 composition, high oblique overhead camera to suggest the playable valley rather than a close portrait. No characters in foreground, no user interface, no labels, no text, no logos, no frame, no watermark. This is a world illustration used only as introductory art; it must look painted by an environment artist rather than diagrammatic or geometrical.",
+      "source_path": "D:/codex/home/generated_images/01a0f829-1d38-7672-a112-e0a52908ac0c/exec-ebfd99a4-b130-417f-9ae7-f2251c4f2a1c.png",
+      "output": "web/assets/directions/survival/valley.png"
+    },
+    {
+      "key": "survival-ground",
+      "prompt": "Use case: stylized-concept. Asset type: production game terrain texture atlas, original mature rainy wilderness survival game. Exactly EIGHT square terrain swatches in a regular 4-column 2-row grid that fills a wide 2:1 image; no gaps, no labels, no borders, no graphic grid lines. Each square is an overhead flat texture viewed straight down, with naturally seamless edges and soft even diffuse lighting. Order left to right top row: damp mossy dark pine forest grass, wet compacted gravel walking path, muddy puddled loam, rough grey mountain granite. Bottom row: weathered dark timber planks, translucent blue slate river water with delicate flowing highlights, mossy abandoned concrete slab, pine needle earth with small scattered roots. Premium hand-painted material art, fine surface texture and organic irregularity; grounded slate grey, muted pine green, brown ochre. Every square maintains a consistent scale, no large objects, no buildings, no trees, no symbols, no UI, no text, no 3D cubes, no perspective tile diagrams, no shadows from unseen objects. All eight tiles must remain useful as actual repeatable game ground materials.",
+      "source_path": "D:/codex/home/generated_images/01a0f829-1d38-7672-a112-e0a52908ac0c/exec-deb462f0-807f-46e2-8bfb-845b92dcab00.png",
+      "output": "web/assets/directions/survival/ground-atlas.png"
+    },
+    {
+      "key": "survival-props",
+      "prompt": "Use case: stylized-concept. Asset type: a production transparent sprite atlas for a mature hand-painted wilderness survival game. Exactly TWELVE isolated game props in a regular 4-column by 3-row grid; each prop fits entirely within its own equal cell with generous transparent padding, centered horizontally, resting near the bottom of the cell. Camera is consistent high oblique 3/4 overhead at about 55 degrees, orthographic, viewer sees roof/top and small front sides. Grounded premium painterly environmental art, detailed worn materials, realistic proportions, soft upper-left light, restrained pine green/slate/ochre, subtle contact shadows only, no floor tiles or pedestals. Row1 left to right: tall dark spruce tree; weathered ruined timber cabin with crooked slate roof; abandoned rusty small pickup truck with a crate in its bed; iron hand water pump and a battered blue barrel. Row2: short wooden radio mast with antenna and equipment box; UNLIT stone fire ring with dry logs but NO flame; a practical pitched canvas tarp shelter between poles with bedroll; bundled stack of split firewood. Row3: enamel water purification pot on a simple metal stand; opened empty supply crate; cut tree stump with fallen branch; large natural granite boulder with moss. All props have distinct silhouettes, equal camera, not cute toys, not pixel art. Actual transparent alpha everywhere outside objects and their soft shadows; no grey/checkerboard background drawn into image. No words, no labels, no grid lines, no UI, no border, no watermark. Aim wide 4:3 atlas layout with evenly spaced cells.",
+      "source_path": "D:/codex/home/generated_images/01a0f829-1d38-7672-a112-e0a52908ac0c/exec-8aba595a-65ae-4105-bf37-a2686a674a3d.png",
+      "output": "web/assets/directions/survival/props-atlas.png"
+    },
+    {
+      "key": "survival-actors",
+      "prompt": "Use case: stylized-concept. Asset type: transparent eight-frame walking sprite atlas for a mature painted survival exploration game. ONE consistent adult wilderness survivor in weathered ochre brown hooded outdoor jacket, dark charcoal trousers and boots, muted teal backpack, realistic adult proportions, not cartoon, not toy, no weapon. Exactly regular FOUR columns by TWO rows, each isolated character within its equal cell with transparent padding and feet aligned near the bottom. Row1: four sequential walking frames facing down toward viewer (front three-quarter overhead), legs and arms alternating naturally. Row2: four sequential walking frames facing away up into the map (back three-quarter overhead), same outfit and backpack and silhouette. Orthographic high oblique 55 degree overhead game camera, character full body visible, consistent scale, soft upper-left light, hand-painted detailed garment surfaces and crisp silhouette, restrained earthy color. No scenery, no floor tiles, no props, no labels, no grid, no text, no border, no watermark. Actual alpha-transparent background outside each sprite, no checkerboard painted in. Wide 2:1 sprite sheet. Keep all eight body frames separate, same body and garment identity throughout.",
+      "source_path": "D:/codex/home/generated_images/01a0f829-1d38-7672-a112-e0a52908ac0c/exec-06a4ab78-8f48-4a3c-af78-f9f65ca8fa18.png",
+      "output": "web/assets/directions/survival/actors-atlas.png"
+    }
+  ]
+}
