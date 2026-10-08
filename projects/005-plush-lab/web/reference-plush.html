@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <meta name="description" content="观看 abstrakt 的毛绒角色原作 ChatGPT dots - Felipe，使用作者公开的 SuperSplat 三维查看器；保留 Plush Lab 创作、陪伴工作室与材质研究入口。">
+  <title>原作毛绒展台 · Plush Lab</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reference-plush.css">
+</head>
+<body class="reference-plush-page">
+  <header class="reference-header">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">✳</span> plush lab <small>/ 原作毛绒</small></a>
+    <nav aria-label="工作室导航">
+      <a href="splat.html">高斯创作</a>
+      <a href="studio.html#reference">放到工作台 ↗</a>
+      <a href="../artifacts/cycles-material-study.html">材质历史</a>
+      <button type="button" id="project-journal-open" aria-haspopup="dialog" aria-controls="project-journal">项目记录 ↗</button>
+    </nav>
+  </header>
+  <main class="reference-main">
+    <div class="reference-heading">
+      <div><p class="reference-eyebrow">ORIGINAL PLUSH / INTERACTIVE VIEWER</p><h1>看看原作的柔软。</h1></div>
+      <p class="reference-load-note">首次加载约 114 MB，请稍候。<br>展台使用原作者公开的三维场景。</p>
+    </div>
+    <div class="reference-viewport" id="reference-viewport" aria-label="原作毛绒三维展台">
+      <iframe id="viewer" width="800" height="500" title="abstrakt 原作 ChatGPT dots - Felipe · SuperSplat 三维查看器" allow="fullscreen; xr-spatial-tracking" src="https://superspl.at/s?id=ca6a4c9b"></iframe>
+    </div>
+    <div class="reference-toolbar">
+      <p>默认播放相机动画。点击查看器右下角第一个轨道形图标，切换到环绕模式；再拖动旋转、滚轮缩放。<span>R 重置 · F 适应画面 · H 查看操作提示</span></p>
+      <div class="reference-actions"><button id="reference-fullscreen" type="button">全屏观看</button><button id="reference-reload" type="button">重载展台</button><a href="https://superspl.at/scene/ca6a4c9b" target="_blank" rel="noopener noreferrer">打开原作 ↗</a></div>
+    </div>
+    <p class="reference-status" id="reference-status" role="status" aria-live="polite">展台由 SuperSplat 在线提供；若未显示，请打开原作页面观看。</p>
+    <div class="reference-credit">
+      <div><h2>ChatGPT dots - Felipe</h2><p>原作者 <a href="https://x.com/abstrakt314" target="_blank" rel="noopener noreferrer">abstrakt</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a></p></div>
+      <p>本页嵌入作者公开的 SuperSplat 查看器，角色资产由原作者制作。<br>我们的创作与毛料研究继续保留，可从上方导航进入。</p>
+    </div>
+  </main>
+  <footer class="reference-footer"><span>PLUSH LAB / LOOK, THEN UNDERSTAND</span><a href="index.html">回到绒毛创作 ↗</a></footer>
+<dialog id="project-journal" aria-labelledby="journal-heading" aria-describedby="journal-intro">
+<div class="journal-header"><div><span class="journal-eyebrow">PLUSH LAB / PROJECT JOURNAL</span><h2 id="journal-heading">项目记录</h2><p id="journal-intro">把做过的改动、背后的原理和下一步，慢慢留下。</p></div><button type="button" id="journal-close" aria-label="关闭项目记录">×</button></div>
+<div class="journal-toolbar"><label for="journal-query">搜索记录<input type="search" id="journal-query" maxlength="200" placeholder="标题、正文、原理、参考名称"></label><label for="journal-source">记录来源<select id="journal-source"><option value="all">全部记录</option><option value="builtin">项目内置</option><option value="custom">我的补充</option></select></label><button type="button" id="journal-clear-filters" hidden>清空筛选</button></div><p id="journal-filter-status" class="journal-filter-status" role="status" aria-live="polite"></p>
+<div class="journal-tabs" role="tablist" aria-label="项目记录分类">
+<button type="button" role="tab" id="journal-tab-progress" aria-selected="true" aria-controls="journal-panel-progress" data-journal-category="progress">项目进展 <span class="journal-count">0</span></button>
+<button type="button" role="tab" id="journal-tab-changes" aria-selected="false" aria-controls="journal-panel-changes" data-journal-category="changes" tabindex="-1">修改记录 <span class="journal-count">0</span></button>
+<button type="button" role="tab" id="journal-tab-principles" aria-selected="false" aria-controls="journal-panel-principles" data-journal-category="principles" tabindex="-1">实现原理 <span class="journal-count">0</span></button>
+<button type="button" role="tab" id="journal-tab-roadmap" aria-selected="false" aria-controls="journal-panel-roadmap" data-journal-category="roadmap" tabindex="-1">未来方向 <span class="journal-count">0</span></button>
+</div>
+<div class="journal-reading" id="journal-reading"><p id="journal-overview" class="journal-overview"></p><p class="journal-scope">内置记录随项目更新；你的补充仅保存在此浏览器。计划中的内容会单独标注。</p>
+<section role="tabpanel" id="journal-panel-progress" aria-labelledby="journal-tab-progress" tabindex="0"></section>
+<section role="tabpanel" id="journal-panel-changes" aria-labelledby="journal-tab-changes" tabindex="0" hidden></section>
+<section role="tabpanel" id="journal-panel-principles" aria-labelledby="journal-tab-principles" tabindex="0" hidden></section>
+<section role="tabpanel" id="journal-panel-roadmap" aria-labelledby="journal-tab-roadmap" tabindex="0" hidden></section>
+<details id="journal-compose" class="journal-compose"><summary id="journal-compose-label">补充记录</summary><form id="journal-form"><label for="journal-category">记录分类<select id="journal-category" name="category"><option value="progress">项目进展</option><option value="changes">修改记录</option><option value="principles">实现原理</option><option value="roadmap">未来方向</option></select></label><label for="journal-title">记录标题<input id="journal-title" name="title" maxlength="100" required placeholder="例如：局部修剪的下一步优化"></label><label for="journal-body">记录正文<textarea id="journal-body" name="body" rows="5" maxlength="4000" required placeholder="记录改了什么、为什么这样做、如何验证，或下一步要尝试什么。"></textarea></label><p class="journal-form-help">标题最多 100 字，正文最多 4000 字。保存后的补充可继续编辑。</p><div class="journal-form-actions"><button type="submit" id="journal-save">保存补充</button><button type="button" id="journal-cancel-edit" hidden>结束编辑</button></div></form></details>
+<details id="journal-export-preview" class="journal-compose" hidden><summary>查看导出正文</summary><label for="journal-export-text">Markdown 正文，可复制留存</label><textarea id="journal-export-text" rows="8" readonly></textarea></details>
+<details id="journal-transfer-tools" class="journal-compose"><summary tabindex="0">备份与导入 · JSON</summary><p class="journal-form-help">JSON 备份只包含已保存的「我的补充」。项目内置记录随工程提供；当前未保存的输入不会进入备份。</p><button type="button" id="journal-backup-export" class="journal-transfer-button">生成 JSON 备份</button><a id="journal-backup-download" class="journal-transfer-button" hidden>下载 JSON</a><details id="journal-backup-preview" hidden><summary>查看 JSON 备份正文</summary><label for="journal-backup-output">JSON 备份正文，可复制留存<textarea id="journal-backup-output" rows="6" readonly></textarea></label></details><div class="journal-import-box"><label for="journal-import-file">选择 JSON 备份文件<input type="file" id="journal-import-file" accept=".json,application/json"></label><label for="journal-import-input">或粘贴 JSON 备份<textarea id="journal-import-input" rows="5" maxlength="2097152" placeholder="粘贴完整 JSON，点击检查备份。"></textarea></label><p class="journal-form-help">新记录追加到本机；重复跳过，冲突保留本机内容。格式错误或合并超出容量时，整份备份都不会写入。</p><div class="journal-form-actions"><button type="button" id="journal-import-inspect">检查备份</button><button type="button" id="journal-import-apply" disabled>追加导入</button></div><p id="journal-import-summary" class="journal-form-help" role="status" aria-live="polite">先检查备份，再追加导入；已有记录会保留。</p></div></details>
+</div><div class="journal-footer"><div class="journal-export-actions"><button type="button" id="journal-add">补充记录 +</button><button type="button" id="journal-export">导出全部记录 ↗</button><button type="button" id="journal-transfer">备份 / 导入</button><a id="journal-download" hidden>下载 Markdown</a></div><p id="journal-status" role="status" aria-live="polite">补充记录保存在此浏览器，可导出留存。</p></div>
+</dialog>
+  <script type="module" src="reference-plush.js?v=20261003-original-1"></script>
+</body>
+</html>

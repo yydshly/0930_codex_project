@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2560" height="3050" viewBox="0 0 2560 3050" role="img" aria-labelledby="title desc">
+<title id="title">毛绒实验室：全程能力与实现原理</title>
+<desc id="desc">六类已有能力，程序毛丝与原作高斯两条路线，事件与数据流程，九组研究方法，六个扩展方向与当前边界。</desc>
+<rect width="2560" height="3050" fill="#F6F4EE"/>
+<text x="96" y="61" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">PLUSH LAB  /  PROJECT LIBRARY</text>
+<text x="96" y="116" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="86" font-weight="700" fill="#2E443D" dominant-baseline="text-before-edge">毛绒实验室</text>
+<text x="710" y="147" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="49" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">全程能力与实现原理</text>
+<text x="96" y="228" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">一套网页工作台、资产适配器与研究记录库：创作 → 场景互动 → 陪伴与任务展示</text>
+<rect x="1540" y="68" width="102.0" height="42" rx="21" fill="#E9F1E5"/>
+<text x="1555" y="76" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">已实现</text>
+<rect x="1710" y="68" width="126.0" height="42" rx="21" fill="#EDF3FC"/>
+<text x="1725" y="76" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#5479A5" dominant-baseline="text-before-edge">资产接入</text>
+<rect x="1890" y="68" width="126.0" height="42" rx="21" fill="#FCF1DB"/>
+<text x="1905" y="76" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#906A25" dominant-baseline="text-before-edge">实验验证</text>
+<rect x="2085" y="68" width="175.65625" height="42" rx="21" fill="#EDEFEA"/>
+<text x="2100" y="76" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#727B79" dominant-baseline="text-before-edge">待接入 / 参考</text>
+<rect x="96" y="297" width="2368" height="86" rx="20" fill="#E9EDE2"/>
+<text x="126" y="324" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">10 个阶段</text>
+<text x="390" y="324" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">9 组方法</text>
+<text x="645" y="324" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">124 条内置记录 + 个人补充</text>
+<text x="1320" y="324" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">四类记录：进展 / 修改 / 原理 / 扩展</text>
+<rect x="96" y="419" width="59.59375" height="42" rx="21" fill="#E9F1E5"/>
+<text x="111" y="427" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">01</text>
+<text x="174" y="417" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="43" font-weight="700" fill="#2E443D" dominant-baseline="text-before-edge">现在能做什么</text>
+<text x="470.0" y="429" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">已有能力按实际运行范围归纳</text>
+<rect x="96" y="489" width="770" height="258" rx="26" fill="#FFFFFF" stroke="#D6DDD1" stroke-width="2"/>
+<rect x="96" y="489" width="9" height="258" rx="4" fill="#47795A"/>
+<text x="126" y="513" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="42" font-weight="700" fill="#2E443D" dominant-baseline="text-before-edge">绒毛创作</text>
+<text x="126" y="568" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">程序角色 · 已实现</text>
+<text x="126" y="611" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">8 种造型 × 8 种材质与配饰</text>
+<text x="126" y="644" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">毛长、密度、卷曲与梳理参数</text>
+<text x="126" y="677" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">局部剪 / 染 / 卷 / 梳 / 恢复</text>
+<text x="126" y="710" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">组合步骤 · 最近 24 步撤销重做</text>
+<rect x="895" y="489" width="770" height="258" rx="26" fill="#FFFFFF" stroke="#D6DDD1" stroke-width="2"/>
+<rect x="895" y="489" width="9" height="258" rx="4" fill="#5479A5"/>
+<text x="925" y="513" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="42" font-weight="700" fill="#2E443D" dominant-baseline="text-before-edge">目标毛绒效果</text>
+<text x="925" y="568" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#5479A5" dominant-baseline="text-before-edge">作者资产 · 已接入</text>
+<text x="925" y="611" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">蓝绒星仔：完整 3DGS + SH3</text>
+<text x="925" y="644" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">6 块 SOG · 3,493,379 个高斯</text>
+<text x="925" y="677" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">进入创作 / 小世界 / 展示台画布</text>
+<text x="925" y="710" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">整体动作 + 毛长 / 卷曲 / 梳理近似</text>
+<rect x="1694" y="489" width="770" height="258" rx="26" fill="#FFFFFF" stroke="#D6DDD1" stroke-width="2"/>
+<rect x="1694" y="489" width="9" height="258" rx="4" fill="#47795A"/>
+<text x="1724" y="513" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="42" font-weight="700" fill="#2E443D" dominant-baseline="text-before-edge">小世界</text>
+<text x="1724" y="568" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">程序场景 · 已实现</text>
+<text x="1724" y="611" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">种子随机搭配 · 锁定喜欢的选项</text>
+<text x="1724" y="644" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">程序角色换装 · 家具布置</text>
+<text x="1724" y="677" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">行走、坐下、丢球与追球捡回</text>
+<text x="1724" y="710" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">状态机 + 代理几何 + 运动学</text>
+<rect x="96" y="771" width="770" height="258" rx="26" fill="#FFFFFF" stroke="#D6DDD1" stroke-width="2"/>
+<rect x="96" y="771" width="9" height="258" rx="4" fill="#47795A"/>
+<text x="126" y="795" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="42" font-weight="700" fill="#2E443D" dominant-baseline="text-before-edge">陪伴与成长</text>
+<text x="126" y="850" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">本机记录 · 已实现</text>
+<text x="126" y="893" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">陪伴笔记 · 共同回忆与成长事件</text>
+<text x="126" y="926" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">提醒在页面运行期间触发</text>
+<text x="126" y="959" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">完成的互动累积成长里程碑</text>
+<text x="126" y="992" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">外部 AI / 长期记忆 / 后台提醒待接入</text>
+<rect x="895" y="771" width="770" height="258" rx="26" fill="#FFFFFF" stroke="#D6DDD1" stroke-width="2"/>
+<rect x="895" y="771" width="9" height="258" rx="4" fill="#47795A"/>
+<text x="925" y="795" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="42" font-weight="700" fill="#2E443D" dominant-baseline="text-before-edge">Agent 可视化</text>
+<text x="925" y="850" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">固定本地任务 · 已实现</text>
+<text x="925" y="893" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">3 类任务：笔记整理 / 提醒 / 总览</text>
+<text x="925" y="926" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">展示计划步骤、工具事件与结果</text>
+<text x="925" y="959" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">逐步继续、停止、转为笔记草稿</text>
+<text x="925" y="992" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">当前流程按规则执行，AI 尚未启用</text>
+<rect x="1694" y="771" width="770" height="258" rx="26" fill="#FFFFFF" stroke="#D6DDD1" stroke-width="2"/>
+<rect x="1694" y="771" width="9" height="258" rx="4" fill="#47795A"/>
+<text x="1724" y="795" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="42" font-weight="700" fill="#2E443D" dominant-baseline="text-before-edge">作品与项目记录</text>
+<text x="1724" y="850" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">独立保存 · 已实现</text>
+<text x="1724" y="893" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">草稿、收藏、配方分享与 PNG</text>
+<text x="1724" y="926" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">完整历史搜索与个人补充</text>
+<text x="1724" y="959" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">Markdown 导出 · JSON 备份 / 合并</text>
+<text x="1724" y="992" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">当前浏览器本机数据 · 云同步待接入</text>
+<rect x="96" y="1071" width="59.59375" height="42" rx="21" fill="#E9F1E5"/>
+<text x="111" y="1079" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">02</text>
+<text x="174" y="1069" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="43" font-weight="700" fill="#2E443D" dominant-baseline="text-before-edge">它是怎样实现的</text>
+<text x="513.0" y="1081" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">两条毛绒路线，各自解决不同输入与控制问题</text>
+<rect x="96" y="1141" width="1170" height="320" rx="26" fill="#E9F1E5"/>
+<text x="126" y="1167" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="37" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">A  可自由编辑的程序毛丝</text>
+<rect x="126.0" y="1231" width="261.0" height="64" rx="14" fill="#FFFFFF"/>
+<text x="139.0" y="1251" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">毛根采样</text>
+<line x1="391.0" y1="1263" x2="398.0" y2="1263" stroke="#47795A" stroke-width="3"/>
+<polygon points="405.0,1263 394.0,1256 394.0,1270" fill="#47795A"/>
+<rect x="409.0" y="1231" width="261.0" height="64" rx="14" fill="#FFFFFF"/>
+<text x="422.0" y="1251" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">线段 / ribbon</text>
+<line x1="674.0" y1="1263" x2="681.0" y2="1263" stroke="#47795A" stroke-width="3"/>
+<polygon points="688.0,1263 677.0,1256 677.0,1270" fill="#47795A"/>
+<rect x="692.0" y="1231" width="261.0" height="64" rx="14" fill="#FFFFFF"/>
+<text x="705.0" y="1251" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">局部表面场</text>
+<line x1="957.0" y1="1263" x2="964.0" y2="1263" stroke="#47795A" stroke-width="3"/>
+<polygon points="971.0,1263 960.0,1256 960.0,1270" fill="#47795A"/>
+<rect x="975.0" y="1231" width="261.0" height="64" rx="14" fill="#FFFFFF"/>
+<text x="988.0" y="1251" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">检查点 / 撤销</text>
+<text x="126" y="1321" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="400" fill="#2E443D" dominant-baseline="text-before-edge">形体上采样毛根，稀疏导向控制渐细毛束与弯曲。</text>
+<text x="126" y="1361" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="400" fill="#2E443D" dominant-baseline="text-before-edge">128×64 表面场保存剪、染、卷、梳与恢复结果。</text>
+<text x="126" y="1401" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="400" fill="#2E443D" dominant-baseline="text-before-edge">检查点合并保留旧效果，组合步骤整理连续操作。</text>
+<rect x="1294" y="1141" width="1170" height="320" rx="26" fill="#EDF3FC"/>
+<text x="1324" y="1167" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="37" font-weight="700" fill="#5479A5" dominant-baseline="text-before-edge">B  保留目标质感的原作高斯</text>
+<rect x="1324.0" y="1231" width="261.0" height="64" rx="14" fill="#FFFFFF"/>
+<text x="1337.0" y="1251" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#5479A5" dominant-baseline="text-before-edge">本地 SOG</text>
+<line x1="1589.0" y1="1263" x2="1596.0" y2="1263" stroke="#5479A5" stroke-width="3"/>
+<polygon points="1603.0,1263 1592.0,1256 1592.0,1270" fill="#5479A5"/>
+<rect x="1607.0" y="1231" width="261.0" height="64" rx="14" fill="#FFFFFF"/>
+<text x="1620.0" y="1251" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#5479A5" dominant-baseline="text-before-edge">Spark 解码</text>
+<line x1="1872.0" y1="1263" x2="1879.0" y2="1263" stroke="#5479A5" stroke-width="3"/>
+<polygon points="1886.0,1263 1875.0,1256 1875.0,1270" fill="#5479A5"/>
+<rect x="1890.0" y="1231" width="261.0" height="64" rx="14" fill="#FFFFFF"/>
+<text x="1903.0" y="1251" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#5479A5" dominant-baseline="text-before-edge">SH 颜色 / 排序</text>
+<line x1="2155.0" y1="1263" x2="2162.0" y2="1263" stroke="#5479A5" stroke-width="3"/>
+<polygon points="2169.0,1263 2158.0,1256 2158.0,1270" fill="#5479A5"/>
+<rect x="2173.0" y="1231" width="261.0" height="64" rx="14" fill="#FFFFFF"/>
+<text x="2186.0" y="1251" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#5479A5" dominant-baseline="text-before-edge">GPU 绘制</text>
+<text x="1324" y="1321" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="400" fill="#2E443D" dominant-baseline="text-before-edge">从作者既有资产显示外观，适配坐标、尺度与场景。</text>
+<text x="1324" y="1361" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="400" fill="#2E443D" dominant-baseline="text-before-edge">整体运动；近似调整高斯位置、方向与大小。</text>
+<text x="1324" y="1401" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="400" fill="#2E443D" dominant-baseline="text-before-edge">梳理以 12×14×8 空间场驱动，没有逐根毛丝结构。</text>
+<rect x="96" y="1479" width="2368" height="70" rx="17" fill="#DAE4D5"/>
+<text x="133" y="1498" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">统一绘制与交互底座</text>
+<text x="590" y="1498" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="400" fill="#2E443D" dominant-baseline="text-before-edge">Three.js / WebGL  ·  相机  ·  场景  ·  画布  ·  输入事件</text>
+<rect x="96" y="1568" width="1170" height="202" rx="24" fill="#FFFFFF" stroke="#D6DDD1" stroke-width="2"/>
+<text x="126" y="1592" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700" fill="#2E443D" dominant-baseline="text-before-edge">C  场景 → 行为 → 回忆与成长</text>
+<text x="126" y="1650" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">种子 / 配置 → 场景与代理几何 → 状态机 / 路径 / 运动学</text>
+<text x="126" y="1685" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">实际完成的互动事件 → 回忆记录 → 成长里程碑</text>
+<text x="126" y="1720" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">成长来自已经发生的事件；自主故事与多角色仍待扩展。</text>
+<rect x="1294" y="1568" width="1170" height="202" rx="24" fill="#FFFFFF" stroke="#D6DDD1" stroke-width="2"/>
+<text x="1324" y="1592" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700" fill="#2E443D" dominant-baseline="text-before-edge">D  数据 → 本地任务 → 可编辑结果</text>
+<text x="1324" y="1650" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">校验配置 → 浏览器本机存储 → 分享 / 导出 / 再导入</text>
+<text x="1324" y="1685" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">任务读取快照 → 固定规则 → 执行事件 → 笔记草稿</text>
+<text x="1324" y="1720" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">作品、世界、陪伴与项目记录各自保存，旧创作继续保留。</text>
+<rect x="96" y="1811" width="59.59375" height="42" rx="21" fill="#E9F1E5"/>
+<text x="111" y="1819" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">03</text>
+<text x="174" y="1809" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="43" font-weight="700" fill="#2E443D" dominant-baseline="text-before-edge">论文、算法与成熟工具</text>
+<text x="642.0" y="1821" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">九组方法：使用到哪一步，也写到哪一步</text>
+<rect x="96" y="1881" width="770" height="99" rx="18" fill="#E9F1E5"/>
+<circle cx="124" cy="1909" r="6" fill="#47795A"/>
+<text x="144" y="1896" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">Three.js + 程序纤维</text>
+<text x="123" y="1938" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">已用：毛根、ribbon、导向与表面场</text>
+<rect x="895" y="1881" width="770" height="99" rx="18" fill="#FCF1DB"/>
+<circle cx="923" cy="1909" r="6" fill="#906A25"/>
+<text x="943" y="1896" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#906A25" dominant-baseline="text-before-edge">Shells / Fins · 2001</text>
+<text x="922" y="1938" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">实验：32 层 Shells；未实现 Fins</text>
+<rect x="1694" y="1881" width="770" height="99" rx="18" fill="#FCF1DB"/>
+<circle cx="1722" cy="1909" r="6" fill="#906A25"/>
+<text x="1742" y="1896" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#906A25" dominant-baseline="text-before-edge">动态 FTL · 2012</text>
+<text x="1721" y="1938" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">实验：32 根六段导向链，逐段保长</text>
+<rect x="96" y="1999" width="770" height="99" rx="18" fill="#FCF1DB"/>
+<circle cx="124" cy="2027" r="6" fill="#906A25"/>
+<text x="144" y="2014" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#906A25" dominant-baseline="text-before-edge">液体与毛发 · 2017</text>
+<text x="123" y="2056" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">外观启发：湿润聚束；未做液体耦合</text>
+<rect x="895" y="1999" width="770" height="99" rx="18" fill="#FCF1DB"/>
+<circle cx="923" cy="2027" r="6" fill="#906A25"/>
+<text x="943" y="2014" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#906A25" dominant-baseline="text-before-edge">Chiang + Cycles · 2016</text>
+<text x="922" y="2056" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">已渲染：纤维散射；自制质感未达参考</text>
+<rect x="1694" y="1999" width="770" height="99" rx="18" fill="#FCF1DB"/>
+<circle cx="1722" cy="2027" r="6" fill="#906A25"/>
+<text x="1742" y="2014" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#906A25" dominant-baseline="text-before-edge">3DGS · 2023 / Mip · 2024</text>
+<text x="1721" y="2056" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">前向高斯 / 受限 PLY；2D Mip 仅程序展台</text>
+<rect x="96" y="2117" width="770" height="99" rx="18" fill="#FCF1DB"/>
+<circle cx="124" cy="2145" r="6" fill="#906A25"/>
+<text x="144" y="2132" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#906A25" dominant-baseline="text-before-edge">Blender Hair / Houdini Groom</text>
+<text x="123" y="2174" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">Blender 已运行；Houdini 仅方法参考</text>
+<rect x="895" y="2117" width="770" height="99" rx="18" fill="#EDF3FC"/>
+<circle cx="923" cy="2145" r="6" fill="#5479A5"/>
+<text x="943" y="2132" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#5479A5" dominant-baseline="text-before-edge">LichtFeld / SuperSplat / Spark</text>
+<text x="922" y="2174" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">Spark 显示原作；本项目未运行训练</text>
+<rect x="1694" y="2117" width="770" height="99" rx="18" fill="#EDEFEA"/>
+<circle cx="1722" cy="2145" r="6" fill="#727B79"/>
+<text x="1742" y="2132" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#727B79" dominant-baseline="text-before-edge">GaussianHair / Volumetric Sheen</text>
+<text x="1721" y="2174" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">已整理理解；重建与光泽模型尚未集成</text>
+<rect x="96" y="2253" width="59.59375" height="42" rx="21" fill="#E9F1E5"/>
+<text x="111" y="2261" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">04</text>
+<text x="174" y="2251" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="43" font-weight="700" fill="#2E443D" dominant-baseline="text-before-edge">接下来向哪里生长</text>
+<text x="556.0" y="2263" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">以下全部为待完成方向</text>
+<rect x="96" y="2323" width="770" height="95" rx="18" fill="#EDEFEA"/>
+<text x="123" y="2338" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#2E443D" dominant-baseline="text-before-edge">先把编辑体验接顺</text>
+<text x="123" y="2379" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">笔刷命中 / 模式互斥 / 窄屏预览 / 导入容量</text>
+<rect x="895" y="2323" width="770" height="95" rx="18" fill="#EDEFEA"/>
+<text x="922" y="2338" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#2E443D" dominant-baseline="text-before-edge">质感与自由创作统一</text>
+<text x="922" y="2379" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">原作语义分区 / 局部剪染 / 换装 / 柔软形变</text>
+<rect x="1694" y="2323" width="770" height="95" rx="18" fill="#EDEFEA"/>
+<text x="1721" y="2338" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#2E443D" dominant-baseline="text-before-edge">AI 陪伴与生活用途</text>
+<text x="1721" y="2379" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">真实对话 / 记忆选择 / 提醒草稿 / 后台提醒</text>
+<rect x="96" y="2438" width="770" height="95" rx="18" fill="#EDEFEA"/>
+<text x="123" y="2453" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#2E443D" dominant-baseline="text-before-edge">可检查的自主 Agent</text>
+<text x="123" y="2494" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">受限规划 / 工具执行 / 结果核验 / 失败停止</text>
+<rect x="895" y="2438" width="770" height="95" rx="18" fill="#EDEFEA"/>
+<text x="922" y="2453" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#2E443D" dominant-baseline="text-before-edge">随机创意与共同故事</text>
+<text x="922" y="2494" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">主题搭配 / 自定义场景 / 多角色 / 故事成长</text>
+<rect x="1694" y="2438" width="770" height="95" rx="18" fill="#EDEFEA"/>
+<text x="1721" y="2453" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#2E443D" dominant-baseline="text-before-edge">性能与作品延续</text>
+<text x="1721" y="2494" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">分级加载 / GPU 与手机验证 / 版本 / 云同步</text>
+<rect x="96" y="2580" width="2368" height="161" rx="23" fill="#FFFFFF" stroke="#D6DDD1" stroke-width="2"/>
+<text x="125" y="2598" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">十个阶段 · 历史继续保留</text>
+<text x="125" y="2645" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">01  短绒创作</text>
+<line x1="425" y1="2659" x2="540" y2="2659" stroke="#D6DDD1" stroke-width="3"/>
+<polygon points="547,2659 536,2652 536,2666" fill="#D6DDD1"/>
+<text x="590" y="2645" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">02  连续编辑</text>
+<line x1="890" y1="2659" x2="1005" y2="2659" stroke="#D6DDD1" stroke-width="3"/>
+<polygon points="1012,2659 1001,2652 1001,2666" fill="#D6DDD1"/>
+<text x="1055" y="2645" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">03  项目记录</text>
+<line x1="1355" y1="2659" x2="1470" y2="2659" stroke="#D6DDD1" stroke-width="3"/>
+<polygon points="1477,2659 1466,2652 1466,2666" fill="#D6DDD1"/>
+<text x="1520" y="2645" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">04  小世界</text>
+<line x1="1820" y1="2659" x2="1935" y2="2659" stroke="#D6DDD1" stroke-width="3"/>
+<polygon points="1942,2659 1931,2652 1931,2666" fill="#D6DDD1"/>
+<text x="1985" y="2645" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">05  陪伴与任务</text>
+<text x="125" y="2690" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">06  程序研究</text>
+<line x1="425" y1="2704" x2="540" y2="2704" stroke="#D6DDD1" stroke-width="3"/>
+<polygon points="547,2704 536,2697 536,2711" fill="#D6DDD1"/>
+<text x="590" y="2690" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">07  Cycles 实验</text>
+<line x1="890" y1="2704" x2="1005" y2="2704" stroke="#D6DDD1" stroke-width="3"/>
+<polygon points="1012,2704 1001,2697 1001,2711" fill="#D6DDD1"/>
+<text x="1055" y="2690" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">08  在线原作</text>
+<line x1="1355" y1="2704" x2="1470" y2="2704" stroke="#D6DDD1" stroke-width="3"/>
+<polygon points="1477,2704 1466,2697 1466,2711" fill="#D6DDD1"/>
+<text x="1520" y="2690" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">09  本地接入</text>
+<line x1="1820" y1="2704" x2="1935" y2="2704" stroke="#D6DDD1" stroke-width="3"/>
+<polygon points="1942,2704 1931,2697 1931,2711" fill="#D6DDD1"/>
+<text x="1985" y="2690" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">10  页面审查</text>
+<rect x="96" y="2762" width="2368" height="175" rx="23" fill="#E8EBE4"/>
+<text x="125" y="2786" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">当前边界</text>
+<text x="385" y="2789" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="400" fill="#2E443D" dominant-baseline="text-before-edge">高斯编辑是近似；原作尚无局部剪染 / 换装；没有逐根毛丝物理。</text>
+<text x="385" y="2832" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="400" fill="#2E443D" dominant-baseline="text-before-edge">原作保留烘焙外观，场景灯光不重算纤维散射；AI 接口未启用，任务按固定规则运行。</text>
+<text x="125" y="2888" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">原作：ChatGPT dots - Felipe · abstrakt · CC BY 4.0  |  本项目：加载、场景适配与近似编辑；未训练或照片重建原作。</text>
+<text x="96" y="2980" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#607269" dominant-baseline="text-before-edge">截至 2026-10-03  ·  汇总覆盖完整项目；资料齐全不代表全部能力已完成。</text>
+<text x="1960" y="2980" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#47795A" dominant-baseline="text-before-edge">原始作品与记录全部保留</text>
+</svg>

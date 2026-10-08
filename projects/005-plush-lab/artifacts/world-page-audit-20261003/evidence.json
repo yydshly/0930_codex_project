@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-03",
+  "page": "web/world.html?plushView=reference",
+  "asset": "reference-plush",
+  "currentActorFur": {"length": 1.65, "curl": 0, "groom": []},
+  "responsiveCheck": {
+    "viewport": {"width": 390, "height": 844},
+    "scrollY": 1178.667,
+    "canvasTop": -1088,
+    "canvasBottom": -509.333,
+    "furControlTop": 296.917,
+    "source": "read-only DOM inspection in agent-created audit tab"
+  },
+  "modeConflict": {
+    "steps": ["enable grooming", "open Scene tab", "click Arrange"],
+    "observedDOM": {
+      "data-plush-grooming": "true",
+      "layoutButtonAriaPressed": "true",
+      "canvasClass": "is-arranging"
+    },
+    "furnitureDragAttempted": false,
+    "pointerInterception": "confirmed by current reference-plush-brush.js capture listeners",
+    "restored": {"grooming": false, "layout": false}
+  },
+  "pureFunctionRoundTrip": {
+    "module": "src/world-config.js",
+    "functions": ["defaultWorld", "encodeWorld", "decodeWorld"],
+    "groom": "Array.from({length:1344}, (_, i) => [i, .01234, .05678, .09])",
+    "tokenLength": 49298,
+    "encoderLimit": 131072,
+    "textareaMaxlength": 22000,
+    "roundTripCells": 1344,
+    "persisted": false
+  },
+  "limitations": [
+    "No real-phone touch or performance test",
+    "No screen-reader test",
+    "No slider, brush painting, palette or lighting value changes",
+    "No save, open or remove collection actions",
+    "No reference-to-native switch or randomization action",
+    "Lighting mismatch is a renderer limitation requiring visual comparison, not a reproduced visual defect"
+  ]
+}

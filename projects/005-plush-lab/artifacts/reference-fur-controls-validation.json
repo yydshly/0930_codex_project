@@ -1,0 +1,198 @@
+{
+  "date": "2026-10-03",
+  "scope": "Native reference Gaussian fur controls in creation, world and showcase",
+  "asset": {
+    "title": "ChatGPT dots - Felipe",
+    "author": "abstrakt",
+    "source": "https://superspl.at/scene/ca6a4c9b",
+    "license": "CC BY 4.0",
+    "splats": 3493379,
+    "sphericalHarmonicDegree": 3,
+    "chunks": 6,
+    "sourceDataModified": false
+  },
+  "controls": {
+    "relativeLength": [
+      0.65,
+      1.65
+    ],
+    "addedCurl": [
+      0,
+      1
+    ],
+    "neutralStyle": {
+      "length": 1,
+      "curl": 0,
+      "groom": []
+    },
+    "groomGrid": [
+      12,
+      14,
+      8
+    ],
+    "historyUnit": "One slider gesture or one complete brush drag",
+    "continuousGrooming": "Directions blend into a fixed spatial field; no total stamp cap"
+  },
+  "browser": {
+    "surface": "Codex In-app Browser on this Windows desktop",
+    "interaction": "Actual sliders, buttons, pointer drags and reloads through cua_repl",
+    "creation": {
+      "url": "http://localhost:8875/projects/005-plush-lab/web/index.html?plushView=reference",
+      "canvasCount": 1,
+      "iframeCount": 0,
+      "lengthAndCurlSliders": "PASS: 165% length and 100% added curl, then neutral reset",
+      "visibleBodyGrooming": "PASS: front body drag visibly changed coat texture",
+      "wholeDragUndoRedo": "PASS",
+      "reloadPersistence": "PASS: length, curl and visible grooming restored",
+      "nativeModeReturn": "PASS: original procedural draft and local edits remained available",
+      "consoleErrors": [],
+      "evidence": [
+        "reference-fur-controls-creation.png",
+        "reference-fur-creation-before.png",
+        "reference-fur-creation-after.png"
+      ]
+    },
+    "world": {
+      "url": "http://localhost:8875/projects/005-plush-lab/web/world.html?plushView=reference",
+      "canvasCount": 1,
+      "iframeCount": 0,
+      "lengthAndCurlSliders": "PASS: 65%/165% length and 0%/100% added curl visibly changed coat",
+      "visibleBodyGrooming": "PASS: front body drag wrote 24 nonzero field cells and visibly changed coat",
+      "wholeDragUndoRedo": "PASS: undo cleared field; redo restored the same field",
+      "reloadPersistence": "PASS: decoded public #world state retained the same field",
+      "continuedGrooming": "PASS: a second body drag changed the stored field",
+      "preservation": "Existing furniture layout and pose {x:0,z:-0.65,seatId:null} matched before and after brush edits and neutral reset",
+      "consoleErrors": [],
+      "spinAfterGrooming": "PASS: first spin click disabled grooming and activated rotation; stopping, front reset and pause verified",
+      "evidence": [
+        "reference-fur-world-long.png",
+        "reference-fur-world-curl.png",
+        "reference-fur-world-short.png",
+        "reference-fur-world-brush-before.png",
+        "reference-fur-world-brush-after.png",
+        "reference-fur-world-final.png"
+      ]
+    },
+    "showcase": {
+      "url": "http://localhost:8875/projects/005-plush-lab/web/splat.html?plushView=reference",
+      "canvasCount": 1,
+      "iframeCount": 0,
+      "lengthAndCurlSliders": "PASS: 165% length and 100% added curl, then neutral reset",
+      "visibleBodyGrooming": "PASS: body pointer drag visibly changed coat texture",
+      "wholeDragUndoRedo": "PASS: UI reported whole modification undo and redo",
+      "reloadPersistence": "PASS: sliders restored to 165%/100% and body grooming remained visible",
+      "nativeModeReturn": "PASS: existing procedural settings remained available (soft-star-2026 seed, 80000 splats, #8bacee color)",
+      "consoleErrors": [],
+      "evidence": [
+        "reference-fur-splat-before.png",
+        "reference-fur-splat-after.png",
+        "reference-fur-splat-restored.png"
+      ]
+    }
+  },
+  "imageChangeChecks": {
+    "metric": "Mean absolute per-channel difference in 8-bit RGB screenshots; not a visual-quality score",
+    "worldBodyROI": {
+      "x": [
+        220,
+        435
+      ],
+      "y": [
+        438,
+        560
+      ]
+    },
+    "worldHatROI": {
+      "x": [
+        258,
+        381
+      ],
+      "y": [
+        362,
+        403
+      ]
+    },
+    "worldLongToCurl": {
+      "body": 7.209823,
+      "hat": 0.390905
+    },
+    "worldLongToShort": {
+      "body": 11.399975,
+      "hat": 0.236698
+    },
+    "worldBrushBeforeToAfter": {
+      "body": 2.973758,
+      "hat": 0.087977
+    },
+    "creationBodyROI": {
+      "x": [
+        230,
+        675
+      ],
+      "y": [
+        395,
+        640
+      ]
+    },
+    "creationHatROI": {
+      "x": [
+        270,
+        510
+      ],
+      "y": [
+        184,
+        250
+      ]
+    },
+    "creationBrushBeforeToAfter": {
+      "body": 3.817167,
+      "hat": 0.002462
+    },
+    "interpretation": "Body changed substantially more than the accessory ROI; minor accessory boundary/compositing variation remains. World screenshots cover only a partial visible body region."
+  },
+  "automatedValidation": {
+    "lastCompletedSuite": {
+      "passed": 442,
+      "failed": 0
+    },
+    "finalBuildAndSuite": {
+      "build": "PASS",
+      "tests": 442,
+      "passed": 442,
+      "failed": 0,
+      "command": "node --test --test-reporter=dot ../tests/*.test.mjs"
+    },
+    "includes": [
+      "State sanitization and compatibility",
+      "Share and draft round trips",
+      "Complete spatial field persistence and copy isolation",
+      "Dyno modifier shader construction",
+      "Front-coat proxy depth and accessory hit guards"
+    ]
+  },
+  "limits": [
+    "Relative editing of the original Gaussian asset, not reconstruction of individual fibers or physical strand simulation",
+    "Added curl at zero preserves the asset's existing curl; it does not straighten original baked curls",
+    "Fur weights use original color and spatial ranges; brush hits use measured ellipsoid proxies rather than exact surface geometry",
+    "Accessory protection is approximate, with boundary blending; new views and additional accessories need further validation",
+    "Real-time geometry changes keep existing view-dependent color rather than physically relighting each fiber",
+    "This QA covers the current Windows desktop browser, not mobile-device performance"
+  ],
+  "preservationAudit": {
+    "historicalJournalEntries": 123,
+    "historicalJournalSHA256": "ad9e39b2ea1dbf62f8e83913a14f9513f2bb26372467f943d605d60e1fea9708",
+    "currentBuiltInJournalEntries": 124,
+    "worldFinalLayoutMatchesInitial": true,
+    "worldFinalPose": {
+      "x": 0,
+      "z": -0.65,
+      "seatId": null
+    },
+    "worldFinalFur": {
+      "length": 1,
+      "curl": 0,
+      "groom": []
+    },
+    "qaTemporaryStylesReset": true
+  }
+}

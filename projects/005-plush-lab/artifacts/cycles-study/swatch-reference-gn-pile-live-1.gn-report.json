@@ -1,0 +1,4412 @@
+{
+  "status": "engineering_precheck_passed",
+  "rendered": false,
+  "study_scope": "One multi-change method candidate: open authored guides + official live nodes + shorter lengths + fuller tip profile; not controlled A/B or paper/Houdini reproduction",
+  "baseline_source": "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\character-reference-v3.source.py",
+  "baseline_source_sha256": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3",
+  "baseline_snapshot": "swatch-reference-gn-pile-live-1.source.py",
+  "wrapper_source_snapshot": "swatch-reference-gn-pile-live-1.gn-source.py",
+  "wrapper_source_sha256": "3f0fbdc4f9edc95ee15c2142ad26384bec8c27907c03d845b5199f82291a1942",
+  "official_asset_library": "D:\\codex\\home\\cache\\plush-lab-tools\\blender\\blender-5.2.2-windows-x64\\5.2\\datafiles\\assets\\nodes\\procedural_hair_node_assets.blend",
+  "official_asset_sha256": "b69d8bd8975b9db7f89693f8f19dd7fcb241f5a3786d2edfb0a243e91c1109bb",
+  "blender": "5.2.2 LTS",
+  "blend": "swatch-reference-gn-pile-live-1.blend",
+  "png": "swatch-reference-gn-pile-live-1.png",
+  "fixed": [
+    "frozen v3 coat roots and group assignment",
+    "strand counts",
+    "base RNG samples",
+    "undercoat/flyaway geometry",
+    "material and color",
+    "camera and lights",
+    "Cycles settings"
+  ],
+  "noncoat": {
+    "Blue pile · undercoat": {
+      "positions_float32_sha256": "b1a76c65c818b6d4cc86d55f3ad7d112cca1cf437ab990247f67816c56d60ffc",
+      "radii_float32_sha256": "163bedc07ee3c01338485437faa8c0eb414892480b732e2889e4621c3dbff473"
+    },
+    "Blue pile · flyaway": {
+      "positions_float32_sha256": "03783b0f1e3e0ec1ae34ce096f1ff942a973784744f561b58aca107fdb218543",
+      "radii_float32_sha256": "7ba573a1309693e1e743ce51237f17ed4889f65867a06e7818abd1a095e440d1"
+    }
+  },
+  "coat": {
+    "native_component": "Curves",
+    "curve_count": 85000,
+    "points_per_curve": 12,
+    "finite": true,
+    "root_bits_equal_frozen_v3": true,
+    "root_error_max": 0.0,
+    "input_positions_float32_sha256": "a5f329fa084c433ba3153eed01f704dc84a212704108b0b3462e5e9c5a064133",
+    "evaluated_positions_float32_sha256": "255823db00fb55cc51cf30c11804c4ba289805784fd9f836f2693ef4a6e3fdbe",
+    "deformation_from_input": {
+      "minimum": 0.0,
+      "maximum": 0.10665346682071686,
+      "mean": 0.014746246196417326,
+      "median": 0.010684929322451353,
+      "p95": 0.041810265369713294
+    },
+    "radius_root": {
+      "minimum": 0.00024000174016691744,
+      "maximum": 0.00039999629370868206,
+      "mean": 0.0003199993631840163,
+      "median": 0.0003200280189048499,
+      "p95": 0.0003919445152860135
+    },
+    "radius_tip": {
+      "minimum": 0.00013200096145737916,
+      "maximum": 0.00022000032186042517,
+      "mean": 0.0001760002418537624,
+      "median": 0.00017601585568627343,
+      "p95": 0.00021557192885666155
+    },
+    "tip_to_root_radius_ratio": {
+      "minimum": 0.5499999523162842,
+      "maximum": 0.5500145554542542,
+      "mean": 0.5500018438255085,
+      "median": 0.550000011920929,
+      "p95": 0.5500145554542542
+    },
+    "arc_length": {
+      "basis": "Uniform Catmull-Rom, duplicate endpoint controls, float32 controls promoted to float64",
+      "quadrature_order": 32,
+      "frozen_v3": {
+        "minimum": 0.030454838433767742,
+        "maximum": 0.10755031994483809,
+        "mean": 0.05693102762555881,
+        "median": 0.05634619683181907,
+        "p95": 0.07477829778396869
+      },
+      "input_rest": {
+        "minimum": 0.0006011426510402263,
+        "maximum": 0.07528521710984906,
+        "mean": 0.03984847327722985,
+        "median": 0.03944189043192772,
+        "p95": 0.0523448187436811
+      },
+      "evaluated": {
+        "minimum": 0.0006028081369719455,
+        "maximum": 0.07545952251506612,
+        "mean": 0.040039023634598186,
+        "median": 0.03964149612077961,
+        "p95": 0.05255124882190075
+      },
+      "relative_change_from_v3": {
+        "minimum": -0.9806028381734175,
+        "maximum": -0.2908367386401584,
+        "mean": -0.29667472114255505,
+        "median": -0.296752395484592,
+        "p95": -0.2939847593886082
+      },
+      "absolute_relative_change_from_rest": {
+        "minimum": 0.001032191286770511,
+        "maximum": 0.013089741309686515,
+        "mean": 0.004843363155907886,
+        "median": 0.004639471197249093,
+        "p95": 0.008593499106865602
+      },
+      "constraint_scope": "Official Restore constrains control-segment lengths; Catmull-Rom arc drift is measured, not normalized"
+    },
+    "live_guide_probe": {
+      "guide_index": 0,
+      "control_index": 5,
+      "delta_x": 0.002,
+      "maximum_coat_displacement": 0.0014592111110687256,
+      "changed_curve_count": 32,
+      "roots_still_exact": true,
+      "restored_evaluation_bitwise_equal": true
+    }
+  },
+  "guides": {
+    "object": "Pile guides · editable live input",
+    "curve_count": 2657,
+    "points_per_curve": 12,
+    "authored_archetypes": 3,
+    "prototype_assignment": "group_index modulo 3",
+    "prototype_ids_sha256": "e9eab797799c9319a708c6b8026af743320c7538e9389fc92a3dec2fd21abf27",
+    "positions_float32_sha256": "f900f8bb11b18f5b692683781182598cb934f276c52e86d5e5995a591b110069",
+    "guide_curve_index_offset": 85000,
+    "geometry_budget": ".70 times frozen v3 measured Catmull-Rom arc length; per-group guide uses member mean",
+    "input_budget": {
+      "minimum": 0.021318386903637417,
+      "maximum": 0.07528522396138666,
+      "mean": 0.03985171933789117,
+      "median": 0.039442337782273344,
+      "p95": 0.052344808448778084
+    },
+    "guide_arc_length": {
+      "minimum": 0.034285374355649816,
+      "maximum": 0.04758611358077182,
+      "mean": 0.03985194101670099,
+      "median": 0.03987899940305172,
+      "p95": 0.04230585484457818
+    },
+    "attachment_scope": "Fixed frozen roots in object coordinates; no surface UV attachment or deformation binding claimed"
+  },
+  "graph": {
+    "modifier": "Live official hair GN · pile study",
+    "node_group": "PLUSH Live Official Hair · pile study",
+    "guide_object": "Pile guides · editable live input",
+    "nodes": [
+      "Group Input",
+      "Group Output",
+      "Live editable guide geometry",
+      "Coat first, guide curves second",
+      "Read pile_guide_index",
+      "Read is_guide",
+      "Read rest_position",
+      "Read root_radius",
+      "Curl Hair Curves",
+      "Clump Hair Curves",
+      "Restore Curve Segment Length",
+      "Set Hair Curve Profile",
+      "Remove temporary guide component from render output",
+      "Set Spline Type",
+      "Spline Parameter",
+      "Compare",
+      "Exact frozen float32 root lock"
+    ],
+    "official_groups": {
+      "Curl Hair Curves": {
+        "name": "Curl Hair Curves",
+        "interface": [
+          [
+            "Geometry",
+            "Output_1",
+            "OUTPUT",
+            "NodeSocketGeometry"
+          ],
+          [
+            "Geometry",
+            "Input_0",
+            "INPUT",
+            "NodeSocketGeometry"
+          ],
+          [
+            "Factor",
+            "Input_2",
+            "INPUT",
+            "NodeSocketFloat"
+          ],
+          [
+            "Subdivision",
+            "Input_5",
+            "INPUT",
+            "NodeSocketInt"
+          ],
+          [
+            "Curl Start",
+            "Input_6",
+            "INPUT",
+            "NodeSocketFloat"
+          ],
+          [
+            "Radius",
+            "Input_7",
+            "INPUT",
+            "NodeSocketFloat"
+          ],
+          [
+            "Factor Start",
+            "Input_9",
+            "INPUT",
+            "NodeSocketFloat"
+          ],
+          [
+            "Factor End",
+            "Input_10",
+            "INPUT",
+            "NodeSocketFloat"
+          ],
+          [
+            "Frequency",
+            "Input_11",
+            "INPUT",
+            "NodeSocketFloat"
+          ],
+          [
+            "Random Offset",
+            "Input_16",
+            "INPUT",
+            "NodeSocketFloat"
+          ],
+          [
+            "Seed",
+            "Input_15",
+            "INPUT",
+            "NodeSocketInt"
+          ],
+          [
+            "Guide Index",
+            "Output_20",
+            "OUTPUT",
+            "NodeSocketInt"
+          ],
+          [
+            "Guide Index",
+            "Input_19",
+            "INPUT",
+            "NodeSocketInt"
+          ],
+          [
+            "Guide Distance",
+            "Input_4",
+            "INPUT",
+            "NodeSocketFloat"
+          ],
+          [
+            "Guide Mask",
+            "Input_18",
+            "INPUT",
+            "NodeSocketFloat"
+          ],
+          [
+            "Existing Guide Map",
+            "Input_3",
+            "INPUT",
+            "NodeSocketBool"
+          ]
+        ],
+        "nodes": [
+          [
+            "Frame.011",
+            "NodeFrame",
+            null
+          ],
+          [
+            "Frame",
+            "NodeFrame",
+            null
+          ],
+          [
+            "Frame.004",
+            "NodeFrame",
+            null
+          ],
+          [
+            "Frame.007",
+            "NodeFrame",
+            null
+          ],
+          [
+            "Frame.006",
+            "NodeFrame",
+            null
+          ],
+          [
+            "Frame.009",
+            "NodeFrame",
+            null
+          ],
+          [
+            "Frame.001",
+            "NodeFrame",
+            null
+          ],
+          [
+            "Frame.005",
+            "NodeFrame",
+            null
+          ],
+          [
+            "Frame.010",
+            "NodeFrame",
+            null
+          ],
+          [
+            "Frame.002",
+            "NodeFrame",
+            null
+          ],
+          [
+            "Frame.008",
+            "NodeFrame",
+            null
+          ],
+          [
+            "Frame.003",
+            "NodeFrame",
+            null
+          ],
+          [
+            "Reroute",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.004",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.007",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Group Input",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Reroute.030",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.022",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Subdivide Curve.002",
+            "GeometryNodeSubdivideCurve",
+            null
+          ],
+          [
+            "Math.003",
+            "ShaderNodeMath",
+            null
+          ],
+          [
+            "Math.004",
+            "ShaderNodeMath",
+            null
+          ],
+          [
+            "Group Input.005",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Reroute.008",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.002",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Capture Attribute.001",
+            "GeometryNodeCaptureAttribute",
+            null
+          ],
+          [
+            "Join Geometry",
+            "GeometryNodeJoinGeometry",
+            null
+          ],
+          [
+            "Sample Curve",
+            "GeometryNodeSampleCurve",
+            null
+          ],
+          [
+            "Spline Parameter.002",
+            "GeometryNodeSplineParameter",
+            null
+          ],
+          [
+            "Reroute.028",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Compare.003",
+            "FunctionNodeCompare",
+            null
+          ],
+          [
+            "Set Spline Type.001",
+            "GeometryNodeCurveSplineType",
+            null
+          ],
+          [
+            "Set Spline Resolution.001",
+            "GeometryNodeSetSplineResolution",
+            null
+          ],
+          [
+            "Switch.004",
+            "GeometryNodeSwitch",
+            null
+          ],
+          [
+            "Reroute.001",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.005",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Group Input.002",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Position",
+            "GeometryNodeInputPosition",
+            null
+          ],
+          [
+            "Vector Math.008",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Vector Math.010",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Vector Math.009",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Vector Math.006",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Vector Math.005",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Reroute.012",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.025",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Vector Math.007",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Vector Math.011",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Vector Math.012",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Separate XYZ.001",
+            "ShaderNodeSeparateXYZ",
+            null
+          ],
+          [
+            "Reroute.016",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Set Position.001",
+            "GeometryNodeSetPosition",
+            null
+          ],
+          [
+            "Math",
+            "ShaderNodeMath",
+            null
+          ],
+          [
+            "Map Range",
+            "ShaderNodeMapRange",
+            null
+          ],
+          [
+            "Group Input.006",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Spline Parameter.003",
+            "GeometryNodeSplineParameter",
+            null
+          ],
+          [
+            "Reroute.003",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.013",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Group Output",
+            "NodeGroupOutput",
+            null
+          ],
+          [
+            "Capture Attribute.004",
+            "GeometryNodeCaptureAttribute",
+            null
+          ],
+          [
+            "Random Value.001",
+            "FunctionNodeRandomValue",
+            null
+          ],
+          [
+            "Sample Index.001",
+            "GeometryNodeSampleIndex",
+            null
+          ],
+          [
+            "Group.003",
+            "GeometryNodeGroup",
+            "Curve Info"
+          ],
+          [
+            "Evaluate on Domain.001",
+            "GeometryNodeFieldOnDomain",
+            null
+          ],
+          [
+            "Math.048",
+            "ShaderNodeMath",
+            null
+          ],
+          [
+            "Math.049",
+            "ShaderNodeMath",
+            null
+          ],
+          [
+            "Math.038",
+            "ShaderNodeMath",
+            null
+          ],
+          [
+            "Combine XYZ.001",
+            "ShaderNodeCombineXYZ",
+            null
+          ],
+          [
+            "Vector Math",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Map Range.002",
+            "ShaderNodeMapRange",
+            null
+          ],
+          [
+            "Group Input.007",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Spline Parameter",
+            "GeometryNodeSplineParameter",
+            null
+          ],
+          [
+            "Group Input.009",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Group Input.010",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Math.033",
+            "ShaderNodeMath",
+            null
+          ],
+          [
+            "Accumulate Field.001",
+            "GeometryNodeAccumulateField",
+            null
+          ],
+          [
+            "Math.016",
+            "ShaderNodeMath",
+            null
+          ],
+          [
+            "Curve of Point",
+            "GeometryNodeCurveOfPoint",
+            null
+          ],
+          [
+            "Math.015",
+            "ShaderNodeMath",
+            null
+          ],
+          [
+            "Group Input.015",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Math.017",
+            "ShaderNodeMath",
+            null
+          ],
+          [
+            "Group.001",
+            "GeometryNodeGroup",
+            "Curve Segment"
+          ],
+          [
+            "Group Input.012",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Math.014",
+            "ShaderNodeMath",
+            null
+          ],
+          [
+            "Random Value",
+            "FunctionNodeRandomValue",
+            null
+          ],
+          [
+            "Evaluate on Domain",
+            "GeometryNodeFieldOnDomain",
+            null
+          ],
+          [
+            "Group.002",
+            "GeometryNodeGroup",
+            "Curve Info"
+          ],
+          [
+            "Group Input.001",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Math.021",
+            "ShaderNodeMath",
+            null
+          ],
+          [
+            "Spline Resolution",
+            "GeometryNodeInputSplineResolution",
+            null
+          ],
+          [
+            "Capture Attribute.002",
+            "GeometryNodeCaptureAttribute",
+            null
+          ],
+          [
+            "Set Spline Type",
+            "GeometryNodeCurveSplineType",
+            null
+          ],
+          [
+            "Named Attribute.001",
+            "GeometryNodeInputNamedAttribute",
+            null
+          ],
+          [
+            "Boolean Math",
+            "FunctionNodeBooleanMath",
+            null
+          ],
+          [
+            "Sample Index",
+            "GeometryNodeSampleIndex",
+            null
+          ],
+          [
+            "Accumulate Field.002",
+            "GeometryNodeAccumulateField",
+            null
+          ],
+          [
+            "Compare",
+            "FunctionNodeCompare",
+            null
+          ],
+          [
+            "Group Input.003",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Group Input.004",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Group",
+            "GeometryNodeGroup",
+            "Create Guide Index Map"
+          ],
+          [
+            "Group Input.008",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Boolean Math.001",
+            "FunctionNodeBooleanMath",
+            null
+          ],
+          [
+            "Reroute.032",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Sample Index.002",
+            "GeometryNodeSampleIndex",
+            null
+          ],
+          [
+            "Accumulate Field",
+            "GeometryNodeAccumulateField",
+            null
+          ],
+          [
+            "Reroute.024",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Group Input.014",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Compare.005",
+            "FunctionNodeCompare",
+            null
+          ],
+          [
+            "Reroute.033",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Switch.001",
+            "GeometryNodeSwitch",
+            null
+          ],
+          [
+            "Switch.005",
+            "GeometryNodeSwitch",
+            null
+          ],
+          [
+            "Reroute.034",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Capture Attribute",
+            "GeometryNodeCaptureAttribute",
+            null
+          ],
+          [
+            "Hash Value",
+            "FunctionNodeHashValue",
+            null
+          ],
+          [
+            "Reroute.015",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Get Geometry Component",
+            "GeometryNodeGetGeometryComponent",
+            null
+          ],
+          [
+            "Reroute.064",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.021",
+            "NodeReroute",
+            null
+          ]
+        ],
+        "links": [
+          [
+            "Set Spline Resolution.001",
+            "Geometry",
+            "Join Geometry",
+            "Geometry"
+          ],
+          [
+            "Reroute.032",
+            "Output",
+            "Group",
+            "Input_0"
+          ],
+          [
+            "Reroute.016",
+            "Output",
+            "Set Position.001",
+            "Geometry"
+          ],
+          [
+            "Reroute.025",
+            "Output",
+            "Vector Math.005",
+            "Vector"
+          ],
+          [
+            "Reroute.012",
+            "Output",
+            "Vector Math.005",
+            "Vector_001"
+          ],
+          [
+            "Vector Math.009",
+            "Vector",
+            "Set Position.001",
+            "Offset"
+          ],
+          [
+            "Capture Attribute.004",
+            "Attribute",
+            "Separate XYZ.001",
+            "Vector"
+          ],
+          [
+            "Separate XYZ.001",
+            "X",
+            "Vector Math.008",
+            "Scale"
+          ],
+          [
+            "Reroute.012",
+            "Output",
+            "Vector Math.008",
+            "Vector"
+          ],
+          [
+            "Vector Math.008",
+            "Vector",
+            "Vector Math.007",
+            "Vector"
+          ],
+          [
+            "Vector Math.006",
+            "Vector",
+            "Vector Math.007",
+            "Vector_001"
+          ],
+          [
+            "Vector Math.005",
+            "Vector",
+            "Vector Math.006",
+            "Vector"
+          ],
+          [
+            "Separate XYZ.001",
+            "Y",
+            "Vector Math.006",
+            "Scale"
+          ],
+          [
+            "Capture Attribute.004",
+            "Geometry",
+            "Reroute.016",
+            "Input"
+          ],
+          [
+            "Capture Attribute.001",
+            "Geometry",
+            "Capture Attribute.004",
+            "Geometry"
+          ],
+          [
+            "Group Input.007",
+            "Input_7",
+            "Math.033",
+            "Value"
+          ],
+          [
+            "Math.038",
+            "Value",
+            "Math.049",
+            "Value"
+          ],
+          [
+            "Math.049",
+            "Value",
+            "Combine XYZ.001",
+            "X"
+          ],
+          [
+            "Math.048",
+            "Value",
+            "Combine XYZ.001",
+            "Y"
+          ],
+          [
+            "Capture Attribute.001",
+            "Attribute",
+            "Math.038",
+            "Value"
+          ],
+          [
+            "Reroute.033",
+            "Output",
+            "Reroute.022",
+            "Input"
+          ],
+          [
+            "Reroute.022",
+            "Output",
+            "Subdivide Curve.002",
+            "Curve"
+          ],
+          [
+            "Reroute.005",
+            "Output",
+            "Sample Curve",
+            "Curves"
+          ],
+          [
+            "Sample Curve",
+            "Tangent",
+            "Reroute.025",
+            "Input"
+          ],
+          [
+            "Sample Curve",
+            "Normal",
+            "Reroute.012",
+            "Input"
+          ],
+          [
+            "Reroute.001",
+            "Output",
+            "Sample Curve",
+            "Curve Index"
+          ],
+          [
+            "Curve of Point",
+            "Curve Index",
+            "Accumulate Field.001",
+            "Group Index"
+          ],
+          [
+            "Vector Math.012",
+            "Vector",
+            "Vector Math.010",
+            "Vector"
+          ],
+          [
+            "Sample Curve",
+            "Position",
+            "Vector Math.011",
+            "Vector"
+          ],
+          [
+            "Position",
+            "Position",
+            "Vector Math.011",
+            "Vector_001"
+          ],
+          [
+            "Vector Math.007",
+            "Vector",
+            "Vector Math.012",
+            "Vector_001"
+          ],
+          [
+            "Vector Math.011",
+            "Vector",
+            "Vector Math.012",
+            "Vector"
+          ],
+          [
+            "Spline Parameter.003",
+            "Factor",
+            "Map Range",
+            "Value"
+          ],
+          [
+            "Spline Parameter.002",
+            "Length",
+            "Sample Curve",
+            "Length"
+          ],
+          [
+            "Reroute.007",
+            "Output",
+            "Capture Attribute.001",
+            "Geometry"
+          ],
+          [
+            "Math",
+            "Value",
+            "Vector Math.010",
+            "Scale"
+          ],
+          [
+            "Set Spline Type",
+            "Curve",
+            "Reroute.032",
+            "Input"
+          ],
+          [
+            "Capture Attribute",
+            "Geometry",
+            "Reroute.033",
+            "Input"
+          ],
+          [
+            "Accumulate Field.002",
+            "Total",
+            "Sample Index",
+            "Value"
+          ],
+          [
+            "Reroute.032",
+            "Output",
+            "Sample Index",
+            "Geometry"
+          ],
+          [
+            "Named Attribute.001",
+            "Exists",
+            "Accumulate Field.002",
+            "Value"
+          ],
+          [
+            "Sample Index",
+            "Value",
+            "Compare",
+            "A"
+          ],
+          [
+            "Group",
+            "Output_1",
+            "Switch.001",
+            "False"
+          ],
+          [
+            "Reroute.032",
+            "Output",
+            "Switch.001",
+            "True"
+          ],
+          [
+            "Compare",
+            "Result",
+            "Boolean Math",
+            "Boolean"
+          ],
+          [
+            "Boolean Math.001",
+            "Boolean",
+            "Switch.001",
+            "Switch"
+          ],
+          [
+            "Group Input.003",
+            "Input_3",
+            "Boolean Math",
+            "Boolean_001"
+          ],
+          [
+            "Group Input.004",
+            "Input_4",
+            "Group",
+            "Input_3"
+          ],
+          [
+            "Vector Math.010",
+            "Vector",
+            "Vector Math.009",
+            "Vector"
+          ],
+          [
+            "Group Input.002",
+            "Input_2",
+            "Vector Math.009",
+            "Scale"
+          ],
+          [
+            "Group Input.006",
+            "Input_6",
+            "Map Range",
+            "From Max"
+          ],
+          [
+            "Map Range",
+            "Result",
+            "Math",
+            "Value"
+          ],
+          [
+            "Join Geometry",
+            "Geometry",
+            "Group Output",
+            "Output_1"
+          ],
+          [
+            "Spline Parameter",
+            "Factor",
+            "Map Range.002",
+            "Value"
+          ],
+          [
+            "Group Input.009",
+            "Input_9",
+            "Map Range.002",
+            "To Min"
+          ],
+          [
+            "Group Input.010",
+            "Input_10",
+            "Map Range.002",
+            "To Max"
+          ],
+          [
+            "Math.038",
+            "Value",
+            "Math.048",
+            "Value"
+          ],
+          [
+            "Random Value.001",
+            "Value",
+            "Evaluate on Domain.001",
+            "Value"
+          ],
+          [
+            "Accumulate Field.001",
+            "Leading",
+            "Math.015",
+            "Value"
+          ],
+          [
+            "Math.021",
+            "Value",
+            "Math.015",
+            "Value_001"
+          ],
+          [
+            "Math.016",
+            "Value",
+            "Accumulate Field.001",
+            "Value"
+          ],
+          [
+            "Math.015",
+            "Value",
+            "Capture Attribute.001",
+            "Value"
+          ],
+          [
+            "Math.004",
+            "Value",
+            "Subdivide Curve.002",
+            "Cuts"
+          ],
+          [
+            "Random Value",
+            "Value",
+            "Math.014",
+            "Value"
+          ],
+          [
+            "Reroute.015",
+            "Output",
+            "Random Value",
+            "Seed"
+          ],
+          [
+            "Group Input.012",
+            "Input_16",
+            "Math.014",
+            "Value_001"
+          ],
+          [
+            "Group Input.005",
+            "Input_5",
+            "Math.003",
+            "Value_001"
+          ],
+          [
+            "Math.003",
+            "Value",
+            "Math.004",
+            "Value"
+          ],
+          [
+            "Spline Resolution",
+            "Resolution",
+            "Capture Attribute.002",
+            "Value"
+          ],
+          [
+            "Set Spline Type.001",
+            "Curve",
+            "Set Spline Resolution.001",
+            "Geometry"
+          ],
+          [
+            "Capture Attribute.002",
+            "Geometry",
+            "Set Spline Type",
+            "Curve"
+          ],
+          [
+            "Reroute.028",
+            "Output",
+            "Compare.003",
+            "A"
+          ],
+          [
+            "Compare.003",
+            "Result",
+            "Switch.004",
+            "Switch"
+          ],
+          [
+            "Reroute.028",
+            "Output",
+            "Switch.004",
+            "False"
+          ],
+          [
+            "Reroute.003",
+            "Output",
+            "Reroute.028",
+            "Input"
+          ],
+          [
+            "Switch.004",
+            "Output",
+            "Set Spline Resolution.001",
+            "Resolution"
+          ],
+          [
+            "Set Position.001",
+            "Geometry",
+            "Set Spline Type.001",
+            "Curve"
+          ],
+          [
+            "Group.002",
+            "Output_5",
+            "Random Value",
+            "ID"
+          ],
+          [
+            "Group.003",
+            "Output_5",
+            "Sample Index.001",
+            "Value"
+          ],
+          [
+            "Sample Index.001",
+            "Value",
+            "Random Value.001",
+            "ID"
+          ],
+          [
+            "Reroute.034",
+            "Output",
+            "Reroute.030",
+            "Input"
+          ],
+          [
+            "Reroute",
+            "Output",
+            "Sample Index.001",
+            "Index"
+          ],
+          [
+            "Reroute.004",
+            "Output",
+            "Sample Index.001",
+            "Geometry"
+          ],
+          [
+            "Map Range.002",
+            "Result",
+            "Math.033",
+            "Value_001"
+          ],
+          [
+            "Math.014",
+            "Value",
+            "Evaluate on Domain",
+            "Value"
+          ],
+          [
+            "Group Input.008",
+            "Input_18",
+            "Group",
+            "Input_11"
+          ],
+          [
+            "Reroute.024",
+            "Output",
+            "Compare.005",
+            "A"
+          ],
+          [
+            "Compare.005",
+            "Result",
+            "Switch.005",
+            "Switch"
+          ],
+          [
+            "Reroute.024",
+            "Output",
+            "Switch.005",
+            "True"
+          ],
+          [
+            "Compare.005",
+            "Result",
+            "Accumulate Field",
+            "Value"
+          ],
+          [
+            "Accumulate Field",
+            "Total",
+            "Sample Index.002",
+            "Value"
+          ],
+          [
+            "Boolean Math",
+            "Boolean",
+            "Boolean Math.001",
+            "Boolean"
+          ],
+          [
+            "Sample Index.002",
+            "Value",
+            "Boolean Math.001",
+            "Boolean_001"
+          ],
+          [
+            "Named Attribute.001",
+            "Attribute",
+            "Switch.005",
+            "False"
+          ],
+          [
+            "Reroute.032",
+            "Output",
+            "Sample Index.002",
+            "Geometry"
+          ],
+          [
+            "Group Input.014",
+            "Input_19",
+            "Reroute.024",
+            "Input"
+          ],
+          [
+            "Reroute.030",
+            "Output",
+            "Reroute",
+            "Input"
+          ],
+          [
+            "Reroute",
+            "Output",
+            "Reroute.001",
+            "Input"
+          ],
+          [
+            "Capture Attribute.002",
+            "Attribute",
+            "Reroute.002",
+            "Input"
+          ],
+          [
+            "Reroute.002",
+            "Output",
+            "Reroute.003",
+            "Input"
+          ],
+          [
+            "Reroute.022",
+            "Output",
+            "Reroute.004",
+            "Input"
+          ],
+          [
+            "Reroute.004",
+            "Output",
+            "Reroute.005",
+            "Input"
+          ],
+          [
+            "Subdivide Curve.002",
+            "Curve",
+            "Reroute.007",
+            "Input"
+          ],
+          [
+            "Reroute.034",
+            "Output",
+            "Reroute.008",
+            "Input"
+          ],
+          [
+            "Reroute.013",
+            "Output",
+            "Group Output",
+            "Output_20"
+          ],
+          [
+            "Reroute.008",
+            "Output",
+            "Reroute.013",
+            "Input"
+          ],
+          [
+            "Group Input.015",
+            "Input_11",
+            "Math.017",
+            "Value"
+          ],
+          [
+            "Group.001",
+            "Output_0",
+            "Math.016",
+            "Value"
+          ],
+          [
+            "Math.017",
+            "Value",
+            "Math.016",
+            "Value_001"
+          ],
+          [
+            "Combine XYZ.001",
+            "Vector",
+            "Vector Math",
+            "Vector"
+          ],
+          [
+            "Vector Math",
+            "Vector",
+            "Capture Attribute.004",
+            "Value"
+          ],
+          [
+            "Math.033",
+            "Value",
+            "Vector Math",
+            "Scale"
+          ],
+          [
+            "Reroute.015",
+            "Output",
+            "Random Value.001",
+            "Seed"
+          ],
+          [
+            "Evaluate on Domain.001",
+            "Value",
+            "Math.021",
+            "Value"
+          ],
+          [
+            "Evaluate on Domain",
+            "Value",
+            "Math.021",
+            "Value_001"
+          ],
+          [
+            "Switch.001",
+            "Output",
+            "Capture Attribute",
+            "Geometry"
+          ],
+          [
+            "Switch.005",
+            "Output",
+            "Capture Attribute",
+            "Value"
+          ],
+          [
+            "Capture Attribute",
+            "Attribute",
+            "Reroute.034",
+            "Input"
+          ],
+          [
+            "Group Input.001",
+            "Input_15",
+            "Hash Value",
+            "Value"
+          ],
+          [
+            "Hash Value",
+            "Hash",
+            "Reroute.015",
+            "Input"
+          ],
+          [
+            "Get Geometry Component",
+            "Geometry",
+            "Reroute.064",
+            "Input"
+          ],
+          [
+            "Reroute.064",
+            "Output",
+            "Reroute.021",
+            "Input"
+          ],
+          [
+            "Group Input",
+            "Input_0",
+            "Get Geometry Component",
+            "Geometry"
+          ],
+          [
+            "Get Geometry Component",
+            "Component",
+            "Capture Attribute.002",
+            "Geometry"
+          ],
+          [
+            "Reroute.021",
+            "Output",
+            "Join Geometry",
+            "Geometry"
+          ]
+        ],
+        "structure_sha256": "691b672a6700f5d784899f29993352343b42fcab992cb2296e64f77a932e8365"
+      },
+      "Clump Hair Curves": {
+        "name": "Clump Hair Curves",
+        "interface": [
+          [
+            "Geometry",
+            "Output_1",
+            "OUTPUT",
+            "NodeSocketGeometry"
+          ],
+          [
+            "Geometry",
+            "Input_0",
+            "INPUT",
+            "NodeSocketGeometry"
+          ],
+          [
+            "Factor",
+            "Input_7",
+            "INPUT",
+            "NodeSocketFloat"
+          ],
+          [
+            "Shape",
+            "Input_6",
+            "INPUT",
+            "NodeSocketFloat"
+          ],
+          [
+            "Tip Spread",
+            "Input_10",
+            "INPUT",
+            "NodeSocketFloat"
+          ],
+          [
+            "Clump Offset",
+            "Input_13",
+            "INPUT",
+            "NodeSocketFloat"
+          ],
+          [
+            "Distance Falloff",
+            "Input_12",
+            "INPUT",
+            "NodeSocketFloat"
+          ],
+          [
+            "Distance Threshold",
+            "Input_11",
+            "INPUT",
+            "NodeSocketFloat"
+          ],
+          [
+            "Seed",
+            "Input_14",
+            "INPUT",
+            "NodeSocketInt"
+          ],
+          [
+            "Preserve Length",
+            "Input_15",
+            "INPUT",
+            "NodeSocketBool"
+          ],
+          [
+            "Guide Index",
+            "Output_17",
+            "OUTPUT",
+            "NodeSocketInt"
+          ],
+          [
+            "Guide Index",
+            "Input_16",
+            "INPUT",
+            "NodeSocketInt"
+          ],
+          [
+            "Guide Distance",
+            "Input_9",
+            "INPUT",
+            "NodeSocketFloat"
+          ],
+          [
+            "Guide Mask",
+            "Input_19",
+            "INPUT",
+            "NodeSocketFloat"
+          ],
+          [
+            "Existing Guide Map",
+            "Input_8",
+            "INPUT",
+            "NodeSocketBool"
+          ]
+        ],
+        "nodes": [
+          [
+            "Frame.001",
+            "NodeFrame",
+            null
+          ],
+          [
+            "Frame",
+            "NodeFrame",
+            null
+          ],
+          [
+            "Frame.003",
+            "NodeFrame",
+            null
+          ],
+          [
+            "Frame.005",
+            "NodeFrame",
+            null
+          ],
+          [
+            "Frame.006",
+            "NodeFrame",
+            null
+          ],
+          [
+            "Frame.007",
+            "NodeFrame",
+            null
+          ],
+          [
+            "Frame.002",
+            "NodeFrame",
+            null
+          ],
+          [
+            "Frame.004",
+            "NodeFrame",
+            null
+          ],
+          [
+            "Group Input.003",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Group Output.001",
+            "NodeGroupOutput",
+            null
+          ],
+          [
+            "Join Geometry.001",
+            "GeometryNodeJoinGeometry",
+            null
+          ],
+          [
+            "Capture Attribute",
+            "GeometryNodeCaptureAttribute",
+            null
+          ],
+          [
+            "Position.001",
+            "GeometryNodeInputPosition",
+            null
+          ],
+          [
+            "Capture Attribute.002",
+            "GeometryNodeCaptureAttribute",
+            null
+          ],
+          [
+            "Spline Resolution",
+            "GeometryNodeInputSplineResolution",
+            null
+          ],
+          [
+            "Set Spline Type.002",
+            "GeometryNodeCurveSplineType",
+            null
+          ],
+          [
+            "Reroute.021",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Switch.006",
+            "GeometryNodeSwitch",
+            null
+          ],
+          [
+            "Compare.004",
+            "FunctionNodeCompare",
+            null
+          ],
+          [
+            "Set Spline Resolution.001",
+            "GeometryNodeSetSplineResolution",
+            null
+          ],
+          [
+            "Set Spline Type.001",
+            "GeometryNodeCurveSplineType",
+            null
+          ],
+          [
+            "Reroute.025",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Group.005",
+            "GeometryNodeGroup",
+            "Restore Curve Segment Length"
+          ],
+          [
+            "Group Input.010",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Reroute.003",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.005",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.002",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.010",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.022",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.023",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.024",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Vector Math",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Sample Curve",
+            "GeometryNodeSampleCurve",
+            null
+          ],
+          [
+            "Spline Parameter",
+            "GeometryNodeSplineParameter",
+            null
+          ],
+          [
+            "Vector Math.001",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Vector Math.002",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Separate XYZ",
+            "ShaderNodeSeparateXYZ",
+            null
+          ],
+          [
+            "Vector Math.006",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Evaluate on Domain",
+            "GeometryNodeFieldOnDomain",
+            null
+          ],
+          [
+            "Combine XYZ",
+            "ShaderNodeCombineXYZ",
+            null
+          ],
+          [
+            "Vector Math.004",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Vector Math.005",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Reroute",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Vector Math.008",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Vector Math.003",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Sample Curve.001",
+            "GeometryNodeSampleCurve",
+            null
+          ],
+          [
+            "Evaluate at Index",
+            "GeometryNodeFieldAtIndex",
+            null
+          ],
+          [
+            "Group",
+            "GeometryNodeGroup",
+            "Curve Root"
+          ],
+          [
+            "Reroute.001",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.008",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.007",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.026",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.027",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Evaluate on Domain.001",
+            "GeometryNodeFieldOnDomain",
+            null
+          ],
+          [
+            "Sample Index",
+            "GeometryNodeSampleIndex",
+            null
+          ],
+          [
+            "Accumulate Field.002",
+            "GeometryNodeAccumulateField",
+            null
+          ],
+          [
+            "Group Input.002",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Reroute.032",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Boolean Math.001",
+            "FunctionNodeBooleanMath",
+            null
+          ],
+          [
+            "Switch.001",
+            "GeometryNodeSwitch",
+            null
+          ],
+          [
+            "Named Attribute.003",
+            "GeometryNodeInputNamedAttribute",
+            null
+          ],
+          [
+            "Group Input.013",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Group Input.004",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Reroute.006",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Compare.003",
+            "FunctionNodeCompare",
+            null
+          ],
+          [
+            "Group Input.011",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Accumulate Field",
+            "GeometryNodeAccumulateField",
+            null
+          ],
+          [
+            "Switch.003",
+            "GeometryNodeSwitch",
+            null
+          ],
+          [
+            "Compare.001",
+            "FunctionNodeCompare",
+            null
+          ],
+          [
+            "Group.003",
+            "GeometryNodeGroup",
+            "Create Guide Index Map"
+          ],
+          [
+            "Boolean Math.002",
+            "FunctionNodeBooleanMath",
+            null
+          ],
+          [
+            "Sample Index.001",
+            "GeometryNodeSampleIndex",
+            null
+          ],
+          [
+            "Reroute.029",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Capture Attribute.001",
+            "GeometryNodeCaptureAttribute",
+            null
+          ],
+          [
+            "Position",
+            "GeometryNodeInputPosition",
+            null
+          ],
+          [
+            "Mix",
+            "ShaderNodeMix",
+            null
+          ],
+          [
+            "Vector Math.009",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Math.002",
+            "ShaderNodeMath",
+            null
+          ],
+          [
+            "Set Position",
+            "GeometryNodeSetPosition",
+            null
+          ],
+          [
+            "Group Input.001",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Math",
+            "ShaderNodeMath",
+            null
+          ],
+          [
+            "Vector Math.013",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Vector Math.007",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Vector Math.011",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Reroute.020",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Math.001",
+            "ShaderNodeMath",
+            null
+          ],
+          [
+            "Reroute.004",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Vector Math.025",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Switch.002",
+            "GeometryNodeSwitch",
+            null
+          ],
+          [
+            "Vector Math.020",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Vector Math.021",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Vector Math.022",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Vector Math.015",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Vector Math.016",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Vector Math.018",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Vector Math.019",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Vector Math.014",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Switch",
+            "GeometryNodeSwitch",
+            null
+          ],
+          [
+            "Sample Curve.002",
+            "GeometryNodeSampleCurve",
+            null
+          ],
+          [
+            "Reroute.011",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Vector Math.017",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Random Value",
+            "FunctionNodeRandomValue",
+            null
+          ],
+          [
+            "Vector Math.026",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Separate XYZ.002",
+            "ShaderNodeSeparateXYZ",
+            null
+          ],
+          [
+            "Separate XYZ.001",
+            "ShaderNodeSeparateXYZ",
+            null
+          ],
+          [
+            "Reroute.009",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Vector Math.012",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Group Input.009",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Group Input.012",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Group Input.008",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Random Value.001",
+            "FunctionNodeRandomValue",
+            null
+          ],
+          [
+            "Reroute.028",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Evaluate at Index.001",
+            "GeometryNodeFieldAtIndex",
+            null
+          ],
+          [
+            "Group.006",
+            "GeometryNodeGroup",
+            "Curve Info"
+          ],
+          [
+            "Group.007",
+            "GeometryNodeGroup",
+            "Curve Info"
+          ],
+          [
+            "Group Input.005",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Compare",
+            "FunctionNodeCompare",
+            null
+          ],
+          [
+            "Compare.002",
+            "FunctionNodeCompare",
+            null
+          ],
+          [
+            "Spline Parameter.001",
+            "GeometryNodeSplineParameter",
+            null
+          ],
+          [
+            "Group Input",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Group.001",
+            "GeometryNodeGroup",
+            ".shape_range"
+          ],
+          [
+            "Math.003",
+            "ShaderNodeMath",
+            null
+          ],
+          [
+            "Vector Math.010",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Compare.006",
+            "FunctionNodeCompare",
+            null
+          ],
+          [
+            "Compare.007",
+            "FunctionNodeCompare",
+            null
+          ],
+          [
+            "Reroute.030",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Group Input.007",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Group Input.006",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Compare.005",
+            "FunctionNodeCompare",
+            null
+          ],
+          [
+            "Map Range.001",
+            "ShaderNodeMapRange",
+            null
+          ],
+          [
+            "Boolean Math",
+            "FunctionNodeBooleanMath",
+            null
+          ],
+          [
+            "Switch.004",
+            "GeometryNodeSwitch",
+            null
+          ],
+          [
+            "Hash Value",
+            "FunctionNodeHashValue",
+            null
+          ],
+          [
+            "Get Geometry Component",
+            "GeometryNodeGetGeometryComponent",
+            null
+          ],
+          [
+            "Reroute.064",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.034",
+            "NodeReroute",
+            null
+          ]
+        ],
+        "links": [
+          [
+            "Reroute.032",
+            "Output",
+            "Group.003",
+            "Input_0"
+          ],
+          [
+            "Accumulate Field.002",
+            "Total",
+            "Sample Index",
+            "Value"
+          ],
+          [
+            "Reroute.032",
+            "Output",
+            "Sample Index",
+            "Geometry"
+          ],
+          [
+            "Named Attribute.003",
+            "Exists",
+            "Accumulate Field.002",
+            "Value"
+          ],
+          [
+            "Sample Index",
+            "Value",
+            "Compare.001",
+            "A"
+          ],
+          [
+            "Group.003",
+            "Output_1",
+            "Switch.001",
+            "False"
+          ],
+          [
+            "Reroute.032",
+            "Output",
+            "Switch.001",
+            "True"
+          ],
+          [
+            "Compare.001",
+            "Result",
+            "Boolean Math.001",
+            "Boolean"
+          ],
+          [
+            "Boolean Math.002",
+            "Boolean",
+            "Switch.001",
+            "Switch"
+          ],
+          [
+            "Reroute.008",
+            "Output",
+            "Sample Curve",
+            "Curve Index"
+          ],
+          [
+            "Reroute.025",
+            "Output",
+            "Sample Curve",
+            "Curves"
+          ],
+          [
+            "Sample Curve",
+            "Tangent",
+            "Vector Math",
+            "Vector"
+          ],
+          [
+            "Sample Curve",
+            "Normal",
+            "Vector Math",
+            "Vector_001"
+          ],
+          [
+            "Sample Curve.001",
+            "Tangent",
+            "Vector Math.003",
+            "Vector"
+          ],
+          [
+            "Sample Curve.001",
+            "Normal",
+            "Vector Math.003",
+            "Vector_001"
+          ],
+          [
+            "Vector Math.003",
+            "Vector",
+            "Vector Math.004",
+            "Vector"
+          ],
+          [
+            "Sample Curve.001",
+            "Normal",
+            "Vector Math.005",
+            "Vector"
+          ],
+          [
+            "Reroute.003",
+            "Output",
+            "Sample Curve.001",
+            "Curves"
+          ],
+          [
+            "Reroute.001",
+            "Output",
+            "Sample Curve.001",
+            "Curve Index"
+          ],
+          [
+            "Evaluate on Domain",
+            "Value",
+            "Separate XYZ",
+            "Vector"
+          ],
+          [
+            "Sample Curve",
+            "Normal",
+            "Vector Math.001",
+            "Vector"
+          ],
+          [
+            "Separate XYZ",
+            "X",
+            "Vector Math.001",
+            "Scale"
+          ],
+          [
+            "Vector Math",
+            "Vector",
+            "Vector Math.002",
+            "Vector"
+          ],
+          [
+            "Separate XYZ",
+            "Y",
+            "Vector Math.002",
+            "Scale"
+          ],
+          [
+            "Vector Math.001",
+            "Vector",
+            "Vector Math.006",
+            "Vector"
+          ],
+          [
+            "Vector Math.002",
+            "Vector",
+            "Vector Math.006",
+            "Vector_001"
+          ],
+          [
+            "Vector Math.005",
+            "Value",
+            "Combine XYZ",
+            "X"
+          ],
+          [
+            "Vector Math.004",
+            "Value",
+            "Combine XYZ",
+            "Y"
+          ],
+          [
+            "Combine XYZ",
+            "Vector",
+            "Evaluate on Domain",
+            "Value"
+          ],
+          [
+            "Reroute",
+            "Output",
+            "Vector Math.005",
+            "Vector_001"
+          ],
+          [
+            "Reroute",
+            "Output",
+            "Vector Math.004",
+            "Vector_001"
+          ],
+          [
+            "Group",
+            "Output_0",
+            "Vector Math.008",
+            "Vector"
+          ],
+          [
+            "Group",
+            "Output_0",
+            "Evaluate at Index",
+            "Value"
+          ],
+          [
+            "Evaluate at Index",
+            "Value",
+            "Vector Math.008",
+            "Vector_001"
+          ],
+          [
+            "Reroute.001",
+            "Output",
+            "Evaluate at Index",
+            "Index"
+          ],
+          [
+            "Reroute.002",
+            "Output",
+            "Reroute.001",
+            "Input"
+          ],
+          [
+            "Mix",
+            "Result_Vector",
+            "Set Position",
+            "Position"
+          ],
+          [
+            "Vector Math.011",
+            "Vector",
+            "Vector Math.009",
+            "Vector_001"
+          ],
+          [
+            "Sample Curve",
+            "Position",
+            "Vector Math.009",
+            "Vector"
+          ],
+          [
+            "Vector Math.006",
+            "Vector",
+            "Vector Math.007",
+            "Vector"
+          ],
+          [
+            "Reroute.020",
+            "Output",
+            "Math",
+            "Value_001"
+          ],
+          [
+            "Math",
+            "Value",
+            "Vector Math.007",
+            "Scale"
+          ],
+          [
+            "Vector Math.009",
+            "Vector",
+            "Mix",
+            "B_Vector"
+          ],
+          [
+            "Position",
+            "Position",
+            "Mix",
+            "A_Vector"
+          ],
+          [
+            "Reroute.029",
+            "Output",
+            "Reroute.002",
+            "Input"
+          ],
+          [
+            "Spline Parameter.001",
+            "Factor",
+            "Group.001",
+            "Input_3"
+          ],
+          [
+            "Group Input",
+            "Input_6",
+            "Group.001",
+            "Input_1"
+          ],
+          [
+            "Group.001",
+            "Output_0",
+            "Reroute.004",
+            "Input"
+          ],
+          [
+            "Reroute.004",
+            "Output",
+            "Math.001",
+            "Value"
+          ],
+          [
+            "Group Input.001",
+            "Input_7",
+            "Math.001",
+            "Value_001"
+          ],
+          [
+            "Math.002",
+            "Value",
+            "Mix",
+            "Factor_Float"
+          ],
+          [
+            "Group Input.002",
+            "Input_8",
+            "Boolean Math.001",
+            "Boolean_001"
+          ],
+          [
+            "Group Input.004",
+            "Input_9",
+            "Group.003",
+            "Input_3"
+          ],
+          [
+            "Reroute.003",
+            "Output",
+            "Reroute.005",
+            "Input"
+          ],
+          [
+            "Vector Math.008",
+            "Vector",
+            "Reroute",
+            "Input"
+          ],
+          [
+            "Math.001",
+            "Value",
+            "Math.002",
+            "Value"
+          ],
+          [
+            "Vector Math.008",
+            "Vector",
+            "Vector Math.010",
+            "Vector"
+          ],
+          [
+            "Vector Math.010",
+            "Value",
+            "Map Range.001",
+            "Value"
+          ],
+          [
+            "Switch.004",
+            "Output",
+            "Math.002",
+            "Value_001"
+          ],
+          [
+            "Reroute.030",
+            "Output",
+            "Map Range.001",
+            "From Min"
+          ],
+          [
+            "Group Input.006",
+            "Input_11",
+            "Math.003",
+            "Value"
+          ],
+          [
+            "Group Input.007",
+            "Input_12",
+            "Math.003",
+            "Value_001"
+          ],
+          [
+            "Math.003",
+            "Value",
+            "Map Range.001",
+            "From Max"
+          ],
+          [
+            "Group Input.008",
+            "Input_10",
+            "Vector Math.012",
+            "Scale"
+          ],
+          [
+            "Random Value",
+            "Value",
+            "Vector Math.012",
+            "Vector"
+          ],
+          [
+            "Evaluate on Domain.001",
+            "Value",
+            "Vector Math.013",
+            "Vector"
+          ],
+          [
+            "Reroute.020",
+            "Output",
+            "Vector Math.013",
+            "Scale"
+          ],
+          [
+            "Vector Math.007",
+            "Vector",
+            "Vector Math.011",
+            "Vector"
+          ],
+          [
+            "Reroute.005",
+            "Output",
+            "Sample Curve.002",
+            "Curves"
+          ],
+          [
+            "Vector Math.012",
+            "Vector",
+            "Separate XYZ.001",
+            "Vector"
+          ],
+          [
+            "Sample Curve.002",
+            "Tangent",
+            "Vector Math.014",
+            "Vector"
+          ],
+          [
+            "Sample Curve.002",
+            "Normal",
+            "Vector Math.015",
+            "Vector"
+          ],
+          [
+            "Separate XYZ.001",
+            "Z",
+            "Vector Math.014",
+            "Scale"
+          ],
+          [
+            "Separate XYZ.001",
+            "X",
+            "Vector Math.015",
+            "Scale"
+          ],
+          [
+            "Sample Curve.002",
+            "Tangent",
+            "Vector Math.017",
+            "Vector"
+          ],
+          [
+            "Sample Curve.002",
+            "Normal",
+            "Vector Math.017",
+            "Vector_001"
+          ],
+          [
+            "Separate XYZ.001",
+            "Y",
+            "Vector Math.016",
+            "Scale"
+          ],
+          [
+            "Vector Math.017",
+            "Vector",
+            "Vector Math.016",
+            "Vector"
+          ],
+          [
+            "Vector Math.015",
+            "Vector",
+            "Vector Math.018",
+            "Vector"
+          ],
+          [
+            "Vector Math.016",
+            "Vector",
+            "Vector Math.018",
+            "Vector_001"
+          ],
+          [
+            "Vector Math.018",
+            "Vector",
+            "Vector Math.019",
+            "Vector"
+          ],
+          [
+            "Vector Math.014",
+            "Vector",
+            "Vector Math.019",
+            "Vector_001"
+          ],
+          [
+            "Reroute.011",
+            "Output",
+            "Sample Curve.002",
+            "Curve Index"
+          ],
+          [
+            "Vector Math.026",
+            "Vector",
+            "Separate XYZ.002",
+            "Vector"
+          ],
+          [
+            "Sample Curve.002",
+            "Normal",
+            "Vector Math.020",
+            "Vector"
+          ],
+          [
+            "Separate XYZ.002",
+            "X",
+            "Vector Math.020",
+            "Scale"
+          ],
+          [
+            "Separate XYZ.002",
+            "Y",
+            "Vector Math.021",
+            "Scale"
+          ],
+          [
+            "Vector Math.020",
+            "Vector",
+            "Vector Math.022",
+            "Vector"
+          ],
+          [
+            "Vector Math.021",
+            "Vector",
+            "Vector Math.022",
+            "Vector_001"
+          ],
+          [
+            "Vector Math.017",
+            "Vector",
+            "Vector Math.021",
+            "Vector"
+          ],
+          [
+            "Random Value.001",
+            "Value",
+            "Vector Math.026",
+            "Vector"
+          ],
+          [
+            "Reroute.009",
+            "Output",
+            "Vector Math.026",
+            "Scale"
+          ],
+          [
+            "Vector Math.013",
+            "Vector",
+            "Vector Math.011",
+            "Vector_001"
+          ],
+          [
+            "Switch",
+            "Output",
+            "Vector Math.025",
+            "Vector"
+          ],
+          [
+            "Switch.002",
+            "Output",
+            "Vector Math.025",
+            "Vector_001"
+          ],
+          [
+            "Vector Math.025",
+            "Vector",
+            "Evaluate on Domain.001",
+            "Value"
+          ],
+          [
+            "Vector Math.022",
+            "Vector",
+            "Switch.002",
+            "False"
+          ],
+          [
+            "Vector Math.019",
+            "Vector",
+            "Switch",
+            "False"
+          ],
+          [
+            "Reroute.009",
+            "Output",
+            "Compare.002",
+            "B"
+          ],
+          [
+            "Compare.002",
+            "Result",
+            "Switch.002",
+            "Switch"
+          ],
+          [
+            "Group Input.009",
+            "Input_13",
+            "Reroute.009",
+            "Input"
+          ],
+          [
+            "Reroute.028",
+            "Output",
+            "Random Value",
+            "Seed"
+          ],
+          [
+            "Reroute.028",
+            "Output",
+            "Random Value.001",
+            "Seed"
+          ],
+          [
+            "Reroute.011",
+            "Output",
+            "Evaluate at Index.001",
+            "Index"
+          ],
+          [
+            "Capture Attribute",
+            "Geometry",
+            "Reroute.032",
+            "Input"
+          ],
+          [
+            "Capture Attribute.001",
+            "Geometry",
+            "Reroute.003",
+            "Input"
+          ],
+          [
+            "Set Spline Resolution.001",
+            "Geometry",
+            "Join Geometry.001",
+            "Geometry"
+          ],
+          [
+            "Join Geometry.001",
+            "Geometry",
+            "Group Output.001",
+            "Output_1"
+          ],
+          [
+            "Set Position",
+            "Geometry",
+            "Group.005",
+            "Input_0"
+          ],
+          [
+            "Position.001",
+            "Position",
+            "Capture Attribute",
+            "Value"
+          ],
+          [
+            "Reroute.022",
+            "Output",
+            "Group.005",
+            "Input_2"
+          ],
+          [
+            "Group Input.010",
+            "Input_15",
+            "Group.005",
+            "Input_4"
+          ],
+          [
+            "Spline Parameter",
+            "Factor",
+            "Sample Curve",
+            "Factor"
+          ],
+          [
+            "Reroute.006",
+            "Output",
+            "Compare.003",
+            "A"
+          ],
+          [
+            "Named Attribute.003",
+            "Attribute",
+            "Switch.003",
+            "False"
+          ],
+          [
+            "Compare.003",
+            "Result",
+            "Switch.003",
+            "Switch"
+          ],
+          [
+            "Reroute.006",
+            "Output",
+            "Switch.003",
+            "True"
+          ],
+          [
+            "Boolean Math.001",
+            "Boolean",
+            "Boolean Math.002",
+            "Boolean"
+          ],
+          [
+            "Reroute.027",
+            "Output",
+            "Group Output.001",
+            "Output_17"
+          ],
+          [
+            "Spline Resolution",
+            "Resolution",
+            "Capture Attribute.002",
+            "Value"
+          ],
+          [
+            "Set Spline Type.001",
+            "Curve",
+            "Set Spline Resolution.001",
+            "Geometry"
+          ],
+          [
+            "Set Spline Type.002",
+            "Curve",
+            "Capture Attribute",
+            "Geometry"
+          ],
+          [
+            "Group.006",
+            "Output_5",
+            "Evaluate at Index.001",
+            "Value"
+          ],
+          [
+            "Evaluate at Index.001",
+            "Value",
+            "Random Value.001",
+            "ID"
+          ],
+          [
+            "Group.007",
+            "Output_5",
+            "Random Value",
+            "ID"
+          ],
+          [
+            "Group Input.013",
+            "Input_19",
+            "Group.003",
+            "Input_11"
+          ],
+          [
+            "Reroute.021",
+            "Output",
+            "Compare.004",
+            "A"
+          ],
+          [
+            "Compare.004",
+            "Result",
+            "Switch.006",
+            "Switch"
+          ],
+          [
+            "Reroute.021",
+            "Output",
+            "Switch.006",
+            "False"
+          ],
+          [
+            "Group.005",
+            "Output_1",
+            "Set Spline Type.001",
+            "Curve"
+          ],
+          [
+            "Reroute.024",
+            "Output",
+            "Reroute.021",
+            "Input"
+          ],
+          [
+            "Switch.006",
+            "Output",
+            "Set Spline Resolution.001",
+            "Resolution"
+          ],
+          [
+            "Capture Attribute.002",
+            "Geometry",
+            "Set Spline Type.002",
+            "Curve"
+          ],
+          [
+            "Compare.003",
+            "Result",
+            "Accumulate Field",
+            "Value"
+          ],
+          [
+            "Accumulate Field",
+            "Total",
+            "Sample Index.001",
+            "Value"
+          ],
+          [
+            "Reroute.032",
+            "Output",
+            "Sample Index.001",
+            "Geometry"
+          ],
+          [
+            "Sample Index.001",
+            "Value",
+            "Boolean Math.002",
+            "Boolean_001"
+          ],
+          [
+            "Group Input.011",
+            "Input_16",
+            "Reroute.006",
+            "Input"
+          ],
+          [
+            "Reroute.002",
+            "Output",
+            "Reroute.008",
+            "Input"
+          ],
+          [
+            "Reroute.004",
+            "Output",
+            "Reroute.020",
+            "Input"
+          ],
+          [
+            "Reroute.025",
+            "Output",
+            "Set Position",
+            "Geometry"
+          ],
+          [
+            "Reroute.029",
+            "Output",
+            "Reroute.011",
+            "Input"
+          ],
+          [
+            "Capture Attribute",
+            "Attribute",
+            "Reroute.010",
+            "Input"
+          ],
+          [
+            "Reroute.010",
+            "Output",
+            "Reroute.022",
+            "Input"
+          ],
+          [
+            "Capture Attribute.002",
+            "Attribute",
+            "Reroute.023",
+            "Input"
+          ],
+          [
+            "Reroute.023",
+            "Output",
+            "Reroute.024",
+            "Input"
+          ],
+          [
+            "Reroute.005",
+            "Output",
+            "Reroute.025",
+            "Input"
+          ],
+          [
+            "Group Input.012",
+            "Input_10",
+            "Compare",
+            "A"
+          ],
+          [
+            "Compare",
+            "Result",
+            "Switch",
+            "Switch"
+          ],
+          [
+            "Reroute.008",
+            "Output",
+            "Reroute.007",
+            "Input"
+          ],
+          [
+            "Reroute.007",
+            "Output",
+            "Reroute.026",
+            "Input"
+          ],
+          [
+            "Reroute.026",
+            "Output",
+            "Reroute.027",
+            "Input"
+          ],
+          [
+            "Switch.001",
+            "Output",
+            "Capture Attribute.001",
+            "Geometry"
+          ],
+          [
+            "Switch.003",
+            "Output",
+            "Capture Attribute.001",
+            "Value"
+          ],
+          [
+            "Capture Attribute.001",
+            "Attribute",
+            "Reroute.029",
+            "Input"
+          ],
+          [
+            "Map Range.001",
+            "Result",
+            "Switch.004",
+            "False"
+          ],
+          [
+            "Vector Math.010",
+            "Value",
+            "Compare.005",
+            "A"
+          ],
+          [
+            "Compare.005",
+            "Result",
+            "Switch.004",
+            "True"
+          ],
+          [
+            "Reroute.030",
+            "Output",
+            "Compare.005",
+            "B"
+          ],
+          [
+            "Group Input.006",
+            "Input_11",
+            "Compare.006",
+            "A"
+          ],
+          [
+            "Group Input.007",
+            "Input_12",
+            "Compare.007",
+            "A"
+          ],
+          [
+            "Compare.006",
+            "Result",
+            "Boolean Math",
+            "Boolean"
+          ],
+          [
+            "Compare.007",
+            "Result",
+            "Boolean Math",
+            "Boolean_001"
+          ],
+          [
+            "Boolean Math",
+            "Boolean",
+            "Switch.004",
+            "Switch"
+          ],
+          [
+            "Group Input.006",
+            "Input_11",
+            "Reroute.030",
+            "Input"
+          ],
+          [
+            "Group Input.005",
+            "Input_14",
+            "Hash Value",
+            "Value"
+          ],
+          [
+            "Hash Value",
+            "Hash",
+            "Reroute.028",
+            "Input"
+          ],
+          [
+            "Get Geometry Component",
+            "Geometry",
+            "Reroute.064",
+            "Input"
+          ],
+          [
+            "Reroute.064",
+            "Output",
+            "Reroute.034",
+            "Input"
+          ],
+          [
+            "Reroute.034",
+            "Output",
+            "Join Geometry.001",
+            "Geometry"
+          ],
+          [
+            "Group Input.003",
+            "Input_0",
+            "Get Geometry Component",
+            "Geometry"
+          ],
+          [
+            "Get Geometry Component",
+            "Component",
+            "Capture Attribute.002",
+            "Geometry"
+          ]
+        ],
+        "structure_sha256": "4e8af0957cc3992761e28f3f42d28477d8eb020a90c27aff9e8ff4275ff2c48c"
+      },
+      "Restore Curve Segment Length": {
+        "name": "Restore Curve Segment Length",
+        "interface": [
+          [
+            "Curves",
+            "Output_1",
+            "OUTPUT",
+            "NodeSocketGeometry"
+          ],
+          [
+            "Curves",
+            "Input_0",
+            "INPUT",
+            "NodeSocketGeometry"
+          ],
+          [
+            "Selection",
+            "Input_4",
+            "INPUT",
+            "NodeSocketBool"
+          ],
+          [
+            "Factor",
+            "Input_3",
+            "INPUT",
+            "NodeSocketFloat"
+          ],
+          [
+            "Reference Position",
+            "Input_2",
+            "INPUT",
+            "NodeSocketVector"
+          ],
+          [
+            "Pin at Parameter",
+            "Input_6",
+            "INPUT",
+            "NodeSocketFloat"
+          ]
+        ],
+        "nodes": [
+          [
+            "Frame.001",
+            "NodeFrame",
+            null
+          ],
+          [
+            "Frame",
+            "NodeFrame",
+            null
+          ],
+          [
+            "Frame.002",
+            "NodeFrame",
+            null
+          ],
+          [
+            "Reroute.009",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Group Input.006",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Reroute.013",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Index",
+            "GeometryNodeInputIndex",
+            null
+          ],
+          [
+            "Sample Curve.001",
+            "GeometryNodeSampleCurve",
+            null
+          ],
+          [
+            "Group Input.003",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Vector Math.006",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Interpolate Domain",
+            "GeometryNodeFieldOnDomain",
+            null
+          ],
+          [
+            "Group Input.005",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Boolean Math.002",
+            "FunctionNodeBooleanMath",
+            null
+          ],
+          [
+            "Field at Index.002",
+            "GeometryNodeFieldAtIndex",
+            null
+          ],
+          [
+            "Vector Math.004",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Accumulate Field",
+            "GeometryNodeAccumulateField",
+            null
+          ],
+          [
+            "Curve of Point",
+            "GeometryNodeCurveOfPoint",
+            null
+          ],
+          [
+            "Vector Math",
+            "ShaderNodeVectorMath",
+            null
+          ],
+          [
+            "Index.001",
+            "GeometryNodeInputIndex",
+            null
+          ],
+          [
+            "Curve of Point.001",
+            "GeometryNodeCurveOfPoint",
+            null
+          ],
+          [
+            "Switch",
+            "GeometryNodeSwitch",
+            null
+          ],
+          [
+            "Math",
+            "ShaderNodeMath",
+            null
+          ],
+          [
+            "Compare",
+            "FunctionNodeCompare",
+            null
+          ],
+          [
+            "Reroute.001",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Set Position.001",
+            "GeometryNodeSetPosition",
+            null
+          ],
+          [
+            "Boolean Math",
+            "FunctionNodeBooleanMath",
+            null
+          ],
+          [
+            "Compare.002",
+            "FunctionNodeCompare",
+            null
+          ],
+          [
+            "Group Input.002",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Reroute.016",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.014",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Switch.001",
+            "GeometryNodeSwitch",
+            null
+          ],
+          [
+            "Group Output",
+            "NodeGroupOutput",
+            null
+          ],
+          [
+            "Attribute Statistic",
+            "GeometryNodeAttributeStatistic",
+            null
+          ],
+          [
+            "Group",
+            "GeometryNodeGroup",
+            "Curve Root"
+          ],
+          [
+            "Reroute.007",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.004",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Position.001",
+            "GeometryNodeInputPosition",
+            null
+          ],
+          [
+            "Named Attribute",
+            "GeometryNodeInputNamedAttribute",
+            null
+          ],
+          [
+            "Switch.003",
+            "GeometryNodeSwitch",
+            null
+          ],
+          [
+            "Reroute.006",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Switch.002",
+            "GeometryNodeSwitch",
+            null
+          ],
+          [
+            "Compare.004",
+            "FunctionNodeCompare",
+            null
+          ],
+          [
+            "Group Input",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Reroute.011",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.005",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.008",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Set Position.002",
+            "GeometryNodeSetPosition",
+            null
+          ],
+          [
+            "Reroute.012",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Group Input.001",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Mix",
+            "ShaderNodeMix",
+            null
+          ],
+          [
+            "Group.001",
+            "GeometryNodeGroup",
+            "Curve Segment"
+          ],
+          [
+            "Compare.003",
+            "FunctionNodeCompare",
+            null
+          ],
+          [
+            "Compare.005",
+            "FunctionNodeCompare",
+            null
+          ]
+        ],
+        "links": [
+          [
+            "Reroute.004",
+            "Output",
+            "Set Position.001",
+            "Geometry"
+          ],
+          [
+            "Curve of Point",
+            "Curve Index",
+            "Accumulate Field",
+            "Group Index"
+          ],
+          [
+            "Field at Index.002",
+            "Value",
+            "Vector Math.004",
+            "Vector"
+          ],
+          [
+            "Reroute.001",
+            "Output",
+            "Vector Math.004",
+            "Vector_001"
+          ],
+          [
+            "Reroute.001",
+            "Output",
+            "Field at Index.002",
+            "Value"
+          ],
+          [
+            "Index.001",
+            "Index",
+            "Math",
+            "Value"
+          ],
+          [
+            "Switch",
+            "Output",
+            "Field at Index.002",
+            "Index"
+          ],
+          [
+            "Vector Math",
+            "Vector",
+            "Accumulate Field",
+            "Value"
+          ],
+          [
+            "Curve of Point.001",
+            "Index in Curve",
+            "Compare",
+            "A"
+          ],
+          [
+            "Math",
+            "Value",
+            "Switch",
+            "False"
+          ],
+          [
+            "Compare",
+            "Result",
+            "Switch",
+            "Switch"
+          ],
+          [
+            "Index.001",
+            "Index",
+            "Switch",
+            "True"
+          ],
+          [
+            "Reroute.006",
+            "Output",
+            "Switch.002",
+            "False"
+          ],
+          [
+            "Group",
+            "Output_0",
+            "Set Position.001",
+            "Position"
+          ],
+          [
+            "Vector Math.004",
+            "Value",
+            "Mix",
+            "B_Float"
+          ],
+          [
+            "Mix",
+            "Result_Float",
+            "Vector Math",
+            "Scale"
+          ],
+          [
+            "Group Input.001",
+            "Input_3",
+            "Mix",
+            "Factor_Float"
+          ],
+          [
+            "Group Input.002",
+            "Input_3",
+            "Compare.002",
+            "A"
+          ],
+          [
+            "Accumulate Field",
+            "Leading",
+            "Set Position.001",
+            "Offset"
+          ],
+          [
+            "Compare.002",
+            "Result",
+            "Boolean Math",
+            "Boolean"
+          ],
+          [
+            "Group Input.002",
+            "Input_4",
+            "Boolean Math",
+            "Boolean_001"
+          ],
+          [
+            "Reroute.005",
+            "Output",
+            "Reroute.004",
+            "Input"
+          ],
+          [
+            "Reroute.012",
+            "Output",
+            "Sample Curve.001",
+            "Curves"
+          ],
+          [
+            "Sample Curve.001",
+            "Position",
+            "Vector Math.006",
+            "Vector_001"
+          ],
+          [
+            "Sample Curve.001",
+            "Value",
+            "Vector Math.006",
+            "Vector"
+          ],
+          [
+            "Reroute.014",
+            "Output",
+            "Set Position.002",
+            "Geometry"
+          ],
+          [
+            "Interpolate Domain",
+            "Value",
+            "Set Position.002",
+            "Offset"
+          ],
+          [
+            "Index",
+            "Index",
+            "Sample Curve.001",
+            "Curve Index"
+          ],
+          [
+            "Reroute.012",
+            "Output",
+            "Reroute.013",
+            "Input"
+          ],
+          [
+            "Group Input.005",
+            "Input_4",
+            "Boolean Math.002",
+            "Boolean_001"
+          ],
+          [
+            "Compare.003",
+            "Result",
+            "Boolean Math.002",
+            "Boolean"
+          ],
+          [
+            "Reroute.011",
+            "Output",
+            "Reroute.005",
+            "Input"
+          ],
+          [
+            "Group Input.003",
+            "Input_6",
+            "Sample Curve.001",
+            "Factor"
+          ],
+          [
+            "Group Input.006",
+            "Input_6",
+            "Compare.003",
+            "A"
+          ],
+          [
+            "Reroute.006",
+            "Output",
+            "Compare.004",
+            "A"
+          ],
+          [
+            "Compare.004",
+            "Result",
+            "Switch.002",
+            "Switch"
+          ],
+          [
+            "Named Attribute",
+            "Attribute",
+            "Switch.003",
+            "True"
+          ],
+          [
+            "Named Attribute",
+            "Exists",
+            "Switch.003",
+            "Switch"
+          ],
+          [
+            "Position.001",
+            "Position",
+            "Switch.003",
+            "False"
+          ],
+          [
+            "Switch.003",
+            "Output",
+            "Switch.002",
+            "True"
+          ],
+          [
+            "Reroute.009",
+            "Output",
+            "Sample Curve.001",
+            "Value"
+          ],
+          [
+            "Switch.002",
+            "Output",
+            "Reroute.007",
+            "Input"
+          ],
+          [
+            "Reroute.007",
+            "Output",
+            "Reroute.001",
+            "Input"
+          ],
+          [
+            "Group Input",
+            "Input_2",
+            "Reroute.006",
+            "Input"
+          ],
+          [
+            "Reroute.007",
+            "Output",
+            "Reroute.008",
+            "Input"
+          ],
+          [
+            "Reroute.008",
+            "Output",
+            "Reroute.009",
+            "Input"
+          ],
+          [
+            "Group Input",
+            "Input_0",
+            "Reroute.011",
+            "Input"
+          ],
+          [
+            "Group.001",
+            "Output_0",
+            "Mix",
+            "A_Float"
+          ],
+          [
+            "Group.001",
+            "Output_1",
+            "Vector Math",
+            "Vector"
+          ],
+          [
+            "Vector Math.006",
+            "Vector",
+            "Interpolate Domain",
+            "Value"
+          ],
+          [
+            "Reroute.016",
+            "Output",
+            "Attribute Statistic",
+            "Attribute"
+          ],
+          [
+            "Attribute Statistic",
+            "Max",
+            "Compare.005",
+            "A"
+          ],
+          [
+            "Set Position.002",
+            "Geometry",
+            "Switch.001",
+            "True"
+          ],
+          [
+            "Reroute.014",
+            "Output",
+            "Switch.001",
+            "False"
+          ],
+          [
+            "Reroute.016",
+            "Output",
+            "Set Position.002",
+            "Selection"
+          ],
+          [
+            "Compare.005",
+            "Result",
+            "Switch.001",
+            "Switch"
+          ],
+          [
+            "Reroute.014",
+            "Output",
+            "Attribute Statistic",
+            "Geometry"
+          ],
+          [
+            "Boolean Math",
+            "Boolean",
+            "Set Position.001",
+            "Selection"
+          ],
+          [
+            "Boolean Math.002",
+            "Boolean",
+            "Reroute.016",
+            "Input"
+          ],
+          [
+            "Reroute.013",
+            "Output",
+            "Reroute.014",
+            "Input"
+          ],
+          [
+            "Set Position.001",
+            "Geometry",
+            "Reroute.012",
+            "Input"
+          ],
+          [
+            "Switch.001",
+            "Output",
+            "Group Output",
+            "Output_1"
+          ]
+        ],
+        "structure_sha256": "cbf9ae9695694f5ddb034960f1bb1fc622dfc18d6827d0879d4fc3be12ad9564"
+      },
+      "Set Hair Curve Profile": {
+        "name": "Set Hair Curve Profile",
+        "interface": [
+          [
+            "Geometry",
+            "Output_1",
+            "OUTPUT",
+            "NodeSocketGeometry"
+          ],
+          [
+            "Geometry",
+            "Input_0",
+            "INPUT",
+            "NodeSocketGeometry"
+          ],
+          [
+            "Replace Radius",
+            "Input_6",
+            "INPUT",
+            "NodeSocketBool"
+          ],
+          [
+            "Radius",
+            "Input_3",
+            "INPUT",
+            "NodeSocketFloat"
+          ],
+          [
+            "Shape",
+            "Input_2",
+            "INPUT",
+            "NodeSocketFloat"
+          ],
+          [
+            "Factor Min",
+            "Input_4",
+            "INPUT",
+            "NodeSocketFloat"
+          ],
+          [
+            "Factor Max",
+            "Input_5",
+            "INPUT",
+            "NodeSocketFloat"
+          ]
+        ],
+        "nodes": [
+          [
+            "Switch",
+            "GeometryNodeSwitch",
+            null
+          ],
+          [
+            "Radius",
+            "GeometryNodeInputRadius",
+            null
+          ],
+          [
+            "Math.001",
+            "ShaderNodeMath",
+            null
+          ],
+          [
+            "Reroute",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Reroute.001",
+            "NodeReroute",
+            null
+          ],
+          [
+            "Set Curve Radius",
+            "GeometryNodeSetCurveRadius",
+            null
+          ],
+          [
+            "Mix.002",
+            "ShaderNodeMix",
+            null
+          ],
+          [
+            "Group.002",
+            "GeometryNodeGroup",
+            ".shape_range"
+          ],
+          [
+            "Group Input.001",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Math.006",
+            "ShaderNodeMath",
+            null
+          ],
+          [
+            "Spline Parameter.004",
+            "GeometryNodeSplineParameter",
+            null
+          ],
+          [
+            "Group Input",
+            "NodeGroupInput",
+            null
+          ],
+          [
+            "Group Output",
+            "NodeGroupOutput",
+            null
+          ]
+        ],
+        "links": [
+          [
+            "Set Curve Radius",
+            "Curve",
+            "Group Output",
+            "Output_1"
+          ],
+          [
+            "Reroute.001",
+            "Output",
+            "Set Curve Radius",
+            "Curve"
+          ],
+          [
+            "Group Input",
+            "Input_6",
+            "Switch",
+            "Switch"
+          ],
+          [
+            "Radius",
+            "Radius",
+            "Switch",
+            "False"
+          ],
+          [
+            "Group Input",
+            "Input_3",
+            "Switch",
+            "True"
+          ],
+          [
+            "Math.001",
+            "Value",
+            "Set Curve Radius",
+            "Radius"
+          ],
+          [
+            "Switch",
+            "Output",
+            "Math.001",
+            "Value"
+          ],
+          [
+            "Group.002",
+            "Output_0",
+            "Mix.002",
+            "Factor_Float"
+          ],
+          [
+            "Group Input",
+            "Input_2",
+            "Group.002",
+            "Input_1"
+          ],
+          [
+            "Math.006",
+            "Value",
+            "Group.002",
+            "Input_3"
+          ],
+          [
+            "Spline Parameter.004",
+            "Factor",
+            "Math.006",
+            "Value_001"
+          ],
+          [
+            "Mix.002",
+            "Result_Float",
+            "Math.001",
+            "Value_001"
+          ],
+          [
+            "Group Input",
+            "Input_0",
+            "Reroute",
+            "Input"
+          ],
+          [
+            "Reroute",
+            "Output",
+            "Reroute.001",
+            "Input"
+          ],
+          [
+            "Group Input.001",
+            "Input_4",
+            "Mix.002",
+            "A_Float"
+          ],
+          [
+            "Group Input.001",
+            "Input_5",
+            "Mix.002",
+            "B_Float"
+          ]
+        ],
+        "structure_sha256": "779d91f58394de03598b7d3b2849d96bc1443a77d338d9b91bb4d6c89da41941"
+      }
+    },
+    "modifier_inputs": {
+      "Guide Object": {
+        "identifier": "Socket_2",
+        "value": "Pile guides · editable live input"
+      },
+      "Curl Factor": {
+        "identifier": "Socket_3",
+        "value": 0.550000011920929
+      },
+      "Curl Radius": {
+        "identifier": "Socket_4",
+        "value": 0.0020000000949949026
+      },
+      "Curl Frequency": {
+        "identifier": "Socket_5",
+        "value": 1.2000000476837158
+      },
+      "Clump Factor": {
+        "identifier": "Socket_6",
+        "value": 0.7200000286102295
+      },
+      "Clump Shape": {
+        "identifier": "Socket_7",
+        "value": 0.3499999940395355
+      },
+      "Tip Spread": {
+        "identifier": "Socket_8",
+        "value": 0.003000000026077032
+      },
+      "Profile Minimum": {
+        "identifier": "Socket_9",
+        "value": 0.550000011920929
+      },
+      "Profile Maximum": {
+        "identifier": "Socket_10",
+        "value": 1.0
+      }
+    },
+    "joined_order_check": {
+      "measured": true,
+      "total_curves": 87657,
+      "coat_first_count": 85000,
+      "first_guide_curve_index": 85000,
+      "guide_count": 2657,
+      "explicit_index_minimum": 85000,
+      "explicit_index_maximum": 87656,
+      "coat_root_bits_equal": true,
+      "persistent_field": "pile_guide_index",
+      "official_mutable_field": "guide_curve_index"
+    },
+    "official_inputs": {
+      "Curl Hair Curves": {
+        "Factor": "linked",
+        "Subdivision": 0,
+        "Curl Start": 0.15000000596046448,
+        "Radius": "linked",
+        "Factor Start": 0.699999988079071,
+        "Factor End": 0.699999988079071,
+        "Frequency": "linked",
+        "Random Offset": 0.0,
+        "Seed": 0,
+        "Guide Index": "linked",
+        "Guide Distance": 0.10000000149011612,
+        "Guide Mask": "linked",
+        "Existing Guide Map": true
+      },
+      "Clump Hair Curves": {
+        "Factor": "linked",
+        "Shape": "linked",
+        "Tip Spread": "linked",
+        "Clump Offset": 0.0,
+        "Distance Falloff": 0.0,
+        "Distance Threshold": 0.0,
+        "Seed": 0,
+        "Preserve Length": true,
+        "Guide Index": "linked",
+        "Guide Distance": 0.10000000149011612,
+        "Guide Mask": "linked",
+        "Existing Guide Map": true
+      },
+      "Restore Curve Segment Length": {
+        "Selection": true,
+        "Factor": 1.0,
+        "Reference Position": "linked",
+        "Pin at Parameter": 0.0
+      },
+      "Set Hair Curve Profile": {
+        "Replace Radius": true,
+        "Radius": "linked",
+        "Shape": 0.3499999940395355,
+        "Factor Min": "linked",
+        "Factor Max": "linked"
+      }
+    },
+    "guide_index_scope": "Explicit combined geometry curve indices; coat first and appended Object Info guides second; final guide curves deleted"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-03",
+  "scope": "作者原作三维查看器加入绒毛创作、小世界和展示台的现有页面",
+  "source": {
+    "author": "abstrakt",
+    "title": "ChatGPT dots - Felipe",
+    "scene": "https://superspl.at/scene/ca6a4c9b",
+    "embed": "https://superspl.at/s?id=ca6a4c9b",
+    "license": "CC BY 4.0",
+    "delivery": "官方在线 iframe；首选原作时才请求；未下载或导入原作资产"
+  },
+  "build": {"command": "node tooling/build.mjs", "result": "passed"},
+  "tests": {
+    "uniquePassed": 178,
+    "failed": 0,
+    "suites": [
+      "plush-reference-view", "gaussian-ply", "splat-config",
+      "project-journal-store", "project-journal-search", "project-journal-backup",
+      "recipes", "draft", "edit-history", "world-config", "world-draft-session",
+      "world-fetch", "world-fetch-scenes", "world-fetch-bounce", "gaussian-splat-renderer"
+    ],
+    "sharedViewFinalRerun": {"passed": 11, "failed": 0}
+  },
+  "browser": {
+    "surface": "Codex in-app browser",
+    "creation": {
+      "url": "http://localhost:8875/projects/005-plush-lab/web/index.html?plushView=reference",
+      "actualOriginalRendered": true,
+      "lazyFrameSourceBeforeSelection": null,
+      "nativeRoundTrip": {"name": "仅合并记录验证", "color": "#b5ce8c", "canvas": [1164, 1140], "retained": true},
+      "originalHidesNativeCanvasAndFooterActions": true,
+      "mobile": {"requestedViewport": [390, 844], "documentClientWidth": 375, "documentScrollWidth": 375, "horizontalOverflow": false},
+      "screenshot": "cycles-study/reference-integration-creation.png"
+    },
+    "world": {
+      "url": "http://localhost:8875/projects/005-plush-lab/web/world.html?plushView=reference",
+      "actualOriginalRendered": true,
+      "lazyFrameSourceBeforeSelection": null,
+      "nativeRoundTrip": {"name": "秋日小梨 · 沙发角落", "color": "#edce79", "canvas": [1181, 990], "retained": true},
+      "nativeGreetingAfterReturn": "秋日小梨 · 沙发角落向你打招呼。",
+      "mobile": {"requestedViewport": [390, 844], "documentClientWidth": 375, "documentScrollWidth": 375, "horizontalOverflow": false},
+      "screenshot": "cycles-study/reference-integration-world.png"
+    },
+    "splat": {
+      "url": "http://localhost:8875/projects/005-plush-lab/web/splat.html?plushView=reference",
+      "actualOriginalRendered": true,
+      "lazyFrameSourceBeforeSelection": null,
+      "nativeRoundTrip": {"seed": "soft-star-2026", "color": "#8bacee", "quality": "80000", "canvas": [1357, 1140], "retained": true},
+      "nativeBounceAfterReturn": "轻轻弹一下，和你打个招呼。",
+      "nativeFooterHiddenInOriginalMode": true,
+      "keyboardHomeAndEndTabs": "passed",
+      "originalFullscreenAndExitButton": "passed",
+      "mobile": {"requestedViewport": [390, 844], "documentClientWidth": 375, "documentScrollWidth": 375, "horizontalOverflow": false},
+      "screenshot": "cycles-study/reference-integration-splat.png"
+    },
+    "temporaryViewportReset": true,
+    "iframeOrbitDragIndependentVerification": false,
+    "note": "此前官方查看器原页已实测环绕拖动、滚轮缩放和 R 复位；本轮新 iframe 不重复宣称这些动作已独立实测。实际渲染凭截图确认，不以 iframe load 事件代替。"
+  },
+  "preservation": {
+    "previousJournalEntryCount": 115,
+    "newJournalEntryCount": 119,
+    "previousEntriesUnchanged": true,
+    "oldJournalObjectsSha256": "4b039bb265eeb13f136ba83d843e54fa4f5a99e4c295e8c7bba7d51b4bb72945",
+    "oldJournalSourceSuffixSha256": "e37a0736aadb6cd017b355067c17bbd3a3ca28a0681c3db24d34ed7f30684a7e",
+    "existingArtworkStorageKeysChanged": false,
+    "oldCreationsDeleted": false
+  },
+  "limitations": [
+    "原作仍是作者在线查看器内的完整场景，需要网络加载。",
+    "原作没有合并进入我们的 Three.js 角色、家具场景、灯光或碰撞计算。",
+    "原作尚不能用本项目笔刷染色、修剪、换装、行走或捡球；这些功能继续在原有创作模式中使用。",
+    "未把原作标成我们制作或重建的资产。"
+  ]
+}

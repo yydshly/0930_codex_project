@@ -1,0 +1,340 @@
+{
+  "checkedAt": "2026-10-03T06:14:18.487Z",
+  "result": "pass",
+  "command": "node tooling/verify-reference-plush-assets.mjs",
+  "scope": "Real local manifest, all six SOG ZIPs, SHA-256, ZIP CRC-32, embedded SOG2 counts, SH3 attribute files, WebP headers and independent public LOD0 ranges. This does not certify GPU decoding, frame rate or visual fidelity.",
+  "source": "https://superspl.at/scene/ca6a4c9b",
+  "author": "abstrakt",
+  "license": "CC BY 4.0",
+  "manifestSha256": "29e7f4dbd5a207489f6a6c42527d00425e1fc9f133617d8c18fd9845bbfc6eb1",
+  "publicLodMetaSha256": "46fb794fa5baeb99f3babf7d814f58474b56dd370f6d27593f949eb14b318708",
+  "fullResolutionCount": 3493379,
+  "sourceFullResolutionCount": 3493379,
+  "totalBytes": 66929437,
+  "chunks": [
+    {
+      "file": "0_0.sog",
+      "bytes": 12848556,
+      "sha256": "4e1f6b7c3cd78611773f633f864ba555357812881d8d145eb2f36927066e5e6b",
+      "sha256Matches": true,
+      "sogVersion": 2,
+      "count": 712241,
+      "sourceLod0Count": 712241,
+      "shBands": 3,
+      "zipEntries": [
+        {
+          "name": "meta.json",
+          "bytes": 15626,
+          "crc32Matches": true
+        },
+        {
+          "name": "means_l.webp",
+          "bytes": 2138394,
+          "crc32Matches": true
+        },
+        {
+          "name": "means_u.webp",
+          "bytes": 588762,
+          "crc32Matches": true
+        },
+        {
+          "name": "scales.webp",
+          "bytes": 2034066,
+          "crc32Matches": true
+        },
+        {
+          "name": "quats.webp",
+          "bytes": 2240732,
+          "crc32Matches": true
+        },
+        {
+          "name": "sh0.webp",
+          "bytes": 2119284,
+          "crc32Matches": true
+        },
+        {
+          "name": "shN_centroids.webp",
+          "bytes": 2495356,
+          "crc32Matches": true
+        },
+        {
+          "name": "shN_labels.webp",
+          "bytes": 1215516,
+          "crc32Matches": true
+        }
+      ],
+      "webpHeadersValid": true,
+      "firstChunkPublicMetadataMatches": true
+    },
+    {
+      "file": "0_1.sog",
+      "bytes": 12058375,
+      "sha256": "623d2ee12d222ab417cda830dc42db38ea5c17d23ab5bba2473de21c17fa5f83",
+      "sha256Matches": true,
+      "sogVersion": 2,
+      "count": 646629,
+      "sourceLod0Count": 646629,
+      "shBands": 3,
+      "zipEntries": [
+        {
+          "name": "meta.json",
+          "bytes": 15603,
+          "crc32Matches": true
+        },
+        {
+          "name": "means_l.webp",
+          "bytes": 1938492,
+          "crc32Matches": true
+        },
+        {
+          "name": "means_u.webp",
+          "bytes": 467158,
+          "crc32Matches": true
+        },
+        {
+          "name": "scales.webp",
+          "bytes": 1858108,
+          "crc32Matches": true
+        },
+        {
+          "name": "quats.webp",
+          "bytes": 2023520,
+          "crc32Matches": true
+        },
+        {
+          "name": "sh0.webp",
+          "bytes": 1997956,
+          "crc32Matches": true
+        },
+        {
+          "name": "shN_centroids.webp",
+          "bytes": 2554388,
+          "crc32Matches": true
+        },
+        {
+          "name": "shN_labels.webp",
+          "bytes": 1202330,
+          "crc32Matches": true
+        }
+      ],
+      "webpHeadersValid": true,
+      "firstChunkPublicMetadataMatches": null
+    },
+    {
+      "file": "0_2.sog",
+      "bytes": 12140938,
+      "sha256": "d245d2b62543c1a776ffdeb39e4d615eb9830065c4a8e02a9eb99d09a30e36a4",
+      "sha256Matches": true,
+      "sogVersion": 2,
+      "count": 657934,
+      "sourceLod0Count": 657934,
+      "shBands": 3,
+      "zipEntries": [
+        {
+          "name": "meta.json",
+          "bytes": 15602,
+          "crc32Matches": true
+        },
+        {
+          "name": "means_l.webp",
+          "bytes": 1965556,
+          "crc32Matches": true
+        },
+        {
+          "name": "means_u.webp",
+          "bytes": 460182,
+          "crc32Matches": true
+        },
+        {
+          "name": "scales.webp",
+          "bytes": 1873830,
+          "crc32Matches": true
+        },
+        {
+          "name": "quats.webp",
+          "bytes": 2074768,
+          "crc32Matches": true
+        },
+        {
+          "name": "sh0.webp",
+          "bytes": 2034466,
+          "crc32Matches": true
+        },
+        {
+          "name": "shN_centroids.webp",
+          "bytes": 2541638,
+          "crc32Matches": true
+        },
+        {
+          "name": "shN_labels.webp",
+          "bytes": 1174076,
+          "crc32Matches": true
+        }
+      ],
+      "webpHeadersValid": true,
+      "firstChunkPublicMetadataMatches": null
+    },
+    {
+      "file": "0_3.sog",
+      "bytes": 12230659,
+      "sha256": "2583f60d9b9f2e6dce0e1bac72ae712bda3fd893b3806c7361c900ce00953025",
+      "sha256Matches": true,
+      "sogVersion": 2,
+      "count": 643730,
+      "sourceLod0Count": 643730,
+      "shBands": 3,
+      "zipEntries": [
+        {
+          "name": "meta.json",
+          "bytes": 15599,
+          "crc32Matches": true
+        },
+        {
+          "name": "means_l.webp",
+          "bytes": 1931632,
+          "crc32Matches": true
+        },
+        {
+          "name": "means_u.webp",
+          "bytes": 561854,
+          "crc32Matches": true
+        },
+        {
+          "name": "scales.webp",
+          "bytes": 1842110,
+          "crc32Matches": true
+        },
+        {
+          "name": "quats.webp",
+          "bytes": 2022166,
+          "crc32Matches": true
+        },
+        {
+          "name": "sh0.webp",
+          "bytes": 2041270,
+          "crc32Matches": true
+        },
+        {
+          "name": "shN_centroids.webp",
+          "bytes": 2599188,
+          "crc32Matches": true
+        },
+        {
+          "name": "shN_labels.webp",
+          "bytes": 1216020,
+          "crc32Matches": true
+        }
+      ],
+      "webpHeadersValid": true,
+      "firstChunkPublicMetadataMatches": null
+    },
+    {
+      "file": "0_4.sog",
+      "bytes": 11892961,
+      "sha256": "3938ad9394c0d8e2b3b242d7370f9265fa872762f11876a12ba7adb31097b124",
+      "sha256Matches": true,
+      "sogVersion": 2,
+      "count": 620593,
+      "sourceLod0Count": 620593,
+      "shBands": 3,
+      "zipEntries": [
+        {
+          "name": "meta.json",
+          "bytes": 15563,
+          "crc32Matches": true
+        },
+        {
+          "name": "means_l.webp",
+          "bytes": 1866656,
+          "crc32Matches": true
+        },
+        {
+          "name": "means_u.webp",
+          "bytes": 512904,
+          "crc32Matches": true
+        },
+        {
+          "name": "scales.webp",
+          "bytes": 1798518,
+          "crc32Matches": true
+        },
+        {
+          "name": "quats.webp",
+          "bytes": 1942502,
+          "crc32Matches": true
+        },
+        {
+          "name": "sh0.webp",
+          "bytes": 1996992,
+          "crc32Matches": true
+        },
+        {
+          "name": "shN_centroids.webp",
+          "bytes": 2584812,
+          "crc32Matches": true
+        },
+        {
+          "name": "shN_labels.webp",
+          "bytes": 1174194,
+          "crc32Matches": true
+        }
+      ],
+      "webpHeadersValid": true,
+      "firstChunkPublicMetadataMatches": null
+    },
+    {
+      "file": "0_5.sog",
+      "bytes": 5757948,
+      "sha256": "531df10a2e82f865ab7eb9c55eb12061a7389932fad42e09b0e05167b9a1c56c",
+      "sha256Matches": true,
+      "sogVersion": 2,
+      "count": 212252,
+      "sourceLod0Count": 212252,
+      "shBands": 3,
+      "zipEntries": [
+        {
+          "name": "meta.json",
+          "bytes": 15566,
+          "crc32Matches": true
+        },
+        {
+          "name": "means_l.webp",
+          "bytes": 636946,
+          "crc32Matches": true
+        },
+        {
+          "name": "means_u.webp",
+          "bytes": 226002,
+          "crc32Matches": true
+        },
+        {
+          "name": "scales.webp",
+          "bytes": 611954,
+          "crc32Matches": true
+        },
+        {
+          "name": "quats.webp",
+          "bytes": 666014,
+          "crc32Matches": true
+        },
+        {
+          "name": "sh0.webp",
+          "bytes": 661308,
+          "crc32Matches": true
+        },
+        {
+          "name": "shN_centroids.webp",
+          "bytes": 2520396,
+          "crc32Matches": true
+        },
+        {
+          "name": "shN_labels.webp",
+          "bytes": 418942,
+          "crc32Matches": true
+        }
+      ],
+      "webpHeadersValid": true,
+      "firstChunkPublicMetadataMatches": null
+    }
+  ]
+}

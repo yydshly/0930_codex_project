@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-03",
+  "delivery": "web/studio.html#reference",
+  "source": {
+    "title": "ChatGPT dots - Felipe",
+    "author": "abstrakt",
+    "license": "CC BY 4.0",
+    "scene": "https://superspl.at/scene/ca6a4c9b",
+    "embed": "https://superspl.at/s?id=ca6a4c9b",
+    "localEditableAssetObtained": false
+  },
+  "browserVerification": {
+    "browser": "Codex in-app browser",
+    "localOrigin": "http://localhost:8875",
+    "actualOriginal3DRenderVisible": true,
+    "directReferenceHashEntryWorks": true,
+    "originalIframeLoadsOnlyAfterSelection": true,
+    "originalIframeSrcRetainedAcrossModeSwitches": true,
+    "ownWorldIframeSrcRetainedAcrossModeSwitches": true,
+    "temporaryChatDraftPreservedAcrossModeSwitches": true,
+    "selectedAgentDeskTabPreservedAcrossModeSwitches": true,
+    "allFiveBodyActionControlsDisabledInReferenceModeAfterOwnWorldReady": true,
+    "allFiveBodyActionControlsEnabledWhenReturningToReadyCompanion": true,
+    "outerFullscreenEntryAndExitVerified": true,
+    "fullscreenAttributionVisible": true,
+    "mobileViewport": {"width": 390, "height": 844, "documentScrollWidth": 375, "horizontalOverflow": false},
+    "temporaryViewportOverrideReset": true,
+    "testDraftClearedAfterVerification": true,
+    "notesRemindersOrMessagesCreatedDuringVerification": false,
+    "localIframeOrbitDragIndependentlyVerified": false,
+    "consoleObservations": ["Two MutationObserver observe-target errors were reported without a source URL. No MutationObserver is present in project source; the source of these errors is undetermined. The observed display and mode controls worked."]
+  },
+  "verification": {
+    "build": "Passed using tooling/build.mjs",
+    "focusedTests": {"passed": 65, "failed": 0, "includesNewAvatarViewTests": 6},
+    "journalStoreBackupAndUiTests": {"passed": 34, "failed": 0},
+    "previousJournalEntriesPreserved": 111,
+    "previousJournalSourceSuffixSha256": "e34469f467b7e52ab83faeba7322a3e9f13ee834bac469e7e032ae7c7c79904a"
+  },
+  "screenshot": "cycles-study/studio-reference-integration.jpg",
+  "boundaries": [
+    "The original is displayed through the author's remote public viewer, not generated or reconstructed by this project.",
+    "Original mode supports viewing; wardrobe, brushes and body actions remain with the existing companion world.",
+    "Notebook, reminders and the local Agent desk remain available independently of display mode.",
+    "This change does not activate an AI provider, cloud memory or background reminders."
+  ]
+}

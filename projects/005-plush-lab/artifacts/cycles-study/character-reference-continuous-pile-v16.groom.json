@@ -1,0 +1,55 @@
+{
+  "kind": "complete character",
+  "rendered": false,
+  "blend": "character-reference-continuous-pile-v16.blend",
+  "blend_sha256": "e6f0d818c22c815779fea6df04ddd226cc2c9ea0d255f6b486ea4ee5cf31643a",
+  "source": "character-reference-continuous-pile-v16.source.py",
+  "source_sha256": "41af9acf5e49e3cb0595560b49abcb4d22fb21d5ea2ccf472ac80d2261deeb35",
+  "historical_inputs": {
+    "character-reference-guide-v6.blend": "9d3adeb4bc4e4a85b3ee8b7de282770de09810dc4f52ba0397412b7cbbe1a60f",
+    "character-reference-v3.source.py": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3"
+  },
+  "old_files_unchanged": true,
+  "geometry": {
+    "main_clumps": 26000,
+    "children_per_clump": 32,
+    "strand_count": 832000,
+    "controls_per_strand": 24,
+    "main_curl_radius": {
+      "min": 0.004000297298959202,
+      "p10": 0.004452090833638515,
+      "median": 0.006264836456114012,
+      "p90": 0.00806287110283685,
+      "max": 0.008499587851248457
+    },
+    "uncompressed_tuft_height": {
+      "min": 0.018003347961189593,
+      "p10": 0.02121237894822,
+      "median": 0.028719876027803314,
+      "p90": 0.03399390239729288,
+      "max": 0.0449977173186203
+    },
+    "evaluated_normal_height": {
+      "min": 0.0014924709685146809,
+      "p10": 0.013181736879050733,
+      "median": 0.023148218169808388,
+      "p90": 0.03163054473698139,
+      "max": 0.05299626290798187
+    },
+    "polyline_arc_length": {
+      "min": 0.0033010169863700867,
+      "p10": 0.02258323747664691,
+      "median": 0.03719253093004227,
+      "p90": 0.04897562116384506,
+      "max": 0.07536976039409637
+    },
+    "finite_positive_radii": true,
+    "positions_sha256": "eac3844778ae8d0d419480f395e3ac69c3c312ef05e72029734c609c01e487ce",
+    "radius_sha256": "ec00a4b42c80e57564b841aadc526a28b81c77d041e561ed0a620d8164fb6ddc"
+  },
+  "foundation_strands": 240000,
+  "loose_halo_strands": 18000,
+  "method": "Continuous fine crimped pile: smaller curls, low gathering, softly varying downward flow, normal/tangent crimp planes and complete polar-cap root coverage; native Catmull-Rom fibers with Chiang scattering in Cycles.",
+  "scope": "Art-directed full groom. Geometry checks do not claim visual acceptance or exact reference reproduction.",
+  "preparation_seconds": 30.441967199993087
+}

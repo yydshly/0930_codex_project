@@ -1,0 +1,84 @@
+{
+  "scope": "Fresh temporary browser contexts; GN12 four-category records, exact local evidence links, clear and original records remain; no user profile",
+  "results": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "freshStorage": {
+        "cookies": [],
+        "origins": []
+      },
+      "overview": "95 条项目内置记录 · 我的补充 0 / 120",
+      "filtered": "当前分类 1 条 · 四类共 4 条匹配。切换分类查看其它结果。",
+      "panels": {
+        "progress": "项目内置记录真实渲染完成，参考毛料仍待验收GN12：两种束内相位对照完成，粗扇簇仍在固定 GN11 的三维回卷导向、沿长 Clump 控制和 0.88 峰值，比较官方 Curl 的额外 Random Offset：全部曲线为 1，或仅子毛为 1、导向为 0。2,657 条导向、85,000 根外绒与 90,000 根底绒保持，镜头、灯光和材质相同，768×768 / 96 样本，真实 GPU 渲染 9.00 / 8.79 秒。与 GN11 三图目视对照，只有局部丝纹和轮廓小变化，粗扇簇与横向层纹仍明显，尚未达到参考细密柔软卷绒。两组均不标为已验收母版，旧作品继续保留。GN11 与两种相位的真实三图 ↗",
+        "changes": "项目内置记录138 项独立只读检查通过GN12：新增两份相位工程及作用范围证据成功 live2 两组新增工程、冻结源、CPU 报告与预检日志、真实 PNG、GPU 凭证和日志。全部曲线组只将 Input_16 从 0 改为 1；仅子毛组用 1−is_guide 字段，CURVE 域子毛偏移为 1、导向为 0，Curl 后全部导向位置与半径逐位保持 GN11。独立复核 138/138 项通过，64 个输入 SHA 保持。两组 85,000 根最终外绒都响应，原生数据、最终根与根半径、映射、沿长控制及场景保持；中间 Curl 子毛根最大位移约 6.32e−8 场景单位，派生半径可能变化。首次中间根位级断言失败报告保留，r2 分开测量中间阶段和最终输出，不默认归因舍入。CPU 与 GPU 凭证分开，原 91 条记录内容与顺序保留。GN12 工程、来源与作用范围 ↗GN12 独立只读验证通过报告 ↗",
+        "principles": "项目内置记录实际节点机制与真实外观分别核对GN12：毛束已有随机变化，束内偏移为何仍不够旧 Random Offset=0 不代表所有毛束没有随机性：本机官方 Curl 内部已有按导向 ID 生成的共享相位，额外项才是按当前曲线 ID 的随机值乘 Random Offset。仅子毛组保留共享项与导向，再添加独立偏移；全部曲线组也改变求值导向。Frequency 内部乘以累计段长参与角度，不把 0.85 解释成每根固定 0.85 圈，也不把 Random Offset 当弧度。实际冠高代理仅提高约 0.23% / 0.30%，束内展开有所改变，但真实粗扇仍在。中心线统计不包含实体宽度、接触或柔软评分，输入生效不能代替外观验收。本轮字段、形态与判断边界 ↗Blender：Curl Hair Curves ↗",
+        "roadmap": "项目内置记录下一轮制作方向，尚未实现与验收GN12 后续：先重梳卷团方向，再细化空间毛束两种相位偏移都未解决主要结构。下一轮先固定导向数量和映射，绕各自根法线旋转整条原生回卷，隔离比较卷团整体方位；这种旋转不代表最终子毛冠高或长度不变，也不能保证自然细卷。随后再分别比较更小的空间导向组与错开的长度。当前已指定 Guide Index，单改 Guide Distance 不会重分组；细化毛束需要真实更新导向和子毛映射。参考 SideFX Hair Clump 的尺度、长度差异和多层组织方法，Houdini 未运行，宽度感知结簇与接触约束未实现。继续以真实样片验收毛料，再匹配完整星仔、黑帽与网页资产，保留全部旧创作。SideFX：毛束尺度与长度差异 ↗本轮实图和下一步判断 ↗"
+      },
+      "localLinks": [
+        {
+          "href": "../artifacts/cycles-material-study.html#curl-variation-study",
+          "status": 200,
+          "bytes": 176923
+        },
+        {
+          "href": "../artifacts/cycles-material-study.html#curl-variation-evidence",
+          "status": 200,
+          "bytes": 176923
+        },
+        {
+          "href": "../artifacts/cycles-study/hair-curl-phase-scope-validation-v12-r2.json",
+          "status": 200,
+          "bytes": 357403
+        }
+      ],
+      "cleared": "95 条项目内置记录 · 我的补充 0 / 120",
+      "errors": [],
+      "honestLimit": true,
+      "sourceEvidence": true,
+      "requiredLinks": true,
+      "pass": true
+    },
+    {
+      "file": "splat.html",
+      "status": 200,
+      "freshStorage": {
+        "cookies": [],
+        "origins": []
+      },
+      "overview": "95 条项目内置记录 · 我的补充 0 / 120",
+      "filtered": "当前分类 1 条 · 四类共 4 条匹配。切换分类查看其它结果。",
+      "panels": {
+        "progress": "项目内置记录真实渲染完成，参考毛料仍待验收GN12：两种束内相位对照完成，粗扇簇仍在固定 GN11 的三维回卷导向、沿长 Clump 控制和 0.88 峰值，比较官方 Curl 的额外 Random Offset：全部曲线为 1，或仅子毛为 1、导向为 0。2,657 条导向、85,000 根外绒与 90,000 根底绒保持，镜头、灯光和材质相同，768×768 / 96 样本，真实 GPU 渲染 9.00 / 8.79 秒。与 GN11 三图目视对照，只有局部丝纹和轮廓小变化，粗扇簇与横向层纹仍明显，尚未达到参考细密柔软卷绒。两组均不标为已验收母版，旧作品继续保留。GN11 与两种相位的真实三图 ↗",
+        "changes": "项目内置记录138 项独立只读检查通过GN12：新增两份相位工程及作用范围证据成功 live2 两组新增工程、冻结源、CPU 报告与预检日志、真实 PNG、GPU 凭证和日志。全部曲线组只将 Input_16 从 0 改为 1；仅子毛组用 1−is_guide 字段，CURVE 域子毛偏移为 1、导向为 0，Curl 后全部导向位置与半径逐位保持 GN11。独立复核 138/138 项通过，64 个输入 SHA 保持。两组 85,000 根最终外绒都响应，原生数据、最终根与根半径、映射、沿长控制及场景保持；中间 Curl 子毛根最大位移约 6.32e−8 场景单位，派生半径可能变化。首次中间根位级断言失败报告保留，r2 分开测量中间阶段和最终输出，不默认归因舍入。CPU 与 GPU 凭证分开，原 91 条记录内容与顺序保留。GN12 工程、来源与作用范围 ↗GN12 独立只读验证通过报告 ↗",
+        "principles": "项目内置记录实际节点机制与真实外观分别核对GN12：毛束已有随机变化，束内偏移为何仍不够旧 Random Offset=0 不代表所有毛束没有随机性：本机官方 Curl 内部已有按导向 ID 生成的共享相位，额外项才是按当前曲线 ID 的随机值乘 Random Offset。仅子毛组保留共享项与导向，再添加独立偏移；全部曲线组也改变求值导向。Frequency 内部乘以累计段长参与角度，不把 0.85 解释成每根固定 0.85 圈，也不把 Random Offset 当弧度。实际冠高代理仅提高约 0.23% / 0.30%，束内展开有所改变，但真实粗扇仍在。中心线统计不包含实体宽度、接触或柔软评分，输入生效不能代替外观验收。本轮字段、形态与判断边界 ↗Blender：Curl Hair Curves ↗",
+        "roadmap": "项目内置记录下一轮制作方向，尚未实现与验收GN12 后续：先重梳卷团方向，再细化空间毛束两种相位偏移都未解决主要结构。下一轮先固定导向数量和映射，绕各自根法线旋转整条原生回卷，隔离比较卷团整体方位；这种旋转不代表最终子毛冠高或长度不变，也不能保证自然细卷。随后再分别比较更小的空间导向组与错开的长度。当前已指定 Guide Index，单改 Guide Distance 不会重分组；细化毛束需要真实更新导向和子毛映射。参考 SideFX Hair Clump 的尺度、长度差异和多层组织方法，Houdini 未运行，宽度感知结簇与接触约束未实现。继续以真实样片验收毛料，再匹配完整星仔、黑帽与网页资产，保留全部旧创作。SideFX：毛束尺度与长度差异 ↗本轮实图和下一步判断 ↗"
+      },
+      "localLinks": [
+        {
+          "href": "../artifacts/cycles-material-study.html#curl-variation-study",
+          "status": 200,
+          "bytes": 176923
+        },
+        {
+          "href": "../artifacts/cycles-material-study.html#curl-variation-evidence",
+          "status": 200,
+          "bytes": 176923
+        },
+        {
+          "href": "../artifacts/cycles-study/hair-curl-phase-scope-validation-v12-r2.json",
+          "status": 200,
+          "bytes": 357403
+        }
+      ],
+      "cleared": "95 条项目内置记录 · 我的补充 0 / 120",
+      "errors": [],
+      "honestLimit": true,
+      "sourceEvidence": true,
+      "requiredLinks": true,
+      "pass": true
+    }
+  ],
+  "pass": true
+}

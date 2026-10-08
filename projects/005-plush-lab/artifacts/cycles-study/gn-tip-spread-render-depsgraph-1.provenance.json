@@ -1,0 +1,41 @@
+{
+  "scope": "Preservation of actual prior read-only render-depsgraph CPU diagnostic; no remeasurement or GPU during preservation.",
+  "original_measurement_tool_session": 41933,
+  "original_output_chunk": "9dc81e",
+  "original_measurement_exit_code": 0,
+  "source_original": "C:/Users/yun68/AppData/Local/Temp/plush_render_depsgraph_readonly.py",
+  "retained_source": "gn-tip-spread-render-depsgraph-1.source.py",
+  "source_sha256": "c35f0787566c9cfd4ea500ad0005c4b018ba35611d6259230b07ff930daddf12",
+  "original_temp_source_sha256": "c35f0787566c9cfd4ea500ad0005c4b018ba35611d6259230b07ff930daddf12",
+  "raw_log": "gn-tip-spread-render-depsgraph-1.raw.log",
+  "raw_log_sha256": "6d96d0dc897f257cb9877457784e0060cf242c540f4e45777057ec495fdff6bc",
+  "raw_log_origin": "Verbatim transcription of original functions.write_stdin final stdout chunk9dc81e for session41933; not a raw process capture file and not a new run. Initial read-blend stdout chunk is not included.",
+  "input_hashes_before": {
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-restore-off-live-5.blend": "782f8f4e718b944223527b7bf47126fab74bc9f578a45c2634223526afc410ed",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-restore-off-live-5.source.py": "55bb71225b66485972ecf1fa693ba9d06baff28e827135413fd81549dcc30abf",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-tip-spread-006-live2-6.blend": "ef8470fbcd6edaf2739b98ec36a8fa6ae2dc4439763a35a8d934b8c0346fbbfe",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-tip-spread-006-live2-6.source.py": "56f0991c6b40aec0efe72065ddc3ebdf9b0030ec189eedc454eee97b56c8f06d",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-tip-spread-009-live2-6.blend": "f3335f40b4c8a1b43198e9a323eabbbbf94701df917fdc2cb4a7ce301bab4e99",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-tip-spread-009-live2-6.source.py": "56f0991c6b40aec0efe72065ddc3ebdf9b0030ec189eedc454eee97b56c8f06d"
+  },
+  "input_hashes_after": {
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-restore-off-live-5.blend": "782f8f4e718b944223527b7bf47126fab74bc9f578a45c2634223526afc410ed",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-restore-off-live-5.source.py": "55bb71225b66485972ecf1fa693ba9d06baff28e827135413fd81549dcc30abf",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-tip-spread-006-live2-6.blend": "ef8470fbcd6edaf2739b98ec36a8fa6ae2dc4439763a35a8d934b8c0346fbbfe",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-tip-spread-006-live2-6.source.py": "56f0991c6b40aec0efe72065ddc3ebdf9b0030ec189eedc454eee97b56c8f06d",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-tip-spread-009-live2-6.blend": "f3335f40b4c8a1b43198e9a323eabbbbf94701df917fdc2cb4a7ce301bab4e99",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-tip-spread-009-live2-6.source.py": "56f0991c6b40aec0efe72065ddc3ebdf9b0030ec189eedc454eee97b56c8f06d"
+  },
+  "input_hash_scope": "Six current preserved input identities; original running script computed before/after equality and printed INPUT_SHA_UNCHANGED True, but did not print individual before hashes. Identity hashes recorded here on preservation; not falsely attributed as separately printed original hash values.",
+  "original_before_after_sha_equal_stdout": true,
+  "geometry_helper": "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-nearest-render-3.gn-source.py",
+  "geometry_helper_sha256": "be7730c0ddba22109ebc31dd44e8660672df7fd2cb8d361093688ce9fcc2c927",
+  "method": "CPU custom Python RenderEngine.render(depsgraph) obtained actual depsgraph.mode RENDER; evaluated native coat positions/radii compared bitwise with VIEWPORT. A1x1 dummy render result only, no Cycles invocation, no GPU, write_still=False, no blend save. Scene engine changed in memory only.",
+  "actual_render_mode": true,
+  "no_cycles": true,
+  "no_gpu": true,
+  "no_image_saved": true,
+  "no_blend_saved": true,
+  "limitations": "Establishes dependency-graph equality and active render flags, not a direct trace of Cycles internal curve synchronization/shading or pixel-level opacity/occlusion. Visual closeness explanation is an inference from small displacement and unchanged guide crown, not visual acceptance.",
+  "results": "gn-tip-spread-render-depsgraph-1.result.json"
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "swatch",
+  "rendered": false,
+  "blend": "swatch-reference-gn-coat-only-8.blend",
+  "png": "swatch-reference-gn-coat-only-8.png",
+  "resolution": 768,
+  "samples": 96,
+  "control_asset": "swatch-reference-gn-crown-008-live-7",
+  "wrapper_source_snapshot": "swatch-reference-gn-coat-only-8.source.py",
+  "wrapper_source_sha256": "0c8c14cc9d13c9d436f00f5b2c0d14b3b8acc800a3ffc007325d22aa4fad3dd0",
+  "study_scope": "Render layer source diagnostic only; different visible curve counts. All geometry/attributes/GN/material/camera/light fixed. Backing and floor retained. Not a pixel visibility decomposition or equal-density quality comparison.",
+  "layer_change": {
+    "case": "coat-only",
+    "visible_layers": [
+      "coat"
+    ],
+    "hide_render": {
+      "coat": false,
+      "undercoat": true,
+      "flyaway": true
+    },
+    "native_layer_counts": {
+      "coat": 85000,
+      "undercoat": 90000,
+      "flyaway": 2500
+    }
+  },
+  "render_receipt": "swatch-reference-gn-coat-only-8.render.json"
+}

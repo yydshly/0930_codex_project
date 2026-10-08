@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f6f4ee"><title>Plush World · 造一个毛绒小世界</title><link rel="stylesheet" href="world.css"><link rel="stylesheet" href="plush-reference.css"></head>
+<body>
+<header><a class="brand" href="index.html"><span aria-hidden="true">✳</span> plush lab <small>/ world</small></a><nav aria-label="工作室导航"><a class="back" href="studio.html">陪伴工作室 ↗</a><a class="back" href="index.html" target="_blank" rel="noopener">绒毛创作 ↗</a><a href="splat.html">高斯展台 ↗</a><a href="project.html">项目全景 ↗</a></nav></header>
+<main>
+  <section class="world-stage" aria-label="毛绒小世界互动场景">
+    <div id="world-native-stage" class="plush-native-stage">
+    <div class="stage-intro"><span class="eyebrow">A LITTLE WORLD, MADE BY YOU</span><h1>偶遇一个<span>毛绒小世界。</span></h1><p>让灵感随机发生，也让它成为你的模样。</p></div>
+    <canvas id="world-canvas" tabindex="0" aria-label="拖动旋转角色，点击角色弹跳；陪伴模式点击沙发入座，点击地面行走；选择丢球落点后点击空地；布置模式拖动家具。"></canvas>
+    <div id="world-error" role="alert" hidden></div>
+    <div class="scene-caption"><span id="scene-label">温暖房间</span><h2 id="world-name">小团子</h2><p id="world-summary"></p><span id="world-activity" class="activity" role="status">在地毯上陪你</span></div>
+    <div class="stage-controls"><button id="world-front">回到正面</button><button id="world-pause" aria-pressed="false">暂停动画</button><button id="world-view" aria-pressed="false">走近一点</button></div>
+    <p class="stage-hint" id="world-feedback" role="status" aria-live="polite">点点小伙伴，打个招呼。</p>
+    </div>
+  </section>
+  <aside aria-label="角色与场景创作器">
+    <div class="panel-heading"><span class="eyebrow">CREATE / COLLECT / PLAY</span><h2>今天，遇见谁？</h2><p>随机搭配 → 留下喜欢的 → 自由微调</p></div>
+    <div id="world-native-controls" class="plush-native-controls">
+    <div class="random-actions"><button id="world-random" class="primary"><span aria-hidden="true">⚄</span> 遇见新搭配</button><button id="world-undo" disabled aria-label="撤销修改">↶</button><button id="world-redo" disabled aria-label="重做修改">↷</button></div>
+    <details class="seed-box"><summary>用种子重现灵感</summary><label for="world-seed">生成种子<input id="world-seed" maxlength="40" autocomplete="off"></label><button id="world-generate">按种子生成</button><p>相同种子与锁定内容，会得到相同搭配。</p></details>
+    <div class="creator-tabs" role="tablist" aria-label="小世界创作面板"><button role="tab" data-tab="character" id="world-tab-character" aria-selected="true" aria-controls="world-panel-character">形象</button><button role="tab" data-tab="wardrobe" id="world-tab-wardrobe" aria-selected="false" aria-controls="world-panel-wardrobe" tabindex="-1">着装</button><button role="tab" data-tab="scene" id="world-tab-scene" aria-selected="false" aria-controls="world-panel-scene" tabindex="-1">场景</button><button role="tab" data-tab="collection" id="world-tab-collection" aria-selected="false" aria-controls="world-panel-collection" tabindex="-1">作品</button></div>
+    <section id="world-panel-character" role="tabpanel" aria-labelledby="world-tab-character">
+      <label class="field" for="world-name-input">小伙伴的名字<input id="world-name-input" maxlength="24" autocomplete="off" aria-describedby="world-name-hint"></label>
+      <p id="world-name-hint" class="hint">按 Enter 或离开输入框，记住这个名字。</p>
+      <div class="section-title">一个软软的轮廓<label class="lock"><input type="checkbox" data-lock="shape">锁定形体</label></div>
+      <div id="shape-options" class="option-grid" role="group" aria-label="角色形体"></div>
+      <div class="section-title">毛绒的触感<label class="lock"><input type="checkbox" data-lock="material">锁定材质</label></div>
+      <div id="material-options" class="option-grid" role="group" aria-label="毛绒材质"></div>
+      <div class="section-title">配色灵感<label class="lock"><input type="checkbox" data-lock="palette">锁定配色</label></div>
+      <div id="palette-options" class="palettes" role="group" aria-label="协调配色"></div>
+      <div class="colors"><label for="world-fur-color">毛色<input id="world-fur-color" type="color"></label><label for="world-accent-color">主布色<input id="world-accent-color" type="color"></label><label for="world-secondary-color">点缀色<input id="world-secondary-color" type="color"></label></div>
+      <div class="section-title">一点小性格<label class="lock"><input type="checkbox" data-lock="personality">锁定性格</label></div>
+      <div id="personality-options" class="option-grid" role="group" aria-label="角色性格"></div>
+      <p class="help">安静的呼吸、好奇的探头、活泼的摇摆会带来不同的陪伴动作。</p>
+    </section>
+    <section id="world-panel-wardrobe" role="tabpanel" aria-labelledby="world-tab-wardrobe" hidden>
+      <div class="section-title">小小衣橱<label class="lock"><input type="checkbox" data-lock="wardrobe">锁定着装</label></div>
+      <label class="field" for="world-hat">帽饰<select id="world-hat"></select></label>
+      <label class="field" for="world-outfit">衣服<select id="world-outfit"></select></label>
+      <label class="field" for="world-accessory">配件<select id="world-accessory"></select></label>
+      <div class="wardrobe-note"><span aria-hidden="true">✂</span><p>按自己的喜好混搭。布面随角色轮廓成形，配色跟随主布色与点缀色。</p></div>
+      <button id="world-random-wardrobe" class="secondary">只换一套着装 ↻</button>
+      <p class="help">锁定着装后，随机生成会保留帽饰、衣服和配件。可选下拉菜单始终支持手动修改。</p>
+    </section>
+    <section id="world-panel-scene" role="tabpanel" aria-labelledby="world-tab-scene" hidden>
+      <div class="section-title">住进一个小世界<label class="lock"><input type="checkbox" data-lock="scene">锁定场景</label></div>
+      <div id="scene-options" class="scene-options" role="group" aria-label="选择场景"></div>
+      <div class="section-title">光的时间</div><div id="lighting-options" class="option-grid" role="group" aria-label="场景灯光"></div>
+      <p id="scene-description" class="help"></p>
+      <div class="section-title">布置自己的角落<span id="world-furniture-count">0 / 8</span></div>
+      <div class="layout-modes" role="group" aria-label="场景操作模式"><button id="world-mode-play" aria-pressed="true">陪伴</button><button id="world-mode-layout" aria-pressed="false">布置</button></div>
+      <div id="world-furniture-add" class="option-grid" role="group" aria-label="添加家具"></div>
+      <p class="help">添一张沙发 → 调整位置 → 点「坐到沙发」。每个场景单独保存布置。</p>
+      <div id="world-furniture-list" class="furniture-list" role="group" aria-label="已摆放家具"></div>
+      <div id="world-furniture-editor" class="furniture-editor" hidden>
+        <div class="furniture-heading"><strong id="world-furniture-name"></strong><span id="world-furniture-position"></span></div>
+        <p class="hint">布置模式可拖动家具，也可以用方向按钮微调。</p>
+        <div class="furniture-nudge" role="group" aria-label="调整家具位置"><button data-nudge="0,-0.25" aria-label="家具向后移动">↑</button><button data-nudge="-0.25,0" aria-label="家具向左移动">←</button><button data-nudge="0.25,0" aria-label="家具向右移动">→</button><button data-nudge="0,0.25" aria-label="家具向前移动">↓</button></div>
+        <div class="furniture-tools"><button id="world-furniture-rotate">旋转 45°</button><label for="world-furniture-color">家具色<input id="world-furniture-color" type="color"></label><button id="world-furniture-remove">移除</button></div>
+        <button id="world-sit" class="secondary">坐到沙发</button>
+      </div>
+      <button id="world-stand" class="secondary">起身 / 回到地毯</button>
+      <div id="world-furniture-interactions" class="option-grid" role="group" aria-label="新增家具互动"></div>
+      <div class="section-title">场景里的小惊喜</div><div id="scene-interactions" class="option-grid" role="group" aria-label="场景物件互动"></div>
+      <p class="help">也可以直接点画面里的这些物件。</p>
+    </section>
+    <section id="world-panel-collection" role="tabpanel" aria-labelledby="world-tab-collection" hidden>
+      <div class="section-title">留住这次偶遇<span id="world-collection-count">0 / 8</span></div><button id="world-save" class="secondary">保存当前小世界 +</button><div id="world-collection" class="collection"></div>
+      <div class="divider"></div><button id="world-share" class="secondary">生成小世界链接 ↗</button><div id="world-share-box" hidden><label class="field" for="world-share-output">小世界链接<input id="world-share-output" readonly></label><button id="world-copy" class="secondary">复制链接</button></div>
+      <details class="seed-box"><summary>导入小世界</summary><label for="world-import">链接或代码<textarea id="world-import" rows="3" maxlength="22000"></textarea></label><button id="world-load">应用小世界</button></details>
+      <button id="world-export" class="secondary">拍一张场景照片 ↓</button><a id="world-download" class="download" hidden>下载 PNG 照片</a>
+      <p class="help">小世界独立保存于此浏览器，最多 8 件。链接包含形象、着装、三个场景的家具布置，以及角色位置和座位；本机地址跨设备使用需部署网站或导入代码。</p>
+    </section>
+    <div class="play-bar"><span>陪它玩一会儿</span><div class="play-actions"><button id="world-jump">跳一下</button><button id="world-greet">打招呼</button><button id="world-pet" aria-pressed="false">抚摸绒毛</button><button id="world-wind" aria-pressed="false">吹吹风</button></div></div>
+    <section class="fetch-play" aria-labelledby="fetch-heading">
+      <div class="fetch-heading"><h3 id="fetch-heading">一起捡球</h3><span id="world-fetch-count">本次已捡回 0 次</span></div>
+      <p id="world-fetch-status" role="status" aria-live="polite">丢一颗球，让它带着小惊喜回来。</p>
+      <ol class="fetch-steps" aria-label="捡球过程"><li data-fetch-phase="throwing">抛出</li><li data-fetch-phase="bouncing">弹跳</li><li data-fetch-phase="chasing">追球</li><li data-fetch-phase="picking">捡起</li><li data-fetch-phase="returning">带回</li><li data-fetch-phase="celebrating">回应</li></ol>
+      <div class="fetch-actions"><button id="world-fetch-throw">丢球给它</button><button id="world-fetch-aim" aria-pressed="false">自己选落点</button><button id="world-fetch-cancel" disabled>收起玩具</button></div>
+      <p class="help">一键丢球，或选择落点后点击画面里的空地。小球落地后会弹跳三次并滚动，它会追过去，等球停稳再捡回。暂停动画会一起暂停；Esc 可取消。球和本次计数仅在当前页面保留。</p>
+    </section>
+    <p id="world-storage-status" class="storage-status" role="status" aria-live="polite">修改后自动保存最近小世界。</p>
+    <details class="how-it-works"><summary>这个小世界如何生成？还可以扩展什么？</summary><p>种子决定形体、材质、协调配色、着装、场景与性格；锁定的部分参与下一次搭配。服装贴合角色曲面，共享角色运动。毛绒复用工作室的固定毛根与弹性响应。</p><p>新增家具支持摆放、旋转与配色。角色规划绕开物件的地面路径，再平滑过渡到沙发座位；这是路径与姿态近似，还没有腿部骨骼或布料解算。旧链接没有家具时，仍然打开原先的小世界。</p><p>小球先沿抛物线飞出，再做三次高度逐渐减小的弹跳，沿可达路线末段滚到选定位置；自转跟随实际运动，停稳后停止。小球触地时角色出发，等球停稳再拾取、返回与回应。这些是运动学动画近似，还没有球与家具的刚体碰撞。</p><p>后续可以扩展喂食、睡眠、更多玩具、角色自主探索、多角色、工作室笔刷互通，以及角色骨骼和真实布料响应。</p></details>
+    </div>
+  </aside>
+</main>
+<footer><span>PLUSH WORLD / EVERY SEED IS A LITTLE ENCOUNTER</span><span id="world-fps">— FPS</span></footer>
+<script type="module" src="world.js?v=20261003-reference-workbench-1"></script></body></html>

@@ -1,0 +1,47 @@
+{
+  "blender": "5.2.2 LTS",
+  "kind": "character",
+  "variant": "fleece",
+  "preset": {
+    "label": "B · 松散微卷绒",
+    "length": 0.047,
+    "curl": 0.0055,
+    "turns": 1.15,
+    "lean": 0.65,
+    "clump": 0.38
+  },
+  "body_hair_counts": {
+    "undercoat": 340000,
+    "coat": 320000,
+    "flyaway": 9000
+  },
+  "hat_hairs": 90000,
+  "body_points_per_hair": 12,
+  "resolution": 1024,
+  "samples": 128,
+  "angle_degrees": 0,
+  "material": "Cycles Principled Hair BSDF / CHIANG / COLOR",
+  "devices": [
+    {
+      "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+      "type": "OPTIX",
+      "enabled": true
+    },
+    {
+      "name": "13th Gen Intel Core i9-13980HX",
+      "type": "CPU",
+      "enabled": false
+    },
+    {
+      "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+      "type": "CUDA",
+      "enabled": false
+    }
+  ],
+  "seconds": 28.62,
+  "blend": "character-fleece-v1.blend",
+  "png": "character-fleece-v1.png",
+  "rendered": true,
+  "source": "tooling\\blender\\plush_cycles.py",
+  "scope": "Offline native hair asset study; no 3DGS training or real-time web conversion"
+}

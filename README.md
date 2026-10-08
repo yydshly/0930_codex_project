@@ -18,6 +18,7 @@
 | 002 | [Huashu Design · 设计能力研究](projects/002-huashu-design/README.md) | **能力：** 设计探索、原型、幻灯片、信息图、动画、声音与检查<br>**产物：** HTML、PDF、可编辑 PPTX、MP4 等<br>**原理：** Skill 与参考指导模型，浏览器渲染，组件/脚本执行<br>**场景：** 研究、评审、汇报、培训与传播<br>**价值：** 复用制作经验<br>**扩展：** 品牌、模板、数据、导出和验收。 | 已完成 | [alchaincyf/huashu-design](https://github.com/alchaincyf/huashu-design) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/002-huashu-design/) |
 | 003 | [Learn Harness Engineering · AI 工作流程研究](projects/003-learn-harness-engineering/README.md) | **定位：** 学习 AI Agent 工作流程的课程与实践资料<br>**内容：** 14 讲课程、8 项练习说明、规则/任务/进度/验收模板，附 1 个 Skill、生成与检查脚本和教学示例<br>**用途：** 理解 Agent、组织持续开发与跨会话任务<br>**价值：** 少重复解释、少返工、凭证据验收<br>**扩展：** 领域模板、真实测试、状态恢复及自动循环/多 Agent，需自行接入执行环境。 | 已完成 | [walkinglabs/learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/003-learn-harness-engineering/) |
 | 004 | [Rhythm Drop · 音乐型声音与视听体验研究](projects/004-rhythm-drop/README.md) | **目标：** 研究音乐型声音如何驱动视觉、故事与互动<br>**来源：** Gorden Sun 的 X 音乐动画展示<br>**实验：** 场景叙事、声音身份、花园创造与漂流、儿童游戏、原创回声小队和复杂情绪<br>**结论：** 声音主导，角色驱动系列，故事与表演共同设计<br>**制作：** 参考图、程序化模型与声音时钟驱动实时动画<br>**状态：** 研究原型，产品价值尚未验证。 | 已归档 | [Gorden Sun · 原网页音乐效果](https://x.com/Gorden_Sun/status/2105302007896797351)<br>技术：[mrdoob/three.js](https://github.com/mrdoob/three.js) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/004-rhythm-drop/) |
+| 005 | [Plush Lab · 毛绒实验室](projects/005-plush-lab/README.md) | **背景：** 从舒适自然的毛绒质感出发，积累创作、互动与研究<br>**能力：** 绒毛剪染卷梳、随机搭配、小世界、陪伴笔记、页面提醒、固定任务及完整原作高斯展示<br>**原理：** Three.js 程序纤维与表面场、Spark 高斯渲染、状态机与本机存储<br>**场景：** 自由设计、网页角色、技术学习与生活记录<br>**价值：** 保留你的作品和方法积累，为陪伴与 Agent 可视化提供基础<br>**边界：** 研究原型，真实 AI 与后台提醒待接入，自制质感尚未达到参考。 | 研究中 | [mrdoob/three.js](https://github.com/mrdoob/three.js) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/005-plush-lab/) |
 
 <!-- PROJECT_INDEX:END -->
 
@@ -86,6 +87,21 @@
 ![Rhythm Drop · 音乐型声音与视听体验研究 项目引导图](projects/004-rhythm-drop/assets/source-effect.jpg)
 
 [研究详情](projects/004-rhythm-drop/README.md) · [在线演示](https://yydshly.github.io/0930_codex_project/projects/004-rhythm-drop/)
+
+### 005 · Plush Lab · 毛绒实验室
+
+- **背景：** 从舒适自然的毛绒质感出发，积累创作、互动与研究
+- **能力：** 绒毛剪染卷梳、随机搭配、小世界、陪伴笔记、页面提醒、固定任务及完整原作高斯展示
+- **原理：** Three.js 程序纤维与表面场、Spark 高斯渲染、状态机与本机存储
+- **场景：** 自由设计、网页角色、技术学习与生活记录
+- **价值：** 保留你的作品和方法积累，为陪伴与 Agent 可视化提供基础
+- **边界：** 研究原型，真实 AI 与后台提醒待接入，自制质感尚未达到参考。
+
+源库：[mrdoob/three.js](https://github.com/mrdoob/three.js)。先阅读下方引导图，再进入研究文档与交互演示。
+
+![Plush Lab · 毛绒实验室 项目引导图](projects/005-plush-lab/assets/plush-capabilities-principles.png)
+
+[研究详情](projects/005-plush-lab/README.md) · [在线演示](https://yydshly.github.io/0930_codex_project/projects/005-plush-lab/)
 
 <!-- PROJECT_PREVIEWS:END -->
 

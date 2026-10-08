@@ -1,0 +1,124 @@
+{
+  "scope": "Signed analytic ellipsoid implicit/gradient height approximation; eight Gauss-Legendre samples per Catmull-Rom segment. Local UC P95 is a geometric envelope, not opaque coverage or pixel occlusion. Arc fractions are averaged per curve.",
+  "control_asset": "swatch-reference-gn-nearest-render-3",
+  "input_hashes_before": {
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-nearest-render-3.blend": "e1d45bf2a6258d635dc10470f44fade84d8b71ddeb75dad2fa4863ca14c34174",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-nearest-render-3.json": "d13fea1a40a4d8f4af6ae97dbfca1325447b0648e6834bfa65888b1101a01827",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-nearest-render-3.gn-report.json": "8633a52d06c7afdc4503f0201fba2bee3acac3cbafd3b57d6edb2ef8a96faca7",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-nearest-render-3.source.py": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-nearest-render-3.gn-source.py": "be7730c0ddba22109ebc31dd44e8660672df7fd2cb8d361093688ce9fcc2c927"
+  },
+  "input_hashes_after": {
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-nearest-render-3.blend": "e1d45bf2a6258d635dc10470f44fade84d8b71ddeb75dad2fa4863ca14c34174",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-nearest-render-3.json": "d13fea1a40a4d8f4af6ae97dbfca1325447b0648e6834bfa65888b1101a01827",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-nearest-render-3.gn-report.json": "8633a52d06c7afdc4503f0201fba2bee3acac3cbafd3b57d6edb2ef8a96faca7",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-nearest-render-3.source.py": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-nearest-render-3.gn-source.py": "be7730c0ddba22109ebc31dd44e8660672df7fd2cb8d361093688ce9fcc2c927"
+  },
+  "scale": 0.35,
+  "before": {
+    "scope": "Signed analytic ellipsoid implicit/gradient height approximation; eight Gauss-Legendre samples per Catmull-Rom segment. Local UC P95 is a geometric envelope, not opaque coverage or pixel occlusion. Arc fractions are averaged per curve.",
+    "ellipsoid_half_axes": [
+      0.64,
+      0.43,
+      0.54
+    ],
+    "front_normal_dot_camera_threshold": 0.2,
+    "undercoat_positions_float32_sha256": "b1a76c65c818b6d4cc86d55f3ad7d112cca1cf437ab990247f67816c56d60ffc",
+    "undercoat_crown_height": {
+      "minimum": 1.807718623298043e-06,
+      "maximum": 0.02756358323767617,
+      "mean": 0.014544440746287631,
+      "median": 0.014554160424037715,
+      "p95": 0.018927679752357037
+    },
+    "undercoat_global_crown_p95": 0.018927679752357037,
+    "coat_crown_height_all": {
+      "minimum": 0.0007087684721659679,
+      "maximum": 0.042325545519500934,
+      "mean": 0.014572805524161424,
+      "median": 0.013165960307003339,
+      "p95": 0.0260945562422434
+    },
+    "coat_crown_height_front": {
+      "minimum": 0.0009431180011979373,
+      "maximum": 0.04001409857553834,
+      "mean": 0.014584651586562712,
+      "median": 0.013162894775074145,
+      "p95": 0.026192200081627676
+    },
+    "coat_minimum_height": {
+      "minimum": -0.03527552197105356,
+      "maximum": 3.1611574404890836e-08,
+      "mean": -0.0030666040699201054,
+      "median": -2.3034828284813238e-05,
+      "p95": 1.3569766658472064e-08
+    },
+    "inside_surface_arc_fraction_mean": 0.08753870334333806,
+    "arc_fraction_below_minus_0_001_mean": 0.07354611852306063,
+    "curves_below_minus_0_001_fraction": 0.4451764705882353,
+    "front_mean_arc_fraction_above_undercoat_local_p95": 0.0638885344648202,
+    "front_crowns_below_undercoat_local_p95_fraction": 0.7503767522534049,
+    "evaluated_positions_float32_sha256": "ad5d675d87a3760fd12a233000ced49bae27e73775da2d1ba9770024182f8f5b",
+    "arc_length_order8": {
+      "minimum": 0.021497687715788426,
+      "maximum": 0.07600155063602305,
+      "mean": 0.04012903750603844,
+      "median": 0.03972074569611961,
+      "p95": 0.0527195826782416
+    }
+  },
+  "predicted_after": {
+    "scope": "Signed analytic ellipsoid implicit/gradient height approximation; eight Gauss-Legendre samples per Catmull-Rom segment. Local UC P95 is a geometric envelope, not opaque coverage or pixel occlusion. Arc fractions are averaged per curve.",
+    "ellipsoid_half_axes": [
+      0.64,
+      0.43,
+      0.54
+    ],
+    "front_normal_dot_camera_threshold": 0.2,
+    "undercoat_positions_float32_sha256": "4e5a8ca64a71b3de5edd6b34d992a7a1d2c5366e1418077a72e4cd6c04c77a5e",
+    "undercoat_crown_height": {
+      "minimum": 6.149207764402605e-07,
+      "maximum": 0.007639386256346117,
+      "mean": 0.0049312078627536705,
+      "median": 0.004932339857042379,
+      "p95": 0.006428460622143609
+    },
+    "undercoat_global_crown_p95": 0.006428460622143609,
+    "coat_crown_height_all": {
+      "minimum": 0.0007087684721659679,
+      "maximum": 0.042325545519500934,
+      "mean": 0.014572805524161424,
+      "median": 0.013165960307003339,
+      "p95": 0.0260945562422434
+    },
+    "coat_crown_height_front": {
+      "minimum": 0.0009431180011979373,
+      "maximum": 0.04001409857553834,
+      "mean": 0.014584651586562712,
+      "median": 0.013162894775074145,
+      "p95": 0.026192200081627676
+    },
+    "coat_minimum_height": {
+      "minimum": -0.03527552197105356,
+      "maximum": 3.1611574404890836e-08,
+      "mean": -0.0030666040699201054,
+      "median": -2.3034828284813238e-05,
+      "p95": 1.3569766658472064e-08
+    },
+    "inside_surface_arc_fraction_mean": 0.08753870334333806,
+    "arc_fraction_below_minus_0_001_mean": 0.07354611852306063,
+    "curves_below_minus_0_001_fraction": 0.4451764705882353,
+    "front_mean_arc_fraction_above_undercoat_local_p95": 0.5515106106693008,
+    "front_crowns_below_undercoat_local_p95_fraction": 0.05868804913418067,
+    "evaluated_positions_float32_sha256": "ad5d675d87a3760fd12a233000ced49bae27e73775da2d1ba9770024182f8f5b",
+    "arc_length_order8": {
+      "minimum": 0.021497687715788426,
+      "maximum": 0.07600155063602305,
+      "mean": 0.04012903750603844,
+      "median": 0.03972074569611961,
+      "p95": 0.0527195826782416
+    }
+  },
+  "limitations": "Geometric analytic envelope only, no opacity/pixel coverage or silhouette measurement; shrinking UC also shrinks lateral spread and total arc. Coat intersections unchanged; backing could become visible."
+}

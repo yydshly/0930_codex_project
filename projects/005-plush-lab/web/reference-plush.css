@@ -1,0 +1,33 @@
+.reference-plush-page{background:#f7f6f2;color:#303b36}
+.reference-header{height:auto;min-height:82px;margin:0 4%;gap:20px;padding:17px 0}
+.reference-header .brand{font-size:24px;gap:9px;letter-spacing:-1px;white-space:nowrap}
+.reference-header .brand-mark{font-size:32px}
+.reference-header .brand small{font-size:11px;color:#7d887b;letter-spacing:0;font-weight:400;margin-left:4px}
+.reference-header nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap;justify-content:flex-end}
+.reference-header nav a,.reference-header nav button{font:inherit;font-size:12px;line-height:1.6;color:#627457;text-decoration:none;border:0;background:none;padding:4px 0}
+.reference-header nav a:hover,.reference-header nav button:hover{color:#304e38}
+.reference-main{display:block;max-width:1600px;margin:auto;padding:25px 4% 30px}
+.reference-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:28px;margin-bottom:20px}
+.reference-eyebrow{font-size:10px;letter-spacing:1.7px;color:#81917a;margin:0 0 9px}
+.reference-heading h1{font-size:30px;line-height:1.4;letter-spacing:-.7px;font-weight:500;margin:0}
+.reference-load-note{font-size:12px;line-height:1.8;color:#7d8975;margin:0;text-align:right}
+.reference-viewport{position:relative;width:100%;max-width:1100px;height:auto;min-height:540px;aspect-ratio:3/2;margin-inline:auto;background:#17191d;border:1px solid #323638;border-radius:16px;overflow:hidden}
+.reference-viewport iframe{display:block;border:0;width:100%;height:100%;background:#17191d}
+.reference-viewport:fullscreen{width:100vw;max-width:none;height:100vh;min-height:0;aspect-ratio:auto;border:0;border-radius:0}
+.reference-toolbar{display:flex;align-items:flex-start;justify-content:space-between;gap:28px;margin-top:17px}
+.reference-toolbar>p{font-size:12px;line-height:1.85;color:#6d7e62;margin:0;max-width:740px}
+.reference-toolbar>p span{display:block;font-size:11px;color:#89947f;margin-top:3px}
+.reference-actions{display:flex;flex-wrap:wrap;gap:8px;flex-shrink:0}
+.reference-actions button,.reference-actions a{font:inherit;font-size:12px;line-height:1.5;padding:9px 13px;min-height:38px;color:#59704e;background:#eef2e7;border:1px solid #d4decb;border-radius:8px;text-decoration:none;white-space:nowrap}
+.reference-actions button:hover,.reference-actions a:hover{background:#e5eddb}
+.reference-actions button:disabled{opacity:.45;cursor:default}
+.reference-status{margin:9px 0 0;font-size:11px;line-height:1.8;color:#849279;min-height:20px}
+.reference-credit{display:flex;align-items:flex-start;justify-content:space-between;gap:30px;margin-top:24px;padding-top:21px;border-top:1px solid #dde3d6}
+.reference-credit h2{font-size:17px;line-height:1.5;font-weight:500;margin:0 0 7px;letter-spacing:-.25px}
+.reference-credit p{font-size:12px;line-height:1.8;color:#7d8976;margin:0}
+.reference-credit a{color:#527144;text-underline-offset:3px}
+.reference-credit>p{max-width:540px;text-align:right}
+.reference-footer{margin:0 4%;padding:17px 0 23px;letter-spacing:.7px;gap:16px;font-size:9px}
+.reference-footer a{font-size:11px;color:#738766;letter-spacing:0;text-decoration:none}
+@media(max-width:1050px){.reference-toolbar{display:block}.reference-actions{margin-top:14px}.reference-credit>p{max-width:400px}}
+@media(max-width:700px){.reference-header{align-items:flex-start;flex-direction:column;gap:13px;padding:16px 0}.reference-header .brand{font-size:22px}.reference-header nav{justify-content:flex-start;gap:12px 18px}.reference-main{padding:23px 4%}.reference-heading{display:block;margin-bottom:17px}.reference-heading h1{font-size:27px}.reference-load-note{text-align:left;margin-top:10px;font-size:11px}.reference-viewport{max-width:none;height:clamp(470px,66vh,730px);min-height:0;aspect-ratio:auto;border-radius:12px}.reference-toolbar{margin-top:15px}.reference-toolbar>p{font-size:12px}.reference-actions{gap:7px}.reference-actions button,.reference-actions a{padding:9px 11px}.reference-credit{display:block;margin-top:20px}.reference-credit>p{max-width:none;text-align:left;margin-top:14px}.reference-footer{align-items:flex-start;justify-content:space-between;flex-wrap:wrap;letter-spacing:0;font-size:8px}}

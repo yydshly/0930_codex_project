@@ -1,0 +1,38 @@
+{
+  "scope": "Retained source of actual prior CPU read-only stage measurement; no remeasurement and no render/save performed during preservation.",
+  "measurement_tool_session": 61831,
+  "measurement_script_original": "C:/Users/yun68/AppData/Local/Temp/plush_gn4_stage_readonly.py",
+  "measurement_script_sha256_at_transcription": "ef2d2fc1dcda97fb323436ac1be4fbf8b1d2710772d7c7140b57f9711a469a77",
+  "measurement_script_sha256_current": "ef2d2fc1dcda97fb323436ac1be4fbf8b1d2710772d7c7140b57f9711a469a77",
+  "retained_stage_source": "swatch-reference-gn-restore-off-live-5.stage-source.py",
+  "retained_stage_source_sha256": "ef2d2fc1dcda97fb323436ac1be4fbf8b1d2710772d7c7140b57f9711a469a77",
+  "stage_diagnostic": "swatch-reference-gn-restore-off-live-5.stage-diagnostic.json",
+  "stage_diagnostic_sha256": "0c03e12fd9ca873476ca621e9d5475b8eede44839b0e04556402379f9fa57eb5",
+  "diagnostic_values_origin": "Transcribed from actual prior functions.write_stdin session 61831 stdout; not a new measurement or raw output capture. Measurement Temp source hash recorded then equals retained source hash.",
+  "input_blend": "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-undercoat-short-live-4.blend",
+  "input_blend_sha256": "99bf6bfaa080723b699d0a2a5db73c145ded5d30d7a799a60609276b4bb66295",
+  "input_blend_hash_matches_transcribed_diagnostic": true,
+  "geometry_helper_source": "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-nearest-render-3.gn-source.py",
+  "geometry_helper_sha256": "be7730c0ddba22109ebc31dd44e8660672df7fd2cb8d361093688ce9fcc2c927",
+  "method": {
+    "ellipsoid_half_axes": [
+      0.64,
+      0.43,
+      0.54
+    ],
+    "height": "(sum((p/axes)^2)-1)/(2*norm(p/axes^2))",
+    "curve_samples": "Eight Gauss-Legendre samples on every uniform Catmull-Rom segment, duplicated endpoint controls; curve crown=max sampled height",
+    "bypass": "Temporarily connect outer Group Output Geometry to each official group's geometry output. Joined output coat first85000 then2657 guides; take first85000 for coat. Restore original output link at end.",
+    "normal_profile": "At 12 saved controls, dot(point-root, normalized(root/axes^2)); summarized median per control",
+    "root_tangent": "normalized(control1-control0) dot normalized(root/axes^2)"
+  },
+  "original_stdout_on_disk": false,
+  "original_stdout_location": "Original functions.write_stdin result for session 61831 in task transcript; no raw file was written by that measurement script.",
+  "original_tool_exit_code": 0,
+  "input_sha_unchanged_in_original_measurement_stdout": true,
+  "original_graph_restored_in_memory": true,
+  "no_blend_saved_by_measurement": true,
+  "no_render": true,
+  "reproduced_run_command": "blender -b --factory-startup --disable-autoexec --python-exit-code 1 --python artifacts/cycles-study/swatch-reference-gn-restore-off-live-5.stage-source.py (run from project root; prints raw native/evaluated stage data; no save/render)",
+  "limitations": "First-order signed analytic ellipsoid height, not strict closest projection or pixel occlusion. Stage sampling includes native joined guides; final root lock is separately verified in GN5. This diagnosis does not promise thick reference curls."
+}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f6f4ee"><title>Plush Splat · 高斯毛绒展台</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="splat.css"><link rel="stylesheet" href="plush-reference.css"></head>
+<body class="splat-page">
+<header><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">✳</span> plush lab <small>/ splat</small></a><nav aria-label="工作室导航"><a href="index.html">绒毛创作</a><a href="world.html">小世界</a><a href="studio.html">陪伴工作室</a><button type="button" id="splat-original-open">蓝绒星仔</button><button type="button" id="project-journal-open" aria-haspopup="dialog" aria-controls="project-journal">项目记录 ↗</button><a href="project.html">项目全景 ↗</a></nav></header>
+<main>
+  <section class="splat-stage night" aria-label="毛绒展示台">
+    <div class="plush-native-stage">
+    <div class="splat-intro"><span class="eyebrow">A NEW WAY TO SEE SOFTNESS</span><h1 id="splat-title">把柔软，<span>变成一颗小星星。</span></h1><p>转一转，走近一点。用高斯毛簇，试一种新的毛绒表达。</p></div>
+    <canvas id="splat-canvas" tabindex="0" aria-label="拖动环绕观察，滚轮或双指缩放；点击角色轻轻弹跳；方向键旋转，加减键缩放，空格弹跳。"></canvas>
+    <p id="splat-error" class="splat-error" role="alert" hidden></p>
+    <div class="splat-caption"><span id="splat-source" class="splat-pill">程序生成 · 3D 高斯</span><h2 id="splat-name">蓝莓星仔</h2><p id="splat-stats">正在准备毛绒…</p></div>
+    <div class="splat-stage-actions"><button id="splat-front" type="button">回到正面</button><button id="splat-spin" type="button" aria-pressed="false">转台观察</button><button id="splat-bounce" type="button">弹一下</button><button id="splat-png" type="button">留下照片 ↗</button></div>
+    <p class="splat-feedback" id="splat-feedback" role="status" aria-live="polite">正在生成第一位毛绒伙伴。</p>
+    </div>
+  </section>
+  <aside class="splat-creator" aria-label="高斯毛绒搭配">
+    <div class="splat-panel-heading"><span class="eyebrow">CREATE / LOOK / UNDERSTAND</span><h2>换一种柔软。</h2><p>这是一座新增展台，你以前的作品都还在。</p></div>
+    <div class="plush-native-controls">
+    <button id="splat-reference" type="button">程序生成 · 蓝色卷绒星仔</button>
+    <form id="splat-form">
+      <fieldset><legend>一个圆润的轮廓</legend><div class="splat-shapes"><label><input type="radio" name="shape" value="star" checked><span>✦ 星仔</span></label><label><input type="radio" name="shape" value="cloud"><span>☁ 云团</span></label><label><input type="radio" name="shape" value="orb"><span>● 团子</span></label></div></fieldset>
+      <fieldset><legend>今天的毛色</legend><div class="splat-palettes" role="group" aria-label="毛色预设"><button type="button" data-color="#8bacee" style="--swatch:#8bacee" aria-label="参考蓝" aria-pressed="true"></button><button type="button" data-color="#9bb8ed" style="--swatch:#9bb8ed" aria-label="蓝莓蓝" aria-pressed="false"></button><button type="button" data-color="#d6b7d9" style="--swatch:#d6b7d9" aria-label="丁香紫" aria-pressed="false"></button><button type="button" data-color="#ebc878" style="--swatch:#ebc878" aria-label="奶油黄" aria-pressed="false"></button><button type="button" data-color="#b5ceab" style="--swatch:#b5ceab" aria-label="抹茶绿" aria-pressed="false"></button><label class="splat-custom-color" for="splat-color">自由调色<input id="splat-color" type="color" value="#8bacee"></label></div></fieldset>
+      <label class="splat-field" for="splat-softness"><span>毛簇蓬松度 <output id="splat-softness-value" for="splat-softness">55%</output></span><input id="splat-softness" type="range" min="15" max="85" value="55" step="1"></label>
+      <label class="splat-check"><input id="splat-hat" type="checkbox" checked>戴一顶小贝雷帽</label>
+      <label class="splat-field" for="splat-quality">毛簇精细度<select id="splat-quality"><option value="18000">轻量 · 18,000 个高斯</option><option value="32000">均衡 · 32,000 个高斯</option><option value="50000">精细 · 50,000 个高斯</option><option value="80000" selected>特写 · 80,000 个高斯</option></select></label>
+      <button id="splat-closeup" type="button" aria-pressed="false">靠近看毛绒</button>
+      <label class="splat-field" for="splat-seed">灵感种子<input id="splat-seed" maxlength="40" autocomplete="off" value="soft-star-2026" required></label>
+      <div class="splat-create-actions"><button class="primary" type="submit">按种子生成</button><button id="splat-random" type="button">遇见新搭配 ⚄</button></div>
+      <p class="splat-help">同一组种子与参数会重现同一角色。滑块、毛色与帽饰直接更新。</p>
+    </form>
+    <div class="splat-save-actions"><button id="splat-save" type="button">记住这组搭配</button><button id="splat-share" type="button">复制搭配链接</button></div><p id="splat-save-status" class="splat-help" role="status">搭配使用独立存储；导入资产仅在此页暂存。</p><input id="splat-share-fallback" class="splat-link" aria-label="搭配链接，可手动复制" readonly hidden>
+    <details class="splat-import"><summary>带入自己的高斯资产</summary><p>选择未压缩的 3DGS PLY 文件，在这座展台环绕观察。</p><label for="splat-file">导入 PLY<input id="splat-file" type="file" accept=".ply"></label><p class="splat-help">支持 ASCII / 二进制小端、最多 12 万个高斯和 32 MiB。当前读取常数颜色；高阶球谐、压缩 PLY 和普通点云暂不支持。</p><button id="splat-example" type="button">回到生成的毛绒</button></details>
+    <div class="splat-export-actions"><button id="splat-ply" type="button">导出高斯 PLY ↗</button><a href="https://superspl.at/editor" target="_blank" rel="noopener noreferrer">用 SuperSplat 编辑 ↗</a></div><p class="splat-help">文件只在本机读取。导出后可自行在其他高斯工具中打开。</p>
+    <details class="splat-learning" open><summary>它为什么看起来毛茸茸？</summary><p>许多有方向、有尺度的三维高斯组成不规则毛团，毛团内的细绒叠出明暗起伏。观察角度改变时，椭圆投影也会改变；细绒按远近叠加，形成柔软的轮廓。</p><label class="splat-check"><input id="splat-structure" type="checkbox">看高斯结构</label><label class="splat-check"><input id="splat-night" type="checkbox" checked>深灰背景</label><p>此处先用程序生成高斯资产。论文还包含从多视角照片优化位置、尺度、颜色和数量的训练过程。</p><a href="#" id="splat-research-open">阅读论文理解与实现范围 ↗</a></details>
+    </div>
+  </aside>
+</main>
+<footer>PLUSH SPLAT / SOFTNESS, FROM ANOTHER ANGLE <span id="splat-native-footer">生成 · 观察 · 理解 · 保留</span></footer>
+<dialog id="project-journal" aria-labelledby="journal-heading" aria-describedby="journal-intro">
+<div class="journal-header"><div><span class="journal-eyebrow">PLUSH LAB / PROJECT JOURNAL</span><h2 id="journal-heading">项目记录</h2><p id="journal-intro">把做过的改动、背后的原理和下一步，慢慢留下。</p></div><button type="button" id="journal-close" aria-label="关闭项目记录">×</button></div>
+<div class="journal-toolbar"><label for="journal-query">搜索记录<input type="search" id="journal-query" maxlength="200" placeholder="标题、正文、原理、参考名称"></label><label for="journal-source">记录来源<select id="journal-source"><option value="all">全部记录</option><option value="builtin">项目内置</option><option value="custom">我的补充</option></select></label><button type="button" id="journal-clear-filters" hidden>清空筛选</button></div><p id="journal-filter-status" class="journal-filter-status" role="status" aria-live="polite"></p>
+<div class="journal-tabs" role="tablist" aria-label="项目记录分类">
+<button type="button" role="tab" id="journal-tab-progress" aria-selected="true" aria-controls="journal-panel-progress" data-journal-category="progress">项目进展 <span class="journal-count">0</span></button>
+<button type="button" role="tab" id="journal-tab-changes" aria-selected="false" aria-controls="journal-panel-changes" data-journal-category="changes" tabindex="-1">修改记录 <span class="journal-count">0</span></button>
+<button type="button" role="tab" id="journal-tab-principles" aria-selected="false" aria-controls="journal-panel-principles" data-journal-category="principles" tabindex="-1">实现原理 <span class="journal-count">0</span></button>
+<button type="button" role="tab" id="journal-tab-roadmap" aria-selected="false" aria-controls="journal-panel-roadmap" data-journal-category="roadmap" tabindex="-1">未来方向 <span class="journal-count">0</span></button>
+</div>
+<div class="journal-reading" id="journal-reading"><p id="journal-overview" class="journal-overview"></p><p class="journal-scope">内置记录随项目更新；你的补充仅保存在此浏览器。计划中的内容会单独标注。</p>
+<section role="tabpanel" id="journal-panel-progress" aria-labelledby="journal-tab-progress" tabindex="0"></section>
+<section role="tabpanel" id="journal-panel-changes" aria-labelledby="journal-tab-changes" tabindex="0" hidden></section>
+<section role="tabpanel" id="journal-panel-principles" aria-labelledby="journal-tab-principles" tabindex="0" hidden></section>
+<section role="tabpanel" id="journal-panel-roadmap" aria-labelledby="journal-tab-roadmap" tabindex="0" hidden></section>
+<details id="journal-compose" class="journal-compose"><summary id="journal-compose-label">补充记录</summary><form id="journal-form"><label for="journal-category">记录分类<select id="journal-category" name="category"><option value="progress">项目进展</option><option value="changes">修改记录</option><option value="principles">实现原理</option><option value="roadmap">未来方向</option></select></label><label for="journal-title">记录标题<input id="journal-title" name="title" maxlength="100" required placeholder="例如：局部修剪的下一步优化"></label><label for="journal-body">记录正文<textarea id="journal-body" name="body" rows="5" maxlength="4000" required placeholder="记录改了什么、为什么这样做、如何验证，或下一步要尝试什么。"></textarea></label><p class="journal-form-help">标题最多 100 字，正文最多 4000 字。保存后的补充可继续编辑。</p><div class="journal-form-actions"><button type="submit" id="journal-save">保存补充</button><button type="button" id="journal-cancel-edit" hidden>结束编辑</button></div></form></details>
+<details id="journal-export-preview" class="journal-compose" hidden><summary>查看导出正文</summary><label for="journal-export-text">Markdown 正文，可复制留存</label><textarea id="journal-export-text" rows="8" readonly></textarea></details>
+<details id="journal-transfer-tools" class="journal-compose"><summary tabindex="0">备份与导入 · JSON</summary><p class="journal-form-help">JSON 备份只包含已保存的「我的补充」。项目内置记录随工程提供；当前未保存的输入不会进入备份。</p><button type="button" id="journal-backup-export" class="journal-transfer-button">生成 JSON 备份</button><a id="journal-backup-download" class="journal-transfer-button" hidden>下载 JSON</a><details id="journal-backup-preview" hidden><summary>查看 JSON 备份正文</summary><label for="journal-backup-output">JSON 备份正文，可复制留存<textarea id="journal-backup-output" rows="6" readonly></textarea></label></details><div class="journal-import-box"><label for="journal-import-file">选择 JSON 备份文件<input type="file" id="journal-import-file" accept=".json,application/json"></label><label for="journal-import-input">或粘贴 JSON 备份<textarea id="journal-import-input" rows="5" maxlength="2097152" placeholder="粘贴完整 JSON，点击检查备份。"></textarea></label><p class="journal-form-help">新记录追加到本机；重复跳过，冲突保留本机内容。格式错误或合并超出容量时，整份备份都不会写入。</p><div class="journal-form-actions"><button type="button" id="journal-import-inspect">检查备份</button><button type="button" id="journal-import-apply" disabled>追加导入</button></div><p id="journal-import-summary" class="journal-form-help" role="status" aria-live="polite">先检查备份，再追加导入；已有记录会保留。</p></div></details>
+</div><div class="journal-footer"><div class="journal-export-actions"><button type="button" id="journal-add">补充记录 +</button><button type="button" id="journal-export">导出全部记录 ↗</button><button type="button" id="journal-transfer">备份 / 导入</button><a id="journal-download" hidden>下载 Markdown</a></div><p id="journal-status" role="status" aria-live="polite">补充记录保存在此浏览器，可导出留存。</p></div>
+</dialog>
+<script type="module" src="splat.js?v=20261003-native-reference-1"></script>
+</body></html>

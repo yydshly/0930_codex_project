@@ -1,0 +1,1360 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "immutable independent GN13 helper retains exact bytes",
+      "passed": true,
+      "details": {
+        "path": "tooling\\blender\\validate_guide_azimuth_assets.py",
+        "actual_sha256": "161fc89578434cec56929af6742009ac3de776d5333566154a3ffc0066aab84a",
+        "expected_sha256": "161fc89578434cec56929af6742009ac3de776d5333566154a3ffc0066aab84a"
+      }
+    },
+    {
+      "check": "immutable GN13 independent report retains exact bytes",
+      "passed": true,
+      "details": {
+        "path": "artifacts\\cycles-study\\hair-guide-azimuth-validation-v13.json",
+        "actual_sha256": "40d1857c15ee0ab369925957256d64e0368b13b34c777fda48d2b538b3f62f62",
+        "expected_sha256": "40d1857c15ee0ab369925957256d64e0368b13b34c777fda48d2b538b3f62f62"
+      }
+    },
+    {
+      "check": "all 75 pinned previous inputs retain exact historical SHA",
+      "passed": true,
+      "details": {
+        "mismatches": []
+      }
+    },
+    {
+      "check": "frozen actual GN11 baseline bytes",
+      "passed": true,
+      "details": {
+        "path": "artifacts\\cycles-study\\swatch-reference-gn-clump-profile-live7-11.blend",
+        "actual_sha256": "487e857487a6489bfb09371575d29ee6f793af460976ba1af593569f1382c26d",
+        "expected_sha256": "487e857487a6489bfb09371575d29ee6f793af460976ba1af593569f1382c26d"
+      }
+    },
+    {
+      "check": "actual final GN14 source retains independently supplied frozen bytes",
+      "passed": true,
+      "details": {
+        "path": "tooling\\blender\\plush_bundle_scale_study.py",
+        "actual_sha256": "fd49cc328e6a43f8af93c3f2cf85f9d3eed479e2bad983d32ee20b36bc49d137",
+        "expected_sha256": "fd49cc328e6a43f8af93c3f2cf85f9d3eed479e2bad983d32ee20b36bc49d137"
+      }
+    },
+    {
+      "check": "control actually has2657 guides85000coat90000undercoat and12-control coat/guides",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-wide-live-14: authoring source snapshot equals independently frozen current source",
+      "passed": true,
+      "details": {
+        "path": "artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-wide-live-14.source.py",
+        "actual_sha256": "fd49cc328e6a43f8af93c3f2cf85f9d3eed479e2bad983d32ee20b36bc49d137",
+        "expected_sha256": "fd49cc328e6a43f8af93c3f2cf85f9d3eed479e2bad983d32ee20b36bc49d137"
+      }
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-wide-live-14: actual provenance references GN11 base and correct saved control; pass flags not used",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-wide-live-14: real separate completed rendering agrees with CPU precheck and metadata",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-wide-live-14: actual rendered blend bytes match receipt",
+      "passed": true,
+      "details": {
+        "path": "artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-wide-live-14.blend",
+        "actual_sha256": "8fe46017a7d34f924dc400693a431fd1182aeb8444bed7bb5105c24a9b28281b",
+        "expected_sha256": "8fe46017a7d34f924dc400693a431fd1182aeb8444bed7bb5105c24a9b28281b"
+      }
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-wide-live-14: actual PNG bytes match receipt",
+      "passed": true,
+      "details": {
+        "path": "artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-wide-live-14.png",
+        "actual_sha256": "9c3c062162c7e9b134747bf560a35f2899395b51774a626d6dea1302e90c2167",
+        "expected_sha256": "9c3c062162c7e9b134747bf560a35f2899395b51774a626d6dea1302e90c2167"
+      }
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-wide-live-14: render receipt references exactly the frozen authoring source snapshot",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-wide-live-14: actual rendered PNG decodes at 768 square with finite nonconstant pixels",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-wide-live-14: saved actual blend hash matches authoring descriptor",
+      "passed": true,
+      "details": {
+        "path": "artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-wide-live-14.blend",
+        "actual_sha256": "8fe46017a7d34f924dc400693a431fd1182aeb8444bed7bb5105c24a9b28281b",
+        "expected_sha256": "8fe46017a7d34f924dc400693a431fd1182aeb8444bed7bb5105c24a9b28281b"
+      }
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-wide-live-14: camera/material/light/world/render/backing/mesh/typed GN11 graph/profile/visibility all fixed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-wide-live-14: native curve object set and object transforms/visibility remain fixed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-wide-live-14: all undercoat and hidden flyaway native/evaluated data and attributes remain exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-wide-live-14: native coat85000 coordinates/root/radii/rest/IDs/topology fixed except two authorized mapping fields",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-wide-live-14: actual final child count/topology/root/materials remain exact despite remapping",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-wide-live-14: all10628 native guide roots/12controls exactly equal independent FPS+transport+declared lateral width formula",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-wide-live-14: actual native guide radii/rest/root_radius follow transported parent contract and fixed original2657 prefix",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-wide-live-14: actual INT/CURVE guide IDs, BOOLEAN guide mask and both coat mapping fields address appended live range85000..95627",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-wide-live-14: actual final85000coat roots/root radii remain strictly bitwise GN11; finite positions/radii and12controls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-wide-live-14: evaluated guide exactly matches native authored controls/radii",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-wide-live-14: actual saved disk reload reproduces graph/scene/native/evaluated arrays and visibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-half-live-14: authoring source snapshot equals independently frozen current source",
+      "passed": true,
+      "details": {
+        "path": "artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-half-live-14.source.py",
+        "actual_sha256": "fd49cc328e6a43f8af93c3f2cf85f9d3eed479e2bad983d32ee20b36bc49d137",
+        "expected_sha256": "fd49cc328e6a43f8af93c3f2cf85f9d3eed479e2bad983d32ee20b36bc49d137"
+      }
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-half-live-14: actual provenance references GN11 base and correct saved control; pass flags not used",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-half-live-14: real separate completed rendering agrees with CPU precheck and metadata",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-half-live-14: actual rendered blend bytes match receipt",
+      "passed": true,
+      "details": {
+        "path": "artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-half-live-14.blend",
+        "actual_sha256": "62223943752472c6be9bfa92d1f65de557723d7bcddb1d5df33fc819129effed",
+        "expected_sha256": "62223943752472c6be9bfa92d1f65de557723d7bcddb1d5df33fc819129effed"
+      }
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-half-live-14: actual PNG bytes match receipt",
+      "passed": true,
+      "details": {
+        "path": "artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-half-live-14.png",
+        "actual_sha256": "c43a0cee50a3ab40704105fe98064c2696111966787636e8ab87751057dc5c5b",
+        "expected_sha256": "c43a0cee50a3ab40704105fe98064c2696111966787636e8ab87751057dc5c5b"
+      }
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-half-live-14: render receipt references exactly the frozen authoring source snapshot",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-half-live-14: actual rendered PNG decodes at 768 square with finite nonconstant pixels",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-half-live-14: saved actual blend hash matches authoring descriptor",
+      "passed": true,
+      "details": {
+        "path": "artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-half-live-14.blend",
+        "actual_sha256": "62223943752472c6be9bfa92d1f65de557723d7bcddb1d5df33fc819129effed",
+        "expected_sha256": "62223943752472c6be9bfa92d1f65de557723d7bcddb1d5df33fc819129effed"
+      }
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-half-live-14: camera/material/light/world/render/backing/mesh/typed GN11 graph/profile/visibility all fixed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-half-live-14: native curve object set and object transforms/visibility remain fixed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-half-live-14: all undercoat and hidden flyaway native/evaluated data and attributes remain exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-half-live-14: native coat85000 coordinates/root/radii/rest/IDs/topology fixed except two authorized mapping fields",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-half-live-14: actual final child count/topology/root/materials remain exact despite remapping",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-half-live-14: all10628 native guide roots/12controls exactly equal independent FPS+transport+declared lateral width formula",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-half-live-14: actual native guide radii/rest/root_radius follow transported parent contract and fixed original2657 prefix",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-half-live-14: actual INT/CURVE guide IDs, BOOLEAN guide mask and both coat mapping fields address appended live range85000..95627",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-half-live-14: actual final85000coat roots/root radii remain strictly bitwise GN11; finite positions/radii and12controls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-half-live-14: evaluated guide exactly matches native authored controls/radii",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-gn-bundle-scale-half-live-14: actual saved disk reload reproduces graph/scene/native/evaluated arrays and visibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "A/B pair differs only guide native/evaluated position and downstream coat position/derived nonroot radius",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "half-width authored guide change actually reaches finalcoat geometry",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\validate_guide_density_width_assets.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "8ff9d349f2cefc02ef9d756368c7afd782c0e5dd516549e64a9f716af50598c5",
+        "sha256_after": "8ff9d349f2cefc02ef9d756368c7afd782c0e5dd516549e64a9f716af50598c5"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\validate_guide_azimuth_assets.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "161fc89578434cec56929af6742009ac3de776d5333566154a3ffc0066aab84a",
+        "sha256_after": "161fc89578434cec56929af6742009ac3de776d5333566154a3ffc0066aab84a"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\hair-guide-azimuth-validation-v13.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "40d1857c15ee0ab369925957256d64e0368b13b34c777fda48d2b538b3f62f62",
+        "sha256_after": "40d1857c15ee0ab369925957256d64e0368b13b34c777fda48d2b538b3f62f62"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\validate_curl_phase_scope_assets.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "c4f374f757ee8417bc6eb57475b1fbe4ef7214319c354bfd674e6a8d1e4a48a6",
+        "sha256_after": "c4f374f757ee8417bc6eb57475b1fbe4ef7214319c354bfd674e6a8d1e4a48a6"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\hair-curl-phase-scope-validation-v12-r2.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "cd624cc4750d79d34f4424ed53ab9c8deecc748b173b320456b1cdbcb0636208",
+        "sha256_after": "cd624cc4750d79d34f4424ed53ab9c8deecc748b173b320456b1cdbcb0636208"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\hair-curl-phase-scope-validation-v12.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "9e1d828db4d52f2ad07c830c29f1de545cf029b6f335eeebb0ac68c6646b869a",
+        "sha256_after": "9e1d828db4d52f2ad07c830c29f1de545cf029b6f335eeebb0ac68c6646b869a"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\gn12-independent-validator-first-failed.source.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "0104aae6f18f1a185c3e74c2ee214f55b725366d1bfacca54be2e281368bdba3",
+        "sha256_after": "0104aae6f18f1a185c3e74c2ee214f55b725366d1bfacca54be2e281368bdba3"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\validate_clump_profile_assets.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "0c4eeb0913b6a75bf8a6db55570ca8025d52847798055d66dc05e414a7d0e62e",
+        "sha256_after": "0c4eeb0913b6a75bf8a6db55570ca8025d52847798055d66dc05e414a7d0e62e"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\hair-clump-profile-validation-v11.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "9b2f6380da8bf33f4b020b8932e993410483fbb5871078b651f7ce94d8baf14d",
+        "sha256_after": "9b2f6380da8bf33f4b020b8932e993410483fbb5871078b651f7ce94d8baf14d"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\validate_compact_coil_assets.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "06b9733671fa4e4c210faac17f46cf4f08d7197a8071ad2e41a5d49fb52f1e9c",
+        "sha256_after": "06b9733671fa4e4c210faac17f46cf4f08d7197a8071ad2e41a5d49fb52f1e9c"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\hair-compact-coil-validation-v10.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "a19cf24a15bf4aeb5362d75d8f886addf6402938782183f4c7c0d485b9cb5bc3",
+        "sha256_after": "a19cf24a15bf4aeb5362d75d8f886addf6402938782183f4c7c0d485b9cb5bc3"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\plush_compact_coil_study.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "b72713f128b68ad2b344216f22c34e3046a61e8f1933ed1909fb49d4cd74f5c8",
+        "sha256_after": "b72713f128b68ad2b344216f22c34e3046a61e8f1933ed1909fb49d4cd74f5c8"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\validate_hierarchical_groom_assets.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "2377eaa70f718b2eece72666ac71bd5996c43f77eeca2a416b741ebf24638519",
+        "sha256_after": "2377eaa70f718b2eece72666ac71bd5996c43f77eeca2a416b741ebf24638519"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\hair-hierarchy-validation-v9-r2.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "6a384cd5d7725f75ef368f361b2792bb0686d25b24cc7735bd5d589816b44386",
+        "sha256_after": "6a384cd5d7725f75ef368f361b2792bb0686d25b24cc7735bd5d589816b44386"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\validate_layer_isolation_assets.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "426416d965c7a129cc28c062a96ae4562fc5f19041a518715157025b796e869b",
+        "sha256_after": "426416d965c7a129cc28c062a96ae4562fc5f19041a518715157025b796e869b"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\validate_spatial_guide_assets.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "cac3562c116b0e1f1456cf977dc0cdc74ff6c1f1e9d81401f136fe84f4fce3ad",
+        "sha256_after": "cac3562c116b0e1f1456cf977dc0cdc74ff6c1f1e9d81401f136fe84f4fce3ad"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\validate_bundle_volume_assets.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "8c27ca19b48bf5d74be01300f3a11453d90b1245a24fa841d42b2b8eb38bf4ee",
+        "sha256_after": "8c27ca19b48bf5d74be01300f3a11453d90b1245a24fa841d42b2b8eb38bf4ee"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\validate_restore_factor_assets.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "cfae4cab5884faf24b86d47e1a71bd6bad2730ba0115d458c80dc4a95b9b87cf",
+        "sha256_after": "cfae4cab5884faf24b86d47e1a71bd6bad2730ba0115d458c80dc4a95b9b87cf"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\validate_hair_nodes_assets.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "6399a952b2e0568ba0a63ed9d17a71ef90e300b4a990c7581de3dfe948e374ce",
+        "sha256_after": "6399a952b2e0568ba0a63ed9d17a71ef90e300b4a990c7581de3dfe948e374ce"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-no-flyaway-8.blend",
+      "passed": true,
+      "details": {
+        "sha256_before": "3f6723cdb5e7358991357c8898bc13b09a851b3055d7a545e72f6206ebdc22a3",
+        "sha256_after": "3f6723cdb5e7358991357c8898bc13b09a851b3055d7a545e72f6206ebdc22a3"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-no-flyaway-8.gn-report.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "a9ed003ce2aba80eb4d9c9331363baa6f9c1412aaa95e0cfa28c6d9ec0adcd4f",
+        "sha256_after": "a9ed003ce2aba80eb4d9c9331363baa6f9c1412aaa95e0cfa28c6d9ec0adcd4f"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-no-flyaway-8.source.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "0c8c14cc9d13c9d436f00f5b2c0d14b3b8acc800a3ffc007325d22aa4fad3dd0",
+        "sha256_after": "0c8c14cc9d13c9d436f00f5b2c0d14b3b8acc800a3ffc007325d22aa4fad3dd0"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-crown-008-live-7.gn-report.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "108a6de875a8a314851ed976f89d3ba1609cfe93a5f95d0bc1279bae0b5b9ace",
+        "sha256_after": "108a6de875a8a314851ed976f89d3ba1609cfe93a5f95d0bc1279bae0b5b9ace"
+      }
+    },
+    {
+      "check": "read-only input preserved: D:\\codex\\home\\cache\\plush-lab-tools\\blender\\blender-5.2.2-windows-x64\\5.2\\datafiles\\assets\\nodes\\procedural_hair_node_assets.blend",
+      "passed": true,
+      "details": {
+        "sha256_before": "b69d8bd8975b9db7f89693f8f19dd7fcb241f5a3786d2edfb0a243e91c1109bb",
+        "sha256_after": "b69d8bd8975b9db7f89693f8f19dd7fcb241f5a3786d2edfb0a243e91c1109bb"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-clumped-live3-10.gn-report.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "83f801b88ce5f6f94dca6fd87dee6bd4528a4a587374b9390b4f53c98d071eee",
+        "sha256_after": "83f801b88ce5f6f94dca6fd87dee6bd4528a4a587374b9390b4f53c98d071eee"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-clumped-live3-10.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "1cea0da47653315e7998fdb76665278276833b90201aff07e56df0b4d81edb39",
+        "sha256_after": "1cea0da47653315e7998fdb76665278276833b90201aff07e56df0b4d81edb39"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-clumped-live3-10.source.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "b72713f128b68ad2b344216f22c34e3046a61e8f1933ed1909fb49d4cd74f5c8",
+        "sha256_after": "b72713f128b68ad2b344216f22c34e3046a61e8f1933ed1909fb49d4cd74f5c8"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-undercoat-short-live-4.source.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "5b1d9049cec289828a6e354ce334d37873fa8343c4f5a0aa848315732125609c",
+        "sha256_after": "5b1d9049cec289828a6e354ce334d37873fa8343c4f5a0aa848315732125609c"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-nearest-render-3.gn-source.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "be7730c0ddba22109ebc31dd44e8660672df7fd2cb8d361093688ce9fcc2c927",
+        "sha256_after": "be7730c0ddba22109ebc31dd44e8660672df7fd2cb8d361093688ce9fcc2c927"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-clumped-live3-10.render.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "79947b448d3cc65cd21bcc5cbd808f3312defe34406e948fbaf1aa25251c6a29",
+        "sha256_after": "79947b448d3cc65cd21bcc5cbd808f3312defe34406e948fbaf1aa25251c6a29"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-clumped-live3-10.blend",
+      "passed": true,
+      "details": {
+        "sha256_before": "b01f575e01a1fe6e94f07eceadfe6442dc20b1ef5105b22a18cb565a2bdcb878",
+        "sha256_after": "b01f575e01a1fe6e94f07eceadfe6442dc20b1ef5105b22a18cb565a2bdcb878"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-clumped-live3-10.png",
+      "passed": true,
+      "details": {
+        "sha256_before": "d8fe1b9c06695bd938c1e9e7ad02a93af807040c1146e3bfff08614fd2fa3193",
+        "sha256_after": "d8fe1b9c06695bd938c1e9e7ad02a93af807040c1146e3bfff08614fd2fa3193"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-clumped-live3-10.precheck.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "3ede8636b9ed651bd373b1f5d1abd5ae08a73edd7ed5d6c2e903efcd9db3e92a",
+        "sha256_after": "3ede8636b9ed651bd373b1f5d1abd5ae08a73edd7ed5d6c2e903efcd9db3e92a"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-clumped-live3-10.render.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "0fa9b77f28b6f67e2f4dc33fac0dd9067c7c02a387a0561dc3da65f7ff4e5efb",
+        "sha256_after": "0fa9b77f28b6f67e2f4dc33fac0dd9067c7c02a387a0561dc3da65f7ff4e5efb"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-unclumped-live3-10.gn-report.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "41c9e22edbdb6c78344c455f81cda729489812bae59b5ef09f5a7fa862615d2d",
+        "sha256_after": "41c9e22edbdb6c78344c455f81cda729489812bae59b5ef09f5a7fa862615d2d"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-unclumped-live3-10.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "a12c972809d2465329524044ab8669dce882c0787e12bd7c622bdec2f9881e23",
+        "sha256_after": "a12c972809d2465329524044ab8669dce882c0787e12bd7c622bdec2f9881e23"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-unclumped-live3-10.source.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "b72713f128b68ad2b344216f22c34e3046a61e8f1933ed1909fb49d4cd74f5c8",
+        "sha256_after": "b72713f128b68ad2b344216f22c34e3046a61e8f1933ed1909fb49d4cd74f5c8"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-unclumped-live3-10.render.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "4b85bce70bd5eb6dbad25024d6c14b985a495b215906502e8c9c29610dbc0d3a",
+        "sha256_after": "4b85bce70bd5eb6dbad25024d6c14b985a495b215906502e8c9c29610dbc0d3a"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-unclumped-live3-10.blend",
+      "passed": true,
+      "details": {
+        "sha256_before": "a6251dcdbaab1bb225bb2334138f95a9094da9aadc567ffe55ca3b99f1ec7b49",
+        "sha256_after": "a6251dcdbaab1bb225bb2334138f95a9094da9aadc567ffe55ca3b99f1ec7b49"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-unclumped-live3-10.png",
+      "passed": true,
+      "details": {
+        "sha256_before": "11daef02401255a27f026b483899a30ad474fb1d3c34fa4b4639edba32e20979",
+        "sha256_after": "11daef02401255a27f026b483899a30ad474fb1d3c34fa4b4639edba32e20979"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-unclumped-live3-10.precheck.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "89b57efbc6815a8a0bc954298c6dffb18d307f5c5485d1c9bdbb9e591e14df7e",
+        "sha256_after": "89b57efbc6815a8a0bc954298c6dffb18d307f5c5485d1c9bdbb9e591e14df7e"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-unclumped-live3-10.render.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "a55f9397facd7003f352d550d4aeea48b11fcf37f53421799a1b2e2d57f9ba45",
+        "sha256_after": "a55f9397facd7003f352d550d4aeea48b11fcf37f53421799a1b2e2d57f9ba45"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-clump-profile-live7-11.gn-report.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "f03501392edf8f299006fff499d589dfb60b47124db9f716dc01cdab52f0e744",
+        "sha256_after": "f03501392edf8f299006fff499d589dfb60b47124db9f716dc01cdab52f0e744"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-clump-profile-live7-11.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "7d9f795483ac1a48cb5b74d04fc1a3f398b420a23c0fb3d68523273eb9e8d670",
+        "sha256_after": "7d9f795483ac1a48cb5b74d04fc1a3f398b420a23c0fb3d68523273eb9e8d670"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-clump-profile-live7-11.source.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "145239a928aeb057a7470ddeb81ff04612a2e7b71028e0738854ba471141247a",
+        "sha256_after": "145239a928aeb057a7470ddeb81ff04612a2e7b71028e0738854ba471141247a"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\plush_clump_profile_study.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "145239a928aeb057a7470ddeb81ff04612a2e7b71028e0738854ba471141247a",
+        "sha256_after": "145239a928aeb057a7470ddeb81ff04612a2e7b71028e0738854ba471141247a"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-clump-profile-live7-11.render.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "e772786b35bd7c9c13bb7471400caa7c752644dc448351e6d2a47f18c3c033b3",
+        "sha256_after": "e772786b35bd7c9c13bb7471400caa7c752644dc448351e6d2a47f18c3c033b3"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-clump-profile-live7-11.blend",
+      "passed": true,
+      "details": {
+        "sha256_before": "487e857487a6489bfb09371575d29ee6f793af460976ba1af593569f1382c26d",
+        "sha256_after": "487e857487a6489bfb09371575d29ee6f793af460976ba1af593569f1382c26d"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-clump-profile-live7-11.png",
+      "passed": true,
+      "details": {
+        "sha256_before": "c05ca6cad5073b8d16956c2d032787c517b59d980b2846ec907a999f314014f6",
+        "sha256_after": "c05ca6cad5073b8d16956c2d032787c517b59d980b2846ec907a999f314014f6"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-clump-profile-live7-11.precheck.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "21fc1b2b1233f8db6bcb0caba5ef6a758174030d1a31e444323dc20cb58694e6",
+        "sha256_after": "21fc1b2b1233f8db6bcb0caba5ef6a758174030d1a31e444323dc20cb58694e6"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-clump-profile-live7-11.render.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "15f07b3862bce9d58953b7106b9e18e9dbb83ff356e5f8db84d0fbfb8e6517f1",
+        "sha256_after": "15f07b3862bce9d58953b7106b9e18e9dbb83ff356e5f8db84d0fbfb8e6517f1"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\plush_curl_phase_study.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "000bfcc5cff1c3680e4732d4c05759b50354ca37da59b6d8a9aa068bf72e963d",
+        "sha256_after": "000bfcc5cff1c3680e4732d4c05759b50354ca37da59b6d8a9aa068bf72e963d"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-all-live2-12.gn-report.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "ab287e7f1a9232827d9e9010c85893376c6bf1fbaaffab31e81a62b0c576cd79",
+        "sha256_after": "ab287e7f1a9232827d9e9010c85893376c6bf1fbaaffab31e81a62b0c576cd79"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-all-live2-12.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "761c599ab56dce40c0c501b38de3af56eaea82a53be5a42a31ba6a61e74a1b87",
+        "sha256_after": "761c599ab56dce40c0c501b38de3af56eaea82a53be5a42a31ba6a61e74a1b87"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-all-live2-12.source.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "000bfcc5cff1c3680e4732d4c05759b50354ca37da59b6d8a9aa068bf72e963d",
+        "sha256_after": "000bfcc5cff1c3680e4732d4c05759b50354ca37da59b6d8a9aa068bf72e963d"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-all-live2-12.render.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "ccd3a8df3618489d77bad7a6fbd921f77c81ac5a83fa3840773f4e70cb86b6ac",
+        "sha256_after": "ccd3a8df3618489d77bad7a6fbd921f77c81ac5a83fa3840773f4e70cb86b6ac"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-all-live2-12.blend",
+      "passed": true,
+      "details": {
+        "sha256_before": "4fcd75ced4be561f74d2ee457e7c7d96b805969dcde5172a85f3115c4df28163",
+        "sha256_after": "4fcd75ced4be561f74d2ee457e7c7d96b805969dcde5172a85f3115c4df28163"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-all-live2-12.png",
+      "passed": true,
+      "details": {
+        "sha256_before": "2588c2c9f6ad70c7e96875a80605233c10cccdabf39b9448348e4c6cd2e1cc69",
+        "sha256_after": "2588c2c9f6ad70c7e96875a80605233c10cccdabf39b9448348e4c6cd2e1cc69"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-all-live2-12.precheck.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "e1c4386e737aaa4c45377161d79162d7cadee43bbd2be8c31bdabf7bd09ecb49",
+        "sha256_after": "e1c4386e737aaa4c45377161d79162d7cadee43bbd2be8c31bdabf7bd09ecb49"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-all-live2-12.render.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "7857bf014ea07813e4a4ec8fef57639bd481f6fb87d6c8193b0a93c37105c2cc",
+        "sha256_after": "7857bf014ea07813e4a4ec8fef57639bd481f6fb87d6c8193b0a93c37105c2cc"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-children-live2-12.gn-report.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "bcb3222685427ce3a885d00dd55b6127d88f17a0b08f743f9d7f06a786763099",
+        "sha256_after": "bcb3222685427ce3a885d00dd55b6127d88f17a0b08f743f9d7f06a786763099"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-children-live2-12.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "65d164d170af9a5e8c872b2075c398df9904ba31ba8b25d163021e2e65adec91",
+        "sha256_after": "65d164d170af9a5e8c872b2075c398df9904ba31ba8b25d163021e2e65adec91"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-children-live2-12.source.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "000bfcc5cff1c3680e4732d4c05759b50354ca37da59b6d8a9aa068bf72e963d",
+        "sha256_after": "000bfcc5cff1c3680e4732d4c05759b50354ca37da59b6d8a9aa068bf72e963d"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-children-live2-12.render.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "d5671c28260dc1e6ad80a2e7b95a95d095f90e49c97710823f0c80fcf6c56cfc",
+        "sha256_after": "d5671c28260dc1e6ad80a2e7b95a95d095f90e49c97710823f0c80fcf6c56cfc"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-children-live2-12.blend",
+      "passed": true,
+      "details": {
+        "sha256_before": "2d12288fc6d28f3c891a50db0041ce82b8ed18de7711f0196e71963131d315c7",
+        "sha256_after": "2d12288fc6d28f3c891a50db0041ce82b8ed18de7711f0196e71963131d315c7"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-children-live2-12.png",
+      "passed": true,
+      "details": {
+        "sha256_before": "4847729f1d483e5488e00888e3185fdc094f42870997ecc93c8c6656cb11bc34",
+        "sha256_after": "4847729f1d483e5488e00888e3185fdc094f42870997ecc93c8c6656cb11bc34"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-children-live2-12.precheck.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "1881d3ed15ae52d976545bb35acc94eab49f63f0049daa47488a0162bccd7d81",
+        "sha256_after": "1881d3ed15ae52d976545bb35acc94eab49f63f0049daa47488a0162bccd7d81"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-children-live2-12.render.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "90f70c42d1f3b6de07e8021b70c4a65555aa79e1356b0d9b99c1a003d0e2b7c4",
+        "sha256_after": "90f70c42d1f3b6de07e8021b70c4a65555aa79e1356b0d9b99c1a003d0e2b7c4"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\plush_guide_azimuth_study.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "94018212d0c0c5cbc063f71158cc92d5a88b59cb6b69ca374ce7cdb7a3296bcb",
+        "sha256_after": "94018212d0c0c5cbc063f71158cc92d5a88b59cb6b69ca374ce7cdb7a3296bcb"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-guide-azimuth-live-13.gn-report.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "16ef5acbca18a3beb6bf7bb57a88cc49096ed87c9b6d00bb91b73e7ceb01618c",
+        "sha256_after": "16ef5acbca18a3beb6bf7bb57a88cc49096ed87c9b6d00bb91b73e7ceb01618c"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-guide-azimuth-live-13.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "aced3e36a498569dc5acb5ab24dc03f9abe5820f69442e1837257a965499956b",
+        "sha256_after": "aced3e36a498569dc5acb5ab24dc03f9abe5820f69442e1837257a965499956b"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-guide-azimuth-live-13.source.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "94018212d0c0c5cbc063f71158cc92d5a88b59cb6b69ca374ce7cdb7a3296bcb",
+        "sha256_after": "94018212d0c0c5cbc063f71158cc92d5a88b59cb6b69ca374ce7cdb7a3296bcb"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-guide-azimuth-live-13.render.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "64a07708d37b7cafa20f738723b9a69744833d012ef8ccc6552d7e49e081ac8c",
+        "sha256_after": "64a07708d37b7cafa20f738723b9a69744833d012ef8ccc6552d7e49e081ac8c"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-guide-azimuth-live-13.blend",
+      "passed": true,
+      "details": {
+        "sha256_before": "0aa862080ef2d2f4ef07c1eb06c09c1ad6feb7ce96975db45f1a61ed4095d8f4",
+        "sha256_after": "0aa862080ef2d2f4ef07c1eb06c09c1ad6feb7ce96975db45f1a61ed4095d8f4"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-guide-azimuth-live-13.png",
+      "passed": true,
+      "details": {
+        "sha256_before": "eb19a8dd334886eca3d60c68ba804704a363858a94781dfea519fc00ef623a71",
+        "sha256_after": "eb19a8dd334886eca3d60c68ba804704a363858a94781dfea519fc00ef623a71"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-guide-azimuth-live-13.precheck.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "520a8b3bba33642123f3879d71255f961ae175f3bad505571a88fe87efba1128",
+        "sha256_after": "520a8b3bba33642123f3879d71255f961ae175f3bad505571a88fe87efba1128"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-guide-azimuth-live-13.render.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "68d3c8a29b26225dcb12d10b4604c22956a95ed757d526cc0749b76b4776b530",
+        "sha256_after": "68d3c8a29b26225dcb12d10b4604c22956a95ed757d526cc0749b76b4776b530"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\plush_bundle_scale_study.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "fd49cc328e6a43f8af93c3f2cf85f9d3eed479e2bad983d32ee20b36bc49d137",
+        "sha256_after": "fd49cc328e6a43f8af93c3f2cf85f9d3eed479e2bad983d32ee20b36bc49d137"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-wide-live-14.gn-report.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "24d91ec5472c0aad9fd8a594f0320ba4859cce406a485abf372be24313bd8333",
+        "sha256_after": "24d91ec5472c0aad9fd8a594f0320ba4859cce406a485abf372be24313bd8333"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-wide-live-14.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "b1ea36a7562cad0d4375921008142e61900a94fa751f37640a3306e1b16b000e",
+        "sha256_after": "b1ea36a7562cad0d4375921008142e61900a94fa751f37640a3306e1b16b000e"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-wide-live-14.source.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "fd49cc328e6a43f8af93c3f2cf85f9d3eed479e2bad983d32ee20b36bc49d137",
+        "sha256_after": "fd49cc328e6a43f8af93c3f2cf85f9d3eed479e2bad983d32ee20b36bc49d137"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-wide-live-14.render.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "0cd949bdc955a8b2820dafbcbf4361f63d7b6d7bce098f6d8104805f5ff64ca7",
+        "sha256_after": "0cd949bdc955a8b2820dafbcbf4361f63d7b6d7bce098f6d8104805f5ff64ca7"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-wide-live-14.blend",
+      "passed": true,
+      "details": {
+        "sha256_before": "8fe46017a7d34f924dc400693a431fd1182aeb8444bed7bb5105c24a9b28281b",
+        "sha256_after": "8fe46017a7d34f924dc400693a431fd1182aeb8444bed7bb5105c24a9b28281b"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-wide-live-14.png",
+      "passed": true,
+      "details": {
+        "sha256_before": "9c3c062162c7e9b134747bf560a35f2899395b51774a626d6dea1302e90c2167",
+        "sha256_after": "9c3c062162c7e9b134747bf560a35f2899395b51774a626d6dea1302e90c2167"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-wide-live-14.precheck.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "d73966e8f1684890fd9e7b929d6486eafe633746abf25fe54f290341281a3281",
+        "sha256_after": "d73966e8f1684890fd9e7b929d6486eafe633746abf25fe54f290341281a3281"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-wide-live-14.render.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "ec23513eff597662bc09f4d1458f69e47b40f6ad640535747ee9b8c767aea411",
+        "sha256_after": "ec23513eff597662bc09f4d1458f69e47b40f6ad640535747ee9b8c767aea411"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-half-live-14.gn-report.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "1abd227084ef01bf92423eb5de81efb75d3652fef54340b9689b80b3414a0bf9",
+        "sha256_after": "1abd227084ef01bf92423eb5de81efb75d3652fef54340b9689b80b3414a0bf9"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-half-live-14.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "924e269ff8b5b083ec96ff35c3f453389b3b94e228c113f1d393c3861a41f3f9",
+        "sha256_after": "924e269ff8b5b083ec96ff35c3f453389b3b94e228c113f1d393c3861a41f3f9"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-half-live-14.source.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "fd49cc328e6a43f8af93c3f2cf85f9d3eed479e2bad983d32ee20b36bc49d137",
+        "sha256_after": "fd49cc328e6a43f8af93c3f2cf85f9d3eed479e2bad983d32ee20b36bc49d137"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-half-live-14.render.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "55c9bffb4f58fffb2dcb89ab79b43d21418970fca6f81836977e62b1ea895131",
+        "sha256_after": "55c9bffb4f58fffb2dcb89ab79b43d21418970fca6f81836977e62b1ea895131"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-half-live-14.blend",
+      "passed": true,
+      "details": {
+        "sha256_before": "62223943752472c6be9bfa92d1f65de557723d7bcddb1d5df33fc819129effed",
+        "sha256_after": "62223943752472c6be9bfa92d1f65de557723d7bcddb1d5df33fc819129effed"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-half-live-14.png",
+      "passed": true,
+      "details": {
+        "sha256_before": "c43a0cee50a3ab40704105fe98064c2696111966787636e8ab87751057dc5c5b",
+        "sha256_after": "c43a0cee50a3ab40704105fe98064c2696111966787636e8ab87751057dc5c5b"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-half-live-14.precheck.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "ef76a7ae1b3e8ba65320b2db8be69f28260b7123dc529c8c7735816f69d94335",
+        "sha256_after": "ef76a7ae1b3e8ba65320b2db8be69f28260b7123dc529c8c7735816f69d94335"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-bundle-scale-half-live-14.render.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "f9d1f6db17db461bf7d29db5e036e9e5ea345b42301019adadd18b8232acbfaf",
+        "sha256_after": "f9d1f6db17db461bf7d29db5e036e9e5ea345b42301019adadd18b8232acbfaf"
+      }
+    }
+  ],
+  "errors": [],
+  "cases": {
+    "swatch-reference-gn-bundle-scale-wide-live-14": {
+      "lateral_scale": 1.0,
+      "render_receipt": {
+        "rendered": true,
+        "kind": "swatch",
+        "case": "wide",
+        "blend": "swatch-reference-gn-bundle-scale-wide-live-14.blend",
+        "png": "swatch-reference-gn-bundle-scale-wide-live-14.png",
+        "seconds": 8.056992199999513,
+        "resolution": 768,
+        "samples": 96,
+        "blend_sha256": "8fe46017a7d34f924dc400693a431fd1182aeb8444bed7bb5105c24a9b28281b",
+        "png_sha256": "9c3c062162c7e9b134747bf560a35f2899395b51774a626d6dea1302e90c2167",
+        "wrapper_source_sha256": "fd49cc328e6a43f8af93c3f2cf85f9d3eed479e2bad983d32ee20b36bc49d137"
+      },
+      "asset_rendered": true,
+      "engineering_generation_rendered": false,
+      "spatial_child_bundles": {
+        "guide_count": 10628,
+        "child_count": 85000,
+        "nonempty_groups": 10628,
+        "groups_with_at_least_two_children": 10419,
+        "empty_groups": 0,
+        "children_per_guide_all": {
+          "minimum": 1.0,
+          "maximum": 29.0,
+          "mean": 7.997741814076026,
+          "median": 7.0,
+          "p95": 16.0,
+          "p99": 20.0
+        },
+        "child_counts_int64_sha256": "a863c1d1b06e1683d697991dd9964c08bb918cf7c54a859b15ba350cc82fea2e",
+        "slices": {
+          "control_6": {
+            "eligible_guide_count": 10419,
+            "diameter": {
+              "minimum": 0.0004180286798769071,
+              "maximum": 0.022426494927998905,
+              "mean": 0.008988794209450491,
+              "median": 0.008679693445331479,
+              "p95": 0.015015920055400514,
+              "p99": 0.017577597027739002
+            },
+            "diameter_float64_sha256": "77fa4165fa8b7d5cb3da349c1b6ab1bbd7d9835ad0a2fd11606ee9099eff5dfb"
+          },
+          "control_9": {
+            "eligible_guide_count": 10419,
+            "diameter": {
+              "minimum": 0.0004952594781053754,
+              "maximum": 0.019463372862917612,
+              "mean": 0.007526303235435182,
+              "median": 0.0072415603084804575,
+              "p95": 0.012497748288698318,
+              "p99": 0.014659558148492008
+            },
+            "diameter_float64_sha256": "2849acc020076fa5fd86bc28dfcad644bbbd1043c0b52bed1cacb044a9027a04"
+          },
+          "control_11": {
+            "eligible_guide_count": 10419,
+            "diameter": {
+              "minimum": 0.00037017687184268263,
+              "maximum": 0.014623790131964617,
+              "mean": 0.006075199080535199,
+              "median": 0.00597547152821454,
+              "p95": 0.009354250463046346,
+              "p99": 0.011029654922153279
+            },
+            "diameter_float64_sha256": "e328fc728d228b210d649258b709216e59773e5cb52bdef65ae7dbe20fe3a07a"
+          }
+        },
+        "basis": "At actual saved child control indices6/9/11, maximum 3D Euclidean pairwise centerline distance within every persistent nearest-guide-ID group having >=2 children. Includes bending/longitudinal separation; not matched arc length, surface diameter, fiber thickness, volume/contact or softness. Identity object/scene coordinates; no millimeter calibration."
+      },
+      "guide_arc": {
+        "minimum": 0.05771637936453768,
+        "maximum": 0.08265320999837907,
+        "mean": 0.07070733160571857,
+        "median": 0.07117529833668279,
+        "p95": 0.07702418679205916,
+        "p99": 0.07880847023380382
+      },
+      "child_arc": {
+        "minimum": 0.01923280467897227,
+        "maximum": 0.06899355668316151,
+        "mean": 0.03826620983218745,
+        "median": 0.03761776111067558,
+        "p95": 0.05017518213109287,
+        "p99": 0.05534693753709842
+      },
+      "guide_sampled_crown": {
+        "minimum": 0.021759602844254638,
+        "maximum": 0.030516751508683014,
+        "mean": 0.025365902542024168,
+        "median": 0.02540565258265918,
+        "p95": 0.026950579918228846,
+        "p99": 0.0276648689248937
+      },
+      "child_sampled_crown": {
+        "minimum": 0.011618549577745968,
+        "maximum": 0.03122462681418369,
+        "mean": 0.020191599668328866,
+        "median": 0.020045872193442137,
+        "p95": 0.024999728976115427,
+        "p99": 0.02683701567003172
+      },
+      "metric_basis": "Guide/child arcs: duplicated-endpoint Catmull GL32; crowns: signed ellipsoid implicit/gradient with8 Gauss samples/segment+controls. Not engine arc, nearest physical distance, calibrated units or visual quality; neither set as invariant."
+    },
+    "swatch-reference-gn-bundle-scale-half-live-14": {
+      "lateral_scale": 0.5,
+      "render_receipt": {
+        "rendered": true,
+        "kind": "swatch",
+        "case": "half",
+        "blend": "swatch-reference-gn-bundle-scale-half-live-14.blend",
+        "png": "swatch-reference-gn-bundle-scale-half-live-14.png",
+        "seconds": 7.937838899990311,
+        "resolution": 768,
+        "samples": 96,
+        "blend_sha256": "62223943752472c6be9bfa92d1f65de557723d7bcddb1d5df33fc819129effed",
+        "png_sha256": "c43a0cee50a3ab40704105fe98064c2696111966787636e8ab87751057dc5c5b",
+        "wrapper_source_sha256": "fd49cc328e6a43f8af93c3f2cf85f9d3eed479e2bad983d32ee20b36bc49d137"
+      },
+      "asset_rendered": true,
+      "engineering_generation_rendered": false,
+      "spatial_child_bundles": {
+        "guide_count": 10628,
+        "child_count": 85000,
+        "nonempty_groups": 10628,
+        "groups_with_at_least_two_children": 10419,
+        "empty_groups": 0,
+        "children_per_guide_all": {
+          "minimum": 1.0,
+          "maximum": 29.0,
+          "mean": 7.997741814076026,
+          "median": 7.0,
+          "p95": 16.0,
+          "p99": 20.0
+        },
+        "child_counts_int64_sha256": "a863c1d1b06e1683d697991dd9964c08bb918cf7c54a859b15ba350cc82fea2e",
+        "slices": {
+          "control_6": {
+            "eligible_guide_count": 10419,
+            "diameter": {
+              "minimum": 0.0006046858208027126,
+              "maximum": 0.022521940085441623,
+              "mean": 0.009136819030590203,
+              "median": 0.008820503352243934,
+              "p95": 0.015267623875819515,
+              "p99": 0.01760385144774432
+            },
+            "diameter_float64_sha256": "5cb4e4defcf5e781dc62985f917ca8199e5ceaaeeb7694ec0226180b3675a1e7"
+          },
+          "control_9": {
+            "eligible_guide_count": 10419,
+            "diameter": {
+              "minimum": 0.00039936723406998743,
+              "maximum": 0.013560579244859714,
+              "mean": 0.005883962194236741,
+              "median": 0.00564681125220361,
+              "p95": 0.00966564795879634,
+              "p99": 0.011354689715128275
+            },
+            "diameter_float64_sha256": "ab49bb3f1e7f617e1e5115c18f2e96cf9e077c8f5efd0e010176524d92abf6e2"
+          },
+          "control_11": {
+            "eligible_guide_count": 10419,
+            "diameter": {
+              "minimum": 0.00031170860790276437,
+              "maximum": 0.010827656502198487,
+              "mean": 0.0052364889678328,
+              "median": 0.005297145530631659,
+              "p95": 0.007413983755727548,
+              "p99": 0.008495775338188754
+            },
+            "diameter_float64_sha256": "5a490871ce339c0609148e5f836c86593e2903dd040b0ee15cbb1e2dd6ed7be6"
+          }
+        },
+        "basis": "At actual saved child control indices6/9/11, maximum 3D Euclidean pairwise centerline distance within every persistent nearest-guide-ID group having >=2 children. Includes bending/longitudinal separation; not matched arc length, surface diameter, fiber thickness, volume/contact or softness. Identity object/scene coordinates; no millimeter calibration."
+      },
+      "guide_arc": {
+        "minimum": 0.04333532743897939,
+        "maximum": 0.059811576815723626,
+        "mean": 0.052119947160678484,
+        "median": 0.05213496075627993,
+        "p95": 0.05643119191579691,
+        "p99": 0.05787931448982101
+      },
+      "child_arc": {
+        "minimum": 0.020129460089520986,
+        "maximum": 0.06133543290950547,
+        "mean": 0.03655554524926861,
+        "median": 0.035470195798759624,
+        "p95": 0.04821651332943962,
+        "p99": 0.05201136669243528
+      },
+      "guide_sampled_crown": {
+        "minimum": 0.021637601378738366,
+        "maximum": 0.030438614433754268,
+        "mean": 0.025257505952237105,
+        "median": 0.02530040962604032,
+        "p95": 0.02683814987549811,
+        "p99": 0.02752419077371728
+      },
+      "child_sampled_crown": {
+        "minimum": 0.012891985767026085,
+        "maximum": 0.029982366900131608,
+        "mean": 0.021125120786298104,
+        "median": 0.020861049983799194,
+        "p95": 0.025983564305722358,
+        "p99": 0.02728959966975976
+      },
+      "metric_basis": "Guide/child arcs: duplicated-endpoint Catmull GL32; crowns: signed ellipsoid implicit/gradient with8 Gauss samples/segment+controls. Not engine arc, nearest physical distance, calibrated units or visual quality; neither set as invariant."
+    }
+  },
+  "control_asset": "swatch-reference-gn-clump-profile-live7-11",
+  "validator": "tooling\\blender\\validate_guide_density_width_assets.py",
+  "validated_at_utc": "2026-10-03T02:19:06.982357+00:00",
+  "blender": "5.2.2 LTS",
+  "scope": "Independent actual saved GN14 roots/nearest map/native contracts/paired width change, measured per-bundle child counts and 3D control-slice diameter, saved reload, actual PNG/receipt/source SHA, read-only preservation. CPU only; no render or save; no visual/physical softness acceptance.",
+  "construction": {
+    "guide_count": 10628,
+    "old_guide_count": 2657,
+    "appended_guide_count": 7971,
+    "appended_coat_root_indices_int32_sha256": "7ba769ef230d688e5530e81b1c5a3c5909ca713ccba4e8933d3c2271aae91f3f",
+    "parent_guide_ids_int32_sha256": "7b00c577d83ee1cc6b2a32d483a2f77aa20363caaeff6c31640ef178b3f0a857",
+    "minimum_parent_normal_cosine": 0.987547520585031,
+    "actual_nearest_mapping_int32_sha256": "a14c7a9f595444ecb231fdcef2ba9299b4303209789063d95a6c08f01c601feb",
+    "basis": "Independent f64 full-all-guide Euclidean argmin lowest-ID tie, followed by7971 argmax(min squared distance) lowest-coat-index tie. FPS updates f64 three-coordinate einsum as declared frozen arithmetic. Native roots preserve2657 original prefix and append original saved coat root bits. Independent shortest normal-alignment guide/rest transport f64→f32/root restore; old prefix exact. No producer function execution or pass-flag reliance."
+  },
+  "gn11_root_bundles": {
+    "guide_count": 2657,
+    "child_count": 85000,
+    "empty_groups": 0,
+    "children_per_guide_all": {
+      "minimum": 2.0,
+      "maximum": 63.0,
+      "mean": 31.990967256304103,
+      "median": 32.0,
+      "p95": 46.0,
+      "p99": 52.0
+    },
+    "child_counts_int64_sha256": "99ceb2f28087110c9bd532ce0a7b9bcb61b0eb2d46096fdb5e8eada727c1c537",
+    "root_tangent_pair_diameter_nonempty": {
+      "minimum": 0.002899709268438934,
+      "maximum": 0.09385537741070925,
+      "mean": 0.0464225762220058,
+      "median": 0.0460615322088951,
+      "p95": 0.06812446943967922,
+      "p99": 0.07689292267958216
+    },
+    "max_root_tangent_radius_nonempty": {
+      "minimum": 0.004435727355020368,
+      "maximum": 0.05813283390940073,
+      "mean": 0.030000721964454632,
+      "median": 0.029778532460236887,
+      "p95": 0.044058355793671115,
+      "p99": 0.050662348557569355
+    },
+    "child_root_to_guide_root_distance": {
+      "minimum": 8.67069671820574e-05,
+      "maximum": 0.05817146534581718,
+      "mean": 0.01543741450803246,
+      "median": 0.014409880804734812,
+      "p95": 0.03035898613628359,
+      "p99": 0.03802883515066311
+    },
+    "basis": "All actual native child-root groups, projected onto analytic ellipsoid root normal plane of their actual guide. Exact maximum pair distance and maximum root-relative radius over nonempty groups, including zero diameter for singleton. Root footprint only, not upper pile width, geodesic distance, calibrated millimeters, physical contact/softness or visual acceptance."
+  },
+  "gn14_shared_root_bundles": {
+    "guide_count": 10628,
+    "child_count": 85000,
+    "empty_groups": 0,
+    "children_per_guide_all": {
+      "minimum": 1.0,
+      "maximum": 29.0,
+      "mean": 7.997741814076026,
+      "median": 7.0,
+      "p95": 16.0,
+      "p99": 20.0
+    },
+    "child_counts_int64_sha256": "a863c1d1b06e1683d697991dd9964c08bb918cf7c54a859b15ba350cc82fea2e",
+    "root_tangent_pair_diameter_nonempty": {
+      "minimum": 0.0,
+      "maximum": 0.026131707286646617,
+      "mean": 0.016020875501554944,
+      "median": 0.016840415931278586,
+      "p95": 0.022266107722944933,
+      "p99": 0.02382001029728672
+    },
+    "max_root_tangent_radius_nonempty": {
+      "minimum": 0.0,
+      "maximum": 0.013188843691233736,
+      "mean": 0.010117374968752943,
+      "median": 0.010528155665368646,
+      "p95": 0.012819374320612906,
+      "p99": 0.013108234433080852
+    },
+    "child_root_to_guide_root_distance": {
+      "minimum": 0.0,
+      "maximum": 0.013189526095108452,
+      "mean": 0.006491713204238316,
+      "median": 0.006870858357876336,
+      "p95": 0.011507912370493804,
+      "p99": 0.012672334427642864
+    },
+    "basis": "All actual native child-root groups, projected onto analytic ellipsoid root normal plane of their actual guide. Exact maximum pair distance and maximum root-relative radius over nonempty groups, including zero diameter for singleton. Root footprint only, not upper pile width, geodesic distance, calibrated millimeters, physical contact/softness or visual acceptance."
+  },
+  "paired_response": {
+    "changed_child_curve_count_bitwise": 85000,
+    "maximum_control_displacement_per_child": {
+      "minimum": 0.0014233925336842896,
+      "maximum": 0.01249666867733085,
+      "mean": 0.005932419801310712,
+      "median": 0.005913753095957675,
+      "p95": 0.008742133543456251,
+      "p99": 0.010072261416258187
+    },
+    "changed_derived_radius_point_count": 867826,
+    "maximum_derived_radius_delta_scene_units": 3.382182330824435e-05
+  },
+  "input_count": 94,
+  "check_count": 140
+}

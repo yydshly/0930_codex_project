@@ -1,0 +1,162 @@
+00:01.375  cycles           | CUEW initialization succeeded
+00:01.375  cycles           | Found precompiled kernels
+00:01.437  cycles           | Device has compute preemption or is not used for display.
+00:01.437  cycles           | Added device "NVIDIA GeForce RTX 4070 Laptop GPU" with id "CUDA_NVIDIA GeForce RTX 4070 Laptop GPU_0000:01:00".
+00:01.437  cycles           | Device with id "CUDA_NVIDIA GeForce RTX 4070 Laptop GPU_0000:01:00" supports OpenImageDenoise.
+00:01.484  cycles           | WARNING HIPEW initialization failed: Error opening HIP dynamic library
+F:\codex_project\0930_codex_project\projects\005-plush-lab\tooling\blender\plush_cycles.py:357: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world.use_nodes = True
+F:\codex_project\0930_codex_project\projects\005-plush-lab\tooling\blender\plush_cycles.py:82: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes = True
+F:\codex_project\0930_codex_project\projects\005-plush-lab\tooling\blender\plush_cycles.py:91: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes = True
+00:08.422  cycles           | Mapped host memory limit set to 12,484,993,024 bytes. (11.63G)
+00:09.281  cycles           | Using AVX2 CPU kernels.
+00:09.297  cycles           | Total time spent synchronizing data: 0.0174852
+00:09.297  cycles           | Adaptive sampling: automatic min samples = 61
+00:09.297  cycles           | Effective scene passes:
+00:09.297  cycles           | - type: combined, name: "Combined", mode: DENOISED, is_written: True
+00:09.297  cycles           | - type: combined, name: "Noisy Image", mode: NOISY, is_written: True
+00:09.297  cycles           | - type: adaptive_aux_buffer, name: "", mode: NOISY, is_written: True
+00:09.297  cycles           | - type: denoising_albedo, name: "", mode: NOISY, is_written: True
+00:09.297  cycles           | - type: denoising_normal, name: "", mode: NOISY, is_written: True
+00:09.297  cycles           | - type: sample_count, name: "", mode: NOISY, is_written: True
+00:09.312  cycles           | Requested features:
+00:09.312  cycles           | Use BSDF True
+00:09.312  cycles           | Use Emission True
+00:09.312  cycles           | Use Volume False
+00:09.312  cycles           | Use Bump False
+00:09.312  cycles           | Use Voronoi False
+00:09.312  cycles           | Use Shader Raytrace False
+00:09.312  cycles           | Use MNEE False
+00:09.312  cycles           | Use Transparent False
+00:09.312  cycles           | Use Denoising True
+00:09.312  cycles           | Use Path Tracing True
+00:09.312  cycles           | Use Hair True
+00:09.312  cycles           | Use Pointclouds False
+00:09.312  cycles           | Use Object Motion False
+00:09.312  cycles           | Use Baking False
+00:09.312  cycles           | Use Subsurface False
+00:09.312  cycles           | Use Volume False
+00:09.312  cycles           | Use Shadow Catcher False
+00:09.312  cycles           | Use Portal Node False
+00:09.312  cycles           | Testing for pre-compiled kernel D:\codex\home\cache\plush-lab-tools\blender\blender-5.2.2-windows-x64\5.2\scripts\addons_core\cycles\lib/kernel_sm_89.cubin.zst.
+00:09.312  cycles           | Testing for pre-compiled kernel D:\codex\home\cache\plush-lab-tools\blender\blender-5.2.2-windows-x64\5.2\scripts\addons_core\cycles\lib/kernel_sm_88.cubin.zst.
+00:09.312  cycles           | Testing for pre-compiled kernel D:\codex\home\cache\plush-lab-tools\blender\blender-5.2.2-windows-x64\5.2\scripts\addons_core\cycles\lib/kernel_sm_87.cubin.zst.
+00:09.312  cycles           | Testing for pre-compiled kernel D:\codex\home\cache\plush-lab-tools\blender\blender-5.2.2-windows-x64\5.2\scripts\addons_core\cycles\lib/kernel_sm_86.cubin.zst.
+00:09.312  cycles           | Using precompiled kernel.
+00:09.437  cycles           | Local memory reserved 318,767,104 bytes. (304.00M)
+00:09.656  cycles           | Total 14 shaders.
+00:09.672  cycles           | Shader manager updated 14 shaders in 0.0060492 seconds.
+00:09.672  cycles           | Total 14 objects.
+00:09.672  cycles           | Total 0 particle systems.
+00:09.672  cycles           | Total 14 meshes.
+00:09.687  cycles           | Using fast to trace OptiX BVH
+00:09.703  cycles           | Using fast to trace OptiX BVH
+00:09.703  cycles           | Using fast to trace OptiX BVH
+00:09.703  cycles           | Using fast to trace OptiX BVH
+00:09.719  cycles           | Using fast to trace OptiX BVH
+00:09.750  cycles           | Using fast to trace OptiX BVH
+00:10.109  cycles           | Using OPTIX layout.
+00:10.109  cycles           | Using fast to trace OptiX BVH
+00:10.531  cycles           | Total 10 lookup tables.
+00:10.531  cycles           | Total 4 lights.
+00:10.531  cycles           | Background MIS has been disabled.
+00:10.531  cycles           | Number of lights sent to the device: 3
+00:10.531  cycles           | Use light tree with 3 emitters and 7 nodes.
+00:10.531  cycles           | Total 11 lookup tables.
+00:10.547  cycles           | System memory statistics after full device sync:
+                            |   Usage: 225,789,946 (215.33M)
+                            |   Peak: 225,891,322 (215.43M)
+00:10.547  cycles           | Adaptive sampling: automatic min samples = 61
+00:10.781  cycles           | Rendered 1 samples in 0.219938 seconds (0.219938 seconds per sample), occupancy: 0.276814
+00:10.797  cycles           | Adaptive sampling: automatic min samples = 61
+00:24.172  cycles           | Rendered 63 samples in 13.3746 seconds (0.212295 seconds per sample), occupancy: 0.565759
+00:24.172  cycles           | Adaptive sampling: automatic min samples = 61
+00:26.766  cycles           | Rendered 16 samples in 2.59572 seconds (0.162233 seconds per sample), occupancy: 0.435473
+00:26.766  cycles           | Adaptive sampling: automatic min samples = 61
+00:29.500  cycles           | Rendered 16 samples in 2.72239 seconds (0.170149 seconds per sample), occupancy: 0.421644
+00:29.500  cycles           | Adaptive sampling: automatic min samples = 61
+00:31.906  cycles           | Rendered 16 samples in 2.40937 seconds (0.150585 seconds per sample), occupancy: 0.417955
+00:31.906  cycles           | Adaptive sampling: automatic min samples = 61
+00:33.531  cycles           | Rendered 16 samples in 1.61497 seconds (0.100936 seconds per sample), occupancy: 0.417251
+00:33.531  cycles           | Adaptive sampling: automatic min samples = 61
+00:35.016  cycles           | Rendered 16 samples in 1.49096 seconds (0.0931849 seconds per sample), occupancy: 0.408919
+00:35.031  cycles           | Adaptive sampling: automatic min samples = 61
+00:37.000  cycles           | Rendered 16 samples in 1.97324 seconds (0.123327 seconds per sample), occupancy: 0.406706
+00:37.000  cycles           | Adaptive sampling: automatic min samples = 61
+00:39.562  cycles           | Rendered 16 samples in 2.55268 seconds (0.159543 seconds per sample), occupancy: 0.405141
+00:39.562  cycles           | Adaptive sampling: automatic min samples = 61
+00:41.969  cycles           | Rendered 16 samples in 2.40946 seconds (0.150591 seconds per sample), occupancy: 0.412638
+00:41.969  cycles           | Adaptive sampling: automatic min samples = 61
+00:44.437  cycles           | Rendered 16 samples in 2.46759 seconds (0.154225 seconds per sample), occupancy: 0.398715
+00:44.453  cycles           | Adaptive sampling: automatic min samples = 61
+00:46.859  cycles           | Rendered 16 samples in 2.41667 seconds (0.151042 seconds per sample), occupancy: 0.40718
+00:46.859  cycles           | Adaptive sampling: automatic min samples = 61
+00:49.562  cycles           | Rendered 16 samples in 2.68852 seconds (0.168033 seconds per sample), occupancy: 0.392341
+00:49.562  cycles           | Adaptive sampling: automatic min samples = 61
+00:52.766  cycles           | Rendered 16 samples in 3.20293 seconds (0.200183 seconds per sample), occupancy: 0.39075
+00:52.766  cycles           | Adaptive sampling: automatic min samples = 61
+00:56.172  cycles           | Rendered 16 samples in 3.39972 seconds (0.212482 seconds per sample), occupancy: 0.388351
+00:56.172  cycles           | Adaptive sampling: automatic min samples = 61
+00:59.781  cycles           | Rendered 16 samples in 3.59557 seconds (0.224723 seconds per sample), occupancy: 0.39921
+00:59.781  cycles           | Adaptive sampling: automatic min samples = 61
+01:03.266  cycles           | Rendered 16 samples in 3.4939 seconds (0.218369 seconds per sample), occupancy: 0.398943
+01:03.281  cycles           | Adaptive sampling: automatic min samples = 61
+01:05.656  cycles           | Rendered 16 samples in 2.37764 seconds (0.148603 seconds per sample), occupancy: 0.398036
+01:05.656  cycles           | Adaptive sampling: automatic min samples = 61
+01:09.000  cycles           | Rendered 16 samples in 3.34438 seconds (0.209024 seconds per sample), occupancy: 0.394576
+01:09.016  cycles           | Adaptive sampling: automatic min samples = 61
+01:12.141  cycles           | Rendered 16 samples in 3.12779 seconds (0.195487 seconds per sample), occupancy: 0.41313
+01:12.141  cycles           | Adaptive sampling: automatic min samples = 61
+01:15.250  cycles           | Rendered 16 samples in 3.09938 seconds (0.193711 seconds per sample), occupancy: 0.390555
+01:15.250  cycles           | Adaptive sampling: automatic min samples = 61
+01:19.047  cycles           | Rendered 16 samples in 3.79803 seconds (0.237377 seconds per sample), occupancy: 0.400775
+01:19.250  cycles           | ERROR OIDN error: out of memory
+01:19.250  cycles           | ERROR out of memory
+01:19.500  cycles           | Adaptive sampling: automatic min samples = 61
+01:19.500  cycles           | Rendering in main loop is done in 68.9269 seconds.
+01:19.500  cycles           | Full path tracing report:
+                            | 
+                            | Path tracing on: NVIDIA GeForce RTX 4070 Laptop GPU (OptiX) [CUDA_NVIDIA GeForce RTX 4070 Laptop GPU_0000:01:00_OptiX]
+                            |                      Hardware Ray-Tracing: Off
+                            | 
+                            | Denoising on: 13th Gen Intel Core i9-13980HX (CPU) (32 threads) [CPU]
+                            |                   Hardware Ray-Tracing: Off
+                            | 
+                            | Render Scheduler Summary
+                            | 
+                            | Mode: Headless
+                            | Resolution: 1536x1536
+                            | 
+                            | Adaptive sampling:
+                            |   Use: True
+                            |   Step: 16
+                            |   Min Samples: 61
+                            |   Threshold: 0.060000
+                            | 
+                            | Denoiser:
+                            |   Use: True
+                            |   Type: OpenImageDenoise
+                            |   Start Sample: 0
+                            |   Passes: Color, Albedo, Normal
+                            | 
+                            | Time (in seconds):
+                            |                                        Wall              Average
+                            |           Path Tracing            68.378759             0.178070
+                            |        Adaptive Filter             0.101624             0.000265
+                            |               Denoiser             0.194335             0.194335
+                            |         Display Update             0.000010             0.000010
+                            | 
+                            |   Total: 68.674729
+                            | 
+                            | Rendered 384 samples in 68.925796 seconds
+                            | 
+01:19.500  cycles           | Total render time: 71.0747
+01:19.500  cycles           | Render time (without synchronization): 68.9285
+01:20.141  render           | Saved: 'F:\codex_project\0930_codex_project\projects\005-plush-lab\artifacts\cycles-study\character-reference-v3.png'
+Info: Saved as "character-reference-v3.blend"
+PLUSH_STUDY_RESULT {"blender": "5.2.2 LTS", "kind": "character", "variant": "reference", "preset": {"label": "D · 松散短卷绒候选", "length": 0.046, "curl": 0.009, "turns": 1.0, "lean": 0.5, "clump": 0.6}, "body_hair_counts": {"undercoat": 340000, "coat": 320000, "flyaway": 9000}, "hat_hairs": 90000, "body_points_per_hair": 12, "resolution": 1536, "samples": 384, "angle_degrees": 0, "material": "Cycles Principled Hair BSDF / CHIANG / COLOR", "devices": [{"name": "NVIDIA GeForce RTX 4070 Laptop GPU", "type": "OPTIX", "enabled": true}, {"name": "13th Gen Intel Core i9-13980HX", "type": "CPU", "enabled": false}, {"name": "NVIDIA GeForce RTX 4070 Laptop GPU", "type": "CUDA", "enabled": false}], "fiber_color_srgb": "#6b8bd4", "root_radius_range": [0.00024, 0.0004], "coordinate_units": "Blender scene units; character width about 2.6", "source_sha256": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3", "source_snapshot": "character-reference-v3.source.py", "seconds": 78.89, "blend": "character-reference-v3.blend", "png": "character-reference-v3.png", "rendered": true, "source": "tooling\\blender\\plush_cycles.py", "scope": "Offline native hair asset study; no 3DGS training or real-time web conversion"}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

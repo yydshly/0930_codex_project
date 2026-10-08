@@ -1,0 +1,816 @@
+{
+  "scope": "Read-only saved native/evaluated Curves; signed implicit/gradient ellipsoid distance approximation, not exact closest projection or per-pixel occlusion. Eight Gauss-Legendre samples per Catmull-Rom segment; duplicate endpoint controls. Local undercoat envelope is per-root surface cell P95 crown height, not an opaque shell.",
+  "axes": [
+    0.64,
+    0.43,
+    0.54
+  ],
+  "assets": {
+    "GN1": {
+      "evaluated_positions_sha256": "255823db00fb55cc51cf30c11804c4ba289805784fd9f836f2693ef4a6e3fdbe",
+      "native_positions_sha256": "a5f329fa084c433ba3153eed01f704dc84a212704108b0b3462e5e9c5a064133",
+      "roots_sha256": "eb3d56ef87f5e9c835c7791bf3ebbf50c84b3f2ab328233112dbaa2db1ddfd94",
+      "finite": true,
+      "front_curves": 35169,
+      "crown_height_all": {
+        "min": 2.0536351407196068e-05,
+        "p05": 0.011780900216138174,
+        "median": 0.0191102616475849,
+        "mean": 0.019040647404587444,
+        "p95": 0.02605112278216102,
+        "max": 0.03689535554252773
+      },
+      "crown_height_front": {
+        "min": 2.0536351407196068e-05,
+        "p05": 0.011654553380593671,
+        "median": 0.01901313095114586,
+        "mean": 0.018948127588541502,
+        "p95": 0.025988429200898364,
+        "max": 0.03623626366796862
+      },
+      "tip_height_all": {
+        "min": -0.02293653164524343,
+        "p05": 0.0025775364724738166,
+        "median": 0.016540235907986194,
+        "mean": 0.015547227949990644,
+        "p95": 0.025565754198510916,
+        "max": 0.03689535554252773
+      },
+      "tip_height_front": {
+        "min": -0.02293653164524343,
+        "p05": 0.00220165406547132,
+        "median": 0.016423237763464174,
+        "mean": 0.015394181808693693,
+        "p95": 0.025460537196803943,
+        "max": 0.03623626366796862
+      },
+      "arc_length": {
+        "min": 0.0006028081361869802,
+        "p05": 0.0288372322894125,
+        "median": 0.03964149609823975,
+        "mean": 0.04003902390230105,
+        "p95": 0.05255124881068314,
+        "max": 0.07545952251145896
+      },
+      "minimum_surface_height": {
+        "min": -0.02293653164524343,
+        "p05": -2.436667570655704e-08,
+        "median": -5.427277982184e-10,
+        "mean": -0.00011902260953462904,
+        "p95": 1.7288149444898295e-08,
+        "max": 3.2023873292375324e-08
+      },
+      "arc_fraction_below_minus_0_001_mean": 0.0021603979773006945,
+      "curves_below_minus_0_001_fraction": 0.02328235294117647,
+      "inside_surface_arc_fraction_mean": 0.0032480240805996172,
+      "curves_any_inside_surface_fraction": 0.03587058823529412,
+      "mean_arc_fraction_above_undercoat_global_p95": 0.16459097148668334,
+      "mean_arc_fraction_above_undercoat_local_p95": 0.17189230572203057,
+      "front_mean_arc_fraction_above_undercoat_local_p95": 0.1711794965246723,
+      "front_crowns_below_undercoat_local_p95_fraction": 0.47570303392191987,
+      "group_spread_control_parameter": {
+        "0": {
+          "tangent_cloud_rms": {
+            "min": 0.022011830960271553,
+            "p05": 0.026568699666497563,
+            "median": 0.03181670496256218,
+            "mean": 0.031875740860698665,
+            "p95": 0.03745127911492167,
+            "max": 0.04397838549617001
+          },
+          "group_center_outward_height": {
+            "min": -0.0016373056963443764,
+            "p05": -0.0012533799615971277,
+            "median": -0.0009037806935372567,
+            "mean": -0.0009138231399896093,
+            "p95": -0.0006229369604383911,
+            "max": -0.00030930980673611673
+          }
+        },
+        "0.25": {
+          "tangent_cloud_rms": {
+            "min": 0.01723418098105829,
+            "p05": 0.02155309188662865,
+            "median": 0.026233065013612823,
+            "mean": 0.02628234460928897,
+            "p95": 0.031411775127932785,
+            "max": 0.037600653200532685
+          },
+          "group_center_outward_height": {
+            "min": 0.004417194945061657,
+            "p05": 0.005080068084742921,
+            "median": 0.00581627562078426,
+            "mean": 0.0058192590578460225,
+            "p95": 0.0065978049470265246,
+            "max": 0.007783621293089777
+          }
+        },
+        "0.5": {
+          "tangent_cloud_rms": {
+            "min": 0.014613763281496559,
+            "p05": 0.018733177734126326,
+            "median": 0.023040359600200858,
+            "mean": 0.02308572527505656,
+            "p95": 0.02780296311160021,
+            "max": 0.034408649612924475
+          },
+          "group_center_outward_height": {
+            "min": 0.011134376067781565,
+            "p05": 0.01242261072216503,
+            "median": 0.013573887390506603,
+            "mean": 0.013570212214918241,
+            "p95": 0.014697609398716968,
+            "max": 0.016384036642086156
+          }
+        },
+        "0.75": {
+          "tangent_cloud_rms": {
+            "min": 0.012712499131173761,
+            "p05": 0.016115145042368523,
+            "median": 0.02000548972221625,
+            "mean": 0.02001676655973051,
+            "p95": 0.024241036290634746,
+            "max": 0.02979869263722168
+          },
+          "group_center_outward_height": {
+            "min": 0.012643980205858451,
+            "p05": 0.014488593182983,
+            "median": 0.01738116292600505,
+            "mean": 0.017463268300836603,
+            "p95": 0.020437074857100692,
+            "max": 0.022712579546573772
+          }
+        },
+        "1": {
+          "tangent_cloud_rms": {
+            "min": 0.011867423810128746,
+            "p05": 0.014236522582794372,
+            "median": 0.017832497760652658,
+            "mean": 0.017968258659075143,
+            "p95": 0.022162542824800926,
+            "max": 0.027590283265356962
+          },
+          "group_center_outward_height": {
+            "min": 0.008693533697905953,
+            "p05": 0.010866386931892607,
+            "median": 0.013791250328664562,
+            "mean": 0.015310308973524051,
+            "p95": 0.021260545991449806,
+            "max": 0.023414559974255556
+          }
+        }
+      },
+      "root_to_guide_tangent_distance": {
+        "min": 8.670696311323662e-05,
+        "p05": 0.00711212353037812,
+        "median": 0.02668542455658445,
+        "mean": 0.02869390116809305,
+        "p95": 0.05708339892897999,
+        "max": 0.11112289812765744
+      },
+      "root_to_guide_distance_over_evaluated_arc": {
+        "min": 0.0023816115259730013,
+        "p05": 0.18615035739946545,
+        "median": 0.678398974625716,
+        "mean": 0.7256595263951948,
+        "p95": 1.421643832240776,
+        "max": 80.52942467986885
+      },
+      "authored_guide_crown_height": {
+        "min": 0.019288514910500414,
+        "p05": 0.021398407569512445,
+        "median": 0.023598110485227863,
+        "mean": 0.02357838279799831,
+        "p95": 0.025683629934816328,
+        "max": 0.02834529018909899
+      },
+      "native_input_rest_crown_height": {
+        "min": 0.0006007090069320668,
+        "p05": 0.027886871823787632,
+        "median": 0.03796374217087446,
+        "mean": 0.038290473514853936,
+        "p95": 0.049792340197871536,
+        "max": 0.07048959524281424
+      }
+    },
+    "GN2": {
+      "evaluated_positions_sha256": "92f1fe159e52c89b734063d55875642df898bbd25f89116d1aa1e155a80b71bb",
+      "native_positions_sha256": "15d47586f28f1558a721700fc071a21282e3e6b9240ef4fe481b2997ff857b5d",
+      "roots_sha256": "eb3d56ef87f5e9c835c7791bf3ebbf50c84b3f2ab328233112dbaa2db1ddfd94",
+      "finite": true,
+      "front_curves": 35169,
+      "crown_height_all": {
+        "min": 0.00024513120297327105,
+        "p05": 0.002644237985282643,
+        "median": 0.011453201196145653,
+        "mean": 0.012562021219235104,
+        "p95": 0.024480041217740747,
+        "max": 0.032989164182786676
+      },
+      "crown_height_front": {
+        "min": 0.00024513120297327105,
+        "p05": 0.002575138841955679,
+        "median": 0.011351508512100667,
+        "mean": 0.012476498810894045,
+        "p95": 0.024540869194176307,
+        "max": 0.03284374751285071
+      },
+      "tip_height_all": {
+        "min": -0.04976572454758318,
+        "p05": -0.020378528374140267,
+        "median": -0.0013159903867643818,
+        "mean": 0.0018692859240802323,
+        "p95": 0.024480041217740747,
+        "max": 0.032989164182786676
+      },
+      "tip_height_front": {
+        "min": -0.04913508280755051,
+        "p05": -0.02063411489526345,
+        "median": -0.001475555199152076,
+        "mean": 0.0016521304430176789,
+        "p95": 0.024540869194176307,
+        "max": 0.03284374751285071
+      },
+      "arc_length": {
+        "min": 0.021502162808030426,
+        "p05": 0.028872686958352798,
+        "median": 0.03970153366448474,
+        "mean": 0.04010539722346011,
+        "p95": 0.05263166088233805,
+        "max": 0.07554175145368737
+      },
+      "minimum_surface_height": {
+        "min": -0.04976572454758318,
+        "p05": -0.020394167440948133,
+        "median": -0.0013231777150568627,
+        "mean": -0.005253630578470508,
+        "p95": 1.2673944978316849e-08,
+        "max": 3.2023873292375324e-08
+      },
+      "arc_fraction_below_minus_0_001_mean": 0.13370009491615914,
+      "curves_below_minus_0_001_fraction": 0.5121058823529412,
+      "inside_surface_arc_fraction_mean": 0.15115353860285027,
+      "curves_any_inside_surface_fraction": 0.5697882352941176,
+      "mean_arc_fraction_above_undercoat_global_p95": 0.049295884463807046,
+      "mean_arc_fraction_above_undercoat_local_p95": 0.050918989383761736,
+      "front_mean_arc_fraction_above_undercoat_local_p95": 0.05148589732176438,
+      "front_crowns_below_undercoat_local_p95_fraction": 0.7764508516022633,
+      "group_spread_control_parameter": {
+        "0": {
+          "tangent_cloud_rms": {
+            "min": 0.022011830960271553,
+            "p05": 0.026568699666497563,
+            "median": 0.03181670496256218,
+            "mean": 0.031875740860698665,
+            "p95": 0.03745127911492167,
+            "max": 0.04397838549617001
+          },
+          "group_center_outward_height": {
+            "min": -0.0016373056963443764,
+            "p05": -0.0012533799615971277,
+            "median": -0.0009037806935372567,
+            "mean": -0.0009138231399896093,
+            "p95": -0.0006229369604383911,
+            "max": -0.00030930980673611673
+          }
+        },
+        "0.25": {
+          "tangent_cloud_rms": {
+            "min": 0.017314453056630593,
+            "p05": 0.021764523730825443,
+            "median": 0.026571417160022946,
+            "mean": 0.026590715010969913,
+            "p95": 0.031830143509019825,
+            "max": 0.03890771144885714
+          },
+          "group_center_outward_height": {
+            "min": 0.002543969238068603,
+            "p05": 0.003999064858179479,
+            "median": 0.005062320449548899,
+            "mean": 0.005035301106999631,
+            "p95": 0.005996022186724053,
+            "max": 0.006857670268257301
+          }
+        },
+        "0.5": {
+          "tangent_cloud_rms": {
+            "min": 0.015921609072432362,
+            "p05": 0.02012153384008837,
+            "median": 0.024822455660543953,
+            "mean": 0.024866648058381697,
+            "p95": 0.02998068378202934,
+            "max": 0.037062159417738307
+          },
+          "group_center_outward_height": {
+            "min": 0.001117035869629273,
+            "p05": 0.004304176847996635,
+            "median": 0.00794171744509031,
+            "mean": 0.008165085871925031,
+            "p95": 0.011893923146059342,
+            "max": 0.013684808414834857
+          }
+        },
+        "0.75": {
+          "tangent_cloud_rms": {
+            "min": 0.0153390658063216,
+            "p05": 0.018771052259205476,
+            "median": 0.0236320901465581,
+            "mean": 0.023802343391587738,
+            "p95": 0.02941326004229859,
+            "max": 0.03628025416580087
+          },
+          "group_center_outward_height": {
+            "min": -0.006889574380167631,
+            "p05": -0.0032872355397705177,
+            "median": 0.002005514579504801,
+            "mean": 0.005519035473819831,
+            "p95": 0.018292433268306863,
+            "max": 0.020479435716617908
+          }
+        },
+        "1": {
+          "tangent_cloud_rms": {
+            "min": 0.013965650675071759,
+            "p05": 0.01772133659233972,
+            "median": 0.0231703641014849,
+            "mean": 0.023365136537456564,
+            "p95": 0.02976950705545992,
+            "max": 0.037557934385461754
+          },
+          "group_center_outward_height": {
+            "min": -0.015596463538854759,
+            "p05": -0.011432570501141617,
+            "median": -0.006307868828810351,
+            "mean": 0.0014147667796783952,
+            "p95": 0.022613330185801323,
+            "max": 0.024558488650376825
+          }
+        }
+      },
+      "root_to_guide_tangent_distance": {
+        "min": 8.670696311323662e-05,
+        "p05": 0.00711212353037812,
+        "median": 0.02668542455658445,
+        "mean": 0.02869390116809305,
+        "p95": 0.05708339892897999,
+        "max": 0.11112289812765744
+      },
+      "root_to_guide_distance_over_evaluated_arc": {
+        "min": 0.0023736651497588824,
+        "p05": 0.18574302743535037,
+        "median": 0.6774158283486751,
+        "mean": 0.7213209253567563,
+        "p95": 1.4196898953766428,
+        "max": 2.4485821463487434
+      },
+      "authored_guide_crown_height": {
+        "min": 0.014079115259355502,
+        "p05": 0.015446829012100725,
+        "median": 0.01862271539568429,
+        "mean": 0.018945354791068188,
+        "p95": 0.02298751206465578,
+        "max": 0.02452899530544249
+      },
+      "native_input_rest_crown_height": {
+        "min": 0.020886889343084792,
+        "p05": 0.027889792164681904,
+        "median": 0.037964110356163,
+        "mean": 0.03829356210688978,
+        "p95": 0.049792340197871536,
+        "max": 0.07048959524281424
+      }
+    },
+    "E": {
+      "evaluated_positions_sha256": "bea622431b216ed077f2c833ed539a1dfcc0bac0256aefcc0ec6a385c85af467",
+      "native_positions_sha256": "bea622431b216ed077f2c833ed539a1dfcc0bac0256aefcc0ec6a385c85af467",
+      "roots_sha256": "eb3d56ef87f5e9c835c7791bf3ebbf50c84b3f2ab328233112dbaa2db1ddfd94",
+      "finite": true,
+      "front_curves": 35169,
+      "crown_height_all": {
+        "min": 0.008238898026994032,
+        "p05": 0.017183881579860494,
+        "median": 0.02863990813776149,
+        "mean": 0.028896048595007426,
+        "p95": 0.04141022516278009,
+        "max": 0.053346536728640266
+      },
+      "crown_height_front": {
+        "min": 0.008238898026994032,
+        "p05": 0.017113396442240025,
+        "median": 0.02859010835508362,
+        "mean": 0.028825077351924803,
+        "p95": 0.04140165819417971,
+        "max": 0.053346536728640266
+      },
+      "tip_height_all": {
+        "min": 0.008238898026994032,
+        "p05": 0.017183881579860494,
+        "median": 0.02863990813776149,
+        "mean": 0.028896041650008492,
+        "p95": 0.04141022516278009,
+        "max": 0.053346536728640266
+      },
+      "tip_height_front": {
+        "min": 0.008238898026994032,
+        "p05": 0.017113396442240025,
+        "median": 0.02859010835508362,
+        "mean": 0.028825070945838298,
+        "p95": 0.04140165819417971,
+        "max": 0.053346536728640266
+      },
+      "arc_length": {
+        "min": 0.030454866513238237,
+        "p05": 0.040993731988613315,
+        "median": 0.05634620760097104,
+        "mean": 0.05693102760597196,
+        "p95": 0.0747783078483132,
+        "max": 0.1075503141344862
+      },
+      "minimum_surface_height": {
+        "min": -3.155865996921283e-08,
+        "p05": -1.7679787025497728e-08,
+        "median": -9.800373580604528e-12,
+        "mean": -3.67063361288145e-11,
+        "p95": 1.748049516558994e-08,
+        "max": 3.2023873292375324e-08
+      },
+      "arc_fraction_below_minus_0_001_mean": 0.0,
+      "curves_below_minus_0_001_fraction": 0.0,
+      "inside_surface_arc_fraction_mean": 0.0,
+      "curves_any_inside_surface_fraction": 0.0,
+      "mean_arc_fraction_above_undercoat_global_p95": 0.3620148226223377,
+      "mean_arc_fraction_above_undercoat_local_p95": 0.3670824410124199,
+      "front_mean_arc_fraction_above_undercoat_local_p95": 0.36611493784068444,
+      "front_crowns_below_undercoat_local_p95_fraction": 0.08598481617333448,
+      "group_spread_control_parameter": {
+        "0": {
+          "tangent_cloud_rms": {
+            "min": 0.022011830960271553,
+            "p05": 0.026568699666497563,
+            "median": 0.03181670496256218,
+            "mean": 0.031875740860698665,
+            "p95": 0.03745127911492167,
+            "max": 0.04397838549617001
+          },
+          "group_center_outward_height": {
+            "min": -0.0016373056963443764,
+            "p05": -0.0012533799615971277,
+            "median": -0.0009037806935372567,
+            "mean": -0.0009138231399896093,
+            "p95": -0.0006229369604383911,
+            "max": -0.00030930980673611673
+          }
+        },
+        "0.25": {
+          "tangent_cloud_rms": {
+            "min": 0.013978731259955043,
+            "p05": 0.01776743956963454,
+            "median": 0.021729149829073615,
+            "mean": 0.021814819424986774,
+            "p95": 0.026284743774297337,
+            "max": 0.03278036930687156
+          },
+          "group_center_outward_height": {
+            "min": 0.0067840890529461545,
+            "p05": 0.007827526294300901,
+            "median": 0.00897832815891651,
+            "mean": 0.008967183362844237,
+            "p95": 0.010102259629352432,
+            "max": 0.011233174235673622
+          }
+        },
+        "0.5": {
+          "tangent_cloud_rms": {
+            "min": 0.005085648307292618,
+            "p05": 0.007729081997858339,
+            "median": 0.011200314642008056,
+            "mean": 0.011250522799369814,
+            "p95": 0.01505330248856943,
+            "max": 0.02153003877902634
+          },
+          "group_center_outward_height": {
+            "min": 0.011335575540123896,
+            "p05": 0.013704857726759176,
+            "median": 0.017468554074961503,
+            "mean": 0.017343694925276147,
+            "p95": 0.020751746245155973,
+            "max": 0.022835893258159982
+          }
+        },
+        "0.75": {
+          "tangent_cloud_rms": {
+            "min": 0.006823542473757664,
+            "p05": 0.009692982601042609,
+            "median": 0.013146667029502157,
+            "mean": 0.013225370900898772,
+            "p95": 0.017088674104017435,
+            "max": 0.023508664404871683
+          },
+          "group_center_outward_height": {
+            "min": 0.016170291134787178,
+            "p05": 0.01923721713102516,
+            "median": 0.02379244610480547,
+            "mean": 0.023658189997038226,
+            "p95": 0.02783393433228546,
+            "max": 0.030400620049312915
+          }
+        },
+        "1": {
+          "tangent_cloud_rms": {
+            "min": 0.009472850659015207,
+            "p05": 0.012811989518980788,
+            "median": 0.016444545521268176,
+            "mean": 0.01651367518591126,
+            "p95": 0.02061817594075418,
+            "max": 0.026160353515055985
+          },
+          "group_center_outward_height": {
+            "min": 0.02095969555257785,
+            "p05": 0.024311428683243243,
+            "median": 0.028801106251498353,
+            "mean": 0.028719366022887202,
+            "p95": 0.03302933236459813,
+            "max": 0.03566319038866119
+          }
+        }
+      },
+      "root_to_guide_tangent_distance": {
+        "min": 8.670696311323662e-05,
+        "p05": 0.00711212353037812,
+        "median": 0.02668542455658445,
+        "mean": 0.02869390116809305,
+        "p95": 0.05708339892897999,
+        "max": 0.11112289812765744
+      },
+      "root_to_guide_distance_over_evaluated_arc": {
+        "min": 0.0016728196624570429,
+        "p05": 0.13090700440948919,
+        "median": 0.4772703523427043,
+        "mean": 0.5080230046565833,
+        "p95": 0.9997711245346491,
+        "max": 1.7175882156635545
+      }
+    },
+    "v3": {
+      "evaluated_positions_sha256": "9152b9e5d798315014a68df68bae0b885fc1bc031de6d04aa4220feb4a5667d1",
+      "native_positions_sha256": "9152b9e5d798315014a68df68bae0b885fc1bc031de6d04aa4220feb4a5667d1",
+      "roots_sha256": "eb3d56ef87f5e9c835c7791bf3ebbf50c84b3f2ab328233112dbaa2db1ddfd94",
+      "finite": true,
+      "front_curves": 35169,
+      "crown_height_all": {
+        "min": 0.0003260357467479652,
+        "p05": 0.022636083328601873,
+        "median": 0.03261582448947435,
+        "mean": 0.03258850459258094,
+        "p95": 0.04239098434610035,
+        "max": 0.04869710118894201
+      },
+      "crown_height_front": {
+        "min": 0.0003260357467479652,
+        "p05": 0.02261468350749167,
+        "median": 0.032560065644564776,
+        "mean": 0.032538882057179315,
+        "p95": 0.04235096922672045,
+        "max": 0.047129476771108576
+      },
+      "tip_height_all": {
+        "min": 0.00013223578747879885,
+        "p05": 0.022636083328601873,
+        "median": 0.03261582448947435,
+        "mean": 0.03258849982574784,
+        "p95": 0.04239098434610035,
+        "max": 0.04869710118894201
+      },
+      "tip_height_front": {
+        "min": 0.00013223578747879885,
+        "p05": 0.02261468350749167,
+        "median": 0.032560065644564776,
+        "mean": 0.03253887053621444,
+        "p95": 0.04235096922672045,
+        "max": 0.047129476771108576
+      },
+      "arc_length": {
+        "min": 0.0304548383948832,
+        "p05": 0.04099373465878823,
+        "median": 0.05634619680829494,
+        "mean": 0.05693102759976149,
+        "p95": 0.07477829777988058,
+        "max": 0.10755031993094132
+      },
+      "minimum_surface_height": {
+        "min": -3.155865996921283e-08,
+        "p05": -1.7679787025497728e-08,
+        "median": -9.800373580604528e-12,
+        "mean": -3.67063361288145e-11,
+        "p95": 1.748049516558994e-08,
+        "max": 3.2023873292375324e-08
+      },
+      "arc_fraction_below_minus_0_001_mean": 0.0,
+      "curves_below_minus_0_001_fraction": 0.0,
+      "inside_surface_arc_fraction_mean": 0.0,
+      "curves_any_inside_surface_fraction": 0.0,
+      "mean_arc_fraction_above_undercoat_global_p95": 0.5264841671542548,
+      "mean_arc_fraction_above_undercoat_local_p95": 0.5311726744574403,
+      "front_mean_arc_fraction_above_undercoat_local_p95": 0.5324372167442206,
+      "front_crowns_below_undercoat_local_p95_fraction": 0.00014217066166225938,
+      "group_spread_control_parameter": {
+        "0": {
+          "tangent_cloud_rms": {
+            "min": 0.022011830960271553,
+            "p05": 0.026568699666497563,
+            "median": 0.03181670496256218,
+            "mean": 0.031875740860698665,
+            "p95": 0.03745127911492167,
+            "max": 0.04397838549617001
+          },
+          "group_center_outward_height": {
+            "min": -0.0016373056963443764,
+            "p05": -0.0012533799615971277,
+            "median": -0.0009037806935372567,
+            "mean": -0.0009138231399896093,
+            "p95": -0.0006229369604383911,
+            "max": -0.00030930980673611673
+          }
+        },
+        "0.25": {
+          "tangent_cloud_rms": {
+            "min": 0.021847787297911186,
+            "p05": 0.026281636930790907,
+            "median": 0.031312928017340154,
+            "mean": 0.03139678329955277,
+            "p95": 0.03680314989367533,
+            "max": 0.04288571723084037
+          },
+          "group_center_outward_height": {
+            "min": 0.008274272607337409,
+            "p05": 0.008909627700644664,
+            "median": 0.009567705557275683,
+            "mean": 0.009569624074916204,
+            "p95": 0.010213091433287778,
+            "max": 0.010895837641038736
+          }
+        },
+        "0.5": {
+          "tangent_cloud_rms": {
+            "min": 0.020378847352693755,
+            "p05": 0.024419333651951734,
+            "median": 0.02899778361007072,
+            "mean": 0.029072560416942644,
+            "p95": 0.03392723046343044,
+            "max": 0.038603124680149876
+          },
+          "group_center_outward_height": {
+            "min": 0.01637579024225198,
+            "p05": 0.017441585816262865,
+            "median": 0.018563339036970283,
+            "mean": 0.018566725039867064,
+            "p95": 0.019690537142697973,
+            "max": 0.02076564827901594
+          }
+        },
+        "0.75": {
+          "tangent_cloud_rms": {
+            "min": 0.01584967273540027,
+            "p05": 0.01995729722430083,
+            "median": 0.023783459797969385,
+            "mean": 0.023826866784039415,
+            "p95": 0.027808172954873776,
+            "max": 0.03865382530783142
+          },
+          "group_center_outward_height": {
+            "min": 0.02297618830035016,
+            "p05": 0.024597815890573492,
+            "median": 0.02612542330717868,
+            "mean": 0.026124302107588912,
+            "p95": 0.02768734398285496,
+            "max": 0.02929141861568296
+          }
+        },
+        "1": {
+          "tangent_cloud_rms": {
+            "min": 0.010059855927684188,
+            "p05": 0.013379629766631249,
+            "median": 0.016027946330087573,
+            "mean": 0.01608738184335573,
+            "p95": 0.01897203236881333,
+            "max": 0.0349001223860181
+          },
+          "group_center_outward_height": {
+            "min": 0.028630087142722114,
+            "p05": 0.030531185515095132,
+            "median": 0.03241062785210356,
+            "mean": 0.03241555994276197,
+            "p95": 0.03431561243130816,
+            "max": 0.036198528009543846
+          }
+        }
+      },
+      "root_to_guide_tangent_distance": {
+        "min": 8.670696311323662e-05,
+        "p05": 0.00711212353037812,
+        "median": 0.02668542455658445,
+        "mean": 0.02869390116809305,
+        "p95": 0.05708339892897999,
+        "max": 0.11112289812765744
+      },
+      "root_to_guide_distance_over_evaluated_arc": {
+        "min": 0.0016728198837844637,
+        "p05": 0.13090705516515433,
+        "median": 0.47727037898410873,
+        "mean": 0.508023003986712,
+        "p95": 0.9997712082255267,
+        "max": 1.7175875901793116
+      }
+    }
+  },
+  "source_sha_before": {
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-pile-live-render-1.blend": "ad3459aa5342a1c4861c03309ee5ba150aff4279b435230dd66d4598e4150cd2",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-pile-open-render-2.blend": "ee60ce790de9c26383b9d3a85d1835cb357595bc5493749c8cc4cef6ed97c41c",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-ab-soft-tip-length-1.blend": "c075756879f52c768cf54b69097507f21109896f085341f36da81931a40d627a",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-v3.blend": "fc6ef276d1393ce8a744279b130ca7b16db346c6c55e8079b8b69784a2541fa7",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\tooling\\blender\\plush_hair_nodes_study.py": "94600299d26cfb50c1925d82eaa0e7811d66dcc304ca8d3f70f8dd5c2f88edc1",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\tooling\\blender\\plush_groom_ab.py": "3f3b56a11c7f616a36140f68aaa45ffb4bf01db32e2225a92a319f88fc145ca3",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\tooling\\blender\\plush_cycles.py": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-pile-1.gn-source.py": "37abf278fc7d070eecb50d26029a82b184ca270f4f055f78925ce8186671eff7",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-pile-live-1.gn-source.py": "3f0fbdc4f9edc95ee15c2142ad26384bec8c27907c03d845b5199f82291a1942",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-pile-live-render-1.gn-source.py": "3f0fbdc4f9edc95ee15c2142ad26384bec8c27907c03d845b5199f82291a1942",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-pile-open-2.gn-source.py": "94600299d26cfb50c1925d82eaa0e7811d66dcc304ca8d3f70f8dd5c2f88edc1",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-pile-open-render-2.gn-source.py": "94600299d26cfb50c1925d82eaa0e7811d66dcc304ca8d3f70f8dd5c2f88edc1"
+  },
+  "guide_root_nearest_neighbor_distance": {
+    "min": 0.00014503517013508826,
+    "p05": 0.005005787592381239,
+    "median": 0.017202097922563553,
+    "mean": 0.018353610955355135,
+    "p95": 0.036147359758615494,
+    "max": 0.05647826939821243
+  },
+  "undercoat_common": {
+    "positions_sha256": "b1a76c65c818b6d4cc86d55f3ad7d112cca1cf437ab990247f67816c56d60ffc",
+    "crown_height_all": {
+      "min": 1.807718623298043e-06,
+      "p05": 0.010053482637786949,
+      "median": 0.014554160424037715,
+      "mean": 0.014544440746287631,
+      "p95": 0.018927679752357037,
+      "max": 0.02756358323767617
+    },
+    "crown_height_front": {
+      "min": 4.855908224212565e-06,
+      "p05": 0.010049116032323599,
+      "median": 0.014541001951893576,
+      "mean": 0.014527821608865335,
+      "p95": 0.018895528281908568,
+      "max": 0.024662226308271643
+    },
+    "tip_height_all": {
+      "min": -0.001437303258720797,
+      "p05": 0.010053482637786949,
+      "median": 0.014554160424037715,
+      "mean": 0.014544293900298808,
+      "p95": 0.018927679752357037,
+      "max": 0.02756358323767617
+    },
+    "arc_length": {
+      "min": 0.012767572418758753,
+      "p05": 0.020272352826179698,
+      "median": 0.034496807338785615,
+      "mean": 0.03690398247940065,
+      "p95": 0.06181085814955672,
+      "max": 0.1417046425681883
+    },
+    "inside_surface_arc_fraction_mean": 0.0001902674871994338,
+    "local_envelope_cells": 2048,
+    "cells_with_at_least_5_roots": 1909,
+    "global_crown_p95_threshold": 0.018927679752357037
+  },
+  "source_sha_after": {
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-pile-live-render-1.blend": "ad3459aa5342a1c4861c03309ee5ba150aff4279b435230dd66d4598e4150cd2",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-pile-open-render-2.blend": "ee60ce790de9c26383b9d3a85d1835cb357595bc5493749c8cc4cef6ed97c41c",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-ab-soft-tip-length-1.blend": "c075756879f52c768cf54b69097507f21109896f085341f36da81931a40d627a",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-v3.blend": "fc6ef276d1393ce8a744279b130ca7b16db346c6c55e8079b8b69784a2541fa7",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\tooling\\blender\\plush_hair_nodes_study.py": "94600299d26cfb50c1925d82eaa0e7811d66dcc304ca8d3f70f8dd5c2f88edc1",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\tooling\\blender\\plush_groom_ab.py": "3f3b56a11c7f616a36140f68aaa45ffb4bf01db32e2225a92a319f88fc145ca3",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\tooling\\blender\\plush_cycles.py": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-pile-1.gn-source.py": "37abf278fc7d070eecb50d26029a82b184ca270f4f055f78925ce8186671eff7",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-pile-live-1.gn-source.py": "3f0fbdc4f9edc95ee15c2142ad26384bec8c27907c03d845b5199f82291a1942",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-pile-live-render-1.gn-source.py": "3f0fbdc4f9edc95ee15c2142ad26384bec8c27907c03d845b5199f82291a1942",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-pile-open-2.gn-source.py": "94600299d26cfb50c1925d82eaa0e7811d66dcc304ca8d3f70f8dd5c2f88edc1",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-pile-open-render-2.gn-source.py": "94600299d26cfb50c1925d82eaa0e7811d66dcc304ca8d3f70f8dd5c2f88edc1"
+  },
+  "all_watched_sha_unchanged": true,
+  "diagnostic_script": "C:/Users/yun68/AppData/Local/Temp/plush_gn_height_deep_diag_20261002.py",
+  "diagnostic_script_sha256": "d67fda8f9839afe84368618f80bc013f9edcf05ae531be44b1c1fab7103c9038",
+  "four_input_blend_sha256": {
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-pile-live-render-1.blend": "ad3459aa5342a1c4861c03309ee5ba150aff4279b435230dd66d4598e4150cd2",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-pile-open-render-2.blend": "ee60ce790de9c26383b9d3a85d1835cb357595bc5493749c8cc4cef6ed97c41c",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-ab-soft-tip-length-1.blend": "c075756879f52c768cf54b69097507f21109896f085341f36da81931a40d627a",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-v3.blend": "fc6ef276d1393ce8a744279b130ca7b16db346c6c55e8079b8b69784a2541fa7"
+  },
+  "key_findings": [
+    "GN2 front coat crown median .01135 versus undercoat .01454; 77.6% crowns below local UC P95; only 5.15% mean arc fraction above this geometric envelope. This is not per-pixel visibility.",
+    "GN2 51.21% curves have at least one sample lower than -.001 relative to the analytic ellipsoid; mean arc fraction lower than -.001 is 13.37%. E/v3 both zero.",
+    "Authored root-cloud tangent RMS median .03182 exceeds nearest guide-root distance median .01720. GN2 midcurve tangent RMS .02482 versus E .01120; stronger node parameters have not produced compact spatial tufts."
+  ],
+  "next_authorized_experiment": "GN3 changes only child-to-guide nearest surface-root mapping. GN2 rest/guide positions and radii, authored guide budgets, material, lights, camera, other layers and node parameters stay identical. No crown-height correction in this candidate."
+}

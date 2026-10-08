@@ -1,0 +1,47 @@
+{
+  "blender": "5.2.2 LTS",
+  "kind": "swatch",
+  "variant": "teddy",
+  "preset": {
+    "label": "C · 较长卷毛束",
+    "length": 0.065,
+    "curl": 0.01,
+    "turns": 1.6,
+    "lean": 0.75,
+    "clump": 0.6
+  },
+  "body_hair_counts": {
+    "undercoat": 90000,
+    "coat": 85000,
+    "flyaway": 2500
+  },
+  "hat_hairs": 0,
+  "body_points_per_hair": 12,
+  "resolution": 768,
+  "samples": 96,
+  "angle_degrees": 0,
+  "material": "Cycles Principled Hair BSDF / CHIANG / COLOR",
+  "devices": [
+    {
+      "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+      "type": "OPTIX",
+      "enabled": true
+    },
+    {
+      "name": "13th Gen Intel Core i9-13980HX",
+      "type": "CPU",
+      "enabled": false
+    },
+    {
+      "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+      "type": "CUDA",
+      "enabled": false
+    }
+  ],
+  "seconds": 13.35,
+  "blend": "swatch-teddy-v1.blend",
+  "png": "swatch-teddy-v1.png",
+  "rendered": true,
+  "source": "tooling\\blender\\plush_cycles.py",
+  "scope": "Offline native hair asset study; no 3DGS training or real-time web conversion"
+}

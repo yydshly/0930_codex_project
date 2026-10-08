@@ -1,0 +1,693 @@
+{
+  "validated_at_utc": "2026-10-02T12:31:03.901501+00:00",
+  "validator": "tooling\\blender\\validate_cycles_study.py",
+  "validator_blender": "5.2.2 LTS",
+  "status": "passed",
+  "checks": [
+    {
+      "check": "main engine is Cycles",
+      "passed": true,
+      "details": "CYCLES"
+    },
+    {
+      "check": "main scene selects GPU",
+      "passed": true,
+      "details": "GPU"
+    },
+    {
+      "check": "native hair uses thick curves",
+      "passed": true,
+      "details": "THICK"
+    },
+    {
+      "check": "main render is 1536 square at 100 percent",
+      "passed": true,
+      "details": {
+        "width": 1536,
+        "height": 1536,
+        "percentage": 100
+      }
+    },
+    {
+      "check": "main render sets 384 samples",
+      "passed": true,
+      "details": 384
+    },
+    {
+      "check": "main has assigned orthographic camera",
+      "passed": true,
+      "details": {
+        "name": "Material comparison camera",
+        "type": "ORTHO"
+      }
+    },
+    {
+      "check": "main has three area lights",
+      "passed": true,
+      "details": [
+        {
+          "name": "Large soft key / eye window",
+          "type": "AREA",
+          "watts": 480.0,
+          "size": 3.299999952316284
+        },
+        {
+          "name": "Soft right fill",
+          "type": "AREA",
+          "watts": 150.0,
+          "size": 3.200000047683716
+        },
+        {
+          "name": "Faint rear rim",
+          "type": "AREA",
+          "watts": 200.0,
+          "size": 2.799999952316284
+        }
+      ]
+    },
+    {
+      "check": "main contains exactly four native Curves objects",
+      "passed": true,
+      "details": [
+        "Blue pile · undercoat",
+        "Blue pile · coat",
+        "Blue pile · flyaway",
+        "Black wool · short fibers"
+      ]
+    },
+    {
+      "check": "Blue pile · undercoat is native hair Curves data",
+      "passed": true,
+      "details": "Curves"
+    },
+    {
+      "check": "Blue pile · undercoat curve and point counts",
+      "passed": true,
+      "details": {
+        "curves": 340000,
+        "points": 4080000,
+        "points_per_curve_min": 12,
+        "points_per_curve_max": 12
+      }
+    },
+    {
+      "check": "Blue pile · undercoat positions finite",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Blue pile · undercoat native point radii finite and positive",
+      "passed": true,
+      "details": {
+        "domain": "POINT",
+        "minimum": 1.8000000636675395e-05,
+        "maximum": 0.0003999988839495927
+      }
+    },
+    {
+      "check": "Blue pile · undercoat has connected Chiang COLOR hair BSDF",
+      "passed": true,
+      "details": [
+        {
+          "model": "CHIANG",
+          "parametrization": "COLOR"
+        }
+      ]
+    },
+    {
+      "check": "Blue pile · coat is native hair Curves data",
+      "passed": true,
+      "details": "Curves"
+    },
+    {
+      "check": "Blue pile · coat curve and point counts",
+      "passed": true,
+      "details": {
+        "curves": 320000,
+        "points": 3840000,
+        "points_per_curve_min": 12,
+        "points_per_curve_max": 12
+      }
+    },
+    {
+      "check": "Blue pile · coat positions finite",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Blue pile · coat native point radii finite and positive",
+      "passed": true,
+      "details": {
+        "domain": "POINT",
+        "minimum": 1.8000000636675395e-05,
+        "maximum": 0.0003999997570645064
+      }
+    },
+    {
+      "check": "Blue pile · coat has connected Chiang COLOR hair BSDF",
+      "passed": true,
+      "details": [
+        {
+          "model": "CHIANG",
+          "parametrization": "COLOR"
+        }
+      ]
+    },
+    {
+      "check": "Blue pile · flyaway is native hair Curves data",
+      "passed": true,
+      "details": "Curves"
+    },
+    {
+      "check": "Blue pile · flyaway curve and point counts",
+      "passed": true,
+      "details": {
+        "curves": 9000,
+        "points": 108000,
+        "points_per_curve_min": 12,
+        "points_per_curve_max": 12
+      }
+    },
+    {
+      "check": "Blue pile · flyaway positions finite",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Blue pile · flyaway native point radii finite and positive",
+      "passed": true,
+      "details": {
+        "domain": "POINT",
+        "minimum": 1.8000000636675395e-05,
+        "maximum": 0.0002599981380626559
+      }
+    },
+    {
+      "check": "Blue pile · flyaway has connected Chiang COLOR hair BSDF",
+      "passed": true,
+      "details": [
+        {
+          "model": "CHIANG",
+          "parametrization": "COLOR"
+        }
+      ]
+    },
+    {
+      "check": "Black wool · short fibers is native hair Curves data",
+      "passed": true,
+      "details": "Curves"
+    },
+    {
+      "check": "Black wool · short fibers curve and point counts",
+      "passed": true,
+      "details": {
+        "curves": 90000,
+        "points": 450000,
+        "points_per_curve_min": 5,
+        "points_per_curve_max": 5
+      }
+    },
+    {
+      "check": "Black wool · short fibers positions finite",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Black wool · short fibers native point radii finite and positive",
+      "passed": true,
+      "details": {
+        "domain": "POINT",
+        "minimum": 2.550005774537567e-05,
+        "maximum": 0.00029999748221598566
+      }
+    },
+    {
+      "check": "Black wool · short fibers has connected Chiang COLOR hair BSDF",
+      "passed": true,
+      "details": [
+        {
+          "model": "CHIANG",
+          "parametrization": "COLOR"
+        }
+      ]
+    },
+    {
+      "check": "body totals 669000 native hair curves",
+      "passed": true,
+      "details": 669000
+    },
+    {
+      "check": "swatch-velvet-v3 source snapshot SHA matches metadata and shared v3 source",
+      "passed": true,
+      "details": {
+        "sha256": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3",
+        "snapshot": "swatch-velvet-v3.source.py"
+      }
+    },
+    {
+      "check": "swatch-velvet-v3 saved PNG header/dimensions match metadata",
+      "passed": true,
+      "details": {
+        "width": 768,
+        "height": 768
+      }
+    },
+    {
+      "check": "swatch-velvet-v3 metadata records completed rendering",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-velvet-v3 PNG decodes to nonuniform finite pixels",
+      "passed": true,
+      "details": {
+        "decoded_size": [
+          768,
+          768
+        ],
+        "rgb_standard_deviation": 0.21444255113601685
+      }
+    },
+    {
+      "check": "swatch-velvet-v3 metadata enables only OptiX device",
+      "passed": true,
+      "details": [
+        {
+          "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+          "type": "OPTIX",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "check": "swatch-velvet-v3 matching editable blend exists",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-fleece-v3 source snapshot SHA matches metadata and shared v3 source",
+      "passed": true,
+      "details": {
+        "sha256": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3",
+        "snapshot": "swatch-fleece-v3.source.py"
+      }
+    },
+    {
+      "check": "swatch-fleece-v3 saved PNG header/dimensions match metadata",
+      "passed": true,
+      "details": {
+        "width": 768,
+        "height": 768
+      }
+    },
+    {
+      "check": "swatch-fleece-v3 metadata records completed rendering",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-fleece-v3 PNG decodes to nonuniform finite pixels",
+      "passed": true,
+      "details": {
+        "decoded_size": [
+          768,
+          768
+        ],
+        "rgb_standard_deviation": 0.21969729661941528
+      }
+    },
+    {
+      "check": "swatch-fleece-v3 metadata enables only OptiX device",
+      "passed": true,
+      "details": [
+        {
+          "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+          "type": "OPTIX",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "check": "swatch-fleece-v3 matching editable blend exists",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-teddy-v3 source snapshot SHA matches metadata and shared v3 source",
+      "passed": true,
+      "details": {
+        "sha256": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3",
+        "snapshot": "swatch-teddy-v3.source.py"
+      }
+    },
+    {
+      "check": "swatch-teddy-v3 saved PNG header/dimensions match metadata",
+      "passed": true,
+      "details": {
+        "width": 768,
+        "height": 768
+      }
+    },
+    {
+      "check": "swatch-teddy-v3 metadata records completed rendering",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-teddy-v3 PNG decodes to nonuniform finite pixels",
+      "passed": true,
+      "details": {
+        "decoded_size": [
+          768,
+          768
+        ],
+        "rgb_standard_deviation": 0.2242889404296875
+      }
+    },
+    {
+      "check": "swatch-teddy-v3 metadata enables only OptiX device",
+      "passed": true,
+      "details": [
+        {
+          "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+          "type": "OPTIX",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "check": "swatch-teddy-v3 matching editable blend exists",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-v3 source snapshot SHA matches metadata and shared v3 source",
+      "passed": true,
+      "details": {
+        "sha256": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3",
+        "snapshot": "swatch-reference-v3.source.py"
+      }
+    },
+    {
+      "check": "swatch-reference-v3 saved PNG header/dimensions match metadata",
+      "passed": true,
+      "details": {
+        "width": 768,
+        "height": 768
+      }
+    },
+    {
+      "check": "swatch-reference-v3 metadata records completed rendering",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "swatch-reference-v3 PNG decodes to nonuniform finite pixels",
+      "passed": true,
+      "details": {
+        "decoded_size": [
+          768,
+          768
+        ],
+        "rgb_standard_deviation": 0.21514929831027985
+      }
+    },
+    {
+      "check": "swatch-reference-v3 metadata enables only OptiX device",
+      "passed": true,
+      "details": [
+        {
+          "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+          "type": "OPTIX",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "check": "swatch-reference-v3 matching editable blend exists",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "character-reference-v3 source snapshot SHA matches metadata and shared v3 source",
+      "passed": true,
+      "details": {
+        "sha256": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3",
+        "snapshot": "character-reference-v3.source.py"
+      }
+    },
+    {
+      "check": "character-reference-v3 saved PNG header/dimensions match metadata",
+      "passed": true,
+      "details": {
+        "width": 1536,
+        "height": 1536
+      }
+    },
+    {
+      "check": "character-reference-v3 metadata records completed rendering",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "character-reference-v3 PNG decodes to nonuniform finite pixels",
+      "passed": true,
+      "details": {
+        "decoded_size": [
+          1536,
+          1536
+        ],
+        "rgb_standard_deviation": 0.22858963906764984
+      }
+    },
+    {
+      "check": "character-reference-v3 metadata enables only OptiX device",
+      "passed": true,
+      "details": [
+        {
+          "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+          "type": "OPTIX",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "check": "character-reference-v3 matching editable blend exists",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "character-reference-v3-angle25 source snapshot SHA matches metadata and shared v3 source",
+      "passed": true,
+      "details": {
+        "sha256": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3",
+        "snapshot": "character-reference-v3-angle25.source.py"
+      }
+    },
+    {
+      "check": "character-reference-v3-angle25 saved PNG header/dimensions match metadata",
+      "passed": true,
+      "details": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "check": "character-reference-v3-angle25 metadata records completed rendering",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "character-reference-v3-angle25 PNG decodes to nonuniform finite pixels",
+      "passed": true,
+      "details": {
+        "decoded_size": [
+          1024,
+          1024
+        ],
+        "rgb_standard_deviation": 0.22749105095863342
+      }
+    },
+    {
+      "check": "character-reference-v3-angle25 metadata enables only OptiX device",
+      "passed": true,
+      "details": [
+        {
+          "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+          "type": "OPTIX",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "check": "character-reference-v3-angle25 matching editable blend exists",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "main debug log: hair_kernel",
+      "passed": true,
+      "details": "Use Hair True"
+    },
+    {
+      "check": "main debug log: optix_bvh",
+      "passed": true,
+      "details": "Using fast to trace OptiX BVH"
+    },
+    {
+      "check": "main debug log: optix_device",
+      "passed": true,
+      "details": "Path tracing on: NVIDIA GeForce RTX 4070 Laptop GPU (OptiX) [CUDA_NVIDIA GeForce RTX 4070 Laptop GPU_0000:01:00_OptiX"
+    },
+    {
+      "check": "main debug log: 384_rendered_samples",
+      "passed": true,
+      "details": "Rendered 384 samples in 68.925796 seconds"
+    },
+    {
+      "check": "main debug log: 1536_rendered_resolution",
+      "passed": true,
+      "details": "Resolution: 1536x1536"
+    },
+    {
+      "check": "main debug log: render_time",
+      "passed": true,
+      "details": "Total render time: 71.0747"
+    },
+    {
+      "check": "main blend SHA unchanged after read-only inspection",
+      "passed": true,
+      "details": {
+        "sha256_before": "5c47f6ceceec61879779b97cea51e5b1b5f70bd369a1a996eca3a3f04e6abed0",
+        "sha256_after": "5c47f6ceceec61879779b97cea51e5b1b5f70bd369a1a996eca3a3f04e6abed0"
+      }
+    }
+  ],
+  "errors": [],
+  "journal_baseline": {
+    "count": 68,
+    "sha256": "175aea2000ffb8298c20a76b5889f285d39770235c59a670abacb41c548a017f",
+    "scope": "Supplied prior baseline; validator does not read or change journal"
+  },
+  "scope": "Native geometry/material/render-settings inspection plus saved image/source/log checks. No fidelity score or real-time/3DGS claim.",
+  "native_geometry": [
+    {
+      "object": "Blue pile · undercoat",
+      "object_type": "CURVES",
+      "data_type": "Curves",
+      "curve_count": 340000,
+      "point_count": 4080000,
+      "modifiers": [],
+      "surface_attachment": false
+    },
+    {
+      "object": "Blue pile · coat",
+      "object_type": "CURVES",
+      "data_type": "Curves",
+      "curve_count": 320000,
+      "point_count": 3840000,
+      "modifiers": [],
+      "surface_attachment": false
+    },
+    {
+      "object": "Blue pile · flyaway",
+      "object_type": "CURVES",
+      "data_type": "Curves",
+      "curve_count": 9000,
+      "point_count": 108000,
+      "modifiers": [],
+      "surface_attachment": false
+    },
+    {
+      "object": "Black wool · short fibers",
+      "object_type": "CURVES",
+      "data_type": "Curves",
+      "curve_count": 90000,
+      "point_count": 450000,
+      "modifiers": [],
+      "surface_attachment": false
+    }
+  ],
+  "images_and_sources": [
+    {
+      "name": "swatch-velvet-v3",
+      "png": "swatch-velvet-v3.png",
+      "width": 768,
+      "height": 768,
+      "bytes": 694220,
+      "png_sha256": "4c0fa169ac030a186d88c0dbaa1b99780b07a6839d8aa3f6f94d3dcff8ffdf6e",
+      "source_sha256": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3",
+      "samples": 96,
+      "angle_degrees": 0,
+      "pipeline_seconds": 11.73
+    },
+    {
+      "name": "swatch-fleece-v3",
+      "png": "swatch-fleece-v3.png",
+      "width": 768,
+      "height": 768,
+      "bytes": 719505,
+      "png_sha256": "8af98bb692c1c80b666f36be4b2e83d00b64dbdb8bd61953e7d4177f5c47dd87",
+      "source_sha256": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3",
+      "samples": 96,
+      "angle_degrees": 0,
+      "pipeline_seconds": 8.53
+    },
+    {
+      "name": "swatch-teddy-v3",
+      "png": "swatch-teddy-v3.png",
+      "width": 768,
+      "height": 768,
+      "bytes": 707011,
+      "png_sha256": "f357031a109a7c278ff0dd2b3c09b9c2164fd6f492728d1ba76f74a0c6264633",
+      "source_sha256": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3",
+      "samples": 96,
+      "angle_degrees": 0,
+      "pipeline_seconds": 10.39
+    },
+    {
+      "name": "swatch-reference-v3",
+      "png": "swatch-reference-v3.png",
+      "width": 768,
+      "height": 768,
+      "bytes": 703625,
+      "png_sha256": "7f12f4cb8b8183b683e3b97035eefd8b2724a044537a87aa3f2a23ca8f28b680",
+      "source_sha256": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3",
+      "samples": 96,
+      "angle_degrees": 0,
+      "pipeline_seconds": 12.02
+    },
+    {
+      "name": "character-reference-v3",
+      "png": "character-reference-v3.png",
+      "width": 1536,
+      "height": 1536,
+      "bytes": 3392377,
+      "png_sha256": "12b62c8c3d40701ca22dc9e385b5d4b4906086e901e9fc20b9b97ff9b758f97b",
+      "source_sha256": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3",
+      "samples": 384,
+      "angle_degrees": 0,
+      "pipeline_seconds": 78.89
+    },
+    {
+      "name": "character-reference-v3-angle25",
+      "png": "character-reference-v3-angle25.png",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1159308,
+      "png_sha256": "165ccd4867e21b0b8e221ff8645545aff9d35666785a26d37f146eb61c33cb7a",
+      "source_sha256": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3",
+      "samples": 128,
+      "angle_degrees": 25.0,
+      "pipeline_seconds": 24.97
+    }
+  ],
+  "render_log_evidence": {
+    "hair_kernel": "Use Hair True",
+    "optix_bvh": "Using fast to trace OptiX BVH",
+    "optix_device": "Path tracing on: NVIDIA GeForce RTX 4070 Laptop GPU (OptiX) [CUDA_NVIDIA GeForce RTX 4070 Laptop GPU_0000:01:00_OptiX",
+    "384_rendered_samples": "Rendered 384 samples in 68.925796 seconds",
+    "1536_rendered_resolution": "Resolution: 1536x1536",
+    "render_time": "Total render time: 71.0747"
+  }
+}

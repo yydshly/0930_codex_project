@@ -1,0 +1,124 @@
+{
+  "status": "passed",
+  "mode": "curve",
+  "profile": "soft-tip",
+  "name": "character-reference-guide-v5",
+  "report": "character-reference-guide-v5.ab-report.json",
+  "baseline_source": "artifacts\\cycles-study\\character-reference-v3.source.py",
+  "baseline_sha256": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3",
+  "current_plush_cycles_sha256": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3",
+  "current_source_matches_frozen_v3": true,
+  "wrapper_source": "tooling\\blender\\plush_groom_ab.py",
+  "wrapper_sha256": "37f0fe24d6ed95b9826ae99cc77ed8c0317c787703088be0d9f5d4b0fda7bef6",
+  "forwarded_arguments": [
+    "--kind",
+    "character",
+    "--variant",
+    "reference",
+    "--resolution",
+    "1536",
+    "--samples",
+    "384",
+    "--tag",
+    "guide-v5"
+  ],
+  "formula": {
+    "A": "X_i(t) + alpha(t) * D_i",
+    "B": "X_i(t) + beta(t) * (D_i + U_guide(t) - (X_i(t) - p_i))",
+    "D_i": "Tangential projection of group_root - member_root, exactly as v3",
+    "guide": "group_root + (X_representative(t) - representative_root)",
+    "representative": "Deterministically nearest existing member root to group root"
+  },
+  "controls": "Frozen v3 source, random samples, roots, group membership, generated L/curl/phase/lean, radii, curve count, non-coat layers, materials, density, camera, lights and Cycles settings are unchanged between modes with the same forwarded arguments.",
+  "length_scope": "Only generated length samples are fixed; actual Catmull-Rom arc lengths may change.",
+  "unchanged_objects": {
+    "Blue pile · undercoat": {
+      "curve_count": 340000,
+      "positions_float32_sha256": "8dbbd75dd0a1942db3abb643c755eef55010e1d338f3d74b1d45cd8e0a507b48",
+      "radii_float32_sha256": "5f4848f0ac559967486d673c519909494228bcf3e741c9220e8fea8b9825784e"
+    },
+    "Blue pile · flyaway": {
+      "curve_count": 9000,
+      "positions_float32_sha256": "6d82a57ec1dc188773485bdd3753099661b580063c50dae2c740053ea4eb1827",
+      "radii_float32_sha256": "4a1b4828474bd9ca081dba43bc01ae0e67d700cc97758fb48de4ce4983eb1675"
+    },
+    "Black wool · short fibers": {
+      "curve_count": 90000,
+      "positions_float32_sha256": "d211e1d601ed4cd59df58703b321da260b1c8946344ff27e774320e3016c0471",
+      "radii_float32_sha256": "8972dfa3ef1f7836d2f0c405dfcc3c28e5825d5146f3c94499eb83f239a6b022"
+    }
+  },
+  "coat": {
+    "curve_count": 320000,
+    "points_per_curve": 12,
+    "guide_count": 10000,
+    "members_per_group": 32,
+    "seed": 51,
+    "clump_factor": 0.6,
+    "alpha_profile": "preset.clump * t^2",
+    "profile": "soft-tip",
+    "profile_function": "beta(t) = .88 * smoothstep(clamp(t / .52, 0, 1)) * (1 - .30 * smoothstep(clamp((t - .55) / .45, 0, 1)))",
+    "midpoint_tightness_t_0_5": 0.8761948111060537,
+    "tip_tightness_t_1": 0.616,
+    "residual_formula": "output - p_i - beta*D_i - U_guide = (1-beta)*(U_i-U_guide)",
+    "guide_object": "Blue pile · hidden coat guides",
+    "guides_hide_render": true,
+    "guides_hide_viewport": true,
+    "guide_mapping_attribute": "guide_id (INT, CURVE domain; indexes hidden guide object)",
+    "guide_id_sha256": "3cd27057217857b6bd7d61081228b8961ddf46a38c0904f431fd279200e6af0c",
+    "representative_member_sha256": "099ab556430519fe8a6b5db989a99d72b9a36696878fa274ec24f3cba7bb90f8",
+    "root_replay_error_max": 0.0,
+    "b_vs_a_root_error_max": 0.0,
+    "native_vs_a_root_error_max": 0.0,
+    "a_reconstruction_error_max": 2.220446049250313e-16,
+    "target_replacement_residual_error_max": 1.218643241873707e-16,
+    "a_positions_float32_sha256": "de80962f6f6c365c1140597fa9d9c606f6c04d72b85b1fd795eb0bed6920639d",
+    "b_positions_float32_sha256": "8e9fcdc23d020cb33074b9ca6c291ed970614f731b34034a29dda76d17f20c7d",
+    "output_positions_float32_sha256": "8e9fcdc23d020cb33074b9ca6c291ed970614f731b34034a29dda76d17f20c7d",
+    "unchanged_radii_float32_sha256": "66e142bbaab72eb1a03fe031ec745cd59659ed9e81f07792ecea4c38e58180d3",
+    "arc_length": {
+      "method": "Gauss-Legendre integration of noncyclic uniform Catmull-Rom spline with duplicated end controls, using saved float32 positions",
+      "quadrature_order": 32,
+      "native_basis_source": "https://raw.githubusercontent.com/blender/blender/main/source/blender/blenkernel/intern/curve_catmull_rom.cc",
+      "a": {
+        "minimum": 0.004377561726725742,
+        "maximum": 0.11735476434968566,
+        "mean": 0.05345564282306333,
+        "median": 0.0546788237532686,
+        "p95": 0.07457026931036745,
+        "p99": 0.08344775044321948
+      },
+      "b": {
+        "minimum": 0.006048635218672512,
+        "maximum": 0.18394513367827858,
+        "mean": 0.06382823527657268,
+        "median": 0.06265034656702333,
+        "p95": 0.0941937144021453,
+        "p99": 0.11125622585368432
+      },
+      "b_minus_a": {
+        "minimum": -0.032155726180672826,
+        "maximum": 0.11053646793968326,
+        "mean": 0.010372592453509353,
+        "median": 0.008130515518433818,
+        "p95": 0.03884799549372502,
+        "p99": 0.05437680844601166
+      },
+      "b_minus_a_relative": {
+        "minimum": -0.5022982653509406,
+        "maximum": 4.587230317812942,
+        "mean": 0.24659624632493823,
+        "median": 0.1600772154410727,
+        "p95": 0.9729722364259177,
+        "p99": 1.3148694895182969
+      },
+      "absolute_relative_drift_p95": 0.9729722364259177,
+      "quadrature_check_subset_count": 2048,
+      "a_order16_vs32_absolute_max": 1.7694179454963432e-15,
+      "b_order16_vs32_absolute_max": 5.617693726867046e-09,
+      "scope": "Generated L samples unchanged. Actual geometric arc length may change; no length restoration is applied."
+    }
+  },
+  "rendered": true,
+  "wrapper_snapshot": "character-reference-guide-v5.ab-source.py"
+}

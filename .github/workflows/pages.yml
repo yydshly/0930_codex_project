@@ -55,6 +55,11 @@ jobs:
           node --test projects/004-rhythm-drop/tests/garden.test.mjs
           node --test projects/004-rhythm-drop/tests/ecosystem.test.mjs
           python -m unittest discover -s projects/004-rhythm-drop/tests -p test_drift.py -v
+      - name: Validate and build Plush Lab
+        run: |
+          npm ci --prefix projects/005-plush-lab/tooling
+          npm test --prefix projects/005-plush-lab/tooling
+          npm run build --prefix projects/005-plush-lab/tooling
       - name: Build all static demos
         run: python scripts/build_site.py
       - uses: actions/configure-pages@v5

@@ -1,0 +1,55 @@
+{
+  "kind": "complete character",
+  "rendered": false,
+  "blend": "character-reference-volumetric-fleece-v15.blend",
+  "blend_sha256": "0eda4e3277cbbe48735668faa4aab37cc69714b92e1fa385ebba42a1ae5c8b66",
+  "source": "character-reference-volumetric-fleece-v15.source.py",
+  "source_sha256": "9d7309baf534527a03d0c4f1b1ff8b64a3001680abfdb26e6c33ab948184b846",
+  "historical_inputs": {
+    "character-reference-guide-v6.blend": "9d3adeb4bc4e4a85b3ee8b7de282770de09810dc4f52ba0397412b7cbbe1a60f",
+    "character-reference-v3.source.py": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3"
+  },
+  "old_files_unchanged": true,
+  "geometry": {
+    "main_clumps": 6400,
+    "children_per_clump": 64,
+    "strand_count": 409600,
+    "controls_per_strand": 32,
+    "main_curl_radius": {
+      "min": 0.014002621086109735,
+      "p10": 0.01541682081660163,
+      "median": 0.02133754569745406,
+      "p90": 0.02745980901823687,
+      "max": 0.028997835144587016
+    },
+    "uncompressed_tuft_height": {
+      "min": 0.03300867096454158,
+      "p10": 0.04341106208609975,
+      "median": 0.07075043243123726,
+      "p90": 0.10351227328363287,
+      "max": 0.11799954930857111
+    },
+    "evaluated_normal_height": {
+      "min": 0.00467640021815896,
+      "p10": 0.028070238791406153,
+      "median": 0.06147222779691219,
+      "p90": 0.09180009812116623,
+      "max": 0.12688511610031128
+    },
+    "polyline_arc_length": {
+      "min": 0.013931509107351303,
+      "p10": 0.07090914994478226,
+      "median": 0.12310180068016052,
+      "p90": 0.16103844791650773,
+      "max": 0.23327955603599548
+    },
+    "finite_positive_radii": true,
+    "positions_sha256": "233d25ec19504140bb5aa591b32b34ba64aa21ba8377eec3af8943c960e84030",
+    "radius_sha256": "a1474d593db9f99c0d1a7dafc2a0b1023d769ad7fdecbe2b1e583c290551803c"
+  },
+  "foundation_strands": 155000,
+  "loose_halo_strands": 23000,
+  "method": "Clustered roots, randomized volumetric main curls, partial midlength gathering, secondary curls and released tips; native Catmull-Rom fibers with Chiang scattering in Cycles.",
+  "scope": "Art-directed full groom. Geometry checks do not claim visual acceptance or exact reference reproduction.",
+  "preparation_seconds": 18.870065800001612
+}

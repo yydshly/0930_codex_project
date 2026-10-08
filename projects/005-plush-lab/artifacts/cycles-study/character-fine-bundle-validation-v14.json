@@ -1,0 +1,160 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "old v6 editable scene and image retain exact frozen bytes",
+      "passed": true,
+      "details": {
+        "character-reference-guide-v6.blend": "9d3adeb4bc4e4a85b3ee8b7de282770de09810dc4f52ba0397412b7cbbe1a60f",
+        "character-reference-guide-v6.png": "72b81df3009d7396df05d142192641abf458a5527a258703c60838954e3ba228"
+      }
+    },
+    {
+      "check": "new scene, actual image and source snapshot exist as separate assets",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "actual saved disk reload contains native coat and guide curve objects",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "native saved positions and radii are finite and radii nonnegative",
+      "passed": true,
+      "details": {
+        "coat_curves": 320000,
+        "guide_curves": 40000,
+        "coat_points": 3840000,
+        "guide_points": 480000
+      }
+    },
+    {
+      "check": "actual full coat and guide counts and twelve-control topology",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "independent frozen full-star surface source retains historical SHA",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "actual root coordinates and saved normals come from the true full-star frame",
+      "passed": true,
+      "details": {
+        "normal_attribute": "full_star_normal",
+        "guide_selection": "Every eighth actual full coat root",
+        "maximum_normal_error": 2.9802253109778576e-08
+      }
+    },
+    {
+      "check": "native full-star face and beret compression field matches the inherited feature formula",
+      "passed": true,
+      "details": {
+        "compression_attribute": "full_feature_compression",
+        "compressed_roots": 43923,
+        "minimum": 0.1201678216457367
+      }
+    },
+    {
+      "check": "pile_guide_index has native INT/CURVE dtype and domain",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "guide_curve_index has native INT/CURVE dtype and domain",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "both persistent mappings agree and address the joined guide range",
+      "passed": true,
+      "details": {
+        "join_offset": 320000,
+        "minimum": 0,
+        "maximum": 39999
+      }
+    },
+    {
+      "check": "every actual guide group has children",
+      "passed": true,
+      "details": {
+        "empty": 0,
+        "minimum": 1,
+        "maximum": 39,
+        "mean": 8.0,
+        "median": 7.0
+      }
+    },
+    {
+      "check": "all saved coat mappings are nearest actual guide roots",
+      "passed": true,
+      "details": {
+        "checked_roots": 320000,
+        "mismatches": 0,
+        "maximum_extra_distance": 0.0,
+        "tie_tolerance": 2e-07
+      }
+    },
+    {
+      "check": "visible coat is driven by an enabled geometry-nodes modifier",
+      "passed": true,
+      "details": {
+        "modifiers": [
+          "PLUSH Live Official Hair · pile study"
+        ]
+      }
+    },
+    {
+      "check": "actual enabled GN evaluates finite positive-radius full coat with fixed roots",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "completed Cycles render receipt pins the actual new PNG, scene and source bytes",
+      "passed": true,
+      "details": {
+        "receipt": "character-reference-fine-bundle-v14.render.json",
+        "render_seconds": 47.07512200000929,
+        "device": "Cycles OptiX",
+        "samples": 256
+      }
+    },
+    {
+      "check": "actual final PNG decodes at 1536 square with finite nonconstant RGB pixels",
+      "passed": true,
+      "details": {
+        "width": 1536,
+        "height": 1536,
+        "rgb_span": 0.8901961445808411
+      }
+    },
+    {
+      "check": "old v6 remains unchanged after independent reload",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "check_count": 18,
+  "validated_at_utc": "2026-10-03T02:44:00.889418+00:00",
+  "scope": "Read-only actual saved-scene and PNG verification. Nearest maps checked for the full native coat; no physical softness, contact or reference-match score.",
+  "files": {
+    "character-reference-fine-bundle-v14.blend": {
+      "bytes": 186273364,
+      "sha256": "caf1414603e03cfae03b447969158642a4642e4560677fd63db1f1c4a7e5cfa3"
+    },
+    "character-reference-fine-bundle-v14.png": {
+      "bytes": 2858653,
+      "sha256": "a768b093c8067a2c7f79ec7a6b686f375d515bf4698e718d1a66255c7dbb820e"
+    },
+    "character-reference-fine-bundle-v14.source.py": {
+      "bytes": 14830,
+      "sha256": "2abf069acaff683d139acf20dafff0293fe86f34e0b5df082c5230a7d08e464d"
+    },
+    "validate_full_fine_bundle_v14.py": {
+      "bytes": 12365,
+      "sha256": "42c9b265b8bb2d872f53f437ab85b09d91d1ec4518f223f54eca81de72c8cae2"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-03",
+  "result": "pass_on_current_desktop",
+  "scope": "Full local public Gaussian character adapted into the existing creation, world and splat Three.js scenes. This is asset integration, not a newly authored or trained character.",
+  "source": {
+    "title": "ChatGPT dots - Felipe",
+    "author": "abstrakt",
+    "url": "https://superspl.at/scene/ca6a4c9b",
+    "license": "CC BY 4.0",
+    "localChunks": 6,
+    "gaussians": 3493379,
+    "sphericalHarmonicsDegree": 3,
+    "bytes": 66929437,
+    "integrity": "reference-plush-asset-integrity.json",
+    "integrityRerun": "pass; SHA-256, ZIP CRC32, lengths, counts and SH3 metadata checked"
+  },
+  "rendering": {
+    "engine": "Spark 2.3.1 with existing Three.js renderer, camera and scene",
+    "fullResolution": true,
+    "lodReduction": false,
+    "iframesPerWorkbench": 0,
+    "canvasesPerWorkbench": 1,
+    "coordinateAdaptation": "X rotation pi, centered, normalized to 2.2 scene units",
+    "sorting": "worker",
+    "colorEvaluation": "GPU SH3"
+  },
+  "browserChecks": {
+    "creation": {
+      "fullAssetVisible": true,
+      "frontSpinBounceTintSizeReset": "verified",
+      "oldRecipeFieldsAfterModeSwitch": "preserved",
+      "pngDownloadedAndInspected": "reference-native-creation-export.png",
+      "screenshot": "reference-native-creation.png",
+      "observedFps": [53, 76]
+    },
+    "world": {
+      "fullAssetInExistingFurnitureScene": true,
+      "groundWalking": "verified",
+      "sofaSitAndStand": "verified",
+      "ballChasePickUpReturn": "verified complete cycle",
+      "frontSpinBounceTintSizeReset": "verified",
+      "oldShapeMaterialClothingNameColorsAndLayoutAfterModeSwitch": "preserved",
+      "pngDownloadedAndInspected": "reference-native-world-export.png",
+      "screenshot": "reference-native-world-seated.png",
+      "additionalScreenshot": "reference-native-world.png",
+      "observedFps": [64, 88],
+      "exportFeedback": "已导出包含本地原作与家具的场景 PNG。"
+    },
+    "splat": {
+      "fullAssetVisible": true,
+      "frontSpinBounceTintSizeResetKeyboard": "verified",
+      "oldSeedColorQualityAndImportedDatasetAfterModeSwitch": "preserved",
+      "pngDownloadedAndInspected": "reference-native-splat-export.png",
+      "screenshot": "reference-native-splat.png"
+    },
+    "consoleErrorsInFinalChecks": [],
+    "performanceNote": "Observed UI FPS on this desktop, not a controlled benchmark. Mobile, GPU memory and cold-load timing are unverified."
+  },
+  "automatedChecks": {
+    "command": "node --test ../tests/*.test.mjs",
+    "workingDirectory": "tooling",
+    "tests": 418,
+    "pass": 418,
+    "fail": 0,
+    "topLevelTests": 411,
+    "creationIncomingRecipeRegression": "Five tests execute production selectCharacter, setBackdrop and applyRecipe with scene and DOM stubs, checking hidden original-mode rebuilds and saved backdrop restoration.",
+    "build": "pass"
+  },
+  "preservation": {
+    "oldWorksDraftsCollectionsNotesAndCyclesExperiments": "retained",
+    "oldProjectJournalEntries": 119,
+    "newProjectJournalEntries": 4,
+    "totalProjectJournalEntries": 123,
+    "creationStyleStorage": "separate key",
+    "worldActorFields": "additive backward-compatible fields"
+  },
+  "limitations": [
+    "Asset authored by abstrakt; no claim of new reconstruction or training by this project.",
+    "Tint is overall RGB multiplication; local fur painting and trim are available only on the previous procedural models.",
+    "Whole-character transforms drive movement; no bones, independent fibers, deformable Gaussian training or clothing simulation.",
+    "Baked Gaussian appearance does not physically relight with the furniture lights.",
+    "Native Gaussian model PLY export and wardrobe adaptation are not implemented.",
+    "Full SH3 asset decoding and sorting require modern WebGL hardware; mobile and memory behavior remain unverified."
+  ]
+}

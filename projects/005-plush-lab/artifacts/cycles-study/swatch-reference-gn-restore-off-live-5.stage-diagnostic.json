@@ -1,0 +1,77 @@
+{
+  "scope": "Read-only actual saved GN4 stage evaluation; root output links changed only in memory, restored, no blend save/render. Not opacity/pixel occlusion.",
+  "inputs_sha256": {
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-undercoat-short-live-4.blend": "99bf6bfaa080723b699d0a2a5db73c145ded5d30d7a799a60609276b4bb66295",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-undercoat-short-live-4.source.py": "5b1d9049cec289828a6e354ce334d37873fa8343c4f5a0aa848315732125609c",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-undercoat-short-live-4.json": "a30b5305af30029af284168fa87943ade21d8c218dc596c58a02537050f48b18",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-undercoat-short-live-4.gn-report.json": "4d573102f483ea8f5355d079f4e6926395591204ad53b49711fc642c87201a60",
+    "F:\\codex_project\\0930_codex_project\\projects\\005-plush-lab\\artifacts\\cycles-study\\swatch-reference-gn-nearest-render-3.gn-source.py": "be7730c0ddba22109ebc31dd44e8660672df7fd2cb8d361093688ce9fcc2c927"
+  },
+  "measurement_input_sha_unchanged": true,
+  "measurement_script": "C:\\Users\\yun68\\AppData\\Local\\Temp\\plush_gn4_stage_readonly.py",
+  "measurement_script_sha256": "ef2d2fc1dcda97fb323436ac1be4fbf8b1d2710772d7c7140b57f9711a469a77",
+  "method": {
+    "ellipsoid_half_axes": [
+      0.64,
+      0.43,
+      0.54
+    ],
+    "height": "(sum((p/axes)^2)-1)/(2*norm(p/axes^2))",
+    "curve_samples": "Eight Gauss-Legendre samples on every uniform Catmull-Rom segment, duplicated endpoint controls; curve crown=max sampled height",
+    "bypass": "Temporarily connect outer Group Output Geometry to each official group's geometry output. Joined output coat first85000 then2657 guides; take first85000 for coat. Restore original output link at end.",
+    "normal_profile": "At 12 saved controls, dot(point-root, normalized(root/axes^2)); summarized median per control",
+    "root_tangent": "normalized(control1-control0) dot normalized(root/axes^2)"
+  },
+  "raw_guides": {
+    "count": 2657,
+    "crown_median": 0.01862271539568429,
+    "crown_p95": 0.02298751206465578,
+    "below_minus_0_001_fraction": 0.0,
+    "root_tangent_normal_dot_median": 0.9609634628823615,
+    "root_local_normal_height_control_median": [
+      0.0,
+      0.004773254018604659,
+      0.009121642211389195,
+      0.012653197893379244,
+      0.015042205095738427,
+      0.016126030853311275,
+      0.016002177232646422,
+      0.01688688481592352,
+      0.01653312973642795,
+      0.014176669472089063,
+      0.0114335376687157,
+      0.008690436722186168
+    ]
+  },
+  "coat_stages": {
+    "Curl Hair Curves": {
+      "crown_median": 0.021260510723226267,
+      "below_minus_0_001_fraction": 0.0,
+      "deep_arc_fraction_mean": 0.0,
+      "arc_mean_order8": 0.03922611413984708
+    },
+    "Clump Hair Curves": {
+      "crown_median": 0.01616611159151194,
+      "below_minus_0_001_fraction": 0.0032941176470588237,
+      "deep_arc_fraction_mean": 9.300619245604708e-05,
+      "arc_mean_order8": 0.039204551661996906
+    },
+    "Restore Curve Segment Length": {
+      "crown_median": 0.013165960307003339,
+      "below_minus_0_001_fraction": 0.4451764705882353,
+      "deep_arc_fraction_mean": 0.07354615605709192,
+      "arc_mean_order8": 0.04012902284449533
+    },
+    "Set Hair Curve Profile": {
+      "crown_median": 0.013165960307003339,
+      "below_minus_0_001_fraction": 0.4451764705882353,
+      "deep_arc_fraction_mean": 0.07354615605709192
+    }
+  },
+  "official_internal_evidence": {
+    "Restore Curve Segment Length": "Current Curve Segment Direction scaled by Mix(current segment length, Reference Position adjacent-point distance, Factor); Accumulate Field Leading, root position, optional pinned translation. No surface constraint in this tree.",
+    "Clump Hair Curves": "Mix current Position toward sampled guide Position plus root/frame offsets; its own Restore Curve Segment Length is selected by Preserve Length, using captured pre-clump position as reference.",
+    "Curl Hair Curves": "Sample guide by current Spline Parameter Length, combine guide-position difference with rotating frame offset, apply along-length Factor as Set Position Offset."
+  },
+  "limitations": "First-order signed analytic ellipsoid height, not strict closest projection or pixel occlusion. Stage sampling includes native joined guides; final root lock is separately verified in GN5. This diagnosis does not promise thick reference curls."
+}

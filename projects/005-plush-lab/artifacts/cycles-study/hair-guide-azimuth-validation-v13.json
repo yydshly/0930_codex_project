@@ -1,0 +1,5355 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "immutable GN12 inspection helper bytes",
+      "passed": true,
+      "details": {
+        "path": "tooling\\blender\\validate_curl_phase_scope_assets.py",
+        "actual_sha256": "c4f374f757ee8417bc6eb57475b1fbe4ef7214319c354bfd674e6a8d1e4a48a6",
+        "expected_sha256": "c4f374f757ee8417bc6eb57475b1fbe4ef7214319c354bfd674e6a8d1e4a48a6"
+      }
+    },
+    {
+      "check": "immutable GN12 r2 report bytes",
+      "passed": true,
+      "details": {
+        "path": "artifacts\\cycles-study\\hair-curl-phase-scope-validation-v12-r2.json",
+        "actual_sha256": "cd624cc4750d79d34f4424ed53ab9c8deecc748b173b320456b1cdbcb0636208",
+        "expected_sha256": "cd624cc4750d79d34f4424ed53ab9c8deecc748b173b320456b1cdbcb0636208"
+      }
+    },
+    {
+      "check": "all 64 previously pinned historical GN12 inputs retain exact SHA256",
+      "passed": true,
+      "details": {
+        "mismatches": []
+      }
+    },
+    {
+      "check": "frozen actual GN11 baseline bytes",
+      "passed": true,
+      "details": {
+        "path": "artifacts\\cycles-study\\swatch-reference-gn-clump-profile-live7-11.blend",
+        "actual_sha256": "487e857487a6489bfb09371575d29ee6f793af460976ba1af593569f1382c26d",
+        "expected_sha256": "487e857487a6489bfb09371575d29ee6f793af460976ba1af593569f1382c26d"
+      }
+    },
+    {
+      "check": "actual final GN13 source bytes",
+      "passed": true,
+      "details": {
+        "path": "tooling\\blender\\plush_guide_azimuth_study.py",
+        "actual_sha256": "94018212d0c0c5cbc063f71158cc92d5a88b59cb6b69ca374ce7cdb7a3296bcb",
+        "expected_sha256": "94018212d0c0c5cbc063f71158cc92d5a88b59cb6b69ca374ce7cdb7a3296bcb"
+      }
+    },
+    {
+      "check": "GN11 control: actual post-Curl is_guide and adapted Random Offset have CURVE domain; values match exact intended scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "GN11 control: temporary field/output probe restores complete scene/graph/native/evaluation bitwise",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "frozen actual GN13 authoring snapshot bytes",
+      "passed": true,
+      "details": {
+        "path": "artifacts\\cycles-study\\swatch-reference-gn-guide-azimuth-live-13.source.py",
+        "actual_sha256": "94018212d0c0c5cbc063f71158cc92d5a88b59cb6b69ca374ce7cdb7a3296bcb",
+        "expected_sha256": "94018212d0c0c5cbc063f71158cc92d5a88b59cb6b69ca374ce7cdb7a3296bcb"
+      }
+    },
+    {
+      "check": "actual authoring provenance references frozen GN11 and exact source; producer pass flag is not a validation input",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "real separate completed rendering agrees with CPU precheck and metadata",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "actual rendered blend bytes match receipt",
+      "passed": true,
+      "details": {
+        "path": "artifacts\\cycles-study\\swatch-reference-gn-guide-azimuth-live-13.blend",
+        "actual_sha256": "0aa862080ef2d2f4ef07c1eb06c09c1ad6feb7ce96975db45f1a61ed4095d8f4",
+        "expected_sha256": "0aa862080ef2d2f4ef07c1eb06c09c1ad6feb7ce96975db45f1a61ed4095d8f4"
+      }
+    },
+    {
+      "check": "actual PNG bytes match receipt",
+      "passed": true,
+      "details": {
+        "path": "artifacts\\cycles-study\\swatch-reference-gn-guide-azimuth-live-13.png",
+        "actual_sha256": "eb19a8dd334886eca3d60c68ba804704a363858a94781dfea519fc00ef623a71",
+        "expected_sha256": "eb19a8dd334886eca3d60c68ba804704a363858a94781dfea519fc00ef623a71"
+      }
+    },
+    {
+      "check": "render receipt references exactly the frozen authoring source snapshot",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "actual rendered PNG decodes at 768 square with finite nonconstant pixels",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "actual saved GN13 blend bytes match authoring descriptor",
+      "passed": true,
+      "details": {
+        "path": "artifacts\\cycles-study\\swatch-reference-gn-guide-azimuth-live-13.blend",
+        "actual_sha256": "0aa862080ef2d2f4ef07c1eb06c09c1ad6feb7ce96975db45f1a61ed4095d8f4",
+        "expected_sha256": "0aa862080ef2d2f4ef07c1eb06c09c1ad6feb7ce96975db45f1a61ed4095d8f4"
+      }
+    },
+    {
+      "check": "entire scene/material/light/camera/render/meshes/typed controls and visibility remain frozen GN11",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "complete actual GN11 graph, profile mapping, interface and nested official assets remain bitwise fixed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "all native coat/UC/hidden flyaway, guide radii/rest/IDs/maps and evaluated attributes outside authorized positions/derived coat radii stay exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "every saved native guide coordinate exactly matches independent seeded Rodrigues f64 to f32 reconstruction with original root bits restored",
+      "passed": true,
+      "details": {
+        "actual_sha256": "86d34664c52b97f872258682fbd109d85f21eb3b5a3b93bc942b39aa01832d4c",
+        "independent_expected_sha256": "86d34664c52b97f872258682fbd109d85f21eb3b5a3b93bc942b39aa01832d4c",
+        "maximum_absolute_difference_scene_units": 0.0
+      }
+    },
+    {
+      "check": "all 2657 native roots and every native radius remain bitwise GN11; guide object has no modifiers",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "actual normal projections and all control-pair distances satisfy measured f32 quantization bounds",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "all guide Catmull GL32 arcs retain rigid-rotation values within integrated quantization-derivative bounds",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "every native guide actually changes under the seeded full-bundle azimuth rotation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "guide evaluation is exactly authored native rotated controls and all saved coat counts/12-control topology stay fixed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "all actual final normal-output 85000 child roots and root radii remain strictly bitwise GN11",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "GN13 actual: actual post-Curl is_guide and adapted Random Offset have CURVE domain; values match exact intended scope",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "GN13 actual: temporary field/output probe restores complete scene/graph/native/evaluation bitwise",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "intermediate official Curl counts/mask/offset topology remain frozen",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "replacing only rotated guides with original GN11 buffers bitwise reproduces GN11 final coat positions/radii",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "restoring rotated guide buffers exactly restores the saved candidate native/evaluated positions/radii",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "independent in-memory guide and evaluated child buffers restore bitwise",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "independent probe restores every actual native guide/coat attribute, including rest and IDs",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "independent probe retains exact evaluated roots, root radii, count and offsets",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "independently guide-perturbed evaluated coat: actual native count/topology",
+      "passed": true,
+      "details": {
+        "curves": 85000,
+        "points": 1020000,
+        "expected_curves": 85000
+      }
+    },
+    {
+      "check": "independently guide-perturbed evaluated coat: finite actual native positions",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "independently guide-perturbed evaluated coat: finite nonnegative POINT radii with positive roots",
+      "passed": true,
+      "details": {
+        "minimum": 0.00013200096145737916,
+        "maximum": 0.00039999629370868206,
+        "zero_radius_points": 0
+      }
+    },
+    {
+      "check": "independent control6 edit genuinely propagates only to mapped actual children",
+      "passed": true,
+      "details": {
+        "guide_gid": 1328,
+        "changed_mapped_children": 42,
+        "mapped_children": 42,
+        "changed_outside_group": 0
+      }
+    },
+    {
+      "check": "independent probe keeps every outside child position and radius bitwise exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "all reversible probes exactly restore full saved graph/scene/native attributes/evaluation/visibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "actual saved guide rotation order32 Catmull arcs are finite and positive",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "actual saved rotated-guide coat order32 Catmull arcs are finite and positive",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "all 85000 actual final child curves respond to full-bundle guide azimuth authoring",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved disk reload 1 reproduces all actual native/evaluated attributes/graph/scene/visibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved disk reload 2 reproduces all actual native/evaluated attributes/graph/scene/visibility",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\validate_guide_azimuth_assets.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "161fc89578434cec56929af6742009ac3de776d5333566154a3ffc0066aab84a",
+        "sha256_after": "161fc89578434cec56929af6742009ac3de776d5333566154a3ffc0066aab84a"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\validate_curl_phase_scope_assets.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "c4f374f757ee8417bc6eb57475b1fbe4ef7214319c354bfd674e6a8d1e4a48a6",
+        "sha256_after": "c4f374f757ee8417bc6eb57475b1fbe4ef7214319c354bfd674e6a8d1e4a48a6"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\hair-curl-phase-scope-validation-v12-r2.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "cd624cc4750d79d34f4424ed53ab9c8deecc748b173b320456b1cdbcb0636208",
+        "sha256_after": "cd624cc4750d79d34f4424ed53ab9c8deecc748b173b320456b1cdbcb0636208"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\hair-curl-phase-scope-validation-v12.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "9e1d828db4d52f2ad07c830c29f1de545cf029b6f335eeebb0ac68c6646b869a",
+        "sha256_after": "9e1d828db4d52f2ad07c830c29f1de545cf029b6f335eeebb0ac68c6646b869a"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\gn12-independent-validator-first-failed.source.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "0104aae6f18f1a185c3e74c2ee214f55b725366d1bfacca54be2e281368bdba3",
+        "sha256_after": "0104aae6f18f1a185c3e74c2ee214f55b725366d1bfacca54be2e281368bdba3"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\validate_clump_profile_assets.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "0c4eeb0913b6a75bf8a6db55570ca8025d52847798055d66dc05e414a7d0e62e",
+        "sha256_after": "0c4eeb0913b6a75bf8a6db55570ca8025d52847798055d66dc05e414a7d0e62e"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\hair-clump-profile-validation-v11.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "9b2f6380da8bf33f4b020b8932e993410483fbb5871078b651f7ce94d8baf14d",
+        "sha256_after": "9b2f6380da8bf33f4b020b8932e993410483fbb5871078b651f7ce94d8baf14d"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\validate_compact_coil_assets.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "06b9733671fa4e4c210faac17f46cf4f08d7197a8071ad2e41a5d49fb52f1e9c",
+        "sha256_after": "06b9733671fa4e4c210faac17f46cf4f08d7197a8071ad2e41a5d49fb52f1e9c"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\hair-compact-coil-validation-v10.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "a19cf24a15bf4aeb5362d75d8f886addf6402938782183f4c7c0d485b9cb5bc3",
+        "sha256_after": "a19cf24a15bf4aeb5362d75d8f886addf6402938782183f4c7c0d485b9cb5bc3"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\plush_compact_coil_study.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "b72713f128b68ad2b344216f22c34e3046a61e8f1933ed1909fb49d4cd74f5c8",
+        "sha256_after": "b72713f128b68ad2b344216f22c34e3046a61e8f1933ed1909fb49d4cd74f5c8"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\validate_hierarchical_groom_assets.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "2377eaa70f718b2eece72666ac71bd5996c43f77eeca2a416b741ebf24638519",
+        "sha256_after": "2377eaa70f718b2eece72666ac71bd5996c43f77eeca2a416b741ebf24638519"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\hair-hierarchy-validation-v9-r2.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "6a384cd5d7725f75ef368f361b2792bb0686d25b24cc7735bd5d589816b44386",
+        "sha256_after": "6a384cd5d7725f75ef368f361b2792bb0686d25b24cc7735bd5d589816b44386"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\validate_layer_isolation_assets.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "426416d965c7a129cc28c062a96ae4562fc5f19041a518715157025b796e869b",
+        "sha256_after": "426416d965c7a129cc28c062a96ae4562fc5f19041a518715157025b796e869b"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\validate_spatial_guide_assets.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "cac3562c116b0e1f1456cf977dc0cdc74ff6c1f1e9d81401f136fe84f4fce3ad",
+        "sha256_after": "cac3562c116b0e1f1456cf977dc0cdc74ff6c1f1e9d81401f136fe84f4fce3ad"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\validate_bundle_volume_assets.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "8c27ca19b48bf5d74be01300f3a11453d90b1245a24fa841d42b2b8eb38bf4ee",
+        "sha256_after": "8c27ca19b48bf5d74be01300f3a11453d90b1245a24fa841d42b2b8eb38bf4ee"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\validate_restore_factor_assets.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "cfae4cab5884faf24b86d47e1a71bd6bad2730ba0115d458c80dc4a95b9b87cf",
+        "sha256_after": "cfae4cab5884faf24b86d47e1a71bd6bad2730ba0115d458c80dc4a95b9b87cf"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\validate_hair_nodes_assets.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "6399a952b2e0568ba0a63ed9d17a71ef90e300b4a990c7581de3dfe948e374ce",
+        "sha256_after": "6399a952b2e0568ba0a63ed9d17a71ef90e300b4a990c7581de3dfe948e374ce"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-no-flyaway-8.blend",
+      "passed": true,
+      "details": {
+        "sha256_before": "3f6723cdb5e7358991357c8898bc13b09a851b3055d7a545e72f6206ebdc22a3",
+        "sha256_after": "3f6723cdb5e7358991357c8898bc13b09a851b3055d7a545e72f6206ebdc22a3"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-no-flyaway-8.gn-report.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "a9ed003ce2aba80eb4d9c9331363baa6f9c1412aaa95e0cfa28c6d9ec0adcd4f",
+        "sha256_after": "a9ed003ce2aba80eb4d9c9331363baa6f9c1412aaa95e0cfa28c6d9ec0adcd4f"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-no-flyaway-8.source.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "0c8c14cc9d13c9d436f00f5b2c0d14b3b8acc800a3ffc007325d22aa4fad3dd0",
+        "sha256_after": "0c8c14cc9d13c9d436f00f5b2c0d14b3b8acc800a3ffc007325d22aa4fad3dd0"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-crown-008-live-7.gn-report.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "108a6de875a8a314851ed976f89d3ba1609cfe93a5f95d0bc1279bae0b5b9ace",
+        "sha256_after": "108a6de875a8a314851ed976f89d3ba1609cfe93a5f95d0bc1279bae0b5b9ace"
+      }
+    },
+    {
+      "check": "read-only input preserved: D:\\codex\\home\\cache\\plush-lab-tools\\blender\\blender-5.2.2-windows-x64\\5.2\\datafiles\\assets\\nodes\\procedural_hair_node_assets.blend",
+      "passed": true,
+      "details": {
+        "sha256_before": "b69d8bd8975b9db7f89693f8f19dd7fcb241f5a3786d2edfb0a243e91c1109bb",
+        "sha256_after": "b69d8bd8975b9db7f89693f8f19dd7fcb241f5a3786d2edfb0a243e91c1109bb"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-clumped-live3-10.gn-report.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "83f801b88ce5f6f94dca6fd87dee6bd4528a4a587374b9390b4f53c98d071eee",
+        "sha256_after": "83f801b88ce5f6f94dca6fd87dee6bd4528a4a587374b9390b4f53c98d071eee"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-clumped-live3-10.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "1cea0da47653315e7998fdb76665278276833b90201aff07e56df0b4d81edb39",
+        "sha256_after": "1cea0da47653315e7998fdb76665278276833b90201aff07e56df0b4d81edb39"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-clumped-live3-10.source.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "b72713f128b68ad2b344216f22c34e3046a61e8f1933ed1909fb49d4cd74f5c8",
+        "sha256_after": "b72713f128b68ad2b344216f22c34e3046a61e8f1933ed1909fb49d4cd74f5c8"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-undercoat-short-live-4.source.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "5b1d9049cec289828a6e354ce334d37873fa8343c4f5a0aa848315732125609c",
+        "sha256_after": "5b1d9049cec289828a6e354ce334d37873fa8343c4f5a0aa848315732125609c"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-nearest-render-3.gn-source.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "be7730c0ddba22109ebc31dd44e8660672df7fd2cb8d361093688ce9fcc2c927",
+        "sha256_after": "be7730c0ddba22109ebc31dd44e8660672df7fd2cb8d361093688ce9fcc2c927"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-clumped-live3-10.render.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "79947b448d3cc65cd21bcc5cbd808f3312defe34406e948fbaf1aa25251c6a29",
+        "sha256_after": "79947b448d3cc65cd21bcc5cbd808f3312defe34406e948fbaf1aa25251c6a29"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-clumped-live3-10.blend",
+      "passed": true,
+      "details": {
+        "sha256_before": "b01f575e01a1fe6e94f07eceadfe6442dc20b1ef5105b22a18cb565a2bdcb878",
+        "sha256_after": "b01f575e01a1fe6e94f07eceadfe6442dc20b1ef5105b22a18cb565a2bdcb878"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-clumped-live3-10.png",
+      "passed": true,
+      "details": {
+        "sha256_before": "d8fe1b9c06695bd938c1e9e7ad02a93af807040c1146e3bfff08614fd2fa3193",
+        "sha256_after": "d8fe1b9c06695bd938c1e9e7ad02a93af807040c1146e3bfff08614fd2fa3193"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-clumped-live3-10.precheck.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "3ede8636b9ed651bd373b1f5d1abd5ae08a73edd7ed5d6c2e903efcd9db3e92a",
+        "sha256_after": "3ede8636b9ed651bd373b1f5d1abd5ae08a73edd7ed5d6c2e903efcd9db3e92a"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-clumped-live3-10.render.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "0fa9b77f28b6f67e2f4dc33fac0dd9067c7c02a387a0561dc3da65f7ff4e5efb",
+        "sha256_after": "0fa9b77f28b6f67e2f4dc33fac0dd9067c7c02a387a0561dc3da65f7ff4e5efb"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-unclumped-live3-10.gn-report.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "41c9e22edbdb6c78344c455f81cda729489812bae59b5ef09f5a7fa862615d2d",
+        "sha256_after": "41c9e22edbdb6c78344c455f81cda729489812bae59b5ef09f5a7fa862615d2d"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-unclumped-live3-10.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "a12c972809d2465329524044ab8669dce882c0787e12bd7c622bdec2f9881e23",
+        "sha256_after": "a12c972809d2465329524044ab8669dce882c0787e12bd7c622bdec2f9881e23"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-unclumped-live3-10.source.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "b72713f128b68ad2b344216f22c34e3046a61e8f1933ed1909fb49d4cd74f5c8",
+        "sha256_after": "b72713f128b68ad2b344216f22c34e3046a61e8f1933ed1909fb49d4cd74f5c8"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-unclumped-live3-10.render.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "4b85bce70bd5eb6dbad25024d6c14b985a495b215906502e8c9c29610dbc0d3a",
+        "sha256_after": "4b85bce70bd5eb6dbad25024d6c14b985a495b215906502e8c9c29610dbc0d3a"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-unclumped-live3-10.blend",
+      "passed": true,
+      "details": {
+        "sha256_before": "a6251dcdbaab1bb225bb2334138f95a9094da9aadc567ffe55ca3b99f1ec7b49",
+        "sha256_after": "a6251dcdbaab1bb225bb2334138f95a9094da9aadc567ffe55ca3b99f1ec7b49"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-unclumped-live3-10.png",
+      "passed": true,
+      "details": {
+        "sha256_before": "11daef02401255a27f026b483899a30ad474fb1d3c34fa4b4639edba32e20979",
+        "sha256_after": "11daef02401255a27f026b483899a30ad474fb1d3c34fa4b4639edba32e20979"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-unclumped-live3-10.precheck.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "89b57efbc6815a8a0bc954298c6dffb18d307f5c5485d1c9bdbb9e591e14df7e",
+        "sha256_after": "89b57efbc6815a8a0bc954298c6dffb18d307f5c5485d1c9bdbb9e591e14df7e"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-compact-coil-unclumped-live3-10.render.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "a55f9397facd7003f352d550d4aeea48b11fcf37f53421799a1b2e2d57f9ba45",
+        "sha256_after": "a55f9397facd7003f352d550d4aeea48b11fcf37f53421799a1b2e2d57f9ba45"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-clump-profile-live7-11.gn-report.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "f03501392edf8f299006fff499d589dfb60b47124db9f716dc01cdab52f0e744",
+        "sha256_after": "f03501392edf8f299006fff499d589dfb60b47124db9f716dc01cdab52f0e744"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-clump-profile-live7-11.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "7d9f795483ac1a48cb5b74d04fc1a3f398b420a23c0fb3d68523273eb9e8d670",
+        "sha256_after": "7d9f795483ac1a48cb5b74d04fc1a3f398b420a23c0fb3d68523273eb9e8d670"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-clump-profile-live7-11.source.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "145239a928aeb057a7470ddeb81ff04612a2e7b71028e0738854ba471141247a",
+        "sha256_after": "145239a928aeb057a7470ddeb81ff04612a2e7b71028e0738854ba471141247a"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\plush_clump_profile_study.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "145239a928aeb057a7470ddeb81ff04612a2e7b71028e0738854ba471141247a",
+        "sha256_after": "145239a928aeb057a7470ddeb81ff04612a2e7b71028e0738854ba471141247a"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-clump-profile-live7-11.render.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "e772786b35bd7c9c13bb7471400caa7c752644dc448351e6d2a47f18c3c033b3",
+        "sha256_after": "e772786b35bd7c9c13bb7471400caa7c752644dc448351e6d2a47f18c3c033b3"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-clump-profile-live7-11.blend",
+      "passed": true,
+      "details": {
+        "sha256_before": "487e857487a6489bfb09371575d29ee6f793af460976ba1af593569f1382c26d",
+        "sha256_after": "487e857487a6489bfb09371575d29ee6f793af460976ba1af593569f1382c26d"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-clump-profile-live7-11.png",
+      "passed": true,
+      "details": {
+        "sha256_before": "c05ca6cad5073b8d16956c2d032787c517b59d980b2846ec907a999f314014f6",
+        "sha256_after": "c05ca6cad5073b8d16956c2d032787c517b59d980b2846ec907a999f314014f6"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-clump-profile-live7-11.precheck.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "21fc1b2b1233f8db6bcb0caba5ef6a758174030d1a31e444323dc20cb58694e6",
+        "sha256_after": "21fc1b2b1233f8db6bcb0caba5ef6a758174030d1a31e444323dc20cb58694e6"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-clump-profile-live7-11.render.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "15f07b3862bce9d58953b7106b9e18e9dbb83ff356e5f8db84d0fbfb8e6517f1",
+        "sha256_after": "15f07b3862bce9d58953b7106b9e18e9dbb83ff356e5f8db84d0fbfb8e6517f1"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\plush_curl_phase_study.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "000bfcc5cff1c3680e4732d4c05759b50354ca37da59b6d8a9aa068bf72e963d",
+        "sha256_after": "000bfcc5cff1c3680e4732d4c05759b50354ca37da59b6d8a9aa068bf72e963d"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-all-live2-12.gn-report.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "ab287e7f1a9232827d9e9010c85893376c6bf1fbaaffab31e81a62b0c576cd79",
+        "sha256_after": "ab287e7f1a9232827d9e9010c85893376c6bf1fbaaffab31e81a62b0c576cd79"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-all-live2-12.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "761c599ab56dce40c0c501b38de3af56eaea82a53be5a42a31ba6a61e74a1b87",
+        "sha256_after": "761c599ab56dce40c0c501b38de3af56eaea82a53be5a42a31ba6a61e74a1b87"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-all-live2-12.source.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "000bfcc5cff1c3680e4732d4c05759b50354ca37da59b6d8a9aa068bf72e963d",
+        "sha256_after": "000bfcc5cff1c3680e4732d4c05759b50354ca37da59b6d8a9aa068bf72e963d"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-all-live2-12.render.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "ccd3a8df3618489d77bad7a6fbd921f77c81ac5a83fa3840773f4e70cb86b6ac",
+        "sha256_after": "ccd3a8df3618489d77bad7a6fbd921f77c81ac5a83fa3840773f4e70cb86b6ac"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-all-live2-12.blend",
+      "passed": true,
+      "details": {
+        "sha256_before": "4fcd75ced4be561f74d2ee457e7c7d96b805969dcde5172a85f3115c4df28163",
+        "sha256_after": "4fcd75ced4be561f74d2ee457e7c7d96b805969dcde5172a85f3115c4df28163"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-all-live2-12.png",
+      "passed": true,
+      "details": {
+        "sha256_before": "2588c2c9f6ad70c7e96875a80605233c10cccdabf39b9448348e4c6cd2e1cc69",
+        "sha256_after": "2588c2c9f6ad70c7e96875a80605233c10cccdabf39b9448348e4c6cd2e1cc69"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-all-live2-12.precheck.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "e1c4386e737aaa4c45377161d79162d7cadee43bbd2be8c31bdabf7bd09ecb49",
+        "sha256_after": "e1c4386e737aaa4c45377161d79162d7cadee43bbd2be8c31bdabf7bd09ecb49"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-all-live2-12.render.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "7857bf014ea07813e4a4ec8fef57639bd481f6fb87d6c8193b0a93c37105c2cc",
+        "sha256_after": "7857bf014ea07813e4a4ec8fef57639bd481f6fb87d6c8193b0a93c37105c2cc"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-children-live2-12.gn-report.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "bcb3222685427ce3a885d00dd55b6127d88f17a0b08f743f9d7f06a786763099",
+        "sha256_after": "bcb3222685427ce3a885d00dd55b6127d88f17a0b08f743f9d7f06a786763099"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-children-live2-12.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "65d164d170af9a5e8c872b2075c398df9904ba31ba8b25d163021e2e65adec91",
+        "sha256_after": "65d164d170af9a5e8c872b2075c398df9904ba31ba8b25d163021e2e65adec91"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-children-live2-12.source.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "000bfcc5cff1c3680e4732d4c05759b50354ca37da59b6d8a9aa068bf72e963d",
+        "sha256_after": "000bfcc5cff1c3680e4732d4c05759b50354ca37da59b6d8a9aa068bf72e963d"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-children-live2-12.render.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "d5671c28260dc1e6ad80a2e7b95a95d095f90e49c97710823f0c80fcf6c56cfc",
+        "sha256_after": "d5671c28260dc1e6ad80a2e7b95a95d095f90e49c97710823f0c80fcf6c56cfc"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-children-live2-12.blend",
+      "passed": true,
+      "details": {
+        "sha256_before": "2d12288fc6d28f3c891a50db0041ce82b8ed18de7711f0196e71963131d315c7",
+        "sha256_after": "2d12288fc6d28f3c891a50db0041ce82b8ed18de7711f0196e71963131d315c7"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-children-live2-12.png",
+      "passed": true,
+      "details": {
+        "sha256_before": "4847729f1d483e5488e00888e3185fdc094f42870997ecc93c8c6656cb11bc34",
+        "sha256_after": "4847729f1d483e5488e00888e3185fdc094f42870997ecc93c8c6656cb11bc34"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-children-live2-12.precheck.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "1881d3ed15ae52d976545bb35acc94eab49f63f0049daa47488a0162bccd7d81",
+        "sha256_after": "1881d3ed15ae52d976545bb35acc94eab49f63f0049daa47488a0162bccd7d81"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-curl-phase-children-live2-12.render.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "90f70c42d1f3b6de07e8021b70c4a65555aa79e1356b0d9b99c1a003d0e2b7c4",
+        "sha256_after": "90f70c42d1f3b6de07e8021b70c4a65555aa79e1356b0d9b99c1a003d0e2b7c4"
+      }
+    },
+    {
+      "check": "read-only input preserved: tooling\\blender\\plush_guide_azimuth_study.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "94018212d0c0c5cbc063f71158cc92d5a88b59cb6b69ca374ce7cdb7a3296bcb",
+        "sha256_after": "94018212d0c0c5cbc063f71158cc92d5a88b59cb6b69ca374ce7cdb7a3296bcb"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-guide-azimuth-live-13.gn-report.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "16ef5acbca18a3beb6bf7bb57a88cc49096ed87c9b6d00bb91b73e7ceb01618c",
+        "sha256_after": "16ef5acbca18a3beb6bf7bb57a88cc49096ed87c9b6d00bb91b73e7ceb01618c"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-guide-azimuth-live-13.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "aced3e36a498569dc5acb5ab24dc03f9abe5820f69442e1837257a965499956b",
+        "sha256_after": "aced3e36a498569dc5acb5ab24dc03f9abe5820f69442e1837257a965499956b"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-guide-azimuth-live-13.source.py",
+      "passed": true,
+      "details": {
+        "sha256_before": "94018212d0c0c5cbc063f71158cc92d5a88b59cb6b69ca374ce7cdb7a3296bcb",
+        "sha256_after": "94018212d0c0c5cbc063f71158cc92d5a88b59cb6b69ca374ce7cdb7a3296bcb"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-guide-azimuth-live-13.render.json",
+      "passed": true,
+      "details": {
+        "sha256_before": "64a07708d37b7cafa20f738723b9a69744833d012ef8ccc6552d7e49e081ac8c",
+        "sha256_after": "64a07708d37b7cafa20f738723b9a69744833d012ef8ccc6552d7e49e081ac8c"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-guide-azimuth-live-13.blend",
+      "passed": true,
+      "details": {
+        "sha256_before": "0aa862080ef2d2f4ef07c1eb06c09c1ad6feb7ce96975db45f1a61ed4095d8f4",
+        "sha256_after": "0aa862080ef2d2f4ef07c1eb06c09c1ad6feb7ce96975db45f1a61ed4095d8f4"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-guide-azimuth-live-13.png",
+      "passed": true,
+      "details": {
+        "sha256_before": "eb19a8dd334886eca3d60c68ba804704a363858a94781dfea519fc00ef623a71",
+        "sha256_after": "eb19a8dd334886eca3d60c68ba804704a363858a94781dfea519fc00ef623a71"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-guide-azimuth-live-13.precheck.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "520a8b3bba33642123f3879d71255f961ae175f3bad505571a88fe87efba1128",
+        "sha256_after": "520a8b3bba33642123f3879d71255f961ae175f3bad505571a88fe87efba1128"
+      }
+    },
+    {
+      "check": "read-only input preserved: artifacts\\cycles-study\\swatch-reference-gn-guide-azimuth-live-13.render.log",
+      "passed": true,
+      "details": {
+        "sha256_before": "68d3c8a29b26225dcb12d10b4604c22956a95ed757d526cc0749b76b4776b530",
+        "sha256_after": "68d3c8a29b26225dcb12d10b4604c22956a95ed757d526cc0749b76b4776b530"
+      }
+    }
+  ],
+  "errors": [],
+  "asset": "swatch-reference-gn-guide-azimuth-live-13",
+  "control_asset": "swatch-reference-gn-clump-profile-live7-11",
+  "validated_at_utc": "2026-10-02T23:29:17.877295+00:00",
+  "blender": "5.2.2 LTS",
+  "validator": "tooling\\blender\\validate_guide_azimuth_assets.py",
+  "scope": "Independent actual saved GN13 native seeded rigid guide rotation reconstruction, measured f32 rigidity error, fixed root/radii/rest/maps/profile/official graph/UC/hiddenFA/scene, actual child response, original-guide and single-guide reversible probes, two disk reloads, completed GPU PNG/receipts, pre/post input SHA preservation. CPU only; no save/render; no crown or final child arc invariance, physical contact, fidelity or visual acceptance claim.",
+  "render_receipt": {
+    "rendered": true,
+    "kind": "swatch",
+    "blend": "swatch-reference-gn-guide-azimuth-live-13.blend",
+    "png": "swatch-reference-gn-guide-azimuth-live-13.png",
+    "seconds": 10.347289600002114,
+    "resolution": 768,
+    "samples": 96,
+    "blend_sha256": "0aa862080ef2d2f4ef07c1eb06c09c1ad6feb7ce96975db45f1a61ed4095d8f4",
+    "png_sha256": "eb19a8dd334886eca3d60c68ba804704a363858a94781dfea519fc00ef623a71",
+    "wrapper_source_sha256": "94018212d0c0c5cbc063f71158cc92d5a88b59cb6b69ca374ce7cdb7a3296bcb"
+  },
+  "asset_rendered": true,
+  "engineering_generation_rendered": false,
+  "rotation": {
+    "seed": 12013,
+    "guide_count": 2657,
+    "controls_per_guide": 12,
+    "ellipsoid_half_axes_scene_units": [
+      0.64,
+      0.43,
+      0.54
+    ],
+    "angles_radians": {
+      "minimum": 0.005637572500176777,
+      "maximum": 6.282094928116441,
+      "mean": 3.129065688508655,
+      "median": 3.0598703627008303,
+      "p95": 5.9893710317362885,
+      "p99": 6.226254794441329
+    },
+    "angles_float64_sha256": "66e24abf18af160cc9ff501a9597130a78a44afb870a3fe9616ade15076b40c5",
+    "changed_guide_count_bitwise": 2657,
+    "normal_projection_error_per_guide": {
+      "minimum": 5.2648198266280755e-09,
+      "maximum": 3.200004584924532e-08,
+      "mean": 1.774608643585412e-08,
+      "median": 1.6160046592550437e-08,
+      "p95": 2.7804881507637044e-08,
+      "p99": 2.9123787252949285e-08
+    },
+    "maximum_absolute_normal_projection_error_scene_units": 3.200004584924532e-08,
+    "maximum_absolute_control_pair_distance_error_scene_units": 5.917155207826874e-08,
+    "control_arc": {
+      "minimum": 0.05771640715439475,
+      "maximum": 0.08265319233580751,
+      "mean": 0.07069550884019318,
+      "median": 0.07115896521393837,
+      "p95": 0.07709138527541597,
+      "p99": 0.07893113471033211
+    },
+    "candidate_arc": {
+      "minimum": 0.05771640520009049,
+      "maximum": 0.08265317911553112,
+      "mean": 0.07069550917303236,
+      "median": 0.07115902892768919,
+      "p95": 0.07709137020242371,
+      "p99": 0.07893112738081579
+    },
+    "paired_arc_ratio": {
+      "minimum": 0.9999985939696653,
+      "maximum": 1.0000012407033565,
+      "mean": 1.000000005164802,
+      "median": 1.000000003636237,
+      "p95": 1.0000005150606812,
+      "p99": 1.0000008172776351
+    },
+    "paired_arc_error": {
+      "minimum": -9.884308042884538e-08,
+      "maximum": 8.45925041959017e-08,
+      "mean": 3.3283914870664836e-10,
+      "median": 2.52470391814974e-10,
+      "p95": 3.6847622039704026e-08,
+      "p99": 5.4397847607523545e-08
+    },
+    "maximum_absolute_arc_error_scene_units": 9.884308042884538e-08,
+    "maximum_float32_quantization_vector_scene_units": 3.281764709124281e-08,
+    "maximum_integrated_quantization_derivative_arc_bound_scene_units": 4.363603722984547e-07,
+    "float64_rotation_arc_error_maximum_scene_units": 7.494005416219807e-16,
+    "basis": "Independent default_rng(12013) uniform[0,2pi) in saved guide order; n=unit(root/axes^2); Rodrigues root-relative rigid rotation in f64, cast f32, restore original root bits. Normal projection and 12x12 control-pair Euclidean distances use actual f32 controls promoted f64. Guide arcs are duplicated-endpoint uniform Catmull-Rom GL32. Error bounds are actual f32 quantization norms (pair sum), and GL32 integral of derivative quantization norm plus 1e-13 f64 guard. No secondary arc/crown normalization. Analytic ellipsoid crown and final child geometry are not rigid invariants or visual acceptance."
+  },
+  "final_roots": {
+    "child_count": 85000,
+    "positions_bitwise_equal_gn11": true,
+    "radii_bitwise_equal_gn11": true
+  },
+  "post_curl_roots": {
+    "bitwise_equal_gn11": false,
+    "changed_child_roots_bitwise": 1,
+    "changed_guide_roots_bitwise": 0,
+    "maximum_child_euclidean_delta_scene_units": 1.862645149230957e-09,
+    "maximum_guide_euclidean_delta_scene_units": 0.0,
+    "maximum_absolute_coordinate_delta_scene_units": 1.862645149230957e-09,
+    "basis": "Measured official intermediate Curl output before Profile/Clump and final RootLock, separately recorded without bitwise equality requirement or presumed rounding cause. Native guide roots and final normal-output child roots/root radii remain strict bitwise invariants."
+  },
+  "causal_original_guides": {
+    "gn11_final_coat_reproduced_bitwise": true,
+    "evaluated_record": {
+      "curve_count": 85000,
+      "point_count": 1020000,
+      "positions_float32_sha256": "8b38a2f2d3fe350aaa37c8a132ef5b3f3f750208791ebaa11eef575416f38545",
+      "radii_float32_sha256": "121dfa8bd8ae05925fa9d9f9c0a373f032146dfce2a5e1df00729d2362719ee2",
+      "offsets_int32_sha256": "4d22acb51de8b1f055adb34064edcdfad1968023bffa9d6ec934cfe62ca5ecb3",
+      "roots_float32_sha256": "eb3d56ef87f5e9c835c7791bf3ebbf50c84b3f2ab328233112dbaa2db1ddfd94",
+      "materials": [
+        "Blue synthetic pile · Chiang 2016"
+      ]
+    }
+  },
+  "independent_live_guide_probe": {
+    "guide_index": 1328,
+    "guide_control_index": 6,
+    "delta_x": 0.002,
+    "changed_curve_count": 42,
+    "expected_child_curve_count": 42,
+    "changed_curve_indices": [
+      993,
+      1018,
+      2790,
+      2792,
+      2794,
+      2799,
+      2808,
+      2811,
+      23502,
+      34386,
+      41141,
+      41146,
+      42498,
+      42499,
+      42500,
+      42501,
+      42502,
+      42503,
+      42504,
+      42505,
+      42506,
+      42508,
+      42509,
+      42516,
+      42517,
+      42519,
+      42520,
+      42526,
+      45899,
+      51628,
+      51646,
+      52100,
+      52121,
+      52126,
+      53943,
+      70758,
+      70759,
+      70771,
+      70778,
+      76759,
+      83587,
+      83602
+    ],
+    "expected_child_curve_indices": [
+      993,
+      1018,
+      2790,
+      2792,
+      2794,
+      2799,
+      2808,
+      2811,
+      23502,
+      34386,
+      41141,
+      41146,
+      42498,
+      42499,
+      42500,
+      42501,
+      42502,
+      42503,
+      42504,
+      42505,
+      42506,
+      42508,
+      42509,
+      42516,
+      42517,
+      42519,
+      42520,
+      42526,
+      45899,
+      51628,
+      51646,
+      52100,
+      52121,
+      52126,
+      53943,
+      70758,
+      70759,
+      70771,
+      70778,
+      76759,
+      83587,
+      83602
+    ],
+    "maximum_coat_displacement": 0.0015779068696428814,
+    "changed_curves_outside_explicit_group": 0,
+    "roots_float32_bitwise_equal": true,
+    "root_radii_float32_bitwise_equal": true,
+    "restored_evaluation_bitwise_equal": true,
+    "nonmapped_evaluation_bitwise_equal": true,
+    "basis": "Actual saved pile_guide_index IDs; midpoint mapped guide, nonroot control6.x +f32(.002), independent evaluation and exact restore. No disk save/render."
+  },
+  "guide_geometry": {
+    "curve_count": 2657,
+    "control_arc": {
+      "minimum": 0.05771640715439475,
+      "maximum": 0.08265319233580751,
+      "mean": 0.07069550884019318,
+      "median": 0.07115896521393837,
+      "p95": 0.07709138527541597,
+      "p99": 0.07893113471033211
+    },
+    "candidate_arc": {
+      "minimum": 0.05771640520009049,
+      "maximum": 0.08265317911553112,
+      "mean": 0.07069550917303236,
+      "median": 0.07115902892768919,
+      "p95": 0.07709137020242371,
+      "p99": 0.07893112738081579
+    },
+    "paired_arc_ratio": {
+      "minimum": 0.9999985939696653,
+      "maximum": 1.0000012407033565,
+      "mean": 1.000000005164802,
+      "median": 1.000000003636237,
+      "p95": 1.0000005150606812,
+      "p99": 1.0000008172776351
+    },
+    "control_surface_proxy": {
+      "curve_count": 2657,
+      "ellipsoid_half_axes": [
+        0.64,
+        0.43,
+        0.54
+      ],
+      "quadrature_order": 8,
+      "front_normal_dot_camera_threshold": 0.2,
+      "front_curve_count": 1102,
+      "crown_height_all": {
+        "minimum": 0.021763539178892063,
+        "maximum": 0.030516751508683014,
+        "mean": 0.02536549482921745,
+        "median": 0.02539073944916336,
+        "p95": 0.02693012360765667,
+        "p99": 0.02754224074398454
+      },
+      "crown_height_front": {
+        "minimum": 0.021763539178892063,
+        "maximum": 0.028902399183072212,
+        "mean": 0.025364969374534984,
+        "median": 0.025417748558005073,
+        "p95": 0.02693184972185833,
+        "p99": 0.027656297502933587
+      },
+      "minimum_height": {
+        "minimum": -3.012172751045649e-08,
+        "maximum": 2.923717820205584e-08,
+        "mean": -4.483099850162713e-11,
+        "median": 6.171548466011348e-11,
+        "p95": 1.7110065557980234e-08,
+        "p99": 2.664681839330478e-08
+      },
+      "sampled_arc_length_order8": {
+        "minimum": 0.05771640748599361,
+        "maximum": 0.08265319282747227,
+        "mean": 0.07069550934439536,
+        "median": 0.0711589655900478,
+        "p95": 0.07709138601681909,
+        "p99": 0.07893113517040411
+      },
+      "curves_below_minus_0_001_fraction": 0.0,
+      "arc_fraction_below_minus_0_001_mean": 0.0,
+      "scope": "Signed analytic ellipsoid implicit/gradient height approximation on actual saved float32 Catmull controls; order8 sampling plus controls. Threshold height<-0.001 in scene coordinates. No millimeter calibration, physical contact solve, opaque coverage or visual acceptance."
+    },
+    "candidate_surface_proxy": {
+      "curve_count": 2657,
+      "ellipsoid_half_axes": [
+        0.64,
+        0.43,
+        0.54
+      ],
+      "quadrature_order": 8,
+      "front_normal_dot_camera_threshold": 0.2,
+      "front_curve_count": 1102,
+      "crown_height_all": {
+        "minimum": 0.021736488726722264,
+        "maximum": 0.030516480484038582,
+        "mean": 0.02536528692389891,
+        "median": 0.025397097360473908,
+        "p95": 0.026942608522378488,
+        "p99": 0.027559516118823114
+      },
+      "crown_height_front": {
+        "minimum": 0.021736488726722264,
+        "maximum": 0.028946196415847406,
+        "mean": 0.025365561342209908,
+        "median": 0.025418678405454108,
+        "p95": 0.02693198236768264,
+        "p99": 0.02767092749010874
+      },
+      "minimum_height": {
+        "minimum": -3.012172751045649e-08,
+        "maximum": 2.923717820205584e-08,
+        "mean": -4.483099850162713e-11,
+        "median": 6.171548466011348e-11,
+        "p95": 1.7110065557980234e-08,
+        "p99": 2.664681839330478e-08
+      },
+      "sampled_arc_length_order8": {
+        "minimum": 0.05771640553168975,
+        "maximum": 0.08265317960715969,
+        "mean": 0.0706955096772353,
+        "median": 0.07115902930378545,
+        "p95": 0.07709137094387727,
+        "p99": 0.07893112784090144
+      },
+      "curves_below_minus_0_001_fraction": 0.0,
+      "arc_fraction_below_minus_0_001_mean": 0.0,
+      "scope": "Signed analytic ellipsoid implicit/gradient height approximation on actual saved float32 Catmull controls; order8 sampling plus controls. Threshold height<-0.001 in scene coordinates. No millimeter calibration, physical contact solve, opaque coverage or visual acceptance."
+    },
+    "maximum_control_displacement_per_curve": {
+      "minimum": 1.7457272481889332e-05,
+      "maximum": 0.03243509132919765,
+      "mean": 0.018307358342892294,
+      "median": 0.020199307939964523,
+      "p95": 0.030025910719802193,
+      "p99": 0.03135104864565986
+    },
+    "changed_curve_count": 2657,
+    "end_to_root_distance_control": {
+      "minimum": 0.00932683865732992,
+      "maximum": 0.019423291970364527,
+      "mean": 0.013947555776374996,
+      "median": 0.014856620691876375,
+      "p95": 0.0169300598125749,
+      "p99": 0.01738604967169514
+    },
+    "end_to_root_distance_candidate": {
+      "minimum": 0.009326837044687168,
+      "maximum": 0.01942328248018196,
+      "mean": 0.013947555610704866,
+      "median": 0.014856612506249407,
+      "p95": 0.01693006755566881,
+      "p99": 0.017386048473327538
+    },
+    "basis": "Actual float32 controls promoted to float64; uniform Catmull-Rom with duplicated endpoints, Gauss integration order32 for arcs. Crown uses signed analytic ellipsoid implicit/gradient height, eight Gauss samples per segment plus controls. Scene coordinates have no millimeter calibration; neither proxy is engine arc, exact nearest-surface distance, physical volume/contact or rendered visual quality."
+  },
+  "coat_geometry": {
+    "curve_count": 85000,
+    "control_arc": {
+      "minimum": 0.020063917759570084,
+      "maximum": 0.08945845967249448,
+      "mean": 0.04321963208274763,
+      "median": 0.04232350697910994,
+      "p95": 0.058399975619031604,
+      "p99": 0.06632232802910143
+    },
+    "candidate_arc": {
+      "minimum": 0.02038041622299018,
+      "maximum": 0.08796939688916125,
+      "mean": 0.043150062880202754,
+      "median": 0.042309404844007595,
+      "p95": 0.0583044892518343,
+      "p99": 0.06603817432965281
+    },
+    "paired_arc_ratio": {
+      "minimum": 0.6487673262433357,
+      "maximum": 1.5948863431609699,
+      "mean": 1.006147456042297,
+      "median": 1.0005891067073436,
+      "p95": 1.2260048978004365,
+      "p99": 1.3141233086695672
+    },
+    "control_surface_proxy": {
+      "curve_count": 85000,
+      "ellipsoid_half_axes": [
+        0.64,
+        0.43,
+        0.54
+      ],
+      "quadrature_order": 8,
+      "front_normal_dot_camera_threshold": 0.2,
+      "front_curve_count": 35169,
+      "crown_height_all": {
+        "minimum": 0.01073817727226215,
+        "maximum": 0.030524466977292684,
+        "mean": 0.020379595107062345,
+        "median": 0.020250962695123158,
+        "p95": 0.025108870734339414,
+        "p99": 0.026922186905066127
+      },
+      "crown_height_front": {
+        "minimum": 0.01073817727226215,
+        "maximum": 0.02999667101569194,
+        "mean": 0.02037395479590682,
+        "median": 0.020248989747435595,
+        "p95": 0.02508852237531406,
+        "p99": 0.026951843334008574
+      },
+      "minimum_height": {
+        "minimum": -3.155865996921283e-08,
+        "maximum": 3.2023873292375324e-08,
+        "mean": -3.67063361288145e-11,
+        "median": -9.800373580604528e-12,
+        "p95": 1.748049516558994e-08,
+        "p99": 2.515748332994747e-08
+      },
+      "sampled_arc_length_order8": {
+        "minimum": 0.02006391769978396,
+        "maximum": 0.0894584601582129,
+        "mean": 0.04321962833432412,
+        "median": 0.042323319378625573,
+        "p95": 0.05839997797248404,
+        "p99": 0.0663223287826279
+      },
+      "curves_below_minus_0_001_fraction": 0.0,
+      "arc_fraction_below_minus_0_001_mean": 0.0,
+      "scope": "Signed analytic ellipsoid implicit/gradient height approximation on actual saved float32 Catmull controls; order8 sampling plus controls. Threshold height<-0.001 in scene coordinates. No millimeter calibration, physical contact solve, opaque coverage or visual acceptance."
+    },
+    "candidate_surface_proxy": {
+      "curve_count": 85000,
+      "ellipsoid_half_axes": [
+        0.64,
+        0.43,
+        0.54
+      ],
+      "quadrature_order": 8,
+      "front_normal_dot_camera_threshold": 0.2,
+      "front_curve_count": 35169,
+      "crown_height_all": {
+        "minimum": 0.011081280730031647,
+        "maximum": 0.03090959795753386,
+        "mean": 0.02035884404298649,
+        "median": 0.020228755592648952,
+        "p95": 0.025052277781070813,
+        "p99": 0.026828741900253004
+      },
+      "crown_height_front": {
+        "minimum": 0.011876397997581369,
+        "maximum": 0.03000167313464,
+        "mean": 0.0203780909056795,
+        "median": 0.020252129468987298,
+        "p95": 0.025072466097482607,
+        "p99": 0.026874120635238394
+      },
+      "minimum_height": {
+        "minimum": -3.155865996921283e-08,
+        "maximum": 3.2023873292375324e-08,
+        "mean": -3.67063361288145e-11,
+        "median": -9.800373580604528e-12,
+        "p95": 1.748049516558994e-08,
+        "p99": 2.515748332994747e-08
+      },
+      "sampled_arc_length_order8": {
+        "minimum": 0.020380416152604743,
+        "maximum": 0.08796939672595266,
+        "mean": 0.04315006047725054,
+        "median": 0.042309404801137526,
+        "p95": 0.058304559804214985,
+        "p99": 0.06603860126582643
+      },
+      "curves_below_minus_0_001_fraction": 0.0,
+      "arc_fraction_below_minus_0_001_mean": 0.0,
+      "scope": "Signed analytic ellipsoid implicit/gradient height approximation on actual saved float32 Catmull controls; order8 sampling plus controls. Threshold height<-0.001 in scene coordinates. No millimeter calibration, physical contact solve, opaque coverage or visual acceptance."
+    },
+    "maximum_control_displacement_per_curve": {
+      "minimum": 5.782050257005352e-06,
+      "maximum": 0.025207515173219952,
+      "mean": 0.009765791011582987,
+      "median": 0.010540713072305592,
+      "p95": 0.016719747142340893,
+      "p99": 0.018569504373913342
+    },
+    "changed_curve_count": 85000,
+    "end_to_root_distance_control": {
+      "minimum": 0.009297879652495632,
+      "maximum": 0.05708987583234564,
+      "mean": 0.021052040576269138,
+      "median": 0.019887624346908793,
+      "p95": 0.03139956712132328,
+      "p99": 0.03779635080422
+    },
+    "end_to_root_distance_candidate": {
+      "minimum": 0.009732292229105944,
+      "maximum": 0.057298197570031364,
+      "mean": 0.021079897385612677,
+      "median": 0.019888007959009996,
+      "p95": 0.03162620731523052,
+      "p99": 0.03808338690128983
+    },
+    "basis": "Actual float32 controls promoted to float64; uniform Catmull-Rom with duplicated endpoints, Gauss integration order32 for arcs. Crown uses signed analytic ellipsoid implicit/gradient height, eight Gauss samples per segment plus controls. Scene coordinates have no millimeter calibration; neither proxy is engine arc, exact nearest-surface distance, physical volume/contact or rendered visual quality."
+  },
+  "derived_radius_response": {
+    "changed_point_count": 869596,
+    "point_count": 1020000,
+    "maximum_absolute_delta_scene_units": 3.7767982576042414e-05,
+    "basis": "Actual evaluated downstream radius response, native radii and final root radii bitwise fixed; not calibrated physical fiber diameter or softness."
+  },
+  "saved_snapshot": {
+    "curves": {
+      "Blue pile · undercoat": {
+        "source": {
+          "curve_count": 90000,
+          "point_count": 1080000,
+          "positions_float32_sha256": "4e5a8ca64a71b3de5edd6b34d992a7a1d2c5366e1418077a72e4cd6c04c77a5e",
+          "radii_float32_sha256": "163bedc07ee3c01338485437faa8c0eb414892480b732e2889e4621c3dbff473",
+          "offsets_int32_sha256": "48dbf56ffc7a12fbe26a37ace0d41deb16f35496ac1b41c5f2a6a3537cf42663",
+          "roots_float32_sha256": "b087ef16e2c03c8a8e8b339242d972565881bae15c51777de49a2970de0f1786",
+          "materials": [
+            "Blue synthetic pile · Chiang 2016"
+          ]
+        },
+        "source_attributes": {
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "count": 1080000,
+            "sha256": "4e5a8ca64a71b3de5edd6b34d992a7a1d2c5366e1418077a72e4cd6c04c77a5e"
+          },
+          "radius": {
+            "domain": "POINT",
+            "type": "FLOAT",
+            "count": 1080000,
+            "sha256": "163bedc07ee3c01338485437faa8c0eb414892480b732e2889e4621c3dbff473"
+          }
+        },
+        "evaluated": {
+          "curve_count": 90000,
+          "point_count": 1080000,
+          "positions_float32_sha256": "4e5a8ca64a71b3de5edd6b34d992a7a1d2c5366e1418077a72e4cd6c04c77a5e",
+          "radii_float32_sha256": "163bedc07ee3c01338485437faa8c0eb414892480b732e2889e4621c3dbff473",
+          "offsets_int32_sha256": "48dbf56ffc7a12fbe26a37ace0d41deb16f35496ac1b41c5f2a6a3537cf42663",
+          "roots_float32_sha256": "b087ef16e2c03c8a8e8b339242d972565881bae15c51777de49a2970de0f1786",
+          "materials": [
+            "Blue synthetic pile · Chiang 2016"
+          ]
+        },
+        "evaluated_attributes": {
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "count": 1080000,
+            "sha256": "4e5a8ca64a71b3de5edd6b34d992a7a1d2c5366e1418077a72e4cd6c04c77a5e"
+          },
+          "radius": {
+            "domain": "POINT",
+            "type": "FLOAT",
+            "count": 1080000,
+            "sha256": "163bedc07ee3c01338485437faa8c0eb414892480b732e2889e4621c3dbff473"
+          }
+        },
+        "object_controls": {
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_get": false
+        }
+      },
+      "Blue pile · coat": {
+        "source": {
+          "curve_count": 85000,
+          "point_count": 1020000,
+          "positions_float32_sha256": "15d47586f28f1558a721700fc071a21282e3e6b9240ef4fe481b2997ff857b5d",
+          "radii_float32_sha256": "e9200e7ef02861031b21e7ee3de37b8c643f3aee1942cf6dcc0ec8cabded748b",
+          "offsets_int32_sha256": "4d22acb51de8b1f055adb34064edcdfad1968023bffa9d6ec934cfe62ca5ecb3",
+          "roots_float32_sha256": "eb3d56ef87f5e9c835c7791bf3ebbf50c84b3f2ab328233112dbaa2db1ddfd94",
+          "materials": [
+            "Blue synthetic pile · Chiang 2016"
+          ]
+        },
+        "source_attributes": {
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "count": 1020000,
+            "sha256": "15d47586f28f1558a721700fc071a21282e3e6b9240ef4fe481b2997ff857b5d"
+          },
+          "radius": {
+            "domain": "POINT",
+            "type": "FLOAT",
+            "count": 1020000,
+            "sha256": "e9200e7ef02861031b21e7ee3de37b8c643f3aee1942cf6dcc0ec8cabded748b"
+          },
+          "guide_curve_index": {
+            "domain": "CURVE",
+            "type": "INT",
+            "count": 85000,
+            "sha256": "65643ad9e04f3b0a935dcff7b1dee22e8b3771db80efaf8f231baa0c8731884a"
+          },
+          "pile_guide_index": {
+            "domain": "CURVE",
+            "type": "INT",
+            "count": 85000,
+            "sha256": "65643ad9e04f3b0a935dcff7b1dee22e8b3771db80efaf8f231baa0c8731884a"
+          },
+          "is_guide": {
+            "domain": "CURVE",
+            "type": "BOOLEAN",
+            "count": 85000,
+            "sha256": "cfad095376434212b87859983aa42e008c0473e811a6d0b043fa62c5fcc3534f"
+          },
+          "rest_position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "count": 1020000,
+            "sha256": "15d47586f28f1558a721700fc071a21282e3e6b9240ef4fe481b2997ff857b5d"
+          },
+          "root_radius": {
+            "domain": "CURVE",
+            "type": "FLOAT",
+            "count": 85000,
+            "sha256": "41a91e2c312948d47ce9549e4b5cad509a892eb45669e23b039b75b2938b3656"
+          }
+        },
+        "evaluated": {
+          "curve_count": 85000,
+          "point_count": 1020000,
+          "positions_float32_sha256": "3a71ca50e92f5b18b20c9b627e703653cf44619ad94201913ca048cfbf5f4dcf",
+          "radii_float32_sha256": "767c8f2de2ebd91679d1178bad18f5781104a348d74680a505df85ff19268e44",
+          "offsets_int32_sha256": "4d22acb51de8b1f055adb34064edcdfad1968023bffa9d6ec934cfe62ca5ecb3",
+          "roots_float32_sha256": "eb3d56ef87f5e9c835c7791bf3ebbf50c84b3f2ab328233112dbaa2db1ddfd94",
+          "materials": [
+            "Blue synthetic pile · Chiang 2016"
+          ]
+        },
+        "evaluated_attributes": {
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "count": 1020000,
+            "sha256": "3a71ca50e92f5b18b20c9b627e703653cf44619ad94201913ca048cfbf5f4dcf"
+          },
+          "rest_position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "count": 1020000,
+            "sha256": "15d47586f28f1558a721700fc071a21282e3e6b9240ef4fe481b2997ff857b5d"
+          },
+          "radius": {
+            "domain": "POINT",
+            "type": "FLOAT",
+            "count": 1020000,
+            "sha256": "767c8f2de2ebd91679d1178bad18f5781104a348d74680a505df85ff19268e44"
+          },
+          "guide_curve_index": {
+            "domain": "CURVE",
+            "type": "INT",
+            "count": 85000,
+            "sha256": "8eded1490ef94cf9149db4a28e25c20ef76eceeb7722a6827a08fabd3a3f8c9b"
+          },
+          "pile_guide_index": {
+            "domain": "CURVE",
+            "type": "INT",
+            "count": 85000,
+            "sha256": "65643ad9e04f3b0a935dcff7b1dee22e8b3771db80efaf8f231baa0c8731884a"
+          },
+          "is_guide": {
+            "domain": "CURVE",
+            "type": "BOOLEAN",
+            "count": 85000,
+            "sha256": "cfad095376434212b87859983aa42e008c0473e811a6d0b043fa62c5fcc3534f"
+          },
+          "root_radius": {
+            "domain": "CURVE",
+            "type": "FLOAT",
+            "count": 85000,
+            "sha256": "41a91e2c312948d47ce9549e4b5cad509a892eb45669e23b039b75b2938b3656"
+          },
+          "resolution": {
+            "domain": "CURVE",
+            "type": "INT",
+            "count": 85000,
+            "sha256": "c6c39201097a73b7f50eb1e0a375a73808d93741546178d7b5e9f48423e7a532"
+          }
+        },
+        "object_controls": {
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_get": false
+        }
+      },
+      "Pile guides · editable live input": {
+        "source": {
+          "curve_count": 2657,
+          "point_count": 31884,
+          "positions_float32_sha256": "86d34664c52b97f872258682fbd109d85f21eb3b5a3b93bc942b39aa01832d4c",
+          "radii_float32_sha256": "2d5541235186dd3b409a8946dc034b51bdf477993df10f75689e34fd3d5d6141",
+          "offsets_int32_sha256": "0abadae6e49582ffd08d4d109086a40ddb3dd3d7f06984fced03889baf939f69",
+          "roots_float32_sha256": "d0f3feee7f1ada80114e12f2c81cc2eba15f35445b18a1689cc091d8746f112c",
+          "materials": [
+            "Blue synthetic pile · Chiang 2016"
+          ]
+        },
+        "source_attributes": {
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "count": 31884,
+            "sha256": "86d34664c52b97f872258682fbd109d85f21eb3b5a3b93bc942b39aa01832d4c"
+          },
+          "radius": {
+            "domain": "POINT",
+            "type": "FLOAT",
+            "count": 31884,
+            "sha256": "2d5541235186dd3b409a8946dc034b51bdf477993df10f75689e34fd3d5d6141"
+          },
+          "guide_curve_index": {
+            "domain": "CURVE",
+            "type": "INT",
+            "count": 2657,
+            "sha256": "d44318d13972fcc0d95379bb5ed456b2aa63235430f9101abace120a33dbb70d"
+          },
+          "pile_guide_index": {
+            "domain": "CURVE",
+            "type": "INT",
+            "count": 2657,
+            "sha256": "d44318d13972fcc0d95379bb5ed456b2aa63235430f9101abace120a33dbb70d"
+          },
+          "is_guide": {
+            "domain": "CURVE",
+            "type": "BOOLEAN",
+            "count": 2657,
+            "sha256": "dfc11ccecd292ea51f078385722fa629b096c7a750be80180201bcc15aa7bdea"
+          },
+          "rest_position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "count": 31884,
+            "sha256": "e5e708084359937f92e4bc5fa448dcefa63638bcc44c1edff537e4fe7b6240fc"
+          },
+          "root_radius": {
+            "domain": "CURVE",
+            "type": "FLOAT",
+            "count": 2657,
+            "sha256": "dd269969cd2f9c1bb501be214abdf8271452bac9b5fd7686635b5b706fb03148"
+          }
+        },
+        "evaluated": {
+          "curve_count": 2657,
+          "point_count": 31884,
+          "positions_float32_sha256": "86d34664c52b97f872258682fbd109d85f21eb3b5a3b93bc942b39aa01832d4c",
+          "radii_float32_sha256": "2d5541235186dd3b409a8946dc034b51bdf477993df10f75689e34fd3d5d6141",
+          "offsets_int32_sha256": "0abadae6e49582ffd08d4d109086a40ddb3dd3d7f06984fced03889baf939f69",
+          "roots_float32_sha256": "d0f3feee7f1ada80114e12f2c81cc2eba15f35445b18a1689cc091d8746f112c",
+          "materials": [
+            "Blue synthetic pile · Chiang 2016"
+          ]
+        },
+        "evaluated_attributes": {
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "count": 31884,
+            "sha256": "86d34664c52b97f872258682fbd109d85f21eb3b5a3b93bc942b39aa01832d4c"
+          },
+          "radius": {
+            "domain": "POINT",
+            "type": "FLOAT",
+            "count": 31884,
+            "sha256": "2d5541235186dd3b409a8946dc034b51bdf477993df10f75689e34fd3d5d6141"
+          },
+          "guide_curve_index": {
+            "domain": "CURVE",
+            "type": "INT",
+            "count": 2657,
+            "sha256": "d44318d13972fcc0d95379bb5ed456b2aa63235430f9101abace120a33dbb70d"
+          },
+          "pile_guide_index": {
+            "domain": "CURVE",
+            "type": "INT",
+            "count": 2657,
+            "sha256": "d44318d13972fcc0d95379bb5ed456b2aa63235430f9101abace120a33dbb70d"
+          },
+          "is_guide": {
+            "domain": "CURVE",
+            "type": "BOOLEAN",
+            "count": 2657,
+            "sha256": "dfc11ccecd292ea51f078385722fa629b096c7a750be80180201bcc15aa7bdea"
+          },
+          "rest_position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "count": 31884,
+            "sha256": "e5e708084359937f92e4bc5fa448dcefa63638bcc44c1edff537e4fe7b6240fc"
+          },
+          "root_radius": {
+            "domain": "CURVE",
+            "type": "FLOAT",
+            "count": 2657,
+            "sha256": "dd269969cd2f9c1bb501be214abdf8271452bac9b5fd7686635b5b706fb03148"
+          }
+        },
+        "object_controls": {
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "hide_render": true,
+          "hide_viewport": false,
+          "hide_get": true
+        }
+      },
+      "Blue pile · flyaway": {
+        "source": {
+          "curve_count": 2500,
+          "point_count": 30000,
+          "positions_float32_sha256": "03783b0f1e3e0ec1ae34ce096f1ff942a973784744f561b58aca107fdb218543",
+          "radii_float32_sha256": "7ba573a1309693e1e743ce51237f17ed4889f65867a06e7818abd1a095e440d1",
+          "offsets_int32_sha256": "3bd53c752f0617b30fbb707d114a546191d3bc92a9bf114e384d16a20ca30770",
+          "roots_float32_sha256": "9389f2cc070c494d1068188f15dbac18d63a4768259d29985ee2fc01dac61232",
+          "materials": [
+            "Blue synthetic pile · Chiang 2016"
+          ]
+        },
+        "source_attributes": {
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "count": 30000,
+            "sha256": "03783b0f1e3e0ec1ae34ce096f1ff942a973784744f561b58aca107fdb218543"
+          },
+          "radius": {
+            "domain": "POINT",
+            "type": "FLOAT",
+            "count": 30000,
+            "sha256": "7ba573a1309693e1e743ce51237f17ed4889f65867a06e7818abd1a095e440d1"
+          }
+        },
+        "evaluated": {
+          "curve_count": 2500,
+          "point_count": 30000,
+          "positions_float32_sha256": "03783b0f1e3e0ec1ae34ce096f1ff942a973784744f561b58aca107fdb218543",
+          "radii_float32_sha256": "7ba573a1309693e1e743ce51237f17ed4889f65867a06e7818abd1a095e440d1",
+          "offsets_int32_sha256": "3bd53c752f0617b30fbb707d114a546191d3bc92a9bf114e384d16a20ca30770",
+          "roots_float32_sha256": "9389f2cc070c494d1068188f15dbac18d63a4768259d29985ee2fc01dac61232",
+          "materials": [
+            "Blue synthetic pile · Chiang 2016"
+          ]
+        },
+        "evaluated_attributes": {
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "count": 30000,
+            "sha256": "03783b0f1e3e0ec1ae34ce096f1ff942a973784744f561b58aca107fdb218543"
+          },
+          "radius": {
+            "domain": "POINT",
+            "type": "FLOAT",
+            "count": 30000,
+            "sha256": "7ba573a1309693e1e743ce51237f17ed4889f65867a06e7818abd1a095e440d1"
+          }
+        },
+        "object_controls": {
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "hide_render": true,
+          "hide_viewport": false,
+          "hide_get": false
+        }
+      }
+    },
+    "noncoat_controls": {
+      "assigned_camera": "Material comparison camera",
+      "cameras": {
+        "Material comparison camera": {
+          "matrix_world": [
+            [
+              0.9607141613960266,
+              -0.05516665428876877,
+              0.272001713514328,
+              1.2999999523162842
+            ],
+            [
+              0.2775397300720215,
+              0.19096142053604126,
+              -0.9415441751480103,
+              -4.5
+            ],
+            [
+              8.691932507076672e-09,
+              0.9800460934638977,
+              0.19877028465270996,
+              0.949999988079071
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "data": {
+            "id_type": "CAMERA",
+            "use_extra_user": false,
+            "is_linked_packed": false,
+            "is_runtime_data": false,
+            "type": "ORTHO",
+            "sensor_fit": "AUTO",
+            "passepartout_alpha": 0.5,
+            "angle_x": 0.6911112070083618,
+            "angle_y": 0.4710899591445923,
+            "angle": 0.6911112070083618,
+            "clip_start": 0.10000000149011612,
+            "clip_end": 1000.0,
+            "lens": 50.0,
+            "sensor_width": 36.0,
+            "sensor_height": 24.0,
+            "ortho_scale": 1.559999942779541,
+            "display_size": 1.0,
+            "shift_x": 0.0,
+            "shift_y": 0.0,
+            "show_limits": false,
+            "show_mist": false,
+            "show_passepartout": true,
+            "show_safe_areas": false,
+            "show_safe_center": false,
+            "show_name": false,
+            "show_sensor": false,
+            "show_background_images": false,
+            "lens_unit": "MILLIMETERS",
+            "composition_guide_color": [
+              0.5,
+              0.5,
+              0.5,
+              1.0
+            ],
+            "show_composition_center": false,
+            "show_composition_center_diagonal": false,
+            "show_composition_thirds": false,
+            "show_composition_golden": false,
+            "show_composition_golden_tria_a": false,
+            "show_composition_golden_tria_b": false,
+            "show_composition_harmony_tri_a": false,
+            "show_composition_harmony_tri_b": false,
+            "panorama_type": "FISHEYE_EQUISOLID",
+            "fisheye_fov": 3.1415927410125732,
+            "fisheye_lens": 10.5,
+            "latitude_min": -1.5707963705062866,
+            "latitude_max": 1.5707963705062866,
+            "longitude_min": -3.1415927410125732,
+            "longitude_max": 3.1415927410125732,
+            "fisheye_polynomial_k0": -1.1735143743862864e-05,
+            "fisheye_polynomial_k1": -0.019988736137747765,
+            "fisheye_polynomial_k2": -3.3525323033245513e-06,
+            "fisheye_polynomial_k3": 3.0992753181635635e-06,
+            "fisheye_polynomial_k4": -2.60646473293491e-08,
+            "central_cylindrical_range_u_min": -3.1415927410125732,
+            "central_cylindrical_range_u_max": 3.1415927410125732,
+            "central_cylindrical_range_v_min": -1.0,
+            "central_cylindrical_range_v_max": 1.0,
+            "central_cylindrical_radius": 1.0,
+            "custom_filepath": "",
+            "custom_mode": "INTERNAL",
+            "custom_bytecode": "",
+            "custom_bytecode_hash": ""
+          }
+        }
+      },
+      "lights": {
+        "Large soft key / eye window": {
+          "matrix_world": [
+            [
+              0.800000011920929,
+              0.38858890533447266,
+              -0.4571636915206909,
+              -3.0
+            ],
+            [
+              -0.6000000238418579,
+              0.5181186199188232,
+              -0.6095515489578247,
+              -4.0
+            ],
+            [
+              5.8592615204133836e-08,
+              0.7619394659996033,
+              0.647648274898529,
+              4.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "data": {
+            "id_type": "LIGHT",
+            "use_extra_user": false,
+            "is_linked_packed": false,
+            "is_runtime_data": false,
+            "type": "AREA",
+            "use_temperature": false,
+            "color": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "temperature": 6500.0,
+            "temperature_color": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "specular_factor": 1.0,
+            "diffuse_factor": 1.0,
+            "transmission_factor": 1.0,
+            "volume_factor": 1.0,
+            "use_custom_distance": false,
+            "cutoff_distance": 40.0,
+            "use_shadow": true,
+            "exposure": 0.0,
+            "normalize": true,
+            "use_nodes": true,
+            "energy": 480.0,
+            "shadow_buffer_clip_start": 0.05000000074505806,
+            "shadow_soft_size": 0.0,
+            "shadow_filter_radius": 1.0,
+            "shadow_maximum_resolution": 0.0010000000474974513,
+            "use_shadow_jitter": false,
+            "shadow_jitter_overblur": 10.0,
+            "use_absolute_resolution": false,
+            "shape": "DISK",
+            "size": 3.299999952316284,
+            "size_y": 0.25,
+            "spread": 3.1415927410125732
+          }
+        },
+        "Soft right fill": {
+          "matrix_world": [
+            [
+              0.5547000169754028,
+              -0.44049713015556335,
+              0.7058825492858887,
+              3.0
+            ],
+            [
+              0.8320503830909729,
+              0.2936646044254303,
+              -0.47058814764022827,
+              -2.0
+            ],
+            [
+              1.63182676260476e-08,
+              0.8483651280403137,
+              0.5294115543365479,
+              2.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "data": {
+            "id_type": "LIGHT",
+            "use_extra_user": false,
+            "is_linked_packed": false,
+            "is_runtime_data": false,
+            "type": "AREA",
+            "use_temperature": false,
+            "color": [
+              0.8999999761581421,
+              0.9399999976158142,
+              1.0
+            ],
+            "temperature": 6500.0,
+            "temperature_color": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "specular_factor": 1.0,
+            "diffuse_factor": 1.0,
+            "transmission_factor": 1.0,
+            "volume_factor": 1.0,
+            "use_custom_distance": false,
+            "cutoff_distance": 40.0,
+            "use_shadow": true,
+            "exposure": 0.0,
+            "normalize": true,
+            "use_nodes": true,
+            "energy": 150.0,
+            "shadow_buffer_clip_start": 0.05000000074505806,
+            "shadow_soft_size": 0.0,
+            "shadow_filter_radius": 1.0,
+            "shadow_maximum_resolution": 0.0010000000474974513,
+            "use_shadow_jitter": false,
+            "shadow_jitter_overblur": 10.0,
+            "use_absolute_resolution": false,
+            "shape": "DISK",
+            "size": 3.200000047683716,
+            "size_y": 0.25,
+            "spread": 3.1415927410125732
+          }
+        },
+        "Faint rear rim": {
+          "matrix_world": [
+            [
+              -0.9486833214759827,
+              -0.21571090817451477,
+              0.23123322427272797,
+              1.0
+            ],
+            [
+              0.3162277638912201,
+              -0.6471327543258667,
+              0.6936996579170227,
+              3.0
+            ],
+            [
+              3.3906735197319904e-09,
+              0.7312236428260803,
+              0.6821377873420715,
+              3.200000047683716
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "data": {
+            "id_type": "LIGHT",
+            "use_extra_user": false,
+            "is_linked_packed": false,
+            "is_runtime_data": false,
+            "type": "AREA",
+            "use_temperature": false,
+            "color": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "temperature": 6500.0,
+            "temperature_color": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "specular_factor": 1.0,
+            "diffuse_factor": 1.0,
+            "transmission_factor": 1.0,
+            "volume_factor": 1.0,
+            "use_custom_distance": false,
+            "cutoff_distance": 40.0,
+            "use_shadow": true,
+            "exposure": 0.0,
+            "normalize": true,
+            "use_nodes": true,
+            "energy": 200.0,
+            "shadow_buffer_clip_start": 0.05000000074505806,
+            "shadow_soft_size": 0.0,
+            "shadow_filter_radius": 1.0,
+            "shadow_maximum_resolution": 0.0010000000474974513,
+            "use_shadow_jitter": false,
+            "shadow_jitter_overblur": 10.0,
+            "use_absolute_resolution": false,
+            "shape": "DISK",
+            "size": 2.799999952316284,
+            "size_y": 0.25,
+            "spread": 3.1415927410125732
+          }
+        }
+      },
+      "mesh_vertices_and_transforms": {
+        "Stuffed form · editable mesh": {
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "vertices_float32_sha256": "df75ee6529ec80bf75fc79a4e91309ce7fc66b92e9fa13d446c9a880d461a82e",
+          "polygon_count": 18240,
+          "materials": [
+            "Blue textile backing"
+          ]
+        },
+        "Ground": {
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -0.6100000143051147
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "vertices_float32_sha256": "f69cbb67088dc9a345cdb801e2d5ecfdca2581181cb7cf0748038cb79debda84",
+          "polygon_count": 1,
+          "materials": [
+            "Matte neutral ground"
+          ]
+        }
+      },
+      "materials": {
+        "Blue synthetic pile · Chiang 2016": {
+          "controls": {
+            "id_type": "MATERIAL",
+            "use_extra_user": false,
+            "is_linked_packed": false,
+            "is_runtime_data": false,
+            "surface_render_method": "DITHERED",
+            "displacement_method": "BUMP",
+            "blend_method": "HASHED",
+            "alpha_threshold": 0.5,
+            "use_transparency_overlap": true,
+            "show_transparent_back": true,
+            "use_backface_culling": false,
+            "use_backface_culling_shadow": false,
+            "use_backface_culling_lightprobe_volume": true,
+            "use_transparent_shadow": true,
+            "use_raytrace_refraction": false,
+            "use_screen_refraction": false,
+            "use_sss_translucency": false,
+            "refraction_depth": 0.0,
+            "thickness_mode": "SPHERE",
+            "use_thickness_from_shadow": false,
+            "volume_intersection_method": "FAST",
+            "max_vertex_displacement": 0.0,
+            "preview_render_type": "SPHERE",
+            "use_preview_world": false,
+            "pass_index": 0,
+            "use_nodes": true,
+            "paint_active_slot": 0,
+            "paint_clone_slot": 0,
+            "diffuse_color": [
+              0.800000011920929,
+              0.800000011920929,
+              0.800000011920929,
+              1.0
+            ],
+            "specular_color": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "roughness": 0.4000000059604645,
+            "specular_intensity": 0.5,
+            "metallic": 0.0,
+            "line_color": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "line_priority": 0,
+            "is_grease_pencil": false
+          },
+          "nodes": {
+            "nodes": {
+              "Material Output": {
+                "type": "ShaderNodeOutputMaterial",
+                "controls": {
+                  "type": "OUTPUT_MATERIAL",
+                  "location_absolute": [
+                    520.0,
+                    0.0
+                  ],
+                  "warning_propagation": "ALL",
+                  "use_custom_color": false,
+                  "color": [
+                    0.6079999804496765,
+                    0.6079999804496765,
+                    0.6079999804496765
+                  ],
+                  "color_tag": "OUTPUT",
+                  "show_options": true,
+                  "show_preview": false,
+                  "mute": false,
+                  "show_texture": false,
+                  "bl_idname": "ShaderNodeOutputMaterial",
+                  "bl_label": "Material Output",
+                  "bl_description": "Output surface material information for use in rendering",
+                  "bl_icon": "NONE",
+                  "bl_static_type": "OUTPUT_MATERIAL",
+                  "bl_width_default": 140.0,
+                  "bl_width_min": 100.0,
+                  "bl_width_max": 700.0,
+                  "bl_height_default": 100.0,
+                  "bl_height_min": 30.0,
+                  "bl_height_max": 3.4028234663852886e+38,
+                  "is_active_output": true,
+                  "target": "ALL"
+                },
+                "inputs": [
+                  [
+                    "Displacement",
+                    [
+                      0.0,
+                      0.0,
+                      0.0
+                    ]
+                  ],
+                  [
+                    "Thickness",
+                    0.0
+                  ]
+                ],
+                "outputs": []
+              },
+              "Principled Hair BSDF": {
+                "type": "ShaderNodeBsdfHairPrincipled",
+                "controls": {
+                  "type": "BSDF_HAIR_PRINCIPLED",
+                  "location_absolute": [
+                    220.0,
+                    0.0
+                  ],
+                  "warning_propagation": "ALL",
+                  "use_custom_color": false,
+                  "color": [
+                    0.6079999804496765,
+                    0.6079999804496765,
+                    0.6079999804496765
+                  ],
+                  "color_tag": "SHADER",
+                  "show_options": true,
+                  "show_preview": false,
+                  "mute": false,
+                  "show_texture": false,
+                  "bl_idname": "ShaderNodeBsdfHairPrincipled",
+                  "bl_label": "Principled Hair BSDF",
+                  "bl_description": "Physically-based, easy-to-use shader for rendering hair and fur",
+                  "bl_icon": "NONE",
+                  "bl_static_type": "BSDF_HAIR_PRINCIPLED",
+                  "bl_width_default": 240.0,
+                  "bl_width_min": 100.0,
+                  "bl_width_max": 700.0,
+                  "bl_height_default": 100.0,
+                  "bl_height_min": 30.0,
+                  "bl_height_max": 3.4028234663852886e+38,
+                  "model": "CHIANG",
+                  "parametrization": "COLOR"
+                },
+                "inputs": [
+                  [
+                    "Color",
+                    [
+                      0.01751299947500229,
+                      0.005762999877333641,
+                      0.002059000078588724,
+                      1.0
+                    ]
+                  ],
+                  [
+                    "Melanin",
+                    0.800000011920929
+                  ],
+                  [
+                    "Melanin Redness",
+                    1.0
+                  ],
+                  [
+                    "Tint",
+                    [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ]
+                  ],
+                  [
+                    "Absorption Coefficient",
+                    [
+                      0.24553099274635315,
+                      0.5199999809265137,
+                      1.3650000095367432
+                    ]
+                  ],
+                  [
+                    "Aspect Ratio",
+                    0.8500000238418579
+                  ],
+                  [
+                    "Roughness",
+                    0.47999998927116394
+                  ],
+                  [
+                    "Radial Roughness",
+                    0.550000011920929
+                  ],
+                  [
+                    "Coat",
+                    0.0
+                  ],
+                  [
+                    "IOR",
+                    1.5499999523162842
+                  ],
+                  [
+                    "Offset",
+                    0.03490658476948738
+                  ],
+                  [
+                    "Random Color",
+                    0.0
+                  ],
+                  [
+                    "Random Roughness",
+                    0.12999999523162842
+                  ],
+                  [
+                    "Random",
+                    0.0
+                  ],
+                  [
+                    "Weight",
+                    0.0
+                  ],
+                  [
+                    "R lobe",
+                    1.0
+                  ],
+                  [
+                    "TT lobe",
+                    1.0
+                  ],
+                  [
+                    "TRT lobe",
+                    1.0
+                  ]
+                ],
+                "outputs": []
+              },
+              "Curves Info": {
+                "type": "ShaderNodeHairInfo",
+                "controls": {
+                  "type": "HAIR_INFO",
+                  "location_absolute": [
+                    -450.0,
+                    0.0
+                  ],
+                  "warning_propagation": "ALL",
+                  "use_custom_color": false,
+                  "color": [
+                    0.6079999804496765,
+                    0.6079999804496765,
+                    0.6079999804496765
+                  ],
+                  "color_tag": "INPUT",
+                  "show_options": true,
+                  "show_preview": false,
+                  "mute": false,
+                  "show_texture": false,
+                  "bl_idname": "ShaderNodeHairInfo",
+                  "bl_label": "Curves Info",
+                  "bl_description": "Retrieve hair curve information",
+                  "bl_icon": "NONE",
+                  "bl_static_type": "HAIR_INFO",
+                  "bl_width_default": 140.0,
+                  "bl_width_min": 100.0,
+                  "bl_width_max": 700.0,
+                  "bl_height_default": 100.0,
+                  "bl_height_min": 30.0,
+                  "bl_height_max": 3.4028234663852886e+38
+                },
+                "inputs": [],
+                "outputs": [
+                  [
+                    "Is Strand",
+                    0.0
+                  ],
+                  [
+                    "Intercept",
+                    0.0
+                  ],
+                  [
+                    "Length",
+                    0.0
+                  ],
+                  [
+                    "Thickness",
+                    0.0
+                  ],
+                  [
+                    "Tangent Normal",
+                    [
+                      0.0,
+                      0.0,
+                      0.0
+                    ]
+                  ],
+                  [
+                    "Random",
+                    0.0
+                  ]
+                ]
+              },
+              "Color Ramp": {
+                "type": "ShaderNodeValToRGB",
+                "controls": {
+                  "type": "VALTORGB",
+                  "location_absolute": [
+                    -220.0,
+                    0.0
+                  ],
+                  "warning_propagation": "ALL",
+                  "use_custom_color": false,
+                  "color": [
+                    0.6079999804496765,
+                    0.6079999804496765,
+                    0.6079999804496765
+                  ],
+                  "color_tag": "CONVERTER",
+                  "show_options": true,
+                  "show_preview": false,
+                  "mute": false,
+                  "show_texture": false,
+                  "bl_idname": "ShaderNodeValToRGB",
+                  "bl_label": "Color Ramp",
+                  "bl_description": "Map values to colors with the use of a gradient",
+                  "bl_icon": "NONE",
+                  "bl_static_type": "VALTORGB",
+                  "bl_width_default": 240.0,
+                  "bl_width_min": 100.0,
+                  "bl_width_max": 700.0,
+                  "bl_height_default": 100.0,
+                  "bl_height_min": 30.0,
+                  "bl_height_max": 3.4028234663852886e+38
+                },
+                "inputs": [
+                  [
+                    "Fac",
+                    0.5
+                  ]
+                ],
+                "outputs": [
+                  [
+                    "Color",
+                    [
+                      0.800000011920929,
+                      0.800000011920929,
+                      0.800000011920929,
+                      1.0
+                    ]
+                  ],
+                  [
+                    "Alpha",
+                    0.0
+                  ]
+                ]
+              }
+            },
+            "links": [
+              [
+                "Color Ramp",
+                "Color",
+                "Principled Hair BSDF",
+                "Color"
+              ],
+              [
+                "Curves Info",
+                "Random",
+                "Color Ramp",
+                "Fac"
+              ],
+              [
+                "Principled Hair BSDF",
+                "BSDF",
+                "Material Output",
+                "Surface"
+              ]
+            ]
+          }
+        },
+        "Blue textile backing": {
+          "controls": {
+            "id_type": "MATERIAL",
+            "use_extra_user": false,
+            "is_linked_packed": false,
+            "is_runtime_data": false,
+            "surface_render_method": "DITHERED",
+            "displacement_method": "BUMP",
+            "blend_method": "HASHED",
+            "alpha_threshold": 0.5,
+            "use_transparency_overlap": true,
+            "show_transparent_back": true,
+            "use_backface_culling": false,
+            "use_backface_culling_shadow": false,
+            "use_backface_culling_lightprobe_volume": true,
+            "use_transparent_shadow": true,
+            "use_raytrace_refraction": false,
+            "use_screen_refraction": false,
+            "use_sss_translucency": false,
+            "refraction_depth": 0.0,
+            "thickness_mode": "SPHERE",
+            "use_thickness_from_shadow": false,
+            "volume_intersection_method": "FAST",
+            "max_vertex_displacement": 0.0,
+            "preview_render_type": "SPHERE",
+            "use_preview_world": false,
+            "pass_index": 0,
+            "use_nodes": true,
+            "paint_active_slot": 0,
+            "paint_clone_slot": 0,
+            "diffuse_color": [
+              0.14995978772640228,
+              0.2462013214826584,
+              0.47353148460388184,
+              1.0
+            ],
+            "specular_color": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "roughness": 0.4000000059604645,
+            "specular_intensity": 0.5,
+            "metallic": 0.0,
+            "line_color": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "line_priority": 0,
+            "is_grease_pencil": false
+          },
+          "nodes": {
+            "nodes": {
+              "Principled BSDF": {
+                "type": "ShaderNodeBsdfPrincipled",
+                "controls": {
+                  "type": "BSDF_PRINCIPLED",
+                  "location_absolute": [
+                    -200.0,
+                    100.0
+                  ],
+                  "warning_propagation": "ALL",
+                  "use_custom_color": false,
+                  "color": [
+                    0.6079999804496765,
+                    0.6079999804496765,
+                    0.6079999804496765
+                  ],
+                  "color_tag": "SHADER",
+                  "show_options": true,
+                  "show_preview": false,
+                  "mute": false,
+                  "show_texture": false,
+                  "bl_idname": "ShaderNodeBsdfPrincipled",
+                  "bl_label": "Principled BSDF",
+                  "bl_description": "Physically-based, easy-to-use shader for rendering surface materials, based on the OpenPBR model",
+                  "bl_icon": "NONE",
+                  "bl_static_type": "BSDF_PRINCIPLED",
+                  "bl_width_default": 240.0,
+                  "bl_width_min": 100.0,
+                  "bl_width_max": 700.0,
+                  "bl_height_default": 100.0,
+                  "bl_height_min": 30.0,
+                  "bl_height_max": 3.4028234663852886e+38,
+                  "distribution": "MULTI_GGX",
+                  "subsurface_method": "RANDOM_WALK"
+                },
+                "inputs": [
+                  [
+                    "Base Color",
+                    [
+                      0.14995978772640228,
+                      0.2462013214826584,
+                      0.47353148460388184,
+                      1.0
+                    ]
+                  ],
+                  [
+                    "Metallic",
+                    0.0
+                  ],
+                  [
+                    "Roughness",
+                    0.9200000166893005
+                  ],
+                  [
+                    "IOR",
+                    1.5
+                  ],
+                  [
+                    "Alpha",
+                    1.0
+                  ],
+                  [
+                    "Thin Wall",
+                    false
+                  ],
+                  [
+                    "Normal",
+                    [
+                      0.0,
+                      0.0,
+                      0.0
+                    ]
+                  ],
+                  [
+                    "Weight",
+                    0.0
+                  ],
+                  [
+                    "Diffuse Roughness",
+                    0.0
+                  ],
+                  [
+                    "Subsurface Weight",
+                    0.0
+                  ],
+                  [
+                    "Subsurface Radius",
+                    [
+                      1.0,
+                      0.20000000298023224,
+                      0.10000000149011612
+                    ]
+                  ],
+                  [
+                    "Subsurface Scale",
+                    0.004999999888241291
+                  ],
+                  [
+                    "Subsurface IOR",
+                    1.399999976158142
+                  ],
+                  [
+                    "Subsurface Anisotropy",
+                    0.0
+                  ],
+                  [
+                    "Specular IOR Level",
+                    0.5
+                  ],
+                  [
+                    "Specular Tint",
+                    [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ]
+                  ],
+                  [
+                    "Anisotropic",
+                    0.0
+                  ],
+                  [
+                    "Anisotropic Rotation",
+                    0.0
+                  ],
+                  [
+                    "Tangent",
+                    [
+                      0.0,
+                      0.0,
+                      0.0
+                    ]
+                  ],
+                  [
+                    "Transmission Weight",
+                    0.0
+                  ],
+                  [
+                    "Coat Weight",
+                    0.0
+                  ],
+                  [
+                    "Coat Roughness",
+                    0.029999999329447746
+                  ],
+                  [
+                    "Coat IOR",
+                    1.5
+                  ],
+                  [
+                    "Coat Tint",
+                    [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ]
+                  ],
+                  [
+                    "Coat Normal",
+                    [
+                      0.0,
+                      0.0,
+                      0.0
+                    ]
+                  ],
+                  [
+                    "Sheen Weight",
+                    0.0
+                  ],
+                  [
+                    "Sheen Roughness",
+                    0.5
+                  ],
+                  [
+                    "Sheen Tint",
+                    [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ]
+                  ],
+                  [
+                    "Emission Color",
+                    [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ]
+                  ],
+                  [
+                    "Emission Strength",
+                    0.0
+                  ],
+                  [
+                    "Thin Film Thickness",
+                    0.0
+                  ],
+                  [
+                    "Thin Film IOR",
+                    1.3300000429153442
+                  ]
+                ],
+                "outputs": []
+              },
+              "Material Output": {
+                "type": "ShaderNodeOutputMaterial",
+                "controls": {
+                  "type": "OUTPUT_MATERIAL",
+                  "location_absolute": [
+                    200.0,
+                    100.0
+                  ],
+                  "warning_propagation": "ALL",
+                  "use_custom_color": false,
+                  "color": [
+                    0.6079999804496765,
+                    0.6079999804496765,
+                    0.6079999804496765
+                  ],
+                  "color_tag": "OUTPUT",
+                  "show_options": true,
+                  "show_preview": false,
+                  "mute": false,
+                  "show_texture": false,
+                  "bl_idname": "ShaderNodeOutputMaterial",
+                  "bl_label": "Material Output",
+                  "bl_description": "Output surface material information for use in rendering",
+                  "bl_icon": "NONE",
+                  "bl_static_type": "OUTPUT_MATERIAL",
+                  "bl_width_default": 140.0,
+                  "bl_width_min": 100.0,
+                  "bl_width_max": 700.0,
+                  "bl_height_default": 100.0,
+                  "bl_height_min": 30.0,
+                  "bl_height_max": 3.4028234663852886e+38,
+                  "is_active_output": true,
+                  "target": "ALL"
+                },
+                "inputs": [
+                  [
+                    "Displacement",
+                    [
+                      0.0,
+                      0.0,
+                      0.0
+                    ]
+                  ],
+                  [
+                    "Thickness",
+                    0.0
+                  ]
+                ],
+                "outputs": []
+              }
+            },
+            "links": [
+              [
+                "Principled BSDF",
+                "BSDF",
+                "Material Output",
+                "Surface"
+              ]
+            ]
+          }
+        },
+        "Matte neutral ground": {
+          "controls": {
+            "id_type": "MATERIAL",
+            "use_extra_user": false,
+            "is_linked_packed": false,
+            "is_runtime_data": false,
+            "surface_render_method": "DITHERED",
+            "displacement_method": "BUMP",
+            "blend_method": "HASHED",
+            "alpha_threshold": 0.5,
+            "use_transparency_overlap": true,
+            "show_transparent_back": true,
+            "use_backface_culling": false,
+            "use_backface_culling_shadow": false,
+            "use_backface_culling_lightprobe_volume": true,
+            "use_transparent_shadow": true,
+            "use_raytrace_refraction": false,
+            "use_screen_refraction": false,
+            "use_sss_translucency": false,
+            "refraction_depth": 0.0,
+            "thickness_mode": "SPHERE",
+            "use_thickness_from_shadow": false,
+            "volume_intersection_method": "FAST",
+            "max_vertex_displacement": 0.0,
+            "preview_render_type": "SPHERE",
+            "use_preview_world": false,
+            "pass_index": 0,
+            "use_nodes": true,
+            "paint_active_slot": 0,
+            "paint_clone_slot": 0,
+            "diffuse_color": [
+              0.03688944876194,
+              0.03688944876194,
+              0.039546236395835876,
+              1.0
+            ],
+            "specular_color": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "roughness": 0.4000000059604645,
+            "specular_intensity": 0.5,
+            "metallic": 0.0,
+            "line_color": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "line_priority": 0,
+            "is_grease_pencil": false
+          },
+          "nodes": {
+            "nodes": {
+              "Principled BSDF": {
+                "type": "ShaderNodeBsdfPrincipled",
+                "controls": {
+                  "type": "BSDF_PRINCIPLED",
+                  "location_absolute": [
+                    -200.0,
+                    100.0
+                  ],
+                  "warning_propagation": "ALL",
+                  "use_custom_color": false,
+                  "color": [
+                    0.6079999804496765,
+                    0.6079999804496765,
+                    0.6079999804496765
+                  ],
+                  "color_tag": "SHADER",
+                  "show_options": true,
+                  "show_preview": false,
+                  "mute": false,
+                  "show_texture": false,
+                  "bl_idname": "ShaderNodeBsdfPrincipled",
+                  "bl_label": "Principled BSDF",
+                  "bl_description": "Physically-based, easy-to-use shader for rendering surface materials, based on the OpenPBR model",
+                  "bl_icon": "NONE",
+                  "bl_static_type": "BSDF_PRINCIPLED",
+                  "bl_width_default": 240.0,
+                  "bl_width_min": 100.0,
+                  "bl_width_max": 700.0,
+                  "bl_height_default": 100.0,
+                  "bl_height_min": 30.0,
+                  "bl_height_max": 3.4028234663852886e+38,
+                  "distribution": "MULTI_GGX",
+                  "subsurface_method": "RANDOM_WALK"
+                },
+                "inputs": [
+                  [
+                    "Base Color",
+                    [
+                      0.03688944876194,
+                      0.03688944876194,
+                      0.039546236395835876,
+                      1.0
+                    ]
+                  ],
+                  [
+                    "Metallic",
+                    0.0
+                  ],
+                  [
+                    "Roughness",
+                    0.9200000166893005
+                  ],
+                  [
+                    "IOR",
+                    1.5
+                  ],
+                  [
+                    "Alpha",
+                    1.0
+                  ],
+                  [
+                    "Thin Wall",
+                    false
+                  ],
+                  [
+                    "Normal",
+                    [
+                      0.0,
+                      0.0,
+                      0.0
+                    ]
+                  ],
+                  [
+                    "Weight",
+                    0.0
+                  ],
+                  [
+                    "Diffuse Roughness",
+                    0.0
+                  ],
+                  [
+                    "Subsurface Weight",
+                    0.0
+                  ],
+                  [
+                    "Subsurface Radius",
+                    [
+                      1.0,
+                      0.20000000298023224,
+                      0.10000000149011612
+                    ]
+                  ],
+                  [
+                    "Subsurface Scale",
+                    0.004999999888241291
+                  ],
+                  [
+                    "Subsurface IOR",
+                    1.399999976158142
+                  ],
+                  [
+                    "Subsurface Anisotropy",
+                    0.0
+                  ],
+                  [
+                    "Specular IOR Level",
+                    0.5
+                  ],
+                  [
+                    "Specular Tint",
+                    [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ]
+                  ],
+                  [
+                    "Anisotropic",
+                    0.0
+                  ],
+                  [
+                    "Anisotropic Rotation",
+                    0.0
+                  ],
+                  [
+                    "Tangent",
+                    [
+                      0.0,
+                      0.0,
+                      0.0
+                    ]
+                  ],
+                  [
+                    "Transmission Weight",
+                    0.0
+                  ],
+                  [
+                    "Coat Weight",
+                    0.0
+                  ],
+                  [
+                    "Coat Roughness",
+                    0.029999999329447746
+                  ],
+                  [
+                    "Coat IOR",
+                    1.5
+                  ],
+                  [
+                    "Coat Tint",
+                    [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ]
+                  ],
+                  [
+                    "Coat Normal",
+                    [
+                      0.0,
+                      0.0,
+                      0.0
+                    ]
+                  ],
+                  [
+                    "Sheen Weight",
+                    0.0
+                  ],
+                  [
+                    "Sheen Roughness",
+                    0.5
+                  ],
+                  [
+                    "Sheen Tint",
+                    [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ]
+                  ],
+                  [
+                    "Emission Color",
+                    [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ]
+                  ],
+                  [
+                    "Emission Strength",
+                    0.0
+                  ],
+                  [
+                    "Thin Film Thickness",
+                    0.0
+                  ],
+                  [
+                    "Thin Film IOR",
+                    1.3300000429153442
+                  ]
+                ],
+                "outputs": []
+              },
+              "Material Output": {
+                "type": "ShaderNodeOutputMaterial",
+                "controls": {
+                  "type": "OUTPUT_MATERIAL",
+                  "location_absolute": [
+                    200.0,
+                    100.0
+                  ],
+                  "warning_propagation": "ALL",
+                  "use_custom_color": false,
+                  "color": [
+                    0.6079999804496765,
+                    0.6079999804496765,
+                    0.6079999804496765
+                  ],
+                  "color_tag": "OUTPUT",
+                  "show_options": true,
+                  "show_preview": false,
+                  "mute": false,
+                  "show_texture": false,
+                  "bl_idname": "ShaderNodeOutputMaterial",
+                  "bl_label": "Material Output",
+                  "bl_description": "Output surface material information for use in rendering",
+                  "bl_icon": "NONE",
+                  "bl_static_type": "OUTPUT_MATERIAL",
+                  "bl_width_default": 140.0,
+                  "bl_width_min": 100.0,
+                  "bl_width_max": 700.0,
+                  "bl_height_default": 100.0,
+                  "bl_height_min": 30.0,
+                  "bl_height_max": 3.4028234663852886e+38,
+                  "is_active_output": true,
+                  "target": "ALL"
+                },
+                "inputs": [
+                  [
+                    "Displacement",
+                    [
+                      0.0,
+                      0.0,
+                      0.0
+                    ]
+                  ],
+                  [
+                    "Thickness",
+                    0.0
+                  ]
+                ],
+                "outputs": []
+              }
+            },
+            "links": [
+              [
+                "Principled BSDF",
+                "BSDF",
+                "Material Output",
+                "Surface"
+              ]
+            ]
+          }
+        }
+      },
+      "world": {
+        "controls": {
+          "id_type": "WORLD",
+          "use_extra_user": false,
+          "is_linked_packed": false,
+          "is_runtime_data": false,
+          "use_eevee_finite_volume": false,
+          "color": [
+            0.05000000074505806,
+            0.05000000074505806,
+            0.05000000074505806
+          ],
+          "use_nodes": true,
+          "lightgroup": "",
+          "probe_resolution": "1024",
+          "sun_threshold": 10.0,
+          "sun_angle": 0.009180432185530663,
+          "use_sun_shadow": true,
+          "sun_shadow_maximum_resolution": 0.0010000000474974513,
+          "sun_shadow_filter_radius": 1.0,
+          "use_sun_shadow_jitter": false,
+          "sun_shadow_jitter_overblur": 10.0
+        },
+        "nodes": {
+          "nodes": {
+            "Background": {
+              "type": "ShaderNodeBackground",
+              "controls": {
+                "type": "BACKGROUND",
+                "location_absolute": [
+                  -200.0,
+                  100.0
+                ],
+                "warning_propagation": "ALL",
+                "use_custom_color": false,
+                "color": [
+                  0.6079999804496765,
+                  0.6079999804496765,
+                  0.6079999804496765
+                ],
+                "color_tag": "SHADER",
+                "show_options": true,
+                "show_preview": false,
+                "mute": false,
+                "show_texture": false,
+                "bl_idname": "ShaderNodeBackground",
+                "bl_label": "Background",
+                "bl_description": "Add background light emission.\nNote: This node should only be used for the world surface output",
+                "bl_icon": "NONE",
+                "bl_static_type": "BACKGROUND",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 3.4028234663852886e+38
+              },
+              "inputs": [
+                [
+                  "Color",
+                  [
+                    0.20000000298023224,
+                    0.20000000298023224,
+                    0.20000000298023224,
+                    1.0
+                  ]
+                ],
+                [
+                  "Strength",
+                  0.25
+                ],
+                [
+                  "Weight",
+                  0.0
+                ]
+              ],
+              "outputs": []
+            },
+            "World Output": {
+              "type": "ShaderNodeOutputWorld",
+              "controls": {
+                "type": "OUTPUT_WORLD",
+                "location_absolute": [
+                  200.0,
+                  100.0
+                ],
+                "warning_propagation": "ALL",
+                "use_custom_color": false,
+                "color": [
+                  0.6079999804496765,
+                  0.6079999804496765,
+                  0.6079999804496765
+                ],
+                "color_tag": "OUTPUT",
+                "show_options": true,
+                "show_preview": false,
+                "mute": false,
+                "show_texture": false,
+                "bl_idname": "ShaderNodeOutputWorld",
+                "bl_label": "World Output",
+                "bl_description": "Output light color information to the scene's World",
+                "bl_icon": "NONE",
+                "bl_static_type": "OUTPUT_WORLD",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 3.4028234663852886e+38,
+                "is_active_output": true,
+                "target": "ALL"
+              },
+              "inputs": [],
+              "outputs": []
+            }
+          },
+          "links": [
+            [
+              "Background",
+              "Background",
+              "World Output",
+              "Surface"
+            ]
+          ]
+        }
+      },
+      "render": {
+        "render": {
+          "resolution_x": 768,
+          "resolution_y": 768,
+          "resolution_percentage": 100,
+          "preview_pixel_size": "AUTO",
+          "pixel_aspect_x": 1.0,
+          "pixel_aspect_y": 1.0,
+          "ppm_factor": 72.0,
+          "ppm_base": 0.02539999969303608,
+          "fps": 24,
+          "fps_base": 1.0,
+          "frame_map_old": 100,
+          "frame_map_new": 100,
+          "dither_intensity": 1.0,
+          "filter_size": 1.5,
+          "film_transparent": false,
+          "use_freestyle": false,
+          "threads": 32,
+          "threads_mode": "AUTO",
+          "use_motion_blur": false,
+          "motion_blur_shutter": 0.5,
+          "motion_blur_position": "CENTER",
+          "hair_type": "STRAND",
+          "hair_subdiv": 0,
+          "use_high_quality_normals": false,
+          "anisotropic_filter": "FILTER_2",
+          "use_border": false,
+          "border_min_x": 0.0,
+          "border_min_y": 0.0,
+          "border_max_x": 1.0,
+          "border_max_y": 1.0,
+          "use_crop_to_border": false,
+          "use_placeholder": false,
+          "use_overwrite": true,
+          "save_output": true,
+          "use_compositing": true,
+          "use_sequencer": true,
+          "use_file_extension": true,
+          "file_extension": ".png",
+          "is_movie_format": false,
+          "use_render_cache": false,
+          "use_stamp_time": true,
+          "use_stamp_date": true,
+          "use_stamp_frame": true,
+          "use_stamp_frame_range": false,
+          "use_stamp_camera": true,
+          "use_stamp_lens": false,
+          "use_stamp_scene": true,
+          "use_stamp_note": false,
+          "use_stamp_marker": false,
+          "use_stamp_filename": true,
+          "use_stamp_sequencer_strip": false,
+          "use_stamp_render_time": true,
+          "stamp_note_text": "",
+          "use_stamp": false,
+          "use_stamp_labels": true,
+          "metadata_input": "SCENE",
+          "use_stamp_memory": false,
+          "use_stamp_hostname": false,
+          "stamp_font_size": 12,
+          "stamp_foreground": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "stamp_background": [
+            0.0,
+            0.0,
+            0.0,
+            0.25
+          ],
+          "sequencer_gl_preview": "SOLID",
+          "use_sequencer_override_scene_strip": false,
+          "use_single_layer": false,
+          "use_multiview": false,
+          "views_format": "STEREO_3D",
+          "engine": "CYCLES",
+          "has_multiple_engines": true,
+          "use_spherical_stereo": true,
+          "use_simplify": false,
+          "simplify_subdivision": 6,
+          "simplify_child_particles": 1.0,
+          "simplify_subdivision_render": 6,
+          "simplify_child_particles_render": 1.0,
+          "simplify_volumes": 1.0,
+          "use_simplify_normals": false,
+          "use_texture_cache": true,
+          "use_auto_generate_texture_cache": false,
+          "simplify_gpencil": false,
+          "simplify_gpencil_onplay": false,
+          "simplify_gpencil_antialiasing": true,
+          "simplify_gpencil_view_fill": true,
+          "simplify_gpencil_modifier": true,
+          "simplify_gpencil_shader_fx": true,
+          "simplify_gpencil_tint": true,
+          "use_persistent_data": false,
+          "line_thickness_mode": "ABSOLUTE",
+          "line_thickness": 1.0,
+          "compositor_device": "GPU",
+          "compositor_precision": "AUTO",
+          "compositor_denoise_device": "AUTO",
+          "compositor_denoise_preview_quality": "BALANCED",
+          "compositor_denoise_final_quality": "HIGH"
+        },
+        "cycles": {
+          "device": "GPU",
+          "shading_system": false,
+          "preview_pause": false,
+          "use_denoising": true,
+          "denoiser": "OPENIMAGEDENOISE",
+          "denoising_prefilter": "ACCURATE",
+          "denoising_quality": "HIGH",
+          "denoising_input_passes": "RGB_ALBEDO_NORMAL",
+          "denoising_use_gpu": false,
+          "use_preview_denoising": false,
+          "preview_denoiser": "AUTO",
+          "preview_denoising_prefilter": "FAST",
+          "preview_denoising_quality": "BALANCED",
+          "preview_denoising_input_passes": "RGB_ALBEDO",
+          "preview_denoising_start_sample": 1,
+          "preview_denoising_use_gpu": true,
+          "samples": 96,
+          "preview_samples": 1024,
+          "use_sample_subset": false,
+          "sample_offset": 0,
+          "sample_subset_length": 2048,
+          "time_limit": 0.0,
+          "sampling_pattern": "AUTOMATIC",
+          "scrambling_distance": 1.0,
+          "preview_scrambling_distance": false,
+          "auto_scrambling_distance": false,
+          "use_layer_samples": "USE",
+          "light_sampling_threshold": 0.009999999776482582,
+          "use_adaptive_sampling": true,
+          "adaptive_threshold": 0.012000000104308128,
+          "adaptive_min_samples": 0,
+          "use_preview_adaptive_sampling": true,
+          "preview_adaptive_threshold": 0.10000000149011612,
+          "preview_adaptive_min_samples": 0,
+          "direct_light_sampling_type": "MULTIPLE_IMPORTANCE_SAMPLING",
+          "use_light_tree": true,
+          "min_light_bounces": 0,
+          "min_transparent_bounces": 0,
+          "caustics_reflective": true,
+          "caustics_refractive": true,
+          "blur_glossy": 1.0,
+          "use_guiding": false,
+          "use_deterministic_guiding": true,
+          "guiding_distribution_type": "PARALLAX_AWARE_VMM",
+          "guiding_directional_sampling_type": "RIS",
+          "use_surface_guiding": true,
+          "surface_guiding_probability": 0.5,
+          "use_volume_guiding": true,
+          "guiding_training_samples": 128,
+          "volume_guiding_probability": 0.5,
+          "use_guiding_direct_light": true,
+          "use_guiding_mis_weights": true,
+          "guiding_roughness_threshold": 0.05000000074505806,
+          "max_bounces": 12,
+          "diffuse_bounces": 6,
+          "glossy_bounces": 8,
+          "transmission_bounces": 12,
+          "volume_bounces": 0,
+          "transparent_max_bounces": 8,
+          "volume_step_rate": 1.0,
+          "volume_preview_step_rate": 1.0,
+          "volume_max_steps": 1024,
+          "volume_biased": false,
+          "dicing_rate": 1.0,
+          "preview_dicing_rate": 8.0,
+          "max_subdivisions": 12,
+          "offscreen_dicing_scale": 4.0,
+          "film_exposure": 1.0,
+          "film_transparent_glass": false,
+          "film_transparent_roughness": 0.10000000149011612,
+          "pixel_filter_type": "BLACKMAN_HARRIS",
+          "filter_width": 1.5,
+          "use_pixel_jitter": false,
+          "seed": 0,
+          "use_animated_seed": false,
+          "sample_clamp_direct": 0.0,
+          "sample_clamp_indirect": 10.0,
+          "debug_bvh_type": "DYNAMIC_BVH",
+          "debug_use_spatial_splits": false,
+          "debug_use_hair_bvh": true,
+          "debug_use_compact_bvh": false,
+          "debug_bvh_time_steps": 0,
+          "bake_type": "COMBINED",
+          "use_camera_cull": false,
+          "camera_cull_margin": 0.10000000149011612,
+          "use_distance_cull": false,
+          "distance_cull_margin": 50.0,
+          "rolling_shutter_type": "NONE",
+          "rolling_shutter_duration": 0.10000000149011612,
+          "texture_resolution": 1.0,
+          "texture_resolution_render": 1.0,
+          "texture_limit": "OFF",
+          "texture_limit_render": "OFF",
+          "use_fast_gi": false,
+          "fast_gi_method": "REPLACE",
+          "ao_bounces": 1,
+          "ao_bounces_render": 1,
+          "use_auto_tile": true,
+          "tile_size": 2048,
+          "debug_use_cpu_avx2": true,
+          "debug_use_cpu_sse42": true,
+          "debug_bvh_layout": "EMBREE",
+          "debug_use_cuda_adaptive_compile": false,
+          "debug_use_optix_debug": false,
+          "debug_use_hip_adaptive_compile": false,
+          "debug_use_metal_adaptive_compile": false,
+          "debug_use_texture_cache_eviction": true,
+          "debug_texture_cache_preserve_unused": 0
+        },
+        "image_settings": {
+          "media_type": "IMAGE",
+          "file_format": "PNG",
+          "color_mode": "RGB",
+          "color_depth": "8",
+          "quality": 90,
+          "compression": 15,
+          "use_preview": false,
+          "exr_codec": "ZIP",
+          "use_exr_interleave": false,
+          "use_jpeg2k_ycc": false,
+          "use_jpeg2k_cinema_preset": false,
+          "use_jpeg2k_cinema_48": false,
+          "jpeg2k_codec": "JP2",
+          "tiff_codec": "DEFLATE",
+          "use_cineon_log": false,
+          "cineon_black": 0,
+          "cineon_white": 0,
+          "cineon_gamma": 0.0,
+          "views_format": "INDIVIDUAL",
+          "color_management": "FOLLOW_SCENE",
+          "has_linear_colorspace": false
+        },
+        "view": {
+          "look": "AgX - Medium High Contrast",
+          "view_transform": "AgX",
+          "exposure": 0.0,
+          "gamma": 1.0,
+          "use_curve_mapping": false,
+          "use_white_balance": false,
+          "white_balance_temperature": 6500.0,
+          "white_balance_tint": 10.0,
+          "white_balance_whitepoint": [
+            0.9993047714233398,
+            1.0003489255905151,
+            0.9985780119895935
+          ],
+          "is_hdr": false,
+          "support_emulation": true
+        },
+        "curves": {
+          "shape": "THICK",
+          "subdivisions": 2
+        }
+      }
+    },
+    "mesh_topology": {
+      "Stuffed form · editable mesh": {
+        "edges_int32_sha256": "693e33ab586c2f268b98e69fc68a3fdde5eb89252326f2b7c7d880481bbd57d6",
+        "loops_int32_sha256": "e22fc3ed8e649134aae27c8a795eec90836a324c5af1b4429b43c0c0b7291560",
+        "polygon_loop_start_int32_sha256": "89d9b8d129c5fb72a2142de50af371a05d7ba2e0619aef53197415c4af41ac52",
+        "polygon_loop_count_int32_sha256": "87a5d503821c21fa619430044dc33e2e4ec68e6ee60439eec9e975a2210cc2e1",
+        "polygon_material_int32_sha256": "5388095a0cd0b3e9575a3f8f9308385a5ca03854b2627c00a637b5fdad478f93",
+        "polygon_smooth_sha256": "5414b004263e0a90af7d0eb5262ff125ffed5550ef5ba6d30bbbe40a93f413b2"
+      },
+      "Ground": {
+        "edges_int32_sha256": "b76d3b6400a4f6a225b69a9789af0a5fa7a712d07d3c9e7e40109498e47350c9",
+        "loops_int32_sha256": "9e97865f268fbcc4190687a97d459d7ac09dfaded381b251528e2041ffe51739",
+        "polygon_loop_start_int32_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+        "polygon_loop_count_int32_sha256": "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+        "polygon_material_int32_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+        "polygon_smooth_sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+      }
+    },
+    "modifier_inputs": {
+      "Guide Object": {
+        "type": "Object",
+        "name": "Pile guides · editable live input"
+      },
+      "Curl Factor": 0.699999988079071,
+      "Curl Radius": 0.006000000052154064,
+      "Curl Frequency": 0.8500000238418579,
+      "Clump Factor": 0.8799999952316284,
+      "Clump Shape": 0.20000000298023224,
+      "Tip Spread": 0.003000000026077032,
+      "Profile Minimum": 0.550000011920929,
+      "Profile Maximum": 1.0
+    },
+    "tree": {
+      "sha256": "df291501e54e09879a8fc97e5b9178e33b1a757317a95013c8257e613af2dbc7",
+      "node_count": 22,
+      "link_count": 35,
+      "record": {
+        "tree_type": "GeometryNodeTree",
+        "interface": [
+          {
+            "name": "Geometry",
+            "identifier": "Socket_1",
+            "in_out": "OUTPUT",
+            "socket_type": "NodeSocketGeometry",
+            "controls": {
+              "item_type": "SOCKET",
+              "position": 0,
+              "index": 0,
+              "identifier": "Socket_1",
+              "description": "",
+              "socket_type": "NodeSocketGeometry",
+              "in_out": "OUTPUT",
+              "hide_value": false,
+              "hide_in_modifier": false,
+              "force_non_field": false,
+              "is_inspect_output": false,
+              "is_panel_toggle": false,
+              "layer_selection_field": false,
+              "menu_expanded": false,
+              "optional_label": false,
+              "select": false,
+              "attribute_domain": "POINT",
+              "default_attribute_name": "",
+              "structure_type": "AUTO",
+              "default_input": "VALUE",
+              "bl_socket_idname": "NodeSocketGeometry"
+            }
+          },
+          {
+            "name": "Geometry",
+            "identifier": "Socket_0",
+            "in_out": "INPUT",
+            "socket_type": "NodeSocketGeometry",
+            "controls": {
+              "item_type": "SOCKET",
+              "position": 1,
+              "index": 1,
+              "identifier": "Socket_0",
+              "description": "",
+              "socket_type": "NodeSocketGeometry",
+              "in_out": "INPUT",
+              "hide_value": false,
+              "hide_in_modifier": false,
+              "force_non_field": false,
+              "is_inspect_output": false,
+              "is_panel_toggle": false,
+              "layer_selection_field": false,
+              "menu_expanded": false,
+              "optional_label": false,
+              "select": false,
+              "attribute_domain": "POINT",
+              "default_attribute_name": "",
+              "structure_type": "AUTO",
+              "default_input": "VALUE",
+              "bl_socket_idname": "NodeSocketGeometry"
+            }
+          },
+          {
+            "name": "Guide Object",
+            "identifier": "Socket_2",
+            "in_out": "INPUT",
+            "socket_type": "NodeSocketObject",
+            "controls": {
+              "item_type": "SOCKET",
+              "position": 2,
+              "index": 2,
+              "identifier": "Socket_2",
+              "description": "",
+              "socket_type": "NodeSocketObject",
+              "in_out": "INPUT",
+              "hide_value": false,
+              "hide_in_modifier": false,
+              "force_non_field": false,
+              "is_inspect_output": false,
+              "is_panel_toggle": false,
+              "layer_selection_field": false,
+              "menu_expanded": false,
+              "optional_label": false,
+              "select": false,
+              "attribute_domain": "POINT",
+              "default_attribute_name": "",
+              "structure_type": "AUTO",
+              "default_input": "VALUE",
+              "bl_socket_idname": "NodeSocketObject"
+            }
+          },
+          {
+            "name": "Curl Factor",
+            "identifier": "Socket_3",
+            "in_out": "INPUT",
+            "socket_type": "NodeSocketFloat",
+            "controls": {
+              "item_type": "SOCKET",
+              "position": 3,
+              "index": 3,
+              "identifier": "Socket_3",
+              "description": "",
+              "socket_type": "NodeSocketFloat",
+              "in_out": "INPUT",
+              "hide_value": false,
+              "hide_in_modifier": false,
+              "force_non_field": false,
+              "is_inspect_output": false,
+              "is_panel_toggle": false,
+              "layer_selection_field": false,
+              "menu_expanded": false,
+              "optional_label": false,
+              "select": false,
+              "attribute_domain": "POINT",
+              "default_attribute_name": "",
+              "structure_type": "AUTO",
+              "default_input": "VALUE",
+              "bl_socket_idname": "NodeSocketFloat",
+              "subtype": "NONE",
+              "default_value": 0.699999988079071,
+              "min_value": -3.4028234663852886e+38,
+              "max_value": 3.4028234663852886e+38
+            }
+          },
+          {
+            "name": "Curl Radius",
+            "identifier": "Socket_4",
+            "in_out": "INPUT",
+            "socket_type": "NodeSocketFloat",
+            "controls": {
+              "item_type": "SOCKET",
+              "position": 4,
+              "index": 4,
+              "identifier": "Socket_4",
+              "description": "",
+              "socket_type": "NodeSocketFloat",
+              "in_out": "INPUT",
+              "hide_value": false,
+              "hide_in_modifier": false,
+              "force_non_field": false,
+              "is_inspect_output": false,
+              "is_panel_toggle": false,
+              "layer_selection_field": false,
+              "menu_expanded": false,
+              "optional_label": false,
+              "select": false,
+              "attribute_domain": "POINT",
+              "default_attribute_name": "",
+              "structure_type": "AUTO",
+              "default_input": "VALUE",
+              "bl_socket_idname": "NodeSocketFloat",
+              "subtype": "NONE",
+              "default_value": 0.006000000052154064,
+              "min_value": -3.4028234663852886e+38,
+              "max_value": 3.4028234663852886e+38
+            }
+          },
+          {
+            "name": "Curl Frequency",
+            "identifier": "Socket_5",
+            "in_out": "INPUT",
+            "socket_type": "NodeSocketFloat",
+            "controls": {
+              "item_type": "SOCKET",
+              "position": 5,
+              "index": 5,
+              "identifier": "Socket_5",
+              "description": "",
+              "socket_type": "NodeSocketFloat",
+              "in_out": "INPUT",
+              "hide_value": false,
+              "hide_in_modifier": false,
+              "force_non_field": false,
+              "is_inspect_output": false,
+              "is_panel_toggle": false,
+              "layer_selection_field": false,
+              "menu_expanded": false,
+              "optional_label": false,
+              "select": false,
+              "attribute_domain": "POINT",
+              "default_attribute_name": "",
+              "structure_type": "AUTO",
+              "default_input": "VALUE",
+              "bl_socket_idname": "NodeSocketFloat",
+              "subtype": "NONE",
+              "default_value": 0.8500000238418579,
+              "min_value": -3.4028234663852886e+38,
+              "max_value": 3.4028234663852886e+38
+            }
+          },
+          {
+            "name": "Clump Factor",
+            "identifier": "Socket_6",
+            "in_out": "INPUT",
+            "socket_type": "NodeSocketFloat",
+            "controls": {
+              "item_type": "SOCKET",
+              "position": 6,
+              "index": 6,
+              "identifier": "Socket_6",
+              "description": "",
+              "socket_type": "NodeSocketFloat",
+              "in_out": "INPUT",
+              "hide_value": false,
+              "hide_in_modifier": false,
+              "force_non_field": false,
+              "is_inspect_output": false,
+              "is_panel_toggle": false,
+              "layer_selection_field": false,
+              "menu_expanded": false,
+              "optional_label": false,
+              "select": false,
+              "attribute_domain": "POINT",
+              "default_attribute_name": "",
+              "structure_type": "AUTO",
+              "default_input": "VALUE",
+              "bl_socket_idname": "NodeSocketFloat",
+              "subtype": "NONE",
+              "default_value": 0.8799999952316284,
+              "min_value": -3.4028234663852886e+38,
+              "max_value": 3.4028234663852886e+38
+            }
+          },
+          {
+            "name": "Clump Shape",
+            "identifier": "Socket_7",
+            "in_out": "INPUT",
+            "socket_type": "NodeSocketFloat",
+            "controls": {
+              "item_type": "SOCKET",
+              "position": 7,
+              "index": 7,
+              "identifier": "Socket_7",
+              "description": "",
+              "socket_type": "NodeSocketFloat",
+              "in_out": "INPUT",
+              "hide_value": false,
+              "hide_in_modifier": false,
+              "force_non_field": false,
+              "is_inspect_output": false,
+              "is_panel_toggle": false,
+              "layer_selection_field": false,
+              "menu_expanded": false,
+              "optional_label": false,
+              "select": false,
+              "attribute_domain": "POINT",
+              "default_attribute_name": "",
+              "structure_type": "AUTO",
+              "default_input": "VALUE",
+              "bl_socket_idname": "NodeSocketFloat",
+              "subtype": "NONE",
+              "default_value": 0.20000000298023224,
+              "min_value": -3.4028234663852886e+38,
+              "max_value": 3.4028234663852886e+38
+            }
+          },
+          {
+            "name": "Tip Spread",
+            "identifier": "Socket_8",
+            "in_out": "INPUT",
+            "socket_type": "NodeSocketFloat",
+            "controls": {
+              "item_type": "SOCKET",
+              "position": 8,
+              "index": 8,
+              "identifier": "Socket_8",
+              "description": "",
+              "socket_type": "NodeSocketFloat",
+              "in_out": "INPUT",
+              "hide_value": false,
+              "hide_in_modifier": false,
+              "force_non_field": false,
+              "is_inspect_output": false,
+              "is_panel_toggle": false,
+              "layer_selection_field": false,
+              "menu_expanded": false,
+              "optional_label": false,
+              "select": false,
+              "attribute_domain": "POINT",
+              "default_attribute_name": "",
+              "structure_type": "AUTO",
+              "default_input": "VALUE",
+              "bl_socket_idname": "NodeSocketFloat",
+              "subtype": "NONE",
+              "default_value": 0.003000000026077032,
+              "min_value": -3.4028234663852886e+38,
+              "max_value": 3.4028234663852886e+38
+            }
+          },
+          {
+            "name": "Profile Minimum",
+            "identifier": "Socket_9",
+            "in_out": "INPUT",
+            "socket_type": "NodeSocketFloat",
+            "controls": {
+              "item_type": "SOCKET",
+              "position": 9,
+              "index": 9,
+              "identifier": "Socket_9",
+              "description": "",
+              "socket_type": "NodeSocketFloat",
+              "in_out": "INPUT",
+              "hide_value": false,
+              "hide_in_modifier": false,
+              "force_non_field": false,
+              "is_inspect_output": false,
+              "is_panel_toggle": false,
+              "layer_selection_field": false,
+              "menu_expanded": false,
+              "optional_label": false,
+              "select": false,
+              "attribute_domain": "POINT",
+              "default_attribute_name": "",
+              "structure_type": "AUTO",
+              "default_input": "VALUE",
+              "bl_socket_idname": "NodeSocketFloat",
+              "subtype": "NONE",
+              "default_value": 0.550000011920929,
+              "min_value": -3.4028234663852886e+38,
+              "max_value": 3.4028234663852886e+38
+            }
+          },
+          {
+            "name": "Profile Maximum",
+            "identifier": "Socket_10",
+            "in_out": "INPUT",
+            "socket_type": "NodeSocketFloat",
+            "controls": {
+              "item_type": "SOCKET",
+              "position": 10,
+              "index": 10,
+              "identifier": "Socket_10",
+              "description": "",
+              "socket_type": "NodeSocketFloat",
+              "in_out": "INPUT",
+              "hide_value": false,
+              "hide_in_modifier": false,
+              "force_non_field": false,
+              "is_inspect_output": false,
+              "is_panel_toggle": false,
+              "layer_selection_field": false,
+              "menu_expanded": false,
+              "optional_label": false,
+              "select": false,
+              "attribute_domain": "POINT",
+              "default_attribute_name": "",
+              "structure_type": "AUTO",
+              "default_input": "VALUE",
+              "bl_socket_idname": "NodeSocketFloat",
+              "subtype": "NONE",
+              "default_value": 1.0,
+              "min_value": -3.4028234663852886e+38,
+              "max_value": 3.4028234663852886e+38
+            }
+          }
+        ],
+        "nodes": {
+          "Group Input": {
+            "type": "NodeGroupInput",
+            "controls": {
+              "type": "GROUP_INPUT",
+              "location_absolute": [
+                -900.0,
+                100.0
+              ],
+              "color_tag": "INTERFACE",
+              "mute": false,
+              "bl_idname": "NodeGroupInput",
+              "bl_label": "Group Input",
+              "bl_description": "Expose connected data from inside a node group as inputs to its interface",
+              "bl_icon": "NONE",
+              "bl_static_type": "GROUP_INPUT",
+              "bl_width_default": 140.0,
+              "bl_width_min": 100.0,
+              "bl_width_max": 700.0,
+              "bl_height_default": 100.0,
+              "bl_height_min": 30.0,
+              "bl_height_max": 3.4028234663852886e+38
+            },
+            "inputs": [],
+            "outputs": [
+              [
+                "Socket_2",
+                null
+              ],
+              [
+                "Socket_3",
+                0.699999988079071
+              ],
+              [
+                "Socket_4",
+                0.006000000052154064
+              ],
+              [
+                "Socket_5",
+                0.8500000238418579
+              ],
+              [
+                "Socket_6",
+                0.8799999952316284
+              ],
+              [
+                "Socket_7",
+                0.20000000298023224
+              ],
+              [
+                "Socket_8",
+                0.003000000026077032
+              ],
+              [
+                "Socket_9",
+                0.550000011920929
+              ],
+              [
+                "Socket_10",
+                1.0
+              ]
+            ]
+          },
+          "Group Output": {
+            "type": "NodeGroupOutput",
+            "controls": {
+              "type": "GROUP_OUTPUT",
+              "location_absolute": [
+                1200.0,
+                100.0
+              ],
+              "color_tag": "INTERFACE",
+              "mute": false,
+              "bl_idname": "NodeGroupOutput",
+              "bl_label": "Group Output",
+              "bl_description": "Output data from inside of a node group",
+              "bl_icon": "NONE",
+              "bl_static_type": "GROUP_OUTPUT",
+              "bl_width_default": 140.0,
+              "bl_width_min": 100.0,
+              "bl_width_max": 700.0,
+              "bl_height_default": 100.0,
+              "bl_height_min": 30.0,
+              "bl_height_max": 3.4028234663852886e+38,
+              "is_active_output": true
+            },
+            "inputs": [],
+            "outputs": []
+          },
+          "Live editable guide geometry": {
+            "type": "GeometryNodeObjectInfo",
+            "controls": {
+              "type": "OBJECT_INFO",
+              "location_absolute": [
+                0.0,
+                0.0
+              ],
+              "color_tag": "INPUT",
+              "mute": false,
+              "bl_idname": "GeometryNodeObjectInfo",
+              "bl_label": "Object Info",
+              "bl_description": "Retrieve information from an object",
+              "bl_icon": "NONE",
+              "bl_static_type": "OBJECT_INFO",
+              "bl_width_default": 140.0,
+              "bl_width_min": 100.0,
+              "bl_width_max": 700.0,
+              "bl_height_default": 100.0,
+              "bl_height_min": 30.0,
+              "bl_height_max": 3.4028234663852886e+38,
+              "transform_space": "RELATIVE"
+            },
+            "inputs": [
+              [
+                "Object",
+                null
+              ],
+              [
+                "As Instance",
+                false
+              ]
+            ],
+            "outputs": [
+              [
+                "Location",
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              [
+                "Rotation",
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              [
+                "Scale",
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ]
+            ]
+          },
+          "Coat first, guide curves second": {
+            "type": "GeometryNodeJoinGeometry",
+            "controls": {
+              "type": "JOIN_GEOMETRY",
+              "location_absolute": [
+                0.0,
+                0.0
+              ],
+              "color_tag": "GEOMETRY",
+              "mute": false,
+              "bl_idname": "GeometryNodeJoinGeometry",
+              "bl_label": "Join Geometry",
+              "bl_description": "Merge separately generated geometries into a single one",
+              "bl_icon": "NONE",
+              "bl_static_type": "JOIN_GEOMETRY",
+              "bl_width_default": 140.0,
+              "bl_width_min": 100.0,
+              "bl_width_max": 700.0,
+              "bl_height_default": 100.0,
+              "bl_height_min": 30.0,
+              "bl_height_max": 3.4028234663852886e+38
+            },
+            "inputs": [],
+            "outputs": []
+          },
+          "Read pile_guide_index": {
+            "type": "GeometryNodeInputNamedAttribute",
+            "controls": {
+              "type": "INPUT_ATTRIBUTE",
+              "location_absolute": [
+                0.0,
+                0.0
+              ],
+              "color_tag": "INPUT",
+              "mute": false,
+              "bl_idname": "GeometryNodeInputNamedAttribute",
+              "bl_label": "Named Attribute",
+              "bl_description": "Retrieve the data of a specified attribute",
+              "bl_icon": "NONE",
+              "bl_static_type": "INPUT_ATTRIBUTE",
+              "bl_width_default": 140.0,
+              "bl_width_min": 100.0,
+              "bl_width_max": 700.0,
+              "bl_height_default": 100.0,
+              "bl_height_min": 30.0,
+              "bl_height_max": 3.4028234663852886e+38,
+              "data_type": "INT"
+            },
+            "inputs": [
+              [
+                "Name",
+                "pile_guide_index"
+              ]
+            ],
+            "outputs": [
+              [
+                "Attribute",
+                0
+              ],
+              [
+                "Exists",
+                false
+              ]
+            ]
+          },
+          "Read is_guide": {
+            "type": "GeometryNodeInputNamedAttribute",
+            "controls": {
+              "type": "INPUT_ATTRIBUTE",
+              "location_absolute": [
+                0.0,
+                0.0
+              ],
+              "color_tag": "INPUT",
+              "mute": false,
+              "bl_idname": "GeometryNodeInputNamedAttribute",
+              "bl_label": "Named Attribute",
+              "bl_description": "Retrieve the data of a specified attribute",
+              "bl_icon": "NONE",
+              "bl_static_type": "INPUT_ATTRIBUTE",
+              "bl_width_default": 140.0,
+              "bl_width_min": 100.0,
+              "bl_width_max": 700.0,
+              "bl_height_default": 100.0,
+              "bl_height_min": 30.0,
+              "bl_height_max": 3.4028234663852886e+38,
+              "data_type": "BOOLEAN"
+            },
+            "inputs": [
+              [
+                "Name",
+                "is_guide"
+              ]
+            ],
+            "outputs": [
+              [
+                "Attribute",
+                false
+              ],
+              [
+                "Exists",
+                false
+              ]
+            ]
+          },
+          "Read rest_position": {
+            "type": "GeometryNodeInputNamedAttribute",
+            "controls": {
+              "type": "INPUT_ATTRIBUTE",
+              "location_absolute": [
+                0.0,
+                0.0
+              ],
+              "color_tag": "INPUT",
+              "mute": false,
+              "bl_idname": "GeometryNodeInputNamedAttribute",
+              "bl_label": "Named Attribute",
+              "bl_description": "Retrieve the data of a specified attribute",
+              "bl_icon": "NONE",
+              "bl_static_type": "INPUT_ATTRIBUTE",
+              "bl_width_default": 140.0,
+              "bl_width_min": 100.0,
+              "bl_width_max": 700.0,
+              "bl_height_default": 100.0,
+              "bl_height_min": 30.0,
+              "bl_height_max": 3.4028234663852886e+38,
+              "data_type": "FLOAT_VECTOR"
+            },
+            "inputs": [
+              [
+                "Name",
+                "rest_position"
+              ]
+            ],
+            "outputs": [
+              [
+                "Attribute",
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              [
+                "Exists",
+                false
+              ]
+            ]
+          },
+          "Read root_radius": {
+            "type": "GeometryNodeInputNamedAttribute",
+            "controls": {
+              "type": "INPUT_ATTRIBUTE",
+              "location_absolute": [
+                0.0,
+                0.0
+              ],
+              "color_tag": "INPUT",
+              "mute": false,
+              "bl_idname": "GeometryNodeInputNamedAttribute",
+              "bl_label": "Named Attribute",
+              "bl_description": "Retrieve the data of a specified attribute",
+              "bl_icon": "NONE",
+              "bl_static_type": "INPUT_ATTRIBUTE",
+              "bl_width_default": 140.0,
+              "bl_width_min": 100.0,
+              "bl_width_max": 700.0,
+              "bl_height_default": 100.0,
+              "bl_height_min": 30.0,
+              "bl_height_max": 3.4028234663852886e+38,
+              "data_type": "FLOAT"
+            },
+            "inputs": [
+              [
+                "Name",
+                "root_radius"
+              ]
+            ],
+            "outputs": [
+              [
+                "Attribute",
+                0.0
+              ],
+              [
+                "Exists",
+                false
+              ]
+            ]
+          },
+          "Curl Hair Curves": {
+            "type": "GeometryNodeGroup",
+            "controls": {
+              "type": "GROUP",
+              "location_absolute": [
+                -350.0,
+                100.0
+              ],
+              "color_tag": "GEOMETRY",
+              "mute": false,
+              "bl_idname": "GeometryNodeGroup",
+              "bl_label": "Group",
+              "bl_description": "",
+              "bl_icon": "NONE",
+              "bl_static_type": "GROUP",
+              "bl_width_default": 140.0,
+              "bl_width_min": 60.0,
+              "bl_width_max": 700.0,
+              "bl_height_default": 100.0,
+              "bl_height_min": 30.0,
+              "bl_height_max": 3.4028234663852886e+38
+            },
+            "inputs": [
+              [
+                "Input_2",
+                1.0
+              ],
+              [
+                "Input_5",
+                0
+              ],
+              [
+                "Input_6",
+                0.15000000596046448
+              ],
+              [
+                "Input_7",
+                0.10000000149011612
+              ],
+              [
+                "Input_9",
+                0.699999988079071
+              ],
+              [
+                "Input_10",
+                0.699999988079071
+              ],
+              [
+                "Input_11",
+                1.0
+              ],
+              [
+                "Input_16",
+                0.0
+              ],
+              [
+                "Input_15",
+                0
+              ],
+              [
+                "Input_19",
+                -987654
+              ],
+              [
+                "Input_4",
+                0.10000000149011612
+              ],
+              [
+                "Input_18",
+                1.0
+              ],
+              [
+                "Input_3",
+                true
+              ]
+            ],
+            "outputs": [
+              [
+                "Output_20",
+                0
+              ]
+            ],
+            "nested_group_sha256": "f9dbf85e48a526fc08ddb64bf5ddab19b2e4a36fb14f2882abdba30d4f48fe9b"
+          },
+          "Clump Hair Curves": {
+            "type": "GeometryNodeGroup",
+            "controls": {
+              "type": "GROUP",
+              "location_absolute": [
+                -70.0,
+                100.0
+              ],
+              "color_tag": "GEOMETRY",
+              "mute": false,
+              "bl_idname": "GeometryNodeGroup",
+              "bl_label": "Group",
+              "bl_description": "",
+              "bl_icon": "NONE",
+              "bl_static_type": "GROUP",
+              "bl_width_default": 140.0,
+              "bl_width_min": 60.0,
+              "bl_width_max": 700.0,
+              "bl_height_default": 100.0,
+              "bl_height_min": 30.0,
+              "bl_height_max": 3.4028234663852886e+38
+            },
+            "inputs": [
+              [
+                "Input_7",
+                1.0
+              ],
+              [
+                "Input_6",
+                0.5
+              ],
+              [
+                "Input_10",
+                0.0
+              ],
+              [
+                "Input_13",
+                0.0
+              ],
+              [
+                "Input_12",
+                0.0
+              ],
+              [
+                "Input_11",
+                0.0
+              ],
+              [
+                "Input_14",
+                0
+              ],
+              [
+                "Input_15",
+                true
+              ],
+              [
+                "Input_16",
+                -987654
+              ],
+              [
+                "Input_9",
+                0.10000000149011612
+              ],
+              [
+                "Input_19",
+                1.0
+              ],
+              [
+                "Input_8",
+                true
+              ]
+            ],
+            "outputs": [
+              [
+                "Output_17",
+                0
+              ]
+            ],
+            "nested_group_sha256": "c3e2e2185fa5350407c5e53763bc8dd488982386eb0b785783a17b81ebe412a8"
+          },
+          "Restore Curve Segment Length": {
+            "type": "GeometryNodeGroup",
+            "controls": {
+              "type": "GROUP",
+              "location_absolute": [
+                210.0,
+                100.0
+              ],
+              "color_tag": "GEOMETRY",
+              "mute": false,
+              "bl_idname": "GeometryNodeGroup",
+              "bl_label": "Group",
+              "bl_description": "",
+              "bl_icon": "NONE",
+              "bl_static_type": "GROUP",
+              "bl_width_default": 140.0,
+              "bl_width_min": 60.0,
+              "bl_width_max": 700.0,
+              "bl_height_default": 100.0,
+              "bl_height_min": 30.0,
+              "bl_height_max": 3.4028234663852886e+38
+            },
+            "inputs": [
+              [
+                "Input_4",
+                true
+              ],
+              [
+                "Input_3",
+                0.0
+              ],
+              [
+                "Input_2",
+                [
+                  8.146539688110352,
+                  4.969870090484619,
+                  9.874540328979492
+                ]
+              ],
+              [
+                "Input_6",
+                0.0
+              ]
+            ],
+            "outputs": [],
+            "nested_group_sha256": "11b1e61b362e9efdc3d082d6976b5b209b1850780b8720717dc37abcbb67b937"
+          },
+          "Set Hair Curve Profile": {
+            "type": "GeometryNodeGroup",
+            "controls": {
+              "type": "GROUP",
+              "location_absolute": [
+                490.0,
+                100.0
+              ],
+              "color_tag": "GEOMETRY",
+              "mute": false,
+              "bl_idname": "GeometryNodeGroup",
+              "bl_label": "Group",
+              "bl_description": "",
+              "bl_icon": "NONE",
+              "bl_static_type": "GROUP",
+              "bl_width_default": 140.0,
+              "bl_width_min": 60.0,
+              "bl_width_max": 700.0,
+              "bl_height_default": 100.0,
+              "bl_height_min": 30.0,
+              "bl_height_max": 3.4028234663852886e+38
+            },
+            "inputs": [
+              [
+                "Input_6",
+                true
+              ],
+              [
+                "Input_3",
+                0.009999999776482582
+              ],
+              [
+                "Input_2",
+                0.3499999940395355
+              ],
+              [
+                "Input_4",
+                0.0
+              ],
+              [
+                "Input_5",
+                1.0
+              ]
+            ],
+            "outputs": [],
+            "nested_group_sha256": "3cf8958fc319fc6d56c85902e81f68572831aa483c0c606fbda77ad901dc3ff6"
+          },
+          "Remove temporary guide component from render output": {
+            "type": "GeometryNodeDeleteGeometry",
+            "controls": {
+              "type": "DELETE_GEOMETRY",
+              "location_absolute": [
+                0.0,
+                0.0
+              ],
+              "color_tag": "GEOMETRY",
+              "mute": false,
+              "bl_idname": "GeometryNodeDeleteGeometry",
+              "bl_label": "Delete Geometry",
+              "bl_description": "Remove selected elements of a geometry",
+              "bl_icon": "NONE",
+              "bl_static_type": "DELETE_GEOMETRY",
+              "bl_width_default": 140.0,
+              "bl_width_min": 100.0,
+              "bl_width_max": 700.0,
+              "bl_height_default": 100.0,
+              "bl_height_min": 30.0,
+              "bl_height_max": 3.4028234663852886e+38,
+              "mode": "ALL",
+              "domain": "CURVE"
+            },
+            "inputs": [
+              [
+                "Selection",
+                true
+              ]
+            ],
+            "outputs": []
+          },
+          "Set Spline Type": {
+            "type": "GeometryNodeCurveSplineType",
+            "controls": {
+              "type": "CURVE_SPLINE_TYPE",
+              "location_absolute": [
+                0.0,
+                0.0
+              ],
+              "color_tag": "GEOMETRY",
+              "mute": false,
+              "bl_idname": "GeometryNodeCurveSplineType",
+              "bl_label": "Set Spline Type",
+              "bl_description": "Change the type of curves",
+              "bl_icon": "NONE",
+              "bl_static_type": "CURVE_SPLINE_TYPE",
+              "bl_width_default": 140.0,
+              "bl_width_min": 100.0,
+              "bl_width_max": 700.0,
+              "bl_height_default": 100.0,
+              "bl_height_min": 30.0,
+              "bl_height_max": 3.4028234663852886e+38,
+              "spline_type": "CATMULL_ROM"
+            },
+            "inputs": [
+              [
+                "Selection",
+                true
+              ]
+            ],
+            "outputs": []
+          },
+          "Spline Parameter": {
+            "type": "GeometryNodeSplineParameter",
+            "controls": {
+              "type": "SPLINE_PARAMETER",
+              "location_absolute": [
+                0.0,
+                0.0
+              ],
+              "color_tag": "INPUT",
+              "mute": false,
+              "bl_idname": "GeometryNodeSplineParameter",
+              "bl_label": "Spline Parameter",
+              "bl_description": "Retrieve how far along each spline a control point is",
+              "bl_icon": "NONE",
+              "bl_static_type": "SPLINE_PARAMETER",
+              "bl_width_default": 140.0,
+              "bl_width_min": 100.0,
+              "bl_width_max": 700.0,
+              "bl_height_default": 100.0,
+              "bl_height_min": 30.0,
+              "bl_height_max": 3.4028234663852886e+38
+            },
+            "inputs": [],
+            "outputs": [
+              [
+                "Factor",
+                0.0
+              ],
+              [
+                "Length",
+                0.0
+              ],
+              [
+                "Index",
+                0
+              ]
+            ]
+          },
+          "Compare": {
+            "type": "FunctionNodeCompare",
+            "controls": {
+              "type": "COMPARE",
+              "location_absolute": [
+                0.0,
+                0.0
+              ],
+              "color_tag": "CONVERTER",
+              "mute": false,
+              "bl_idname": "FunctionNodeCompare",
+              "bl_label": "Compare",
+              "bl_description": "Perform a comparison operation on the two given inputs",
+              "bl_icon": "NONE",
+              "bl_static_type": "COMPARE",
+              "bl_width_default": 140.0,
+              "bl_width_min": 100.0,
+              "bl_width_max": 700.0,
+              "bl_height_default": 100.0,
+              "bl_height_min": 30.0,
+              "bl_height_max": 3.4028234663852886e+38,
+              "operation": "LESS_THAN",
+              "data_type": "FLOAT",
+              "mode": "ELEMENT"
+            },
+            "inputs": [
+              [
+                "A",
+                0.0
+              ],
+              [
+                "B",
+                1.0000000116860974e-07
+              ]
+            ],
+            "outputs": [
+              [
+                "Result",
+                false
+              ]
+            ]
+          },
+          "Exact frozen float32 root lock": {
+            "type": "GeometryNodeSetPosition",
+            "controls": {
+              "type": "SET_POSITION",
+              "location_absolute": [
+                0.0,
+                0.0
+              ],
+              "color_tag": "GEOMETRY",
+              "mute": false,
+              "bl_idname": "GeometryNodeSetPosition",
+              "bl_label": "Set Position",
+              "bl_description": "Set the location of each point",
+              "bl_icon": "NONE",
+              "bl_static_type": "SET_POSITION",
+              "bl_width_default": 140.0,
+              "bl_width_min": 100.0,
+              "bl_width_max": 700.0,
+              "bl_height_default": 100.0,
+              "bl_height_min": 30.0,
+              "bl_height_max": 3.4028234663852886e+38
+            },
+            "inputs": [
+              [
+                "Selection",
+                true
+              ],
+              [
+                "Position",
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              [
+                "Offset",
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ]
+            ],
+            "outputs": []
+          },
+          "GN11 post-Curl length parameter": {
+            "type": "GeometryNodeSplineParameter",
+            "controls": {
+              "type": "SPLINE_PARAMETER",
+              "location_absolute": [
+                0.0,
+                0.0
+              ],
+              "color_tag": "INPUT",
+              "mute": false,
+              "bl_idname": "GeometryNodeSplineParameter",
+              "bl_label": "Spline Parameter",
+              "bl_description": "Retrieve how far along each spline a control point is",
+              "bl_icon": "NONE",
+              "bl_static_type": "SPLINE_PARAMETER",
+              "bl_width_default": 140.0,
+              "bl_width_min": 100.0,
+              "bl_width_max": 700.0,
+              "bl_height_default": 100.0,
+              "bl_height_min": 30.0,
+              "bl_height_max": 3.4028234663852886e+38
+            },
+            "inputs": [],
+            "outputs": [
+              [
+                "Factor",
+                0.0
+              ],
+              [
+                "Length",
+                0.0
+              ],
+              [
+                "Index",
+                0
+              ]
+            ]
+          },
+          "GN11 capture post-Curl arc coordinate": {
+            "type": "GeometryNodeCaptureAttribute",
+            "controls": {
+              "type": "CAPTURE_ATTRIBUTE",
+              "location_absolute": [
+                0.0,
+                0.0
+              ],
+              "color_tag": "ATTRIBUTE",
+              "mute": false,
+              "bl_idname": "GeometryNodeCaptureAttribute",
+              "bl_label": "Capture Attribute",
+              "bl_description": "Store the result of a field on a geometry and output the data as a node socket. Allows remembering or interpolating data as the geometry changes, such as positions before deformation",
+              "bl_icon": "NONE",
+              "bl_static_type": "CAPTURE_ATTRIBUTE",
+              "bl_width_default": 140.0,
+              "bl_width_min": 100.0,
+              "bl_width_max": 700.0,
+              "bl_height_default": 100.0,
+              "bl_height_min": 30.0,
+              "bl_height_max": 3.4028234663852886e+38,
+              "active_index": 0,
+              "domain": "POINT"
+            },
+            "inputs": [
+              [
+                "Selection",
+                true
+              ],
+              [
+                "Value",
+                0.0
+              ]
+            ],
+            "outputs": [
+              [
+                "Selection",
+                false
+              ],
+              [
+                "Attribute",
+                0.0
+              ]
+            ],
+            "capture_items": [
+              {
+                "color": [
+                  0.6299999952316284,
+                  0.6299999952316284,
+                  0.6299999952316284,
+                  1.0
+                ],
+                "data_type": "FLOAT"
+              }
+            ]
+          },
+          "GN11 linear Clump weight profile": {
+            "type": "ShaderNodeFloatCurve",
+            "controls": {
+              "type": "CURVE_FLOAT",
+              "location_absolute": [
+                0.0,
+                0.0
+              ],
+              "color_tag": "CONVERTER",
+              "mute": false,
+              "bl_idname": "ShaderNodeFloatCurve",
+              "bl_label": "Float Curve",
+              "bl_description": "Map an input float to a curve and outputs a float value",
+              "bl_icon": "NONE",
+              "bl_static_type": "CURVE_FLOAT",
+              "bl_width_default": 240.0,
+              "bl_width_min": 100.0,
+              "bl_width_max": 700.0,
+              "bl_height_default": 100.0,
+              "bl_height_min": 30.0,
+              "bl_height_max": 3.4028234663852886e+38
+            },
+            "inputs": [
+              [
+                "Factor",
+                1.0
+              ],
+              [
+                "Value",
+                1.0
+              ]
+            ],
+            "outputs": [
+              [
+                "Value",
+                0.0
+              ]
+            ],
+            "curve_mapping": {
+              "controls": {
+                "tone": "STANDARD",
+                "use_clip": false,
+                "clip_min_x": 0.0,
+                "clip_min_y": 0.0,
+                "clip_max_x": 1.0,
+                "clip_max_y": 1.0,
+                "extend": "EXTRAPOLATED",
+                "black_level": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "white_level": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              },
+              "curves": [
+                [
+                  {
+                    "location": [
+                      0.0,
+                      0.0
+                    ],
+                    "handle_type": "VECTOR",
+                    "select": false
+                  },
+                  {
+                    "location": [
+                      0.18000000715255737,
+                      0.15000000596046448
+                    ],
+                    "handle_type": "VECTOR",
+                    "select": false
+                  },
+                  {
+                    "location": [
+                      0.4000000059604645,
+                      0.25
+                    ],
+                    "handle_type": "VECTOR",
+                    "select": false
+                  },
+                  {
+                    "location": [
+                      0.6499999761581421,
+                      0.25
+                    ],
+                    "handle_type": "VECTOR",
+                    "select": false
+                  },
+                  {
+                    "location": [
+                      0.8500000238418579,
+                      0.75
+                    ],
+                    "handle_type": "VECTOR",
+                    "select": true
+                  },
+                  {
+                    "location": [
+                      1.0,
+                      1.0
+                    ],
+                    "handle_type": "VECTOR",
+                    "select": false
+                  }
+                ]
+              ]
+            }
+          },
+          "GN11 clamp profile 0 to 1": {
+            "type": "ShaderNodeClamp",
+            "controls": {
+              "type": "CLAMP",
+              "location_absolute": [
+                0.0,
+                0.0
+              ],
+              "color_tag": "CONVERTER",
+              "mute": false,
+              "bl_idname": "ShaderNodeClamp",
+              "bl_label": "Clamp",
+              "bl_description": "Clamp a value between a minimum and a maximum",
+              "bl_icon": "NONE",
+              "bl_static_type": "CLAMP",
+              "bl_width_default": 140.0,
+              "bl_width_min": 100.0,
+              "bl_width_max": 700.0,
+              "bl_height_default": 100.0,
+              "bl_height_min": 30.0,
+              "bl_height_max": 3.4028234663852886e+38,
+              "clamp_type": "MINMAX"
+            },
+            "inputs": [
+              [
+                "Value",
+                1.0
+              ],
+              [
+                "Min",
+                0.0
+              ],
+              [
+                "Max",
+                1.0
+              ]
+            ],
+            "outputs": [
+              [
+                "Result",
+                0.0
+              ]
+            ]
+          },
+          "GN11 actual Clump strength times profile": {
+            "type": "ShaderNodeMath",
+            "controls": {
+              "type": "MATH",
+              "location_absolute": [
+                0.0,
+                0.0
+              ],
+              "color_tag": "CONVERTER",
+              "mute": false,
+              "bl_idname": "ShaderNodeMath",
+              "bl_label": "Math",
+              "bl_description": "Perform math operations",
+              "bl_icon": "NONE",
+              "bl_static_type": "MATH",
+              "bl_width_default": 140.0,
+              "bl_width_min": 100.0,
+              "bl_width_max": 700.0,
+              "bl_height_default": 100.0,
+              "bl_height_min": 30.0,
+              "bl_height_max": 3.4028234663852886e+38,
+              "operation": "MULTIPLY",
+              "use_clamp": false
+            },
+            "inputs": [
+              [
+                "Value",
+                0.5
+              ],
+              [
+                "Value_001",
+                0.5
+              ],
+              [
+                "Value_002",
+                0.5
+              ]
+            ],
+            "outputs": [
+              [
+                "Value",
+                0.0
+              ]
+            ]
+          }
+        },
+        "links": [
+          [
+            "Clump Hair Curves",
+            "Output_1",
+            "Restore Curve Segment Length",
+            "Input_0",
+            0
+          ],
+          [
+            "Coat first, guide curves second",
+            "Geometry",
+            "Curl Hair Curves",
+            "Input_0",
+            0
+          ],
+          [
+            "Compare",
+            "Result",
+            "Exact frozen float32 root lock",
+            "Selection",
+            0
+          ],
+          [
+            "Curl Hair Curves",
+            "Output_1",
+            "GN11 capture post-Curl arc coordinate",
+            "Geometry",
+            0
+          ],
+          [
+            "Exact frozen float32 root lock",
+            "Geometry",
+            "Group Output",
+            "Socket_1",
+            0
+          ],
+          [
+            "GN11 actual Clump strength times profile",
+            "Value",
+            "Clump Hair Curves",
+            "Input_7",
+            0
+          ],
+          [
+            "GN11 capture post-Curl arc coordinate",
+            "Attribute",
+            "GN11 linear Clump weight profile",
+            "Value",
+            0
+          ],
+          [
+            "GN11 capture post-Curl arc coordinate",
+            "Geometry",
+            "Clump Hair Curves",
+            "Input_0",
+            0
+          ],
+          [
+            "GN11 clamp profile 0 to 1",
+            "Result",
+            "GN11 actual Clump strength times profile",
+            "Value_001",
+            0
+          ],
+          [
+            "GN11 linear Clump weight profile",
+            "Value",
+            "GN11 clamp profile 0 to 1",
+            "Value",
+            0
+          ],
+          [
+            "GN11 post-Curl length parameter",
+            "Factor",
+            "GN11 capture post-Curl arc coordinate",
+            "Value",
+            0
+          ],
+          [
+            "Group Input",
+            "Socket_0",
+            "Coat first, guide curves second",
+            "Geometry",
+            1
+          ],
+          [
+            "Group Input",
+            "Socket_10",
+            "Set Hair Curve Profile",
+            "Input_5",
+            0
+          ],
+          [
+            "Group Input",
+            "Socket_2",
+            "Live editable guide geometry",
+            "Object",
+            0
+          ],
+          [
+            "Group Input",
+            "Socket_3",
+            "Curl Hair Curves",
+            "Input_2",
+            0
+          ],
+          [
+            "Group Input",
+            "Socket_4",
+            "Curl Hair Curves",
+            "Input_7",
+            0
+          ],
+          [
+            "Group Input",
+            "Socket_5",
+            "Curl Hair Curves",
+            "Input_11",
+            0
+          ],
+          [
+            "Group Input",
+            "Socket_6",
+            "GN11 actual Clump strength times profile",
+            "Value",
+            0
+          ],
+          [
+            "Group Input",
+            "Socket_7",
+            "Clump Hair Curves",
+            "Input_6",
+            0
+          ],
+          [
+            "Group Input",
+            "Socket_8",
+            "Clump Hair Curves",
+            "Input_10",
+            0
+          ],
+          [
+            "Group Input",
+            "Socket_9",
+            "Set Hair Curve Profile",
+            "Input_4",
+            0
+          ],
+          [
+            "Live editable guide geometry",
+            "Geometry",
+            "Coat first, guide curves second",
+            "Geometry",
+            0
+          ],
+          [
+            "Read is_guide",
+            "Attribute",
+            "Clump Hair Curves",
+            "Input_19",
+            0
+          ],
+          [
+            "Read is_guide",
+            "Attribute",
+            "Curl Hair Curves",
+            "Input_18",
+            0
+          ],
+          [
+            "Read is_guide",
+            "Attribute",
+            "Remove temporary guide component from render output",
+            "Selection",
+            0
+          ],
+          [
+            "Read pile_guide_index",
+            "Attribute",
+            "Clump Hair Curves",
+            "Input_16",
+            0
+          ],
+          [
+            "Read pile_guide_index",
+            "Attribute",
+            "Curl Hair Curves",
+            "Input_19",
+            0
+          ],
+          [
+            "Read rest_position",
+            "Attribute",
+            "Exact frozen float32 root lock",
+            "Position",
+            0
+          ],
+          [
+            "Read rest_position",
+            "Attribute",
+            "Restore Curve Segment Length",
+            "Input_2",
+            0
+          ],
+          [
+            "Read root_radius",
+            "Attribute",
+            "Set Hair Curve Profile",
+            "Input_3",
+            0
+          ],
+          [
+            "Remove temporary guide component from render output",
+            "Geometry",
+            "Set Spline Type",
+            "Curve",
+            0
+          ],
+          [
+            "Restore Curve Segment Length",
+            "Output_1",
+            "Set Hair Curve Profile",
+            "Input_0",
+            0
+          ],
+          [
+            "Set Hair Curve Profile",
+            "Output_1",
+            "Remove temporary guide component from render output",
+            "Geometry",
+            0
+          ],
+          [
+            "Set Spline Type",
+            "Curve",
+            "Exact frozen float32 root lock",
+            "Geometry",
+            0
+          ],
+          [
+            "Spline Parameter",
+            "Factor",
+            "Compare",
+            "A",
+            0
+          ]
+        ]
+      }
+    }
+  },
+  "input_count": 75,
+  "check_count": 119
+}

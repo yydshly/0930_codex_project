@@ -1,0 +1,36 @@
+{
+  "time": "2026-10-02T05:02:16.058Z",
+  "environment": "Playwright Chromium headless / SwiftShader",
+  "checks": [
+    "WebGL character renders at 80000 splats",
+    "close-up enlarges texture and front returns to the full character",
+    "three shape controls",
+    "color softness hat and all four quality settings",
+    "same seed and parameters reproduce identical canvas",
+    "save reload and Unicode share roundtrip",
+    "random seed makes a new asset",
+    "saving after shared-link edits updates the reload configuration",
+    "drag orbit and reset",
+    "keyboard zoom",
+    "bounce moves and lands",
+    "turntable starts and stops",
+    "ellipse structure and dark backdrop",
+    "real binary PLY download parses 32000 Gaussians",
+    "PLY import and truthful persistence controls",
+    "malformed import preserves prior asset and return works",
+    "PNG download is an image",
+    "paper link resets custom filter and shows explanations with primary sources",
+    "all old creation and journal storage preserved",
+    "old creator has additive navigation and updated journal",
+    "world and studio entrances remain",
+    "390px mobile layout has no horizontal overflow"
+  ],
+  "applicationErrors": [],
+  "networkFailures": [],
+  "serviceWarnings": [
+    {
+      "url": "http://127.0.0.1:8876/api/status",
+      "error": "net::ERR_CONNECTION_REFUSED"
+    }
+  ]
+}

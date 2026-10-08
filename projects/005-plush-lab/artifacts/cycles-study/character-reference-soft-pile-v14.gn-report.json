@@ -1,0 +1,92 @@
+{
+  "status": "engineering_precheck_passed",
+  "rendered": false,
+  "kind": "character",
+  "blend": "character-reference-soft-pile-v14.blend",
+  "png": "character-reference-soft-pile-v14.png",
+  "preview_png": "character-reference-soft-pile-v14.preview.png",
+  "saved_blend_sha256": "2eecedd9077ae3add11ca4e5b9e6e79872ea7e2c943ada0662a183053e3181cc",
+  "wrapper_source_sha256": "d2b7ab6a8d1042bd872f69cf38a1382150447ecc546c27e633be298f28077699",
+  "source_snapshot": "character-reference-soft-pile-v14.source.py",
+  "dependencies": {
+    "character-reference-fine-bundle-v14.blend": "caf1414603e03cfae03b447969158642a4642e4560677fd63db1f1c4a7e5cfa3",
+    "character-reference-fine-bundle-v14.source.py": "2abf069acaff683d139acf20dafff0293fe86f34e0b5df082c5230a7d08e464d",
+    "character-reference-fine-bundle-v14.gn-report.json": "41880d5ba0adc7456705ca14bf2258ad4b82b354db2118e1a024fc26f716889e"
+  },
+  "inherited_frozen_dependencies": {
+    "character-reference-guide-v6.blend": "9d3adeb4bc4e4a85b3ee8b7de282770de09810dc4f52ba0397412b7cbbe1a60f",
+    "character-reference-guide-v6.png": "72b81df3009d7396df05d142192641abf458a5527a258703c60838954e3ba228",
+    "swatch-reference-gn-bundle-scale-half-live-14.blend": "62223943752472c6be9bfa92d1f65de557723d7bcddb1d5df33fc819129effed",
+    "swatch-reference-gn-bundle-scale-half-live-14.source.py": "fd49cc328e6a43f8af93c3f2cf85f9d3eed479e2bad983d32ee20b36bc49d137",
+    "swatch-reference-gn-nearest-render-3.gn-source.py": "be7730c0ddba22109ebc31dd44e8660672df7fd2cb8d361093688ce9fcc2c927",
+    "character-reference-v3.source.py": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3"
+  },
+  "coat": {
+    "object": "Blue pile · coat",
+    "curves": 320000,
+    "controls": 12,
+    "roots_float32_sha256": "5e7a68335d1b764659fb6de1091419db1e4e649fa3775486d3a98c12aaa04756",
+    "native_positions_float32_sha256": "2d44feadfe595fb2b34790aa52593fe5c8112340d52f4b97a390f8373f0c36e7",
+    "evaluated_positions_float32_sha256": "ef931abe26f628afa2192f2449c79cc21d9ba4efbc2a8991aa380eb7918141f4",
+    "radii_float32_sha256": "6ca4d3f81a3b75d61f53102ab4f5ea46fd9e9531fb4806eb745d092eaa6fed9b"
+  },
+  "guides": {
+    "object": "Pile guides · editable live input",
+    "curves": 40000,
+    "selection": "Every eighth original v6 coat root in stable order",
+    "selected_root_indices_int32_sha256": "4c0911a84529f2904e841010d266d9dbf2a600ba9bbed6995a05e0219d178808",
+    "shape": "Actual GN14 half native controls decomposed in swatch normal/tangent frame, reoriented to full numerical star normals, 1.55 times feature-compressed height/width"
+  },
+  "mapping": {
+    "attribute": "pile_guide_index",
+    "dtype": "INT",
+    "domain": "CURVE",
+    "offset": 320000,
+    "ids_int32_sha256": "fb05f052751630be8ad9166808b4a06248f7018f36ccc43348cada998edc3c84",
+    "method": "mathutils KDTree Euclidean roots, no dense matrix",
+    "minimum_children": 1,
+    "maximum_children": 39,
+    "mean_children": 8.0
+  },
+  "features": {
+    "normal_attribute": "full_star_normal",
+    "compression_attribute": "full_feature_compression",
+    "source": "Frozen v3 body_surface/surface_frame outward numerical cross and exact v3 groom face/beret compression formula",
+    "compressed_roots": 43923
+  },
+  "scope": "Compound full recipe. Increases actual strand/guide centerline dimensions and reduces Clump. Not isolated A/B, physical contact solve, paper reproduction or visual matching claim.",
+  "changes": {
+    "native_child_normal_scale": 1.65,
+    "native_guide_normal_scale": 1.65,
+    "native_guide_tangent_scale": 1.25,
+    "clump_peak": 0.65,
+    "new_light": {
+      "name": "GN14 broad lower-front fill",
+      "type": "AREA",
+      "energy": 260.0,
+      "size": 5.0,
+      "location": [
+        0.0,
+        -4.199999809265137,
+        0.30000001192092896
+      ]
+    },
+    "undercoat": "inherited .35",
+    "flyaway": "inherited hidden"
+  },
+  "actual_geometry": {
+    "changed_curves": 320000,
+    "normal_projection_peak_median_before": 0.022625725153238463,
+    "normal_projection_peak_median_after": 0.03957608895085585,
+    "evaluated_positions_float32_sha256": "ef931abe26f628afa2192f2449c79cc21d9ba4efbc2a8991aa380eb7918141f4",
+    "radii_float32_sha256": "6ca4d3f81a3b75d61f53102ab4f5ea46fd9e9531fb4806eb745d092eaa6fed9b"
+  },
+  "checks": {
+    "actual_final_roots_bitwise": true,
+    "finite_positive_radii": true,
+    "base_source_files_unchanged": true
+  },
+  "seconds": 16.642013600008795,
+  "resolution": 1536,
+  "samples": 256
+}

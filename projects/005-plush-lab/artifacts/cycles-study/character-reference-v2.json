@@ -1,0 +1,55 @@
+{
+  "blender": "5.2.2 LTS",
+  "kind": "character",
+  "variant": "reference",
+  "preset": {
+    "label": "D · 紧密短卷绒候选",
+    "length": 0.038,
+    "curl": 0.009,
+    "turns": 1.0,
+    "lean": 0.55,
+    "clump": 0.82
+  },
+  "body_hair_counts": {
+    "undercoat": 340000,
+    "coat": 320000,
+    "flyaway": 9000
+  },
+  "hat_hairs": 90000,
+  "body_points_per_hair": 12,
+  "resolution": 1024,
+  "samples": 128,
+  "angle_degrees": 0,
+  "material": "Cycles Principled Hair BSDF / CHIANG / COLOR",
+  "devices": [
+    {
+      "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+      "type": "OPTIX",
+      "enabled": true
+    },
+    {
+      "name": "13th Gen Intel Core i9-13980HX",
+      "type": "CPU",
+      "enabled": false
+    },
+    {
+      "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+      "type": "CUDA",
+      "enabled": false
+    }
+  ],
+  "fiber_color_srgb": "#6b8bd4",
+  "root_radius_range": [
+    0.00024,
+    0.0004
+  ],
+  "coordinate_units": "Blender scene units; character width about 2.6",
+  "source_sha256": "2f09eaff2fec492ddc3a4450dbc45dec69c6d4e28784cd0b2ab848330c6f883e",
+  "source_snapshot": "character-reference-v2.source.py",
+  "seconds": 28.56,
+  "blend": "character-reference-v2.blend",
+  "png": "character-reference-v2.png",
+  "rendered": true,
+  "source": "tooling\\blender\\plush_cycles.py",
+  "scope": "Offline native hair asset study; no 3DGS training or real-time web conversion"
+}

@@ -1,0 +1,13 @@
+00:01.750  cycles           | WARNING HIPEW initialization failed: Error opening HIP dynamic library
+F:\codex_project\0930_codex_project\projects\005-plush-lab\tooling\blender\plush_cycles.py:357: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world.use_nodes = True
+F:\codex_project\0930_codex_project\projects\005-plush-lab\tooling\blender\plush_cycles.py:82: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes = True
+F:\codex_project\0930_codex_project\projects\005-plush-lab\tooling\blender\plush_cycles.py:91: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes = True
+00:10.110  render           | Saved: 'F:\codex_project\0930_codex_project\projects\005-plush-lab\artifacts\cycles-study\swatch-fleece-v3.png'
+Info: Saved as "swatch-fleece-v3.blend"
+PLUSH_STUDY_RESULT {"blender": "5.2.2 LTS", "kind": "swatch", "variant": "fleece", "preset": {"label": "B · 松散微卷绒", "length": 0.047, "curl": 0.0055, "turns": 1.15, "lean": 0.65, "clump": 0.38}, "body_hair_counts": {"undercoat": 90000, "coat": 85000, "flyaway": 2500}, "hat_hairs": 0, "body_points_per_hair": 12, "resolution": 768, "samples": 96, "angle_degrees": 0, "material": "Cycles Principled Hair BSDF / CHIANG / COLOR", "devices": [{"name": "NVIDIA GeForce RTX 4070 Laptop GPU", "type": "OPTIX", "enabled": true}, {"name": "13th Gen Intel Core i9-13980HX", "type": "CPU", "enabled": false}, {"name": "NVIDIA GeForce RTX 4070 Laptop GPU", "type": "CUDA", "enabled": false}], "fiber_color_srgb": "#87a9e6", "root_radius_range": [0.00024, 0.0004], "coordinate_units": "Blender scene units; character width about 2.6", "source_sha256": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3", "source_snapshot": "swatch-fleece-v3.source.py", "seconds": 8.53, "blend": "swatch-fleece-v3.blend", "png": "swatch-fleece-v3.png", "rendered": true, "source": "tooling\\blender\\plush_cycles.py", "scope": "Offline native hair asset study; no 3DGS training or real-time web conversion"}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

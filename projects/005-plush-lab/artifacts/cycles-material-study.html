@@ -1,0 +1,1292 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="毛绒星仔完整角色：原参考与本轮卷绒成片并排展示；保留全部历史创作、毛料实验、制作方式与研究记录。">
+  <title>毛绒星仔 · Cycles 毛料对照</title>
+  <style>
+    :root{color-scheme:light;--paper:#f3f1eb;--card:#fffdf8;--ink:#303b36;--muted:#667269;--line:#d9dfd4;--accent:#315d52;--blue:#728bb0;--plate:#28292c}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.7 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}
+    a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:4px}
+    a:hover{color:#193d33}
+    a:focus-visible,summary:focus-visible{outline:3px solid #9abeb0;outline-offset:5px;border-radius:3px}
+    img{display:block;max-width:100%}
+    [hidden]{display:none!important}
+    main{max-width:1420px;margin:auto;padding:36px 36px 40px}
+    .eyebrow{font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin:0 0 15px}
+    .masthead{display:flex;gap:30px;justify-content:space-between;align-items:flex-start;padding-bottom:27px;border-bottom:1px solid var(--line)}
+    h1,h2,h3,p{margin:0}
+    h1{font-size:clamp(30px,3.5vw,47px);font-weight:550;line-height:1.22;letter-spacing:-.035em}
+    .intro{max-width:770px;margin-top:17px;color:var(--muted)}
+    .edition{font-size:12px;color:var(--muted);text-align:right;white-space:nowrap;margin-top:3px}
+    .edition strong{display:block;color:var(--ink);font-size:14px;font-weight:550;letter-spacing:.04em}
+    .jump-nav{display:flex;flex-wrap:wrap;gap:10px 25px;font-size:13px;margin-top:22px}
+    .jump-nav a{text-decoration:none}
+    section{margin-top:48px;scroll-margin-top:25px}
+    .section-head{display:flex;justify-content:space-between;gap:24px;align-items:flex-end;margin-bottom:19px}
+    .section-number{font-size:11px;letter-spacing:.14em;color:var(--muted);margin-bottom:5px}
+    h2{font-size:24px;line-height:1.4;font-weight:550;letter-spacing:-.02em}
+    .section-head>p{max-width:470px;font-size:13px;color:var(--muted)}
+    .grid{display:grid;gap:20px}
+    .character-grid{grid-template-columns:1fr 1fr}
+    .character-history .character-grid{margin-top:18px}
+    .swatch-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .experiment-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .length-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .gn-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .experiment-result{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:22px;padding:23px;border:1px solid var(--line);border-radius:11px;background:var(--card)}
+    .experiment-result h3{font-size:15px;font-weight:550;margin-bottom:9px}
+    .experiment-result p{color:var(--muted);font-size:13px}
+    .experiment-conditions{font-size:12px;color:var(--muted);margin:17px 0 0}
+    .inspection-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:28px;align-items:start;margin-top:28px}
+    .inspection-grid .frame{max-width:480px}
+    .inspection-copy{padding:24px;border:1px solid var(--line);border-radius:11px;background:var(--card)}
+    .inspection-copy h3{font-size:18px;font-weight:550;margin-bottom:10px}
+    .inspection-copy p{font-size:13px;color:var(--muted);margin-top:10px}
+    .gaps{padding-left:20px;margin:13px 0 18px;font-size:13px;color:var(--muted)}
+    .gaps li+li{margin-top:7px}
+    .history-row{padding:14px 0;border-top:1px solid var(--line)}
+    .history-row strong{font-size:13px;font-weight:550}
+    .history-row .frame{max-width:320px;margin-top:12px}
+    figure{margin:0;min-width:0}
+    .figure-title{display:flex;gap:12px;align-items:center;margin-bottom:10px;font-size:15px;font-weight:550}
+    .tag{font-size:11px;line-height:1.7;padding:1px 8px;border:1px solid #c7d0c4;border-radius:99px;white-space:nowrap;color:var(--muted);font-weight:400}
+    .frame{position:relative;overflow:hidden;background:var(--plate);border-radius:13px}
+    .character-frame{aspect-ratio:848/829}
+    .reference img{position:absolute;max-width:none;width:142.099%;height:auto;left:-4.717%;top:-27.141%}
+    .render img{width:100%;height:100%;object-fit:contain}
+    .swatch-frame{aspect-ratio:1}
+    .frame>a{display:block;height:100%}
+    .missing{position:absolute;inset:0;display:grid;place-content:center;text-align:center;gap:8px;padding:30px;background:var(--plate);color:#eceee8}
+    .missing span{font-size:12px;color:#b5bab4}
+    figcaption{color:var(--muted);font-size:13px;margin-top:12px}
+    .downloads{display:flex;flex-wrap:wrap;gap:6px 17px;margin-top:13px;font-size:12px}
+    .downloads a{white-space:nowrap}
+    .record{margin-top:12px;padding-top:11px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.7;min-height:41px}
+    .record strong{color:var(--ink);font-weight:500}
+    .note{padding:17px 21px;margin-top:20px;background:#e7eae0;border-left:3px solid #839788;border-radius:0 8px 8px 0;font-size:13px;color:#526052}
+    .swatch-label{width:31px;height:31px;display:grid;place-content:center;flex-shrink:0;border-radius:50%;background:#dde5dd;color:var(--accent);font-size:13px}
+    .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:11px;background:var(--card)}
+    table{border-collapse:collapse;width:100%;min-width:760px;font-size:13px}
+    th,td{text-align:left;border-bottom:1px solid var(--line);padding:13px 18px}
+    th{font-weight:550}
+    thead th{background:#e9ede4;color:#485d4e}
+    tbody th{width:28%;color:var(--muted);font-weight:400}
+    tbody tr:last-child>*{border-bottom:0}
+    td{font-variant-numeric:tabular-nums}
+    .table-note{font-size:12px;color:var(--muted);margin:12px 0 0}
+    .settings{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:22px}
+    .setting{padding:21px 23px;border:1px solid var(--line);border-radius:10px}
+    .setting h3{font-size:14px;font-weight:550;margin-bottom:9px}
+    .setting p{color:var(--muted);font-size:12px}
+    .setting code{color:var(--ink);font-size:11px;overflow-wrap:anywhere}
+    #structural-groom-study code{overflow-wrap:anywhere}
+    #layer-source-study code{overflow-wrap:anywhere}
+    #short-bundle-study code{overflow-wrap:anywhere}
+    #compact-coil-study code{overflow-wrap:anywhere}
+    #compact-coil-study .downloads a{white-space:normal;overflow-wrap:anywhere}
+    #clump-profile-study code{overflow-wrap:anywhere}
+    #clump-profile-study .downloads a{white-space:normal;overflow-wrap:anywhere}
+    #curl-variation-study code{overflow-wrap:anywhere}
+    #curl-variation-study .downloads a{white-space:normal;overflow-wrap:anywhere}
+    #coil-orientation-study code{overflow-wrap:anywhere}
+    #coil-orientation-study .downloads a{white-space:normal;overflow-wrap:anywhere}
+    #bundle-scale-study code{overflow-wrap:anywhere}
+    #bundle-scale-study .downloads a{white-space:normal;overflow-wrap:anywhere}
+    #character-fine-bundle-study code,#character-v14-recipe-evidence code{overflow-wrap:anywhere}
+    #character-fine-bundle-study .downloads a,#character-v14-recipe-evidence .downloads a{white-space:normal;overflow-wrap:anywhere}
+    .method-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:24px}
+    .method{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:26px}
+    .method h3{font-size:16px;font-weight:550;margin-bottom:11px}
+    .method p{color:var(--muted);font-size:13px;margin-top:11px}
+    .steps{list-style:none;margin:0;padding:0;counter-reset:method}
+    .steps li{position:relative;padding:15px 0 15px 36px;border-top:1px solid var(--line);counter-increment:method;font-size:13px;color:var(--muted)}
+    .steps li:first-child{padding-top:0;border-top:0}
+    .steps li:before{content:counter(method,decimal-leading-zero);position:absolute;left:0;top:15px;font-size:11px;letter-spacing:.06em;color:#779083}
+    .steps li:first-child:before{top:0}
+    .steps strong{display:block;color:var(--ink);font-weight:550;margin-bottom:2px}
+    .source-list{list-style:none;padding:0;margin:0}
+    .source-list li+li{margin-top:17px}
+    .source-list a{font-size:13px}
+    .source-list small{display:block;font-size:12px;color:var(--muted);margin-top:3px}
+    details{margin-top:20px}
+    summary{cursor:pointer;font-size:13px;color:var(--accent);width:fit-content}
+    pre{padding:17px;background:#e9ede4;border-radius:8px;overflow-x:auto;font-size:11px;line-height:1.7}
+    footer{margin-top:45px;padding-top:23px;border-top:1px solid var(--line)}
+    .entrances{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:13px}
+    .footer-note{font-size:12px;color:var(--muted);margin-top:16px}
+    @media(max-width:950px){main{padding:26px}.section-head{display:block}.section-head>p{margin-top:9px;max-width:none}.settings{grid-template-columns:1fr}.method-grid,.gn-grid{grid-template-columns:1fr}.swatch-grid,.experiment-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.inspection-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:650px){main{padding:24px 18px}.masthead{display:block}.edition{text-align:left;margin-top:19px}.edition strong{display:inline;margin-right:10px}section{margin-top:36px}.grid{gap:25px}.character-grid,.swatch-grid,.inspection-grid,.experiment-grid,.length-grid,.experiment-result{grid-template-columns:1fr}.method,.inspection-copy,.experiment-result{padding:21px}.note{padding:15px 17px}th,td{padding:12px 14px}.jump-nav{gap:10px 20px}h2{font-size:22px}.entrances{gap:12px 21px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    .original-entry-card{display:flex;align-items:center;justify-content:space-between;gap:25px;margin-top:30px;padding:23px 25px;border:1px solid #c6d8cd;border-radius:12px;background:#e7eee4}.original-entry-card h2{font-size:22px;margin-bottom:9px}.original-entry-card p:last-child{max-width:850px;font-size:13px;color:var(--muted)}.original-entry-card>a{flex:none;font-size:13px;padding:10px 15px;border:1px solid #b5cbbb;border-radius:8px;background:#fffdf8;text-decoration:none}.original-entry-card .section-number{margin-bottom:6px}@media(max-width:650px){.original-entry-card{display:block;padding:20px;margin-top:25px}.original-entry-card>a{display:inline-block;margin-top:17px}}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">Plush Lab / Cycles Material Study</p>
+    <div class="masthead">
+      <div>
+        <h1>完整毛绒角色</h1>
+        <p class="intro">原参考与本轮重做的完整形象放在一起。先看毛绒体积、卷团的自然程度，再看角色轮廓、帽子与眼睛比例。全部旧创作与制作记录继续保留在下方。</p>
+      </div>
+      <p class="edition"><strong>完整卷绒角色</strong>2026.10.03 · 静态渲染对照</p>
+    </div>
+    <nav class="jump-nav" aria-label="本页目录">
+      <a href="../web/reference-plush.html">原作毛绒展台 ↗</a>
+      <a href="#character-v15-delivery">本轮完整角色</a><a href="#character-v15-making">本轮制作方式</a><a href="#character-fine-bundle-study">历史 GN14 三图</a><a href="#character-v14-recipe-evidence">历史 GN14 工程</a>
+      <a href="#character">参考与角色</a><a href="#inspection">侧面与迭代</a><a href="#swatches">四种毛料</a><a href="#guides">导向实验 A/B/C/D</a><a href="#length-study">D→E 长度对照</a><a href="#hair-nodes">官方 Hair 节点路线</a><a href="#nearest-guides">GN2→GN3 根映射</a><a href="#undercoat-study">GN3→GN4 底绒</a><a href="#restore-study">GN4→GN5 Restore</a><a href="#bundle-volume-study">GN5→GN6 Tip Spread</a><a href="#structural-groom-study">GN7 导向造型</a><a href="#layer-source-study">GN8 分层观察</a><a href="#short-bundle-study">GN9 两级成束</a><a href="#compact-coil-study">GN10 紧凑回卷</a><a href="#clump-profile-study">GN11 沿长收束</a><a href="#curl-variation-study">GN12 卷曲偏移</a><a href="#coil-orientation-study">GN13 导向方位</a><a href="#bundle-scale-study">GN14 空间束尺度</a><a href="#parameters">真实参数</a><a href="#method">制作方法与来源</a><a href="reference-comparison.html">旧版高斯 v4 对照 ↗</a>
+    </nav>
+  </header>
+
+  <article class="original-entry-card" aria-labelledby="original-entry-heading">
+    <div><p class="section-number">ORIGINAL PUBLIC SCENE</p><h2 id="original-entry-heading">直接观看原作毛绒角色</h2><p>已找到 abstrakt 公开的 ChatGPT dots - Felipe 三维场景。可直接观察原作的毛绒质感，下面的全部自主创作与材质实验继续保留。</p></div>
+    <a href="../web/reference-plush.html">打开原作三维展台 ↗</a>
+  </article>
+
+  <section id="character-v15-delivery" aria-labelledby="character-v15-heading">
+    <div class="section-head">
+      <div><p class="section-number">FULL PLUSH CHARACTER · 2026.10.03</p><h2 id="character-v15-heading">原参考与本轮完整角色</h2></div>
+      <p>直接并排看成片。视觉效果仍由你验收，制作完成不代表已经与原图一致。</p>
+    </div>
+    <div class="grid character-grid">
+      <figure>
+        <div class="figure-title">原参考 <span class="tag">用户截图</span></div>
+        <div class="frame character-frame reference"><a href="reference-x-screenshot.png" aria-label="查看未经编辑的完整参考截图"><img src="reference-x-screenshot.png" alt="原参考的蓝紫色毛绒星形角色，黑色贝雷帽、亮黑椭圆眼睛与松厚不规则卷绒"></a></div>
+        <figcaption>希望实现的舒适毛绒质感。页面只裁切展示角色区域，原始截图保留。</figcaption>
+        <div class="downloads"><a href="reference-x-screenshot.png">完整参考截图 ↗</a></div>
+      </figure>
+      <figure>
+        <div class="figure-title">本轮完整角色 <span class="tag">卷团与细毛尖</span></div>
+        <div class="frame character-frame render"><a href="cycles-study/character-reference-volumetric-fleece-v15-r2.png" aria-label="查看完整毛绒角色原尺寸渲染"><img src="cycles-study/character-reference-volumetric-fleece-v15-r2.png" alt="本轮蓝色毛绒星仔完整角色实际渲染，戴黑色贝雷帽，具有亮黑椭圆眼睛与重新制作的卷绒毛层"></a><p class="missing" hidden>完整角色图片暂不可读取<span>请打开同名 PNG 检查成片。</span></p></div>
+        <figcaption>重新构造卷团与细毛尖的完整角色。打开原尺寸成片，观察毛层是否松厚、卷团是否自然。</figcaption>
+        <div class="downloads"><a href="cycles-study/character-reference-volumetric-fleece-v15-r2.png" download>下载完整 PNG</a><a href="#character-v15-making">制作方式 ↘</a></div>
+      </figure>
+    </div>
+    <details id="character-v15-making">
+      <summary>展开本轮制作方式与可编辑工程</summary>
+      <p class="table-note">采用 Blender 原生毛发曲线构造毛绒造型，由 Cycles 计算纤维散射、阴影与光照，输出实际渲染图。本次未做 3D Gaussian Splatting 重建；当前交付为完整角色的静态成片。毛束、形体与光照可在保存的工程中继续编辑，外观仍需对照参考验收。</p>
+      <div class="downloads"><a href="cycles-study/character-reference-volumetric-fleece-v15-r2.blend" download>可编辑 .blend 工程</a><a href="cycles-study/character-reference-volumetric-fleece-v15-r2.source.py" download>本轮制作源文件</a><a href="cycles-study/character-reference-volumetric-fleece-v15-r2.groom.json">毛绒造型记录</a><a href="cycles-study/character-reference-volumetric-fleece-v15-r2.render.json">实际渲染记录</a></div>
+    </details>
+    <p class="table-note">下方 21 个旧阶段均保留原记录；其中“本轮”“最新”等表述对应当时的历史阶段。当前完整角色见本组并排图。</p>
+  </section>
+
+  <section id="character-fine-bundle-study" aria-labelledby="character-fine-bundle-heading">
+    <div class="section-head">
+      <div><p class="section-number">GN14 / FULL CHARACTER · 2026.10.03</p><h2 id="character-fine-bundle-heading">原参考、旧 v6 与本轮完整角色</h2></div>
+      <p>三张实际图片直接判断外观。新候选已完成完整角色渲染；毛料类型有所变化，不能由参数或检查通过推断参考一致。</p>
+    </div>
+    <div class="grid gn-grid">
+      <figure>
+        <div class="figure-title">原参考 <span class="tag">用户截图</span></div>
+        <div class="frame character-frame reference"><a href="reference-x-screenshot.png" aria-label="查看未经编辑的完整参考截图"><img src="reference-x-screenshot.png" alt="原参考中的蓝紫色毛绒星形角色，表面是松厚、不规则的小卷团，戴黑色贝雷帽"></a></div>
+        <figcaption>只用页面裁切显示角色区域；原始 PNG 未编辑。截图压缩与底部播放器渐变仍会影响观察。</figcaption>
+        <div class="downloads"><a href="reference-x-screenshot.png">查看完整原截图 ↗</a></div>
+      </figure>
+      <figure>
+        <div class="figure-title">旧完整角色 · v6 <span class="tag">历史保留</span></div>
+        <div class="frame character-frame render"><a href="cycles-study/character-reference-guide-v6.png" aria-label="查看旧 v6 完整角色原图"><img src="cycles-study/character-reference-guide-v6.png" alt="旧 v6 完整角色，细长毛丝与棉絮状毛层明显，下腹偏暗"></a><p class="missing" hidden>旧渲染图暂不可读取<span>原工程与记录继续保留在下方。</span></p></div>
+        <figcaption>长丝与棉絮状毛层更明显，下腹偏暗。保留原图、工程与完整旧记录，方便判断新配方的变化。</figcaption>
+        <div class="downloads"><a href="cycles-study/character-reference-guide-v6.png">查看 v6 原图 ↗</a><a href="#character">原 v6 记录 ↘</a></div>
+      </figure>
+      <figure data-study="character-reference-soft-pile-v14" data-render-receipt="cycles-study/character-reference-soft-pile-v14.render.json">
+        <div class="figure-title">本轮完整角色 · GN14 <span class="tag">增高毛层 + 柔光</span></div>
+        <div class="frame character-frame render"><a href="cycles-study/character-reference-soft-pile-v14.png" aria-label="查看本轮 GN14 完整角色 1536 像素原尺寸渲染"><img src="cycles-study/character-reference-soft-pile-v14.png" alt="GN14 新完整蓝色星仔，增加实际毛层高度和前下方柔光，细密小回卷清晰但仍缺少参考中的松厚不规则卷团"></a><p class="missing" hidden>新渲染图暂不可读取<span>工程与实际渲染凭证见下方折叠记录。</span></p></div>
+        <figcaption>长丝减少、底部提亮，原尺寸能看到细密的小回卷；毛束仍过细、方向与尺度偏一致，尚未形成参考的松厚卷团。</figcaption>
+        <div class="downloads"><a href="cycles-study/character-reference-soft-pile-v14.png" download>下载本轮 PNG</a><a href="#character-v14-recipe-evidence">工程与检查 ↘</a></div>
+        <p class="record" aria-live="polite">实际 GPU 渲染 · 1536 × 1536 · 256 样本上限 · 渲染计时 60.72 秒；不含生成与 CPU 预检。</p>
+      </figure>
+    </div>
+    <p class="note">本轮已经交付<strong>完整星仔实图</strong>。增加了实际毛层高度、放开束尾并补入柔光；改善最明确的是底部可见性。参考的松厚、不规则卷团仍未达到，帽冠与眼睛比例也有差距。这张是离线静态渲染；原网页与原有作品继续保留。</p>
+    <p class="table-note">下方各旧版本段落保留当时的原始结论；其中“最新 v6”描述对应历史阶段。本轮最新完整候选以本组三图为准。</p>
+  </section>
+
+  <section id="character-v14-recipe-evidence" aria-labelledby="character-v14-evidence-heading">
+    <details>
+      <summary>展开本轮两份完整角色、实际变更与检查记录</summary>
+      <div class="section-head" style="margin-top:18px">
+        <div><p class="section-number">GN14 / SAVED FULL ASSETS</p><h2 id="character-v14-evidence-heading">两份完整工程与实际渲染</h2></div>
+        <p>这是两份复合配方。几何与光照共同变化，不能作为单参数 A/B，也不能以工程检查通过代替外观验收。</p>
+      </div>
+      <div class="grid character-grid">
+        <figure data-study="character-reference-fine-bundle-v14" data-render-receipt="cycles-study/character-reference-fine-bundle-v14.render.json">
+          <div class="figure-title">细束完整迁移 <span class="tag">基础候选</span></div>
+          <div class="frame swatch-frame render"><a href="cycles-study/character-reference-fine-bundle-v14.png" aria-label="查看 GN14 细束完整角色基础候选"><img src="cycles-study/character-reference-fine-bundle-v14.png" alt="GN14 细束完整角色基础候选，毛层整洁但偏贴面的短绒和颗粒，下腹仍暗" loading="lazy"></a><p class="missing" hidden>基础候选图暂不可读取<span>请检查同名 PNG。</span></p></div>
+          <figcaption>把 GN14 细束配方迁移到真实星形表面，保留帽沿与眼部压绒。与旧 v6 相比碎长丝减少，但偏贴面的短绒、霜粒或毛巾读感，下腹仍暗。</figcaption>
+          <div class="downloads"><a href="cycles-study/character-reference-fine-bundle-v14.png" download>PNG</a><a href="cycles-study/character-reference-fine-bundle-v14.blend" download>.blend 工程</a><a href="cycles-study/character-reference-fine-bundle-v14.render.json">实际 GPU 凭证</a><a href="cycles-study/character-reference-fine-bundle-v14.gn-report.json">配方与 CPU 预检</a><a href="cycles-study/character-reference-fine-bundle-v14.source.py" download>执行源快照</a><a href="../tooling/blender/plush_character_fine_bundle.py" download>制作逻辑</a></div>
+          <p class="record" aria-live="polite">实际 GPU 渲染 · 1536 × 1536 · 256 样本上限 · 渲染计时 47.08 秒；不含生成与 CPU 预检。</p>
+        </figure>
+        <figure data-study="character-reference-soft-pile-v14" data-render-receipt="cycles-study/character-reference-soft-pile-v14.render.json">
+          <div class="figure-title">增高毛层与柔光 <span class="tag">本轮主候选</span></div>
+          <div class="frame swatch-frame render"><a href="cycles-study/character-reference-soft-pile-v14.png" aria-label="查看 GN14 增高毛层与柔光完整角色候选"><img src="cycles-study/character-reference-soft-pile-v14.png" alt="GN14 增高毛层与柔光候选，腹部提亮，毛束有细密小回卷，仍缺参考的松厚卷团" loading="lazy"></a><p class="missing" hidden>主候选图暂不可读取<span>请检查同名 PNG。</span></p></div>
+          <figcaption>在基础细束工程上提高实际毛层高度、放开导向与束尾，加入宽面前下方柔光。底部明暗更平缓，细密小回卷仍偏统一，尚未达到参考一致。</figcaption>
+          <div class="downloads"><a href="cycles-study/character-reference-soft-pile-v14.png" download>PNG</a><a href="cycles-study/character-reference-soft-pile-v14.blend" download>.blend 工程</a><a href="cycles-study/character-reference-soft-pile-v14.render.json">实际 GPU 凭证</a><a href="cycles-study/character-reference-soft-pile-v14.gn-report.json">配方与 CPU 预检</a><a href="cycles-study/character-reference-soft-pile-v14.source.py" download>执行源快照</a><a href="../tooling/blender/plush_character_soft_pile.py" download>制作逻辑</a></div>
+          <p class="record" aria-live="polite">实际 GPU 渲染 · 1536 × 1536 · 256 样本上限 · 渲染计时 60.72 秒；不含生成与 CPU 预检。</p>
+        </figure>
+      </div>
+      <div class="settings">
+        <article class="setting"><h3>完整星形表面的细束配方</h3><p>320,000 条外绒对应 40,000 条真实导向；每八个原外绒根取一个导向根，子毛以欧氏最近根映射到导向。以实际星形表面法线重新定向，继续保护眼部与帽沿。使用保存的官方 Curl / Clump 沿长配方与 Hair Profile 节点。</p></article>
+        <article class="setting"><h3>增高毛层与柔光的实际变更</h3><p>子毛与导向的法向分量 × 1.65，导向切向分量 × 1.25；Clump 峰值改为 0.65。新增前下方面积灯，能量 260、尺寸 5。底绒沿用基础配方的 0.35 毛长、飞毛仍隐藏。形体、帽眼与相机沿用原完整工程。</p></article>
+        <article class="setting"><h3>能够复查的证据</h3><p>工程、执行源、CPU 预检与实际 GPU 渲染凭证分别保存。独立检查重新加载完整工程，核对实际导向与最近根映射、毛根固定、有限坐标、原尺寸 PNG 和文件 SHA。工程通过不等于舒适感或参考一致。</p></article>
+      </div>
+      <p class="table-note" id="full-validation-14">基础完整角色独立检查：<strong>18 / 18 通过</strong>。320,000 个最近根映射无差异、40,000 条导向非空，43,923 个根保留眼部与帽沿压绒；原 v6 工程与图片 SHA 保留。<a href="cycles-study/character-fine-bundle-validation-v14.json">独立检查报告</a> · <a href="../tooling/blender/validate_full_fine_bundle_v14.py" download>独立检查脚本</a>。报告 SHA：<code>4ff43a15fd15d3fe509da0bc5d9f7afa5838e42a667e077f2c58a32a8ecd3919</code>。</p>
+      <p class="table-note" id="full-soft-validation-14">增高毛层与柔光完整角色独立检查：<strong>18 / 18 通过</strong>。从该保存工程独立重载，核对 320,000 个最近导向映射、40,000 条非空导向、实际有限 GN 曲线、毛根法线与压绒字段，以及实际 1536 PNG 和最终渲染凭证；旧 v6 工程与图片 SHA 保持。<a href="cycles-study/character-soft-pile-validation-v14.json">独立检查报告</a> · <a href="../tooling/blender/validate_full_fine_bundle_v14.py" download>独立检查脚本</a>。报告 SHA：<code>598c9dadbbc07bda6c974e51bab515c1a20ecbf5a80d1c30cf9832ec49c94a27</code>。两份检查均验证几何与出处，未对舒适感或参考相似度打分。</p>
+    </details>
+  </section>
+
+  <section id="character" aria-labelledby="character-heading">
+    <div class="section-head">
+      <div><p class="section-number">01 / CHARACTER</p><h2 id="character-heading">参考截图与完整离线角色</h2></div>
+      <p>检查蓝色卷绒、双肩凹谷、圆臂圆腹、黑色贝雷帽与亮眼睛。单帧截图提供外观方向；相似度仍需由这组图片判断。</p>
+    </div>
+    <div class="grid character-grid">
+      <figure>
+        <div class="figure-title">用户提供的参考截图 <span class="tag">原对比页裁切</span></div>
+        <div class="frame character-frame reference"><img src="reference-x-screenshot.png" alt="用户提供的蓝色卷绒星形角色截图，戴黑色贝雷帽，有黑色亮眼睛"></div>
+        <figcaption>沿用旧版对照页的画面裁切，保留参考中的细毛、轮廓与光照信息。截图压缩及界面渐变也会影响观察。</figcaption>
+        <div class="downloads"><a href="reference-x-screenshot.png">查看原始截图 ↗</a><a href="reference-comparison.html">查看旧版高斯 v4 对照 ↗</a></div>
+      </figure>
+      <figure data-study="character-reference-guide-v6">
+        <div class="figure-title">最新离线候选 · v6 <span class="tag">弧长修正</span></div>
+        <div class="frame character-frame render">
+          <a href="cycles-study/character-reference-guide-v6.png" aria-label="查看 v6 弧长修正候选的原尺寸渲染"><img src="cycles-study/character-reference-guide-v6.png" alt="v6 蓝色毛绒星仔的原生毛丝 Cycles 渲染，弧长修正后毛层更紧凑，前额仍偏平，下腹偏暗，戴黑色贝雷帽"></a>
+          <p class="missing" hidden>对应渲染图暂不可读取<span>工程与参数链接在图片下方。</span></p>
+        </div>
+        <figcaption>冻结 v3 形体、材质与灯光，沿用 v5 的完整导向与 soft-tip 分布，再对表层毛做毛根固定的整条曲线弧长归一，与下方样片 E 相同。保存 10,000 条隐藏导向曲线；背面属于设计补全。</figcaption>
+        <div class="downloads"><a href="cycles-study/character-reference-guide-v6.png" download>下载 PNG</a><a href="cycles-study/character-reference-guide-v6.blend" download>.blend 工程</a><a href="cycles-study/character-reference-guide-v6.json" download>参数 JSON</a><a href="cycles-study/character-reference-guide-v6.ab-report.json">导向与长度报告</a><a href="cycles-study/character-reference-guide-v6.source.py" download>v3 基线快照</a><a href="cycles-study/character-reference-guide-v6.ab-source.py" download>实验逻辑快照</a><a href="cycles-study/character-reference-guide-v6.log">实际渲染日志</a></div>
+        <p class="record" aria-live="polite">1536 × 1536 · 384 样本上限 · 身体毛丝 669,000 + 帽毛 90,000 · 生成与渲染总计 124.65 秒。完整记录见 JSON。</p>
+        <p class="table-note">相对完整 v3 的对应表层毛，归一后实际 Catmull–Rom 弧长绝对相对误差 P95 为 0.0001123941%，最大 0.0009804751%。这是几何长度修正，不能据此认定视觉达标。</p>
+      </figure>
+    </div>
+    <p class="note">本页是<strong>静态离线渲染对照</strong>，v6 仍是最新离线候选。本次完成的是弧长修正：毛层更紧凑，部分长钩纹收敛，但前额仍偏平、毛束偏细碎，下腹偏暗，帽冠宽与眼睛比例也有差距，尚未达到与参考一致的外观目标。本轮没有训练 3DGS，也没有交付可旋转或动态的网页毛发资产；网页转换及其画质、交互与性能尚待评估。</p>
+    <details class="character-history" id="character-length-history"><summary>完整角色长度对照：展开归一前 v5 与归一后 v6</summary>
+      <div class="grid character-grid">
+        <figure data-study="character-reference-guide-v5">
+          <div class="figure-title">归一前 · v5 <span class="tag">soft-tip</span></div>
+          <div class="frame swatch-frame render"><a href="cycles-study/character-reference-guide-v5.png" aria-label="查看归一前 v5 完整角色原尺寸渲染"><img src="cycles-study/character-reference-guide-v5.png" alt="归一前 v5 完整角色，部分细亮长钩纹与重复卷束仍明显"></a><p class="missing" hidden>对应渲染图暂不可读取<span>请检查同名 PNG 文件。</span></p></div>
+          <figcaption>采用完整导向与 soft-tip，未归一实际毛长。相对完整 v3，实际弧长绝对相对漂移 P95 约 97.30%。</figcaption>
+          <div class="downloads"><a href="cycles-study/character-reference-guide-v5.png" download>PNG</a><a href="cycles-study/character-reference-guide-v5.blend" download>.blend 工程</a><a href="cycles-study/character-reference-guide-v5.json" download>参数 JSON</a><a href="cycles-study/character-reference-guide-v5.ab-report.json">实验报告</a><a href="cycles-study/character-reference-guide-v5.source.py" download>v3 基线快照</a><a href="cycles-study/character-reference-guide-v5.ab-source.py" download>实验逻辑快照</a><a href="cycles-study/character-reference-guide-v5.log">日志</a></div>
+          <p class="record" aria-live="polite">1536 × 1536 · 384 样本上限 · 生成与渲染总计 97.46 秒。</p>
+        </figure>
+        <figure data-study="character-reference-guide-v6">
+          <div class="figure-title">归一后 · v6 <span class="tag">毛根固定 · 整条曲线缩放</span></div>
+          <div class="frame swatch-frame render"><a href="cycles-study/character-reference-guide-v6.png" aria-label="查看归一后 v6 完整角色原尺寸渲染"><img src="cycles-study/character-reference-guide-v6.png" alt="归一后 v6 完整角色，毛层更紧凑但前额、毛束、腹部和帽眼仍有参考差距"></a><p class="missing" hidden>对应渲染图暂不可读取<span>请检查同名 PNG 文件。</span></p></div>
+          <figcaption>仅对表层毛增加毛根固定的整条曲线缩放。归一后弧长误差 P95 为 0.0001123941%，最大 0.0009804751%；同时改变卷曲的整体空间尺度，外观仍需单独判断。</figcaption>
+          <div class="downloads"><a href="cycles-study/character-reference-guide-v6.png" download>PNG</a><a href="cycles-study/character-reference-guide-v6.ab-report.json">完整长度报告</a></div>
+          <p class="record" aria-live="polite">1536 × 1536 · 384 样本上限 · 生成与渲染总计 124.65 秒。</p>
+        </figure>
+      </div>
+    </details>
+    <div class="inspection-grid" id="inspection">
+      <figure data-study="character-reference-v3-angle25">
+        <div class="figure-title">前轮 v3 · 25° 侧面 <span class="tag">历史检查</span></div>
+        <div class="frame swatch-frame render"><a href="cycles-study/character-reference-v3-angle25.png" aria-label="查看 v3 角色 25 度侧面原尺寸渲染"><img src="cycles-study/character-reference-v3-angle25.png" alt="v3 蓝色毛绒星仔偏转 25 度的离线侧面渲染，检查侧臂、眼睛和帽沿" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>请检查同名 PNG 文件。</span></p></div>
+        <figcaption>改变相机方位检查毛层与帽沿。侧后面的形体属于设计补全，不能作为单图重建精度的证据。</figcaption>
+        <div class="downloads"><a href="cycles-study/character-reference-v3-angle25.png" download>PNG</a><a href="cycles-study/character-reference-v3-angle25.blend" download>.blend 工程</a><a href="cycles-study/character-reference-v3-angle25.json" download>参数 JSON</a><a href="cycles-study/character-reference-v3-angle25.source.py" download>版本源快照</a></div>
+        <p class="record" aria-live="polite">1024 × 1024 · 128 样本上限 · 方位偏转 25° · 生成与渲染总计 24.97 秒。完整记录见 JSON。</p>
+      </figure>
+      <article class="inspection-copy">
+        <h3>完整 v6 的差距与实际测量</h3>
+        <ul class="gaps"><li>毛束读感：毛层更紧凑，部分长钩纹收敛，但前额仍偏平，毛束偏细碎，与参考厚实的小卷绒仍有明显差距。</li><li>光色分布：上亮下暗更强，下腹偏深蓝；参考底部的播放器白渐变不能写进材质。</li><li>帽冠与眼睛：帽冠规整、偏宽，参考左冠更鼓、更垂；眼睛位置与比例也仍有差距。</li></ul>
+        <p>本机 NVIDIA GeForce RTX 4070 Laptop GPU / OptiX 单次离线记录：v6 正面生成、保存与渲染共 124.65 秒。降噪在 CPU 执行；这些耗时不代表网页帧率或其他设备性能。</p>
+        <p><a href="../notes/cycles-material-study.md">阅读完整制作记录、测量与下一步 ↗</a></p>
+        <div class="history-row" data-study="character-reference-guide-v4"><strong>前轮 v4 · 完整导向与提前收拢</strong><div class="downloads"><a href="cycles-study/character-reference-guide-v4.png" download>PNG</a><a href="cycles-study/character-reference-guide-v4.blend" download>.blend 工程</a><a href="cycles-study/character-reference-guide-v4.json" download>参数 JSON</a><a href="cycles-study/character-reference-guide-v4.ab-report.json">实验报告</a><a href="cycles-study/character-reference-guide-v4.source.py" download>v3 基线快照</a><a href="cycles-study/character-reference-guide-v4.ab-source.py" download>实验逻辑快照</a><a href="cycles-study/character-reference-guide-v4.log">日志</a></div><p class="record" aria-live="polite">前轮完整导向候选保留。</p><p class="table-note">相对完整 v3 的实际弧长漂移 P95 约 73.45%。</p><details><summary>展开前轮 v4 正面图</summary><div class="frame swatch-frame render"><a href="cycles-study/character-reference-guide-v4.png" aria-label="查看前轮完整导向 v4 正面原尺寸渲染"><img src="cycles-study/character-reference-guide-v4.png" alt="前轮 v4 完整导向星仔，较强提前收拢形成细亮钩状卷束"></a><p class="missing" hidden>对应渲染图暂不可读取<span>请检查同名 PNG 文件。</span></p></div></details></div>
+        <div class="history-row" data-study="character-reference-v3"><strong>前轮 v3 · 松散短卷绒候选</strong><div class="downloads"><a href="cycles-study/character-reference-v3.png" download>PNG</a><a href="cycles-study/character-reference-v3.blend" download>.blend 工程</a><a href="cycles-study/character-reference-v3.json" download>参数 JSON</a><a href="cycles-study/character-reference-v3.source.py" download>版本源快照</a><a href="cycles-study/character-reference-v3.log">日志</a></div><p class="record" aria-live="polite">前轮正面图与可编辑工程保留。</p><details><summary>展开前轮 v3 正面图</summary><div class="frame swatch-frame render"><a href="cycles-study/character-reference-v3.png" aria-label="查看前轮 v3 正面原尺寸渲染"><img src="cycles-study/character-reference-v3.png" alt="前轮 v3 蓝色细密短卷绒星仔正面，作为完整导向 v4 的历史对照"></a><p class="missing" hidden>对应渲染图暂不可读取<span>请检查同名 PNG 文件。</span></p></div></details></div>
+        <div class="history-row" data-study="character-fleece-v1"><strong>v1 · B 毛料与初版完整角色</strong><div class="downloads"><a href="cycles-study/character-fleece-v1.png" download>PNG</a><a href="cycles-study/character-fleece-v1.blend" download>.blend 工程</a><a href="cycles-study/character-fleece-v1.json" download>参数 JSON</a></div><p class="record" aria-live="polite">初版视觉对照保留；没有对应源快照。</p></div>
+        <div class="history-row" data-study="character-reference-v2"><strong>v2 · 黑帽与更强聚束的迭代</strong><div class="downloads"><a href="cycles-study/character-reference-v2.png" download>PNG</a><a href="cycles-study/character-reference-v2.blend" download>.blend 工程</a><a href="cycles-study/character-reference-v2.json" download>参数 JSON</a><a href="cycles-study/character-reference-v2.source.py" download>版本源快照</a></div><p class="record" aria-live="polite">实际渲染设置见参数 JSON。</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="swatches" aria-labelledby="swatches-heading">
+    <div class="section-head">
+      <div><p class="section-number">02 / MATERIALS</p><h2 id="swatches-heading">四种毛料，同镜头与灯光</h2></div>
+      <p>四组均用最终 v3 脚本、相同曲面、正交相机和三盏柔光。A/B/C 同纤维底色；D 同时校正毛丝形态与底色。这是多参数候选比较，点击图片可检查原尺寸细节。</p>
+    </div>
+    <div class="grid swatch-grid">
+      <figure data-study="swatch-velvet-v3" data-variant="velvet">
+        <div class="figure-title"><span class="swatch-label">A</span>细密直短绒</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-velvet-v3.png" aria-label="查看 A 直短绒的原尺寸渲染"><img src="cycles-study/swatch-velvet-v3.png" alt="A 细密直短绒，蓝色曲面上的短细毛与轮廓" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>请检查同名 PNG 文件。</span></p></div>
+        <figcaption>较短毛层、较弱卷曲与聚束。重点看毛层是否连续，轮廓是否仍保留细丝。</figcaption>
+        <div class="downloads"><a href="cycles-study/swatch-velvet-v3.png" download>PNG</a><a href="cycles-study/swatch-velvet-v3.blend" download>.blend 工程</a><a href="cycles-study/swatch-velvet-v3.json" download>参数 JSON</a><a href="cycles-study/swatch-velvet-v3.source.py" download>源快照</a></div>
+        <p class="record" aria-live="polite">实际渲染设置见参数 JSON。</p>
+      </figure>
+      <figure data-study="swatch-fleece-v3" data-variant="fleece">
+        <div class="figure-title"><span class="swatch-label">B</span>松散微卷绒</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-fleece-v3.png" aria-label="查看 B 微卷绒的原尺寸渲染"><img src="cycles-study/swatch-fleece-v3.png" alt="B 松散微卷绒，蓝色曲面上的弯曲细丝与较蓬松毛层" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>请检查同名 PNG 文件。</span></p></div>
+        <figcaption>中等长度和卷曲，保留毛束之间的空隙。重点看软毛层、根部暗部与弯曲纤维。</figcaption>
+        <div class="downloads"><a href="cycles-study/swatch-fleece-v3.png" download>PNG</a><a href="cycles-study/swatch-fleece-v3.blend" download>.blend 工程</a><a href="cycles-study/swatch-fleece-v3.json" download>参数 JSON</a><a href="cycles-study/swatch-fleece-v3.source.py" download>源快照</a></div>
+        <p class="record" aria-live="polite">实际渲染设置见参数 JSON。</p>
+      </figure>
+      <figure data-study="swatch-teddy-v3" data-variant="teddy">
+        <div class="figure-title"><span class="swatch-label">C</span>较长卷毛束</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-teddy-v3.png" aria-label="查看 C 较长卷束的原尺寸渲染"><img src="cycles-study/swatch-teddy-v3.png" alt="C 较长卷毛束，蓝色曲面上的长卷绒与明显聚束" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>请检查同名 PNG 文件。</span></p></div>
+        <figcaption>更长纤维、更强卷曲与聚束。重点看毛束是否像硬绳，及轮廓与高光是否过强。</figcaption>
+        <div class="downloads"><a href="cycles-study/swatch-teddy-v3.png" download>PNG</a><a href="cycles-study/swatch-teddy-v3.blend" download>.blend 工程</a><a href="cycles-study/swatch-teddy-v3.json" download>参数 JSON</a><a href="cycles-study/swatch-teddy-v3.source.py" download>源快照</a></div>
+        <p class="record" aria-live="polite">实际渲染设置见参数 JSON。</p>
+      </figure>
+      <figure data-study="swatch-reference-v3" data-variant="reference">
+        <div class="figure-title"><span class="swatch-label">D</span>松散短卷绒候选</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-v3.png" aria-label="查看 D 短卷绒候选的原尺寸渲染"><img src="cycles-study/swatch-reference-v3.png" alt="D 校正纤维底色的蓝色松散短卷绒候选，采用完整 v3 角色同款预设" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>请检查同名 PNG 文件。</span></p></div>
+        <figcaption>完整 v3 采用的候选。毛丝形态与纤维底色同时调整，仍需改善松散小卷束的读感。</figcaption>
+        <div class="downloads"><a href="cycles-study/swatch-reference-v3.png" download>PNG</a><a href="cycles-study/swatch-reference-v3.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-v3.json" download>参数 JSON</a><a href="cycles-study/swatch-reference-v3.source.py" download>源快照</a></div>
+        <p class="record" aria-live="polite">实际渲染设置见参数 JSON。</p>
+      </figure>
+    </div>
+    <details><summary>保留的初期 v1 样片下载</summary><p class="table-note">v1 用于历史视觉对照，主对照采用同源 v3；v1 没有对应源快照。</p><div class="downloads"><a href="cycles-study/swatch-velvet-v1.png" download>A PNG</a><a href="cycles-study/swatch-velvet-v1.blend" download>A .blend</a><a href="cycles-study/swatch-velvet-v1.json" download>A JSON</a><a href="cycles-study/swatch-fleece-v1.png" download>B PNG</a><a href="cycles-study/swatch-fleece-v1.blend" download>B .blend</a><a href="cycles-study/swatch-fleece-v1.json" download>B JSON</a><a href="cycles-study/swatch-teddy-v1.png" download>C PNG</a><a href="cycles-study/swatch-teddy-v1.blend" download>C .blend</a><a href="cycles-study/swatch-teddy-v1.json" download>C JSON</a></div></details>
+  </section>
+
+  <section id="guides" aria-labelledby="guides-heading">
+    <div class="section-head">
+      <div><p class="section-number">GUIDE CONTROL / A–B–C–D</p><h2 id="guides-heading">导向实验：A/B 改目标，B/C/D 改分布</h2></div>
+      <p>本组字母为独立的导向实验编号。冻结 v3 基线、同色材料、灯光、镜头与随机抽样；A/B 只替换收拢目标，B/C/D 保持完整导向目标并改变沿长分布。C→D 同时调整中段与末端，不能归因为单独末端变化。</p>
+    </div>
+    <div class="grid experiment-grid">
+      <figure id="guide-root-study" data-study="swatch-reference-ab-root-1">
+        <div class="figure-title"><span class="swatch-label">A</span>只汇拢毛根方向</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-ab-root-1.png" aria-label="查看 A 毛根方向收拢实验的原尺寸渲染"><img src="cycles-study/swatch-reference-ab-root-1.png" alt="A 实验：按毛根相对分组根的切向偏移收拢，蓝色短卷绒仍呈均匀细密毛层" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>请检查同名 PNG 文件。</span></p></div>
+        <figcaption>以毛根相对分组根的切向偏移控制收拢，每丝自身卷曲保持独立。实际毛根位置保持不动。</figcaption>
+        <div class="downloads"><a href="cycles-study/swatch-reference-ab-root-1.png" download>PNG</a><a href="cycles-study/swatch-reference-ab-root-1.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-ab-root-1.json" download>参数 JSON</a><a href="cycles-study/swatch-reference-ab-root-1.ab-report.json">实验报告</a><a href="cycles-study/swatch-reference-ab-root-1.source.py" download>v3 基线快照</a><a href="cycles-study/swatch-reference-ab-root-1.ab-source.py" download>实验逻辑快照</a><a href="cycles-study/swatch-reference-ab-root-1.log">日志</a></div>
+        <p class="record" aria-live="polite">768 × 768 · 96 样本上限 · 身体毛丝 177,500 · 生成与渲染总计 10.17 秒。完整记录见 JSON。</p>
+      </figure>
+      <figure id="guide-curve-study" data-study="swatch-reference-ab-curve-1">
+        <div class="figure-title"><span class="swatch-label">B</span>沿完整导向曲线收拢</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-ab-curve-1.png" aria-label="查看 B 完整导向曲线收拢实验的原尺寸渲染"><img src="cycles-study/swatch-reference-ab-curve-1.png" alt="B 实验：沿毛丝全长向完整导向曲线收拢，与 A 的蓝色细密毛层仅有细微视觉差异" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>请检查同名 PNG 文件。</span></p></div>
+        <figcaption>在 A 的基础上向完整导向形状收拢。α 在中段 t = 0.5 时为 0.15，末端为 0.60，毛根位置与 A 相同。</figcaption>
+        <div class="downloads"><a href="cycles-study/swatch-reference-ab-curve-1.png" download>PNG</a><a href="cycles-study/swatch-reference-ab-curve-1.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-ab-curve-1.json" download>参数 JSON</a><a href="cycles-study/swatch-reference-ab-curve-1.ab-report.json">实验报告</a><a href="cycles-study/swatch-reference-ab-curve-1.source.py" download>v3 基线快照</a><a href="cycles-study/swatch-reference-ab-curve-1.ab-source.py" download>实验逻辑快照</a><a href="cycles-study/swatch-reference-ab-curve-1.log">日志</a></div>
+        <p class="record" aria-live="polite">768 × 768 · 96 样本上限 · 身体毛丝 177,500 · 生成与渲染总计 12.37 秒。完整记录见 JSON。</p>
+      </figure>
+      <figure id="guide-early-study" data-study="swatch-reference-ab-early-1">
+        <div class="figure-title"><span class="swatch-label">C</span>完整导向 · 提前收拢</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-ab-early-1.png" aria-label="查看 C 提前收拢实验的原尺寸渲染"><img src="cycles-study/swatch-reference-ab-early-1.png" alt="C 实验：完整导向曲线在中段提前收拢，蓝色毛层出现更清楚的小卷束，仍有重复纹理" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>请检查同名 PNG 文件。</span></p></div>
+        <figcaption>保持 B 的完整导向目标，改用提前收拢分布。中段 t = 0.5 时强度为 83.33%，末端为 90%；可见小卷束仍有重复感。</figcaption>
+        <div class="downloads"><a href="cycles-study/swatch-reference-ab-early-1.png" download>PNG</a><a href="cycles-study/swatch-reference-ab-early-1.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-ab-early-1.json" download>参数 JSON</a><a href="cycles-study/swatch-reference-ab-early-1.ab-report.json">实验报告</a><a href="cycles-study/swatch-reference-ab-early-1.source.py" download>v3 基线快照</a><a href="cycles-study/swatch-reference-ab-early-1.ab-source.py" download>实验逻辑快照</a><a href="cycles-study/swatch-reference-ab-early-1.log">日志</a></div>
+        <p class="record" aria-live="polite">768 × 768 · 96 样本上限 · 身体毛丝 177,500 · 生成与渲染总计 9.74 秒。完整记录见 JSON。</p>
+      </figure>
+      <figure id="guide-soft-tip-study" data-study="swatch-reference-ab-soft-tip-1">
+        <div class="figure-title"><span class="swatch-label">D</span>中段成束 · 末端松散</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-ab-soft-tip-1.png" aria-label="查看导向实验 D 的原尺寸渲染"><img src="cycles-study/swatch-reference-ab-soft-tip-1.png" alt="导向实验 D：中段更强收拢而末端放松，外层松散、细亮紧钩减少，小卷束仍可辨" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>请检查同名 PNG 文件。</span></p></div>
+        <figcaption>采用 soft-tip 分布，中段 t = 0.5 强度约 87.62%，末端 61.60%。同时改变中段与末端；完整 v5 采用此分布。</figcaption>
+        <div class="downloads"><a href="cycles-study/swatch-reference-ab-soft-tip-1.png" download>PNG</a><a href="cycles-study/swatch-reference-ab-soft-tip-1.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-ab-soft-tip-1.json" download>参数 JSON</a><a href="cycles-study/swatch-reference-ab-soft-tip-1.ab-report.json">实验报告</a><a href="cycles-study/swatch-reference-ab-soft-tip-1.source.py" download>v3 基线快照</a><a href="cycles-study/swatch-reference-ab-soft-tip-1.ab-source.py" download>实验逻辑快照</a><a href="cycles-study/swatch-reference-ab-soft-tip-1.log">日志</a></div>
+        <p class="record" aria-live="polite">768 × 768 · 96 样本上限 · 身体毛丝 177,500 · 生成与渲染总计 9.70 秒。完整记录见 JSON。</p>
+      </figure>
+    </div>
+    <p class="experiment-conditions">导向实验 A/B/C/D 与上方四种毛料 A/B/C/D 分别编号。此组均为 768 × 768、96 样本上限、177,500 根身体毛丝，Chiang / COLOR / #6b8bd4、灯光、镜头和随机抽样相同。每份保存 2,657 条隐藏导向曲线，不参与渲染；毛根、短底绒、飞毛与半径保持相同。固定的是生成长度抽样，实际弧长会改变。</p>
+    <div class="experiment-result">
+      <div><h3>实际观察：成束与松散外层</h3><p>A/B 仍偏均匀短毡。C 的小卷束更清楚，但细亮紧钩重复感明显；D 相对 C 外层更松散，紧钩减少，小卷束仍可辨。C→D 的中段、末端强度同时变化，结果不能只归因于末端放松；与参考仍未一致。</p></div>
+      <div><h3>长度与交付边界</h3><p>按保存的 float32 控制点积分 Catmull–Rom 弧长，相对导向 A 的绝对相对漂移 P95：B 约 19.81%，C 约 65.70%，D 约 79.50%。这些结果不保持实际毛长；本实验尚不构成参考一致、网页转换或 3DGS 训练成果。</p></div>
+    </div>
+    <details><summary>沿长强度分布与报告口径</summary><pre>A/B：α(t) = 0.6 × t²
+中段 t = 0.5 → 15%；末端 t = 1 → 60%。
+
+C：β(t) = 0.90 × smoothstep(clamp(t / 0.60, 0, 1))
+中段 t = 0.5 → 83.33%；末端 t = 1 → 90%。
+
+D：β(t) = .88 × smoothstep(clamp(t / .52, 0, 1))
+          × (1 − .30 × smoothstep(clamp((t − .55) / .45, 0, 1)))
+中段 t = 0.5 → 87.62%；末端 t = 1 → 61.60%。
+
+四份样片报告都以导向 A 为弧长基线；C/D 报告中的 b 字段表示该份完整导向输出。
+完整角色则以完整 v3 为弧长基线，不能与样片漂移直接混用。
+数值检查通过支持控制条件与几何公式成立，不等于视觉已达到参考。</pre></details>
+    <p class="table-note"><a href="cycles-study/groom-assets-validation-v3.json">脚本导向与长度实验的可复跑原生工程检查 ↗</a>：10 个工程、589/589 项通过，覆盖 A/B/C/D/E、完整 v4/v5/v6 与两个基线，不包含下方 GN 候选。独立积分核对 E/v6 每丝实际弧长，毛根最大误差为 0，E/v6 所有表层毛的相对弧长误差小于 0.0001；58 个输入文件读取前后 SHA 相同。工程与长度检查不等于画质验收，也不证明物理或 FTL 模拟。</p>
+    <details><summary>保留的检查历史与网格顺序差异</summary><p class="table-note"><a href="cycles-study/groom-assets-validation-v2.json">前轮检查 v2：8 个工程、445/445 项通过 ↗</a>，尚不包含 E 与完整 v6。<a href="cycles-study/groom-assets-validation-v1.json">初次完整检查：未全部通过，网格存储顺序差异 ↗</a>。后续检查保留顶点、绕序、材质、平滑与重复数量，只规范化边和面的存储顺序；没有把画质差距作为工程检查通过项。<a href="cycles-study/groom-ab-validation.json">初期样片工程检查 ↗</a>另行保留。</p></details>
+  </section>
+
+  <section id="length-study" aria-labelledby="length-heading">
+    <div class="section-head">
+      <div><p class="section-number">LENGTH CONTROL / D → E</p><h2 id="length-heading">D→E：毛根固定，恢复每丝实际弧长</h2></div>
+      <p>独立两列对照。E 保持 D 的 soft-tip 分布、导向、毛丝数量、半径、材质、灯光与镜头，在生成 D 后增加整条表层曲线的几何缩放，将每丝弧长恢复到导向 A 的测量值。</p>
+    </div>
+    <div class="grid length-grid">
+      <figure data-study="swatch-reference-ab-soft-tip-1">
+        <div class="figure-title"><span class="swatch-label">D</span>soft-tip · 不归一实际长度</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-ab-soft-tip-1.png" aria-label="查看长度对照 D 的原尺寸渲染"><img src="cycles-study/swatch-reference-ab-soft-tip-1.png" alt="长度对照 D：soft-tip 完整导向毛层，尚未对实际弧长做几何归一" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>请检查同名 PNG 文件。</span></p></div>
+        <figcaption>沿用上方导向 D。生成长度抽样保持相同；相对导向 A，保存控制点计算的实际弧长绝对相对漂移 P95 约 79.50%。</figcaption>
+        <div class="downloads"><a href="cycles-study/swatch-reference-ab-soft-tip-1.png" download>PNG</a><a href="cycles-study/swatch-reference-ab-soft-tip-1.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-ab-soft-tip-1.json" download>参数 JSON</a><a href="cycles-study/swatch-reference-ab-soft-tip-1.ab-report.json">实验报告</a><a href="cycles-study/swatch-reference-ab-soft-tip-1.source.py" download>v3 基线快照</a><a href="cycles-study/swatch-reference-ab-soft-tip-1.ab-source.py" download>实验逻辑快照</a><a href="cycles-study/swatch-reference-ab-soft-tip-1.log">日志</a></div>
+        <p class="record" aria-live="polite">768 × 768 · 96 样本上限 · 身体毛丝 177,500 · 生成与渲染总计 9.70 秒。完整记录见 JSON。</p>
+      </figure>
+      <figure data-study="swatch-reference-ab-soft-tip-length-1">
+        <div class="figure-title"><span class="swatch-label">E</span>soft-tip · 整条曲线归一弧长</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-ab-soft-tip-length-1.png" aria-label="查看 E 长度归一样片的原尺寸渲染"><img src="cycles-study/swatch-reference-ab-soft-tip-length-1.png" alt="E 实验：毛根固定，整条表层毛曲线恢复 A 的实际弧长，毛层比 D 更紧凑，与参考仍有明显差距" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>请检查同名 PNG 文件。</span></p></div>
+        <figcaption>在 D 上增加一次毛根固定的整条曲线均匀缩放。实际观察更紧凑，但与参考厚实的小卷绒仍有明显差距，不能据此称为视觉匹配。</figcaption>
+        <div class="downloads"><a href="cycles-study/swatch-reference-ab-soft-tip-length-1.png" download>PNG</a><a href="cycles-study/swatch-reference-ab-soft-tip-length-1.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-ab-soft-tip-length-1.json" download>参数 JSON</a><a href="cycles-study/swatch-reference-ab-soft-tip-length-1.ab-report.json">实验报告</a><a href="cycles-study/swatch-reference-ab-soft-tip-length-1.source.py" download>v3 基线快照</a><a href="cycles-study/swatch-reference-ab-soft-tip-length-1.ab-source.py" download>实验逻辑快照</a><a href="cycles-study/swatch-reference-ab-soft-tip-length-1.log">日志</a></div>
+        <p class="record" aria-live="polite">768 × 768 · 96 样本上限 · 身体毛丝 177,500 · 生成与渲染总计 15.00 秒。完整记录见 JSON。</p>
+      </figure>
+    </div>
+    <div class="experiment-result">
+      <div><h3>保存后实测：弧长误差很小</h3><p>按保存的 float32 Catmull–Rom 控制点、每段 32 点 Gauss–Legendre 积分，相对导向 A，E 的绝对相对弧长误差 P95 为 0.0000507684%，最大为 0.000184364%。毛根逐位保持相同；短底绒、飞毛和半径不变。</p></div>
+      <div><h3>几何约束与画质分别判断</h3><p>这是以毛根为中心的整条曲线几何缩放，会同时改变该丝的整体卷曲尺度与空间范围。它不是 FTL 或物理求解，也不等于完整 groom；本轮数值检查支持长度约束成立，不代表外观已达到参考。</p></div>
+    </div>
+    <details><summary>长度归一公式与报告字段</summary><pre>Yᵢ = pᵢ + (L_Aᵢ / L_Dᵢ) × (Dᵢ − pᵢ)
+pᵢ：固定的毛根；L_Aᵢ：导向 A 中对应毛丝的实际弧长。
+L_Dᵢ：同一毛丝在 soft-tip 导向变形后的实际弧长。
+
+相对误差采用 (L_Eᵢ − L_Aᵢ) / L_Aᵢ。
+E 报告 coat.arc_length.post_normalization：
+absolute_relative_drift_p95 = 5.076838404925949e−7（0.0000507684%）
+absolute_relative_drift_max = 1.8436373255591118e−6（0.000184364%）
+报告中的未归一 b 与 pre_normalization 仍保存 D 的漂移；不能把它们当成 E 的最终误差。
+
+复现样片时增加 --preserve-arc-length，并使用新的 tag：
+blender -b --python tooling/blender/plush_groom_ab.py -- --mode curve --profile soft-tip --preserve-arc-length --kind swatch --variant reference --resolution 768 --samples 96 --tag review-length-1</pre></details>
+  </section>
+
+  <section id="hair-nodes" aria-labelledby="hair-nodes-heading">
+    <div class="section-head">
+      <div><p class="section-number">METHOD CANDIDATES / E · GN1 · GN2</p><h2 id="hair-nodes-heading">官方 Hair 节点：编辑能力与外观分开看</h2></div>
+      <p>本区是多项结构改变的独立路线比较。GN 加入人工导向形状、live Geometry Nodes、较短长度预算和更饱满的半径分布；GN2 还调整导向、法线与节点参数，不能称为纯单变量 A/B。</p>
+    </div>
+    <div class="grid gn-grid">
+      <figure data-study="swatch-reference-ab-soft-tip-length-1">
+        <div class="figure-title">E · 脚本导向与弧长归一</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-ab-soft-tip-length-1.png" aria-label="查看方法对照 E 的原尺寸渲染"><img src="cycles-study/swatch-reference-ab-soft-tip-length-1.png" alt="方法对照 E：脚本生成 soft-tip 卷束后固定毛根并归一实际弧长" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>请检查同名 PNG 文件。</span></p></div>
+        <figcaption>沿用上方 E 作为已有结果对照：脚本保存最终曲线，并将每丝实际 Catmull–Rom 弧长恢复到导向 A。此工程没有 live GN groom 树。</figcaption>
+        <div class="downloads"><a href="cycles-study/swatch-reference-ab-soft-tip-length-1.png" download>PNG</a><a href="cycles-study/swatch-reference-ab-soft-tip-length-1.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-ab-soft-tip-length-1.json" download>参数 JSON</a><a href="cycles-study/swatch-reference-ab-soft-tip-length-1.ab-report.json">实验报告</a><a href="cycles-study/swatch-reference-ab-soft-tip-length-1.source.py" download>v3 基线快照</a><a href="cycles-study/swatch-reference-ab-soft-tip-length-1.ab-source.py" download>实验逻辑快照</a><a href="cycles-study/swatch-reference-ab-soft-tip-length-1.log">日志</a></div>
+        <p class="record" aria-live="polite">768 × 768 · 96 样本上限 · 身体毛丝 177,500 · 生成与渲染总计 15.00 秒。</p>
+      </figure>
+      <figure data-study="swatch-reference-gn-pile-live-render-1">
+        <div class="figure-title">GN1 · live 节点候选</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-pile-live-render-1.png" aria-label="查看 GN1 节点候选的原尺寸渲染"><img src="cycles-study/swatch-reference-gn-pile-live-render-1.png" alt="GN1 官方 Hair 节点候选的 Cycles 渲染，蓝色毛层偏细密短毡，卷束较弱" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>请检查同名 PNG 文件。</span></p></div>
+        <figcaption>加入 2,657 条可编辑导向，驱动 85,000 根表层毛。三种人工导向原型、0.70 倍基线弧长预算与半径分布同时改变；实际画面比 E 更偏短毡，卷束反而较弱。</figcaption>
+        <div class="downloads"><a href="cycles-study/swatch-reference-gn-pile-live-render-1.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-pile-live-render-1.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-pile-live-render-1.json" download>运行 JSON</a><a href="cycles-study/swatch-reference-gn-pile-live-render-1.gn-report.json">节点与测量报告</a><a href="cycles-study/swatch-reference-gn-pile-live-render-1.source.py" download>v3 基线快照</a><a href="cycles-study/swatch-reference-gn-pile-live-render-1.gn-source.py" download>GN1 源快照</a><a href="cycles-study/swatch-reference-gn-pile-live-render-1.log">日志</a></div>
+        <p class="record" aria-live="polite">768 × 768 · 96 样本上限 · 身体毛丝 177,500 · 生成与渲染总计 15.28 秒。</p>
+      </figure>
+      <figure data-study="swatch-reference-gn-pile-open-render-2">
+        <div class="figure-title">GN2 · 开放导向结构候选</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-pile-open-render-2.png" aria-label="查看 GN2 开放导向候选的原尺寸渲染"><img src="cycles-study/swatch-reference-gn-pile-open-render-2.png" alt="GN2 开放导向结构的 Cycles 渲染，与 GN1 相近的蓝色短毡毛层，仍缺少清晰厚实卷束" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>请检查同名 PNG 文件。</span></p></div>
+        <figcaption>改用开放 C/C/S 导向，归一成员法线，并同时调整 Curl 与 Clump 参数。实际画面与 GN1 相近，仍偏短毡，卷束读感弱；不标记为明显改善或已验收。</figcaption>
+        <div class="downloads"><a href="cycles-study/swatch-reference-gn-pile-open-render-2.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-pile-open-render-2.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-pile-open-render-2.json" download>运行 JSON</a><a href="cycles-study/swatch-reference-gn-pile-open-render-2.gn-report.json">节点与测量报告</a><a href="cycles-study/swatch-reference-gn-pile-open-render-2.source.py" download>v3 基线快照</a><a href="cycles-study/swatch-reference-gn-pile-open-render-2.gn-source.py" download>GN2 源快照</a><a href="cycles-study/swatch-reference-gn-pile-open-render-2.log">日志</a></div>
+        <p class="record" aria-live="polite">768 × 768 · 96 样本上限 · 身体毛丝 177,500 · 生成与渲染总计 18.35 秒。</p>
+      </figure>
+    </div>
+    <p class="experiment-conditions">三份均为 768 × 768、96 样本上限、177,500 根渲染毛丝，材质 Chiang / COLOR / #6b8bd4、灯光与相机沿用基线。GN 的 2,657 条导向参与节点求值，随后从渲染输出删除；它们不计入渲染毛丝总数。GN 表层毛仍为每丝 12 个控制点，短底绒与飞毛几何保持基线。</p>
+    <div class="experiment-result">
+      <div><h3>工程中实际存在的节点链</h3><p>导向对象经 Object Info 实时接入：Curl Hair Curves → Clump Hair Curves → Restore Curve Segment Length → Set Hair Curve Profile；之后删除临时导向组件并精确锁回毛根。修改独立导向会影响其 32 根子毛，节点参数也可在 .blend 的修改器中编辑。</p></div>
+      <div><h3>可编辑不代表画质目标已完成</h3><p>GN1/GN2 的短毡读感和弱卷束仍明显，与参考厚实的小卷绒有差距。这两份仅为离线毛料小样，未替换 v6 完整角色、未建立表面 UV 附着或形变绑定，也没有物理求解、FTL 或网页资产交付。</p></div>
+    </div>
+    <div class="table-wrap" style="margin-top:22px" tabindex="0" aria-label="可横向滚动的 GN1 与 GN2 实际参数表">
+      <table>
+        <thead><tr><th scope="col">实际 GN 参数</th><th scope="col">GN1 · live</th><th scope="col">GN2 · 开放导向</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">人工导向原型</th><td>3 种原型，按组轮换</td><td>开放 C/C/S；成员法线归一</td></tr>
+          <tr><th scope="row">目标输入长度预算</th><td colspan="2">对应 v3 实测 Catmull–Rom 弧长的 0.70 倍</td></tr>
+          <tr><th scope="row">Curl · Factor / Radius / Frequency</th><td>0.55 / 0.002 / 1.20</td><td>0.70 / 0.006 / 0.85</td></tr>
+          <tr><th scope="row">Clump · Factor / Shape / Tip Spread</th><td>0.72 / 0.35 / 0.003</td><td>0.88 / 0.20 / 0.003</td></tr>
+          <tr><th scope="row">半径分布 Min / Max</th><td colspan="2">0.55 / 1.00；实际末端 / 毛根半径约 0.55</td></tr>
+          <tr><th scope="row">最终表层毛平均实际弧长</th><td>0.0400390</td><td>0.0401054</td></tr>
+          <tr><th scope="row">相对各自 rest 弧长的绝对变化 P95</th><td>约 0.85935%</td><td>约 1.03322%</td></tr>
+          <tr><th scope="row">相对各自 rest 弧长的绝对变化最大值</th><td>约 1.30897%</td><td>约 1.79817%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">运行 JSON 的 preset 是冻结的 D 基线生成参数，不等于最终 GN groom。实际节点输入、候选参数和 evaluated 几何请读取各自 .gn-report.json。Restore 节点约束的是控制点间的段长度，最终 Catmull–Rom 弧长另行积分；GN 的 rest 基线与 E 的导向 A 基线不同，误差不能直接混用。</p>
+    <p class="table-note" id="gn-validation-1"><a href="cycles-study/hair-nodes-render-validation-v1.json">GN1 独立工程检查 ↗</a>：99/99 项通过、11 个输入文件 SHA 未变。另选第 1,328 条导向的控制点 6 做可逆探针，影响该组 32 根子毛、组外 0 根，恢复后求值逐位一致，毛根保持固定；这些检查不包含视觉验收。</p>
+    <p class="table-note" id="gn-validation-2"><a href="cycles-study/hair-nodes-render-validation-v2.json">GN2 独立工程检查 ↗</a>：100/100 项通过、11 个输入文件 SHA 未变。85,000 根表层毛、每丝 12 点，求值后毛根逐位保持固定；第 1,328 条导向的控制点 6 沿 X 移动 0.002，仅影响该组 32 根子毛，组外 0 根，最大位移 0.00682805，恢复后求值逐位一致。GN2 所有 rest 曲线符合名义 70% 长度预算，最大绝对相对误差约 0.0002125425%；最终求值相对 rest 的弧长变化 P95 约 1.03322%、最大约 1.79817%，不属于实际弧长守恒。工程检查通过不代表视觉验收。</p>
+    <article class="method" id="gn-diagnostics" aria-labelledby="gn-diagnostics-heading" style="margin-top:22px">
+      <h3 id="gn-diagnostics-heading">只读毛层诊断：外绒高度与分组空间范围</h3>
+      <p><a href="cycles-study/gn-layer-geometry-diagnostic-1.json">读取实际几何诊断 JSON ↗</a>。GN2 正面外绒毛冠高度中位数约 0.01135，底绒为 0.01454；77.6% 的外绒毛冠低于其局部底绒 P95 高度。逐丝高于这一几何包络的弧长比例平均仅约 5.15%，这些是空间关系指标，不能读作像素可见率。</p>
+      <p>GN2 中 51.21% 的外绒曲线至少有一个采样点深入解析椭球超过 0.001 场景单位；处于该深度以下的弧长比例平均约 13.37%。同口径的 E 与 v3 为 0。原分组毛根在切平面内的 RMS 中位数约 0.03182，大于导向毛根最近邻距离中位数 0.01720；GN2 毛丝中段切向 RMS 为 0.02482，E 为 0.01120。更强的节点参数尚未形成紧凑的空间毛束。</p>
+      <p>本诊断只读取保存及节点求值后的 Curves，每个 Catmull–Rom 段使用 8 个 Gauss–Legendre 采样点。距离来自隐式椭球函数除以梯度的近似，并非精确最近表面投影；局部底绒包络是毛根表面分区中的毛冠 P95 高度，并非不透明壳层，也不是逐像素遮挡测试。所有数值使用未标定的 Blender 场景单位，不能单独作为视觉验收或改法后效果的证明。</p>
+    </article>
+    <details><summary>节点来源、版本快照与能力边界</summary><p class="table-note">工程使用 Blender 安装包的 procedural_hair_node_assets.blend 中 Hair 节点组。GN1 检查中 11 个节点树的 library 均为 null，弱来源信息与结构检查记录在报告中；不能把 library = null 单独当作强来源证明。GN1 与 GN2 的当时逻辑分别保存在同名 .gn-source.py，冻结基线在 .source.py；当前生成器可能继续变化，复现旧候选应使用对应版本快照。</p><p class="table-note"><a href="https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/hair/index.html" target="_blank" rel="noopener noreferrer">Blender 官方 Hair Nodes 手册 ↗</a>说明节点能力。节点工程可编辑与保存；本页仍只是 PNG 对照，没有把 live 节点运行在浏览器中。</p></details>
+  </section>
+
+  <section id="nearest-guides" aria-labelledby="nearest-guides-heading">
+    <div class="section-head">
+      <div><p class="section-number">GUIDE MAPPING / GN2 → GN3</p><h2 id="nearest-guides-heading">只换映射：每根子毛找最近导向毛根</h2></div>
+      <p>这组保持 GN2 的 rest 曲线、导向形态、半径、节点参数、毛根与其他毛层，仅把 child→guide 映射换为最近毛根。它与上方 E/GN1/GN2 的多结构路线比较分开记录。</p>
+    </div>
+    <div class="grid length-grid">
+      <figure data-study="swatch-reference-gn-pile-open-render-2">
+        <div class="figure-title">GN2 · 原来的分组映射</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-pile-open-render-2.png" aria-label="查看原映射 GN2 的原尺寸渲染"><img src="cycles-study/swatch-reference-gn-pile-open-render-2.png" alt="原映射 GN2：蓝色毛层仍偏短毡，清晰卷束较弱" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>请检查同名 PNG 文件。</span></p></div>
+        <figcaption>保持原来每组 32 根子毛的导向关联。所有根到所属导向根的三维距离 RMS 为 0.03261；正面外绒毛冠中位数约 0.01135。</figcaption>
+        <div class="downloads"><a href="cycles-study/swatch-reference-gn-pile-open-render-2.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-pile-open-render-2.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-pile-open-render-2.json" download>运行 JSON</a><a href="cycles-study/swatch-reference-gn-pile-open-render-2.gn-report.json">节点与测量报告</a><a href="cycles-study/swatch-reference-gn-pile-open-render-2.source.py" download>v3 基线快照</a><a href="cycles-study/swatch-reference-gn-pile-open-render-2.gn-source.py" download>GN2 源快照</a><a href="cycles-study/swatch-reference-gn-pile-open-render-2.log">日志</a></div>
+        <p class="record" aria-live="polite">768 × 768 · 96 样本上限 · 身体毛丝 177,500 · 生成与渲染总计 18.35 秒。</p>
+      </figure>
+      <figure data-study="swatch-reference-gn-nearest-render-3">
+        <div class="figure-title">GN3 · 最近导向毛根映射</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-nearest-render-3.png" aria-label="查看最近根映射 GN3 的原尺寸渲染"><img src="cycles-study/swatch-reference-gn-nearest-render-3.png" alt="GN3 最近导向根映射的 Cycles 渲染，比 GN2 可辨更多离散毛束，但仍细薄，与厚实断续卷绒有差距" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>请检查同名 PNG 文件。</span></p></div>
+        <figcaption>85,000 根表层毛中 59,974 根换了导向归属。每个导向现有 2–63 根子毛，没有空导向；距离 RMS 降至 0.01746。画面多些离散毛束，但仍细薄，未达到参考厚实、断续的卷绒。</figcaption>
+        <div class="downloads"><a href="cycles-study/swatch-reference-gn-nearest-render-3.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-nearest-render-3.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-nearest-render-3.json" download>运行 JSON</a><a href="cycles-study/swatch-reference-gn-nearest-render-3.gn-report.json">节点与测量报告</a><a href="cycles-study/swatch-reference-gn-nearest-render-3.source.py" download>v3 基线快照</a><a href="cycles-study/swatch-reference-gn-nearest-render-3.gn-source.py" download>GN3 源快照</a><a href="cycles-study/swatch-reference-gn-nearest-render-3.log">日志</a></div>
+        <p class="record" aria-live="polite">768 × 768 · 96 样本上限 · 身体毛丝 177,500 · 生成与渲染总计 17.94 秒。</p>
+      </figure>
+    </div>
+    <p class="experiment-conditions">最近映射使用保存的 float32 毛根坐标，以 float64 计算三维欧氏距离；等距时选择最小导向编号。两对象变换均为单位变换；此处不是表面测地距离或 UV 距离。导向曲线仍保留 GN2 原形与原分组长度预算，不按新成员重新生成。rest、导向、半径、底绒与飞毛保持 GN2 原数据；节点参数仍为 Curl 0.70 / 0.006 / 0.85、Clump 0.88 / 0.20 / 0.003。</p>
+    <div class="table-wrap" style="margin-top:22px" tabindex="0" aria-label="可横向滚动的 GN2 与 GN3 毛层几何对照表">
+      <table>
+        <thead><tr><th scope="col">同口径几何测量</th><th scope="col">GN2 · 原映射</th><th scope="col">GN3 · 最近根映射</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">毛根至所属导向根 · 三维距离 RMS</th><td>0.03261</td><td>0.01746</td></tr>
+          <tr><th scope="row">外绒正面毛冠高度中位数</th><td>0.01135</td><td>0.01316</td></tr>
+          <tr><th scope="row">深入椭球超过 0.001 的平均弧长比例</th><td>约 13.37%</td><td>约 7.35%</td></tr>
+          <tr><th scope="row">高于局部底绒 P95 包络的正面平均弧长比例</th><td>约 5.15%</td><td>约 6.39%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">本表 RMS 是逐根到所属导向根的三维距离；它与上一诊断中“每组切向根云 RMS 的中位数 0.03182”是不同统计量。高度仍由解析椭球函数 / 梯度近似，每个 Catmull–Rom 段 8 点采样；局部底绒 P95 是几何包络，不是逐像素遮挡，弧长比例不是像素可见率。几何指标变化与图像外观需分别判断。</p>
+    <p class="table-note" id="gn-validation-3"><a href="cycles-study/hair-nodes-render-validation-v3.json">GN3 独立保存工程检查 ↗</a>：120/120 项通过、14 个输入文件 SHA 前后相同。85,000 根子毛的最近导向编号独立核算正确；除两个映射属性外，保存的 rest、导向、半径、其他属性、底绒、飞毛、非外绒对象、节点树及修改器与 GN2 相同。四个官方组匹配；11 个本地树中的 10 个有弱来源信息，这不等于强链接依赖。</p>
+    <p class="table-note">独立检查使用导向 1,328、控制点 6 沿 X 移动 0.002，所属 42 根子毛全部响应，最大位移约 0.00660835；所属集合以外坐标与半径逐位不变，毛根固定，恢复后求值逐位相同。这与生成时导向 0 的 39 根子毛探针分别记录。GN3 最终求值相对 rest 的实际弧长绝对变化 P95 约 1.08363%、最大约 1.87497%，仍不属于实际弧长守恒；检查通过不代表参考外观达标。</p>
+  </section>
+
+  <section id="undercoat-study" aria-labelledby="undercoat-heading">
+    <div class="section-head">
+      <div><p class="section-number">UNDERCOAT / GN3 → GN4</p><h2 id="undercoat-heading">只缩底绒几何，外绒与 live 节点保持原样</h2></div>
+      <p>GN4 从保存的 GN3 工程出发，仅将 90,000 根底绒各点绕固定毛根缩放至 0.35 倍，横向范围也随之收缩。外绒、导向、毛根、半径、毛丝数量、材质、相机与灯光保持原样。</p>
+    </div>
+    <div class="grid length-grid">
+      <figure data-study="swatch-reference-gn-nearest-render-3">
+        <div class="figure-title">GN3 · 原底绒层</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-nearest-render-3.png" aria-label="查看原底绒 GN3 的原尺寸渲染"><img src="cycles-study/swatch-reference-gn-nearest-render-3.png" alt="GN3 原底绒毛料样片，最近导向根映射，蓝色毛层偏细薄短毡" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>请检查同名 PNG 文件。</span></p></div>
+        <figcaption>沿用最近根映射与 GN2 节点参数。底绒毛冠高度中位数约 0.01455；正面外绒弧长平均约 6.39% 高于局部底绒 P95 几何包络。</figcaption>
+        <div class="downloads"><a href="cycles-study/swatch-reference-gn-nearest-render-3.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-nearest-render-3.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-nearest-render-3.json" download>运行 JSON</a><a href="cycles-study/swatch-reference-gn-nearest-render-3.gn-report.json">节点与测量报告</a><a href="cycles-study/swatch-reference-gn-nearest-render-3.source.py" download>v3 基线快照</a><a href="cycles-study/swatch-reference-gn-nearest-render-3.gn-source.py" download>GN3 源快照</a><a href="cycles-study/swatch-reference-gn-nearest-render-3.log">日志</a></div>
+        <p class="record" aria-live="polite">768 × 768 · 96 样本上限 · 身体毛丝 177,500 · 生成与渲染总计 17.94 秒。</p>
+      </figure>
+      <figure data-study="swatch-reference-gn-undercoat-short-live-4" data-render-receipt="cycles-study/swatch-reference-gn-undercoat-short-live-4.render.json">
+        <div class="figure-title">GN4 · 底绒各点缩放至 0.35</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-undercoat-short-live-4.png" aria-label="查看缩短底绒 GN4 的实际 GPU 渲染"><img src="cycles-study/swatch-reference-gn-undercoat-short-live-4.png" alt="GN4 缩短底绒的实际 Cycles 渲染，小毛束稍更易辨，整体仍薄碎短毡，未见明显大片裸露底材" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>实际 GPU 凭证见下方链接。</span></p></div>
+        <figcaption>毛根固定，底绒几何整体缩放，半径与数量不变。实际 GPU 图中小毛束稍更易辨，未见明显大片裸露底材；整体仍薄碎、偏短毡，没有达到参考厚实、松散的卷束。</figcaption>
+        <div class="downloads"><a href="cycles-study/swatch-reference-gn-undercoat-short-live-4.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-undercoat-short-live-4.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-undercoat-short-live-4.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-undercoat-short-live-4.render.log">GPU 渲染日志</a><a href="cycles-study/swatch-reference-gn-undercoat-short-live-4.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-undercoat-short-live-4.gn-report.json">预检与节点报告</a><a href="cycles-study/swatch-reference-gn-undercoat-short-live-4.source.py" download>GN4 源快照</a><a href="cycles-study/swatch-reference-gn-undercoat-short-live-4.prediction.json">只读几何预测</a><a href="cycles-study/swatch-reference-gn-undercoat-short-live-4.precheck.log">CPU 预检日志</a></div>
+        <p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 11.68 秒；不含生成与 CPU 预检。</p>
+      </figure>
+    </div>
+    <div class="table-wrap" style="margin-top:22px" tabindex="0" aria-label="可横向滚动的 GN3 与 GN4 底绒几何对照表">
+      <table>
+        <thead><tr><th scope="col">几何测量与预测口径</th><th scope="col">GN3 · 原底绒</th><th scope="col">GN4 · 0.35 倍底绒</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">底绒毛冠高度中位数</th><td>0.01455</td><td>0.00493</td></tr>
+          <tr><th scope="row">正面外绒高于局部底绒 P95 包络的平均弧长比例</th><td>约 6.39%</td><td>约 55.15%</td></tr>
+          <tr><th scope="row">正面外绒毛冠低于局部底绒 P95 包络的比例</th><td>约 75.04%</td><td>约 5.87%</td></tr>
+          <tr><th scope="row">外绒深入椭球超过 0.001 的平均弧长比例</th><td>约 7.35%</td><td>约 7.35% · 外绒未改变</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">上表来自几何预测与预检测量，采用解析椭球函数 / 梯度距离近似，每个 Catmull–Rom 段 8 点采样。局部底绒 P95 是几何包络，不是不透明壳层；55.15% 不是像素覆盖或可见率。缩短底绒没有修正外绒入模，外绒的空间形态也未改变。</p>
+    <p class="note">GN4 的 .json 与 .gn-report.json 保留 CPU 预检当时的 <strong>rendered: false</strong>。实际 GPU 渲染另存 .render.json，记录 <strong>rendered: true</strong>、11.6844513 秒及 PNG / .blend / 源 SHA；预检记录没有被改写成渲染成功。此计时与其他样片的“生成与渲染总计”不同，不能直接比较流程速度。</p>
+    <p class="table-note" id="gn-validation-4"><a href="cycles-study/hair-nodes-render-validation-v4.json">GN4 独立保存工程检查 ↗</a>：147/147 项通过、15 个输入文件 SHA 前后相同。独立探针将导向 1,328 的控制点 6 沿 X 移动 0.002，仅其 42 根子毛改变，所属集合外为 0；毛根保持固定，恢复后求值逐位相同。检查覆盖底绒缩放约束与真实渲染凭证，画面仍是候选，不作为参考一致或网页资产的验收结果。</p>
+  </section>
+
+  <section id="restore-study" aria-labelledby="restore-heading">
+    <div class="section-head">
+      <div><p class="section-number">EXTERNAL RESTORE / GN4 → GN5</p><h2 id="restore-heading">只改外接 Restore：Factor 1 → 0</h2></div>
+      <p>GN5 从保存的 GN4 工程出发，仅将外接 Restore Curve Segment Length 的 Factor（Input_3）从 1 改为 0。Clump 内部 Preserve Length 继续开启；0.35 倍底绒、原生导向和其他节点输入保持相同。</p>
+    </div>
+    <div class="grid length-grid">
+      <figure data-study="swatch-reference-gn-undercoat-short-live-4" data-render-receipt="cycles-study/swatch-reference-gn-undercoat-short-live-4.render.json">
+        <div class="figure-title">GN4 · 外接 Restore Factor = 1</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-undercoat-short-live-4.png" aria-label="查看 Restore 开启 GN4 的实际渲染"><img src="cycles-study/swatch-reference-gn-undercoat-short-live-4.png" alt="GN4 外接 Restore 开启的蓝色毛料样片，底绒已经缩至 0.35 倍，外绒仍薄碎" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>实际 GPU 凭证见下方链接。</span></p></div>
+        <figcaption>外接节点按本工程原直丝 rest 的参考控制段长度恢复。全表层毛冠高度中位数约 0.01316596；约 44.5176% 的曲线有采样点深入解析椭球超过 0.001 场景单位。</figcaption>
+        <div class="downloads"><a href="cycles-study/swatch-reference-gn-undercoat-short-live-4.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-undercoat-short-live-4.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-undercoat-short-live-4.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-undercoat-short-live-4.render.log">GPU 渲染日志</a><a href="cycles-study/swatch-reference-gn-undercoat-short-live-4.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-undercoat-short-live-4.gn-report.json">预检与节点报告</a><a href="cycles-study/swatch-reference-gn-undercoat-short-live-4.source.py" download>GN4 源快照</a><a href="cycles-study/swatch-reference-gn-undercoat-short-live-4.prediction.json">只读几何预测</a><a href="cycles-study/swatch-reference-gn-undercoat-short-live-4.precheck.log">CPU 预检日志</a></div>
+        <p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 11.68 秒；不含生成与 CPU 预检。</p>
+      </figure>
+      <figure data-study="swatch-reference-gn-restore-off-live-5" data-render-receipt="cycles-study/swatch-reference-gn-restore-off-live-5.render.json">
+        <div class="figure-title">GN5 · 外接 Restore Factor = 0</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-restore-off-live-5.png" aria-label="查看 Restore 关闭 GN5 的实际渲染"><img src="cycles-study/swatch-reference-gn-restore-off-live-5.png" alt="GN5 外接 Restore 关闭的实际 GPU 渲染，小卷束更独立、表面更起伏，但仍薄碎，没有达到参考厚实卷绒" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>实际 GPU 凭证见下方链接。</span></p></div>
+        <figcaption>实际图中小卷束更独立，表面更起伏，但仍薄碎，尚未达到参考厚实卷绒。关闭外接恢复后，不再声称保留原直丝 rest 的实际弧长。</figcaption>
+        <div class="downloads"><a href="cycles-study/swatch-reference-gn-restore-off-live-5.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.render.log">GPU 渲染日志</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.gn-report.json">预检与节点报告</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.source.py" download>GN5 源快照</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.precheck.log">CPU 预检日志</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.stage-diagnostic.json">逐节点几何诊断</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.stage-source.py" download>诊断源快照</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.stage-provenance.json">诊断来源记录</a></div>
+        <p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 10.19 秒；不含生成与 CPU 预检。</p>
+      </figure>
+    </div>
+    <div class="table-wrap" style="margin-top:22px" tabindex="0" aria-label="可横向滚动的 GN4 与 GN5 外接 Restore 几何对照表">
+      <table>
+        <thead><tr><th scope="col">逐节点与最终几何测量</th><th scope="col">GN4 · Factor 1</th><th scope="col">GN5 · Factor 0</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">全表层毛冠高度中位数 · 阶段诊断</th><td>0.01316596</td><td>0.01616611</td></tr>
+          <tr><th scope="row">有采样点深入椭球超过 0.001 的曲线比例</th><td>约 44.5176%</td><td>约 0.3294%</td></tr>
+          <tr><th scope="row">深入超过 0.001 的平均弧长比例</th><td>约 7.3546%</td><td>约 0.00930%</td></tr>
+          <tr><th scope="row">相对原直丝 rest 的实际弧长绝对变化 P95</th><td>约 1.08363%</td><td>约 41.60948%</td></tr>
+          <tr><th scope="row">相对原直丝 rest 的实际弧长绝对变化最大值</th><td>约 1.87497%</td><td>约 121.80261%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">唯一修改的输入是外接 Restore Factor。原生毛丝、导向、半径及根半径保持固定；下游 Set Hair Curve Profile 的输入保持相同，但曲线参数随求值几何改变，造成约 85.2117% 的表层控制点求值半径发生变化，最大差约 0.0000721943。不能将“原生半径不变”写成“所有求值半径不变”。Clump 内部 Preserve Length 使用其自身的 pre-clump 参考，不等于保留本工程原直丝 rest 的 Catmull–Rom 弧长。</p>
+    <article class="method" style="margin-top:22px">
+      <h3>逐节点诊断与适用范围</h3>
+      <p>对保存的 GN4 做只读阶段求值：Curl 后深陷曲线比例为 0%，Clump 后约 0.3294%，外接 Restore 后约 44.5176%。在这套直丝 rest、导向形态与节点链中，外接参考段长恢复对应明显下陷；GN5 关闭该输入后，结果回到约 0.3294%。这是该工程的对照结论，未推广为官方节点故障。</p>
+      <p><a href="https://docs.blender.org/manual/es/latest/modeling/geometry_nodes/hair/utility/restore_curve_segment_length.html" target="_blank" rel="noopener noreferrer">Blender 官方 Restore 文档 ↗</a>：Factor 0 保持当前曲线，Factor 1 恢复参考段长。高度诊断仍使用解析椭球函数 / 梯度近似及每段 8 点采样；0.001 使用对象 / 场景单位，尚未标定为实物尺寸。比例是几何指标，不是逐像素遮挡或覆盖率。</p>
+      <p>逐节点诊断 JSON 保存原先 CPU 只读会话的实际输出转录；对应测量源 SHA 与当时 Temp 源相同，.stage-source.py 与 .stage-provenance.json 保留来源。此次保留没有重新测量，也没有写入或渲染工程。GN5 的 .json 与 .gn-report.json 仍为冻结预检 rendered: false；实际 GPU 凭证另存 .render.json，rendered: true，计时 10.1932199 秒。</p>
+    </article>
+    <p class="table-note" id="gn-validation-5"><a href="cycles-study/hair-nodes-render-validation-v5.json">GN5 独立保存工程检查 ↗</a>：132/132 项通过、17 个输入文件 SHA 前后相同。实测 869,159 个表层控制点的求值半径改变（约 85.2116667%），最大差 0.0000721943215。独立探针修改导向 1,328 的控制点 6，仅所属 42 根子毛响应，最大位移约 0.00391885，集合外为 0；毛根固定，恢复后求值逐位相同。</p>
+    <p class="table-note">独立 32 阶 Catmull–Rom 积分复核：相对原直丝 rest 的实际弧长绝对变化 P95 为 41.6094808%，最大 121.8026092%。这些漂移是实测限制，132 项工程检查通过不能表述为长度保持通过，也不构成参考外观验收。完整角色主展示保留 v6；GN4 的 147 项报告继续单独保留。</p>
+  </section>
+
+  <section id="bundle-volume-study" aria-labelledby="bundle-volume-heading">
+    <div class="section-head">
+      <div><p class="section-number">TIP SPREAD / GN5 → GN6</p><h2 id="bundle-volume-heading">只改端部散开：0.003 → 0.006 / 0.009</h2></div>
+      <p>从保存的 GN5 出发，只修改 Clump 的 Tip Spread 输入。原生毛丝、导向形态与映射、底绒、飞毛、材质、镜头、灯光及其他节点输入保持相同；此实验没有重新塑造导向。</p>
+    </div>
+    <div class="grid gn-grid">
+      <figure data-study="swatch-reference-gn-restore-off-live-5" data-render-receipt="cycles-study/swatch-reference-gn-restore-off-live-5.render.json">
+        <div class="figure-title">GN5 · Tip Spread = 0.003</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-restore-off-live-5.png" aria-label="查看 GN5 端部散开 0.003 的基线渲染"><img src="cycles-study/swatch-reference-gn-restore-off-live-5.png" alt="GN5 端部散开 0.003 的实际渲染，蓝色小卷束独立但仍薄碎，作为本轮基线" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>实际 GPU 凭证见下方链接。</span></p></div>
+        <figcaption>本轮基线。外接 Restore 已关闭，Clump 内部 Preserve Length 开启；小卷束仍偏薄碎。</figcaption>
+        <div class="downloads"><a href="cycles-study/swatch-reference-gn-restore-off-live-5.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.render.log">GPU 渲染日志</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.gn-report.json">预检与节点报告</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.source.py" download>GN5 源快照</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.precheck.log">CPU 预检日志</a></div>
+        <p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 10.19 秒；不含生成与 CPU 预检。</p>
+      </figure>
+      <figure data-study="swatch-reference-gn-tip-spread-006-live2-6" data-render-receipt="cycles-study/swatch-reference-gn-tip-spread-006-live2-6.render.json">
+        <div class="figure-title">GN6 · Tip Spread = 0.006</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-tip-spread-006-live2-6.png" aria-label="查看 GN6 端部散开 0.006 的实际渲染"><img src="cycles-study/swatch-reference-gn-tip-spread-006-live2-6.png" alt="GN6 端部散开 0.006 的实际 GPU 渲染，与 GN5 仅有小差异，整体仍是薄碎的 C 形卷片" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>实际 GPU 凭证见下方链接。</span></p></div>
+        <figcaption>Tip Spread 增至 0.006。目视变化较小，整体仍偏薄碎的 C 形卷片，尚未形成参考中的厚实卷团。</figcaption>
+        <div class="downloads"><a href="cycles-study/swatch-reference-gn-tip-spread-006-live2-6.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-tip-spread-006-live2-6.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-tip-spread-006-live2-6.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-tip-spread-006-live2-6.render.log">GPU 渲染日志</a><a href="cycles-study/swatch-reference-gn-tip-spread-006-live2-6.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-tip-spread-006-live2-6.gn-report.json">预检与节点报告</a><a href="cycles-study/swatch-reference-gn-tip-spread-006-live2-6.source.py" download>0.006 源快照</a><a href="cycles-study/swatch-reference-gn-tip-spread-006-live2-6.precheck.log">CPU 预检日志</a></div>
+        <p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 7.03 秒；不含生成与 CPU 预检。</p>
+      </figure>
+      <figure data-study="swatch-reference-gn-tip-spread-009-live2-6" data-render-receipt="cycles-study/swatch-reference-gn-tip-spread-009-live2-6.render.json">
+        <div class="figure-title">GN6 · Tip Spread = 0.009</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-tip-spread-009-live2-6.png" aria-label="查看 GN6 端部散开 0.009 的实际渲染"><img src="cycles-study/swatch-reference-gn-tip-spread-009-live2-6.png" alt="GN6 端部散开 0.009 的实际 GPU 渲染，末端稍松且略凌乱，卷片仍薄碎，尚未达到参考厚实卷团" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>实际 GPU 凭证见下方链接。</span></p></div>
+        <figcaption>Tip Spread 增至 0.009。末端稍松、略显凌乱；没有达到参考的厚实松散卷团，也不作为新的完整角色主图。</figcaption>
+        <div class="downloads"><a href="cycles-study/swatch-reference-gn-tip-spread-009-live2-6.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-tip-spread-009-live2-6.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-tip-spread-009-live2-6.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-tip-spread-009-live2-6.render.log">GPU 渲染日志</a><a href="cycles-study/swatch-reference-gn-tip-spread-009-live2-6.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-tip-spread-009-live2-6.gn-report.json">预检与节点报告</a><a href="cycles-study/swatch-reference-gn-tip-spread-009-live2-6.source.py" download>0.009 源快照</a><a href="cycles-study/swatch-reference-gn-tip-spread-009-live2-6.precheck.log">CPU 预检日志</a></div>
+        <p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 14.24 秒；不含生成与 CPU 预检。</p>
+      </figure>
+    </div>
+    <p class="experiment-conditions">同条件：768 × 768、96 样本上限，85,000 条外绒 + 90,000 条底绒 + 2,500 条飞毛，2,657 条 live 导向；Clump Factor 0.88、Shape 0.20，Curl Factor 0.70 / Radius 0.006 / Frequency 0.85，底绒 0.35 倍，外接 Restore Factor 0。毛根和原生半径保持固定；求值后的毛丝位置与半径可能随这一输入变化。</p>
+    <div class="table-wrap" style="margin-top:22px" tabindex="0" aria-label="可横向滚动的 GN5 与两个 Tip Spread 候选几何对照表">
+      <table>
+        <thead><tr><th scope="col">实测结构指标</th><th scope="col">GN5 · 0.003</th><th scope="col">GN6 · 0.006</th><th scope="col">GN6 · 0.009</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">唯一变化的 Tip Spread 输入</th><td>0.003</td><td>0.006</td><td>0.009</td></tr>
+          <tr><th scope="row">控制点 9 法平面 minor / major 标准差比 · 中位数</th><td>0.551912</td><td>0.670692</td><td>0.736117</td></tr>
+          <tr><th scope="row">控制点 9 法平面 minor 标准差 · 中位数 / 场景单位</th><td>0.00214678</td><td>0.00283832</td><td>0.00359930</td></tr>
+          <tr><th scope="row">控制点 3 法平面 minor / major 标准差比 · 中位数</th><td>0.592009</td><td>0.624274</td><td>0.661319</td></tr>
+          <tr><th scope="row">控制点 6 法平面 minor / major 标准差比 · 中位数</th><td>0.537072</td><td>0.587049</td><td>0.623786</td></tr>
+          <tr><th scope="row">全表层毛冠高度中位数 · 场景单位</th><td>0.01616611</td><td>0.01610562</td><td>0.01601917</td></tr>
+          <tr><th scope="row">有采样点深入椭球超过 0.001 的曲线比例</th><td>约 0.3294%</td><td>约 0.6612%</td><td>约 1.8388%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">法平面指标由独立验证器读取三个保存工程，在相同控制点位置将子毛中心投影到原生导向中央差分切线的法平面，再计算协方差轴的标准差。纳入至少 6 根子毛的 2,652 组、84,982 条子毛，排除 5 组中的 18 条子毛。它是中心线分布的几何近似，不包含每根毛丝半径，不能当作实体卷束体积、光学覆盖率或外观验收。高度与深入比例来自各自预检 / 阶段诊断，仍使用解析椭球函数 / 梯度近似及每段 8 点采样；单位尚未标定为毫米。</p>
+    <details><summary>生成器的三维中心云测量：与法平面指标分开看</summary>
+      <div class="table-wrap" style="margin-top:16px" tabindex="0" aria-label="可横向滚动的三维中心云测量表"><table><thead><tr><th scope="col">中心云最小 / 最大标准差比 · 中位数</th><th scope="col">GN5 · 0.003</th><th scope="col">GN6 · 0.006</th><th scope="col">GN6 · 0.009</th></tr></thead><tbody><tr><th scope="row">控制点 5</th><td>0.22645</td><td>0.32523</td><td>0.40778</td></tr><tr><th scope="row">控制点 8</th><td>0.31282</td><td>0.43224</td><td>0.51628</td></tr><tr><th scope="row">控制点 11</th><td>0.27058</td><td>0.42104</td><td>0.50707</td></tr></tbody></table></div>
+      <p class="table-note">此表在对应控制点位置计算三维子毛中心协方差，纳入至少 8 根子毛的 2,644 组，覆盖 99.92% 子毛；基线来自保留源的 CPU 只读重放，GN6 数据来自各自预检报告。它包含三维中心位置的分布，没有投影到导向法平面，不能与上表的控制点 3 / 6 / 9 法平面比值混用，也不是实体体积。</p>
+    </details>
+    <article class="method" style="margin-top:22px">
+      <h3>端部空间位移不能代替导向造型</h3>
+      <p><a href="https://docs.blender.org/manual/en/5.2/modeling/geometry_nodes/hair/guides/clump_hair_curves.html" target="_blank" rel="noopener noreferrer">Blender 官方 Clump 文档 ↗</a>说明 Factor 控制向导向收紧的整体强度，Tip Spread 在毛尖位置加入随机变化。本工程中它是固定 Curve ID 随机向量在导向坐标系内的空间位移幅度，发生在内部长度恢复之前；0.006 / 0.009 使用场景坐标单位，不是百分比或无量纲的毛根偏移比。</p>
+      <p>本轮强 Clump 与原有薄导向继续保持。只读诊断中，导向位移的最小 / 最大奇异值比中位数约 0.01387，中间 / 最大比约 0.27318，仍接近扁平造型。改变 Tip Spread 没有把这些导向重新塑造成厚实体积；两张真实渲染整体仍薄碎，不能把中心云比值变化写成大幅视觉改善。</p>
+      <p>机制记录是使用保留的原测量源进行一次不保存、不渲染的 CPU 重放，并保留真实 stdout；输入 SHA 前后一致，内存输入与求值恢复逐位相同。它还单独试探了 Clump Factor 与 Curl Radius，这些试探没有作为本轮渲染候选。机制重放不等于对保存的 GN6 工程进行独立验证。</p>
+      <div class="downloads"><a href="cycles-study/gn-tip-spread-mechanism-1.result.json">机制重放结果</a><a href="cycles-study/gn-tip-spread-mechanism-1.source.py" download>机制测量源快照</a><a href="cycles-study/gn-tip-spread-mechanism-1.raw.log">真实 CPU stdout</a><a href="cycles-study/gn-tip-spread-mechanism-1.provenance.json">机制来源与 SHA</a></div>
+    </article>
+    <p class="note">两张成功候选使用 live2-6 文件名，各自 .json 与 .gn-report.json 保留 CPU 预检 rendered: false；实际 .render.json 为 rendered: true，记录 7.0300123 秒 / 14.2369889 秒的 GPU 渲染计时。报告中的 candidate_parameters 保留基线 Tip Spread 0.003，实际保存输入请读 tip_spread_change.after。完整角色主展示继续保留 v6；本节是静态离线毛料实验。</p>
+    <article class="method" style="margin-top:22px">
+      <h3>渲染依赖图确实采用了变化后的毛层</h3>
+      <p>CPU 只读诊断用自定义 RenderEngine 取得实际 RENDER 模式依赖图：三份保存工程的 85,000 条外绒位置与半径在 VIEWPORT / RENDER 两种模式下分别逐位相同，外绒修改器在渲染中启用，辅助导向不直接显示。相对 GN5，0.006 / 0.009 的 91.6667% 求值控制点位置改变，最大位移分别约 0.00609729 / 0.00980295；毛根逐位相同，求值半径变化比例分别约 85.08196% / 85.13618%。</p>
+      <p>这段记录保留原 CPU 会话 stdout 的逐字转录，不是再次测量，也没有调用 Cycles / GPU、保存新图或工程；初始读取工程的 stdout 不在转录范围内。它证明渲染依赖图求值与开关一致，不是追踪 Cycles 内部毛丝同步或像素遮挡。仅凭图像差异小，不能认定节点没有参与渲染。</p>
+      <div class="downloads"><a href="cycles-study/gn-tip-spread-render-depsgraph-1.result.json">渲染依赖图测量</a><a href="cycles-study/gn-tip-spread-render-depsgraph-1.source.py" download>依赖图测量源</a><a href="cycles-study/gn-tip-spread-render-depsgraph-1.raw.log">原 CPU stdout 转录</a><a href="cycles-study/gn-tip-spread-render-depsgraph-1.provenance.json">测量来源与边界</a></div>
+    </article>
+    <p class="table-note" id="gn-validation-6"><a href="cycles-study/hair-nodes-render-validation-v6.json">GN6 独立保存工程检查 ↗</a>：130/130 项通过、22 个输入文件 SHA 前后相同；验证两个成功 live2-6 候选的真实渲染凭证、唯一输入变化、固定的原生数据与其他场景条件。独立探针将导向 1,328 的控制点 6 沿 X 移动 0.002，两工程均只影响所属 42 条子毛，最大位移分别约 0.00367626 / 0.00355588，集合外为 0；毛根保持固定，恢复后求值逐位相同。</p>
+    <p class="table-note">130 项工程检查不确立实体体积、样条弧长保持或视觉达标。Tip Spread 输入、三维中心云、法平面中心线分布与真实图像分别提供不同证据；本轮两张样片都仍未达到参考厚实卷团。</p>
+  </section>
+
+  <section id="structural-groom-study" aria-labelledby="structural-groom-heading">
+    <div class="section-head">
+      <div><p class="section-number">STRUCTURAL GROOM / GN5 → GN7</p><h2 id="structural-groom-heading">重塑导向：让小卷束立起来</h2></div>
+      <p>保留 GN5 的节点、材质与拍摄条件，重新制作导向的空间回返造型。两张 GN7 样片使用同一公式，只比较侧向幅度系数 0.08 与 0.16。</p>
+    </div>
+    <div class="grid gn-grid">
+      <figure data-structural-case="swatch-reference-gn-restore-off-live-5">
+        <div class="figure-title">GN5 · 原导向控制</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-restore-off-live-5.png" aria-label="查看 GN7 导向造型对照中的 GN5 基线原图"><img src="cycles-study/swatch-reference-gn-restore-off-live-5.png" alt="GN5 原导向毛料控制图，蓝色毛束相对扁平，薄卷片感较明显" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>展开下方查看实际 GPU 凭证。</span></p></div>
+        <figcaption>同条件控制图，仍可见薄卷片感。Tip Spread 保持 0.003。</figcaption>
+      </figure>
+      <figure data-structural-case="swatch-reference-gn-crown-008-live-7">
+        <div class="figure-title">GN7 · 侧向幅度系数 0.08</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-crown-008-live-7.png" aria-label="查看 GN7 导向侧向幅度系数 0.08 的实际渲染"><img src="cycles-study/swatch-reference-gn-crown-008-live-7.png" alt="GN7 幅度系数 0.08 的实际蓝色毛料渲染，毛束立起，边缘小团起伏更明显，下半仍有细亮丝与密暗毛层" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>展开下方查看实际 GPU 凭证。</span></p></div>
+        <figcaption>毛束立起，边缘小团起伏更明显，薄卷片感减少；下半仍细亮、密暗。</figcaption>
+      </figure>
+      <figure data-structural-case="swatch-reference-gn-crown-016-live-7">
+        <div class="figure-title">GN7 · 侧向幅度系数 0.16</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-crown-016-live-7.png" aria-label="查看 GN7 导向侧向幅度系数 0.16 的实际渲染"><img src="cycles-study/swatch-reference-gn-crown-016-live-7.png" alt="GN7 幅度系数 0.16 的实际蓝色毛料渲染，与 0.08 图差别小，没有明确额外视觉收益，尚未达到参考厚实柔软短卷绒" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>展开下方查看实际 GPU 凭证。</span></p></div>
+        <figcaption>与 0.08 的差别较小，幅度加倍没有带来明确的额外视觉收益。</figcaption>
+      </figure>
+    </div>
+    <p class="table-note">先看真实图：两张候选均比 GN5 更立起，仍未达到参考的厚实、柔软短卷绒。参考是完整角色截图，这里是球状毛料小样，形状与视角不同，只评毛料；不据此验收角色比例、参考匹配或实体卷束体积。完整角色主图继续保留 v6。</p>
+    <details id="structural-groom-evidence">
+      <summary>展开真实渲染凭证、全部工程与源码、测量及检查</summary>
+      <p class="table-note">三图均为 768 × 768、96 样本上限。两张 GN7 仅重新写入 2,657 条导向的非根 position，根位置逐位保持；历史 rest_position、原生半径、子毛映射、原生外绒、底绒 / 飞毛、其他场景、GN 节点与 Tip Spread 0.003 固定。求值后的外绒位置与半径会随导向改变。</p>
+      <div class="settings">
+        <article class="setting" data-study="swatch-reference-gn-restore-off-live-5" data-render-receipt="cycles-study/swatch-reference-gn-restore-off-live-5.render.json">
+          <h3>GN5 · 控制资产</h3>
+          <p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 10.19 秒；不含生成与 CPU 预检。</p>
+          <div class="downloads"><a href="cycles-study/swatch-reference-gn-restore-off-live-5.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.render.log">GPU 日志</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.gn-report.json">预检与节点报告</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.source.py" download>GN5 源快照</a><a href="cycles-study/swatch-reference-gn-restore-off-live-5.precheck.log">CPU 预检日志</a></div>
+        </article>
+        <article class="setting" data-study="swatch-reference-gn-crown-008-live-7" data-render-receipt="cycles-study/swatch-reference-gn-crown-008-live-7.render.json">
+          <h3>GN7 · 幅度系数 0.08</h3>
+          <p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 15.50 秒；不含生成与 CPU 预检。</p>
+          <div class="downloads"><a href="cycles-study/swatch-reference-gn-crown-008-live-7.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-crown-008-live-7.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-crown-008-live-7.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-crown-008-live-7.render.log">GPU 日志</a><a href="cycles-study/swatch-reference-gn-crown-008-live-7.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-crown-008-live-7.gn-report.json">预检与节点报告</a><a href="cycles-study/swatch-reference-gn-crown-008-live-7.source.py" download>0.08 源快照</a><a href="cycles-study/swatch-reference-gn-crown-008-live-7.precheck.log">CPU 预检日志</a></div>
+        </article>
+        <article class="setting" data-study="swatch-reference-gn-crown-016-live-7" data-render-receipt="cycles-study/swatch-reference-gn-crown-016-live-7.render.json">
+          <h3>GN7 · 幅度系数 0.16</h3>
+          <p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 14.89 秒；不含生成与 CPU 预检。</p>
+          <div class="downloads"><a href="cycles-study/swatch-reference-gn-crown-016-live-7.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-crown-016-live-7.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-crown-016-live-7.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-crown-016-live-7.render.log">GPU 日志</a><a href="cycles-study/swatch-reference-gn-crown-016-live-7.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-crown-016-live-7.gn-report.json">预检与节点报告</a><a href="cycles-study/swatch-reference-gn-crown-016-live-7.source.py" download>0.16 源快照</a><a href="cycles-study/swatch-reference-gn-crown-016-live-7.precheck.log">CPU 预检日志</a></div>
+        </article>
+      </div>
+      <p class="table-note">两份 .json 与 .gn-report.json 保留 CPU 预检 rendered: false；真实 GPU .render.json 为 rendered: true，渲染计时分别 15.5024643 秒 / 14.8938056 秒，不含生成与 CPU 预检。两张 GN7 使用同一冻结源快照，SHA 为 <code>ce8d69473c06f0365b75fe3c4e3de3b87988720aeacd30757e2a183b10d22a60</code>；实际幅度读 guide_change.amplitude。</p>
+      <div class="table-wrap" style="margin-top:18px" tabindex="0" aria-label="可横向滚动的 GN7 导向造型测量表"><table>
+        <thead><tr><th scope="col">几何测量 · 不是视觉分数</th><th scope="col">GN5</th><th scope="col">GN7 · 0.08</th><th scope="col">GN7 · 0.16</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">外绒毛冠高度中位数 · 场景单位</th><td>0.01616611</td><td>0.02108049</td><td>0.02068123</td></tr>
+          <tr><th scope="row">有采样点深入椭球超过 0.001 的外绒曲线比例</th><td>约 0.3294%</td><td>约 0.06118%</td><td>约 0.03059%</td></tr>
+          <tr><th scope="row">导向实际弧长 / 旧导向弧长 · 中位数</th><td>1.00000</td><td>1.05414</td><td>1.15587</td></tr>
+          <tr><th scope="row">控制点 9 自身导向法平面 minor / major 标准差比 · 中位数</th><td>0.551912</td><td>0.601444</td><td>0.580768</td></tr>
+          <tr><th scope="row">控制点 9 冻结 GN5 法平面 minor / major 标准差比 · 中位数</th><td>0.551912</td><td>0.598762</td><td>0.574660</td></tr>
+          <tr><th scope="row">相对历史原生 rest 的外绒实际弧长绝对漂移 P95</th><td>约 41.60948%</td><td>约 44.00545%</td><td>约 45.07706%</td></tr>
+          <tr><th scope="row">相对历史原生 rest 的外绒实际弧长绝对漂移最大值</th><td>约 121.80261%</td><td>约 122.57927%</td><td>约 125.25113%</td></tr>
+        </tbody>
+      </table></div>
+      <p class="table-note">高度采用解析椭球函数 / 梯度近似及逐段采样，不是逐像素覆盖率或接触检测；0.001 是对象 / 场景单位，尚未标定为毫米。导向与外绒弧长使用保存的 float32 控制点、重复端点、32 阶 Catmull–Rom 积分。新形态没有输出弧长归一，历史 rest_position 未改也不意味着长度约束成立；不能称缩短、保长或实体体积通过。</p>
+      <p class="table-note">法平面中心线分布由独立验证器测量。自身导向帧会随造型变化，冻结 GN5 帧另作对照；它们是不同坐标系的几何近似，不包含毛丝半径，不能将非平面直接等同于更圆的实体卷团或视觉改善。</p>
+      <article class="method" style="margin-top:18px">
+        <h3>项目作者的导向造型与方法参考</h3>
+        <p>先由旧导向实际弧长 L 建立尺度，在根部椭球法向 n 与切向 e₁ / e₂ 构成的局部坐标系中制作立起、侧向摆动、回返的三种原型，按导向编号轮换。0.08 / 0.16 是侧向项相对 L 的幅度系数，并非场景单位 0.08 / 0.16 的直接平移。</p>
+        <pre>g(t) = root + e₁ · 0.10L(1 − cos(1.55πt))
+              + e₂ · amplitude · L · sin(fπt)sin(πt)
+              + n · L(0.58sin(θπt) + 0.12t)
+t = 12 个等距控制点；(θ, f) 三原型依导向编号 modulo 3 轮换。
+写为 float32 后恢复毛根原始位；历史 rest_position 保持 GN5。</pre>
+        <p><a href="https://docs.blender.org/manual/en/5.2/modeling/geometry_nodes/hair/guides/curl_hair_curves.html" target="_blank" rel="noopener noreferrer">Blender 5.2 Curl Hair Curves ↗</a>与 <a href="https://www.sidefx.com/docs/houdini/nodes/sop/hairclump.html" target="_blank" rel="noopener noreferrer">SideFX Hair Clump ↗</a>提供卷曲与导向成束的方法参考。本页这套导向公式属于项目作者制作，不是官方示例、论文算法或 Houdini 工程的完整复现，也没有实现毛丝接触或实体体积约束。</p>
+      </article>
+      <p class="table-note" id="gn-validation-7"><a href="cycles-study/hair-nodes-render-validation-v7.json">GN7 独立保存工程检查与完整测量 ↗</a>：157/157 项通过、26 个输入文件 SHA 前后相同。只读 CPU 检查没有渲染或保存输入；全部 2,657 条导向公式逐位重建正确，固定的原生数据、历史 rest、映射、根、半径、节点及其他场景条件与二次重新载入、真实 GPU 凭证均通过检查。</p>
+      <p class="table-note">独立探针将导向 1,328 的控制点 6 沿 X 移动 0.002，两工程都只影响实际映射的 42 条子毛；集合外与毛根逐位不变，恢复后求值逐位相同。157 项工程检查不构成长度保持、实体体积或外观验收；0.16 没有明确额外视觉收益，两张真实样片仍未达到参考厚实柔软短卷绒。</p>
+    </details>
+  </section>
+
+  <section id="layer-source-study" aria-labelledby="layer-source-heading">
+    <div class="section-head">
+      <div><p class="section-number">LAYER DIAGNOSTICS / GN7 → GN8</p><h2 id="layer-source-heading">长亮丝来自哪里：先比较完整毛层与关闭飞毛</h2></div>
+      <p>顶部与右侧明显的长亮丝在飞毛层单独渲染中可见。关闭飞毛后画面更干净，但外绒仍有尖簇、扁扇与下方短钩，圆润短卷团尚未完成。</p>
+    </div>
+    <div class="grid length-grid" id="layer-control-pair">
+      <figure data-layer-case="swatch-reference-gn-crown-008-live-7">
+        <div class="figure-title">GN7 · 完整毛层控制</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-crown-008-live-7.png" aria-label="查看 GN8 分层观察的完整 GN7 0.08 控制图"><img src="cycles-study/swatch-reference-gn-crown-008-live-7.png" alt="完整 GN7 0.08 毛料控制图，外绒底绒和飞毛全部渲染，顶部右侧有长亮丝" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>展开下方查看实际 GPU 凭证。</span></p></div>
+        <figcaption>外绒、底绒与飞毛都参与渲染。边缘小团起伏已经出现，顶部与右侧仍有伸出的长亮丝。</figcaption>
+      </figure>
+      <figure data-layer-case="swatch-reference-gn-no-flyaway-8">
+        <div class="figure-title">GN8 · 关闭飞毛</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-no-flyaway-8.png" aria-label="查看 GN8 关闭飞毛后的实际渲染"><img src="cycles-study/swatch-reference-gn-no-flyaway-8.png" alt="GN8 关闭飞毛后的实际毛料渲染，顶部右侧长亮丝减少，边缘更干净，毛束仍尖细而不够圆润" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>展开下方查看实际 GPU 凭证。</span></p></div>
+        <figcaption>长亮丝减少、轮廓更干净；剩下的外绒形态仍偏尖细，不能把关闭飞毛等同于参考毛料完成。</figcaption>
+      </figure>
+    </div>
+    <p class="table-note">分层图用于定位来源。各图渲染的毛数不同，遮挡与阴影也随显示层变化，不能作为同密度的公平质量 A/B，也不能将单层图像直接相加还原完整图。底材与地面始终保留；球状样片只评毛料，参考角色的形状与视角不同。</p>
+    <details id="layer-single-diagnostics">
+      <summary>展开三个单层诊断：外绒、底绒与飞毛</summary>
+      <div class="grid length-grid" style="margin-top:18px">
+        <figure data-study="swatch-reference-gn-coat-only-8" data-render-receipt="cycles-study/swatch-reference-gn-coat-only-8.render.json">
+          <div class="figure-title">只渲染外绒 · coat</div>
+          <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-coat-only-8.png" aria-label="查看 GN8 只渲染外绒的诊断原图"><img src="cycles-study/swatch-reference-gn-coat-only-8.png" alt="GN8 外绒单层渲染，密集尖簇与扁扇构成毛料表面，下方有短钩尖，底材仍保留" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>实际 GPU 凭证见下方链接。</span></p></div>
+          <figcaption>85,000 条外绒。密集尖簇与扁扇仍存在，下半可见短钩尖；这些形态并非仅由飞毛造成。</figcaption>
+          <p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 6.37 秒；不含生成与 CPU 预检。</p>
+          <div class="downloads"><a href="cycles-study/swatch-reference-gn-coat-only-8.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-coat-only-8.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-coat-only-8.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-coat-only-8.render.log">GPU 日志</a><a href="cycles-study/swatch-reference-gn-coat-only-8.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-coat-only-8.gn-report.json">完整场景预检报告</a><a href="cycles-study/swatch-reference-gn-coat-only-8.source.py" download>外绒诊断源快照</a><a href="cycles-study/swatch-reference-gn-coat-only-8.precheck.log">CPU 预检日志</a></div>
+        </figure>
+        <figure data-study="swatch-reference-gn-undercoat-only-8" data-render-receipt="cycles-study/swatch-reference-gn-undercoat-only-8.render.json">
+          <div class="figure-title">只渲染底绒 · undercoat</div>
+          <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-undercoat-only-8.png" aria-label="查看 GN8 只渲染底绒的诊断原图"><img src="cycles-study/swatch-reference-gn-undercoat-only-8.png" alt="GN8 底绒单层实际渲染，整体是平滑细密的短绒底球，没有外绒的小团起伏" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>实际 GPU 凭证见下方链接。</span></p></div>
+          <figcaption>90,000 条底绒。整体呈平滑短绒底球；没有外绒那样的小团起伏。</figcaption>
+          <p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 3.88 秒；不含生成与 CPU 预检。</p>
+          <div class="downloads"><a href="cycles-study/swatch-reference-gn-undercoat-only-8.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-undercoat-only-8.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-undercoat-only-8.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-undercoat-only-8.render.log">GPU 日志</a><a href="cycles-study/swatch-reference-gn-undercoat-only-8.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-undercoat-only-8.gn-report.json">完整场景预检报告</a><a href="cycles-study/swatch-reference-gn-undercoat-only-8.source.py" download>底绒诊断源快照</a><a href="cycles-study/swatch-reference-gn-undercoat-only-8.precheck.log">CPU 预检日志</a></div>
+        </figure>
+        <figure data-study="swatch-reference-gn-flyaway-only-8" data-render-receipt="cycles-study/swatch-reference-gn-flyaway-only-8.render.json">
+          <div class="figure-title">只渲染飞毛 · flyaway</div>
+          <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-flyaway-only-8.png" aria-label="查看 GN8 只渲染飞毛的诊断原图"><img src="cycles-study/swatch-reference-gn-flyaway-only-8.png" alt="GN8 飞毛单层实际渲染，保留的底材球上可见稀疏亮丝，顶部与右侧长亮丝明显" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>实际 GPU 凭证见下方链接。</span></p></div>
+          <figcaption>2,500 条飞毛。顶部与右侧明显伸出的长亮丝可见；中间的球体是保留的底材。</figcaption>
+          <p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 3.79 秒；不含生成与 CPU 预检。</p>
+          <div class="downloads"><a href="cycles-study/swatch-reference-gn-flyaway-only-8.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-flyaway-only-8.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-flyaway-only-8.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-flyaway-only-8.render.log">GPU 日志</a><a href="cycles-study/swatch-reference-gn-flyaway-only-8.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-flyaway-only-8.gn-report.json">完整场景预检报告</a><a href="cycles-study/swatch-reference-gn-flyaway-only-8.source.py" download>飞毛诊断源快照</a><a href="cycles-study/swatch-reference-gn-flyaway-only-8.precheck.log">CPU 预检日志</a></div>
+        </figure>
+      </div>
+    </details>
+    <details id="layer-source-evidence">
+      <summary>展开完整控制与关闭飞毛的资产、渲染条件和检查口径</summary>
+      <div class="grid length-grid" style="margin-top:18px">
+        <article class="setting" data-study="swatch-reference-gn-crown-008-live-7" data-render-receipt="cycles-study/swatch-reference-gn-crown-008-live-7.render.json">
+          <h3>完整控制 · 外绒 + 底绒 + 飞毛</h3><p>177,500 条毛丝。使用已经保存的 GN7 幅度系数 0.08 工程。</p>
+          <p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 15.50 秒；不含生成与 CPU 预检。</p>
+          <div class="downloads"><a href="cycles-study/swatch-reference-gn-crown-008-live-7.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-crown-008-live-7.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-crown-008-live-7.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-crown-008-live-7.render.log">GPU 日志</a><a href="cycles-study/swatch-reference-gn-crown-008-live-7.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-crown-008-live-7.gn-report.json">GN7 预检报告</a><a href="cycles-study/swatch-reference-gn-crown-008-live-7.source.py" download>GN7 源快照</a><a href="cycles-study/swatch-reference-gn-crown-008-live-7.precheck.log">CPU 预检日志</a></div>
+        </article>
+        <article class="setting" data-study="swatch-reference-gn-no-flyaway-8" data-render-receipt="cycles-study/swatch-reference-gn-no-flyaway-8.render.json">
+          <h3>关闭飞毛 · 外绒 + 底绒</h3><p>175,000 条毛丝。只将飞毛对象的 hide_render 开启。</p>
+          <p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 6.26 秒；不含生成与 CPU 预检。</p>
+          <div class="downloads"><a href="cycles-study/swatch-reference-gn-no-flyaway-8.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-no-flyaway-8.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-no-flyaway-8.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-no-flyaway-8.render.log">GPU 日志</a><a href="cycles-study/swatch-reference-gn-no-flyaway-8.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-no-flyaway-8.gn-report.json">完整场景预检报告</a><a href="cycles-study/swatch-reference-gn-no-flyaway-8.source.py" download>关闭飞毛源快照</a><a href="cycles-study/swatch-reference-gn-no-flyaway-8.precheck.log">CPU 预检日志</a></div>
+        </article>
+      </div>
+      <p class="table-note">GN8 只改变三种毛层对象的 hide_render。保存的毛丝几何与属性、半径 profile、材质、GN、灯光、镜头、底材与地面保持控制工程条件。各图均为 Blender 5.2.2 LTS / Cycles、768 × 768、96 样本上限，OptiX 使用 NVIDIA GeForce RTX 4070 Laptop GPU；渲染时间不含生成和 CPU 预检，也不用于比较制作流程速度。</p>
+      <p class="table-note">四份 .json / .gn-report.json 保留 CPU 预检 rendered: false，真实 .render.json 另记 rendered: true。四案例使用同一冻结源，SHA 为 <code>0c8c14cc9d13c9d436f00f5b2c0d14b3b8acc800a3ffc007325d22aa4fad3dd0</code>；层的显示状态与原生毛数请读 layer_change。预检与渲染凭证分别保留，没有将预检改写成实际渲染。</p>
+      <p class="table-note" id="gn-validation-8"><a href="cycles-study/hair-layer-validation-v8.json">GN8 独立分层工程检查 ↗</a>：132/132 项通过，42 个输入文件 SHA 前后相同；四工程二次重新载入，三层 hide_render 是唯一变化，真实 GPU 凭证与 PNG 解码检查通过。工程检查支持分层条件成立，不把不同毛数的单层图当作公平质量 A/B，也不构成参考外观验收。</p>
+    </details>
+  </section>
+
+  <section id="short-bundle-study" aria-labelledby="short-bundle-heading">
+    <div class="section-head">
+      <div><p class="section-number">HIERARCHICAL GROOM / GN8 → GN9</p><h2 id="short-bundle-heading">两级导向成束：真实图中的变化仍小</h2></div>
+      <p>从关闭飞毛的 GN8 出发，加入父级导向预处理。两张实际候选与控制图差异都小，仍偏密集短尖、扇状与短钩，没有明显形成厚圆的柔软卷团。</p>
+    </div>
+    <div class="grid gn-grid">
+      <figure data-bundle-case="swatch-reference-gn-no-flyaway-8">
+        <div class="figure-title">GN8 · 关闭飞毛控制</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-no-flyaway-8.png" aria-label="查看 GN9 两级成束的 GN8 关闭飞毛控制原图"><img src="cycles-study/swatch-reference-gn-no-flyaway-8.png" alt="GN8 关闭飞毛控制图，仍可见密集尖簇扇状与短钩，作为 GN9 两级成束对照" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>展开下方查看实际 GPU 凭证。</span></p></div>
+        <figcaption>没有新增父级成束预处理。长飞毛已关闭，剩余毛束形态仍偏尖细。</figcaption>
+      </figure>
+      <figure data-bundle-case="swatch-reference-gn-hierarchy-soft-live-9">
+        <div class="figure-title">GN9 soft · 父级强度 0.40</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-hierarchy-soft-live-9.png" aria-label="查看 GN9 soft 父级成束强度 0.40 的实际渲染"><img src="cycles-study/swatch-reference-gn-hierarchy-soft-live-9.png" alt="GN9 soft 0.40 的实际渲染，与关闭飞毛控制差别很小，仍是密集短尖扇状和短钩，没有明显厚圆卷团" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>展开下方查看实际 GPU 凭证。</span></p></div>
+        <figcaption>变化很小，仍呈短尖、扇状与短钩；soft 是候选标签，不代表已经获得柔软外观。</figcaption>
+      </figure>
+      <figure data-bundle-case="swatch-reference-gn-hierarchy-firm-live-9">
+        <div class="figure-title">GN9 firm · 父级强度 0.65</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-hierarchy-firm-live-9.png" aria-label="查看 GN9 firm 父级成束强度 0.65 的实际渲染"><img src="cycles-study/swatch-reference-gn-hierarchy-firm-live-9.png" alt="GN9 firm 0.65 的实际渲染，与 soft 候选近似，仍偏密集尖细，尚未达到参考厚圆柔软短卷绒" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>展开下方查看实际 GPU 凭证。</span></p></div>
+        <figcaption>与 soft 图近似，父级强度提高没有带来明确的额外视觉收益。</figcaption>
+      </figure>
+    </div>
+    <p class="table-note">三图同为 175,000 条可见毛丝，飞毛的 2,500 条原生曲线仍保留在工程中，只隐藏渲染。球状小样与参考角色不同形、不同视角，只用于评毛料；两候选均未达到参考，完整角色主图继续保留 v6。</p>
+    <p class="note">这轮没有获得明确的厚圆卷团。只读几何诊断显示，0.72 倍 XYZ 缩放同时降低了导向长度与毛冠；最终成束阶段的毛冠中位数比控制约低 21% / 24%。下一步拟尝试保留毛冠的紧凑三维回卷，尚无新候选图或效果结论。</p>
+    <details id="short-bundle-evidence">
+      <summary>展开两级结构、真实工程与源码、渲染凭证和检查</summary>
+      <p class="table-note">GN8 → GN9 共同改变了两件事：非父级导向绕固定毛根缩放为旧形状的 0.72 倍，并加入 live 的父级 Clump 预处理。这是组合结构候选，不能将与 GN8 的差异单独归因于成束强度；soft 与 firm 之间才仅有父级强度 0.40 / 0.65 的变化。</p>
+      <div class="settings">
+        <article class="setting" data-study="swatch-reference-gn-no-flyaway-8" data-render-receipt="cycles-study/swatch-reference-gn-no-flyaway-8.render.json">
+          <h3>GN8 · noFA 控制</h3><p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 6.26 秒；不含生成与 CPU 预检。</p>
+          <div class="downloads"><a href="cycles-study/swatch-reference-gn-no-flyaway-8.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-no-flyaway-8.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-no-flyaway-8.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-no-flyaway-8.render.log">GPU 日志</a><a href="cycles-study/swatch-reference-gn-no-flyaway-8.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-no-flyaway-8.gn-report.json">完整场景预检报告</a><a href="cycles-study/swatch-reference-gn-no-flyaway-8.source.py" download>GN8 源快照</a><a href="cycles-study/swatch-reference-gn-no-flyaway-8.precheck.log">CPU 预检日志</a></div>
+        </article>
+        <article class="setting" data-study="swatch-reference-gn-hierarchy-soft-live-9" data-render-receipt="cycles-study/swatch-reference-gn-hierarchy-soft-live-9.render.json">
+          <h3>GN9 soft · 0.40</h3><p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 8.94 秒；不含生成与 CPU 预检。</p>
+          <div class="downloads"><a href="cycles-study/swatch-reference-gn-hierarchy-soft-live-9.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-hierarchy-soft-live-9.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-hierarchy-soft-live-9.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-hierarchy-soft-live-9.render.log">GPU 日志</a><a href="cycles-study/swatch-reference-gn-hierarchy-soft-live-9.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-hierarchy-soft-live-9.gn-report.json">两级结构与预检报告</a><a href="cycles-study/swatch-reference-gn-hierarchy-soft-live-9.source.py" download>soft 源快照</a><a href="cycles-study/swatch-reference-gn-hierarchy-soft-live-9.precheck.log">CPU 预检日志</a></div>
+        </article>
+        <article class="setting" data-study="swatch-reference-gn-hierarchy-firm-live-9" data-render-receipt="cycles-study/swatch-reference-gn-hierarchy-firm-live-9.render.json">
+          <h3>GN9 firm · 0.65</h3><p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 8.68 秒；不含生成与 CPU 预检。</p>
+          <div class="downloads"><a href="cycles-study/swatch-reference-gn-hierarchy-firm-live-9.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-hierarchy-firm-live-9.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-hierarchy-firm-live-9.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-hierarchy-firm-live-9.render.log">GPU 日志</a><a href="cycles-study/swatch-reference-gn-hierarchy-firm-live-9.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-hierarchy-firm-live-9.gn-report.json">两级结构与预检报告</a><a href="cycles-study/swatch-reference-gn-hierarchy-firm-live-9.source.py" download>firm 源快照</a><a href="cycles-study/swatch-reference-gn-hierarchy-firm-live-9.precheck.log">CPU 预检日志</a></div>
+        </article>
+      </div>
+      <p class="table-note">三图均为 768 × 768、96 样本上限。两张 GN9 的 .json / .gn-report.json 保留 CPU 预检 rendered: false；独立 .render.json 记录 rendered: true，GPU 渲染计时分别 8.9396373 秒 / 8.6768552 秒，不含生成与 CPU 预检。同一冻结源 SHA 为 <code>9b2c4fe56ad084de6e4deb138fdfff7b6755e59a6ce0647d5c5f7c69f1e107f7</code>；结构字段直接读取 hierarchy，不沿用旧候选的 metadata schema。</p>
+      <div class="table-wrap" style="margin-top:18px" tabindex="0" aria-label="可横向滚动的 GN9 两级导向结构表"><table>
+        <thead><tr><th scope="col">结构与控制范围</th><th scope="col">GN8 noFA</th><th scope="col">GN9 soft</th><th scope="col">GN9 firm</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">父级导向数 · 原有 2,657 条导向中的子集</th><td>无新增父级预处理</td><td>900</td><td>900</td></tr>
+          <tr><th scope="row">非父级原生导向形状缩放</th><td>1.00</td><td>0.72</td><td>0.72</td></tr>
+          <tr><th scope="row">父级成束强度</th><td>无</td><td>0.40</td><td>0.65</td></tr>
+          <tr><th scope="row">每父级的 fine 导向数 · 范围 / 中位数</th><td>不适用</td><td>1–9 / 3</td><td>1–9 / 3</td></tr>
+          <tr><th scope="row">每父级的最终子毛数 · 范围 / 中位数</th><td>不适用</td><td>25–260 / 88.5</td><td>25–260 / 88.5</td></tr>
+          <tr><th scope="row">可见外绒 / 底绒 · 原生飞毛保持隐藏</th><td>85,000 / 90,000</td><td>85,000 / 90,000</td><td>85,000 / 90,000</td></tr>
+        </tbody>
+      </table></div>
+      <article class="method" style="margin-top:18px">
+        <h3>实际关系：900 parent → 2,657 fine → 85,000 child</h3>
+        <p>从保存的导向根位置选择 900 个空间分布的已有锚点作为父级；其原生形状保持。非父级导向先执行 root + 0.72 × (old − root)，再经官方 Clump 节点预处理。每条 fine 导向映射到最近父级；现有 85,000 条子毛仍使用原先的 fine 导向映射和末级 Curl / Clump / Profile 参数。900 父级属于原有导向，不是另加 900 条渲染毛丝。</p>
+        <p>父级强度沿长分布由项目作者设置：早段渐入，末端减弱，锚点因子为 0，并锁定根位置。父级缩放与 Clump 预处理均改变了求值形态；原生半径、原生外绒与子毛映射、底绒、隐藏飞毛、场景和末级外绒图固定，但求值外绒位置与半径会变化。没有 Catmull–Rom 实际弧长约束、实体体积测量或毛丝宽度接触求解。</p>
+        <p><a href="https://docs.blender.org/manual/en/5.2/modeling/geometry_nodes/hair/guides/clump_hair_curves.html" target="_blank" rel="noopener noreferrer">Blender 5.2 Clump ↗</a>、<a href="https://docs.blender.org/manual/en/5.2/modeling/geometry_nodes/hair/guides/curl_hair_curves.html" target="_blank" rel="noopener noreferrer">Curl ↗</a>与 <a href="https://www.sidefx.com/docs/houdini/nodes/sop/hairclump.html" target="_blank" rel="noopener noreferrer">SideFX Hair Clump ↗</a>是方法参考。父级 / 细级结构与上述沿长规则属于本项目制作，不是 Houdini 输出或论文算法的完整复现，也不因节点可编辑而视为外观验收通过。</p>
+      </article>
+      <article class="method" style="margin-top:18px">
+        <h3>只读几何诊断：变短也变低，不能用结构指标代替厚实感</h3>
+        <p>在三个保存工程上测量，53,758 / 85,000 条最终求值子毛发生改变，31,242 条仍在固定父级锚点上。两级结构与缩放共同改变了外形；下表不能单独区分缩放和父级成束的贡献。均匀 XYZ 缩放会缩小高度，这轮结果也没有在真实图中形成明显厚圆卷团。</p>
+        <div class="table-wrap" style="margin-top:14px" tabindex="0" aria-label="可横向滚动的 GN9 只读几何诊断表"><table>
+          <thead><tr><th scope="col">几何测量</th><th scope="col">GN8 noFA</th><th scope="col">GN9 soft</th><th scope="col">GN9 firm</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">求值导向弧长 / 配对控制 · 中位数</th><td>1.00000</td><td>0.72190</td><td>0.72260</td></tr>
+            <tr><th scope="row">最终 Clump 阶段毛冠 · 中位数，场景单位</th><td>0.0210805</td><td>0.0166152 · 约 −21%</td><td>0.0159769 · 约 −24%</td></tr>
+            <tr><th scope="row">发生位置变化的最终子毛 / 85,000 条</th><td>0</td><td>53,758</td><td>53,758</td></tr>
+          </tbody>
+        </table></div>
+        <p>诊断为 16.63 秒只读 CPU 测量，4 个输入文件读取前后 SHA 相同；临时逐节点输出检查后恢复逐位一致。弧长采用 32 阶 Catmull–Rom 积分，毛冠是采样中心线到解析椭球的近似高度，不是逐像素可见性、真实毛丝宽度接触或实体体积。数值也没有标定为实物尺寸。</p>
+        <div class="downloads"><a href="cycles-study/gn-hierarchy-geometry-9.json">几何诊断 JSON</a><a href="cycles-study/gn-hierarchy-geometry-9.source.py" download>只读测量源快照</a><a href="cycles-study/gn-hierarchy-geometry-9.raw.log">实际 CPU 原始日志</a></div>
+      </article>
+      <p class="table-note" id="gn-validation-9">独立保存工程检查实际通过 <strong>141 / 141 项</strong>，28 个输入文件 SHA 前后相同，Blender exit 0。它确认两级映射、固定原生数据和场景、实际 GPU 凭证与 PNG，以及 soft / firm 仅改变父级强度；这是工程检查通过，不是外观验收。<a href="cycles-study/hair-hierarchy-validation-v9-r2.json">更正后的独立检查报告</a>。</p>
+      <p class="table-note">独立扰动 parent 1780 的控制点 6 沿 X 移动 0.002 场景单位，仅影响映射的 fine 导向 1780、1968 及 78 条子毛；集合之外、毛根、根半径均保持，还原后逐位相同。内部 Clump 的段长规则不等于历史 rest 或 Catmull–Rom 实际弧长守恒。</p>
+      <details>
+        <summary>初次验证器失败与修正记录</summary>
+        <p class="table-note">初次报告失败，原因是验证器的 evaluated_attributes 分支字段名错误，以及未显式核对求值后的派生属性。更正验证器后重新独立检查通过；候选工程、图像及源快照未改动。初次失败报告原样保留，不能将它写成通过。<a href="cycles-study/hair-hierarchy-validation-v9.json">初次失败证据</a>。</p>
+        <p class="table-note">更正后报告 SHA：<code>6a384cd5d7725f75ef368f361b2792bb0686d25b24cc7735bd5d589816b44386</code>。<a href="../tooling/blender/validate_hierarchical_groom_assets.py" download>独立验证器</a> SHA：<code>2377eaa70f718b2eece72666ac71bd5996c43f77eeca2a416b741ebf24638519</code>。</p>
+      </details>
+    </details>
+  </section>
+
+  <section id="compact-coil-study" aria-labelledby="compact-coil-heading">
+    <div class="section-head">
+      <div><p class="section-number">COMPACT RETURN COIL / GN8 → GN10</p><h2 id="compact-coil-heading">紧凑回卷：收拢与开放钩环</h2></div>
+      <p>0.88 的轮廓锯齿减少、卷簇稍圆，但毛层压紧变平；0 出现更多开放粗钩，正面仍偏扇簇。两张实际图都没有形成参考的厚实柔软小卷团。</p>
+    </div>
+    <div class="grid gn-grid">
+      <figure data-coil-case="swatch-reference-gn-no-flyaway-8">
+        <div class="figure-title">GN8 · 关闭飞毛控制</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-no-flyaway-8.png" aria-label="查看 GN10 对照中的 GN8 关闭飞毛控制原图"><img src="cycles-study/swatch-reference-gn-no-flyaway-8.png" alt="GN8 关闭飞毛控制图，表面仍有密集尖细扇簇与短钩，作为紧凑回卷制作的基线" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>展开下方查看实际 GPU 凭证。</span></p></div>
+        <figcaption>原有 GN7 0.08 导向造型，隐藏飞毛；末级 Clump 为 0.88，没有本轮回卷路径。</figcaption>
+      </figure>
+      <figure data-coil-case="swatch-reference-gn-compact-coil-clumped-live3-10">
+        <div class="figure-title">GN10 · 回卷 + Clump 0.88</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-compact-coil-clumped-live3-10.png" aria-label="查看 GN10 紧凑回卷且末级 Clump 0.88 的实际渲染"><img src="cycles-study/swatch-reference-gn-compact-coil-clumped-live3-10.png" alt="GN10 紧凑三维回卷与 Clump 0.88 的实际蓝色毛料渲染，边缘较圆收敛，但毛层压紧偏扁，尚未达到参考厚实卷绒" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>展开下方查看实际 GPU 凭证。</span></p></div>
+        <figcaption>新导向让边缘更收敛、卷簇略圆；成束同时压紧毛层，厚实松绒感仍不足。</figcaption>
+      </figure>
+      <figure data-coil-case="swatch-reference-gn-compact-coil-unclumped-live3-10">
+        <div class="figure-title">同一回卷导向 · Clump 0</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-compact-coil-unclumped-live3-10.png" aria-label="查看同一 GN10 回卷导向、末级 Clump 0 的实际渲染"><img src="cycles-study/swatch-reference-gn-compact-coil-unclumped-live3-10.png" alt="GN10 同一回卷导向与 Clump 0 的实际蓝色毛料渲染，顶部和两侧有突出开放粗钩环，正面仍呈扇状毛束，未达到柔软小卷团目标" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>展开下方查看实际 GPU 凭证。</span></p></div>
+        <figcaption>仅将实际末级成束输入降为 0，开放钩环更突出；毛冠更高也没有自动得到柔软圆润的卷团。</figcaption>
+      </figure>
+    </div>
+    <p class="table-note">三图均为 768 × 768、96 样本上限、175,000 条可见毛丝。2,500 条飞毛只隐藏，工程仍保留；完整角色主图继续是 v6。球状小样用于比较毛料，不能当作参考角色的形体重建。</p>
+    <p class="note">这轮显示了收拢与松开的取舍，尚未达到参考。下一制作重点是沿长松紧、束内宽度与间距，以及更细尺度的自然卷团，尚无该方案的新图；不继续把全局 Clump 强度扫描当成造型完成。</p>
+    <details id="compact-coil-evidence">
+      <summary>展开作者导向、有效输入、实际工程与渲染凭证、独立检查</summary>
+      <p class="table-note">承接上方 GN9 的制作计划，本轮从保存的 GN8 no-flyaway 工程出发，重新制作 2,657 条三维回卷导向；没有沿用 GN9 的 0.72 倍 XYZ 缩短或父级预处理。新导向只沿法向调整尺度，目标是保留原导向的指定采样毛冠。该约束不保证最终求值子毛高度、弧长、像素外观或柔软程度。</p>
+      <div class="settings">
+        <article class="setting" data-study="swatch-reference-gn-no-flyaway-8" data-render-receipt="cycles-study/swatch-reference-gn-no-flyaway-8.render.json">
+          <h3>GN8 · noFA 控制</h3><p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 6.26 秒；不含生成与 CPU 预检。</p>
+          <div class="downloads"><a href="cycles-study/swatch-reference-gn-no-flyaway-8.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-no-flyaway-8.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-no-flyaway-8.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-no-flyaway-8.render.log">GPU 日志</a><a href="cycles-study/swatch-reference-gn-no-flyaway-8.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-no-flyaway-8.gn-report.json">控制工程预检报告</a><a href="cycles-study/swatch-reference-gn-no-flyaway-8.source.py" download>GN8 源快照</a><a href="cycles-study/swatch-reference-gn-no-flyaway-8.precheck.log">CPU 预检日志</a></div>
+        </article>
+        <article class="setting" data-study="swatch-reference-gn-compact-coil-clumped-live3-10" data-render-receipt="cycles-study/swatch-reference-gn-compact-coil-clumped-live3-10.render.json">
+          <h3>回卷 · Clump 0.88</h3><p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 7.55 秒；不含生成与 CPU 预检。</p>
+          <div class="downloads"><a href="cycles-study/swatch-reference-gn-compact-coil-clumped-live3-10.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-compact-coil-clumped-live3-10.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-compact-coil-clumped-live3-10.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-compact-coil-clumped-live3-10.render.log">GPU 日志</a><a href="cycles-study/swatch-reference-gn-compact-coil-clumped-live3-10.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-compact-coil-clumped-live3-10.gn-report.json">回卷结构与预检报告</a><a href="cycles-study/swatch-reference-gn-compact-coil-clumped-live3-10.source.py" download>源快照</a><a href="cycles-study/swatch-reference-gn-compact-coil-clumped-live3-10.precheck.log">CPU 预检日志</a></div>
+        </article>
+        <article class="setting" data-study="swatch-reference-gn-compact-coil-unclumped-live3-10" data-render-receipt="cycles-study/swatch-reference-gn-compact-coil-unclumped-live3-10.render.json">
+          <h3>相同回卷 · Clump 0</h3><p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 9.77 秒；不含生成与 CPU 预检。</p>
+          <div class="downloads"><a href="cycles-study/swatch-reference-gn-compact-coil-unclumped-live3-10.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-compact-coil-unclumped-live3-10.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-compact-coil-unclumped-live3-10.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-compact-coil-unclumped-live3-10.render.log">GPU 日志</a><a href="cycles-study/swatch-reference-gn-compact-coil-unclumped-live3-10.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-compact-coil-unclumped-live3-10.gn-report.json">回卷与末级输入报告</a><a href="cycles-study/swatch-reference-gn-compact-coil-unclumped-live3-10.source.py" download>源快照</a><a href="cycles-study/swatch-reference-gn-compact-coil-unclumped-live3-10.precheck.log">CPU 预检日志</a></div>
+        </article>
+      </div>
+      <p class="table-note">两候选的原生导向位置按位相同，彼此仅改变实际 typed modifier 输入 <code>Socket_6</code>：0.8799999952316284（float32 的 0.88）→ 0。官方 Clump 的原有连接与默认值保持，未用已连接 socket 的默认值冒充有效输入。两份预检 JSON 的 rendered 保持 false；独立 GPU receipt 均为 true，计时分别 7.5472766 / 9.7679356 秒，不含 CPU 生成和检查。</p>
+      <div class="table-wrap" style="margin-top:18px" tabindex="0" aria-label="可横向滚动的 GN10 导向与求值子毛结构表"><table>
+        <thead><tr><th scope="col">实际保存几何与输入</th><th scope="col">GN8 noFA</th><th scope="col">GN10 · 0.88</th><th scope="col">同一导向 · 0</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">末级 Clump 有效因子</th><td>0.88</td><td>0.88</td><td>0</td></tr>
+          <tr><th scope="row">原生导向指定采样毛冠 · 中位数，场景单位</th><td>0.02539075</td><td>0.02539074</td><td>0.02539074</td></tr>
+          <tr><th scope="row">求值子毛指定采样毛冠 · 中位数，场景单位</th><td>0.02108049</td><td>0.01671717</td><td>0.02787186</td></tr>
+          <tr><th scope="row">原生导向弧长 / 配对 GN8 · 中位数</th><td>1.00000</td><td>1.72880</td><td>1.72880</td></tr>
+          <tr><th scope="row">求值子毛弧长 / 配对 GN8 · 中位数</th><td>1.00000</td><td>1.05204</td><td>1.04859</td></tr>
+          <tr><th scope="row">隐藏导向 / 可见外绒 / 可见底绒</th><td>2,657 / 85,000 / 90,000</td><td>2,657 / 85,000 / 90,000</td><td>2,657 / 85,000 / 90,000</td></tr>
+        </tbody>
+      </table></div>
+      <p class="table-note">导向采样毛冠的最大配对误差为 6.1527830 × 10<sup>−8</sup> 场景单位，小于 2 × 10<sup>−7</sup> 的制作容差；它没有约束求值子毛。回绕在空间上较紧凑，但导向配对弧长中位数增加约 73%，不能写成毛丝更短或弧长守恒。毛冠使用逐控制段 8 阶 Gauss–Legendre 节点及控制点的解析椭球近似高度；弧长使用 float32 控制点升为 float64 的均匀 Catmull–Rom、重复端点、32 阶积分。两者都是中心线几何口径，不是引擎弧长、实体体积、毛丝接触或像素可见率，也没有标定为实物毫米。</p>
+      <article class="method" style="margin-top:18px">
+        <h3>作者回卷路径与保留范围</h3>
+        <p>以保存毛根、椭球法向及旧导向切向建立 root-local 坐标系，使用三种回卷原型。相位末值为 5.05 / 5.30 / 5.55 弧度，横向宽度系数为 0.46 / 0.52 / 0.43，深度系数为 0.22 / 0.27 / 0.31，起根段系数为 0.18 / 0.22 / 0.20；各系数相对原导向采样毛冠。仅法向尺度经过 20 次二分匹配，横向分量保持作者路径，float32 保存后回填原根。</p>
+        <p>两图均沿用实际官方 Curl / Clump / Profile 链：Curl Factor 0.70、Radius 0.006、Frequency 0.85；Clump Shape 0.20、Tip Spread 0.003、内部 Preserve Length 开启；外接 Restore Factor 仍为 0；Profile 最小 / 最大半径因子为 0.55 / 1。原生外绒、导向根与半径、历史 rest_position、子毛映射、0.35 底绒、隐藏飞毛、材质、灯光、相机和渲染设置固定。新导向与末级输入会改变求值外绒位置及 Profile 派生半径，根半径按位保持。</p>
+        <p>这是本项目作者制作的三维回卷路径，实际通过 Blender 原生 Hair Curves 与官方节点求值。<a href="https://docs.blender.org/manual/en/5.2/modeling/geometry_nodes/hair/guides/clump_hair_curves.html" target="_blank" rel="noopener noreferrer">官方 Clump ↗</a>、<a href="https://docs.blender.org/manual/en/5.2/modeling/geometry_nodes/hair/guides/curl_hair_curves.html" target="_blank" rel="noopener noreferrer">Curl ↗</a>与 <a href="https://www.sidefx.com/docs/houdini/nodes/sop/hairclump.html" target="_blank" rel="noopener noreferrer">SideFX Hair Clump ↗</a>提供制作思路；本轮没有运行 Houdini Accurate Bundling 或 Fractal Clumping，也不是论文算法的完整复现。</p>
+        <div class="downloads"><a href="../tooling/blender/plush_compact_coil_study.py" download>本轮生成脚本</a></div>
+      </article>
+      <p class="table-note">两份成功快照采用同一冻结源 SHA：<code>b72713f128b68ad2b344216f22c34e3046a61e8f1933ed1909fb49d4cd74f5c8</code>。预检报告明确记录原生导向与求值子毛的不同参数范围，不能沿用旧 D 预设字段解释本轮最终毛料。</p>
+      <p class="table-note" id="gn-validation-10">独立保存工程检查实际通过 <strong>174 / 174 项</strong>，32 个跟踪输入文件 SHA 前后相同，零错误，并逐候选完成两次真实重载。它确认原生数据和场景保留、同一导向、有效输入 0.88 / 0、实际求值差异，以及 GPU receipt 与 PNG；这是工程检查通过，不是参考外观验收。<a href="cycles-study/hair-compact-coil-validation-v10.json">独立检查报告</a>。</p>
+      <p class="table-note">独立扰动 guide 1328 的控制点 6 沿 X 移动 float32 的 0.002 场景单位，两候选均仅使实际映射的 42 / 42 条子毛改变；集合外、毛根与根半径保持，恢复后全场景按位一致。检查报告 SHA：<code>a19cf24a15bf4aeb5362d75d8f886addf6402938782183f4c7c0d485b9cb5bc3</code>。<a href="../tooling/blender/validate_compact_coil_assets.py" download>独立验证器</a>。</p>
+    </details>
+  </section>
+
+  <section id="clump-profile-study" aria-labelledby="clump-profile-heading">
+    <div class="section-head">
+      <div><p class="section-number">ALONG-LENGTH CLUMP / GN10 → GN11</p><h2 id="clump-profile-heading">沿长收束：中段松、末端紧</h2></div>
+      <p>GN11 顶缘比 0.88 略立起，比 0 收回部分粗开放钩环；正面粗扇簇仍明显。与 0.88 的肉眼差异有限，尚未形成参考中的细密柔软小卷绒。</p>
+    </div>
+    <div class="grid gn-grid">
+      <figure data-profile-case="swatch-reference-gn-compact-coil-clumped-live3-10">
+        <div class="figure-title">GN10 · Clump 0.88</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-compact-coil-clumped-live3-10.png" aria-label="查看沿长收束对照的 GN10 Clump 0.88 控制原图"><img src="cycles-study/swatch-reference-gn-compact-coil-clumped-live3-10.png" alt="GN10 Clump 0.88 控制图，轮廓较收敛，毛层压紧偏平，正面仍有粗扇簇" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>控制工程凭证见上一节。</span></p></div>
+        <figcaption>回卷导向不变，Clump 输入恒定为 0.88；边缘收敛，但毛层压紧。</figcaption>
+      </figure>
+      <figure data-profile-case="swatch-reference-gn-clump-profile-live7-11">
+        <div class="figure-title">GN11 · 沿长收束 Profile</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-clump-profile-live7-11.png" aria-label="查看 GN11 中段较松、末端收束的沿长 Profile 实际渲染"><img src="cycles-study/swatch-reference-gn-clump-profile-live7-11.png" alt="GN11 沿长成束 Profile 的实际蓝色毛料渲染，顶缘比 0.88 略立起，开放粗钩比 0 受控，正面粗扇簇仍在，未达参考柔软卷绒" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>展开下方查看实际 GPU 凭证。</span></p></div>
+        <figcaption>输入设为中段较松、末端较紧。轮廓介于两控制之间，正面纹理改善仍有限。</figcaption>
+      </figure>
+      <figure data-profile-case="swatch-reference-gn-compact-coil-unclumped-live3-10">
+        <div class="figure-title">GN10 · Clump 0</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-compact-coil-unclumped-live3-10.png" aria-label="查看沿长收束对照的 GN10 Clump 0 控制原图"><img src="cycles-study/swatch-reference-gn-compact-coil-unclumped-live3-10.png" alt="GN10 Clump 0 控制图，顶部和两侧有粗开放钩环与梳齿式轮廓，正面仍是扇簇" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>控制工程凭证见上一节。</span></p></div>
+        <figcaption>末级 Clump 输入为 0；开放粗钩突出，并未得到细碎松厚的柔软卷团。</figcaption>
+      </figure>
+    </div>
+    <p class="table-note">三图均为 768 × 768、96 样本上限、175,000 条可见毛丝；使用同一组回卷导向、材质、灯光与镜头。飞毛保持隐藏，完整角色主图仍为 v6。</p>
+    <p class="note">本轮沿长输入确实改变了求值毛形和实际轮廓，但毛冠更高没有自动带来更宽、更柔软的卷团。现有粗扇状纹理与参考仍有差距。</p>
+    <details id="clump-profile-evidence">
+      <summary>展开沿长输入、单项变化、实际来源与独立检查</summary>
+      <p class="table-note">沿用 <a href="#compact-coil-evidence">GN10 的冻结导向、控制工程与两端渲染凭证</a>。本轮唯一制作控制是末级 Clump 的外部沿长 Factor 分布，新增五个外层节点；原生毛形、半径、rest、映射与分层，以及官方 Curl / Clump / Profile 内部节点组、场景和渲染设置保持。求值外绒位置与 Profile 派生半径会响应变化。</p>
+      <article class="method" style="margin-top:18px" data-study="swatch-reference-gn-clump-profile-live7-11" data-render-receipt="cycles-study/swatch-reference-gn-clump-profile-live7-11.render.json">
+        <h3>GN11 · 实际成功工程 live7</h3>
+        <p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 12.42 秒；不含生成与 CPU 预检。</p>
+        <div class="downloads"><a href="cycles-study/swatch-reference-gn-clump-profile-live7-11.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-clump-profile-live7-11.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-clump-profile-live7-11.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-clump-profile-live7-11.render.log">GPU 日志</a><a href="cycles-study/swatch-reference-gn-clump-profile-live7-11.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-clump-profile-live7-11.gn-report.json">沿长字段与几何报告</a><a href="cycles-study/swatch-reference-gn-clump-profile-live7-11.source.py" download>冻结源快照</a><a href="cycles-study/swatch-reference-gn-clump-profile-live7-11.precheck.log">CPU 预检日志</a><a href="../tooling/blender/plush_clump_profile_study.py" download>本轮生成脚本</a></div>
+        <p>成功源 SHA：<code>145239a928aeb057a7470ddeb81ff04612a2e7b71028e0738854ba471141247a</code>。预检 JSON 保留 rendered: false；独立 receipt 记录 rendered: true 和 12.4157428 秒实际 GPU 时间。早期 live1–6 中止尝试的源与日志保留，没有用它们冒充有效工程或渲染。</p>
+      </article>
+      <article class="method" style="margin-top:18px">
+        <h3>实际字段：先捕获长度参数，再驱动官方 Clump</h3>
+        <p>s 是官方 Curl 输出、Clump 之前的 joined Curves 上捕获的 Spline Parameter Factor，域为 POINT，表示该阶段实际样条的归一长度；不是 12 个控制点的索引。FloatCurve 使用 VECTOR handles，控制点为 <code>(0,0), (0.18,0.15), (0.40,0.25), (0.65,0.25), (0.85,0.75), (1,1)</code>；经 0–1 限幅后乘以原 modifier 的 0.88，送入 Clump Factor。</p>
+        <p>外部输入为 <code>0.88 × w(s)</code>。官方 Shape 0.20 仍独立施加沿长 mask，Tip Spread 0.003、内部 Preserve Length 和下游 Profile 保持；该外部字段不是最终点位移的线性比例。实际字段已采样核对；制作预检在正确刷新节点后，用常量 w=1 按位重现 GN10 0.88；独立检查另以原 Socket_6 直接旁路 Factor 接线，按位重现并恢复原结果。</p>
+        <p><a href="https://www.sidefx.com/docs/houdini/nodes/sop/hairclump.html" target="_blank" rel="noopener noreferrer">SideFX Hair Clump 官方资料 ↗</a>明确将 Clump Profile 用于沿长度控制紧度，本轮借鉴这一制作原则，在 Blender 原生 Hair / 官方节点管线上添加作者字段。考虑 width 以避免中心收缩的 Accurate Bundling 是另一项方法，本轮没有运行 Houdini，也未实现该宽度接触求解或 Fractal Clumping。</p>
+      </article>
+      <div class="table-wrap" style="margin-top:18px" tabindex="0" aria-label="可横向滚动的 GN11 求值几何代理对照表"><table>
+        <thead><tr><th scope="col">制作报告的求值代理 · 场景单位</th><th scope="col">GN10 · 0.88</th><th scope="col">GN11 · 沿长</th><th scope="col">GN10 · 0</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">采样毛冠 · 中位数</th><td>0.01671717</td><td>0.02025096</td><td>0.02787186</td></tr>
+          <tr><th scope="row">控制点索引 6 · 横向 major std 中位数</th><td>0.00442197</td><td>0.00351780</td><td>0.00384399</td></tr>
+          <tr><th scope="row">控制点索引 11 · 横向 major std 中位数</th><td>0.00446872</td><td>0.00250061</td><td>0.00426054</td></tr>
+        </tbody>
+      </table></div>
+      <p class="table-note">上表来自制作报告。毛冠是保存 float32 控制点的 Catmull–Rom 中心线在 8 阶逐段采样及控制点上的解析椭球近似高度。横向统计在同一实际 guide 映射、每组至少 8 条子毛的 2,644 组上，将子毛中心线投影到固定 guide 控制点切向的法平面，再取协方差较大特征值的平方根（制作统计使用分母 n）；索引从 0 计，位置并非匹配的弧长位置。这些是中心线代理，不是实体束宽、体积、毛丝接触、像素可见率或柔软评分。GN11 毛冠提高，但两个索引处的横向代理反而下降，不能写成中段更宽或体积保留。</p>
+      <p class="table-note">独立检查使用另一口径：每组至少 4 条子毛的 2,655 组、协方差分母 n−1，计算固定控制点索引与 guide 切向法平面的横向 RMS；其结果也显示中段收窄。该 RMS 与上表的 major std 不混用，均不能当作实体体积或视觉评分。</p>
+      <p class="table-note" id="gn-validation-11">独立保存工程检查：<strong>134 / 134 通过</strong>，43 个输入 SHA 前后不变，完成两次实际重载；源、工程、PNG 与真实 GPU 凭证均已实读。85,000 条外绒全部响应，原生数据、根、根半径、guide、rest、映射、底绒、隐藏飞毛与场景固定。guide 1328 的控制点 6 扰动只影响实际映射的 42 / 42 条子毛，集合外与恢复后逐位相同。<a href="cycles-study/hair-clump-profile-validation-v11.json">独立检查报告</a> · <a href="../tooling/blender/validate_clump_profile_assets.py" download>独立检查脚本</a>。报告 SHA：<code>9b2f6380da8bf33f4b020b8932e993410483fbb5871078b651f7ce94d8baf14d</code>。这验证工程与因果范围，不是参考外观验收。</p>
+      <details>
+        <summary>字段精度与复现核查</summary>
+        <p class="table-note">实际外部 Factor 与 float32 的 0.88 × 实际节点权重按位相符。VECTOR CurveMapping 的实际查表结果相对理想线性插值最大误差为 0.00234276，使用 0.003 检查容差；s 末端误差使用 10<sup>−7</sup>、w 与 Factor 末端使用 10<sup>−6</sup> 容差。早期常量 w=1 复现失败来自未刷新节点缓存；最终成功工程的正确更新与旁路实测已纠正这一判断，不能据早期结果声称引擎无法复现。</p>
+      </details>
+    </details>
+  </section>
+
+  <section id="curl-variation-study" aria-labelledby="curl-variation-heading">
+    <div class="section-head">
+      <div><p class="section-number">CURL VARIATION / GN11 → GN12</p><h2 id="curl-variation-heading">卷曲偏移：全部与仅子毛</h2></div>
+      <p>三图整体很接近，A、B 只有局部细丝与边缘变化；正面粗扇簇和横向层纹仍在。本轮额外偏移没有解决主要结构，尚未得到参考的松厚细卷绒。</p>
+    </div>
+    <div class="grid gn-grid">
+        <figure data-curl-case="swatch-reference-gn-clump-profile-live7-11">
+          <div class="figure-title">GN11 · 额外偏移 0</div>
+          <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-clump-profile-live7-11.png" aria-label="查看GN11 控制实际原图"><img src="cycles-study/swatch-reference-gn-clump-profile-live7-11.png" alt="GN11 蓝色毛料控制图，额外卷曲偏移为零，正面仍有粗扇簇与横向层纹" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>工程与实际渲染凭证见展开证据。</span></p></div>
+          <figcaption>保留共同 guide 相位，额外的逐曲线偏移为 0。</figcaption>
+        </figure>
+        <figure data-curl-case="swatch-reference-gn-curl-phase-all-live2-12">
+          <div class="figure-title">GN12 A · 全部曲线偏移 1</div>
+          <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-curl-phase-all-live2-12.png" aria-label="查看GN12 A 全部曲线偏移实际原图"><img src="cycles-study/swatch-reference-gn-curl-phase-all-live2-12.png" alt="GN12 A 对全部曲线施加额外卷曲偏移的实际渲染，整体仍接近 GN11，粗扇簇和横向纹理持续" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>工程与实际渲染凭证见展开证据。</span></p></div>
+          <figcaption>子毛与导向求值目标都响应；局部细节变化未消除粗扇簇。</figcaption>
+        </figure>
+        <figure data-curl-case="swatch-reference-gn-curl-phase-children-live2-12">
+          <div class="figure-title">GN12 B · 仅子毛偏移 1</div>
+          <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-curl-phase-children-live2-12.png" aria-label="查看GN12 B 仅子毛偏移实际原图"><img src="cycles-study/swatch-reference-gn-curl-phase-children-live2-12.png" alt="GN12 B 仅对子毛施加额外卷曲偏移的实际渲染，导向求值目标固定，正面粗扇和横向层纹仍在" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>工程与实际渲染凭证见展开证据。</span></p></div>
+          <figcaption>导向目标固定，只给子毛额外偏移；主要纹理仍与控制接近。</figcaption>
+        </figure>
+      </div>
+    <p class="table-note">三图均为 768 × 768、96 样本上限、175,000 条可见毛丝；沿用同一 GN11 原生毛形、导向、映射、材质、灯光、镜头与沿长 Clump 配方。飞毛仍隐藏，完整角色主图仍为 v6。</p>
+    <p class="note">两种偏移范围均真实生效，但外观收益有限。下一项制作方向尚未实施：缩小实际空间毛束尺度、错开长度并重新梳理导向；整体方位可作隔离项，不能用随机相位替代结构改造。</p>
+    <details id="curl-variation-evidence">
+      <summary>展开偏移范围、实际字段、冻结工程与独立检查</summary>
+      <p class="table-note">控制凭证沿用 <a href="#clump-profile-evidence">GN11 沿长收束</a>。A 对 joined Curves 全部曲线施加 Random Offset=1；B 由 CURVE 域的 is_guide 得到 1−is_guide，只对子毛施加。A 允许 post-Curl 导向目标响应；B 以实际求值验证该目标保持，隔离束内相位变化。</p>
+            <article class="method" style="margin-top:18px" data-study="swatch-reference-gn-curl-phase-all-live2-12" data-render-receipt="cycles-study/swatch-reference-gn-curl-phase-all-live2-12.render.json">
+          <h3>A · 全部曲线，导向目标也响应</h3>
+          <p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 9.00 秒；不含生成与 CPU 预检。</p>
+          <div class="downloads"><a href="cycles-study/swatch-reference-gn-curl-phase-all-live2-12.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-curl-phase-all-live2-12.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-curl-phase-all-live2-12.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-curl-phase-all-live2-12.render.log">GPU 日志</a><a href="cycles-study/swatch-reference-gn-curl-phase-all-live2-12.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-curl-phase-all-live2-12.gn-report.json">实际偏移范围报告</a><a href="cycles-study/swatch-reference-gn-curl-phase-all-live2-12.source.py" download>冻结源快照</a><a href="cycles-study/swatch-reference-gn-curl-phase-all-live2-12.precheck.log">CPU 预检日志</a></div>
+        </article>
+        <article class="method" style="margin-top:18px" data-study="swatch-reference-gn-curl-phase-children-live2-12" data-render-receipt="cycles-study/swatch-reference-gn-curl-phase-children-live2-12.render.json">
+          <h3>B · 仅子毛，导向目标固定</h3>
+          <p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 8.79 秒；不含生成与 CPU 预检。</p>
+          <div class="downloads"><a href="cycles-study/swatch-reference-gn-curl-phase-children-live2-12.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-curl-phase-children-live2-12.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-curl-phase-children-live2-12.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-curl-phase-children-live2-12.render.log">GPU 日志</a><a href="cycles-study/swatch-reference-gn-curl-phase-children-live2-12.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-curl-phase-children-live2-12.gn-report.json">实际偏移范围报告</a><a href="cycles-study/swatch-reference-gn-curl-phase-children-live2-12.source.py" download>冻结源快照</a><a href="cycles-study/swatch-reference-gn-curl-phase-children-live2-12.precheck.log">CPU 预检日志</a></div>
+        </article>
+        <p class="table-note">两候选共用冻结源 SHA：<code>000bfcc5cff1c3680e4732d4c05759b50354ca37da59b6d8a9aa068bf72e963d</code> · <a href="../tooling/blender/plush_curl_phase_study.py" download>本轮生成脚本</a>。CPU 预检记录 rendered: false；独立实际 receipt 记录 rendered: true，A / B 分别为 9.0001053 / 8.7872433 秒。初次中止的旧 live 源保留，未当作有效图或工程引用。</p>
+      <article class="method" style="margin-top:18px">
+        <h3>共同相位已有，变化的是额外偏移</h3>
+        <p>官方 Curl 内部以 guide ID 生成共同随机相位，另一路按各曲线 ID 生成随机量并乘 Random Offset；GN11 该额外输入为 0。两候选保持 Seed 0、Curl Factor 0.70、Radius 0.006、Frequency 0.85、Curl Start 0.15 和 radius Start / End 0.70。0.85 是节点输入；本机资产内部将其乘以累计控制段长、3 与 2π，不能写成每条 0.85 圈。Random Offset 不标为弧度。</p>
+        <p>GN11 的沿长 Clump 函数、官方 Shape、Preserve Length、Tip Spread 与 Profile 配方固定；它们作用于变化后的几何，实际捕获长度参数、权重、派生半径与最终外绒仍可能响应。设置固定不等于最终几何固定。</p>
+        <p><a href="https://docs.blender.org/manual/en/5.2/modeling/geometry_nodes/hair/guides/curl_hair_curves.html" target="_blank" rel="noopener noreferrer">Blender Curl Hair Curves ↗</a>提供按曲线变化的偏移；<a href="https://docs.blender.org/manual/en/5.2/modeling/geometry_nodes/hair/guides/clump_hair_curves.html" target="_blank" rel="noopener noreferrer">Blender Clump Hair Curves ↗</a>使用实际导向映射。<a href="https://www.sidefx.com/docs/houdini/nodes/sop/hairclump.html" target="_blank" rel="noopener noreferrer">SideFX Hair Clump ↗</a>的宽度约束与更小层级结簇是方法参照；本轮是 Blender 原生节点的项目候选，未运行 Houdini、宽度接触或物理求解。</p>
+      </article>
+      
+        <div class="table-wrap" style="margin-top:18px" tabindex="0" aria-label="可横向滚动的实际 Curl 偏移范围对照表"><table>
+          <thead><tr><th scope="col">实际捕获 · Curl 后 / Clump 前</th><th scope="col">GN11</th><th scope="col">A · 全部</th><th scope="col">B · 子毛</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">85,000 条子毛 · Random Offset</th><td>全部 0</td><td>全部 1</td><td>全部 1</td></tr>
+            <tr><th scope="row">2,657 条导向 · Random Offset</th><td>全部 0</td><td>全部 1</td><td>全部 0</td></tr>
+            <tr><th scope="row">post-Curl 导向位置对 GN11</th><td>控制</td><td>变化</td><td>逐位保持</td></tr>
+            <tr><th scope="row">最终外绒 · 响应曲线数</th><td>控制</td><td>85,000 / 85,000</td><td>85,000 / 85,000</td></tr>
+          </tbody>
+        </table></div>
+        <p class="table-note">范围字段在实际 joined Curves 的 CURVE 域读取，并核对 is_guide 为 BOOLEAN；87,657 条求值曲线包含 85,000 条子毛和 2,657 条导向。两组 post-Curl 导向半径均保持；B 的导向位置也逐位固定。制作报告的中心线采样毛冠中位数仅从 GN11 的 0.02025096 变为 A 的 0.02029814、B 的 0.02031098（场景单位）；这是解析椭球上的 Catmull–Rom / 8 阶采样代理，不是毛束体积、像素可见率或柔软评分，不据此宣称改善。</p>
+      <p class="table-note">首次 <a href="cycles-study/hair-curl-phase-scope-validation-v12.json">v12 失败报告</a>与<a href="cycles-study/gn12-independent-validator-first-failed.source.py" download>当时的独立检查源码</a>原样保留：两项额外的 post-Curl 中间根坐标逐位等于基线断言失败。中间阶段位移与下游 RootLock 后的最终根分别记录，不能将最终根固定扩展为全过程固定。</p>
+      <p class="table-note">重新量测中间阶段：A、B 的 post-Curl 子毛根各有 51,175 / 85,000 条与基线存在逐位差，最大欧式位移均约 6.3220273 × 10<sup>−8</sup> 场景单位；A 的导向根有 1,142 / 2,657 条差异，最大约 1.6660005 × 10<sup>−8</sup>，B 导向根为 0 条差异。记录该真实位移，不仅凭数值小就归因为舍入，也不与最终输出固定根混用。</p>
+      <p class="table-note" id="gn-validation-12">独立保存工程检查：<strong>138 / 138 通过</strong>，64 个输入 SHA 前后保持。实际 CURVE 字段确认 A 的 guide / child 均为 1，B 的 guide 为 0、child 为 1；A 的 2,657 条 post-Curl 导向改变，B 的导向位置与半径全部逐位保持，两组最终 85,000 条子毛均响应。原生数据与最终根、根半径逐位固定；最终位置根锁由下游 RootLock 恢复，根半径固定另经实际测量。<a href="cycles-study/hair-curl-phase-scope-validation-v12-r2.json">成功的独立检查报告 v12-r2</a> · <a href="../tooling/blender/validate_curl_phase_scope_assets.py" download>独立检查脚本</a>。报告 SHA：<code>cd624cc4750d79d34f4424ed53ab9c8deecc748b173b320456b1cdbcb0636208</code>。这验证实际输入、工程与因果范围，不代表参考视觉通过。</p>
+    </details>
+  </section>
+
+  <section id="coil-orientation-study" aria-labelledby="coil-orientation-heading">
+    <div class="section-head">
+      <div><p class="section-number">COIL ORIENTATION / GN11 → GN13</p><h2 id="coil-orientation-heading">回卷导向：只改整体方位</h2></div>
+      <p>顶部与边缘突起、下侧局部卷向有变化，整体仍很接近 GN11。正面宽扇簇和横向层纹持续，尚未形成参考的松厚细卷团。</p>
+    </div>
+    <div class="grid length-grid">
+      <figure data-orientation-case="swatch-reference-gn-clump-profile-live7-11">
+        <div class="figure-title">GN11 · 原导向方位</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-clump-profile-live7-11.png" aria-label="查看GN11 原导向方位控制实际原图"><img src="cycles-study/swatch-reference-gn-clump-profile-live7-11.png" alt="GN11 蓝色毛料控制图，原回卷导向方位，正面仍有宽扇簇与横向层纹" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>实际工程与渲染凭证见展开证据。</span></p></div>
+        <figcaption>同一套完整回卷导向与沿长 Clump 配方，作为方位控制。</figcaption>
+      </figure>
+      <figure data-orientation-case="swatch-reference-gn-guide-azimuth-live-13">
+        <div class="figure-title">GN13 · 每束随机方位</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-guide-azimuth-live-13.png" aria-label="查看GN13 随机导向方位实际原图"><img src="cycles-study/swatch-reference-gn-guide-azimuth-live-13.png" alt="GN13 将完整回卷导向绕各自根法线旋转后的实际蓝色毛料渲染，局部轮廓与卷向变化，主要宽扇簇和横纹仍在" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>实际工程与渲染凭证见展开证据。</span></p></div>
+        <figcaption>只改变完整 guide 的原生位置；局部卷向响应，主要结构仍未解决。</figcaption>
+      </figure>
+    </div>
+    <p class="table-note">两图均为 768 × 768、96 样本上限、175,000 条可见毛丝；外绒数量、根与映射，底绒、隐藏飞毛、材质、灯光、镜头及沿长 Clump 配方保持。完整角色主图仍为 v6。</p>
+    <p class="note">整体方位确实改变了求值毛形，但本轮外观收益有限。更细的空间分组、束内长度错落与新的导向梳理仍未实施，不能把本组当作参考达标。</p>
+    <details id="coil-orientation-evidence">
+      <summary>展开作者旋转、长度边界、实际工程与独立检查</summary>
+      <p class="table-note">控制工程与沿长 Clump 配方沿用 <a href="#clump-profile-evidence">GN11</a>。本轮为项目作者的导向梳理选择：完整回卷 guide 围绕各自固定根的解析椭球法线作刚体方位旋转；复用成熟的 guide-driven 官方 Curl / Clump 与 Cycles / Chiang 管线，不将它写成官方 Curl 参数或论文算法。</p>
+      <article class="method" style="margin-top:18px" data-study="swatch-reference-gn-guide-azimuth-live-13" data-render-receipt="cycles-study/swatch-reference-gn-guide-azimuth-live-13.render.json">
+        <h3>GN13 · 实际成功工程</h3>
+        <p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 渲染计时 10.35 秒；不含生成与 CPU 预检。</p>
+        <div class="downloads"><a href="cycles-study/swatch-reference-gn-guide-azimuth-live-13.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-guide-azimuth-live-13.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-guide-azimuth-live-13.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-guide-azimuth-live-13.render.log">GPU 日志</a><a href="cycles-study/swatch-reference-gn-guide-azimuth-live-13.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-guide-azimuth-live-13.gn-report.json">方位与实际几何报告</a><a href="cycles-study/swatch-reference-gn-guide-azimuth-live-13.source.py" download>冻结源快照</a><a href="cycles-study/swatch-reference-gn-guide-azimuth-live-13.precheck.log">CPU 预检日志</a><a href="../tooling/blender/plush_guide_azimuth_study.py" download>本轮生成脚本</a></div>
+        <p>冻结源 SHA：<code>94018212d0c0c5cbc063f71158cc92d5a88b59cb6b69ca374ce7cdb7a3296bcb</code>。CPU 预检保留 rendered: false；实际 GPU receipt 为 rendered: true，记录 10.3472896 秒。</p>
+      </article>
+      <article class="method" style="margin-top:18px">
+        <h3>刚体导向长度与表面毛冠分开</h3>
+        <p>2,657 根导向按原生顺序，以 <code>np.random.default_rng(12013)</code> 的 PCG64 独立生成 <code>uniform(0,2π)</code> 方位角。令 <code>v=g−root</code>，轴为 <code>n=normalize(root/[0.64,0.43,0.54]²)</code>；采用 <code>g′=root+v*cosθ+(n×v)*sinθ+n*(n·v)*(1−cosθ)</code>。在 float64 中计算，转存 float32，并回填原根坐标位。只改 guide position，原生 rest、半径、ID 与映射保持；新角度种子与旧毛丝生成随机样本分开。</p>
+        <p>对每根 guide 使用同一个正交旋转，理论上保持其欧氏形状、根法向投影与报告指定的均匀 Catmull–Rom 连续弧长；float32 保存后的误差另外量测。椭球的切向曲率随方位变化，表面毛冠并不因此固定。子毛根与映射保持，经过 Curl / Clump 的求值子毛也不是整体刚体旋转，其弧长与下游 Profile 派生半径仍可能变化。本轮不作二次高度归一。</p>
+      </article>
+      <p class="table-note">制作报告实测：保存 float32 后，根法向投影最大绝对误差为 3.2000046 × 10<sup>−8</sup> 场景单位；原生 guide 的指定 Catmull–Rom / 32 阶积分最大弧长绝对误差为 9.8843080 × 10<sup>−8</sup> 场景单位，相对漂移最大 1.4060303 × 10<sup>−6</sup>。这里子毛长度采用逐条配对比值，不与两组分布的中位数之比混用。最终子毛逐条配对弧长比范围约 0.648767–1.594886，中位数 1.000589，不能借 guide 刚体旋转声称子毛长度保持。所有弧长均为保存控点、重复端点的均匀 Catmull–Rom 数值模型，不称 Cycles 引擎精确弧长；毛冠为解析椭球采样中心线代理，不是实体体积、可见率或柔软评分。</p>
+      <p class="table-note">可以参考 <a href="https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/hair/deformation/rotate_hair_curves.html" target="_blank" rel="noopener noreferrer">Blender Rotate Hair Curves 官方资料 ↗</a>中的曲线方位控制类别。本轮实际落地为作者的刚体 Rodrigues 原生导向变换，后续官方 Curl / Clump 节点保持；没有运行 Houdini、宽度接触或物理求解。</p>
+      <p class="table-note">固定的是原生半径与最终根半径；下游 Profile 的非根派生半径有 869,596 / 1,020,000 个点响应，最大绝对差 3.7767983 × 10<sup>−5</sup> 场景单位。中间 post-Curl 有 1 条子毛根相对基线变化 1.8626451 × 10<sup>−9</sup>，导向根为 0 条差异；最终根逐位固定与中间阶段分别记录。</p>
+      <p class="table-note" id="gn-validation-13">独立保存工程检查：<strong>119 / 119 通过</strong>，75 个输入 SHA 前后保持。2,657 根 guide 的保存位置逐位匹配独立 seed 12013 的 Rodrigues 重构；原生根、半径、rest、映射、GN11 节点图、Profile 配方、底绒、隐藏飞毛与场景保持。85,000 条最终子毛均响应，最终根和根半径逐位固定；guide 1328 探针仅影响实际映射的 42 / 42 条子毛，集合外固定、恢复逐位相同，并通过两次保存工程重载。<a href="cycles-study/hair-guide-azimuth-validation-v13.json">独立检查报告</a> · <a href="../tooling/blender/validate_guide_azimuth_assets.py" download>独立检查脚本</a>。报告 SHA：<code>40d1857c15ee0ab369925957256d64e0368b13b34c777fda48d2b538b3f62f62</code>。这验证工程与变化范围，不是参考外观验收。</p>
+    </details>
+  </section>
+
+  <section id="bundle-scale-study" aria-labelledby="bundle-scale-heading">
+    <div class="section-head">
+      <div><p class="section-number">SPATIAL BUNDLE SCALE / GN11 → GN14</p><h2 id="bundle-scale-heading">细分空间束：宽扇片开始变细</h2></div>
+      <p>两组都明显细化了 GN11 的宽扇片；半宽组只略更紧细，额外收益有限。中部层纹、下侧顺向细钩和压实感仍在，尚未形成参考的松厚细卷团。</p>
+    </div>
+    <div class="grid gn-grid">
+      <figure data-bundle-scale-case="swatch-reference-gn-clump-profile-live7-11">
+        <div class="figure-title">GN11 · 原空间分组</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-clump-profile-live7-11.png" aria-label="查看空间束尺度对照的GN11实际原图"><img src="cycles-study/swatch-reference-gn-clump-profile-live7-11.png" alt="GN11控制图，正面有较宽扇簇与横向层纹" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>控制工程见沿长收束证据。</span></p></div>
+        <figcaption>2,657 根导向，每束子毛中位数 32；宽扇片作为本轮控制。</figcaption>
+      </figure>
+      <figure data-bundle-scale-case="swatch-reference-gn-bundle-scale-wide-live-14">
+        <div class="figure-title">GN14 A · 细分分组，宽度 1</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-bundle-scale-wide-live-14.png" aria-label="查看GN14细分空间束宽度1实际原图"><img src="cycles-study/swatch-reference-gn-bundle-scale-wide-live-14.png" alt="GN14宽度1实际渲染，宽扇片明显细化为小短束，仍有层纹、顺向细钩和压实感" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>实际工程与GPU凭证见展开证据。</span></p></div>
+        <figcaption>10,628 根空间导向、实际最近根映射；正面扇片清楚细化。</figcaption>
+      </figure>
+      <figure data-bundle-scale-case="swatch-reference-gn-bundle-scale-half-live-14">
+        <div class="figure-title">GN14 B · 同一分组，半宽回卷</div>
+        <div class="frame swatch-frame render"><a href="cycles-study/swatch-reference-gn-bundle-scale-half-live-14.png" aria-label="查看GN14同一空间分组半宽回卷实际原图"><img src="cycles-study/swatch-reference-gn-bundle-scale-half-live-14.png" alt="GN14半宽回卷实际渲染，相对宽度1略更紧细，仍未形成参考圆润松厚的卷团" loading="lazy"></a><p class="missing" hidden>对应渲染图暂不可读取<span>实际工程与GPU凭证见展开证据。</span></p></div>
+        <figcaption>只把 A 的导向切向分量缩为 0.5；额外视觉收益较小。</figcaption>
+      </figure>
+    </div>
+    <p class="table-note">同为 768 × 768、96 样本上限、175,000 条可见毛丝。细分分组没有增加外绒数量；灯光、镜头、材质、底绒、隐藏飞毛和 GN11 沿长 Clump 配方保持。</p>
+    <p class="note">本轮样片可辨的收益来自更细空间束；半宽本身没有明显额外收益。配方已迁移到完整星仔，实图与旧 v6 的差别见<a href="#character-fine-bundle-study">页首三图</a>；完整角色仍未达到参考松厚卷团，不能把球形样片的改善当作参考达标。</p>
+    <details id="bundle-scale-evidence">
+      <summary>展开空间分组、半宽公式与实际工程证据</summary>
+      <p class="table-note">A 从保存的 <a href="#clump-profile-evidence">GN11</a> 出发，保留原 2,657 个 guide 根，并从现有外绒根以确定性最远点选择新增 7,971 个根。复制最近旧 guide 的根局部曲线，按新旧曲面法线作最短旋转运输，再对 85,000 根子毛实际重算最近根映射。因此 A 相对 GN11 是新增导向与重新分组的结构方案，不是单个节点幅度变化。</p>
+      <p class="table-note">B 从 A 的保存工程出发，保持同一 10,628 个根、映射、原生 rest 与半径。令 <code>v=g−root</code>，<code>n=normalize(root/[0.64,0.43,0.54]²)</code>，仅改 <code>g′=root+n*(n·v)+0.5*(v−n*(n·v))</code>，float64 计算后转存 float32、回填原根位。这保持指定局部法向分量，不能据此声称椭球毛冠、实际子毛弧长或束体积恒定；本轮没有高度或弧长二次归一。</p>
+      <p class="table-note">实际分组的子毛数为 1–29，中位数 7，空组 0。根云在各 guide 切平面的最大配对跨度中位数由 GN11 的 0.04606 降至 0.01684 场景单位；这是保存根的局部几何代理，不是实体束宽、接触解算或画质评分。现有官方 Curl / Clump 管线继续求值；本项目的分组与导向制作不等于运行 Houdini Accurate Bundling、Fractal Clumping 或论文算法。</p>
+      <div class="method-grid" style="margin-top:18px">
+        <article class="method" data-study="swatch-reference-gn-bundle-scale-wide-live-14" data-render-receipt="cycles-study/swatch-reference-gn-bundle-scale-wide-live-14.render.json">
+          <h3>A · 细分分组，宽度 1</h3>
+          <p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 8.06 秒；不含 CPU 准备。</p>
+          <div class="downloads"><a href="cycles-study/swatch-reference-gn-bundle-scale-wide-live-14.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-bundle-scale-wide-live-14.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-bundle-scale-wide-live-14.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-bundle-scale-wide-live-14.render.log">GPU 日志</a><a href="cycles-study/swatch-reference-gn-bundle-scale-wide-live-14.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-bundle-scale-wide-live-14.gn-report.json">实际分组与几何报告</a><a href="cycles-study/swatch-reference-gn-bundle-scale-wide-live-14.source.py" download>冻结源快照</a><a href="cycles-study/swatch-reference-gn-bundle-scale-wide-live-14.precheck.log">CPU 日志</a></div>
+        </article>
+        <article class="method" data-study="swatch-reference-gn-bundle-scale-half-live-14" data-render-receipt="cycles-study/swatch-reference-gn-bundle-scale-half-live-14.render.json">
+          <h3>B · 相同分组，半宽 0.5</h3>
+          <p class="record" aria-live="polite">实际 GPU 渲染 · 768 × 768 · 96 样本上限 · 7.94 秒；不含 CPU 准备。</p>
+          <div class="downloads"><a href="cycles-study/swatch-reference-gn-bundle-scale-half-live-14.png" download>PNG</a><a href="cycles-study/swatch-reference-gn-bundle-scale-half-live-14.blend" download>.blend 工程</a><a href="cycles-study/swatch-reference-gn-bundle-scale-half-live-14.render.json">实际 GPU 凭证</a><a href="cycles-study/swatch-reference-gn-bundle-scale-half-live-14.render.log">GPU 日志</a><a href="cycles-study/swatch-reference-gn-bundle-scale-half-live-14.json">冻结预检 JSON</a><a href="cycles-study/swatch-reference-gn-bundle-scale-half-live-14.gn-report.json">实际半宽与几何报告</a><a href="cycles-study/swatch-reference-gn-bundle-scale-half-live-14.source.py" download>冻结源快照</a><a href="cycles-study/swatch-reference-gn-bundle-scale-half-live-14.precheck.log">CPU 日志</a></div>
+        </article>
+      </div>
+      <p class="table-note">两组冻结源 SHA：<code>fd49cc328e6a43f8af93c3f2cf85f9d3eed479e2bad983d32ee20b36bc49d137</code>。<a href="../tooling/blender/plush_bundle_scale_study.py" download>本轮制作脚本</a>；CPU 预检保持 rendered: false，真实 GPU 凭证另存 rendered: true。工程可复查不等于参考外观通过。</p>
+      <p class="table-note" id="gn-validation-14">独立保存工程检查：<strong>140 / 140 通过</strong>。从保存工程独立重构最远点根选择、法线运输与半宽公式，核对实际最近根映射、原生字段、固定外绒根与根半径，并重新加载两份工程；GPU 凭证与实际 PNG 尺寸、非空像素、文件 SHA 一致。A / B 之间的指定改动确实进入最终子毛。<a href="cycles-study/hair-guide-density-width-validation-v14.json">独立检查报告</a> · <a href="../tooling/blender/validate_guide_density_width_assets.py" download>独立检查脚本</a> · <a href="cycles-study/hair-guide-density-width-validation-v14.source.py" download>检查源快照</a>。报告 SHA：<code>270078f238ff58bad034de341f2869de5a89b413cbefc4efd9e93e99f36961c1</code>。这验证实际改动与复查能力，不代表参考外观通过。</p>
+    </details>
+  </section>
+
+  <section id="parameters" aria-labelledby="parameters-heading">
+    <div class="section-head">
+      <div><p class="section-number">03 / PARAMETERS</p><h2 id="parameters-heading">预设与渲染参数</h2></div>
+      <p>数值来自本轮生成脚本与同名 JSON。长度与卷曲尺度使用 Blender 场景单位，尚未标定为实物尺寸。</p>
+    </div>
+    <div class="table-wrap" tabindex="0" aria-label="可横向滚动的四种毛料参数表">
+      <table>
+        <thead><tr><th scope="col">毛丝预设</th><th scope="col">A · 直短绒</th><th scope="col">B · 微卷绒</th><th scope="col">C · 较长卷束</th><th scope="col">D · 短卷绒候选</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">基础长度 · length</th><td data-param="velvet.length">0.025</td><td data-param="fleece.length">0.047</td><td data-param="teddy.length">0.065</td><td data-param="reference.length">0.046</td></tr>
+          <tr><th scope="row">卷曲尺度 · curl</th><td data-param="velvet.curl">0.0018</td><td data-param="fleece.curl">0.0055</td><td data-param="teddy.curl">0.010</td><td data-param="reference.curl">0.009</td></tr>
+          <tr><th scope="row">卷曲圈数 · turns</th><td data-param="velvet.turns">0.70</td><td data-param="fleece.turns">1.15</td><td data-param="teddy.turns">1.60</td><td data-param="reference.turns">1.0</td></tr>
+          <tr><th scope="row">下垂系数 · lean</th><td data-param="velvet.lean">0.35</td><td data-param="fleece.lean">0.65</td><td data-param="teddy.lean">0.75</td><td data-param="reference.lean">0.50</td></tr>
+          <tr><th scope="row">聚束系数 · clump</th><td data-param="velvet.clump">0.15</td><td data-param="fleece.clump">0.38</td><td data-param="teddy.clump">0.60</td><td data-param="reference.clump">0.60</td></tr>
+          <tr><th scope="row">纤维底色 · sRGB</th><td data-color="velvet">#87a9e6</td><td data-color="fleece">#87a9e6</td><td data-color="teddy">#87a9e6</td><td data-color="reference">#6b8bd4</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">基础长度按每丝 0.64–1.32 倍随机变化；短底绒采用 0.42 倍长度，飞毛采用 1.5 倍长度。卷曲参数控制曲线扰动，其数值不等于最终毛束外径。</p>
+    <div class="settings">
+      <article class="setting"><h3>原生毛丝与密度</h3><p>Catmull–Rom Hair Curves，每根身体毛丝 12 个控制点。四组样片各含 90,000 根短底绒、85,000 根表层毛、2,500 根飞毛；完整角色为 669,000 根身体毛与 90,000 根帽毛。基础半径 0.00024–0.00040，向末端收细。</p></article>
+      <article class="setting"><h3>纤维材质与光照</h3><p>Principled Hair BSDF · Chiang · 直接颜色。四种毛料中的 A/B/C 为 <code>#87a9e6</code>，D 与完整导向候选为 <code>#6b8bd4</code>；纵向粗糙度 0.48、径向 0.55、随机粗糙度 0.13、Coat 0。面光源功率 480 / 150 / 200 W，尺寸 3.3 / 3.2 / 2.8 场景单位。</p></article>
+      <article class="setting"><h3>固定样片镜头与输出</h3><p>正交相机位置 <code>(1.3, −4.5, 0.95)</code>，朝向原点，正交尺度 1.56。Cycles OptiX，AgX / Medium High Contrast；开启 OpenImageDenoise。实际分辨率、采样与耗时逐份读取 JSON。</p></article>
+    </div>
+    <details><summary>复现命令与参数说明</summary><pre>从项目目录运行，使用新的 tag 保存新结果：
+blender -b --python tooling/blender/plush_cycles.py -- --kind swatch --variant reference --resolution 768 --samples 96 --tag review-1
+blender -b --python tooling/blender/plush_cycles.py -- --kind character --variant reference --resolution 1536 --samples 384 --tag review-1
+blender -b --python tooling/blender/plush_cycles.py -- --kind character --variant reference --resolution 1024 --samples 128 --angle 25 --tag review-1-angle25
+
+A/B/C 样片分别使用 --variant velvet / fleece / teddy。
+v3 六份输出的版本源快照与 SHA-256 保存在同名文件和 JSON 中。
+
+完整 v6 的导向、soft-tip 分布与几何弧长归一使用独立实验脚本，保存到新的 tag：
+blender -b --python tooling/blender/plush_groom_ab.py -- --mode curve --profile soft-tip --preserve-arc-length --kind character --variant reference --resolution 1536 --samples 384 --tag review-guide-length-1
+实验输出同时保存冻结的 v3 基线与当时实验逻辑的两份源快照。
+
+可调项：--resolution / --samples / --density / --angle / --tag
+请采用目标文件 JSON 中的 resolution、samples、angle_degrees 和实际毛丝数量。
+生成器默认值不一定等于每一份交付文件的渲染设置。</pre></details>
+  </section>
+
+  <section id="method" aria-labelledby="method-heading">
+    <div class="section-head">
+      <div><p class="section-number">04 / METHOD &amp; SOURCES</p><h2 id="method-heading">可编辑工程，明确的交付边界</h2></div>
+      <p><a href="../tooling/blender/plush_cycles.py" download>下载当前生成脚本 plush_cycles.py ↗</a><br><a href="../notes/cycles-material-study.md">阅读本轮制作记录与视觉差距 ↗</a><br><a href="../notes/plush-method-selection.md">阅读方法选型与网页转换路线 ↗</a></p>
+    </div>
+    <div class="method-grid">
+      <article class="method">
+        <h3>冻结的 v3 基线与导向实验</h3>
+        <ol class="steps">
+          <li><strong>网格形体与毛根定位</strong>按参考主视角建立填充形体，以计算所得表面位置、法线和切向方向确定毛根与毛流；尚未建立曲线表面附着关系。</li>
+          <li><strong>短底绒、卷曲表层与飞毛</strong>脚本直接创建原生 Hair Curves，以固定种子与分组方向生成邻近毛根、小幅不规则卷曲、下垂与部分聚束。帽下与眼部附近缩短身体毛丝。</li>
+          <li><strong>独立导向与长度实验层</strong>在冻结基线上，保存隐藏的完整导向曲线与 guide_id 映射，依次比较表层毛的收拢目标、沿长分布与几何弧长约束，保留随机抽样并逐丝测量实际弧长。</li>
+          <li><strong>纤维散射与路径追踪</strong>Cycles 计算毛丝散射、接触阴影和光照反弹，保存可编辑 .blend、静态 PNG 与实际运行参数 JSON。</li>
+          <li><strong>下一步按画面验收</strong>继续对照参考的细密毛层、轮廓、帽褶与形体；验收后再比较多视图高斯拟合或实时毛发方案。</li>
+        </ol>
+        <p>原生曲线与材质可在 Blender 检查和编辑；v6 及 A/B/C/D/E 为脚本导向实验，没有 live Geometry Nodes groom 树。独立 GN1/GN2/GN3/GN4/GN5 小样另有实际节点链与可编辑导向；这些工程均未建立曲线表面附着或交互梳理笔刷，没有自动图像重建、毛发动力学或多视图训练。网页表示和展示方式需要另行制作与验证。</p>
+      </article>
+      <aside class="method" aria-labelledby="source-heading">
+        <h3 id="source-heading">方法依据与官方资料</h3>
+        <ul class="source-list">
+          <li><a href="https://docs.blender.org/manual/en/5.0/render/shader_nodes/shader/hair_principled.html" target="_blank" rel="noopener noreferrer">Blender · Principled Hair BSDF ↗</a><small>纤维着色节点、Chiang 模型与直接颜色参数；本轮使用该节点，渲染器为 Cycles。</small></li>
+          <li><a href="https://www.disneyanimation.com/publications/a-practical-and-controllable-hair-and-fur-model-for-production-path-tracing/" target="_blank" rel="noopener noreferrer">Chiang 等 · 毛发与皮毛路径追踪模型，2016 ↗</a><small>本轮纤维散射的方法依据；论文不负责恢复角色形体或生成 groom。</small></li>
+          <li><a href="https://docs.blender.org/manual/en/latest/sculpt_paint/curves_sculpting/brushes/add_curves.html" target="_blank" rel="noopener noreferrer">Blender · 原生曲线毛发编辑 ↗</a><small>后续表面附着与曲线编辑的能力参考；本轮曲线由脚本直接创建，尚未建立附着或梳理笔刷。</small></li>
+          <li><a href="https://docs.blender.org/manual/en/latest/addons/scene_gltf2.html" target="_blank" rel="noopener noreferrer">Blender · glTF 导出边界 ↗</a><small>网页转换需评估几何与材质表达范围；本轮没有导出等画质的 GLB 或网页毛发资产。</small></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <footer>
+    <nav class="entrances" aria-label="保留的四个网页入口"><a href="../web/index.html">毛绒工作室 ↗</a><a href="../web/world.html">毛绒小世界 ↗</a><a href="../web/studio.html">陪伴工作室 ↗</a><a href="../web/splat.html">高斯毛绒展台 ↗</a></nav>
+    <p class="footer-note">本对照页仅加载本地图片和参数文件；不读取或写入作品、收藏、个人记录与浏览器存储。旧版 <a href="reference-comparison.html">高斯 v4 图片对照</a>与四个原有入口继续保留；旧网页的交互资产尚未切换为本轮离线候选。</p>
+  </footer>
+</main>
+<script>
+  // Read-only metadata display; no asset generation and no browser storage.
+  document.querySelectorAll('.render img').forEach((img) => {
+    const showMissing = () => { img.closest('.frame').querySelector('.missing').hidden = false; };
+    img.addEventListener('error', showMissing);
+    if (img.complete && !img.naturalWidth) showMissing();
+  });
+  const formatCount = (value) => Number.isFinite(value) ? value.toLocaleString('zh-CN') : '未记录';
+  document.querySelectorAll('[data-study]').forEach(async (figure) => {
+    try {
+      const response = await fetch(figure.dataset.renderReceipt || `cycles-study/${figure.dataset.study}.json`);
+      if (!response.ok) return;
+      const data = await response.json();
+      if (!data.rendered) {
+        figure.querySelector('.record').textContent = 'JSON 记录为未执行渲染；请检查对应工程和图像。';
+        return;
+      }
+      if (figure.dataset.renderReceipt) {
+        const seconds = Number.isFinite(data.seconds) ? data.seconds.toFixed(2) : '未记录';
+        figure.querySelector('.record').textContent = `实际 GPU 渲染 · ${data.resolution} × ${data.resolution} · ${data.samples} 样本上限 · 渲染计时 ${seconds} 秒；不含生成与 CPU 预检`;
+        return;
+      }
+      const counts = data.body_hair_counts || {};
+      const bodyTotal = Object.values(counts).reduce((sum, count) => sum + (Number.isFinite(count) ? count : 0), 0);
+      const gpu = (data.devices || []).find((device) => device.enabled);
+      const deviceText = gpu ? ` · ${gpu.type}` : '';
+      const hatText = data.hat_hairs ? ` + 帽毛 ${formatCount(data.hat_hairs)}` : '';
+      const angleText = data.angle_degrees ? ` · 方位偏转 ${data.angle_degrees}°` : '';
+      figure.querySelector('.record').textContent = `Blender ${data.blender} · ${data.resolution} × ${data.resolution} · ${data.samples} 样本上限${deviceText}${angleText} · 身体毛丝 ${formatCount(bodyTotal)}${hatText} · 生成与渲染总计 ${data.seconds} 秒`;
+      if (figure.dataset.variant && data.preset) {
+        for (const key of ['length', 'curl', 'turns', 'lean', 'clump']) {
+          const cell = document.querySelector(`[data-param="${figure.dataset.variant}.${key}"]`);
+          if (cell && Number.isFinite(data.preset[key])) cell.textContent = String(data.preset[key]);
+        }
+        const colorCell = document.querySelector(`[data-color="${figure.dataset.variant}"]`);
+        if (colorCell && /^#[0-9a-fA-F]{6}$/.test(data.fiber_color_srgb)) colorCell.textContent = data.fiber_color_srgb;
+      }
+    } catch {
+      // file:// may block fetch; static labels and direct JSON links remain usable.
+    }
+  });
+</script>
+</body>
+</html>

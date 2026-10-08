@@ -1,0 +1,170 @@
+{
+  "threeRevision": "180",
+  "pipeline": {
+    "viewport": [
+      256,
+      256
+    ],
+    "pixelRatio": 1,
+    "opaqueBackgroundLinearRGB": [
+      0,
+      0,
+      0
+    ],
+    "colorTargetType": "HalfFloatType",
+    "renderTargetColorSpace": "Linear-sRGB (Three.js render-target shader output)",
+    "finalOutputColorSpace": "sRGB",
+    "toneMapping": "NoToneMapping",
+    "pixelFilterVariance": 0,
+    "opacityCompensation": 1,
+    "gaussianSampling": "Means aligned to exact framebuffer pixel centers",
+    "toleranceBytes": 2
+  },
+  "splats": {
+    "red": {
+      "color": [
+        0.6,
+        0.02,
+        0.04
+      ],
+      "opacity": 0.45
+    },
+    "cyan": {
+      "color": [
+        0.05,
+        0.45,
+        0.6
+      ],
+      "opacity": 0.65
+    }
+  },
+  "webgl": {
+    "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "shadingLanguage": "WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)",
+    "vendor": "Google Inc. (Google)",
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  "cases": [
+    {
+      "name": "cyan in front of red: linear half-float composition + OutputPass",
+      "framebufferPixel": [
+        128,
+        128
+      ],
+      "sortedIndices": [
+        0,
+        1
+      ],
+      "observedRGBA": [
+        100,
+        148,
+        169,
+        255
+      ],
+      "expectedLinearRGB": [
+        0.127,
+        0.29565,
+        0.3963
+      ],
+      "expectedSRGB": [
+        0.3915163267386418,
+        0.5799554341224525,
+        0.6624018458615193
+      ],
+      "expectedRGBA": [
+        100,
+        148,
+        169,
+        255
+      ],
+      "incorrectPerSplatSRGB_RGBA": [
+        73,
+        122,
+        141,
+        255
+      ],
+      "maxChannelErrorBytes": 0,
+      "incorrectPipelineMaxErrorBytes": 28,
+      "pass": true
+    },
+    {
+      "name": "object rotated 180 degrees: red in front of cyan",
+      "framebufferPixel": [
+        127,
+        128
+      ],
+      "sortedIndices": [
+        1,
+        0
+      ],
+      "observedRGBA": [
+        146,
+        115,
+        132,
+        255
+      ],
+      "expectedLinearRGB": [
+        0.287875,
+        0.16987500000000005,
+        0.23250000000000004
+      ],
+      "expectedSRGB": [
+        0.5729437938514675,
+        0.44904936508089305,
+        0.5194629513872118
+      ],
+      "expectedRGBA": [
+        146,
+        115,
+        132,
+        255
+      ],
+      "incorrectPerSplatSRGB_RGBA": [
+        114,
+        81,
+        98,
+        255
+      ],
+      "maxChannelErrorBytes": 0,
+      "incorrectPipelineMaxErrorBytes": 34,
+      "pass": true
+    },
+    {
+      "name": "control: direct sRGB framebuffer blends encoded per-splat color",
+      "framebufferPixel": [
+        128,
+        128
+      ],
+      "sortedIndices": [
+        0,
+        1
+      ],
+      "observedRGBA": [
+        73,
+        122,
+        141,
+        255
+      ],
+      "expectedRGBA": [
+        73,
+        122,
+        141,
+        255
+      ],
+      "linearPipelineExpectedRGBA": [
+        100,
+        148,
+        169,
+        255
+      ],
+      "maxChannelErrorBytes": 0,
+      "differenceFromLinearPipelineBytes": 28,
+      "pass": true
+    }
+  ],
+  "pass": true,
+  "checkedAtUTC": "2026-10-02T04:54:52.677Z",
+  "pageURL": "http://127.0.0.1:8875/projects/005-plush-lab/.tmp/splat-v2-color-validation/fixture.html",
+  "pageErrors": [],
+  "consoleErrors": []
+}

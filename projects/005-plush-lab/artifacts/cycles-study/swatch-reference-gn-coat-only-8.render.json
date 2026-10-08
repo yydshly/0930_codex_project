@@ -1,0 +1,34 @@
+{
+  "rendered": true,
+  "kind": "swatch",
+  "blend": "swatch-reference-gn-coat-only-8.blend",
+  "png": "swatch-reference-gn-coat-only-8.png",
+  "seconds": 6.365784900001017,
+  "resolution": 768,
+  "samples": 96,
+  "blend_sha256": "82c5f3c24b458660dfe96a0154c1d49e3154f45f5576fe0926ca936c0058b397",
+  "png_sha256": "366e8bac67d86453b03e6adbb74fd174d4885820892f9d66ca83fb9819132a99",
+  "wrapper_source_sha256": "0c8c14cc9d13c9d436f00f5b2c0d14b3b8acc800a3ffc007325d22aa4fad3dd0",
+  "case": "coat-only",
+  "visible_layers": [
+    "coat"
+  ],
+  "devices": [
+    {
+      "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+      "type": "CUDA",
+      "use": false
+    },
+    {
+      "name": "13th Gen Intel Core i9-13980HX",
+      "type": "CPU",
+      "use": false
+    },
+    {
+      "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+      "type": "OPTIX",
+      "use": true
+    }
+  ],
+  "blender": "5.2.2 LTS"
+}

@@ -27,14 +27,25 @@
 
 GitHub Actions 的构建、47 项检查与部署成功；45 个在线资源返回 HTTP 200。图片二进制哈希精确一致，文本内容按 Linux 发布换行核对一致；已有 001–003 入口也已检查。详见 [线上校验记录](../projects/004-rhythm-drop/notes/deployment-checks.json)。
 
+## 毛绒实验室完整发布
+
+2026-10-08：[毛绒实验室总览](https://yydshly.github.io/0930_codex_project/projects/005-plush-lab/)作为统一入口，沿用已有的能力与原理引导图。说明包括研究背景、能力、实际实现原理、使用场景、个人意义、方法依据与限制。
+
+发布保留 `projects/005-plush-lab/` 原有结构：6 个工作台网页、4 个研究 / 来源网页及新增工程档案均接入总览。完整 6 块原作 SOG、manifest、研究样片、参数、日志、冻结生成脚本、源码和许可随站发布。54 个 `.blend` 约 3.6 GB 保留在原本机；公开工程入口显示文件清单及 SHA-256，不提供虚假下载。
+
+真实 AI 后端尚未启用，公网工作室不会探测访客的 `127.0.0.1` 服务。笔记、成长和固定任务使用浏览器本地存储，提醒需页面运行；原作嵌入查看器依赖外部服务。部署到 GitHub Pages 后是新的浏览器存储来源，本机已有作品不会自动迁移，应在本机页面先导出，再在支持导入的对应工作台恢复；陪伴记录目前只有导出备份，没有恢复导入入口。
+
+005 的打包由 `scripts/plush_publish.py` 完成：保留目录和相对链接，排除隐藏配置、依赖、原生大工程，将历史本机页面地址转为公开相对入口，并将 `.blend` 下载改为档案入口。`_site/projects/005-plush-lab/notes/publication-manifest.json` 记录实际发布范围。其他项目沿用原有打包方法。
+
 ## 自动发布流程
 
 工作流为 `.github/workflows/pages.yml`，推送 `main` 或手动运行时：
 
 1. 检查项目清单与首页一致性。
 2. 运行 Python 清单、打包与声音社区测试，witr / Rhythm Drop 的 JavaScript 语法及声音机制测试。
-3. 执行 `python scripts/build_site.py`，汇总已登记项目中的静态演示。
-4. 上传 `_site/` 并部署到 GitHub Pages。
+3. 安装毛绒实验室的锁定依赖，运行完整测试并重建 6 个工作台模块。
+4. 执行 `python scripts/build_site.py`，汇总已登记项目中的静态演示。
+5. 上传 `_site/` 并部署到 GitHub Pages。
 
 仓库 Pages 发布来源已设为 GitHub Actions。所有子项目共用一个工作流，避免互相覆盖站点。不要把本地预览地址填入 `projects.json`；公开地址验证后才填写 `demo`。
 

@@ -1,0 +1,40 @@
+毛绒实验室 · 全程能力与实现原理总图
+日期：2026-10-03
+
+交付：capabilities-principles-summary.png（2560×3050）与同内容 SVG 矢量版。
+方式：代码原生矢量布局；Python Pillow 使用本机微软雅黑绘制同内容 PNG。
+源脚本：render-summary-diagram.py；未修改任何已有图片、作品或个人数据。
+图片生成工具曾尝试两次，均返回网络错误，没有得到或使用生成图片。
+原始尝试提示词保留于 summary-image-prompt.txt，最终图的文字以脚本和来源数据为准。
+
+汇总来源：
+../../src/project-overview-data.js
+../../src/project-journal-data.js
+../../README.md
+../../notes/research.md
+../../notes/gaussian-splatting.md
+../../notes/plush-method-selection.md
+../../notes/cycles-material-study.md
+
+范围：10 个历史阶段、9 组方法、124 条内置历史及个人补充。
+总图用六个区域归纳已有能力；研究与资产交换在九组方法区单独呈现。
+图中分别标出：已实现、资产接入、实验验证、待接入 / 方法参考。
+资料范围已汇总不表示所有功能已经实现，旧测试与渲染只证明对应历史轮次。
+
+关键边界：
+程序毛丝支持局部剪、染、卷、梳与恢复；原作高斯编辑是位置、方向与尺度的近似。
+原作尚无真实毛根、逐根毛丝物理、局部剪染或换装；程序角色具有原有换装能力。
+原作保留烘焙外观，场景灯光不重新求解物理纤维散射。
+3DGS 显示与程序前向实验已经使用，本项目没有训练或照片重建原作。
+二维 Mip 过滤与受限 PLY 交换属于程序高斯展台；Spark 负责本地原作显示。
+陪伴笔记、页面内提醒、实际事件成长与固定任务已经运行；真实 AI 尚未启用。
+Blender / Cycles 已实际渲染，自制材质没有达到用户认可的原作质感。
+Houdini、LichtFeld、GaussianHair、Volumetric Sheen 分别是参考或待接入方向。
+
+原作资产：ChatGPT dots - Felipe，作者 abstrakt，CC BY 4.0。
+来源：https://superspl.at/scene/ca6a4c9b
+许可：https://creativecommons.org/licenses/by/4.0/
+本项目完成本地加载、工作台场景适配与近似编辑。
+
+验证：summary-image-validation.json 保存画幅、覆盖范围与文字宽度检查。
+图面已检查中文文字、状态边界、箭头、裁切与署名；页面另经浏览器观察确认。

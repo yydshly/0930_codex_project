@@ -1,0 +1,119 @@
+{
+  "status": "passed",
+  "mode": "curve",
+  "profile": "soft-tip",
+  "name": "swatch-reference-ab-soft-tip-1",
+  "report": "swatch-reference-ab-soft-tip-1.ab-report.json",
+  "baseline_source": "artifacts\\cycles-study\\character-reference-v3.source.py",
+  "baseline_sha256": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3",
+  "current_plush_cycles_sha256": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3",
+  "current_source_matches_frozen_v3": true,
+  "wrapper_source": "tooling\\blender\\plush_groom_ab.py",
+  "wrapper_sha256": "37f0fe24d6ed95b9826ae99cc77ed8c0317c787703088be0d9f5d4b0fda7bef6",
+  "forwarded_arguments": [
+    "--kind",
+    "swatch",
+    "--variant",
+    "reference",
+    "--resolution",
+    "768",
+    "--samples",
+    "96",
+    "--tag",
+    "ab-soft-tip-1"
+  ],
+  "formula": {
+    "A": "X_i(t) + alpha(t) * D_i",
+    "B": "X_i(t) + beta(t) * (D_i + U_guide(t) - (X_i(t) - p_i))",
+    "D_i": "Tangential projection of group_root - member_root, exactly as v3",
+    "guide": "group_root + (X_representative(t) - representative_root)",
+    "representative": "Deterministically nearest existing member root to group root"
+  },
+  "controls": "Frozen v3 source, random samples, roots, group membership, generated L/curl/phase/lean, radii, curve count, non-coat layers, materials, density, camera, lights and Cycles settings are unchanged between modes with the same forwarded arguments.",
+  "length_scope": "Only generated length samples are fixed; actual Catmull-Rom arc lengths may change.",
+  "unchanged_objects": {
+    "Blue pile · undercoat": {
+      "curve_count": 90000,
+      "positions_float32_sha256": "b1a76c65c818b6d4cc86d55f3ad7d112cca1cf437ab990247f67816c56d60ffc",
+      "radii_float32_sha256": "163bedc07ee3c01338485437faa8c0eb414892480b732e2889e4621c3dbff473"
+    },
+    "Blue pile · flyaway": {
+      "curve_count": 2500,
+      "positions_float32_sha256": "03783b0f1e3e0ec1ae34ce096f1ff942a973784744f561b58aca107fdb218543",
+      "radii_float32_sha256": "7ba573a1309693e1e743ce51237f17ed4889f65867a06e7818abd1a095e440d1"
+    }
+  },
+  "coat": {
+    "curve_count": 85000,
+    "points_per_curve": 12,
+    "guide_count": 2657,
+    "members_per_group": 32,
+    "seed": 51,
+    "clump_factor": 0.6,
+    "alpha_profile": "preset.clump * t^2",
+    "profile": "soft-tip",
+    "profile_function": "beta(t) = .88 * smoothstep(clamp(t / .52, 0, 1)) * (1 - .30 * smoothstep(clamp((t - .55) / .45, 0, 1)))",
+    "midpoint_tightness_t_0_5": 0.8761948111060537,
+    "tip_tightness_t_1": 0.616,
+    "residual_formula": "output - p_i - beta*D_i - U_guide = (1-beta)*(U_i-U_guide)",
+    "guide_object": "Blue pile · hidden coat guides",
+    "guides_hide_render": true,
+    "guides_hide_viewport": true,
+    "guide_mapping_attribute": "guide_id (INT, CURVE domain; indexes hidden guide object)",
+    "guide_id_sha256": "04749bca8dab3028b4eb5e0d0a0d639213dc9be5547e118c6edbc79dc9a8a36d",
+    "representative_member_sha256": "5b1164acd6cbfe005035569c740834bdae6925e5ae65ea922910cee94bf32063",
+    "root_replay_error_max": 0.0,
+    "b_vs_a_root_error_max": 0.0,
+    "native_vs_a_root_error_max": 0.0,
+    "a_reconstruction_error_max": 1.1102230246251565e-16,
+    "target_replacement_residual_error_max": 6.505213034913027e-17,
+    "a_positions_float32_sha256": "9152b9e5d798315014a68df68bae0b885fc1bc031de6d04aa4220feb4a5667d1",
+    "b_positions_float32_sha256": "b4070797578d5c6cc4e1a006748f1e7daee0c90bd53407c678b240943489e1eb",
+    "output_positions_float32_sha256": "b4070797578d5c6cc4e1a006748f1e7daee0c90bd53407c678b240943489e1eb",
+    "unchanged_radii_float32_sha256": "e9200e7ef02861031b21e7ee3de37b8c643f3aee1942cf6dcc0ec8cabded748b",
+    "arc_length": {
+      "method": "Gauss-Legendre integration of noncyclic uniform Catmull-Rom spline with duplicated end controls, using saved float32 positions",
+      "quadrature_order": 32,
+      "native_basis_source": "https://raw.githubusercontent.com/blender/blender/main/source/blender/blenkernel/intern/curve_catmull_rom.cc",
+      "a": {
+        "minimum": 0.030454838433767742,
+        "maximum": 0.10755031994483809,
+        "mean": 0.05693102762555881,
+        "median": 0.05634619683181907,
+        "p95": 0.07477829778396869,
+        "p99": 0.08292643526090977
+      },
+      "b": {
+        "minimum": 0.03205877301741704,
+        "maximum": 0.16363537206010367,
+        "mean": 0.06659707440785764,
+        "median": 0.06420678308593841,
+        "p95": 0.09465662215128395,
+        "p99": 0.11079264517731983
+      },
+      "b_minus_a": {
+        "minimum": -0.03181596376638776,
+        "maximum": 0.08902555445068308,
+        "mean": 0.00966604678229882,
+        "median": 0.007187429662969983,
+        "p95": 0.03858391705457232,
+        "p99": 0.05453900252577954
+      },
+      "b_minus_a_relative": {
+        "minimum": -0.40960719635367004,
+        "maximum": 2.020254136989435,
+        "mean": 0.19574360470810556,
+        "median": 0.1280780602363955,
+        "p95": 0.795001359797499,
+        "p99": 1.1688942159060405
+      },
+      "absolute_relative_drift_p95": 0.795001359797499,
+      "quadrature_check_subset_count": 2048,
+      "a_order16_vs32_absolute_max": 1.5626389071599078e-14,
+      "b_order16_vs32_absolute_max": 1.265015869833519e-12,
+      "scope": "Generated L samples unchanged. Actual geometric arc length may change; no length restoration is applied."
+    }
+  },
+  "rendered": true,
+  "wrapper_snapshot": "swatch-reference-ab-soft-tip-1.ab-source.py"
+}

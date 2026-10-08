@@ -1,0 +1,74 @@
+{
+  "status": "engineering_precheck_passed",
+  "rendered": false,
+  "kind": "character",
+  "blend": "character-reference-fine-bundle-v14.blend",
+  "png": "character-reference-fine-bundle-v14.png",
+  "preview_png": "character-reference-fine-bundle-v14.preview.png",
+  "saved_blend_sha256": "caf1414603e03cfae03b447969158642a4642e4560677fd63db1f1c4a7e5cfa3",
+  "wrapper_source_sha256": "2abf069acaff683d139acf20dafff0293fe86f34e0b5df082c5230a7d08e464d",
+  "source_snapshot": "character-reference-fine-bundle-v14.source.py",
+  "dependencies": {
+    "character-reference-guide-v6.blend": "9d3adeb4bc4e4a85b3ee8b7de282770de09810dc4f52ba0397412b7cbbe1a60f",
+    "character-reference-guide-v6.png": "72b81df3009d7396df05d142192641abf458a5527a258703c60838954e3ba228",
+    "swatch-reference-gn-bundle-scale-half-live-14.blend": "62223943752472c6be9bfa92d1f65de557723d7bcddb1d5df33fc819129effed",
+    "swatch-reference-gn-bundle-scale-half-live-14.source.py": "fd49cc328e6a43f8af93c3f2cf85f9d3eed479e2bad983d32ee20b36bc49d137",
+    "swatch-reference-gn-nearest-render-3.gn-source.py": "be7730c0ddba22109ebc31dd44e8660672df7fd2cb8d361093688ce9fcc2c927",
+    "character-reference-v3.source.py": "69df6504ddc4412c1279f7f40f2baa8ae45fbedc6649e64cdc7cb1d175039dc3"
+  },
+  "scope": "Full compound recipe migration, not isolated A/B; no visual match/softness/paper solver claim",
+  "coat": {
+    "object": "Blue pile · coat",
+    "curves": 320000,
+    "controls": 12,
+    "roots_float32_sha256": "5e7a68335d1b764659fb6de1091419db1e4e649fa3775486d3a98c12aaa04756",
+    "native_positions_float32_sha256": "a399bee0e84f302df22f12ae38efe13bd73f6200f2c210689f4d5468e9821406",
+    "evaluated_positions_float32_sha256": "f10d87f7eefa054ead688cc3a0a9265ce5f6ae5974ae6925e120064ea5613259",
+    "radii_float32_sha256": "325ca244f91609d41b27c46a4e743f461949fbfbe89fcd5f25dd148802dc92a7"
+  },
+  "guides": {
+    "object": "Pile guides · editable live input",
+    "curves": 40000,
+    "selection": "Every eighth original v6 coat root in stable order",
+    "selected_root_indices_int32_sha256": "4c0911a84529f2904e841010d266d9dbf2a600ba9bbed6995a05e0219d178808",
+    "shape": "Actual GN14 half native controls decomposed in swatch normal/tangent frame, reoriented to full numerical star normals, 1.55 times feature-compressed height/width"
+  },
+  "mapping": {
+    "attribute": "pile_guide_index",
+    "dtype": "INT",
+    "domain": "CURVE",
+    "offset": 320000,
+    "ids_int32_sha256": "fb05f052751630be8ad9166808b4a06248f7018f36ccc43348cada998edc3c84",
+    "method": "mathutils KDTree Euclidean roots, no dense matrix",
+    "minimum_children": 1,
+    "maximum_children": 39,
+    "mean_children": 8.0
+  },
+  "features": {
+    "normal_attribute": "full_star_normal",
+    "compression_attribute": "full_feature_compression",
+    "source": "Frozen v3 body_surface/surface_frame outward numerical cross and exact v3 groom face/beret compression formula",
+    "compressed_roots": 43923
+  },
+  "changes": [
+    "Live official GN14 Curl/Clump along-length profile/SetHairProfile/rootlock chain",
+    "40k actual full root guides /320k children",
+    "Star surface normals and face/hat compression in native guide and live Curl radius",
+    "Existing full undercoat .35 length and flyaway hidden"
+  ],
+  "checks": {
+    "native_root_replay_bitwise": true,
+    "actual_final_roots_bitwise": true,
+    "finite_positive_radii": true,
+    "all_guide_groups_nonempty": true,
+    "v6_eyes_hat_camera_lights_transforms_preserved": true,
+    "source_dependencies_unchanged": true
+  },
+  "seconds": 16.18214779999107,
+  "resolution": 1536,
+  "samples": 256,
+  "render_receipts": [
+    "character-reference-fine-bundle-v14.preview.render.json",
+    "character-reference-fine-bundle-v14.render.json"
+  ]
+}

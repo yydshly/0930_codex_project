@@ -5,6 +5,7 @@ import shutil
 from urllib.parse import urlsplit
 
 from projects import ROOT, project_path, validate
+from plush_publish import publish_plush
 
 
 def build(root=ROOT):
@@ -21,8 +22,12 @@ def build(root=ROOT):
             continue
         destination = output / relative
         destination.mkdir(parents=True, exist_ok=True)
-        # Ship public assets only, never configuration, notes or dependencies.
-        for asset in source.rglob("*"):
+        # Plush Lab includes a public research archive whose relative directory
+        # structure connects demos, renders, source snapshots and study pages.
+        if project["id"] == 5 and project["slug"] == "plush-lab":
+            publish_plush(root / relative, destination)
+        # Other demos retain their established, flattened web publication.
+        for asset in (() if project["id"] == 5 and project["slug"] == "plush-lab" else source.rglob("*")):
             # Case studies can carry actual exported artifacts and public evidence.
             relative_asset = asset.relative_to(source)
             case_export = (relative_asset.parts[0] == "cases" and
