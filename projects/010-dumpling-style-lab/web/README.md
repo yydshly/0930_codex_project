@@ -2,7 +2,7 @@
 
 本目录提供 Dumpling Style Lab 的静态网页：从 Dumpling Dell 案例出发，展示游戏类型、视角、操作、参与方式及画面语言的差异。页面既有可操作短样例，也有研究结论、原作参考、早期画风附录和历史快照。**2026-10-08 整理阶段继续暂停新增试玩和探测玩法深度。**
 
-[首页](index.html#site-hub) · [预定发布入口（待部署验收）](https://yydshly.github.io/0930_codex_project/projects/010-dumpling-style-lab/) · [完整项目理解与历史](../README.md) · [高清引导图](assets/project-overview-20261006.jpg)
+[首页](index.html#site-hub) · [完整公开入口（已验证）](https://yydshly.github.io/0930_codex_project/projects/010-dumpling-style-lab/) · [完整项目理解与历史](../README.md) · [高清引导图](assets/project-overview-20261006.jpg)
 
 [![游戏探索全景引导图](assets/project-overview-20261006.jpg)](assets/project-overview-20261006.jpg)
 
@@ -92,7 +92,15 @@ python -m http.server 8962 --bind 127.0.0.1 --directory projects/010-dumpling-st
 
 本地访问 [http://127.0.0.1:8962/index.html](http://127.0.0.1:8962/index.html)。多数样例及资源从本站加载，不需要另装前端依赖。原作 iframe 与参考原站受外部联网条件影响。
 
-仓库构建命令为 `python scripts/build_site.py`，本项目输出至 `_site/projects/010-dumpling-style-lab/`；发布使用项目子路径，必须携带图片、模型、纹理、声音、供应商模块、许可和历史版资源。预定地址为 [GitHub Pages 项目首页](https://yydshly.github.io/0930_codex_project/projects/010-dumpling-style-lab/)，待部署检查后才表示实测上线。发布到新域名后，本机旧域名的浏览器存档不会自动迁移。
+仓库构建命令为 `python scripts/build_site.py`，本项目输出至 `_site/projects/010-dumpling-style-lab/`；发布使用项目子路径，必须携带图片、模型、纹理、声音、供应商模块、许可和历史版资源。正式地址为 [GitHub Pages 项目首页](https://yydshly.github.io/0930_codex_project/projects/010-dumpling-style-lab/)，已完成发布与验收。发布到新域名后，本机旧域名的浏览器存档不会自动迁移。
+
+## 正式发布与验收 · 2026-10-08
+
+[完整在线首页](https://yydshly.github.io/0930_codex_project/projects/010-dumpling-style-lab/) · [研究集总入口](https://yydshly.github.io/0930_codex_project/) · [本次 Pages 部署](https://github.com/yydshly/0930_codex_project/actions/runs/37740060422)。23 个当前与历史 HTML 页面、2,686 个运行文件（285,083,336 字节）已完整上线；全部公网文件的大小与 SHA-256、公开清单及既有引导图一致。首页直接关联全部相关页面，显著提供六类入口、四张实机预览、十五个方向和原有版本。
+
+247 个运行脚本语法与 71 套既有回归在 Linux CI 中通过；21 项代表性公网浏览器检查覆盖总目录跳转、桌面与手机首页、实机预览、三维驾驶、横版移动、路线制图与撤销、服务范围和原作在线入口。该范围不等于每款游戏全部流程或商业质量验收。清单生成已统一为跨平台的大小写敏感路径分量排序。
+
+[发布摘要](../notes/deployment-summary.json) · [全部文件核对](../notes/publication-online-checks-20261008.json) · [浏览器与截图记录](../notes/publication-online-browser-20261008.json)。两项服务实验保留公开预览或制图，房间同步和接棒需要本机后端；旧域名存档不会自动迁移。
 
 ## 历史网页说明（原文保留）
 

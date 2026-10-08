@@ -24,7 +24,7 @@ def publish_dumpling(project_root, destination):
         raise ValueError('Dumpling publication destination cannot be a symlink')
     destination.mkdir(parents=True, exist_ok=True)
     records = []
-    for asset in sorted(source.rglob('*')):
+    for asset in sorted(source.rglob('*'), key=lambda item: item.relative_to(source).parts):
         relative = asset.relative_to(source)
         if any(part.startswith('.') or part in {'node_modules', '__pycache__',
                 'private', 'secrets'} for part in relative.parts):

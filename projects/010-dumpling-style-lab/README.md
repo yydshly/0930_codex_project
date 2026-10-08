@@ -4,7 +4,7 @@
 
 **2026-10-08 发布整理：当前阶段为沉淀整理，暂停新增试玩和继续探测玩法深度。** 本轮集中说明已有能力、入口、真实效果和后续记录。既有游戏、原画版本、研究附录与历史验收资料继续保留。
 
-[预定发布首页（部署验收前）](https://yydshly.github.io/0930_codex_project/projects/010-dumpling-style-lab/) · [网页说明](web/README.md) · [阶段沉淀](web/research.html) · [完整高清引导图](web/assets/project-overview-20261006.jpg)
+[完整在线首页（已验证）](https://yydshly.github.io/0930_codex_project/projects/010-dumpling-style-lab/) · [网页说明](web/README.md) · [阶段沉淀](web/research.html) · [完整高清引导图](web/assets/project-overview-20261006.jpg)
 
 [![项目全景引导图：原作能力、二十种材质、三段早期体验、九款故事、107 个形式、十五个独立方向、技术与未来记录](web/assets/project-overview-20261006.jpg)](web/assets/project-overview-20261006.jpg)
 
@@ -136,7 +136,15 @@ python -m http.server 8962 --bind 127.0.0.1 --directory projects/010-dumpling-st
 
 打开 [本地首页](http://127.0.0.1:8962/index.html)。静态站点构建从仓库根目录执行 `python scripts/build_site.py`，本项目输出到 `_site/projects/010-dumpling-style-lab/`。构建应携带运行时资源、来源许可、引导图、当前页面与保留的历史版本，并验证相对链接适用于项目子路径。
 
-本轮预定发布入口为 [GitHub Pages 项目首页](https://yydshly.github.io/0930_codex_project/projects/010-dumpling-style-lab/)；以上地址在部署验收前仅作为目标入口，实际远端结果由发布检查记录确认。
+正式发布入口为 [GitHub Pages 项目首页](https://yydshly.github.io/0930_codex_project/projects/010-dumpling-style-lab/)，已通过完整文件与代表性浏览器验收。
+
+## 正式发布与验收 · 2026-10-08
+
+[完整在线首页](https://yydshly.github.io/0930_codex_project/projects/010-dumpling-style-lab/) · [研究集总入口](https://yydshly.github.io/0930_codex_project/) · [本次 Pages 部署](https://github.com/yydshly/0930_codex_project/actions/runs/37740060422)。23 个当前与历史 HTML 页面、2,686 个运行文件（285,083,336 字节）已完整上线；全部公网文件的大小与 SHA-256、公开清单及既有引导图一致。首页直接关联全部相关页面，显著提供六类入口、四张实机预览、十五个方向和原有版本。
+
+247 个运行脚本语法与 71 套既有回归在 Linux CI 中通过；21 项代表性公网浏览器检查覆盖总目录跳转、桌面与手机首页、实机预览、三维驾驶、横版移动、路线制图与撤销、服务范围和原作在线入口。该范围不等于每款游戏全部流程或商业质量验收。清单生成已统一为跨平台的大小写敏感路径分量排序。
+
+[发布摘要](notes/deployment-summary.json) · [全部文件核对](notes/publication-online-checks-20261008.json) · [浏览器与截图记录](notes/publication-online-browser-20261008.json)。两项服务实验保留公开预览或制图，房间同步和接棒需要本机后端；旧域名存档不会自动迁移。
 
 ## 历史实现与验收记录（原文保留）
 

@@ -117,3 +117,14 @@ python -m http.server 8938 --bind 127.0.0.1 --directory _site
 ## 后端扩展
 
 GitHub Pages 不运行 Python、Node.js 等后端，也不能从浏览器直接枚举访客系统进程。真实 witr Web 面板需另建本地后端，受控调用 witr 并解析 JSON；持续历史数据、存储与告警也需要额外实现。服务端密钥不能写进静态前端资源。
+
+
+## Dumpling 游戏方向研究完整发布
+
+2026-10-08：[完整游戏探索入口](https://yydshly.github.io/0930_codex_project/projects/010-dumpling-style-lab/) · [探索沉淀](https://yydshly.github.io/0930_codex_project/projects/010-dumpling-style-lab/research.html) · [原有全景引导图](https://yydshly.github.io/0930_codex_project/projects/010-dumpling-style-lab/assets/project-overview-20261006.jpg)。研究集首页与项目首页同时提供能力摘要、六类入口、实机效果预览、十五个独立方向、原有九款和历史画风。摘要按定位、能力、展示、原理、参考、价值、扩展和边界整理，说明 116 = 107 + 9、15 另列，十二项后续方向未启动。使用既有 2400 × 9344 JPEG，图像字节保持不变。
+
+完整发布 23 个当前与历史页面、2,686 个公共运行文件（285,083,336 字节），包含模型、纹理、声音、模块、来源许可和历史版本；每份公网文件大小与 SHA-256 均通过检查，公开清单与跨平台构建一致。247 个 JavaScript 语法检查及 71 套既有回归在 [Pages 工作流](https://github.com/yydshly/0930_codex_project/actions/runs/37740060422) 中通过。21 项代表性公网浏览器检查覆盖目录入口、桌面与手机、三维驾驶、横版移动、制图撤销、原作启动画面及公开服务范围，未据此声称所有样例达到商业成品质量。
+
+深蓝议会提供场景预览；月湾接力支持真实路线制图。房间同步、投票和异步接棒仍依赖本机后端，公开页不调用访客本机服务。原作与官方参考继续使用外部链接；浏览器原有本机存档不会自动跨域迁移。源码、网页、研究说明、验收材料和 108 份引用或回归所需原素材已提交；未引用的原始下载、模型与制作中间文件留在本机，并记录路径、大小和哈希，不影响公开网页资源完整性。
+
+详情：[发布记录](../projects/010-dumpling-style-lab/notes/deployment-summary.json)、[全量文件核对](../projects/010-dumpling-style-lab/notes/publication-online-checks-20261008.json)、[浏览器检查](../projects/010-dumpling-style-lab/notes/publication-online-browser-20261008.json)与[原素材范围](../projects/010-dumpling-style-lab/notes/publication-source-scope-20261008.json)。

@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-08",
+  "public_url": "https://yydshly.github.io/0930_codex_project/projects/010-dumpling-style-lab/",
+  "catalog_url": "https://yydshly.github.io/0930_codex_project/",
+  "content_commit": "c2313b51770348f0a91b4efafbb19dd2c1589341",
+  "verified_actions_run": 37740060422,
+  "actions_url": "https://github.com/yydshly/0930_codex_project/actions/runs/37740060422",
+  "deployed": true,
+  "pages": 23,
+  "runtime_files": 2686,
+  "runtime_bytes": 285083336,
+  "syntax_files": 247,
+  "regression_suites": 71,
+  "representative_browser_checks": 21,
+  "guide": {
+    "path": "assets/project-overview-20261006.jpg",
+    "bytes": 1985913,
+    "sha256": "7eef18cd174b9198803134e4ff6cf5d72ae4f7a42df6a266c23518a75288c771"
+  },
+  "scope": {
+    "forms": 107,
+    "earlier_games": 9,
+    "showcase_entries": 116,
+    "independent_directions": 15,
+    "future_notes_not_started": 12,
+    "source_evidence_files": 108
+  },
+  "checks": [
+    "publication-online-checks-20261008.json",
+    "publication-online-browser-20261008.json",
+    "publication-source-scope-20261008.json"
+  ],
+  "boundaries": [
+    "Finite research prototypes; browser checks cover representative interactions, not every game or commercial quality.",
+    "Assembly public scene preview and Postway route drawing are available; room and relay backends remain local-only.",
+    "Original game and reference sites remain external; existing localhost saves do not automatically migrate to the public origin.",
+    "Complete public runtime committed; uncited raw models, downloads and production intermediates remain in the original local assets archive with hashes."
+  ]
+}
