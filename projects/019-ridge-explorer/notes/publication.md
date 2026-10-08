@@ -14,4 +14,10 @@
 - [019 实时骑行](https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/)
 - [018 已保存的风景](https://yydshly.github.io/0930_codex_project/projects/018-ridge-atmosphere-lab/)
 
-实际提交、构建部署状态、本机和在线校验结果见 `deployment-checks.json`、`publication-local-browser.json` 和 `publication-online-browser.json`；上线后填入确认记录。
+内容提交 [`2df8e326`](https://github.com/yydshly/0930_codex_project/commit/2df8e32629d7c7a6b0a183c48496ca36c5e569f3) 已推送远端 main；[GitHub Pages 构建与部署](https://github.com/yydshly/0930_codex_project/actions/runs/37819977961)成功。正式完整理解页、019 实时场景和 018 保存基线均已在浏览器打开核对。
+
+公网 33 个 019 资源、14 个 018 运行资源以及全部 18 个演示入口均 HTTP 200。公开清单的大小与 SHA-256 完全匹配；019 中 32 项与 Git 提交字节精确一致，重新构建的 index.html 标签、属性和正文全部一致。总目录只存在 Windows 与 Linux 换行差异。营地引导图 SHA 与原实拍相同，冻结 ZIP 的固定哈希、105 成员和 CRC 均通过。
+
+桌面 1280×820 与窄屏 390×844、320×780 阅读布局没有页面横向溢出；完整文章、场景往返、三地点地图、真实 PNG 预览、独立基线与总目录链接均核对。PNG 预览实际为 1280×820，当前记录不声称捕获了下载事件，也不等于实体手机 GPU、统一帧率或人工听感验收。原有 43 项场景测试本次再次通过；发布 worktree 的 Python 共 79 项，其中 72 项执行通过、7 项旧 Windows 符号链接权限测试跳过，新增六项发布测试全部执行。
+
+详细实测见 [公网文件检查](deployment-checks.json)、[本机网页检查](publication-local-browser.json)、[公网网页检查](publication-online-browser.json)。可运行 `python projects/019-ridge-explorer/tooling/verify-publication-online.py` 复核该内容提交；脚本只读取公网与 Git 源码，不发布或修改冻结基线。

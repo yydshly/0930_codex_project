@@ -13,7 +13,13 @@
     "scene_map_opens_with_three_landmarks_and_route_distances": true,
     "scene_png_preview_generated_1280x820": true,
     "scene_return_to_understanding_link_navigates": true,
-    "scene_console_errors_or_warnings_observed": 0
+    "scene_console_errors_or_warnings_observed": 0,
+    "ten_selected_gallery_images_decode_successfully": true,
+    "baseline_018_independent_scene_renders_without_console_errors": true,
+    "hero_original_link_opens_full_1280x720_capture": true,
+    "catalog_has_18_remote_projects_and_two_clear_ridge_cards": true,
+    "catalog_ridge_summaries_cover_position_capabilities_principles_scenes_value_extensions_limits": true,
+    "catalog_ridge_cards_link_scene_article_baseline_gallery_downloads_and_sources": true
   },
   "tests": {
     "python_total": 79,
@@ -30,5 +36,71 @@
     "Browser download event capture timed out after the PNG preview was generated. This record verifies the data:image/png preview and download link, not a new filesystem download.",
     "Viewport tests are browser layout checks, not physical phone performance or human sound-quality evaluation."
   ],
-  "screenshots": ["../assets/publication-desktop.png", "../assets/publication-mobile.png", "../assets/publication-gallery.png"]
+  "screenshots": [
+    "../assets/publication-desktop.png",
+    "../assets/publication-mobile.png",
+    "../assets/publication-gallery.png"
+  ],
+  "gallery_images": [
+    {
+      "name": "explorer-v2-camp-polished.png",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "explorer-v2-production.png",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "explorer-v2-route.png",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "explorer-v2-creek-photo.png",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "explorer-lookout-final.png",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "explorer-v2-mobile-final.png",
+      "format": "JPEG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "explorer-v2-camp-polished-export.png",
+      "format": "PNG",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "explorer-v2-creek-export.png",
+      "format": "PNG",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "name": "explorer-v2-comparison.jpg",
+      "format": "JPEG",
+      "width": 1600,
+      "height": 480
+    },
+    {
+      "name": "explorer-v2-camp-comparison.jpg",
+      "format": "JPEG",
+      "width": 1600,
+      "height": 480
+    }
+  ]
 }

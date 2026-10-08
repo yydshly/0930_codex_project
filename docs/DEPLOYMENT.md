@@ -1,5 +1,17 @@
 # Web 演示部署
 
+## 山脊场景、骑马探索与完整理解发布
+
+2026-10-09：018 与 019 已正式上线：[完整理解与全部入口](https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/understanding.html) · [019 自由骑马探索](https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/) · [018 保存的风景基线](https://yydshly.github.io/0930_codex_project/projects/018-ridge-atmosphere-lab/)。总首页摘要完整说明定位、能力、原理、实际展示、用途、价值、扩展和边界；场景、基线、图库、源码、下载和许可均有明显链接。引导使用我们的真实营地效果，十张选定实拍、PNG 导出和版本对照保留原有内容及历史日期。
+
+完整网页说明从风景布局、骑手与拖动修整，到“先保存 018、再独立扩展 019”的过程。当前能力包括真实三维地形、体积雾和植被、自由骑行、连通小径、三处发现、12 秒巡游停留、地点观察、摄影、可选合成环境音和浏览器续骑。场景编辑器、完整四肢 IK、任务剧情、影片导出和云协作明确为后续方向。公网与本机属于不同存储来源，旧骑行不会自动迁移。
+
+内容提交 [`2df8e326`](https://github.com/yydshly/0930_codex_project/commit/2df8e32629d7c7a6b0a183c48496ca36c5e569f3) 的 [Pages 构建与部署](https://github.com/yydshly/0930_codex_project/actions/runs/37819977961)成功。33 个 019 公共资源、14 个 018 运行资源以及全部 18 个演示入口均 HTTP 200。公开清单大小和 SHA-256 全部一致；32 个 019 资源与 Git 源字节相同，重新构建的 index.html 标签、属性及正文一致。总目录仅有换行差异，远端原 16 项完整保留。
+
+018 的只读恢复包含 105 个文件、30,828,413 字节，SHA-256 为 `b00777aab6da43248644f415f8f23eeca44750ad02fa4d91a82b9b66741a5c7d`；固定哈希、逐文件内容与 CRC 均通过。下载不含依赖安装目录、私有环境文件或访客骑行存档。公网桌面与窄屏布局、实际三维渲染、地图、PNG 预览及场景往返均已检查；这不代表实体手机性能或人工音质评审，也不声称本次捕获了浏览器下载事件。
+
+详见 [发布说明](../projects/019-ridge-explorer/notes/publication.md)、[公网文件检查](../projects/019-ridge-explorer/notes/deployment-checks.json)、[本机网页检查](../projects/019-ridge-explorer/notes/publication-local-browser.json)与[公网网页检查](../projects/019-ridge-explorer/notes/publication-online-browser.json)。`scripts/ridge_publish.py` 按固定白名单发布，完整源码、历史实拍及验证资料保存在 GitHub。
+
 ## Waterfalls Lab 完整理解与交互发布
 
 2026-10-09：第 017 项已正式上线：[互动水景工作室](https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/) · [完整理解与全部入口](https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/understanding.html) · [EA 二维原版对照](https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/upstream/)。总首页摘要按定位、能力、原理、展示、场景、价值和边界说明；工作室、完整理解、真实效果、六类产品、原图、来源许可和 GitHub 源码均有明显入口。
