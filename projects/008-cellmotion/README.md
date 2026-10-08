@@ -2,7 +2,9 @@
 
 先看原作动效和成片，再理解可编辑能力、实现原理和使用场景。
 
-[理解总览网页](web/summary.html) · [全部理解汇总](notes/understanding-summary.md) · [打开效果展厅](web/index.html) · [动手实验室](web/workshop.html) · [怎样提问和扩展](notes/workshop.md) · [原库](https://github.com/opc8838-hub/font-animation) · [原作者官网](https://opc8838-hub.github.io/font-animation/cellmotion.html#stories) · [深入研究](notes/research.md)
+[完整在线入口与原作展厅](https://yydshly.github.io/0930_codex_project/projects/008-cellmotion/) · [动手实验室](https://yydshly.github.io/0930_codex_project/projects/008-cellmotion/workshop.html) · [理解总览与引导图](https://yydshly.github.io/0930_codex_project/projects/008-cellmotion/summary.html) · [3 支原作成片](https://yydshly.github.io/0930_codex_project/projects/008-cellmotion/#stories) · [全部动效目录](https://yydshly.github.io/0930_codex_project/projects/008-cellmotion/#motion-index)
+
+[全部理解汇总](notes/understanding-summary.md) · [怎样提问和扩展](notes/workshop.md) · [深入研究](notes/research.md) · [原库](https://github.com/opc8838-hub/font-animation) · [原作者官网](https://opc8838-hub.github.io/font-animation/cellmotion.html#stories)
 
 | 信息 | 内容 |
 | --- | --- |
@@ -11,13 +13,15 @@
 | 目录范围 | 69 条记录：37 个 ready、32 个 pending；19 个已完成动效有原作视频预览 |
 | 根许可证 | [CC BY-NC-SA 4.0](https://github.com/opc8838-hub/font-animation/blob/bee7ddfc2b1f487e08aa79a3b91af7628f040eb1/LICENSE)；各第三方资源另有许可 |
 | 演示方式 | 原作者在线媒体、按需嵌入的原编辑器、本地原创原理示意 |
-| 在线发布 | 正在按仓库 GitHub Pages 流程发布；公开 demo 在 HTTPS 验证成功后登记 |
+| 在线发布 | 2026-10-08 已通过 GitHub Pages 发布；3 个页面、15 个公共文件内容及 42 项线上浏览器检查通过 |
 
 ## 完整网站与主要入口
 
 网站同时提供原作展厅、原创动效实验室和理解总览三个页面。展厅开头的入口区直接连接四种可编辑演示、总览图、全部动效目录、三支原作成片、AI 日报扩展方案、原作者网站和完整研究资料；仓库研究集首页也提供这些入口。摘要按定位、能力、效果、原理、场景、价值、工具比较、扩展和边界逐项说明。
 
 本次发布沿用上方已生成的理解总览图，PNG 内容不变。原作视频、封面和编辑器仍由原作者网站提供，原创实验室与理解总览由本站完整发布。源库能力采用 2026-10-02 固定提交的研究范围，发布验证另行记录。
+
+首次内容发布提交为 [643537e2](https://github.com/yydshly/0930_codex_project/commit/643537e2ac736866bfa2700ae05fd78307cd6137)，[Pages 构建与部署](https://github.com/yydshly/0930_codex_project/actions/runs/37734271754)成功。公网核对全部 15 个文件的 HTTP 200 与 SHA-256，42 项浏览器交互检查通过；13 个研究入口和既有项目链接可访问。PNG 原图校验值为 `d982837123f17f1f83e9e7a664f9e31cbedf6d5d603553b8f874b21b5d822ffe`。实测包含原作视频、三支成片播放、原编辑器打开、实验室导出与恢复、原图下载、内部锚点和手机布局；没有以访问检查替代所有编辑器功能实测。
 
 ## 一张图整理所有理解
 
@@ -111,6 +115,8 @@ python -m http.server 8958 --bind 127.0.0.1 --directory projects/008-cellmotion/
 - [版本与范围](notes/source-lock.json)：源库 commit、研究日期和引用方式。
 - [网站发布清单](notes/publication-manifest.json)：三个网页及全部静态文件、沿用原图的 SHA-256、外部媒体范围。
 - [本机发布检查](notes/publication-browser-local.json)：42 项实际播放、原编辑器、跨页导航、全部内部链接、PNG/JSON 保存与恢复、原图下载、桌面与手机布局检查通过。
+- [线上发布检查](notes/deployment-checks.json)与[线上浏览器验证](notes/publication-browser-online.json)：全部 15 个公共文件内容及 42 项浏览器检查通过，无脚本错误或访客本机服务请求。
+- [相关入口核对](notes/publication-entries.json)与[发布记录](notes/deployment-summary.json)：研究集首页、原站、研究文档及既有公开项目地址均可访问。
 - [发布前原站地址检查](notes/publication-upstream-checks.json)：2026-10-08 的 99 个媒体、封面与编辑器地址 HEAD 检查通过；只证明可访问，不代表全部编辑器功能实测。
 - [验证脚本](tooling/verify.cjs)：使用本机已有 Playwright / Chrome。
 - 页面的目录、文案、样式、交互、截图和研究文档均在本子项目内，总清单通过 scripts/projects.py 管理。

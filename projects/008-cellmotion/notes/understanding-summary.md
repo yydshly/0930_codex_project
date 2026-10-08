@@ -121,4 +121,4 @@ HeyGen 既有数字人配置，也提供自动视频制作功能。可以用它�
 - 原库证据与验证：[research.md](research.md)、[verification.json](verification.json)、[layout-verification.json](layout-verification.json)。
 - 实验室交互验证：[workshop-verification.json](workshop-verification.json)。
 
-2026-10-08 将本次完整研究纳入仓库既有 GitHub Pages 发布流程：原作展厅、原创实验室和理解总览同时发布，研究集入口沿用已生成的总览图，并逐项说明摘要和边界。公开地址与线上验证在项目 README 和 deployment-checks.json 登记。没有调用外部视频生成服务，AI 日报流程仍是扩展方案。
+2026-10-08 已将本次完整研究纳入仓库既有 GitHub Pages 发布流程：[原作展厅](https://yydshly.github.io/0930_codex_project/projects/008-cellmotion/)、[原创实验室](https://yydshly.github.io/0930_codex_project/projects/008-cellmotion/workshop.html)和[理解总览](https://yydshly.github.io/0930_codex_project/projects/008-cellmotion/summary.html)同时发布，研究集入口沿用已生成的总览图，并逐项说明摘要和边界。全部 15 个公共文件 HTTP 200 / SHA-256 及 42 项线上浏览器检查通过，13 个研究和既有项目入口可访问；公开地址与记录见项目 README、deployment-checks.json 和 publication-browser-online.json。没有调用外部视频生成服务，AI 日报流程仍是扩展方案。

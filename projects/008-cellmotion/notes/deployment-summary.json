@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-08",
+  "site": "https://yydshly.github.io/0930_codex_project/projects/008-cellmotion/",
+  "pages": ["index.html", "workshop.html", "summary.html"],
+  "content_commit": "643537e2ac736866bfa2700ae05fd78307cd6137",
+  "workflow": {
+    "run_id": 37734271754,
+    "url": "https://github.com/yydshly/0930_codex_project/actions/runs/37734271754",
+    "build": "success",
+    "deploy": "success"
+  },
+  "guide": {
+    "path": "assets/understanding-map.png",
+    "width": 1600,
+    "height": 1760,
+    "sha256": "d982837123f17f1f83e9e7a664f9e31cbedf6d5d603553b8f874b21b5d822ffe",
+    "unchanged_from_previous_user_approved_diagram": true
+  },
+  "verification": {
+    "public_file_hashes": {"passed": 15, "total": 15, "record": "deployment-checks.json"},
+    "local_browser": {"passed": 42, "total": 42, "record": "publication-browser-local.json"},
+    "online_browser": {"passed": 42, "total": 42, "record": "publication-browser-online.json"},
+    "public_entrances": {"passed": 13, "total": 13, "record": "publication-entries.json"},
+    "upstream_addresses": {"passed": 99, "total": 99, "method": "HEAD", "record": "publication-upstream-checks.json"},
+    "script_errors": [],
+    "public_requests_to_local_services": []
+  },
+  "scope": {
+    "source_research_date": "2026-10-02",
+    "source_commit": "bee7ddfc2b1f487e08aa79a3b91af7628f040eb1",
+    "upstream_media": "Author-hosted media and on-demand editors require network access; original media are not redistributed.",
+    "workshop": "Independent JavaScript and Canvas 2D demonstrations with PNG/JSON export and import.",
+    "future_work": "AI services, voice, video encoding, full compositions and automated daily-news production are not implemented.",
+    "availability_boundary": "HEAD checks prove URL availability, not full interaction regression of all editors or other projects."
+  }
+}

@@ -18,6 +18,6 @@ workshop.html 是新增原创实验室：motion-engine.js 提供四种由配置�
 
 summary.html 为理解汇总页，summary.css 提供响应式排版。assets/understanding-map.svg 与 .png 是一张总览图的矢量与位图版本，页面可查看和下载。汇总包括源库能力效果、技术原理、Remotion/HeyGen 对比、网页功能、个人价值和 AI 日报方案；详细来源见 ../notes/understanding-summary.md。tooling/verify-summary.cjs 可重新渲染 PNG 并验证下载、入口与手机浏览。
 
-按仓库现有 scripts/build_site.py 打包到 _site/projects/008-cellmotion/，通过 GitHub Pages 发布。正式地址和验证结果在项目 README 与 notes/deployment-checks.json 登记。publication.css 提供展厅的三个主要入口和相关链接；研究集首页也展示原有总览图及实验室、总览、成片案例等入口。
+2026-10-08 已通过仓库 GitHub Pages 发布：[完整入口](https://yydshly.github.io/0930_codex_project/projects/008-cellmotion/) · [实验室](https://yydshly.github.io/0930_codex_project/projects/008-cellmotion/workshop.html) · [理解总览](https://yydshly.github.io/0930_codex_project/projects/008-cellmotion/summary.html)。scripts/build_site.py 打包到 _site/projects/008-cellmotion/。15 个公共文件和 42 项线上浏览器检查通过，记录在项目 README 和 ../notes/。publication.css 提供展厅的三个主要入口和相关链接；研究集首页也展示原有总览图及实验室、总览、成片案例等入口。
 
 tooling/publication.py prepare 生成全部静态资源清单并确认原图未改变；verify --url <公开地址> --commit <提交> 逐文件核对线上内容。tooling/verify-publication.cjs 对本机打包站或公开站点执行实际播放、导航、配方、导出与移动布局检查。原作媒体与编辑器需要联网，本站没有接入 AI 服务、音轨或视频编码。

@@ -67,6 +67,14 @@ Pages构建与部署成功。35个线上入口和资源HTTP 200及SHA-256核对�
 
 正式发布已验证：[完整在线入口](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/) · [全景图](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/understanding-map.html) · [理解汇总](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/understanding.html)。首次发布提交 `30de87156e75d445225ad7e72e2a2af946db4595` 的 [Pages 构建与部署](https://github.com/yydshly/0930_codex_project/actions/runs/37731603242)及目录检查均成功。6 个页面、94 个文件和 68 个地址通过真实 HTTPS 检查；公开文件大小、SHA-256 与线上清单一致，引导图与既有 PNG 完全一致。10 项线上浏览器检查全部通过，包括桌面/手机入口、马桶与耳机非空实时模型、实际 PNG/ZIP 下载及无本机模型请求。详情见 [文件检查](../projects/011-combination-soup-studio/notes/deployment-checks.json)、[浏览器检查](../projects/011-combination-soup-studio/notes/publication-online-browser.json)和[发布记录](../projects/011-combination-soup-studio/notes/deployment-summary.json)。
 
+## CellMotion 完整动效研究发布
+
+2026-10-08：[完整入口与原作展厅](https://yydshly.github.io/0930_codex_project/projects/008-cellmotion/) · [原创动效实验室](https://yydshly.github.io/0930_codex_project/projects/008-cellmotion/workshop.html) · [理解总览与原图](https://yydshly.github.io/0930_codex_project/projects/008-cellmotion/summary.html)。研究集首页显著提供三个入口、全部 37 项已完成动效目录、3 支成片案例、AI 日报扩展方案、原站与研究资料；摘要按定位、能力、效果、原理、场景、价值、Remotion / HeyGen 比较、扩展和边界展开。使用原有 1600 × 1760 理解总览 PNG，内容和 SHA-256 保持一致。
+
+通过既有静态打包流程完整发布三个网页及 15 个公共文件；原作媒体、封面与按需编辑器仍从原作者网站加载。源库能力保留 2026-10-02 的固定版本研究范围。实验室是原创 JS + Canvas 2D，实现四种演示、图片替换、时间控制、需求生成及 PNG/JSON 保存与恢复；AI、配音、视频编码、整片和自动日报尚未接入。
+
+首次内容提交 [643537e2](https://github.com/yydshly/0930_codex_project/commit/643537e2ac736866bfa2700ae05fd78307cd6137) 的 [Pages 检查、构建与部署](https://github.com/yydshly/0930_codex_project/actions/runs/37734271754)成功。全部 15 个公共文件通过 HTTP 200 和 SHA-256 核对，42 项公网浏览器检查通过；实际验证原作视频与三支成片播放、原编辑器打开、导出与配方恢复、PNG/SVG 原图下载、全部内部链接与锚点及桌面/手机布局。13 个研究与既有项目入口、99 个原站媒体和编辑器地址可访问；地址检查不等同所有编辑器功能回归。详情见 [发布记录](../projects/008-cellmotion/notes/deployment-summary.json)、[文件核对](../projects/008-cellmotion/notes/deployment-checks.json)和[浏览器记录](../projects/008-cellmotion/notes/publication-browser-online.json)。
+
 ## 自动发布流程
 
 工作流为 `.github/workflows/pages.yml`，推送 `main` 或手动运行时：
