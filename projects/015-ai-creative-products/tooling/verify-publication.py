@@ -26,13 +26,16 @@ class Page(HTMLParser):
             if value: self.links.append(value)
 
 
-def verify(base):
+def verify(base, expected_manifest=None):
     base = base.rstrip('/') + '/'
     def read(path):
         with urlopen(Request(urljoin(base, path), headers={'User-Agent': 'CreativeLibraryPublicationCheck/1.0'}), timeout=60) as response:
             return response.status, response.read()
     status, raw = read('publication-manifest.json')
     manifest = json.loads(raw)
+    if expected_manifest:
+        expected = json.loads(Path(expected_manifest).read_text(encoding='utf-8'))
+        assert manifest['files'] == expected['files'], 'The public bundle does not yet match the current reviewed publication'
     def check(record):
         status, data = read(record['path'])
         digest = hashlib.sha256(data).hexdigest()
@@ -65,8 +68,8 @@ def verify(base):
 
 
 if __name__ == '__main__':
-    p = argparse.ArgumentParser(); p.add_argument('--base-url', required=True); p.add_argument('--report', required=True)
-    args = p.parse_args(); result = verify(args.base_url)
+    p = argparse.ArgumentParser(); p.add_argument('--base-url', required=True); p.add_argument('--report', required=True); p.add_argument('--expected-manifest')
+    args = p.parse_args(); result = verify(args.base_url, args.expected_manifest)
     target = Path(args.report); target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
     print(json.dumps({key: value for key, value in result.items() if key != 'files'}, ensure_ascii=False))

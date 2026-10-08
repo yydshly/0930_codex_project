@@ -20,7 +20,7 @@
 
 ![十项能力演示](assets/overview.png)
 
-[打开原作与当前画面对照](http://127.0.0.1:8975/?v=16#products) · [网页入口](web/index.html) · [十例参考与差距](notes/ten-demos.md) · [八组产品计划](notes/product-opportunities.md) · [原始来源与范围](notes/research.md)
+[打开原作与当前画面对照](https://yydshly.github.io/0930_codex_project/projects/015-ai-creative-products/#products) · [网页入口](web/index.html) · [十例参考与差距](notes/ten-demos.md) · [八组产品计划](notes/product-opportunities.md) · [原始来源与范围](notes/research.md)
 
 ## 第 05、07、09、10 项逐项精修 v16
 
@@ -212,6 +212,6 @@ v11 的新增验收分别记录在 [02 人物回应](notes/case-02-recorder-chec
 
 上一版 notes/ten-demos-verification.json 保留为历史记录，它不证明改造后实现已验收。原作播放、页面研究交互与额外 ARC 的既有验证继续保留。测试通过数量不等于原作完整复现或商业有效。
 
-[Min Choi 原串帖](https://x.com/minchoi/status/2105685231298630009) · [串帖镜像](https://threadreaderapp.com/thread/2105685231298630009.html)。当前为本地研究与交互交付，未公开发布，未接入在线订单、联机或收费；真实用户与商业效果待验证。
+[Min Choi 原串帖](https://x.com/minchoi/status/2105685231298630009) · [串帖镜像](https://threadreaderapp.com/thread/2105685231298630009.html)。当前已静态公开发布，未接入在线订单、联机或收费；真实用户与商业效果待验证。
 
 [返回研究集](../../README.md)

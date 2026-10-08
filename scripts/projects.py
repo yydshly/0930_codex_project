@@ -124,6 +124,8 @@ def render_readme(root, projects):
         if project['slug'] == 'insightface-retrieval':
             source = link(project['reference_name'], project['reference']) + '<br>能力参考：' + code + '<br>后台关联未确认'
         atlas = project["id"] == 6 and project["slug"] == "ai-visual-atlas"
+        if project['slug'] == 'ai-creative-products':
+            source = link(project['reference_name'], project['reference']) + '<br>十位原作者分别署名；十项原型由我们独立实现'
         if atlas:
             source_list = link("十项目源库列表", f"{path}/publication/index.html#library")
             source = (link(project['reference_name'], project['reference'])
@@ -135,6 +137,8 @@ def render_readme(root, projects):
                            else f"源库：{code}。")
             if project['slug'] == 'insightface-retrieval':
                 source_note = f"需求参考：{link(project['reference_name'], project['reference'])}。能力参考：{code}。未确认 AVScan 使用 InsightFace；下图为我们的原创理解汇总。"
+            if project['slug'] == 'ai-creative-products':
+                source_note = f"研究起点：{link(project['reference_name'], project['reference'])}。下图是我们已经生成的能力与范围总览，包含十项真实效果；原型、原作归因和产品建议分别说明。"
             if atlas:
                 source_note = (f"最初来源：{link(project['reference_name'], project['reference'])}。资料索引："
                                f"{code}（其中一个资料项目）。{source_list}。我们的十项目能力与技术总览。")

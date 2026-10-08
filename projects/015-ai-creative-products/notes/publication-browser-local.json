@@ -103,5 +103,11 @@
     "entryReturnsToVisibleOverview": true,
     "case06UnderstandingDeepLink": true,
     "note": "View changes and corresponding content verified through browser DOM; lazy screenshots can settle after initial loading."
+  },
+  "research_image_layout": {
+    "width": 617,
+    "overflow": false,
+    "case_image_ratio": 1.7777777777777777,
+    "fix": "Keep image height automatic when width is responsive; explicit intrinsic dimensions reserve the correct ratio."
   }
 }

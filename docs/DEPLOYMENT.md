@@ -171,3 +171,5 @@ GitHub Pages 不运行 Python、Node.js 等后端，也不能从浏览器直接�
 沿用 2026-10-03 的 3600 × 6640 引导图，PNG 字节与此前生成结果一致。所有运行资源由 `scripts/creative_publish.py` 按项目 `publication-files.json` 的精确路径发布，生成 `publication-manifest.json` 中的大小与 SHA-256。研究笔记、历史截图、源代码和逐项验收一并保存到项目 Git 目录；公开站点只发布所登记的运行资源。
 
 当前为十项独立前端原型，05 / 07 / 09 / 10 为 v16，其余六项为 v15。CSS / Canvas / Three.js 与 Web Audio 提供实际效果，无 Opus API 或模型生成服务。原作者媒体按点击联网加载；WebCodecs 音乐导出需要支持的浏览器与 HTTPS。Blender 新造型、完整物理与商业成效仍未验证。
+
+[正式入口](https://yydshly.github.io/0930_codex_project/projects/015-ai-creative-products/)与[完整理解](https://yydshly.github.io/0930_codex_project/projects/015-ai-creative-products/research.html)已可访问。184 个运行文件、194 处站内链接和原图身份通过全量核对；十项独立演示已做浏览器挂载检查，正式站第 07 项实际场景与夜景控制可用。详见[发布说明](../projects/015-ai-creative-products/notes/publication-20261008.md)、[公网文件核对](../projects/015-ai-creative-products/notes/publication-online-checks.json)与[浏览器记录](../projects/015-ai-creative-products/notes/publication-browser-local.json)。
