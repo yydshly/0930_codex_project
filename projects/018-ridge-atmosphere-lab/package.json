@@ -1,0 +1,10 @@
+{
+  "name": "ridge-atmosphere-lab",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm --prefix app run dev -- --host 127.0.0.1 --port 8988 --strictPort",
+    "build": "npm --prefix app run build && node tooling/build.mjs",
+    "test": "npm --prefix app run test"
+  }
+}

@@ -119,6 +119,16 @@ def render_readme(root, projects):
         path = project_path(project)
         entry = link(project["name"], f"{path}/README.md")
         demo = link("在线演示", project["demo"]) if project["demo"] else "—"
+        ridge_entries = ''
+        if project["id"] == 18 and project["slug"] == "ridge-atmosphere-lab":
+            ridge_entries = (link("019 自由骑马探索", "https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/")
+                             + ' · ' + link("完整理解与保存基线", "https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/understanding.html#saved"))
+        if project["id"] == 19 and project["slug"] == "ridge-explorer":
+            ridge_entries = (link("自由骑马探索", "https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/")
+                             + ' · ' + link("018 基线", "https://yydshly.github.io/0930_codex_project/projects/018-ridge-atmosphere-lab/")
+                             + ' · ' + link("真实效果图", "https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/understanding.html#gallery")
+                             + ' · ' + link("基线下载", "https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/understanding.html#saved")
+                             + ' · ' + link("来源与许可", "https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/understanding.html#sources"))
         code = link(urlsplit(project['repo']).path.strip('/'), project['repo']) if project['repo'] else ''
         source = (link(project['reference_name'], project['reference']) + ('<br>技术：' + code if code else '<br>公开仓库未确认')) if 'reference' in project else code
         if project['slug'] == 'insightface-retrieval':
@@ -131,7 +141,7 @@ def render_readme(root, projects):
             source = (link(project['reference_name'], project['reference'])
                       + '<br>资料索引：' + code + '<br>' + source_list)
         rows.append(f"| {project['id']:03d} | {entry} | {summary_markdown(project['summary'], table=True)} | "
-                    f"{project['status']} | {source} | {demo} |")
+                    f"{project['status']} | {source} | {demo}" + (f"<br>{ridge_entries}" if ridge_entries else '') + " |")
         if project["cover"]:
             source_note = (f"效果来源：{link(project['reference_name'], project['reference'])}。" + (f"技术基础：{code}。" if code else "公开仓库未确认，按公开网页进行研究。") if 'reference' in project
                            else f"源库：{code}。")
@@ -139,6 +149,8 @@ def render_readme(root, projects):
                 source_note = f"需求参考：{link(project['reference_name'], project['reference'])}。能力参考：{code}。未确认 AVScan 使用 InsightFace；下图为我们的原创理解汇总。"
             if project['slug'] == 'ai-creative-products':
                 source_note = f"研究起点：{link(project['reference_name'], project['reference'])}。下图是我们已经生成的能力与范围总览，包含十项真实效果；原型、原作归因和产品建议分别说明。"
+            if project['slug'] in {'ridge-atmosphere-lab', 'ridge-explorer'}:
+                source_note += "下图是我们实际运行的场景效果，原帖只作为风景参考。"
             if atlas:
                 source_note = (f"最初来源：{link(project['reference_name'], project['reference'])}。资料索引："
                                f"{code}（其中一个资料项目）。{source_list}。我们的十项目能力与技术总览。")
@@ -147,7 +159,8 @@ def render_readme(root, projects):
                             f"{source_note}先阅读下方引导图，再进入研究文档与交互演示。\n\n"
                             f"!{link(project['name'] + ' 项目引导图', path + '/' + project['cover'])}\n\n"
                             f"{link('研究详情', path + '/README.md')}"
-                            + (f" · {demo}" if project["demo"] else ""))
+                            + (f" · {demo}" if project["demo"] else "")
+                            + (f"\n\n{ridge_entries}" if ridge_entries else ""))
     index = "\n".join(rows) if projects else "暂无研究项目。添加第一个项目后，这里会自动生成有序索引。"
     content = (root / "README.md").read_text(encoding="utf-8")
     for section, body in [("INDEX", index), ("PREVIEWS", "\n\n".join(previews) or "暂无项目预览。")]:

@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-03",
+  "project": "019-ridge-explorer",
+  "scene": {
+    "command": "npm --prefix projects/019-ridge-explorer/app run test",
+    "passed": 25,
+    "result": "passed",
+    "evidence": "Root agent completed the actual scene suite before the production build; includes real GLB stop-to-rest test."
+  },
+  "packaging": {
+    "command": "python -m unittest discover -s tests -p test_ridge_explorer_site.py -v",
+    "passed": 3,
+    "result": "passed",
+    "scope": "Real production client copied to isolated shared-site fixture; exact models/notices/textures hashes, GLB headers, subpath links, private-file and unrelated-project filtering."
+  },
+  "baseline_packaging": {
+    "command": "python -m unittest discover -s tests -p test_ridge_site.py -v",
+    "passed": 3,
+    "result": "passed"
+  },
+  "catalog": {
+    "command": "python scripts/projects.py check",
+    "registered_projects": 19,
+    "result": "passed"
+  },
+  "limits": [
+    "This record covers automation and the built web tree only.",
+    "Actual browser interactions, PNG pixels and shared-site byte verification are recorded separately after visual QA.",
+    "No physical mobile GPU validation or controlled performance benchmark was run."
+  ],
+  "phase": "First production build before final browser framing polish",
+  "tested_web_build": {
+    "file_count": 18,
+    "compiled_javascript": "assets/index-BWGMA0xQ.js",
+    "compiled_css": "assets/index-ClgrDyKb.css",
+    "files": [
+      {
+        "path": "assets/exploration/campfire_stones.glb",
+        "bytes": 17344,
+        "sha256": "54869db23243a3f4905bc00bd4cd93b1037b28556ab3ef93e7a893a093791e35"
+      },
+      {
+        "path": "assets/exploration/License.txt",
+        "bytes": 611,
+        "sha256": "cb96b75e3560ac78d7a53ce6f083f4cdb5c53faea6141b62d63458dcfe1e4b9d"
+      },
+      {
+        "path": "assets/exploration/log.glb",
+        "bytes": 14288,
+        "sha256": "8c8fe8f6adfc03a3c0cd6cb24961ff74be96c2da284d70322f05797d049972d6"
+      },
+      {
+        "path": "assets/exploration/NOTICE.txt",
+        "bytes": 544,
+        "sha256": "597b337a235f90d3f7012770227d72170a80eaf6c2f10953eaec9e52caebb0c1"
+      },
+      {
+        "path": "assets/exploration/tent_detailedOpen.glb",
+        "bytes": 15324,
+        "sha256": "d54d9665d07e0ff9680e56731c9f5338fc25d93788504d63b8375f54e6444193"
+      },
+      {
+        "path": "assets/foliage-clump.png",
+        "bytes": 2604418,
+        "sha256": "8d4ce54783bba50c8877b81a25a39d692f80137fde0a7807b1ffe81a43d17ba8"
+      },
+      {
+        "path": "assets/HORSE-LICENSE.txt",
+        "bytes": 734,
+        "sha256": "f3b7addd95083b110b42fff58cfdfb89aa8df85c2f598f17f932187907a865d9"
+      },
+      {
+        "path": "assets/horse.glb",
+        "bytes": 181808,
+        "sha256": "bebaa4a60ba373317e25bf20f049f26ad0f5c86d4731ab67d46eb8c93c920947"
+      },
+      {
+        "path": "assets/index-BWGMA0xQ.js",
+        "bytes": 923192,
+        "sha256": "1338e0de82cdcabdb6895f8eeb8f5a653bc90a02624fe7293a2e73c92843ad06"
+      },
+      {
+        "path": "assets/index-ClgrDyKb.css",
+        "bytes": 16065,
+        "sha256": "5825a4003ec947556ba8b1e3c190381706aa66cd812c3601432ae8bf0fb4717e"
+      },
+      {
+        "path": "assets/pbr/ground-diff.jpg",
+        "bytes": 666655,
+        "sha256": "57b8041bfe0d0f01430e4dbaad45e7ddddf0a9fc97317f90dbc51f7b0d9e1b5d"
+      },
+      {
+        "path": "assets/pbr/ground-nor_gl.jpg",
+        "bytes": 904956,
+        "sha256": "1aa3e23bff453f152e089b9f83aa36b4901651e019f7e2ca01d5331a9bbbda78"
+      },
+      {
+        "path": "assets/pbr/ground-rough.jpg",
+        "bytes": 362214,
+        "sha256": "b9f3f76aba74007f708333c0dbe73c52eb83ea0c4187a13e2e994f888a25114a"
+      },
+      {
+        "path": "assets/POLYHAVEN-LICENSE.txt",
+        "bytes": 664,
+        "sha256": "ab3e1c2aad7db1ef06308eef097d5b3732fcbd1bc5d1daf4328e59d616f5675c"
+      },
+      {
+        "path": "assets/source-frame.jpg",
+        "bytes": 42275,
+        "sha256": "a0a35d365f0f5b885a695da706ee0fa64e69ef10e5985cd90b7f6bf329ef8e00"
+      },
+      {
+        "path": "assets/SOURCE-NOTICE.txt",
+        "bytes": 1492,
+        "sha256": "a204f1bd68215ed0599e70d7ec78548f0ff1ff9705d85e22c55e724dbae7cd40"
+      },
+      {
+        "path": "assets/THREE-LICENSE.txt",
+        "bytes": 1081,
+        "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+      },
+      {
+        "path": "index.html",
+        "bytes": 572,
+        "sha256": "829c68b112763b59ade440dc54e36289bad05fe74e3f05bf685970952b86d47d"
+      }
+    ]
+  }
+}

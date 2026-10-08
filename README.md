@@ -1,5 +1,7 @@
 # GitHub 项目研究集
 
+[019 自由骑马探索](https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/) · [完整理解与全部入口](https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/understanding.html) · [我们的真实营地与沿途画面](https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/understanding.html#gallery) · [018 保存基线](https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/understanding.html#saved)：清楚展示场景构建、实际小径导航、三处发现、停留摄影、可选环境音、实现原理、复用价值与扩展边界。
+
 [015 十项创意效果与全部入口](https://yydshly.github.io/0930_codex_project/projects/015-ai-creative-products/) · [完整理解](https://yydshly.github.io/0930_codex_project/projects/015-ai-creative-products/research.html) · [十项原作与当前对照](https://yydshly.github.io/0930_codex_project/projects/015-ai-creative-products/#products)：逐项展示实际效果、实现原理、交付范围、产品扩展与复用价值，沿用原有能力引导图。
 
 [013 完整检索理解与全部入口](https://yydshly.github.io/0930_codex_project/projects/013-insightface-retrieval/) · [原有全景图放大](https://yydshly.github.io/0930_codex_project/projects/013-insightface-retrieval/map.html) · [原理教学示意](https://yydshly.github.io/0930_codex_project/projects/013-insightface-retrieval/mechanisms.html)：区分找人、找出处与语义检索，保留源库能力、完整说明、实际价值与 14 组来源。
@@ -36,6 +38,8 @@
 | 015 | [AI Creative Products · 十项创意效果库](projects/015-ai-creative-products/README.md) | **定位：** 以十个 Opus 社区案例为参考的原创浏览器效果库<br>**效果：** 空间作品集、任务街区、观点叙事、发布动效、机房生存、角色钢琴、研究集市、软胶角色、营地折射水体与车球挑战<br>**原理：** 1 个 CSS、2 个 Canvas、7 个 Three.js 原型，时间表、任务状态与物理规则分别驱动实际反馈，Web Audio 同步音乐<br>**交付：** 分例支持离线 HTML、无声或配乐 WebM、WAV、PNG、脚本及体验 JSON，附 Python / Blender 配方<br>**展示：** 十项真实效果、原作对照、独立试玩、完整理解、来源与原有总览图<br>**价值：** 展示已有研究、制作发布内容、验证产品体验，复用内容配置、场景与交付流程<br>**扩展：** 展厅、训练、课程与品牌影片、角色组件、环境导览和操控活动<br>**边界：** 05 / 07 / 09 / 10 为 v16，其他六项为 v15，无模型生成后台，Blender 新造型与商业成效未验证，物理和资产仍有限。 | 已完成 | [Min Choi · 十个 Opus 创作案例合集](https://x.com/minchoi/status/2105685231298630009)<br>十位原作者分别署名；十项原型由我们独立实现 | [在线演示](https://yydshly.github.io/0930_codex_project/projects/015-ai-creative-products/) |
 | 016 | [Chippytea Lab · 功能与声画编排研究](projects/016-chippytea-lab/README.md) | **定位：** Mac 清理应用及手绘互动官网的完整研究<br>**能力：** 真实功能结果与角色、动作、音乐时间及频谱、用户参与和世界积累共同编排<br>**展示：** 原有理解总览图、三个 32 秒原创小世界、原作对照、纸墨实验、研究回执与全文档案<br>**原理：** 共享视觉规则和音乐时间，功能事件触发独立动作，浏览器状态留下记忆<br>**价值：** 让结果可感知，形成原创产品性格并复用声画表达<br>**扩展：** 知识收藏、任务习惯与专注、素材整理、创作展示、互动课程和音乐叙事编辑器<br>**边界：** 花园与影子已有 MiniMax 配乐，月亮待生成；公开回执只读，Mac 引擎、真实业务集成及收益未验证。 | 已完成 | [richiemcilroy/chippytea](https://github.com/richiemcilroy/chippytea) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/016-chippytea-lab/) |
 | 017 | [Waterfalls Lab · 实时瀑布与流体造景](projects/017-waterfalls-lab/README.md) | **定位：** 可编辑自然场景与流体交互基座，受 Waterfalls Dream 启发的独立浏览器三维水景<br>**能力：** 体素造景、岩石与多水源编辑、实时水流、撤销重做、镜头收藏、沉浸观看及作品保存<br>**原理：** WebGPU 三维 PB-MPM / APIC、体素碰撞场、Worker 地形网格与屏幕空间水面光学合成<br>**展示：** 互动工作室、完整理解页、EA 二维原版对照、真实 V9 效果、原有汇总 PNG / SVG、示例与冻结源码基线<br>**场景：** 自然场景创作、互动展示、水流解谜、定性教学、素材生产、作品平台<br>**价值：** 复用已验证的模拟、渲染与编辑基础，积累可再编辑作品，按业务需求补接入层和规则<br>**边界：** 固定小范围视觉模拟，需 WebGPU；公共 SDK、动态刚体、任意模型、视频、云协作与工程精度待建，手机硬件与统一帧率未验证。 | 已完成 | [Mogmek · Waterfalls Dream 演示](https://x.com/mogmek/status/2105966008720900321)<br>技术：[electronicarts/pbmpm](https://github.com/electronicarts/pbmpm) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/) |
+| 018 | [Ridge Atmosphere Lab · 山脊气象与保存基线](projects/018-ridge-atmosphere-lab/README.md) | **定位：** 山脊风景构建与骑行镜头的已保存基线<br>**能力：** 真实三维山体、草木风动、谷雾与三种天气、骑手跟随、直接拖动环绕、暂停和 PNG 保存<br>**原理：** Three.js / WebGL 高度场、扫描地表、实例草灌、马匹形变与骑手联动、实际深度裁剪的体积雾<br>**展示：** 原版实时场景、我们的实机画面、完整理解和源码资源 ZIP<br>**场景：** 风景体验、镜头展示与大气植被研究<br>**价值：** 保存已经认可的构图、资源与交互，作为后续场景的独立复用基础<br>**扩展：** 019 自由骑马、连通路线、地点发现、停留与摄影<br>**边界：** 有限地形与固定骑行路线，沿用奔跑形变，原游戏名称与实现未核实，实体手机 GPU 未实测。 | 已归档 | [tententen\_777 · 原始山脊骑行风景参考](https://x.com/tententen_777/status/2106077153293115629)<br>技术：[mrdoob/three.js](https://github.com/mrdoob/three.js) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/018-ridge-atmosphere-lab/)<br>[019 自由骑马探索](https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/) · [完整理解与保存基线](https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/understanding.html#saved) |
+| 019 | [Ridge Explorer · 自由骑马探索与完整理解](projects/019-ridge-explorer/README.md) | **定位：** 基于已保存 018 风景的原创浏览器骑马探索与留影体验<br>**能力：** 自由骑行、实际小径导航、溪流 / 营地 / 观景台三处发现、12 秒停留、E 地点卡片、摄影取景、可选环境音与续骑<br>**原理：** Three.js / WebGL 高度场、体积雾、风动植被、实际位置地图和马匹动画，输入、发现、停留与摄影状态共同驱动交互<br>**展示：** 完整理解页、当前营地与沿途真实实拍、实时探索场景、018 原版及源码资源基线<br>**场景：** 沉浸漫游、风景导览、自然展示、角色环境和图形教学<br>**价值：** 复用已认可的风景、角色、大气与镜头，把场景构建连接到地点内容、探索和可保存的取景<br>**扩展：** 新地形路线、天气与地点故事、地图编辑、摄影收藏和音景<br>**边界：** 有限区域、现有奔跑动画与简化碰撞，存档在当前浏览器来源，实体手机 GPU、多人协作与商业收益未实测。 | 已完成 | [tententen\_777 · 原始风景参考；018 的独立扩展](https://x.com/tententen_777/status/2106077153293115629)<br>技术：[mrdoob/three.js](https://github.com/mrdoob/three.js) | [在线演示](https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/understanding.html)<br>[自由骑马探索](https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/) · [018 基线](https://yydshly.github.io/0930_codex_project/projects/018-ridge-atmosphere-lab/) · [真实效果图](https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/understanding.html#gallery) · [基线下载](https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/understanding.html#saved) · [来源与许可](https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/understanding.html#sources) |
 
 <!-- PROJECT_INDEX:END -->
 
@@ -301,6 +305,44 @@
 ![Waterfalls Lab · 实时瀑布与流体造景 项目引导图](projects/017-waterfalls-lab/assets/understanding-map.png)
 
 [研究详情](projects/017-waterfalls-lab/README.md) · [在线演示](https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/)
+
+### 018 · Ridge Atmosphere Lab · 山脊气象与保存基线
+
+- **定位：** 山脊风景构建与骑行镜头的已保存基线
+- **能力：** 真实三维山体、草木风动、谷雾与三种天气、骑手跟随、直接拖动环绕、暂停和 PNG 保存
+- **原理：** Three.js / WebGL 高度场、扫描地表、实例草灌、马匹形变与骑手联动、实际深度裁剪的体积雾
+- **展示：** 原版实时场景、我们的实机画面、完整理解和源码资源 ZIP
+- **场景：** 风景体验、镜头展示与大气植被研究
+- **价值：** 保存已经认可的构图、资源与交互，作为后续场景的独立复用基础
+- **扩展：** 019 自由骑马、连通路线、地点发现、停留与摄影
+- **边界：** 有限地形与固定骑行路线，沿用奔跑形变，原游戏名称与实现未核实，实体手机 GPU 未实测。
+
+效果来源：[tententen\_777 · 原始山脊骑行风景参考](https://x.com/tententen_777/status/2106077153293115629)。技术基础：[mrdoob/three.js](https://github.com/mrdoob/three.js)。下图是我们实际运行的场景效果，原帖只作为风景参考。先阅读下方引导图，再进入研究文档与交互演示。
+
+![Ridge Atmosphere Lab · 山脊气象与保存基线 项目引导图](projects/018-ridge-atmosphere-lab/assets/polish-final.png)
+
+[研究详情](projects/018-ridge-atmosphere-lab/README.md) · [在线演示](https://yydshly.github.io/0930_codex_project/projects/018-ridge-atmosphere-lab/)
+
+[019 自由骑马探索](https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/) · [完整理解与保存基线](https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/understanding.html#saved)
+
+### 019 · Ridge Explorer · 自由骑马探索与完整理解
+
+- **定位：** 基于已保存 018 风景的原创浏览器骑马探索与留影体验
+- **能力：** 自由骑行、实际小径导航、溪流 / 营地 / 观景台三处发现、12 秒停留、E 地点卡片、摄影取景、可选环境音与续骑
+- **原理：** Three.js / WebGL 高度场、体积雾、风动植被、实际位置地图和马匹动画，输入、发现、停留与摄影状态共同驱动交互
+- **展示：** 完整理解页、当前营地与沿途真实实拍、实时探索场景、018 原版及源码资源基线
+- **场景：** 沉浸漫游、风景导览、自然展示、角色环境和图形教学
+- **价值：** 复用已认可的风景、角色、大气与镜头，把场景构建连接到地点内容、探索和可保存的取景
+- **扩展：** 新地形路线、天气与地点故事、地图编辑、摄影收藏和音景
+- **边界：** 有限区域、现有奔跑动画与简化碰撞，存档在当前浏览器来源，实体手机 GPU、多人协作与商业收益未实测。
+
+效果来源：[tententen\_777 · 原始风景参考；018 的独立扩展](https://x.com/tententen_777/status/2106077153293115629)。技术基础：[mrdoob/three.js](https://github.com/mrdoob/three.js)。下图是我们实际运行的场景效果，原帖只作为风景参考。先阅读下方引导图，再进入研究文档与交互演示。
+
+![Ridge Explorer · 自由骑马探索与完整理解 项目引导图](projects/019-ridge-explorer/assets/explorer-v2-camp-polished.png)
+
+[研究详情](projects/019-ridge-explorer/README.md) · [在线演示](https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/understanding.html)
+
+[自由骑马探索](https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/) · [018 基线](https://yydshly.github.io/0930_codex_project/projects/018-ridge-atmosphere-lab/) · [真实效果图](https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/understanding.html#gallery) · [基线下载](https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/understanding.html#saved) · [来源与许可](https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/understanding.html#sources)
 
 <!-- PROJECT_PREVIEWS:END -->
 

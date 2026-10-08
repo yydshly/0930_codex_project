@@ -176,5 +176,29 @@
     "cover": "assets/understanding-map.png",
     "reference": "https://x.com/mogmek/status/2105966008720900321",
     "reference_name": "Mogmek · Waterfalls Dream 演示"
+  },
+  {
+    "id": 18,
+    "slug": "ridge-atmosphere-lab",
+    "name": "Ridge Atmosphere Lab · 山脊气象与保存基线",
+    "repo": "https://github.com/mrdoob/three.js",
+    "summary": "定位：山脊风景构建与骑行镜头的已保存基线；能力：真实三维山体、草木风动、谷雾与三种天气、骑手跟随、直接拖动环绕、暂停和 PNG 保存；原理：Three.js / WebGL 高度场、扫描地表、实例草灌、马匹形变与骑手联动、实际深度裁剪的体积雾；展示：原版实时场景、我们的实机画面、完整理解和源码资源 ZIP；场景：风景体验、镜头展示与大气植被研究；价值：保存已经认可的构图、资源与交互，作为后续场景的独立复用基础；扩展：019 自由骑马、连通路线、地点发现、停留与摄影；边界：有限地形与固定骑行路线，沿用奔跑形变，原游戏名称与实现未核实，实体手机 GPU 未实测。",
+    "status": "已归档",
+    "demo": "https://yydshly.github.io/0930_codex_project/projects/018-ridge-atmosphere-lab/",
+    "cover": "assets/polish-final.png",
+    "reference": "https://x.com/tententen_777/status/2106077153293115629",
+    "reference_name": "tententen_777 · 原始山脊骑行风景参考"
+  },
+  {
+    "id": 19,
+    "slug": "ridge-explorer",
+    "name": "Ridge Explorer · 自由骑马探索与完整理解",
+    "repo": "https://github.com/mrdoob/three.js",
+    "summary": "定位：基于已保存 018 风景的原创浏览器骑马探索与留影体验；能力：自由骑行、实际小径导航、溪流 / 营地 / 观景台三处发现、12 秒停留、E 地点卡片、摄影取景、可选环境音与续骑；原理：Three.js / WebGL 高度场、体积雾、风动植被、实际位置地图和马匹动画，输入、发现、停留与摄影状态共同驱动交互；展示：完整理解页、当前营地与沿途真实实拍、实时探索场景、018 原版及源码资源基线；场景：沉浸漫游、风景导览、自然展示、角色环境和图形教学；价值：复用已认可的风景、角色、大气与镜头，把场景构建连接到地点内容、探索和可保存的取景；扩展：新地形路线、天气与地点故事、地图编辑、摄影收藏和音景；边界：有限区域、现有奔跑动画与简化碰撞，存档在当前浏览器来源，实体手机 GPU、多人协作与商业收益未实测。",
+    "status": "已完成",
+    "demo": "https://yydshly.github.io/0930_codex_project/projects/019-ridge-explorer/understanding.html",
+    "cover": "assets/explorer-v2-camp-polished.png",
+    "reference": "https://x.com/tententen_777/status/2106077153293115629",
+    "reference_name": "tententen_777 · 原始风景参考；018 的独立扩展"
   }
 ]

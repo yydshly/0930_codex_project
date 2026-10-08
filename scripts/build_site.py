@@ -16,6 +16,7 @@ from black_hole_publish import publish_black_hole
 from creative_publish import publish_creative
 from chippytea_publish import publish_chippytea
 from waterfalls_publish import publish_waterfalls
+from ridge_publish import publish_ridge_explorer
 
 
 def build(root=ROOT):
@@ -55,6 +56,10 @@ def build(root=ROOT):
             publish_chippytea(root / relative, destination)
         if project["id"] == 17 and project["slug"] == "waterfalls-lab":
             publish_waterfalls(root / relative, destination)
+        ridge_publication = (project["id"] == 19 and project["slug"] == "ridge-explorer"
+                             and (root / relative / "publication/understanding.html").is_file())
+        if ridge_publication:
+            publish_ridge_explorer(root / relative, destination)
         # Other demos retain their established, flattened web publication.
         specialized_publication = ((project["id"] == 5 and project["slug"] == "plush-lab")
                                    or (project["id"] == 6 and project["slug"] == "ai-visual-atlas")
@@ -65,7 +70,8 @@ def build(root=ROOT):
                                    or (project["id"] == 12 and project["slug"] == "black-hole-lab")
                                    or (project["id"] == 15 and project["slug"] == "ai-creative-products")
                                    or (project["id"] == 16 and project["slug"] == "chippytea-lab")
-                                   or (project["id"] == 17 and project["slug"] == "waterfalls-lab"))
+                                   or (project["id"] == 17 and project["slug"] == "waterfalls-lab")
+                                   or ridge_publication)
         for asset in (() if specialized_publication else source.rglob("*")):
             # Case studies can carry actual exported artifacts and public evidence.
             relative_asset = asset.relative_to(source)
@@ -76,6 +82,19 @@ def build(root=ROOT):
                     and not any(part.startswith(".") or part == "node_modules"
                                 for part in asset.relative_to(source).parts)
                     and (case_export or asset.suffix.lower() in {".html", ".css", ".js", ".svg", ".png", ".jpg", ".webp", ".woff2"}
+                         or (project['slug'] == 'ridge-atmosphere-lab' and relative_asset.as_posix() in {
+                             'assets/horse.glb', 'assets/HORSE-LICENSE.txt',
+                             'assets/THREE-LICENSE.txt', 'assets/SOURCE-NOTICE.txt',
+                             'assets/POLYHAVEN-LICENSE.txt'})
+                         or (project['slug'] == 'ridge-explorer' and relative_asset.as_posix() in {
+                             'assets/horse.glb', 'assets/HORSE-LICENSE.txt',
+                             'assets/THREE-LICENSE.txt', 'assets/SOURCE-NOTICE.txt',
+                             'assets/POLYHAVEN-LICENSE.txt',
+                             'assets/exploration/tent_detailedOpen.glb',
+                             'assets/exploration/campfire_stones.glb',
+                             'assets/exploration/log.glb',
+                             'assets/exploration/License.txt',
+                             'assets/exploration/NOTICE.txt'})
                          or (project["slug"] == "rhythm-drop"
                              and relative_asset.parts[0] == "echo"
                              and asset.suffix.lower() == ".wav")
@@ -87,7 +106,7 @@ def build(root=ROOT):
                 target.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(asset, target)
         name, summary = html.escape(project['name']), html.escape(project['summary'])
-        if project['slug'] in {'combination-soup-studio', 'cellmotion', 'dumpling-style-lab', 'sprite-destruction-lab', 'insightface-retrieval', 'ai-creative-products', 'chippytea-lab', 'waterfalls-lab'}:
+        if project['slug'] in {'combination-soup-studio', 'cellmotion', 'dumpling-style-lab', 'sprite-destruction-lab', 'insightface-retrieval', 'ai-creative-products', 'chippytea-lab', 'waterfalls-lab', 'ridge-atmosphere-lab', 'ridge-explorer'}:
             modules = re.split(r'；\s*(?=[\u4e00-\u9fff]{2,8}：)', project['summary'])
             summary = ''.join('<span style="display:block;margin:0 0 7px">' +
                               ('<b>' + html.escape(label) + '：</b>' + html.escape(body) if separator else html.escape(label)) + '</span>'
@@ -102,6 +121,20 @@ def build(root=ROOT):
             source_link = f'<a href="{reference}">{reference_name}</a>' + (f'<br>技术：<a href="{repo}">{repo_name}</a>' if repo else '<br>公开仓库未确认')
             source_note = f'效果来源：<a href="{reference}">{reference_name}</a>。' + (f'技术基础：<a href="{repo}">{repo_name}</a>。' if repo else '按公开网页进行研究，公开仓库未确认。')
             guide_caption = f'<p class="guide-caption">原网页效果截图 · <a href="{reference}">{reference_name}</a>；用于研究引导，非本项目效果。</p>'
+        ridge_entry = ''
+        if project["id"] == 18 and project["slug"] == "ridge-atmosphere-lab":
+            guide_caption = '<p class="guide-caption">我们的已保存山脊实机效果 · 2026-10-03 基线，非原视频截帧。源码、资源和许可随基线保存。</p>'
+            ridge_entry = (' <a class="button" href="./projects/019-ridge-explorer/understanding.html">完整理解与扩展</a>'
+                           '<p><a href="./projects/019-ridge-explorer/">自由骑马探索</a> · '
+                           '<a href="./projects/019-ridge-explorer/understanding.html#saved">保存的能力与基线下载</a> · '
+                           '<a href="./projects/019-ridge-explorer/understanding.html#sources">来源与许可</a></p>')
+        if project["id"] == 19 and project["slug"] == "ridge-explorer":
+            guide_caption = '<p class="guide-caption">我们的营地实机效果 · 当前山脊探索场景的实际画面，非原视频截图；完整理解页展示更多实拍与保存的 018 基线。</p>'
+            ridge_entry = (f' <a class="button" href="./{relative}/understanding.html">完整理解与相关入口</a>'
+                           ' <a class="button" href="./projects/018-ridge-atmosphere-lab/">018 基线场景</a>'
+                           f'<p><a href="./{relative}/understanding.html#gallery">真实效果图</a> · '
+                           f'<a href="./{relative}/understanding.html#saved">保存能力与基线下载</a> · '
+                           f'<a href="./{relative}/understanding.html#sources">原帖、技术与许可</a></p>')
         if project["id"] == 6 and project["slug"] == "ai-visual-atlas":
             source_list = f'<a href="./{relative}/#library">十项目源库列表</a>'
             source_link = (f'<a href="{reference}">{reference_name}</a><br>资料索引：'
@@ -210,7 +243,7 @@ def build(root=ROOT):
                               f'<a href="./{relative}/research.html#scope">产品化方向与范围</a> · '
                               f'<a href="https://github.com/yydshly/0930_codex_project/tree/main/{relative}">源码与研究资料</a></p>')
         entries.append(f'<tr><td>{project["id"]:03d}</td><th scope="row"><a href="./{relative}/">{name}</a></th>'
-                       f'<td>{summary}</td><td>{source_link}</td><td><a href="./{relative}/">网页演示</a>{black_hole_entry}{creative_entry}{chippytea_entry}{waterfalls_entry}</td></tr>')
+                       f'<td>{summary}</td><td>{source_link}</td><td><a href="./{relative}/">网页演示</a>{black_hole_entry}{creative_entry}{chippytea_entry}{waterfalls_entry}{ridge_entry}</td></tr>')
         guide = ''
         if project['cover']:
             cover = root / relative / project['cover']
@@ -223,9 +256,13 @@ def build(root=ROOT):
             entry_label = '完整理解与展示入口'
         if project['slug'] == 'waterfalls-lab':
             entry_label = '互动水景工作室'
+        if project['slug'] == 'ridge-atmosphere-lab':
+            entry_label = '体验已保存的山脊场景'
+        if project['slug'] == 'ridge-explorer':
+            entry_label = '进入自由骑马探索'
         introductions.append(f'<article><div><p class="eyebrow">PROJECT {project["id"]:03d}</p><h2>{name}</h2><p>{summary}</p>'
                              f'<p>{source_note}先看引导图，再进入网页探索具体机制和场景。</p>'
-                             f'<a class="button" href="./{relative}/">{entry_label}</a>{cellmotion_entry}{sprite_entry}{soup_entry}{dumpling_entry}{insightface_entry}{black_hole_entry}{creative_entry}{chippytea_entry}{waterfalls_entry}</div>{guide}</article>')
+                             f'<a class="button" href="./{relative}/">{entry_label}</a>{cellmotion_entry}{sprite_entry}{soup_entry}{dumpling_entry}{insightface_entry}{black_hole_entry}{creative_entry}{chippytea_entry}{waterfalls_entry}{ridge_entry}</div>{guide}</article>')
     index = '''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>GitHub 项目研究集</title>
 <style>body{max-width:1180px;margin:45px auto;padding:0 24px;font:16px/1.85 system-ui;color:#172b38;background:#f4f7fa}a{color:#006d58;text-underline-offset:4px}h1{font-size:36px;margin-bottom:12px}h2{font-size:25px}p{color:#596b76}.eyebrow{font:13px monospace;color:#006d58;letter-spacing:2px}.intro{max-width:850px}.table-wrap{overflow-x:auto;background:#fff;border:1px solid #dce4e9;border-radius:10px}table{border-collapse:collapse;width:100%;min-width:750px;font-size:14px}td,th{padding:18px;text-align:left;border-bottom:1px solid #dce4e9;vertical-align:top}thead{background:#e6eef3}td:nth-child(3){min-width:310px}th[scope=row]{min-width:125px}article{display:grid;grid-template-columns:1fr 340px;gap:40px;margin:35px 0;padding:32px;background:#fff;border:1px solid #dce4e9;border-radius:12px}figure{margin:0}.guide-caption{font-size:12px;line-height:1.6}article img{width:100%;height:auto;display:block}.button{display:inline-block;padding:9px 18px;background:#006d58;color:white;border-radius:6px;text-decoration:none}footer{font-size:13px;margin:40px 0;color:#596b76}@media(max-width:700px){h1{font-size:28px}article{grid-template-columns:1fr;padding:22px}article img{max-width:340px;margin:auto}}</style></head><body>
 <p class="eyebrow">OPEN SOURCE FIELD NOTES</p><h1>GitHub 项目研究集</h1><div class="intro"><p>从能力到原理，从使用场景到采用判断：把开源项目整理成可阅读、可比较、可交互的研究记录。</p><p>每项研究围绕七个问题展开：能做什么、底层怎么做、如何运行、支持什么系统、用于哪些场景、对我们有何价值、未来怎样扩展。源库链接使用原仓库名；本站演示与上游产品明确区分。</p><p>witr 是运行来源诊断工具，主要价值是整合已有系统能力、减少人工关联。已有成熟采集工具链时，可把它作为便利工具与适配样本，而不必视作新的底层技术。</p></div><h2>项目索引</h2><div class="table-wrap"><table><thead><tr><th>编号</th><th>研究项目</th><th>能力、原理与使用摘要</th><th>来源 / 技术</th><th>入口</th></tr></thead><tbody>''' + ''.join(entries) + '</tbody></table></div><h2>项目介绍与引导图</h2>' + ''.join(introductions) + '<footer>引导图与网页属于独立研究材料；模拟数据不代表实机测量。各源库遵循各自许可证。</footer></body></html>'

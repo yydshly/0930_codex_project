@@ -1,0 +1,140 @@
+{
+  "project": "019-ridge-explorer",
+  "date": "2026-10-03",
+  "verified_at": "2026-10-03T16:56:56+08:00",
+  "compiled_javascript": "assets/index-D_APDzv3.js",
+  "compiled_css": "assets/index-C4J52dvW.css",
+  "public_preview": "http://127.0.0.1:8951/projects/019-ridge-explorer/",
+  "checks": {
+    "scene": {
+      "passed": 25,
+      "result": "passed",
+      "command": "npm --prefix projects/019-ridge-explorer/app run test",
+      "evidence": "Previously completed actual scene suite, as reported by root agent; not rerun during this file verification."
+    },
+    "explorer_packaging": {
+      "passed": 3,
+      "result": "passed",
+      "command": "python -m unittest discover -s tests -p test_ridge_explorer_site.py -v",
+      "evidence": "Recent actual packaging suite passed, as reported by root agent."
+    },
+    "baseline_packaging": {
+      "passed": 3,
+      "result": "passed",
+      "command": "python -m unittest discover -s tests -p test_ridge_site.py -v",
+      "evidence": "Recent actual packaging suite passed, as reported by root agent."
+    },
+    "catalog": {
+      "registered_projects": 19,
+      "result": "passed"
+    },
+    "public_client_files": {
+      "verified": 18,
+      "sha256_identical": true,
+      "manifest": "final-public-files.json",
+      "catalog_cover_verified_separately": true
+    },
+    "baseline_018": {
+      "archive": "../../018-ridge-atmosphere-lab/releases/20261003-polished-baseline.zip",
+      "file_count": 105,
+      "archive_bytes": 30828413,
+      "archive_sha256": "b00777aab6da43248644f415f8f23eeca44750ad02fa4d91a82b9b66741a5c7d",
+      "original_files_sha256_verified": 105,
+      "archived_members_sha256_verified": 105,
+      "crc": "passed",
+      "originals_unchanged": true
+    }
+  },
+  "browser_qa": {
+    "status": "passed_for_recorded_interactions_and_final_three_landmark_tour",
+    "verified_at": "2026-10-03T17:02:58+08:00",
+    "evidence_source": "Root agent actual browser observations; final PNG header, byte size and SHA verified locally during documentation.",
+    "public_preview": "http://127.0.0.1:8951/projects/019-ridge-explorer/",
+    "final_static_tour_preview": "http://127.0.0.1:8992/",
+    "final_static_build_identical_to_shared_preview": true,
+    "identical_client_file_count": 18,
+    "verified_landmarks_on_development_preview": 2,
+    "verified_landmarks_on_final_static_preview": 3,
+    "total_landmarks": 3,
+    "tour": {
+      "observed_sequence": [
+        {
+          "id": "creek",
+          "progress": "1/3"
+        },
+        {
+          "id": "camp",
+          "progress": "2/3"
+        },
+        {
+          "id": "lookout",
+          "progress": "3/3"
+        }
+      ],
+      "blocked_or_stalled": false,
+      "lookout_screenshot": "assets/explorer-lookout-final.png",
+      "lookout_screenshot_dimensions": [
+        1280,
+        720
+      ],
+      "map_screenshot": "assets/explorer-map-final.png",
+      "all_three_map_rows_visible": true,
+      "reload_kept_all_three_discoveries": true,
+      "tested_preview": "Isolated final static preview on port 8992, now closed"
+    },
+    "photo_keyboard": {
+      "tested_preview": "http://127.0.0.1:8992/",
+      "focused_control": "镜头视角 range slider",
+      "key": "P",
+      "exited_photo": true,
+      "restored_previous_paused_state": true
+    },
+    "final_png": {
+      "tested_preview": "http://127.0.0.1:8951/projects/019-ridge-explorer/",
+      "path": "assets/explorer-export-final.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 4420969,
+      "sha256": "05076b24463c7379a46d472f10f41bd56c16e236de0002a99f17c47c14cbdffd",
+      "distinct_rgb_colors": 30163,
+      "photo_fov_degrees": 28,
+      "photo_look": "warm",
+      "ui_screenshot": "assets/explorer-photo-latest.png",
+      "controls_excluded": true
+    },
+    "latest_default_screenshot": "assets/explorer-final-latest.png",
+    "browser_logs": {
+      "shared_8951": {
+        "errors": 0,
+        "warnings": 0
+      },
+      "final_static_8992": {
+        "errors": 0,
+        "warnings": 0
+      },
+      "scene_models_and_textures_http_status": 200,
+      "temporary_8992_favicon_ico_status": 404
+    },
+    "deliverable": {
+      "public_preview_marked": true,
+      "state": "Photo mode exited; free riding restored."
+    },
+    "evidence_document": "../design-qa.md",
+    "final_static_tour_all_three_observed": true,
+    "temporary_tour_preview_closed": true,
+    "public_preview_verified_interactions": [
+      "Default free riding",
+      "28 degree warm photo export",
+      "Captured browser error and warning logs both zero"
+    ]
+  },
+  "history": "automation-validation.json preserves the first production-build verification.",
+  "limits": [
+    "Finite terrain and simplified slope/circular contact constraints.",
+    "Original horse running morphs; no full walking skeleton or ground IK.",
+    "Browser responsive layout evidence does not validate physical mobile GPU performance.",
+    "No controlled performance benchmark or public deployment claimed."
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "project": "019-ridge-explorer",
+  "version": "v2",
+  "verified_at": "2026-10-03T18:00:11+08:00",
+  "compiled_javascript": "assets/index-CPOPd9om.js",
+  "compiled_css": "assets/index-CoGvlyoi.css",
+  "public_preview": "http://127.0.0.1:8951/projects/019-ridge-explorer/",
+  "checks": {
+    "build": {
+      "result": "passed",
+      "command": "npm run build",
+      "modules": 46
+    },
+    "scene": {
+      "result": "passed",
+      "passed": 43,
+      "command": "npm run test",
+      "scope": "Final scene sources; final subsequent change only adds CSS panel z-index."
+    },
+    "explorer_packaging": {
+      "result": "passed",
+      "passed": 3,
+      "command": "python -m unittest discover -s tests -p test_ridge_explorer_site.py -v",
+      "scope": "Final CPOPd9om / CoGvlyoi client"
+    },
+    "catalog": {
+      "result": "passed",
+      "registered_projects": 19,
+      "command": "python scripts/projects.py check"
+    },
+    "public_client_files": {
+      "verified": 18,
+      "sha256_identical": true,
+      "manifest": "final-public-files-v2.json"
+    },
+    "baseline_018": {
+      "archive": "../../018-ridge-atmosphere-lab/releases/20261003-polished-baseline.zip",
+      "file_count": 105,
+      "original_files_sha256_verified": 105,
+      "archived_members_sha256_verified": 105,
+      "archive_bytes": 30828413,
+      "archive_sha256": "b00777aab6da43248644f415f8f23eeca44750ad02fa4d91a82b9b66741a5c7d",
+      "crc": "passed",
+      "originals_unchanged": true
+    }
+  },
+  "browser_qa": {
+    "result": "passed_for_recorded_interactions",
+    "evidence_scope": "BWhqn9bg actual feature QA; D2RGV7pd final world/material QA; CPOPd9om final panel layering and reset QA. Actual observations only, not exhaustive browser playback.",
+    "isolated_preview": "http://127.0.0.1:8992/",
+    "features": {
+      "navigation": {
+        "map_real_trail_route": true,
+        "selected": "camp",
+        "initial_remaining_metres": 220,
+        "screenshot": "assets/explorer-v2-route.png"
+      },
+      "landmark_stops": {
+        "creek_actual_stop": true,
+        "camp_actual_stop": true,
+        "camp_paused_remaining_seconds": 7,
+        "pause_froze_countdown": true,
+        "lookout_actual_stop_observed": true,
+        "all_three_already_discovered_from_v1": true,
+        "skip_stop": "Pure session tests; final handler explicitly also unpauses. No final browser skip playback claimed."
+      },
+      "place_cards": {
+        "creek_opened": true,
+        "camp_opened": true,
+        "shift_tab_trapped_focus": true,
+        "escape_closed_and_returned_focus": true
+      },
+      "place_photography": {
+        "creek_frame_observed": true,
+        "camp_frame_observed": true,
+        "lookout_preset": "Configured but not visually inspected in v2",
+        "kept_real_rider_position": true,
+        "photo_exit_restored_prior_pause": true
+      },
+      "ride_recovery": {
+        "reload_default_origin": true,
+        "explicit_resume_restored_manual_stationary_ride": true,
+        "observed_distances_metres": [
+          116,
+          352,
+          218
+        ],
+        "discoveries_preserved": true
+      },
+      "sound": {
+        "enabled_and_disabled_via_user_toggle": true,
+        "disabled_toggle_no_false_error": true,
+        "audio_listening_performed": false
+      },
+      "mobile": {
+        "viewport_css": [
+          390,
+          844
+        ],
+        "place_prompt_top_px": 112,
+        "place_prompt_height_px": 44,
+        "tour_continue_height_px": 44,
+        "five_touch_buttons": [
+          44,
+          44
+        ],
+        "screenshot": "assets/explorer-v2-mobile-final.png",
+        "panel_reset_before_hit": "div.tour-stop",
+        "panel_reset_after_hit": "button.reset-button",
+        "panel_z_index": 4,
+        "actual_reset_returned_origin_and_manual_mode": true,
+        "retained_discoveries_and_resume_entry": true
+      },
+      "camp_polish": {
+        "actual_camera_frame_and_shader_rendered": true,
+        "soft_wet_soil_transition": true,
+        "smoke_softened": true,
+        "screenshot": "assets/explorer-v2-camp-polished.png",
+        "comparison": "assets/explorer-v2-camp-comparison.jpg",
+        "comparison_limits": "Both captures at 1280x720 with same landmark framing; animation/world time and device pixel ratio can differ."
+      }
+    },
+    "exports": [
+      {
+        "path": "assets/explorer-v2-creek-export.png",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "bytes": 3333318,
+        "sha256": "cc4464664eb1c351544738f67930176d24a8ea56ebd3ec1a64d8ff1329e4f8ee",
+        "distinct_rgb_colors": 26793,
+        "controls_excluded": true
+      },
+      {
+        "path": "assets/explorer-v2-camp-polished-export.png",
+        "dimensions": [
+          1280,
+          720
+        ],
+        "bytes": 1623531,
+        "sha256": "8679248d5c21636faf0771924aceaff26886fb4fba1ee3c5a605f36c26308df4",
+        "distinct_rgb_colors": 21168,
+        "controls_excluded": true
+      }
+    ],
+    "browser_logs": {
+      "isolated_final_client": {
+        "errors": 0,
+        "warnings": 0
+      },
+      "shared_8951_final_client": {
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    "production_final_check": {
+      "result": "passed",
+      "actual_url": "http://127.0.0.1:8951/projects/019-ridge-explorer/",
+      "observed_javascript": "assets/index-CPOPd9om.js",
+      "observed_css": "assets/index-CoGvlyoi.css",
+      "viewport_css": [
+        1280,
+        720
+      ],
+      "origin_distance_metres": 0,
+      "default_manual_mode": true,
+      "screenshot": "assets/explorer-v2-production.png",
+      "marked_deliverable": true,
+      "temporary_8992_tab_closed": true,
+      "temporary_viewport_reset": true
+    },
+    "evidence_document": "../design-qa.md"
+  },
+  "history": [
+    "build-validation.json",
+    "final-public-files.json",
+    "automation-validation.json"
+  ],
+  "limits": [
+    "Finite terrain and simplified slope/circular contact constraints.",
+    "Original horse running morphs; no full walking skeleton or ground IK.",
+    "Browser responsive layout evidence does not validate physical mobile GPU performance.",
+    "Procedural audio toggle and lifecycle validated; no listening-quality or real-speaker assessment.",
+    "No controlled performance benchmark or public deployment claimed."
+  ]
+}
