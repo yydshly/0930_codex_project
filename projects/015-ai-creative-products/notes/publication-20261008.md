@@ -23,6 +23,8 @@
 - [公网文件核对](publication-online-checks.json) 逐一读取 184 个文件，检查 HTTP 200、大小、SHA-256 和 194 处内部链接；报告标明被核对的提交。验证工具可通过 `--expected-manifest` 确认公网版本与本地审阅版本一致。
 - 正式站实际展示入口与引导图，第 07 项可进入三维场景并切换夜景；截图保存在 [发布截图目录](../assets/publication-20261008/)。完整理解页修正了响应式图片的固定高度，保持真实比例并防止大块空白。
 
+最终内容提交 [d341c164](https://github.com/yydshly/0930_codex_project/commit/d341c164cf73c5def3d48f9464e54ae777695513) 的 [Pages 构建与部署](https://github.com/yydshly/0930_codex_project/actions/runs/37791418240)及目录检查均成功。公网 184 个文件共 36,467,767 字节，全部与当前审阅清单一致，194 处内部链接通过核对；原有引导图保持不变。最终[公网浏览器记录](publication-browser-online.json)覆盖完整入口、十项卡片、独立场景夜景切换、单项全文与响应式图片比例、返回入口和研究集总入口。
+
 检查证明资料和运行资源完整、入口与代表性交互可用；逐项功能和美术的具体范围继续以每项说明及既有验收为准。
 
 首次内容提交：[83498202](https://github.com/yydshly/0930_codex_project/commit/834982028b437beda41edffc231d86d4f03834a2)；导航提交：[22970aaf](https://github.com/yydshly/0930_codex_project/commit/22970aafd8de5a98b6f0b543d9b52decf666d212)。两次 [Pages 发布](https://github.com/yydshly/0930_codex_project/actions/workflows/pages.yml)均成功。
