@@ -27,11 +27,13 @@
 
 报告同时保留早期环境尝试：软件后端没有适配器，另一 Chromium 配置遇到 `dxil.dll` 设备初始化错误；这些尝试没有计入最终通过结果。最终通过的系统 Edge 与硬件信息以报告末尾为准。这次验证不测统一 FPS、真实手机或跨设备性能，也没有实现新的 SDK。
 
-### 发布目标与待完成验收
+### 已验证的正式发布
 
-目标地址：[Waterfalls Lab](https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/)；完整理解页目标：[understanding.html](https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/understanding.html)。当前记录只确认完整本地发布包与本地浏览器复核，部署与线上验证仍待完成，尚不声称公网已可用或已通过验收。
+正式入口：[互动水景工作室](https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/) · [完整理解与全部入口](https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/understanding.html) · [EA 二维原版对照](https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/upstream/)。内容提交 [`760dd8ee`](https://github.com/yydshly/0930_codex_project/commit/760dd8ee653979cdcbc1ec767a7ff5de3bacddc7) 的 [Pages 构建与部署](https://github.com/yydshly/0930_codex_project/actions/runs/37814158820)已成功。
 
-部署后应单独核对 GitHub Pages workflow / 发布版本、总索引的摘要和原有引导图、工作室与理解页的明显入口、EA 原版、来源与许可，以及示例作品、基础 ZIP、校验与图像下载。线上实际执行和资源检查应记录独立报告；不能用本地通过或单次 HTTP 200 替代。
+独立[公网资源检查](deployment-checks.json)确认全部 61 项文件 HTTP 200、大小与 SHA-256 与公共清单及本地发布包一致，没有重建差异放行；PNG / SVG 和冻结 ZIP 另核对首次固定校验值。总首页的七项摘要、原图和工作室 / 理解页 / EA / 来源 / 源码入口齐全，其他 15 个既有演示入口均 HTTP 200。
+
+[公网浏览器报告](publication-online-browser.json)记录 37 / 37 检查通过、0 页面错误、0 缺失本站资源，覆盖阅读、六类详情、无 JavaScript 使用、图像实际下载、EA 全部运行资源、工作室交互、PNG 输出和粒子诊断。公网工作室在同一 Edge / Intel 硬件适配器上实际执行，粒子状态检查通过；该结果不等于统一帧率或实体手机验收。[部署摘要](deployment-summary.json)记录版本、地址、资源与验证范围。报告截图位于项目 `assets/publication-online-*.png`，可从 GitHub 阅读，不增加公开运行包的文件范围。
 
 ### 完整本地复现
 
@@ -51,4 +53,4 @@ python -m http.server 8992 --bind 127.0.0.1 --directory _site
 
 本机与公网属于不同浏览器存储来源，已保存作品不会自动迁移。请从本机“我的作品”导出 JSON，再到公网导入。作品保存设计、镜头与设置，不保存某时刻的全部水粒子。当前静态站没有云同步或多人协作。
 
-V9 的 2026-10-03 实机粒子数据、91 项检查与截图属于历史基线，保留在 [validation.md](validation.md) 及原汇总图中。2026-10-09 的完整发布包与本地浏览器检查独立记录；公网检查尚待完成。桌面窄屏视口不等同实体手机或统一 FPS 验收。
+V9 的 2026-10-03 实机粒子数据、91 项检查与截图属于历史基线，保留在 [validation.md](validation.md) 及原汇总图中。2026-10-09 的完整发布包、本地浏览器与公网检查独立记录。桌面窄屏视口不等同实体手机或统一 FPS 验收。

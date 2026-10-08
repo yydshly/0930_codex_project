@@ -1,0 +1,64 @@
+{
+  "project": "017-waterfalls-lab",
+  "publication_date": "2026-10-09",
+  "timezone": "Asia/Shanghai",
+  "experiment_snapshot_date": "2026-10-03",
+  "publication_commit": "760dd8ee653979cdcbc1ec767a7ff5de3bacddc7",
+  "previous_main_commit": "37a7aae10f2424c510c3dc75139be02f46401b0d",
+  "actions": {
+    "run_id": 37814158820,
+    "url": "https://github.com/yydshly/0930_codex_project/actions/runs/37814158820",
+    "build": "success",
+    "deploy": "success"
+  },
+  "urls": {
+    "catalog": "https://yydshly.github.io/0930_codex_project/",
+    "studio": "https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/",
+    "complete_understanding": "https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/understanding.html",
+    "ea_2d_comparison": "https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/upstream/",
+    "sources_and_licenses": "https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/source-notice.html",
+    "original_guide": "https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/research-assets/understanding-map.png",
+    "manifest": "https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/publication-manifest.json",
+    "frozen_foundation": "https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/downloads/waterfalls-lab-studio09-foundation.zip",
+    "source_and_research": "https://github.com/yydshly/0930_codex_project/tree/main/projects/017-waterfalls-lab"
+  },
+  "summary": "可编辑自然场景与流体交互基座：独立 WebGPU 三维 PB-MPM / APIC、水面光学、体素地形和作品镜头。先展示真实 V9 效果，再说明能力、技术原理、六类产品方向、复用价值、业务接入与边界。完整工作室、理解、EA 原版对照、来源、示例、图像与冻结源码基础均有明显入口；沿用既有理解引导图。",
+  "publication": {
+    "runtime_files": 61,
+    "runtime_bytes": 8934718,
+    "runtime_references_checked": 107,
+    "packager": "scripts/waterfalls_publish.py",
+    "original_guide_unchanged": true,
+    "original_guide_sha256": {
+      "png": "c2537617473a3ae17ecd21d842285c7cefbbc57a26d58945ce8d86d4965fecf1",
+      "svg": "9d094e0e2be76dbeee66f755682778b9c1138e8c293dcb06303673e58c43c5dd"
+    },
+    "frozen_zip_unchanged": true,
+    "frozen_zip_sha256": "f7ce08ac9db02109493167be518a92244523f5c8de1b4072efb3fd5f68cd008d",
+    "studio_version": 9,
+    "saved_design_version": 2
+  },
+  "verification": {
+    "node_local_serial": {"passed": 77, "failed": 0},
+    "python_local": {"run": 67, "failed": 0, "skipped": 7, "skip_reason": "Windows symlink creation unavailable"},
+    "local_browser": {"passed": 37, "failed": 0, "report": "publication-local-browser.json"},
+    "online_browser": {"passed": 37, "failed": 0, "report": "publication-online-browser.json"},
+    "online_resource_hashes": {"passed": 61, "failed": 0, "report": "deployment-checks.json", "local_build_differences_allowed": false},
+    "other_declared_demo_entries": {"http_200": 15, "failed": 0},
+    "browser_version": "154.0.4258.62",
+    "browser_channel": "msedge",
+    "gpu_backend": "ANGLE D3D11",
+    "gpu_vendor": "intel",
+    "gpu_architecture": "gen-12lp",
+    "is_fallback_adapter": false,
+    "online_particle_diagnostics": {"active": 8192, "finite": 8192, "in_domain": 8192, "clearly_inside_solids": 0, "substeps_at_sampling": 427},
+    "existing_user_browser_storage_accessed": false,
+    "viewports": [1280, 390, 320],
+    "real_phone_tested": false,
+    "unified_fps_tested": false,
+    "long_duration_stability_tested": false,
+    "historical_gpu_results_reused_for_current_checks": false
+  },
+  "boundaries": "Fixed small-domain visual simulation. Public SDK, dynamic rigid bodies, arbitrary model import, video pipeline, cloud collaboration and engineering precision require future business integration and target-device validation.",
+  "storage_migration": "本机与公网是不同浏览器来源。已有作品须在本机导出 JSON，再在公网导入；恢复设计、镜头与设置后重新模拟，不迁移某时刻的全部水粒子。静态站没有云同步。"
+}

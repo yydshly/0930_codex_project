@@ -1,5 +1,15 @@
 # Web 演示部署
 
+## Waterfalls Lab 完整理解与交互发布
+
+2026-10-09：第 017 项已正式上线：[互动水景工作室](https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/) · [完整理解与全部入口](https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/understanding.html) · [EA 二维原版对照](https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/upstream/)。总首页摘要按定位、能力、原理、展示、场景、价值和边界说明；工作室、完整理解、真实效果、六类产品、原图、来源许可和 GitHub 源码均有明显入口。
+
+沿用已有 1800 × 3400 [理解引导图](https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/research-assets/understanding-map.png)，不重新生成。公开包包含完整工作室、理解页、来源许可、EA 全部 WGSL / 模块 / 场景 / 图像、实机截图、PNG / SVG、两个可导入设计示例与冻结 STUDIO 09 基础 ZIP；发布清单记录 61 项文件大小与 SHA-256。它是独立浏览器三维造景基础，Waterfalls Dream 为创意参考，EA PB-MPM 与 Breakpoint 为技术参考；公共 SDK、动态刚体、任意模型、录像、云协作与工程精度仍待按业务建设。
+
+内容提交 [`760dd8ee`](https://github.com/yydshly/0930_codex_project/commit/760dd8ee653979cdcbc1ec767a7ff5de3bacddc7) 的 [Pages 构建与部署](https://github.com/yydshly/0930_codex_project/actions/runs/37814158820)成功。全部 61 个公网文件 HTTP 200、实际字节与本地及公共清单一致；原 PNG / SVG 和冻结 ZIP 固定哈希保持不变，其他 15 个已登记演示入口均 HTTP 200。本地及公网各 37 项浏览器检查通过，含无 JS 阅读、真实图像下载、工作室暂停 / 镜头 / 沉浸 / PNG 输出，以及 Intel gen-12lp 硬件适配器上的 WebGPU 粒子诊断。桌面窄屏检查不等于实体手机、统一帧率或长期稳定性验收。
+
+详见 [发布说明](../projects/017-waterfalls-lab/notes/publication.md)、[公网文件检查](../projects/017-waterfalls-lab/notes/deployment-checks.json)、[公网浏览器](../projects/017-waterfalls-lab/notes/publication-online-browser.json)与[部署摘要](../projects/017-waterfalls-lab/notes/deployment-summary.json)。本机和公网作品存储来源不同，已有作品请先导出 JSON 再在公网导入；静态站没有云同步。
+
 ## 黑洞效果与完整理解发布
 
 2026-10-08：第 012 项整理为[全部展示与阅读入口](https://yydshly.github.io/0930_codex_project/projects/012-black-hole-lab/)与[完整研究档案](https://yydshly.github.io/0930_codex_project/projects/012-black-hole-lab/research.html)。总首页与项目首页都显著提供完整黑洞效果、10 章中文讲解、理解总结、原有总览图、完整旁白、场景扩展、原帖与科学依据。摘要说明效果、实际实现原理、时空与衰老认知、个人价值、扩展及边界。

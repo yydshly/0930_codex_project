@@ -18,7 +18,7 @@
 
 这是本机运行与发布完整性验证，没有统一 FPS、实体手机或跨设备性能结论，没有新增公共 SDK。引导图和旧效果里的较高粒子数及 91 项检查仍属于 2026-10-03 的历史 V9 记录。
 
-GitHub Pages [发布目标](https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/) 尚待部署与线上验证，不能把本机通过当作公网已完成。发布范围与当前状态见 [publication.md](../notes/publication.md)。
+GitHub Pages 已正式发布：[互动工作室](https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/) · [完整理解与全部入口](https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/understanding.html) · [EA 原版对照](https://yydshly.github.io/0930_codex_project/projects/017-waterfalls-lab/upstream/)。[Pages 流程](https://github.com/yydshly/0930_codex_project/actions/runs/37814158820)成功；61 项公共文件大小与 SHA-256 一致，37 / 37 公网浏览器检查通过，其他 15 个已有演示入口均 HTTP 200。线上分别记录[资源检查](../notes/deployment-checks.json)与[浏览器检查](../notes/publication-online-browser.json)，完整范围见 [publication.md](../notes/publication.md)。
 
 ## 启动与构建
 
@@ -89,7 +89,7 @@ node --test --test-concurrency=1 ../tests/*.test.mjs
 
 仓库根目录运行 `python scripts/build_site.py`，打包到 `_site/projects/017-waterfalls-lab/`。主程序和工作线程使用相对路径。EA 的 `upstream/shaders/*.wgsl`、`upstream/scenes/*.json` 和许可文件按项目单独放行，其他 JSON 不会因此公开。
 
-发布器只复制固定公开清单，并生成 `publication-manifest.json` 的逐文件字节数与 SHA-256。两个 reviewed version 2 作品及基础 ZIP / 校验文件从项目 `assets/` / `artifacts/` 复制到公开 `downloads/`；不会因为公开示例而复制任意 JSON。首页引导图与理解页沿用同一原 PNG / SVG。完整构建后运行 `python scripts/waterfalls_publish.py --check` 检查全部资源与依赖。
+发布器只复制固定公开清单，并生成 `publication-manifest.json` 的逐文件字节数与 SHA-256。两个已核对的 version 2 作品及基础 ZIP / 校验文件从项目 `assets/` / `artifacts/` 复制到公开 `downloads/`；不会因为公开示例而复制任意 JSON。首页引导图与理解页沿用同一原 PNG / SVG。完整构建后运行 `python scripts/waterfalls_publish.py --check` 检查全部资源与依赖。
 
 `upstream/` 是保留 EA BSD-3-Clause 声明的真实二维示例，与主页面的独立三维实现各自运行。模拟、雕刻和水源限制在当前山谷体素域，物体不模拟自由刚体动力学。
 

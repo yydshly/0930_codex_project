@@ -1,5 +1,23 @@
 # 项目验证记录
 
+## 完整理解与正式发布 · 2026-10-09
+
+本轮整理入口、摘要、真实效果、原理、六类产品方向、价值与边界，沿用原 PNG / SVG 汇总图及冻结 V9 基础 ZIP，没有改动模拟基线或作品 version 2。
+
+| 当前验证 | 结果 |
+| --- | --- |
+| Node 回归 | 77 / 77 串行通过 |
+| 本机仓库 Python 回归 | 67 项无失败，7 项 Windows 符号链接测试跳过 |
+| 完整静态发布 | 61 项公开资源、107 处运行引用，原图与冻结 ZIP 校验值不变 |
+| 本地浏览器 | 37 / 37 通过，含无 JS 阅读、实际下载、桌面窄屏与 GPU 工作室 |
+| 远端 CI 与 Pages | 内容提交 `760dd8ee653979cdcbc1ec767a7ff5de3bacddc7` 的检查、构建与部署成功 |
+| 公网文件 | 61 / 61 HTTP 200、大小与 SHA-256 一致；总首页完整入口与摘要正确，15 个既有演示均 HTTP 200 |
+| 公网浏览器 | 37 / 37 通过，实际运行 WebGPU、镜头 / 暂停 / 沉浸 / PNG 与粒子诊断，无页面错误与本站资源缺失 |
+
+本机与公网最终浏览器均为 Edge `154.0.4258.62`，ANGLE D3D11、Intel `gen-12lp` 硬件适配器，非 fallback；8,192 粒子有限值、在域内和明显固体内数量检查通过。1280 / 390 / 320 px 是桌面浏览器视口，不是实体手机；未验证统一 FPS 或长期运行性能。历史 Chromium 环境失败保留在本地报告，不能与最终成功环境混用。
+
+证据：[发布说明](publication.md) · [本地浏览器](publication-local-browser.json) · [公网全部资源](deployment-checks.json) · [公网浏览器](publication-online-browser.json) · [部署摘要](deployment-summary.json) · [Pages 流程](https://github.com/yydshly/0930_codex_project/actions/runs/37814158820)。以下各节为带日期的历史记录。
+
 ## 理解页与汇总图接入 · 2026-10-03
 
 新增 `understanding.html` / CSS / JS，工作室顶部与说明面板接入，共享站索引增加入口并采用完整汇总图作为封面。页面先展示 V9 实际画面，再说明能力、原理、六类产品、复用价值、模块接入与边界。图为 1800 × 3400 PNG 和自包含 SVG，112 段文字排版校验通过，已查看最终 PNG；SVG 内嵌截图与既有 `landscape-v9.png` 字节相同。
