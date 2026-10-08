@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-02",
+  "status": "passed",
+  "count": 9,
+  "checks": [
+    {
+      "name": "Finished-effect lessons cannot bypass construction",
+      "passed": true
+    },
+    {
+      "name": "Canvas start button creates the first layer",
+      "passed": true
+    },
+    {
+      "name": "Auto build immediately advances one stage",
+      "passed": true
+    },
+    {
+      "name": "Auto build advances in order",
+      "passed": true
+    },
+    {
+      "name": "Auto build can be stopped",
+      "passed": true
+    },
+    {
+      "name": "Previous step returns to an earlier construction",
+      "passed": true
+    },
+    {
+      "name": "Restart clears construction and future unlocks",
+      "passed": true
+    },
+    {
+      "name": "Construction layout fits a mobile viewport",
+      "passed": true
+    },
+    {
+      "name": "No runtime errors in construction controls",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

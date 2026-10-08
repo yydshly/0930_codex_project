@@ -1,0 +1,4455 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080b11"><meta name="description" content="Black Hole Lab 完整研究档案：黑洞理解整理、科学说明、成像公式、10章30段中文旁白原稿、课程设计、历史版本和验证记录。"><title>Black Hole Lab · 完整理解与研究档案</title><link rel="stylesheet" href="styles.css"><style>
+.archive-page .site-header{height:auto;min-height:77px;flex-wrap:wrap;padding-top:18px;padding-bottom:18px}
+.archive-page main{max-width:1150px;padding-bottom:70px}.archive-page a{color:var(--gold)}
+.archive-page .archive-top{padding-top:50px;display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:38px;align-items:start}
+.archive-page .archive-top h1{font-size:clamp(30px,4vw,48px)}.archive-page .archive-top p{color:var(--soft);font-size:15px;line-height:1.9}
+.archive-page .archive-guide{margin:0}.archive-page .archive-guide img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px}
+.archive-page .archive-guide figcaption{font-size:12px;color:var(--muted);margin-top:9px}
+.archive-page .archive-note{background:var(--panel);padding:22px;border:1px solid var(--line);border-radius:8px;margin:28px 0}
+.archive-page .archive-note p{margin:0 0 8px;color:var(--soft)}.archive-page .archive-note p:last-child{margin:0}
+.archive-page .archive-contents{display:block;border:1px solid var(--line);padding:25px;border-radius:8px;margin:35px 0;color:var(--text);font-size:14px}
+.archive-page .archive-contents ol{display:grid;grid-template-columns:1fr 1fr;gap:12px 32px;padding-left:22px;margin:17px 0 0}
+.archive-page .archive-contents h2{font-size:21px;margin:0}.archive-page .archive-contents p{color:var(--muted);margin:12px 0 0}
+.archive-page .archive-section{margin-top:55px;border-top:1px solid var(--line);padding-top:30px;scroll-margin-top:25px}
+.archive-page .archive-section>h2{font-size:27px;font-weight:550;line-height:1.4;margin:8px 0 12px}
+.archive-page .archive-section .archive-status{color:var(--gold);font-size:12px}.archive-page .archive-source{color:var(--muted);font-size:13px;margin-bottom:25px}
+.archive-page .archive-prose{max-width:890px;font-size:15px;line-height:1.95;overflow-wrap:anywhere}
+.archive-page .archive-prose p,.archive-page .archive-prose li{color:var(--soft)}.archive-page .archive-prose h3{font-size:23px;margin-top:30px;line-height:1.5}
+.archive-page .archive-prose h4{font-size:19px;margin:28px 0 12px;line-height:1.5}.archive-page .archive-prose h5{font-size:17px;margin:25px 0 10px}
+.archive-page .archive-prose ul,.archive-page .archive-prose ol{padding-left:25px}.archive-page .archive-prose li{margin:8px 0}
+.archive-page .heading-link{margin-left:12px;color:var(--muted);font-size:14px;font-weight:400}
+.archive-page code{font-size:.9em;color:#eacb9c;background:#141b26;padding:2px 5px;border-radius:3px}
+.archive-page pre{padding:20px;background:#0e141e;border:1px solid var(--line);border-radius:6px;overflow:auto;font:12px/1.75 ui-monospace,Consolas,monospace;max-width:100%}
+.archive-page pre code{padding:0;background:transparent;color:var(--soft);font-size:inherit}
+.archive-page .archive-table{width:100%;overflow-x:auto;border:1px solid var(--line);border-radius:6px;margin:20px 0}
+.archive-page table{width:100%;border-collapse:collapse;font-size:13px;line-height:1.8;min-width:420px}
+.archive-page th,.archive-page td{padding:13px 15px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.archive-page th{background:var(--panel);color:var(--text)}.archive-page td{color:var(--soft)}
+.archive-page blockquote{border-left:3px solid var(--gold);padding-left:20px;margin-left:0}
+.archive-page .record-card{background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:22px;margin:20px 0;overflow-wrap:anywhere}
+.archive-page .record-card h3{font-size:19px;line-height:1.5;margin:0 0 10px}.archive-page .record-card p{color:var(--soft);font-size:13px}
+.archive-page .record-card details{margin-top:15px}.archive-page .record-card summary{cursor:pointer;color:var(--gold)}
+.archive-page .record-card pre{max-height:550px;font-size:11px}.archive-page .record-label{font-size:12px;color:var(--gold)}
+.archive-page footer{max-width:1150px;margin:0 auto;padding:30px;display:block;overflow-wrap:anywhere}
+@media(max-width:740px){.archive-page main{padding:0 20px 45px}.archive-page .archive-top{grid-template-columns:1fr;gap:22px;padding-top:32px}
+.archive-page .archive-guide{max-width:300px}.archive-page .archive-contents{padding:21px}.archive-page .archive-contents ol{grid-template-columns:1fr}
+.archive-page .archive-section>h2{font-size:24px}.archive-page .archive-prose{font-size:14px}.archive-page .archive-note{padding:18px}
+.archive-page .site-header nav{width:100%;gap:14px;flex-wrap:wrap}.archive-page pre{padding:13px}.archive-page .record-card{padding:17px}}
+</style></head>
+<body class="archive-page"><header class="site-header"><a class="wordmark" href="index.html#overview"><span class="orbit-mark" aria-hidden="true"></span>BLACK HOLE <span>LAB</span></a><nav aria-label="返回展示与理解"><a href="index.html#overview">全部入口</a><a href="index.html#experiment">效果与课程</a><a href="index.html#understanding">理解总结</a><a href="index.html#references">相关链接</a></nav><span class="project-number">研究集 / 012</span></header>
+<main><div class="archive-top"><div><p class="eyebrow">UNDERSTANDING · SCIENCE · FULL RESEARCH</p><h1>从视觉效果到真实原理，<br>完整保留我们的理解。</h1><p>从黑洞暗影、外部亮盘、弯光亮弧和频移明暗，继续理解恒星塌缩、事件视界、时空、固有时与身体衰老。这里收录完整说明、计算公式、全部旁白、设计记录及验证证据，方便顺着来源核对。</p><p><a href="index.html#overview">回到全部展示入口 →</a> · <a href="index.html#experiment">运行实时效果与完整课程 →</a></p></div><figure class="archive-guide"><a href="assets/understanding-map.png"><img src="assets/understanding-map.png" width="1800" height="2240" alt="沿用已生成的黑洞效果与时空认知总览图" decoding="async"></a><figcaption>沿用我们的原总览图 · <a href="assets/understanding-map.png">PNG 大图</a> · <a href="assets/understanding-map.svg">SVG</a></figcaption></figure></div>
+<div class="archive-note"><p><strong>阅读顺序：</strong>先看理解总结，再看当前科学说明与计算模型；需要逐句核对时阅读完整旁白。最后的前期研究和旧 construction 验收明确标为历史版本。</p><p><strong>资料时间：</strong>研究正文保留各自记录日期；本公开档案整理于 2026-10-08（Asia/Shanghai）。旧验证快照用于说明当时检查过什么，不能自动证明现在的部署或硬件性能。</p><p><strong>当前范围：</strong>外部成像采用无自旋黑洞与简化薄盘，部分形成与气体过程为机制示意；温度伪彩不是观测照片，“自己一年 / 地球十年”是说明固有时差的理论例子。</p></div>
+<nav class="archive-contents" id="contents" aria-label="完整研究目录"><h2>完整目录</h2><ol><li><a href="#understanding">我们的理解：效果、时空与寿命</a></li><li><a href="#science">科学定义、形成与观测机制</a></li><li><a href="#principles">计算公式、实现与数值边界</a></li><li><a href="#narration">完整中文旁白与制作记录</a></li><li><a href="#course-design">同步课程与文件职责</a></li><li><a href="#history">前期研究与历史版本</a></li><li><a href="#records">全部验证记录与适用范围</a></li><li><a href="#sources">来源、源码与公开范围</a></li></ol><p>正文全部可展开阅读，无需另装工具；公式表格在窄屏可横向查看，验证详情可按需展开。</p></nav>
+<section class="archive-section" id="understanding" data-source="notes/UNDERSTANDING.md" data-source-sha256="00c53f39ada246f53d16c28091b97cf8799b744c751c5f624cfb5d9fefaf9d0d"><span class="archive-status">当前理解整理</span><h2>我们的理解：效果、时空与寿命</h2><p class="archive-source">从效果到概念，区分真实时间差、普通环境影响和远方收到的光。 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/012-black-hole-lab/notes/UNDERSTANDING.md">查看 UNDERSTANDING.md 原始全文</a> · <a href="#contents">回到目录 ↑</a></p><div class="archive-prose"><h3 id="understanding-heading-1">从黑洞效果到时空与寿命：讨论整理<a class="heading-link" href="#understanding-heading-1" aria-label="链接到这一节">#</a></h3>
+<p>整理日期：2026-10-02（Asia/Shanghai）。网页入口：<code>../web/index.html#understanding</code>。</p>
+<p>本子项目从一个黑洞 shader 的视觉效果出发，独立实现外部成像与形成机制演示。本次补充把后续讨论整理成总览图和可阅读的说明，说明效果、真实机制、延伸认知与证据边界。没有把讨论中的假想旅行增加为已计算或已实现的课程。</p>
+<h4 id="understanding-heading-2">效果与形成<a class="heading-link" href="#understanding-heading-2" aria-label="链接到这一节">#</a></h4>
+<p>黑洞的定义涉及事件视界：视界内部发出的信号不能抵达遥远外部。视界是因果边界，没有固体外壳；当地测量的光速仍是 c。不能仅将黑洞定义为停止发光的压缩物质，其内部精确结构尚未确定。</p>
+<p>本页演示一条恒星质量黑洞形成路线：大质量恒星晚期的核心失去足够压力支撑，向中心收缩；足够重的残留核心若无法停止进一步塌缩，就可能留下黑洞。也可能有其他恒星结局，太阳正常演化不会形成黑洞。亮盘不是成洞的必然结果。</p>
+<p>画面中的亮盘来自事件视界外的热气体。吸积与耗散把一部分轨道能量转成热和辐射；背面盘光经弯曲路径到达观察者，形成上下亮弧。气体运动和重力频移影响接收的光谱和亮度。暗区由光捕获和照明环境共同决定，不能将全部黑色区域等同于事件视界的实体表面。</p>
+<h4 id="understanding-heading-3">时空与真正可测的变化<a class="heading-link" href="#understanding-heading-3" aria-label="链接到这一节">#</a></h4>
+<p>空间距离和时间间隔都可测量。时空共同描述事件的位置和时间；它不是物质压缩后才新产生的概念。质量与能量影响时空几何，运动则改变系统走过的时空路径。光路径、轨道、潮汐作用、距离的几何关系与时钟比较都可以出现可测效应。</p>
+<p>理想随身钟沿一段经历累计的时间称为固有时。它由完整的时空路径决定，不能仅从“很靠近黑洞”给出一个普遍年龄比例；往返、停留、运动与引力条件都必须计入。</p>
+<h4 id="understanding-heading-4">光钟、身体与寿命<a class="heading-link" href="#understanding-heading-4" aria-label="链接到这一节">#</a></h4>
+<p>光钟是测量时间的例子，不是让人衰老的光源。前面的光钟讨论用高速运动说明时间测量差异，不能直接把斜线路径当成引力时间差的推导。把时间关系用于人体，依靠相对论对局部物理规律的统一描述；原子钟比较和粒子衰变寿命实验提供了独立检验。</p>
+<p>身体中的物理与生理过程按当地自身时间进行。生活与健康等条件相当时，实际经过一年就经历这一年的生理过程；本人不会感觉自己的时间冻结。身体状态和生物年龄还受健康、环境与其他因素影响，不能保证所有人的生物年龄精确增加固定数量。</p>
+<p>“同为 30 岁出发，旅者一年、地球十年，重逢时为 31 岁与 40 岁”是说明相对论年龄差的假想例子。不是本页模拟给出的行程，不是已实现的人类旅行，也不是任何黑洞附近通用的 1:10 比例。可返回的旅行需要始终留在事件视界外。</p>
+<p>相对外界少衰老，可以让人到达外界更遥远的未来；不会自动增加其能亲身体验的生命时长，更不代表时间停止、永生或倒退到过去。</p>
+<h4 id="understanding-heading-5">三种“变慢”<a class="heading-link" href="#understanding-heading-5" aria-label="链接到这一节">#</a></h4>
+<div class="archive-table"><table><thead><tr><th scope="col">情况</th><th scope="col">钟与身体的关系</th><th scope="col">能否据此说真实经过的时间不同</th></tr></thead><tbody><tr><td>普通环境或健康影响</td><td>钟可记录同样一年，身体状态却不同</td><td>单靠身体变化不能判断</td></tr><tr><td>相对论时间差</td><td>各自理想钟累计不同的固有时；当地物理过程正常</td><td>重逢比较时可以有真实差异</td></tr><tr><td>远处收到的光似乎停住</td><td>光到达间隔增大、红移、变弱；本人自身时间继续</td><td>不能将影像冻结等同于人体暂停</td></tr></tbody></table></div>
+<p>在所选黑洞模型中，下落者可在有限自身时间越过事件视界；远方接收的信号越来越迟、红、暗，不会留下一个永远明亮的静止人像。此观察差异不能用于暂停人体衰老。</p>
+<h4 id="understanding-heading-6">实际意义与证据边界<a class="heading-link" href="#understanding-heading-6" aria-label="链接到这一节">#</a></h4>
+<p>引力影响取决于质量和距离。假想把太阳换成同质量黑洞，地球轨道基本不变，但会失去阳光。研究黑洞有助于检验强引力物理、研究恒星与星系演化、通过引力波了解合并事件。这个项目将这些机制用于科普、实时游戏效果和受控成像对照。</p>
+<p>日常导航的相对论钟差校正涉及地球引力和卫星运动，不是黑洞造成的。黑洞研究和导航中的时间效应关联于共同的相对论框架，不能将二者因果关系混为一谈。</p>
+<p>原子钟实验、黑洞附近恒星的红移和轨道进动、引力波探测支持相对论外部效应。内部物质、奇点的真实结构与量子引力仍有未解决问题。没有观测证据支持可用的黑洞穿越通道或返回过去的方案。</p>
+<h4 id="understanding-heading-7">图与模型的范围<a class="heading-link" href="#understanding-heading-7" aria-label="链接到这一节">#</a></h4>
+<p>总览图为代码绘制的可编辑 SVG，并导出 PNG。嵌入画面从当前网页数值成像器的温度伪彩模式导出；不是观测照片，橙色也不是普遍的真实肉眼颜色。图解不按天体尺度绘制。</p>
+<p>主成像使用静态无自旋黑洞的外部光路与简化薄盘；形成、成盘和角动量输运含机制示意。没有求解完整恒星坍缩、磁流体、动态视界或人体旅行轨迹。原来的 10 章 / 30 段 MiniMax 课程继续使用既有脚本；本次理解总结为单独的阅读部分。</p>
+<h4 id="understanding-heading-8">资料<a class="heading-link" href="#understanding-heading-8" aria-label="链接到这一节">#</a></h4>
+<ul><li><a href="https://science.nasa.gov/universe/black-holes/anatomy/">NASA：黑洞结构、盘光与影像</a></li><li><a href="https://science.nasa.gov/universe/black-holes/types/">NASA：不同类型与起源</a></li><li><a href="https://science.nasa.gov/universe/10-questions-you-might-have-about-black-holes/">NASA：质量、距离与同质量太阳替换假想</a></li><li><a href="https://www.einstein-online.info/en/spotlight/how-time-is-made/">Einstein Online：时钟、固有时与时间坐标</a></li><li><a href="https://www.einstein-online.info/en/spotlight/twins/">Einstein Online：旅行双胞胎与年龄差</a></li><li><a href="https://www.einstein-online.info/en/spotlight/light-clocks-time-dilation/">Einstein Online：光钟的推导</a></li><li><a href="https://www.nist.gov/atomic-clocks/a-powerful-tool-for-science/putting-einstein-test">NIST：原子钟检验与 GPS</a></li><li><a href="https://cds.cern.ch/record/878581">CERN：μ 子衰变时间的相对论实验</a></li><li><a href="https://www.eso.org/public/news/eso2006/">ESO：S2 恒星轨道进动</a></li><li><a href="https://www.ligo.caltech.edu/detection">LIGO：引力波首次直接探测</a></li><li><a href="https://science.nasa.gov/apod/frequently-asked-questions-faqs-on-black-holes/">NASA：下落者与远方收到的光</a></li></ul>
+<p>模型细节见 <a href="#science">SCIENCE.md</a> 和 <a href="#principles">PRINCIPLES.md</a>。</p></div></section><section class="archive-section" id="science" data-source="notes/SCIENCE.md" data-source-sha256="51408ab2d47de44c134e3506f9712294b47dd6cee63dee680887f9458588cb48"><span class="archive-status">当前科学说明</span><h2>科学定义、形成与观测机制</h2><p class="archive-source">黑洞、恒星塌缩、外部气体和所见影像，以及相应资料与范围。 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/012-black-hole-lab/notes/SCIENCE.md">查看 SCIENCE.md 原始全文</a> · <a href="#contents">回到目录 ↑</a></p><div class="archive-prose"><h3 id="science-heading-1">黑洞的定义、形成与所见影像<a class="heading-link" href="#science-heading-1" aria-label="链接到这一节">#</a></h3>
+<p>资料核对：2026-10-02。交互入口：../web/index.html。</p>
+<h4 id="science-heading-2">先把三件事分开<a class="heading-link" href="#science-heading-2" aria-label="链接到这一节">#</a></h4>
+<p><strong>黑洞</strong>是不能把信号传到遥远外部的时空区域，其边界称为事件视界。<strong>塌缩</strong>是物质向中心运动的过程，在一定条件下可以留下黑洞。<strong>亮盘与亮弧</strong>来自视界外的气体及其光线传播，不是物质正在塌缩时必然出现的轮廓。</p>
+<p>视界不是固体壳。局部测量的光速仍为 c；光无法逃出，是未来光路的因果结构所致。没有附近明亮气体的黑洞仍然是黑洞。页面开头先给出结果的部位解释，避免把亮圈当成黑洞的实体表面。<a href="https://science.nasa.gov/universe/black-holes/anatomy/">NASA：黑洞结构</a></p>
+<h4 id="science-heading-3">形成：为什么核心会向内落<a class="heading-link" href="#science-heading-3" aria-label="链接到这一节">#</a></h4>
+<p>恒星内部存在向内的引力和向外的压力梯度。聚变提供能量，帮助维持高温和压力；“聚变向外顶着”是因果概括，实际支撑是压力梯度。稳定阶段两者近似平衡，第一章的箭头说明这种关系。</p>
+<p>进入大质量恒星的晚期后，核心的组成、能量收支和压力支撑改变，可能失去稳定性。铁族核心继续聚变不能提供净能量；电子俘获、光致分解等过程也会影响支撑。于是核心向中心收缩，随后外层也可能落入。外层抛出属于可能发生的爆炸过程，不能画成“坍塌从里面向外传播”。</p>
+<p>有些结局留下中子星；足够重的残留核心若无法被物质压力继续支撑，就可能形成黑洞。明亮超新星不是所有成洞过程的必要步骤；直接塌缩也是研究中的形成路线。<a href="https://heasarc.gsfc.nasa.gov/docs/objects/heapow/archive/compact_objects/collapsar.html">NASA：塌缩与可能的直接成洞</a></p>
+<p>本演示只选其中一条恒星质量黑洞路线。它没有用初始恒星质量给出普遍的结局阈值。太阳的正常演化不会走这条路线，超大质量黑洞的起源也不能用这一段动画解释。<a href="https://science.nasa.gov/universe/black-holes/types/">NASA：类型与起源</a></p>
+<h4 id="science-heading-4">核心收缩：哪一部分真的计算了<a class="heading-link" href="#science-heading-4" aria-label="链接到这一节">#</a></h4>
+<p>第三章用固定外部时空中的测试粒子轨道表示一个无压力收缩边界，计算最后一段径向自由落体：从静止半径 4Rₛ 缩至 0.65Rₛ。它已非常紧凑，不是稳定恒星的初始大小。固定质量默认 10 M☉，Rₛ = 2GM/c² ≈ 29.53 km；动画时间被放慢，图上的核心也被放大。</p>
+<p>在 Rₛ = c = 1 的单位中，边界的径向自由落体满足：</p>
+<pre><code class="language-text">E = sqrt(1 - 1/r₀)
+dr/dτ = -sqrt(1/r - 1/r₀)
+r(η) = r₀/2 · (1 + cos η)
+τ(η) = r₀^(3/2)/2 · (η + sin η)</code></pre>
+<p>页面用自身时间 τ 推进，不用线性缩小半径来冒充落体。该模型说明“向内落”和“自身时间有限”这两个问题；它没有求解真实恒星的压力、旋转、质量损失或内部时空，也没有求出动态事件视界在整段形成史中的位置。早期的 Rₛ 圈只是对应质量的参考尺度。</p>
+<p>页面还计算从下落边界朝外发出的径向光。远方接收到的频率比趋向零、到达间隔增大，因此远处看到的信号会红移、变弱，最终难以看见；不能把这理解成物质真的永远停在视界上。到达时间显示的是远方信号的相对延迟，已去除共同的遥远传播时间。解析关系与坐标说明可核对 <a href="https://fiteoweb.unige.ch/~kunzm/lectures/gr_2019.pdf">Martin Kunz 的广义相对论讲义，第 3.5 节</a>。</p>
+<h4 id="science-heading-5">事件视界：用光路显示“为什么逃不出”<a class="heading-link" href="#science-heading-5" aria-label="链接到这一节">#</a></h4>
+<p>第四章采用能跨越视界的入射 Eddington–Finkelstein 坐标。径向朝外光线满足：</p>
+<pre><code class="language-text">dr/dv = 1/2 · (1 - 1/r)</code></pre>
+<p>r &gt; 1 时径向坐标可以增大；r = 1 时朝外光线留在边界上；r &lt; 1 时连这个朝外分支也向更小 r 前进。这里的 dr/dv 是坐标变化率，不是局部光速。光不是撞到黑壳，也不是因为在当地速度变慢。</p>
+<p>此图解释已形成、无自旋黑洞的因果边界；不能拿静态黑洞的内部图替代正在塌缩的整颗恒星内部。中心奇点与量子引力没有被画成可观察的实体。</p>
+<h4 id="science-heading-6">气体：为什么绕成盘、为什么还能往内走<a class="heading-link" href="#science-heading-6" aria-label="链接到这一节">#</a></h4>
+<p>附近物质可能来自伴星、恒星残骸或环境。带角动量的气体会绕行；碰撞、耗散与冷却有助于气流集中到共同旋转平面。能持续向内吸积，还需要把角动量向外输运，磁应力与湍流是重要机制。粒子图用箭头和路径说明这一因果，不计算磁流体方程。</p>
+<p>有角动量不等于永远留在同一轨道；有引力也不等于所有物质自动径向落下。对照按钮帮助区分这两种情况。盘可以很厚，当前选择的是冷却较有效的薄盘模型。<a href="https://arxiv.org/abs/1705.03319">Fromang &amp; Lesur：角动量输运综述</a></p>
+<h4 id="science-heading-7">发光：能量、温度与颜色如何联系<a class="heading-link" href="#science-heading-7" aria-label="链接到这一节">#</a></h4>
+<p>气体向内吸积时释放轨道能量。应力与耗散把一部分能量转成热，外部气体再辐射。这里采用稳态、局部黑体、内边缘零力矩的牛顿薄盘温度关系：</p>
+<pre><code class="language-text">σ T_eff(r)^4 = 3GM Ṁ/(8πr³) · [1 - sqrt(r_in/r)]
+r_in = 3Rₛ</code></pre>
+<p>它是可核对的简化盘模型，接近黑洞时并非完整相对论盘通量。温度在 r = (49/36)r_in 附近最高，零力矩边缘处趋向零；“越靠中心越热、一直加热到视界”不适用于这个模型。理论起点见 <a href="https://ui.adsabs.harvard.edu/abs/1973A%26A....24..337S/abstract">Shakura &amp; Sunyaev 1973 原论文记录</a>。</p>
+<p>默认 M = 10 M☉、Ṁ = 10⁻⁹ M☉/年时，模型给出 T_max ≈ 1.946 × 10⁶ K。Wien 波长峰值 λ_max ≈ 2.898 × 10⁻³/T ≈ 1.49 nm，属于软 X 射线；这指局部黑体 B_λ 的峰值，不是整盘观测光谱的唯一峰值。</p>
+<p>主画面默认计算有限可见波段的黑体颜色并调节显示曝光，因此很热的气体可以显示为偏白、偏蓝。暖橙色模式是明确标注的温度/亮度伪彩。真实观测常使用特定波段和颜色映射，不能由示意橙色反推气体只有火焰温度。任意改变吸积率只是所选模型内的探索，不保证所有参数下薄盘与黑体假设都成立。</p>
+<h4 id="science-heading-8">亮弧：光路弯了，盘没有跟着弯<a class="heading-link" href="#science-heading-8" aria-label="链接到这一节">#</a></h4>
+<p>第七章的单束光路由外部时空方程计算，主画面也逐像素计算相机反向光路。来自盘背面的光可以绕过黑洞后到达相机；因此观察者看见盘背面的变形影像，形成上下亮弧。正面观察时外观更接近环。</p>
+<p>“直线路径”按钮是帮助理解成像机制的非物理对照，不能在真实宇宙中关掉引力。计算光路与局部观察者初值采用 Schwarzschild 模型，来源可核对 <a href="https://arxiv.org/html/2010.08735v1#S3">Bruneton 的模型章节</a>。</p>
+<h4 id="science-heading-9">暗区、视界、光子球为什么不能混用<a class="heading-link" href="#science-heading-9" aria-label="链接到这一节">#</a></h4>
+<p>默认 10 M☉ 的无自旋例子：</p>
+<div class="archive-table"><table><thead><tr><th scope="col">量</th><th scope="col">数值</th><th scope="col">它是什么</th></tr></thead><tbody><tr><td>Rₛ</td><td>29.53 km</td><td>事件视界的面积半径</td></tr><tr><td>1.5Rₛ</td><td>44.30 km</td><td>不稳定圆形光轨道所在的光子球半径</td></tr><tr><td>3Rₛ</td><td>88.60 km</td><td>大质量粒子的最内稳定圆轨道半径，当前盘内缘的参考</td></tr><tr><td>b_crit = 3√3Rₛ/2</td><td>76.73 km</td><td>很远观察者的临界光线冲量参数</td></tr></tbody></table></div>
+<p>最后一项不是黑洞实体表面的半径。影像中的阴影受光捕获、透镜、相机位置和照明环境共同影响；盘内没有发光物质的视线也可能显暗。有限相机和薄盘图中，整个暗洞不应一律等同于严格定义的阴影。</p>
+<h4 id="science-heading-10">一侧亮、一侧暗：频移也改变光谱<a class="heading-link" href="#science-heading-10" aria-label="链接到这一节">#</a></h4>
+<p>气体绕行时，相对光线方向不同。朝向接收光方向的气体通常更亮，频率较高；远离一侧通常更暗。光离开强引力区域还会发生重力红移。页面计算合并频率比 g = ν_obs/ν_em，并通过它移动黑体光谱。</p>
+<p>特定频率上的辐亮度变换满足 I_ν/ν³ 不变；对所有频率积分后是 g⁴ 关系。把所有 RGB 亮度直接乘固定 D³ 并不能给出同一个观测带通的准确结果。默认可见模式使用接收到的温度 gT 积分；伪彩才使用总辐亮度 g⁴ 的教学映射。</p>
+<h4 id="science-heading-11">本页怎样保持可审查<a class="heading-link" href="#science-heading-11" aria-label="链接到这一节">#</a></h4>
+<p>每章都说明正在展示的原因与结果；精确可计算的关系和机制示意分别标明。模型检查用解析尺度、轨道守恒量与偏折基准核对，浏览器检查确认字幕、回放、对照、参数和画面确实同步。漂亮截图本身不是物理精度的证明。</p>
+<p>详细实现与剩余近似见 <a href="#principles">PRINCIPLES.md</a>，流程与文件职责见 <a href="#course-design">CONSTRUCTION.md</a>。来源均为 NASA、作者论文或大学作者讲义；参考 Reddit 只作为视觉起点，不作为天体物理依据。</p></div></section><section class="archive-section" id="principles" data-source="notes/PRINCIPLES.md" data-source-sha256="b66036bfc38bbe88f14e3c5ce3d22e54c572145e146c1097e0261bf0b057bacf"><span class="archive-status">当前计算模型</span><h2>计算公式、实现与数值边界</h2><p class="archive-source">自由落体、径向光、零测地线、盘温、频移与有限采样。 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/012-black-hole-lab/notes/PRINCIPLES.md">查看 PRINCIPLES.md 原始全文</a> · <a href="#contents">回到目录 ↑</a></p><div class="archive-prose"><h3 id="principles-heading-1">计算模型、成像公式与可验证边界<a class="heading-link" href="#principles-heading-1" aria-label="链接到这一节">#</a></h3>
+<p>研究日期：2026-10-02。实现：web/model.js、web/physics.js、web/shaders.js、web/course.js、web/app.js。观众需要的因果解释见 <a href="#science">SCIENCE.md</a>。</p>
+<h4 id="principles-heading-2">模型范围和单位<a class="heading-link" href="#principles-heading-2" aria-label="链接到这一节">#</a></h4>
+<p>选定背景是无自旋、无电荷的 Schwarzschild 外部时空。使用 Rₛ = 2GM/c² 为长度单位，Rₛ/c 为时间单位；默认 M = 10 M☉ 时分别约为 29.53 km 与 98.51 μs。相机是指定半径处的静止观察者；鼠标环绕用来比较不同位置，不模拟一艘实际运动的飞船。</p>
+<p>归一化度规写为：</p>
+<pre><code class="language-text">f(r) = 1 - 1/r
+ds² = -f dt² + dr²/f + r² dΩ²</code></pre>
+<p>符号约定与一些论文不同，但零测地线和可观测频率关系一致。页面没有解爱因斯坦方程来形成一个随时间改变的黑洞；它在选定背景和球对称边界模型中计算轨道。<a href="https://arxiv.org/html/2010.08735v1#S3">Bruneton 2020，模型章节</a></p>
+<h4 id="principles-heading-3">1. 径向自由落体与两种时间读数<a class="heading-link" href="#principles-heading-3" aria-label="链接到这一节">#</a></h4>
+<p>model.js 的 collapse() 由解析摆线关系计算半径，而不是插值缩圆。r₀ = 4，自身时间从零推进至 r = 0.65：</p>
+<pre><code class="language-text">E = sqrt(1 - 1/r₀)
+r = r₀/2 · (1 + cos η)
+τ = r₀^(3/2)/2 · (η + sin η)
+dr/dτ = -sqrt(E² - f)
+dt/dτ = E/f                  # 只在 r &gt; 1 积分此静态坐标表达</code></pre>
+<p>这是从静止开始、零压力球对称边界的最后一段径向自由落体。自身时间有限；恒星压力、内层运动和动态视界没有被求解。</p>
+<p>模型还计算向外径向光在无穷远接收的频率比，以及去除共同传播路程后的相对到达时间：</p>
+<pre><code class="language-text">g_∞ = E - sqrt(E² - f)
+    = f/[E + sqrt(E² - f)]
+r* = r + ln(r - 1)           # 视界外
+Δt_arrival = [t - r* - (t₀ - r*₀)] · Rₛ/c</code></pre>
+<p>g_∞ 趋零与延迟增大解释远方信号的红移、衰弱。模型不会为视界内发射事件返回可达远方的信号。这组读数对应远方接收者，和主成像的有限半径相机应区分。<a href="https://fiteoweb.unige.ch/~kunzm/lectures/gr_2019.pdf">Kunz，广义相对论讲义 3.5 节</a></p>
+<h4 id="principles-heading-4">2. 跨视界的径向光路<a class="heading-link" href="#principles-heading-4" aria-label="链接到这一节">#</a></h4>
+<p>radialLight() 对入射 Eddington–Finkelstein 坐标中的朝外零曲线做 RK4 积分：</p>
+<pre><code class="language-text">v = t + r*
+ds² = -f dv² + 2 dv dr + r² dΩ²
+dr/dv = f/2</code></pre>
+<p>这种坐标在 r = 1 不发生 Schwarzschild t 的坐标发散。坐标图显示朝外分支在外部向外、视界上沿边界、内部向内；图中斜率不是当地测量的光速。图解用静态模型说明因果边界，不替代塌缩物质内部的动态解。</p>
+<h4 id="principles-heading-5">3. 从像素的局部方向到零测地线<a class="heading-link" href="#principles-heading-5" aria-label="链接到这一节">#</a></h4>
+<p>片元着色器对每个像素构建相机局部单位视线 n。相机位置 p 的径向单位向量是 e_r，先按静止观察者的正交标架转换为空间坐标切向量：</p>
+<pre><code class="language-text">v = n + e_r · (n·e_r) · [sqrt(f_cam) - 1]
+L² = |p × v|²
+E² = f_cam</code></pre>
+<p>这一步使初值满足零条件。不能把欧氏单位视线直接作为该坐标系的光切向量。空间轨道随后满足：</p>
+<pre><code class="language-text">d²p/dλ² = -3L²p/(2r⁵)
+|v|² - L²/r³ = E²</code></pre>
+<p>λ 是仿射参数；v 是坐标积分量，不是可测局部光速。这是 Schwarzschild 零测地线的空间表达，不是人为加一个牛顿吸力让光拐弯。shader 使用有限步长 Velocity Verlet；model.js 用较细 RK4 轨道作独立参考，并计算守恒量残差。</p>
+<p>光子球 r = 1.5、临界冲量参数 b_crit = 3√3/2 是解析基准。远方静止相机的阴影角半径还满足 sin α = b_crit·sqrt(f_cam)/r_cam，不可把冲量参数当作有形表面。</p>
+<h4 id="principles-heading-6">4. 数值积分与成像停止<a class="heading-link" href="#principles-heading-6" aria-label="链接到这一节">#</a></h4>
+<p>实时步长随半径改变，越接近视界越小。积分从实际相机位置开始，没有先沿直线跳到某个球壳的捷径。停止条件包括视界附近捕获、从有限外边界向外逃逸、透射率已很小或用尽步数。</p>
+<p>当前捕获阈值略高于 r = 1，背景逃逸边界为有限半径，shader 有最多 980 次循环的硬上限，实际预算由质量档控制。近临界光线可能绕行很久，高阶窄环对步长、像素与预算特别敏感。没有逃逸也没有捕获但用尽预算的光线以紫色诊断像素标记，不能当作捕获阴影或已经找到远方来源。流畅和均衡档均有 900 步预算，精细档 980 步；质量档主要改变像素数。</p>
+<p>这些限制会影响细环、阴影边缘和背景点源，解析公式正确不保证每个像素都收敛。精细研究应增加单束收敛实验、相机有限距离校正和带宽过滤，而不是只提高截图分辨率。</p>
+<h4 id="principles-heading-7">5. 几何薄盘、温度与图案<a class="heading-link" href="#principles-heading-7" aria-label="链接到这一节">#</a></h4>
+<p>盘的辐射面位于 y = 0。渲染在光线穿过该平面时采样，发光区约为 3.05–8.7Rₛ；物理温度模型的零力矩边缘取 r_in = 3Rₛ。稍外移的绘制起点和平滑边缘是有限采样处理。</p>
+<pre><code class="language-text">T_eff⁴ = [3GM Ṁ/(8πσr³)] · [1 - sqrt(r_in/r)]
+r_peak = (49/36)r_in</code></pre>
+<p>该表达使用牛顿稳态通量和局部黑体辐射，是温度近似；轨道弯光采用相对论背景，并不使盘通量自动变成 Novikov–Thorne 相对论盘。</p>
+<p>质量改变 km/归一化长度、s/归一化时间和温度；在固定 r/Rₛ 的几何中，成像形状不因为质量单位改变而任意变化。Ṁ 改变选定温度模型，T 在固定 r/Rₛ 下按 (Ṁ/M²)^(1/4) 缩放。参数范围内，真实气流可能进入当前薄盘模型不适用的状态。</p>
+<p>径向条带与角向波纹是程序化图案，温度中有小幅艺术纹理调制；图案转速采用 Schwarzschild 圆轨道角速度 Ω = 1/sqrt(2r³)，播放时间按教学速度放慢。它没有计算真实湍流、密度波、磁应力或精确发射迟延。光学柱密度控制改变透明度，不能解释成已求解盘的垂直流体结构。</p>
+<h4 id="principles-heading-8">6. 局部气体运动与接收频率<a class="heading-link" href="#principles-heading-8" aria-label="链接到这一节">#</a></h4>
+<p>在盘交点处，坐标光切向量的径向分量要除以 sqrt(f_em)，得到当地静止观察者测量的方向。反向追迹取负号后得到到达相机的实际光方向。圆轨道气体相对于该当地观察者的速度为：</p>
+<pre><code class="language-text">β = sqrt[1/(2(r - 1))]
+D = sqrt(1 - β²)/(1 - β cos θ)
+g = sqrt(f_em/f_cam) · D</code></pre>
+<p>cos θ 用局部气体运动方向与出射光方向的点积计算。g 同时包含重力与运动的频率变化；这里没有相机运动产生的额外多普勒因子。对照中去除运动因子用于教学，保留其余关系；直线光路对照本身是非物理实验。</p>
+<h4 id="principles-heading-9">7. 可见光与伪彩分别做了什么<a class="heading-link" href="#principles-heading-9" aria-label="链接到这一节">#</a></h4>
+<p>默认可见模式利用辐亮度不变量 I_ν/ν³。局部黑体经过频率比 g 后，接收到的光谱等同于温度 gT 的黑体：</p>
+<pre><code class="language-text">I_ν,obs(ν) = g³ I_ν,em(ν/g)
+B_ν,obs = B_ν(gT)
+XYZ ≈ Σ B_λ(gT) · [x̄(λ),ȳ(λ),z̄(λ)] · Δλ</code></pre>
+<p>shader 采用 12 个波长样本（395–725 nm，间隔 30 nm）与 <a href="https://jcgt.org/published/0002/02/01/paper.pdf">Wyman、Sloan、Shirley 2013 的 CIE 解析拟合</a>，再转换线性 RGB。有限波长与拟合都带来数值误差；这不是完整人眼、望远镜响应或绝对曝光模型。</p>
+<p>温度/亮度伪彩模式用暖色标表示温度，用积分辐亮度 g⁴ 关系显示亮度趋势。它明确标注为伪彩。不能把这个模式的橙色称为实际可见光颜色，也不能把特定频率的 g³ 与总频率积分的 g⁴ 混用。</p>
+<p>最终还有指数曝光映射、显示 gamma 与轻微暗角。程序化星空只用于展示方向扭曲，不包含真实恒星谱、点源束面积过滤或经过校准的天空亮度。因此画面是带数值模型的教学可视化，不是某个实测对象的照片预测。</p>
+<h4 id="principles-heading-10">8. 图解层与讲解层<a class="heading-link" href="#principles-heading-10" aria-label="链接到这一节">#</a></h4>
+<p>physics.js 将计算的 r(τ)、径向零曲线、盘温度和选中的光轨道画成 Canvas 图。压力、角动量输运和气体集中采用机制示意。course.js 用同一章和播放进度控制画面、解释字幕与预录旁白，避免讲解落后于画面。</p>
+<p>旁白由官方 MiniMax TTS 生成，使用 speech-2.8-hd 和 doc_commentary 音色，30 段 MP3 随项目保存。原生 HTMLAudioElement 的 currentTime 驱动同步进度，ended 事件决定换段；不再按短字幕字数或固定超时中断语音。暂停和继续保留 currentTime。</p>
+<p>当前朗读内容使用 API 返回的实际句块时间。01-00 段未返回分句时间，显示覆盖整段时长的完整原稿，不伪造逐字时间轴。生成记录保存原稿指纹、音频散列、时长和安全回执；网页运行不调用付费 API，也不包含密钥。完整稿与制作方法见 <a href="#narration">NARRATION.md</a>。PNG 导出读取当前可见的画布，不包含面板字幕。</p>
+<h4 id="principles-heading-11">9. 怎样核对，怎样继续提高<a class="heading-link" href="#principles-heading-11" aria-label="链接到这一节">#</a></h4>
+<p>tooling/verify-model.cjs 检查物理尺度、自由落体关系、内外光的方向、薄盘温度、零轨道守恒量与偏折参考；model-validation.json 保留实际结果。tooling/verify.cjs 另检查可操作流程、字幕与画面的同步、物理参数对影像的影响、暂停回放、导出和浏览器限制。数值基准应与浏览器功能测试分别看待。</p>
+<p>进一步扩展的顺序：先做步长与预算的收敛校验，再加入相对论盘通量与真实带通，然后才扩展到 Kerr 自旋、辐射转移和磁流体。恒星形成史另需恒星演化、状态方程、中微子输运和动态时空。每条扩展都应有自己的可核对数据。</p>
+<p>运行只有浏览器依赖，验证需要 Node.js/Playwright。自动截图使用 Chromium/SwiftShader，FPS 是画面提交速率，不能作为硬件 GPU 性能结论。视觉参考与代码归属见项目 README；本代码没有复制未公开的 Reddit 原作者实现。</p></div></section><section class="archive-section" id="narration" data-source="notes/NARRATION.md" data-source-sha256="8f9d2effb44cfdaa5a2a149afe47079e5e80e2d17bbddfb8585bd4eaf7d8b37b"><span class="archive-status">当前课程原稿</span><h2>完整中文旁白与制作记录</h2><p class="archive-source">保留全部 10 章 / 30 段原稿、MiniMax 录音与同步方式。 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/012-black-hole-lab/notes/NARRATION.md">查看 NARRATION.md 原始全文</a> · <a href="#contents">回到目录 ↑</a></p><div class="archive-prose"><h3 id="narration-heading-1">完整中文旁白稿<a class="heading-link" href="#narration-heading-1" aria-label="链接到这一节">#</a></h3>
+<p>本稿用于 MiniMax 预生成配音，与页面的 10 个章节、每章 3 个讲解点一一对应。机器可读原稿为 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/012-black-hole-lab/notes/narration-script.json">narration-script.json</a>。每段使用固定的 <code>stage-N-cue-M</code> 标识，<code>speech</code> 是完整旁白，<code>subtitle</code> 是便于边看边读的短字幕。</p>
+<p>全稿共 30 段，约 2973 个汉字（含标点及空格约 3292 个字符）。按每分钟约 260 至 300 个汉字的自然科普语速，目标时长约 10 至 12 分钟；实际播放时长以生成的音频为准。短字幕的字数不能用来决定旁白结束时间。</p>
+<h4 id="narration-heading-2">已生成的录音<a class="heading-link" href="#narration-heading-2" aria-label="链接到这一节">#</a></h4>
+<p>本次已经实际生成全部 30 段，解码后的合计时长 <strong>782.820 秒（约 13 分 3 秒）</strong>。来源为官方 MiniMax TTS，模型 speech-2.8-hd，音色 doc_commentary，生成速度 0.95，32 kHz 单声道 MP3。完整录音为 <a href="audio/narration/full-course.mp3">full-course.mp3</a>。</p>
+<ul><li><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/012-black-hole-lab/notes/narration-generation.json">narration-generation.json</a> 保存每段成功状态、原稿指纹、实际时长、音频散列和安全回执，不保存密钥。</li><li><a href="narration.js">narration.js</a> 是网页播放清单；29 段采用 API 返回的分句时间，01-00 段采用整段原稿字幕，未按字数伪造时间。</li><li><a href="#record-audio-validation">audio-validation.json</a> 记录实际解码、逐段播放结束、暂停续播、进度拖动、字幕覆盖和加载错误恢复的结果。无头浏览器验收不等于人工听感评审。</li></ul>
+<p>播放器直接读取本地 MP3。重新生成仅在修改原稿或录音参数时需要；生成脚本对相同请求复用缓存，并且不会自动重试结果未知的付费请求。从研究集根目录运行：</p>
+<pre><code class="language-powershell">python projects/012-black-hole-lab/tooling/generate-narration.py
+# 仅在需要新录音时调用官方 API；凭据留在服务端环境或指定私有文件中：
+python projects/012-black-hole-lab/tooling/generate-narration.py --generate --workers 3 --env-file C:/private/.env.minimax</code></pre>
+<p>不带 --generate 只读取缓存、更新清单并在全部录音就绪时合并完整 MP3，不创建付费请求。API、输出和音色资料见 <a href="https://platform.minimax.cn/docs/api-reference/speech-t2a-http">MiniMax 同步 TTS</a>、<a href="https://github.com/MiniMax-AI/skills/blob/main/skills/frontend-dev/references/minimax-voice-catalog.md">官方音色目录</a> 和 <a href="https://platform.minimax.cn/docs/guides/pricing-paygo">按量价格</a>。</p>
+<h4 id="narration-heading-3">配音与同步要求<a class="heading-link" href="#narration-heading-3" aria-label="链接到这一节">#</a></h4>
+<ul><li>使用自然、清晰、沉稳的普通话声音，短句之间稍停顿，换章稍停；避免宣传腔和逐字机械朗读。</li><li>“Rₛ”“Rs”读作“史瓦西半径”；旁白已经用中文措辞替代公式，不需要朗读数学符号。</li><li>30 段全部生成后才能称为完整配音。音频清单应保留段落标识、文件地址、实际时长和原稿校验值，方便检查缺段或旧版本音频。</li><li>播放器以每段音频的实际结束事件推进。暂停、继续、回看、选章与重播，都应控制同一个音频播放器；换段前停止上一段，避免重叠或残留播放。</li><li>语音使用固定的默认参数例子；实时参数值由页面读数说明。改变质量或供给后，不能让固定旁白假装正在读出新数值。</li><li>本文件提供稿件与制作要求；配音是否完成及覆盖情况，以生成音频清单和实际验收结果为准。</li></ul>
+<h4 id="narration-heading-4">内容覆盖与科学边界<a class="heading-link" href="#narration-heading-4" aria-label="链接到这一节">#</a></h4>
+<div class="archive-table"><table><thead><tr><th scope="col">章节</th><th scope="col">讲解重点</th></tr></thead><tbody><tr><td>00</td><td>黑洞、外部发光气体、观察影像三者的区别</td></tr><tr><td>01</td><td>向内引力、压力梯度、聚变供能与近似平衡</td></tr><tr><td>02</td><td>铁族核心、支撑削弱、可能的中子星与黑洞结局</td></tr><tr><td>03</td><td>最后一段自由落体、自身时间、远方收到的信号</td></tr><tr><td>04</td><td>事件视界的因果定义与局部光速</td></tr><tr><td>05</td><td>气体来源、角动量、成盘与向外输运</td></tr><tr><td>06</td><td>轨道能量、薄盘温度、内边缘、波段与假色</td></tr><tr><td>07</td><td>计算光路、背面影像、亮弧与非物理直线对照</td></tr><tr><td>08</td><td>运动频移、引力红移、可见波段与总辐亮度</td></tr><tr><td>09</td><td>因果链、适用范围与自主实验</td></tr></tbody></table></div>
+<p>这是一条恒星质量黑洞的形成路线。太阳的正常演化不会自身塌缩成黑洞，超大质量黑洞的起源也不能由此直接概括。明亮超新星不是成洞的必备步骤。黑洞不必带有明亮吸积盘，阴影的表观尺寸也不等于事件视界的半径。</p>
+<p>本页选定无旋转、球对称背景。核心收缩的最后一段、径向光路、外部成像光路和简化薄盘温度可计算；恒星演化与成盘为机制示意。固定外部模型没有求解动态事件视界的形成，也没有完整模拟气体、磁场、辐射输运或量子引力。光局部仍以光速传播；坐标曲线的斜率不是局部光速。对所有频率积分后的关系指总辐亮度，不能误称整个天体接收总通量的统一增益。</p>
+<p>物理依据与公式详见 <a href="#science">SCIENCE.md</a> 和 <a href="#principles">PRINCIPLES.md</a>。主要来源包括 <a href="https://science.nasa.gov/universe/black-holes/anatomy/">NASA 黑洞结构</a>、<a href="https://science.nasa.gov/universe/black-holes/types/">NASA 类型与起源</a>、<a href="https://heasarc.gsfc.nasa.gov/docs/objects/heapow/archive/compact_objects/collapsar.html">NASA 关于可能的直接塌缩</a>、<a href="https://arxiv.org/abs/2010.08735">Bruneton 的光路模型</a> 和 <a href="https://arxiv.org/abs/1705.03319">角动量输运综述</a>。</p>
+<h4 id="narration-heading-5">分段原稿<a class="heading-link" href="#narration-heading-5" aria-label="链接到这一节">#</a></h4>
+<h5 id="narration-heading-6">00 · 先认清画面中的三件事<a class="heading-link" href="#narration-heading-6" aria-label="链接到这一节">#</a></h5>
+<p><strong>stage-0-cue-0 · 中心为什么暗？</strong></p>
+<p>字幕：黑洞是光无法逃向遥远外部的区域；画面暗区不等于视界本身。</p>
+<p>旁白：先看这幅最终画面。中间的暗区、周围的亮盘、上下的弧，分别来自不同原因。黑洞是一个连光也不能逃向遥远外部的时空区域，边界叫事件视界。沿某些方向回溯光路，光会被捕获，因此那里显暗。不过，画面暗区并不就是事件视界本身。</p>
+<p><strong>stage-0-cue-1 · 亮的是什么？</strong></p>
+<p>字幕：发光的是视界外的热气体。黑洞没有燃烧表面，也不必带亮盘。</p>
+<p>旁白：再看横着穿过暗区的亮带。它主要是黑洞外面的热气体，叫吸积盘。黑洞本身没有一个像恒星那样燃烧的表面。我们能看见亮盘，是因为附近有气体供给，而且气体释放了能量。周围没有明亮物质，黑洞仍然可以存在，只是不会有这样的亮圈。</p>
+<p><strong>stage-0-cue-2 · 上下的弧是什么？</strong></p>
+<p>字幕：背面盘的光被弯曲时空改变方向；弯的是所见影像。</p>
+<p>旁白：最后看暗区上方和下方的弧。盘没有真的翘成一个拱门。那是盘背面的光在弯曲时空里传播，最后进入观察者的眼睛，形成了变形的影像。接下来，我们先回到一颗恒星，再一步步连接到这些效果。后面的箭头图是机制示意，标着计算结果的图则使用指定物理模型。</p>
+<h5 id="narration-heading-7">01 · 恒星靠什么抵抗引力？<a class="heading-link" href="#narration-heading-7" aria-label="链接到这一节">#</a></h5>
+<p><strong>stage-1-cue-0 · 先从大质量恒星开始</strong></p>
+<p>字幕：引力始终向内；恒星为何没有立刻塌缩？</p>
+<p>旁白：现在来到可能形成恒星质量黑洞的一条路线。蓝色箭头指向中心，代表恒星自身的引力。每一层物质都受到引力作用，想向内运动，但恒星可以稳定存在很长时间。原因不是引力暂时消失了，而是它的内部还有足够的支撑。</p>
+<p><strong>stage-1-cue-1 · 橙色箭头代表压力支撑</strong></p>
+<p>字幕：聚变供能维持高温，压力梯度抵抗引力。</p>
+<p>旁白：橙色箭头表示向外的压力支撑。恒星内部越靠中心，压力通常越高；这种压力的空间差异，抵抗向内的引力。核心的核聚变释放能量，帮助维持高温。因此，真正直接支撑恒星的是压力梯度，核聚变则是维持这种状态的重要能源。</p>
+<p><strong>stage-1-cue-2 · 稳定来自近似平衡</strong></p>
+<p>字幕：这是一条形成路线，太阳通常不会自身塌缩成黑洞。</p>
+<p>旁白：看两组箭头彼此平衡，恒星就能维持近似稳定的结构。黑洞形成的关键，是后面失去足够支撑，并继续压缩。但不是所有恒星都走这条路线。像太阳这样的恒星，正常演化的最终残留是白矮星。这里选择的是大质量恒星的核心塌缩，不能代表所有黑洞的起源。</p>
+<h5 id="narration-heading-8">02 · 晚期核心失去足够支撑<a class="heading-link" href="#narration-heading-8" aria-label="链接到这一节">#</a></h5>
+<p><strong>stage-2-cue-0 · 支撑为什么变弱？</strong></p>
+<p>字幕：晚期铁族核心无法靠继续聚变净供能，其他过程也削弱支撑。</p>
+<p>旁白：现在看橙色箭头逐渐变短。大质量恒星经过多阶段燃烧，晚期可能形成铁族核心。铁族物质继续聚变，不能再提供净能量。电子被原子核俘获，会改变压力支撑；高能光子拆解原子核，还会消耗能量。这些过程一起促使核心失去稳定性。</p>
+<p><strong>stage-2-cue-1 · 引力开始占上风</strong></p>
+<p>字幕：物质向中心收缩；外层可能抛出，也可能回落。</p>
+<p>旁白：支撑不足以后，引力占了上风，核心快速向中心收缩，密度随之上升。注意，这不是突然长出了一种新吸力，也不是坍塌向外蔓延。外层仍有自己的演化，可能在超新星中被抛出，也可能继续落入，或者在爆炸后回落到残留天体上。</p>
+<p><strong>stage-2-cue-2 · 收缩以后一定成黑洞吗？</strong></p>
+<p>字幕：可能留下中子星；足够重且无法继续被支撑的残留才会成洞。</p>
+<p>旁白：核心收缩并不保证一定形成黑洞。中子星也能由这条路线产生，它依靠致密物质的压力继续支撑。如果残留核心太重，或者后来又吸收了足够的物质，支撑仍然不足，就可能进一步形成黑洞。有些成洞过程没有明亮的超新星。超大质量黑洞的起源，则需要另行讨论。</p>
+<h5 id="narration-heading-9">03 · 半径、时钟与远处信号<a class="heading-link" href="#narration-heading-9" aria-label="链接到这一节">#</a></h5>
+<p><strong>stage-3-cue-0 · 放大最后一段收缩</strong></p>
+<p>字幕：默认十个太阳质量对应约三十公里的史瓦西半径。</p>
+<p>旁白：把最后一段收缩放大。对这个无旋转、球对称的例子，质量决定一个关键尺度，叫史瓦西半径。默认十个太阳质量，对应大约三十公里。图中物质边界从这个半径的四倍开始下落，所以已经非常紧凑，不是一颗普通恒星的原始大小。动画也被放慢了。</p>
+<p><strong>stage-3-cue-1 · 同一事件，两种时间读数</strong></p>
+<p>字幕：远处收到的信号越来越红、越来越弱，到达延迟增加。</p>
+<p>旁白：左边记录下落物质自身经历的时间，右边记录同一次发光事件的信号，在远处何时被收到。边界越接近虚线，信号越红、越弱，到达延迟也越大。因此远处逐渐难以看见它。这不表示物质真正停住，也不是永远能看到一个明亮、冻结在边界上的球。</p>
+<p><strong>stage-3-cue-2 · 自身能在有限时间穿过</strong></p>
+<p>字幕：穿过后发出的信号无法返回外部；本图不求解动态视界形成。</p>
+<p>旁白：按物质自己的时钟，它可以在有限时间跨过这个参考半径。跨入以后发出的信号，就无法抵达遥远外部。这一段用固定外部时空中的自由落体计算，解释最后的下落与信号变化；它没有求解整颗恒星的内部，也没有计算事件视界在真实塌缩全过程中怎样诞生。</p>
+<h5 id="narration-heading-10">04 · 光为何无法逃出事件视界<a class="heading-link" href="#narration-heading-10" aria-label="链接到这一节">#</a></h5>
+<p><strong>stage-4-cue-0 · 比较朝外发射的光</strong></p>
+<p>字幕：曲线是计算的光路；横轴半径，纵轴可跨视界的时间坐标。</p>
+<p>旁白：现在直接问：连光也逃不出，究竟是什么意思？图中横轴是半径，纵轴是一种能够跨过视界的时间坐标。我们在视界外、视界上、视界内，分别考虑朝外发射的光。彩色曲线是按这个模型的径向光路方程算出来的，不是随意弯曲的箭头。</p>
+<p><strong>stage-4-cue-1 · 内部的朝外光仍向内</strong></p>
+<p>字幕：视界外可走向更大半径；内部未来光路仍通向更小半径。</p>
+<p>旁白：看视界外的曲线，它能走向更大的半径。恰在视界上的出射光，沿边界延续。而视界内部，连朝外的这条未来光路，也走向更小的半径。光没有撞上一层黑色外壳，而是内部的因果结构，已经不允许它的未来抵达遥远外部。</p>
+<p><strong>stage-4-cue-2 · 局部光速仍是光速</strong></p>
+<p>字幕：这是因果边界；图中斜率不是局部测得的光速。</p>
+<p>旁白：光在当地被测量时，仍然以光速传播，并没有越跑越慢。这张坐标图的斜率，不是局部光速。黑洞的定义因此是一种因果边界，不是一块黑色固体。这个图描述已形成、无旋转黑洞的模型；中心的极端区域与量子引力，也没有被当成可观察的实体画出来。</p>
+<h5 id="narration-heading-11">05 · 周围气体如何形成吸积盘<a class="heading-link" href="#narration-heading-11" aria-label="链接到这一节">#</a></h5>
+<p><strong>stage-5-cue-0 · 黑洞与外部气体分开看</strong></p>
+<p>字幕：亮盘需要外部气体，可能来自伴星或周围环境。</p>
+<p>旁白：形成黑洞之后，再加入周围的气体。这些物质可能来自伴星、恒星残骸，或者附近环境。先把它们和黑洞分开：黑洞决定强引力与光的因果边界，气体才提供我们看到的亮光。没有这些外部物质，黑洞也成立，只是这段漂亮的吸积盘景象不会出现。</p>
+<p><strong>stage-5-cue-1 · 角动量让气体绕行</strong></p>
+<p>字幕：绕行、碰撞、耗散与冷却，可以让气体集中成盘。</p>
+<p>旁白：观察粒子的轨迹。气体通常带着角动量，可以理解为有绕中心运动的趋势，因此不会全都沿直线掉下去。不同气流的碰撞、能量耗散和冷却，有助于物质集中到共同旋转的平面。这里选择薄盘来解释机制，现实中的吸积流也可能很厚。</p>
+<p><strong>stage-5-cue-2 · 如何从盘中继续向内？</strong></p>
+<p>字幕：角动量向外输运，一部分物质才能持续向内吸积。</p>
+<p>旁白：成盘并不是故事的终点。气体还要把角动量向外输运，一部分物质才可以继续向内。磁应力与湍流是重要机制。按住对照，会看到理想的零角动量下落，两者差别就在绕行。这是解释机制的动画，没有真的计算气体流动、磁场或湍流怎样演化。</p>
+<h5 id="narration-heading-12">06 · 吸积能量如何变成光<a class="heading-link" href="#narration-heading-12" aria-label="链接到这一节">#</a></h5>
+<p><strong>stage-6-cue-0 · 亮光的能源是什么？</strong></p>
+<p>字幕：吸积释放轨道能量，耗散成热；辐射来自视界外。</p>
+<p>旁白：物质向内吸积，轨道能量发生变化，其中一部分经应力和耗散转成热，热气体再向外辐射。亮光因此来自视界外，绝不是从黑洞内部漏出来。接下来看到的温度曲线，是由质量、物质供给率和半径算出的稳态薄盘近似，不是模拟每团气体实时加热。</p>
+<p><strong>stage-6-cue-1 · 温度曲线为什么这样变化？</strong></p>
+<p>字幕：供给增加使盘温升高；理想零力矩内边缘处温度回落。</p>
+<p>旁白：看曲线如何随着物质供给增加而升高。供给越多，这个模型释放的能量越多，温度也就越高。但是温度并非一直向中心攀升：在采用零力矩条件的理想内边缘，它会回落。无旋转模型的最内稳定圆轨道，位于史瓦西半径的三倍；越过这里，气体难以维持稳定圆轨道。</p>
+<p><strong>stage-6-cue-2 · 百万度为何不是火焰橙色？</strong></p>
+<p>字幕：默认局部温度峰值约二百万开尔文，波长峰值在软X射线。</p>
+<p>旁白：默认例子的最高局部温度接近二百万开尔文，黑体的波长峰值在软 X 射线附近。主画面只显示可见光波段，并调节曝光，所以高温气体偏白、偏蓝。切换后的橙色，是明确标注的假色温度图，不是火焰的实际颜色。改变参数后，请以页面实时读数为准。</p>
+<h5 id="narration-heading-13">07 · 弯曲光路如何产生亮弧<a class="heading-link" href="#narration-heading-13" aria-label="链接到这一节">#</a></h5>
+<p><strong>stage-7-cue-0 · 空间光路与观察图像</strong></p>
+<p>字幕：主画面是观察者所见；小图显示光在空间中的路径。</p>
+<p>旁白：现在切换到眼睛所见的图像。主画面是观察者收到光以后形成的影像，右上小图则显示光在空间中的路径，两者不是同一个视角。小图的两条曲线来自背面盘上不同的发光位置，最后到达同一个观察者，不能理解成同一个点发出的两束光。</p>
+<p><strong>stage-7-cue-1 · 背面的光也能进入眼睛</strong></p>
+<p>字幕：光沿弯曲时空中的路径传播，背面盘影像形成上下亮弧。</p>
+<p>旁白：跟着小光点，看背面盘的光如何来到眼睛。广义相对论中，光沿时空允许的光路传播；在黑洞附近，这条路相对于远处的方向发生明显弯折。因此，本来位于背面的盘面，也能出现在暗区上方和下方。这就是引力透镜形成的亮弧，而不是盘真的被掰弯。</p>
+<p><strong>stage-7-cue-2 · 直线对照说明哪一种原因？</strong></p>
+<p>字幕：直线对照使亮弧消失；真实宇宙不能关闭引力。</p>
+<p>旁白：按住直线光路对照，上下亮弧明显改变或消失，横向的盘仍然存在。这个差别把因果关系展示出来：气体负责发光，弯曲光路负责改变影像位置。真实宇宙不能关掉引力。实时计算还有有限步长和预算，所以特别细的高阶光子环，不能保证全部解析出来。</p>
+<h5 id="narration-heading-14">08 · 运动与引力如何改变收到的光<a class="heading-link" href="#narration-heading-14" aria-label="链接到这一节">#</a></h5>
+<p><strong>stage-8-cue-0 · 为何两侧明暗不同？</strong></p>
+<p>字幕：气体高速绕行，两侧相对视线的运动方向不同。</p>
+<p>旁白：再看吸积盘的两侧。一侧通常较亮，另一侧较暗。这不是两边温度一定不同，而是气体在高速绕行，相对于进入眼睛的光线，它们的运动方向不同。和声波的多普勒效应有一点相似，运动会改变收到的频率；对于光，它还会改变收到的辐亮度。</p>
+<p><strong>stage-8-cue-1 · 多普勒变化和引力红移</strong></p>
+<p>字幕：朝向接收光方向的气体通常更亮、更偏蓝；引力也改变频率。</p>
+<p>旁白：朝向接收光方向运动的气体，通常显得更亮、更偏蓝；远离的一侧通常更暗、更偏红。同时，光离开强引力区域，还会受到引力红移。这里把运动与引力带来的频率变化合在一起，再计算接收光谱。因此，显示的颜色和亮度，不能只靠一个任意增亮开关来决定。</p>
+<p><strong>stage-8-cue-2 · 对照保留透镜，只去掉运动频移</strong></p>
+<p>字幕：运动频移关闭后，明暗差减弱，弯曲影像仍在。</p>
+<p>旁白：按住关闭运动频移，透镜造成的形状保留，两侧由运动产生的明暗差减弱。局部温度和纹理仍会造成变化。可见光亮度取决于选中的波段；对所有频率积分后的总辐亮度，还有另一种变换关系，假色模式用它表现趋势。这两种亮度不能混为一谈。</p>
+<h5 id="narration-heading-15">09 · 从形成原因回到最终景象<a class="heading-link" href="#narration-heading-15" aria-label="链接到这一节">#</a></h5>
+<p><strong>stage-9-cue-0 · 把整条因果链连起来</strong></p>
+<p>字幕：支撑不足可成洞；外部气体发光；传播与运动改变所见。</p>
+<p>旁白：把原因连起来：大质量恒星的核心失去足够支撑，继续压缩，在合适条件下留下黑洞。附近有带角动量的气体，气体可能成盘并释放能量。辐射在弯曲时空中传播，又受到运动与引力的频率变化，最终形成现在这幅影像。后半段的效果在现实中同时存在，不是依次开启的。</p>
+<p><strong>stage-9-cue-1 · 这是一种可能景象</strong></p>
+<p>字幕：亮盘不是必需；角度、供给与自旋都会改变真实图像。</p>
+<p>旁白：这是一种可能的黑洞景象，并非每个黑洞都长这样。观察角度、供给多少、盘的厚度与温度，以及黑洞是否旋转，都会影响真实图像。这里选无旋转的时空，计算外部光路、指定落体和简化盘温；恒星演化与成盘仍是机制示意，也没有模拟完整磁流体或动态时空。</p>
+<p><strong>stage-9-cue-2 · 自己改变条件，检验原因</strong></p>
+<p>字幕：换视角、移除气体、改参数，对照可见光与假色，检验因果。</p>
+<p>旁白：现在可以进入自由实验。先一次只改变一个条件：换角度，看看盘的投影；移除气体，看看亮光是否消失；改变质量和供给，查看长度、时间和温度怎样变化。再对照可见光与假色。记住，黑洞、发光物质、光的传播，是理解这幅图的三条主线；屏幕上的近似，也不等于完整的宇宙模拟。</p></div></section><section class="archive-section" id="course-design" data-source="notes/CONSTRUCTION.md" data-source-sha256="a417c32134b4792ecb24eddac1d701e66d5a5482cd95807d5e72b48ed45def1c"><span class="archive-status">当前课程设计</span><h2>同步课程与文件职责</h2><p class="archive-source">文件名沿用 CONSTRUCTION，正文对应现在的科学讲解与观察流程。 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/012-black-hole-lab/notes/CONSTRUCTION.md">查看 CONSTRUCTION.md 原始全文</a> · <a href="#contents">回到目录 ↑</a></p><div class="archive-prose"><h3 id="course-design-heading-1">同步讲解：从定义和原因到最终影像<a class="heading-link" href="#course-design-heading-1" aria-label="链接到这一节">#</a></h3>
+<p>当前体验先给出最终结果并指出黑洞、气体与影像的区别，再演示选定的恒星塌缩路线，随后解释周围气体的发光和成像。观众不需要先懂 shader 才能看懂。</p>
+<h4 id="course-design-heading-2">观看流程<a class="heading-link" href="#course-design-heading-2" aria-label="链接到这一节">#</a></h4>
+<div class="archive-table"><table><thead><tr><th scope="col">章</th><th scope="col">画面</th><th scope="col">同步解释</th></tr></thead><tbody><tr><td>00 最终影像</td><td>带部位说明的黑洞盘影像</td><td>暗区、外部热气体、弯光影像分别是什么</td></tr><tr><td>01 恒星平衡</td><td>内外箭头</td><td>引力和压力梯度的平衡</td></tr><tr><td>02 支撑不足</td><td>晚期核心</td><td>为什么会失稳，物质怎样向中心运动</td></tr><tr><td>03 自由落体</td><td>计算半径与自身/远方读数</td><td>有限自身时间和红移延迟并不矛盾</td></tr><tr><td>04 事件视界</td><td>计算的径向零曲线</td><td>内外信号可达性的区别</td></tr><tr><td>05 气体成盘</td><td>角动量与输运粒子示意</td><td>为什么绕行，为什么还能向内吸积</td></tr><tr><td>06 能量与温度</td><td>温度分布和峰值频段</td><td>亮的是外部气体，可见色与伪彩有区别</td></tr><tr><td>07 弯光与亮弧</td><td>计算单束光路和逐像素影像</td><td>为什么能看见盘背面，盘仍近似平面</td></tr><tr><td>08 频移与明暗</td><td>受控比较</td><td>运动和重力如何影响接收光谱</td></tr><tr><td>09 完整观察</td><td>综合结果与自由参数</td><td>把原因重新连接到所见结果</td></tr></tbody></table></div>
+<p>前半段的恒星和气体图不是同一套流体求解；每章显示所选模型与示意边界。定义、原因、过程、结果应始终跟随正在播放的画面，而不是把解释留在页面底部。</p>
+<h4 id="course-design-heading-3">交互约定<a class="heading-link" href="#course-design-heading-3" aria-label="链接到这一节">#</a></h4>
+<p>一键开始完整讲解；播放 MiniMax 预生成的 30 段旁白，实际合计 13 分 3 秒。当前音频时间驱动画面进度，结束事件才允许换段。暂停后画面与讲解一起停下，继续保留原位置；回放、拖动当前段进度、倍速和选章会更新对应说明。页面滚动继续播放，浏览器标签隐藏时暂停。关闭旁白后仍可按实际音频时长观看字幕演示。</p>
+<p>形成阶段的播放速度只是观看速度。显示的自身时间来自所选自由落体模型，不能把播放几秒当成真实恒星演化持续几秒。图中的恒星外层和放大核心没有同一比例尺。</p>
+<p>受控对照用于比较气体角动量、直线投影、运动频移等原因。直线成像是明确标注的非物理对照。质量和吸积率改变实际单位与温度，颜色模式区分计算可见光与温度伪彩。</p>
+<h4 id="course-design-heading-4">文件职责<a class="heading-link" href="#course-design-heading-4" aria-label="链接到这一节">#</a></h4>
+<div class="archive-table"><table><thead><tr><th scope="col">文件</th><th scope="col">职责</th></tr></thead><tbody><tr><td>web/model.js</td><td>SI 单位、解析自由落体、径向零曲线、RK4 光轨道、薄盘温度和偏折参考</td></tr><tr><td>web/physics.js</td><td>把计算结果和机制示意绘制为可播放的 Canvas 图</td></tr><tr><td>web/shaders.js</td><td>静止相机局部初值、逐像素零测地线、薄盘采样、频移与有限可见光谱</td></tr><tr><td>web/course.js</td><td>章节、原生音频播放、字幕、对照和自由实验状态</td></tr><tr><td>web/narration.js</td><td>30 段完整原稿、真实音频时长、字幕时间块与本地地址</td></tr><tr><td>web/audio/narration/</td><td>MiniMax 生成的 30 段 MP3 与完整合并录音</td></tr><tr><td>notes/narration-script.json</td><td>10 章 × 3 段的完整科普旁白原稿</td></tr><tr><td>tooling/generate-narration.py</td><td>官方 MiniMax TTS 调用、缓存、解码和清单生成</td></tr><tr><td>tooling/verify-audio.cjs</td><td>实际媒体播放、解码、续播、字幕与错误恢复验收</td></tr><tr><td>web/app.js</td><td>渲染调度、画布切换、摄像机、参数、导出和错误恢复</td></tr><tr><td>notes/SCIENCE.md</td><td>面向观众的概念、因果、来源和边界</td></tr><tr><td>notes/PRINCIPLES.md</td><td>可核对的方程、实际算法与数值近似</td></tr><tr><td>tooling/verify-model.cjs</td><td>独立模型基准</td></tr><tr><td>tooling/verify.cjs</td><td>浏览器中的过程、画面、同步字幕与交互验收</td></tr></tbody></table></div>
+<p>前端不使用外部图片或源码生成最终盘面；背景、纹理和几何均实时计算。示意区在没有 WebGL 的设备上保留，逐像素成像区才提示图形能力限制。导出选择当前可见画布。</p>
+<h4 id="course-design-heading-5">验证和记录<a class="heading-link" href="#course-design-heading-5" aria-label="链接到这一节">#</a></h4>
+<p>模型、浏览器与音频报告分别是 notes/model-validation.json、notes/validation.json、notes/audio-validation.json；以实际生成的时间和结果为准，不用旧报告替代新功能验收。浏览器检查采用 Chromium/SwiftShader，移动布局是视口模拟。</p>
+<p>检查应同时回答：公式是否符合选定模型、数值误差有多大、画面与当前讲解是否对应、用户能否暂停并复现对照。截图好看不能代替这些问题。历史 construction-validation.json 和 construction-*.png 只记录早期着色器分层版本。</p></div></section><section class="archive-section" id="history" data-source="notes/research.md" data-source-sha256="2326549910207058a02d02a85090132e905952581711d8f362d467f41964bc06"><span class="archive-status">历史记录 · 之前版本</span><h2>前期研究与历史版本</h2><p class="archive-source">保留从着色器分层构造到科学流程的早期记录；旧默认入口与优先项不作为当前状态。 <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/012-black-hole-lab/notes/research.md">查看 research.md 原始全文</a> · <a href="#contents">回到目录 ↑</a></p><div class="archive-prose"><h3 id="history-heading-1">当前版本：物理成因演示<a class="heading-link" href="#history-heading-1" aria-label="链接到这一节">#</a></h3>
+<p>用户要求理解黑洞是什么、如何形成，以及原图现象如何产生。当前默认是恒星平衡到成洞、气体与能量、光路到成像的科学流程，见 <a href="#science">SCIENCE.md</a>。当前验收在 validation.json；下面为之前版本的研究记录，包含已被替换的着色器构造流程。</p>
+<h3 id="history-heading-2">本轮研究记录<a class="heading-link" href="#history-heading-2" aria-label="链接到这一节">#</a></h3>
+<ul><li>日期：2026-10-02（Asia/Shanghai）。</li><li>来源：VOLDR_dev 的 Reddit 黑洞展示；原作公开仓库与 commit 尚未确认。</li><li>环境：Windows、Python 3、Node.js、Chromium / SwiftShader、WebGL 2。</li><li>目标：先做可交互效果，再用对照实验说明原理、适用场景与扩展方向。</li></ul>
+<h4 id="history-heading-3">设计与实现<a class="heading-link" href="#history-heading-3" aria-label="链接到这一节">#</a></h4>
+<p>采用无运行依赖的静态网页。片元着色器在三维空间积分近似弯曲光路，逐步采样吸积盘发光和远方星空；JavaScript 管理相机、参数、质量、调度与 PNG 输出。</p>
+<p>首次纯体积盘面采样在侧视时过度平滑，改为弱体积层加薄盘中平面交点采样，保留径向条带。当前公式与模型限制见 <a href="#principles">PRINCIPLES.md</a>。</p>
+<p>连续软件渲染验收发现 GPU 队列积压，加入 WebGL 2 fence，上一帧完成后再提交下一帧，避免交互与导出被大量待执行帧阻塞。单独导出检查确认有效 PNG。</p>
+<p>预览时发现常用端口已经被其他项目占用，改用系统分配的空闲端口，未终止其他项目的服务器。终端沙箱启动异常，通过工作区范围内的替代执行完成本次文件和验收操作。</p>
+<h4 id="history-heading-4">验证证据<a class="heading-link" href="#history-heading-4" aria-label="链接到这一节">#</a></h4>
+<p>真实浏览器验收检查 Shader 编译、图像黑区与发光区域、透镜开关的像素差、盘面开关、亮度变化、暂停与恢复、相机操作、质量档位、PNG 导出、教学按钮、窄屏布局和无 WebGL 时的说明。</p>
+<p>详细结果见 <a href="#record-validation">validation.json</a>，截图位于 <a href="https://github.com/yydshly/0930_codex_project/tree/main/projects/012-black-hole-lab/assets">assets</a>。自动测试使用软件渲染和移动视口模拟；硬件帧率、手机 GPU 表现与完整 GR 精度没有在本轮验证。</p>
+<h4 id="history-heading-5">后续优先项<a class="heading-link" href="#history-heading-5" aria-label="链接到这一节">#</a></h4>
+<ol><li>为教学显示单条光路与真实盘面位置。</li><li>增加细环与星点过滤，进行目标 GPU 帧时测量。</li><li>按玩法需要接入局部物体透镜与引力逻辑。</li><li>再考虑严格的测地线初值、频移和引擎移植。</li></ol>
+<h4 id="history-heading-6">从零到有的体验修正<a class="heading-link" href="#history-heading-6" aria-label="链接到这一节">#</a></h4>
+<p>用户指出页面应呈现从零到有的过程。默认入口已改为空白，按 00–07 阶段依次加入星空、捕获区域、平面盘、流动纹理、弯曲光路和运动增亮，完成后才开放自由实验。新增阶段任务、连续权重调整、按住前后对比、自动推进和重新开始；底部完整效果实验也在完成前保持禁用。</p>
+<p>主流程与原有功能通过 54 项真实浏览器检查，自动推进、复位和构造入口的专项记录见 <a href="#record-construction-validation">construction-validation.json</a>。这次默认入口与上次直接展示完整效果的入口不同，详见 <a href="#course-design">构造说明</a>。</p></div></section>
+<section class="archive-section" id="records"><span class="archive-status">证据与边界</span><h2>全部验证记录</h2><div class="archive-prose"><p>以下按当前模型、浏览器、故事流程、实际音频与理解总结优先排序，保留每个 JSON 的完整内容和源码链接。原子钟与天文观测属于科学资料，软件验收属于本项目功能检查，二者不互相替代。</p><p>Chromium / SwiftShader 是软件渲染环境；手机布局检查是视口模拟。无头浏览器不能代替人工听感或真实手机 GPU 性能评审。旧版构造与历史构建记录的范围以各自日期为准。</p></div><article class="record-card" id="record-model-validation"><span class="record-label">保存的验证快照 · 以记录日期和检查范围为准</span><h3>model-validation.json</h3><p>日期：2026-10-02 · 通过 31 项，失败 0 项 · 记录中的检查条目：31</p><p>[&quot;No dynamic stellar interior, self-gravity, equation of state, nuclear reactions, magnetic fluid evolution, or rotating Kerr spacetime.&quot;, &quot;CPU RK4 checks do not validate every finite-step GLSL pixel or prove GPU numerical convergence.&quot;, &quot;Temperature, CIE conversion, texture, exposure and false color are explicitly separate approximations.&quot;]</p><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/012-black-hole-lab/notes/model-validation.json">GitHub 原始记录</a> · <code>SHA-256（UTF-8 / LF）989b0ab31c7130094cb67221d01179aa222b27b58ea1069e5e7dd2e3ddcc66c9</code></p><details><summary>展开完整验证记录</summary><pre>{
+  &quot;date&quot;: &quot;2026-10-02&quot;,
+  &quot;timezone&quot;: &quot;Asia/Shanghai&quot;,
+  &quot;passed&quot;: 31,
+  &quot;failed&quot;: 0,
+  &quot;scope&quot;: &quot;Nonrotating Schwarzschild exterior; test-particle timelike collapse; radial null propagation; Newtonian zero-torque thin-disk flux profile.&quot;,
+  &quot;limitations&quot;: [
+    &quot;No dynamic stellar interior, self-gravity, equation of state, nuclear reactions, magnetic fluid evolution, or rotating Kerr spacetime.&quot;,
+    &quot;CPU RK4 checks do not validate every finite-step GLSL pixel or prove GPU numerical convergence.&quot;,
+    &quot;Temperature, CIE conversion, texture, exposure and false color are explicitly separate approximations.&quot;
+  ],
+  &quot;sources&quot;: [
+    &quot;https://arxiv.org/pdf/2010.08735&quot;,
+    &quot;https://jcgt.org/published/0002/02/01/paper.pdf&quot;
+  ],
+  &quot;checks&quot;: [
+    {
+      &quot;name&quot;: &quot;Schwarzschild radius is 2GM/c^2 in SI units&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;solarMassRadiusKm&quot;: 2.9533393820668783
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Radius and geometric time scale linearly with mass&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;tenSolarMassRadiusKm&quot;: 29.533393820668785,
+        &quot;timeUnitSeconds&quot;: 9.851279787922078e-05
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Photon sphere is the unstable null effective-potential maximum at 1.5 Rs&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;radius&quot;: 1.5,
+        &quot;potential&quot;: 0.14814814814814817,
+        &quot;derivative&quot;: 3.51163542688937e-09
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Critical impact is reciprocal square root of photon-sphere potential&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;criticalImpact&quot;: 2.598076211353316
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Timelike circular-orbit stability changes at ISCO = 3 Rs&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;inside&quot;: -0.007008313818168688,
+        &quot;at&quot;: -8.548717289613705e-09,
+        &quot;outside&quot;: 0.003590298947031556
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Static-observer initialization preserves the chosen conserved impact 2.5&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;requested&quot;: 2.5,
+        &quot;actual&quot;: 2.5000000000000004
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Light is captured below critical impact&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;impact&quot;: 2.5,
+        &quot;captured&quot;: true,
+        &quot;finalRadius&quot;: 0.9990687990607929
+      }
+    },
+    {
+      &quot;name&quot;: &quot;RK4 trajectory preserves the null energy constraint for impact 2.5&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;maxAbsoluteConstraintError&quot;: 6.387067919000344e-08
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Static-observer initialization preserves the chosen conserved impact 2.7&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;requested&quot;: 2.7,
+        &quot;actual&quot;: 2.7
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Light escapes above critical impact&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;impact&quot;: 2.7,
+        &quot;captured&quot;: false,
+        &quot;finalRadius&quot;: 150.09946059703358
+      }
+    },
+    {
+      &quot;name&quot;: &quot;RK4 trajectory preserves the null energy constraint for impact 2.7&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;maxAbsoluteConstraintError&quot;: 4.581816936966021e-08
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Tangential photon at 1.5 Rs follows the circular null orbit&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;maxRadiusError&quot;: 1.6021847626390695e-08,
+        &quot;constraintError&quot;: 1.778627245485609e-10
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Weak-field deflection approaches 2 Rs / b with the GR correction&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;b50&quot;: 0.04122254199269104,
+        &quot;firstOrder&quot;: 0.04,
+        &quot;secondOrder&quot;: 0.041178097245096176,
+        &quot;b500&quot;: 0.004011834006075077
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Independent RK4 ray deflection agrees with the scalar geodesic integral&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;numeric&quot;: 0.04122253388906386,
+        &quot;integral&quot;: 0.04122254199269104
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Freely falling boundary contracts monotonically in finite proper time&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;initialRadius&quot;: 4,
+        &quot;finalRadius&quot;: 0.6500000000496413,
+        &quot;properEndSeconds&quot;: 0.001201690142886075
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Cycloid proper time equals the radial timelike geodesic closed form&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expectedSeconds&quot;: 0.001201690142886075,
+        &quot;actualSeconds&quot;: 0.001201690142886075
+      }
+    },
+    {
+      &quot;name&quot;: &quot;A falling surface reaches the horizon in finite proper time&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;horizonProperTimeSeconds&quot;: 0.001166557227850311,
+        &quot;actualSeconds&quot;: 0.001166557227850311
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Cycloid speed satisfies dr/dtau = -sqrt(1/r - 1/r0)&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;numericalSpeed&quot;: -0.5000001744869536,
+        &quot;closedForm&quot;: -0.5
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Received frequency combines infall Doppler and gravitational redshift&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;g&quot;: 0.3660254037779901,
+        &quot;expectedG&quot;: 0.3660254037844387,
+        &quot;bolometricIntensityFactor&quot;: 0.017949192429857805
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Successive outward flashes reach a distant observer later and redder&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;firstArrival&quot;: 3.0613648508627435e-14,
+        &quot;lastArrival&quot;: 0.0028276649118726565
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Received photon energy tends to zero approaching the horizon&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;radii&quot;: [
+          1.1,
+          1.01,
+          1.001,
+          1.0001
+        ],
+        &quot;frequencyRatios&quot;: [
+          0.05418126290732764,
+          0.005735330657168043,
+          0.0005769656824279602,
+          5.773117731847017e-05
+        ]
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Late outgoing signals show logarithmically divergent received delay&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;delayForTenfoldSmallerHorizonGap&quot;: 0.0004539046637248496,
+        &quot;asymptoticDelay&quot;: 0.00045366819973165847
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Events inside the horizon have no outward arrival at infinity&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;insideCount&quot;: 3
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Outgoing EF null ray moves inward inside&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;initial&quot;: 0.9,
+        &quot;lastRadius&quot;: 0.070145907317008,
+        &quot;lastIngoingEFTime&quot;: 2.7999999999999843
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Outgoing EF null ray stays at the horizon&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;initial&quot;: 1,
+        &quot;lastRadius&quot;: 1,
+        &quot;lastIngoingEFTime&quot;: 3.9999999999999587
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Outgoing EF null ray moves outward outside&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;initial&quot;: 1.1,
+        &quot;lastRadius&quot;: 1.4968606272611897,
+        &quot;lastIngoingEFTime&quot;: 3.9999999999999587
+      }
+    },
+    {
+      &quot;name&quot;: &quot;EF radial light integration matches the exact tortoise-coordinate relation&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;integratedTime&quot;: 3.9999999999999587,
+        &quot;closedForm&quot;: 3.999999999993067
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Zero-torque thin disk has zero effective temperature at its inner edge&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;innerTemperature&quot;: 0
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Thin-disk temperature peaks at 49/36 times the inner radius&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;radius&quot;: 4.083333333333333,
+        &quot;temperatureKelvin&quot;: 1945950.2026094766,
+        &quot;reportedPeak&quot;: 1945950.2026094769
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Temperature scales with accretion rate to power 1/4&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;sixteenfoldRateTemperatureRatio&quot;: 2
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Temperature scales with mass to power -1/2 at fixed dimensionless radius and fixed mass accretion rate&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;quadrupleMassTemperatureRatio&quot;: 0.5
+      }
+    }
+  ]
+}</pre></details></article>
+<article class="record-card" id="record-validation"><span class="record-label">保存的验证快照 · 以记录日期和检查范围为准</span><h3>validation.json</h3><p>日期：2026-10-02 · 状态：passed · 记录中的检查条目：50</p><p>{&quot;browser&quot;: &quot;Chromium&quot;, &quot;renderer&quot;: &quot;SwiftShader software&quot;, &quot;mobile&quot;: &quot;390px viewport simulation; not physical device&quot;, &quot;voice&quot;: &quot;Audible Chinese speech cannot be verified in headless Chromium; fallback and synchronized subtitles are checked.&quot;}</p><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/012-black-hole-lab/notes/validation.json">GitHub 原始记录</a> · <code>SHA-256（UTF-8 / LF）1b3adacd7e2b405d3613b45acf5918f3220410890d95c7636b45a8c397e6f8ea</code></p><details><summary>展开完整验证记录</summary><pre>{
+  &quot;date&quot;: &quot;2026-10-02&quot;,
+  &quot;timezone&quot;: &quot;Asia/Shanghai&quot;,
+  &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/&quot;,
+  &quot;environment&quot;: {
+    &quot;browser&quot;: &quot;Chromium&quot;,
+    &quot;renderer&quot;: &quot;SwiftShader software&quot;,
+    &quot;mobile&quot;: &quot;390px viewport simulation; not physical device&quot;,
+    &quot;voice&quot;: &quot;Audible Chinese speech cannot be verified in headless Chromium; fallback and synchronized subtitles are checked.&quot;
+  },
+  &quot;checks&quot;: [
+    {
+      &quot;name&quot;: &quot;Shaders compile and first observer image renders&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;failure&quot;: null,
+        &quot;mean&quot;: 69.66566369232811,
+        &quot;lit&quot;: 3064
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Opening shows the actual result and remains paused&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;stage&quot;: 0,
+        &quot;paused&quot;: true
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Opening explains the shadow, external emission and bent image&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Advanced parameters are hidden during explanation&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Three distinct subtitle cues match the opening explanation&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;first&quot;: &quot;黑洞是光无法逃向遥远外部的区域；画面暗区不等于视界本身。&quot;,
+        &quot;second&quot;: &quot;发光的是视界外的热气体。黑洞没有燃烧表面，也不必带亮盘。&quot;,
+        &quot;third&quot;: &quot;背面盘的光被弯曲时空改变方向；弯的是所见影像。&quot;
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Subtitle previous button seeks backward&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Play explanation restarts at cue zero with active timeline&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Pause freezes narration time and picture time&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;cueTime&quot;: 0.06669999999999981,
+        &quot;flowClock&quot;: 0.06669999999999981
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Manual cue seek works while paused&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Narration advances to the next scientific chapter&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Manual chapter choice seeks the active full lecture to the selected chapter&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Equilibrium chapter uses a labelled mechanism diagram&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Support control changes the actual equilibrium diagram&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;pixelDifference&quot;: 1.0120442708333333
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Free-fall seek changes the displayed boundary and signal&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;pixelDifference&quot;: 29.858072916666668
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Free-fall scope distinguishes a fixed exterior from full stellar collapse&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Chapter replay advances and global pause freezes physical progress&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;progress&quot;: 0.008668515950069348
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Causal light diagram is calculated in horizon-crossing coordinates&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;bluePixels&quot;: 372
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Gas settlement slider changes the particle distribution&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;pixelDifference&quot;: 1.1009114583333333,
+        &quot;initialBlueSpread&quot;: 0.22249138056313125,
+        &quot;settledBlueSpread&quot;: 0.20425632945515876
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Zero-angular-momentum comparison changes the gas trajectories&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;pixelDifference&quot;: 3.2799479166666665
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Supply-rate slider changes the plotted temperature and physical temperature&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;pixelDifference&quot;: 6.117513020833333,
+        &quot;cool&quot;: 615363.485351208,
+        &quot;hot&quot;: 6153634.853512079
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Lensing chapter connects observer image to a calculated ray inset&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;lit&quot;: 3102
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Ray inset has rendered lines rather than an empty canvas&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;width&quot;: 328,
+        &quot;height&quot;: 218,
+        &quot;nonempty&quot;: 5002
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Nonphysical straight-ray comparison visibly removes lensing&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;difference&quot;: 22.105794270833332,
+        &quot;curvedUpper&quot;: 468,
+        &quot;straightUpper&quot;: 0
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Releasing the comparison restores the physical model&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Discrete light-path toggle selects explicit straight comparison&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Frequency comparison changes rendered intensity while preserving lensing&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;difference&quot;: 1.0266927083333333
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Frequency explanation uses combined g and spectrum rather than a D-cubed shortcut&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Final chapter connects causes and distinguishes their simultaneity&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Free exploration becomes an explicit mode with controls&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Mass input recalculates physical radius and time scales&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;before&quot;: {
+          &quot;mass&quot;: 10,
+          &quot;rate&quot;: 1e-09,
+          &quot;rs&quot;: 29533.393820668785,
+          &quot;rsKm&quot;: 29.533393820668785,
+          &quot;timeUnit&quot;: 9.851279787922078e-05,
+          &quot;temperatureScale&quot;: 9092166.033592287,
+          &quot;peakTemperature&quot;: 1945950.2026094769,
+          &quot;photonSphere&quot;: 1.5,
+          &quot;isco&quot;: 3,
+          &quot;criticalImpact&quot;: 2.598076211353316
+        },
+        &quot;after&quot;: {
+          &quot;mass&quot;: 20,
+          &quot;rate&quot;: 1e-09,
+          &quot;rs&quot;: 59066.78764133757,
+          &quot;rsKm&quot;: 59.06678764133757,
+          &quot;timeUnit&quot;: 0.00019702559575844155,
+          &quot;temperatureScale&quot;: 6429132.258027101,
+          &quot;peakTemperature&quot;: 1375994.584116497,
+          &quot;photonSphere&quot;: 1.5,
+          &quot;isco&quot;: 3,
+          &quot;criticalImpact&quot;: 2.598076211353316
+        }
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Fixed supply rate gives the correct mass-temperature scaling&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;before&quot;: 1945950.2026094769,
+        &quot;after&quot;: 1375994.584116497
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Supply input recalculates physical temperature and rendered radiation&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;temperatureRatio&quot;: 1.7782794100389228,
+        &quot;pixelDifference&quot;: 4.627278645833333
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Visible spectrum and false-color map produce explicitly different images&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;pixelDifference&quot;: 8.6806640625
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Returning to visible band changes the interpretation label&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Quality changes resolution while retaining a sufficient ray budget&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;low&quot;: [
+          420,
+          325,
+          900
+        ],
+        &quot;high&quot;: [
+          1007,
+          780,
+          980
+        ]
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Both quality modes preserve illuminated disk and background&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;lowMean&quot;: 69.48335269066953,
+        &quot;highMean&quot;: 69.71446886447288,
+        &quot;lowLit&quot;: 1350,
+        &quot;highLit&quot;: 7775
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Removing external gas removes its luminous emission&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;withDisk&quot;: 1350,
+        &quot;withoutDisk&quot;: 172
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Observer camera can be rotated directly&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;before&quot;: 10,
+        &quot;after&quot;: 14.881600494384763
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Keyboard camera controls remain usable&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Observer export is a nonempty PNG at current rendering dimensions&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;bytes&quot;: 122228,
+        &quot;width&quot;: 420,
+        &quot;height&quot;: 325
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Mobile observer image remains visible&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;size&quot;: [
+          171,
+          259
+        ],
+        &quot;lit&quot;: 354
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Mobile page has no horizontal overflow&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;page&quot;: 390,
+        &quot;viewport&quot;: 390
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Mobile calculation chapter and slider remain functional&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;mean&quot;: 31.833048878774658,
+        &quot;progress&quot;: 0.95
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Restart returns to paused overview without leaving narration running&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;All loaded local assets return successful HTTP responses including audio ranges&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: [
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/&quot;,
+          &quot;status&quot;: 200
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/styles.css&quot;,
+          &quot;status&quot;: 200
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/assets/understanding-map.png&quot;,
+          &quot;status&quot;: 200
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/shaders.js&quot;,
+          &quot;status&quot;: 200
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/physics.js&quot;,
+          &quot;status&quot;: 200
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/narration.js&quot;,
+          &quot;status&quot;: 200
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/course.js&quot;,
+          &quot;status&quot;: 200
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/model.js&quot;,
+          &quot;status&quot;: 200
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/app.js&quot;,
+          &quot;status&quot;: 200
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/assets/understanding-map.svg&quot;,
+          &quot;status&quot;: 200
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/00-00.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/00-01.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/00-02.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/01-00.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/00-00.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/01-01.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/02-00.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/02-01.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/03-01.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/03-00.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/04-01.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/04-00.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/05-00.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/05-01.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/06-00.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/06-01.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/07-00.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/07-01.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/08-00.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/08-01.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/09-00.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/09-01.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/03-01.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/03-00.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/00-01.mp3&quot;,
+          &quot;status&quot;: 206
+        },
+        {
+          &quot;url&quot;: &quot;http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/00-00.mp3&quot;,
+          &quot;status&quot;: 206
+        }
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;No unexpected browser or shader errors&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: []
+    },
+    {
+      &quot;name&quot;: &quot;Missing WebGL produces an explicit observer-image error&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Recorded MiniMax narration works without browser Chinese speech voices&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;status&quot;: &quot;MiniMax 高品质旁白 · 全程 13:03&quot;
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Missing WebGL preserves the calculated formation diagrams&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Calculated diagram remains exportable without WebGL&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    }
+  ],
+  &quot;finalState&quot;: {
+    &quot;yaw&quot;: 0.35,
+    &quot;inclination&quot;: 10,
+    &quot;distance&quot;: 23,
+    &quot;thickness&quot;: 0.16,
+    &quot;exposure&quot;: 1.25,
+    &quot;speed&quot;: 1,
+    &quot;lensing&quot;: true,
+    &quot;doppler&quot;: true,
+    &quot;disk&quot;: true,
+    &quot;orbit&quot;: false,
+    &quot;quality&quot;: &quot;balanced&quot;,
+    &quot;paused&quot;: true,
+    &quot;grid&quot;: false,
+    &quot;mass&quot;: 10,
+    &quot;rateLog&quot;: -9,
+    &quot;falseColor&quot;: false,
+    &quot;progress&quot;: 0,
+    &quot;support&quot;: 1,
+    &quot;heat&quot;: 1,
+    &quot;dopplerStrength&quot;: 1,
+    &quot;lensStrength&quot;: 1,
+    &quot;journey&quot;: {
+      &quot;stage&quot;: 0,
+      &quot;highest&quot;: 0,
+      &quot;mode&quot;: &quot;science&quot;,
+      &quot;comparing&quot;: false,
+      &quot;autoExplaining&quot;: false,
+      &quot;narrationScope&quot;: &quot;chapter&quot;,
+      &quot;playing&quot;: false,
+      &quot;elapsed&quot;: 0,
+      &quot;cue&quot;: 0,
+      &quot;cueTime&quot;: 0,
+      &quot;progress&quot;: 0,
+      &quot;completed&quot;: false,
+      &quot;totalDuration&quot;: 782.82,
+      &quot;layers&quot;: {
+        &quot;sky&quot;: 1,
+        &quot;horizon&quot;: 1,
+        &quot;texture&quot;: 1,
+        &quot;disk&quot;: 1,
+        &quot;lensing&quot;: 1,
+        &quot;doppler&quot;: 1
+      },
+      &quot;audio&quot;: {
+        &quot;status&quot;: &quot;ready&quot;,
+        &quot;src&quot;: &quot;audio/narration/00-00.mp3&quot;,
+        &quot;currentTime&quot;: 0,
+        &quot;duration&quot;: 25.848,
+        &quot;enabled&quot;: false,
+        &quot;error&quot;: &quot;&quot;,
+        &quot;token&quot;: 41
+      }
+    },
+    &quot;clock&quot;: 0,
+    &quot;flowClock&quot;: 0,
+    &quot;renderCount&quot;: 174,
+    &quot;units&quot;: {
+      &quot;mass&quot;: 10,
+      &quot;rate&quot;: 1e-09,
+      &quot;rs&quot;: 29533.393820668785,
+      &quot;rsKm&quot;: 29.533393820668785,
+      &quot;timeUnit&quot;: 9.851279787922078e-05,
+      &quot;temperatureScale&quot;: 9092166.033592287,
+      &quot;peakTemperature&quot;: 1945950.2026094769,
+      &quot;photonSphere&quot;: 1.5,
+      &quot;isco&quot;: 3,
+      &quot;criticalImpact&quot;: 2.598076211353316
+    },
+    &quot;raySteps&quot;: 900,
+    &quot;model&quot;: {
+      &quot;stage&quot;: 0,
+      &quot;elapsed&quot;: 0,
+      &quot;progress&quot;: 0,
+      &quot;support&quot;: 1,
+      &quot;heat&quot;: 1,
+      &quot;mass&quot;: 10,
+      &quot;rate&quot;: 1e-09,
+      &quot;comparing&quot;: false
+    },
+    &quot;width&quot;: 256,
+    &quot;height&quot;: 389,
+    &quot;failure&quot;: null
+  },
+  &quot;failed&quot;: 0,
+  &quot;status&quot;: &quot;passed&quot;,
+  &quot;screenshots&quot;: &quot;D:\\codex\\home\\worktrees\\black-hole-publication\\0930_codex_project\\.tmp\\black-hole-science-review&quot;,
+  &quot;count&quot;: 50,
+  &quot;errors&quot;: []
+}</pre></details></article>
+<article class="record-card" id="record-story-validation"><span class="record-label">保存的验证快照 · 以记录日期和检查范围为准</span><h3>story-validation.json</h3><p>日期：2026-10-02T04:08:32.462Z · 状态：passed · 记录中的检查条目：6</p><p>环境与限制见 JSON 记录。</p><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/012-black-hole-lab/notes/story-validation.json">GitHub 原始记录</a> · <code>SHA-256（UTF-8 / LF）ea6960ceec1b6843644443309c0488a34e9bc7127643bc6895d3414864d3959a</code></p><details><summary>展开完整验证记录</summary><pre>{
+  &quot;date&quot;: &quot;2026-10-02T04:08:32.462Z&quot;,
+  &quot;status&quot;: &quot;passed&quot;,
+  &quot;checks&quot;: [
+    &quot;Scrolling to explanatory text preserves the complete narration&quot;,
+    &quot;Returning to scene can resume the same cue&quot;,
+    &quot;Selecting a new chapter restores the explanation heading&quot;,
+    &quot;Full deterministic guided controller visits all 30 cues and all 10 chapters&quot;,
+    &quot;Calculated contraction progress remains monotonic across cue boundaries&quot;,
+    &quot;Finished tour pauses at the final result&quot;
+  ],
+  &quot;courseResult&quot;: {
+    &quot;transitions&quot;: [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    &quot;cues&quot;: 30,
+    &quot;second&quot;: 798,
+    &quot;backwards&quot;: false,
+    &quot;final&quot;: {
+      &quot;stage&quot;: 9,
+      &quot;highest&quot;: 9,
+      &quot;mode&quot;: &quot;science&quot;,
+      &quot;comparing&quot;: false,
+      &quot;autoExplaining&quot;: false,
+      &quot;narrationScope&quot;: &quot;full&quot;,
+      &quot;playing&quot;: false,
+      &quot;elapsed&quot;: 89,
+      &quot;cue&quot;: 2,
+      &quot;cueTime&quot;: 31,
+      &quot;progress&quot;: 0,
+      &quot;completed&quot;: true,
+      &quot;totalDuration&quot;: 782.82,
+      &quot;layers&quot;: {
+        &quot;sky&quot;: 1,
+        &quot;horizon&quot;: 1,
+        &quot;texture&quot;: 1,
+        &quot;disk&quot;: 1,
+        &quot;lensing&quot;: 1,
+        &quot;doppler&quot;: 1
+      },
+      &quot;audio&quot;: {
+        &quot;status&quot;: &quot;ended&quot;,
+        &quot;src&quot;: &quot;audio/narration/09-02.mp3&quot;,
+        &quot;currentTime&quot;: 0,
+        &quot;duration&quot;: 30.564,
+        &quot;enabled&quot;: false,
+        &quot;error&quot;: &quot;&quot;,
+        &quot;token&quot;: 31
+      }
+    },
+    &quot;paused&quot;: true,
+    &quot;history&quot;: [
+      {
+        &quot;stage&quot;: 0,
+        &quot;cue&quot;: 0,
+        &quot;title&quot;: &quot;中心为什么暗？&quot;
+      },
+      {
+        &quot;stage&quot;: 0,
+        &quot;cue&quot;: 1,
+        &quot;title&quot;: &quot;亮的是什么？&quot;
+      },
+      {
+        &quot;stage&quot;: 0,
+        &quot;cue&quot;: 2,
+        &quot;title&quot;: &quot;上下的弧是什么？&quot;
+      },
+      {
+        &quot;stage&quot;: 1,
+        &quot;cue&quot;: 0,
+        &quot;title&quot;: &quot;先从大质量恒星开始&quot;
+      },
+      {
+        &quot;stage&quot;: 1,
+        &quot;cue&quot;: 1,
+        &quot;title&quot;: &quot;橙色箭头代表压力支撑&quot;
+      },
+      {
+        &quot;stage&quot;: 1,
+        &quot;cue&quot;: 2,
+        &quot;title&quot;: &quot;稳定来自近似平衡&quot;
+      },
+      {
+        &quot;stage&quot;: 2,
+        &quot;cue&quot;: 0,
+        &quot;title&quot;: &quot;支撑为什么变弱？&quot;
+      },
+      {
+        &quot;stage&quot;: 2,
+        &quot;cue&quot;: 1,
+        &quot;title&quot;: &quot;引力开始占上风&quot;
+      },
+      {
+        &quot;stage&quot;: 2,
+        &quot;cue&quot;: 2,
+        &quot;title&quot;: &quot;收缩以后一定成黑洞吗？&quot;
+      },
+      {
+        &quot;stage&quot;: 3,
+        &quot;cue&quot;: 0,
+        &quot;title&quot;: &quot;放大最后一段收缩&quot;
+      },
+      {
+        &quot;stage&quot;: 3,
+        &quot;cue&quot;: 1,
+        &quot;title&quot;: &quot;同一事件，两种时间读数&quot;
+      },
+      {
+        &quot;stage&quot;: 3,
+        &quot;cue&quot;: 2,
+        &quot;title&quot;: &quot;自身能在有限时间穿过&quot;
+      },
+      {
+        &quot;stage&quot;: 4,
+        &quot;cue&quot;: 0,
+        &quot;title&quot;: &quot;比较朝外发射的光&quot;
+      },
+      {
+        &quot;stage&quot;: 4,
+        &quot;cue&quot;: 1,
+        &quot;title&quot;: &quot;内部的朝外光仍向内&quot;
+      },
+      {
+        &quot;stage&quot;: 4,
+        &quot;cue&quot;: 2,
+        &quot;title&quot;: &quot;局部光速仍是光速&quot;
+      },
+      {
+        &quot;stage&quot;: 5,
+        &quot;cue&quot;: 0,
+        &quot;title&quot;: &quot;黑洞与外部气体分开看&quot;
+      },
+      {
+        &quot;stage&quot;: 5,
+        &quot;cue&quot;: 1,
+        &quot;title&quot;: &quot;角动量让气体绕行&quot;
+      },
+      {
+        &quot;stage&quot;: 5,
+        &quot;cue&quot;: 2,
+        &quot;title&quot;: &quot;如何从盘中继续向内？&quot;
+      },
+      {
+        &quot;stage&quot;: 6,
+        &quot;cue&quot;: 0,
+        &quot;title&quot;: &quot;亮光的能源是什么？&quot;
+      },
+      {
+        &quot;stage&quot;: 6,
+        &quot;cue&quot;: 1,
+        &quot;title&quot;: &quot;温度曲线为什么这样变化？&quot;
+      },
+      {
+        &quot;stage&quot;: 6,
+        &quot;cue&quot;: 2,
+        &quot;title&quot;: &quot;百万度为何不是火焰橙色？&quot;
+      },
+      {
+        &quot;stage&quot;: 7,
+        &quot;cue&quot;: 0,
+        &quot;title&quot;: &quot;空间光路与观察图像&quot;
+      },
+      {
+        &quot;stage&quot;: 7,
+        &quot;cue&quot;: 1,
+        &quot;title&quot;: &quot;背面的光也能进入眼睛&quot;
+      },
+      {
+        &quot;stage&quot;: 7,
+        &quot;cue&quot;: 2,
+        &quot;title&quot;: &quot;直线对照说明哪一种原因？&quot;
+      },
+      {
+        &quot;stage&quot;: 8,
+        &quot;cue&quot;: 0,
+        &quot;title&quot;: &quot;为何两侧明暗不同？&quot;
+      },
+      {
+        &quot;stage&quot;: 8,
+        &quot;cue&quot;: 1,
+        &quot;title&quot;: &quot;多普勒变化和引力红移&quot;
+      },
+      {
+        &quot;stage&quot;: 8,
+        &quot;cue&quot;: 2,
+        &quot;title&quot;: &quot;对照保留透镜，只去掉运动频移&quot;
+      },
+      {
+        &quot;stage&quot;: 9,
+        &quot;cue&quot;: 0,
+        &quot;title&quot;: &quot;把整条因果链连起来&quot;
+      },
+      {
+        &quot;stage&quot;: 9,
+        &quot;cue&quot;: 1,
+        &quot;title&quot;: &quot;这是一种可能景象&quot;
+      },
+      {
+        &quot;stage&quot;: 9,
+        &quot;cue&quot;: 2,
+        &quot;title&quot;: &quot;自己改变条件，检验原因&quot;
+      }
+    ]
+  },
+  &quot;errors&quot;: []
+}</pre></details></article>
+<article class="record-card" id="record-audio-validation"><span class="record-label">保存的验证快照 · 以记录日期和检查范围为准</span><h3>audio-validation.json</h3><p>日期：2026-10-02T04:09:51.435Z · 状态：passed · 记录中的检查条目：178</p><p>{&quot;browser&quot;: &quot;Chromium&quot;, &quot;renderer&quot;: &quot;SwiftShader&quot;, &quot;sound&quot;: &quot;Actual MP3 metadata and decode, native playback at 16x; human listening is not claimed&quot;}</p><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/012-black-hole-lab/notes/audio-validation.json">GitHub 原始记录</a> · <code>SHA-256（UTF-8 / LF）4881c2a20874e20f035734ff5762a56d44cdf306d997b608cb47d86d6b24b414</code></p><details><summary>展开完整验证记录</summary><pre>{
+  &quot;date&quot;: &quot;2026-10-02T04:09:51.435Z&quot;,
+  &quot;url&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/&quot;,
+  &quot;environment&quot;: {
+    &quot;browser&quot;: &quot;Chromium&quot;,
+    &quot;renderer&quot;: &quot;SwiftShader&quot;,
+    &quot;sound&quot;: &quot;Actual MP3 metadata and decode, native playback at 16x; human listening is not claimed&quot;
+  },
+  &quot;checks&quot;: [
+    {
+      &quot;name&quot;: &quot;MiniMax is the recorded provider&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;provider&quot;: &quot;MiniMax&quot;,
+        &quot;model&quot;: &quot;speech-2.8-hd&quot;
+      }
+    },
+    {
+      &quot;name&quot;: &quot;All 10 chapters have all three complete narrated segments&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;chapters&quot;: 10,
+        &quot;segments&quot;: 30
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Narration is complete speech, rather than only the short cue captions&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;characters&quot;: 3292,
+        &quot;shortest&quot;: 98
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Every segment supplies local audio, duration and full transcript coverage&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: [
+        {
+          &quot;id&quot;: &quot;stage-0-cue-0&quot;,
+          &quot;stage&quot;: 0,
+          &quot;cue&quot;: 0,
+          &quot;src&quot;: &quot;audio/narration/00-00.mp3&quot;,
+          &quot;duration&quot;: 25.848,
+          &quot;speechLength&quot;: 106,
+          &quot;subtitleCount&quot;: 3
+        },
+        {
+          &quot;id&quot;: &quot;stage-0-cue-1&quot;,
+          &quot;stage&quot;: 0,
+          &quot;cue&quot;: 1,
+          &quot;src&quot;: &quot;audio/narration/00-01.mp3&quot;,
+          &quot;duration&quot;: 24.012,
+          &quot;speechLength&quot;: 107,
+          &quot;subtitleCount&quot;: 2
+        },
+        {
+          &quot;id&quot;: &quot;stage-0-cue-2&quot;,
+          &quot;stage&quot;: 0,
+          &quot;cue&quot;: 2,
+          &quot;src&quot;: &quot;audio/narration/00-02.mp3&quot;,
+          &quot;duration&quot;: 27.288,
+          &quot;speechLength&quot;: 117,
+          &quot;subtitleCount&quot;: 3
+        },
+        {
+          &quot;id&quot;: &quot;stage-1-cue-0&quot;,
+          &quot;stage&quot;: 1,
+          &quot;cue&quot;: 0,
+          &quot;src&quot;: &quot;audio/narration/01-00.mp3&quot;,
+          &quot;duration&quot;: 22.356,
+          &quot;speechLength&quot;: 98,
+          &quot;subtitleCount&quot;: 1
+        },
+        {
+          &quot;id&quot;: &quot;stage-1-cue-1&quot;,
+          &quot;stage&quot;: 1,
+          &quot;cue&quot;: 1,
+          &quot;src&quot;: &quot;audio/narration/01-01.mp3&quot;,
+          &quot;duration&quot;: 24.372,
+          &quot;speechLength&quot;: 101,
+          &quot;subtitleCount&quot;: 2
+        },
+        {
+          &quot;id&quot;: &quot;stage-1-cue-2&quot;,
+          &quot;stage&quot;: 1,
+          &quot;cue&quot;: 2,
+          &quot;src&quot;: &quot;audio/narration/01-02.mp3&quot;,
+          &quot;duration&quot;: 27.9,
+          &quot;speechLength&quot;: 114,
+          &quot;subtitleCount&quot;: 3
+        },
+        {
+          &quot;id&quot;: &quot;stage-2-cue-0&quot;,
+          &quot;stage&quot;: 2,
+          &quot;cue&quot;: 0,
+          &quot;src&quot;: &quot;audio/narration/02-00.mp3&quot;,
+          &quot;duration&quot;: 26.676,
+          &quot;speechLength&quot;: 104,
+          &quot;subtitleCount&quot;: 3
+        },
+        {
+          &quot;id&quot;: &quot;stage-2-cue-1&quot;,
+          &quot;stage&quot;: 2,
+          &quot;cue&quot;: 1,
+          &quot;src&quot;: &quot;audio/narration/02-01.mp3&quot;,
+          &quot;duration&quot;: 24.48,
+          &quot;speechLength&quot;: 102,
+          &quot;subtitleCount&quot;: 2
+        },
+        {
+          &quot;id&quot;: &quot;stage-2-cue-2&quot;,
+          &quot;stage&quot;: 2,
+          &quot;cue&quot;: 2,
+          &quot;src&quot;: &quot;audio/narration/02-02.mp3&quot;,
+          &quot;duration&quot;: 28.728,
+          &quot;speechLength&quot;: 117,
+          &quot;subtitleCount&quot;: 3
+        },
+        {
+          &quot;id&quot;: &quot;stage-3-cue-0&quot;,
+          &quot;stage&quot;: 3,
+          &quot;cue&quot;: 0,
+          &quot;src&quot;: &quot;audio/narration/03-00.mp3&quot;,
+          &quot;duration&quot;: 25.704,
+          &quot;speechLength&quot;: 110,
+          &quot;subtitleCount&quot;: 2
+        },
+        {
+          &quot;id&quot;: &quot;stage-3-cue-1&quot;,
+          &quot;stage&quot;: 3,
+          &quot;cue&quot;: 1,
+          &quot;src&quot;: &quot;audio/narration/03-01.mp3&quot;,
+          &quot;duration&quot;: 26.208,
+          &quot;speechLength&quot;: 109,
+          &quot;subtitleCount&quot;: 3
+        },
+        {
+          &quot;id&quot;: &quot;stage-3-cue-2&quot;,
+          &quot;stage&quot;: 3,
+          &quot;cue&quot;: 2,
+          &quot;src&quot;: &quot;audio/narration/03-02.mp3&quot;,
+          &quot;duration&quot;: 26.1,
+          &quot;speechLength&quot;: 114,
+          &quot;subtitleCount&quot;: 2
+        },
+        {
+          &quot;id&quot;: &quot;stage-4-cue-0&quot;,
+          &quot;stage&quot;: 4,
+          &quot;cue&quot;: 0,
+          &quot;src&quot;: &quot;audio/narration/04-00.mp3&quot;,
+          &quot;duration&quot;: 24.588,
+          &quot;speechLength&quot;: 104,
+          &quot;subtitleCount&quot;: 2
+        },
+        {
+          &quot;id&quot;: &quot;stage-4-cue-1&quot;,
+          &quot;stage&quot;: 4,
+          &quot;cue&quot;: 1,
+          &quot;src&quot;: &quot;audio/narration/04-01.mp3&quot;,
+          &quot;duration&quot;: 22.248,
+          &quot;speechLength&quot;: 98,
+          &quot;subtitleCount&quot;: 2
+        },
+        {
+          &quot;id&quot;: &quot;stage-4-cue-2&quot;,
+          &quot;stage&quot;: 4,
+          &quot;cue&quot;: 2,
+          &quot;src&quot;: &quot;audio/narration/04-02.mp3&quot;,
+          &quot;duration&quot;: 25.668,
+          &quot;speechLength&quot;: 112,
+          &quot;subtitleCount&quot;: 2
+        },
+        {
+          &quot;id&quot;: &quot;stage-5-cue-0&quot;,
+          &quot;stage&quot;: 5,
+          &quot;cue&quot;: 0,
+          &quot;src&quot;: &quot;audio/narration/05-00.mp3&quot;,
+          &quot;duration&quot;: 26.388,
+          &quot;speechLength&quot;: 109,
+          &quot;subtitleCount&quot;: 3
+        },
+        {
+          &quot;id&quot;: &quot;stage-5-cue-1&quot;,
+          &quot;stage&quot;: 5,
+          &quot;cue&quot;: 1,
+          &quot;src&quot;: &quot;audio/narration/05-01.mp3&quot;,
+          &quot;duration&quot;: 24.696,
+          &quot;speechLength&quot;: 103,
+          &quot;subtitleCount&quot;: 3
+        },
+        {
+          &quot;id&quot;: &quot;stage-5-cue-2&quot;,
+          &quot;stage&quot;: 5,
+          &quot;cue&quot;: 2,
+          &quot;src&quot;: &quot;audio/narration/05-02.mp3&quot;,
+          &quot;duration&quot;: 26.172,
+          &quot;speechLength&quot;: 107,
+          &quot;subtitleCount&quot;: 3
+        },
+        {
+          &quot;id&quot;: &quot;stage-6-cue-0&quot;,
+          &quot;stage&quot;: 6,
+          &quot;cue&quot;: 0,
+          &quot;src&quot;: &quot;audio/narration/06-00.mp3&quot;,
+          &quot;duration&quot;: 25.632,
+          &quot;speechLength&quot;: 109,
+          &quot;subtitleCount&quot;: 2
+        },
+        {
+          &quot;id&quot;: &quot;stage-6-cue-1&quot;,
+          &quot;stage&quot;: 6,
+          &quot;cue&quot;: 1,
+          &quot;src&quot;: &quot;audio/narration/06-01.mp3&quot;,
+          &quot;duration&quot;: 27.324,
+          &quot;speechLength&quot;: 117,
+          &quot;subtitleCount&quot;: 2
+        },
+        {
+          &quot;id&quot;: &quot;stage-6-cue-2&quot;,
+          &quot;stage&quot;: 6,
+          &quot;cue&quot;: 2,
+          &quot;src&quot;: &quot;audio/narration/06-02.mp3&quot;,
+          &quot;duration&quot;: 27,
+          &quot;speechLength&quot;: 113,
+          &quot;subtitleCount&quot;: 2
+        },
+        {
+          &quot;id&quot;: &quot;stage-7-cue-0&quot;,
+          &quot;stage&quot;: 7,
+          &quot;cue&quot;: 0,
+          &quot;src&quot;: &quot;audio/narration/07-00.mp3&quot;,
+          &quot;duration&quot;: 24.12,
+          &quot;speechLength&quot;: 105,
+          &quot;subtitleCount&quot;: 2
+        },
+        {
+          &quot;id&quot;: &quot;stage-7-cue-1&quot;,
+          &quot;stage&quot;: 7,
+          &quot;cue&quot;: 1,
+          &quot;src&quot;: &quot;audio/narration/07-01.mp3&quot;,
+          &quot;duration&quot;: 26.568,
+          &quot;speechLength&quot;: 111,
+          &quot;subtitleCount&quot;: 3
+        },
+        {
+          &quot;id&quot;: &quot;stage-7-cue-2&quot;,
+          &quot;stage&quot;: 7,
+          &quot;cue&quot;: 2,
+          &quot;src&quot;: &quot;audio/narration/07-02.mp3&quot;,
+          &quot;duration&quot;: 27.648,
+          &quot;speechLength&quot;: 112,
+          &quot;subtitleCount&quot;: 3
+        },
+        {
+          &quot;id&quot;: &quot;stage-8-cue-0&quot;,
+          &quot;stage&quot;: 8,
+          &quot;cue&quot;: 0,
+          &quot;src&quot;: &quot;audio/narration/08-00.mp3&quot;,
+          &quot;duration&quot;: 23.724,
+          &quot;speechLength&quot;: 107,
+          &quot;subtitleCount&quot;: 2
+        },
+        {
+          &quot;id&quot;: &quot;stage-8-cue-1&quot;,
+          &quot;stage&quot;: 8,
+          &quot;cue&quot;: 1,
+          &quot;src&quot;: &quot;audio/narration/08-01.mp3&quot;,
+          &quot;duration&quot;: 27.684,
+          &quot;speechLength&quot;: 115,
+          &quot;subtitleCount&quot;: 3
+        },
+        {
+          &quot;id&quot;: &quot;stage-8-cue-2&quot;,
+          &quot;stage&quot;: 8,
+          &quot;cue&quot;: 2,
+          &quot;src&quot;: &quot;audio/narration/08-02.mp3&quot;,
+          &quot;duration&quot;: 26.208,
+          &quot;speechLength&quot;: 108,
+          &quot;subtitleCount&quot;: 2
+        },
+        {
+          &quot;id&quot;: &quot;stage-9-cue-0&quot;,
+          &quot;stage&quot;: 9,
+          &quot;cue&quot;: 0,
+          &quot;src&quot;: &quot;audio/narration/09-00.mp3&quot;,
+          &quot;duration&quot;: 28.512,
+          &quot;speechLength&quot;: 120,
+          &quot;subtitleCount&quot;: 2
+        },
+        {
+          &quot;id&quot;: &quot;stage-9-cue-1&quot;,
+          &quot;stage&quot;: 9,
+          &quot;cue&quot;: 1,
+          &quot;src&quot;: &quot;audio/narration/09-01.mp3&quot;,
+          &quot;duration&quot;: 28.404,
+          &quot;speechLength&quot;: 116,
+          &quot;subtitleCount&quot;: 2
+        },
+        {
+          &quot;id&quot;: &quot;stage-9-cue-2&quot;,
+          &quot;stage&quot;: 9,
+          &quot;cue&quot;: 2,
+          &quot;src&quot;: &quot;audio/narration/09-02.mp3&quot;,
+          &quot;duration&quot;: 30.564,
+          &quot;speechLength&quot;: 127,
+          &quot;subtitleCount&quot;: 3
+        }
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;Timed subtitle text covers all narration&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: [
+        {
+          &quot;id&quot;: &quot;stage-0-cue-0&quot;,
+          &quot;speech&quot;: 106,
+          &quot;subtitles&quot;: 106
+        },
+        {
+          &quot;id&quot;: &quot;stage-0-cue-1&quot;,
+          &quot;speech&quot;: 107,
+          &quot;subtitles&quot;: 107
+        },
+        {
+          &quot;id&quot;: &quot;stage-0-cue-2&quot;,
+          &quot;speech&quot;: 117,
+          &quot;subtitles&quot;: 117
+        },
+        {
+          &quot;id&quot;: &quot;stage-1-cue-0&quot;,
+          &quot;speech&quot;: 98,
+          &quot;subtitles&quot;: 98
+        },
+        {
+          &quot;id&quot;: &quot;stage-1-cue-1&quot;,
+          &quot;speech&quot;: 101,
+          &quot;subtitles&quot;: 101
+        },
+        {
+          &quot;id&quot;: &quot;stage-1-cue-2&quot;,
+          &quot;speech&quot;: 114,
+          &quot;subtitles&quot;: 114
+        },
+        {
+          &quot;id&quot;: &quot;stage-2-cue-0&quot;,
+          &quot;speech&quot;: 104,
+          &quot;subtitles&quot;: 104
+        },
+        {
+          &quot;id&quot;: &quot;stage-2-cue-1&quot;,
+          &quot;speech&quot;: 102,
+          &quot;subtitles&quot;: 102
+        },
+        {
+          &quot;id&quot;: &quot;stage-2-cue-2&quot;,
+          &quot;speech&quot;: 117,
+          &quot;subtitles&quot;: 117
+        },
+        {
+          &quot;id&quot;: &quot;stage-3-cue-0&quot;,
+          &quot;speech&quot;: 110,
+          &quot;subtitles&quot;: 110
+        },
+        {
+          &quot;id&quot;: &quot;stage-3-cue-1&quot;,
+          &quot;speech&quot;: 109,
+          &quot;subtitles&quot;: 109
+        },
+        {
+          &quot;id&quot;: &quot;stage-3-cue-2&quot;,
+          &quot;speech&quot;: 114,
+          &quot;subtitles&quot;: 114
+        },
+        {
+          &quot;id&quot;: &quot;stage-4-cue-0&quot;,
+          &quot;speech&quot;: 104,
+          &quot;subtitles&quot;: 104
+        },
+        {
+          &quot;id&quot;: &quot;stage-4-cue-1&quot;,
+          &quot;speech&quot;: 98,
+          &quot;subtitles&quot;: 98
+        },
+        {
+          &quot;id&quot;: &quot;stage-4-cue-2&quot;,
+          &quot;speech&quot;: 112,
+          &quot;subtitles&quot;: 112
+        },
+        {
+          &quot;id&quot;: &quot;stage-5-cue-0&quot;,
+          &quot;speech&quot;: 109,
+          &quot;subtitles&quot;: 109
+        },
+        {
+          &quot;id&quot;: &quot;stage-5-cue-1&quot;,
+          &quot;speech&quot;: 103,
+          &quot;subtitles&quot;: 103
+        },
+        {
+          &quot;id&quot;: &quot;stage-5-cue-2&quot;,
+          &quot;speech&quot;: 107,
+          &quot;subtitles&quot;: 107
+        },
+        {
+          &quot;id&quot;: &quot;stage-6-cue-0&quot;,
+          &quot;speech&quot;: 109,
+          &quot;subtitles&quot;: 109
+        },
+        {
+          &quot;id&quot;: &quot;stage-6-cue-1&quot;,
+          &quot;speech&quot;: 117,
+          &quot;subtitles&quot;: 117
+        },
+        {
+          &quot;id&quot;: &quot;stage-6-cue-2&quot;,
+          &quot;speech&quot;: 113,
+          &quot;subtitles&quot;: 113
+        },
+        {
+          &quot;id&quot;: &quot;stage-7-cue-0&quot;,
+          &quot;speech&quot;: 105,
+          &quot;subtitles&quot;: 105
+        },
+        {
+          &quot;id&quot;: &quot;stage-7-cue-1&quot;,
+          &quot;speech&quot;: 111,
+          &quot;subtitles&quot;: 111
+        },
+        {
+          &quot;id&quot;: &quot;stage-7-cue-2&quot;,
+          &quot;speech&quot;: 112,
+          &quot;subtitles&quot;: 112
+        },
+        {
+          &quot;id&quot;: &quot;stage-8-cue-0&quot;,
+          &quot;speech&quot;: 107,
+          &quot;subtitles&quot;: 107
+        },
+        {
+          &quot;id&quot;: &quot;stage-8-cue-1&quot;,
+          &quot;speech&quot;: 115,
+          &quot;subtitles&quot;: 115
+        },
+        {
+          &quot;id&quot;: &quot;stage-8-cue-2&quot;,
+          &quot;speech&quot;: 108,
+          &quot;subtitles&quot;: 108
+        },
+        {
+          &quot;id&quot;: &quot;stage-9-cue-0&quot;,
+          &quot;speech&quot;: 120,
+          &quot;subtitles&quot;: 120
+        },
+        {
+          &quot;id&quot;: &quot;stage-9-cue-1&quot;,
+          &quot;speech&quot;: 116,
+          &quot;subtitles&quot;: 116
+        },
+        {
+          &quot;id&quot;: &quot;stage-9-cue-2&quot;,
+          &quot;speech&quot;: 127,
+          &quot;subtitles&quot;: 127
+        }
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-0-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-00.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-0-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\00-00.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-0-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-0-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-0-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 25.848,
+        &quot;actual&quot;: 25.848
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-0-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-01.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-0-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\00-01.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-0-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-0-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-0-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 24.012,
+        &quot;actual&quot;: 24.012
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-0-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-02.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-0-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\00-02.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-0-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-0-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-0-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 27.288,
+        &quot;actual&quot;: 27.288
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-1-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/01-00.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-1-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\01-00.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-1-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-1-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-1-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 22.356,
+        &quot;actual&quot;: 22.356
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-1-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/01-01.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-1-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\01-01.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-1-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-1-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-1-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 24.372,
+        &quot;actual&quot;: 24.372
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-1-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/01-02.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-1-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\01-02.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-1-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-1-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-1-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 27.9,
+        &quot;actual&quot;: 27.9
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-2-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/02-00.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-2-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\02-00.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-2-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-2-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-2-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 26.676,
+        &quot;actual&quot;: 26.676
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-2-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/02-01.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-2-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\02-01.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-2-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-2-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-2-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 24.48,
+        &quot;actual&quot;: 24.48
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-2-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/02-02.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-2-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\02-02.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-2-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-2-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-2-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 28.728,
+        &quot;actual&quot;: 28.728
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-3-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/03-00.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-3-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\03-00.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-3-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-3-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-3-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 25.704,
+        &quot;actual&quot;: 25.704
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-3-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/03-01.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-3-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\03-01.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-3-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-3-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-3-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 26.208,
+        &quot;actual&quot;: 26.208
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-3-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/03-02.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-3-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\03-02.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-3-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-3-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-3-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 26.1,
+        &quot;actual&quot;: 26.1
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-4-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/04-00.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-4-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\04-00.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-4-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-4-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-4-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 24.588,
+        &quot;actual&quot;: 24.588
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-4-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/04-01.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-4-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\04-01.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-4-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-4-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-4-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 22.248,
+        &quot;actual&quot;: 22.248
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-4-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/04-02.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-4-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\04-02.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-4-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-4-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-4-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 25.668,
+        &quot;actual&quot;: 25.668
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-5-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/05-00.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-5-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\05-00.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-5-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-5-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-5-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 26.388,
+        &quot;actual&quot;: 26.388
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-5-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/05-01.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-5-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\05-01.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-5-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-5-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-5-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 24.696,
+        &quot;actual&quot;: 24.696
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-5-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/05-02.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-5-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\05-02.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-5-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-5-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-5-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 26.172,
+        &quot;actual&quot;: 26.172
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-6-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/06-00.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-6-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\06-00.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-6-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-6-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-6-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 25.632,
+        &quot;actual&quot;: 25.632
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-6-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/06-01.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-6-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\06-01.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-6-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-6-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-6-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 27.324,
+        &quot;actual&quot;: 27.324
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-6-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/06-02.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-6-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\06-02.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-6-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-6-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-6-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 27,
+        &quot;actual&quot;: 27
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-7-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/07-00.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-7-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\07-00.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-7-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-7-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-7-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 24.12,
+        &quot;actual&quot;: 24.12
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-7-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/07-01.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-7-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\07-01.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-7-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-7-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-7-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 26.568,
+        &quot;actual&quot;: 26.568
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-7-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/07-02.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-7-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\07-02.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-7-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-7-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-7-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 27.648,
+        &quot;actual&quot;: 27.648
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-8-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/08-00.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-8-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\08-00.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-8-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-8-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-8-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 23.724,
+        &quot;actual&quot;: 23.724
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-8-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/08-01.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-8-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\08-01.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-8-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-8-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-8-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 27.684,
+        &quot;actual&quot;: 27.684
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-8-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/08-02.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-8-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\08-02.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-8-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-8-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-8-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 26.208,
+        &quot;actual&quot;: 26.208
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-9-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/09-00.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-9-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\09-00.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-9-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-9-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-9-cue-0&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 28.512,
+        &quot;actual&quot;: 28.512
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-9-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/09-01.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-9-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\09-01.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-9-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-9-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-9-cue-1&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 28.404,
+        &quot;actual&quot;: 28.404
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio source remains on the local application origin: stage-9-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/09-02.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Audio file stays within this project: stage-9-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\09-02.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 has valid metadata: stage-9-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;MP3 decodes completely: stage-9-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Recorded duration matches encoded audio: stage-9-cue-2&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 30.564,
+        &quot;actual&quot;: 30.564
+      }
+    },
+    {
+      &quot;name&quot;: &quot;The complete narration download is present&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\full-course.mp3&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Complete-download duration covers the sum of all 30 segments&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;expected&quot;: 782.82,
+        &quot;actual&quot;: 782.82,
+        &quot;error&quot;: &quot;&quot;
+      }
+    },
+    {
+      &quot;name&quot;: &quot;The complete narration download decodes to the end&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Chromium can load metadata for all 30 audio assets&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: [
+        {
+          &quot;id&quot;: &quot;stage-0-cue-0&quot;,
+          &quot;duration&quot;: 25.848
+        },
+        {
+          &quot;id&quot;: &quot;stage-0-cue-1&quot;,
+          &quot;duration&quot;: 24.012
+        },
+        {
+          &quot;id&quot;: &quot;stage-0-cue-2&quot;,
+          &quot;duration&quot;: 27.288
+        },
+        {
+          &quot;id&quot;: &quot;stage-1-cue-0&quot;,
+          &quot;duration&quot;: 22.356
+        },
+        {
+          &quot;id&quot;: &quot;stage-1-cue-1&quot;,
+          &quot;duration&quot;: 24.372
+        },
+        {
+          &quot;id&quot;: &quot;stage-1-cue-2&quot;,
+          &quot;duration&quot;: 27.9
+        },
+        {
+          &quot;id&quot;: &quot;stage-2-cue-0&quot;,
+          &quot;duration&quot;: 26.676
+        },
+        {
+          &quot;id&quot;: &quot;stage-2-cue-1&quot;,
+          &quot;duration&quot;: 24.48
+        },
+        {
+          &quot;id&quot;: &quot;stage-2-cue-2&quot;,
+          &quot;duration&quot;: 28.728
+        },
+        {
+          &quot;id&quot;: &quot;stage-3-cue-0&quot;,
+          &quot;duration&quot;: 25.704
+        },
+        {
+          &quot;id&quot;: &quot;stage-3-cue-1&quot;,
+          &quot;duration&quot;: 26.208
+        },
+        {
+          &quot;id&quot;: &quot;stage-3-cue-2&quot;,
+          &quot;duration&quot;: 26.1
+        },
+        {
+          &quot;id&quot;: &quot;stage-4-cue-0&quot;,
+          &quot;duration&quot;: 24.588
+        },
+        {
+          &quot;id&quot;: &quot;stage-4-cue-1&quot;,
+          &quot;duration&quot;: 22.248
+        },
+        {
+          &quot;id&quot;: &quot;stage-4-cue-2&quot;,
+          &quot;duration&quot;: 25.668
+        },
+        {
+          &quot;id&quot;: &quot;stage-5-cue-0&quot;,
+          &quot;duration&quot;: 26.388
+        },
+        {
+          &quot;id&quot;: &quot;stage-5-cue-1&quot;,
+          &quot;duration&quot;: 24.696
+        },
+        {
+          &quot;id&quot;: &quot;stage-5-cue-2&quot;,
+          &quot;duration&quot;: 26.172
+        },
+        {
+          &quot;id&quot;: &quot;stage-6-cue-0&quot;,
+          &quot;duration&quot;: 25.632
+        },
+        {
+          &quot;id&quot;: &quot;stage-6-cue-1&quot;,
+          &quot;duration&quot;: 27.324
+        },
+        {
+          &quot;id&quot;: &quot;stage-6-cue-2&quot;,
+          &quot;duration&quot;: 27
+        },
+        {
+          &quot;id&quot;: &quot;stage-7-cue-0&quot;,
+          &quot;duration&quot;: 24.12
+        },
+        {
+          &quot;id&quot;: &quot;stage-7-cue-1&quot;,
+          &quot;duration&quot;: 26.568
+        },
+        {
+          &quot;id&quot;: &quot;stage-7-cue-2&quot;,
+          &quot;duration&quot;: 27.648
+        },
+        {
+          &quot;id&quot;: &quot;stage-8-cue-0&quot;,
+          &quot;duration&quot;: 23.724
+        },
+        {
+          &quot;id&quot;: &quot;stage-8-cue-1&quot;,
+          &quot;duration&quot;: 27.684
+        },
+        {
+          &quot;id&quot;: &quot;stage-8-cue-2&quot;,
+          &quot;duration&quot;: 26.208
+        },
+        {
+          &quot;id&quot;: &quot;stage-9-cue-0&quot;,
+          &quot;duration&quot;: 28.512
+        },
+        {
+          &quot;id&quot;: &quot;stage-9-cue-1&quot;,
+          &quot;duration&quot;: 28.404
+        },
+        {
+          &quot;id&quot;: &quot;stage-9-cue-2&quot;,
+          &quot;duration&quot;: 30.564
+        }
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;Full lecture starts native recorded audio on the first cue&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;journey&quot;: {
+          &quot;stage&quot;: 0,
+          &quot;highest&quot;: 0,
+          &quot;mode&quot;: &quot;science&quot;,
+          &quot;comparing&quot;: false,
+          &quot;autoExplaining&quot;: true,
+          &quot;narrationScope&quot;: &quot;full&quot;,
+          &quot;playing&quot;: false,
+          &quot;elapsed&quot;: 0.008004,
+          &quot;cue&quot;: 0,
+          &quot;cueTime&quot;: 0.008004,
+          &quot;progress&quot;: 0,
+          &quot;completed&quot;: false,
+          &quot;totalDuration&quot;: 782.82,
+          &quot;layers&quot;: {
+            &quot;sky&quot;: 1,
+            &quot;horizon&quot;: 1,
+            &quot;texture&quot;: 1,
+            &quot;disk&quot;: 1,
+            &quot;lensing&quot;: 1,
+            &quot;doppler&quot;: 1
+          },
+          &quot;audio&quot;: {
+            &quot;status&quot;: &quot;playing&quot;,
+            &quot;src&quot;: &quot;audio/narration/00-00.mp3&quot;,
+            &quot;currentTime&quot;: 0.014014,
+            &quot;duration&quot;: 25.848,
+            &quot;enabled&quot;: true,
+            &quot;error&quot;: &quot;&quot;,
+            &quot;token&quot;: 2
+          }
+        }
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Browser speech synthesis is never called&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: 0
+    },
+    {
+      &quot;name&quot;: &quot;Pause retains and freezes the current audio position&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;paused&quot;: {
+          &quot;currentTime&quot;: 0.035248,
+          &quot;paused&quot;: true,
+          &quot;src&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-00.mp3&quot;
+        },
+        &quot;frozen&quot;: {
+          &quot;currentTime&quot;: 0.035248,
+          &quot;paused&quot;: true,
+          &quot;src&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-00.mp3&quot;
+        }
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Resume continues the same recording instead of restarting&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;paused&quot;: {
+          &quot;currentTime&quot;: 0.035248,
+          &quot;paused&quot;: true,
+          &quot;src&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-00.mp3&quot;
+        },
+        &quot;resumed&quot;: {
+          &quot;currentTime&quot;: 0.100642,
+          &quot;src&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-00.mp3&quot;
+        }
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Manual cue seek replaces old audio and resets its time while paused&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;journey&quot;: {
+          &quot;stage&quot;: 0,
+          &quot;highest&quot;: 0,
+          &quot;mode&quot;: &quot;science&quot;,
+          &quot;comparing&quot;: false,
+          &quot;autoExplaining&quot;: true,
+          &quot;narrationScope&quot;: &quot;full&quot;,
+          &quot;playing&quot;: false,
+          &quot;elapsed&quot;: 25.848,
+          &quot;cue&quot;: 1,
+          &quot;cueTime&quot;: 0,
+          &quot;progress&quot;: 0,
+          &quot;completed&quot;: false,
+          &quot;totalDuration&quot;: 782.82,
+          &quot;layers&quot;: {
+            &quot;sky&quot;: 1,
+            &quot;horizon&quot;: 1,
+            &quot;texture&quot;: 1,
+            &quot;disk&quot;: 1,
+            &quot;lensing&quot;: 1,
+            &quot;doppler&quot;: 1
+          },
+          &quot;audio&quot;: {
+            &quot;status&quot;: &quot;loading&quot;,
+            &quot;src&quot;: &quot;audio/narration/00-01.mp3&quot;,
+            &quot;currentTime&quot;: 0,
+            &quot;duration&quot;: 24.012,
+            &quot;enabled&quot;: true,
+            &quot;error&quot;: &quot;&quot;,
+            &quot;token&quot;: 3
+          }
+        },
+        &quot;audio&quot;: {
+          &quot;currentTime&quot;: 0,
+          &quot;paused&quot;: true,
+          &quot;src&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-01.mp3&quot;
+        }
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Scrolling to explanations does not cut narration in half&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Even a huge animation tick cannot truncate an unfinished recording&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;before&quot;: {
+          &quot;stage&quot;: 0,
+          &quot;highest&quot;: 0,
+          &quot;mode&quot;: &quot;science&quot;,
+          &quot;comparing&quot;: false,
+          &quot;autoExplaining&quot;: true,
+          &quot;narrationScope&quot;: &quot;full&quot;,
+          &quot;playing&quot;: false,
+          &quot;elapsed&quot;: 0,
+          &quot;cue&quot;: 0,
+          &quot;cueTime&quot;: 0,
+          &quot;progress&quot;: 0,
+          &quot;completed&quot;: false,
+          &quot;totalDuration&quot;: 782.82,
+          &quot;layers&quot;: {
+            &quot;sky&quot;: 1,
+            &quot;horizon&quot;: 1,
+            &quot;texture&quot;: 1,
+            &quot;disk&quot;: 1,
+            &quot;lensing&quot;: 1,
+            &quot;doppler&quot;: 1
+          },
+          &quot;audio&quot;: {
+            &quot;status&quot;: &quot;playing&quot;,
+            &quot;src&quot;: &quot;audio/narration/00-00.mp3&quot;,
+            &quot;currentTime&quot;: 0,
+            &quot;duration&quot;: 25.848,
+            &quot;enabled&quot;: true,
+            &quot;error&quot;: &quot;&quot;,
+            &quot;token&quot;: 2
+          }
+        },
+        &quot;after&quot;: {
+          &quot;stage&quot;: 0,
+          &quot;highest&quot;: 0,
+          &quot;mode&quot;: &quot;science&quot;,
+          &quot;comparing&quot;: false,
+          &quot;autoExplaining&quot;: true,
+          &quot;narrationScope&quot;: &quot;full&quot;,
+          &quot;playing&quot;: false,
+          &quot;elapsed&quot;: 0,
+          &quot;cue&quot;: 0,
+          &quot;cueTime&quot;: 0,
+          &quot;progress&quot;: 0,
+          &quot;completed&quot;: false,
+          &quot;totalDuration&quot;: 782.82,
+          &quot;layers&quot;: {
+            &quot;sky&quot;: 1,
+            &quot;horizon&quot;: 1,
+            &quot;texture&quot;: 1,
+            &quot;disk&quot;: 1,
+            &quot;lensing&quot;: 1,
+            &quot;doppler&quot;: 1
+          },
+          &quot;audio&quot;: {
+            &quot;status&quot;: &quot;playing&quot;,
+            &quot;src&quot;: &quot;audio/narration/00-00.mp3&quot;,
+            &quot;currentTime&quot;: 0,
+            &quot;duration&quot;: 25.848,
+            &quot;enabled&quot;: true,
+            &quot;error&quot;: &quot;&quot;,
+            &quot;token&quot;: 2
+          }
+        },
+        &quot;currentTime&quot;: 0
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Audio progress slider seeks inside the same recording without resuming a pause&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;beforeSeek&quot;: {
+          &quot;duration&quot;: 25.848,
+          &quot;currentTime&quot;: 1.441463,
+          &quot;src&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-00.mp3&quot;
+        },
+        &quot;midSeek&quot;: {
+          &quot;duration&quot;: 25.848,
+          &quot;currentTime&quot;: 12.9,
+          &quot;src&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-00.mp3&quot;,
+          &quot;paused&quot;: true
+        }
+      }
+    },
+    {
+      &quot;name&quot;: &quot;A hidden tab pauses recorded narration while retaining its position&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;currentTime&quot;: 12.9,
+        &quot;paused&quot;: true,
+        &quot;src&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-00.mp3&quot;
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Returning to a hidden tab resumes the same sentence rather than repeating it&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;hiddenPause&quot;: {
+          &quot;currentTime&quot;: 12.9,
+          &quot;paused&quot;: true,
+          &quot;src&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-00.mp3&quot;
+        },
+        &quot;hiddenResume&quot;: {
+          &quot;currentTime&quot;: 12.9,
+          &quot;src&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-00.mp3&quot;
+        }
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Each selected chapter has its own full recorded explanation&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;yaw&quot;: 0.35,
+        &quot;inclination&quot;: 10,
+        &quot;distance&quot;: 23,
+        &quot;thickness&quot;: 0.16,
+        &quot;exposure&quot;: 1.25,
+        &quot;speed&quot;: 1,
+        &quot;lensing&quot;: true,
+        &quot;doppler&quot;: true,
+        &quot;disk&quot;: true,
+        &quot;orbit&quot;: false,
+        &quot;quality&quot;: &quot;balanced&quot;,
+        &quot;paused&quot;: false,
+        &quot;grid&quot;: false,
+        &quot;mass&quot;: 10,
+        &quot;rateLog&quot;: -9,
+        &quot;falseColor&quot;: false,
+        &quot;progress&quot;: 7.701494837417168e-05,
+        &quot;support&quot;: 1,
+        &quot;heat&quot;: 1,
+        &quot;dopplerStrength&quot;: 1,
+        &quot;lensStrength&quot;: 1,
+        &quot;journey&quot;: {
+          &quot;stage&quot;: 3,
+          &quot;highest&quot;: 3,
+          &quot;mode&quot;: &quot;science&quot;,
+          &quot;comparing&quot;: false,
+          &quot;autoExplaining&quot;: true,
+          &quot;narrationScope&quot;: &quot;chapter&quot;,
+          &quot;playing&quot;: true,
+          &quot;elapsed&quot;: 0.003998,
+          &quot;cue&quot;: 0,
+          &quot;cueTime&quot;: 0.003998,
+          &quot;progress&quot;: 7.701494837417168e-05,
+          &quot;completed&quot;: false,
+          &quot;totalDuration&quot;: 782.82,
+          &quot;layers&quot;: {
+            &quot;sky&quot;: 1,
+            &quot;horizon&quot;: 1,
+            &quot;texture&quot;: 1,
+            &quot;disk&quot;: 1,
+            &quot;lensing&quot;: 1,
+            &quot;doppler&quot;: 1
+          },
+          &quot;audio&quot;: {
+            &quot;status&quot;: &quot;playing&quot;,
+            &quot;src&quot;: &quot;audio/narration/03-00.mp3&quot;,
+            &quot;currentTime&quot;: 0.015594,
+            &quot;duration&quot;: 25.704,
+            &quot;enabled&quot;: true,
+            &quot;error&quot;: &quot;&quot;,
+            &quot;token&quot;: 10
+          }
+        },
+        &quot;clock&quot;: 0.13329999999999928,
+        &quot;flowClock&quot;: 0.13329999999999928,
+        &quot;renderCount&quot;: 9,
+        &quot;units&quot;: {
+          &quot;mass&quot;: 10,
+          &quot;rate&quot;: 1e-09,
+          &quot;rs&quot;: 29533.393820668785,
+          &quot;rsKm&quot;: 29.533393820668785,
+          &quot;timeUnit&quot;: 9.851279787922078e-05,
+          &quot;temperatureScale&quot;: 9092166.033592287,
+          &quot;peakTemperature&quot;: 1945950.2026094769,
+          &quot;photonSphere&quot;: 1.5,
+          &quot;isco&quot;: 3,
+          &quot;criticalImpact&quot;: 2.598076211353316
+        },
+        &quot;raySteps&quot;: 900,
+        &quot;model&quot;: {
+          &quot;stage&quot;: 3,
+          &quot;elapsed&quot;: 0.003998,
+          &quot;progress&quot;: 7.701494837417168e-05,
+          &quot;support&quot;: 1,
+          &quot;heat&quot;: 1,
+          &quot;mass&quot;: 10,
+          &quot;rate&quot;: 1e-09,
+          &quot;comparing&quot;: false
+        },
+        &quot;width&quot;: 644,
+        &quot;height&quot;: 678,
+        &quot;failure&quot;: null
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Full lecture plays all 30 actual MP3 segments in order&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;played&quot;: [
+          &quot;0/0&quot;,
+          &quot;0/1&quot;,
+          &quot;0/2&quot;,
+          &quot;1/0&quot;,
+          &quot;1/1&quot;,
+          &quot;1/2&quot;,
+          &quot;2/0&quot;,
+          &quot;2/1&quot;,
+          &quot;2/2&quot;,
+          &quot;3/0&quot;,
+          &quot;3/1&quot;,
+          &quot;3/2&quot;,
+          &quot;4/0&quot;,
+          &quot;4/1&quot;,
+          &quot;4/2&quot;,
+          &quot;5/0&quot;,
+          &quot;5/1&quot;,
+          &quot;5/2&quot;,
+          &quot;6/0&quot;,
+          &quot;6/1&quot;,
+          &quot;6/2&quot;,
+          &quot;7/0&quot;,
+          &quot;7/1&quot;,
+          &quot;7/2&quot;,
+          &quot;8/0&quot;,
+          &quot;8/1&quot;,
+          &quot;8/2&quot;,
+          &quot;9/0&quot;,
+          &quot;9/1&quot;,
+          &quot;9/2&quot;
+        ],
+        &quot;ended&quot;: [
+          &quot;0/0&quot;,
+          &quot;0/1&quot;,
+          &quot;0/2&quot;,
+          &quot;1/0&quot;,
+          &quot;1/1&quot;,
+          &quot;1/2&quot;,
+          &quot;2/0&quot;,
+          &quot;2/1&quot;,
+          &quot;2/2&quot;,
+          &quot;3/0&quot;,
+          &quot;3/1&quot;,
+          &quot;3/2&quot;,
+          &quot;4/0&quot;,
+          &quot;4/1&quot;,
+          &quot;4/2&quot;,
+          &quot;5/0&quot;,
+          &quot;5/1&quot;,
+          &quot;5/2&quot;,
+          &quot;6/0&quot;,
+          &quot;6/1&quot;,
+          &quot;6/2&quot;,
+          &quot;7/0&quot;,
+          &quot;7/1&quot;,
+          &quot;7/2&quot;,
+          &quot;8/0&quot;,
+          &quot;8/1&quot;,
+          &quot;8/2&quot;,
+          &quot;9/0&quot;,
+          &quot;9/1&quot;,
+          &quot;9/2&quot;
+        ]
+      }
+    },
+    {
+      &quot;name&quot;: &quot;All 30 segments reach their native ended event before completion&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;played&quot;: [
+          &quot;0/0&quot;,
+          &quot;0/1&quot;,
+          &quot;0/2&quot;,
+          &quot;1/0&quot;,
+          &quot;1/1&quot;,
+          &quot;1/2&quot;,
+          &quot;2/0&quot;,
+          &quot;2/1&quot;,
+          &quot;2/2&quot;,
+          &quot;3/0&quot;,
+          &quot;3/1&quot;,
+          &quot;3/2&quot;,
+          &quot;4/0&quot;,
+          &quot;4/1&quot;,
+          &quot;4/2&quot;,
+          &quot;5/0&quot;,
+          &quot;5/1&quot;,
+          &quot;5/2&quot;,
+          &quot;6/0&quot;,
+          &quot;6/1&quot;,
+          &quot;6/2&quot;,
+          &quot;7/0&quot;,
+          &quot;7/1&quot;,
+          &quot;7/2&quot;,
+          &quot;8/0&quot;,
+          &quot;8/1&quot;,
+          &quot;8/2&quot;,
+          &quot;9/0&quot;,
+          &quot;9/1&quot;,
+          &quot;9/2&quot;
+        ],
+        &quot;ended&quot;: [
+          &quot;0/0&quot;,
+          &quot;0/1&quot;,
+          &quot;0/2&quot;,
+          &quot;1/0&quot;,
+          &quot;1/1&quot;,
+          &quot;1/2&quot;,
+          &quot;2/0&quot;,
+          &quot;2/1&quot;,
+          &quot;2/2&quot;,
+          &quot;3/0&quot;,
+          &quot;3/1&quot;,
+          &quot;3/2&quot;,
+          &quot;4/0&quot;,
+          &quot;4/1&quot;,
+          &quot;4/2&quot;,
+          &quot;5/0&quot;,
+          &quot;5/1&quot;,
+          &quot;5/2&quot;,
+          &quot;6/0&quot;,
+          &quot;6/1&quot;,
+          &quot;6/2&quot;,
+          &quot;7/0&quot;,
+          &quot;7/1&quot;,
+          &quot;7/2&quot;,
+          &quot;8/0&quot;,
+          &quot;8/1&quot;,
+          &quot;8/2&quot;,
+          &quot;9/0&quot;,
+          &quot;9/1&quot;,
+          &quot;9/2&quot;
+        ]
+      }
+    },
+    {
+      &quot;name&quot;: &quot;The final cue remains visible and the completed lecture pauses&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;stage&quot;: 9,
+        &quot;highest&quot;: 9,
+        &quot;mode&quot;: &quot;science&quot;,
+        &quot;comparing&quot;: false,
+        &quot;autoExplaining&quot;: false,
+        &quot;narrationScope&quot;: &quot;full&quot;,
+        &quot;playing&quot;: false,
+        &quot;elapsed&quot;: 87.47999999999999,
+        &quot;cue&quot;: 2,
+        &quot;cueTime&quot;: 30.564,
+        &quot;progress&quot;: 0,
+        &quot;completed&quot;: true,
+        &quot;totalDuration&quot;: 782.82,
+        &quot;layers&quot;: {
+          &quot;sky&quot;: 1,
+          &quot;horizon&quot;: 1,
+          &quot;texture&quot;: 1,
+          &quot;disk&quot;: 1,
+          &quot;lensing&quot;: 1,
+          &quot;doppler&quot;: 1
+        },
+        &quot;audio&quot;: {
+          &quot;status&quot;: &quot;ended&quot;,
+          &quot;src&quot;: &quot;audio/narration/09-02.mp3&quot;,
+          &quot;currentTime&quot;: 30.564,
+          &quot;duration&quot;: 30.564,
+          &quot;enabled&quot;: true,
+          &quot;error&quot;: &quot;&quot;,
+          &quot;token&quot;: 31
+        }
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Narration remains complete even when WebGL is unavailable&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;failure&quot;: &quot;此设备没有可用的 WebGL 2 上下文。&quot;,
+        &quot;played&quot;: 30
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Missing audio is explicit and freezes its current cue&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;stage&quot;: 0,
+        &quot;highest&quot;: 0,
+        &quot;mode&quot;: &quot;science&quot;,
+        &quot;comparing&quot;: false,
+        &quot;autoExplaining&quot;: true,
+        &quot;narrationScope&quot;: &quot;full&quot;,
+        &quot;playing&quot;: false,
+        &quot;elapsed&quot;: 0,
+        &quot;cue&quot;: 0,
+        &quot;cueTime&quot;: 0,
+        &quot;progress&quot;: 0,
+        &quot;completed&quot;: false,
+        &quot;totalDuration&quot;: 782.82,
+        &quot;layers&quot;: {
+          &quot;sky&quot;: 1,
+          &quot;horizon&quot;: 1,
+          &quot;texture&quot;: 1,
+          &quot;disk&quot;: 1,
+          &quot;lensing&quot;: 1,
+          &quot;doppler&quot;: 1
+        },
+        &quot;audio&quot;: {
+          &quot;status&quot;: &quot;error&quot;,
+          &quot;src&quot;: &quot;audio/narration/00-00.mp3&quot;,
+          &quot;currentTime&quot;: 0,
+          &quot;duration&quot;: 25.848,
+          &quot;enabled&quot;: true,
+          &quot;error&quot;: &quot;音频文件不可用，请重试&quot;,
+          &quot;token&quot;: 2
+        }
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Retry recovers recorded audio at the same cue&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;stage&quot;: 0,
+        &quot;highest&quot;: 0,
+        &quot;mode&quot;: &quot;science&quot;,
+        &quot;comparing&quot;: false,
+        &quot;autoExplaining&quot;: true,
+        &quot;narrationScope&quot;: &quot;full&quot;,
+        &quot;playing&quot;: false,
+        &quot;elapsed&quot;: 0,
+        &quot;cue&quot;: 0,
+        &quot;cueTime&quot;: 0,
+        &quot;progress&quot;: 0,
+        &quot;completed&quot;: false,
+        &quot;totalDuration&quot;: 782.82,
+        &quot;layers&quot;: {
+          &quot;sky&quot;: 1,
+          &quot;horizon&quot;: 1,
+          &quot;texture&quot;: 1,
+          &quot;disk&quot;: 1,
+          &quot;lensing&quot;: 1,
+          &quot;doppler&quot;: 1
+        },
+        &quot;audio&quot;: {
+          &quot;status&quot;: &quot;playing&quot;,
+          &quot;src&quot;: &quot;audio/narration/00-00.mp3&quot;,
+          &quot;currentTime&quot;: 0.019012,
+          &quot;duration&quot;: 25.848,
+          &quot;enabled&quot;: true,
+          &quot;error&quot;: &quot;&quot;,
+          &quot;token&quot;: 3
+        }
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Disabling audio pauses the recording and selects a visible subtitle track&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;stage&quot;: 0,
+        &quot;highest&quot;: 0,
+        &quot;mode&quot;: &quot;science&quot;,
+        &quot;comparing&quot;: false,
+        &quot;autoExplaining&quot;: true,
+        &quot;narrationScope&quot;: &quot;full&quot;,
+        &quot;playing&quot;: false,
+        &quot;elapsed&quot;: 0.019012,
+        &quot;cue&quot;: 0,
+        &quot;cueTime&quot;: 0.019012,
+        &quot;progress&quot;: 0,
+        &quot;completed&quot;: false,
+        &quot;totalDuration&quot;: 782.82,
+        &quot;layers&quot;: {
+          &quot;sky&quot;: 1,
+          &quot;horizon&quot;: 1,
+          &quot;texture&quot;: 1,
+          &quot;disk&quot;: 1,
+          &quot;lensing&quot;: 1,
+          &quot;doppler&quot;: 1
+        },
+        &quot;audio&quot;: {
+          &quot;status&quot;: &quot;muted&quot;,
+          &quot;src&quot;: &quot;audio/narration/00-00.mp3&quot;,
+          &quot;currentTime&quot;: 0.019012,
+          &quot;duration&quot;: 25.848,
+          &quot;enabled&quot;: false,
+          &quot;error&quot;: &quot;&quot;,
+          &quot;token&quot;: 3
+        }
+      }
+    },
+    {
+      &quot;name&quot;: &quot;No unexpected page JavaScript exceptions&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: []
+    }
+  ],
+  &quot;errors&quot;: [],
+  &quot;provider&quot;: &quot;MiniMax&quot;,
+  &quot;model&quot;: &quot;speech-2.8-hd&quot;,
+  &quot;manifest&quot;: [
+    {
+      &quot;id&quot;: &quot;stage-0-cue-0&quot;,
+      &quot;stage&quot;: 0,
+      &quot;cue&quot;: 0,
+      &quot;src&quot;: &quot;audio/narration/00-00.mp3&quot;,
+      &quot;duration&quot;: 25.848,
+      &quot;speechLength&quot;: 106,
+      &quot;subtitleCount&quot;: 3
+    },
+    {
+      &quot;id&quot;: &quot;stage-0-cue-1&quot;,
+      &quot;stage&quot;: 0,
+      &quot;cue&quot;: 1,
+      &quot;src&quot;: &quot;audio/narration/00-01.mp3&quot;,
+      &quot;duration&quot;: 24.012,
+      &quot;speechLength&quot;: 107,
+      &quot;subtitleCount&quot;: 2
+    },
+    {
+      &quot;id&quot;: &quot;stage-0-cue-2&quot;,
+      &quot;stage&quot;: 0,
+      &quot;cue&quot;: 2,
+      &quot;src&quot;: &quot;audio/narration/00-02.mp3&quot;,
+      &quot;duration&quot;: 27.288,
+      &quot;speechLength&quot;: 117,
+      &quot;subtitleCount&quot;: 3
+    },
+    {
+      &quot;id&quot;: &quot;stage-1-cue-0&quot;,
+      &quot;stage&quot;: 1,
+      &quot;cue&quot;: 0,
+      &quot;src&quot;: &quot;audio/narration/01-00.mp3&quot;,
+      &quot;duration&quot;: 22.356,
+      &quot;speechLength&quot;: 98,
+      &quot;subtitleCount&quot;: 1
+    },
+    {
+      &quot;id&quot;: &quot;stage-1-cue-1&quot;,
+      &quot;stage&quot;: 1,
+      &quot;cue&quot;: 1,
+      &quot;src&quot;: &quot;audio/narration/01-01.mp3&quot;,
+      &quot;duration&quot;: 24.372,
+      &quot;speechLength&quot;: 101,
+      &quot;subtitleCount&quot;: 2
+    },
+    {
+      &quot;id&quot;: &quot;stage-1-cue-2&quot;,
+      &quot;stage&quot;: 1,
+      &quot;cue&quot;: 2,
+      &quot;src&quot;: &quot;audio/narration/01-02.mp3&quot;,
+      &quot;duration&quot;: 27.9,
+      &quot;speechLength&quot;: 114,
+      &quot;subtitleCount&quot;: 3
+    },
+    {
+      &quot;id&quot;: &quot;stage-2-cue-0&quot;,
+      &quot;stage&quot;: 2,
+      &quot;cue&quot;: 0,
+      &quot;src&quot;: &quot;audio/narration/02-00.mp3&quot;,
+      &quot;duration&quot;: 26.676,
+      &quot;speechLength&quot;: 104,
+      &quot;subtitleCount&quot;: 3
+    },
+    {
+      &quot;id&quot;: &quot;stage-2-cue-1&quot;,
+      &quot;stage&quot;: 2,
+      &quot;cue&quot;: 1,
+      &quot;src&quot;: &quot;audio/narration/02-01.mp3&quot;,
+      &quot;duration&quot;: 24.48,
+      &quot;speechLength&quot;: 102,
+      &quot;subtitleCount&quot;: 2
+    },
+    {
+      &quot;id&quot;: &quot;stage-2-cue-2&quot;,
+      &quot;stage&quot;: 2,
+      &quot;cue&quot;: 2,
+      &quot;src&quot;: &quot;audio/narration/02-02.mp3&quot;,
+      &quot;duration&quot;: 28.728,
+      &quot;speechLength&quot;: 117,
+      &quot;subtitleCount&quot;: 3
+    },
+    {
+      &quot;id&quot;: &quot;stage-3-cue-0&quot;,
+      &quot;stage&quot;: 3,
+      &quot;cue&quot;: 0,
+      &quot;src&quot;: &quot;audio/narration/03-00.mp3&quot;,
+      &quot;duration&quot;: 25.704,
+      &quot;speechLength&quot;: 110,
+      &quot;subtitleCount&quot;: 2
+    },
+    {
+      &quot;id&quot;: &quot;stage-3-cue-1&quot;,
+      &quot;stage&quot;: 3,
+      &quot;cue&quot;: 1,
+      &quot;src&quot;: &quot;audio/narration/03-01.mp3&quot;,
+      &quot;duration&quot;: 26.208,
+      &quot;speechLength&quot;: 109,
+      &quot;subtitleCount&quot;: 3
+    },
+    {
+      &quot;id&quot;: &quot;stage-3-cue-2&quot;,
+      &quot;stage&quot;: 3,
+      &quot;cue&quot;: 2,
+      &quot;src&quot;: &quot;audio/narration/03-02.mp3&quot;,
+      &quot;duration&quot;: 26.1,
+      &quot;speechLength&quot;: 114,
+      &quot;subtitleCount&quot;: 2
+    },
+    {
+      &quot;id&quot;: &quot;stage-4-cue-0&quot;,
+      &quot;stage&quot;: 4,
+      &quot;cue&quot;: 0,
+      &quot;src&quot;: &quot;audio/narration/04-00.mp3&quot;,
+      &quot;duration&quot;: 24.588,
+      &quot;speechLength&quot;: 104,
+      &quot;subtitleCount&quot;: 2
+    },
+    {
+      &quot;id&quot;: &quot;stage-4-cue-1&quot;,
+      &quot;stage&quot;: 4,
+      &quot;cue&quot;: 1,
+      &quot;src&quot;: &quot;audio/narration/04-01.mp3&quot;,
+      &quot;duration&quot;: 22.248,
+      &quot;speechLength&quot;: 98,
+      &quot;subtitleCount&quot;: 2
+    },
+    {
+      &quot;id&quot;: &quot;stage-4-cue-2&quot;,
+      &quot;stage&quot;: 4,
+      &quot;cue&quot;: 2,
+      &quot;src&quot;: &quot;audio/narration/04-02.mp3&quot;,
+      &quot;duration&quot;: 25.668,
+      &quot;speechLength&quot;: 112,
+      &quot;subtitleCount&quot;: 2
+    },
+    {
+      &quot;id&quot;: &quot;stage-5-cue-0&quot;,
+      &quot;stage&quot;: 5,
+      &quot;cue&quot;: 0,
+      &quot;src&quot;: &quot;audio/narration/05-00.mp3&quot;,
+      &quot;duration&quot;: 26.388,
+      &quot;speechLength&quot;: 109,
+      &quot;subtitleCount&quot;: 3
+    },
+    {
+      &quot;id&quot;: &quot;stage-5-cue-1&quot;,
+      &quot;stage&quot;: 5,
+      &quot;cue&quot;: 1,
+      &quot;src&quot;: &quot;audio/narration/05-01.mp3&quot;,
+      &quot;duration&quot;: 24.696,
+      &quot;speechLength&quot;: 103,
+      &quot;subtitleCount&quot;: 3
+    },
+    {
+      &quot;id&quot;: &quot;stage-5-cue-2&quot;,
+      &quot;stage&quot;: 5,
+      &quot;cue&quot;: 2,
+      &quot;src&quot;: &quot;audio/narration/05-02.mp3&quot;,
+      &quot;duration&quot;: 26.172,
+      &quot;speechLength&quot;: 107,
+      &quot;subtitleCount&quot;: 3
+    },
+    {
+      &quot;id&quot;: &quot;stage-6-cue-0&quot;,
+      &quot;stage&quot;: 6,
+      &quot;cue&quot;: 0,
+      &quot;src&quot;: &quot;audio/narration/06-00.mp3&quot;,
+      &quot;duration&quot;: 25.632,
+      &quot;speechLength&quot;: 109,
+      &quot;subtitleCount&quot;: 2
+    },
+    {
+      &quot;id&quot;: &quot;stage-6-cue-1&quot;,
+      &quot;stage&quot;: 6,
+      &quot;cue&quot;: 1,
+      &quot;src&quot;: &quot;audio/narration/06-01.mp3&quot;,
+      &quot;duration&quot;: 27.324,
+      &quot;speechLength&quot;: 117,
+      &quot;subtitleCount&quot;: 2
+    },
+    {
+      &quot;id&quot;: &quot;stage-6-cue-2&quot;,
+      &quot;stage&quot;: 6,
+      &quot;cue&quot;: 2,
+      &quot;src&quot;: &quot;audio/narration/06-02.mp3&quot;,
+      &quot;duration&quot;: 27,
+      &quot;speechLength&quot;: 113,
+      &quot;subtitleCount&quot;: 2
+    },
+    {
+      &quot;id&quot;: &quot;stage-7-cue-0&quot;,
+      &quot;stage&quot;: 7,
+      &quot;cue&quot;: 0,
+      &quot;src&quot;: &quot;audio/narration/07-00.mp3&quot;,
+      &quot;duration&quot;: 24.12,
+      &quot;speechLength&quot;: 105,
+      &quot;subtitleCount&quot;: 2
+    },
+    {
+      &quot;id&quot;: &quot;stage-7-cue-1&quot;,
+      &quot;stage&quot;: 7,
+      &quot;cue&quot;: 1,
+      &quot;src&quot;: &quot;audio/narration/07-01.mp3&quot;,
+      &quot;duration&quot;: 26.568,
+      &quot;speechLength&quot;: 111,
+      &quot;subtitleCount&quot;: 3
+    },
+    {
+      &quot;id&quot;: &quot;stage-7-cue-2&quot;,
+      &quot;stage&quot;: 7,
+      &quot;cue&quot;: 2,
+      &quot;src&quot;: &quot;audio/narration/07-02.mp3&quot;,
+      &quot;duration&quot;: 27.648,
+      &quot;speechLength&quot;: 112,
+      &quot;subtitleCount&quot;: 3
+    },
+    {
+      &quot;id&quot;: &quot;stage-8-cue-0&quot;,
+      &quot;stage&quot;: 8,
+      &quot;cue&quot;: 0,
+      &quot;src&quot;: &quot;audio/narration/08-00.mp3&quot;,
+      &quot;duration&quot;: 23.724,
+      &quot;speechLength&quot;: 107,
+      &quot;subtitleCount&quot;: 2
+    },
+    {
+      &quot;id&quot;: &quot;stage-8-cue-1&quot;,
+      &quot;stage&quot;: 8,
+      &quot;cue&quot;: 1,
+      &quot;src&quot;: &quot;audio/narration/08-01.mp3&quot;,
+      &quot;duration&quot;: 27.684,
+      &quot;speechLength&quot;: 115,
+      &quot;subtitleCount&quot;: 3
+    },
+    {
+      &quot;id&quot;: &quot;stage-8-cue-2&quot;,
+      &quot;stage&quot;: 8,
+      &quot;cue&quot;: 2,
+      &quot;src&quot;: &quot;audio/narration/08-02.mp3&quot;,
+      &quot;duration&quot;: 26.208,
+      &quot;speechLength&quot;: 108,
+      &quot;subtitleCount&quot;: 2
+    },
+    {
+      &quot;id&quot;: &quot;stage-9-cue-0&quot;,
+      &quot;stage&quot;: 9,
+      &quot;cue&quot;: 0,
+      &quot;src&quot;: &quot;audio/narration/09-00.mp3&quot;,
+      &quot;duration&quot;: 28.512,
+      &quot;speechLength&quot;: 120,
+      &quot;subtitleCount&quot;: 2
+    },
+    {
+      &quot;id&quot;: &quot;stage-9-cue-1&quot;,
+      &quot;stage&quot;: 9,
+      &quot;cue&quot;: 1,
+      &quot;src&quot;: &quot;audio/narration/09-01.mp3&quot;,
+      &quot;duration&quot;: 28.404,
+      &quot;speechLength&quot;: 116,
+      &quot;subtitleCount&quot;: 2
+    },
+    {
+      &quot;id&quot;: &quot;stage-9-cue-2&quot;,
+      &quot;stage&quot;: 9,
+      &quot;cue&quot;: 2,
+      &quot;src&quot;: &quot;audio/narration/09-02.mp3&quot;,
+      &quot;duration&quot;: 30.564,
+      &quot;speechLength&quot;: 127,
+      &quot;subtitleCount&quot;: 3
+    }
+  ],
+  &quot;audioData&quot;: [
+    {
+      &quot;id&quot;: &quot;stage-0-cue-0&quot;,
+      &quot;bytes&quot;: 415284,
+      &quot;duration&quot;: 25.848,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-0-cue-1&quot;,
+      &quot;bytes&quot;: 385908,
+      &quot;duration&quot;: 24.012,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-0-cue-2&quot;,
+      &quot;bytes&quot;: 438324,
+      &quot;duration&quot;: 27.288,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-1-cue-0&quot;,
+      &quot;bytes&quot;: 359412,
+      &quot;duration&quot;: 22.356,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-1-cue-1&quot;,
+      &quot;bytes&quot;: 391668,
+      &quot;duration&quot;: 24.372,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-1-cue-2&quot;,
+      &quot;bytes&quot;: 448116,
+      &quot;duration&quot;: 27.9,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-2-cue-0&quot;,
+      &quot;bytes&quot;: 428532,
+      &quot;duration&quot;: 26.676,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-2-cue-1&quot;,
+      &quot;bytes&quot;: 393396,
+      &quot;duration&quot;: 24.48,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-2-cue-2&quot;,
+      &quot;bytes&quot;: 461364,
+      &quot;duration&quot;: 28.728,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-3-cue-0&quot;,
+      &quot;bytes&quot;: 412980,
+      &quot;duration&quot;: 25.704,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-3-cue-1&quot;,
+      &quot;bytes&quot;: 421044,
+      &quot;duration&quot;: 26.208,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-3-cue-2&quot;,
+      &quot;bytes&quot;: 419316,
+      &quot;duration&quot;: 26.1,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-4-cue-0&quot;,
+      &quot;bytes&quot;: 395124,
+      &quot;duration&quot;: 24.588,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-4-cue-1&quot;,
+      &quot;bytes&quot;: 357684,
+      &quot;duration&quot;: 22.248,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-4-cue-2&quot;,
+      &quot;bytes&quot;: 412404,
+      &quot;duration&quot;: 25.668,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-5-cue-0&quot;,
+      &quot;bytes&quot;: 423924,
+      &quot;duration&quot;: 26.388,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-5-cue-1&quot;,
+      &quot;bytes&quot;: 396852,
+      &quot;duration&quot;: 24.696,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-5-cue-2&quot;,
+      &quot;bytes&quot;: 420468,
+      &quot;duration&quot;: 26.172,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-6-cue-0&quot;,
+      &quot;bytes&quot;: 411828,
+      &quot;duration&quot;: 25.632,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-6-cue-1&quot;,
+      &quot;bytes&quot;: 438900,
+      &quot;duration&quot;: 27.324,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-6-cue-2&quot;,
+      &quot;bytes&quot;: 433716,
+      &quot;duration&quot;: 27,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-7-cue-0&quot;,
+      &quot;bytes&quot;: 387636,
+      &quot;duration&quot;: 24.12,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-7-cue-1&quot;,
+      &quot;bytes&quot;: 426804,
+      &quot;duration&quot;: 26.568,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-7-cue-2&quot;,
+      &quot;bytes&quot;: 444084,
+      &quot;duration&quot;: 27.648,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-8-cue-0&quot;,
+      &quot;bytes&quot;: 381300,
+      &quot;duration&quot;: 23.724,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-8-cue-1&quot;,
+      &quot;bytes&quot;: 444660,
+      &quot;duration&quot;: 27.684,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-8-cue-2&quot;,
+      &quot;bytes&quot;: 421044,
+      &quot;duration&quot;: 26.208,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-9-cue-0&quot;,
+      &quot;bytes&quot;: 457908,
+      &quot;duration&quot;: 28.512,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-9-cue-1&quot;,
+      &quot;bytes&quot;: 456180,
+      &quot;duration&quot;: 28.404,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stage-9-cue-2&quot;,
+      &quot;bytes&quot;: 490740,
+      &quot;duration&quot;: 30.564,
+      &quot;streams&quot;: [
+        {
+          &quot;codec_name&quot;: &quot;mp3&quot;,
+          &quot;sample_rate&quot;: &quot;32000&quot;,
+          &quot;channels&quot;: 1
+        }
+      ]
+    }
+  ],
+  &quot;totalDuration&quot;: 782.82,
+  &quot;timeline&quot;: {
+    &quot;played&quot;: [
+      &quot;0/0&quot;,
+      &quot;0/1&quot;,
+      &quot;0/2&quot;,
+      &quot;1/0&quot;,
+      &quot;1/1&quot;,
+      &quot;1/2&quot;,
+      &quot;2/0&quot;,
+      &quot;2/1&quot;,
+      &quot;2/2&quot;,
+      &quot;3/0&quot;,
+      &quot;3/1&quot;,
+      &quot;3/2&quot;,
+      &quot;4/0&quot;,
+      &quot;4/1&quot;,
+      &quot;4/2&quot;,
+      &quot;5/0&quot;,
+      &quot;5/1&quot;,
+      &quot;5/2&quot;,
+      &quot;6/0&quot;,
+      &quot;6/1&quot;,
+      &quot;6/2&quot;,
+      &quot;7/0&quot;,
+      &quot;7/1&quot;,
+      &quot;7/2&quot;,
+      &quot;8/0&quot;,
+      &quot;8/1&quot;,
+      &quot;8/2&quot;,
+      &quot;9/0&quot;,
+      &quot;9/1&quot;,
+      &quot;9/2&quot;
+    ],
+    &quot;ended&quot;: [
+      &quot;0/0&quot;,
+      &quot;0/1&quot;,
+      &quot;0/2&quot;,
+      &quot;1/0&quot;,
+      &quot;1/1&quot;,
+      &quot;1/2&quot;,
+      &quot;2/0&quot;,
+      &quot;2/1&quot;,
+      &quot;2/2&quot;,
+      &quot;3/0&quot;,
+      &quot;3/1&quot;,
+      &quot;3/2&quot;,
+      &quot;4/0&quot;,
+      &quot;4/1&quot;,
+      &quot;4/2&quot;,
+      &quot;5/0&quot;,
+      &quot;5/1&quot;,
+      &quot;5/2&quot;,
+      &quot;6/0&quot;,
+      &quot;6/1&quot;,
+      &quot;6/2&quot;,
+      &quot;7/0&quot;,
+      &quot;7/1&quot;,
+      &quot;7/2&quot;,
+      &quot;8/0&quot;,
+      &quot;8/1&quot;,
+      &quot;8/2&quot;,
+      &quot;9/0&quot;,
+      &quot;9/1&quot;,
+      &quot;9/2&quot;
+    ]
+  },
+  &quot;status&quot;: &quot;passed&quot;,
+  &quot;count&quot;: 178,
+  &quot;failed&quot;: 0
+}</pre></details></article>
+<article class="record-card" id="record-understanding-validation"><span class="record-label">保存的验证快照 · 以记录日期和检查范围为准</span><h3>understanding-validation.json</h3><p>日期：2026-10-02 · 状态：passed · 记录中的检查条目：16</p><p>{&quot;browser&quot;: &quot;Chromium&quot;, &quot;renderer&quot;: &quot;SwiftShader software&quot;, &quot;mobile&quot;: &quot;Viewport simulations at 390px and 320px, not physical devices&quot;}</p><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/012-black-hole-lab/notes/understanding-validation.json">GitHub 原始记录</a> · <code>SHA-256（UTF-8 / LF）9f65730ddc775a35edcbd51810a6f3412e79255eb41492d6bbf48c90de08dd7e</code></p><details><summary>展开完整验证记录</summary><pre>{
+  &quot;date&quot;: &quot;2026-10-02&quot;,
+  &quot;timezone&quot;: &quot;Asia/Shanghai&quot;,
+  &quot;status&quot;: &quot;passed&quot;,
+  &quot;environment&quot;: {
+    &quot;browser&quot;: &quot;Chromium&quot;,
+    &quot;renderer&quot;: &quot;SwiftShader software&quot;,
+    &quot;mobile&quot;: &quot;Viewport simulations at 390px and 320px, not physical devices&quot;
+  },
+  &quot;checks&quot;: [
+    {
+      &quot;name&quot;: &quot;Summary readable and image loaded at 1280px&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;overflow&quot;: false,
+        &quot;imageLoaded&quot;: true,
+        &quot;cards&quot;: 6,
+        &quot;links&quot;: 16,
+        &quot;smallestText&quot;: 11
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Native PNG download is a complete 1800x2240 image&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;bytes&quot;: 2366353
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Native SVG download is self-contained and has an accessible description&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;bytes&quot;: 392673
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Full-size image opens from summary&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;http://127.0.0.1:62116/projects/012-black-hole-lab/web/assets/understanding-map.svg&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Summary links navigate to the event-horizon demonstration&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: &quot;04 · 事件视界：未来光路无法通向外部&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Summary returns to the full black-hole result&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;No browser runtime errors at 1280px&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: []
+    },
+    {
+      &quot;name&quot;: &quot;Summary readable and image loaded at 390px&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;overflow&quot;: false,
+        &quot;imageLoaded&quot;: true,
+        &quot;cards&quot;: 6,
+        &quot;links&quot;: 16,
+        &quot;smallestText&quot;: 11
+      }
+    },
+    {
+      &quot;name&quot;: &quot;No browser runtime errors at 390px&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: []
+    },
+    {
+      &quot;name&quot;: &quot;Summary readable and image loaded at 320px&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: {
+        &quot;overflow&quot;: false,
+        &quot;imageLoaded&quot;: true,
+        &quot;cards&quot;: 6,
+        &quot;links&quot;: 16,
+        &quot;smallestText&quot;: 11
+      }
+    },
+    {
+      &quot;name&quot;: &quot;No browser runtime errors at 320px&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: []
+    },
+    {
+      &quot;name&quot;: &quot;Built subpath exposes summary and portable image&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Built asset matches source: index.html&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Built asset matches source: styles.css&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Built asset matches source: assets/understanding-map.svg&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Built asset matches source: assets/understanding-map.png&quot;,
+      &quot;passed&quot;: true,
+      &quot;details&quot;: true
+    }
+  ]
+}</pre></details></article>
+<article class="record-card" id="record-build-validation"><span class="record-label">保存的验证快照 · 以记录日期和检查范围为准</span><h3>build-validation.json</h3><p>日期：2026-10-02T04:16:56.123Z · 状态：passed · 记录中的检查条目：6</p><p>环境与限制见 JSON 记录。</p><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/012-black-hole-lab/notes/build-validation.json">GitHub 原始记录</a> · <code>SHA-256（UTF-8 / LF）35e7cb0561e72abbb2baed3549ba55133900f2fdcf5d88be3701d6d7a34b093f</code></p><details><summary>展开完整验证记录</summary><pre>{
+  &quot;date&quot;: &quot;2026-10-02T04:16:56.123Z&quot;,
+  &quot;status&quot;: &quot;passed&quot;,
+  &quot;url&quot;: &quot;http://127.0.0.1:62116/_site/projects/012-black-hole-lab/?v=minimax#experiment&quot;,
+  &quot;checks&quot;: [
+    &quot;All eight shipped page assets match source&quot;,
+    &quot;All 30 MiniMax segments and merged full-course MP3 match source and generation receipts&quot;,
+    &quot;Built page renders the paused observer image without shader errors&quot;,
+    &quot;Built subpath plays local MiniMax MP3 using native media time&quot;,
+    &quot;Full-course MP3 supports audio/mpeg and byte-range download&quot;,
+    &quot;Formation diagrams tolerate a temporarily small 290px container without Canvas exceptions&quot;
+  ],
+  &quot;hashes&quot;: {
+    &quot;index.html&quot;: &quot;980c3b7738583e7c239f3d0ca8fec1a39df84a42cb09d7be78d67625d77f2c22&quot;,
+    &quot;model.js&quot;: &quot;934c58e5118edfca239eb4048baadccb1b7a7dc62e2d9b91b8854b34d4d34952&quot;,
+    &quot;app.js&quot;: &quot;22cb94b65ad63a0d0a7265f8e23e34339dc064f1f99ee8c803bfa90ac9191108&quot;,
+    &quot;course.js&quot;: &quot;e727011df5e7cb3d2aa817ed24d21101b25863e8a13574a5387e10012082f830&quot;,
+    &quot;physics.js&quot;: &quot;7a21e8547ad6167cec78be0451c95271088aaa685bdfbbc162fc8ea03b982bcf&quot;,
+    &quot;shaders.js&quot;: &quot;d1b8efa9f031beec7b678456a5fa6f54cae20dfc6fccc69886b3cba5fdcd2e85&quot;,
+    &quot;styles.css&quot;: &quot;883f199cb8855ee3f6daffe7352eaaef43c12ea4d8e6f958134805dba17b3b5a&quot;,
+    &quot;narration.js&quot;: &quot;ee023ff45dd428df86d84afba8802071d2b0eba64b9f9e0e4340a6df1db88704&quot;
+  },
+  &quot;audioHashes&quot;: {
+    &quot;00-00.mp3&quot;: &quot;4b245502596c2b00dcd9e4664f4f4657153d64c844afde47cdb37b9097f48656&quot;,
+    &quot;00-01.mp3&quot;: &quot;8f72825ba39b1f7c1255f163fc9e2cb629bdd8075a6dfefd75c5182ff4cd9a19&quot;,
+    &quot;00-02.mp3&quot;: &quot;387e6ecfc6e432c018822c581e3d1eb54af4543c266a3f033e489f0425052cbf&quot;,
+    &quot;01-00.mp3&quot;: &quot;85a90ffff0c129d68774316f48fe3a042c6f0dd0757bc034e7136188648a19f1&quot;,
+    &quot;01-01.mp3&quot;: &quot;6288a02d9873f642690e9df8bd35e2669eb2f99cee3870e4dd65e48be6f27e6a&quot;,
+    &quot;01-02.mp3&quot;: &quot;b5532cbcab23f533b506ce8e70264d3ee3cdb73b5b7dbd2dff298a0fa5dbbee2&quot;,
+    &quot;02-00.mp3&quot;: &quot;e1e32f81e326da3c54f99679cb39e8b11f62cb48ad7cb0c9243be97d7943abb2&quot;,
+    &quot;02-01.mp3&quot;: &quot;c5a6694c0187092f0c66d10c4d8a6645fd0ebbcb87d0f3b587b949be8d97abbf&quot;,
+    &quot;02-02.mp3&quot;: &quot;0aea62e7bad7951442fe7e7a15b99f529bce22d14cb3a7620450d94e8935f004&quot;,
+    &quot;03-00.mp3&quot;: &quot;04b8c8f41b9175a88e856521c500edd6c6325e5f221a9fc4c8ec9282b9190af6&quot;,
+    &quot;03-01.mp3&quot;: &quot;9b32c49511f84e1921af72b7362fdc325815a9c9293ac8c99a4793300f010594&quot;,
+    &quot;03-02.mp3&quot;: &quot;0f09a4d5e2d01d4637e99c36fd4b18edefab047e913760a018ec0d6f6a933401&quot;,
+    &quot;04-00.mp3&quot;: &quot;14dd184e37c3152083b85a5a4fbad7de50d813b090eb0df873e27b51b960b34a&quot;,
+    &quot;04-01.mp3&quot;: &quot;6121538a3b69cebc888aaa0b60cebefb4bbfa2cfc5d3c1c8c2a6a6da57739698&quot;,
+    &quot;04-02.mp3&quot;: &quot;abd99cc960333802fd250dc42142d1fd22341fd14db59b9a6e5d032188d3d6c0&quot;,
+    &quot;05-00.mp3&quot;: &quot;c62ba27704228d2e8b28d7dc19bda84e2b5d460a527c27b27392fa2c7db3cd6d&quot;,
+    &quot;05-01.mp3&quot;: &quot;01aff3c02315ce1cf3aa57c1450ae7410a19a92faae447a1cfef2f56f63a430d&quot;,
+    &quot;05-02.mp3&quot;: &quot;74410b4ee844e33190071fec561f296341f79880d8fa610b86b1e7d43ade73aa&quot;,
+    &quot;06-00.mp3&quot;: &quot;3f2493e8fa4c4ba7fa4857cf9e40af6221b03feb55b38baa261a03ca1463eaa5&quot;,
+    &quot;06-01.mp3&quot;: &quot;5bc33dacda696eb95c1150e61b13e48df166fef7dcd864a26c21672506f807ea&quot;,
+    &quot;06-02.mp3&quot;: &quot;71e86a9cdac0afb33bce491c23555922dc4ae6326e369e33f81b495532f78646&quot;,
+    &quot;07-00.mp3&quot;: &quot;b8f05764a61e23f136fc637c8fa08c0bd20cbff5f69dfcf3e5bc5672b681551b&quot;,
+    &quot;07-01.mp3&quot;: &quot;86e523b3b23ea7239bb7d1be13d65a136b397261d0dac8d01823b5cdd93565cc&quot;,
+    &quot;07-02.mp3&quot;: &quot;c0d9cee507e3116087e123a5016621a8c43067289c98cae4ecf666b54cb5a9d4&quot;,
+    &quot;08-00.mp3&quot;: &quot;392b566dfb512d6eeabbf52d51565314b283e0d127e61031dfb8b95e7563cc83&quot;,
+    &quot;08-01.mp3&quot;: &quot;6b8a65dc9fb6427bee802acb3b9f161cf5db58a2353db6a1481345e3dfbe6274&quot;,
+    &quot;08-02.mp3&quot;: &quot;609ee4f4e5cd28695edcf1b45155760d776fa96b8a69b55af35c860e054fc275&quot;,
+    &quot;09-00.mp3&quot;: &quot;e146a635903b94a51a00ad8627fff4c495def5d6e8717b7a5102a9bc0614d775&quot;,
+    &quot;09-01.mp3&quot;: &quot;6b5f7f86271c71cd42ca1781b184a660429c9a63c324d5622823f3102d771f6a&quot;,
+    &quot;09-02.mp3&quot;: &quot;22deb45ffdb290bb741b2da3fb5d30f68c3f28d6ad9f0ad195c74f205a660e5b&quot;,
+    &quot;full-course.mp3&quot;: &quot;6c1545ea1060c0db4465b8bcac2d4a794802574f4cefca7a4fd316fd30cc965b&quot;
+  },
+  &quot;pixels&quot;: 38590,
+  &quot;playing&quot;: {
+    &quot;src&quot;: &quot;http://127.0.0.1:62116/_site/projects/012-black-hole-lab/audio/narration/00-00.mp3&quot;,
+    &quot;time&quot;: 0.811121,
+    &quot;state&quot;: &quot;playing&quot;
+  },
+  &quot;errors&quot;: []
+}</pre></details></article>
+<article class="record-card" id="record-construction-validation"><span class="record-label">历史版本验收 · 不能替代当前功能验证</span><h3>construction-validation.json</h3><p>日期：2026-10-02 · 状态：passed · 记录中的检查条目：9</p><p>环境与限制见 JSON 记录。</p><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/012-black-hole-lab/notes/construction-validation.json">GitHub 原始记录</a> · <code>SHA-256（UTF-8 / LF）4471925f74f0033e21dc894ce5101f139de320f50fba8d2d52b4c00efc58b5cc</code></p><details><summary>展开完整验证记录</summary><pre>{
+  &quot;date&quot;: &quot;2026-10-02&quot;,
+  &quot;status&quot;: &quot;passed&quot;,
+  &quot;count&quot;: 9,
+  &quot;checks&quot;: [
+    {
+      &quot;name&quot;: &quot;Finished-effect lessons cannot bypass construction&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Canvas start button creates the first layer&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Auto build immediately advances one stage&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Auto build advances in order&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Auto build can be stopped&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Previous step returns to an earlier construction&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Restart clears construction and future unlocks&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;Construction layout fits a mobile viewport&quot;,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;No runtime errors in construction controls&quot;,
+      &quot;passed&quot;: true
+    }
+  ],
+  &quot;errors&quot;: []
+}</pre></details></article>
+<article class="record-card" id="record-science-supplement"><span class="record-label">历史版本验收 · 不能替代当前功能验证</span><h3>science-supplement.json</h3><p>日期：记录未注明日期 · 状态：passed · 记录中的检查条目：4</p><p>Mobile viewport simulation; scale and time schematic.</p><p><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/012-black-hole-lab/notes/science-supplement.json">GitHub 原始记录</a> · <code>SHA-256（UTF-8 / LF）39736e5cf1ed9641c3f59662c72316e2677026b1749677cacae8c816bbc7e27b</code></p><details><summary>展开完整验证记录</summary><pre>{
+  &quot;status&quot;: &quot;passed&quot;,
+  &quot;checks&quot;: [
+    &quot;390px formation, contraction and ray labels rendered without overflow&quot;,
+    &quot;Automatic narrative advances and stops&quot;,
+    &quot;Full collapse playback reaches completion and stops&quot;,
+    &quot;Restart returns to stable star&quot;
+  ],
+  &quot;limitations&quot;: &quot;Mobile viewport simulation; scale and time schematic.&quot;
+}</pre></details></article></section>
+<section class="archive-section" id="sources"><span class="archive-status">来源、源码与发布</span><h2>从参考画面到本项目实现</h2><div class="archive-prose"><p>视觉起点是 <a href="https://www.reddit.com/r/SoloDevelopment/comments/1wr6jr4/my_black_hole_shader_for_my_game/">VOLDR_dev 的 Reddit 黑洞 shader 展示</a>。本项目独立实现；原作公开仓库与 commit 尚未确认。科学资料分散在上面的完整说明中，包括 NASA、Einstein Online、NIST、CERN、ESO、LIGO 和原始论文。</p><ul><li><a href="https://github.com/yydshly/0930_codex_project/tree/main/projects/012-black-hole-lab">本项目完整源码与研究记录</a></li><li><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/012-black-hole-lab/README.md">README：摘要、运行、用途和扩展</a></li><li><a href="https://github.com/yydshly/0930_codex_project/tree/main/projects/012-black-hole-lab/notes">全部原始 notes 与报告</a></li><li><a href="audio/narration/full-course.mp3" download>完整 MiniMax 旁白 MP3 · 约 13:03</a></li><li><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/012-black-hole-lab/notes/narration-script.json">机器可读完整原稿</a> · <a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/012-black-hole-lab/notes/narration-generation.json">实际录音与生成回执</a></li><li><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/012-black-hole-lab/tooling/build-research.py">本档案的可重现生成脚本</a></li></ul><p>公开网页包含完整演示、全部 30 段与合并音频、理解图及本档案。运行网页不需要 API 密钥或现场合成。原始研究和制作工具通过 GitHub 保留，网站不复制私有配置或依赖目录。</p><p><a href="index.html#overview">返回全部入口 →</a> · <a href="index.html#experiment">看黑洞效果 →</a> · <a href="index.html#understanding">看理解总结 →</a> · <a href="index.html#references">看相关链接 →</a> · <a href="#contents">回到本页目录 ↑</a></p></div></section>
+</main><footer><strong>BLACK HOLE LAB · 完整研究档案</strong><p>原说明全文保留，当前科学模型与历史记录分别标注。总览图沿用已生成版本。</p></footer></body></html>

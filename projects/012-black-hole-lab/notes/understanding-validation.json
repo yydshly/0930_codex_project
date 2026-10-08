@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-02",
+  "timezone": "Asia/Shanghai",
+  "status": "passed",
+  "environment": {
+    "browser": "Chromium",
+    "renderer": "SwiftShader software",
+    "mobile": "Viewport simulations at 390px and 320px, not physical devices"
+  },
+  "checks": [
+    {
+      "name": "Summary readable and image loaded at 1280px",
+      "passed": true,
+      "details": {
+        "overflow": false,
+        "imageLoaded": true,
+        "cards": 6,
+        "links": 16,
+        "smallestText": 11
+      }
+    },
+    {
+      "name": "Native PNG download is a complete 1800x2240 image",
+      "passed": true,
+      "details": {
+        "bytes": 2366353
+      }
+    },
+    {
+      "name": "Native SVG download is self-contained and has an accessible description",
+      "passed": true,
+      "details": {
+        "bytes": 392673
+      }
+    },
+    {
+      "name": "Full-size image opens from summary",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/assets/understanding-map.svg"
+    },
+    {
+      "name": "Summary links navigate to the event-horizon demonstration",
+      "passed": true,
+      "details": "04 · 事件视界：未来光路无法通向外部"
+    },
+    {
+      "name": "Summary returns to the full black-hole result",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "No browser runtime errors at 1280px",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Summary readable and image loaded at 390px",
+      "passed": true,
+      "details": {
+        "overflow": false,
+        "imageLoaded": true,
+        "cards": 6,
+        "links": 16,
+        "smallestText": 11
+      }
+    },
+    {
+      "name": "No browser runtime errors at 390px",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Summary readable and image loaded at 320px",
+      "passed": true,
+      "details": {
+        "overflow": false,
+        "imageLoaded": true,
+        "cards": 6,
+        "links": 16,
+        "smallestText": 11
+      }
+    },
+    {
+      "name": "No browser runtime errors at 320px",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Built subpath exposes summary and portable image",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Built asset matches source: index.html",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Built asset matches source: styles.css",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Built asset matches source: assets/understanding-map.svg",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Built asset matches source: assets/understanding-map.png",
+      "passed": true,
+      "details": true
+    }
+  ]
+}

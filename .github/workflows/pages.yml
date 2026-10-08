@@ -82,6 +82,16 @@ jobs:
           node --check projects/009-sprite-destruction-lab/web/toolbox/demo.js
           python projects/009-sprite-destruction-lab/tooling/package-avatar.py --check
           python projects/009-sprite-destruction-lab/tooling/package-toolbox.py --check
+      - name: Validate Black Hole Lab
+        run: |
+          python projects/012-black-hole-lab/tooling/build-research.py --check
+          node --check projects/012-black-hole-lab/web/app.js
+          node --check projects/012-black-hole-lab/web/course.js
+          node --check projects/012-black-hole-lab/web/narration.js
+          node --check projects/012-black-hole-lab/web/physics.js
+          node --check projects/012-black-hole-lab/web/model.js
+          node --check projects/012-black-hole-lab/web/shaders.js
+          node projects/012-black-hole-lab/tooling/verify-model.cjs
       - name: Build all static demos
         run: |
           python scripts/build_site.py

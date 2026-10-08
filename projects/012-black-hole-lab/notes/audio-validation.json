@@ -1,0 +1,2778 @@
+{
+  "date": "2026-10-02T04:09:51.435Z",
+  "url": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/",
+  "environment": {
+    "browser": "Chromium",
+    "renderer": "SwiftShader",
+    "sound": "Actual MP3 metadata and decode, native playback at 16x; human listening is not claimed"
+  },
+  "checks": [
+    {
+      "name": "MiniMax is the recorded provider",
+      "passed": true,
+      "details": {
+        "provider": "MiniMax",
+        "model": "speech-2.8-hd"
+      }
+    },
+    {
+      "name": "All 10 chapters have all three complete narrated segments",
+      "passed": true,
+      "details": {
+        "chapters": 10,
+        "segments": 30
+      }
+    },
+    {
+      "name": "Narration is complete speech, rather than only the short cue captions",
+      "passed": true,
+      "details": {
+        "characters": 3292,
+        "shortest": 98
+      }
+    },
+    {
+      "name": "Every segment supplies local audio, duration and full transcript coverage",
+      "passed": true,
+      "details": [
+        {
+          "id": "stage-0-cue-0",
+          "stage": 0,
+          "cue": 0,
+          "src": "audio/narration/00-00.mp3",
+          "duration": 25.848,
+          "speechLength": 106,
+          "subtitleCount": 3
+        },
+        {
+          "id": "stage-0-cue-1",
+          "stage": 0,
+          "cue": 1,
+          "src": "audio/narration/00-01.mp3",
+          "duration": 24.012,
+          "speechLength": 107,
+          "subtitleCount": 2
+        },
+        {
+          "id": "stage-0-cue-2",
+          "stage": 0,
+          "cue": 2,
+          "src": "audio/narration/00-02.mp3",
+          "duration": 27.288,
+          "speechLength": 117,
+          "subtitleCount": 3
+        },
+        {
+          "id": "stage-1-cue-0",
+          "stage": 1,
+          "cue": 0,
+          "src": "audio/narration/01-00.mp3",
+          "duration": 22.356,
+          "speechLength": 98,
+          "subtitleCount": 1
+        },
+        {
+          "id": "stage-1-cue-1",
+          "stage": 1,
+          "cue": 1,
+          "src": "audio/narration/01-01.mp3",
+          "duration": 24.372,
+          "speechLength": 101,
+          "subtitleCount": 2
+        },
+        {
+          "id": "stage-1-cue-2",
+          "stage": 1,
+          "cue": 2,
+          "src": "audio/narration/01-02.mp3",
+          "duration": 27.9,
+          "speechLength": 114,
+          "subtitleCount": 3
+        },
+        {
+          "id": "stage-2-cue-0",
+          "stage": 2,
+          "cue": 0,
+          "src": "audio/narration/02-00.mp3",
+          "duration": 26.676,
+          "speechLength": 104,
+          "subtitleCount": 3
+        },
+        {
+          "id": "stage-2-cue-1",
+          "stage": 2,
+          "cue": 1,
+          "src": "audio/narration/02-01.mp3",
+          "duration": 24.48,
+          "speechLength": 102,
+          "subtitleCount": 2
+        },
+        {
+          "id": "stage-2-cue-2",
+          "stage": 2,
+          "cue": 2,
+          "src": "audio/narration/02-02.mp3",
+          "duration": 28.728,
+          "speechLength": 117,
+          "subtitleCount": 3
+        },
+        {
+          "id": "stage-3-cue-0",
+          "stage": 3,
+          "cue": 0,
+          "src": "audio/narration/03-00.mp3",
+          "duration": 25.704,
+          "speechLength": 110,
+          "subtitleCount": 2
+        },
+        {
+          "id": "stage-3-cue-1",
+          "stage": 3,
+          "cue": 1,
+          "src": "audio/narration/03-01.mp3",
+          "duration": 26.208,
+          "speechLength": 109,
+          "subtitleCount": 3
+        },
+        {
+          "id": "stage-3-cue-2",
+          "stage": 3,
+          "cue": 2,
+          "src": "audio/narration/03-02.mp3",
+          "duration": 26.1,
+          "speechLength": 114,
+          "subtitleCount": 2
+        },
+        {
+          "id": "stage-4-cue-0",
+          "stage": 4,
+          "cue": 0,
+          "src": "audio/narration/04-00.mp3",
+          "duration": 24.588,
+          "speechLength": 104,
+          "subtitleCount": 2
+        },
+        {
+          "id": "stage-4-cue-1",
+          "stage": 4,
+          "cue": 1,
+          "src": "audio/narration/04-01.mp3",
+          "duration": 22.248,
+          "speechLength": 98,
+          "subtitleCount": 2
+        },
+        {
+          "id": "stage-4-cue-2",
+          "stage": 4,
+          "cue": 2,
+          "src": "audio/narration/04-02.mp3",
+          "duration": 25.668,
+          "speechLength": 112,
+          "subtitleCount": 2
+        },
+        {
+          "id": "stage-5-cue-0",
+          "stage": 5,
+          "cue": 0,
+          "src": "audio/narration/05-00.mp3",
+          "duration": 26.388,
+          "speechLength": 109,
+          "subtitleCount": 3
+        },
+        {
+          "id": "stage-5-cue-1",
+          "stage": 5,
+          "cue": 1,
+          "src": "audio/narration/05-01.mp3",
+          "duration": 24.696,
+          "speechLength": 103,
+          "subtitleCount": 3
+        },
+        {
+          "id": "stage-5-cue-2",
+          "stage": 5,
+          "cue": 2,
+          "src": "audio/narration/05-02.mp3",
+          "duration": 26.172,
+          "speechLength": 107,
+          "subtitleCount": 3
+        },
+        {
+          "id": "stage-6-cue-0",
+          "stage": 6,
+          "cue": 0,
+          "src": "audio/narration/06-00.mp3",
+          "duration": 25.632,
+          "speechLength": 109,
+          "subtitleCount": 2
+        },
+        {
+          "id": "stage-6-cue-1",
+          "stage": 6,
+          "cue": 1,
+          "src": "audio/narration/06-01.mp3",
+          "duration": 27.324,
+          "speechLength": 117,
+          "subtitleCount": 2
+        },
+        {
+          "id": "stage-6-cue-2",
+          "stage": 6,
+          "cue": 2,
+          "src": "audio/narration/06-02.mp3",
+          "duration": 27,
+          "speechLength": 113,
+          "subtitleCount": 2
+        },
+        {
+          "id": "stage-7-cue-0",
+          "stage": 7,
+          "cue": 0,
+          "src": "audio/narration/07-00.mp3",
+          "duration": 24.12,
+          "speechLength": 105,
+          "subtitleCount": 2
+        },
+        {
+          "id": "stage-7-cue-1",
+          "stage": 7,
+          "cue": 1,
+          "src": "audio/narration/07-01.mp3",
+          "duration": 26.568,
+          "speechLength": 111,
+          "subtitleCount": 3
+        },
+        {
+          "id": "stage-7-cue-2",
+          "stage": 7,
+          "cue": 2,
+          "src": "audio/narration/07-02.mp3",
+          "duration": 27.648,
+          "speechLength": 112,
+          "subtitleCount": 3
+        },
+        {
+          "id": "stage-8-cue-0",
+          "stage": 8,
+          "cue": 0,
+          "src": "audio/narration/08-00.mp3",
+          "duration": 23.724,
+          "speechLength": 107,
+          "subtitleCount": 2
+        },
+        {
+          "id": "stage-8-cue-1",
+          "stage": 8,
+          "cue": 1,
+          "src": "audio/narration/08-01.mp3",
+          "duration": 27.684,
+          "speechLength": 115,
+          "subtitleCount": 3
+        },
+        {
+          "id": "stage-8-cue-2",
+          "stage": 8,
+          "cue": 2,
+          "src": "audio/narration/08-02.mp3",
+          "duration": 26.208,
+          "speechLength": 108,
+          "subtitleCount": 2
+        },
+        {
+          "id": "stage-9-cue-0",
+          "stage": 9,
+          "cue": 0,
+          "src": "audio/narration/09-00.mp3",
+          "duration": 28.512,
+          "speechLength": 120,
+          "subtitleCount": 2
+        },
+        {
+          "id": "stage-9-cue-1",
+          "stage": 9,
+          "cue": 1,
+          "src": "audio/narration/09-01.mp3",
+          "duration": 28.404,
+          "speechLength": 116,
+          "subtitleCount": 2
+        },
+        {
+          "id": "stage-9-cue-2",
+          "stage": 9,
+          "cue": 2,
+          "src": "audio/narration/09-02.mp3",
+          "duration": 30.564,
+          "speechLength": 127,
+          "subtitleCount": 3
+        }
+      ]
+    },
+    {
+      "name": "Timed subtitle text covers all narration",
+      "passed": true,
+      "details": [
+        {
+          "id": "stage-0-cue-0",
+          "speech": 106,
+          "subtitles": 106
+        },
+        {
+          "id": "stage-0-cue-1",
+          "speech": 107,
+          "subtitles": 107
+        },
+        {
+          "id": "stage-0-cue-2",
+          "speech": 117,
+          "subtitles": 117
+        },
+        {
+          "id": "stage-1-cue-0",
+          "speech": 98,
+          "subtitles": 98
+        },
+        {
+          "id": "stage-1-cue-1",
+          "speech": 101,
+          "subtitles": 101
+        },
+        {
+          "id": "stage-1-cue-2",
+          "speech": 114,
+          "subtitles": 114
+        },
+        {
+          "id": "stage-2-cue-0",
+          "speech": 104,
+          "subtitles": 104
+        },
+        {
+          "id": "stage-2-cue-1",
+          "speech": 102,
+          "subtitles": 102
+        },
+        {
+          "id": "stage-2-cue-2",
+          "speech": 117,
+          "subtitles": 117
+        },
+        {
+          "id": "stage-3-cue-0",
+          "speech": 110,
+          "subtitles": 110
+        },
+        {
+          "id": "stage-3-cue-1",
+          "speech": 109,
+          "subtitles": 109
+        },
+        {
+          "id": "stage-3-cue-2",
+          "speech": 114,
+          "subtitles": 114
+        },
+        {
+          "id": "stage-4-cue-0",
+          "speech": 104,
+          "subtitles": 104
+        },
+        {
+          "id": "stage-4-cue-1",
+          "speech": 98,
+          "subtitles": 98
+        },
+        {
+          "id": "stage-4-cue-2",
+          "speech": 112,
+          "subtitles": 112
+        },
+        {
+          "id": "stage-5-cue-0",
+          "speech": 109,
+          "subtitles": 109
+        },
+        {
+          "id": "stage-5-cue-1",
+          "speech": 103,
+          "subtitles": 103
+        },
+        {
+          "id": "stage-5-cue-2",
+          "speech": 107,
+          "subtitles": 107
+        },
+        {
+          "id": "stage-6-cue-0",
+          "speech": 109,
+          "subtitles": 109
+        },
+        {
+          "id": "stage-6-cue-1",
+          "speech": 117,
+          "subtitles": 117
+        },
+        {
+          "id": "stage-6-cue-2",
+          "speech": 113,
+          "subtitles": 113
+        },
+        {
+          "id": "stage-7-cue-0",
+          "speech": 105,
+          "subtitles": 105
+        },
+        {
+          "id": "stage-7-cue-1",
+          "speech": 111,
+          "subtitles": 111
+        },
+        {
+          "id": "stage-7-cue-2",
+          "speech": 112,
+          "subtitles": 112
+        },
+        {
+          "id": "stage-8-cue-0",
+          "speech": 107,
+          "subtitles": 107
+        },
+        {
+          "id": "stage-8-cue-1",
+          "speech": 115,
+          "subtitles": 115
+        },
+        {
+          "id": "stage-8-cue-2",
+          "speech": 108,
+          "subtitles": 108
+        },
+        {
+          "id": "stage-9-cue-0",
+          "speech": 120,
+          "subtitles": 120
+        },
+        {
+          "id": "stage-9-cue-1",
+          "speech": 116,
+          "subtitles": 116
+        },
+        {
+          "id": "stage-9-cue-2",
+          "speech": 127,
+          "subtitles": 127
+        }
+      ]
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-0-cue-0",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-00.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-0-cue-0",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\00-00.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-0-cue-0",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-0-cue-0",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-0-cue-0",
+      "passed": true,
+      "details": {
+        "expected": 25.848,
+        "actual": 25.848
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-0-cue-1",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-01.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-0-cue-1",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\00-01.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-0-cue-1",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-0-cue-1",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-0-cue-1",
+      "passed": true,
+      "details": {
+        "expected": 24.012,
+        "actual": 24.012
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-0-cue-2",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-02.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-0-cue-2",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\00-02.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-0-cue-2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-0-cue-2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-0-cue-2",
+      "passed": true,
+      "details": {
+        "expected": 27.288,
+        "actual": 27.288
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-1-cue-0",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/01-00.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-1-cue-0",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\01-00.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-1-cue-0",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-1-cue-0",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-1-cue-0",
+      "passed": true,
+      "details": {
+        "expected": 22.356,
+        "actual": 22.356
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-1-cue-1",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/01-01.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-1-cue-1",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\01-01.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-1-cue-1",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-1-cue-1",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-1-cue-1",
+      "passed": true,
+      "details": {
+        "expected": 24.372,
+        "actual": 24.372
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-1-cue-2",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/01-02.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-1-cue-2",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\01-02.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-1-cue-2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-1-cue-2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-1-cue-2",
+      "passed": true,
+      "details": {
+        "expected": 27.9,
+        "actual": 27.9
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-2-cue-0",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/02-00.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-2-cue-0",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\02-00.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-2-cue-0",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-2-cue-0",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-2-cue-0",
+      "passed": true,
+      "details": {
+        "expected": 26.676,
+        "actual": 26.676
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-2-cue-1",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/02-01.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-2-cue-1",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\02-01.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-2-cue-1",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-2-cue-1",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-2-cue-1",
+      "passed": true,
+      "details": {
+        "expected": 24.48,
+        "actual": 24.48
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-2-cue-2",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/02-02.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-2-cue-2",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\02-02.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-2-cue-2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-2-cue-2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-2-cue-2",
+      "passed": true,
+      "details": {
+        "expected": 28.728,
+        "actual": 28.728
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-3-cue-0",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/03-00.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-3-cue-0",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\03-00.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-3-cue-0",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-3-cue-0",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-3-cue-0",
+      "passed": true,
+      "details": {
+        "expected": 25.704,
+        "actual": 25.704
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-3-cue-1",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/03-01.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-3-cue-1",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\03-01.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-3-cue-1",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-3-cue-1",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-3-cue-1",
+      "passed": true,
+      "details": {
+        "expected": 26.208,
+        "actual": 26.208
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-3-cue-2",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/03-02.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-3-cue-2",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\03-02.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-3-cue-2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-3-cue-2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-3-cue-2",
+      "passed": true,
+      "details": {
+        "expected": 26.1,
+        "actual": 26.1
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-4-cue-0",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/04-00.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-4-cue-0",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\04-00.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-4-cue-0",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-4-cue-0",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-4-cue-0",
+      "passed": true,
+      "details": {
+        "expected": 24.588,
+        "actual": 24.588
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-4-cue-1",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/04-01.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-4-cue-1",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\04-01.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-4-cue-1",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-4-cue-1",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-4-cue-1",
+      "passed": true,
+      "details": {
+        "expected": 22.248,
+        "actual": 22.248
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-4-cue-2",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/04-02.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-4-cue-2",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\04-02.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-4-cue-2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-4-cue-2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-4-cue-2",
+      "passed": true,
+      "details": {
+        "expected": 25.668,
+        "actual": 25.668
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-5-cue-0",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/05-00.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-5-cue-0",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\05-00.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-5-cue-0",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-5-cue-0",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-5-cue-0",
+      "passed": true,
+      "details": {
+        "expected": 26.388,
+        "actual": 26.388
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-5-cue-1",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/05-01.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-5-cue-1",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\05-01.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-5-cue-1",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-5-cue-1",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-5-cue-1",
+      "passed": true,
+      "details": {
+        "expected": 24.696,
+        "actual": 24.696
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-5-cue-2",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/05-02.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-5-cue-2",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\05-02.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-5-cue-2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-5-cue-2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-5-cue-2",
+      "passed": true,
+      "details": {
+        "expected": 26.172,
+        "actual": 26.172
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-6-cue-0",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/06-00.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-6-cue-0",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\06-00.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-6-cue-0",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-6-cue-0",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-6-cue-0",
+      "passed": true,
+      "details": {
+        "expected": 25.632,
+        "actual": 25.632
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-6-cue-1",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/06-01.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-6-cue-1",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\06-01.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-6-cue-1",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-6-cue-1",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-6-cue-1",
+      "passed": true,
+      "details": {
+        "expected": 27.324,
+        "actual": 27.324
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-6-cue-2",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/06-02.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-6-cue-2",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\06-02.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-6-cue-2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-6-cue-2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-6-cue-2",
+      "passed": true,
+      "details": {
+        "expected": 27,
+        "actual": 27
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-7-cue-0",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/07-00.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-7-cue-0",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\07-00.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-7-cue-0",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-7-cue-0",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-7-cue-0",
+      "passed": true,
+      "details": {
+        "expected": 24.12,
+        "actual": 24.12
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-7-cue-1",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/07-01.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-7-cue-1",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\07-01.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-7-cue-1",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-7-cue-1",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-7-cue-1",
+      "passed": true,
+      "details": {
+        "expected": 26.568,
+        "actual": 26.568
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-7-cue-2",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/07-02.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-7-cue-2",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\07-02.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-7-cue-2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-7-cue-2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-7-cue-2",
+      "passed": true,
+      "details": {
+        "expected": 27.648,
+        "actual": 27.648
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-8-cue-0",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/08-00.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-8-cue-0",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\08-00.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-8-cue-0",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-8-cue-0",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-8-cue-0",
+      "passed": true,
+      "details": {
+        "expected": 23.724,
+        "actual": 23.724
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-8-cue-1",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/08-01.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-8-cue-1",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\08-01.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-8-cue-1",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-8-cue-1",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-8-cue-1",
+      "passed": true,
+      "details": {
+        "expected": 27.684,
+        "actual": 27.684
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-8-cue-2",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/08-02.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-8-cue-2",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\08-02.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-8-cue-2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-8-cue-2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-8-cue-2",
+      "passed": true,
+      "details": {
+        "expected": 26.208,
+        "actual": 26.208
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-9-cue-0",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/09-00.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-9-cue-0",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\09-00.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-9-cue-0",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-9-cue-0",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-9-cue-0",
+      "passed": true,
+      "details": {
+        "expected": 28.512,
+        "actual": 28.512
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-9-cue-1",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/09-01.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-9-cue-1",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\09-01.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-9-cue-1",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-9-cue-1",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-9-cue-1",
+      "passed": true,
+      "details": {
+        "expected": 28.404,
+        "actual": 28.404
+      }
+    },
+    {
+      "name": "Audio source remains on the local application origin: stage-9-cue-2",
+      "passed": true,
+      "details": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/09-02.mp3"
+    },
+    {
+      "name": "Audio file stays within this project: stage-9-cue-2",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\09-02.mp3"
+    },
+    {
+      "name": "MP3 has valid metadata: stage-9-cue-2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "MP3 decodes completely: stage-9-cue-2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Recorded duration matches encoded audio: stage-9-cue-2",
+      "passed": true,
+      "details": {
+        "expected": 30.564,
+        "actual": 30.564
+      }
+    },
+    {
+      "name": "The complete narration download is present",
+      "passed": true,
+      "details": "F:\\codex_project\\0930_codex_project\\projects\\012-black-hole-lab\\web\\audio\\narration\\full-course.mp3"
+    },
+    {
+      "name": "Complete-download duration covers the sum of all 30 segments",
+      "passed": true,
+      "details": {
+        "expected": 782.82,
+        "actual": 782.82,
+        "error": ""
+      }
+    },
+    {
+      "name": "The complete narration download decodes to the end",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Chromium can load metadata for all 30 audio assets",
+      "passed": true,
+      "details": [
+        {
+          "id": "stage-0-cue-0",
+          "duration": 25.848
+        },
+        {
+          "id": "stage-0-cue-1",
+          "duration": 24.012
+        },
+        {
+          "id": "stage-0-cue-2",
+          "duration": 27.288
+        },
+        {
+          "id": "stage-1-cue-0",
+          "duration": 22.356
+        },
+        {
+          "id": "stage-1-cue-1",
+          "duration": 24.372
+        },
+        {
+          "id": "stage-1-cue-2",
+          "duration": 27.9
+        },
+        {
+          "id": "stage-2-cue-0",
+          "duration": 26.676
+        },
+        {
+          "id": "stage-2-cue-1",
+          "duration": 24.48
+        },
+        {
+          "id": "stage-2-cue-2",
+          "duration": 28.728
+        },
+        {
+          "id": "stage-3-cue-0",
+          "duration": 25.704
+        },
+        {
+          "id": "stage-3-cue-1",
+          "duration": 26.208
+        },
+        {
+          "id": "stage-3-cue-2",
+          "duration": 26.1
+        },
+        {
+          "id": "stage-4-cue-0",
+          "duration": 24.588
+        },
+        {
+          "id": "stage-4-cue-1",
+          "duration": 22.248
+        },
+        {
+          "id": "stage-4-cue-2",
+          "duration": 25.668
+        },
+        {
+          "id": "stage-5-cue-0",
+          "duration": 26.388
+        },
+        {
+          "id": "stage-5-cue-1",
+          "duration": 24.696
+        },
+        {
+          "id": "stage-5-cue-2",
+          "duration": 26.172
+        },
+        {
+          "id": "stage-6-cue-0",
+          "duration": 25.632
+        },
+        {
+          "id": "stage-6-cue-1",
+          "duration": 27.324
+        },
+        {
+          "id": "stage-6-cue-2",
+          "duration": 27
+        },
+        {
+          "id": "stage-7-cue-0",
+          "duration": 24.12
+        },
+        {
+          "id": "stage-7-cue-1",
+          "duration": 26.568
+        },
+        {
+          "id": "stage-7-cue-2",
+          "duration": 27.648
+        },
+        {
+          "id": "stage-8-cue-0",
+          "duration": 23.724
+        },
+        {
+          "id": "stage-8-cue-1",
+          "duration": 27.684
+        },
+        {
+          "id": "stage-8-cue-2",
+          "duration": 26.208
+        },
+        {
+          "id": "stage-9-cue-0",
+          "duration": 28.512
+        },
+        {
+          "id": "stage-9-cue-1",
+          "duration": 28.404
+        },
+        {
+          "id": "stage-9-cue-2",
+          "duration": 30.564
+        }
+      ]
+    },
+    {
+      "name": "Full lecture starts native recorded audio on the first cue",
+      "passed": true,
+      "details": {
+        "journey": {
+          "stage": 0,
+          "highest": 0,
+          "mode": "science",
+          "comparing": false,
+          "autoExplaining": true,
+          "narrationScope": "full",
+          "playing": false,
+          "elapsed": 0.008004,
+          "cue": 0,
+          "cueTime": 0.008004,
+          "progress": 0,
+          "completed": false,
+          "totalDuration": 782.82,
+          "layers": {
+            "sky": 1,
+            "horizon": 1,
+            "texture": 1,
+            "disk": 1,
+            "lensing": 1,
+            "doppler": 1
+          },
+          "audio": {
+            "status": "playing",
+            "src": "audio/narration/00-00.mp3",
+            "currentTime": 0.014014,
+            "duration": 25.848,
+            "enabled": true,
+            "error": "",
+            "token": 2
+          }
+        }
+      }
+    },
+    {
+      "name": "Browser speech synthesis is never called",
+      "passed": true,
+      "details": 0
+    },
+    {
+      "name": "Pause retains and freezes the current audio position",
+      "passed": true,
+      "details": {
+        "paused": {
+          "currentTime": 0.035248,
+          "paused": true,
+          "src": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-00.mp3"
+        },
+        "frozen": {
+          "currentTime": 0.035248,
+          "paused": true,
+          "src": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-00.mp3"
+        }
+      }
+    },
+    {
+      "name": "Resume continues the same recording instead of restarting",
+      "passed": true,
+      "details": {
+        "paused": {
+          "currentTime": 0.035248,
+          "paused": true,
+          "src": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-00.mp3"
+        },
+        "resumed": {
+          "currentTime": 0.100642,
+          "src": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-00.mp3"
+        }
+      }
+    },
+    {
+      "name": "Manual cue seek replaces old audio and resets its time while paused",
+      "passed": true,
+      "details": {
+        "journey": {
+          "stage": 0,
+          "highest": 0,
+          "mode": "science",
+          "comparing": false,
+          "autoExplaining": true,
+          "narrationScope": "full",
+          "playing": false,
+          "elapsed": 25.848,
+          "cue": 1,
+          "cueTime": 0,
+          "progress": 0,
+          "completed": false,
+          "totalDuration": 782.82,
+          "layers": {
+            "sky": 1,
+            "horizon": 1,
+            "texture": 1,
+            "disk": 1,
+            "lensing": 1,
+            "doppler": 1
+          },
+          "audio": {
+            "status": "loading",
+            "src": "audio/narration/00-01.mp3",
+            "currentTime": 0,
+            "duration": 24.012,
+            "enabled": true,
+            "error": "",
+            "token": 3
+          }
+        },
+        "audio": {
+          "currentTime": 0,
+          "paused": true,
+          "src": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-01.mp3"
+        }
+      }
+    },
+    {
+      "name": "Scrolling to explanations does not cut narration in half",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Even a huge animation tick cannot truncate an unfinished recording",
+      "passed": true,
+      "details": {
+        "before": {
+          "stage": 0,
+          "highest": 0,
+          "mode": "science",
+          "comparing": false,
+          "autoExplaining": true,
+          "narrationScope": "full",
+          "playing": false,
+          "elapsed": 0,
+          "cue": 0,
+          "cueTime": 0,
+          "progress": 0,
+          "completed": false,
+          "totalDuration": 782.82,
+          "layers": {
+            "sky": 1,
+            "horizon": 1,
+            "texture": 1,
+            "disk": 1,
+            "lensing": 1,
+            "doppler": 1
+          },
+          "audio": {
+            "status": "playing",
+            "src": "audio/narration/00-00.mp3",
+            "currentTime": 0,
+            "duration": 25.848,
+            "enabled": true,
+            "error": "",
+            "token": 2
+          }
+        },
+        "after": {
+          "stage": 0,
+          "highest": 0,
+          "mode": "science",
+          "comparing": false,
+          "autoExplaining": true,
+          "narrationScope": "full",
+          "playing": false,
+          "elapsed": 0,
+          "cue": 0,
+          "cueTime": 0,
+          "progress": 0,
+          "completed": false,
+          "totalDuration": 782.82,
+          "layers": {
+            "sky": 1,
+            "horizon": 1,
+            "texture": 1,
+            "disk": 1,
+            "lensing": 1,
+            "doppler": 1
+          },
+          "audio": {
+            "status": "playing",
+            "src": "audio/narration/00-00.mp3",
+            "currentTime": 0,
+            "duration": 25.848,
+            "enabled": true,
+            "error": "",
+            "token": 2
+          }
+        },
+        "currentTime": 0
+      }
+    },
+    {
+      "name": "Audio progress slider seeks inside the same recording without resuming a pause",
+      "passed": true,
+      "details": {
+        "beforeSeek": {
+          "duration": 25.848,
+          "currentTime": 1.441463,
+          "src": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-00.mp3"
+        },
+        "midSeek": {
+          "duration": 25.848,
+          "currentTime": 12.9,
+          "src": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-00.mp3",
+          "paused": true
+        }
+      }
+    },
+    {
+      "name": "A hidden tab pauses recorded narration while retaining its position",
+      "passed": true,
+      "details": {
+        "currentTime": 12.9,
+        "paused": true,
+        "src": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-00.mp3"
+      }
+    },
+    {
+      "name": "Returning to a hidden tab resumes the same sentence rather than repeating it",
+      "passed": true,
+      "details": {
+        "hiddenPause": {
+          "currentTime": 12.9,
+          "paused": true,
+          "src": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-00.mp3"
+        },
+        "hiddenResume": {
+          "currentTime": 12.9,
+          "src": "http://127.0.0.1:62116/projects/012-black-hole-lab/web/audio/narration/00-00.mp3"
+        }
+      }
+    },
+    {
+      "name": "Each selected chapter has its own full recorded explanation",
+      "passed": true,
+      "details": {
+        "yaw": 0.35,
+        "inclination": 10,
+        "distance": 23,
+        "thickness": 0.16,
+        "exposure": 1.25,
+        "speed": 1,
+        "lensing": true,
+        "doppler": true,
+        "disk": true,
+        "orbit": false,
+        "quality": "balanced",
+        "paused": false,
+        "grid": false,
+        "mass": 10,
+        "rateLog": -9,
+        "falseColor": false,
+        "progress": 0.00007701494837417168,
+        "support": 1,
+        "heat": 1,
+        "dopplerStrength": 1,
+        "lensStrength": 1,
+        "journey": {
+          "stage": 3,
+          "highest": 3,
+          "mode": "science",
+          "comparing": false,
+          "autoExplaining": true,
+          "narrationScope": "chapter",
+          "playing": true,
+          "elapsed": 0.003998,
+          "cue": 0,
+          "cueTime": 0.003998,
+          "progress": 0.00007701494837417168,
+          "completed": false,
+          "totalDuration": 782.82,
+          "layers": {
+            "sky": 1,
+            "horizon": 1,
+            "texture": 1,
+            "disk": 1,
+            "lensing": 1,
+            "doppler": 1
+          },
+          "audio": {
+            "status": "playing",
+            "src": "audio/narration/03-00.mp3",
+            "currentTime": 0.015594,
+            "duration": 25.704,
+            "enabled": true,
+            "error": "",
+            "token": 10
+          }
+        },
+        "clock": 0.13329999999999928,
+        "flowClock": 0.13329999999999928,
+        "renderCount": 9,
+        "units": {
+          "mass": 10,
+          "rate": 1e-9,
+          "rs": 29533.393820668785,
+          "rsKm": 29.533393820668785,
+          "timeUnit": 0.00009851279787922078,
+          "temperatureScale": 9092166.033592287,
+          "peakTemperature": 1945950.2026094769,
+          "photonSphere": 1.5,
+          "isco": 3,
+          "criticalImpact": 2.598076211353316
+        },
+        "raySteps": 900,
+        "model": {
+          "stage": 3,
+          "elapsed": 0.003998,
+          "progress": 0.00007701494837417168,
+          "support": 1,
+          "heat": 1,
+          "mass": 10,
+          "rate": 1e-9,
+          "comparing": false
+        },
+        "width": 644,
+        "height": 678,
+        "failure": null
+      }
+    },
+    {
+      "name": "Full lecture plays all 30 actual MP3 segments in order",
+      "passed": true,
+      "details": {
+        "played": [
+          "0/0",
+          "0/1",
+          "0/2",
+          "1/0",
+          "1/1",
+          "1/2",
+          "2/0",
+          "2/1",
+          "2/2",
+          "3/0",
+          "3/1",
+          "3/2",
+          "4/0",
+          "4/1",
+          "4/2",
+          "5/0",
+          "5/1",
+          "5/2",
+          "6/0",
+          "6/1",
+          "6/2",
+          "7/0",
+          "7/1",
+          "7/2",
+          "8/0",
+          "8/1",
+          "8/2",
+          "9/0",
+          "9/1",
+          "9/2"
+        ],
+        "ended": [
+          "0/0",
+          "0/1",
+          "0/2",
+          "1/0",
+          "1/1",
+          "1/2",
+          "2/0",
+          "2/1",
+          "2/2",
+          "3/0",
+          "3/1",
+          "3/2",
+          "4/0",
+          "4/1",
+          "4/2",
+          "5/0",
+          "5/1",
+          "5/2",
+          "6/0",
+          "6/1",
+          "6/2",
+          "7/0",
+          "7/1",
+          "7/2",
+          "8/0",
+          "8/1",
+          "8/2",
+          "9/0",
+          "9/1",
+          "9/2"
+        ]
+      }
+    },
+    {
+      "name": "All 30 segments reach their native ended event before completion",
+      "passed": true,
+      "details": {
+        "played": [
+          "0/0",
+          "0/1",
+          "0/2",
+          "1/0",
+          "1/1",
+          "1/2",
+          "2/0",
+          "2/1",
+          "2/2",
+          "3/0",
+          "3/1",
+          "3/2",
+          "4/0",
+          "4/1",
+          "4/2",
+          "5/0",
+          "5/1",
+          "5/2",
+          "6/0",
+          "6/1",
+          "6/2",
+          "7/0",
+          "7/1",
+          "7/2",
+          "8/0",
+          "8/1",
+          "8/2",
+          "9/0",
+          "9/1",
+          "9/2"
+        ],
+        "ended": [
+          "0/0",
+          "0/1",
+          "0/2",
+          "1/0",
+          "1/1",
+          "1/2",
+          "2/0",
+          "2/1",
+          "2/2",
+          "3/0",
+          "3/1",
+          "3/2",
+          "4/0",
+          "4/1",
+          "4/2",
+          "5/0",
+          "5/1",
+          "5/2",
+          "6/0",
+          "6/1",
+          "6/2",
+          "7/0",
+          "7/1",
+          "7/2",
+          "8/0",
+          "8/1",
+          "8/2",
+          "9/0",
+          "9/1",
+          "9/2"
+        ]
+      }
+    },
+    {
+      "name": "The final cue remains visible and the completed lecture pauses",
+      "passed": true,
+      "details": {
+        "stage": 9,
+        "highest": 9,
+        "mode": "science",
+        "comparing": false,
+        "autoExplaining": false,
+        "narrationScope": "full",
+        "playing": false,
+        "elapsed": 87.47999999999999,
+        "cue": 2,
+        "cueTime": 30.564,
+        "progress": 0,
+        "completed": true,
+        "totalDuration": 782.82,
+        "layers": {
+          "sky": 1,
+          "horizon": 1,
+          "texture": 1,
+          "disk": 1,
+          "lensing": 1,
+          "doppler": 1
+        },
+        "audio": {
+          "status": "ended",
+          "src": "audio/narration/09-02.mp3",
+          "currentTime": 30.564,
+          "duration": 30.564,
+          "enabled": true,
+          "error": "",
+          "token": 31
+        }
+      }
+    },
+    {
+      "name": "Narration remains complete even when WebGL is unavailable",
+      "passed": true,
+      "details": {
+        "failure": "此设备没有可用的 WebGL 2 上下文。",
+        "played": 30
+      }
+    },
+    {
+      "name": "Missing audio is explicit and freezes its current cue",
+      "passed": true,
+      "details": {
+        "stage": 0,
+        "highest": 0,
+        "mode": "science",
+        "comparing": false,
+        "autoExplaining": true,
+        "narrationScope": "full",
+        "playing": false,
+        "elapsed": 0,
+        "cue": 0,
+        "cueTime": 0,
+        "progress": 0,
+        "completed": false,
+        "totalDuration": 782.82,
+        "layers": {
+          "sky": 1,
+          "horizon": 1,
+          "texture": 1,
+          "disk": 1,
+          "lensing": 1,
+          "doppler": 1
+        },
+        "audio": {
+          "status": "error",
+          "src": "audio/narration/00-00.mp3",
+          "currentTime": 0,
+          "duration": 25.848,
+          "enabled": true,
+          "error": "音频文件不可用，请重试",
+          "token": 2
+        }
+      }
+    },
+    {
+      "name": "Retry recovers recorded audio at the same cue",
+      "passed": true,
+      "details": {
+        "stage": 0,
+        "highest": 0,
+        "mode": "science",
+        "comparing": false,
+        "autoExplaining": true,
+        "narrationScope": "full",
+        "playing": false,
+        "elapsed": 0,
+        "cue": 0,
+        "cueTime": 0,
+        "progress": 0,
+        "completed": false,
+        "totalDuration": 782.82,
+        "layers": {
+          "sky": 1,
+          "horizon": 1,
+          "texture": 1,
+          "disk": 1,
+          "lensing": 1,
+          "doppler": 1
+        },
+        "audio": {
+          "status": "playing",
+          "src": "audio/narration/00-00.mp3",
+          "currentTime": 0.019012,
+          "duration": 25.848,
+          "enabled": true,
+          "error": "",
+          "token": 3
+        }
+      }
+    },
+    {
+      "name": "Disabling audio pauses the recording and selects a visible subtitle track",
+      "passed": true,
+      "details": {
+        "stage": 0,
+        "highest": 0,
+        "mode": "science",
+        "comparing": false,
+        "autoExplaining": true,
+        "narrationScope": "full",
+        "playing": false,
+        "elapsed": 0.019012,
+        "cue": 0,
+        "cueTime": 0.019012,
+        "progress": 0,
+        "completed": false,
+        "totalDuration": 782.82,
+        "layers": {
+          "sky": 1,
+          "horizon": 1,
+          "texture": 1,
+          "disk": 1,
+          "lensing": 1,
+          "doppler": 1
+        },
+        "audio": {
+          "status": "muted",
+          "src": "audio/narration/00-00.mp3",
+          "currentTime": 0.019012,
+          "duration": 25.848,
+          "enabled": false,
+          "error": "",
+          "token": 3
+        }
+      }
+    },
+    {
+      "name": "No unexpected page JavaScript exceptions",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "manifest": [
+    {
+      "id": "stage-0-cue-0",
+      "stage": 0,
+      "cue": 0,
+      "src": "audio/narration/00-00.mp3",
+      "duration": 25.848,
+      "speechLength": 106,
+      "subtitleCount": 3
+    },
+    {
+      "id": "stage-0-cue-1",
+      "stage": 0,
+      "cue": 1,
+      "src": "audio/narration/00-01.mp3",
+      "duration": 24.012,
+      "speechLength": 107,
+      "subtitleCount": 2
+    },
+    {
+      "id": "stage-0-cue-2",
+      "stage": 0,
+      "cue": 2,
+      "src": "audio/narration/00-02.mp3",
+      "duration": 27.288,
+      "speechLength": 117,
+      "subtitleCount": 3
+    },
+    {
+      "id": "stage-1-cue-0",
+      "stage": 1,
+      "cue": 0,
+      "src": "audio/narration/01-00.mp3",
+      "duration": 22.356,
+      "speechLength": 98,
+      "subtitleCount": 1
+    },
+    {
+      "id": "stage-1-cue-1",
+      "stage": 1,
+      "cue": 1,
+      "src": "audio/narration/01-01.mp3",
+      "duration": 24.372,
+      "speechLength": 101,
+      "subtitleCount": 2
+    },
+    {
+      "id": "stage-1-cue-2",
+      "stage": 1,
+      "cue": 2,
+      "src": "audio/narration/01-02.mp3",
+      "duration": 27.9,
+      "speechLength": 114,
+      "subtitleCount": 3
+    },
+    {
+      "id": "stage-2-cue-0",
+      "stage": 2,
+      "cue": 0,
+      "src": "audio/narration/02-00.mp3",
+      "duration": 26.676,
+      "speechLength": 104,
+      "subtitleCount": 3
+    },
+    {
+      "id": "stage-2-cue-1",
+      "stage": 2,
+      "cue": 1,
+      "src": "audio/narration/02-01.mp3",
+      "duration": 24.48,
+      "speechLength": 102,
+      "subtitleCount": 2
+    },
+    {
+      "id": "stage-2-cue-2",
+      "stage": 2,
+      "cue": 2,
+      "src": "audio/narration/02-02.mp3",
+      "duration": 28.728,
+      "speechLength": 117,
+      "subtitleCount": 3
+    },
+    {
+      "id": "stage-3-cue-0",
+      "stage": 3,
+      "cue": 0,
+      "src": "audio/narration/03-00.mp3",
+      "duration": 25.704,
+      "speechLength": 110,
+      "subtitleCount": 2
+    },
+    {
+      "id": "stage-3-cue-1",
+      "stage": 3,
+      "cue": 1,
+      "src": "audio/narration/03-01.mp3",
+      "duration": 26.208,
+      "speechLength": 109,
+      "subtitleCount": 3
+    },
+    {
+      "id": "stage-3-cue-2",
+      "stage": 3,
+      "cue": 2,
+      "src": "audio/narration/03-02.mp3",
+      "duration": 26.1,
+      "speechLength": 114,
+      "subtitleCount": 2
+    },
+    {
+      "id": "stage-4-cue-0",
+      "stage": 4,
+      "cue": 0,
+      "src": "audio/narration/04-00.mp3",
+      "duration": 24.588,
+      "speechLength": 104,
+      "subtitleCount": 2
+    },
+    {
+      "id": "stage-4-cue-1",
+      "stage": 4,
+      "cue": 1,
+      "src": "audio/narration/04-01.mp3",
+      "duration": 22.248,
+      "speechLength": 98,
+      "subtitleCount": 2
+    },
+    {
+      "id": "stage-4-cue-2",
+      "stage": 4,
+      "cue": 2,
+      "src": "audio/narration/04-02.mp3",
+      "duration": 25.668,
+      "speechLength": 112,
+      "subtitleCount": 2
+    },
+    {
+      "id": "stage-5-cue-0",
+      "stage": 5,
+      "cue": 0,
+      "src": "audio/narration/05-00.mp3",
+      "duration": 26.388,
+      "speechLength": 109,
+      "subtitleCount": 3
+    },
+    {
+      "id": "stage-5-cue-1",
+      "stage": 5,
+      "cue": 1,
+      "src": "audio/narration/05-01.mp3",
+      "duration": 24.696,
+      "speechLength": 103,
+      "subtitleCount": 3
+    },
+    {
+      "id": "stage-5-cue-2",
+      "stage": 5,
+      "cue": 2,
+      "src": "audio/narration/05-02.mp3",
+      "duration": 26.172,
+      "speechLength": 107,
+      "subtitleCount": 3
+    },
+    {
+      "id": "stage-6-cue-0",
+      "stage": 6,
+      "cue": 0,
+      "src": "audio/narration/06-00.mp3",
+      "duration": 25.632,
+      "speechLength": 109,
+      "subtitleCount": 2
+    },
+    {
+      "id": "stage-6-cue-1",
+      "stage": 6,
+      "cue": 1,
+      "src": "audio/narration/06-01.mp3",
+      "duration": 27.324,
+      "speechLength": 117,
+      "subtitleCount": 2
+    },
+    {
+      "id": "stage-6-cue-2",
+      "stage": 6,
+      "cue": 2,
+      "src": "audio/narration/06-02.mp3",
+      "duration": 27,
+      "speechLength": 113,
+      "subtitleCount": 2
+    },
+    {
+      "id": "stage-7-cue-0",
+      "stage": 7,
+      "cue": 0,
+      "src": "audio/narration/07-00.mp3",
+      "duration": 24.12,
+      "speechLength": 105,
+      "subtitleCount": 2
+    },
+    {
+      "id": "stage-7-cue-1",
+      "stage": 7,
+      "cue": 1,
+      "src": "audio/narration/07-01.mp3",
+      "duration": 26.568,
+      "speechLength": 111,
+      "subtitleCount": 3
+    },
+    {
+      "id": "stage-7-cue-2",
+      "stage": 7,
+      "cue": 2,
+      "src": "audio/narration/07-02.mp3",
+      "duration": 27.648,
+      "speechLength": 112,
+      "subtitleCount": 3
+    },
+    {
+      "id": "stage-8-cue-0",
+      "stage": 8,
+      "cue": 0,
+      "src": "audio/narration/08-00.mp3",
+      "duration": 23.724,
+      "speechLength": 107,
+      "subtitleCount": 2
+    },
+    {
+      "id": "stage-8-cue-1",
+      "stage": 8,
+      "cue": 1,
+      "src": "audio/narration/08-01.mp3",
+      "duration": 27.684,
+      "speechLength": 115,
+      "subtitleCount": 3
+    },
+    {
+      "id": "stage-8-cue-2",
+      "stage": 8,
+      "cue": 2,
+      "src": "audio/narration/08-02.mp3",
+      "duration": 26.208,
+      "speechLength": 108,
+      "subtitleCount": 2
+    },
+    {
+      "id": "stage-9-cue-0",
+      "stage": 9,
+      "cue": 0,
+      "src": "audio/narration/09-00.mp3",
+      "duration": 28.512,
+      "speechLength": 120,
+      "subtitleCount": 2
+    },
+    {
+      "id": "stage-9-cue-1",
+      "stage": 9,
+      "cue": 1,
+      "src": "audio/narration/09-01.mp3",
+      "duration": 28.404,
+      "speechLength": 116,
+      "subtitleCount": 2
+    },
+    {
+      "id": "stage-9-cue-2",
+      "stage": 9,
+      "cue": 2,
+      "src": "audio/narration/09-02.mp3",
+      "duration": 30.564,
+      "speechLength": 127,
+      "subtitleCount": 3
+    }
+  ],
+  "audioData": [
+    {
+      "id": "stage-0-cue-0",
+      "bytes": 415284,
+      "duration": 25.848,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-0-cue-1",
+      "bytes": 385908,
+      "duration": 24.012,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-0-cue-2",
+      "bytes": 438324,
+      "duration": 27.288,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-1-cue-0",
+      "bytes": 359412,
+      "duration": 22.356,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-1-cue-1",
+      "bytes": 391668,
+      "duration": 24.372,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-1-cue-2",
+      "bytes": 448116,
+      "duration": 27.9,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-2-cue-0",
+      "bytes": 428532,
+      "duration": 26.676,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-2-cue-1",
+      "bytes": 393396,
+      "duration": 24.48,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-2-cue-2",
+      "bytes": 461364,
+      "duration": 28.728,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-3-cue-0",
+      "bytes": 412980,
+      "duration": 25.704,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-3-cue-1",
+      "bytes": 421044,
+      "duration": 26.208,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-3-cue-2",
+      "bytes": 419316,
+      "duration": 26.1,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-4-cue-0",
+      "bytes": 395124,
+      "duration": 24.588,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-4-cue-1",
+      "bytes": 357684,
+      "duration": 22.248,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-4-cue-2",
+      "bytes": 412404,
+      "duration": 25.668,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-5-cue-0",
+      "bytes": 423924,
+      "duration": 26.388,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-5-cue-1",
+      "bytes": 396852,
+      "duration": 24.696,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-5-cue-2",
+      "bytes": 420468,
+      "duration": 26.172,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-6-cue-0",
+      "bytes": 411828,
+      "duration": 25.632,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-6-cue-1",
+      "bytes": 438900,
+      "duration": 27.324,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-6-cue-2",
+      "bytes": 433716,
+      "duration": 27,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-7-cue-0",
+      "bytes": 387636,
+      "duration": 24.12,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-7-cue-1",
+      "bytes": 426804,
+      "duration": 26.568,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-7-cue-2",
+      "bytes": 444084,
+      "duration": 27.648,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-8-cue-0",
+      "bytes": 381300,
+      "duration": 23.724,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-8-cue-1",
+      "bytes": 444660,
+      "duration": 27.684,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-8-cue-2",
+      "bytes": 421044,
+      "duration": 26.208,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-9-cue-0",
+      "bytes": 457908,
+      "duration": 28.512,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-9-cue-1",
+      "bytes": 456180,
+      "duration": 28.404,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "id": "stage-9-cue-2",
+      "bytes": 490740,
+      "duration": 30.564,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "32000",
+          "channels": 1
+        }
+      ]
+    }
+  ],
+  "totalDuration": 782.82,
+  "timeline": {
+    "played": [
+      "0/0",
+      "0/1",
+      "0/2",
+      "1/0",
+      "1/1",
+      "1/2",
+      "2/0",
+      "2/1",
+      "2/2",
+      "3/0",
+      "3/1",
+      "3/2",
+      "4/0",
+      "4/1",
+      "4/2",
+      "5/0",
+      "5/1",
+      "5/2",
+      "6/0",
+      "6/1",
+      "6/2",
+      "7/0",
+      "7/1",
+      "7/2",
+      "8/0",
+      "8/1",
+      "8/2",
+      "9/0",
+      "9/1",
+      "9/2"
+    ],
+    "ended": [
+      "0/0",
+      "0/1",
+      "0/2",
+      "1/0",
+      "1/1",
+      "1/2",
+      "2/0",
+      "2/1",
+      "2/2",
+      "3/0",
+      "3/1",
+      "3/2",
+      "4/0",
+      "4/1",
+      "4/2",
+      "5/0",
+      "5/1",
+      "5/2",
+      "6/0",
+      "6/1",
+      "6/2",
+      "7/0",
+      "7/1",
+      "7/2",
+      "8/0",
+      "8/1",
+      "8/2",
+      "9/0",
+      "9/1",
+      "9/2"
+    ]
+  },
+  "status": "passed",
+  "count": 178,
+  "failed": 0
+}

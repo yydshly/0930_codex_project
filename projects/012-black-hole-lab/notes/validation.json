@@ -1,0 +1,614 @@
+{
+  "date": "2026-10-02",
+  "timezone": "Asia/Shanghai",
+  "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/",
+  "environment": {
+    "browser": "Chromium",
+    "renderer": "SwiftShader software",
+    "mobile": "390px viewport simulation; not physical device",
+    "voice": "Audible Chinese speech cannot be verified in headless Chromium; fallback and synchronized subtitles are checked."
+  },
+  "checks": [
+    {
+      "name": "Shaders compile and first observer image renders",
+      "passed": true,
+      "details": {
+        "failure": null,
+        "mean": 69.66566369232811,
+        "lit": 3064
+      }
+    },
+    {
+      "name": "Opening shows the actual result and remains paused",
+      "passed": true,
+      "details": {
+        "stage": 0,
+        "paused": true
+      }
+    },
+    {
+      "name": "Opening explains the shadow, external emission and bent image",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Advanced parameters are hidden during explanation",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Three distinct subtitle cues match the opening explanation",
+      "passed": true,
+      "details": {
+        "first": "黑洞是光无法逃向遥远外部的区域；画面暗区不等于视界本身。",
+        "second": "发光的是视界外的热气体。黑洞没有燃烧表面，也不必带亮盘。",
+        "third": "背面盘的光被弯曲时空改变方向；弯的是所见影像。"
+      }
+    },
+    {
+      "name": "Subtitle previous button seeks backward",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Play explanation restarts at cue zero with active timeline",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Pause freezes narration time and picture time",
+      "passed": true,
+      "details": {
+        "cueTime": 0.06669999999999981,
+        "flowClock": 0.06669999999999981
+      }
+    },
+    {
+      "name": "Manual cue seek works while paused",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Narration advances to the next scientific chapter",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Manual chapter choice seeks the active full lecture to the selected chapter",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Equilibrium chapter uses a labelled mechanism diagram",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Support control changes the actual equilibrium diagram",
+      "passed": true,
+      "details": {
+        "pixelDifference": 1.0120442708333333
+      }
+    },
+    {
+      "name": "Free-fall seek changes the displayed boundary and signal",
+      "passed": true,
+      "details": {
+        "pixelDifference": 29.858072916666668
+      }
+    },
+    {
+      "name": "Free-fall scope distinguishes a fixed exterior from full stellar collapse",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Chapter replay advances and global pause freezes physical progress",
+      "passed": true,
+      "details": {
+        "progress": 0.008668515950069348
+      }
+    },
+    {
+      "name": "Causal light diagram is calculated in horizon-crossing coordinates",
+      "passed": true,
+      "details": {
+        "bluePixels": 372
+      }
+    },
+    {
+      "name": "Gas settlement slider changes the particle distribution",
+      "passed": true,
+      "details": {
+        "pixelDifference": 1.1009114583333333,
+        "initialBlueSpread": 0.22249138056313125,
+        "settledBlueSpread": 0.20425632945515876
+      }
+    },
+    {
+      "name": "Zero-angular-momentum comparison changes the gas trajectories",
+      "passed": true,
+      "details": {
+        "pixelDifference": 3.2799479166666665
+      }
+    },
+    {
+      "name": "Supply-rate slider changes the plotted temperature and physical temperature",
+      "passed": true,
+      "details": {
+        "pixelDifference": 6.117513020833333,
+        "cool": 615363.485351208,
+        "hot": 6153634.853512079
+      }
+    },
+    {
+      "name": "Lensing chapter connects observer image to a calculated ray inset",
+      "passed": true,
+      "details": {
+        "lit": 3102
+      }
+    },
+    {
+      "name": "Ray inset has rendered lines rather than an empty canvas",
+      "passed": true,
+      "details": {
+        "width": 328,
+        "height": 218,
+        "nonempty": 5002
+      }
+    },
+    {
+      "name": "Nonphysical straight-ray comparison visibly removes lensing",
+      "passed": true,
+      "details": {
+        "difference": 22.105794270833332,
+        "curvedUpper": 468,
+        "straightUpper": 0
+      }
+    },
+    {
+      "name": "Releasing the comparison restores the physical model",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Discrete light-path toggle selects explicit straight comparison",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Frequency comparison changes rendered intensity while preserving lensing",
+      "passed": true,
+      "details": {
+        "difference": 1.0266927083333333
+      }
+    },
+    {
+      "name": "Frequency explanation uses combined g and spectrum rather than a D-cubed shortcut",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Final chapter connects causes and distinguishes their simultaneity",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Free exploration becomes an explicit mode with controls",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Mass input recalculates physical radius and time scales",
+      "passed": true,
+      "details": {
+        "before": {
+          "mass": 10,
+          "rate": 1e-9,
+          "rs": 29533.393820668785,
+          "rsKm": 29.533393820668785,
+          "timeUnit": 0.00009851279787922078,
+          "temperatureScale": 9092166.033592287,
+          "peakTemperature": 1945950.2026094769,
+          "photonSphere": 1.5,
+          "isco": 3,
+          "criticalImpact": 2.598076211353316
+        },
+        "after": {
+          "mass": 20,
+          "rate": 1e-9,
+          "rs": 59066.78764133757,
+          "rsKm": 59.06678764133757,
+          "timeUnit": 0.00019702559575844155,
+          "temperatureScale": 6429132.258027101,
+          "peakTemperature": 1375994.584116497,
+          "photonSphere": 1.5,
+          "isco": 3,
+          "criticalImpact": 2.598076211353316
+        }
+      }
+    },
+    {
+      "name": "Fixed supply rate gives the correct mass-temperature scaling",
+      "passed": true,
+      "details": {
+        "before": 1945950.2026094769,
+        "after": 1375994.584116497
+      }
+    },
+    {
+      "name": "Supply input recalculates physical temperature and rendered radiation",
+      "passed": true,
+      "details": {
+        "temperatureRatio": 1.7782794100389228,
+        "pixelDifference": 4.627278645833333
+      }
+    },
+    {
+      "name": "Visible spectrum and false-color map produce explicitly different images",
+      "passed": true,
+      "details": {
+        "pixelDifference": 8.6806640625
+      }
+    },
+    {
+      "name": "Returning to visible band changes the interpretation label",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Quality changes resolution while retaining a sufficient ray budget",
+      "passed": true,
+      "details": {
+        "low": [
+          420,
+          325,
+          900
+        ],
+        "high": [
+          1007,
+          780,
+          980
+        ]
+      }
+    },
+    {
+      "name": "Both quality modes preserve illuminated disk and background",
+      "passed": true,
+      "details": {
+        "lowMean": 69.48335269066953,
+        "highMean": 69.71446886447288,
+        "lowLit": 1350,
+        "highLit": 7775
+      }
+    },
+    {
+      "name": "Removing external gas removes its luminous emission",
+      "passed": true,
+      "details": {
+        "withDisk": 1350,
+        "withoutDisk": 172
+      }
+    },
+    {
+      "name": "Observer camera can be rotated directly",
+      "passed": true,
+      "details": {
+        "before": 10,
+        "after": 14.881600494384763
+      }
+    },
+    {
+      "name": "Keyboard camera controls remain usable",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Observer export is a nonempty PNG at current rendering dimensions",
+      "passed": true,
+      "details": {
+        "bytes": 122228,
+        "width": 420,
+        "height": 325
+      }
+    },
+    {
+      "name": "Mobile observer image remains visible",
+      "passed": true,
+      "details": {
+        "size": [
+          171,
+          259
+        ],
+        "lit": 354
+      }
+    },
+    {
+      "name": "Mobile page has no horizontal overflow",
+      "passed": true,
+      "details": {
+        "page": 390,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "Mobile calculation chapter and slider remain functional",
+      "passed": true,
+      "details": {
+        "mean": 31.833048878774658,
+        "progress": 0.95
+      }
+    },
+    {
+      "name": "Restart returns to paused overview without leaving narration running",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "All loaded local assets return successful HTTP responses including audio ranges",
+      "passed": true,
+      "details": [
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/styles.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/assets/understanding-map.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/shaders.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/physics.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/narration.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/course.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/model.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/app.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/assets/understanding-map.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/00-00.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/00-01.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/00-02.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/01-00.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/00-00.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/01-01.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/02-00.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/02-01.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/03-01.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/03-00.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/04-01.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/04-00.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/05-00.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/05-01.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/06-00.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/06-01.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/07-00.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/07-01.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/08-00.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/08-01.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/09-00.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/09-01.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/03-01.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/03-00.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/00-01.mp3",
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:62117/projects/012-black-hole-lab/audio/narration/00-00.mp3",
+          "status": 206
+        }
+      ]
+    },
+    {
+      "name": "No unexpected browser or shader errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Missing WebGL produces an explicit observer-image error",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Recorded MiniMax narration works without browser Chinese speech voices",
+      "passed": true,
+      "details": {
+        "status": "MiniMax 高品质旁白 · 全程 13:03"
+      }
+    },
+    {
+      "name": "Missing WebGL preserves the calculated formation diagrams",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Calculated diagram remains exportable without WebGL",
+      "passed": true,
+      "details": true
+    }
+  ],
+  "finalState": {
+    "yaw": 0.35,
+    "inclination": 10,
+    "distance": 23,
+    "thickness": 0.16,
+    "exposure": 1.25,
+    "speed": 1,
+    "lensing": true,
+    "doppler": true,
+    "disk": true,
+    "orbit": false,
+    "quality": "balanced",
+    "paused": true,
+    "grid": false,
+    "mass": 10,
+    "rateLog": -9,
+    "falseColor": false,
+    "progress": 0,
+    "support": 1,
+    "heat": 1,
+    "dopplerStrength": 1,
+    "lensStrength": 1,
+    "journey": {
+      "stage": 0,
+      "highest": 0,
+      "mode": "science",
+      "comparing": false,
+      "autoExplaining": false,
+      "narrationScope": "chapter",
+      "playing": false,
+      "elapsed": 0,
+      "cue": 0,
+      "cueTime": 0,
+      "progress": 0,
+      "completed": false,
+      "totalDuration": 782.82,
+      "layers": {
+        "sky": 1,
+        "horizon": 1,
+        "texture": 1,
+        "disk": 1,
+        "lensing": 1,
+        "doppler": 1
+      },
+      "audio": {
+        "status": "ready",
+        "src": "audio/narration/00-00.mp3",
+        "currentTime": 0,
+        "duration": 25.848,
+        "enabled": false,
+        "error": "",
+        "token": 41
+      }
+    },
+    "clock": 0,
+    "flowClock": 0,
+    "renderCount": 174,
+    "units": {
+      "mass": 10,
+      "rate": 1e-9,
+      "rs": 29533.393820668785,
+      "rsKm": 29.533393820668785,
+      "timeUnit": 0.00009851279787922078,
+      "temperatureScale": 9092166.033592287,
+      "peakTemperature": 1945950.2026094769,
+      "photonSphere": 1.5,
+      "isco": 3,
+      "criticalImpact": 2.598076211353316
+    },
+    "raySteps": 900,
+    "model": {
+      "stage": 0,
+      "elapsed": 0,
+      "progress": 0,
+      "support": 1,
+      "heat": 1,
+      "mass": 10,
+      "rate": 1e-9,
+      "comparing": false
+    },
+    "width": 256,
+    "height": 389,
+    "failure": null
+  },
+  "failed": 0,
+  "status": "passed",
+  "screenshots": "D:\\codex\\home\\worktrees\\black-hole-publication\\0930_codex_project\\.tmp\\black-hole-science-review",
+  "count": 50,
+  "errors": []
+}

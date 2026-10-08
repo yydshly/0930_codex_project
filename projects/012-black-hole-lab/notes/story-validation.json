@@ -1,0 +1,215 @@
+{
+  "date": "2026-10-02T04:08:32.462Z",
+  "status": "passed",
+  "checks": [
+    "Scrolling to explanatory text preserves the complete narration",
+    "Returning to scene can resume the same cue",
+    "Selecting a new chapter restores the explanation heading",
+    "Full deterministic guided controller visits all 30 cues and all 10 chapters",
+    "Calculated contraction progress remains monotonic across cue boundaries",
+    "Finished tour pauses at the final result"
+  ],
+  "courseResult": {
+    "transitions": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "cues": 30,
+    "second": 798,
+    "backwards": false,
+    "final": {
+      "stage": 9,
+      "highest": 9,
+      "mode": "science",
+      "comparing": false,
+      "autoExplaining": false,
+      "narrationScope": "full",
+      "playing": false,
+      "elapsed": 89,
+      "cue": 2,
+      "cueTime": 31,
+      "progress": 0,
+      "completed": true,
+      "totalDuration": 782.82,
+      "layers": {
+        "sky": 1,
+        "horizon": 1,
+        "texture": 1,
+        "disk": 1,
+        "lensing": 1,
+        "doppler": 1
+      },
+      "audio": {
+        "status": "ended",
+        "src": "audio/narration/09-02.mp3",
+        "currentTime": 0,
+        "duration": 30.564,
+        "enabled": false,
+        "error": "",
+        "token": 31
+      }
+    },
+    "paused": true,
+    "history": [
+      {
+        "stage": 0,
+        "cue": 0,
+        "title": "中心为什么暗？"
+      },
+      {
+        "stage": 0,
+        "cue": 1,
+        "title": "亮的是什么？"
+      },
+      {
+        "stage": 0,
+        "cue": 2,
+        "title": "上下的弧是什么？"
+      },
+      {
+        "stage": 1,
+        "cue": 0,
+        "title": "先从大质量恒星开始"
+      },
+      {
+        "stage": 1,
+        "cue": 1,
+        "title": "橙色箭头代表压力支撑"
+      },
+      {
+        "stage": 1,
+        "cue": 2,
+        "title": "稳定来自近似平衡"
+      },
+      {
+        "stage": 2,
+        "cue": 0,
+        "title": "支撑为什么变弱？"
+      },
+      {
+        "stage": 2,
+        "cue": 1,
+        "title": "引力开始占上风"
+      },
+      {
+        "stage": 2,
+        "cue": 2,
+        "title": "收缩以后一定成黑洞吗？"
+      },
+      {
+        "stage": 3,
+        "cue": 0,
+        "title": "放大最后一段收缩"
+      },
+      {
+        "stage": 3,
+        "cue": 1,
+        "title": "同一事件，两种时间读数"
+      },
+      {
+        "stage": 3,
+        "cue": 2,
+        "title": "自身能在有限时间穿过"
+      },
+      {
+        "stage": 4,
+        "cue": 0,
+        "title": "比较朝外发射的光"
+      },
+      {
+        "stage": 4,
+        "cue": 1,
+        "title": "内部的朝外光仍向内"
+      },
+      {
+        "stage": 4,
+        "cue": 2,
+        "title": "局部光速仍是光速"
+      },
+      {
+        "stage": 5,
+        "cue": 0,
+        "title": "黑洞与外部气体分开看"
+      },
+      {
+        "stage": 5,
+        "cue": 1,
+        "title": "角动量让气体绕行"
+      },
+      {
+        "stage": 5,
+        "cue": 2,
+        "title": "如何从盘中继续向内？"
+      },
+      {
+        "stage": 6,
+        "cue": 0,
+        "title": "亮光的能源是什么？"
+      },
+      {
+        "stage": 6,
+        "cue": 1,
+        "title": "温度曲线为什么这样变化？"
+      },
+      {
+        "stage": 6,
+        "cue": 2,
+        "title": "百万度为何不是火焰橙色？"
+      },
+      {
+        "stage": 7,
+        "cue": 0,
+        "title": "空间光路与观察图像"
+      },
+      {
+        "stage": 7,
+        "cue": 1,
+        "title": "背面的光也能进入眼睛"
+      },
+      {
+        "stage": 7,
+        "cue": 2,
+        "title": "直线对照说明哪一种原因？"
+      },
+      {
+        "stage": 8,
+        "cue": 0,
+        "title": "为何两侧明暗不同？"
+      },
+      {
+        "stage": 8,
+        "cue": 1,
+        "title": "多普勒变化和引力红移"
+      },
+      {
+        "stage": 8,
+        "cue": 2,
+        "title": "对照保留透镜，只去掉运动频移"
+      },
+      {
+        "stage": 9,
+        "cue": 0,
+        "title": "把整条因果链连起来"
+      },
+      {
+        "stage": 9,
+        "cue": 1,
+        "title": "这是一种可能景象"
+      },
+      {
+        "stage": 9,
+        "cue": 2,
+        "title": "自己改变条件，检验原因"
+      }
+    ]
+  },
+  "errors": []
+}

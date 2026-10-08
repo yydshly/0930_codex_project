@@ -1,0 +1,280 @@
+{
+  "date": "2026-10-02",
+  "timezone": "Asia/Shanghai",
+  "passed": 31,
+  "failed": 0,
+  "scope": "Nonrotating Schwarzschild exterior; test-particle timelike collapse; radial null propagation; Newtonian zero-torque thin-disk flux profile.",
+  "limitations": [
+    "No dynamic stellar interior, self-gravity, equation of state, nuclear reactions, magnetic fluid evolution, or rotating Kerr spacetime.",
+    "CPU RK4 checks do not validate every finite-step GLSL pixel or prove GPU numerical convergence.",
+    "Temperature, CIE conversion, texture, exposure and false color are explicitly separate approximations."
+  ],
+  "sources": [
+    "https://arxiv.org/pdf/2010.08735",
+    "https://jcgt.org/published/0002/02/01/paper.pdf"
+  ],
+  "checks": [
+    {
+      "name": "Schwarzschild radius is 2GM/c^2 in SI units",
+      "passed": true,
+      "details": {
+        "solarMassRadiusKm": 2.9533393820668783
+      }
+    },
+    {
+      "name": "Radius and geometric time scale linearly with mass",
+      "passed": true,
+      "details": {
+        "tenSolarMassRadiusKm": 29.533393820668785,
+        "timeUnitSeconds": 0.00009851279787922078
+      }
+    },
+    {
+      "name": "Photon sphere is the unstable null effective-potential maximum at 1.5 Rs",
+      "passed": true,
+      "details": {
+        "radius": 1.5,
+        "potential": 0.14814814814814817,
+        "derivative": 3.51163542688937e-9
+      }
+    },
+    {
+      "name": "Critical impact is reciprocal square root of photon-sphere potential",
+      "passed": true,
+      "details": {
+        "criticalImpact": 2.598076211353316
+      }
+    },
+    {
+      "name": "Timelike circular-orbit stability changes at ISCO = 3 Rs",
+      "passed": true,
+      "details": {
+        "inside": -0.007008313818168688,
+        "at": -8.548717289613705e-9,
+        "outside": 0.003590298947031556
+      }
+    },
+    {
+      "name": "Static-observer initialization preserves the chosen conserved impact 2.5",
+      "passed": true,
+      "details": {
+        "requested": 2.5,
+        "actual": 2.5000000000000004
+      }
+    },
+    {
+      "name": "Light is captured below critical impact",
+      "passed": true,
+      "details": {
+        "impact": 2.5,
+        "captured": true,
+        "finalRadius": 0.9990687990607929
+      }
+    },
+    {
+      "name": "RK4 trajectory preserves the null energy constraint for impact 2.5",
+      "passed": true,
+      "details": {
+        "maxAbsoluteConstraintError": 6.387067919000344e-8
+      }
+    },
+    {
+      "name": "Static-observer initialization preserves the chosen conserved impact 2.7",
+      "passed": true,
+      "details": {
+        "requested": 2.7,
+        "actual": 2.7
+      }
+    },
+    {
+      "name": "Light escapes above critical impact",
+      "passed": true,
+      "details": {
+        "impact": 2.7,
+        "captured": false,
+        "finalRadius": 150.09946059703358
+      }
+    },
+    {
+      "name": "RK4 trajectory preserves the null energy constraint for impact 2.7",
+      "passed": true,
+      "details": {
+        "maxAbsoluteConstraintError": 4.581816936966021e-8
+      }
+    },
+    {
+      "name": "Tangential photon at 1.5 Rs follows the circular null orbit",
+      "passed": true,
+      "details": {
+        "maxRadiusError": 1.6021847626390695e-8,
+        "constraintError": 1.778627245485609e-10
+      }
+    },
+    {
+      "name": "Weak-field deflection approaches 2 Rs / b with the GR correction",
+      "passed": true,
+      "details": {
+        "b50": 0.04122254199269104,
+        "firstOrder": 0.04,
+        "secondOrder": 0.041178097245096176,
+        "b500": 0.004011834006075077
+      }
+    },
+    {
+      "name": "Independent RK4 ray deflection agrees with the scalar geodesic integral",
+      "passed": true,
+      "details": {
+        "numeric": 0.04122253388906386,
+        "integral": 0.04122254199269104
+      }
+    },
+    {
+      "name": "Freely falling boundary contracts monotonically in finite proper time",
+      "passed": true,
+      "details": {
+        "initialRadius": 4,
+        "finalRadius": 0.6500000000496413,
+        "properEndSeconds": 0.001201690142886075
+      }
+    },
+    {
+      "name": "Cycloid proper time equals the radial timelike geodesic closed form",
+      "passed": true,
+      "details": {
+        "expectedSeconds": 0.001201690142886075,
+        "actualSeconds": 0.001201690142886075
+      }
+    },
+    {
+      "name": "A falling surface reaches the horizon in finite proper time",
+      "passed": true,
+      "details": {
+        "horizonProperTimeSeconds": 0.001166557227850311,
+        "actualSeconds": 0.001166557227850311
+      }
+    },
+    {
+      "name": "Cycloid speed satisfies dr/dtau = -sqrt(1/r - 1/r0)",
+      "passed": true,
+      "details": {
+        "numericalSpeed": -0.5000001744869536,
+        "closedForm": -0.5
+      }
+    },
+    {
+      "name": "Received frequency combines infall Doppler and gravitational redshift",
+      "passed": true,
+      "details": {
+        "g": 0.3660254037779901,
+        "expectedG": 0.3660254037844387,
+        "bolometricIntensityFactor": 0.017949192429857805
+      }
+    },
+    {
+      "name": "Successive outward flashes reach a distant observer later and redder",
+      "passed": true,
+      "details": {
+        "firstArrival": 3.0613648508627435e-14,
+        "lastArrival": 0.0028276649118726565
+      }
+    },
+    {
+      "name": "Received photon energy tends to zero approaching the horizon",
+      "passed": true,
+      "details": {
+        "radii": [
+          1.1,
+          1.01,
+          1.001,
+          1.0001
+        ],
+        "frequencyRatios": [
+          0.05418126290732764,
+          0.005735330657168043,
+          0.0005769656824279602,
+          0.00005773117731847017
+        ]
+      }
+    },
+    {
+      "name": "Late outgoing signals show logarithmically divergent received delay",
+      "passed": true,
+      "details": {
+        "delayForTenfoldSmallerHorizonGap": 0.0004539046637248496,
+        "asymptoticDelay": 0.00045366819973165847
+      }
+    },
+    {
+      "name": "Events inside the horizon have no outward arrival at infinity",
+      "passed": true,
+      "details": {
+        "insideCount": 3
+      }
+    },
+    {
+      "name": "Outgoing EF null ray moves inward inside",
+      "passed": true,
+      "details": {
+        "initial": 0.9,
+        "lastRadius": 0.070145907317008,
+        "lastIngoingEFTime": 2.7999999999999843
+      }
+    },
+    {
+      "name": "Outgoing EF null ray stays at the horizon",
+      "passed": true,
+      "details": {
+        "initial": 1,
+        "lastRadius": 1,
+        "lastIngoingEFTime": 3.9999999999999587
+      }
+    },
+    {
+      "name": "Outgoing EF null ray moves outward outside",
+      "passed": true,
+      "details": {
+        "initial": 1.1,
+        "lastRadius": 1.4968606272611897,
+        "lastIngoingEFTime": 3.9999999999999587
+      }
+    },
+    {
+      "name": "EF radial light integration matches the exact tortoise-coordinate relation",
+      "passed": true,
+      "details": {
+        "integratedTime": 3.9999999999999587,
+        "closedForm": 3.999999999993067
+      }
+    },
+    {
+      "name": "Zero-torque thin disk has zero effective temperature at its inner edge",
+      "passed": true,
+      "details": {
+        "innerTemperature": 0
+      }
+    },
+    {
+      "name": "Thin-disk temperature peaks at 49/36 times the inner radius",
+      "passed": true,
+      "details": {
+        "radius": 4.083333333333333,
+        "temperatureKelvin": 1945950.2026094766,
+        "reportedPeak": 1945950.2026094769
+      }
+    },
+    {
+      "name": "Temperature scales with accretion rate to power 1/4",
+      "passed": true,
+      "details": {
+        "sixteenfoldRateTemperatureRatio": 2
+      }
+    },
+    {
+      "name": "Temperature scales with mass to power -1/2 at fixed dimensionless radius and fixed mass accretion rate",
+      "passed": true,
+      "details": {
+        "quadrupleMassTemperatureRatio": 0.5
+      }
+    }
+  ]
+}
