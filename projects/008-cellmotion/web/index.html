@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="完整 CellMotion 研究：37 项原作动效、19 项视频、3 支成片，4 种原创可编辑演示；总览图说明能力、效果、原理、场景、个人价值、Remotion / HeyGen 区别与 AI 日报扩展方案。">
+  <meta name="theme-color" content="#f5f3ee">
+  <title>CellMotion · 动效展厅与原理研究</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="publication.css">
+  <script defer src="catalog.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#showcase">跳到动效展示</a>
+  <header class="site-header wrap">
+    <a class="identity" href="#showcase"><span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>CellMotion <small>研究 008</small></span></a>
+    <nav aria-label="页面导航"><a href="#showcase">效果</a><a href="#capabilities">能力</a><a href="#principles">原理</a><a href="workshop.html">实验室</a><a href="#scenarios">场景</a><a href="summary.html">理解总览</a></nav>
+    <a class="source-link" href="https://github.com/opc8838-hub/font-animation" target="_blank" rel="noopener noreferrer">源库 ↗</a>
+  </header>
+
+  <main>
+    <section id="showcase" class="showcase wrap">
+      <div class="intro-line"><div><p class="eyebrow">01 / ORIGINAL MOTIONS</p><h1>让文字<span>动起来。</span></h1></div><p class="intro-copy">从文字、图标到图片。<br>先看原作，再理解运动如何发生。</p></div>
+      <div class="research-gateway" id="overview" aria-label="完整研究与效果入口">
+        <a class="gateway-map" href="summary.html#map"><img src="assets/understanding-map.png" width="1600" height="1760" alt="我们已生成的理解总览图，汇总 CellMotion 的能力、效果、原理、场景、平台区别、个人价值与 AI 日报流程"><span>理解引导图 · 点击放大 ↗</span></a>
+        <div class="gateway-content"><p class="eyebrow">SOURCE EFFECTS / OUR EXPERIMENTS / FULL UNDERSTANDING</p><h2>看原作、动手改，理解整套制作思路。</h2><p>源库提供可编辑动效；我们的实验室用代码、参数和时间计算每一帧。这里保留完整效果、制作方法、Remotion / HeyGen 对比与个人价值，AI 日报作为后续扩展方案。</p>
+          <div class="gateway-links"><a href="#main-stage" data-entry="effects"><span>01 / 真实效果</span><strong>看 37 项原作动效 →</strong><small>19 项视频、封面与原编辑器</small></a><a href="workshop.html" data-entry="workshop"><span>02 / 动手体验</span><strong>试 4 种可编辑演示 →</strong><small>文字、图片、节奏与配方保存</small></a><a href="summary.html" data-entry="summary"><span>03 / 完整理解</span><strong>总览图与工具对比 →</strong><small>能力、原理、场景与对你的意义</small></a></div>
+          <div class="gateway-related"><a class="case-entry" href="#stories">▶ 看 3 支原作者成片</a><a href="#motion-index">浏览全部分类</a><a href="summary.html#daily">AI 日报怎么扩展</a><a href="https://opc8838-hub.github.io/font-animation/cellmotion.html#stories" target="_blank" rel="noopener noreferrer">原作者官网 ↗</a><a href="https://github.com/yydshly/0930_codex_project/blob/main/projects/008-cellmotion/notes/understanding-summary.md" target="_blank" rel="noopener noreferrer">完整研究文档 ↗</a></div>
+        </div>
+      </div>
+      <div class="viewer">
+        <div class="viewer-left">
+          <div class="stage" id="main-stage">
+            <video id="main-video" muted loop playsinline controls preload="metadata" aria-label="原作动效视频"></video>
+            <img id="main-poster" hidden alt="">
+            <span class="stage-label" id="stage-label">原作预览</span>
+            <div id="video-error" class="media-error" hidden><strong>原站视频暂时无法加载</strong><p>可以打开原站查看，或切换其他动效。</p><a id="error-link" target="_blank" rel="noopener noreferrer">查看原站 ↗</a></div>
+          </div>
+          <div class="playbar"><span id="play-status" role="status">正在加载原作预览…</span><div><button id="replay" type="button">↺ 重播</button><label class="speed-label">播放速度 <select id="playback-rate" aria-label="预览播放速度"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option></select></label></div></div>
+        </div>
+        <aside class="effect-info">
+          <p class="eyebrow" id="effect-english">GLYPH MORPH</p><h2 id="effect-name">字融</h2><p class="effect-description" id="effect-description"></p>
+          <div class="observe"><span class="mini-label">看这段运动</span><p id="effect-observe"></p></div>
+          <div class="best-for"><span class="mini-label">适合表达</span><p id="effect-use"></p></div>
+          <button class="button primary" id="open-editor" type="button">体验原编辑器 ↗</button>
+          <a id="effect-source" class="text-link" target="_blank" rel="noopener noreferrer">独立打开原作 →</a>
+          <small class="source-note">视频来自原作者站点。预览速度只影响播放；改文字与素材请进入编辑器。</small>
+        </aside>
+      </div>
+      <div id="quick-picks" class="quick-picks" aria-label="选择代表动效"></div>
+
+      <div class="catalog-heading" id="motion-index"><div><h2>运动的不同语言</h2><p>37 个已完成动效 · 19 项原作视频预览 · 其余提供静态封面与原编辑器入口</p></div><span class="index-label">THE MOTION INDEX</span></div>
+      <div class="filters" id="filters" role="group" aria-label="按内容筛选动效"></div>
+      <div id="effect-grid" class="effect-grid"></div>
+      <div class="catalog-footer"><span id="catalog-count" role="status"></span><button id="show-all" type="button" class="button secondary">查看全部 37 项 ↓</button></div>
+
+      <div class="case-heading" id="stories"><p class="eyebrow">MADE OF MOTION</p><h2>从一个片段，到一支短片。</h2><p>官网「成片案例」的三支原作。点击播放，观察文字、图标和画面的接力。</p></div>
+      <div class="case-grid">
+        <figure><video data-case="1" controls muted loop playsinline preload="none" aria-label="原作者成片案例一"></video><figcaption><span>CASE 01</span>原作者成片</figcaption></figure>
+        <figure><video data-case="2" controls muted loop playsinline preload="none" aria-label="原作者成片案例二"></video><figcaption><span>CASE 02</span>原作者成片</figcaption></figure>
+        <figure><video data-case="3" controls muted loop playsinline preload="none" aria-label="原作者成片案例三"></video><figcaption><span>CASE 03</span>原作者成片</figcaption></figure>
+        <div class="case-note"><span class="large-number">03</span><h3>组合后的表达</h3><p>独立动效提供片段素材，成片还需要顺序、节奏与剪辑。</p><p>当前站内视频拼接器尚未开放，可导出片段后使用其他剪辑工具组合。</p><a class="text-link" href="https://opc8838-hub.github.io/font-animation/cellmotion.html#stories" target="_blank" rel="noopener noreferrer">查看原作案例区 ↗</a></div>
+      </div>
+    </section>
+
+    <section id="capabilities" class="content-section wrap">
+      <div class="section-top"><p class="eyebrow">02 / CAPABILITIES</p><h2>可以改什么，得到什么？</h2><p>选一种现有运动编排，把自己的内容交给它。</p></div>
+      <div class="capability-grid">
+        <article><span class="cap-number">01</span><h3>文字与排版</h3><p>中文、多语种、逐行文案、字体、字号、字距、对齐与位置。部分编辑器可在指定字位插入图标。</p><div class="example-token">创意 <span>→</span> 设计</div></article>
+        <article><span class="cap-number">02</span><h3>图标与媒体</h3><p>使用内置图标或上传图片、GIF。支持媒体的编辑器还可更换视频背景、设置逐段背景和裁剪区间。</p><div class="media-tokens" aria-hidden="true"><i>字</i><i>✳</i><i>▧</i></div></article>
+        <article><span class="cap-number">03</span><h3>运动与节奏</h3><p>调整速度、停留、阶段时长，以及效果特有的放大、间距、方向等参数。每个动效保留自己的运动逻辑。</p><div class="beat-tokens" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+        <article><span class="cap-number">04</span><h3>画幅与导出</h3><p>设置横屏、竖屏或方形画布。PNG 保存一帧，GIF / MP4 保存运动过程；格式、尺寸和帧率以各编辑器为准。</p><div class="format-tokens"><span>PNG</span><span>GIF</span><span>MP4</span></div></article>
+      </div>
+      <div class="workflow-strip"><span>选动效</span><b>→</b><span>换文案 / 素材</span><b>→</b><span>调样式 / 节奏</span><b>→</b><span>预览</span><b>→</b><span>导出片段</span></div>
+      <div class="verified-output"><a href="assets/edited-export.png" target="_blank" rel="noopener noreferrer"><img src="assets/edited-export.png" alt="在原库字融编辑器中更换为中文动效研究后实际导出的 PNG" loading="lazy"></a><div><span class="mini-label">本轮实测 / 原编辑器输出</span><h3>换成中文，导出一帧。</h3><p>在「字融」原编辑器中把首行改为「中文动效研究」，画布随之重绘。左图是实际导出的 1080 × 1080 PNG，保留了原方案中的图标。</p><a class="text-link" href="assets/edited-export.png" download="cellmotion-chinese-1080.png">下载实测 PNG ↓</a><small>已验证中文修改与 PNG 导出；GIF / MP4 为源码核对，未做本轮导出实测。</small></div></div>
+      <div class="ai-note"><span class="ai-symbol" aria-hidden="true">{ }</span><div><h3>把配置交给 AI 或前端</h3><p>部分编辑器已有「用于 AI」菜单，可复制提示词、配置代码和组件 JSON。它把当前文案、画幅、字体、素材与时间参数描述出来，供接入现有运行时。通用网页组件在官网仍标为规划中，接入效果需逐项核验。</p></div></div>
+    </section>
+
+    <section id="principles" class="principles">
+      <div class="wrap">
+        <div class="section-top"><p class="eyebrow">03 / UNDER THE MOTION</p><h2>运动，是每一帧的计算。</h2><p>以「字融」为例：相同字符迁移，旧字符缩小，新字符长大。</p><a class="button primary" href="workshop.html" style="margin-top:20px">换上自己的文字，实验并生成需求 →</a></div>
+        <div class="principle-lab">
+          <div class="lab-visual">
+            <div class="lab-caption"><span class="mini-label">教学示意 · 字符匹配与插值</span><span id="lab-progress">0%</span></div>
+            <svg id="glyph-demo" viewBox="0 0 800 230" role="img" aria-label="让创意生长变成创意自由生长的字符匹配示意"><line x1="50" y1="170" x2="750" y2="170" class="baseline"/><g id="glyph-lines"></g><g id="glyph-layer"></g></svg>
+            <div class="timeline-control"><button id="lab-play" type="button" aria-label="播放原理示意">▶</button><label for="lab-scrubber" class="sr-only">拖动时间进度</label><input type="range" id="lab-scrubber" min="0" max="1000" value="0"><output id="lab-time" for="lab-scrubber">0.00 s</output></div>
+            <div class="lab-endpoints"><span>起点：让创意生长</span><span>终点：创意自由生长</span></div>
+            <p class="lab-note">拖动时间轴，观察删字、迁移和增字。此图用原创简化代码突出三个过程；上方展厅播放原库作品。</p>
+          </div>
+          <div class="lab-explanation"><span class="mini-label">为什么看起来连贯？</span><h3 id="lab-phase">先确定字符的位置</h3><p id="lab-phase-description"></p><ul class="glyph-legend"><li><i class="kept"></i>重复字符：找到目标位置，平滑迁移</li><li><i class="removed"></i>删除字符：原位缩小并淡出</li><li><i class="added"></i>新增字符：在目标位置长大并淡入</li></ul><div class="formula"><code>x(t) = x₀ + (x₁ − x₀) × ease(p)</code><p>p 是当前阶段的时间进度，ease 决定起步与收尾的速度。</p></div></div>
+        </div>
+        <div class="pipeline">
+          <article><span>01</span><h3>拆分与布局</h3><p>把文字拆成字符，把图标作为独立单元；按字体测量宽度，计算字位。</p><small>Intl.Segmenter · measureText</small></article>
+          <article><span>02</span><h3>匹配与编排</h3><p>字融按字符 key 匹配前后句；其他效果可使用关键帧、路径、粒子或物理规则。</p><small>matchGlyphs · keyframes</small></article>
+          <article><span>03</span><h3>时间驱动</h3><p>根据 t 找到当前阶段，计算位置、缩放、透明度和颜色，再绘制这一帧。</p><small>resolveTimeline · renderFrame</small></article>
+          <article><span>04</span><h3>画布渲染</h3><p>现代文字效果可用 Canvas 2D；部分早期和立体效果使用 p5.js / WebGL。</p><small>Canvas 2D · p5.js · WebGL</small></article>
+          <article><span>05</span><h3>逐帧编码</h3><p>按 t = 帧号 / fps 重绘，送入 GIF 或视频编码器；预览与导出复用时间逻辑。</p><small>RGBA frames · H.264 / GIF</small></article>
+        </div>
+        <div class="technical-note"><p><strong>「字融」并非逐笔画变成另一个字。</strong>源码匹配重复字符并移动字位，对删字和增字处理缩放与透明度。字阶则使用字形框关键帧插值，其他效果有自己的算法。</p><a href="https://github.com/opc8838-hub/font-animation/blob/bee7ddfc2b1f487e08aa79a3b91af7628f040eb1/site/glyphmorph.js#L223" target="_blank" rel="noopener noreferrer">查看匹配与绘制源码 ↗</a></div>
+      </div>
+    </section>
+
+    <section id="scenarios" class="content-section wrap">
+      <div class="section-top"><p class="eyebrow">04 / WHEN TO USE IT</p><h2>从想表达什么，选择运动。</h2><p>下面是基于效果特征的使用建议，点击可回到对应原作。</p></div>
+      <div class="scenario-grid">
+        <article><span class="scenario-tag">品牌 / 活动</span><h3>一句话，留下印象。</h3><p>动态口号、活动标题、开场字标。用字符重组表达变化，用逐字放大强调重点。</p><button data-select="glyphmorph">看字融 →</button><button data-select="letterpulse">看字阶 →</button></article>
+        <article><span class="scenario-tag">产品 / 功能</span><h3>把卖点分成几拍。</h3><p>产品功能介绍、搜索流程、发布会屏幕。每一拍承载一个信息，避免同时塞满画面。</p><button data-select="searchtyping">看搜写 →</button><button data-select="iconburst">看图标爆发 →</button></article>
+        <article><span class="scenario-tag">作品 / 商品</span><h3>让变化可以被看见。</h3><p>修图前后、视觉方案对比、商品与照片展示。快门和翻面给切换一个明确的发生时刻。</p><button data-select="beforeafter">看图片对比 →</button><button data-select="split-flip">看上下翻转 →</button></article>
+        <article><span class="scenario-tag">内容 / 教学</span><h3>让信息跟上节奏。</h3><p>短视频章节标题、知识点轮播、课程开场。少量关键词逐次出现，配合后续剪辑与配音。</p><button data-select="typecascade">看字倾 →</button><button data-select="pathwriter">看轨书 →</button></article>
+      </div>
+      <div class="adoption"><h3>采用它的价值</h3><p>把已经编排好的运动作为起点，把时间花在文案、素材和节奏上。适合反复制作风格一致的动态片段；复杂长片、音轨混合与自由时间线剪辑仍需其他工具配合。</p></div>
+    </section>
+
+    <section id="sources" class="sources wrap">
+      <div><p class="eyebrow">05 / SCOPE & SOURCES</p><h2>范围与研究依据</h2><p>研究快照：2026-10-02 · 上游提交 <code>bee7ddfc2b</code></p></div>
+      <div class="scope-grid"><article><h3>37 可打开 / 32 待上新</h3><p>以目录状态为准，待上新动效未当作已完成能力展示。</p></article><article><h3>单动效工作台</h3><p>站内视频拼接尚未开放。具体导出格式与参数以所选编辑器为准。</p></article><article><h3>原作与示意分开</h3><p>视频和封面从作者站点加载，需联网。原理示意在本页运行，不执行原库导出。</p></article><article><h3>授权需按来源核对</h3><p>仓库根许可为 CC BY-NC-SA 4.0；第三方字体与参考效果有各自许可。商业项目需先核对具体效果授权。</p></article></div>
+      <div class="source-list"><a href="https://github.com/opc8838-hub/font-animation/blob/bee7ddfc2b1f487e08aa79a3b91af7628f040eb1/README.md" target="_blank" rel="noopener noreferrer">项目说明 ↗</a><a href="https://github.com/opc8838-hub/font-animation/blob/bee7ddfc2b1f487e08aa79a3b91af7628f040eb1/site/cellmotion-catalog.json" target="_blank" rel="noopener noreferrer">动效目录 ↗</a><a href="https://github.com/opc8838-hub/font-animation/blob/bee7ddfc2b1f487e08aa79a3b91af7628f040eb1/site/letterpulse.js" target="_blank" rel="noopener noreferrer">字阶关键帧 ↗</a><a href="https://github.com/opc8838-hub/font-animation/blob/bee7ddfc2b1f487e08aa79a3b91af7628f040eb1/site/cellmotion-ai-manifest.js" target="_blank" rel="noopener noreferrer">AI 配置出口 ↗</a><a href="https://github.com/opc8838-hub/font-animation/blob/bee7ddfc2b1f487e08aa79a3b91af7628f040eb1/LICENSE" target="_blank" rel="noopener noreferrer">许可证 ↗</a></div>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><span>008 / CellMotion · 可编辑动效研究</span><div><a href="../../">研究集首页</a> · <a href="summary.html">理解总览</a> · <a href="workshop.html">实验室</a> · <a href="#showcase">回到效果 ↑</a></div></footer>
+  <dialog id="editor-dialog" class="editor-dialog" aria-labelledby="editor-dialog-title"><div class="dialog-top"><div><span class="mini-label">原作者工作台 · 在线嵌入</span><h2 id="editor-dialog-title">字融编辑器</h2></div><a id="dialog-source" target="_blank" rel="noopener noreferrer">独立打开 ↗</a><button type="button" id="close-editor" aria-label="关闭原编辑器">×</button></div><p class="dialog-note">在原编辑器中修改文字与参数。若网络加载较慢或嵌入不可用，可独立打开。</p><iframe id="editor-frame" title="CellMotion 原作者编辑器" allow="fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe></dialog>
+  <noscript><p class="wrap">启用 JavaScript 可切换动效和拖动原理时间轴。<a href="https://opc8838-hub.github.io/font-animation/cellmotion-components.html">也可直接打开原库组件目录。</a></p></noscript>
+</body>
+</html>

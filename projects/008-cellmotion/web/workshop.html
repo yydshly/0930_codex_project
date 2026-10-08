@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="输入自己的文字，实验动效动作和节奏，观察代码控制每一帧的原理，并生成可复制的制作需求。">
+  <meta name="theme-color" content="#f5f3ee"><title>动效实验室 · 从想法到可执行需求</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="workshop.css">
+  <script defer src="motion-engine.js"></script><script defer src="workshop.js"></script>
+</head>
+<body class="workshop-body">
+  <header class="workshop-header wrap"><a class="identity" href="index.html#principles"><span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>CellMotion <small>动效实验室</small></span></a><nav aria-label="实验室导航"><a href="#experiment">实验</a><a href="#ask">如何提问</a><a href="#extend">怎样扩展</a><a href="summary.html">理解总览</a></nav><a class="source-link" href="index.html#showcase">原作展厅 ↗</a></header>
+  <main>
+    <section id="experiment" class="workshop-section wrap">
+      <div class="workshop-title"><div><p class="eyebrow">MAKE A MOTION / UNDERSTAND BY DOING</p><h1>描述动作，<span>看见结果。</span></h1></div><p>先换两句文字，再试一个动作。<br>拖动时间，你就能看见每一步怎样发生。</p></div>
+      <div class="recipe-tabs" role="group" aria-label="选择动效配方"><button data-recipe="match" aria-pressed="true"><span>01</span>文字匹配</button><button data-recipe="type" aria-pressed="false"><span>02</span>逐字打入</button><button data-recipe="pulse" aria-pressed="false"><span>03</span>放大接力</button><button data-recipe="particles" aria-pressed="false"><span>04</span>碎片聚合</button></div>
+      <div class="workbench">
+        <form id="motion-form" class="workshop-controls" autocomplete="off">
+          <div class="control-section"><span class="control-kicker">内容 / 让什么动</span><label for="text-from">第一句<input id="text-from" value="让创意生长" maxlength="40"></label><label for="text-to">第二句<input id="text-to" value="创意自由生长" maxlength="40"></label></div>
+          <div class="control-section"><span class="control-kicker">动作 / 怎样发生</span><div class="control-pair"><label for="entrance">进场方式<select id="entrance"><option value="rise">从下方进入</option><option value="fade">淡入</option><option value="bounce">弹入</option><option value="none">直接出现</option></select></label><label for="easing">移动节奏<select id="easing"><option value="smooth">轻缓起止</option><option value="elastic">弹性回落</option><option value="linear">匀速</option></select></label></div><label class="range-label" for="stagger">逐字间隔 <output id="stagger-output">0.04 秒</output><input type="range" id="stagger" min="0" max="0.12" step="0.01" value="0.04"></label></div>
+          <div class="control-section"><span class="control-kicker">时间 / 多快完成</span><label class="range-label" for="duration">总时长 <output id="duration-output">4.0 秒</output><input type="range" id="duration" min="2" max="8" step="0.2" value="4"></label><div class="control-pair"><label for="first-hold">第一句停留（秒）<input id="first-hold" type="number" min="0.2" max="2" step="0.1" value="0.6"></label><label for="last-hold">最后停留（秒）<input id="last-hold" type="number" min="0.2" max="2" step="0.1" value="0.8"></label></div><div class="timing-hint">总时长不够时，会缩短两段停留，为动作留出时间。</div></div>
+          <div class="control-section"><span class="control-kicker">样式 / 看起来怎样</span><div class="control-pair"><label for="ratio">画幅<select id="ratio"><option value="16:9">横屏 16:9</option><option value="9:16">竖屏 9:16</option><option value="1:1">方形 1:1</option></select></label><label for="font-size">字号<input id="font-size" type="number" min="28" max="110" value="72"></label></div><div class="control-pair color-pair"><label for="foreground">文字颜色<input type="color" id="foreground" value="#dbe56c"></label><label for="background">背景颜色<input type="color" id="background" value="#20251f"></label></div></div>
+          <details class="image-control"><summary>试着把一个字换成图片</summary><p>选择本地 PNG、JPG 或 WebP，放入第二句中的指定字位。图片只在本机使用。</p><label class="file-choice" for="image-file">选择图片<input type="file" id="image-file" accept="image/png,image/jpeg,image/webp"></label><label for="image-slot">替换第二句第几个字<input type="number" id="image-slot" min="1" max="40" value="2"></label><div class="image-actions"><span id="image-status" role="status">未选择图片</span><button id="remove-image" type="button" hidden>移除</button></div></details>
+        </form>
+        <div class="workshop-preview">
+          <div class="preview-top"><span id="recipe-name">文字匹配</span><span class="prototype-label">本地原创演示</span></div>
+          <div class="workshop-stage" id="workshop-stage"><canvas id="motion-canvas" width="960" height="540" aria-label="可编辑动效实时预览"></canvas></div>
+          <div class="workshop-playbar"><button class="button primary" id="play-motion" type="button">▶ 播放</button><button id="restart-motion" class="button secondary" type="button">↺ 重播</button><label class="guide-toggle"><input type="checkbox" id="show-guides" checked> 看字位与轨迹</label><output id="play-time">0.00 / 4.00 s</output></div>
+          <label for="motion-time" class="sr-only">拖动动效时间</label><input type="range" id="motion-time" min="0" max="1000" value="0" class="motion-time">
+          <div class="phase-track" id="phase-track" aria-label="动效的阶段时间"></div>
+          <div class="frame-explanation"><span id="phase-number">第 1 步</span><div><h2 id="phase-name">进入画面</h2><p id="frame-description"></p><p class="frame-math" id="frame-math"></p></div></div>
+          <div class="cause-grid"><article><span>你改的是</span><strong id="changed-control">文案与动作</strong></article><article><span>代码重新计算</span><strong id="calculated-state">字位、缩放与透明度</strong></article><article><span>眼前的结果</span><strong id="visible-result">这一时刻的一帧画面</strong></article></div>
+          <div class="workshop-export"><button id="download-frame" type="button">保存当前帧 PNG ↓</button><button id="download-recipe" type="button">保存配方 JSON ↓</button><label class="import-recipe" for="recipe-file">载入配方 ↑<input type="file" id="recipe-file" accept="application/json,.json"></label></div>
+          <p class="prototype-note">这四个演示独立编写，用于理解和试验代码动效。这里可导出 PNG 与配方；原库效果及原编辑器在展厅中。视频编码不在这个实验室执行。</p>
+        </div>
+      </div>
+      <p id="workshop-status" class="workshop-status" role="status"></p>
+    </section>
+
+    <section id="ask" class="ask-section wrap">
+      <div class="section-top"><p class="eyebrow">DIRECT THE MOTION</p><h2>把想要的画面，说成可执行的需求。</h2><p>你提供内容和动作，制作过程再把它们转成位置、时间和绘制规则。</p></div>
+      <div class="request-workbench"><div class="request-context"><label for="purpose">用在哪里？<input id="purpose" value="品牌活动的开场标题" maxlength="100"></label><label for="delivery">希望交付什么？<select id="delivery"><option value="web">可交互的网页动效</option><option value="video">视频片段（MP4）</option><option value="batch">可批量换内容的模板</option></select></label><div class="ask-checklist"><span>这六项能让制作方向明确</span><ol><li><b>内容</b>：哪些文字、图片或图标？</li><li><b>动作</b>：出现、移动、变化、退出？</li><li><b>时间</b>：先后、快慢、停留多久？</li><li><b>样式</b>：比例、字号、颜色与位置？</li><li><b>输出</b>：网页、视频还是批量模板？</li><li><b>验收</b>：怎样判断做对了？</li></ol></div></div><div class="generated-request"><div class="request-heading"><span class="mini-label">根据当前实验设置生成</span><button class="button primary" id="copy-request" type="button">复制需求</button></div><label for="request-text" class="sr-only">生成的动效制作需求，可自行编辑</label><textarea id="request-text" spellcheck="false"></textarea><p>可以直接粘贴给我，也可以补上参考视频、品牌字体与素材。修改实验设置会重新生成这段描述。</p></div></div>
+      <div class="iteration-guide"><h3>第二轮反馈，也说动作。</h3><div><p>“第一句先完整停留 0.8 秒，再开始变化。”</p><p>“保留相同的字，沿同一条基线移动；其他字在原处缩小。”</p><p>“弹跳幅度减半，最后让第二句保持 1 秒。”</p><p>“先做 3 秒可拖动预览，保留文案、时长和颜色的修改入口。”</p></div></div>
+    </section>
+
+    <section id="extend" class="extension-section"><div class="wrap"><div class="section-top"><p class="eyebrow">GROW THE CAPABILITY</p><h2>扩展能力，有三个不同的层次。</h2><p>从调整配方，到组合动作，再到增加一种新的运动算法。</p></div><div class="extension-grid"><article><span>01 / 参数</span><h3>换内容，改节奏。</h3><p>同一个运动配方，换文案、图片、字号、颜色、比例、时长。此实验室已支持。</p><button data-example="gentle">试：更轻柔的换句 →</button><small>提出问题：哪些内容和参数要开放给使用者？</small></article><article><span>02 / 组合</span><h3>把动作接成一段。</h3><p>先弹入，再停留，再逐字打入新句。动作共享时间轴，前后保持视觉连续。此实验室可组合进场与变化。</p><button data-example="sequence">试：弹入 + 打字 →</button><small>提出问题：每一步何时开始、持续多久、怎样接到下一步？</small></article><article><span>03 / 算法</span><h3>让元素有新的运动。</h3><p>把“移动一个字”换成“让组成字的碎片聚合”。需要新的元素模型与逐帧计算；此处已有简化碎片示例。</p><button data-example="new-algorithm">试：碎片聚合 →</button><small>提出问题：元素如何拆分、沿什么路径运动、最终落在哪里？</small></article></div><div class="extension-map"><h3>继续往外扩，需要补哪一层？</h3><div class="extension-table"><table><thead><tr><th>想实现</th><th>需要增加</th><th>怎么提出需求</th></tr></thead><tbody><tr><td>随音乐节奏运动</td><td>音频分析与节拍到动作参数的映射</td><td>指定音乐、哪些元素跟拍、响应鼓点还是整体音量。</td></tr><tr><td>多段动效组成长片</td><td>场景顺序、转场、音轨与整体时间轴</td><td>提供分镜、每段文案与时长，说明转场和声音如何衔接。</td></tr><tr><td>批量制作 100 个版本</td><td>数据输入、模板参数、批量渲染与文件管理</td><td>给出一行示例数据、可变字段、输出比例和命名规则。</td></tr><tr><td>拖动、悬停或点击触发</td><td>交互事件、状态与播放控制</td><td>说清触发条件、重复触发规则，以及移开或取消后的行为。</td></tr><tr><td>3D 字体、液体或真实物理</td><td>几何、材质、模拟与对应渲染算法</td><td>附关键画面的参考，说明形状、空间、材质与运动约束。</td></tr></tbody></table></div><p>表中是扩展所需的模块；音轨、批量视频、长片拼接和 3D 模拟尚未在本实验室实现。</p></div><details class="code-explanation"><summary>想再看一步代码？</summary><p>文字、素材与配置先变成设计单元。每个时间点重新计算单元的位置、大小和透明度，然后画到画布上。保存配方会保存内容与参数；保存 PNG 会保存当前时间点的画面。</p><pre><code>配置 + 时间 t
+    ↓
+计算：每个元素的位置、大小、透明度
+    ↓
+绘制：renderFrame(canvas, config, t)
+    ↓
+一帧画面
+
+需要视频时：固定帧率取很多帧，再交给编码器。</code></pre><p><a href="motion-engine.js">查看本实验室的独立渲染代码</a> · <a href="index.html#principles">回到原库源码原理</a></p></details></div></section>
+  </main><footer class="site-footer wrap"><span>008 / 原创教学扩展 · 配方可导入导出</span><span><a href="../../">研究集首页</a> · <a href="summary.html">理解总览</a> · <a href="index.html#principles">返回原理页 →</a></span></footer>
+</body></html>

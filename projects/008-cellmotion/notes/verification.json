@@ -1,0 +1,150 @@
+{
+  "date": "2026-10-02",
+  "url": "http://127.0.0.1:8958/",
+  "checks": [
+    {
+      "name": "Default catalog shows 12 representative effects",
+      "passed": true
+    },
+    {
+      "name": "Glyph Morph original video decoded",
+      "passed": true,
+      "details": {
+        "duration": 7.666667,
+        "readyState": 3,
+        "width": 1080,
+        "height": 1080,
+        "src": "https://opc8838-hub.github.io/font-animation/assets/previews/glyphmorph-card.mp4"
+      }
+    },
+    {
+      "name": "Representative effect switches to real Letter Pulse video",
+      "passed": true
+    },
+    {
+      "name": "Video playback speed changes",
+      "passed": true
+    },
+    {
+      "name": "Original video playback advances",
+      "passed": true
+    },
+    {
+      "name": "Space category contains 2 ready effects",
+      "passed": true
+    },
+    {
+      "name": "Full ready catalog contains 37 effects",
+      "passed": true
+    },
+    {
+      "name": "Pending effects excluded",
+      "passed": true
+    },
+    {
+      "name": "Non-video effect explicitly shows static cover",
+      "passed": true
+    },
+    {
+      "name": "Replay disabled for static cover",
+      "passed": true
+    },
+    {
+      "name": "Timeline scrubber reaches end frame",
+      "passed": true
+    },
+    {
+      "name": "Matched character moved to a new position",
+      "passed": true
+    },
+    {
+      "name": "Removed character invisible at end",
+      "passed": true
+    },
+    {
+      "name": "New characters visible at end",
+      "passed": true
+    },
+    {
+      "name": "Teaching timeline plays to completion",
+      "passed": true
+    },
+    {
+      "name": "Original finished case 1 plays",
+      "passed": true,
+      "details": {
+        "duration": 16,
+        "width": 540,
+        "height": 960,
+        "currentTime": 0.107849
+      }
+    },
+    {
+      "name": "Original finished case 2 plays",
+      "passed": true,
+      "details": {
+        "duration": 13.416667,
+        "width": 540,
+        "height": 960,
+        "currentTime": 0.105906
+      }
+    },
+    {
+      "name": "Original finished case 3 plays",
+      "passed": true,
+      "details": {
+        "duration": 14.416667,
+        "width": 540,
+        "height": 960,
+        "currentTime": 0.105043
+      }
+    },
+    {
+      "name": "Desktop has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Original editor accepts Chinese text and redraws canvas",
+      "passed": true
+    },
+    {
+      "name": "Original editor exports a real PNG",
+      "passed": true,
+      "details": {
+        "filename": "glyph-morph-1080x1080.png"
+      }
+    },
+    {
+      "name": "Editor closes and iframe is unloaded",
+      "passed": true
+    },
+    {
+      "name": "Mobile has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Mobile timeline fits the viewport",
+      "passed": true
+    },
+    {
+      "name": "Tablet has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "No local JavaScript errors",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "assets/overview.png",
+    "assets/principles.png",
+    "assets/upstream-edited.png",
+    "assets/mobile.png"
+  ],
+  "upstream": {
+    "frameLoaded": true,
+    "pngExport": true
+  }
+}

@@ -1,0 +1,117 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const { createRequire } = require('node:module');
+const runtimeRequire = createRequire('C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/package.json');
+const { chromium } = runtimeRequire('playwright');
+const project = path.resolve(__dirname, '..');
+const report = { date: '2026-10-02', url: 'http://127.0.0.1:8958/', checks: [], errors: [], screenshots: [], upstream: {} };
+const check = (name, value, details = null) => {
+  report.checks.push({ name, passed: Boolean(value), ...(details ? { details } : {}) });
+  if (!value) throw new Error(name + (details ? ': ' + JSON.stringify(details) : ''));
+};
+async function main() {
+  const browser = await chromium.launch({ executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: true });
+  const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, deviceScaleFactor: 1 });
+  const page = await context.newPage();
+  let phase = 'local';
+  page.on('pageerror', (error) => report.errors.push({ phase, message: error.message }));
+  try {
+    await page.goto(report.url, { waitUntil: 'domcontentloaded' });
+    await page.waitForFunction(() => document.querySelectorAll('.effect-card').length === 12);
+    check('Default catalog shows 12 representative effects', await page.locator('.effect-card').count() === 12);
+    await page.waitForFunction(() => { const v = document.querySelector('#main-video'); return v.readyState >= 2 && v.duration > 0; }, { timeout: 25000 });
+    const media = await page.locator('#main-video').evaluate(v => ({ duration: v.duration, readyState: v.readyState, width: v.videoWidth, height: v.videoHeight, src: v.currentSrc }));
+    check('Glyph Morph original video decoded', media.readyState >= 2 && media.width > 0, media);
+    await page.locator('#main-video').evaluate(v => { v.currentTime = Math.min(.7, v.duration / 2); v.pause(); });
+    await page.waitForFunction(() => [...document.querySelectorAll('.quick-picks img')].every(i => i.complete && i.naturalWidth > 0));
+    await page.screenshot({ path: path.join(project, 'assets/overview.png') });
+    report.screenshots.push('assets/overview.png');
+    await page.locator('[data-select="letterpulse"]').first().click();
+    await page.waitForFunction(() => { const v = document.querySelector('#main-video'); return v.currentSrc.includes('letterpulse') && v.readyState >= 2; }, { timeout: 25000 });
+    check('Representative effect switches to real Letter Pulse video', await page.locator('#effect-name').innerText() === '字阶');
+    await page.locator('#playback-rate').selectOption('0.5');
+    check('Video playback speed changes', await page.locator('#main-video').evaluate(v => v.playbackRate) === .5);
+    await page.locator('#replay').click();
+    await page.waitForFunction(() => document.querySelector('#main-video').currentTime > .1);
+    check('Original video playback advances', true);
+    await page.locator('[data-category="space"]').click();
+    check('Space category contains 2 ready effects', await page.locator('.effect-card').count() === 2);
+    await page.locator('[data-category="all"]').click();
+    await page.locator('#show-all').click();
+    check('Full ready catalog contains 37 effects', await page.locator('.effect-card').count() === 37);
+    check('Pending effects excluded', await page.locator('.effect-card [data-select="coil"]').count() === 0);
+    await page.locator('[data-select="searchtyping"]').last().click();
+    check('Non-video effect explicitly shows static cover', await page.locator('#main-poster').isVisible() && await page.locator('#main-video').isHidden());
+    check('Replay disabled for static cover', await page.locator('#replay').isDisabled());
+    await page.locator('#principles').scrollIntoViewIfNeeded();
+    const originalTransform = await page.locator('#glyph-layer g').nth(1).getAttribute('transform');
+    await page.locator('#lab-scrubber').fill('1000');
+    check('Timeline scrubber reaches end frame', await page.locator('#lab-progress').innerText() === '100%');
+    check('Matched character moved to a new position', await page.locator('#glyph-layer g').nth(1).getAttribute('transform') !== originalTransform);
+    check('Removed character invisible at end', await page.locator('#glyph-layer g').first().getAttribute('opacity') === '0');
+    check('New characters visible at end', await page.locator('#glyph-layer g').last().getAttribute('opacity') === '1');
+    await page.locator('#lab-scrubber').fill('500');
+    await page.locator('#principles').screenshot({ path: path.join(project, 'assets/principles.png') });
+    report.screenshots.push('assets/principles.png');
+    await page.locator('#lab-play').click();
+    await page.waitForFunction(() => document.querySelector('#lab-scrubber').value === '1000');
+    check('Teaching timeline plays to completion', await page.locator('#lab-play').innerText() === '▶');
+    for (const id of [1, 2, 3]) {
+      const player = page.locator(`video[data-case="${id}"]`);
+      await player.scrollIntoViewIfNeeded();
+      await player.evaluate(v => v.play());
+      await page.waitForFunction(id => { const v = document.querySelector(`video[data-case="${id}"]`); return v.readyState >= 2 && v.currentTime > .1; }, id, { timeout: 25000 });
+      const state = await player.evaluate(v => ({ duration: v.duration, width: v.videoWidth, height: v.videoHeight, currentTime: v.currentTime }));
+      check('Original finished case ' + id + ' plays', state.currentTime > .1 && state.width > 0, state);
+      await player.evaluate(v => v.pause());
+    }
+    check('Desktop has no horizontal overflow', await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+    await page.locator('[data-select="glyphmorph"]').first().click();
+    await page.locator('#open-editor').click();
+    phase = 'upstream-editor';
+    const frame = page.frameLocator('#editor-frame');
+    await frame.locator('#sequenceRows input[data-key="text"]').first().waitFor({ timeout: 35000 });
+    report.upstream.frameLoaded = true;
+    const editorFrame = page.frames().find(f => f.url().includes('/glyphmorph.html'));
+    await editorFrame.evaluate(() => document.fonts.ready);
+    await frame.locator('#sequenceRows [data-action="pause-row"]').first().click();
+    const before = await editorFrame.locator('canvas').first().evaluate(c => c.toDataURL());
+    await frame.locator('#sequenceRows input[data-key="text"]').first().fill('中文动效研究');
+    await frame.locator('#sequenceRows [data-action="pause-row"]').first().click();
+    await page.waitForTimeout(300);
+    const after = await editorFrame.locator('canvas').first().evaluate(c => c.toDataURL());
+    check('Original editor accepts Chinese text and redraws canvas', before !== after && await frame.locator('#sequenceRows input[data-key="text"]').first().inputValue() === '中文动效研究');
+    await editorFrame.locator('canvas').first().screenshot({ path: path.join(project, 'assets/upstream-edited.png') });
+    report.screenshots.push('assets/upstream-edited.png');
+    const downloadPromise = page.waitForEvent('download', { timeout: 35000 });
+    // Public upstream controls may be inside a collapsed export panel; this calls its actual native button.
+    await editorFrame.locator('#exportPng').evaluate(button => button.click());
+    const download = await downloadPromise;
+    await download.saveAs(path.join(project, 'assets/edited-export.png'));
+    check('Original editor exports a real PNG', fs.statSync(path.join(project, 'assets/edited-export.png')).size > 1000, { filename: download.suggestedFilename() });
+    report.upstream.pngExport = true;
+    await page.locator('#close-editor').click();
+    check('Editor closes and iframe is unloaded', await page.locator('#editor-dialog').isHidden() && await page.locator('#editor-frame').getAttribute('src') === 'about:blank');
+    phase = 'local';
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.evaluate(() => scrollTo(0, 0));
+    await page.locator('#main-video').evaluate(v => { v.pause(); });
+    check('Mobile has no horizontal overflow', await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+    await page.screenshot({ path: path.join(project, 'assets/mobile.png') });
+    report.screenshots.push('assets/mobile.png');
+    await page.locator('#principles').scrollIntoViewIfNeeded();
+    check('Mobile timeline fits the viewport', await page.locator('#lab-scrubber').evaluate(e => e.getBoundingClientRect().right <= innerWidth));
+    await page.setViewportSize({ width: 768, height: 1024 });
+    check('Tablet has no horizontal overflow', await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+    check('No local JavaScript errors', report.errors.filter(e => e.phase === 'local').length === 0, report.errors);
+  } catch (error) {
+    report.failure = error.message;
+    await page.screenshot({ path: path.join(project, 'assets/qa-failure.png') }).catch(() => {});
+    process.exitCode = 1;
+  } finally {
+    fs.writeFileSync(path.join(project, 'notes/verification.json'), JSON.stringify(report, null, 2) + '\n');
+    console.log(JSON.stringify(report, null, 2));
+    await browser.close();
+  }
+}
+main().catch(error => { console.error(error); process.exit(1); });

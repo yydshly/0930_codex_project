@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1760" viewBox="0 0 1600 1760" role="img" aria-labelledby="title desc">
+  <title id="title">CellMotion 理解总览：能力、效果、原理、场景、工具比较与个人价值</title>
+  <desc id="desc">源库提供可编辑动效；算法、参数、时间编排共同决定每一帧。Remotion 是 React 视频框架，HeyGen 是 AI 视频平台。三者可配合构建日报等流程。本地实验室使用独立 JavaScript 和 Canvas 2D，只实现局部演示及 PNG、JSON 导出。</desc>
+  <defs><style>
+    text{font-family:'Microsoft YaHei','Segoe UI',sans-serif;fill:#20251f}
+    .kicker{font-family:Consolas,monospace;font-size:18px;letter-spacing:2px;fill:#697260}
+    .title{font-size:48px;font-weight:700;letter-spacing:-1px}
+    .section{font-size:29px;font-weight:700}.sub{font-size:23px;fill:#65705b}
+    .body{font-size:23px}.small{font-size:19px;fill:#697260}.tiny{font-size:17px;fill:#697260}
+    .number{font:700 46px Consolas,monospace;fill:#ec553b}.accent{fill:#ec553b}
+    .light{fill:#e9eddf}.muted-light{fill:#b6c2a5}.lime{fill:#dbe56c}
+    .panel{fill:#fff;stroke:#d7ddcc;stroke-width:1.5}.rule{stroke:#d7ddcc;stroke-width:1.5}
+  </style><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#8b977b"/></marker></defs>
+  <rect width="1600" height="1760" fill="#f5f3ee"/>
+  <rect x="64" y="44" width="18" height="18" rx="3" fill="#ec553b"/><rect x="88" y="44" width="18" height="18" rx="3" fill="#ec553b"/><rect x="64" y="68" width="18" height="18" rx="3" fill="#ec553b"/><circle cx="97" cy="77" r="9" fill="#20251f"/>
+  <text x="126" y="73" class="kicker">008 / CELLMOTION · UNDERSTANDING MAP</text>
+  <text x="64" y="143" class="title">从可编辑动效，到自动化内容制作。</text>
+  <text x="64" y="181" class="sub">代码定义规则；参数控制表现；编排组织过程。内容变化，模板可以复用。</text>
+
+  <rect x="64" y="215" width="724" height="294" rx="18" class="panel"/>
+  <text x="92" y="259" class="section">01  源库能力：现成动效与编辑器</text>
+  <text x="93" y="319" class="number">37</text><text x="164" y="315" class="small">已完成动效</text>
+  <text x="344" y="319" class="number">19</text><text x="415" y="315" class="small">视频预览</text>
+  <text x="593" y="319" class="number">3</text><text x="629" y="315" class="small">成片案例</text>
+  <path d="M92 340H760" class="rule"/>
+  <text x="93" y="380" class="body">换文字、字体与排版；支持的编辑器可换图标与媒体。</text>
+  <text x="93" y="417" class="body">调速度、停留、阶段时长、画幅及效果专用参数。</text>
+  <text x="93" y="454" class="body">PNG / GIF / MP4 与配置出口，以具体编辑器为准。</text>
+  <text x="93" y="487" class="tiny">固定版本：bee7ddfc2b · 69 条目录中的 32 条仍为 pending</text>
+
+  <rect x="812" y="215" width="724" height="294" rx="18" fill="#20251f"/>
+  <text x="840" y="259" class="section light">02  视觉效果：让信息按节奏发生</text>
+  <text x="840" y="303" class="body lime">字符迁移重组 · 逐字强调 · 图文接力 · 图片切换</text>
+  <rect x="840" y="327" width="668" height="72" rx="10" fill="#2d3625"/>
+  <text x="864" y="375" font-size="30" font-weight="700" class="light">让创意生长</text>
+  <path d="M1080 363H1143" stroke="#dbe56c" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="1170" y="375" font-size="30" font-weight="700" class="lime">创意自由生长</text>
+  <text x="840" y="438" class="body light">可表达概念变化、关键词重点、卖点与前后对比。</text>
+  <text x="840" y="476" class="small muted-light">上图是形式示意；真实原作视频与案例在展厅观看。</text>
+
+  <rect x="64" y="533" width="1472" height="277" rx="18" class="panel"/>
+  <text x="92" y="578" class="section">03  技术原理：内容与当前时间，共同决定这一帧</text>
+  <g fill="#eef1e4">
+    <rect x="92" y="601" width="224" height="86" rx="10"/><rect x="368" y="601" width="224" height="86" rx="10"/><rect x="644" y="601" width="224" height="86" rx="10"/><rect x="920" y="601" width="224" height="86" rx="10"/><rect x="1196" y="601" width="312" height="86" rx="10"/>
+  </g>
+  <g text-anchor="middle"><text x="204" y="635" class="body">文字 / 图片 / 配置</text><text x="204" y="668" class="small">输入内容与参数</text><text x="480" y="635" class="body">拆分与布局</text><text x="480" y="668" class="small">测字宽，算目标字位</text><text x="756" y="635" class="body">运动算法</text><text x="756" y="668" class="small">匹配、关键帧、路径</text><text x="1032" y="635" class="body">时间 → 元素状态</text><text x="1032" y="668" class="small">位置 / 大小 / 透明度</text><text x="1352" y="635" class="body">Canvas / WebGL 绘制</text><text x="1352" y="668" class="small">输出完整的当前画面</text></g>
+  <g stroke="#8b977b" stroke-width="2" marker-end="url(#arrow)"><path d="M325 644H354"/><path d="M601 644H630"/><path d="M877 644H906"/><path d="M1153 644H1182"/></g>
+  <text x="92" y="724" class="body">算法规定“怎样动”  ·  参数决定幅度与节奏  ·  编排决定动作的先后和时长</text>
+  <text x="92" y="761" class="small">预览：按时间 t 画一帧；视频：按 t = 帧号 / fps 取多帧，再交给编码器。</text>
+  <text x="92" y="792" class="tiny">字融以字符匹配与插值实现交接，不是所有字形逐笔画变形；不同效果使用不同算法。</text>
+
+  <rect x="64" y="834" width="1472" height="352" rx="18" fill="#e9edcf"/>
+  <text x="92" y="879" class="section">04  工具对照：它们负责不同层次，也可以配合使用</text>
+  <g fill="#f8f9ee"><rect x="92" y="901" width="456" height="210" rx="12"/><rect x="572" y="901" width="456" height="210" rx="12"/><rect x="1052" y="901" width="456" height="210" rx="12"/></g>
+  <text x="114" y="940" font-size="29" font-weight="700">CellMotion</text><text x="114" y="977" class="body">现成动效与单效果编辑</text><text x="114" y="1012" class="small">JS · Canvas 2D / p5.js / WebGL</text><text x="114" y="1047" class="small">控制字位、缩放、媒体与节奏</text><text x="114" y="1082" class="small">复用或扩展具体运动算法</text>
+  <text x="594" y="940" font-size="29" font-weight="700">Remotion</text><text x="594" y="977" class="body">代码视频框架与渲染工具</text><text x="594" y="1012" class="small">JS / TS · React · 帧号驱动</text><text x="594" y="1047" class="small">控制场景、布局、时序与整片输出</text><text x="594" y="1082" class="small">具体动效需编写或接入组件</text>
+  <text x="1074" y="940" font-size="29" font-weight="700">HeyGen</text><text x="1074" y="977" class="body">云端 AI 视频产品与服务</text><text x="1074" y="1012" class="small">数字人、声音与自动视频制作</text><text x="1074" y="1047" class="small">按平台及接口支持的字段配置</text><text x="1074" y="1082" class="small">可生成口播素材或完整视频</text>
+  <text x="92" y="1154" class="small">本地实验室独立使用 JS + Canvas 2D；没有接入 Remotion 或 HeyGen，也没有执行视频编码。</text>
+
+  <rect x="64" y="1210" width="724" height="304" rx="18" class="panel"/>
+  <text x="92" y="1254" class="section">05  场景与对你的意义</text>
+  <text x="92" y="1300" class="body">品牌标题 · 产品卖点 · 作品对比 · 教学与日报</text>
+  <text x="92" y="1343" class="body">把重复制作写成模板：换内容，复用视觉和节奏。</text>
+  <text x="92" y="1384" class="body">用参数持续修改，用配置保存、重现和批量扩展。</text>
+  <text x="92" y="1425" class="body">用画面语言指导：元素、动作、时刻与最终结果。</text>
+  <text x="92" y="1472" class="small">已有网页：原作展厅 + 原创实验室 + 理解汇总页</text>
+  <text x="92" y="1498" class="tiny">价值是复用与可控；实际制作效率、收益尚未测量。</text>
+
+  <rect x="812" y="1210" width="724" height="304" rx="18" class="panel"/>
+  <text x="840" y="1254" class="section">06  AI 日报：可继续搭建的流程</text>
+  <g><circle cx="855" cy="1294" r="14" fill="#ec553b"/><text x="855" y="1300" fill="white" text-anchor="middle" font-size="16" style="fill:white">1</text><text x="881" y="1302" class="body">数据与 AI：提炼标题、摘要、来源和脚本</text>
+  <circle cx="855" cy="1339" r="14" fill="#ec553b"/><text x="855" y="1345" text-anchor="middle" font-size="16" style="fill:white">2</text><text x="881" y="1347" class="body">内容模板：新闻配图、字幕与关键词动效</text>
+  <circle cx="855" cy="1384" r="14" fill="#ec553b"/><text x="855" y="1390" text-anchor="middle" font-size="16" style="fill:white">3</text><text x="881" y="1392" class="body">可选播报：HeyGen 生成数字人口播素材</text>
+  <circle cx="855" cy="1429" r="14" fill="#ec553b"/><text x="855" y="1435" text-anchor="middle" font-size="16" style="fill:white">4</text><text x="881" y="1437" class="body">整片制作：时间轴、配音与编码，可用 Remotion</text></g>
+  <text x="840" y="1482" class="small">这是方案构想；当前实验室仅演示局部动效。</text>
+
+  <rect x="64" y="1538" width="1472" height="125" rx="18" fill="#20251f"/>
+  <text x="92" y="1580" class="section light">怎样驱动制作：内容 + 动作 + 时间 + 样式 + 输出 + 验收</text>
+  <text x="92" y="1627" class="body muted-light">先做可拖动预览 → 按具体时刻与元素反馈 → 保存配方 → 再接入数据、音轨与视频输出</text>
+  <text x="64" y="1695" class="tiny">依据：CellMotion 固定提交 bee7ddfc2b；Remotion / HeyGen 官方说明于 2026-10-02 核对。</text>
+  <text x="64" y="1729" class="tiny">原库根许可 CC BY-NC-SA 4.0，第三方资源另有许可；本地原创实验室已支持四种演示、图片替换、需求生成及 PNG / JSON。</text>
+</svg>

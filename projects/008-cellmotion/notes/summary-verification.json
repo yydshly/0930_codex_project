@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-02",
+  "checks": [
+    {
+      "name": "Vector overview is a valid accessible SVG",
+      "passed": true
+    },
+    {
+      "name": "All diagram text fits the exported canvas",
+      "passed": true
+    },
+    {
+      "name": "Summary page loads with all six requested topics",
+      "passed": true
+    },
+    {
+      "name": "Overview image loads at its complete dimensions",
+      "passed": true
+    },
+    {
+      "name": "PNG download returns the actual full-resolution diagram",
+      "passed": true
+    },
+    {
+      "name": "SVG download preserves the editable vector source",
+      "passed": true
+    },
+    {
+      "name": "Topic navigation reaches the comparison section",
+      "passed": true
+    },
+    {
+      "name": "Comparison includes three schemes and clearly marks the daily workflow as a proposal",
+      "passed": true
+    },
+    {
+      "name": "768px summary has no horizontal page overflow",
+      "passed": true
+    },
+    {
+      "name": "390px summary has no horizontal page overflow",
+      "passed": true
+    },
+    {
+      "name": "Mobile diagram scrolls inside its frame",
+      "passed": true
+    },
+    {
+      "name": "Mobile can reach the diagram right side without expanding the page",
+      "passed": true
+    },
+    {
+      "name": "Mobile comparison has its own horizontal scroll",
+      "passed": true
+    },
+    {
+      "name": "Existing workshop links to the new summary",
+      "passed": true
+    },
+    {
+      "name": "Existing exhibit links to the new summary",
+      "passed": true
+    },
+    {
+      "name": "No browser script errors during summary navigation and downloads",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

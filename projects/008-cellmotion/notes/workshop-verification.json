@@ -1,0 +1,154 @@
+{
+  "date": "2026-10-02",
+  "checks": [
+    {
+      "name": "Workshop loads successfully",
+      "passed": true
+    },
+    {
+      "name": "Initial preview contains readable foreground pixels",
+      "passed": true
+    },
+    {
+      "name": "User text drives saved configuration and generated request",
+      "passed": true
+    },
+    {
+      "name": "match: seeking to the same time reproduces the same frame",
+      "passed": true
+    },
+    {
+      "name": "match: reaches the stable complete ending",
+      "passed": true
+    },
+    {
+      "name": "type: seeking to the same time reproduces the same frame",
+      "passed": true
+    },
+    {
+      "name": "type: reaches the stable complete ending",
+      "passed": true
+    },
+    {
+      "name": "pulse: seeking to the same time reproduces the same frame",
+      "passed": true
+    },
+    {
+      "name": "pulse: reaches the stable complete ending",
+      "passed": true
+    },
+    {
+      "name": "particles: seeking to the same time reproduces the same frame",
+      "passed": true
+    },
+    {
+      "name": "particles: reaches the stable complete ending",
+      "passed": true
+    },
+    {
+      "name": "Four algorithms produce four different middle frames",
+      "passed": true
+    },
+    {
+      "name": "All algorithms end with the same complete text layout",
+      "passed": true
+    },
+    {
+      "name": "Visible formula ties current time to phase progress",
+      "passed": true
+    },
+    {
+      "name": "Scrubber displays the correct time and phase",
+      "passed": true
+    },
+    {
+      "name": "Clicking a phase seeks to the complete ending",
+      "passed": true
+    },
+    {
+      "name": "Playback advances and pauses without further changes",
+      "passed": true
+    },
+    {
+      "name": "Insufficient time shortens holds and keeps the motion ordered",
+      "passed": true
+    },
+    {
+      "name": "Aspect 16:9 changes actual canvas resolution",
+      "passed": true
+    },
+    {
+      "name": "Aspect 9:16 changes actual canvas resolution",
+      "passed": true
+    },
+    {
+      "name": "Aspect 1:1 changes actual canvas resolution",
+      "passed": true
+    },
+    {
+      "name": "Local image is embedded in the recipe and request",
+      "passed": true
+    },
+    {
+      "name": "Image replacement stays within the existing target text",
+      "passed": true
+    },
+    {
+      "name": "PNG export contains a valid image at the selected square size",
+      "passed": true
+    },
+    {
+      "name": "Recipe export retains user text, timing, dimensions and the image",
+      "passed": true
+    },
+    {
+      "name": "Image replacement visibly changes the target frame",
+      "passed": true
+    },
+    {
+      "name": "Import restores the saved content and image frame",
+      "passed": true
+    },
+    {
+      "name": "PNG export omits guides even when preview guides are enabled",
+      "passed": true
+    },
+    {
+      "name": "Generated brief includes user purpose and an explicit MP4 implementation boundary",
+      "passed": true
+    },
+    {
+      "name": "Copy action places the exact editable brief on the clipboard",
+      "passed": true
+    },
+    {
+      "name": "Invalid recipe reports an error while preserving the existing work",
+      "passed": true
+    },
+    {
+      "name": "Empty inputs do not crash any renderer",
+      "passed": true
+    },
+    {
+      "name": "Repeated characters and a multi-codepoint emoji keep the complete target",
+      "passed": true
+    },
+    {
+      "name": "Combination example applies entrance and transition together",
+      "passed": true
+    },
+    {
+      "name": "768px viewport has no horizontal page overflow",
+      "passed": true
+    },
+    {
+      "name": "390px viewport has no horizontal page overflow",
+      "passed": true
+    },
+    {
+      "name": "No browser script errors across the interaction suite",
+      "passed": true
+    }
+  ],
+  "errors": []
+}
