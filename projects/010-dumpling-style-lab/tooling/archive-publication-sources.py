@@ -11,6 +11,10 @@ assets = project / 'assets'
 selected = {p for p in assets.iterdir() if p.is_file() and not p.name.startswith('.')}
 selected.update(p for p in assets.rglob('*') if p.is_file() and
                 (p.suffix.lower() in {'.json', '.txt', '.md'} or p.name == 'LICENSE'))
+# The existing watch regression validates these authored source images as evidence.
+watch_manifest = json.loads((assets / 'game-forms/watch-generation-20261004.json').read_text(encoding='utf-8'))
+selected.update(assets / 'game-forms/watch-sources' / (item['id'] + '.png')
+                for item in watch_manifest['assets'])
 for md in [project / 'README.md', project / 'web/README.md', *(project / 'notes').rglob('*.md')]:
     for ref in re.findall(r'\]\(([^\s)]+)\)', md.read_text(encoding='utf-8', errors='replace')):
         parsed = urlsplit(ref)
@@ -27,7 +31,7 @@ for asset in sorted(p for p in assets.rglob('*') if p.is_file()):
                     'git_evidence': asset in selected,
                     'scope': 'source evidence' if asset in selected else 'local production intermediate'})
 scope = {'date': '2026-10-08', 'runtime': 'Complete web/ committed and deployed with its own manifest',
-         'research': 'Complete README, notes and tooling committed; all cited source evidence retained',
+         'research': 'Complete README, notes and tooling committed; all cited source evidence and regression inputs retained',
          'raw_archive': 'Uncited raw models, downloads and render intermediates stay in the original local assets/; no website resources are removed',
          'files': records}
 report = project / 'notes/publication-source-scope-20261008.json'
