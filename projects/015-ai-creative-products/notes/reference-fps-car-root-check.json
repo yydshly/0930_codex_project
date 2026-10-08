@@ -1,0 +1,182 @@
+[
+  {
+    "id": 5,
+    "before": {
+      "module": "defense",
+      "status": "playing",
+      "running": true,
+      "renderer": "webgl",
+      "wave": 1,
+      "totalWaves": 3,
+      "health": 100,
+      "ammo": 11,
+      "reloading": false,
+      "kills": 0,
+      "shots": 1,
+      "hits": 0,
+      "elapsed": 1.9,
+      "player": {
+        "x": 0,
+        "z": 6,
+        "yaw": 0,
+        "pitch": 0
+      },
+      "enemies": [
+        {
+          "id": 1,
+          "x": -2.72,
+          "z": -8.5,
+          "hp": 2
+        }
+      ],
+      "scope": "Original FPS room and robots. No COD code/assets ported. Ray hits, simple pursuit, cover collision, three waves.",
+      "log": [
+        {
+          "time": 0,
+          "action": "波次开始",
+          "detail": 1
+        }
+      ]
+    },
+    "after": {
+      "module": "defense",
+      "status": "playing",
+      "running": true,
+      "renderer": "webgl",
+      "wave": 1,
+      "totalWaves": 3,
+      "health": 100,
+      "ammo": 10,
+      "reloading": false,
+      "kills": 0,
+      "shots": 2,
+      "hits": 1,
+      "elapsed": 3.2,
+      "player": {
+        "x": 0,
+        "z": 4.73,
+        "yaw": -0.203,
+        "pitch": -0.047
+      },
+      "enemies": [
+        {
+          "id": 1,
+          "x": -2.5,
+          "z": -7.41,
+          "hp": 1
+        },
+        {
+          "id": 2,
+          "x": 2.93,
+          "z": -9.66,
+          "hp": 2
+        }
+      ],
+      "scope": "Original FPS room and robots. No COD code/assets ported. Ray hits, simple pursuit, cover collision, three waves.",
+      "log": [
+        {
+          "time": 0,
+          "action": "波次开始",
+          "detail": 1
+        },
+        {
+          "time": 3.1,
+          "action": "射击命中",
+          "detail": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "before": {
+      "module": "soccer",
+      "status": "playing",
+      "running": true,
+      "renderer": "webgl",
+      "score": 0,
+      "goal": 3,
+      "remaining": 89.5,
+      "elapsed": 0.5,
+      "boost": 100,
+      "boosting": false,
+      "friction": 20,
+      "restitution": 72,
+      "cameraMode": "chase",
+      "cameraPosition": {
+        "x": 0,
+        "y": 4.85,
+        "z": 25
+      },
+      "collisions": 0,
+      "jumps": 0,
+      "maxBallHeight": 1.05,
+      "car": {
+        "x": 0,
+        "y": 0.65,
+        "z": 17,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0,
+        "yaw": 0
+      },
+      "ball": {
+        "x": 0,
+        "y": 1.05,
+        "z": 8,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0
+      },
+      "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+      "log": []
+    },
+    "after": {
+      "module": "soccer",
+      "status": "playing",
+      "running": true,
+      "renderer": "webgl",
+      "score": 0,
+      "goal": 3,
+      "remaining": 88.3,
+      "elapsed": 1.7,
+      "boost": 100,
+      "boosting": false,
+      "friction": 20,
+      "restitution": 72,
+      "cameraMode": "ball",
+      "cameraPosition": {
+        "x": 0,
+        "y": 6.323,
+        "z": 22.163
+      },
+      "collisions": 0,
+      "jumps": 1,
+      "maxBallHeight": 1.05,
+      "car": {
+        "x": 0,
+        "y": 2.6,
+        "z": 13.869,
+        "vx": 0,
+        "vy": 2.136,
+        "vz": -1.708,
+        "yaw": 0
+      },
+      "ball": {
+        "x": 0,
+        "y": 1.05,
+        "z": 8,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0
+      },
+      "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+      "log": [
+        {
+          "time": 1.3,
+          "action": "车辆跳跃"
+        }
+      ]
+    }
+  }
+]

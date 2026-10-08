@@ -1,0 +1,200 @@
+{
+  "product": "Archive",
+  "question": "实际记录是否仍然保留？",
+  "evidenceText": "观察甲实际保留。 | https://example.org/source-a\n观察甲实际保留。 | https://example.org/source-a\n观察甲实际保留。 | https://example.org/source-b\n观察乙待补来源。 | ",
+  "theme": "paper",
+  "time": 13.4,
+  "playing": false,
+  "spring": 0.68,
+  "wave": 0.72,
+  "scenes": [
+    {
+      "headline": "Observe.",
+      "detail": "保留原作观察与来源，成为一张研究卡。",
+      "seconds": 5
+    },
+    {
+      "headline": "Connect.",
+      "detail": "相同记录合并，缺少来源留待补充。",
+      "seconds": 7
+    },
+    {
+      "headline": "Keep it.",
+      "detail": "每条观察，保留它的来源。",
+      "seconds": 3
+    }
+  ],
+  "totalSeconds": 15,
+  "effects": [
+    "开启",
+    "巨型字标",
+    "弹性曲线",
+    "环形字",
+    "满幅点阵",
+    "留存成果"
+  ],
+  "workflow": {
+    "question": "实际记录是否仍然保留？",
+    "filename": "研究证据成果.md",
+    "rule": "仅合并内容与来源完全相同的记录；缺少内容或有效 HTTP(S) 来源的记录留作待补。未自动核实来源内容。",
+    "inputCount": 4,
+    "includedCount": 2,
+    "mergedCount": 1,
+    "pendingCount": 1,
+    "records": [
+      {
+        "id": 1,
+        "claim": "观察甲实际保留。",
+        "source": "https://example.org/source-a",
+        "status": "included",
+        "reason": "保留填写的来源"
+      },
+      {
+        "id": 2,
+        "claim": "观察甲实际保留。",
+        "source": "https://example.org/source-a",
+        "status": "merged",
+        "reason": "内容与来源相同",
+        "duplicateOf": 1
+      },
+      {
+        "id": 3,
+        "claim": "观察甲实际保留。",
+        "source": "https://example.org/source-b",
+        "status": "included",
+        "reason": "保留填写的来源"
+      },
+      {
+        "id": 4,
+        "claim": "观察乙待补来源。",
+        "source": "",
+        "status": "needs-source",
+        "reason": "缺少来源"
+      }
+    ],
+    "included": [
+      {
+        "id": 1,
+        "claim": "观察甲实际保留。",
+        "source": "https://example.org/source-a",
+        "status": "included",
+        "reason": "保留填写的来源"
+      },
+      {
+        "id": 3,
+        "claim": "观察甲实际保留。",
+        "source": "https://example.org/source-b",
+        "status": "included",
+        "reason": "保留填写的来源"
+      }
+    ],
+    "merged": [
+      {
+        "id": 2,
+        "claim": "观察甲实际保留。",
+        "source": "https://example.org/source-a",
+        "status": "merged",
+        "reason": "内容与来源相同",
+        "duplicateOf": 1
+      }
+    ],
+    "pending": [
+      {
+        "id": 4,
+        "claim": "观察乙待补来源。",
+        "source": "",
+        "status": "needs-source",
+        "reason": "缺少来源"
+      }
+    ]
+  },
+  "sequence": {
+    "time": 13.4,
+    "start": 0,
+    "end": 15,
+    "handoffStart": 1.2,
+    "openingEnd": 1.7000000000000002,
+    "inputEnd": 5,
+    "closingStart": 14.04,
+    "foldEnd": 14.58,
+    "phase": "result",
+    "input": 0,
+    "fold": 0,
+    "close": 0,
+    "knob": null,
+    "operation": {
+      "rule": "仅合并内容与来源完全相同的记录；缺少内容或有效 HTTP(S) 来源的记录留作待补。未自动核实来源内容。",
+      "inputCount": 4,
+      "includedCount": 2,
+      "mergedCount": 1,
+      "pendingCount": 1,
+      "filename": "研究证据成果.md",
+      "resultRetained": true,
+      "downloadClaim": false
+    },
+    "scope": "Time-derived presentation of the real local rule output; no AI verification and no claim that a download has occurred."
+  },
+  "sequencePlan": [
+    {
+      "start": 0,
+      "end": 1.2,
+      "action": "打开研究",
+      "object": "胶囊开关"
+    },
+    {
+      "start": 1.2,
+      "end": 5,
+      "action": "第一条真实观察成为字标上的橙点",
+      "object": "巨大字标 / 同一条输入"
+    },
+    {
+      "start": 5,
+      "end": 7.800000000000001,
+      "action": "圆点沿弹性曲线推进",
+      "object": "留白中的曲线"
+    },
+    {
+      "start": 7.800000000000001,
+      "end": 10.32,
+      "action": "圆点进入有前后层次的环形字",
+      "object": "环字"
+    },
+    {
+      "start": 10.32,
+      "end": 12,
+      "action": "橙点落在满幅点阵",
+      "object": "点阵波"
+    },
+    {
+      "start": 12,
+      "end": 14.04,
+      "action": "实际记录标记合并与分区，保留完整成果",
+      "object": "巨大成果标题 / 实际记录"
+    },
+    {
+      "start": 14.04,
+      "end": 15,
+      "action": "同一成果圆点回到开关，完整文件继续可导出",
+      "object": "成果保留 / 关闭研究"
+    }
+  ],
+  "typography": {
+    "font": "Inter Display Black",
+    "fontVersion": "Version 4.001;git-9221beed3",
+    "localFont": "media/fonts/case-04/InterDisplay-Black.woff2",
+    "license": "SIL Open Font License 1.1 / media/fonts/case-04/OFL.txt",
+    "word": "Archive",
+    "size": 293,
+    "width": 1118.35009765625,
+    "baseline": 548,
+    "dot": {
+      "x": 819.476806640625,
+      "y": 339.60375,
+      "r": 30.765
+    },
+    "layout": "oversized-type / quiet-curve / depth-sorted-orbit / full-bleed-grid",
+    "scope": "Original local art direction; the reference font and production toolchain are unknown."
+  },
+  "fontReady": true,
+  "scope": "原创无声 Canvas / WebM；Inter Display Black 为本地 OFL 字体，原作字型与工具链未知"
+}

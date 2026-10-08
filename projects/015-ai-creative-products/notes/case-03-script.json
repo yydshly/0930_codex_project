@@ -1,0 +1,105 @@
+{
+  "theme": "gold",
+  "seconds": 5,
+  "time": 10.8,
+  "playing": false,
+  "scenes": [
+    {
+      "title": "报告的可靠性",
+      "text": "这份报告，\n足以支持决策吗？"
+    },
+    {
+      "title": "核对证据",
+      "text": "先检查来源，\n再检查结论能否重复得到。"
+    },
+    {
+      "title": "给出结论",
+      "text": "留下反馈，复用流程。\n让每一次创作，成为下一次的起点。"
+    }
+  ],
+  "shots": [
+    {
+      "name": "星空提问",
+      "start": 0,
+      "duration": 5,
+      "point": {
+        "title": "报告的可靠性",
+        "text": "这份报告，\n足以支持决策吗？"
+      },
+      "pointIndices": [
+        0
+      ],
+      "next": null
+    },
+    {
+      "name": "工具类比",
+      "start": 5,
+      "duration": 5,
+      "point": {
+        "title": "报告的可靠性",
+        "text": "这份报告，\n足以支持决策吗？"
+      },
+      "pointIndices": [
+        0
+      ],
+      "next": null
+    },
+    {
+      "name": "命题档案",
+      "start": 10,
+      "duration": 5,
+      "point": {
+        "title": "报告的可靠性",
+        "text": "这份报告，\n足以支持决策吗？"
+      },
+      "pointIndices": [
+        0,
+        1
+      ],
+      "next": {
+        "title": "核对证据",
+        "text": "先检查来源，\n再检查结论能否重复得到。"
+      }
+    },
+    {
+      "name": "边界之墙",
+      "start": 15,
+      "duration": 5,
+      "point": {
+        "title": "核对证据",
+        "text": "先检查来源，\n再检查结论能否重复得到。"
+      },
+      "pointIndices": [
+        1
+      ],
+      "next": null
+    },
+    {
+      "name": "反馈球体",
+      "start": 20,
+      "duration": 5,
+      "point": {
+        "title": "给出结论",
+        "text": "留下反馈，复用流程。\n让每一次创作，成为下一次的起点。"
+      },
+      "pointIndices": [
+        2
+      ],
+      "next": null
+    },
+    {
+      "name": "两条成长曲线",
+      "start": 25,
+      "duration": 5,
+      "point": {
+        "title": "给出结论",
+        "text": "留下反馈，复用流程。\n让每一次创作，成为下一次的起点。"
+      },
+      "pointIndices": [
+        2
+      ],
+      "next": null
+    }
+  ],
+  "scope": "原创 Canvas 论证片，示意曲线非实测；原作工具链未知；WebM 无声"
+}

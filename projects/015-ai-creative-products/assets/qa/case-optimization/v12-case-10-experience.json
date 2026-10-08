@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-03T00:00:28.570Z",
+  "caseId": 10,
+  "product": "三维操控与物理挑战工具",
+  "task": "驾驶、转弯和跳跃，观察接地与车身反馈，再把球推入球门。",
+  "state": {
+    "module": "soccer",
+    "status": "playing",
+    "running": true,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 99,
+      "triangles": 97498,
+      "staticDrawCallsSaved": 350
+    },
+    "score": 0,
+    "goal": 3,
+    "remaining": 89.8,
+    "elapsed": 0.2,
+    "boost": 100,
+    "boosting": false,
+    "friction": 20,
+    "restitution": 72,
+    "cameraMode": "ball",
+    "speed": 1.26,
+    "cameraFov": 66.19,
+    "cameraTarget": {
+      "x": 0,
+      "y": 1.192,
+      "z": 10.032
+    },
+    "cameraPosition": {
+      "x": -0.7,
+      "y": 3.674,
+      "z": 23.381
+    },
+    "collisions": 0,
+    "jumps": 0,
+    "vehicleFeedback": {
+      "grounded": true,
+      "frontMinusRearHeight": 0.0465,
+      "rightMinusLeftHeight": 0,
+      "bodyPitch": 0.0148,
+      "bodyRoll": 0,
+      "bodyHeave": 0,
+      "tireRadius": 0.38,
+      "maxWheelAxisVertical": 0,
+      "tireBottom": 0,
+      "suspensionLinkMaxError": 0,
+      "brakeCount": 0,
+      "lastBrakeSpeedDelta": 0,
+      "lastBrakeMinPitch": 0,
+      "landingCount": 0,
+      "lastLandingSpeed": 0,
+      "lastLandingCompression": 0,
+      "contactCount": 0,
+      "lastContactImpulse": 0,
+      "lastContactPitchKick": 0,
+      "lastContactRollKick": 0,
+      "contactAge": null,
+      "scope": "Visual spring response from actual acceleration, contact impulse and landing velocity; simplified vehicle contact remains unchanged."
+    },
+    "wheelRotationX": -0.5846,
+    "ballRotation": {
+      "x": 0,
+      "z": 0
+    },
+    "maxBallHeight": 1.05,
+    "car": {
+      "x": 0,
+      "y": 0.65,
+      "z": 16.778,
+      "vx": 0,
+      "vy": 0,
+      "vz": -1.261,
+      "yaw": 0
+    },
+    "ball": {
+      "x": 0,
+      "y": 1.05,
+      "z": 8,
+      "vx": 0,
+      "vy": 0,
+      "vz": 0
+    },
+    "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+    "log": []
+  },
+  "source": "https://x.com/BlendiByl/status/2104800823620632641",
+  "reference": {
+    "focus": "立体车球场、追车或球相机、加速、惯性与真实碰撞共同决定操控手感。",
+    "evidence": "作者提供浏览器车球同人游戏并强调物理；原片可见立体球场、跟随视角和 Boost。",
+    "sourceTech": "具体物理引擎未知；不能由效果推定使用某个引擎。",
+    "ours": "原创车球场、跟随相机和真实简化碰撞，加上轮胎接地、里程滚动与由加速度、落地速度及碰撞冲量驱动的车身回应。",
+    "tech": "本地 Three.js 与独立车辆反馈模块；轮组保持接地关系，连接杆随车身姿态更新，有限弹簧只控制视觉反馈。本例以真实时间和小步更新运动，球纹理按实际位移滚转。",
+    "value": "作为操控、动力参数与挑战关卡的浏览器物理实验基础。",
+    "check": "加速、刹车及左右转弯的姿态方向与实际运动对应，跳跃后真实落地触发压缩；轮胎接地、连接及事件记录可在导出中核对。",
+    "boundary": "参考原作三维操控效果，具体物理引擎未知。车身回应是有限视觉弹簧，不是完整车辆刚体、逐轮轮胎动力学、空中翻滚或联机。",
+    "kernel": "真实加速、转向、落地及撞球事件驱动同一车身反馈；轮胎转向和滚动对应驾驶，真实球车位置与碰撞仍由简化运动模型判断。"
+  },
+  "optimization": {
+    "caseId": 10,
+    "sourceTarget": "原作把驾驶、Boost、腾空、碰撞与跟球镜头放在连续三维操控中；本例参考轮胎接地、车身惯性和接触反馈共同表达动力变化。",
+    "diagnosis": "上一轮已能感到速度和追车变化，但轮胎底部仍悬空约0.15 m，车身在加速、转向、撞球及落地时保持同一水平姿态；轮组的滚转与转向混在同一层级，正向轮转符号也不符合接地滚动。",
+    "priority": "把真实操控、接触冲量和落地速度转为轴向正确、保持车轮接地与支撑连接的有限车身响应。",
+    "changes": [
+      "车轮中心改为与0.38 m轮胎半径对应的接地高度；滚转与转向使用独立枢轴，正向和倒车分别沿实际接地滚动方向转动。",
+      "车身独立于轮组；实际纵向加速度驱动抬头/点头，侧向加速度驱动外侧压缩，刹车依据真实速度骤降产生有限俯仰脉冲。",
+      "实际车球冲量产生方向相反的车身回应；实际落地速度触发压缩和恢复。四条支撑杆持续连接轮毂和车身锚点。",
+      "球体纹理滚转累积实际位移，暂停后仅切换相机不让球继续自转；本例独立墙钟循环用小步积分，一帧一次绘制，隐藏时暂停并清除隐藏时长。",
+      "导出增加实际轮胎底部、前后/左右高差、落地速度与峰值压缩、刹车变化、碰撞反作用脉冲以及支撑连接误差。"
+    ],
+    "verify": [
+      "实际W+Shift加速：前后锚点高差+0.1583 m；实际右转：右左高差+0.0235 m。轮胎底部为0，车轴竖直分量和支撑误差均为0。",
+      "实际X刹车：前后高差-0.0343 m，实际最低俯仰-0.0220 rad；正向与倒车轮转分别为负/正，方向与实际运动一致。",
+      "实际空格跳跃、落地：落地速度7.199 m/s，采样压缩-0.0198 m，实际峰值-0.0234 m；0.5秒后车身偏移回到+0.0004 m，落地只计1次。",
+      "实际正向撞球冲量23.805，车身反作用俯仰脉冲-0.3123，无侧向冲量时侧倾脉冲为0；实际JSON下载保留这些字段。",
+      "17项针对检查及1项反作用方向补测通过；隐藏1.1秒不推进，记录2.0秒对应墙钟1.967秒；390 px长按实际驾驶、重置和导出通过，无页面错误或缺失资源。"
+    ],
+    "remaining": [
+      "车身悬架为根据实际状态驱动的有限视觉弹簧，碰撞仍使用原创简化车球接触；没有完整车辆刚体、逐轮轮胎力、地面坡度、空中翻滚或联机。",
+      "场馆、车辆和球为本项目原创资产，未移植原作代码；原作使用的具体物理引擎、车辆参数和悬架算法未确认。",
+      "本轮只验证受影响操控链，未重新验收90秒全程或三球胜利；手机为浏览器宽度模拟，未据软件渲染推定真机流畅度。"
+    ]
+  },
+  "scope": "原创单人简化物理与视觉弹簧反馈；未实现完整车辆刚体、空中翻滚或联机。"
+}

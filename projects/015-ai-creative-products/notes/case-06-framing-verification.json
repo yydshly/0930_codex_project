@@ -1,0 +1,111 @@
+{
+  "checkedAt": "2026-10-02T16:31:00.710Z",
+  "mobileWidth": 390,
+  "sidebarWidth": 680,
+  "midi88": {
+    "performer": "cat",
+    "midi": 88,
+    "keyPosition": {
+      "x": 4.025,
+      "y": 1.69,
+      "z": 0.97
+    },
+    "effectorPosition": {
+      "x": 4.025,
+      "y": 1.6900000000000002,
+      "z": 0.97
+    },
+    "contactDistance": 2.220446049250313e-16,
+    "pressure": 1,
+    "pressedKeys": [
+      76,
+      88
+    ],
+    "index": 28,
+    "support": {
+      "robot": [
+        {
+          "name": "robot-foot-0",
+          "stance": true,
+          "grounded": true,
+          "lift": 0,
+          "surface": 1.78,
+          "worldPosition": [
+            -0.4899999999999998,
+            1.845,
+            0.9
+          ]
+        },
+        {
+          "name": "robot-foot-1",
+          "stance": false,
+          "grounded": true,
+          "lift": 0,
+          "surface": 1.78,
+          "worldPosition": [
+            0.25986757526782206,
+            1.845,
+            0.9
+          ]
+        }
+      ],
+      "cat": [
+        {
+          "name": "cat-paw-0",
+          "stance": false,
+          "grounded": true,
+          "lift": 0,
+          "surface": 1.78,
+          "worldPosition": [
+            3.468156956004758,
+            1.85,
+            0.67
+          ]
+        },
+        {
+          "name": "cat-paw-1",
+          "stance": true,
+          "grounded": true,
+          "lift": 0,
+          "surface": 1.78,
+          "worldPosition": [
+            3.6375,
+            1.85,
+            0.97
+          ]
+        },
+        {
+          "name": "cat-paw-2",
+          "stance": true,
+          "grounded": true,
+          "lift": 0,
+          "surface": 1.69,
+          "worldPosition": [
+            4.06,
+            1.76,
+            0.67
+          ]
+        },
+        {
+          "name": "cat-paw-3",
+          "stance": false,
+          "grounded": true,
+          "lift": 0,
+          "surface": 1.69,
+          "worldPosition": [
+            4.025,
+            1.7600000000000002,
+            0.97
+          ],
+          "performing": true
+        }
+      ]
+    }
+  },
+  "verifiedBy": "Render capture and visual inspection",
+  "frames": [
+    "after-mobile.png",
+    "high-register-mobile.png",
+    "sidebar-framing.png"
+  ]
+}

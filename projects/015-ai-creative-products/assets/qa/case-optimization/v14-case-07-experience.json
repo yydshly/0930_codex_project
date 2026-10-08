@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-03T00:58:43.572Z",
+  "caseId": 7,
+  "product": "三维虚拟展会编辑器",
+  "task": "沿巷道近看门窗与木石细节，走近展位查看成果并导出参观记录。",
+  "state": {
+    "caseId": 7,
+    "time": "dusk",
+    "treeDensity": 20,
+    "selected": "product-lab",
+    "visits": [
+      {
+        "id": "visual-systems",
+        "title": "视觉系统展位",
+        "visitedAt": "2026-10-03T00:58:43.492Z",
+        "via": "near-view",
+        "positionAtView": {
+          "x": -2.913902941098371,
+          "z": 1.7072790293851057,
+          "yaw": 0.04,
+          "pitch": -0.02
+        },
+        "distanceAtView": 2.62,
+        "relatedCases": [
+          1
+        ],
+        "shownObjects": [
+          "双页作品档案",
+          "三种展厅主题样板",
+          "CASE 01 实际运行画面"
+        ]
+      },
+      {
+        "id": "product-lab",
+        "title": "产品原型展位",
+        "visitedAt": "2026-10-03T00:58:43.554Z",
+        "via": "guided-shortcut",
+        "positionAtView": {
+          "x": 2.8,
+          "z": -3.9,
+          "yaw": 0.1,
+          "pitch": 0
+        },
+        "distanceAtView": 2.21,
+        "relatedCases": [
+          6
+        ],
+        "shownObjects": [
+          "微缩实体琴键",
+          "原创机器人与猫",
+          "默认 32 音符 / 90 BPM 谱板",
+          "CASE 06 实际运行画面"
+        ]
+      }
+    ],
+    "view": {
+      "yaw": 0.4,
+      "elevation": 0.54,
+      "distance": 34
+    },
+    "mode": "walk",
+    "position": {
+      "x": 2.8,
+      "z": -3.9,
+      "yaw": 0.1,
+      "pitch": 0
+    },
+    "reached": [
+      "visual-systems",
+      "product-lab"
+    ],
+    "proximity": {
+      "id": "product-lab",
+      "distance": 2.21,
+      "canView": true,
+      "viewed": true
+    },
+    "architecture": {
+      "nearHouseCount": 2,
+      "windowCount": 16,
+      "shutterLeafCount": 32,
+      "hingeCount": 64,
+      "archDoorCount": 1,
+      "recessDepth": 0.2,
+      "eaveLayers": 3,
+      "brickCourses": 3,
+      "glassEmissiveIntensity": 0.055,
+      "nearHouses": [
+        {
+          "position": {
+            "x": -7,
+            "z": 5.8
+          },
+          "width": 4.4,
+          "height": 4.5,
+          "depth": 5,
+          "type": "warm timber lane facade",
+          "windowCount": 8,
+          "shutterLeafCount": 16,
+          "hingeCount": 32,
+          "archDoorCount": 0,
+          "rectDoorCount": 1,
+          "brickCount": 97,
+          "recessDepth": 0.2,
+          "wallThickness": 0.24,
+          "diamondLead": true,
+          "glass": "Original cool-grey reflective tint; no scene refraction",
+          "eaveLayers": 3,
+          "brickCourses": 3,
+          "staticMeshCount": 11,
+          "instancedMeshCount": 2,
+          "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+        },
+        {
+          "position": {
+            "x": 1.4,
+            "z": 6
+          },
+          "width": 6,
+          "height": 4.3,
+          "depth": 4.6,
+          "type": "pale masonry lane facade",
+          "windowCount": 8,
+          "shutterLeafCount": 16,
+          "hingeCount": 32,
+          "archDoorCount": 1,
+          "rectDoorCount": 0,
+          "brickCount": 119,
+          "recessDepth": 0.2,
+          "wallThickness": 0.24,
+          "diamondLead": true,
+          "glass": "Original cool-grey reflective tint; no scene refraction",
+          "eaveLayers": 3,
+          "brickCourses": 3,
+          "staticMeshCount": 11,
+          "instancedMeshCount": 2,
+          "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+        }
+      ],
+      "scope": "Only the two existing lane houses are detailed. Building positions, original footprint collisions, eye height and three exhibit collections remain the same. Fixed original architecture, not interactive doors or source assets."
+    },
+    "exhibits": [
+      {
+        "id": "visual-systems",
+        "role": "纸档案、主题色与实际展厅画面",
+        "objects": [
+          "双页作品档案",
+          "三种展厅主题样板",
+          "CASE 01 实际运行画面"
+        ],
+        "relatedCases": [
+          1
+        ],
+        "page": "./?id=1",
+        "defaultRecipe": null
+      },
+      {
+        "id": "product-lab",
+        "role": "实体琴键、机器人与猫、默认配方谱板",
+        "objects": [
+          "微缩实体琴键",
+          "原创机器人与猫",
+          "默认 32 音符 / 90 BPM 谱板",
+          "CASE 06 实际运行画面"
+        ],
+        "relatedCases": [
+          6
+        ],
+        "page": "./?id=6",
+        "defaultRecipe": {
+          "mode": "static-default-illustration",
+          "mood": "calm",
+          "noteCount": 32,
+          "tempo": 90
+        }
+      },
+      {
+        "id": "research-notes",
+        "role": "路线沙盘、来源册、案例索引与参观凭证",
+        "objects": [
+          "本例入口与三展位路线沙盘",
+          "原片 00:22 来源册",
+          "观察 / 结论 / 验收索引抽屉",
+          "本次真实参观凭证"
+        ],
+        "relatedCases": [
+          7
+        ],
+        "page": "../#demo-07",
+        "defaultRecipe": null
+      }
+    ],
+    "space": {
+      "phase": "market-square",
+      "discovered": [
+        "visual-systems",
+        "product-lab"
+      ],
+      "booths": [
+        {
+          "id": "visual-systems",
+          "x": -4.6,
+          "z": -0.3,
+          "yaw": 0.13,
+          "approach": {
+            "x": -4.35,
+            "z": 2,
+            "yaw": 0.1,
+            "pitch": 0
+          }
+        },
+        {
+          "id": "product-lab",
+          "x": 2.6,
+          "z": -6.1,
+          "yaw": 0.1,
+          "approach": {
+            "x": 2.8,
+            "z": -3.9,
+            "yaw": 0.1,
+            "pitch": 0
+          }
+        },
+        {
+          "id": "research-notes",
+          "x": 4.5,
+          "z": 0.2,
+          "yaw": -0.12,
+          "approach": {
+            "x": 5.4,
+            "z": 2.5,
+            "yaw": 0.37,
+            "pitch": 0
+          }
+        }
+      ],
+      "entry": {
+        "x": -2.55,
+        "z": 10.8,
+        "yaw": 0.04,
+        "pitch": -0.02
+      }
+    },
+    "walkingDistance": 9.1,
+    "renderer": "webgl",
+    "renderCount": 52,
+    "renderStats": {
+      "drawCalls": 102,
+      "triangles": 27828,
+      "pixelRatio": 1
+    },
+    "assets": {
+      "geometry": "Two original recessed lane facades; existing village buildings and three static content-specific exhibit collections",
+      "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+      "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+    }
+  },
+  "source": "https://x.com/DODOREACH/status/2104821709891404194",
+  "reference": {
+    "focus": "可进入的村镇集市空间：建筑、木石材质、摊位、树木和环境光雾一起建立场景。",
+    "evidence": "原片可见半木屋、集市与密集树木；原文只有能力评价，没有公开内部技术。",
+    "sourceTech": "场景制作工具与素材来源未知。",
+    "ours": "原创木石集市、近地步行与晨昏雾光；入口两座房屋细化窗洞、铅条、百叶、拱门、檐口与墙脚，三个固定展位解释已有成果。",
+    "tech": "本地 Three.js 程序化立面与摄影材质；真实窗洞与内凹门窗建立深度，建筑细节静态批处理。视锥、建筑遮挡及距离影响发现与查看，真实访问驱动凭证。",
+    "value": "把成果展示变成能进入、能找到具体展品的三维虚拟展会。",
+    "check": "入口门窗有真实凹进和框体，步行与建筑遮挡仍成立；三组陈列和本次参观凭证保持一致，导出保留建筑与访问状态。",
+    "boundary": "近景两座建筑与固定陈列是原创几何细化，精度仍低于原片；钢琴谱板为静态默认示意，布局编辑、多人后台和未确认的原作 NPC 对话未实现。",
+    "kernel": "沿眼高巷道近看建筑层次，再发现广场和展位；原碰撞范围与空间关系保持，走近才查看，实际项目功能通过对应入口操作。"
+  },
+  "optimization": {
+    "caseId": 7,
+    "sourceTarget": "原作 07 的 00:22 眼平窄巷可见凹进菱形铅窗、百叶及铰链、右侧拱门、层次屋檐和砖石地脚，建筑遮挡远处摊位，步行后逐渐进入集市。原作者工具链与 NPC 对话机制未确认。",
+    "diagnosis": "三处差异展台和真实参观机制已建立，但入口两座房屋侧墙仍是大片平整浅墙和粗木格；窗玻璃贴在实心墙外，地脚是重复同色方块，近景没有原作可见的窗洞、檐口及石材层次。",
+    "priority": "只精修入口两座房屋的近景立面，让沿石巷真实前进时能看到内凹窗、铰链百叶、拱门、层次屋檐和错缝地脚，保留已有碰撞、发现门槛与三处差异陈列。",
+    "changes": [
+      "两座原位置房屋重建真实开孔墙皮，16 处窗玻璃退后 20cm，加入菱形铅条、32 片固定百叶和 64 处铰链。左侧暖色木构与右侧浅色砖石墙形成差异。",
+      "右侧固定拱门用实际楔形拱石与凹进门板，左侧保留矩形木门；加入三层檐口、椽端和三道错缝石材地脚，单块石材用已有 CC0 concrete_floor 矿物纹理，取消砖内重复小砖图案。",
+      "入口窗改为冷灰反光及少量不均匀色透光，晨光、黄昏和夜景读取实际亮度；避免像明亮纸板，保留清楚的铅条和真实窗框深度。",
+      "静态批处理后每座为 11 个静态 mesh 和 2 个瓦片实例 mesh；入口相对上一轮只加 4 个 draw calls，三角形增加约 10.2%。architecture 同时进入真实场景状态与参观 JSON，原房屋碰撞、眼高及三展品未改。"
+    ],
+    "verify": [
+      "21 项定向检查通过，无页面或资源错误；真实新截图保留入口、窗边、拱门、晨光、夜景和 390px 手机，完整报告见 case-07-architecture-verification.json。",
+      "两侧实际推墙均不能穿入原建筑边界；入口仍只发现 01，步行后发现 02，转向后才发现 03。凹进窗及拱门没有破坏原视线遮挡。",
+      "走近仍只提示距离，实际按 E 才保存 near-view、真实位置、距离和档案物件；后两处列表直达继续保存 guided-shortcut。",
+      "真实参观 JSON 中 architecture 与当前 getState 完全相同，保留 3 处不同陈列、发现/走近/查看、步行与直达区别；当前 PNG 下载成功。",
+      "实际入口统计由 378 calls / 174878 triangles 变为 382 / 192674，每座仅 11 个批处理静态 mesh；390px 手机无横向溢出，真实封面为 420×263。"
+    ],
+    "remaining": [
+      "本轮只细化入口两座建筑；远处房屋、塔楼、树木和自然资产精度仍低于原片，整体光照与材质还存在程序化场景的差距。",
+      "玻璃是固定冷灰反光和色透光示意，没有场景折射或可看见的真实室内；百叶、门板和展品为固定模型，不能开合或穿门进入。实际项目功能仍通过明确页面入口操作。",
+      "建筑几何、窗洞深度与展台是我们的原创扩展，摄影材质为已有 Poly Haven CC0 资产；原作者完整工具链未确认，也未实现多人或未确认的 NPC 对话。"
+    ]
+  },
+  "scope": "两座入口建筑的原创细化与三组固定静态展品；原作工具链未知，布局编辑未实现。"
+}

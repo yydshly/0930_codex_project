@@ -1,0 +1,156 @@
+{
+  "module": "quest",
+  "status": "playing",
+  "running": false,
+  "renderer": "webgl",
+  "rendering": {
+    "drawCalls": 85,
+    "triangles": 237040,
+    "staticDrawCallsSaved": 5768
+  },
+  "position": {
+    "x": -12.17,
+    "z": -8
+  },
+  "yaw": 1.299,
+  "evidence": [
+    {
+      "id": "archive",
+      "title": "档案来源与时间已核对"
+    }
+  ],
+  "elapsed": 39.3,
+  "destination": null,
+  "dialogueSite": "archive",
+  "interaction": {
+    "site": "archive",
+    "distance": 2.98,
+    "canTalk": true,
+    "sites": [
+      {
+        "id": "hub",
+        "checked": false,
+        "marker": "提交证据"
+      },
+      {
+        "id": "archive",
+        "checked": true,
+        "marker": "已核对"
+      },
+      {
+        "id": "sensor",
+        "checked": false,
+        "marker": "待核对"
+      },
+      {
+        "id": "tower",
+        "checked": false,
+        "marker": "待核对"
+      }
+    ]
+  },
+  "recorders": {
+    "clock": 39.338,
+    "animating": false,
+    "actors": [
+      {
+        "site": "hub",
+        "mode": "idle",
+        "near": false,
+        "checked": false,
+        "eventAge": 0,
+        "yaw": 0,
+        "targetYaw": 0,
+        "pose": {
+          "bodyY": 0.947,
+          "headPitch": 0.0013,
+          "headYaw": 0.021,
+          "rightShoulder": -0.0331,
+          "rightElbow": -0.1,
+          "leftShoulder": -0.34
+        }
+      },
+      {
+        "site": "archive",
+        "mode": "confirm",
+        "near": true,
+        "checked": true,
+        "eventAge": 0.917,
+        "yaw": -1.299,
+        "targetYaw": -1.299,
+        "pose": {
+          "bodyY": 0.9413,
+          "headPitch": -0.1634,
+          "headYaw": -0.0003,
+          "rightShoulder": -0.6885,
+          "rightElbow": -1.0713,
+          "leftShoulder": -0.4799
+        }
+      },
+      {
+        "site": "sensor",
+        "mode": "idle",
+        "near": false,
+        "checked": false,
+        "eventAge": 0,
+        "yaw": 0,
+        "targetYaw": 0,
+        "pose": {
+          "bodyY": 0.9346,
+          "headPitch": 0.0222,
+          "headYaw": 0.0325,
+          "rightShoulder": -0.0716,
+          "rightElbow": -0.1,
+          "leftShoulder": -0.34
+        }
+      },
+      {
+        "site": "tower",
+        "mode": "idle",
+        "near": false,
+        "checked": false,
+        "eventAge": 0,
+        "yaw": 0,
+        "targetYaw": 0,
+        "pose": {
+          "bodyY": 0.932,
+          "headPitch": 0.0023,
+          "headYaw": -0.0144,
+          "rightShoulder": -0.0799,
+          "rightElbow": -0.1,
+          "leftShoulder": -0.34
+        }
+      }
+    ]
+  },
+  "soundEnabled": true,
+  "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+  "scope": "Original small RPG prototype with stylized connected recorder responses; no original source, combat or VATS reproduced.",
+  "log": [
+    {
+      "time": 0,
+      "action": "开始",
+      "detail": "程序化街区任务"
+    },
+    {
+      "time": 17.3,
+      "action": "前往",
+      "detail": "档案站"
+    },
+    {
+      "time": 24.7,
+      "action": "判断未通过",
+      "detail": "档案站"
+    },
+    {
+      "time": 36.5,
+      "action": "前往",
+      "detail": "档案站"
+    },
+    {
+      "time": 38.4,
+      "action": "取得证据",
+      "detail": "档案来源与时间已核对"
+    }
+  ]
+}

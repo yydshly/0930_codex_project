@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-02T11:24:59.987Z",
+  "caseId": 2,
+  "product": "互动任务与剧情训练工具",
+  "task": "移动到地点、选择对话、收齐证据并完成委托。",
+  "state": {
+    "module": "quest",
+    "status": "won",
+    "running": false,
+    "position": {
+      "x": 151,
+      "y": 150
+    },
+    "evidence": [
+      {
+        "id": "archive",
+        "title": "档案来源与时间已核对"
+      },
+      {
+        "id": "sensor",
+        "title": "异常读数与校准已复核"
+      },
+      {
+        "id": "tower",
+        "title": "两次观察的差异已保留"
+      }
+    ],
+    "elapsed": 13,
+    "destination": null,
+    "log": [
+      {
+        "time": 0,
+        "action": "开始",
+        "detail": "现场核对任务"
+      },
+      {
+        "time": 0,
+        "action": "前往",
+        "detail": "档案站"
+      },
+      {
+        "time": 4,
+        "action": "判断",
+        "detail": "档案站：直接选一份结论"
+      },
+      {
+        "time": 4,
+        "action": "判断",
+        "detail": "档案站：核对记录时间与来源"
+      },
+      {
+        "time": 4,
+        "action": "前往",
+        "detail": "传感站"
+      },
+      {
+        "time": 7,
+        "action": "判断",
+        "detail": "传感站：检查校准并重读异常段"
+      },
+      {
+        "time": 7,
+        "action": "前往",
+        "detail": "观测塔"
+      },
+      {
+        "time": 9,
+        "action": "判断",
+        "detail": "观测塔：保留两次观察并比较"
+      },
+      {
+        "time": 9,
+        "action": "前往",
+        "detail": "研究站"
+      },
+      {
+        "time": 13,
+        "action": "完成",
+        "detail": "三份证据提交研究站"
+      }
+    ]
+  },
+  "source": "https://x.com/chrisfirst/status/2104644598626934858",
+  "scope": "原创单关卡，不是 Fallout 的复刻或完整 RPG。"
+}

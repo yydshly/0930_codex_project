@@ -1,0 +1,1555 @@
+{
+  "capturedAt": "2026-10-03T02:13:16.832Z",
+  "environment": "Isolated local headless Chromium/SwiftShader coding verification. This does not inspect the existing IAB tab.",
+  "states": {
+    "1": {
+      "studio": "研究与创作工作室",
+      "subtitle": "把想法做成可以观看、操作和带走的作品。",
+      "theme": "editorial",
+      "filter": "全部",
+      "selected": "011",
+      "focus": "011",
+      "readingPhase": "open",
+      "paper": {
+        "bands": 6,
+        "angle": 155,
+        "bendPerBand": 1.549,
+        "gutterShadow": 0.154,
+        "thickness": 0.7,
+        "model": "bounded visual bend from the actual cover angle"
+      },
+      "visibleProjects": [
+        "011",
+        "008",
+        "010",
+        "009"
+      ],
+      "effect": "物件聚焦、沿书脊翻开、薄纸弯曲与贴页阴影、连续阅读"
+    },
+    "2": {
+      "module": "quest",
+      "status": "playing",
+      "running": false,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 99,
+        "triangles": 288528,
+        "staticDrawCallsSaved": 5768
+      },
+      "position": {
+        "x": -11.84,
+        "z": -8
+      },
+      "yaw": 1.266,
+      "evidence": [],
+      "elapsed": 7.4,
+      "destination": null,
+      "dialogueSite": "archive",
+      "interaction": {
+        "site": "archive",
+        "distance": 2.66,
+        "canTalk": true,
+        "sites": [
+          {
+            "id": "hub",
+            "checked": false,
+            "marker": "提交证据"
+          },
+          {
+            "id": "archive",
+            "checked": false,
+            "marker": "待核对"
+          },
+          {
+            "id": "sensor",
+            "checked": false,
+            "marker": "待核对"
+          },
+          {
+            "id": "tower",
+            "checked": false,
+            "marker": "待核对"
+          }
+        ]
+      },
+      "recorders": {
+        "clock": 7.383,
+        "animating": false,
+        "actors": [
+          {
+            "site": "hub",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "face": {
+              "expression": "neutral",
+              "gaze": "street",
+              "smile": 0,
+              "mouthCurve": 0.2,
+              "browPinch": 0,
+              "blink": 0,
+              "eyeOpen": 1,
+              "pupil": {
+                "x": 0.0001,
+                "y": 0
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "pose": {
+              "bodyY": 0.937,
+              "headPitch": -0.0093,
+              "headYaw": -0.0498,
+              "rightShoulder": -0.0646,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          },
+          {
+            "site": "archive",
+            "mode": "talking",
+            "near": true,
+            "checked": false,
+            "eventAge": 0.058,
+            "yaw": -1.128,
+            "targetYaw": -1.266,
+            "face": {
+              "expression": "listening",
+              "gaze": "player",
+              "smile": 0.0398,
+              "mouthCurve": 0.3273,
+              "browPinch": 0,
+              "blink": 0,
+              "eyeOpen": 1,
+              "pupil": {
+                "x": -0.007,
+                "y": 0
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "pose": {
+              "bodyY": 0.9439,
+              "headPitch": 0.011,
+              "headYaw": -0.3502,
+              "rightShoulder": -0.3553,
+              "rightElbow": -0.8028,
+              "leftShoulder": -0.34
+            }
+          },
+          {
+            "site": "sensor",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "face": {
+              "expression": "neutral",
+              "gaze": "street",
+              "smile": 0,
+              "mouthCurve": 0.2,
+              "browPinch": 0,
+              "blink": 0,
+              "eyeOpen": 1,
+              "pupil": {
+                "x": -0.0028,
+                "y": 0
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "pose": {
+              "bodyY": 0.9479,
+              "headPitch": 0.0249,
+              "headYaw": 0.0244,
+              "rightShoulder": -0.0305,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          },
+          {
+            "site": "tower",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "face": {
+              "expression": "neutral",
+              "gaze": "street",
+              "smile": 0,
+              "mouthCurve": 0.2,
+              "browPinch": 0,
+              "blink": 0,
+              "eyeOpen": 1,
+              "pupil": {
+                "x": -0.0005,
+                "y": 0
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "pose": {
+              "bodyY": 0.9459,
+              "headPitch": 0.0125,
+              "headYaw": 0.0499,
+              "rightShoulder": -0.0365,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          }
+        ]
+      },
+      "soundEnabled": true,
+      "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+      "scope": "Original small RPG prototype with connected recorder poses, event-driven facial geometry and finite gaze; no speech lip-sync, original source, combat or VATS reproduced.",
+      "log": [
+        {
+          "time": 0,
+          "action": "开始",
+          "detail": "程序化街区任务"
+        },
+        {
+          "time": 1.2,
+          "action": "前往",
+          "detail": "档案站"
+        }
+      ]
+    },
+    "3": {
+      "theme": "gold",
+      "seconds": 5,
+      "time": 7.6,
+      "playing": false,
+      "scenes": [
+        {
+          "title": "提出命题",
+          "text": "一次演示，\n等于一件产品吗？"
+        },
+        {
+          "title": "找出边界",
+          "text": "能运行，只是起点。\n换一份输入，还能得到可靠结果吗？"
+        },
+        {
+          "title": "给出结论",
+          "text": "留下反馈，复用流程。\n让每一次创作，成为下一次的起点。"
+        }
+      ],
+      "sequence": {
+        "shot": 1,
+        "progress": 0.5199999999999999,
+        "local": 2.5999999999999996,
+        "bridge": null,
+        "paper": null,
+        "record": null,
+        "continuity": null
+      },
+      "continuityPlan": [
+        {
+          "from": 3,
+          "to": 4,
+          "role": "命题纸页留在检验旁，第二段条件进入墙镜头"
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "role": "同一金色记录点把检验送入制作、检查、调整循环"
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "role": "记录点接到可复用流程曲线的起点，继续沿曲线积累"
+        }
+      ],
+      "totalSeconds": 30,
+      "currentScene": 1,
+      "currentPointIndices": [
+        0
+      ],
+      "currentShot": 2,
+      "exporting": false,
+      "recording": {
+        "phase": "idle",
+        "progress": 0
+      }
+    },
+    "4": {
+      "product": "RESEARCH",
+      "question": "这三个案例，怎样成为可用的研究材料？",
+      "evidenceText": "选中对象后，其他衣物淡出。 | https://x.com/cambreedesigns/status/2104999693113766152\n纸页标题与论证主题相同。 | https://x.com/sevdeawesome/status/2104985610012504181\n同一橙点出现在曲线、环字与点阵中。 | https://x.com/uxmiles/status/2104618175803609305\n同一橙点出现在曲线、环字与点阵中。 | https://x.com/uxmiles/status/2104618175803609305\n待确认：客户是否需要这样的工具。 | ",
+      "theme": "paper",
+      "time": 6.5,
+      "playing": false,
+      "spring": 0.68,
+      "wave": 0.72,
+      "scenes": [
+        {
+          "headline": "从观察，\n开始。",
+          "detail": "保留原作观察与来源，成为一张研究卡。",
+          "seconds": 5
+        },
+        {
+          "headline": "让证据，\n有条理。",
+          "detail": "相同记录合并，缺少来源留待补充。",
+          "seconds": 5
+        },
+        {
+          "headline": "带走一份，\n有来源的成果。",
+          "detail": "研究卡、整理结果与待办，保留在同一份成果包。",
+          "seconds": 5
+        }
+      ],
+      "workflow": {
+        "question": "这三个案例，怎样成为可用的研究材料？",
+        "filename": "研究证据成果.md",
+        "rule": "仅合并内容与来源完全相同的记录；缺少内容或有效 HTTP(S) 来源的记录留作待补。未自动核实来源内容。",
+        "inputCount": 5,
+        "includedCount": 3,
+        "mergedCount": 1,
+        "pendingCount": 1,
+        "records": [
+          {
+            "id": 1,
+            "claim": "选中对象后，其他衣物淡出。",
+            "source": "https://x.com/cambreedesigns/status/2104999693113766152",
+            "status": "included",
+            "reason": "保留填写的来源"
+          },
+          {
+            "id": 2,
+            "claim": "纸页标题与论证主题相同。",
+            "source": "https://x.com/sevdeawesome/status/2104985610012504181",
+            "status": "included",
+            "reason": "保留填写的来源"
+          },
+          {
+            "id": 3,
+            "claim": "同一橙点出现在曲线、环字与点阵中。",
+            "source": "https://x.com/uxmiles/status/2104618175803609305",
+            "status": "included",
+            "reason": "保留填写的来源"
+          },
+          {
+            "id": 4,
+            "claim": "同一橙点出现在曲线、环字与点阵中。",
+            "source": "https://x.com/uxmiles/status/2104618175803609305",
+            "status": "merged",
+            "reason": "内容与来源相同",
+            "duplicateOf": 3
+          },
+          {
+            "id": 5,
+            "claim": "待确认：客户是否需要这样的工具。",
+            "source": "",
+            "status": "needs-source",
+            "reason": "缺少来源"
+          }
+        ],
+        "included": [
+          {
+            "id": 1,
+            "claim": "选中对象后，其他衣物淡出。",
+            "source": "https://x.com/cambreedesigns/status/2104999693113766152",
+            "status": "included",
+            "reason": "保留填写的来源"
+          },
+          {
+            "id": 2,
+            "claim": "纸页标题与论证主题相同。",
+            "source": "https://x.com/sevdeawesome/status/2104985610012504181",
+            "status": "included",
+            "reason": "保留填写的来源"
+          },
+          {
+            "id": 3,
+            "claim": "同一橙点出现在曲线、环字与点阵中。",
+            "source": "https://x.com/uxmiles/status/2104618175803609305",
+            "status": "included",
+            "reason": "保留填写的来源"
+          }
+        ],
+        "merged": [
+          {
+            "id": 4,
+            "claim": "同一橙点出现在曲线、环字与点阵中。",
+            "source": "https://x.com/uxmiles/status/2104618175803609305",
+            "status": "merged",
+            "reason": "内容与来源相同",
+            "duplicateOf": 3
+          }
+        ],
+        "pending": [
+          {
+            "id": 5,
+            "claim": "待确认：客户是否需要这样的工具。",
+            "source": "",
+            "status": "needs-source",
+            "reason": "缺少来源"
+          }
+        ]
+      },
+      "sequence": {
+        "time": 6.5,
+        "start": 0,
+        "end": 15,
+        "openingEnd": 2.25,
+        "inputEnd": 5,
+        "closingStart": 13.9,
+        "foldEnd": 14.4,
+        "phase": "motion",
+        "input": 0,
+        "fold": 0,
+        "close": 0,
+        "knob": null,
+        "operation": {
+          "rule": "仅合并内容与来源完全相同的记录；缺少内容或有效 HTTP(S) 来源的记录留作待补。未自动核实来源内容。",
+          "inputCount": 5,
+          "includedCount": 3,
+          "mergedCount": 1,
+          "pendingCount": 1,
+          "filename": "研究证据成果.md",
+          "resultRetained": true,
+          "downloadClaim": false
+        },
+        "scope": "Time-derived presentation of the real local rule output; no AI verification and no claim that a download has occurred."
+      },
+      "sequencePlan": [
+        {
+          "start": 0,
+          "end": 2.25,
+          "action": "开启本地整理",
+          "object": "胶囊开关"
+        },
+        {
+          "start": 2.25,
+          "end": 5,
+          "action": "开关圆点进入第一张真实研究卡",
+          "object": "第一条输入记录"
+        },
+        {
+          "start": 10,
+          "end": 13.9,
+          "action": "记录合并、待补分区并展示实际成果",
+          "object": "同一整理结果"
+        },
+        {
+          "start": 13.9,
+          "end": 15,
+          "action": "成果收拢后关闭整理，完整文件继续可导出",
+          "object": "同一成果文件"
+        }
+      ],
+      "totalSeconds": 15,
+      "currentScene": 2,
+      "currentEffect": "弹性曲线",
+      "effectProgress": 0.9090909090909091,
+      "effectDuration": 1.6500000000000001,
+      "exporting": false,
+      "recording": {
+        "phase": "idle",
+        "progress": 0
+      }
+    },
+    "5": {
+      "module": "defense",
+      "status": "playing",
+      "running": false,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 81,
+        "triangles": 54074,
+        "pixelRatio": 1,
+        "defaultPixelRatio": 1,
+        "qualityPolicy": "active longest side at most 960px; ready, paused and finished restore default DPR",
+        "canvasPixels": {
+          "width": 1358,
+          "height": 530
+        },
+        "interactiveResolutionLimit": 960,
+        "staticDrawCallsSaved": 354
+      },
+      "wave": 1,
+      "totalWaves": 3,
+      "health": 100,
+      "ammo": 12,
+      "reloading": false,
+      "kills": 0,
+      "shots": 0,
+      "hits": 0,
+      "attacks": 0,
+      "dodgedAttacks": 0,
+      "incomingHits": 0,
+      "attackTiming": {
+        "clock": "wall-clock",
+        "reactionStart": "after first warning draw; active wall clock excludes hidden intervals",
+        "maxIntegrationStep": 0.008333333333333333,
+        "trigger": 1.45,
+        "reach": 1.6,
+        "frontDot": 0.45,
+        "windup": 0.85,
+        "strike": 0.22,
+        "recovery": 0.9
+      },
+      "elapsed": 0.3,
+      "shotPresentation": {
+        "clock": "active-wall-clock",
+        "duration": 0.42,
+        "age": null,
+        "recoil": {
+          "kick": 0,
+          "return": 0,
+          "position": {
+            "x": 0.34,
+            "y": -0.2743,
+            "z": -0.72
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "affectsAim": false
+        },
+        "visible": {
+          "muzzle": false,
+          "tracer": false,
+          "impact": false
+        },
+        "lastShot": null
+      },
+      "feedback": {
+        "canFire": false,
+        "lastShotResult": "none",
+        "hitConfirmed": false,
+        "damageCue": false,
+        "lastImpact": null
+      },
+      "player": {
+        "x": 0,
+        "z": 6,
+        "yaw": -0.185,
+        "pitch": -0.037
+      },
+      "enemies": [
+        {
+          "id": 1,
+          "x": -2.98,
+          "z": -9.9,
+          "hp": 2,
+          "attack": {
+            "phase": "pursuit",
+            "phaseElapsed": 0,
+            "cycle": 0,
+            "lockedYaw": 0.185,
+            "lastResult": null,
+            "lastDistance": null,
+            "visibleWindupWallSeconds": null
+          }
+        }
+      ],
+      "scope": "Original FPS room and robots. No COD code/assets ported. Ray hits, simple pursuit, telegraphed directional melee with range-checked strike, cover collision, three waves. Weapon recoil is a bounded visual response only; camera aiming is unchanged. Tracer starts at the actual weapon muzzle; sparks require a real ray intersection. Active play is limited to 960px; ready/paused/finished restore default clarity.",
+      "log": [
+        {
+          "time": 0,
+          "action": "波次开始",
+          "detail": 1
+        }
+      ]
+    },
+    "6": {
+      "shot": "close",
+      "mood": "calm",
+      "tempo": 90,
+      "volume": 25,
+      "playing": false,
+      "progress": 0.07,
+      "noteIndex": 2,
+      "playedNotes": 0,
+      "renderer": "webgl",
+      "recording": false,
+      "workflow": "shared-events → audio + character/key poses",
+      "blenderRendered": false,
+      "renderedFrames": 5,
+      "exportedFrames": 0,
+      "schemaVersion": 2,
+      "title": "FIELD DUET",
+      "duration": 21.333333333333332,
+      "fps": 24,
+      "notes": [
+        {
+          "midi": 60,
+          "at": 0,
+          "duration": 0.6666666666666666,
+          "bass": 48
+        },
+        {
+          "midi": 64,
+          "at": 0.6666666666666666,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 67,
+          "at": 1.3333333333333333,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 72,
+          "at": 2,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 69,
+          "at": 2.6666666666666665,
+          "duration": 0.6666666666666666,
+          "bass": 57
+        },
+        {
+          "midi": 67,
+          "at": 3.3333333333333335,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 64,
+          "at": 4,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 62,
+          "at": 4.666666666666667,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 60,
+          "at": 5.333333333333333,
+          "duration": 0.6666666666666666,
+          "bass": 48
+        },
+        {
+          "midi": 64,
+          "at": 6,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 65,
+          "at": 6.666666666666667,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 69,
+          "at": 7.333333333333333,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 67,
+          "at": 8,
+          "duration": 0.6666666666666666,
+          "bass": 55
+        },
+        {
+          "midi": 64,
+          "at": 8.666666666666666,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 62,
+          "at": 9.333333333333334,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 60,
+          "at": 10,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 60,
+          "at": 10.666666666666666,
+          "duration": 0.6666666666666666,
+          "bass": 48
+        },
+        {
+          "midi": 64,
+          "at": 11.333333333333334,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 67,
+          "at": 12,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 72,
+          "at": 12.666666666666666,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 69,
+          "at": 13.333333333333334,
+          "duration": 0.6666666666666666,
+          "bass": 57
+        },
+        {
+          "midi": 67,
+          "at": 14,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 64,
+          "at": 14.666666666666666,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 62,
+          "at": 15.333333333333334,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 72,
+          "at": 16,
+          "duration": 0.6666666666666666,
+          "bass": 60
+        },
+        {
+          "midi": 64,
+          "at": 16.666666666666668,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 65,
+          "at": 17.333333333333332,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 69,
+          "at": 18,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 79,
+          "at": 18.666666666666668,
+          "duration": 0.6666666666666666,
+          "bass": 67
+        },
+        {
+          "midi": 64,
+          "at": 19.333333333333332,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 62,
+          "at": 20,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 60,
+          "at": 20.666666666666668,
+          "duration": 0.6666666666666666,
+          "bass": null
+        }
+      ],
+      "source": "https://x.com/kevin_t_ngo/status/2105304249060274631",
+      "sourceWorkflow": "Python composition / Python animation / Blender rendering",
+      "ours": "Original characters and scene. Browser preview uses Three.js/Web Audio. Export script uses wave and bpy; enhanced browser materials and key-contact poses are not ported to the bpy example.",
+      "audioState": "not-started",
+      "characters": [
+        "research-robot",
+        "cat"
+      ],
+      "scene": "wooden-piano-room",
+      "samplePreview": {
+        "mood": "bright",
+        "tempo": 150,
+        "shot": "close",
+        "duration": 12.8,
+        "playing": false,
+        "currentTime": 0
+      },
+      "performance": {
+        "performer": "robot",
+        "midi": 67,
+        "keyPosition": {
+          "x": 0.1609999999999996,
+          "y": 1.69,
+          "z": 0.97
+        },
+        "effectorPosition": {
+          "x": 0.1609999999999996,
+          "y": 1.6900000000000002,
+          "z": 0.97
+        },
+        "contactDistance": 2.220446049250313e-16,
+        "pressure": 1,
+        "pressedKeys": [
+          67
+        ],
+        "index": 2,
+        "support": {
+          "robot": [
+            {
+              "name": "robot-foot-0",
+              "stance": true,
+              "grounded": true,
+              "lift": 0,
+              "surface": 1.78,
+              "worldPosition": [
+                -0.4899999999999998,
+                1.845,
+                0.9
+              ]
+            },
+            {
+              "name": "robot-foot-1",
+              "stance": false,
+              "grounded": true,
+              "lift": 0,
+              "surface": 1.69,
+              "worldPosition": [
+                0.25986757526782206,
+                1.755,
+                0.9
+              ]
+            }
+          ],
+          "cat": [
+            {
+              "name": "cat-paw-0",
+              "stance": false,
+              "grounded": true,
+              "lift": 0,
+              "surface": 1.78,
+              "worldPosition": [
+                0.5801367419738395,
+                1.85,
+                0.67
+              ]
+            },
+            {
+              "name": "cat-paw-1",
+              "stance": true,
+              "grounded": true,
+              "lift": 0,
+              "surface": 1.78,
+              "worldPosition": [
+                0.7374999999999999,
+                1.85,
+                0.97
+              ]
+            },
+            {
+              "name": "cat-paw-2",
+              "stance": true,
+              "grounded": true,
+              "lift": 0,
+              "surface": 1.78,
+              "worldPosition": [
+                1.255,
+                1.85,
+                0.67
+              ]
+            },
+            {
+              "name": "cat-paw-3",
+              "stance": true,
+              "grounded": true,
+              "lift": 0,
+              "surface": 1.78,
+              "worldPosition": [
+                1.1824999999999999,
+                1.85,
+                0.97
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "7": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": null,
+      "visits": [],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": -2.55,
+        "z": 10.8,
+        "yaw": 0.04,
+        "pitch": -0.02
+      },
+      "reached": [],
+      "proximity": {
+        "id": "visual-systems",
+        "distance": 11.29,
+        "canView": false,
+        "viewed": false
+      },
+      "architecture": {
+        "nearHouseCount": 2,
+        "windowCount": 16,
+        "shutterLeafCount": 32,
+        "hingeCount": 64,
+        "archDoorCount": 1,
+        "recessDepth": 0.2,
+        "eaveLayers": 3,
+        "brickCourses": 3,
+        "glassEmissiveIntensity": 0.055,
+        "nearHouses": [
+          {
+            "position": {
+              "x": -7,
+              "z": 5.8
+            },
+            "width": 4.4,
+            "height": 4.5,
+            "depth": 5,
+            "type": "warm timber lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 0,
+            "rectDoorCount": 1,
+            "brickCount": 97,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          },
+          {
+            "position": {
+              "x": 1.4,
+              "z": 6
+            },
+            "width": 6,
+            "height": 4.3,
+            "depth": 4.6,
+            "type": "pale masonry lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 1,
+            "rectDoorCount": 0,
+            "brickCount": 119,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          }
+        ],
+        "scope": "Only the two existing lane houses are detailed. Building positions, original footprint collisions, eye height and three exhibit collections remain the same. Fixed original architecture, not interactive doors or source assets."
+      },
+      "exhibits": [
+        {
+          "id": "visual-systems",
+          "role": "纸档案、主题色与实际展厅画面",
+          "objects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ],
+          "relatedCases": [
+            1
+          ],
+          "page": "./?id=1",
+          "defaultRecipe": null
+        },
+        {
+          "id": "product-lab",
+          "role": "实体琴键、机器人与猫、默认配方谱板",
+          "objects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ],
+          "relatedCases": [
+            6
+          ],
+          "page": "./?id=6",
+          "defaultRecipe": {
+            "mode": "static-default-illustration",
+            "mood": "calm",
+            "noteCount": 32,
+            "tempo": 90
+          }
+        },
+        {
+          "id": "research-notes",
+          "role": "路线沙盘、来源册、案例索引与参观凭证",
+          "objects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ],
+          "relatedCases": [
+            7
+          ],
+          "page": "../#demo-07",
+          "defaultRecipe": null
+        }
+      ],
+      "space": {
+        "phase": "entrance-lane",
+        "discovered": [
+          "visual-systems"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 0,
+      "renderer": "webgl",
+      "renderCount": 23,
+      "renderStats": {
+        "drawCalls": 382,
+        "triangles": 192674,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Two original recessed lane facades; existing village buildings and three static content-specific exhibit collections",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+        "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+      }
+    },
+    "8": {
+      "module": "mascot",
+      "status": "ready",
+      "mode": "sandbox",
+      "running": false,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 16,
+        "triangles": 106354,
+        "pixelRatio": 1,
+        "defaultPixelRatio": 1,
+        "canvasPixels": {
+          "width": 1358,
+          "height": 520
+        },
+        "interactiveResolutionLimit": 960,
+        "attachmentBatches": 3,
+        "skinTriangles": 49288,
+        "attachmentTriangles": 28480,
+        "analyticNormals": true,
+        "drawUpdates": {
+          "submitted": 2,
+          "skipped": 0,
+          "lastGeometryMs": 1,
+          "lastSubmitMs": 1.5
+        },
+        "staticDrawCallsSaved": 0
+      },
+      "input": {
+        "received": 0,
+        "applied": 0,
+        "coalesced": 0,
+        "flushedOnRelease": 0,
+        "pending": 0,
+        "mode": "one deformation update per animation frame, final pointer target flushed on release"
+      },
+      "selected": "rabbit",
+      "shownCharacters": [
+        "rabbit",
+        "dumpling",
+        "cat"
+      ],
+      "target": null,
+      "pokes": 0,
+      "hits": 0,
+      "goal": null,
+      "combo": 0,
+      "maxCombo": 0,
+      "misses": 0,
+      "remaining": null,
+      "elapsed": 0,
+      "softness": 65,
+      "gravity": true,
+      "soundEnabled": true,
+      "viewAngle": 0,
+      "characters": [
+        {
+          "id": "rabbit",
+          "name": "粉兔",
+          "height": 0,
+          "deformation": 0,
+          "localIndent": 0,
+          "activePart": null,
+          "dragging": false,
+          "stretch": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "deformedParts": [],
+          "vertexCount": 9098,
+          "surface": {
+            "type": "continuous-skin",
+            "boundaryEdges": 0,
+            "restVolume": 3.5416,
+            "volumeBeforeCompensation": 1,
+            "volumeAfterCompensation": 1,
+            "transverseThicknessRatio": 1,
+            "compensationCoefficient": 0,
+            "minimumJacobian": 1,
+            "regions": [
+              "body",
+              "head",
+              "leftEar",
+              "leftHand",
+              "leftFoot",
+              "rightEar",
+              "rightHand",
+              "rightFoot"
+            ]
+          }
+        },
+        {
+          "id": "dumpling",
+          "name": "橙团",
+          "height": 0,
+          "deformation": 0,
+          "localIndent": 0,
+          "activePart": null,
+          "dragging": false,
+          "stretch": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "deformedParts": [],
+          "vertexCount": 7526,
+          "surface": {
+            "type": "continuous-skin",
+            "boundaryEdges": 0,
+            "restVolume": 3.6027,
+            "volumeBeforeCompensation": 1,
+            "volumeAfterCompensation": 1,
+            "transverseThicknessRatio": 1,
+            "compensationCoefficient": 0,
+            "minimumJacobian": 1,
+            "regions": [
+              "body"
+            ]
+          }
+        },
+        {
+          "id": "cat",
+          "name": "薄荷猫",
+          "height": 0,
+          "deformation": 0,
+          "localIndent": 0,
+          "activePart": null,
+          "dragging": false,
+          "stretch": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "deformedParts": [],
+          "vertexCount": 8026,
+          "surface": {
+            "type": "continuous-skin",
+            "boundaryEdges": 0,
+            "restVolume": 3.6863,
+            "volumeBeforeCompensation": 1,
+            "volumeAfterCompensation": 1,
+            "transverseThicknessRatio": 1,
+            "compensationCoefficient": 0,
+            "minimumJacobian": 1,
+            "regions": [
+              "body",
+              "leftEar",
+              "rightEar"
+            ]
+          }
+        }
+      ],
+      "scope": "Original continuous procedural skins. Local spring fields and bounded transverse thickness compensation, not exact volume conservation or full soft-body physics. Combo challenge is our optional extension.",
+      "log": []
+    },
+    "9": {
+      "weather": "clear",
+      "hour": 15,
+      "density": 24,
+      "running": false,
+      "time": 0.7268000000000008,
+      "visited": [],
+      "selected": null,
+      "solar": 71,
+      "water": 54,
+      "renderer": "webgl",
+      "fireLit": true,
+      "boatBoarded": false,
+      "boatHeading": 3.141592653589793,
+      "boatSpeed": 0,
+      "boatDistance": 0,
+      "boatBlocked": false,
+      "boatBlockedBy": null,
+      "boatSteeringBlocked": false,
+      "interactions": [],
+      "arrivalLog": [],
+      "boat": {
+        "x": -15,
+        "z": 7,
+        "heading": 3.141592653589793,
+        "speed": 0,
+        "distance": 0,
+        "blocked": false
+      },
+      "weatherName": "晴天",
+      "mode": "first-person",
+      "camera": {
+        "x": 0.5,
+        "z": 11.8,
+        "yaw": 0.55,
+        "pitch": -0.025
+      },
+      "cameraWorld": {
+        "x": 0.5,
+        "y": 1.7850969295872305,
+        "z": 11.8
+      },
+      "boatView": null,
+      "camper": {
+        "x": 0.5,
+        "z": 11.8
+      },
+      "environmentDetail": {
+        "shoreline": "continuous damp-sand and pebble transition",
+        "shoreLength": 72,
+        "wetSandWidth": 3.36,
+        "wetSandRoughness": 0.63,
+        "rockCount": 24,
+        "pebbleInstances": 170,
+        "solidRockColliders": 24,
+        "shoreRocks": [
+          {
+            "x": -5.207636708888082,
+            "z": -30.955041554807725,
+            "radius": 1.577669443001663
+          },
+          {
+            "x": -5.338645660003513,
+            "z": -30.949027399485026,
+            "radius": 1.1015227539516266
+          },
+          {
+            "x": -6.05733234116858,
+            "z": -29.12605237609339,
+            "radius": 0.4730797858471794
+          },
+          {
+            "x": -5.990951328458069,
+            "z": -21.95199984801188,
+            "radius": 1.8463816513366826
+          },
+          {
+            "x": -7.266357338977229,
+            "z": -22.16608737843678,
+            "radius": 0.5836810401302586
+          },
+          {
+            "x": -5.509755064577417,
+            "z": -21.919641836657785,
+            "radius": 0.8198605462870192
+          },
+          {
+            "x": -7.824227019590734,
+            "z": -16.694973301324037,
+            "radius": 1.6514991438682183
+          },
+          {
+            "x": -7.145282608202187,
+            "z": -16.92858891601543,
+            "radius": 0.501877071427067
+          },
+          {
+            "x": -7.997643936033226,
+            "z": -15.020537587181234,
+            "radius": 0.4911963176645304
+          },
+          {
+            "x": -6.525739559230102,
+            "z": -8.665906285555947,
+            "radius": 1.9726902575722804
+          },
+          {
+            "x": -7.115826233724851,
+            "z": -9.496354367859992,
+            "radius": 0.8687811671912494
+          },
+          {
+            "x": -6.391047484746196,
+            "z": -8.624666119669254,
+            "radius": 0.5661454064903273
+          },
+          {
+            "x": -7.407715858086946,
+            "z": -2.446311424250073,
+            "radius": 1.9391814105950123
+          },
+          {
+            "x": -7.592431672774924,
+            "z": -3.685138658885973,
+            "radius": 0.682120185656585
+          },
+          {
+            "x": -8.134937009833031,
+            "z": -2.4002750476824817,
+            "radius": 0.5988334355939491
+          },
+          {
+            "x": -4.714947126589726,
+            "z": 11.488899368037377,
+            "radius": 1.4021087005940347
+          },
+          {
+            "x": -5.303961027001054,
+            "z": 11.577615978454814,
+            "radius": 0.6739520589950979
+          },
+          {
+            "x": -6.113082982940736,
+            "z": 10.990102341296247,
+            "radius": 0.525266986658114
+          },
+          {
+            "x": -5.08605584238375,
+            "z": 20.07306771350379,
+            "radius": 1.3912114352092253
+          },
+          {
+            "x": -6.460354570803496,
+            "z": 20.23360440817997,
+            "radius": 0.4656095601484269
+          },
+          {
+            "x": -4.957670564426667,
+            "z": 19.004817441482857,
+            "radius": 0.5845337504973018
+          },
+          {
+            "x": -6.962208064812631,
+            "z": 28.246199793504736,
+            "radius": 1.9531125755730203
+          },
+          {
+            "x": -8.29490829735261,
+            "z": 29.37590636618054,
+            "radius": 0.5290974407280772
+          },
+          {
+            "x": -6.740420228948478,
+            "z": 29.053197075103594,
+            "radius": 0.49457395635784973
+          }
+        ],
+        "boatRockBoundary": "oriented ellipse (1m half-width, 2.1m half-length) expanded by each solid rock radius; no rigid-body contact",
+        "undergrowthPockets": 104,
+        "visibleUndergrowthPockets": 84,
+        "totalBroadLeaves": 728,
+        "visibleBroadLeaves": 582,
+        "weather": "clear",
+        "hour": 15,
+        "windStrength": 1,
+        "water": "view-distance filtered procedural ripples; sky HDR reflection; no scene refraction",
+        "assets": "original procedural mesh and existing CC0 sand/stone maps",
+        "visiblePalms": 30,
+        "totalPalms": 50,
+        "grassInstances": 1440,
+        "waterState": {
+          "roughWeather": 0,
+          "light": 0.7071067811865476,
+          "skyReflection": true,
+          "animationTime": 0.7268000000000008
+        }
+      },
+      "exploration": {
+        "distance": 0,
+        "steps": 0,
+        "renderCount": 48,
+        "drawCalls": 148,
+        "triangles": 187492,
+        "pixelRatio": 1
+      },
+      "rules": {
+        "transmission": {
+          "clear": 1,
+          "cloud": 0.45,
+          "rain": 0.2,
+          "storm": 0.12
+        },
+        "solar": "optional illustrative daylight*transmission*100",
+        "water": "optional illustrative min(100,30+rainIncrement+density)"
+      },
+      "reference": {
+        "workflow": "Native Three.js environment integration",
+        "assets": "Original detailed procedural geometry, Poly Haven CC0 photographed PBR and HDR sky"
+      }
+    },
+    "10": {
+      "module": "soccer",
+      "status": "ready",
+      "running": false,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 100,
+        "triangles": 97510,
+        "staticDrawCallsSaved": 350
+      },
+      "score": 0,
+      "goal": 3,
+      "remaining": 90,
+      "elapsed": 0,
+      "boost": 100,
+      "boosting": false,
+      "friction": 20,
+      "restitution": 72,
+      "cameraMode": "chase",
+      "speed": 0,
+      "cameraFov": 66,
+      "cameraTarget": {
+        "x": 0,
+        "y": 1.35,
+        "z": 12.5
+      },
+      "cameraPosition": {
+        "x": -0.7,
+        "y": 3.65,
+        "z": 23.4
+      },
+      "collisions": 0,
+      "jumps": 0,
+      "vehicleFeedback": {
+        "grounded": true,
+        "frontMinusRearHeight": 0,
+        "rightMinusLeftHeight": 0,
+        "bodyPitch": 0,
+        "bodyRoll": 0,
+        "bodyHeave": 0,
+        "tireRadius": 0.38,
+        "maxWheelAxisVertical": 0,
+        "tireBottom": 0,
+        "suspensionLinkMaxError": 0,
+        "brakeCount": 0,
+        "lastBrakeSpeedDelta": 0,
+        "lastBrakeMinPitch": 0,
+        "landingCount": 0,
+        "lastLandingSpeed": 0,
+        "lastLandingCompression": 0,
+        "contactCount": 0,
+        "lastContactImpulse": 0,
+        "lastContactPitchKick": 0,
+        "lastContactRollKick": 0,
+        "contactAge": null,
+        "scope": "Visual spring response from actual acceleration, contact impulse and landing velocity; simplified vehicle contact remains unchanged."
+      },
+      "wheelRotationX": 0,
+      "ballRotation": {
+        "x": 0,
+        "z": 0
+      },
+      "maxBallHeight": 1.05,
+      "car": {
+        "x": 0,
+        "y": 0.65,
+        "z": 17,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0,
+        "yaw": 0
+      },
+      "ball": {
+        "x": 0,
+        "y": 1.05,
+        "z": 8,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0
+      },
+      "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+      "log": []
+    }
+  },
+  "errors": []
+}

@@ -1,0 +1,61 @@
+{
+  "checkedAt": "2026-10-02",
+  "modules": [
+    {
+      "id": 1,
+      "sourceFile": "web/labs/portfolio-reference.json",
+      "effects": "CSS 透视挂架、悬停正面展开、左右/拖动聚焦、单件详情和离线空间交互",
+      "outputs": [
+        "notes/reference-motion-downloads/研究空间作品集.html",
+        "notes/reference-motion-downloads/空间作品集.json"
+      ]
+    },
+    {
+      "id": 3,
+      "sourceFile": "web/labs/essay-reference.json",
+      "effects": "六镜论证：星空打字、线框工具类比、档案、砖墙、投影球体与曲线",
+      "outputs": [
+        "notes/reference-motion-downloads/研究观点-六镜论证.webm",
+        "notes/reference-motion-downloads/研究观点-论证脚本.json"
+      ],
+      "duration": 12,
+      "codec": "VP9",
+      "frames": 721
+    },
+    {
+      "id": 4,
+      "sourceFile": "web/labs/launch-reference.json",
+      "effects": "大字、几何开关、可调弹性曲线、环形文字、点阵波与品牌回收",
+      "outputs": [
+        "notes/reference-motion-downloads/研究工作台-几何动效.webm",
+        "notes/reference-motion-downloads/研究工作台-动效分镜.md"
+      ],
+      "duration": 9,
+      "codec": "VP9",
+      "frames": 540
+    }
+  ],
+  "qa": {
+    "interaction": "notes/reference-motion-verification.json",
+    "final": "notes/reference-motion-seek-verification.json",
+    "screenshots": "F:/codex_project/0930_codex_project/projects/015-ai-creative-products/assets/qa/reference-upgrade",
+    "passed": 40,
+    "pageErrors": 0
+  },
+  "references": {
+    "method": "Playwright 原生远程 video.src 播放/seek 截图；没有保存或再分发原视频",
+    "record": "notes/reference-motion-source-observations.json"
+  },
+  "recording": {
+    "helper": "web/labs/motion-export.js",
+    "api": "finalizeWebM(chunks, seconds) → Promise<Blob>",
+    "validated": "下载文件显示有限片长，可在 file:// 定位中段并播放；03/04无声。",
+    "note": "浏览器帧率受设备影响；元数据和关键帧索引保留原视频编码数据。带音轨06由主代理单独核对。"
+  },
+  "limits": [
+    "不复现原作者完整工具链或提示过程。",
+    "观点与品牌内容由我们改写；曲线非实测数据。",
+    "SVG 为当前 PNG 的内嵌封装，不是完整矢量场景。",
+    "WebM 为原创代码动画，不是生成式摄影影片；无声，不提供 MP4。"
+  ]
+}

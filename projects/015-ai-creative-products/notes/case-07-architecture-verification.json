@@ -1,0 +1,3086 @@
+{
+  "caseId": 7,
+  "checkedAt": "2026-10-03T00:52:48.466Z",
+  "checks": [
+    "两座入口建筑及真实凹进窗、百叶铰链、拱门成功构建：通过",
+    "原入口眼高路径、房屋位置和尺寸保留：通过",
+    "原建筑遮挡仍使入口只发现第一处展位：通过",
+    "远处实际查看动作仍不写入访问：通过",
+    "左侧凹进窗及门保持原碰撞边界，推墙不能穿入建筑：通过",
+    "右侧拱门及窗洞保持原碰撞边界，推墙不能穿入建筑：通过",
+    "真实步行露出第二处展位且第三处仍需转向：通过",
+    "转向发现第三处展位，视线门槛保持：通过",
+    "接近仅产生实际距离提示，不自动写入查看：通过",
+    "实际 E 查看保留 near-view 和真实位置距离及三件档案物件：通过",
+    "原三种差异陈列和真实相关案例保持：通过",
+    "实际参观导出的建筑摘要与当前场景完全相同：通过",
+    "实际导出保留三处展品、发现/走近与步行/直达区别：通过",
+    "当前真实近看场景 PNG 下载成功：通过",
+    "入口冷灰窗实际 morning 亮度随已有环境变化：通过",
+    "入口冷灰窗实际 night 亮度随已有环境变化：通过",
+    "入口冷灰窗实际 dusk 亮度随已有环境变化：通过",
+    "近景静态批处理保持适度绘制规模：通过",
+    "390px 手机入口及真实导出无横向溢出：通过",
+    "实际精修入口帧形成420×263封面：通过",
+    "本例无页面和资源错误：通过"
+  ],
+  "errors": [],
+  "states": {
+    "entry": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": null,
+      "visits": [],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": -2.55,
+        "z": 10.8,
+        "yaw": 0.04,
+        "pitch": -0.02
+      },
+      "reached": [],
+      "proximity": {
+        "id": "visual-systems",
+        "distance": 11.29,
+        "canView": false,
+        "viewed": false
+      },
+      "architecture": {
+        "nearHouseCount": 2,
+        "windowCount": 16,
+        "shutterLeafCount": 32,
+        "hingeCount": 64,
+        "archDoorCount": 1,
+        "recessDepth": 0.2,
+        "eaveLayers": 3,
+        "brickCourses": 3,
+        "glassEmissiveIntensity": 0.055,
+        "nearHouses": [
+          {
+            "position": {
+              "x": -7,
+              "z": 5.8
+            },
+            "width": 4.4,
+            "height": 4.5,
+            "depth": 5,
+            "type": "warm timber lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 0,
+            "rectDoorCount": 1,
+            "brickCount": 97,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          },
+          {
+            "position": {
+              "x": 1.4,
+              "z": 6
+            },
+            "width": 6,
+            "height": 4.3,
+            "depth": 4.6,
+            "type": "pale masonry lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 1,
+            "rectDoorCount": 0,
+            "brickCount": 119,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          }
+        ],
+        "scope": "Only the two existing lane houses are detailed. Building positions, original footprint collisions, eye height and three exhibit collections remain the same. Fixed original architecture, not interactive doors or source assets."
+      },
+      "exhibits": [
+        {
+          "id": "visual-systems",
+          "role": "纸档案、主题色与实际展厅画面",
+          "objects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ],
+          "relatedCases": [
+            1
+          ],
+          "page": "./?id=1",
+          "defaultRecipe": null
+        },
+        {
+          "id": "product-lab",
+          "role": "实体琴键、机器人与猫、默认配方谱板",
+          "objects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ],
+          "relatedCases": [
+            6
+          ],
+          "page": "./?id=6",
+          "defaultRecipe": {
+            "mode": "static-default-illustration",
+            "mood": "calm",
+            "noteCount": 32,
+            "tempo": 90
+          }
+        },
+        {
+          "id": "research-notes",
+          "role": "路线沙盘、来源册、案例索引与参观凭证",
+          "objects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ],
+          "relatedCases": [
+            7
+          ],
+          "page": "../#demo-07",
+          "defaultRecipe": null
+        }
+      ],
+      "space": {
+        "phase": "entrance-lane",
+        "discovered": [
+          "visual-systems"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 0,
+      "renderer": "webgl",
+      "renderCount": 23,
+      "renderStats": {
+        "drawCalls": 382,
+        "triangles": 192674,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Two original recessed lane facades; existing village buildings and three static content-specific exhibit collections",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+        "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+      }
+    },
+    "leftCollision": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": null,
+      "visits": [],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": -4.056203318075272,
+        "z": 7.49447860434913,
+        "yaw": 1.48,
+        "pitch": -0.02
+      },
+      "reached": [],
+      "proximity": {
+        "id": "visual-systems",
+        "distance": 7.81,
+        "canView": false,
+        "viewed": false
+      },
+      "architecture": {
+        "nearHouseCount": 2,
+        "windowCount": 16,
+        "shutterLeafCount": 32,
+        "hingeCount": 64,
+        "archDoorCount": 1,
+        "recessDepth": 0.2,
+        "eaveLayers": 3,
+        "brickCourses": 3,
+        "glassEmissiveIntensity": 0.055,
+        "nearHouses": [
+          {
+            "position": {
+              "x": -7,
+              "z": 5.8
+            },
+            "width": 4.4,
+            "height": 4.5,
+            "depth": 5,
+            "type": "warm timber lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 0,
+            "rectDoorCount": 1,
+            "brickCount": 97,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          },
+          {
+            "position": {
+              "x": 1.4,
+              "z": 6
+            },
+            "width": 6,
+            "height": 4.3,
+            "depth": 4.6,
+            "type": "pale masonry lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 1,
+            "rectDoorCount": 0,
+            "brickCount": 119,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          }
+        ],
+        "scope": "Only the two existing lane houses are detailed. Building positions, original footprint collisions, eye height and three exhibit collections remain the same. Fixed original architecture, not interactive doors or source assets."
+      },
+      "exhibits": [
+        {
+          "id": "visual-systems",
+          "role": "纸档案、主题色与实际展厅画面",
+          "objects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ],
+          "relatedCases": [
+            1
+          ],
+          "page": "./?id=1",
+          "defaultRecipe": null
+        },
+        {
+          "id": "product-lab",
+          "role": "实体琴键、机器人与猫、默认配方谱板",
+          "objects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ],
+          "relatedCases": [
+            6
+          ],
+          "page": "./?id=6",
+          "defaultRecipe": {
+            "mode": "static-default-illustration",
+            "mood": "calm",
+            "noteCount": 32,
+            "tempo": 90
+          }
+        },
+        {
+          "id": "research-notes",
+          "role": "路线沙盘、来源册、案例索引与参观凭证",
+          "objects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ],
+          "relatedCases": [
+            7
+          ],
+          "page": "../#demo-07",
+          "defaultRecipe": null
+        }
+      ],
+      "space": {
+        "phase": "entrance-lane",
+        "discovered": [
+          "visual-systems"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 4.58,
+      "renderer": "webgl",
+      "renderCount": 53,
+      "renderStats": {
+        "drawCalls": 51,
+        "triangles": 70124,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Two original recessed lane facades; existing village buildings and three static content-specific exhibit collections",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+        "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+      }
+    },
+    "leftBlocked": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": null,
+      "visits": [],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": -4.056203318075272,
+        "z": 7.367538330099096,
+        "yaw": 1.48,
+        "pitch": -0.02
+      },
+      "reached": [],
+      "proximity": {
+        "id": "visual-systems",
+        "distance": 7.69,
+        "canView": false,
+        "viewed": false
+      },
+      "architecture": {
+        "nearHouseCount": 2,
+        "windowCount": 16,
+        "shutterLeafCount": 32,
+        "hingeCount": 64,
+        "archDoorCount": 1,
+        "recessDepth": 0.2,
+        "eaveLayers": 3,
+        "brickCourses": 3,
+        "glassEmissiveIntensity": 0.055,
+        "nearHouses": [
+          {
+            "position": {
+              "x": -7,
+              "z": 5.8
+            },
+            "width": 4.4,
+            "height": 4.5,
+            "depth": 5,
+            "type": "warm timber lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 0,
+            "rectDoorCount": 1,
+            "brickCount": 97,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          },
+          {
+            "position": {
+              "x": 1.4,
+              "z": 6
+            },
+            "width": 6,
+            "height": 4.3,
+            "depth": 4.6,
+            "type": "pale masonry lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 1,
+            "rectDoorCount": 0,
+            "brickCount": 119,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          }
+        ],
+        "scope": "Only the two existing lane houses are detailed. Building positions, original footprint collisions, eye height and three exhibit collections remain the same. Fixed original architecture, not interactive doors or source assets."
+      },
+      "exhibits": [
+        {
+          "id": "visual-systems",
+          "role": "纸档案、主题色与实际展厅画面",
+          "objects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ],
+          "relatedCases": [
+            1
+          ],
+          "page": "./?id=1",
+          "defaultRecipe": null
+        },
+        {
+          "id": "product-lab",
+          "role": "实体琴键、机器人与猫、默认配方谱板",
+          "objects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ],
+          "relatedCases": [
+            6
+          ],
+          "page": "./?id=6",
+          "defaultRecipe": {
+            "mode": "static-default-illustration",
+            "mood": "calm",
+            "noteCount": 32,
+            "tempo": 90
+          }
+        },
+        {
+          "id": "research-notes",
+          "role": "路线沙盘、来源册、案例索引与参观凭证",
+          "objects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ],
+          "relatedCases": [
+            7
+          ],
+          "page": "../#demo-07",
+          "defaultRecipe": null
+        }
+      ],
+      "space": {
+        "phase": "entrance-lane",
+        "discovered": [
+          "visual-systems"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 4.71,
+      "renderer": "webgl",
+      "renderCount": 57,
+      "renderStats": {
+        "drawCalls": 53,
+        "triangles": 70220,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Two original recessed lane facades; existing village buildings and three static content-specific exhibit collections",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+        "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+      }
+    },
+    "rightCollision": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": null,
+      "visits": [],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": -2.6619701357225756,
+        "z": 7.050423701107913,
+        "yaw": -1.4,
+        "pitch": -0.02
+      },
+      "reached": [],
+      "proximity": {
+        "id": "visual-systems",
+        "distance": 7.6,
+        "canView": false,
+        "viewed": false
+      },
+      "architecture": {
+        "nearHouseCount": 2,
+        "windowCount": 16,
+        "shutterLeafCount": 32,
+        "hingeCount": 64,
+        "archDoorCount": 1,
+        "recessDepth": 0.2,
+        "eaveLayers": 3,
+        "brickCourses": 3,
+        "glassEmissiveIntensity": 0.055,
+        "nearHouses": [
+          {
+            "position": {
+              "x": -7,
+              "z": 5.8
+            },
+            "width": 4.4,
+            "height": 4.5,
+            "depth": 5,
+            "type": "warm timber lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 0,
+            "rectDoorCount": 1,
+            "brickCount": 97,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          },
+          {
+            "position": {
+              "x": 1.4,
+              "z": 6
+            },
+            "width": 6,
+            "height": 4.3,
+            "depth": 4.6,
+            "type": "pale masonry lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 1,
+            "rectDoorCount": 0,
+            "brickCount": 119,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          }
+        ],
+        "scope": "Only the two existing lane houses are detailed. Building positions, original footprint collisions, eye height and three exhibit collections remain the same. Fixed original architecture, not interactive doors or source assets."
+      },
+      "exhibits": [
+        {
+          "id": "visual-systems",
+          "role": "纸档案、主题色与实际展厅画面",
+          "objects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ],
+          "relatedCases": [
+            1
+          ],
+          "page": "./?id=1",
+          "defaultRecipe": null
+        },
+        {
+          "id": "product-lab",
+          "role": "实体琴键、机器人与猫、默认配方谱板",
+          "objects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ],
+          "relatedCases": [
+            6
+          ],
+          "page": "./?id=6",
+          "defaultRecipe": {
+            "mode": "static-default-illustration",
+            "mood": "calm",
+            "noteCount": 32,
+            "tempo": 90
+          }
+        },
+        {
+          "id": "research-notes",
+          "role": "路线沙盘、来源册、案例索引与参观凭证",
+          "objects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ],
+          "relatedCases": [
+            7
+          ],
+          "page": "../#demo-07",
+          "defaultRecipe": null
+        }
+      ],
+      "space": {
+        "phase": "entrance-lane",
+        "discovered": [
+          "visual-systems"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 8.46,
+      "renderer": "webgl",
+      "renderCount": 88,
+      "renderStats": {
+        "drawCalls": 162,
+        "triangles": 105950,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Two original recessed lane facades; existing village buildings and three static content-specific exhibit collections",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+        "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+      }
+    },
+    "rightBlocked": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": null,
+      "visits": [],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": -2.6619701357225756,
+        "z": 6.812469701047576,
+        "yaw": -1.4,
+        "pitch": -0.02
+      },
+      "reached": [],
+      "proximity": {
+        "id": "visual-systems",
+        "distance": 7.37,
+        "canView": false,
+        "viewed": false
+      },
+      "architecture": {
+        "nearHouseCount": 2,
+        "windowCount": 16,
+        "shutterLeafCount": 32,
+        "hingeCount": 64,
+        "archDoorCount": 1,
+        "recessDepth": 0.2,
+        "eaveLayers": 3,
+        "brickCourses": 3,
+        "glassEmissiveIntensity": 0.055,
+        "nearHouses": [
+          {
+            "position": {
+              "x": -7,
+              "z": 5.8
+            },
+            "width": 4.4,
+            "height": 4.5,
+            "depth": 5,
+            "type": "warm timber lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 0,
+            "rectDoorCount": 1,
+            "brickCount": 97,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          },
+          {
+            "position": {
+              "x": 1.4,
+              "z": 6
+            },
+            "width": 6,
+            "height": 4.3,
+            "depth": 4.6,
+            "type": "pale masonry lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 1,
+            "rectDoorCount": 0,
+            "brickCount": 119,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          }
+        ],
+        "scope": "Only the two existing lane houses are detailed. Building positions, original footprint collisions, eye height and three exhibit collections remain the same. Fixed original architecture, not interactive doors or source assets."
+      },
+      "exhibits": [
+        {
+          "id": "visual-systems",
+          "role": "纸档案、主题色与实际展厅画面",
+          "objects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ],
+          "relatedCases": [
+            1
+          ],
+          "page": "./?id=1",
+          "defaultRecipe": null
+        },
+        {
+          "id": "product-lab",
+          "role": "实体琴键、机器人与猫、默认配方谱板",
+          "objects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ],
+          "relatedCases": [
+            6
+          ],
+          "page": "./?id=6",
+          "defaultRecipe": {
+            "mode": "static-default-illustration",
+            "mood": "calm",
+            "noteCount": 32,
+            "tempo": 90
+          }
+        },
+        {
+          "id": "research-notes",
+          "role": "路线沙盘、来源册、案例索引与参观凭证",
+          "objects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ],
+          "relatedCases": [
+            7
+          ],
+          "page": "../#demo-07",
+          "defaultRecipe": null
+        }
+      ],
+      "space": {
+        "phase": "entrance-lane",
+        "discovered": [
+          "visual-systems"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 8.7,
+      "renderer": "webgl",
+      "renderCount": 92,
+      "renderStats": {
+        "drawCalls": 162,
+        "triangles": 105950,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Two original recessed lane facades; existing village buildings and three static content-specific exhibit collections",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+        "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+      }
+    },
+    "square": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": null,
+      "visits": [],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": -2.857917873237083,
+        "z": 3.1061591787104748,
+        "yaw": 0.04,
+        "pitch": -0.02
+      },
+      "reached": [],
+      "proximity": {
+        "id": "visual-systems",
+        "distance": 3.83,
+        "canView": false,
+        "viewed": false
+      },
+      "architecture": {
+        "nearHouseCount": 2,
+        "windowCount": 16,
+        "shutterLeafCount": 32,
+        "hingeCount": 64,
+        "archDoorCount": 1,
+        "recessDepth": 0.2,
+        "eaveLayers": 3,
+        "brickCourses": 3,
+        "glassEmissiveIntensity": 0.055,
+        "nearHouses": [
+          {
+            "position": {
+              "x": -7,
+              "z": 5.8
+            },
+            "width": 4.4,
+            "height": 4.5,
+            "depth": 5,
+            "type": "warm timber lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 0,
+            "rectDoorCount": 1,
+            "brickCount": 97,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          },
+          {
+            "position": {
+              "x": 1.4,
+              "z": 6
+            },
+            "width": 6,
+            "height": 4.3,
+            "depth": 4.6,
+            "type": "pale masonry lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 1,
+            "rectDoorCount": 0,
+            "brickCount": 119,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          }
+        ],
+        "scope": "Only the two existing lane houses are detailed. Building positions, original footprint collisions, eye height and three exhibit collections remain the same. Fixed original architecture, not interactive doors or source assets."
+      },
+      "exhibits": [
+        {
+          "id": "visual-systems",
+          "role": "纸档案、主题色与实际展厅画面",
+          "objects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ],
+          "relatedCases": [
+            1
+          ],
+          "page": "./?id=1",
+          "defaultRecipe": null
+        },
+        {
+          "id": "product-lab",
+          "role": "实体琴键、机器人与猫、默认配方谱板",
+          "objects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ],
+          "relatedCases": [
+            6
+          ],
+          "page": "./?id=6",
+          "defaultRecipe": {
+            "mode": "static-default-illustration",
+            "mood": "calm",
+            "noteCount": 32,
+            "tempo": 90
+          }
+        },
+        {
+          "id": "research-notes",
+          "role": "路线沙盘、来源册、案例索引与参观凭证",
+          "objects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ],
+          "relatedCases": [
+            7
+          ],
+          "page": "../#demo-07",
+          "defaultRecipe": null
+        }
+      ],
+      "space": {
+        "phase": "market-square",
+        "discovered": [
+          "visual-systems",
+          "product-lab"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 10.5,
+      "renderer": "webgl",
+      "renderCount": 63,
+      "renderStats": {
+        "drawCalls": 212,
+        "triangles": 91752,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Two original recessed lane facades; existing village buildings and three static content-specific exhibit collections",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+        "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+      }
+    },
+    "lookRight": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": null,
+      "visits": [],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": -2.857917873237083,
+        "z": 3.1061591787104748,
+        "yaw": -0.6799999999999999,
+        "pitch": -0.02
+      },
+      "reached": [],
+      "proximity": {
+        "id": "visual-systems",
+        "distance": 3.83,
+        "canView": false,
+        "viewed": false
+      },
+      "architecture": {
+        "nearHouseCount": 2,
+        "windowCount": 16,
+        "shutterLeafCount": 32,
+        "hingeCount": 64,
+        "archDoorCount": 1,
+        "recessDepth": 0.2,
+        "eaveLayers": 3,
+        "brickCourses": 3,
+        "glassEmissiveIntensity": 0.055,
+        "nearHouses": [
+          {
+            "position": {
+              "x": -7,
+              "z": 5.8
+            },
+            "width": 4.4,
+            "height": 4.5,
+            "depth": 5,
+            "type": "warm timber lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 0,
+            "rectDoorCount": 1,
+            "brickCount": 97,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          },
+          {
+            "position": {
+              "x": 1.4,
+              "z": 6
+            },
+            "width": 6,
+            "height": 4.3,
+            "depth": 4.6,
+            "type": "pale masonry lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 1,
+            "rectDoorCount": 0,
+            "brickCount": 119,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          }
+        ],
+        "scope": "Only the two existing lane houses are detailed. Building positions, original footprint collisions, eye height and three exhibit collections remain the same. Fixed original architecture, not interactive doors or source assets."
+      },
+      "exhibits": [
+        {
+          "id": "visual-systems",
+          "role": "纸档案、主题色与实际展厅画面",
+          "objects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ],
+          "relatedCases": [
+            1
+          ],
+          "page": "./?id=1",
+          "defaultRecipe": null
+        },
+        {
+          "id": "product-lab",
+          "role": "实体琴键、机器人与猫、默认配方谱板",
+          "objects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ],
+          "relatedCases": [
+            6
+          ],
+          "page": "./?id=6",
+          "defaultRecipe": {
+            "mode": "static-default-illustration",
+            "mood": "calm",
+            "noteCount": 32,
+            "tempo": 90
+          }
+        },
+        {
+          "id": "research-notes",
+          "role": "路线沙盘、来源册、案例索引与参观凭证",
+          "objects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ],
+          "relatedCases": [
+            7
+          ],
+          "page": "../#demo-07",
+          "defaultRecipe": null
+        }
+      ],
+      "space": {
+        "phase": "market-square",
+        "discovered": [
+          "visual-systems",
+          "product-lab",
+          "research-notes"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 10.5,
+      "renderer": "webgl",
+      "renderCount": 66,
+      "renderStats": {
+        "drawCalls": 265,
+        "triangles": 126898,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Two original recessed lane facades; existing village buildings and three static content-specific exhibit collections",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+        "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+      }
+    },
+    "near": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": null,
+      "visits": [],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": -2.913902941098371,
+        "z": 1.7072790293851057,
+        "yaw": 0.76,
+        "pitch": -0.02
+      },
+      "reached": [
+        "visual-systems"
+      ],
+      "proximity": {
+        "id": "visual-systems",
+        "distance": 2.62,
+        "canView": true,
+        "viewed": false
+      },
+      "architecture": {
+        "nearHouseCount": 2,
+        "windowCount": 16,
+        "shutterLeafCount": 32,
+        "hingeCount": 64,
+        "archDoorCount": 1,
+        "recessDepth": 0.2,
+        "eaveLayers": 3,
+        "brickCourses": 3,
+        "glassEmissiveIntensity": 0.055,
+        "nearHouses": [
+          {
+            "position": {
+              "x": -7,
+              "z": 5.8
+            },
+            "width": 4.4,
+            "height": 4.5,
+            "depth": 5,
+            "type": "warm timber lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 0,
+            "rectDoorCount": 1,
+            "brickCount": 97,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          },
+          {
+            "position": {
+              "x": 1.4,
+              "z": 6
+            },
+            "width": 6,
+            "height": 4.3,
+            "depth": 4.6,
+            "type": "pale masonry lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 1,
+            "rectDoorCount": 0,
+            "brickCount": 119,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          }
+        ],
+        "scope": "Only the two existing lane houses are detailed. Building positions, original footprint collisions, eye height and three exhibit collections remain the same. Fixed original architecture, not interactive doors or source assets."
+      },
+      "exhibits": [
+        {
+          "id": "visual-systems",
+          "role": "纸档案、主题色与实际展厅画面",
+          "objects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ],
+          "relatedCases": [
+            1
+          ],
+          "page": "./?id=1",
+          "defaultRecipe": null
+        },
+        {
+          "id": "product-lab",
+          "role": "实体琴键、机器人与猫、默认配方谱板",
+          "objects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ],
+          "relatedCases": [
+            6
+          ],
+          "page": "./?id=6",
+          "defaultRecipe": {
+            "mode": "static-default-illustration",
+            "mood": "calm",
+            "noteCount": 32,
+            "tempo": 90
+          }
+        },
+        {
+          "id": "research-notes",
+          "role": "路线沙盘、来源册、案例索引与参观凭证",
+          "objects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ],
+          "relatedCases": [
+            7
+          ],
+          "page": "../#demo-07",
+          "defaultRecipe": null
+        }
+      ],
+      "space": {
+        "phase": "market-square",
+        "discovered": [
+          "visual-systems",
+          "product-lab",
+          "research-notes"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 11.9,
+      "renderer": "webgl",
+      "renderCount": 76,
+      "renderStats": {
+        "drawCalls": 159,
+        "triangles": 94734,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Two original recessed lane facades; existing village buildings and three static content-specific exhibit collections",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+        "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+      }
+    },
+    "viewed": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": "visual-systems",
+      "visits": [
+        {
+          "id": "visual-systems",
+          "title": "视觉系统展位",
+          "visitedAt": "2026-10-03T00:52:38.770Z",
+          "via": "near-view",
+          "positionAtView": {
+            "x": -2.913902941098371,
+            "z": 1.7072790293851057,
+            "yaw": 0.76,
+            "pitch": -0.02
+          },
+          "distanceAtView": 2.62,
+          "relatedCases": [
+            1
+          ],
+          "shownObjects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ]
+        }
+      ],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": -2.913902941098371,
+        "z": 1.7072790293851057,
+        "yaw": 0.76,
+        "pitch": -0.02
+      },
+      "reached": [
+        "visual-systems"
+      ],
+      "proximity": {
+        "id": "visual-systems",
+        "distance": 2.62,
+        "canView": true,
+        "viewed": true
+      },
+      "architecture": {
+        "nearHouseCount": 2,
+        "windowCount": 16,
+        "shutterLeafCount": 32,
+        "hingeCount": 64,
+        "archDoorCount": 1,
+        "recessDepth": 0.2,
+        "eaveLayers": 3,
+        "brickCourses": 3,
+        "glassEmissiveIntensity": 0.055,
+        "nearHouses": [
+          {
+            "position": {
+              "x": -7,
+              "z": 5.8
+            },
+            "width": 4.4,
+            "height": 4.5,
+            "depth": 5,
+            "type": "warm timber lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 0,
+            "rectDoorCount": 1,
+            "brickCount": 97,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          },
+          {
+            "position": {
+              "x": 1.4,
+              "z": 6
+            },
+            "width": 6,
+            "height": 4.3,
+            "depth": 4.6,
+            "type": "pale masonry lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 1,
+            "rectDoorCount": 0,
+            "brickCount": 119,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          }
+        ],
+        "scope": "Only the two existing lane houses are detailed. Building positions, original footprint collisions, eye height and three exhibit collections remain the same. Fixed original architecture, not interactive doors or source assets."
+      },
+      "exhibits": [
+        {
+          "id": "visual-systems",
+          "role": "纸档案、主题色与实际展厅画面",
+          "objects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ],
+          "relatedCases": [
+            1
+          ],
+          "page": "./?id=1",
+          "defaultRecipe": null
+        },
+        {
+          "id": "product-lab",
+          "role": "实体琴键、机器人与猫、默认配方谱板",
+          "objects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ],
+          "relatedCases": [
+            6
+          ],
+          "page": "./?id=6",
+          "defaultRecipe": {
+            "mode": "static-default-illustration",
+            "mood": "calm",
+            "noteCount": 32,
+            "tempo": 90
+          }
+        },
+        {
+          "id": "research-notes",
+          "role": "路线沙盘、来源册、案例索引与参观凭证",
+          "objects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ],
+          "relatedCases": [
+            7
+          ],
+          "page": "../#demo-07",
+          "defaultRecipe": null
+        }
+      ],
+      "space": {
+        "phase": "market-square",
+        "discovered": [
+          "visual-systems",
+          "product-lab",
+          "research-notes"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 11.9,
+      "renderer": "webgl",
+      "renderCount": 77,
+      "renderStats": {
+        "drawCalls": 159,
+        "triangles": 94734,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Two original recessed lane facades; existing village buildings and three static content-specific exhibit collections",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+        "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+      }
+    },
+    "three": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": "research-notes",
+      "visits": [
+        {
+          "id": "visual-systems",
+          "title": "视觉系统展位",
+          "visitedAt": "2026-10-03T00:52:38.770Z",
+          "via": "near-view",
+          "positionAtView": {
+            "x": -2.913902941098371,
+            "z": 1.7072790293851057,
+            "yaw": 0.76,
+            "pitch": -0.02
+          },
+          "distanceAtView": 2.62,
+          "relatedCases": [
+            1
+          ],
+          "shownObjects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ]
+        },
+        {
+          "id": "product-lab",
+          "title": "产品原型展位",
+          "visitedAt": "2026-10-03T00:52:39.815Z",
+          "via": "guided-shortcut",
+          "positionAtView": {
+            "x": 2.8,
+            "z": -3.9,
+            "yaw": 0.1,
+            "pitch": 0
+          },
+          "distanceAtView": 2.21,
+          "relatedCases": [
+            6
+          ],
+          "shownObjects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ]
+        },
+        {
+          "id": "research-notes",
+          "title": "研究档案展位",
+          "visitedAt": "2026-10-03T00:52:40.565Z",
+          "via": "guided-shortcut",
+          "positionAtView": {
+            "x": 5.4,
+            "z": 2.5,
+            "yaw": 0.37,
+            "pitch": 0
+          },
+          "distanceAtView": 2.47,
+          "relatedCases": [
+            7
+          ],
+          "shownObjects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ]
+        }
+      ],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": 5.4,
+        "z": 2.5,
+        "yaw": 0.37,
+        "pitch": 0
+      },
+      "reached": [
+        "visual-systems",
+        "product-lab",
+        "research-notes"
+      ],
+      "proximity": {
+        "id": "research-notes",
+        "distance": 2.47,
+        "canView": true,
+        "viewed": true
+      },
+      "architecture": {
+        "nearHouseCount": 2,
+        "windowCount": 16,
+        "shutterLeafCount": 32,
+        "hingeCount": 64,
+        "archDoorCount": 1,
+        "recessDepth": 0.2,
+        "eaveLayers": 3,
+        "brickCourses": 3,
+        "glassEmissiveIntensity": 0.055,
+        "nearHouses": [
+          {
+            "position": {
+              "x": -7,
+              "z": 5.8
+            },
+            "width": 4.4,
+            "height": 4.5,
+            "depth": 5,
+            "type": "warm timber lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 0,
+            "rectDoorCount": 1,
+            "brickCount": 97,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          },
+          {
+            "position": {
+              "x": 1.4,
+              "z": 6
+            },
+            "width": 6,
+            "height": 4.3,
+            "depth": 4.6,
+            "type": "pale masonry lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 1,
+            "rectDoorCount": 0,
+            "brickCount": 119,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          }
+        ],
+        "scope": "Only the two existing lane houses are detailed. Building positions, original footprint collisions, eye height and three exhibit collections remain the same. Fixed original architecture, not interactive doors or source assets."
+      },
+      "exhibits": [
+        {
+          "id": "visual-systems",
+          "role": "纸档案、主题色与实际展厅画面",
+          "objects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ],
+          "relatedCases": [
+            1
+          ],
+          "page": "./?id=1",
+          "defaultRecipe": null
+        },
+        {
+          "id": "product-lab",
+          "role": "实体琴键、机器人与猫、默认配方谱板",
+          "objects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ],
+          "relatedCases": [
+            6
+          ],
+          "page": "./?id=6",
+          "defaultRecipe": {
+            "mode": "static-default-illustration",
+            "mood": "calm",
+            "noteCount": 32,
+            "tempo": 90
+          }
+        },
+        {
+          "id": "research-notes",
+          "role": "路线沙盘、来源册、案例索引与参观凭证",
+          "objects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ],
+          "relatedCases": [
+            7
+          ],
+          "page": "../#demo-07",
+          "defaultRecipe": null
+        }
+      ],
+      "space": {
+        "phase": "market-square",
+        "discovered": [
+          "visual-systems",
+          "product-lab",
+          "research-notes"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 11.9,
+      "renderer": "webgl",
+      "renderCount": 81,
+      "renderStats": {
+        "drawCalls": 261,
+        "triangles": 103692,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Two original recessed lane facades; existing village buildings and three static content-specific exhibit collections",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+        "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+      }
+    },
+    "morning": {
+      "caseId": 7,
+      "time": "morning",
+      "treeDensity": 20,
+      "selected": "research-notes",
+      "visits": [
+        {
+          "id": "visual-systems",
+          "title": "视觉系统展位",
+          "visitedAt": "2026-10-03T00:52:38.770Z",
+          "via": "near-view",
+          "positionAtView": {
+            "x": -2.913902941098371,
+            "z": 1.7072790293851057,
+            "yaw": 0.76,
+            "pitch": -0.02
+          },
+          "distanceAtView": 2.62,
+          "relatedCases": [
+            1
+          ],
+          "shownObjects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ]
+        },
+        {
+          "id": "product-lab",
+          "title": "产品原型展位",
+          "visitedAt": "2026-10-03T00:52:39.815Z",
+          "via": "guided-shortcut",
+          "positionAtView": {
+            "x": 2.8,
+            "z": -3.9,
+            "yaw": 0.1,
+            "pitch": 0
+          },
+          "distanceAtView": 2.21,
+          "relatedCases": [
+            6
+          ],
+          "shownObjects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ]
+        },
+        {
+          "id": "research-notes",
+          "title": "研究档案展位",
+          "visitedAt": "2026-10-03T00:52:40.565Z",
+          "via": "guided-shortcut",
+          "positionAtView": {
+            "x": 5.4,
+            "z": 2.5,
+            "yaw": 0.37,
+            "pitch": 0
+          },
+          "distanceAtView": 2.47,
+          "relatedCases": [
+            7
+          ],
+          "shownObjects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ]
+        }
+      ],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": -2.55,
+        "z": 10.8,
+        "yaw": 0.04,
+        "pitch": -0.02
+      },
+      "reached": [
+        "visual-systems",
+        "product-lab",
+        "research-notes"
+      ],
+      "proximity": {
+        "id": "visual-systems",
+        "distance": 11.29,
+        "canView": false,
+        "viewed": true
+      },
+      "architecture": {
+        "nearHouseCount": 2,
+        "windowCount": 16,
+        "shutterLeafCount": 32,
+        "hingeCount": 64,
+        "archDoorCount": 1,
+        "recessDepth": 0.2,
+        "eaveLayers": 3,
+        "brickCourses": 3,
+        "glassEmissiveIntensity": 0.005,
+        "nearHouses": [
+          {
+            "position": {
+              "x": -7,
+              "z": 5.8
+            },
+            "width": 4.4,
+            "height": 4.5,
+            "depth": 5,
+            "type": "warm timber lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 0,
+            "rectDoorCount": 1,
+            "brickCount": 97,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          },
+          {
+            "position": {
+              "x": 1.4,
+              "z": 6
+            },
+            "width": 6,
+            "height": 4.3,
+            "depth": 4.6,
+            "type": "pale masonry lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 1,
+            "rectDoorCount": 0,
+            "brickCount": 119,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          }
+        ],
+        "scope": "Only the two existing lane houses are detailed. Building positions, original footprint collisions, eye height and three exhibit collections remain the same. Fixed original architecture, not interactive doors or source assets."
+      },
+      "exhibits": [
+        {
+          "id": "visual-systems",
+          "role": "纸档案、主题色与实际展厅画面",
+          "objects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ],
+          "relatedCases": [
+            1
+          ],
+          "page": "./?id=1",
+          "defaultRecipe": null
+        },
+        {
+          "id": "product-lab",
+          "role": "实体琴键、机器人与猫、默认配方谱板",
+          "objects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ],
+          "relatedCases": [
+            6
+          ],
+          "page": "./?id=6",
+          "defaultRecipe": {
+            "mode": "static-default-illustration",
+            "mood": "calm",
+            "noteCount": 32,
+            "tempo": 90
+          }
+        },
+        {
+          "id": "research-notes",
+          "role": "路线沙盘、来源册、案例索引与参观凭证",
+          "objects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ],
+          "relatedCases": [
+            7
+          ],
+          "page": "../#demo-07",
+          "defaultRecipe": null
+        }
+      ],
+      "space": {
+        "phase": "entrance-lane",
+        "discovered": [
+          "visual-systems",
+          "product-lab",
+          "research-notes"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 11.9,
+      "renderer": "webgl",
+      "renderCount": 84,
+      "renderStats": {
+        "drawCalls": 382,
+        "triangles": 192674,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Two original recessed lane facades; existing village buildings and three static content-specific exhibit collections",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+        "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+      }
+    },
+    "night": {
+      "caseId": 7,
+      "time": "night",
+      "treeDensity": 20,
+      "selected": "research-notes",
+      "visits": [
+        {
+          "id": "visual-systems",
+          "title": "视觉系统展位",
+          "visitedAt": "2026-10-03T00:52:38.770Z",
+          "via": "near-view",
+          "positionAtView": {
+            "x": -2.913902941098371,
+            "z": 1.7072790293851057,
+            "yaw": 0.76,
+            "pitch": -0.02
+          },
+          "distanceAtView": 2.62,
+          "relatedCases": [
+            1
+          ],
+          "shownObjects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ]
+        },
+        {
+          "id": "product-lab",
+          "title": "产品原型展位",
+          "visitedAt": "2026-10-03T00:52:39.815Z",
+          "via": "guided-shortcut",
+          "positionAtView": {
+            "x": 2.8,
+            "z": -3.9,
+            "yaw": 0.1,
+            "pitch": 0
+          },
+          "distanceAtView": 2.21,
+          "relatedCases": [
+            6
+          ],
+          "shownObjects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ]
+        },
+        {
+          "id": "research-notes",
+          "title": "研究档案展位",
+          "visitedAt": "2026-10-03T00:52:40.565Z",
+          "via": "guided-shortcut",
+          "positionAtView": {
+            "x": 5.4,
+            "z": 2.5,
+            "yaw": 0.37,
+            "pitch": 0
+          },
+          "distanceAtView": 2.47,
+          "relatedCases": [
+            7
+          ],
+          "shownObjects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ]
+        }
+      ],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": -2.55,
+        "z": 10.8,
+        "yaw": 0.04,
+        "pitch": -0.02
+      },
+      "reached": [
+        "visual-systems",
+        "product-lab",
+        "research-notes"
+      ],
+      "proximity": {
+        "id": "visual-systems",
+        "distance": 11.29,
+        "canView": false,
+        "viewed": true
+      },
+      "architecture": {
+        "nearHouseCount": 2,
+        "windowCount": 16,
+        "shutterLeafCount": 32,
+        "hingeCount": 64,
+        "archDoorCount": 1,
+        "recessDepth": 0.2,
+        "eaveLayers": 3,
+        "brickCourses": 3,
+        "glassEmissiveIntensity": 0.38,
+        "nearHouses": [
+          {
+            "position": {
+              "x": -7,
+              "z": 5.8
+            },
+            "width": 4.4,
+            "height": 4.5,
+            "depth": 5,
+            "type": "warm timber lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 0,
+            "rectDoorCount": 1,
+            "brickCount": 97,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          },
+          {
+            "position": {
+              "x": 1.4,
+              "z": 6
+            },
+            "width": 6,
+            "height": 4.3,
+            "depth": 4.6,
+            "type": "pale masonry lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 1,
+            "rectDoorCount": 0,
+            "brickCount": 119,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          }
+        ],
+        "scope": "Only the two existing lane houses are detailed. Building positions, original footprint collisions, eye height and three exhibit collections remain the same. Fixed original architecture, not interactive doors or source assets."
+      },
+      "exhibits": [
+        {
+          "id": "visual-systems",
+          "role": "纸档案、主题色与实际展厅画面",
+          "objects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ],
+          "relatedCases": [
+            1
+          ],
+          "page": "./?id=1",
+          "defaultRecipe": null
+        },
+        {
+          "id": "product-lab",
+          "role": "实体琴键、机器人与猫、默认配方谱板",
+          "objects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ],
+          "relatedCases": [
+            6
+          ],
+          "page": "./?id=6",
+          "defaultRecipe": {
+            "mode": "static-default-illustration",
+            "mood": "calm",
+            "noteCount": 32,
+            "tempo": 90
+          }
+        },
+        {
+          "id": "research-notes",
+          "role": "路线沙盘、来源册、案例索引与参观凭证",
+          "objects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ],
+          "relatedCases": [
+            7
+          ],
+          "page": "../#demo-07",
+          "defaultRecipe": null
+        }
+      ],
+      "space": {
+        "phase": "entrance-lane",
+        "discovered": [
+          "visual-systems",
+          "product-lab",
+          "research-notes"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 11.9,
+      "renderer": "webgl",
+      "renderCount": 85,
+      "renderStats": {
+        "drawCalls": 382,
+        "triangles": 192674,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Two original recessed lane facades; existing village buildings and three static content-specific exhibit collections",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+        "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+      }
+    },
+    "dusk": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": "research-notes",
+      "visits": [
+        {
+          "id": "visual-systems",
+          "title": "视觉系统展位",
+          "visitedAt": "2026-10-03T00:52:38.770Z",
+          "via": "near-view",
+          "positionAtView": {
+            "x": -2.913902941098371,
+            "z": 1.7072790293851057,
+            "yaw": 0.76,
+            "pitch": -0.02
+          },
+          "distanceAtView": 2.62,
+          "relatedCases": [
+            1
+          ],
+          "shownObjects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ]
+        },
+        {
+          "id": "product-lab",
+          "title": "产品原型展位",
+          "visitedAt": "2026-10-03T00:52:39.815Z",
+          "via": "guided-shortcut",
+          "positionAtView": {
+            "x": 2.8,
+            "z": -3.9,
+            "yaw": 0.1,
+            "pitch": 0
+          },
+          "distanceAtView": 2.21,
+          "relatedCases": [
+            6
+          ],
+          "shownObjects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ]
+        },
+        {
+          "id": "research-notes",
+          "title": "研究档案展位",
+          "visitedAt": "2026-10-03T00:52:40.565Z",
+          "via": "guided-shortcut",
+          "positionAtView": {
+            "x": 5.4,
+            "z": 2.5,
+            "yaw": 0.37,
+            "pitch": 0
+          },
+          "distanceAtView": 2.47,
+          "relatedCases": [
+            7
+          ],
+          "shownObjects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ]
+        }
+      ],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": -2.55,
+        "z": 10.8,
+        "yaw": 0.04,
+        "pitch": -0.02
+      },
+      "reached": [
+        "visual-systems",
+        "product-lab",
+        "research-notes"
+      ],
+      "proximity": {
+        "id": "visual-systems",
+        "distance": 11.29,
+        "canView": false,
+        "viewed": true
+      },
+      "architecture": {
+        "nearHouseCount": 2,
+        "windowCount": 16,
+        "shutterLeafCount": 32,
+        "hingeCount": 64,
+        "archDoorCount": 1,
+        "recessDepth": 0.2,
+        "eaveLayers": 3,
+        "brickCourses": 3,
+        "glassEmissiveIntensity": 0.055,
+        "nearHouses": [
+          {
+            "position": {
+              "x": -7,
+              "z": 5.8
+            },
+            "width": 4.4,
+            "height": 4.5,
+            "depth": 5,
+            "type": "warm timber lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 0,
+            "rectDoorCount": 1,
+            "brickCount": 97,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          },
+          {
+            "position": {
+              "x": 1.4,
+              "z": 6
+            },
+            "width": 6,
+            "height": 4.3,
+            "depth": 4.6,
+            "type": "pale masonry lane facade",
+            "windowCount": 8,
+            "shutterLeafCount": 16,
+            "hingeCount": 32,
+            "archDoorCount": 1,
+            "rectDoorCount": 0,
+            "brickCount": 119,
+            "recessDepth": 0.2,
+            "wallThickness": 0.24,
+            "diamondLead": true,
+            "glass": "Original cool-grey reflective tint; no scene refraction",
+            "eaveLayers": 3,
+            "brickCourses": 3,
+            "staticMeshCount": 11,
+            "instancedMeshCount": 2,
+            "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+          }
+        ],
+        "scope": "Only the two existing lane houses are detailed. Building positions, original footprint collisions, eye height and three exhibit collections remain the same. Fixed original architecture, not interactive doors or source assets."
+      },
+      "exhibits": [
+        {
+          "id": "visual-systems",
+          "role": "纸档案、主题色与实际展厅画面",
+          "objects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ],
+          "relatedCases": [
+            1
+          ],
+          "page": "./?id=1",
+          "defaultRecipe": null
+        },
+        {
+          "id": "product-lab",
+          "role": "实体琴键、机器人与猫、默认配方谱板",
+          "objects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ],
+          "relatedCases": [
+            6
+          ],
+          "page": "./?id=6",
+          "defaultRecipe": {
+            "mode": "static-default-illustration",
+            "mood": "calm",
+            "noteCount": 32,
+            "tempo": 90
+          }
+        },
+        {
+          "id": "research-notes",
+          "role": "路线沙盘、来源册、案例索引与参观凭证",
+          "objects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ],
+          "relatedCases": [
+            7
+          ],
+          "page": "../#demo-07",
+          "defaultRecipe": null
+        }
+      ],
+      "space": {
+        "phase": "entrance-lane",
+        "discovered": [
+          "visual-systems",
+          "product-lab",
+          "research-notes"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 11.9,
+      "renderer": "webgl",
+      "renderCount": 86,
+      "renderStats": {
+        "drawCalls": 382,
+        "triangles": 192674,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Two original recessed lane facades; existing village buildings and three static content-specific exhibit collections",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+        "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+      }
+    }
+  },
+  "architecture": {
+    "nearHouseCount": 2,
+    "windowCount": 16,
+    "shutterLeafCount": 32,
+    "hingeCount": 64,
+    "archDoorCount": 1,
+    "recessDepth": 0.2,
+    "eaveLayers": 3,
+    "brickCourses": 3,
+    "glassEmissiveIntensity": 0.055,
+    "nearHouses": [
+      {
+        "position": {
+          "x": -7,
+          "z": 5.8
+        },
+        "width": 4.4,
+        "height": 4.5,
+        "depth": 5,
+        "type": "warm timber lane facade",
+        "windowCount": 8,
+        "shutterLeafCount": 16,
+        "hingeCount": 32,
+        "archDoorCount": 0,
+        "rectDoorCount": 1,
+        "brickCount": 97,
+        "recessDepth": 0.2,
+        "wallThickness": 0.24,
+        "diamondLead": true,
+        "glass": "Original cool-grey reflective tint; no scene refraction",
+        "eaveLayers": 3,
+        "brickCourses": 3,
+        "staticMeshCount": 11,
+        "instancedMeshCount": 2,
+        "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+      },
+      {
+        "position": {
+          "x": 1.4,
+          "z": 6
+        },
+        "width": 6,
+        "height": 4.3,
+        "depth": 4.6,
+        "type": "pale masonry lane facade",
+        "windowCount": 8,
+        "shutterLeafCount": 16,
+        "hingeCount": 32,
+        "archDoorCount": 1,
+        "rectDoorCount": 0,
+        "brickCount": 119,
+        "recessDepth": 0.2,
+        "wallThickness": 0.24,
+        "diamondLead": true,
+        "glass": "Original cool-grey reflective tint; no scene refraction",
+        "eaveLayers": 3,
+        "brickCourses": 3,
+        "staticMeshCount": 11,
+        "instancedMeshCount": 2,
+        "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+      }
+    ],
+    "scope": "Only the two existing lane houses are detailed. Building positions, original footprint collisions, eye height and three exhibit collections remain the same. Fixed original architecture, not interactive doors or source assets."
+  },
+  "renderComparison": {
+    "previous": {
+      "drawCalls": 378,
+      "triangles": 174878,
+      "pixelRatio": 1
+    },
+    "current": {
+      "drawCalls": 382,
+      "triangles": 192674,
+      "pixelRatio": 1
+    },
+    "addedCalls": 4,
+    "triangleIncreasePercent": 10.176237148183297
+  },
+  "files": [
+    "architecture-visit.json",
+    "architecture-scene-export.png"
+  ],
+  "scope": "Actual headless Chromium native walking, E interaction, architecture state/download comparison and one 390px layout. Two lane houses only; no source geometry or media reused."
+}

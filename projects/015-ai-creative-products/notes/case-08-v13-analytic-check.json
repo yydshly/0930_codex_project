@@ -1,0 +1,9 @@
+{
+  "caseId": 8,
+  "samples": 2400,
+  "method": "Deterministic samples for rotated/scaled head and ear frames. Analytic field derivative compared with central difference at 1e-5; highlight normal compared with prior .002 central-difference rule. Mathematical derivative fixture only, not physical validation.",
+  "maxJacobianError": 3.4558953476704346e-9,
+  "maxOldStepJacobianError": 0.00013818081731131748,
+  "maxNormalAngleDegrees": 0.020956147386360115,
+  "pass": true
+}

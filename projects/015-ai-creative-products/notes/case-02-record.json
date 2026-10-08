@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-02T14:55:23.235Z",
+  "caseId": 2,
+  "product": "三维互动任务与剧情训练工具",
+  "task": "移动镜头、寻找地点、判断对话并提交证据。",
+  "state": {
+    "module": "quest",
+    "status": "playing",
+    "running": true,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 77,
+      "triangles": 295056,
+      "staticDrawCallsSaved": 5859
+    },
+    "position": {
+      "x": -12.1,
+      "z": -7.99
+    },
+    "yaw": 1.289,
+    "evidence": [
+      {
+        "id": "archive",
+        "title": "档案来源与时间已核对"
+      }
+    ],
+    "elapsed": 12.4,
+    "destination": null,
+    "dialogueSite": "archive",
+    "interaction": {
+      "site": "archive",
+      "distance": 2.91,
+      "canTalk": true,
+      "sites": [
+        {
+          "id": "hub",
+          "checked": false,
+          "marker": "待核对"
+        },
+        {
+          "id": "archive",
+          "checked": true,
+          "marker": "已核对"
+        },
+        {
+          "id": "sensor",
+          "checked": false,
+          "marker": "待核对"
+        },
+        {
+          "id": "tower",
+          "checked": false,
+          "marker": "待核对"
+        }
+      ]
+    },
+    "soundEnabled": true,
+    "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+    "scope": "Original small RPG prototype; no original source, combat or VATS reproduced.",
+    "log": [
+      {
+        "time": 0,
+        "action": "开始",
+        "detail": "程序化街区任务"
+      },
+      {
+        "time": 0.9,
+        "action": "前往",
+        "detail": "档案站"
+      },
+      {
+        "time": 10,
+        "action": "前往",
+        "detail": "档案站"
+      },
+      {
+        "time": 10.6,
+        "action": "取得证据",
+        "detail": "档案来源与时间已核对"
+      }
+    ]
+  },
+  "source": "https://x.com/chrisfirst/status/2104644598626934858",
+  "reference": {
+    "focus": "程序化三维 RPG：自由探索、任务分支和终端式状态界面组成同一个系统。",
+    "evidence": "作者明确提到浏览器、任务、对话树、V.A.T.S.、Pip-Boy，以及用代码生成视觉和声音。",
+    "sourceTech": "代码生成纹理、场景与声音是作者自述；未取得原作源码。",
+    "ours": "程序化研究街区、第一人称探索、分支证据任务、终端式记录和合成提示音。",
+    "tech": "本地 Three.js、程序化几何与材质、Web Audio、共用任务状态。 画面采用：摄影砖石材质、街区建筑细节、站员造型与天空光照。",
+    "value": "把 SOP、设备巡检与知识核对放进可探索的训练场景。",
+    "check": "镜头实际移动；选错分支会反馈；任务记录和提交结果一致。",
+    "boundary": "保留三维探索与任务整合；未复现 Fallout 资产、V.A.T.S. 或完整战斗系统。",
+    "kernel": "程序街区 + 第一人称镜头 + 对话/证据状态机 + 合成音效。场景和终端读取同一任务状态。"
+  },
+  "scope": "原创有限关卡；未复现 Fallout、V.A.T.S. 或完整战斗。"
+}

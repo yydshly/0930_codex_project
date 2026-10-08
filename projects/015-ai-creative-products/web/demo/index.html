@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="给研究工作台选一盏原创概念桌灯：观察结构、保存方案 A、调整方案 B、比较并导出选型记录。">
+  <title>ARC LAB · 研究工作台照明选型</title>
+  <script>
+    if (new URLSearchParams(location.search).get('embedded') === '1') {
+      document.documentElement.dataset.embedded = 'true';
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#workbench">进入选型工作台</a>
+  <header class="site-header outer-header">
+    <a class="wordmark" href="#top" aria-label="ARC LAB 选型工作台首页">
+      <span class="wordmark-symbol" aria-hidden="true">⌒</span>
+      <span>ARC LAB<small>一盏灯，一份选择。</small></span>
+    </a>
+    <a class="back-link" href="../?v=4#effects">返回案例研究 ↗</a>
+  </header>
+
+  <main id="top" class="page-shell">
+    <section class="intro outer-intro" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">ARC / 01 · 产品选型演示</p>
+        <h1 id="page-title">给我们的研究工作台，<br><span>选一盏灯。</span></h1>
+      </div>
+      <p class="intro-copy">从结构开始认识产品，用配色、表面和光感形成自己的方案。保存一个基准，比较下一种选择，再把选型记录交给团队讨论。</p>
+    </section>
+
+    <section id="workbench" class="workbench" aria-labelledby="workbench-title">
+      <div class="task-bar">
+        <div class="task-heading">
+          <h2 id="workbench-title">从看懂结构，到留下选择</h2>
+          <span class="concept-tag">原创概念桌灯</span>
+        </div>
+        <div id="task-progress" class="task-progress" role="status" aria-live="polite"></div>
+      </div>
+
+      <div class="workbench-grid">
+        <div class="visual-column">
+          <section class="model-panel" aria-label="ARC 桌灯三维预览">
+            <div class="product-stage">
+              <canvas id="product-canvas" width="1200" height="1000" tabindex="0" role="img" aria-label="ARC 原创概念桌灯。拖动旋转，滚轮或双指缩放，方向键调整；也可用下方的标准视角按钮。">正在准备原创桌灯画面。可使用右侧控件选择方案。</canvas>
+              <div class="stage-caption" aria-hidden="true"><span>ARC / 01</span><strong>弧线成形，暖光入席。</strong></div>
+              <span class="stage-label">配色 · 表面 · 结构</span>
+            </div>
+            <div class="view-controls" role="group" aria-label="选择观察视角">
+              <button type="button" data-view="hero" aria-pressed="true">整体</button>
+              <button type="button" data-view="front" aria-pressed="false">正面</button>
+              <button type="button" data-view="detail" aria-pressed="false">细节</button>
+              <button type="button" data-view="structure" aria-pressed="false">结构</button>
+            </div>
+            <p class="canvas-hint">拖动旋转 · 滚轮或双指缩放 · 方向键调整</p>
+            <div class="preview-status">
+              <p id="renderer-status" role="status" aria-live="polite">正在准备产品画面…</p>
+              <p id="environment-status" role="status" aria-live="polite">正在准备展示环境…</p>
+            </div>
+          </section>
+
+          <section class="parts-panel" aria-labelledby="parts-title">
+            <div class="panel-heading"><h2 id="parts-title">先看它怎样组成</h2><button id="tour" class="text-button" type="button" aria-pressed="false">引导我看一遍 →</button></div>
+            <div class="part-buttons" role="group" aria-label="选择桌灯部件">
+              <button type="button" data-part="shade" aria-pressed="false"><span>01</span>灯罩</button>
+              <button type="button" data-part="diffuser" aria-pressed="false"><span>02</span>扩散板</button>
+              <button type="button" data-part="stem" aria-pressed="false"><span>03</span>支柱</button>
+              <button type="button" data-part="base" aria-pressed="false"><span>04</span>底座</button>
+            </div>
+            <div id="part-description" class="part-description" aria-live="polite">选择一个部件，了解它在整体形态中的作用。</div>
+          </section>
+        </div>
+
+        <aside class="configuration-panel" aria-labelledby="configuration-title">
+          <div class="configuration-heading"><p class="eyebrow">YOUR CHOICE / 当前方案</p><h2 id="configuration-title">让它适合我们的工作台</h2><p>先选一个情境，再慢慢调整。</p></div>
+
+          <fieldset>
+            <legend>从哪个情境开始</legend>
+            <div class="preset-buttons">
+              <button type="button" data-preset="desk" aria-pressed="true">工作桌</button>
+              <button type="button" data-preset="night" aria-pressed="false">夜间氛围</button>
+              <button type="button" data-preset="photo" aria-pressed="false">展示拍摄</button>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>机身配色</legend>
+            <div class="color-buttons">
+              <button type="button" data-color="#356873" aria-pressed="true" style="--swatch:#356873"><i aria-hidden="true"></i><span>海湾蓝</span></button>
+              <button type="button" data-color="#e7d9be" aria-pressed="false" style="--swatch:#e7d9be"><i aria-hidden="true"></i><span>纸沙色</span></button>
+              <button type="button" data-color="#b66e50" aria-pressed="false" style="--swatch:#b66e50"><i aria-hidden="true"></i><span>陶土色</span></button>
+            </div>
+          </fieldset>
+
+          <div class="select-grid">
+            <label for="finish">表面处理<select id="finish"><option value="matte">哑光</option><option value="gloss">亮面</option></select></label>
+            <label for="room">环境光线<select id="room"><option value="studio">日光</option><option value="night">夜景</option></select></label>
+            <label for="setting" class="full-width">展示场景<select id="setting"><option value="interior">室内</option><option value="studio">简洁背景</option></select></label>
+          </div>
+
+          <div class="range-field">
+            <label for="light">画面光感 <output id="light-value" for="light">70%</output></label>
+            <input id="light" type="range" min="0" max="100" step="1" value="70">
+            <div class="range-hints" aria-hidden="true"><span>关闭</span><span>明亮</span></div>
+          </div>
+          <div class="range-field">
+            <label for="explode">结构展开 <output id="explode-value" for="explode">0%</output></label>
+            <input id="explode" type="range" min="0" max="100" step="1" value="0">
+            <div class="range-hints" aria-hidden="true"><span>完整形态</span><span>拆看零件</span></div>
+          </div>
+
+          <label class="checkbox-label" for="spin"><input id="spin" type="checkbox">缓慢自动旋转</label>
+
+          <div class="current-choice">
+            <h3>当前选择</h3>
+            <p id="current-summary">海湾蓝 · 哑光 · 日光 · 室内</p>
+          </div>
+
+          <div class="save-controls">
+            <button id="save-a" class="primary-button" type="button">保存为方案 A</button>
+            <button id="restore-a" class="secondary-button" type="button">恢复方案 A</button>
+          </div>
+          <p id="saved-status" class="saved-status" role="status" aria-live="polite">方案 A 尚未保存。</p>
+          <button id="reset" class="text-button reset-button" type="button">恢复初始配置与视角</button>
+        </aside>
+      </div>
+
+      <section class="comparison-panel" aria-labelledby="comparison-title">
+        <div class="section-heading"><div><p class="eyebrow">03 / COMPARE</p><h2 id="comparison-title">保留 A，看看当前方案改变了什么</h2></div><p>保存 A 后继续调整，当前配置就是方案 B。</p></div>
+        <div id="comparison" class="comparison" aria-live="polite"><p class="comparison-empty">先保存方案 A，再调整参数形成方案 B。这里会显示两个方案的差异。</p></div>
+      </section>
+
+      <section class="handoff-panel" aria-labelledby="handoff-title">
+        <div class="section-heading"><div><p class="eyebrow">04 / HANDOFF</p><h2 id="handoff-title">把这份选择，交给团队讨论</h2></div><p>给方案命名，记下用途，再导出配置、选型记录或当前画面。</p></div>
+        <div class="handoff-fields">
+          <label for="project-name">方案名称<input id="project-name" type="text" value="研究工作台照明方案" maxlength="80" autocomplete="off"></label>
+          <label for="notes">选型用途与考虑<textarea id="notes" rows="3" maxlength="800">用于研究工作台的照明选型。比较日常工作与夜间展示时的配色、表面和光感，供团队讨论。</textarea></label>
+        </div>
+        <div class="export-actions">
+          <button id="export-md" class="primary-button" type="button">导出选型记录</button>
+          <button id="export-json" class="secondary-button" type="button">导出配置 JSON</button>
+          <button id="export-png" class="secondary-button" type="button">导出当前画面 PNG</button>
+        </div>
+        <p id="demo-status" class="demo-status" role="status" aria-live="polite">先看结构，保存方案 A 后再调整与比较。</p>
+        <p class="concept-note">原创概念模型，未按实物尺寸或照明条件标定。</p>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer outer-footer">
+    <div><strong>ARC LAB / 我们的实际演示</strong><p>关联案例 01 的作品组织、04 的产品表达与 09 的三维场景整合思路。模型采用我们的原创概念，选型流程由本项目制作。</p><div class="source-links"><a href="../?v=4#case-01">01 · 作品组织</a><a href="../?v=4#case-04">04 · 产品表达</a><a href="../?v=4#case-09">09 · 三维整合</a></div></div>
+    <div class="footer-return"><p>原创概念模型，未按实物尺寸或照明条件标定。</p><a href="../?v=4#effects">返回十案例研究 ↗</a></div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,170 @@
+/* CASE 01: four original archive objects. Shapes are bounded CSS surfaces. */
+.portfolio-lab{min-width:0;color:#253d34;font:14px/1.65 'Microsoft YaHei',system-ui,sans-serif}
+.portfolio-layout{display:grid;grid-template-columns:minmax(0,1fr);gap:25px;align-items:start}
+.portfolio-preview{grid-row:1;min-width:0;overflow:hidden;border:1px solid #d8d8cf;border-radius:2px}
+.portfolio-controls{grid-row:2;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px 22px;min-width:0;background:transparent!important;border:0!important;border-top:1px solid #d8d8cf!important;border-radius:0!important;padding:23px 0!important}
+.portfolio-controls h3,.portfolio-controls>p{grid-column:1/-1}
+.portfolio-controls h3{font-size:18px;font-weight:500;margin:0}
+.portfolio-controls>p{font-size:12px;max-width:780px;margin:0 0 10px;color:#6e796c}
+.portfolio-controls .lab-field{display:block;font-size:12px;margin:9px 0;min-width:0}
+.portfolio-controls input,.portfolio-controls select{display:block;width:100%;min-width:0;margin-top:8px;padding:10px;font:14px 'Microsoft YaHei',sans-serif;color:#253d34;background:#fffefa;border:1px solid #cfd7cc;border-radius:3px}
+.portfolio-export{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:9px;margin:13px 0 0}
+.portfolio-export button{font-size:13px;min-height:44px}
+.portfolio-controls .portfolio-scope{border-top:1px solid #d8d8cf;padding-top:15px;margin-top:3px}
+.portfolio-page{--bg:#f1f0e9;--ink:#262d28;--muted:#777f72;--rail:#8c9689;background:var(--bg);color:var(--ink);min-width:0}
+.portfolio-page[data-theme=gallery]{--bg:#212822;--ink:#ecece2;--muted:#b4bead;--rail:#97a28d}
+.portfolio-page[data-theme=warm]{--bg:#eee3d0;--ink:#413b2e;--muted:#83735d;--rail:#9e8f75}
+.portfolio-masthead{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:25px 35px;border-bottom:1px solid #80877520;font:11px/1.5 'Courier New',monospace;letter-spacing:.08em}
+.portfolio-masthead b{font:14px/1.5 'Microsoft YaHei',sans-serif;letter-spacing:.04em;font-weight:500}
+.portfolio-monogram{font:italic 34px/1 Georgia,serif;letter-spacing:-.08em}
+.portfolio-intro{padding:27px 35px 0}
+.portfolio-intro>span{font-size:23px;font-weight:500;letter-spacing:.02em}
+.portfolio-intro p{font-size:13px;margin:7px 0 0;color:var(--muted)}
+.folio-space{position:relative;min-width:0;height:605px;overflow:hidden;perspective:1500px;touch-action:pan-y;cursor:grab;transition:height .72s cubic-bezier(.16,1,.3,1)}
+.folio-room-lines{position:absolute;inset:0;background:linear-gradient(130deg,#fffefa20,transparent 42%);pointer-events:none}
+.folio-rail{position:absolute;top:99px;left:7%;right:7%;height:3px;background:linear-gradient(#e4e8dd,#66705f 48%,#ced6c6);box-shadow:0 5px 6px #26312014;border-radius:3px}
+.folio-rail:before,.folio-rail:after{content:'';position:absolute;top:-6px;width:6px;height:14px;background:linear-gradient(90deg,#949b8b,#e3e7dc,#8b9482);border:1px solid #929a89;border-radius:1px}
+.folio-rail:before{left:-3px}.folio-rail:after{right:-3px}
+.folio-ground{position:absolute;bottom:0;left:0;right:0;height:125px;background:linear-gradient(transparent,#7d88750b);pointer-events:none}
+.folio-object{--object-width:246px;--object-height:342px;--hang-top:145px;--rest-tilt:0deg;--front-bg:#f5f1e5;--front-ink:#2d372b;position:absolute;top:var(--hang-top);left:calc(60% - var(--object-width)/2);width:var(--object-width);padding:0;border:0;background:none;color:var(--ink);font:inherit;text-align:left;cursor:pointer;transform-style:preserve-3d;transform-origin:50% -44px;transform:translateX(calc(var(--distance)*280px)) translateZ(-30px) rotateY(calc(var(--distance)*-12deg)) rotateZ(var(--rest-tilt)) scale(.86);transition:transform .72s cubic-bezier(.16,1,.3,1),left .72s cubic-bezier(.16,1,.3,1),top .72s cubic-bezier(.16,1,.3,1);z-index:1;user-select:none}
+.folio-object[data-focus=true]{transform:translateX(0) translateZ(50px) rotateY(-2deg) rotateZ(0deg) scale(1);z-index:5}
+.folio-object:hover{transform:translateX(calc(var(--distance)*280px)) translateZ(80px) rotateY(0deg) rotateZ(0deg) scale(.98);z-index:8}
+.folio-object:focus-visible{outline:2px solid #b56d42;outline-offset:8px}
+.folio-hook{position:absolute;top:calc(99px - var(--hang-top));left:calc(50% - 6px);width:12px;height:calc(var(--hang-top) - 99px);border:1.2px solid #87917d;border-bottom:0;border-radius:10px 10px 0 0;transform:translateZ(-2px);box-shadow:.5px 0 0 #f9faf2}
+.folio-frame{position:relative;display:block;height:var(--object-height);background:#f8f5e9;transform-style:preserve-3d;box-shadow:1px 1px 0 #ded8c7,2px 2px 0 #f8f5e9,3px 3px 0 #bcbbaa,8px 17px 24px #3038281f}
+.folio-frame:after{content:'';position:absolute;left:8px;right:8px;bottom:-58px;height:20px;background:#2635221b;filter:blur(20px);transform:skewX(-20deg);z-index:-1;pointer-events:none}
+.folio-cover{position:absolute;inset:0;display:block;transform-style:preserve-3d;transform-origin:0 50%;transform:translateZ(.9px) rotateY(0deg);transition:transform .84s cubic-bezier(.22,.68,.18,1);--paper-edge-light:.62}
+.folio-front,.folio-back{position:absolute;inset:0;display:flex;flex-direction:column;color:var(--front-ink);background:var(--front-bg);backface-visibility:hidden;border:0}
+.folio-front{transform:translateZ(3px)}
+.folio-front img{width:100%;height:150px;flex:0 0 150px;object-fit:cover;display:block;pointer-events:none}
+.folio-cover-top{display:flex;justify-content:space-between;align-items:center;padding:16px 18px 0}
+.folio-cover-top small{font:7px/1.6 'Courier New',monospace;letter-spacing:.1em;max-width:150px}
+.folio-cover-top>b{font:15px/1.2 'Courier New',monospace;font-weight:400}
+.folio-cover-title{display:block;padding:24px 18px 18px;font:600 33px/1.05 Arial,'Microsoft YaHei',sans-serif;letter-spacing:-.035em}
+.folio-cover-title>small{display:block;font:9px/1.5 'Microsoft YaHei',sans-serif;letter-spacing:.06em;margin-top:11px}
+.folio-cover-bottom{display:flex;flex-direction:column;gap:9px;padding:15px 18px;margin-top:auto;font:7px/1.6 'Courier New',monospace;letter-spacing:.08em}
+.folio-cover-bottom>b{display:none}
+.folio-cover-bottom>small{font-size:7px}
+.folio-object-stamp{position:absolute;right:17px;bottom:15px;font-size:7px;border:1px solid currentColor;padding:2px 4px;opacity:.6}
+.folio-print-note{display:none}
+.folio-back{transform:rotateY(180deg) translateZ(3px);padding:26px 23px}
+.folio-back>span:first-child{font:8px/1.6 'Courier New',monospace;letter-spacing:.12em;opacity:.65}
+.folio-back>b{font:italic 31px/1.2 Georgia,'Microsoft YaHei',serif;font-weight:400;letter-spacing:-.03em;margin-top:28px}
+.folio-back-rule{height:1px;background:currentColor;opacity:.25;margin:22px 0 17px}
+.folio-back>small{font:11px/1.8 'Microsoft YaHei',sans-serif;opacity:.8}
+.folio-back-foot{margin-top:auto;padding-top:18px;font:7px/1.8 'Courier New',monospace;letter-spacing:.07em;opacity:.65}
+.folio-cover-edge{position:absolute;right:-1px;top:0;width:1px;height:100%;background:#b7b09a;transform:rotateY(90deg);backface-visibility:visible}
+.folio-spine{position:absolute;left:-2px;top:0;width:3px;height:100%;background:linear-gradient(90deg,#99917a,#ded7bf,#f3eedc);transform:translateZ(.5px);pointer-events:none}
+.folio-folder-tab{display:none}
+.folio-inside{position:absolute;inset:0;display:flex;flex-direction:column;padding:21px 18px 15px;background:linear-gradient(90deg,#7b734619,transparent 9%),#f8f5e9;color:#30392c;transform:translateZ(.5px);border-bottom:1px solid #d1cbb6}
+.folio-page-number{font:7px/1.5 'Courier New',monospace;letter-spacing:.08em;opacity:.65}
+.folio-inside-title{font-size:25px;line-height:1.15;letter-spacing:-.035em;margin:19px 0 14px;font-weight:500}
+.folio-inside-title>small{display:block;font-size:9px;line-height:1.5;font-weight:400;letter-spacing:.04em;margin-top:8px}
+.folio-inside img{width:100%;height:110px;flex:0 0 110px;object-fit:cover;display:block;border:1px solid #bfbba228;pointer-events:none}
+.folio-inside-caption{font-size:9px;line-height:1.8;margin-top:14px;color:#6c755f}
+.folio-inside-footer{display:flex;justify-content:space-between;margin-top:auto;padding-top:12px;font:6px/1.5 'Courier New',monospace;color:#7d8271;letter-spacing:.08em}
+.folio-inside-footer>b{font-weight:400}
+.folio-card-label{display:block;margin-top:24px;max-width:100%;line-height:1.5}
+.folio-card-label>strong{display:block;font-size:14px;font-weight:500}
+.folio-card-label>span{display:block;font-size:11px;color:var(--muted);margin-top:5px}
+.folio-room-note{position:absolute;left:35px;right:35px;bottom:22px;font-size:11px;letter-spacing:.05em;color:var(--muted)}
+.folio-navigation{display:flex;align-items:center;flex-wrap:wrap;gap:13px;padding:18px 35px 22px;border-top:1px solid #818b7920;border-bottom:1px solid #818b7920}
+.folio-navigation>div{flex:1;min-width:150px}
+.folio-navigation span{display:block;font:11px/1.3 'Courier New',monospace;color:#a76741;margin-bottom:6px}
+.folio-navigation b{font-size:14px;font-weight:500}
+.folio-navigation button{font-size:12px;min-height:44px;border-radius:30px!important}
+.portfolio-footer{display:flex;justify-content:space-between;gap:15px;padding:20px 35px;font-size:11px;color:var(--muted)}
+.portfolio-detail{padding:0;min-width:0;color:var(--ink)}
+.portfolio-detail>span{font:11px/1.5 'Courier New',monospace;letter-spacing:.08em;color:#ae6b3e}
+.portfolio-detail h3{font-size:29px;line-height:1.35;font-weight:500;margin:15px 0 20px}
+.portfolio-detail h3:focus{outline:none}
+.portfolio-detail p{font-size:14px;line-height:1.85;color:var(--muted)}
+.portfolio-outcomes{display:grid;grid-template-columns:1fr;gap:0}
+.portfolio-outcomes b{display:block;color:#aa6b40;margin-bottom:7px;font-weight:500}
+.portfolio-detail [data-result],.portfolio-detail [data-boundary]{font:inherit;color:inherit;letter-spacing:normal}
+.portfolio-detail button{font-size:13px;margin-top:12px;min-height:44px}
+.portfolio-lab [hidden],.portfolio-page [hidden]{display:none!important}
+/* Landscape image print, kept as a thin photographic archive rather than a book. */
+.folio-object[data-material=photo]{--object-width:300px;--object-height:260px;--hang-top:147px;--rest-tilt:-1.5deg;--front-bg:#fcfaf2}
+.folio-object[data-material=photo] .folio-front{display:grid;grid-template-rows:26px minmax(0,1fr) 44px 28px}.folio-object[data-material=photo] .folio-cover-top{order:0;padding:7px 14px 6px}
+.folio-object[data-material=photo] .folio-cover-top small{font-size:6px}
+.folio-object[data-material=photo] .folio-front>img{order:1;width:calc(100% - 22px);margin:0 11px;height:100%;min-height:0;flex-basis:auto;object-position:center 54%}
+.folio-object[data-material=photo] .folio-cover-title{order:2;display:flex;justify-content:space-between;align-items:center;padding:3px 14px 0;font:500 37px/1 Georgia,serif;letter-spacing:-.05em}
+.folio-object[data-material=photo] .folio-cover-title small{margin:0;max-width:105px;font-size:8px;letter-spacing:0}
+.folio-object[data-material=photo] .folio-cover-bottom{order:3;flex-direction:row;justify-content:space-between;padding:5px 14px;font-size:6px;letter-spacing:.02em}
+.folio-object[data-material=photo] .folio-cover-bottom small{font-size:6px}
+.folio-object[data-material=photo] .folio-object-stamp{display:none}
+.folio-object[data-material=photo] .folio-inside{padding:16px}
+.folio-object[data-material=photo] .folio-inside-title{margin:10px 0;font-size:25px}
+.folio-object[data-material=photo] .folio-inside-title small{margin-top:5px;font-size:8px}
+.folio-object[data-material=photo] .folio-inside img{height:96px;flex-basis:96px}
+.folio-object[data-material=photo] .folio-inside-caption{font-size:8px;line-height:1.6;margin-top:10px}
+.folio-object[data-material=photo] .folio-back{padding:18px}
+.folio-object[data-material=photo] .folio-back>b{margin-top:18px}
+/* A tall folded type broadsheet. Its print is actual editable research copy. */
+.folio-object[data-material=print]{--object-width:236px;--object-height:364px;--hang-top:141px;--rest-tilt:2deg;--front-bg:#dce89a;--front-ink:#20291e}
+.folio-object[data-material=print] .folio-frame{box-shadow:1px 2px 0 #c2cc7e,2px 3px 0 #e2ecac,8px 17px 21px #30382819}
+.folio-object[data-material=print] .folio-front{background:linear-gradient(0deg,transparent 49.4%,#7382491c 49.8%,#f0f6c03a 50.4%,transparent 50.8%),var(--front-bg)}
+.folio-object[data-material=print] .folio-cover-top{padding:16px 17px 0}
+.folio-object[data-material=print] .folio-cover-title{font:900 99px/.9 Arial,sans-serif;letter-spacing:-.085em;padding:31px 13px 24px}
+.folio-object[data-material=print] .folio-cover-title small{font-size:10px;letter-spacing:.08em;font-weight:500;padding-left:4px;margin-top:20px}
+.folio-object[data-material=print] .folio-front>img{display:none}
+.folio-object[data-material=print] .folio-print-note{display:block;column-count:2;column-gap:15px;padding:0 18px;font:9px/1.8 'Microsoft YaHei',sans-serif}
+.folio-object[data-material=print] .folio-cover-bottom{padding:20px 18px 17px}
+.folio-object[data-material=print] .folio-cover-bottom>b{display:block;font:600 19px/1.1 Arial,sans-serif;letter-spacing:-.025em;margin-bottom:1px}
+.folio-object[data-material=print] .folio-object-stamp{display:none}
+/* A rounded dark portfolio sleeve. Six finite surfaces give an angle-based bend. */
+.folio-object[data-material=sleeve]{--object-width:223px;--object-height:354px;--hang-top:146px;--rest-tilt:-3deg;--front-bg:#20352f;--front-ink:#edeedf}
+.folio-object[data-material=sleeve] .folio-frame{border-radius:13px 20px 24px 11px;background:#20352f;box-shadow:2px 4px 0 #182b23,8px 19px 23px #2632202d}
+.folio-object[data-material=sleeve] .folio-front,.folio-object[data-material=sleeve] .folio-back{border-radius:12px 19px 22px 10px;background:linear-gradient(94deg,#ffffff0a,transparent 10%,#00000012 57%,#ffffff09 82%,#00000013),var(--front-bg)}
+.folio-object[data-material=sleeve] .folio-front:after{content:'';position:absolute;inset:8px;border:1px dashed #b0bda536;border-radius:7px 13px 16px 6px;pointer-events:none}
+.folio-object[data-material=sleeve] .folio-cover-title{padding:29px 19px 20px;font:500 43px/1.15 'Microsoft YaHei',sans-serif;letter-spacing:.025em}
+.folio-object[data-material=sleeve] .folio-cover-title small{font-size:8px;letter-spacing:.03em;opacity:.7}
+.folio-object[data-material=sleeve] .folio-front>img{width:calc(100% - 38px);margin:9px 19px 0;height:120px;flex-basis:120px;filter:saturate(.55);border:1px solid #d7dfc831}
+.folio-object[data-material=sleeve] .folio-cover-bottom{font-size:6px;padding:19px 19px 18px;opacity:.7}
+.folio-object[data-material=sleeve] .folio-cover-bottom small{font-size:6px}
+.folio-object[data-material=sleeve] .folio-object-stamp{display:none}
+.folio-object[data-material=sleeve] .folio-spine{background:#182c25;width:2px}
+.folio-object[data-material=sleeve] .folio-paper-thin-edge{background:#21382c}
+/* A tabbed study folio has its own layered sheet edge and print grid. */
+.folio-object[data-material=folio]{--object-width:244px;--object-height:336px;--hang-top:154px;--rest-tilt:1deg;--front-bg:#e5eceb;--front-ink:#284b55}
+.folio-object[data-material=folio] .folio-frame{box-shadow:2px 1px 0 #f7f7ed,5px 3px 0 #b0c1bf,7px 5px 0 #f5f5e9,9px 7px 0 #98aba9,14px 20px 23px #26382019}
+.folio-object[data-material=folio] .folio-folder-tab{display:block;position:absolute;right:0;top:-17px;width:86px;height:20px;padding-top:4px;text-align:center;background:#31535a;color:#e2ebe6;border-radius:4px 4px 0 0;font:7px/1.4 'Courier New',monospace;letter-spacing:.07em;transform:translateZ(-1px)}
+.folio-object[data-material=folio] .folio-cover-title{font:italic 43px/1.1 Georgia,serif;letter-spacing:-.04em;padding-top:20px;padding-bottom:20px}
+.folio-object[data-material=folio] .folio-cover-title small{font-style:normal;font-size:8px;letter-spacing:.02em}
+.folio-object[data-material=folio] .folio-front>img{width:calc(100% - 32px);margin:0 16px;height:131px;flex-basis:131px;object-fit:cover;border:1px solid #799c9f35}
+.folio-object[data-material=folio] .folio-cover-bottom{padding-top:16px;font-size:6px}
+.folio-object[data-material=folio] .folio-cover-bottom small{font-size:6px}
+.folio-object[data-material=folio] .folio-object-stamp{bottom:15px;font-size:6px}
+/* The existing fixed spine and two-sided print are retained in six bend bands. */
+.folio-object[data-opened=true] .folio-cover{transform:translateZ(.9px) rotateY(-155deg)}
+.folio-paper-band{position:absolute;left:100%;top:0;width:100%;height:100%;display:block;transform-style:preserve-3d;transform-origin:0 50%;transform:rotateY(var(--paper-bend,0deg))}
+.folio-paper-band[data-band="0"]{left:0;width:calc(100% / 6)}
+.folio-paper-face{position:absolute;inset:0 -1px;display:block;overflow:hidden;backface-visibility:hidden}
+.folio-paper-front{transform:translateZ(.35px)}
+.folio-paper-back{transform:rotateY(180deg) translateZ(.35px)}
+.folio-paper-face>.folio-front,.folio-paper-face>.folio-back{position:absolute;top:0;bottom:0;right:auto;transform:none;backface-visibility:visible;border:0;box-shadow:none}
+.folio-paper-face:after{content:'';position:absolute;inset:0;pointer-events:none;background:#3d4327;opacity:var(--paper-shade,.025)}
+.folio-paper-thin-edge{position:absolute;right:-.35px;top:0;width:.7px;height:100%;background:#ada788;opacity:var(--paper-edge-light);transform:rotateY(90deg);transform-origin:center center}
+.folio-page-shade{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#574c29cc,transparent 12%,transparent 70%,#574c2914);opacity:.04}
+.portfolio-page[data-reading=true]{display:grid;grid-template-columns:minmax(330px,1.05fr) minmax(250px,.95fr)}
+.portfolio-page[data-reading=true] .portfolio-masthead{grid-column:1/-1}
+.portfolio-page[data-reading=true] .portfolio-intro{grid-column:1/-1;grid-row:2}
+.portfolio-page[data-reading=true] .folio-space{grid-column:1/-1;grid-row:3;height:520px}
+.portfolio-page[data-reading=true] .folio-rail{opacity:0}
+.portfolio-page[data-reading=true] .folio-object{visibility:hidden}
+.portfolio-page[data-reading=true] .folio-object[data-focus=true]{visibility:visible;left:26.25%;top:103px;transform-origin:0 50%;transform:translateZ(0) rotateY(0deg) rotateZ(0deg) scale(.88);z-index:9}
+.portfolio-page[data-reading=true] .folio-hook{opacity:0}
+.portfolio-page[data-reading=true] .folio-card-label{display:none}
+.portfolio-page[data-reading=true] .folio-room-note{left:0;right:47.5%;text-align:center;bottom:25px}
+.portfolio-page[data-reading=true] .portfolio-detail{grid-column:2;grid-row:3;align-self:center;margin:28px 35px 28px 15px;opacity:0;transform:translateY(9px);transition:opacity .24s,transform .24s}
+.portfolio-page[data-fold-phase=open] .portfolio-detail{opacity:1;transform:none}
+.portfolio-page[data-reading=true] .folio-navigation{grid-column:1/-1;grid-row:4}
+.portfolio-page[data-reading=true] .portfolio-footer{grid-column:1/-1;grid-row:5}
+@media(max-width:1150px){.folio-object{transform:translateX(calc(var(--distance)*206px)) translateZ(-30px) rotateY(calc(var(--distance)*-16deg)) rotateZ(var(--rest-tilt)) scale(.8)}.folio-object[data-focus=true]{transform:translateX(0) translateZ(30px) rotateY(-2deg) scale(.92)}.folio-object:hover{transform:translateX(calc(var(--distance)*206px)) translateZ(60px) rotateY(0) scale(.9)}}
+@media(max-width:900px){.portfolio-controls{grid-template-columns:repeat(2,minmax(0,1fr))}.portfolio-page[data-reading=true]{grid-template-columns:1fr}.portfolio-page[data-reading=true] .folio-space{grid-column:1;grid-row:3;height:430px}.portfolio-page[data-reading=true] .folio-object[data-focus=true]{left:50%;top:60px;transform:translateZ(0) rotateY(0) scale(.83)}.portfolio-page[data-reading=true] .portfolio-detail{grid-column:1;grid-row:4;margin:0 32px 30px;max-width:600px}.portfolio-page[data-reading=true] .folio-room-note{right:0}.portfolio-page[data-reading=true] .folio-navigation{grid-row:5}.portfolio-page[data-reading=true] .portfolio-footer{grid-row:6}}
+@media(max-width:590px){.portfolio-controls{display:block;padding:20px 0!important}.portfolio-controls .lab-field{margin:16px 0}.portfolio-masthead{padding:19px 21px}.portfolio-masthead b{font-size:12px}.portfolio-masthead>span:last-child{display:none}.portfolio-monogram{font-size:29px}.portfolio-intro{padding:24px 21px 0}.portfolio-intro>span{font-size:19px}.portfolio-intro p{font-size:12px}.folio-space{height:543px;perspective:1100px}.folio-object{left:calc(50% - var(--object-width)/2);transform:translateX(calc(var(--distance)*175px)) translateZ(-60px) rotateY(calc(var(--distance)*-23deg)) rotateZ(var(--rest-tilt)) scale(.68)}.folio-object[data-focus=true]{transform:translateX(0) translateZ(0) rotateY(-2deg) scale(.83)}.folio-object:hover{transform:translateX(calc(var(--distance)*175px)) translateZ(20px) rotateY(0) scale(.83)}.folio-rail{top:92px}.folio-hook{top:calc(92px - var(--hang-top));height:calc(var(--hang-top) - 92px)}.folio-card-label>strong{font-size:13px}.folio-card-label>span{font-size:11px}.folio-room-note{left:21px;right:21px;bottom:19px;font-size:10px}.folio-navigation{padding:16px 21px}.folio-navigation>button[data-open]{width:100%}.portfolio-footer{display:block;padding:19px 21px;font-size:10px}.portfolio-footer>span{display:block;margin-top:5px}.portfolio-page[data-reading=true] .folio-space{height:378px}.portfolio-page[data-reading=true] .folio-object[data-focus=true]{left:50%;top:51px;transform:translateZ(0) rotateY(0) scale(.58)}.portfolio-page[data-reading=true] .portfolio-detail{margin:0 22px 27px}.portfolio-page[data-reading=true] .portfolio-detail h3{font-size:24px}.portfolio-page[data-reading=true] .folio-room-note{bottom:21px;font-size:10px}}
+@media(prefers-reduced-motion:reduce){.folio-space,.folio-object,.folio-cover,.portfolio-page[data-reading=true] .portfolio-detail{transition:none}}
+
+.portfolio-page[data-count="1"]:not([data-reading=true]) .folio-object{left:calc(50% - var(--object-width)/2)}
+

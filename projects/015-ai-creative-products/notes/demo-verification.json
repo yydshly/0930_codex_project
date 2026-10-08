@@ -1,0 +1,123 @@
+{
+  "checkedAt": "2026-10-02",
+  "checks": [
+    {
+      "name": "实际使用本地WebGL与室内环境",
+      "passed": true
+    },
+    {
+      "name": "演示不请求第三方资源",
+      "passed": true
+    },
+    {
+      "name": "画布有实际渲染像素",
+      "passed": true
+    },
+    {
+      "name": "结构操作实际改变画面",
+      "passed": true
+    },
+    {
+      "name": "结构展开和进度同步",
+      "passed": true
+    },
+    {
+      "name": "部件聚焦有对应说明",
+      "passed": true
+    },
+    {
+      "name": "返回整体场景同步清除部件聚焦",
+      "passed": true
+    },
+    {
+      "name": "方案A保存真实当前配置",
+      "passed": true
+    },
+    {
+      "name": "夜间预设实际改变画面",
+      "passed": true
+    },
+    {
+      "name": "A未被方案B覆盖并准确对比",
+      "passed": true
+    },
+    {
+      "name": "JSON下载包含当前选择和完整A对照",
+      "passed": true
+    },
+    {
+      "name": "需求单下载包含真实用途和差异",
+      "passed": true
+    },
+    {
+      "name": "PNG下载有正确像素和尺寸",
+      "passed": true
+    },
+    {
+      "name": "恢复A同步控件并清除配置差异",
+      "passed": true
+    },
+    {
+      "name": "刷新恢复当前配置且保留A",
+      "passed": true
+    },
+    {
+      "name": "自动体验明确进入运行状态",
+      "passed": true
+    },
+    {
+      "name": "手动调整终止自动体验并保留选择",
+      "passed": true
+    },
+    {
+      "name": "重置当前方案不删除已保存A",
+      "passed": true
+    },
+    {
+      "name": "独立演示在390px无页面横向溢出",
+      "passed": true
+    },
+    {
+      "name": "手机对照表同时显示A与当前方案",
+      "passed": true
+    },
+    {
+      "name": "手机调参时模型确实在屏幕之外",
+      "passed": true
+    },
+    {
+      "name": "模型离屏时导出仍刷新最新配置像素",
+      "passed": true
+    },
+    {
+      "name": "独立演示在768px无页面横向溢出",
+      "passed": true
+    },
+    {
+      "name": "独立演示在1440px无页面横向溢出",
+      "passed": true
+    },
+    {
+      "name": "补充实验保留独立嵌入模式",
+      "passed": true
+    },
+    {
+      "name": "补充实验收到隐藏消息时停止自动体验",
+      "passed": true
+    },
+    {
+      "name": "无WebGL时明确降级并保留选配",
+      "passed": true
+    },
+    {
+      "name": "降级配置与画面能力同步",
+      "passed": true
+    },
+    {
+      "name": "无JavaScript运行错误",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "scope": "Local concept renderer and task workflow. No real-product dimensions, lighting measurements, ordering or commercial outcome validation."
+}

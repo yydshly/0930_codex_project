@@ -1,0 +1,126 @@
+{
+  "updatedAt": "2026-10-03T12:12:30.883Z",
+  "records": [
+    {
+      "caseId": 1,
+      "revision": 15,
+      "source": "assets/qa/quality-reset-v15/01-cover-candidate.png",
+      "sourceDimensions": {
+        "width": 1360,
+        "height": 931
+      },
+      "sourceSha256": "ea5e5f8ba4a119a6c79e122ddc57e7d84f4c11ed951664868fc3e1ec5cf54498",
+      "output": "web/media/demo-01.webp",
+      "kind": "retained historical v15 actual browser capture"
+    },
+    {
+      "caseId": 2,
+      "revision": 15,
+      "source": "assets/qa/quality-reset-v15/02-after.png",
+      "sourceDimensions": {
+        "width": 1050,
+        "height": 480
+      },
+      "sourceSha256": "3551be91c1be55e282e6134b2db6ff0d9d7e5ff406c1db022121e74668ea98fd",
+      "output": "web/media/demo-02.webp",
+      "kind": "retained historical v15 actual browser capture"
+    },
+    {
+      "caseId": 3,
+      "revision": 15,
+      "source": "assets/qa/quality-reset-v15/03-sphere-after.png",
+      "sourceDimensions": {
+        "width": 1050,
+        "height": 591
+      },
+      "sourceSha256": "f22fad73c6dec8e5783c44055f5b5c66b892c378cf0677000cd1e02e324f00fe",
+      "output": "web/media/demo-03.webp",
+      "kind": "retained historical v15 actual browser capture"
+    },
+    {
+      "caseId": 4,
+      "revision": 15,
+      "source": "assets/qa/quality-reset-v15/04-cover-candidate.png",
+      "sourceDimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "sourceSha256": "56fc2645a4112855b224227fe6c40b351570cbe81397de4a56be7e0067d82e64",
+      "output": "web/media/demo-04.webp",
+      "kind": "retained historical v15 actual browser capture"
+    },
+    {
+      "caseId": 5,
+      "revision": 16,
+      "source": "assets/qa/quality-reset-v16/05-patrol-close-after.png",
+      "sourceDimensions": {
+        "width": 1343,
+        "height": 530
+      },
+      "sourceSha256": "321b4aa4062e8b8152294830195742199c72974ccb08a85e2279a61bff22dd49",
+      "output": "web/media/demo-05.webp",
+      "kind": "actual in-app browser current-canvas PNG downloaded through the app UI; contain resize, no concept rendering"
+    },
+    {
+      "caseId": 6,
+      "revision": 15,
+      "source": "assets/qa/quality-reset-v15/06-after.png",
+      "sourceDimensions": {
+        "width": 1360,
+        "height": 612
+      },
+      "sourceSha256": "9ff6323cc01197c5d23254222134e944b8a60b9425bbf6c0ac16ace0d57dae55",
+      "output": "web/media/demo-06.webp",
+      "kind": "retained historical v15 actual browser capture"
+    },
+    {
+      "caseId": 7,
+      "revision": 16,
+      "source": "assets/qa/quality-reset-v16/07-entry-after.png",
+      "sourceDimensions": {
+        "width": 902,
+        "height": 570
+      },
+      "sourceSha256": "9510feb03c7ae5ddc8d0e85f913486a12bfdcd6a902c14ed53978b93e2db4244",
+      "output": "web/media/demo-07.webp",
+      "kind": "actual in-app browser current-canvas PNG downloaded through the app UI; contain resize, no concept rendering"
+    },
+    {
+      "caseId": 8,
+      "revision": 15,
+      "source": "assets/qa/quality-reset-v15/08-rest-after.png",
+      "sourceDimensions": {
+        "width": 1358,
+        "height": 520
+      },
+      "sourceSha256": "9ec45ccd96cf564aa8942f2b82dcf1a8719b4d4914fa9a60e7185c860857082e",
+      "output": "web/media/demo-08.webp",
+      "kind": "retained historical v15 actual browser capture"
+    },
+    {
+      "caseId": 9,
+      "revision": 16,
+      "source": "assets/qa/quality-reset-v16/09-boat-after.png",
+      "sourceDimensions": {
+        "width": 1344,
+        "height": 590
+      },
+      "sourceSha256": "c218f60b824e35e827a26faa27d07866beba510b29b486ae061338a6ce73a1ef",
+      "output": "web/media/demo-09.webp",
+      "kind": "actual in-app browser current-canvas PNG downloaded through the app UI; contain resize, no concept rendering"
+    },
+    {
+      "caseId": 10,
+      "revision": 16,
+      "source": "assets/qa/quality-reset-v16/10-arena-after.png",
+      "sourceDimensions": {
+        "width": 2015,
+        "height": 795
+      },
+      "sourceSha256": "03eeeaf33301a13ddfa6f6b17a97308235ed007135a37e4f23331685183ef7d6",
+      "output": "web/media/demo-10.webp",
+      "kind": "actual in-app browser current-canvas PNG downloaded through the app UI; contain resize, no concept rendering"
+    }
+  ],
+  "comparisonBoundary": "The v15 frames are historical; v16 is captured in the real in-app browser. They are not synchronized camera or animation-frame matches."
+}

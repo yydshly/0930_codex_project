@@ -1,0 +1,411 @@
+{
+  "checkedAt": "2026-10-03T00:51:55.757Z",
+  "before": {
+    "module": "defense",
+    "status": "playing",
+    "running": true,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 126,
+      "triangles": 89190,
+      "pixelRatio": 0.7069,
+      "defaultPixelRatio": 1,
+      "qualityPolicy": "active longest side at most 960px; ready, paused and finished restore default DPR",
+      "canvasPixels": {
+        "width": 960,
+        "height": 374
+      },
+      "interactiveResolutionLimit": 960,
+      "staticDrawCallsSaved": 354
+    },
+    "wave": 1,
+    "totalWaves": 3,
+    "health": 100,
+    "ammo": 11,
+    "reloading": false,
+    "kills": 0,
+    "shots": 1,
+    "hits": 0,
+    "attacks": 0,
+    "dodgedAttacks": 0,
+    "incomingHits": 0,
+    "attackTiming": {
+      "clock": "wall-clock",
+      "reactionStart": "after first warning draw; active wall clock excludes hidden intervals",
+      "maxIntegrationStep": 0.008333333333333333,
+      "trigger": 1.45,
+      "reach": 1.6,
+      "frontDot": 0.45,
+      "windup": 0.85,
+      "strike": 0.22,
+      "recovery": 0.9
+    },
+    "elapsed": 8.7,
+    "shotPresentation": {
+      "clock": "active-wall-clock",
+      "duration": 0.42,
+      "age": 6.631,
+      "recoil": {
+        "kick": 0,
+        "return": 0,
+        "position": {
+          "x": 0.34,
+          "y": -0.2744,
+          "z": -0.72
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "affectsAim": false
+      },
+      "visible": {
+        "muzzle": false,
+        "tracer": false,
+        "impact": false
+      },
+      "lastShot": {
+        "serial": 1,
+        "clock": 2.0794000000059603,
+        "result": "miss",
+        "surface": "room",
+        "enemyId": null,
+        "distance": 16.98,
+        "surfacePoint": {
+          "x": 0,
+          "y": 1.7,
+          "z": -10.98
+        },
+        "surfaceNormal": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "origin": {
+          "x": 0.354,
+          "y": 1.452,
+          "z": 4.894
+        }
+      }
+    },
+    "feedback": {
+      "canFire": true,
+      "lastShotResult": "miss",
+      "hitConfirmed": false,
+      "damageCue": false,
+      "lastImpact": null
+    },
+    "player": {
+      "x": -1.07,
+      "z": 0.3,
+      "yaw": -0.185,
+      "pitch": -0.051
+    },
+    "enemies": [
+      {
+        "id": 1,
+        "x": -1.64,
+        "z": -2.72,
+        "hp": 2,
+        "attack": {
+          "phase": "pursuit",
+          "phaseElapsed": 0,
+          "cycle": 0,
+          "lockedYaw": 0.185,
+          "lastResult": null,
+          "lastDistance": null,
+          "visibleWindupWallSeconds": null
+        }
+      },
+      {
+        "id": 2,
+        "x": 1.9,
+        "z": -5,
+        "hp": 2,
+        "attack": {
+          "phase": "pursuit",
+          "phaseElapsed": 0,
+          "cycle": 0,
+          "lockedYaw": -0.51,
+          "lastResult": null,
+          "lastDistance": null,
+          "visibleWindupWallSeconds": null
+        }
+      },
+      {
+        "id": 3,
+        "x": -7.15,
+        "z": -3.83,
+        "hp": 2,
+        "attack": {
+          "phase": "pursuit",
+          "phaseElapsed": 0,
+          "cycle": 0,
+          "lockedYaw": 0.975,
+          "lastResult": null,
+          "lastDistance": null,
+          "visibleWindupWallSeconds": null
+        }
+      }
+    ],
+    "scope": "Original FPS room and robots. No COD code/assets ported. Ray hits, simple pursuit, telegraphed directional melee with range-checked strike, cover collision, three waves. Weapon recoil is a bounded visual response only; camera aiming is unchanged. Tracer starts at the actual weapon muzzle; sparks require a real ray intersection. Active play is limited to 960px; ready/paused/finished restore default clarity.",
+    "log": [
+      {
+        "time": 0,
+        "action": "波次开始",
+        "detail": 1
+      },
+      {
+        "time": 1.9,
+        "action": "发射呈现",
+        "detail": {
+          "serial": 1,
+          "clock": 2.0794000000059603,
+          "result": "miss",
+          "surface": "room",
+          "enemyId": null,
+          "distance": 16.98,
+          "surfacePoint": {
+            "x": 0,
+            "y": 1.7,
+            "z": -10.98
+          },
+          "surfaceNormal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "origin": {
+            "x": 0.354,
+            "y": 1.452,
+            "z": 4.894
+          }
+        }
+      }
+    ]
+  },
+  "actualFiringState": {
+    "module": "defense",
+    "status": "playing",
+    "running": true,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 133,
+      "triangles": 89940,
+      "pixelRatio": 0.7069,
+      "defaultPixelRatio": 1,
+      "qualityPolicy": "active longest side at most 960px; ready, paused and finished restore default DPR",
+      "canvasPixels": {
+        "width": 960,
+        "height": 374
+      },
+      "interactiveResolutionLimit": 960,
+      "staticDrawCallsSaved": 354
+    },
+    "wave": 1,
+    "totalWaves": 3,
+    "health": 100,
+    "ammo": 10,
+    "reloading": false,
+    "kills": 0,
+    "shots": 2,
+    "hits": 1,
+    "attacks": 0,
+    "dodgedAttacks": 0,
+    "incomingHits": 0,
+    "attackTiming": {
+      "clock": "wall-clock",
+      "reactionStart": "after first warning draw; active wall clock excludes hidden intervals",
+      "maxIntegrationStep": 0.008333333333333333,
+      "trigger": 1.45,
+      "reach": 1.6,
+      "frontDot": 0.45,
+      "windup": 0.85,
+      "strike": 0.22,
+      "recovery": 0.9
+    },
+    "elapsed": 10.3,
+    "shotPresentation": {
+      "clock": "active-wall-clock",
+      "duration": 0.42,
+      "age": 0.001,
+      "recoil": {
+        "kick": 0.9906,
+        "return": 0.0096,
+        "position": {
+          "x": 0.3479,
+          "y": -0.2993,
+          "z": -0.6755
+        },
+        "rotation": {
+          "x": 0.0643,
+          "y": -0.0119,
+          "z": -0.0248
+        },
+        "affectsAim": false
+      },
+      "visible": {
+        "muzzle": true,
+        "tracer": true,
+        "impact": true
+      },
+      "lastShot": {
+        "serial": 2,
+        "clock": 10.693600000023842,
+        "result": "hit",
+        "surface": "robot",
+        "enemyId": 1,
+        "distance": 1.509,
+        "surfacePoint": {
+          "x": -1.342,
+          "y": 1.411,
+          "z": -1.156
+        },
+        "surfaceNormal": {
+          "x": 0.182,
+          "y": 0.16,
+          "z": 0.97
+        },
+        "origin": {
+          "x": -0.912,
+          "y": 1.245,
+          "z": -0.786
+        }
+      }
+    },
+    "feedback": {
+      "canFire": false,
+      "lastShotResult": "hit",
+      "hitConfirmed": true,
+      "damageCue": false,
+      "lastImpact": {
+        "x": -1.34,
+        "y": 1.41,
+        "z": -1.16
+      }
+    },
+    "player": {
+      "x": -1.07,
+      "z": 0.3,
+      "yaw": -0.185,
+      "pitch": -0.193
+    },
+    "enemies": [
+      {
+        "id": 1,
+        "x": -1.38,
+        "z": -1.37,
+        "hp": 1,
+        "attack": {
+          "phase": "pursuit",
+          "phaseElapsed": 0,
+          "cycle": 0,
+          "lockedYaw": 0.185,
+          "lastResult": null,
+          "lastDistance": null,
+          "visibleWindupWallSeconds": null
+        }
+      },
+      {
+        "id": 2,
+        "x": 1.23,
+        "z": -3.8,
+        "hp": 2,
+        "attack": {
+          "phase": "pursuit",
+          "phaseElapsed": 0,
+          "cycle": 0,
+          "lockedYaw": -0.51,
+          "lastResult": null,
+          "lastDistance": null,
+          "visibleWindupWallSeconds": null
+        }
+      },
+      {
+        "id": 3,
+        "x": -6.01,
+        "z": -3.05,
+        "hp": 2,
+        "attack": {
+          "phase": "pursuit",
+          "phaseElapsed": 0,
+          "cycle": 0,
+          "lockedYaw": 0.975,
+          "lastResult": null,
+          "lastDistance": null,
+          "visibleWindupWallSeconds": null
+        }
+      }
+    ],
+    "scope": "Original FPS room and robots. No COD code/assets ported. Ray hits, simple pursuit, telegraphed directional melee with range-checked strike, cover collision, three waves. Weapon recoil is a bounded visual response only; camera aiming is unchanged. Tracer starts at the actual weapon muzzle; sparks require a real ray intersection. Active play is limited to 960px; ready/paused/finished restore default clarity.",
+    "log": [
+      {
+        "time": 0,
+        "action": "波次开始",
+        "detail": 1
+      },
+      {
+        "time": 1.9,
+        "action": "发射呈现",
+        "detail": {
+          "serial": 1,
+          "clock": 2.0794000000059603,
+          "result": "miss",
+          "surface": "room",
+          "enemyId": null,
+          "distance": 16.98,
+          "surfacePoint": {
+            "x": 0,
+            "y": 1.7,
+            "z": -10.98
+          },
+          "surfaceNormal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "origin": {
+            "x": 0.354,
+            "y": 1.452,
+            "z": 4.894
+          }
+        }
+      },
+      {
+        "time": 10.3,
+        "action": "射击命中",
+        "detail": 1
+      },
+      {
+        "time": 10.3,
+        "action": "发射呈现",
+        "detail": {
+          "serial": 2,
+          "clock": 10.693600000023842,
+          "result": "hit",
+          "surface": "robot",
+          "enemyId": 1,
+          "distance": 1.509,
+          "surfacePoint": {
+            "x": -1.342,
+            "y": 1.411,
+            "z": -1.156
+          },
+          "surfaceNormal": {
+            "x": 0.182,
+            "y": 0.16,
+            "z": 0.97
+          },
+          "origin": {
+            "x": -0.912,
+            "y": 1.245,
+            "z": -0.786
+          }
+        }
+      }
+    ]
+  },
+  "errors": [],
+  "scope": "Actual aim, W movement, fire buttons; no state injection. Cover is a resized canvas readback from the first real firing draw."
+}

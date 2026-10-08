@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-02T15:27:15.104Z",
+  "caseId": 10,
+  "product": "三维操控与物理挑战工具",
+  "task": "控制车辆、切换相机、使用 Boost，将球推入球门。",
+  "state": {
+    "module": "soccer",
+    "status": "playing",
+    "running": false,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 97,
+      "triangles": 103078,
+      "staticDrawCallsSaved": 350
+    },
+    "score": 0,
+    "goal": 3,
+    "remaining": 88.7,
+    "elapsed": 1.3,
+    "boost": 90.7,
+    "boosting": true,
+    "friction": 20,
+    "restitution": 72,
+    "cameraMode": "ball",
+    "speed": 10.56,
+    "cameraFov": 69.47,
+    "cameraTarget": {
+      "x": 0,
+      "y": 1.301,
+      "z": 4.182
+    },
+    "cameraPosition": {
+      "x": -0.7,
+      "y": 3.872,
+      "z": 16.653
+    },
+    "collisions": 1,
+    "jumps": 0,
+    "maxBallHeight": 1.2,
+    "car": {
+      "x": 0,
+      "y": 0.65,
+      "z": 8.698,
+      "vx": 0,
+      "vy": 0,
+      "vz": -10.557,
+      "yaw": 0
+    },
+    "ball": {
+      "x": 0,
+      "y": 1.189,
+      "z": 5.932,
+      "vx": 0,
+      "vy": -0.407,
+      "vz": -9.353
+    },
+    "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+    "log": []
+  },
+  "source": "https://x.com/BlendiByl/status/2104800823620632641",
+  "reference": {
+    "focus": "立体车球场、追车或球相机、加速、惯性与真实碰撞共同决定操控手感。",
+    "evidence": "作者提供浏览器车球同人游戏并强调物理；原片可见立体球场、跟随视角和 Boost。",
+    "sourceTech": "具体物理引擎未知；不能由效果推定使用某个引擎。",
+    "ours": "原创三维单人车球场、跟随视角与 Boost、车球碰撞和进球判定。",
+    "tech": "本地 Three.js + 我们的简化运动与碰撞计算。 画面采用：细化车体、草皮、球网、看台梁柱与灯阵。",
+    "value": "作为操控、动力参数与挑战关卡的浏览器物理实验基础。",
+    "check": "加速改变速度；相机随车辆或球变化；碰撞后球发生运动并能进球。",
+    "boundary": "单人简化物理；没有原作的全部空中技巧、完整仿真或多人比赛。",
+    "kernel": "运动积分、球车接触与重力、地面阻力、Boost 和相机跟随共同决定手感；得分读取实际球位。"
+  },
+  "optimization": null,
+  "scope": "原创单人简化物理；未复现全部空中技巧或多人竞技。"
+}

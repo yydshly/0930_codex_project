@@ -1,0 +1,54 @@
+{
+  "caseId": 5,
+  "revision": "v16",
+  "sourceEvidence": {
+    "originalHistoricalFrame": "assets/qa/reference/05-16.png",
+    "previousActualRender": "assets/qa/quality-reset-v15/05-patrol-close-after.png",
+    "baselineForThisComparison": "assets/qa/quality-reset-v16/05-before-v15.png",
+    "boundary": "Historical source and v15 captures are visual references, not fresh v16 audit captures. The original scene shows human enemies; the current product keeps original mechanical guards."
+  },
+  "diagnosis": [
+    "The large smooth shoulder bulbs and single symmetric chest block make the guard read as a toy even when the joints are connected.",
+    "Uniform flat colour and a bright receiver hide mechanical divisions and make the first-person weapon look unfinished.",
+    "The warm doorway suggests depth, but approaching guards need contact shadows and quieter material breakup."
+  ],
+  "implemented": [
+    "Fitted superelliptical shoulder shells, paired chest leaves, segmented abdomen, overlapping hip plates and recessed front fasteners.",
+    "Armoured elbow and knee caps over ribbed flexible joint sleeves; fitted forearm/shin panels and toe guards retain the same joint origins.",
+    "Machined receiver seams, side charging lever, small hex fasteners, handguard recesses and limited edge abrasion use actual geometry.",
+    "Locally authored 512px coating, brushed-metal and rubber maps provide low contrast colour variation, roughness and shallow bump detail.",
+    "A real shadow-casting spotlight supplies a directional patrol pool between the cool cabinets and warm entry.",
+    "Experience state reports the actual current weapon, guard and room art metadata."
+  ],
+  "preserved": {
+    "weaponMuzzle": {
+      "x": 0,
+      "y": 0.017,
+      "z": -0.962
+    },
+    "weaponViewBase": {
+      "x": 0.29,
+      "y": -0.31,
+      "z": -0.91
+    },
+    "guardHeightMetres": 1.95,
+    "jointOrigins": "Unchanged arm/elbow/leg/knee hierarchy and distances.",
+    "combat": "The centre-camera ray, actual room surfaces, firing/recoil presentation, directional melee and visible-warning wall clock are unchanged."
+  },
+  "verification": {
+    "syntax": "defense.js, defense-detail.js and defense-finish.js parsed successfully in Node.",
+    "geometryRecord": "notes/case-05-v16-geometry.json",
+    "geometryResult": "Finite constructed positions/UVs/normals, actual centre-body intersection and unchanged joint offsets in all four attack phases passed.",
+    "visualAndInteraction": "Completed by root in the actual in-app browser. See notes/v16-in-app-verification.json for per-case controls, current-canvas PNGs and explicit limits."
+  },
+  "remaining": [
+    "These are authored real-time geometric guards and weapon parts. The source game meshes, character animation library and scanned environment are not reproduced.",
+    "The local material marks are subtle procedural finishes; browser inspection is required before judging their visual quality.",
+    "The extra patrol shadow adds rendering work; no frame-rate or physical-device performance claim is made."
+  ],
+  "files": [
+    "web/labs/defense-finish.js",
+    "web/labs/defense-detail.js",
+    "web/labs/defense.js"
+  ]
+}

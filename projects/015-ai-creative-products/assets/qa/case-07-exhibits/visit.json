@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 2,
+  "product": "我们的研究集市",
+  "caseReference": 7,
+  "createdAt": "2026-10-02T18:41:17.089Z",
+  "environment": {
+    "time": "dusk",
+    "timeLabel": "黄昏",
+    "treeDensity": 20
+  },
+  "spatialVisit": {
+    "entry": {
+      "x": -2.55,
+      "z": 10.8,
+      "yaw": 0.04,
+      "pitch": -0.02
+    },
+    "discovered": [
+      "visual-systems",
+      "product-lab",
+      "research-notes"
+    ],
+    "reached": [
+      "visual-systems",
+      "product-lab",
+      "research-notes"
+    ],
+    "walkingDistance": 9.1
+  },
+  "exhibits": [
+    {
+      "id": "visual-systems",
+      "role": "纸档案、主题色与实际展厅画面",
+      "objects": [
+        "双页作品档案",
+        "三种展厅主题样板",
+        "CASE 01 实际运行画面"
+      ],
+      "relatedCases": [
+        1
+      ],
+      "page": "./?id=1",
+      "defaultRecipe": null,
+      "boundary": "这里是静态陈列模型；翻开、主题编辑和 HTML 导出在实际作品集页面中操作。"
+    },
+    {
+      "id": "product-lab",
+      "role": "实体琴键、机器人与猫、默认配方谱板",
+      "objects": [
+        "微缩实体琴键",
+        "原创机器人与猫",
+        "默认 32 音符 / 90 BPM 谱板",
+        "CASE 06 实际运行画面"
+      ],
+      "relatedCases": [
+        6
+      ],
+      "page": "./?id=6",
+      "defaultRecipe": {
+        "mode": "static-default-illustration",
+        "mood": "calm",
+        "noteCount": 32,
+        "tempo": 90
+      },
+      "boundary": "陈列模型与谱板为静态默认配方示意，不播放声音，也不代表其它页面当前编辑值。"
+    },
+    {
+      "id": "research-notes",
+      "role": "路线沙盘、来源册、案例索引与参观凭证",
+      "objects": [
+        "本例入口与三展位路线沙盘",
+        "原片 00:22 来源册",
+        "观察 / 结论 / 验收索引抽屉",
+        "本次真实参观凭证"
+      ],
+      "relatedCases": [
+        7
+      ],
+      "page": "../#demo-07",
+      "defaultRecipe": null,
+      "boundary": "沙盘是当前固定布局的缩尺说明，不是可编辑地图；原作 NPC 对话能力未确认，也未在此复现。"
+    }
+  ],
+  "view": {
+    "yaw": 0.4,
+    "elevation": 0.54,
+    "distance": 34
+  },
+  "renderer": "webgl",
+  "selectedExhibit": "research-notes",
+  "visitedExhibits": [
+    {
+      "id": "visual-systems",
+      "title": "视觉系统展位",
+      "visitedAt": "2026-10-02T18:41:12.623Z",
+      "via": "near-view",
+      "positionAtView": {
+        "x": -2.913902941098371,
+        "z": 1.7072790293851057,
+        "yaw": 0.76,
+        "pitch": -0.02
+      },
+      "distanceAtView": 2.62,
+      "relatedCases": [
+        1
+      ],
+      "shownObjects": [
+        "双页作品档案",
+        "三种展厅主题样板",
+        "CASE 01 实际运行画面"
+      ],
+      "summary": "纸档案对应“聚焦 → 翻开 → 阅读”的成果层级；主题样板对应白盒、黑盒与陶土三种已有皮肤。打开实际页面，可以编辑名称与主题并导出离线展厅。"
+    },
+    {
+      "id": "product-lab",
+      "title": "产品原型展位",
+      "visitedAt": "2026-10-02T18:41:13.827Z",
+      "via": "guided-shortcut",
+      "positionAtView": {
+        "x": 2.8,
+        "z": -3.9,
+        "yaw": 0.1,
+        "pitch": 0
+      },
+      "distanceAtView": 2.21,
+      "relatedCases": [
+        6
+      ],
+      "shownObjects": [
+        "微缩实体琴键",
+        "原创机器人与猫",
+        "默认 32 音符 / 90 BPM 谱板",
+        "CASE 06 实际运行画面"
+      ],
+      "summary": "静态谱板为默认专注配方示意：32 音符、90 BPM，并不随另一个页面的编辑实时变化。进入实际原型，可以编辑、播放与导出。当前参观状态另由本集市记录。"
+    },
+    {
+      "id": "research-notes",
+      "title": "研究档案展位",
+      "visitedAt": "2026-10-02T18:41:15.263Z",
+      "via": "guided-shortcut",
+      "positionAtView": {
+        "x": 5.4,
+        "z": 2.5,
+        "yaw": 0.37,
+        "pitch": 0
+      },
+      "distanceAtView": 2.47,
+      "relatedCases": [
+        7
+      ],
+      "shownObjects": [
+        "本例入口与三展位路线沙盘",
+        "原片 00:22 来源册",
+        "观察 / 结论 / 验收索引抽屉",
+        "本次真实参观凭证"
+      ],
+      "summary": "原作者工具链未确认。发现、走近与查看是三个不同状态；下面的凭证读取本次真实记录，导出的 JSON 保留三者与步行距离。"
+    }
+  ],
+  "task": {
+    "target": 3,
+    "visited": 3,
+    "complete": true
+  },
+  "implementation": "Original procedural village and static exhibit models; the source author’s toolchain is unconfirmed."
+}

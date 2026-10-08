@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-10-02T14:24:16.246648+00:00",
+  "materialFiles": 26,
+  "materialBytes": 9275335,
+  "checks": [
+    "26 licensed runtime asset files match recorded SHA256 and size",
+    "original download scripts validated source MD5 before encoding",
+    "public license note included",
+    "two official Three.js modules and local API bridge retained"
+  ],
+  "codeAssets": [
+    {
+      "local": "web/labs/assets/RGBELoader.js",
+      "source": "https://github.com/mrdoob/three.js/blob/r160/examples/jsm/loaders/RGBELoader.js",
+      "license": "MIT",
+      "localSha256": "9de424c9bff25b6967e2b5a321414e1d2110ebe153d5326108f16f22a5a9a013",
+      "adaptation": "Import path only; existing local Three.js r160 API bridge."
+    },
+    {
+      "local": "web/labs/assets/RoundedBoxGeometry.js",
+      "source": "https://github.com/mrdoob/three.js/blob/r160/examples/jsm/geometries/RoundedBoxGeometry.js",
+      "license": "MIT",
+      "localSha256": "68c6364c00c1ed3b693e906127635cf89d9c70ecfd685cfe0372c07dd17e9810",
+      "adaptation": "Import path only; existing local Three.js r160 API bridge."
+    }
+  ],
+  "errors": []
+}

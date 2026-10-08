@@ -1,0 +1,272 @@
+{
+  "checkedAt": "2026-10-03T11:25:04.673Z",
+  "method": "Construct real Three.js meshes in Node, with a no-op 2D canvas shim for texture creation; no WebGL browser launched",
+  "checks": [
+    {
+      "name": "Real constructed weapon and guard geometry has finite positions, UVs and unit normals",
+      "passed": true,
+      "detail": {
+        "gun": {
+          "vertices": 108770,
+          "triangles": 36272,
+          "meshes": 8,
+          "materials": 8,
+          "nonFinite": 0,
+          "badNormals": 0
+        },
+        "guard": {
+          "vertices": 104539,
+          "triangles": 37184,
+          "meshes": 53,
+          "materials": 7,
+          "nonFinite": 0,
+          "badNormals": 0
+        }
+      }
+    },
+    {
+      "name": "Resting armour retains human-scale bounds and connected sole height",
+      "passed": true,
+      "detail": {
+        "min": [
+          -0.39700000071525576,
+          -0.0010000047683715874,
+          -0.15600000321865082
+        ],
+        "max": [
+          0.39700000071525576,
+          1.944000005722046,
+          0.19614936411380768
+        ]
+      }
+    },
+    {
+      "name": "Weapon actual muzzle remains the previous shot-feedback origin",
+      "passed": true,
+      "detail": {
+        "x": 0,
+        "y": 0.017,
+        "z": -0.962
+      }
+    },
+    {
+      "name": "Real centre-body ray intersects abdominal armour",
+      "passed": true,
+      "detail": {
+        "hitCount": 2,
+        "firstPoint": [
+          0,
+          1.1,
+          0.125
+        ]
+      }
+    },
+    {
+      "name": "Articulation stays in joint-local coordinates: pursuit",
+      "passed": true,
+      "detail": {
+        "joints": [
+          {
+            "side": -1,
+            "elbowOffset": 0.31000000000000005,
+            "kneeOffset": 0.398
+          },
+          {
+            "side": 1,
+            "elbowOffset": 0.3100000000000001,
+            "kneeOffset": 0.398
+          }
+        ],
+        "min": [
+          -0.4048943317901662,
+          -0.022019928421935175,
+          -0.21070651166994817
+        ],
+        "max": [
+          0.4048943317901662,
+          1.944000005722046,
+          0.30012908956868345
+        ]
+      }
+    },
+    {
+      "name": "Articulation stays in joint-local coordinates: windup",
+      "passed": true,
+      "detail": {
+        "joints": [
+          {
+            "side": -1,
+            "elbowOffset": 0.31000000000000005,
+            "kneeOffset": 0.398
+          },
+          {
+            "side": 1,
+            "elbowOffset": 0.31000000000000005,
+            "kneeOffset": 0.398
+          }
+        ],
+        "min": [
+          -0.559269076750053,
+          -0.022019928421935175,
+          -0.21070651166994817
+        ],
+        "max": [
+          0.559269076750053,
+          1.944000005722046,
+          0.6780070139389343
+        ]
+      }
+    },
+    {
+      "name": "Articulation stays in joint-local coordinates: strike",
+      "passed": true,
+      "detail": {
+        "joints": [
+          {
+            "side": -1,
+            "elbowOffset": 0.31,
+            "kneeOffset": 0.398
+          },
+          {
+            "side": 1,
+            "elbowOffset": 0.31,
+            "kneeOffset": 0.398
+          }
+        ],
+        "min": [
+          -0.4048943317901662,
+          -0.022019928421935175,
+          -0.21070651166994817
+        ],
+        "max": [
+          0.4048943317901662,
+          1.944000005722046,
+          0.748908068592126
+        ]
+      }
+    },
+    {
+      "name": "Articulation stays in joint-local coordinates: recovery",
+      "passed": true,
+      "detail": {
+        "joints": [
+          {
+            "side": -1,
+            "elbowOffset": 0.30999999999999994,
+            "kneeOffset": 0.398
+          },
+          {
+            "side": 1,
+            "elbowOffset": 0.30999999999999994,
+            "kneeOffset": 0.398
+          }
+        ],
+        "min": [
+          -0.4048943317901662,
+          -0.022019928421935175,
+          -0.21070651166994817
+        ],
+        "max": [
+          0.4048943317901662,
+          1.944000005722046,
+          0.4828367434183324
+        ]
+      }
+    },
+    {
+      "name": "Authored finish maps are attached to actual armour and weapon materials",
+      "passed": true,
+      "detail": {
+        "materials": 9,
+        "kinds": [
+          "steel",
+          "rubber",
+          "paint"
+        ],
+        "scope": "Canvas texture objects only; rendering is verified separately in browser."
+      }
+    }
+  ],
+  "gunGeometry": {
+    "vertices": 108770,
+    "triangles": 36272,
+    "meshes": 8,
+    "materials": 8,
+    "nonFinite": 0,
+    "badNormals": 0
+  },
+  "guardGeometry": {
+    "vertices": 104539,
+    "triangles": 37184,
+    "meshes": 53,
+    "materials": 7,
+    "nonFinite": 0,
+    "badNormals": 0
+  },
+  "poses": [
+    {
+      "phase": "pursuit",
+      "joints": [
+        {
+          "side": -1,
+          "elbowOffset": 0.31000000000000005,
+          "kneeOffset": 0.398
+        },
+        {
+          "side": 1,
+          "elbowOffset": 0.3100000000000001,
+          "kneeOffset": 0.398
+        }
+      ]
+    },
+    {
+      "phase": "windup",
+      "joints": [
+        {
+          "side": -1,
+          "elbowOffset": 0.31000000000000005,
+          "kneeOffset": 0.398
+        },
+        {
+          "side": 1,
+          "elbowOffset": 0.31000000000000005,
+          "kneeOffset": 0.398
+        }
+      ]
+    },
+    {
+      "phase": "strike",
+      "joints": [
+        {
+          "side": -1,
+          "elbowOffset": 0.31,
+          "kneeOffset": 0.398
+        },
+        {
+          "side": 1,
+          "elbowOffset": 0.31,
+          "kneeOffset": 0.398
+        }
+      ]
+    },
+    {
+      "phase": "recovery",
+      "joints": [
+        {
+          "side": -1,
+          "elbowOffset": 0.30999999999999994,
+          "kneeOffset": 0.398
+        },
+        {
+          "side": 1,
+          "elbowOffset": 0.30999999999999994,
+          "kneeOffset": 0.398
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "This is geometry and texture wiring verification, not a screenshot or visual approval.",
+    "Real shooting, melee, pause and rendering are still pending the root in-app browser pass."
+  ]
+}

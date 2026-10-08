@@ -1,0 +1,144 @@
+{
+  "checkedAt": "2026-10-03T00:14:16.142Z",
+  "caseId": 4,
+  "checks": [
+    "开场关闭态使用同一胶囊与真实输入数量：通过",
+    "开场开启后圆点到达右端：通过",
+    "开关圆点连续进入第一条真实研究卡：通过",
+    "研究卡圆点落在真实卡片右上角：通过",
+    "实际成果先展示同一整理结果再收拢：通过",
+    "成果标记随纸页收拢进入同一胶囊：通过",
+    "片尾关闭实际整理并保留成果：通过",
+    "关闭态区分成果可导出与实际下载：通过",
+    "往返寻址恢复完全相同的关闭帧：通过",
+    "修改真实输入同步改变片尾数量且不同来源锚点保留：通过",
+    "关闭后实际成果 Markdown 保留来源与待补完整内容：通过",
+    "实际配方导出相同首尾时间轴和真实整理结果：通过",
+    "实际分镜描述圆点入卡及关闭后继续导出：通过",
+    "关闭画面之后完整成果仍有真实阅读入口：通过",
+    "既有曲线环字点阵四个圆点像素锚点保持：通过",
+    "390px 手机关闭态仍可阅读完整成果且无横向溢出：通过",
+    "完整录制期间真实编辑输入被锁定：通过",
+    "实际完整15秒WebM生成后恢复关闭帧和编辑状态：通过",
+    "实际 WebM 寻址 opening 与同一时间轴预览一致：通过",
+    "实际 WebM 寻址 input-transition 与同一时间轴预览一致：通过",
+    "实际 WebM 寻址 result 与同一时间轴预览一致：通过",
+    "实际 WebM 寻址 folding 与同一时间轴预览一致：通过",
+    "实际 WebM 寻址 closing 与同一时间轴预览一致：通过",
+    "实际 WebM 寻址 complete 与同一时间轴预览一致：通过",
+    "真实关闭帧生成420×263封面：通过",
+    "CASE 04 无页面错误：通过"
+  ],
+  "errors": [],
+  "sequence": {
+    "time": 14.9,
+    "start": 0,
+    "end": 15,
+    "openingEnd": 2.25,
+    "inputEnd": 5,
+    "closingStart": 13.9,
+    "foldEnd": 14.4,
+    "phase": "complete",
+    "input": 0,
+    "fold": 1,
+    "close": 1,
+    "knob": {
+      "x": 484,
+      "y": 335,
+      "radius": 42,
+      "on": 0,
+      "role": "retained-result",
+      "filename": "研究证据成果.md"
+    },
+    "operation": {
+      "rule": "仅合并内容与来源完全相同的记录；缺少内容或有效 HTTP(S) 来源的记录留作待补。未自动核实来源内容。",
+      "inputCount": 5,
+      "includedCount": 3,
+      "mergedCount": 1,
+      "pendingCount": 1,
+      "filename": "研究证据成果.md",
+      "resultRetained": true,
+      "downloadClaim": false
+    },
+    "scope": "Time-derived presentation of the real local rule output; no AI verification and no claim that a download has occurred."
+  },
+  "pixelContinuity": {
+    "curve": {
+      "x": 650.3922737306843,
+      "y": 317.83311258278144,
+      "n": 4530
+    },
+    "ring": {
+      "x": 639.4997861420018,
+      "y": 320.50085543199316,
+      "n": 4676
+    },
+    "leaving": {
+      "x": 639.5,
+      "y": 331,
+      "n": 764
+    },
+    "wave": {
+      "x": 639.4787077826726,
+      "y": 331.4185022026432,
+      "n": 681
+    }
+  },
+  "webm": [
+    {
+      "name": "opening",
+      "duration": 15,
+      "time": 0.5,
+      "width": 1280,
+      "height": 720,
+      "meanAbsDiff": 1.7000499131944444
+    },
+    {
+      "name": "input-transition",
+      "duration": 15,
+      "time": 2.8,
+      "width": 1280,
+      "height": 720,
+      "meanAbsDiff": 1.58323046875
+    },
+    {
+      "name": "result",
+      "duration": 15,
+      "time": 13.7,
+      "width": 1280,
+      "height": 720,
+      "meanAbsDiff": 1.6986527777777778
+    },
+    {
+      "name": "folding",
+      "duration": 15,
+      "time": 14.1,
+      "width": 1280,
+      "height": 720,
+      "meanAbsDiff": 8.077639322916667
+    },
+    {
+      "name": "closing",
+      "duration": 15,
+      "time": 14.6,
+      "width": 1280,
+      "height": 720,
+      "meanAbsDiff": 2.1178624131944446
+    },
+    {
+      "name": "complete",
+      "duration": 15,
+      "time": 14.9,
+      "width": 1280,
+      "height": 720,
+      "meanAbsDiff": 1.8316788194444444
+    }
+  ],
+  "actualDownloads": [
+    "04-bookends-actual-evidence.md",
+    "04-bookends-actual-recipe.json",
+    "04-bookends-actual-storyboard.md",
+    "04-bookends-film.webm"
+  ],
+  "scope": "Actual headless Chromium inputs/downloads and six WebM decode positions. No user browser/CUA. Original source toolchain is unknown; timeline is our local Canvas interpretation."
+}

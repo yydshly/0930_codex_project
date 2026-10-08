@@ -1,0 +1,247 @@
+{
+  "results": [
+    {
+      "id": 2,
+      "check": "final street colliders and moved hub still complete evidence quest",
+      "ok": true
+    },
+    {
+      "id": 2,
+      "check": "actual CDP touch hold/tap control and mobile page fit",
+      "ok": true,
+      "state": {
+        "module": "quest",
+        "status": "playing",
+        "running": true,
+        "renderer": "webgl",
+        "position": {
+          "x": 0,
+          "z": 12.85
+        },
+        "yaw": 0,
+        "evidence": [],
+        "elapsed": 0.5,
+        "destination": null,
+        "soundEnabled": true,
+        "assets": "Procedural geometry, canvas labels, synthesized tones. No texture/audio files.",
+        "scope": "Original small RPG prototype; no original source, combat or VATS reproduced.",
+        "log": [
+          {
+            "time": 0,
+            "action": "开始",
+            "detail": "程序化街区任务"
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "check": "actual CDP touch hold/tap control and mobile page fit",
+      "ok": true,
+      "state": {
+        "module": "defense",
+        "status": "playing",
+        "running": true,
+        "renderer": "webgl",
+        "wave": 1,
+        "totalWaves": 3,
+        "health": 100,
+        "ammo": 12,
+        "reloading": false,
+        "kills": 0,
+        "shots": 0,
+        "hits": 0,
+        "elapsed": 0.6,
+        "player": {
+          "x": 0,
+          "z": 4.3,
+          "yaw": 0,
+          "pitch": 0
+        },
+        "enemies": [
+          {
+            "id": 1,
+            "x": -2.94,
+            "z": -9.69,
+            "hp": 2
+          }
+        ],
+        "scope": "Original FPS room and robots. No COD code/assets ported. Ray hits, simple pursuit, cover collision, three waves.",
+        "log": [
+          {
+            "time": 0,
+            "action": "波次开始",
+            "detail": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "check": "actual CDP touch hold/tap control and mobile page fit",
+      "ok": true,
+      "state": {
+        "module": "mascot",
+        "status": "playing",
+        "mode": "sandbox",
+        "running": true,
+        "renderer": "webgl",
+        "selected": "cat",
+        "target": null,
+        "pokes": 1,
+        "hits": 0,
+        "goal": null,
+        "combo": 0,
+        "maxCombo": 0,
+        "misses": 0,
+        "remaining": null,
+        "elapsed": 0.5,
+        "softness": 65,
+        "gravity": true,
+        "soundEnabled": true,
+        "viewAngle": 0,
+        "characters": [
+          {
+            "id": "rabbit",
+            "name": "粉兔",
+            "height": 0,
+            "deformation": 0,
+            "localIndent": 0,
+            "vertexCount": 4756
+          },
+          {
+            "id": "dumpling",
+            "name": "橙团",
+            "height": 0,
+            "deformation": 0,
+            "localIndent": 0,
+            "vertexCount": 1189
+          },
+          {
+            "id": "cat",
+            "name": "薄荷猫",
+            "height": 0.608,
+            "deformation": 0.179,
+            "localIndent": 0.129,
+            "vertexCount": 1189
+          }
+        ],
+        "scope": "Original procedural 3D characters. Local vertex displacement and spring approximation, not full soft-body physics. Combo challenge is our optional extension.",
+        "log": [
+          {
+            "time": 0.3,
+            "character": "cat",
+            "mode": "sandbox",
+            "softness": 65,
+            "gravity": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "check": "actual CDP touch hold/tap control and mobile page fit",
+      "ok": true,
+      "state": {
+        "module": "soccer",
+        "status": "playing",
+        "running": true,
+        "renderer": "webgl",
+        "score": 0,
+        "goal": 3,
+        "remaining": 88.7,
+        "elapsed": 1.3,
+        "boost": 92.1,
+        "boosting": false,
+        "friction": 20,
+        "restitution": 72,
+        "cameraMode": "chase",
+        "cameraPosition": {
+          "x": 0,
+          "y": 5.869,
+          "z": 17.775
+        },
+        "collisions": 1,
+        "jumps": 1,
+        "maxBallHeight": 1.05,
+        "car": {
+          "x": 0,
+          "y": 2.021,
+          "z": 9.356,
+          "vx": 0,
+          "vy": 4.32,
+          "vz": -4.655,
+          "yaw": 0
+        },
+        "ball": {
+          "x": 0,
+          "y": 1.05,
+          "z": 5.808,
+          "vx": 0,
+          "vy": 0,
+          "vz": -11.922
+        },
+        "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+        "log": [
+          {
+            "time": 1,
+            "action": "车辆跳跃"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "check": "WebGL unavailable explicit canvas compatibility starts",
+      "ok": true
+    },
+    {
+      "id": 5,
+      "check": "WebGL unavailable explicit canvas compatibility starts",
+      "ok": true
+    },
+    {
+      "id": 8,
+      "check": "WebGL unavailable explicit canvas compatibility starts",
+      "ok": true
+    },
+    {
+      "id": 10,
+      "check": "WebGL unavailable explicit canvas compatibility starts",
+      "ok": true
+    },
+    {
+      "check": "dispose removes own DOM and stops runtime",
+      "ok": true,
+      "name": "quest",
+      "before": true,
+      "after": false,
+      "children": 0
+    },
+    {
+      "check": "dispose removes own DOM and stops runtime",
+      "ok": true,
+      "name": "defense",
+      "before": true,
+      "after": false,
+      "children": 0
+    },
+    {
+      "check": "dispose removes own DOM and stops runtime",
+      "ok": true,
+      "name": "mascot",
+      "before": true,
+      "after": false,
+      "children": 0
+    },
+    {
+      "check": "dispose removes own DOM and stops runtime",
+      "ok": true,
+      "name": "soccer",
+      "before": true,
+      "after": false,
+      "children": 0
+    }
+  ],
+  "errors": []
+}

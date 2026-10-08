@@ -1,0 +1,55 @@
+{
+  "asset": "Boulder 01",
+  "author": "Rico Cilliers",
+  "source": "https://polyhaven.com/a/boulder_01",
+  "license": "CC0",
+  "gltfSource": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/boulder_01/boulder_01_1k.gltf",
+  "originalBinMd5": "27a19fa031d8b4c3a09261f19c444dc5",
+  "lod": {
+    "vertices": 4231,
+    "indices": 17862,
+    "indexOffset": 135392,
+    "bounds": {
+      "min": [
+        -0.7481597065925598,
+        -0.07364296913146973,
+        -0.9484404921531677
+      ],
+      "max": [
+        0.5239759087562561,
+        0.9301872253417969,
+        0.8818937540054321
+      ]
+    },
+    "nodes": [
+      {
+        "mesh": 0,
+        "name": "boulder_01"
+      }
+    ],
+    "originalTriangles": 66122,
+    "triangles": 5954
+  },
+  "geometrySha256": "8742b01575466fe457dd4fcd5c3e5b1a3faf39009dff4df139a1bdee1af82a49",
+  "textures": [
+    {
+      "source": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/boulder_01/boulder_01_diff_1k.jpg",
+      "sourceMd5": "25f8a843f13369d56d37f49db05ea8c3",
+      "output": "web/labs/assets/boulder/boulder_01-color.webp",
+      "sha256": "bf9cf7dad4fb4ee1bb9c1b9ccd04d2c63b48697ccfe8aaed44da375f5197653f"
+    },
+    {
+      "source": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/boulder_01/boulder_01_nor_gl_1k.jpg",
+      "sourceMd5": "0c4da644d901144b53e4fe2446f3c389",
+      "output": "web/labs/assets/boulder/boulder_01-normal.webp",
+      "sha256": "2bc83c2273a205facd69c5328a08c1a647dfca0a367da92f5ff8ca2c90879d03"
+    },
+    {
+      "source": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/boulder_01/boulder_01_arm_1k.jpg",
+      "sourceMd5": "d632159982cc3121ed3d69b89a122146",
+      "output": "web/labs/assets/boulder/boulder_01-arm.webp",
+      "sha256": "b3509a8dd8fa75f9d1ee49256b79c888d4e831a9d34972c59c0bb6ac9b05dcdc"
+    }
+  ],
+  "scope": "Downloaded official scanned asset, converted to a bounded browser LOD. This is not our authored geometry or source-thread geometry."
+}

@@ -1,0 +1,77 @@
+{
+  "soccer": {
+    "module": "soccer",
+    "status": "won",
+    "running": false,
+    "score": 3,
+    "goal": 3,
+    "remaining": 37.8,
+    "elapsed": 22.2,
+    "friction": 20,
+    "restitution": 72,
+    "collisions": 7,
+    "car": {
+      "x": 848.28,
+      "y": 243.34,
+      "vx": 8.07,
+      "vy": -1.96,
+      "angle": -0.24
+    },
+    "ball": {
+      "x": 915.31,
+      "y": 280.41,
+      "vx": 127.87,
+      "vy": 63.54
+    },
+    "log": [
+      {
+        "time": 3.8,
+        "action": "进球",
+        "score": 1,
+        "friction": 20,
+        "restitution": 72
+      },
+      {
+        "time": 12.9,
+        "action": "进球",
+        "score": 2,
+        "friction": 20,
+        "restitution": 72
+      },
+      {
+        "time": 22.2,
+        "action": "进球",
+        "score": 3,
+        "friction": 20,
+        "restitution": 72
+      }
+    ]
+  },
+  "disposal": [
+    {
+      "module": "quest",
+      "beforeRunning": true,
+      "afterRunning": false,
+      "removed": true
+    },
+    {
+      "module": "defense",
+      "beforeRunning": true,
+      "afterRunning": false,
+      "removed": true
+    },
+    {
+      "module": "mascot",
+      "beforeRunning": true,
+      "afterRunning": false,
+      "removed": true
+    },
+    {
+      "module": "soccer",
+      "beforeRunning": true,
+      "afterRunning": false,
+      "removed": true
+    }
+  ],
+  "errors": []
+}

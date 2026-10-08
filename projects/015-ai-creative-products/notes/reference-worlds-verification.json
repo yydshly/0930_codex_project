@@ -1,0 +1,86 @@
+{
+  "checkedAt": "2026-10-02T13:16:25.792Z",
+  "checks": [
+    "7 real WebGL",
+    "7 first-person keyboard changes actual position",
+    "7 dragging changes look direction",
+    "07 time changes actual image",
+    "07 booth positions and visits recorded",
+    "7 inactive stops simulation",
+    "7 mobile no overflow",
+    "7 mobile direction actually moves",
+    "9 real WebGL",
+    "9 first-person keyboard changes actual position",
+    "9 dragging changes look direction",
+    "09 weather changes real image",
+    "09 night state",
+    "09 reached sites through camera positions",
+    "09 real object interaction changes fire",
+    "09 boat boarding changes state",
+    "9 inactive stops simulation",
+    "9 mobile no overflow",
+    "9 mobile direction actually moves",
+    "09 boarded boat follows first-person motion",
+    "7 fallback states real renderer",
+    "7 fallback disables 3D walking",
+    "9 fallback states real renderer",
+    "9 fallback disables 3D walking",
+    "no JS errors"
+  ],
+  "errors": [],
+  "sourceFrames": {
+    "7": [
+      5,
+      22,
+      45
+    ],
+    "9": [
+      8,
+      45,
+      90
+    ]
+  },
+  "sourceRead": "Remote browser video stream seeks; no video file downloaded.",
+  "sourceObservations": {
+    "7": [
+      {
+        "at": 5,
+        "observed": "Eye-height view of timber/stone facades, lattice windows, bushes and trees."
+      },
+      {
+        "at": 22,
+        "observed": "Street-level movement between buildings toward striped stalls; foliage and afternoon shadow."
+      },
+      {
+        "at": 45,
+        "observed": "Bunting, hanging cloth, lamps, cobbled alley, character and low warm haze."
+      }
+    ],
+    "9": [
+      {
+        "at": 8,
+        "observed": "First-person close view of a vehicle near palms, beach and lagoon."
+      },
+      {
+        "at": 45,
+        "observed": "Boat movement on visibly rippling turquoise water along rock/beach/palm shoreline."
+      },
+      {
+        "at": 90,
+        "observed": "First-person forest/beach exploration under warm low light; palm/grass foreground."
+      }
+    ]
+  },
+  "sourceScreenshots": [
+    "assets/qa/reference-worlds/source-07-005.png",
+    "assets/qa/reference-worlds/source-07-022.png",
+    "assets/qa/reference-worlds/source-07-045.png",
+    "assets/qa/reference-worlds/source-09-008.png",
+    "assets/qa/reference-worlds/source-09-045.png",
+    "assets/qa/reference-worlds/source-09-090.png"
+  ],
+  "remainingScope": {
+    "7": "Original procedural stylized scene; source engine is unknown; no source NPC/game reconstruction.",
+    "9": "Native Three.js procedural environment, first-person movement, boat/fire interaction; no Meshy source assets, combat or full original game mechanics."
+  }
+}

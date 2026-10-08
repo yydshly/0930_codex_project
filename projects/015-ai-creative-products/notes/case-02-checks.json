@@ -1,0 +1,111 @@
+{
+  "checkedAt": "2026-10-02T14:55:27.758Z",
+  "checks": [
+    {
+      "name": "远离记录员时，空间提示不允许直接交谈",
+      "passed": true
+    },
+    {
+      "name": "到达后NPC、对话、交谈入口指向档案站",
+      "passed": true
+    },
+    {
+      "name": "离开记录员后，旧对话不能隔空取得证据",
+      "passed": true
+    },
+    {
+      "name": "取得证据后，空间标记与侧栏记录同步",
+      "passed": true
+    },
+    {
+      "name": "实际导出保留同一空间/任务状态",
+      "passed": true
+    },
+    {
+      "name": "手机交谈入口可见且无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "无页面错误",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "state": {
+    "module": "quest",
+    "status": "playing",
+    "running": true,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 77,
+      "triangles": 295056,
+      "staticDrawCallsSaved": 5859
+    },
+    "position": {
+      "x": -12.1,
+      "z": -7.99
+    },
+    "yaw": 1.289,
+    "evidence": [
+      {
+        "id": "archive",
+        "title": "档案来源与时间已核对"
+      }
+    ],
+    "elapsed": 10.8,
+    "destination": null,
+    "dialogueSite": "archive",
+    "interaction": {
+      "site": "archive",
+      "distance": 2.91,
+      "canTalk": true,
+      "sites": [
+        {
+          "id": "hub",
+          "checked": false,
+          "marker": "待核对"
+        },
+        {
+          "id": "archive",
+          "checked": true,
+          "marker": "已核对"
+        },
+        {
+          "id": "sensor",
+          "checked": false,
+          "marker": "待核对"
+        },
+        {
+          "id": "tower",
+          "checked": false,
+          "marker": "待核对"
+        }
+      ]
+    },
+    "soundEnabled": true,
+    "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+    "scope": "Original small RPG prototype; no original source, combat or VATS reproduced.",
+    "log": [
+      {
+        "time": 0,
+        "action": "开始",
+        "detail": "程序化街区任务"
+      },
+      {
+        "time": 0.9,
+        "action": "前往",
+        "detail": "档案站"
+      },
+      {
+        "time": 10,
+        "action": "前往",
+        "detail": "档案站"
+      },
+      {
+        "time": 10.6,
+        "action": "取得证据",
+        "detail": "档案来源与时间已核对"
+      }
+    ]
+  }
+}

@@ -1,0 +1,681 @@
+{
+  "checks": [
+    {
+      "name": "中央真实射线被后门表面挡住",
+      "passed": true,
+      "detail": {
+        "serial": 1,
+        "clock": 0.552800000011921,
+        "result": "miss",
+        "surface": "room",
+        "enemyId": null,
+        "distance": 17.217,
+        "target": {
+          "x": 0,
+          "y": 1.7,
+          "z": -11.217
+        },
+        "surfacePoint": {
+          "x": 0,
+          "y": 1.7,
+          "z": -11.217
+        },
+        "surfaceNormal": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "origin": {
+          "x": 0.305,
+          "y": 1.425,
+          "z": 4.541
+        },
+        "weaponPose": {
+          "position": {
+            "x": 0.298,
+            "y": -0.324,
+            "z": -0.865
+          },
+          "rotation": {
+            "x": 0.065,
+            "y": -0.012,
+            "z": -0.025
+          }
+        }
+      }
+    },
+    {
+      "name": "发射起点为新枪管实际世界枪口，后坐力不改变瞄准",
+      "passed": true,
+      "detail": {
+        "error": 0.0006658160436512896,
+        "aim": {
+          "x": 0,
+          "z": 6,
+          "yaw": 0,
+          "pitch": 0
+        },
+        "kick": 0
+      }
+    },
+    {
+      "name": "机柜侧板挡住真实射线",
+      "passed": true,
+      "detail": {
+        "serial": 2,
+        "clock": 3.3989000000059604,
+        "result": "miss",
+        "surface": "room",
+        "enemyId": null,
+        "distance": 6.189,
+        "target": {
+          "x": -3.958,
+          "y": 1.7,
+          "z": 1.243
+        },
+        "surfacePoint": {
+          "x": -3.958,
+          "y": 1.7,
+          "z": 1.243
+        },
+        "surfaceNormal": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": -0.699,
+          "y": 1.419,
+          "z": 4.683
+        },
+        "weaponPose": {
+          "position": {
+            "x": 0.298,
+            "y": -0.32985506974549106,
+            "z": -0.865
+          },
+          "rotation": {
+            "x": 0.065,
+            "y": -0.012,
+            "z": -0.025
+          }
+        }
+      }
+    },
+    {
+      "name": "瞄准连续胸腹轮廓后是真实机器人命中",
+      "passed": true,
+      "detail": {
+        "serial": 1,
+        "clock": 27.62509999999404,
+        "result": "hit",
+        "surface": "robot",
+        "enemyId": 1,
+        "distance": 4.245,
+        "target": {
+          "x": -0.456,
+          "y": 1.323,
+          "z": 1.796
+        },
+        "surfacePoint": {
+          "x": -0.456,
+          "y": 1.323,
+          "z": 1.796
+        },
+        "surfaceNormal": {
+          "x": 0.001,
+          "y": -0.195,
+          "z": 0.981
+        },
+        "origin": {
+          "x": 0.15,
+          "y": 1.301,
+          "z": 4.546
+        },
+        "weaponPose": {
+          "position": {
+            "x": 0.298,
+            "y": -0.31926034654983587,
+            "z": -0.865
+          },
+          "rotation": {
+            "x": 0.065,
+            "y": -0.012,
+            "z": -0.025
+          }
+        }
+      }
+    },
+    {
+      "name": "视觉后坐力保持准星方向",
+      "passed": true,
+      "detail": {
+        "before": {
+          "x": 0,
+          "z": 6,
+          "yaw": -0.108,
+          "pitch": -0.089
+        },
+        "after": {
+          "x": 0,
+          "z": 6,
+          "yaw": -0.108,
+          "pitch": -0.089
+        }
+      }
+    },
+    {
+      "name": "第二次真实命中停机，剩余机器人继续追击",
+      "passed": true,
+      "detail": {
+        "module": "defense",
+        "status": "playing",
+        "running": true,
+        "renderer": "webgl",
+        "rendering": {
+          "drawCalls": 102,
+          "triangles": 278918,
+          "pixelRatio": 0.9249,
+          "defaultPixelRatio": 1,
+          "qualityPolicy": "active longest side at most 960px; ready, paused and finished restore default DPR",
+          "canvasPixels": {
+            "width": 960,
+            "height": 490
+          },
+          "interactiveResolutionLimit": 960,
+          "staticDrawCallsSaved": 408
+        },
+        "wave": 1,
+        "totalWaves": 3,
+        "health": 76,
+        "ammo": 10,
+        "reloading": false,
+        "kills": 1,
+        "shots": 2,
+        "hits": 2,
+        "attacks": 2,
+        "dodgedAttacks": 0,
+        "incomingHits": 2,
+        "attackTiming": {
+          "clock": "wall-clock",
+          "reactionStart": "after first warning draw; active wall clock excludes hidden intervals",
+          "maxIntegrationStep": 0.008333333333333333,
+          "trigger": 1.45,
+          "reach": 1.6,
+          "frontDot": 0.45,
+          "windup": 0.85,
+          "strike": 0.22,
+          "recovery": 0.9
+        },
+        "elapsed": 27.2,
+        "shotPresentation": {
+          "clock": "active-wall-clock",
+          "duration": 0.42,
+          "muzzleLocal": {
+            "x": 0,
+            "y": 0.017,
+            "z": -0.962
+          },
+          "weaponScale": 0.62,
+          "age": 0.036,
+          "recoil": {
+            "kick": 0.7308,
+            "return": 0.2088,
+            "position": {
+              "x": 0.2958,
+              "y": -0.3195,
+              "z": -0.8788
+            },
+            "rotation": {
+              "x": 0.045,
+              "y": -0.0088,
+              "z": -0.0183
+            },
+            "affectsAim": false
+          },
+          "visible": {
+            "muzzle": true,
+            "tracer": true,
+            "impact": true
+          },
+          "lastShot": {
+            "serial": 2,
+            "clock": 32.646199999988085,
+            "result": "stopped",
+            "surface": "robot",
+            "enemyId": 1,
+            "distance": 0.949,
+            "target": {
+              "x": -0.102,
+              "y": 1.616,
+              "z": 5.06
+            },
+            "surfacePoint": {
+              "x": -0.102,
+              "y": 1.616,
+              "z": 5.06
+            },
+            "surfaceNormal": {
+              "x": 0.479,
+              "y": -0.57,
+              "z": 0.667
+            },
+            "origin": {
+              "x": 0.15,
+              "y": 1.297,
+              "z": 4.546
+            },
+            "weaponPose": {
+              "position": {
+                "x": 0.298,
+                "y": -0.32331657855967344,
+                "z": -0.865
+              },
+              "rotation": {
+                "x": 0.065,
+                "y": -0.012,
+                "z": -0.025
+              }
+            }
+          }
+        },
+        "feedback": {
+          "canFire": true,
+          "lastShotResult": "stopped",
+          "hitConfirmed": false,
+          "damageCue": true,
+          "lastImpact": {
+            "x": -0.1,
+            "y": 1.62,
+            "z": 5.06
+          }
+        },
+        "player": {
+          "x": 0,
+          "z": 6,
+          "yaw": -0.108,
+          "pitch": -0.089
+        },
+        "enemies": [
+          {
+            "id": 2,
+            "x": 0.16,
+            "z": 4.48,
+            "hp": 2,
+            "attack": {
+              "phase": "pursuit",
+              "phaseElapsed": 0,
+              "cycle": 0,
+              "lockedYaw": -0.108,
+              "lastResult": null,
+              "lastDistance": null,
+              "visibleWindupWallSeconds": null
+            }
+          },
+          {
+            "id": 3,
+            "x": -0.58,
+            "z": 4.68,
+            "hp": 2,
+            "attack": {
+              "phase": "strike",
+              "phaseElapsed": 0.2,
+              "cycle": 1,
+              "lockedYaw": 0.412,
+              "lastResult": "hit",
+              "lastDistance": 1.445,
+              "visibleWindupWallSeconds": 1.091
+            }
+          }
+        ],
+        "scope": "Original FPS room and robots. No COD code/assets ported. Ray hits, simple pursuit, telegraphed directional melee with range-checked strike, cover collision, three waves. Weapon recoil is a bounded visual response only; camera aiming is unchanged. Tracer starts at the actual weapon muzzle; sparks require a real ray intersection. Active play is limited to 960px; ready/paused/finished restore default clarity.",
+        "log": [
+          {
+            "time": 0,
+            "action": "波次开始",
+            "detail": 1
+          },
+          {
+            "time": 21.3,
+            "action": "射击命中",
+            "detail": 1
+          },
+          {
+            "time": 21.3,
+            "action": "发射呈现",
+            "detail": {
+              "serial": 1,
+              "clock": 27.62509999999404,
+              "result": "hit",
+              "surface": "robot",
+              "enemyId": 1,
+              "distance": 4.245,
+              "target": {
+                "x": -0.456,
+                "y": 1.323,
+                "z": 1.796
+              },
+              "surfacePoint": {
+                "x": -0.456,
+                "y": 1.323,
+                "z": 1.796
+              },
+              "surfaceNormal": {
+                "x": 0.001,
+                "y": -0.195,
+                "z": 0.981
+              },
+              "origin": {
+                "x": 0.15,
+                "y": 1.301,
+                "z": 4.546
+              },
+              "weaponPose": {
+                "position": {
+                  "x": 0.298,
+                  "y": -0.31926034654983587,
+                  "z": -0.865
+                },
+                "rotation": {
+                  "x": 0.065,
+                  "y": -0.012,
+                  "z": -0.025
+                }
+              }
+            }
+          },
+          {
+            "time": 24.7,
+            "action": "进攻蓄势",
+            "detail": {
+              "enemy": 1,
+              "attack": 1,
+              "distance": 1.445,
+              "lockedYaw": 0.108
+            }
+          },
+          {
+            "time": 25.1,
+            "action": "蓄势提示",
+            "detail": {
+              "enemy": 1,
+              "attack": 1,
+              "phase": "windup"
+            }
+          },
+          {
+            "time": 25.5,
+            "action": "进攻蓄势",
+            "detail": {
+              "enemy": 3,
+              "attack": 1,
+              "distance": 1.445,
+              "lockedYaw": 0.412
+            }
+          },
+          {
+            "time": 26,
+            "action": "近身冲击",
+            "detail": {
+              "enemy": 1,
+              "attack": 1,
+              "damage": 12,
+              "distance": 1.445,
+              "frontDot": 1,
+              "visibleWindupWallSeconds": 1.048,
+              "visibleWindupSimulationSeconds": 0.858,
+              "phase": "strike"
+            }
+          },
+          {
+            "time": 26.2,
+            "action": "蓄势提示",
+            "detail": {
+              "enemy": 3,
+              "attack": 1,
+              "phase": "windup"
+            }
+          },
+          {
+            "time": 26.2,
+            "action": "射击命中",
+            "detail": 1
+          },
+          {
+            "time": 26.2,
+            "action": "发射呈现",
+            "detail": {
+              "serial": 2,
+              "clock": 32.646199999988085,
+              "result": "stopped",
+              "surface": "robot",
+              "enemyId": 1,
+              "distance": 0.949,
+              "target": {
+                "x": -0.102,
+                "y": 1.616,
+                "z": 5.06
+              },
+              "surfacePoint": {
+                "x": -0.102,
+                "y": 1.616,
+                "z": 5.06
+              },
+              "surfaceNormal": {
+                "x": 0.479,
+                "y": -0.57,
+                "z": 0.667
+              },
+              "origin": {
+                "x": 0.15,
+                "y": 1.297,
+                "z": 4.546
+              },
+              "weaponPose": {
+                "position": {
+                  "x": 0.298,
+                  "y": -0.32331657855967344,
+                  "z": -0.865
+                },
+                "rotation": {
+                  "x": 0.065,
+                  "y": -0.012,
+                  "z": -0.025
+                }
+              }
+            }
+          },
+          {
+            "time": 27.1,
+            "action": "近身冲击",
+            "detail": {
+              "enemy": 3,
+              "attack": 1,
+              "damage": 12,
+              "distance": 1.445,
+              "frontDot": 1,
+              "visibleWindupWallSeconds": 1.091,
+              "visibleWindupSimulationSeconds": 0.858,
+              "phase": "strike"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "隐藏暂停不累计攻击或移动",
+      "passed": true,
+      "detail": {
+        "elapsed": 30.8
+      }
+    },
+    {
+      "name": "后退使蓄势挥击按距离落空，警告至少0.85秒",
+      "passed": true,
+      "detail": {
+        "time": 25.9,
+        "action": "近身落空",
+        "detail": {
+          "enemy": 1,
+          "attack": 1,
+          "distance": 4.872,
+          "frontDot": 0.997,
+          "reason": "out-of-range",
+          "visibleWindupWallSeconds": 1.045,
+          "visibleWindupSimulationSeconds": 0.858,
+          "phase": "strike"
+        }
+      }
+    },
+    {
+      "name": "进入范围的正面挥击命中并扣12生命",
+      "passed": true,
+      "detail": {
+        "time": 31.7,
+        "action": "近身冲击",
+        "detail": {
+          "enemy": 3,
+          "attack": 1,
+          "damage": 12,
+          "distance": 1.449,
+          "frontDot": 1,
+          "visibleWindupWallSeconds": 0.993,
+          "visibleWindupSimulationSeconds": 0.858,
+          "phase": "strike"
+        }
+      }
+    },
+    {
+      "name": "手机页面没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "没有页面错误",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "shots": [
+    {
+      "serial": 1,
+      "clock": 0.552800000011921,
+      "result": "miss",
+      "surface": "room",
+      "enemyId": null,
+      "distance": 17.217,
+      "target": {
+        "x": 0,
+        "y": 1.7,
+        "z": -11.217
+      },
+      "surfacePoint": {
+        "x": 0,
+        "y": 1.7,
+        "z": -11.217
+      },
+      "surfaceNormal": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "origin": {
+        "x": 0.305,
+        "y": 1.425,
+        "z": 4.541
+      },
+      "weaponPose": {
+        "position": {
+          "x": 0.298,
+          "y": -0.324,
+          "z": -0.865
+        },
+        "rotation": {
+          "x": 0.065,
+          "y": -0.012,
+          "z": -0.025
+        }
+      }
+    },
+    {
+      "serial": 2,
+      "clock": 3.3989000000059604,
+      "result": "miss",
+      "surface": "room",
+      "enemyId": null,
+      "distance": 6.189,
+      "target": {
+        "x": -3.958,
+        "y": 1.7,
+        "z": 1.243
+      },
+      "surfacePoint": {
+        "x": -3.958,
+        "y": 1.7,
+        "z": 1.243
+      },
+      "surfaceNormal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": -0.699,
+        "y": 1.419,
+        "z": 4.683
+      },
+      "weaponPose": {
+        "position": {
+          "x": 0.298,
+          "y": -0.32985506974549106,
+          "z": -0.865
+        },
+        "rotation": {
+          "x": 0.065,
+          "y": -0.012,
+          "z": -0.025
+        }
+      }
+    },
+    {
+      "serial": 1,
+      "clock": 27.62509999999404,
+      "result": "hit",
+      "surface": "robot",
+      "enemyId": 1,
+      "distance": 4.245,
+      "target": {
+        "x": -0.456,
+        "y": 1.323,
+        "z": 1.796
+      },
+      "surfacePoint": {
+        "x": -0.456,
+        "y": 1.323,
+        "z": 1.796
+      },
+      "surfaceNormal": {
+        "x": 0.001,
+        "y": -0.195,
+        "z": 0.981
+      },
+      "origin": {
+        "x": 0.15,
+        "y": 1.301,
+        "z": 4.546
+      },
+      "weaponPose": {
+        "position": {
+          "x": 0.298,
+          "y": -0.31926034654983587,
+          "z": -0.865
+        },
+        "rotation": {
+          "x": 0.065,
+          "y": -0.012,
+          "z": -0.025
+        }
+      }
+    }
+  ]
+}

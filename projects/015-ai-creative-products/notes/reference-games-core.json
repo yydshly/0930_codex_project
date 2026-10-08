@@ -1,0 +1,378 @@
+{
+  "results": [
+    {
+      "module": "quest",
+      "check": "hidden state frozen",
+      "ok": true
+    },
+    {
+      "module": "quest",
+      "check": "real JSON download",
+      "status": "won",
+      "ok": true
+    },
+    {
+      "module": "quest",
+      "check": "3D motion, branch, evidence, final submit, mobile fit",
+      "ok": true
+    },
+    {
+      "module": "defense",
+      "check": "hidden state frozen",
+      "ok": true
+    },
+    {
+      "module": "defense",
+      "check": "real JSON download",
+      "status": "won",
+      "ok": true
+    },
+    {
+      "module": "defense",
+      "check": "three actual ray-hit waves won",
+      "ok": true,
+      "state": {
+        "module": "defense",
+        "status": "won",
+        "running": false,
+        "renderer": "webgl",
+        "wave": 3,
+        "totalWaves": 3,
+        "health": 100,
+        "ammo": 5,
+        "reloading": false,
+        "kills": 12,
+        "shots": 67,
+        "hits": 33,
+        "elapsed": 61.7,
+        "player": {
+          "x": 0,
+          "z": 6,
+          "yaw": 0,
+          "pitch": -0.152
+        },
+        "enemies": [],
+        "scope": "Original FPS room and robots. No COD code/assets ported. Ray hits, simple pursuit, cover collision, three waves.",
+        "log": [
+          {
+            "time": 0,
+            "action": "波次开始",
+            "detail": 1
+          },
+          {
+            "time": 0.6,
+            "action": "射击命中",
+            "detail": 1
+          },
+          {
+            "time": 2,
+            "action": "射击命中",
+            "detail": 1
+          },
+          {
+            "time": 3.3,
+            "action": "射击命中",
+            "detail": 2
+          },
+          {
+            "time": 4,
+            "action": "射击命中",
+            "detail": 2
+          },
+          {
+            "time": 11.6,
+            "action": "充能",
+            "detail": "1.3秒"
+          },
+          {
+            "time": 15.6,
+            "action": "射击命中",
+            "detail": 3
+          },
+          {
+            "time": 16.1,
+            "action": "射击命中",
+            "detail": 3
+          },
+          {
+            "time": 16.2,
+            "action": "波次完成",
+            "detail": 1
+          },
+          {
+            "time": 18.2,
+            "action": "波次开始",
+            "detail": 2
+          },
+          {
+            "time": 19,
+            "action": "射击命中",
+            "detail": 4
+          },
+          {
+            "time": 19.4,
+            "action": "射击命中",
+            "detail": 4
+          },
+          {
+            "time": 20,
+            "action": "射击命中",
+            "detail": 4
+          },
+          {
+            "time": 21.4,
+            "action": "射击命中",
+            "detail": 5
+          },
+          {
+            "time": 21.9,
+            "action": "射击命中",
+            "detail": 5
+          },
+          {
+            "time": 22.6,
+            "action": "射击命中",
+            "detail": 5
+          },
+          {
+            "time": 23.1,
+            "action": "充能",
+            "detail": "1.3秒"
+          },
+          {
+            "time": 32.5,
+            "action": "射击命中",
+            "detail": 6
+          },
+          {
+            "time": 33.1,
+            "action": "充能",
+            "detail": "1.3秒"
+          },
+          {
+            "time": 35.1,
+            "action": "射击命中",
+            "detail": 6
+          },
+          {
+            "time": 35.9,
+            "action": "射击命中",
+            "detail": 6
+          },
+          {
+            "time": 36.6,
+            "action": "射击命中",
+            "detail": 7
+          },
+          {
+            "time": 37.6,
+            "action": "射击命中",
+            "detail": 7
+          },
+          {
+            "time": 38.4,
+            "action": "射击命中",
+            "detail": 7
+          },
+          {
+            "time": 38.4,
+            "action": "波次完成",
+            "detail": 2
+          },
+          {
+            "time": 40.4,
+            "action": "波次开始",
+            "detail": 3
+          },
+          {
+            "time": 41,
+            "action": "射击命中",
+            "detail": 8
+          },
+          {
+            "time": 41.8,
+            "action": "射击命中",
+            "detail": 8
+          },
+          {
+            "time": 42.5,
+            "action": "射击命中",
+            "detail": 8
+          },
+          {
+            "time": 43.6,
+            "action": "射击命中",
+            "detail": 9
+          },
+          {
+            "time": 44.3,
+            "action": "射击命中",
+            "detail": 9
+          },
+          {
+            "time": 44.9,
+            "action": "射击命中",
+            "detail": 9
+          },
+          {
+            "time": 46.6,
+            "action": "充能",
+            "detail": "1.3秒"
+          },
+          {
+            "time": 53.5,
+            "action": "射击命中",
+            "detail": 10
+          },
+          {
+            "time": 54.4,
+            "action": "射击命中",
+            "detail": 10
+          },
+          {
+            "time": 54.9,
+            "action": "充能",
+            "detail": "1.3秒"
+          },
+          {
+            "time": 56.7,
+            "action": "射击命中",
+            "detail": 10
+          },
+          {
+            "time": 57.5,
+            "action": "射击命中",
+            "detail": 11
+          },
+          {
+            "time": 58.2,
+            "action": "射击命中",
+            "detail": 11
+          },
+          {
+            "time": 58.9,
+            "action": "射击命中",
+            "detail": 11
+          },
+          {
+            "time": 59.9,
+            "action": "射击命中",
+            "detail": 12
+          },
+          {
+            "time": 60.7,
+            "action": "射击命中",
+            "detail": 12
+          },
+          {
+            "time": 61.7,
+            "action": "射击命中",
+            "detail": 12
+          },
+          {
+            "time": 61.7,
+            "action": "获胜",
+            "detail": "三波机器人全部停机"
+          }
+        ]
+      }
+    },
+    {
+      "module": "defense",
+      "check": "real robot pursuit health-zero loss and mobile fit",
+      "ok": true
+    },
+    {
+      "module": "mascot",
+      "check": "hidden state frozen",
+      "ok": true
+    },
+    {
+      "module": "mascot",
+      "check": "real JSON download",
+      "status": "playing",
+      "ok": true
+    },
+    {
+      "module": "mascot",
+      "check": "3D vertices, local deform, gravity bounce, softness, camera, sandbox default, mobile fit",
+      "ok": true
+    },
+    {
+      "module": "mascot",
+      "check": "optional combo actual win and timeout",
+      "ok": true
+    },
+    {
+      "module": "soccer",
+      "check": "hidden state frozen",
+      "ok": true
+    },
+    {
+      "module": "soccer",
+      "check": "real JSON download",
+      "status": "playing",
+      "ok": true
+    },
+    {
+      "module": "soccer",
+      "check": "actual boost, collision, ball height, goal, jump, camera, mobile fit",
+      "ok": true,
+      "state": {
+        "module": "soccer",
+        "status": "playing",
+        "running": true,
+        "renderer": "webgl",
+        "score": 1,
+        "goal": 3,
+        "remaining": 85.9,
+        "elapsed": 4.1,
+        "boost": 100,
+        "boosting": false,
+        "friction": 20,
+        "restitution": 72,
+        "cameraMode": "ball",
+        "cameraPosition": {
+          "x": 2.53,
+          "y": 4.854,
+          "z": 24.589
+        },
+        "collisions": 1,
+        "jumps": 1,
+        "maxBallHeight": 2.144,
+        "car": {
+          "x": 0,
+          "y": 0.65,
+          "z": 17,
+          "vx": 0,
+          "vy": 0,
+          "vz": 0,
+          "yaw": 0
+        },
+        "ball": {
+          "x": -3,
+          "y": 1.05,
+          "z": 8,
+          "vx": 0,
+          "vy": 0,
+          "vz": 0
+        },
+        "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+        "log": [
+          {
+            "time": 2.1,
+            "action": "进球",
+            "score": 1,
+            "friction": 20,
+            "restitution": 72
+          },
+          {
+            "time": 2.3,
+            "action": "车辆跳跃"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

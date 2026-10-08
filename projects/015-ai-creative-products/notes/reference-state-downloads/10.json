@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-02T15:30:37.461Z",
+  "caseId": 10,
+  "product": "三维操控与物理挑战工具",
+  "task": "控制车辆、切换相机、使用 Boost，将球推入球门。",
+  "state": {
+    "module": "soccer",
+    "status": "ready",
+    "running": false,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 96,
+      "triangles": 97382,
+      "staticDrawCallsSaved": 350
+    },
+    "score": 0,
+    "goal": 3,
+    "remaining": 90,
+    "elapsed": 0,
+    "boost": 100,
+    "boosting": false,
+    "friction": 20,
+    "restitution": 72,
+    "cameraMode": "chase",
+    "speed": 0,
+    "cameraFov": 66,
+    "cameraTarget": {
+      "x": 0,
+      "y": 1.35,
+      "z": 12.5
+    },
+    "cameraPosition": {
+      "x": -0.7,
+      "y": 3.65,
+      "z": 23.4
+    },
+    "collisions": 0,
+    "jumps": 0,
+    "maxBallHeight": 1.05,
+    "car": {
+      "x": 0,
+      "y": 0.65,
+      "z": 17,
+      "vx": 0,
+      "vy": 0,
+      "vz": 0,
+      "yaw": 0
+    },
+    "ball": {
+      "x": 0,
+      "y": 1.05,
+      "z": 8,
+      "vx": 0,
+      "vy": 0,
+      "vz": 0
+    },
+    "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+    "log": []
+  },
+  "source": "https://x.com/BlendiByl/status/2104800823620632641",
+  "reference": {
+    "focus": "立体车球场、追车或球相机、加速、惯性与真实碰撞共同决定操控手感。",
+    "evidence": "作者提供浏览器车球同人游戏并强调物理；原片可见立体球场、跟随视角和 Boost。",
+    "sourceTech": "具体物理引擎未知；不能由效果推定使用某个引擎。",
+    "ours": "原创三维单人车球场、跟随视角与 Boost、车球碰撞和进球判定。",
+    "tech": "本地 Three.js + 我们的简化运动与碰撞计算。 画面采用：细化车体、草皮、球网、看台梁柱与灯阵。",
+    "value": "作为操控、动力参数与挑战关卡的浏览器物理实验基础。",
+    "check": "加速改变速度；相机随车辆或球变化；碰撞后球发生运动并能进球。",
+    "boundary": "单人简化物理；没有原作的全部空中技巧、完整仿真或多人比赛。",
+    "kernel": "运动积分、球车接触与重力、地面阻力、Boost 和相机跟随共同决定手感；得分读取实际球位。"
+  },
+  "optimization": {
+    "caseId": 10,
+    "sourceTarget": "原视频驾驶、推进、碰撞与跟球视角保持真实三维关系；这里参考动力变化可感知，同时保留车、球与球门的空间关系。",
+    "diagnosis": "旧版速度与 BOOST 已有真实数值，但相机固定距离、逐帧插值，加速和滑行感觉相近；接触附近跟球短向量容易改变镜头方向。",
+    "priority": "让真实加速、惯性与追车镜头形成一致的动力反馈。",
+    "changes": [
+      "速度提示读取真实水平速度，区分 BOOST 推进、驱动和惯性滑行。",
+      "速度驱动追车距离、前瞻与有限视角变化，镜头平滑改用 dt 指数响应。",
+      "车球接触附近保持车辆方向，倒车不把反向速度当作前方。",
+      "轮子转动依据实际移动距离；导出保留速度、相机目标与视角。"
+    ],
+    "verify": [
+      "实际 W+Shift：12.39 m/s，BOOST 91，FOV 69.16°，画面提示 BOOST 推进。",
+      "实际松手：仍以 8.11 m/s 惯性滑行，速度降低且未立刻停止。",
+      "实际车球接触：碰撞数 1，球 vz 约 -9.353，球高 1.189 m；接触附近换镜头单次位移约 0.196 m。",
+      "实际倒车保持追车朝向，真实导出及手机 HUD 检查通过；共 8 项针对检查无页面错误。"
+    ],
+    "remaining": [
+      "简化三维接触与牵引，没有完整车辆刚体、空中翻滚或联机。",
+      "未重复三球胜利验收，未跨不同实际设备帧率比较。",
+      "手机宽度使用浏览器模拟；瞬时截图在真实操作后暂停采样。"
+    ]
+  },
+  "scope": "原创单人简化物理；未复现全部空中技巧或多人竞技。"
+}

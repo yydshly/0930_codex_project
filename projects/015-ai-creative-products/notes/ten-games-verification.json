@@ -1,0 +1,347 @@
+{
+  "results": [
+    {
+      "check": "pause freezes state",
+      "module": "quest",
+      "passed": true
+    },
+    {
+      "check": "quest branch, collect three evidence, submit",
+      "passed": true,
+      "state": {
+        "module": "quest",
+        "status": "won",
+        "running": false,
+        "position": {
+          "x": 152,
+          "y": 150
+        },
+        "evidence": [
+          {
+            "id": "archive",
+            "title": "档案来源与时间已核对"
+          },
+          {
+            "id": "sensor",
+            "title": "异常读数与校准已复核"
+          },
+          {
+            "id": "tower",
+            "title": "两次观察的差异已保留"
+          }
+        ],
+        "elapsed": 20,
+        "destination": null,
+        "log": [
+          {
+            "time": 0,
+            "action": "开始",
+            "detail": "现场核对任务"
+          },
+          {
+            "time": 0,
+            "action": "前往",
+            "detail": "档案站"
+          },
+          {
+            "time": 5,
+            "action": "判断",
+            "detail": "档案站：直接选一份结论"
+          },
+          {
+            "time": 5,
+            "action": "判断",
+            "detail": "档案站：核对记录时间与来源"
+          },
+          {
+            "time": 5,
+            "action": "前往",
+            "detail": "传感站"
+          },
+          {
+            "time": 9,
+            "action": "判断",
+            "detail": "传感站：检查校准并重读异常段"
+          },
+          {
+            "time": 10,
+            "action": "前往",
+            "detail": "观测塔"
+          },
+          {
+            "time": 14,
+            "action": "判断",
+            "detail": "观测塔：保留两次观察并比较"
+          },
+          {
+            "time": 14,
+            "action": "前往",
+            "detail": "研究站"
+          },
+          {
+            "time": 20,
+            "action": "完成",
+            "detail": "三份证据提交研究站"
+          }
+        ]
+      }
+    },
+    {
+      "check": "quest JSON download contains real completed state",
+      "passed": true
+    },
+    {
+      "check": "pause freezes state",
+      "module": "defense",
+      "passed": true
+    },
+    {
+      "check": "defense real breach/loss loop",
+      "passed": true
+    },
+    {
+      "check": "defense three waves won with four actual deployed guards",
+      "passed": true,
+      "state": {
+        "module": "defense",
+        "status": "won",
+        "running": false,
+        "wave": 3,
+        "totalWaves": 3,
+        "health": 100,
+        "energy": 100,
+        "kills": 27,
+        "selectedLane": 3,
+        "guards": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "spawned": 12,
+        "enemies": [],
+        "elapsed": 45,
+        "log": [
+          {
+            "time": 0,
+            "action": "波次开始",
+            "detail": 1
+          },
+          {
+            "time": 0,
+            "action": "部署守卫",
+            "detail": "1号防线"
+          },
+          {
+            "time": 0,
+            "action": "部署守卫",
+            "detail": "2号防线"
+          },
+          {
+            "time": 2,
+            "action": "部署守卫",
+            "detail": "3号防线"
+          },
+          {
+            "time": 8,
+            "action": "部署守卫",
+            "detail": "4号防线"
+          },
+          {
+            "time": 14,
+            "action": "波次开始",
+            "detail": 2
+          },
+          {
+            "time": 29,
+            "action": "波次开始",
+            "detail": 3
+          },
+          {
+            "time": 45,
+            "action": "演练完成",
+            "detail": "拦截27个目标"
+          }
+        ]
+      }
+    },
+    {
+      "check": "pause freezes state",
+      "module": "mascot",
+      "passed": true
+    },
+    {
+      "check": "mascot selection, wrong target, deformation and 12-hit win",
+      "passed": true,
+      "state": {
+        "module": "mascot",
+        "status": "won",
+        "running": false,
+        "selected": "cat",
+        "target": "rabbit",
+        "hits": 12,
+        "goal": 12,
+        "combo": 12,
+        "maxCombo": 12,
+        "score": 256,
+        "misses": 1,
+        "pokes": 13,
+        "remaining": 26.6,
+        "characters": [
+          {
+            "id": "rabbit",
+            "name": "粉兔",
+            "x": 220,
+            "y": 338,
+            "deformation": 0
+          },
+          {
+            "id": "dumpling",
+            "name": "橙饺",
+            "x": 480,
+            "y": 338,
+            "deformation": 0.068
+          },
+          {
+            "id": "cat",
+            "name": "薄荷猫",
+            "x": 740,
+            "y": 338,
+            "deformation": -0.01
+          }
+        ],
+        "log": [
+          {
+            "time": 0.2,
+            "character": "rabbit",
+            "hit": false
+          },
+          {
+            "time": 0.5,
+            "character": "cat",
+            "hit": true,
+            "combo": 1
+          },
+          {
+            "time": 0.8,
+            "character": "cat",
+            "hit": true,
+            "combo": 2
+          },
+          {
+            "time": 1,
+            "character": "dumpling",
+            "hit": true,
+            "combo": 3
+          },
+          {
+            "time": 1.3,
+            "character": "rabbit",
+            "hit": true,
+            "combo": 4
+          },
+          {
+            "time": 1.6,
+            "character": "cat",
+            "hit": true,
+            "combo": 5
+          },
+          {
+            "time": 1.8,
+            "character": "dumpling",
+            "hit": true,
+            "combo": 6
+          },
+          {
+            "time": 2.1,
+            "character": "rabbit",
+            "hit": true,
+            "combo": 7
+          },
+          {
+            "time": 2.4,
+            "character": "cat",
+            "hit": true,
+            "combo": 8
+          },
+          {
+            "time": 2.7,
+            "character": "dumpling",
+            "hit": true,
+            "combo": 9
+          },
+          {
+            "time": 2.9,
+            "character": "rabbit",
+            "hit": true,
+            "combo": 10
+          },
+          {
+            "time": 3.2,
+            "character": "cat",
+            "hit": true,
+            "combo": 11
+          },
+          {
+            "time": 3.4,
+            "character": "dumpling",
+            "hit": true,
+            "combo": 12
+          }
+        ]
+      }
+    },
+    {
+      "check": "mascot real timeout loss",
+      "passed": true
+    },
+    {
+      "check": "soccer actual keyboard collision and goal",
+      "passed": true,
+      "state": {
+        "module": "soccer",
+        "status": "playing",
+        "running": true,
+        "score": 1,
+        "goal": 3,
+        "remaining": 57.2,
+        "elapsed": 2.8,
+        "friction": 20,
+        "restitution": 72,
+        "collisions": 2,
+        "car": {
+          "x": 212.42,
+          "y": 280,
+          "vx": 40.83,
+          "vy": 0,
+          "angle": 0
+        },
+        "ball": {
+          "x": 480,
+          "y": 150,
+          "vx": 0,
+          "vy": 0
+        },
+        "log": [
+          {
+            "time": 2.8,
+            "action": "进球",
+            "score": 1,
+            "friction": 20,
+            "restitution": 72
+          }
+        ]
+      }
+    },
+    {
+      "check": "pause freezes state",
+      "module": "soccer",
+      "passed": true
+    },
+    {
+      "check": "soccer friction control, reset and real timeout loss",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

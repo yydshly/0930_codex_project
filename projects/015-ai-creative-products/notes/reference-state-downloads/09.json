@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-02T15:30:29.115Z",
+  "caseId": 9,
+  "product": "浏览器三维导览与环境演练工具",
+  "task": "步行到观察点，改变天气与时刻，导出环境配置和画面。",
+  "state": {
+    "weather": "clear",
+    "hour": 15,
+    "density": 24,
+    "running": true,
+    "time": 2.3399999999999985,
+    "visited": [],
+    "selected": null,
+    "solar": 71,
+    "water": 54,
+    "renderer": "webgl",
+    "fireLit": true,
+    "boatBoarded": false,
+    "boatHeading": 3.141592653589793,
+    "boatSpeed": 0,
+    "boatDistance": 0,
+    "boatBlocked": false,
+    "interactions": [],
+    "arrivalLog": [],
+    "boat": {
+      "x": -15,
+      "z": 7,
+      "heading": 3.141592653589793,
+      "speed": 0,
+      "distance": 0,
+      "blocked": false
+    },
+    "weatherName": "晴天",
+    "mode": "first-person",
+    "camera": {
+      "x": 0.5,
+      "z": 11.8,
+      "yaw": 0.55,
+      "pitch": -0.025
+    },
+    "cameraWorld": {
+      "x": 0.5,
+      "y": 1.7850969295872305,
+      "z": 11.8
+    },
+    "boatView": null,
+    "camper": {
+      "x": 0.5,
+      "z": 11.8
+    },
+    "exploration": {
+      "distance": 0,
+      "steps": 0,
+      "renderCount": 70,
+      "drawCalls": 134,
+      "triangles": 123908,
+      "pixelRatio": 1
+    },
+    "rules": {
+      "transmission": {
+        "clear": 1,
+        "cloud": 0.45,
+        "rain": 0.2,
+        "storm": 0.12
+      },
+      "solar": "optional illustrative daylight*transmission*100",
+      "water": "optional illustrative min(100,30+rainIncrement+density)"
+    },
+    "reference": {
+      "workflow": "Native Three.js environment integration",
+      "assets": "Original detailed procedural geometry, Poly Haven CC0 photographed PBR and HDR sky"
+    }
+  },
+  "source": "https://x.com/maxt3chno/status/2105216139647127750",
+  "reference": {
+    "focus": "原生浏览器三维世界整合：地形、水草、天空、动态天气、日夜和自由探索。",
+    "evidence": "作者明确披露 Three.js、水草地形、天气日夜，以及代码与 Meshy 模型混合制作。",
+    "sourceTech": "Three.js 原生运行；部分模型来自 Meshy，是作者明确披露的技术。",
+    "ours": "可步行的原创热带研究营地、岸线水面、木栈台、植被与天气日夜联动，以及可登乘的船和可切换的篝火。",
+    "tech": "本地 Three.js、程序化环境与材质、第一人称镜头和共享环境状态。 画面采用：摄影沙石、分离棕榈叶、HDR 天空、水面反射与岸线层次。",
+    "value": "用于空间导览、营地体验与环境解释；太阳能/蓄水指标作为我们另加的规则演示。",
+    "check": "走到近处查看对象；改天气和时刻后，天空、光线、水面和交互保持一致。",
+    "boundary": "没有复现作者全部道具与游戏机制，也未调用 Meshy；扩展指标不代表校准的现实模型。",
+    "kernel": "第一人称环境引擎统一镜头、地形高度适配与建筑/树干碰撞、水面、植被、天气和日夜，再挂接可交互对象。"
+  },
+  "optimization": {
+    "caseId": 9,
+    "sourceTarget": "原作09在00:45的船上实帧把船体放在近景，岸线、植被与水面随着航行持续换位；原帖明确原生Three.js整合环境逻辑，并用Meshy生成船及手部等模型。参考价值是观察者、载具与环境在同一世界连贯运行。",
+    "diagnosis": "上一版登船后仍用1.68米步行眼高，船身只露出底边；拖动环顾还会直接转动整条船。水面和植被已细化，但玩家依然像漂在船上方，缺少自然航行体验。",
+    "priority": "只优先解决“坐进船里、独立环顾并沿船首驾驶”的视点与载具关系。",
+    "changes": [
+      "将眼高调整为船底上方1.10米，并移到船的后座；坐姿视点随船身位置和摇动同步。",
+      "船首航向独立于相机看向。拖动只环顾，W/S控制前进后退，A/D转向；触摸按钮随模式改成左转/右转。",
+      "航行按船首推进并自然减速；岸线和栈台使用可航行区域限制。",
+      "返回栈台或使用地点快捷入口时，恢复站姿与步行提示，船回到泊位；导出分开记录相机位置、环顾偏角、船航向/速度/路程。"
+    ],
+    "verify": [
+      "实际坐姿眼高约1.23米（含船身浮动），相机位于船后座；截图中船身进入前景。",
+      "拖动后相机yaw从3.1416变为3.6856，船首仍为3.1416。",
+      "按W后船沿原航向前進：z从7变为7.3469，x保持-15；按D后才改变船首航向。",
+      "释放油门后速度降为0；导出保留独立船/相机状态，返回岸上恢复2.24米站立视点。",
+      "390px手机船上界面无横向溢出，触摸按钮显示转向，地点快捷入口与返回操作保持一致。针对变化12项通过，详见case-09-optimization-verify.json。"
+    ],
+    "remaining": [
+      "船模精度、密集自然植被、角色手脚及水面真实折射仍低于原片；未把本次视点改动称为全面达到原作品质。",
+      "航行是简化的平面加速/转向模型，岸线限制也是简化边界；没有完整刚体浮力、复杂岩石接触或自动靠泊。",
+      "下船仍使用明确的“返回栈台”快捷操作，不是真实航行回港与靠泊动画。"
+    ]
+  },
+  "scope": "程序化原创场景，未调用 Meshy；附加因果指标只是未校准示例。"
+}

@@ -1,0 +1,108 @@
+[
+  {
+    "id": 2,
+    "before": {
+      "module": "quest",
+      "status": "playing",
+      "running": true,
+      "renderer": "webgl",
+      "position": {
+        "x": 0,
+        "z": 15
+      },
+      "yaw": 0,
+      "evidence": [],
+      "elapsed": 0.3,
+      "destination": null,
+      "soundEnabled": true,
+      "assets": "Procedural geometry, canvas labels, synthesized tones. No texture/audio files.",
+      "scope": "Original small RPG prototype; no original source, combat or VATS reproduced.",
+      "log": [
+        {
+          "time": 0,
+          "action": "开始",
+          "detail": "程序化街区任务"
+        }
+      ]
+    },
+    "after": {
+      "module": "quest",
+      "status": "playing",
+      "running": true,
+      "renderer": "webgl",
+      "position": {
+        "x": 0,
+        "z": 12.8
+      },
+      "yaw": 0,
+      "evidence": [],
+      "elapsed": 1,
+      "destination": null,
+      "soundEnabled": true,
+      "assets": "Procedural geometry, canvas labels, synthesized tones. No texture/audio files.",
+      "scope": "Original small RPG prototype; no original source, combat or VATS reproduced.",
+      "log": [
+        {
+          "time": 0,
+          "action": "开始",
+          "detail": "程序化街区任务"
+        }
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "before": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": null,
+      "visits": [],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": 1.7,
+        "z": 8.8,
+        "yaw": 0.17,
+        "pitch": 0
+      },
+      "reached": [],
+      "walkingDistance": 0,
+      "renderer": "webgl",
+      "renderCount": 5
+    },
+    "after": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": "product-lab",
+      "visits": [
+        {
+          "id": "product-lab",
+          "title": "产品原型展位",
+          "visitedAt": "2026-10-02T12:59:15.512Z"
+        }
+      ],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": 1.6025509669374098,
+        "z": 8.232303174260093,
+        "yaw": 0.17,
+        "pitch": 0
+      },
+      "reached": [],
+      "walkingDistance": 0.58,
+      "renderer": "webgl",
+      "renderCount": 12
+    }
+  }
+]

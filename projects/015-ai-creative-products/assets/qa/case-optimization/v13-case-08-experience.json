@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-03T00:26:24.391Z",
+  "caseId": 8,
+  "product": "互动角色与品牌反馈组件",
+  "task": "拖揉不同部位，快速松手观察恢复，调整柔软度并导出实际触碰状态。",
+  "state": {
+    "module": "mascot",
+    "status": "playing",
+    "mode": "sandbox",
+    "running": true,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 16,
+      "triangles": 106354,
+      "pixelRatio": 0.7818,
+      "defaultPixelRatio": 1,
+      "canvasPixels": {
+        "width": 960,
+        "height": 406
+      },
+      "interactiveResolutionLimit": 960,
+      "attachmentBatches": 3,
+      "skinTriangles": 49288,
+      "attachmentTriangles": 28480,
+      "analyticNormals": true,
+      "drawUpdates": {
+        "submitted": 26,
+        "skipped": 3,
+        "lastGeometryMs": 23.599999994039536,
+        "lastSubmitMs": 1.199999988079071
+      },
+      "staticDrawCallsSaved": 0
+    },
+    "input": {
+      "received": 0,
+      "applied": 0,
+      "coalesced": 0,
+      "flushedOnRelease": 0,
+      "pending": 0,
+      "mode": "one deformation update per animation frame, final pointer target flushed on release"
+    },
+    "selected": "rabbit",
+    "shownCharacters": [
+      "rabbit",
+      "dumpling",
+      "cat"
+    ],
+    "target": null,
+    "pokes": 1,
+    "hits": 0,
+    "goal": null,
+    "combo": 0,
+    "maxCombo": 0,
+    "misses": 0,
+    "remaining": null,
+    "elapsed": 0.5,
+    "softness": 65,
+    "gravity": true,
+    "soundEnabled": false,
+    "viewAngle": 0,
+    "characters": [
+      {
+        "id": "rabbit",
+        "name": "粉兔",
+        "height": 0.772,
+        "deformation": -0.005,
+        "localIndent": 0.057,
+        "activePart": "head",
+        "dragging": false,
+        "stretch": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "deformedParts": [
+          "body",
+          "head",
+          "leftEar",
+          "leftHand",
+          "leftFoot",
+          "rightEar",
+          "rightHand",
+          "rightFoot"
+        ],
+        "vertexCount": 9098,
+        "surface": {
+          "type": "continuous-skin",
+          "boundaryEdges": 0,
+          "restVolume": 3.5416,
+          "volumeBeforeCompensation": 0.9889,
+          "volumeAfterCompensation": 1,
+          "transverseThicknessRatio": 1.0082,
+          "compensationCoefficient": 0.066,
+          "minimumJacobian": 0.9809,
+          "regions": [
+            "body",
+            "head",
+            "leftEar",
+            "leftHand",
+            "leftFoot",
+            "rightEar",
+            "rightHand",
+            "rightFoot"
+          ]
+        }
+      },
+      {
+        "id": "dumpling",
+        "name": "橙团",
+        "height": 0,
+        "deformation": 0,
+        "localIndent": 0,
+        "activePart": null,
+        "dragging": false,
+        "stretch": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "deformedParts": [],
+        "vertexCount": 7526,
+        "surface": {
+          "type": "continuous-skin",
+          "boundaryEdges": 0,
+          "restVolume": 3.6027,
+          "volumeBeforeCompensation": 1,
+          "volumeAfterCompensation": 1,
+          "transverseThicknessRatio": 1,
+          "compensationCoefficient": 0,
+          "minimumJacobian": 1,
+          "regions": [
+            "body"
+          ]
+        }
+      },
+      {
+        "id": "cat",
+        "name": "薄荷猫",
+        "height": 0,
+        "deformation": 0,
+        "localIndent": 0,
+        "activePart": null,
+        "dragging": false,
+        "stretch": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "deformedParts": [],
+        "vertexCount": 8026,
+        "surface": {
+          "type": "continuous-skin",
+          "boundaryEdges": 0,
+          "restVolume": 3.6863,
+          "volumeBeforeCompensation": 1,
+          "volumeAfterCompensation": 1,
+          "transverseThicknessRatio": 1,
+          "compensationCoefficient": 0,
+          "minimumJacobian": 1,
+          "regions": [
+            "body",
+            "leftEar",
+            "rightEar"
+          ]
+        }
+      }
+    ],
+    "scope": "Original continuous procedural skins. Local spring fields and bounded transverse thickness compensation, not exact volume conservation or full soft-body physics. Combo challenge is our optional extension.",
+    "log": [
+      {
+        "time": 0.04,
+        "character": "rabbit",
+        "mode": "sandbox",
+        "softness": 65,
+        "gravity": true
+      }
+    ]
+  },
+  "source": "https://x.com/AugustCastilIo/status/2105350465001029697",
+  "reference": {
+    "focus": "立体软萌角色的触碰、压缩回弹、跳起和反馈设置本身就是可参考的能力。",
+    "evidence": "作者自述第四款游戏。已观察触碰后角色腾空，以及柔软度、声音、重力等设置；样片还有新增与混合入口，完整机制未验证。",
+    "sourceTech": "角色建模、变形与游戏逻辑工具链未知。",
+    "ours": "原创三维角色触碰沙盒、弹性与重力/声音设置；计分挑战是我们添加的可选扩展。",
+    "tech": "Three.js 连续隐式外皮、真实射线分区与有界补偿；同角色附件合并为顶点着色曲面，解析雅可比驱动外皮和附件法线。输入按帧采用最新目标，松手处理尾位置，归静跳过重复绘制；保留真实时间回弹、HDR、微透射及960px交互上限。",
+    "value": "用角色表达欢迎、提示和品牌情绪，再根据真实业务决定是否需要小游戏任务。",
+    "check": "持续真实拖动与快速松手均保留最终目标及连续轮廓；实际记录含附件批次、总绘制调用、三角形和输入处理指标，补偿与隐藏暂停保持。",
+    "boundary": "连续场、局部弹簧和厚度补偿为原创近似，不等于严格体积守恒、自碰撞或材料混合。软件渲染的同条件改进不证明真机流畅；原作求解器未知，连击挑战为可选扩展。",
+    "kernel": "触点与拖揉方向驱动同一连续场，耳根、头、身体和表情共同响应；附件合并减少提交，形体与法线按同一场更新。最新输入进入当前帧，释放后由原弹簧恢复。"
+  },
+  "optimization": {
+    "caseId": 8,
+    "sourceTarget": "原片软胶角色在触碰时保留头、耳根与身体的连续轮廓，眼口与触点高光跟着软胶变化；这种即时响应和材质是本例的参考目标，未推断原作求解器。",
+    "diagnosis": "连续外皮已建立，但小型眼睛、高光与腮红仍各用高细分球面独立提交，微透射前置通道又重复渲染附件；pointermove 即时绘制与动画帧重复，拖揉仍被渲染开销拖慢。",
+    "priority": "保留主皮肤精度、微透射和棚拍高光，用附件合批与输入合并改善真实拖揉响应，让附件也沿同一连续场贴住角色。",
+    "changes": [
+      "三只角色的封闭主外皮保持原 9,098 / 7,526 / 8,026 顶点；没有调粗耳根、头身连接，也没有进一步降低 960px 交互上限。",
+      "只减少小型附件球面的冗余细分，并按角色合并为一份顶点着色曲面；眼口、耳内色片与外皮逐顶点沿同一局部场变形，法线也随场变化。",
+      "以高斯场的解析雅可比代替每顶点六次有限差分采样，保留有界体积补偿与触点高光；静态原 DPR、HDR、清漆与微透射均保留。",
+      "真实射线选择部位；输入仅保存最新拖拽目标，在下一动画帧应用一次。松手前 flush 尚未应用的最终位置，再由原墙钟弹簧恢复；隐藏时清空拖拽状态。",
+      "缓存未变化的表面与归静画面，状态导出记录实际 drawCalls/triangles、attachmentBatches、drawUpdates 及输入 received/applied/coalesced/flushedOnRelease/pending。"
+    ],
+    "verify": [
+      "同一隔离 Headless Chromium / SwiftShader 顺序前后对照，均使用 24 个真实持续移动事件、1440×1100 视口、DPR 1、960×367 交互画布；实际总调用 92→16，三角形 238,642→106,354。",
+      "持续移动 rAF 中位 333.3→200 ms（约 3.0→5.0 帧/秒）；pointer handler 16.1→0.2 ms。几何工作 12.8→12.4 ms，收益主要来自少提交与少绘制。",
+      "2,400 个固定头部/旋转耳部样本的解析导数与 1e-5 差分最大误差 3.46e-9；与旧 .002 法线规则的最大角差 0.021°。",
+      "真实大幅右耳拖揉 (0.467, 0.374, -0.255)，连续耳根/头部响应；体积比 0.9979→1，横向跨度比 0.9928，最小顶点雅可比 0.2705。",
+      "真实头部向右大幅拖揉 x=0.644，头/身体/耳根与眼口一同变化；最小顶点雅可比 0.2961；实际松手 1.059 秒恢复阈值，归静恢复 1358×520 / DPR 1。",
+      "18/18 项针对检查通过，无页面错误；快速同任务队列 3 输入合并为 1 应用并 flush 最后目标，隐藏暂停、390px 单角色选中/轻戳与真实 JSON 下载通过。"
+    ],
+    "remaining": [
+      "软件渲染器中持续拖揉约 5 帧/秒，仍不可称流畅；真实 GPU 和手机表现尚未测量，rAF 与渲染 API 计时也不是 GPU 完成栅栏。",
+      "几何处理本轮只有 12.8→12.4 ms 的小幅变化；每帧体积补偿与整体 GPU 着色仍有开销，解析法线不能单独解释全部帧率收益。",
+      "体积修正仍是封闭三角网格的有界近似补偿，不是压力求解、严格物理守恒、自碰撞或原作的材料混合；正的顶点采样雅可比也不能证明所有表面和拖法。",
+      "附件按同一形变场连续延展，极端拉伸时眼口也会变形；保留原色和高光，但未复现原作完整表情系统与美术资产。"
+    ]
+  },
+  "scope": "原创连续形变与有界补偿；软件渲染仍偏慢，未实现完整软体物理或材料混合。"
+}

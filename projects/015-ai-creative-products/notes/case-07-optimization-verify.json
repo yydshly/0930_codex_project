@@ -1,0 +1,428 @@
+{
+  "checks": [
+    {
+      "name": "entry is a walkable lane",
+      "pass": true
+    },
+    {
+      "name": "architecture occludes later exhibits",
+      "pass": true,
+      "detail": [
+        "visual-systems"
+      ]
+    },
+    {
+      "name": "entrance wall blocks walking",
+      "pass": true,
+      "detail": {
+        "position": {
+          "x": -2.0864308742858517,
+          "z": 7.967688916612012,
+          "yaw": 0.04,
+          "pitch": -0.02
+        },
+        "wallCollisionBoundaryX": -2.03,
+        "movementStoppedWithinOneStep": true
+      }
+    },
+    {
+      "name": "walking enters market square",
+      "pass": true,
+      "detail": {
+        "x": -2.857917873237083,
+        "z": 3.1061591787104748,
+        "yaw": 0.04,
+        "pitch": -0.02
+      }
+    },
+    {
+      "name": "walking reveals another exhibit",
+      "pass": true,
+      "detail": [
+        "visual-systems",
+        "product-lab"
+      ]
+    },
+    {
+      "name": "looking reveals side exhibit",
+      "pass": true,
+      "detail": [
+        "visual-systems",
+        "product-lab",
+        "research-notes"
+      ]
+    },
+    {
+      "name": "all shortcut approaches are valid",
+      "pass": true
+    },
+    {
+      "name": "export records actual discovery and path",
+      "pass": true
+    },
+    {
+      "name": "mobile has no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "distant click does not mark a visit",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "states": {
+    "entry": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": null,
+      "visits": [],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": -2.55,
+        "z": 10.8,
+        "yaw": 0.04,
+        "pitch": -0.02
+      },
+      "reached": [],
+      "space": {
+        "phase": "entrance-lane",
+        "discovered": [
+          "visual-systems"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 0,
+      "renderer": "webgl",
+      "renderCount": 17,
+      "renderStats": {
+        "drawCalls": 358,
+        "triangles": 174814,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Original detailed procedural architecture and instanced foliage",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting"
+      }
+    },
+    "square": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": null,
+      "visits": [],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": -2.857917873237083,
+        "z": 3.1061591787104748,
+        "yaw": 0.04,
+        "pitch": -0.02
+      },
+      "reached": [],
+      "space": {
+        "phase": "market-square",
+        "discovered": [
+          "visual-systems",
+          "product-lab"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 11.09,
+      "renderer": "webgl",
+      "renderCount": 57,
+      "renderStats": {
+        "drawCalls": 207,
+        "triangles": 91848,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Original detailed procedural architecture and instanced foliage",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting"
+      }
+    },
+    "lookRight": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": null,
+      "visits": [],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": -2.857917873237083,
+        "z": 3.1061591787104748,
+        "yaw": -0.6799999999999999,
+        "pitch": -0.02
+      },
+      "reached": [],
+      "space": {
+        "phase": "market-square",
+        "discovered": [
+          "visual-systems",
+          "product-lab",
+          "research-notes"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 11.09,
+      "renderer": "webgl",
+      "renderCount": 60,
+      "renderStats": {
+        "drawCalls": 240,
+        "triangles": 116410,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Original detailed procedural architecture and instanced foliage",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting"
+      }
+    },
+    "visited": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": "research-notes",
+      "visits": [
+        {
+          "id": "visual-systems",
+          "title": "视觉系统展位",
+          "visitedAt": "2026-10-02T14:56:21.147Z"
+        },
+        {
+          "id": "product-lab",
+          "title": "产品原型展位",
+          "visitedAt": "2026-10-02T14:56:22.445Z"
+        },
+        {
+          "id": "research-notes",
+          "title": "研究档案展位",
+          "visitedAt": "2026-10-02T14:56:23.232Z"
+        }
+      ],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": 5.4,
+        "z": 2.5,
+        "yaw": 0.37,
+        "pitch": 0
+      },
+      "reached": [
+        "visual-systems",
+        "product-lab",
+        "research-notes"
+      ],
+      "space": {
+        "phase": "market-square",
+        "discovered": [
+          "visual-systems",
+          "product-lab",
+          "research-notes"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 11.09,
+      "renderer": "webgl",
+      "renderCount": 66,
+      "renderStats": {
+        "drawCalls": 244,
+        "triangles": 104620,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Original detailed procedural architecture and instanced foliage",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting"
+      }
+    }
+  }
+}

@@ -1,0 +1,318 @@
+{
+  "caseId": 7,
+  "checkedAt": "2026-10-03T11:30:34.384Z",
+  "checks": [
+    "Finite timber geometry 0.15×4.5×0.18",
+    "Outward timber face winding 0.15×4.5×0.18",
+    "Finite timber geometry 5.05×0.13×0.18",
+    "Outward timber face winding 5.05×0.13×0.18",
+    "Finite timber geometry 0.17×0.24×5.72",
+    "Outward timber face winding 0.17×0.24×5.72",
+    "Finite timber geometry 0.12×1.22×0.29",
+    "Outward timber face winding 0.12×1.22×0.29",
+    "Finite timber geometry 0.33×1.12×0.065",
+    "Outward timber face winding 0.33×1.12×0.065",
+    "Finite timber geometry 0.13×0.062×0.052",
+    "Outward timber face winding 0.13×0.062×0.052",
+    "Finite tree mesh seed 23 1",
+    "Finite tree mesh seed 23 2",
+    "Exact existing leaf budget retained seed 23",
+    "Four authored crown layers / 42 overlapping sprays seed 23",
+    "Finite foliage matrices and colours seed 23",
+    "Crowns distribute leaves across several vertical layers seed 23",
+    "Tree remains two batches seed 23",
+    "Finite tree mesh seed 25 1",
+    "Finite tree mesh seed 25 2",
+    "Exact existing leaf budget retained seed 25",
+    "Four authored crown layers / 42 overlapping sprays seed 25",
+    "Finite foliage matrices and colours seed 25",
+    "Crowns distribute leaves across several vertical layers seed 25",
+    "Tree remains two batches seed 25",
+    "Finite tree mesh seed 1 1",
+    "Finite tree mesh seed 1 2",
+    "Exact existing leaf budget retained seed 1",
+    "Four authored crown layers / 42 overlapping sprays seed 1",
+    "Finite foliage matrices and colours seed 1",
+    "Crowns distribute leaves across several vertical layers seed 1",
+    "Tree remains two batches seed 1",
+    "Finite tree mesh seed 13 1",
+    "Finite tree mesh seed 13 2",
+    "Exact existing leaf budget retained seed 13",
+    "Four authored crown layers / 42 overlapping sprays seed 13",
+    "Finite foliage matrices and colours seed 13",
+    "Crowns distribute leaves across several vertical layers seed 13",
+    "Tree remains two batches seed 13",
+    "Existing entry eye height and fixed collision logic remain",
+    "Existing recessed architectural apertures retained house 0",
+    "Real joinery pins and finite architecture house 0",
+    "Static batches remain bounded house 0",
+    "Existing recessed architectural apertures retained house 1",
+    "Real joinery pins and finite architecture house 1",
+    "Static batches remain bounded house 1"
+  ],
+  "geometries": [
+    {
+      "dimensions": [
+        0.15,
+        4.5,
+        0.18
+      ],
+      "vertexCount": 32,
+      "triangleCount": 60,
+      "minOutwardNormal": 0.9420389826317829,
+      "bounds": {
+        "min": [
+          -0.07633306831121445,
+          -2.25,
+          -0.09047835320234299
+        ],
+        "max": [
+          0.07792165130376816,
+          2.25,
+          0.09047835320234299
+        ]
+      }
+    },
+    {
+      "dimensions": [
+        5.05,
+        0.13,
+        0.18
+      ],
+      "vertexCount": 32,
+      "triangleCount": 60,
+      "minOutwardNormal": 0.9221904133649476,
+      "bounds": {
+        "min": [
+          -2.5250000953674316,
+          -0.0661553218960762,
+          -0.09047835320234299
+        ],
+        "max": [
+          2.5250000953674316,
+          0.06753209978342056,
+          0.09047835320234299
+        ]
+      }
+    },
+    {
+      "dimensions": [
+        0.17,
+        0.24,
+        5.72
+      ],
+      "vertexCount": 32,
+      "triangleCount": 60,
+      "minOutwardNormal": 0.9191141443869425,
+      "bounds": {
+        "min": [
+          -0.0865108072757721,
+          -0.12063780426979065,
+          -2.859999895095825
+        ],
+        "max": [
+          0.08831121027469635,
+          0.12063780426979065,
+          2.859999895095825
+        ]
+      }
+    },
+    {
+      "dimensions": [
+        0.12,
+        1.22,
+        0.29
+      ],
+      "vertexCount": 16,
+      "triangleCount": 28,
+      "minOutwardNormal": 0.7991467831451056,
+      "bounds": {
+        "min": [
+          -0.0589199997484684,
+          -0.6100000143051147,
+          -0.14238999783992767
+        ],
+        "max": [
+          0.0589199997484684,
+          0.6100000143051147,
+          0.14238999783992767
+        ]
+      }
+    },
+    {
+      "dimensions": [
+        0.33,
+        1.12,
+        0.065
+      ],
+      "vertexCount": 16,
+      "triangleCount": 28,
+      "minOutwardNormal": 0.520844853800374,
+      "bounds": {
+        "min": [
+          -0.16202999651432037,
+          -0.5600000023841858,
+          -0.031915001571178436
+        ],
+        "max": [
+          0.16202999651432037,
+          0.5600000023841858,
+          0.031915001571178436
+        ]
+      }
+    },
+    {
+      "dimensions": [
+        0.13,
+        0.062,
+        0.052
+      ],
+      "vertexCount": 16,
+      "triangleCount": 28,
+      "minOutwardNormal": 0.9455840642633926,
+      "bounds": {
+        "min": [
+          -0.06499999761581421,
+          -0.030441999435424805,
+          -0.02553199976682663
+        ],
+        "max": [
+          0.06499999761581421,
+          0.030441999435424805,
+          0.02553199976682663
+        ]
+      }
+    }
+  ],
+  "crowns": [
+    {
+      "seed": 23,
+      "leafCount": 4000,
+      "scale": 1.48,
+      "staticCalls": 2,
+      "triangles": 66176,
+      "leafYRange": [
+        2.379060745239258,
+        5.075387954711914
+      ],
+      "art": {
+        "type": "connected layered branch sprays",
+        "leafCount": 4000,
+        "leafLength": 0.18,
+        "branchPockets": 42,
+        "crownTiers": 4,
+        "foliagePlacement": "elongated overlapping branch sprays; darker inner leaves and lighter upper tips"
+      }
+    },
+    {
+      "seed": 25,
+      "leafCount": 4000,
+      "scale": 1.46,
+      "staticCalls": 2,
+      "triangles": 66176,
+      "leafYRange": [
+        2.33835768699646,
+        5.034663677215576
+      ],
+      "art": {
+        "type": "connected layered branch sprays",
+        "leafCount": 4000,
+        "leafLength": 0.18,
+        "branchPockets": 42,
+        "crownTiers": 4,
+        "foliagePlacement": "elongated overlapping branch sprays; darker inner leaves and lighter upper tips"
+      }
+    },
+    {
+      "seed": 1,
+      "leafCount": 1200,
+      "scale": 0.7,
+      "staticCalls": 2,
+      "triangles": 21376,
+      "leafYRange": [
+        2.512251138687134,
+        5.036295413970947
+      ],
+      "art": {
+        "type": "connected layered branch sprays",
+        "leafCount": 1200,
+        "leafLength": 0.18,
+        "branchPockets": 42,
+        "crownTiers": 4,
+        "foliagePlacement": "elongated overlapping branch sprays; darker inner leaves and lighter upper tips"
+      }
+    },
+    {
+      "seed": 13,
+      "leafCount": 1200,
+      "scale": 1.03,
+      "staticCalls": 2,
+      "triangles": 21376,
+      "leafYRange": [
+        2.396324634552002,
+        4.974688529968262
+      ],
+      "art": {
+        "type": "connected layered branch sprays",
+        "leafCount": 1200,
+        "leafLength": 0.18,
+        "branchPockets": 42,
+        "crownTiers": 4,
+        "foliagePlacement": "elongated overlapping branch sprays; darker inner leaves and lighter upper tips"
+      }
+    }
+  ],
+  "buildings": [
+    {
+      "index": 0,
+      "width": 4.4,
+      "height": 4.5,
+      "depth": 5,
+      "triangles": 23282,
+      "type": "warm timber lane facade",
+      "windowCount": 8,
+      "shutterLeafCount": 16,
+      "hingeCount": 32,
+      "archDoorCount": 0,
+      "rectDoorCount": 1,
+      "brickCount": 100,
+      "timberJointCount": 12,
+      "recessDepth": 0.2,
+      "wallThickness": 0.24,
+      "diamondLead": true,
+      "glass": "Original cool-grey reflective tint; no scene refraction",
+      "eaveLayers": 3,
+      "brickCourses": 3,
+      "staticMeshCount": 18,
+      "instancedMeshCount": 2,
+      "surfaces": "Face-specific rain traces, plaster loss and window-corner hairline cracks; length-aligned solid timber grain, softened sections and flush joinery pins",
+      "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, uneven stone courses, arch stones and layered eaves"
+    },
+    {
+      "index": 1,
+      "width": 6,
+      "height": 4.3,
+      "depth": 4.6,
+      "triangles": 28554,
+      "type": "pale masonry lane facade",
+      "windowCount": 8,
+      "shutterLeafCount": 16,
+      "hingeCount": 32,
+      "archDoorCount": 1,
+      "rectDoorCount": 0,
+      "brickCount": 183,
+      "timberJointCount": 4,
+      "recessDepth": 0.2,
+      "wallThickness": 0.24,
+      "diamondLead": true,
+      "glass": "Original cool-grey reflective tint; no scene refraction",
+      "eaveLayers": 3,
+      "brickCourses": 3,
+      "staticMeshCount": 18,
+      "instancedMeshCount": 2,
+      "surfaces": "Face-specific rain traces, plaster loss and window-corner hairline cracks; length-aligned solid timber grain, softened sections and flush joinery pins",
+      "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, uneven stone courses, arch stones and layered eaves"
+    }
+  ],
+  "scope": "Node geometry and source checks only. Architecture built with a no-op canvas and mock texture loader; painted pixels are not verified. No browser screenshot, interaction, mobile layout or GPU-performance conclusion."
+}

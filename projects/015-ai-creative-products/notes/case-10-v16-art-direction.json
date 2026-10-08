@@ -1,0 +1,32 @@
+{
+  "caseId": 10,
+  "version": 16,
+  "sourceReference": "web/media/thumbnail-10.jpg",
+  "sourceEvidenceScope": "Previously saved original case thumbnail; not a fresh original-site capture in this run.",
+  "beforeReference": "assets/qa/quality-reset-v16/10-before-v15.png",
+  "diagnosis": "The v15 chase view had four straight grandstands meeting as a box, a grid of equally spaced crowd dots, thin roof trusses and harsh layered turf bands. The v15 coupe proportions were retained while this round concentrates on stadium enclosure and surface hierarchy.",
+  "changes": [
+    "A continuous rounded-rectangle stadium bowl with a growing corner radius connects the two seating tiers. The unchanged 40 x 54 playable rectangle fits wholly inside its front barrier.",
+    "Twenty-four concrete seating rows have real missing crowd faces at aisle positions. Sloping aisle handrails, seat ledges and an individually drawn irregular crowd atlas establish smaller scales within the large bowl.",
+    "The concourse has a recessed room strip behind the front fascia, separated room piers, warm interior texture, railing and a distinct advertising ribbon.",
+    "A continuous rounded canopy has a broad underside, four circumferential structural rings, 31 deep radial trusses and 31 segmented floodlight fixtures. Short flags and thin overhead safety cables provide intermediate and fine scales.",
+    "One continuous local PBR turf replaces stacked half-field boxes. Its world-coordinate shader blends home/away color and adds restrained mowing variation; the turf top now coincides with the ground plane.",
+    "The car, real wheel centers and radii, suspension rig, car-ball impulses, BOOST resource, camera rules, jumps, brakes, pause and match loop are unchanged. Live state exposes arenaArtwork and vehicleArtwork for concrete verification."
+  ],
+  "codeFiles": [
+    "web/labs/soccer-stadium.js",
+    "web/labs/soccer-art.js",
+    "web/labs/soccer.js"
+  ],
+  "cpuVerification": "notes/case-10-v16-geometry.json",
+  "browserVerification": "Awaiting the root agent's serial in-app-browser capture and control checks; this authoring record does not claim live WebGL or gameplay acceptance.",
+  "remaining": [
+    "The stadium and car are original authored geometry. The crowd remains a static atlas, and the artwork does not reproduce original game assets.",
+    "The decorative curved barrier follows the bowl while the actual collision bounds retain the original simplified rectangle. Roof and cable geometry does not create new gameplay collisions.",
+    "Stadium structures do not cast large roof shadows onto the field. The car and ball retain their actual realtime shadows; no global illumination or baked ambient occlusion pass is added.",
+    "The simplified single-player physical model does not include a full vehicle rigid body, per-wheel tire dynamics, air roll or multiplayer."
+  ],
+  "verification": {
+    "visualAndInteraction": "Completed by root in the actual in-app browser. See notes/v16-in-app-verification.json for per-case controls, current-canvas PNGs and explicit limits."
+  }
+}

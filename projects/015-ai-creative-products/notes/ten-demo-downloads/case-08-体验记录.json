@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-02T11:25:15.773Z",
+  "caseId": 8,
+  "product": "互动角色与活动小游戏工具",
+  "task": "选择角色、戳碰互动，完成连击或打点任务并保留成绩。",
+  "state": {
+    "module": "mascot",
+    "status": "won",
+    "running": false,
+    "selected": "rabbit",
+    "target": "rabbit",
+    "hits": 12,
+    "goal": 12,
+    "combo": 12,
+    "maxCombo": 12,
+    "score": 256,
+    "misses": 0,
+    "pokes": 12,
+    "remaining": 27.5,
+    "characters": [
+      {
+        "id": "rabbit",
+        "name": "粉兔",
+        "x": 220,
+        "y": 338,
+        "deformation": -0.002
+      },
+      {
+        "id": "dumpling",
+        "name": "橙饺",
+        "x": 480,
+        "y": 338,
+        "deformation": 0.097
+      },
+      {
+        "id": "cat",
+        "name": "薄荷猫",
+        "x": 740,
+        "y": 338,
+        "deformation": -0.011
+      }
+    ],
+    "log": [
+      {
+        "time": 0,
+        "character": "rabbit",
+        "hit": true,
+        "combo": 1
+      },
+      {
+        "time": 0.3,
+        "character": "cat",
+        "hit": true,
+        "combo": 2
+      },
+      {
+        "time": 0.5,
+        "character": "dumpling",
+        "hit": true,
+        "combo": 3
+      },
+      {
+        "time": 0.7,
+        "character": "rabbit",
+        "hit": true,
+        "combo": 4
+      },
+      {
+        "time": 1,
+        "character": "cat",
+        "hit": true,
+        "combo": 5
+      },
+      {
+        "time": 1.2,
+        "character": "dumpling",
+        "hit": true,
+        "combo": 6
+      },
+      {
+        "time": 1.4,
+        "character": "rabbit",
+        "hit": true,
+        "combo": 7
+      },
+      {
+        "time": 1.6,
+        "character": "cat",
+        "hit": true,
+        "combo": 8
+      },
+      {
+        "time": 1.9,
+        "character": "dumpling",
+        "hit": true,
+        "combo": 9
+      },
+      {
+        "time": 2.1,
+        "character": "rabbit",
+        "hit": true,
+        "combo": 10
+      },
+      {
+        "time": 2.3,
+        "character": "cat",
+        "hit": true,
+        "combo": 11
+      },
+      {
+        "time": 2.5,
+        "character": "dumpling",
+        "hit": true,
+        "combo": 12
+      }
+    ]
+  },
+  "source": "https://x.com/AugustCastilIo/status/2105350465001029697",
+  "scope": "原创角色与规则；原作具体机制未完整披露。"
+}

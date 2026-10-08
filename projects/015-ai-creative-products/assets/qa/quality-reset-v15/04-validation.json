@@ -1,0 +1,177 @@
+{
+  "checkedAt": "2026-10-03T10:22:55.170Z",
+  "caseId": 4,
+  "checks": [
+    "Local Inter Display font loaded and display mark is fitted within 1120px",
+    "Default page opens on the oversized type composition",
+    "Actual default rule still produces 3 kept, 1 merged and 1 pending",
+    "Orange point crosses boundary 4.99 / 5.01 continuously",
+    "Orange point crosses boundary 7.79 / 7.81 continuously",
+    "Orange point crosses boundary 10.31 / 10.33 continuously",
+    "Orange point crosses boundary 11.99 / 12.01 continuously",
+    "Seeking restores exactly the same orbit bitmap",
+    "Exact duplicate merge preserves different-source records and pending input",
+    "Editable first research observation changes the film frame",
+    "Film accessible result describes the same actual records",
+    "Actual Markdown contains question, both sources, duplicate and pending list",
+    "Actual recipe contains actual results, font license and pure timeline",
+    "Actual storyboard retains actual evidence and geometry timeline",
+    "Readable result panel preserves full source and pending content",
+    "Long dotless editable wordmark fits frame and retains a separate orange point",
+    "Editable Chinese wordmark has an unclipped fitted layout",
+    "Empty evidence input produces an honest zero-count result",
+    "All existing theme choices remain usable",
+    "Editable motion scene titles enter the orbit letters",
+    "390px layout has no horizontal overflow and actual export is reachable",
+    "Recording disables mutable controls during full timeline render",
+    "Actual full film restores prior time, bitmap and editing controls",
+    "Actual downloaded full film has substantial encoded content",
+    "Actual WebM decodes at 15 seconds and 1280×720",
+    "WebM seek 0.4s matches the same timeline preview",
+    "WebM seek 3.2s matches the same timeline preview",
+    "WebM seek 6.4s matches the same timeline preview",
+    "WebM seek 9s matches the same timeline preview",
+    "WebM seek 11.3s matches the same timeline preview",
+    "WebM seek 13.4s matches the same timeline preview",
+    "WebM seek 14.8s matches the same timeline preview",
+    "Cancellation restores editing and marks incomplete film cancelled",
+    "CASE04 runtime and local asset loads have no errors"
+  ],
+  "errors": [],
+  "httpErrors": [],
+  "continuity": [
+    {
+      "times": [
+        4.99,
+        5.01
+      ],
+      "a": {
+        "x": 818.9692041522492,
+        "y": 339.0235294117647,
+        "n": 2890
+      },
+      "z": {
+        "x": 818.2319694868238,
+        "y": 339.3335644937587,
+        "n": 2884
+      },
+      "delta": 0.799772907750622,
+      "ratio": 1.0020804438280166
+    },
+    {
+      "times": [
+        7.79,
+        7.81
+      ],
+      "a": {
+        "x": 639.8987138263666,
+        "y": 359.42658092175776,
+        "n": 3732
+      },
+      "z": {
+        "x": 639.4923572003217,
+        "y": 359.5205148833467,
+        "n": 3729
+      },
+      "delta": 0.417072291899548,
+      "ratio": 1.000804505229284
+    },
+    {
+      "times": [
+        10.31,
+        10.33
+      ],
+      "a": {
+        "x": 639.5,
+        "y": 359.5864909390445,
+        "n": 1214
+      },
+      "z": {
+        "x": 639.4838442419222,
+        "y": 359.5857497928749,
+        "n": 1207
+      },
+      "delta": 0.01617274920087935,
+      "ratio": 1.0057995028997515
+    },
+    {
+      "times": [
+        11.99,
+        12.01
+      ],
+      "a": {
+        "x": 639.4838442419222,
+        "y": 359.5857497928749,
+        "n": 1207
+      },
+      "z": {
+        "x": 639.4833720030936,
+        "y": 359.55607115235887,
+        "n": 1293
+      },
+      "delta": 0.02968239734909923,
+      "ratio": 1.0712510356255178
+    }
+  ],
+  "webm": {
+    "duration": 15,
+    "width": 1280,
+    "height": 720,
+    "bytes": 3056111,
+    "frames": [
+      {
+        "requested": 0.4,
+        "actual": 0.4,
+        "meanAbsDiff": 0.774609375
+      },
+      {
+        "requested": 3.2,
+        "actual": 3.2,
+        "meanAbsDiff": 0.40367621527777775
+      },
+      {
+        "requested": 6.4,
+        "actual": 6.4,
+        "meanAbsDiff": 0.40792824074074074
+      },
+      {
+        "requested": 9,
+        "actual": 9,
+        "meanAbsDiff": 1.3066898148148147
+      },
+      {
+        "requested": 11.3,
+        "actual": 11.3,
+        "meanAbsDiff": 1.9423466435185186
+      },
+      {
+        "requested": 13.4,
+        "actual": 13.4,
+        "meanAbsDiff": 0.46371672453703705
+      },
+      {
+        "requested": 14.8,
+        "actual": 14.8,
+        "meanAbsDiff": 0.9692954282407408
+      }
+    ]
+  },
+  "font": {
+    "font": "Inter Display Black",
+    "fontVersion": "Version 4.001;git-9221beed3",
+    "localFont": "media/fonts/case-04/InterDisplay-Black.woff2",
+    "license": "SIL Open Font License 1.1 / media/fonts/case-04/OFL.txt",
+    "word": "Archive",
+    "size": 293,
+    "width": 1118.35009765625,
+    "baseline": 548,
+    "dot": {
+      "x": 819.476806640625,
+      "y": 339.60375,
+      "r": 30.765
+    },
+    "layout": "oversized-type / quiet-curve / depth-sorted-orbit / full-bleed-grid",
+    "scope": "Original local art direction; the reference font and production toolchain are unknown."
+  },
+  "scope": "Headless Chromium actual edits, seeks, downloads and full 15s WebM decode; boundary probes temporarily set the range step to any for sub-frame positions; reference font and production toolchain are unknown. The giant text, glyph orbit, curve and radial grid are the requested original Canvas implementation."
+}

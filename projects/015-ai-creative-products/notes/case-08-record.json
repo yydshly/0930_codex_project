@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-02T15:16:17.929Z",
+  "caseId": 8,
+  "product": "互动角色与品牌反馈组件",
+  "task": "触碰角色、观察形体反馈；可选择附加挑战。",
+  "state": {
+    "module": "mascot",
+    "status": "playing",
+    "mode": "sandbox",
+    "running": true,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 60,
+      "triangles": 131858,
+      "staticDrawCallsSaved": 0
+    },
+    "selected": "rabbit",
+    "shownCharacters": [
+      "rabbit",
+      "dumpling",
+      "cat"
+    ],
+    "target": null,
+    "pokes": 1,
+    "hits": 0,
+    "goal": null,
+    "combo": 0,
+    "maxCombo": 0,
+    "misses": 0,
+    "remaining": null,
+    "elapsed": 3.3,
+    "softness": 65,
+    "gravity": true,
+    "soundEnabled": true,
+    "viewAngle": 0,
+    "characters": [
+      {
+        "id": "rabbit",
+        "name": "粉兔",
+        "height": 0,
+        "deformation": 0,
+        "localIndent": 0.143,
+        "activePart": "head",
+        "dragging": true,
+        "stretch": {
+          "x": 0.641,
+          "y": -0.101,
+          "z": 0.031
+        },
+        "deformedParts": [
+          "head"
+        ],
+        "vertexCount": 7252
+      },
+      {
+        "id": "dumpling",
+        "name": "橙团",
+        "height": 0,
+        "deformation": 0,
+        "localIndent": 0,
+        "activePart": null,
+        "dragging": false,
+        "stretch": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "deformedParts": [],
+        "vertexCount": 1813
+      },
+      {
+        "id": "cat",
+        "name": "薄荷猫",
+        "height": 0,
+        "deformation": 0,
+        "localIndent": 0,
+        "activePart": null,
+        "dragging": false,
+        "stretch": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "deformedParts": [],
+        "vertexCount": 1813
+      }
+    ],
+    "scope": "Original procedural 3D characters. Local vertex displacement and spring approximation, not full soft-body physics. Combo challenge is our optional extension.",
+    "log": [
+      {
+        "time": 0.68,
+        "character": "rabbit",
+        "mode": "sandbox",
+        "softness": 65,
+        "gravity": true
+      }
+    ]
+  },
+  "source": "https://x.com/AugustCastilIo/status/2105350465001029697",
+  "reference": {
+    "focus": "立体软萌角色的触碰、压缩回弹、跳起和反馈设置本身就是可参考的能力。",
+    "evidence": "作者自述第四款游戏。已观察触碰后角色腾空，以及柔软度、声音、重力等设置；样片还有新增与混合入口，完整机制未验证。",
+    "sourceTech": "角色建模、变形与游戏逻辑工具链未知。",
+    "ours": "原创三维角色触碰沙盒、弹性与重力/声音设置；计分挑战是我们添加的可选扩展。",
+    "tech": "Three.js MeshPhysicalMaterial 高光材质、射线命中、局部顶点形变、阻尼回弹与重力积分。 画面采用：亮泽软胶、细化表情、HDR 反射与柔和接触影。",
+    "value": "用角色表达欢迎、提示和品牌情绪，再根据真实业务决定是否需要小游戏任务。",
+    "check": "触碰会变形和弹起；柔软度、重力与声音开关影响真实反馈；附加挑战不被写成原作玩法。",
+    "boundary": "局部顶点与弹簧近似，未实现完整软体模拟或原作的全部混合/黏液功能；自创连击是我们的扩展。",
+    "kernel": "触碰命中 → 压缩与回弹 → 重力跳起 → 声音/情绪反馈；参数影响同一角色状态。"
+  },
+  "optimization": null,
+  "scope": "角色为原创；连击挑战是我们的可选扩展，原作完整规则未知。"
+}

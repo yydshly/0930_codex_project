@@ -1,0 +1,106 @@
+{
+  "checkedAt": "2026-10-02T15:13:57.806Z",
+  "checks": [
+    {
+      "name": "未瞄准的射击扣电荷，但不显示命中标记",
+      "passed": true
+    },
+    {
+      "name": "真实射线命中扣防护，记录世界命中点并显示确认",
+      "passed": true
+    },
+    {
+      "name": "机器人实际近身冲击触发受伤边缘，未冒充射击命中",
+      "passed": true
+    },
+    {
+      "name": "导出保留实际命中与近身伤害结果",
+      "passed": true
+    },
+    {
+      "name": "重置清空命中与受伤反馈",
+      "passed": true
+    },
+    {
+      "name": "手机无溢出",
+      "passed": true
+    },
+    {
+      "name": "无页面错误",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "state": {
+    "module": "defense",
+    "status": "playing",
+    "running": false,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 76,
+      "triangles": 55782,
+      "staticDrawCallsSaved": 354
+    },
+    "wave": 1,
+    "totalWaves": 3,
+    "health": 88,
+    "ammo": 10,
+    "reloading": false,
+    "kills": 0,
+    "shots": 2,
+    "hits": 1,
+    "elapsed": 5.2,
+    "feedback": {
+      "canFire": false,
+      "lastShotResult": "hit",
+      "hitConfirmed": false,
+      "damageCue": true,
+      "lastImpact": {
+        "x": -2.62,
+        "y": 1.12,
+        "z": -7.97
+      }
+    },
+    "player": {
+      "x": -2.03,
+      "z": -4.85,
+      "yaw": -0.185,
+      "pitch": -0.041
+    },
+    "enemies": [
+      {
+        "id": 1,
+        "x": -2.22,
+        "z": -5.83,
+        "hp": 1
+      },
+      {
+        "id": 2,
+        "x": 2.05,
+        "z": -8.18,
+        "hp": 2
+      }
+    ],
+    "scope": "Original FPS room and robots. No COD code/assets ported. Ray hits, simple pursuit, cover collision, three waves.",
+    "log": [
+      {
+        "time": 0,
+        "action": "波次开始",
+        "detail": 1
+      },
+      {
+        "time": 2.2,
+        "action": "射击命中",
+        "detail": 1
+      },
+      {
+        "time": 5.1,
+        "action": "近身冲击",
+        "detail": {
+          "enemy": 1,
+          "damage": 12
+        }
+      }
+    ]
+  }
+}

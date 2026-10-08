@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-02T18:16:18.423Z",
+  "caseId": 8,
+  "product": "互动角色与品牌反馈组件",
+  "task": "触碰角色、观察形体反馈；可选择附加挑战。",
+  "state": {
+    "module": "mascot",
+    "status": "playing",
+    "mode": "sandbox",
+    "running": true,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 92,
+      "triangles": 238642,
+      "pixelRatio": 0.7818,
+      "defaultPixelRatio": 1,
+      "canvasPixels": {
+        "width": 960,
+        "height": 406
+      },
+      "interactiveResolutionLimit": 960,
+      "staticDrawCallsSaved": 0
+    },
+    "selected": "rabbit",
+    "shownCharacters": [
+      "rabbit",
+      "dumpling",
+      "cat"
+    ],
+    "target": null,
+    "pokes": 1,
+    "hits": 0,
+    "goal": null,
+    "combo": 0,
+    "maxCombo": 0,
+    "misses": 0,
+    "remaining": null,
+    "elapsed": 0.6,
+    "softness": 65,
+    "gravity": true,
+    "soundEnabled": false,
+    "viewAngle": 0,
+    "characters": [
+      {
+        "id": "rabbit",
+        "name": "粉兔",
+        "height": 0.715,
+        "deformation": -0.019,
+        "localIndent": 0.048,
+        "activePart": "head",
+        "dragging": false,
+        "stretch": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "deformedParts": [
+          "body",
+          "head",
+          "leftEar",
+          "leftHand",
+          "leftFoot",
+          "rightEar",
+          "rightHand",
+          "rightFoot"
+        ],
+        "vertexCount": 9098,
+        "surface": {
+          "type": "continuous-skin",
+          "boundaryEdges": 0,
+          "restVolume": 3.5416,
+          "volumeBeforeCompensation": 0.9906,
+          "volumeAfterCompensation": 1,
+          "transverseThicknessRatio": 1.0069,
+          "compensationCoefficient": 0.0553,
+          "minimumJacobian": 0.9841,
+          "regions": [
+            "body",
+            "head",
+            "leftEar",
+            "leftHand",
+            "leftFoot",
+            "rightEar",
+            "rightHand",
+            "rightFoot"
+          ]
+        }
+      },
+      {
+        "id": "dumpling",
+        "name": "橙团",
+        "height": 0,
+        "deformation": 0,
+        "localIndent": 0,
+        "activePart": null,
+        "dragging": false,
+        "stretch": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "deformedParts": [],
+        "vertexCount": 7526,
+        "surface": {
+          "type": "continuous-skin",
+          "boundaryEdges": 0,
+          "restVolume": 3.6027,
+          "volumeBeforeCompensation": 1,
+          "volumeAfterCompensation": 1,
+          "transverseThicknessRatio": 1,
+          "compensationCoefficient": 0,
+          "minimumJacobian": 1,
+          "regions": [
+            "body"
+          ]
+        }
+      },
+      {
+        "id": "cat",
+        "name": "薄荷猫",
+        "height": 0,
+        "deformation": 0,
+        "localIndent": 0,
+        "activePart": null,
+        "dragging": false,
+        "stretch": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "deformedParts": [],
+        "vertexCount": 8026,
+        "surface": {
+          "type": "continuous-skin",
+          "boundaryEdges": 0,
+          "restVolume": 3.6863,
+          "volumeBeforeCompensation": 1,
+          "volumeAfterCompensation": 1,
+          "transverseThicknessRatio": 1,
+          "compensationCoefficient": 0,
+          "minimumJacobian": 1,
+          "regions": [
+            "body",
+            "leftEar",
+            "rightEar"
+          ]
+        }
+      }
+    ],
+    "scope": "Original continuous procedural skins. Local spring fields and bounded transverse thickness compensation, not exact volume conservation or full soft-body physics. Combo challenge is our optional extension.",
+    "log": [
+      {
+        "time": 0.08,
+        "character": "rabbit",
+        "mode": "sandbox",
+        "softness": 65,
+        "gravity": true
+      }
+    ]
+  },
+  "source": "https://x.com/AugustCastilIo/status/2105350465001029697",
+  "reference": {
+    "focus": "立体软萌角色的触碰、压缩回弹、跳起和反馈设置本身就是可参考的能力。",
+    "evidence": "作者自述第四款游戏。已观察触碰后角色腾空，以及柔软度、声音、重力等设置；样片还有新增与混合入口，完整机制未验证。",
+    "sourceTech": "角色建模、变形与游戏逻辑工具链未知。",
+    "ours": "原创三维角色触碰沙盒、弹性与重力/声音设置；计分挑战是我们添加的可选扩展。",
+    "tech": "Three.js 高光软胶材质、隐式组合生成的连续外皮、真实射线命中分区、平滑局部形变场与有界横向补偿；本例按真实时间计时，用固定小步积分回弹，互动时限制渲染尺寸，归静后恢复原清晰度。",
+    "value": "用角色表达欢迎、提示和品牌情绪，再根据真实业务决定是否需要小游戏任务。",
+    "check": "实际拖揉头或耳会影响连接处，释放后复原；体验记录可核对补偿前后的网格体积比与厚度变化。",
+    "boundary": "连续外皮和局部弹簧为原创几何近似；厚度指标是横向跨度比例，补偿不等于严格体积守恒，未实现自碰撞或原作全部混合/黏液功能。连击挑战为可选扩展。",
+    "kernel": "触碰命中部位与拖揉方向驱动同一连续外皮，耳根、头部和身体平滑传递；眼口与色块读取同一形变场，再松手回弹。"
+  },
+  "optimization": {
+    "caseId": 8,
+    "sourceTarget": "原片软胶角色在拖揉时有连贯外形：耳根、头、身体一起保留连续轮廓，高光随触点移动。只参考可见效果，未推断原作求解器。",
+    "diagnosis": "上一轮已有真实射线选中、有方向局部拖揉和附件跟随，但头、耳、身体仍是相叠的独立球面，拉伸会暴露连接。新皮肤验收另发现低帧率把旧循环回弹拖慢。",
+    "priority": "让大幅局部拖揉保持连续凝胶外皮与有界横向补偿，同时让慢帧中的回弹按实际时间完成。",
+    "changes": [
+      "三只角色各用一个封闭外皮；粉兔的头、身、耳、手、脚通过平滑隐式并集连接，保留原有射线区域选择。",
+      "同一连续局部场作用于外皮、耳内色片和面部附件；外皮法线随形变雅可比变换，避免连接处高光跳变。",
+      "测量闭合网格体积并用两次有界横向补偿减少变化；整体弹跳缩放保持单位行列式。",
+      "第 08 项独立墙钟循环保留前一帧时间，弹簧与重力以不超过 1/120 秒的小步积分，每帧只绘制一次，隐藏与恢复重置时钟。",
+      "仅拖揉/回弹期间将画布最长边限制为 960px，归静后恢复原 DPR；静态棚拍材质、环境反射与主体阴影保留。"
+    ],
+    "verify": [
+      "实际头部大幅向右拖揉：头/身体/耳根连续响应，保存状态的最小顶点采样雅可比为 0.2962。",
+      "实际右耳大幅拖揉：局部向量 (0.467, 0.374, -0.255)，耳根与头部一起响应；其他角色未被接触形变，下载 JSON 与实际状态一致。",
+      "耳部整只网格体积比 0.998→1；两横向包围跨度的较小比例为 0.9955，最小顶点采样雅可比 0.2681。",
+      "同一 SwiftShader 条件下，实际松手到位移/凹陷阈值恢复 1.84 秒；旧循环同设备基线 9.07 秒。",
+      "实际交互画布 960×367 / DPR 0.7069，归静 1358×520 / DPR 1；暂停 1.1 秒计时不变，恢复排除暂停间隔。",
+      "10/10 项针对检查通过，无页面错误；软件渲染拖揉 rAF 中位 483.3ms，仍不可称流畅。"
+    ],
+    "remaining": [
+      "体积修正是封闭三角网格上的近似补偿，不是压力求解、严格物理体积守恒、自碰撞或材料混合。",
+      "横向跨度不等于耳尖最薄厚度；正的最小雅可比仅说明本次顶点采样没有检测到翻折，不能保证所有表面或所有拖法。",
+      "Headless Chromium 自动使用 ANGLE/SwiftShader，拖揉约 2.1 帧/秒；交互分辨率与墙钟回弹已改善，实际设备流畅度仍需验证。",
+      "本轮未扩大手机/多参数测试矩阵；先前窄屏选中与可见角色一致的验收仍为浏览器模拟，不能代表真机帧率。"
+    ]
+  },
+  "scope": "角色为原创；连击挑战是我们的可选扩展，原作完整规则未知。"
+}

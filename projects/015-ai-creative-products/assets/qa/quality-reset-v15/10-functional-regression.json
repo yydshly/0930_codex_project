@@ -1,0 +1,251 @@
+{
+  "checks": [
+    {
+      "name": "初始四轮真实接地且悬架连接正确",
+      "passed": true,
+      "detail": {
+        "grounded": true,
+        "frontMinusRearHeight": 0,
+        "rightMinusLeftHeight": 0,
+        "bodyPitch": 0,
+        "bodyRoll": 0,
+        "bodyHeave": 0,
+        "tireRadius": 0.38,
+        "maxWheelAxisVertical": 0,
+        "tireBottom": 0,
+        "suspensionLinkMaxError": 0,
+        "brakeCount": 0,
+        "lastBrakeSpeedDelta": 0,
+        "lastBrakeMinPitch": 0,
+        "landingCount": 0,
+        "lastLandingSpeed": 0,
+        "lastLandingCompression": 0,
+        "contactCount": 0,
+        "lastContactImpulse": 0,
+        "lastContactPitchKick": 0,
+        "lastContactRollKick": 0,
+        "contactAge": null,
+        "scope": "Visual spring response from actual acceleration, contact impulse and landing velocity; simplified vehicle contact remains unchanged."
+      }
+    },
+    {
+      "name": "驾驶产生实际车球冲量并使球腾空",
+      "passed": true,
+      "detail": {
+        "collisions": 1,
+        "feedback": {
+          "grounded": true,
+          "frontMinusRearHeight": 0.0829,
+          "rightMinusLeftHeight": 0,
+          "bodyPitch": 0.0263,
+          "bodyRoll": 0,
+          "bodyHeave": -0.0008,
+          "tireRadius": 0.38,
+          "maxWheelAxisVertical": 0,
+          "tireBottom": 0,
+          "suspensionLinkMaxError": 0,
+          "brakeCount": 0,
+          "lastBrakeSpeedDelta": 0,
+          "lastBrakeMinPitch": 0,
+          "landingCount": 0,
+          "lastLandingSpeed": 0,
+          "lastLandingCompression": 0,
+          "contactCount": 1,
+          "lastContactImpulse": 14.213,
+          "lastContactPitchKick": -0.1864,
+          "lastContactRollKick": 0,
+          "contactAge": 0.468,
+          "scope": "Visual spring response from actual acceleration, contact impulse and landing velocity; simplified vehicle contact remains unchanged."
+        },
+        "maxBallHeight": 1.378
+      }
+    },
+    {
+      "name": "车轮随真实地面行驶旋转",
+      "passed": true,
+      "detail": -28.4406
+    },
+    {
+      "name": "推进消耗真实资源并驱动车辆，镜头随速度拓宽",
+      "passed": true,
+      "detail": {
+        "boostBefore": 100,
+        "boost": 84.1,
+        "speed": 16.8,
+        "fov": 71.98
+      }
+    },
+    {
+      "name": "真实转向改变朝向与轨迹，轮轴仍水平",
+      "passed": true,
+      "detail": {
+        "car": {
+          "x": -0.32,
+          "y": 0.65,
+          "z": -5.544,
+          "vx": -2.758,
+          "vy": 0,
+          "vz": -11.735,
+          "yaw": -0.507
+        },
+        "feedback": {
+          "grounded": true,
+          "frontMinusRearHeight": -0.0894,
+          "rightMinusLeftHeight": -0.0926,
+          "bodyPitch": -0.0284,
+          "bodyRoll": -0.0515,
+          "bodyHeave": 0,
+          "tireRadius": 0.38,
+          "maxWheelAxisVertical": 0,
+          "tireBottom": 0,
+          "suspensionLinkMaxError": 0,
+          "brakeCount": 0,
+          "lastBrakeSpeedDelta": 0,
+          "lastBrakeMinPitch": 0,
+          "landingCount": 0,
+          "lastLandingSpeed": 0,
+          "lastLandingCompression": 0,
+          "contactCount": 1,
+          "lastContactImpulse": 14.213,
+          "lastContactPitchKick": -0.1864,
+          "lastContactRollKick": 0,
+          "contactAge": 1.301,
+          "scope": "Visual spring response from actual acceleration, contact impulse and landing velocity; simplified vehicle contact remains unchanged."
+        }
+      }
+    },
+    {
+      "name": "跳跃具有真实离地高度和向上速度",
+      "passed": true,
+      "detail": {
+        "car": {
+          "x": 0,
+          "y": 2.312,
+          "z": 17,
+          "vx": 0,
+          "vy": 3.4,
+          "vz": 0,
+          "yaw": 0
+        },
+        "feedback": {
+          "grounded": false,
+          "frontMinusRearHeight": 0.1639,
+          "rightMinusLeftHeight": 0,
+          "bodyPitch": 0.0521,
+          "bodyRoll": 0,
+          "bodyHeave": 0.0317,
+          "tireRadius": 0.38,
+          "maxWheelAxisVertical": 0,
+          "tireBottom": 1.6616,
+          "suspensionLinkMaxError": 0,
+          "brakeCount": 0,
+          "lastBrakeSpeedDelta": 0,
+          "lastBrakeMinPitch": 0,
+          "landingCount": 0,
+          "lastLandingSpeed": 0,
+          "lastLandingCompression": 0,
+          "contactCount": 0,
+          "lastContactImpulse": 0,
+          "lastContactPitchKick": 0,
+          "lastContactRollKick": 0,
+          "contactAge": null,
+          "scope": "Visual spring response from actual acceleration, contact impulse and landing velocity; simplified vehicle contact remains unchanged."
+        }
+      }
+    },
+    {
+      "name": "落地后轮胎接地并产生有界悬架压缩",
+      "passed": true,
+      "detail": {
+        "grounded": true,
+        "frontMinusRearHeight": -0.0303,
+        "rightMinusLeftHeight": 0,
+        "bodyPitch": -0.0096,
+        "bodyRoll": 0,
+        "bodyHeave": -0.0115,
+        "tireRadius": 0.38,
+        "maxWheelAxisVertical": 0,
+        "tireBottom": 0,
+        "suspensionLinkMaxError": 0,
+        "brakeCount": 0,
+        "lastBrakeSpeedDelta": 0,
+        "lastBrakeMinPitch": 0,
+        "landingCount": 1,
+        "lastLandingSpeed": 7.135,
+        "lastLandingCompression": -0.0231,
+        "contactCount": 0,
+        "lastContactImpulse": 0,
+        "lastContactPitchKick": 0,
+        "lastContactRollKick": 0,
+        "contactAge": null,
+        "scope": "Visual spring response from actual acceleration, contact impulse and landing velocity; simplified vehicle contact remains unchanged."
+      }
+    },
+    {
+      "name": "刹车仍降低真实速度并记录车身反馈",
+      "passed": true,
+      "detail": {
+        "brakeBefore": 8.11,
+        "speed": 0.97,
+        "feedback": {
+          "grounded": true,
+          "frontMinusRearHeight": 0.1028,
+          "rightMinusLeftHeight": 0,
+          "bodyPitch": 0.0327,
+          "bodyRoll": 0,
+          "bodyHeave": 0,
+          "tireRadius": 0.38,
+          "maxWheelAxisVertical": 0,
+          "tireBottom": 0,
+          "suspensionLinkMaxError": 0,
+          "brakeCount": 1,
+          "lastBrakeSpeedDelta": -7.137,
+          "lastBrakeMinPitch": 0,
+          "landingCount": 0,
+          "lastLandingSpeed": 0,
+          "lastLandingCompression": 0,
+          "contactCount": 0,
+          "lastContactImpulse": 0,
+          "lastContactPitchKick": 0,
+          "lastContactRollKick": 0,
+          "contactAge": null,
+          "scope": "Visual spring response from actual acceleration, contact impulse and landing velocity; simplified vehicle contact remains unchanged."
+        }
+      }
+    },
+    {
+      "name": "跟球相机追踪当前真实球坐标",
+      "passed": true,
+      "detail": {
+        "camera": {
+          "x": 0,
+          "y": 1.05,
+          "z": 8
+        },
+        "ball": {
+          "x": 0,
+          "y": 1.05,
+          "z": 8,
+          "vx": 0,
+          "vy": 0,
+          "vz": 0
+        }
+      }
+    },
+    {
+      "name": "暂停不推进比赛时间",
+      "passed": true,
+      "detail": 2.7
+    },
+    {
+      "name": "手机页面没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "页面没有错误",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": []
+}

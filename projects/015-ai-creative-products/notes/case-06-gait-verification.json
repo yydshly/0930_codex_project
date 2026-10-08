@@ -1,0 +1,249 @@
+{
+  "caseId": 6,
+  "testedAt": "2026-10-02T16:30:50.753Z",
+  "method": "Read-only dynamic import of actual music-art.js and music-performance.js on a blank same-origin Playwright page. Actual Three Scene, geometry and character hierarchy are built; stage.supported=false disables HDR and the renderer is only a toneMappingExposure stub. Three actual 32-note scores read from music.js. Dense pose sampling at 100 samples per beat measures Object3D world coordinates and actual CylinderGeometry endpoints.",
+  "sourceHashes": {
+    "web/labs/music-art.js": "6c6a4e452e2b6f8c501370041e5efbf2482b512630aabefab6059c8092cfc29c",
+    "web/labs/music-performance.js": "e4fce0bde17575a9d5bada1b4a4f5da90bd43581ca0a6341e99bb051eedc6830",
+    "web/labs/music.js": "819060c1cd9d593fd56e6d8099685396810b8e0d7d873c393c495fb5ab22ff29"
+  },
+  "browser": "151.0.7922.34",
+  "stepCount": 100,
+  "epsilonBeat": 0.000001,
+  "worldTolerance": 1e-7,
+  "boundaryTolerance": 0.0001,
+  "sequences": {
+    "calm": [
+      60,
+      64,
+      67,
+      72,
+      69,
+      67,
+      64,
+      62,
+      60,
+      64,
+      65,
+      69,
+      67,
+      64,
+      62,
+      60,
+      60,
+      64,
+      67,
+      72,
+      69,
+      67,
+      64,
+      62,
+      72,
+      64,
+      65,
+      69,
+      79,
+      64,
+      62,
+      60
+    ],
+    "bright": [
+      60,
+      67,
+      72,
+      76,
+      74,
+      72,
+      69,
+      67,
+      65,
+      69,
+      74,
+      77,
+      76,
+      72,
+      67,
+      60,
+      60,
+      67,
+      72,
+      76,
+      74,
+      72,
+      69,
+      67,
+      77,
+      69,
+      74,
+      77,
+      88,
+      72,
+      67,
+      60
+    ],
+    "night": [
+      57,
+      60,
+      64,
+      69,
+      67,
+      64,
+      60,
+      59,
+      57,
+      60,
+      62,
+      65,
+      64,
+      60,
+      59,
+      57,
+      57,
+      60,
+      64,
+      69,
+      67,
+      64,
+      60,
+      59,
+      69,
+      60,
+      62,
+      65,
+      76,
+      60,
+      59,
+      57
+    ]
+  },
+  "counters": {
+    "denseSamples": 9600,
+    "stancePairs": 38229,
+    "connectedLegSamples": 57600,
+    "contactSamples": 288,
+    "boundaries": 93,
+    "seekPairs": 21
+  },
+  "minSupport": {
+    "robot": 1,
+    "cat": 2
+  },
+  "max": {
+    "stanceXZDelta": 5.551115123125783e-17,
+    "stanceSurfaceError": 0,
+    "connectionGap": 1.5543277230005127e-15,
+    "contactDistance": 2.220446049250313e-16,
+    "boundaryPositionDelta": 0.00000996621351961687,
+    "boundaryRotationDelta": 0.0000043061004247563335,
+    "armSegmentLength": 0.5136884659012697,
+    "armReach": 0.9060077262363715,
+    "robotLegSegmentLength": 0.2718843224313089,
+    "robotLegReach": 0.45020477467006886,
+    "catLegSegmentLength": 0.2593270900393744,
+    "catLegReach": 0.4801064033244709
+  },
+  "densePerMood": {
+    "calm": {
+      "minimumRobotSupport": 1,
+      "minimumCatSupport": 2,
+      "samples": 3200
+    },
+    "bright": {
+      "minimumRobotSupport": 1,
+      "minimumCatSupport": 2,
+      "samples": 3200
+    },
+    "night": {
+      "minimumRobotSupport": 1,
+      "minimumCatSupport": 2,
+      "samples": 3200
+    }
+  },
+  "checks": [
+    {
+      "name": "Actual model provides 2 robot legs, 4 connected cat legs and independently grouped heads",
+      "pass": true
+    },
+    {
+      "name": "At least one robot support foot and two cat support feet excluding performing paws",
+      "pass": true,
+      "minimum": {
+        "robot": 1,
+        "cat": 2
+      }
+    },
+    {
+      "name": "A continuing stance foot on the same key preserves measured world X/Z",
+      "pass": true,
+      "pairs": 38229,
+      "maximumWorldDelta": 5.551115123125783e-17
+    },
+    {
+      "name": "Measured stance foot underside follows the actual support key surface",
+      "pass": true,
+      "maximumError": 0
+    },
+    {
+      "name": "Actual unit-cylinder endpoints connect hips, joints and foot centers",
+      "pass": true,
+      "samples": 57600,
+      "maximumGap": 1.5543277230005127e-15
+    },
+    {
+      "name": "All 96 main notes maintain measured contact at .10, .34 and .58 beat",
+      "pass": true,
+      "samples": 288,
+      "maximumError": 2.220446049250313e-16
+    },
+    {
+      "name": "Heads, bodies, knees and effectors remain continuous across all 93 note boundaries",
+      "pass": true,
+      "boundaries": 93,
+      "maximumPositionDelta": 0.00000996621351961687,
+      "maximumRotationDeltaRadians": 0.0000043061004247563335
+    },
+    {
+      "name": "Repeated seeking reproduces exact measured poses and support state",
+      "pass": true,
+      "pairs": 21
+    },
+    {
+      "name": "Reset releases all keys and performance assignment",
+      "pass": true
+    },
+    {
+      "name": "No WebGL renderer or HDR pipeline was constructed",
+      "pass": true
+    }
+  ],
+  "failureCounts": {
+    "support": 0,
+    "sliding": 0,
+    "surface": 0,
+    "connections": 0,
+    "contacts": 0,
+    "boundaries": 0,
+    "seek": 0,
+    "reset": 0
+  },
+  "failureExamples": {
+    "support": [],
+    "sliding": [],
+    "surface": [],
+    "connections": [],
+    "contacts": [],
+    "boundaries": [],
+    "seek": [],
+    "reset": []
+  },
+  "passed": 10,
+  "total": 10,
+  "errors": [],
+  "missingResources": [],
+  "limits": [
+    "Checks model topology and numerical poses, not rendered lighting, materials, shadows, frame rate or video delivery.",
+    "Stance/performance labels select the feet to test; their positions, key surfaces and connection gaps are independently measured from actual Three objects. Support-key identity is derived from nearest visible white-key X.",
+    "Boundary measurements use plus/minus one millionth of a beat. Limb lengths are reported, not certified as anatomically realistic.",
+    "Texture images load normally, but no GPU upload, PMREM or HDR environment processing is performed."
+  ]
+}

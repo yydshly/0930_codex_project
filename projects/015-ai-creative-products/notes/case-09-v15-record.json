@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-03T10:47:19.144Z",
+  "caseId": 9,
+  "product": "浏览器三维导览与环境演练工具",
+  "task": "近看岸线，步行或登船，改变天气与密度并导出实际环境状态。",
+  "state": {
+    "weather": "clear",
+    "hour": 15,
+    "density": 24,
+    "running": false,
+    "time": 0.4101000000000003,
+    "visited": [
+      "solar"
+    ],
+    "selected": "solar",
+    "solar": 71,
+    "water": 54,
+    "renderer": "webgl",
+    "fireLit": true,
+    "boatBoarded": true,
+    "boatHeading": 3.141592653589793,
+    "boatSpeed": 0.5651499999999979,
+    "boatDistance": 0.09877936100000007,
+    "boatBlocked": false,
+    "boatBlockedBy": null,
+    "boatSteeringBlocked": false,
+    "interactions": [
+      {
+        "action": "board-boat",
+        "at": 0.4101000000000003
+      }
+    ],
+    "arrivalLog": [
+      {
+        "id": "solar",
+        "position": {
+          "x": -12,
+          "z": 3
+        },
+        "at": 0.41
+      }
+    ],
+    "boat": {
+      "x": -15,
+      "z": 7.098779361,
+      "heading": 3.141592653589793,
+      "speed": 0.57,
+      "distance": 0.1,
+      "blocked": false
+    },
+    "weatherName": "晴天",
+    "mode": "first-person",
+    "camera": {
+      "x": -15,
+      "z": 7.098779361,
+      "yaw": 3.641592653589793,
+      "pitch": -0.13
+    },
+    "cameraWorld": {
+      "x": -15,
+      "y": 1.2171556442141216,
+      "z": 6.048779361
+    },
+    "boatView": {
+      "mode": "seated",
+      "eyeHeight": 1.1,
+      "lookOffset": 0.5,
+      "headingIndependentOfLook": true
+    },
+    "camper": {
+      "x": -15,
+      "z": 7.098779361
+    },
+    "environmentDetail": {
+      "shoreline": "continuous damp-sand and pebble transition",
+      "shoreLength": 72,
+      "wetSandWidth": 3.36,
+      "wetSandRoughness": 0.63,
+      "rockCount": 24,
+      "pebbleInstances": 170,
+      "solidRockColliders": 24,
+      "shoreRocks": [
+        {
+          "x": -5.207636708888082,
+          "z": -30.955041554807725,
+          "radius": 1.577669443001663
+        },
+        {
+          "x": -5.338645660003513,
+          "z": -30.949027399485026,
+          "radius": 1.1015227539516266
+        },
+        {
+          "x": -6.05733234116858,
+          "z": -29.12605237609339,
+          "radius": 0.4730797858471794
+        },
+        {
+          "x": -5.990951328458069,
+          "z": -21.95199984801188,
+          "radius": 1.8463816513366826
+        },
+        {
+          "x": -7.266357338977229,
+          "z": -22.16608737843678,
+          "radius": 0.5836810401302586
+        },
+        {
+          "x": -5.509755064577417,
+          "z": -21.919641836657785,
+          "radius": 0.8198605462870192
+        },
+        {
+          "x": -7.824227019590734,
+          "z": -16.694973301324037,
+          "radius": 1.6514991438682183
+        },
+        {
+          "x": -7.145282608202187,
+          "z": -16.92858891601543,
+          "radius": 0.501877071427067
+        },
+        {
+          "x": -7.997643936033226,
+          "z": -15.020537587181234,
+          "radius": 0.4911963176645304
+        },
+        {
+          "x": -6.525739559230102,
+          "z": -8.665906285555947,
+          "radius": 1.9726902575722804
+        },
+        {
+          "x": -7.115826233724851,
+          "z": -9.496354367859992,
+          "radius": 0.8687811671912494
+        },
+        {
+          "x": -6.391047484746196,
+          "z": -8.624666119669254,
+          "radius": 0.5661454064903273
+        },
+        {
+          "x": -7.407715858086946,
+          "z": -2.446311424250073,
+          "radius": 1.9391814105950123
+        },
+        {
+          "x": -7.592431672774924,
+          "z": -3.685138658885973,
+          "radius": 0.682120185656585
+        },
+        {
+          "x": -8.134937009833031,
+          "z": -2.4002750476824817,
+          "radius": 0.5988334355939491
+        },
+        {
+          "x": -4.714947126589726,
+          "z": 11.488899368037377,
+          "radius": 1.4021087005940347
+        },
+        {
+          "x": -5.303961027001054,
+          "z": 11.577615978454814,
+          "radius": 0.6739520589950979
+        },
+        {
+          "x": -6.113082982940736,
+          "z": 10.990102341296247,
+          "radius": 0.525266986658114
+        },
+        {
+          "x": -5.08605584238375,
+          "z": 20.07306771350379,
+          "radius": 1.3912114352092253
+        },
+        {
+          "x": -6.460354570803496,
+          "z": 20.23360440817997,
+          "radius": 0.4656095601484269
+        },
+        {
+          "x": -4.957670564426667,
+          "z": 19.004817441482857,
+          "radius": 0.5845337504973018
+        },
+        {
+          "x": -6.962208064812631,
+          "z": 28.246199793504736,
+          "radius": 1.9531125755730203
+        },
+        {
+          "x": -8.29490829735261,
+          "z": 29.37590636618054,
+          "radius": 0.5290974407280772
+        },
+        {
+          "x": -6.740420228948478,
+          "z": 29.053197075103594,
+          "radius": 0.49457395635784973
+        }
+      ],
+      "boatRockBoundary": "oriented ellipse (1m half-width, 2.1m half-length) expanded by each solid rock radius; no rigid-body contact",
+      "undergrowthPockets": 363,
+      "visibleUndergrowthPockets": 291,
+      "totalBroadLeaves": 2541,
+      "visibleBroadLeaves": 2033,
+      "weather": "clear",
+      "hour": 15,
+      "windStrength": 1,
+      "water": "view-distance filtered ripples and shallow cellular caustic illustration; sky HDR reflection; no scene refraction",
+      "assets": "original procedural mesh and existing CC0 sand/stone maps",
+      "visiblePalms": 74,
+      "totalPalms": 88,
+      "boatArt": {
+        "hull": "pointed bow, broad transom, continuous outer and inner shell",
+        "interior": "frame ribs, floor slats and three weathered benches",
+        "motor": "rounded cowling, transom brackets, tiller, lower unit and propeller",
+        "length": 4.8,
+        "width": 2.08,
+        "scope": "Original conceptual research boat. No source geometry or simulated marine dynamics."
+      },
+      "grassInstances": 1440,
+      "waterState": {
+        "roughWeather": 0,
+        "light": 0.7071067811865476,
+        "skyReflection": true,
+        "animationTime": 0.4101000000000003
+      }
+    },
+    "exploration": {
+      "distance": 0.1,
+      "steps": 15,
+      "renderCount": 70,
+      "drawCalls": 83,
+      "triangles": 307071,
+      "pixelRatio": 1
+    },
+    "rules": {
+      "transmission": {
+        "clear": 1,
+        "cloud": 0.45,
+        "rain": 0.2,
+        "storm": 0.12
+      },
+      "solar": "optional illustrative daylight*transmission*100",
+      "water": "optional illustrative min(100,30+rainIncrement+density)"
+    },
+    "reference": {
+      "workflow": "Native Three.js environment integration",
+      "assets": "Original detailed procedural geometry, Poly Haven CC0 photographed PBR and HDR sky"
+    }
+  },
+  "source": "https://x.com/maxt3chno/status/2105216139647127750",
+  "reference": {
+    "focus": "原生浏览器三维世界整合：地形、水草、天空、动态天气、日夜和自由探索。",
+    "evidence": "作者明确披露 Three.js、水草地形、天气日夜，以及代码与 Meshy 模型混合制作。",
+    "sourceTech": "Three.js 原生运行；部分模型来自 Meshy，是作者明确披露的技术。",
+    "ours": "可步行、可登船的原创热带营地；湿沙、碎石、近岸岩石及宽叶下层植被形成近看层次，水面与天气日夜联动。",
+    "tech": "本地 Three.js、原创确定性环境几何与摄影材质；近岸细节读取本例密度、风雨和时刻，固体岩石参与简化碰撞，船首和环顾分别控制。",
+    "value": "用于空间导览、营地体验与环境解释；太阳能/蓄水指标作为我们另加的规则演示。",
+    "check": "岸上和船上均能近看岸线层次；密度与风雨影响实际环境，岩石限制穿越，导出保留新增环境细节及独立船/相机状态。",
+    "boundary": "原作披露 Three.js 与 Meshy 混合制作；我们的细节是原创程序化几何，未调用 Meshy。岸线与航行仍是简化模型，没有完整浮力、折射或全部自然资产；附加指标未校准。",
+    "kernel": "岸线由沙地、湿沙、石块、下层叶丛和棕榈组成不同尺度；同一环境状态影响水面与植被，实际步行及船上视点进入这处空间。"
+  },
+  "optimization": {
+    "caseId": 9,
+    "sourceTarget": "原作09的00:45船上实帧中，浅水、湿沙、不同尺度岩石、林下绿植和树冠连续衔接，并随航行换位。原帖明确原生Three.js整合环境逻辑、用Meshy生成船和手部等模型；本例借鉴的是连续世界与近岸观察关系。",
+    "diagnosis": "本轮入口画面主要是空天空、平沙滩、直栈台与木屋；细直棕榈和相近卵形岩石没有建立林缘与近岸层次。水面仍薄而平，船与发动机的简化形体需另取近景重做。",
+    "priority": "沿一段岸线先组织数种棕榈、灌木、地被与不规则入水岩石，再建立湿干分区、浅水层和完整船体。",
+    "changes": [
+      "在09独立模块形成72个场景单位长、3.36宽的湿沙/干沙渐变带，添加24块不同尺度岸石与170粒小石；雨天降低沙面粗糙度并压暗材质。",
+      "制作104丛、728片有曲面折脊与叶脉的原创宽叶下层植被，避开营地、篝火和林地入口；棕榈改为确定随机位置与高度，消除原来三排循环。",
+      "水面细纹随视距减弱，近岸使用低幅度波和窄潮洗亮边；风雨、日夜、太阳方向和天空HDR反射读取本例实际状态。",
+      "24块岸石加入现有步行碰撞；船体使用随船首转动的简化椭圆占位。阻止驶入或转入岸石，拒绝转向时保持环顾偏角。",
+      "保留后座坐姿、W/S航行、A/D转向、拖动环顾、篝火、到达记录与导出；JSON增加真实环境对象数、可见数量、水面状态和岸石边界，界面仍以场景体验为主。"
+    ],
+    "verify": [
+      "本轮依据隔离本地浏览器的新运行截图重新评估主体造型与构图；原作使用已保存历史关键帧，未宣称检查了现有侧栏标签页。",
+      "24项受影响检查通过，无页面/资源/着色器错误。实际岸上、林地近看、船上望岸、风暴与夜景截图见assets/qa/case-09-v12/，报告为notes/case-09-v12-verification.json。",
+      "密度4到30时，实际宽叶97到728、棕榈10到36、草实例240到1800；默认24为582片宽叶、30棵棕榈和1440份草。",
+      "风暴时沙面粗糙度0.44、叶片风强度3.4、水面天气幅度1；晴天恢复0.63/1/0。夜间关闭白天天空反射，实际水面亮度降到0.15。",
+      "通过真实W/Shift步行到岸石边界，继续前进受限且保持在固体范围外；林地入口能到达并继续行走，篝火切换保持有效。",
+      "连续油门驶到实际岸石，接触采样始终在有效船体占位外，松开后速度0；实际贴石转向被拒绝且环顾偏角保持，详见case-09-v12-contact-verification.json。",
+      "登船眼高1.1、后座视点和环顾/船首独立保留。导出保留真实环境与独立船/相机状态；隐藏后环境时间/水面/渲染冻结，恢复后继续。390px林地与船上布局无横向溢出。"
+    ],
+    "remaining": [
+      "本轮未重建第09项林缘、船和浅水。入口静图只能判断该视角；坐船与密林应另取同构图近景验收。",
+      "仍为程序化原创几何与既有CC0摄影材质，没有调用Meshy，也没有原作船/手/角色模型。远景、船舱细节与密集自然植被仍未达到原片。",
+      "水纹、潮洗亮边与湿沙是场景视觉规则，没有真实水面折射、全场景反射、流体求解或水文标定；附加发电/蓄水仍只是未校准示例。",
+      "步行岸石为圆形占位，船体为随航向的椭圆近似；不包含完整刚体浮力、连续旋转接触、复杂船身摇摆或自动靠泊。下船仍用明确的返回栈台快捷操作。",
+      "共享漫游时间步仍限幅。本次headless软件渲染与390px视口仅证明画面/布局和交互状态，未证明真机手机或硬件GPU的流畅帧率。"
+    ]
+  },
+  "scope": "程序化原创场景与简化岸线碰撞，未调用 Meshy；附加指标只是未校准示例。"
+}

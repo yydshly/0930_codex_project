@@ -1,5 +1,7 @@
 # GitHub 项目研究集
 
+[015 十项创意效果与全部入口](https://yydshly.github.io/0930_codex_project/projects/015-ai-creative-products/) · [完整理解](https://yydshly.github.io/0930_codex_project/projects/015-ai-creative-products/research.html) · [十项原作与当前对照](https://yydshly.github.io/0930_codex_project/projects/015-ai-creative-products/#products)：逐项展示实际效果、实现原理、交付范围、产品扩展与复用价值，沿用原有能力引导图。
+
 [013 完整检索理解与全部入口](https://yydshly.github.io/0930_codex_project/projects/013-insightface-retrieval/) · [原有全景图放大](https://yydshly.github.io/0930_codex_project/projects/013-insightface-retrieval/map.html) · [原理教学示意](https://yydshly.github.io/0930_codex_project/projects/013-insightface-retrieval/mechanisms.html)：区分找人、找出处与语义检索，保留源库能力、完整说明、实际价值与 14 组来源。
 
 [011 完整交互研究与产品展示](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/) · [全景理解图](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/understanding-map.html) · [文字理解汇总](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/understanding.html)：原站效果、技能、业务场景、马桶与耳机、制作及交付工作台共用完整入口。
@@ -31,6 +33,7 @@
 | 011 | [Combination Soup Studio · 交互展示与业务价值](projects/011-combination-soup-studio/README.md) | **定位：** 以交互官网为参考，拆解效果并沉淀可复用的产品体验与交付方法<br>**能力：** 五项效果、四类技能、三类业务场景，马桶与耳机完整产品页、目标及交付工作台<br>**原理：** 素材与浏览器事件驱动画面和状态，Canvas与Three.js/WebGL承担二维及三维，配置贯穿PNG、JSON、简报和ZIP<br>**场景：** 品牌活动、产品解释与选配、区域服务查询、庭院方案评审<br>**价值：** 帮助理解、比较和保留选择，便于团队复用与继续制作<br>**扩展：** 按新品类补齐事实、视觉标杆、资产、交互和验收，逐步建立质量修正闭环<br>**边界：** 原站开源许可未确认，当前为概念原型，在线模型与任意产品自动交付未验收，商业收益未实测。 | 已完成 | [Combination Soup Studio · 官网案例](https://combinationsoupstudio.com.au/)<br>公开仓库未确认 | [在线演示](https://yydshly.github.io/0930_codex_project/projects/011-combination-soup-studio/) |
 | 012 | [Black Hole Lab · 黑洞形成与现象实验室](projects/012-black-hole-lab/README.md) | **定位：** 从游戏黑洞 Shader 出发的独立科学演示与认知研究<br>**效果：** 吸积盘、光捕获、弯光、运动与重力频移，配合 10 章 / 30 段、约 13 分 3 秒 MiniMax 中文旁白<br>**原理：** WebGL 逐像素光路积分、无自旋外部模型、薄盘与机制图解<br>**理解：** 形成条件、事件视界、时空、固有时与衰老，附事件坐标、引力时钟和光钟交互实验，区分真实年龄差和光学影像变慢<br>**场景：** 科普、展览与游戏<br>**价值：** 用可操作对照连接现象和原因，保留完整讨论、原有总览图、依据与记录<br>**扩展：** 形成分支、自旋、真实环境、精度校验与引擎接入<br>**边界：** 原作源码未确认，内部、完整恒星坍缩及人体旅行未模拟，1:10 年龄比为理论例子。 | 已完成 | [VOLDR\_dev · 黑洞 Shader 展示](https://www.reddit.com/r/SoloDevelopment/comments/1wr6jr4/my_black_hole_shader_for_my_game/)<br>公开仓库未确认 | [在线演示](https://yydshly.github.io/0930_codex_project/projects/012-black-hole-lab/) |
 | 013 | [InsightFace · 人脸与视频截图检索理解](projects/013-insightface-retrieval/README.md) | **定位：** 人脸身份检索与视频截图出处查找的完整理解<br>**能力：** InsightFace 检测、对齐、身份向量、训练与评测<br>**原理：** ArcFace 等方法训练网络，目标库保存特征与来源，索引排序后校准阈值并拒识<br>**展示：** 原有全景图、全文说明、三任务路线及人工向量排序示意，14 组来源与记录<br>**场景：** 图库找人、素材归组、已收录视频画面定位与内容检索<br>**价值：** 复用现成模型与检索技术，减少人工翻找，判断个人原型可行性<br>**参考：** AVScan、SSCD、Faiss、trace.moe、TwelveLabs 的分工<br>**扩展：** 代表性样本验证、质量过滤、索引更新与候选复核<br>**边界：** 识人不等于找出处，公开成绩不等于实际效果，未确认 AVScan 使用 InsightFace；未做真实识别，官方权重非商业研究条件需另核。 | 已完成 | [AVScan · 需求参考，后台实现未确认](https://avscan.cc/)<br>能力参考：[deepinsight/insightface](https://github.com/deepinsight/insightface)<br>后台关联未确认 | [在线演示](https://yydshly.github.io/0930_codex_project/projects/013-insightface-retrieval/) |
+| 015 | [AI Creative Products · 十项创意效果库](projects/015-ai-creative-products/README.md) | **定位：** 以十个 Opus 社区案例为参考的原创浏览器效果库<br>**效果：** 空间作品集、任务街区、观点叙事、发布动效、机房生存、角色钢琴、研究集市、软胶角色、营地折射水体与车球挑战<br>**原理：** 1 个 CSS、2 个 Canvas、7 个 Three.js 原型，时间表、任务状态与物理规则分别驱动实际反馈，Web Audio 同步音乐<br>**交付：** 分例支持离线 HTML、无声或配乐 WebM、WAV、PNG、脚本及体验 JSON，附 Python / Blender 配方<br>**展示：** 十项真实效果、原作对照、独立试玩、完整理解、来源与原有总览图<br>**价值：** 展示已有研究、制作发布内容、验证产品体验，复用内容配置、场景与交付流程<br>**扩展：** 展厅、训练、课程与品牌影片、角色组件、环境导览和操控活动<br>**边界：** 05 / 07 / 09 / 10 为 v16，其他六项为 v15，无模型生成后台，Blender 新造型与商业成效未验证，物理和资产仍有限。 | 已完成 | [Min Choi · 十个 Opus 创作案例合集](https://x.com/minchoi/status/2105685231298630009)<br>公开仓库未确认 | — |
 
 <!-- PROJECT_INDEX:END -->
 
@@ -247,6 +250,23 @@
 ![InsightFace · 人脸与视频截图检索理解 项目引导图](projects/013-insightface-retrieval/assets/understanding-map.png)
 
 [研究详情](projects/013-insightface-retrieval/README.md) · [在线演示](https://yydshly.github.io/0930_codex_project/projects/013-insightface-retrieval/)
+
+### 015 · AI Creative Products · 十项创意效果库
+
+- **定位：** 以十个 Opus 社区案例为参考的原创浏览器效果库
+- **效果：** 空间作品集、任务街区、观点叙事、发布动效、机房生存、角色钢琴、研究集市、软胶角色、营地折射水体与车球挑战
+- **原理：** 1 个 CSS、2 个 Canvas、7 个 Three.js 原型，时间表、任务状态与物理规则分别驱动实际反馈，Web Audio 同步音乐
+- **交付：** 分例支持离线 HTML、无声或配乐 WebM、WAV、PNG、脚本及体验 JSON，附 Python / Blender 配方
+- **展示：** 十项真实效果、原作对照、独立试玩、完整理解、来源与原有总览图
+- **价值：** 展示已有研究、制作发布内容、验证产品体验，复用内容配置、场景与交付流程
+- **扩展：** 展厅、训练、课程与品牌影片、角色组件、环境导览和操控活动
+- **边界：** 05 / 07 / 09 / 10 为 v16，其他六项为 v15，无模型生成后台，Blender 新造型与商业成效未验证，物理和资产仍有限。
+
+效果来源：[Min Choi · 十个 Opus 创作案例合集](https://x.com/minchoi/status/2105685231298630009)。公开仓库未确认，按公开网页进行研究。先阅读下方引导图，再进入研究文档与交互演示。
+
+![AI Creative Products · 十项创意效果库 项目引导图](projects/015-ai-creative-products/assets/library-overview/creative-products-capability-overview-v16.png)
+
+[研究详情](projects/015-ai-creative-products/README.md)
 
 <!-- PROJECT_PREVIEWS:END -->
 

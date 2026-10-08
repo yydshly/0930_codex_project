@@ -1,0 +1,1063 @@
+{
+  "caseId": 1,
+  "testedAt": "2026-10-02T17:41:49.976Z",
+  "independent": true,
+  "implementationEdited": false,
+  "checks": [
+    {
+      "name": "Opening details are hidden from accessibility and cannot take focus",
+      "pass": true,
+      "phase": "opening",
+      "reading": "true",
+      "focus": "011",
+      "heading": "ARC · 交互产品展厅",
+      "detail": {
+        "hidden": false,
+        "inert": true,
+        "ariaHidden": "true",
+        "opacity": "0"
+      },
+      "angleDegrees": 51.083731929168344,
+      "active": {
+        "tag": "BUTTON",
+        "project": "011",
+        "isHeading": false,
+        "isOpen": false
+      },
+      "space": {
+        "left": 323,
+        "right": 1398.984375,
+        "top": 331.5,
+        "bottom": 897.578125,
+        "width": 1075.984375,
+        "height": 566.078125
+      },
+      "inside": {
+        "left": 666.8343505859375,
+        "right": 882.0032348632812,
+        "top": 463.23345947265625,
+        "bottom": 777.725830078125,
+        "width": 215.16888427734375,
+        "height": 314.49237060546875
+      },
+      "back": {
+        "left": 669.334228515625,
+        "right": 791.0484619140625,
+        "top": 438.1577453613281,
+        "bottom": 804.7706298828125,
+        "width": 121.7142333984375,
+        "height": 366.6128845214844
+      },
+      "overflow": false,
+      "objects": [
+        {
+          "id": "011",
+          "opened": "true",
+          "inert": false,
+          "tabIndex": 0,
+          "ariaHidden": "false"
+        },
+        {
+          "id": "008",
+          "opened": "false",
+          "inert": true,
+          "tabIndex": -1,
+          "ariaHidden": "true"
+        },
+        {
+          "id": "010",
+          "opened": "false",
+          "inert": true,
+          "tabIndex": -1,
+          "ariaHidden": "true"
+        },
+        {
+          "id": "009",
+          "opened": "false",
+          "inert": true,
+          "tabIndex": -1,
+          "ariaHidden": "true"
+        }
+      ]
+    },
+    {
+      "name": "Inert opening heading rejects programmatic focus",
+      "pass": true
+    },
+    {
+      "name": "At ninety degrees the details remain inert",
+      "pass": true,
+      "retest": true,
+      "pauseAfterNominalFallbackMs": 1350,
+      "observed": {
+        "phase": "opening",
+        "focus": "011",
+        "angleDegrees": 90.00003101529407,
+        "detail": {
+          "inert": true,
+          "ariaHidden": "true",
+          "opacity": "0"
+        },
+        "active": {
+          "project": "011",
+          "isHeading": false
+        },
+        "labActive": true
+      }
+    },
+    {
+      "name": "Open details are accessible only at final cover angle",
+      "pass": true,
+      "retest": true,
+      "observed": {
+        "phase": "open",
+        "focus": "011",
+        "angleDegrees": 155.00002887217343,
+        "detail": {
+          "inert": false,
+          "ariaHidden": "false",
+          "opacity": "0"
+        },
+        "active": {
+          "project": null,
+          "isHeading": true
+        },
+        "labActive": true
+      },
+      "relatedClosedState": {
+        "phase": "closed",
+        "focus": "011",
+        "angleDegrees": 0,
+        "detail": {
+          "inert": true,
+          "ariaHidden": "true",
+          "opacity": "1"
+        },
+        "active": {
+          "project": "011",
+          "isHeading": false
+        },
+        "labActive": true
+      }
+    },
+    {
+      "name": "Unselected cards are inert and out of keyboard order",
+      "pass": true
+    },
+    {
+      "name": "Opening retains original card, detail and heading DOM nodes",
+      "pass": true
+    },
+    {
+      "name": "Closing immediately removes details from accessibility",
+      "pass": true
+    },
+    {
+      "name": "Escape restores focus to the original card",
+      "pass": true,
+      "active": {
+        "tag": "BUTTON",
+        "project": "011",
+        "isHeading": false,
+        "isOpen": false
+      },
+      "phase": "closed"
+    },
+    {
+      "name": "Escape restores focus to the navigation open trigger",
+      "pass": true
+    },
+    {
+      "name": "Rapid reverse and next-next-previous settle on the last requested item",
+      "pass": true,
+      "phase": "open",
+      "reading": "true",
+      "focus": "008",
+      "heading": "CellMotion · 文字实验室",
+      "detail": {
+        "hidden": false,
+        "inert": false,
+        "ariaHidden": "false",
+        "opacity": "1"
+      },
+      "angleDegrees": 155.00002887217343,
+      "active": {
+        "tag": "H3",
+        "project": null,
+        "isHeading": true,
+        "isOpen": false
+      },
+      "space": {
+        "left": 323,
+        "right": 1398.984375,
+        "top": 331.5,
+        "bottom": 851.5,
+        "width": 1075.984375,
+        "height": 520
+      },
+      "inside": {
+        "left": 610.1409912109375,
+        "right": 800.6142578125,
+        "top": 471.1536865234375,
+        "bottom": 748.8605346679688,
+        "width": 190.4732666015625,
+        "height": 277.70684814453125
+      },
+      "back": {
+        "left": 402.23663330078125,
+        "right": 610.7283935546875,
+        "top": 460.81536865234375,
+        "bottom": 762.3785400390625,
+        "width": 208.49176025390625,
+        "height": 301.56317138671875
+      },
+      "overflow": false,
+      "objects": [
+        {
+          "id": "011",
+          "opened": "false",
+          "inert": true,
+          "tabIndex": -1,
+          "ariaHidden": "true"
+        },
+        {
+          "id": "008",
+          "opened": "true",
+          "inert": false,
+          "tabIndex": 0,
+          "ariaHidden": "false"
+        },
+        {
+          "id": "010",
+          "opened": "false",
+          "inert": true,
+          "tabIndex": -1,
+          "ariaHidden": "true"
+        },
+        {
+          "id": "009",
+          "opened": "false",
+          "inert": true,
+          "tabIndex": -1,
+          "ariaHidden": "true"
+        }
+      ]
+    },
+    {
+      "name": "Rapid navigation retains original object identities",
+      "pass": true
+    },
+    {
+      "name": "After reading navigation Escape returns to the current card",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion completes immediately with correct final angle and heading focus",
+      "pass": true,
+      "phase": "open",
+      "reading": "true",
+      "focus": "008",
+      "heading": "CellMotion · 文字实验室",
+      "detail": {
+        "hidden": false,
+        "inert": false,
+        "ariaHidden": "false",
+        "opacity": "1"
+      },
+      "angleDegrees": 155.00002887217343,
+      "active": {
+        "tag": "H3",
+        "project": null,
+        "isHeading": true,
+        "isOpen": false
+      },
+      "space": {
+        "left": 323,
+        "right": 1398.984375,
+        "top": 331.5,
+        "bottom": 851.5,
+        "width": 1075.984375,
+        "height": 520
+      },
+      "inside": {
+        "left": 610.1409912109375,
+        "right": 800.6142578125,
+        "top": 471.1536865234375,
+        "bottom": 748.8605346679688,
+        "width": 190.4732666015625,
+        "height": 277.70684814453125
+      },
+      "back": {
+        "left": 402.23663330078125,
+        "right": 610.7283935546875,
+        "top": 460.81536865234375,
+        "bottom": 762.3785400390625,
+        "width": 208.49176025390625,
+        "height": 301.56317138671875
+      },
+      "overflow": false,
+      "objects": [
+        {
+          "id": "011",
+          "opened": "false",
+          "inert": true,
+          "tabIndex": -1,
+          "ariaHidden": "true"
+        },
+        {
+          "id": "008",
+          "opened": "true",
+          "inert": false,
+          "tabIndex": 0,
+          "ariaHidden": "false"
+        },
+        {
+          "id": "010",
+          "opened": "false",
+          "inert": true,
+          "tabIndex": -1,
+          "ariaHidden": "true"
+        },
+        {
+          "id": "009",
+          "opened": "false",
+          "inert": true,
+          "tabIndex": -1,
+          "ariaHidden": "true"
+        }
+      ]
+    },
+    {
+      "name": "Reduced motion closing immediately restores card focus",
+      "pass": true
+    },
+    {
+      "name": "Async export freezes content, theme, focused project and project set before image fetch",
+      "pass": true,
+      "heldRequests": 5,
+      "snapshot": {
+        "studio": "QA 冻结时的工作室",
+        "subtitle": "导出开始时的介绍",
+        "theme": "gallery",
+        "filter": "全部",
+        "selected": null,
+        "focus": "008",
+        "readingPhase": "closed",
+        "visibleProjects": [
+          "011",
+          "008",
+          "010",
+          "009"
+        ],
+        "effect": "物件聚焦、沿书脊翻开、背面与内页、连续阅读"
+      }
+    },
+    {
+      "name": "Offline HTML opens frozen four-project set, theme and focus with no external requests",
+      "pass": true,
+      "externalRequests": [],
+      "focus": "008"
+    },
+    {
+      "name": "Offline opening uses the same inert timing gate",
+      "pass": true
+    },
+    {
+      "name": "Offline open reaches same angle, semantic detail and heading focus",
+      "pass": true
+    },
+    {
+      "name": "Offline reading arrow switches both cover and correct detail",
+      "pass": true,
+      "phase": "open",
+      "reading": "true",
+      "focus": "010",
+      "heading": "小世界 · 玩法研究",
+      "detail": {
+        "hidden": false,
+        "inert": false,
+        "ariaHidden": "false",
+        "opacity": "0"
+      },
+      "angleDegrees": 155.00002887217343,
+      "active": {
+        "tag": "H3",
+        "project": null,
+        "isHeading": true,
+        "isOpen": false
+      },
+      "space": {
+        "left": 95,
+        "right": 1345,
+        "top": 179,
+        "bottom": 699,
+        "width": 1250,
+        "height": 520
+      },
+      "inside": {
+        "left": 427.8126220703125,
+        "right": 618.285888671875,
+        "top": 318.6536865234375,
+        "bottom": 596.3605346679688,
+        "width": 190.4732666015625,
+        "height": 277.70684814453125
+      },
+      "back": {
+        "left": 216.35723876953125,
+        "right": 428.3292541503906,
+        "top": 308.31536865234375,
+        "bottom": 609.8785400390625,
+        "width": 211.97201538085938,
+        "height": 301.56317138671875
+      },
+      "overflow": false,
+      "objects": [
+        {
+          "id": "011",
+          "opened": "false",
+          "inert": true,
+          "tabIndex": -1,
+          "ariaHidden": "true"
+        },
+        {
+          "id": "008",
+          "opened": "false",
+          "inert": true,
+          "tabIndex": -1,
+          "ariaHidden": "true"
+        },
+        {
+          "id": "010",
+          "opened": "true",
+          "inert": false,
+          "tabIndex": 0,
+          "ariaHidden": "false"
+        },
+        {
+          "id": "009",
+          "opened": "false",
+          "inert": true,
+          "tabIndex": -1,
+          "ariaHidden": "true"
+        }
+      ]
+    },
+    {
+      "name": "Offline Escape returns to switched card focus",
+      "pass": true
+    },
+    {
+      "name": "Offline reduced motion opens synchronously",
+      "pass": true
+    },
+    {
+      "name": "Mobile 011 inner page and opened back stay inside stage",
+      "pass": true,
+      "focus": "011",
+      "space": {
+        "left": 15,
+        "right": 375,
+        "top": -70,
+        "bottom": 290,
+        "width": 360,
+        "height": 360
+      },
+      "inside": {
+        "left": 198.96197509765625,
+        "right": 338.9519958496094,
+        "top": 22.886436462402344,
+        "bottom": 240.13506317138672,
+        "width": 139.99002075195312,
+        "height": 217.24862670898438
+      },
+      "back": {
+        "left": 60.57707595825195,
+        "right": 199.80986404418945,
+        "top": 14.074752807617188,
+        "bottom": 253.2984619140625,
+        "width": 139.2327880859375,
+        "height": 239.2237091064453
+      },
+      "overflow": false
+    },
+    {
+      "name": "Mobile 008 inner page and opened back stay inside stage",
+      "pass": true,
+      "focus": "008",
+      "space": {
+        "left": 15,
+        "right": 375,
+        "top": -70,
+        "bottom": 290,
+        "width": 360,
+        "height": 360
+      },
+      "inside": {
+        "left": 198.96197509765625,
+        "right": 338.9519958496094,
+        "top": 22.886436462402344,
+        "bottom": 240.13506317138672,
+        "width": 139.99002075195312,
+        "height": 217.24862670898438
+      },
+      "back": {
+        "left": 60.57707595825195,
+        "right": 199.80986404418945,
+        "top": 14.074752807617188,
+        "bottom": 253.2984619140625,
+        "width": 139.2327880859375,
+        "height": 239.2237091064453
+      },
+      "overflow": false
+    },
+    {
+      "name": "Mobile 010 inner page and opened back stay inside stage",
+      "pass": true,
+      "focus": "010",
+      "space": {
+        "left": 15,
+        "right": 375,
+        "top": -70,
+        "bottom": 290,
+        "width": 360,
+        "height": 360
+      },
+      "inside": {
+        "left": 198.96197509765625,
+        "right": 338.9519958496094,
+        "top": 22.886436462402344,
+        "bottom": 240.13506317138672,
+        "width": 139.99002075195312,
+        "height": 217.24862670898438
+      },
+      "back": {
+        "left": 60.57707595825195,
+        "right": 199.80986404418945,
+        "top": 14.074752807617188,
+        "bottom": 253.2984619140625,
+        "width": 139.2327880859375,
+        "height": 239.2237091064453
+      },
+      "overflow": false
+    },
+    {
+      "name": "Mobile 009 inner page and opened back stay inside stage",
+      "pass": true,
+      "focus": "009",
+      "space": {
+        "left": 15,
+        "right": 375,
+        "top": -70,
+        "bottom": 290,
+        "width": 360,
+        "height": 360
+      },
+      "inside": {
+        "left": 198.96197509765625,
+        "right": 338.9519958496094,
+        "top": 22.886436462402344,
+        "bottom": 240.13506317138672,
+        "width": 139.99002075195312,
+        "height": 217.24862670898438
+      },
+      "back": {
+        "left": 60.57707595825195,
+        "right": 199.80986404418945,
+        "top": 14.074752807617188,
+        "bottom": 253.2984619140625,
+        "width": 139.2327880859375,
+        "height": 239.2237091064453
+      },
+      "overflow": false
+    },
+    {
+      "name": "Mobile explicit return closes without hover dependency",
+      "pass": true
+    },
+    {
+      "name": "No online, offline or mobile page errors",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "Hidden during opening finishes cover to final angle and state without stealing focus",
+      "pass": true,
+      "retest": true,
+      "method": "Public parent-visibility message through existing app handler; no private instance access",
+      "before": {
+        "phase": "opening",
+        "focus": "011",
+        "angleDegrees": 90.00003101529407,
+        "detail": {
+          "inert": true,
+          "ariaHidden": "true",
+          "opacity": "0"
+        },
+        "active": {
+          "project": "011",
+          "isHeading": false
+        },
+        "labActive": true
+      },
+      "after": {
+        "phase": "open",
+        "focus": "011",
+        "angleDegrees": 155.00002887217343,
+        "detail": {
+          "inert": false,
+          "ariaHidden": "false",
+          "opacity": "0"
+        },
+        "active": {
+          "project": "011",
+          "isHeading": false
+        },
+        "labActive": false
+      },
+      "focusUnchanged": true
+    }
+  ],
+  "passed": 28,
+  "total": 28,
+  "errors": [],
+  "evidence": {
+    "desktop-closed": "assets/qa/case-01-fold-independent/desktop-closed.png",
+    "desktop-edge-90": "assets/qa/case-01-fold-independent/desktop-edge-90.png",
+    "desktop-open": "assets/qa/case-01-fold-independent/desktop-open.png",
+    "export": "notes/case-01-independent-export.html",
+    "offline-open": "assets/qa/case-01-fold-independent/offline-open.png",
+    "mobile-open-390": "assets/qa/case-01-fold-independent/mobile-open-390.png",
+    "mobile-last-open-390": "assets/qa/case-01-fold-independent/mobile-last-open-390.png",
+    "mobile-closed-390": "assets/qa/case-01-fold-independent/mobile-closed-390.png",
+    "hidden-complete-no-focus-steal": "assets/qa/case-01-fold-independent/hidden-complete-no-focus-steal.png"
+  },
+  "mobileLayouts": [
+    {
+      "focus": "011",
+      "space": {
+        "left": 15,
+        "right": 375,
+        "top": -70,
+        "bottom": 290,
+        "width": 360,
+        "height": 360
+      },
+      "inside": {
+        "left": 198.96197509765625,
+        "right": 338.9519958496094,
+        "top": 22.886436462402344,
+        "bottom": 240.13506317138672,
+        "width": 139.99002075195312,
+        "height": 217.24862670898438
+      },
+      "back": {
+        "left": 60.57707595825195,
+        "right": 199.80986404418945,
+        "top": 14.074752807617188,
+        "bottom": 253.2984619140625,
+        "width": 139.2327880859375,
+        "height": 239.2237091064453
+      },
+      "overflow": false
+    },
+    {
+      "focus": "008",
+      "space": {
+        "left": 15,
+        "right": 375,
+        "top": -70,
+        "bottom": 290,
+        "width": 360,
+        "height": 360
+      },
+      "inside": {
+        "left": 198.96197509765625,
+        "right": 338.9519958496094,
+        "top": 22.886436462402344,
+        "bottom": 240.13506317138672,
+        "width": 139.99002075195312,
+        "height": 217.24862670898438
+      },
+      "back": {
+        "left": 60.57707595825195,
+        "right": 199.80986404418945,
+        "top": 14.074752807617188,
+        "bottom": 253.2984619140625,
+        "width": 139.2327880859375,
+        "height": 239.2237091064453
+      },
+      "overflow": false
+    },
+    {
+      "focus": "010",
+      "space": {
+        "left": 15,
+        "right": 375,
+        "top": -70,
+        "bottom": 290,
+        "width": 360,
+        "height": 360
+      },
+      "inside": {
+        "left": 198.96197509765625,
+        "right": 338.9519958496094,
+        "top": 22.886436462402344,
+        "bottom": 240.13506317138672,
+        "width": 139.99002075195312,
+        "height": 217.24862670898438
+      },
+      "back": {
+        "left": 60.57707595825195,
+        "right": 199.80986404418945,
+        "top": 14.074752807617188,
+        "bottom": 253.2984619140625,
+        "width": 139.2327880859375,
+        "height": 239.2237091064453
+      },
+      "overflow": false
+    },
+    {
+      "focus": "009",
+      "space": {
+        "left": 15,
+        "right": 375,
+        "top": -70,
+        "bottom": 290,
+        "width": 360,
+        "height": 360
+      },
+      "inside": {
+        "left": 198.96197509765625,
+        "right": 338.9519958496094,
+        "top": 22.886436462402344,
+        "bottom": 240.13506317138672,
+        "width": 139.99002075195312,
+        "height": 217.24862670898438
+      },
+      "back": {
+        "left": 60.57707595825195,
+        "right": 199.80986404418945,
+        "top": 14.074752807617188,
+        "bottom": 253.2984619140625,
+        "width": 139.2327880859375,
+        "height": 239.2237091064453
+      },
+      "overflow": false
+    }
+  ],
+  "findings": [
+    {
+      "priority": "P2 robustness",
+      "area": "Opening completion fallback",
+      "evidence": "During a deliberate pause of the real CSS cover transition at 90 degrees, the 1050ms fallback changed phase to open and removed detail inert before the cover reached 155 degrees. Two timing checks failed; ordinary online/offline animations passed.",
+      "recommendation": "Make the fallback check the final cover matrix as transitionend does, or explicitly finish the current cover transform to the target before enabling/focusing detail.",
+      "scope": "Observed under paused/slowed animation, not reported as a failure of ordinary playback.",
+      "resolved": true,
+      "resolution": "Fallback waits for both target matrix rotation components, finishes the remaining cover transition before phase/focus transfer, and hiding completes without stealing focus."
+    }
+  ],
+  "visualInspection": {
+    "checked": true,
+    "desktop": "Opened cover back is readable without mirroring, fixed inside page remains under the hinge, and the side description stays separate from the book.",
+    "mobile390": "All four final opened states fit within the 360px-high stage. Opened book bottom remains above the stage bottom and the hint. No document horizontal overflow.",
+    "edge90": "The screenshot was taken by pausing and seeking the real transition. The perspective view shows the cover edge/back and exposes the inside page; the fallback timing flaw is recorded separately."
+  },
+  "limits": [
+    "No original media was downloaded.",
+    "The ninety-degree screenshot temporarily pauses and seeks the real CSS transition; all completed-state and focus tests use the normal implementation.",
+    "DOM identity is asserted across opening/closing/reading navigation; filtering intentionally rebuilds the view."
+  ],
+  "retest": {
+    "checkedAt": "2026-10-02T17:48:41.755Z",
+    "scope": "Only final-angle accessibility, the linked paused guard and hidden completion were rerun; closed-state final angle also measured.",
+    "previousFailures": [
+      {
+        "name": "Open details are accessible only at final cover angle",
+        "pass": false,
+        "retest": true,
+        "observed": {
+          "phase": "open",
+          "focus": "011",
+          "angleDegrees": 154.8942198443666,
+          "detail": {
+            "inert": false,
+            "ariaHidden": "false",
+            "opacity": "0"
+          },
+          "active": {
+            "project": null,
+            "isHeading": true
+          },
+          "labActive": true
+        }
+      }
+    ],
+    "checks": [
+      {
+        "name": "At ninety degrees the details remain inert",
+        "pass": true,
+        "retest": true,
+        "pauseAfterNominalFallbackMs": 1350,
+        "observed": {
+          "phase": "opening",
+          "focus": "011",
+          "angleDegrees": 90.00003101529407,
+          "detail": {
+            "inert": true,
+            "ariaHidden": "true",
+            "opacity": "0"
+          },
+          "active": {
+            "project": "011",
+            "isHeading": false
+          },
+          "labActive": true
+        }
+      },
+      {
+        "name": "Open details are accessible only at final cover angle",
+        "pass": true,
+        "retest": true,
+        "observed": {
+          "phase": "open",
+          "focus": "011",
+          "angleDegrees": 155.00002887217343,
+          "detail": {
+            "inert": false,
+            "ariaHidden": "false",
+            "opacity": "0"
+          },
+          "active": {
+            "project": null,
+            "isHeading": true
+          },
+          "labActive": true
+        },
+        "relatedClosedState": {
+          "phase": "closed",
+          "focus": "011",
+          "angleDegrees": 0,
+          "detail": {
+            "inert": true,
+            "ariaHidden": "true",
+            "opacity": "1"
+          },
+          "active": {
+            "project": "011",
+            "isHeading": false
+          },
+          "labActive": true
+        }
+      },
+      {
+        "name": "Hidden during opening finishes cover to final angle and state without stealing focus",
+        "pass": true,
+        "retest": true,
+        "method": "Public parent-visibility message through existing app handler; no private instance access",
+        "before": {
+          "phase": "opening",
+          "focus": "011",
+          "angleDegrees": 90.00003101529407,
+          "detail": {
+            "inert": true,
+            "ariaHidden": "true",
+            "opacity": "0"
+          },
+          "active": {
+            "project": "011",
+            "isHeading": false
+          },
+          "labActive": true
+        },
+        "after": {
+          "phase": "open",
+          "focus": "011",
+          "angleDegrees": 155.00002887217343,
+          "detail": {
+            "inert": false,
+            "ariaHidden": "false",
+            "opacity": "0"
+          },
+          "active": {
+            "project": "011",
+            "isHeading": false
+          },
+          "labActive": false
+        },
+        "focusUnchanged": true
+      }
+    ],
+    "errors": []
+  },
+  "retestHistory": [
+    {
+      "checkedAt": "2026-10-02T17:45:56.127Z",
+      "scope": "Only two prior failing timing checks and hidden completion were rerun.",
+      "previousFailures": [
+        {
+          "name": "At ninety degrees the details remain inert",
+          "pass": false,
+          "angle": 90.00003101529407,
+          "phase": "open"
+        },
+        {
+          "name": "Open details are accessible only at final cover angle",
+          "pass": false,
+          "phase": "open",
+          "reading": "true",
+          "focus": "011",
+          "heading": "ARC · 交互产品展厅",
+          "detail": {
+            "hidden": false,
+            "inert": false,
+            "ariaHidden": "false",
+            "opacity": "1"
+          },
+          "angleDegrees": 154.02196043491668,
+          "active": {
+            "tag": "H3",
+            "project": null,
+            "isHeading": true,
+            "isOpen": false
+          },
+          "space": {
+            "left": 323,
+            "right": 1398.984375,
+            "top": 331.5,
+            "bottom": 851.5,
+            "width": 1075.984375,
+            "height": 520
+          },
+          "inside": {
+            "left": 610.1409912109375,
+            "right": 800.6142578125,
+            "top": 471.1536865234375,
+            "bottom": 748.8605346679688,
+            "width": 190.4732666015625,
+            "height": 277.70684814453125
+          },
+          "back": {
+            "left": 402.3992919921875,
+            "right": 610.7696533203125,
+            "top": 460.4161376953125,
+            "bottom": 762.900634765625,
+            "width": 208.370361328125,
+            "height": 302.4844970703125
+          },
+          "overflow": false,
+          "objects": [
+            {
+              "id": "011",
+              "opened": "true",
+              "inert": false,
+              "tabIndex": 0,
+              "ariaHidden": "false"
+            },
+            {
+              "id": "008",
+              "opened": "false",
+              "inert": true,
+              "tabIndex": -1,
+              "ariaHidden": "true"
+            },
+            {
+              "id": "010",
+              "opened": "false",
+              "inert": true,
+              "tabIndex": -1,
+              "ariaHidden": "true"
+            },
+            {
+              "id": "009",
+              "opened": "false",
+              "inert": true,
+              "tabIndex": -1,
+              "ariaHidden": "true"
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "name": "At ninety degrees the details remain inert",
+          "pass": true,
+          "retest": true,
+          "pauseAfterNominalFallbackMs": 1350,
+          "observed": {
+            "phase": "opening",
+            "focus": "011",
+            "angleDegrees": 90.00003101529407,
+            "detail": {
+              "inert": true,
+              "ariaHidden": "true",
+              "opacity": "0"
+            },
+            "active": {
+              "project": "011",
+              "isHeading": false
+            },
+            "labActive": true
+          }
+        },
+        {
+          "name": "Open details are accessible only at final cover angle",
+          "pass": false,
+          "retest": true,
+          "observed": {
+            "phase": "open",
+            "focus": "011",
+            "angleDegrees": 154.8942198443666,
+            "detail": {
+              "inert": false,
+              "ariaHidden": "false",
+              "opacity": "0"
+            },
+            "active": {
+              "project": null,
+              "isHeading": true
+            },
+            "labActive": true
+          }
+        },
+        {
+          "name": "Hidden during opening finishes cover to final angle and state without stealing focus",
+          "pass": true,
+          "retest": true,
+          "method": "Public parent-visibility message through existing app handler; no private instance access",
+          "before": {
+            "phase": "opening",
+            "focus": "011",
+            "angleDegrees": 90.00003101529407,
+            "detail": {
+              "inert": true,
+              "ariaHidden": "true",
+              "opacity": "0"
+            },
+            "active": {
+              "project": "011",
+              "isHeading": false
+            },
+            "labActive": true
+          },
+          "after": {
+            "phase": "open",
+            "focus": "011",
+            "angleDegrees": 155.00002887217343,
+            "detail": {
+              "inert": false,
+              "ariaHidden": "false",
+              "opacity": "0"
+            },
+            "active": {
+              "project": "011",
+              "isHeading": false
+            },
+            "labActive": false
+          },
+          "focusUnchanged": true
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

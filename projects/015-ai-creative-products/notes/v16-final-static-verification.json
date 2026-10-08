@@ -1,0 +1,738 @@
+{
+  "version": 16,
+  "checkedAt": "2026-10-03T12:13:14.312Z",
+  "scope": "Read-only selected-module syntax/resource checks; actual bundled Three.js CPU geometry and mock render-state semantics. No browser, pixel, GPU support, FPS or performance verification. Source changes limited to 05/07/09/10 and the shared host.",
+  "checks": [
+    {
+      "name": "Sixteen selected v16 and shared host modules parse as ES modules",
+      "passed": true,
+      "detail": {
+        "files": [
+          "app.js",
+          "defense.js",
+          "defense-detail.js",
+          "defense-finish.js",
+          "village.js",
+          "village-architecture.js",
+          "village-surfaces.js",
+          "village-trees.js",
+          "world.js",
+          "lagoon-detail.js",
+          "lagoon-nature.js",
+          "lagoon-refraction.js",
+          "soccer.js",
+          "soccer-art.js",
+          "soccer-stadium.js",
+          "assets/boulder/geometry.js"
+        ]
+      }
+    },
+    {
+      "name": "Selected local static imports resolve within project",
+      "passed": true,
+      "detail": {
+        "count": 44
+      }
+    },
+    {
+      "name": "World and host cache references match final revised modules",
+      "passed": true
+    },
+    {
+      "name": "Scanned binary exact byte layout and source hash retained",
+      "passed": true,
+      "detail": {
+        "vertices": 4231,
+        "triangles": 5954,
+        "bytes": 206840
+      }
+    },
+    {
+      "name": "Scan attributes and triangle indices are finite and in range",
+      "passed": true
+    },
+    {
+      "name": "Scan normals remain unit length",
+      "passed": true,
+      "detail": {
+        "minimum": 0.9999999556509661,
+        "maximum": 1.0000000434254566
+      }
+    },
+    {
+      "name": "Final normalized source span is 1.7 units with finite sphere",
+      "passed": true,
+      "detail": {
+        "factor": 0.9348822844728262,
+        "bounds": {
+          "min": [
+            -0.5903223156929016,
+            -0.462548166513443,
+            -0.8500000238418579
+          ],
+          "max": [
+            0.5903223156929016,
+            0.462548166513443,
+            0.8500000238418579
+          ]
+        },
+        "sphereRadius": 0.9540279938411409
+      }
+    },
+    {
+      "name": "All eight scanned replacements fit existing transformed world AABB envelopes",
+      "passed": true,
+      "detail": {
+        "count": 8,
+        "method": "Clone actual current mesh geometry, apply its retained matrixWorld, compute actual transformed-vertex AABB"
+      }
+    },
+    {
+      "name": "Twenty-four original circular collider records remain finite",
+      "passed": true
+    },
+    {
+      "name": "Water fallback resamples depth at the selected undistorted UV before thickness",
+      "passed": true
+    },
+    {
+      "name": "Fallback absorption uses newly sampled depth in numerical semantic check",
+      "passed": true,
+      "detail": {
+        "wrongBedDepth": 0.7968127490039839,
+        "correctBedDepth": 2.628888564334734,
+        "surfaceDepth": 2
+      }
+    },
+    {
+      "name": "Heading-aware boat-interior mask remains explicit before water shading",
+      "passed": true
+    },
+    {
+      "name": "Refraction renderer state restored for success",
+      "passed": true,
+      "detail": {
+        "nestedCalls": 1,
+        "clearCalls": 1,
+        "support": 1
+      }
+    },
+    {
+      "name": "Refraction disposal releases depth and disables callback success",
+      "passed": true
+    },
+    {
+      "name": "Refraction renderer state restored for throws",
+      "passed": true,
+      "detail": {
+        "nestedCalls": 1,
+        "clearCalls": 1,
+        "support": 1
+      }
+    },
+    {
+      "name": "Refraction disposal releases depth and disables callback throws",
+      "passed": true
+    },
+    {
+      "name": "Refraction renderer state restored for unsupported",
+      "passed": true,
+      "detail": {
+        "nestedCalls": 0,
+        "clearCalls": 0,
+        "support": 0
+      }
+    },
+    {
+      "name": "Refraction disposal releases depth and disables callback unsupported",
+      "passed": true
+    },
+    {
+      "name": "Early disposal aborts fetch and releases three unattached scan textures and material",
+      "passed": true,
+      "detail": {
+        "textures": 3,
+        "scannedMaterials": 1
+      }
+    },
+    {
+      "name": "Scanned textures and tangent-free normal scale match r160 glTF convention",
+      "passed": true,
+      "detail": {
+        "flipY": [
+          false,
+          false,
+          false
+        ],
+        "normalScale": [
+          0.7,
+          -0.7
+        ],
+        "colorSpace": [
+          "srgb",
+          "",
+          ""
+        ],
+        "sourceConversion": "Original glTF UVs retained; WebP conversion without image flip",
+        "reference": "https://raw.githubusercontent.com/mrdoob/three.js/r160/examples/jsm/loaders/GLTFLoader.js",
+        "normalRule": "No tangent attribute; r160 GLTFLoader uses inverted normalScale.y with derivative tangents"
+      }
+    },
+    {
+      "name": "New boulder source asset hashes and files match provenance record",
+      "passed": true
+    },
+    {
+      "name": "Browser asset credit retains author, exact source and CC0",
+      "passed": true
+    },
+    {
+      "name": "Binary and source credit are selected in site and reference export",
+      "passed": true
+    },
+    {
+      "name": "Existing CPU architecture and tree checks still pass with final leaf changes",
+      "passed": true,
+      "detail": {
+        "count": 47
+      }
+    },
+    {
+      "name": "Final village leaf angular spread, size bounds and dusk ambient are present",
+      "passed": true
+    }
+  ],
+  "scan": {
+    "factor": 0.9348822844728262,
+    "vertices": 4231,
+    "triangles": 5954,
+    "envelopes": [
+      {
+        "index": 0,
+        "position": [
+          -5.207636708888082,
+          0.17588666800990826,
+          -30.955041554807725
+        ],
+        "contained": true,
+        "method": "AABB computed from individually transformed geometry vertices, not transformed local AABB corners",
+        "old": {
+          "min": [
+            -6.8304948806762695,
+            -0.8369381427764893,
+            -32.250587463378906
+          ],
+          "max": [
+            -3.7572288513183594,
+            1.2578402757644653,
+            -29.32059669494629
+          ]
+        },
+        "current": {
+          "min": [
+            -6.357579708099365,
+            -0.37271735072135925,
+            -32.227237701416016
+          ],
+          "max": [
+            -4.283023834228516,
+            0.7194717526435852,
+            -30.08771514892578
+          ]
+        }
+      },
+      {
+        "index": 3,
+        "position": [
+          -5.990951328458069,
+          0.3954648633313021,
+          -21.95199984801188
+        ],
+        "contained": true,
+        "method": "AABB computed from individually transformed geometry vertices, not transformed local AABB corners",
+        "old": {
+          "min": [
+            -7.552238941192627,
+            -0.8939279317855835,
+            -23.736112594604492
+          ],
+          "max": [
+            -4.01637077331543,
+            1.6368999481201172,
+            -20.098493576049805
+          ]
+        },
+        "current": {
+          "min": [
+            -7.427483558654785,
+            -0.3345640003681183,
+            -23.070499420166016
+          ],
+          "max": [
+            -4.934671401977539,
+            1.090384602546692,
+            -20.74898910522461
+          ]
+        }
+      },
+      {
+        "index": 6,
+        "position": [
+          -7.824227019590734,
+          0.10949705581125113,
+          -16.694973301324037
+        ],
+        "contained": true,
+        "method": "AABB computed from individually transformed geometry vertices, not transformed local AABB corners",
+        "old": {
+          "min": [
+            -9.454367637634277,
+            -1.092453122138977,
+            -18.535240173339844
+          ],
+          "max": [
+            -6.2835540771484375,
+            1.1322523355484009,
+            -15.239887237548828
+          ]
+        },
+        "current": {
+          "min": [
+            -8.840087890625,
+            -0.44646143913269043,
+            -17.679292678833008
+          ],
+          "max": [
+            -6.717894077301025,
+            0.5517810583114624,
+            -15.509116172790527
+          ]
+        }
+      },
+      {
+        "index": 9,
+        "position": [
+          -6.525739559230102,
+          0.43244783692608757,
+          -8.665906285555947
+        ],
+        "contained": true,
+        "method": "AABB computed from individually transformed geometry vertices, not transformed local AABB corners",
+        "old": {
+          "min": [
+            -8.146273612976074,
+            -0.8556863069534302,
+            -10.473922729492188
+          ],
+          "max": [
+            -4.4812912940979,
+            1.7723957300186157,
+            -6.619074821472168
+          ]
+        },
+        "current": {
+          "min": [
+            -8.12427806854248,
+            -0.2518651485443115,
+            -9.813420295715332
+          ],
+          "max": [
+            -5.435032367706299,
+            1.1082069873809814,
+            -7.227985858917236
+          ]
+        }
+      },
+      {
+        "index": 12,
+        "position": [
+          -7.407715858086946,
+          0.22585302974511362,
+          -2.446311424250073
+        ],
+        "contained": true,
+        "method": "AABB computed from individually transformed geometry vertices, not transformed local AABB corners",
+        "old": {
+          "min": [
+            -9.44088077545166,
+            -1.0389013290405273,
+            -4.399717330932617
+          ],
+          "max": [
+            -5.796125411987305,
+            1.5600172281265259,
+            -0.6667605042457581
+          ]
+        },
+        "current": {
+          "min": [
+            -8.499557495117188,
+            -0.3530154526233673,
+            -3.8695032596588135
+          ],
+          "max": [
+            -5.856534957885742,
+            0.8170341849327087,
+            -1.3033043146133423
+          ]
+        }
+      },
+      {
+        "index": 15,
+        "position": [
+          -4.714947126589726,
+          0.3042259602023684,
+          11.488899368037377
+        ],
+        "contained": true,
+        "method": "AABB computed from individually transformed geometry vertices, not transformed local AABB corners",
+        "old": {
+          "min": [
+            -5.913182258605957,
+            -0.6504331827163696,
+            10.120726585388184
+          ],
+          "max": [
+            -3.19952392578125,
+            1.2402734756469727,
+            12.86038589477539
+          ]
+        },
+        "current": {
+          "min": [
+            -5.784791469573975,
+            -0.16268008947372437,
+            10.629212379455566
+          ],
+          "max": [
+            -3.9136815071105957,
+            0.763837456703186,
+            12.443475723266602
+          ]
+        }
+      },
+      {
+        "index": 18,
+        "position": [
+          -5.08605584238375,
+          0.30514881300556385,
+          20.07306771350379
+        ],
+        "contained": true,
+        "method": "AABB computed from individually transformed geometry vertices, not transformed local AABB corners",
+        "old": {
+          "min": [
+            -6.628050327301025,
+            -0.6605024933815002,
+            18.9425048828125
+          ],
+          "max": [
+            -3.8602778911590576,
+            1.2251999378204346,
+            21.39894676208496
+          ]
+        },
+        "current": {
+          "min": [
+            -5.92088508605957,
+            -0.13780058920383453,
+            19.0841064453125
+          ],
+          "max": [
+            -4.114625453948975,
+            0.7115413546562195,
+            20.95237159729004
+          ]
+        }
+      },
+      {
+        "index": 21,
+        "position": [
+          -6.962208064812631,
+          0.42371404871920854,
+          28.246199793504736
+        ],
+        "contained": true,
+        "method": "AABB computed from individually transformed geometry vertices, not transformed local AABB corners",
+        "old": {
+          "min": [
+            -8.6212739944458,
+            -0.8640992045402527,
+            26.319355010986328
+          ],
+          "max": [
+            -4.863966464996338,
+            1.7511115074157715,
+            30.102108001708984
+          ]
+        },
+        "current": {
+          "min": [
+            -8.416657447814941,
+            -0.26649990677833557,
+            27.04370880126953
+          ],
+          "max": [
+            -5.842834949493408,
+            1.101503849029541,
+            29.554447174072266
+          ]
+        }
+      }
+    ],
+    "worldBoundsMethod": "Clone actual current mesh geometry, apply its retained matrixWorld, compute actual transformed-vertex AABB"
+  },
+  "shader": {
+    "depthFallback": true,
+    "numericalDepth": {
+      "wrong": 0.7968127490039839,
+      "correct": 2.628888564334734
+    },
+    "gpuCompilationVerified": false
+  },
+  "refractionRuns": [
+    {
+      "mode": "success",
+      "restored": true,
+      "nestedCalls": 1,
+      "state": {
+        "supported": true,
+        "captures": 1,
+        "width": 960,
+        "height": 540,
+        "method": "actual submerged scene color and depth; screen-space wave distortion and depth attenuation",
+        "boundary": "single camera-space capture, no multiple scattering or physically traced caustics"
+      },
+      "depthDisposals": 1
+    },
+    {
+      "mode": "throws",
+      "restored": true,
+      "nestedCalls": 1,
+      "state": {
+        "supported": true,
+        "captures": 0,
+        "width": 960,
+        "height": 540,
+        "method": "actual submerged scene color and depth; screen-space wave distortion and depth attenuation",
+        "boundary": "single camera-space capture, no multiple scattering or physically traced caustics"
+      },
+      "depthDisposals": 1
+    },
+    {
+      "mode": "unsupported",
+      "restored": true,
+      "nestedCalls": 0,
+      "state": {
+        "supported": false,
+        "captures": 0,
+        "width": 1,
+        "height": 1,
+        "method": "actual submerged scene color and depth; screen-space wave distortion and depth attenuation",
+        "boundary": "single camera-space capture, no multiple scattering or physically traced caustics"
+      },
+      "depthDisposals": 1
+    }
+  ],
+  "village": {
+    "checks": [
+      "Finite timber geometry 0.15×4.5×0.18",
+      "Outward timber face winding 0.15×4.5×0.18",
+      "Finite timber geometry 5.05×0.13×0.18",
+      "Outward timber face winding 5.05×0.13×0.18",
+      "Finite timber geometry 0.17×0.24×5.72",
+      "Outward timber face winding 0.17×0.24×5.72",
+      "Finite timber geometry 0.12×1.22×0.29",
+      "Outward timber face winding 0.12×1.22×0.29",
+      "Finite timber geometry 0.33×1.12×0.065",
+      "Outward timber face winding 0.33×1.12×0.065",
+      "Finite timber geometry 0.13×0.062×0.052",
+      "Outward timber face winding 0.13×0.062×0.052",
+      "Finite tree mesh seed 23 1",
+      "Finite tree mesh seed 23 2",
+      "Exact existing leaf budget retained seed 23",
+      "Four authored crown layers / 42 overlapping sprays seed 23",
+      "Finite foliage matrices and colours seed 23",
+      "Crowns distribute leaves across several vertical layers seed 23",
+      "Tree remains two batches seed 23",
+      "Finite tree mesh seed 25 1",
+      "Finite tree mesh seed 25 2",
+      "Exact existing leaf budget retained seed 25",
+      "Four authored crown layers / 42 overlapping sprays seed 25",
+      "Finite foliage matrices and colours seed 25",
+      "Crowns distribute leaves across several vertical layers seed 25",
+      "Tree remains two batches seed 25",
+      "Finite tree mesh seed 1 1",
+      "Finite tree mesh seed 1 2",
+      "Exact existing leaf budget retained seed 1",
+      "Four authored crown layers / 42 overlapping sprays seed 1",
+      "Finite foliage matrices and colours seed 1",
+      "Crowns distribute leaves across several vertical layers seed 1",
+      "Tree remains two batches seed 1",
+      "Finite tree mesh seed 13 1",
+      "Finite tree mesh seed 13 2",
+      "Exact existing leaf budget retained seed 13",
+      "Four authored crown layers / 42 overlapping sprays seed 13",
+      "Finite foliage matrices and colours seed 13",
+      "Crowns distribute leaves across several vertical layers seed 13",
+      "Tree remains two batches seed 13",
+      "Existing entry eye height and fixed collision logic remain",
+      "Existing recessed architectural apertures retained house 0",
+      "Real joinery pins and finite architecture house 0",
+      "Static batches remain bounded house 0",
+      "Existing recessed architectural apertures retained house 1",
+      "Real joinery pins and finite architecture house 1",
+      "Static batches remain bounded house 1"
+    ],
+    "crowns": [
+      {
+        "seed": 23,
+        "leafCount": 4000,
+        "scale": 1.48,
+        "staticCalls": 2,
+        "triangles": 66176,
+        "leafYRange": [
+          2.379060745239258,
+          5.075387954711914
+        ],
+        "art": {
+          "type": "connected layered branch sprays",
+          "leafCount": 4000,
+          "leafLength": 0.18,
+          "branchPockets": 42,
+          "crownTiers": 4,
+          "foliagePlacement": "elongated overlapping branch sprays; darker inner leaves and lighter upper tips"
+        }
+      },
+      {
+        "seed": 25,
+        "leafCount": 4000,
+        "scale": 1.46,
+        "staticCalls": 2,
+        "triangles": 66176,
+        "leafYRange": [
+          2.33835768699646,
+          5.034663677215576
+        ],
+        "art": {
+          "type": "connected layered branch sprays",
+          "leafCount": 4000,
+          "leafLength": 0.18,
+          "branchPockets": 42,
+          "crownTiers": 4,
+          "foliagePlacement": "elongated overlapping branch sprays; darker inner leaves and lighter upper tips"
+        }
+      },
+      {
+        "seed": 1,
+        "leafCount": 1200,
+        "scale": 0.7,
+        "staticCalls": 2,
+        "triangles": 21376,
+        "leafYRange": [
+          2.512251138687134,
+          5.036295413970947
+        ],
+        "art": {
+          "type": "connected layered branch sprays",
+          "leafCount": 1200,
+          "leafLength": 0.18,
+          "branchPockets": 42,
+          "crownTiers": 4,
+          "foliagePlacement": "elongated overlapping branch sprays; darker inner leaves and lighter upper tips"
+        }
+      },
+      {
+        "seed": 13,
+        "leafCount": 1200,
+        "scale": 1.03,
+        "staticCalls": 2,
+        "triangles": 21376,
+        "leafYRange": [
+          2.396324634552002,
+          4.974688529968262
+        ],
+        "art": {
+          "type": "connected layered branch sprays",
+          "leafCount": 1200,
+          "leafLength": 0.18,
+          "branchPockets": 42,
+          "crownTiers": 4,
+          "foliagePlacement": "elongated overlapping branch sprays; darker inner leaves and lighter upper tips"
+        }
+      }
+    ],
+    "buildings": [
+      {
+        "index": 0,
+        "width": 4.4,
+        "height": 4.5,
+        "depth": 5,
+        "triangles": 23282,
+        "type": "warm timber lane facade",
+        "windowCount": 8,
+        "shutterLeafCount": 16,
+        "hingeCount": 32,
+        "archDoorCount": 0,
+        "rectDoorCount": 1,
+        "brickCount": 100,
+        "timberJointCount": 12,
+        "recessDepth": 0.2,
+        "wallThickness": 0.24,
+        "diamondLead": true,
+        "glass": "Original cool-grey reflective tint; no scene refraction",
+        "eaveLayers": 3,
+        "brickCourses": 3,
+        "staticMeshCount": 18,
+        "instancedMeshCount": 2,
+        "surfaces": "Face-specific rain traces, plaster loss and window-corner hairline cracks; length-aligned solid timber grain, softened sections and flush joinery pins",
+        "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, uneven stone courses, arch stones and layered eaves"
+      },
+      {
+        "index": 1,
+        "width": 6,
+        "height": 4.3,
+        "depth": 4.6,
+        "triangles": 28554,
+        "type": "pale masonry lane facade",
+        "windowCount": 8,
+        "shutterLeafCount": 16,
+        "hingeCount": 32,
+        "archDoorCount": 1,
+        "rectDoorCount": 0,
+        "brickCount": 183,
+        "timberJointCount": 4,
+        "recessDepth": 0.2,
+        "wallThickness": 0.24,
+        "diamondLead": true,
+        "glass": "Original cool-grey reflective tint; no scene refraction",
+        "eaveLayers": 3,
+        "brickCourses": 3,
+        "staticMeshCount": 18,
+        "instancedMeshCount": 2,
+        "surfaces": "Face-specific rain traces, plaster loss and window-corner hairline cracks; length-aligned solid timber grain, softened sections and flush joinery pins",
+        "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, uneven stone courses, arch stones and layered eaves"
+      }
+    ]
+  },
+  "textureOrientation": {
+    "flipY": [
+      false,
+      false,
+      false
+    ],
+    "normalScale": [
+      0.7,
+      -0.7
+    ],
+    "colorSpace": [
+      "srgb",
+      "",
+      ""
+    ],
+    "sourceConversion": "Original glTF UVs retained; WebP conversion without image flip",
+    "reference": "https://raw.githubusercontent.com/mrdoob/three.js/r160/examples/jsm/loaders/GLTFLoader.js",
+    "normalRule": "No tangent attribute; r160 GLTFLoader uses inverted normalScale.y with derivative tangents"
+  },
+  "primaryReference": "https://raw.githubusercontent.com/mrdoob/three.js/r160/examples/jsm/loaders/GLTFLoader.js"
+}

@@ -1,0 +1,1170 @@
+{
+  "caseId": 2,
+  "checks": [
+    {
+      "name": "四位独立动态记录员加载，世界静态合批仍保留",
+      "passed": true
+    },
+    {
+      "name": "实际待机改变连接姿态",
+      "passed": true
+    },
+    {
+      "name": "初始距离不可隔空交谈",
+      "passed": true
+    },
+    {
+      "name": "实际对话中记录员转向玩家，人物与对话同站",
+      "passed": true
+    },
+    {
+      "name": "隐藏视图暂停时间、人物姿态和实际像素",
+      "passed": true
+    },
+    {
+      "name": "实际 review 肩肘/头部动作分镜通过宿主暂停捕获",
+      "passed": true
+    },
+    {
+      "name": "错误判断只触发复核姿态，证据仍为0",
+      "passed": true
+    },
+    {
+      "name": "离开后人物回待机，旧对话不能取证",
+      "passed": true
+    },
+    {
+      "name": "实际 confirm 肩肘/头部动作分镜通过宿主暂停捕获",
+      "passed": true
+    },
+    {
+      "name": "正确判断才触发确认动作、记录板标记和证据状态",
+      "passed": true
+    },
+    {
+      "name": "真实JSON保留相同证据、人物确认姿态和暂停时钟",
+      "passed": true
+    },
+    {
+      "name": "手机实际人物/交谈入口可见，无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "恢复后确认动作按墙钟结束，不重复加证据",
+      "passed": true
+    },
+    {
+      "name": "sensor 实际站点成功状态与人物一致",
+      "passed": true
+    },
+    {
+      "name": "tower 实际站点成功状态与人物一致",
+      "passed": true
+    },
+    {
+      "name": "离开研究站不能隔空触发归档动作",
+      "passed": true
+    },
+    {
+      "name": "实际 archived 肩肘/头部动作分镜通过宿主暂停捕获",
+      "passed": true
+    },
+    {
+      "name": "归档结果由研究站人物、灯标和真实任务共用",
+      "passed": true
+    },
+    {
+      "name": "完成反馈结束即停止，任务耗时和玩家位置不再推进",
+      "passed": true
+    },
+    {
+      "name": "重置清除证据及四位人物确认状态",
+      "passed": true
+    },
+    {
+      "name": "共享05模块仍可真实导入",
+      "passed": true
+    },
+    {
+      "name": "本例无页面错误",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "samples": {
+    "conversation": {
+      "module": "quest",
+      "status": "playing",
+      "running": false,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 95,
+        "triangles": 299192,
+        "staticDrawCallsSaved": 5768
+      },
+      "position": {
+        "x": -11.84,
+        "z": -8
+      },
+      "yaw": 1.266,
+      "evidence": [],
+      "elapsed": 21,
+      "destination": null,
+      "dialogueSite": "archive",
+      "interaction": {
+        "site": "archive",
+        "distance": 2.66,
+        "canTalk": true,
+        "sites": [
+          {
+            "id": "hub",
+            "checked": false,
+            "marker": "提交证据"
+          },
+          {
+            "id": "archive",
+            "checked": false,
+            "marker": "待核对"
+          },
+          {
+            "id": "sensor",
+            "checked": false,
+            "marker": "待核对"
+          },
+          {
+            "id": "tower",
+            "checked": false,
+            "marker": "待核对"
+          }
+        ]
+      },
+      "recorders": {
+        "clock": 20.983,
+        "animating": false,
+        "actors": [
+          {
+            "site": "hub",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "face": {
+              "expression": "neutral",
+              "gaze": "street",
+              "smile": 0,
+              "mouthCurve": 0.25,
+              "browPinch": 0,
+              "blink": 0,
+              "eyeOpen": 1,
+              "pupil": {
+                "x": 0.0012,
+                "y": 0
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "art": "continuous tailored torso, shaped head/neck and cloth sleeves",
+            "pose": {
+              "bodyY": 0.9396,
+              "headPitch": -0.0216,
+              "headYaw": 0.0433,
+              "rightShoulder": -0.0552,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          },
+          {
+            "site": "archive",
+            "mode": "talking",
+            "near": true,
+            "checked": false,
+            "eventAge": 1.167,
+            "yaw": -1.264,
+            "targetYaw": -1.266,
+            "face": {
+              "expression": "listening",
+              "gaze": "player",
+              "smile": 0.04,
+              "mouthCurve": 0.362,
+              "browPinch": 0,
+              "blink": 0.0208,
+              "eyeOpen": 0.9792,
+              "pupil": {
+                "x": -0.0001,
+                "y": 0
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "art": "continuous tailored torso, shaped head/neck and cloth sleeves",
+            "pose": {
+              "bodyY": 0.9351,
+              "headPitch": 0.0266,
+              "headYaw": -0.0024,
+              "rightShoulder": -0.36,
+              "rightElbow": -0.8958,
+              "leftShoulder": -0.34
+            }
+          },
+          {
+            "site": "sensor",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "face": {
+              "expression": "neutral",
+              "gaze": "street",
+              "smile": 0,
+              "mouthCurve": 0.25,
+              "browPinch": 0,
+              "blink": 0,
+              "eyeOpen": 1,
+              "pupil": {
+                "x": -0.002,
+                "y": 0
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "art": "continuous tailored torso, shaped head/neck and cloth sleeves",
+            "pose": {
+              "bodyY": 0.9343,
+              "headPitch": -0.0023,
+              "headYaw": 0.0046,
+              "rightShoulder": -0.079,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          },
+          {
+            "site": "tower",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "face": {
+              "expression": "neutral",
+              "gaze": "street",
+              "smile": 0,
+              "mouthCurve": 0.25,
+              "browPinch": 0,
+              "blink": 0,
+              "eyeOpen": 1,
+              "pupil": {
+                "x": -0.0014,
+                "y": 0
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "art": "continuous tailored torso, shaped head/neck and cloth sleeves",
+            "pose": {
+              "bodyY": 0.9378,
+              "headPitch": 0.0197,
+              "headYaw": -0.0393,
+              "rightShoulder": -0.0654,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          }
+        ]
+      },
+      "soundEnabled": true,
+      "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+      "scope": "Original small RPG prototype with connected recorder poses, event-driven facial geometry and finite gaze; no speech lip-sync, original source, combat or VATS reproduced.",
+      "log": [
+        {
+          "time": 0,
+          "action": "开始",
+          "detail": "程序化街区任务"
+        },
+        {
+          "time": 13.7,
+          "action": "前往",
+          "detail": "档案站"
+        }
+      ]
+    },
+    "review": {
+      "module": "quest",
+      "status": "playing",
+      "running": false,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 95,
+        "triangles": 299192,
+        "staticDrawCallsSaved": 5768
+      },
+      "position": {
+        "x": -11.84,
+        "z": -8
+      },
+      "yaw": 1.266,
+      "evidence": [],
+      "elapsed": 21.6,
+      "destination": null,
+      "dialogueSite": "archive",
+      "interaction": {
+        "site": "archive",
+        "distance": 2.66,
+        "canTalk": true,
+        "sites": [
+          {
+            "id": "hub",
+            "checked": false,
+            "marker": "提交证据"
+          },
+          {
+            "id": "archive",
+            "checked": false,
+            "marker": "待核对"
+          },
+          {
+            "id": "sensor",
+            "checked": false,
+            "marker": "待核对"
+          },
+          {
+            "id": "tower",
+            "checked": false,
+            "marker": "待核对"
+          }
+        ]
+      },
+      "recorders": {
+        "clock": 21.556,
+        "animating": false,
+        "actors": [
+          {
+            "site": "hub",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "face": {
+              "expression": "neutral",
+              "gaze": "street",
+              "smile": 0,
+              "mouthCurve": 0.25,
+              "browPinch": 0,
+              "blink": 0,
+              "eyeOpen": 1,
+              "pupil": {
+                "x": 0.0007,
+                "y": 0
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "art": "continuous tailored torso, shaped head/neck and cloth sleeves",
+            "pose": {
+              "bodyY": 0.9349,
+              "headPitch": -0.0249,
+              "headYaw": 0.0495,
+              "rightShoulder": -0.0759,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          },
+          {
+            "site": "archive",
+            "mode": "review",
+            "near": true,
+            "checked": false,
+            "eventAge": 0.573,
+            "yaw": -1.266,
+            "targetYaw": -1.266,
+            "face": {
+              "expression": "checking",
+              "gaze": "record-board",
+              "smile": -0.0597,
+              "mouthCurve": 0.25,
+              "browPinch": 0.2193,
+              "blink": 0,
+              "eyeOpen": 0.8804,
+              "pupil": {
+                "x": -0.004,
+                "y": -0.0045
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "art": "continuous tailored torso, shaped head/neck and cloth sleeves",
+            "pose": {
+              "bodyY": 0.9343,
+              "headPitch": 0.1982,
+              "headYaw": -0.1485,
+              "rightShoulder": -0.5778,
+              "rightElbow": -1.0385,
+              "leftShoulder": -0.5479
+            }
+          },
+          {
+            "site": "sensor",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "face": {
+              "expression": "neutral",
+              "gaze": "street",
+              "smile": 0,
+              "mouthCurve": 0.25,
+              "browPinch": 0,
+              "blink": 0,
+              "eyeOpen": 1,
+              "pupil": {
+                "x": -0.002,
+                "y": 0
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "art": "continuous tailored torso, shaped head/neck and cloth sleeves",
+            "pose": {
+              "bodyY": 0.938,
+              "headPitch": 0.0095,
+              "headYaw": -0.0147,
+              "rightShoulder": -0.0633,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          },
+          {
+            "site": "tower",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "face": {
+              "expression": "neutral",
+              "gaze": "street",
+              "smile": 0,
+              "mouthCurve": 0.25,
+              "browPinch": 0,
+              "blink": 0,
+              "eyeOpen": 1,
+              "pupil": {
+                "x": -0.001,
+                "y": 0
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "art": "continuous tailored torso, shaped head/neck and cloth sleeves",
+            "pose": {
+              "bodyY": 0.9432,
+              "headPitch": 0.0246,
+              "headYaw": -0.0481,
+              "rightShoulder": -0.0418,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          }
+        ]
+      },
+      "soundEnabled": true,
+      "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+      "scope": "Original small RPG prototype with connected recorder poses, event-driven facial geometry and finite gaze; no speech lip-sync, original source, combat or VATS reproduced.",
+      "log": [
+        {
+          "time": 0,
+          "action": "开始",
+          "detail": "程序化街区任务"
+        },
+        {
+          "time": 13.7,
+          "action": "前往",
+          "detail": "档案站"
+        },
+        {
+          "time": 21,
+          "action": "判断未通过",
+          "detail": "档案站"
+        }
+      ]
+    },
+    "left": {
+      "module": "quest",
+      "status": "playing",
+      "running": true,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 100,
+        "triangles": 327200,
+        "staticDrawCallsSaved": 5768
+      },
+      "position": {
+        "x": -16.05,
+        "z": -6.67
+      },
+      "yaw": 1.266,
+      "evidence": [],
+      "elapsed": 26.5,
+      "destination": null,
+      "dialogueSite": "archive",
+      "interaction": {
+        "site": "archive",
+        "distance": 7.08,
+        "canTalk": false,
+        "sites": [
+          {
+            "id": "hub",
+            "checked": false,
+            "marker": "提交证据"
+          },
+          {
+            "id": "archive",
+            "checked": false,
+            "marker": "待核对"
+          },
+          {
+            "id": "sensor",
+            "checked": false,
+            "marker": "待核对"
+          },
+          {
+            "id": "tower",
+            "checked": false,
+            "marker": "待核对"
+          }
+        ]
+      },
+      "recorders": {
+        "clock": 26.526,
+        "animating": true,
+        "actors": [
+          {
+            "site": "hub",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "face": {
+              "expression": "neutral",
+              "gaze": "street",
+              "smile": 0,
+              "mouthCurve": 0.25,
+              "browPinch": 0,
+              "blink": 0,
+              "eyeOpen": 1,
+              "pupil": {
+                "x": -0.002,
+                "y": 0
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "art": "continuous tailored torso, shaped head/neck and cloth sleeves",
+            "pose": {
+              "bodyY": 0.9387,
+              "headPitch": 0.0177,
+              "headYaw": -0.0498,
+              "rightShoulder": -0.0612,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          },
+          {
+            "site": "archive",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 5.543,
+            "yaw": 0,
+            "targetYaw": 0,
+            "face": {
+              "expression": "neutral",
+              "gaze": "street",
+              "smile": 0,
+              "mouthCurve": 0.25,
+              "browPinch": 0,
+              "blink": 0,
+              "eyeOpen": 1,
+              "pupil": {
+                "x": -0.0008,
+                "y": 0
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "art": "continuous tailored torso, shaped head/neck and cloth sleeves",
+            "pose": {
+              "bodyY": 0.9438,
+              "headPitch": -0.0052,
+              "headYaw": -0.0292,
+              "rightShoulder": -0.0401,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          },
+          {
+            "site": "sensor",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "face": {
+              "expression": "neutral",
+              "gaze": "street",
+              "smile": 0,
+              "mouthCurve": 0.25,
+              "browPinch": 0,
+              "blink": 0,
+              "eyeOpen": 1,
+              "pupil": {
+                "x": 0.0011,
+                "y": 0
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "art": "continuous tailored torso, shaped head/neck and cloth sleeves",
+            "pose": {
+              "bodyY": 0.946,
+              "headPitch": -0.0233,
+              "headYaw": 0.0183,
+              "rightShoulder": -0.0303,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          },
+          {
+            "site": "tower",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "face": {
+              "expression": "neutral",
+              "gaze": "street",
+              "smile": 0,
+              "mouthCurve": 0.25,
+              "browPinch": 0,
+              "blink": 0,
+              "eyeOpen": 1,
+              "pupil": {
+                "x": 0.002,
+                "y": 0
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "art": "continuous tailored torso, shaped head/neck and cloth sleeves",
+            "pose": {
+              "bodyY": 0.9437,
+              "headPitch": -0.02,
+              "headYaw": 0.049,
+              "rightShoulder": -0.0392,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          }
+        ]
+      },
+      "soundEnabled": true,
+      "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+      "scope": "Original small RPG prototype with connected recorder poses, event-driven facial geometry and finite gaze; no speech lip-sync, original source, combat or VATS reproduced.",
+      "log": [
+        {
+          "time": 0,
+          "action": "开始",
+          "detail": "程序化街区任务"
+        },
+        {
+          "time": 13.7,
+          "action": "前往",
+          "detail": "档案站"
+        },
+        {
+          "time": 21,
+          "action": "判断未通过",
+          "detail": "档案站"
+        }
+      ]
+    },
+    "confirm": {
+      "module": "quest",
+      "status": "playing",
+      "running": false,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 95,
+        "triangles": 299192,
+        "staticDrawCallsSaved": 5768
+      },
+      "position": {
+        "x": -12.17,
+        "z": -8
+      },
+      "yaw": 1.299,
+      "evidence": [
+        {
+          "id": "archive",
+          "title": "档案来源与时间已核对"
+        }
+      ],
+      "elapsed": 35.4,
+      "destination": null,
+      "dialogueSite": "archive",
+      "interaction": {
+        "site": "archive",
+        "distance": 2.98,
+        "canTalk": true,
+        "sites": [
+          {
+            "id": "hub",
+            "checked": false,
+            "marker": "提交证据"
+          },
+          {
+            "id": "archive",
+            "checked": true,
+            "marker": "已核对"
+          },
+          {
+            "id": "sensor",
+            "checked": false,
+            "marker": "待核对"
+          },
+          {
+            "id": "tower",
+            "checked": false,
+            "marker": "待核对"
+          }
+        ]
+      },
+      "recorders": {
+        "clock": 35.375,
+        "animating": false,
+        "actors": [
+          {
+            "site": "hub",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "face": {
+              "expression": "neutral",
+              "gaze": "street",
+              "smile": 0,
+              "mouthCurve": 0.25,
+              "browPinch": 0,
+              "blink": 0,
+              "eyeOpen": 1,
+              "pupil": {
+                "x": 0.0015,
+                "y": 0
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "art": "continuous tailored torso, shaped head/neck and cloth sleeves",
+            "pose": {
+              "bodyY": 0.9458,
+              "headPitch": -0.0006,
+              "headYaw": -0.0421,
+              "rightShoulder": -0.0308,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          },
+          {
+            "site": "archive",
+            "mode": "confirm",
+            "near": true,
+            "checked": true,
+            "eventAge": 0.933,
+            "yaw": -1.299,
+            "targetYaw": -1.299,
+            "face": {
+              "expression": "confirmed",
+              "gaze": "player",
+              "smile": 0.4836,
+              "mouthCurve": 1.6039,
+              "browPinch": -0.1,
+              "blink": 0,
+              "eyeOpen": 0.85,
+              "pupil": {
+                "x": 0,
+                "y": 0
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "art": "continuous tailored torso, shaped head/neck and cloth sleeves",
+            "pose": {
+              "bodyY": 0.9425,
+              "headPitch": -0.1646,
+              "headYaw": -0.0004,
+              "rightShoulder": -0.6922,
+              "rightElbow": -1.0763,
+              "leftShoulder": -0.4799
+            }
+          },
+          {
+            "site": "sensor",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "face": {
+              "expression": "neutral",
+              "gaze": "street",
+              "smile": 0,
+              "mouthCurve": 0.25,
+              "browPinch": 0,
+              "blink": 0,
+              "eyeOpen": 1,
+              "pupil": {
+                "x": -0.0018,
+                "y": 0
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "art": "continuous tailored torso, shaped head/neck and cloth sleeves",
+            "pose": {
+              "bodyY": 0.9372,
+              "headPitch": -0.0225,
+              "headYaw": -0.007,
+              "rightShoulder": -0.0664,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          },
+          {
+            "site": "tower",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "face": {
+              "expression": "neutral",
+              "gaze": "street",
+              "smile": 0,
+              "mouthCurve": 0.25,
+              "browPinch": 0,
+              "blink": 0,
+              "eyeOpen": 1,
+              "pupil": {
+                "x": -0.0017,
+                "y": 0
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "art": "continuous tailored torso, shaped head/neck and cloth sleeves",
+            "pose": {
+              "bodyY": 0.9341,
+              "headPitch": -0.003,
+              "headYaw": 0.0378,
+              "rightShoulder": -0.0794,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          }
+        ]
+      },
+      "soundEnabled": true,
+      "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+      "scope": "Original small RPG prototype with connected recorder poses, event-driven facial geometry and finite gaze; no speech lip-sync, original source, combat or VATS reproduced.",
+      "log": [
+        {
+          "time": 0,
+          "action": "开始",
+          "detail": "程序化街区任务"
+        },
+        {
+          "time": 13.7,
+          "action": "前往",
+          "detail": "档案站"
+        },
+        {
+          "time": 21,
+          "action": "判断未通过",
+          "detail": "档案站"
+        },
+        {
+          "time": 32.6,
+          "action": "前往",
+          "detail": "档案站"
+        },
+        {
+          "time": 34.4,
+          "action": "取得证据",
+          "detail": "档案来源与时间已核对"
+        }
+      ]
+    },
+    "completed": {
+      "module": "quest",
+      "status": "won",
+      "running": false,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 97,
+        "triangles": 326012,
+        "staticDrawCallsSaved": 5768
+      },
+      "position": {
+        "x": -4.84,
+        "z": 12.01
+      },
+      "yaw": 1.294,
+      "evidence": [
+        {
+          "id": "archive",
+          "title": "档案来源与时间已核对"
+        },
+        {
+          "id": "sensor",
+          "title": "异常读数与校准已复核"
+        },
+        {
+          "id": "tower",
+          "title": "两次观察差异已保留"
+        }
+      ],
+      "elapsed": 89.2,
+      "destination": null,
+      "dialogueSite": "hub",
+      "interaction": {
+        "site": "hub",
+        "distance": 2.95,
+        "canTalk": false,
+        "sites": [
+          {
+            "id": "hub",
+            "checked": true,
+            "marker": "已归档"
+          },
+          {
+            "id": "archive",
+            "checked": true,
+            "marker": "已核对"
+          },
+          {
+            "id": "sensor",
+            "checked": true,
+            "marker": "已核对"
+          },
+          {
+            "id": "tower",
+            "checked": true,
+            "marker": "已核对"
+          }
+        ]
+      },
+      "recorders": {
+        "clock": 90.165,
+        "animating": false,
+        "actors": [
+          {
+            "site": "hub",
+            "mode": "archived",
+            "near": true,
+            "checked": true,
+            "eventAge": 0.917,
+            "yaw": -1.294,
+            "targetYaw": -1.294,
+            "face": {
+              "expression": "confirmed",
+              "gaze": "player",
+              "smile": 0.4822,
+              "mouthCurve": 1.6002,
+              "browPinch": -0.1,
+              "blink": 0,
+              "eyeOpen": 0.85,
+              "pupil": {
+                "x": 0,
+                "y": 0
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "art": "continuous tailored torso, shaped head/neck and cloth sleeves",
+            "pose": {
+              "bodyY": 0.9346,
+              "headPitch": -0.1635,
+              "headYaw": -0.0004,
+              "rightShoulder": -0.6887,
+              "rightElbow": -1.0716,
+              "leftShoulder": -0.4799
+            }
+          },
+          {
+            "site": "archive",
+            "mode": "idle",
+            "near": false,
+            "checked": true,
+            "eventAge": 55.723,
+            "yaw": 0,
+            "targetYaw": 0,
+            "face": {
+              "expression": "neutral",
+              "gaze": "street",
+              "smile": 0,
+              "mouthCurve": 0.25,
+              "browPinch": 0,
+              "blink": 0,
+              "eyeOpen": 1,
+              "pupil": {
+                "x": 0.0018,
+                "y": 0
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "art": "continuous tailored torso, shaped head/neck and cloth sleeves",
+            "pose": {
+              "bodyY": 0.9346,
+              "headPitch": -0.0191,
+              "headYaw": 0.0043,
+              "rightShoulder": -0.0775,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.48
+            }
+          },
+          {
+            "site": "sensor",
+            "mode": "idle",
+            "near": false,
+            "checked": true,
+            "eventAge": 40.598,
+            "yaw": 0,
+            "targetYaw": 0,
+            "face": {
+              "expression": "neutral",
+              "gaze": "street",
+              "smile": 0,
+              "mouthCurve": 0.25,
+              "browPinch": 0,
+              "blink": 0,
+              "eyeOpen": 1,
+              "pupil": {
+                "x": 0.0017,
+                "y": 0
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "art": "continuous tailored torso, shaped head/neck and cloth sleeves",
+            "pose": {
+              "bodyY": 0.9387,
+              "headPitch": -0.0239,
+              "headYaw": -0.0396,
+              "rightShoulder": -0.0607,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.48
+            }
+          },
+          {
+            "site": "tower",
+            "mode": "idle",
+            "near": false,
+            "checked": true,
+            "eventAge": 28.566,
+            "yaw": 0,
+            "targetYaw": 0,
+            "face": {
+              "expression": "neutral",
+              "gaze": "street",
+              "smile": 0,
+              "mouthCurve": 0.25,
+              "browPinch": 0,
+              "blink": 0,
+              "eyeOpen": 1,
+              "pupil": {
+                "x": -0.0001,
+                "y": 0
+              },
+              "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+            },
+            "art": "continuous tailored torso, shaped head/neck and cloth sleeves",
+            "pose": {
+              "bodyY": 0.9438,
+              "headPitch": -0.0067,
+              "headYaw": -0.0471,
+              "rightShoulder": -0.0395,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.48
+            }
+          }
+        ]
+      },
+      "soundEnabled": true,
+      "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+      "scope": "Original small RPG prototype with connected recorder poses, event-driven facial geometry and finite gaze; no speech lip-sync, original source, combat or VATS reproduced.",
+      "log": [
+        {
+          "time": 0,
+          "action": "开始",
+          "detail": "程序化街区任务"
+        },
+        {
+          "time": 13.7,
+          "action": "前往",
+          "detail": "档案站"
+        },
+        {
+          "time": 21,
+          "action": "判断未通过",
+          "detail": "档案站"
+        },
+        {
+          "time": 32.6,
+          "action": "前往",
+          "detail": "档案站"
+        },
+        {
+          "time": 34.4,
+          "action": "取得证据",
+          "detail": "档案来源与时间已核对"
+        },
+        {
+          "time": 43.2,
+          "action": "前往",
+          "detail": "传感站"
+        },
+        {
+          "time": 49.6,
+          "action": "取得证据",
+          "detail": "异常读数与校准已复核"
+        },
+        {
+          "time": 55.2,
+          "action": "前往",
+          "detail": "观测塔"
+        },
+        {
+          "time": 61.6,
+          "action": "取得证据",
+          "detail": "两次观察差异已保留"
+        },
+        {
+          "time": 66.8,
+          "action": "前往",
+          "detail": "研究站"
+        },
+        {
+          "time": 87.4,
+          "action": "前往",
+          "detail": "研究站"
+        },
+        {
+          "time": 89.2,
+          "action": "任务完成",
+          "detail": "三份证据已归档"
+        }
+      ]
+    }
+  },
+  "evidence": "F:\\codex_project\\0930_codex_project\\projects\\015-ai-creative-products\\assets\\qa\\quality-reset-v15\\02-workflow"
+}

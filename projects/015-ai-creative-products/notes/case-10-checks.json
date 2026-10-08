@@ -1,0 +1,309 @@
+{
+  "checkedAt": "2026-10-02T15:27:17.419Z",
+  "checks": [
+    {
+      "name": "实际 W+Shift 加速：速度、BOOST 提示与镜头视角同步变化",
+      "passed": true
+    },
+    {
+      "name": "实际松开后继续惯性滑行，速度降低而非立刻停止",
+      "passed": true
+    },
+    {
+      "name": "实际车球接触仍传递速度并使球弹起",
+      "passed": true
+    },
+    {
+      "name": "实际接触附近切跟球镜头，位置平滑过渡而非跳到另一侧",
+      "passed": true
+    },
+    {
+      "name": "真实导出包含速度、惯性和相机状态",
+      "passed": true
+    },
+    {
+      "name": "实际倒车时追车镜头仍保持朝向，未按反向速度翻转",
+      "passed": true
+    },
+    {
+      "name": "手机速度与驾驶提示均可见，且没有横向溢出",
+      "passed": true
+    },
+    {
+      "name": "无页面错误",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "accelerated": {
+    "module": "soccer",
+    "status": "playing",
+    "running": false,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 99,
+      "triangles": 103258,
+      "staticDrawCallsSaved": 350
+    },
+    "score": 0,
+    "goal": 3,
+    "remaining": 89.4,
+    "elapsed": 0.6,
+    "boost": 91,
+    "boosting": true,
+    "friction": 20,
+    "restitution": 72,
+    "cameraMode": "chase",
+    "speed": 12.39,
+    "cameraFov": 69.16,
+    "cameraTarget": {
+      "x": 0,
+      "y": 1.35,
+      "z": 9.364
+    },
+    "cameraPosition": {
+      "x": -0.7,
+      "y": 3.863,
+      "z": 22.897
+    },
+    "collisions": 0,
+    "jumps": 0,
+    "maxBallHeight": 1.05,
+    "car": {
+      "x": 0,
+      "y": 0.65,
+      "z": 14.736,
+      "vx": 0,
+      "vy": 0,
+      "vz": -12.39,
+      "yaw": 0
+    },
+    "ball": {
+      "x": 0,
+      "y": 1.05,
+      "z": 8,
+      "vx": 0,
+      "vy": 0,
+      "vz": 0
+    },
+    "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+    "log": []
+  },
+  "coast": {
+    "module": "soccer",
+    "status": "playing",
+    "running": false,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 94,
+      "triangles": 97202,
+      "staticDrawCallsSaved": 350
+    },
+    "score": 0,
+    "goal": 3,
+    "remaining": 89,
+    "elapsed": 1,
+    "boost": 94.2,
+    "boosting": false,
+    "friction": 20,
+    "restitution": 72,
+    "cameraMode": "chase",
+    "speed": 8.11,
+    "cameraFov": 68.65,
+    "cameraTarget": {
+      "x": 0,
+      "y": 1.35,
+      "z": 5.447
+    },
+    "cameraPosition": {
+      "x": -0.7,
+      "y": 3.875,
+      "z": 19.055
+    },
+    "collisions": 0,
+    "jumps": 0,
+    "maxBallHeight": 1.05,
+    "car": {
+      "x": 0,
+      "y": 0.65,
+      "z": 10.714,
+      "vx": 0,
+      "vy": 0,
+      "vz": -8.108,
+      "yaw": 0
+    },
+    "ball": {
+      "x": 0,
+      "y": 1.05,
+      "z": 8,
+      "vx": 0,
+      "vy": 0,
+      "vz": 0
+    },
+    "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+    "log": []
+  },
+  "collision": {
+    "module": "soccer",
+    "status": "playing",
+    "running": false,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 97,
+      "triangles": 103078,
+      "staticDrawCallsSaved": 350
+    },
+    "score": 0,
+    "goal": 3,
+    "remaining": 88.7,
+    "elapsed": 1.3,
+    "boost": 90.7,
+    "boosting": true,
+    "friction": 20,
+    "restitution": 72,
+    "cameraMode": "chase",
+    "speed": 10.56,
+    "cameraFov": 69.23,
+    "cameraTarget": {
+      "x": 0,
+      "y": 1.35,
+      "z": 3.424
+    },
+    "cameraPosition": {
+      "x": -0.7,
+      "y": 3.858,
+      "z": 16.849
+    },
+    "collisions": 1,
+    "jumps": 0,
+    "maxBallHeight": 1.2,
+    "car": {
+      "x": 0,
+      "y": 0.65,
+      "z": 8.698,
+      "vx": 0,
+      "vy": 0,
+      "vz": -10.557,
+      "yaw": 0
+    },
+    "ball": {
+      "x": 0,
+      "y": 1.189,
+      "z": 5.932,
+      "vx": 0,
+      "vy": -0.407,
+      "vz": -9.353
+    },
+    "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+    "log": []
+  },
+  "ballCamera": {
+    "module": "soccer",
+    "status": "playing",
+    "running": false,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 97,
+      "triangles": 103078,
+      "staticDrawCallsSaved": 350
+    },
+    "score": 0,
+    "goal": 3,
+    "remaining": 88.7,
+    "elapsed": 1.3,
+    "boost": 90.7,
+    "boosting": true,
+    "friction": 20,
+    "restitution": 72,
+    "cameraMode": "ball",
+    "speed": 10.56,
+    "cameraFov": 69.47,
+    "cameraTarget": {
+      "x": 0,
+      "y": 1.301,
+      "z": 4.182
+    },
+    "cameraPosition": {
+      "x": -0.7,
+      "y": 3.872,
+      "z": 16.653
+    },
+    "collisions": 1,
+    "jumps": 0,
+    "maxBallHeight": 1.2,
+    "car": {
+      "x": 0,
+      "y": 0.65,
+      "z": 8.698,
+      "vx": 0,
+      "vy": 0,
+      "vz": -10.557,
+      "yaw": 0
+    },
+    "ball": {
+      "x": 0,
+      "y": 1.189,
+      "z": 5.932,
+      "vx": 0,
+      "vy": -0.407,
+      "vz": -9.353
+    },
+    "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+    "log": []
+  },
+  "reverse": {
+    "module": "soccer",
+    "status": "playing",
+    "running": false,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 95,
+      "triangles": 97370,
+      "staticDrawCallsSaved": 350
+    },
+    "score": 0,
+    "goal": 3,
+    "remaining": 89.8,
+    "elapsed": 0.2,
+    "boost": 100,
+    "boosting": false,
+    "friction": 20,
+    "restitution": 72,
+    "cameraMode": "chase",
+    "speed": 2.76,
+    "cameraFov": 66.25,
+    "cameraTarget": {
+      "x": 0,
+      "y": 1.35,
+      "z": 12.333
+    },
+    "cameraPosition": {
+      "x": -0.7,
+      "y": 3.684,
+      "z": 23.624
+    },
+    "collisions": 0,
+    "jumps": 0,
+    "maxBallHeight": 1.05,
+    "car": {
+      "x": 0,
+      "y": 0.65,
+      "z": 17.249,
+      "vx": 0,
+      "vy": 0,
+      "vz": 2.757,
+      "yaw": 0
+    },
+    "ball": {
+      "x": 0,
+      "y": 1.05,
+      "z": 8,
+      "vx": 0,
+      "vy": 0,
+      "vz": 0
+    },
+    "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+    "log": []
+  },
+  "contactCameraDelta": 0.19649936386665628
+}

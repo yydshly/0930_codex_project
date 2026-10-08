@@ -1,0 +1,121 @@
+{
+  "checkedAt": "2026-10-02",
+  "results": [
+    {
+      "check": "three goals through actual driving only",
+      "ok": true,
+      "state": {
+        "module": "soccer",
+        "status": "won",
+        "running": false,
+        "renderer": "webgl",
+        "score": 3,
+        "goal": 3,
+        "remaining": 76.5,
+        "elapsed": 13.5,
+        "boost": 100,
+        "boosting": false,
+        "friction": 20,
+        "restitution": 72,
+        "cameraMode": "chase",
+        "cameraPosition": {
+          "x": 4.563,
+          "y": 4.85,
+          "z": 16.479
+        },
+        "collisions": 3,
+        "jumps": 0,
+        "maxBallHeight": 1.684,
+        "car": {
+          "x": 3.196,
+          "y": 0.65,
+          "z": 8.597,
+          "vx": 0,
+          "vy": 0,
+          "vz": 0,
+          "yaw": -0.172
+        },
+        "ball": {
+          "x": -1.733,
+          "y": 1.05,
+          "z": -27.047,
+          "vx": -1.294,
+          "vy": 0,
+          "vz": -9.58
+        },
+        "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+        "log": [
+          {
+            "time": 3,
+            "action": "进球",
+            "score": 1,
+            "friction": 20,
+            "restitution": 72
+          },
+          {
+            "time": 8.2,
+            "action": "进球",
+            "score": 2,
+            "friction": 20,
+            "restitution": 72
+          },
+          {
+            "time": 13.5,
+            "action": "进球",
+            "score": 3,
+            "friction": 20,
+            "restitution": 72
+          }
+        ]
+      }
+    },
+    {
+      "check": "90-second real timeout loss",
+      "ok": true,
+      "state": {
+        "module": "soccer",
+        "status": "lost",
+        "running": false,
+        "renderer": "webgl",
+        "score": 0,
+        "goal": 3,
+        "remaining": 0,
+        "elapsed": 90,
+        "boost": 100,
+        "boosting": false,
+        "friction": 20,
+        "restitution": 72,
+        "cameraMode": "chase",
+        "cameraPosition": {
+          "x": 0,
+          "y": 4.85,
+          "z": 25
+        },
+        "collisions": 0,
+        "jumps": 0,
+        "maxBallHeight": 1.05,
+        "car": {
+          "x": 0,
+          "y": 0.65,
+          "z": 17,
+          "vx": 0,
+          "vy": 0,
+          "vz": 0,
+          "yaw": 0
+        },
+        "ball": {
+          "x": 0,
+          "y": 1.05,
+          "z": 8,
+          "vx": 0,
+          "vy": 0,
+          "vz": 0
+        },
+        "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+        "log": []
+      }
+    }
+  ],
+  "errors": [],
+  "testPreparationNote": "First WebGL-unavailable probe only blocked webgl/webgl2, missed experimental-webgl, and failed its renderer assertion. Final compatibility probe blocks all context names containing webgl; see reference-games-final.json."
+}

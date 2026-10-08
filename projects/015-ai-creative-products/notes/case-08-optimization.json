@@ -1,0 +1,153 @@
+{
+  "caseId": 8,
+  "sourceUrl": "https://x.com/AugustCastilIo/status/2105350465001029697",
+  "sourceTarget": "原片软胶角色在触碰时保留头、耳根与身体的连续轮廓，眼口与触点高光跟着软胶变化；这种即时响应和材质是本例的参考目标，未推断原作求解器。",
+  "diagnosis": "上一版猫与橙团近圆球，兔耳尖长、白脚与薄耳片分离。单纯降低绘制开销没有解决角色设计；本轮按各自正侧面轮廓重新制作主体。",
+  "priority": "先把三只角色的形体和贴面表情作为独立美术目标，再校准软胶高光、短接触影与真实拖揉。",
+  "changes": [
+    "粉兔收短并加厚圆耳，重新配比头身、手脚与睫毛；头、耳根和四肢仍属于一份封闭连续外皮。",
+    "橙团由宽扁双叶包状体和侧折组成，降低顶部柄、调整两侧褶线；不再用圆球加小球表示主体。",
+    "薄荷猫使用宽脸、低重心、短耳和连续白脚色区；白脚不再是额外拼上的椭球。弧形闭眼、鼻口和腮红按本例表情校准。",
+    "表情曲面贴到实际外皮上，猫口贴在白色口鼻前；外皮与表情沿同一局部形变场变化，避免拖揉时留在空中。",
+    "用本例宽面灯反射和更柔和的清漆高光，配合浅粉背景与短接触影；保留原作同样可见的光泽，而非统一改成哑光。"
+  ],
+  "verify": [
+    "新模型实际正面与侧面截图已检查，原作比较使用保存的原帖缩略图。",
+    "三只新外皮闭合、体积有限；真实射线分别命中兔头、橙团身体、猫身体，大幅向右拖揉并恢复，其他角色未被同时拖动。",
+    "三次真实拖揉的采样最小雅可比均为正，网格有界体积补偿恢复到近1；这些样本不证明完整软体物理。",
+    "实际下载JSON保留三只角色的触碰记录，重置清空接触状态；390px下只显示当前猫且无横向溢出。",
+    "本轮14项针对检查通过，无脚本错误或本地资源缺失；验收针对功能与模型连通性，画面完成度以原作对照继续判断。"
+  ],
+  "remaining": [
+    "新轮廓更接近原作，但包体的折痕、耳内贴面和足部色区仍需更细的造型；不会将这一轮写成与原作等质。",
+    "没有复现原作新增、材料混合与黏液；仍是连续几何场、局部弹簧和有界补偿，没有压力求解、自碰撞或严格物理守恒。",
+    "本轮未测量真机帧率；历史软件渲染性能记录只对应旧模型，不作为新角色的性能结论。"
+  ],
+  "verificationFile": "notes/case-08-v15-art-verification.json",
+  "evidenceFiles": [
+    "assets/qa/quality-reset-v15/08-rest-after.png",
+    "assets/qa/quality-reset-v15/08-side-after.png",
+    "assets/qa/quality-reset-v15/08-rabbit-drag-after.png",
+    "assets/qa/quality-reset-v15/08-dumpling-drag-after.png",
+    "assets/qa/quality-reset-v15/08-cat-drag-after.png",
+    "assets/qa/quality-reset-v15/08-mobile-after.png",
+    "notes/case-08-v15-record.json"
+  ],
+  "historicalV13Performance": {
+    "condition": "One headless Chromium instance and one page, no concurrent project Chromium/WebGL QA. Before and after sequentially use the exact same browser build, viewport, DPR, unchanged assets and trusted Playwright pointer moves. Instrumentation times application geometry work and renderer API calls, not GPU fences.",
+    "before": {
+      "movingWallMs": 30680,
+      "moves": 24,
+      "events": 24,
+      "raf": {
+        "samples": 73,
+        "minMs": 299.9,
+        "medianMs": 333.3,
+        "p95Ms": 650,
+        "maxMs": 683.3
+      },
+      "pointerHandlers": {
+        "samples": 24,
+        "minMs": 13.4,
+        "medianMs": 16.1,
+        "p95Ms": 18.3,
+        "maxMs": 20.5
+      },
+      "geometry": {
+        "samples": 97,
+        "minMs": 9.5,
+        "medianMs": 12.8,
+        "p95Ms": 15.7,
+        "maxMs": 17
+      },
+      "renderSubmit": {
+        "samples": 97,
+        "minMs": 1.2,
+        "medianMs": 1.8,
+        "p95Ms": 3.3,
+        "maxMs": 4.1
+      },
+      "drawTotal": {
+        "samples": 97,
+        "minMs": 10.7,
+        "medianMs": 14.8,
+        "p95Ms": 18.2,
+        "maxMs": 20
+      },
+      "movingRendering": {
+        "drawCalls": 92,
+        "triangles": 238642,
+        "pixelRatio": 0.7069,
+        "defaultPixelRatio": 1,
+        "canvasPixels": {
+          "width": 960,
+          "height": 367
+        },
+        "interactiveResolutionLimit": 960,
+        "staticDrawCallsSaved": 0
+      }
+    },
+    "after": {
+      "movingWallMs": 9996,
+      "moves": 24,
+      "events": 24,
+      "raf": {
+        "samples": 73,
+        "minMs": 16.6,
+        "medianMs": 200,
+        "p95Ms": 216.7,
+        "maxMs": 216.7
+      },
+      "pointerHandlers": {
+        "samples": 24,
+        "minMs": 0,
+        "medianMs": 0.2,
+        "p95Ms": 0.4,
+        "maxMs": 0.5
+      },
+      "geometry": {
+        "samples": 48,
+        "minMs": 0,
+        "medianMs": 12.4,
+        "p95Ms": 15.2,
+        "maxMs": 16
+      },
+      "renderSubmit": {
+        "samples": 48,
+        "minMs": 0.5,
+        "medianMs": 1,
+        "p95Ms": 2,
+        "maxMs": 3.1
+      },
+      "drawTotal": {
+        "samples": 48,
+        "minMs": 0.6,
+        "medianMs": 13,
+        "p95Ms": 15.8,
+        "maxMs": 17
+      },
+      "movingRendering": {
+        "drawCalls": 16,
+        "triangles": 106354,
+        "pixelRatio": 0.7069,
+        "defaultPixelRatio": 1,
+        "canvasPixels": {
+          "width": 960,
+          "height": 367
+        },
+        "interactiveResolutionLimit": 960,
+        "attachmentBatches": 3,
+        "skinTriangles": 49288,
+        "attachmentTriangles": 28480,
+        "analyticNormals": true,
+        "drawUpdates": {
+          "submitted": 61,
+          "skipped": 29,
+          "lastGeometryMs": 0.09999999403953552,
+          "lastSubmitMs": 1.2000000178813934
+        },
+        "staticDrawCallsSaved": 0
+      }
+    }
+  }
+}

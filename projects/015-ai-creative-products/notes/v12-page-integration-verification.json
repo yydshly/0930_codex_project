@@ -1,0 +1,604 @@
+{
+  "checkedAt": "2026-10-03T00:00:49.089Z",
+  "renderEnvironment": "Headless Chromium, ANGLE SwiftShader; not physical-device performance evidence",
+  "checks": [
+    "十项保留各自完整独立分析",
+    "3 主站显示该项目最终独立诊断与重点",
+    "03 主站编辑命题并在15秒保留纸页接力",
+    "03 正反寻址共享同一检验到反馈记录",
+    "03 反馈记录接到流程曲线",
+    "03 实际脚本下载保存编辑内容和相同接力状态",
+    "03 体验导出包含对应来源、独立诊断与实际时间线",
+    "9 主站显示该项目最终独立诊断与重点",
+    "09 新岸线、固体岩石与植被进入实际嵌入页",
+    "09 天气和密度改变实际环境状态",
+    "09 体验导出保留岸线与实际天气、对应独立分析",
+    "09 原有登船与坐姿保留",
+    "09 船上环顾保持船首方向",
+    "09 隐藏主站演示后环境时钟暂停",
+    "09 返回主站恢复环境并保持登船",
+    "10 主站显示该项目最终独立诊断与重点",
+    "10 实际轮胎接地且轮组连接正确",
+    "10 实际加速驱动车轮滚动及车身响应",
+    "10 体验导出包含实际车辆反馈、球相机与对应分析",
+    "10 离开演示后比赛、车球和视觉反馈暂停",
+    "10 返回演示恢复真实比赛时钟",
+    "3 主站显示该项目最终独立诊断与重点",
+    "3 主站与嵌入页390px均无横向溢出",
+    "9 主站显示该项目最终独立诊断与重点",
+    "9 主站与嵌入页390px均无横向溢出",
+    "10 主站显示该项目最终独立诊断与重点",
+    "10 主站与嵌入页390px均无横向溢出",
+    "相关主站与嵌入页没有脚本错误或本地资源缺失"
+  ],
+  "errors": [],
+  "missing": [],
+  "samples": {
+    "case03": {
+      "theme": "gold",
+      "seconds": 5,
+      "time": 15,
+      "playing": false,
+      "scenes": [
+        {
+          "title": "研究需要可复查的命题",
+          "text": "一次演示，\n等于一件产品吗？"
+        },
+        {
+          "title": "找出边界",
+          "text": "能运行，只是起点。\n换一份输入，还能得到可靠结果吗？"
+        },
+        {
+          "title": "给出结论",
+          "text": "留下反馈，复用流程。\n让每一次创作，成为下一次的起点。"
+        }
+      ],
+      "sequence": {
+        "shot": 3,
+        "progress": 0,
+        "local": 0,
+        "bridge": {
+          "from": 2,
+          "to": 3,
+          "progress": 0.5,
+          "duration": 1.1,
+          "sourceProgress": 1,
+          "targetProgress": 0
+        },
+        "paper": {
+          "x": 337.5,
+          "y": 345.5,
+          "scale": 0.7
+        },
+        "record": null,
+        "continuity": {
+          "from": 3,
+          "to": 4,
+          "progress": 0.5,
+          "role": "命题档案 → 边界检验"
+        }
+      },
+      "continuityPlan": [
+        {
+          "from": 3,
+          "to": 4,
+          "role": "命题纸页留在检验旁，第二段条件进入墙镜头"
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "role": "同一金色记录点把检验送入制作、检查、调整循环"
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "role": "记录点接到可复用流程曲线的起点，继续沿曲线积累"
+        }
+      ],
+      "totalSeconds": 30,
+      "currentScene": 2,
+      "currentPointIndices": [
+        1
+      ],
+      "currentShot": 4,
+      "exporting": false,
+      "recording": {
+        "phase": "idle",
+        "progress": 0
+      }
+    },
+    "case09": {
+      "weather": "clear",
+      "hour": 15,
+      "density": 24,
+      "running": true,
+      "time": 2.188000000000002,
+      "visited": [
+        "solar"
+      ],
+      "selected": "solar",
+      "solar": 71,
+      "water": 54,
+      "renderer": "webgl",
+      "fireLit": true,
+      "boatBoarded": true,
+      "boatHeading": 3.141592653589793,
+      "boatSpeed": 0,
+      "boatDistance": 0,
+      "boatBlocked": false,
+      "boatBlockedBy": null,
+      "boatSteeringBlocked": false,
+      "interactions": [
+        {
+          "action": "board-boat",
+          "at": 0.6548000000000003
+        }
+      ],
+      "arrivalLog": [
+        {
+          "id": "solar",
+          "position": {
+            "x": -12,
+            "z": 3
+          },
+          "at": 0.59
+        }
+      ],
+      "boat": {
+        "x": -15,
+        "z": 7,
+        "heading": 3.141592653589793,
+        "speed": 0,
+        "distance": 0,
+        "blocked": false
+      },
+      "weatherName": "晴天",
+      "mode": "first-person",
+      "camera": {
+        "x": -15,
+        "z": 7,
+        "yaw": 2.1575926535897922,
+        "pitch": -0.13
+      },
+      "cameraWorld": {
+        "x": -15,
+        "y": 1.1939156192891238,
+        "z": 5.95
+      },
+      "boatView": {
+        "mode": "seated",
+        "eyeHeight": 1.1,
+        "lookOffset": -0.9840000000000009,
+        "headingIndependentOfLook": true
+      },
+      "camper": {
+        "x": -15,
+        "z": 7
+      },
+      "environmentDetail": {
+        "shoreline": "continuous damp-sand and pebble transition",
+        "shoreLength": 72,
+        "wetSandWidth": 3.36,
+        "wetSandRoughness": 0.63,
+        "rockCount": 24,
+        "pebbleInstances": 170,
+        "solidRockColliders": 24,
+        "shoreRocks": [
+          {
+            "x": -5.207636708888082,
+            "z": -30.955041554807725,
+            "radius": 1.577669443001663
+          },
+          {
+            "x": -5.338645660003513,
+            "z": -30.949027399485026,
+            "radius": 1.1015227539516266
+          },
+          {
+            "x": -6.05733234116858,
+            "z": -29.12605237609339,
+            "radius": 0.4730797858471794
+          },
+          {
+            "x": -5.990951328458069,
+            "z": -21.95199984801188,
+            "radius": 1.8463816513366826
+          },
+          {
+            "x": -7.266357338977229,
+            "z": -22.16608737843678,
+            "radius": 0.5836810401302586
+          },
+          {
+            "x": -5.509755064577417,
+            "z": -21.919641836657785,
+            "radius": 0.8198605462870192
+          },
+          {
+            "x": -7.824227019590734,
+            "z": -16.694973301324037,
+            "radius": 1.6514991438682183
+          },
+          {
+            "x": -7.145282608202187,
+            "z": -16.92858891601543,
+            "radius": 0.501877071427067
+          },
+          {
+            "x": -7.997643936033226,
+            "z": -15.020537587181234,
+            "radius": 0.4911963176645304
+          },
+          {
+            "x": -6.525739559230102,
+            "z": -8.665906285555947,
+            "radius": 1.9726902575722804
+          },
+          {
+            "x": -7.115826233724851,
+            "z": -9.496354367859992,
+            "radius": 0.8687811671912494
+          },
+          {
+            "x": -6.391047484746196,
+            "z": -8.624666119669254,
+            "radius": 0.5661454064903273
+          },
+          {
+            "x": -7.407715858086946,
+            "z": -2.446311424250073,
+            "radius": 1.9391814105950123
+          },
+          {
+            "x": -7.592431672774924,
+            "z": -3.685138658885973,
+            "radius": 0.682120185656585
+          },
+          {
+            "x": -8.134937009833031,
+            "z": -2.4002750476824817,
+            "radius": 0.5988334355939491
+          },
+          {
+            "x": -4.714947126589726,
+            "z": 11.488899368037377,
+            "radius": 1.4021087005940347
+          },
+          {
+            "x": -5.303961027001054,
+            "z": 11.577615978454814,
+            "radius": 0.6739520589950979
+          },
+          {
+            "x": -6.113082982940736,
+            "z": 10.990102341296247,
+            "radius": 0.525266986658114
+          },
+          {
+            "x": -5.08605584238375,
+            "z": 20.07306771350379,
+            "radius": 1.3912114352092253
+          },
+          {
+            "x": -6.460354570803496,
+            "z": 20.23360440817997,
+            "radius": 0.4656095601484269
+          },
+          {
+            "x": -4.957670564426667,
+            "z": 19.004817441482857,
+            "radius": 0.5845337504973018
+          },
+          {
+            "x": -6.962208064812631,
+            "z": 28.246199793504736,
+            "radius": 1.9531125755730203
+          },
+          {
+            "x": -8.29490829735261,
+            "z": 29.37590636618054,
+            "radius": 0.5290974407280772
+          },
+          {
+            "x": -6.740420228948478,
+            "z": 29.053197075103594,
+            "radius": 0.49457395635784973
+          }
+        ],
+        "boatRockBoundary": "oriented ellipse (1m half-width, 2.1m half-length) expanded by each solid rock radius; no rigid-body contact",
+        "undergrowthPockets": 104,
+        "visibleUndergrowthPockets": 84,
+        "totalBroadLeaves": 728,
+        "visibleBroadLeaves": 582,
+        "weather": "clear",
+        "hour": 15,
+        "windStrength": 1,
+        "water": "view-distance filtered procedural ripples; sky HDR reflection; no scene refraction",
+        "assets": "original procedural mesh and existing CC0 sand/stone maps",
+        "visiblePalms": 30,
+        "totalPalms": 50,
+        "grassInstances": 1440,
+        "waterState": {
+          "roughWeather": 0,
+          "light": 0.7071067811865476,
+          "skyReflection": true,
+          "animationTime": 2.188000000000002
+        }
+      },
+      "exploration": {
+        "distance": 0,
+        "steps": 0,
+        "renderCount": 97,
+        "drawCalls": 13,
+        "triangles": 90460,
+        "pixelRatio": 1
+      },
+      "rules": {
+        "transmission": {
+          "clear": 1,
+          "cloud": 0.45,
+          "rain": 0.2,
+          "storm": 0.12
+        },
+        "solar": "optional illustrative daylight*transmission*100",
+        "water": "optional illustrative min(100,30+rainIncrement+density)"
+      },
+      "reference": {
+        "workflow": "Native Three.js environment integration",
+        "assets": "Original detailed procedural geometry, Poly Haven CC0 photographed PBR and HDR sky"
+      }
+    },
+    "case10": {
+      "grounded": {
+        "module": "soccer",
+        "status": "ready",
+        "running": false,
+        "renderer": "webgl",
+        "rendering": {
+          "drawCalls": 100,
+          "triangles": 97510,
+          "staticDrawCallsSaved": 350
+        },
+        "score": 0,
+        "goal": 3,
+        "remaining": 90,
+        "elapsed": 0,
+        "boost": 100,
+        "boosting": false,
+        "friction": 20,
+        "restitution": 72,
+        "cameraMode": "chase",
+        "speed": 0,
+        "cameraFov": 66,
+        "cameraTarget": {
+          "x": 0,
+          "y": 1.35,
+          "z": 12.5
+        },
+        "cameraPosition": {
+          "x": -0.7,
+          "y": 3.65,
+          "z": 23.4
+        },
+        "collisions": 0,
+        "jumps": 0,
+        "vehicleFeedback": {
+          "grounded": true,
+          "frontMinusRearHeight": 0,
+          "rightMinusLeftHeight": 0,
+          "bodyPitch": 0,
+          "bodyRoll": 0,
+          "bodyHeave": 0,
+          "tireRadius": 0.38,
+          "maxWheelAxisVertical": 0,
+          "tireBottom": 0,
+          "suspensionLinkMaxError": 0,
+          "brakeCount": 0,
+          "lastBrakeSpeedDelta": 0,
+          "lastBrakeMinPitch": 0,
+          "landingCount": 0,
+          "lastLandingSpeed": 0,
+          "lastLandingCompression": 0,
+          "contactCount": 0,
+          "lastContactImpulse": 0,
+          "lastContactPitchKick": 0,
+          "lastContactRollKick": 0,
+          "contactAge": null,
+          "scope": "Visual spring response from actual acceleration, contact impulse and landing velocity; simplified vehicle contact remains unchanged."
+        },
+        "wheelRotationX": 0,
+        "ballRotation": {
+          "x": 0,
+          "z": 0
+        },
+        "maxBallHeight": 1.05,
+        "car": {
+          "x": 0,
+          "y": 0.65,
+          "z": 17,
+          "vx": 0,
+          "vy": 0,
+          "vz": 0,
+          "yaw": 0
+        },
+        "ball": {
+          "x": 0,
+          "y": 1.05,
+          "z": 8,
+          "vx": 0,
+          "vy": 0,
+          "vz": 0
+        },
+        "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+        "log": []
+      },
+      "driving": {
+        "module": "soccer",
+        "status": "playing",
+        "running": true,
+        "renderer": "webgl",
+        "rendering": {
+          "drawCalls": 99,
+          "triangles": 97498,
+          "staticDrawCallsSaved": 350
+        },
+        "score": 0,
+        "goal": 3,
+        "remaining": 89.9,
+        "elapsed": 0.1,
+        "boost": 100,
+        "boosting": false,
+        "friction": 20,
+        "restitution": 72,
+        "cameraMode": "chase",
+        "speed": 1.43,
+        "cameraFov": 66.07,
+        "cameraTarget": {
+          "x": 0,
+          "y": 1.35,
+          "z": 12.391
+        },
+        "cameraPosition": {
+          "x": -0.7,
+          "y": 3.66,
+          "z": 23.422
+        },
+        "collisions": 0,
+        "jumps": 0,
+        "vehicleFeedback": {
+          "grounded": true,
+          "frontMinusRearHeight": 0.0278,
+          "rightMinusLeftHeight": 0,
+          "bodyPitch": 0.0088,
+          "bodyRoll": 0,
+          "bodyHeave": 0,
+          "tireRadius": 0.38,
+          "maxWheelAxisVertical": 0,
+          "tireBottom": 0,
+          "suspensionLinkMaxError": 0,
+          "brakeCount": 0,
+          "lastBrakeSpeedDelta": 0,
+          "lastBrakeMinPitch": 0,
+          "landingCount": 0,
+          "lastLandingSpeed": 0,
+          "lastLandingCompression": 0,
+          "contactCount": 0,
+          "lastContactImpulse": 0,
+          "lastContactPitchKick": 0,
+          "lastContactRollKick": 0,
+          "contactAge": null,
+          "scope": "Visual spring response from actual acceleration, contact impulse and landing velocity; simplified vehicle contact remains unchanged."
+        },
+        "wheelRotationX": -0.1741,
+        "ballRotation": {
+          "x": 0,
+          "z": 0
+        },
+        "maxBallHeight": 1.05,
+        "car": {
+          "x": 0,
+          "y": 0.65,
+          "z": 16.934,
+          "vx": 0,
+          "vy": 0,
+          "vz": -1.427,
+          "yaw": 0
+        },
+        "ball": {
+          "x": 0,
+          "y": 1.05,
+          "z": 8,
+          "vx": 0,
+          "vy": 0,
+          "vz": 0
+        },
+        "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+        "log": []
+      },
+      "exported": {
+        "module": "soccer",
+        "status": "playing",
+        "running": true,
+        "renderer": "webgl",
+        "rendering": {
+          "drawCalls": 99,
+          "triangles": 97498,
+          "staticDrawCallsSaved": 350
+        },
+        "score": 0,
+        "goal": 3,
+        "remaining": 89.8,
+        "elapsed": 0.2,
+        "boost": 100,
+        "boosting": false,
+        "friction": 20,
+        "restitution": 72,
+        "cameraMode": "ball",
+        "speed": 1.26,
+        "cameraFov": 66.19,
+        "cameraTarget": {
+          "x": 0,
+          "y": 1.192,
+          "z": 10.032
+        },
+        "cameraPosition": {
+          "x": -0.7,
+          "y": 3.674,
+          "z": 23.381
+        },
+        "collisions": 0,
+        "jumps": 0,
+        "vehicleFeedback": {
+          "grounded": true,
+          "frontMinusRearHeight": 0.0465,
+          "rightMinusLeftHeight": 0,
+          "bodyPitch": 0.0148,
+          "bodyRoll": 0,
+          "bodyHeave": 0,
+          "tireRadius": 0.38,
+          "maxWheelAxisVertical": 0,
+          "tireBottom": 0,
+          "suspensionLinkMaxError": 0,
+          "brakeCount": 0,
+          "lastBrakeSpeedDelta": 0,
+          "lastBrakeMinPitch": 0,
+          "landingCount": 0,
+          "lastLandingSpeed": 0,
+          "lastLandingCompression": 0,
+          "contactCount": 0,
+          "lastContactImpulse": 0,
+          "lastContactPitchKick": 0,
+          "lastContactRollKick": 0,
+          "contactAge": null,
+          "scope": "Visual spring response from actual acceleration, contact impulse and landing velocity; simplified vehicle contact remains unchanged."
+        },
+        "wheelRotationX": -0.5846,
+        "ballRotation": {
+          "x": 0,
+          "z": 0
+        },
+        "maxBallHeight": 1.05,
+        "car": {
+          "x": 0,
+          "y": 0.65,
+          "z": 16.778,
+          "vx": 0,
+          "vy": 0,
+          "vz": -1.261,
+          "yaw": 0
+        },
+        "ball": {
+          "x": 0,
+          "y": 1.05,
+          "z": 8,
+          "vx": 0,
+          "vy": 0,
+          "vz": 0
+        },
+        "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+        "log": []
+      }
+    }
+  },
+  "failure": null
+}

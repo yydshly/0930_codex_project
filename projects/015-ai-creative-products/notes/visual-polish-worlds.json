@@ -1,0 +1,216 @@
+{
+  "date": "2026-10-02T14:21:24.619Z",
+  "checks": [
+    {
+      "name": "7 real WebGL",
+      "pass": true,
+      "detail": "webgl"
+    },
+    {
+      "name": "7 keyboard moves actual pose",
+      "pass": true,
+      "detail": {
+        "before": {
+          "x": 2.5,
+          "z": 10.1,
+          "yaw": 0.3,
+          "pitch": -0.025
+        },
+        "after": {
+          "x": 2.106066363364796,
+          "z": 8.82651964607336,
+          "yaw": 0.3,
+          "pitch": -0.025
+        }
+      }
+    },
+    {
+      "name": "07 all exhibits recorded",
+      "pass": true,
+      "detail": [
+        {
+          "id": "visual-systems",
+          "title": "视觉系统展位",
+          "visitedAt": "2026-10-02T14:21:36.448Z"
+        },
+        {
+          "id": "product-lab",
+          "title": "产品原型展位",
+          "visitedAt": "2026-10-02T14:21:40.119Z"
+        },
+        {
+          "id": "research-notes",
+          "title": "研究档案展位",
+          "visitedAt": "2026-10-02T14:21:40.668Z"
+        }
+      ]
+    },
+    {
+      "name": "07 night state",
+      "pass": true
+    },
+    {
+      "name": "07 density state",
+      "pass": true
+    },
+    {
+      "name": "07 export reflects task and environment",
+      "pass": true
+    },
+    {
+      "name": "07 overhead layout retained",
+      "pass": true
+    },
+    {
+      "name": "7 mobile no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "7 real PNG export",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "height": 400
+      }
+    },
+    {
+      "name": "9 real WebGL",
+      "pass": true,
+      "detail": "webgl"
+    },
+    {
+      "name": "9 keyboard moves actual pose",
+      "pass": true,
+      "detail": {
+        "before": {
+          "x": 0.5,
+          "z": 11.8,
+          "yaw": 0.55,
+          "pitch": -0.025
+        },
+        "after": {
+          "x": -0.32323238556578837,
+          "z": 10.457273877756261,
+          "yaw": 0.55,
+          "pitch": -0.025
+        }
+      }
+    },
+    {
+      "name": "09 fire actually toggles",
+      "pass": true
+    },
+    {
+      "name": "09 boards boat",
+      "pass": true
+    },
+    {
+      "name": "09 driving moves boat",
+      "pass": true,
+      "detail": {
+        "before": {
+          "x": -15,
+          "z": 7,
+          "heading": 0
+        },
+        "after": {
+          "x": -15,
+          "z": 6.784049999999998,
+          "heading": 0
+        }
+      }
+    },
+    {
+      "name": "09 disembarks",
+      "pass": true
+    },
+    {
+      "name": "09 arrival task retained",
+      "pass": true
+    },
+    {
+      "name": "09 storm/night state",
+      "pass": true
+    },
+    {
+      "name": "09 hidden stops renderer",
+      "pass": true,
+      "detail": {
+        "before": 165,
+        "after": 165
+      }
+    },
+    {
+      "name": "09 visible resumes renderer",
+      "pass": true
+    },
+    {
+      "name": "09 explicit pause freezes environment",
+      "pass": true
+    },
+    {
+      "name": "9 mobile no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "9 real PNG export",
+      "pass": true,
+      "detail": {
+        "width": 362,
+        "height": 460
+      }
+    },
+    {
+      "name": "7 explicit fallback",
+      "pass": true,
+      "detail": "2d-fallback"
+    },
+    {
+      "name": "9 explicit fallback",
+      "pass": true,
+      "detail": "canvas"
+    }
+  ],
+  "errors": [],
+  "screens": [
+    "F:/codex_project/0930_codex_project/projects/015-ai-creative-products/assets/qa/visual-polish-worlds/07-after-desktop.png",
+    "F:/codex_project/0930_codex_project/projects/015-ai-creative-products/assets/qa/visual-polish-worlds/07-after-full.png",
+    "F:/codex_project/0930_codex_project/projects/015-ai-creative-products/assets/qa/visual-polish-worlds/07-night.png",
+    "F:/codex_project/0930_codex_project/projects/015-ai-creative-products/assets/qa/visual-polish-worlds/07-overview.png",
+    "F:/codex_project/0930_codex_project/projects/015-ai-creative-products/assets/qa/visual-polish-worlds/07-after-mobile.png",
+    "F:/codex_project/0930_codex_project/projects/015-ai-creative-products/assets/qa/visual-polish-worlds/07-mobile-scene.png",
+    "F:/codex_project/0930_codex_project/projects/015-ai-creative-products/assets/qa/visual-polish-worlds/09-after-desktop.png",
+    "F:/codex_project/0930_codex_project/projects/015-ai-creative-products/assets/qa/visual-polish-worlds/09-after-full.png",
+    "F:/codex_project/0930_codex_project/projects/015-ai-creative-products/assets/qa/visual-polish-worlds/09-boat.png",
+    "F:/codex_project/0930_codex_project/projects/015-ai-creative-products/assets/qa/visual-polish-worlds/09-night-storm.png",
+    "F:/codex_project/0930_codex_project/projects/015-ai-creative-products/assets/qa/visual-polish-worlds/09-after-mobile.png",
+    "F:/codex_project/0930_codex_project/projects/015-ai-creative-products/assets/qa/visual-polish-worlds/09-mobile-scene.png"
+  ],
+  "render": [
+    {
+      "id": 7,
+      "desktop": {
+        "drawCalls": 322,
+        "triangles": 156022,
+        "pixelRatio": 1
+      }
+    },
+    {
+      "id": 9,
+      "desktop": {
+        "distance": 0,
+        "steps": 0,
+        "renderCount": 50,
+        "drawCalls": 134,
+        "triangles": 123908,
+        "pixelRatio": 1
+      }
+    }
+  ],
+  "scope": {
+    "geometry": "Original authored procedural architecture, pinnate foliage and curved wood boat.",
+    "assets": "Local CC0 photographed color/normal/roughness maps and HDR from Poly Haven.",
+    "water": "Procedural two-scale wave normals, HDR direction reflection, Fresnel highlights, shoreline opacity/caustics/foam and boat ripples. Approximate depth from shore distance; no full scene planar reflection/refraction.",
+    "referenceMedia": "Source screenshots retained for comparison. Source videos are not downloaded."
+  }
+}

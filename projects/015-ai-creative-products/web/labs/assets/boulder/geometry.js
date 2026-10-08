@@ -1,0 +1,1 @@
+export const boulderGeometry={"vertices":4231,"indices":17862,"indexOffset":135392,"bounds":{"min":[-0.7481597065925598,-0.07364296913146973,-0.9484404921531677],"max":[0.5239759087562561,0.9301872253417969,0.8818937540054321]},"nodes":[{"mesh":0,"name":"boulder_01"}],"originalTriangles":66122,"triangles":5954};

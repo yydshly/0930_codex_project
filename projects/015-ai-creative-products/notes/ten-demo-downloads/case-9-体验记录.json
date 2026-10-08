@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-02T11:16:10.607Z",
+  "caseId": 9,
+  "product": "自然场景与因果演练编辑器",
+  "task": "漫游三个观察点，改天气与时刻，比较发电与蓄水反馈。",
+  "state": {
+    "weather": "rain",
+    "hour": 14,
+    "density": 18,
+    "running": false,
+    "time": 0.39999999999999997,
+    "visited": [
+      "solar",
+      "water",
+      "forest"
+    ],
+    "selected": "forest",
+    "solar": 17,
+    "water": 100,
+    "renderer": "webgl",
+    "weatherName": "雨天",
+    "camper": {
+      "x": 0,
+      "z": 5.7
+    },
+    "rules": {
+      "transmission": {
+        "clear": 1,
+        "cloud": 0.45,
+        "rain": 0.2
+      },
+      "solar": "max(0,sin((hour-6)/12*PI))*transmission*100",
+      "water": "min(100,30+(rain?55:0)+density)"
+    }
+  },
+  "source": "https://x.com/maxt3chno/status/2105216139647127750",
+  "scope": "示例规则用于解释交互，未校准真实设备或气象数据。"
+}

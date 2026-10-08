@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-03T12:05:10.084Z",
+  "caseId": 9,
+  "product": "浏览器三维导览与环境演练工具",
+  "task": "近看折射海床、船体和岸石，步行或登船，改变天气与密度并导出实际环境状态。",
+  "state": {
+    "weather": "storm",
+    "hour": 24,
+    "density": 24,
+    "running": false,
+    "time": 11.953400000000286,
+    "visited": [
+      "solar"
+    ],
+    "selected": "solar",
+    "solar": 0,
+    "water": 100,
+    "renderer": "webgl",
+    "fireLit": true,
+    "boatBoarded": true,
+    "boatHeading": 3.141592653589793,
+    "boatSpeed": 0,
+    "boatDistance": 0,
+    "boatBlocked": false,
+    "boatBlockedBy": null,
+    "boatSteeringBlocked": false,
+    "interactions": [
+      {
+        "action": "board-boat",
+        "at": 11.953400000000286
+      }
+    ],
+    "arrivalLog": [
+      {
+        "id": "solar",
+        "position": {
+          "x": -12,
+          "z": 3
+        },
+        "at": 11.95
+      }
+    ],
+    "boat": {
+      "x": -15,
+      "z": 7,
+      "heading": 3.141592653589793,
+      "speed": 0,
+      "distance": 0,
+      "blocked": false
+    },
+    "weatherName": "风暴",
+    "mode": "first-person",
+    "camera": {
+      "x": -15,
+      "z": 7,
+      "yaw": 3.141592653589793,
+      "pitch": -0.13
+    },
+    "cameraWorld": {
+      "x": -15,
+      "y": 1.1472177254516691,
+      "z": 5.95
+    },
+    "boatView": {
+      "mode": "seated",
+      "eyeHeight": 1.1,
+      "lookOffset": 0,
+      "headingIndependentOfLook": true
+    },
+    "camper": {
+      "x": -15,
+      "z": 7
+    },
+    "environmentDetail": {
+      "shoreline": "continuous damp-sand and pebble transition",
+      "shoreLength": 72,
+      "wetSandWidth": 3.36,
+      "wetSandRoughness": 0.44,
+      "rockCount": 24,
+      "pebbleInstances": 170,
+      "solidRockColliders": 24,
+      "shoreRocks": [
+        {
+          "x": -5.207636708888082,
+          "z": -30.955041554807725,
+          "radius": 1.577669443001663
+        },
+        {
+          "x": -5.338645660003513,
+          "z": -30.949027399485026,
+          "radius": 1.1015227539516266
+        },
+        {
+          "x": -6.05733234116858,
+          "z": -29.12605237609339,
+          "radius": 0.4730797858471794
+        },
+        {
+          "x": -5.990951328458069,
+          "z": -21.95199984801188,
+          "radius": 1.8463816513366826
+        },
+        {
+          "x": -7.266357338977229,
+          "z": -22.16608737843678,
+          "radius": 0.5836810401302586
+        },
+        {
+          "x": -5.509755064577417,
+          "z": -21.919641836657785,
+          "radius": 0.8198605462870192
+        },
+        {
+          "x": -7.824227019590734,
+          "z": -16.694973301324037,
+          "radius": 1.6514991438682183
+        },
+        {
+          "x": -7.145282608202187,
+          "z": -16.92858891601543,
+          "radius": 0.501877071427067
+        },
+        {
+          "x": -7.997643936033226,
+          "z": -15.020537587181234,
+          "radius": 0.4911963176645304
+        },
+        {
+          "x": -6.525739559230102,
+          "z": -8.665906285555947,
+          "radius": 1.9726902575722804
+        },
+        {
+          "x": -7.115826233724851,
+          "z": -9.496354367859992,
+          "radius": 0.8687811671912494
+        },
+        {
+          "x": -6.391047484746196,
+          "z": -8.624666119669254,
+          "radius": 0.5661454064903273
+        },
+        {
+          "x": -7.407715858086946,
+          "z": -2.446311424250073,
+          "radius": 1.9391814105950123
+        },
+        {
+          "x": -7.592431672774924,
+          "z": -3.685138658885973,
+          "radius": 0.682120185656585
+        },
+        {
+          "x": -8.134937009833031,
+          "z": -2.4002750476824817,
+          "radius": 0.5988334355939491
+        },
+        {
+          "x": -4.714947126589726,
+          "z": 11.488899368037377,
+          "radius": 1.4021087005940347
+        },
+        {
+          "x": -5.303961027001054,
+          "z": 11.577615978454814,
+          "radius": 0.6739520589950979
+        },
+        {
+          "x": -6.113082982940736,
+          "z": 10.990102341296247,
+          "radius": 0.525266986658114
+        },
+        {
+          "x": -5.08605584238375,
+          "z": 20.07306771350379,
+          "radius": 1.3912114352092253
+        },
+        {
+          "x": -6.460354570803496,
+          "z": 20.23360440817997,
+          "radius": 0.4656095601484269
+        },
+        {
+          "x": -4.957670564426667,
+          "z": 19.004817441482857,
+          "radius": 0.5845337504973018
+        },
+        {
+          "x": -6.962208064812631,
+          "z": 28.246199793504736,
+          "radius": 1.9531125755730203
+        },
+        {
+          "x": -8.29490829735261,
+          "z": 29.37590636618054,
+          "radius": 0.5290974407280772
+        },
+        {
+          "x": -6.740420228948478,
+          "z": 29.053197075103594,
+          "radius": 0.49457395635784973
+        }
+      ],
+      "boatRockBoundary": "oriented ellipse (1m half-width, 2.1m half-length) expanded by each solid rock radius; no rigid-body contact",
+      "undergrowthPockets": 356,
+      "visibleUndergrowthPockets": 285,
+      "totalBroadLeaves": 2492,
+      "visibleBroadLeaves": 1994,
+      "weather": "storm",
+      "hour": 24,
+      "windStrength": 3.4,
+      "submergedStones": 110,
+      "water": "actual submerged-scene refraction and depth attenuation; filtered wave normals, illustrative caustics and sky reflection",
+      "assets": "original procedural mesh and existing CC0 sand/stone maps",
+      "nature": {
+        "broadleafTrees": 15,
+        "visibleBroadleafTrees": 13,
+        "scannedShoreRock": {
+          "loaded": true,
+          "instances": 8,
+          "trianglesPerRock": 5954,
+          "source": "Boulder 01 / Rico Cilliers / Poly Haven / CC0",
+          "lod": "UV-aware spatial clustering from official glTF",
+          "colliders": "original solid-rock envelopes retained"
+        }
+      },
+      "refraction": {
+        "supported": true,
+        "captures": 2772,
+        "width": 874,
+        "height": 384,
+        "method": "actual submerged scene color and depth; screen-space wave distortion and depth attenuation",
+        "boundary": "single camera-space capture, no multiple scattering or physically traced caustics"
+      },
+      "visiblePalms": 74,
+      "totalPalms": 88,
+      "boatArt": {
+        "hull": "pointed bow, broad transom, continuous outer and inner shell",
+        "interior": "frame ribs, floor slats and three weathered benches",
+        "motor": "rounded cowling, transom brackets, tiller, lower unit and propeller",
+        "length": 4.8,
+        "width": 2.08,
+        "scope": "Original conceptual research boat. No source geometry or simulated marine dynamics."
+      },
+      "grassInstances": 1440,
+      "waterState": {
+        "roughWeather": 1,
+        "light": 0.105,
+        "skyReflection": false,
+        "animationTime": 11.953400000000286
+      }
+    },
+    "exploration": {
+      "distance": 0,
+      "steps": 0,
+      "renderCount": 2772,
+      "drawCalls": 68,
+      "triangles": 307745,
+      "pixelRatio": 1.0000000298023224
+    },
+    "rules": {
+      "transmission": {
+        "clear": 1,
+        "cloud": 0.45,
+        "rain": 0.2,
+        "storm": 0.12
+      },
+      "solar": "optional illustrative daylight*transmission*100",
+      "water": "optional illustrative min(100,30+rainIncrement+density)"
+    },
+    "reference": {
+      "workflow": "Native Three.js environment integration",
+      "assets": "Original boat/forest geometry with Poly Haven CC0 Boulder 01 scan, photographed PBR and HDR sky"
+    }
+  },
+  "source": "https://x.com/maxt3chno/status/2105216139647127750",
+  "reference": {
+    "focus": "原生浏览器三维世界整合：地形、水草、天空、动态天气、日夜和自由探索。",
+    "evidence": "作者明确披露 Three.js、水草地形、天气日夜，以及代码与 Meshy 模型混合制作。",
+    "sourceTech": "Three.js 原生运行；部分模型来自 Meshy，是作者明确披露的技术。",
+    "ours": "可步行、可登船的原创营地接入真实水下颜色与深度折射；八个扫描岸石实例、十五棵阔叶树及110个海床石增加近岸不同尺度，船内水面按船壳范围遮罩。",
+    "tech": "Three.js 单次有深度纹理的离屏水下捕获，水面波纹在屏幕空间偏移采样并按实际海床深度衰减。八个岸石实例采用 Poly Haven 的 Boulder 01（Rico Cilliers，CC0）及5954三角浏览器LOD；模型缩至旧包络内，天气、密度、航向和环顾仍共用状态。",
+    "value": "用于空间导览、营地体验与环境解释；太阳能/蓄水指标作为我们另加的规则演示。",
+    "check": "近看海床折射与扫描岸石，再切换天气密度、登船环顾及航行；资产来源和CPU几何已记录，船内遮罩及缩放修正后的浏览器画面、航行和导出仍在复核。",
+    "boundary": "这是实际水下颜色/深度的屏幕空间折射，支持深度纹理时使用单次离屏采样；没有多重散射或真实追踪焦散，光斑仍是图形近似。没有调用 Meshy 或使用原作资产；航行、浮力与附加指标仍为简化模型。",
+    "kernel": "让同一处实际海床进入水体采样，用分层树冠、扫描大石和实例海床石建立尺度；水下采样与天气继续响应同一镜头，船舱遮罩随真实船位和船首更新。"
+  },
+  "optimization": {
+    "caseId": 9,
+    "sourceTarget": "原作09的00:45船上实帧中，浅水、湿沙、不同尺度岩石、林下绿植和树冠连续衔接，并随航行换位。原帖明确原生Three.js整合环境逻辑、用Meshy生成船和手部等模型；本例借鉴的是连续世界与近岸观察关系。",
+    "diagnosis": "入口岸线过空，低层叶丛多贴地且背面过黑；船体是薄侧片、方条座椅与小圆柱发动机，无法支撑原作近处航行画面的主体感。",
+    "priority": "独立重建研究船外壳/内舱与发动机，再按本例调整林缘层级、浅水和远近海岸关系。",
+    "changes": [
+      "船体重做尖船首、宽船尾和连续内外壳，加入舱肋、底板、三组旧木座椅、舷缘及封闭船首。",
+      "发动机具有圆角罩、尾板支架、舵柄、下机体和螺旋桨；模型设计为原创研究船。",
+      "低层叶片抬起并调整着色，保留入口与林地到达点的视线空间；增加林缘棕榈与叶簇覆盖，密度控制真实可见实例。",
+      "浅水调为青绿，增加受视距限制的程序化焦散图形与光斑；远海使用起伏岸岛几何建立层次。"
+    ],
+    "verify": [
+      "已检查实际入口、坐船、林地和岸线画面，修正初版过黑叶丛与尖锥远岛。",
+      "本轮世界20项联合针对检查通过；本例包含真实船体加载、密度/天气/夜景、水草共用状态、实际登船、独立环顾、航行、下船、JSON与390px布局。",
+      "原24处岸石碰撞、船首/相机分离与简化航行逻辑保留；无页面或着色器错误。"
+    ],
+    "remaining": [
+      "林地树种、岩岸和水下细节仍明显简化，焦散是图形近似，未实现真实水体折射；本例仍有较大的成品画质差距。",
+      "原作披露代码与Meshy模型混合制作，我们没有调用Meshy或原作资产；也没有完整浮力、海洋动力学与全部原作道具。"
+    ]
+  },
+  "scope": "折射取自单次水下颜色/深度采样，焦散为图形近似；未实现多重散射、完整浮力或调用 Meshy，附加指标仍未校准。"
+}

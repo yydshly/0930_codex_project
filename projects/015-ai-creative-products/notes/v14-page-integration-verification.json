@@ -1,0 +1,3675 @@
+{
+  "checkedAt": "2026-10-03T00:59:11.446Z",
+  "renderEnvironment": "Headless Chromium, ANGLE SwiftShader; not physical-device performance evidence.",
+  "qaAdjustments": [
+    "The first integration attempt stopped in the test download helper: locator.evaluate receives the element before the supplied selector argument. The callback signature was corrected before rerunning. No product code or export behavior was changed for that adjustment."
+  ],
+  "checks": [
+    "十项仍有完整且独立的分析",
+    "2 主站展示对应最终诊断与重点",
+    "2 返回主站入口使用当前版本",
+    "02 四位人物均有实际表情与视线状态",
+    "02 实际走近后交谈，人物看向玩家",
+    "02 真实错答触发复核表情且没有取得证据",
+    "02 真实确认表情与证据和人物状态一致",
+    "02 体验文件保留人物表情与本例分析",
+    "02 隐藏后任务和人物表情均冻结",
+    "5 主站展示对应最终诊断与重点",
+    "5 返回主站入口使用当前版本",
+    "05 空场有效开火扣电荷，环境落点不计机器人命中",
+    "05 枪口与实际环境射线落点有完整记录",
+    "05 活动时间后枪械回正，短枪口和落点效果结束",
+    "05 真实机器人命中才减少防护",
+    "05 原来的墙钟进攻门槛和三波规则仍保留",
+    "05 体验文件保留射击事实和本例说明",
+    "05 隐藏后活动时钟及枪械反馈冻结",
+    "7 主站展示对应最终诊断与重点",
+    "7 返回主站入口使用当前版本",
+    "07 建筑细化进入真实三维入口且保持三处展品",
+    "07 入口远距仍不能产生参观",
+    "07 实际沿巷道步行后才进入展位近距范围",
+    "07 按E保存真实位置及距离的参观",
+    "07 原型展台仍提供实际页面与默认配方边界",
+    "07 体验导出保留建筑、真实参观与逐例分析",
+    "07 实际独立参观文件保留三展品与相同建筑说明",
+    "2 主站展示对应最终诊断与重点",
+    "2 返回主站入口使用当前版本",
+    "2 主站及嵌入页390px均无横向溢出",
+    "5 主站展示对应最终诊断与重点",
+    "5 返回主站入口使用当前版本",
+    "5 主站及嵌入页390px均无横向溢出",
+    "7 主站展示对应最终诊断与重点",
+    "7 返回主站入口使用当前版本",
+    "7 主站及嵌入页390px均无横向溢出",
+    "相关页面无脚本错误或本地资源缺失"
+  ],
+  "errors": [],
+  "missing": [],
+  "samples": {
+    "case02": {
+      "ready": {
+        "module": "quest",
+        "status": "ready",
+        "running": false,
+        "renderer": "webgl",
+        "rendering": {
+          "drawCalls": 110,
+          "triangles": 318900,
+          "staticDrawCallsSaved": 5768
+        },
+        "position": {
+          "x": 0,
+          "z": 15
+        },
+        "yaw": 0,
+        "evidence": [],
+        "elapsed": 0,
+        "destination": null,
+        "dialogueSite": null,
+        "interaction": {
+          "site": "hub",
+          "distance": 4.29,
+          "canTalk": false,
+          "sites": [
+            {
+              "id": "hub",
+              "checked": false,
+              "marker": "提交证据"
+            },
+            {
+              "id": "archive",
+              "checked": false,
+              "marker": "待核对"
+            },
+            {
+              "id": "sensor",
+              "checked": false,
+              "marker": "待核对"
+            },
+            {
+              "id": "tower",
+              "checked": false,
+              "marker": "待核对"
+            }
+          ]
+        },
+        "recorders": {
+          "clock": 0,
+          "animating": false,
+          "actors": [
+            {
+              "site": "hub",
+              "mode": "idle",
+              "near": false,
+              "checked": false,
+              "eventAge": 0,
+              "yaw": 0,
+              "targetYaw": 0,
+              "face": {
+                "expression": "neutral",
+                "gaze": "street",
+                "smile": 0,
+                "mouthCurve": 0.2,
+                "browPinch": 0,
+                "blink": 0,
+                "eyeOpen": 1,
+                "pupil": {
+                  "x": 0,
+                  "y": 0
+                },
+                "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+              },
+              "pose": {
+                "bodyY": 0.94,
+                "headPitch": 0,
+                "headYaw": 0,
+                "rightShoulder": 0,
+                "rightElbow": -0.1,
+                "leftShoulder": -0.34
+              }
+            },
+            {
+              "site": "archive",
+              "mode": "idle",
+              "near": false,
+              "checked": false,
+              "eventAge": 0,
+              "yaw": 0,
+              "targetYaw": 0,
+              "face": {
+                "expression": "neutral",
+                "gaze": "street",
+                "smile": 0,
+                "mouthCurve": 0.2,
+                "browPinch": 0,
+                "blink": 0,
+                "eyeOpen": 1,
+                "pupil": {
+                  "x": 0,
+                  "y": 0
+                },
+                "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+              },
+              "pose": {
+                "bodyY": 0.9463,
+                "headPitch": 0,
+                "headYaw": 0,
+                "rightShoulder": 0,
+                "rightElbow": -0.1,
+                "leftShoulder": -0.34
+              }
+            },
+            {
+              "site": "sensor",
+              "mode": "idle",
+              "near": false,
+              "checked": false,
+              "eventAge": 0,
+              "yaw": 0,
+              "targetYaw": 0,
+              "face": {
+                "expression": "neutral",
+                "gaze": "street",
+                "smile": 0,
+                "mouthCurve": 0.2,
+                "browPinch": 0,
+                "blink": 0,
+                "eyeOpen": 1,
+                "pupil": {
+                  "x": 0,
+                  "y": 0
+                },
+                "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+              },
+              "pose": {
+                "bodyY": 0.9478,
+                "headPitch": 0,
+                "headYaw": 0,
+                "rightShoulder": 0,
+                "rightElbow": -0.1,
+                "leftShoulder": -0.34
+              }
+            },
+            {
+              "site": "tower",
+              "mode": "idle",
+              "near": false,
+              "checked": false,
+              "eventAge": 0,
+              "yaw": 0,
+              "targetYaw": 0,
+              "face": {
+                "expression": "neutral",
+                "gaze": "street",
+                "smile": 0,
+                "mouthCurve": 0.2,
+                "browPinch": 0,
+                "blink": 0,
+                "eyeOpen": 1,
+                "pupil": {
+                  "x": 0,
+                  "y": 0
+                },
+                "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+              },
+              "pose": {
+                "bodyY": 0.9434,
+                "headPitch": 0,
+                "headYaw": 0,
+                "rightShoulder": 0,
+                "rightElbow": -0.1,
+                "leftShoulder": -0.34
+              }
+            }
+          ]
+        },
+        "soundEnabled": true,
+        "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+        "scope": "Original small RPG prototype with connected recorder poses, event-driven facial geometry and finite gaze; no speech lip-sync, original source, combat or VATS reproduced.",
+        "log": []
+      },
+      "talking": {
+        "module": "quest",
+        "status": "playing",
+        "running": true,
+        "renderer": "webgl",
+        "rendering": {
+          "drawCalls": 98,
+          "triangles": 288504,
+          "staticDrawCallsSaved": 5768
+        },
+        "position": {
+          "x": -11.84,
+          "z": -8
+        },
+        "yaw": 1.266,
+        "evidence": [],
+        "elapsed": 7.2,
+        "destination": null,
+        "dialogueSite": "archive",
+        "interaction": {
+          "site": "archive",
+          "distance": 2.66,
+          "canTalk": true,
+          "sites": [
+            {
+              "id": "hub",
+              "checked": false,
+              "marker": "提交证据"
+            },
+            {
+              "id": "archive",
+              "checked": false,
+              "marker": "待核对"
+            },
+            {
+              "id": "sensor",
+              "checked": false,
+              "marker": "待核对"
+            },
+            {
+              "id": "tower",
+              "checked": false,
+              "marker": "待核对"
+            }
+          ]
+        },
+        "recorders": {
+          "clock": 7.2,
+          "animating": true,
+          "actors": [
+            {
+              "site": "hub",
+              "mode": "idle",
+              "near": false,
+              "checked": false,
+              "eventAge": 0,
+              "yaw": 0,
+              "targetYaw": 0,
+              "face": {
+                "expression": "neutral",
+                "gaze": "street",
+                "smile": 0,
+                "mouthCurve": 0.2,
+                "browPinch": 0,
+                "blink": 0,
+                "eyeOpen": 1,
+                "pupil": {
+                  "x": 0.0004,
+                  "y": 0
+                },
+                "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+              },
+              "pose": {
+                "bodyY": 0.9349,
+                "headPitch": -0.0126,
+                "headYaw": -0.0499,
+                "rightShoulder": -0.0709,
+                "rightElbow": -0.1,
+                "leftShoulder": -0.34
+              }
+            },
+            {
+              "site": "archive",
+              "mode": "talking",
+              "near": true,
+              "checked": false,
+              "eventAge": 0.983,
+              "yaw": -1.263,
+              "targetYaw": -1.266,
+              "face": {
+                "expression": "listening",
+                "gaze": "player",
+                "smile": 0.04,
+                "mouthCurve": 0.328,
+                "browPinch": 0,
+                "blink": 0,
+                "eyeOpen": 1,
+                "pupil": {
+                  "x": -0.0006,
+                  "y": 0
+                },
+                "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+              },
+              "pose": {
+                "bodyY": 0.9417,
+                "headPitch": -0.007,
+                "headYaw": -0.0117,
+                "rightShoulder": -0.36,
+                "rightElbow": -0.8467,
+                "leftShoulder": -0.34
+              }
+            },
+            {
+              "site": "sensor",
+              "mode": "idle",
+              "near": false,
+              "checked": false,
+              "eventAge": 0,
+              "yaw": 0,
+              "targetYaw": 0,
+              "face": {
+                "expression": "neutral",
+                "gaze": "street",
+                "smile": 0,
+                "mouthCurve": 0.2,
+                "browPinch": 0,
+                "blink": 0.6553,
+                "eyeOpen": 0.3447,
+                "pupil": {
+                  "x": -0.0029,
+                  "y": 0
+                },
+                "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+              },
+              "pose": {
+                "bodyY": 0.9472,
+                "headPitch": 0.0249,
+                "headYaw": 0.0192,
+                "rightShoulder": -0.0327,
+                "rightElbow": -0.1,
+                "leftShoulder": -0.34
+              }
+            },
+            {
+              "site": "tower",
+              "mode": "idle",
+              "near": false,
+              "checked": false,
+              "eventAge": 0,
+              "yaw": 0,
+              "targetYaw": 0,
+              "face": {
+                "expression": "neutral",
+                "gaze": "street",
+                "smile": 0,
+                "mouthCurve": 0.2,
+                "browPinch": 0,
+                "blink": 0,
+                "eyeOpen": 1,
+                "pupil": {
+                  "x": -0.0008,
+                  "y": 0
+                },
+                "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+              },
+              "pose": {
+                "bodyY": 0.9472,
+                "headPitch": 0.0155,
+                "headYaw": 0.0492,
+                "rightShoulder": -0.0324,
+                "rightElbow": -0.1,
+                "leftShoulder": -0.34
+              }
+            }
+          ]
+        },
+        "soundEnabled": true,
+        "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+        "scope": "Original small RPG prototype with connected recorder poses, event-driven facial geometry and finite gaze; no speech lip-sync, original source, combat or VATS reproduced.",
+        "log": [
+          {
+            "time": 0,
+            "action": "开始",
+            "detail": "程序化街区任务"
+          },
+          {
+            "time": 0.1,
+            "action": "前往",
+            "detail": "档案站"
+          }
+        ]
+      },
+      "review": {
+        "module": "quest",
+        "status": "playing",
+        "running": true,
+        "renderer": "webgl",
+        "rendering": {
+          "drawCalls": 98,
+          "triangles": 288504,
+          "staticDrawCallsSaved": 5768
+        },
+        "position": {
+          "x": -11.84,
+          "z": -8
+        },
+        "yaw": 1.266,
+        "evidence": [],
+        "elapsed": 7.2,
+        "destination": null,
+        "dialogueSite": "archive",
+        "interaction": {
+          "site": "archive",
+          "distance": 2.66,
+          "canTalk": true,
+          "sites": [
+            {
+              "id": "hub",
+              "checked": false,
+              "marker": "提交证据"
+            },
+            {
+              "id": "archive",
+              "checked": false,
+              "marker": "待核对"
+            },
+            {
+              "id": "sensor",
+              "checked": false,
+              "marker": "待核对"
+            },
+            {
+              "id": "tower",
+              "checked": false,
+              "marker": "待核对"
+            }
+          ]
+        },
+        "recorders": {
+          "clock": 7.2,
+          "animating": true,
+          "actors": [
+            {
+              "site": "hub",
+              "mode": "idle",
+              "near": false,
+              "checked": false,
+              "eventAge": 0,
+              "yaw": 0,
+              "targetYaw": 0,
+              "face": {
+                "expression": "neutral",
+                "gaze": "street",
+                "smile": 0,
+                "mouthCurve": 0.2,
+                "browPinch": 0,
+                "blink": 0,
+                "eyeOpen": 1,
+                "pupil": {
+                  "x": 0.0004,
+                  "y": 0
+                },
+                "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+              },
+              "pose": {
+                "bodyY": 0.9349,
+                "headPitch": -0.0126,
+                "headYaw": -0.0499,
+                "rightShoulder": -0.0709,
+                "rightElbow": -0.1,
+                "leftShoulder": -0.34
+              }
+            },
+            {
+              "site": "archive",
+              "mode": "review",
+              "near": true,
+              "checked": false,
+              "eventAge": 0,
+              "yaw": -1.263,
+              "targetYaw": -1.266,
+              "face": {
+                "expression": "checking",
+                "gaze": "record-board",
+                "smile": 0.04,
+                "mouthCurve": 0.328,
+                "browPinch": 0,
+                "blink": 0,
+                "eyeOpen": 1,
+                "pupil": {
+                  "x": -0.0006,
+                  "y": 0
+                },
+                "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+              },
+              "pose": {
+                "bodyY": 0.9417,
+                "headPitch": -0.007,
+                "headYaw": -0.0117,
+                "rightShoulder": -0.36,
+                "rightElbow": -0.8467,
+                "leftShoulder": -0.34
+              }
+            },
+            {
+              "site": "sensor",
+              "mode": "idle",
+              "near": false,
+              "checked": false,
+              "eventAge": 0,
+              "yaw": 0,
+              "targetYaw": 0,
+              "face": {
+                "expression": "neutral",
+                "gaze": "street",
+                "smile": 0,
+                "mouthCurve": 0.2,
+                "browPinch": 0,
+                "blink": 0.6553,
+                "eyeOpen": 0.3447,
+                "pupil": {
+                  "x": -0.0029,
+                  "y": 0
+                },
+                "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+              },
+              "pose": {
+                "bodyY": 0.9472,
+                "headPitch": 0.0249,
+                "headYaw": 0.0192,
+                "rightShoulder": -0.0327,
+                "rightElbow": -0.1,
+                "leftShoulder": -0.34
+              }
+            },
+            {
+              "site": "tower",
+              "mode": "idle",
+              "near": false,
+              "checked": false,
+              "eventAge": 0,
+              "yaw": 0,
+              "targetYaw": 0,
+              "face": {
+                "expression": "neutral",
+                "gaze": "street",
+                "smile": 0,
+                "mouthCurve": 0.2,
+                "browPinch": 0,
+                "blink": 0,
+                "eyeOpen": 1,
+                "pupil": {
+                  "x": -0.0008,
+                  "y": 0
+                },
+                "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+              },
+              "pose": {
+                "bodyY": 0.9472,
+                "headPitch": 0.0155,
+                "headYaw": 0.0492,
+                "rightShoulder": -0.0324,
+                "rightElbow": -0.1,
+                "leftShoulder": -0.34
+              }
+            }
+          ]
+        },
+        "soundEnabled": true,
+        "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+        "scope": "Original small RPG prototype with connected recorder poses, event-driven facial geometry and finite gaze; no speech lip-sync, original source, combat or VATS reproduced.",
+        "log": [
+          {
+            "time": 0,
+            "action": "开始",
+            "detail": "程序化街区任务"
+          },
+          {
+            "time": 0.1,
+            "action": "前往",
+            "detail": "档案站"
+          },
+          {
+            "time": 7.2,
+            "action": "判断未通过",
+            "detail": "档案站"
+          }
+        ]
+      },
+      "confirmed": {
+        "module": "quest",
+        "status": "playing",
+        "running": true,
+        "renderer": "webgl",
+        "rendering": {
+          "drawCalls": 98,
+          "triangles": 288504,
+          "staticDrawCallsSaved": 5768
+        },
+        "position": {
+          "x": -11.84,
+          "z": -8
+        },
+        "yaw": 1.266,
+        "evidence": [
+          {
+            "id": "archive",
+            "title": "档案来源与时间已核对"
+          }
+        ],
+        "elapsed": 7.2,
+        "destination": null,
+        "dialogueSite": "archive",
+        "interaction": {
+          "site": "archive",
+          "distance": 2.66,
+          "canTalk": true,
+          "sites": [
+            {
+              "id": "hub",
+              "checked": false,
+              "marker": "提交证据"
+            },
+            {
+              "id": "archive",
+              "checked": true,
+              "marker": "已核对"
+            },
+            {
+              "id": "sensor",
+              "checked": false,
+              "marker": "待核对"
+            },
+            {
+              "id": "tower",
+              "checked": false,
+              "marker": "待核对"
+            }
+          ]
+        },
+        "recorders": {
+          "clock": 7.2,
+          "animating": true,
+          "actors": [
+            {
+              "site": "hub",
+              "mode": "idle",
+              "near": false,
+              "checked": false,
+              "eventAge": 0,
+              "yaw": 0,
+              "targetYaw": 0,
+              "face": {
+                "expression": "neutral",
+                "gaze": "street",
+                "smile": 0,
+                "mouthCurve": 0.2,
+                "browPinch": 0,
+                "blink": 0,
+                "eyeOpen": 1,
+                "pupil": {
+                  "x": 0.0004,
+                  "y": 0
+                },
+                "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+              },
+              "pose": {
+                "bodyY": 0.9349,
+                "headPitch": -0.0126,
+                "headYaw": -0.0499,
+                "rightShoulder": -0.0709,
+                "rightElbow": -0.1,
+                "leftShoulder": -0.34
+              }
+            },
+            {
+              "site": "archive",
+              "mode": "confirm",
+              "near": true,
+              "checked": true,
+              "eventAge": 0,
+              "yaw": -1.263,
+              "targetYaw": -1.266,
+              "face": {
+                "expression": "confirmed",
+                "gaze": "player",
+                "smile": 0.04,
+                "mouthCurve": 0.328,
+                "browPinch": 0,
+                "blink": 0,
+                "eyeOpen": 1,
+                "pupil": {
+                  "x": -0.0006,
+                  "y": 0
+                },
+                "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+              },
+              "pose": {
+                "bodyY": 0.9417,
+                "headPitch": -0.007,
+                "headYaw": -0.0117,
+                "rightShoulder": -0.36,
+                "rightElbow": -0.8467,
+                "leftShoulder": -0.34
+              }
+            },
+            {
+              "site": "sensor",
+              "mode": "idle",
+              "near": false,
+              "checked": false,
+              "eventAge": 0,
+              "yaw": 0,
+              "targetYaw": 0,
+              "face": {
+                "expression": "neutral",
+                "gaze": "street",
+                "smile": 0,
+                "mouthCurve": 0.2,
+                "browPinch": 0,
+                "blink": 0.6553,
+                "eyeOpen": 0.3447,
+                "pupil": {
+                  "x": -0.0029,
+                  "y": 0
+                },
+                "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+              },
+              "pose": {
+                "bodyY": 0.9472,
+                "headPitch": 0.0249,
+                "headYaw": 0.0192,
+                "rightShoulder": -0.0327,
+                "rightElbow": -0.1,
+                "leftShoulder": -0.34
+              }
+            },
+            {
+              "site": "tower",
+              "mode": "idle",
+              "near": false,
+              "checked": false,
+              "eventAge": 0,
+              "yaw": 0,
+              "targetYaw": 0,
+              "face": {
+                "expression": "neutral",
+                "gaze": "street",
+                "smile": 0,
+                "mouthCurve": 0.2,
+                "browPinch": 0,
+                "blink": 0,
+                "eyeOpen": 1,
+                "pupil": {
+                  "x": -0.0008,
+                  "y": 0
+                },
+                "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+              },
+              "pose": {
+                "bodyY": 0.9472,
+                "headPitch": 0.0155,
+                "headYaw": 0.0492,
+                "rightShoulder": -0.0324,
+                "rightElbow": -0.1,
+                "leftShoulder": -0.34
+              }
+            }
+          ]
+        },
+        "soundEnabled": true,
+        "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+        "scope": "Original small RPG prototype with connected recorder poses, event-driven facial geometry and finite gaze; no speech lip-sync, original source, combat or VATS reproduced.",
+        "log": [
+          {
+            "time": 0,
+            "action": "开始",
+            "detail": "程序化街区任务"
+          },
+          {
+            "time": 0.1,
+            "action": "前往",
+            "detail": "档案站"
+          },
+          {
+            "time": 7.2,
+            "action": "判断未通过",
+            "detail": "档案站"
+          },
+          {
+            "time": 7.2,
+            "action": "取得证据",
+            "detail": "档案来源与时间已核对"
+          }
+        ]
+      },
+      "exported": {
+        "module": "quest",
+        "status": "playing",
+        "running": true,
+        "renderer": "webgl",
+        "rendering": {
+          "drawCalls": 98,
+          "triangles": 288504,
+          "staticDrawCallsSaved": 5768
+        },
+        "position": {
+          "x": -11.84,
+          "z": -8
+        },
+        "yaw": 1.266,
+        "evidence": [
+          {
+            "id": "archive",
+            "title": "档案来源与时间已核对"
+          }
+        ],
+        "elapsed": 7.2,
+        "destination": null,
+        "dialogueSite": "archive",
+        "interaction": {
+          "site": "archive",
+          "distance": 2.66,
+          "canTalk": true,
+          "sites": [
+            {
+              "id": "hub",
+              "checked": false,
+              "marker": "提交证据"
+            },
+            {
+              "id": "archive",
+              "checked": true,
+              "marker": "已核对"
+            },
+            {
+              "id": "sensor",
+              "checked": false,
+              "marker": "待核对"
+            },
+            {
+              "id": "tower",
+              "checked": false,
+              "marker": "待核对"
+            }
+          ]
+        },
+        "recorders": {
+          "clock": 7.2,
+          "animating": true,
+          "actors": [
+            {
+              "site": "hub",
+              "mode": "idle",
+              "near": false,
+              "checked": false,
+              "eventAge": 0,
+              "yaw": 0,
+              "targetYaw": 0,
+              "face": {
+                "expression": "neutral",
+                "gaze": "street",
+                "smile": 0,
+                "mouthCurve": 0.2,
+                "browPinch": 0,
+                "blink": 0,
+                "eyeOpen": 1,
+                "pupil": {
+                  "x": 0.0004,
+                  "y": 0
+                },
+                "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+              },
+              "pose": {
+                "bodyY": 0.9349,
+                "headPitch": -0.0126,
+                "headYaw": -0.0499,
+                "rightShoulder": -0.0709,
+                "rightElbow": -0.1,
+                "leftShoulder": -0.34
+              }
+            },
+            {
+              "site": "archive",
+              "mode": "confirm",
+              "near": true,
+              "checked": true,
+              "eventAge": 0,
+              "yaw": -1.263,
+              "targetYaw": -1.266,
+              "face": {
+                "expression": "confirmed",
+                "gaze": "player",
+                "smile": 0.04,
+                "mouthCurve": 0.328,
+                "browPinch": 0,
+                "blink": 0,
+                "eyeOpen": 1,
+                "pupil": {
+                  "x": -0.0006,
+                  "y": 0
+                },
+                "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+              },
+              "pose": {
+                "bodyY": 0.9417,
+                "headPitch": -0.007,
+                "headYaw": -0.0117,
+                "rightShoulder": -0.36,
+                "rightElbow": -0.8467,
+                "leftShoulder": -0.34
+              }
+            },
+            {
+              "site": "sensor",
+              "mode": "idle",
+              "near": false,
+              "checked": false,
+              "eventAge": 0,
+              "yaw": 0,
+              "targetYaw": 0,
+              "face": {
+                "expression": "neutral",
+                "gaze": "street",
+                "smile": 0,
+                "mouthCurve": 0.2,
+                "browPinch": 0,
+                "blink": 0.6553,
+                "eyeOpen": 0.3447,
+                "pupil": {
+                  "x": -0.0029,
+                  "y": 0
+                },
+                "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+              },
+              "pose": {
+                "bodyY": 0.9472,
+                "headPitch": 0.0249,
+                "headYaw": 0.0192,
+                "rightShoulder": -0.0327,
+                "rightElbow": -0.1,
+                "leftShoulder": -0.34
+              }
+            },
+            {
+              "site": "tower",
+              "mode": "idle",
+              "near": false,
+              "checked": false,
+              "eventAge": 0,
+              "yaw": 0,
+              "targetYaw": 0,
+              "face": {
+                "expression": "neutral",
+                "gaze": "street",
+                "smile": 0,
+                "mouthCurve": 0.2,
+                "browPinch": 0,
+                "blink": 0,
+                "eyeOpen": 1,
+                "pupil": {
+                  "x": -0.0008,
+                  "y": 0
+                },
+                "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+              },
+              "pose": {
+                "bodyY": 0.9472,
+                "headPitch": 0.0155,
+                "headYaw": 0.0492,
+                "rightShoulder": -0.0324,
+                "rightElbow": -0.1,
+                "leftShoulder": -0.34
+              }
+            }
+          ]
+        },
+        "soundEnabled": true,
+        "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+        "scope": "Original small RPG prototype with connected recorder poses, event-driven facial geometry and finite gaze; no speech lip-sync, original source, combat or VATS reproduced.",
+        "log": [
+          {
+            "time": 0,
+            "action": "开始",
+            "detail": "程序化街区任务"
+          },
+          {
+            "time": 0.1,
+            "action": "前往",
+            "detail": "档案站"
+          },
+          {
+            "time": 7.2,
+            "action": "判断未通过",
+            "detail": "档案站"
+          },
+          {
+            "time": 7.2,
+            "action": "取得证据",
+            "detail": "档案来源与时间已核对"
+          }
+        ]
+      },
+      "hidden": {
+        "first": {
+          "module": "quest",
+          "status": "playing",
+          "running": false,
+          "renderer": "webgl",
+          "rendering": {
+            "drawCalls": 95,
+            "triangles": 288060,
+            "staticDrawCallsSaved": 5768
+          },
+          "position": {
+            "x": -11.84,
+            "z": -8
+          },
+          "yaw": 1.266,
+          "evidence": [
+            {
+              "id": "archive",
+              "title": "档案来源与时间已核对"
+            }
+          ],
+          "elapsed": 14.9,
+          "destination": null,
+          "dialogueSite": "archive",
+          "interaction": {
+            "site": "archive",
+            "distance": 2.66,
+            "canTalk": true,
+            "sites": [
+              {
+                "id": "hub",
+                "checked": false,
+                "marker": "提交证据"
+              },
+              {
+                "id": "archive",
+                "checked": true,
+                "marker": "已核对"
+              },
+              {
+                "id": "sensor",
+                "checked": false,
+                "marker": "待核对"
+              },
+              {
+                "id": "tower",
+                "checked": false,
+                "marker": "待核对"
+              }
+            ]
+          },
+          "recorders": {
+            "clock": 14.866,
+            "animating": false,
+            "actors": [
+              {
+                "site": "hub",
+                "mode": "idle",
+                "near": false,
+                "checked": false,
+                "eventAge": 0,
+                "yaw": 0,
+                "targetYaw": 0,
+                "face": {
+                  "expression": "neutral",
+                  "gaze": "street",
+                  "smile": 0,
+                  "mouthCurve": 0.2,
+                  "browPinch": 0,
+                  "blink": 0,
+                  "eyeOpen": 1,
+                  "pupil": {
+                    "x": -0.0002,
+                    "y": 0
+                  },
+                  "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+                },
+                "pose": {
+                  "bodyY": 0.9355,
+                  "headPitch": -0.0162,
+                  "headYaw": -0.0103,
+                  "rightShoulder": -0.0704,
+                  "rightElbow": -0.1,
+                  "leftShoulder": -0.34
+                }
+              },
+              {
+                "site": "archive",
+                "mode": "talking",
+                "near": true,
+                "checked": true,
+                "eventAge": 7.666,
+                "yaw": -1.266,
+                "targetYaw": -1.266,
+                "face": {
+                  "expression": "listening",
+                  "gaze": "player",
+                  "smile": 0.04,
+                  "mouthCurve": 0.328,
+                  "browPinch": 0,
+                  "blink": 0,
+                  "eyeOpen": 1,
+                  "pupil": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+                },
+                "pose": {
+                  "bodyY": 0.9423,
+                  "headPitch": 0.0083,
+                  "headYaw": 0,
+                  "rightShoulder": -0.36,
+                  "rightElbow": -0.7985,
+                  "leftShoulder": -0.48
+                }
+              },
+              {
+                "site": "sensor",
+                "mode": "idle",
+                "near": false,
+                "checked": false,
+                "eventAge": 0,
+                "yaw": 0,
+                "targetYaw": 0,
+                "face": {
+                  "expression": "neutral",
+                  "gaze": "street",
+                  "smile": 0,
+                  "mouthCurve": 0.2,
+                  "browPinch": 0,
+                  "blink": 0,
+                  "eyeOpen": 1,
+                  "pupil": {
+                    "x": 0.0028,
+                    "y": 0
+                  },
+                  "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+                },
+                "pose": {
+                  "bodyY": 0.9474,
+                  "headPitch": 0.0239,
+                  "headYaw": -0.0401,
+                  "rightShoulder": -0.0328,
+                  "rightElbow": -0.1,
+                  "leftShoulder": -0.34
+                }
+              },
+              {
+                "site": "tower",
+                "mode": "idle",
+                "near": false,
+                "checked": false,
+                "eventAge": 0,
+                "yaw": 0,
+                "targetYaw": 0,
+                "face": {
+                  "expression": "neutral",
+                  "gaze": "street",
+                  "smile": 0,
+                  "mouthCurve": 0.2,
+                  "browPinch": 0,
+                  "blink": 0.2699,
+                  "eyeOpen": 0.7301,
+                  "pupil": {
+                    "x": 0.0006,
+                    "y": 0
+                  },
+                  "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+                },
+                "pose": {
+                  "bodyY": 0.9469,
+                  "headPitch": 0.0187,
+                  "headYaw": 0.0033,
+                  "rightShoulder": -0.0329,
+                  "rightElbow": -0.1,
+                  "leftShoulder": -0.34
+                }
+              }
+            ]
+          },
+          "soundEnabled": true,
+          "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+          "scope": "Original small RPG prototype with connected recorder poses, event-driven facial geometry and finite gaze; no speech lip-sync, original source, combat or VATS reproduced.",
+          "log": [
+            {
+              "time": 0,
+              "action": "开始",
+              "detail": "程序化街区任务"
+            },
+            {
+              "time": 0.1,
+              "action": "前往",
+              "detail": "档案站"
+            },
+            {
+              "time": 7.2,
+              "action": "判断未通过",
+              "detail": "档案站"
+            },
+            {
+              "time": 7.2,
+              "action": "取得证据",
+              "detail": "档案来源与时间已核对"
+            }
+          ]
+        },
+        "second": {
+          "module": "quest",
+          "status": "playing",
+          "running": false,
+          "renderer": "webgl",
+          "rendering": {
+            "drawCalls": 95,
+            "triangles": 288060,
+            "staticDrawCallsSaved": 5768
+          },
+          "position": {
+            "x": -11.84,
+            "z": -8
+          },
+          "yaw": 1.266,
+          "evidence": [
+            {
+              "id": "archive",
+              "title": "档案来源与时间已核对"
+            }
+          ],
+          "elapsed": 14.9,
+          "destination": null,
+          "dialogueSite": "archive",
+          "interaction": {
+            "site": "archive",
+            "distance": 2.66,
+            "canTalk": true,
+            "sites": [
+              {
+                "id": "hub",
+                "checked": false,
+                "marker": "提交证据"
+              },
+              {
+                "id": "archive",
+                "checked": true,
+                "marker": "已核对"
+              },
+              {
+                "id": "sensor",
+                "checked": false,
+                "marker": "待核对"
+              },
+              {
+                "id": "tower",
+                "checked": false,
+                "marker": "待核对"
+              }
+            ]
+          },
+          "recorders": {
+            "clock": 14.866,
+            "animating": false,
+            "actors": [
+              {
+                "site": "hub",
+                "mode": "idle",
+                "near": false,
+                "checked": false,
+                "eventAge": 0,
+                "yaw": 0,
+                "targetYaw": 0,
+                "face": {
+                  "expression": "neutral",
+                  "gaze": "street",
+                  "smile": 0,
+                  "mouthCurve": 0.2,
+                  "browPinch": 0,
+                  "blink": 0,
+                  "eyeOpen": 1,
+                  "pupil": {
+                    "x": -0.0002,
+                    "y": 0
+                  },
+                  "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+                },
+                "pose": {
+                  "bodyY": 0.9355,
+                  "headPitch": -0.0162,
+                  "headYaw": -0.0103,
+                  "rightShoulder": -0.0704,
+                  "rightElbow": -0.1,
+                  "leftShoulder": -0.34
+                }
+              },
+              {
+                "site": "archive",
+                "mode": "talking",
+                "near": true,
+                "checked": true,
+                "eventAge": 7.666,
+                "yaw": -1.266,
+                "targetYaw": -1.266,
+                "face": {
+                  "expression": "listening",
+                  "gaze": "player",
+                  "smile": 0.04,
+                  "mouthCurve": 0.328,
+                  "browPinch": 0,
+                  "blink": 0,
+                  "eyeOpen": 1,
+                  "pupil": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+                },
+                "pose": {
+                  "bodyY": 0.9423,
+                  "headPitch": 0.0083,
+                  "headYaw": 0,
+                  "rightShoulder": -0.36,
+                  "rightElbow": -0.7985,
+                  "leftShoulder": -0.48
+                }
+              },
+              {
+                "site": "sensor",
+                "mode": "idle",
+                "near": false,
+                "checked": false,
+                "eventAge": 0,
+                "yaw": 0,
+                "targetYaw": 0,
+                "face": {
+                  "expression": "neutral",
+                  "gaze": "street",
+                  "smile": 0,
+                  "mouthCurve": 0.2,
+                  "browPinch": 0,
+                  "blink": 0,
+                  "eyeOpen": 1,
+                  "pupil": {
+                    "x": 0.0028,
+                    "y": 0
+                  },
+                  "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+                },
+                "pose": {
+                  "bodyY": 0.9474,
+                  "headPitch": 0.0239,
+                  "headYaw": -0.0401,
+                  "rightShoulder": -0.0328,
+                  "rightElbow": -0.1,
+                  "leftShoulder": -0.34
+                }
+              },
+              {
+                "site": "tower",
+                "mode": "idle",
+                "near": false,
+                "checked": false,
+                "eventAge": 0,
+                "yaw": 0,
+                "targetYaw": 0,
+                "face": {
+                  "expression": "neutral",
+                  "gaze": "street",
+                  "smile": 0,
+                  "mouthCurve": 0.2,
+                  "browPinch": 0,
+                  "blink": 0.2699,
+                  "eyeOpen": 0.7301,
+                  "pupil": {
+                    "x": 0.0006,
+                    "y": 0
+                  },
+                  "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+                },
+                "pose": {
+                  "bodyY": 0.9469,
+                  "headPitch": 0.0187,
+                  "headYaw": 0.0033,
+                  "rightShoulder": -0.0329,
+                  "rightElbow": -0.1,
+                  "leftShoulder": -0.34
+                }
+              }
+            ]
+          },
+          "soundEnabled": true,
+          "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+          "scope": "Original small RPG prototype with connected recorder poses, event-driven facial geometry and finite gaze; no speech lip-sync, original source, combat or VATS reproduced.",
+          "log": [
+            {
+              "time": 0,
+              "action": "开始",
+              "detail": "程序化街区任务"
+            },
+            {
+              "time": 0.1,
+              "action": "前往",
+              "detail": "档案站"
+            },
+            {
+              "time": 7.2,
+              "action": "判断未通过",
+              "detail": "档案站"
+            },
+            {
+              "time": 7.2,
+              "action": "取得证据",
+              "detail": "档案来源与时间已核对"
+            }
+          ]
+        }
+      }
+    },
+    "case05": {
+      "missed": {
+        "module": "defense",
+        "status": "playing",
+        "running": true,
+        "renderer": "webgl",
+        "rendering": {
+          "drawCalls": 65,
+          "triangles": 36972,
+          "pixelRatio": 0.7818,
+          "defaultPixelRatio": 1,
+          "qualityPolicy": "active longest side at most 960px; ready, paused and finished restore default DPR",
+          "canvasPixels": {
+            "width": 960,
+            "height": 414
+          },
+          "interactiveResolutionLimit": 960,
+          "staticDrawCallsSaved": 354
+        },
+        "wave": 1,
+        "totalWaves": 3,
+        "health": 100,
+        "ammo": 11,
+        "reloading": false,
+        "kills": 0,
+        "shots": 1,
+        "hits": 0,
+        "attacks": 0,
+        "dodgedAttacks": 0,
+        "incomingHits": 0,
+        "attackTiming": {
+          "clock": "wall-clock",
+          "reactionStart": "after first warning draw; active wall clock excludes hidden intervals",
+          "maxIntegrationStep": 0.008333333333333333,
+          "trigger": 1.45,
+          "reach": 1.6,
+          "frontDot": 0.45,
+          "windup": 0.85,
+          "strike": 0.22,
+          "recovery": 0.9
+        },
+        "elapsed": 0,
+        "shotPresentation": {
+          "clock": "active-wall-clock",
+          "duration": 0.42,
+          "age": 0.003,
+          "recoil": {
+            "kick": 0.982,
+            "return": 0.0184,
+            "position": {
+              "x": 0.3479,
+              "y": -0.2937,
+              "z": -0.676
+            },
+            "rotation": {
+              "x": 0.0636,
+              "y": -0.0118,
+              "z": -0.0245
+            },
+            "affectsAim": false
+          },
+          "visible": {
+            "muzzle": true,
+            "tracer": true,
+            "impact": true
+          },
+          "lastShot": {
+            "serial": 1,
+            "clock": 0.005300000011920929,
+            "result": "miss",
+            "surface": "room",
+            "enemyId": null,
+            "distance": 16.98,
+            "surfacePoint": {
+              "x": 0,
+              "y": 1.7,
+              "z": -10.98
+            },
+            "surfaceNormal": {
+              "x": 0,
+              "y": 0,
+              "z": 1
+            },
+            "origin": {
+              "x": 0.354,
+              "y": 1.458,
+              "z": 4.894
+            }
+          }
+        },
+        "feedback": {
+          "canFire": false,
+          "lastShotResult": "miss",
+          "hitConfirmed": false,
+          "damageCue": false,
+          "lastImpact": null
+        },
+        "player": {
+          "x": 0,
+          "z": 6,
+          "yaw": 0,
+          "pitch": 0
+        },
+        "enemies": [],
+        "scope": "Original FPS room and robots. No COD code/assets ported. Ray hits, simple pursuit, telegraphed directional melee with range-checked strike, cover collision, three waves. Weapon recoil is a bounded visual response only; camera aiming is unchanged. Tracer starts at the actual weapon muzzle; sparks require a real ray intersection. Active play is limited to 960px; ready/paused/finished restore default clarity.",
+        "log": [
+          {
+            "time": 0,
+            "action": "波次开始",
+            "detail": 1
+          },
+          {
+            "time": 0,
+            "action": "发射呈现",
+            "detail": {
+              "serial": 1,
+              "clock": 0.005300000011920929,
+              "result": "miss",
+              "surface": "room",
+              "enemyId": null,
+              "distance": 16.98,
+              "surfacePoint": {
+                "x": 0,
+                "y": 1.7,
+                "z": -10.98
+              },
+              "surfaceNormal": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              },
+              "origin": {
+                "x": 0.354,
+                "y": 1.458,
+                "z": 4.894
+              }
+            }
+          }
+        ]
+      },
+      "returned": {
+        "module": "defense",
+        "status": "playing",
+        "running": true,
+        "renderer": "webgl",
+        "rendering": {
+          "drawCalls": 81,
+          "triangles": 54074,
+          "pixelRatio": 0.7818,
+          "defaultPixelRatio": 1,
+          "qualityPolicy": "active longest side at most 960px; ready, paused and finished restore default DPR",
+          "canvasPixels": {
+            "width": 960,
+            "height": 414
+          },
+          "interactiveResolutionLimit": 960,
+          "staticDrawCallsSaved": 354
+        },
+        "wave": 1,
+        "totalWaves": 3,
+        "health": 100,
+        "ammo": 11,
+        "reloading": false,
+        "kills": 0,
+        "shots": 1,
+        "hits": 0,
+        "attacks": 0,
+        "dodgedAttacks": 0,
+        "incomingHits": 0,
+        "attackTiming": {
+          "clock": "wall-clock",
+          "reactionStart": "after first warning draw; active wall clock excludes hidden intervals",
+          "maxIntegrationStep": 0.008333333333333333,
+          "trigger": 1.45,
+          "reach": 1.6,
+          "frontDot": 0.45,
+          "windup": 0.85,
+          "strike": 0.22,
+          "recovery": 0.9
+        },
+        "elapsed": 0.5,
+        "shotPresentation": {
+          "clock": "active-wall-clock",
+          "duration": 0.42,
+          "age": 0.449,
+          "recoil": {
+            "kick": 0,
+            "return": 0,
+            "position": {
+              "x": 0.34,
+              "y": -0.2775,
+              "z": -0.72
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "affectsAim": false
+          },
+          "visible": {
+            "muzzle": false,
+            "tracer": false,
+            "impact": false
+          },
+          "lastShot": {
+            "serial": 1,
+            "clock": 0.005300000011920929,
+            "result": "miss",
+            "surface": "room",
+            "enemyId": null,
+            "distance": 16.98,
+            "surfacePoint": {
+              "x": 0,
+              "y": 1.7,
+              "z": -10.98
+            },
+            "surfaceNormal": {
+              "x": 0,
+              "y": 0,
+              "z": 1
+            },
+            "origin": {
+              "x": 0.354,
+              "y": 1.458,
+              "z": 4.894
+            }
+          }
+        },
+        "feedback": {
+          "canFire": true,
+          "lastShotResult": "miss",
+          "hitConfirmed": false,
+          "damageCue": false,
+          "lastImpact": null
+        },
+        "player": {
+          "x": 0,
+          "z": 6,
+          "yaw": 0,
+          "pitch": 0
+        },
+        "enemies": [
+          {
+            "id": 1,
+            "x": -2.96,
+            "z": -9.78,
+            "hp": 2,
+            "attack": {
+              "phase": "pursuit",
+              "phaseElapsed": 0,
+              "cycle": 0,
+              "lockedYaw": 0.185,
+              "lastResult": null,
+              "lastDistance": null,
+              "visibleWindupWallSeconds": null
+            }
+          }
+        ],
+        "scope": "Original FPS room and robots. No COD code/assets ported. Ray hits, simple pursuit, telegraphed directional melee with range-checked strike, cover collision, three waves. Weapon recoil is a bounded visual response only; camera aiming is unchanged. Tracer starts at the actual weapon muzzle; sparks require a real ray intersection. Active play is limited to 960px; ready/paused/finished restore default clarity.",
+        "log": [
+          {
+            "time": 0,
+            "action": "波次开始",
+            "detail": 1
+          },
+          {
+            "time": 0,
+            "action": "发射呈现",
+            "detail": {
+              "serial": 1,
+              "clock": 0.005300000011920929,
+              "result": "miss",
+              "surface": "room",
+              "enemyId": null,
+              "distance": 16.98,
+              "surfacePoint": {
+                "x": 0,
+                "y": 1.7,
+                "z": -10.98
+              },
+              "surfaceNormal": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              },
+              "origin": {
+                "x": 0.354,
+                "y": 1.458,
+                "z": 4.894
+              }
+            }
+          }
+        ]
+      },
+      "hit": {
+        "module": "defense",
+        "status": "playing",
+        "running": true,
+        "renderer": "webgl",
+        "rendering": {
+          "drawCalls": 88,
+          "triangles": 54824,
+          "pixelRatio": 0.7818,
+          "defaultPixelRatio": 1,
+          "qualityPolicy": "active longest side at most 960px; ready, paused and finished restore default DPR",
+          "canvasPixels": {
+            "width": 960,
+            "height": 414
+          },
+          "interactiveResolutionLimit": 960,
+          "staticDrawCallsSaved": 354
+        },
+        "wave": 1,
+        "totalWaves": 3,
+        "health": 100,
+        "ammo": 10,
+        "reloading": false,
+        "kills": 0,
+        "shots": 2,
+        "hits": 1,
+        "attacks": 0,
+        "dodgedAttacks": 0,
+        "incomingHits": 0,
+        "attackTiming": {
+          "clock": "wall-clock",
+          "reactionStart": "after first warning draw; active wall clock excludes hidden intervals",
+          "maxIntegrationStep": 0.008333333333333333,
+          "trigger": 1.45,
+          "reach": 1.6,
+          "frontDot": 0.45,
+          "windup": 0.85,
+          "strike": 0.22,
+          "recovery": 0.9
+        },
+        "elapsed": 0.5,
+        "shotPresentation": {
+          "clock": "active-wall-clock",
+          "duration": 0.42,
+          "age": 0.001,
+          "recoil": {
+            "kick": 0.9949,
+            "return": 0.0052,
+            "position": {
+              "x": 0.348,
+              "y": -0.2914,
+              "z": -0.6753
+            },
+            "rotation": {
+              "x": 0.0646,
+              "y": -0.0119,
+              "z": -0.0249
+            },
+            "affectsAim": false
+          },
+          "visible": {
+            "muzzle": true,
+            "tracer": true,
+            "impact": true
+          },
+          "lastShot": {
+            "serial": 2,
+            "clock": 0.4700999999940395,
+            "result": "hit",
+            "surface": "robot",
+            "enemyId": 1,
+            "distance": 15.741,
+            "surfacePoint": {
+              "x": -2.899,
+              "y": 1.112,
+              "z": -9.461
+            },
+            "surfaceNormal": {
+              "x": 0.213,
+              "y": -0.105,
+              "z": 0.971
+            },
+            "origin": {
+              "x": 0.146,
+              "y": 1.419,
+              "z": 4.857
+            }
+          }
+        },
+        "feedback": {
+          "canFire": false,
+          "lastShotResult": "hit",
+          "hitConfirmed": true,
+          "damageCue": false,
+          "lastImpact": {
+            "x": -2.9,
+            "y": 1.11,
+            "z": -9.46
+          }
+        },
+        "player": {
+          "x": 0,
+          "z": 6,
+          "yaw": -0.185,
+          "pitch": -0.037
+        },
+        "enemies": [
+          {
+            "id": 1,
+            "x": -2.96,
+            "z": -9.78,
+            "hp": 1,
+            "attack": {
+              "phase": "pursuit",
+              "phaseElapsed": 0,
+              "cycle": 0,
+              "lockedYaw": 0.185,
+              "lastResult": null,
+              "lastDistance": null,
+              "visibleWindupWallSeconds": null
+            }
+          }
+        ],
+        "scope": "Original FPS room and robots. No COD code/assets ported. Ray hits, simple pursuit, telegraphed directional melee with range-checked strike, cover collision, three waves. Weapon recoil is a bounded visual response only; camera aiming is unchanged. Tracer starts at the actual weapon muzzle; sparks require a real ray intersection. Active play is limited to 960px; ready/paused/finished restore default clarity.",
+        "log": [
+          {
+            "time": 0,
+            "action": "波次开始",
+            "detail": 1
+          },
+          {
+            "time": 0,
+            "action": "发射呈现",
+            "detail": {
+              "serial": 1,
+              "clock": 0.005300000011920929,
+              "result": "miss",
+              "surface": "room",
+              "enemyId": null,
+              "distance": 16.98,
+              "surfacePoint": {
+                "x": 0,
+                "y": 1.7,
+                "z": -10.98
+              },
+              "surfaceNormal": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              },
+              "origin": {
+                "x": 0.354,
+                "y": 1.458,
+                "z": 4.894
+              }
+            }
+          },
+          {
+            "time": 0.5,
+            "action": "射击命中",
+            "detail": 1
+          },
+          {
+            "time": 0.5,
+            "action": "发射呈现",
+            "detail": {
+              "serial": 2,
+              "clock": 0.4700999999940395,
+              "result": "hit",
+              "surface": "robot",
+              "enemyId": 1,
+              "distance": 15.741,
+              "surfacePoint": {
+                "x": -2.899,
+                "y": 1.112,
+                "z": -9.461
+              },
+              "surfaceNormal": {
+                "x": 0.213,
+                "y": -0.105,
+                "z": 0.971
+              },
+              "origin": {
+                "x": 0.146,
+                "y": 1.419,
+                "z": 4.857
+              }
+            }
+          }
+        ]
+      },
+      "exported": {
+        "module": "defense",
+        "status": "playing",
+        "running": true,
+        "renderer": "webgl",
+        "rendering": {
+          "drawCalls": 88,
+          "triangles": 54824,
+          "pixelRatio": 0.7818,
+          "defaultPixelRatio": 1,
+          "qualityPolicy": "active longest side at most 960px; ready, paused and finished restore default DPR",
+          "canvasPixels": {
+            "width": 960,
+            "height": 414
+          },
+          "interactiveResolutionLimit": 960,
+          "staticDrawCallsSaved": 354
+        },
+        "wave": 1,
+        "totalWaves": 3,
+        "health": 100,
+        "ammo": 10,
+        "reloading": false,
+        "kills": 0,
+        "shots": 2,
+        "hits": 1,
+        "attacks": 0,
+        "dodgedAttacks": 0,
+        "incomingHits": 0,
+        "attackTiming": {
+          "clock": "wall-clock",
+          "reactionStart": "after first warning draw; active wall clock excludes hidden intervals",
+          "maxIntegrationStep": 0.008333333333333333,
+          "trigger": 1.45,
+          "reach": 1.6,
+          "frontDot": 0.45,
+          "windup": 0.85,
+          "strike": 0.22,
+          "recovery": 0.9
+        },
+        "elapsed": 0.5,
+        "shotPresentation": {
+          "clock": "active-wall-clock",
+          "duration": 0.42,
+          "age": 0.002,
+          "recoil": {
+            "kick": 0.9827,
+            "return": 0.0177,
+            "position": {
+              "x": 0.3479,
+              "y": -0.2918,
+              "z": -0.6759
+            },
+            "rotation": {
+              "x": 0.0637,
+              "y": -0.0118,
+              "z": -0.0246
+            },
+            "affectsAim": false
+          },
+          "visible": {
+            "muzzle": true,
+            "tracer": true,
+            "impact": true
+          },
+          "lastShot": {
+            "serial": 2,
+            "clock": 0.4700999999940395,
+            "result": "hit",
+            "surface": "robot",
+            "enemyId": 1,
+            "distance": 15.741,
+            "surfacePoint": {
+              "x": -2.899,
+              "y": 1.112,
+              "z": -9.461
+            },
+            "surfaceNormal": {
+              "x": 0.213,
+              "y": -0.105,
+              "z": 0.971
+            },
+            "origin": {
+              "x": 0.146,
+              "y": 1.419,
+              "z": 4.857
+            }
+          }
+        },
+        "feedback": {
+          "canFire": false,
+          "lastShotResult": "hit",
+          "hitConfirmed": true,
+          "damageCue": false,
+          "lastImpact": {
+            "x": -2.9,
+            "y": 1.11,
+            "z": -9.46
+          }
+        },
+        "player": {
+          "x": 0,
+          "z": 6,
+          "yaw": -0.185,
+          "pitch": -0.037
+        },
+        "enemies": [
+          {
+            "id": 1,
+            "x": -2.96,
+            "z": -9.76,
+            "hp": 1,
+            "attack": {
+              "phase": "pursuit",
+              "phaseElapsed": 0,
+              "cycle": 0,
+              "lockedYaw": 0.185,
+              "lastResult": null,
+              "lastDistance": null,
+              "visibleWindupWallSeconds": null
+            }
+          }
+        ],
+        "scope": "Original FPS room and robots. No COD code/assets ported. Ray hits, simple pursuit, telegraphed directional melee with range-checked strike, cover collision, three waves. Weapon recoil is a bounded visual response only; camera aiming is unchanged. Tracer starts at the actual weapon muzzle; sparks require a real ray intersection. Active play is limited to 960px; ready/paused/finished restore default clarity.",
+        "log": [
+          {
+            "time": 0,
+            "action": "波次开始",
+            "detail": 1
+          },
+          {
+            "time": 0,
+            "action": "发射呈现",
+            "detail": {
+              "serial": 1,
+              "clock": 0.005300000011920929,
+              "result": "miss",
+              "surface": "room",
+              "enemyId": null,
+              "distance": 16.98,
+              "surfacePoint": {
+                "x": 0,
+                "y": 1.7,
+                "z": -10.98
+              },
+              "surfaceNormal": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              },
+              "origin": {
+                "x": 0.354,
+                "y": 1.458,
+                "z": 4.894
+              }
+            }
+          },
+          {
+            "time": 0.5,
+            "action": "射击命中",
+            "detail": 1
+          },
+          {
+            "time": 0.5,
+            "action": "发射呈现",
+            "detail": {
+              "serial": 2,
+              "clock": 0.4700999999940395,
+              "result": "hit",
+              "surface": "robot",
+              "enemyId": 1,
+              "distance": 15.741,
+              "surfacePoint": {
+                "x": -2.899,
+                "y": 1.112,
+                "z": -9.461
+              },
+              "surfaceNormal": {
+                "x": 0.213,
+                "y": -0.105,
+                "z": 0.971
+              },
+              "origin": {
+                "x": 0.146,
+                "y": 1.419,
+                "z": 4.857
+              }
+            }
+          }
+        ]
+      },
+      "hidden": {
+        "first": {
+          "module": "defense",
+          "status": "playing",
+          "running": false,
+          "renderer": "webgl",
+          "rendering": {
+            "drawCalls": 127,
+            "triangles": 89778,
+            "pixelRatio": 1,
+            "defaultPixelRatio": 1,
+            "qualityPolicy": "active longest side at most 960px; ready, paused and finished restore default DPR",
+            "canvasPixels": {
+              "width": 1,
+              "height": 1
+            },
+            "interactiveResolutionLimit": 960,
+            "staticDrawCallsSaved": 354
+          },
+          "wave": 1,
+          "totalWaves": 3,
+          "health": 100,
+          "ammo": 10,
+          "reloading": false,
+          "kills": 0,
+          "shots": 2,
+          "hits": 1,
+          "attacks": 0,
+          "dodgedAttacks": 0,
+          "incomingHits": 0,
+          "attackTiming": {
+            "clock": "wall-clock",
+            "reactionStart": "after first warning draw; active wall clock excludes hidden intervals",
+            "maxIntegrationStep": 0.008333333333333333,
+            "trigger": 1.45,
+            "reach": 1.6,
+            "frontDot": 0.45,
+            "windup": 0.85,
+            "strike": 0.22,
+            "recovery": 0.9
+          },
+          "elapsed": 8.7,
+          "shotPresentation": {
+            "clock": "active-wall-clock",
+            "duration": 0.42,
+            "age": 8.301,
+            "recoil": {
+              "kick": 0,
+              "return": 0,
+              "position": {
+                "x": 0.34,
+                "y": -0.2742,
+                "z": -0.72
+              },
+              "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "affectsAim": false
+            },
+            "visible": {
+              "muzzle": false,
+              "tracer": false,
+              "impact": false
+            },
+            "lastShot": {
+              "serial": 2,
+              "clock": 0.4700999999940395,
+              "result": "hit",
+              "surface": "robot",
+              "enemyId": 1,
+              "distance": 15.741,
+              "surfacePoint": {
+                "x": -2.899,
+                "y": 1.112,
+                "z": -9.461
+              },
+              "surfaceNormal": {
+                "x": 0.213,
+                "y": -0.105,
+                "z": 0.971
+              },
+              "origin": {
+                "x": 0.146,
+                "y": 1.419,
+                "z": 4.857
+              }
+            }
+          },
+          "feedback": {
+            "canFire": false,
+            "lastShotResult": "hit",
+            "hitConfirmed": false,
+            "damageCue": false,
+            "lastImpact": {
+              "x": -2.9,
+              "y": 1.11,
+              "z": -9.46
+            }
+          },
+          "player": {
+            "x": 0,
+            "z": 6,
+            "yaw": -0.185,
+            "pitch": -0.037
+          },
+          "enemies": [
+            {
+              "id": 1,
+              "x": -1.64,
+              "z": -2.74,
+              "hp": 1,
+              "attack": {
+                "phase": "pursuit",
+                "phaseElapsed": 0,
+                "cycle": 0,
+                "lockedYaw": 0.185,
+                "lastResult": null,
+                "lastDistance": null,
+                "visibleWindupWallSeconds": null
+              }
+            },
+            {
+              "id": 2,
+              "x": 2.06,
+              "z": -4.97,
+              "hp": 2,
+              "attack": {
+                "phase": "pursuit",
+                "phaseElapsed": 0,
+                "cycle": 0,
+                "lockedYaw": -0.185,
+                "lastResult": null,
+                "lastDistance": null,
+                "visibleWindupWallSeconds": null
+              }
+            },
+            {
+              "id": 3,
+              "x": -7.29,
+              "z": -3.72,
+              "hp": 2,
+              "attack": {
+                "phase": "pursuit",
+                "phaseElapsed": 0,
+                "cycle": 0,
+                "lockedYaw": 0.644,
+                "lastResult": null,
+                "lastDistance": null,
+                "visibleWindupWallSeconds": null
+              }
+            }
+          ],
+          "scope": "Original FPS room and robots. No COD code/assets ported. Ray hits, simple pursuit, telegraphed directional melee with range-checked strike, cover collision, three waves. Weapon recoil is a bounded visual response only; camera aiming is unchanged. Tracer starts at the actual weapon muzzle; sparks require a real ray intersection. Active play is limited to 960px; ready/paused/finished restore default clarity.",
+          "log": [
+            {
+              "time": 0,
+              "action": "波次开始",
+              "detail": 1
+            },
+            {
+              "time": 0,
+              "action": "发射呈现",
+              "detail": {
+                "serial": 1,
+                "clock": 0.005300000011920929,
+                "result": "miss",
+                "surface": "room",
+                "enemyId": null,
+                "distance": 16.98,
+                "surfacePoint": {
+                  "x": 0,
+                  "y": 1.7,
+                  "z": -10.98
+                },
+                "surfaceNormal": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 1
+                },
+                "origin": {
+                  "x": 0.354,
+                  "y": 1.458,
+                  "z": 4.894
+                }
+              }
+            },
+            {
+              "time": 0.5,
+              "action": "射击命中",
+              "detail": 1
+            },
+            {
+              "time": 0.5,
+              "action": "发射呈现",
+              "detail": {
+                "serial": 2,
+                "clock": 0.4700999999940395,
+                "result": "hit",
+                "surface": "robot",
+                "enemyId": 1,
+                "distance": 15.741,
+                "surfacePoint": {
+                  "x": -2.899,
+                  "y": 1.112,
+                  "z": -9.461
+                },
+                "surfaceNormal": {
+                  "x": 0.213,
+                  "y": -0.105,
+                  "z": 0.971
+                },
+                "origin": {
+                  "x": 0.146,
+                  "y": 1.419,
+                  "z": 4.857
+                }
+              }
+            }
+          ]
+        },
+        "second": {
+          "module": "defense",
+          "status": "playing",
+          "running": false,
+          "renderer": "webgl",
+          "rendering": {
+            "drawCalls": 127,
+            "triangles": 89778,
+            "pixelRatio": 1,
+            "defaultPixelRatio": 1,
+            "qualityPolicy": "active longest side at most 960px; ready, paused and finished restore default DPR",
+            "canvasPixels": {
+              "width": 1,
+              "height": 1
+            },
+            "interactiveResolutionLimit": 960,
+            "staticDrawCallsSaved": 354
+          },
+          "wave": 1,
+          "totalWaves": 3,
+          "health": 100,
+          "ammo": 10,
+          "reloading": false,
+          "kills": 0,
+          "shots": 2,
+          "hits": 1,
+          "attacks": 0,
+          "dodgedAttacks": 0,
+          "incomingHits": 0,
+          "attackTiming": {
+            "clock": "wall-clock",
+            "reactionStart": "after first warning draw; active wall clock excludes hidden intervals",
+            "maxIntegrationStep": 0.008333333333333333,
+            "trigger": 1.45,
+            "reach": 1.6,
+            "frontDot": 0.45,
+            "windup": 0.85,
+            "strike": 0.22,
+            "recovery": 0.9
+          },
+          "elapsed": 8.7,
+          "shotPresentation": {
+            "clock": "active-wall-clock",
+            "duration": 0.42,
+            "age": 8.301,
+            "recoil": {
+              "kick": 0,
+              "return": 0,
+              "position": {
+                "x": 0.34,
+                "y": -0.2742,
+                "z": -0.72
+              },
+              "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "affectsAim": false
+            },
+            "visible": {
+              "muzzle": false,
+              "tracer": false,
+              "impact": false
+            },
+            "lastShot": {
+              "serial": 2,
+              "clock": 0.4700999999940395,
+              "result": "hit",
+              "surface": "robot",
+              "enemyId": 1,
+              "distance": 15.741,
+              "surfacePoint": {
+                "x": -2.899,
+                "y": 1.112,
+                "z": -9.461
+              },
+              "surfaceNormal": {
+                "x": 0.213,
+                "y": -0.105,
+                "z": 0.971
+              },
+              "origin": {
+                "x": 0.146,
+                "y": 1.419,
+                "z": 4.857
+              }
+            }
+          },
+          "feedback": {
+            "canFire": false,
+            "lastShotResult": "hit",
+            "hitConfirmed": false,
+            "damageCue": false,
+            "lastImpact": {
+              "x": -2.9,
+              "y": 1.11,
+              "z": -9.46
+            }
+          },
+          "player": {
+            "x": 0,
+            "z": 6,
+            "yaw": -0.185,
+            "pitch": -0.037
+          },
+          "enemies": [
+            {
+              "id": 1,
+              "x": -1.64,
+              "z": -2.74,
+              "hp": 1,
+              "attack": {
+                "phase": "pursuit",
+                "phaseElapsed": 0,
+                "cycle": 0,
+                "lockedYaw": 0.185,
+                "lastResult": null,
+                "lastDistance": null,
+                "visibleWindupWallSeconds": null
+              }
+            },
+            {
+              "id": 2,
+              "x": 2.06,
+              "z": -4.97,
+              "hp": 2,
+              "attack": {
+                "phase": "pursuit",
+                "phaseElapsed": 0,
+                "cycle": 0,
+                "lockedYaw": -0.185,
+                "lastResult": null,
+                "lastDistance": null,
+                "visibleWindupWallSeconds": null
+              }
+            },
+            {
+              "id": 3,
+              "x": -7.29,
+              "z": -3.72,
+              "hp": 2,
+              "attack": {
+                "phase": "pursuit",
+                "phaseElapsed": 0,
+                "cycle": 0,
+                "lockedYaw": 0.644,
+                "lastResult": null,
+                "lastDistance": null,
+                "visibleWindupWallSeconds": null
+              }
+            }
+          ],
+          "scope": "Original FPS room and robots. No COD code/assets ported. Ray hits, simple pursuit, telegraphed directional melee with range-checked strike, cover collision, three waves. Weapon recoil is a bounded visual response only; camera aiming is unchanged. Tracer starts at the actual weapon muzzle; sparks require a real ray intersection. Active play is limited to 960px; ready/paused/finished restore default clarity.",
+          "log": [
+            {
+              "time": 0,
+              "action": "波次开始",
+              "detail": 1
+            },
+            {
+              "time": 0,
+              "action": "发射呈现",
+              "detail": {
+                "serial": 1,
+                "clock": 0.005300000011920929,
+                "result": "miss",
+                "surface": "room",
+                "enemyId": null,
+                "distance": 16.98,
+                "surfacePoint": {
+                  "x": 0,
+                  "y": 1.7,
+                  "z": -10.98
+                },
+                "surfaceNormal": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 1
+                },
+                "origin": {
+                  "x": 0.354,
+                  "y": 1.458,
+                  "z": 4.894
+                }
+              }
+            },
+            {
+              "time": 0.5,
+              "action": "射击命中",
+              "detail": 1
+            },
+            {
+              "time": 0.5,
+              "action": "发射呈现",
+              "detail": {
+                "serial": 2,
+                "clock": 0.4700999999940395,
+                "result": "hit",
+                "surface": "robot",
+                "enemyId": 1,
+                "distance": 15.741,
+                "surfacePoint": {
+                  "x": -2.899,
+                  "y": 1.112,
+                  "z": -9.461
+                },
+                "surfaceNormal": {
+                  "x": 0.213,
+                  "y": -0.105,
+                  "z": 0.971
+                },
+                "origin": {
+                  "x": 0.146,
+                  "y": 1.419,
+                  "z": 4.857
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "case07": {
+      "entry": {
+        "caseId": 7,
+        "time": "dusk",
+        "treeDensity": 20,
+        "selected": null,
+        "visits": [],
+        "view": {
+          "yaw": 0.4,
+          "elevation": 0.54,
+          "distance": 34
+        },
+        "mode": "walk",
+        "position": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        },
+        "reached": [],
+        "proximity": {
+          "id": "visual-systems",
+          "distance": 11.29,
+          "canView": false,
+          "viewed": false
+        },
+        "architecture": {
+          "nearHouseCount": 2,
+          "windowCount": 16,
+          "shutterLeafCount": 32,
+          "hingeCount": 64,
+          "archDoorCount": 1,
+          "recessDepth": 0.2,
+          "eaveLayers": 3,
+          "brickCourses": 3,
+          "glassEmissiveIntensity": 0.055,
+          "nearHouses": [
+            {
+              "position": {
+                "x": -7,
+                "z": 5.8
+              },
+              "width": 4.4,
+              "height": 4.5,
+              "depth": 5,
+              "type": "warm timber lane facade",
+              "windowCount": 8,
+              "shutterLeafCount": 16,
+              "hingeCount": 32,
+              "archDoorCount": 0,
+              "rectDoorCount": 1,
+              "brickCount": 97,
+              "recessDepth": 0.2,
+              "wallThickness": 0.24,
+              "diamondLead": true,
+              "glass": "Original cool-grey reflective tint; no scene refraction",
+              "eaveLayers": 3,
+              "brickCourses": 3,
+              "staticMeshCount": 11,
+              "instancedMeshCount": 2,
+              "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+            },
+            {
+              "position": {
+                "x": 1.4,
+                "z": 6
+              },
+              "width": 6,
+              "height": 4.3,
+              "depth": 4.6,
+              "type": "pale masonry lane facade",
+              "windowCount": 8,
+              "shutterLeafCount": 16,
+              "hingeCount": 32,
+              "archDoorCount": 1,
+              "rectDoorCount": 0,
+              "brickCount": 119,
+              "recessDepth": 0.2,
+              "wallThickness": 0.24,
+              "diamondLead": true,
+              "glass": "Original cool-grey reflective tint; no scene refraction",
+              "eaveLayers": 3,
+              "brickCourses": 3,
+              "staticMeshCount": 11,
+              "instancedMeshCount": 2,
+              "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+            }
+          ],
+          "scope": "Only the two existing lane houses are detailed. Building positions, original footprint collisions, eye height and three exhibit collections remain the same. Fixed original architecture, not interactive doors or source assets."
+        },
+        "exhibits": [
+          {
+            "id": "visual-systems",
+            "role": "纸档案、主题色与实际展厅画面",
+            "objects": [
+              "双页作品档案",
+              "三种展厅主题样板",
+              "CASE 01 实际运行画面"
+            ],
+            "relatedCases": [
+              1
+            ],
+            "page": "./?id=1",
+            "defaultRecipe": null
+          },
+          {
+            "id": "product-lab",
+            "role": "实体琴键、机器人与猫、默认配方谱板",
+            "objects": [
+              "微缩实体琴键",
+              "原创机器人与猫",
+              "默认 32 音符 / 90 BPM 谱板",
+              "CASE 06 实际运行画面"
+            ],
+            "relatedCases": [
+              6
+            ],
+            "page": "./?id=6",
+            "defaultRecipe": {
+              "mode": "static-default-illustration",
+              "mood": "calm",
+              "noteCount": 32,
+              "tempo": 90
+            }
+          },
+          {
+            "id": "research-notes",
+            "role": "路线沙盘、来源册、案例索引与参观凭证",
+            "objects": [
+              "本例入口与三展位路线沙盘",
+              "原片 00:22 来源册",
+              "观察 / 结论 / 验收索引抽屉",
+              "本次真实参观凭证"
+            ],
+            "relatedCases": [
+              7
+            ],
+            "page": "../#demo-07",
+            "defaultRecipe": null
+          }
+        ],
+        "space": {
+          "phase": "entrance-lane",
+          "discovered": [
+            "visual-systems"
+          ],
+          "booths": [
+            {
+              "id": "visual-systems",
+              "x": -4.6,
+              "z": -0.3,
+              "yaw": 0.13,
+              "approach": {
+                "x": -4.35,
+                "z": 2,
+                "yaw": 0.1,
+                "pitch": 0
+              }
+            },
+            {
+              "id": "product-lab",
+              "x": 2.6,
+              "z": -6.1,
+              "yaw": 0.1,
+              "approach": {
+                "x": 2.8,
+                "z": -3.9,
+                "yaw": 0.1,
+                "pitch": 0
+              }
+            },
+            {
+              "id": "research-notes",
+              "x": 4.5,
+              "z": 0.2,
+              "yaw": -0.12,
+              "approach": {
+                "x": 5.4,
+                "z": 2.5,
+                "yaw": 0.37,
+                "pitch": 0
+              }
+            }
+          ],
+          "entry": {
+            "x": -2.55,
+            "z": 10.8,
+            "yaw": 0.04,
+            "pitch": -0.02
+          }
+        },
+        "walkingDistance": 0,
+        "renderer": "webgl",
+        "renderCount": 23,
+        "renderStats": {
+          "drawCalls": 360,
+          "triangles": 184746,
+          "pixelRatio": 1
+        },
+        "assets": {
+          "geometry": "Two original recessed lane facades; existing village buildings and three static content-specific exhibit collections",
+          "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+          "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+        }
+      },
+      "near": {
+        "caseId": 7,
+        "time": "dusk",
+        "treeDensity": 20,
+        "selected": null,
+        "visits": [],
+        "view": {
+          "yaw": 0.4,
+          "elevation": 0.54,
+          "distance": 34
+        },
+        "mode": "walk",
+        "position": {
+          "x": -2.913902941098371,
+          "z": 1.7072790293851057,
+          "yaw": 0.04,
+          "pitch": -0.02
+        },
+        "reached": [
+          "visual-systems"
+        ],
+        "proximity": {
+          "id": "visual-systems",
+          "distance": 2.62,
+          "canView": true,
+          "viewed": false
+        },
+        "architecture": {
+          "nearHouseCount": 2,
+          "windowCount": 16,
+          "shutterLeafCount": 32,
+          "hingeCount": 64,
+          "archDoorCount": 1,
+          "recessDepth": 0.2,
+          "eaveLayers": 3,
+          "brickCourses": 3,
+          "glassEmissiveIntensity": 0.055,
+          "nearHouses": [
+            {
+              "position": {
+                "x": -7,
+                "z": 5.8
+              },
+              "width": 4.4,
+              "height": 4.5,
+              "depth": 5,
+              "type": "warm timber lane facade",
+              "windowCount": 8,
+              "shutterLeafCount": 16,
+              "hingeCount": 32,
+              "archDoorCount": 0,
+              "rectDoorCount": 1,
+              "brickCount": 97,
+              "recessDepth": 0.2,
+              "wallThickness": 0.24,
+              "diamondLead": true,
+              "glass": "Original cool-grey reflective tint; no scene refraction",
+              "eaveLayers": 3,
+              "brickCourses": 3,
+              "staticMeshCount": 11,
+              "instancedMeshCount": 2,
+              "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+            },
+            {
+              "position": {
+                "x": 1.4,
+                "z": 6
+              },
+              "width": 6,
+              "height": 4.3,
+              "depth": 4.6,
+              "type": "pale masonry lane facade",
+              "windowCount": 8,
+              "shutterLeafCount": 16,
+              "hingeCount": 32,
+              "archDoorCount": 1,
+              "rectDoorCount": 0,
+              "brickCount": 119,
+              "recessDepth": 0.2,
+              "wallThickness": 0.24,
+              "diamondLead": true,
+              "glass": "Original cool-grey reflective tint; no scene refraction",
+              "eaveLayers": 3,
+              "brickCourses": 3,
+              "staticMeshCount": 11,
+              "instancedMeshCount": 2,
+              "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+            }
+          ],
+          "scope": "Only the two existing lane houses are detailed. Building positions, original footprint collisions, eye height and three exhibit collections remain the same. Fixed original architecture, not interactive doors or source assets."
+        },
+        "exhibits": [
+          {
+            "id": "visual-systems",
+            "role": "纸档案、主题色与实际展厅画面",
+            "objects": [
+              "双页作品档案",
+              "三种展厅主题样板",
+              "CASE 01 实际运行画面"
+            ],
+            "relatedCases": [
+              1
+            ],
+            "page": "./?id=1",
+            "defaultRecipe": null
+          },
+          {
+            "id": "product-lab",
+            "role": "实体琴键、机器人与猫、默认配方谱板",
+            "objects": [
+              "微缩实体琴键",
+              "原创机器人与猫",
+              "默认 32 音符 / 90 BPM 谱板",
+              "CASE 06 实际运行画面"
+            ],
+            "relatedCases": [
+              6
+            ],
+            "page": "./?id=6",
+            "defaultRecipe": {
+              "mode": "static-default-illustration",
+              "mood": "calm",
+              "noteCount": 32,
+              "tempo": 90
+            }
+          },
+          {
+            "id": "research-notes",
+            "role": "路线沙盘、来源册、案例索引与参观凭证",
+            "objects": [
+              "本例入口与三展位路线沙盘",
+              "原片 00:22 来源册",
+              "观察 / 结论 / 验收索引抽屉",
+              "本次真实参观凭证"
+            ],
+            "relatedCases": [
+              7
+            ],
+            "page": "../#demo-07",
+            "defaultRecipe": null
+          }
+        ],
+        "space": {
+          "phase": "market-square",
+          "discovered": [
+            "visual-systems",
+            "product-lab"
+          ],
+          "booths": [
+            {
+              "id": "visual-systems",
+              "x": -4.6,
+              "z": -0.3,
+              "yaw": 0.13,
+              "approach": {
+                "x": -4.35,
+                "z": 2,
+                "yaw": 0.1,
+                "pitch": 0
+              }
+            },
+            {
+              "id": "product-lab",
+              "x": 2.6,
+              "z": -6.1,
+              "yaw": 0.1,
+              "approach": {
+                "x": 2.8,
+                "z": -3.9,
+                "yaw": 0.1,
+                "pitch": 0
+              }
+            },
+            {
+              "id": "research-notes",
+              "x": 4.5,
+              "z": 0.2,
+              "yaw": -0.12,
+              "approach": {
+                "x": 5.4,
+                "z": 2.5,
+                "yaw": 0.37,
+                "pitch": 0
+              }
+            }
+          ],
+          "entry": {
+            "x": -2.55,
+            "z": 10.8,
+            "yaw": 0.04,
+            "pitch": -0.02
+          }
+        },
+        "walkingDistance": 9.1,
+        "renderer": "webgl",
+        "renderCount": 49,
+        "renderStats": {
+          "drawCalls": 193,
+          "triangles": 74716,
+          "pixelRatio": 1
+        },
+        "assets": {
+          "geometry": "Two original recessed lane facades; existing village buildings and three static content-specific exhibit collections",
+          "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+          "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+        }
+      },
+      "viewed": {
+        "caseId": 7,
+        "time": "dusk",
+        "treeDensity": 20,
+        "selected": "visual-systems",
+        "visits": [
+          {
+            "id": "visual-systems",
+            "title": "视觉系统展位",
+            "visitedAt": "2026-10-03T00:58:43.492Z",
+            "via": "near-view",
+            "positionAtView": {
+              "x": -2.913902941098371,
+              "z": 1.7072790293851057,
+              "yaw": 0.04,
+              "pitch": -0.02
+            },
+            "distanceAtView": 2.62,
+            "relatedCases": [
+              1
+            ],
+            "shownObjects": [
+              "双页作品档案",
+              "三种展厅主题样板",
+              "CASE 01 实际运行画面"
+            ]
+          }
+        ],
+        "view": {
+          "yaw": 0.4,
+          "elevation": 0.54,
+          "distance": 34
+        },
+        "mode": "walk",
+        "position": {
+          "x": -2.913902941098371,
+          "z": 1.7072790293851057,
+          "yaw": 0.04,
+          "pitch": -0.02
+        },
+        "reached": [
+          "visual-systems"
+        ],
+        "proximity": {
+          "id": "visual-systems",
+          "distance": 2.62,
+          "canView": true,
+          "viewed": true
+        },
+        "architecture": {
+          "nearHouseCount": 2,
+          "windowCount": 16,
+          "shutterLeafCount": 32,
+          "hingeCount": 64,
+          "archDoorCount": 1,
+          "recessDepth": 0.2,
+          "eaveLayers": 3,
+          "brickCourses": 3,
+          "glassEmissiveIntensity": 0.055,
+          "nearHouses": [
+            {
+              "position": {
+                "x": -7,
+                "z": 5.8
+              },
+              "width": 4.4,
+              "height": 4.5,
+              "depth": 5,
+              "type": "warm timber lane facade",
+              "windowCount": 8,
+              "shutterLeafCount": 16,
+              "hingeCount": 32,
+              "archDoorCount": 0,
+              "rectDoorCount": 1,
+              "brickCount": 97,
+              "recessDepth": 0.2,
+              "wallThickness": 0.24,
+              "diamondLead": true,
+              "glass": "Original cool-grey reflective tint; no scene refraction",
+              "eaveLayers": 3,
+              "brickCourses": 3,
+              "staticMeshCount": 11,
+              "instancedMeshCount": 2,
+              "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+            },
+            {
+              "position": {
+                "x": 1.4,
+                "z": 6
+              },
+              "width": 6,
+              "height": 4.3,
+              "depth": 4.6,
+              "type": "pale masonry lane facade",
+              "windowCount": 8,
+              "shutterLeafCount": 16,
+              "hingeCount": 32,
+              "archDoorCount": 1,
+              "rectDoorCount": 0,
+              "brickCount": 119,
+              "recessDepth": 0.2,
+              "wallThickness": 0.24,
+              "diamondLead": true,
+              "glass": "Original cool-grey reflective tint; no scene refraction",
+              "eaveLayers": 3,
+              "brickCourses": 3,
+              "staticMeshCount": 11,
+              "instancedMeshCount": 2,
+              "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+            }
+          ],
+          "scope": "Only the two existing lane houses are detailed. Building positions, original footprint collisions, eye height and three exhibit collections remain the same. Fixed original architecture, not interactive doors or source assets."
+        },
+        "exhibits": [
+          {
+            "id": "visual-systems",
+            "role": "纸档案、主题色与实际展厅画面",
+            "objects": [
+              "双页作品档案",
+              "三种展厅主题样板",
+              "CASE 01 实际运行画面"
+            ],
+            "relatedCases": [
+              1
+            ],
+            "page": "./?id=1",
+            "defaultRecipe": null
+          },
+          {
+            "id": "product-lab",
+            "role": "实体琴键、机器人与猫、默认配方谱板",
+            "objects": [
+              "微缩实体琴键",
+              "原创机器人与猫",
+              "默认 32 音符 / 90 BPM 谱板",
+              "CASE 06 实际运行画面"
+            ],
+            "relatedCases": [
+              6
+            ],
+            "page": "./?id=6",
+            "defaultRecipe": {
+              "mode": "static-default-illustration",
+              "mood": "calm",
+              "noteCount": 32,
+              "tempo": 90
+            }
+          },
+          {
+            "id": "research-notes",
+            "role": "路线沙盘、来源册、案例索引与参观凭证",
+            "objects": [
+              "本例入口与三展位路线沙盘",
+              "原片 00:22 来源册",
+              "观察 / 结论 / 验收索引抽屉",
+              "本次真实参观凭证"
+            ],
+            "relatedCases": [
+              7
+            ],
+            "page": "../#demo-07",
+            "defaultRecipe": null
+          }
+        ],
+        "space": {
+          "phase": "market-square",
+          "discovered": [
+            "visual-systems",
+            "product-lab"
+          ],
+          "booths": [
+            {
+              "id": "visual-systems",
+              "x": -4.6,
+              "z": -0.3,
+              "yaw": 0.13,
+              "approach": {
+                "x": -4.35,
+                "z": 2,
+                "yaw": 0.1,
+                "pitch": 0
+              }
+            },
+            {
+              "id": "product-lab",
+              "x": 2.6,
+              "z": -6.1,
+              "yaw": 0.1,
+              "approach": {
+                "x": 2.8,
+                "z": -3.9,
+                "yaw": 0.1,
+                "pitch": 0
+              }
+            },
+            {
+              "id": "research-notes",
+              "x": 4.5,
+              "z": 0.2,
+              "yaw": -0.12,
+              "approach": {
+                "x": 5.4,
+                "z": 2.5,
+                "yaw": 0.37,
+                "pitch": 0
+              }
+            }
+          ],
+          "entry": {
+            "x": -2.55,
+            "z": 10.8,
+            "yaw": 0.04,
+            "pitch": -0.02
+          }
+        },
+        "walkingDistance": 9.1,
+        "renderer": "webgl",
+        "renderCount": 50,
+        "renderStats": {
+          "drawCalls": 193,
+          "triangles": 74716,
+          "pixelRatio": 1
+        },
+        "assets": {
+          "geometry": "Two original recessed lane facades; existing village buildings and three static content-specific exhibit collections",
+          "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+          "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+        }
+      },
+      "exported": {
+        "caseId": 7,
+        "time": "dusk",
+        "treeDensity": 20,
+        "selected": "product-lab",
+        "visits": [
+          {
+            "id": "visual-systems",
+            "title": "视觉系统展位",
+            "visitedAt": "2026-10-03T00:58:43.492Z",
+            "via": "near-view",
+            "positionAtView": {
+              "x": -2.913902941098371,
+              "z": 1.7072790293851057,
+              "yaw": 0.04,
+              "pitch": -0.02
+            },
+            "distanceAtView": 2.62,
+            "relatedCases": [
+              1
+            ],
+            "shownObjects": [
+              "双页作品档案",
+              "三种展厅主题样板",
+              "CASE 01 实际运行画面"
+            ]
+          },
+          {
+            "id": "product-lab",
+            "title": "产品原型展位",
+            "visitedAt": "2026-10-03T00:58:43.554Z",
+            "via": "guided-shortcut",
+            "positionAtView": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            },
+            "distanceAtView": 2.21,
+            "relatedCases": [
+              6
+            ],
+            "shownObjects": [
+              "微缩实体琴键",
+              "原创机器人与猫",
+              "默认 32 音符 / 90 BPM 谱板",
+              "CASE 06 实际运行画面"
+            ]
+          }
+        ],
+        "view": {
+          "yaw": 0.4,
+          "elevation": 0.54,
+          "distance": 34
+        },
+        "mode": "walk",
+        "position": {
+          "x": 2.8,
+          "z": -3.9,
+          "yaw": 0.1,
+          "pitch": 0
+        },
+        "reached": [
+          "visual-systems",
+          "product-lab"
+        ],
+        "proximity": {
+          "id": "product-lab",
+          "distance": 2.21,
+          "canView": true,
+          "viewed": true
+        },
+        "architecture": {
+          "nearHouseCount": 2,
+          "windowCount": 16,
+          "shutterLeafCount": 32,
+          "hingeCount": 64,
+          "archDoorCount": 1,
+          "recessDepth": 0.2,
+          "eaveLayers": 3,
+          "brickCourses": 3,
+          "glassEmissiveIntensity": 0.055,
+          "nearHouses": [
+            {
+              "position": {
+                "x": -7,
+                "z": 5.8
+              },
+              "width": 4.4,
+              "height": 4.5,
+              "depth": 5,
+              "type": "warm timber lane facade",
+              "windowCount": 8,
+              "shutterLeafCount": 16,
+              "hingeCount": 32,
+              "archDoorCount": 0,
+              "rectDoorCount": 1,
+              "brickCount": 97,
+              "recessDepth": 0.2,
+              "wallThickness": 0.24,
+              "diamondLead": true,
+              "glass": "Original cool-grey reflective tint; no scene refraction",
+              "eaveLayers": 3,
+              "brickCourses": 3,
+              "staticMeshCount": 11,
+              "instancedMeshCount": 2,
+              "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+            },
+            {
+              "position": {
+                "x": 1.4,
+                "z": 6
+              },
+              "width": 6,
+              "height": 4.3,
+              "depth": 4.6,
+              "type": "pale masonry lane facade",
+              "windowCount": 8,
+              "shutterLeafCount": 16,
+              "hingeCount": 32,
+              "archDoorCount": 1,
+              "rectDoorCount": 0,
+              "brickCount": 119,
+              "recessDepth": 0.2,
+              "wallThickness": 0.24,
+              "diamondLead": true,
+              "glass": "Original cool-grey reflective tint; no scene refraction",
+              "eaveLayers": 3,
+              "brickCourses": 3,
+              "staticMeshCount": 11,
+              "instancedMeshCount": 2,
+              "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+            }
+          ],
+          "scope": "Only the two existing lane houses are detailed. Building positions, original footprint collisions, eye height and three exhibit collections remain the same. Fixed original architecture, not interactive doors or source assets."
+        },
+        "exhibits": [
+          {
+            "id": "visual-systems",
+            "role": "纸档案、主题色与实际展厅画面",
+            "objects": [
+              "双页作品档案",
+              "三种展厅主题样板",
+              "CASE 01 实际运行画面"
+            ],
+            "relatedCases": [
+              1
+            ],
+            "page": "./?id=1",
+            "defaultRecipe": null
+          },
+          {
+            "id": "product-lab",
+            "role": "实体琴键、机器人与猫、默认配方谱板",
+            "objects": [
+              "微缩实体琴键",
+              "原创机器人与猫",
+              "默认 32 音符 / 90 BPM 谱板",
+              "CASE 06 实际运行画面"
+            ],
+            "relatedCases": [
+              6
+            ],
+            "page": "./?id=6",
+            "defaultRecipe": {
+              "mode": "static-default-illustration",
+              "mood": "calm",
+              "noteCount": 32,
+              "tempo": 90
+            }
+          },
+          {
+            "id": "research-notes",
+            "role": "路线沙盘、来源册、案例索引与参观凭证",
+            "objects": [
+              "本例入口与三展位路线沙盘",
+              "原片 00:22 来源册",
+              "观察 / 结论 / 验收索引抽屉",
+              "本次真实参观凭证"
+            ],
+            "relatedCases": [
+              7
+            ],
+            "page": "../#demo-07",
+            "defaultRecipe": null
+          }
+        ],
+        "space": {
+          "phase": "market-square",
+          "discovered": [
+            "visual-systems",
+            "product-lab"
+          ],
+          "booths": [
+            {
+              "id": "visual-systems",
+              "x": -4.6,
+              "z": -0.3,
+              "yaw": 0.13,
+              "approach": {
+                "x": -4.35,
+                "z": 2,
+                "yaw": 0.1,
+                "pitch": 0
+              }
+            },
+            {
+              "id": "product-lab",
+              "x": 2.6,
+              "z": -6.1,
+              "yaw": 0.1,
+              "approach": {
+                "x": 2.8,
+                "z": -3.9,
+                "yaw": 0.1,
+                "pitch": 0
+              }
+            },
+            {
+              "id": "research-notes",
+              "x": 4.5,
+              "z": 0.2,
+              "yaw": -0.12,
+              "approach": {
+                "x": 5.4,
+                "z": 2.5,
+                "yaw": 0.37,
+                "pitch": 0
+              }
+            }
+          ],
+          "entry": {
+            "x": -2.55,
+            "z": 10.8,
+            "yaw": 0.04,
+            "pitch": -0.02
+          }
+        },
+        "walkingDistance": 9.1,
+        "renderer": "webgl",
+        "renderCount": 52,
+        "renderStats": {
+          "drawCalls": 102,
+          "triangles": 27828,
+          "pixelRatio": 1
+        },
+        "assets": {
+          "geometry": "Two original recessed lane facades; existing village buildings and three static content-specific exhibit collections",
+          "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+          "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+        }
+      },
+      "own": {
+        "schemaVersion": 2,
+        "product": "我们的研究集市",
+        "caseReference": 7,
+        "createdAt": "2026-10-03T00:58:43.659Z",
+        "environment": {
+          "time": "dusk",
+          "timeLabel": "黄昏",
+          "treeDensity": 20
+        },
+        "architecture": {
+          "nearHouseCount": 2,
+          "windowCount": 16,
+          "shutterLeafCount": 32,
+          "hingeCount": 64,
+          "archDoorCount": 1,
+          "recessDepth": 0.2,
+          "eaveLayers": 3,
+          "brickCourses": 3,
+          "glassEmissiveIntensity": 0.055,
+          "nearHouses": [
+            {
+              "position": {
+                "x": -7,
+                "z": 5.8
+              },
+              "width": 4.4,
+              "height": 4.5,
+              "depth": 5,
+              "type": "warm timber lane facade",
+              "windowCount": 8,
+              "shutterLeafCount": 16,
+              "hingeCount": 32,
+              "archDoorCount": 0,
+              "rectDoorCount": 1,
+              "brickCount": 97,
+              "recessDepth": 0.2,
+              "wallThickness": 0.24,
+              "diamondLead": true,
+              "glass": "Original cool-grey reflective tint; no scene refraction",
+              "eaveLayers": 3,
+              "brickCourses": 3,
+              "staticMeshCount": 11,
+              "instancedMeshCount": 2,
+              "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+            },
+            {
+              "position": {
+                "x": 1.4,
+                "z": 6
+              },
+              "width": 6,
+              "height": 4.3,
+              "depth": 4.6,
+              "type": "pale masonry lane facade",
+              "windowCount": 8,
+              "shutterLeafCount": 16,
+              "hingeCount": 32,
+              "archDoorCount": 1,
+              "rectDoorCount": 0,
+              "brickCount": 119,
+              "recessDepth": 0.2,
+              "wallThickness": 0.24,
+              "diamondLead": true,
+              "glass": "Original cool-grey reflective tint; no scene refraction",
+              "eaveLayers": 3,
+              "brickCourses": 3,
+              "staticMeshCount": 11,
+              "instancedMeshCount": 2,
+              "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+            }
+          ],
+          "scope": "Only the two existing lane houses are detailed. Building positions, original footprint collisions, eye height and three exhibit collections remain the same. Fixed original architecture, not interactive doors or source assets."
+        },
+        "spatialVisit": {
+          "entry": {
+            "x": -2.55,
+            "z": 10.8,
+            "yaw": 0.04,
+            "pitch": -0.02
+          },
+          "discovered": [
+            "visual-systems",
+            "product-lab"
+          ],
+          "reached": [
+            "visual-systems",
+            "product-lab"
+          ],
+          "walkingDistance": 9.1
+        },
+        "exhibits": [
+          {
+            "id": "visual-systems",
+            "role": "纸档案、主题色与实际展厅画面",
+            "objects": [
+              "双页作品档案",
+              "三种展厅主题样板",
+              "CASE 01 实际运行画面"
+            ],
+            "relatedCases": [
+              1
+            ],
+            "page": "./?id=1",
+            "defaultRecipe": null,
+            "boundary": "这里是静态陈列模型；翻开、主题编辑和 HTML 导出在实际作品集页面中操作。"
+          },
+          {
+            "id": "product-lab",
+            "role": "实体琴键、机器人与猫、默认配方谱板",
+            "objects": [
+              "微缩实体琴键",
+              "原创机器人与猫",
+              "默认 32 音符 / 90 BPM 谱板",
+              "CASE 06 实际运行画面"
+            ],
+            "relatedCases": [
+              6
+            ],
+            "page": "./?id=6",
+            "defaultRecipe": {
+              "mode": "static-default-illustration",
+              "mood": "calm",
+              "noteCount": 32,
+              "tempo": 90
+            },
+            "boundary": "陈列模型与谱板为静态默认配方示意，不播放声音，也不代表其它页面当前编辑值。"
+          },
+          {
+            "id": "research-notes",
+            "role": "路线沙盘、来源册、案例索引与参观凭证",
+            "objects": [
+              "本例入口与三展位路线沙盘",
+              "原片 00:22 来源册",
+              "观察 / 结论 / 验收索引抽屉",
+              "本次真实参观凭证"
+            ],
+            "relatedCases": [
+              7
+            ],
+            "page": "../#demo-07",
+            "defaultRecipe": null,
+            "boundary": "沙盘是当前固定布局的缩尺说明，不是可编辑地图；原作 NPC 对话能力未确认，也未在此复现。"
+          }
+        ],
+        "view": {
+          "yaw": 0.4,
+          "elevation": 0.54,
+          "distance": 34
+        },
+        "renderer": "webgl",
+        "selectedExhibit": "product-lab",
+        "visitedExhibits": [
+          {
+            "id": "visual-systems",
+            "title": "视觉系统展位",
+            "visitedAt": "2026-10-03T00:58:43.492Z",
+            "via": "near-view",
+            "positionAtView": {
+              "x": -2.913902941098371,
+              "z": 1.7072790293851057,
+              "yaw": 0.04,
+              "pitch": -0.02
+            },
+            "distanceAtView": 2.62,
+            "relatedCases": [
+              1
+            ],
+            "shownObjects": [
+              "双页作品档案",
+              "三种展厅主题样板",
+              "CASE 01 实际运行画面"
+            ],
+            "summary": "纸档案对应“聚焦 → 翻开 → 阅读”的成果层级；主题样板对应白盒、黑盒与陶土三种已有皮肤。打开实际页面，可以编辑名称与主题并导出离线展厅。"
+          },
+          {
+            "id": "product-lab",
+            "title": "产品原型展位",
+            "visitedAt": "2026-10-03T00:58:43.554Z",
+            "via": "guided-shortcut",
+            "positionAtView": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            },
+            "distanceAtView": 2.21,
+            "relatedCases": [
+              6
+            ],
+            "shownObjects": [
+              "微缩实体琴键",
+              "原创机器人与猫",
+              "默认 32 音符 / 90 BPM 谱板",
+              "CASE 06 实际运行画面"
+            ],
+            "summary": "静态谱板为默认专注配方示意：32 音符、90 BPM，并不随另一个页面的编辑实时变化。进入实际原型，可以编辑、播放与导出。当前参观状态另由本集市记录。"
+          }
+        ],
+        "task": {
+          "target": 3,
+          "visited": 2,
+          "complete": false
+        },
+        "implementation": "Original procedural village and static exhibit models; the source author’s toolchain is unconfirmed."
+      }
+    }
+  },
+  "failure": null
+}

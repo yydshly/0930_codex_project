@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-02T15:11:39.324Z",
+  "caseId": 6,
+  "product": "音乐与角色动画配方工具",
+  "task": "修改旋律和节奏，核对角色与弹键同步，导出 WAV 和 Python / Blender 脚本。",
+  "state": {
+    "mood": "calm",
+    "tempo": 90,
+    "volume": 25,
+    "playing": false,
+    "progress": 0.104,
+    "noteIndex": 3,
+    "playedNotes": 13,
+    "renderer": "webgl",
+    "recording": false,
+    "workflow": "shared-events → audio + character/key poses",
+    "blenderRendered": false,
+    "schemaVersion": 2,
+    "title": "FIELD DUET",
+    "duration": 21.333333333333332,
+    "fps": 24,
+    "notes": [
+      {
+        "midi": 60,
+        "at": 0,
+        "duration": 0.6666666666666666,
+        "bass": 48
+      },
+      {
+        "midi": 64,
+        "at": 0.6666666666666666,
+        "duration": 0.6666666666666666,
+        "bass": null
+      },
+      {
+        "midi": 67,
+        "at": 1.3333333333333333,
+        "duration": 0.6666666666666666,
+        "bass": null
+      },
+      {
+        "midi": 72,
+        "at": 2,
+        "duration": 0.6666666666666666,
+        "bass": null
+      },
+      {
+        "midi": 69,
+        "at": 2.6666666666666665,
+        "duration": 0.6666666666666666,
+        "bass": 57
+      },
+      {
+        "midi": 67,
+        "at": 3.3333333333333335,
+        "duration": 0.6666666666666666,
+        "bass": null
+      },
+      {
+        "midi": 64,
+        "at": 4,
+        "duration": 0.6666666666666666,
+        "bass": null
+      },
+      {
+        "midi": 62,
+        "at": 4.666666666666667,
+        "duration": 0.6666666666666666,
+        "bass": null
+      },
+      {
+        "midi": 60,
+        "at": 5.333333333333333,
+        "duration": 0.6666666666666666,
+        "bass": 48
+      },
+      {
+        "midi": 64,
+        "at": 6,
+        "duration": 0.6666666666666666,
+        "bass": null
+      },
+      {
+        "midi": 65,
+        "at": 6.666666666666667,
+        "duration": 0.6666666666666666,
+        "bass": null
+      },
+      {
+        "midi": 69,
+        "at": 7.333333333333333,
+        "duration": 0.6666666666666666,
+        "bass": null
+      },
+      {
+        "midi": 67,
+        "at": 8,
+        "duration": 0.6666666666666666,
+        "bass": 55
+      },
+      {
+        "midi": 64,
+        "at": 8.666666666666666,
+        "duration": 0.6666666666666666,
+        "bass": null
+      },
+      {
+        "midi": 62,
+        "at": 9.333333333333334,
+        "duration": 0.6666666666666666,
+        "bass": null
+      },
+      {
+        "midi": 60,
+        "at": 10,
+        "duration": 0.6666666666666666,
+        "bass": null
+      },
+      {
+        "midi": 60,
+        "at": 10.666666666666666,
+        "duration": 0.6666666666666666,
+        "bass": 48
+      },
+      {
+        "midi": 64,
+        "at": 11.333333333333334,
+        "duration": 0.6666666666666666,
+        "bass": null
+      },
+      {
+        "midi": 67,
+        "at": 12,
+        "duration": 0.6666666666666666,
+        "bass": null
+      },
+      {
+        "midi": 72,
+        "at": 12.666666666666666,
+        "duration": 0.6666666666666666,
+        "bass": null
+      },
+      {
+        "midi": 69,
+        "at": 13.333333333333334,
+        "duration": 0.6666666666666666,
+        "bass": 57
+      },
+      {
+        "midi": 67,
+        "at": 14,
+        "duration": 0.6666666666666666,
+        "bass": null
+      },
+      {
+        "midi": 64,
+        "at": 14.666666666666666,
+        "duration": 0.6666666666666666,
+        "bass": null
+      },
+      {
+        "midi": 62,
+        "at": 15.333333333333334,
+        "duration": 0.6666666666666666,
+        "bass": null
+      },
+      {
+        "midi": 72,
+        "at": 16,
+        "duration": 0.6666666666666666,
+        "bass": 60
+      },
+      {
+        "midi": 64,
+        "at": 16.666666666666668,
+        "duration": 0.6666666666666666,
+        "bass": null
+      },
+      {
+        "midi": 65,
+        "at": 17.333333333333332,
+        "duration": 0.6666666666666666,
+        "bass": null
+      },
+      {
+        "midi": 69,
+        "at": 18,
+        "duration": 0.6666666666666666,
+        "bass": null
+      },
+      {
+        "midi": 79,
+        "at": 18.666666666666668,
+        "duration": 0.6666666666666666,
+        "bass": 67
+      },
+      {
+        "midi": 64,
+        "at": 19.333333333333332,
+        "duration": 0.6666666666666666,
+        "bass": null
+      },
+      {
+        "midi": 62,
+        "at": 20,
+        "duration": 0.6666666666666666,
+        "bass": null
+      },
+      {
+        "midi": 60,
+        "at": 20.666666666666668,
+        "duration": 0.6666666666666666,
+        "bass": null
+      }
+    ],
+    "source": "https://x.com/kevin_t_ngo/status/2105304249060274631",
+    "sourceWorkflow": "Python composition / Python animation / Blender rendering",
+    "ours": "Original characters and scene. Browser preview uses Three.js/Web Audio. Export script uses wave and bpy.",
+    "audioState": "running",
+    "characters": [
+      "research-robot",
+      "cat"
+    ],
+    "scene": "wooden-piano-room",
+    "performance": {
+      "performer": "cat",
+      "midi": 72,
+      "keyPosition": {
+        "x": 1.1269999999999998,
+        "y": 1.69,
+        "z": 0.97
+      },
+      "effectorPosition": {
+        "x": 1.1269999999999998,
+        "y": 1.69,
+        "z": 0.97
+      },
+      "contactDistance": 0,
+      "pressure": 1,
+      "pressedKeys": [
+        72
+      ],
+      "index": 3
+    }
+  },
+  "source": "https://x.com/kevin_t_ngo/status/2105304249060274631",
+  "reference": {
+    "focus": "同一份乐谱同时生成音乐、角色动作和琴键关键帧，交付音画同步的三维动画。",
+    "evidence": "作者明确写到 Python 编写钢琴音乐、Python 创建三维动画、Blender 渲染；原片可见角色与黑猫在实体钢琴上演奏。",
+    "sourceTech": "Python → 三维动画脚本 → Blender，是作者明确披露的流程。",
+    "ours": "原创实体钢琴、研究机器人和猫的演奏场景；共用乐谱驱动音频、琴键与角色，并交付 Python / Blender 脚本。",
+    "tech": "网页用 Three.js + Web Audio 实时预览；Python 标准库写 WAV；bpy 脚本设置三维场景、关键帧和渲染。 画面采用：胡桃木实体钢琴、金属细节、玻璃灯罩、角色轮廓光与近景构图。",
+    "value": "将音乐、品牌角色与镜头沉淀成可复现的音乐动画配方。",
+    "check": "旋律或节奏修改同步改变音频时长、角色动作、琴键与脚本关键帧。",
+    "boundary": "Python 音频已运行；本机没有 Blender，bpy 脚本与渲染流程待在 Blender 内验证。网页画质不等同原作离线渲染。 新版网页的材质资产尚未移植到 Blender 配方。",
+    "kernel": "把音符写成带时间的事件：Web Audio / Python wave 生成声音，Three.js / bpy 读取同一事件安排弹键与角色动作。"
+  },
+  "scope": "网页实时预览与 Python 音频可运行；本机未安装 Blender，离线渲染待验证。"
+}

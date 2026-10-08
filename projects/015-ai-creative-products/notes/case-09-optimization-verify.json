@@ -1,0 +1,786 @@
+{
+  "checks": [
+    {
+      "name": "boarding uses seated eye height",
+      "pass": true,
+      "detail": {
+        "x": -15,
+        "y": 1.2286005819430295,
+        "z": 5.95
+      }
+    },
+    {
+      "name": "camera sits behind boat centre",
+      "pass": true
+    },
+    {
+      "name": "looking changes view but preserves boat heading",
+      "pass": true,
+      "detail": {
+        "look": 3.6855926535897936,
+        "heading": 3.141592653589793
+      }
+    },
+    {
+      "name": "throttle follows boat heading instead of look",
+      "pass": true,
+      "detail": {
+        "x": -15,
+        "z": 7.3468824999999995,
+        "heading": 3.141592653589793,
+        "speed": 1.23,
+        "distance": 0.35,
+        "blocked": false
+      }
+    },
+    {
+      "name": "steering changes boat heading",
+      "pass": true
+    },
+    {
+      "name": "released throttle decelerates",
+      "pass": true,
+      "detail": {
+        "driven": 1.23,
+        "stopped": 0
+      }
+    },
+    {
+      "name": "export preserves boat and camera separately",
+      "pass": true
+    },
+    {
+      "name": "disembarking restores standing view and clears speed",
+      "pass": true
+    },
+    {
+      "name": "mobile has no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "boat touch controls say turn",
+      "pass": true
+    },
+    {
+      "name": "location shortcut restores walking and moors boat",
+      "pass": true
+    },
+    {
+      "name": "return action restores seated/standing state coherently",
+      "pass": true,
+      "detail": {
+        "x": -15,
+        "z": 7,
+        "heading": 3.141592653589793,
+        "speed": 0,
+        "distance": 0,
+        "blocked": false
+      }
+    }
+  ],
+  "errors": [],
+  "states": {
+    "shore": {
+      "weather": "clear",
+      "hour": 15,
+      "density": 24,
+      "running": false,
+      "time": 0.63,
+      "visited": [],
+      "selected": null,
+      "solar": 71,
+      "water": 54,
+      "renderer": "webgl",
+      "fireLit": true,
+      "boatBoarded": false,
+      "boatHeading": 3.141592653589793,
+      "boatSpeed": 0,
+      "boatDistance": 0,
+      "boatBlocked": false,
+      "interactions": [],
+      "arrivalLog": [],
+      "boat": {
+        "x": -15,
+        "z": 7,
+        "heading": 3.141592653589793,
+        "speed": 0,
+        "distance": 0,
+        "blocked": false
+      },
+      "weatherName": "晴天",
+      "mode": "first-person",
+      "camera": {
+        "x": 0.5,
+        "z": 11.8,
+        "yaw": 0.55,
+        "pitch": -0.025
+      },
+      "cameraWorld": {
+        "x": 0.5,
+        "y": 1.7850969295872305,
+        "z": 11.8
+      },
+      "boatView": null,
+      "camper": {
+        "x": 0.5,
+        "z": 11.8
+      },
+      "exploration": {
+        "distance": 0,
+        "steps": 0,
+        "renderCount": 34,
+        "drawCalls": 134,
+        "triangles": 123908,
+        "pixelRatio": 1
+      },
+      "rules": {
+        "transmission": {
+          "clear": 1,
+          "cloud": 0.45,
+          "rain": 0.2,
+          "storm": 0.12
+        },
+        "solar": "optional illustrative daylight*transmission*100",
+        "water": "optional illustrative min(100,30+rainIncrement+density)"
+      },
+      "reference": {
+        "workflow": "Native Three.js environment integration",
+        "assets": "Original detailed procedural geometry, Poly Haven CC0 photographed PBR and HDR sky"
+      }
+    },
+    "seated": {
+      "weather": "clear",
+      "hour": 15,
+      "density": 24,
+      "running": false,
+      "time": 0.63,
+      "visited": [
+        "solar"
+      ],
+      "selected": "solar",
+      "solar": 71,
+      "water": 54,
+      "renderer": "webgl",
+      "fireLit": true,
+      "boatBoarded": true,
+      "boatHeading": 3.141592653589793,
+      "boatSpeed": 0,
+      "boatDistance": 0,
+      "boatBlocked": false,
+      "interactions": [
+        {
+          "action": "board-boat",
+          "at": 0.63
+        }
+      ],
+      "arrivalLog": [
+        {
+          "id": "solar",
+          "position": {
+            "x": -12,
+            "z": 3
+          },
+          "at": 0.63
+        }
+      ],
+      "boat": {
+        "x": -15,
+        "z": 7,
+        "heading": 3.141592653589793,
+        "speed": 0,
+        "distance": 0,
+        "blocked": false
+      },
+      "weatherName": "晴天",
+      "mode": "first-person",
+      "camera": {
+        "x": -15,
+        "z": 7,
+        "yaw": 3.141592653589793,
+        "pitch": -0.13
+      },
+      "cameraWorld": {
+        "x": -15,
+        "y": 1.2286005819430295,
+        "z": 5.95
+      },
+      "boatView": {
+        "mode": "seated",
+        "eyeHeight": 1.1,
+        "lookOffset": 0,
+        "headingIndependentOfLook": true
+      },
+      "camper": {
+        "x": -15,
+        "z": 7
+      },
+      "exploration": {
+        "distance": 0,
+        "steps": 0,
+        "renderCount": 38,
+        "drawCalls": 15,
+        "triangles": 49412,
+        "pixelRatio": 1
+      },
+      "rules": {
+        "transmission": {
+          "clear": 1,
+          "cloud": 0.45,
+          "rain": 0.2,
+          "storm": 0.12
+        },
+        "solar": "optional illustrative daylight*transmission*100",
+        "water": "optional illustrative min(100,30+rainIncrement+density)"
+      },
+      "reference": {
+        "workflow": "Native Three.js environment integration",
+        "assets": "Original detailed procedural geometry, Poly Haven CC0 photographed PBR and HDR sky"
+      }
+    },
+    "look": {
+      "weather": "clear",
+      "hour": 15,
+      "density": 24,
+      "running": false,
+      "time": 0.63,
+      "visited": [
+        "solar"
+      ],
+      "selected": "solar",
+      "solar": 71,
+      "water": 54,
+      "renderer": "webgl",
+      "fireLit": true,
+      "boatBoarded": true,
+      "boatHeading": 3.141592653589793,
+      "boatSpeed": 0,
+      "boatDistance": 0,
+      "boatBlocked": false,
+      "interactions": [
+        {
+          "action": "board-boat",
+          "at": 0.63
+        }
+      ],
+      "arrivalLog": [
+        {
+          "id": "solar",
+          "position": {
+            "x": -12,
+            "z": 3
+          },
+          "at": 0.63
+        }
+      ],
+      "boat": {
+        "x": -15,
+        "z": 7,
+        "heading": 3.141592653589793,
+        "speed": 0,
+        "distance": 0,
+        "blocked": false
+      },
+      "weatherName": "晴天",
+      "mode": "first-person",
+      "camera": {
+        "x": -15,
+        "z": 7,
+        "yaw": 3.6855926535897936,
+        "pitch": -0.13
+      },
+      "cameraWorld": {
+        "x": -15,
+        "y": 1.2286005819430295,
+        "z": 5.95
+      },
+      "boatView": {
+        "mode": "seated",
+        "eyeHeight": 1.1,
+        "lookOffset": 0.5440000000000005,
+        "headingIndependentOfLook": true
+      },
+      "camper": {
+        "x": -15,
+        "z": 7
+      },
+      "exploration": {
+        "distance": 0,
+        "steps": 0,
+        "renderCount": 47,
+        "drawCalls": 44,
+        "triangles": 86704,
+        "pixelRatio": 1
+      },
+      "rules": {
+        "transmission": {
+          "clear": 1,
+          "cloud": 0.45,
+          "rain": 0.2,
+          "storm": 0.12
+        },
+        "solar": "optional illustrative daylight*transmission*100",
+        "water": "optional illustrative min(100,30+rainIncrement+density)"
+      },
+      "reference": {
+        "workflow": "Native Three.js environment integration",
+        "assets": "Original detailed procedural geometry, Poly Haven CC0 photographed PBR and HDR sky"
+      }
+    },
+    "driven": {
+      "weather": "clear",
+      "hour": 15,
+      "density": 24,
+      "running": false,
+      "time": 0.63,
+      "visited": [
+        "solar"
+      ],
+      "selected": "solar",
+      "solar": 71,
+      "water": 54,
+      "renderer": "webgl",
+      "fireLit": true,
+      "boatBoarded": true,
+      "boatHeading": 3.141592653589793,
+      "boatSpeed": 1.2285,
+      "boatDistance": 0.34688249999999954,
+      "boatBlocked": false,
+      "interactions": [
+        {
+          "action": "board-boat",
+          "at": 0.63
+        }
+      ],
+      "arrivalLog": [
+        {
+          "id": "solar",
+          "position": {
+            "x": -12,
+            "z": 3
+          },
+          "at": 0.63
+        }
+      ],
+      "boat": {
+        "x": -15,
+        "z": 7.3468824999999995,
+        "heading": 3.141592653589793,
+        "speed": 1.23,
+        "distance": 0.35,
+        "blocked": false
+      },
+      "weatherName": "晴天",
+      "mode": "first-person",
+      "camera": {
+        "x": -15,
+        "z": 7.3468824999999995,
+        "yaw": 3.6855926535897936,
+        "pitch": -0.13
+      },
+      "cameraWorld": {
+        "x": -15,
+        "y": 1.2286005819430295,
+        "z": 6.2968825
+      },
+      "boatView": {
+        "mode": "seated",
+        "eyeHeight": 1.1,
+        "lookOffset": 0.5440000000000005,
+        "headingIndependentOfLook": true
+      },
+      "camper": {
+        "x": -15,
+        "z": 7.3468824999999995
+      },
+      "exploration": {
+        "distance": 0.35,
+        "steps": 10,
+        "renderCount": 58,
+        "drawCalls": 38,
+        "triangles": 86616,
+        "pixelRatio": 1
+      },
+      "rules": {
+        "transmission": {
+          "clear": 1,
+          "cloud": 0.45,
+          "rain": 0.2,
+          "storm": 0.12
+        },
+        "solar": "optional illustrative daylight*transmission*100",
+        "water": "optional illustrative min(100,30+rainIncrement+density)"
+      },
+      "reference": {
+        "workflow": "Native Three.js environment integration",
+        "assets": "Original detailed procedural geometry, Poly Haven CC0 photographed PBR and HDR sky"
+      }
+    },
+    "steered": {
+      "weather": "clear",
+      "hour": 15,
+      "density": 24,
+      "running": false,
+      "time": 0.63,
+      "visited": [
+        "solar"
+      ],
+      "selected": "solar",
+      "solar": 71,
+      "water": 54,
+      "renderer": "webgl",
+      "fireLit": true,
+      "boatBoarded": true,
+      "boatHeading": 2.927842653589794,
+      "boatSpeed": 0,
+      "boatDistance": 0.8225549999999995,
+      "boatBlocked": false,
+      "interactions": [
+        {
+          "action": "board-boat",
+          "at": 0.63
+        }
+      ],
+      "arrivalLog": [
+        {
+          "id": "solar",
+          "position": {
+            "x": -12,
+            "z": 3
+          },
+          "at": 0.63
+        }
+      ],
+      "boat": {
+        "x": -15,
+        "z": 7.8225549999999995,
+        "heading": 2.927842653589794,
+        "speed": 0,
+        "distance": 0.82,
+        "blocked": false
+      },
+      "weatherName": "晴天",
+      "mode": "first-person",
+      "camera": {
+        "x": -15,
+        "z": 7.8225549999999995,
+        "yaw": 3.4718426535897944,
+        "pitch": -0.13
+      },
+      "cameraWorld": {
+        "x": -14.777267656479188,
+        "y": 1.2286005819430295,
+        "z": 6.796450569081914
+      },
+      "boatView": {
+        "mode": "seated",
+        "eyeHeight": 1.1,
+        "lookOffset": 0.5440000000000005,
+        "headingIndependentOfLook": true
+      },
+      "camper": {
+        "x": -15,
+        "z": 7.8225549999999995
+      },
+      "exploration": {
+        "distance": 0.82,
+        "steps": 28,
+        "renderCount": 83,
+        "drawCalls": 20,
+        "triangles": 61960,
+        "pixelRatio": 1
+      },
+      "rules": {
+        "transmission": {
+          "clear": 1,
+          "cloud": 0.45,
+          "rain": 0.2,
+          "storm": 0.12
+        },
+        "solar": "optional illustrative daylight*transmission*100",
+        "water": "optional illustrative min(100,30+rainIncrement+density)"
+      },
+      "reference": {
+        "workflow": "Native Three.js environment integration",
+        "assets": "Original detailed procedural geometry, Poly Haven CC0 photographed PBR and HDR sky"
+      }
+    },
+    "stopped": {
+      "weather": "clear",
+      "hour": 15,
+      "density": 24,
+      "running": false,
+      "time": 0.63,
+      "visited": [
+        "solar"
+      ],
+      "selected": "solar",
+      "solar": 71,
+      "water": 54,
+      "renderer": "webgl",
+      "fireLit": true,
+      "boatBoarded": true,
+      "boatHeading": 2.927842653589794,
+      "boatSpeed": 0,
+      "boatDistance": 0.8225549999999995,
+      "boatBlocked": false,
+      "interactions": [
+        {
+          "action": "board-boat",
+          "at": 0.63
+        }
+      ],
+      "arrivalLog": [
+        {
+          "id": "solar",
+          "position": {
+            "x": -12,
+            "z": 3
+          },
+          "at": 0.63
+        }
+      ],
+      "boat": {
+        "x": -15,
+        "z": 7.8225549999999995,
+        "heading": 2.927842653589794,
+        "speed": 0,
+        "distance": 0.82,
+        "blocked": false
+      },
+      "weatherName": "晴天",
+      "mode": "first-person",
+      "camera": {
+        "x": -15,
+        "z": 7.8225549999999995,
+        "yaw": 3.4718426535897944,
+        "pitch": -0.13
+      },
+      "cameraWorld": {
+        "x": -14.777267656479188,
+        "y": 1.2286005819430295,
+        "z": 6.796450569081914
+      },
+      "boatView": {
+        "mode": "seated",
+        "eyeHeight": 1.1,
+        "lookOffset": 0.5440000000000005,
+        "headingIndependentOfLook": true
+      },
+      "camper": {
+        "x": -15,
+        "z": 7.8225549999999995
+      },
+      "exploration": {
+        "distance": 0.82,
+        "steps": 28,
+        "renderCount": 83,
+        "drawCalls": 20,
+        "triangles": 61960,
+        "pixelRatio": 1
+      },
+      "rules": {
+        "transmission": {
+          "clear": 1,
+          "cloud": 0.45,
+          "rain": 0.2,
+          "storm": 0.12
+        },
+        "solar": "optional illustrative daylight*transmission*100",
+        "water": "optional illustrative min(100,30+rainIncrement+density)"
+      },
+      "reference": {
+        "workflow": "Native Three.js environment integration",
+        "assets": "Original detailed procedural geometry, Poly Haven CC0 photographed PBR and HDR sky"
+      }
+    },
+    "off": {
+      "weather": "clear",
+      "hour": 15,
+      "density": 24,
+      "running": false,
+      "time": 0.63,
+      "visited": [
+        "solar"
+      ],
+      "selected": "solar",
+      "solar": 71,
+      "water": 54,
+      "renderer": "webgl",
+      "fireLit": true,
+      "boatBoarded": false,
+      "boatHeading": 2.927842653589794,
+      "boatSpeed": 0,
+      "boatDistance": 0.8225549999999995,
+      "boatBlocked": false,
+      "interactions": [
+        {
+          "action": "board-boat",
+          "at": 0.63
+        },
+        {
+          "action": "leave-boat",
+          "at": 0.63
+        }
+      ],
+      "arrivalLog": [
+        {
+          "id": "solar",
+          "position": {
+            "x": -12,
+            "z": 3
+          },
+          "at": 0.63
+        }
+      ],
+      "boat": {
+        "x": -15,
+        "z": 7.8225549999999995,
+        "heading": 2.927842653589794,
+        "speed": 0,
+        "distance": 0.82,
+        "blocked": false
+      },
+      "weatherName": "晴天",
+      "mode": "first-person",
+      "camera": {
+        "x": -14,
+        "z": 3,
+        "yaw": 3.141592653589793,
+        "pitch": 0
+      },
+      "cameraWorld": {
+        "x": -14,
+        "y": 2.24,
+        "z": 3
+      },
+      "boatView": null,
+      "camper": {
+        "x": -14,
+        "z": 3
+      },
+      "exploration": {
+        "distance": 0.82,
+        "steps": 28,
+        "renderCount": 85,
+        "drawCalls": 48,
+        "triangles": 50460,
+        "pixelRatio": 1
+      },
+      "rules": {
+        "transmission": {
+          "clear": 1,
+          "cloud": 0.45,
+          "rain": 0.2,
+          "storm": 0.12
+        },
+        "solar": "optional illustrative daylight*transmission*100",
+        "water": "optional illustrative min(100,30+rainIncrement+density)"
+      },
+      "reference": {
+        "workflow": "Native Three.js environment integration",
+        "assets": "Original detailed procedural geometry, Poly Haven CC0 photographed PBR and HDR sky"
+      }
+    },
+    "returned": {
+      "weather": "clear",
+      "hour": 15,
+      "density": 24,
+      "running": false,
+      "time": 0.63,
+      "visited": [
+        "solar",
+        "water"
+      ],
+      "selected": "solar",
+      "solar": 71,
+      "water": 54,
+      "renderer": "webgl",
+      "fireLit": true,
+      "boatBoarded": false,
+      "boatHeading": 3.141592653589793,
+      "boatSpeed": 0,
+      "boatDistance": 0,
+      "boatBlocked": false,
+      "interactions": [
+        {
+          "action": "board-boat",
+          "at": 0.63
+        },
+        {
+          "action": "board-boat",
+          "at": 0.63
+        },
+        {
+          "action": "leave-boat",
+          "at": 0.63
+        }
+      ],
+      "arrivalLog": [
+        {
+          "id": "solar",
+          "position": {
+            "x": -12,
+            "z": 3
+          },
+          "at": 0.63
+        },
+        {
+          "id": "water",
+          "position": {
+            "x": 8,
+            "z": 6
+          },
+          "at": 0.63
+        }
+      ],
+      "boat": {
+        "x": -15,
+        "z": 7,
+        "heading": 3.141592653589793,
+        "speed": 0,
+        "distance": 0,
+        "blocked": false
+      },
+      "weatherName": "晴天",
+      "mode": "first-person",
+      "camera": {
+        "x": -14,
+        "z": 3,
+        "yaw": 3.141592653589793,
+        "pitch": 0
+      },
+      "cameraWorld": {
+        "x": -14,
+        "y": 2.24,
+        "z": 3
+      },
+      "boatView": null,
+      "camper": {
+        "x": -14,
+        "z": 3
+      },
+      "exploration": {
+        "distance": 0,
+        "steps": 0,
+        "renderCount": 48,
+        "drawCalls": 36,
+        "triangles": 49700,
+        "pixelRatio": 1
+      },
+      "rules": {
+        "transmission": {
+          "clear": 1,
+          "cloud": 0.45,
+          "rain": 0.2,
+          "storm": 0.12
+        },
+        "solar": "optional illustrative daylight*transmission*100",
+        "water": "optional illustrative min(100,30+rainIncrement+density)"
+      },
+      "reference": {
+        "workflow": "Native Three.js environment integration",
+        "assets": "Original detailed procedural geometry, Poly Haven CC0 photographed PBR and HDR sky"
+      }
+    }
+  }
+}

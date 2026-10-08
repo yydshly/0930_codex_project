@@ -1,0 +1,960 @@
+{
+  "caseId": 1,
+  "testedAt": "2026-10-03T00:17:17.825Z",
+  "passed": 21,
+  "total": 21,
+  "checks": [
+    {
+      "name": "Six visual bands retain a single correct loaded source image and no extra focus or IDs",
+      "pass": true,
+      "bands": [
+        {
+          "hidden": "true",
+          "bend": 0,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -0.24300000000000002,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -0.30600000000000005,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -0.36900000000000005,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -0.43200000000000005,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -0.49500000000000005,
+          "ids": 0,
+          "focusable": 0
+        }
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-showroom.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-showroom.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-showroom.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-showroom.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-showroom.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-showroom.webp",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "Closed cover reports actual zero angle and a thin edge",
+      "pass": true,
+      "paper": {
+        "bands": 6,
+        "angle": 0,
+        "bendPerBand": 0.45,
+        "gutterShadow": 0.04,
+        "thickness": 0.7,
+        "model": "bounded visual bend from the actual cover angle"
+      }
+    },
+    {
+      "name": "At ninety degrees paper deformation matches the actual paused hinge and description stays inert",
+      "pass": true,
+      "phase": "opening",
+      "focus": "011",
+      "angle": 89.99999654738498,
+      "paper": {
+        "bands": 6,
+        "angle": 90,
+        "bendPerBand": 3.05,
+        "gutterShadow": 0.31,
+        "thickness": 0.7,
+        "model": "bounded visual bend from the actual cover angle"
+      },
+      "detail": {
+        "inert": true,
+        "hidden": false,
+        "ariaHidden": "true",
+        "headingFocus": false,
+        "heading": "ARC · 交互产品展厅"
+      },
+      "bands": [
+        {
+          "hidden": "true",
+          "bend": 0,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -1.6469999999999978,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -2.073999999999997,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -2.500999999999997,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -2.9279999999999964,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -3.3549999999999955,
+          "ids": 0,
+          "focusable": 0
+        }
+      ],
+      "stage": {
+        "left": 323,
+        "right": 1398.984375,
+        "top": 331.5,
+        "bottom": 851.5
+      },
+      "inside": {
+        "left": 610.1409912109375,
+        "right": 800.6142578125,
+        "top": 471.1536865234375,
+        "bottom": 748.8605346679688
+      },
+      "faces": [
+        {
+          "left": 602.2464599609375,
+          "right": 610.5369262695312,
+          "top": 467.2275390625,
+          "bottom": 753.9942626953125
+        },
+        {
+          "left": 592.831787109375,
+          "right": 602.678466796875,
+          "top": 463.18475341796875,
+          "bottom": 759.2804565429688
+        },
+        {
+          "left": 581.528076171875,
+          "right": 593.3470458984375,
+          "top": 458.8774719238281,
+          "bottom": 764.9124755859375
+        },
+        {
+          "left": 567.896484375,
+          "right": 582.1471557617188,
+          "top": 454.2889709472656,
+          "bottom": 770.9122314453125
+        },
+        {
+          "left": 551.4585571289062,
+          "right": 568.6420288085938,
+          "top": 449.40667724609375,
+          "bottom": 777.296142578125
+        },
+        {
+          "left": 531.700927734375,
+          "right": 552.354736328125,
+          "top": 444.224853515625,
+          "bottom": 784.0717163085938
+        }
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-showroom.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-showroom.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-showroom.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-showroom.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-showroom.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-showroom.webp",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "Seeking the same paused transition recomputes bend and shadow without history",
+      "pass": true,
+      "paper": {
+        "bands": 6,
+        "angle": 45,
+        "bendPerBand": 2.288,
+        "gutterShadow": 0.231,
+        "thickness": 0.7,
+        "model": "bounded visual bend from the actual cover angle"
+      }
+    },
+    {
+      "name": "Only the final real 155-degree hinge unlocks one detail and focuses its heading",
+      "pass": true,
+      "phase": "open",
+      "focus": "011",
+      "angle": 155.00001874831398,
+      "paper": {
+        "bands": 6,
+        "angle": 155,
+        "bendPerBand": 1.549,
+        "gutterShadow": 0.154,
+        "thickness": 0.7,
+        "model": "bounded visual bend from the actual cover angle"
+      },
+      "detail": {
+        "inert": false,
+        "hidden": false,
+        "ariaHidden": "false",
+        "headingFocus": true,
+        "heading": "ARC · 交互产品展厅"
+      },
+      "bands": [
+        {
+          "hidden": "true",
+          "bend": 0,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -0.8363560394839422,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -1.0531890867575568,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -1.2700221340311715,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -1.486855181304786,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -1.7036882285784007,
+          "ids": 0,
+          "focusable": 0
+        }
+      ],
+      "stage": {
+        "left": 323,
+        "right": 1398.984375,
+        "top": 331.5,
+        "bottom": 851.5
+      },
+      "inside": {
+        "left": 610.1409912109375,
+        "right": 800.6142578125,
+        "top": 471.1536865234375,
+        "bottom": 748.8605346679688
+      },
+      "faces": [
+        {
+          "left": 576.856689453125,
+          "right": 610.9280395507812,
+          "top": 469.472900390625,
+          "bottom": 751.0582275390625
+        },
+        {
+          "left": 543.4681396484375,
+          "right": 578.51171875,
+          "top": 467.9085388183594,
+          "bottom": 753.103759765625
+        },
+        {
+          "left": 509.1558837890625,
+          "right": 545.1685791015625,
+          "top": 466.3707580566406,
+          "bottom": 755.114501953125
+        },
+        {
+          "left": 473.9495849609375,
+          "right": 510.9009704589844,
+          "top": 464.87786865234375,
+          "bottom": 757.0665893554688
+        },
+        {
+          "left": 437.90960693359375,
+          "right": 475.737060546875,
+          "top": 463.4500427246094,
+          "bottom": 758.93359375
+        },
+        {
+          "left": 401.13153076171875,
+          "right": 439.73553466796875,
+          "top": 462.109130859375,
+          "bottom": 760.6868896484375
+        }
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-showroom.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-showroom.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-showroom.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-showroom.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-showroom.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-showroom.webp",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "Closing preserves original object identities and returns to the original open trigger",
+      "pass": true
+    },
+    {
+      "name": "Reverse opening-closing-opening settles with angle-derived paper and matching content",
+      "pass": true,
+      "paper": {
+        "bands": 6,
+        "angle": 155,
+        "bendPerBand": 1.549,
+        "gutterShadow": 0.154,
+        "thickness": 0.7,
+        "model": "bounded visual bend from the actual cover angle"
+      },
+      "detail": {
+        "inert": false,
+        "hidden": false,
+        "ariaHidden": "false",
+        "headingFocus": true,
+        "heading": "ARC · 交互产品展厅"
+      }
+    },
+    {
+      "name": "Reading navigation keeps one selected paper and the next correct result",
+      "pass": true,
+      "phase": "open",
+      "focus": "008",
+      "angle": 155.00001874831398,
+      "paper": {
+        "bands": 6,
+        "angle": 155,
+        "bendPerBand": 1.549,
+        "gutterShadow": 0.154,
+        "thickness": 0.7,
+        "model": "bounded visual bend from the actual cover angle"
+      },
+      "detail": {
+        "inert": false,
+        "hidden": false,
+        "ariaHidden": "false",
+        "headingFocus": true,
+        "heading": "CellMotion · 文字实验室"
+      },
+      "bands": [
+        {
+          "hidden": "true",
+          "bend": 0,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -0.8363560394839422,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -1.0531890867575568,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -1.2700221340311715,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -1.486855181304786,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -1.7036882285784007,
+          "ids": 0,
+          "focusable": 0
+        }
+      ],
+      "stage": {
+        "left": 323,
+        "right": 1398.984375,
+        "top": 418.5,
+        "bottom": 938.5
+      },
+      "inside": {
+        "left": 610.1409912109375,
+        "right": 800.6142578125,
+        "top": 558.1536865234375,
+        "bottom": 835.8605346679688
+      },
+      "faces": [
+        {
+          "left": 576.856689453125,
+          "right": 610.9280395507812,
+          "top": 556.472900390625,
+          "bottom": 838.0582275390625
+        },
+        {
+          "left": 543.4681396484375,
+          "right": 578.51171875,
+          "top": 554.9085693359375,
+          "bottom": 840.103759765625
+        },
+        {
+          "left": 509.1558837890625,
+          "right": 545.1685791015625,
+          "top": 553.3707275390625,
+          "bottom": 842.114501953125
+        },
+        {
+          "left": 473.9495849609375,
+          "right": 510.9009704589844,
+          "top": 551.8778686523438,
+          "bottom": 844.0665893554688
+        },
+        {
+          "left": 437.90960693359375,
+          "right": 475.737060546875,
+          "top": 550.4500732421875,
+          "bottom": 845.93359375
+        },
+        {
+          "left": 401.13153076171875,
+          "right": 439.73553466796875,
+          "top": 549.109130859375,
+          "bottom": 847.6868896484375
+        }
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-motion.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-motion.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-motion.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-motion.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-motion.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-motion.webp",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "Reduced motion immediately synchronizes all paper bands, shadow and heading focus",
+      "pass": true,
+      "phase": "open",
+      "focus": "008",
+      "angle": 155.00001874831398,
+      "paper": {
+        "bands": 6,
+        "angle": 155,
+        "bendPerBand": 1.549,
+        "gutterShadow": 0.154,
+        "thickness": 0.7,
+        "model": "bounded visual bend from the actual cover angle"
+      },
+      "detail": {
+        "inert": false,
+        "hidden": false,
+        "ariaHidden": "false",
+        "headingFocus": true,
+        "heading": "CellMotion · 文字实验室"
+      },
+      "bands": [
+        {
+          "hidden": "true",
+          "bend": 0,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -0.8363560394839422,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -1.0531890867575568,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -1.2700221340311715,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -1.486855181304786,
+          "ids": 0,
+          "focusable": 0
+        },
+        {
+          "hidden": "true",
+          "bend": -1.7036882285784007,
+          "ids": 0,
+          "focusable": 0
+        }
+      ],
+      "stage": {
+        "left": 323,
+        "right": 1398.984375,
+        "top": 418.5,
+        "bottom": 938.5
+      },
+      "inside": {
+        "left": 610.1409912109375,
+        "right": 800.6142578125,
+        "top": 558.1536865234375,
+        "bottom": 835.8605346679688
+      },
+      "faces": [
+        {
+          "left": 576.856689453125,
+          "right": 610.9280395507812,
+          "top": 556.472900390625,
+          "bottom": 838.0582275390625
+        },
+        {
+          "left": 543.4681396484375,
+          "right": 578.51171875,
+          "top": 554.9085693359375,
+          "bottom": 840.103759765625
+        },
+        {
+          "left": 509.1558837890625,
+          "right": 545.1685791015625,
+          "top": 553.3707275390625,
+          "bottom": 842.114501953125
+        },
+        {
+          "left": 473.9495849609375,
+          "right": 510.9009704589844,
+          "top": 551.8778686523438,
+          "bottom": 844.0665893554688
+        },
+        {
+          "left": 437.90960693359375,
+          "right": 475.737060546875,
+          "top": 550.4500732421875,
+          "bottom": 845.93359375
+        },
+        {
+          "left": 401.13153076171875,
+          "right": 439.73553466796875,
+          "top": 549.109130859375,
+          "bottom": 847.6868896484375
+        }
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-motion.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-motion.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-motion.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-motion.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-motion.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:8975/labs/assets/portfolio-cover-motion.webp",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "Hidden host completion updates paper without stealing the control focus",
+      "pass": true,
+      "paper": {
+        "bands": 6,
+        "angle": 155,
+        "bendPerBand": 1.549,
+        "gutterShadow": 0.154,
+        "thickness": 0.7,
+        "model": "bounded visual bend from the actual cover angle"
+      }
+    },
+    {
+      "name": "Real HTML download packages the same paper controller, material and four project images",
+      "pass": true
+    },
+    {
+      "name": "Downloaded HTML reproduces selected paper bend and focus with no network calls",
+      "pass": true,
+      "requests": [],
+      "paper": {
+        "bands": 6,
+        "angle": 155.00001874831398,
+        "bendPerBand": 1.5488074805258187,
+        "gutterShadow": 0.154107
+      },
+      "focus": "008"
+    },
+    {
+      "name": "Offline next and return keep correct object identity and focus",
+      "pass": true
+    },
+    {
+      "name": "Mobile 011 curved back and contents remain within stage without horizontal overflow",
+      "pass": true,
+      "stage": {
+        "left": 15,
+        "right": 375,
+        "top": -70,
+        "bottom": 290
+      },
+      "inside": {
+        "left": 198.96197509765625,
+        "right": 338.9519958496094,
+        "top": 22.886436462402344,
+        "bottom": 240.13506317138672
+      },
+      "faces": [
+        {
+          "left": 177.0297088623047,
+          "right": 199.65948486328125,
+          "top": 21.462928771972656,
+          "bottom": 242.26160430908203
+        },
+        {
+          "left": 154.79981994628906,
+          "right": 178.2612762451172,
+          "top": 20.14258575439453,
+          "bottom": 244.2339859008789
+        },
+        {
+          "left": 131.75469970703125,
+          "right": 156.07582092285156,
+          "top": 18.839385986328125,
+          "bottom": 246.1807861328125
+        },
+        {
+          "left": 107.88700103759766,
+          "right": 133.07608032226562,
+          "top": 17.56920623779297,
+          "bottom": 248.07823944091797
+        },
+        {
+          "left": 83.21212005615234,
+          "right": 109.25352478027344,
+          "top": 16.349700927734375,
+          "bottom": 249.9000244140625
+        },
+        {
+          "left": 57.77241897583008,
+          "right": 84.62216186523438,
+          "top": 15.200279235839844,
+          "bottom": 251.6170883178711
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "name": "Mobile 008 curved back and contents remain within stage without horizontal overflow",
+      "pass": true,
+      "stage": {
+        "left": 15,
+        "right": 375,
+        "top": -70,
+        "bottom": 290
+      },
+      "inside": {
+        "left": 198.96197509765625,
+        "right": 338.9519958496094,
+        "top": 22.886436462402344,
+        "bottom": 240.13506317138672
+      },
+      "faces": [
+        {
+          "left": 177.0297088623047,
+          "right": 199.65948486328125,
+          "top": 21.462928771972656,
+          "bottom": 242.26160430908203
+        },
+        {
+          "left": 154.79981994628906,
+          "right": 178.2612762451172,
+          "top": 20.14258575439453,
+          "bottom": 244.2339859008789
+        },
+        {
+          "left": 131.75469970703125,
+          "right": 156.07582092285156,
+          "top": 18.839385986328125,
+          "bottom": 246.1807861328125
+        },
+        {
+          "left": 107.88700103759766,
+          "right": 133.07608032226562,
+          "top": 17.56920623779297,
+          "bottom": 248.07823944091797
+        },
+        {
+          "left": 83.21212005615234,
+          "right": 109.25352478027344,
+          "top": 16.349700927734375,
+          "bottom": 249.9000244140625
+        },
+        {
+          "left": 57.77241897583008,
+          "right": 84.62216186523438,
+          "top": 15.200279235839844,
+          "bottom": 251.6170883178711
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "name": "Mobile 010 curved back and contents remain within stage without horizontal overflow",
+      "pass": true,
+      "stage": {
+        "left": 15,
+        "right": 375,
+        "top": -70,
+        "bottom": 290
+      },
+      "inside": {
+        "left": 198.96197509765625,
+        "right": 338.9519958496094,
+        "top": 22.886436462402344,
+        "bottom": 240.13506317138672
+      },
+      "faces": [
+        {
+          "left": 177.0297088623047,
+          "right": 199.65948486328125,
+          "top": 21.462928771972656,
+          "bottom": 242.26160430908203
+        },
+        {
+          "left": 154.79981994628906,
+          "right": 178.2612762451172,
+          "top": 20.14258575439453,
+          "bottom": 244.2339859008789
+        },
+        {
+          "left": 131.75469970703125,
+          "right": 156.07582092285156,
+          "top": 18.839385986328125,
+          "bottom": 246.1807861328125
+        },
+        {
+          "left": 107.88700103759766,
+          "right": 133.07608032226562,
+          "top": 17.56920623779297,
+          "bottom": 248.07823944091797
+        },
+        {
+          "left": 83.21212005615234,
+          "right": 109.25352478027344,
+          "top": 16.349700927734375,
+          "bottom": 249.9000244140625
+        },
+        {
+          "left": 57.77241897583008,
+          "right": 84.62216186523438,
+          "top": 15.200279235839844,
+          "bottom": 251.6170883178711
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "name": "Mobile 009 curved back and contents remain within stage without horizontal overflow",
+      "pass": true,
+      "stage": {
+        "left": 15,
+        "right": 375,
+        "top": -70,
+        "bottom": 290
+      },
+      "inside": {
+        "left": 198.96197509765625,
+        "right": 338.9519958496094,
+        "top": 22.886436462402344,
+        "bottom": 240.13506317138672
+      },
+      "faces": [
+        {
+          "left": 177.0297088623047,
+          "right": 199.65948486328125,
+          "top": 21.462928771972656,
+          "bottom": 242.26160430908203
+        },
+        {
+          "left": 154.79981994628906,
+          "right": 178.2612762451172,
+          "top": 20.14258575439453,
+          "bottom": 244.2339859008789
+        },
+        {
+          "left": 131.75469970703125,
+          "right": 156.07582092285156,
+          "top": 18.839385986328125,
+          "bottom": 246.1807861328125
+        },
+        {
+          "left": 107.88700103759766,
+          "right": 133.07608032226562,
+          "top": 17.56920623779297,
+          "bottom": 248.07823944091797
+        },
+        {
+          "left": 83.21212005615234,
+          "right": 109.25352478027344,
+          "top": 16.349700927734375,
+          "bottom": 249.9000244140625
+        },
+        {
+          "left": 57.77241897583008,
+          "right": 84.62216186523438,
+          "top": 15.200279235839844,
+          "bottom": 251.6170883178711
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "name": "Mobile return shows the closed print and preserves scrolling",
+      "pass": true
+    },
+    {
+      "name": "Paper print and semantic result remain valid in gallery theme",
+      "pass": true
+    },
+    {
+      "name": "Paper print and semantic result remain valid in warm theme",
+      "pass": true
+    },
+    {
+      "name": "No errors in desktop, mobile or actual offline HTML",
+      "pass": true,
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "evidence": {
+    "desktop-closed": "assets/qa/case-01-paper-v13/desktop-closed.png",
+    "desktop-paused-90": "assets/qa/case-01-paper-v13/desktop-paused-90.png",
+    "desktop-paused-45": "assets/qa/case-01-paper-v13/desktop-paused-45.png",
+    "desktop-open": "assets/qa/case-01-paper-v13/desktop-open.png",
+    "cover": "web/media/demo-01.webp",
+    "export": "notes/case-01-paper-export.html",
+    "offline-open": "assets/qa/case-01-paper-v13/offline-open.png",
+    "mobile-open-390": "assets/qa/case-01-paper-v13/mobile-open-390.png",
+    "mobile-closed-390": "assets/qa/case-01-paper-v13/mobile-closed-390.png",
+    "desktop-gallery": "assets/qa/case-01-paper-v13/desktop-gallery.png",
+    "desktop-warm": "assets/qa/case-01-paper-v13/desktop-warm.png"
+  },
+  "visualInspection": "Actual desktop closed/open and paused 45/90-degree screenshots, plus mobile/offline screenshots inspected. One-pixel bleed removes raster cracks; complete printed imagery and back text remain continuous. Six bands approximate mild paper curvature; no cloth or physical sheet simulation.",
+  "scope": [
+    "Only CASE 01 renderer/controller/styles changed.",
+    "CSS paper bend is derived from the actual hinge matrix, including paused, reversed, hidden and reduced-motion states.",
+    "The inherited original keyframes show flexible clothing; paper deformation is our product-specific interpretation."
+  ]
+}

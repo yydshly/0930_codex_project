@@ -1,0 +1,867 @@
+{
+  "checkedAt": "2026-10-03T00:26:38.207Z",
+  "renderEnvironment": "Headless Chromium, ANGLE SwiftShader; not physical-device performance evidence. Run after isolated CASE 08 measurement browsers were closed.",
+  "checks": [
+    "十项保持完整独立分析",
+    "1 展示对应最终诊断与重点",
+    "01 同一档案对象打开为薄纸分区",
+    "01 实际开合角度驱动纸面弯曲与阴影",
+    "01 分区印刷没有重复ID且说明到位获得焦点",
+    "01 实际体验导出包含当前纸面与对应分析",
+    "01 实际独立HTML仍使用薄纸分区与编辑快照",
+    "01 合上后纸页角度和返回焦点一致",
+    "4 展示对应最终诊断与重点",
+    "04 开关圆点进入实际第一条研究卡",
+    "04 成果收拢可正反寻址到同一状态",
+    "04 整理完成的关闭态保留真实成果且无下载假状态",
+    "04 实际配方导出保留同一关闭态、输入和计划",
+    "04 关闭后实际成果文件仍可下载并保留来源待补",
+    "04 体验记录包含对应分析与完整闭环状态",
+    "3 展示对应最终诊断与重点",
+    "03 独立镜头接力仍保留",
+    "8 展示对应最终诊断与重点",
+    "08 保留三只连续闭合外皮",
+    "08 主站加载合并附件与解析法线",
+    "08 实际体验导出保留触碰和新绘制指标",
+    "08 隐藏后计时停止且没有残留输入",
+    "08 返回后恢复真实时间运行",
+    "1 展示对应最终诊断与重点",
+    "1 主站及嵌入页390px均无横向溢出",
+    "4 展示对应最终诊断与重点",
+    "4 主站及嵌入页390px均无横向溢出",
+    "8 展示对应最终诊断与重点",
+    "8 主站及嵌入页390px均无横向溢出",
+    "08 手机选中角色与实际绘制批次一致",
+    "相关页面无脚本错误或缺失本地资源"
+  ],
+  "errors": [],
+  "missing": [],
+  "samples": {
+    "case01": {
+      "studio": "研究物件工作室",
+      "subtitle": "把想法做成可以观看、操作和带走的作品。",
+      "theme": "editorial",
+      "filter": "全部",
+      "selected": "011",
+      "focus": "011",
+      "readingPhase": "open",
+      "paper": {
+        "bands": 6,
+        "angle": 155,
+        "bendPerBand": 1.549,
+        "gutterShadow": 0.154,
+        "thickness": 0.7,
+        "model": "bounded visual bend from the actual cover angle"
+      },
+      "visibleProjects": [
+        "011",
+        "008",
+        "010",
+        "009"
+      ],
+      "effect": "物件聚焦、沿书脊翻开、薄纸弯曲与贴页阴影、连续阅读"
+    },
+    "case04": {
+      "input": {
+        "product": "RESEARCH",
+        "question": "这些观察怎样形成可追溯的成果？",
+        "evidenceText": "先聚焦一件成果，其他物件淡出。 | https://x.com/cambreedesigns/status/2104999693113766152\n先聚焦一件成果，其他物件淡出。 | https://x.com/cambreedesigns/status/2104999693113766152\n待确认真实用户的需求。 | ",
+        "theme": "paper",
+        "time": 2.6,
+        "playing": false,
+        "spring": 0.68,
+        "wave": 0.72,
+        "scenes": [
+          {
+            "headline": "从观察，\n开始。",
+            "detail": "保留原作观察与来源，成为一张研究卡。",
+            "seconds": 5
+          },
+          {
+            "headline": "让证据，\n有条理。",
+            "detail": "相同记录合并，缺少来源留待补充。",
+            "seconds": 5
+          },
+          {
+            "headline": "带走一份，\n有来源的成果。",
+            "detail": "研究卡、整理结果与待办，保留在同一份成果包。",
+            "seconds": 5
+          }
+        ],
+        "workflow": {
+          "question": "这些观察怎样形成可追溯的成果？",
+          "filename": "研究证据成果.md",
+          "rule": "仅合并内容与来源完全相同的记录；缺少内容或有效 HTTP(S) 来源的记录留作待补。未自动核实来源内容。",
+          "inputCount": 3,
+          "includedCount": 1,
+          "mergedCount": 1,
+          "pendingCount": 1,
+          "records": [
+            {
+              "id": 1,
+              "claim": "先聚焦一件成果，其他物件淡出。",
+              "source": "https://x.com/cambreedesigns/status/2104999693113766152",
+              "status": "included",
+              "reason": "保留填写的来源"
+            },
+            {
+              "id": 2,
+              "claim": "先聚焦一件成果，其他物件淡出。",
+              "source": "https://x.com/cambreedesigns/status/2104999693113766152",
+              "status": "merged",
+              "reason": "内容与来源相同",
+              "duplicateOf": 1
+            },
+            {
+              "id": 3,
+              "claim": "待确认真实用户的需求。",
+              "source": "",
+              "status": "needs-source",
+              "reason": "缺少来源"
+            }
+          ],
+          "included": [
+            {
+              "id": 1,
+              "claim": "先聚焦一件成果，其他物件淡出。",
+              "source": "https://x.com/cambreedesigns/status/2104999693113766152",
+              "status": "included",
+              "reason": "保留填写的来源"
+            }
+          ],
+          "merged": [
+            {
+              "id": 2,
+              "claim": "先聚焦一件成果，其他物件淡出。",
+              "source": "https://x.com/cambreedesigns/status/2104999693113766152",
+              "status": "merged",
+              "reason": "内容与来源相同",
+              "duplicateOf": 1
+            }
+          ],
+          "pending": [
+            {
+              "id": 3,
+              "claim": "待确认真实用户的需求。",
+              "source": "",
+              "status": "needs-source",
+              "reason": "缺少来源"
+            }
+          ]
+        },
+        "sequence": {
+          "time": 2.6,
+          "start": 0,
+          "end": 15,
+          "openingEnd": 2.25,
+          "inputEnd": 5,
+          "closingStart": 13.9,
+          "foldEnd": 14.4,
+          "phase": "input",
+          "input": 0.1503912000757813,
+          "fold": 0,
+          "close": 0,
+          "knob": {
+            "x": 840.2150128222797,
+            "y": 323.41987759416486,
+            "radius": 96.96087999242187,
+            "on": 1,
+            "role": "first-record",
+            "recordId": 1
+          },
+          "operation": {
+            "rule": "仅合并内容与来源完全相同的记录；缺少内容或有效 HTTP(S) 来源的记录留作待补。未自动核实来源内容。",
+            "inputCount": 3,
+            "includedCount": 1,
+            "mergedCount": 1,
+            "pendingCount": 1,
+            "filename": "研究证据成果.md",
+            "resultRetained": true,
+            "downloadClaim": false
+          },
+          "scope": "Time-derived presentation of the real local rule output; no AI verification and no claim that a download has occurred."
+        },
+        "sequencePlan": [
+          {
+            "start": 0,
+            "end": 2.25,
+            "action": "开启本地整理",
+            "object": "胶囊开关"
+          },
+          {
+            "start": 2.25,
+            "end": 5,
+            "action": "开关圆点进入第一张真实研究卡",
+            "object": "第一条输入记录"
+          },
+          {
+            "start": 10,
+            "end": 13.9,
+            "action": "记录合并、待补分区并展示实际成果",
+            "object": "同一整理结果"
+          },
+          {
+            "start": 13.9,
+            "end": 15,
+            "action": "成果收拢后关闭整理，完整文件继续可导出",
+            "object": "同一成果文件"
+          }
+        ],
+        "totalSeconds": 15,
+        "currentScene": 1,
+        "currentEffect": "研究卡展开",
+        "effectProgress": 0.12727272727272732,
+        "effectDuration": 2.75,
+        "exporting": false,
+        "recording": {
+          "phase": "idle",
+          "progress": 0
+        }
+      },
+      "fold": {
+        "product": "RESEARCH",
+        "question": "这些观察怎样形成可追溯的成果？",
+        "evidenceText": "先聚焦一件成果，其他物件淡出。 | https://x.com/cambreedesigns/status/2104999693113766152\n先聚焦一件成果，其他物件淡出。 | https://x.com/cambreedesigns/status/2104999693113766152\n待确认真实用户的需求。 | ",
+        "theme": "paper",
+        "time": 14.1,
+        "playing": false,
+        "spring": 0.68,
+        "wave": 0.72,
+        "scenes": [
+          {
+            "headline": "从观察，\n开始。",
+            "detail": "保留原作观察与来源，成为一张研究卡。",
+            "seconds": 5
+          },
+          {
+            "headline": "让证据，\n有条理。",
+            "detail": "相同记录合并，缺少来源留待补充。",
+            "seconds": 5
+          },
+          {
+            "headline": "带走一份，\n有来源的成果。",
+            "detail": "研究卡、整理结果与待办，保留在同一份成果包。",
+            "seconds": 5
+          }
+        ],
+        "workflow": {
+          "question": "这些观察怎样形成可追溯的成果？",
+          "filename": "研究证据成果.md",
+          "rule": "仅合并内容与来源完全相同的记录；缺少内容或有效 HTTP(S) 来源的记录留作待补。未自动核实来源内容。",
+          "inputCount": 3,
+          "includedCount": 1,
+          "mergedCount": 1,
+          "pendingCount": 1,
+          "records": [
+            {
+              "id": 1,
+              "claim": "先聚焦一件成果，其他物件淡出。",
+              "source": "https://x.com/cambreedesigns/status/2104999693113766152",
+              "status": "included",
+              "reason": "保留填写的来源"
+            },
+            {
+              "id": 2,
+              "claim": "先聚焦一件成果，其他物件淡出。",
+              "source": "https://x.com/cambreedesigns/status/2104999693113766152",
+              "status": "merged",
+              "reason": "内容与来源相同",
+              "duplicateOf": 1
+            },
+            {
+              "id": 3,
+              "claim": "待确认真实用户的需求。",
+              "source": "",
+              "status": "needs-source",
+              "reason": "缺少来源"
+            }
+          ],
+          "included": [
+            {
+              "id": 1,
+              "claim": "先聚焦一件成果，其他物件淡出。",
+              "source": "https://x.com/cambreedesigns/status/2104999693113766152",
+              "status": "included",
+              "reason": "保留填写的来源"
+            }
+          ],
+          "merged": [
+            {
+              "id": 2,
+              "claim": "先聚焦一件成果，其他物件淡出。",
+              "source": "https://x.com/cambreedesigns/status/2104999693113766152",
+              "status": "merged",
+              "reason": "内容与来源相同",
+              "duplicateOf": 1
+            }
+          ],
+          "pending": [
+            {
+              "id": 3,
+              "claim": "待确认真实用户的需求。",
+              "source": "",
+              "status": "needs-source",
+              "reason": "缺少来源"
+            }
+          ]
+        },
+        "sequence": {
+          "time": 14.1,
+          "start": 0,
+          "end": 15,
+          "openingEnd": 2.25,
+          "inputEnd": 5,
+          "closingStart": 13.9,
+          "foldEnd": 14.4,
+          "phase": "folding",
+          "input": 0,
+          "fold": 0.351999999999998,
+          "close": 0,
+          "knob": {
+            "x": 1003.3600000000006,
+            "y": 217.71199999999965,
+            "radius": 48.4959999999998,
+            "on": 1,
+            "role": "retained-result",
+            "filename": "研究证据成果.md"
+          },
+          "operation": {
+            "rule": "仅合并内容与来源完全相同的记录；缺少内容或有效 HTTP(S) 来源的记录留作待补。未自动核实来源内容。",
+            "inputCount": 3,
+            "includedCount": 1,
+            "mergedCount": 1,
+            "pendingCount": 1,
+            "filename": "研究证据成果.md",
+            "resultRetained": true,
+            "downloadClaim": false
+          },
+          "scope": "Time-derived presentation of the real local rule output; no AI verification and no claim that a download has occurred."
+        },
+        "sequencePlan": [
+          {
+            "start": 0,
+            "end": 2.25,
+            "action": "开启本地整理",
+            "object": "胶囊开关"
+          },
+          {
+            "start": 2.25,
+            "end": 5,
+            "action": "开关圆点进入第一张真实研究卡",
+            "object": "第一条输入记录"
+          },
+          {
+            "start": 10,
+            "end": 13.9,
+            "action": "记录合并、待补分区并展示实际成果",
+            "object": "同一整理结果"
+          },
+          {
+            "start": 13.9,
+            "end": 15,
+            "action": "成果收拢后关闭整理，完整文件继续可导出",
+            "object": "同一成果文件"
+          }
+        ],
+        "totalSeconds": 15,
+        "currentScene": 3,
+        "currentEffect": "整理与导出",
+        "effectProgress": 0.82,
+        "effectDuration": 5,
+        "exporting": false,
+        "recording": {
+          "phase": "idle",
+          "progress": 0
+        }
+      },
+      "complete": {
+        "product": "RESEARCH",
+        "question": "这些观察怎样形成可追溯的成果？",
+        "evidenceText": "先聚焦一件成果，其他物件淡出。 | https://x.com/cambreedesigns/status/2104999693113766152\n先聚焦一件成果，其他物件淡出。 | https://x.com/cambreedesigns/status/2104999693113766152\n待确认真实用户的需求。 | ",
+        "theme": "paper",
+        "time": 15,
+        "playing": false,
+        "spring": 0.68,
+        "wave": 0.72,
+        "scenes": [
+          {
+            "headline": "从观察，\n开始。",
+            "detail": "保留原作观察与来源，成为一张研究卡。",
+            "seconds": 5
+          },
+          {
+            "headline": "让证据，\n有条理。",
+            "detail": "相同记录合并，缺少来源留待补充。",
+            "seconds": 5
+          },
+          {
+            "headline": "带走一份，\n有来源的成果。",
+            "detail": "研究卡、整理结果与待办，保留在同一份成果包。",
+            "seconds": 5
+          }
+        ],
+        "workflow": {
+          "question": "这些观察怎样形成可追溯的成果？",
+          "filename": "研究证据成果.md",
+          "rule": "仅合并内容与来源完全相同的记录；缺少内容或有效 HTTP(S) 来源的记录留作待补。未自动核实来源内容。",
+          "inputCount": 3,
+          "includedCount": 1,
+          "mergedCount": 1,
+          "pendingCount": 1,
+          "records": [
+            {
+              "id": 1,
+              "claim": "先聚焦一件成果，其他物件淡出。",
+              "source": "https://x.com/cambreedesigns/status/2104999693113766152",
+              "status": "included",
+              "reason": "保留填写的来源"
+            },
+            {
+              "id": 2,
+              "claim": "先聚焦一件成果，其他物件淡出。",
+              "source": "https://x.com/cambreedesigns/status/2104999693113766152",
+              "status": "merged",
+              "reason": "内容与来源相同",
+              "duplicateOf": 1
+            },
+            {
+              "id": 3,
+              "claim": "待确认真实用户的需求。",
+              "source": "",
+              "status": "needs-source",
+              "reason": "缺少来源"
+            }
+          ],
+          "included": [
+            {
+              "id": 1,
+              "claim": "先聚焦一件成果，其他物件淡出。",
+              "source": "https://x.com/cambreedesigns/status/2104999693113766152",
+              "status": "included",
+              "reason": "保留填写的来源"
+            }
+          ],
+          "merged": [
+            {
+              "id": 2,
+              "claim": "先聚焦一件成果，其他物件淡出。",
+              "source": "https://x.com/cambreedesigns/status/2104999693113766152",
+              "status": "merged",
+              "reason": "内容与来源相同",
+              "duplicateOf": 1
+            }
+          ],
+          "pending": [
+            {
+              "id": 3,
+              "claim": "待确认真实用户的需求。",
+              "source": "",
+              "status": "needs-source",
+              "reason": "缺少来源"
+            }
+          ]
+        },
+        "sequence": {
+          "time": 15,
+          "start": 0,
+          "end": 15,
+          "openingEnd": 2.25,
+          "inputEnd": 5,
+          "closingStart": 13.9,
+          "foldEnd": 14.4,
+          "phase": "complete",
+          "input": 0,
+          "fold": 1,
+          "close": 1,
+          "knob": {
+            "x": 484,
+            "y": 335,
+            "radius": 42,
+            "on": 0,
+            "role": "retained-result",
+            "filename": "研究证据成果.md"
+          },
+          "operation": {
+            "rule": "仅合并内容与来源完全相同的记录；缺少内容或有效 HTTP(S) 来源的记录留作待补。未自动核实来源内容。",
+            "inputCount": 3,
+            "includedCount": 1,
+            "mergedCount": 1,
+            "pendingCount": 1,
+            "filename": "研究证据成果.md",
+            "resultRetained": true,
+            "downloadClaim": false
+          },
+          "scope": "Time-derived presentation of the real local rule output; no AI verification and no claim that a download has occurred."
+        },
+        "sequencePlan": [
+          {
+            "start": 0,
+            "end": 2.25,
+            "action": "开启本地整理",
+            "object": "胶囊开关"
+          },
+          {
+            "start": 2.25,
+            "end": 5,
+            "action": "开关圆点进入第一张真实研究卡",
+            "object": "第一条输入记录"
+          },
+          {
+            "start": 10,
+            "end": 13.9,
+            "action": "记录合并、待补分区并展示实际成果",
+            "object": "同一整理结果"
+          },
+          {
+            "start": 13.9,
+            "end": 15,
+            "action": "成果收拢后关闭整理，完整文件继续可导出",
+            "object": "同一成果文件"
+          }
+        ],
+        "totalSeconds": 15,
+        "currentScene": 3,
+        "currentEffect": "整理与导出",
+        "effectProgress": 1,
+        "effectDuration": 5,
+        "exporting": false,
+        "recording": {
+          "phase": "idle",
+          "progress": 0
+        }
+      }
+    },
+    "case08": {
+      "beforeInteraction": {
+        "module": "mascot",
+        "status": "ready",
+        "mode": "sandbox",
+        "running": false,
+        "renderer": "webgl",
+        "rendering": {
+          "drawCalls": 16,
+          "triangles": 106354,
+          "pixelRatio": 1,
+          "defaultPixelRatio": 1,
+          "canvasPixels": {
+            "width": 1228,
+            "height": 520
+          },
+          "interactiveResolutionLimit": 960,
+          "attachmentBatches": 3,
+          "skinTriangles": 49288,
+          "attachmentTriangles": 28480,
+          "analyticNormals": true,
+          "drawUpdates": {
+            "submitted": 2,
+            "skipped": 0,
+            "lastGeometryMs": 0.30000001192092896,
+            "lastSubmitMs": 0.5999999940395355
+          },
+          "staticDrawCallsSaved": 0
+        },
+        "input": {
+          "received": 0,
+          "applied": 0,
+          "coalesced": 0,
+          "flushedOnRelease": 0,
+          "pending": 0,
+          "mode": "one deformation update per animation frame, final pointer target flushed on release"
+        },
+        "selected": "rabbit",
+        "shownCharacters": [
+          "rabbit",
+          "dumpling",
+          "cat"
+        ],
+        "target": null,
+        "pokes": 0,
+        "hits": 0,
+        "goal": null,
+        "combo": 0,
+        "maxCombo": 0,
+        "misses": 0,
+        "remaining": null,
+        "elapsed": 0,
+        "softness": 65,
+        "gravity": true,
+        "soundEnabled": true,
+        "viewAngle": 0,
+        "characters": [
+          {
+            "id": "rabbit",
+            "name": "粉兔",
+            "height": 0,
+            "deformation": 0,
+            "localIndent": 0,
+            "activePart": null,
+            "dragging": false,
+            "stretch": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "deformedParts": [],
+            "vertexCount": 9098,
+            "surface": {
+              "type": "continuous-skin",
+              "boundaryEdges": 0,
+              "restVolume": 3.5416,
+              "volumeBeforeCompensation": 1,
+              "volumeAfterCompensation": 1,
+              "transverseThicknessRatio": 1,
+              "compensationCoefficient": 0,
+              "minimumJacobian": 1,
+              "regions": [
+                "body",
+                "head",
+                "leftEar",
+                "leftHand",
+                "leftFoot",
+                "rightEar",
+                "rightHand",
+                "rightFoot"
+              ]
+            }
+          },
+          {
+            "id": "dumpling",
+            "name": "橙团",
+            "height": 0,
+            "deformation": 0,
+            "localIndent": 0,
+            "activePart": null,
+            "dragging": false,
+            "stretch": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "deformedParts": [],
+            "vertexCount": 7526,
+            "surface": {
+              "type": "continuous-skin",
+              "boundaryEdges": 0,
+              "restVolume": 3.6027,
+              "volumeBeforeCompensation": 1,
+              "volumeAfterCompensation": 1,
+              "transverseThicknessRatio": 1,
+              "compensationCoefficient": 0,
+              "minimumJacobian": 1,
+              "regions": [
+                "body"
+              ]
+            }
+          },
+          {
+            "id": "cat",
+            "name": "薄荷猫",
+            "height": 0,
+            "deformation": 0,
+            "localIndent": 0,
+            "activePart": null,
+            "dragging": false,
+            "stretch": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "deformedParts": [],
+            "vertexCount": 8026,
+            "surface": {
+              "type": "continuous-skin",
+              "boundaryEdges": 0,
+              "restVolume": 3.6863,
+              "volumeBeforeCompensation": 1,
+              "volumeAfterCompensation": 1,
+              "transverseThicknessRatio": 1,
+              "compensationCoefficient": 0,
+              "minimumJacobian": 1,
+              "regions": [
+                "body",
+                "leftEar",
+                "rightEar"
+              ]
+            }
+          }
+        ],
+        "scope": "Original continuous procedural skins. Local spring fields and bounded transverse thickness compensation, not exact volume conservation or full soft-body physics. Combo challenge is our optional extension.",
+        "log": []
+      },
+      "exported": {
+        "module": "mascot",
+        "status": "playing",
+        "mode": "sandbox",
+        "running": true,
+        "renderer": "webgl",
+        "rendering": {
+          "drawCalls": 16,
+          "triangles": 106354,
+          "pixelRatio": 0.7818,
+          "defaultPixelRatio": 1,
+          "canvasPixels": {
+            "width": 960,
+            "height": 406
+          },
+          "interactiveResolutionLimit": 960,
+          "attachmentBatches": 3,
+          "skinTriangles": 49288,
+          "attachmentTriangles": 28480,
+          "analyticNormals": true,
+          "drawUpdates": {
+            "submitted": 26,
+            "skipped": 3,
+            "lastGeometryMs": 23.599999994039536,
+            "lastSubmitMs": 1.199999988079071
+          },
+          "staticDrawCallsSaved": 0
+        },
+        "input": {
+          "received": 0,
+          "applied": 0,
+          "coalesced": 0,
+          "flushedOnRelease": 0,
+          "pending": 0,
+          "mode": "one deformation update per animation frame, final pointer target flushed on release"
+        },
+        "selected": "rabbit",
+        "shownCharacters": [
+          "rabbit",
+          "dumpling",
+          "cat"
+        ],
+        "target": null,
+        "pokes": 1,
+        "hits": 0,
+        "goal": null,
+        "combo": 0,
+        "maxCombo": 0,
+        "misses": 0,
+        "remaining": null,
+        "elapsed": 0.5,
+        "softness": 65,
+        "gravity": true,
+        "soundEnabled": false,
+        "viewAngle": 0,
+        "characters": [
+          {
+            "id": "rabbit",
+            "name": "粉兔",
+            "height": 0.772,
+            "deformation": -0.005,
+            "localIndent": 0.057,
+            "activePart": "head",
+            "dragging": false,
+            "stretch": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "deformedParts": [
+              "body",
+              "head",
+              "leftEar",
+              "leftHand",
+              "leftFoot",
+              "rightEar",
+              "rightHand",
+              "rightFoot"
+            ],
+            "vertexCount": 9098,
+            "surface": {
+              "type": "continuous-skin",
+              "boundaryEdges": 0,
+              "restVolume": 3.5416,
+              "volumeBeforeCompensation": 0.9889,
+              "volumeAfterCompensation": 1,
+              "transverseThicknessRatio": 1.0082,
+              "compensationCoefficient": 0.066,
+              "minimumJacobian": 0.9809,
+              "regions": [
+                "body",
+                "head",
+                "leftEar",
+                "leftHand",
+                "leftFoot",
+                "rightEar",
+                "rightHand",
+                "rightFoot"
+              ]
+            }
+          },
+          {
+            "id": "dumpling",
+            "name": "橙团",
+            "height": 0,
+            "deformation": 0,
+            "localIndent": 0,
+            "activePart": null,
+            "dragging": false,
+            "stretch": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "deformedParts": [],
+            "vertexCount": 7526,
+            "surface": {
+              "type": "continuous-skin",
+              "boundaryEdges": 0,
+              "restVolume": 3.6027,
+              "volumeBeforeCompensation": 1,
+              "volumeAfterCompensation": 1,
+              "transverseThicknessRatio": 1,
+              "compensationCoefficient": 0,
+              "minimumJacobian": 1,
+              "regions": [
+                "body"
+              ]
+            }
+          },
+          {
+            "id": "cat",
+            "name": "薄荷猫",
+            "height": 0,
+            "deformation": 0,
+            "localIndent": 0,
+            "activePart": null,
+            "dragging": false,
+            "stretch": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "deformedParts": [],
+            "vertexCount": 8026,
+            "surface": {
+              "type": "continuous-skin",
+              "boundaryEdges": 0,
+              "restVolume": 3.6863,
+              "volumeBeforeCompensation": 1,
+              "volumeAfterCompensation": 1,
+              "transverseThicknessRatio": 1,
+              "compensationCoefficient": 0,
+              "minimumJacobian": 1,
+              "regions": [
+                "body",
+                "leftEar",
+                "rightEar"
+              ]
+            }
+          }
+        ],
+        "scope": "Original continuous procedural skins. Local spring fields and bounded transverse thickness compensation, not exact volume conservation or full soft-body physics. Combo challenge is our optional extension.",
+        "log": [
+          {
+            "time": 0.04,
+            "character": "rabbit",
+            "mode": "sandbox",
+            "softness": 65,
+            "gravity": true
+          }
+        ]
+      }
+    }
+  },
+  "failure": null
+}

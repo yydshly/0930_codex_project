@@ -1,0 +1,136 @@
+{
+  "caseId": 4,
+  "checkedAt": "2026-10-03T00:14:16.142Z",
+  "sourceTarget": "作者自述三次提示制作发布片；已观察开关、大字、4 秒曲线、8 秒环字、10 秒点阵及结尾开关。我们的参考判断是让连续动效服务于具体功能表达。作者未披露完整工具链，也未推荐下面的证据整理产品；该功能是我们的原创扩展。",
+  "diagnosis": "旧版小字与研究卡抢占画面，环字过扁，点阵亮度和振幅偏低。功能正确却没有让原作最有辨识度的字形、橙点和留白主导画面。",
+  "priority": "独立重做巨大字形、前后环字与径向点阵，同时让真实研究卡和成果仍接在原时间轴上。",
+  "changes": [
+    "本地Inter Display黑体将Archive变成占画面主体的巨型字形，橙点、留白与下方小注各有层级。",
+    "环字有高差、背面镜像、前后明暗和透视；点阵改为纸底黑色径向波，由片时连续重算。",
+    "字形到曲线的连续衔接重新校准，首尾开关、真实输入、合并/待补与完整成果仍使用同一数据。"
+  ],
+  "verify": [
+    "已检查实际巨型字、环字、点阵和成果画面；34项实际检查通过，无脚本/资源错误。",
+    "实际完整WebM为15秒1280×720；七处文件寻址与当前画面对应。修改研究卡、JSON/Markdown、影片及编辑恢复通过。"
+  ],
+  "remaining": [
+    "环字用仿射投影字形，侧边字仍会压窄；原作字体与制作链未知。",
+    "影片只展示最多14个标记，完整输入保留在面板与文件；仍是无声的有限发布片。"
+  ],
+  "verificationReport": "notes/case-04-bookends-verification.json",
+  "webm": {
+    "duration": 15,
+    "width": 1280,
+    "height": 720,
+    "seekSamples": [
+      {
+        "name": "opening",
+        "duration": 15,
+        "time": 0.5,
+        "width": 1280,
+        "height": 720,
+        "meanAbsDiff": 1.7000499131944444
+      },
+      {
+        "name": "input-transition",
+        "duration": 15,
+        "time": 2.8,
+        "width": 1280,
+        "height": 720,
+        "meanAbsDiff": 1.58323046875
+      },
+      {
+        "name": "result",
+        "duration": 15,
+        "time": 13.7,
+        "width": 1280,
+        "height": 720,
+        "meanAbsDiff": 1.6986527777777778
+      },
+      {
+        "name": "folding",
+        "duration": 15,
+        "time": 14.1,
+        "width": 1280,
+        "height": 720,
+        "meanAbsDiff": 8.077639322916667
+      },
+      {
+        "name": "closing",
+        "duration": 15,
+        "time": 14.6,
+        "width": 1280,
+        "height": 720,
+        "meanAbsDiff": 2.1178624131944446
+      },
+      {
+        "name": "complete",
+        "duration": 15,
+        "time": 14.9,
+        "width": 1280,
+        "height": 720,
+        "meanAbsDiff": 1.8316788194444444
+      }
+    ]
+  },
+  "pixelContinuity": {
+    "curve": {
+      "x": 650.3922737306843,
+      "y": 317.83311258278144,
+      "n": 4530
+    },
+    "ring": {
+      "x": 639.4997861420018,
+      "y": 320.50085543199316,
+      "n": 4676
+    },
+    "leaving": {
+      "x": 639.5,
+      "y": 331,
+      "n": 764
+    },
+    "wave": {
+      "x": 639.4787077826726,
+      "y": 331.4185022026432,
+      "n": 681
+    }
+  },
+  "sequence": {
+    "time": 14.9,
+    "start": 0,
+    "end": 15,
+    "openingEnd": 2.25,
+    "inputEnd": 5,
+    "closingStart": 13.9,
+    "foldEnd": 14.4,
+    "phase": "complete",
+    "input": 0,
+    "fold": 1,
+    "close": 1,
+    "knob": {
+      "x": 484,
+      "y": 335,
+      "radius": 42,
+      "on": 0,
+      "role": "retained-result",
+      "filename": "研究证据成果.md"
+    },
+    "operation": {
+      "rule": "仅合并内容与来源完全相同的记录；缺少内容或有效 HTTP(S) 来源的记录留作待补。未自动核实来源内容。",
+      "inputCount": 5,
+      "includedCount": 3,
+      "mergedCount": 1,
+      "pendingCount": 1,
+      "filename": "研究证据成果.md",
+      "resultRetained": true,
+      "downloadClaim": false
+    },
+    "scope": "Time-derived presentation of the real local rule output; no AI verification and no claim that a download has occurred."
+  },
+  "verificationFile": "assets/qa/quality-reset-v15/04-validation.json",
+  "evidenceFiles": [
+    "assets/qa/quality-reset-v15/04-type-final.png",
+    "assets/qa/quality-reset-v15/04-ring-final.png",
+    "assets/qa/quality-reset-v15/04-grid-final.png"
+  ]
+}

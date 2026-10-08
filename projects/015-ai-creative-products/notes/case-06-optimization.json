@@ -1,0 +1,33 @@
+{
+  "caseId": 6,
+  "sourceTarget": "原片可见角色与黑猫在实体钢琴上演奏；作者披露 Python 编曲、创建三维动画并用 Blender 渲染。参考目标是让声音、角色表演和钢琴属于同一段音乐，原作具体触键算法未知。",
+  "diagnosis": "旧版薄荷机械角色、椭球拼接猫和崭新胡桃琴体，偏离了原作珊瑚方块角色、连续黑猫及蓝灰旧漆琴体的主要识别关系。",
+  "priority": "按本例角色轮廓和琴体材质重建主体，同时保持同一乐谱驱动真实声音、琴键与触键。",
+  "changes": [
+    "角色改为珊瑚方形壳、短矩形关节与脚，表情保持图形化。",
+    "猫体、颈胸和后臀变成连续曲面；修正外皮反向三角面，缩短露出的腿并重新贴合脸部。",
+    "实体钢琴使用蓝灰旧漆和边缘磨损，保留暖色房间与玻璃琴灯。",
+    "实际示例影片重新生成，页面样片指向当前模型的field-duet-v15，避免视频与实时场景不一致。"
+  ],
+  "verify": [
+    "已检查当前静止、猫触键与房间实际画面。",
+    "96个触键姿态覆盖原三首旋律，触键/琴键/演奏角色一致；实际音频、寻址、WAV/Python/PNG/WebM与窄屏检查通过。",
+    "最终当前场景影片12.8秒、24fps、308帧，含Opus音轨，无运行错误。"
+  ],
+  "remaining": [
+    "新造型与旧漆只是网页原创美术，细节与光照仍不同于原作的离线渲染。",
+    "本机没有Blender；新版造型尚未移植到原bpy配方，不能声称离线模型已同步或渲染已验证。"
+  ],
+  "verificationFile": "notes/quality-reset-v15-case06.json",
+  "framingVerificationFile": "notes/case-06-framing-verification.json",
+  "videoVerificationFile": "notes/case-06-video-playback-verification.json",
+  "continuityVerificationFile": "notes/case-06-continuity-verification.json",
+  "gaitVerificationFile": "notes/case-06-gait-verification.json",
+  "revision": "v9",
+  "pageVerificationFile": "notes/case-06-v9-page-verification.json",
+  "evidenceFiles": [
+    "assets/qa/quality-reset-v15/06-after.png",
+    "assets/qa/quality-reset-v15/06-cat-contact-after.png",
+    "web/media/field-duet-v15.webm"
+  ]
+}

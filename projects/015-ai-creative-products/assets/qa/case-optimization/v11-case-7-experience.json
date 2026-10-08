@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-02T23:25:14.580Z",
+  "caseId": 7,
+  "product": "三维虚拟展会编辑器",
+  "task": "发现并走近展位、查看对应成果，打开实际原型并导出参观记录。",
+  "state": {
+    "caseId": 7,
+    "time": "dusk",
+    "treeDensity": 20,
+    "selected": "product-lab",
+    "visits": [
+      {
+        "id": "product-lab",
+        "title": "产品原型展位",
+        "visitedAt": "2026-10-02T23:25:14.501Z",
+        "via": "guided-shortcut",
+        "positionAtView": {
+          "x": 2.8,
+          "z": -3.9,
+          "yaw": 0.1,
+          "pitch": 0
+        },
+        "distanceAtView": 2.21,
+        "relatedCases": [
+          6
+        ],
+        "shownObjects": [
+          "微缩实体琴键",
+          "原创机器人与猫",
+          "默认 32 音符 / 90 BPM 谱板",
+          "CASE 06 实际运行画面"
+        ]
+      }
+    ],
+    "view": {
+      "yaw": 0.4,
+      "elevation": 0.54,
+      "distance": 34
+    },
+    "mode": "walk",
+    "position": {
+      "x": 2.8,
+      "z": -3.9,
+      "yaw": 0.1,
+      "pitch": 0
+    },
+    "reached": [
+      "product-lab"
+    ],
+    "proximity": {
+      "id": "product-lab",
+      "distance": 2.21,
+      "canView": true,
+      "viewed": true
+    },
+    "exhibits": [
+      {
+        "id": "visual-systems",
+        "role": "纸档案、主题色与实际展厅画面",
+        "objects": [
+          "双页作品档案",
+          "三种展厅主题样板",
+          "CASE 01 实际运行画面"
+        ],
+        "relatedCases": [
+          1
+        ],
+        "page": "./?id=1",
+        "defaultRecipe": null
+      },
+      {
+        "id": "product-lab",
+        "role": "实体琴键、机器人与猫、默认配方谱板",
+        "objects": [
+          "微缩实体琴键",
+          "原创机器人与猫",
+          "默认 32 音符 / 90 BPM 谱板",
+          "CASE 06 实际运行画面"
+        ],
+        "relatedCases": [
+          6
+        ],
+        "page": "./?id=6",
+        "defaultRecipe": {
+          "mode": "static-default-illustration",
+          "mood": "calm",
+          "noteCount": 32,
+          "tempo": 90
+        }
+      },
+      {
+        "id": "research-notes",
+        "role": "路线沙盘、来源册、案例索引与参观凭证",
+        "objects": [
+          "本例入口与三展位路线沙盘",
+          "原片 00:22 来源册",
+          "观察 / 结论 / 验收索引抽屉",
+          "本次真实参观凭证"
+        ],
+        "relatedCases": [
+          7
+        ],
+        "page": "../#demo-07",
+        "defaultRecipe": null
+      }
+    ],
+    "space": {
+      "phase": "market-square",
+      "discovered": [
+        "visual-systems",
+        "product-lab"
+      ],
+      "booths": [
+        {
+          "id": "visual-systems",
+          "x": -4.6,
+          "z": -0.3,
+          "yaw": 0.13,
+          "approach": {
+            "x": -4.35,
+            "z": 2,
+            "yaw": 0.1,
+            "pitch": 0
+          }
+        },
+        {
+          "id": "product-lab",
+          "x": 2.6,
+          "z": -6.1,
+          "yaw": 0.1,
+          "approach": {
+            "x": 2.8,
+            "z": -3.9,
+            "yaw": 0.1,
+            "pitch": 0
+          }
+        },
+        {
+          "id": "research-notes",
+          "x": 4.5,
+          "z": 0.2,
+          "yaw": -0.12,
+          "approach": {
+            "x": 5.4,
+            "z": 2.5,
+            "yaw": 0.37,
+            "pitch": 0
+          }
+        }
+      ],
+      "entry": {
+        "x": -2.55,
+        "z": 10.8,
+        "yaw": 0.04,
+        "pitch": -0.02
+      }
+    },
+    "walkingDistance": 0,
+    "renderer": "webgl",
+    "renderCount": 19,
+    "renderStats": {
+      "drawCalls": 102,
+      "triangles": 27828,
+      "pixelRatio": 1
+    },
+    "assets": {
+      "geometry": "Original detailed procedural architecture and three static content-specific exhibit collections",
+      "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+      "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+    }
+  },
+  "source": "https://x.com/DODOREACH/status/2104821709891404194",
+  "reference": {
+    "focus": "可进入的村镇集市空间：建筑、木石材质、摊位、树木和环境光雾一起建立场景。",
+    "evidence": "原片可见半木屋、集市与密集树木；原文只有能力评价，没有公开内部技术。",
+    "sourceTech": "场景制作工具与素材来源未知。",
+    "ours": "原创木石集市、近地步行与晨昏雾光；三个固定展位分别展示纸档案、角色钢琴默认配方和本例研究路线。",
+    "tech": "本地 Three.js 程序化建筑、摄影材质与光雾；展位使用原创静态模型及实际本地运行截图，视锥和遮挡影响发现，距离限制查看，真实访问数据驱动凭证。",
+    "value": "把成果展示变成能进入、能找到具体展品的三维虚拟展会。",
+    "check": "三组展品及说明对应不同成果；远处不可查看，近处凭证随真实参观变化，导出保留记录并提供对应页面入口。",
+    "boundary": "固定静态陈列并非实时同步的原型；钢琴谱板只示意默认配方，布局编辑和多人后台未实现。原作工具链与 NPC 对话能力未知。",
+    "kernel": "从巷道步行发现广场与展位，走近才查看；展品解释已有项目的内容，实际功能通过对应页面操作，发现、到达与查看分开记录。"
+  },
+  "optimization": {
+    "caseId": 7,
+    "sourceTarget": "原作07的00:22眼平巷道以建筑遮挡远处摊位，摊棚、货物、门窗、树木形成空间层次；前进后逐步进入集市。原作者工具链与NPC对话机制未确认。",
+    "diagnosis": "前轮已实现巷道→发现→走近，但三展位仍摆相同书块、相框和花盆。仅换标签不能解释视觉系统、产品原型、研究档案各自的真实内容，走近后的信息收益不足。",
+    "priority": "让每处展位的实际陈列解释自身内容，完成发现之后的近看体验。",
+    "changes": [
+      "01陈列双页档案、三种实际主题样板与CASE 01运行截图；详情通向真实作品集编辑和HTML导出。",
+      "02陈列微缩琴键、原创机器人与猫、默认谱板与CASE 06运行截图；核对默认专注配方共32音符、90 BPM，明确陈列为静态示意。",
+      "03陈列当前入口和三展位的固定路线沙盘、来源册、观察/结论/验收索引抽屉，详情显示本次真实参观凭证。",
+      "接近提示说出具体物件，柜台实物牌区分已走近与已查看；保留位置和尺度，取消选中时放大整座摊位。",
+      "参观导出加入具体物件、对应案例与入口；near-view保存真实位置和距离，guided-shortcut明确区分列表直达。保留视锥+建筑遮挡发现和碰撞。"
+    ],
+    "verify": [
+      "一次原生按钮实际步行：入口只发现01，广场发现02，向右看才发现03；远处查看不产生访问。",
+      "步行9.1米后距01为2.62米，接近提示未自动写入记录；按E保存near-view、实际位置/距离与三件陈列。",
+      "三个近看截图具有档案、钢琴、沙盘三种不同轮廓，详情含真实入口和固定模型边界；后两处列表直达导出为guided-shortcut。",
+      "JSON导出含3处发现/3处走近/3次查看与实际路径；当前近看PNG导出成功。",
+      "390px手机无横向溢出，接近提示位于362×400px场景内。新变化18/18通过，无运行错误；详见case-07-exhibits-verification.json。"
+    ],
+    "remaining": [
+      "陈列为原创固定模型，档案、琴键、抽屉与沙盘本身不能编辑或开合；实际项目功能通过明确页面入口操作，谱板不代表另一页面实时编辑值。",
+      "建筑、树木与道具精度及自然资产密度仍低于原片；未实现多人、云端统计或未确认的原作NPC对话机制。"
+    ]
+  },
+  "scope": "原创 Three.js 场景与三组固定静态展品；实际编辑在对应原型页，原作工具链未知。"
+}

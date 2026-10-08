@@ -1,0 +1,237 @@
+{
+  "module": "defense",
+  "status": "playing",
+  "running": false,
+  "renderer": "webgl",
+  "rendering": {
+    "drawCalls": 119,
+    "triangles": 89194,
+    "pixelRatio": 1,
+    "defaultPixelRatio": 1,
+    "qualityPolicy": "active longest side at most 960px; ready, paused and finished restore default DPR",
+    "canvasPixels": {
+      "width": 1358,
+      "height": 530
+    },
+    "interactiveResolutionLimit": 960,
+    "staticDrawCallsSaved": 354
+  },
+  "wave": 1,
+  "totalWaves": 3,
+  "health": 76,
+  "ammo": 10,
+  "reloading": false,
+  "kills": 0,
+  "shots": 2,
+  "hits": 1,
+  "attacks": 4,
+  "dodgedAttacks": 1,
+  "incomingHits": 2,
+  "attackTiming": {
+    "clock": "wall-clock",
+    "reactionStart": "after first warning draw; active wall clock excludes hidden intervals",
+    "maxIntegrationStep": 0.008333333333333333,
+    "trigger": 1.45,
+    "reach": 1.6,
+    "frontDot": 0.45,
+    "windup": 0.85,
+    "strike": 0.22,
+    "recovery": 0.9
+  },
+  "elapsed": 18.3,
+  "feedback": {
+    "canFire": false,
+    "lastShotResult": "hit",
+    "hitConfirmed": true,
+    "damageCue": false,
+    "lastImpact": {
+      "x": -0.83,
+      "y": 1.2,
+      "z": 1.57
+    }
+  },
+  "player": {
+    "x": -0.61,
+    "z": 2.74,
+    "yaw": -0.185,
+    "pitch": -0.394
+  },
+  "enemies": [
+    {
+      "id": 1,
+      "x": -0.88,
+      "z": 1.32,
+      "hp": 2,
+      "attack": {
+        "phase": "windup",
+        "phaseElapsed": 0.667,
+        "cycle": 3,
+        "lockedYaw": 0.185,
+        "lastResult": "hit",
+        "lastDistance": 1.444,
+        "visibleWindupWallSeconds": 1.149
+      }
+    },
+    {
+      "id": 2,
+      "x": -0.33,
+      "z": 1.32,
+      "hp": 1,
+      "attack": {
+        "phase": "recovery",
+        "phaseElapsed": 0.63,
+        "cycle": 1,
+        "lockedYaw": -0.193,
+        "lastResult": "hit",
+        "lastDistance": 1.448,
+        "visibleWindupWallSeconds": 1.196
+      }
+    },
+    {
+      "id": 3,
+      "x": -1.77,
+      "z": 0.79,
+      "hp": 2,
+      "attack": {
+        "phase": "pursuit",
+        "phaseElapsed": 0,
+        "cycle": 0,
+        "lockedYaw": 0.538,
+        "lastResult": null,
+        "lastDistance": null,
+        "visibleWindupWallSeconds": null
+      }
+    }
+  ],
+  "scope": "Original FPS room and robots. No COD code/assets ported. Ray hits, simple pursuit, telegraphed directional melee with range-checked strike, cover collision, three waves. Active play is limited to 960px; ready/paused/finished restore default clarity.",
+  "log": [
+    {
+      "time": 0,
+      "action": "波次开始",
+      "detail": 1
+    },
+    {
+      "time": 9.5,
+      "action": "进攻蓄势",
+      "detail": {
+        "enemy": 1,
+        "attack": 1,
+        "distance": 1.448,
+        "lockedYaw": 0.185
+      }
+    },
+    {
+      "time": 9.5,
+      "action": "蓄势提示",
+      "detail": {
+        "enemy": 1,
+        "attack": 1,
+        "phase": "windup"
+      }
+    },
+    {
+      "time": 10.4,
+      "action": "近身落空",
+      "detail": {
+        "enemy": 1,
+        "attack": 1,
+        "distance": 4.866,
+        "frontDot": 1,
+        "reason": "out-of-range",
+        "visibleWindupWallSeconds": 1.019,
+        "visibleWindupSimulationSeconds": 0.854,
+        "phase": "strike"
+      }
+    },
+    {
+      "time": 15.5,
+      "action": "进攻蓄势",
+      "detail": {
+        "enemy": 1,
+        "attack": 2,
+        "distance": 1.444,
+        "lockedYaw": 0.185
+      }
+    },
+    {
+      "time": 15.6,
+      "action": "蓄势提示",
+      "detail": {
+        "enemy": 1,
+        "attack": 2,
+        "phase": "windup"
+      }
+    },
+    {
+      "time": 16.5,
+      "action": "近身冲击",
+      "detail": {
+        "enemy": 1,
+        "attack": 2,
+        "damage": 12,
+        "distance": 1.444,
+        "frontDot": 1,
+        "visibleWindupWallSeconds": 1.149,
+        "visibleWindupSimulationSeconds": 0.853,
+        "phase": "strike"
+      }
+    },
+    {
+      "time": 16.5,
+      "action": "进攻蓄势",
+      "detail": {
+        "enemy": 2,
+        "attack": 1,
+        "distance": 1.448,
+        "lockedYaw": -0.193
+      }
+    },
+    {
+      "time": 16.6,
+      "action": "蓄势提示",
+      "detail": {
+        "enemy": 2,
+        "attack": 1,
+        "phase": "windup"
+      }
+    },
+    {
+      "time": 17.4,
+      "action": "近身冲击",
+      "detail": {
+        "enemy": 2,
+        "attack": 1,
+        "damage": 12,
+        "distance": 1.448,
+        "frontDot": 1,
+        "visibleWindupWallSeconds": 1.196,
+        "visibleWindupSimulationSeconds": 0.858,
+        "phase": "strike"
+      }
+    },
+    {
+      "time": 17.6,
+      "action": "进攻蓄势",
+      "detail": {
+        "enemy": 1,
+        "attack": 3,
+        "distance": 1.444,
+        "lockedYaw": 0.185
+      }
+    },
+    {
+      "time": 17.6,
+      "action": "蓄势提示",
+      "detail": {
+        "enemy": 1,
+        "attack": 3,
+        "phase": "windup"
+      }
+    },
+    {
+      "time": 18.1,
+      "action": "射击命中",
+      "detail": 2
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "product": "RESEARCH",
+  "question": "单例功能是否与导出一致？",
+  "evidenceText": "研究卡实际进入成果文件。 | https://example.org/research-a\n研究卡实际进入成果文件。 | https://example.org/research-a\n手机阅读仍需要检查。 | ",
+  "theme": "paper",
+  "time": 14.2,
+  "playing": false,
+  "spring": 0.68,
+  "wave": 0.72,
+  "scenes": [
+    {
+      "headline": "从观察，\n开始。",
+      "detail": "保留原作观察与来源，成为一张研究卡。",
+      "seconds": 5
+    },
+    {
+      "headline": "让证据，\n有条理。",
+      "detail": "相同记录合并，缺少来源留待补充。",
+      "seconds": 5
+    },
+    {
+      "headline": "带走一份，\n有来源的成果。",
+      "detail": "研究卡、整理结果与待办，保留在同一份成果包。",
+      "seconds": 5
+    }
+  ],
+  "totalSeconds": 15,
+  "effects": [
+    "几何开关",
+    "研究卡展开",
+    "弹性曲线",
+    "环形字",
+    "点阵波",
+    "整理与导出"
+  ],
+  "workflow": {
+    "question": "单例功能是否与导出一致？",
+    "filename": "研究证据成果.md",
+    "rule": "仅合并内容与来源完全相同的记录；缺少内容或有效 HTTP(S) 来源的记录留作待补。未自动核实来源内容。",
+    "inputCount": 3,
+    "includedCount": 1,
+    "mergedCount": 1,
+    "pendingCount": 1,
+    "records": [
+      {
+        "id": 1,
+        "claim": "研究卡实际进入成果文件。",
+        "source": "https://example.org/research-a",
+        "status": "included",
+        "reason": "保留填写的来源"
+      },
+      {
+        "id": 2,
+        "claim": "研究卡实际进入成果文件。",
+        "source": "https://example.org/research-a",
+        "status": "merged",
+        "reason": "内容与来源相同",
+        "duplicateOf": 1
+      },
+      {
+        "id": 3,
+        "claim": "手机阅读仍需要检查。",
+        "source": "",
+        "status": "needs-source",
+        "reason": "缺少来源"
+      }
+    ],
+    "included": [
+      {
+        "id": 1,
+        "claim": "研究卡实际进入成果文件。",
+        "source": "https://example.org/research-a",
+        "status": "included",
+        "reason": "保留填写的来源"
+      }
+    ],
+    "merged": [
+      {
+        "id": 2,
+        "claim": "研究卡实际进入成果文件。",
+        "source": "https://example.org/research-a",
+        "status": "merged",
+        "reason": "内容与来源相同",
+        "duplicateOf": 1
+      }
+    ],
+    "pending": [
+      {
+        "id": 3,
+        "claim": "手机阅读仍需要检查。",
+        "source": "",
+        "status": "needs-source",
+        "reason": "缺少来源"
+      }
+    ]
+  },
+  "scope": "原创无声 Canvas / WebM；原作工具链未知"
+}

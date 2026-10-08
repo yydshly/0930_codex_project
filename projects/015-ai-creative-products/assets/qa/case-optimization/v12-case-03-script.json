@@ -1,0 +1,147 @@
+{
+  "theme": "gold",
+  "seconds": 5,
+  "time": 20,
+  "playing": false,
+  "scenes": [
+    {
+      "title": "研究需要可复查的命题",
+      "text": "一次演示，\n等于一件产品吗？"
+    },
+    {
+      "title": "找出边界",
+      "text": "能运行，只是起点。\n换一份输入，还能得到可靠结果吗？"
+    },
+    {
+      "title": "给出结论",
+      "text": "留下反馈，复用流程。\n让每一次创作，成为下一次的起点。"
+    }
+  ],
+  "sequence": {
+    "shot": 4,
+    "progress": 0,
+    "local": 0,
+    "bridge": {
+      "from": 3,
+      "to": 4,
+      "progress": 0.5,
+      "duration": 1.1,
+      "sourceProgress": 1,
+      "targetProgress": 0
+    },
+    "paper": null,
+    "record": {
+      "x": 637,
+      "y": 365,
+      "role": "检验记录送回反馈循环"
+    },
+    "continuity": {
+      "from": 4,
+      "to": 5,
+      "progress": 0.5,
+      "role": "检验记录 → 反馈循环"
+    }
+  },
+  "continuityPlan": [
+    {
+      "from": 3,
+      "to": 4,
+      "role": "命题纸页留在检验旁，第二段条件进入墙镜头"
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "role": "同一金色记录点把检验送入制作、检查、调整循环"
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "role": "记录点接到可复用流程曲线的起点，继续沿曲线积累"
+    }
+  ],
+  "shots": [
+    {
+      "name": "星空提问",
+      "start": 0,
+      "duration": 5,
+      "point": {
+        "title": "研究需要可复查的命题",
+        "text": "一次演示，\n等于一件产品吗？"
+      },
+      "pointIndices": [
+        0
+      ],
+      "next": null
+    },
+    {
+      "name": "工具类比",
+      "start": 5,
+      "duration": 5,
+      "point": {
+        "title": "研究需要可复查的命题",
+        "text": "一次演示，\n等于一件产品吗？"
+      },
+      "pointIndices": [
+        0
+      ],
+      "next": null
+    },
+    {
+      "name": "命题档案",
+      "start": 10,
+      "duration": 5,
+      "point": {
+        "title": "研究需要可复查的命题",
+        "text": "一次演示，\n等于一件产品吗？"
+      },
+      "pointIndices": [
+        0,
+        1
+      ],
+      "next": {
+        "title": "找出边界",
+        "text": "能运行，只是起点。\n换一份输入，还能得到可靠结果吗？"
+      }
+    },
+    {
+      "name": "边界之墙",
+      "start": 15,
+      "duration": 5,
+      "point": {
+        "title": "找出边界",
+        "text": "能运行，只是起点。\n换一份输入，还能得到可靠结果吗？"
+      },
+      "pointIndices": [
+        1
+      ],
+      "next": null
+    },
+    {
+      "name": "反馈球体",
+      "start": 20,
+      "duration": 5,
+      "point": {
+        "title": "给出结论",
+        "text": "留下反馈，复用流程。\n让每一次创作，成为下一次的起点。"
+      },
+      "pointIndices": [
+        2
+      ],
+      "next": null
+    },
+    {
+      "name": "两条成长曲线",
+      "start": 25,
+      "duration": 5,
+      "point": {
+        "title": "给出结论",
+        "text": "留下反馈，复用流程。\n让每一次创作，成为下一次的起点。"
+      },
+      "pointIndices": [
+        2
+      ],
+      "next": null
+    }
+  ],
+  "scope": "原创 Canvas 论证片，示意曲线非实测；原作工具链未知；WebM 无声"
+}

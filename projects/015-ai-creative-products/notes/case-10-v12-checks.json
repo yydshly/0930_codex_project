@@ -1,0 +1,985 @@
+{
+  "checkedAt": "2026-10-02T23:51:34.444Z",
+  "checks": [
+    {
+      "name": "静止轮胎底部真实接地，支撑连接端点重合",
+      "passed": true
+    },
+    {
+      "name": "真实加速使车身后仰，车轮保持接地而非整车倾倒",
+      "passed": true
+    },
+    {
+      "name": "真实转向侧向加速度带动车身侧倾与连接支撑",
+      "passed": true
+    },
+    {
+      "name": "真实刹车降低速度，实际子步记录与加速相反的点头",
+      "passed": true
+    },
+    {
+      "name": "真实跳跃抬起轮胎，车身俯仰和支撑仍相连",
+      "passed": true
+    },
+    {
+      "name": "隐藏 1.1 秒暂停倒计时、物理和车身反馈",
+      "passed": true
+    },
+    {
+      "name": "实际落地记录落地速度并压缩车身，轮胎回到草地",
+      "passed": true
+    },
+    {
+      "name": "落地后弹簧恢复，落地不重复计数",
+      "passed": true
+    },
+    {
+      "name": "实际车球接触导出真实冲量并继续推动球",
+      "passed": true
+    },
+    {
+      "name": "球体滚转累积实际位移而非渲染帧次数",
+      "passed": true
+    },
+    {
+      "name": "暂停时仅换相机不会让球继续滚转",
+      "passed": true
+    },
+    {
+      "name": "实际物理记录下载保留接地/落地/冲量/姿态字段",
+      "passed": true
+    },
+    {
+      "name": "真实重置清空比赛及反馈记录并恢复接地",
+      "passed": true
+    },
+    {
+      "name": "真实倒车滚转方向反转，车轴仍水平且轮胎接地",
+      "passed": true
+    },
+    {
+      "name": "390 px 长按实际驾驶有姿态响应且页面无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "实际运行计时跟随墙钟，慢渲染不将 2 秒拖成长动画",
+      "passed": true
+    },
+    {
+      "name": "受影响链没有页面错误或缺失本地资源",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "missing": [],
+  "samples": {
+    "grounded": {
+      "module": "soccer",
+      "status": "ready",
+      "running": false,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 100,
+        "triangles": 97510,
+        "staticDrawCallsSaved": 350
+      },
+      "score": 0,
+      "goal": 3,
+      "remaining": 90,
+      "elapsed": 0,
+      "boost": 100,
+      "boosting": false,
+      "friction": 20,
+      "restitution": 72,
+      "cameraMode": "chase",
+      "speed": 0,
+      "cameraFov": 66,
+      "cameraTarget": {
+        "x": 0,
+        "y": 1.35,
+        "z": 12.5
+      },
+      "cameraPosition": {
+        "x": -0.7,
+        "y": 3.65,
+        "z": 23.4
+      },
+      "collisions": 0,
+      "jumps": 0,
+      "vehicleFeedback": {
+        "grounded": true,
+        "frontMinusRearHeight": 0,
+        "rightMinusLeftHeight": 0,
+        "bodyPitch": 0,
+        "bodyRoll": 0,
+        "bodyHeave": 0,
+        "tireRadius": 0.38,
+        "maxWheelAxisVertical": 0,
+        "tireBottom": 0,
+        "suspensionLinkMaxError": 0,
+        "brakeCount": 0,
+        "lastBrakeSpeedDelta": 0,
+        "lastBrakeMinPitch": 0,
+        "landingCount": 0,
+        "lastLandingSpeed": 0,
+        "lastLandingCompression": 0,
+        "contactCount": 0,
+        "lastContactImpulse": 0,
+        "contactAge": null,
+        "scope": "Visual spring response from actual acceleration, contact impulse and landing velocity; simplified vehicle contact remains unchanged."
+      },
+      "wheelRotationX": 0,
+      "ballRotation": {
+        "x": 0,
+        "z": 0
+      },
+      "maxBallHeight": 1.05,
+      "car": {
+        "x": 0,
+        "y": 0.65,
+        "z": 17,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0,
+        "yaw": 0
+      },
+      "ball": {
+        "x": 0,
+        "y": 1.05,
+        "z": 8,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0
+      },
+      "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+      "log": []
+    },
+    "acceleration": {
+      "module": "soccer",
+      "status": "playing",
+      "running": false,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 103,
+        "triangles": 103386,
+        "staticDrawCallsSaved": 350
+      },
+      "score": 0,
+      "goal": 3,
+      "remaining": 89.8,
+      "elapsed": 0.2,
+      "boost": 93.7,
+      "boosting": true,
+      "friction": 20,
+      "restitution": 72,
+      "cameraMode": "chase",
+      "speed": 8.82,
+      "cameraFov": 68.57,
+      "cameraTarget": {
+        "x": 0,
+        "y": 1.35,
+        "z": 10.214
+      },
+      "cameraPosition": {
+        "x": -0.7,
+        "y": 3.822,
+        "z": 23.18
+      },
+      "collisions": 0,
+      "jumps": 0,
+      "vehicleFeedback": {
+        "grounded": true,
+        "frontMinusRearHeight": 0.1583,
+        "rightMinusLeftHeight": 0,
+        "bodyPitch": 0.0503,
+        "bodyRoll": 0,
+        "bodyHeave": 0,
+        "tireRadius": 0.38,
+        "maxWheelAxisVertical": 0,
+        "tireBottom": 0,
+        "suspensionLinkMaxError": 0,
+        "brakeCount": 0,
+        "lastBrakeSpeedDelta": 0,
+        "lastBrakeMinPitch": 0,
+        "landingCount": 0,
+        "lastLandingSpeed": 0,
+        "lastLandingCompression": 0,
+        "contactCount": 0,
+        "lastContactImpulse": 0,
+        "contactAge": null,
+        "scope": "Visual spring response from actual acceleration, contact impulse and landing velocity; simplified vehicle contact remains unchanged."
+      },
+      "wheelRotationX": -2.8322,
+      "ballRotation": {
+        "x": 0,
+        "z": 0
+      },
+      "maxBallHeight": 1.05,
+      "car": {
+        "x": 0,
+        "y": 0.65,
+        "z": 15.924,
+        "vx": 0,
+        "vy": 0,
+        "vz": -8.82,
+        "yaw": 0
+      },
+      "ball": {
+        "x": 0,
+        "y": 1.05,
+        "z": 8,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0
+      },
+      "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+      "log": []
+    },
+    "turn": {
+      "module": "soccer",
+      "status": "playing",
+      "running": false,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 99,
+        "triangles": 97498,
+        "staticDrawCallsSaved": 350
+      },
+      "score": 0,
+      "goal": 3,
+      "remaining": 88,
+      "elapsed": 2,
+      "boost": 100,
+      "boosting": false,
+      "friction": 20,
+      "restitution": 72,
+      "cameraMode": "chase",
+      "speed": 6.64,
+      "cameraFov": 67.35,
+      "cameraTarget": {
+        "x": 2.866,
+        "y": 1.35,
+        "z": 10.393
+      },
+      "cameraPosition": {
+        "x": -3.807,
+        "y": 3.799,
+        "z": 20.996
+      },
+      "collisions": 0,
+      "jumps": 0,
+      "vehicleFeedback": {
+        "grounded": true,
+        "frontMinusRearHeight": 0.1503,
+        "rightMinusLeftHeight": 0.0235,
+        "bodyPitch": 0.0477,
+        "bodyRoll": 0.0131,
+        "bodyHeave": 0,
+        "tireRadius": 0.38,
+        "maxWheelAxisVertical": 0,
+        "tireBottom": 0,
+        "suspensionLinkMaxError": 0,
+        "brakeCount": 0,
+        "lastBrakeSpeedDelta": 0,
+        "lastBrakeMinPitch": 0,
+        "landingCount": 0,
+        "lastLandingSpeed": 0,
+        "lastLandingCompression": 0,
+        "contactCount": 0,
+        "lastContactImpulse": 0,
+        "contactAge": null,
+        "scope": "Visual spring response from actual acceleration, contact impulse and landing velocity; simplified vehicle contact remains unchanged."
+      },
+      "wheelRotationX": -4.694,
+      "ballRotation": {
+        "x": 0,
+        "z": 0
+      },
+      "maxBallHeight": 1.05,
+      "car": {
+        "x": 0.54,
+        "y": 0.65,
+        "z": 15.298,
+        "vx": 3.01,
+        "vy": 0,
+        "vz": -5.923,
+        "yaw": 0.637
+      },
+      "ball": {
+        "x": 0,
+        "y": 1.05,
+        "z": 8,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0
+      },
+      "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+      "log": []
+    },
+    "braking": {
+      "module": "soccer",
+      "status": "playing",
+      "running": false,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 99,
+        "triangles": 97498,
+        "staticDrawCallsSaved": 350
+      },
+      "score": 0,
+      "goal": 3,
+      "remaining": 88.4,
+      "elapsed": 1.6,
+      "boost": 100,
+      "boosting": false,
+      "friction": 20,
+      "restitution": 72,
+      "cameraMode": "chase",
+      "speed": 0.49,
+      "cameraFov": 66.21,
+      "cameraTarget": {
+        "x": 0,
+        "y": 1.35,
+        "z": 10.433
+      },
+      "cameraPosition": {
+        "x": -0.7,
+        "y": 3.663,
+        "z": 21.481
+      },
+      "collisions": 0,
+      "jumps": 0,
+      "vehicleFeedback": {
+        "grounded": true,
+        "frontMinusRearHeight": -0.0343,
+        "rightMinusLeftHeight": 0,
+        "bodyPitch": -0.0109,
+        "bodyRoll": 0,
+        "bodyHeave": 0,
+        "tireRadius": 0.38,
+        "maxWheelAxisVertical": 0,
+        "tireBottom": 0,
+        "suspensionLinkMaxError": 0,
+        "brakeCount": 1,
+        "lastBrakeSpeedDelta": -5.803,
+        "lastBrakeMinPitch": -0.022,
+        "landingCount": 0,
+        "lastLandingSpeed": 0,
+        "lastLandingCompression": 0,
+        "contactCount": 0,
+        "lastContactImpulse": 0,
+        "contactAge": null,
+        "scope": "Visual spring response from actual acceleration, contact impulse and landing velocity; simplified vehicle contact remains unchanged."
+      },
+      "wheelRotationX": -5.2148,
+      "ballRotation": {
+        "x": 0,
+        "z": 0
+      },
+      "maxBallHeight": 1.05,
+      "car": {
+        "x": 0,
+        "y": 0.65,
+        "z": 15.018,
+        "vx": 0,
+        "vy": 0,
+        "vz": -0.485,
+        "yaw": 0
+      },
+      "ball": {
+        "x": 0,
+        "y": 1.05,
+        "z": 8,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0
+      },
+      "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+      "log": []
+    },
+    "airborne": {
+      "module": "soccer",
+      "status": "playing",
+      "running": false,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 99,
+        "triangles": 97498,
+        "staticDrawCallsSaved": 350
+      },
+      "score": 0,
+      "goal": 3,
+      "remaining": 89.6,
+      "elapsed": 0.4,
+      "boost": 100,
+      "boosting": false,
+      "friction": 20,
+      "restitution": 72,
+      "cameraMode": "chase",
+      "speed": 0,
+      "cameraFov": 66,
+      "cameraTarget": {
+        "x": 0,
+        "y": 3,
+        "z": 12.5
+      },
+      "cameraPosition": {
+        "x": -0.7,
+        "y": 5.196,
+        "z": 23.4
+      },
+      "collisions": 0,
+      "jumps": 1,
+      "vehicleFeedback": {
+        "grounded": false,
+        "frontMinusRearHeight": 0.1673,
+        "rightMinusLeftHeight": 0,
+        "bodyPitch": 0.0531,
+        "bodyRoll": 0,
+        "bodyHeave": 0.0338,
+        "tireRadius": 0.38,
+        "maxWheelAxisVertical": 0,
+        "tireBottom": 1.7924,
+        "suspensionLinkMaxError": 0,
+        "brakeCount": 0,
+        "lastBrakeSpeedDelta": 0,
+        "lastBrakeMinPitch": 0,
+        "landingCount": 0,
+        "lastLandingSpeed": 0,
+        "lastLandingCompression": 0,
+        "contactCount": 0,
+        "lastContactImpulse": 0,
+        "contactAge": null,
+        "scope": "Visual spring response from actual acceleration, contact impulse and landing velocity; simplified vehicle contact remains unchanged."
+      },
+      "wheelRotationX": 0,
+      "ballRotation": {
+        "x": 0,
+        "z": 0
+      },
+      "maxBallHeight": 1.05,
+      "car": {
+        "x": 0,
+        "y": 2.442,
+        "z": 17,
+        "vx": 0,
+        "vy": 2.893,
+        "vz": 0,
+        "yaw": 0
+      },
+      "ball": {
+        "x": 0,
+        "y": 1.05,
+        "z": 8,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0
+      },
+      "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+      "log": [
+        {
+          "time": 0,
+          "action": "车辆跳跃"
+        }
+      ]
+    },
+    "landing": {
+      "module": "soccer",
+      "status": "playing",
+      "running": false,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 99,
+        "triangles": 97498,
+        "staticDrawCallsSaved": 350
+      },
+      "score": 0,
+      "goal": 3,
+      "remaining": 88.7,
+      "elapsed": 1.3,
+      "boost": 100,
+      "boosting": false,
+      "friction": 20,
+      "restitution": 72,
+      "cameraMode": "chase",
+      "speed": 0,
+      "cameraFov": 66,
+      "cameraTarget": {
+        "x": 0,
+        "y": 1.446,
+        "z": 12.5
+      },
+      "cameraPosition": {
+        "x": -0.7,
+        "y": 3.819,
+        "z": 23.4
+      },
+      "collisions": 0,
+      "jumps": 1,
+      "vehicleFeedback": {
+        "grounded": true,
+        "frontMinusRearHeight": -0.1531,
+        "rightMinusLeftHeight": 0,
+        "bodyPitch": -0.0486,
+        "bodyRoll": 0,
+        "bodyHeave": -0.0198,
+        "tireRadius": 0.38,
+        "maxWheelAxisVertical": 0,
+        "tireBottom": 0,
+        "suspensionLinkMaxError": 0,
+        "brakeCount": 0,
+        "lastBrakeSpeedDelta": 0,
+        "lastBrakeMinPitch": 0,
+        "landingCount": 1,
+        "lastLandingSpeed": 7.199,
+        "lastLandingCompression": -0.0198,
+        "contactCount": 0,
+        "lastContactImpulse": 0,
+        "contactAge": null,
+        "scope": "Visual spring response from actual acceleration, contact impulse and landing velocity; simplified vehicle contact remains unchanged."
+      },
+      "wheelRotationX": 0,
+      "ballRotation": {
+        "x": 0,
+        "z": 0
+      },
+      "maxBallHeight": 1.05,
+      "car": {
+        "x": 0,
+        "y": 0.65,
+        "z": 17,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0,
+        "yaw": 0
+      },
+      "ball": {
+        "x": 0,
+        "y": 1.05,
+        "z": 8,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0
+      },
+      "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+      "log": [
+        {
+          "time": 0,
+          "action": "车辆跳跃"
+        }
+      ]
+    },
+    "settled": {
+      "module": "soccer",
+      "status": "playing",
+      "running": false,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 99,
+        "triangles": 97498,
+        "staticDrawCallsSaved": 350
+      },
+      "score": 0,
+      "goal": 3,
+      "remaining": 88.2,
+      "elapsed": 1.8,
+      "boost": 100,
+      "boosting": false,
+      "friction": 20,
+      "restitution": 72,
+      "cameraMode": "chase",
+      "speed": 0,
+      "cameraFov": 66,
+      "cameraTarget": {
+        "x": 0,
+        "y": 1.351,
+        "z": 12.5
+      },
+      "cameraPosition": {
+        "x": -0.7,
+        "y": 3.656,
+        "z": 23.4
+      },
+      "collisions": 0,
+      "jumps": 1,
+      "vehicleFeedback": {
+        "grounded": true,
+        "frontMinusRearHeight": 0.0066,
+        "rightMinusLeftHeight": 0,
+        "bodyPitch": 0.0021,
+        "bodyRoll": 0,
+        "bodyHeave": 0.0004,
+        "tireRadius": 0.38,
+        "maxWheelAxisVertical": 0,
+        "tireBottom": 0,
+        "suspensionLinkMaxError": 0,
+        "brakeCount": 0,
+        "lastBrakeSpeedDelta": 0,
+        "lastBrakeMinPitch": 0,
+        "landingCount": 1,
+        "lastLandingSpeed": 7.199,
+        "lastLandingCompression": -0.0234,
+        "contactCount": 0,
+        "lastContactImpulse": 0,
+        "contactAge": null,
+        "scope": "Visual spring response from actual acceleration, contact impulse and landing velocity; simplified vehicle contact remains unchanged."
+      },
+      "wheelRotationX": 0,
+      "ballRotation": {
+        "x": 0,
+        "z": 0
+      },
+      "maxBallHeight": 1.05,
+      "car": {
+        "x": 0,
+        "y": 0.65,
+        "z": 17,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0,
+        "yaw": 0
+      },
+      "ball": {
+        "x": 0,
+        "y": 1.05,
+        "z": 8,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0
+      },
+      "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+      "log": [
+        {
+          "time": 0,
+          "action": "车辆跳跃"
+        }
+      ]
+    },
+    "ball-contact": {
+      "module": "soccer",
+      "status": "playing",
+      "running": false,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 101,
+        "triangles": 103206,
+        "staticDrawCallsSaved": 350
+      },
+      "score": 0,
+      "goal": 3,
+      "remaining": 87.7,
+      "elapsed": 2.3,
+      "boost": 80.4,
+      "boosting": true,
+      "friction": 20,
+      "restitution": 72,
+      "cameraMode": "chase",
+      "speed": 17.86,
+      "cameraFov": 72.43,
+      "cameraTarget": {
+        "x": 0,
+        "y": 1.35,
+        "z": -0.507
+      },
+      "cameraPosition": {
+        "x": -0.7,
+        "y": 4.092,
+        "z": 15.259
+      },
+      "collisions": 1,
+      "jumps": 0,
+      "vehicleFeedback": {
+        "grounded": true,
+        "frontMinusRearHeight": 0.2087,
+        "rightMinusLeftHeight": 0,
+        "bodyPitch": 0.0663,
+        "bodyRoll": 0,
+        "bodyHeave": -0.0092,
+        "tireRadius": 0.38,
+        "maxWheelAxisVertical": 0,
+        "tireBottom": 0,
+        "suspensionLinkMaxError": 0,
+        "brakeCount": 0,
+        "lastBrakeSpeedDelta": 0,
+        "lastBrakeMinPitch": 0,
+        "landingCount": 0,
+        "lastLandingSpeed": 0,
+        "lastLandingCompression": 0,
+        "contactCount": 1,
+        "lastContactImpulse": 24.23,
+        "contactAge": 0.246,
+        "scope": "Visual spring response from actual acceleration, contact impulse and landing velocity; simplified vehicle contact remains unchanged."
+      },
+      "wheelRotationX": -27.159,
+      "ballRotation": {
+        "x": -5.411,
+        "z": 0
+      },
+      "maxBallHeight": 1.81,
+      "car": {
+        "x": 0,
+        "y": 0.65,
+        "z": 6.695,
+        "vx": 0,
+        "vy": 0,
+        "vz": -17.859,
+        "yaw": 0
+      },
+      "ball": {
+        "x": 0,
+        "y": 1.81,
+        "z": 2.318,
+        "vx": 0,
+        "vy": 2.034,
+        "vz": -23.564
+      },
+      "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+      "log": []
+    },
+    "reverse": {
+      "module": "soccer",
+      "status": "playing",
+      "running": false,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 99,
+        "triangles": 97498,
+        "staticDrawCallsSaved": 350
+      },
+      "score": 0,
+      "goal": 3,
+      "remaining": 89.7,
+      "elapsed": 0.3,
+      "boost": 100,
+      "boosting": false,
+      "friction": 20,
+      "restitution": 72,
+      "cameraMode": "chase",
+      "speed": 4.82,
+      "cameraFov": 66.93,
+      "cameraTarget": {
+        "x": 0,
+        "y": 1.35,
+        "z": 12.462
+      },
+      "cameraPosition": {
+        "x": -0.7,
+        "y": 3.757,
+        "z": 24.523
+      },
+      "collisions": 0,
+      "jumps": 0,
+      "vehicleFeedback": {
+        "grounded": true,
+        "frontMinusRearHeight": -0.1371,
+        "rightMinusLeftHeight": 0,
+        "bodyPitch": -0.0435,
+        "bodyRoll": 0,
+        "bodyHeave": 0,
+        "tireRadius": 0.38,
+        "maxWheelAxisVertical": 0,
+        "tireBottom": 0,
+        "suspensionLinkMaxError": 0,
+        "brakeCount": 0,
+        "lastBrakeSpeedDelta": 0,
+        "lastBrakeMinPitch": 0,
+        "landingCount": 0,
+        "lastLandingSpeed": 0,
+        "lastLandingCompression": 0,
+        "contactCount": 0,
+        "lastContactImpulse": 0,
+        "contactAge": null,
+        "scope": "Visual spring response from actual acceleration, contact impulse and landing velocity; simplified vehicle contact remains unchanged."
+      },
+      "wheelRotationX": 2.1751,
+      "ballRotation": {
+        "x": 0,
+        "z": 0
+      },
+      "maxBallHeight": 1.05,
+      "car": {
+        "x": 0,
+        "y": 0.65,
+        "z": 17.827,
+        "vx": 0,
+        "vy": 0,
+        "vz": 4.819,
+        "yaw": 0
+      },
+      "ball": {
+        "x": 0,
+        "y": 1.05,
+        "z": 8,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0
+      },
+      "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+      "log": []
+    },
+    "mobile-driving": {
+      "module": "soccer",
+      "status": "playing",
+      "running": false,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 99,
+        "triangles": 97498,
+        "staticDrawCallsSaved": 350
+      },
+      "score": 0,
+      "goal": 3,
+      "remaining": 88.4,
+      "elapsed": 1.6,
+      "boost": 100,
+      "boosting": false,
+      "friction": 20,
+      "restitution": 72,
+      "cameraMode": "chase",
+      "speed": 3.7,
+      "cameraFov": 66.5,
+      "cameraTarget": {
+        "x": 0,
+        "y": 1.35,
+        "z": 11.655
+      },
+      "cameraPosition": {
+        "x": -0.7,
+        "y": 3.714,
+        "z": 23.338
+      },
+      "collisions": 0,
+      "jumps": 0,
+      "vehicleFeedback": {
+        "grounded": true,
+        "frontMinusRearHeight": 0.1089,
+        "rightMinusLeftHeight": 0,
+        "bodyPitch": 0.0346,
+        "bodyRoll": 0,
+        "bodyHeave": 0,
+        "tireRadius": 0.38,
+        "maxWheelAxisVertical": 0,
+        "tireBottom": 0,
+        "suspensionLinkMaxError": 0,
+        "brakeCount": 0,
+        "lastBrakeSpeedDelta": 0,
+        "lastBrakeMinPitch": 0,
+        "landingCount": 0,
+        "lastLandingSpeed": 0,
+        "lastLandingCompression": 0,
+        "contactCount": 0,
+        "lastContactImpulse": 0,
+        "contactAge": null,
+        "scope": "Visual spring response from actual acceleration, contact impulse and landing velocity; simplified vehicle contact remains unchanged."
+      },
+      "wheelRotationX": -1.2271,
+      "ballRotation": {
+        "x": 0,
+        "z": 0
+      },
+      "maxBallHeight": 1.05,
+      "car": {
+        "x": 0,
+        "y": 0.65,
+        "z": 16.534,
+        "vx": 0,
+        "vy": 0,
+        "vz": -3.703,
+        "yaw": 0
+      },
+      "ball": {
+        "x": 0,
+        "y": 1.05,
+        "z": 8,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0
+      },
+      "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+      "log": []
+    },
+    "clock": {
+      "module": "soccer",
+      "status": "playing",
+      "running": false,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 99,
+        "triangles": 97498,
+        "staticDrawCallsSaved": 350
+      },
+      "score": 0,
+      "goal": 3,
+      "remaining": 88,
+      "elapsed": 2,
+      "boost": 100,
+      "boosting": false,
+      "friction": 20,
+      "restitution": 72,
+      "cameraMode": "chase",
+      "speed": 0,
+      "cameraFov": 66,
+      "cameraTarget": {
+        "x": 0,
+        "y": 1.35,
+        "z": 12.5
+      },
+      "cameraPosition": {
+        "x": -0.7,
+        "y": 3.65,
+        "z": 23.4
+      },
+      "collisions": 0,
+      "jumps": 0,
+      "vehicleFeedback": {
+        "grounded": true,
+        "frontMinusRearHeight": 0,
+        "rightMinusLeftHeight": 0,
+        "bodyPitch": 0,
+        "bodyRoll": 0,
+        "bodyHeave": 0,
+        "tireRadius": 0.38,
+        "maxWheelAxisVertical": 0,
+        "tireBottom": 0,
+        "suspensionLinkMaxError": 0,
+        "brakeCount": 0,
+        "lastBrakeSpeedDelta": 0,
+        "lastBrakeMinPitch": 0,
+        "landingCount": 0,
+        "lastLandingSpeed": 0,
+        "lastLandingCompression": 0,
+        "contactCount": 0,
+        "lastContactImpulse": 0,
+        "contactAge": null,
+        "scope": "Visual spring response from actual acceleration, contact impulse and landing velocity; simplified vehicle contact remains unchanged."
+      },
+      "wheelRotationX": 0,
+      "ballRotation": {
+        "x": 0,
+        "z": 0
+      },
+      "maxBallHeight": 1.05,
+      "car": {
+        "x": 0,
+        "y": 0.65,
+        "z": 17,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0,
+        "yaw": 0
+      },
+      "ball": {
+        "x": 0,
+        "y": 1.05,
+        "z": 8,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0
+      },
+      "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+      "log": [],
+      "wallSeconds": 1.9670999999940395
+    }
+  },
+  "environment": "Headless Chromium; browser-width phone emulation, not physical device performance."
+}

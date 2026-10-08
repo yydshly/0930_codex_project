@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-03T00:26:21.114Z",
+  "caseId": 4,
+  "product": "新品发布动效编辑器",
+  "task": "编辑研究卡与来源，查看首尾开关闭环，再导出同一成果和动态视频。",
+  "state": {
+    "product": "RESEARCH",
+    "question": "这些观察怎样形成可追溯的成果？",
+    "evidenceText": "先聚焦一件成果，其他物件淡出。 | https://x.com/cambreedesigns/status/2104999693113766152\n先聚焦一件成果，其他物件淡出。 | https://x.com/cambreedesigns/status/2104999693113766152\n待确认真实用户的需求。 | ",
+    "theme": "paper",
+    "time": 15,
+    "playing": false,
+    "spring": 0.68,
+    "wave": 0.72,
+    "scenes": [
+      {
+        "headline": "从观察，\n开始。",
+        "detail": "保留原作观察与来源，成为一张研究卡。",
+        "seconds": 5
+      },
+      {
+        "headline": "让证据，\n有条理。",
+        "detail": "相同记录合并，缺少来源留待补充。",
+        "seconds": 5
+      },
+      {
+        "headline": "带走一份，\n有来源的成果。",
+        "detail": "研究卡、整理结果与待办，保留在同一份成果包。",
+        "seconds": 5
+      }
+    ],
+    "workflow": {
+      "question": "这些观察怎样形成可追溯的成果？",
+      "filename": "研究证据成果.md",
+      "rule": "仅合并内容与来源完全相同的记录；缺少内容或有效 HTTP(S) 来源的记录留作待补。未自动核实来源内容。",
+      "inputCount": 3,
+      "includedCount": 1,
+      "mergedCount": 1,
+      "pendingCount": 1,
+      "records": [
+        {
+          "id": 1,
+          "claim": "先聚焦一件成果，其他物件淡出。",
+          "source": "https://x.com/cambreedesigns/status/2104999693113766152",
+          "status": "included",
+          "reason": "保留填写的来源"
+        },
+        {
+          "id": 2,
+          "claim": "先聚焦一件成果，其他物件淡出。",
+          "source": "https://x.com/cambreedesigns/status/2104999693113766152",
+          "status": "merged",
+          "reason": "内容与来源相同",
+          "duplicateOf": 1
+        },
+        {
+          "id": 3,
+          "claim": "待确认真实用户的需求。",
+          "source": "",
+          "status": "needs-source",
+          "reason": "缺少来源"
+        }
+      ],
+      "included": [
+        {
+          "id": 1,
+          "claim": "先聚焦一件成果，其他物件淡出。",
+          "source": "https://x.com/cambreedesigns/status/2104999693113766152",
+          "status": "included",
+          "reason": "保留填写的来源"
+        }
+      ],
+      "merged": [
+        {
+          "id": 2,
+          "claim": "先聚焦一件成果，其他物件淡出。",
+          "source": "https://x.com/cambreedesigns/status/2104999693113766152",
+          "status": "merged",
+          "reason": "内容与来源相同",
+          "duplicateOf": 1
+        }
+      ],
+      "pending": [
+        {
+          "id": 3,
+          "claim": "待确认真实用户的需求。",
+          "source": "",
+          "status": "needs-source",
+          "reason": "缺少来源"
+        }
+      ]
+    },
+    "sequence": {
+      "time": 15,
+      "start": 0,
+      "end": 15,
+      "openingEnd": 2.25,
+      "inputEnd": 5,
+      "closingStart": 13.9,
+      "foldEnd": 14.4,
+      "phase": "complete",
+      "input": 0,
+      "fold": 1,
+      "close": 1,
+      "knob": {
+        "x": 484,
+        "y": 335,
+        "radius": 42,
+        "on": 0,
+        "role": "retained-result",
+        "filename": "研究证据成果.md"
+      },
+      "operation": {
+        "rule": "仅合并内容与来源完全相同的记录；缺少内容或有效 HTTP(S) 来源的记录留作待补。未自动核实来源内容。",
+        "inputCount": 3,
+        "includedCount": 1,
+        "mergedCount": 1,
+        "pendingCount": 1,
+        "filename": "研究证据成果.md",
+        "resultRetained": true,
+        "downloadClaim": false
+      },
+      "scope": "Time-derived presentation of the real local rule output; no AI verification and no claim that a download has occurred."
+    },
+    "sequencePlan": [
+      {
+        "start": 0,
+        "end": 2.25,
+        "action": "开启本地整理",
+        "object": "胶囊开关"
+      },
+      {
+        "start": 2.25,
+        "end": 5,
+        "action": "开关圆点进入第一张真实研究卡",
+        "object": "第一条输入记录"
+      },
+      {
+        "start": 10,
+        "end": 13.9,
+        "action": "记录合并、待补分区并展示实际成果",
+        "object": "同一整理结果"
+      },
+      {
+        "start": 13.9,
+        "end": 15,
+        "action": "成果收拢后关闭整理，完整文件继续可导出",
+        "object": "同一成果文件"
+      }
+    ],
+    "totalSeconds": 15,
+    "currentScene": 3,
+    "currentEffect": "整理与导出",
+    "effectProgress": 1,
+    "effectDuration": 5,
+    "exporting": false,
+    "recording": {
+      "phase": "idle",
+      "progress": 0
+    }
+  },
+  "source": "https://x.com/uxmiles/status/2104618175803609305",
+  "reference": {
+    "focus": "大字、图形变化与产品功能演绎共同构成发布片，而不是三张静态说明页。",
+    "evidence": "作者自述三次提示制作 15 秒发布片。已观察开关、大字、4 秒弹性曲线、8 秒环形动字、10 秒点阵波与开关回收。",
+    "sourceTech": "作者提到 Opus；完整工具链未披露。",
+    "ours": "真实研究卡整理与成果导出；开关圆点进入第一张输入，成果标记回到关闭态，保留曲线、环字及点阵接力。",
+    "tech": "原创 Canvas 和纯时间轴；首尾形状、文字、圆点及实际计数从片时重算，预览、寻址、WebM、配方、分镜与体验记录使用同一时序。整理函数驱动完整结果与 Markdown。",
+    "value": "把功能更新、活动主张或新品卖点做成可复用的发布短片。",
+    "check": "修改研究卡会改变首尾实际计数和成果；正反寻址恢复同一闭环，实际视频、配方与 Markdown 保留同一输入，中段圆点锚点保持。",
+    "boundary": "首尾动效参考可见的开关、字形和圆点；整理功能及语义是原创扩展。关闭表示整理结束，不表示已下载或已核实来源；原作者完整工具链未知。",
+    "kernel": "开关开启本地整理，圆点接入真实卡片；内容和来源完全相同的记录合并，缺少有效来源留待补。成果标记回收后整理结束，完整内容继续可读和实际下载。"
+  },
+  "optimization": {
+    "caseId": 4,
+    "sourceTarget": "作者自述三次提示制作发布片；已观察开关、大字、4 秒曲线、8 秒环字、10 秒点阵及结尾开关。我们的参考判断是让连续动效服务于具体功能表达。作者未披露完整工具链，也未推荐下面的证据整理产品；该功能是我们的原创扩展。",
+    "diagnosis": "已有研究卡、完全重复合并及真实成果导出，但开场开关在进入卡片时硬切，成果纸页也没有返回片尾开关。首尾装饰没有表达同一次本地整理的开始和结束。",
+    "priority": "单独补齐 04 的开关→第一张真实研究卡→成果标记→关闭整理闭环；保留完整成果与待补入口，保留已验证中段圆点接力。",
+    "changes": [
+      "开场胶囊由关闭到开启，圆点连续移入第一张真实研究卡；卡片形状和正文共同变形，输入数量直接来自实际整理结果。",
+      "成果纸页的角标在片尾移入同一胶囊，随后关闭整理；实际纳入、合并、待补数量及成果文件名仍在画面中，完整阅读和真实导出继续可用。",
+      "新增纯时间轴 sequence 与 sequencePlan，包含 start / end / openingEnd / closingStart / foldEnd、圆点位置和真实结果；预览、寻址、分镜、配方、体验状态和完整 WebM 都读同一时序。",
+      "首尾转场先退旧字幕再入新字幕，消除中间帧交叠；明确成果可导出，不宣称已下载或来源已核实。曲线、环字、点阵的绘制和四个像素锚点保持。"
+    ],
+    "verify": [
+      "开场关闭态使用同一胶囊与真实输入数量：通过",
+      "开场开启后圆点到达右端：通过",
+      "开关圆点连续进入第一条真实研究卡：通过",
+      "研究卡圆点落在真实卡片右上角：通过",
+      "实际成果先展示同一整理结果再收拢：通过",
+      "成果标记随纸页收拢进入同一胶囊：通过",
+      "片尾关闭实际整理并保留成果：通过",
+      "关闭态区分成果可导出与实际下载：通过",
+      "往返寻址恢复完全相同的关闭帧：通过",
+      "修改真实输入同步改变片尾数量且不同来源锚点保留：通过",
+      "关闭后实际成果 Markdown 保留来源与待补完整内容：通过",
+      "实际配方导出相同首尾时间轴和真实整理结果：通过",
+      "实际分镜描述圆点入卡及关闭后继续导出：通过",
+      "关闭画面之后完整成果仍有真实阅读入口：通过",
+      "既有曲线环字点阵四个圆点像素锚点保持：通过",
+      "390px 手机关闭态仍可阅读完整成果且无横向溢出：通过",
+      "完整录制期间真实编辑输入被锁定：通过",
+      "实际完整15秒WebM生成后恢复关闭帧和编辑状态：通过",
+      "实际 WebM 寻址 opening 与同一时间轴预览一致：通过",
+      "实际 WebM 寻址 input-transition 与同一时间轴预览一致：通过",
+      "实际 WebM 寻址 result 与同一时间轴预览一致：通过",
+      "实际 WebM 寻址 folding 与同一时间轴预览一致：通过",
+      "实际 WebM 寻址 closing 与同一时间轴预览一致：通过",
+      "实际 WebM 寻址 complete 与同一时间轴预览一致：通过",
+      "真实关闭帧生成420×263封面：通过",
+      "CASE 04 无页面错误：通过"
+    ],
+    "remaining": [
+      "仅合并内容与来源完全相同的记录，缺少内容或有效 HTTP(S) 来源留作待补；不识别语义近似、证据冲突或来源真实性，没有自动阅读网页或 AI 归纳后端。",
+      "片内最多展示六张研究卡与三条成果摘要，完整记录和待补清单在成果区及实际 Markdown；仍是无声片。关闭动作表示本地整理结束，不能当作已下载记录。",
+      "原作者没有披露完整软件、时间轴或处理算法；证据整理功能、首尾衔接时序和 Canvas / MediaRecorder 实现是我们的原创扩展，参考的是可观察的开关、大字、曲线、环字与点阵效果。"
+    ]
+  },
+  "scope": "原创本地规则与无声动画；不自动核实来源，未接入三次提示生成。"
+}

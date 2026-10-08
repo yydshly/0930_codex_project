@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-02T15:29:31.583Z",
+  "caseId": 2,
+  "product": "三维互动任务与剧情训练工具",
+  "task": "移动镜头、寻找地点、判断对话并提交证据。",
+  "state": {
+    "module": "quest",
+    "status": "ready",
+    "running": false,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 87,
+      "triangles": 325416,
+      "staticDrawCallsSaved": 5859
+    },
+    "position": {
+      "x": 0,
+      "z": 15
+    },
+    "yaw": 0,
+    "evidence": [],
+    "elapsed": 0,
+    "destination": null,
+    "dialogueSite": null,
+    "interaction": {
+      "site": "hub",
+      "distance": 4.29,
+      "canTalk": false,
+      "sites": [
+        {
+          "id": "hub",
+          "checked": false,
+          "marker": "待核对"
+        },
+        {
+          "id": "archive",
+          "checked": false,
+          "marker": "待核对"
+        },
+        {
+          "id": "sensor",
+          "checked": false,
+          "marker": "待核对"
+        },
+        {
+          "id": "tower",
+          "checked": false,
+          "marker": "待核对"
+        }
+      ]
+    },
+    "soundEnabled": true,
+    "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+    "scope": "Original small RPG prototype; no original source, combat or VATS reproduced.",
+    "log": []
+  },
+  "source": "https://x.com/chrisfirst/status/2104644598626934858",
+  "reference": {
+    "focus": "程序化三维 RPG：自由探索、任务分支和终端式状态界面组成同一个系统。",
+    "evidence": "作者明确提到浏览器、任务、对话树、V.A.T.S.、Pip-Boy，以及用代码生成视觉和声音。",
+    "sourceTech": "代码生成纹理、场景与声音是作者自述；未取得原作源码。",
+    "ours": "程序化研究街区、第一人称探索、分支证据任务、终端式记录和合成提示音。",
+    "tech": "本地 Three.js、程序化几何与材质、Web Audio、共用任务状态。 画面采用：摄影砖石材质、街区建筑细节、站员造型与天空光照。",
+    "value": "把 SOP、设备巡检与知识核对放进可探索的训练场景。",
+    "check": "镜头实际移动；选错分支会反馈；任务记录和提交结果一致。",
+    "boundary": "保留三维探索与任务整合；未复现 Fallout 资产、V.A.T.S. 或完整战斗系统。",
+    "kernel": "程序街区 + 第一人称镜头 + 对话/证据状态机 + 合成音效。场景和终端读取同一任务状态。"
+  },
+  "optimization": {
+    "caseId": 2,
+    "sourceTarget": "原帖明确列出任务、对话树和 Pip-Boy。本例参考世界中的人物、交谈与任务记录保持同一状态的体验。",
+    "diagnosis": "站员原先只是装饰，玩家不知道与谁交谈；地图抵达后镜头不一定面对人物。已打开的侧栏问题还能在离开后隔空取得证据，空间和任务脱节。",
+    "priority": "让真实记录员、交谈范围与证据结果对应起来。",
+    "changes": [
+      "记录员头顶标牌和站点灯区分待核对、已核对，与终端记录同步。",
+      "画面提示最近记录员与实际距离；键盘、按钮都按同一空间条件交谈。",
+      "打开对话时镜头面对记录员；离开 3.3 m 范围后不能用旧问题隔空取得证据。",
+      "实际导出保留对话站点、距离、可交谈条件及各站核对状态。"
+    ],
+    "verify": [
+      "实际走到档案站后，NPC 标牌、对话和交谈入口都指向档案站。",
+      "实际后退离开再作答，证据保持 0；回来作答后取得 1 份证据并更新空间标记。",
+      "实际下载的 JSON 与空间、侧栏状态一致；手机入口可见且无溢出。",
+      "7 项针对检查通过，无页面错误；本轮只核对一站证据链。"
+    ],
+    "remaining": [
+      "有限原创任务，没有完整 RPG、V.A.T.S. 或人物动画系统。",
+      "站员是风格化模型；本轮解决人物与任务的联系，没有声称达到原作写实人物品质。"
+    ]
+  },
+  "scope": "原创有限关卡；未复现 Fallout、V.A.T.S. 或完整战斗。"
+}

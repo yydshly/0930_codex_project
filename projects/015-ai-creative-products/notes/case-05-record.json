@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-02T15:13:57.082Z",
+  "caseId": 5,
+  "product": "第一人称情境训练工具",
+  "task": "移动与转向，瞄准并射击机器人，完成波次。",
+  "state": {
+    "module": "defense",
+    "status": "playing",
+    "running": false,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 76,
+      "triangles": 55782,
+      "staticDrawCallsSaved": 354
+    },
+    "wave": 1,
+    "totalWaves": 3,
+    "health": 88,
+    "ammo": 10,
+    "reloading": false,
+    "kills": 0,
+    "shots": 2,
+    "hits": 1,
+    "elapsed": 5.2,
+    "feedback": {
+      "canFire": false,
+      "lastShotResult": "hit",
+      "hitConfirmed": false,
+      "damageCue": true,
+      "lastImpact": {
+        "x": -2.62,
+        "y": 1.12,
+        "z": -7.97
+      }
+    },
+    "player": {
+      "x": -2.03,
+      "z": -4.85,
+      "yaw": -0.185,
+      "pitch": -0.041
+    },
+    "enemies": [
+      {
+        "id": 1,
+        "x": -2.22,
+        "z": -5.83,
+        "hp": 1
+      },
+      {
+        "id": 2,
+        "x": 2.05,
+        "z": -8.18,
+        "hp": 2
+      }
+    ],
+    "scope": "Original FPS room and robots. No COD code/assets ported. Ray hits, simple pursuit, cover collision, three waves.",
+    "log": [
+      {
+        "time": 0,
+        "action": "波次开始",
+        "detail": 1
+      },
+      {
+        "time": 2.2,
+        "action": "射击命中",
+        "detail": 1
+      },
+      {
+        "time": 5.1,
+        "action": "近身冲击",
+        "detail": {
+          "enemy": 1,
+          "damage": 12
+        }
+      }
+    ]
+  },
+  "source": "https://x.com/p_e_cooper/status/2104980433972703483",
+  "reference": {
+    "focus": "第一人称房间生存：瞄准、移动、敌人靠近和波次资源形成实时闭环。",
+    "evidence": "作者自述将经典 Zombies 地图移植到浏览器；原片展示第一人称室内场景。",
+    "sourceTech": "源码迁移是作者自述；本项目没有原作源码与资产。",
+    "ours": "原创机房第一人称机器人生存关卡，移动、射击、波次与生命反馈。",
+    "tech": "本地 Three.js、第一人称镜头与 Raycaster 射线命中、追击和遮挡逻辑、波次状态循环。 画面采用：机柜与武器倒角、金属高光、地面材质和室内导光。",
+    "value": "用空间压力与资源限制做安防巡检、应急处置或设备操作训练。",
+    "check": "移动改变镜头；瞄准命中改变敌人状态；波次推进与失败条件真实成立。",
+    "boundary": "参考第一人称生存效果；我们做的是原创关卡，不是 COD 源码移植。",
+    "kernel": "第一人称镜头、射线命中、敌人追击、生命/弹药与波次状态共同运行。"
+  },
+  "optimization": null,
+  "scope": "原创关卡与简化行为；没有 COD 源码迁移、资产或联机。"
+}

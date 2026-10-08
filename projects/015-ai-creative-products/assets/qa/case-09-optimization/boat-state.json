@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-02T15:03:06.994Z",
+  "caseId": 9,
+  "product": "浏览器三维导览与环境演练工具",
+  "task": "步行到观察点，改变天气与时刻，导出环境配置和画面。",
+  "state": {
+    "weather": "clear",
+    "hour": 15,
+    "density": 24,
+    "running": false,
+    "time": 0.63,
+    "visited": [
+      "solar"
+    ],
+    "selected": "solar",
+    "solar": 71,
+    "water": 54,
+    "renderer": "webgl",
+    "fireLit": true,
+    "boatBoarded": true,
+    "boatHeading": 2.927842653589794,
+    "boatSpeed": 0,
+    "boatDistance": 0.8225549999999995,
+    "boatBlocked": false,
+    "interactions": [
+      {
+        "action": "board-boat",
+        "at": 0.63
+      }
+    ],
+    "arrivalLog": [
+      {
+        "id": "solar",
+        "position": {
+          "x": -12,
+          "z": 3
+        },
+        "at": 0.63
+      }
+    ],
+    "boat": {
+      "x": -15,
+      "z": 7.8225549999999995,
+      "heading": 2.927842653589794,
+      "speed": 0,
+      "distance": 0.82,
+      "blocked": false
+    },
+    "weatherName": "晴天",
+    "mode": "first-person",
+    "camera": {
+      "x": -15,
+      "z": 7.8225549999999995,
+      "yaw": 3.4718426535897944,
+      "pitch": -0.13
+    },
+    "cameraWorld": {
+      "x": -14.777267656479188,
+      "y": 1.2286005819430295,
+      "z": 6.796450569081914
+    },
+    "boatView": {
+      "mode": "seated",
+      "eyeHeight": 1.1,
+      "lookOffset": 0.5440000000000005,
+      "headingIndependentOfLook": true
+    },
+    "camper": {
+      "x": -15,
+      "z": 7.8225549999999995
+    },
+    "exploration": {
+      "distance": 0.82,
+      "steps": 28,
+      "renderCount": 83,
+      "drawCalls": 20,
+      "triangles": 61960,
+      "pixelRatio": 1
+    },
+    "rules": {
+      "transmission": {
+        "clear": 1,
+        "cloud": 0.45,
+        "rain": 0.2,
+        "storm": 0.12
+      },
+      "solar": "optional illustrative daylight*transmission*100",
+      "water": "optional illustrative min(100,30+rainIncrement+density)"
+    },
+    "reference": {
+      "workflow": "Native Three.js environment integration",
+      "assets": "Original detailed procedural geometry, Poly Haven CC0 photographed PBR and HDR sky"
+    }
+  },
+  "source": "https://x.com/maxt3chno/status/2105216139647127750",
+  "reference": {
+    "focus": "原生浏览器三维世界整合：地形、水草、天空、动态天气、日夜和自由探索。",
+    "evidence": "作者明确披露 Three.js、水草地形、天气日夜，以及代码与 Meshy 模型混合制作。",
+    "sourceTech": "Three.js 原生运行；部分模型来自 Meshy，是作者明确披露的技术。",
+    "ours": "可步行的原创热带研究营地、岸线水面、木栈台、植被与天气日夜联动，以及可登乘的船和可切换的篝火。",
+    "tech": "本地 Three.js、程序化环境与材质、第一人称镜头和共享环境状态。 画面采用：摄影沙石、分离棕榈叶、HDR 天空、水面反射与岸线层次。",
+    "value": "用于空间导览、营地体验与环境解释；太阳能/蓄水指标作为我们另加的规则演示。",
+    "check": "走到近处查看对象；改天气和时刻后，天空、光线、水面和交互保持一致。",
+    "boundary": "没有复现作者全部道具与游戏机制，也未调用 Meshy；扩展指标不代表校准的现实模型。",
+    "kernel": "第一人称环境引擎统一镜头、地形高度适配与建筑/树干碰撞、水面、植被、天气和日夜，再挂接可交互对象。"
+  },
+  "scope": "程序化原创场景，未调用 Meshy；附加因果指标只是未校准示例。"
+}

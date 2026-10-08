@@ -1,0 +1,892 @@
+{
+  "caseId": 2,
+  "checks": [
+    {
+      "name": "四位独立动态记录员加载，世界静态合批仍保留",
+      "passed": true
+    },
+    {
+      "name": "实际待机改变连接姿态",
+      "passed": true
+    },
+    {
+      "name": "初始距离不可隔空交谈",
+      "passed": true
+    },
+    {
+      "name": "实际对话中记录员转向玩家，人物与对话同站",
+      "passed": true
+    },
+    {
+      "name": "隐藏视图暂停时间、人物姿态和实际像素",
+      "passed": true
+    },
+    {
+      "name": "实际 review 动作分镜通过宿主暂停捕获",
+      "passed": true
+    },
+    {
+      "name": "错误判断只触发复核姿态，证据仍为0",
+      "passed": true
+    },
+    {
+      "name": "离开后人物回待机，旧对话不能取证",
+      "passed": true
+    },
+    {
+      "name": "实际 confirm 动作分镜通过宿主暂停捕获",
+      "passed": true
+    },
+    {
+      "name": "正确判断才触发确认动作、记录板标记和证据状态",
+      "passed": true
+    },
+    {
+      "name": "真实JSON保留相同证据、人物确认姿态和暂停时钟",
+      "passed": true
+    },
+    {
+      "name": "手机实际人物/交谈入口可见，无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "恢复后确认动作按墙钟结束，不重复加证据",
+      "passed": true
+    },
+    {
+      "name": "sensor 实际站点成功状态与人物一致",
+      "passed": true
+    },
+    {
+      "name": "tower 实际站点成功状态与人物一致",
+      "passed": true
+    },
+    {
+      "name": "离开研究站不能隔空触发归档动作",
+      "passed": true
+    },
+    {
+      "name": "实际 archived 动作分镜通过宿主暂停捕获",
+      "passed": true
+    },
+    {
+      "name": "归档结果由研究站人物、灯标和真实任务共用",
+      "passed": true
+    },
+    {
+      "name": "完成反馈结束即停止，任务耗时和玩家位置不再推进",
+      "passed": true
+    },
+    {
+      "name": "重置清除证据及四位人物确认状态",
+      "passed": true
+    },
+    {
+      "name": "共享05模块仍可真实导入",
+      "passed": true
+    },
+    {
+      "name": "本例无页面错误",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "samples": {
+    "conversation": {
+      "module": "quest",
+      "status": "playing",
+      "running": false,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 85,
+        "triangles": 237040,
+        "staticDrawCallsSaved": 5768
+      },
+      "position": {
+        "x": -11.84,
+        "z": -8
+      },
+      "yaw": 1.266,
+      "evidence": [],
+      "elapsed": 24.7,
+      "destination": null,
+      "dialogueSite": "archive",
+      "interaction": {
+        "site": "archive",
+        "distance": 2.66,
+        "canTalk": true,
+        "sites": [
+          {
+            "id": "hub",
+            "checked": false,
+            "marker": "提交证据"
+          },
+          {
+            "id": "archive",
+            "checked": false,
+            "marker": "待核对"
+          },
+          {
+            "id": "sensor",
+            "checked": false,
+            "marker": "待核对"
+          },
+          {
+            "id": "tower",
+            "checked": false,
+            "marker": "待核对"
+          }
+        ]
+      },
+      "recorders": {
+        "clock": 24.666,
+        "animating": false,
+        "actors": [
+          {
+            "site": "hub",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "pose": {
+              "bodyY": 0.9411,
+              "headPitch": 0.0189,
+              "headYaw": -0.0151,
+              "rightShoulder": -0.0504,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          },
+          {
+            "site": "archive",
+            "mode": "talking",
+            "near": true,
+            "checked": false,
+            "eventAge": 1.242,
+            "yaw": -1.265,
+            "targetYaw": -1.266,
+            "pose": {
+              "bodyY": 0.9345,
+              "headPitch": 0.0301,
+              "headYaw": -0.0017,
+              "rightShoulder": -0.36,
+              "rightElbow": -0.9017,
+              "leftShoulder": -0.34
+            }
+          },
+          {
+            "site": "sensor",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "pose": {
+              "bodyY": 0.932,
+              "headPitch": 0.0069,
+              "headYaw": -0.037,
+              "rightShoulder": -0.0797,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          },
+          {
+            "site": "tower",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "pose": {
+              "bodyY": 0.9356,
+              "headPitch": -0.0164,
+              "headYaw": 0.0082,
+              "rightShoulder": -0.0695,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          }
+        ]
+      },
+      "soundEnabled": true,
+      "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+      "scope": "Original small RPG prototype with stylized connected recorder responses; no original source, combat or VATS reproduced.",
+      "log": [
+        {
+          "time": 0,
+          "action": "开始",
+          "detail": "程序化街区任务"
+        },
+        {
+          "time": 17.3,
+          "action": "前往",
+          "detail": "档案站"
+        }
+      ]
+    },
+    "review": {
+      "module": "quest",
+      "status": "playing",
+      "running": false,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 85,
+        "triangles": 237040,
+        "staticDrawCallsSaved": 5768
+      },
+      "position": {
+        "x": -11.84,
+        "z": -8
+      },
+      "yaw": 1.266,
+      "evidence": [],
+      "elapsed": 25.3,
+      "destination": null,
+      "dialogueSite": "archive",
+      "interaction": {
+        "site": "archive",
+        "distance": 2.66,
+        "canTalk": true,
+        "sites": [
+          {
+            "id": "hub",
+            "checked": false,
+            "marker": "提交证据"
+          },
+          {
+            "id": "archive",
+            "checked": false,
+            "marker": "待核对"
+          },
+          {
+            "id": "sensor",
+            "checked": false,
+            "marker": "待核对"
+          },
+          {
+            "id": "tower",
+            "checked": false,
+            "marker": "待核对"
+          }
+        ]
+      },
+      "recorders": {
+        "clock": 25.272,
+        "animating": false,
+        "actors": [
+          {
+            "site": "hub",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "pose": {
+              "bodyY": 0.9339,
+              "headPitch": 0.0244,
+              "headYaw": -0.0328,
+              "rightShoulder": -0.0737,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          },
+          {
+            "site": "archive",
+            "mode": "review",
+            "near": true,
+            "checked": false,
+            "eventAge": 0.607,
+            "yaw": -1.266,
+            "targetYaw": -1.266,
+            "pose": {
+              "bodyY": 0.9321,
+              "headPitch": 0.1987,
+              "headYaw": -0.0003,
+              "rightShoulder": -0.5783,
+              "rightElbow": -1.0389,
+              "leftShoulder": -0.5484
+            }
+          },
+          {
+            "site": "sensor",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "pose": {
+              "bodyY": 0.9363,
+              "headPitch": -0.0055,
+              "headYaw": -0.0206,
+              "rightShoulder": -0.0667,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          },
+          {
+            "site": "tower",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "pose": {
+              "bodyY": 0.9432,
+              "headPitch": -0.0235,
+              "headYaw": 0.0271,
+              "rightShoulder": -0.0451,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          }
+        ]
+      },
+      "soundEnabled": true,
+      "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+      "scope": "Original small RPG prototype with stylized connected recorder responses; no original source, combat or VATS reproduced.",
+      "log": [
+        {
+          "time": 0,
+          "action": "开始",
+          "detail": "程序化街区任务"
+        },
+        {
+          "time": 17.3,
+          "action": "前往",
+          "detail": "档案站"
+        },
+        {
+          "time": 24.7,
+          "action": "判断未通过",
+          "detail": "档案站"
+        }
+      ]
+    },
+    "left": {
+      "module": "quest",
+      "status": "playing",
+      "running": true,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 89,
+        "triangles": 265024,
+        "staticDrawCallsSaved": 5768
+      },
+      "position": {
+        "x": -16.29,
+        "z": -6.6
+      },
+      "yaw": 1.266,
+      "evidence": [],
+      "elapsed": 30.7,
+      "destination": null,
+      "dialogueSite": "archive",
+      "interaction": {
+        "site": "archive",
+        "distance": 7.33,
+        "canTalk": false,
+        "sites": [
+          {
+            "id": "hub",
+            "checked": false,
+            "marker": "提交证据"
+          },
+          {
+            "id": "archive",
+            "checked": false,
+            "marker": "待核对"
+          },
+          {
+            "id": "sensor",
+            "checked": false,
+            "marker": "待核对"
+          },
+          {
+            "id": "tower",
+            "checked": false,
+            "marker": "待核对"
+          }
+        ]
+      },
+      "recorders": {
+        "clock": 30.672,
+        "animating": true,
+        "actors": [
+          {
+            "site": "hub",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "pose": {
+              "bodyY": 0.9427,
+              "headPitch": -0.0145,
+              "headYaw": 0.0437,
+              "rightShoulder": -0.0479,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          },
+          {
+            "site": "archive",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 6.006,
+            "yaw": 0,
+            "targetYaw": 0,
+            "pose": {
+              "bodyY": 0.9476,
+              "headPitch": 0.0092,
+              "headYaw": 0.0439,
+              "rightShoulder": -0.0321,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          },
+          {
+            "site": "sensor",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "pose": {
+              "bodyY": 0.9467,
+              "headPitch": 0.0245,
+              "headYaw": 0.0038,
+              "rightShoulder": -0.0336,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          },
+          {
+            "site": "tower",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "pose": {
+              "bodyY": 0.9408,
+              "headPitch": 0.0172,
+              "headYaw": -0.0398,
+              "rightShoulder": -0.0513,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          }
+        ]
+      },
+      "soundEnabled": true,
+      "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+      "scope": "Original small RPG prototype with stylized connected recorder responses; no original source, combat or VATS reproduced.",
+      "log": [
+        {
+          "time": 0,
+          "action": "开始",
+          "detail": "程序化街区任务"
+        },
+        {
+          "time": 17.3,
+          "action": "前往",
+          "detail": "档案站"
+        },
+        {
+          "time": 24.7,
+          "action": "判断未通过",
+          "detail": "档案站"
+        }
+      ]
+    },
+    "confirm": {
+      "module": "quest",
+      "status": "playing",
+      "running": false,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 85,
+        "triangles": 237040,
+        "staticDrawCallsSaved": 5768
+      },
+      "position": {
+        "x": -12.17,
+        "z": -8
+      },
+      "yaw": 1.299,
+      "evidence": [
+        {
+          "id": "archive",
+          "title": "档案来源与时间已核对"
+        }
+      ],
+      "elapsed": 39.3,
+      "destination": null,
+      "dialogueSite": "archive",
+      "interaction": {
+        "site": "archive",
+        "distance": 2.98,
+        "canTalk": true,
+        "sites": [
+          {
+            "id": "hub",
+            "checked": false,
+            "marker": "提交证据"
+          },
+          {
+            "id": "archive",
+            "checked": true,
+            "marker": "已核对"
+          },
+          {
+            "id": "sensor",
+            "checked": false,
+            "marker": "待核对"
+          },
+          {
+            "id": "tower",
+            "checked": false,
+            "marker": "待核对"
+          }
+        ]
+      },
+      "recorders": {
+        "clock": 39.338,
+        "animating": false,
+        "actors": [
+          {
+            "site": "hub",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "pose": {
+              "bodyY": 0.947,
+              "headPitch": 0.0013,
+              "headYaw": 0.021,
+              "rightShoulder": -0.0331,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          },
+          {
+            "site": "archive",
+            "mode": "confirm",
+            "near": true,
+            "checked": true,
+            "eventAge": 0.917,
+            "yaw": -1.299,
+            "targetYaw": -1.299,
+            "pose": {
+              "bodyY": 0.9413,
+              "headPitch": -0.1634,
+              "headYaw": -0.0003,
+              "rightShoulder": -0.6885,
+              "rightElbow": -1.0713,
+              "leftShoulder": -0.4799
+            }
+          },
+          {
+            "site": "sensor",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "pose": {
+              "bodyY": 0.9346,
+              "headPitch": 0.0222,
+              "headYaw": 0.0325,
+              "rightShoulder": -0.0716,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          },
+          {
+            "site": "tower",
+            "mode": "idle",
+            "near": false,
+            "checked": false,
+            "eventAge": 0,
+            "yaw": 0,
+            "targetYaw": 0,
+            "pose": {
+              "bodyY": 0.932,
+              "headPitch": 0.0023,
+              "headYaw": -0.0144,
+              "rightShoulder": -0.0799,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.34
+            }
+          }
+        ]
+      },
+      "soundEnabled": true,
+      "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+      "scope": "Original small RPG prototype with stylized connected recorder responses; no original source, combat or VATS reproduced.",
+      "log": [
+        {
+          "time": 0,
+          "action": "开始",
+          "detail": "程序化街区任务"
+        },
+        {
+          "time": 17.3,
+          "action": "前往",
+          "detail": "档案站"
+        },
+        {
+          "time": 24.7,
+          "action": "判断未通过",
+          "detail": "档案站"
+        },
+        {
+          "time": 36.5,
+          "action": "前往",
+          "detail": "档案站"
+        },
+        {
+          "time": 38.4,
+          "action": "取得证据",
+          "detail": "档案来源与时间已核对"
+        }
+      ]
+    },
+    "completed": {
+      "module": "quest",
+      "status": "won",
+      "running": false,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 86,
+        "triangles": 263836,
+        "staticDrawCallsSaved": 5768
+      },
+      "position": {
+        "x": -4.83,
+        "z": 12.01
+      },
+      "yaw": 1.294,
+      "evidence": [
+        {
+          "id": "archive",
+          "title": "档案来源与时间已核对"
+        },
+        {
+          "id": "sensor",
+          "title": "异常读数与校准已复核"
+        },
+        {
+          "id": "tower",
+          "title": "两次观察差异已保留"
+        }
+      ],
+      "elapsed": 94,
+      "destination": null,
+      "dialogueSite": "hub",
+      "interaction": {
+        "site": "hub",
+        "distance": 2.95,
+        "canTalk": false,
+        "sites": [
+          {
+            "id": "hub",
+            "checked": true,
+            "marker": "已归档"
+          },
+          {
+            "id": "archive",
+            "checked": true,
+            "marker": "已核对"
+          },
+          {
+            "id": "sensor",
+            "checked": true,
+            "marker": "已核对"
+          },
+          {
+            "id": "tower",
+            "checked": true,
+            "marker": "已核对"
+          }
+        ]
+      },
+      "recorders": {
+        "clock": 94.77,
+        "animating": false,
+        "actors": [
+          {
+            "site": "hub",
+            "mode": "archived",
+            "near": true,
+            "checked": true,
+            "eventAge": 0.783,
+            "yaw": -1.293,
+            "targetYaw": -1.294,
+            "pose": {
+              "bodyY": 0.9348,
+              "headPitch": -0.1514,
+              "headYaw": -0.0005,
+              "rightShoulder": -0.649,
+              "rightElbow": -1.0186,
+              "leftShoulder": -0.4797
+            }
+          },
+          {
+            "site": "archive",
+            "mode": "idle",
+            "near": false,
+            "checked": true,
+            "eventAge": 56.348,
+            "yaw": 0,
+            "targetYaw": 0,
+            "pose": {
+              "bodyY": 0.9415,
+              "headPitch": 0.0246,
+              "headYaw": -0.0117,
+              "rightShoulder": -0.0506,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.48
+            }
+          },
+          {
+            "site": "sensor",
+            "mode": "idle",
+            "near": false,
+            "checked": true,
+            "eventAge": 41.565,
+            "yaw": 0,
+            "targetYaw": 0,
+            "pose": {
+              "bodyY": 0.9471,
+              "headPitch": 0.0167,
+              "headYaw": 0.0345,
+              "rightShoulder": -0.0331,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.48
+            }
+          },
+          {
+            "site": "tower",
+            "mode": "idle",
+            "near": false,
+            "checked": true,
+            "eventAge": 29.682,
+            "yaw": 0,
+            "targetYaw": 0,
+            "pose": {
+              "bodyY": 0.9473,
+              "headPitch": -0.0066,
+              "headYaw": 0.049,
+              "rightShoulder": -0.0322,
+              "rightElbow": -0.1,
+              "leftShoulder": -0.48
+            }
+          }
+        ]
+      },
+      "soundEnabled": true,
+      "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+      "scope": "Original small RPG prototype with stylized connected recorder responses; no original source, combat or VATS reproduced.",
+      "log": [
+        {
+          "time": 0,
+          "action": "开始",
+          "detail": "程序化街区任务"
+        },
+        {
+          "time": 17.3,
+          "action": "前往",
+          "detail": "档案站"
+        },
+        {
+          "time": 24.7,
+          "action": "判断未通过",
+          "detail": "档案站"
+        },
+        {
+          "time": 36.5,
+          "action": "前往",
+          "detail": "档案站"
+        },
+        {
+          "time": 38.4,
+          "action": "取得证据",
+          "detail": "档案来源与时间已核对"
+        },
+        {
+          "time": 46.8,
+          "action": "前往",
+          "detail": "传感站"
+        },
+        {
+          "time": 53.2,
+          "action": "取得证据",
+          "detail": "异常读数与校准已复核"
+        },
+        {
+          "time": 58.4,
+          "action": "前往",
+          "detail": "观测塔"
+        },
+        {
+          "time": 65.1,
+          "action": "取得证据",
+          "detail": "两次观察差异已保留"
+        },
+        {
+          "time": 71,
+          "action": "前往",
+          "detail": "研究站"
+        },
+        {
+          "time": 92.3,
+          "action": "前往",
+          "detail": "研究站"
+        },
+        {
+          "time": 94,
+          "action": "任务完成",
+          "detail": "三份证据已归档"
+        }
+      ]
+    }
+  },
+  "evidence": "F:\\codex_project\\0930_codex_project\\projects\\015-ai-creative-products\\assets\\qa\\case-02-recorder",
+  "validationNotes": [
+    {
+      "attempt": "First capture attempt",
+      "result": "Timing failure in QA, not a task-state failure",
+      "observed": "The 2.2-second review had already ended at eventAge 2.483 when an asynchronous pause command reached the page; evidence remained zero.",
+      "correction": "Perform the real button click and freeze through the existing lab-visibility host API in the page after the actual response pose has changed. The product action duration remains 2.2 seconds."
+    }
+  ],
+  "poseChecks": [
+    {
+      "name": "Review frame has actual head pitch",
+      "passed": true
+    },
+    {
+      "name": "Confirmation frame has actual lifted shoulder",
+      "passed": true
+    },
+    {
+      "name": "Archival frame has actual lifted shoulder",
+      "passed": true
+    }
+  ]
+}

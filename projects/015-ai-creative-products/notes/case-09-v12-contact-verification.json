@@ -1,0 +1,1697 @@
+{
+  "checkedAt": "2026-10-02T23:57:10.305Z",
+  "checks": [
+    {
+      "name": "actual vessel footprint is constrained by real shoreline rocks under continued throttle",
+      "pass": true,
+      "detail": {
+        "samples": 21,
+        "minBoundary": 1.001733269568035,
+        "first": {
+          "x": -8.456200201476038,
+          "z": 9.566720800795807,
+          "heading": 4.338592653589789,
+          "speed": 0,
+          "distance": 7.03,
+          "blocked": true
+        },
+        "held": {
+          "x": -8.269191403361962,
+          "z": 9.640072582150651,
+          "heading": 4.338592653589789,
+          "speed": 0,
+          "distance": 7.23,
+          "blocked": true
+        },
+        "released": {
+          "x": -8.269191403361962,
+          "z": 9.640072582150651,
+          "heading": 4.338592653589789,
+          "speed": 0,
+          "distance": 7.23,
+          "blocked": false
+        }
+      }
+    },
+    {
+      "name": "final export summary includes real pebble and visible plant counts",
+      "pass": true
+    },
+    {
+      "name": "actual steering into shoreline rock is rejected and preserves independent look offset",
+      "pass": true,
+      "detail": {
+        "candidate": {
+          "delta": -0.2,
+          "boundary": 0.939347557593357
+        },
+        "before": {
+          "x": -8.269191403361962,
+          "z": 9.640072582150651,
+          "heading": 4.338592653589789,
+          "speed": 0,
+          "distance": 7.23,
+          "blocked": false
+        },
+        "blocked": {
+          "x": -8.269191403361962,
+          "z": 9.640072582150651,
+          "heading": 4.338592653589789,
+          "speed": 0,
+          "distance": 7.23,
+          "blocked": true
+        },
+        "held": {
+          "x": -8.269191403361962,
+          "z": 9.640072582150651,
+          "heading": 4.338592653589789,
+          "speed": 0,
+          "distance": 7.23,
+          "blocked": true
+        },
+        "lookOffsetBefore": 0.3263999023437485,
+        "lookOffsetAfter": 0.3263999023437485,
+        "boundary": 1.001733269568035
+      }
+    }
+  ],
+  "errors": [],
+  "states": {
+    "seated": {
+      "weather": "clear",
+      "hour": 15,
+      "density": 24,
+      "running": false,
+      "time": 0.675,
+      "visited": [
+        "solar"
+      ],
+      "selected": "solar",
+      "solar": 71,
+      "water": 54,
+      "renderer": "webgl",
+      "fireLit": true,
+      "boatBoarded": true,
+      "boatHeading": 3.141592653589793,
+      "boatSpeed": 0,
+      "boatDistance": 0,
+      "boatBlocked": false,
+      "boatBlockedBy": null,
+      "boatSteeringBlocked": false,
+      "interactions": [
+        {
+          "action": "board-boat",
+          "at": 0.675
+        }
+      ],
+      "arrivalLog": [
+        {
+          "id": "solar",
+          "position": {
+            "x": -12,
+            "z": 3
+          },
+          "at": 0.68
+        }
+      ],
+      "boat": {
+        "x": -15,
+        "z": 7,
+        "heading": 3.141592653589793,
+        "speed": 0,
+        "distance": 0,
+        "blocked": false
+      },
+      "weatherName": "晴天",
+      "mode": "first-person",
+      "camera": {
+        "x": -15,
+        "z": 7,
+        "yaw": 3.141592653589793,
+        "pitch": -0.13
+      },
+      "cameraWorld": {
+        "x": -15,
+        "y": 1.2305248466893906,
+        "z": 5.95
+      },
+      "boatView": {
+        "mode": "seated",
+        "eyeHeight": 1.1,
+        "lookOffset": 0,
+        "headingIndependentOfLook": true
+      },
+      "camper": {
+        "x": -15,
+        "z": 7
+      },
+      "environmentDetail": {
+        "shoreline": "continuous damp-sand and pebble transition",
+        "shoreLength": 72,
+        "wetSandWidth": 3.36,
+        "wetSandRoughness": 0.63,
+        "rockCount": 24,
+        "pebbleInstances": 170,
+        "solidRockColliders": 24,
+        "shoreRocks": [
+          {
+            "x": -5.207636708888082,
+            "z": -30.955041554807725,
+            "radius": 1.577669443001663
+          },
+          {
+            "x": -5.338645660003513,
+            "z": -30.949027399485026,
+            "radius": 1.1015227539516266
+          },
+          {
+            "x": -6.05733234116858,
+            "z": -29.12605237609339,
+            "radius": 0.4730797858471794
+          },
+          {
+            "x": -5.990951328458069,
+            "z": -21.95199984801188,
+            "radius": 1.8463816513366826
+          },
+          {
+            "x": -7.266357338977229,
+            "z": -22.16608737843678,
+            "radius": 0.5836810401302586
+          },
+          {
+            "x": -5.509755064577417,
+            "z": -21.919641836657785,
+            "radius": 0.8198605462870192
+          },
+          {
+            "x": -7.824227019590734,
+            "z": -16.694973301324037,
+            "radius": 1.6514991438682183
+          },
+          {
+            "x": -7.145282608202187,
+            "z": -16.92858891601543,
+            "radius": 0.501877071427067
+          },
+          {
+            "x": -7.997643936033226,
+            "z": -15.020537587181234,
+            "radius": 0.4911963176645304
+          },
+          {
+            "x": -6.525739559230102,
+            "z": -8.665906285555947,
+            "radius": 1.9726902575722804
+          },
+          {
+            "x": -7.115826233724851,
+            "z": -9.496354367859992,
+            "radius": 0.8687811671912494
+          },
+          {
+            "x": -6.391047484746196,
+            "z": -8.624666119669254,
+            "radius": 0.5661454064903273
+          },
+          {
+            "x": -7.407715858086946,
+            "z": -2.446311424250073,
+            "radius": 1.9391814105950123
+          },
+          {
+            "x": -7.592431672774924,
+            "z": -3.685138658885973,
+            "radius": 0.682120185656585
+          },
+          {
+            "x": -8.134937009833031,
+            "z": -2.4002750476824817,
+            "radius": 0.5988334355939491
+          },
+          {
+            "x": -4.714947126589726,
+            "z": 11.488899368037377,
+            "radius": 1.4021087005940347
+          },
+          {
+            "x": -5.303961027001054,
+            "z": 11.577615978454814,
+            "radius": 0.6739520589950979
+          },
+          {
+            "x": -6.113082982940736,
+            "z": 10.990102341296247,
+            "radius": 0.525266986658114
+          },
+          {
+            "x": -5.08605584238375,
+            "z": 20.07306771350379,
+            "radius": 1.3912114352092253
+          },
+          {
+            "x": -6.460354570803496,
+            "z": 20.23360440817997,
+            "radius": 0.4656095601484269
+          },
+          {
+            "x": -4.957670564426667,
+            "z": 19.004817441482857,
+            "radius": 0.5845337504973018
+          },
+          {
+            "x": -6.962208064812631,
+            "z": 28.246199793504736,
+            "radius": 1.9531125755730203
+          },
+          {
+            "x": -8.29490829735261,
+            "z": 29.37590636618054,
+            "radius": 0.5290974407280772
+          },
+          {
+            "x": -6.740420228948478,
+            "z": 29.053197075103594,
+            "radius": 0.49457395635784973
+          }
+        ],
+        "boatRockBoundary": "oriented ellipse (1m half-width, 2.1m half-length) expanded by each solid rock radius; no rigid-body contact",
+        "undergrowthPockets": 104,
+        "visibleUndergrowthPockets": 84,
+        "totalBroadLeaves": 728,
+        "visibleBroadLeaves": 582,
+        "weather": "clear",
+        "hour": 15,
+        "windStrength": 1,
+        "water": "view-distance filtered procedural ripples; sky HDR reflection; no scene refraction",
+        "assets": "original procedural mesh and existing CC0 sand/stone maps",
+        "visiblePalms": 30,
+        "totalPalms": 50,
+        "grassInstances": 1440,
+        "waterState": {
+          "roughWeather": 0,
+          "light": 0.7071067811865476,
+          "skyReflection": true,
+          "animationTime": 0.675
+        }
+      },
+      "exploration": {
+        "distance": 0,
+        "steps": 0,
+        "renderCount": 39,
+        "drawCalls": 31,
+        "triangles": 119236,
+        "pixelRatio": 1
+      },
+      "rules": {
+        "transmission": {
+          "clear": 1,
+          "cloud": 0.45,
+          "rain": 0.2,
+          "storm": 0.12
+        },
+        "solar": "optional illustrative daylight*transmission*100",
+        "water": "optional illustrative min(100,30+rainIncrement+density)"
+      },
+      "reference": {
+        "workflow": "Native Three.js environment integration",
+        "assets": "Original detailed procedural geometry, Poly Haven CC0 photographed PBR and HDR sky"
+      }
+    },
+    "firstContact": {
+      "weather": "clear",
+      "hour": 15,
+      "density": 24,
+      "running": false,
+      "time": 0.675,
+      "visited": [
+        "solar"
+      ],
+      "selected": "solar",
+      "solar": 71,
+      "water": 54,
+      "renderer": "webgl",
+      "fireLit": true,
+      "boatBoarded": true,
+      "boatHeading": 4.338592653589789,
+      "boatSpeed": 0,
+      "boatDistance": 7.029180000000009,
+      "boatBlocked": true,
+      "boatBlockedBy": "岸边岩石",
+      "boatSteeringBlocked": false,
+      "interactions": [
+        {
+          "action": "board-boat",
+          "at": 0.675
+        }
+      ],
+      "arrivalLog": [
+        {
+          "id": "solar",
+          "position": {
+            "x": -12,
+            "z": 3
+          },
+          "at": 0.68
+        }
+      ],
+      "boat": {
+        "x": -8.456200201476038,
+        "z": 9.566720800795807,
+        "heading": 4.338592653589789,
+        "speed": 0,
+        "distance": 7.03,
+        "blocked": true
+      },
+      "weatherName": "晴天",
+      "mode": "first-person",
+      "camera": {
+        "x": -8.456200201476038,
+        "z": 9.566720800795807,
+        "yaw": 4.338592653589789,
+        "pitch": -0.13
+      },
+      "cameraWorld": {
+        "x": -9.433695412645784,
+        "y": 1.2305248466893906,
+        "z": 9.183310952017486
+      },
+      "boatView": {
+        "mode": "seated",
+        "eyeHeight": 1.1,
+        "lookOffset": 0,
+        "headingIndependentOfLook": true
+      },
+      "camper": {
+        "x": -8.456200201476038,
+        "z": 9.566720800795807
+      },
+      "environmentDetail": {
+        "shoreline": "continuous damp-sand and pebble transition",
+        "shoreLength": 72,
+        "wetSandWidth": 3.36,
+        "wetSandRoughness": 0.63,
+        "rockCount": 24,
+        "pebbleInstances": 170,
+        "solidRockColliders": 24,
+        "shoreRocks": [
+          {
+            "x": -5.207636708888082,
+            "z": -30.955041554807725,
+            "radius": 1.577669443001663
+          },
+          {
+            "x": -5.338645660003513,
+            "z": -30.949027399485026,
+            "radius": 1.1015227539516266
+          },
+          {
+            "x": -6.05733234116858,
+            "z": -29.12605237609339,
+            "radius": 0.4730797858471794
+          },
+          {
+            "x": -5.990951328458069,
+            "z": -21.95199984801188,
+            "radius": 1.8463816513366826
+          },
+          {
+            "x": -7.266357338977229,
+            "z": -22.16608737843678,
+            "radius": 0.5836810401302586
+          },
+          {
+            "x": -5.509755064577417,
+            "z": -21.919641836657785,
+            "radius": 0.8198605462870192
+          },
+          {
+            "x": -7.824227019590734,
+            "z": -16.694973301324037,
+            "radius": 1.6514991438682183
+          },
+          {
+            "x": -7.145282608202187,
+            "z": -16.92858891601543,
+            "radius": 0.501877071427067
+          },
+          {
+            "x": -7.997643936033226,
+            "z": -15.020537587181234,
+            "radius": 0.4911963176645304
+          },
+          {
+            "x": -6.525739559230102,
+            "z": -8.665906285555947,
+            "radius": 1.9726902575722804
+          },
+          {
+            "x": -7.115826233724851,
+            "z": -9.496354367859992,
+            "radius": 0.8687811671912494
+          },
+          {
+            "x": -6.391047484746196,
+            "z": -8.624666119669254,
+            "radius": 0.5661454064903273
+          },
+          {
+            "x": -7.407715858086946,
+            "z": -2.446311424250073,
+            "radius": 1.9391814105950123
+          },
+          {
+            "x": -7.592431672774924,
+            "z": -3.685138658885973,
+            "radius": 0.682120185656585
+          },
+          {
+            "x": -8.134937009833031,
+            "z": -2.4002750476824817,
+            "radius": 0.5988334355939491
+          },
+          {
+            "x": -4.714947126589726,
+            "z": 11.488899368037377,
+            "radius": 1.4021087005940347
+          },
+          {
+            "x": -5.303961027001054,
+            "z": 11.577615978454814,
+            "radius": 0.6739520589950979
+          },
+          {
+            "x": -6.113082982940736,
+            "z": 10.990102341296247,
+            "radius": 0.525266986658114
+          },
+          {
+            "x": -5.08605584238375,
+            "z": 20.07306771350379,
+            "radius": 1.3912114352092253
+          },
+          {
+            "x": -6.460354570803496,
+            "z": 20.23360440817997,
+            "radius": 0.4656095601484269
+          },
+          {
+            "x": -4.957670564426667,
+            "z": 19.004817441482857,
+            "radius": 0.5845337504973018
+          },
+          {
+            "x": -6.962208064812631,
+            "z": 28.246199793504736,
+            "radius": 1.9531125755730203
+          },
+          {
+            "x": -8.29490829735261,
+            "z": 29.37590636618054,
+            "radius": 0.5290974407280772
+          },
+          {
+            "x": -6.740420228948478,
+            "z": 29.053197075103594,
+            "radius": 0.49457395635784973
+          }
+        ],
+        "boatRockBoundary": "oriented ellipse (1m half-width, 2.1m half-length) expanded by each solid rock radius; no rigid-body contact",
+        "undergrowthPockets": 104,
+        "visibleUndergrowthPockets": 84,
+        "totalBroadLeaves": 728,
+        "visibleBroadLeaves": 582,
+        "weather": "clear",
+        "hour": 15,
+        "windStrength": 1,
+        "water": "view-distance filtered procedural ripples; sky HDR reflection; no scene refraction",
+        "assets": "original procedural mesh and existing CC0 sand/stone maps",
+        "visiblePalms": 30,
+        "totalPalms": 50,
+        "grassInstances": 1440,
+        "waterState": {
+          "roughWeather": 0,
+          "light": 0.7071067811865476,
+          "skyReflection": true,
+          "animationTime": 0.675
+        }
+      },
+      "exploration": {
+        "distance": 7.03,
+        "steps": 47,
+        "renderCount": 119,
+        "drawCalls": 65,
+        "triangles": 153917,
+        "pixelRatio": 1
+      },
+      "rules": {
+        "transmission": {
+          "clear": 1,
+          "cloud": 0.45,
+          "rain": 0.2,
+          "storm": 0.12
+        },
+        "solar": "optional illustrative daylight*transmission*100",
+        "water": "optional illustrative min(100,30+rainIncrement+density)"
+      },
+      "reference": {
+        "workflow": "Native Three.js environment integration",
+        "assets": "Original detailed procedural geometry, Poly Haven CC0 photographed PBR and HDR sky"
+      }
+    },
+    "held": {
+      "weather": "clear",
+      "hour": 15,
+      "density": 24,
+      "running": false,
+      "time": 0.675,
+      "visited": [
+        "solar"
+      ],
+      "selected": "solar",
+      "solar": 71,
+      "water": 54,
+      "renderer": "webgl",
+      "fireLit": true,
+      "boatBoarded": true,
+      "boatHeading": 4.338592653589789,
+      "boatSpeed": 0,
+      "boatDistance": 7.230060000000009,
+      "boatBlocked": true,
+      "boatBlockedBy": "岸边岩石",
+      "boatSteeringBlocked": false,
+      "interactions": [
+        {
+          "action": "board-boat",
+          "at": 0.675
+        }
+      ],
+      "arrivalLog": [
+        {
+          "id": "solar",
+          "position": {
+            "x": -12,
+            "z": 3
+          },
+          "at": 0.68
+        }
+      ],
+      "boat": {
+        "x": -8.269191403361962,
+        "z": 9.640072582150651,
+        "heading": 4.338592653589789,
+        "speed": 0,
+        "distance": 7.23,
+        "blocked": true
+      },
+      "weatherName": "晴天",
+      "mode": "first-person",
+      "camera": {
+        "x": -8.269191403361962,
+        "z": 9.640072582150651,
+        "yaw": 4.338592653589789,
+        "pitch": -0.13
+      },
+      "cameraWorld": {
+        "x": -9.246686614531708,
+        "y": 1.2305248466893906,
+        "z": 9.25666273337233
+      },
+      "boatView": {
+        "mode": "seated",
+        "eyeHeight": 1.1,
+        "lookOffset": 0,
+        "headingIndependentOfLook": true
+      },
+      "camper": {
+        "x": -8.269191403361962,
+        "z": 9.640072582150651
+      },
+      "environmentDetail": {
+        "shoreline": "continuous damp-sand and pebble transition",
+        "shoreLength": 72,
+        "wetSandWidth": 3.36,
+        "wetSandRoughness": 0.63,
+        "rockCount": 24,
+        "pebbleInstances": 170,
+        "solidRockColliders": 24,
+        "shoreRocks": [
+          {
+            "x": -5.207636708888082,
+            "z": -30.955041554807725,
+            "radius": 1.577669443001663
+          },
+          {
+            "x": -5.338645660003513,
+            "z": -30.949027399485026,
+            "radius": 1.1015227539516266
+          },
+          {
+            "x": -6.05733234116858,
+            "z": -29.12605237609339,
+            "radius": 0.4730797858471794
+          },
+          {
+            "x": -5.990951328458069,
+            "z": -21.95199984801188,
+            "radius": 1.8463816513366826
+          },
+          {
+            "x": -7.266357338977229,
+            "z": -22.16608737843678,
+            "radius": 0.5836810401302586
+          },
+          {
+            "x": -5.509755064577417,
+            "z": -21.919641836657785,
+            "radius": 0.8198605462870192
+          },
+          {
+            "x": -7.824227019590734,
+            "z": -16.694973301324037,
+            "radius": 1.6514991438682183
+          },
+          {
+            "x": -7.145282608202187,
+            "z": -16.92858891601543,
+            "radius": 0.501877071427067
+          },
+          {
+            "x": -7.997643936033226,
+            "z": -15.020537587181234,
+            "radius": 0.4911963176645304
+          },
+          {
+            "x": -6.525739559230102,
+            "z": -8.665906285555947,
+            "radius": 1.9726902575722804
+          },
+          {
+            "x": -7.115826233724851,
+            "z": -9.496354367859992,
+            "radius": 0.8687811671912494
+          },
+          {
+            "x": -6.391047484746196,
+            "z": -8.624666119669254,
+            "radius": 0.5661454064903273
+          },
+          {
+            "x": -7.407715858086946,
+            "z": -2.446311424250073,
+            "radius": 1.9391814105950123
+          },
+          {
+            "x": -7.592431672774924,
+            "z": -3.685138658885973,
+            "radius": 0.682120185656585
+          },
+          {
+            "x": -8.134937009833031,
+            "z": -2.4002750476824817,
+            "radius": 0.5988334355939491
+          },
+          {
+            "x": -4.714947126589726,
+            "z": 11.488899368037377,
+            "radius": 1.4021087005940347
+          },
+          {
+            "x": -5.303961027001054,
+            "z": 11.577615978454814,
+            "radius": 0.6739520589950979
+          },
+          {
+            "x": -6.113082982940736,
+            "z": 10.990102341296247,
+            "radius": 0.525266986658114
+          },
+          {
+            "x": -5.08605584238375,
+            "z": 20.07306771350379,
+            "radius": 1.3912114352092253
+          },
+          {
+            "x": -6.460354570803496,
+            "z": 20.23360440817997,
+            "radius": 0.4656095601484269
+          },
+          {
+            "x": -4.957670564426667,
+            "z": 19.004817441482857,
+            "radius": 0.5845337504973018
+          },
+          {
+            "x": -6.962208064812631,
+            "z": 28.246199793504736,
+            "radius": 1.9531125755730203
+          },
+          {
+            "x": -8.29490829735261,
+            "z": 29.37590636618054,
+            "radius": 0.5290974407280772
+          },
+          {
+            "x": -6.740420228948478,
+            "z": 29.053197075103594,
+            "radius": 0.49457395635784973
+          }
+        ],
+        "boatRockBoundary": "oriented ellipse (1m half-width, 2.1m half-length) expanded by each solid rock radius; no rigid-body contact",
+        "undergrowthPockets": 104,
+        "visibleUndergrowthPockets": 84,
+        "totalBroadLeaves": 728,
+        "visibleBroadLeaves": 582,
+        "weather": "clear",
+        "hour": 15,
+        "windStrength": 1,
+        "water": "view-distance filtered procedural ripples; sky HDR reflection; no scene refraction",
+        "assets": "original procedural mesh and existing CC0 sand/stone maps",
+        "visiblePalms": 30,
+        "totalPalms": 50,
+        "grassInstances": 1440,
+        "waterState": {
+          "roughWeather": 0,
+          "light": 0.7071067811865476,
+          "skyReflection": true,
+          "animationTime": 0.675
+        }
+      },
+      "exploration": {
+        "distance": 7.23,
+        "steps": 56,
+        "renderCount": 139,
+        "drawCalls": 65,
+        "triangles": 153917,
+        "pixelRatio": 1
+      },
+      "rules": {
+        "transmission": {
+          "clear": 1,
+          "cloud": 0.45,
+          "rain": 0.2,
+          "storm": 0.12
+        },
+        "solar": "optional illustrative daylight*transmission*100",
+        "water": "optional illustrative min(100,30+rainIncrement+density)"
+      },
+      "reference": {
+        "workflow": "Native Three.js environment integration",
+        "assets": "Original detailed procedural geometry, Poly Haven CC0 photographed PBR and HDR sky"
+      }
+    },
+    "released": {
+      "weather": "clear",
+      "hour": 15,
+      "density": 24,
+      "running": false,
+      "time": 0.675,
+      "visited": [
+        "solar"
+      ],
+      "selected": "solar",
+      "solar": 71,
+      "water": 54,
+      "renderer": "webgl",
+      "fireLit": true,
+      "boatBoarded": true,
+      "boatHeading": 4.338592653589789,
+      "boatSpeed": 0,
+      "boatDistance": 7.230060000000009,
+      "boatBlocked": false,
+      "boatBlockedBy": null,
+      "boatSteeringBlocked": false,
+      "interactions": [
+        {
+          "action": "board-boat",
+          "at": 0.675
+        }
+      ],
+      "arrivalLog": [
+        {
+          "id": "solar",
+          "position": {
+            "x": -12,
+            "z": 3
+          },
+          "at": 0.68
+        }
+      ],
+      "boat": {
+        "x": -8.269191403361962,
+        "z": 9.640072582150651,
+        "heading": 4.338592653589789,
+        "speed": 0,
+        "distance": 7.23,
+        "blocked": false
+      },
+      "weatherName": "晴天",
+      "mode": "first-person",
+      "camera": {
+        "x": -8.269191403361962,
+        "z": 9.640072582150651,
+        "yaw": 4.338592653589789,
+        "pitch": -0.13
+      },
+      "cameraWorld": {
+        "x": -9.246686614531708,
+        "y": 1.2305248466893906,
+        "z": 9.25666273337233
+      },
+      "boatView": {
+        "mode": "seated",
+        "eyeHeight": 1.1,
+        "lookOffset": 0,
+        "headingIndependentOfLook": true
+      },
+      "camper": {
+        "x": -8.269191403361962,
+        "z": 9.640072582150651
+      },
+      "environmentDetail": {
+        "shoreline": "continuous damp-sand and pebble transition",
+        "shoreLength": 72,
+        "wetSandWidth": 3.36,
+        "wetSandRoughness": 0.63,
+        "rockCount": 24,
+        "pebbleInstances": 170,
+        "solidRockColliders": 24,
+        "shoreRocks": [
+          {
+            "x": -5.207636708888082,
+            "z": -30.955041554807725,
+            "radius": 1.577669443001663
+          },
+          {
+            "x": -5.338645660003513,
+            "z": -30.949027399485026,
+            "radius": 1.1015227539516266
+          },
+          {
+            "x": -6.05733234116858,
+            "z": -29.12605237609339,
+            "radius": 0.4730797858471794
+          },
+          {
+            "x": -5.990951328458069,
+            "z": -21.95199984801188,
+            "radius": 1.8463816513366826
+          },
+          {
+            "x": -7.266357338977229,
+            "z": -22.16608737843678,
+            "radius": 0.5836810401302586
+          },
+          {
+            "x": -5.509755064577417,
+            "z": -21.919641836657785,
+            "radius": 0.8198605462870192
+          },
+          {
+            "x": -7.824227019590734,
+            "z": -16.694973301324037,
+            "radius": 1.6514991438682183
+          },
+          {
+            "x": -7.145282608202187,
+            "z": -16.92858891601543,
+            "radius": 0.501877071427067
+          },
+          {
+            "x": -7.997643936033226,
+            "z": -15.020537587181234,
+            "radius": 0.4911963176645304
+          },
+          {
+            "x": -6.525739559230102,
+            "z": -8.665906285555947,
+            "radius": 1.9726902575722804
+          },
+          {
+            "x": -7.115826233724851,
+            "z": -9.496354367859992,
+            "radius": 0.8687811671912494
+          },
+          {
+            "x": -6.391047484746196,
+            "z": -8.624666119669254,
+            "radius": 0.5661454064903273
+          },
+          {
+            "x": -7.407715858086946,
+            "z": -2.446311424250073,
+            "radius": 1.9391814105950123
+          },
+          {
+            "x": -7.592431672774924,
+            "z": -3.685138658885973,
+            "radius": 0.682120185656585
+          },
+          {
+            "x": -8.134937009833031,
+            "z": -2.4002750476824817,
+            "radius": 0.5988334355939491
+          },
+          {
+            "x": -4.714947126589726,
+            "z": 11.488899368037377,
+            "radius": 1.4021087005940347
+          },
+          {
+            "x": -5.303961027001054,
+            "z": 11.577615978454814,
+            "radius": 0.6739520589950979
+          },
+          {
+            "x": -6.113082982940736,
+            "z": 10.990102341296247,
+            "radius": 0.525266986658114
+          },
+          {
+            "x": -5.08605584238375,
+            "z": 20.07306771350379,
+            "radius": 1.3912114352092253
+          },
+          {
+            "x": -6.460354570803496,
+            "z": 20.23360440817997,
+            "radius": 0.4656095601484269
+          },
+          {
+            "x": -4.957670564426667,
+            "z": 19.004817441482857,
+            "radius": 0.5845337504973018
+          },
+          {
+            "x": -6.962208064812631,
+            "z": 28.246199793504736,
+            "radius": 1.9531125755730203
+          },
+          {
+            "x": -8.29490829735261,
+            "z": 29.37590636618054,
+            "radius": 0.5290974407280772
+          },
+          {
+            "x": -6.740420228948478,
+            "z": 29.053197075103594,
+            "radius": 0.49457395635784973
+          }
+        ],
+        "boatRockBoundary": "oriented ellipse (1m half-width, 2.1m half-length) expanded by each solid rock radius; no rigid-body contact",
+        "undergrowthPockets": 104,
+        "visibleUndergrowthPockets": 84,
+        "totalBroadLeaves": 728,
+        "visibleBroadLeaves": 582,
+        "weather": "clear",
+        "hour": 15,
+        "windStrength": 1,
+        "water": "view-distance filtered procedural ripples; sky HDR reflection; no scene refraction",
+        "assets": "original procedural mesh and existing CC0 sand/stone maps",
+        "visiblePalms": 30,
+        "totalPalms": 50,
+        "grassInstances": 1440,
+        "waterState": {
+          "roughWeather": 0,
+          "light": 0.7071067811865476,
+          "skyReflection": true,
+          "animationTime": 0.675
+        }
+      },
+      "exploration": {
+        "distance": 7.23,
+        "steps": 56,
+        "renderCount": 141,
+        "drawCalls": 65,
+        "triangles": 153917,
+        "pixelRatio": 1
+      },
+      "rules": {
+        "transmission": {
+          "clear": 1,
+          "cloud": 0.45,
+          "rain": 0.2,
+          "storm": 0.12
+        },
+        "solar": "optional illustrative daylight*transmission*100",
+        "water": "optional illustrative min(100,30+rainIncrement+density)"
+      },
+      "reference": {
+        "workflow": "Native Three.js environment integration",
+        "assets": "Original detailed procedural geometry, Poly Haven CC0 photographed PBR and HDR sky"
+      }
+    },
+    "turnBlocked": {
+      "weather": "clear",
+      "hour": 15,
+      "density": 24,
+      "running": false,
+      "time": 0.675,
+      "visited": [
+        "solar"
+      ],
+      "selected": "solar",
+      "solar": 71,
+      "water": 54,
+      "renderer": "webgl",
+      "fireLit": true,
+      "boatBoarded": true,
+      "boatHeading": 4.338592653589789,
+      "boatSpeed": 0,
+      "boatDistance": 7.230060000000009,
+      "boatBlocked": true,
+      "boatBlockedBy": "岸边岩石",
+      "boatSteeringBlocked": true,
+      "interactions": [
+        {
+          "action": "board-boat",
+          "at": 0.675
+        }
+      ],
+      "arrivalLog": [
+        {
+          "id": "solar",
+          "position": {
+            "x": -12,
+            "z": 3
+          },
+          "at": 0.68
+        }
+      ],
+      "boat": {
+        "x": -8.269191403361962,
+        "z": 9.640072582150651,
+        "heading": 4.338592653589789,
+        "speed": 0,
+        "distance": 7.23,
+        "blocked": true
+      },
+      "weatherName": "晴天",
+      "mode": "first-person",
+      "camera": {
+        "x": -8.269191403361962,
+        "z": 9.640072582150651,
+        "yaw": 4.664992555933537,
+        "pitch": -0.13
+      },
+      "cameraWorld": {
+        "x": -9.246686614531708,
+        "y": 1.2305248466893906,
+        "z": 9.25666273337233
+      },
+      "boatView": {
+        "mode": "seated",
+        "eyeHeight": 1.1,
+        "lookOffset": 0.3263999023437485,
+        "headingIndependentOfLook": true
+      },
+      "camper": {
+        "x": -8.269191403361962,
+        "z": 9.640072582150651
+      },
+      "environmentDetail": {
+        "shoreline": "continuous damp-sand and pebble transition",
+        "shoreLength": 72,
+        "wetSandWidth": 3.36,
+        "wetSandRoughness": 0.63,
+        "rockCount": 24,
+        "pebbleInstances": 170,
+        "solidRockColliders": 24,
+        "shoreRocks": [
+          {
+            "x": -5.207636708888082,
+            "z": -30.955041554807725,
+            "radius": 1.577669443001663
+          },
+          {
+            "x": -5.338645660003513,
+            "z": -30.949027399485026,
+            "radius": 1.1015227539516266
+          },
+          {
+            "x": -6.05733234116858,
+            "z": -29.12605237609339,
+            "radius": 0.4730797858471794
+          },
+          {
+            "x": -5.990951328458069,
+            "z": -21.95199984801188,
+            "radius": 1.8463816513366826
+          },
+          {
+            "x": -7.266357338977229,
+            "z": -22.16608737843678,
+            "radius": 0.5836810401302586
+          },
+          {
+            "x": -5.509755064577417,
+            "z": -21.919641836657785,
+            "radius": 0.8198605462870192
+          },
+          {
+            "x": -7.824227019590734,
+            "z": -16.694973301324037,
+            "radius": 1.6514991438682183
+          },
+          {
+            "x": -7.145282608202187,
+            "z": -16.92858891601543,
+            "radius": 0.501877071427067
+          },
+          {
+            "x": -7.997643936033226,
+            "z": -15.020537587181234,
+            "radius": 0.4911963176645304
+          },
+          {
+            "x": -6.525739559230102,
+            "z": -8.665906285555947,
+            "radius": 1.9726902575722804
+          },
+          {
+            "x": -7.115826233724851,
+            "z": -9.496354367859992,
+            "radius": 0.8687811671912494
+          },
+          {
+            "x": -6.391047484746196,
+            "z": -8.624666119669254,
+            "radius": 0.5661454064903273
+          },
+          {
+            "x": -7.407715858086946,
+            "z": -2.446311424250073,
+            "radius": 1.9391814105950123
+          },
+          {
+            "x": -7.592431672774924,
+            "z": -3.685138658885973,
+            "radius": 0.682120185656585
+          },
+          {
+            "x": -8.134937009833031,
+            "z": -2.4002750476824817,
+            "radius": 0.5988334355939491
+          },
+          {
+            "x": -4.714947126589726,
+            "z": 11.488899368037377,
+            "radius": 1.4021087005940347
+          },
+          {
+            "x": -5.303961027001054,
+            "z": 11.577615978454814,
+            "radius": 0.6739520589950979
+          },
+          {
+            "x": -6.113082982940736,
+            "z": 10.990102341296247,
+            "radius": 0.525266986658114
+          },
+          {
+            "x": -5.08605584238375,
+            "z": 20.07306771350379,
+            "radius": 1.3912114352092253
+          },
+          {
+            "x": -6.460354570803496,
+            "z": 20.23360440817997,
+            "radius": 0.4656095601484269
+          },
+          {
+            "x": -4.957670564426667,
+            "z": 19.004817441482857,
+            "radius": 0.5845337504973018
+          },
+          {
+            "x": -6.962208064812631,
+            "z": 28.246199793504736,
+            "radius": 1.9531125755730203
+          },
+          {
+            "x": -8.29490829735261,
+            "z": 29.37590636618054,
+            "radius": 0.5290974407280772
+          },
+          {
+            "x": -6.740420228948478,
+            "z": 29.053197075103594,
+            "radius": 0.49457395635784973
+          }
+        ],
+        "boatRockBoundary": "oriented ellipse (1m half-width, 2.1m half-length) expanded by each solid rock radius; no rigid-body contact",
+        "undergrowthPockets": 104,
+        "visibleUndergrowthPockets": 84,
+        "totalBroadLeaves": 728,
+        "visibleBroadLeaves": 582,
+        "weather": "clear",
+        "hour": 15,
+        "windStrength": 1,
+        "water": "view-distance filtered procedural ripples; sky HDR reflection; no scene refraction",
+        "assets": "original procedural mesh and existing CC0 sand/stone maps",
+        "visiblePalms": 30,
+        "totalPalms": 50,
+        "grassInstances": 1440,
+        "waterState": {
+          "roughWeather": 0,
+          "light": 0.7071067811865476,
+          "skyReflection": true,
+          "animationTime": 0.675
+        }
+      },
+      "exploration": {
+        "distance": 7.23,
+        "steps": 56,
+        "renderCount": 148,
+        "drawCalls": 90,
+        "triangles": 183961,
+        "pixelRatio": 1
+      },
+      "rules": {
+        "transmission": {
+          "clear": 1,
+          "cloud": 0.45,
+          "rain": 0.2,
+          "storm": 0.12
+        },
+        "solar": "optional illustrative daylight*transmission*100",
+        "water": "optional illustrative min(100,30+rainIncrement+density)"
+      },
+      "reference": {
+        "workflow": "Native Three.js environment integration",
+        "assets": "Original detailed procedural geometry, Poly Haven CC0 photographed PBR and HDR sky"
+      }
+    },
+    "turnHeld": {
+      "weather": "clear",
+      "hour": 15,
+      "density": 24,
+      "running": false,
+      "time": 0.675,
+      "visited": [
+        "solar"
+      ],
+      "selected": "solar",
+      "solar": 71,
+      "water": 54,
+      "renderer": "webgl",
+      "fireLit": true,
+      "boatBoarded": true,
+      "boatHeading": 4.338592653589789,
+      "boatSpeed": 0,
+      "boatDistance": 7.230060000000009,
+      "boatBlocked": true,
+      "boatBlockedBy": "岸边岩石",
+      "boatSteeringBlocked": true,
+      "interactions": [
+        {
+          "action": "board-boat",
+          "at": 0.675
+        }
+      ],
+      "arrivalLog": [
+        {
+          "id": "solar",
+          "position": {
+            "x": -12,
+            "z": 3
+          },
+          "at": 0.68
+        }
+      ],
+      "boat": {
+        "x": -8.269191403361962,
+        "z": 9.640072582150651,
+        "heading": 4.338592653589789,
+        "speed": 0,
+        "distance": 7.23,
+        "blocked": true
+      },
+      "weatherName": "晴天",
+      "mode": "first-person",
+      "camera": {
+        "x": -8.269191403361962,
+        "z": 9.640072582150651,
+        "yaw": 4.664992555933537,
+        "pitch": -0.13
+      },
+      "cameraWorld": {
+        "x": -9.246686614531708,
+        "y": 1.2305248466893906,
+        "z": 9.25666273337233
+      },
+      "boatView": {
+        "mode": "seated",
+        "eyeHeight": 1.1,
+        "lookOffset": 0.3263999023437485,
+        "headingIndependentOfLook": true
+      },
+      "camper": {
+        "x": -8.269191403361962,
+        "z": 9.640072582150651
+      },
+      "environmentDetail": {
+        "shoreline": "continuous damp-sand and pebble transition",
+        "shoreLength": 72,
+        "wetSandWidth": 3.36,
+        "wetSandRoughness": 0.63,
+        "rockCount": 24,
+        "pebbleInstances": 170,
+        "solidRockColliders": 24,
+        "shoreRocks": [
+          {
+            "x": -5.207636708888082,
+            "z": -30.955041554807725,
+            "radius": 1.577669443001663
+          },
+          {
+            "x": -5.338645660003513,
+            "z": -30.949027399485026,
+            "radius": 1.1015227539516266
+          },
+          {
+            "x": -6.05733234116858,
+            "z": -29.12605237609339,
+            "radius": 0.4730797858471794
+          },
+          {
+            "x": -5.990951328458069,
+            "z": -21.95199984801188,
+            "radius": 1.8463816513366826
+          },
+          {
+            "x": -7.266357338977229,
+            "z": -22.16608737843678,
+            "radius": 0.5836810401302586
+          },
+          {
+            "x": -5.509755064577417,
+            "z": -21.919641836657785,
+            "radius": 0.8198605462870192
+          },
+          {
+            "x": -7.824227019590734,
+            "z": -16.694973301324037,
+            "radius": 1.6514991438682183
+          },
+          {
+            "x": -7.145282608202187,
+            "z": -16.92858891601543,
+            "radius": 0.501877071427067
+          },
+          {
+            "x": -7.997643936033226,
+            "z": -15.020537587181234,
+            "radius": 0.4911963176645304
+          },
+          {
+            "x": -6.525739559230102,
+            "z": -8.665906285555947,
+            "radius": 1.9726902575722804
+          },
+          {
+            "x": -7.115826233724851,
+            "z": -9.496354367859992,
+            "radius": 0.8687811671912494
+          },
+          {
+            "x": -6.391047484746196,
+            "z": -8.624666119669254,
+            "radius": 0.5661454064903273
+          },
+          {
+            "x": -7.407715858086946,
+            "z": -2.446311424250073,
+            "radius": 1.9391814105950123
+          },
+          {
+            "x": -7.592431672774924,
+            "z": -3.685138658885973,
+            "radius": 0.682120185656585
+          },
+          {
+            "x": -8.134937009833031,
+            "z": -2.4002750476824817,
+            "radius": 0.5988334355939491
+          },
+          {
+            "x": -4.714947126589726,
+            "z": 11.488899368037377,
+            "radius": 1.4021087005940347
+          },
+          {
+            "x": -5.303961027001054,
+            "z": 11.577615978454814,
+            "radius": 0.6739520589950979
+          },
+          {
+            "x": -6.113082982940736,
+            "z": 10.990102341296247,
+            "radius": 0.525266986658114
+          },
+          {
+            "x": -5.08605584238375,
+            "z": 20.07306771350379,
+            "radius": 1.3912114352092253
+          },
+          {
+            "x": -6.460354570803496,
+            "z": 20.23360440817997,
+            "radius": 0.4656095601484269
+          },
+          {
+            "x": -4.957670564426667,
+            "z": 19.004817441482857,
+            "radius": 0.5845337504973018
+          },
+          {
+            "x": -6.962208064812631,
+            "z": 28.246199793504736,
+            "radius": 1.9531125755730203
+          },
+          {
+            "x": -8.29490829735261,
+            "z": 29.37590636618054,
+            "radius": 0.5290974407280772
+          },
+          {
+            "x": -6.740420228948478,
+            "z": 29.053197075103594,
+            "radius": 0.49457395635784973
+          }
+        ],
+        "boatRockBoundary": "oriented ellipse (1m half-width, 2.1m half-length) expanded by each solid rock radius; no rigid-body contact",
+        "undergrowthPockets": 104,
+        "visibleUndergrowthPockets": 84,
+        "totalBroadLeaves": 728,
+        "visibleBroadLeaves": 582,
+        "weather": "clear",
+        "hour": 15,
+        "windStrength": 1,
+        "water": "view-distance filtered procedural ripples; sky HDR reflection; no scene refraction",
+        "assets": "original procedural mesh and existing CC0 sand/stone maps",
+        "visiblePalms": 30,
+        "totalPalms": 50,
+        "grassInstances": 1440,
+        "waterState": {
+          "roughWeather": 0,
+          "light": 0.7071067811865476,
+          "skyReflection": true,
+          "animationTime": 0.675
+        }
+      },
+      "exploration": {
+        "distance": 7.23,
+        "steps": 56,
+        "renderCount": 156,
+        "drawCalls": 90,
+        "triangles": 183961,
+        "pixelRatio": 1
+      },
+      "rules": {
+        "transmission": {
+          "clear": 1,
+          "cloud": 0.45,
+          "rain": 0.2,
+          "storm": 0.12
+        },
+        "solar": "optional illustrative daylight*transmission*100",
+        "water": "optional illustrative min(100,30+rainIncrement+density)"
+      },
+      "reference": {
+        "workflow": "Native Three.js environment integration",
+        "assets": "Original detailed procedural geometry, Poly Haven CC0 photographed PBR and HDR sky"
+      }
+    }
+  },
+  "samples": [
+    {
+      "x": -8.45016765960139,
+      "z": 9.569086987291124,
+      "heading": 4.338592653589789,
+      "speed": 0.14,
+      "blockedBy": null,
+      "boundary": 1.1482599136831435
+    },
+    {
+      "x": -8.438102575852096,
+      "z": 9.573819360281759,
+      "heading": 4.338592653589789,
+      "speed": 0.29,
+      "blockedBy": null,
+      "boundary": 1.1381502848348741
+    },
+    {
+      "x": -8.420004950228153,
+      "z": 9.580917919767712,
+      "heading": 4.338592653589789,
+      "speed": 0.43,
+      "blockedBy": null,
+      "boundary": 1.1230772306447705
+    },
+    {
+      "x": -8.395874782729562,
+      "z": 9.590382665748983,
+      "heading": 4.338592653589789,
+      "speed": 0.58,
+      "blockedBy": null,
+      "boundary": 1.1031504180115985
+    },
+    {
+      "x": -8.365712073356324,
+      "z": 9.602213598225571,
+      "heading": 4.338592653589789,
+      "speed": 0.72,
+      "blockedBy": null,
+      "boundary": 1.0785160694670408
+    },
+    {
+      "x": -8.329516822108438,
+      "z": 9.616410717197477,
+      "heading": 4.338592653589789,
+      "speed": 0.86,
+      "blockedBy": null,
+      "boundary": 1.0493569631757032
+    },
+    {
+      "x": -8.287289028985905,
+      "z": 9.6329740226647,
+      "heading": 4.338592653589789,
+      "speed": 1.01,
+      "blockedBy": null,
+      "boundary": 1.0158924329351116
+    },
+    {
+      "x": -8.287289028985905,
+      "z": 9.6329740226647,
+      "heading": 4.338592653589789,
+      "speed": 0,
+      "blockedBy": "岸边岩石",
+      "boundary": 1.0158924329351116
+    },
+    {
+      "x": -8.281256487111257,
+      "z": 9.635340209160017,
+      "heading": 4.338592653589789,
+      "speed": 0.14,
+      "blockedBy": null,
+      "boundary": 1.011160526601779
+    },
+    {
+      "x": -8.269191403361962,
+      "z": 9.640072582150651,
+      "heading": 4.338592653589789,
+      "speed": 0.29,
+      "blockedBy": null,
+      "boundary": 1.001733269568035
+    },
+    {
+      "x": -8.269191403361962,
+      "z": 9.640072582150651,
+      "heading": 4.338592653589789,
+      "speed": 0,
+      "blockedBy": "岸边岩石",
+      "boundary": 1.001733269568035
+    },
+    {
+      "x": -8.269191403361962,
+      "z": 9.640072582150651,
+      "heading": 4.338592653589789,
+      "speed": 0,
+      "blockedBy": "岸边岩石",
+      "boundary": 1.001733269568035
+    },
+    {
+      "x": -8.269191403361962,
+      "z": 9.640072582150651,
+      "heading": 4.338592653589789,
+      "speed": 0,
+      "blockedBy": "岸边岩石",
+      "boundary": 1.001733269568035
+    },
+    {
+      "x": -8.269191403361962,
+      "z": 9.640072582150651,
+      "heading": 4.338592653589789,
+      "speed": 0,
+      "blockedBy": "岸边岩石",
+      "boundary": 1.001733269568035
+    },
+    {
+      "x": -8.269191403361962,
+      "z": 9.640072582150651,
+      "heading": 4.338592653589789,
+      "speed": 0,
+      "blockedBy": "岸边岩石",
+      "boundary": 1.001733269568035
+    },
+    {
+      "x": -8.269191403361962,
+      "z": 9.640072582150651,
+      "heading": 4.338592653589789,
+      "speed": 0,
+      "blockedBy": "岸边岩石",
+      "boundary": 1.001733269568035
+    },
+    {
+      "x": -8.269191403361962,
+      "z": 9.640072582150651,
+      "heading": 4.338592653589789,
+      "speed": 0,
+      "blockedBy": "岸边岩石",
+      "boundary": 1.001733269568035
+    },
+    {
+      "x": -8.269191403361962,
+      "z": 9.640072582150651,
+      "heading": 4.338592653589789,
+      "speed": 0,
+      "blockedBy": "岸边岩石",
+      "boundary": 1.001733269568035
+    },
+    {
+      "x": -8.269191403361962,
+      "z": 9.640072582150651,
+      "heading": 4.338592653589789,
+      "speed": 0,
+      "blockedBy": "岸边岩石",
+      "boundary": 1.001733269568035
+    },
+    {
+      "x": -8.269191403361962,
+      "z": 9.640072582150651,
+      "heading": 4.338592653589789,
+      "speed": 0,
+      "blockedBy": "岸边岩石",
+      "boundary": 1.001733269568035
+    },
+    {
+      "x": -8.269191403361962,
+      "z": 9.640072582150651,
+      "heading": 4.338592653589789,
+      "speed": 0,
+      "blockedBy": null,
+      "boundary": 1.001733269568035
+    }
+  ]
+}

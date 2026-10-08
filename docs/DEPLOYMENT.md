@@ -162,3 +162,12 @@ GitHub Pages 不运行 Python、Node.js 等后端，也不能从浏览器直接�
 `scripts/insightface_publish.py` 发布九个正式运行文件并生成清单，全文由项目 `scripts/build_web.py` 从 README 与笔记生成；原站、六种产品 / 开源方案和全部十四组来源均有明确入口。首次内容提交 `95d0d3e458362b64d72f66b2589c6f1889ac10a4` 的 [Pages 检查、构建与部署](https://github.com/yydshly/0930_codex_project/actions/runs/37768632806)成功。九个文件 HTTP 200、大小及哈希与本地构建一致，十三个总首页 / 既有项目 / 新入口可访问，63 项公网浏览器检查全部通过。
 
 详情：[发布范围](../projects/013-insightface-retrieval/notes/publication.md)、[文件核对](../projects/013-insightface-retrieval/notes/deployment-checks.json)、[线上浏览器检查](../projects/013-insightface-retrieval/notes/publication-browser-online.json)和[发布摘要](../projects/013-insightface-retrieval/notes/deployment-summary.json)。检查的是资料完整性与页面交互，真实识别效果和商业收益仍未实测。
+
+
+## 十项创意效果库完整发布
+
+2026-10-08：第 015 项整理为完整入口与静态全文理解页，显著列出十项真实画面、原作对照、独立演示、十位作者原帖、原有总览 PNG / SVG、资料源码、配乐样片、Python / Blender 配方和额外 ARC 实验。摘要按定位、效果、原理、交付、展示、价值、扩展与边界展开。
+
+沿用 2026-10-03 的 3600 × 6640 引导图，PNG 字节与此前生成结果一致。所有运行资源由 `scripts/creative_publish.py` 按项目 `publication-files.json` 的精确路径发布，生成 `publication-manifest.json` 中的大小与 SHA-256。研究笔记、历史截图、源代码和逐项验收一并保存到项目 Git 目录；公开站点只发布所登记的运行资源。
+
+当前为十项独立前端原型，05 / 07 / 09 / 10 为 v16，其余六项为 v15。CSS / Canvas / Three.js 与 Web Audio 提供实际效果，无 Opus API 或模型生成服务。原作者媒体按点击联网加载；WebCodecs 音乐导出需要支持的浏览器与 HTTPS。Blender 新造型、完整物理与商业成效仍未验证。

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-02T23:25:01.669Z",
+  "caseId": 5,
+  "product": "第一人称情境训练工具",
+  "task": "观察进攻姿态，移动避开挥击，再瞄准射击并完成波次。",
+  "state": {
+    "module": "defense",
+    "status": "playing",
+    "running": true,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 95,
+      "triangles": 71174,
+      "pixelRatio": 0.7818,
+      "defaultPixelRatio": 1,
+      "qualityPolicy": "active longest side at most 960px; ready, paused and finished restore default DPR",
+      "canvasPixels": {
+        "width": 960,
+        "height": 414
+      },
+      "interactiveResolutionLimit": 960,
+      "staticDrawCallsSaved": 354
+    },
+    "wave": 1,
+    "totalWaves": 3,
+    "health": 100,
+    "ammo": 11,
+    "reloading": false,
+    "kills": 0,
+    "shots": 1,
+    "hits": 1,
+    "attacks": 0,
+    "dodgedAttacks": 0,
+    "incomingHits": 0,
+    "attackTiming": {
+      "clock": "wall-clock",
+      "reactionStart": "after first warning draw; active wall clock excludes hidden intervals",
+      "maxIntegrationStep": 0.008333333333333333,
+      "trigger": 1.45,
+      "reach": 1.6,
+      "frontDot": 0.45,
+      "windup": 0.85,
+      "strike": 0.22,
+      "recovery": 0.9
+    },
+    "elapsed": 4,
+    "feedback": {
+      "canFire": true,
+      "lastShotResult": "hit",
+      "hitConfirmed": false,
+      "damageCue": false,
+      "lastImpact": {
+        "x": -2.51,
+        "y": 1.14,
+        "z": -7.4
+      }
+    },
+    "player": {
+      "x": 0,
+      "z": 6,
+      "yaw": -0.185,
+      "pitch": -0.041
+    },
+    "enemies": [
+      {
+        "id": 1,
+        "x": -2.39,
+        "z": -6.77,
+        "hp": 1,
+        "attack": {
+          "phase": "pursuit",
+          "phaseElapsed": 0,
+          "cycle": 0,
+          "lockedYaw": 0.185,
+          "lastResult": null,
+          "lastDistance": null,
+          "visibleWindupWallSeconds": null
+        }
+      },
+      {
+        "id": 2,
+        "x": 2.81,
+        "z": -9,
+        "hp": 2,
+        "attack": {
+          "phase": "pursuit",
+          "phaseElapsed": 0,
+          "cycle": 0,
+          "lockedYaw": -0.185,
+          "lastResult": null,
+          "lastDistance": null,
+          "visibleWindupWallSeconds": null
+        }
+      }
+    ],
+    "scope": "Original FPS room and robots. No COD code/assets ported. Ray hits, simple pursuit, telegraphed directional melee with range-checked strike, cover collision, three waves. Active play is limited to 960px; ready/paused/finished restore default clarity.",
+    "log": [
+      {
+        "time": 0,
+        "action": "波次开始",
+        "detail": 1
+      },
+      {
+        "time": 2.9,
+        "action": "射击命中",
+        "detail": 1
+      }
+    ]
+  },
+  "source": "https://x.com/p_e_cooper/status/2104980433972703483",
+  "reference": {
+    "focus": "第一人称房间生存：瞄准、移动、敌人靠近和波次资源形成实时闭环。",
+    "evidence": "作者自述将经典 Zombies 地图移植到浏览器；原片展示第一人称室内场景。",
+    "sourceTech": "源码迁移是作者自述；本项目没有原作源码与资产。",
+    "ours": "原创机房第一人称机器人生存关卡，移动、射击、波次与生命反馈。",
+    "tech": "本地 Three.js 第一人称镜头、Raycaster 射击，以及追逐、蓄势、挥击和恢复状态；挥击时按实际距离与前方夹角判断伤害，本例按真实时间以小步更新。",
+    "value": "用空间压力与资源限制做安防巡检、应急处置或设备操作训练。",
+    "check": "后退能使已蓄势的挥击落空；站在打击范围内会受伤，射击命中标记不与受伤提示混用，隐藏时暂停。",
+    "boundary": "近战过程、机器人与机房均为原创简化实现，参考第一人称室内生存效果；没有 COD 源码、资产、完整敌人系统或联机。",
+    "kernel": "机器人追近后停步蓄势并锁定方向，挥击时才检查命中，恢复后继续追逐；躲避、受伤和射线命中分别记录。"
+  },
+  "optimization": {
+    "caseId": 5,
+    "sourceTarget": "原视频室内第一人称生存通过敌人逼近、身体动作与受伤构成可判断威胁；参考可见的动作与反馈，不推断原作AI算法。",
+    "diagnosis": "上一轮已分清开枪、射线命中与受伤，但机器人只在距离阈值内按冷却直接扣血，没有蓄势或恢复。初次实测又发现慢帧让首个可见警示只剩约0.075秒反应时间。",
+    "priority": "把近身伤害变成可读、可躲避的蓄势→真实打击→恢复，并从警示首次绘制后保留反应窗口。",
+    "changes": [
+      "机器人进入近身范围后停步并锁定方向；双臂在首个蓄势画面就抬高、外展，挥击时收向前方，恢复后再继续追逐。没有改共享机械模型。",
+      "克制的暖色地面警示弧、胸部/眼部亮度与短机械提示对应蓄势；打击和恢复姿态不同，保持机房场景。",
+      "只有实际打击事件才检查水平距离≤1.6m和锁定前方扇区；命中仍扣12，退开或离开前方扇区会落空，每个机器人每个进攻周期只判一次。",
+      "蓄势计时在首次警示绘制后开始，并同时检查至少0.85秒的活动墙钟；暂停和隐藏不计入这个窗口。第05项使用独立≤1/120秒子步循环，每帧一次绘制和DOM同步。",
+      "保留真实射线、防护减少和三波规则；受伤边缘仍独立于枪口与命中确认，短提示按墙钟保留约0.8秒。导出包含相位、锁定朝向、真实判定距离与反应窗口。",
+      "本例运行期间将渲染最长边限制960px，待开始、暂停和结束恢复原DPR；scope/状态中写明该清晰度策略。"
+    ],
+    "verify": [
+      "实际蓄势时生命保持100；后退后机器人第1次挥击距离4.866m>1.6m，落空且生命仍100，随后实际进入恢复。",
+      "下一次留在范围内：距离1.444m、前方点积1，真实打击只判一次，生命100→88。",
+      "首次警示绘制到打击的排除暂停活动墙钟为1.019s（落空）和1.149s（命中）；相应活动模拟时间为0.854s、0.853s。",
+      "受伤没有触发射线命中标记；随后真实瞄准并射击，防护2→1，保存世界命中点。后续另一个机器人合法打击12，最终导出生命76，不是同一周期重复扣血。",
+      "实际下载保留蓄势、落空、打击和射线命中日志；隐藏1秒冻结生命及相位，恢复未重复旧打击；重置清空敌人、攻击计数、伤害与提示。",
+      "13/13项针对检查通过，无页面错误。Headless Chromium / SwiftShader 的126个活动rAF样本中位150ms，约6.7帧/秒；不能据此证明真机流畅。"
+    ],
+    "remaining": [
+      "近身判定仍是水平距离与前方扇区近似，没有逐机械臂碰撞、完整骨骼动画或原作敌人AI。",
+      "约0.85秒是至少保留的活动反应窗口，不是固定显示帧率承诺；慢渲染和采样使实际可观察打击间隔更长。",
+      "性能来自隔离的Windows Headless Chromium 151 / ANGLE Vulkan SwiftShader，未强制指定该渲染器；没有真机或新增手机性能测试。",
+      "本轮只验收新增进攻链与受影响的射线/暂停/导出/重置，没有重复整场三波胜利矩阵。"
+    ]
+  },
+  "scope": "原创关卡与简化近战判定；没有 COD 源码迁移、资产或联机。"
+}

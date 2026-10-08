@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-02T11:25:11.254Z",
+  "caseId": 7,
+  "product": "三维虚拟展会编辑器",
+  "task": "切换光线、环绕空间、选择并参观三个研究摊位。",
+  "state": {
+    "caseId": 7,
+    "time": "night",
+    "treeDensity": 14,
+    "selected": "research-notes",
+    "visits": [
+      {
+        "id": "visual-systems",
+        "title": "视觉系统展位",
+        "visitedAt": "2026-10-02T11:25:10.858Z"
+      },
+      {
+        "id": "product-lab",
+        "title": "产品原型展位",
+        "visitedAt": "2026-10-02T11:25:10.983Z"
+      },
+      {
+        "id": "research-notes",
+        "title": "研究档案展位",
+        "visitedAt": "2026-10-02T11:25:11.101Z"
+      }
+    ],
+    "view": {
+      "yaw": 0.4,
+      "elevation": 0.54,
+      "distance": 34
+    },
+    "renderer": "webgl",
+    "renderCount": 9
+  },
+  "source": "https://x.com/DODOREACH/status/2104821709891404194",
+  "scope": "我们的原创 Three.js 场景，不代表原作技术或完整游戏。"
+}

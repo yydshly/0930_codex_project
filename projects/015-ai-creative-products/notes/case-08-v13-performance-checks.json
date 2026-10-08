@@ -1,0 +1,683 @@
+{
+  "caseId": 8,
+  "date": "2026-10-03T00:20:09.329Z",
+  "baselineFile": "notes/case-08-v13-before-performance.json",
+  "afterFile": "notes/case-08-v13-after-performance.json",
+  "checks": [
+    {
+      "name": "three-closed-continuous-skins-preserved",
+      "pass": true,
+      "actual": [
+        {
+          "id": "rabbit",
+          "vertices": 9098,
+          "boundary": 0
+        },
+        {
+          "id": "dumpling",
+          "vertices": 7526,
+          "boundary": 0
+        },
+        {
+          "id": "cat",
+          "vertices": 8026,
+          "boundary": 0
+        }
+      ]
+    },
+    {
+      "name": "downloaded-contact-state-contains-merged-render-and-input-data",
+      "pass": true,
+      "actual": {
+        "rendering": {
+          "drawCalls": 16,
+          "triangles": 106354,
+          "pixelRatio": 0.7069,
+          "defaultPixelRatio": 1,
+          "canvasPixels": {
+            "width": 960,
+            "height": 367
+          },
+          "interactiveResolutionLimit": 960,
+          "attachmentBatches": 3,
+          "skinTriangles": 49288,
+          "attachmentTriangles": 28480,
+          "analyticNormals": true,
+          "drawUpdates": {
+            "submitted": 66,
+            "skipped": 73,
+            "lastGeometryMs": 0.09999999403953552,
+            "lastSubmitMs": 0.5
+          },
+          "staticDrawCallsSaved": 0
+        },
+        "input": {
+          "received": 28,
+          "applied": 28,
+          "coalesced": 0,
+          "flushedOnRelease": 0,
+          "pending": 0,
+          "mode": "one deformation update per animation frame, final pointer target flushed on release"
+        }
+      }
+    },
+    {
+      "name": "hidden-clock-and-input-stopped",
+      "pass": true,
+      "actual": {
+        "before": 18.4,
+        "after": 18.4,
+        "input": {
+          "received": 28,
+          "applied": 28,
+          "coalesced": 0,
+          "flushedOnRelease": 0,
+          "pending": 0,
+          "mode": "one deformation update per animation frame, final pointer target flushed on release"
+        }
+      }
+    },
+    {
+      "name": "resume-excludes-hidden-wall-gap",
+      "pass": true,
+      "actual": {
+        "before": 18.4,
+        "after": 18.5,
+        "wall": 0.425
+      }
+    },
+    {
+      "name": "real-head-drag-keeps-neck-ear-and-face-continuity",
+      "pass": true,
+      "actual": {
+        "id": "rabbit",
+        "name": "粉兔",
+        "height": 0,
+        "deformation": 0,
+        "localIndent": 0.143,
+        "activePart": "head",
+        "dragging": true,
+        "stretch": {
+          "x": 0.644,
+          "y": -0.086,
+          "z": 0.026
+        },
+        "deformedParts": [
+          "body",
+          "head",
+          "leftEar",
+          "leftHand",
+          "rightEar",
+          "rightHand"
+        ],
+        "vertexCount": 9098,
+        "surface": {
+          "type": "continuous-skin",
+          "boundaryEdges": 0,
+          "restVolume": 3.5416,
+          "volumeBeforeCompensation": 0.9812,
+          "volumeAfterCompensation": 1,
+          "transverseThicknessRatio": 0.9761,
+          "compensationCoefficient": 0.0656,
+          "minimumJacobian": 0.2961,
+          "regions": [
+            "body",
+            "head",
+            "leftEar",
+            "leftHand",
+            "leftFoot",
+            "rightEar",
+            "rightHand",
+            "rightFoot"
+          ]
+        }
+      }
+    },
+    {
+      "name": "same-task-input-coalesces-and-flushes-final-release-target",
+      "pass": true,
+      "method": "Trusted actual mouse down selects the real ray hit. Three synthetic same-task pointer moves and release exercise the queue boundary deterministically; state is captured in that same JS task before spring recovery. This fixture is separate from all trusted pointer performance measurements.",
+      "actual": {
+        "input": {
+          "received": 3,
+          "applied": 1,
+          "coalesced": 2,
+          "flushedOnRelease": 1,
+          "pending": 0,
+          "mode": "one deformation update per animation frame, final pointer target flushed on release"
+        },
+        "character": {
+          "id": "rabbit",
+          "name": "粉兔",
+          "height": 0,
+          "deformation": 0.076,
+          "localIndent": 0.143,
+          "activePart": "head",
+          "dragging": false,
+          "stretch": {
+            "x": 0.645,
+            "y": -0.077,
+            "z": 0.022
+          },
+          "deformedParts": [
+            "body",
+            "head",
+            "leftEar",
+            "leftHand",
+            "leftFoot",
+            "rightEar",
+            "rightHand",
+            "rightFoot"
+          ],
+          "vertexCount": 9098,
+          "surface": {
+            "type": "continuous-skin",
+            "boundaryEdges": 0,
+            "restVolume": 3.5416,
+            "volumeBeforeCompensation": 0.9728,
+            "volumeAfterCompensation": 1,
+            "transverseThicknessRatio": 1.0182,
+            "compensationCoefficient": 0.163,
+            "minimumJacobian": 0.952,
+            "regions": [
+              "body",
+              "head",
+              "leftEar",
+              "leftHand",
+              "leftFoot",
+              "rightEar",
+              "rightHand",
+              "rightFoot"
+            ]
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "mobile-selected-character-is-the-only-raycast-visible-model",
+      "pass": true,
+      "actual": {
+        "shown": [
+          "cat"
+        ],
+        "rendering": {
+          "drawCalls": 8,
+          "triangles": 33142,
+          "pixelRatio": 1,
+          "defaultPixelRatio": 1,
+          "canvasPixels": {
+            "width": 360,
+            "height": 450
+          },
+          "interactiveResolutionLimit": 960,
+          "attachmentBatches": 1,
+          "skinTriangles": 49288,
+          "attachmentTriangles": 28480,
+          "analyticNormals": true,
+          "drawUpdates": {
+            "submitted": 128,
+            "skipped": 108,
+            "lastGeometryMs": 0.30000001192092896,
+            "lastSubmitMs": 0.29999998211860657
+          },
+          "staticDrawCallsSaved": 0
+        }
+      }
+    },
+    {
+      "name": "mobile-poke-targets-selected-cat",
+      "pass": true,
+      "actual": {
+        "id": "cat",
+        "name": "薄荷猫",
+        "height": 0.667,
+        "deformation": 0.193,
+        "localIndent": 0.119,
+        "activePart": "body",
+        "dragging": false,
+        "stretch": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "deformedParts": [
+          "body",
+          "leftEar",
+          "rightEar"
+        ],
+        "vertexCount": 8026,
+        "surface": {
+          "type": "continuous-skin",
+          "boundaryEdges": 0,
+          "restVolume": 3.6863,
+          "volumeBeforeCompensation": 0.9651,
+          "volumeAfterCompensation": 1,
+          "transverseThicknessRatio": 1.0128,
+          "compensationCoefficient": 0.1127,
+          "minimumJacobian": 0.9713,
+          "regions": [
+            "body",
+            "leftEar",
+            "rightEar"
+          ]
+        }
+      }
+    },
+    {
+      "name": "390px-controls-do-not-overflow",
+      "pass": true,
+      "actual": {
+        "width": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "same-browser-environment-and-exact-interactive-pixel-budget",
+      "pass": true,
+      "actual": {
+        "before": {
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+          "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "viewport": {
+            "width": 1440,
+            "height": 1100
+          },
+          "dpr": 1
+        },
+        "after": {
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+          "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+          "viewport": {
+            "width": 1440,
+            "height": 1100
+          },
+          "dpr": 1
+        },
+        "pixels": {
+          "width": 960,
+          "height": 367
+        }
+      }
+    },
+    {
+      "name": "primary-skin-resolution-not-reduced",
+      "pass": true,
+      "actual": {
+        "before": [
+          9098,
+          7526,
+          8026
+        ],
+        "after": [
+          9098,
+          7526,
+          8026
+        ]
+      }
+    },
+    {
+      "name": "continuous-real-pointer-move-frame-time-improves",
+      "pass": true,
+      "actual": {
+        "before": {
+          "samples": 73,
+          "minMs": 299.9,
+          "medianMs": 333.3,
+          "p95Ms": 650,
+          "maxMs": 683.3
+        },
+        "after": {
+          "samples": 73,
+          "minMs": 16.6,
+          "medianMs": 200,
+          "p95Ms": 216.7,
+          "maxMs": 216.7
+        }
+      }
+    },
+    {
+      "name": "merged-attachments-reduce-triangles-and-calls",
+      "pass": true,
+      "actual": {
+        "before": {
+          "drawCalls": 92,
+          "triangles": 238642,
+          "pixelRatio": 0.7069,
+          "defaultPixelRatio": 1,
+          "canvasPixels": {
+            "width": 960,
+            "height": 367
+          },
+          "interactiveResolutionLimit": 960,
+          "staticDrawCallsSaved": 0
+        },
+        "after": {
+          "drawCalls": 16,
+          "triangles": 106354,
+          "pixelRatio": 0.7069,
+          "defaultPixelRatio": 1,
+          "canvasPixels": {
+            "width": 960,
+            "height": 367
+          },
+          "interactiveResolutionLimit": 960,
+          "attachmentBatches": 3,
+          "skinTriangles": 49288,
+          "attachmentTriangles": 28480,
+          "analyticNormals": true,
+          "drawUpdates": {
+            "submitted": 66,
+            "skipped": 65,
+            "lastGeometryMs": 0.09999999403953552,
+            "lastSubmitMs": 0.5
+          },
+          "staticDrawCallsSaved": 0
+        }
+      }
+    },
+    {
+      "name": "large-ear-drag-keeps-positive-sampled-jacobian-and-bounded-volume",
+      "pass": true,
+      "actual": {
+        "id": "rabbit",
+        "name": "粉兔",
+        "height": 0,
+        "deformation": 0,
+        "localIndent": 0.143,
+        "activePart": "rightEar",
+        "dragging": true,
+        "stretch": {
+          "x": 0.467,
+          "y": 0.374,
+          "z": -0.255
+        },
+        "deformedParts": [
+          "head",
+          "leftEar",
+          "rightEar"
+        ],
+        "vertexCount": 9098,
+        "surface": {
+          "type": "continuous-skin",
+          "boundaryEdges": 0,
+          "restVolume": 3.5416,
+          "volumeBeforeCompensation": 0.9979,
+          "volumeAfterCompensation": 1,
+          "transverseThicknessRatio": 0.9928,
+          "compensationCoefficient": 0.1033,
+          "minimumJacobian": 0.2705,
+          "regions": [
+            "body",
+            "head",
+            "leftEar",
+            "leftHand",
+            "leftFoot",
+            "rightEar",
+            "rightHand",
+            "rightFoot"
+          ]
+        }
+      }
+    },
+    {
+      "name": "other-characters-remain-uncontacted",
+      "pass": true,
+      "actual": [
+        {
+          "id": "dumpling",
+          "name": "橙团",
+          "height": 0,
+          "deformation": 0,
+          "localIndent": 0,
+          "activePart": null,
+          "dragging": false,
+          "stretch": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "deformedParts": [],
+          "vertexCount": 7526,
+          "surface": {
+            "type": "continuous-skin",
+            "boundaryEdges": 0,
+            "restVolume": 3.6027,
+            "volumeBeforeCompensation": 1,
+            "volumeAfterCompensation": 1,
+            "transverseThicknessRatio": 1,
+            "compensationCoefficient": 0,
+            "minimumJacobian": 1,
+            "regions": [
+              "body"
+            ]
+          }
+        },
+        {
+          "id": "cat",
+          "name": "薄荷猫",
+          "height": 0,
+          "deformation": 0,
+          "localIndent": 0,
+          "activePart": null,
+          "dragging": false,
+          "stretch": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "deformedParts": [],
+          "vertexCount": 8026,
+          "surface": {
+            "type": "continuous-skin",
+            "boundaryEdges": 0,
+            "restVolume": 3.6863,
+            "volumeBeforeCompensation": 1,
+            "volumeAfterCompensation": 1,
+            "transverseThicknessRatio": 1,
+            "compensationCoefficient": 0,
+            "minimumJacobian": 1,
+            "regions": [
+              "body",
+              "leftEar",
+              "rightEar"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "release-recovers-in-wall-time-and-rest-dpr",
+      "pass": true,
+      "actual": {
+        "recovery": 1059,
+        "rendering": {
+          "drawCalls": 16,
+          "triangles": 106354,
+          "pixelRatio": 1,
+          "defaultPixelRatio": 1,
+          "canvasPixels": {
+            "width": 1358,
+            "height": 520
+          },
+          "interactiveResolutionLimit": 960,
+          "attachmentBatches": 3,
+          "skinTriangles": 49288,
+          "attachmentTriangles": 28480,
+          "analyticNormals": true,
+          "drawUpdates": {
+            "submitted": 74,
+            "skipped": 77,
+            "lastGeometryMs": 18.900000005960464,
+            "lastSubmitMs": 2
+          },
+          "staticDrawCallsSaved": 0
+        }
+      }
+    },
+    {
+      "name": "no-page-errors",
+      "pass": true,
+      "actual": {
+        "before": [],
+        "after": []
+      }
+    },
+    {
+      "name": "analytic-field-preserves-old-normal-direction-within-0.2-degrees",
+      "pass": true,
+      "actual": {
+        "caseId": 8,
+        "samples": 2400,
+        "method": "Deterministic samples for rotated/scaled head and ear frames. Analytic field derivative compared with central difference at 1e-5; highlight normal compared with prior .002 central-difference rule. Mathematical derivative fixture only, not physical validation.",
+        "maxJacobianError": 3.4558953476704346e-9,
+        "maxOldStepJacobianError": 0.00013818081731131748,
+        "maxNormalAngleDegrees": 0.020956147386360115,
+        "pass": true
+      }
+    }
+  ],
+  "passed": 18,
+  "total": 18,
+  "performance": {
+    "condition": "One headless Chromium instance and one page, no concurrent project Chromium/WebGL QA. Before and after sequentially use the exact same browser build, viewport, DPR, unchanged assets and trusted Playwright pointer moves. Instrumentation times application geometry work and renderer API calls, not GPU fences.",
+    "before": {
+      "movingWallMs": 30680,
+      "moves": 24,
+      "events": 24,
+      "raf": {
+        "samples": 73,
+        "minMs": 299.9,
+        "medianMs": 333.3,
+        "p95Ms": 650,
+        "maxMs": 683.3
+      },
+      "pointerHandlers": {
+        "samples": 24,
+        "minMs": 13.4,
+        "medianMs": 16.1,
+        "p95Ms": 18.3,
+        "maxMs": 20.5
+      },
+      "geometry": {
+        "samples": 97,
+        "minMs": 9.5,
+        "medianMs": 12.8,
+        "p95Ms": 15.7,
+        "maxMs": 17
+      },
+      "renderSubmit": {
+        "samples": 97,
+        "minMs": 1.2,
+        "medianMs": 1.8,
+        "p95Ms": 3.3,
+        "maxMs": 4.1
+      },
+      "drawTotal": {
+        "samples": 97,
+        "minMs": 10.7,
+        "medianMs": 14.8,
+        "p95Ms": 18.2,
+        "maxMs": 20
+      },
+      "movingRendering": {
+        "drawCalls": 92,
+        "triangles": 238642,
+        "pixelRatio": 0.7069,
+        "defaultPixelRatio": 1,
+        "canvasPixels": {
+          "width": 960,
+          "height": 367
+        },
+        "interactiveResolutionLimit": 960,
+        "staticDrawCallsSaved": 0
+      }
+    },
+    "after": {
+      "movingWallMs": 9996,
+      "moves": 24,
+      "events": 24,
+      "raf": {
+        "samples": 73,
+        "minMs": 16.6,
+        "medianMs": 200,
+        "p95Ms": 216.7,
+        "maxMs": 216.7
+      },
+      "pointerHandlers": {
+        "samples": 24,
+        "minMs": 0,
+        "medianMs": 0.2,
+        "p95Ms": 0.4,
+        "maxMs": 0.5
+      },
+      "geometry": {
+        "samples": 48,
+        "minMs": 0,
+        "medianMs": 12.4,
+        "p95Ms": 15.2,
+        "maxMs": 16
+      },
+      "renderSubmit": {
+        "samples": 48,
+        "minMs": 0.5,
+        "medianMs": 1,
+        "p95Ms": 2,
+        "maxMs": 3.1
+      },
+      "drawTotal": {
+        "samples": 48,
+        "minMs": 0.6,
+        "medianMs": 13,
+        "p95Ms": 15.8,
+        "maxMs": 17
+      },
+      "movingRendering": {
+        "drawCalls": 16,
+        "triangles": 106354,
+        "pixelRatio": 0.7069,
+        "defaultPixelRatio": 1,
+        "canvasPixels": {
+          "width": 960,
+          "height": 367
+        },
+        "interactiveResolutionLimit": 960,
+        "attachmentBatches": 3,
+        "skinTriangles": 49288,
+        "attachmentTriangles": 28480,
+        "analyticNormals": true,
+        "drawUpdates": {
+          "submitted": 61,
+          "skipped": 29,
+          "lastGeometryMs": 0.09999999403953552,
+          "lastSubmitMs": 1.2000000178813934
+        },
+        "staticDrawCallsSaved": 0
+      }
+    }
+  },
+  "environment": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "viewport": {
+      "width": 1440,
+      "height": 1100
+    },
+    "dpr": 1
+  },
+  "repair": {
+    "reason": "The original asynchronous check read state after 1+ seconds of normal wall-clock spring recovery; queue counters correctly flushed, but stretch was already .005. Capture the release target in the same JS task.",
+    "previousCheck": {
+      "name": "same-task-input-coalesces-and-flushes-final-release-target",
+      "pass": false,
+      "actual": {
+        "received": 35,
+        "applied": 33,
+        "coalesced": 2,
+        "flushedOnRelease": 1,
+        "pending": 0,
+        "mode": "one deformation update per animation frame, final pointer target flushed on release"
+      }
+    }
+  }
+}

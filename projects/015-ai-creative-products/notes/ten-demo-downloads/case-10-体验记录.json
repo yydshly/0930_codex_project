@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-02T11:25:21.972Z",
+  "caseId": 10,
+  "product": "浏览器物理挑战工具",
+  "task": "控制车辆把球推入球门，调参数后再试一次。",
+  "state": {
+    "module": "soccer",
+    "status": "playing",
+    "running": true,
+    "score": 1,
+    "goal": 3,
+    "remaining": 57.2,
+    "elapsed": 2.8,
+    "friction": 93,
+    "restitution": 72,
+    "collisions": 2,
+    "car": {
+      "x": 210.35,
+      "y": 280,
+      "vx": 4.13,
+      "vy": 0,
+      "angle": 0
+    },
+    "ball": {
+      "x": 480,
+      "y": 150,
+      "vx": 0,
+      "vy": 0
+    },
+    "log": [
+      {
+        "time": 2.8,
+        "action": "进球",
+        "score": 1,
+        "friction": 20,
+        "restitution": 72
+      }
+    ]
+  },
+  "source": "https://x.com/BlendiByl/status/2104800823620632641",
+  "scope": "原创单人实验场，未接入多人联机或原游戏资产。"
+}

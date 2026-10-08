@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-10-02T23:25:35.076Z",
+  "renderEnvironment": "Headless Chromium, ANGLE SwiftShader; not physical-device performance evidence",
+  "qaAdjustments": [
+    "Two initial wording assertions used different terms from the finalized analyses (挥击 vs 打击; 展品 vs 实际陈列). Actual shot/export data were correct. Assertions were aligned with the finalized displayed content before the full verification completed.",
+    "The local preview server was restarted after its earlier process and verification session were no longer present."
+  ],
+  "checks": [
+    "十项仍各有独立分析",
+    "02 对应人物回应的独立分析",
+    "02 动态人物已进入实际嵌入页",
+    "02 体验导出保留真实核对与对应人物状态",
+    "05 独立说明对应实际进攻判定",
+    "05 使用真实时间并保留三个进攻统计",
+    "离开演示后 05 停止更新",
+    "返回演示后 05 恢复运行",
+    "05 体验导出含真实射线结果及对应进攻分析",
+    "07 三组实体陈列与已有案例对应",
+    "07 页面分析对应实际展品",
+    "07 近看详情给出真实原型入口和静态配方边界",
+    "07 体验记录保存实际参观及三组展品",
+    "2 主站与嵌入页手机均无横向溢出",
+    "5 主站与嵌入页手机均无横向溢出",
+    "7 主站与嵌入页手机均无横向溢出",
+    "没有脚本错误或本地资源缺失"
+  ],
+  "errors": [],
+  "missing": []
+}

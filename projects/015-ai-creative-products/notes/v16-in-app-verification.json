@@ -1,0 +1,108 @@
+{
+  "revision": 16,
+  "checkedAt": "2026-10-03T12:12:03.514565+00:00",
+  "browser": "Actual Codex in-app browser; current app canvas PNG and JSON exported through visible controls. No headless browser used for v16 checks.",
+  "checks": {
+    "05": {
+      "visual": "Fitted shoulders, segmented chest/abdomen, arm joints and weapon were viewed at close range in the actual room.",
+      "interaction": "One actual ray hit was recorded; reload completed with ammo restored to 12.",
+      "record": "notes/case-05-v16-fire-reload.json",
+      "frame": "assets/qa/quality-reset-v16/05-patrol-close-after.png",
+      "boundary": "Mechanical guards are original assets, not human source characters. The captured close view is from the finished loss state; no claim of a three-wave win."
+    },
+    "07": {
+      "visual": "Actual entry PNG shows lengthwise timber, stone courses, recessed windows and final expanded/tilted leaf sprays.",
+      "interaction": "Three guided visits recorded, night selected and density zero cleared trees; End rebuilt the visible tree density.",
+      "records": [
+        "notes/case-07-v16-entry.json",
+        "notes/case-07-v16-three-visits.json",
+        "notes/case-07-v16-night-no-trees.json"
+      ],
+      "frame": "assets/qa/quality-reset-v16/07-entry-after.png",
+      "boundary": "Guided shortcuts are explicitly logged; walkingDistance is zero. This does not revalidate free-walk collision routes."
+    },
+    "09": {
+      "visual": "Final actual boat PNG shows seabed stones through near water, correctly aligned scanned shoreline rocks and a dry interior floor. Night/storm water was separately viewed.",
+      "interaction": "Actual dock boarding, disembarking and forest shortcut; storm, hour 24 and density 4 exported consistently.",
+      "records": [
+        "notes/case-09-v16-boat.json",
+        "notes/case-09-v16-storm-night-low-density.json",
+        "notes/case-09-v16-storm-night.json"
+      ],
+      "frame": "assets/qa/quality-reset-v16/09-boat-after.png",
+      "boundary": "Single screen-space submerged-color/depth capture, not path-traced caustics. Dock/shortcut checks do not revalidate full sailing routes or buoyancy."
+    },
+    "10": {
+      "visual": "Continuous rounded seating bowl, open aisles, concourse lights, deep roof trusses and unbroken grass were viewed from actual chase and ball cameras.",
+      "interaction": "Native held driving/boost controls plus jump, steering, brake and camera switch. Records show airborne car, landing, two contacts, boost expenditure and ball camera. The running timer later expired with score 1/3.",
+      "records": [
+        "notes/case-10-v16-arena.json",
+        "notes/case-10-v16-drive-jump.json",
+        "notes/case-10-v16-camera-brake.json",
+        "notes/case-10-v16-finished.json"
+      ],
+      "frame": "assets/qa/quality-reset-v16/10-arena-after.png",
+      "runtimeStatistic": {
+        "drawCalls": 55,
+        "staticDrawCallsSaved": 1404
+      },
+      "boundary": "Runtime renderer counters are not device performance measurements. Three-goal victory and full vehicle rigid-body dynamics are not verified."
+    }
+  },
+  "responsive": {
+    "method": "Temporary 390px requested viewport; actual document client width 375px after vertical scrollbar. DOM checked in the real IAB.",
+    "cases": {
+      "5": {
+        "clientWidth": 375,
+        "scrollWidth": 375,
+        "canvasCount": 1
+      },
+      "7": {
+        "clientWidth": 375,
+        "scrollWidth": 375,
+        "canvasCount": 1
+      },
+      "9": {
+        "clientWidth": 375,
+        "scrollWidth": 375,
+        "canvasCount": 1
+      },
+      "10": {
+        "clientWidth": 375,
+        "scrollWidth": 375,
+        "canvasCount": 1
+      }
+    },
+    "result": "No horizontal document overflow in these four actual routes; not a phone-device FPS measurement."
+  },
+  "console": {
+    "cases": [
+      5,
+      7,
+      9,
+      10
+    ],
+    "errors": [],
+    "knownWarning": "Existing three-r160 UMD build deprecation warning remains."
+  },
+  "evidenceBoundary": "Original and v15 comparison images are historical. New v16 PNGs come directly from current runtime canvases. Capture timing, state and aspect ratios differ; art equivalence with the originals is not claimed.",
+  "remaining": [
+    "05 still uses authored simplified mechanical characters and weapon geometry.",
+    "07 natural silhouettes and distant houses remain simplified.",
+    "09 low foliage and most terrain remain authored procedural geometry.",
+    "10 crowd is a static atlas and collision bounds remain rectangular."
+  ],
+  "mainPage": {
+    "url": "http://127.0.0.1:8975/?v=16#products",
+    "actualChecks": [
+      "Ten source/current pairs, all 20 images loaded after actual card scrolling.",
+      "Only 05,07,09,10 carry v16 refinement badges; other six retain v15.",
+      "09 gallery entry opens the real embedded 09 module; the dock control is visible.",
+      "09 independent analysis shows actual submerged color/depth refraction and current limitations after a stale script cache was corrected.",
+      "Product strategy remains closed; default 584px document has zero horizontal overflow.",
+      "Temporary responsive viewport was reset and final tab marked as deliverable."
+    ],
+    "scriptCache": "v=16-ready for current metadata, host and analysis files; functional modules use v=16-final with per-case asset revisions."
+  },
+  "finalStaticReview": "notes/v16-final-static-verification.json"
+}

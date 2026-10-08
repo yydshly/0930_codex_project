@@ -1,0 +1,724 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-03T11:52:36.756Z",
+  "caseId": 5,
+  "product": "第一人称情境训练工具",
+  "task": "比较命中与落空的射击反馈，再移动避开机器人挥击，完成波次。",
+  "state": {
+    "module": "defense",
+    "status": "lost",
+    "running": false,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 169,
+      "triangles": 378868,
+      "pixelRatio": 1,
+      "defaultPixelRatio": 1.0000000298023224,
+      "qualityPolicy": "active longest side at most 960px; ready, paused and finished restore default DPR",
+      "canvasPixels": {
+        "width": 1343,
+        "height": 530
+      },
+      "interactiveResolutionLimit": 960,
+      "staticDrawCallsSaved": 408
+    },
+    "wave": 1,
+    "totalWaves": 3,
+    "health": 0,
+    "ammo": 12,
+    "reloading": false,
+    "kills": 0,
+    "shots": 1,
+    "hits": 1,
+    "attacks": 11,
+    "dodgedAttacks": 0,
+    "incomingHits": 9,
+    "attackTiming": {
+      "clock": "wall-clock",
+      "reactionStart": "after first warning draw; active wall clock excludes hidden intervals",
+      "maxIntegrationStep": 0.008333333333333333,
+      "trigger": 1.45,
+      "reach": 1.6,
+      "frontDot": 0.45,
+      "windup": 0.85,
+      "strike": 0.22,
+      "recovery": 0.9
+    },
+    "elapsed": 31.5,
+    "shotPresentation": {
+      "clock": "active-wall-clock",
+      "duration": 0.42,
+      "muzzleLocal": {
+        "x": 0,
+        "y": 0.017,
+        "z": -0.962
+      },
+      "weaponScale": 0.62,
+      "age": 11.674,
+      "recoil": {
+        "kick": 0,
+        "return": 0,
+        "position": {
+          "x": 0.29,
+          "y": -0.3066,
+          "z": -0.91
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "affectsAim": false
+      },
+      "visible": {
+        "muzzle": false,
+        "tracer": false,
+        "impact": false
+      },
+      "lastShot": {
+        "serial": 1,
+        "clock": 90.99019999998808,
+        "result": "hit",
+        "surface": "robot",
+        "enemyId": 1,
+        "distance": 5.569,
+        "target": {
+          "x": -0.597,
+          "y": 1.141,
+          "z": 0.491
+        },
+        "surfacePoint": {
+          "x": -0.597,
+          "y": 1.141,
+          "z": 0.491
+        },
+        "surfaceNormal": {
+          "x": 0.102,
+          "y": -0.315,
+          "z": 0.944
+        },
+        "origin": {
+          "x": 0.15,
+          "y": 1.279,
+          "z": 4.551
+        },
+        "weaponPose": {
+          "position": {
+            "x": 0.298,
+            "y": -0.32557794488577035,
+            "z": -0.865
+          },
+          "rotation": {
+            "x": 0.065,
+            "y": -0.012,
+            "z": -0.025
+          }
+        }
+      }
+    },
+    "feedback": {
+      "canFire": false,
+      "lastShotResult": "hit",
+      "hitConfirmed": false,
+      "damageCue": true,
+      "lastImpact": {
+        "x": -0.6,
+        "y": 1.14,
+        "z": 0.49
+      }
+    },
+    "player": {
+      "x": 0,
+      "z": 6,
+      "yaw": -0.108,
+      "pitch": -0.101
+    },
+    "enemies": [
+      {
+        "id": 1,
+        "x": -0.16,
+        "z": 4.56,
+        "hp": 1,
+        "attack": {
+          "phase": "strike",
+          "phaseElapsed": 0.004,
+          "cycle": 4,
+          "lockedYaw": 0.108,
+          "lastResult": "hit",
+          "lastDistance": 1.445,
+          "visibleWindupWallSeconds": 0.852
+        }
+      },
+      {
+        "id": 2,
+        "x": 0.16,
+        "z": 4.56,
+        "hp": 2,
+        "attack": {
+          "phase": "windup",
+          "phaseElapsed": 0.217,
+          "cycle": 3,
+          "lockedYaw": -0.108,
+          "lastResult": "hit",
+          "lastDistance": 1.449,
+          "visibleWindupWallSeconds": 0.859
+        }
+      },
+      {
+        "id": 3,
+        "x": -0.58,
+        "z": 4.67,
+        "hp": 2,
+        "attack": {
+          "phase": "windup",
+          "phaseElapsed": 0.117,
+          "cycle": 4,
+          "lockedYaw": 0.412,
+          "lastResult": "hit",
+          "lastDistance": 1.447,
+          "visibleWindupWallSeconds": 0.855
+        }
+      }
+    ],
+    "artwork": {
+      "room": {
+        "doorway": {
+          "width": 3,
+          "height": 2.48,
+          "z": -5.5
+        },
+        "closedDoor": {
+          "width": 1.92,
+          "height": 2.28,
+          "z": -11.29
+        },
+        "ceilingHeight": 4.15,
+        "lighting": "warm entry, cool foreground and one shadow-casting patrol pool; no source lighting algorithm claimed"
+      },
+      "weapon": {
+        "parts": [
+          "receiver",
+          "barrel",
+          "vented handguard",
+          "open stock",
+          "sloped grip",
+          "trigger guard",
+          "energy cell",
+          "ring sight",
+          "panel fasteners",
+          "side charging lever",
+          "brushed coating and bounded edge wear"
+        ],
+        "length": 1.642,
+        "unscaledHeight": 0.498,
+        "model": "original authored bevelled profiles and local finish textures; no external game assets"
+      },
+      "guards": [
+        {
+          "id": 1,
+          "height": 1.95,
+          "shoulderWidth": 0.78,
+          "hipHeight": 0.892,
+          "connectedJoints": [
+            "neck",
+            "shoulder",
+            "elbow",
+            "hip",
+            "knee",
+            "ankle"
+          ],
+          "finish": [
+            "paired chest leaves",
+            "segmented abdomen",
+            "fitted shoulder shells",
+            "ribbed joint sleeves",
+            "panel fasteners",
+            "local coating breakup"
+          ],
+          "model": "original contoured patrol armor; no source-game mesh"
+        },
+        {
+          "id": 2,
+          "height": 1.95,
+          "shoulderWidth": 0.78,
+          "hipHeight": 0.892,
+          "connectedJoints": [
+            "neck",
+            "shoulder",
+            "elbow",
+            "hip",
+            "knee",
+            "ankle"
+          ],
+          "finish": [
+            "paired chest leaves",
+            "segmented abdomen",
+            "fitted shoulder shells",
+            "ribbed joint sleeves",
+            "panel fasteners",
+            "local coating breakup"
+          ],
+          "model": "original contoured patrol armor; no source-game mesh"
+        },
+        {
+          "id": 3,
+          "height": 1.95,
+          "shoulderWidth": 0.78,
+          "hipHeight": 0.892,
+          "connectedJoints": [
+            "neck",
+            "shoulder",
+            "elbow",
+            "hip",
+            "knee",
+            "ankle"
+          ],
+          "finish": [
+            "paired chest leaves",
+            "segmented abdomen",
+            "fitted shoulder shells",
+            "ribbed joint sleeves",
+            "panel fasteners",
+            "local coating breakup"
+          ],
+          "model": "original contoured patrol armor; no source-game mesh"
+        }
+      ]
+    },
+    "scope": "Original FPS room and robots. No COD code/assets ported. Ray hits, simple pursuit, telegraphed directional melee with range-checked strike, cover collision, three waves. Weapon recoil is a bounded visual response only; camera aiming is unchanged. Tracer starts at the actual weapon muzzle; sparks require a real ray intersection. Active play is limited to 960px; ready/paused/finished restore default clarity.",
+    "log": [
+      {
+        "time": 0,
+        "action": "波次开始",
+        "detail": 1
+      },
+      {
+        "time": 19.9,
+        "action": "射击命中",
+        "detail": 1
+      },
+      {
+        "time": 19.9,
+        "action": "发射呈现",
+        "detail": {
+          "serial": 1,
+          "clock": 90.99019999998808,
+          "result": "hit",
+          "surface": "robot",
+          "enemyId": 1,
+          "distance": 5.569,
+          "target": {
+            "x": -0.597,
+            "y": 1.141,
+            "z": 0.491
+          },
+          "surfacePoint": {
+            "x": -0.597,
+            "y": 1.141,
+            "z": 0.491
+          },
+          "surfaceNormal": {
+            "x": 0.102,
+            "y": -0.315,
+            "z": 0.944
+          },
+          "origin": {
+            "x": 0.15,
+            "y": 1.279,
+            "z": 4.551
+          },
+          "weaponPose": {
+            "position": {
+              "x": 0.298,
+              "y": -0.32557794488577035,
+              "z": -0.865
+            },
+            "rotation": {
+              "x": 0.065,
+              "y": -0.012,
+              "z": -0.025
+            }
+          }
+        }
+      },
+      {
+        "time": 20.2,
+        "action": "充能",
+        "detail": "1.3秒"
+      },
+      {
+        "time": 24.7,
+        "action": "进攻蓄势",
+        "detail": {
+          "enemy": 1,
+          "attack": 1,
+          "distance": 1.445,
+          "lockedYaw": 0.108
+        }
+      },
+      {
+        "time": 24.7,
+        "action": "蓄势提示",
+        "detail": {
+          "enemy": 1,
+          "attack": 1,
+          "phase": "windup"
+        }
+      },
+      {
+        "time": 25.5,
+        "action": "进攻蓄势",
+        "detail": {
+          "enemy": 3,
+          "attack": 1,
+          "distance": 1.447,
+          "lockedYaw": 0.412
+        }
+      },
+      {
+        "time": 25.5,
+        "action": "蓄势提示",
+        "detail": {
+          "enemy": 3,
+          "attack": 1,
+          "phase": "windup"
+        }
+      },
+      {
+        "time": 25.6,
+        "action": "近身冲击",
+        "detail": {
+          "enemy": 1,
+          "attack": 1,
+          "damage": 12,
+          "distance": 1.445,
+          "frontDot": 1,
+          "visibleWindupWallSeconds": 0.851,
+          "visibleWindupSimulationSeconds": 0.85,
+          "phase": "strike"
+        }
+      },
+      {
+        "time": 26.3,
+        "action": "近身冲击",
+        "detail": {
+          "enemy": 3,
+          "attack": 1,
+          "damage": 12,
+          "distance": 1.447,
+          "frontDot": 1,
+          "visibleWindupWallSeconds": 0.856,
+          "visibleWindupSimulationSeconds": 0.858,
+          "phase": "strike"
+        }
+      },
+      {
+        "time": 26.7,
+        "action": "进攻蓄势",
+        "detail": {
+          "enemy": 1,
+          "attack": 2,
+          "distance": 1.445,
+          "lockedYaw": 0.108
+        }
+      },
+      {
+        "time": 26.7,
+        "action": "蓄势提示",
+        "detail": {
+          "enemy": 1,
+          "attack": 2,
+          "phase": "windup"
+        }
+      },
+      {
+        "time": 27.3,
+        "action": "进攻蓄势",
+        "detail": {
+          "enemy": 2,
+          "attack": 1,
+          "distance": 1.449,
+          "lockedYaw": -0.108
+        }
+      },
+      {
+        "time": 27.3,
+        "action": "蓄势提示",
+        "detail": {
+          "enemy": 2,
+          "attack": 1,
+          "phase": "windup"
+        }
+      },
+      {
+        "time": 27.4,
+        "action": "进攻蓄势",
+        "detail": {
+          "enemy": 3,
+          "attack": 2,
+          "distance": 1.447,
+          "lockedYaw": 0.412
+        }
+      },
+      {
+        "time": 27.4,
+        "action": "蓄势提示",
+        "detail": {
+          "enemy": 3,
+          "attack": 2,
+          "phase": "windup"
+        }
+      },
+      {
+        "time": 27.6,
+        "action": "近身冲击",
+        "detail": {
+          "enemy": 1,
+          "attack": 2,
+          "damage": 12,
+          "distance": 1.445,
+          "frontDot": 1,
+          "visibleWindupWallSeconds": 0.851,
+          "visibleWindupSimulationSeconds": 0.85,
+          "phase": "strike"
+        }
+      },
+      {
+        "time": 28.2,
+        "action": "近身冲击",
+        "detail": {
+          "enemy": 2,
+          "attack": 1,
+          "damage": 12,
+          "distance": 1.449,
+          "frontDot": 1,
+          "visibleWindupWallSeconds": 0.854,
+          "visibleWindupSimulationSeconds": 0.858,
+          "phase": "strike"
+        }
+      },
+      {
+        "time": 28.3,
+        "action": "近身冲击",
+        "detail": {
+          "enemy": 3,
+          "attack": 2,
+          "damage": 12,
+          "distance": 1.447,
+          "frontDot": 1,
+          "visibleWindupWallSeconds": 0.858,
+          "visibleWindupSimulationSeconds": 0.858,
+          "phase": "strike"
+        }
+      },
+      {
+        "time": 28.7,
+        "action": "进攻蓄势",
+        "detail": {
+          "enemy": 1,
+          "attack": 3,
+          "distance": 1.445,
+          "lockedYaw": 0.108
+        }
+      },
+      {
+        "time": 28.7,
+        "action": "蓄势提示",
+        "detail": {
+          "enemy": 1,
+          "attack": 3,
+          "phase": "windup"
+        }
+      },
+      {
+        "time": 29.3,
+        "action": "进攻蓄势",
+        "detail": {
+          "enemy": 2,
+          "attack": 2,
+          "distance": 1.449,
+          "lockedYaw": -0.108
+        }
+      },
+      {
+        "time": 29.3,
+        "action": "蓄势提示",
+        "detail": {
+          "enemy": 2,
+          "attack": 2,
+          "phase": "windup"
+        }
+      },
+      {
+        "time": 29.4,
+        "action": "进攻蓄势",
+        "detail": {
+          "enemy": 3,
+          "attack": 3,
+          "distance": 1.447,
+          "lockedYaw": 0.412
+        }
+      },
+      {
+        "time": 29.4,
+        "action": "蓄势提示",
+        "detail": {
+          "enemy": 3,
+          "attack": 3,
+          "phase": "windup"
+        }
+      },
+      {
+        "time": 29.5,
+        "action": "近身冲击",
+        "detail": {
+          "enemy": 1,
+          "attack": 3,
+          "damage": 12,
+          "distance": 1.445,
+          "frontDot": 1,
+          "visibleWindupWallSeconds": 0.863,
+          "visibleWindupSimulationSeconds": 0.858,
+          "phase": "strike"
+        }
+      },
+      {
+        "time": 30.2,
+        "action": "近身冲击",
+        "detail": {
+          "enemy": 2,
+          "attack": 2,
+          "damage": 12,
+          "distance": 1.449,
+          "frontDot": 1,
+          "visibleWindupWallSeconds": 0.859,
+          "visibleWindupSimulationSeconds": 0.858,
+          "phase": "strike"
+        }
+      },
+      {
+        "time": 30.3,
+        "action": "近身冲击",
+        "detail": {
+          "enemy": 3,
+          "attack": 3,
+          "damage": 12,
+          "distance": 1.447,
+          "frontDot": 1,
+          "visibleWindupWallSeconds": 0.855,
+          "visibleWindupSimulationSeconds": 0.858,
+          "phase": "strike"
+        }
+      },
+      {
+        "time": 30.7,
+        "action": "进攻蓄势",
+        "detail": {
+          "enemy": 1,
+          "attack": 4,
+          "distance": 1.445,
+          "lockedYaw": 0.108
+        }
+      },
+      {
+        "time": 30.7,
+        "action": "蓄势提示",
+        "detail": {
+          "enemy": 1,
+          "attack": 4,
+          "phase": "windup"
+        }
+      },
+      {
+        "time": 31.3,
+        "action": "进攻蓄势",
+        "detail": {
+          "enemy": 2,
+          "attack": 3,
+          "distance": 1.449,
+          "lockedYaw": -0.108
+        }
+      },
+      {
+        "time": 31.3,
+        "action": "蓄势提示",
+        "detail": {
+          "enemy": 2,
+          "attack": 3,
+          "phase": "windup"
+        }
+      },
+      {
+        "time": 31.4,
+        "action": "进攻蓄势",
+        "detail": {
+          "enemy": 3,
+          "attack": 4,
+          "distance": 1.447,
+          "lockedYaw": 0.412
+        }
+      },
+      {
+        "time": 31.4,
+        "action": "蓄势提示",
+        "detail": {
+          "enemy": 3,
+          "attack": 4,
+          "phase": "windup"
+        }
+      },
+      {
+        "time": 31.5,
+        "action": "近身冲击",
+        "detail": {
+          "enemy": 1,
+          "attack": 4,
+          "damage": 12,
+          "distance": 1.445,
+          "frontDot": 1,
+          "visibleWindupWallSeconds": 0.852,
+          "visibleWindupSimulationSeconds": 0.854,
+          "phase": "strike"
+        }
+      },
+      {
+        "time": 31.5,
+        "action": "失败",
+        "detail": "生命归零"
+      }
+    ]
+  },
+  "source": "https://x.com/p_e_cooper/status/2104980433972703483",
+  "reference": {
+    "focus": "第一人称房间生存：瞄准、移动、敌人靠近和波次资源形成实时闭环。",
+    "evidence": "作者自述将经典 Zombies 地图移植到浏览器；原片展示第一人称室内场景。",
+    "sourceTech": "源码迁移是作者自述；本项目没有原作源码与资产。",
+    "ours": "连接的枪身、护木、枪管、握把与枪托，胸腰分明的护甲守卫和暖色门洞导光；真实命中与可躲避近战保留。",
+    "tech": "Three.js 原创有限几何与室内灯光；武器和守卫局部关节统一坐标，Raycaster 检查嵌套环境表面，枪口连向实际射线落点，后坐使用活动时钟。",
+    "value": "用空间压力与资源限制做安防巡检、应急处置或设备操作训练。",
+    "check": "实际门面和机柜阻挡射线，守卫命中才减防护；开火、回正、暂停、真实后退躲避和受伤反应通过，手机实际画面无资源错误。",
+    "boundary": "枪械反馈、机器人与机房均为原创有限实现，原作内部机制未知；没有弹道仿真、COD 源码与资产、完整敌人系统或联机。",
+    "kernel": "一次有效开火扣电荷并推动枪械后坐；机器人命中才减少防护，环境落点呈现独立火花，枪械回正后继续瞄准。逼近攻击保留可躲避的蓄势、挥击和恢复。"
+  },
+  "optimization": {
+    "caseId": 5,
+    "sourceTarget": "原视频室内第一人称生存通过敌人逼近、身体动作与开火/受伤构成可判断威胁；参考可见的战斗动作与反馈，不推断原作AI或弹道算法。",
+    "diagnosis": "前景枪械是巨大的拼接方盒，守卫身体缺少连贯的胸腰和肢体，室内光线没有有效引导门洞与巡逻方向。",
+    "priority": "重建武器侧面结构、连贯人形护甲与房间灯光，再按真实开火和近战检查模型连接。",
+    "changes": [
+      "独立武器模块制作连贯机匣、通风护木、枪管、空心枪托、斜握把与瞄具，缩小前景占比。",
+      "守卫重做胸甲、腰髋、肩帽和相连臂腿；肘膝合批保留关节局部坐标，修复手脚漂移。",
+      "门洞加入室内暖光，柜体保持冷暗层；真实机柜嵌套表面加入射线阻挡，枪口、后坐和命中反馈读取新模型。"
+    ],
+    "verify": [
+      "已检查真实房间、近处守卫与单独模型结构；射击和近战回归通过，无运行错误。",
+      "真实门/柜挡住射线，守卫命中才减少防护；枪口起点与新模型对应，后坐不改变瞄准射线。",
+      "实际闪避与受伤分别记录距离和蓄势时间，隐藏暂停、窄屏和下载保留同一状态。"
+    ],
+    "remaining": [
+      "武器、护甲与室内仍是原创几何近似；没有原作游戏资产、动画库或离线美术流水线。",
+      "仍为简化单人机房关卡，没有弹道仿真、完整敌人系统或联机。"
+    ]
+  },
+  "scope": "原创关卡、有限枪械反馈与简化近战判定；没有 COD 源码、资产或联机。"
+}

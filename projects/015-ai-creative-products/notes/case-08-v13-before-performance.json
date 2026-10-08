@@ -1,0 +1,651 @@
+{
+  "label": "before",
+  "environment": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "viewport": {
+      "width": 1440,
+      "height": 1100
+    },
+    "dpr": 1
+  },
+  "condition": "One headless Chromium instance and one page, no concurrent project Chromium/WebGL QA. Before and after sequentially use the exact same browser build, viewport, DPR, unchanged assets and trusted Playwright pointer moves. Instrumentation times application geometry work and renderer API calls, not GPU fences.",
+  "rest": {
+    "module": "mascot",
+    "status": "ready",
+    "mode": "sandbox",
+    "running": false,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 92,
+      "triangles": 238642,
+      "pixelRatio": 1,
+      "defaultPixelRatio": 1,
+      "canvasPixels": {
+        "width": 1358,
+        "height": 520
+      },
+      "interactiveResolutionLimit": 960,
+      "staticDrawCallsSaved": 0
+    },
+    "selected": "rabbit",
+    "shownCharacters": [
+      "rabbit",
+      "dumpling",
+      "cat"
+    ],
+    "target": null,
+    "pokes": 0,
+    "hits": 0,
+    "goal": null,
+    "combo": 0,
+    "maxCombo": 0,
+    "misses": 0,
+    "remaining": null,
+    "elapsed": 0,
+    "softness": 65,
+    "gravity": true,
+    "soundEnabled": true,
+    "viewAngle": 0,
+    "characters": [
+      {
+        "id": "rabbit",
+        "name": "粉兔",
+        "height": 0,
+        "deformation": 0,
+        "localIndent": 0,
+        "activePart": null,
+        "dragging": false,
+        "stretch": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "deformedParts": [],
+        "vertexCount": 9098,
+        "surface": {
+          "type": "continuous-skin",
+          "boundaryEdges": 0,
+          "restVolume": 3.5416,
+          "volumeBeforeCompensation": 1,
+          "volumeAfterCompensation": 1,
+          "transverseThicknessRatio": 1,
+          "compensationCoefficient": 0,
+          "minimumJacobian": 1,
+          "regions": [
+            "body",
+            "head",
+            "leftEar",
+            "leftHand",
+            "leftFoot",
+            "rightEar",
+            "rightHand",
+            "rightFoot"
+          ]
+        }
+      },
+      {
+        "id": "dumpling",
+        "name": "橙团",
+        "height": 0,
+        "deformation": 0,
+        "localIndent": 0,
+        "activePart": null,
+        "dragging": false,
+        "stretch": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "deformedParts": [],
+        "vertexCount": 7526,
+        "surface": {
+          "type": "continuous-skin",
+          "boundaryEdges": 0,
+          "restVolume": 3.6027,
+          "volumeBeforeCompensation": 1,
+          "volumeAfterCompensation": 1,
+          "transverseThicknessRatio": 1,
+          "compensationCoefficient": 0,
+          "minimumJacobian": 1,
+          "regions": [
+            "body"
+          ]
+        }
+      },
+      {
+        "id": "cat",
+        "name": "薄荷猫",
+        "height": 0,
+        "deformation": 0,
+        "localIndent": 0,
+        "activePart": null,
+        "dragging": false,
+        "stretch": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "deformedParts": [],
+        "vertexCount": 8026,
+        "surface": {
+          "type": "continuous-skin",
+          "boundaryEdges": 0,
+          "restVolume": 3.6863,
+          "volumeBeforeCompensation": 1,
+          "volumeAfterCompensation": 1,
+          "transverseThicknessRatio": 1,
+          "compensationCoefficient": 0,
+          "minimumJacobian": 1,
+          "regions": [
+            "body",
+            "leftEar",
+            "rightEar"
+          ]
+        }
+      }
+    ],
+    "scope": "Original continuous procedural skins. Local spring fields and bounded transverse thickness compensation, not exact volume conservation or full soft-body physics. Combo challenge is our optional extension.",
+    "log": []
+  },
+  "held": {
+    "module": "mascot",
+    "status": "playing",
+    "mode": "sandbox",
+    "running": true,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 92,
+      "triangles": 238642,
+      "pixelRatio": 0.7069,
+      "defaultPixelRatio": 1,
+      "canvasPixels": {
+        "width": 960,
+        "height": 367
+      },
+      "interactiveResolutionLimit": 960,
+      "staticDrawCallsSaved": 0
+    },
+    "selected": "rabbit",
+    "shownCharacters": [
+      "rabbit",
+      "dumpling",
+      "cat"
+    ],
+    "target": null,
+    "pokes": 1,
+    "hits": 0,
+    "goal": null,
+    "combo": 0,
+    "maxCombo": 0,
+    "misses": 0,
+    "remaining": null,
+    "elapsed": 43.4,
+    "softness": 65,
+    "gravity": true,
+    "soundEnabled": true,
+    "viewAngle": 0,
+    "characters": [
+      {
+        "id": "rabbit",
+        "name": "粉兔",
+        "height": 0,
+        "deformation": 0,
+        "localIndent": 0.143,
+        "activePart": "rightEar",
+        "dragging": true,
+        "stretch": {
+          "x": 0.467,
+          "y": 0.374,
+          "z": -0.255
+        },
+        "deformedParts": [
+          "head",
+          "leftEar",
+          "rightEar"
+        ],
+        "vertexCount": 9098,
+        "surface": {
+          "type": "continuous-skin",
+          "boundaryEdges": 0,
+          "restVolume": 3.5416,
+          "volumeBeforeCompensation": 0.998,
+          "volumeAfterCompensation": 1,
+          "transverseThicknessRatio": 0.9955,
+          "compensationCoefficient": 0.0998,
+          "minimumJacobian": 0.2681,
+          "regions": [
+            "body",
+            "head",
+            "leftEar",
+            "leftHand",
+            "leftFoot",
+            "rightEar",
+            "rightHand",
+            "rightFoot"
+          ]
+        }
+      },
+      {
+        "id": "dumpling",
+        "name": "橙团",
+        "height": 0,
+        "deformation": 0,
+        "localIndent": 0,
+        "activePart": null,
+        "dragging": false,
+        "stretch": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "deformedParts": [],
+        "vertexCount": 7526,
+        "surface": {
+          "type": "continuous-skin",
+          "boundaryEdges": 0,
+          "restVolume": 3.6027,
+          "volumeBeforeCompensation": 1,
+          "volumeAfterCompensation": 1,
+          "transverseThicknessRatio": 1,
+          "compensationCoefficient": 0,
+          "minimumJacobian": 1,
+          "regions": [
+            "body"
+          ]
+        }
+      },
+      {
+        "id": "cat",
+        "name": "薄荷猫",
+        "height": 0,
+        "deformation": 0,
+        "localIndent": 0,
+        "activePart": null,
+        "dragging": false,
+        "stretch": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "deformedParts": [],
+        "vertexCount": 8026,
+        "surface": {
+          "type": "continuous-skin",
+          "boundaryEdges": 0,
+          "restVolume": 3.6863,
+          "volumeBeforeCompensation": 1,
+          "volumeAfterCompensation": 1,
+          "transverseThicknessRatio": 1,
+          "compensationCoefficient": 0,
+          "minimumJacobian": 1,
+          "regions": [
+            "body",
+            "leftEar",
+            "rightEar"
+          ]
+        }
+      }
+    ],
+    "scope": "Original continuous procedural skins. Local spring fields and bounded transverse thickness compensation, not exact volume conservation or full soft-body physics. Combo challenge is our optional extension.",
+    "log": [
+      {
+        "time": 4.76,
+        "character": "rabbit",
+        "mode": "sandbox",
+        "softness": 65,
+        "gravity": true
+      }
+    ]
+  },
+  "settled": {
+    "module": "mascot",
+    "status": "playing",
+    "mode": "sandbox",
+    "running": true,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 92,
+      "triangles": 238642,
+      "pixelRatio": 1,
+      "defaultPixelRatio": 1,
+      "canvasPixels": {
+        "width": 1358,
+        "height": 520
+      },
+      "interactiveResolutionLimit": 960,
+      "staticDrawCallsSaved": 0
+    },
+    "selected": "rabbit",
+    "shownCharacters": [
+      "rabbit",
+      "dumpling",
+      "cat"
+    ],
+    "target": null,
+    "pokes": 1,
+    "hits": 0,
+    "goal": null,
+    "combo": 0,
+    "maxCombo": 0,
+    "misses": 0,
+    "remaining": null,
+    "elapsed": 52.9,
+    "softness": 65,
+    "gravity": true,
+    "soundEnabled": true,
+    "viewAngle": 0,
+    "characters": [
+      {
+        "id": "rabbit",
+        "name": "粉兔",
+        "height": 0,
+        "deformation": 0,
+        "localIndent": 0,
+        "activePart": "rightEar",
+        "dragging": false,
+        "stretch": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "deformedParts": [],
+        "vertexCount": 9098,
+        "surface": {
+          "type": "continuous-skin",
+          "boundaryEdges": 0,
+          "restVolume": 3.5416,
+          "volumeBeforeCompensation": 1,
+          "volumeAfterCompensation": 1,
+          "transverseThicknessRatio": 1,
+          "compensationCoefficient": 0,
+          "minimumJacobian": 1,
+          "regions": [
+            "body",
+            "head",
+            "leftEar",
+            "leftHand",
+            "leftFoot",
+            "rightEar",
+            "rightHand",
+            "rightFoot"
+          ]
+        }
+      },
+      {
+        "id": "dumpling",
+        "name": "橙团",
+        "height": 0,
+        "deformation": 0,
+        "localIndent": 0,
+        "activePart": null,
+        "dragging": false,
+        "stretch": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "deformedParts": [],
+        "vertexCount": 7526,
+        "surface": {
+          "type": "continuous-skin",
+          "boundaryEdges": 0,
+          "restVolume": 3.6027,
+          "volumeBeforeCompensation": 1,
+          "volumeAfterCompensation": 1,
+          "transverseThicknessRatio": 1,
+          "compensationCoefficient": 0,
+          "minimumJacobian": 1,
+          "regions": [
+            "body"
+          ]
+        }
+      },
+      {
+        "id": "cat",
+        "name": "薄荷猫",
+        "height": 0,
+        "deformation": 0,
+        "localIndent": 0,
+        "activePart": null,
+        "dragging": false,
+        "stretch": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "deformedParts": [],
+        "vertexCount": 8026,
+        "surface": {
+          "type": "continuous-skin",
+          "boundaryEdges": 0,
+          "restVolume": 3.6863,
+          "volumeBeforeCompensation": 1,
+          "volumeAfterCompensation": 1,
+          "transverseThicknessRatio": 1,
+          "compensationCoefficient": 0,
+          "minimumJacobian": 1,
+          "regions": [
+            "body",
+            "leftEar",
+            "rightEar"
+          ]
+        }
+      }
+    ],
+    "scope": "Original continuous procedural skins. Local spring fields and bounded transverse thickness compensation, not exact volume conservation or full soft-body physics. Combo challenge is our optional extension.",
+    "log": [
+      {
+        "time": 4.76,
+        "character": "rabbit",
+        "mode": "sandbox",
+        "softness": 65,
+        "gravity": true
+      }
+    ]
+  },
+  "recovery": {
+    "wallMs": 956,
+    "state": {
+      "module": "mascot",
+      "status": "playing",
+      "mode": "sandbox",
+      "running": true,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 92,
+        "triangles": 238642,
+        "pixelRatio": 0.7069,
+        "defaultPixelRatio": 1,
+        "canvasPixels": {
+          "width": 960,
+          "height": 367
+        },
+        "interactiveResolutionLimit": 960,
+        "staticDrawCallsSaved": 0
+      },
+      "selected": "rabbit",
+      "shownCharacters": [
+        "rabbit",
+        "dumpling",
+        "cat"
+      ],
+      "target": null,
+      "pokes": 1,
+      "hits": 0,
+      "goal": null,
+      "combo": 0,
+      "maxCombo": 0,
+      "misses": 0,
+      "remaining": null,
+      "elapsed": 51.7,
+      "softness": 65,
+      "gravity": true,
+      "soundEnabled": true,
+      "viewAngle": 0,
+      "characters": [
+        {
+          "id": "rabbit",
+          "name": "粉兔",
+          "height": 0,
+          "deformation": 0,
+          "localIndent": 0.005,
+          "activePart": "rightEar",
+          "dragging": false,
+          "stretch": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "deformedParts": [
+            "rightEar"
+          ],
+          "vertexCount": 9098,
+          "surface": {
+            "type": "continuous-skin",
+            "boundaryEdges": 0,
+            "restVolume": 3.5416,
+            "volumeBeforeCompensation": 0.9999,
+            "volumeAfterCompensation": 1,
+            "transverseThicknessRatio": 1.0005,
+            "compensationCoefficient": 0.0105,
+            "minimumJacobian": 0.997,
+            "regions": [
+              "body",
+              "head",
+              "leftEar",
+              "leftHand",
+              "leftFoot",
+              "rightEar",
+              "rightHand",
+              "rightFoot"
+            ]
+          }
+        },
+        {
+          "id": "dumpling",
+          "name": "橙团",
+          "height": 0,
+          "deformation": 0,
+          "localIndent": 0,
+          "activePart": null,
+          "dragging": false,
+          "stretch": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "deformedParts": [],
+          "vertexCount": 7526,
+          "surface": {
+            "type": "continuous-skin",
+            "boundaryEdges": 0,
+            "restVolume": 3.6027,
+            "volumeBeforeCompensation": 1,
+            "volumeAfterCompensation": 1,
+            "transverseThicknessRatio": 1,
+            "compensationCoefficient": 0,
+            "minimumJacobian": 1,
+            "regions": [
+              "body"
+            ]
+          }
+        },
+        {
+          "id": "cat",
+          "name": "薄荷猫",
+          "height": 0,
+          "deformation": 0,
+          "localIndent": 0,
+          "activePart": null,
+          "dragging": false,
+          "stretch": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "deformedParts": [],
+          "vertexCount": 8026,
+          "surface": {
+            "type": "continuous-skin",
+            "boundaryEdges": 0,
+            "restVolume": 3.6863,
+            "volumeBeforeCompensation": 1,
+            "volumeAfterCompensation": 1,
+            "transverseThicknessRatio": 1,
+            "compensationCoefficient": 0,
+            "minimumJacobian": 1,
+            "regions": [
+              "body",
+              "leftEar",
+              "rightEar"
+            ]
+          }
+        }
+      ],
+      "scope": "Original continuous procedural skins. Local spring fields and bounded transverse thickness compensation, not exact volume conservation or full soft-body physics. Combo challenge is our optional extension.",
+      "log": [
+        {
+          "time": 4.76,
+          "character": "rabbit",
+          "mode": "sandbox",
+          "softness": 65,
+          "gravity": true
+        }
+      ]
+    }
+  },
+  "performance": {
+    "movingWallMs": 30680,
+    "moves": 24,
+    "events": 24,
+    "raf": {
+      "samples": 73,
+      "minMs": 299.9,
+      "medianMs": 333.3,
+      "p95Ms": 650,
+      "maxMs": 683.3
+    },
+    "pointerHandlers": {
+      "samples": 24,
+      "minMs": 13.4,
+      "medianMs": 16.1,
+      "p95Ms": 18.3,
+      "maxMs": 20.5
+    },
+    "geometry": {
+      "samples": 97,
+      "minMs": 9.5,
+      "medianMs": 12.8,
+      "p95Ms": 15.7,
+      "maxMs": 17
+    },
+    "renderSubmit": {
+      "samples": 97,
+      "minMs": 1.2,
+      "medianMs": 1.8,
+      "p95Ms": 3.3,
+      "maxMs": 4.1
+    },
+    "drawTotal": {
+      "samples": 97,
+      "minMs": 10.7,
+      "medianMs": 14.8,
+      "p95Ms": 18.2,
+      "maxMs": 20
+    },
+    "movingRendering": {
+      "drawCalls": 92,
+      "triangles": 238642,
+      "pixelRatio": 0.7069,
+      "defaultPixelRatio": 1,
+      "canvasPixels": {
+        "width": 960,
+        "height": 367
+      },
+      "interactiveResolutionLimit": 960,
+      "staticDrawCallsSaved": 0
+    }
+  },
+  "errors": []
+}

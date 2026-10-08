@@ -1,0 +1,1585 @@
+{
+  "caseId": 7,
+  "date": "2026-10-02T18:40:35.557Z",
+  "scope": "One actual native walking route; three content-specific close views; current-state JSON/PNG export; one 390px layout.",
+  "checks": [
+    {
+      "name": "WebGL content models construct",
+      "pass": true,
+      "detail": {
+        "drawCalls": 378,
+        "triangles": 174878,
+        "pixelRatio": 1
+      }
+    },
+    {
+      "name": "Entry reveals only first stall, retaining architecture occlusion",
+      "pass": true,
+      "detail": [
+        "visual-systems"
+      ]
+    },
+    {
+      "name": "Three specific collections match three local cases",
+      "pass": true,
+      "detail": [
+        {
+          "id": "visual-systems",
+          "role": "纸档案、主题色与实际展厅画面",
+          "objects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ],
+          "relatedCases": [
+            1
+          ],
+          "page": "./?id=1",
+          "defaultRecipe": null
+        },
+        {
+          "id": "product-lab",
+          "role": "实体琴键、机器人与猫、默认配方谱板",
+          "objects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ],
+          "relatedCases": [
+            6
+          ],
+          "page": "./?id=6",
+          "defaultRecipe": {
+            "mode": "static-default-illustration",
+            "mood": "calm",
+            "noteCount": 32,
+            "tempo": 90
+          }
+        },
+        {
+          "id": "research-notes",
+          "role": "路线沙盘、来源册、案例索引与参观凭证",
+          "objects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ],
+          "relatedCases": [
+            7
+          ],
+          "page": "../#demo-07",
+          "defaultRecipe": null
+        }
+      ]
+    },
+    {
+      "name": "Far E / view action cannot visit",
+      "pass": true,
+      "detail": "先走近一个展位，再查看研究内容。"
+    },
+    {
+      "name": "Real native walking reveals second stall",
+      "pass": true,
+      "detail": {
+        "phase": "market-square",
+        "discovered": [
+          "visual-systems",
+          "product-lab"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      }
+    },
+    {
+      "name": "Looking right reveals third stall",
+      "pass": true,
+      "detail": [
+        "visual-systems",
+        "product-lab",
+        "research-notes"
+      ]
+    },
+    {
+      "name": "Approach feedback uses actual proximity without writing a visit",
+      "pass": true,
+      "detail": {
+        "position": {
+          "x": -2.913902941098371,
+          "z": 1.7072790293851057,
+          "yaw": 0.76,
+          "pitch": -0.02
+        },
+        "proximity": {
+          "id": "visual-systems",
+          "distance": 2.62,
+          "canView": true,
+          "viewed": false
+        },
+        "overlay": "01\n纸档案、主题色与实际展厅画面\nE / 查看这处陈列 · 2.6 米"
+      }
+    },
+    {
+      "name": "Actual near E viewing records pose / distance / contents",
+      "pass": true,
+      "detail": {
+        "id": "visual-systems",
+        "title": "视觉系统展位",
+        "visitedAt": "2026-10-02T18:41:12.623Z",
+        "via": "near-view",
+        "positionAtView": {
+          "x": -2.913902941098371,
+          "z": 1.7072790293851057,
+          "yaw": 0.76,
+          "pitch": -0.02
+        },
+        "distanceAtView": 2.62,
+        "relatedCases": [
+          1
+        ],
+        "shownObjects": [
+          "双页作品档案",
+          "三种展厅主题样板",
+          "CASE 01 实际运行画面"
+        ]
+      }
+    },
+    {
+      "name": "Viewed feedback and real local entry are visible",
+      "pass": true
+    },
+    {
+      "name": "Piano board is explicit verified default illustration",
+      "pass": true
+    },
+    {
+      "name": "Direct product approach records shortcut explicitly",
+      "pass": true
+    },
+    {
+      "name": "Research receipt reports actual states and separates walking from shortcut",
+      "pass": true,
+      "detail": "本次真实参观凭证\n发现 3/3\n走近 3/3\n查看 3/3\n步行 9.1 米 · 列表直达单独标记，不计入步行距离。"
+    },
+    {
+      "name": "Source entry is actual case page, no invented NPC capability",
+      "pass": true
+    },
+    {
+      "name": "Export preserves concrete content and actual route / visitation modes",
+      "pass": true,
+      "detail": {
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        },
+        "discovered": [
+          "visual-systems",
+          "product-lab",
+          "research-notes"
+        ],
+        "reached": [
+          "visual-systems",
+          "product-lab",
+          "research-notes"
+        ],
+        "walkingDistance": 9.1
+      }
+    },
+    {
+      "name": "Current near exhibit scene exports PNG",
+      "pass": true
+    },
+    {
+      "name": "390px mobile has no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "Mobile proximity overlay remains inside actual scene",
+      "pass": true,
+      "detail": {
+        "stage": {
+          "x": 14,
+          "y": -1,
+          "width": 362,
+          "height": 400
+        },
+        "hint": {
+          "x": 25,
+          "y": 280.40625,
+          "width": 249,
+          "height": 52.59375
+        },
+        "within": true
+      }
+    },
+    {
+      "name": "Mobile real source entry remains usable",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "states": {
+    "entry": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": null,
+      "visits": [],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": -2.55,
+        "z": 10.8,
+        "yaw": 0.04,
+        "pitch": -0.02
+      },
+      "reached": [],
+      "proximity": {
+        "id": "visual-systems",
+        "distance": 11.29,
+        "canView": false,
+        "viewed": false
+      },
+      "exhibits": [
+        {
+          "id": "visual-systems",
+          "role": "纸档案、主题色与实际展厅画面",
+          "objects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ],
+          "relatedCases": [
+            1
+          ],
+          "page": "./?id=1",
+          "defaultRecipe": null
+        },
+        {
+          "id": "product-lab",
+          "role": "实体琴键、机器人与猫、默认配方谱板",
+          "objects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ],
+          "relatedCases": [
+            6
+          ],
+          "page": "./?id=6",
+          "defaultRecipe": {
+            "mode": "static-default-illustration",
+            "mood": "calm",
+            "noteCount": 32,
+            "tempo": 90
+          }
+        },
+        {
+          "id": "research-notes",
+          "role": "路线沙盘、来源册、案例索引与参观凭证",
+          "objects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ],
+          "relatedCases": [
+            7
+          ],
+          "page": "../#demo-07",
+          "defaultRecipe": null
+        }
+      ],
+      "space": {
+        "phase": "entrance-lane",
+        "discovered": [
+          "visual-systems"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 0,
+      "renderer": "webgl",
+      "renderCount": 16,
+      "renderStats": {
+        "drawCalls": 378,
+        "triangles": 174878,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Original detailed procedural architecture and three static content-specific exhibit collections",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+        "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+      }
+    },
+    "square": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": null,
+      "visits": [],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": -2.857917873237083,
+        "z": 3.1061591787104748,
+        "yaw": 0.04,
+        "pitch": -0.02
+      },
+      "reached": [],
+      "proximity": {
+        "id": "visual-systems",
+        "distance": 3.83,
+        "canView": false,
+        "viewed": false
+      },
+      "exhibits": [
+        {
+          "id": "visual-systems",
+          "role": "纸档案、主题色与实际展厅画面",
+          "objects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ],
+          "relatedCases": [
+            1
+          ],
+          "page": "./?id=1",
+          "defaultRecipe": null
+        },
+        {
+          "id": "product-lab",
+          "role": "实体琴键、机器人与猫、默认配方谱板",
+          "objects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ],
+          "relatedCases": [
+            6
+          ],
+          "page": "./?id=6",
+          "defaultRecipe": {
+            "mode": "static-default-illustration",
+            "mood": "calm",
+            "noteCount": 32,
+            "tempo": 90
+          }
+        },
+        {
+          "id": "research-notes",
+          "role": "路线沙盘、来源册、案例索引与参观凭证",
+          "objects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ],
+          "relatedCases": [
+            7
+          ],
+          "page": "../#demo-07",
+          "defaultRecipe": null
+        }
+      ],
+      "space": {
+        "phase": "market-square",
+        "discovered": [
+          "visual-systems",
+          "product-lab"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 7.7,
+      "renderer": "webgl",
+      "renderCount": 39,
+      "renderStats": {
+        "drawCalls": 213,
+        "triangles": 92280,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Original detailed procedural architecture and three static content-specific exhibit collections",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+        "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+      }
+    },
+    "lookRight": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": null,
+      "visits": [],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": -2.857917873237083,
+        "z": 3.1061591787104748,
+        "yaw": -0.6799999999999999,
+        "pitch": -0.02
+      },
+      "reached": [],
+      "proximity": {
+        "id": "visual-systems",
+        "distance": 3.83,
+        "canView": false,
+        "viewed": false
+      },
+      "exhibits": [
+        {
+          "id": "visual-systems",
+          "role": "纸档案、主题色与实际展厅画面",
+          "objects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ],
+          "relatedCases": [
+            1
+          ],
+          "page": "./?id=1",
+          "defaultRecipe": null
+        },
+        {
+          "id": "product-lab",
+          "role": "实体琴键、机器人与猫、默认配方谱板",
+          "objects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ],
+          "relatedCases": [
+            6
+          ],
+          "page": "./?id=6",
+          "defaultRecipe": {
+            "mode": "static-default-illustration",
+            "mood": "calm",
+            "noteCount": 32,
+            "tempo": 90
+          }
+        },
+        {
+          "id": "research-notes",
+          "role": "路线沙盘、来源册、案例索引与参观凭证",
+          "objects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ],
+          "relatedCases": [
+            7
+          ],
+          "page": "../#demo-07",
+          "defaultRecipe": null
+        }
+      ],
+      "space": {
+        "phase": "market-square",
+        "discovered": [
+          "visual-systems",
+          "product-lab",
+          "research-notes"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 7.7,
+      "renderer": "webgl",
+      "renderCount": 42,
+      "renderStats": {
+        "drawCalls": 260,
+        "triangles": 117174,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Original detailed procedural architecture and three static content-specific exhibit collections",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+        "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+      }
+    },
+    "nearVisual": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": null,
+      "visits": [],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": -2.913902941098371,
+        "z": 1.7072790293851057,
+        "yaw": 0.76,
+        "pitch": -0.02
+      },
+      "reached": [
+        "visual-systems"
+      ],
+      "proximity": {
+        "id": "visual-systems",
+        "distance": 2.62,
+        "canView": true,
+        "viewed": false
+      },
+      "exhibits": [
+        {
+          "id": "visual-systems",
+          "role": "纸档案、主题色与实际展厅画面",
+          "objects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ],
+          "relatedCases": [
+            1
+          ],
+          "page": "./?id=1",
+          "defaultRecipe": null
+        },
+        {
+          "id": "product-lab",
+          "role": "实体琴键、机器人与猫、默认配方谱板",
+          "objects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ],
+          "relatedCases": [
+            6
+          ],
+          "page": "./?id=6",
+          "defaultRecipe": {
+            "mode": "static-default-illustration",
+            "mood": "calm",
+            "noteCount": 32,
+            "tempo": 90
+          }
+        },
+        {
+          "id": "research-notes",
+          "role": "路线沙盘、来源册、案例索引与参观凭证",
+          "objects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ],
+          "relatedCases": [
+            7
+          ],
+          "page": "../#demo-07",
+          "defaultRecipe": null
+        }
+      ],
+      "space": {
+        "phase": "market-square",
+        "discovered": [
+          "visual-systems",
+          "product-lab",
+          "research-notes"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 9.1,
+      "renderer": "webgl",
+      "renderCount": 52,
+      "renderStats": {
+        "drawCalls": 160,
+        "triangles": 91910,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Original detailed procedural architecture and three static content-specific exhibit collections",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+        "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+      }
+    },
+    "viewedVisual": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": "visual-systems",
+      "visits": [
+        {
+          "id": "visual-systems",
+          "title": "视觉系统展位",
+          "visitedAt": "2026-10-02T18:41:12.623Z",
+          "via": "near-view",
+          "positionAtView": {
+            "x": -2.913902941098371,
+            "z": 1.7072790293851057,
+            "yaw": 0.76,
+            "pitch": -0.02
+          },
+          "distanceAtView": 2.62,
+          "relatedCases": [
+            1
+          ],
+          "shownObjects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ]
+        }
+      ],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": -2.913902941098371,
+        "z": 1.7072790293851057,
+        "yaw": 0.76,
+        "pitch": -0.02
+      },
+      "reached": [
+        "visual-systems"
+      ],
+      "proximity": {
+        "id": "visual-systems",
+        "distance": 2.62,
+        "canView": true,
+        "viewed": true
+      },
+      "exhibits": [
+        {
+          "id": "visual-systems",
+          "role": "纸档案、主题色与实际展厅画面",
+          "objects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ],
+          "relatedCases": [
+            1
+          ],
+          "page": "./?id=1",
+          "defaultRecipe": null
+        },
+        {
+          "id": "product-lab",
+          "role": "实体琴键、机器人与猫、默认配方谱板",
+          "objects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ],
+          "relatedCases": [
+            6
+          ],
+          "page": "./?id=6",
+          "defaultRecipe": {
+            "mode": "static-default-illustration",
+            "mood": "calm",
+            "noteCount": 32,
+            "tempo": 90
+          }
+        },
+        {
+          "id": "research-notes",
+          "role": "路线沙盘、来源册、案例索引与参观凭证",
+          "objects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ],
+          "relatedCases": [
+            7
+          ],
+          "page": "../#demo-07",
+          "defaultRecipe": null
+        }
+      ],
+      "space": {
+        "phase": "market-square",
+        "discovered": [
+          "visual-systems",
+          "product-lab",
+          "research-notes"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 9.1,
+      "renderer": "webgl",
+      "renderCount": 53,
+      "renderStats": {
+        "drawCalls": 160,
+        "triangles": 91910,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Original detailed procedural architecture and three static content-specific exhibit collections",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+        "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+      }
+    },
+    "product": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": "product-lab",
+      "visits": [
+        {
+          "id": "visual-systems",
+          "title": "视觉系统展位",
+          "visitedAt": "2026-10-02T18:41:12.623Z",
+          "via": "near-view",
+          "positionAtView": {
+            "x": -2.913902941098371,
+            "z": 1.7072790293851057,
+            "yaw": 0.76,
+            "pitch": -0.02
+          },
+          "distanceAtView": 2.62,
+          "relatedCases": [
+            1
+          ],
+          "shownObjects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ]
+        },
+        {
+          "id": "product-lab",
+          "title": "产品原型展位",
+          "visitedAt": "2026-10-02T18:41:13.827Z",
+          "via": "guided-shortcut",
+          "positionAtView": {
+            "x": 2.8,
+            "z": -3.9,
+            "yaw": 0.1,
+            "pitch": 0
+          },
+          "distanceAtView": 2.21,
+          "relatedCases": [
+            6
+          ],
+          "shownObjects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ]
+        }
+      ],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": 2.8,
+        "z": -3.9,
+        "yaw": 0.1,
+        "pitch": 0
+      },
+      "reached": [
+        "visual-systems",
+        "product-lab"
+      ],
+      "proximity": {
+        "id": "product-lab",
+        "distance": 2.21,
+        "canView": true,
+        "viewed": true
+      },
+      "exhibits": [
+        {
+          "id": "visual-systems",
+          "role": "纸档案、主题色与实际展厅画面",
+          "objects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ],
+          "relatedCases": [
+            1
+          ],
+          "page": "./?id=1",
+          "defaultRecipe": null
+        },
+        {
+          "id": "product-lab",
+          "role": "实体琴键、机器人与猫、默认配方谱板",
+          "objects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ],
+          "relatedCases": [
+            6
+          ],
+          "page": "./?id=6",
+          "defaultRecipe": {
+            "mode": "static-default-illustration",
+            "mood": "calm",
+            "noteCount": 32,
+            "tempo": 90
+          }
+        },
+        {
+          "id": "research-notes",
+          "role": "路线沙盘、来源册、案例索引与参观凭证",
+          "objects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ],
+          "relatedCases": [
+            7
+          ],
+          "page": "../#demo-07",
+          "defaultRecipe": null
+        }
+      ],
+      "space": {
+        "phase": "market-square",
+        "discovered": [
+          "visual-systems",
+          "product-lab",
+          "research-notes"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 9.1,
+      "renderer": "webgl",
+      "renderCount": 55,
+      "renderStats": {
+        "drawCalls": 111,
+        "triangles": 28188,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Original detailed procedural architecture and three static content-specific exhibit collections",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+        "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+      }
+    },
+    "research": {
+      "caseId": 7,
+      "time": "dusk",
+      "treeDensity": 20,
+      "selected": "research-notes",
+      "visits": [
+        {
+          "id": "visual-systems",
+          "title": "视觉系统展位",
+          "visitedAt": "2026-10-02T18:41:12.623Z",
+          "via": "near-view",
+          "positionAtView": {
+            "x": -2.913902941098371,
+            "z": 1.7072790293851057,
+            "yaw": 0.76,
+            "pitch": -0.02
+          },
+          "distanceAtView": 2.62,
+          "relatedCases": [
+            1
+          ],
+          "shownObjects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ]
+        },
+        {
+          "id": "product-lab",
+          "title": "产品原型展位",
+          "visitedAt": "2026-10-02T18:41:13.827Z",
+          "via": "guided-shortcut",
+          "positionAtView": {
+            "x": 2.8,
+            "z": -3.9,
+            "yaw": 0.1,
+            "pitch": 0
+          },
+          "distanceAtView": 2.21,
+          "relatedCases": [
+            6
+          ],
+          "shownObjects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ]
+        },
+        {
+          "id": "research-notes",
+          "title": "研究档案展位",
+          "visitedAt": "2026-10-02T18:41:15.263Z",
+          "via": "guided-shortcut",
+          "positionAtView": {
+            "x": 5.4,
+            "z": 2.5,
+            "yaw": 0.37,
+            "pitch": 0
+          },
+          "distanceAtView": 2.47,
+          "relatedCases": [
+            7
+          ],
+          "shownObjects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ]
+        }
+      ],
+      "view": {
+        "yaw": 0.4,
+        "elevation": 0.54,
+        "distance": 34
+      },
+      "mode": "walk",
+      "position": {
+        "x": 5.4,
+        "z": 2.5,
+        "yaw": 0.37,
+        "pitch": 0
+      },
+      "reached": [
+        "visual-systems",
+        "product-lab",
+        "research-notes"
+      ],
+      "proximity": {
+        "id": "research-notes",
+        "distance": 2.47,
+        "canView": true,
+        "viewed": true
+      },
+      "exhibits": [
+        {
+          "id": "visual-systems",
+          "role": "纸档案、主题色与实际展厅画面",
+          "objects": [
+            "双页作品档案",
+            "三种展厅主题样板",
+            "CASE 01 实际运行画面"
+          ],
+          "relatedCases": [
+            1
+          ],
+          "page": "./?id=1",
+          "defaultRecipe": null
+        },
+        {
+          "id": "product-lab",
+          "role": "实体琴键、机器人与猫、默认配方谱板",
+          "objects": [
+            "微缩实体琴键",
+            "原创机器人与猫",
+            "默认 32 音符 / 90 BPM 谱板",
+            "CASE 06 实际运行画面"
+          ],
+          "relatedCases": [
+            6
+          ],
+          "page": "./?id=6",
+          "defaultRecipe": {
+            "mode": "static-default-illustration",
+            "mood": "calm",
+            "noteCount": 32,
+            "tempo": 90
+          }
+        },
+        {
+          "id": "research-notes",
+          "role": "路线沙盘、来源册、案例索引与参观凭证",
+          "objects": [
+            "本例入口与三展位路线沙盘",
+            "原片 00:22 来源册",
+            "观察 / 结论 / 验收索引抽屉",
+            "本次真实参观凭证"
+          ],
+          "relatedCases": [
+            7
+          ],
+          "page": "../#demo-07",
+          "defaultRecipe": null
+        }
+      ],
+      "space": {
+        "phase": "market-square",
+        "discovered": [
+          "visual-systems",
+          "product-lab",
+          "research-notes"
+        ],
+        "booths": [
+          {
+            "id": "visual-systems",
+            "x": -4.6,
+            "z": -0.3,
+            "yaw": 0.13,
+            "approach": {
+              "x": -4.35,
+              "z": 2,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "product-lab",
+            "x": 2.6,
+            "z": -6.1,
+            "yaw": 0.1,
+            "approach": {
+              "x": 2.8,
+              "z": -3.9,
+              "yaw": 0.1,
+              "pitch": 0
+            }
+          },
+          {
+            "id": "research-notes",
+            "x": 4.5,
+            "z": 0.2,
+            "yaw": -0.12,
+            "approach": {
+              "x": 5.4,
+              "z": 2.5,
+              "yaw": 0.37,
+              "pitch": 0
+            }
+          }
+        ],
+        "entry": {
+          "x": -2.55,
+          "z": 10.8,
+          "yaw": 0.04,
+          "pitch": -0.02
+        }
+      },
+      "walkingDistance": 9.1,
+      "renderer": "webgl",
+      "renderCount": 57,
+      "renderStats": {
+        "drawCalls": 263,
+        "triangles": 104736,
+        "pixelRatio": 1
+      },
+      "assets": {
+        "geometry": "Original detailed procedural architecture and three static content-specific exhibit collections",
+        "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+        "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+      }
+    }
+  },
+  "screens": {
+    "entry": "assets/qa/case-07-exhibits/entry.png",
+    "square": "assets/qa/case-07-exhibits/square.png",
+    "01-approached": "assets/qa/case-07-exhibits/01-approached.png",
+    "01-viewed": "assets/qa/case-07-exhibits/01-viewed.png",
+    "02-close": "assets/qa/case-07-exhibits/02-close.png",
+    "03-close": "assets/qa/case-07-exhibits/03-close.png",
+    "03-mobile": "assets/qa/case-07-exhibits/03-mobile.png"
+  },
+  "export": {
+    "schemaVersion": 2,
+    "product": "我们的研究集市",
+    "caseReference": 7,
+    "createdAt": "2026-10-02T18:41:17.089Z",
+    "environment": {
+      "time": "dusk",
+      "timeLabel": "黄昏",
+      "treeDensity": 20
+    },
+    "spatialVisit": {
+      "entry": {
+        "x": -2.55,
+        "z": 10.8,
+        "yaw": 0.04,
+        "pitch": -0.02
+      },
+      "discovered": [
+        "visual-systems",
+        "product-lab",
+        "research-notes"
+      ],
+      "reached": [
+        "visual-systems",
+        "product-lab",
+        "research-notes"
+      ],
+      "walkingDistance": 9.1
+    },
+    "exhibits": [
+      {
+        "id": "visual-systems",
+        "role": "纸档案、主题色与实际展厅画面",
+        "objects": [
+          "双页作品档案",
+          "三种展厅主题样板",
+          "CASE 01 实际运行画面"
+        ],
+        "relatedCases": [
+          1
+        ],
+        "page": "./?id=1",
+        "defaultRecipe": null,
+        "boundary": "这里是静态陈列模型；翻开、主题编辑和 HTML 导出在实际作品集页面中操作。"
+      },
+      {
+        "id": "product-lab",
+        "role": "实体琴键、机器人与猫、默认配方谱板",
+        "objects": [
+          "微缩实体琴键",
+          "原创机器人与猫",
+          "默认 32 音符 / 90 BPM 谱板",
+          "CASE 06 实际运行画面"
+        ],
+        "relatedCases": [
+          6
+        ],
+        "page": "./?id=6",
+        "defaultRecipe": {
+          "mode": "static-default-illustration",
+          "mood": "calm",
+          "noteCount": 32,
+          "tempo": 90
+        },
+        "boundary": "陈列模型与谱板为静态默认配方示意，不播放声音，也不代表其它页面当前编辑值。"
+      },
+      {
+        "id": "research-notes",
+        "role": "路线沙盘、来源册、案例索引与参观凭证",
+        "objects": [
+          "本例入口与三展位路线沙盘",
+          "原片 00:22 来源册",
+          "观察 / 结论 / 验收索引抽屉",
+          "本次真实参观凭证"
+        ],
+        "relatedCases": [
+          7
+        ],
+        "page": "../#demo-07",
+        "defaultRecipe": null,
+        "boundary": "沙盘是当前固定布局的缩尺说明，不是可编辑地图；原作 NPC 对话能力未确认，也未在此复现。"
+      }
+    ],
+    "view": {
+      "yaw": 0.4,
+      "elevation": 0.54,
+      "distance": 34
+    },
+    "renderer": "webgl",
+    "selectedExhibit": "research-notes",
+    "visitedExhibits": [
+      {
+        "id": "visual-systems",
+        "title": "视觉系统展位",
+        "visitedAt": "2026-10-02T18:41:12.623Z",
+        "via": "near-view",
+        "positionAtView": {
+          "x": -2.913902941098371,
+          "z": 1.7072790293851057,
+          "yaw": 0.76,
+          "pitch": -0.02
+        },
+        "distanceAtView": 2.62,
+        "relatedCases": [
+          1
+        ],
+        "shownObjects": [
+          "双页作品档案",
+          "三种展厅主题样板",
+          "CASE 01 实际运行画面"
+        ],
+        "summary": "纸档案对应“聚焦 → 翻开 → 阅读”的成果层级；主题样板对应白盒、黑盒与陶土三种已有皮肤。打开实际页面，可以编辑名称与主题并导出离线展厅。"
+      },
+      {
+        "id": "product-lab",
+        "title": "产品原型展位",
+        "visitedAt": "2026-10-02T18:41:13.827Z",
+        "via": "guided-shortcut",
+        "positionAtView": {
+          "x": 2.8,
+          "z": -3.9,
+          "yaw": 0.1,
+          "pitch": 0
+        },
+        "distanceAtView": 2.21,
+        "relatedCases": [
+          6
+        ],
+        "shownObjects": [
+          "微缩实体琴键",
+          "原创机器人与猫",
+          "默认 32 音符 / 90 BPM 谱板",
+          "CASE 06 实际运行画面"
+        ],
+        "summary": "静态谱板为默认专注配方示意：32 音符、90 BPM，并不随另一个页面的编辑实时变化。进入实际原型，可以编辑、播放与导出。当前参观状态另由本集市记录。"
+      },
+      {
+        "id": "research-notes",
+        "title": "研究档案展位",
+        "visitedAt": "2026-10-02T18:41:15.263Z",
+        "via": "guided-shortcut",
+        "positionAtView": {
+          "x": 5.4,
+          "z": 2.5,
+          "yaw": 0.37,
+          "pitch": 0
+        },
+        "distanceAtView": 2.47,
+        "relatedCases": [
+          7
+        ],
+        "shownObjects": [
+          "本例入口与三展位路线沙盘",
+          "原片 00:22 来源册",
+          "观察 / 结论 / 验收索引抽屉",
+          "本次真实参观凭证"
+        ],
+        "summary": "原作者工具链未确认。发现、走近与查看是三个不同状态；下面的凭证读取本次真实记录，导出的 JSON 保留三者与步行距离。"
+      }
+    ],
+    "task": {
+      "target": 3,
+      "visited": 3,
+      "complete": true
+    },
+    "implementation": "Original procedural village and static exhibit models; the source author’s toolchain is unconfirmed."
+  },
+  "summary": {
+    "passed": 18,
+    "total": 18,
+    "failed": [],
+    "runtimeErrors": []
+  }
+}

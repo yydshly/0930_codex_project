@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "product": "我们的研究集市",
+  "caseReference": 7,
+  "createdAt": "2026-10-02T14:56:24.544Z",
+  "environment": {
+    "time": "dusk",
+    "timeLabel": "黄昏",
+    "treeDensity": 20
+  },
+  "spatialVisit": {
+    "entry": {
+      "x": -2.55,
+      "z": 10.8,
+      "yaw": 0.04,
+      "pitch": -0.02
+    },
+    "discovered": [
+      "visual-systems",
+      "product-lab",
+      "research-notes"
+    ],
+    "reached": [
+      "visual-systems",
+      "product-lab",
+      "research-notes"
+    ],
+    "walkingDistance": 11.09
+  },
+  "view": {
+    "yaw": 0.4,
+    "elevation": 0.54,
+    "distance": 34
+  },
+  "renderer": "webgl",
+  "selectedExhibit": "research-notes",
+  "visitedExhibits": [
+    {
+      "id": "visual-systems",
+      "title": "视觉系统展位",
+      "visitedAt": "2026-10-02T14:56:21.147Z",
+      "summary": "一个研究集市可以承载多个作品展位，点击后呈现各项目的用途与下一步。"
+    },
+    {
+      "id": "product-lab",
+      "title": "产品原型展位",
+      "visitedAt": "2026-10-02T14:56:22.445Z",
+      "summary": "空间展示与项目详情共享展位数据，适合线上产品发布会或创作成果展。"
+    },
+    {
+      "id": "research-notes",
+      "title": "研究档案展位",
+      "visitedAt": "2026-10-02T14:56:23.232Z",
+      "summary": "可在活动后导出访问记录，检查哪些研究主题被看过，并生成个人回顾。"
+    }
+  ],
+  "task": {
+    "target": 3,
+    "visited": 3,
+    "complete": true
+  },
+  "implementation": "Original procedural village and interactions; the source author’s toolchain is unconfirmed."
+}

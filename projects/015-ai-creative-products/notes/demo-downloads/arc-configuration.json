@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "demo": "arc-workspace-showroom",
+  "createdAt": "2026-10-02T11:30:33.390Z",
+  "task": "为研究工作台选择灯具配置，比较方案并交给团队评审",
+  "project": {
+    "name": "我们的研究工作台 · 夜间评审",
+    "notes": "先确认结构，再比较夜间显示效果；当前方案交给团队评审。"
+  },
+  "configuration": {
+    "color": "#e7d9be",
+    "finish": "matte",
+    "light": 52,
+    "explode": 0,
+    "room": "night",
+    "setting": "interior",
+    "spin": false,
+    "reflections": true
+  },
+  "observation": {
+    "renderer": "webgl",
+    "view": "hero",
+    "zoom": 1,
+    "part": null,
+    "setting": "interior",
+    "reflections": true,
+    "environmentReady": true,
+    "environmentFailed": false,
+    "backgroundSource": "generated-panorama",
+    "restorablePreset": "hero",
+    "note": "保存配置与标准视角；自由拖动的精确相机角度不属于恢复内容。"
+  },
+  "referenceA": {
+    "projectName": "研究工作台照明方案",
+    "notes": "用于日常研究、原型评审与桌面创作，比较日间和夜间的展示效果。",
+    "configuration": {
+      "color": "#356873",
+      "finish": "matte",
+      "light": 70,
+      "explode": 0,
+      "room": "studio",
+      "setting": "interior",
+      "spin": false,
+      "reflections": true
+    },
+    "standardView": "hero",
+    "createdAt": "2026-10-02T11:30:32.908Z"
+  },
+  "differences": [
+    {
+      "field": "color",
+      "label": "配色",
+      "before": "海湾蓝",
+      "after": "纸沙色"
+    },
+    {
+      "field": "room",
+      "label": "使用氛围",
+      "before": "日光",
+      "after": "夜景"
+    },
+    {
+      "field": "light",
+      "label": "视觉亮度",
+      "before": "70%",
+      "after": "52%"
+    }
+  ],
+  "sources": [
+    {
+      "project": "011",
+      "role": "原创 ARC 概念模型与本地场景素材"
+    },
+    {
+      "case": 1,
+      "role": "作品的展示顺序与选择入口"
+    },
+    {
+      "case": 4,
+      "role": "分步演示与表达节奏"
+    },
+    {
+      "case": 9,
+      "role": "三维场景与参数化交互"
+    }
+  ],
+  "scope": "原创概念选型原型；未校准实物尺寸和照度，未接入订单或采购。"
+}

@@ -1,0 +1,33 @@
+{
+  "revision": "v9",
+  "animationModel": "Connected robot/cat leg geometry, world-space support steps and independent head motion",
+  "sourceHashes": {
+    "web/labs/music-art.js": "6c6a4e452e2b6f8c501370041e5efbf2482b512630aabefab6059c8092cfc29c",
+    "web/labs/music-performance.js": "e4fce0bde17575a9d5bada1b4a4f5da90bd43581ca0a6341e99bb051eedc6830"
+  },
+  "file": {
+    "path": "notes/reference-music-downloads/duet.webm",
+    "sha256": "cc815b019a6a85409c37fc177d059b14b8fa60fc28ae9d52d89f80263bc67289"
+  },
+  "checkedAt": "2026-10-02T16:24:12.087Z",
+  "checks": [
+    "actual downloaded file has finite duration within 0.5 seconds of the 12.8 second live recipe",
+    "actual file seekable range covers full recording",
+    "seek to 8 seconds then decode and play video plus audio"
+  ],
+  "meta": {
+    "duration": 12.8,
+    "seekable": [
+      [
+        0,
+        12.8
+      ]
+    ]
+  },
+  "decoded": {
+    "time": 8.632282,
+    "audio": 13893,
+    "video": 318058
+  },
+  "errors": []
+}

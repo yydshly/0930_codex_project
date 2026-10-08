@@ -1,0 +1,237 @@
+{
+  "caseId": 8,
+  "check": {
+    "name": "same-task-input-coalesces-and-flushes-final-release-target",
+    "pass": true,
+    "method": "Trusted actual mouse down selects the real ray hit. Three synthetic same-task pointer moves and release exercise the queue boundary deterministically; state is captured in that same JS task before spring recovery. This fixture is separate from all trusted pointer performance measurements.",
+    "actual": {
+      "input": {
+        "received": 3,
+        "applied": 1,
+        "coalesced": 2,
+        "flushedOnRelease": 1,
+        "pending": 0,
+        "mode": "one deformation update per animation frame, final pointer target flushed on release"
+      },
+      "character": {
+        "id": "rabbit",
+        "name": "粉兔",
+        "height": 0,
+        "deformation": 0.076,
+        "localIndent": 0.143,
+        "activePart": "head",
+        "dragging": false,
+        "stretch": {
+          "x": 0.645,
+          "y": -0.077,
+          "z": 0.022
+        },
+        "deformedParts": [
+          "body",
+          "head",
+          "leftEar",
+          "leftHand",
+          "leftFoot",
+          "rightEar",
+          "rightHand",
+          "rightFoot"
+        ],
+        "vertexCount": 9098,
+        "surface": {
+          "type": "continuous-skin",
+          "boundaryEdges": 0,
+          "restVolume": 3.5416,
+          "volumeBeforeCompensation": 0.9728,
+          "volumeAfterCompensation": 1,
+          "transverseThicknessRatio": 1.0182,
+          "compensationCoefficient": 0.163,
+          "minimumJacobian": 0.952,
+          "regions": [
+            "body",
+            "head",
+            "leftEar",
+            "leftHand",
+            "leftFoot",
+            "rightEar",
+            "rightHand",
+            "rightFoot"
+          ]
+        }
+      },
+      "errors": []
+    }
+  },
+  "state": {
+    "module": "mascot",
+    "status": "playing",
+    "mode": "sandbox",
+    "running": true,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 16,
+      "triangles": 106354,
+      "pixelRatio": 0.7069,
+      "defaultPixelRatio": 1,
+      "canvasPixels": {
+        "width": 960,
+        "height": 367
+      },
+      "interactiveResolutionLimit": 960,
+      "attachmentBatches": 3,
+      "skinTriangles": 49288,
+      "attachmentTriangles": 28480,
+      "analyticNormals": true,
+      "drawUpdates": {
+        "submitted": 4,
+        "skipped": 3,
+        "lastGeometryMs": 14.400000005960464,
+        "lastSubmitMs": 0.699999988079071
+      },
+      "staticDrawCallsSaved": 0
+    },
+    "input": {
+      "received": 3,
+      "applied": 1,
+      "coalesced": 2,
+      "flushedOnRelease": 1,
+      "pending": 0,
+      "mode": "one deformation update per animation frame, final pointer target flushed on release"
+    },
+    "selected": "rabbit",
+    "shownCharacters": [
+      "rabbit",
+      "dumpling",
+      "cat"
+    ],
+    "target": null,
+    "pokes": 1,
+    "hits": 0,
+    "goal": null,
+    "combo": 0,
+    "maxCombo": 0,
+    "misses": 0,
+    "remaining": null,
+    "elapsed": 0.1,
+    "softness": 65,
+    "gravity": true,
+    "soundEnabled": true,
+    "viewAngle": 0,
+    "characters": [
+      {
+        "id": "rabbit",
+        "name": "粉兔",
+        "height": 0,
+        "deformation": 0.076,
+        "localIndent": 0.143,
+        "activePart": "head",
+        "dragging": false,
+        "stretch": {
+          "x": 0.645,
+          "y": -0.077,
+          "z": 0.022
+        },
+        "deformedParts": [
+          "body",
+          "head",
+          "leftEar",
+          "leftHand",
+          "leftFoot",
+          "rightEar",
+          "rightHand",
+          "rightFoot"
+        ],
+        "vertexCount": 9098,
+        "surface": {
+          "type": "continuous-skin",
+          "boundaryEdges": 0,
+          "restVolume": 3.5416,
+          "volumeBeforeCompensation": 0.9728,
+          "volumeAfterCompensation": 1,
+          "transverseThicknessRatio": 1.0182,
+          "compensationCoefficient": 0.163,
+          "minimumJacobian": 0.952,
+          "regions": [
+            "body",
+            "head",
+            "leftEar",
+            "leftHand",
+            "leftFoot",
+            "rightEar",
+            "rightHand",
+            "rightFoot"
+          ]
+        }
+      },
+      {
+        "id": "dumpling",
+        "name": "橙团",
+        "height": 0,
+        "deformation": 0,
+        "localIndent": 0,
+        "activePart": null,
+        "dragging": false,
+        "stretch": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "deformedParts": [],
+        "vertexCount": 7526,
+        "surface": {
+          "type": "continuous-skin",
+          "boundaryEdges": 0,
+          "restVolume": 3.6027,
+          "volumeBeforeCompensation": 1,
+          "volumeAfterCompensation": 1,
+          "transverseThicknessRatio": 1,
+          "compensationCoefficient": 0,
+          "minimumJacobian": 1,
+          "regions": [
+            "body"
+          ]
+        }
+      },
+      {
+        "id": "cat",
+        "name": "薄荷猫",
+        "height": 0,
+        "deformation": 0,
+        "localIndent": 0,
+        "activePart": null,
+        "dragging": false,
+        "stretch": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "deformedParts": [],
+        "vertexCount": 8026,
+        "surface": {
+          "type": "continuous-skin",
+          "boundaryEdges": 0,
+          "restVolume": 3.6863,
+          "volumeBeforeCompensation": 1,
+          "volumeAfterCompensation": 1,
+          "transverseThicknessRatio": 1,
+          "compensationCoefficient": 0,
+          "minimumJacobian": 1,
+          "regions": [
+            "body",
+            "leftEar",
+            "rightEar"
+          ]
+        }
+      }
+    ],
+    "scope": "Original continuous procedural skins. Local spring fields and bounded transverse thickness compensation, not exact volume conservation or full soft-body physics. Combo challenge is our optional extension.",
+    "log": [
+      {
+        "time": 0.04,
+        "character": "rabbit",
+        "mode": "sandbox",
+        "softness": 65,
+        "gravity": true
+      }
+    ]
+  }
+}

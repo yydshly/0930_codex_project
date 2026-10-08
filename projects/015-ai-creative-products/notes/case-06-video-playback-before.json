@@ -1,0 +1,197 @@
+{
+  "caseId": 6,
+  "testedAt": "2026-10-02T15:24:11.231Z",
+  "mode": "Read-only full-file playback; no product code changed",
+  "file": {
+    "path": "notes/reference-music-downloads/duet.webm",
+    "bytes": 123162,
+    "modifiedAt": "2026-10-02T15:15:21.935Z",
+    "durationSeconds": 13.23,
+    "video": {
+      "codec": "vp9",
+      "width": 1338,
+      "height": 610,
+      "encodedFrames": 6,
+      "encodedPackets": 6,
+      "payloadBytes": 30904,
+      "averageEncodedFramesPerSecond": 0.4535147392290249,
+      "frameTimestamps": [
+        0,
+        3.617,
+        5.673,
+        7.846,
+        9.703,
+        11.435
+      ],
+      "frameIntervalsSeconds": [
+        3.617,
+        2.056,
+        2.173,
+        1.8569999999999993,
+        1.732000000000001
+      ],
+      "longestFrameHoldSeconds": 3.617
+    },
+    "audio": {
+      "codec": "opus",
+      "sampleRate": 48000,
+      "channels": 2,
+      "packets": 193,
+      "payloadBytes": 89403,
+      "firstPacketTime": 1.7,
+      "lastPacketTime": 13.23
+    },
+    "containerDeclaredDurationSeconds": 12.8
+  },
+  "environment": {
+    "browser": "Playwright Chromium",
+    "version": "151.0.7922.34",
+    "headless": true,
+    "sceneRendering": false,
+    "source": "Local file bytes played from an in-memory Blob URL",
+    "ffprobeVersion": "6.1.3"
+  },
+  "playback": {
+    "ended": true,
+    "duration": 13.23,
+    "currentTime": 13.23,
+    "wallSeconds": 13.550800000011922,
+    "playbackRate": 1,
+    "videoWidth": 1338,
+    "videoHeight": 610,
+    "muted": false,
+    "volume": 0.05,
+    "initialQuality": {
+      "creationTime": 151.60000002384186,
+      "totalVideoFrames": 0,
+      "droppedVideoFrames": 0,
+      "corruptedVideoFrames": 0
+    },
+    "finalQuality": {
+      "creationTime": 13703,
+      "totalVideoFrames": 6,
+      "droppedVideoFrames": 0,
+      "corruptedVideoFrames": 0
+    },
+    "webkitVideoDecodedByteCount": 30904,
+    "webkitAudioDecodedByteCount": 89403,
+    "rvfcSupported": true,
+    "frames": [
+      {
+        "wallMs": 241.6,
+        "mediaTime": 0,
+        "presentedFrames": 1,
+        "expectedDisplayTime": 230.5,
+        "processingDuration": 0.0044,
+        "fingerprint": 2907142806,
+        "evidence": "assets/qa/case-06-video-playback/frame-01-0.000s.png"
+      },
+      {
+        "wallMs": 4008.1,
+        "mediaTime": 3.617,
+        "presentedFrames": 2,
+        "expectedDisplayTime": 4024.8,
+        "processingDuration": 0.0052,
+        "fingerprint": 4062814180,
+        "evidence": "assets/qa/case-06-video-playback/frame-02-3.617s.png"
+      },
+      {
+        "wallMs": 6074.7,
+        "mediaTime": 5.673,
+        "presentedFrames": 3,
+        "expectedDisplayTime": 6086.9,
+        "processingDuration": 0.0046,
+        "fingerprint": 2931325780,
+        "evidence": "assets/qa/case-06-video-playback/frame-03-5.673s.png"
+      },
+      {
+        "wallMs": 6441.3,
+        "mediaTime": 7.846,
+        "presentedFrames": 4,
+        "expectedDisplayTime": 8867.1,
+        "processingDuration": 0.0038,
+        "fingerprint": 1590704792,
+        "evidence": "assets/qa/case-06-video-playback/frame-04-7.846s.png"
+      },
+      {
+        "wallMs": 8724.6,
+        "mediaTime": 9.703,
+        "presentedFrames": 5,
+        "expectedDisplayTime": 11011.6,
+        "processingDuration": 0.0035,
+        "fingerprint": 1294872520,
+        "evidence": "assets/qa/case-06-video-playback/frame-05-9.703s.png"
+      }
+    ],
+    "events": [
+      {
+        "type": "loadedmetadata",
+        "wallMs": 151.40000000596046,
+        "mediaTime": 0,
+        "readyState": 4
+      },
+      {
+        "type": "loadeddata",
+        "wallMs": 151.5,
+        "mediaTime": 0,
+        "readyState": 4
+      },
+      {
+        "type": "canplay",
+        "wallMs": 152.2000000178814,
+        "mediaTime": 0,
+        "readyState": 4
+      },
+      {
+        "type": "playing",
+        "wallMs": 152.40000000596046,
+        "mediaTime": 0,
+        "readyState": 4
+      },
+      {
+        "type": "ended",
+        "wallMs": 13702.5,
+        "mediaTime": 13.23,
+        "readyState": 4
+      }
+    ],
+    "averageDecodedFramesPerSecond": 0.4535147392290249,
+    "callbackFrameCount": 5,
+    "distinctVisualFrameFingerprints": 5
+  },
+  "checks": [
+    {
+      "name": "Complete browser playback reaches ended",
+      "pass": true
+    },
+    {
+      "name": "Browser processes all encoded video frames without dropped or corrupt frames",
+      "pass": true
+    },
+    {
+      "name": "Video contains changing visual frames",
+      "pass": true
+    },
+    {
+      "name": "Audio and video decode bytes are reported",
+      "pass": true
+    },
+    {
+      "name": "Export contains enough frames for continuous motion (at least 24 fps)",
+      "pass": false
+    }
+  ],
+  "passed": 4,
+  "total": 5,
+  "errors": [],
+  "verdict": "Playback is valid but the export is severely undersampled: only six encoded video frames across 13.23 seconds (0.45 fps). This is an export limitation, not dropped frames during this browser playback.",
+  "boundaries": [
+    "This is a headless Chromium decoder test, not a measurement of the user sidebar GPU or its live Three.js rendering speed.",
+    "getVideoPlaybackQuality measures playback drops; it cannot recover scene frames that were never encoded.",
+    "Frame count and timestamps were independently read from the saved WebM with ffprobe. The stream r_frame_rate field is not a reliable average for this variable frame rate file.",
+    "Average frame rate uses the actual browser playback duration of 13.23 seconds. Container declared duration is 12.80 seconds and differs from the packet timeline.",
+    "Five requestVideoFrameCallback observations had distinct frame fingerprints. This compositor callback count is not the encoded frame count; headless callbacks can be fewer than the playback quality total of six.",
+    "Audio byte counters establish decoding, not subjective sound quality or gap-free audio; packet timestamps are recorded for further inspection."
+  ],
+  "phase": "before"
+}

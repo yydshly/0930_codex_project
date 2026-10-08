@@ -1,0 +1,746 @@
+{
+  "caseId": 9,
+  "version": 16,
+  "reviewScope": "Read-only source review and actual Three.js CPU decoding/transforms. No browser was launched; GPU support, pixels and live interactions are verified separately by root.",
+  "checks": [
+    {
+      "name": "Binary layout exact and 32-bit aligned",
+      "passed": true,
+      "detail": {
+        "bytes": 206840,
+        "expected": 206840,
+        "vertices": 4231,
+        "indices": 17862
+      }
+    },
+    {
+      "name": "Simplified binary matches recorded SHA256",
+      "passed": true,
+      "detail": "8742b01575466fe457dd4fcd5c3e5b1a3faf39009dff4df139a1bdee1af82a49"
+    },
+    {
+      "name": "All position/normal/UV components are finite",
+      "passed": true
+    },
+    {
+      "name": "Every triangle index addresses a valid vertex",
+      "passed": true,
+      "detail": {
+        "min": 0,
+        "max": 4230,
+        "vertexCount": 4231
+      }
+    },
+    {
+      "name": "Normals have nonzero unit length within Float32 tolerance",
+      "passed": true,
+      "detail": {
+        "min": 0.9999999556509661,
+        "max": 1.0000000434254566,
+        "uvMin": [
+          0.0012690197909250855,
+          0.0027577877044677734
+        ],
+        "uvMax": [
+          0.9973653554916382,
+          0.9987358450889587
+        ]
+      }
+    },
+    {
+      "name": "LOD triangles contain no repeated indices or near-zero area",
+      "passed": true,
+      "detail": {
+        "repeated": 0,
+        "nearZeroArea": 0,
+        "triangles": 5954
+      }
+    },
+    {
+      "name": "Centered longest span is exactly two units",
+      "passed": true,
+      "detail": {
+        "center": [
+          -0.11317521333694458,
+          0.42214151471853256,
+          -0.027311623096466064
+        ],
+        "factor": 1.0998615111445014,
+        "original": {
+          "isBox3": true,
+          "min": {
+            "x": -0.7446154952049255,
+            "y": -0.07262469828128815,
+            "z": -0.9365170001983643
+          },
+          "max": {
+            "x": 0.5182650685310364,
+            "y": 0.9169077277183533,
+            "z": 0.8818937540054321
+          }
+        },
+        "normalized": {
+          "isBox3": true,
+          "min": {
+            "x": -0.6944968700408936,
+            "y": -0.544174313545227,
+            "z": -1
+          },
+          "max": {
+            "x": 0.6944968700408936,
+            "y": 0.544174313545227,
+            "z": 1
+          }
+        },
+        "scanRadius": 1.1223859175252267,
+        "oldRadius": 1.2458239480364255
+      }
+    },
+    {
+      "name": "Normalized scan local bounds fit the prior deformed rock AABB",
+      "passed": true,
+      "detail": {
+        "scan": {
+          "isBox3": true,
+          "min": {
+            "x": -0.6944968700408936,
+            "y": -0.544174313545227,
+            "z": -1
+          },
+          "max": {
+            "x": 0.6944968700408936,
+            "y": 0.544174313545227,
+            "z": 1
+          }
+        },
+        "old": {
+          "isBox3": true,
+          "min": {
+            "x": -1.0662399530410767,
+            "y": -1.0639820098876953,
+            "z": -1.0796287059783936
+          },
+          "max": {
+            "x": 0.9471114277839661,
+            "y": 1.0051618814468384,
+            "z": 1.1269351243972778
+          }
+        }
+      }
+    },
+    {
+      "name": "All eight actual transformed replacement rocks fit old world AABBs",
+      "passed": false,
+      "detail": [
+        {
+          "x": -5.207636708888082,
+          "z": -30.955041554807725,
+          "size": 1.314724535834719,
+          "scan": {
+            "isBox3": true,
+            "min": {
+              "x": -6.560511112213135,
+              "y": -0.4695298373699188,
+              "z": -32.45174026489258
+            },
+            "max": {
+              "x": -4.119856834411621,
+              "y": 0.8153985142707825,
+              "z": -29.93465805053711
+            }
+          },
+          "old": {
+            "isBox3": true,
+            "min": {
+              "x": -6.8304948806762695,
+              "y": -0.8369381427764893,
+              "z": -32.250587463378906
+            },
+            "max": {
+              "x": -3.7572288513183594,
+              "y": 1.2578402757644653,
+              "z": -29.32059669494629
+            }
+          },
+          "contained": false,
+          "margin": {
+            "min": [
+              -0.26998376846313477,
+              -0.36740830540657043,
+              0.20115280151367188
+            ],
+            "max": [
+              0.3626279830932617,
+              0.44244176149368286,
+              0.6140613555908203
+            ]
+          }
+        },
+        {
+          "x": -5.990951328458069,
+          "z": -21.95199984801188,
+          "size": 1.5386513761139022,
+          "scan": {
+            "isBox3": true,
+            "min": {
+              "x": -7.6809892654418945,
+              "y": -0.46339261531829834,
+              "z": -23.267881393432617
+            },
+            "max": {
+              "x": -4.748269081115723,
+              "y": 1.213017463684082,
+              "z": -20.536691665649414
+            }
+          },
+          "old": {
+            "isBox3": true,
+            "min": {
+              "x": -7.552238941192627,
+              "y": -0.8939279317855835,
+              "z": -23.736112594604492
+            },
+            "max": {
+              "x": -4.01637077331543,
+              "y": 1.6368999481201172,
+              "z": -20.098493576049805
+            }
+          },
+          "contained": false,
+          "margin": {
+            "min": [
+              0.12875032424926758,
+              -0.43053531646728516,
+              -0.468231201171875
+            ],
+            "max": [
+              0.731898307800293,
+              0.42388248443603516,
+              0.4381980895996094
+            ]
+          }
+        },
+        {
+          "x": -7.824227019590734,
+          "z": -16.694973301324037,
+          "size": 1.3762492865568485,
+          "scan": {
+            "isBox3": true,
+            "min": {
+              "x": -9.019357681274414,
+              "y": -0.5445718169212341,
+              "z": -17.852996826171875
+            },
+            "max": {
+              "x": -6.522658824920654,
+              "y": 0.6298311948776245,
+              "z": -15.299846649169922
+            }
+          },
+          "old": {
+            "isBox3": true,
+            "min": {
+              "x": -9.454367637634277,
+              "y": -1.092453122138977,
+              "z": -18.535240173339844
+            },
+            "max": {
+              "x": -6.2835540771484375,
+              "y": 1.1322523355484009,
+              "z": -15.239887237548828
+            }
+          },
+          "contained": true,
+          "margin": {
+            "min": [
+              -0.4350099563598633,
+              -0.5478813052177429,
+              -0.6822433471679688
+            ],
+            "max": [
+              0.2391047477722168,
+              0.5024211406707764,
+              0.05995941162109375
+            ]
+          }
+        },
+        {
+          "x": -6.525739559230102,
+          "z": -8.665906285555947,
+          "size": 1.6439085479769004,
+          "scan": {
+            "isBox3": true,
+            "min": {
+              "x": -8.406373023986816,
+              "y": -0.37262624502182007,
+              "z": -10.015923500061035
+            },
+            "max": {
+              "x": -5.242554664611816,
+              "y": 1.2274585962295532,
+              "z": -6.974235534667969
+            }
+          },
+          "old": {
+            "isBox3": true,
+            "min": {
+              "x": -8.146273612976074,
+              "y": -0.8556863069534302,
+              "z": -10.473922729492188
+            },
+            "max": {
+              "x": -4.4812912940979,
+              "y": 1.7723957300186157,
+              "z": -6.619074821472168
+            }
+          },
+          "contained": false,
+          "margin": {
+            "min": [
+              0.2600994110107422,
+              -0.4830600619316101,
+              -0.45799922943115234
+            ],
+            "max": [
+              0.761263370513916,
+              0.5449371337890625,
+              0.3551607131958008
+            ]
+          }
+        },
+        {
+          "x": -7.407715858086946,
+          "z": -2.446311424250073,
+          "size": 1.6159845088291769,
+          "scan": {
+            "isBox3": true,
+            "min": {
+              "x": -8.692234992980957,
+              "y": -0.4551687240600586,
+              "z": -4.120654582977295
+            },
+            "max": {
+              "x": -5.582797527313232,
+              "y": 0.9213602542877197,
+              "z": -1.1015970706939697
+            }
+          },
+          "old": {
+            "isBox3": true,
+            "min": {
+              "x": -9.44088077545166,
+              "y": -1.0389013290405273,
+              "z": -4.399717330932617
+            },
+            "max": {
+              "x": -5.796125411987305,
+              "y": 1.5600172281265259,
+              "z": -0.6667605042457581
+            }
+          },
+          "contained": false,
+          "margin": {
+            "min": [
+              -0.7486457824707031,
+              -0.5837326049804688,
+              -0.27906274795532227
+            ],
+            "max": [
+              -0.21332788467407227,
+              0.6386569738388062,
+              0.43483656644821167
+            ]
+          }
+        },
+        {
+          "x": -4.714947126589726,
+          "z": 11.488899368037377,
+          "size": 1.1684239171616957,
+          "scan": {
+            "isBox3": true,
+            "min": {
+              "x": -5.973587512969971,
+              "y": -0.2450752705335617,
+              "z": 10.477502822875977
+            },
+            "max": {
+              "x": -3.7722816467285156,
+              "y": 0.8449453711509705,
+              "z": 12.611929893493652
+            }
+          },
+          "old": {
+            "isBox3": true,
+            "min": {
+              "x": -5.913182258605957,
+              "y": -0.6504331827163696,
+              "z": 10.120726585388184
+            },
+            "max": {
+              "x": -3.19952392578125,
+              "y": 1.2402734756469727,
+              "z": 12.86038589477539
+            }
+          },
+          "contained": false,
+          "margin": {
+            "min": [
+              0.06040525436401367,
+              -0.4053579121828079,
+              -0.35677623748779297
+            ],
+            "max": [
+              0.5727577209472656,
+              0.3953281044960022,
+              0.24845600128173828
+            ]
+          }
+        },
+        {
+          "x": -5.08605584238375,
+          "z": 20.07306771350379,
+          "size": 1.1593428626743545,
+          "scan": {
+            "isBox3": true,
+            "min": {
+              "x": -6.06820821762085,
+              "y": -0.21596814692020416,
+              "z": 18.90958595275879
+            },
+            "max": {
+              "x": -3.9431965351104736,
+              "y": 0.7832576632499695,
+              "z": 21.1075439453125
+            }
+          },
+          "old": {
+            "isBox3": true,
+            "min": {
+              "x": -6.628050327301025,
+              "y": -0.6605024933815002,
+              "z": 18.9425048828125
+            },
+            "max": {
+              "x": -3.8602778911590576,
+              "y": 1.2251999378204346,
+              "z": 21.39894676208496
+            }
+          },
+          "contained": false,
+          "margin": {
+            "min": [
+              -0.5598421096801758,
+              -0.4445343464612961,
+              0.03291893005371094
+            ],
+            "max": [
+              0.08291864395141602,
+              0.4419422745704651,
+              0.29140281677246094
+            ]
+          }
+        },
+        {
+          "x": -6.962208064812631,
+          "z": 28.246199793504736,
+          "size": 1.627593812977517,
+          "scan": {
+            "isBox3": true,
+            "min": {
+              "x": -8.673324584960938,
+              "y": -0.38830235600471497,
+              "z": 26.831504821777344
+            },
+            "max": {
+              "x": -5.645298957824707,
+              "y": 1.2211138010025024,
+              "z": 29.78531265258789
+            }
+          },
+          "old": {
+            "isBox3": true,
+            "min": {
+              "x": -8.6212739944458,
+              "y": -0.8640992045402527,
+              "z": 26.319355010986328
+            },
+            "max": {
+              "x": -4.863966464996338,
+              "y": 1.7511115074157715,
+              "z": 30.102108001708984
+            }
+          },
+          "contained": false,
+          "margin": {
+            "min": [
+              0.05205059051513672,
+              -0.4757968485355377,
+              -0.5121498107910156
+            ],
+            "max": [
+              0.7813324928283691,
+              0.529997706413269,
+              0.31679534912109375
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Additional 0.85 multiplier conservatively fits all eight existing world envelopes",
+      "passed": true,
+      "detail": {
+        "maximumSafeMultiplier": 0.8616958509539286,
+        "recommended": 0.85
+      }
+    }
+  ],
+  "source": {
+    "metadata": "web/labs/assets/boulder/geometry.js",
+    "binary": "web/labs/assets/boulder/boulder_01-lod.bin",
+    "record": "notes/case-09-v16-boulder-source.json"
+  },
+  "findings": [
+    {
+      "severity": "medium",
+      "file": "web/labs/lagoon-nature.js",
+      "issue": "Current max-span-to-two normalization fits the old local AABB, but seven of eight replacements extend beyond old world AABBs after the retained asymmetric old shape and existing rotations/nonuniform scale are accounted for.",
+      "recommendation": "Multiply the normalization factor by .85, or derive an equivalent per-instance conservative fit. The maximum common multiplier for these eight current instances is 0.8616958509539286.",
+      "maximumObservedWorldExtension": 0.2601,
+      "resolved": true,
+      "resolvedAt": "2026-10-03T12:12:26.071Z",
+      "resolution": "Actual final .85 factor verified against eight current transformed world AABBs."
+    },
+    {
+      "severity": "medium",
+      "file": "web/labs/lagoon-nature.js",
+      "issue": "Dispose before scan attachment aborts binary fetch but does not dispose the already-created scanned material and its three textures. They are not yet reachable by stage scene traversal.",
+      "recommendation": "Release the owned scanned material and textures on nature disposal if they have not been attached, or explicitly manage ownership for both loaded and pending paths.",
+      "resolved": true,
+      "resolvedAt": "2026-10-03T12:12:26.071Z",
+      "resolution": "Early-dispose runtime verified abort signal and three texture plus one scanned-material disposal events."
+    },
+    {
+      "severity": "medium",
+      "file": "web/labs/lagoon-detail.js",
+      "issue": "Refraction fallback resets UV to the undistorted screen coordinate when sampled depth is in front of water, but thickness continues to use sampled depth from the old UV.",
+      "recommendation": "Resample depth and recompute bedViewDepth after that UV fallback before calculating absorption.",
+      "resolved": true,
+      "resolvedAt": "2026-10-03T12:12:26.071Z",
+      "resolution": "UV fallback re-samples depth and recomputes view depth before absorption; source and numerical equivalent checked."
+    },
+    {
+      "severity": "low",
+      "file": "web/labs/lagoon-refraction.js",
+      "issue": "Offscreen render restores target/viewport, clipping, tone mapping, XR, shadow auto-update and sky/water visibility. It does not restore renderer clear color/alpha modified through the temporary Color background; current main scene always has a background so the next normal render refreshes it.",
+      "recommendation": "Save and restore clear color and alpha if this pass must be reusable with null backgrounds or explicit clear users.",
+      "resolved": true,
+      "resolvedAt": "2026-10-03T12:12:26.071Z",
+      "resolution": "Success and synthetic-failure mock renders both restore clear color/alpha alongside all previous saved renderer state."
+    },
+    {
+      "severity": "medium",
+      "file": "web/labs/lagoon-nature.js",
+      "issue": "Retained glTF TEXCOORD_0 plus unflipped WebP images originally used default TextureLoader flipY=true; tangent-free normal map used positive y scale.",
+      "recommendation": "Match official r160 GLTFLoader texture.flipY=false and invert normalScale.y when tangents are absent.",
+      "resolved": true,
+      "resolvedAt": "2026-10-03T12:12:26.071Z",
+      "resolution": "Three actual mock-loaded scan textures report flipY=false; scanned material normalScale is (.70,-.70); colour texture sRGB and data textures NoColorSpace.",
+      "primaryReference": "https://raw.githubusercontent.com/mrdoob/three.js/r160/examples/jsm/loaders/GLTFLoader.js"
+    }
+  ],
+  "offscreenReview": {
+    "recursiveWaterPrevented": "water.visible=false before nested render; true in finally",
+    "stateRestored": [
+      "previous render target",
+      "renderer viewport",
+      "scene background",
+      "global clipping planes",
+      "XR enabled",
+      "shadow autoUpdate",
+      "tone mapping",
+      "skyMesh visibility"
+    ],
+    "notMutated": [
+      "camera projection",
+      "renderer output color space",
+      "localClippingEnabled",
+      "autoClear"
+    ],
+    "resourceOwnership": "Refraction explicitly disposes depth texture and render target. Stage handles attached scanned geometry/material/maps. Pending unattached scanned resources need explicit cleanup.",
+    "finalStateRestored": [
+      "previous render target",
+      "renderer viewport",
+      "scene background",
+      "global clipping planes",
+      "XR enabled",
+      "shadow autoUpdate",
+      "tone mapping",
+      "skyMesh visibility",
+      "clear color",
+      "clear alpha"
+    ],
+    "finalResourceOwnership": "Pending scanned textures/material released explicitly; attached scan resources remain stage-owned."
+  },
+  "normalizationRecommendation": {
+    "currentRule": "Center then scale longest source span to two units",
+    "maximumMultiplierForAllCurrentInstances": 0.8616958509539286,
+    "recommendedMultiplier": 0.85,
+    "scope": "Shrinking about each existing rock object center leaves transforms/colliders unchanged; these checks use the eight existing deterministic instance transforms.",
+    "results": [
+      {
+        "x": -5.207636708888082,
+        "z": -30.955041554807725,
+        "maximumUniformMultiplier": 0.86560234190202,
+        "scaled85Bounds": {
+          "min": {
+            "x": -6.357579951714377,
+            "y": -0.37271736156294477,
+            "z": -32.22723545837985
+          },
+          "max": {
+            "x": -4.28302381558309,
+            "y": 0.7194717373316514,
+            "z": -30.0877155761777
+          }
+        },
+        "scaled85Contained": true
+      },
+      {
+        "x": -5.990951328458069,
+        "z": -21.95199984801188,
+        "maximumUniformMultiplier": 0.9238180863093254,
+        "scaled85Bounds": {
+          "min": {
+            "x": -7.427483574894321,
+            "y": -0.33456399352085825,
+            "z": -23.070499161619505
+          },
+          "max": {
+            "x": -4.934671418217075,
+            "y": 1.090384573631165,
+            "z": -20.748987893003783
+          }
+        },
+        "scaled85Contained": true
+      },
+      {
+        "x": -7.824227019590734,
+        "z": -16.694973301324037,
+        "maximumUniformMultiplier": 1,
+        "scaled85Bounds": {
+          "min": {
+            "x": -8.840088082021861,
+            "y": -0.4464614860113614,
+            "z": -17.679293297444698
+          },
+          "max": {
+            "x": -6.7178940541211665,
+            "y": 0.5517810740176685,
+            "z": -15.509115646993038
+          }
+        },
+        "scaled85Contained": true
+      },
+      {
+        "x": -6.525739559230102,
+        "z": -8.665906285555947,
+        "maximumUniformMultiplier": 0.8616958509539286,
+        "scaled85Bounds": {
+          "min": {
+            "x": -8.12427800427331,
+            "y": -0.25186513272963396,
+            "z": -9.813420917885272
+          },
+          "max": {
+            "x": -5.435032398804559,
+            "y": 1.1082069823340333,
+            "z": -7.2279861473011655
+          }
+        },
+        "scaled85Contained": true
+      },
+      {
+        "x": -7.407715858086946,
+        "z": -2.446311424250073,
+        "maximumUniformMultiplier": 0.8831027772165414,
+        "scaled85Bounds": {
+          "min": {
+            "x": -8.499557122746856,
+            "y": -0.35301546098928266,
+            "z": -3.8695031091682113
+          },
+          "max": {
+            "x": -5.856535276929289,
+            "y": 0.8170341706063289,
+            "z": -1.3033042237273853
+          }
+        },
+        "scaled85Contained": true
+      },
+      {
+        "x": -4.714947126589726,
+        "z": 11.488899368037377,
+        "maximumUniformMultiplier": 0.9520075352597459,
+        "scaled85Bounds": {
+          "min": {
+            "x": -5.784791455012934,
+            "y": -0.16268008592317224,
+            "z": 10.629212304650187
+          },
+          "max": {
+            "x": -3.913681468707697,
+            "y": 0.7638374595086801,
+            "z": 12.443475314675212
+          }
+        },
+        "scaled85Contained": true
+      },
+      {
+        "x": -5.08605584238375,
+        "z": 20.07306771350379,
+        "maximumUniformMultiplier": 0.9717065353627613,
+        "scaled85Bounds": {
+          "min": {
+            "x": -5.9208853613352845,
+            "y": -0.13780060293133894,
+            "z": 19.08410821687054
+          },
+          "max": {
+            "x": -4.114625431201465,
+            "y": 0.7115413357133087,
+            "z": 20.952372510541192
+          }
+        },
+        "scaled85Contained": true
+      },
+      {
+        "x": -6.962208064812631,
+        "z": 28.246199793504736,
+        "maximumUniformMultiplier": 0.969580919883454,
+        "scaled85Bounds": {
+          "min": {
+            "x": -8.416657106938692,
+            "y": -0.26649989529612644,
+            "z": 27.043709067536454
+          },
+          "max": {
+            "x": -5.842835323872896,
+            "y": 1.1015038381600082,
+            "z": 29.55444572372542
+          }
+        },
+        "scaled85Contained": true
+      }
+    ]
+  },
+  "finalVerification": {
+    "checkedAt": "2026-10-03T12:13:14.312Z",
+    "record": "notes/v16-final-static-verification.json",
+    "scope": "Read-only selected-module syntax/resource checks; actual bundled Three.js CPU geometry and mock render-state semantics. No browser, pixel, GPU support, FPS or performance verification. Source changes limited to 05/07/09/10 and the shared host.",
+    "scanNormalization": 0.85,
+    "envelopesContained": 8,
+    "originalColliderRecords": 24,
+    "worldBoundsMethod": "Clone actual current mesh geometry, apply its retained matrixWorld, compute actual transformed-vertex AABB"
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "module": "mascot",
+  "status": "playing",
+  "mode": "sandbox",
+  "running": true,
+  "renderer": "webgl",
+  "rendering": {
+    "drawCalls": 16,
+    "triangles": 96630,
+    "pixelRatio": 0.7069,
+    "defaultPixelRatio": 1,
+    "canvasPixels": {
+      "width": 960,
+      "height": 367
+    },
+    "interactiveResolutionLimit": 960,
+    "attachmentBatches": 3,
+    "skinTriangles": 42444,
+    "attachmentTriangles": 27040,
+    "analyticNormals": true,
+    "drawUpdates": {
+      "submitted": 130,
+      "skipped": 181,
+      "lastGeometryMs": 14.699999988079071,
+      "lastSubmitMs": 1.4000000059604645
+    },
+    "staticDrawCallsSaved": 0
+  },
+  "input": {
+    "received": 18,
+    "applied": 18,
+    "coalesced": 0,
+    "flushedOnRelease": 0,
+    "pending": 0,
+    "mode": "one deformation update per animation frame, final pointer target flushed on release"
+  },
+  "selected": "cat",
+  "shownCharacters": [
+    "rabbit",
+    "dumpling",
+    "cat"
+  ],
+  "target": null,
+  "pokes": 3,
+  "hits": 0,
+  "goal": null,
+  "combo": 0,
+  "maxCombo": 0,
+  "misses": 0,
+  "remaining": null,
+  "elapsed": 25.5,
+  "softness": 65,
+  "gravity": true,
+  "soundEnabled": true,
+  "viewAngle": 0,
+  "characters": [
+    {
+      "id": "rabbit",
+      "name": "粉兔",
+      "height": 0,
+      "deformation": 0,
+      "localIndent": 0,
+      "activePart": "head",
+      "dragging": false,
+      "stretch": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "deformedParts": [],
+      "vertexCount": 6568,
+      "surface": {
+        "type": "continuous-skin",
+        "boundaryEdges": 0,
+        "restVolume": 2.3807,
+        "volumeBeforeCompensation": 1,
+        "volumeAfterCompensation": 1,
+        "transverseThicknessRatio": 1,
+        "compensationCoefficient": 0,
+        "minimumJacobian": 1,
+        "regions": [
+          "body",
+          "head",
+          "leftEar",
+          "leftHand",
+          "leftFoot",
+          "rightEar",
+          "rightHand",
+          "rightFoot"
+        ]
+      }
+    },
+    {
+      "id": "dumpling",
+      "name": "橙团",
+      "height": 0,
+      "deformation": 0,
+      "localIndent": 0,
+      "activePart": "body",
+      "dragging": false,
+      "stretch": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "deformedParts": [],
+      "vertexCount": 7184,
+      "surface": {
+        "type": "continuous-skin",
+        "boundaryEdges": 0,
+        "restVolume": 3.212,
+        "volumeBeforeCompensation": 1,
+        "volumeAfterCompensation": 1,
+        "transverseThicknessRatio": 1,
+        "compensationCoefficient": 0,
+        "minimumJacobian": 1,
+        "regions": [
+          "body",
+          "body",
+          "leftFold",
+          "rightFold"
+        ]
+      }
+    },
+    {
+      "id": "cat",
+      "name": "薄荷猫",
+      "height": 0,
+      "deformation": 0,
+      "localIndent": 0.003,
+      "activePart": "body",
+      "dragging": false,
+      "stretch": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "deformedParts": [],
+      "vertexCount": 7476,
+      "surface": {
+        "type": "continuous-skin",
+        "boundaryEdges": 0,
+        "restVolume": 3.2281,
+        "volumeBeforeCompensation": 0.9992,
+        "volumeAfterCompensation": 1,
+        "transverseThicknessRatio": 1.0003,
+        "compensationCoefficient": 0.0028,
+        "minimumJacobian": 0.9991,
+        "regions": [
+          "body",
+          "leftEar",
+          "leftFoot",
+          "rightEar",
+          "rightFoot"
+        ]
+      }
+    }
+  ],
+  "scope": "Original continuous procedural skins. Local spring fields and bounded transverse thickness compensation, not exact volume conservation or full soft-body physics. Combo challenge is our optional extension.",
+  "log": [
+    {
+      "time": 0.1,
+      "character": "rabbit",
+      "mode": "sandbox",
+      "softness": 65,
+      "gravity": true
+    },
+    {
+      "time": 8.02,
+      "character": "dumpling",
+      "mode": "sandbox",
+      "softness": 65,
+      "gravity": true
+    },
+    {
+      "time": 16.65,
+      "character": "cat",
+      "mode": "sandbox",
+      "softness": 65,
+      "gravity": true
+    }
+  ]
+}

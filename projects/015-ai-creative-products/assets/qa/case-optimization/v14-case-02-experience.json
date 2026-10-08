@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-03T00:58:11.137Z",
+  "caseId": 2,
+  "product": "三维互动任务与剧情训练工具",
+  "task": "走近记录员，观察选错与确认时的表情，核对证据并返回研究站归档。",
+  "state": {
+    "module": "quest",
+    "status": "playing",
+    "running": true,
+    "renderer": "webgl",
+    "rendering": {
+      "drawCalls": 98,
+      "triangles": 288504,
+      "staticDrawCallsSaved": 5768
+    },
+    "position": {
+      "x": -11.84,
+      "z": -8
+    },
+    "yaw": 1.266,
+    "evidence": [
+      {
+        "id": "archive",
+        "title": "档案来源与时间已核对"
+      }
+    ],
+    "elapsed": 7.2,
+    "destination": null,
+    "dialogueSite": "archive",
+    "interaction": {
+      "site": "archive",
+      "distance": 2.66,
+      "canTalk": true,
+      "sites": [
+        {
+          "id": "hub",
+          "checked": false,
+          "marker": "提交证据"
+        },
+        {
+          "id": "archive",
+          "checked": true,
+          "marker": "已核对"
+        },
+        {
+          "id": "sensor",
+          "checked": false,
+          "marker": "待核对"
+        },
+        {
+          "id": "tower",
+          "checked": false,
+          "marker": "待核对"
+        }
+      ]
+    },
+    "recorders": {
+      "clock": 7.2,
+      "animating": true,
+      "actors": [
+        {
+          "site": "hub",
+          "mode": "idle",
+          "near": false,
+          "checked": false,
+          "eventAge": 0,
+          "yaw": 0,
+          "targetYaw": 0,
+          "face": {
+            "expression": "neutral",
+            "gaze": "street",
+            "smile": 0,
+            "mouthCurve": 0.2,
+            "browPinch": 0,
+            "blink": 0,
+            "eyeOpen": 1,
+            "pupil": {
+              "x": 0.0004,
+              "y": 0
+            },
+            "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+          },
+          "pose": {
+            "bodyY": 0.9349,
+            "headPitch": -0.0126,
+            "headYaw": -0.0499,
+            "rightShoulder": -0.0709,
+            "rightElbow": -0.1,
+            "leftShoulder": -0.34
+          }
+        },
+        {
+          "site": "archive",
+          "mode": "confirm",
+          "near": true,
+          "checked": true,
+          "eventAge": 0,
+          "yaw": -1.263,
+          "targetYaw": -1.266,
+          "face": {
+            "expression": "confirmed",
+            "gaze": "player",
+            "smile": 0.04,
+            "mouthCurve": 0.328,
+            "browPinch": 0,
+            "blink": 0,
+            "eyeOpen": 1,
+            "pupil": {
+              "x": -0.0006,
+              "y": 0
+            },
+            "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+          },
+          "pose": {
+            "bodyY": 0.9417,
+            "headPitch": -0.007,
+            "headYaw": -0.0117,
+            "rightShoulder": -0.36,
+            "rightElbow": -0.8467,
+            "leftShoulder": -0.34
+          }
+        },
+        {
+          "site": "sensor",
+          "mode": "idle",
+          "near": false,
+          "checked": false,
+          "eventAge": 0,
+          "yaw": 0,
+          "targetYaw": 0,
+          "face": {
+            "expression": "neutral",
+            "gaze": "street",
+            "smile": 0,
+            "mouthCurve": 0.2,
+            "browPinch": 0,
+            "blink": 0.6553,
+            "eyeOpen": 0.3447,
+            "pupil": {
+              "x": -0.0029,
+              "y": 0
+            },
+            "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+          },
+          "pose": {
+            "bodyY": 0.9472,
+            "headPitch": 0.0249,
+            "headYaw": 0.0192,
+            "rightShoulder": -0.0327,
+            "rightElbow": -0.1,
+            "leftShoulder": -0.34
+          }
+        },
+        {
+          "site": "tower",
+          "mode": "idle",
+          "near": false,
+          "checked": false,
+          "eventAge": 0,
+          "yaw": 0,
+          "targetYaw": 0,
+          "face": {
+            "expression": "neutral",
+            "gaze": "street",
+            "smile": 0,
+            "mouthCurve": 0.2,
+            "browPinch": 0,
+            "blink": 0,
+            "eyeOpen": 1,
+            "pupil": {
+              "x": -0.0008,
+              "y": 0
+            },
+            "model": "finite geometry poses from actual nearby quest events; no speech lip-sync"
+          },
+          "pose": {
+            "bodyY": 0.9472,
+            "headPitch": 0.0155,
+            "headYaw": 0.0492,
+            "rightShoulder": -0.0324,
+            "rightElbow": -0.1,
+            "leftShoulder": -0.34
+          }
+        }
+      ]
+    },
+    "soundEnabled": true,
+    "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+    "scope": "Original small RPG prototype with connected recorder poses, event-driven facial geometry and finite gaze; no speech lip-sync, original source, combat or VATS reproduced.",
+    "log": [
+      {
+        "time": 0,
+        "action": "开始",
+        "detail": "程序化街区任务"
+      },
+      {
+        "time": 0.1,
+        "action": "前往",
+        "detail": "档案站"
+      },
+      {
+        "time": 7.2,
+        "action": "判断未通过",
+        "detail": "档案站"
+      },
+      {
+        "time": 7.2,
+        "action": "取得证据",
+        "detail": "档案来源与时间已核对"
+      }
+    ]
+  },
+  "source": "https://x.com/chrisfirst/status/2104644598626934858",
+  "reference": {
+    "focus": "程序化三维 RPG：自由探索、任务分支和终端式状态界面组成同一个系统。",
+    "evidence": "作者明确提到浏览器、任务、对话树、V.A.T.S.、Pip-Boy，以及用代码生成视觉和声音。",
+    "sourceTech": "代码生成纹理、场景与声音是作者自述；未取得原作源码。",
+    "ours": "程序化研究街区、分支证据任务和原创记录员；目光、眉眼、嘴线及相连头手动作回应真实交谈与核对。",
+    "tech": "本地 Three.js 程序化环境与实例化人物；颈、肩、肘保持连接，表情和视线读取实际靠近、复核及确认状态，场景标记与终端共用任务结果。",
+    "value": "把 SOP、设备巡检与知识核对放进可探索的训练场景。",
+    "check": "远处不能答题或提交；真实选错和正确核对驱动不同表情与视线，暂停时人物状态冻结，导出保留同一结果。",
+    "boundary": "人物造型、有限表情与动作编排是原创扩展，原作动画算法未知；没有语音口型、行走系统、完整 Fallout、V.A.T.S. 或战斗。",
+    "kernel": "走近才交谈或提交；人物朝向玩家，复核时看记录板，实际确认后表情、手势与证据同步。三份证据齐全后返回研究站归档。"
+  },
+  "optimization": {
+    "caseId": 2,
+    "sourceTarget": "作者明确列出任务、对话树与 Pip-Boy，原片可见世界中的人物。人物应回应实际交谈与核对结果，是我们的体验推演；原作动画算法未知。",
+    "diagnosis": "人物已能转身与抬手，但球形脸只有点状眼睛，复核和确认读不出不同表情；近看时标牌贴着帽顶，衣领与手部也缺少层次。",
+    "priority": "让同一位实际交谈对象用视线、眉眼和嘴线分别回应交谈、复核与确认，并让头帽和记录板在正常近看中完整可见。",
+    "changes": [
+      "02 独立面部模块增加眼睑、虹膜、瞳孔、眉线和连续嘴线；视线与有限眨眼由同一活动墙钟驱动，不加入语音口型。",
+      "交谈注视玩家；真实错答才低头偏向左手记录板、收眉并下移瞳孔，证据不变；正确核对才微笑、松眉并同步记录板、灯、标牌与证据。",
+      "圆帽冠与椭圆帽檐、衣领、口袋扣、袖口和连接手指补足人物层次；世界标牌升高 0.15 m，给帽檐留出空间。",
+      "四位人物仍独立实例化，真实 3.3 m 门槛、移动小步、2.2 秒确认收尾、隐藏暂停和世界静态合批全部保留。",
+      "真实 JSON 导出增加各人物表情、注视目标、瞳孔偏移、眉角、眼睑开合和实际嘴线比例；不通过导出虚构动作结果。"
+    ],
+    "verify": [
+      "21 项针对检查通过，无脚本错误或本地资源缺失；实际错答、正确核对、离开旧问题和三站归档均通过。",
+      "交谈、复核、确认三张真实截图均在同一玩家位置 x=-10.89、z=-8.30，距离 1.66 m；没有修改相机或直接设置人物姿态。",
+      "复核时实际眉角 0.2145、瞳孔偏移 x=-0.0036/y=-0.0043；确认时连续嘴线比例 1.178，眉角 -0.097，实际证据才增加。",
+      "宿主隐藏后人物、时钟与画布像素保持一致；390 px 交谈入口可见且无横向溢出；下载 JSON 与暂停中的人物和证据一致。",
+      "实际归档后 2.2 秒收尾结束，人物、位置和任务耗时停止；重置清除四人表情及核对状态。",
+      "本轮路线对话视角 99 draw calls、288528 triangles，世界静态合批节省仍为 5768；封面为真实确认画面 420×263 裁图，包含帽脸与记录板。"
+    ],
+    "remaining": [
+      "人物仍是风格化几何与有限事件表情，没有行走骨骼、写实皮肤、语音口型或自由对话；没有复现完整 RPG、战斗和 V.A.T.S.。",
+      "人物使用脚下软接触影；新增面部与手部细节增加绘制量，本轮是软件渲染下的布局与交互验证，没有低端手机 GPU 帧率证据。"
+    ]
+  },
+  "scope": "原创有限关卡与风格化人物表情；没有语音口型、完整 RPG 或 V.A.T.S.。"
+}

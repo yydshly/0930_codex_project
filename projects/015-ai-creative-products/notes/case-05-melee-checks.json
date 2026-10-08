@@ -1,0 +1,397 @@
+{
+  "caseId": 5,
+  "checkedAt": "2026-10-02T18:49:50.697Z",
+  "environment": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "viewport": {
+      "width": 1440,
+      "height": 1100
+    },
+    "dpr": 1,
+    "canvas": {
+      "width": 1358,
+      "height": 530
+    }
+  },
+  "performance": {
+    "condition": "isolated Headless Chromium; actual active rAF intervals, paused screenshot/export intervals excluded",
+    "activeFrames": {
+      "samples": 126,
+      "medianMs": 150,
+      "p95Ms": 183.3,
+      "maxMs": 300
+    },
+    "firstVisibleWindupToStrikeActiveWallSeconds": {
+      "dodged": 1.019,
+      "hit": 1.149
+    },
+    "secondWindupRemainingToDamageObservationWallMs": 994,
+    "secondWindupRemainingSimulationSeconds": 0.85,
+    "secondAttackLogSimulationSeconds": 1,
+    "note": "Actual wall observation starts at the unpause request during an already partly charged windup; log intervals are simulation time from the wall-clock loop. Rendering/sampling delay remains in the observed wall interval."
+  },
+  "passed": 13,
+  "total": 13,
+  "checks": [
+    {
+      "name": "preserved-missed-shot-is-not-hit",
+      "pass": true,
+      "actual": {
+        "canFire": true,
+        "lastShotResult": "miss",
+        "hitConfirmed": false,
+        "damageCue": false,
+        "lastImpact": null
+      }
+    },
+    {
+      "name": "actual-windup-has-no-damage",
+      "pass": true,
+      "actual": {
+        "module": "defense",
+        "status": "playing",
+        "running": false,
+        "renderer": "webgl",
+        "rendering": {
+          "drawCalls": 113,
+          "triangles": 84318,
+          "pixelRatio": 1,
+          "defaultPixelRatio": 1,
+          "qualityPolicy": "active longest side at most 960px; ready, paused and finished restore default DPR",
+          "canvasPixels": {
+            "width": 1358,
+            "height": 530
+          },
+          "interactiveResolutionLimit": 960,
+          "staticDrawCallsSaved": 354
+        },
+        "wave": 1,
+        "totalWaves": 3,
+        "health": 100,
+        "ammo": 11,
+        "reloading": false,
+        "kills": 0,
+        "shots": 1,
+        "hits": 0,
+        "attacks": 1,
+        "dodgedAttacks": 0,
+        "incomingHits": 0,
+        "attackTiming": {
+          "clock": "wall-clock",
+          "reactionStart": "after first warning draw; active wall clock excludes hidden intervals",
+          "maxIntegrationStep": 0.008333333333333333,
+          "trigger": 1.45,
+          "reach": 1.6,
+          "frontDot": 0.45,
+          "windup": 0.85,
+          "strike": 0.22,
+          "recovery": 0.9
+        },
+        "elapsed": 9.5,
+        "feedback": {
+          "canFire": false,
+          "lastShotResult": "miss",
+          "hitConfirmed": false,
+          "damageCue": false,
+          "lastImpact": null
+        },
+        "player": {
+          "x": -1.24,
+          "z": -0.62,
+          "yaw": -0.185,
+          "pitch": -0.044
+        },
+        "enemies": [
+          {
+            "id": 1,
+            "x": -1.51,
+            "z": -2.04,
+            "hp": 2,
+            "attack": {
+              "phase": "windup",
+              "phaseElapsed": 0,
+              "cycle": 1,
+              "lockedYaw": 0.185,
+              "lastResult": null,
+              "lastDistance": null,
+              "visibleWindupWallSeconds": null
+            }
+          },
+          {
+            "id": 2,
+            "x": 0.91,
+            "z": -4.58,
+            "hp": 2,
+            "attack": {
+              "phase": "pursuit",
+              "phaseElapsed": 0,
+              "cycle": 0,
+              "lockedYaw": -0.498,
+              "lastResult": null,
+              "lastDistance": null,
+              "visibleWindupWallSeconds": null
+            }
+          },
+          {
+            "id": 3,
+            "x": -6.08,
+            "z": -3.91,
+            "hp": 2,
+            "attack": {
+              "phase": "pursuit",
+              "phaseElapsed": 0,
+              "cycle": 0,
+              "lockedYaw": 0.974,
+              "lastResult": null,
+              "lastDistance": null,
+              "visibleWindupWallSeconds": null
+            }
+          }
+        ],
+        "scope": "Original FPS room and robots. No COD code/assets ported. Ray hits, simple pursuit, telegraphed directional melee with range-checked strike, cover collision, three waves. Active play is limited to 960px; ready/paused/finished restore default clarity.",
+        "log": [
+          {
+            "time": 0,
+            "action": "波次开始",
+            "detail": 1
+          },
+          {
+            "time": 9.5,
+            "action": "进攻蓄势",
+            "detail": {
+              "enemy": 1,
+              "attack": 1,
+              "distance": 1.448,
+              "lockedYaw": 0.185
+            }
+          },
+          {
+            "time": 9.5,
+            "action": "蓄势提示",
+            "detail": {
+              "enemy": 1,
+              "attack": 1,
+              "phase": "windup"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "real-backward-movement-dodges-range-checked-strike",
+      "pass": true,
+      "actual": {
+        "time": 10.4,
+        "action": "近身落空",
+        "detail": {
+          "enemy": 1,
+          "attack": 1,
+          "distance": 4.866,
+          "frontDot": 1,
+          "reason": "out-of-range",
+          "visibleWindupWallSeconds": 1.019,
+          "visibleWindupSimulationSeconds": 0.854,
+          "phase": "strike"
+        }
+      }
+    },
+    {
+      "name": "actual-recovery-is-distinct-from-pursuit-and-strike",
+      "pass": true,
+      "actual": {
+        "id": 1,
+        "x": -1.51,
+        "z": -2.04,
+        "hp": 2,
+        "attack": {
+          "phase": "recovery",
+          "phaseElapsed": 0.256,
+          "cycle": 1,
+          "lockedYaw": 0.185,
+          "lastResult": "miss",
+          "lastDistance": 4.866,
+          "visibleWindupWallSeconds": 1.019
+        }
+      }
+    },
+    {
+      "name": "standing-in-range-damages-once-at-real-strike",
+      "pass": true,
+      "actual": {
+        "healthBefore": 100,
+        "healthAfter": 88,
+        "event": {
+          "time": 16.5,
+          "action": "近身冲击",
+          "detail": {
+            "enemy": 1,
+            "attack": 2,
+            "damage": 12,
+            "distance": 1.444,
+            "frontDot": 1,
+            "visibleWindupWallSeconds": 1.149,
+            "visibleWindupSimulationSeconds": 0.853,
+            "phase": "strike"
+          }
+        },
+        "allNewDamageEvents": [
+          {
+            "time": 16.5,
+            "action": "近身冲击",
+            "detail": {
+              "enemy": 1,
+              "attack": 2,
+              "damage": 12,
+              "distance": 1.444,
+              "frontDot": 1,
+              "visibleWindupWallSeconds": 1.149,
+              "visibleWindupSimulationSeconds": 0.853,
+              "phase": "strike"
+            }
+          }
+        ],
+        "visibleDamage": true
+      }
+    },
+    {
+      "name": "first-visible-warning-preserves-active-wall-reaction-window",
+      "pass": true,
+      "actual": {
+        "hit": 1.149,
+        "dodged": 1.019,
+        "nominal": 0.85
+      }
+    },
+    {
+      "name": "incoming-damage-does-not-fake-shot-hit",
+      "pass": true,
+      "actual": {
+        "canFire": false,
+        "lastShotResult": "miss",
+        "hitConfirmed": false,
+        "damageCue": true,
+        "lastImpact": null
+      }
+    },
+    {
+      "name": "preserved-real-ray-hit-after-incoming-attack",
+      "pass": true,
+      "actual": {
+        "canFire": false,
+        "lastShotResult": "hit",
+        "hitConfirmed": true,
+        "damageCue": false,
+        "lastImpact": {
+          "x": -0.83,
+          "y": 1.2,
+          "z": 1.57
+        }
+      }
+    },
+    {
+      "name": "actual-download-retains-windup-dodge-damage-and-ray-hit",
+      "pass": true,
+      "actual": {
+        "attacks": 4,
+        "dodgedAttacks": 1,
+        "incomingHits": 2,
+        "hits": 1
+      }
+    },
+    {
+      "name": "hidden-freezes-attack-clock-and-health",
+      "pass": true,
+      "actual": {
+        "before": 18.3,
+        "after": 18.3,
+        "health": 76
+      }
+    },
+    {
+      "name": "resume-does-not-repeat-the-prior-strike",
+      "pass": true,
+      "actual": {
+        "elapsed": 18.5,
+        "previous": 18.3
+      }
+    },
+    {
+      "name": "reset-clears-attacks-damage-and-threshold-cues",
+      "pass": true,
+      "actual": {
+        "module": "defense",
+        "status": "ready",
+        "running": false,
+        "renderer": "webgl",
+        "rendering": {
+          "drawCalls": 49,
+          "triangles": 35470,
+          "pixelRatio": 1,
+          "defaultPixelRatio": 1,
+          "qualityPolicy": "active longest side at most 960px; ready, paused and finished restore default DPR",
+          "canvasPixels": {
+            "width": 1358,
+            "height": 530
+          },
+          "interactiveResolutionLimit": 960,
+          "staticDrawCallsSaved": 354
+        },
+        "wave": 0,
+        "totalWaves": 3,
+        "health": 100,
+        "ammo": 12,
+        "reloading": false,
+        "kills": 0,
+        "shots": 0,
+        "hits": 0,
+        "attacks": 0,
+        "dodgedAttacks": 0,
+        "incomingHits": 0,
+        "attackTiming": {
+          "clock": "wall-clock",
+          "reactionStart": "after first warning draw; active wall clock excludes hidden intervals",
+          "maxIntegrationStep": 0.008333333333333333,
+          "trigger": 1.45,
+          "reach": 1.6,
+          "frontDot": 0.45,
+          "windup": 0.85,
+          "strike": 0.22,
+          "recovery": 0.9
+        },
+        "elapsed": 0,
+        "feedback": {
+          "canFire": false,
+          "lastShotResult": "none",
+          "hitConfirmed": false,
+          "damageCue": false,
+          "lastImpact": null
+        },
+        "player": {
+          "x": 0,
+          "z": 6,
+          "yaw": 0,
+          "pitch": 0
+        },
+        "enemies": [],
+        "scope": "Original FPS room and robots. No COD code/assets ported. Ray hits, simple pursuit, telegraphed directional melee with range-checked strike, cover collision, three waves. Active play is limited to 960px; ready/paused/finished restore default clarity.",
+        "log": []
+      }
+    },
+    {
+      "name": "no-page-errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "errors": [],
+  "evidence": [
+    "assets/qa/case-05/melee-windup.png",
+    "assets/qa/case-05/melee-dodged.png",
+    "assets/qa/case-05/melee-recovery.png",
+    "assets/qa/case-05/melee-strike-damage.png",
+    "assets/qa/case-05/melee-ray-hit.png",
+    "notes/case-05-melee-record.json"
+  ],
+  "scope": "Actual keys/buttons, real pursuit and ray hits. Existing visibility interface only pauses actual sampled states; no enemy/player/health injection."
+}

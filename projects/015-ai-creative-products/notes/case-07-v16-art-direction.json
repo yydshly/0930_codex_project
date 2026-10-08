@@ -1,0 +1,37 @@
+{
+  "caseId": 7,
+  "version": 16,
+  "checkedAt": "2026-10-03T11:29:35.1821659Z",
+  "source": "历史保存的原作 00:22 眼平窄巷关键帧；原作者工具链未知",
+  "sourceFrame": "assets/qa/reference-worlds/source-07-022.png",
+  "before": "assets/qa/quality-reset-v16/07-before-v15.png",
+  "diagnosis": [
+    "v15 木梁纹路与部件轴向不一致，梁/百叶外沿过于整齐，颜色近乎统一。",
+    "两侧灰泥缺少窗角细裂、雨水路径、地脚剥落，石块宽度和角石节奏重复。",
+    "树叶聚在互不贯通的小球口袋，枝干轮廓和内外叶色层次偏弱。"
+  ],
+  "changes": [
+    "新增 CASE07 专用 village-surfaces.js，木纹沿每根梁/木条长度映射，三个旧木色阶、轻微变截面与贴合木榫。",
+    "墙面按现有窗/门位置生成小尺度细裂、窗缘雨痕、地脚湿痕和掉灰；纠正墙面竖向 UV，地脚湿痕显示在底部。",
+    "基脚石采用不等长度课程、轻微磨损轮廓和接触倒角；角石高度/交替宽度稍有变化，门窗位置与建筑范围保持。",
+    "树主干改为连续微弯锥形管，42 个长轴枝梢簇形成四层重叠树冠；叶片朝向和内外叶色重调，每棵主树4000、背景树1200保持。",
+    "黄昏环境光和石路色阶略调，让近景和广场的光线层次更清楚。"
+  ],
+  "preserved": [
+    "原入口 x=-2.55/z=10.8、眼高1.68m、两座建筑位置与范围。",
+    "两座建筑合计16窗32百叶64铰链、一个拱门、0.2m凹进。",
+    "原房屋/展位/喷泉碰撞、展位发现/走近/查看、三个陈列集合、访问状态与导出逻辑。"
+  ],
+  "staticVerification": "notes/case-07-v16-static-verification.json",
+  "staticScope": "Node 47项几何及源码检查；建筑纹理调用使用模拟 Canvas/加载器，未把静态测试当成实际视觉检查。",
+  "browserVerification": "由 root 在内置浏览器逐项操作并保存本轮真实证据",
+  "remaining": [
+    "树冠仍是原创程序化几何，不含原作自然资产；叶簇边界、近看枝叶仍有资产级细节差距。",
+    "木材和灰泥磨损为定向原创贴图与有限几何，后方建筑还采用较整齐的旧模型。",
+    "门窗静态，树无风动；没有新增对话或多人展会功能。",
+    "没有得出真实显卡/手机帧率结论。"
+  ],
+  "verification": {
+    "visualAndInteraction": "Completed by root in the actual in-app browser. See notes/v16-in-app-verification.json for per-case controls, current-canvas PNGs and explicit limits."
+  }
+}

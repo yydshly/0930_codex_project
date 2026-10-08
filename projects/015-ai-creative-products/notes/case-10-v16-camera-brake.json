@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-03T12:01:59.795Z",
+  "caseId": 10,
+  "product": "三维操控与物理挑战工具",
+  "task": "驾驶时比较场馆空间和接地反馈，转弯、跳跃，再把球推入球门。",
+  "state": {
+    "module": "soccer",
+    "status": "playing",
+    "running": true,
+    "renderer": "webgl",
+    "arenaArtwork": {
+      "version": 16,
+      "tiers": 2,
+      "seatingRows": 24,
+      "continuousRoundedBowl": true,
+      "innerHalfWidth": 21.35,
+      "innerHalfLength": 29.45,
+      "cornerRadius": 5.45,
+      "concourseSetback": 0.5,
+      "roofInnerHeight": 15.93,
+      "roofOuterHeight": 20.08,
+      "radialTrusses": 31,
+      "floodlightClusters": 31,
+      "actualAisleGaps": true,
+      "turf": "one continuous PBR turf with restrained mowing and blended home/away color",
+      "physics": "unchanged rectangular playable bounds; decorative bowl and cables do not alter collision",
+      "scope": "original authored rounded grandstands, crowd atlas and canopy; no source stadium assets, no full vehicle rigid-body or multiplayer"
+    },
+    "vehicleArtwork": {
+      "profile": "low raked two-door fastback coupe",
+      "body": "continuous longitudinal sections with true wheel arch clearance",
+      "wheelRadius": 0.38,
+      "wheelCenters": [
+        -1.04,
+        1.02
+      ],
+      "roofHeight": 1.315,
+      "length": 3.4,
+      "scope": "original authored surfaces; no original game vehicle assets"
+    },
+    "rendering": {
+      "drawCalls": 55,
+      "triangles": 239470,
+      "staticDrawCallsSaved": 1404
+    },
+    "score": 0,
+    "goal": 3,
+    "remaining": 39.5,
+    "elapsed": 50.5,
+    "boost": 97.5,
+    "boosting": false,
+    "friction": 20,
+    "restitution": 72,
+    "cameraMode": "ball",
+    "speed": 0.2,
+    "cameraFov": 66.2,
+    "cameraTarget": {
+      "x": 0.003,
+      "y": 1.074,
+      "z": -0.292
+    },
+    "cameraPosition": {
+      "x": -0.694,
+      "y": 3.657,
+      "z": 13.148
+    },
+    "collisions": 2,
+    "jumps": 1,
+    "vehicleFeedback": {
+      "grounded": true,
+      "frontMinusRearHeight": -0.0034,
+      "rightMinusLeftHeight": 0,
+      "bodyPitch": -0.0011,
+      "bodyRoll": 0,
+      "bodyHeave": 0.0002,
+      "tireRadius": 0.38,
+      "maxWheelAxisVertical": 0,
+      "tireBottom": 0,
+      "suspensionLinkMaxError": 0,
+      "brakeCount": 1,
+      "lastBrakeSpeedDelta": -2.745,
+      "lastBrakeMinPitch": -0.0368,
+      "landingCount": 1,
+      "lastLandingSpeed": 7.199,
+      "lastLandingCompression": -0.0243,
+      "contactCount": 2,
+      "lastContactImpulse": 8.479,
+      "lastContactPitchKick": -0.1113,
+      "lastContactRollKick": 0.0018,
+      "contactAge": 0.817,
+      "scope": "Visual spring response from actual acceleration, contact impulse and landing velocity; simplified vehicle contact remains unchanged."
+    },
+    "wheelRotationX": -27.153,
+    "ballRotation": {
+      "x": -8.679,
+      "z": 0.001
+    },
+    "maxBallHeight": 1.159,
+    "car": {
+      "x": 0.009,
+      "y": 0.65,
+      "z": 6.683,
+      "vx": 0.003,
+      "vy": 0,
+      "vz": -0.199,
+      "yaw": 0.016
+    },
+    "ball": {
+      "x": -0.001,
+      "y": 1.051,
+      "z": -1.113,
+      "vx": -0.001,
+      "vy": -0.247,
+      "vz": -7.376
+    },
+    "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+    "log": [
+      {
+        "time": 15.9,
+        "action": "车辆跳跃"
+      }
+    ]
+  },
+  "source": "https://x.com/BlendiByl/status/2104800823620632641",
+  "reference": {
+    "focus": "立体车球场、追车或球相机、加速、惯性与真实碰撞共同决定操控手感。",
+    "evidence": "作者提供浏览器车球同人游戏并强调物理；原片可见立体球场、跟随视角和 Boost。",
+    "sourceTech": "具体物理引擎未知；不能由效果推定使用某个引擎。",
+    "ours": "保留v15低矮轿跑与真实轮组，重做连续圆角双层场馆、24排座位、真实通道间隙、人群图谱、檐底桁架及统一草皮层次。",
+    "tech": "Three.js 本例独立 stadium 模块；圆角包围结构连接双层座席，通道扶手、凹进大厅、31组桁架/分段灯具构成不同尺度。单一PBR草地用世界坐标着色；车球运动、接触冲量和相机规则保持。",
+    "value": "作为操控、动力参数与挑战关卡的浏览器物理实验基础。",
+    "check": "驾驶时观察场馆与草皮，再核对Boost、转向、跳跃落地、撞球和球相机；CPU结构已检查，本轮真实场景、操控和手机画面仍在复核。",
+    "boundary": "场馆和赛车是原创几何，观众仍为静态图谱；弧形围挡是视觉结构，实际碰撞仍为原矩形，屋盖不新增玩法碰撞或大范围阴影。没有完整车辆刚体、逐轮轮胎动力学、空中翻滚或多人比赛，原作引擎未知。",
+    "kernel": "先把分离的直线看台接成完整场馆，再按座席、通道、屋盖和草皮分别建立尺度；视觉围挡采用弧形，玩法继续读取原有实际球车状态。"
+  },
+  "optimization": {
+    "caseId": 10,
+    "sourceTarget": "原作把驾驶、Boost、腾空、碰撞与跟球镜头放在连续三维操控中；本例参考轮胎接地、车身惯性和接触反馈共同表达动力变化。",
+    "diagnosis": "原型车体像盒状SUV，看台是单层重复座位阵列；操控已成立，但赛车姿态与场馆层次仍弱。",
+    "priority": "单独重建低矮快背赛车与有屋盖的分层场馆，保留真实轮组、操控与碰撞反馈。",
+    "changes": [
+      "本例独立跑车模块制作连续低矮壳体、斜玻璃、挖空轮拱、保险杠/扩散器与克制尾翼。",
+      "真实0.38m轮组仍接原悬架和反馈，喷焰从排气位置出发，运动和相机读取同一物理状态。",
+      "球场加入双层看台、凹入通道和屋盖桁架，使座席、通道与顶棚有不同前后层次。"
+    ],
+    "verify": [
+      "已检查真实追车、赛车结构、BOOST、转向、空中状态、落地与球相机。",
+      "实际车球冲量、资源/FOV、转向与轮轴、跳跃落地压缩、刹车、暂停和窄屏回归通过，无运行错误。"
+    ],
+    "remaining": [
+      "车身与场馆是原创几何视觉近似，看台人群仍是纹理，没有原作赛车或场馆资产。",
+      "原单人简化物理保持；没有完整刚体、逐轮轮胎动力学、空中翻滚或联机。"
+    ]
+  },
+  "scope": "原创单人简化物理与视觉弹簧反馈，观众为静态图谱、碰撞边界仍为原矩形；未实现完整车辆刚体、空中翻滚或联机。"
+}

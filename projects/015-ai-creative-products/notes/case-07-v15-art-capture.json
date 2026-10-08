@@ -1,0 +1,353 @@
+{
+  "errors": [],
+  "state": {
+    "caseId": 7,
+    "time": "dusk",
+    "treeDensity": 20,
+    "selected": "visual-systems",
+    "visits": [
+      {
+        "id": "visual-systems",
+        "title": "视觉系统展位",
+        "visitedAt": "2026-10-03T10:33:30.763Z",
+        "via": "guided-shortcut",
+        "positionAtView": {
+          "x": -4.35,
+          "z": 2,
+          "yaw": 0.1,
+          "pitch": 0
+        },
+        "distanceAtView": 2.31,
+        "relatedCases": [
+          1
+        ],
+        "shownObjects": [
+          "双页作品档案",
+          "三种展厅主题样板",
+          "CASE 01 实际运行画面"
+        ]
+      }
+    ],
+    "view": {
+      "yaw": 0.4,
+      "elevation": 0.54,
+      "distance": 34
+    },
+    "mode": "walk",
+    "position": {
+      "x": -4.35,
+      "z": 2,
+      "yaw": 0.1,
+      "pitch": 0
+    },
+    "reached": [
+      "visual-systems"
+    ],
+    "proximity": {
+      "id": "visual-systems",
+      "distance": 2.31,
+      "canView": true,
+      "viewed": true
+    },
+    "architecture": {
+      "nearHouseCount": 2,
+      "windowCount": 16,
+      "shutterLeafCount": 32,
+      "hingeCount": 64,
+      "archDoorCount": 1,
+      "recessDepth": 0.2,
+      "eaveLayers": 3,
+      "brickCourses": 3,
+      "glassEmissiveIntensity": 0.055,
+      "nearHouses": [
+        {
+          "position": {
+            "x": -7,
+            "z": 5.8
+          },
+          "width": 4.4,
+          "height": 4.5,
+          "depth": 5,
+          "type": "warm timber lane facade",
+          "windowCount": 8,
+          "shutterLeafCount": 16,
+          "hingeCount": 32,
+          "archDoorCount": 0,
+          "rectDoorCount": 1,
+          "brickCount": 97,
+          "recessDepth": 0.2,
+          "wallThickness": 0.24,
+          "diamondLead": true,
+          "glass": "Original cool-grey reflective tint; no scene refraction",
+          "eaveLayers": 3,
+          "brickCourses": 3,
+          "staticMeshCount": 11,
+          "instancedMeshCount": 2,
+          "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+        },
+        {
+          "position": {
+            "x": 1.4,
+            "z": 6
+          },
+          "width": 6,
+          "height": 4.3,
+          "depth": 4.6,
+          "type": "pale masonry lane facade",
+          "windowCount": 8,
+          "shutterLeafCount": 16,
+          "hingeCount": 32,
+          "archDoorCount": 1,
+          "rectDoorCount": 0,
+          "brickCount": 175,
+          "recessDepth": 0.2,
+          "wallThickness": 0.24,
+          "diamondLead": true,
+          "glass": "Original cool-grey reflective tint; no scene refraction",
+          "eaveLayers": 3,
+          "brickCourses": 3,
+          "staticMeshCount": 11,
+          "instancedMeshCount": 2,
+          "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, arch stones and layered eaves"
+        }
+      ],
+      "scope": "Only the two existing lane houses are detailed. Building positions, original footprint collisions, eye height and three exhibit collections remain the same. Fixed original architecture, not interactive doors or source assets."
+    },
+    "exhibits": [
+      {
+        "id": "visual-systems",
+        "role": "纸档案、主题色与实际展厅画面",
+        "objects": [
+          "双页作品档案",
+          "三种展厅主题样板",
+          "CASE 01 实际运行画面"
+        ],
+        "relatedCases": [
+          1
+        ],
+        "page": "./?id=1",
+        "defaultRecipe": null
+      },
+      {
+        "id": "product-lab",
+        "role": "实体琴键、机器人与猫、默认配方谱板",
+        "objects": [
+          "微缩实体琴键",
+          "原创机器人与猫",
+          "默认 32 音符 / 90 BPM 谱板",
+          "CASE 06 实际运行画面"
+        ],
+        "relatedCases": [
+          6
+        ],
+        "page": "./?id=6",
+        "defaultRecipe": {
+          "mode": "static-default-illustration",
+          "mood": "calm",
+          "noteCount": 32,
+          "tempo": 90
+        }
+      },
+      {
+        "id": "research-notes",
+        "role": "路线沙盘、来源册、案例索引与参观凭证",
+        "objects": [
+          "本例入口与三展位路线沙盘",
+          "原片 00:22 来源册",
+          "观察 / 结论 / 验收索引抽屉",
+          "本次真实参观凭证"
+        ],
+        "relatedCases": [
+          7
+        ],
+        "page": "../#demo-07",
+        "defaultRecipe": null
+      }
+    ],
+    "space": {
+      "phase": "market-square",
+      "discovered": [
+        "visual-systems"
+      ],
+      "booths": [
+        {
+          "id": "visual-systems",
+          "x": -4.6,
+          "z": -0.3,
+          "yaw": 0.13,
+          "approach": {
+            "x": -4.35,
+            "z": 2,
+            "yaw": 0.1,
+            "pitch": 0
+          }
+        },
+        {
+          "id": "product-lab",
+          "x": 2.6,
+          "z": -6.1,
+          "yaw": 0.1,
+          "approach": {
+            "x": 2.8,
+            "z": -3.9,
+            "yaw": 0.1,
+            "pitch": 0
+          }
+        },
+        {
+          "id": "research-notes",
+          "x": 4.5,
+          "z": 0.2,
+          "yaw": -0.12,
+          "approach": {
+            "x": 5.4,
+            "z": 2.5,
+            "yaw": 0.37,
+            "pitch": 0
+          }
+        }
+      ],
+      "entry": {
+        "x": -2.55,
+        "z": 10.8,
+        "yaw": 0.04,
+        "pitch": -0.02
+      }
+    },
+    "walkingDistance": 0,
+    "renderer": "webgl",
+    "renderCount": 25,
+    "renderStats": {
+      "drawCalls": 196,
+      "triangles": 1212516,
+      "pixelRatio": 1
+    },
+    "treeArt": [
+      {
+        "type": "connected branched crown",
+        "leafCount": 5200,
+        "leafLength": 0.18,
+        "branchPockets": 33
+      },
+      {
+        "type": "connected branched crown",
+        "leafCount": 5200,
+        "leafLength": 0.18,
+        "branchPockets": 33
+      },
+      {
+        "type": "connected branched crown",
+        "leafCount": 5200,
+        "leafLength": 0.18,
+        "branchPockets": 33
+      },
+      {
+        "type": "connected branched crown",
+        "leafCount": 5200,
+        "leafLength": 0.18,
+        "branchPockets": 33
+      },
+      {
+        "type": "connected branched crown",
+        "leafCount": 5200,
+        "leafLength": 0.18,
+        "branchPockets": 33
+      },
+      {
+        "type": "connected branched crown",
+        "leafCount": 5200,
+        "leafLength": 0.18,
+        "branchPockets": 33
+      },
+      {
+        "type": "connected branched crown",
+        "leafCount": 5200,
+        "leafLength": 0.18,
+        "branchPockets": 33
+      },
+      {
+        "type": "connected branched crown",
+        "leafCount": 5200,
+        "leafLength": 0.18,
+        "branchPockets": 33
+      },
+      {
+        "type": "connected branched crown",
+        "leafCount": 5200,
+        "leafLength": 0.18,
+        "branchPockets": 33
+      },
+      {
+        "type": "connected branched crown",
+        "leafCount": 5200,
+        "leafLength": 0.18,
+        "branchPockets": 33
+      },
+      {
+        "type": "connected branched crown",
+        "leafCount": 5200,
+        "leafLength": 0.18,
+        "branchPockets": 33
+      },
+      {
+        "type": "connected branched crown",
+        "leafCount": 5200,
+        "leafLength": 0.18,
+        "branchPockets": 33
+      },
+      {
+        "type": "connected branched crown",
+        "leafCount": 5200,
+        "leafLength": 0.18,
+        "branchPockets": 33
+      },
+      {
+        "type": "connected branched crown",
+        "leafCount": 5200,
+        "leafLength": 0.18,
+        "branchPockets": 33
+      },
+      {
+        "type": "connected branched crown",
+        "leafCount": 5200,
+        "leafLength": 0.18,
+        "branchPockets": 33
+      },
+      {
+        "type": "connected branched crown",
+        "leafCount": 5200,
+        "leafLength": 0.18,
+        "branchPockets": 33
+      },
+      {
+        "type": "connected branched crown",
+        "leafCount": 5200,
+        "leafLength": 0.18,
+        "branchPockets": 33
+      },
+      {
+        "type": "connected branched crown",
+        "leafCount": 5200,
+        "leafLength": 0.18,
+        "branchPockets": 33
+      },
+      {
+        "type": "connected branched crown",
+        "leafCount": 5200,
+        "leafLength": 0.18,
+        "branchPockets": 33
+      },
+      {
+        "type": "connected branched crown",
+        "leafCount": 5200,
+        "leafLength": 0.18,
+        "branchPockets": 33
+      }
+    ],
+    "assets": {
+      "geometry": "Two recessed weathered lane facades, connected fine-leaf crowns and three static content-specific exhibit collections",
+      "materials": "Poly Haven CC0 photographed PBR and HDR lighting",
+      "exhibitImages": "Actual local case 01 and 06 runtime screenshots; no source movie frame is used as a scene texture."
+    }
+  }
+}

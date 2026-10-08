@@ -1,0 +1,405 @@
+{
+  "checkedAt": "2026-10-02T14:19:59.862Z",
+  "checks": [
+    {
+      "name": "2 actual WebGL",
+      "passed": true
+    },
+    {
+      "name": "2 nonempty scene",
+      "passed": true
+    },
+    {
+      "name": "2 mobile no overflow",
+      "passed": true
+    },
+    {
+      "name": "02 real walking",
+      "passed": true
+    },
+    {
+      "name": "02 dialogue evidence",
+      "passed": true
+    },
+    {
+      "name": "2 export current state",
+      "passed": true
+    },
+    {
+      "name": "2 visibility pause",
+      "passed": true
+    },
+    {
+      "name": "5 actual WebGL",
+      "passed": true
+    },
+    {
+      "name": "5 nonempty scene",
+      "passed": true
+    },
+    {
+      "name": "5 mobile no overflow",
+      "passed": true
+    },
+    {
+      "name": "05 actual ray hit",
+      "passed": true
+    },
+    {
+      "name": "05 reload",
+      "passed": true
+    },
+    {
+      "name": "5 export current state",
+      "passed": true
+    },
+    {
+      "name": "5 visibility pause",
+      "passed": true
+    },
+    {
+      "name": "8 actual WebGL",
+      "passed": true
+    },
+    {
+      "name": "8 nonempty scene",
+      "passed": true
+    },
+    {
+      "name": "8 mobile no overflow",
+      "passed": true
+    },
+    {
+      "name": "08 soft deformation and bounce",
+      "passed": true
+    },
+    {
+      "name": "08 actual parameters",
+      "passed": true
+    },
+    {
+      "name": "8 export current state",
+      "passed": true
+    },
+    {
+      "name": "8 visibility pause",
+      "passed": true
+    },
+    {
+      "name": "10 actual WebGL",
+      "passed": true
+    },
+    {
+      "name": "10 nonempty scene",
+      "passed": true
+    },
+    {
+      "name": "10 mobile no overflow",
+      "passed": true
+    },
+    {
+      "name": "10 movement and boost",
+      "passed": true
+    },
+    {
+      "name": "10 jump height",
+      "passed": true
+    },
+    {
+      "name": "10 actual follow camera",
+      "passed": true
+    },
+    {
+      "name": "10 export current state",
+      "passed": true
+    },
+    {
+      "name": "10 visibility pause",
+      "passed": true
+    },
+    {
+      "name": "no page errors",
+      "passed": true
+    },
+    {
+      "name": "2 latest rendering and mobile",
+      "passed": true,
+      "rendering": {
+        "drawCalls": 82,
+        "triangles": 323936,
+        "staticDrawCallsSaved": 5859
+      }
+    },
+    {
+      "name": "8 latest rendering and mobile",
+      "passed": true,
+      "rendering": {
+        "drawCalls": 30,
+        "triangles": 63718,
+        "staticDrawCallsSaved": 0
+      },
+      "shownCharacters": [
+        "rabbit"
+      ]
+    },
+    {
+      "name": "10 latest rendering and mobile",
+      "passed": true,
+      "rendering": {
+        "drawCalls": 95,
+        "triangles": 97370,
+        "staticDrawCallsSaved": 350
+      }
+    },
+    {
+      "name": "05 latest close robot ray hit",
+      "passed": true
+    },
+    {
+      "name": "2 no WebGL fallback loads and starts",
+      "passed": true
+    },
+    {
+      "name": "5 no WebGL fallback loads and starts",
+      "passed": true
+    },
+    {
+      "name": "8 no WebGL fallback loads and starts",
+      "passed": true
+    },
+    {
+      "name": "10 no WebGL fallback loads and starts",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "states": {
+    "2": {
+      "module": "quest",
+      "status": "playing",
+      "running": true,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 51,
+        "triangles": 147034,
+        "staticDrawCallsSaved": 2212
+      },
+      "position": {
+        "x": -12,
+        "z": -8
+      },
+      "yaw": -1.571,
+      "evidence": [
+        {
+          "id": "archive",
+          "title": "档案来源与时间已核对"
+        }
+      ],
+      "elapsed": 8.9,
+      "destination": null,
+      "soundEnabled": true,
+      "assets": "Original modeled geometry, canvas labels and synthesized tones; local CC0 photo-scanned PBR textures and HDR lighting.",
+      "scope": "Original small RPG prototype; no original source, combat or VATS reproduced.",
+      "log": [
+        {
+          "time": 0,
+          "action": "开始",
+          "detail": "程序化街区任务"
+        },
+        {
+          "time": 1.1,
+          "action": "前往",
+          "detail": "档案站"
+        },
+        {
+          "time": 8.8,
+          "action": "取得证据",
+          "detail": "档案来源与时间已核对"
+        }
+      ]
+    },
+    "5": {
+      "module": "defense",
+      "status": "playing",
+      "running": true,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 91,
+        "triangles": 70790,
+        "staticDrawCallsSaved": 354
+      },
+      "wave": 1,
+      "totalWaves": 3,
+      "health": 100,
+      "ammo": 12,
+      "reloading": false,
+      "kills": 0,
+      "shots": 1,
+      "hits": 1,
+      "elapsed": 4.6,
+      "player": {
+        "x": 0,
+        "z": 6,
+        "yaw": -0.185,
+        "pitch": -0.038
+      },
+      "enemies": [
+        {
+          "id": 1,
+          "x": -2.29,
+          "z": -6.24,
+          "hp": 1
+        },
+        {
+          "id": 2,
+          "x": 2.71,
+          "z": -8.46,
+          "hp": 2
+        }
+      ],
+      "scope": "Original FPS room and robots. No COD code/assets ported. Ray hits, simple pursuit, cover collision, three waves.",
+      "log": [
+        {
+          "time": 0,
+          "action": "波次开始",
+          "detail": 1
+        },
+        {
+          "time": 1,
+          "action": "射击命中",
+          "detail": 1
+        },
+        {
+          "time": 1.5,
+          "action": "充能",
+          "detail": "1.3秒"
+        }
+      ]
+    },
+    "8": {
+      "module": "mascot",
+      "status": "playing",
+      "mode": "sandbox",
+      "running": true,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 60,
+        "triangles": 131858,
+        "staticDrawCallsSaved": 0
+      },
+      "selected": "rabbit",
+      "target": null,
+      "pokes": 1,
+      "hits": 0,
+      "goal": null,
+      "combo": 0,
+      "maxCombo": 0,
+      "misses": 0,
+      "remaining": null,
+      "elapsed": 2,
+      "softness": 90,
+      "gravity": false,
+      "soundEnabled": true,
+      "viewAngle": 0,
+      "characters": [
+        {
+          "id": "rabbit",
+          "name": "粉兔",
+          "height": 0.065,
+          "deformation": 0,
+          "localIndent": 0.001,
+          "vertexCount": 7252
+        },
+        {
+          "id": "dumpling",
+          "name": "橙团",
+          "height": 0.051,
+          "deformation": 0,
+          "localIndent": 0,
+          "vertexCount": 1813
+        },
+        {
+          "id": "cat",
+          "name": "薄荷猫",
+          "height": 0.082,
+          "deformation": 0,
+          "localIndent": 0,
+          "vertexCount": 1813
+        }
+      ],
+      "scope": "Original procedural 3D characters. Local vertex displacement and spring approximation, not full soft-body physics. Combo challenge is our optional extension.",
+      "log": [
+        {
+          "time": 0.2,
+          "character": "rabbit",
+          "mode": "sandbox",
+          "softness": 65,
+          "gravity": true
+        }
+      ]
+    },
+    "10": {
+      "module": "soccer",
+      "status": "playing",
+      "running": true,
+      "renderer": "webgl",
+      "rendering": {
+        "drawCalls": 93,
+        "triangles": 97190,
+        "staticDrawCallsSaved": 350
+      },
+      "score": 0,
+      "goal": 3,
+      "remaining": 87.5,
+      "elapsed": 2.5,
+      "boost": 100,
+      "boosting": false,
+      "friction": 20,
+      "restitution": 72,
+      "cameraMode": "ball",
+      "cameraPosition": {
+        "x": -0.7,
+        "y": 3.791,
+        "z": 13.153
+      },
+      "collisions": 1,
+      "jumps": 1,
+      "maxBallHeight": 1.227,
+      "car": {
+        "x": 0,
+        "y": 0.65,
+        "z": 6.541,
+        "vx": 0,
+        "vy": 0,
+        "vz": -0.919,
+        "yaw": 0
+      },
+      "ball": {
+        "x": 0,
+        "y": 1.05,
+        "z": -6.891,
+        "vx": 0,
+        "vy": 0,
+        "vz": -7.986
+      },
+      "scope": "Original simplified 3D sphere contacts, gravity, ground traction and goals; no full car rigid-body, air roll or multiplayer.",
+      "log": [
+        {
+          "time": 1,
+          "action": "车辆跳跃"
+        }
+      ]
+    }
+  },
+  "rendering": "Real WebGL with local CC0 PBR maps and HDR environment; screenshots and exports captured from actual controls. Mobile is browser viewport simulation.",
+  "visualDifferences": "Source / previous / revised comparisons are saved alongside screenshots. Rendering is an original small prototype, not a claim of photorealistic source parity.",
+  "finalRevision": "Updated recessed city windows, foliage/props, merged static geometry, stadium roof and lighting, clean player HUD and paused mobile mascot layout.",
+  "comparison": "assets/qa/visual-polish-games/source-before-after.jpg",
+  "covers": [
+    "web/media/demo-02.webp",
+    "web/media/demo-05.webp",
+    "web/media/demo-08.webp",
+    "web/media/demo-10.webp"
+  ],
+  "limitations": "Original small scenes and lightweight gameplay remain. City character is deliberately stylized; no claim of source-level photorealistic people or full game parity. Mobile checks are viewport emulation, not physical device verification."
+}

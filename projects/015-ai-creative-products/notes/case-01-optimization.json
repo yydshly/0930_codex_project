@@ -1,0 +1,28 @@
+{
+  "caseId": 1,
+  "checkedAt": "2026-10-03T00:17:17.825Z",
+  "sourceTarget": "已观察：原作 3/8 秒截图中，衣物从侧向陈列展开至正面，可见柔性轮廓、褶皱与局部阴影；12 秒进入单件大图，其他衣物淡出，名称及左右浏览围绕该件。内部工具链与触发规则未知。纸档案及翻开弯曲是我们对物件聚焦与柔性材质表现的扩展，不能当作原作已有的翻页效果。",
+  "diagnosis": "上一版四件档案的纸面比例、厚度和封面节奏相同，物件陈列退化成同一模板的重复。原作服装有不同轮廓，参考价值在于独立物件的观看与选择关系。",
+  "priority": "为四个真实研究项目各自设计物件格式与印刷，并保留聚焦、翻开、阅读及离线交付。",
+  "changes": [
+    "ARC 使用横向摄影档案，CellMotion 使用荧光黄绿折叠字报，小世界使用深色软套外观，Forma 使用分层页边与索引签的研究册。",
+    "四种格式分别调整高宽、边缘、圆角、字体与图像占比；细挂杆、挂钩、间距和留白重新配合物件尺度。",
+    "预览移到设置上方，同一六段薄纸封面仍沿书脊打开，四种材料与内容格式均写入实际离线HTML。"
+  ],
+  "verify": [
+    "已检查真实闭合挂杆与四种打开画面。",
+    "32项实际检查通过；指针/键盘聚焦、过滤、主题、减弱运动和六段封面行为保持。",
+    "实际下载195629字节HTML，阻断HTTP后仍可打开，0外部请求；JSON保留四个真实项目。"
+  ],
+  "remaining": [
+    "软套仍是CSS外观与有限薄纸弯曲，没有原作的服装褶皱或完整布料模拟。",
+    "陈列内容来自我们的既有研究项目；并未复现原作者的服装资产或三次提示生成流程。"
+  ],
+  "verificationReport": "notes/case-01-paper-verification.json",
+  "verificationFile": "assets/qa/quality-reset-v15/01-validation.json",
+  "evidenceFiles": [
+    "assets/qa/quality-reset-v15/01-rail-final.png",
+    "assets/qa/quality-reset-v15/01-open-sleeve-final.png",
+    "assets/qa/quality-reset-v15/01-actual-offline.html"
+  ]
+}

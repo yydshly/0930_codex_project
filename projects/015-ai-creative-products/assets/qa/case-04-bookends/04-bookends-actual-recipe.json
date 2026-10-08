@@ -1,0 +1,170 @@
+{
+  "product": "RESEARCH",
+  "question": "开关闭环是否保留同一成果？",
+  "evidenceText": "只有完全相同的来源和内容被合并。 | https://example.org/observations#first\n只有完全相同的来源和内容被合并。 | https://example.org/observations#first\n只有完全相同的来源和内容被合并。 | https://example.org/observations#other\n手机阅读需要继续检查。 | ",
+  "theme": "paper",
+  "time": 14.9,
+  "playing": false,
+  "spring": 0.68,
+  "wave": 0.72,
+  "scenes": [
+    {
+      "headline": "从观察，\n开始。",
+      "detail": "保留原作观察与来源，成为一张研究卡。",
+      "seconds": 5
+    },
+    {
+      "headline": "让证据，\n有条理。",
+      "detail": "相同记录合并，缺少来源留待补充。",
+      "seconds": 5
+    },
+    {
+      "headline": "带走一份，\n有来源的成果。",
+      "detail": "研究卡、整理结果与待办，保留在同一份成果包。",
+      "seconds": 5
+    }
+  ],
+  "totalSeconds": 15,
+  "effects": [
+    "几何开关",
+    "研究卡展开",
+    "弹性曲线",
+    "环形字",
+    "点阵波",
+    "整理与导出"
+  ],
+  "workflow": {
+    "question": "开关闭环是否保留同一成果？",
+    "filename": "研究证据成果.md",
+    "rule": "仅合并内容与来源完全相同的记录；缺少内容或有效 HTTP(S) 来源的记录留作待补。未自动核实来源内容。",
+    "inputCount": 4,
+    "includedCount": 2,
+    "mergedCount": 1,
+    "pendingCount": 1,
+    "records": [
+      {
+        "id": 1,
+        "claim": "只有完全相同的来源和内容被合并。",
+        "source": "https://example.org/observations#first",
+        "status": "included",
+        "reason": "保留填写的来源"
+      },
+      {
+        "id": 2,
+        "claim": "只有完全相同的来源和内容被合并。",
+        "source": "https://example.org/observations#first",
+        "status": "merged",
+        "reason": "内容与来源相同",
+        "duplicateOf": 1
+      },
+      {
+        "id": 3,
+        "claim": "只有完全相同的来源和内容被合并。",
+        "source": "https://example.org/observations#other",
+        "status": "included",
+        "reason": "保留填写的来源"
+      },
+      {
+        "id": 4,
+        "claim": "手机阅读需要继续检查。",
+        "source": "",
+        "status": "needs-source",
+        "reason": "缺少来源"
+      }
+    ],
+    "included": [
+      {
+        "id": 1,
+        "claim": "只有完全相同的来源和内容被合并。",
+        "source": "https://example.org/observations#first",
+        "status": "included",
+        "reason": "保留填写的来源"
+      },
+      {
+        "id": 3,
+        "claim": "只有完全相同的来源和内容被合并。",
+        "source": "https://example.org/observations#other",
+        "status": "included",
+        "reason": "保留填写的来源"
+      }
+    ],
+    "merged": [
+      {
+        "id": 2,
+        "claim": "只有完全相同的来源和内容被合并。",
+        "source": "https://example.org/observations#first",
+        "status": "merged",
+        "reason": "内容与来源相同",
+        "duplicateOf": 1
+      }
+    ],
+    "pending": [
+      {
+        "id": 4,
+        "claim": "手机阅读需要继续检查。",
+        "source": "",
+        "status": "needs-source",
+        "reason": "缺少来源"
+      }
+    ]
+  },
+  "sequence": {
+    "time": 14.9,
+    "start": 0,
+    "end": 15,
+    "openingEnd": 2.25,
+    "inputEnd": 5,
+    "closingStart": 13.9,
+    "foldEnd": 14.4,
+    "phase": "complete",
+    "input": 0,
+    "fold": 1,
+    "close": 1,
+    "knob": {
+      "x": 484,
+      "y": 335,
+      "radius": 42,
+      "on": 0,
+      "role": "retained-result",
+      "filename": "研究证据成果.md"
+    },
+    "operation": {
+      "rule": "仅合并内容与来源完全相同的记录；缺少内容或有效 HTTP(S) 来源的记录留作待补。未自动核实来源内容。",
+      "inputCount": 4,
+      "includedCount": 2,
+      "mergedCount": 1,
+      "pendingCount": 1,
+      "filename": "研究证据成果.md",
+      "resultRetained": true,
+      "downloadClaim": false
+    },
+    "scope": "Time-derived presentation of the real local rule output; no AI verification and no claim that a download has occurred."
+  },
+  "sequencePlan": [
+    {
+      "start": 0,
+      "end": 2.25,
+      "action": "开启本地整理",
+      "object": "胶囊开关"
+    },
+    {
+      "start": 2.25,
+      "end": 5,
+      "action": "开关圆点进入第一张真实研究卡",
+      "object": "第一条输入记录"
+    },
+    {
+      "start": 10,
+      "end": 13.9,
+      "action": "记录合并、待补分区并展示实际成果",
+      "object": "同一整理结果"
+    },
+    {
+      "start": 13.9,
+      "end": 15,
+      "action": "成果收拢后关闭整理，完整文件继续可导出",
+      "object": "同一成果文件"
+    }
+  ],
+  "scope": "原创无声 Canvas / WebM；原作工具链未知"
+}

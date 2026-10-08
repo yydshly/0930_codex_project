@@ -1,0 +1,145 @@
+{
+  "id": 7,
+  "title": "研究集市：发现、走近，再看懂陈列",
+  "sourceTarget": "原作 07 的 00:22 眼平窄巷可见凹进菱形铅窗、百叶及铰链、右侧拱门、层次屋檐和砖石地脚，建筑遮挡远处摊位，步行后逐渐进入集市。原作者工具链与 NPC 对话机制未确认。",
+  "diagnosis": "v15 木纹方向与梁件轴向不一致，木梁和百叶边缘过齐；灰泥缺少窗角与雨水路径的细节，树冠仍像彼此分开的叶球。",
+  "priority": "围绕本例入口巷道分别修木材轴向、墙脚与窗边磨损、石块尺度和连接树冠，并复核三处展位的参观记录。",
+  "changes": [
+    "木纹沿每根梁与百叶木条的长度映射，加入三档旧木色阶、轻微变截面和贴合木榫。",
+    "灰泥按实际门窗位置加入窗角细裂、雨痕、地脚湿痕与掉灰；修正竖向 UV，使墙脚细节落在底部。",
+    "基脚石采用不等长度与接触倒角，角石调整交替宽高；原 16 窗、32 片百叶、64 个铰链及 0.2m 凹进保留。",
+    "连续微弯主干、42 组延长枝梢和四层重叠树冠代替独立叶球；入口树冠展开角与叶簇尺度单独重调，黄昏环境光校准为 0.60。"
+  ],
+  "verify": [
+    "内置浏览器实际核对入口和新树冠，保存当前画布；原作参考为历史保存的 00:22 关键帧。",
+    "通过三个导览快捷入口走近并查看展品，实际 JSON 保存 3/3 参观；本次导览记录 walkingDistance=0，不把快捷到达写成步行路线验收。",
+    "实际切到夜景并将树木密度设为 0，下载状态保留 time=night、treeDensity=0 与同一三处参观记录。",
+    "CPU 检查建筑连接、纹理映射与树冠结构；纹理测试使用模拟 Canvas/加载器，视觉结论来自另行保存的浏览器画面。"
+  ],
+  "remaining": [
+    "树冠仍为程序化几何，近看叶簇边界与枝叶细节有差距；后方建筑仍采用较整齐的旧模型。",
+    "定向墙面磨损与木纹改善尺度和层次，尚未达到原作自然资产的复杂轮廓与细碎表面。",
+    "门窗静态、树无风动、展品仍为三个固定集合；没有新增布局编辑、对话或多人展会，也未验证手机真机帧率。"
+  ],
+  "caseId": 7,
+  "sourceUrl": "https://x.com/DODOREACH/status/2104821709891404194",
+  "architecture": {
+    "nearHouseCount": 2,
+    "windowCount": 16,
+    "shutterLeafCount": 32,
+    "hingeCount": 64,
+    "archDoorCount": 1,
+    "recessDepth": 0.2,
+    "eaveLayers": 3,
+    "brickCourses": 3,
+    "glassEmissiveIntensity": 0.055,
+    "nearHouses": [
+      {
+        "position": {
+          "x": -7,
+          "z": 5.8
+        },
+        "width": 4.4,
+        "height": 4.5,
+        "depth": 5,
+        "type": "warm timber lane facade",
+        "windowCount": 8,
+        "shutterLeafCount": 16,
+        "hingeCount": 32,
+        "archDoorCount": 0,
+        "rectDoorCount": 1,
+        "brickCount": 100,
+        "timberJointCount": 12,
+        "recessDepth": 0.2,
+        "wallThickness": 0.24,
+        "diamondLead": true,
+        "glass": "Original cool-grey reflective tint; no scene refraction",
+        "eaveLayers": 3,
+        "brickCourses": 3,
+        "staticMeshCount": 18,
+        "instancedMeshCount": 2,
+        "surfaces": "Face-specific rain traces, plaster loss and window-corner hairline cracks; length-aligned solid timber grain, softened sections and flush joinery pins",
+        "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, uneven stone courses, arch stones and layered eaves"
+      },
+      {
+        "position": {
+          "x": 1.4,
+          "z": 6
+        },
+        "width": 6,
+        "height": 4.3,
+        "depth": 4.6,
+        "type": "pale masonry lane facade",
+        "windowCount": 8,
+        "shutterLeafCount": 16,
+        "hingeCount": 32,
+        "archDoorCount": 1,
+        "rectDoorCount": 0,
+        "brickCount": 183,
+        "timberJointCount": 4,
+        "recessDepth": 0.2,
+        "wallThickness": 0.24,
+        "diamondLead": true,
+        "glass": "Original cool-grey reflective tint; no scene refraction",
+        "eaveLayers": 3,
+        "brickCourses": 3,
+        "staticMeshCount": 18,
+        "instancedMeshCount": 2,
+        "surfaces": "Face-specific rain traces, plaster loss and window-corner hairline cracks; length-aligned solid timber grain, softened sections and flush joinery pins",
+        "geometry": "Original cut wall slabs, recessed panes, fixed hinged shutters, uneven stone courses, arch stones and layered eaves"
+      }
+    ],
+    "scope": "Only the two existing lane houses are detailed. Building positions, original footprint collisions, eye height and three exhibit collections remain the same. Fixed original architecture, not interactive doors or source assets."
+  },
+  "verificationFile": "notes/v16-in-app-verification.json",
+  "evidenceFiles": [
+    "assets/qa/quality-reset-v16/07-entry-after.png"
+  ],
+  "previousVersions": [
+    {
+      "revision": 15,
+      "verificationFile": "notes/world-art-v15-verification.json",
+      "evidenceFiles": [
+        "assets/qa/quality-reset-v15/07-entry-after.png",
+        "assets/qa/quality-reset-v15/07-market-after.png",
+        "assets/qa/quality-reset-v15/07-mobile-after.png"
+      ],
+      "evidence": {
+        "source": "assets/qa/case-07-architecture/source-07-022.png",
+        "before": "assets/qa/case-07-architecture/entry-before.png",
+        "entry": "assets/qa/case-07-architecture/entry-after.png",
+        "square": "assets/qa/case-07-exhibits/square.png",
+        "exhibit01": "assets/qa/case-07-exhibits/01-viewed.png",
+        "exhibit02": "assets/qa/case-07-exhibits/02-close.png",
+        "exhibit03": "assets/qa/case-07-exhibits/03-close.png",
+        "mobile": "assets/qa/case-07-architecture/entry-mobile.png",
+        "qa": "notes/case-07-architecture-verification.json",
+        "window": "assets/qa/case-07-architecture/left-window.png",
+        "arch": "assets/qa/case-07-architecture/right-arch.png"
+      },
+      "verificationReport": "notes/case-07-architecture-verification.json",
+      "renderComparison": {
+        "previous": {
+          "drawCalls": 378,
+          "triangles": 174878,
+          "pixelRatio": 1
+        },
+        "current": {
+          "drawCalls": 382,
+          "triangles": 192674,
+          "pixelRatio": 1
+        },
+        "addedCalls": 4,
+        "triangleIncreasePercent": 10.176237148183297
+      },
+      "checkedAt": "2026-10-03T00:52:48.466Z"
+    }
+  ],
+  "actualRecords": [
+    "notes/case-07-v16-entry.json",
+    "notes/case-07-v16-three-visits.json",
+    "notes/case-07-v16-night-no-trees.json"
+  ],
+  "staticVerificationFile": "notes/case-07-v16-static-verification.json",
+  "revision": 16
+}

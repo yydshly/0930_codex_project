@@ -1,0 +1,303 @@
+{
+  "version": 16,
+  "scope": "Actual Three.js CPU geometry, indices, wheel proportions and shader-string checks. Canvas drawing is stubbed; no browser, WebGL shader compilation, live controls or visual quality certified by this record.",
+  "checks": [
+    {
+      "name": "All real Three.js stadium vertices are finite",
+      "passed": true,
+      "detail": {
+        "meshes": 1422,
+        "vertices": 377689,
+        "triangles": 190788,
+        "invalidCoordinates": 0
+      }
+    },
+    {
+      "name": "Both seating tiers have 24 authored rows",
+      "passed": true,
+      "detail": [
+        {
+          "tier": 1,
+          "row": 1,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        },
+        {
+          "tier": 1,
+          "row": 2,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        },
+        {
+          "tier": 1,
+          "row": 3,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        },
+        {
+          "tier": 1,
+          "row": 4,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        },
+        {
+          "tier": 1,
+          "row": 5,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        },
+        {
+          "tier": 1,
+          "row": 6,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        },
+        {
+          "tier": 1,
+          "row": 7,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        },
+        {
+          "tier": 1,
+          "row": 8,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        },
+        {
+          "tier": 1,
+          "row": 9,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        },
+        {
+          "tier": 1,
+          "row": 10,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        },
+        {
+          "tier": 1,
+          "row": 11,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        },
+        {
+          "tier": 2,
+          "row": 1,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        },
+        {
+          "tier": 2,
+          "row": 2,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        },
+        {
+          "tier": 2,
+          "row": 3,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        },
+        {
+          "tier": 2,
+          "row": 4,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        },
+        {
+          "tier": 2,
+          "row": 5,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        },
+        {
+          "tier": 2,
+          "row": 6,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        },
+        {
+          "tier": 2,
+          "row": 7,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        },
+        {
+          "tier": 2,
+          "row": 8,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        },
+        {
+          "tier": 2,
+          "row": 9,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        },
+        {
+          "tier": 2,
+          "row": 10,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        },
+        {
+          "tier": 2,
+          "row": 11,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        },
+        {
+          "tier": 2,
+          "row": 12,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        },
+        {
+          "tier": 2,
+          "row": 13,
+          "visibleSegments": 168,
+          "fullRingSegments": 184
+        }
+      ]
+    },
+    {
+      "name": "Every crowd row has actual missing faces at aisles",
+      "passed": true,
+      "detail": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ]
+    },
+    {
+      "name": "Entire unchanged 40 x 54 playable rectangle fits inside the decorative rounded barrier",
+      "passed": true,
+      "detail": {
+        "playableCorner": [
+          20,
+          27
+        ],
+        "cornerCenter": [
+          15.900000000000002,
+          24
+        ],
+        "cornerDistance": 5.080354318352213,
+        "barrierRadius": 5.45
+      }
+    },
+    {
+      "name": "Continuous canopy has deep radial trusses and lamp clusters",
+      "passed": true,
+      "detail": {
+        "version": 16,
+        "tiers": 2,
+        "seatingRows": 24,
+        "continuousRoundedBowl": true,
+        "innerHalfWidth": 21.35,
+        "innerHalfLength": 29.45,
+        "cornerRadius": 5.45,
+        "concourseSetback": 0.5,
+        "roofInnerHeight": 15.93,
+        "roofOuterHeight": 20.08,
+        "radialTrusses": 31,
+        "floodlightClusters": 31,
+        "actualAisleGaps": true,
+        "turf": "one continuous PBR turf with restrained mowing and blended home/away color",
+        "physics": "unchanged rectangular playable bounds; decorative bowl and cables do not alter collision",
+        "scope": "original authored rounded grandstands, crowd atlas and canopy; no source stadium assets, no full vehicle rigid-body or multiplayer"
+      }
+    },
+    {
+      "name": "Wheel count, radius and longitudinal centers retain v15 gameplay proportions",
+      "passed": true,
+      "detail": {
+        "profile": "low raked two-door fastback coupe",
+        "body": "continuous longitudinal sections with true wheel arch clearance",
+        "wheelRadius": 0.38,
+        "wheelCenters": [
+          -1.04,
+          1.02
+        ],
+        "roofHeight": 1.315,
+        "length": 3.4,
+        "scope": "original authored surfaces; no original game vehicle assets"
+      }
+    },
+    {
+      "name": "Field uses one continuous turf rather than layered half-field boxes",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "Turf shader injects world position, soft mowing and home-zone blend",
+      "passed": true,
+      "detail": {
+        "vertexPosition": true,
+        "blendedHome": true
+      }
+    },
+    {
+      "name": "Scenery bounds fit the actual camera far plane",
+      "passed": true,
+      "detail": {
+        "min": [
+          -38.99000000059605,
+          -0.10000000074505806,
+          -47.09000000059605
+        ],
+        "max": [
+          38.99000000059605,
+          20.200000762939453,
+          47.09000000059605
+        ]
+      }
+    }
+  ],
+  "counts": {
+    "meshes": 1422,
+    "vertices": 377689,
+    "triangles": 190788,
+    "invalidCoordinates": 0
+  },
+  "arena": {
+    "version": 16,
+    "tiers": 2,
+    "seatingRows": 24,
+    "continuousRoundedBowl": true,
+    "innerHalfWidth": 21.35,
+    "innerHalfLength": 29.45,
+    "cornerRadius": 5.45,
+    "concourseSetback": 0.5,
+    "roofInnerHeight": 15.93,
+    "roofOuterHeight": 20.08,
+    "radialTrusses": 31,
+    "floodlightClusters": 31,
+    "actualAisleGaps": true,
+    "turf": "one continuous PBR turf with restrained mowing and blended home/away color",
+    "physics": "unchanged rectangular playable bounds; decorative bowl and cables do not alter collision",
+    "scope": "original authored rounded grandstands, crowd atlas and canopy; no source stadium assets, no full vehicle rigid-body or multiplayer"
+  }
+}

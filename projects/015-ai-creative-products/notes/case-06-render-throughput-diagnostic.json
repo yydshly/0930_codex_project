@@ -1,0 +1,405 @@
+{
+  "caseId": 6,
+  "testedAt": "2026-10-02T15:33:09.791Z",
+  "readOnly": true,
+  "method": "Three-second playback via public ProductLab state. Only temporary canvas CSS, page-end spacer and browser scroll changed; no hidden renderer access or product code edit.",
+  "environment": {
+    "headless": true,
+    "browser": "151.0.7922.34",
+    "state": {
+      "mood": "calm",
+      "tempo": 90,
+      "volume": 25,
+      "playing": false,
+      "progress": 0,
+      "noteIndex": -1,
+      "playedNotes": 0,
+      "renderer": "webgl",
+      "recording": false,
+      "workflow": "shared-events → audio + character/key poses",
+      "blenderRendered": false,
+      "renderedFrames": 2,
+      "requestedRecordingFrames": 0,
+      "schemaVersion": 2,
+      "title": "FIELD DUET",
+      "duration": 21.333333333333332,
+      "fps": 24,
+      "notes": [
+        {
+          "midi": 60,
+          "at": 0,
+          "duration": 0.6666666666666666,
+          "bass": 48
+        },
+        {
+          "midi": 64,
+          "at": 0.6666666666666666,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 67,
+          "at": 1.3333333333333333,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 72,
+          "at": 2,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 69,
+          "at": 2.6666666666666665,
+          "duration": 0.6666666666666666,
+          "bass": 57
+        },
+        {
+          "midi": 67,
+          "at": 3.3333333333333335,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 64,
+          "at": 4,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 62,
+          "at": 4.666666666666667,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 60,
+          "at": 5.333333333333333,
+          "duration": 0.6666666666666666,
+          "bass": 48
+        },
+        {
+          "midi": 64,
+          "at": 6,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 65,
+          "at": 6.666666666666667,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 69,
+          "at": 7.333333333333333,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 67,
+          "at": 8,
+          "duration": 0.6666666666666666,
+          "bass": 55
+        },
+        {
+          "midi": 64,
+          "at": 8.666666666666666,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 62,
+          "at": 9.333333333333334,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 60,
+          "at": 10,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 60,
+          "at": 10.666666666666666,
+          "duration": 0.6666666666666666,
+          "bass": 48
+        },
+        {
+          "midi": 64,
+          "at": 11.333333333333334,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 67,
+          "at": 12,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 72,
+          "at": 12.666666666666666,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 69,
+          "at": 13.333333333333334,
+          "duration": 0.6666666666666666,
+          "bass": 57
+        },
+        {
+          "midi": 67,
+          "at": 14,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 64,
+          "at": 14.666666666666666,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 62,
+          "at": 15.333333333333334,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 72,
+          "at": 16,
+          "duration": 0.6666666666666666,
+          "bass": 60
+        },
+        {
+          "midi": 64,
+          "at": 16.666666666666668,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 65,
+          "at": 17.333333333333332,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 69,
+          "at": 18,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 79,
+          "at": 18.666666666666668,
+          "duration": 0.6666666666666666,
+          "bass": 67
+        },
+        {
+          "midi": 64,
+          "at": 19.333333333333332,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 62,
+          "at": 20,
+          "duration": 0.6666666666666666,
+          "bass": null
+        },
+        {
+          "midi": 60,
+          "at": 20.666666666666668,
+          "duration": 0.6666666666666666,
+          "bass": null
+        }
+      ],
+      "source": "https://x.com/kevin_t_ngo/status/2105304249060274631",
+      "sourceWorkflow": "Python composition / Python animation / Blender rendering",
+      "ours": "Original characters and scene. Browser preview uses Three.js/Web Audio. Export script uses wave and bpy; enhanced browser materials and key-contact poses are not ported to the bpy example.",
+      "audioState": "not-started",
+      "characters": [
+        "research-robot",
+        "cat"
+      ],
+      "scene": "wooden-piano-room",
+      "performance": {
+        "performer": null,
+        "midi": null,
+        "contactDistance": null,
+        "pressure": 0,
+        "pressedKeys": [],
+        "index": -1
+      }
+    },
+    "devicePixelRatio": 1,
+    "glRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "buffer": {
+      "width": 1358,
+      "height": 610
+    },
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    }
+  },
+  "samples": [
+    {
+      "label": "Full-size canvas in viewport",
+      "elapsedSeconds": 4.52609999999404,
+      "before": {
+        "renderedFrames": 4,
+        "playedNotes": 0,
+        "progress": 0
+      },
+      "after": {
+        "renderedFrames": 9,
+        "playedNotes": 4,
+        "progress": 0.14350000000000002,
+        "playing": true,
+        "audioState": "running"
+      },
+      "deltaFrames": 5,
+      "deltaNotes": 4,
+      "averageDrawsPerSecond": 1.1047038289049256,
+      "buffer": {
+        "width": 1358,
+        "height": 610
+      },
+      "canvasRect": {
+        "top": 195,
+        "bottom": 805,
+        "width": 1358,
+        "height": 610
+      },
+      "canvasVisible": true,
+      "documentVisible": true
+    },
+    {
+      "label": "Canvas partially above viewport after controls/body scroll",
+      "elapsedSeconds": 4.55390000000596,
+      "before": {
+        "renderedFrames": 12,
+        "playedNotes": 0,
+        "progress": 0
+      },
+      "after": {
+        "renderedFrames": 17,
+        "playedNotes": 4,
+        "progress": 0.17200000000000001,
+        "playing": true,
+        "audioState": "running"
+      },
+      "deltaFrames": 5,
+      "deltaNotes": 4,
+      "averageDrawsPerSecond": 1.0979599903365151,
+      "buffer": {
+        "width": 1358,
+        "height": 610
+      },
+      "canvasRect": {
+        "top": -286,
+        "bottom": 324,
+        "width": 1358,
+        "height": 610
+      },
+      "canvasVisible": true,
+      "documentVisible": true
+    },
+    {
+      "label": "Half-size canvas via temporary DOM CSS (same scene/materials)",
+      "elapsedSeconds": 3.2595999999940397,
+      "before": {
+        "renderedFrames": 20,
+        "playedNotes": 0,
+        "progress": 0
+      },
+      "after": {
+        "renderedFrames": 27,
+        "playedNotes": 5,
+        "progress": 0.13174999999999998,
+        "playing": true,
+        "audioState": "running"
+      },
+      "deltaFrames": 7,
+      "deltaNotes": 5,
+      "averageDrawsPerSecond": 2.1475027610789055,
+      "buffer": {
+        "width": 669,
+        "height": 305
+      },
+      "canvasRect": {
+        "top": 247,
+        "bottom": 552,
+        "width": 669,
+        "height": 305
+      },
+      "canvasVisible": true,
+      "documentVisible": true
+    },
+    {
+      "label": "Full-size canvas entirely offscreen with temporary page-end spacer",
+      "elapsedSeconds": 4.366699999988079,
+      "before": {
+        "renderedFrames": 4,
+        "playedNotes": 0,
+        "progress": 0
+      },
+      "after": {
+        "renderedFrames": 9,
+        "playedNotes": 4,
+        "progress": 0.12612500000000001,
+        "playing": true,
+        "audioState": "running"
+      },
+      "deltaFrames": 5,
+      "deltaNotes": 4,
+      "averageDrawsPerSecond": 1.1450294272594064,
+      "buffer": {
+        "width": 1358,
+        "height": 610
+      },
+      "canvasRect": {
+        "top": -710,
+        "bottom": -100,
+        "width": 1358,
+        "height": 610
+      },
+      "canvasVisible": false,
+      "documentVisible": true
+    }
+  ],
+  "errors": [],
+  "boundaries": [
+    "These numbers are headless Chromium / detected GL renderer throughput, not the user sidebar GPU.",
+    "Parent was concurrently running whole-site integration, so GPU/software renderer contention can affect absolute values.",
+    "renderedFrames is the product draw completion counter. It measures actual synchronous draw invocations, not captureStream encoded frames.",
+    "Each sample includes the start() draw; high GPU load can make a 3000ms timer fire late. Actual elapsed seconds are recorded.",
+    "Half-size DOM CSS changes backing dimensions through the existing resize routine; geometry and photographic materials remain the same."
+  ],
+  "diagnosis": "Rendering throughput is the primary bottleneck in this headless SwiftShader environment. Visible and fully offscreen full-resolution canvases both complete five draws in a nominal three-second interval; temporary half-resolution backing dimensions approximately double draw throughput. Explicit capture requestFrame cannot generate missing scene frames.",
+  "minimalRecommendations": [
+    {
+      "priority": 1,
+      "change": "Add explicit per-case renderScale and shadow-map-size options to createStage; test 0.5-0.65 backing scale and 512/1024 shadow map for this scene while preserving the displayed canvas size, photographic materials, lighting and geometry.",
+      "evidence": "1358x610 yielded 1.10 draws/s; 669x305 yielded 2.15 draws/s. Resolution reduction alone still did not reach 24 fps. Current music-art.js regenerates a 2048x2048 directional shadow map, with nearly every mesh casting and receiving shadows.",
+      "limit": "Do not claim smooth export until the measured draw counter and saved encoded frames meet the target."
+    },
+    {
+      "priority": 2,
+      "change": "Schedule the 32 known Web Audio note events from the score against absolute audio-clock times before rendering, instead of triggering only the current note inside the render tick.",
+      "evidence": "Each slow draw tick can advance multiple note indices while tick() increments playedNotes once and only plays notes[i], so render slowness can omit scheduled score events.",
+      "limit": "This resolves score completeness and sound timing, not visual frame throughput."
+    },
+    {
+      "priority": 3,
+      "change": "If the scene remains below the target draw rate, export sequential fixed-timeline frames and mux them with the existing WAV at the declared 24 fps; use timestamps from frameIndex / 24 rather than live MediaRecorder wall time.",
+      "evidence": "A valid captureStream file with requestFrame still contains only frames actually rendered; patching container duration cannot invent motion frames.",
+      "limit": "Requires an actual frame encoder/muxing path (for example the available ffmpeg) and will take longer than realtime on SwiftShader. Keep this separate from realtime browser preview."
+    }
+  ]
+}
